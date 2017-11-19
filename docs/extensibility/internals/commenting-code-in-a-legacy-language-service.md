@@ -1,49 +1,51 @@
 ---
-title: "Комментирование кода в языковую службу для прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "комментарии, поддержка в языковые службы [платформа управляемых пакетов]"
-  - "комментирование кода языковые службы [платформа управляемых пакетов]"
+title: "Комментирования кода в языковую службу прежних версий | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- comments, supporting in language services [managed package framework]
+- language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8952612c9502704f79410461d29ca8ab87fa3ee4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Комментирование кода в языковую службу для прежних версий
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Языки программирования обычно предоставляют средства аннотации и прокомментировать код.  Комментарий раздел текст, который содержит дополнительные сведения о коде, однако не обрабатывается во время компиляции или интерпретации.  
+# <a name="commenting-code-in-a-legacy-language-service"></a>Комментирования кода в языковую службу прежних версий
+Языки программирования обычно предоставляют возможность добавлять заметки или код в комментарий. Комментарий — это часть текста, который предоставляет дополнительные сведения о коде, но игнорируется во время компиляции или интерпретации.  
   
- Управляемые классы платформы пакета \(MPF\) предоставляют поддержку для комментариев и uncommenting выделенный текст.  
+ Классы managed package framework (MPF) обеспечивают поддержку комментирования и идет раскомментирование выбранного текста.  
   
-## Стили комментария  
- 2 Общих стиля комментариев:  
+## <a name="comment-styles"></a>Стили комментария  
+ Существует два общих стиля комментариев:  
   
-1.  Комментарии линии, где комментарий на одной линии.  
+1.  Комментарии строки, где комментария в одной строке.  
   
-2.  Комментарии блока, где комментарий может включать несколько линий.  
+2.  Блок комментариев, где комментарий может включать несколько строк.  
   
- Комментарии линии обычно имеют \(начальный символ или символы\), а комментарии блока имеют знаков начала и завершения.  Например, в c\# комментарий линии начинается с \/\/и с комментария начинается и заканчивается с блока\/\* \*\/.  
+ Комментарии строки обычно имеют начальный символ (или символы), при блок комментариев начального и конечного символов. Например, в C# строка комментария начинается с / /, и блочного комментария начинается с / * и заканчивается \*/.  
   
- Когда пользователь выбирает команду **Преобразовать выделенный фрагмент в комментарий** от  **изменить** \- \>  **Дополнительно** меню выберите команду перенаправляется  <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> метод  <xref:Microsoft.VisualStudio.Package.Source> класс.  Когда пользователь выбирает команду **Отменить преобразование в комментарий**команда направлялась  <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> метод.  
+ Когда пользователь выбирает команду **выделенного фрагмента в комментарий** из **изменить** -> **Дополнительно** меню выберите команду направляется в <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класса. Когда пользователь выбирает команду **раскомментируйте выбора**, отправляется команда <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> метод.  
   
-## Поддержка комментарии к коду  
- Можно использовать комментарии кода поддержки языка посредством `EnableCommenting` параметр  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> .  При этом устанавливаются <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> свойство   <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класс.  Дополнительные сведения о функциях языка servicce параметра см. в разделе [Регистрация службы языка](../../extensibility/internals/registering-a-legacy-language-service1.md)\).  
+## <a name="supporting-code-comments"></a>Поддержка комментарии к коду  
+ У вас есть комментарии языковой службы поддержки кода с помощью параметра `EnableCommenting` именованный параметр из <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Это задает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Дополнительные сведения об установке компонентов servicce языка в разделе [регистрации службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
- Также необходимо переопределить <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> метод, чтобы он возвращал a  <xref:Microsoft.VisualStudio.Package.CommentInfo> структура с символами комментария для выбранного языка.  Символы комментария линии в стиле значение по умолчанию.  
+ Необходимо также переопределить <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> метод для возврата <xref:Microsoft.VisualStudio.Package.CommentInfo> структуру с символы комментария для выбранного языка. C#-по умолчанию используются символы комментария стиль строки.  
   
-### Пример  
- Здесь реализация примера  <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> метод.  
+### <a name="example"></a>Пример  
+ Ниже приведен пример реализации <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> метод.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Package;  
   
 namespace MyLanguagePackage  
@@ -62,6 +64,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## См. также  
- [Компоненты прежних версий языка службы](../../extensibility/internals/legacy-language-service-features1.md)   
- [Регистрация службы языка](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>См. также  
+ [Возможности службы прежних версий языка](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Регистрация службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)

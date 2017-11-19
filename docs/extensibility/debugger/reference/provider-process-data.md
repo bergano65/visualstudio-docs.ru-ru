@@ -1,68 +1,68 @@
 ---
-title: "PROVIDER_PROCESS_DATA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PROVIDER_PROCESS_DATA"
-helpviewer_keywords: 
-  - "Структура PROVIDER_PROCESS_DATA"
+title: "PROVIDER_PROCESS_DATA | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PROVIDER_PROCESS_DATA
+helpviewer_keywords: PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ce3405a46503af2419006d1d408f405726a03259
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PROVIDER_PROCESS_DATA
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Эта структура содержит сведения о процессах, выполняющихся на компьютере.  
+# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
+Эта структура содержит сведения о процессах, запущенных на компьютере.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-typedef struct tagPROVIDER_PROCESS_DATA {  
-   PROVIDER_FIELDS    Fields;  
-   PROGRAM_NODE_ARRAY ProgramNodes;  
-   BOOL               fIsDebuggerPresent;  
-} PROVIDER_PROCESS_DATA;  
+```cpp  
+typedef struct tagPROVIDER_PROCESS_DATA {  
+   PROVIDER_FIELDS    Fields;  
+   PROGRAM_NODE_ARRAY ProgramNodes;  
+   BOOL               fIsDebuggerPresent;  
+} PROVIDER_PROCESS_DATA;  
 ```  
   
-```c#  
-public struct PROVIDER_PROCESS_DATA {  
-   public uint               Fields;  
-   public PROGRAM_NODE_ARRAY ProgramNodes;  
-   public int                fIsDebuggerPresent;  
+```csharp  
+public struct PROVIDER_PROCESS_DATA {  
+   public uint               Fields;  
+   public PROGRAM_NODE_ARRAY ProgramNodes;  
+   public int                fIsDebuggerPresent;  
 }  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
  Поля  
- Комбинация из пометит [PROVIDER\_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) перечисление, указывающее, какие поля заполняются.  
+ Сочетание флагов из [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) перечисления, указывающее, какие поля заполнены.  
   
  ProgramNodes  
- A [PROGRAM\_NODE\_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) структуру, содержащую массив узлов программы.  
+ Объект [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) структуру, содержащую массив узлов программы.  
   
  fIsDebuggerPresent  
- Ненулевое значение \(`TRUE`если\)  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчик работает, ноль \(`FALSE`если она не найдена.  
+ Ненулевое значение (`TRUE`) Если [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] работы отладчика, ноль (`FALSE`) Если это не так.  
   
-## Заметки  
- Эта структура передается [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод, в котором он заполнен.  
+## <a name="remarks"></a>Примечания  
+ Эта структура передается [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод, где он заполняется.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [PROVIDER\_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)   
- [PROGRAM\_NODE\_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)   
+ [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)   
+ [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

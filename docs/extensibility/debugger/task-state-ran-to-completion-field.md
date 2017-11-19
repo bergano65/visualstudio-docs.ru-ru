@@ -1,40 +1,41 @@
 ---
-title: "Поле TASK_STATE_RAN_TO_COMPLETION | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Поле TASK_STATE_RAN_TO_COMPLETION, класс задачи [обработчиков отладки платформы .NET Framework]"
+title: "Поле TASK_STATE_RAN_TO_COMPLETION | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 86e04ded45232c18677e078f6dea3751a8ea0067
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Поле TASK_STATE_RAN_TO_COMPLETION
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="taskstaterantocompletion-field"></a>Поле TASK_STATE_RAN_TO_COMPLETION
 Задача успешно завершена.  
   
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборки:** mscorlib \(в библиотеке mscorlib.dll\)  
+ **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   
- Так как не удается получить доступ к внутреннему элементу из платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка \(CIL\).  
+ Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 .field static assembly literal int32 TASK_STATE_RAN_TO_COMPLETION = int32(0x02000000)  
 ```  
   
-## Заметки  
- Если [m\_stateFlags](../../extensibility/debugger/m-stateflags-field.md) поле содержит это значение <xref:System.Threading.Tasks.Task.Status%2A> возвращает <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+## <a name="remarks"></a>Примечания  
+ Если [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) поле содержит это значение <xref:System.Threading.Tasks.Task.Status%2A> возвращает <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
-## См. также  
- [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>См. также  
+ [Task-класс](../../extensibility/debugger/task-class-internal-members.md)

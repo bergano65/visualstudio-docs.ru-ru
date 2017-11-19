@@ -1,42 +1,43 @@
 ---
-title: "Отладка приложений для Магазина Windows и универсальных приложений для Windows | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Отладка UWP и приложений Windows 8.1 | Документы Microsoft"
+ms.custom: 
+ms.date: 07/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
-caps.latest.revision: 5
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 258389c08971089c523e2881a455411ea767801a
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
-# Отладка приложений для Магазина Windows и универсальных приложений для Windows
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Отладчик Visual Studio обеспечивает полную поддержку отладки приложений Магазина Windows и универсальных приложений Windows.  Дополнительные сведения см. в следующих разделах [Центра разработчика Windows](http://go.microsoft.com/fwlink/?LinkId=254182).  
+# <a name="debug-universal-windows-apps-uwp"></a>Отладка универсальных приложений Windows (UWP)
+Отладчик Visual Studio обеспечивает полную поддержку для отладки приложения UWP.  
   
-## В данном разделе  
+Сведения об отладке универсальных приложений Windows см. в разделе [развертывание и отладка приложений UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps).  
+  
+Для отладки приложений Windows Phone 8, в разделе [отладки приложений для Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
+  
+## <a name="in-this-section"></a>Содержание раздела  
   
 |||  
 |-|-|  
-|[Выполнение приложений в Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Запускайте приложения Магазина на локальном компьютере, в эмуляторе или имитаторе приложений либо на удаленном устройстве.|  
-|[Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Выявляйте и исправляйте ошибки в приложениях Магазина с помощью отладчика Visual Studio.|  
-|[Запуск средств анализа производительности](../Topic/Run%20analysis%20tools%20from%20the%20Performance%20and%20Diagnostic%20page.md)|Запускайте больше средств диагностики со страницы «Производительность и диагностика» Visual Studio.|  
-|[Анализ производительности приложений](../Topic/Analyze%20the%20performance%20of%20Windows%20Store%20apps%20using%20Visual%20Studio%20diagnostic%20tools.md)|Анализируйте загрузку ЦП и скорость реагирования пользовательского интерфейса в приложениях Магазина.|  
-|[Память JavaScript](../profiling/javascript-memory.md)|Анализируйте использование памяти и находите утечки памяти в приложениях Магазина на JavaScript и HTML.|  
-|[Анализ использования памяти \(VB, C\#, C\+\+\)](../profiling/memory-usage-without-debugging2.md)|Анализируйте использование памяти и находите утечки памяти в приложениях Магазина на C\#, VB и XAML.|  
-|[Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)|Анализируйте расход энергии приложениями Магазина на планшетных устройствах с низким энергопотреблением, постоянно или периодически работающих от встроенных батарей.|  
-|[Предварительная загрузка контента для приложений Магазина Windows](../debugger/prefetch-content-for-windows-store-apps.md)|Анализируйте влияние класса ContentPrefetcher на приложения Магазина Windows.|  
-|[Создание и выполнение модульных тестов](../test/create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)|Создавайте и запускайте модульные тесты для приложений Магазина в Visual Studio.|  
-|[Анализ качества кода помощью метода анализа статического кода](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Выявляйте проблемы, которые трудно обнаружить при отладке и тестировании, с использованием средств анализа кода Visual Studio.|
+|[Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Запуск приложений UWP на локальном компьютере, в эмуляторе или симуляторе приложений или на удаленном устройстве.|  
+|[Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Поиск и устранение ошибок в приложениях UWP с помощью отладчика Visual Studio.|  
+|[Отладка пакета установленного приложения](../debugger/debug-installed-app-package.md)|Отладка развернутых приложений, локальные и удаленные.|
+|[Предварительная загрузка контента для приложений UWP](../debugger/prefetch-content-for-windows-store-apps.md)|Анализируйте влияние класса ContentPrefetcher на приложения UWP.|  
+  
+## <a name="see-also"></a>См. также  
+ [Анализ качества кода помощью метода анализа статического кода](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

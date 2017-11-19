@@ -1,58 +1,60 @@
 ---
-title: "Построение и отладка решений SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, построение и отладка"
-  - "разработка приложений SharePoint в Visual Studio, отладка"
+title: "Построение и отладка решений SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, building and debugging
+- SharePoint development in Visual Studio, debugging
 ms.assetid: c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7582b0bcef8a97de14fb3b931745d6dcc21fa876
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Построение и отладка решений SharePoint
-  В общем, построение и отладка решений SharePoint аналогичны созданию и отладке других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  В этом разделе описываются существующие различия.  
+# <a name="building-and-debugging-sharepoint-solutions"></a>Построение и отладка решений SharePoint
+  Как правило, построение и отладка решений SharePoint является таким же, как построение и отладка других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. В этом разделе описываются существующие различия.  
   
-## Выходные данные проекта для решений SharePoint  
- При построении решений SharePoint создаются сборки и пакет решения \(WSP\-файл\).  В следующей таблице приведено расположение этих файлов во время выполнения построения.  
+## <a name="project-output-for-sharepoint-solutions"></a>Выходной файл проекта для решений SharePoint  
+ Построение решений SharePoint создаются сборки и файл пакета (.wsp) решения. Следующая таблица показывает расположение этих файлов во время построения.  
   
-|Элемент построения|Выходная папка|  
-|------------------------|--------------------|  
-|Сборка, база данных программы \(PDB\) и WPS\-файлы.|*ProjectName*\\bin\\debug или *ProjectName*\\bin\\release|  
-|Файлы элементов проекта SharePoint.|*ProjectName*\\package\\debug или *ProjectName*\\package\\release|  
-|Построение промежуточных файлов.|*ProjectName*\\obj\\debug или *ProjectName*\\obj\\release|  
-|Упаковка промежуточных файлов.|*ProjectName*\\pkgobj\\debug или *ProjectName*\\pkgobj\\release|  
+|Построение элементов|Выходная папка|  
+|----------------|-------------------|  
+|Сборки, база данных программы (PDB) и WSP-файлы.|*Имя_проекта*\bin\debug или *ProjectName*\bin\release|  
+|Файлы элементов проекта SharePoint.|*Имя_проекта*\pkg\debug или *ProjectName*\pkg\release|  
+|Построение промежуточных файлов.|*Имя_проекта*\obj\debug или *ProjectName*\obj\release|  
+|Пакет промежуточных файлов.|*Имя_проекта*\pkgobj\debug или *ProjectName*\pkgobj\release|  
   
-## Построение решений SharePoint  
- Для построения решений SharePoint на компьютере разработчика должна быть установлена правильная версия сервера SharePoint.  В противном случае, построение решений SharePoint аналогично построению других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Для получения дополнительной информации см. [Практическое руководство. Построение решений SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
+## <a name="building-sharepoint-solutions"></a>Построение решений SharePoint  
+ Для построения решений SharePoint на компьютере разработчика должен иметь правильную версию установлен SharePoint server. В противном случае построение решений SharePoint совпадает с создания других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [как: построение решений SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
-## Отладка и тестирование решений SharePoint  
- Перед отладкой, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] копирует пакет .wsp на сервер SharePoint, активирует сайт и веб\-компоненты, а в некоторых случаях, запускает проект.  В других случаях может понадобиться открыть проект вручную.  Дополнительные сведения см. в разделах [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) и [Отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
+## <a name="debugging-and-testing-sharepoint-solutions"></a>Отладка и тестирование решений SharePoint  
+ Перед отладкой [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] копирует пакет .wsp на сервер SharePoint, активирует сайт и веб-компоненты и в некоторых случаях, запускает проект. В других случаях может понадобиться открыть проект вручную. Дополнительные сведения см. в разделе [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) и [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
   
-## Проверка и отладка кода SharePoint с помощью функций управления жизненным циклом приложений  
- Функции управления жизненным циклом приложения в Visual Studio, например модульное тестирование и IntelliTrace, позволяют точнее найти проблемы в решениях SharePoint.  Профилирование позволяет найти и определить области с проблемами производительности в решениях SharePoint.  Дополнительные сведения см. в разделах [Проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) и [Профилирование производительности приложений SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
+## <a name="debugging-and-verifying-sharepoint-solutions-by-using-alm-features"></a>Проверка и отладка решений SharePoint с помощью возможностей управления жизненным циклом приложений  
+ Возможности Visual Studio ALM, такие как модульное тестирование и IntelliTrace, обеспечивают качественный поиск проблем в решениях SharePoint. Профилирование позволяет найти и определить области с проблемами производительности в решениях SharePoint. Дополнительные сведения см. в разделе [проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) и [профилирование производительности приложений SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
   
-## Обеспечение безопасности во время построения  
- Чтобы упаковать или развернуть решения SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] необходимо иметь разрешение на копирование файлов на сервер SharePoint.  Необходимо запустить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] как процесс с особыми разрешениями под учетной записью "Администратор семейства сайтов" на сервере SharePoint.  Дополнительно, необходимо указать, является ли проект обезвреженным решением или решением фермы.  Для получения дополнительной информации см. [Различия между изолированными решениями и решениями фермы](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
+## <a name="security-during-the-build-process"></a>Безопасность во время процесса построения  
+ Для упаковки и развертывания решений SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] должен иметь разрешение на копирование файлов на сервере SharePoint. Необходимо запустить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] как процесс с повышенными правами и пользователь учетная запись должна быть администратором коллекции веб-сайтов на сервере SharePoint. Кроме того необходимо указать, является ли проект изолированное решение или решение фермы. Дополнительные сведения см. в разделе [различия между изолированными решениями и решениями фермы](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
-## Использование команды очистки  
- После установки решения SharePoint на сервере SharePoint для отладки, команда **Очистить** не удалит решение.  Вместо этого, необходимо деактивировать компоненты с помощью настроек SharePoint.  
+## <a name="using-the-clean-command"></a>Использование команды очистки  
+ При установке решения SharePoint на сервере SharePoint для отладки, **Очистить** команда удалит решение. Вместо этого необходимо отключить компоненты с помощью конфигурации SharePoint.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

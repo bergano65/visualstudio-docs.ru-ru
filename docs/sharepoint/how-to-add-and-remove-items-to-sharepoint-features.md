@@ -1,62 +1,62 @@
 ---
-title: "Практическое руководство. Добавление и удаление элементов в компонентах SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.FeatureDesigner"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, функции"
+title: "Как: Добавление и удаление элементов в компонентах SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.RAD.FeatureDesigner
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, features
 ms.assetid: 5957d04f-f832-40de-af08-3f23fb8e2e14
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c925cc1cf8b1a5c70dfc1e650151d79945828935
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление и удаление элементов в компонентах SharePoint
-  При создании решения SharePoint система Visual Studio добавляет в компонент элементы проектов SharePoint по умолчанию.  Перед развертыванием можно изменять компонент SharePoint, добавляя и удаляя элементы проектов SharePoint.  
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Практическое руководство. Добавление и удаление элементов в компонентах SharePoint
+  При создании решения SharePoint в Visual Studio добавляет элементы проекта SharePoint по умолчанию компонента. Перед развертыванием можно добавлять и удалять элементы проектов SharePoint, чтобы изменить функцию SharePoint.  
   
-## Добавление элементов проектов SharePoint в компонент  
+## <a name="adding-sharepoint-project-items-to-a-feature"></a>Добавление элементов проектов SharePoint в компонент  
   
-#### Добавление элементов проектов SharePoint с помощью конструктора компонентов  
+#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Чтобы добавить элементы проекта SharePoint с помощью конструктора компонентов  
   
 1.  Откройте конструктор компонентов.  
   
-     Для получения дополнительной информации см. [Практическое руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+     Дополнительные сведения см. в разделе [как: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
-2.  Добавьте один или несколько элементов из списка **Элементы в решении** в список **Элементы в компоненте**, выполнив один или несколько следующих шагов:  
+2.  Добавьте один или несколько элементов из **элементы в решении** список **элементы в компоненте** , выполнив одно или несколько из следующих действий:  
   
     -   Дважды щелкните каждый элемент, который требуется добавить.  
   
-    -   Выберите элемент, который необходимо добавить, а затем нажмите кнопку **Добавить** \(\>\).  
+    -   Выберите элемент, который требуется добавить, а затем выберите **добавить** кнопку (>).  
   
-    -   Нажмите кнопку **Добавить все** \(\>\>\).  
+    -   Выберите **добавить все** кнопки (>>).  
   
-     Элементы проектов SharePoint отображаются в списке **Элементы в компоненте**.  
+     Элементы проекта SharePoint отображаются в **элементы в компоненте** списка.  
   
-## Удаление элементов проектов SharePoint из компонента  
+## <a name="removing-sharepoint-project-items-from-a-feature"></a>Удаление элементов проекта SharePoint из компонента  
   
-#### Удаление элементов SharePoint с помощью конструктора компонентов  
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Удаление элементов SharePoint с помощью конструктора компонентов  
   
-1.  Выберите один или несколько элементов в списке **Элементы в компоненте**.  
+1.  Выберите один или несколько элементов в **элементы в компоненте** списка.  
   
-2.  Нажмите кнопку **Удалить** \(\<\) для удаления одного элемента за раз или нажмите кнопку **Удаление всех** \(\<\<\) для удаления всех элементов.  
+2.  Выберите **удалить** кнопку (<) для удаления одного элемента за раз, или выберите **удалить все** кнопки (<<) для удаления всех элементов.  
   
-     Элементы проекта SharePoint отображаются в списке **Элементы в решении**.  
+     Элементы проекта SharePoint отображаются в **элементы в решении** списка.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

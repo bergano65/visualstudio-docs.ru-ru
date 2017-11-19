@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Changing Document Formatting Using CheckBox Controls | Microsoft Docs'
+title: "Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,153 +17,155 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], check box controls
 - controls [Office development in Visual Studio], adding to documents
 ms.assetid: 3740e41d-a57e-43bb-87e7-6e5481ef290b
-caps.latest.revision: 70
-author: kempb
-ms.author: kempb
+caps.latest.revision: "70"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 69edcb6d683c910d02e4224ec44590c288fefefa
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Walkthrough: Changing Document Formatting Using CheckBox Controls
-  This walkthrough demonstrates how to use Windows Forms controls in a document-level customization for Microsoft Office Word to change text formatting.  
+# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox
+  В этом пошаговом руководстве демонстрируется использование элементов управления Windows Forms в настройке уровня документа для Microsoft Office Word для изменения форматирования текста.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Adding text and a control to the document in a document-level project at design time.  
+-   Добавление текста и элемента управления в документ в проекте уровня документа во время разработки.  
   
--   Formatting the text when an option is selected.  
+-   Форматирование текста при выбранном параметре.  
   
- To see the result as a completed sample, see the Word Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+ Для просмотра результатов в виде полного примера, см [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create a Word Document project.  
+## <a name="creating-the-project"></a>Создание проекта  
+ Первым шагом является создание документа Word.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Create a Word Document project with the name **My Word Formatting**. In the wizard, select **Create a new document**.  
+1.  Создайте проект документа Word с именем **форматирование Word**. В мастере выберите **создания документа**.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Word document in the designer and adds the **My Word Formatting** project to **Solution Explorer**.  
+     Visual Studio откроет новый документ Word в конструкторе и добавляет **форматирование Word** проекта **обозревателе решений**.  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>Adding Text and Controls to the Word Document  
- For this walkthrough, add three check boxes and some text in a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the Word document. The check boxes will present options to the user for formatting the text.  
+## <a name="adding-text-and-controls-to-the-word-document"></a>Добавление текста и элементов управления в документ Word  
+ В этом пошаговом руководстве, добавьте три флажка и некоторый текст в <xref:Microsoft.Office.Tools.Word.Bookmark> элемента управления в документ Word. Флажки представляют параметры пользователя для форматирования текста.  
   
-#### <a name="to-add-three-check-boxes"></a>To add three check boxes  
+#### <a name="to-add-three-check-boxes"></a>Чтобы добавить три флажка  
   
-1.  Verify that the document is open in the Visual Studio designer.  
+1.  Убедитесь, что документ открыт в конструкторе Visual Studio.  
   
-2.  From the **Common Controls** tab of the **Toolbox**, drag the first <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> control to the document.  
+2.  Из **стандартные элементы управления** вкладке **элементов**, перетащите первый <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> элемента управления в документ.  
   
-3.  In the **Properties** window, change the following properties.  
+3.  В окне **Свойства** измените следующие свойства.  
   
-    |Property|Value|  
+    |Свойство|Значение|  
     |--------------|-----------|  
-    |**Name**|**applyBoldFont**|  
-    |**Text**|**Bold**|  
+    |**Имя**|**applyBoldFont**|  
+    |**Text**|**Полужирный**|  
   
-4.  Press **Enter** to move the insertion point below the first check box.  
+4.  Нажмите клавишу **ввод** переместить точку вставки под первый флажок.  
   
-5.  Add a second check box to the document below the `ApplyBoldFont` check box and change the following properties.  
+5.  Добавьте второй флажок в документ ниже `ApplyBoldFont` и измените следующие свойства.  
   
-    |Property|Value|  
+    |Свойство|Значение|  
     |--------------|-----------|  
-    |**Name**|**applyItalicFont**|  
-    |**Text**|**Italic**|  
+    |**Имя**|**applyItalicFont**|  
+    |**Text**|**Курсив**|  
   
-6.  Press **Enter** to move the insertion point below the second check box.  
+6.  Нажмите клавишу **ввод** переместить точку вставки под второй флажок.  
   
-7.  Add a third check box to the document below the `ApplyItalicFont` check box and change the following properties.  
+7.  Добавьте третий флажок в документ ниже `ApplyItalicFont` и измените следующие свойства.  
   
-    |Property|Value|  
+    |Свойство|Значение|  
     |--------------|-----------|  
-    |**Name**|**applyUnderlineFont**|  
-    |**Text**|**Underline**|  
+    |**Имя**|**applyUnderlineFont**|  
+    |**Text**|**Подчеркивание**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>To add text and a Bookmark control  
+#### <a name="to-add-text-and-a-bookmark-control"></a>Добавление текста и элемента управления Bookmark  
   
-1.  Move the insertion point below the check box controls and type the following text:  
+1.  Поместите курсор ниже управления «флажок» и введите следующий текст:  
   
-     **Click a check box to change the formatting of this text.**  
+     **Установите флажок, чтобы изменить форматирование текста.**  
   
-2.  From the **Word Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the document.  
+2.  Из **элементы управления Word** вкладке **элементов**, перетащите <xref:Microsoft.Office.Tools.Word.Bookmark> элемента управления в документ.  
   
-     The **Add Bookmark Control** dialog box appears.  
+     **Добавление элемента управления Bookmark** откроется диалоговое окно.  
   
-3.  Select the text you added to the document and click **OK**.  
+3.  Выберите текст, добавленный в документ и нажмите кнопку **ОК**.  
   
-     A <xref:Microsoft.Office.Tools.Word.Bookmark> control named **Bookmark1** is added to the selected text in the document.  
+     Объект <xref:Microsoft.Office.Tools.Word.Bookmark> управления с именем **Bookmark1** добавляется к тексту, выбранному в документе.  
   
-4.  In the **Properties** window, change the value of the **(Name)** property to **fontText.**  
+4.  В **свойства** окна, измените значение **(имя)** свойства **fontText.**  
   
- Next, write the code to format the text when a check box is checked or cleared.  
+ Затем напишите код для форматирования текста, когда этот флажок установлен или снят флажок.  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatting the Text When a Check box is Checked or Cleared  
- When the user selects a formatting option, change the format of the text in the document.  
+## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Форматирование текста при флажка — при установке или снятии  
+ Когда пользователь выбирает способ форматирования, измените формат текста в документе.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>To change formatting when a check box is selected  
+#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Для изменения форматирования, если флажок установлен  
   
-1.  Right-click `ThisDocument` in **Solution Explorer**, and then click **View Code** on the shortcut menu.  
+1.  Щелкните правой кнопкой мыши `ThisDocument` в **обозревателе решений**, а затем нажмите кнопку **Просмотр кода** в контекстном меню.  
   
-2.  For C# only, add the following constants to the **ThisDocument** class.  
+2.  Только в C#, добавьте следующие константы для **ThisDocument** класса.  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]  
   
-3.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyBoldFont` check box.  
+3.  Добавьте следующий код в <xref:System.Windows.Forms.Control.Click> обработчик событий `applyBoldFont` флажок.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]  
   
-4.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyItalicFont` check box.  
+4.  Добавьте следующий код в <xref:System.Windows.Forms.Control.Click> обработчик событий `applyItalicFont` флажок.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]  
   
-5.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyUnderlineFont` check box.  
+5.  Добавьте следующий код в <xref:System.Windows.Forms.Control.Click> обработчик событий `applyUnderlineFont` флажок.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  In C#, you must add event handlers for the text boxes to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event. For information about how to create event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+6.  В C# необходимо добавить обработчики событий для текстовых полей к <xref:Microsoft.Office.Tools.Word.Document.Startup> событий. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- You can now test your document to verify that the text is formatted correctly when you select or clear a check box.  
+## <a name="testing-the-application"></a>Тестирование приложения  
+ Теперь можно проверить документ, чтобы убедиться, что текст имеет правильный формат при установке или снятии флажка.  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>Проверка документа  
   
-1.  Press F5 to run your project.  
+1.  Нажмите клавишу F5 для запуска проекта.  
   
-2.  Select or clear a check box.  
+2.  Установите или снимите флажок.  
   
-3.  Confirm that the text is formatted correctly.  
+3.  Убедитесь, что текст имеет правильный формат.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of using check boxes and programmatically changing text formatting on Word documents. Here are some tasks that might come next:  
+## <a name="next-steps"></a>Дальнейшие действия  
+ В этом пошаговом руководстве показаны основные принципы использования флажков и программное изменение форматирования текста в документах Word. Ниже приводятся некоторые из возможных последующих задач.  
   
--   Use a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Document Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: отображение текста в текстовом поле в документ с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Using radio buttons to select chart styles. For more information, see [Walkthrough: Updating a Chart in a Document Using Radio Buttons](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Использование переключателей для выбора стилей диаграмм. Дополнительные сведения см. в разделе [Пошаговое руководство: обновление диаграммы в документе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 -  
   
-## <a name="see-also"></a>See Also  
- [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
- [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>См. также  
+ [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)   
+ [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Элемент управления NamedRange](../vsto/namedrange-control.md)   
+ [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

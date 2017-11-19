@@ -1,27 +1,30 @@
 ---
-title: "IScriptEntry::SetBody | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IScriptEntry::SetBody | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptEntry.SetBody
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptEntry::SetBody"
+helpviewer_keywords: IScriptEntry::SetBody
 ms.assetid: 719062e4-98e4-4a7b-946d-6e5dbbcc5225
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptEntry::SetBody
-Устанавливает текст, в тело блока скрипта `IScriptEntry` или сценария `IScriptScriptlet`.  
+# <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
+Задает текст, который находится в теле `IScriptEntry` блок сценария или `IScriptScriptlet` сценариев.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT SetBody(  
@@ -29,23 +32,23 @@ HRESULT SetBody(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `psz`  
- \[in\] для блока скрипта `IScriptEntry`, заключенное в теги `psz` текст скрипта.  
+ [in] Для `IScriptEntry` блок скрипта, `psz` — это текст, заключенный в теги сценариев.  
   
- Для блока функции `IScriptEntry`, `psz` тело функции.  
+ Для `IScriptEntry` блока function `psz` представляет собой тело функции.  
   
- Для объекта `IScriptScriptlet` \(который является производным от `IScriptEntry`\), `psz` текст скрипта скрипта.  
+ Для `IScriptScriptlet` объекта (который является производным от `IScriptEntry`), `psz` текст сценария сценариев.  
   
-## Возвращаемое значение  
- Объект `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

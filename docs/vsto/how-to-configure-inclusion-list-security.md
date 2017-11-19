@@ -1,12 +1,10 @@
 ---
-title: 'How to: Configure Inclusion List Security | Microsoft Docs'
+title: "Как: настройка безопасности списка включения | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,64 +14,63 @@ helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
 ms.assetid: 0609d8f0-4630-4e17-aeb3-14f3134165cf
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ddda79fad6b114c7b91a4b05df82433fe59a0f3d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: 7032f3663be7df1a06fa4dc16d4f4473e4666cfc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>How to: Configure Inclusion List Security
-  If you have Administrator permissions, you can configure the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] trust prompt to control whether end users are given the option of installing Office solutions by saving a trust decision to the inclusion list. For information about inclusion lists, see [Trusting Office Solutions by Using Inclusion Lists](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
+# <a name="how-to-configure-inclusion-list-security"></a>Практическое руководство. Настройка безопасности списка включения
+  При наличии разрешений администратора, можно настроить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии к элементу управления, получают ли конечным пользователям возможности установки решений Office, сохранив решение о доверии в списке включения. Сведения о списках включений см. в разделе [предоставление доверия решениям Office с помощью списков включения](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- For solutions that are in each of five zones, you can set the following options:  
+ Для решений, в каждой из пяти зон можно задать следующие параметры:  
   
--   Enable the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can allow end users to grant trust to Office solutions that are signed with any certificate.  
+-   Включить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] раздела запроса о доверии и списка включения. Можно разрешить конечным пользователям предоставлять доверие решениям Office, подписанные с любой сертификат.  
   
--   Restrict the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can allow end users to install Office solutions that are signed with a certificate that identifies the publisher, but that is not already trusted.  
+-   Ограничить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] раздела запроса о доверии и списка включения. Можно разрешить конечным пользователям для установки решений Office, подписанным сертификатом, который идентифицирует издателя, но который еще не является доверенным.  
   
--   Disable the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can prevent end users from installing any Office solution that is not signed with an explicitly trusted certificate.  
+-   Отключить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] раздела запроса о доверии и списка включения. Можно запретить пользователям установке решения Office, не подписана с явно доверенным сертификатом.  
   
-## <a name="enabling-the-inclusion-list"></a>Enabling the Inclusion List  
- Enable the inclusion list for a zone when you want end users to be presented with the option of installing and running any Office solution that comes from that zone.  
+## <a name="enabling-the-inclusion-list"></a>Включение списка включения  
+ Включите список включения для зоны, если нужно, чтобы конечным пользователям будет предложена возможность установки и запуска решения Office, поступающих из этой зоны.  
   
-#### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>To enable the inclusion list by using the registry editor  
+#### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Чтобы включить в список включения с помощью редактора реестра  
   
-1.  Open the registry editor:  
+1.  Откройте редактор реестра:  
   
-    1.  Click **Start**, and then click **Run**.  
+    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
   
-    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
+    2.  В **откройте** введите **regedt32.exe**, а затем нажмите кнопку **ОК**.  
   
-2.  Find the following registry key:  
+2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
-     If the key does not exist, create it.  
+     Если ключ не существует, создайте его.  
   
-3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
+3.  Добавьте следующие подразделы как **строковое значение**, если они еще не существуют, со связанными значениями.  
   
-    |String Value subkey|Value|  
+    |Строковое значение подраздела|Значение|  
     |-------------------------|-----------|  
-    |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**Disabled**|  
-    |**MyComputer**|**Enabled**|  
-    |**LocalIntranet**|**Enabled**|  
-    |**TrustedSites**|**Enabled**|  
+    |**Интернет**|**AuthenticodeRequired**|  
+    |**UntrustedSites**|**Отключено**|  
+    |**Мой компьютер**|**Включено**|  
+    |**Локальная интрасеть**|**Включено**|  
+    |**TrustedSites**|**Включено**|  
   
-     By default, **Internet** has the value **AuthenticodeRequired** and **UntrustedSites** has the value **Disabled**.  
+     По умолчанию **Internet** имеет значение **AuthenticodeRequired** и **UntrustedSites** имеет значение **отключено**.  
   
-#### <a name="to-enable-the-inclusion-list-programmatically"></a>To enable the inclusion list programmatically  
+#### <a name="to-enable-the-inclusion-list-programmatically"></a>Программное Включение списка включения  
   
-1.  Create a Visual Basic or Visual C# console application.  
+1.  Создайте консольное приложение Visual Basic или Visual C#.  
   
-2.  Open the Program.vb or Program.cs file for editing and add the following code.  
+2.  Откройте для редактирования файл Program.vb или Program.cs и добавьте следующий код.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -97,42 +94,42 @@ ms.lasthandoff: 08/28/2017
     key.Close();  
     ```  
   
-3.  Build and run the application.  
+3.  Выполните сборку и запуск приложения.  
   
-## <a name="restricting-the-inclusion-list"></a>Restricting the Inclusion List  
- Restrict the inclusion list so that solutions must be signed with Authenticode certificates that have known identity before users are prompted for a trust decision.  
+## <a name="restricting-the-inclusion-list"></a>Ограничение списка включения  
+ Ограничение списка включения, чтобы решения должны быть подписаны сертификатом Authenticode, идентифицирующим пользователям предлагается решение о доверии.  
   
-#### <a name="to-restrict-the-inclusion-list"></a>To restrict the inclusion list  
+#### <a name="to-restrict-the-inclusion-list"></a>Ограничение списка включения  
   
-1.  Open the registry editor:  
+1.  Откройте редактор реестра:  
   
-    1.  Click **Start**, and then click **Run**.  
+    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
   
-    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
+    2.  В **откройте** введите **regedt32.exe**, а затем нажмите кнопку **ОК**.  
   
-2.  Find the following registry key:  
+2.  Найдите следующий раздел реестра:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
-     If the key does not exist, create it.  
+     Если ключ не существует, создайте его.  
   
-3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
+3.  Добавьте следующие подразделы как **строковое значение**, если они еще не существуют, со связанными значениями.  
   
-    |String Value subkey|Value|  
+    |Строковое значение подраздела|Значение|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Disabled**|  
-    |**Internet**|**AuthenticodeRequired**|  
-    |**MyComputer**|**AuthenticodeRequired**|  
-    |**LocalIntranet**|**AuthenticodeRequired**|  
+    |**UntrustedSites**|**Отключено**|  
+    |**Интернет**|**AuthenticodeRequired**|  
+    |**Мой компьютер**|**AuthenticodeRequired**|  
+    |**Локальная интрасеть**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
-     By default, **Internet** has the value **AuthenticodeRequired** and **UntrustedSites** has the value **Disabled**.  
+     По умолчанию **Internet** имеет значение **AuthenticodeRequired** и **UntrustedSites** имеет значение **отключено**.  
   
-#### <a name="to-restrict-the-inclusion-list-programmatically"></a>To restrict the inclusion list programmatically  
+#### <a name="to-restrict-the-inclusion-list-programmatically"></a>Ограничение списка включения программными средствами  
   
-1.  Create a Visual Basic or Visual C# console application.  
+1.  Создайте консольное приложение Visual Basic или Visual C#.  
   
-2.  Open the Program.vb or Program.cs file for editing and add the following code.  
+2.  Откройте для редактирования файл Program.vb или Program.cs и добавьте следующий код.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -156,38 +153,38 @@ ms.lasthandoff: 08/28/2017
     key.Close();  
     ```  
   
-3.  Build and run the application.  
+3.  Выполните сборку и запуск приложения.  
   
-## <a name="disabling-the-inclusion-list"></a>Disabling the Inclusion List  
- You can disable the inclusion list so that end users can only install solutions that are signed with a trusted and known certificate.  
+## <a name="disabling-the-inclusion-list"></a>Отключение списка включения  
+ Можно отключить список включения, чтобы конечные пользователи могут только устанавливать решений, подписанным с надежный и известный сертификат.  
   
-#### <a name="to-disable-the-inclusion-list"></a>To disable the inclusion list  
+#### <a name="to-disable-the-inclusion-list"></a>Отключение списка включения  
   
-1.  Open the registry editor:  
+1.  Откройте редактор реестра:  
   
-    1.  Click **Start**, and then click **Run**.  
+    1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
   
-    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
+    2.  В **откройте** введите **regedt32.exe**, а затем нажмите кнопку **ОК**.  
   
-2.  Create the following registry key if this does not already exist:  
+2.  Если это еще не существует, создайте следующий раздел реестра:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
-3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
+3.  Добавьте следующие подразделы как **строковое значение**, если они еще не существуют, со связанными значениями.  
   
-    |String Value subkey|Value|  
+    |Строковое значение подраздела|Значение|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Disabled**|  
-    |**Internet**|**Disabled**|  
-    |**MyComputer**|**Disabled**|  
-    |**LocalIntranet**|**Disabled**|  
-    |**TrustedSites**|**Disabled**|  
+    |**UntrustedSites**|**Отключено**|  
+    |**Интернет**|**Отключено**|  
+    |**Мой компьютер**|**Отключено**|  
+    |**Локальная интрасеть**|**Отключено**|  
+    |**TrustedSites**|**Отключено**|  
   
-#### <a name="to-disable-the-inclusion-list-programmatically"></a>To disable the inclusion list programmatically  
+#### <a name="to-disable-the-inclusion-list-programmatically"></a>Чтобы отключить списка включения программными средствами  
   
-1.  Create a Visual Basic or Visual C# console application.  
+1.  Создайте консольное приложение Visual Basic или Visual C#.  
   
-2.  Open the Program.vb or Program.cs file for editing and add the following code.  
+2.  Откройте для редактирования файл Program.vb или Program.cs и добавьте следующий код.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -212,10 +209,10 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-3.  Build and run the application.  
+3.  Выполните сборку и запуск приложения.  
   
-## <a name="see-also"></a>See Also  
- [Trusting Office Solutions by Using Inclusion Lists](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
- [Securing Office Solutions](../vsto/securing-office-solutions.md)  
+## <a name="see-also"></a>См. также  
+ [Предоставление доверия решениям Office с помощью списков включения](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [Обеспечение безопасности решений Office](../vsto/securing-office-solutions.md)  
   
   

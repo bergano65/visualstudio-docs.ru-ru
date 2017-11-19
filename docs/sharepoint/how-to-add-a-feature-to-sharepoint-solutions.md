@@ -1,36 +1,37 @@
 ---
-title: "Практическое руководство. Добавление компонента в решение SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, функции"
+title: "Способ: добавить компонент в решение SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, features
 ms.assetid: 47f5f5df-19e3-40f6-8efb-f458193ef19a
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b340249db1b5d4796f0123448282b1f4d29c78c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление компонента в решение SharePoint
-  При создании решения SharePoint в него добавляется один компонент и один пакет.  Можно добавлять дополнительные элементы компонентов для организации различных типов файлов SharePoint.  
+# <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Практическое руководство. Добавление компонента в решение SharePoint
+  При создании решения SharePoint, одна из функций и один пакет добавляются в решение. Можно добавить дополнительные элементы компонентов для организации различных типов файлов SharePoint.  
   
-### Добавление компонента через обозреватель решений  
+### <a name="to-add-a-feature-through-solution-explorer"></a>Для добавления компонента в обозревателе решений  
   
-1.  В **обозревателе решений** откройте контекстное меню для узла **Компоненты** и выберите **Добавить компонент**.  
+1.  В **обозревателе решений**, откройте контекстное меню для **функции**, а затем выберите **добавить компонент**.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

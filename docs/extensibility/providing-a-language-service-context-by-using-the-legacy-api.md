@@ -1,68 +1,53 @@
 ---
-title: "Предоставляет контекст языковой службы с помощью API прежних версий | Документы Microsoft"
+title: "Предоставляет контекст языковой службы с помощью прежних версий API | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], legacy - language service context
+helpviewer_keywords: editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 10221f77e65acfb91c625c2f711b5804b64f827e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 79f58bf66e5d0a137738d0a2cc90f67a287246dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Предоставляет контекст языковой службы с помощью API прежних версий
-Существует два варианта языковую службу для предоставления контекста пользователя с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора: предоставить текст маркера контекста или предоставить все контекста пользователя. Здесь описаны различия между ними.  
+Существует два варианта языковой службы предоставить контекст пользователя с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора: текст маркера контекста, задать либо все контекста пользователя. Здесь описаны различия между ними.  
   
- Дополнительные сведения о предоставлении контекст языковой службы, который соединен с собственного редактора см. [как: предоставляют контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
+ Дополнительные сведения о предоставляет контекст для языковую службу, подключенном к собственного редактора см. в разделе [как: предоставляют контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
   
-## <a name="provide-text-marker-context-to-the-editor"></a>Предоставляет контекст маркера текст для редактора  
- Для предоставления контекста для ошибки компилятора, обозначенными текстовых меток в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основной редактор, следует реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>интерфейса.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> В этом случае служба языка предоставляет контекст только в том случае, когда курсор находится на текстовой метки. Это позволяет предоставляют ключевое слово в позиции курсора в редакторе **динамической справки** окно без атрибутов.  
+## <a name="provide-text-marker-context-to-the-editor"></a>Предоставляет контекст маркера текста в редакторе  
+ Для обеспечения контекста ошибки компилятора, обозначенном текстовых меток в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основы редактора, реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейса. В этом случае служба языка предоставляет контекст только в том случае, когда курсор находится на текстовой метки. Это позволяет редактор для предоставления ключевое слово из позиции курсора для **динамической справки** окна без атрибутов.  
   
-## <a name="provide-all-user-context-to-the-editor"></a>Предоставляет все контекст пользователя для редактора  
- Если вы создаете языковую службу и используете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основной редактор, а затем можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>интерфейс для предоставления контекста для службы языка.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>  
+## <a name="provide-all-user-context-to-the-editor"></a>Укажите все контекст пользователя в редактор  
+ Если вы создаете языковой службы и используете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основы редактора, а затем можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> интерфейс, чтобы предоставить контекст службы языка.  
   
- Для реализации `IVsLanguageContextProvider`, присоединяется к редактора, который отвечает за обновление контейнера контекста контейнер контекста (коллекция). Когда **динамической справки** окно вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>интерфейс на этот контейнер контекста в состоянии простоя, контекст контейнера запросы редактор для обновления.</xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A> Редактор затем уведомляет языковую службу, ее следует обновить редактор и передает указатель на контекст контейнера. Это делается путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>метод из редактора для службы языка.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A> С помощью указателя в контексте контейнера, языковая служба теперь добавлять и удалять атрибуты и ключевые слова. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>  
+ Для реализации `IVsLanguageContextProvider`, контейнер контекста (коллекция) подключен к редактора, который отвечает за обновление контейнера контекста. Когда **динамической справки** вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A> интерфейса на этот контейнер контекста в состоянии простоя, контейнер контекста запрашивает редактор для обновления. Редактор затем уведомляет языковой службы, его необходимо обновить редактор и передает указатель на контекст контейнера. Это делается путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A> способ языковой службы из редактора. Контейнер контекст с использованием указателя, языковой службы теперь добавлять и удалять атрибуты и ключевые слова. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.  
   
- Существует два различных способа реализации `IVsLanguageContextProvider`:  
+ Существует два разных способа реализации `IVsLanguageContextProvider`:  
   
--   Предоставляют ключевое слово в контексте контейнера  
+-   Предусмотрено ключевое слово контекста контейнер  
   
-     При вызове редактор для обновления контейнера контекста передайте соответствующие ключевые слова и атрибуты и возвращается `S_OK`. Это возвращаемое значение указывает, что редакторе, чтобы сохранить контекст ключевое слово и атрибут, а не предоставляет ключевого слова в позиции курсора в контексте контейнера.  
+     При вызове редактор для обновления контекста контейнера передать в соответствующие ключевые слова и атрибуты и возвратит `S_OK`. Это возвращаемое значение указывает, что редактор сохранить контекст ключевое слово и атрибут, а не предоставляют ключевое слово из позиции курсора в контейнере контекста.  
   
--   Получить ключевое слово из ключевого слова в позиции курсора  
+-   Получить ключевое слово из ключевого слова из позиции курсора  
   
-     При вызове редактор для обновления контейнера контекста передать соответствующие атрибуты и возвращается `E_FAIL`. Это возвращаемое значение указывает, что редактор для сохранения атрибутов в контексте контейнера, но обновление контейнера контекста с помощью ключевого слова в позиции курсора.  
+     При вызове редактор для обновления контекста контейнера передайте соответствующие атрибуты и возвратит `E_FAIL`. Это возвращаемое значение указывает, что редактор сохранить атрибутов в наборе контекста, но обновить контекст контейнера с помощью ключевого слова из позиции курсора.  
   
- На следующей схеме показана как контекст предоставляется для службы языка, который реализует `IVsLanguageContextProvider`.  
+ На следующей диаграмме показано, как контекст предоставляется для языковой службы, который реализует `IVsLanguageContextProvider`.  
   
- ![График LangServiceImplementation2](~/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
-Контекст для службы языка  
+ ![График LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+Контекст для языковой службы  
   
- Как видно из диаграммы, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основной текстовый редактор содержит контейнер контекста, присоединенные к нему. Этот контейнер контекст указывает три отдельных подконтекст сумки: языковой службы, редактора по умолчанию и текстовой метки. Языковой службы и текст маркера подконтекст контейнеры содержат атрибуты и ключевые слова для языковой службы, если <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>реализации интерфейса и текстовых меток Если <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>интерфейс реализован.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Если не реализовать один из этих интерфейсов, редактор предоставляет контекст для ключевого слова в позиции курсора в контейнере подконтекст редактора по умолчанию.  
+ Как видно из диаграммы, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основной текстовый редактор имеет контейнер контекста, присоединенные к ней. Этот контекст в контейнере указывает на трех отдельных подконтекст контейнеры: языковой службы, редактор по умолчанию и текстовой метки. Языковой службы и текст маркера подконтекст контейнеры содержат атрибуты и ключевые слова для языковой службы, если <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> интерфейс реализован и текстовых маркеров: Если <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> реализации интерфейса. Если не реализовать любой из этих интерфейсов, редактор предоставляет контекст для ключевого слова из позиции курсора в контейнере подконтекст редактор по умолчанию.  
   
-## <a name="context-guidelines-for-editors-and-designers"></a>Правила контекста редакторы и конструкторы  
- Редакторы и конструкторы необходимо указать общее ключевое слово для окне редактора или конструктора. Это делается, чтобы отображает раздел справки универсальный, но возможно, для конструктора или редактора при нажатии клавиши F1. Редактор должен Помимо этого, задайте текущего ключевого слова в позиции курсора или предоставить основные термины, на основе текущего выделения. Это позволяет убедиться, что раздел справки для текста или элемент пользовательского интерфейса, на который указывает или выбран отображается при нажатии клавиши F1. Конструктор предоставляет контекст для элемента, выбранного в конструкторе, например кнопки на форме. Редакторы и конструкторы необходимо также подключаться к языковую службу как описано в разделе [Essentials службы языка прежних версий](../extensibility/internals/legacy-language-service-essentials.md).
+## <a name="context-guidelines-for-editors-and-designers"></a>Рекомендации по контекст для редакторов и конструкторов  
+ Редакторы и конструкторы должны предоставить общие ключевое слово для редактора или конструктора окна. Это делается, чтобы отображает раздел справки универсальным, но применимо, для конструктора или редактора при нажатии клавиши F1. Редактор должен Помимо этого, укажите ключевое слово текущей позиции курсора или предоставить основные термины, зависящие от текущего выделения. Это позволяет убедиться, что раздел справки для текста или элемент пользовательского интерфейса, на который указывает или выбранных отображается при нажатии клавиши F1. Конструктор предоставляет контекст для элемента, выбранного в конструкторе, например кнопки на форме. Редакторы и конструкторы необходимо также подключаться к языковой службы, перечисленные в [Essentials службы языка для прежних версий](../extensibility/internals/legacy-language-service-essentials.md).

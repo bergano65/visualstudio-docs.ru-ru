@@ -1,110 +1,93 @@
 ---
-title: Create and configure datasets in Visual Studio | Microsoft Docs
+title: "Создание и Настройка наборов данных в Visual Studio | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - typed datasets, creating
 - datasets [Visual Basic], creating
 ms.assetid: 58f33b43-24e1-43b1-b08b-b74329960bd6
-caps.latest.revision: 36
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: c598bcc7d591f14a0854e5a53c76a219146de933
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5dd27f35bdfd0ee2f576c1a4ac2fe3fde5a357e6
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Create and configure datasets in Visual Studio
-A *dataset* is a set of objects that store data from a database in memory and support change tracking to enable create, read, update and delete (CRUD) operations on that data without the need to be always connected to the database. Datasets were designed for simple *forms over data* business applications. For new applications, consider using Entity Framework to store and model data in memory. To work with datasets, you should have a basic knowledge of database concepts.  
+# <a name="create-and-configure-datasets-in-visual-studio"></a>Создание и Настройка наборов данных в Visual Studio
+Объект *dataset* — это набор объектов, хранения данных из базы данных в памяти и поддерживает отслеживание изменений, чтобы включить создание, чтение, обновление и удаление (CRUD) операций с этими данными, без необходимости всегда необходимо подключение к базе данных. Наборы данных были разработаны для простой *форм на основе данных* бизнес-приложений. Для новых приложений рассмотрите возможность использования Entity Framework для хранения и модели данных в памяти. Для работы с наборами данных, должны иметь базовых знаний о основными понятиями баз данных.  
   
- You create a typed <xref:System.Data.DataSet> class in Visual Studio at design time by using the **Data Source Configuration Wizard**. For information on creating datasets programmatically, see [Creating a DataSet](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).  
+ Можно создать типизированный <xref:System.Data.DataSet> класс в Visual Studio во время разработки с помощью **мастер настройки источника данных**. Сведения о создании наборов данных программным путем см. в разделе [Создание набора данных](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).  
   
-## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Create a new dataset by using the Data Source Configuration Wizard  
+## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Создать новый набор данных с помощью мастера настройки источника данных  
   
-1.  On the **Project** menu, click **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+1.  На **проекта** меню, нажмите кнопку **добавить новый источник данных** запуск **мастер настройки источника данных**.  
   
-2.  Choose the type of data source that you will be connecting to.  
+2.  Выберите тип источника данных, который вы будете подключаться.  
   
-     ![Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png "Data Source Configuration Wizard")  
+     ![Мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png "мастера настройки источника данных")  
   
-3.  For databases, choose the database or databases that will be the data source for your dataset.  
+3.  Для баз данных выберите базы данных, которые будут источником данных для набора данных.  
   
-     ![Data source choose a connection](../data-tools/media/data-source-choose-a-connection.png "Data source choose a connection")  
+     ![Выбор источника данных соединения](../data-tools/media/data-source-choose-a-connection.png "источника данных выберите соединение")  
   
-4.  Choose the tables (or individual columns), stored procedures, functions, and views from the database that you want to be represented in the dataset.  
+4.  Выберите таблицы (или отдельных столбцов), хранимые процедуры, функции и представления из базы данных, который необходимо представить в наборе данных.  
   
-     ![Choose database objects](../data-tools/media/raddata-chose-objects.png "raddata Chose objects")  
+     ![Выберите объекты базы данных](../data-tools/media/raddata-chose-objects.png "raddata выбрал объектов")  
   
-5.  Click **Finish**.  
+5.  Нажмите кнопку **Готово**.  
   
-6.  The dataset appears as a node in **Solution Explorer**:  
+6.  Набор данных отображается как узел в **обозревателе решений**:  
   
-     ![DataSet in Solution Explorer](../data-tools/media/dataset-in-solution-explorer.png "DataSet in Solution Explorer")  
+     ![Набор данных в обозревателе решений](../data-tools/media/dataset-in-solution-explorer.png "набора данных в обозревателе решений")  
   
-     Click that node, and the dataset appears in the **DataSet Designer**. Note that each table in the dataset has an associated TableAdapter object, which is represented at the bottom. The table adapter is used to populate the dataset and optionally to send commands to the database.  
+     Щелкните этот узел и набор данных отображается в **конструктора наборов данных**. Обратите внимание, что каждая таблица в наборе данных содержит связанный объект TableAdapter, который представлен в нижней. Адаптер таблицы используется для заполнения набора данных и при необходимости отправлять команды в базу данных.  
   
-     ![DataSet Designer](../data-tools/media/dataset-designer.png "DataSet Designer")  
+     ![Конструктор наборов данных](../data-tools/media/dataset-designer.png "конструктора наборов данных")  
   
-7.  The relation lines that connect the tables represent table relationships, as defined in the database. By default, foreign-key constraints in a database are represented as a relation only, with the update and delete rules set to none. Typically, that is what you want. However, you can click the lines to bring up the **Relation** dialog, where you can change the behavior of  hierarchical updates. For more information, see [Relationships in datasets](../data-tools/relationships-in-datasets.md) and [Hierarchical update](../data-tools/hierarchical-update.md).  
+7.  Отношение линии, соединяющие таблицы представляют связи между таблицами, как определено в базе данных. По умолчанию ограничения внешнего ключа в базе данных представляются в виде связь только с обновления и удаления правил, значение none. Как правило это самое интересное. Тем не менее, можно щелкнуть строки, чтобы вызвать **отношения** диалоговое окно, где можно изменить поведение иерархических обновлений. Дополнительные сведения см. в разделе [отношения в наборах данных](../data-tools/relationships-in-datasets.md) и [иерархическое обновление](../data-tools/hierarchical-update.md).  
   
-     ![Dataset Relation dialog](../data-tools/media/raddata-relation-dialog.png "raddata Relation dialog")  
+     ![Диалоговое окно отношение объекта DataSet](../data-tools/media/raddata-relation-dialog.png "диалоговое окно raddata отношения")  
   
-8.  Click a table, table adapter, or column name in a table to see its properties in the **Properties** window. You can modify some of the values here. Just remember that you are modifying the dataset, not the source database.  
+8.  Щелкните таблицу, адаптер таблицы или имя столбца в таблице для просмотра его свойств в **свойства** окна. Можно изменить некоторые значения здесь. Просто помните, что изменения вносятся набора данных, а не базы данных-источника.  
   
-     ![DataSet column properties](../data-tools/media/dataset-column-properties.png "DataSet column properties")  
+     ![Свойства столбца набора данных](../data-tools/media/dataset-column-properties.png "свойства столбца набора данных")  
   
-9. You can add new tables or table adapters to the dataset, or add new queries for existing table adapters, or specify new relations between tables by dragging those items from the **Toolbox** tab. This tab appears when the **DataSet Designer** is in focus.  
+9. Можно добавить новые таблицы или адаптеры таблиц набора данных, или добавить новые запросы для существующих адаптеров таблиц или укажите новые связи между таблицами путем перетаскивания этих элементов из **элементов** вкладки. На этой вкладке отображается после **конструктора наборов данных** находится в фокусе.  
   
-     ![Dataset Toolbox](../data-tools/media/raddata-dataset-toolbox.png "raddata Dataset Toolbox")  
+     ![Набор данных элементов](../data-tools/media/raddata-dataset-toolbox.png "raddata элементов набора данных")  
   
-10. Next, you probably want to specify how to populate the dataset with data. For that, you use the **TableAdapter Configuration Wizard**. For more information, see [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md) .  
+10. После этого может потребоваться указать способ заполнения набора данных с данными. Для этого используйте **мастер настройки адаптера таблицы**. Дополнительные сведения см. в разделе [заполнения набора данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md) .  
   
-## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Add a database table or other object to an existing dataset  
- This procedure shows how to add a table from the same database that you used to first create the dataset.  
+## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Добавить таблицу базы данных или другого объекта в существующий набор данных  
+ Эта процедура демонстрирует добавление таблицы из той же базе данных, который использовался для создания набора данных сначала.  
   
-1.  Click the dataset node in **Solution Explorer** to bring the dataset designer into focus.  
+1.  Щелкните узел набора данных в **обозревателе решений** для переноса фокуса в конструкторе наборов данных.  
   
-2.  Click the **Data Sources** tab in the left margin of Visual Studio, or enter `Data Sources` in **QuickLaunch**.  
+2.  Нажмите кнопку **источники данных** вкладку в левом поле Visual Studio, или введите `Data Sources` в **быстрого запуска**.  
   
-3.  Right-click the dataset node and select **Configure Data Source with Wizard** .  
+3.  Щелкните правой кнопкой мыши узел набора данных и выберите **Настройка источника данных с помощью мастера** .  
   
-     ![Data Source context menu](../data-tools/media/data-source-context-menu.png "Data Source context menu")  
+     ![Контекстное меню источника данных](../data-tools/media/data-source-context-menu.png "контекстное меню источника данных")  
   
-4.  Use the wizard to specify which additional tables, or stored procedures or other database object, to add to the dataset.  
+4.  Используйте мастер, чтобы указать, какие дополнительные таблицы, хранимые процедуры или другого объекта базы данных, чтобы добавить в набор данных.  
   
-## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Add a stand-alone data table to a dataset  
+## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Добавление отдельной таблицы к набору данных  
   
-1.  Open your dataset in the **Dataset Designer**.  
+1.  Откройте свой набор данных в **конструктора наборов данных**.  
   
-2.  Drag a <xref:System.Data.DataTable> class from the **DataSet** tab of the **Toolbox** onto the **Dataset Designer**.  
+2.  Перетащите <xref:System.Data.DataTable> класса из **DataSet** вкладке **элементов** на **конструктора наборов данных**.  
   
-3.  Add columns to define your data table. Right-click on the table and choose **Add > Column**. Use the **Properties** window to set the data type of the column and a key if necessary.  
+3.  Добавьте столбцы для определения таблицы данных. Щелкните правой кнопкой мыши в таблице и выберите **Добавить > столбец**. Используйте **свойства** окно, чтобы задать тип данных столбца и ключ, при необходимости.  
   
-4.  Stand-alone tables need to Implement `Fill` logic in stand-alone tables so that you can fill them with data. For information on filling stand-alone data tables, see [Populating a DataSet from a DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+4.  Автономный таблицы должны реализовать `Fill` логику в изолированных таблиц, чтобы их можно заполнить данными. Сведения о заполнении отдельной таблицы. в разделе [заполнение DataSet из объекта DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+
+## <a name="see-also"></a>См. также
+[Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

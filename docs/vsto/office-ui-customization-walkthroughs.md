@@ -1,43 +1,45 @@
 ---
-title: "Пошаговые руководства по настройке пользовательского интерфейса Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "области действий, пошаговые руководства"
-  - "смарт-документы, пошаговые руководства"
-  - "пошаговые руководства [разработка решений Office в Visual Studio], смарт-теги"
-  - "пошаговые руководства [разработка решений Office в Visual Studio], области действий"
+title: "Пошаговые руководства по настройке пользовательского интерфейса Office | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- actions panes, walkthroughs
+- smart documents, walkthroughs
+- walkthroughs [Office development in Visual Studio], smart tags
+- walkthroughs [Office development in Visual Studio], action panes
 ms.assetid: 7d47536b-742d-4643-9d98-4f1d85cf8786
-caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bed22d8b5fced2f423d6c6f1af764ba3ccf07a21
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Пошаговые руководства по настройке пользовательского интерфейса Office
+# <a name="office-ui-customization-walkthroughs"></a>Пошаговые руководства по настройке пользовательского интерфейса Office
   В приведенных ниже пошаговых руководствах описываются способы настройки пользовательского интерфейса приложений Microsoft Office с помощью настроек на уровне документа и надстроек VSTO.  
   
-## Пошаговые руководства по использованию областей действий  
+## <a name="actions-pane-walkthroughs"></a>Пошаговые руководства по использованию областей действий  
  [Пошаговое руководство. Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  Демонстрирует способы создания области действий в документе Word. Область действий содержит два элемента управления, которые обеспечивают передачу вводимых пользователем данных в документ.  
   
  [Пошаговое руководство. Привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
- Демонстрируется способ привязки элементов управления к данным в области действий в документе Word. Элементы управления показывают отношение «Основной\/подробности» между таблицами в базе данных SQL Server.  
+ Демонстрируется способ привязки элементов управления к данным в области действий в документе Word. Элементы управления показывают отношение «Основной/подробности» между таблицами в базе данных SQL Server.  
   
  [Пошаговое руководство. Привязка данных к элементам управления в панели действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  Описывает способы добавления элементов управления, привязанных к источнику данных, на панель действий в Excel.  
   
-## Пошаговые руководства по созданию настраиваемой области задач  
+## <a name="custom-task-pane-walkthroughs"></a>Пошаговые руководства по созданию настраиваемой области задач  
  [Руководство. Автоматизация приложения в настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
  Описываются способы создания настраиваемой области задач, содержащей элемент управления, который автоматизирует работу ведущего приложения при нажатии элемента управления.  
   
@@ -47,7 +49,7 @@ caps.handback.revision: 24
  [Пошаговое руководство. Отображение в Outlook настраиваемых областей задач с сообщениями электронной почты](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
  Демонстрирует, как отобразить уникальный экземпляр настраиваемой области задач для каждого созданного или открытого сообщения электронной почты в Outlook.  
   
-## Пошаговые руководства по использованию ленты  
+## <a name="ribbon-walkthroughs"></a>Пошаговые руководства по использованию ленты  
  [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
  Демонстрируется создание настраиваемой вкладки на ленте с помощью конструктора ленты. Вкладка содержит кнопку, которую можно использовать для скрытия или отображения области действий.  
   
@@ -57,7 +59,7 @@ caps.handback.revision: 24
  [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
  Демонстрируется создание настраиваемой вкладки на ленте с помощью кода XML ленты вместо использования конструктора ленты.  
   
-## Элементы управления в документах Word  
+## <a name="controls-on-word-documents"></a>Элементы управления в документах Word  
  [Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
  Демонстрируется добавление элементов управления в документ с помощью надстройки VSTO.  
   
@@ -70,7 +72,7 @@ caps.handback.revision: 24
  [Пошаговое руководство. Обновление диаграммы в документе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Показано, как изменить стили диаграммы в документе Word с помощью переключателей в настройке на уровне документа.  
   
-## Элементы управления на листах Excel  
+## <a name="controls-on-excel-worksheets"></a>Элементы управления на листах Excel  
  [Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
  Демонстрируется добавление элементов управления на лист с помощью надстройки VSTO.  
   
@@ -83,12 +85,12 @@ caps.handback.revision: 24
  [Пошаговое руководство. Обновление диаграммы на листе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  Демонстрируются основные принципы изменения стилей диаграмм с помощью переключателей на листе Excel.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)   
  [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)   
- [Пошаговые руководства по данным в решениях Office](../vsto/data-in-office-solutions-walkthroughs.md)   
- [Пошаговые руководства по безопасности и развертыванию](../vsto/security-and-deployment-walkthroughs.md)   
- [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Данные в пошаговых руководствах решений Office](../vsto/data-in-office-solutions-walkthroughs.md)   
+ [Безопасность и пошаговые руководства по развертыванию](../vsto/security-and-deployment-walkthroughs.md)   
+ [Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
   

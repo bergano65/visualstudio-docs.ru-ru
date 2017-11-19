@@ -1,12 +1,10 @@
 ---
-title: 'How to: Expose Code to VBA in a Visual C# Project | Microsoft Docs'
+title: "Как: предоставлять к коду VBA в проекте Visual C# | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,43 +16,42 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
 ms.assetid: 56d5894b-4823-42f4-8c7e-d8739b859c52
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4bac541696170363b92ce99270460a10e2f181d8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: a52060f1a1b2200109c5003321857915d95bd12a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>How to: Expose Code to VBA in a Visual C# Project
-  You can expose code in a Visual C# project to Visual Basic for Applications (VBA) code if you want the two types of code to interact with each other.  
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Практическое руководство. Предоставление доступа к коду со стороны VBA в проекте Visual C#
+  Код Visual C# проекта на Visual Basic для приложений (VBA) можно предоставлять, если требуется два типа кода для взаимодействия друг с другом.  
   
- The Visual C# process is different from the Visual Basic process. For more information, see [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
+ Процесс Visual C# отличается от процесса Visual Basic. Дополнительные сведения см. в разделе [как: предоставлять к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="exposing-code-in-a-visual-c-project"></a>Exposing Code in a Visual C# Project  
- To enable VBA code to call code in a Visual C# project, modify the code so it is visible to COM, and then set the **ReferenceAssemblyFromVbaProject** property to **True** in the designer.  
+## <a name="exposing-code-in-a-visual-c-project"></a>Предоставление доступа к коду в проекте Visual C#  
+ Чтобы позволить коду VBA для вызова кода в проекте Visual C#, измените код, чтобы его видимым для COM и задайте **ReferenceAssemblyFromVbaProject** свойства **True** в конструкторе.  
   
- For a walkthrough that demonstrates how to call a method in a Visual C# project from VBA, see [Walkthrough: Calling Code from VBA in a Visual C&#35; Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ Пошаговое руководство для вызова метода в проекте Visual C# из VBA см [Пошаговое руководство: вызов кода из VBA в Visual C &#35; Проект](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
-#### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>To expose code in a Visual C# project to VBA  
+#### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Чтобы предоставить доступ к коду в проекте Visual C# в код VBA  
   
-1.  Open or create a document-level project that is based on a Word document, Excel workbook, or Excel template that supports macros, and that already contains VBA code.  
+1.  Откройте или создайте проект уровня документа, основанного на документе Word, книги Excel или шаблон Excel с поддержкой макросов и уже, содержащей код VBA.  
   
-     For more information about the document file formats that support macros, see [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+     Дополнительные сведения о форматах файлов документов, поддерживающих макросы см. в разделе [объединение VBA и настроек на уровне документа](../vsto/combining-vba-and-document-level-customizations.md).  
   
     > [!NOTE]  
-    >  This feature cannot be used in Word template projects.  
+    >  Эту функцию нельзя использовать в проектах шаблонов Word.  
   
-2.  Ensure that VBA code in the document is allowed to run without prompting the user to enable macros. You can trust VBA code to run by adding the location of the Office project to the list of trusted locations in the Trust Center settings for Word or Excel.  
+2.  Убедитесь, что код VBA в документе разрешено работы без вывода запросов пользователю на включение макросов. Чтобы разрешить выполнение кода VBA, расположение проекта Office можно добавить в список надежных расположений в параметрах Центра управления безопасностью для Word или Excel.  
   
-3.  Add the member that you want to expose to VBA to a public class in your project, and declare the new member as **public**.  
+3.  Добавьте элемент, который вы хотите предоставить коду VBA в открытый класс проекта и объявите новый элемент как **открытый**.  
   
-4.  Apply the following <xref:System.Runtime.InteropServices.ComVisibleAttribute> and <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributes to the class that you are exposing to VBA. These attributes make the class visible to COM, but without generating a class interface.  
+4.  Применить следующие <xref:System.Runtime.InteropServices.ComVisibleAttribute> и <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> атрибуты к классу, который вы предоставляете коду VBA. Эти атрибуты делают класс видимым для модели COM, но без создания интерфейса класса.  
   
     ```csharp  
     [System.Runtime.InteropServices.ComVisible(true)]  
@@ -62,9 +59,9 @@ ms.lasthandoff: 08/28/2017
         System.Runtime.InteropServices.ClassInterfaceType.None)]  
     ```  
   
-5.  Override the **GetAutomationObject** method of a host item class in your project to return an instance of the class that you are exposing to VBA:  
+5.  Переопределить **GetAutomationObject** метод из класса ведущего элемента в проекте для возврата экземпляра класса, который вы предоставляете коду VBA:  
   
-    -   If you are exposing a host item class to VBA, override the **GetAutomationObject** method that belongs to this class, and return the current instance of the class.  
+    -   Если вы предоставляете коду VBA класс ведущего элемента, следует переопределить **GetAutomationObject** метод принадлежит к этому классу, который возвращает текущий экземпляр класса.  
   
         ```csharp  
         protected override object GetAutomationObject()  
@@ -73,7 +70,7 @@ ms.lasthandoff: 08/28/2017
         }  
         ```  
   
-    -   If you are exposing a class that is not a host item to VBA, override the **GetAutomationObject** method of any host item in your project, and return an instance of the non-host item class. For example, the following code assumes that you are exposing a class named `DocumentUtilities` to VBA.  
+    -   Если вы предоставляете класс, который не является элементом узла в код VBA, переопределите **GetAutomationObject** метод любого ведущего элемента в проекте и возврата экземпляра класса элемента, не являющегося ведущим. Например, в следующем коде предполагается, что вы предоставляете класс с именем `DocumentUtilities` коду VBA.  
   
         ```csharp  
         protected override object GetAutomationObject()  
@@ -82,36 +79,36 @@ ms.lasthandoff: 08/28/2017
         }  
         ```  
   
-     For more information about host items, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+     Дополнительные сведения о ведущих элементах см. в разделе [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Extract an interface from the class that you are exposing to VBA. In the **Extract Interface** dialog box, select the public members that you want to include in the interface declaration. For more information, see [Extract Interface Refactoring &#40;C&#35;&#41;](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
+6.  Извлечение интерфейса от класса, который вы предоставляете коду VBA. В **извлечение интерфейса** диалогового окна выберите открытые элементы, которые требуется включить в объявлении интерфейса. Дополнительные сведения см. в разделе [извлечь рефакторинг интерфейса &#40; C# 35; &#41; ](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
   
-7.  Add the **public** keyword to the interface declaration.  
+7.  Добавить **открытый** ключевое слово объявление интерфейса.  
   
-8.  Make the interface visible to COM by adding the following <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute to the interface.  
+8.  Сделать интерфейс видимым для COM, добавив следующий код <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибута к интерфейсу.  
   
     ```csharp  
     [System.Runtime.InteropServices.ComVisible(true)]  
     ```  
   
-9. Open the document (for Word) or worksheet (for Excel) in the designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+9. Откройте документ (для Word) или рабочий лист (для Excel) в конструкторе в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-10. In the **Properties** window, select the **ReferenceAssemblyFromVbaProject** property, and change the value to **True**.  
+10. В окне **Свойства** выберите свойство **ReferenceAssemblyFromVbaProject** и установите значение **True**.  
   
     > [!NOTE]  
-    >  If the workbook or document does not already contain VBA code or if VBA code in the document is not trusted to run, you will receive an error message when you set the **ReferenceAssemblyFromVbaProject** property to **True**. This is because Visual Studio cannot modify the VBA project in the document in this situation.  
+    >  Если книга или документ не содержит кода VBA, или если код VBA в документе не является доверенным для выполнения, вы получите сообщение об ошибке при установке **ReferenceAssemblyFromVbaProject** свойства **True**. Это происходит потому, что в данной ситуации Visual Studio не может изменить проект VBA в документе.  
   
-11. Click **OK** in the message that is displayed. This message reminds you that if you add VBA code to the workbook or document when running the project from [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], the VBA code will be lost the next time that you build the project. This is because the document in the build output folder is overwritten every time that you build the project.  
+11. Появляется сообщение, в котором следует нажать кнопку **ОК** . Это сообщение напоминает, что при добавлении VBA кода в книгу или документ при запуске проекта из [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], код VBA будут потеряны в следующий раз при построении проекта. Это так, как документ в построении выходной папки перезаписывается при каждом построении проекта.  
   
-     At this point, Visual Studio configures the project so that the VBA project can call into the assembly. Visual Studio also adds a method named `GetManagedClass` to the VBA project. You can call this method from anywhere in the VBA project to access the class that you exposed to VBA.  
+     На этом этапе Visual Studio настраивает проект, чтобы проект VBA можно вызывать сборку. Visual Studio также добавляет метод с именем `GetManagedClass` в проект VBA. Этот метод можно вызывать из любого места в проекте VBA для доступа к классу, который был предоставлен коду VBA.  
   
-12. Build the project.  
+12. Выполните построение проекта.  
   
-## <a name="see-also"></a>See Also  
- [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)   
+## <a name="see-also"></a>См. также  
+ [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [Walkthrough: Calling Code from VBA in a Visual C&#35; Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Пошаговое руководство: Вызов кода из VBA в Visual C &#35; Проект](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Практическое руководство. Предоставление доступа к коду со стороны VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

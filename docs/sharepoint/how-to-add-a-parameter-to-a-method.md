@@ -1,67 +1,69 @@
 ---
-title: "Практическое руководство. Добавление параметра в метод"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], добавление метода в параметр"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], параметры методов"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], параметр"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], добавление метода в параметр"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], параметры методов"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], параметр"
+title: "Как: Добавление параметра в метод | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], adding a method to a parameter
+- Business Data Connectivity service [SharePoint development in Visual Studio], parameter
+- BDC [SharePoint development in Visual Studio], adding a method to a parameter
+- BDC [SharePoint development in Visual Studio], parameter
+- Business Data Connectivity service [SharePoint development in Visual Studio], method parameters
+- BDC [SharePoint development in Visual Studio], method parameters
 ms.assetid: c5b6fd32-bf85-4b2a-a01e-f9199f0fb26e
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 881eccae253fc07c13eead45ae9d14658f9adf46
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление параметра в метод
-  Параметр можно использовать для передачи сведений в метод или возвращения сведений из метода.  Все методы должны иметь хотя бы по одному параметру.  Дополнительные сведения о разработке параметра, поддерживающего тип метода, который необходимо создать, см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-parameter-to-a-method"></a>Практическое руководство. Добавление параметра в метод
+  Параметр для передачи сведений в метод или возвращения сведений из метода. Все методы должны иметь по крайней мере один параметр. Дополнительные сведения о создании параметра, поддерживающего тип метода, который вы хотите создать см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- При добавлении параметра в метод Visual Studio добавляет элемент `<Parameter>` в XML\-код файла модели в проекте.  Дополнительные сведения об атрибутах элемента `<Parameter>` см. в разделе [Parameter](http://go.microsoft.com/fwlink/?LinkId=169284).  
+ При добавлении параметра в метод Visual Studio добавляет `<Parameter>` элемент в XML файла модели в проекте. Дополнительные сведения об атрибутах `<Parameter>` элемент, в разделе [параметр](http://go.microsoft.com/fwlink/?LinkId=169284).  
   
-### Добавление параметра в метод  
+### <a name="to-add-a-parameter-to-a-method"></a>Добавление параметра в метод  
   
 1.  Добавьте метод в сущность.  
   
-2.  В строке меню выберите **Вид**, **Другие окна**, **Подробности метода BDC**.  
+2.  В строке меню выберите **представление**, **другие окна**, **Подробности метода BDC**.  
   
-     Откроется окно **Подробности метода BDC**.  Для получения дополнительной информации см. [Общие сведения о средствах разработки моделей подключения к бизнес-данным](../sharepoint/bdc-model-design-tools-overview.md).  
+     **Подробности метода BDC** открывается окно. Дополнительные сведения см. в разделе [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  В окне **Подробности метода BDC** последовательно разверните узел метода и узел **Параметры**.  
+3.  В **Подробности метода BDC** разверните узел метода и затем разверните **параметры** узла.  
   
-4.  В списке **Добавить параметр** выберите **Создать параметр**.  
+4.  В **добавьте параметр** выберите **создать параметр**.  
   
-     Новый параметр отображается под узлом **Параметры**.  
+     Новый параметр отображается под **параметры** узла.  
   
-5.  В меню **Вид** выберите **Окно свойств**.  
+5.  В строке меню выберите **представление**, **окно свойств**.  
   
-6.  В окне **Свойства** задайте для свойства **Имя** любое имеющее смысл имя.  Например, если метод должен возвращать клиентов, ему можно присвоить имя GetCustomers.  
+6.  В **свойства** задайте **имя** свойства любое имя, которое имеет смысл. Например, если метод должен возвращать клиентов, вы назовите метод **GetCustomers**.  
   
-7.  В окне **Подробности метода BDC** откройте список, который отображается для направления параметра, затем выберите **In**, **InOut**, **Out** или **Return**.  
+7.  В **Подробности метода BDC** откройте список, отображаемый для направления параметра и нажмите кнопку **в**, **InOut**, **Out**, или **возвращают**.  
   
-     Дополнительные сведения о том, как выбрать направление для создаваемого метода типа, см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     Дополнительные сведения о том, чтобы выбрать для создаваемого метода типа, для которого создается направление см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-8.  Измените дескриптор типа параметра.  Для получения дополнительной информации см. [Практическое руководство. Определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+8.  Измените дескриптор типа параметра. Дополнительные сведения см. в разделе [как: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## См. также  
- [Общие сведения о средствах разработки моделей подключения к бизнес-данным](../sharepoint/bdc-model-design-tools-overview.md)   
- [Практическое руководство. Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Практическое руководство. Определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)   
+## <a name="see-also"></a>См. также  
+ [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Как: Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Как: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Как: определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

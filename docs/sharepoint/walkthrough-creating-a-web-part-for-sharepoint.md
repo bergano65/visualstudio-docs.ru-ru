@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Web Part for SharePoint | Microsoft Docs'
+title: "Пошаговое руководство: Создание веб-части для SharePoint | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,125 +17,129 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
 ms.assetid: 51fb5bdd-b99c-4716-83bc-e66a5da15169
-caps.latest.revision: 34
-author: kempb
-ms.author: kempb
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f2d3c5ecf34ccbe92ad5303ee8439b68bec26adb
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3293382ffc0c36fb78bb115d0f38c311278a7151
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Walkthrough: Creating a Web Part for SharePoint
-  Web Parts enable users to directly modify the content, appearance, and behavior of SharePoint site pages by using a browser. This walkthrough shows you how to create a Web Part by using the **Web Part** item template in Visual Studio 2010.  
+# <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Пошаговое руководство. Создание веб-части для SharePoint
+  Веб-части позволяют пользователям напрямую изменять содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. В этом пошаговом руководстве показано, как создать веб-части с помощью **веб-часть** шаблона элемента в Visual Studio 2010.  
   
- The Web Part displays employees in a data grid. The user specifies the location of the file that contains the employee data. The user can also filter the data grid so that employees who are managers appear in the list only.  
+ Веб-части отображаются сотрудники, в сетке данных. Пользователь указывает расположение файла, содержащего данные о сотрудниках. Пользователь также может фильтровать сетка данных, для отображения в списке только сотрудников, которые являются менеджерами компании.  
   
- This walkthrough illustrates the following tasks:  
+ В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Creating a Web Part by using the Visual Studio **Web Part** item template.  
+-   Создание веб-части с помощью Visual Studio **веб-часть** шаблона элемента.  
   
--   Creating a property that can be set by the user of the Web Part. This property specifies the location of the employee data file.  
+-   Создание свойства, которое может устанавливаться пользователем веб-части. Это свойство указывает расположение файла данных сотрудников.  
   
--   Rendering content in a Web Part by adding controls to the Web Part controls collection.  
+-   Отображение содержимого в веб-части путем добавления элементов управления в веб-часть в коллекцию элементов управления.  
   
--   Creating a new menu item, referred to as a *verb,* that appears in the verbs menu of the rendered Web part. Verbs enable the user to modify the data that appears in the Web Part.  
+-   Создание нового пункта меню, называется *команды* , которая отображается в меню команд отображаемой веб-части. Команды позволяют пользователю изменять данные, отображаемые в веб-части.  
   
--   Testing the Web Part in SharePoint.  
+-   Тестирование веб-части в SharePoint.  
   
     > [!NOTE]  
-    >  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+    >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Supported editions of Microsoft Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые редакции Microsoft Windows и SharePoint. Дополнительные сведения см. в разделе [требования к разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vs_pro_current_short](../sharepoint/includes/vs-pro-current-short-md.md)] or an edition of Visual Studio Application Lifecycle Management (ALM).  
+-   [!INCLUDE[vs_pro_current_short](../sharepoint/includes/vs-pro-current-short-md.md)]или выпуск из Visual Studio Application Lifecycle Management (ALM).  
   
-## <a name="creating-an-empty-sharepoint-project"></a>Creating an Empty SharePoint Project  
- First, create a Empty SharePoint project. Later, you will add a Web Part to the project by using the **Web Part** item template.  
+## <a name="creating-an-empty-sharepoint-project"></a>Создавая пустой проект SharePoint  
+ Сначала создайте пустой проект SharePoint. Позже вы добавите веб-части в проект с помощью **веб-часть** шаблона элемента.  
   
-#### <a name="to-create-an-empty-sharepoint-project"></a>To create an Empty SharePoint Project  
+#### <a name="to-create-an-empty-sharepoint-project"></a>Чтобы создать пустой проект SharePoint  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] by using the **Run as Administrator** option.  
+1.  Запуск [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] с помощью **Запуск от имени администратора** параметр.  
   
-2.  On the men bar, choose **File**, **New**, **Project**.  
+2.  В строке меню выберите **файл**, **New**, **проекта**.  
   
-3.  In the **New Project** dialog box, expand the **SharePoint** node under the language that you want to use, and then choose the **2010** node.  
+3.  В **новый проект** диалогового окна разверните **SharePoint** узле язык, который вы хотите использовать, а затем выберите **2010** узла.  
   
-4.  In the **Templates** pane, choose **SharePoint 2010 Project**, and then choose the **OK** button.  
+4.  В **шаблоны** области, выберите **проект SharePoint 2010**и нажмите кнопку **ОК** кнопки.  
   
-     The **SharePoint Customization Wizard** appears. This wizard enables you to select the site that you will use to debug the project and the trust level of the solution.  
+     **Мастер настройки SharePoint** отображается. Этот мастер позволяет выбрать сайт, который будет использоваться для отладки проекта и уровень доверия решения.  
   
-5.  Choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the default local SharePoint site.  
+5.  Выберите **развернуть как решение фермы** переключатель, а затем выберите **Готово** кнопку, чтобы принять локальный сайт SharePoint по умолчанию.  
   
-## <a name="adding-a-web-part-to-the-project"></a>Adding a Web Part to the Project  
- Add a **Web Part** item to the project. The **Web Part** item adds the Web Part code file. Later, you will add code to the Web Part code file to render the contents of the Web Part.  
+## <a name="adding-a-web-part-to-the-project"></a>Добавление веб-части в проект  
+ Добавить **веб-часть** элемента в проект. **Веб-часть** элемента Добавление файла кода веб-части. Позже добавите код в файл кода веб-части для отображения содержимого веб-части.  
   
-#### <a name="to-add-a-web-part-to-the-project"></a>To add a Web Part to the Project  
+#### <a name="to-add-a-web-part-to-the-project"></a>Чтобы добавить веб-части в проект  
   
-1.  On the menu bar, choose **Project**, **Add New Item**.  
+1.  В строке меню выберите **проекта**, **Добавление нового элемента**.  
   
-2.  In the **Add New Item** dialog box, in the **Installed Templates** pane, expand the **SharePoint** node, and then choose the **2010** node.  
+2.  В **Добавление нового элемента** в диалоговом **установленные шаблоны** области, разверните **SharePoint** узел и выберите **2010** узла.  
   
-3.  In the list of SharePoint templates, choose the **Web Part** template, and then choose the **Add** button.  
+3.  В списке шаблонов SharePoint выберите **веб-часть** шаблона, а затем выберите **добавить** кнопки.  
   
-     The **Web Part** item appears in **Solution Explorer**.  
+     **Веб-часть** элемент появляется в **обозревателе решений**.  
   
-## <a name="rendering-content-in-the-web-part"></a>Rendering Content in the Web Part  
- You can specify which controls you want to appear in the Web Part by adding them to the controls collection of the Web Part class.  
+## <a name="rendering-content-in-the-web-part"></a>Отображение содержимого в веб-части  
+ Можно указать, какие элементы управления, будет отображаться в веб-части путем добавления их в коллекцию элементов управления веб-части класса.  
   
-#### <a name="to-render-content-in-the-web-part"></a>To render content in the Web Part  
+#### <a name="to-render-content-in-the-web-part"></a>Для отображения содержимого веб-части  
   
-1.  In **Solution Explorer**, open WebPart1.vb (in Visual Basic) or WebPart1.cs (in C#).  
+1.  В **обозревателе решений**, откройте WebPart1.vb (в Visual Basic) или WebPart1.cs (в C#).  
   
-     The Web Part code file opens in Code Editor.  
+     В редакторе кода откроется файл кода веб-части.  
   
-2.  Add the following statements to the top of the Web Part code file.  
+2.  Добавьте следующие инструкции в начало файла кода веб-части.  
   
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]  [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]  
+     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
+     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]  
   
-3.  Add the following code to the `WebPart1` class. This code declares the following fields:  
+3.  Добавьте следующий код в класс `WebPart1`. Этот код объявляет следующие поля:  
   
-    -   A data grid to display employees in the Web Part.  
+    -   Сетка данных для отображения сотрудников в веб-части.  
   
-    -   Text that appears on the control that is used to filter the data grid.  
+    -   Текст, отображаемый на элементе управления, который используется для фильтрации сетки данных.  
   
-    -   A label that displays an error if the data grid is unable to display data.  
+    -   Метка, выводится сообщение об ошибке, если сетка данных не удалось отобразить данные.  
   
-    -   A string that contains the path of the employee data file.  
+    -   Строка, содержащая путь к файлу данных сотрудников.  
   
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)] [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]  
+     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
+     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]  
   
-4.  Add the following code to the `WebPart1` class. This code adds a custom property named `DataFilePath` to the Web Part. A custom property is a property that can be set in SharePoint by the user. This property gets and sets the location of a XML data file that is used to populate the data grid.  
+4.  Добавьте следующий код в класс `WebPart1`. Этот код добавляет пользовательское свойство с именем `DataFilePath` веб-части. Пользовательское свойство является свойством, которое можно задать в SharePoint для пользователя. Это свойство возвращает и задает расположение файла данных XML, используемый для заполнения сетки данных.  
   
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]  [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]  
+     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
+     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]  
   
-5.  Replace the `CreateChildControls` method with the following code. This code performs the following tasks:  
+5.  Замените метод `CreateChildControls` следующим кодом. Этот код выполняет следующие задачи:  
   
-    -   Adds the data grid and label that you declared in the previous step.  
+    -   Добавляет сетку данных и метку, объявленные в предыдущем шаге.  
   
-    -   Binds the data grid to an XML file that contains employee data.  
+    -   Привязывает сетку данных в XML-файл, содержащий данные о сотрудниках.  
   
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)] [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]  
+     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
+     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]  
   
-6.  Add the following method to the `WebPart1` class. This code performs the following tasks:  
+6.  Добавьте следующий метод в класс `WebPart1`. Этот код выполняет следующие задачи:  
   
-    -   Creates a verb that appears in the Web Part verbs menu of the rendered Web part.  
+    -   Создает команду, которая отображается в меню команд веб-части, готовый для просмотра веб-части.  
   
-    -   Handles the event that is raised when the user chooses the verb in the verbs menu. This code filters the list of employees that appears in the data grid.  
+    -   Обрабатывает событие, возникающее при выборе пользователем команды в меню команд. Этот код фильтрует список сотрудников, который отображается в сетке данных.  
   
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)] [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]  
+     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
+     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]  
   
-## <a name="testing-the-web-part"></a>Testing the Web Part  
- When you run the project, the SharePoint site opens. The Web Part is automatically added to the Web Part Gallery in SharePoint. You can add the Web Part to any Web Part page.  
+## <a name="testing-the-web-part"></a>Тестирование веб-части  
+ При запуске проекта открывается сайт SharePoint. Веб-части автоматически добавляется в коллекцию веб-частей в SharePoint. Веб-часть можно добавить на любую страницу веб-части.  
   
-#### <a name="to-test-the-web-part"></a>To test the Web Part  
+#### <a name="to-test-the-web-part"></a>Для тестирования веб-части  
   
-1.  Paste the following XML into a Notepad file. This XML file contains the sample data that will appear in the Web Part.  
+1.  Вставьте следующий XML-код в файл блокнота. Этот XML-файл содержит образцы данных, которое будет отображаться в веб-части.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -170,64 +172,64 @@ ms.lasthandoff: 08/30/2017
         </employees>  
     ```  
   
-2.  In Notepad, on the menu bar, choose **File**, **Save As**.  
+2.  В «блокноте» в строке меню выберите **файл**, **Сохранить как**.  
   
-3.  In the **Save As** dialog box, in the **Save as type** list, choose **All Files**.  
+3.  В **Сохранить как** диалогового **тип** выберите **все файлы**.  
   
-4.  In the **File name** box, enter **data.xml**.  
+4.  В **имя файла** введите **data.xml**.  
   
-5.  Choose any folder by using the **Browse Folders** button, and then choose the **Save** button.  
+5.  Выберите любую папку с помощью **Обзор папок** , а затем кнопку **Сохранить** кнопки.  
   
-6.  In Visual Studio, choose the **F5** key.  
+6.  В Visual Studio выберите **F5** ключа.  
   
-     The SharePoint site opens.  
+     Откроется сайт SharePoint.  
   
-7.  On the **Site Actions** menu, choose **More Options**.  
+7.  На **действия сайта** меню, выберите **Дополнительно**.  
   
-8.  In the **Create** page, choose the **Web Part Page** type, then choose the **Create** button.  
+8.  В **создать** выберите **страницы веб-частей** введите, а затем выберите **создать** кнопки.  
   
-9. In the **New Web Part Page** page, name the page **SampleWebPartPage.aspx**, and then choose the **Create** button.  
+9. В **новой страницы веб-частей** назовите страницу **SampleWebPartPage.aspx**и нажмите кнопку **создать** кнопки.  
   
-     The Web Part page appears.  
+     Откроется страница веб-части.  
   
-10. Select any zone on the Web Part page.  
+10. Выберите все области на странице веб-части.  
   
-11. At the top of the page, choose the **Insert** tab, and then choose the **Web Part** button.  
+11. В верхней части страницы, выберите **вставить** , а затем выберите **веб-часть** кнопки.  
   
-12. In the **Categories** pane, choose the **Custom** folder, choose the **WebPart1** Web Part, and then choose the **Add** button.  
+12. В **категории** области выберите **настраиваемый** папку, выберите **WebPart1** веб-части и выберите **добавить** кнопки.  
   
-     The Web Part appears on the page.  
+     Веб-части отображается на странице.  
   
-## <a name="testing-the-custom-property"></a>Testing the Custom Property  
- To populate the data grid that appears in the Web Part, specify the path of the XML file that contains data about each employee.  
+## <a name="testing-the-custom-property"></a>Тестирование пользовательского свойства  
+ Чтобы заполнить сетке данных, которая отображается в веб-части, укажите путь к XML-файл, который содержит данные обо всех сотрудниках.  
   
-#### <a name="to-test-the-custom-property"></a>To test the custom property  
+#### <a name="to-test-the-custom-property"></a>Для проверки пользовательского свойства  
   
-1.  Choose the arrow that appears on the right side of the Web Part, and then choose **Edit Web Part** from the menu that appears.  
+1.  Выберите стрелку, отображающуюся в правой части веб-части, а затем выберите **изменить веб-часть** из появившегося меню.  
   
-     A pane that contains properties for the Web Part appears on the right side of the page.  
+     Область, содержащую свойства веб-части отображается в правой части страницы.  
   
-2.  In the pane, expand the **Miscellaneous** node, enter the path of the XML file that you created earlier, choose the **Apply** button, and then choose the **OK** button.  
+2.  В области, разверните **Разное** узла, введите путь к XML-файла, созданного ранее, выберите **применить** , а затем кнопку **ОК** кнопки.  
   
-     Verify that a list of employees appears in the Web Part.  
+     Убедитесь, что список сотрудников отображается в веб-части.  
   
-## <a name="testing-the-web-part-verb"></a>Testing the Web Part Verb  
- Show and hide employees that are not managers by clicking an item that appears in the Web Part verbs menu.  
+## <a name="testing-the-web-part-verb"></a>Тестирование команды веб-части  
+ Отобразить или скрыть сотрудников, которые не являются менеджерами, щелкнув элемент, который отображается в меню команд веб-части.  
   
-#### <a name="to-test-the-web-part-verb"></a>To test the Web Part verb  
+#### <a name="to-test-the-web-part-verb"></a>Для тестирования команды веб-части  
   
-1.  Choose the arrow that appears on the right side of the Web Part, and then choose **Show Managers Only** from the menu that appears.  
+1.  Выберите стрелку, отображающуюся в правой части веб-части, а затем выберите **Показывать только менеджеров** из появившегося меню.  
   
-     Only employees who are managers appear in the Web Part.  
+     В веб-части отображаются только тех сотрудников, которые являются менеджерами компании.  
   
-2.  Choose the arrow again, and then choose **Show All Employees** from the menu that appears.  
+2.  Щелкните стрелку еще раз, а затем выберите **Показывать всех сотрудников** из появившегося меню.  
   
-     All employees appear in the Web Part.  
+     Обо всех сотрудниках отображаются в веб-части.  
   
-## <a name="see-also"></a>See Also  
- [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [How to: Create a SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [How to: Create a SharePoint Web Part by Using a Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Walkthrough: Creating a Web Part for SharePoint by Using a Designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
+## <a name="see-also"></a>См. также  
+ [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Как: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [Как: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
   
   

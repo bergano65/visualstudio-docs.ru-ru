@@ -1,59 +1,64 @@
 ---
-title: "Элемент FullClassName (расширение мастера шаблонов Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName"
-helpviewer_keywords: 
-  - "FullClassName - элемент [шаблоны проектов Visual Studio]"
+title: "Элемент FullClassName (расширение мастера шаблонов Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
+helpviewer_keywords: FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a94a6d95bee32da52d484bc4203433b092ef2b82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент FullClassName (расширение мастера шаблонов Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Полное имя класса, который реализует интерфейс `IWizard`.  
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Элемент FullClassName (расширение мастера шаблонов Visual Studio)
+Полное имя класса, который реализует `IWizard` интерфейса.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<WizardExtension >  
+ ...  
+ \<FullClassName >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <FullClassName>ClassName</FullClassName>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
+|-------------|-----------------|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Содержит элементы регистрации для настройки мастера шаблонов.|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Данный текст задает класс, реализующий интерфейс `IWizard`.  Заданный класс должен существовать в сборке, заданной элементом [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md).  
+ Данный текст задает класс, реализующий `IWizard` интерфейса. Указанный класс должен существовать в сборке, указанной по [сборки](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) элемента.  
   
-## Заметки  
- `FullClassName` является обязательным дочерним элементом элемента `WizardExtension`.  
+## <a name="remarks"></a>Примечания  
+ `FullClassName` — обязательный дочерний элемент элемента `WizardExtension`.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для стандартного шаблона проекта Windows\-приложения [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере демонстрируется метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -83,7 +88,7 @@ caps.handback.revision: 9
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)

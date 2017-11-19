@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Template By Using Content Controls | Microsoft Docs'
+title: "Пошаговое руководство: Создание шаблона с помощью элементов управления содержимым | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,229 +15,234 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating documents
 - content controls [Office development in Visual Studio], adding to documents
 ms.assetid: 88fb9a60-dcc3-4a5f-a8c9-7aff01ca4b4b
-caps.latest.revision: 46
-author: kempb
-ms.author: kempb
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3876ec91cb4872e2a08ee83b60aeca7ce974ad0d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7edb589551f888427be6abcbb8f86c2e86b4349c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Walkthrough: Creating a Template By Using Content Controls
-  This walkthrough demonstrates how to create a document-level customization that uses content controls to create structured and reusable content in a Microsoft Office Word template.  
+# <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым
+  В этом пошаговом руководстве показано, как создать настройку на уровне документа, использующую элементы управления содержимым, для создания структурированного и повторно используемого содержимого в шаблоне Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Word enables you to create a collection of reusable document parts, named *building blocks*. This walkthrough shows how to create two tables as building blocks. Each table contains several content controls that can hold different types of content, such as plain text or dates. One of the tables contains information about an employee, and the other table contains customer feedback.  
+ Приложение Word позволяет создать коллекцию повторно используемых частей документа, с именем *стандартные блоки*. В этом пошаговом руководстве демонстрируется создание двух таблиц в качестве стандартных блоков. Каждая из них содержит несколько элементов управления, которые могут включать разные типы содержимого, например обычный текст или даты. Одна из таблиц содержит информацию о сотруднике, а другая таблица содержит отзывы.  
   
- After you create a document from the template, you can add either of the tables to the document by using several <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> objects, which display the available building blocks in the template.  
+ После создания документа на основе шаблона можно добавить любую из таблиц в документ, используя несколько объектов <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>, отображающих доступные стандартные блоки в шаблоне.  
   
- This walkthrough illustrates the following tasks:  
+ В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Creating tables that contain content controls in a Word template at design time.  
+-   создание таблиц с элементами управления содержимым в шаблоне Word во время разработки;  
   
--   Populating a combo box content control and a drop-down list content control programmatically.  
+-   заполнение элемента управления содержимым «Поле со списком» и элемента управления содержимым «Раскрывающийся список»;  
   
--   Preventing users from editing a specified table.  
+-   запрет редактирования указанной таблицы пользователями;  
   
--   Adding tables to the building block collection of a template.  
+-   добавление таблиц в коллекцию стандартных блоков шаблона;  
   
--   Creating a content control that displays the available building blocks in the template.  
+-   создание элемента управления содержимым, отображающего доступные стандартные блоки в шаблоне.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word.  
   
-## <a name="creating-a-new-word-template-project"></a>Creating a New Word Template Project  
- Create a Word template so that users can create their own copies easily.  
+## <a name="creating-a-new-word-template-project"></a>Создание проекта шаблона Word  
+ Создайте шаблон Word, чтобы пользователи могли легко создавать собственные копии.  
   
-#### <a name="to-create-a-new-word-template-project"></a>To create a new Word template project  
+#### <a name="to-create-a-new-word-template-project"></a>Создание проекта шаблона Word  
   
-1.  Create a Word template project with the name **MyBuildingBlockTemplate**. In the wizard, create a new document in the solution. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создание проекта шаблона Word с именем **MyBuildingBlockTemplate**. В мастере создайте документ в решении. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the new Word template in the designer and adds the **MyBuildingBlockTemplate** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Открывает новый шаблон Word в конструкторе и добавляет **MyBuildingBlockTemplate** проекта **обозревателе решений**.  
   
-## <a name="creating-the-employee-table"></a>Creating the Employee Table  
- Create a table that contains four different types of content controls where the user can enter information about an employee.  
+## <a name="creating-the-employee-table"></a>Создание таблицы сотрудников  
+ Создайте таблицу, содержащую четыре различных типа элементов управления содержимым, в которой пользователь может ввести сведения о сотруднике.  
   
-#### <a name="to-create-the-employee-table"></a>To create the employee table  
+#### <a name="to-create-the-employee-table"></a>Создание таблицы сотрудников  
   
-1.  In the Word template that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, on the Ribbon, click the **Insert** tab.  
+1.  В шаблоне Word, который размещен в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] на ленте щелкните **вставить** вкладки.  
   
-2.  In the **Tables** group, click **Table**, and insert a table with 2 columns and 4 rows.  
+2.  В **таблиц** щелкните **таблицы**и вставьте таблицу с двумя столбцами и четырьмя строками.  
   
-3.  Type text in the first column so that it resembles the following column:  
+3.  Введите текст в первый столбец, как показано в следующем столбце:  
   
     ||  
     |-|  
-    |**Employee Name**|  
-    |**Hire Date**|  
-    |**Title**|  
-    |**Picture**|  
+    |**Имя сотрудника**|  
+    |**Дата приема на работу**|  
+    |**Заголовок**|  
+    |**Рисунок**|  
   
-4.  Click in the first cell in the second column (next to **Employee Name**).  
+4.  Щелкните первую ячейку во втором столбце (рядом с **имя сотрудника**).  
   
-5.  On the Ribbon, click the **Developer** tab.  
+5.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  In the **Controls** group, click the **Text** button ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the first cell.  
+6.  В **элементов управления** щелкните **текст** кнопку ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") добавление <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>в первую ячейку.  
   
-7.  Click the second cell in the second column (next to **Hire Date**).  
+7.  Щелкните вторую ячейку во втором столбце (рядом с **Дата приема на работу**).  
   
-8.  In the **Controls** group, click the **Date Picker** button ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") to add a <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> to the second cell.  
+8.  В **элементов управления** щелкните **выбора даты** кнопку ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") добавление <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> во вторую ячейку.  
   
-9. Click the third cell in the second column (next to **Title**).  
+9. Щелкните третью ячейку во втором столбце (рядом с **заголовок**).  
   
-10. In the **Controls** group, click the **Combo Box** button ![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl") to add a <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> to the third cell.  
+10. В **элементов управления** щелкните **списком** кнопку ![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl") добавление <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>в третью ячейку.  
   
-11. Click the last cell in the second column (next to **Picture**).  
+11. Щелкните последнюю ячейку во втором столбце (рядом с **рисунок**).  
   
-12. In the **Controls** group, click the **Picture Content Control** button ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") to add a <xref:Microsoft.Office.Tools.Word.PictureContentControl> to the last cell.  
+12. В **элементов управления** щелкните **элемент управления содержимым рисунка** кнопку ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") для добавления <xref:Microsoft.Office.Tools.Word.PictureContentControl> в последнюю ячейку.  
   
-## <a name="creating-the-customer-feedback-table"></a>Creating the Customer Feedback Table  
- Create a table that contains three different types of content controls where the user can enter customer feedback information.  
+## <a name="creating-the-customer-feedback-table"></a>Создание таблицы отзывов клиентов  
+ Создайте таблицу, содержащую три различных типа элементов управления содержимым, в которой пользователь может ввести отзывы клиентов.  
   
-#### <a name="to-create-the-customer-feedback-table"></a>To create the customer feedback table  
+#### <a name="to-create-the-customer-feedback-table"></a>Создание таблицы отзывов клиентов  
   
-1.  In the Word template, click in the line after the employee table that you added earlier, and press ENTER to add a new paragraph.  
+1.  В шаблоне Word щелкните строку после таблицы сотрудников, добавленной ранее, и нажмите клавишу ВВОД, чтобы добавить новый абзац.  
   
-2.  On the Ribbon, click the **Insert** tab.  
+2.  На ленте щелкните **вставить** вкладки.  
   
-3.  In the **Tables** group, click **Table**, and insert a table with 2 columns and 3 rows.  
+3.  В **таблиц** щелкните **таблицы**и вставьте таблицу с двумя столбцами и тремя строками.  
   
-4.  Type text in the first column so that it resembles the following column:  
+4.  Введите текст в первый столбец, как показано в следующем столбце:  
   
     ||  
     |-|  
-    |**Customer Name**|  
-    |**Satisfaction Rating**|  
-    |**Comments**|  
+    |**Имя клиента**|  
+    |**Степень удовлетворенности**|  
+    |**Комментарии**|  
   
-5.  Click in the first cell of the second column (next to **Customer Name**).  
+5.  Щелкните первую ячейку во втором столбце (рядом с **имя клиента**).  
   
-6.  On the Ribbon, click the **Developer** tab.  
+6.  На ленте перейдите на вкладку **Разработчик** .  
   
-7.  In the **Controls** group, click the **Text** button ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the first cell.  
+7.  В **элементов управления** щелкните **текст** кнопку ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") добавление <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>в первую ячейку.  
   
-8.  Click in the second cell of the second column (next to **Satisfaction Rating**).  
+8.  Щелкните вторую ячейку во втором столбце (рядом с **удовлетворенности**).  
   
-9. In the **Controls** group, click the **Drop-Down List** button ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") to add a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to the second cell.  
+9. В **элементов управления** щелкните **раскрывающегося списка** кнопку ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") для добавления <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> во вторую ячейку.  
   
-10. Click in the last cell of the second column (next to **Comments**).  
+10. Щелкните последнюю ячейку во втором столбце (рядом с **комментарии**).  
   
-11. In the **Controls** group, click the **Rich Text** button ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the last cell.  
+11. В **элементов управления** щелкните **форматированного текста** кнопку ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") добавление <xref:Microsoft.Office.Tools.Word.RichTextContentControl>в последнюю ячейку.  
   
-## <a name="populating-the-combo-box-and-drop-down-list-programmatically"></a>Populating the Combo Box and Drop Down List Programmatically  
- You can initialize content controls at design time by using the **Properties** window in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. You can also initialize them at run time, which enables you to set their initial states dynamically. For this walkthrough, use code to populate the entries in the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> and <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> at run time so that you can see how these objects work.  
+## <a name="populating-the-combo-box-and-drop-down-list-programmatically"></a>Заполнение поля со списком и раскрывающегося списка программным способом  
+ Элементы управления содержимым можно инициализировать во время разработки с помощью **свойства** окна в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Также их можно инициализировать во время выполнения, что позволяет динамически задавать их начальное состояние. Для этого пошагового руководства используйте код для заполнения записей <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> и <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> во время выполнения, чтобы увидеть, как работают эти объекты.  
   
-#### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>To modify the UI of the content controls programmatically  
+#### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Изменение пользовательского интерфейса элементов управления содержимым программным способом  
   
-1.  In **Solution Explorer**, right-click **ThisDocument.cs** or **ThisDocument.vb**, and then click **View Code**.  
+1.  В **обозревателе решений**, щелкните правой кнопкой мыши **ThisDocument.cs** или **ThisDocument.vb**, а затем нажмите кнопку **Просмотр кода**.  
   
-2.  Add the following code to the `ThisDocument` class. This code declares several objects that you will use later in this walkthrough.  
+2.  Добавьте следующий код в класс `ThisDocument`. В этом коде объявляются несколько объектов, которые вы будете использовать позже в этом пошаговом руководстве.  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  
   
-3.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class. This code adds entries to the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> and <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> in the tables, and sets the placeholder text that is displayed in each of these controls before the user edits them.  
+3.  Добавьте в метод `ThisDocument_Startup` класса `ThisDocument` следующий код. Этот код добавляет записи в таблицы <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> и <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> и задает замещающий текст, отображаемый в каждом из этих элементов управления, прежде чем пользователь изменяет их.  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]  
   
-## <a name="preventing-users-from-editing-the-employee-table"></a>Preventing Users from Editing the Employee Table  
- Use the <xref:Microsoft.Office.Tools.Word.GroupContentControl> object that you declared earlier to protect the employee table. After protecting the table, users can still edit the content controls in the table. However, they cannot edit text in the first column or modify the table in other ways, such as adding or deleting rows and columns. For more information about how to use a <xref:Microsoft.Office.Tools.Word.GroupContentControl> to protect a part of a document, see [Content Controls](../vsto/content-controls.md).  
+## <a name="preventing-users-from-editing-the-employee-table"></a>Запрет редактирования указанной таблицы пользователями  
+ Используйте объект <xref:Microsoft.Office.Tools.Word.GroupContentControl>, объявленный ранее, для защиты таблицы сотрудников. После применения защиты пользователи по-прежнему смогут редактировать элементы управления содержимым в таблице. Однако они не смогут изменять текст в первом столбце или изменять таблицу иным способом, например добавляя или удаляя строки и столбцы. Дополнительные сведения об использовании <xref:Microsoft.Office.Tools.Word.GroupContentControl> для защиты части документа см [элементы управления содержимым](../vsto/content-controls.md).  
   
-#### <a name="to-prevent-users-from-editing-the-employee-table"></a>To prevent users from editing the employee table  
+#### <a name="to-prevent-users-from-editing-the-employee-table"></a>Запрет редактирования указанной таблицы пользователями  
   
-1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code prevents users from editing the employee table by putting the table inside the <xref:Microsoft.Office.Tools.Word.GroupContentControl> object that you declared earlier.  
+1.  Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код предотвращает изменение таблицы сотрудников, помещая таблицу внутри объекта <xref:Microsoft.Office.Tools.Word.GroupContentControl>, объявленного ранее.  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]  
   
-## <a name="adding-the-tables-to-the-building-block-collection"></a>Adding the Tables to the Building Block Collection  
- Add the tables to a collection of document building blocks in the template so that users can insert the tables that you have created into the document. For more information about document building blocks, see [Content Controls](../vsto/content-controls.md).  
+## <a name="adding-the-tables-to-the-building-block-collection"></a>Добавление таблиц в коллекцию стандартных блоков  
+ Добавьте таблицы в коллекцию стандартных блоков документа в шаблоне, чтобы пользователи могли вставлять таблицы, созданные вами в документе. Дополнительные сведения о стандартных блоках документа см. в разделе [элементы управления содержимым](../vsto/content-controls.md).  
   
-#### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>To add the tables to the building blocks in the template  
+#### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Добавление таблиц в стандартные блоки в шаблоне  
   
-1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code adds new building blocks that contain the tables to the Microsoft.Office.Interop.Word.BuildingBlockEntries collection, which contains all the reusable building blocks in the template. The new building blocks are defined in a new category named **Employee and Customer Information** and are assigned the building block type Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
+1.  Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код добавляет новые стандартные блоки, содержащие таблицы коллекции Microsoft.Office.Interop.Word.BuildingBlockEntries, которая содержит все повторно используемые блоки в шаблоне. Новые стандартные блоки определяются в новой категории с именем **сотрудника и информацию о клиенте** и назначается тип стандартного блока Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]  
   
-2.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code deletes the tables from the template. The tables are no longer necessary, because you have added them to the gallery of reusable building blocks in the template. The code first puts the document into design mode so that the protected employee table can be deleted.  
+2.  Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код удаляет таблицы из шаблона. Таблицы более не нужны, поскольку вы добавили их в коллекцию повторно используемых стандартных блоков в шаблоне. Код сначала переводит документ в режим конструктора, чтобы можно было удалить защищенную таблицу сотрудников.  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]  
   
-## <a name="creating-a-content-control-that-displays-the-building-blocks"></a>Creating a Content Control That Displays the Building Blocks  
- Create a content control that provides access to the building blocks (that is, the tables) that you created earlier. Users can click this control to add the tables to the document.  
+## <a name="creating-a-content-control-that-displays-the-building-blocks"></a>Создание элемента управления содержимым, отображающего доступные стандартные блоки  
+ Создайте элемент управления содержимым, предоставляющий доступ к стандартным блокам (таблицам), созданным ранее. Пользователи могут щелкнуть этот элемент управления, чтобы добавить таблицы в документ.  
   
-#### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>To create a content control that displays the building blocks  
+#### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Создание элемента управления содержимым, отображающего доступные стандартные блоки  
   
-1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code initializes the <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> object that you declared earlier. The <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> displays all building blocks that are defined in the category **Employee and Customer Information** and that have the building block type Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
+1.  Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код инициализирует объект <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>, объявленный ранее. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> Отображает все стандартные блоки, которые определены в категории **сотрудника и информацию о клиенте** и имеющие тип стандартного блока Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]  
   
-## <a name="testing-the-project"></a>Testing the Project  
- Users can click the building block gallery controls in the document to insert the employee table or the customer feedback table. Users can type or select responses in the content controls in both of the tables. Users can modify other parts of the customer feedback table, but they should not be able to modify other parts of the employee table.  
+## <a name="testing-the-project"></a>Тестирование проекта  
+ Пользователи могут щелкнуть элементы управления коллекции стандартных блоков в документе, чтобы вставить таблицу сотрудников или отзывов. Пользователи могут ввести или выбрать ответы в элементах управления содержимым в обеих таблицах. Пользователи могут изменять другие части таблицы отзывов, но они не смогут менять другие части таблицы сотрудников.  
   
-#### <a name="to-test-the-employee-table"></a>To test the employee table  
+#### <a name="to-test-the-employee-table"></a>Проверка таблицы сотрудников  
   
-1.  Press F5 to run the project.  
+1.  Нажмите клавишу F5, чтобы запустить проект.  
   
-2.  Click **Choose your first building block** to display the first building block gallery content control.  
+2.  Нажмите кнопку **выбрать первый стандартный блок** для отображения элемента управления первого стандартного блока.  
   
-3.  Click the drop-down arrow next to the **Custom Gallery 1** heading in the control, and select **Employee Table**.  
+3.  Щелкните стрелку раскрывающегося списка рядом с **Настраиваемая коллекция 1** заголовка в элементе управления и выберите **таблицы Employee**.  
   
-4.  Click in the cell to the right of the **Employee Name** cell and type a name.  
+4.  Щелкните ячейку справа от **имя сотрудника** ячейку и введите имя.  
   
-     Verify that you can add only text to this cell. The <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> allows users to add only text, not other types of content such as art or a table.  
+     Убедитесь, что в эту ячейку можно добавить только текст. <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> позволяет пользователям добавлять только текст, но не другие типы содержимого, такие как изображения или таблицы.  
   
-5.  Click in the cell to the right of the **Hire Date** cell and select a date in the date picker.  
+5.  Щелкните ячейку справа от **Дата приема на работу** ячейку и выберите дату в элементе выбора даты.  
   
-6.  Click in the cell to the right of the **Title** cell and select one of the job titles in the combo box.  
+6.  Щелкните ячейку справа от **заголовок** ячейку и выберите один из перечисленных должностей в поле со списком.  
   
-     Optionally, type the name of a job title that is not in the list. This is possible because the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> enables users to select from a list of entries or to type their own entries.  
+     При необходимости введите имя должности, которого нет в списке. Это возможно, поскольку <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> позволяет пользователям выбрать из списка записей или ввести собственную запись.  
   
-7.  Click the icon in the cell to the right of the **Picture** cell and browse to an image to display it.  
+7.  Щелкните значок в ячейке справа от **рисунок** ячейку и выберите изображение для его отображения.  
   
-8.  Try to add rows or columns to the table, and try to delete rows and columns from the table. Verify that you cannot modify the table. The <xref:Microsoft.Office.Tools.Word.GroupContentControl> prevents you from making any modifications.  
+8.  Попробуйте добавить строки или столбцы в таблицу и попытайтесь удалить строки и столбцы из нее. Убедитесь, что изменить таблицу нельзя. <xref:Microsoft.Office.Tools.Word.GroupContentControl> не позволяет вносить какие-либо изменения.  
   
-#### <a name="to-test-the-customer-feedback-table"></a>To test the customer feedback table  
+#### <a name="to-test-the-customer-feedback-table"></a>Проверка таблицы отзывов клиентов  
   
-1.  Click **Choose your second building block** to display the second building block gallery content control.  
+1.  Нажмите кнопку **выбрать второй стандартный блок** для отображения элемента управления второго стандартного блока.  
   
-2.  Click the drop-down arrow next to the **Custom Gallery 1** heading in the control, and select **Customer Table**.  
+2.  Щелкните стрелку раскрывающегося списка рядом с **Настраиваемая коллекция 1** заголовка в элементе управления и выберите **таблицы Customer**.  
   
-3.  Click in the cell to the right of the **Customer Name** cell and type a name.  
+3.  Щелкните ячейку справа от **имя клиента** ячейку и введите имя.  
   
-4.  Click in the cell to the right of the **Satisfaction Rating** cell and select one of the available options.  
+4.  Щелкните ячейку справа от **удовлетворенности** ячейку и выберите один из доступных вариантов.  
   
-     Verify that you cannot type your own entry. The <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> allows users only to select from a list of entries.  
+     Убедитесь, что нельзя вводить записи. <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> позволяет пользователям только выбирать варианты из списка элементов.  
   
-5.  Click in the cell to the right of the **Comments** cell and type some comments.  
+5.  Щелкните ячейку справа от **комментарии** ячейку и введите несколько комментариев.  
   
-     Optionally, add some content other than text, such as art or an embedded table. This is possible because the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> enables users to add content other than text.  
+     При необходимости добавьте содержимое, отличное от текста, например изображение или вложенную таблицу. Это возможно, поскольку <xref:Microsoft.Office.Tools.Word.RichTextContentControl> позволяет пользователям добавлять содержимое, отличное от текста.  
   
-6.  Verify that you can add rows or columns to the table, and that you can delete rows and columns from the table. This is possible because you have not protected the table by putting it in a <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
+6.  Убедитесь, что вы можете добавить строки или столбцы в таблицу и удалить строки и столбцы из нее. Это возможно, поскольку вы не защитили таблицу, поместив ее в <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
-7.  Close the template.  
+7.  Закройте шаблон.  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to use content controls from this topic:  
+## <a name="next-steps"></a>Дальнейшие действия  
+ Дополнительные сведения об использовании элементов управления содержимым см. в следующем разделе:  
   
--   Bind content controls to pieces of XML, also named custom XML parts, that are embedded in a document. For more information, see [Walkthrough: Binding Content Controls to Custom XML Parts](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   Привязка элементов управления содержимым к фрагментам XML-кода, которые также называют пользовательскими XML-частями, внедренным в документ. Дополнительные сведения см. в разделе [Пошаговое руководство: привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Content Controls](../vsto/content-controls.md)   
- [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+## <a name="see-also"></a>См. также  
+ [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
+ [Элементы управления содержимым](../vsto/content-controls.md)   
+ [Как: Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Как: защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  

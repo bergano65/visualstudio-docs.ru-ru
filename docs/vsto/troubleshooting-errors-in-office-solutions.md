@@ -1,12 +1,10 @@
 ---
-title: Troubleshooting Errors in Office Solutions | Microsoft Docs
+title: "Устранение неполадок в решениях Office | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,118 +18,116 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords:
-- troubleshooting [Office development in Visual Studio]
+helpviewer_keywords: troubleshooting [Office development in Visual Studio]
 ms.assetid: 8bbf5433-1992-4ecf-ae1b-19117b8ebe43
-caps.latest.revision: 69
-author: kempb
-ms.author: kempb
+caps.latest.revision: "69"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3528e7ece045e4f9ed8765f97a2b67fabdb3f1b8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7dd06ed6fde181760a1c4893b523bd7ef9c8dcc9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="troubleshooting-errors-in-office-solutions"></a>Troubleshooting Errors in Office Solutions
-  You might encounter issues when you perform the following tasks while you develop Office solutions in Visual Studio:  
+# <a name="troubleshooting-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
+  Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:  
   
--   [Creating, upgrading, and opening projects](#creating)  
+-   [Создание, обновление и открытие проектов](#creating)  
   
--   [Using the designers](#designers)  
+-   [Использование конструкторов](#designers)  
   
--   [Writing code](#code)  
+-   [Написание кода](#code)  
   
--   [Building projects](#building)  
+-   [Сборка проектов](#building)  
   
--   [Debugging projects](#debugging)  
+-   [Отладка проектов](#debugging)  
   
-##  <a name="creating"></a> Creating, Upgrading, and Opening Projects  
- You might encounter the following errors when you create or open Office projects.  
+##  <a name="creating"></a>Создание, обновление и открытие проектов  
+ При создании или открытии проектов Office могут возникнуть следующие ошибки.  
   
-### <a name="the-project-cannot-be-created"></a>The Project Cannot Be Created  
- An error occurred when you tried to create or open an Office project, but Visual Studio did not have enough information to determine the cause. Try closing your project, exiting Visual Studio, and starting again.  
+### <a name="the-project-cannot-be-created"></a>Невозможно создать проект  
+ Произошла ошибка при попытке создать или открыть проект Office, но Visual Studio не имеет достаточно сведений, чтобы определить причину. Попробуйте закрыть проект, завершить работу и снова запустить Visual Studio.  
   
- If you are trying to create a document-level project, it is possible that another document with the same name as the document in the new project is already open in Excel or Word. Make sure that all other instances of Excel or Word are closed.  
+ Если вы пытаетесь создать проект уровня документа, возможно, что другой документ с тем же именем, что и документ в новом проекте, уже открыт в Excel или Word. Убедитесь, что все остальные экземпляры Excel или Word закрыты.  
   
-### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>Control Properties are Lost When You Create a New Project Based on a Document from an Existing Project  
- If you create a new Office project based on a document from an existing project, the properties for any controls that are on the document are not copied into the new project. You must reset the properties for any preexisting controls manually. Alternatively, you can preserve the control properties by creating a copy of the existing project instead of creating a new project, or by loading the existing project into the new solution (in the designer) and copying and pasting the controls from the existing document to the new document.  
+### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>Свойства элемента управления теряются при создании нового проекта на основе документа из существующего проекта  
+ При создании нового проекта Office, основанного на документе из существующего проекта, свойства элементов управления в документе не копируются в новый проект. Вам необходимо вручную сбросить свойства существующих элементов управления. Кроме того, можно сохранить свойства элементов управления, создав копию существующего проекта, а не создавая новый проект, или загрузив существующий проект в новое решение (в режиме конструктора) и скопировав и вставив элементы управления из существующего документа в новый документ.  
   
-### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Errors When You Create an Excel Workbook Project Based on an Existing Workbook  
- If you create a new Excel Workbook project based on an existing workbook, you might see a combination of the following errors.  
+### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Ошибки при создании проекта книги Excel на основе существующей книги  
+ При создании нового проекта книги Excel на основе существующей книги могут возникнуть следующие ошибки.  
   
- From Excel: "Privacy warning: This document contains macros, ActiveX controls, XML expansion pack information, or Web components. These may include personal information that cannot be removed by the Document Inspector."  
+ В Excel: "Предупреждение о конфиденциальной информации: документ содержит макросы, элементы управления ActiveX, данные пакета расширения XML или веб-компоненты. Они могут включать личные сведения, которые нельзя удалить с помощью инспектора документов".  
   
- From Visual Studio: "Designer failed to load correctly."  
+ В Visual Studio: "Не удалось правильно загрузить конструктор".  
   
- These errors can occur you try to create a project that is based on a workbook that had its personal information removed by using the Document Inspector. To avoid this error, perform the following steps before creating the project.  
+ Эти ошибки могут возникать при попытке создать проект, основанный на книге, из которой персональные данные были удалены с помощью инспектора документов. Чтобы избежать этой ошибки, выполните следующие действия перед созданием проекта.  
   
-1.  Open the workbook in Excel.  
+1.  Откройте книгу в Excel.  
   
-2.  In Excel, open the Trust Center.  
+2.  Откройте центр управления безопасностью в Excel.  
   
-3.  On the **Privacy Options** tab clear the **Remove personal information from file properties on save** check box.  
+3.  На **параметры конфиденциальности** снять флажок **удалять личные сведения из свойств файла при сохранении** флажок.  
   
-4.  Save the workbook and close Excel.  
+4.  Сохраните книгу и закройте Excel.  
   
-### <a name="cannot-open-a-project-after-migration"></a>Cannot Open a Project after Migration  
- After an Office solution is migrated to Microsoft Office 2010, the project cannot be opened on a development computer with only the 2007 Microsoft Office system installed. You may see the following errors.  
+### <a name="cannot-open-a-project-after-migration"></a>Не удается открыть проект после миграции  
+ После переноса решения Office в Microsoft Office 2010 не удается открыть проект на компьютере разработки, где установлен только Microsoft Office 2007. Могут возникнуть следующие ошибки.  
   
- "One or more projects in the solution were not loaded correctly. Please see the Output Window for details."  
+ "Один или несколько проектов в решении были загружены неправильно. Дополнительную информацию см. в окне вывода".  
   
- "Cannot create the project because the application associated with this project type is not installed on this computer. You must install the Microsoft Office application that is associated with this project type."  
+ "Не удается создать проект, поскольку приложение, связанное с этим типом проектов, не установлено на данном компьютере. Необходимо установить приложение Microsoft Office, связанное с этим типом проектов".  
   
- To resolve this issue, edit the .vbproj or .csproj file. For a Word project, replace HostPackage="{763FDC83-64E5-4651-AC9B-28C4FEB985A1}" with HostPackage="{6CE98B71-D55A-4305-87A8-0D6E368D9600}". For an Excel project, replace HostPackage="{B284B16A-C42C-4438-BDCD-B72F4AC43CFB}" with HostPackage="{825100CF-0BA7-47EA-A084-DCF3308DAF74}". For an Outlook project, replace HostPackage="{D2B20FF5-A6E5-47E1-90E8-463C6860CB05}" with HostPackage="{20A848B8-E01F-4801-962E-25DB0FF57389}".  
+ Чтобы устранить эту проблему, измените VBPROJ- или CSPROJ-файл. Для проекта Word замените HostPackage="{763FDC83-64E5-4651-AC9B-28C4FEB985A1}" на HostPackage="{6CE98B71-D55A-4305-87A8-0D6E368D9600}". Для проекта Excel замените HostPackage="{B284B16A-C42C-4438-BDCD-B72F4AC43CFB}" на HostPackage="{825100CF-0BA7-47EA-A084-DCF3308DAF74}". Для проекта Outlook замените HostPackage="{D2B20FF5-A6E5-47E1-90E8-463C6860CB05}" на HostPackage="{20A848B8-E01F-4801-962E-25DB0FF57389}".  
   
- Alternatively, ensure that migrated projects are only opened on development computers with Microsoft Office 2010 already installed.  
+ Или же убедитесь, что перенесенные проекты открываются только на компьютерах разработки с установленным Microsoft Office 2010.  
   
-### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Errors in Upgraded Office 2003 Document-Level Projects that Contain Windows Forms Controls  
- If you upgrade a Microsoft Office 2003 document-level project, and the document contains Windows Forms controls, the upgraded project might have compile or run time errors. To avoid this issue, install the Visual Studio 2005 Tools for Office Second Edition Runtime on the development computer before you upgrade the project. This version of the runtime is available as a redistributable package from the Microsoft Download Center at [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612).  
+### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Ошибки в обновленных проектах уровня документа Microsoft Office 2003, содержащих элементы управления Windows Forms  
+ При обновлении проекта уровня документа Microsoft Office 2003, который содержит элементы управления Windows Forms, обновленный проект может вызывать ошибки компиляции или во время выполнения. Чтобы избежать этой проблемы, перед обновлением проекта установите второй выпуск среды выполнения набора средств Visual Studio 2005 для Office на компьютере разработки. Эта версия среды выполнения доступна в виде распространяемого пакета в Центре загрузки Майкрософт на странице [Среда выполнения набора средств Microsoft Visual Studio 2005 для Office (второй выпуск) (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612).  
   
- After you finish upgrading the project, you can uninstall the Visual Studio 2005 Tools for Office Second Edition Runtime from the development computer if it is not being used by any other Office solutions.  
+ После завершения обновления проекта можно удалить среду выполнения набора средств Visual Studio 2005 для Office (второй выпуск) с компьютера разработчика, если она не используется другими решениями Office.  
   
-##  <a name="designers"></a> Using the Designers  
- You might encounter the following errors when you work with the document, workbook, or worksheet designer in document-level projects.  
+##  <a name="designers"></a>Использование конструкторов  
+ При работе с конструктором документов, книг или листов в проектах уровня документа могут возникнуть следующие ошибки.  
   
-### <a name="designer-failed-to-load-correctly"></a>Designer Failed to Load Correctly  
- Visual Studio cannot open the designer in the following cases:  
+### <a name="designer-failed-to-load-correctly"></a>Не удалось правильно загрузить конструктор  
+ Visual Studio не удается открыть конструктор в следующих случаях.  
   
--   Excel or Word is already open and is displaying a modal dialog box. To open the designer, check to see if Excel or Word has a modal dialog box open, and close any open modal dialog boxes. If there are no modal dialog boxes open, there might be some other action required before Excel or Word responds.  
+-   Excel или Word уже открыты и отображают модальное диалоговое окно. Чтобы открыть конструктор, проверьте, открыто ли модальное диалоговое окно Excel или Word, и закройте все открытые модальные диалоговые окна. Если модальные диалоговые окна не открыты, возможно, требуются какие-либо другие действия для продолжения работы Excel или Word.  
   
--   The project is currently being debugged. To open the designer, stop or finish debugging.  
+-   В настоящее время выполняется отладка проекта. Чтобы открыть конструктор, остановите или завершите отладку.  
   
--   An Excel VSTO Add-in that is installed on the development computer is displaying a dialog box when Excel starts. To create an Excel document-level project, you must first disable the VSTO Add-in.  
+-   Надстройка VSTO для Excel, установленная на компьютере разработки, отображает диалоговое окно при запуске Excel. Чтобы создать проект уровня документа Excel, вначале необходимо отключить надстройку VSTO.  
   
-### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Controls Appear as Black Rectangles on the Document or Worksheet  
- If you group controls on a document or worksheet, Visual Studio no longer recognizes the controls. Grouped controls cannot be accessed in the **Properties** window and they appear as black rectangles on the document or worksheet. You must ungroup the controls in order to restore their functionality.  
+### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Элементы управления отображаются в виде черных прямоугольников в документе или листе  
+ При группировке элементов управления в документе или листе Visual Studio больше не распознает их. Сгруппированных элементов управления не доступен в **свойства** окна и они отображаются в виде черных прямоугольников в документе или листе. Необходимо разгруппировать элементы управления, чтобы восстановить их работоспособность.  
   
-### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Controls on a Word Template are Not Visible in Visual Studio  
- If you open a Word template in the Visual Studio designer, controls on the template that are not in line with text might not be visible. This is because Visual Studio opens Word templates in **Normal** view. To view the controls, click the **View** menu, point to **Microsoft Office Word View** and then click **Print Layout**.  
+### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Элементы управления в шаблоне Word не видны в Visual Studio  
+ При открытии шаблона Word в конструкторе Visual Studio элементы управления шаблона, расположенные не в тексте, могут не отображаться. Это, поскольку Visual Studio открывает шаблон Word в **обычный** представления. Чтобы просмотреть элементы управления, щелкните **представление** последовательно выберите пункты **вид Microsoft Office Word** и нажмите кнопку **разметки**.  
   
-### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Insert Clip Art Command Does Nothing in the Visual Studio Designer  
- When Excel or Word is open in the Visual Studio designer, clicking the **Clip Art** button on the **Illustrations** tab in the Ribbon does not open the **Clip Art** task pane. To add clip art, you must open the copy of the workbook or document that is in the main project folder (not the copy that is in the \bin folder) outside of Visual Studio, add the clip art, and then save the workbook or document.  
+### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>При вставке картинки из коллекции картинок в конструкторе Visual Studio не выполняется никаких действий  
+ Если Excel или Word открыты в конструкторе Visual Studio, при нажатии **картинки** кнопку **иллюстрации** не удается открыть вкладку на ленте **картинки** области задач. Чтобы добавить картинку из коллекции картинок, необходимо открыть копию книги или документа в главной папке проекта (но не копию в папке \bin) вне Visual Studio, добавить картинки из коллекции картинок и сохранить книгу или документ.  
   
-##  <a name="code"></a> Writing Code  
- You might encounter the following errors when you write code in Office projects.  
+##  <a name="code"></a> Создание кода  
+ При написании кода в проектах Office могут возникнуть следующие ошибки.  
   
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Some Events of Office Objects Are Not Accessible When Using C#  
- In some cases, you might see a compiler error like the following when you try to access a particular event of an instance of an Office primary interop assembly (PIA) type in a Visual C# project.  
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Некоторые события объектов Office недоступны при использовании C#  
+ В некоторых случаях может появиться следующая ошибка компилятора при попытке получить доступ к определенному событию экземпляра типа основной сборки взаимодействия (PIA) Office в проекте Visual C#.  
   
- "Ambiguity between 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' and 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"  
+ "Неоднозначность между "Microsoft.Office.Interop.Excel._Application.NewWorkbook" и "Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook"".  
   
- This error means that you are trying to access an event that has the same name as another property or method of the object. To access the event, you must cast the object to its *event interface*.  
+ Эта ошибка означает, что вы пытаетесь получить доступ к событию, имя которого совпадает с именем другого свойства или метода объекта. Чтобы получить доступ к событию, необходимо привести объект к его *интерфейса события*.  
   
- Office PIA types that have events implement two interfaces: a core interface with all the properties and methods, and an event interface that contains the events that are exposed by the object. These event interfaces use the naming convention *objectname*Events*n*_Event, such as <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> and <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. If you cannot access an event that you expect to find on an object, cast the object to its event interface.  
+ Типы основных сборок взаимодействия Office с событиями реализуют два интерфейса: основной интерфейс со свойствами и методами и интерфейс событий, содержащий события, предоставляемые объектом. Этих интерфейсах событий используется соглашение об именовании *objectname*событий*n*_Event, например <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> и <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. Если вам не удается получить доступ к событию, которое должно быть в объекте, приведите объект к типу соответствующего интерфейса событий.  
   
- For example, <xref:Microsoft.Office.Interop.Excel.Application> objects have a <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> event and a <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> property. To handle the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> event, cast the <xref:Microsoft.Office.Interop.Excel.Application> to the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> interface. The following code example demonstrates how to do this in a document-level project for Excel.  
+ Например, у объектов <xref:Microsoft.Office.Interop.Excel.Application> есть событие <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> и свойство <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Для обработки события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> приведите <xref:Microsoft.Office.Interop.Excel.Application> к интерфейсу <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. В следующем примере кода показано, как сделать это в проекте уровня документа для Excel.  
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- For more information about event interfaces in the Office PIAs, see [Overview of Classes and Interfaces in the Office Primary Interop Assemblies](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
+ Дополнительные сведения об интерфейсах событий в основных сборках взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Cannot Reference Office PIA Classes in Projects that Target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], code that references a class that is defined in an Office PIA will not compile by default. Classes in the PIAs use the naming convention *objectname*Class, such as <xref:Microsoft.Office.Interop.Word.DocumentClass> and <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. For example, the following code from a Word VSTO Add-in project will not compile.  
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Не удается сослаться на классы основных сборок взаимодействия Office в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+ В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию код, ссылающийся на класс, определенный в основной сборке взаимодействия Office, не компилируется. Классы основных сборок взаимодействия используют соглашение об именовании *objectname*класса, такие как <xref:Microsoft.Office.Interop.Word.DocumentClass> и <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Так, следующий код из проекта надстройки VSTO для Word не будет компилироваться.  
   
 ```vb  
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument  
@@ -141,13 +137,13 @@ Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocumen
 Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application.ActiveDocument;  
 ```  
   
- This code results in the following compile errors:  
+ Этот код вызывает следующие ошибки компиляции.  
   
--   Visual Basic: "Reference to class 'DocumentClass' is not allowed when its assembly is linked using No-PIA mode."  
+-   Visual Basic: «класс «DocumentClass» не разрешена ссылка при его сборка связана с использованием режима No-PIA.»  
   
--   Visual C#: "Interop type 'Microsoft.Office.Interop.Word.DocumentClass' cannot be embedded. Use the applicable interface instead."  
+-   Visual C#: «тип взаимодействия «Microsoft.Office.Interop.Word.DocumentClass» не может быть внедрен. Используйте подходящий интерфейс".  
   
- To resolve this error, modify the code to reference the corresponding interface instead. For example, rather than reference a <xref:Microsoft.Office.Interop.Word.DocumentClass> object, reference an instance of the <xref:Microsoft.Office.Interop.Word.Document> interface instead.  
+ Чтобы устранить эту ошибку, измените код так, чтобы он ссылался на соответствующий интерфейс. Например, вместо того чтобы ссылаться на объект <xref:Microsoft.Office.Interop.Word.DocumentClass>, обращайтесь к экземпляру интерфейса <xref:Microsoft.Office.Interop.Word.Document>.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  
@@ -157,69 +153,72 @@ Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument
 Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;  
 ```  
   
- Projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], automatically embed all interop types from the Office PIAs by default. This compile error occurs because the embedded interop types feature only works with interfaces, not classes. For more information about interfaces and classes in the Office PIAs, see [Overview of Classes and Interfaces in the Office Primary Interop Assemblies](http://go.microsoft.com/fwlink/?LinkId=189592). For more information about the embedded interop types feature in Office projects, see [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md).  
+ В проекты, предназначенные для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию внедряются все типы из основных сборок взаимодействия Office. Эта ошибка компиляции возникает потому, что типы внедренных сборок взаимодействия работают только с интерфейсами, а не классами. Дополнительные сведения об интерфейсах и классах сборок взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](http://go.microsoft.com/fwlink/?LinkId=189592). Дополнительные сведения о компоненте типы внедренных сборок взаимодействия в проектах Office см. в разделе [проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md).  
   
-### <a name="references-to-office-classes-are-not-recognized"></a>References to Office Classes Are Not Recognized  
- Some class names, for example Application, are in multiple namespaces such as <xref:Microsoft.Office.Interop.Word> and <xref:System.Windows.Forms>. For this reason, the **Imports**/**using** statement at the top of the project templates includes a shorthand qualifying constant, for example:  
+### <a name="references-to-office-classes-are-not-recognized"></a>Ссылки на классы Office не распознаются  
+ Некоторые имена классов, например приложения, находятся в нескольких пространств имен, такие как <xref:Microsoft.Office.Interop.Word> и <xref:System.Windows.Forms>. По этой причине **Imports**/**с помощью** инструкции в верхней части шаблонов проекта содержит краткую уточняющую константу, например:  
   
- [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)] [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]  
+ [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
+ [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]  
   
- This usage of the **Imports**/**using** statement requires that you differentiate references to Office classes with the Word or Excel qualifier, for example:  
+ Это использование **Imports**/**с помощью** инструкции необходимо разграничивать ссылки на классы Office с помощью квалификатора Word или Excel, например:  
   
- [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)] [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]  
+ [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
+ [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]  
   
- You will get errors if you use an unqualified declaration, for example:  
+ Ошибки возникают при использовании неполного объявления, например:  
   
- [!code-csharp[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#4)] [!code-vb[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#4)]  
+ [!code-csharp[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#4)]
+ [!code-vb[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#4)]  
   
- Even though you have imported the Word or Excel namespace and have access to all the classes inside it, you must fully qualify all the types with Word or Excel to remove namespace ambiguity.  
+ Даже если пространство имен Word или Excel было импортировано и имеют доступ ко всем классам внутри него, необходимо полностью указать все типы в Word или Excel для устранения неоднозначности имен.  
   
-##  <a name="building"></a> Building Projects  
- You might encounter the following errors when you build Office projects.  
+##  <a name="building"></a>Построение проектов  
+ При сборке проектов Office могут возникнуть следующие ошибки.  
   
-### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Cannot Build a Document-Level Project That Is Based on a Document With Restricted Permissions  
- Visual Studio cannot build document-level projects if the document has restricted permissions. If your project contains a document that has restricted permissions, the project will not compile, and you will receive the following message in the **Error List** window.  
+### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Не удается выполнить сборку проекта уровня документа, основанного на документе с ограниченными разрешениями  
+ Visual Studio не может выполнить сборку проектов уровня документа с ограниченными разрешениями. Если проект содержит документ с ограниченными разрешениями, проект не будет компилироваться, и вы получите следующее сообщение в **список ошибок** окна.  
   
- "Failed to add the customization."  
+ "Ошибка при добавлении настройки".  
   
- If you want to include a document that has restricted permissions, use an unrestricted document while you develop and build the solution. Then, apply the restricted permissions to the document in the publish location, after you publish the solution.  
+ Если вы хотите добавить документ с ограниченными разрешениями, используйте документ без ограничений при разработке и сборке решения. Затем после публикации решения примените ограниченные разрешения к документу в папке публикации.  
   
-### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Compiler Errors Occur After a NamedRange Control Is Deleted  
- If you delete a <xref:Microsoft.Office.Tools.Excel.NamedRange> control from a worksheet that is not the active worksheet in the designer, the auto-generated code might not be removed from your project and compiler errors might occur. To make sure the code is removed, you should always select the worksheet that contains the <xref:Microsoft.Office.Tools.Excel.NamedRange> control to make it the active worksheet before deleting the control. If auto-generated code is not deleted when you delete the control, you can cause the designer to delete the code by activating the worksheet and making a change so that the worksheet becomes marked as modified. When you rebuild the project, the code is removed.  
+### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Ошибки компиляции возникают после удаления элемента управления NamedRange  
+ При удалении элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с неактивного листа в конструкторе невозможно удалить автоматически создаваемый код из проекта, и могут возникать ошибки компилятора. Чтобы удалить код, перед удалением элемента управления необходимо выбрать лист, содержащий элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>, чтобы сделать его активным. Если автоматически создаваемый код не удаляется при удалении элемента управления, можно удалить код с помощью конструктора, сделав лист активным и изменив его, чтобы пометить его как измененный. При повторной сборке проекта код удаляется.  
   
-##  <a name="debugging"></a> Debugging Projects  
- You might encounter the following errors when you debug Office projects.  
+##  <a name="debugging"></a>Отладка проектов  
+ При отладке проектов Office могут возникнуть следующие ошибки.  
   
-### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Prompt to Uninstall Appears When You Publish and Install a Solution on the Development Computer  
- When you debug an Office solution, you might see the following error.  
+### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>При публикации и установке решения на компьютере разработки появляется запрос на удаление  
+ При отладке решения Office может возникнуть следующая ошибка.  
   
- "The customization cannot be installed because another version is currently installed and cannot be upgraded from this location."  
+ "Не удается установить настройку, поскольку уже установлена другая версия, обновление которой из этой папки невозможно".  
   
- This error indicates that you have previously published and installed the Office solution on your development computer. To prevent the message from appearing, uninstall the solution from the list of installed programs on the computer before you debug the solution. Alternatively, you can create another user account on your development computer to test the installation of the published solution.  
+ Эта ошибка означает, что вы опубликовали и установили решение Office на компьютере разработки ранее. Чтобы это сообщение не появлялось, перед отладкой решения удалите его из списка установленных программ на компьютере. Или же можно создать другую учетную запись пользователя на компьютере разработки, чтобы протестировать установку опубликованного решения.  
   
-### <a name="document-level-projects-created-at-unc-network-locations-do-not-run-from-visual-studio"></a>Document-level Projects Created at UNC Network Locations Do Not Run From Visual Studio  
- If you create a document-level project for Excel or Word at a UNC network location, you must add the location of the document to the trusted locations list in Excel or Word. Otherwise, the customization will not be loaded when you try to run or debug the project in Visual Studio. For more information about trusted locations, see [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
+### <a name="document-level-projects-created-at-unc-network-locations-do-not-run-from-visual-studio"></a>Проекты уровня документа, созданные в сетевых расположениях UNC, не запускаются из Visual Studio  
+ При создании проекта уровня документа для Excel или Word в сетевом расположении UNC необходимо добавить расположение документа в список надежных расположений в Excel или Word. В противном случае настройки не будут загружаться при запуске или отладке проекта в Visual Studio. Дополнительные сведения о надежных расположениях см. в разделе [Присвоение уровня доверия документам](../vsto/granting-trust-to-documents.md).  
   
-### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Threads Are Not Stopped Correctly After Debugging  
- Office projects in Visual Studio follow a thread naming convention that enables the debugger to close the program correctly. If you create threads in your solution, you should name each thread with the prefix VSTA_ to ensure that these threads are handled correctly when you stop debugging. For example, you might set the `Name` property of a thread that waits for a network event to **VSTA_NetworkListener**.  
+### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Неправильная остановка потоков после отладки  
+ Проекты Office в Visual Studio следуют соглашению об именовании потоков, которое позволяет отладчику правильно закрывать программу. При создании потоков в решении необходимо присвоить каждому потоку имя с префиксом "VSTA_" для правильной обработки этих потоков при остановке отладки. Например, можно задать `Name` свойства потока, который ожидает сетевые события для **VSTA_NetworkListener**.  
   
-### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Cannot Run or Debug any Office Solution on the Development Computer  
- If you cannot run or develop an Office project on your development computer, you may see the following error message.  
+### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Не удается запустить или отладить решение Office на компьютере разработки  
+ Если вам не удается запустить или разработать проект Office на компьютере разработки, может появиться следующее сообщение об ошибке:  
   
- "Customization could not be loaded because the application domain could not be created."  
+ "Не удалось загрузить настройку, так как не удалось создать домен приложения".  
   
- Visual Studio uses Fusion, the .NET Framework assembly loader, to cache the assemblies before loading Office solutions. Ensure that Visual Studio can write to the Fusion cache, and try again. For more information, see [Shadow Copying Assemblies](/dotnet/framework/app-domains/shadow-copy-assemblies).  
+ Visual Studio использует Fusion, загрузчик сборок платформы .NET Framework, для кэширования сборок перед загрузкой решений Office. Убедитесь, что Visual Studio может записывать данные в кэш Fusion, и повторите попытку. Дополнительные сведения см. в разделе [теневое копирование сборок](/dotnet/framework/app-domains/shadow-copy-assemblies).  
   
-### <a name="error-when-stopping-the-debugger-in-a-document-level-project-after-using-edit-and-continue"></a>Error When Stopping the Debugger in a Document-Level Project After Using Edit and Continue  
- If you use Edit and Continue to make changes to code in a document-level project for Excel or Word while the project is in break mode, you might see a dialog box with the following error message if you subsequently stop the debugger.  
+### <a name="error-when-stopping-the-debugger-in-a-document-level-project-after-using-edit-and-continue"></a>Ошибка при остановке отладчика в проекте уровня документа после использования функции "Изменить и продолжить"  
+ Если вы используете функцию "Изменить и продолжить" для внесения изменений в код проекта уровня документа для Excel или Word, когда проект находится в режиме приостановки выполнения, может появиться диалоговое окно со следующим сообщением об ошибке, если впоследствии остановить отладчик:  
   
- "Terminating the process in its current state can cause undesired results including the loss of data and system instability."  
+ "Завершение процесса в его текущем состоянии может привести к нежелательным результатам, включая потерю данных и нестабильность системы".  
   
- Whether you click **Yes** or **No** in the dialog box, Visual Studio terminates the Excel or Word process and stops the debugger. To stop debugging the project without displaying this dialog box, exit Excel or Word directly rather than stopping the debugger in Visual Studio.  
+ Если нажать **Да** или **нет** в диалоговом окне Visual Studio завершает процесс Excel или Word и останавливает отладчик. Чтобы остановить отладку проекта без отображения этого диалогового окна, выйдите из Excel или Word напрямую, а не останавливайте отладчик в Visual Studio.  
   
-## <a name="see-also"></a>See Also  
- [Troubleshooting Office Solutions](../vsto/troubleshooting-office-solutions.md)   
- [Troubleshooting Office Solution Security](../vsto/troubleshooting-office-solution-security.md)   
- [Troubleshooting Office Solution Deployment](../vsto/troubleshooting-office-solution-deployment.md)  
+## <a name="see-also"></a>См. также  
+ [Устранение неполадок решений Office](../vsto/troubleshooting-office-solutions.md)   
+ [Устранение неполадок безопасности решений Office](../vsto/troubleshooting-office-solution-security.md)   
+ [Устранение неполадок, связанных с развертыванием решения Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

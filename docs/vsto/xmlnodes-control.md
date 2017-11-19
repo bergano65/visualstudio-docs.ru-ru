@@ -1,47 +1,49 @@
 ---
-title: "Элемент управления XMLNodes"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "XMLNodes - элемент управления"
-  - "XMLNodes - элемент управления, события"
+title: "XMLNodes-элемент управления | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- XMLNodes control, events
+- XMLNodes control
 ms.assetid: 25ba7a21-aabb-4cce-b0d7-57b4add3b485
-caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 36
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2950d1c9bf2edb0715ad588180cec3b5e17da265
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент управления XMLNodes
-  **Важным** набор сведений в этом разделе, касающиеся Microsoft Word исключительно для использования преимущества и цене и организаций, найдены вне Соединенные Штаты и его территорий или используют или разработки программ, запущенных на продуктов Microsoft Word, которые были лицензированы Майкрософт до января 2010, когда выполненного реализация конкретной функциональности Майкрософт, связанное с пользовательским XML в Microsoft Word.  Данная информация, относящаяся к Microsoft Word, не предназначена для чтения и использования лицами или организациями, расположенными в США или их территориях, которые используют продукты Microsoft Word, лицензированные корпорацией Майкрософт после 10 января 2010 г., или разрабатывают программы для этих продуктов; поведение данных продуктов отличается от поведения продуктов, лицензированных до указанной даты или приобретенных и лицензированных за пределами США.  
+# <a name="xmlnodes-control"></a>Элемент управления XMLNodes
+  **Важные** сведения, изложенные в этом разделе, относящаяся к Microsoft Word, представленному исключительно для удобства и лиц и организаций, расположенных за пределами США и их территорий или с помощью или разработки программы, работающие на, продуктов Microsoft Word, лицензированные корпорацией Майкрософт до января 2010 года, когда Microsoft удален реализация конкретной функции, относящиеся к пользовательской XML из Microsoft Word. Эта информация, относящаяся к Microsoft Word нельзя прочитать или используемых отдельным лицам или организациям в Соединенных Штатах Америки или их территориях, которые используете или разработке программ, выполняемых на продукты Microsoft Word, лицензированные корпорацией Майкрософт после 10 января 2010 г. ; Эти продукты будут вести себя таким же, как продукты лицензированных до указанной даты или приобретенных и лицензированных за пределами США.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> представляет собой коллекцию сопоставленных объектов\-узлов XML с событиями.  Элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> создается только при сопоставлении повторяющегося элемента схемы документу Microsoft Office Word.  Если повторяющийся элемент содержит дочерние элементы, каждый из дочерних элементов также создается как элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
+ <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления — это коллекция сопоставленных объектов XML-узел, предоставляющий события. <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления создается только при сопоставлении повторяющегося элемента схемы в документ Microsoft Office Word. Если повторяющийся элемент содержит дочерние элементы, каждый из дочерних элементов также создается в качестве <xref:Microsoft.Office.Tools.Word.XMLNodes> элемента управления.  
   
- После создания средой Visual Studio коллекции узлов XML элемент управления можно программировать непосредственно, не обращаясь к объектной модели Word.  Удалить элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> можно только путем удаления из документа сопоставления элементов.  
+ После Visual Studio создает коллекцию XML-узлов, элемент управления можно программировать непосредственно, не обращаясь к объектной модели Word. <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления можно удалить только путем удаления сопоставления элементов из документа.  
   
 > [!NOTE]  
->  При доступе к дочернему элементу элемента управления <xref:Microsoft.Office.Tools.Word.XMLNodes> через свойство <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> это свойство возвращает объект <xref:Microsoft.Office.Interop.Word.XMLNode>, а не элемент управления <xref:Microsoft.Office.Tools.Word.XMLNode>.  Дополнительные сведения см. в разделе [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  При доступе к дочернему элементу <xref:Microsoft.Office.Tools.Word.XMLNodes> управление с помощью <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> свойство возвращает <xref:Microsoft.Office.Interop.Word.XMLNode> объекта, а не <xref:Microsoft.Office.Tools.Word.XMLNode> элемента управления. Для получения дополнительной информации см. [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
-## Привязка данных к элементу управления  
- Элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> не поддерживает привязку данных.  Причина заключается в том, что элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> не обладает возможностями привязки к сложным данным, а при простой привязке данных невозможно представить повторяющиеся данные.  
+## <a name="binding-data-to-the-control"></a>Привязка данных к элементу управления  
+ <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления не поддерживает привязку данных. Это вызвано <xref:Microsoft.Office.Tools.Word.XMLNodes> управления не имеет возможности привязки к сложным данным, а также простая привязка данных невозможно представить повторяющиеся данные.  
   
-## Форматирование  
- К элементу управления <xref:Microsoft.Office.Tools.Word.XMLNodes> можно применить любые параметры форматирования, применяемые к тексту документа.  
+## <a name="formatting"></a>Форматирование  
+ Любое форматирование, которое можно применить к тексту в документе может применяться к <xref:Microsoft.Office.Tools.Word.XMLNodes> элемента управления.  
   
-## События  
- Ниже перечислены события, доступные для элемента управления <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
+## <a name="events"></a>События  
+ Доступные для события <xref:Microsoft.Office.Tools.Word.XMLNodes> управления являются:  
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>  
   
@@ -59,8 +61,8 @@ caps.handback.revision: 36
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>  
   
-## Сравнение событий  
- Перехватить событие можно в тот момент, когда пользователь перемещает курсор внутрь контекста конкретного элемента управления <xref:Microsoft.Office.Tools.Word.XMLNodes>.  Например, ниже приведена следующая ситуация: имеется элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> с именем `Customer`, у которого имеется дочерний элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> с именем `Company`, а элемент управления `Company` имеет два дочерних элемента управления <xref:Microsoft.Office.Tools.Word.XMLNodes> с именами `CompanyName` и `CompanyRegion`.  
+## <a name="comparing-events"></a>Сравнение событий  
+ Можно записать событие, когда пользователь перемещает курсор внутрь контекста конкретного <xref:Microsoft.Office.Tools.Word.XMLNodes> элемента управления. Например, может потребоваться <xref:Microsoft.Office.Tools.Word.XMLNodes> управления с именем `Customer` с дочерним <xref:Microsoft.Office.Tools.Word.XMLNodes> управления с именем `Company`, и `Company` имеет два дочерних <xref:Microsoft.Office.Tools.Word.XMLNodes> элементов управления с именем `CompanyName` и `CompanyRegion` следующим образом:  
   
 ```  
 <Customer>  
@@ -69,24 +71,24 @@ caps.handback.revision: 36
         <CompanyRegion>  
 ```  
   
- Если необходимо отображать элемент управления в панели действий при каждом перемещении курсора в узел `Company`, не имеет значения, находится ли курсор в узле `CompanyName` или в узле `CompanyRegion`, поскольку оба они находятся в контексте узла `Company`.  В этом случае код следует писать в обработчике событий <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> элемента управления `Company`.  
+ Если вы хотите отображать элемент управления в панели действий всякий раз, когда курсор перемещается в `Company` узла, он не имеет значения, является ли курсор помещается в `CompanyName` или `CompanyRegion` потому, что оба они находятся в контексте `Company`. В этом случае можно написать собственный код <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> событие `Company`.  
   
- В большинстве случаев при перемещении курсора внутрь элемента управления <xref:Microsoft.Office.Tools.Word.XMLNodes> возникает и событие <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>, и событие <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter>.  В приведенной ниже таблице показаны различия между этими двумя событиями.  
+ В большинстве случаев, когда курсор попадает <xref:Microsoft.Office.Tools.Word.XMLNodes> контролировать, как <xref:Microsoft.Office.Tools.Word.XMLNodes.Select> и <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> событий. В следующей таблице показаны различия между этими двумя событиями.  
   
-|Событие Select|Событие ContextEnter|  
-|--------------------|--------------------------|  
-|Происходит при перемещении курсора внутрь одного из узлов коллекции <xref:Microsoft.Office.Tools.Word.XMLNodes>.|Происходит при перемещении курсора внутрь одного из узлов или узлов\-потомков коллекции <xref:Microsoft.Office.Tools.Word.XMLNodes> из области за пределами контекста узла.  Другими словами, это событие возникает только при изменении контекста и может возникать для нескольких вложенных элементов управления <xref:Microsoft.Office.Tools.Word.XMLNodes>.|  
+|Выберите событие|Событие ContextEnter|  
+|------------------|------------------------|  
+|Происходит, когда курсор находится внутри одного из узлов <xref:Microsoft.Office.Tools.Word.XMLNodes> коллекции.|Происходит, когда курсор находится внутри одного из узлов или узлов-потомков <xref:Microsoft.Office.Tools.Word.XMLNodes> коллекции из области вне контекста узла. Другими словами, оно возникает только при изменении контекста и может возникать для нескольких вложенных <xref:Microsoft.Office.Tools.Word.XMLNodes> элементов управления.|  
   
- Например, при перемещении курсора извне элемента управления `Customer` внутрь элемента управления `CompanyName` события <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> возникают для элементов управления  `Customer`, `Company` и `CompanyName`.  Если после этого переместить курсор из элемента управления `CompanyName` в элемент управления `CompanyRegion`, событие <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> возникнет только для элемента управления `CompanyRegion`, поскольку для элементов управления `Company` и `Customer` контекст не изменится.  В документе может быть несколько узлов `Company`.  При перемещении курсора из узла `CompanyName` одного элемента управления `Company` в узел `CompanyName` другого элемента управления `Company` контекст не изменится, поэтому возникнет только событие <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>.  
+ Например, при перемещении курсора из вне `Customer` в `CompanyName`, <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> событий для `Customer`, `Company`, и `CompanyName` вызываются. При перемещении курсора из затем `CompanyName` для `CompanyRegion`, <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter> только событие `CompanyRegion` возникает, поскольку контекст является одинаковым для обоих `Company` и `Customer`. Может иметь несколько `Company` узлов в документе. При перемещении курсора из `CompanyName` узел одного `Company` для `CompanyName` узел другого `Company`, контекст не изменяется, чтобы только <xref:Microsoft.Office.Tools.Word.XMLNodes.Select> события.  
   
- Аналогичным образом отличаются события <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave> и <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>.  
+ Существует же отличий между <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave> событий и <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect> событий.  
   
-## См. также  
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
+## <a name="see-also"></a>См. также  
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
- [Элемент управления XMLNode](../vsto/xmlnode-control.md)   
- [Практическое руководство. Добавление элементов управления XMLNodes в документы Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)   
- [Практическое руководство. Сопоставление схем и документов Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [XMLNode-элемент управления](../vsto/xmlnode-control.md)   
+ [Как: Добавление элементов управления XMLNodes в документы Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)   
+ [Как: сопоставление схем в документы Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

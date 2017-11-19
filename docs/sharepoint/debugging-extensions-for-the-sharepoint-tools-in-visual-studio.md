@@ -1,136 +1,137 @@
 ---
-title: "Debugging Extensions for the SharePoint Tools in Visual Studio"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint development in Visual Studio, debugging extensions"
+title: "Отладка расширений для средств SharePoint в Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, debugging extensions
 ms.assetid: 7cee8ce0-d07b-41f6-8ce1-b18e4be3b50c
-caps.latest.revision: 26
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 98bb43322d4a222d63bafac22d78e433a3000530
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Debugging Extensions for the SharePoint Tools in Visual Studio
-  Отладить расширения средств SharePoint можно в экспериментальном или обычном экземпляре Visual Studio.  При необходимости устранения неполадок поведения расширения, также можно изменить значения реестра для отображения дополнительной информации об ошибках, чтобы настроить выполнение команд SharePoint в Visual Studio.  
+# <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для средств SharePoint в Visual Studio
+  Можно выполнить отладку расширения инструментов SharePoint в экспериментальном экземпляре или обычном экземпляре Visual Studio. Если требуется для устранения неполадок поведения расширения, можно также изменить значения реестра для отображения дополнительных сведений об ошибке и настройки выполнением команд SharePoint в Visual Studio.  
   
-## Отладка расширений в экспериментальном экземпляре Visual Studio  
- Для защиты среды разработки Visual Studio от случайного повреждения недоверенными расширениями, пакет Visual Studio SDK предоставляет альтернативный экземпляр Visual Studio, называемый *экспериментальным экземпляром*, который можно использовать для установки и тестирования расширений.  Новые расширения разрабатываются с помощью обычного экземпляра Visual Studio, но их отладка и выполнение осуществляются в экспериментальном экземпляре.  Для получения дополнительной информации см. [Экспериментальный экземпляр](../extensibility/the-experimental-instance.md).  
+## <a name="debugging-extensions-in-the-experimental-instance-of-visual-studio"></a>Отладка расширений в экспериментальном экземпляре Visual Studio  
+ Для защиты среды разработки Visual Studio от случайного повреждения недоверенными расширениями, пакет SDK для Visual Studio предоставляет альтернативный экземпляр Visual Studio, называемый *экспериментальный экземпляр*, который можно использовать Установка и тестирование расширения. Новые расширения разрабатываются с помощью обычного экземпляра Visual Studio, но отлаживать и запускать их в экспериментальном экземпляре. Дополнительные сведения см. в разделе [экспериментальный экземпляр](/visualstudio/extensibility/the-experimental-instance).  
   
- При использовании проекта VSIX для развертывания расширения, и проект VSIX в решении является автозагружаемым, при отладке решения Visual Studio автоматически установит и выполнит расширение в экспериментальном экземпляре.  Автозагружаемый проект является проектом, запуск которого происходит при отладке решения, содержащего несколько проектов.  Дополнительные сведения об использовании проекта VSIX для развертывания расширения см. в разделе [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  Дополнительные сведения об автозагружаемых проектах см. в разделе [Практическое руководство. Назначение автозагружаемых проектов](http://msdn.microsoft.com/ru-ru/31465836-0911-48db-a5d9-e456b635e970).  
+ Если использование проекта VSIX для развертывания расширения проекта VSIX является запускаемым проектом в решении, Visual Studio автоматически устанавливает и запускает расширения в экспериментальном экземпляре при отладке решения. Запускаемым проектом является проект, который запускается при отладке решения, содержащего несколько проектов. Дополнительные сведения об использовании проекта VSIX для развертывания расширения см. в разделе [развертывание расширений для средств SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+
+ Примеры, демонстрирующие способы отладки различных типов расширений в экспериментальном экземпляре Visual Studio см. в следующих пошаговых руководствах:  
   
- Примеры отладки различных типов расширений в экспериментальном экземпляре Visual Studio см. в следующих пошаговых руководствах:  
+-   [Пошаговое руководство. Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
   
--   [Walkthrough: Extending a SharePoint Project Item Type](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
+-   [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)  
   
--   [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)  
+-   [Пошаговое руководство. Создание пользовательского этапа развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)  
   
--   [Walkthrough: Creating a Custom Deployment Step for SharePoint Projects](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)  
+-   [Пошаговое руководство. Расширение обозревателя сервера, так чтобы в нем отображались веб-части](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   
--   [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+-   [Пошаговое руководство. Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
   
--   [Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
+## <a name="debugging-extensions-in-the-regular-instance-of-visual-studio"></a>Отладка расширений в обычном экземпляре Visual Studio  
+ Если необходимо выполнить отладку проекта расширения в обычном экземпляре Visual Studio, сначала установите расширение в обычном экземпляре. Затем присоедините отладчик к второй процесс Visual Studio. После завершения работы, расширение можно удалить, чтобы он больше не загружает на компьютере разработчика.  
   
-## Отладка расширений в обычном экземпляре Visual Studio  
- При необходимости отладки проекта расширения в обычном экземпляре Visual Studio, его сначала следует установить в обычном экземпляре.  Затем присоедините отладчик ко второму процессу Visual Studio.  По окончании, расширение можно удалить, чтобы оно больше не занимало место на компьютере разработчика.  
-  
-#### Установка расширения  
+#### <a name="to-install-the-extension"></a>Установка расширения  
   
 1.  Закройте все экземпляры Visual Studio.  
   
-2.  В выходную папку построения для проекта расширения, откройте файл VSIX или с помощью двойного щелчка или открыть его контекстных меню и затем выбрав команду **Открыть**.  
+2.  В выходную папку построения для проекта расширения, откройте VSIX-файл, дважды щелкнув его или открыв его контекстное меню и выбрав **откройте**:  
   
-3.  В диалоговом окне **Установщик расширений Visual Studio** выберите выпуск Visual Studio, с которым требуется установить расширение, а затем нажмите кнопку **Установить**.  
+3.  В **установщик расширений Visual Studio** диалогового окна выберите выпуск Visual Studio, к которому вы хотите установить расширение, а затем выберите **установить** кнопки.  
   
-     Visual Studio установит файлы расширения в \\*version**extension name*\\ %UserProfile%\\AppData\\Local\\Microsoft\\VisualStudio\\11.0\\Extensions\\*author name*.  Три последние папки в этом пути создаются для расширения из элементов `Author`, `Name` и `Version` файла extension.vsixmanifest.  
+     Visual Studio устанавливает файлы расширения %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*имя автора*\\*имя расширения* \\ *версии*. Последние три папки по этому пути формируются на основе `Author`, `Name`, и `Version` элементы в файл extension.vsixmanifest для расширения.  
   
-4.  После того как Visual Studio установит расширение, нажмите кнопку **Закрыть**.  
+4.  После установки расширения Visual Studio выберите **закрыть** кнопки.  
   
-#### Отладка расширения  
+#### <a name="to-debug-the-extension"></a>Чтобы выполнить отладку расширения  
   
-1.  Запустите Visual Studio с правами администратора и откройте проект расширения.  Следующие действия ссылаются на этот экземпляр Visual Studio как на *первый экземпляр*.  
+1.  Запустите Visual Studio с правами администратора и откройте проект расширения. Следующие действия ссылаются на этот экземпляр Visual Studio как *сначала экземпляров*.  
   
-2.  Запустите другой экземпляр Visual Studio с правами администратора.  Следующие действия ссылаются на этот экземпляр Visual Studio как на *второй экземпляр*.  
+2.  Запустите другой экземпляр Visual Studio с правами администратора. Следующие действия ссылаются на этот экземпляр Visual Studio как *второй экземпляр*.  
   
-3.  Переключитесь на первый экземпляр Visual Studio.  
+3.  Перейдите к первому экземпляру Visual Studio.  
   
-4.  В строке меню выберите **Отладка**, **Присоединение к процессу**.  
+4.  В строке меню выберите **отладки**, **присоединиться к процессу**.  
   
-5.  В списке **Доступные процессы** выберите файл devenv.exe.  Этот процесс соответствует второму экземпляру Visual Studio, т. е. экземпляру, в котором будет отлаживаться расширение проекта.  
+5.  В **доступные процессы** выберите devenv.exe. Эта запись относится ко второму экземпляру Visual Studio; Это экземпляр, необходимо выполнить отладку проекта расширения в.  
   
-6.  Нажмите кнопку **Вложить**.  
+6.  Выберите **присоединение** кнопки.  
   
-     Visual Studio запустит проект расширения в режиме отладки.  
+     Visual Studio запускает проект расширения в режиме отладки.  
   
-7.  Переключитесь на второй экземпляр Visual Studio.  
+7.  Перейдите ко второму экземпляру Visual Studio.  
   
-8.  Создайте новый проект SharePoint, который загружает расширение.  Например, при отладке расширения для элементов проекта определения списка, создайте проект **Определение списка**.  
+8.  Создайте новый проект SharePoint, который загружает расширение. Например, при отладке расширения для элементов проекта определения списка создать **определение списка** проекта.  
   
-9. Выполните действия, необходимые для проверки кода расширения.  
+9. Выполните действия, необходимые для тестирования кода расширения.  
   
-10. После окончания отладки расширения закройте второй экземпляр Visual Studio.  
+10. По окончании отладки расширения закройте второй экземпляр Visual Studio.  
   
-#### Удаление расширения  
+#### <a name="to-remove-the-extension"></a>Удаление расширения  
   
-1.  В Visual Studio в строке меню выберите **Сервис**, **Расширения и обновления**.  
+1.  В Visual Studio в строке меню выберите **средства**, **расширения и обновления**.  
   
      Появится диалоговое окно **Расширения и обновления**.  
   
-2.  В списке расширений выберите имя расширения, а затем нажмите кнопку **Удалить**.  
+2.  Выберите имя расширения в список расширений и нажмите кнопку **удаления** кнопки.  
   
-3.  В диалоговом окне, появившемся на экране, нажмите кнопку **Да**, чтобы подтвердить удаление расширения.  
+3.  В появившемся диалоговом окне, выберите **Да** кнопку, чтобы убедиться, что вы хотите удалить расширение.  
   
-4.  Нажмите кнопку **Перезагрузить сейчас** для завершения процесса удаления.  
+4.  Выберите **Перезагрузить сейчас** кнопку, чтобы завершить удаление.  
   
-## Отладка команд SharePoint  
- Если необходимо выполнить отладку команды SharePoint, входящей в расширение средств SharePoint, следует присоединить отладчик к процессу vssphost4.exe.  Это 64\-разрядный процесс, выполняющий команды SharePoint.  Дополнительные сведения о командах SharePoint и процессе vssphost4.exe см. в разделе [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+## <a name="debugging-sharepoint-commands"></a>Отладка команды SharePoint  
+ Если требуется отладить команда SharePoint, который является частью расширения инструментов SharePoint, необходимо подключить отладчик к процессу vssphost4.exe. Это 64-разрядный процесс, который выполняет команды SharePoint. Дополнительные сведения о командах SharePoint и vssphost4.exe см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
-#### Присоединение отладчика к процессу vssphost4.exe  
+#### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Чтобы подключить отладчик к процессу vssphost4.exe  
   
-1.  Начните отладку расширения в экспериментальном или обычном экземпляре Visual Studio, следуя инструкциям, приведенным ниже.  
+1.  Начните отладку расширения в экспериментальном экземпляре Visual Studio или в обычном экземпляре Visual Studio, следуя приведенным выше инструкциям.  
   
-2.  В экземпляре Visual Studio, в котором выполняется отладчик, в строке меню выберите **Отладка**, **Присоединение к процессу**.  
+2.  В экземпляре Visual Studio, в котором выполняется отладчик, в строке меню, выберите **отладки**, **присоединиться к процессу**.  
   
-3.  В списке **Доступные процессы** выберите vssphost.exe.  
+3.  В **доступные процессы** выберите vssphost.exe.  
   
     > [!NOTE]  
-    >  Если процесс vssphost.exe не отображается в списке, необходимо запустить vssphost4.exe в том экземпляре Visual Studio, в котором выполняется расширение.  Как правило, это происходит во время выполнения действий по подключению Visual Studio к сайту SharePoint на компьютере разработчика.  Например, Visual Studio запускает vssphost4.exe при развертывании узла подключения к сайту \(узла, отображающего URL\-адрес сайта\) в узле **Подключения SharePoint** в окне **Обозреватель серверов** или при добавлении определенных элементов проекта SharePoint, например элементов **Экземпляр списка** или **Приемник событий**, в проект SharePoint.  
+    >  Если vssphost.exe не отображается в списке, необходимо запустить процесс vssphost4.exe в экземпляре Visual Studio, в котором выполняется расширение. Как правило это делается путем выполнения действие, вызывающее Visual Studio для подключения к сайту SharePoint на компьютере разработчика. Например, Visual Studio запускает vssphost4.exe при разворачивании узла подключения к (узел, отображающий URL-адрес сайта) в разделе **подключения SharePoint** узел в **обозревателя серверов** окна, или если вы Добавьте определенные элементы проекта SharePoint, такие как **экземпляра списка** или **приемника событий** элементов в проект SharePoint.  
   
-4.  Нажмите кнопку **Вложить**.  
+4.  Выберите **присоединение** кнопки.  
   
-5.  В отлаживаемом экземпляре Visual Studio выполните следующие необходимые для выполнения команды шаги.  
+5.  В экземпляре Visual Studio, в котором выполняется отладка выполните действия, необходимые для выполнения команды.  
   
-## Изменение значений реестра для облегчения отладки расширений средств SharePoint  
- При отладке расширения средств SharePoint в Visual Studio можно изменять значения реестра для облегчения устранения неполадок в расширении.  Эти значения находятся в ключе HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\11.0\\SharePointTools.  По умолчанию они не существуют.  
+## <a name="modifying-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Изменение значений реестра для облегчения отладки SharePoint средств расширения  
+ При отладке расширения средств SharePoint в Visual Studio, можно изменить значения в реестре для устранения неполадок расширения. В разделе HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools существует значения. Эти значения по умолчанию не существует.  
   
- Для облегчения устранения неполадок в расширении средств SharePoint можно создать и задайте значение EnableDiagnostics.  Это значение описывается в следующей таблице.  
-  
-|Значение|Описание|  
-|--------------|--------------|  
-|EnableDiagnostics|REG\_DWORD указывает отображаются ли диагностические сообщения в окне **Выходные данные**.<br /><br /> Чтобы отображать диагностические сообщения, присвойте значение 1.  Чтобы не отображать сообщения, присвойте значение 0 или удалите значение.<br /><br /> Чтобы записать сообщения в окно **Выходные данные** из расширения средств SharePoint, воспользуйтесь службой проекта SharePoint.  Для получения дополнительной информации см. [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md).|  
-  
- Если расширение содержит команду SharePoint, можно создать и задать дополнительные значения для облегчения устранения неполадок в команде.  В следующей таблице приведено описание этих значений.  
+ Для устранения каких-либо расширений инструментов SharePoint можно создать и установить значение EnableDiagnostics. В следующей таблице описаны это значение.  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|AttachDebuggerToHostProcess|Значение REG\_DWORD определяет, отображать ли диалоговое окно, которое позволяет присоединить отладчик к процессу vssphost4.exe прямо при его запуске.  Это полезно, если отлаживаемая команда выполняется процессом vssphost.exe сразу после его запуска, и вручную присоединить отладчик невозможно из\-за недостатка времени.  Для отображения диалогового окна процесс vssphost4.exe вызывает метод <xref:System.Diagnostics.Debugger.Break%2A> при запуске.<br /><br /> Чтобы включить такой режим, задайте значение 1.  Чтобы отключить этот режим, нужно задайте значение равным 0 или удалите его.<br /><br /> Если вы установили значение равным 1, может также быть полезно увеличить значение HostProcessStartupTimeout, что позволит успеть присоединить отладчик до того момента, когда Visual Studio ожидает от процесса vssphost4.exe сигнала об успешном запуске.|  
-|ChannelOperationTimeout|REG\_DWORD указывает время в секундах, в течение которого Visual Studio ожидает выполнения команды SharePoint.  Если команда не выполнена вовремя, выдается исключение <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException>.<br /><br /> По умолчанию используется значение 120 секунд.|  
-|HostProcessStartupTimeout|REG\_DWORD указывает время в секундах, в течение которого Visual Studio ожидает сигнала от vssphost4.exe о его успешном запуске.  Если сигнал об успешном запуске не поступил от vssphost4.exe вовремя, выдается исключение <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException>.<br /><br /> По умолчанию используется значение 60 секунд.|  
-|MaxReceivedMessageSize|REG\_DWORD указывает максимально допустимый размер в байтах для сообщений WCF, которыми обмениваются Visual Studio и vssphost4.exe.<br /><br /> Значение по умолчанию — 1 048 576 байтов \(1 МБ\).|  
-|MaxStringContentLength|REG\_DWORD указывает максимально допустимый размер в байтах для строк, которыми обмениваются Visual Studio и vssphost4.exe.<br /><br /> Значение по умолчанию — 1 048 576 байтов \(1 МБ\).|  
+|-----------|-----------------|  
+|EnableDiagnostics|REG_DWORD указывает, отображаются ли диагностические сообщения в **вывода** окна.<br /><br /> Чтобы отобразить диагностическую информацию, это значение равно 1. Чтобы отключить отображение сообщений, это значение равно 0 или удалите это значение.<br /><br /> Для записи сообщений в **вывода** расширения средств SharePoint в окне, используйте службы проектов SharePoint. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|  
   
-## См. также  
- [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+ Если расширение содержит команду SharePoint, можно создать и установить дополнительные значения для облегчения устранения неполадок в команде. В следующей таблице описаны эти значения.  
+  
+|Значение|Описание|  
+|-----------|-----------------|  
+|AttachDebuggerToHostProcess|REG_DWORD указывает, следует ли отображать диалоговое окно позволяет подключить отладчик к vssphost4.exe при запуске. Это полезно, если команда, необходимо выполнить отладку выполняется vssphost.exe сразу после ее запуска, а не достаточно времени, чтобы вручную присоединить отладчик перед выполнением команды. Чтобы отобразить диалоговое окно, вызывает vssphost4.exe <xref:System.Diagnostics.Debugger.Break%2A> метод при запуске.<br /><br /> Чтобы включить это поведение, это значение равно 1. Чтобы отключить это поведение, это значение равно 0 или удалите это значение.<br /><br /> Если это значение равно 1, можно также увеличить значение HostProcessStartupTimeout самостоятельно достаточно времени, чтобы присоединить отладчик Visual Studio ожидает vssphost4.exe сигнала успешно запущена.|  
+|ChannelOperationTimeout|REG_DWORD указывает время в секундах, Visual Studio для выполнения команды SharePoint. Если команда не будет выполнена вовремя, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> возникает исключение.<br /><br /> Значение по умолчанию — 120 секунд.|  
+|HostProcessStartupTimeout|REG_DWORD указывает время в секундах, которое Visual Studio ожидает vssphost4.exe сигнала, он успешно запущена. Если vssphost4.exe не сообщает об успешном запуске вовремя, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> возникает исключение.<br /><br /> Значение по умолчанию — 60 секунд.|  
+|MaxReceivedMessageSize|REG_DWORD указывает максимально допустимый размер в байтах сообщения WCF, которые передаются между Visual Studio и vssphost4.exe.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|  
+|MaxStringContentLength|REG_DWORD указывает максимально допустимый размер в байтах строки, передаваемые между Visual Studio и vssphost4.exe.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|  
+  
+## <a name="see-also"></a>См. также  
+ [Расширение инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
+ [Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   
   

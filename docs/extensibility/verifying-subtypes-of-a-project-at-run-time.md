@@ -1,30 +1,32 @@
 ---
-title: "Проверка подтипы проекта во время выполнения | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "подтипы проектов"
-  - "Проверьте подтипы"
+title: "Проверка во время выполнения подтипы проекта | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project subtypes
+- check subtypes
 ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2e4ebcf8ca85c0ed6face82dfd91f8c5266013f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Проверка подтипы проекта во время выполнения
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-VSPackage, который зависит от подтип пользовательский проект должен включать логики, чтобы искать подтипа таким образом, чтобы он не удается корректно Если подтип не указан. Ниже показано, как проверить наличие подтипом указанного.  
+# <a name="verifying-subtypes-of-a-project-at-run-time"></a>Проверка подтипы проекта во время выполнения
+Пакет VSPackage, который зависит от подтип пользовательский проект следует логики для поиска, подтипа, чтобы он могут отклоняться корректно подтип не указан. Ниже показано, как проверить наличие указанного подтипа.  
   
-### Чтобы убедиться в наличии подтипа  
+### <a name="to-verify-the-presence-of-a-subtype"></a>Чтобы убедиться в наличии подтипа  
   
-1.  Объекты проекта и решения, как получить иерархии проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта, добавив следующий код в VSPackage.  
+1.  Объекты проекта и решения, как получить иерархии проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , добавив следующий код в пакете VSPackage.  
   
     ```  
     EnvDTE.DTE dte;  
@@ -56,7 +58,7 @@ VSPackage, который зависит от подтип пользовате�
   
     ```  
   
-4.  Проверьте список подтипом указанного идентификатора GUID.  
+4.  Проверьте список для GUID указанного подтипа.  
   
     ```  
     // Replace the string "MyGUID" with the GUID of the subtype.  
@@ -67,7 +69,7 @@ VSPackage, который зависит от подтип пользовате�
     }  
     ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Подтипы проектов](../extensibility/internals/project-subtypes.md)   
- [Подтипы разработки проекта](../extensibility/internals/project-subtypes-design.md)   
- [Свойства и методы дополнено подтипы проектов](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+ [Подтипы конструктора проектов](../extensibility/internals/project-subtypes-design.md)   
+ [Свойства и методы, расширенные подтипами проектов](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

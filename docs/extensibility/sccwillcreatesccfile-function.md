@@ -1,64 +1,64 @@
 ---
-title: "Функция SccWillCreateSccFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccWillCreateSccFile"
-helpviewer_keywords: 
-  - "Функция SccWillCreateSccFile"
+title: "Функция SccWillCreateSccFile | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccWillCreateSccFile
+helpviewer_keywords: SccWillCreateSccFile function
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8b6aa6ead6811f50cc186f46561b214ba4cd0905
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функция SccWillCreateSccFile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Эта функция определяет, поддерживает ли подключаемый модуль системы управления версиями, создание MSSCCPRJ. Файл SCC для каждого заданного файла.  
+# <a name="sccwillcreatesccfile-function"></a>Функция SccWillCreateSccFile
+Эта функция определяет, поддерживает ли подключаемый модуль системы управления версиями Создание MSSCCPRJ. Файл SCC для каждого заданного файла.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 SCCRTN SccWillCreateSccFile(  
-   LPVOID  pContext,  
-   LONG    nFiles,  
-   LPCSTR* lpFileNames,  
-   LPBOOL  pbSccFiles  
+   LPVOID  pContext,  
+   LONG    nFiles,  
+   LPCSTR* lpFileNames,  
+   LPBOOL  pbSccFiles  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  pContext  
- \[in\] Подключаемый модуль Контекстный указатель исходного элемента управления.  
+ [in] Подключаемый модуль Контекстный указатель исходного элемента управления.  
   
  nFiles  
- \[in\] Количество имен файлов, включенных в `lpFileNames` массива, а также длину `pbSccFiles` массива.  
+ [in] Число имен файлов, включенных в `lpFileNames` массива, а также длину `pbSccFiles` массива.  
   
  lpFileNames  
- \[in\] Массив имен полным путем к файлу для проверки \(массива должен быть выделен вызывающим объектом\).  
+ [in] Массив полных имен для проверки (массива должен быть выделен вызывающим объектом).  
   
  pbSccFiles  
- \[in, out\] Массив, в котором сохраняются результаты.  
+ [in, out] Массив, в котором сохраняются результаты.  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Выполнено.|  
-|SCC\_E\_INVALIDFILEPATH|Один из путей в массиве является недопустимым.|  
-|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка.|  
+|-----------|-----------------|  
+|SCC_OK|Выполнено.|  
+|SCC_E_INVALIDFILEPATH|Один из путей в массиве является недопустимым.|  
+|SCC_E_NONSPECIFICERROR|Неспецифичную сбоя.|  
   
-## Заметки  
- Эта функция вызывается со списком файлов для определения, если подключаемый модуль системы управления версиями обеспечивает поддержку в MSSCCPRJ. Файл SCC для каждого заданного файлов \(Подробнее о MSSCCPRJ. Файл SCC см. [MSSCCPRJ. Файл SCC](../extensibility/mssccprj-scc-file.md)\). Подключаемые модули управления версиями можно объявить, имеют ли они возможность создания MSSCCPRJ. Файлы SCC, объявив `SCC_CAP_SCCFILE` во время инициализации. Подключаемый модуль возвращает `TRUE` или `FALSE` каждого файла в `pbSccFiles` массива, указывающая, что файлы данного MSSCCPRJ. Поддержка SCC. Если подключаемый модуль возвращает успех код из функции, учитываются значения из возвращаемого массива. В случае сбоя массив учитывается.  
+## <a name="remarks"></a>Примечания  
+ Эта функция вызывается со списком файлов, чтобы определить, если подключаемый модуль системы управления версиями обеспечивает поддержку в MSSCCPRJ. Файл SCC для каждого заданного файла (Подробнее о MSSCCPRJ. Файл SCC разделе [MSSCCPRJ. Файл SCC](../extensibility/mssccprj-scc-file.md)). Подключаемые модули управления версиями можно объявить, имеют ли они возможность создания MSSCCPRJ. Файлы SCC, объявив `SCC_CAP_SCCFILE` во время инициализации. Подключаемый модуль возвращает `TRUE` или `FALSE` каждого файла в `pbSccFiles` массива, указывающая, какой из заданного файлы MSSCCPRJ. Поддержка SCC. Если подключаемый модуль возвращает успех код из функции, соблюдаются значения в возвращаемый массив. В случае сбоя массива учитывается.  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
- [MSSCCPRJ. Файл SCC](../extensibility/mssccprj-scc-file.md)
+## <a name="see-also"></a>См. также  
+ [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
+ [Файл MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

@@ -1,29 +1,31 @@
 ---
-title: "Развертывание типы проектов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "проекты [Visual Studio SDK] управляемого кода"
-  - "проекты [Visual Studio SDK] агрегации"
+title: "Развертывание проекта типов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- projects [Visual Studio SDK], managed-code
+- projects [Visual Studio SDK], aggregator
 ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e7673839e44e913d7d0a219400142fe7e6a0b95e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Развертывание типы проектов
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Устанавливает агрегатор новый тип проекта \(ProjectAggregator2.dll\), а также пакет установщика Windows для распространения \(ProjectAggregator2.msi\). Необходимо использовать новый статистическую функцию для типов управляемых проектов. ProjectAggregator2 работает способы ограничения в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта агрегатора, препятствующих правильной работе типов управляемых проектов. Ниже описывается изменение VSPackage для использования нового агрегатора.  
+# <a name="deploying-project-types"></a>Развертывание проекта типов
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Устанавливает агрегатор новый тип проекта (ProjectAggregator2.dll), а также пакет установщика Windows для распространения (ProjectAggregator2.msi). Новому средству необходимо использовать для типов управляемых проектов. ProjectAggregator2 работает способы ограничения в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта инвентаризации программного обеспечения, которые препятствуют правильной работе типы проектов управляемого кода. Следующие шаги описывают изменения VSPackage для использования новому средству.  
   
 1.  Удалите NativeHierarchyWrapper проект из решения.  
   
-2.  Удалите NativeHierarchyWrapper двоичные файлы из установки.  
+2.  Удалите все двоичные файлы NativeHierarchyWrapper из установки.  
   
 3.  Добавьте ProjectAggregator2.msi к установке.

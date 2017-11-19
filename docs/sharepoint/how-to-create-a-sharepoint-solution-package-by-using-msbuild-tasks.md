@@ -1,117 +1,118 @@
 ---
-title: "Практическое руководство. Создание пакета решения SharePoint с помощью задач MSBuild"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, пакеты"
+title: "Как: Создание пакета решения SharePoint с помощью задач MSBuild | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, packages
 ms.assetid: c3880bdd-f0a1-4d53-9a97-5767cb3f7b8e
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3cfe26fde4dd2d2b6617a008769fd535bb3e2cbb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Создание пакета решения SharePoint с помощью задач MSBuild
-  Построение, очистку и проверку пакетов SharePoint \(WSP\-файлов\) можно выполнять с помощью задач командной строки MSBuild на компьютере разработчика.  Эти команды также позволяют автоматизировать процесс построения с помощью Team Foundation Server или компьютера построения.  
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Практическое руководство. Создание пакета решения SharePoint с помощью задач MSBuild
+  Сборки, очистки и проверка пакета SharePoint (WSP-файл) с помощью командной строки MSBuild задачи на компьютере разработчика. Эти команды также можно использовать для автоматизации процесса сборки с помощью Team Foundation Server на компьютере построения.  
   
-## Построение пакета SharePoint  
+## <a name="building-a-sharepoint-package"></a>Построение пакета SharePoint  
   
-#### Построение пакета SharePoint  
+#### <a name="to-build-a-sharepoint-package"></a>Для создания пакета SharePoint  
   
-1.  В меню **Старт** Windows, выберите **Все программы**, **Периферийные устройства**, **Окно командной строки**.  
+1.  В ОС Windows **запустить** меню, выберите **все программы**, **стандартные**, **командной строки**.  
   
 2.  Перейдите в каталог, где находится проект SharePoint.  
   
-3.  Чтобы создать пакет для проекта, введите следующую команду.  Замените *ProjectFileName* именем проекта.  
+3.  Введите следующую команду, чтобы создать пакет для проекта. Замените *ProjectFileName* с именем проекта.  
   
     ```  
     msbuild /t:Package ProjectFileName  
     ```  
   
-     Например, создать пакет проекта SharePoint с именем ListDefinition1 можно с помощью любой из следующих команд.  
+     Например можно выполнить одно из следующих команд, чтобы упаковать проект SharePoint с названием ListDefinition1.  
   
     ```  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
   
-## Очистка пакета SharePoint  
+## <a name="cleaning-a-sharepoint-package"></a>Очистка пакета SharePoint  
   
-#### Очистка пакета SharePoint  
+#### <a name="to-clean-a-sharepoint-package"></a>Чтобы очистить пакет SharePoint  
   
 1.  Откройте окно командной строки.  
   
 2.  Перейдите в каталог, где находится проект SharePoint.  
   
-3.  Чтобы очистить пакет для проекта, введите следующую команду.  Замените *ProjectFileName* именем проекта.  
+3.  Введите следующую команду, чтобы очистить пакет для проекта. Замените *ProjectFileName* с именем проекта.  
   
     ```  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
-     Например, очистить проект SharePoint с именем ListDefinition1 можно с помощью любой из следующих команд.  
+     Например можно выполнить одно из следующих команд, чтобы очистить проект SharePoint с названием ListDefinition1.  
   
     ```  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
   
-## Проверка пакета SharePoint  
+## <a name="validating-a-sharepoint-package"></a>Проверка пакета SharePoint  
   
-#### Проверка пакета SharePoint  
+#### <a name="to-validate-a-sharepoint-package"></a>Чтобы проверить пакет SharePoint  
   
 1.  Откройте окно командной строки.  
   
 2.  Перейдите в каталог, где находится проект SharePoint.  
   
-3.  Чтобы проверить пакет для проекта, введите следующую команду.  Замените *ProjectFileName* именем проекта.  
+3.  Введите следующую команду, чтобы проверить пакет для проекта. Замените *ProjectFileName* с именем проекта.  
   
     ```  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
-     Например, проверить проект SharePoint с именем ListDefinition1 можно с помощью любой из следующих команд.  
+     Например можно выполнить одно из следующих команд, чтобы проверить проект SharePoint с названием ListDefinition1.  
   
     ```  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
   
-## Настройка свойств пакета SharePoint  
+## <a name="setting-properties-in-a-sharepoint-package"></a>Настройка свойств пакета SharePoint  
   
-#### Настройка свойств пакета SharePoint  
+#### <a name="to-set-a-property-in-a-sharepoint-package"></a>Чтобы задать свойство в пакете SharePoint  
   
 1.  Откройте окно командной строки.  
   
 2.  Перейдите в каталог, где находится проект SharePoint.  
   
-3.  Чтобы задать свойство в пакете проекта, введите следующую команду.  Замените *PropertyName* именем свойства, которое требуется задать.  
+3.  Введите следующую команду, чтобы задать значение свойства в пакет для проекта. Замените *PropertyName* со свойством, которое требуется задать.  
   
     ```  
     msbuild /property:PropertyName=Value  
     ```  
   
-     Например, задать порог предупреждений можно с помощью любой из следующих команд.  
+     Например можно выполнить следующую команду, чтобы установить уровень предупреждений.  
   
     ```  
     msbuild /property:WarningLevel = 2  
     ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Практическое руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Как: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Практическое руководство. Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
   
   

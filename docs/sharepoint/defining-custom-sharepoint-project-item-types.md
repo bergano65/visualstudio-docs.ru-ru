@@ -1,56 +1,58 @@
 ---
-title: "Defining Custom SharePoint Project Item Types"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint project items, defining your own types"
-  - "project items [SharePoint development in Visual Studio], defining your own types"
-  - "SharePoint development in Visual Studio, defining new project item types"
+title: "Определение типов элементов проектов SharePoint пользовательских | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint project items, defining your own types
+- project items [SharePoint development in Visual Studio], defining your own types
+- SharePoint development in Visual Studio, defining new project item types
 ms.assetid: be300c24-fd1b-4fc7-a4e9-a5df1d81d3fc
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 980712e717df294a4d390eb66ed2f1740ba2c3f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Defining Custom SharePoint Project Item Types
-  Новый тип элементов проектов SharePoint определяется в тех случаях, когда требуется создать новый вид элементов проектов SharePoint.  Например, Visual Studio не содержит элементов проекта SharePoint для добавления полей или пользовательских действий к сайту SharePoint.  Можно также определить собственные типы элементов проекта SharePoint для создания полей и настраиваемых действий.  
+# <a name="defining-custom-sharepoint-project-item-types"></a>Определение пользовательских типов элементов проектов SharePoint
+  Определите новый тип элемента проекта SharePoint, если вы хотите создать новый тип элемента проекта SharePoint. Например Visual Studio не включает элементы проекта SharePoint для добавления полей или настраиваемых действий на сайте SharePoint. Можно определить собственные типы элементов проекта SharePoint для создания полей, настраиваемые действия и другие компоненты SharePoint.  
   
-## Задачи по определению типов элементов проектов SharePoint  
- Чтобы определить пользовательский тип элемента проекта, необходимо построить сборку расширения Visual Studio, которая реализует интерфейс <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>.  Дополнительные сведения см. в разделе [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+## <a name="tasks-for-defining-sharepoint-project-item-types"></a>Задачи по определению типов элементов проектов SharePoint  
+ Чтобы определить тип элемента пользовательского проекта, построить сборку расширения Visual Studio, которая реализует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> интерфейса. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
- При определении пользовательского типа элемента проекта к нему можно добавить следующие функциональные возможности.  
+ При определении пользовательского типа элементов проектов также можно добавить следующие функциональные возможности для элемента проекта:  
   
--   Добавление пункта контекстного меню в элемент проекта.  Пункт меню отображается при открытии контекстное меню для элемента проекта в **Обозреватель решений**, щелкнув правой кнопкой мыши элемент проекта или путем выбора его и затем выбрать ключи миграцию \+ F10.  Дополнительные сведения см. в разделе [How to: Add a Shortcut Menu Item to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
+-   Добавление пункта контекстного меню в элемент проекта. Элемент меню появляется, когда открывается контекстное меню для элемента проекта в **обозревателе решений** ключей, правой кнопкой мыши элемент проекта или выбрав его и нажмите клавиши Shift + F10. Дополнительные сведения см. в разделе [как: Добавление пункта контекстного меню в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
   
--   Добавление пользовательского свойства к элементу проекта.  Свойство отображается в окне **Свойства** при выборе элемента проекта в **Обозреватель решений**.  Дополнительные сведения см. в разделе [How to: Add a Property to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+-   Добавление пользовательского свойства в элемент проекта. Это свойство отображается в **свойства** при выборе элемента проекта в **обозревателе решений**. Дополнительные сведения см. в разделе [как: добавить свойство в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- Чтобы другие разработчики также могли использовать созданный элемент проекта в Visual Studio, создайте SPDATA\-файл и шаблон элемента или шаблон проекта, связанный с этим элементом проекта.  Дополнительные сведения см. в разделе [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+ Чтобы включить другие разработчики могли использовать элемент проекта в Visual Studio, создайте SPDATA-файл и создать шаблон элемента или шаблон проекта, который связан с элементом проекта. Дополнительные сведения см. в разделе [Создание шаблонов элементов и проектов для элементов проекта SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-## Общие сведения о связи между типами элементов проектов и экземплярами элементов проектов  
- При определении типа элементов проектов SharePoint Visual Studio загружает расширение в то время, как элементы проектов связанного типа добавляются к проекту SharePoint.  Например, при определении нового типа элементов проектов **настраиваемого действия** Visual Studio загружает расширение в то время, как пользователь добавляет элемент проекта **настраиваемого фильтра** к проекту.  Visual Studio использует один и тот же экземпляр расширения для всех экземпляров связанного типа элементов проектов.  В предыдущем примере при добавлении пользователем второго элемента проекта **настраиваемого действия** к проекту один и тот же экземпляр расширения используется для настройки второго элемента проекта.  
+## <a name="understanding-the-relationship-between-project-item-types-and-project-item-instances"></a>Основные сведения о связи между типами элементов проектов и экземплярами элементов проектов  
+ При определении типа элемента проекта SharePoint, Visual Studio загружает расширения элемента проекта связанный тип для добавления в проект SharePoint. Например, если определить новый **пользовательское действие** тип проекта, Visual Studio загружает расширение, когда пользователь добавляет **пользовательское действие** элемента проекта в проект. Visual Studio использует один и тот же экземпляр расширения для всех экземпляров типа элемента, соответствующего проекта. В предыдущем примере, если пользователь добавляет второй **пользовательское действие** элемента проекта в проект, для настройки второго элемента проекта используется один и тот же экземпляр расширения.  
   
- Для доступа к определенным экземплярам типа элементов проектов выполните обработку одного из событий <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> параметра *projectItemTypeDefinition* реализации метода <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>.  Например, чтобы определить время добавления элемента проекта пользовательского типа к проекту, выполните обработку события <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>.  Дополнительные сведения см. в разделе [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+ Для доступа к определенному экземпляру типа элемента проекта, обработку одного из <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события *projectItemTypeDefinition* параметр в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод. Например, чтобы определить, при добавлении элемента проекта настраиваемого типа в проект, обрабатывают <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> событий. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
-## См. также  
- [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [How to: Add a Property to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
- [How to: Add a Shortcut Menu Item to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
- [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
- [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
- [Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
- [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+## <a name="see-also"></a>См. также  
+ [Как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
+ [Способ: добавить свойство типа элемента проекта SharePoint, пользовательские](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
+ [Как: Добавление пункта контекстного меню для типа элемента проекта SharePoint, пользовательские](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
+ [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
+ [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
+ [Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   
   

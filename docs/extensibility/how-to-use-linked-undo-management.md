@@ -1,39 +1,40 @@
 ---
-title: "Практическое руководство: использование управления связанный откат | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - связанный откат управления"
+title: "Как: использовать связанный откат управления | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - linked undo management
 ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 05e10305f7e4c243f799cfe33d4d9b86418eed86
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство: использование управления связанный откат
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Связанный откат дает пользователю одновременно для отмены те же правки в нескольких файлах.  Например, синхронное текст изменяет через несколько программных файлов, таких как файл заголовка и файл Visual C\+\+, связанная rollback transaction.  Связанная возможность отката встроена в реализацию диспетчера отката и среды <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> позволяет управлять эту возможность.  Связанный откат на родительский единицу отката, которая может связать отдельном стеки отката, которые должны подготавливаться к просмотру в виде единственной единицей отката.  Процедура для использования связанных отката детализирована в следующем разделе.  
+# <a name="how-to-use-linked-undo-management"></a>Как: использовать связанный откат управления
+Связанный откат позволяет пользователю одновременно отменить же изменения в нескольких файлах. Например для одновременного изменения текста в нескольких файлах программы, таких как файл заголовка и файл кода Visual C++ является связанный откат транзакции. Связанный откат возможностей встроена в реализации среды в диспетчер отмены и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> позволяет реализовать эту возможность. Связанный откат реализуется блок отмены родительской, который можно связать стеки отдельные отмены вместе, чтобы рассматриваться как один блок отмены. В следующем разделе подробно описана процедура использования связанный откат.  
   
-### Для отката связанному использованием  
+### <a name="to-use-linked-undo"></a>Чтобы использовать связанный откат  
   
-1.  Вызов `QueryService` на  `SVsLinkedUndoManager` получить указатель на  `IVsLinkedUndoTransactionManager`.  
+1.  Вызовите `QueryService` на `SVsLinkedUndoManager` для получения указателя на `IVsLinkedUndoTransactionManager`.  
   
-2.  Создание исходного связанная родительским единица отката путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>.  Это задает начальную точку для наборов стеков отката для группирования в связанные стеки отката.  в `OpenLinkedUndo` метод кроме того, необходимо определить, нужно ли связанный откат быть строги или non\-строги.  Non\-строгая связанной функциональности отката означает, что некоторые из документов со связанными элементами с общим родителем отката и по\-прежнему может закрыть другие связанные элементы с общим родителем, rollback на их стеках.  Строго связанное поведение отмены указывает, что все связанные стеки отмены одного и того же уровня должны отменяться вместе или не отменяться вообще.  Добавьте последующие связанные стеки отката путем вызова [IOleUndoManager:: Добавить](http://msdn.microsoft.com/library/windows/desktop/ms680135) метод.  
+2.  Создать связанный откат начальной родительское подразделение, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>. Это задает начальную точку для набора стеки отмены, чтобы разделить на связанные стеки отмены. В `OpenLinkedUndo` метод, необходимо также указать, следует ли связанный откат strict или нестрогом. Не строго связанное поведение отмены означает, что некоторые документы с связанный откат элементов с общим родителем можно закрыть, а по-прежнему оставьте связан другой отменить одноуровневых элементов в их стеках. Строго связанное поведение отмены указывает, что все связанные того же уровня стеки отмены иметь отменяться вместе или не полностью. Добавить последующие связанные стеки отменить, вызвав [IOleUndoManager::Add](http://msdn.microsoft.com/library/windows/desktop/ms680135) метод.  
   
-3.  Вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> откатить все связанные единицы отката как одно.  
+3.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> для наката все единицы связанный откат как один.  
   
     > [!NOTE]
-    >  К связанному инструментом управления отката в редакторе, добавьте элемент управления отката.  Дополнительные сведения о реализации см. связанный элемент управления отката. [Как Реализуйте элемент управления отката](../extensibility/how-to-implement-undo-management.md).  
+    >  Для реализации управления связанный откат в редакторе, добавьте управления отмены. Дополнительные сведения о реализации управления связанный откат см. в разделе [как: реализуйте отменить управления](../extensibility/how-to-implement-undo-management.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms682151)   
  [IOleUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms678476)   
- [Практическое руководство: реализация управления отмены](../extensibility/how-to-implement-undo-management.md)
+ [Как: реализации управления отмены](../extensibility/how-to-implement-undo-management.md)

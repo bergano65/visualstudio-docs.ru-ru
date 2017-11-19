@@ -1,60 +1,62 @@
 ---
-title: "Практическое руководство. Создание веб-части SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "веб-части [разработка приложений SharePoint в Visual Studio], добавление"
-  - "веб-части [разработка приложений SharePoint в Visual Studio], создание"
+title: "Как: Создание веб-части SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Web Parts [SharePoint development in Visual Studio], adding
+- Web Parts [SharePoint development in Visual Studio], creating
 ms.assetid: 0d037522-c25e-4c24-93b7-518db0f791b7
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 847124dc9a7e4cd80993df5b50c5d3d3b752f228
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Создание веб-части SharePoint
-  Можно создавать и настраивать веб\-части путем добавления элемента **Веб\-часть** в любой проект SharePoint и изменения файла кода веб\-части либо с помощью конструктора.  Для получения дополнительной информации см. [Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+# <a name="how-to-create-a-sharepoint-web-part"></a>Практическое руководство. Создание веб-части SharePoint
+  Можно создать и настроить веб-части путем добавления **веб-часть** в любой проект SharePoint и последующего изменения файла кода веб-части либо с помощью конструктора. Дополнительные сведения см. в разделе [как: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
-### Создание веб\-части SharePoint  
+### <a name="to-create-a-sharepoint-web-part"></a>Для создания веб-части SharePoint  
   
-1.  создайте или откройте проект SharePoint.  
+1.  Создайте или откройте проект SharePoint.  
   
-     Для получения дополнительной информации см. [Шаблоны проектов и элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+     Дополнительные сведения см. в разделе [проект SharePoint и шаблоны элементов проекта](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-2.  Выберите узел проекта SharePoint в **обозревателе решений**, затем выберите **Добавить новый элемент** в меню **Проект**.  
+2.  Выберите узел проекта SharePoint в **обозревателе решений** и выберите **проекта**, **Добавление нового элемента**.  
   
-3.  В диалоговом окне **Добавление нового элемента** разверните узел **SharePoint** и выберите узел **2010**.  
+3.  В **Добавление нового элемента** диалогового окна разверните **SharePoint** узел и выберите **2010** узла.  
   
-4.  В списке шаблонов SharePoint выберите **Веб\-часть**.  
+4.  В списке шаблонов SharePoint выберите **веб-часть**.  
   
-5.  В поле **Имя** введите имя для веб\-части и нажмите кнопку **Добавить**.  
+5.  В **имя** укажите имя веб-части и выберите **добавить** кнопки.  
   
-     Веб\-часть отобразится в **обозревателе решений**.  Дополнительные сведения о файлах, которые содержит веб\-часть, см. в разделе [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+     Веб-часть появляется в **обозревателе решений**. Дополнительные сведения о файлах, которые веб-часть включает см. в разделе [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
-6.  В **Обозревателе решений** откройте файл кода только что созданной веб\-части.  
+6.  В **обозревателе решений**, откройте файл кода для веб-части, которую вы только что создали.  
   
-     Например, если веб\-часть называется WebPart1, откройте WebPart1.vb \(в Visual Basic\) или WebPart1.cs \(в C\#\).  
+     Например, если веб-часть называется WebPart1, откройте WebPart1.vb (в Visual Basic) или WebPart1.cs (в C#).  
   
 7.  В файле кода добавьте элементы управления в метод <xref:System.Web.UI.Control.CreateChildControls%2A>.  
   
-     Пример см. в разделе [Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).  
+     Пример см. в разделе [Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
+ [Как: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
  [Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
   
   

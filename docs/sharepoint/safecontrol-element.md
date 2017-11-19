@@ -1,30 +1,31 @@
 ---
-title: "SafeControl Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SafeControl element"
+title: "Элемент SafeControl | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: SafeControl element
 ms.assetid: e7c61749-fc73-412c-be30-4af5ff2a9fd2
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8d9651c320e574c8db9fcafcb6e98f13e45eac1d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# SafeControl Element
-  Представляет элемент управления ASPX или веб\-часть, отмеченную как безопасная, с доступом для любых пользователей на любой странице ASPX сайта SharePoint.  
+# <a name="safecontrol-element"></a>Элемент SafeControl
+  Представляет элемент управления ASPX или веб-части, которые обозначены как безопасные для любому пользователю получить доступ к любой странице ASPX на сайте SharePoint.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <SafeControl Assembly = "Name of assembly that contains the safe control"  
@@ -35,43 +36,43 @@ caps.handback.revision: 10
     TypeName = "Type of the safe control" />  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|**Assembly**|Необязательный атрибут элемента **xs:string**.<br /><br /> Имя сборки, в которой определен элемент управления ASPX или веб\-части.  По умолчанию этот атрибут использует замещаемый параметр **$SharePoint.Project.AssemblyFullName$** для имени сборки.  Дополнительные сведения см. в разделе [Подстановочные параметры](../sharepoint/replaceable-parameters.md).|  
-|**IsSafe**|Необязательный атрибут элемента **xs:boolean**.<br /><br /> Указывает, являются ли элемент управления ASPX или веб\-часть безопасными при доступе ненадежных пользователей.|  
-|**IsSafeAgainstScript**|Необязательный атрибут элемента **xs:boolean**.<br /><br /> Указывает, могут ли ненадежные пользователи просмотреть или изменять свойства элемента управления ASPX или веб\-части.|  
-|**Name**|Необязательный атрибут элемента **xs:string**.<br /><br /> Имя этой записи безопасного элемента управления в коллекции.|  
-|**Namespace**|Необязательный атрибут элемента **xs:string**.<br /><br /> Пространство имен элемента управления ASPX или веб\-части.|  
-|**TypeName**|Необязательный атрибут элемента **xs:string**.<br /><br /> Имя типа элемента управления ASPX или веб\-части.|  
+|---------------|-----------------|  
+|**Assembly**|Необязательный **xs: String** атрибута.<br /><br /> Имя сборки, в которой определен элемент управления ASPX или веб-части. По умолчанию этот атрибут используется **$SharePoint.Project.AssemblyFullName$** заменяемый параметр для имени сборки. Дополнительные сведения см. в разделе [подстановочные параметры](../sharepoint/replaceable-parameters.md).|  
+|**IsSafe**|Необязательный **xs: Boolean** атрибута.<br /><br /> Указывает, является ли элемент управления ASPX или веб-часть безопасная настройка для недоверенных пользователей для доступа к.|  
+|**IsSafeAgainstScript**|Необязательный **xs: Boolean** атрибута.<br /><br /> Указывает, можно ли ненадежные пользователи просмотреть или изменить свойства элемента управления ASPX или веб-части.|  
+|**Имя**|Необязательный **xs: String** атрибута.<br /><br /> Имя этой записи безопасных элементов управления в коллекции.|  
+|**Namespace**|Необязательный **xs: String** атрибута.<br /><br /> Пространство имен элемента управления ASPX или веб-части.|  
+|**Имя типа**|Необязательный **xs: String** атрибута.<br /><br /> Имя типа элемента управления ASPX или веб-части.|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX или веб\-частей, отмеченных как безопасные, с доступом для любых пользователей на любой странице ASPX сайта SharePoint.|  
+|-------------|-----------------|  
+|[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX и веб-частей, отмеченных как безопасные для любому пользователю получить доступ к любой странице ASPX на сайте SharePoint.|  
   
-## Заметки  
- Дополнительные сведения об безопасных элементах управления см. в разделе [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="remarks"></a>Примечания  
+ Дополнительные сведения о безопасных элементов управления см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## Сведения об элементе  
+## <a name="element-information"></a>Сведения об элементе  
   
 |||  
 |-|-|  
-|**Пространство имен**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым**|Нет|  
+|**Может быть пустым.**|Нет|  
   
-## См. также  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
+## <a name="see-also"></a>См. также  
+ [Справочник по схеме элементов проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

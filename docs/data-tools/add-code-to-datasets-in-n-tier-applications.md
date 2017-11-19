@@ -1,5 +1,5 @@
 ---
-title: Add code to datasets in n-tier applications | Microsoft Docs
+title: "Добавление кода для наборов данных в n уровневых приложениях | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,72 +9,53 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
-helpviewer_keywords:
-- n-tier applications, extending datasets
+helpviewer_keywords: n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: ee1a0cf1b392fe6407fb66cf64a2372cc2208a69
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 26dd5500f50b185c31809d9882e03e56541a567a
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>Add code to datasets in n-tier applications
-You can extend the functionality of a dataset by creating a partial class file for the dataset and adding code to it (instead of adding code to the *DatasetName*.Dataset.Designer file). Partial classes enable code for a specific class to be divided among multiple physical files. For more information, see [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) or [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n уровневых приложениях
+Можно расширить функциональные возможности набора данных путем создания файла разделяемого класса для набора данных и добавления к нему кода (вместо добавления кода в *DatasetName*. Dataset.Designer-файл). Разделяемые классы позволяют коду для определенного класса разделяться между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](/dotnet/visual-basic/language-reference/modifiers/partial) или [разделяемые классы и методы](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  
   
- The code that defines a dataset is generated every time changes are made to the dataset definition (in the typed dataset). This code is also generated when you make changes during the running of any wizard that modifies the configuration of a dataset. To prevent your code from being deleted during the regeneration of a dataset, add code to the dataset's partial class file.  
+Код, который определяет набор данных создается каждый раз изменений в определение набора данных (в типизированный набор данных). Этот код также создается при внесении изменений во время выполнения мастеров, изменяющих конфигурацию набора данных. Чтобы предотвратить удаление во время повторного формирования набора данных в коде, добавьте код в файл разделяемого класса набора данных.  
   
- By default, after you separate the dataset and `TableAdapter` code, the result is a discrete class file in each project. The original project has a file named *DatasetName*.Designer.vb (or *DatasetName*.Designer.cs) that contains the `TableAdapter` code. The project that's designated in the **Dataset Project** property has a file that's named *DatasetName*.DataSet.Designer.vb (or *DatasetName*.DataSet.Designer.cs).This file contains the dataset code.  
-  
-> [!NOTE]
->  When you separate datasets and `TableAdapter`s (by setting the **DataSet Project** property), existing partial dataset classes in the project won't be moved automatically. Existing dataset partial classes must be moved manually to the dataset project.  
+По умолчанию после разделения кода адаптера таблицы и набора данных получается отдельные файлы классов в каждом проекте. Исходный проект содержит файл с именем *DatasetName*. Designer.vb (или *DatasetName*. Designer.cs), содержащий код адаптера таблицы. Проект, который назначен в **Dataset проекта** свойство имеет файл с именем *DatasetName*. DataSet.Designer.vb (или *DatasetName*. DataSet.Designer.cs). Этот файл содержит код набора данных.  
   
 > [!NOTE]
->  When validation code needs to be added, the typed dataset provides functionality for generating <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.RowChanging> event handlers. For more information, see [Add validation to an n-tier dataset](../data-tools/add-validation-to-an-n-tier-dataset.md).  
+>  При разделении наборов данных и адаптеров таблиц (установив **DataSet проекта** свойства), существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.  
   
-### <a name="to-add-code-to-datasets-in-n-tier-applications"></a>To add code to datasets in n-tier applications  
+> [!NOTE]
+>  При проверке кода должен быть добавлен, типизированный набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчики событий. Дополнительные сведения см. в разделе [Добавление проверки в n уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md).  
   
-1.  Locate the project that contains the .xsd file. 
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в многоуровневых приложениях  
   
-2.  Select the **.xsd** file to open the dataset.  
+1.  Найдите проект, который содержит файл с расширением XSD. 
   
-3.  Right-click the data table to which you want to add code (the table name in the title bar), and then select **View Code**.  
+2.  Выберите **.xsd** файл, чтобы открыть набор данных.  
   
-     A partial class is created and opens in the Code Editor.  
+3.  Щелкните правой кнопкой мыши таблицу данных, к которому нужно добавить код (имя таблицы в строке заголовка), а затем выберите **Просмотр кода**.  
   
-4.  Add code inside the partial class declaration.  
+     Разделяемый класс создается и открывается в редакторе кода.  
   
-     The following example shows where to add code to the CustomersDataTable in the NorthwindDataSet:  
+4.  Добавьте код в объявление разделяемого класса.  
   
-    ```vb#  
+     Ниже приведен пример, куда нужно добавить код для CustomersDataTable в NorthwindDataSet.  
+  
+    ```vb  
     Partial Public Class CustomersDataTable  
         ' Add code here to add functionality   
         ' to the CustomersDataTable.  
     End Class  
-    ```  
-  
-    ```c#  
+    ```    
+    ```csharp  
     partial class CustomersDataTable  
     {  
         // Add code here to add functionality  
@@ -82,10 +63,9 @@ You can extend the functionality of a dataset by creating a partial class file f
     }  
     ```  
   
-## <a name="see-also"></a>See Also  
- [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md)   
- [Add code to TableAdapters in n-tier applications](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)   
- [Create and Configure TableAdapters](create-and-configure-tableadapters.md)   
- [Create and Configure TableAdapters](create-and-configure-tableadapters.md)   
- [Hierarchical Update Overview](hierarchical-update.md)     
- [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+## <a name="see-also"></a>См. также
+[Общие сведения о данных N-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)   
+[Добавление кода для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+[Создайте и настройте адаптеры таблиц TableAdapter](create-and-configure-tableadapters.md)  
+[Общие сведения о иерархическое обновление](hierarchical-update.md)     
+[Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

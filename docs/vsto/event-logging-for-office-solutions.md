@@ -1,38 +1,40 @@
 ---
-title: "Ведение журнала событий для решений Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "приложения Office [разработка решений Office в Visual Studio], просмотр событий"
-  - "развертывание ClickOnce [разработка решений Office в Visual Studio], просмотр событий"
-  - "развертывание приложений [разработка решений Office в Visual Studio], просмотр событий"
-  - "разработка решений Office в Visual Studio, просмотр событий"
+title: "Ведение журнала событий для решений Office | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], event viewer
+- ClickOnce deployment [Office development in Visual Studio], event viewer
+- deploying applications [Office development in Visual Studio], event viewer
+- Office development in Visual Studio, event viewer
 ms.assetid: 31a246fe-ce1c-4f0e-9a21-9cf974c247fe
-caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c79049765d2e80f7cbf5c8588b637f8ae46af6ec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Ведение журнала событий для решений Office
-  Вы можете использовать средство просмотра событий в Windows для просмотра сообщений об исключениях, записанных средой выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] при установке или удалении решений Office. С помощью этих сообщений из журнала событий можно разрешать проблемы развертывания и установки.  
+# <a name="event-logging-for-office-solutions"></a>Ведение журнала событий для решений Office
+  Вы можете использовать средство просмотра событий в Windows для просмотра сообщений об исключениях, записанных средой выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] при установке или удалении решений Office. С помощью этих сообщений из журнала событий можно разрешать проблемы развертывания и установки.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Чтение журнала событий  
+## <a name="reading-the-event-log"></a>Чтение журнала событий  
  Откройте **средство просмотра событий** и отфильтруйте события, которые нужно просмотреть.  
   
-#### Чтение журнала событий в Windows Server 2003 и Windows XP  
+#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Чтение журнала событий в Windows Server 2003 и Windows XP  
   
 1.  В панели управления откройте раздел **Администрирование**.  
   
@@ -46,9 +48,9 @@ caps.handback.revision: 32
   
 6.  Для событий установки в поле **Идентификатор события** введите **4096**.  
   
-7.  Нажмите кнопку **ОК**, чтобы просмотреть отфильтрованное представление.  
+7.  Нажмите кнопку **ОК** , чтобы просмотреть отфильтрованное представление.  
   
-#### Чтение журнала событий в Windows 7, Windows Vista и Windows Server 2008  
+#### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Чтение журнала событий в Windows 7, Windows Vista и Windows Server 2008  
   
 1.  В панели управления откройте раздел **Администрирование**.  
   
@@ -64,7 +66,7 @@ caps.handback.revision: 32
   
 7.  Для событий установки в поле **Идентификатор события** введите **4096**.  
   
-8.  Нажмите кнопку **ОК**, чтобы просмотреть отфильтрованное представление.  
+8.  Нажмите кнопку **ОК** , чтобы просмотреть отфильтрованное представление.  
   
  Просмотр событий содержит следующие сведения.  
   
@@ -76,15 +78,15 @@ caps.handback.revision: 32
   
  После удаления решения Office сообщения об исключениях остаются в журнале событий.  
   
- Сведения об отображении или записи сообщений об исключениях при запуске решения Office см. в разделах [Отладка проектов Office](../vsto/debugging-office-projects.md) и [Отладка проектов Office](../vsto/debugging-office-projects.md).  
+ Показывать или записывать сообщения об исключениях при запуске решения Office, в разделе [отладка проектов Office](../vsto/debugging-office-projects.md) и [отладка проектов Office](../vsto/debugging-office-projects.md).  
   
-### Локализация  
+### <a name="localization"></a>Локализация  
  Язык сообщений об исключениях определяется языком среды выполнения Visual Studio Tools для Office. Например, если на компьютере пользователя установлен японский языковой пакет, сообщение об исключении записывается в журнал событий на японском языке.  
   
-## Отключение журнала событий  
- По умолчанию журнал событий включен при установке или удалении решений Office. Вы можете отключить журнал событий, установив в переменной среды VSTO\_EVENTLOGDISABLED значение "1" \(один\).  
+## <a name="disabling-the-event-logger"></a>Отключение журнала событий  
+ По умолчанию журнал событий включен при установке или удалении решений Office. Вы можете отключить журнал событий, установив в переменной среды VSTO_EVENTLOGDISABLED значение "1" (один).  
   
-#### Отключение журнала событий  
+#### <a name="to-disable-the-event-log"></a>Отключение журнала событий  
   
 1.  В панели управления откройте раздел **Система**.  
   
@@ -92,13 +94,13 @@ caps.handback.revision: 32
   
 3.  В области **Системные переменные** щелкните **Создать**.  
   
-4.  В диалоговом окне **создания системной переменной** введите **VSTO\_EVENTLOGDISABLED** в поле **Имя переменной**.  
+4.  В диалоговом окне **создания системной переменной** введите **VSTO_EVENTLOGDISABLED** в поле **Имя переменной** .  
   
 5.  В поле **Значение переменной** введите **1**.  
   
 6.  Нажмите кнопку **ОК**.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
  [Устранение неполадок, связанных с развертыванием решения Office](../vsto/troubleshooting-office-solution-deployment.md)  
   

@@ -1,56 +1,59 @@
 ---
-title: "Практическое руководство: предоставить службы асинхронной Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Как: предоставляет службу асинхронной Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство: предоставить службы асинхронной Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Если вы хотите получить службу без блокирования потока пользовательского интерфейса, необходимо создать асинхронную службу и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>, и добавить службу с помощью специальных асинхронных методов асинхронного пакета  
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Как: предоставляет службу асинхронной Visual Studio
+Если вы хотите получить службу без блокировки потока пользовательского интерфейса, необходимо создать асинхронную службу и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>и добавление службы с асинхронной пакета специальные асинхронных методов  
   
- Сведения о предоставлении синхронной службы Visual Studio в разделе [Практическое руководство: предоставления службы](../extensibility/how-to-provide-a-service.md).  
+ Сведения об обслуживании синхронной Visual Studio см. в разделе [как: обслуживать](../extensibility/how-to-provide-a-service.md).  
   
-## Реализация асинхронной службе  
+## <a name="implementing-an-asynchronous-service"></a>Реализация асинхронной службы  
   
-1.  Создайте проект VSIX \(**файл \/ New \/ Project или Visual C\# и Extensiblity и проект VSIX**\). Назовите проект **TestAsync**.  
+1.  Создайте проект VSIX (**файл / создать / проект / Visual C# / Extensiblity / проект VSIX**). Назовите проект **TestAsync**.  
   
-2.  Добавьте в проект VSPackage. Выберите узел проекта в **обозревателе решений** и нажмите кнопку **Добавить \/ Создание элемента или элементы Visual C\# или расширения или пакета Visual Studio**. Этому файлу имя **TestAsyncPackage.cs**.  
+2.  Добавьте в проект VSPackage. Выберите узел проекта в **обозреватель решений** и нажмите кнопку **добавить / создание элемента или элементы Visual C# / расширяемость / пакет Visual Studio**. Этому файлу имя **TestAsyncPackage.cs**.  
   
-3.  В TestAsyncPackage.cs внести изменения в пакет для наследования от AsyncPackage, а не пакет:  
+3.  В TestAsyncPackage.cs измените пакет для наследования от AsyncPackage, а не в пакет:  
   
-    ```c#  
+    ```csharp  
     public sealed class TestAsyncPackage : AsyncPackage  
     ```  
   
-4.  Для реализации службы, необходимо создать три типа:  
+4.  Чтобы реализовать службу, необходимо создать три типа:  
   
-    -   Интерфейс, который описывает службу. Многие из этих интерфейсов пусты, то есть, они имеют методы не.  
+    -   Интерфейс, который описывает службу. Многие из этих интерфейсов пусты, то есть, они имеют нет методов.  
   
     -   Интерфейс, который описывает интерфейс службы. Этот интерфейс содержит методы, которые должны быть реализованы.  
   
-    -   Класс, реализующий интерфейс службы и службы.  
+    -   Класс, реализующий службу и интерфейс службы.  
   
-5.  Пример очень простой реализации трех типов. Конструктор класса службы необходимо задать поставщика услуг. В этом примере мы просто добавим службы в файл кода пакета.  
+5.  Пример очень простой реализации трех типов. Конструктор для класса службы необходимо установить поставщик услуг. В этом примере просто будет добавлен в пакет файл кода службы.  
   
-6.  Добавьте следующие операторы using в файл пакета:  
+6.  Добавьте следующие инструкции using файл пакета:  
   
-    ```c#  
+    ```csharp  
     using System.Threading;  
     using System.Threading.Tasks;  
     using System.Runtime.CompilerServices;  
     using System.IO;  
     ```  
   
-7.  Вот реализация асинхронной службы. Обратите внимание, что установка асинхронный доступ к службе, а не синхронный доступ к службе в конструкторе:  
+7.  Вот реализация асинхронной службы. Обратите внимание, что необходимо задать в конструкторе асинхронный доступ к службе, а не синхронный доступ к службе.  
   
     ```  
     public class TextWriterService : STextWriterService, ITextWriterService  
@@ -81,16 +84,16 @@ caps.handback.revision: 10
     }  
     ```  
   
-## Регистрация службы  
- Чтобы зарегистрировать службу, добавьте <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> для пакета, который предоставляет службу. Существует два отличия от синхронной службы регистрации.  
+## <a name="registering-a-service"></a>Регистрация службы  
+ Чтобы зарегистрировать службу, добавьте <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> для пакета, предоставляющего службу. Существует два отличия от регистрации синхронной службы:  
   
--   Если вы являетесь Автозагрузка пакета, необходимо добавить <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad значение атрибута. Дополнительные сведения о Автозагрузка VSPackages. в разделе [Загрузка пакетов VSPackages](../extensibility/loading-vspackages.md).  
+-   Если вы являетесь Автозагрузка пакета, необходимо добавить <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad значение для атрибута. Дополнительные сведения о Автозагрузка пакеты VSPackage. в разделе [загрузке пакетов VSPackage](../extensibility/loading-vspackages.md).  
   
--   Необходимо добавить **AllowsBackgroundLoading \= true** на <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Дополнительные сведения о PackageRegistrationAttribute см. в разделе [Регистрация и Отмена регистрации VSPackages.](../extensibility/registering-and-unregistering-vspackages.md).  
+-   Необходимо добавить **AllowsBackgroundLoading = true** на <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Дополнительные сведения о PackageRegistrationAttribute см. в разделе [регистрация и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
- Вот пример AsyncPackage с регистрацией асинхронную службу::  
+ Ниже приведен пример AsyncPackage асинхронную службу регистрации в::  
   
-```c#  
+```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  
 [ProvideAutoLoad(UIContextGuids80.SolutionExists, PackageAutoLoadFlags.BackgroundLoad)]  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]   
@@ -99,9 +102,9 @@ public sealed class TestAsyncPackage : AsyncPackage
 {. . . }  
 ```  
   
-## Добавление службы  
+## <a name="adding-a-service"></a>Добавление службы  
   
-1.  В TestAsyncPackage.cs, удалите `Initialize()` метод и переопределение `InitializeAsync()` метод. Добавьте службу и добавьте метод обратного вызова для создания служб. Ниже приведен пример асинхронной инициализатора Добавление службы:  
+1.  В TestAsyncPackage.cs, удалите `Initialize()` метод и переопределение `InitializeAsync()` метод. Добавьте службу и метод обратного вызова для создания служб. Ниже приведен пример асинхронной инициализатора Добавление службы:  
   
     ```  
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
@@ -115,9 +118,9 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 2.  Добавьте ссылку на Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll.  
   
-3.  Реализуйте метод обратного вызова в виде асинхронного метода, который создает и возвращает службы.  
+3.  Реализуйте метод обратного вызова как асинхронный метод, который создает и возвращает службе.  
   
-    ```c#  
+    ```csharp  
     public async System.Threading.Tasks.Task<object> CreateService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)  
     {  
         STextWriterService service = null;  
@@ -130,12 +133,12 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     ```  
   
-## С помощью службы  
+## <a name="using-a-service"></a>С помощью службы  
  Теперь можно получить службу и использовать его методы.  
   
-1.  Мы покажем это инициализатор, но можно получить службу в любом месте вы хотите использовать службу.  
+1.  Мы покажем это в инициализаторе, однако вы можете получить службу в любом месте необходимо использовать службу.  
   
-    ```c#  
+    ```csharp  
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
         this.AddService(typeof(STextWriterService), CreateService);  
@@ -149,24 +152,24 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     ```  
   
-     Не забудьте изменить *\< userpath \>* имя файла и путь, который имеет смысл на компьютере\!  
+     Не забудьте изменить  *\<userpath >* имя файла и путь, который имеет смысл на компьютере.  
   
-2.  Постройте и запустите его. Когда появится в экспериментальном экземпляре Visual Studio, откройте решение. В результате AsyncPackage для автозагрузки. При выполнения инициализатор, следует найти файл в указанном месте.  
+2.  Постройте и запустите его. Когда Откроется экспериментальный экземпляр Visual Studio, откройте решение. В этом случае AsyncPackage для автозагрузки (AutoLoad). При запуске инициализатора должен находиться файл в указанном месте.  
   
-## Использование асинхронной службе в обработчик команд  
- Ниже приведен пример того, как использовать асинхронную службу в команде меню. Можно использовать для использования службы в других\-асинхронных методов, приведенных здесь.  
+## <a name="using-an-asynchronous-service-in-a-command-handler"></a>С помощью асинхронного службы в обработчике команды  
+ Ниже приведен пример того, как использовать асинхронную службу в команде меню. Можно использовать приведенных здесь использовать службу в других — асинхронных методов.  
   
-1.  Добавление команды меню в проект. \(В **обозревателе решений**, выберите узел проекта правой кнопкой мыши и выберите **Добавить\-новый элемент и расширяемость \/ пользовательских команд**.\) Имя командного файла **TestAsyncCommand.cs.**  
+1.  Добавьте команду меню для проекта. (В **обозревателе решений**, выберите узел проекта, щелкните правой кнопкой мыши и выберите **добавить / новый элемент и расширяемость или в пользовательских командной**.) Имя файла команд **TestAsyncCommand.cs.**  
   
-2.  Шаблон пользовательскую команду повторно добавляет `Initialize()` метод в файл TestAsyncPackage.cs для инициализации команды. В метод Initialize\(\) Скопируйте строку, которая инициализирует команды. Он должен выглядеть следующим образом:  
+2.  Шаблон пользовательской команды повторно добавляет `Initialize()` метод файл TestAsyncPackage.cs для инициализации команды. В метод Initialize() скопируйте строки, которая инициализирует команды. Он должен выглядеть так:  
   
     ```  
     TestAsyncCommand.Initialize(this);  
     ```  
   
-     Переместите эту строку, чтобы `InitializeAsync()` метод в файле AsyncPackageForService.cs. Так как это асинхронная инициализация, необходимо переключиться в основной поток без инициализации команды с помощью <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>. Теперь он должен выглядеть следующим образом:  
+     Переместить эту строку, чтобы `InitializeAsync()` метод в файле AsyncPackageForService.cs. Так как это асинхронную инициализацию, необходимо перейти в основной поток до инициализации команды с помощью <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>. Он должен выглядеть следующим образом:  
   
-    ```c#  
+    ```csharp  
   
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
@@ -195,15 +198,15 @@ public sealed class TestAsyncPackage : AsyncPackage
     using System.IO;  
     ```  
   
-6.  Добавить асинхронный метод с именем `GetAsyncService()`, который возвращает службы и использует его методы:  
+6.  Добавить асинхронный метод с именем `GetAsyncService()`, который получает службы и использует его методы:  
   
-    ```c#  
+    ```csharp  
     private async System.Threading.Tasks.Task GetAsyncService()  
     {  
         ITextWriterService textService =   
            this.ServiceProvider.GetService(typeof(STextWriterService))  
               as ITextWriterService;  
-        // don’t forget to change <userpath> to a local path  
+        // don't forget to change <userpath> to a local path  
         await writer.WriteLineAsync((<userpath>),"this is a test");  
        }  
   
@@ -219,7 +222,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     ```  
   
-8.  Постройте решение и запустить отладку. Когда появится в экспериментальном экземпляре Visual Studio, перейдите к **средства** меню и найти **вызова TestAsyncCommand** элемент меню. Если щелкнуть его, TextWriterService записывает в указанный файл. \(Не требуется для открытия решения, так как команда также в результате вызова пакета для загрузки.\)  
+8.  Постройте решение и запустите отладку. Когда Откроется экспериментальный экземпляр Visual Studio, перейдите к **средства** меню и выполните поиск **TestAsyncCommand вызова** элемента меню. Если щелкнуть его, TextWriterService записывает в указанный файл. (Не требуется для открытия решения, так как команда также в результате вызова пакет для загрузки.)  
   
-## См. также  
- [Использование и предоставления услуг](../extensibility/using-and-providing-services.md)
+## <a name="see-also"></a>См. также  
+ [Использование и предоставление служб](../extensibility/using-and-providing-services.md)

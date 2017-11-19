@@ -1,58 +1,63 @@
 ---
-title: "MaxFrameworkVersion - элемент (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "<MaxFrameworkVersion> - элемент (шаблоны Visual Studio)"
-  - "MaxFrameworkVersion - элемент (шаблоны Visual Studio)"
+title: "MaxFrameworkVersion-элемент (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- <MaxFrameworkVersion> Element (Visual Studio Templates)
+- MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: da1b30274254c5c1dd81ad20dd64e8749672f96e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# MaxFrameworkVersion - элемент (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Задает максимальную версию платформы .NET Framework, которая требуется для этого шаблона.  Это определяет, отображается ли шаблон в разделе **Шаблоны** диалогового окна **Добавить новый проект** в зависимости от значения, выбранного в поле **Целевая версия Framework** диалогового окна **Добавить новый проект**.  
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion - элемент (шаблоны Visual Studio)
+Задает максимальную версию платформы .NET Framework, которые требуются для шаблона. Определяет, отображается ли в шаблоне **шаблоны** раздел **Добавление нового проекта** диалоговом на основе значения, выбранного в **версию целевой платформы** поле **Добавление нового проекта** диалоговое окно.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<MaxFrameworkVersion >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <MaxFrameworkVersion> ... </MaxFrameworkVersion>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон к какой\-либо категории и определяет, как он отображается в диалоговом окне **Создать проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет способ отображения либо **новый проект** или **Добавление нового элемента** диалоговое окно.|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- В тексте необходимо указать самую высокую из возможных в данном шаблоне версию платформы .NET Framework.  
+ Этот текст должен быть наибольший номер версии платформы .NET Framework, может быть шаблоном.  
   
-## Заметки  
- Элемент `MaxFrameworkVersion` является необязательным.  Элемент в части `TemplateData` VSTEMPLATE\-файла действует как фильтр для раздела **Шаблоны** диалогового окна **Добавить новый проект**.  Будут отображаться только шаблоны с требованиями .NET Framework меньше, чем значения элемента `MaxFrameworkVersion`, в зависимости от значения, выбранного в поле **Целевая версия Framework** диалогового окна **Добавить новый проект**.  Элемент `MaxFrameworkVersion` должен быть опущен, если он не требуется, чтобы не вызвать случайно, что шаблоны отображаются при их использовании с более новыми версиями .NET Framework.  
+## <a name="remarks"></a>Примечания  
+ `MaxFrameworkVersion` — это необязательный элемент. Элемент в `TemplateData` раздел VSTEMPLATE-файл выступает в качестве фильтра для **шаблоны** раздел **Добавление нового проекта** диалоговое окно. Только шаблоны, чьи требования .NET Framework меньше, чем `MaxFrameworkVersion` значения элементов отображается, в зависимости от значения, выбранного в **версию целевой платформы** поле **Добавление нового проекта**диалоговое окно. `MaxFrameworkVersion` Элемент должен быть опущен, если он не является обязательным, так как не заставить случайно шаблоны отображения при их использовании в новых версиях платформы .NET Framework.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для стандартного шаблона элемента класса [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере демонстрируется метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона класса.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -71,8 +76,8 @@ caps.handback.revision: 9
 </VSTemplate>  
 ```  
   
- В этом примере максимальная требуемая для шаблона версия .NET Framework, представленная `MaxFrameworkVersion`, — 3.5.  Шаблон выше будет отображаться только при выборе 3.0 или 3.5 в поле **Целевая версия Framework** диалогового окна **Добавить новый проект**.  
+ В этом примере Максимальная версия платформы .NET Framework, которые требуются для шаблона в виде `MaxFrameworkVersion`, — 3.5. Шаблон будет отображаться только при выборе 3.0 или 3.5 в **версию целевой платформы** поле **Добавление нового проекта** диалоговое окно.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -1,83 +1,85 @@
 ---
-title: "Практическое руководство. Заполнение листов данными из базы данных"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "данные [разработка решений Office в Visual Studio], добавление к листам"
-  - "базы данных [разработка решений Office в Visual Studio], заполнение листов"
-  - "листы [разработка решений Office в Visual Studio], заполнение"
+title: "Как: заполнение листов данными из базы данных | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- worksheets [Office development in Visual Studio], populating
+- databases [Office development in Visual Studio], populating worksheets
+- data [Office development in Visual Studio], adding to worksheets
 ms.assetid: e9e37cf1-53ca-45d0-8409-5428be7f96c5
-caps.latest.revision: 39
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 38
+caps.latest.revision: "39"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3b7cfb842a0372d4410a0794ff8ade901af713b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Заполнение листов данными из базы данных
-  Доступ к данным в проектах office уровня документа так же, как и в проектах Windows Forms.  Для переноса данных в решение могут использоваться те же средства и компоненты кода. Кроме того, можно использовать элементы управления Windows Forms для отображения данных.  Также поддерживается использование элементов управления ведущего приложения, которые представляют собой собственные объекты приложения Microsoft Office Excel, улучшенные функциональными возможностями привязки данных и событий.  Дополнительные сведения см. в разделе [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md).  
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Практическое руководство. Заполнение листов данными из базы данных
+  Доступ к данным в проектах Office уровня документа можно таким же образом, как получить доступ к данным в проектах Windows Forms. Вы используете те же средства и код для получения данных в ваше решение и даже можете отображать данные с помощью элементов управления Windows Forms. Кроме того можно воспользоваться преимуществами элементов управления ведущего приложения, которые являются собственными объектами в Microsoft Office Excel, дополненные событиями и функциями привязки данных. Для получения дополнительной информации см. [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В приведенном ниже примере кода показано добавление элементов управления с привязкой к данным в проекты уровня документа с помощью конструктора.  Пример добавления элементов управления с привязкой к данным в проекты уровня приложения во время выполнения см. в разделе [Пошаговое руководство. Сложная привязка данных в проекте надстройки VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
+ В следующем примере показано, как добавить элементы управления с привязкой к данным в проекты на уровне документа с помощью конструктора. Пример добавления элементов управления с привязкой к данным в проектах уровня приложения во время выполнения см. в разделе [Пошаговое руководство: сложная привязка данных в VSTO надстройки проекта](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылкам [How Do I: Transfer Data Into an Excel Worksheet?](http://go.microsoft.com/fwlink/?LinkID=130277) и [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [как сделать I: передачи данных в лист Excel?](http://go.microsoft.com/fwlink/?LinkID=130277), и [практические советы использовать базы данных данные в Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
-## Добавление элемента управления с привязкой к данным на лист во время разработки  
+## <a name="adding-a-data-bound-control-to-a-worksheet-at-design-time"></a>Добавление элемента управления с привязкой к данным на лист во время разработки  
   
-#### Заполнение листов данными из базы данных  
+#### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Заполнение листов данными из базы данных  
   
-1.  В конструкторе Visual Studio откройте лист проекта уровня документа для Excel.  
+1.  Откройте проект уровня документа Excel в Visual Studio откройте лист в конструкторе.  
   
-2.  Откройте окно **Источники данных** и создайте источник данных для проекта.  Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](~/data-tools/how-to-connect-to-data-in-a-database.md).  
+2.  Откройте окно **Источники данных** и создайте источник данных для проекта. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).  
   
-3.  Перетащите на лист необходимое поле или таблицу из окна **Источники данных**.  
+3.  Перетащите поле или таблицу из **источники данных** на лист.  
   
- один из следующих элементов управления:  
+ Одно из следующих элементов управления создается на листе:  
   
--   При перетаскивании поля на листе создается элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>.  Дополнительные сведения см. в разделе [Элемент управления NamedRange](../vsto/namedrange-control.md).  
+-   При перетаскивании поля, <xref:Microsoft.Office.Tools.Excel.NamedRange> на листе создается элемент управления. Дополнительные сведения см. в разделе [управления NamedRange](../vsto/namedrange-control.md).  
   
--   При перетаскивании таблицы на листе создается элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject>.  Дополнительные сведения см. в разделе [Элемент управления ListObject](../vsto/listobject-control.md).  
+-   При перетаскивании таблицы, <xref:Microsoft.Office.Tools.Excel.ListObject> на листе создается элемент управления. Для получения дополнительной информации см. [ListObject Control](../vsto/listobject-control.md).  
   
- Чтобы добавить другой элемент управления, выберите таблицу или поле в окне **Источники данных**, затем в раскрывающемся списке выберите другой элемент управления .  
+ Вы можете добавить другой элемент управления, выбрав таблицу или поле в **источники данных** и выбрав другой элемент управления из раскрывающегося списка.  
   
-## Объекты проекта.  
- Кроме элемента управления, в проект автоматически добавляются следующие объекты, связанные с данными:  
+## <a name="objects-in-the-project"></a>Объекты в проекте  
+ Кроме элемента управления, в проект автоматически добавляются следующие объекты, связанные с данными.  
   
--   Типизированный набор данных, который инкапсулирует таблицы данных из базы данных, к которым было осуществлено подключение.  Дополнительные сведения см. в разделе [Работа с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
+-   Типизированный набор данных, который инкапсулирует таблицы данных, подключенные к базе данных. Дополнительные сведения см. в разделе [средства набора данных в Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
--   Класс <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных.  Дополнительные сведения см. в разделе [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
+-   Объект <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных. Для получения дополнительной информации см. [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview).  
   
--   Класс TableAdapter, который подключает типизированный набор данных к базе данных.  Дополнительные сведения см. в разделе [Общие сведения об адаптере таблиц](/visual-studio/data-tools/tableadapter-overview).  
+-   Адаптер таблицы, который подключает типизированный набор данных к базе данных. Для получения дополнительной информации см. [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
--   TableAdapterManager, который используется для координации адаптеров таблицы в наборе данных, чтобы включить иерархические обновления.  Дополнительные сведения см. в разделах [Иерархическое обновление](../data-tools/hierarchical-update.md) и [Общие сведения о компоненте TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+-   TableAdapterManager, который используется для координации адаптеров таблицы в наборе данных для реализации иерархических обновлений. Дополнительные сведения см. в разделе [иерархическое обновление](../data-tools/hierarchical-update.md) и [TableAdapterManager ссылка](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).  
   
- При выполнении проекта, элемент управления отображает первую запись в источнике данных.   Можно использовать <xref:System.Windows.Forms.BindingSource>, чтобы дать пользователям возможность прокрутки записей.  
+ При выполнении проекта элемент управления отображает первую запись в источнике данных. Вы можете использовать <xref:System.Windows.Forms.BindingSource>, чтобы позволить пользователям прокручивать записи.  
   
-#### Прокрутка записей  
+#### <a name="to-scroll-through-the-records"></a>Прокрутка записей  
   
--   Используйте методы класса <xref:System.Windows.Forms.BindingSource>, такие как <xref:System.Windows.Forms.BindingSource.MoveNext%2A> и <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.  
+-   Используйте методы <xref:System.Windows.Forms.BindingSource>, такие как <xref:System.Windows.Forms.BindingSource.MoveNext%2A> и <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.  
   
- Дополнительные сведения о том, как отправлять обновления типизированному набору данных и базе данных см. в разделе [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Сведения о том, как отправлять обновления типизированному набору данных и базы данных см. в разделе [как: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
- [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Практическое руководство. Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)   
- [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Инструкции: Передайте данные в листе Excel](http://go.microsoft.com/fwlink/?LinkID=130277)   
- [Инструкции: Данные базы данных потребления в Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)  
+ [Добавление новых источников данных](/visualstudio/data-tools/add-new-data-sources)   
+ [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Как: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Как: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Как: Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)   
+ [Как: обновления источника данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [Как I: передачи данных на лист Excel](http://go.microsoft.com/fwlink/?LinkID=130277)   
+ [Инструкции. Использование базы данных в Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)  
   
   

@@ -1,60 +1,62 @@
 ---
-title: "Практическое руководство. Добавление файла ресурсов"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "файлы ресурсов [разработка приложений SharePoint в Visual Studio]"
-  - "разработка приложений SharePoint в Visual Studio, файлы ресурсов"
+title: "Способ: добавьте файл ресурсов | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- resource files [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, resource files
 ms.assetid: 2b4ac232-992e-4070-8e98-6f11eb88e1a8
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7233bc1a739bd3bf6544aad879f898bf3848ee7b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление файла ресурсов
-  Команды для добавления файлов ресурсов можно найти в контекстном меню узла решения и узлов компонентов в обозревателе решений.  Для получения дополнительной информации см. [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
+# <a name="how-to-add-a-resource-file"></a>Практическое руководство. Добавление файла ресурсов
+  Команды для добавления файлов ресурсов — в контекстном меню узла решения и узлов компонентов в обозревателе решений. Дополнительные сведения см. в разделе [локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
   
-### Добавление глобального файла ресурсов в решение SharePoint  
+### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Чтобы добавить глобальный файл ресурсов в решение SharePoint  
   
-1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] откройте решение SharePoint.  
+1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], откройте решение SharePoint.  
   
-2.  В области **Обозреватель решений** выберите узел проекта SharePoint, затем в меню **Проект** выберите **Добавить новый элемент**.  
+2.  В **обозревателе решений**, выберите узел проекта SharePoint и затем в строке меню выберите **проекта**, **Добавление нового элемента**.  
   
-3.  В диалоговом окне **Добавление нового элемента** выберите шаблон **Глобальный файл ресурсов** и нажмите кнопку **Добавить**.  
+3.  В **Добавление нового элемента** диалогового окна выберите **глобальный файл ресурсов** шаблона и выберите **добавить** кнопки.  
   
     > [!NOTE]  
-    >  Шаблон элемента проекта "Глобальный файл ресурсов" появляется только при выборе элемента проекта SharePoint.  
+    >  Шаблон элемента проекта глобальный файл ресурсов отображается только в том случае, если выбрана элемента проекта SharePoint.  
   
-4.  В диалоговом окне **Добавление ресурса** выберите язык файла ресурсов, например "Английский \(США\)".  
+4.  В **добавить ресурс** диалогового окна выберите культуру файла ресурсов, таких как английский (США).  
   
-     Это действие добавит в решение глобальный файл ресурсов с именем вида Resource*x***.***culture***.**resx, например: Resource1.en\-US.resx.  
+     Этот шаг добавляет глобальный файл ресурсов в формате ресурса решение*x***.** *языка и региональных параметров***.** RESX, например Resource1.en US.resx.  
   
-5.  Когда **Редактор ресурсов** будет открыт в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавьте ресурсы в файл ресурсов.  
+5.  Когда **редактор ресурсов** открывается в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], добавьте ресурсы в файл ресурсов.  
   
-### Добавление файла ресурсов компонента SharePoint  
+### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Чтобы добавить файл ресурсов компонента в компонент SharePoint  
   
-1.  Если решение SharePoint еще не открыто в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], откройте решение.  
+1.  Если решение SharePoint еще не открыт в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], откройте решение.  
   
-2.  В **обозревателе решений** откройте контекстное меню имени компонента в узле **Компоненты** и выберите пункт **Добавить ресурс компонента**.  
+2.  В **обозревателе решений**, откройте контекстное меню для имени функции в **функции** узел и выберите **добавить ресурс компонента**.  
   
-     Это действие добавит файл ресурсов в компонент в формате *ResourceFileName***.***culture***.**resx, например, Feature1.en\-US.resx.  
+     Этот шаг добавляет файл ресурсов в формате, компонент *Имя_файла_ресурсов***.** *языка и региональных параметров***.** RESX, например Feature1.en US.resx.  
   
-3.  Когда **Редактор ресурсов** будет открыт в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавьте ресурсы в файл ресурсов.  
+3.  Когда **редактор ресурсов** открывается в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], добавьте ресурсы в файл ресурсов.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

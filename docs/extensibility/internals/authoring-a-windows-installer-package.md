@@ -1,54 +1,56 @@
 ---
-title: "Создание пакета установщика Windows | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSI-файлы, пакеты VSPackage"
-  - "MSI-файлы, пакеты VSPackage"
+title: "Создание пакета установщика Windows | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- .msi files, VSPackages
+- msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5f646e2234adf0eb0117f154838b15d7b3aa200e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Создание пакета установщика Windows
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Установщик Windows модели дисков с данными. Вместо написания процедурный сценарий для копирования файлов и записи реестра, например, можно создать строки и столбцы в таблицах базы данных, содержащих данные файлов и реестра.  
+# <a name="authoring-a-windows-installer-package"></a>Создание пакета установщика Windows
+Установщик Windows модели дисках с данными. Вместо того чтобы писать процедурных скрипта для копирования файлов и запись реестра, например, можно создавать строки и столбцы в таблицах базы данных, которые содержат данные файлов и реестра.  
   
-## Записи базы данных  
- Чтобы установить VSPackage, пакет установщика Windows должен содержать записи базы данных для выполнения следующих задач:  
+## <a name="database-entries"></a>Записи базы данных  
+ Чтобы установить пакет VSPackage, пакет установщика Windows должен содержать записи базы данных для выполнения следующих задач:  
   
--   Поиск систему, чтобы найти версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage поддерживает \(с помощью таблицы установщика Windows, включая AppSearch, CompLocator, RegLocator, DrLocator и подпись\).  
+-   Найти систему, чтобы найти версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage поддерживает (с помощью таблицы установщика Windows, включая AppSearch, CompLocator, RegLocator, DrLocator и подпись).  
   
--   Отменить установку, если ни одна из поддерживаемых версий [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] установлен или если не выполняется еще одна отличительная VSPackage системы \(с использованием таблицы LaunchCondition\).  
+-   Отменить установку, если ни одна из поддерживаемых версий [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] установлен или если другой системе, предъявляемым VSPackage не выполняется (с использованием таблицы LaunchCondition).  
   
--   Установите VSPackage и зависимые файлы \(с помощью каталога, компонентов и таблицы файлов\).  
+-   Установите пакет VSPackage и зависимые файлы (с помощью каталога, компонент и таблицы файлов).  
   
--   Добавьте соответствующую информацию для VSPackage реестра \(с помощью таблиц реестра\).  
+-   Добавьте соответствующую информацию для VSPackage в реестр (с помощью таблицы реестра).  
   
--   Интегрировать пакет VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] путем вызова **devenv.exe \/setup** \(с помощью таблицы CustomAction\).  
+-   Интеграции VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] путем вызова **/Setup devenv.exe** (с помощью таблицы настраиваемое действие).  
   
  Дополнительные сведения см. в разделе [установщика Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
-## Средства установки и настройки  
- Различные средства установки стороннего предоставляют среду разработки для пакетов установщика Windows. Два бесплатных средств таковы:  
+## <a name="setup-tools"></a>Средства установки и настройки  
+ Различные установки стороннего средства предоставляют среду разработки для пакетов установщика Windows. Ниже перечислены два бесплатных средств.  
   
 -   InstallShield Limited Edition  
   
-     Ограниченная версия InstallShield можно получить с помощью Visual Studio **Новый проект** диалогового окна. Разверните **другие типы проектов** а затем выберите **установки и развертывания**. Выберите шаблон InstallShield.  
+     Является ограниченной версией InstallShield можно получить с помощью Visual Studio **новый проект** диалогового окна. Разверните **другие типы проектов** , а затем выберите **Установка и развертывание**. Выберите шаблон InstallShield.  
   
 -   Набор инструментов XML установщика Windows  
   
-     Набор инструментов построения пакетов установщика Windows из исходных файлов XML. Набор инструментов — это Microsoft открытый проект. Можно загрузить исходный код и исполняемые файлы в [http:\/\/sourceforge.net\/projects\/wix](http://sourceforge.net/projects/wix).  
+     Набор средств построения пакетов установщика Windows из исходного XML-файлов. Набор инструментов является открытым исходным кодом Microsoft project. Можно загрузить исходный код и исполняемых файлов на основе [http://sourceforge.net/projects/wix](http://sourceforge.net/projects/wix).  
   
- Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], в разделе [http:\/\/visualstudiogallery.com](http://visualstudiogallery.com/).  
+ Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], в разделе [http://visualstudiogallery.com](http://visualstudiogallery.com/).  
   
-## См. также  
- [Установка пакетов VSPackages с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>См. также  
+ [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -1,30 +1,34 @@
 ---
-title: "Элемент WizardData (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#WizardData"
-helpviewer_keywords: 
-  - "<WizardData> - элемент [шаблоны Visual Studio]"
-  - "WizardData - элемент [шаблоны Visual Studio]"
+title: "Элемент WizardData (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
+helpviewer_keywords:
+- WizardData element [Visual Studio Templates]
+- <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 44d74aff60e4b53c223795e6cadc32a30270c8c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент WizardData (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="wizarddata-element-visual-studio-templates"></a>Элемент WizardData (шаблоны Visual Studio)
 Задает пользовательский XML.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<WizardData >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <WizardData>  
@@ -33,33 +37,33 @@ caps.handback.revision: 9
 </WizardData>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
+|-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является необязательным.  
   
- Этот текст указывает пользовательский XML, передаваемый пользовательскому расширению мастера, заданному элементом [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md).  
+ Этот текст указывает пользовательский XML для передачи пользовательского мастера расширения, указанного в [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) элемента.  
   
-## Заметки  
- В этом элементе может быть указан любой XML.  XML передается в качестве параметра пользовательскому расширению мастера, позволяя расширению использовать содержимое этого элемента.  Проверка этих данных не выполняется.  
+## <a name="remarks"></a>Примечания  
+ В этом элементе можно указать любой XML-код. XML будет передан как параметр пользовательскому расширению мастера, позволяя расширению использовать содержимое этого элемента. Проверка не выполнена на основе этих данных.  
   
- Содержимое элемента `WizardData` передается неизменным как параметр внутри словаря строк параметра метода `IWizard.RunStarted`.  Этот параметр называется $WizardData$.  
+ Содержимое `WizardData` элемент передаются без изменений, как параметр в словарь строк параметров в `IWizard.RunStarted` метод. Этот параметр называется $WizardData$.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для стандартного шаблона проекта Windows\-приложения [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере демонстрируется метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -92,8 +96,8 @@ caps.handback.revision: 9
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Элемент WizardExtension \(шаблоны Visual Studio\)](../extensibility/wizardextension-element-visual-studio-templates.md)   
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
+ [Элемент WizardExtension (шаблоны Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)   
  [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)

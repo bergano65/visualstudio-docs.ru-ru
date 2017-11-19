@@ -1,45 +1,47 @@
 ---
-title: "Манифесты развертывания для решений Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "приложения Office [разработка решений Office в Visual Studio], манифесты развертывания"
-  - "манифесты развертывания [разработка решений Office в Visual Studio]"
-  - "манифесты [разработка решений Office в Visual Studio], развертывание"
-  - "разработка решений Office в Visual Studio, манифесты развертывания"
+title: "Манифесты развертывания для решений Office | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], deployment manifests
+- deployment manifests [Office development in Visual Studio]
+- manifests [Office development in Visual Studio], deployment
+- Office development in Visual Studio, deployment manifests
 ms.assetid: 3fb29743-fb96-4d61-a99a-9b1bbafeee13
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f6569c8c4a2420949862b8d09532c217606073d8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Манифесты развертывания для решений Office
-  Манифест развертывания представляет собой XML\-файл, который описывает параметры развертывания решения Office и определяет текущую версию приложения.  
+# <a name="deployment-manifests-for-office-solutions"></a>Манифесты развертывания для решений Office
+  Манифест развертывания представляет XML-файл, который описывает параметры развертывания решения Office и определяет текущую версию приложения.  
   
- Средства разработки для Office в Visual Studio используют схему манифестов приложений [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], определенную в справочнике [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md).  
+ Разработка решений Office в Visual Studio использует [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схемы манифеста развертывания, определенные в [манифест развертывания ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) ссылки.  
   
-## Заметки  
- Файл манифеста развертывания для решений Office определяет текущую версию и другие параметры развертывания.  Этот файл ссылается на манифест приложения, описывающий текущую версию решения и все файлы, которые входят в состав решения.  
+## <a name="remarks"></a>Примечания  
+ Файл манифеста развертывания для решений Office определяет текущую версию и другие настройки развертывания. Он ссылается на манифест приложения, описывающий текущую версию решения и все файлы, содержащиеся в решении.  
   
-## Синтаксис имени файла  
- Имя файла манифеста развертывания должно заканчиваться расширением .vsto.  Хотя это стандартный манифест развертывания [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , расширения отличается для разрешения среды выполнения Visual Studio tools for office для обработки файл.  
+## <a name="file-name-syntax"></a>Синтаксис имени файла  
+ Имя файла манифеста развертывания должно заканчиваться расширением VSTO. Несмотря на то, что это стандартный [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] манифест развертывания, расширение, которое позволяет средства Visual Studio для Office runtime для обработки файла.  
   
-## Пример  
- В следующем примере кода показан манифест развертывания для средств Visual Studio для решения office.  
+## <a name="example"></a>Пример  
+ В следующем примере кода показан манифест развертывания для Visual Studio Tools для решения Office.  
   
 ```  
-  
+<?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly   
   xsi:schemaLocation=  
     "urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
@@ -185,7 +187,7 @@ caps.handback.revision: 21
 </asmv1:assembly>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)  
   
   

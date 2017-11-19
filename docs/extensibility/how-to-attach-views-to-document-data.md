@@ -1,48 +1,49 @@
 ---
-title: "Практическое руководство: присоединение представления документа данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] пользовательские - присоединение представления данных документа"
+title: "Как: присоединение представления для документирования данных | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], custom - attach views to document data
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 146303eebbd824342b000fb14b8dbf953c3f0523
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство: присоединение представления документа данных
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Если имеется новое представление документа, можно присоединить его к существующему объекту данных документа.  
+# <a name="how-to-attach-views-to-document-data"></a>Как: присоединение представления для документирования данных
+Если у вас есть новое представление документа, можно присоединить ее к существующему объекту данных документа.  
   
-### Чтобы определить, если представление можно присоединить к существующему объекту данных документа  
+### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Чтобы определить, если представление можно прикрепить к существующему объекту данных документа  
   
 1.  Реализуйте расширение <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.  
   
-2.  В своей реализации `IVsEditorFactory::CreateEditorInstance`, вызовите `QueryInterface` на существующий объект данных документ при вызове IDE вашей `CreateEditorInstance` реализации.  
+2.  В реализации `IVsEditorFactory::CreateEditorInstance`, вызовите `QueryInterface` на существующий объект данных документа при вызове интегрированной среды разработки вашей `CreateEditorInstance` реализации.  
   
-     Вызов `QueryInterface` можно просматривать существующего объекта данных документа, которая указана в `punkDocDataExisting` параметр.  
+     Вызов `QueryInterface` можно просматривать существующие объект данных документа, который указывается в `punkDocDataExisting` параметра.  
   
-     Точное интерфейсы, которые необходимо запросить, однако зависит от редактора, который открывает документ, как описано в шаге 4.  
+     Точное интерфейсы, которые необходимо запросить, тем не менее, зависит от редактора, который открывает документ, как описано в шаге 4.  
   
-3.  Если не удается найти соответствующие интерфейсы в объекте данных существующего документа, возвращается код ошибки для редактора, означающее, что объект данных документа несовместимы с помощью редактора.  
+3.  Если не удается найти соответствующие интерфейсы на существующий объект данных документа, возвращается код ошибки для редактора, указывающее, что объект данных документа несовместим с редактором.  
   
-     В Интегрированной среде разработки реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, сообщение уведомляет, что документ открыт в другом редакторе и спросит, следует закрыть его.  
+     В реализации IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, выводится сообщение уведомляет, что документ открыт в другом редакторе, а спросит, следует закрыть его.  
   
-4.  Если закрыть этот документ, Visual Studio вызывает редактор фабрики второй раз. На этот вызов `DocDataExisting` параметр равен NULL. Затем реализации фабрики редактора можно открыть объект данных документа в собственный редактор.  
+4.  Если закрыть этот документ, Visual Studio вызывает редактор фабрики второй раз. При вызове `DocDataExisting` параметр равен NULL. Затем реализации фабрики редактор можно открыть объект данных документа в собственный редактор.  
   
     > [!NOTE]
-    >  Чтобы определить, можно ли работать с существующего объекта данных документа, можно использовать закрытый знаний реализацию интерфейса путем приведения указателя к фактическому [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)] закрытая реализация класса. Например, все стандартные редакторы реализовать `IVsPersistFileFormat`, который наследует от <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Таким образом, можно вызвать `QueryInterface` для <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, и если идентификатор класса в объекте данных существующего документа соответствует вашей реализации Идентификатором класса, а затем можно работать с объектом данных документа.  
+    >  Чтобы определить, можно ли работать с существующий объект данных документа, можно использовать закрытый сведения о реализации интерфейса путем приведения указателя для фактического [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] закрытая реализация класса. Например, все стандартные редакторы реализовать `IVsPersistFileFormat`, который наследует от <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Таким образом, можно вызвать `QueryInterface` для <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, код класса и совпадения пользовательская реализация идентификатор класса на существующий объект данных документа, а затем можно работать с объектом данных документа.  
   
-## Отказоустойчивость  
- Когда Visual Studio вызывает реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метода, он передает обратно указатель на объект данных существующего документа в `punkDocDataExisting` параметра, если он существует. Проверить документ объект данных, возвращаемых в `punkDocDataExisting` для определения, подходит ли объект данных документа для редактора, как описано в разделе «Примечание» в шаге 4 процедуры в этом разделе. Если это уместно, то редактор фабрики должен предоставить во втором представлении данных, как описано в [Поддерживает несколько представлений документов](../extensibility/supporting-multiple-document-views.md). В противном случае оно должно отображать соответствующее сообщение об ошибке.  
+## <a name="robust-programming"></a>Отказоустойчивость  
+ Если Visual Studio вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод, он передает обратно указатель на существующий объект данных документа в `punkDocDataExisting` параметра, если он существует. Проверьте объект данных документа, возвращаемый в `punkDocDataExisting` для определения того, подходит ли объект данных документа для редактора, как описано в в примечании к шагу 4 процедуры в этом разделе. Если это подходит, то редактор фабрики должен предоставить во втором представлении данных, как описано в [поддержки нескольких представлений документа](../extensibility/supporting-multiple-document-views.md). В противном случае он должен отображать соответствующее сообщение об ошибке.  
   
-## См. также  
- [Поддерживает несколько представлений документов](../extensibility/supporting-multiple-document-views.md)   
- [Данные документа и представления документа в редакторах](../extensibility/document-data-and-document-view-in-custom-editors.md)
+## <a name="see-also"></a>См. также  
+ [Поддержка нескольких представлений документов](../extensibility/supporting-multiple-document-views.md)   
+ [Данные документа и представление документа в специализированных редакторах](../extensibility/document-data-and-document-view-in-custom-editors.md)

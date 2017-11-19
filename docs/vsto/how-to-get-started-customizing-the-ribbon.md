@@ -1,81 +1,83 @@
 ---
-title: "Практическое руководство. Работа с настройкой ленты"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "настраиваемая лента, добавление ленты в проект"
-  - "настройка ленты, добавление ленты в проект"
-  - "лента [разработка решений Office в Visual Studio], добавление"
-  - "лента [разработка решений Office в Visual Studio], настройка"
+title: "Как: работа с настройкой ленты | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, adding Ribbon to project
+- Ribbon [Office development in Visual Studio], adding
+- Ribbon [Office development in Visual Studio], customizing
+- customizing the Ribbon, adding Ribbon to project
 ms.assetid: 9eb6b8b3-1842-4cb3-8229-273ce35c64fb
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: eb47be36cbda86c8383760ced20b65691fd16842
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Работа с настройкой ленты
-  Чтобы настроить ленту приложения Microsoft Office, добавьте функцию **Лента \(визуальный конструктор\)** или элемент **Лента \(XML\)** в проект Office.  
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Практическое руководство. Работа с настройкой ленты
+  Чтобы настроить ленту приложения Microsoft Office, добавьте **Лента (визуальный конструктор)** или **Лента (XML)** элемента в проект Office.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### Для того чтобы добавить ленту в проект, выполните следующее.  
+### <a name="to-add-a-ribbon-to-a-project"></a>Добавление ленты в проект  
   
-1.  В меню **Проект** выберите команду **Добавить новый элемент**.  
+1.  На **проекта** меню, нажмите кнопку **Добавление нового элемента**.  
   
-2.  В диалоговом окне **Добавить новый элемент** выберите функцию **Лента \(визуальный конструктор\)** или **Лента \(XML\)**.  Дополнительные сведения об этих шаблонах см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
+2.  В **Добавление нового элемента** выберите **Лента (визуальный конструктор)** или **Лента (XML)**. Дополнительные сведения об этих шаблонах см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
   
-3.  В окне **Имя** введите имя элемента ленты.  
+3.  В **имя** введите имя элемента ленты.  
   
-     Имена не должны содержать следующие символы:  
+     Имена не могут содержать следующие символы:  
   
-    -   Решетка \(\#\)  
+    -   Решетки (#)  
   
-    -   Процент \(%\)  
+    -   Знак процента (%)  
   
-    -   Амперсанд \(&\)  
+    -   Амперсанд (&)  
   
-    -   Звездочка \(\*\)  
+    -   Звездочка (*)  
   
-    -   Вертикальная черта \(|\)  
+    -   Вертикальная черта (|)  
   
-    -   обратная косая черта \(\\\).  
+    -   Обратная косая черта (\\)  
   
-    -   Двоеточие \(:\)  
+    -   Двоеточие (:)  
   
-    -   Двойные кавычки \("\)  
+    -   Двойные кавычки (")  
   
-    -   Знак уменьшения \(\<\)  
+    -   Меньше (\<)  
   
-    -   Знак увеличения \(\>\)  
+    -   Больше (>)  
   
-    -   Вопросительный знак \(?\)  
+    -   Вопросительный знак (?)  
   
-    -   Косая черта \(\/\)  
+    -   Косая черта (/)  
   
-    -   Пробелы в конце и в начале текстовой строки \(' '\)  
+    -   Начальные и конечные пробелы ("")  
   
-    -   Зарезервированные слова Windows и DOS, такие как "nul", "aux", "con", "com1", "lpt1" и другие.  
+    -   Имена, зарезервированные для Windows или DOS, например («nul», «aux», «con», «com1», «lpt1» и т. д)  
   
 4.  Нажмите кнопку **ОК**.  
   
- Элемент ленты отобразится в разделе **Обозреватель решений**.  Дополнительные сведения о следующих этапах см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
+ Элемент ленты отобразится в **обозревателе решений**. Сведения о дальнейших действиях см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
   
-## См. также  
- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
+## <a name="see-also"></a>См. также  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [XML-ленты](../vsto/ribbon-xml.md)   
- [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

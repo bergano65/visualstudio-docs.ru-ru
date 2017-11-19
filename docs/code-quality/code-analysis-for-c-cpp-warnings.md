@@ -1,37 +1,37 @@
 ---
-title: "Анализ кода для предупреждений C/C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "C, предупреждения при анализе кода"
-  - "C/C++, предупреждения при анализе кода"
-  - "C++, предупреждения при анализе кода"
-  - "анализ кода, предупреждения для кода C/C++"
-  - "анализ кода, предупреждения машинного кода"
-  - "код, предупреждения C/C++"
-  - "анализ машинного кода"
-  - "предупреждения, C/C++ анализ"
-  - "предупреждения, анализ кода"
+title: "Анализ кода для предупреждений C/C++ | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code analysis, warnings for C/C++ code
+- warnings, code analysis
+- C++, code analysis warnings
+- code, C/C++ warnings
+- C, code analysis warnings
+- C/C++, code analysis warnings
+- code analysis,native code warnings
+- native code analysis
+- warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
-caps.latest.revision: 41
-caps.handback.revision: 41
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "41"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 77a2594f69fa9d6aae3742dda522b18cd50ed24b
+ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/17/2017
 ---
-# Анализ кода для предупреждений C/C++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В этом разделе перечислены предупреждения анализа кода C и C\+\+.  Дополнительные сведения об анализе кода см. в разделах [\/analyze \(анализ кода\)](/visual-cpp/build/reference/analyze-code-analysis) и [Краткое руководство. Анализ кода для C\/C\+\+](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
+# <a name="code-analysis-for-cc-warnings"></a>Анализ кода для предупреждений C/C++
+В этом разделе перечислены предупреждения анализа кода C/C++, за исключением тех, которые вызываются [C++ основные рекомендации в данный момент](code-analysis-for-cpp-corecheck.md). Сведения об анализе кода см. в разделе [/ analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрый запуск: анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
-## См. также  
- [Guidelines for Writing Secure Code](http://msdn.microsoft.com/ru-ru/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   
- [Анализ качества кода C\/C\+\+](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)   
- [Использование аннотаций SAL для сокращения количества дефектов в коде C\/C\+\+](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+## <a name="see-also"></a>См. также  
+ [Правила написания безопасного кода](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   
+ [Анализ качества кода C/C++ с помощью метода анализа кода](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)   
+ [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

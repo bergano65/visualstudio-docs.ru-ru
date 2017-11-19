@@ -1,205 +1,203 @@
 ---
-title: Ribbon Object Model Overview | Microsoft Docs
+title: "Общие сведения об объектной модели ленты | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords:
-- Ribbon [Office development in Visual Studio], object model
+helpviewer_keywords: Ribbon [Office development in Visual Studio], object model
 ms.assetid: cae24f66-e980-41ee-a915-d4c8e03efbc1
-caps.latest.revision: 75
-author: kempb
-ms.author: kempb
+caps.latest.revision: "75"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6c00bd822f9b719027967d00313c0102bf0197e2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ribbon-object-model-overview"></a>Ribbon Object Model Overview
-  The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] exposes a strongly typed object model that you can use to get and set the properties of ribbon controls at run time. For example, you can dynamically populate menu controls, or show and hide controls contextually. You can also add tabs, groups, and controls to a ribbon, but only before the ribbon is loaded by the Office application. For information, see [Setting Properties That Become Read-Only](#SettingReadOnlyProperties).  
+# <a name="ribbon-object-model-overview"></a>Общие сведения об объектной модели ленты
+  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Предоставляет строго типизированную объектную модель, можно использовать для получения и задания свойств элементов управления ленты во время выполнения. Например можно динамически заполнения элементов управления меню, или отображение и скрытие элементов управления в зависимости от контекста. Можно также добавить вкладок, групп и элементов управления на ленту, но только до загрузки ленты в приложение Office. Сведения см. в разделе [параметр свойства, становятся только для чтения](#SettingReadOnlyProperties).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- This Ribbon object model consists mainly of the [Ribbon Class](#RibbonClass), [Ribbon Events](#RibbonEvents), and [Ribbon Control Classes](#RibbonControlClasses).  
+ Эта объектная модель ленты заключается главным образом [класса ленты](#RibbonClass), [события ленты](#RibbonEvents), и [классы элементов управления ленты](#RibbonControlClasses).  
   
-##  <a name="RibbonClass"></a> Ribbon Class  
- When you add a new **Ribbon (Visual Designer)** item to a project, Visual Studio adds a **Ribbon** class to your project. The **Ribbon** class inherits from the <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> class.  
+##  <a name="RibbonClass"></a>Класс ленты  
+ При добавлении нового **Лента (визуальный конструктор)** элемента в проект Visual Studio добавляет **ленты** класса в проект. **Ленты** класс наследует от <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> класса.  
   
- This class appears as a partial class that is split between the Ribbon code file and the Ribbon Designer code file.  
+ Этот класс отображается как разделяемый класс, распределенный между файл кода ленты и файл кода конструктора лент.  
   
-##  <a name="RibbonEvents"></a> Ribbon Events  
- The **Ribbon** class contains the following three events:  
+##  <a name="RibbonEvents"></a>События ленты  
+ **Ленты** класс содержит три следующих событий:  
   
-|Event|Description|  
+|Событие|Описание|  
 |-----------|-----------------|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Raised when the Office application loads the ribbon customization. The <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> event handler is automatically added to the ribbon code file. Use this event handler to run custom code when the ribbon loads.|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Enables you to cache images in the ribbon customization when the ribbon loads. You can get a slight performance gain if you write code to cache the ribbon images in this event handler. For more information, see <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Raised when the ribbon instance closes.|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Вызывается, когда приложение Office загружает настройки ленты. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> Обработчик событий автоматически добавляется в файл кода ленты. Этот обработчик событий можно используйте для выполнения пользовательского кода при загрузке ленты.|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Позволяет кэшировать изображения в настройке ленты при ее загрузке. Если написать код для кэширования изображений ленты в этом обработчике событий можно получить некоторого улучшения производительности. Для получения дополнительной информации см. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Возникает при закрытии экземпляра ленты.|  
   
-##  <a name="RibbonControlClasses"></a> Ribbon Controls  
- The <xref:Microsoft.Office.Tools.Ribbon> namespace contains a type for each control that you see in the **Office Ribbon Controls** group of the **Toolbox**.  
+##  <a name="RibbonControlClasses"></a>Элементы управления ленты  
+ <xref:Microsoft.Office.Tools.Ribbon> Пространство имен содержит типы для каждого элемента управления, которое будет отображаться в **элементы управления ленты Office** группы **элементов**.  
   
- The following table shows the type for each `Ribbon` control. For a description of each control, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+ В следующей таблице показаны типа для каждого `Ribbon` элемента управления. Описание каждого элемента управления, см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
   
-|Control name|Class name|  
+|Имя элемента управления|Имя класса|  
 |------------------|----------------|  
-|**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
+|**Поле**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
-|**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Gallery**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**Group**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
+|**Раскрывающийся список**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
+|**Поля ввода**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**Коллекции**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**Группа**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
-|**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
+|**Вкладка**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**Элемент управления ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
- The <xref:Microsoft.Office.Tools.Ribbon> namespace uses the "Ribbon" prefix for these types to avoid a name collision with the names of control classes in the <xref:System.Windows.Forms> namespace.  
+ <xref:Microsoft.Office.Tools.Ribbon> Пространства имен используется префикс «Лента» для этих типов, чтобы избежать конфликт имен с именами классов элементов управления в <xref:System.Windows.Forms> пространства имен.  
   
- When you add a control to the Ribbon Designer, the Ribbon Designer declares the class for that control as a field in the Ribbon Designer code file.  
+ При добавлении элемента управления в конструктор ленты конструктор лент объявляет класс для этого элемента управления как поле в файле кода конструктора лент.  
   
-### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Common Tasks Using the Properties of Ribbon Controls  
- Each `Ribbon` control contains properties that you can use to perform various tasks, such as assigning a label to a control, or hiding and showing controls.  
+### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Типовые задачи с помощью свойств элементов управления ленты  
+ Каждый `Ribbon` элемент управления содержит свойства, которые можно использовать для выполнения различных задач, таких как назначение метку для элемента управления или скрытие и отображение элементов управления.  
   
- In some cases, properties become read-only after the ribbon loads or after a control is added to a dynamic menu. For more information, see [Setting Properties that Become Read-Only](#SettingReadOnlyProperties).  
+ В некоторых случаях свойства становятся доступными только для чтения после загрузки ленты или после добавления элемента управления в динамическом меню. Дополнительные сведения см. в разделе [Установка свойств этого Become только для чтения](#SettingReadOnlyProperties).  
   
- The following table describes some of the tasks that you can perform by using `Ribbon` control properties.  
+ В следующей таблице описаны некоторые задачи, которые можно выполнять с помощью `Ribbon` свойств элемента управления.  
   
-|For this task:|Do this:|  
+|Для выполнения этой задачи|Выполните следующее.|  
 |--------------------|--------------|  
-|Hide or show a control.|Use the Visible property.|  
-|Enable or disable a control.|Use the Enabled property.|  
-|Set the size of a control.|Use the ControlSize property.|  
-|Get the image that appears on a control.|Use the Image property.|  
-|Change the label of a control.|Use the Label property.|  
-|Add user-defined data to a control.|Use the Tag property.|  
-|Get the items in a <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, or<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> control.|Use the Items property.|  
-|Add items to a <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, or <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> control.|Use the Items property.|  
-|Add controls to a <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Use the Items property.<br /><br /> To add controls to the <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> after the ribbon is loaded into the Office application, you must set the <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> property to **true** before the ribbon is loaded into the Office application. For information, see [Setting Properties That Become Read-Only](#SettingReadOnlyProperties).|  
-|Get the selected item of a <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, or <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use the SelectedItem property. For a <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, use the <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> property.|  
-|Get the groups on a <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Use the <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> property.|  
-|Specify the number of rows and columns that appear in a <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use the <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> and <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> properties.|  
+|Скрытие или отображение элемента управления.|Используйте свойство Visible.|  
+|Включение и отключение элемента управления.|Свойство Enabled.|  
+|Установите размер элемента управления.|Свойство ControlSize.|  
+|Получите изображение, отображаемое на элементе управления.|Свойство изображения.|  
+|Изменение метки элемента управления.|Свойство метки.|  
+|Добавление пользовательских данных в элемент управления.|Используйте свойство Tag.|  
+|Получить элементы в <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, или<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>элемент управления.|Используйте свойство Items.|  
+|Добавление элементов к <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, или <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> элемента управления.|Используйте свойство Items.|  
+|Добавление элементов управления <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Используйте свойство Items.<br /><br /> Добавить элементы управления для <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> после загрузки ленты в приложение Office, необходимо задать <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> свойства **true** до загрузки ленты в приложение Office. Сведения см. в разделе [параметр свойства, становятся только для чтения](#SettingReadOnlyProperties).|  
+|Получение выбранного элемента <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, или <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Свойство SelectedItem. Для <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, используйте <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> свойство.|  
+|Получение групп <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Используйте свойство <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|  
+|Укажите число строк и столбцов в <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Используйте <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> и <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> свойства.|  
   
-##  <a name="SettingReadOnlyProperties"></a> Setting Properties That Become Read-Only  
- Some properties can only be set before the ribbon loads. There are three places to set these properties:  
+##  <a name="SettingReadOnlyProperties"></a>Настройка свойств, которые становятся доступными только для чтения  
+ Некоторые свойства можно задать только до загрузки ленты. Существует три места для установки этих свойств:  
   
--   In the Visual Studio **Properties** window.  
+-   В Visual Studio **свойства** окна.  
   
--   In the constructor of the **Ribbon** class.  
+-   В конструкторе **ленты** класса.  
   
--   In the CreateRibbonExtensibilityObject method of the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project.  
+-   В методе CreateRibbonExtensibilityObject `ThisAddin`, `ThisWorkbook`, или `ThisDocument` класс проекта.  
   
- Dynamic menus provide some exceptions. You can create new controls, set their properties, and then add them to a dynamic menu at run time, even after the ribbon that contains the menu is loaded.  
+ Динамические меню предоставляют некоторые исключения. Можно создавать новые элементы управления, задавать их свойства и добавить их в динамическое меню во время выполнения, даже после загрузки ленты, содержащей меню.  
   
- Properties of controls that you add to a dynamic menu can be set at any time.  
+ В любое время можно установить свойства элементов управления, добавляемые в динамическом меню.  
   
- For more information, see [Properties that Become Read-Only](#ReadOnlyProperties).  
+ Дополнительные сведения см. в разделе [, Become только для чтения свойства](#ReadOnlyProperties).  
   
-### <a name="setting-properties-in-the-constructor-of-the-ribbon"></a>Setting Properties in the Constructor of the Ribbon  
- You can set the properties of a `Ribbon` control in the constructor of the **Ribbon** class. This code must appear after the call to the `InitializeComponent` method. The following example adds a new button to a group if the current time is 17:00 Pacific Time (UTC-8) or later.  
+### <a name="setting-properties-in-the-constructor-of-the-ribbon"></a>Установка свойств в конструкторе ленты  
+ Можно задать свойства `Ribbon` управления в конструкторе **ленты** класса. Этот код должен находиться после вызова метода `InitializeComponent` метод. В следующем примере добавляется новая кнопка в группу, если текущее время — 17:00 по тихоокеанскому времени (UTC-8) или более поздней версии.  
   
- Add the following code.  
+ Добавьте следующий код.  
   
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)] [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
+ [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
+ [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
   
- In Visual C# projects that you upgraded from Visual Studio 2008, the constructor appears in the ribbon code file.  
+ В проектах Visual C#, обновленных с Visual Studio 2008 конструктор отображается в файле кода ленты.  
   
- In Visual Basic projects, or in Visual C# projects that you created in [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], the constructor appears in the Ribbon Designer code file. This file is named *YourRibbonItem*.Designer.cs or *YourRibbonItem*.Designer.vb. To see this file in Visual Basic projects, you must first click the **Show All Files** button in Solution Explorer.  
+ В проектах Visual Basic или в проектах Visual C#, созданных в [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], конструктор отображается в файле кода конструктора лент. Этот файл называется *YourRibbonItem*. Designer.cs или *YourRibbonItem*. Designer.vb. Чтобы просмотреть этот файл в проектах Visual Basic, необходимо сначала щелкнуть **Показать все файлы** кнопку в обозревателе решений.  
   
-### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>Setting Properties in the CreateRibbonExtensibilityObject Method  
- You can set the properties of a `Ribbon` control when you override the CreateRibbonExtensibilityObject method in the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project. For more information about the CreateRibbonExtensibilityObject method, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>Задание свойств в методе CreateRibbonExtensibilityObject  
+ Можно задать свойства `Ribbon` управления при переопределении метода CreateRibbonExtensibilityObject в `ThisAddin`, `ThisWorkbook`, или `ThisDocument` класс проекта. Дополнительные сведения о методе CreateRibbonExtensibilityObject см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
   
- The following example sets ribbon properties in the CreateRibbonExtensibilityObject method of the `ThisWorkbook` class of an Excel workbook project.  
+ Следующий пример задает свойства ленты в методе CreateRibbonExtensibilityObject `ThisWorkbook` класс проекта книги Excel.  
   
- Add the following code.  
+ Добавьте следующий код.  
   
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)] [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
+ [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
+ [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
-###  <a name="ReadOnlyProperties"></a> Properties That Become Read-Only  
- The following table shows properties that can only be set before the Ribbon loads.  
+###  <a name="ReadOnlyProperties"></a>Свойства, которые становятся доступными только для чтения  
+ В следующей таблице показаны свойства, которые могут быть установлены только до загрузки ленты.  
   
 > [!NOTE]  
->  You can set the properties of controls on dynamic menus at any time. This table does not apply in that case.  
+>  В любое время можно установить свойства элементов управления динамического меню. Эта таблица не применяется в этом случае.  
   
-|Property|Ribbon control class|  
+|Свойство|Класс элемента управления ленты|  
 |--------------|--------------------------|  
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**Число столбцов**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
-|**Dynamic**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
+|**Динамические**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
-|**Groups**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**Группы**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
-|**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
+|**Для ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
-|**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
+|**Имя**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
+|**Положение**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
-|**RowCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**Количество строк**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemLabel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemSelection**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**SizeString**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**StartFromScratch**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
-|**Tabs**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
-|**Title**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
+|**Вкладки**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
+|**Заголовок**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
   
-### <a name="setting-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Setting Properties for Ribbons that Appear in Outlook Inspectors  
- A new instance of the ribbon is created each time a user opens an Inspector in which the ribbon appears. However, you can set the properties listed in the table above only before the first instance of the ribbon is created. After the first instance is created, these properties become read-only because the first instance defines the XML file that Outlook uses to load the ribbon.  
+### <a name="setting-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Задание свойств для лент, появляющихся в инспекторов Outlook  
+ Новый экземпляр ленты создается каждый раз, когда пользователь открывает инспектор, в котором отображается ленты. Тем не менее можно задать свойства, перечисленные в приведенной выше таблице только перед созданием первого экземпляра ленты. После первого, создается экземпляр эти свойства доступны только для чтения, поскольку первый экземпляр определяет XML-файл используется для загрузки ленты в Outlook.  
   
- If you have conditional logic that sets any of these properties to a different value when other instances of the ribbon are created, this code will have no effect.  
+ Если у вас есть условную логику, определяющую любого из этих свойств другое значение при создании других экземпляров ленты, этот код не будет действовать.  
   
 > [!NOTE]  
->  Ensure that the **Name** property is set for each control that you add to an Outlook ribbon. If you add a control to an Outlook ribbon at run time, you must set this property in your code. If you add a control to an Outlook ribbon at design time, the Name property is set automatically.  
+>  Убедитесь, что **имя** свойство имеет значение для каждого элемента управления, добавляемого в ленту Outlook. Если добавить элемент управления на ленту Outlook во время выполнения, необходимо задать это свойство в коде. При добавлении элемента управления на ленту Outlook во время разработки свойство Name устанавливается автоматически.  
   
-## <a name="ribbon-control-events"></a>Ribbon Control Events  
- Each control class contains one or more events. The following table describes these events.  
+## <a name="ribbon-control-events"></a>События элементов управления ленты  
+ Каждый класс элемента управления содержит одно или несколько событий. В следующей таблице описаны эти события.  
   
-|Event|Description|  
+|Событие|Описание|  
 |-----------|-----------------|  
-|Click|Occurs when a control is clicked.|  
-|TextChanged|Occurs when the text of an edit box or combo box is changed.|  
-|ItemsLoading|Occurs when the Items collection of the control is requested by Office. Office caches the Items collection until your code changes the properties of the control, or you call the <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> method.|  
-|ButtonClick|Occurs when a button in a <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> or <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> is clicked.|  
-|SelectionChanged|Occurs when the selection in a <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> or <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> changes.|  
-|DialogLauncherClick|Occurs when the dialog launcher icon in the lower-right corner of a group is clicked.|  
+|Нажмите кнопку|Происходит при щелчке элемента управления.|  
+|TextChanged|Происходит при изменении текста в текстовом поле или поле со списком.|  
+|ItemsLoading|Происходит при запросе коллекции элементов управления с Office. Office кэширует коллекцию элементов, пока код не изменит свойства элемента управления или вызове <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> метода.|  
+|ButtonClick|Происходит, когда кнопка в <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> или <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> нажата.|  
+|SelectionChanged|Возникает, когда выделение в <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> или <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> изменения.|  
+|DialogLauncherClick|Происходит при щелчке значка запуска диалогового окна в правом нижнем углу группы.|  
   
- The event handlers for these events have the following two parameters.  
+ Обработчики событий для этих событий имеют следующие два параметра.  
   
-|Parameter|Description|  
+|Параметр|Описание|  
 |---------------|-----------------|  
-|*sender*|An <xref:System.Object> that represents the control that raised the event.|  
-|*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> that contains a <xref:Microsoft.Office.Core.IRibbonControl>. Use this control to access any property that is not available in the Ribbon object model provided by the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
+|*Отправитель*|<xref:System.Object> Представляет элемент управления, вызвавший событие.|  
+|*e*|Объект <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> , содержащий <xref:Microsoft.Office.Core.IRibbonControl>. Используйте этот элемент управления для доступа к любому свойству, недоступные в объектной модели ленты, предоставляемые [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)   
- [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [How to: Show Add-in User Interface Errors](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Обзор ленты](../vsto/ribbon-overview.md)   
+ [Как: работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Конструктор лент](../vsto/ribbon-designer.md)   
+ [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Пошаговое руководство: Обновление элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Как: Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Как: Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Как: экспорт ленты из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Практическое руководство. Просмотр ошибок пользовательского интерфейса надстройки](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

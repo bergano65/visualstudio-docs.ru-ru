@@ -1,71 +1,73 @@
 ---
-title: "Практическое руководство. Создание модели подключения к бизнес-данным"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], создание модели"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], создание модели"
+title: "Как: создать модель BDC | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], creating a model
+- Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 ms.assetid: e8b888d4-a531-4d13-9ebf-efbbd33eebc6
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: da7bb2ea8918a0a01716ed090253af8f2f28dbbe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Создание модели подключения к бизнес-данным
-  Можно создать модель подключения к бизнес\-данным \(BDC\) с помощью шаблона для данного типа элементов и последующим добавлением модели в любой проект SharePoint.  Для получения дополнительной информации см. [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  Дополнительные сведения о способах проектирования модели см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-create-a-bdc-model"></a>Практическое руководство. Создание модели подключения к бизнес-данным
+  Можно создать модель бизнес-данным (BDC), с помощью шаблона для этого типа элемента, а затем добавив модель в любой проект SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md). Дополнительные сведения о способах проектирования модели см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### Создание проекта BDC  
+### <a name="to-create-a-bdc-project"></a>Создание проекта BDC  
   
-1.  В строке меню **Файл** выберите пункты **Создать**, **Проект**.  
+1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
     > [!NOTE]  
-    >  Если интерфейс IDE настроен для использования параметров разработки Visual Basic, выберите **Файл**, **Создать проект**.  
+    >  Если интерфейс IDE настроен на использование параметров разработки Visual Basic, выберите **файл**, **новый проект**.  
   
-     Откроется диалоговое окно **Новый проект**.  
+     Откроется диалоговое окно **Новый проект** .  
   
-2.  В узле **Visual Basic** или **Visual C\#** выберите **Office\/SharePoint**, **Решения SharePoint**.  
+2.  В рамках одного **Visual Basic** или **Visual C#**, выберите **Office/SharePoint**, **решений SharePoint**.  
   
-3.  В панели **Шаблоны** выберите элемент **SharePoint 2013 — пустой проект**, а затем нажмите кнопку **ОК**.  
+3.  В **шаблоны** области, выберите **SharePoint 2013 — пустой проект** элемента, а затем выберите **ОК** кнопки.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     **Мастер настройки SharePoint** открывается.  
   
-4.  На странице **Укажите сайт и уровень безопасности для отладки** укажите URL\-адрес сайта SharePoint на локальном компьютере, выберите переключатель **Развернуть как решение фермы**, а затем нажмите кнопку **Готово**.  
+4.  На **Укажите сайт и уровень безопасности для отладки** укажите URL-адрес сайта SharePoint на локальном компьютере, выберите **развернуть как решение фермы** переключатель, а затем выберите **Готово** кнопки.  
   
-     Вы протестируете модель на указанном вами сайте SharePoint.  
+     Выполняется проверка модели на сайте SharePoint, указанном вами.  
   
     > [!IMPORTANT]  
-    >  Следует развертывать проект в решение фермы, поскольку модели подключения к бизнес\-данным поддерживают только решения фермы.  
+    >  Поскольку модели BDC поддерживают только решения фермы, необходимо развернуть проект как решение фермы.  
   
      Создается пустой проект SharePoint.  
   
-5.  В строке меню выберите **Проект**, **Добавить новый элемент**.  
+5.  В строке меню выберите **проекта**, **Добавление нового элемента**.  
   
-6.  В диалоговом окне **Добавление нового элемента** выберите узел **Office\/SharePoint** .  
+6.  В **Добавление нового элемента** диалогового окна выберите **Office/SharePoint** узла.  
   
-7.  В списке шаблонов SharePoint выберите **Модель подключения к бизнес\-данным \(только для решения фермы\)**.  
+7.  В списке шаблонов SharePoint выберите **модель подключения к данным предприятия (только для решения фермы)**.  
   
-8.  В поле **Имя** введите имя для модели BDC и нажмите кнопку **Добавить**.  
+8.  В **имя** , укажите имя для модели BDC и выберите **добавить** кнопки.  
   
-     Элемент **Модель подключения к бизнес\-данным** добавляется в проект.  По умолчанию модель отображается в конструкторе BDC.  Для получения дополнительной информации см. [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     Объект **модель подключения к бизнес-данным** элемент добавляется в проект. По умолчанию модель отображается в конструкторе BDC. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Практическое руководство. Добавление пользовательской сборки в функцию BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Как: Добавление существующего файла модели BDC в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
+ [Как: определить локализованные имена, свойства и разрешения с помощью файла ресурсов](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [Как: Добавление пользовательской сборки в функцию BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

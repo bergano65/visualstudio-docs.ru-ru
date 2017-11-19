@@ -1,31 +1,33 @@
 ---
-title: "Элементы управления в документах Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления [разработка решений Office в Visual Studio], об элементах управления в документах Office"
-  - "документы Office [разработка решений Office в Visual Studio], элементы управления"
-  - "настройки уровня документа [разработка решений Office в Visual Studio], элементы управления"
-  - "элементы управления [разработка решений Office в Visual Studio]"
-  - "документы [разработка решений Office в Visual Studio], элементы управления"
+title: "Элементы управления в документах Office | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], about controls on Office documents
+- Office documents [Office development in Visual Studio, controls
+- document-level customizations [Office development in Visual Studio], controls
+- controls [Office development in Visual Studio]
+- documents [Office development in Visual Studio], controls
 ms.assetid: b057f321-8c60-4c02-b485-e2604a696623
-caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 39
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0c626839b852098f6bae6093a424a786a74522fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элементы управления в документах Office
+# <a name="controls-on-office-documents"></a>Элементы управления в документах Office
   Средства разработки Office в Visual Studio можно использовать для добавления элементов управления Windows Forms и *элементов управления ведущего приложения* в документы Word и книги Excel. Элементы управления ведущего приложения — это объекты, которые расширяют различные объекты пользовательского интерфейса в объектных моделях Word и Excel.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
@@ -34,7 +36,7 @@ caps.handback.revision: 39
   
  При разработке проектов для Excel или Word на уровне документа можно добавлять элементы управления в среду выполнения программным образом или использовать конструктор Visual Studio и добавлять их на этапе разработки.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)  
  Описывает функциональные возможности ведущих элементов и элементов управления ведущего приложения, включая программирование реакции на события и привязку элементов управления к данным, а также отличия элементов управления от собственных объектов.  
   
@@ -44,10 +46,10 @@ caps.handback.revision: 39
  [Общие сведения об использовании элементов управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)  
  Содержит сведения об использовании элементов управления Windows Forms в документах Word и Excel и описывает их отличие от элементов управления Windows Forms.  
   
- [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
  Описывает порядок добавления элементов управления Windows Forms и элементов управления ведущего приложения в документы Word и Excel, а также ограничения, связанные с сохранением этих элементов управления в документе.  
   
-## Связанные подразделы  
+## <a name="related-sections"></a>Связанные разделы  
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)  
  Содержит сведения о различных способах настройки пользовательского интерфейса Microsoft Office с помощью Visual Studio.  
   

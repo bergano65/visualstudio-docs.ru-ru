@@ -1,75 +1,54 @@
 ---
-title: "Работа с наборами данных в N-уровневых приложениях | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Basic], многоуровные приложения"
-  - "DataSet - проект [VS n-tier applications]"
-  - "наборы данных [Visual Basic], многоуровные приложения"
-  - "распределенные приложения [многоуровные приложения VS]"
-  - "многоуровневые приложения"
-  - "многоуровневые приложения баз данных"
-  - "многоуровные приложения"
-  - "адаптеры таблиц TableAdapter, многоуровные приложения"
-  - "уровни, многоуровные приложения"
-  - "типизированные наборы данных, многоуровные приложения"
+title: "Работа с наборами данных в n уровневых приложениях | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- datasets [Visual Basic], n-tier applications
+- multi-tier database applications
+- DataSet project [VS n-tier applications]
+- distributed applications [VS n-tier applications]
+- data [Visual Basic], n-tier applications
+- TableAdapters, n-tier applications
+- n-tier applications
+- tiers, n-tier applications
+- typed datasets, n-tier applications
+- multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
-caps.latest.revision: 22
-caps.handback.revision: 20
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-# Работа с наборами данных в N-уровневых приложениях
-*N\-уровневые приложения для обработки данных* — это нацеленные на обработку данных приложения, которые разделены на несколько логических слоев \(или *уровней*\).  Другими словами, n\-уровневое приложение — это приложение, которое разделено на несколько проектов, при этом уровень доступа к данным, уровень бизнес\-логики и уровень представления находятся каждый в своем отдельном проекте.  Для получения дополнительной информации см. [Общие сведения о N\-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md).  
+# <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n уровневых приложениях
+*Многоуровневые приложения* , ориентированных на данные приложений, разделенные на несколько логических слоев (или *уровни*). Другими словами, n-уровневое приложение — это приложение, которое разделено на несколько проектов, при этом уровень доступа к данным, уровень бизнес-логики и уровень представления находятся каждый в своем отдельном проекте. Дополнительные сведения см. в разделе [Общие сведения о приложениях данных N-уровневые](../data-tools/n-tier-data-applications-overview.md).  
   
- Типизированные наборы данных были усовершенствованы, поэтому адаптеры таблицы и классы наборов данных можно создавать в отдельных проектах.  Это дает возможность быстро разделять слои приложения и формировать n\-уровневые приложения для обработки данных.  
+Типизированные наборы данных были усовершенствованы, поэтому адаптеры таблицы и классы наборов данных можно создавать в отдельных проектах. Это дает возможность быстро разделять слои приложения и формировать n-уровневые приложения для обработки данных.  
   
- Поддержка N\-уровневой структуры в типизированных наборах данных позволяет применять последовательную разработку архитектуры приложения до n\-уровневой структуры и устраняет необходимость в ручном разделении кода на несколько проектов.  Начните проектировать уровень данных с помощью [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md).  Когда все готово к переводу архитектуры приложения на n\-уровневую структуру, задайте свойство **Проект DataSet** набора данных, чтобы сформировать класс набора данных в отдельном проекте.  
+Поддержка N-уровневой в типизированных наборах данных позволяет применять последовательную разработку архитектуры приложения до n уровневой структуры. Он также устраняет необходимость в ручном разделении кода на несколько проектов. Начните с проектирования уровня данных с помощью **конструктора наборов данных**. Когда вы будете готовы к переводу архитектуры приложения до n уровневой структуры, задайте **DataSet проекта** свойства набора данных для создания класса набора данных в отдельном проекте.  
   
-## В этом подразделе  
- [Практическое руководство. Разделение наборов данных и адаптеров таблиц на разные проекты](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
- Описывает, как переместить созданный класс набора данных из проекта, содержащего созданные классы адаптера таблицы, и поместить в новый проект.  
+## <a name="reference"></a>Ссылка  
+<xref:System.Data.DataSet>  
+<xref:System.Data.TypedTableBase%601>  
   
- [Практическое руководство. Добавление кода для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
- Описывает, как создать разделяемый класс, в котором код можно добавлять для n\-уровневого адаптера таблицы.  
-  
- [Практическое руководство. Добавление кода для наборов данных в многоуровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
- Описывает, как создать разделяемый класс, в котором код можно добавлять для n\-уровневого набора данных.  
-  
- [Практическое руководство. Добавление проверки в N\-уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md)  
- Описывает, куда нужно добавить код для выполнения проверки изменения данных.  
-  
- [Пошаговое руководство. Создание многоуровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
- Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов.  
-  
- [Пошаговое руководство. Добавление проверки данных в многоуровневое приложение](../Topic/Walkthrough:%20Adding%20Validation%20to%20an%20N-Tier%20Data%20Application.md)  
- Содержит пошаговые инструкции по добавлению проверки в приложение, созданное в рамках пошагового руководства по n\-уровневому приложению для работы с данными.  
-  
-## Ссылка  
- <xref:System.Data.DataSet>  
-  
- <xref:System.Data.TypedTableBase%601>  
-  
-## Связанные подразделы  
- [Общие сведения о N\-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md)  
-  
- [Иерархическое обновление](../data-tools/hierarchical-update.md)  
-  
- [Работа с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
-  
- [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
-  
- [Общие сведения об адаптере таблиц](../data-tools/tableadapter-overview.md)  
-  
- [Многоуровневые и удаленные приложения с LINQ to SQL](../Topic/N-Tier%20and%20Remote%20Applications%20with%20LINQ%20to%20SQL.md)
+## <a name="see-also"></a>См. также
+[Общие сведения о N-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md)  
+[Пошаговое руководство. Создание многоуровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+[Добавление кода для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+[Добавление кода для наборов данных в многоуровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
+[Добавление проверки в N-уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md)  
+[Разделение наборов данных и адаптеров таблиц на разные проекты](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+[Иерархическое обновление](../data-tools/hierarchical-update.md)  
+[Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+[Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
+[Создайте и настройте адаптеры таблиц TableAdapter](../data-tools/create-and-configure-tableadapters.md)  
+[N-уровневые и удаленные приложения и LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

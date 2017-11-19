@@ -1,61 +1,63 @@
 ---
-title: "Создание типов проектов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "новые типы проектов"
-  - "проекты [Visual Studio SDK] новые типы проектов"
+title: "Создание типов проектов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project types, new
+- projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f7c0bba9b80e4e874f222ce00834f44a2d93e3e7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Создание типов проектов
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Вы можете расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] путем создания нового типа проекта. Чтобы создать новый тип проекта, необходимо понимать несколько базовых понятий и выполнить ряд действий. В следующих разделах приводятся общие сведения для создания типов проектов.  
+# <a name="creating-project-types"></a>Создание типов проектов
+Вы можете расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , создав новый тип проекта. Чтобы создать новый тип проекта, необходимо понимать некоторые понятия и выполнить ряд шагов. В следующих разделах приводятся общие сведения о создании типов проектов.  
   
-## В этом подразделе  
- [Тип проекта решений](../../extensibility/internals/project-type-design-decisions.md)  
- Описание элемента, сохранения файлов проекта и обязательства выразил решения, необходимо сделать перед созданием нового типа проекта.  
+## <a name="in-this-section"></a>Содержание  
+ [Проектные решения для проекта решений](../../extensibility/internals/project-type-design-decisions.md)  
+ Описание элемента, сохранения файлов проекта и обязательств выразил проектные решения, которые необходимо внести, прежде чем создавать новый тип проекта.  
   
- [Контрольный список: Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)  
- Обзор шагов, которые необходимо выполнить, чтобы создать новый тип проекта, который поддерживает задачи программирования, как редактирование кода и компиляции, построения, отладки и развертывания приложений в проекте.  
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ Обзор шагов, которые необходимо выполнить, чтобы создать новый тип проекта, который поддерживает задачи программирования, как редактирование кода и компиляции, построения, отладки и развертывания приложений в своем проекте.  
   
- [Создание экземпляров проекта с помощью фабрик проекта](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
- Сведения о том, как для предоставления и использования проекта фабрики для создания экземпляров нового проекта.  
+ [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
+ Сведения о том, как для предоставления и использования фабрики проектов для создания экземпляров нового проекта.  
   
  [Регистрация типа проекта](../../extensibility/internals/registering-a-project-type.md)  
- Содержит примеры кода инструкций из реестра, предоставляющие пути по умолчанию и данных и таблицы, содержащие записи из реестра скрипта для каждой инструкции.  
+ Предоставляет образцы кода, инструкций из реестра, предоставляющие пути по умолчанию и данных и таблицы, содержащие записи из реестра скрипта для каждой инструкции.  
   
  [Сохранение проекта](../../extensibility/internals/project-persistence.md)  
- Обсуждается использование `IPersistFileFormat` для сохранения файлов и проектов, отличных от файловых объектов.  
+ Описывает использование `IPersistFileFormat` для сохранения файла и объекты не под управлением файла проекта.  
   
- [С помощью MSBuild](../../extensibility/internals/using-msbuild.md)  
- Описывает способ использования типа проекта [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] обработчика, чтобы позволить пользователям создавать из построения [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и из командной строки.  
+ [Использование MSBuild](../../extensibility/internals/using-msbuild.md)  
+ Описывает способ использования типа проекта [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] обработчика, чтобы позволить пользователям строится на основе построения [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и из командной строки.  
   
-## Связанные подразделы  
+## <a name="related-sections"></a>Связанные разделы  
  [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- Описание архитектуры кода, такие как средства просмотра **обозревателя объектов** и **Представление классов** окна. Описывает интерфейсы и методы, используемые для реализации просмотра объектов в VSPackage.  
+ Описывается архитектура кода, такие как средства просмотра **обозревателя объектов** и **представление классов** окна. Описывает интерфейсы и методы, используемые для реализации обозревателя объектов в VSPackage.  
   
- [Добавление проекта и шаблоны элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md)  
- Обсуждается важность, проекты для воспроизведения в определении того, какой редактор используется при открытии элемента проекта и как можно управлять ресурсами проекта.  
+ [Добавление проекта и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md)  
+ Описывается важность, проекты воспроизведение при определении того, какой редактор используется при открытии элемента проекта и как можно управлять ресурсами проекта.  
   
- [Установка пакетов VSPackages с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)  
- Демонстрация предоставить свой собственный уникальный идентификатор VSPackage и перенос VSPackage библиотеки DLL и другие сведения в пакет установщика Windows \(. MSI\-файл\) для развертывания клиентов.  
+ [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)  
+ Показывает, как предоставить свой собственный уникальный идентификатор пакета VSPackage и заключать VSPackage библиотеки DLL и другие сведения в пакет установщика Windows (. MSI-файл) для развертывания клиентов.  
   
  [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- Описывает способ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархии представления и адреса.  
+ Описывает способ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархии, представления и адреса.  
   
  [Пакеты VSPackage](../../extensibility/internals/vspackages.md)  
- Общие сведения о VSPackage, устанавливаемые COM\-объект, который расширяет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды и обсуждается реализация собственных VSPackage.  
+ Общие сведения о VSPackage, устанавливаемые COM-объект, который расширяет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды и описывается, как реализовать собственные VSPackage.  
   
  [Типы проектов](../../extensibility/internals/project-types.md)  
- Описывает, как использовать проекты для изменения кода, компиляции и построения кода и выполнять и отлаживать код и ссылки на разделы с подробными сведениями о том, как создавать типы проектов.
+ Описывается использование проектов для изменения кода, компиляция и сборка кода и выполнять и отлаживать код и ссылки на подробные статьи о создании типов проектов.

@@ -1,57 +1,69 @@
 ---
-title: "Доступность команд | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "меню [Visual Studio SDK] команды"
-  - "Советы и рекомендации, команд меню и панели инструментов"
-  - "рекомендации по использованию панели инструментов [Visual Studio]"
-  - "команды меню, советы и рекомендации"
+title: "Предоставление команды | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus [Visual Studio SDK], commands
+- best practices, menu and toolbar commands
+- toolbars [Visual Studio], best practices
+- menu commands, best practices
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
-caps.latest.revision: 35
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 35
+caps.latest.revision: "35"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6e9644353430fa70d6876ab3210ad340ac30312d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Доступность команд
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-При добавлении нескольких пакетов VSPackages для Visual Studio с помощью команд может стать overcrowded пользовательский интерфейс \(UI\). Вы можете программировать пакета поможет уменьшить эту проблему, следующим образом:  
+# <a name="making-commands-available"></a>Предоставление команд
+При добавлении нескольких пакетов VSPackage для Visual Studio с помощью команд может стать overcrowded пользовательский интерфейс (UI). Вы можете программировать пакета уменьшить эту проблему, как показано ниже:  
   
--   Программа пакета, чтобы он загружается, только когда пользователь требует его.  
+-   Программа пакета, чтобы она загружается только тогда, когда пользователь требует его.  
   
--   Программный пакет, чтобы его команды отображаются только в том случае, если они могут понадобиться в контексте текущего состояния интегрированную среду разработки \(IDE\).  
+-   Программный пакет, чтобы его команды отображаются только в том случае, если они могут потребоваться в контексте текущего состояния интегрированной среды разработки (IDE).  
   
-## Отложенная загрузка  
- Типичный способ включить отложенная загрузка — для разработки VSPackage, чтобы его команды отображаются в пользовательском Интерфейсе, но сам пакет не будет загружена, пока пользователь нажимает одну из команд. Для этого в файле .vsct создайте команд, которые имеют флаги не команды.  
+## <a name="delayed-loading"></a>Отложенная загрузка  
+ Типичный способ включения отложенная загрузка — для разработки VSPackage, чтобы его команды отображаются в пользовательском Интерфейсе, но сам пакет не будет загружена, пока пользователь нажимает одну из команд. Для этого в vsct-файле, создание команд, которые имеют флаги не команды.  
   
- Следующий пример показывает определение команды меню из файла .vsct. Это команда, который создается Visual Studio шаблон пакета при **команды меню** флажок в шаблоне.  
+ В следующем примере показано определение команды меню в vsct-файл. Это команда, который создается Visual Studio шаблон пакета при **команду меню** выбран параметр в шаблоне.  
   
- [!CODE [TopLevelMenu#03](../CodeSnippet/VS_Snippets_VSSDK/toplevelmenu#03)]  
+```xml  
+<Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
+  <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />  
+  <Icon guid="guidImages" id="bmpPic1" />  
+  <Strings>  
+    <CommandName>cmdidTestCommand</CommandName>  
+    <ButtonText>Test Command</ButtonText>  
+  </Strings>  
+</Button>  
   
- В примере Если родительская группа `MyMenuGroup`, является дочерним для элемента меню верхнего уровня, таких как **средства** меню, команда будет отображаться в меню, но не будет загружен пакет, который выполняет команду, пока пользователь щелкает команду. Однако по программированию команду, чтобы реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, можно включить пакет загрузки сначала раскрываться меню, содержащее команду.  
+```  
   
- Обратите внимание, что отложенной загрузки может привести к повышению производительности при запуске.  
+ В примере если родительской группы, `MyMenuGroup`, является дочерним элементом меню верхнего уровня, такие как **средства** меню будет видимым в соответствующее меню команды, но пока нажата команда не будет загружен пакет, который выполняет команду пользователь. Однако с помощью программирования команда для реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса, можно включить пакет, чтобы загрузить сначала раскрываться меню, содержащее команду.  
   
-## Текущий контекст и подсветку синтаксиса  
- Можно запрограммировать VSPackage команды быть видимым или скрытым, в зависимости от текущего состояния данных VSPackage и действиях, которые в данный момент относятся. Можно включить VSPackage для задания состояния команд, обычно с помощью реализации <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, но это требует VSPackage для загрузки, прежде чем выполнять код. Вместо этого рекомендуется включить интегрированную среду разработки для управления видимостью команды без загрузки пакета. Для этого в файле .vsct сопоставления команд с помощью специальных контекстов пользовательского интерфейса. Эти контексты пользовательского интерфейса идентифицируются по GUID, известный как *контекст командной строки GUID*.  
+ Обратите внимание, что отложенной загрузкой может еще более повысить производительность при запуске.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отслеживает изменения, возникающие в результате действия пользователя, такие как загрузке проекта или планируется создание редактирование. По мере изменений автоматически изменяется внешний вид интегрированной среды разработки. В следующей таблице показаны четыре основных контексты среды IDE, изменить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] мониторов.  
+## <a name="current-context-and-the-visibility-of-commands"></a>Текущий контекст и видимость команды  
+ Вы можете программировать VSPackage команды быть видимым или скрытым, в зависимости от текущего состояния данных VSPackage или действия, которые важны в настоящее время. Можно включить VSPackage для задания состояния команд, обычно с помощью реализации <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, но это требует VSPackage для загрузки, прежде чем выполнять код. Вместо этого рекомендуется включить интегрированную среду разработки для управления видимостью команды без загрузки пакета. Для этого в vsct-файле связать команды с специальные контекстах пользовательского интерфейса. Эти контексты пользовательского интерфейса идентифицируются по GUID, известный как *контекста команды GUID*.  
+  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]отслеживает изменения, возникающие в результате действия пользователя, например загрузки проекта или собираетесь редактировать построение. При возникновении изменений, автоматически изменяется внешний вид интегрированной среды разработки. В следующей таблице показаны четыре основных контекстов интегрированной среды разработки изменить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] мониторов.  
   
 |Тип контекста|Описание|  
-|-------------------|--------------|  
-|Тип активного проекта|Для большинства типов проектов это `GUID` значение будет совпадать с GUID VSPackage, который реализует проекта. Однако [!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)] проектов использовать тип проекта `GUID` как значение.|  
-|Активное окно|Как правило это окна последнего активного документа, который устанавливает контекст текущего пользовательского интерфейса для привязки клавиш. Тем не менее это может быть окна инструментов, которое содержит таблицу привязки клавиш, подобное внутреннего веб\-обозревателя. Для документов с несколькими вкладками windows как редактор HTML, каждая вкладка имеет контекст другой команде `GUID`.|  
-|Служба Active языка|Служба языка, связанный с файлом, который в текущий момент отображается в текстовом редакторе.|  
-|Активное окно|Окно инструментов, которое является открытым и имеет фокус.|  
+|---------------------|-----------------|  
+|Тип активного проекта|Для большинства типов проектов это `GUID` значение совпадает со значением GUID из пакета VSPackage, реализующий проекта. Тем не менее [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] проектов используйте тип проекта `GUID` как значение.|  
+|Активное окно|Как правило это последнего окна активного документа, который устанавливает контекст текущего пользовательского интерфейса для сочетания клавиш. Тем не менее это может быть окно инструментов, которая содержит таблицу привязки ключей похожа на внутренний веб-браузер. Для окон документов, несколькими вкладками, таким как редактор HTML, в каждой табуляции имеет другую команду контекст `GUID`.|  
+|Активные языковой службы|Служба языка, связанный с файлом, который в настоящее время отображается в текстовом редакторе.|  
+|Активное окно|Окно инструментов, которое открыт и имеет фокус.|  
   
- Пятый область основного контекста является состояние пользовательского интерфейса интегрированной среды разработки. Контексты пользовательского интерфейса определяются активного контекста команд `GUID`s, как показано ниже:  
+ Пятый области Основные контекста — это состояние пользовательского интерфейса интегрированной среды разработки. Контексты пользовательского интерфейса идентифицируются активного контекста команд `GUID`s, следующим образом:  
   
 -   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT_SolutionBuilding>  
   
@@ -75,27 +87,27 @@ caps.handback.revision: 35
   
 -   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT_CodeWindow>  
   
- Эти идентификаторы GUID, помечаются как активным или неактивным, в зависимости от текущего состояния интегрированной среды разработки. В то же время может быть активной нескольких контекстов пользовательского интерфейса.  
+ Эти идентификаторы GUID, помечаются как активным или неактивным, в зависимости от текущего состояния интегрированной среды разработки. Несколько контекстов пользовательского интерфейса может быть активен одновременно.  
   
-### Скрытие и отображение команд в зависимости от контекста  
- Можно отобразить или скрыть команды package в Интегрированной среде разработки без загрузки сам пакет. Для этого определите команды в файле .vsct пакета с помощью `DefaultDisabled`, `DefaultInvisible`, и `DynamicVisibility` команда флаги и добавить один или несколько [VisibilityItem](../../extensibility/visibilityitem-element.md) элементы [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздел. Когда контекста указанной команды `GUID` становится активным, эта команда будет отображаться без загрузки пакета.  
+### <a name="hiding-and-displaying-commands-based-on-context"></a>Скрытие и отображение команд в зависимости от контекста  
+ Вы можно отобразить или скрыть команду пакет в среде разработки без загрузки сам пакет. Для этого определения команды в vsct-файле пакета с помощью `DefaultDisabled`, `DefaultInvisible`, и `DynamicVisibility` команда флаги и добавить один или несколько [VisibilityItem](../../extensibility/visibilityitem-element.md) элементы [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздела. Если контекст указанную команду `GUID` становится активным, команда отображается без загрузки пакета.  
   
-### Идентификаторы GUID пользовательского контекста  
- Если соответствующую команду контекста GUID еще не определен, можно определить ее в VSPackage и затем ей быть активными или неактивными, необходимые для управления видимостью вашей команды. Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> службы:  
+### <a name="custom-context-guids"></a>Пользовательский контекст GUID  
+ Если соответствующую команду контекста GUID еще не определен, можно определить ее в VSPackage и затем программировать быть активным или неактивным при необходимости для контроля видимости вашей команды. Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> службы:  
   
--   Зарегистрируйте идентификаторы GUID контекста \(путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> метод\).  
+-   Зарегистрируйте идентификаторы GUID контекста (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> метода).  
   
--   Получить состояние контекста `GUID` \(путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метод\).  
+-   Получает состояние контекста `GUID` (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метода).  
   
--   Включение контекста `GUID`s и отключать \(путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> метод\).  
+-   Включить контекст `GUID`s и выключить (путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> метода).  
   
     > [!CAUTION]
-    >  Убедитесь, что VSPackage не влияет на состояние любого существующего контекста GUID поскольку их могут зависеть другие пакеты VSPackage.  
+    >  Убедитесь, что VSPackage не влияет на состояние любого существующего контекста GUID из-за других пакетов VSPackage может зависят от них.  
   
-## Пример  
- В следующем примере команды VSPackage показано динамическое видимость команды, которая управляется контекстов команду без загрузки VSPackage.  
+## <a name="example"></a>Пример  
+ В следующем примере команды VSPackage показано динамическую видимость команды, которая управляется контексты команду без загрузки VSPackage.  
   
- Набор команд должен быть включен и отображен всякий раз, когда решение существует; то есть всякий раз, когда один из следующих контекст командной строки GUID активен:  
+ Команда имеет значение должен быть включен и отображен всякий раз, когда существует решение; то есть каждый раз, когда один из следующих контекст командной строки GUID активна:  
   
 -   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT_EmptySolution>  
   
@@ -103,16 +115,40 @@ caps.handback.revision: 35
   
 -   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT_SolutionHasSingleProject>  
   
- В этом примере обратите внимание, что каждый флаг команды отдельные [флаг команды](../../extensibility/command-flag-element.md) элемента.  
+ В примере обратите внимание, что каждый флаг команды отдельного [флаг команды](../../extensibility/command-flag-element.md) элемента.  
   
- [!CODE [DynamicVisibility#01](DynamicVisibility#01)]  
+```  
+<Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   
+        priority="0x0100" type="Button">  
+  <Parent guid="guidDynamicVisibilityCmdSet" id="MyMenuGroup" />  
+  <Icon guid="guidImages" id="bmpPic1" />  
+  <CommandFlag>DefaultDisabled</CommandFlag>  
+  <CommandFlag>DefaultInvisible</CommandFlag>  
+  <CommandFlag>DynamicVisibility</CommandFlag>  
+  <Strings>  
+    <CommandName>cmdidMyCommand</CommandName>  
+    <ButtonText>My Command name</ButtonText>  
+  </Strings>  
+</Button>  
   
- Также Обратите внимание, что каждый контекст пользовательского интерфейса должно быть задано в отдельном `VisibilityItem` элемента, как показано ниже.  
+```  
   
- [!CODE [DynamicVisibility#02](DynamicVisibility#02)]  
+ Также Обратите внимание, что каждый контекст пользовательского интерфейса должен быть присвоен в отдельном `VisibilityItem` элемента, как показано ниже.  
   
-## См. также  
- [команды MenuCommand и OleMenuCommand](../../misc/menucommands-vs-olemenucommands.md)   
+```xml  
+<VisibilityConstraints>  
+  <VisibilityItem guid="guidDynamicVisibilityCmdSet"  
+                  id="cmdidMyCommand" context="UICONTEXT_EmptySolution" />  
+  <VisibilityItem guid="guidDynamicVisibilityCmdSet"  
+                      id="cmdidMyCommand" context="UICONTEXT_SolutionHasSingleProject" />  
+  <VisibilityItem guid="guidDynamicVisibilityCmdSet"  
+                  id="cmdidMyCommand" context="UICONTEXT_SolutionHasMultipleProjects" />  
+</VisibilityConstraints>  
+  
+```  
+  
+## <a name="see-also"></a>См. также  
+ [Команды MenuCommand и OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Маршрутизация команд в пакеты VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Динамическое добавление элементов меню](../../extensibility/dynamically-adding-menu-items.md)

@@ -1,55 +1,57 @@
 ---
-title: "Вспомогательные средства просмотра символов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "символы, средства обзора символов"
-  - "обозреватели, обозреватели символов"
-  - "средства обзора символов"
-  - "библиотеки"
-  - "Интерфейс IVsLibrary2, средства обзора символов"
-  - "Интерфейс IVsSimpleLibrary2, средства обзора символов"
-  - "средства просмотра символов, диспетчер библиотек"
-  - "символы"
-  - "библиотеки, средства обзора символов"
+title: "Поддержка средства обзора символ | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- symbols, symbol-browsing tools
+- browsers, symbol browsers
+- symbol-browsing tools
+- libraries
+- IVsLibrary2 interface, symbol-browsing tools
+- IVsSimpleLibrary2 interface, symbol-browsing tools
+- symbol-browsing tools, library manager
+- symbols
+- libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9b9e9963b43e6ca2049337fdfdf76b0a1314ae32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Вспомогательные средства просмотра символов
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-**Обозреватель объектов**"  **Окно классов**"  **Обозреватель вызовов** и  **Результаты поиска символа** средства обеспечивают символ при просмотре возможности в Visual Studio.  Эти средства отображают иерархическое представление в виде дерева символов и отображают связи между символами в дереве.  Символы могут представлять пространства имен объектов, классы, члены класса и другие элементы языка, содержащихся в разных компонентах.  Компоненты включают проекты Visual Studio, внешние [!INCLUDE[.net framework]()] компоненты и библиотеки типов \(.tlb\).  Дополнительные сведения см. в разделе [Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).  
+# <a name="supporting-symbol-browsing-tools"></a>Вспомогательные средства обзора символ
+**Обозреватель объектов**, **представление классов**, **обозревателя вызовов** и **результаты поиска символа** средства предоставляют средства в Visual Studio для просмотра символов. Эти средства отображают иерархическое дерево представления символов и отображения связей между символами в дереве. Символы могут представлять пространства имен, объекты, классы, члены класса и остальные элементы языка, содержатся в различных компонентов. Компоненты включают внешних проектов Visual Studio [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] компоненты и библиотеки типов (TLB). Дополнительные сведения см. в разделе [Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).  
   
-## Символ\-Просмотреть библиотеки  
- В реализации языка, можно расширить возможности Visual Studio символ\-просмотря путем создания библиотеки, которые отслеживают символы в компонентах и приводятся списки символов диспетчер объекта Visual Studio с помощью набора интерфейсов.  Библиотека описана  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> интерфейс.  Диспетчер объекта Visual Studio отвечает на запросы для новых данных с символ\-просмотря средств путем получения данных из библиотек и организации.  Он затем заполняет или обновлении средств с данными.  Получить ссылку на него объекта Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>передайте  <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> идентификатор службы  `GetService` метод.  
+## <a name="symbol-browsing-libraries"></a>Просмотр символов библиотеки  
+ Как исполнителя языка просматриваемого символа возможности Visual Studio можно расширить путем создания библиотеки, которые отслеживают символы в компонентах и предоставляют списки символов в диспетчер объектов Visual Studio через набор интерфейсов. Описывается библиотека <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> интерфейса. Диспетчер объектов Visual Studio отвечает на запросы для новых данных из средств просмотра символов для получения данных из библиотек, организуя их. Затем заполняет или обновляет средства запрошенные данные. Для получения ссылки на диспетчер объектов Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, передайте <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> идентификатор для службы `GetService` метод.  
   
- Каждая библиотека должна зарегистрировать с помощью объекта Visual Studio, который собирает сведения обо всех библиотеках.  Чтобы зарегистрировать библиотеку, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  В зависимости от того, программа инициирует запрос диспетчеру объекта Visual Studio найдет нужную библиотеку и запрашивает данные.  Данные передаются между библиотеками и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объекта в списках символов, описанных  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс.  
+ Каждая библиотека необходимо зарегистрировать в диспетчере объектов Visual Studio, который собирает сведения о всех библиотек. Чтобы зарегистрировать библиотеку, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод. В зависимости от того, какой инструмент инициирует запрос диспетчер объектов Visual Studio находит соответствующую библиотеку и запрашивает данные. Эти данные передаются между библиотеками и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов в списках символов, описываемого <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейса.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер периодически обновлять объекта отвечает за символ\-просмотрящ средства для текущие данные, которые содержатся в библиотеках.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчер объектов отвечает за периодически обновление средства обзора символ для отражения последних данных, содержащихся в библиотеках.  
   
- Схема содержит образец ключевых положений ниже запросов\/процесса обмена данными между библиотекой и менеджером объектов Visual Studio.  Интерфейсы в схеме является частью приложения управляемого кода.  
+ Ниже приведен пример основными элементами процесса обмена запросов и данных между библиотекой и менеджером объекта Visual Studio. На схеме интерфейсов являются частью приложения с управляемым кодом.  
   
- ![Поток данных между библиотекой и менеджером объекта](~/extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
+ ![Поток данных между библиотекой и менеджером объекта](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
   
- Для реализации списков символов диспетчер объекта Visual Studio, сначала необходимо зарегистрировать библиотеку с диспетчером объекта Visual Studio путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  После того как библиотека зарегистрирована диспетчер объекта Visual Studio запрашивает некоторое сведения о возможностях библиотеки.  Например, она запрашивает флаги библиотеки и поддерживаемые категории путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> и  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> методы.  Рано или поздно, когда средств запрашивать данные из этой библиотеки диспетчера объектов запрашивает список символов верхнего уровня, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> метод.  В ответе библиотека изготавливает список символов и представляет его на него объекта с помощью Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объекта определяет, сколько элементов в списке путем вызова  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> метод.  Все приведенные ниже запросы, относящиеся к данному элементу в списке и предоставляют номер индекса элемента в каждом запросе.  Диспетчер объекта Visual Studio продолжает собирать сведения о типе специальных возможностях и других свойствах элемента, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> метод.  
+ Чтобы предоставить списки символы диспетчер объектов Visual Studio, необходимо сначала зарегистрировать библиотеку с помощью диспетчера объектов Visual Studio путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод. После регистрации библиотеки диспетчера объектов Visual Studio запрашивает определенные сведения о возможностях библиотеки. Например, запрашивает флаги библиотеки и поддерживается категорий путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> методы. В определенный момент при одного из средств запрашивает данные из этой библиотеки диспетчера объектов запрашивает список символов верхнего уровня, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> метод. В ответ, библиотеке изготавливает список символов и делает его уязвимым для диспетчера объектов Visual Studio через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейса. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчера объектов определяет, сколько элементов в списке, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> метод. Все следующие запросы относится к заданному элементу в списке и введите номер индекса элемента в каждом запросе. Диспетчер объектов Visual Studio продолжает собирать данные в тип, доступность и другие свойства элемента путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> метод.  
   
- Он определяет имя элемента, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> метод и запросы данные значка путем вызова  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> метод.  Значок отображается слева от имени элемента и отображает тип элемента специальных возможностей и других свойств.  
+ Он определяет имя элемента, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> метод и запрашивает сведения значок путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> метод. Значок отображается слева от имени элемента и показывает тип элемента, доступность и другие свойства.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> диспетчер объекта вызывает  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] метод позволяет определить, является ли данный элемент списка расширяем и имеет дочерние элементы.  Если пользовательский интерфейс отправляет запрос развернуть элемент, то диспетчер объектов запрашивает список дочерних элементов символов, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> метод.  Процесс продолжается с разными частями дерева создаваемый по запросу.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчер вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> метод для определения, если элемент списка является расширяемым и имеет дочерних элементов. При отправке запроса разверните элемент пользовательского интерфейса диспетчера объектов запрашивает список дочерних символов посредством вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> метод. Процесс продолжается с использованием различных частей дерева создающимся по требованию.  
   
 > [!NOTE]
->  Для реализации поставщика символов, используйте машинного кода <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> и  <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> интерфейсы.  
+>  Для реализации поставщика символ машинного кода, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> интерфейсов.  
   
-## См. также  
- [Практическое руководство: зарегистрировать библиотеку с помощью диспетчера объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Практическое руководство: предоставлять список символов, предоставленный библиотекой диспетчера объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Практическое руководство: определение символов в библиотеке](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+## <a name="see-also"></a>См. также  
+ [Как: регистрации библиотеки с помощью диспетчера объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Как: предоставлять список символов, предоставленный библиотекой диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
+ [Практическое руководство. Определение символов в библиотеке](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

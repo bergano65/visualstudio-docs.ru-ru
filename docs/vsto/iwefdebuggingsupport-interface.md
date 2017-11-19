@@ -1,28 +1,30 @@
 ---
-title: "Интерфейс IWefDebuggingSupport"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: "Интерфейс IWefDebuggingSupport | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 0bd1c6a6-67a5-4478-b942-8b937b28f723
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7768465f46e5344b88da9006a7de2396e3b75ba6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Интерфейс IWefDebuggingSupport
-  Реализованный средой отладки, такие как Visual Studio, чтобы упростить отладку приложений для office.  Приложение office, например слово или Excel, получает этот интерфейс из Visual Studio и затем вызывает методы интерфейса на некоторые шаги во время сеанса отладки.  
+# <a name="iwefdebuggingsupport-interface"></a>Интерфейс IWefDebuggingSupport
+  Реализованный в среде отладки, такие как Visual Studio, для упрощения отладки приложений для Office. Приложения Office, такие как Word или Excel, получает этот интерфейс из Visual Studio и затем вызывает методы в интерфейсе в некоторых точках во время сеанса отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 [  
@@ -38,12 +40,12 @@ interface IWefDebuggingSupport : IUnknown
 }  
 ```  
   
-## Методы  
- В следующей таблице перечислены методы, IWefDebuggingSupport определяет интерфейс.  
+## <a name="methods"></a>Методы  
+ В следующей таблице перечислены методы, которые определяет этот интерфейс IWefDebuggingSupport.  
   
 |Имя|Описание|  
-|---------|--------------|  
-|[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Возвращает сведения о приложениях для office, автоматически вставляются во время отладки.|  
-|[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Предоставляет идентификатор процесса, выполняемого содержимое .NET Framework расширений Интернета \(WEF\).|  
+|----------|-----------------|  
+|[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Возвращает сведения о приложениях для Office, которые вставляются автоматически во время отладки.|  
+|[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Представляет идентификатор процесса, который будет выполняться содержимого Framework расширения Web (WEF).|  
   
   

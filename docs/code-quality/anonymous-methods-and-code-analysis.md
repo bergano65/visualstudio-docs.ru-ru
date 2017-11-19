@@ -1,52 +1,53 @@
 ---
-title: "Анонимные методы и анализ кода | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "анонимные методы, анализ кода"
-  - "анализ кода, анонимные методы"
-  - "методы, анонимные"
+title: "Анонимные методы и анализ кода | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- methods, anonymous
+- code analysis, anonymous methods
+- anonymous methods, code analysis
 ms.assetid: bf0a1a9b-b954-4d46-9c0b-cee65330ad00
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8ebf550ca92cbefbed684e2b11e0b20b62661133
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Анонимные методы и анализ кода
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-*Анонимным методом* называется метод, не имеющий имени.  Анонимные методы чаще всего используются для передачи блока кода в качестве параметра делегата.  
+# <a name="anonymous-methods-and-code-analysis"></a>Анонимные методы и анализ кода
+*Анонимного метода* — метод, который не имеет имени. Анонимные методы чаще всего используются для передачи блока кода в качестве аргумента делегата.  
   
- В данном разделе описывается порядок обработки анонимных методов и метрик, связанных с анонимными методами, при анализе кода.  
+ В этом разделе объясняется, обработка и метрик, связанных с анонимных методов анализа кода.  
   
-## Анонимные методы, объявленные внутри члена  
- Предупреждения и метрики для анонимного метода, объявленного в члене, например в методе или методе доступа, связываются с членом, который данный метод объявляет.  Они не связываются с членом, который вызывает метод.  
+## <a name="anonymous-methods-declared-in-a-member"></a>Анонимные методы, объявленные в элементе  
+ Предупреждения и метрики для анонимного метода, объявленного в элементы, например метод или метод доступа, связанные с членом, который объявляет метод. Они не связаны с элементом, который вызывает метод.  
   
- Например, в следующем классе все предупреждения, найденные в объявлении анонимного метода **anonymousMethod**, должны вызываться по отношению к методу **Method1**, а не методу **Method2**.  
+ Например, в следующем классе все предупреждения, которые находятся в объявлении **anonymousMethod** должен вызываться по отношению **метод1** и не **метод2**.  
   
-```vb#  
+```vb  
   
-        Delegate Function ADelegate(ByVal value As Integer) As Boolean  
+      Delegate Function ADelegate(ByVal value As Integer) As Boolean  
 Class AClass  
   
     Sub Method1()  
-        Dim anonymousMethod As ADelegate = Function(ByVal value As  Integer) value > 5  
+        Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5  
         Method2(anonymousMethod)  
-    End Sub Sub Method2(ByVal anonymousMethod As ADelegate)  
+    End SubSub Method2(ByVal anonymousMethod As ADelegate)  
         anonymousMethod(10)  
-    End Sub End Class  
+    End SubEnd Class  
 ```  
   
-```c#  
+```csharp  
   
-        delegate void Delegate();  
+      delegate void Delegate();  
 class Class  
 {  
     void Method1()  
@@ -65,26 +66,26 @@ class Class
 }  
 ```  
   
-## Встроенные анонимные методы  
- Предупреждения и метрики для анонимного метода, который объявлен как встроенное назначение полю, связываются с конструктором.  Если поле объявлено как `static` \(`Shared` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\), в таком случае предупреждения и метрики связываются с конструктором класса; в обратном случае они связываются с конструктором экземпляра.  
+## <a name="inline-anonymous-methods"></a>Встроенные анонимные методы  
+ Предупреждения и метрики для анонимного метода, который объявлен как встроенное назначение полю, связываются с конструктором. Если поле объявлено как `static` (`Shared` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), предупреждения и метрики, связанные с конструктором класса; в противном случае, они связаны с конструктором экземпляра.  
   
- Например, в следующем классе все предупреждения, найденные в объявлении анонимного метода **anonymousMethod1**, будут вызываться по отношению к неявно созданному используемому по умолчанию конструктору класса **Class**.  Тогда как все предупреждения, найденные внутри анонимного метода **anonymousMethod2**, будут применяться по отношению к неявно созданному конструктору класса.  
+ Например, в следующем классе все предупреждения, которые находятся в объявлении **anonymousMethod1** от неявно создаваемый по умолчанию, будет создано **класса**. Тогда как все предупреждения, найденные в **анонимного метода anonymousMethod2** нужно применять конструктор неявно созданного класса.  
   
-```vb#  
+```vb  
   
-    Delegate Function ADelegate(ByVal value As Integer) As Boolean Class AClass  
-Dim anonymousMethod1 As ADelegate = Function(ByVal value As     Integer) value > 5  
-Shared anonymousMethod2 As ADelegate = Function(ByVal value As      Integer) value > 5  
+  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass  
+Dim anonymousMethod1 As ADelegate = Function(ByVal value As    Integer) value > 5  
+Shared anonymousMethod2 As ADelegate = Function(ByVal value As     Integer) value > 5  
   
 Sub Method1()  
     anonymousMethod1(10)  
     anonymousMethod2(10)  
-End Sub End Class  
+End SubEnd Class  
 ```  
   
-```c#  
+```csharp  
   
-        delegate void Delegate();  
+      delegate void Delegate();  
 class Class  
 {  
     Delegate anonymousMethod1 = delegate()   
@@ -105,27 +106,27 @@ class Class
 }  
 ```  
   
- Класс может содержать встроенный анонимный метод, присваивающий значение полю с несколькими конструкторами.  В данном случае предупреждения и метрики связываются со всеми конструкторами, если конструктор не связан последовательно с другим конструктором в этом же классе.  
+ Класс может содержать встроенный анонимный метод, присваивающий значение полю, которое имеет несколько конструкторов. В этом случае предупреждения и метрики, связанные с все конструкторы, если конструктор связан другого конструктора этого же класса.  
   
- Например, в следующем классе все предупреждения, найденные в объявлении анонимного метода **anonymousMethod**, должны вызываться по отношению к классам **Class\(int\)** и **Class\(string\)**, а не к классу **Class\(\)**.  
+ Например, в следующем классе все предупреждения, которые находятся в объявлении **anonymousMethod** должен вызываться по отношению **Class(int)** и **Class(string)** , но не для **Class()**.  
   
-```vb#  
+```vb  
   
-    Delegate Function ADelegate(ByVal value As Integer) As Boolean Class AClass  
+  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass  
   
 Dim anonymousMethod As ADelegate = Function(ByVal value As Integer)   
 value > 5  
   
-Sub New()  
+SubNew()  
     New(CStr(Nothing))  
-End Sub Sub New(ByVal a As Integer)  
-End Sub Sub New(ByVal a As String)  
-End Sub End Class  
+End SubSub New(ByVal a As Integer)  
+End SubSub New(ByVal a As String)  
+End SubEnd Class  
 ```  
   
-```c#  
+```csharp  
   
-        delegate void Delegate();  
+      delegate void Delegate();  
 class Class  
 {  
     Delegate anonymousMethod = delegate()   
@@ -147,9 +148,9 @@ class Class
 }  
 ```  
   
- Несмотря на кажущуюся неожиданность, это происходит потому, что компилятор создает уникальный метод для каждого конструктора, не связанного последовательно с другим конструктором.  Из\-за такого порядка работы все нарушения, происходящие внутри анонимного метода **anonymousMethod**, необходимо подавлять отдельно.  Это также означает, что при добавлении нового конструктора предупреждения, которые до этого подавлялись по отношению к классам **Class\(int\)** и **Class\(string\)**, будет также необходимо подавлять по отношению к новому классу.  
+ Несмотря на то, что это может показаться неожиданным, это происходит потому, что компилятор создает уникальный метод для каждого конструктора, не существует цепочки от другого конструктора. В связи с этим любые, нарушение в **anonymousMethod** необходимо подавлять отдельно. Это также означает, что если новый конструктор появились предупреждения, которые ранее были скрыты от **Class(int)** и **Class(string)** также должны подавляться к новому классу.  
   
- Данную проблему можно обойти одним из двух способов.  Можно объявить анонимный метод **anonymousMethod** в общем конструкторе, с которым последовательно соединены все конструкторы.  Или же можно объявить данный анонимный метод в методе инициализации, вызываемом всеми конструкторами.  
+ Можно обойти эту проблему, одним из двух способов. Можно объявить **anonymousMethod** в общем конструкторе, все цепочки конструкторов. Или можно объявить в методе инициализации, вызываемом всеми конструкторами.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

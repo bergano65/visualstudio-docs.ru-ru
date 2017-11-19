@@ -1,72 +1,69 @@
 ---
-title: Improving the Performance of a VSTO Add-in | Microsoft Docs
+title: "Повышение производительности надстройки VSTO | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ef25c2-6308-4737-a655-74bbbb472dc2
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ad0f4edffa387c89e5ef404117852f3f04574ca2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: aa8aba456e6912569480305922511f6ffebe674b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="improving-the-performance-of-a-vsto-add-in"></a>Improving the Performance of a VSTO Add-in
-  You can give your users a better experience by optimizing VSTO Add-ins that you create for Office applications so that they quickly start up, shut down, open items, and perform other tasks. If your VSTO Add-in is for Outlook, you can also reduce the chance that your VSTO Add-in will be disabled because of poor performance. You can increase the performance of your VSTO Add-in by implementing the following strategies:  
+# <a name="improving-the-performance-of-a-vsto-add-in"></a>Повышение производительности надстройки VSTO
+  Для повышения удобства работы пользователей можно оптимизировать надстройки VSTO, создаваемые для приложений Office, что позволит быстрее выполнять запуск, завершать работу, открывать элементы и выполнять другие задачи. Если ваша надстройка VSTO предназначена для Outlook, можно уменьшить вероятность ее отключения из-за низкой производительности. Для повышения производительности надстройки VSTO можно реализовать следующие стратегии:  
   
--   [Load VSTO Add-ins on demand](#Load).  
+-   [Загрузка надстроек VSTO по требованию](#Load).  
   
--   [Publish Office solutions by using Windows Installer](#Publish).  
+-   [Публикация решений Office с помощью установщика Windows](#Publish).  
   
--   [Bypass ribbon reflection](#Bypass).  
+-   [Обход отражения ленты](#Bypass).  
   
--   [Perform expensive operations in a separate execution thread](#Perform).  
+-   [Выполнение ресурсоемких операций в отдельном потоке](#Perform).  
   
- For more information about how to optimize an Outlook VSTO Add-in, see [Performance criteria for keeping VSTO Add-ins enabled](http://go.microsoft.com/fwlink/?LinkID=266503).  
+ Дополнительные сведения об оптимизации надстройки VSTO для Outlook см. в разделе [Критерии производительности для удержания надстроек VSTO во включенном состоянии](http://go.microsoft.com/fwlink/?LinkID=266503).  
   
-##  <a name="Load"></a> Load VSTO Add-ins on demand  
- You can configure a VSTO Add-in to load only under the following circumstances:  
+##  <a name="Load"></a> Загрузка надстроек VSTO по требованию  
+ Вы можете настроить надстройку VSTO так, чтобы она загружалась только при следующих обстоятельствах:  
   
--   The first time that the user starts the application after the VSTO Add-in is installed.  
+-   когда пользователь запускает приложение в первый раз после установки надстройки VSTO;  
   
--   The first time that the user interacts with the VSTO Add-in after starting the application any subsequent time.  
+-   когда пользователь взаимодействует с надстройкой VSTO в первый раз после запуска приложения в любое другое последующее время.  
   
- For example, your VSTO Add-in might populate a worksheet with data when the user chooses a custom button that's labeled **Get My Data**. The application must load your VSTO Add-in at least one time so that the **Get My Data** button can appear in the ribbon. However, the VSTO Add-in doesn't load again when the user starts the application the next time. The VSTO Add-in loads only when the user chooses the **Get My Data** button.  
+ Например, Ваша надстройка VSTO может вносить в лист данные, когда пользователь нажимает кнопку под названием **получить мои данные**. Приложение должно загрузить надстройку VSTO по крайней мере один раз, чтобы на ленте появилась кнопка **Получить мои данные** . Тем не менее надстройка VSTO не будет загружена снова когда пользователь запустит приложение в следующий раз. Надстройка VSTO загружается только в том случае, когда пользователь нажмет кнопку **Получить мои данные** .  
   
-#### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>To configure a ClickOnce solution to load VSTO Add-ins on demand  
+#### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>Настройка решения ClickOnce для загрузки надстроек VSTO по требованию  
   
-1.  In **Solution Explorer**, choose the project node.  
+1.  В области **Обозреватель решений**выберите узел проекта.  
   
-2.  On the menu bar, choose **View**, **Property Pages**.  
+2.  В строке меню выберите **Вид**, **Страницы свойств**.  
   
-3.  On the **Publish** tab, choose the **Options** button.  
+3.  На вкладке **Публикация** нажмите кнопку **Параметры** .  
   
-4.  In the **Publish Options** dialog box, choose the **Office Settings** list item, choose the **Load on Demand** option, and then choose the **OK** button.  
+4.  В диалоговом окне **Параметры публикации** выберите элемент списка **Параметры Office** , выберите параметр **Загружать по требованию** , а затем нажмите кнопку **ОК** .  
   
-#### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>To configure a Windows Installer solution to load VSTO Add-ins on demand  
+#### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Настройка решения установщика Windows для загрузки надстроек VSTO по требованию  
   
-1.  In the registry, set the `LoadBehavior` entry of the *Root*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*Add-in ID* key to **0x10**.  
+1.  В реестре, задайте `LoadBehavior` запись о *корневой*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*Add-in ID*ключа для **0x10**.  
   
-     For more information, see [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
+     Для получения дополнительной информации см. [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
   
-#### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>To configure a solution to load VSTO Add-ins on demand while you debug the solution  
+#### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Настройка решения для загрузки надстроек VSTO по требованию при отладке решения  
   
-1.  Create a script that sets the `LoadBehavior` entry of the *Root*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*Add-in ID* key to **0x10**.  
+1.  Создать скрипт, который задает `LoadBehavior` запись о *корневой*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*Add-in ID* ключа для **0x10**.  
   
-     The following code shows an example of this script.  
+     В следующем коде показан пример такого скрипта.  
   
     ```  
     [HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\MyAddIn]  
@@ -77,53 +74,54 @@ ms.lasthandoff: 08/30/2017
   
     ```  
   
-2.  Create a post-build event that updates the registry by using the script.  
+2.  Создайте событие после сборки, которое обновляет реестр с помощью скрипта.  
   
-     The following code shows an example of a command string that you might add to a post-build event.  
+     Ниже приведен пример командной строки, который можно добавить в событие после сборки.  
   
     ```  
     regedit /s "$(SolutionDir)$(SolutionName).reg"  
   
     ```  
   
-     For information about how to create post-build event in a C# project, see [How to: Specify Build Events &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Сведения о создании события после сборки в проекте C# см. в разделе [как: Указание событий сборки &#40; C# 35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     For information about how to create a post-build event in a Visual Basic project, see [How to: Specify Build Events &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Сведения о создании события после сборки в проекте Visual Basic см. в разделе [как: Указание событий сборки &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
 ##  <a name="Publish"></a> Publish Office Solutions by Using Windows Installer  
- If you publish your solution by using Windows Installer, the Visual Studio 2010 Tools for Office Runtime bypasses the following steps when the VSTO Add-in loads.  
+ Если вы публикуете решение с помощью установщика Windows, среда выполнения набора средств Visual Studio 2010 для Office пропускает перечисленные ниже шаги при загрузке надстройки VSTO.  
   
--   Validating the manifest schema.  
+-   Проверка схемы манифеста.  
   
--   Automatically checking for updates.  
+-   Автоматическая проверка наличия обновлений.  
   
--   Validating the digital signatures of the deployment manifests.  
+-   Проверка цифровых подписей манифестов развертывания.  
   
     > [!NOTE]  
-    >  This approach isn't necessary if you deploy your VSTO Add-in to a secure location on the users' computers.  
+    >  Этот подход не является обязательным в том случае, при развертывании надстройки VSTO в защищенной папке на компьютерах пользователей.  
   
- For more information, see [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Для получения дополнительной информации см. [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
 ##  <a name="Bypass"></a> Bypass Ribbon Reflection  
- If you build a solution by using [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], ensure that your users have installed the most recent version of the Visual Studio 2010 Tools for Office Runtime when you deploy the solution. Older versions of that runtime reflected into solution assemblies to locate ribbon customizations. This process can cause the VSTO Add-in to load more slowly.  
+ При создании решения с помощью [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]убедитесь, что ваши пользователи установили самую последнюю версию среды выполнения набора средств Visual Studio 2010 для Office, когда вы развертываете решение. Более старые версии среды выполнения выполняют отражение в сборки решения для поиска настроек ленты. Этот процесс может привести к замедлению загрузки надстройки VSTO.  
   
- As an alternative, you can prevent any version of the Visual Studio 2010 Tools for Office Runtime from using reflection to identify ribbon customizations. To follow this strategy, override the `CreateRibbonExtensibility` method, and explicitly return ribbon objects. If your VSTO Add-in doesn't contain any ribbon customizations, return `null` inside of the method.  
+ В качестве альтернативы можно сделать так, чтобы любая версия среды выполнения набора средств Visual Studio 2010 для Office не использовала отражение для определения настроек ленты. Для применения такой стратегии переопределите метод `CreateRibbonExtensibility` и явным образом возвращайте объекты ленты. Если Ваша надстройка VSTO не содержит никаких настроек ленты, возвращают `null` внутри метода.  
   
- The following example returns a ribbon object based on the value of a field.  
+ В следующем примере возврат объекта ленты выполняется на основе значения поля.  
   
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
+ [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
 ##  <a name="Perform"></a> Perform Expensive Operations in a Separate Execution Thread  
- Consider performing time-consuming tasks (such as long running tasks, database connections, or other sorts of network calls) in a separate thread. For more information, see [Threading Support in Office](../vsto/threading-support-in-office.md).  
+ Рассмотрите возможность выполнения длительных задач (например, соединений с базой данных или других видов сетевых вызовов) в отдельном потоке. Дополнительные сведения см. в разделе [Threading Support in Office](../vsto/threading-support-in-office.md).  
   
 > [!NOTE]  
->  All code that calls into the Office object model must execute in the main thread.  
+>  Весь код, вызывающий объектную модель Office, должен выполняться в основном потоке.  
   
-## <a name="see-also"></a>See Also  
- [Demand-Loading VSTO Add-ins](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
- [Delay-loading the CLR in Office Add-ins](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
- [VSTO Performance: Delay Loading and You (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
- [Performance Improvements Coming Soon to a Service Pack Near You (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
- [VSTO Performance: Ribbon Reflection (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
+## <a name="see-also"></a>См. также  
+ [Загрузка надстроек VSTO по требованию](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
+ [Отложенная загрузка среды CLR в надстройках Office](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
+ [Производительность VSTO: Отложенная загрузка и вы (Стивен Петерс)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
+ [Повышение производительности, ожидаемые в ближайшем пакете обновления вы (Стивен Петерс)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
+ [Производительность VSTO: Отражение ленты (Стивен Петерс)](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
   
   

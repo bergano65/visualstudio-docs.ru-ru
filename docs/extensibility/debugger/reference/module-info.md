@@ -1,115 +1,115 @@
 ---
-title: "MODULE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO"
-helpviewer_keywords: 
-  - "Структура MODULE_INFO"
+title: "MODULE_INFO | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_INFO
+helpviewer_keywords: MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e5d86bf829c904acd56ca9ab37aa94a0f4038214
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Описывает указанный модуль \(DLL или EXE, сборку\).  
+# <a name="moduleinfo"></a>MODULE_INFO
+Описание определенного модуля (DLL, EXE-файла или сборки).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-typedef struct tagMODULE_INFO {   
-   MODULE_INFO_FIELDS dwValidFields;  
-   BSTR               m_bstrName;  
-   BSTR               m_bstrUrl;  
-   BSTR               m_bstrVersion;  
-   BSTR               m_bstrDebugMessage;  
-   UINT64             m_addrLoadAddress;  
-   UINT64             m_addrPreferredLoadAddress;  
-   DWORD              m_dwSize;  
-   DWORD              m_dwLoadOrder;  
-   FILETIME           m_TimeStamp;  
-   BSTR               m_bstrUrlSymbolLocation;  
-   MODULE_FLAGS       m_dwModuleFlags;  
+```cpp  
+typedef struct tagMODULE_INFO {   
+   MODULE_INFO_FIELDS dwValidFields;  
+   BSTR               m_bstrName;  
+   BSTR               m_bstrUrl;  
+   BSTR               m_bstrVersion;  
+   BSTR               m_bstrDebugMessage;  
+   UINT64             m_addrLoadAddress;  
+   UINT64             m_addrPreferredLoadAddress;  
+   DWORD              m_dwSize;  
+   DWORD              m_dwLoadOrder;  
+   FILETIME           m_TimeStamp;  
+   BSTR               m_bstrUrlSymbolLocation;  
+   MODULE_FLAGS       m_dwModuleFlags;  
 } MODULE_INFO;  
 ```  
   
-```c#  
-public struct MODULE_INFO {   
-   public uint     dwValidFields;  
-   public string   m_bstrName;  
-   public string   m_bstrUrl;  
-   public string   m_bstrVersion;  
-   public string   m_bstrDebugMessage;  
-   public ulong    m_addrLoadAddress;  
-   public ulong    m_addrPreferredLoadAddress;  
-   public uint     m_dwSize;  
-   public uint     m_dwLoadOrder;  
-   public FILETIME m_TimeStamp;  
-   public string   m_bstrUrlSymbolLocation;  
-   public uint     m_dwModuleFlags;  
+```csharp  
+public struct MODULE_INFO {   
+   public uint     dwValidFields;  
+   public string   m_bstrName;  
+   public string   m_bstrUrl;  
+   public string   m_bstrVersion;  
+   public string   m_bstrDebugMessage;  
+   public ulong    m_addrLoadAddress;  
+   public ulong    m_addrPreferredLoadAddress;  
+   public uint     m_dwSize;  
+   public uint     m_dwLoadOrder;  
+   public FILETIME m_TimeStamp;  
+   public string   m_bstrUrlSymbolLocation;  
+   public uint     m_dwModuleFlags;  
 };  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
  dwValidFields  
- Комбинация из пометит [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, которое определяет, какие поля заполнянны.  
+ Сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисления, которое указывает, какие поля заполнены.  
   
- m\_bstrName  
+ m_bstrName  
  Имя модуля.  
   
- m\_bstrUrl  
- URL\-адрес модуля.  
+ m_bstrUrl  
+ URL-адрес модуля.  
   
- m\_bstrVersion  
+ m_bstrVersion  
  Версия модуля.  
   
- m\_bstrDebugMessage  
- Дополнительное сообщение о модуле, например, "символы нельзя будет загрузить."  
+ m_bstrDebugMessage  
+ Дополнительное сообщение о модуле, например, «невозможно загрузить символы.»  
   
- m\_addrLoadAddress  
+ m_addrLoadAddress  
  Адрес загрузки модуля.  
   
- m\_addrPreferredLoadAddress  
+ m_addrPreferredLoadAddress  
  Предпочтительный адрес загрузки модуля.  
   
- m\_dwSize  
+ m_dwSize  
  Размер модуля.  
   
- m\_dwLoadOrder  
+ m_dwLoadOrder  
  Порядок загрузки модуля.  
   
- m\_TimeStamp  
- Файл символов время последнего изменения.  
+ m_TimeStamp  
+ Время последнего изменения файла символов.  
   
- m\_bstrUrlSymbolLocation  
- Расположение файлов символов \(например ".  \\ "\) определено в модуле.  Используется как начальное положение, чтобы найти символы для модуля.  
+ m_bstrUrlSymbolLocation  
+ Расположение файла символов (например, «.\\«) указан в модуле. Используется как начальное положение для найти символы для модуля.  
   
- m\_dwModuleFlags  
- Комбинация из пометит [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md) перечисление, описывающее модуль.  
+ m_dwModuleFlags  
+ Сочетание флагов из [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) перечисление, описывающее модуля.  
   
-## Заметки  
- Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, в котором он заполнен.  
+## <a name="remarks"></a>Примечания  
+ Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, где он заполняется.  
   
- Эта структура соответствует каждому модулю в перечисляемый **Модули** окна.  
+ Эта структура соответствует каждого модуля, перечисленные в **модули** окна.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
- [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
+ [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

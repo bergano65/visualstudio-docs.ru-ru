@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Profiling a SharePoint Application | Microsoft Docs'
+title: "Пошаговое руководство: Профилирование приложения SharePoint | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,74 +16,73 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
 ms.assetid: 0b19d4b7-5fcc-42a2-b411-96eccd00137f
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d5f13883367d68999df59647aba7cedeb48628e1
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: 0b2785e69bbfd6dff17f73b9840b88ad48454e0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-profiling-a-sharepoint-application"></a>Walkthrough: Profiling a SharePoint Application
-  This walkthrough shows how to use the profiling tools in Visual Studio to optimize the performance of a SharePoint application. The example application is a SharePoint feature event receiver that contains an idle loop that degrades the performance of the feature event receiver. The Visual Studio profiler enables you to locate and eliminate the most expensive (slowest-performing) part of the project, also known as the *hot path*.  
+# <a name="walkthrough-profiling-a-sharepoint-application"></a>Пошаговое руководство. Профилирование приложения SharePoint
+  В этом пошаговом руководстве рассказывается, как использовать средства профилирования в Visual Studio, чтобы оптимизировать производительность приложений SharePoint. Примером приложения служит приемник событий компонентов SharePoint, который содержит цикл простоя, что ведет к снижению производительности приемника событий компонентов. Профилировщик Visual Studio позволяет найти и исключить наиболее затратную (медленного выполнения) часть проекта, также известный как *Горячий путь*.  
   
- This walkthrough demonstrates the following tasks:  
+ В этом пошаговом руководстве описаны следующие задачи.  
   
--   [Adding a Feature and Feature Event Receiver](#BKMK_AddFtrandFtrEvntReceiver).  
+-   [Добавление компонента и приемника событий компонента](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Configuring and Deploying the SharePoint Application](#BKMK_ConfigSharePointApp).  
+-   [Настройка и развертывание приложения SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Running the SharePoint Application](#BKMK_RunSPApp).  
+-   [Запуск приложения SharePoint](#BKMK_RunSPApp).  
   
--   [Viewing and Interpreting the Profiling Results](#BKMK_ViewResults).  
+-   [Просмотр и Интерпретация результатов профилирования](#BKMK_ViewResults).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Supported editions of Microsoft Windows and SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые редакции Microsoft Windows и SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
-## <a name="creating-a-sharepoint-project"></a>Creating a SharePoint Project  
- First, create a SharePoint project.  
+## <a name="creating-a-sharepoint-project"></a>Создание проекта SharePoint  
+ Сначала создайте проект SharePoint.  
   
-#### <a name="to-create-a-sharepoint-project"></a>To create a SharePoint project  
+#### <a name="to-create-a-sharepoint-project"></a>Создание проекта SharePoint  
   
-1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
+1.  В строке меню выберите **файл**, **New**, **проекта** для отображения **новый проект** диалоговое окно.  
   
-2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
+2.  Разверните **SharePoint** узел в рамках одного **Visual C#** или **Visual Basic**, а затем выберите **2010** узла.  
   
-3.  In the templates pane, choose the **SharePoint 2010 Project** template.  
+3.  В области шаблонов выберите **проект SharePoint 2010** шаблона.  
   
-4.  In the **Name** box, enter **ProfileTest**, and then choose the **OK** button.  
+4.  В **имя** введите **ProfileTest**, а затем выберите **ОК** кнопки.  
   
-     The **SharePoint Customization Wizard** appears.  
+     **Мастер настройки SharePoint** отображается.  
   
-5.  On the **Specify the site and security level for debugging** page, enter the URL for the SharePoint server site where you want to debug the site definition, or use the default location (http://*system name*/).  
+5.  На **Укажите сайт и уровень безопасности для отладки** введите URL-адрес сайта сервера SharePoint, где требуется отладка определения сайта или использовать расположение по умолчанию (http://*системное имя*/) .  
   
-6.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
+6.  В **Какова степень доверия для этого решения SharePoint?** выберите **развернуть как решение фермы** переключатель.  
   
-     Currently, you can only profile farm solutions. For more information about sandboxed solutions versus farm solutions, see [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md).  
+     В настоящее время можно профилировать только решения фермы. Дополнительные сведения об изолированных решениях и решений фермы см. в разделе [замечания об изолированных решениях](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Choose the **Finish** button. The project appears in **Solution Explorer**.  
+7.  Выберите **Готово** кнопки. Проект отображается в **обозревателе решений**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Adding a Feature and Feature Event Receiver  
- Next, add a feature to the project along with an event receiver for the feature. This event receiver will contain the code to be profiled.  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Добавление компонента и приемника событий компонента  
+ Затем добавьте в проект компонент вместе с приемником событий для этого компонента. Этот приемник событий будет содержать код для профилирования.  
   
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>To add a feature and feature event receiver  
+#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Добавление компонента и приемника событий компонента  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **Features** node, choose **Add Feature**, and leave the name at the default value, **Feature1**.  
+1.  В **обозревателе решений**, откройте контекстное меню для **функции** узел, выберите **добавить компонент**и оставьте имя по умолчанию **Feature1**.  
   
-2.  In **Solution Explorer**, open the shortcut menu for **Feature1**, and then choose **Add Event Receiver**.  
+2.  В **обозревателе решений**, откройте контекстное меню для **Feature1**, а затем выберите **добавить приемник событий**.  
   
-     This adds a code file to the feature with several commented-out event handlers and opens the file for editing.  
+     В результате в компонент будет добавлен и открыт для редактирования файл с кодом, содержащий несколько закомментированных обработчиков событий.  
   
-3.  In the event receiver class, add the following variable declarations.  
+3.  Добавьте следующие объявления переменных в класс приемника событий.  
   
     ```vb  
     ' SharePoint site/subsite.  
@@ -99,7 +96,7 @@ ms.lasthandoff: 08/28/2017
     private string webUrl = "/";  
     ```  
   
-4.  Replace the `FeatureActivated` procedure with the following code.  
+4.  Замените процедуру `FeatureActivated` следующим кодом.  
   
     ```vb  
     Public Overrides Sub FeatureActivated(properties As SPFeatureReceiverProperties)  
@@ -158,7 +155,7 @@ ms.lasthandoff: 08/28/2017
     }  
     ```  
   
-5.  Add the following procedure below the `FeatureActivated`procedure.  
+5.  Добавьте следующую процедуру ниже `FeatureActivated`процедуры.  
   
     ```vb  
   
@@ -185,104 +182,104 @@ ms.lasthandoff: 08/28/2017
     }  
     ```  
   
-6.  In **Solution Explorer**, open the shortcut menu for the project (**ProfileTest**), and then choose **Properties**.  
+6.  В **обозревателе решений**, откройте контекстное меню для проекта (**ProfileTest**), а затем выберите **свойства**.  
   
-7.  In the **Properties** dialog box, choose the **SharePoint** tab.  
+7.  В **свойства** диалогового окна выберите **SharePoint** вкладки.  
   
-8.  In the **Active Deployment Configuration** list, choose **No Activation**.  
+8.  В **активная конфигурация развертывания** выберите **без активации**.  
   
-     Selecting this deployment configuration enables you to manually activate the feature later in SharePoint.  
+     Выбор этой конфигурации развертывания позволяет в дальнейшем вручную активировать компонент в SharePoint.  
   
-9. Save the project.  
+9. Сохраните проект.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a> Configuring and Deploying the SharePoint Application  
- Now that the SharePoint project is ready, configure it and deploy it to the SharePoint server.  
+##  <a name="BKMK_ConfigSharePointApp"></a>Настройка и развертывание приложения SharePoint  
+ Теперь, когда проект SharePoint готов, настройте и разверните его на сервере SharePoint.  
   
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>To configure and deploy the SharePoint application  
+#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Методика настройки и развертывания приложения SharePoint  
   
-1.  On the **Analyze** menu, choose **Launch Performance Wizard**.  
+1.  На **анализ** меню, выберите **запустить мастер производительности**.  
   
-2.  On page one of the **Performance Wizard**, leave the method of profiling as **CPU sampling** and choose the **Next** button.  
+2.  На первой странице из **мастер производительности**, оставьте в качестве метода профилирования **выборки циклов ЦП** и выберите **Далее** кнопки.  
   
-     The other profiling methods can be used in more advanced profiling situations. For more information, see [Understanding Performance Collection Methods](/visualstudio/profiling/understanding-performance-collection-methods).  
+     В более сложных случаях профилирования можно использовать другие методы профилирования. Дополнительные сведения см. в статье [Общие сведения о методах сбора данных по производительности](/visualstudio/profiling/understanding-performance-collection-methods).  
   
-3.  On page two of the **Performance Wizard**, leave the profile target as **ProfileTest** and choose the **Next** button.  
+3.  На второй страницы **мастер производительности**, оставьте целевой профиль как **ProfileTest** и выберите **Далее** кнопки.  
   
-     If a solution has multiple projects, they appear in this list.  
+     Если решение содержит несколько проектов, они появятся в этом списке.  
   
-4.  On page three of the **Performance Wizard**, clear the **Enable Tier Interaction Profiling** check box, and then choose the **Next** button.  
+4.  На странице три **мастер производительности**снимите **включить профилирование уровневого взаимодействия** флажок и нажмите кнопку **Далее** кнопки.  
   
-     The Tier Interaction Profiling (TIP) feature is useful for measuring the performance of applications that query databases and for showing you the number of times a web page is requested. Because that data is not required for this example, we will not enable this feature.  
+     Возможность профилирования уровневого взаимодействия (TIP) полезна для измерения производительности приложений, которые обращаются к базам данных, и для отображения количества запросов какой-либо веб-страницы. Поскольку эти данные не требуются в данном примере, эта возможность не будет использоваться.  
   
-5.  On page four of the **Performance Wizard**, leave the **Launch profiling after the wizard finishes** check box selected, and then choose the **Finish** button.  
+5.  На странице четыре **мастер производительности**, оставьте **запустить профилирование после завершения работы мастера** флажок и нажмите кнопку **Готово** кнопки.  
   
-     The wizard enables application profiling on the server, displays the **Performance Explorer** window, and then builds, deploys, and runs the SharePoint application.  
+     Мастер включает профилирование приложения на сервере, отображает **Обозреватель производительности** окна, а затем собирает, развертывает и запускает приложение SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a> Running the SharePoint Application  
- Activate the feature in SharePoint, triggering the `FeatureActivation` event code to run.  
+##  <a name="BKMK_RunSPApp"></a>Запуск приложения SharePoint  
+ Активируйте компонент SharePoint, запустив код события `FeatureActivation`.  
   
-#### <a name="to-run-the-sharepoint-application"></a>To run the SharePoint application  
+#### <a name="to-run-the-sharepoint-application"></a>Запуск приложения SharePoint  
   
-1.  In SharePoint, open the **Site Actions** menu, and then choose **Site Settings**.  
+1.  В SharePoint, откройте **действия сайта** меню, а затем выберите **параметры сайта**.  
   
-2.  In the **Site Actions** list, choose the **Manage site features** link.  
+2.  В **действия сайта** выберите **управление возможностями сайта** ссылку.  
   
-3.  In the **Features** list, choose the **Activate** button next to **ProfileTest Feature1**.  
+3.  В **функции** выберите **активировать** рядом с **ProfileTest Feature1**.  
   
-     There is a pause when you do this, due to the idle loop being called in the `FeatureActivated` function.  
+     При этом возникнет пауза из-за вызова цикла простоя в функции `FeatureActivated`.  
   
-4.  On the **Quick Launch** bar, choose **Lists** and then in the **Lists** list, choose **Announcements**.  
+4.  На **быстрого запуска** выберите **перечислены** и затем в **перечислены** выберите **объявления**.  
   
-     Notice that a new announcement has been added to the list stating that the feature was activated.  
+     Обратите внимание, что новое извещение о том, что компонент был активирован, добавляется в список.  
   
-5.  Close the SharePoint site.  
+5.  Закройте сайт SharePoint.  
   
-     After you close SharePoint, the profiler creates and displays a Sample Profiling Report and saves it as a .vsp file in the **ProfileTest** project's folder.  
+     После закрытия SharePoint профилировщик создает и отображает отчет о профилировании выборки и сохраняет его как VSP-файл в **ProfileTest** папку проекта.  
   
-##  <a name="BKMK_ViewResults"></a> Viewing and Interpreting the Profiling Results  
- Now that you have run and profiled the SharePoint application, view the test results.  
+##  <a name="BKMK_ViewResults"></a>Просмотр и Интерпретация результатов профилирования  
+ Теперь, после запуска и профилирования приложения SharePoint, просмотрите результаты теста.  
   
-#### <a name="to-view-and-interpret-the-profiling-results"></a>To view and interpret the profiling results  
+#### <a name="to-view-and-interpret-the-profiling-results"></a>Просмотр и интерпретация результатов профилирования  
   
-1.  In the **Functions Doing the Most Individual Work** section of the Sample Profiling Report, notice that `TimeCounter` is near the top of the list.  
+1.  В **функции с максимальной индивидуальной работой** раздел из отчета о профилировании выборки Обратите внимание, что `TimeCounter` расположено в верхней части списка.  
   
-     This location indicates that `TimeCounter` was one of the functions with the highest number of samples, meaning it's one of the biggest performance bottlenecks in the application. This situation isn't surprising, however, because it was purposely designed that way for demonstration purposes.  
+     Это положение означает, что `TimeCounter` является одной из функций с наибольшим количеством выборок, а значит она — одно из самых узких мест производительности приложения. Это не удивительно, поскольку она была специально так разработана в демонстрационных целях.  
   
-2.  In the **Functions Doing the Most Individual Work** section, choose the `ProcessRequest` link to display the cost distribution for the `ProcessRequest` function.  
+2.  В **функции с максимальной индивидуальной работой** выберите `ProcessRequest` ссылку для отображения распределения стоимости для `ProcessRequest` функции.  
   
-     In the **Called functions** section for `ProcessRequest`, notice that the **FeatureActiviated** function is listed as the most expensive called function.  
+     В **функций** , в разделе `ProcessRequest`, обратите внимание, что **FeatureActiviated** указана как наиболее затратная вызываемая функция.  
   
-3.  In the **Called functions** section, choose the **FeatureActivated** button.  
+3.  В **функций** выберите **FeatureActivated** кнопки.  
   
-     In the **Called functions** section for **FeatureActivated**, the `TimeCounter` function is listed as the most expensive called function. In the **Function Code View** pane, the highlighted code (`TimeCounter`) is the hotspot and indicates where the correction is needed.  
+     В **функций** , в разделе **FeatureActivated**, `TimeCounter` указана как наиболее затратная вызываемая функция. В **представление кода функции** выделенный код (`TimeCounter`) является наиболее часто используемым и указывает, где необходимы исправления.  
   
-4.  Close the Sample Profiling Report.  
+4.  Закройте отчет о профилировании выборки.  
   
-     To view the report again at any time, open the .vsp file in the **Performance Explorer** window.  
+     Чтобы просмотреть отчет в любое время, откройте VSP-файл в **Обозреватель производительности** окна.  
   
-## <a name="fixing-the-code-and-reprofiling-the-application"></a>Fixing the Code and Reprofiling the Application  
- Now that hotspot function in the SharePoint application has been identified, fix it.  
+## <a name="fixing-the-code-and-reprofiling-the-application"></a>Исправление кода и перепрофилирование приложения  
+ Теперь, когда наиболее часто используемая функция в приложении SharePoint определена, исправьте ее.  
   
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>To fix the code and reprofile the application  
+#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Исправление кода и перепрофилирование приложения  
   
-1.  In the feature event receiver code, comment out the `TimeCounter` method call in `FeatureActivated` to prevent it from being called.  
+1.  В коде приемника событий компонента закомментируйте вызов метода `TimeCounter` в `FeatureActivated`, чтобы предотвратить его вызов.  
   
-2.  Save the project.  
+2.  Сохраните проект.  
   
-3.  In **Performance Explorer**, open the Targets folder, and then choose the **ProfileTest** node.  
+3.  В **Обозреватель производительности**, откройте папку целевых объектов и выберите **ProfileTest** узла.  
   
-4.  On the **Performance Explorer** toolbar, in the **Actions** tab, choose the **Start Profiling** button.  
+4.  На **Обозреватель производительности** инструментов в **действия** выберите **запустить профилирование** кнопки.  
   
-     If you want to change any of the profiling properties prior to reprofiling the application, choose the **Launch Performance Wizard** button instead.  
+     Если требуется изменить какие-либо свойства профилирования до перепрофилирования приложения, выберите **запустить мастер производительности** вместо кнопки.  
   
-5.  Follow the instructions in the **Running the SharePoint Application** section, previously in this topic.  
+5.  Следуйте инструкциям в **запуск приложения SharePoint** раздел ранее в этом разделе.  
   
-     The feature should activate much faster now that the call to the idle loop has been eliminated. The Sample Profiling Report should reflect this.  
+     Теперь, когда вызов цикла простоя устранен, компонент должен активироваться гораздо быстрее. Отчет о профилировании выборки должен отражать это.  
   
-## <a name="see-also"></a>See Also  
- [Performance Explorer](/visualstudio/profiling/performance-explorer)   
- [Performance Session Overview](/visualstudio/profiling/performance-session-overview)   
- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
- [Find Application Bottlenecks with Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
+## <a name="see-also"></a>См. также  
+ [Обозреватель производительности](/visualstudio/profiling/performance-explorer)   
+ [Общие сведения о сеансе анализа производительности](/visualstudio/profiling/performance-session-overview)   
+ [Руководство по профилированию производительности для начинающих](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
+ [Поиск ограничений приложений с профилировщиком Visual Studio](http://go.microsoft.com/fwlink/?LinkID=137266)  
   
   

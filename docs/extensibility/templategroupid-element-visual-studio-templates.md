@@ -1,72 +1,77 @@
 ---
-title: "Элемент TemplateGroupID (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID"
-helpviewer_keywords: 
-  - "<TemplateGroupID> - элемент [шаблоны Visual Studio]"
-  - "TemplateGroupID - элемент [шаблоны Visual Studio]"
+title: "Элемент TemplateGroupID (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
+helpviewer_keywords:
+- TemplateGroupID element [Visual Studio Templates]
+- <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e8f68b3a64fab519e31876d120f223961c10fffc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент TemplateGroupID (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Указывает, в каком типе проекта будут отображаться шаблоны элементов.  Этот элемент действителен, когда для [ShowByDefault \(шаблоны Visual Studio\)](../extensibility/showbydefault-visual-studio-templates.md) задано значение `false`.  Когда для [ShowByDefault \(шаблоны Visual Studio\)](../extensibility/showbydefault-visual-studio-templates.md) задано значение `true`, шаблон элементов доступен во всех типах проектов.  
+# <a name="templategroupid-element-visual-studio-templates"></a>Элемент TemplateGroupID (шаблоны Visual Studio)
+Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент действителен, когда [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) равно `false`. Когда [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) равно `true`, а затем шаблон элементов доступен во всех типах проектов.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<TemplateGroupID >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <TemplateGroupID> ... </TemplateGroupID>  
 ```  
   
-## Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
  Этот текст задает идентификатор для категории шаблонов элементов.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  `TemplateGroupID` является элементом.  
   
- Значение элемента `TemplateGroupID` используется вместе с регистрацией системы проектов \(HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VisualStudio\\*\<номер\_версии\>*\\Projects\\\) для фильтрации шаблонов, которые появляются в диалоговом окне **Добавление нового элемента**.  
+ Значение `TemplateGroupID` используется вместе с регистрацией системы проектов (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<номер версии >*\Projects\\) для фильтрации шаблонов, которые отображаются в **Добавление нового элемента** диалоговое окно.  
   
-|Значение Visual C\+\+|Значение|  
-|---------------------------|--------------|  
-|VC\-Native|Используется для собственных проектов.  Кроме того, используется по умолчанию, когда не удается определить тип проекта.|  
-|VC\-Managed|Используется для управляемых проектов \(\/clr\).|  
-|VC\-Windows|Используется для всех проектов, нацеленных на платформу Windows \(машинный код\/управляемый код\/хранилище\).|  
-|WinRT\-Native\-UAP|Используется для проектов хранилища Windows 10.|  
-|CodeSharing\-Native|Используется для общих проектов элементов.|  
-|WinRT\-Native\-6.3|Используется для проектов Магазина Windows 8.1.|  
-|WinRT\-Native\-Phone\-6.3|Используется для проектов Магазина Windows Phone 8.1.|  
-|WinRT\-Native|Используется для проектов Магазина Windows 8.0.|  
-|VC\-Android|Используется для проектов Android.|  
+|Значение Visual C++|Значение|  
+|------------------------|-------------|  
+|VC-Native|Используется для собственных проектов. Кроме того, используется по умолчанию, когда не удается определить тип проекта.|  
+|VC-Managed|Используется для управляемых проектов (/clr).|  
+|VC-Windows|Используется для всех проектов, нацеленных на платформу Windows (машинный код/управляемый код/хранилище).|  
+|WinRT-Native-UAP|Используется для проектов хранилища Windows 10.|  
+|CodeSharing-Native|Используется для общих проектов элементов.|  
+|WinRT-Native-6.3|Используется для проектов Магазина Windows 8.1.|  
+|WinRT-Native-Phone-6.3|Используется для проектов Магазина Windows Phone 8.1.|  
+|WinRT-Native|Используется для проектов Магазина Windows 8.0.|  
+|VC-Android|Используется для проектов Android.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

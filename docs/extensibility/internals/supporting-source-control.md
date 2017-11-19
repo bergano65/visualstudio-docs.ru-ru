@@ -1,58 +1,59 @@
 ---
-title: "Поддержка системы управления версиями | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "исходный элемент управления [Visual Studio SDK], поддержка"
+title: "Поддержка системы управления версиями | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a93dbdff19d0a0feaafb549b00968e095690fd78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Поддержка системы управления версиями
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает извлечение файла, возвратов и другие операции системы управления версиями для проектов или редактора.  В качестве клиента системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проектирования для взаимодействия с пакетом системы управления версиями, например  [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], предоставляющий сжатие, управление версиями, а также возможности динамического элемента управления для заданного набора файлов.  
+# <a name="supporting-source-control"></a>Поддержка системы управления версиями
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]поддерживает извлечение файлов с сервера, возвраты и другие операции управления версиями для проекта или редактора. Как клиент системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предназначен для взаимодействия с помощью пакета управления версиями, такие как [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], который предоставляет архивирования, управление версиями и средства управления динамически определяемым набором файлов.  
   
-## В этом подразделе  
- [Модель для пакетов управления версиями](../../extensibility/internals/model-for-source-control-packages.md)  
- Описывает интерфейсы тип проекта должен реализовать для поддержки системы управления версиями.  
+## <a name="in-this-section"></a>Содержание  
+ [Модель для пакетов системы управления версиями](../../extensibility/internals/model-for-source-control-packages.md)  
+ Описываются интерфейсы, необходимо реализовать тип проекта для поддержки системы управления версиями.  
   
- [Решения](../../extensibility/internals/source-control-design-decisions.md)  
- Предоставляет вопросы ответы которых изменяются в качестве реализации типа проекта.  
+ [Проектные решения](../../extensibility/internals/source-control-design-decisions.md)  
+ Предоставляет вопросы, ответы изменения, как реализовать тип проекта.  
   
  [Сведения о конфигурации](../../extensibility/internals/source-control-configuration-details.md)  
- Описывает, как сохранении изменений системы управления версиями, реализация типа проекта.  
+ Описывает, как поддержка системы управления версиями изменяется реализацию данного типа проекта.  
   
- [Дополнительные рекомендации по проектам и редакторы](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
+ [Дополнительные рекомендации для проектов и редакторы](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
  Описывает рекомендации по типам проектов и редакторов.  
   
  [Сведения о времени выполнения](../../extensibility/internals/source-control-runtime-details.md)  
- Описывает, как зарегистрировать проекта, когда пользователь добавляет его в системаа управления.  
+ Описывает, как зарегистрировать проекта, когда пользователь добавляет его в систему управления версиями.  
   
-## Ссылка  
+## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>  
- Указывает на пакет среды или системы управления версиями, что файл должен быть изменен в память или сохранения.  
+ Указывает среду или исходного пакета управления, предназначенное для изменения в памяти или сохранить файл.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>  
- Разрешает проектов и иерархии зарегистрироваться в системе управления версиями и получения сведений о состоянии системы управления версиями.  
+ Позволяет проекты и иерархии регистрирует себя с помощью системы управления версиями и получать сведения о состояние системы управления версиями.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>  
- Реализуемый в системе проектов для предоставления системы управления версиями файлов проектов и элементов проектов.  
+ Реализован в системе проектов для обеспечения системы управления версиями файлы проекта и элементов проекта.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>  
- Используется проектами запросить среду для разрешения добавить, удалить или переименовать файл или каталог в решении.  
+ Используется в проектах, чтобы запросить среду для разрешения на добавление, удаление или переименование файла или каталога в решении.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>  
- Уведомляет клиентов об изменениях, внесенных в проект файлы или каталоги.  
+ Сообщает клиенту об изменениях, внесенных в проект файлы или каталоги.  
   
-## Связанные подразделы  
+## <a name="related-sections"></a>Связанные разделы  
  [Типы проектов](../../extensibility/internals/project-types.md)  
- Общие сведения о проектах как базовые шаблоны [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированная среда разработки \(ide\).  Ссылки на дополнительные разделы, в которых объясняется, как построение проектов, элементов управления и кода следует компилировать.
+ Общие сведения о проектах как основных стандартных блоках [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Приводятся ссылки на дополнительные разделы, в которых объясняется, как проекты контролировать создание и компиляция кода.

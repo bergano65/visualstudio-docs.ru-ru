@@ -4,44 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#DefaultName
-helpviewer_keywords:
-- DefaultName element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#DefaultName
+helpviewer_keywords: DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d1bed42c1afe574f9d50f8598b038ce6055d8332
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e0e65c17eef2242a8732638be680889ea9b55374
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Элемент DefaultName (шаблоны Visual Studio)
 Задает имя, система проектов Visual Studio создаст для проекта или элемента при его создании.  
   
- \<VSTemplate настроек  
- \<TemplateData настроек  
- \<DefaultName настроек  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<DefaultName >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -76,9 +60,9 @@ ms.lasthandoff: 02/22/2017
   
  Для проектов этот элемент задает имя каталога, в котором хранится проект на диске. Для элементов он задает имя файла исходного файла.  
   
- При создании проекта или элемента, можно изменить имя по умолчанию с помощью **имя** вариант, который доступен из любого **новый проект** диалоговое окно или **Add New Item** диалоговое окно.  
+ При создании проекта или элемента, можно изменить имя по умолчанию с помощью **имя** параметр, который доступен из любого **новый проект** диалоговое окно или **Добавление нового элемента** диалоговое окно.  
   
- Если система проектов для создания имени по умолчанию для проекта или элемента не требуется, задайте [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) элемент `False`.  
+ Если система проектов для создания имени по умолчанию для проекта или элемента не требуется, установите [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) элемент `False`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере демонстрируется метаданные для стандартного шаблона элемента для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] класса.  

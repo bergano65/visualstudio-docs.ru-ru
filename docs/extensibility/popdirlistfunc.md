@@ -1,59 +1,63 @@
 ---
-title: "POPDIRLISTFUNC | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "POPLISTFUNC"
-helpviewer_keywords: 
-  - "Функция обратного вызова POPDIRLISTFUNC"
+title: "POPDIRLISTFUNC | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: POPLISTFUNC
+helpviewer_keywords: POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7d5279f16dbc8228f0f116c47e6faa3ab0093472
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# POPDIRLISTFUNC
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Это функция обратного вызова, присвоенное [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) функция для обновления коллекции каталогов и \(необязательно\) имена файлов, чтобы узнать, что в системе управления версиями.  
+# <a name="popdirlistfunc"></a>POPDIRLISTFUNC
+Функция обратного вызова, присвоенное [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) функции, чтобы обновить коллекцию для каталогов и (необязательно) имена файлов, чтобы узнать, что в системе управления версиями.  
   
- `POPDIRLISTFUNC` Обратного вызова должен быть вызван только для этих имен файлов и папок \(в списке, присвоенное `SccPopulateDirList` функции\), которые на самом деле в системе управления версиями.  
+ `POPDIRLISTFUNC` Обратного вызова должен вызываться только для тех имен файлов и папок (в списке, присвоенное `SccPopulateDirList` функции), фактически являются в системе управления версиями.  
   
-## Подпись  
+## <a name="signature"></a>Подпись  
   
-```cpp#  
-typedef BOOL (*POPDIRLISTFUNC)( LPVOID pvCallerData, BOOL bFolder, LPCSTR lpDirectoryOrFileName );  
+```cpp  
+typedef BOOL (*POPDIRLISTFUNC)(  
+   LPVOID pvCallerData,  
+   BOOL bFolder,  
+   LPCSTR lpDirectoryOrFileName  
+);  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  pvCallerData  
- \[in\] Присвоенное значение пользователя [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
+ [in] Пользовательское значение, присвоенное [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
  bFolder  
- \[in\] `TRUE` Если имя в `lpDirectoryOrFileName` является каталогом; в противном случае имя является именем файла.  
+ [in] `TRUE` Если имя в `lpDirectoryOrFileName` является каталогом; в противном случае имя является именем файла.  
   
  lpDirectoryOrFileName  
- \[in\] Полный путь к локальному каталогу или файлу имя, в системе управления версиями.  
+ [in] Полный путь к локальному каталогу или файлу имя, в системе управления версиями.  
   
-## Возвращаемое значение  
- IDE возвращает соответствующего кода ошибки:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Интегрированная среда разработки возвращается код соответствующее сообщение об ошибке:  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Продолжайте обработку.|  
-|SCC\_I\_OPERATIONCANCELED|Остановите обработку.|  
-|SCC\_E\_xxx|Любой соответствующий источник ошибки управления следует остановить обработку.|  
+|-----------|-----------------|  
+|SCC_OK|Продолжайте обработку.|  
+|SCC_I_OPERATIONCANCELED|Останавливает обработку.|  
+|SCC_E_xxx|Любая ошибка соответствующего исходного элемента управления должен остановить обработку.|  
   
-## Заметки  
- Если `fOptions` параметр `SccPopulateDirList` функция содержит `SCC_PDL_INCLUDEFILES` флаг, то список будет содержать имена файлов, а также имена каталогов.  
+## <a name="remarks"></a>Примечания  
+ Если `fOptions` параметр `SccPopulateDirList` функция содержит `SCC_PDL_INCLUDEFILES` флагом список будет содержать имена файлов, а также имена каталогов.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функции обратного вызова, реализуемый интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [Коды ошибок](../extensibility/error-codes.md)

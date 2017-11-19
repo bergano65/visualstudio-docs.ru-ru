@@ -1,24 +1,25 @@
 ---
-title: "Практическое руководство. Оценка выражения XPath | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Как: Оценка выражения XPath | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d549afb96465590a21e516f649d860f23f4056f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Оценка выражения XPath
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В диалоговом окне **QuickWatch** вы можете оценить выражения XPath.Выражение XPath должно быть допустимым и соответствовать рекомендация W3C языка XPath версии 1.0.Текущий XSLT\-контекст, то есть узел `self::node()` в **окне локальных значений**, предоставляет контекст оценки выражения XPath.  
+# <a name="how-to-evaluate-an-xpath-expression"></a>Практическое руководство. Оценка выражения XPath
+Можно оценить выражения XPath с **Быстрая проверка** диалоговое окно. Выражение XPath должно быть допустимым и соответствовать рекомендация W3C языка XPath версии 1.0. Текущий контекст XSLT — то есть `self::node()` узел в **локальные** окно — предоставляет контекст оценки выражения XPath.  
   
  В следующем списке перечислены функции, которые поддерживаются при оценке выражения XPath.  
   
@@ -29,27 +30,27 @@ caps.handback.revision: 2
 -   Не поддерживаются определяемые пользователем функции.  
   
 > [!NOTE]
->  Следующая процедура использует приведенные ниже файлы Avg.xsl и books.xml из раздела [Пошаговое руководство: отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md).  
+>  В следующей процедуре используются файлы belowAvg.xsl и books.xml [Пошаговое руководство: отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) раздела.  
   
-### Оценка выражения XPath  
+### <a name="to-evaluate-an-xpath-expression"></a>Оценка выражения XPath  
   
 1.  Добавьте точку останова в начальный тег `xsl:if`.  
   
-2.  На панели инструментов редактора XML нажмите кнопку **Отладка XSL**.  
+2.  Нажмите кнопку **Отладка XSL** на панели инструментов редактора XML.  
   
      Отладчик начинается и останавлявается на теге `xsl:if`.  
   
-3.  Щелкните правой кнопкой мыши и выберите пункт **QuickWatch**.  
+3.  Щелкните правой кнопкой мыши и выберите **Быстрая проверка**.  
   
-     Откроется диалоговое окно **QuickWatch**.  
+     **Быстрая проверка** диалоговое окно.  
   
-4.  Введите `./price/text()` в поле **Выражение** в диалоговом окне **QuickWatch** и нажмите кнопку **Переоценить**.  
+4.  Введите `./price/text()` в **выражение** поле **Быстрая проверка** диалоговое окно и нажмите кнопку **пересчитать**.  
   
-     В поле **Значение** появится узел цены текущей книги.  
+     Цены на текущий узел книги отображается в **значение** поле.  
   
-5.  Измените выражение XPath на `./price/text() < $bookAverage` и нажмите кнопку **Переоценить**.  
+5.  Измените выражение XPath для `./price/text() < $bookAverage` и нажмите кнопку **пересчитать**.  
   
-     Поле **Значение** показывает, что оценка выражения XPath дает значение `true`.  
+     **Значение** показывает, что оценка выражения XPath дает значение `true`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Отладка XSLT](../xml-tools/debugging-xslt.md)

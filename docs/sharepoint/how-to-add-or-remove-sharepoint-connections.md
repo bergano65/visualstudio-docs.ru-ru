@@ -1,53 +1,55 @@
 ---
-title: "Практическое руководство. Добавление и удаление подключений SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Подключения SharePoint [разработка приложений SharePoint в Visual Studio]"
-  - "разработка приложений SharePoint в Visual Studio, просмотр сайтов SharePoint"
-  - "разработка приложений SharePoint в Visual Studio, Подключения SharePoint"
+title: "Как: Добавление или удаление подключений SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, browsing SharePoint sites
+- SharePoint development in Visual Studio, SharePoint Connections
+- SharePoint Connections [SharePoint development in Visual Studio]
 ms.assetid: 4d551be0-2124-4481-b398-481ded9b5d46
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 775f342463e32d73cfaee6e492c1417753ec159f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление и удаление подключений SharePoint
-  Обозреватель серверов позволяет просматривать сайты SharePoint и подключения данных.  Впрочем, чтобы можно было просматривать содержимое сайта SharePoint, необходимо добавить его в узел **Подключения SharePoint**.  
+# <a name="how-to-add-or-remove-sharepoint-connections"></a>Практическое руководство. Добавление и удаление подключений SharePoint
+  Обозреватель серверов позволяет просматривать сайты SharePoint, а также для подключения к данным. Тем не менее, чтобы можно было просматривать содержимое сайта SharePoint необходимо добавить его в **подключения SharePoint** узла.  
   
-### Добавление сайта SharePoint в узел "Подключения SharePoint"  
+### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>Чтобы добавить сайт SharePoint для узла подключений SharePoint  
   
-1.  В строке меню выберите **Вид**, **Обозреватель серверов**.  
+1.  В строке меню выберите **представление**, **обозревателя серверов**.  
   
-2.  В **Обозреватель серверов** выберите узел **Подключения SharePoint**, а затем выберите в строке меню **Сервис**, **Добавление подключения к SharePoint**.  
+2.  В **обозревателя серверов**, выберите **подключения SharePoint** узел, а затем в строке меню выберите **средства**, **Добавление подключения SharePoint**.  
   
-3.  В поле **Добавление подключения к SharePoint** введите [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] сайта SharePoint \(например, http:\/\/testserver\/sites\/unittests\).  
+3.  В **Добавление подключения SharePoint** введите [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] для сайта SharePoint (например, http://testserver/sites/unittests).  
   
-### Удаление сайта SharePoint из узла "Подключения SharePoint"  
+### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>Для удаления сайта SharePoint из узла подключений SharePoint  
   
-1.  В меню выберите **Вид**, **Обозреватель серверов**, чтобы открыть **Обозреватель серверов**.  
+1.  В строке меню выберите **представление**, **обозревателя серверов** Открытие **обозревателя серверов**.  
   
-2.  Разверните узел **Подключения SharePoint** и найдите сайт SharePoint, который требуется удалить из **Обозревателя серверов**.  
+2.  Разверните **подключения SharePoint** узел, чтобы показать сайта SharePoint, который требуется удалить из **обозревателя серверов**.  
   
-3.  Выберите сайт, а затем в строке меню выберите **Изменить**, **Удалить**.  
+3.  Выберите сайт, а затем в строке меню выберите **изменить**, **удалить**.  
   
     > [!NOTE]  
-    >  При этом удаляется не сам сайт, а только его подключение в **Обозревателе серверов**.  
+    >  Этот шаг не удаляет сам сайт; Удаляет подключение из **обозревателя серверов**.  
   
-## См. также  
- [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
+## <a name="see-also"></a>См. также  
+ [Просмотр подключений SharePoint с помощью обозревателя сервера](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
   
   

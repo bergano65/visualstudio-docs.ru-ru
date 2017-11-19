@@ -1,107 +1,81 @@
 ---
-title: "Привязка элементов управления Windows Forms к данным в Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Windows Forms], источники данных"
-  - "данные [Windows Forms], отображение"
-  - "источники данных, отображение данных"
-  - "отображение данных в формах"
-  - "отображение данных, Windows Forms"
-  - "формы, отображение данных"
-  - "Windows Forms, привязка данных"
-  - "Windows Forms, отображение данных"
+title: "Привязка элементов управления Windows Forms к данным в Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 11/03/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Windows Forms], data sources
+- Windows Forms, data binding
+- Windows Forms, displaying data
+- displaying data on forms
+- forms, displaying data
+- data sources, displaying data
+- displaying data, Windows Forms
+- data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-caps.latest.revision: 37
-caps.handback.revision: 31
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "37"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5936edd6096bd708dda1b03f60f94cea3d6c1e5b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-# Привязка элементов управления Windows Forms к данным в Visual Studio
-Для пользователей приложения данные можно отображать путем привязки данных к Windows Forms.  Чтобы создать эти привязанные к данным элементы управления, можно перетащить элементы из окна **Источники данных** в конструктор Windows Forms среды Visual Studio.  В этом разделе описываются некоторые из наиболее распространенных задач, инструментов и классов, которые можно использовать для создания связанных с данными приложений Windows Forms.  
+# <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
+Для пользователей приложения данные можно отображать путем привязки данных в Windows Forms. Чтобы создать эти элементы управления с привязкой к данным, можно перетаскивать элементы из **источники данных** окна в конструкторе Windows Forms в Visual Studio.
   
- Общие сведения о методах создания связанных с данными элементов управления в Visual Studio см. в разделе [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  Дополнительные сведения о привязке данных в Windows Forms см. в разделе [Связывание элементов управления Windows Forms с данными](../Topic/Windows%20Forms%20Data%20Binding.md).  
+![Операции перетаскивания источника данных](../data-tools/media/raddata-data-source-drag-operation.png "raddata источника данных операции перетаскивания")
+
+Прежде чем перетащить элементы, можно задать тип элемента управления, который вы хотите привязать к. В зависимости от того, выбрана ли таблица само себя или отдельного столбца отображаются различные значения.  Можно также задать значения по умолчанию. Для таблицы «Подробности» означает, что каждый столбец привязывается к отдельным элементом управления.  
+
+![Привязать источник данных к DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata привязки источника данных DataGridView")  
   
-## Задачи отображения данных на форме в приложении Windows  
- В следующей таблице приведены общие задачи, относящиеся к отображению данных в форме приложения Windows.  
+## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource и элементы управления BindingNavigator
+Компонент <xref:System.Windows.Forms.BindingSource> служит двум целям. Во-первых он обеспечивает уровень абстракции, при выполнении привязки элементов управления к данным. Элементы управления в форме связаны с <xref:System.Windows.Forms.BindingSource> компонента, а не напрямую к источнику данных. Во-вторых он может управлять коллекцией объектов. Добавление типа в <xref:System.Windows.Forms.BindingSource> создает список этого типа.  
   
-|Задача|Дополнительные сведения|  
-|------------|-----------------------------|  
-|Создайте элементы управления с привязкой к данным<br /><br /> Привязка существующих элементов управления к данным|[Практическое руководство. Привязка элементов управления Windows Forms к данным](../data-tools/bind-windows-forms-controls-to-data.md)|  
-|Создание элементов управления, отображающих связанные данные в иерархическом отношении: когда пользователь выбирает запись данных в одном элементе управления, другой элемент управления отображает связанные данные для выбранной записи|[Практическое руководство. Отображение связанных данные в приложении Windows Forms](../Topic/How%20to:%20Display%20Related%20Data%20in%20a%20Windows%20Forms%20Application.md)|  
-|Создание *таблицы подстановки*.  Таблица подстановки содержит сведения из одной таблицы на основе значения поля внешнего ключа другой таблицы.|[Практическое руководство. Создание таблиц подстановки в приложениях Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)|  
-|Задание способа управления отображаемыми данными|[Formatting and Advanced Binding Dialog Box](http://msdn.microsoft.com/ru-ru/42638120-9e6f-436b-985f-4036664230fd)|  
-|Изменение поведения функции интеллектуального захвата в окне **Источники данных**|[Практическое руководство. Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
-|Добавление элементов управления, выполняющих параметризованный запрос|[Практическое руководство. Добавление параметризованного запроса в приложение Windows Forms](../Topic/How%20to:%20Add%20a%20Parameterized%20Query%20to%20a%20Windows%20Forms%20Application.md)|  
-|Указание столбца для использования в качестве элемента управления изображениями в базе данных|[Практическое руководство. Привязка элементов управления к рисункам из базы данных](../data-tools/bind-controls-to-pictures-from-a-database.md)|  
-|Фильтрация и сортировка данных в наборе данных|[Практическое руководство. Фильтрация и сортировка данных в приложении Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
+Дополнительные сведения о <xref:System.Windows.Forms.BindingSource> компонента, см.:  
   
- В следующих разделах предоставлены примеры привязки элементов управления Windows Forms к данным.  
+-   [Компонент BindingSource](/dotnet/framework/winforms/controls/bindingsource-component)  
   
- [Пошаговое руководство. Отображение данных на форме в приложении Windows](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)  
- Пошаговые инструкции по запросу данных из базы данных и отображению данных в форме Windows Forms.  
+-   [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
- [Пошаговое руководство. Отображение связанных данных на форме в приложении Windows](../Topic/Walkthrough:%20Displaying%20Related%20Data%20on%20a%20Windows%20Form.md)  
- Пошаговые инструкции по отображению данных из двух связанных таблиц и отображению данных в форме Windows Forms.  
+-   [Архитектура компонента BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
   
- [Практическое руководство. Создание формы Windows Forms для поиска данных](../data-tools/create-a-windows-form-to-search-data.md)  
- Пошаговые инструкции по способам создания форм Windows Forms для поиска в базе данных на основе значений, введенных пользователем.  
+[Элемент управления BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) предоставляют пользовательский интерфейс для перемещения по данным, отображаемым в приложении Windows.
+
+## <a name="bind-to-data-in-a-datagridview-control"></a>Привязка к данным в элементе управления DataGridView  
+Для [элемента управления DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), вся таблица привязана к одного элемента управления. При перетаскивании элемента управления DataGridView в форму, средство удаления для перемещения по записям (<xref:System.Windows.Forms.BindingNavigator>) также отображается. Объект [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов. На следующем рисунке TableAdapterManager добавляется, так как в таблице Customers имеет отношение к таблице заказов. Эти переменные все объявляются в автоматически сформированном коде как закрытые члены в класс формы. Автоматически созданный код для заполнения DataGridView находится в обработчике событий form_load. Код для сохранения данных для обновления базы данных находится в обработчике событий Save для BindingNavigator. Можно переместить или изменить этот код как требуется.  
   
- [Пошаговое руководство. Создание таблицы подстановок в приложении Windows Forms](../Topic/Walkthrough:%20Creating%20a%20Lookup%20Table%20in%20a%20Windows%20Forms%20Application.md)  
- Пошаговые инструкции по способам отображения данных из одной таблицы, основанных на данных, выбранных в другой таблице.  
+![GridView с BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView с BindingNavigator")  
   
- [Пошаговое руководство. Передача данных между формами Windows Forms](../data-tools/pass-data-between-forms.md)  
- Пошаговые инструкции по передаче значений из одной формы в другую форму приложения.  
+Можно настроить поведение DataGridView и BindingNavigator, щелкнув на смарт-тега в правом верхнем углу каждого:  
   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)  
- Пошаговые сведения о создании пользовательского элемента управления, который можно использовать в окне **Источники данных**.  
+![DataGridView и привязки навигатор смарт-теги](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView и привязки навигатор смарт-теги")  
   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms со сложной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)  
- Пошаговые сведения о создании пользовательского элемента управления, который можно использовать в окне **Источники данных**.  
+Если элементы управления приложения требуется не доступен в **источники данных** окна, можно добавить элементы управления. Дополнительные сведения см. в разделе [добавить пользовательские элементы управления в окно источников данных](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)  
- Пошаговые сведения о создании пользовательского элемента управления, который можно использовать в окне **Источники данных**.  
+Можно также перетаскивать элементы из **источники данных** окна на элементы управления на форму для привязки элемента управления к данным. Элемент управления, который уже привязан к данным содержит данные, восстанавливает привязку к элементу, недавно перетаскивания его. Допустимые целевые объекты перетаскивания, элементы управления должны быть рисунках базовый тип данных элемента, перетаскиваемые на него из **источники данных** окна. Например, не допускается перетащите элемент, имеющий тип данных <xref:System.DateTime> на <xref:System.Windows.Forms.CheckBox>, так как <xref:System.Windows.Forms.CheckBox> не может отображать даты.  
   
-## Cмарт\-теги данных  
- Смарт\-теги, относящиеся к работе с данными, доступны для большого числа элементов управления.  Когда определенные элементы управления добавляются в форму, набор возможных действий, относящихся к данным, доступен через смарт\-теги.  
+## <a name="bind-to-data-in-individual-controls"></a>Привязка к данным в отдельных элементах управления  
+При привязке источника данных «Подробности», каждый столбец в наборе данных привязан к отдельным элементом управления.  
   
-## Компонент BindingSource  
- Компонент <xref:System.Windows.Forms.BindingSource> используется для двух задач.  Во\-первых, он обеспечивает уровень абстракции при выполнении привязки к данным элементов управления в форме.  Элементы управления на форме привязаны к компоненту <xref:System.Windows.Forms.BindingSource> \(в отличие от непосредственной привязки к источнику данных\).  
+![Привязать источник данных к сведения](../data-tools/media/raddata-bind-data-source-to-details.png "raddata привязки источника данных подробные сведения")  
   
- Во\-вторых, он может управлять коллекцией объектов.  Добавление типа для <xref:System.Windows.Forms.BindingSource> создает список этого типа.  
+> [!IMPORTANT]
+> Обратите внимание, что на предыдущем рисунке, перетащите из таблицы Customers, не из таблицы Orders свойства заказов. Путем привязки к свойству Customer.Orders команд перехода, внесенные в элемент управления DataGridView, немедленно отражаются в элементы управления сведениями. При перетаскивании таблицы Заказы, элементы управления по-прежнему будет привязываться к набору данных, но не они не будут синхронизированы с DataGridView.  
   
- Дополнительные сведения о компоненте <xref:System.Windows.Forms.BindingSource> см. в следующих разделах.  
+На следующей иллюстрации по умолчанию элементы управления с привязкой к данным, которые добавляются в форму после свойство заказов в таблице Customers привязывается к «Подробности» в **источники данных** окна.  
   
--   [Компонент BindingSource](../Topic/BindingSource%20Component.md)  
+![Таблица Orders, привязанный к сведения](../data-tools/media/raddata-orders-table-bound-to-details.png "raddata таблицу Orders, привязанный к подробные сведения")  
   
--   [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+Обратите внимание, что каждый элемент управления имеет смарт-тега. Этот тег включает настройки, относящиеся к этому элементу управления только.
   
--   [Архитектура компонента BindingSource](../Topic/BindingSource%20Component%20Architecture.md)  
-  
-## Элемент управления BindingNavigator  
- Данный компонент предоставляет пользовательский интерфейс для перемещения по данным, отображаемым Windows\-приложением.  Для получения дополнительной информации см. [Элемент управления BindingNavigator](../Topic/BindingNavigator%20Control%20\(Windows%20Forms\).md).  
-  
-## Элемент управления DataGridView  
- Элемент управления <xref:System.Windows.Forms.DataGridView> позволяет отображать и редактировать табличные данные из различных типов источников данных.  Можно привязать данные к объекту <xref:System.Windows.Forms.DataGridView> с помощью свойства <xref:System.Windows.Forms.DataGridView.DataSource%2A>.  Для получения дополнительной информации см. [Общие сведения об элементе управления DataGridView](../Topic/DataGridView%20Control%20Overview%20\(Windows%20Forms\).md).  
-  
-## См. также  
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
- [окно "Источники данных"](../Topic/Data%20Sources%20Window.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Пошаговое руководство. Отображение данных на форме в приложении Windows](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)   
- [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md)   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms со сложной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+## <a name="see-also"></a>См. также
+[Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+[Привязка данных в Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

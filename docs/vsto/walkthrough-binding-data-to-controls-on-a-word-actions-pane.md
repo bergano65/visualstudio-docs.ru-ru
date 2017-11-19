@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Binding Data to Controls on a Word Actions Pane | Microsoft Docs'
+title: "Пошаговое руководство: Привязка данных к элементам управления в панели действий Word | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,225 +18,230 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], binding controls
 - smart documents [Office development in Visual Studio], data binding
 ms.assetid: 5ef72fc7-412b-4454-9890-4479a13ee7f9
-caps.latest.revision: 64
-author: kempb
-ms.author: kempb
+caps.latest.revision: "64"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2c2504808ee3442e531d359059796b8117ab64a1
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 6a70bd325a5a9e20f9a67e59f81c63ce4b1ddcc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-binding-data-to-controls-on-a-word-actions-pane"></a>Walkthrough: Binding Data to Controls on a Word Actions Pane
-  This walkthrough demonstrates data binding to controls on an actions pane in Word. The controls demonstrate a master/detail relation between tables in a SQL Server database.  
+# <a name="walkthrough-binding-data-to-controls-on-a-word-actions-pane"></a>Пошаговое руководство. Привязка данных к элементам управления в панели действий Word
+  В этом пошаговом руководстве демонстрируется привязка данных к элементам управления в панели действий в Word. Элементы управления показывают отношение «Основной/подробности» между таблицами в базе данных SQL Server.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Creating an actions pane with Windows Forms controls that are bound to data.  
+-   Создание панели действий с элементами управления Windows Forms, которые привязаны к данным.  
   
--   Using a master/detail relationship to display data in the controls.  
+-   Использование связи главного и подчиненного представлений для отображения данных в элементах управления.  
   
--   Show the actions pane when the application opens.  
+-   Отображение панели действий при открытии приложения.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
--   Access to a server with the Northwind SQL Server sample database.  
+-   Доступ к серверу с образцом базы данных "Борей" SQL Server.  
   
--   Permissions to read from and write to the SQL Server database.  
+-   Разрешения на чтение и запись в базу данных SQL Server.  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create a Word Document project.  
+## <a name="creating-the-project"></a>Создание проекта  
+ Первым шагом является создание документа Word.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Create a Word Document project with the name **My Word Actions Pane**. In the wizard, select **Create a new document**.  
+1.  Создайте проект документа Word с именем **панель действий Word**. В мастере выберите **создания документа**.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Word document in the designer and adds the **My Word Actions Pane** project to **Solution Explorer**.  
+     Visual Studio откроет новый документ Word в конструкторе и добавляет **панель действий Word** проекта **обозревателе решений**.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Adding Controls to the Actions Pane  
- For this walkthrough, you need an actions pane control that contains data-bound Windows Forms controls. Add a data source to the project, and then drag controls from the **Data Sources** window to the actions pane control.  
+## <a name="adding-controls-to-the-actions-pane"></a>Добавление элементов управления в панели действий  
+ В данном пошаговом руководстве требуется элемент управления панели действий, который содержит элементы управления Windows Forms с привязкой к данным. Добавление источника данных в проект, а затем перетащите элементы управления из **источники данных** окна элемент управления панели действий.  
   
-#### <a name="to-add-an-actions-pane-control"></a>To add an actions pane control  
+#### <a name="to-add-an-actions-pane-control"></a>Чтобы добавить элемент управления панели действий  
   
-1.  Select the **My Word Actions Pane** project in **Solution Explorer**.  
+1.  Выберите **панель действий Word** проекта в **обозревателе решений**.  
   
-2.  On the **Project** menu, click **Add New Item**.  
+2.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
   
-3.  In the **Add New Item** dialog box, select **Actions Pane Control**, name it **ActionsControl**, and then click **Add**.  
+3.  В **Добавление нового элемента** установите флажок **элемент управления панели действий**, назовите его **ActionsControl**, а затем нажмите кнопку **добавить**.  
   
-#### <a name="to-add-a-data-source-to-the-project"></a>To add a data source to the project  
+#### <a name="to-add-a-data-source-to-the-project"></a>Добавление источника данных в проект  
   
-1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
-  
-    > [!NOTE]  
-    >  If **Show Data Sources** is not available, click the Word document and then check again.  
-  
-2.  Click **Add New Data Source** to start the **Data Source Configuration Wizard**.  
-  
-3.  Select **Database** and then click **Next**.  
-  
-4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
-  
-5.  Click **Next**.  
-  
-6.  Clear the option to save the connection if it is selected, and then click **Next**.  
-  
-7.  Expand the **Tables** node in the **Database objects** window.  
-  
-8.  Select the check box next to the **Suppliers** and **Products** tables.  
-  
-9. Click **Finish**.  
-  
- The wizard adds the **Suppliers** table and **Products** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
-  
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>To add data-bound Windows Forms controls to an actions pane control  
-  
-1.  In the **Data Sources** window, expand the **Suppliers** table.  
-  
-2.  Click the drop-down arrow on the **Company Name** node, and select **ComboBox**.  
-  
-3.  Drag **CompanyName** from the **Data Sources** window to the actions pane control.  
-  
-     A <xref:System.Windows.Forms.ComboBox> control is created on the actions pane control. At the same time, a <xref:System.Windows.Forms.BindingSource> named `SuppliersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> are added to the project in the component tray.  
-  
-4.  Select `SuppliersBindingNavigator` in the **Component** tray and press DELETE. You will not use the `SuppliersBindingNavigator` in this walkthrough.  
+1.  Если окно **Источники данных** не отображается, откройте его, выбрав в строке меню пункты **Вид**, **Другие окна**, **Источники данных**.  
   
     > [!NOTE]  
-    >  Deleting the `SuppliersBindingNavigator` does not remove all of the code that was generated for it. You can remove this code.  
+    >  Если **Показать источники данных** не доступен, щелкните документ Word и попробуйте снова.  
   
-5.  Move the combo box so that it is under the label and change the **Size** property to **171, 21**.  
+2.  Нажмите кнопку **добавить новый источник данных** запуск **мастер настройки источника данных**.  
   
-6.  In the **Data Sources** window, expand the **Products** table that is a child of the **Suppliers** table.  
+3.  Выберите **базы данных** и нажмите кнопку **Далее**.  
   
-7.  Click the drop-down arrow on the **ProductName** node, and select **ListBox**.  
+4.  Выберите подключение данных к базе данных Northwind SQL Server или добавьте новое подключение с помощью **новое подключение** кнопки.  
   
-8.  Drag **ProductName** to the actions pane control.  
+5.  Нажмите кнопку **Далее**.  
   
-     A <xref:System.Windows.Forms.ListBox> control is created on the actions pane control. At the same time, a <xref:System.Windows.Forms.BindingSource> named `ProductBindingSource` and a table adapter are added to the project in the component tray.  
+6.  Удалить параметр, чтобы сохранить подключение, если он установлен, а затем щелкните **Далее**.  
   
-9. Move the list box so that it is under the label and change the **Size** property to **171,95**.  
+7.  Разверните **таблиц** узел в **объектов базы данных** окна.  
   
-10. Drag a <xref:System.Windows.Forms.Button> from the **Toolbox** onto the actions pane control and place it below the list box.  
+8.  Установите флажок рядом с **поставщики** и **продуктов** таблиц.  
   
-11. Right-click the <xref:System.Windows.Forms.Button>, click **Properties** on the shortcut menu, and change the following properties.  
+9. Нажмите кнопку **Готово**.  
   
-    |Property|Value|  
+ Мастер добавит **поставщики** таблицы и **продуктов** таблицы, к **источники данных** окна. Он также добавляет типизированный набор данных в проект, который является видимым в **обозревателе решений**.  
+  
+#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Для добавления элементов управления Windows Forms с привязкой к данным элемента управления панели действий  
+  
+1.  В **источники данных** окна, разверните **поставщики** таблицы.  
+  
+2.  Щелкните стрелку раскрывающегося списка в **название компании** , а затем установите **ComboBox**.  
+  
+3.  Перетащите **CompanyName** из **источники данных** окна элемент управления панели действий.  
+  
+     Объект <xref:System.Windows.Forms.ComboBox> на элемент управления панели действий создается элемент управления. В то же время <xref:System.Windows.Forms.BindingSource> с именем `SuppliersBindingSource`, адаптер таблиц и <xref:System.Data.DataSet> добавляются в проект в области компонентов.  
+  
+4.  Выберите `SuppliersBindingNavigator` в **компонент** и нажмите клавишу DELETE. Вы не будете использовать `SuppliersBindingNavigator` в этом пошаговом руководстве.  
+  
+    > [!NOTE]  
+    >  Удаление `SuppliersBindingNavigator` не удаляет весь код, созданный для него. Этот код можно удалить.  
+  
+5.  Перетащите поле со списком под метку и изменение **размер** свойства **171, 21**.  
+  
+6.  В **источники данных** окна, разверните **продуктов** таблица, которая является потомком **поставщики** таблицы.  
+  
+7.  Щелкните стрелку раскрывающегося списка в **ProductName** , а затем установите **ListBox**.  
+  
+8.  Перетащите **ProductName** элемент управления панели действий.  
+  
+     Объект <xref:System.Windows.Forms.ListBox> на элемент управления панели действий создается элемент управления. В то же время <xref:System.Windows.Forms.BindingSource> с именем `ProductBindingSource` и адаптер таблицы добавляются в проект в области компонентов.  
+  
+9. Перетащите поле списка, чтобы оно было под метку и изменение **размер** свойства **171,95**.  
+  
+10. Перетащите <xref:System.Windows.Forms.Button> из **элементов** панели действий управления и поместите его под полем списка.  
+  
+11. Щелкните правой кнопкой мыши <xref:System.Windows.Forms.Button>, нажмите кнопку **свойства** в контекстном меню и измените следующие свойства.  
+  
+    |Свойство|Значение|  
     |--------------|-----------|  
-    |**Name**|**Insert**|  
-    |**Text**|**Insert**|  
+    |**Имя**|**Вставка**|  
+    |**Text**|**Вставка**|  
   
-12. Resize the user control to fit the controls.  
+12. Изменение размера пользовательского элемента управления для размещения элементов управления.  
   
-## <a name="setting-up-the-data-source"></a>Setting Up the Data Source  
- To set up the data source, add code to the <xref:System.Windows.Forms.UserControl.Load> event of the actions pane control to fill the control with data from the <xref:System.Data.DataTable>, and set the <xref:System.Windows.Forms.Binding.DataSource%2A> and <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties for each control.  
+## <a name="setting-up-the-data-source"></a>Настройка источника данных  
+ Настройка источника данных, добавьте код для <xref:System.Windows.Forms.UserControl.Load> события элемента управления панели действий для заполнения элемента управления данными из <xref:System.Data.DataTable>и задайте <xref:System.Windows.Forms.Binding.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойства для каждого элемента управления.  
   
-#### <a name="to-load-the-control-with-data"></a>To load the control with data  
+#### <a name="to-load-the-control-with-data"></a>Для загрузки элемента управления данными  
   
-1.  In the <xref:System.Windows.Forms.UserControl.Load> event handler of the `ActionsControl` class, add the following code.  
+1.  В <xref:System.Windows.Forms.UserControl.Load> обработчик событий `ActionsControl` класса, добавьте следующий код.  
   
-     [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]  [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
+     [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
+     [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
   
-2.  In C#, you must attach the event handler to the <xref:System.Windows.Forms.UserControl.Load> event. You can place this code in the `ActionsControl` constructor, after the call to `InitializeComponent`. For more information about how to create event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  В C# необходимо присоединить обработчик событий к <xref:System.Windows.Forms.UserControl.Load> событий. Можно заменить этот код в `ActionsControl` конструктор после вызова `InitializeComponent`. Дополнительные сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
-#### <a name="to-set-data-binding-properties-of-the-controls"></a>To set data binding properties of the controls  
+#### <a name="to-set-data-binding-properties-of-the-controls"></a>Чтобы задать свойства привязки данных элементов управления  
   
-1.  Select the `CompanyNameComboBox` control.  
+1.  Выберите элемент управления `CompanyNameComboBox`.  
   
-2.  In the **Properties** window, click the button to the right of the **DataSource** property, and select **suppliersBindingSource**.  
+2.  В **свойства** окно, нажмите кнопку справа от **DataSource** , а затем выберите **suppliersBindingSource**.  
   
-3.  Click the button to the right of the **DisplayMember** property, and select **CompanyName**.  
+3.  Нажмите кнопку справа от **DisplayMember** , а затем выберите **CompanyName**.  
   
-4.  Expand the **DataBindings** property, click the button to the right of the **Text** property, and select **None**.  
+4.  Разверните **DataBindings** свойства, нажмите кнопку справа от **текст** , а затем выберите **нет**.  
   
-5.  Select the `ProductNameListBox` control.  
+5.  Выберите элемент управления `ProductNameListBox`.  
   
-6.  In the **Properties** window, click the button to the right of the **DataSource** property, and select **productsBindingSource**.  
+6.  В **свойства** окно, нажмите кнопку справа от **DataSource** , а затем выберите **productsBindingSource**.  
   
-7.  Click the button to the right of the **DisplayMember** property, and select **ProductName**.  
+7.  Нажмите кнопку справа от **DisplayMember** , а затем выберите **ProductName**.  
   
-8.  Expand the **DataBindings** property, click the button to the right of the **SelectedValue** property, and select **None**.  
+8.  Разверните **DataBindings** свойства, нажмите кнопку справа от **SelectedValue** , а затем выберите **нет**.  
   
-## <a name="adding-a-method-to-insert-data-into-a-table"></a>Adding a Method to Insert Data into a Table  
- The next task is to read the data from the bound controls and populate a table in your Word document. First, create a procedure for formatting the headings in the table, and then add the `AddData` method to create and format a Word table.  
+## <a name="adding-a-method-to-insert-data-into-a-table"></a>Добавление метода для вставки данных в таблицу  
+ Следующей задачей является чтение данных из связанных элементов управления и заполнение таблицы в документе Word. Во-первых, создайте процедуру для форматирования заголовков таблицы, а затем добавьте `AddData` метод для создания и форматирования таблицы Word.  
   
-#### <a name="to-format-the-table-headings"></a>To format the table headings  
+#### <a name="to-format-the-table-headings"></a>Форматирование заголовков таблицы  
   
-1.  In the `ActionsControl` class, create a method to format the headings of the table.  
+1.  В `ActionsControl` класса, создайте метод для форматирования заголовков таблицы.  
   
-     [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]  [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]  
+     [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]
+     [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]  
   
-#### <a name="to-create-the-table"></a>To create the table  
+#### <a name="to-create-the-table"></a>Для создания таблицы  
   
-1.  In the `ActionsControl` class, write a method that will create a table if one does not already exist, and add data from the actions pane to the table.  
+1.  В `ActionsControl` класса, написать метод, который создаст таблицу, если он еще не существует и добавить в таблицу данные из области действия.  
   
-     [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]  [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]  
+     [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]
+     [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]  
   
-#### <a name="to-insert-text-into-a-word-table"></a>To insert text into a Word table  
+#### <a name="to-insert-text-into-a-word-table"></a>Вставка текста в таблицы Word  
   
-1.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the **Insert** button.  
+1.  Добавьте следующий код в <xref:System.Windows.Forms.Control.Click> обработчик событий **вставить** кнопки.  
   
-     [!code-vb[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#4)]  [!code-csharp[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#4)]  
+     [!code-vb[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#4)]
+     [!code-csharp[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#4)]  
   
-2.  In C#, you must create an event handler for the <xref:System.Windows.Forms.Control.Click> event of the button.  You can place this code in the <xref:System.Windows.Forms.UserControl.Load> event handler of the `ActionsControl` class.  
+2.  В C# необходимо создать обработчик событий для <xref:System.Windows.Forms.Control.Click> события кнопки.  Можно заменить этот код в <xref:System.Windows.Forms.UserControl.Load> обработчик событий `ActionsControl` класса.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#5)]  
   
-## <a name="showing-the-actions-pane"></a>Showing the Actions Pane  
- The actions pane becomes visible after controls are added to it.  
+## <a name="showing-the-actions-pane"></a>Отображение панели действий  
+ Панель действий становится видимой, если к нему добавляются элементы управления.  
   
-#### <a name="to-show-the-actions-pane"></a>To show the actions pane  
+#### <a name="to-show-the-actions-pane"></a>Чтобы отобразить панель действий  
   
-1.  In **Solution Explorer**, right-click **ThisDocument.vb** or **ThisDocument.cs**, and then click **View Code** on the shortcut menu.  
+1.  В **обозревателе решений**, щелкните правой кнопкой мыши **ThisDocument.vb** или **ThisDocument.cs**, а затем нажмите кнопку **Просмотр кода** в контекстном меню.  
   
-2.  Create a new instance of the control at the top of the `ThisDocument` class so that it looks like the following example.  
+2.  Создать новый экземпляр элемента управления в верхней части `ThisDocument` класса, чтобы он выглядел как в следующем примере.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#6)]  [!code-vb[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#6)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#6)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#6)]  
   
-3.  Add code to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event handler of `ThisDocument` so that it looks like the following example.  
+3.  Добавьте код для <xref:Microsoft.Office.Tools.Word.Document.Startup> обработчик событий `ThisDocument` таким образом, как в следующем примере.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- Now you can test your document to verify that the actions pane appears when the document is opened. Test for the master/detail relationship in the controls on the actions pane, and make sure that data is populated in a Word table when the **Insert** button is clicked.  
+## <a name="testing-the-application"></a>Тестирование приложения  
+ Теперь можно проверить документ, чтобы убедиться, что панель действий отображается при открытии документа. Проверку наличия связи главного и подчиненного представлений в элементах управления в панели действий и убедитесь, что слово заполняется данными таблицу при **вставить** кнопки.  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>Проверка документа  
   
-1.  Press F5 to run your project.  
+1.  Нажмите клавишу F5 для запуска проекта.  
   
-2.  Confirm that the actions pane is visible.  
+2.  Убедитесь, что панель действий становится видимой.  
   
-3.  Select a company in the combo box and verify that the items in the **Products** list box change.  
+3.  Выберите название компании в поле со списком и убедитесь, что элементы в **продуктов** списка изменяется.  
   
-4.  Select a product, click **Insert** on the actions pane, and verify that the product details are added to the table in Word.  
+4.  Выберите продукт, нажмите кнопку **вставить** на панели действий и убедитесь, что в таблицу Word добавляются сведения о продукте.  
   
-5.  Insert additional products from various companies.  
+5.  Добавьте продукты от различных компаний.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of binding data to controls on an actions pane in Word. Here are some tasks that might come next:  
+## <a name="next-steps"></a>Дальнейшие действия  
+ В этом пошаговом руководстве описываются основные принципы привязки данных к элементам управления в панели действий в Word. Ниже приводятся некоторые из возможных последующих задач.  
   
--   Binding data to controls in Excel. For more information, see [Walkthrough: Binding Data to Controls on an Excel Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+-   Привязка данных к элементам управления в Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: привязка данных к элементам управления в панели действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
--   Deploying the project. For more information, see [Deploying an Office Solution by Using ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
-## <a name="see-also"></a>See Also  
- [Actions Pane Overview](../vsto/actions-pane-overview.md)   
- [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)  
+## <a name="see-also"></a>См. также  
+ [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
+ [Как: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

@@ -1,28 +1,30 @@
 ---
-title: "Метод SetWefProcessId"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: "Метод SetWefProcessId | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 404eec23-a67e-4f5b-b27d-86651f08be03
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0821c799a4d6385997704724c00a2aff4669eb17
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Метод SetWefProcessId
-  Предоставляет идентификатор процесса, выполняемого содержимое .NET Framework расширений Интернета \(WEF\).  
+# <a name="setwefprocessid-method"></a>Метод SetWefProcessId
+  Представляет идентификатор процесса, который будет выполняться содержимого Framework расширения Web (WEF).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT SetWefProcessId(  
@@ -30,18 +32,18 @@ HRESULT SetWefProcessId(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|*dwProcessId*|Идентификатор процесса, который будет использоваться для выполнения содержимое WEF.|  
+|---------------|-----------------|  
+|*dwProcessId*|Идентификатор процесса, который будет использоваться для запуска WEF содержимого.|  
   
-## Возвращаемое значение  
- Значение HRESULT, указывающее, успешно ли метод завершил работу.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Значение HRESULT, указывающее, успешно ли завершен метод.  
   
-## Заметки  
- Этот метод должен вызываться после завершения процесса содержимого WEF создается, но перед тем, как любое содержимое WEF выполняется.  
+## <a name="remarks"></a>Примечания  
+ Этот метод должен вызываться после создания процесса WEF-содержимого, но перед запуском WEF содержимого.  
   
- Если требуется интегрированную среду разработки вложить отладчик к процессу содержимого WEF, среда должна выполнить эту операцию в пользовательской реализации этого метода.  
+ Если необходимо присоединить отладчик к процессу содержимого WEF среды разработки среды необходимо выполнить эту операцию в реализации этого метода.  
   
   

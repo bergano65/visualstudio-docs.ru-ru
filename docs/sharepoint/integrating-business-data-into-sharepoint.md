@@ -1,64 +1,66 @@
 ---
-title: "Интеграция бизнес-данных в SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], статистическая обработка данных"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], бизнес-данные"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], создание модели"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], данные"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], статистическая обработка данных"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], бизнес-данные"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], создание модели"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], данные"
+title: "Интеграция бизнес-данным в SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], business data
+- BDC [SharePoint development in Visual Studio], aggregating data
+- BDC [SharePoint development in Visual Studio], business data
+- Business Data Connectivity service [SharePoint development in Visual Studio], aggregating data
+- BDC [SharePoint development in Visual Studio], creating a model
+- Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
+- Business Data Connectivity service [SharePoint development in Visual Studio], data
+- BDC [SharePoint development in Visual Studio], data
 ms.assetid: e092e3d6-2c5f-4060-ae86-d37db8967559
-caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ece3128c2d6850a1d1dd22d0328a4ee2c46da2b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Интеграция бизнес-данных в SharePoint
-  В SharePoint можно интегрировать бизнес\-данные.  Бизнес\-данные могут поступать от серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel, протокол SAP или от веб\-служб.  Пользователи могут просматривать, добавлять, обновлять и удалять бизнес\-данные в SharePoint с помощью внешних списков и веб\-частей бизнес\-данных. Кроме того, пользователи могут получать доступ к этим данным в автономном режиме в приложении Microsoft Office, например Microsoft Outlook.  Дополнительные сведения см. в разделе [Где можно указать внешние данные](http://go.microsoft.com/fwlink/?LinkId=169295).  
+# <a name="integrating-business-data-into-sharepoint"></a>Интеграция бизнес-данных в SharePoint
+  Можно интегрировать бизнес-данные в SharePoint. Бизнес-данные могут поступать от серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel и SAP, или веб-службы. Пользователи могут просмотра, добавления, изменения или удаления бизнес-данных с помощью внешних списков или деловых данных веб-частей в SharePoint.  Пользователи могут также доступ к этим данным вне сети, в приложении Microsoft Office, например Microsoft Outlook. Дополнительные сведения см. в разделе [где можно можно показать внешних данных](http://go.microsoft.com/fwlink/?LinkId=169295).  
   
- Чтобы интегрировать данные в SharePoint, создайте модель для службы подключения к бизнес\-данным.  Эта служба представляет собой приложение SharePoint, в котором хранится информация о данных бизнес\-приложений.  Дополнительные сведения см. в разделе [Служба подключения к бизнес\-данным \(BDC\)](http://go.microsoft.com/fwlink/?LinkID=169276).  
+ Чтобы интегрировать данные в SharePoint, создайте модель для службы бизнес-данным (BDC). Служба BDC — это приложение в SharePoint, в которой хранятся сведения о данных в бизнес-приложениях. Дополнительные сведения см. в разделе [службы бизнес-данным (BDC)](http://go.microsoft.com/fwlink/?LinkID=169276).  
   
-## Модели в Visual Studio  
- Модели в Visual Studio позволяют разрабатывать пользовательский код для извлечения и обновления данных, хранящихся на серверах.  Также можно обобщать данные из нескольких источников.  Например, можно вывести список клиентов, содержащий данные, полученные из базы данных [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] и от веб\-службы.  
+## <a name="models-in-visual-studio"></a>Модели в Visual Studio  
+ Моделей в Visual Studio позволяют создавать пользовательский код для извлечения и обновления данных из источников данных. Вы также можете статистические данные из нескольких источников данных. Например, можно отобразить список клиентов, содержащий данные из [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] базы данных и веб-службы.  
   
- Также можно импортировать модели, уже развернутые в SharePoint.  Импортировав модель, можно добавить в нее пользовательский код или с помощью Visual Studio поместить ее в пакет и развернуть на нескольких фермах серверов SharePoint.  Для получения дополнительной информации см. [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
+ Можно также импортировать модели, которые уже развернуты в SharePoint. После импорта модели, можно добавить пользовательский код или просто использовать Visual Studio для упаковки и развертывания модели в нескольких фермах серверов SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-## Разработка модели в Visual Studio  
- Для разработки моделей используется конструктор и несколько окон инструментов.  При разработке модели Visual Studio создает ее XML\-код.  Для получения дополнительной информации см. [Общие сведения о средствах разработки моделей подключения к бизнес-данным](../sharepoint/bdc-model-design-tools-overview.md).  
+## <a name="designing-a-model-in-visual-studio"></a>Проектирование модели в Visual Studio  
+ С помощью конструктора и в некоторых окнах инструментов, можно создать модель. При проектировании модели в Visual Studio создает модель XML. Дополнительные сведения см. в разделе [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
  Модель содержит сущности и методы.  
   
-### Сущности  
- Сущность описывает коллекцию полей.  Например, сущность может представлять таблицу в базе данных.  Сущность отображается в виде типа внешнего содержимого в SharePoint.  Дополнительные сведения о внешних типах содержимого см. в разделе [Что такое внешние типы содержимого?](http://go.microsoft.com/fwlink/?LinkId=169293).  
+### <a name="entities"></a>Сущности  
+ Сущность описывает коллекцию полей. Например сущность может представлять таблицу в базе данных. Сущность отображается в виде типа внешнего содержимого в SharePoint. Дополнительные сведения о типах внешнего содержимого см. в разделе [Каковы внешними типами содержимого?](http://go.microsoft.com/fwlink/?LinkId=169293)  
   
-### Методы  
- С помощью метода потребители типа внешнего содержимого могут выполнять действия с полями сущности.  Например, можно создать метод Updater, позволяющий пользователям изменять адрес и дату рождения клиентов, если эти данные хранятся в полях `Address` и `BirthDate` сущности `Customer`.  
+### <a name="methods"></a>Методы  
+ Метод, который позволяет потребителям внешнего типа содержимого для выполнения действия с полями сущности. Например, метод обновления может предоставить пользователям возможность изменить адрес и создания даты клиента где `Address` и `BirthDate` являются поля `Customer` сущности.  
   
- Visual Studio создает файл кода службы для каждой сущности, содержащейся в модели.  При добавлении метода в модель система Visual Studio создает соответствующий метод в файле кода службы.  В каждый метод необходимо добавить код, реализующий возможность выполнения соответствующей задачи.  Например, если добавить в модель метод Creator, Visual Studio создаст метод Creator в файле кода службы.  Служба модели подключения к бизнес\-данным вызывает этот метод, когда пользователь нажимает кнопку **Добавить элемент** в списке, основанном на этой модели.  Таким образом, в метод Creator необходимо добавить код, обеспечивающий добавление новых данных в источник данных.  Для получения дополнительной информации см. [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
+ Visual Studio создает файл кода службы для каждой сущности в модели. При добавлении метода в модель Visual Studio создает соответствующий метод в файл кода службы. Добавьте код для каждого метода для выполнения соответствующих задач. Например при добавлении метода создания модели, Visual Studio создает метод создания в файл кода службы. Этот метод вызывается службой BDC, когда пользователь щелкает **новый элемент** кнопка в виде списка, который основан на модели. Таким образом добавьте код создания метода, который добавляет новые данные в источнике данных. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-## Связанные разделы  
+## <a name="related-topics"></a>Связанные разделы  
   
-|Название|Описание|  
-|--------------|--------------|  
-|[Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)|Руководство по созданию новых моделей и импорту моделей, экспортированных из SharePoint.|  
+|Заголовок|Описание|  
+|-----------|-----------------|  
+|[Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)|Показано, как создать новую модель или импорт модели, экспортированных из SharePoint.|  
 |[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)|Руководство по разработке элементов модели с помощью средств разработки Visual Studio.|  
-|[Когда следует использовать конструктор SharePoint и Visual Studio при построении решений с помощью BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Помогает выбрать, использовать ли Visual Studio или SharePoint Designer при создании модели для BDC.|  
+|[Когда следует использовать SharePoint Designer vs. Visual Studio при сборке решения, с помощью BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Помогает решить, следует ли использовать Visual Studio или SharePoint Designer для создания модели для BDC.|  
   
   

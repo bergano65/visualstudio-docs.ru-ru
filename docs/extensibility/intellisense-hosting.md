@@ -1,52 +1,53 @@
 ---
-title: "Размещение IntelliSense | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - размещение IntelliSense"
+title: "Размещение IntelliSense | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 850e4b2ef6d455bb141827fa125c4c7c6860b652
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Размещение IntelliSense
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Visual Studio включает размещение IntelliSense.  Размещение IntellSense позволяет обеспечить IntelliSense для кода, не размещенного текстового редактора Visual Studio.  
+# <a name="intellisense-hosting"></a>Размещение IntelliSense
+Visual Studio позволяет обеспечить работу IntelliSense. IntellSense размещение позволяет предоставить IntelliSense для кода, которая не размещена в текстовом редакторе Visual Studio.  
   
-## IntelliSense при размещении потребление  
- В Visual Studio любой код, имеющий доступ к набору завершения и текстовый буфер окна IntelliSense могут получить из любого места внутри пользовательского интерфейса \(ui\).  Некоторые сценарии в примере этого завершение **Контрольное значение** окно или в поле условие окна свойства точки останова.  
+## <a name="intellisense-hosting-usage"></a>Использование размещения IntelliSense  
+ В Visual Studio, любой код, который имеет доступ к набора завершения и буфер текста можно получить IntelliSense windows из любого места в пользовательском интерфейсе (UI). Примеры сценариев данного объекта, завершение в **Контрольные значения** окно или в поле условие окна свойств точки останова.  
   
-### Интерфейсы реализации  
+### <a name="implementation-interfaces"></a>Реализация интерфейсов  
   
-#### IVsIntellisenseHost  
- Любой компонент пользовательского интерфейса, всплывающие окна IntelliSense основных приложений должны поддерживать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс.  По умолчанию взаимодействие включает текстовое представление редактора reserve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> реализация интерфейса для сохранения текущую функциональность технологии IntelliSense.  В большинстве случаев методы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс представляет подмножество, что реализуется на  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.  Подмножество включает обработку пользовательского интерфейса IntelliSense, управление курсора и выделения и простую возможность замены текста.  Кроме того, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс содержит отдельную технологию IntelliSense ,посвященном" и "контекст" для IntelliSense можно защитить, которые не существуют непосредственно в текстовом буфере, который используется для контекста.  
+#### <a name="ivsintellisensehost"></a>IVsIntellisenseHost  
+ Любой компонент пользовательского интерфейса, на котором размещена IntelliSense всплывающие окна должен поддерживать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейса. Редактор текста по умолчанию основное представление включает stock <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс реализацию для сохранения текущего функциональные возможности технологии IntelliSense. В большинстве случаев методы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс представляют собой подмножество о том, что реализуется на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса. Подмножество включает обработку, курсор и манипуляции выбора и простой текст замены функции IntelliSense пользовательского интерфейса. Кроме того <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс позволяет отдельные IntelliSense «тема» и «контекст», чтобы IntelliSense, которые могут быть предоставлены для субъектов, которые не существуют непосредственно в буфере, который используется для контекста.  
   
-#### IVsIntellisenseHost.GetHostFlags  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> поставщик интерфейса, должен реализовывать  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetHostFlags%2A> метод, чтобы позволить клиенту указать, какой тип функций IntelliSense, поддерживаемых основным приложением.  
+#### <a name="ivsintellisensehostgethostflags"></a>IVsIntellisenseHost.GetHostFlags  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Должен реализовывать интерфейс поставщика <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetHostFlags%2A> поддерживает методы, позволяющие клиенту определить, какой тип IntelliSense возможностей узла.  
   
- Флаги, указанные внутри основного приложения IntellisenseHostFlags, summarize ниже.  
+ Флаги узла, определенного в [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), описаны ниже.  
   
-|Пометить узла IntelliSense|Описание|  
-|--------------------------------|--------------|  
-|IHF\_READONLYCONTEXT|Установка этого пометить означает, что буфер контекста только для чтения и редактирования происходит только в текст темы.|  
-|IHF\_NOSEPERATESUBJECT|Установка этого пометить означает, что отдельный раздел IntelliSense.  Раздел существует в буфере контекста, например в прежних версий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> система IntelliSense.|  
-|IHF\_SINGLELINESUBJECT|Установка этого пометить означает, что раздел многополосные способные, например в " правка " на одной линии **Контрольное значение** окна.|  
-|IHF\_FORCECOMMITTOCONTEXT|Если этот пометить набор и буфер контекста необходимо обновить, то узел включается только для чтения в буфере контекста пометить игнорируемого и правках, чтобы продолжить.|  
-|IHF\_OVERTYPE|Редактирование в разделе \(или\), должен быть выполнен в контексте подставляет режим.|  
+|Флаг узла IntelliSense|Описание|  
+|----------------------------|-----------------|  
+|IHF_READONLYCONTEXT|Этот флаг означает, что буфер контекста параметр только для чтения и редактирования выполняется только в текст темы.|  
+|IHF_NOSEPERATESUBJECT|Включение флаг означает, что существует является тема не отдельный IntelliSense. Субъект существует в буфере контекста, например в традиционные <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> система IntelliSense.|  
+|IHF_SINGLELINESUBJECT|Этот флаг означает, что субъект не имеет параметра несколько строк может, например, в одной строке изменения в **Контрольные значения** окна.|  
+|IHF_FORCECOMMITTOCONTEXT|Если этот флаг установлен, и должны быть обновлены буфер контекста, узел включает флаг буфер контекста, пропускаются только для чтения и изменения, чтобы продолжить.|  
+|IHF_OVERTYPE|Изменение (в теме или контекста) должны выполняться в режиме замены.|  
   
-#### IVsIntellisenseHost.BeforeCompletorCommit и IVsIntellisenseHost.AfterCompletorCommit  
- Эти обратные вызовы называется окном завершения фиксации до и после текста, чтобы включить предварительная обработка и постпроцессирование.  
+#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit и IVsIntellisenseHost.AfterCompletorCommit  
+ До и после фиксации, чтобы включить предварительной обработки и последующей обработки текста, то окно завершения вызываются методы обратного вызова.  
   
-#### IVsIntellisenseCompletor  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> интерфейс версия co\-creatable стандартного окна завершения, который используется средой разработки \(ide\).  Any <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс может быстро реализовывать IntelliSense с помощью этого интерфейса completor.  
+#### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> Интерфейс является воссоздаваемым версии окна стандартных завершения, используемый интегрированной среды разработки (IDE). Любой <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> интерфейс быстро можно реализовать с помощью этого интерфейса completor IntelliSense.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

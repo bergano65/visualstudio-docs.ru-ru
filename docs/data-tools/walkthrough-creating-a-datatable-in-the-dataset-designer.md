@@ -1,97 +1,93 @@
 ---
-title: "Пошаговое руководство. Создание объекта DataTable с помощью конструктора наборов данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], конструктор наборов данных"
-  - "конструктор наборов данных, создание таблиц с данными"
-  - "DataTable - объекты, создание"
-  - "таблицы [Visual Studio], создание"
+title: "Пошаговое руководство: Создание таблицы данных в конструкторе наборов данных | Документы Microsoft"
+ms.custom: 
+ms.date: 10/19/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- DataTable objects, creating
+- Dataset Designer, creating data tables
+- tables [Visual Studio], creating
+- data [Visual Studio], Dataset Designer
 ms.assetid: abf0a2b5-e4e5-422e-97ef-55a0e35a82df
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 robots: noindex,nofollow
+ms.technology: vs-data-tools
+ms.openlocfilehash: 0e1328eda7974b7e4ec04df0c4f5bd969cf09de6
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-# Пошаговое руководство. Создание объекта DataTable с помощью конструктора наборов данных
-В этом пошаговом руководстве объясняется, как создать таблицу данных <xref:System.Data.DataTable> \(без TableAdapter\) с помощью  **Конструктора наборов данных**.  Сведения о создании таблиц данных, использующих TableAdapter, содержатся в разделе [Практическое руководство. Создание адаптера таблицы](../data-tools/create-and-configure-tableadapters.md).  
+# <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Пошаговое руководство. Создание объекта DataTable с помощью конструктора наборов данных
+В этом пошаговом руководстве описывается создание <xref:System.Data.DataTable> (без TableAdapter) с помощью **конструктора наборов данных**. Сведения о создании таблиц данных, использующих TableAdapter см. в разделе [создайте и настройте адаптеры таблиц TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
   
- В этом пошаговом руководстве демонстрируется выполнение следующих задач.  
+ В данном пошаговом руководстве представлены следующие задачи.  
   
--   Создание нового проекта приложения Windows.  
+-   Создание нового проекта приложения Windows Forms  
   
--   Добавление нового набора данных в приложение.  
+-   Добавление нового набора данных в приложение  
   
--   Добавление новой таблицы в набор данных.  
+-   Добавление новой таблицы данных в набор данных  
   
--   Добавление столбцов в таблицы данных.  
+-   Добавление столбцов в таблицу данных  
   
--   Задание первичного ключа для таблицы.  
+-   Задание первичного ключа для таблицы  
   
-## Создание нового приложения Windows.  
+## <a name="creating-a-new-windows-forms-application"></a>Создание нового приложения Windows Forms  
   
-#### Чтобы создать проект приложения Windows:  
+#### <a name="to-create-a-new-windows-forms-application-project"></a>Для создания нового проекта приложения Windows Forms  
   
-1.  В меню **Файл** создайте новый проект.  
+1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .  
   
-2.  Выберите язык программирования в области **Типы проектов**.  
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.  
+
+3. В средней области выберите **приложение Windows Forms** тип проекта.  
+
+4. Назовите проект **DataTableWalkthrough**, а затем выберите **ОК**. 
   
-3.  Нажмите кнопку **Приложение Windows** в области **Шаблоны**.  
+     **DataTableWalkthrough** создается проект и добавить **обозревателе решений**.  
   
-4.  Назовите проект `DatasetDesignerWalkthrough` и нажмите кнопку **OK**.  
+## <a name="adding-a-new-dataset-to-the-application"></a>Добавление нового набора данных в приложение  
   
-     Visual Studio добавит проект в **Обозреватель решений** и откроет новую форму **Form1** в конструкторе.  
+#### <a name="to-add-a-new-dataset-item-to-the-project"></a>Чтобы добавить новый элемент набора данных в проект  
   
-## Добавление нового набора данных в приложение  
+1.  На **проекта** последовательно выберите пункты **добавить новый элемент...** .  
   
-#### Чтобы добавить новый набор данных в проект  
+     Откроется диалоговое окно Добавление нового элемента.  
   
-1.  В меню **Проект** выберите команду **Добавить новый элемент**.  
+2.  На левой панели выберите **данные**, а затем выберите **DataSet** в средней области.  
   
-     Будет открыто диалоговое окно "Добавление нового элемента".  
+3.  Выберите **Добавить**.  
   
-2.  В поле **Шаблоны** выберите **Набор данных**.  
+     Visual Studio добавляет файл с именем **DataSet1.xsd** в проект и открывает его в **конструктора наборов данных**.  
   
-3.  Нажмите кнопку **Добавить**.  
+## <a name="adding-a-new-datatable-to-the-dataset"></a>Добавление новой таблицы в набор данных  
   
-     Visual Studio добавит в проект файл с именем **Dataset1.xsd** и откроет его в **Конструкторе наборов данных**.  
+#### <a name="to-add-a-new-data-table-to-the-dataset"></a>Чтобы добавить новую таблицу данных в набор данных  
   
-## Добавление новой таблицы в набор данных  
+1.  Перетащите **DataTable** из **DataSet** вкладке **элементов** на **конструктора наборов данных**.  
   
-#### Для добавления новой таблицы данных в набор данных:  
+     Таблица с именем **DataTable1** добавляется к набору данных.  
+   
+2.  Нажмите кнопку в заголовке **DataTable1** и переименуйте его в `Music`.  
   
-1.  Перетащите **DataTable** из вкладки **Набор данных Панели элементов** в **Конструктор наборов данных**.  
+## <a name="adding-columns-to-the-data-table"></a>Добавление столбцов в таблицу данных  
   
-     К набору данных будет добавлена таблица с именем **DataTable1**.  
+#### <a name="to-add-columns-to-the-data-table"></a>Для добавления столбцов в таблице данных  
   
-    > [!NOTE]
-    >  Информацию о создании таблицы данных, содержащую TableAdapter, см. [Пошаговое руководство. Создание адаптера таблицы с несколькими запросами](../data-tools/walkthrough-creating-a-tableadapter-with-multiple-queries.md).  
+1.  Щелкните правой кнопкой мыши **Музыка** таблицы. Пункты **добавить**, а затем нажмите кнопку **столбца**.  
   
-2.  Щелкните полосу заголовка **DataTable1** и переименуйте его, дав ему имя `Music`.  
+2.  Имя столбца `SongID`.  
   
-## Добавление столбцов в таблицу данных  
+3.  В **свойства** задайте <xref:System.Data.DataColumn.DataType%2A> свойства <xref:System.Int16?displayProperty=fullName>.  
   
-#### Для добавления столбцов в таблицу данных:  
-  
-1.  Щелкните правой кнопкой мыши по таблице **Music**.  В открывшемся контекстном меню выберите **Добавить**, а затем щелкните **Столбец**.  
-  
-2.  Назовите столбец `SongID`.  
-  
-3.  В окне **Свойства** присвойте свойству <xref:System.Data.DataColumn.DataType%2A> значение <xref:System.Int16?displayProperty=fullName>.  
-  
-4.  Повторите эти действия, чтобы добавить следующие столбцы:  
+4.  Повторите эту процедуру и добавьте следующие столбцы:  
   
      `SongTitle`: <xref:System.String?displayProperty=fullName>  
   
@@ -99,38 +95,23 @@ robots: noindex,nofollow
   
      `Genre`: <xref:System.String?displayProperty=fullName>  
   
-## Задание первичного ключа для таблицы  
- Все таблицы данных должны иметь первичный ключ.  Первичный ключ однозначно определяет конкретную запись в таблице данных.  
+## <a name="setting-the-primary-key-for-the-table"></a>Задание первичного ключа для таблицы  
+Все таблицы данных должны иметь первичный ключ. Первичный ключ однозначно определяет конкретной записи в таблице данных.  
   
-#### Для задания первичного ключа таблицы:  
+#### <a name="to-set-the-primary-key-of-the-data-table"></a>Чтобы задать первичный ключ таблицы данных  
   
--   Щелкните правой кнопкой мыши по столбцу **SongID** и щелкните по пункту **Задать первичный ключ**.  
+-   Щелкните правой кнопкой мыши **SongID** , а затем выберите **задать первичный ключ**.  
   
-     Значок ключа появится рядом со столбцом **SongID**.  
+     Значок ключа появится рядом с **SongID** столбца.  
   
-## Сохранение проекта  
+## <a name="saving-your-project"></a>Сохранение проекта  
   
-#### Чтобы сохранить проект DataTableWalkthrough:  
+#### <a name="to-save-the-datatablewalkthrough-project"></a>Чтобы сохранить проект DataTableWalkthrough  
   
--   В меню **Файл** выберите команду **Сохранить все**.  
+-   На **файл** меню, нажмите кнопку **сохранить все**.  
   
-## Следующие действия  
- Теперь, после создания таблицы, может понадобиться выполнить одно из следующих действий:  
-  
-|Целевой тип|См.|  
-|-----------------|---------|  
-|Создание формы для ввода данных.|[Пошаговое руководство. Отображение данных на форме в приложении Windows](../data-tools/walkthrough-displaying-data-on-a-windows-form.md).|  
-|Добавление данных в таблицу|[Добавление данных в DataTable](../Topic/Adding%20Data%20to%20a%20DataTable.md).|  
-|Просмотр данных в таблице|[Просмотр данных в DataTable](../Topic/Viewing%20Data%20in%20a%20DataTable.md).|  
-|Редактирование данных|[Изменения объекта DataTable](../Topic/DataTable%20Edits.md)|  
-|Удаление строки из таблицы|[Удаление DataRow](../Topic/DataRow%20Deletion.md)|  
-  
-## См. также  
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)   
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)
+## <a name="see-also"></a>См. также
+[Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
+[Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+[Проверка данных](../data-tools/validate-data-in-datasets.md)   
+[Сохранение данных](../data-tools/saving-data.md)   

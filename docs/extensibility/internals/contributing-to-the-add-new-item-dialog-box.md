@@ -1,28 +1,29 @@
 ---
-title: "Способствовали добавить новый элемент-диалоговое окно | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Добавить диалоговое окно «новый элемент», способствующих"
+title: "Дополнение добавить новый элемент-диалоговое окно | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 13f4d254027fe168018fe597f772518bd8ac6b94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Способствовали добавить новый элемент-диалоговое окно
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Подтип проекта может предоставить полный каталог элементов **Добавление нового элемента** диалоговое окно " путем регистрации  **Добавить элемент** шаблоны под  `Projects` подраздел реестра.  
+# <a name="contributing-to-the-add-new-item-dialog-box"></a>Дополнение добавить новый элемент-диалоговое окно
+Подтип проекта может предоставить полный новый каталог элементов для **Добавление нового элемента** диалоговое окно, зарегистрировав **добавить элемент** шаблоны по `Projects` подраздел реестра.  
   
-## Регистрация добавляет шаблоны нового элемента  
- Этот раздел находится вниз **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VisualStudio\\8.0\\Projects** в реестре.  Записи реестра ниже принимают a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проект статистическая обработка вычислениеый постулативным подтипом данного проекта.  Запись [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проект перечисляются ниже.  
+## <a name="registering-add-new-item-templates"></a>Регистрация добавить новый элемент шаблонов  
+ В этом разделе находится в папке **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** в реестре. Предположим, параметрами реестра [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта, упорядоченные по подтип гипотетической проекта. Записи для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта, перечислены ниже.  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]  
@@ -36,12 +37,12 @@ caps.handback.revision: 18
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"  
 ```  
   
- `AddItemTemplates\TemplateDirs` подраздел содержит записи реестра с путем к каталогу, в котором элементы, доступ в  **Добавление нового элемента** диалоговое окно " помещается.  
+ `AddItemTemplates\TemplateDirs` Подраздел содержит записи реестра с путем к каталогу, где элементы становятся доступными в **Добавление нового элемента** помещаются диалоговое окно.  
   
- Среда автоматически загружает все `AddItemTemplates` данные в группе  `Projects` подраздел реестра.  Это может включать данные для базовых реализации проекта, а также данные для типов, подтипа конкретного проекта.  Каждый подтип проекта определяется типом проекта `GUID`.  Подтип проекта может указать другой набор `Add Item` шаблоны должны использоваться для приправленного частностью экземпляра проекта путем поддержки  `VSHPROPID_ AddItemTemplatesGuid` перечисление от  <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> IN  <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> реализация, чтобы возвратить значение идентификатора GUID подтипа проекта.  If `VSHPROPID_AddItemTemplatesGuid` используется свойство не задано, базовый GUID проекта.  
+ Среде автоматически загружает все `AddItemTemplates` данных в группе `Projects` подраздел реестра. Это могут быть данные для реализации базового проекта, а также данные для конкретных подтипов типов проектов. Каждый проект подтип определяется по типу проекта `GUID`. Подтип проекта можно указать, альтернативный набор `Add Item` следует использовать шаблоны для конкретного проекта интерфейсам экземпляра с помощью поддержки `VSHPROPID_ AddItemTemplatesGuid` перечисления из <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> в <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> реализацию, чтобы вернуть идентификатор GUID значение подтип проекта. Если `VSHPROPID_AddItemTemplatesGuid` свойство не задано, используется GUID базового проекта.  
   
- Можно фильтровать элементы **Добавление нового элемента** диалоговое окно " путем реализации  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> интерфейс для объекта накопителя подтипа проекта.  Например, подтип проекта, который реализует проект базы данных путем статистического вычисления a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проект может фильтровать  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] конкретные элементы  **Добавление нового элемента** диалоговое окно " путем фильтрации и, в свою очередь, может добавлять элементы проекта базы данных, определенные путем поддержки  `VSHPROPID_ AddItemTemplatesGuid` IN  <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.  Дополнительные сведения о фильтрации и добавления элементов в [Добавление элементов, чтобы добавить новый элемент диалоговые окна](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)диалоговое окно " см. в разделе  **Добавление нового элемента** .  
+ Можно отфильтровать элементы в **Добавление нового элемента** диалоговое окно, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> интерфейс объекта агрегатора подтип проекта. Например, подтип проекта, реализующий проект базы данных, применяя статистическую обработку [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта, можно отфильтровать [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] элементы из **Добавление нового элемента** диалоговое окно путем реализации фильтрации и включить, можно добавить определенные элементы проекта базы данных, поддерживая `VSHPROPID_ AddItemTemplatesGuid` в <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>. Дополнительные сведения о фильтрации и добавление элементов в **Добавление нового элемента** диалоговое окно, в разделе [элементов диалоговые окна добавления нового элемента, добавление](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [CATID для объектов, которые обычно используются для расширения проектов](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

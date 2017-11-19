@@ -1,40 +1,42 @@
 ---
-title: "Перехват команд службы языка прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "команды, перехват языковой службы"
-  - "языковые службы перехват команд"
+title: "Перехват команды службы языка для прежних версий | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands, intercepting language service
+- language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 73524ce47dfea2d30e44e51e97bf584a95a86482
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Перехват команд службы языка прежних версий
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-With [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]можно иметь команды перехвата языковой службы, представление текста в противном случае отрегулировало мере.  Это полезно для расширения функциональности для конкретного языка, представление текста не управляет.  Можно перехватывать эти команды путем добавления одного или нескольких фильтров группы к представлению текста от языковой службы.  
+# <a name="intercepting-legacy-language-service-commands"></a>Перехват команды службы языка для прежних версий
+С [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], у вас есть команды отсекаемый отрезок языковой службы, которые представления текста, в противном случае будет обрабатываться. Это полезно для конкретного языка поведение, которое не поддерживает управление представления текста. Эти команды можно перехватить, добавив один или несколько фильтров команды для представления текста из службы языка.  
   
-## Получение и направляющ команды  
- Фильтр команды <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объект, последовательности символов или мониторов некоторые ключевые команды.  Можно связать несколько фильтр команды с одним представлением текста.  Каждое представление текста поддерживает фильтры последовательности команд.  После создания нового фильтра команды следует добавить фильтр в цепочке для соответствующего представления текста.  
+## <a name="getting-and-routing-the-command"></a>Получение и маршрутизация команды  
+ Команда фильтр <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объект, который отслеживает определенные последовательности символов или клавиш. Более одного фильтра команду можно связать с одно текстовое представление. Каждое текстовое представление поддерживает фильтры цепочке управления. После создания нового фильтра команды добавления фильтра в цепочке в соответствующее текстовое представление.  
   
- Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> чтобы добавить команда фильтрация в цепочке.  При вызове <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>"  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] возвращает другой фильтр команды, к которому можно передать команды, фильтр команды не обрабатывает.  
+ Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для добавления фильтра команды в цепочку. При вызове <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] возвращает другой фильтр команды, к которому можно передать команды, команда фильтра не может обрабатывать.  
   
- Доступны следующие параметры для обработки команды:  
+ Имеются следующие параметры для обработки команды.  
   
--   Обработка команды и затем передайте команду к следующему фильтру команды в цепочке.  
+-   Обработать команду, а затем передайте команду на фильтр следующей команды в цепочке.  
   
--   Обработка команды и не следует передавать команды к следующему фильтру команды.  
+-   Обработать команду, а не передавать команды на следующей фильтрации команд.  
   
--   Не обрабатывайте команду, но передайте команду к следующему фильтру команды.  
+-   Не обрабатывать команды, но передать команду на следующей фильтрации команд.  
   
--   Пропуск команду.  Не обрабатывайте его на текущем фильтре и не передать его к следующему фильтру.  
+-   Игнорируйте команды. Не обрабатывает его в текущий фильтр и не следует передавать его на следующий фильтр.  
   
- Дополнительные сведения о том, какие команды служба языка должна обрабатывать см. в разделе [Важные команды для фильтров службы языка](../../extensibility/internals/important-commands-for-language-service-filters.md).
+ Сведения о какие команды обработки службы языка см. [важные команды для фильтров службы языка](../../extensibility/internals/important-commands-for-language-service-filters.md).

@@ -1,156 +1,157 @@
 ---
-title: "Отладка решений SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.Project.WebConfigModificationDialog"
-  - "VS.SharePointTools.Project.DebuggingNotEnabled"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, отладка"
+title: "Отладка решений SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.Project.WebConfigModificationDialog
+- VS.SharePointTools.Project.DebuggingNotEnabled
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, debugging
 ms.assetid: 5120f21e-4c27-4906-b982-85e9cd5170e6
-caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 14a3c7a2676c786e631b4c8b471272185b81e36c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Отладка решений SharePoint
-  Отладка решений SharePoint выполняется с помощью отладчика [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  При запуске отладки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, затем открывает экземпляр сайта SharePoint в веб\-браузере.  В следующих разделах рассматриваются принципы отладки приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+# <a name="debugging-sharepoint-solutions"></a>Отладка решений SharePoint
+  Можно отлаживать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. При запуске отладки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, а затем открывает экземпляр сайта SharePoint в веб-браузере. Ниже описаны способы отладки приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 -   [Включение отладки](#EnableDebug)  
   
--   [Отладка с помощью клавиши F5 и процесс развертывания](#Deployment)  
+-   [Отладка F5 и процесс развертывания](#Deployment)  
   
--   [Компоненты проектов SharePoint](#Features)  
+-   [Функции проекта SharePoint](#Features)  
   
 -   [Отладка рабочих процессов](#Workflow)  
   
 -   [Отладка приемников событий компонентов](#FeatureEvents)  
   
--   [Включение вывода подробных сведений об отладке](#EnhancedDebug)  
+-   [Включение расширенные сведения об отладке](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a> Включение отладки  
- Когда отладка решения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] выполняется впервые, выводится диалоговое окно с уведомлением о том, что в файле web.config не задан параметр, разрешающий отладку. \(Файл web.config создается при установке сервера SharePoint.  Дополнительные сведения см. в [Работа с файлами web.config](http://go.microsoft.com/fwlink/?LinkID=149266).\) В диалоговом окне предлагается либо запустить проект без отладки, либо изменить файл web.config, разрешив отладку.  Если выбрать первый вариант, проект выполняется обычным образом.  Если выбрать второй, параметры в файле web.config изменяются следующим образом:  
+##  <a name="EnableDebug"></a>Включение отладки  
+ При отладке сначала решения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], диалоговое окно предупреждения, что в файле web.config не задан для включения отладки. (Файл web.config создается при установке сервера SharePoint. Дополнительные сведения см. в разделе [работа с файлами Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Диалоговое окно позволяет либо запустить проект без отладки, либо изменить файл web.config для включения отладки. Если выбрать первый вариант, проект выполняется обычным образом. Если выбрать второй вариант, параметры в файле web.config изменяются следующим образом:  
   
--   включается стек вызова \(`CallStack="true"`\);  
+-   Включить в стеке вызовов (`CallStack="true"`)  
   
--   отключаются настраиваемые ошибки в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(`<customErrors mode="Off" />`\);  
+-   Запретить пользовательские ошибки в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   включается отладка компиляции \(`<compilation debug="true">`\).  
+-   Включить отладку компиляции (`<compilation debug="true">`)  
   
- Ниже приведен результирующий файл web.config.  
+ Результирующий файл web.config следующим образом:  
   
 ```  
-  
-<configuration>  
-    ...  
-    <SharePoint>  
-        <SafeMode MaxControls="200"  
-            CallStack="true"  
-            DirectFileDependencies="10"  
-            TotalFileDependencies="50"  
-            AllowPageLevelTrace="false">  
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
+    <configuration>  
+        ...  
+        <SharePoint>  
+            <SafeMode MaxControls="200"  
+                CallStack="true"  
+                DirectFileDependencies="10"  
+                TotalFileDependencies="50"  
+                AllowPageLevelTrace="false">  
+                ...  
+            </SafeMode>  
+        ...  
+        </SharePoint>  
+        <system.web>  
             ...  
-        </SafeMode>  
-    ...  
-    </SharePoint>  
-    <system.web>  
+            <customErrors mode="Off" />  
+            ...  
+            <compilation debug="true">  
+            ...  
+            </compilation>  
+            ...  
+        </system.web>  
         ...  
-        <customErrors mode="Off" />  
-        ...  
-        <compilation debug="true">  
-        ...  
-        </compilation>  
-        ...  
-    </system.web>  
-    ...  
-</configuration>  
+    </configuration>  
 ```  
   
- Чтобы отменить изменения и отключить отладку, измените [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]\-код в файле web.config следующим образом:  
+ Чтобы отменить изменения и отключить отладку, измените следующие [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] в файле web.config:  
   
--   отключите стек вызова \(`CallStack="false"`\);  
+-   Отключить стек вызовов (`CallStack="false"`)  
   
--   включите настраиваемые ошибки в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(`<customErrors mode="On" />`\);  
+-   Включите настраиваемые ошибки в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)  
   
--   отключите отладку компиляции \(`<compilation debug="false">`\).  
+-   Отключите отладку компиляции (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a> Отладка с помощью клавиши F5 и процесс развертывания  
- Если проект SharePoint выполняется в режиме отладки, в процессе развертывания SharePoint выполняются следующие задачи.  
+##  <a name="Deployment"></a>Отладка F5 и процесс развертывания  
+ При запуске проекта SharePoint в режиме отладки, в процессе развертывания SharePoint выполняет следующие задачи:  
   
 1.  Выполняются пользовательские команды, выполняемые перед развертыванием.  
   
-2.  Создается веб\-пакет решения \(WSP\-файл\) с помощью команд [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)].  WSP\-файл включает в себя все необходимые файлы и компоненты.  Дополнительные сведения см. в [Solutions Overview](http://go.microsoft.com/fwlink/?LinkID=128154).  
+2.  Создает веб-файл пакета (.wsp) решения с помощью [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] команд. WSP-файл содержит все необходимые файлы и компоненты. Дополнительные сведения см. в разделе [Обзор решений](http://go.microsoft.com/fwlink/?LinkID=128154).  
   
-3.  Если решение SharePoint представляет собой решение фермы, пул приложений [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] повторно используется для указанного [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]а сайта.  На этом этапе высвобождаются файлы, заблокированные рабочим процессом [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)].  
+3.  Если решение SharePoint представляет собой решение фермы, запускается повторно [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] пул приложений для указанного сайта [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Этот шаг высвобождаются файлы, заблокированные [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] рабочего процесса.  
   
-4.  Если существует предыдущая версия пакета, в WSP\-файл извлекаются предыдущие версии компонентов и файлов.  На этом этапе компоненты отключаются, пакет решения удаляется, затем он удаляется с сервера SharePoint.  
+4.  Если уже существует предыдущая версия пакета, извлечение предыдущей версии компонентов и файлы в WSP-файл. Этот шаг отключает возможности, удаляет пакет решения, а затем удаляет пакета решения на сервере SharePoint.  
   
-5.  Устанавливается текущая версия компонентов и файлов из WSP\-файла.  На этом этапе решение добавляется и устанавливается на сервер SharePoint.  
+5.  Устанавливает текущую версию компонентов и файлы в WSP-файл. Этот шаг добавляет и устанавливает решение на сервере SharePoint.  
   
-6.  Устанавливаются сборки рабочих процессов.  Расположение сборки можно изменить с помощью свойства *Assembly Location*.  
+6.  Для рабочих процессов устанавливает сборки рабочего процесса. Его расположение можно изменить с помощью *расположения сборки* свойство.  
   
-7.  Активируются компоненты проекта в SharePoint, для которых задана область Site или Web.  Компоненты с областями Farm и WebApplication не активируются.  
+7.  Активирует компонент проекта SharePoint, если область сайта или веб. Не включены возможности в области фермы и веб-приложения.  
   
-8.  Рабочие процессы связываются с библиотекой списка SharePoint, со списком или сайтом, указанным в **Мастере настройки SharePoint**.  
+8.  Для рабочих процессов, рабочий процесс будет связан с библиотекой SharePoint, списка или сайта, выбранного в **мастер настройки SharePoint**.  
   
     > [!NOTE]  
-    >  Это связывание происходит, только если в мастере выбран параметр **Автоматически связывать рабочий процесс**.  
+    >  Это сопоставление происходит только в том случае, если вы выбрали **автоматически связать рабочий процесс** в мастере.  
   
 9. Выполняются пользовательские команды, выполняемые после развертывания.  
   
-10. Присоединяет отладчик [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] к процессу [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] с именем w3wp.exe.  Если тип проекта позволяет изменять свойство *Sandboxed Solution* и ему присвоено значение **true**, отладчик подключается к другому процессу \(SPUCWorkerProcess.exe\).  Для получения дополнительной информации см. [Замечания об обезвреженных решениях](../sharepoint/sandboxed-solution-considerations.md).  
+10. Присоединяет отладчик [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] к процессу [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (w3wp.exe). Если тип проекта позволяет изменять *изолированное решение* свойство и его значение равно **true**, отладчик подключается к другому процессу (SPUCWorkerProcess.exe). Дополнительные сведения см. в разделе [замечания об изолированных решениях](../sharepoint/sandboxed-solution-considerations.md).  
   
-11. Запускается отладчик JavaScript, если решение SharePoint является решением фермы.  
+11. Запускает отладчик JavaScript, если решение SharePoint представляет собой решение фермы.  
   
-12. В веб\-браузере отображается соответствующая библиотека, список или страница сайта.  
+12. Отображает соответствующие библиотека, список или страница сайта в веб-браузере.  
   
- После каждого выполненного задания в окне "Вывод" [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] выводится сообщение о состоянии.  Если выполнить задачу не удается, в окне "Список ошибок" [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] выводится сообщение об ошибке.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Отображает сообщение о состоянии в окне «Вывод», после завершения каждой задачи. Если не удается выполнить задачу, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отображает сообщение об ошибке в окне списка ошибок.  
   
-##  <a name="Features"></a> Компоненты проектов SharePoint  
- Компонент представляет собой переносимый модульный функциональный элемент, упрощающий изменение сайтов за счет использования определений сайтов.  Он также является пакетом для элементов служб [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] \(WSS\), которые можно активировать для определенной области, и которые помогают пользователю в выполнении определенных задач.  Шаблоны развертываются в качестве компонентов.  
+##  <a name="Features"></a>Функции проекта SharePoint  
+ Компонент является переносимый модульный элемент функциональных возможностей, который упрощает изменение узлов с помощью определения сайтов. Это также пакета [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) элементов, которые можно активировать для определенной области, и которые помогают пользователю в выполнении конкретной задачи. Как компоненты развертываются шаблоны.  
   
- При запуске проекта в режиме отладки процесс развертывания создает новую папку в каталоге *компонентов* %COMMONPROGRAMFILES%\\Microsoft Shared\\web server extensions\\14\\TEMPLATE\\FEATURES.  Имена компонентов имеют формат *project name*\_Feature*x*, например TestProject\_Feature1.  
+ При запуске проекта в режиме отладки процесс развертывания создает папку в *функция* каталог на %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES. Имена компонентов имеют формат *имя проекта*_Feature*x*, например TestProject_Feature1.  
   
- Папка решения в каталоге функций содержит файл *определения функций* и файл *определения рабочих процессов*.  В файле определения компонента проекта \(Feature.xml\) содержится описание файлов этого компонента.В файле определения проекта \(Elements.xml\) описывается шаблон проекта.  Файл Elements.xml можно открыть через **Обозреватель решений**, тогда как файл Feature.xml создается при создании пакета решения.  Дополнительные сведения об этих файлах см. в разделе [Шаблоны проектов и элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Папка решения в каталоге функций содержит *Определение компонента* файла и *определение рабочего процесса* файла. Файл определения компонента (Feature.xml) описывает файлы в проекте Feature.The файл определения проекта (Elements.xml) описывается шаблон проекта. Файл Elements.XML можно найти в **обозревателе решений**, но файл Feature.xml создается при создании пакета решения. Дополнительные сведения об этих файлах см. в разделе [проект SharePoint и шаблоны элементов проекта](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-##  <a name="Workflow"></a> Отладка рабочих процессов  
- При отладке проекта рабочего процесса [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавляет шаблон этого рабочего процесса в библиотеку или список \(в зависимости от его типа\).  После этого можно запустить шаблон рабочего процесса \(вручную или путем добавления или обновления элемента\).  Затем можно выполнить отладку рабочего процесса в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+##  <a name="Workflow"></a>Отладка рабочих процессов  
+ При отладке проекта рабочего процесса [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавляет шаблон рабочего процесса (в зависимости от его типа) в библиотеку или список. Затем в шаблон рабочего процесса можно запустить вручную или путем добавления или обновления элемента. Затем можно использовать [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для отладки рабочего процесса.  
   
 > [!NOTE]  
->  При добавлении ссылок на другие сборки удостоверьтесь, что данные сборки установлены в глобальном кэше сборок \([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]\).  В противном случае решение рабочего процесса запустить не удастся.  Дополнительные сведения об установке сборок см. в [Manually start a workflow on a document or item](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  При добавлении ссылки на другие сборки, убедитесь, что данные сборки установлены в глобальном кэше сборок ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). В противном случае не удастся решения рабочего процесса. Сведения об установке сборок см. в разделе [вручную запустите рабочий процесс для документа или элемента](http://go.microsoft.com/fwlink/?LinkID=79938).  
   
- Впрочем, развертывание не запускает рабочий процесс.  Следует запустить его из узла SharePoint.  Рабочий процесс также можно запустить с помощью клиентского приложения — например, Microsoft Office Word 2010, или же с помощью отдельного кода на стороне сервера.  Используйте один из подходов, указанных в **Мастере настройки SharePoint**.  
+ Тем не менее процесс развертывания не запускается рабочий процесс. Рабочий процесс необходимо запускать с веб-сайта SharePoint. Можно также запустить рабочий процесс, с помощью клиентского приложения, такие как Microsoft Office Word 2010, либо используя отдельный код на стороне сервера. Используйте один из подходов, указанных в **мастер настройки SharePoint**.  
   
- Например, если в мастере было указано, что рабочий процесс можно запустить вручную, следует запустить рабочий процесс непосредственно из элемента в библиотеке или списке.  Дополнительные сведения о запуске рабочего процесса вручную см. в [Manually start a workflow on a document item](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Например, если вы указали, что рабочий процесс можно запустить вручную, рабочий процесс запускается непосредственно из элемента в библиотеке или списке. Дополнительные сведения о том, как запустить рабочий процесс вручную см. в разделе [вручную запустить рабочий процесс на элемент документа](http://go.microsoft.com/fwlink/?LinkID=79938).  
   
-##  <a name="FeatureEvents"></a> Отладка приемников событий компонентов  
- По умолчанию при запуске приложения [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint его компоненты автоматически активируются на сервере SharePoint.  Впрочем, это вызывает проблемы при отладке приемников событий этого компонента, поскольку когда он активируется системой [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], он выполняется не в том же процессе, что отладчик.  Поэтому функции отладки, такие как точка останова, не действуют надлежащим образом.  
+##  <a name="FeatureEvents"></a>Отладка приемников событий компонентов  
+ По умолчанию при запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] приложения SharePoint его компоненты автоматически активируются для вас на сервере SharePoint. Тем не менее, это вызывает проблемы при отладке приемников событий компонентов, поскольку при активации компонент по [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], он выполняется в другом процессе, что отладчик. Это означает, что функции отладки, например точки останова, не будут работать правильно.  
   
- Чтобы отключить автоматическую активацию компонента в SharePoint, прежде чем выполнять отладку содержащихся в нем приемников событий задайте свойству проекта **Активная конфигурация развертывания** значение **Без активации**.  Затем, после начала отладки вашего приложения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], вручную активируйте компонент в SharePoint.  Для активации компонента откройте меню SharePoint **Действия сайта**, выберите пункт **Параметры сайта**, выберите ссылку **Управление компонентами сайта**, а затем нажмите кнопку **Активировать** рядом с нужным компонентом, для продолжения отладки.  
+ Чтобы отключить автоматическую активацию компонента в SharePoint и выполнять отладку для приемников событий компонентов, установите для параметра проекта **активная конфигурация развертывания** свойства **без активации** перед отладкой. Затем, после начала отладки вашего приложения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], вручную активируйте компонент в SharePoint. Чтобы активировать компонент, откройте **действия сайта** в SharePoint, в меню выберите **параметры сайта**, выберите **Управление компонентами сайта** связь, а затем выберите **Активировать** рядом с компонентом для продолжения отладки в обычном режиме.  
   
-##  <a name="EnhancedDebug"></a> Включение вывода подробных сведений об отладке  
- В связи с тем, что взаимодействие между процессом [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(devenv.exe\), ведущим процессом SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(vssphost4.exe\), SharePoint и уровнем WCF бывает крайне сложным, иногда очень непросто диагностировать ошибки, возникающие при построении, развертывании и выполнении других операций.  Чтобы упростить эту задачу, можно включить подробную информацию отладки.  Для этого откройте следующий раздел реестра Windows:  
+##  <a name="EnhancedDebug"></a>Включение расширенные сведения об отладке  
+ Из-за сложных взаимодействий между [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] процесса (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint хост-процесса (vssphost4.exe), SharePoint и уровнем WCF, можно диагностировать ошибки, возникающие во время построения, развертывания и так далее запрос. Чтобы облегчить эту задачу, можно включить расширенные сведения об отладке. Чтобы сделать это, перейдите к следующему разделу реестра, в реестре Windows:  
   
- \[HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\11.0\\SharePointTools\]  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  
   
- Если значение **REG\_DWORD** "EnableDiagnostics" уже не существует, необходимо создать его вручную.  Установите значение «EnableDiagnostics» в «1».  
+ Если «EnableDiagnostics» **REG_DWORD** значение еще не существует, создайте его вручную. Задайте значение «EnableDiagnostics» в «1».  
   
- Если задать это значение ключа равным 1, при каждой ошибке, возникающей во время работы в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], сведения трассировки стека отображаются в окне **Вывод**.  Чтобы отключить отображение подробной отладочной информации, снова задайте для EnableDiagnostics значение 0 или удалите значение.  
+ Установка этого значения ключа в 1 стека причины трассировки сведения отображаются в **вывода** окна при каждой ошибке, возникающей при запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Чтобы отключить отображение подробной отладочной информации, снова задайте для EnableDiagnostics значение 0 или удалите значение.  
   
- Дополнительные сведения о других разделах реестра SharePoint см. в разделе [Debugging Extensions for the SharePoint Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Дополнительные сведения о других разделах реестра SharePoint см. в разделе [отладка расширений для средств SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
   

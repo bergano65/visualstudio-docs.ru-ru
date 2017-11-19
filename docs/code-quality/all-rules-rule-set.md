@@ -1,25 +1,26 @@
 ---
-title: "Набор правил &quot;Все правила&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Все правила набора правил | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b490e4d9-2736-4a1f-8bb9-1c35829aa5af
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0a6c6692810d9aca3a2958c9bface10698a4b0e4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Набор правил &quot;Все правила&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Весь набор правил содержит все правила как для машинного, так и для управляемого кода.  Набор правил содержит все правила, описанные в следующих разделах:  
+# <a name="all-rules-rule-set"></a>Набор правил "Все правила"
+Все правила набора правил содержит все правила для машинного и управляемого кода. Набор правил содержит все правила, описанные в следующих разделах:  
   
-1.  [Анализ кода для предупреждений C\/C\+\+](../code-quality/code-analysis-for-c-cpp-warnings.md)  
+1.  [Анализ кода для предупреждений C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)  
   
 2.  [Анализ для предупреждений управляемого кода](../code-quality/code-analysis-for-managed-code-warnings.md)

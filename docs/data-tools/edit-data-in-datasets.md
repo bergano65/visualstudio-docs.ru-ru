@@ -1,54 +1,114 @@
 ---
-title: "Редактирование данных в наборах данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], правка в наборах данных"
-  - "наборы данных [Visual Basic], редактирование данных"
+title: "Изменение данных в наборах данных | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- datasets [Visual Basic], editing data
+- data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-caps.latest.revision: 15
-caps.handback.revision: 7
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-# Редактирование данных в наборах данных
-Изменение данных в <xref:System.Data.DataSet> представляет собой процесс управления фактическими данными в отдельных объектах <xref:System.Data.DataTable>, которые составляют набор данных.  Изменение данных в таблицах данных подобно изменению данных в таблице любой базы данных — процесс может включать вставку, обновление и удаление записей таблицы.  
+# <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
+Изменение данных в таблицах данных, подобно изменить данные в таблице в любой базе данных. Процесс может включать вставки, обновления и удаления записей в таблице. В форму с привязкой к данным можно указать, какие поля являются изменяемые пользователем. В таких случаях инфраструктуры привязки данных обрабатывает все отслеживания изменений, чтобы эти изменения можно отправить в базу данных более поздней версии. Если предполагается передавать эти изменения в базе данных программным путем вносить изменения в данных, необходимо использовать объекты и методы, которые выполняют отслеживания изменений для вас.  
   
- Кроме изменения фактических данных, также можно запрашивать <xref:System.Data.DataTable> для возвращения определенных строк данных, например, отдельных строк, определенных версий строк \(исходные и предложенные\), только измененных строк и строк, которые содержат ошибки.  
+Помимо изменения фактических данных, также можно запрашивать <xref:System.Data.DataTable> позволит возвращать конкретные строки данных. Например может запросить для отдельных строк, определенных версий строк (исходные и предложенные), измененных строк или строк с ошибками.  
   
-## Общие задачи таблицы данных  
- В следующей таблице приведены ссылки на типовые задачи, связанные с редактированием и запросом данных в наборе данных:  
+## <a name="to-edit-rows-in-a-dataset"></a>Для изменения строк в наборе данных  
+Чтобы изменить существующую строку в <xref:System.Data.DataTable>, вам нужно найти <xref:System.Data.DataRow> требуется изменить, а затем присвоить обновленные значения нужным столбцам.  
   
-|Задача|Описание|  
-|------------|--------------|  
-|Вставка новых записей в таблицу данных.|Создание новой <xref:System.Data.DataRow> и добавление ее в коллекцию строк таблицы.  Для получения дополнительной информации см. [Практическое руководство. Добавление строк в объект DataTable](../Topic/How%20to:%20Add%20Rows%20to%20a%20DataTable.md).|  
-|Обновление существующих записей в таблице данных.|Присвоение значения конкретному столбцу строки данных.  Для получения дополнительной информации см. [Практическое руководство. Редактирование строк в объекте DataTable](../Topic/How%20to:%20Edit%20Rows%20in%20a%20DataTable.md).|  
-|Удаление существующих записей из таблицы данных.|Вызов метода <xref:System.Data.DataRow.Delete%2A> для строки, которую требуется удалить из таблицы данных.  Для получения дополнительной информации см. [Практическое руководство. Удаление строк из объекта DataTable](../Topic/How%20to:%20Delete%20Rows%20in%20a%20DataTable.md).|  
-|Поиск измененных записей в таблице данных.|Вызов метода <xref:System.Data.DataTable.GetChanges%2A> таблицы данных.  Для получения дополнительной информации см. [Практическое руководство. Получение измененных строк](../Topic/How%20to:%20Retrieve%20Changed%20Rows.md).|  
-|Доступ к различных версиям строки в таблице данных.|Доступ к отдельным столбцам строки данных с помощью передачи <xref:System.Data.DataRowVersion>, которую необходимо просмотреть.  Для получения дополнительной информации см. [Практическое руководство. Получение определенных версий объекта DataRow](../Topic/How%20to:%20Get%20Specific%20Versions%20of%20a%20DataRow.md).|  
-|Поиск строк с ошибками в таблице данных.|Проверка свойства <xref:System.Data.DataTable.HasErrors%2A> таблицы данных.  Для получения дополнительной информации см. [Практическое руководство. Поиск строк с ошибками](../Topic/How%20to:%20Locate%20Rows%20that%20Have%20Errors.md).|  
+Если вы не знаете индекс строки, вы хотите изменить, воспользуйтесь `FindBy` метод для поиска по первичному ключу:  
   
-## См. также  
- [DataTables](../Topic/DataTables.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [DataTables](../Topic/DataTables.md)   
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Общие сведения о приложениях для работы с данными в Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
+[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]  
+  
+Если вы знаете индекс строки, доступны и изменяет строк следующим образом:  
+  
+[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
+[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]  
+  
+## <a name="to-insert-new-rows-into-a-dataset"></a>Для вставки новых строк в набор данных  
+Приложения, использующие элементы управления с привязкой к данным обычно Добавление новых записей с помощью **добавить новое** кнопку [элемент управления BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
+  
+Для добавления новых записей в набор данных вручную, создайте новую строку данных путем вызова метода в DataTable. Затем добавьте строки <xref:System.Data.DataRow> коллекции (<xref:System.Data.DataTable.Rows%2A>) из <xref:System.Data.DataTable>:  
+  
+[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
+[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]  
+  
+Чтобы сохранить сведения, что набор данных для отправки обновлений в источник данных, используйте <xref:System.Data.DataRow.Delete%2A> метод для удаления строк в таблице данных. Например, если приложение использует TableAdapter (или <xref:System.Data.Common.DataAdapter>), его `Update` метод удаляет строки в базе данных, содержащие <xref:System.Data.DataRow.RowState%2A> из <xref:System.Data.DataRowState.Deleted>.  
+  
+Если приложению не требуется отправлять обновления обратно к источнику данных, то это можно удалить записи методом прямого доступа к коллекции строк данных (<xref:System.Data.DataRowCollection.Remove%2A>).  
+  
+#### <a name="to-delete-records-from-a-data-table"></a>Для удаления записей из таблицы данных  
+  
+-   Вызовите <xref:System.Data.DataRow.Delete%2A> метод <xref:System.Data.DataRow>.  
+  
+     Этот метод не удаляет записи физически. Вместо этого он помечает записи для удаления.  
+  
+    > [!NOTE]
+    >  Если вы получаете свойство count <xref:System.Data.DataRowCollection>, результирующее значение включает записи, которые были помечены для удаления. Чтобы получить точное число записей, которые не помечены для удаления, можно использовать цикл по коллекции, просмотрев <xref:System.Data.DataRow.RowState%2A> свойства каждой записи. (Помеченные на удаление записи имеют <xref:System.Data.DataRow.RowState%2A> из <xref:System.Data.DataRowState.Deleted>.) Кроме того можно создать представление данных набора данных, фильтры на основе состояния строки и получить свойство count оттуда.  
+  
+В следующем примере демонстрируется вызов <xref:System.Data.DataRow.Delete%2A> метод, чтобы пометить первую строку в `Customers` таблице как удаленные:  
+  
+[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
+[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]  
+  
+## <a name="determine-if-there-are-changed-rows"></a>Определить наличие измененных строк  
+При изменении записи в наборе данных, сведения об этих изменениях хранятся до их фиксации. Внесенные изменения фиксируются при вызове `AcceptChanges` метод таблицы набора данных или данных или при вызове `Update` метод адаптера TableAdapter или данных.  
+  
+Изменения отслеживаемых двумя способами в каждой строке данных.  
+  
+-   Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, или <xref:System.Data.DataRowState.Unchanged>).  
+  
+-   Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущую версию (после изменений). В период, когда изменения еще не завершены (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий), третий версия — предложенная — доступна также. 
+  
+<xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк.   
+  
+#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Чтобы определить, были ли внесены изменения в строки  
+  
+-   Вызовите <xref:System.Data.DataSet.HasChanges%2A> метод набора данных для проверки измененных строк.  
+  
+В следующем примере показано, как проверять возвращаемое значение из <xref:System.Data.DataSet.HasChanges%2A> метод для выявления измененных строк в наборе данных с именем `NorthwindDataset1`:  
+  
+[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
+[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]  
+  
+## <a name="determine-the-type-of-changes"></a>Определение типа изменений  
+Можно также проверить, чтобы увидеть, какой тип изменения были внесены в наборе данных путем передачи значения из <xref:System.Data.DataRowState> перечисления <xref:System.Data.DataSet.HasChanges%2A> метод.  
+  
+#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Чтобы определить тип изменений были внесены в строку  
+  
+-   Передайте <xref:System.Data.DataRowState> значение <xref:System.Data.DataSet.HasChanges%2A> метод.  
+  
+В следующем примере показано, как проверить набор данных с именем `NorthwindDataset1` для определения, если к нему были добавлены никакие новые строки:  
+  
+[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
+[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]  
+  
+## <a name="to-locate-rows-that-have-errors"></a>Чтобы найти строки, содержащие ошибки  
+При работе с отдельными столбцами и строками данных, могут возникнуть ошибки. Вы можете проверить `HasErrors` свойства, чтобы определить наличие ошибок <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, или <xref:System.Data.DataRow>.  
+  
+1.  Проверьте `HasErrors` свойство, чтобы определить наличие ошибок в наборе данных.  
+  
+2.  Если `HasErrors` свойство `true`, итерации по коллекции таблиц, а затем по строкам, чтобы найти строку с ошибкой.  
+
+[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
+[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+
+## <a name="see-also"></a>См. также
+[Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

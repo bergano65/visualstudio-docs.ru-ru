@@ -1,72 +1,73 @@
 ---
-title: "С помощью текстовых маркеров с API прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - текстовых меток"
+title: "С помощью текстовых маркеров с помощью прежних версий API | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# С помощью текстовых маркеров с API прежних версий
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Метка текст перемещаемые диапазон текста в буфере, который может повлиять на отображение и расширения функциональности области текста.  Метки включают точки останова, закладки, волнистые подчеркивание и только для чтения области.  По сути, расцветка метки текста отличается от синтаксиса.  Расцветка синтаксиса быстрый способ передачи синтаксис языка, связанного с областью текста.  Расцветка синтаксиса обычно запрашивается, когда окна обновить экран, если скорость имеет значения.  Расцветка синтаксиса изменяет только цвет текста.  Текст метки могут изменять многие другие свойства текста.  Отправьте СМС метки законсервируйте "float" и применить специальные расширения функциональности и расцветка.  
+# <a name="using-text-markers-with-the-legacy-api"></a>С помощью текстовых маркеров с помощью API прежних версий
+Текстовая метка — с плавающей запятой диапазон текста в буфере, который может повлиять на отображение и поведение области текста. Маркеры включают точки останова, закладки, подчеркивание волнистой линией и только для чтения областей. По сути текстовых маркеров отличаются от Цветовая подсветка синтаксиса. Цветовая подсветка синтаксиса — быстрый способ передачи синтаксис, связанный с областью текста. Цветовая подсветка синтаксиса обычно запрашивается, когда Windows перерисовывает экрана, когда важна скорость. Цветовая подсветка синтаксиса изменяет цвет текста. Текст метки можно изменить многие другие свойства текста. Можно «float» и применить специальное поведение текстовых маркеров: выделение цветом.  
   
- Вследствие снижения производительности, связанного с метками текст, не создайте несколько меток для текстовых буферов.  Каждая метка обновляется каждый раз, когда пользователь изменяет содержимое буфера.  
+ Из-за снижение производительности, связанные с маркерами текста не следует создавать много маркеры для буферов текста. Каждый маркер обновляется каждый раз, что пользователь изменяет содержимое буфера.  
   
 > [!NOTE]
->  Пользователи могут изменять цвет видимого только тип маркера не ее форму и стиль.  Дополнительные сведения см. в разделе [Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+>  Пользователи могут изменять цвет тип видимым маркера, но не его форма и стиль. Дополнительные сведения см. в разделе [шрифты и цвета, среда, диалоговое окно «Параметры»](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
-## Связанные разделы  
+## <a name="related-topics"></a>Связанные разделы  
   
 |Заголовок|Описание|  
-|---------------|--------------|  
-|[Практическое руководство: Добавление маркеров стандартный текст](../extensibility/how-to-add-standard-text-markers.md)|Описывает, как добавлять стандартный тип маркера текст, предоставляемый [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] редактор core к представлению текста.|  
-|[Практическое руководство: реализации маркеры ошибки](../extensibility/how-to-implement-error-markers.md)|Описывает, как реализовать экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] метка, используемая для отображения ошибок с помощью волнистого красное подчеркивание.|  
-|[Практическое руководство: Создание пользовательского текста маркеры](../extensibility/how-to-create-custom-text-markers.md)|Описывает, как создать и добавить пользовательский тип маркера текста к представлению текста.|  
-|[Практическое руководство: использование текстовых меток](../extensibility/how-to-use-text-markers.md)|Объясняет, как добавить метки текста.|  
-|[В редакторе ядра](../extensibility/inside-the-core-editor.md)|Описывает основные функции редактора и предоставляет сведения о том, как настраивать редактор.|  
-|[Editor Features](http://msdn.microsoft.com/ru-ru/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описывает функции, доступные в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] редактор.|  
+|-----------|-----------------|  
+|[Как: Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)|Описание процедуры добавления стандартного текста тип маркера, предоставляемых [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора для представления текста.|  
+|[Как: реализовать маркеры ошибки](../extensibility/how-to-implement-error-markers.md)|Описывает, как реализовать экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] маркер, который используется для указания ошибок с помощью красными волнистыми линиями.|  
+|[Как: Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)|Описывает, как создать и добавить настраиваемый текст тип маркера для представления текста.|  
+|[Как: использовать маркеры текста](../extensibility/how-to-use-text-markers.md)|Описание способов добавления текстовых маркеров.|  
+|[В редакторе Core](../extensibility/inside-the-core-editor.md)|Описание возможностей базового редактора и подробные сведения о настройке базового редактора.|  
+|[Возможности редактора](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описание функций, доступных в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора.|  
   
-## Ссылки  
+## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- Универсального механизма для получения сведений о конкретном типе маркера текст, предоставляет ли предопределен редактором или зарегистрирован VSPackage.  
+ Универсальный механизм для получения сведений о конкретных текстового типа маркера, предопределенных редактором или зарегистрированные пакетом VSPackage.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
- Предоставляет доступ к и корректирует положение метки текста в текстовом буфере с помощью плоских координат.  
+ Предоставляет доступ к и регулирует положение текстовая метка в буфер текста с помощью двумерные координаты.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>  
- Предоставляет методы для управления текстовой метки.  
+ Предоставляет методы для управления текстовых маркеров.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- Предоставляет обратные вызовы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Интегрированная среда разработки и другие процессы, которые используются для обработки метку текста.  
+ Предоставляет обратные вызовы для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки и другие процессы, которые используются для настройки текстовой метки.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- Расширяющий функциональность, доступную через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс, предоставив новые обратные вызовы.  
+ Расширяет функциональность, которая доступна через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейса, предоставляя дополнительные обратные вызовы.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- Расширяющий функциональность, доступную через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс, предоставив новые обратные вызовы.  
+ Расширяет функциональность, которая доступна через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейса, предоставляя дополнительные обратные вызовы.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
- Разрешает тип маркера для указания используют ли другие типы маркеров тот же набор цветов.  
+ Включает тип маркера для определения того, используют ли другие типы маркеров тот же набор цветов.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- Предоставляет контекст для меток текста в редакторе.  Для каждого типа маркера текста, в редакторе, интегрированная среда разработки создает отдельное <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> объект.  
+ Предоставляет контекст для текстовых маркеров базового редактора. Для каждого типа маркера текст, который является базового редактора, IDE создает отдельную <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> объекта.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
- Обработчик, который указан для меток глифы, поддерживающие изменение перетаскивания.  Глиф значок, который указывает положение метки.  
+ Обработчик, который предоставляется для которого глифы поддерживает редактирование и перетащите маркеры. Глиф — значок, указывающий на позицию маркер.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- Возвращает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> интерфейс из службы, которая предоставляет текстовой метки другое VSPackages.  
+ Возвращает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> интерфейс из службы, которая содержит текст маркеров для других пакетов VSPackage.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- Предоставляет доступ к и корректирует положение метки текста в текстовом буфере с помощью одномерных координат.  Если возможно, не используйте этот интерфейс.
+ Предоставляет доступ к и изменяет положение текстовая метка в буфер текста с использованием одномерный массив координат. Если это возможно, не следует использовать данный интерфейс.

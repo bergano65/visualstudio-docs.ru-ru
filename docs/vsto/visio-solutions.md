@@ -1,44 +1,49 @@
 ---
-title: "Решения Visio"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "проекты Office [разработка решений Office в Visual Studio], Visio"
-  - "решения [разработка решений Office в Visual Studio], Visio"
-  - "Visio [разработка решений Office в Visual Studio]"
-  - "шаблоны [разработка решений Office в Visual Studio], Visio"
-  - "проекты [разработка решений Office в Visual Studio], Visio"
-  - "решения Office [разработка решений Office в Visual Studio], Visio"
+title: "Решения Visio | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office projects [Office development in Visual Studio], Visio
+- solutions [Office development in Visual Studio], Visio
+- Visio [Office development in Visual Studio]
+- templates [Office development in Visual Studio], Visio
+- projects [Office development in Visual Studio], Visio
+- Office solutions [Office development in Visual Studio], Visio
 ms.assetid: c52948c6-6891-43ec-93ff-c54c74ec6016
-caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 36
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b09e0a43f4a9dbb77a983a1f7e87f0b2886b1697
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Решения Visio
+# <a name="visio-solutions"></a>Решения Visio
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office Visio. Надстройки VSTO можно использовать для автоматизации Visio, расширения функциональных возможностей этого продукта и настройки его пользовательского интерфейса.  
   
- Дополнительные сведения о надстройках VSTO см. в разделах [Приступая к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md) и [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md). Если вы не знакомы с программированием для Microsoft Office, изучите раздел [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
+ Дополнительные сведения о надстройках VSTO см. в разделах [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md) и [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md). Если вы не знакомы с программированием для Microsoft Office, см. раздел [Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Visio 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Visio 2010. Для получения дополнительной информации см. [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
-## Автоматизация Visio с помощью объектной модели Visio  
- Объектная модель Visio предоставляет различные классы, которые можно использовать для автоматизации Visio с целью создания диаграмм для организационных диаграмм, блок\-схем, временных шкал проекта, сетевых диаграмм, пространств Office и проч. Интерфейс API позволяет написать код для выполнения общих задач.  
+> [!NOTE]  
+>  Заинтересованы в разработке решений, расширяющих возможности Office через [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и их можно создавать с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
+  
+## <a name="automating-visio-by-using-the-visio-object-model"></a>Автоматизация Visio с помощью объектной модели Visio  
+ Объектная модель Visio предоставляет различные классы, которые можно использовать для автоматизации Visio с целью создания диаграмм для организационных диаграмм, блок-схем, временных шкал проекта, сетевых диаграмм, пространств Office и проч. Интерфейс API позволяет написать код для выполнения общих задач.  
   
 -   Конструирование и размещение фигур и текста в диаграммах.  
   
--   Управление поведением фигур с учетом бизнес\-логики и данных, вводимых пользователем.  
+-   Управление поведением фигур с учетом бизнес-логики и данных, вводимых пользователем.  
   
 -   Управление отображением диаграмм, например панорамированием и масштабированием.  
   
@@ -46,34 +51,34 @@ caps.handback.revision: 36
   
 -   Импортируйте внешние данные в Visio, свяжите их с фигурами и отобразите в графическом виде на странице.  
   
- Пошаговые инструкции и примеры кода по использованию объектной модели Visio для работы с документами и фигурами см. в разделах [Работа с документами Visio](../vsto/working-with-visio-documents.md) и [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md).  
+ Пошаговые инструкции и примеры кода по использованию объектной модели Visio для работы с документами и фигурами см. в разделах [Working with Visio Documents](../vsto/working-with-visio-documents.md) и [Working with Visio Shapes](../vsto/working-with-visio-shapes.md).  
   
- Для доступа к объектной модели Visio из надстройки VSTO используйте поле `Application` класса `ThisAddIn` в своем проекте. Поле `Application` возвращает объект Microsoft.Office.Interop.Visio.Application, представляющий текущий экземпляр Visio. Для получения дополнительной информации см. [Приступая к программированию надстроек VSTO](../vsto/programming-vsto-add-ins.md).  
+ Для доступа к объектной модели Visio из надстройки VSTO используйте поле `Application` класса `ThisAddIn` в своем проекте. `Application` Поле возвращает объект Microsoft.Office.Interop.Visio.Application, который представляет текущий экземпляр Visio. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
- При вызове объектной модели Visio используются типы, предоставляемые в основной сборке взаимодействия \(PIA\) для Visio. Основная сборка взаимодействия выступает в качестве моста между управляемым кодом в надстройке VSTO и объектной моделью COM в Visio. Все типы в основной сборке взаимодействия Visio определены в пространстве имен Microsoft.Office.Interop.Visio. Дополнительные сведения об основных сборках взаимодействия см. в разделах [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) и [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md).  
+ При вызове объектной модели Visio используются типы, предоставляемые в основной сборке взаимодействия (PIA) для Visio. Основная сборка взаимодействия выступает в качестве моста между управляемым кодом в надстройке VSTO и объектной моделью COM в Visio. Все типы в основной сборке ВЗАИМОДЕЙСТВИЯ Visio определены в пространстве имен Microsoft.Office.Interop.Visio. Дополнительные сведения об основных сборках взаимодействия см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) и [основных сборок взаимодействия Office](../vsto/office-primary-interop-assemblies.md).  
   
-## Общие сведения об объектной модели Visio  
- Обзор объектной модели Visio см. в разделе [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md), который содержит ссылки на справочник по объектной модели Visio и пакеты SDK.  
+## <a name="visio-object-model-overview"></a>Общие сведения об объектной модели Visio  
+ Обзор объектной модели Visio см. в разделе [Visio Object Model Overview](../vsto/visio-object-model-overview.md), который содержит ссылки на справочник по объектной модели Visio и пакеты SDK.  
   
-## Настройка пользовательского интерфейса Visio  
+## <a name="customizing-the-user-interface-of-visio"></a>Настройка пользовательского интерфейса Visio  
  Пользовательский интерфейс Visio имеет следующие возможности настройки.  
   
 |Задача|Дополнительные сведения|  
-|------------|-----------------------------|  
+|----------|--------------------------|  
 |Настройка ленты.|[Обзор ленты](../vsto/ribbon-overview.md)|  
   
- Сведения о настройке пользовательского интерфейса Visio см. в справочной документации по VBA для класса [Visio.UIObject](HV10077129).  
+ Сведения о настройке пользовательского интерфейса Visio см. в справочной документации по VBA для класса [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) .  
   
-## См. также  
- [Приступая к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+## <a name="see-also"></a>См. также  
+ [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [Общие сведения о разработке решений Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Приступая к программированию надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
  [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)   
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
- [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)   
- [Visio 2010 при разработке решений для Office](http://go.microsoft.com/fwlink/?LinkId=199017)  
+ [Общие сведения о модели объектов Visio](../vsto/visio-object-model-overview.md)   
+ [Visio 2010 при разработке решений Office](http://go.microsoft.com/fwlink/?LinkId=199017)  
   
   
