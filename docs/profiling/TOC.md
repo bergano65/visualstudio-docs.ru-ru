@@ -365,5 +365,5 @@
 ##### [Функция CvWriteAlert](cvwritealert-function.md)
 ##### [Функция CvWriteFlag](cvwriteflag-function.md)
 ##### [Функция CvWriteMessage](cvwritemessage-function.md)
-### [Служебная программа с интерфейсом командной строки визуализатора параллелизма (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Анализ энергопотребления приложениями Магазина](analyze-energy-use-in-store-apps.md)
+### [Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Анализ энергопотребления приложениями UWP](analyze-energy-use-in-store-apps.md)

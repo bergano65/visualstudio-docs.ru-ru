@@ -1,11 +1,13 @@
 ---
 layout: LandingPage
-title: "Отладка в Visual Studio"
-translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: cf5f50b1e02fa87a6302e1cf9d0b8d9a5ef91b77
-ms.lasthandoff: 03/03/2017
-
+title: "Отладка приложений в Visual Studio | Документация Майкрософт"
+description: "Узнайте, как с помощью Visual Studio 2017 отлаживать приложения, службы и инструменты для платформ и устройств на используемом вами языке."
+ms.technology: vs-ide-debug
+ms.openlocfilehash: d00ef04d3d8f73b607c91f33f9af53429666ba5f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio
 
@@ -67,7 +69,7 @@ ms.lasthandoff: 03/03/2017
         </a>
     </li>
         <li>
-        <a href="https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6">
+        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger#video">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -132,6 +134,24 @@ ms.lasthandoff: 03/03/2017
                     </div>
                     <div class="cardText">
                         <h3>Дополнительные сведения об IntelliTrace (Visual Studio Enterprise)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-tips-and-tricks">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Советы и рекомендации по работе с отладчиком</h3>
                     </div>
                 </div>
             </div>
