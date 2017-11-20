@@ -1,51 +1,51 @@
 ---
-title: "IDebugCustomAttribute::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetName"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetName"
+title: "IDebugCustomAttribute::GetName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttribute::GetName
+helpviewer_keywords: IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 165362ab03685a3acca457e4095778b9dcb182e8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttribute::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Возвращает имя настраиваемого атрибута.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetName(   
-   BSTR* bstrName  
+```cpp  
+HRESULT GetName(   
+   BSTR* bstrName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetName(  
-   out string bstrName  
+   out string bstrName  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `bstrName`  
- \[out\] возвращает строку, содержащую имя настраиваемого атрибута.  
+ [out] Возвращает строку, содержащую имя настраиваемого атрибута.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Именованное возвращаемая этим методом, соответствует имени класса, используемого для объявления атрибута.  Это не может точно соответствовать имени самого класса настраиваемого атрибута как c\# разрешает суффикс "атрибут", удаляемый из имени настраиваемого атрибута при использовании в объявлении.  
+## <a name="remarks"></a>Примечания  
+ Именованный, возвращаемый этим методом соответствует имени класса, используемого для объявления атрибута. Это может не совсем соответствуют имя самого класса настраиваемого атрибута как C# позволяет суффикс «Attribute» для удаления из имени настраиваемого атрибута при использовании в объявлении.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
