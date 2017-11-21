@@ -1,0 +1,29 @@
+- name: Инструменты Visual Studio для сценариев ИИ
+  href: index.yml
+  items:
+    - name: Обзор
+      items:
+        - name: Обзор Инструментов Visual Studio для сценариев ИИ
+          href: about-ai-tools.md
+    - name: Установка
+      href: installation.md
+    - name: Краткие руководства
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: Учебники
+      items:
+        - name: TensorFlow + виртуальная машина Azure для глубинного обучения
+          href: tensorflow-vm.md
+    - name: Практические руководства
+      items:
+        - name: Создание нового проекта
+          href: create-project.md
+        - name: Обучение модели
+          href: train-model.md
+    - name: Примеры
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Коллекция моделей машинного обучения
+          href: 'https://gallery.cortanaintelligence.com/projects'
