@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 730a69894c8e38dd7b9d191fa7fe3396509148d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на IIS на удаленном компьютере
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
@@ -26,7 +26,7 @@ ms.lasthandoff: 10/31/2017
 В этом руководстве объясняется, как установить и настроить приложение Visual Studio 2017 г. ASP.NET MVC 4.5.2, его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET Core. в разделе [удаленной отладки ASP.NET Core на компьютере с IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Кроме того, можно развернуть и отладить в IIS с помощью Azure. Дополнительные сведения см. в разделе [удаленной отладки на платформе Azure](../debugger/remote-debugging-azure.md).
 
 Эти процедуры протестированы на эти конфигурации сервера:
-* Windows Server 2012 R2 и службы IIS 10 (для Windows Server 2008 R2, сервера используются разные процедуры)
+* Windows Server 2012 R2 и IIS 8.5 (для Windows Server 2008 R2, сервера используются разные процедуры)
 
 ## <a name="requirements"></a>Требования
 

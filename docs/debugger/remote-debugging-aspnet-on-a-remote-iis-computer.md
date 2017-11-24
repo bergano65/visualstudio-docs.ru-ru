@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: article
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 883a9ad8660204462d5aaa852ab87c5420af4382
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на компьютере удаленного IIS в Visual Studio 2017 г.
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
@@ -26,7 +26,7 @@ ms.lasthandoff: 10/31/2017
 В этом руководстве объясняется, как установить и настроить Visual Studio ASP.NET Core 2017 г., его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET 4.5.2 разделе [удаленной отладки ASP.NET на сервере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Кроме того, можно развернуть и отладить в IIS с помощью Azure. Дополнительные сведения см. в разделе [удаленной отладки на платформе Azure](../debugger/remote-debugging-azure.md).
 
 Эти процедуры протестированы на эти конфигурации сервера:
-* Windows Server 2012 R2 и IIS 10
+* Windows Server 2012 R2 и служб IIS 8.5
 * Windows Server 2016 и службы IIS 10
 
 ## <a name="requirements"></a>Требования

@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71facc3515bf90d378b19242bb804ce825131b4e
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Отладка динамического приложения ASP.NET Azure, с помощью отладчика моментальных снимков
 
@@ -29,7 +29,7 @@ Snappoints и logpoints похожи на точки останова. В отл
 - Приложения ASP.NET, выполняющиеся на .NET Framework 4.6.1 или более поздней версии.
 - Приложения ASP.NET Core под управлением .NET Core 2.0 или более поздней версии на Windows.
 
-Кроме того отладчик моментальный снимок доступен только для Visual Studio Enterprise 2017 г 15,5 или более поздней версии. 
+Кроме того отладчик моментальный снимок доступен только для Visual Studio Enterprise 2017 г 15,5 или более поздней версии и планы служб приложений Basic или более поздней версии. 
 
 ## <a name="start-the-snapshot-debugger"></a>Запустите отладчик моментальных снимков
 

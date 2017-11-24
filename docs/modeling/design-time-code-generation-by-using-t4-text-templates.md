@@ -19,11 +19,11 @@ caps.latest.revision: "38"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2444687c420feb1b7e949df349d3e609f1c542d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 97cf47eafc99abefeebce0f69ac2840617fb35e2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Как правило, шаблоны создаются, чтобы они менять код, они создают в соответствии с данными из *модели*. Модель — файла или базы данных, которая содержит основные сведения о требованиях приложения.  
@@ -306,7 +306,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
   
 ```  
-<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v11.0\TextTemplating\Microsoft.TextTemplating.targets" />  
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  
    <TransformOnBuild>true</TransformOnBuild>  
    <!-- Other properties can be inserted here -->  
