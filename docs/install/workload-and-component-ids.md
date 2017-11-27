@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 08/14/2017
+ms.date: 10/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,12 @@ ms.technology:
 - vs-ide-install
 - vs-ide-sdk
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
+ms.openlocfilehash: d1f296e7a718913d3db8ba86b90260d8e20ce82c
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fb076a7d696d4600181577180f2609892c52e49b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/17/2017
 ---
-
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017
 Щелкайте имена выпусков в таблице ниже, чтобы увидеть идентификаторы доступных рабочих нагрузок и компонентов, которые нужны для установки Visual Studio из командной строки или для определения в качестве зависимости в манифесте VSIX.
 
@@ -33,6 +31,7 @@ ms.lasthandoff: 09/06/2017
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Профессиональные инструменты и службы для разработки, предназначенные для небольших команд |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Бесплатная полнофункциональная интегрированная среда разработки для учащихся, разработчиков открытого ПО и индивидуальных разработчиков |
 | [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Обеспечивает взаимодействие с Team Foundation Server и Visual Studio Team Services без набора инструментов разработки Visual Studio |
+| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Сборка собственных и управляемых приложений, таких как WPF, WinForms и Win32 с возможностью редактирования кода с учетом синтаксиса, а также управления исходным кодом и рабочими элементами. Включает поддержку C#, Visual Basic и Visual C++. |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools позволяют создавать приложения в машинном и управляемом коде на основе MSBuild без использования интегрированной среды разработки Visual Studio. Также можно установить компиляторы и библиотеки Visual C++, ATL, MFC, а также поддержку C++ и интерфейса командной строки. |
 | [Агент&nbsp;тестирования&nbsp;Visual&nbsp;Studio 2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Поддерживает удаленное выполнение автоматических и нагрузочных тестов |
 | [Visual&nbsp;Studio Test&nbsp;Controller 2017](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Распределение автоматических тестов на несколько компьютеров |
@@ -41,9 +40,10 @@ ms.lasthandoff: 09/06/2017
 
 Дополнительные сведения об использовании этих списков см. в статьях [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) и [Руководство по переносу проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Кроме того, вы можете сообщить о проблемах при использовании продукта в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio IDE или платформу [UserVoice](https://visualstudio.uservoice.com/forums/121579). Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы. Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio) (требуется учетная запись [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>См. также
 * [Руководство администратора Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
-* [Сообщение о проблеме с помощью Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-
