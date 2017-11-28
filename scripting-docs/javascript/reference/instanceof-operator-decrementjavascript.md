@@ -1,56 +1,57 @@
 ---
-title: "Оператор instanceof (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "instanceof_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "instanceOf - оператор"
+title: "Оператор instanceof (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: instanceof_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: instanceOf operator
 ms.assetid: 92467bdc-56b5-42dc-adbd-a219776454d2
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор instanceof (JavaScript)
+# <a name="instanceof-operator-javascript"></a>Оператор instanceof (JavaScript)
 Возвращает логическое значение, указывающее, является ли объект экземпляром определенного класса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 result = object instanceof class  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `result`  
- Обязательный.  Любая переменная.  
+ Обязательный. Любая переменная.  
   
  `object`  
- Обязательный.  Любое выражение объекта.  
+ Обязательный. Любое выражение объекта.  
   
  `class`  
- Обязательный.  Любой определенный класс объектов.  
+ Обязательный. Любой определенный класс объектов.  
   
-## Заметки  
- Оператор `instanceof` возвращает значение `true`, если объект, определяемый параметром `object`, является экземпляром класса, определяемого параметром `class`.  Он возвращает значение `true`, если класс, определяемый параметром `class`, присутствует в цепочке прототипов данного объекта.  Он возвращает значение `false`, если объект, определяемый параметром `object`, не является экземпляром класса, определяемого параметром `class`, или параметр `object` имеет значение `null`.  
+## <a name="remarks"></a>Примечания  
+ Оператор `instanceof` возвращает значение `true`, если объект, определяемый параметром `object`, является экземпляром класса, определяемого параметром `class`. Он возвращает значение `true`, если класс, определяемый параметром `true`, `class`присутствует в цепочке прототипов данного объекта. Он возвращает значение `false`, если объект, определяемый параметром `object`, не является экземпляром класса, определяемого параметром `class`, или параметр `object` имеет значение `null`.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование оператора `instanceof`.  
   
-```javascript  
+```JavaScript  
 function objTest(obj){  
     var i, t, s = "";  
     t = new Array();  
@@ -77,9 +78,9 @@ document.write(objTest(obj));
 // obj is not an instance of Array  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)
