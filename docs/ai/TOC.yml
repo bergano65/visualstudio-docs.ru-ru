@@ -17,10 +17,26 @@
           href: tensorflow-vm.md
     - name: Практические руководства
       items:
-        - name: Создание нового проекта
-          href: create-project.md
+        - name: Создание проекта
+          items:
+            - name: Создание проекта на основе примера из коллекции
+              href: create-project-gallery.md
+            - name: Создание проекта на основе имеющегося кода
+              href: create-project-existing.md
+            - name: Создание проекта на основе шаблона
+              href: create-project.md
+            - name: Создание проекта из репозитория GitHub
+              href: create-project-repo.md
         - name: Обучение модели
           href: train-model.md
+        - name: Просмотр сведений о задании
+          href: job-details.md
+        - name: Мониторинг использования GPU
+          href: monitor-gpu.md
+        - name: Мониторинг с использованием TensorBoard
+          href: monitor-tensorboard.md
+        - name: Управление хранилищем
+          href: manage-storage.md
     - name: Примеры
       items:
         - name: GitHub
