@@ -13,15 +13,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2d82fc0eb60b2680be9ed2bdb7de13313593da0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81b58a2162d7240e32e1fb2d45e462ec551155e7
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/29/2017
 ---
 1. Если вы планируете развернуть приложение с веб-развертывания в Visual Studio, установите последнюю версию веб-развертывания на сервере.
 
-    Чтобы установить веб-развертывания, используйте [установщика веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx) или получите установщика непосредственно из [центра загрузки Майкрософт](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). Найдите веб-развертывания на вкладке приложений. 
+    Чтобы установить веб-развертывания, используйте [установщика веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Найдите веб-развертывания на вкладке приложений. Можно также получить установщик непосредственно из [центра загрузки Майкрософт](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
 2. Убедитесь, что веб-развертывание работает нормально, открыв **панель управления > система и безопасность > Администрирование > службы** и убедитесь, что **службы агента веб-развертывания** работает ( Имя службы отличается в более ранних версиях).
 

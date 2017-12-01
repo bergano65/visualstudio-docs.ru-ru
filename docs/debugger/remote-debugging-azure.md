@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4ad0cdadcb3d56af55af629b853e660dc9d86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core для служб IIS и Azure в Visual Studio 2017 г.
 Развертывание веб-приложения ASP.NET на компьютере Windows Server с IIS и настроить его для удаленной отладки. В этом руководстве объясняется, как установить и настроить приложение ASP.NET Core Visual Studio 2017 г., развернуть его в службах IIS с помощью Azure и присоединить удаленный отладчик из Visual Studio.
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017 г. 
 
-1. Создание нового приложения ASP.NET Core. (Выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложения ASP.NET Core (.NET Core)**)
+1. Создание нового приложения ASP.NET Core. (Выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложения ASP.NET Core (.NET Core)**).
 
     В **ASP.NET Core** шаблонов выберите пункт **веб-приложение**.
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Удаленная отладка ASP.NET Core в службе приложений Azure
 
-Из Visual Studio можно быстро публиковать и отладка приложения, чтобы полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS и его нельзя настроить. Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если требуется возможность настройки IIS, попробуйте отладить [виртуальной Машины Azure](#BKMK_azure_vm).) 
+Из Visual Studio можно быстро публиковать и отладка приложения, чтобы полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS и его нельзя настроить. Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если требуется возможность настройки IIS, попробуйте отладить [виртуальной Машины Azure](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>Чтобы развернуть приложение и удаленной отладки
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 10/31/2017
 
 2. Выберите **службу приложений Microsoft Azure** из **публикации** выберите **создать новый**и следуйте инструкциям на экране для публикации.
 
-    Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 3. В **обозревателя серверов**, щелкните правой кнопкой мыши в экземпляре приложения и выберите **подключить отладчик**.
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 10/31/2017
 
 Можно создать Azure VM для Windows Server и затем установить и настройки служб IIS и другие необходимые программные компоненты. Это занимает больше времени, чем развертывание для службы приложения Azure и требует выполните оставшиеся действия в этом учебнике.
 
-Во-первых, выполните действия, описанные в [установки и запуска IIS](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role).
+Во-первых, выполните действия, описанные в [установки и запуска IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
 
 Если открыть порт 80 в группу безопасности сети, также можно откройте порт 4022 удаленного отладчика. В этом случае не придется открыть его позже.
 
@@ -94,13 +94,13 @@ ms.lasthandoff: 10/31/2017
 - download.microsoft.com
 - загружаемые
 
-При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются.
+При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются. (Если требуется загрузить более раннюю версию удаленного отладчика из my.visualstudio.com некоторые дополнительные надежные сайты необходимы для входа.)
 
 При загрузке программного обеспечения, можно получить запросы на предоставление разрешения на загрузку различные сценарии веб-сайт и ресурсы. В большинстве случаев эти дополнительные ресурсы не требуется устанавливать программное обеспечение.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Установка ASP.NET Core в Windows Server
 
-1. Установка [.NET Core Windows Server, где размещены](https://go.microsoft.com/fwlink/?linkid=844461) пакета на хост-системы. Пакет для установки среды выполнения .NET Core, основной библиотеке .NET и модуль ASP.NET Core.
+1. Установка [.NET Core Windows Server, где размещены](https://aka.ms/dotnetcore-2-windowshosting) пакета на хост-системы. Пакет для установки среды выполнения .NET Core, основной библиотеке .NET и модуль ASP.NET Core. Более подробные инструкции см. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Если система не использует подключение к Интернету, загрузка и установка  *[Visual C++ 2015 распространяемый компонент Microsoft](https://www.microsoft.com/download/details.aspx?id=53840)*  перед установкой пакета .NET Core Windows Server, где размещены.
@@ -209,7 +209,7 @@ ms.lasthandoff: 10/31/2017
 
 В большинстве установок необходимые порты открыты путем установки ASP.NET и удаленный отладчик. Тем не менее если приложение будет размещено за брандмауэром Устранение неполадок развертывания, может потребоваться убедитесь, что необходимые порты открыты.
 
-На виртуальной Машине Azure, необходимо открыть порты, через [сетевой группы безопасности](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+На виртуальной Машине Azure, необходимо открыть порты, через [сетевой группы безопасности](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Необходимые порты:
 

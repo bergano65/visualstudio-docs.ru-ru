@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на компьютере удаленного IIS в Visual Studio 2017 г.
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
@@ -26,7 +26,7 @@ ms.lasthandoff: 11/22/2017
 В этом руководстве объясняется, как установить и настроить Visual Studio ASP.NET Core 2017 г., его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET 4.5.2 разделе [удаленной отладки ASP.NET на сервере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Кроме того, можно развернуть и отладить в IIS с помощью Azure. Дополнительные сведения см. в разделе [удаленной отладки на платформе Azure](../debugger/remote-debugging-azure.md).
 
 Эти процедуры протестированы на эти конфигурации сервера:
-* Windows Server 2012 R2 и служб IIS 8.5
+* Windows Server 2012 R2 и служб IIS 8
 * Windows Server 2016 и службы IIS 10
 
 ## <a name="requirements"></a>Требования
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/22/2017
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017 г. 
 
-1. Создание нового приложения ASP.NET Core. (**Файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложения ASP.NET Core (.NET Core)** .
+1. Создание нового приложения ASP.NET Core. (**Файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложения ASP.NET Core (.NET Core)**).
 
     В **ASP.NET Core** шаблонов выберите пункт **веб-приложение**.
 
@@ -58,13 +58,13 @@ ms.lasthandoff: 11/22/2017
 - download.microsoft.com
 - загружаемые
 
-При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются.
+При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются. (Если требуется загрузить более раннюю версию удаленного отладчика из my.visualstudio.com некоторые дополнительные надежные сайты необходимы для входа.)
 
 При загрузке программного обеспечения, можно получить запросы на предоставление разрешения на загрузку различные сценарии веб-сайт и ресурсы. В большинстве случаев эти дополнительные ресурсы не требуется устанавливать программное обеспечение.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Установка ASP.NET Core в Windows Server
 
-1. Установка [.NET Core Windows Server, где размещены](https://go.microsoft.com/fwlink/?linkid=844461) пакета на хост-системы. Пакет установки среды выполнения .NET Core, основной библиотеке .NET и модуль ASP.NET Core.
+1. Установка [.NET Core Windows Server, где размещены](https://aka.ms/dotnetcore-2-windowshosting) пакета на хост-системы. Пакет установки среды выполнения .NET Core, основной библиотеке .NET и модуль ASP.NET Core. Более подробные инструкции см. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Если система не использует подключение к Интернету, загрузка и установка  *[Visual C++ 2015 распространяемый компонент Microsoft](https://www.microsoft.com/download/details.aspx?id=53840)*  перед установкой пакета .NET Core Windows Server, где размещены.
@@ -139,7 +139,6 @@ ms.lasthandoff: 11/22/2017
 
 5. Установите флажок  **Показать процессы, запущенные всеми пользователями**.
 6. Введите имя процесса, чтобы быстро найти первую букву **dotnet.exe** (для ASP.NET Core).
-    >Примечание: Для приложения ASP.NET Core предыдущее имя процесса было dnx.exe.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
 
@@ -148,6 +147,7 @@ ms.lasthandoff: 11/22/2017
 8. Откройте веб-сайт удаленного компьютера. В браузере, перейдите к **http://\<имя удаленного компьютера >**.
     
     Должна открыться веб-страница ASP.NET.
+
 9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
     В Visual Studio должна быть достигнута точка останова.
@@ -157,7 +157,7 @@ ms.lasthandoff: 11/22/2017
 В большинстве установок необходимые порты открыты путем установки ASP.NET и удаленный отладчик. Тем не менее может потребоваться проверить, что открыты порты.
 
 > [!NOTE]
-> На виртуальной Машине Azure, необходимо открыть порты, через [сетевой группы безопасности](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+> На виртуальной Машине Azure, необходимо открыть порты, через [сетевой группы безопасности](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Необходимые порты:
 

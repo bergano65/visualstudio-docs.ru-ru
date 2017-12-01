@@ -17,24 +17,39 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3f3b54e19d8418f35a733b73ea0616b53bd42ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9f6f1e4739922a2d73999b36c0dc66e6069a6d6b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Как: Добавление зависимости пакета VSIX
-Можно настроить развертывание пакета VSIX, который устанавливает все зависимости, которые еще не присутствуют на конечном компьютере. Для выполнения этой задачи включают VSIX зависимости, чтобы файл source.extension.vsixmanifest.  
-  
-#### <a name="to-add-a-dependency"></a>Добавление зависимости  
-  
-1.  Откройте файл source.extension.vsixmanifest в **разработки** представления. Последовательно выберите пункты **зависимости** и нажмите кнопку **New**.  
-  
-2.  Чтобы добавить установленное расширение: в **Добавление новых зависимостей** установите флажок **установленное расширение** и затем для **имя**, выбрать расширение в списке.  
-  
-3.  Чтобы добавить другой файл VSIX, который не установлен:: в **Добавление новых зависимостей** выберите **файл в файловой системе** , а затем используйте **Обзор** кнопку, чтобы выбрать расширение VSIX.  
-  
-## <a name="see-also"></a>См. также  
- [Справочник по схеме 1.0 расширение VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Подготовка расширений для развертывания с помощью установщика Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+
+Можно настроить развертывание пакета VSIX, который устанавливает все зависимости, которые еще не присутствуют на конечном компьютере. Для выполнения этой задачи включают VSIX зависимости, чтобы файл source.extension.vsixmanifest.
+
+## <a name="to-add-a-dependency"></a>Добавление зависимости
+
+1. Откройте файл source.extension.vsixmanifest в **разработки** представления. Последовательно выберите пункты **зависимости** и нажмите кнопку **New**.
+
+2. Чтобы добавить установленное расширение: в **Добавление новых зависимостей** установите флажок **установленное расширение** и затем для **имя**, выбрать расширение в списке.
+
+3. Чтобы добавить другой файл VSIX, который не установлен:: в **Добавление новых зависимостей** выберите **файл в файловой системе** , а затем используйте **Обзор** кнопку, чтобы выбрать расширение VSIX.
+
+## <a name="require-a-specific-visual-studio-release"></a>Требовать конкретного выпуска Visual Studio
+
+Если расширение требует определенной версии Visual Studio 2017 г., например, зависит от компонентов, выпущенные в 15,3, можно указать номер сборки в вашего VSIX **InstallationTarget**. Например версия 15,3 содержит ряд построения "15.0.26730.3». Вы увидите сопоставление выпусков для номера построения [здесь](../install/visual-studio-build-numbers-and-release-dates.md). Обратите внимание, что с помощью номера версии «15.3"не будет работать правильно.
+
+Если для модуля требуется 15,3 или более поздней версии, можно объявить **InstallationTarget версии** как [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```
+
+VSIXInstaller обнаружит более ранних версиях Visual Studio и информировать пользователей о том, что более позднее обновление является обязательным.
+
+
+## <a name="see-also"></a>См. также
+
+ [Справочник по схеме 1.0 расширения VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b) [составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md) [Подготовка расширения для развертывания установщика Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

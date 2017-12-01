@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Как: переноса расширяемости проектов в Visual Studio 2017 г.
 
@@ -102,11 +102,6 @@ ms.lasthandoff: 10/31/2017
   ![Добавление необходимых компонентов roslyn](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>Если миграция из предварительной версии 4 или 5 предварительного просмотра
-
-* Замените `SetupDependencies` с `Prerequisites` и перемещать элементы из `Installer` элемента. `Prerequisites`Теперь находится непосредственно внутри `PackageManifest` элемента.
-* [Необязательно] Удалить `GenerateVsixV3` элемент. (Это требовалось в предварительной версии 5 только.) `GenerateVsixV3` Элемент будет учитываться в версий после предварительной версии 5.
 
 ## <a name="update-debug-settings-for-project"></a>Обновить параметры отладки для проекта
 
@@ -197,3 +192,15 @@ WPF | Основные средства рабочей нагрузки упра
 
 * Если вы используете расширение отладчика и знать, что проект содержит ссылку на VSDebugEng.dll и VSDebug.dll, нажмите кнопку фильтра в **двоичных файлов или имена файлов** заголовок.  Поиск «VSDebugEng.dll» и нажмите кнопку OK.  Затем нажмите кнопку "Фильтр" в **двоичных файлов или имена файлов** заголовок еще раз и выполните поиск «VSDebug.dll».  Установите флажок «Добавить выделенный фрагмент в фильтр» и нажмите кнопку OK.  Теперь просмотрите **имя компонента** найти компонент, наиболее связанную с вашей типом расширения. В этом примере вы выбрали только время отладчика и добавить его в ваш vsixmanifest.
 * Если вы знаете, проект посвящена элементы отладчика, можно выполнить поиск по «debugger» в поле фильтра поиска содержат компоненты отладчика в своем имени.
+
+## <a name="specifying-a-visual-studio-2017-release"></a>Указание версии Visual Studio 2017 г.
+
+Если расширение требует определенной версии Visual Studio 2017 г., например, зависит от компонентов, выпущенные в 15,3, необходимо указать номер сборки в вашего VSIX **InstallationTarget**. Например версия 15,3 содержит ряд построения "15.0.26730.3». Вы увидите сопоставление выпусков для номера построения [здесь](../install/visual-studio-build-numbers-and-release-dates.md). С помощью номера версии «15,3"будет работать неправильно.
+
+Если для модуля требуется 15,3 или более поздней версии, можно объявить **InstallationTarget версии** как [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```
