@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94db8d3bb95e254a3fa528a424048162916fce99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loading-vspackages"></a>Загрузка пакетов VSPackage
 Пакеты VSPackage, загружаются в Visual Studio только в том случае, если требуется их функциональность. Например пакет VSPackage загружается при Visual Studio использует фабрики проектов или служба, которая реализует VSPackage. Эта возможность называется отложенной загрузки, который используется, по возможности для повышения производительности.  
@@ -72,61 +72,7 @@ ms.lasthandoff: 10/31/2017
   
      При инициализации VSPackage, этот параметр вызывает принудительную `PackageToBeLoaded` для загрузки.  
   
-     Загрузка FORCE следует не используется для связи VSPackage. Используйте [использование и служб, предоставляя](../extensibility/using-and-providing-services.md) вместо него.  
-  
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>С помощью настраиваемого атрибута зарегистрировать VSPackage  
- В некоторых случаях может потребоваться создание нового атрибута регистрации для модуля. Чтобы добавить новые разделы реестра или добавить новые значения для существующих ключей можно использовать атрибуты регистрации. Новый атрибут должен быть производным от <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, и его необходимо переопределить <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> и <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> методы.  
-  
-## <a name="creating-a-registry-key"></a>Создание раздела реестра  
- В следующем коде создается пользовательский атрибут **пользовательские** подразделов раздела для регистрации VSPackage.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + @"}\Custom");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-    }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveKey(@"Packages\" + context.ComponentType.GUID + @"}\Custom");  
-}  
-  
-```  
-  
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Создание нового значения существующего раздела реестра  
- Можно добавить пользовательские значения для существующего ключа. Следующий код демонстрирует добавление нового значения с ключом регистрации VSPackage.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + "}");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-                }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveValue(@"Packages\" + context.ComponentType.GUID, "NewCustom");  
-}  
-```  
+     Загрузка FORCE следует не используется для связи VSPackage. Используйте [использование и служб, предоставляя](../extensibility/using-and-providing-services.md) вместо него.
   
 ## <a name="see-also"></a>См. также  
  [Пакеты VSPackage](../extensibility/internals/vspackages.md)
