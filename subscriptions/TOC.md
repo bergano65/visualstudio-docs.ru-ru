@@ -10,7 +10,7 @@
 ### [Использование ключей продукта](product-keys.md)
 ### Активация преимуществ
 #### Инструменты
-##### [Visual Studio Enterprise](vs-ide-benefit.md) 
+##### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md) 
 ##### [Visual Studio Team Services](vs-vsts.md)
 ##### [Microsoft Azure](vs-azure.md) 
 ##### [Parasoft](vs-parasoft.md)
@@ -33,7 +33,7 @@
 ##### [Техническая поддержка](vs-tech-support.md)
 
 ## Администраторы
-### [Роли и обязанности администратора](admin-responsibilities.md)
+### [Общие сведения для администраторов](admin-responsibilities.md)
 ### [Доступ к порталу администратора](access-admin-portal.md)
 ### [Использование портала администратора](using-admin-portal.md)
 ### [Назначение подписки](assign-license.md)
