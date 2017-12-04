@@ -1,5 +1,5 @@
 ---
-title: "Настройка начальной страницы в Visual Studio | Документы Майкрософт"
+title: "Установка настраиваемой начальной страницы или изменение автозапускаемого элемента в Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 02/01/2017
 ms.reviewer: 
@@ -15,48 +15,45 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start page
-ms.assetid: 925d42eb-ec34-426e-ad81-19db8630e536
 caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 178c20c9c4c3af8f5252e70ca603cdf8f8335e52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 45cfb501103c762f7af6fc130a981028c262540b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Настройка начальной страницы в Visual Studio
-Существует несколько способов настройки начальной страницы Visual Studio: например, для этого можно использовать диалоговое окно **Открытие проекта** или открыть решение, загруженное последним. Также можно отобразить настраиваемую начальную страницу, т. е. страницу XAML Windows Presentation Foundation (WPF), которая открывается в окне инструментов и может использоваться для выполнения внутренних команд Visual Studio.  
 
-## <a name="customize-the-default-start-page"></a>Настройка начальной страницы по умолчанию  
+Настроить начальную страницу Visual Studio можно, например, с помощью диалогового окна **Открытие проекта** или решения, загруженного последним. Также можно отобразить настраиваемую начальную страницу, т. е. страницу XAML Windows Presentation Foundation (WPF), которая открывается в окне инструментов и может использоваться для выполнения внутренних команд Visual Studio.
 
-1.  В строке меню выберите **Сервис**, **Параметры**.  
+## <a name="to-change-the-startup-item"></a>Изменение автозапускаемого элемента
 
-2.  Разверните меню **Среда** и выберите **Запуск**.  
+1. В строке меню выберите **Сервис**, **Параметры**.
 
-3.  В списке **При запуске** выберите элемент, который требуется настроить.  
+1. Разверните меню **Среда** и выберите **Запуск**.
 
-## <a name="show-a-custom-start-page"></a>Отображение настраиваемой начальной страницы  
+1. В списке **При запуске** выберите элемент, который будет отображаться после запуска Visual Studio.
 
-1.  Установите настраиваемую начальную страницу одним из следующих способов:  
+## <a name="to-show-a-custom-start-page"></a>Отображение настраиваемой начальной страницы
 
-    -   Установите данную страницу из [галереи Visual Studio](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), с другого веб-сайта или со страницы своей локальной интрасети.  
+Вы можете [создать собственную настраиваемую начальную страницу](../extensibility/creating-a-custom-start-page.md) с помощью пакета SDK для Visual Studio или использовать уже созданную кем-то. Например, настраиваемые начальные страницы можно выбрать в [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
 
-        Откройте файл VSIX, содержащий настраиваемую начальную страницу, или скопируйте и вставьте файлы начальной страницы в папку **%USERPROFILE% \Мои документы\Visual Studio 2017\StartPages** на компьютере.  
+Чтобы установить настраиваемую начальную страницу, откройте файл VSIX или скопируйте и вставьте файлы начальной страницы в папку **%USERPROFILE%\Documents\Visual Studio 2017\StartPages** на компьютере.
 
-    -   Создайте собственную начальную страницу, если на вашем компьютере установлен пакет SDK для Visual Studio.  
+### <a name="to-select-which-custom-start-page-to-display"></a>Выбор настраиваемой начальной страницы для отображения
 
-         См. раздел [Создание настраиваемой начальной страницы](../extensibility/creating-a-custom-start-page.md).  
+1. В строке меню выберите **Сервис**, **Параметры**.
 
-2.  В строке меню выберите **Сервис**, **Параметры**.  
+1. Разверните меню **Среда** и выберите **Запуск**.
 
-3.  Разверните меню **Среда** и выберите **Запуск**.  
-
-4.  В списке **Настроить начальную страницу** выберите нужную страницу.  
+1. В списке **Настроить начальную страницу** выберите нужную страницу.
 
 > [!NOTE]
->  Если ошибка в настраиваемой начальной странице вызывает сбой Visual Studio, можно запустить Visual Studio в безопасном режиме, а затем настроить использование начальной страницы по умолчанию. См. раздел [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).  
+> Если ошибка в настраиваемой начальной странице вызывает сбой Visual Studio, можно запустить Visual Studio в безопасном режиме, а затем настроить использование начальной страницы по умолчанию. См. раздел [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>См. также  
- [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)   
+## <a name="see-also"></a>См. также
+
+[Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)

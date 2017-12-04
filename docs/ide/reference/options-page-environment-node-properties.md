@@ -15,11 +15,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с `DTE.Properties("Environment", <Property Page>)`, категорией **Среда**. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции свойств, а таблицы содержат списки свойств в коллекции.  
@@ -71,7 +71,7 @@ ms.lasthandoff: 10/31/2017
 |Имя элемента свойства|Значение|Описание|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (Boolean)|Загружает расширения пользователей при запуске Visual Studio от имени администратора. После изменения этого значения необходимо перезапустить Visual Studio.|  
-|EnableOnline|Get/Set (Boolean)|Включает доступ к расширениям в коллекции Visual Studio.|  
+|EnableOnline|Get/Set (Boolean)|Предоставляет доступ к расширениям в Visual Studio Marketplace.|  
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|Автоматически проверяет наличие обновлений для установленных расширений.|  
   
 ## <a name="find-and-replace"></a>Поиск и замена  
