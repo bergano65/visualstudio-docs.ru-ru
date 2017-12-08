@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Навигация по сеансу отладки в Visual Studio (XAML и C#)
 В этом кратком руководстве описана процедура навигации по сеансам отладки, а также способы просмотра и изменения состояния программы в сеансе.  
@@ -52,7 +52,7 @@ ms.lasthandoff: 11/11/2017
   
  **Откройте исходный файл MainPage.xaml.cs.** Щелкните правой кнопкой мыши в любом месте редактора XML и выберите пункт **Просмотреть код**. Отображается файл кода программной части MainPage.xaml.cs. Обратите внимание, что в файле указан только один метод (конструктор `MainPage()` ).  
   
- **Замените конструктор MainPage образцом кода.** Удалите метод MainPage(). Перейдите по ссылке: [Навигация отладчика в примере кода (Xaml и C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md), а затем скопируйте код, приведенный в разделе C# в буфер обмена. (Выберите **обратно** в браузере или средстве просмотра справки, чтобы вернуться на эту страницу быстрого запуска.) В редакторе Visual Studio вставьте код в блок `partial class MainPage`. Нажмите сочетание клавиш CTRL + s, чтобы сохранить файл.  
+ **Замените конструктор MainPage образцом кода.** Удалите метод MainPage(). Перейдите по ссылке: [Навигация отладчика в примере кода (Xaml и C#)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs), а затем скопируйте код, приведенный в разделе C# в буфер обмена. (Выберите **обратно** в браузере или средстве просмотра справки, чтобы вернуться на эту страницу быстрого запуска.) В редакторе Visual Studio вставьте код в блок `partial class MainPage`. Нажмите сочетание клавиш CTRL + s, чтобы сохранить файл.  
   
  После этого можно выполнить примеры, приведенные в этом разделе.  
   

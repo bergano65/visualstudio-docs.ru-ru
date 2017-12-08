@@ -1,6 +1,6 @@
 ---
 title: "Отладка динамического приложения ASP.NET Azure - Visual Studio | Документы Microsoft"
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Отладка динамического приложения ASP.NET Azure, с помощью отладчика моментальных снимков
 
@@ -33,7 +33,7 @@ Snappoints и logpoints похожи на точки останова. В отл
 
 ## <a name="start-the-snapshot-debugger"></a>Запустите отладчик моментальных снимков
 
-1. Установка [Visual Studio Enterprise 15,5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) или более поздней версии. При обновлении с предыдущей предварительной версии Visual Studio 2017 г. Запустите установщик Visual Studio и проверьте компонент отладчика моментального снимка в рабочей нагрузке ASP.NET и веб-разработки.
+1. Установка [Visual Studio Enterprise 2017 г. версия 15,5](https://www.visualstudio.com/downloads/) или более поздней версии. При обновлении от предыдущей установки Visual Studio 2017 г. Запустите установщик Visual Studio и проверьте компонент отладчика моментального снимка в рабочей нагрузке ASP.NET и веб-разработки.
 
 2. Откройте проект, который вы бы хотели отладки моментального снимка. 
 

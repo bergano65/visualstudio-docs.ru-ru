@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>Использование окна задач
 **Задачи** напоминает окно **потоков** окна, за исключением того, что он отображает сведения о <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), или [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) объектов, а не каждый поток. Как и потоки, задачи представляют асинхронные операции, которые могут выполняться параллельно; однако несколько задач могут выполняться в одном потоке. 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/11/2017
   
  В машинном коде, можно использовать **задачи** окна при работе с [групп задач](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [параллельные алгоритмы](/cpp/parallel/concrt/parallel-algorithms), [асинхронных агентов](/cpp/parallel/concrt/asynchronous-agents), и [упрощенных задач](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Дополнительные сведения о задачах в машинном коде см. в разделе [среда выполнения с параллелизмом](/cpp/parallel/concrt/concurrency-runtime).  
   
- В случае JavaScript окно "Задачи" можно использовать при работе с методом обещания .then. В разделе [асинхронное программирование в JavaScript (приложения UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) для получения дополнительной информации.   
+ В JavaScript, можно использовать окна задач при работе с promise `.then` кода. В разделе [асинхронное программирование в JavaScript (приложения UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) для получения дополнительной информации.   
   
  Можно использовать **задачи** окна всякий раз при переключении в режим отладчика. Доступ к нему на **отладки** меню, щелкнув **Windows** и выбрав **задачи**. На следующем рисунке показана **задачи** в режиме по умолчанию.  
   

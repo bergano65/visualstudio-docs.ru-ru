@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31353d1063bc6d4f29eaa0fcde308ce3c34fc218
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Управление выполнением приложения UWP в сеансе отладки Visual Studio (JavaScript)
 В этом кратком руководстве описывается процедура навигации по отладчику Visual Studio, а также способы просмотра состояния программы в сеансе.  
@@ -69,7 +69,7 @@ ms.lasthandoff: 11/11/2017
   
 2.  **Откройте исходный файл default.js.** В обозревателе решений откройте узел **js** и выберите `default.js`.  
   
-3.  **Замените содержимое страницы на пример кода.** Удалите все содержимое из файла `default.js` . Перейдите по ссылке [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), а затем скопируйте код, указанный в разделе JavaScript, в буфер обмена. (Выберите **обратно** в браузере или средстве просмотра справки, чтобы вернуться на эту страницу быстрого запуска.) В редакторе Visual Studio вставьте код в пока пустой файл `default.js`. Нажмите клавиши **CTRL+S** , чтобы сохранить файл.  
+3.  **Замените содержимое страницы на пример кода.** Удалите все содержимое из файла `default.js` . Перейдите по ссылке: [Навигация отладчика в примере кода (JavaScript)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-javascript.js), а затем скопируйте код, приведенный в разделе JavaScript, в буфер обмена. (Выберите **обратно** в браузере или средстве просмотра справки, чтобы вернуться на эту страницу быстрого запуска.) В редакторе Visual Studio вставьте код в пока пустой файл `default.js`. Нажмите клавиши **CTRL+S** , чтобы сохранить файл.  
   
  После этого можно выполнить примеры, приведенные в этом разделе.  
   
