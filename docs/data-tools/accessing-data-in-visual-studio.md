@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/22/2017
 |База данных SQL|DocumentDB|Хранилища (большие двоичные объекты, очереди, таблицы файлов)|
 |Хранилище данных SQL|База данных SQL Server Stretch|StorSimple|
 
-и многое другое...
+И многое другое!
 
 **SQL**
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/22/2017
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
-и многое другое...
+И многое другое!
 
 **NoSQL**
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/22/2017
 |Данных|OrientDB|RavenDB|
 |VelocityDB|||
 
-и многое другое...
+И многое другое!
 
 Многие поставщики баз данных и сторонних разработчиков поддерживают интеграции Visual Studio с пакетами NuGet. Предложения можно просмотреть на nuget.org или через диспетчер пакетов NuGet в Visual Studio (**средства** > **диспетчера пакетов NuGet** > **управление пакетами NuGet Пакетами для решения**). Другие продукты баз данных интегрируется с Visual Studio в качестве расширения. Можно просмотреть эти предложения в Visual Studio Marketplace, перейдя к **средства**, **расширения и обновления** и выбрав **Online** в левой области диалоговое окно. Дополнительные сведения см. в разделе [систем совместимых баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 11/22/2017
 
 Можно использовать программы C++, которые работают со службой хранилища Microsoft Azure [клиент хранилища Microsoft Azure](http://www.nuget.org/packages/wastorage).
 
-Моделирование данных &mdash; Visual Studio не обеспечивают уровень ORM C++. [ODB](http://www.codesynthesis.com/products/odb/) — популярный ORM открытым исходным кодом для C++.
+Моделирование данных&mdash;Visual Studio не обеспечивают уровень ORM C++. [ODB](http://www.codesynthesis.com/products/odb/) — популярный ORM открытым исходным кодом для C++.
 
 Дополнительные сведения о подключении к базам данных из приложений C++ см. в разделе [данных средств Visual Studio для C++](../data-tools/visual-studio-data-tools-for-cpp.md). Дополнительные сведения о технологиях доступа к данным прежних версий Visual C++ см. в разделе [доступа к данным](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
 
@@ -133,7 +133,7 @@ ms.lasthandoff: 11/22/2017
 [ADO.NET](/dotnet/framework/data/adonet/index)  
 Описание архитектуры ADO.NET и способов использования классов ADO.NET для управления данными приложения и взаимодействия с источниками данных и XML.
 
-[Платформа ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
 Описывает, как создавать приложения данные, которые позволяют разработчикам программировать в концептуальной модели, а не непосредственно к реляционной базе данных.
 
 [Службы данных WCF 4.5](/dotnet/framework/data/wcf/index)  
