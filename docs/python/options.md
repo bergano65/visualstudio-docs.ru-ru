@@ -1,11 +1,10 @@
 ---
-title: "Параметры Python в Visual Studio | Документы Майкрософт"
+title: "Параметры Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -14,19 +13,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
+- VS.ToolsOptionsPages.Python_Tools.Diagnostics
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 24293c3362249f2afcbcbb4b0266a478eaa1c9ab
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a71d076e85e1e7ae070014e83186c0011ca9e58f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-for-python-in-visual-studio"></a>Параметры для Python в Visual Studio
 
 Чтобы просмотреть параметры Python, используйте команду меню **Сервис > Параметры**, установите флажок **Показать все параметры**, а затем перейдите в раздел **Инструменты Python**:
@@ -39,6 +37,7 @@ ms.lasthandoff: 07/18/2017
 
 - [Общие параметры](#general-options)
 - [Параметры отладки](#debugging-options)
+- [Диагностические параметры](#diagnostics-options)
 - [Параметры интерактивных окон](#interactive-windows-options)
 - [Дополнительные параметры редактора Python](#advanced-python-editor-options)
 
@@ -70,6 +69,17 @@ ms.lasthandoff: 07/18/2017
 | Включить отладку стандартной библиотеки Python | Off | Позволяет выполнить по шагам исходный код стандартной библиотеки во время отладки, однако увеличивает время запуска отладчика.|
 
 ![Вкладка "Отладка" диалогового окна "Параметры"](media/options-debugging.png)
+
+
+## <a name="diagnostics-options"></a>Диагностические параметры
+
+| Параметр | По умолчанию | Описание |
+| --- | --- | --- |
+| Включить журналы анализа | включить | Включает подробные журналы, относящиеся к анализу установленных сред Python, при сохранении данных диагностики в файл или копировании их в буфер обмена с помощью кнопок. Этот параметр может значительно увеличить размер создаваемого файла, но часто необходим для диагностики проблем с IntelliSense. |
+| Сохранить диагностику в файле (кнопка) | Н/Д | Запрашивает имя файла, а затем сохраняет журнал в текстовом файле. |
+| Копировать диагностику в буфер обмена (кнопка) | Н/Д | Помещает весь журнал в буфер обмена. Эта операция может занять некоторое время в зависимости от размера журнала. |
+
+![Вкладка "Диагностика" диалогового окна параметров Python](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Параметры интерактивных окон
 
