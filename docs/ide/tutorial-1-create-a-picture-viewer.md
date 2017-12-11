@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 3ebe300aa4e2a7314b55f8418bcfa0ad9fafdc59
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Учебное руководство 1. Создание приложения для просмотра рисунков
 В этом руководстве выполняется создание программы, которая загружает изображение из файла и отображает его в окне. Изучается процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Выполняется настройка свойств элементов управления. Изучается использование контейнеров для согласованного изменения размеров формы. Также начинается создание кода. Вы научитесь:  
@@ -58,14 +42,14 @@ ms.lasthandoff: 05/24/2017
   
  Загрузить готовую версию примера можно на странице [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Полный пример учебного руководства по созданию приложения для просмотра рисунков).  
   
- ![Ссылка на видео](~/data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этого раздела см. на следующих страницах: [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) или [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+ ![Ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этого раздела см. на следующих страницах: [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) или [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.  
 >   
 >  Чтобы просмотреть код на Visual Basic, перейдите на вкладку **VB** в верхней части блока кода; чтобы просмотреть код на Visual C#, перейдите на вкладку **C#**. Если вас интересует изучение Visual C++, см. раздел [Начало работы](../ide/getting-started-with-cpp-in-visual-studio.md) и [учебник по языку C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
->  Если вас интересует написание приложений для Магазина Windows на языках Visual C# или Visual Basic, см. раздел [Создание своего первого приложения Магазина Windows на C# или Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Сведения о создании приложений для Магазина Windows на языке JavaScript см. в разделе [Создание вашего первого приложения Магазина Windows на JavaScript](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+>  Если вы хотите узнать в том, как писать приложения UWP на Visual C# или Visual Basic, см. раздел [Создание приложений UWP](https://developer.microsoft.com/windows/apps).
   
 ## <a name="related-topics"></a>Связанные разделы  
   

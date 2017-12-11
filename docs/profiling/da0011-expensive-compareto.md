@@ -1,41 +1,42 @@
 ---
-title: "DA0011: затратное CompareTo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.DA0011"
-  - "vs.performance.rules.DAExpensiveCompareTo"
-  - "vs.performance.11"
-  - "vs.performance.rules.DA0011"
+title: "DA0011: затратное CompareTo | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.DA0011
+- vs.performance.rules.DAExpensiveCompareTo
+- vs.performance.11
+- vs.performance.rules.DA0011
 ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 197d5402d935d7e1b377b6ec037535fbc2f65cfa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# DA0011: затратное CompareTo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0011-expensive-compareto"></a>DA0011: затратное CompareTo
 |||  
 |-|-|  
 |Идентификатор правила|DA0011|  
 |Категория|Использование .NET Framework|  
 |Методы профилирования|Дискретизация<br /><br /> Память .NET|  
-|Сообщение|Функции CompareTo должны быть простыми и не расходовать память.  Если возможно, упростите функцию CompareTo.|  
+|Сообщение|Функции CompareTo должны быть малозатратными и не выделять память. Если возможно, уменьшите сложность функции CompareTo.|  
 |Тип правила|Предупреждение|  
   
-## Причина  
- Метод типа CompareTo является затратным или выделяет память.  
+## <a name="cause"></a>Причина  
+ Метод CompareTo типа является затратным или выделяет память.  
   
-## Описание правила  
- Методы CompareTo должны быть эффективными и не должны выделять память.  
+## <a name="rule-description"></a>Описание правила  
+ Методы CompareTo должны быть эффективными и не выделять память.  
   
-## Устранение нарушений  
- Следует упростить метод CompareTo.
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Упростите метод CompareTo.

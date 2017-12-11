@@ -4,45 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Lines view
+helpviewer_keywords: Lines view
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 31cd3b1732cb279004eb500b5df6583a04d2e7bb
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: becfb912377d413be1e0d6c5b90b86d46d601a27
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
-# Представление "Строки" — данные выборки
-<a id="lines-view---sampling-data" class="xliff"></a>
+# <a name="lines-view---sampling-data"></a>Представление "Строки" — данные выборки
 В представлении "Строки" данных выборки перечисляются данные о производительности при выполнении инструкций во время сбора выборок в сеансе профилирования.  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. статью [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Средства производительности в приложениях Windows 8 и Windows Server 2012).  
+>  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  В исходном файле инструкция может занимать несколько строк, а одна строка может включать несколько инструкций. Оператор определяется следующими данными:  
   
@@ -80,6 +61,5 @@ ms.lasthandoff: 07/14/2017
 |**Эксклюзивные выборки**|Общее количество выборок, собранных в процессе выполнения строки функции.|  
 |**% эксклюзивных выборок**|Процент всех выборок в сеансе профилирования, собранных во время выполнения строки функции.|  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Lines View — Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md) (Представление "Строки" — выборка)

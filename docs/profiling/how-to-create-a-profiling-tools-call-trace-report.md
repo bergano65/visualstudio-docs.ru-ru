@@ -1,45 +1,46 @@
 ---
-title: "Практическое руководство. Создание отчета трассировки вызовов для средств профилирования | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "трассировка событий Windows [Visual Studio ALM], просмотр данных"
-  - "средства повышения производительности, просмотр ETW-данных"
+title: "Практическое руководство. Создание отчета о трассировке вызовов для средств профилирования | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- performance tools, viewing ETW data
+- ETW [Visual Studio ALM], viewing data
 ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1daf97ee7de7a0deea9b3b1c8a9a17529edfe9b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Создание отчета трассировки вызовов для средств профилирования
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В *отчете о трассировке вызовов* для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] содержатся сведения о времени для каждой точки входа в функций приложения и выхода из них, а также каждого вызова других функций текущей функцией.  Отчеты о трассировке вызовов доступны для данных профилирования, только если они были собраны с помощью метода инструментирования.  
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Практическое руководство. Создание отчета трассировки вызовов для средств профилирования
+*Отчет о трассировке вызовов* для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] содержит сведения о времени для каждой точки входа и выхода в функциях приложения, а также для каждого вызова других функций вашей функцией. Отчеты о трассировке вызовов доступны для данных профилирования, только если они были собраны с помощью метода инструментирования.  
   
 > [!NOTE]
->  Отображение отчетов о трассировке вызовов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] невозможно.  Для создания файла данных с разделителям\-запятыми \(CSV\) или XML\-файла нужно использовать программу командной строки **VSPerfReport**.  Дополнительные сведения об этом инструменте см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
+>  Отчеты о трассировке вызовов невозможно отобразить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Для создания файла значений с разделителями запятыми (CSV) или XML-файла следует использовать программу командной строки **VSPerfReport**. Дополнительные сведения об этой программе см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
   
-### Создание отчета о трассировке вызовов  
+### <a name="to-create-a-call-trace-report"></a>Создание отчета от трассировке вызовов  
   
 1.  Откройте окно **командной строки**.  
   
 2.  В командной строке введите следующую команду:  
   
-     *ToolsPath* **VSPerfReport** *VSPFile* **\/CallTrace \[\/Xml\]**  
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
   
     |||  
     |-|-|  
-    |*ToolsPath*|Путь к программам командной строки средств профилирования.  Для получения дополнительной информации см. [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
-    |*VSPFile*|Файл данных профилирования \(VSP или VSPS\).  Можно задавать как полный, так и частичный путь.|  
-    |Xml|Создание отчета в формате XML.|  
+    |*ToolsPath*|Путь к программам командной строки средств профилирования. Дополнительные сведения см. в статье [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
+    |*VSPFile*|Файл данных профилирования (VSP или VSPS). Допускаются полные или частичные пути.|  
+    |Xml|Создает отчет в формате XML.|  
   
-## См. также  
- [Практическое руководство. Сбор данных трассировки событий Windows](../Topic/How%20to:%20Collect%20Event%20Tracing%20for%20Windows%20\(ETW\)%20Data.md)   
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Сбор данных трассировки событий Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)

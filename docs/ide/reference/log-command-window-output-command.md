@@ -1,77 +1,77 @@
 ---
-title: "Команда Log Command Window Output | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "tools.logcommandwindowoutput"
-helpviewer_keywords: 
-  - "Запись вывода окна команд - команда"
-  - "View.LogCommandWindowOutput - команда"
+title: "Команда \"Запись вывода окна команд\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: tools.logcommandwindowoutput
+helpviewer_keywords:
+- log Command window output command
+- View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 21450a0478bb7f2388cdde6b69f6fe661e9a055c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда Log Command Window Output
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Выполнение копирования всех входных и выходных данных из окна **Команда**.  
+# <a name="log-command-window-output-command"></a>Команда Log Command Window Output
+Копирует все входные и выходные данные из окна **Команда** в файл.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `filename`  
- Необязательный.  Имя системного журнала.  По умолчанию файл создается в папке пользовательского профиля.  Если имя файла уже существует, записи добавляются в конец существующего файла.  Если файл не определен, используется последний из указанных ранее файлов.  Если предыдущего файла нет, создается файл журнала по умолчанию с именем cmdline.log.  
+ Необязательно. Имя файла журнала. По умолчанию этот файл создается в папке профиля пользователя. Если такое имя файла уже существует, журнал добавляется в конец имеющегося файла. Если файл не указан, используется последний указанный файл. Если предыдущий файл отсутствует, создается файл журнала по умолчанию с именем cmdline.log.  
   
 > [!TIP]
->  Чтобы изменить место хранения файла журнала, введите полный путь файла, заключив его в кавычки, если путь содержит пробелы.  
+>  Чтобы изменить расположение для сохранения файла журнала, введите полный путь. Если этот путь содержит пробелы, заключите его в кавычки.  
   
-## Переключатели  
- \/on  
- Необязательный.  Запуск протоколирования для окна **Команда** с выводом в указанный файл; новые сведения добавляются в файл.  
+## <a name="switches"></a>Переключатели  
+ /on  
+ Необязательно. Запускает ведение журнала для окна **Команда** в указанном файле, добавляя в него новые данные.  
   
- \/off  
- Необязательный.  Прекращение протоколирования для окна **Команда**.  
+ /off  
+ Необязательно. Останавливает ведение журнала для окна **Команда**.  
   
- \/overwrite  
- Необязательный.  Если файл, указанный в аргументе `filename`, совпадает с существующим файлом, файл перезаписывается.  
+ /overwrite  
+ Необязательно. Если указанный в аргументе `filename` файл совпадает с существующим файлом, он перезаписывается.  
   
-## Заметки  
- Если файл не определен, по умолчанию создается файл cmdline.log.  По умолчанию для данной команды используется псевдоним Log.  
+## <a name="remarks"></a>Примечания  
+ Если файл не указан, создается файл по умолчанию cmdline.log. По умолчанию эта команда имеет псевдоним Log.  
   
-## Примеры  
- В этом примере создается новый файл журнала cmdlog и в него начинает вестись запись данных по командам.  
+## <a name="examples"></a>Примеры  
+ Этот пример создает файл журнала cmdlog и запускает ведение журнала команд.  
   
 ```  
 >Tools.LogCommandWindowOutput cmdlog  
 ```  
   
- В этом примере выполняется остановка ведения журнала по командам.  
+ Этот пример останавливает ведение журнала команд.  
   
 ```  
 >Tools.LogCommandWindowOutput /off  
 ```  
   
- В этом примере возобновляется ведение журнала по командам в ранее использовавшийся файл журнала.  
+ Этот пример возобновляет ведение журнала команд в ранее использовавшемся файле.  
   
 ```  
 >Tools.LogCommandWindowOutput /on  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Окно "Команда"](../../ide/reference/command-window.md)   
- [Поле «Поиск\/Команда»](../../ide/find-command-box.md)   
+ [Командное окно](../../ide/reference/command-window.md)   
+ [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

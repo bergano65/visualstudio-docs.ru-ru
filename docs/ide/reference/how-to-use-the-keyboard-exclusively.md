@@ -1,11 +1,10 @@
 ---
-title: 'How to: Use the Keyboard Exclusively | Microsoft Docs'
+title: "Практическое руководство. Использование только клавиатуры | Microsoft Docs"
 ms.custom: 
 ms.date: 08/22/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -19,89 +18,87 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 895b2a7f8dd60cdddb2eb785a732032524174d4c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: af3c76fb90fe79f87091fdde355a54b3e4835f1c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/23/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>How to: Use the Keyboard Exclusively
+# <a name="how-to-use-the-keyboard-exclusively"></a>Практическое руководство. Использование только клавиатуры
 > [!TIP]
-> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] provides many default shortcut key combinations to make it easy to navigate and code within the integrated development environment (IDE). For a full listing of shortcut keys used in Visual Studio, see [Default Keyboard Shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md). For information on keyboard shortcuts available for other Microsoft products, see [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет много стандартных сочетаний клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE). Полный список сочетаний клавиш, используемых в Visual Studio, см. в разделе [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Сведения о сочетаниях клавиш, доступных для других продуктов корпорации Майкрософт, см. в статье [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
 
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
 
-## <a name="toolbox-controls"></a>Toolbox Controls  
- You can add a control on the Toolbox to a form or designer using the keyboard.  
+## <a name="toolbox-controls"></a>Элементы управления панели элементов  
+ Элемент управления на панели элементов можно добавить в форму или конструктор с помощью клавиатуры.  
 
-#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>To add controls from the Toolbox to a designer from the keyboard  
+#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Добавление элементов управления из панели элементов в конструктор с помощью клавиатуры  
 
-1.  On the menu bar, choose **View**, **Toolbox**.  
+1.  В строке меню выберите **Вид**, **Панель элементов**.  
 
-2.  Choose the Ctrl + Up Arrow or Ctrl + Down Arrow keys to move among the sections in the current Toolbox tab.  
+2.  Используйте сочетания клавиш CTRL+СТРЕЛКА ВВЕРХ или CTRL+СТРЕЛКА ВНИЗ для перехода между разделами на текущей вкладке панели элементов.  
 
-3.  Choose the Up Arrow or **Down Arrow** keys to move among the controls.  
+3.  Используйте клавиши СТРЕЛКА ВВЕРХ или **СТРЕЛКА ВНИЗ** для перемещения между элементами управления.  
 
-4.  After the control is selected, choose the Enter key.  
+4.  Выбрав элемент управления, нажмите клавишу ВВОД.  
 
- The control is added to the form or designer.  
+ Элемент управления добавляется в форму или конструктор.  
 
-## <a name="dialog-box-options"></a>Dialog Box Options  
- You can move among the options in a dialog and change option settings using the keyboard.  
+## <a name="dialog-box-options"></a>Параметры диалогового окна  
+ Переходить между параметрами в диалоговом окне и изменять настройки параметров можно с помощью клавиатуры.  
 
-#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>To set dialog box options from the keyboard  
+#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Задание параметров диалогового окна с помощью клавиатуры  
 
-1.  Use **TAB** or **SHIFT + TAB** to move up and down through the controls in the dialog box.  
+1.  Используйте клавиши **TAB** или **SHIFT + TAB** для перемещения вверх и вниз по элементам управления в диалоговом окне.  
 
-2.  To change option settings:  
+2.  Изменение настроек параметров  
 
-    -   For radio buttons, use **UP ARROW** and **DOWN ARROW** to change the selection.  
+    -   Для переключателей используйте клавиши **СТРЕЛКА ВВЕРХ** и **СТРЕЛКА ВНИЗ**, чтобы изменить выбор.  
 
-    -   For check boxes, use **SPACEBAR** to select or unselect.  
+    -   Для флажков используйте клавишу **ПРОБЕЛ**,чтобы установить или снять флажок.  
 
-    -   For drop-down lists, use **ALT** + **DOWNARROW** to display items and then use **UPARROW** and **DOWNARROW** to change the selected item.  
+    -   Для раскрывающихся списков используйте сочетание клавиш **ALT** + **СТРЕЛКА ВНИЗ** для отображения пунктов списка, а затем клавиши **СТРЕЛКА ВВЕРХ** и **СТРЕЛКА ВНИЗ** для изменения выбранного элемента.  
 
-    -   For buttons, press **ENTER** to invoke.  
+    -   Для кнопок нажмите клавишу **ВВОД** для вызова.  
 
-    -   For grids, use the Arrow keys to navigate. For drop-down lists in grids, use **SHIFT** + **ALT** + **DOWNARROW** to display items and then use **UPARROW** and **DOWNARROW** to change the selected item.  
+    -   Для перемещения по таблицам используйте клавиши со стрелками. Для раскрывающихся списков в таблицах используйте сочетание клавиш **SHIFT** + **ALT** + **СТРЕЛКА ВНИЗ** для отображения пунктов списка, а затем клавиши **СТРЕЛКА ВВЕРХ** и **СТРЕЛКА ВНИЗ** для изменения выбранного элемента.  
 
-## <a name="window-and-file-navigation"></a>Window and File Navigation  
- The IDE provides several ways for you to move among open tool and document windows using the keyboard. You can also move and dock tool windows in different locations using the keyboard.  
+## <a name="window-and-file-navigation"></a>Навигация по окнам и файлам  
+ Интегрированная среда разработки предоставляет несколько способов перемещения между открытыми окнами инструментов и документов с помощью клавиатуры. Кроме того, с помощью клавиатуры можно перемещать и закреплять окна инструментов в разных местах.  
 
-#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>To navigate among windows and files in the IDE from the keyboard  
+#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Навигация между окнами и файлами в интегрированной среде разработки с помощью клавиатуры  
 
--   To move among files in an editor or designer, choose CTRL + TAB keys to display the IDE Navigator with **Active Files** selected. Choose the Enter key to navigate to the highlighted file.  
+-   Для перемещения между файлами в редакторе или в конструкторе нажмите клавиши CTRL + TAB, чтобы отобразить навигатор IDE с выбранной вкладкой **Активные файлы**. Нажмите клавишу ВВОД для перехода к выделенному файлу.  
 
--   To move among docked tool windows, choose Alt + F7 to display the IDE Navigator with **Active Tool Windows** selected. Choose the Enter keyto navigate to the highlighted window.  
+-   Для перемещения между закрепленными окнами инструментов нажмите клавиши ALT + F7, чтобы отобразить навигатор IDE с выбранной вкладкой **Активные окна инструментов**. Нажмите клавишу ВВОД для перехода к выделенному окну.  
 
-#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>To move and dock tool windows from the keyboard  
+#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Перемещение и закрепление окон инструментов с помощью клавиатуры  
 
-1.  Navigate to the tool window you intend to move and give it focus.  
+1.  Перейдите в окно инструментов, которое требуется переместить, и установите на нем фокус.  
 
-2.  On the **Window** menu, click **Dockable**.  
+2.  В меню **Окно** выберите параметр **Закрепляемое**.  
 
-3.  Press **ALT** + **Space** and then choose **Move**.  
+3.  Нажмите клавиши **ALT** + **ПРОБЕЛ** и выберите команду **Переместить**.  
 
-     The docking guide diamond appears.  
+     Появится ромб направляющей закрепления.  
 
-4.  Use the **ARROW** keys to move the window to a new location.  
+4.  Используйте клавиши со **СТРЕЛКАМИ**, чтобы переместить окно в новое расположение.  
 
-     The mouse pointer moves with the window as you use the **ARROW** keys.  
+     Указатель мыши перемещается вместе с окном, пока вы используете клавишу со **СТРЕЛКОЙ**.  
 
-5.  When you have reached the new location, use the **ARROW** keys to move the mouse pointer over the correct portion of the guide diamond.  
+5.  При достижении нового расположения используйте клавиши со **СТРЕЛКАМИ**, чтобы переместить указатель мыши в нужную часть ромба.  
 
-     An outline of the tool window appears in the new docking location.  
+     В новом месте закрепления появится контур окна инструментов.  
 
-6.  Press **ENTER**.  
+6.  Нажмите клавишу **ВВОД**.  
 
-     The tool window snaps into place at the new docking location.  
+     Окно инструментов разместится в новом месте закрепления.  
 
-## <a name="see-also"></a>See Also  
- [Identifying and Customizing Keyboard Shortcuts](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
- [Accessibility Tips and Tricks](../../ide/reference/accessibility-tips-and-tricks.md)   
- [Default Keyboard Shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
-
+## <a name="see-also"></a>См. также  
+ [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
+ [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)   
+ [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

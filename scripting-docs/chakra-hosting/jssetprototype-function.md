@@ -1,23 +1,27 @@
 ---
-title: "Функция JsSetPrototype | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Функция JsSetPrototype | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 88e1e421-4ae5-4e3b-b377-19256cc80e9f
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f46a84921cc2e74cbfcf7bbd734e1d01282090c0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsSetPrototype
+# <a name="jssetprototype-function"></a>Функция JsSetPrototype
 Задает прототип объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsSetPrototype(  
@@ -26,21 +30,21 @@ STDAPI_(JsErrorCode) JsSetPrototype(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
  Объект, прототип которого необходимо изменить.  
   
  `prototypeObject`  
  Новый прототип объекта.  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

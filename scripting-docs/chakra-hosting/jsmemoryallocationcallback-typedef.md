@@ -1,23 +1,27 @@
 ---
-title: "Определение типа (Typedef) JsMemoryAllocationCallback | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Определение типа (Typedef) JsMemoryAllocationCallback | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 511babc7-3caa-4ee5-82a2-943bbd34db8d
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9672c23f48a2cb3e20de58012b267b30f4514d66
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Определение типа (Typedef) JsMemoryAllocationCallback
+# <a name="jsmemoryallocationcallback-typedef"></a>Определение типа (Typedef) JsMemoryAllocationCallback
 Процедура обратного вызова, реализованная пользователем для событий выделения памяти.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 typedef bool (CALLBACK * JsMemoryAllocationCallback)(  
@@ -27,7 +31,7 @@ typedef bool (CALLBACK * JsMemoryAllocationCallback)(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  callbackState  
  Состояние, переданное в JsSetRuntimeMemoryAllocationCallback.  
   
@@ -37,14 +41,14 @@ typedef bool (CALLBACK * JsMemoryAllocationCallback)(
  allocationSize  
  Размер выделения.  
   
-## Значение свойства, возвращаемое значение  
- Для события JsMemoryAllocate event возврат значения "true" позволяет среде выполнения продолжать выделение.  Возврат значения "false" показывает, что запрос выделения отклонен.  Возвращаемое значение игнорируется другими событиями выделения.  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+ Для события JsMemoryAllocate event возврат значения "true" позволяет среде выполнения продолжать выделение. Возврат значения "false" показывает, что запрос выделения отклонен. Возвращаемое значение игнорируется другими событиями выделения.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Используйте JsSetRuntimeMemoryAllocationCallback для регистрации этого обратного вызова.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

@@ -1,43 +1,44 @@
 ---
-title: "DA0029: неподдерживаемая версия среды CLR | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.29"
-  - "vs.performance.rules.DA0029"
-helpviewer_keywords: 
-  - "vs.performance.29"
-  - "vs.performance.DA0029"
-  - "vs.performance.rules.DA0029"
+title: "DA0029: неподдерживаемая версия среды CLR | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.29
+- vs.performance.rules.DA0029
+helpviewer_keywords:
+- vs.performance.29
+- vs.performance.DA0029
+- vs.performance.rules.DA0029
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dfc7d33396825263a5fd846c62426fa67509e0da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# DA0029: неподдерживаемая версия среды CLR
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0029-unsupported-clr-version"></a>DA0029: неподдерживаемая версия среды CLR
 |||  
 |-|-|  
 |Идентификатор правила|DA0029|  
 |Категория|Использование средств профилирования|  
-|Метод профилирования|Профилирование из командной строки.|  
-|Сообщение|В процессе сбора данных обнаружена неподдерживаемая версия среды CLR.  Невозможно надлежащим образом устранить конфликт управляемых символов.|  
+|Способ профилирования|Профилирование из командной строки|  
+|Сообщение|В процессе сбора данных обнаружена неподдерживаемая версия среды CLR. Невозможно надлежащим образом устранить конфликт управляемых символов.|  
 |Тип правила|Сведения.|  
   
-## Причина  
- Предпринята попытка профилирования приложения, в котором используется платформа [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)], не поддерживаемая средствами профилирования.  
+## <a name="cause"></a>Причина  
+ Предпринята попытка профилирования приложения, в котором используется платформа [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)], не поддерживаемая Средствами профилирования.  
   
-## Описание правила  
- Это предупреждение выдается, поскольку средства профилирования не смогут устранить конфликт символов в управляемом коде, выполняющемся в приложении.  Средства профилирования не могут устранять конфликт символов управляемого кода в приложениях для платформы [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
+## <a name="rule-description"></a>Описание правила  
+ Это предупреждение выдается по той причине, что Средствам профилирования не удается разрешить символы в управляемом коде, выполняющемся в приложении. Средства профилирования не могут разрешать символы управляемого кода в приложениях для платформы [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
   
-## Устранение нарушений  
- Нет.
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Отсутствует.

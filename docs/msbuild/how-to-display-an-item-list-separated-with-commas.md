@@ -1,57 +1,58 @@
 ---
-title: "Практическое руководство. Отображение списка элементов, разделенных запятыми | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, форматирование коллекций элементов"
-  - "MSBuild, разделение элементов точками с запятой"
+title: "Практическое руководство. Отображение списка элементов, разделенных запятыми | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, separating items with semicolons
+- MSBuild, formatting item collections
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: be7beec070d58f265912f61d37a2d213e50ea0c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Отображение списка элементов, разделенных запятыми
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Во время работы со списками элементов в [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] \([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\) иногда бывает полезно представить содержимое этих списков в виде, наиболее удобном для чтения.  Возможно также, что задача заключается в получении списка элементов, отделенных друг от друга специальной строкой разделителей.  В обоих этих случаях можно указать строку разделителей для списка элементов.  
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Практическое руководство. Отображение списка элементов, разделенных запятыми
+При работе со списками элементов в [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) иногда бывает полезно отобразить содержимое этих списков в удобном для чтения виде. Либо у вас может быть задача, принимающая список элементов, разделенных специальной строкой. В обоих случаях вы можете указать строку разделителя для списка элементов.  
   
-## Отделение элементов в списке с помощью запятых  
- По умолчанию в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в качестве разделителей элементов в списке используются точки с запятой.  Например, рассмотрим элемент `Message` со следующим значением:  
+## <a name="separating-items-in-a-list-with-commas"></a>Разделение элементов в списке запятыми  
+ По умолчанию [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] разделяет элементы в списке точками с запятой. Например, рассмотрим элемент `Message` со следующим значением:  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Если в списке `@(TXTFile)` содержатся элементы App1.txt, App2.txt и App3.txt, сообщение выглядит следующим образом:  
+ Когда список элементов `@(TXTFile)` содержит элементы App1.txt, App2.txt и App3.txt, сообщение имеет вид:  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
- Используемый по умолчанию разделитель можно изменить, указав свой разделитель.  Чтобы указать разделитель списка элементов, используйте следующий синтаксис:  
+ Если вы хотите изменить поведение по умолчанию, можете задать свой разделитель. Для этого используется следующий синтаксис:  
   
  `@(ItemListName, '<separator>')`  
   
- Разделитель может представлять собой либо отдельный символ, либо строку, и его необходимо заключить в одинарные кавычки.  
+ Разделитель может быть отдельным знаком или строкой и должен быть заключен в одиночные кавычки.  
   
-#### Вставка запятой и пробела между элементами  
+#### <a name="to-insert-a-comma-and-a-space-between-items"></a>Вставка запятой и пробела между элементами  
   
--   Используйте представление элемента следующего вида:  
+-   Используйте нотацию элемента, аналогичную следующей:  
   
      `@(TXTFile, ', ')`  
   
-## Пример  
- В данном примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле Phrases.txt.  В команде findstr текстовые строки поиска обозначены ключом **\/c:**, поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `/c:`.  
+## <a name="example"></a>Пример  
+ В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле Phrases.txt. В команде findstr искомые литеральные строки обозначены параметром **/c:**, поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `/c:`.  
   
- В данном примере соответствующая команда командной строки будет выглядеть следующим образом:  
+ Для этого примера эквивалентная команда в командной строке имеет вид:  
   
  `findstr /i /c:hello /c:world /c:msbuild phrases.txt`  
   
-```  
+```xml  
 <Project DefaultTargets = "Find"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
   
@@ -68,6 +69,6 @@ caps.handback.revision: 12
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Элементы](../msbuild/msbuild-items.md)

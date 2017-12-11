@@ -1,79 +1,80 @@
 ---
-title: "CommentMarkProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "CommentMarkProfile"
-  - "CommentMarkProfileA"
+title: "CommentMarkProfile | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- CommentMarkProfile
+- CommentMarkProfileA
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cb46497c8e00cedeb4056571d8fa1d19eb26c0c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CommentMarkProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Функция `CommentMarkProfile` вставляет числовую метку и текстовую строку в VSP\-файл.  Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию `CommentMarkProfile`.  
+# <a name="commentmarkprofile"></a>CommentMarkProfile
+Функция `CommentMarkProfile` вставляет числовую метку и текстовую строку в VSP-файл. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию `CommentMarkProfile`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
-                                   long lMarker,   
-                                   LPCTSTR szComment);  
+                                   long lMarker,   
+                                   LPCTSTR szComment);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `lMarker`  
   
- Вставляемая числовая метка.  Метка должна быть больше или равна нулю \(0\).  
+ Вставляемая числовая метка. Метка должна быть больше или равна нулю (0).  
   
  `szComment`  
   
- Указатель на вставляемую текстовую строку.  Длина строки не должна превышать 256 знаков, включая токен конца строки NULL.  
+ Указатель на вставляемую текстовую строку. Длина строки не должна превышать 256 символов, включая маркер конца строки NULL.  
   
-## Значение свойства, возвращаемое значение  
- Функция указывает на успешное выполнение или сбой посредством перечисления **PROFILE\_COMMAND\_STATUS**.  Ниже перечислены возможные возвращаемые значения.  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+ Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Enumerator|Описание|  
-|----------------|--------------|  
-|MARK\_ERROR\_MARKER\_RESERVED|Параметр меньше или равен нулю.  Эти значения зарезервированы.  Метка и комментарий не записываются.|  
-|MARK\_ERROR\_MODE\_NEVER|При вызове функции для режима профилирования было задано значение NEVER.  Метка и комментарий не записываются.|  
-|MARK\_ERROR\_MODE\_OFF|При вызове функции для режима профилирования было задано значение OFF.  Метка и комментарий не записываются.|  
-|MARK\_ERROR\_NO\_SUPPORT|В данном контексте поддержка меток отсутствует.  Метка и комментарий не записываются.|  
-|MARK\_ERROR\_OUTOFMEMORY|Недостаточно памяти для записи события.  Метка и комментарий не записываются.|  
-|MARK\_TEXTTOOLONG|Длина строки превышает максимальный предел \(256 знаков\).  Строка комментария усекается, а метка и комментарий записываются.|  
-|MARK\_OK|При успешном выполнении возвращается значение MARK\_OK.|  
+|Перечислитель|Описание|  
+|----------------|-----------------|  
+|MARK_ERROR_MARKER_RESERVED|Значение параметра меньше или равно нулю. Эти значения зарезервированы. Метка и комментарий не записываются.|  
+|MARK_ERROR_MODE_NEVER|На момент вызова функции был установлен режим профилирования NEVER. Метка и комментарий не записываются.|  
+|MARK_ERROR_MODE_OFF|На момент вызова функции был установлен режим профилирования OFF. Метка и комментарий не записываются.|  
+|MARK_ERROR_NO_SUPPORT|В данном контексте метки не поддерживаются. Метка и комментарий не записываются.|  
+|MARK_ERROR_OUTOFMEMORY|Недостаточно памяти для записи события. Метка и комментарий не записываются.|  
+|MARK_TEXTTOOLONG|Длина строки превышает 256 символов. Строка комментария усекается. Метка и комментарий записываются.|  
+|MARK_OK|В случае успеха возвращается MARK_OK.|  
   
-## Заметки  
- Профилирования для потока, который содержит функцию меток профилирования, должно быть включено, если метки и комментарии вставляются при помощи команды VSInstr Mark или функций \(CommentMarkAtProfile, CommentMarkProfile или MarkProfile\).  
+## <a name="remarks"></a>Примечания  
+ Для потока, содержащего функцию метки профиля, должно быть включено состояние профилирования, чтобы вставить метку и комментарий с помощью команды VSInstr Mark или функций (CommentMarkAtProfile, CommentMarkProfile или MarkProfile).  
   
- Метки профилирования имеют глобальную область видимости.  Например, метка профиля, вставленная в поток, может использоваться для отметки начала и конца сегмента данных в любом потоке, определенном в .VSP\-файле.  
+ Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в VSP-файле.  
   
 > [!IMPORTANT]
->  Метод CommentMarkProfile должен использоваться только при профилировании с инструментированием.  
+>  Метод CommentMarkProfile можно использовать только при профилировании с инструментированием.  
   
-## Эквивалент в .NET Framework  
+## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## Сведения о функции  
+## <a name="function-information"></a>Сведения о функции  
   
 |||  
 |-|-|  
-|**Заголовок**|Include VSPerf.h|  
-|**Библиотека**|Use VSPerf.lib|  
-|**Юникод**|Функция реализована как `CommentMarkProfileW` \(Юникод\) и `CommentMarkProfileA` \(ANSI\).|  
+|**Заголовок**|Включение VSPerf.h|  
+|**Библиотека**|Использование VSPerf.lib|  
+|**Юникод**|Функция реализована как `CommentMarkProfileW` (Юникод) и `CommentMarkProfileA` (ANSI).|  
   
-## Пример  
- В следующем коде демонстрируется вызов функции CommentMarkProfile.  Предполагается, что в этом примере используется строковый макрос Win32 и параметры компилятора для Юникода, чтобы определить, вызывается ли в коде функция, поддерживающая кодировку [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].  
+## <a name="example"></a>Пример  
+ В приведенном ниже коде демонстрируется вызов функции CommentMarkProfile. Предполагается, что в этом примере используется строковый макрос Win32 и параметры компилятора для Юникода, чтобы определить, вызывается ли в коде функция [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].  
   
 ```  
 void ExerciseCommentMarkProfile()  
@@ -111,5 +112,5 @@ void ExerciseCommentMarkProfile()
 }  
 ```  
   
-## См. также  
- [Справочник по API\-интерфейсам профилировщика Visual Studio \(машинный код\)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>См. также  
+ [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

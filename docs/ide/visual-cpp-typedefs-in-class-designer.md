@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords:
-- Class Designer [Visual Studio], typedefs
+helpviewer_keywords: Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: efaec77b5d3a2fb52859ff08fe31aa6f35e4263b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d6df83d459165b4814fcac129bc36b64d821efb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Операторы typedef языка Visual C++ в конструкторе классов
 Операторы typedef создают один или несколько уровней косвенного обращения между именем и его базовым типом. Конструктор классов поддерживает те определения типов C++, которые объявлены с ключевым словом `typedef`, например:  
@@ -65,7 +49,7 @@ typedef class coord
 };  
 ```  
   
- Дополнительные сведения об использовании `typedef` см. в статье [Спецификатор typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ Дополнительные сведения об использовании типа `typedef` см. в статье [Описатель typedef](https://msdn.microsoft.com/en-us/library/05w82thz.aspx).  
   
  Фигура определения типа C++ имеет форму типа, указанного в определении типа. Например, если источник объявляет `typedef class`, у фигуры будут скругленные углы и метка **класса**. У `typedef struct` фигура имеет квадратные углы и метку **Структура**.  
   
@@ -217,4 +201,4 @@ class A {
   
 ## <a name="see-also"></a>См. также  
  [Working with Visual C++ Code (Class Designer)](../ide/working-with-visual-cpp-code-class-designer.md)  (Работа с кодом Visual C++ (конструктор классов))  
- [Спецификатор typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [Описатель typedef](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)

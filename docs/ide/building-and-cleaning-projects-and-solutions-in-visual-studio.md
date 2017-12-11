@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,37 +22,21 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: f43b470f07e8b90c62d17c7905ad458a22d41ff1
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Построение и очистка проектов и решений в Visual Studio
 Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в статье [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).  
   
 > [!NOTE]
->  Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+> Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, например на **Общие** или **Visual C++**, в меню **Сервис** выберите пункт **Импорт и экспорт параметров**, а затем выберите **Сбросить все параметры**.
   
 ### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Сборка, перестроение или очистка всего решения  
   
@@ -96,7 +79,7 @@ ms.lasthandoff: 05/24/2017
   
     -   В строке меню последовательно выберите **Сборка**, **Собрать решение** (CTRL+SHIFT+B).  
   
-     Если этот флажок снят, все проекты, их зависимости и файлы решения создаются при выполнении любой предыдущей команды. По умолчанию этот флажок снят.  
+    Если этот флажок снят, все проекты, их зависимости и файлы решения создаются при выполнении любой предыдущей команды. По умолчанию этот флажок снят.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Сборка только выбранного проекта Visual C++  
   
@@ -110,13 +93,13 @@ ms.lasthandoff: 05/24/2017
   
     -   **Только связать** *имя_проекта*  
   
-     Эти команды применяются только к выбранному проекту [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] без сборки, перестроения, очистки или связывания зависимостей проектов и файлов решения. В зависимости от используемой версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] подменю **Только проект** может содержать дополнительные команды.  
+    Эти команды применяются только к выбранному проекту [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] без сборки, перестроения, очистки или связывания зависимостей проектов и файлов решения. В зависимости от используемой версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] подменю **Только проект** может содержать дополнительные команды.  
   
 ### <a name="to-compile-multiple-c-project-items"></a>Компиляция нескольких элементов проекта C++  
   
 1.  В **обозревателе решений** выберите несколько файлов со скомпилированными действиями, откройте контекстное меню для одного из этих файлов, а затем выберите **Компилировать**.  
   
-     Если файлы имеют зависимости, они будут скомпилированы в порядке зависимостей. Операция компиляции завершится ошибкой, если файлам требуется предкомпилированный заголовок, который недоступен при компиляции. Операция компиляции использует текущую активную конфигурацию решения.  
+    Если файлы имеют зависимости, они будут скомпилированы в порядке зависимостей. Операция компиляции завершится ошибкой, если файлам требуется предкомпилированный заголовок, который недоступен при компиляции. Операция компиляции использует текущую активную конфигурацию решения.  
   
 ### <a name="to-stop-a-build"></a>Остановка сборки  
   
@@ -126,12 +109,12 @@ ms.lasthandoff: 05/24/2017
   
     -   Нажмите сочетание клавиш CTRK+Break.  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Просмотр, сохранение и настройка файлов журнала построения](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
- [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
- [Конфигурации отладки и выпуска проекта](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Справочные сведения о построении C/C++](/cpp/build/reference/c-cpp-building-reference)   
- [Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)   
- [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>См. также
+[Практическое руководство. Просмотр, сохранение и настройка файлов журнала построения](../ide/how-to-view-save-and-configure-build-log-files.md)   
+[Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
+[Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
+[Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
+[Конфигурации отладки и выпуска проекта](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
+[Справочные сведения о построении C/C++](/cpp/build/reference/c-cpp-building-reference)   
+[Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)   
+[Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)

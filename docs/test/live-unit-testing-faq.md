@@ -1,9 +1,8 @@
 ---
 title: "Часто задаваемые вопросы о функции Live Unit Testing | Документация Майкрософт"
-ms.date: 2017-08-15
+ms.date: 2017-10-03
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,47 +11,54 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: de3ddc4288f2e14f0657f6bfb0ff3ee49ff7b5c9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c6a2c3b313aca87a77f7ad5b12a3d99c82c042b2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Какие новые возможности доступны для функции Live Unit Testing в Visual Studio 2017 версии 15.3? 
+## <a name="live-unit-testing-is-improved-and-enhanced-regularly-how-can-i-find-information-about-the-latest-new-features-and-enhancements"></a>Функция Live Unit Testing регулярно улучшается и развивается. Где найти сведения о новых возможностях и улучшениях?
 
 **Ответ.**
 
-- Два существенных улучшения: поддержка .NET Core и .NET Standard и улучшения производительности. Выполнив первую полную сборку и ряд тестов с помощью функции Live Unit Testing, вы заметите значительное повышение производительности. Вы также заметите рост производительности в последующих запусках функции Live Unit Testing в том же решении. Теперь данные, создаваемые Live Unit Testing, сохраняются и многократно используются с проверками наличия обновлений. Помимо этих крупных дополнений Live Unit Testing также обеспечивает следующие улучшения. 
+Сведения о новых возможностях и улучшениях в Live Unit Testing начиная с версии 15.3 среды Visual Studio 2017 см. в статье [Новые возможности в Live Unit Testing](live-unit-testing-whats-new.md).
 
-  - Теперь, чтобы отличить метод теста от обычных методов, используется новый значок с изображением мензурки. Пустой значок означает, что этот конкретный тест не включен в Live Unit Testing. 
 
-  - При щелчке метода теста из всплывающего окна пользовательского интерфейса значка покрытия Live Unit Testing вы получите возможность отладить тест прямо из этого контекста внутри окна пользовательского интерфейса без необходимости выхода из редактора кода. Это очень удобно, особенно если вы работаете с непройденным тестом.  
+## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Какие платформы тестирования поддерживает функция Live Unit Testing и каковы минимальные поддерживаемые версии?  
 
-  - В раздел "Сервис" > "Параметры" > "Live Unit Testing" > "Общие" добавлены несколько настраиваемых параметров. Можно ограничить объем памяти, используемый для Live Unit Testing. Можно также указать путь к файлу для сохраненных данных Live Unit Testing в открытом решении. 
+**Ответ.**
 
-  - В строку меню "Тест" > "Live Unit Testing" добавлены несколько дополнительных пунктов меню. Параметр **Сброс очистки** удаляет сохраненные данные и создает их еще раз. **Параметр** переходит к меню "Сервис" > "Параметры" > "Live Unit Testing" > "Общие".
-  
-  - Теперь с помощью следующих атрибутов можно определить в исходном коде необходимость исключения целевых методов теста из Live Unit Testing.
-    - Для xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
-    - Для NUnit: `[Category("SkipWhenLiveUnitTesting")]`
-    - Для MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+Функция Live Unit Testing работает на трех известных платформах модульного тестирования, приведенных в таблице ниже. В этой таблице также приведены сведения о минимальной поддерживаемой версии адаптеров и платформ. Платформы модульного тестирования доступны на сайте NuGet.org.
+ 
+<table> 
+<tr>
+   <th>Тестовая платформа</th>
+   <th>Минимальная версия адаптера Visual Studio</th>
+   <th>Минимальная версия платформы</th>
+</tr>
+<tr>
+   <td>xUnit.net</td>
+   <td> xunit.runner.visualstudio версии 2.2.0-beta3-build1187</td>
+   <td>xunit 1.9.2</td> 
+</tr>
+<tr>
+   <td>NUnit</td>
+   <td>NUnit3TestAdapter версии 3.5.1</td>  
+   <td>NUnit версии 3.5.0</td>
+</tr>
+<tr>
+   <td>MSTest</td>
+   <td>MSTest.TestAdapter 1.1.4-preview</td>
+   <td>MSTest.TestFramework 1.0.5-preview</td>
+</tr>
+</table>
+
+Если у вас есть старые тестовые проекты на основе MSTest, которые ссылаются на `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, и вы не хотите переходить на более новые пакеты NuGet MSTest, выполните обновление до Visual Studio 2017 версии 15.4. 
+
+В некоторых случаях, чтобы обеспечить работу Live Unit Testing, вам потребуется явным образом восстановить пакеты NuGet, на которые ссылается проект в решении. Это можно сделать, выполнив сборку решения явным образом (в меню верхнего уровня Visual Studio **Пересобрать решение** выберите **Cобрать**) или восстановив пакеты в решении (щелкните решение правой кнопкой мыши и выберите **Восстановить пакеты NuGet**) перед включением Living Unit Testing. 
+
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Совместима ли функция Live Unit Testing с проектами .NET Core?  
 
@@ -200,7 +206,7 @@ public class Class1
 
 Это известная ошибка прежних версий Visual Studio 2017, которая в сборках Live Unit Testing может повлиять на внедрение следующих данных заголовка Win32 PE: 
 
-- версия файла (заданная в коде параметром @System.Reflection.AssemblyFileVersionAttribute ); 
+- версия файла (заданная в коде параметром @System.Reflection.AssemblyFileVersionAttribute); 
 
 - значок Win32 (заданный в командной строке параметром `/win32icon:`); 
 
@@ -262,4 +268,3 @@ public class Class1
 
 [Динамическое модульное тестирование](live-unit-testing.md)
  
-

@@ -1,27 +1,29 @@
 ---
-title: "Функция JsDeleteProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsDeleteProperty"
-helpviewer_keywords: 
-  - "JsDeleteProperty - функция"
+title: "Функция JsDeleteProperty | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsDeleteProperty
+helpviewer_keywords: JsDeleteProperty function
 ms.assetid: 0f6ac6a7-3576-42f5-98d0-1c06542c8149
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 60a6da027fe128d91770bbf2d299d5d23de6d3eb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsDeleteProperty
+# <a name="jsdeleteproperty-function"></a>Функция JsDeleteProperty
 Удаляет свойство объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsDeleteProperty(  
@@ -32,7 +34,7 @@ STDAPI_(JsErrorCode) JsDeleteProperty(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
  Объект, содержащий свойство.  
   
@@ -45,14 +47,14 @@ STDAPI_(JsErrorCode) JsDeleteProperty(
  `result`  
  Указывает, удалено ли свойство.  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

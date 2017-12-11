@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
+ms.openlocfilehash: 11ebadac433076a6ab54afce59584b1f0966df68
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
-ms.openlocfilehash: 30ac6d277edf54ac56294ea0639a471a22dc00da
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/07/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Выполнение средств профилирования с отладчиком и без него
 Теперь в Visual Studio можно выбирать средства производительности. Некоторые из них (например, **Загрузка ЦП** и **Использование памяти**) можно использовать с отладчиком или без него. Средства производительности, используемые без отладчика, предназначены для выполнения в конфигурациях выпуска, а средства, интегрированные в отладчик, предназначены для выполнения в конфигурациях отладки.  
@@ -124,7 +122,7 @@ ms.lasthandoff: 08/07/2017
  ![Указание URL-адреса для отображения в Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
- Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  Для универсальных приложений Windows см. раздел [Запуск приложений Магазина Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  Для универсальных приложений Windows см. раздел [Запуск приложений универсальной платформы Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Записи в блогах и статьи MSDN от команды разработчиков средств диагностики  
  [Журнал MSDN Magazine. Анализ производительности во время отладки в Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
@@ -142,4 +140,3 @@ ms.lasthandoff: 08/07/2017
  [Окно отладчика "Средства диагностики" в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [IntelliTrace в Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-

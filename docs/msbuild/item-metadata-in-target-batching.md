@@ -1,35 +1,36 @@
 ---
-title: "Метаданные элементов в пакетной обработке целевых объектов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "пакетная обработка [MSBuild]"
-  - "MSBuild, пакетная обработка целевых объектов"
-  - "пакетная обработка целевых объектов [MSBuild]"
+title: "Метаданные элементов в пакетной обработке целевых объектов | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, target batching
+- target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: d24400bc3889d5f7fbe691d3e75b7fd7ad155e01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Метаданные элементов в пакетной обработке целевых объектов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно выполнить анализ зависимости входных и выходных данных целевого объекта построения.  Если обнаружено, что входные и выходные данные целевого объекта актуальны, этот целевой объект пропускается, а построение продолжается.  Для указания элементов, которые нужно проверять во время анализа зависимости, в элементах `Target` используются атрибуты `Inputs` и `Outputs`.  
+# <a name="item-metadata-in-target-batching"></a>Метаданные элементов в пакетной обработке целевых объектов
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может анализировать зависимости для входных и выходных данных целевого объекта сборки. Если определено, что входные или выходные данные целевого объекта актуальны, он пропускается, а сборка продолжается. Элементы `Target` используют атрибуты `Inputs` и `Outputs`, чтобы задать элементы, обрабатываемые во время анализа зависимостей.  
   
- Если в целевом объекте содержится задача, в которой в качестве входных и выходных данных используются пакетные элементы, элементу `Target` целевого объекта следует использовать пакетную обработку в атрибуте `Inputs` или `Outputs`, чтобы позволить [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] пропустить пакеты элементов, которые уже актуальны.  
+ Если целевой объект содержит задачу, которая использует пакетные элементы в качестве входных и выходных данных, элемент `Target` целевого объекта должен использовать пакетную обработку в своих атрибутах `Inputs` или `Outputs`, чтобы позволить [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] пропускать уже актуальные пакеты элементов.  
   
-## Целевые объекты при пакетной обработке  
- В приведенном ниже примере кода содержится список элементов с именем `Res`, который делится на два пакета на основании метаданных элемента `Culture`.  Каждый из пакетов передается в задачу `AL`, на выходе которой создается сборка для каждого пакета.  Используя пакетную обработку в атрибуте `Outputs` элемента `Target`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может определить актуальность каждого отдельного пакета перед выполнением целевого объекта.  Без использования пакетной обработки целевого объекта оба пакета элементов будут выполняться задачей при каждом выполнении целевого объекта.  
+## <a name="batching-targets"></a>Целевые объекты пакетной обработки  
+ Следующий пример содержит список элементов `Res`, который поделен на два пакета на основе метаданные элемента `Culture`. Каждый из пакетов передается в задачу `AL`, которая создает для них по выходной сборке. Используя пакетную обработку для атрибута `Outputs` элемента `Target`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может определить, актуальны ли отдельные пакеты, прежде чем запускать целевой объект. Без пакетной обработки целевых объектов оба пакета элементов будут выполняться задачей при каждом запуске целевого объекта.  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -67,8 +68,8 @@ caps.handback.revision: 6
 </Project>  
 ```  
   
-## См. также  
- [Практическое руководство. Инкрементное построение](../msbuild/how-to-build-incrementally.md)   
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Инкрементная сборка](../msbuild/how-to-build-incrementally.md)   
  [Пакетная обработка](../msbuild/msbuild-batching.md)   
- [Элемент Target \(MSBuild\)](../msbuild/target-element-msbuild.md)   
+ [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Метаданные элементов в пакетной обработке задач](../msbuild/item-metadata-in-task-batching.md)

@@ -1,27 +1,27 @@
 ---
-title: "Сообщение о проблеме"
+title: "Сообщение о проблеме | Документы Майкрософт"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
+ms.openlocfilehash: f391ef0b21ba6d500e88908d806ea3958c771bed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 41fd1949e7c3ea635b847c3e29648ed6e02a414e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Как сообщить о проблеме в Visual Studio для Mac
 
 Если у вас возникла проблема с Visual Studio для Mac, нам нужно узнать о ней, чтобы диагностировать и устранить ее. 
 
 ## <a name="how-to-report-a-problem"></a>Сообщение о проблеме
 
-Чтобы сообщить о проблеме с Visual Studio для Mac, используйте ссылку **Сообщить о проблеме** на странице приветствия:
+Чтобы сообщить о проблеме в Visual Studio для Mac, выберите в строке меню **Справка > Сообщить о проблеме**.
 
 ![ссылка "Сообщить о проблеме"](media/report-problem-image1.png)
+
+Кроме того, можно воспользоваться ссылкой **Сообщить о проблеме** на странице приветствия.
 
 При этом отображается веб-страница **Сообщить о проблеме**. На ней можно просмотреть все существующие проблемы, проголосовать за схожие проблемы и отправить решения для проблем, возникших у других пользователей:
 

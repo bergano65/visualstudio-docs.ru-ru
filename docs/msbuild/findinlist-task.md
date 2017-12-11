@@ -1,48 +1,49 @@
 ---
-title: "Задача FindInList | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "FindInList - задача [MSBuild]"
-  - "MSBuild, FindInList - задача"
+title: "Задача FindInList | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- FindInList task [MSBuild]
+- MSBuild, FindInList task
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: c30b667564b3ffc4852f39c5ccc96c6527720a1f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Задача FindInList
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ищет в заданном списке элемент, имеющий указанную спецификацию.  
+# <a name="findinlist-task"></a>Задача FindInList
+Выполняет поиск элемента с указанной спецификацией в заданном списке.  
   
-## Параметры  
- В следующей таблице описаны параметры задачи [FindInList Task](../msbuild/findinlist-task.md).  
+## <a name="parameters"></a>Параметры  
+ В следующей таблице описаны параметры [задачи FindInList](../msbuild/findinlist-task.md).  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`CaseSensitive`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, поиск чувствителен к регистру символов, в противном случае регистр не имеет значения.  Значение по умолчанию — `true`.|  
-|`FindLastMatch`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, возвращается последнее совпадение; в противном случае возвращается первое совпадение.  Значение по умолчанию — `false`.|  
-|`ItemFound`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`, предназначенный только для чтения.<br /><br /> В списке находится первый совпадающий элемент, если таковой имеется.|  
-|`ItemSpecToFind`|Обязательный параметр типа `String`.<br /><br /> Искомая спецификация элемента.|  
-|`List`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Список, в котором нужно выполнить поиск спецификации элемента.|  
-|`MatchFileNameOnly`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, сравнение производится только с той частью спецификации элемента, которая содержит имя файла; в противном случае сравнение производится со всей спецификацией элемента.  Значение по умолчанию — `true`.|  
+|---------------|-----------------|  
+|`CaseSensitive`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, при поиске учитывается регистр, в противном случае регистр не учитывается. Значение по умолчанию — `true`.|  
+|`FindLastMatch`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, возвращается последнее совпадение, в противном случае возвращается первое совпадение. Значение по умолчанию — `false`.|  
+|`ItemFound`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` , доступный только для чтения.<br /><br /> Первый соответствующий элемент в списке (при его наличии).|  
+|`ItemSpecToFind`|Обязательный параметр `String` .<br /><br /> Спецификация элементов, которую требуется найти.|  
+|`List`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Список, в котором нужно найти спецификацию элементов.|  
+|`MatchFileNameOnly`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, сравнение проводится только по той части спецификации элементов, которая относится к имени файла, в противном случае — по всей спецификации. Значение по умолчанию — `true`.|  
   
-## Заметки  
- Помимо параметров, которые перечислены выше, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который наследует от класса <xref:Microsoft.Build.Utilities.Task>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Примечания  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

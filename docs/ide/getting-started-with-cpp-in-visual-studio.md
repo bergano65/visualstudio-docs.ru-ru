@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 48f2bb4e61ca6a4f9a9464a6b67a3218b418c8ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
 Выполнив это пошаговое руководство, вы ознакомитесь со многими инструментами и диалоговыми окнами, которые можно использовать для разработки приложений с помощью Visual Studio. Вы создадите простое приложение в стиле "Hello, World", чтобы глубже изучить работу в интегрированной среде разработки (IDE).  
@@ -124,7 +107,7 @@ ms.lasthandoff: 05/13/2017
   
 -   Запустите отладчик.  
   
-     ![Команда "Начать отладку" в меню "Отладка"](~/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+     ![Команда "Начать отладку" в меню "Отладка"](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
      Отладчик запустится и выполнит код. Окно консоли (отдельное окно, подобное командной строке) отображается в течение нескольких секунд, но при остановке отладчика быстро закрывается. Чтобы просмотреть текст, необходимо установить точку останова выполнения программы.  
   
@@ -157,7 +140,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  Измените конфигурацию сборки для GreetingsConsoleApp с **Отладка** на **Выпуск**.  
   
-     ![Сборка окончательной версии приложения](~/ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+     ![Сборка окончательной версии приложения](../ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
 3.  Постройте решение.  
   

@@ -1,11 +1,10 @@
 ---
-title: "Страница &quot;Приложение&quot; в конструкторе проектов (C#) | Документы Майкрософт"
+title: "Страница \"Приложение\" в конструкторе проектов (C#) | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,38 +14,22 @@ helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
 ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: 56
-author: kempb
-ms.author: kempb
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: 3f0056a62dc11c5584e38e9912ccd94f5b9e9b0e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 5f32dceca8a6b14e6b1777e5c525327f46adca47
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
 Страница **Приложение** в **конструкторе проектов** служит для задания параметров и свойств приложения проекта.  
   
- Чтобы получить доступ к странице **Приложение**, выберите узел проекта (не узел **Решение**) в **обозревателе решений**. Затем в строке меню выберите **Проект** > **Свойства**. После того как откроется конструктор проектов, перейдите на вкладку **Приложение**.  
+Чтобы получить доступ к странице **Приложение**, выберите узел проекта (не узел **Решение**) в **обозревателе решений**. Затем в строке меню выберите **Проект** > **Свойства**. После того как откроется конструктор проектов, перейдите на вкладку **Приложение**.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="general-application-settings"></a>Общие параметры приложения  
  Описанные ниже параметры позволяют производить общую настройку приложения.  
@@ -72,7 +55,7 @@ ms.lasthandoff: 05/26/2017
  Дополнительные сведения см. в разделах [Практическое руководство. Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Тип приложения**  
- Тип приложения для сборки. Для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] можно указать **Приложение для Магазина Windows**, **Библиотека классов** или **Файл WinMD**. Для большинства других типов приложения можно указать **Приложение Windows**, **Консольное приложение**, **Библиотека классов**, **Служба Windows** или **Библиотека веб-элементов управления**.  
+ Тип приложения для сборки. Для приложений Windows 8.x можно указать **Приложение для Магазина Windows**, **Библиотека классов** или **Файл WinMD**. Для большинства других типов приложения можно указать **Приложение Windows**, **Консольное приложение**, **Библиотека классов**, **Служба Windows** или **Библиотека веб-элементов управления**.  
   
  Для проекта веб-приложения необходимо указать **Библиотека классов**.  
   
@@ -111,11 +94,11 @@ ms.lasthandoff: 05/26/2017
   
 -   **Properties\app.manifest**. Этот вариант необходим для работы приложений, развертываемых с помощью ClickOnce или COM-взаимодействия без регистрации. При публикации приложения с помощью ClickOnce параметр **Манифест** автоматически принимает это значение.  
   
- **Файл ресурсов**  
- Установите переключатель в это положение, если проект содержит файл ресурсов. В этом случае параметры **Значок** и **Манифест** будут отключены.  
+**Файл ресурсов**  
+Установите переключатель в это положение, если проект содержит файл ресурсов. В этом случае параметры **Значок** и **Манифест** будут отключены.  
   
- Введите путь и имя или воспользуйтесь кнопкой "Обзор" (**...**), чтобы добавить к проекту файл ресурсов Win32.  
+Введите путь и имя или воспользуйтесь кнопкой "Обзор" (**...**), чтобы добавить к проекту файл ресурсов Win32.  
   
 ## <a name="see-also"></a>См. также  
 [Управление свойствами приложения](../../ide/application-properties.md)  
- [Написание кода в решениях Office](/office-dev/office-dev/writing-code-in-office-solutions)
+[Написание кода в решениях Office](/office-dev/office-dev/writing-code-in-office-solutions)

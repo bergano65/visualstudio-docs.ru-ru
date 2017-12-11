@@ -1,56 +1,56 @@
 ---
-title: "Задача Warning | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#Warning"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, Warning - задача"
-  - "Warning - задача [MSBuild]"
+title: "Задача Warning | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Warning
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- Warning task [MSBuild]
+- MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a7fca3c4981a038bba4d84c520704f1a43e01b1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Задача Warning
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Запись предупреждения в журнал в процессе построения на основании вычисленного условного оператора.  
+# <a name="warning-task"></a>Задача Warning
+Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи `Warning`.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`Code`|Необязательный параметр типа `String`.<br /><br /> Код предупреждения для сопоставлением с предупреждением.|  
-|`File`|Необязательный параметр типа `String`.<br /><br /> Задает соответствующий файл, если имеется.  Если файл не предоставлен, используется файл, содержащий задачу Warning.|  
-|`HelpKeyword`|Необязательный параметр типа `String`.<br /><br /> Ключевое слово справки, сопоставляемое с предупреждением.|  
-|`Text`|Необязательный параметр типа `String`.<br /><br /> Текст предупреждения, регистрируемый [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в случае, если параметру `Condition` присвоено значение `true`.|  
+|---------------|-----------------|  
+|`Code`|Необязательный параметр `String` .<br /><br /> Код предупреждения для связи с предупреждением.|  
+|`File`|Необязательный параметр `String` .<br /><br /> Указывает соответствующий файл (при его наличии). Если файл не указан, используется файл, содержащий задачу Warning.|  
+|`HelpKeyword`|Необязательный параметр `String` .<br /><br /> Ключевое слово справки для связи с предупреждением.|  
+|`Text`|Необязательный параметр `String` .<br /><br /> Текст предупреждения, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], если результат вычисления параметра `Condition` оказывается равным `true`.|  
   
-## Заметки  
- Задача `Warning` позволяет проектам [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполнять проверку на наличие необходимой конфигурации или свойства перед переходом к следующему этапу построения.  
+## <a name="remarks"></a>Примечания  
+ Задача `Warning` позволяет проектам [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] проверять наличие необходимой конфигурации или необходимого свойства перед переходом к следующему шагу сборки.  
   
- Если параметру `Condition` задачи `Warning` присвоено значение `true`, то значение параметра `Text` регистрируется в журнале, а процесс построения продолжается.  Если параметр `Condition` не существует, текст предупреждения регистрируется в журнале.  Дополнительные сведения о ведении журнала см. в разделе [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Если параметр `Condition` задачи `Warning` равен `true`, значение параметра `Text` записывается в журнал, а процесс сборки продолжается. Если параметр `Condition` не существует, текст предупреждения записывается в журнал. Дополнительные сведения о ведении журнала см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Помимо параметров, которые перечислены выше, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который наследует от класса <xref:Microsoft.Build.Utilities.Task>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Пример  
- В следующем примере кода проверяется наличие свойств, заданных из командной строки.  Если такие свойства отсутствуют, проект вызывает предупреждение и регистрирует значение параметра `Text` задачи `Warning`.  
+## <a name="example"></a>Пример  
+ Следующий пример кода проверяет свойства, заданные в командной строке. Если заданные свойства отсутствуют, проект инициирует событие предупреждения и регистрирует в журнале значение параметра `Text` задачи `Warning`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="ValidateCommandLine">  
         <Warning  
@@ -64,6 +64,6 @@ caps.handback.revision: 18
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Справочные сведения о схеме файлов проектов](../msbuild/msbuild-project-file-schema-reference.md)
+ [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

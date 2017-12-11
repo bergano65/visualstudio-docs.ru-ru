@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
-caps.latest.revision: 30
+caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2ad95e87681907117eb9a3329716a3dd590bd6b8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: fa2ffd383d2180b672347043dd02459473e3a608
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel
 Платформа тестирования для закодированных пользовательских интерфейсов и записей действий поддерживает не все пользовательские интерфейсы. Возможно, пользовательский интерфейс, который вы хотите протестировать, не поддерживается. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса или запись действия для электронной таблицы [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Тем не менее можно создать собственное расширение для платформы закодированных тестов пользовательского интерфейса, которое будет поддерживать определенный пользовательский интерфейс, используя расширяемость такой платформы. В следующем разделе представлен пример расширения платформы для поддержки создания закодированных тестов пользовательского интерфейса и записей действий для [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Дополнительные сведения о поддерживаемых платформах см. в статье [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
@@ -42,7 +26,7 @@ ms.lasthandoff: 05/13/2017
   
  В этом разделе представлено расширение закодированного теста пользовательского интерфейса, которое может записывать и воспроизводить тесты листов Excel. В этом разделе и в комментариях к коду рассматривается каждая часть расширения для разработчиков, которые хотят создать такое расширение.  
   
- ![Архитектура теста пользовательского интерфейса](~/test/media/ui_testarch.png "UI_TestArch")  
+ ![Архитектура тестов пользовательского интерфейса](../test/media/ui_testarch.png "UI_TestArch")  
 Общие сведения об архитектуре  
   
 ## <a name="download-the-sample"></a>Загрузка примера  
@@ -95,4 +79,3 @@ ms.lasthandoff: 05/13/2017
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
  [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
  [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

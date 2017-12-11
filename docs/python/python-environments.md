@@ -1,28 +1,24 @@
 ---
 title: "Среды Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 7/25/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: fa8a7616fe88f024ab299e5d115b66f8656e7cb3
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-environments"></a>Среды Python
 
 Поддержка Python в Visual Studio упрощает управление несколькими средами Python и позволяет легко переключаться между ними для различных проектов. 
@@ -46,9 +42,9 @@ ms.lasthandoff: 07/26/2017
 - [Управление необходимыми пакетами](#managing-required-packages)
 - [Пути поиска](#search-paths)
 
-Просмотрите вводный видеоурок с [подробным обзором интерпретаторов Python](https://youtu.be/KY1GEOo3qy0) длительностью 13 мин 27 с, размещенный на сайте youtube.com.
+Основные сведения см. в видеоролике [Управление средами Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2 мин 35 с).
 
-> [!VIDEO https://www.youtube.com/embed/KY1GEOo3qy0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
 
 ## <a name="selecting-and-installing-python-interpreters"></a>Выбор и установка интерпретаторов Python
 
@@ -56,7 +52,7 @@ ms.lasthandoff: 07/26/2017
 
 | Интерпретатор | Описание | 
 | --- | --- | 
-| [CPython](https://www.python.org/) | Собственный и самый используемый интерпретатор доступен в 32- и 64-разрядных версиях (рекомендуется 32-разрядная). Он предоставляет последние возможности языка, максимальную совместимость пакета Python, полную поддержку отладки и взаимодействие с [IPython](http://ipython.org/). См. также статью о [сравнении Python 2 и Python 3](http://wiki.python.org/moin/Python2orPython3). |
+| [CPython](https://www.python.org/) | Собственный и самый используемый интерпретатор доступен в 32- и 64-разрядных версиях (рекомендуется 32-разрядная). Он предоставляет последние возможности языка, максимальную совместимость пакета Python, полную поддержку отладки и взаимодействие с [IPython](http://ipython.org/). См. также статью о [сравнении Python 2 и Python 3](http://wiki.python.org/moin/Python2orPython3). Имейте в виду, что Visual Studio 2015 и более ранние версии не поддерживают Python 3.6 и в них может появиться ошибка "Не поддерживаемая версия Python 3.6". Используйте Python 3.5 или более раннюю версию. |
 | [IronPython](https://github.com/IronLanguages/main) | Реализация .NET для Python (доступна 32- и 64-разрядная версия), обеспечивающая взаимодействие с C#, F# и Visual Basic, доступ к API-интерфейсам .NET, стандартную отладку Python (но не отладку в смешанном режиме C++) и отладку в смешанном режиме IronPython и C#. Однако IronPython не поддерживает виртуальные среды. | 
 | [Anaconda](https://www.continuum.io) | Открытая платформа для анализа и обработки данных на базе Python, которая включает в себя последнюю версию CPython и большинство пакетов со сложной установкой. Рекомендуем использовать этот интерпретатор, если вы не можете определиться. |
 | [PyPy](http://www.pypy.org/) | Реализация JIT для Python с высокопроизводительной трассировкой, которая хорошо подходит для долго выполняющихся программ и ситуаций, когда вы обнаружили проблемы с производительностью, которые не удается устранить другими способами. Работает с Visual Studio, но имеет ограниченную поддержку расширенных возможностей отладки. |
@@ -307,4 +303,3 @@ Cleaning up...
 > При использовании Python 3.3 можно добавить путь поиска к модулям Python 2.7, но в результате могут возникнуть ошибки.
 
 Если вы регулярно используете одни и те же пути поиска и содержимое изменяется нечасто, может быть более эффективным установить компоненты в папку пакетов сайта. В этом случае они анализируются и сохраняются в базе данных IntelliSense, всегда связаны с предполагаемым окружением и не требуют добавления пути поиска для каждого проекта.
-

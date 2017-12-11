@@ -1,34 +1,33 @@
 ---
-title: "Время синхронизации | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.synchronization"
-helpviewer_keywords: 
-  - "Визуализатор параллелизма, Время синхронизации"
+title: "Время синхронизации | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.synchronization
+helpviewer_keywords: Concurrency Visualizer, Synchronization Time
 ms.assetid: affa04cc-8bba-4848-9301-b19846d3c2cb
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c6f792e58a2c98219d15e889846921f537d74140
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Время синхронизации
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Эти сегменты на временной шкале связаны с периодами времени блокирования, отнесенными к категории синхронизации.  Если поток помечается как заблокированный в результате синхронизации, подразумевается одно из следующего:  
+# <a name="synchronization-time"></a>Время синхронизации
+Эти сегменты на временной шкале связаны с периодами блокирования, отнесенными к категории синхронизации. Если поток помечается как заблокированный в процессе синхронизации, подразумевается одно из следующего:  
   
--   Выполнение потока могло привести к вызову хорошо известного интерфейса API синхронизации потока, например, `EnterCriticalSection()` или `WaitForSingleObject()`.  
+-   Выполнение потока могло привести к вызову известного интерфейса API синхронизации потока, например, `EnterCriticalSection()` или `WaitForSingleObject()`.  
   
--   Алгоритм сопоставления интерфейсов API не может быть полноценным, поэтому некоторые интерфейсы API, которые могли быть сопоставлены с другими категориями, могут также отображаться как синхронизация, так как фрейм в стеке вызова, в конце концов, достиг базового ядерного блокирующего примитива, сопоставленного с этой категорией.  
+-   Алгоритм сопоставления интерфейсов API не может быть полноценным, поэтому некоторые интерфейсы API, которые могли быть сопоставлены с другими категориями, могут также отображаться как синхронизация, так как кадр в стеке вызовов в итоге достиг базового примитива блокирования ядра, сопоставленного с этой категорией.  
   
  Чтобы понять исходную причину события блокировки потока, внимательно просмотрите стеки вызовов блокировки и отчеты профилей.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

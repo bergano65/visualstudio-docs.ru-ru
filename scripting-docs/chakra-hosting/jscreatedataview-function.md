@@ -1,23 +1,27 @@
 ---
-title: "Функция JsCreateDataView | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Функция JsCreateDataView | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 161e59eb-d429-46f7-9a38-bbf2149ccf44
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1e5150a9b858e09217ee7ac3c1f25efba36615f9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsCreateDataView
+# <a name="jscreatedataview-function"></a>Функция JsCreateDataView
 Создает объект `DataView` Javascript.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 JsErrorCode  JsCreateDataView(  
@@ -28,7 +32,7 @@ JsErrorCode  JsCreateDataView(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `arrayBuffer`  
  Существующий объект `ArrayBuffer` для использования в качестве хранилища для объекта `DataView` результата.  
   
@@ -41,16 +45,16 @@ JsErrorCode  JsCreateDataView(
  `result`  
  Новый объект DataView.  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
  Этот API поддерживается только в режиме Edge.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

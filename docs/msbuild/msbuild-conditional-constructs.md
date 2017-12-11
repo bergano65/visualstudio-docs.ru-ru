@@ -1,48 +1,49 @@
 ---
-title: "Условные конструкции MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<Choose> - элемент [MSBuild]"
-  - "<Otherwise> - элемент [MSBuild]"
-  - "<When> - элемент [MSBuild]"
-  - "Choose - элемент [MSBuild]"
-  - "условные конструкции [MSBuild]"
-  - "MSBuild, условные конструкции"
-  - "Otherwise - элемент [MSBuild]"
-  - "When - элемент [MSBuild]"
+title: "Условные конструкции MSBuild | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- <Choose> Element [MSBuild]
+- Choose Element [MSBuild]
+- conditional constructs [MSBuild]
+- MSBuild, conditional constructs
+- <When> Element [MSBuild]
+- <Otherwise> Element [MSBuild]
+- Otherwise Element [MSBuild]
+- When Element [MSBuild]
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: bb6244ceed63fead2925c0af7d98669b1bf5bfc2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Условные конструкции MSBuild
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет механизм для обработки ситуации выбора с помощью элементов [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) и [Otherwise](../msbuild/otherwise-element-msbuild.md).  
+# <a name="msbuild-conditional-constructs"></a>Условные конструкции MSBuild
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет механизм для обработки условий "либо-либо" с помощью элементов [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) и [Otherwise](../msbuild/otherwise-element-msbuild.md).  
   
-## Использование элемента Choose  
- Элемент `Choose` содержит последовательность элементов `When` с атрибутами `Condition`, которые проверяются сверху вниз, пока для одного из них не будет получен результат `true`.  Если более чем для одного элемента `When` получен результат `true`, используется только первый элемент.  Элемент `Otherwise`, если он есть, будет обрабатываться в случае, если ни для одного условия в элементах  `When` не был получен результат `true`.  
+## <a name="using-the-choose-element"></a>Использование элемента Choose  
+ Элемент `Choose` содержит ряд элементов `When` с атрибутами `Condition`, которые проверяются в порядке сверху вниз, пока один из них не даст значение `true`. Если значение `true` дают несколько элементов `When`, используется только первый из них. Если ни одно из условий элемента `When` не дает значение `true`, вычисляется элемент `Otherwise` (при его наличии).  
   
- Элементы `Choose` можно использовать в качестве дочерних элементов для элементов `Project`, `When` и `Otherwise`.  Элементы `When` и `Otherwise` могут иметь дочерние элементы `ItemGroup`, `PropertyGroup` или `Choose`.  
+ Элементы `Choose` можно использовать в качестве дочерних для элементов `Project`, `When` и `Otherwise`. Элементы `When` и `Otherwise` могут иметь дочерние элементы `ItemGroup`, `PropertyGroup` или `Choose`.  
   
-## Пример  
- В следующем примере элементы `Choose` и `When` используются для обработки ситуации выбора.  Свойства и элементы для данного проекта устанавливаются в зависимости от значения свойства `Configuration`.  
+## <a name="example"></a>Пример  
+ Следующий пример использует элементы `Choose` и `When` для обработки условий "либо-либо". Свойства и элементы для проекта задаются в зависимости от значения свойства `Configuration`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
     <PropertyGroup>  
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -78,8 +79,8 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
-## См. также  
- [Элемент Choose \(MSBuild\)](../msbuild/choose-element-msbuild.md)   
- [Элемент When \(MSBuild\)](../msbuild/when-element-msbuild.md)   
- [Элемент Otherwise \(MSBuild\)](../msbuild/otherwise-element-msbuild.md)   
+## <a name="see-also"></a>См. также  
+ [Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md)   
+ [Элемент When (MSBuild)](../msbuild/when-element-msbuild.md)   
+ [Элемент Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: "Установка Visual Studio для Mac"
+title: "Установка Visual Studio для Mac | Документы Майкрософт"
 description: "Инструкции по установке Visual Studio для Mac и дополнительных компонентов, которые требуются для кроссплатформенной разработки."
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
+ms.openlocfilehash: 25d3227bcf8a18a2fc6ba68c194e9cac75b2e919
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 24d2fa5f9054e621cd5167692a2571e9275c2bae
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-
 # <a name="setup-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
 
 ## <a name="setup"></a>Установка
@@ -76,3 +74,22 @@ ms.lasthandoff: 08/11/2017
 > [!NOTE]
 Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://www.visualstudio.com/vs/).
 
+## <a name="manual-installation"></a>Установка вручную
+
+Если установка продукта или одного из его компонентов завершается сбоем, возможно, решить проблему удастся путем установки вручную. Чтобы просмотреть необходимые компоненты и скачать каждый из них, выполните указанные ниже действия.
+
+1. На втором экране Visual Studio Installer в строке меню выберите **Показать инструкции по установке вручную**.
+
+    ![Пункт меню для установки вручную](media/installer-image12.png)
+
+2. Следуйте инструкциям по скачиванию и установке компонентов вручную.
+
+  ![Диалоговое окно установки вручную](media/installer-image13.png)
+
+## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Установка Visual Studio для Mac в среде, защищенной брандмауэром или прокси-сервером
+
+Для установки Visual Studio для Mac в среде, защищенной брандмауэром, необходимо сделать доступными ряд конечных точек, чтобы разрешить скачивание необходимых средств и обновлений ПО.
+
+Настройте сеть, разрешив доступ к следующим расположениям:
+
+* [Конечные точки Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)

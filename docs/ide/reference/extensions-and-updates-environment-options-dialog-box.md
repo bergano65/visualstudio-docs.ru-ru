@@ -1,38 +1,38 @@
 ---
-title: "Страница &#171;Расширения и обновления&#187;, папка &#171;Среда&#187;, диалоговое окно &#171;Параметры&#187; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Environment.ExtensionManager"
+title: "Страница \"Расширения и обновления\", папка \"Среда\", диалоговое окно \"Параметры\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fda8c5cb5066684ba0de5341042060d8ab2660cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Страница &#171;Расширения и обновления&#187;, папка &#171;Среда&#187;, диалоговое окно &#171;Параметры&#187;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="extensions-and-updates-environment-options-dialog-box"></a>Страница «Расширения и обновления», папка «Среда», диалоговое окно «Параметры»
 Эта страница служит для указания параметров выполнения обновлений в Visual Studio и параметров обновления и обнаружения расширений.  
   
-### Автоматически проверять наличие обновлений  
- Если флажок установлен, в Visual Studio будет периодически выполняться проверка на наличие обновлений для самой среды, установленных пакетов SDK, средств и расширений. В случае доступности обновлений в строке меню будут отображаться соответствующие уведомления.  Дополнительные сведения см. в статье [Уведомления](../../ide/visual-studio-notifications.md).  
+### <a name="automatically-check-for-updates"></a>Автоматически проверять наличие обновлений  
+ Если флажок установлен, в Visual Studio будет периодически выполняться проверка на наличие обновлений для самой среды, установленных пакетов SDK, средств и расширений. В случае доступности обновлений в строке меню будут отображаться соответствующие уведомления. Дополнительные сведения см. в статье [Уведомления](../../ide/visual-studio-notifications.md).  
   
-### Автоматически обновлять расширения  
- Если флажок установлен, обновления расширений выполняются без вывода запроса.  Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).  
+### <a name="automatically-update-extensions"></a>Автоматически обновлять расширения  
+ Если флажок установлен, обновления расширений выполняются без вывода запроса. Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).  
   
-### Загружать пользовательские расширения при запуске от имени администратора  
+### <a name="load-user-extensions-when-running-as-administrator"></a>Загружать пользовательские расширения при запуске от имени администратора  
  Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).  
   
-### Дополнительные галереи расширений  
- Функция выпуска Enterprise, которая обеспечивает поддержку галерей собственных расширений.  Дополнительные сведения см. в разделе [Частные коллекции](../../extensibility/private-galleries.md).  
+### <a name="additional-extension-galleries"></a>Дополнительные галереи расширений  
+ Возможность выпуска Enterprise, которая обеспечивает поддержку галерей собственных расширений. Дополнительные сведения см. в разделе [Закрытые коллекции](../../extensibility/private-galleries.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

@@ -1,65 +1,65 @@
 ---
-title: "Команда Print | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.print"
-helpviewer_keywords: 
-  - "Debug.Print - команда"
-  - "Печать - команда"
-  - "Print - метод"
+title: "Команда \"Печать\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.print
+helpviewer_keywords:
+- Debug.Print command
+- Print method
+- Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6eaf5d77da1dbc6e005764087dad338458e7ce8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда Print
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Вычисление выражения или отображение указанного текста.  
+# <a name="print-command"></a>Команда Print
+Вычисляет выражение или отображает указанный текст.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Debug.Print text  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `text`  
- Обязательный.  Выражение для вычисления или текст для отображения.  
+ Обязательный. Вычисляемое выражение или отображаемый текст.  
   
-## Заметки  
- В качестве псевдонима этой команды можно использовать вопросительный знак \(?\).  Так, например, команда  
+## <a name="remarks"></a>Примечания  
+ Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда  
   
 ```  
 >Debug.Print expA  
 ```  
   
- может также выглядеть следующим образом:  
+ может быть записана в виде  
   
 ```  
 >? expA  
 ```  
   
- Оба варианта этой команды возвращают текущее значение выражения `expA`.  
+ Обе версии этой команды возвращают текущее значение выражения `expA`.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 >Debug.Print varA  
 ```  
   
-## См. также  
- [Команда Evaluate Statement](../../ide/reference/evaluate-statement-command.md)   
+## <a name="see-also"></a>См. также  
+ [Команда "Вычислить оператор"](../../ide/reference/evaluate-statement-command.md)   
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Окно "Команда"](../../ide/reference/command-window.md)   
- [Поле «Поиск\/Команда»](../../ide/find-command-box.md)   
+ [Командное окно](../../ide/reference/command-window.md)   
+ [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

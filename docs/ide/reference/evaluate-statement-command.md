@@ -1,52 +1,52 @@
 ---
-title: "Команда Evaluate Statement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.evaluatestatement"
-helpviewer_keywords: 
-  - "Debug.EvaluateStatement - команда"
-  - "Вычислить оператор - команда"
+title: "Команда \"Вычислить оператор\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.evaluatestatement
+helpviewer_keywords:
+- Debug.EvaluateStatement command
+- Evaluate Statement command
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 46c80a49d0e043d7cdbffbc74698a29e10ab4795
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда Evaluate Statement
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Вычисление и отображение заданного оператора.  
+# <a name="evaluate-statement-command"></a>Команда Evaluate Statement
+Вычисляет и отображает заданный оператор.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Debug.EvaluateStatement text   
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `text`  
- Обязательный.  Вычисляемый оператор.  
+ Обязательный. Вычисляемый оператор.  
   
-## Заметки  
- Окно для ввода команды **EvaluateStatement** определяет, будет знак равенства \(\=\) рассматриваться как оператор сравнения или оператор присваивания.  
+## <a name="remarks"></a>Примечания  
+ Окно, используемое для ввода команды **EvaluateStatement**, определяет, интерпретируется ли знак равенства (=) как оператор сравнения или оператор присваивания.  
   
- В окне **Команда** знак равенства \(\=\) рассматривается как оператор сравнения.  Так, например, если значения переменных `a` и `b` отличаются, командой  
+ В **командном окне** знак равенства (=) интерпретируется как оператор сравнения. Например, если значения переменных `a` и `b` различаются, то команда  
   
 ```  
 >Debug.EvaluateStatement(a=b)  
 ```  
   
- будет возвращено значение `false`.  
+ возвращает значение `false`.  
   
- И наоборот, в окне **Интерпретация** знак равенства \(\=\) рассматривается как оператор присваивания.  Так, например, команда  
+ В окне **интерпретации**, напротив, знак равенства (=) интерпретируется как оператор присваивания. Таким образом, команда  
   
 ```  
 >Debug.EvaluateStatement(a=b)  
@@ -54,15 +54,15 @@ Debug.EvaluateStatement text
   
  присвоит переменной `a` значение переменной `b`.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 >Debug.EvaluateStatement(a+b)  
 ```  
   
-## См. также  
- [Команда Print](../../ide/reference/print-command.md)   
+## <a name="see-also"></a>См. также  
+ [Команда "Печать"](../../ide/reference/print-command.md)   
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Окно "Команда"](../../ide/reference/command-window.md)   
- [Поле «Поиск\/Команда»](../../ide/find-command-box.md)   
+ [Командное окно](../../ide/reference/command-window.md)   
+ [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

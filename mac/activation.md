@@ -1,19 +1,17 @@
 ---
-title: "Активация"
+title: "Активация | Документы Майкрософт"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
+ms.openlocfilehash: 75f8bb2e7b11cc40115e7266f309cb892e9e0323
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a2b13ca0c95337a2a86af6c430a1f0c072069347
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="activation"></a>Активация
 
 Visual Studio для Mac предоставляет три разных уровня подписки, доступные в рамках одного скачиваемого пакета:
@@ -33,6 +31,10 @@ Visual Studio для Mac предоставляет три разных уров
 1. Продлите подписку. Продлить подписку можно, перейдя по адресу [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
 
 2. При наличии другой учетной записи с активной подпиской вы можете добавить ее в Visual Studio для Mac, как описано в разделе [Добавление нескольких учетных записей пользователей](~/signing-in.md). Visual Studio для Mac обнаружит наилучшую доступную лицензию из всех добавленных учетных записей. 
+
+## <a name="product-key-usage"></a>Использование ключа продукта
+
+В настоящее время нет возможности использовать ключ продукта для активации прав на использование выпуска Professional или Enterprise для Visual Studio для Mac. Для использования Visual Studio Enterprise для Mac или Visual Studio Professional для Mac необходимо иметь соответствующую [подписку](https://www.visualstudio.com/subscriptions/) и [выполнить вход](~/signing-in.md) в интегрированную среду разработки.
 
 ## <a name="offline-activation"></a>Автономная активация
 

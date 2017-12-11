@@ -1,45 +1,23 @@
 ---
 title: "Создание переносимых настраиваемых параметров редактора с EditorConfig | Документы Майкрософт"
 ms.custom: 
-ms.date: 02/17/2017
+ms.date: 10/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
-helpviewer_keywords:
-- editor
+helpviewer_keywords: editor
 ms.assetid: 
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.technology:
-- vs-ide-general
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: f377ada139d9c0e8b01b640cf603cf349dc1c3c3
-ms.contentlocale: ru-ru
-ms.lasthandoff: 03/27/2017
-
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2c1df6f8e34d2b8e72486dd804ba57f0dcf2406b
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 Параметры текстового редактора в Visual Studio применяются ко всем проектам заданного типа. Так, например, измененный параметр текстового редактора C# применяется ко *всем* проектам C# в Visual Studio. Однако в некоторых случаях может потребоваться использовать соглашения, которые отличаются от ваших собственных настроек редактора. Это можно сделать с помощью файлов [EditorConfig](http://editorconfig.org/), предоставляющих общие параметры текстового редактора для каждого проекта. Параметры EditorConfig, которые содержатся в файле .editorconfig, добавляются в базу кода, заменяя глобальные параметры текстового редактора Visual Studio. Это означает, что каждую базу кода можно настроить для использования нужных вам параметров текстового редактора. Для использования этой возможности в Visual Studio подключаемый модуль не требуется.
@@ -49,58 +27,119 @@ ms.lasthandoff: 03/27/2017
 
 Соглашения для кодирования, используемые вами в личных проектах, могут отличаться от тех, которые действуют в командных проектах. Например, вы предпочитаете, чтобы при нажатии клавиши TAB во время кодирования добавлялся символ табуляции. Однако в команде может быть принято, чтобы при отступе вместо символа табуляции добавлялись четыре символа пробела. Файлы EditorConfig устраняют эту проблему, позволяя создавать конфигурацию для каждого сценария.
 
-Поскольку параметры содержатся в файле в базе кода, они передаются вместе с этой базой кода. Параметры текстового редактора применяются при открытии файла кода в редакторе, совместимом с EditorConfig. Дополнительные сведения о файлах EditorConfig см. на веб-сайте [EditorConfig.org](http://editorconfig.org/). При редактировании большого количества файлов .editorconfig может быть полезно расширение [Языковая служба EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig).
+Поскольку параметры содержатся в файле в базе кода, они передаются вместе с этой базой кода. Параметры текстового редактора применяются при открытии файла кода в редакторе, совместимом с EditorConfig. Дополнительные сведения о файлах EditorConfig см. на веб-сайте [EditorConfig.org](http://editorconfig.org/).
 
 ## <a name="override-editorconfig-settings"></a>Переопределение параметров EditorConfig
-При добавлении файла .editorconfig в папку в иерархии файлов его параметры применяются ко всем соответствующим файлам на этом уровне и ниже. Чтобы переопределить параметры EditorConfig для конкретного проекта или базы кода и использовать другие или переопределенные значения, отличные от значений файла .editorconfig верхнего уровня, просто добавьте файл .editorconfig на уровень, который требуется изменить.
+При добавлении файла .editorconfig в папку в иерархии файлов его параметры применяются ко всем соответствующим файлам на этом уровне и ниже. Чтобы переопределить параметры EditorConfig для конкретного проекта или базы кода так, чтобы использовались соглашения, отличные от соглашений в файле EDITORCONFIG верхнего уровня, просто добавьте файл EDITORCONFIG в корень репозитория базы кода или каталога проекта. Обязательно добавьте в файл свойство ```root=true```, чтобы среда Visual Studio не искала другие файлы EDITORCONFIG выше в структуре каталогов. Новые параметры файла EDITORCONFIG будут применяться к уровню, на котором он находится, и к файлам во всех подкаталогах.
+
+```
+# top-most EditorConfig file
+root = true
+```
 
 ![Иерархия EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
 
-Новые параметры файла .editorconfig будут применяться к уровню, на котором он находится, и ко всем его вложенным файлам.
+Файлы EditorConfig считываются сверху вниз. В последнюю очередь считываются ближайшие файлы EditorConfig. Соглашения из соответствующих разделов EditorConfig применяются в том порядке, в котором они были считаны, поэтому приоритет имеют соглашения в ближайших файлах.
 
 ## <a name="supported-settings"></a>Поддерживаемые параметры
-Редактор в Visual Studio поддерживает следующие значения основного набора параметров EditorConfig.
+Редактор в Visual Studio поддерживает следующие свойства из основного набора [свойств EditorConfig](http://editorconfig.org/#supported-properties):  
+
 - indent_style
 - indent_size
 - tab_width
 - end_of_line
 - charset
 - корневой
-- [соглашения о стиле кода](../ide/editorconfig-code-style-settings-reference.md)
+
+Кроме того, он поддерживает [соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md).  
 
 Параметры EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML.
 
+## <a name="intellisense"></a>IntelliSense
+Visual Studio предоставляет ограниченные возможности IntelliSense для редактирования файлов EDITORCONFIG. При редактировании большого количества файлов .editorconfig может быть полезно расширение [Языковая служба EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig).
+
 ## <a name="example"></a>Пример
-Ниже приведен пример, показывающий состояние отступа во фрагменте кода C# до и после добавления в проект файла .editorconfig. Параметр **Табуляции** в диалоговом окне **Параметры** текстового редактора Visual Studio задан для вывода символов пробела при нажатии клавиши TAB в коде.
+Ниже приведен пример, показывающий состояние отступа во фрагменте кода C# до и после добавления в проект файла .editorconfig. Параметр **Табуляции** в диалоговом окне **Параметры** текстового редактора Visual Studio настроен для вывода символов пробела при нажатии клавиши **TAB** в коде.
 
 ![Параметр "Табуляция" в текстовом редакторе](../ide/media/vside_editorconfig_tabsetting.png)
 
-Как и ожидалось, нажатие клавиши TAB в следующей сроке приводит к отступу строки путем добавления четырех дополнительных символов пробела.
+Как и ожидалось, нажатие клавиши **TAB** в следующей сроке приводит к заданию отступа строки путем добавления четырех дополнительных символов пробела.
 
 ![Код до использования EditorConfig](../ide/media/vside_editorconfig_before.png)
 
-Добавим следующее в новый файл .editorconfig в проект. (Параметр `[*.cs]` означает, что это изменение будет применено только к CS-файлам в этом проекте.)
+Добавим в проект новый файл EDITORCONFIG с приведенным ниже содержимым. Параметр `[*.cs]` означает, что это изменение будет применено только к CS-файлам в этом проекте.  
 
 ![Файл .editorconfig, добавленный в проект](../ide/media/vside_editorconfig_addconfig.png)
 
-Теперь при нажатии клавиши TAB вместо пробелов будут применяться символы табуляции.
+Теперь при нажатии клавиши **TAB** вместо пробелов будут применяться символы табуляции.
 
 ![TAB добавляет символ табуляции](../ide/media/vside_editorconfig_tab.png)
 
 > [!NOTE]
->  Добавление файла .editorconfig в проект или базу кода не приведет к преобразованию существующих стилей в новые. Изменение будет применяться только к новым добавленным строкам. При удалении файла .editorconfig из проекта или базы кода необходимо перезагрузить файлы кода для параметров редактора, чтобы восстановить глобальные параметры. Все ошибки в файлах .editorconfig выводятся в окне ошибок в Visual Studio.
+>  Добавление файла .editorconfig в проект или базу кода не приведет к преобразованию существующих стилей в новые. Изменение будет применяться только к новым добавленным строкам. При удалении файла .editorconfig из проекта или базы кода необходимо перезагрузить файлы кода для параметров редактора, чтобы восстановить глобальные параметры. Все ошибки в файлах EDITORCONFIG выводятся в окне "Список ошибок" в Visual Studio.
+
+## <a name="troubleshooting-editorconfig-settings"></a>Устранение неполадок параметров EditorConfig
+Если в структуре каталогов в папке проекта или выше есть файл EditorConfig, среда Visual Studio будет применять параметры редактора из этого файла. В этом случае в строке состояния может появиться следующее сообщение:
+
+**"Пользовательские предпочтения для этого типа файлов переопределены рекомендациями по написанию кода этого проекта".**
+
+Это означает, что если какие-либо параметры редактора из раздела **Сервис**, **Параметры**, **Текстовый редактор** (например, величина отступа, размер интервала табуляции, стиль отступа &mdash; (табуляция или пробелы) либо соглашения о написании кода, такие как использование `var`) заданы в файле EditorConfig, находящемся в структуре каталогов в папке проекта или выше, соглашения в этом файле будут переопределять значения в окне "Параметры". Управлять этим поведением можно с помощью параметра **Следовать рекомендациям по написанию кода проекта** в разделе **Сервис**, **Параметры**, **Текстовый редактор**. Если снять этот флажок, поддержка EditorConfig в Visual Studio будет отключена.
+
+!["Сервис" > "Параметры" > "Следовать рекомендациям по написанию кода проекта"](media/coding_conventions_option.png)
+
+Чтобы найти файлы EDITORCONFIG в родительских каталогах, откройте командную строку и выполните следующую команду из корня диска, на котором находится проект:
+
+```
+dir .editorconfig /s
+```
+
+Управлять областью действия соглашений EditorConfig можно с помощью свойства ```root=true``` в файле EDITORCONFIG, находящемся в корне репозитория или в каталоге, где размещается проект. Visual Studio ищет файл EDITORCONFIG в каталоге, где находится открытый файл, и во всех его родительских каталогах. Visual Studio прекращает поиск по достижении корневого пути или при нахождении файла EDITORCONFIG со свойством ```root=true```.
 
 ## <a name="support-editorconfig-for-your-language-service"></a>Поддержка EditorConfig для языковой службы
-
 В большинстве случаев при реализации языковой службы Visual Studio не требуется выполнять никаких дополнительных действий для поддержки универсальных свойств EditorConfig. Редактор кода автоматически обнаруживает и считывает файл .editorconfig, открываемый пользователем, и задает соответствующие параметры текстового буфера и просмотра. Но в некоторых языковых службах во время редактирования или форматирования текста пользователем вместо глобальных параметров для таких элементов, как знаки табуляции и пробелы, используется параметр соответствующего контекстуального текстового представления. В этих случаях языковую службу нужно обновить для поддержки файлов EditorConfig.
 
-В следующей таблице приведены изменения, необходимые для обновления языковой службы для поддержки файлов EditorConfig.
+Ниже перечислены изменения, которые необходимо внести для обеспечения поддержки файлов EditorConfig языковой службой путем замены глобального _языкового_ параметра _контекстно-зависимым_.  
 
-| Нерекомендуемый глобальный параметр, зависящий от языка | Заменяющий контекстный параметр |
-| :------------- | :------------- |
-| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs | !textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) или !textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) |
-| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize | textBufferOptions.GetOptionValue(DefaultOptions. IndentSizeOptionId) или textView.Options.GetOptionValue(DefaultOptions. IndentSizeOptionId) |
-| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize | textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId) или textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId) |
+### <a name="indent-style"></a>Стиль отступов
+Замените:  
 
-# <a name="see-also"></a>См. также
-[Создание переносимых настраиваемых параметров редактора с EditorConfig](create-portable-custom-editor-options.md)
+Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs  
+_Или_  
+Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs  
+
+На:  
+
+!textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)  
+_Или_  
+!textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)  
+
+### <a name="indent-size"></a>Размер отступа
+Замените:  
+
+Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize  
+_Или_  
+Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize  
+
+На:  
+
+textBufferOptions.GetOptionValue(DefaultOptions.IndentSizeOptionId)  
+_Или_  
+textView.Options.GetOptionValue(DefaultOptions.IndentSizeOptionId)  
+
+### <a name="tab-size"></a>Размер шага табуляции
+Замените:  
+
+Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize  
+_Или_  
+Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize  
+
+На:  
+
+textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)  
+_Или_  
+textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)  
+
+## <a name="see-also"></a>См. также
+[Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)  
+[EditorConfig.org](http://editorconfig.org/)  
+[Написание кода в редакторе](writing-code-in-the-code-and-text-editor.md)

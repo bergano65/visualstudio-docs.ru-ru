@@ -1,19 +1,17 @@
 ---
-title: "Пошаговое руководство по расширению Visual Studio для Mac"
+title: "Пошаговое руководство по расширению Visual Studio для Mac | Документы Майкрософт"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
+ms.openlocfilehash: 30571e0f83d2b54fdb5346030cc7cc4430901797
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 7d267051abbf0341b3842b24906e10e0906a0a72
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Пошаговое руководство по расширению Visual Studio для Mac
 
 Этот раздел описывает сборку [простого пакета расширения](https://github.com/mjh4/AddIns/tree/master/DateInserter). Данный пакет расширения создаст в меню правки Visual Studio для Mac новую команду, позволяющую пользователю вставлять текущую дату и время в открытый текстовый документ.
@@ -137,4 +135,3 @@ ms.lasthandoff: 08/11/2017
 15.   Наконец, давайте запустим пакет расширения, чтобы проверить его. В новом экземпляре Visual Studio для Mac выберите **Edit > Insert Date** (Правка > Вставить дату). Текущая дата и время вставляются в позиции курсора, как показано на снимке экрана ниже:
 
   ![Снимок экрана со вставкой даты](media/extending-visual-studio-mac-addin12.png)
-

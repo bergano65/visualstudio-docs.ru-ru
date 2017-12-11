@@ -1,40 +1,41 @@
 ---
-title: "Функции фрагмента кода | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "фрагменты кода [Visual Studio], функции"
-  - "фрагменты кода IntelliSense, функции"
-  - "фрагменты [Visual Studio], функции"
+title: "Функции фрагментов кода | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets [Visual Studio], functions
+- snippets [Visual Studio], functions
+- IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функции фрагмента кода
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Для использования с фрагментами кода [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] доступно три функции.  Функции указаны в элементе [Function](http://msdn.microsoft.com/ru-ru/572c5549-5821-4e15-8ecd-0fa86c1c65df) фрагмента кода.  Дополнительные сведения о создании фрагментов кода см. в разделе [Фрагменты кода](../ide/code-snippets.md).  
+# <a name="code-snippet-functions"></a>Функции фрагмента кода
+С фрагментами кода [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] можно использовать три функции. Функции указываются в элементе [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) фрагмента кода. Сведения о создании фрагментов кода см. в разделе [Фрагменты кода](../ide/code-snippets.md).  
   
-## Функции  
- В следующей таблице описаны функции, которые можно использовать с элементом `Function` во фрагментах кода.  
+## <a name="functions"></a>Функции  
+ Следующая таблица описывает функции, доступные для использования с элементом `Function` во фрагментах кода.  
   
 |Функция|Описание|Язык|  
-|-------------|--------------|----------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Генерирует оператор SWITCH и набор операторов CASE для членов перечисления, указанных параметром `EnumerationLiteral`.  Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`ClassName()`|Возвращает имя класса, содержащего вставленный код.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|Сокращает параметр *TypeName* до его простой формы в контексте, в котором был вызван фрагмент кода.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|--------------|-----------------|--------------|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## Пример  
- В следующем примере показан способ использования функции `GenerateSwitchCases`.  При вставке этого фрагмента и при вводе перечисления в литерал `$switch_on$`, литерал `$cases$` создает оператор `case` для каждого значения в перечислении.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как использовать функцию `GenerateSwitchCases`. При вставке данного фрагмента и вводе перечисления в литерал `$switch_on$` литерал `$cases$` создает оператор `case` для каждого значения в перечислении.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -74,8 +75,8 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## Пример  
- В следующем примере показан способ использования функции `ClassName`.  При вставке этого фрагмента литерал `$classname$` заменяется именем включающего класса в этом положении в файле кода.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как использовать функцию `ClassName`. При вставке этого фрагмента литерал `$classname$` заменяется именем включающего класса в этом месте файла кода.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -120,8 +121,8 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## Пример  
- В следующем примере показан способ использования функции `SimpleTypeName`.  При вставке этого фрагмента в файл кода, литерал `$SystemConsole$` будет заменен самой простой формой типа <xref:System.Console> в контексте, в котором был вызван фрагмент.  
+## <a name="example"></a>Пример  
+ Этот пример показывает, как использовать функцию `SimpleTypeName`. При вставке этого фрагмента в файл кода литерал `$SystemConsole$` заменяется простейшей формой типа <xref:System.Console> в контексте, в котором фрагмент был вызван.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -152,6 +153,6 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## См. также  
- [Function Element \(Intellisense Code Snippets\)](http://msdn.microsoft.com/ru-ru/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+## <a name="see-also"></a>См. также  
+ [Элемент Function (фрагменты кода IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)

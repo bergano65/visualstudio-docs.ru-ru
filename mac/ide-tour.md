@@ -1,19 +1,17 @@
 ---
-title: "Обзор Visual Studio для Mac"
+title: "Обзор Visual Studio для Mac | Документы Майкрософт"
 description: "Visual Studio для Mac предоставляет интегрированную среду разработки для создания приложений .NET на базе macOS, включая веб-сайты ASP.NET Core и проекты Xamarin для iOS, Android, Mac и Xamarin.Forms."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
+ms.openlocfilehash: 0f8f3ba04d4e5a8949bc57cb8cf61d470690d786
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 04f7ec6474aafedeccdbbf704486c431a4258f61
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="visual-studio-for-mac-tour"></a>Обзор Visual Studio для Mac
 
 Visual Studio для Mac превращает мобильную интегрированную среду разработки Xamarin Studio в среду разработки для Mac, ориентированную на мобильные и облачные технологии. Это средство для разработчиков позволяет использовать возможности .NET для создания приложений для всех платформ, необходимых вашим пользователям.

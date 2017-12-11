@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- cs.AdvancedBuildSettings
-helpviewer_keywords:
-- Build options [C#], advanced
+f1_keywords: cs.AdvancedBuildSettings
+helpviewer_keywords: Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b7b29ffadcb069b6c918dfbe89f0ae49d0da172a
-ms.openlocfilehash: a281313904bb8881d2e96065a024447d151cddbd
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/20/2017
-
+ms.openlocfilehash: c7df850e46f8f5d81b9127a9885128452900b84b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры компилятора" (C#)
 
@@ -46,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
  Описанные ниже параметры позволяют производить общую расширенную настройку.
 
- **Версия языка**
-. Задает используемую версию языка. Набор функций в каждой версии отличается, поэтому этот параметр позволяет заставить компилятор разрешать только часть реализованных функций либо только те функции, которые совместимы с существующим стандартом. Включает следующие значения:
+ **Версия языка**. Задает используемую версию языка. Набор функций в каждой версии отличается, поэтому этот параметр позволяет заставить компилятор разрешать только часть реализованных функций либо только те функции, которые совместимы с существующим стандартом. Включает следующие значения:
 
  - **default**
 
@@ -72,8 +53,7 @@ ms.lasthandoff: 06/20/2017
 
  Описанные ниже параметры позволяют производить расширенную настройку вывода.
 
- **Отладочная информация**
-. Определяет тип отладочной информации, создаваемой компилятором. Сведения о настройке производительности отладки для приложения см. в разделе [Упрощение отладки образов](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Включает следующие значения:
+ **Отладочная информация**. Определяет тип отладочной информации, создаваемой компилятором. Сведения о настройке производительности отладки для приложения см. в разделе [Упрощение отладки образов](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Включает следующие значения:
 
 - **none**
 
@@ -102,6 +82,4 @@ ms.lasthandoff: 06/20/2017
 
 ## <a name="see-also"></a>См. также
 
- [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index)
- [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
+ [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index) [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)

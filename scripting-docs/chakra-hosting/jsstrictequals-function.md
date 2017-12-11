@@ -1,27 +1,29 @@
 ---
-title: "Функция JsStrictEquals | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsStrictEquals"
-helpviewer_keywords: 
-  - "JsStrictEquals - функция"
+title: "Функция JsStrictEquals | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsStrictEquals
+helpviewer_keywords: JsStrictEquals function
 ms.assetid: b35bc655-7ff8-496a-b678-8950bb976047
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3d5d88bc98db3d0ec7fa8e80fd72a287ef8957e8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsStrictEquals
+# <a name="jsstrictequals-function"></a>Функция JsStrictEquals
 Сравните два значения JavaScript на строгое равенство.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsStrictEquals(  
@@ -31,7 +33,7 @@ STDAPI_(JsErrorCode) JsStrictEquals(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object1`  
  Первый из сравниваемых объектов.  
   
@@ -41,16 +43,16 @@ STDAPI_(JsErrorCode) JsStrictEquals(
  `result`  
  Указывает, являются ли значения строго равными.  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Эта функция эквивалентна оператору `===` на языке Javascript.  
   
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

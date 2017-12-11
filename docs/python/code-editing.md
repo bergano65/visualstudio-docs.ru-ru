@@ -1,28 +1,24 @@
 ---
 title: "Редактирование кода Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 7/10/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 134442008dccbeac12dd328ed3b01c2b3a1a2e8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-python-code"></a>Редактирование кода Python
 
 Разработчики много времени работают с редактором кода. Чтобы повысить эффективность этой работы, [поддержка Python в Visual Studio](installation.md) предоставляет соответствующие функции. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация. 
@@ -35,11 +31,11 @@ ms.lasthandoff: 07/18/2017
 
 Общие сведения о редактировании кода в Visual Studio см. в статье [Создание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода. Поддержка Python позволяет проверять классы, определенные в каждом модуле, и функции, определенные в этих классах, с помощью обозревателя объектов Visual Studio (**Просмотр > Другие окна > Обозреватель объектов** или клавиши CTRL+W, J). 
 
-Редактор также интегрируется с интерактивным окном в Visual Studio, упрощая обмен кодом между ними. Сведения см. в разделах [Начало работы. Использование интерактивного окна REPL])(getting-started.md#using-the-interactive-repl-window) и [Работа с интерактивным окном Python. Команда "Send code to interactive" (Отправить код в интерактивное окно)](interactive-repl.md#send-code-to-interactive-command).
+Редактор также интегрируется с интерактивным окном в Visual Studio, упрощая обмен кодом между ними. Подробные сведения см. в разделах [Учебник, шаг 3. Использование интерактивного окна REPL](vs-tutorial-01-03.md) и [Использование интерактивного окна. Команда Send code to interactive (Отправить код в интерактивное окно)](interactive-repl.md#send-code-to-interactive-command).
 
-Вводный обзор редактирования кода Python представлен в видео [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Начало работы с Python в Visual Studio, часть 3. Редактирование) длительностью 3 мин 48 с, размещенном на сайте youtube.com.
+Основные сведения о редактировании кода Python см. в видеоролике [Редактирование кода Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2 мин 30 с):
 
-> [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 
 ## <a name="intellisense"></a>IntelliSense
 
@@ -123,8 +119,7 @@ ms.lasthandoff: 07/18/2017
 
 ![Диспетчер фрагментов кода](media/code-editing-code-snippets-manager.png)
 
-Сведения о том, как создать собственные фрагменты кода, см. в статье [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md).
-Чтобы настроить фрагмент кода, [создайте его](https://msdn.microsoft.com/library/ms165394.aspx) и импортируйте с помощью диспетчера фрагментов кода. 
+Сведения о том, как создать собственные фрагменты кода, см. в статье [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). 
 
 Если вы написали качественный фрагмент кода, к которому вы хотите предоставить общий доступ, разместите его в репозитории и [сообщите нам](https://github.com/Microsoft/PTVS/issues). Возможно, мы сможем включить его в следующий выпуск Visual Studio.
 

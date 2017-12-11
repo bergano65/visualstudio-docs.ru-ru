@@ -1,52 +1,55 @@
 ---
-title: "Реализация вспомогательных интерфейсов промежуточных узлов | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Вспомогательные интерфейсы промежуточных узлов, реализация"
+title: "Реализация вспомогательных интерфейсов промежуточных узлов | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Реализация вспомогательных интерфейсов промежуточных узлов
-Интерфейс [Интерфейс IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) значительно упрощает задачу создания промежуточный узел для активной отладки, поскольку он предоставляет реализации для многих интерфейсов, необходимых для умного размещения.  
+# <a name="implementing-smart-host-helper-interfaces"></a>Реализация вспомогательных интерфейсов промежуточных узлов
+[Интерфейс IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) значительно упрощает задачу по созданию промежуточного узла для активной отладки, так как предоставляет реализации многих необходимых для этого интерфейсов.  
   
- Чтобы быть промежуточным узлом, используя `IDebugDocumentHelper`, ведущее приложение должно сделать только 3 действия:  
+ Чтобы стать промежуточным узлом, используя `IDebugDocumentHelper`, ведущему приложению нужно выполнить три действия:  
   
-1.  Диспетчер процесса `CoCreate` отладка и использует интерфейс [Интерфейс IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md) чтобы добавить приложение к списку debuggable приложений.  
+1.  Создать диспетчер отладки процессов с помощью `CoCreate` и использовать [интерфейс IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md), чтобы добавить приложение в список отлаживаемых.  
   
-2.  Создание вспомогательного метода документа отладки для каждого объекта скрипта, используя метод [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  Убедитесь, что указаны имя документа, родительский документ, текст и блоки скрипта.  
+2.  Создать вспомогательный объект документа отладки для каждого объекта скрипта с помощью метода [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md). Проверить, что документ, родительский документ, текст и блоки скриптов определены.  
   
-3.  Реализуйте интерфейс [Интерфейс IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) на объекте, что средства интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) \(который обязателен для активного скрипта\).  Единственный нестандартный метод на делегатах интерфейса `IActiveScriptSiteDebug` просто к вспомогательному приложению.  
+3.  Реализовать [интерфейс IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) для объекта, реализующего интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) (это необходимо для активных скриптов). Единственный нетривиальный метод для интерфейса `IActiveScriptSiteDebug` просто делегирует вспомогательному объекту.  
   
- При необходимости основное приложение может реализовывать интерфейс [Интерфейс IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md) если для этого требуется дополнительный элемент управления по цвету синтаксиса, облегчающие создание контекста документа, а второй расширенной функциональностью.  
+ Кроме того, узел может реализовать [интерфейс IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md), если ему нужно дополнительно контролировать цвет синтаксиса, создание контекста документа и другие расширенные функции.  
   
- Основное ограничение вспомогательном приложении промежуточного узла, что он может обрабатывать только документы, содержимое которых изменяются или уменьшена после того, как они были добавитьы \(хотя документы могут развернуть\).  Для многих промежуточных узлов, однако она предоставляет функциональность точно, что требуется.  
+ Основным ограничением вспомогательного объекта промежуточного узла является то, что он может обрабатывать только документы, содержимое которых изменилось или сжалось после их добавления (хотя документы могут и увеличиваться). Однако для многих промежуточных узлов предоставляемой функциональности совершенно достаточно.  
   
- В следующих разделах описывается каждый шаг подробно.  
+ В следующих разделах каждый из шагов описан более подробно.  
   
-## Создайте объект приложения  
- Прежде чем вспомогательный объект промежуточного узлов можно использовать, необходимо создать объект [Интерфейс IDebugApplication](../winscript/reference/idebugapplication-interface.md) для представления приложения в отладчике.  
+## <a name="create-an-application-object"></a>Создание объекта приложения  
+ Прежде чем вспомогательный объект промежуточного узла можно будет использовать, нужно создать объект [интерфейса IDebugApplication](../winscript/reference/idebugapplication-interface.md), представляющий ваше приложение в отладчике.  
   
-#### Создать объект приложения  
+#### <a name="to-create-an-application-object"></a>Создание объекта приложения  
   
-1.  Создайте экземпляр процесса с помощью `CoCreateInstance` диспетчер отладки.  
+1.  Создайте экземпляр менеджера отладки процессов с помощью `CoCreateInstance`.  
   
-2.  Вызов метода [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md).  
+2.  Вызовите [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md).  
   
-3.  Задайте имя в приложении с помощью [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md).  
+3.  Задайте имя для приложения с помощью [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md).  
   
-4.  Добавьте объект приложения в список debuggable приложений с помощью [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md).  
+4.  Добавьте объект приложения в список отлаживаемых приложений с помощью [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md).  
   
-     Код под структурами процесс, но он не включают проверку ошибок и другие техники предположительно программирования.  
+     Приведенный ниже код описывает этот процесс, однако в нем нет проверки ошибок или других методик робастного программирования.  
   
     ```  
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
@@ -58,47 +61,47 @@ caps.handback.revision: 8
     g_ppdm->AddApplication(g_pda, &g_dwAppCookie);  
     ```  
   
-## Использование IDebugDocumentHelper  
+## <a name="using-idebugdocumenthelper"></a>Использование IDebugDocumentHelper  
   
-#### Использование вспомогательного метода \(минимальная последовательность шагов\)  
+#### <a name="to-use-the-helper-minimal-sequence-of-steps"></a>Использование вспомогательного объекта (минимальная последовательность шагов)  
   
-1.  Для каждого документа узла, создание вспомогательного метода с помощью [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
+1.  Для каждого документа узла создайте вспомогательный объект с помощью [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
   
-2.  Вызовите [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) во вспомогательном приложении, задающего имя, атрибуты документа и т д  
+2.  Вызовите [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) для вспомогательного узла, задав имя, атрибуты документа и т. д.  
   
-3.  Вызовите службу [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) с родительским приложением для документа \(или значение null, если документ корневой элемент\), то для определения позиции документа в дереве и сделать его видимым в отладчике.  
+3.  Вызовите [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) с родительским вспомогательным объектом для документа (или NULL, если документ является корневым), чтобы определить положение документа в дереве и сделать его видимым для отладчика.  
   
-4.  Вызовите [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) или [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) для определения текста документа.  \(Эти можно вызывать несколько раз, если документ загрузить инкрементно, как в случае с браузерами\).  
+4.  Вызовите [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) или [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md), чтобы определить текст документа. (Их можно вызывать несколько раз, если документ загружается последовательно, как в случае с браузером.)  
   
-5.  Вызов [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) для указания диапазона для каждого блока скрипта и связанных обработчиков скриптов.  
+5.  Вызовите [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md), чтобы определить диапазоны для каждого блока скрипта и связанных обработчиков скриптов.  
   
-## Реализация IActiveScriptSiteDebug  
- Реализация [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md), получает вспомогательный объект, соответствующий заданному сайту, а затем получает начальное смещение документа для данного контекста источника следующим образом:  
+## <a name="implementing-iactivescriptsitedebug"></a>Реализация IActiveScriptSiteDebug  
+ Чтобы реализовать [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md), получите вспомогательный объект, соответствующий заданному сайту, а затем начальное смещение документа для заданного контекста источника, как показано ниже:  
   
 ```  
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
- Далее используйте вспомогательный метод для создания нового документа указанный контекст для смещения символов:  
+ После этого используйте вспомогательный объект, чтобы создать контекст документа для заданного смещения символов:  
   
 ```  
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   
- Для реализации [IActiveScriptSiteDebug::GetRootApplicationNode](../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md), просто вызовите `IDebugApplication::GetRootNode` \(унаследованном из [IRemoteDebugApplication::GetRootNode](../winscript/reference/iremotedebugapplication-getrootnode.md)\).  
+ Чтобы реализовать [IActiveScriptSiteDebug::GetRootApplicationNode](../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md), просто вызовите `IDebugApplication::GetRootNode` (унаследован от [IRemoteDebugApplication::GetRootNode](../winscript/reference/iremotedebugapplication-getrootnode.md)).  
   
- Для реализации [IDebugDocumentHelper::GetDebugApplicationNode](../winscript/reference/idebugdocumenthelper-getdebugapplicationnode.md), просто возвращать `IDebugApplication` первоначальном создан с помощью диспетчера процесс отладки.  
+ Чтобы реализовать [IDebugDocumentHelper::GetDebugApplicationNode](../winscript/reference/idebugdocumenthelper-getdebugapplicationnode.md), просто возвратите изначально созданный `IDebugApplication`, используя диспетчер отладки процессов.  
   
-## Необязательный интерфейс IDebugDocumentHost  
- Основное приложение может предоставить реализацию [Интерфейс IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md) с помощью [IDebugDocumentHelper::SetDebugDocumentHost](../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md) чтобы присвоить ей дополнительный элемент управления через службу приложением.  Ниже приведены некоторые из ключевых факторов интерфейс основного приложения позволяет сделать:  
+## <a name="the-optional-idebugdocumenthost-interface"></a>Необязательный интерфейс IDebugDocumentHost  
+ Узел может предоставлять реализацию [интерфейса IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md) с помощью [IDebugDocumentHelper::SetDebugDocumentHost](../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md), чтобы расширить возможности управления вспомогательным объектом. Ниже перечислено несколько ключевых возможностей, предоставляемых интерфейсом узла:  
   
--   Добавление текста с использованием [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md), что узлу не требуется предоставить действительные символы немедленно.  Если символы действительно необходимы, будут вызывать [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) вспомогательного приложения на узле.  
+-   Добавление текста с помощью [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md), чтобы узлу не нужно было предоставлять фактические символы немедленно. Когда эти символы действительно необходимы, вспомогательный объект вызовет [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) на узле.  
   
--   Переопределите по умолчанию расцветка синтаксиса службу, предоставляемая приложением.  Вспомогательный метод вызывает [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) для определения расцветку для диапазона символов, метод обратного западения в своей реализации по умолчанию если извлечение `E_NOTIMPL` основного приложения.  
+-   Переопределение раскраски синтаксиса по умолчанию, предоставляемой вспомогательным объектом. Вспомогательный объект вызывает [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md), чтобы определить раскраску для диапазона символов, и возвращается к своей реализации по умолчанию, если узел возвращает `E_NOTIMPL`.  
   
--   Обеспечьте управление неизвестно для контекстов документа, созданных с помощью [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md) службу приложением.  Это позволяет основному приложению переопределить возможность реализации контекста документа по умолчанию.  
+-   Предоставьте управляющее unknown для контекстов документа, созданных вспомогательным объектом посредством реализации [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md). Это позволяет узлу переопределить функциональные возможности реализации контекста документа по умолчанию.  
   
--   Введите путь в файловой системе для документа.  Некоторые при отладке использование UIs это позволить пользователю изменить и сохранить изменения в документе.  [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) Позвонитьо для уведомления основного приложения после того как документ был сохранен.  
+-   Укажите путь в файловой системе для этого документа. Некоторые пользовательские интерфейсы отладки используют это, чтобы разрешить пользователям вносить и сохранять изменения в документе. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) вызывается, чтобы уведомить узел после сохранения документа.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Обзор отладки активных скриптов](../winscript/active-script-debugging-overview.md)

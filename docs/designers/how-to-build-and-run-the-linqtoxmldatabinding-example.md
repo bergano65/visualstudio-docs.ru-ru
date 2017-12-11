@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3943deaf-80e2-4968-ac04-d3ef56cfad6c
-caps.latest.revision: 3
-author: kempb
-ms.author: kempb
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 67003cd6b5f1ee54080f1efe5c6e13f0249f7047
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a90e55a60c9451229fd767dac6a8aaa0e2a2e224
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Практическое руководство. Сборка и выполнение примера LinqToXmlDataBinding
 В этом разделе показано создание и построение проекта среды Visual Studio LinqToXmlDataBinding, а также запуск полученного в результате образца программы WPF LinqToXmlDataBinding.  
@@ -75,7 +60,7 @@ ms.lasthandoff: 02/22/2017
   
 1.  Запустите программу LinqToXmlDataBinding, нажав клавишу **F5** (**Начать отладку**) или клавиши **Ctrl+F5** (**Запуск без отладки**). Откроется окно программы с заголовком **WPF Data Binding using LINQ to XML** (Привязка данных WPF с помощью LINQ to XML).  
   
-2.  Обратите внимание на верхнюю часть пользовательского интерфейса, в котором отображается необработанный код **XML**, представляющий список книг. Он выводится с помощью элемента управления WPF <xref:System.Windows.Controls.TextBlock>, который не предусматривает взаимодействие с мышью или клавиатурой.  
+2.  Обратите внимание на верхнюю часть пользовательского интерфейса, в котором отображается необработанный код **XML**, представляющий список книг. Он выводится с помощью элемента управления WPF <xref:System.Windows.Controls.TextBlock>, не включающего взаимодействие с мышью или клавиатурой.  
   
 3.  Второй вертикальный раздел, обозначенный как **Список книг**, отображает упорядоченный список книг в виде простого текста. В нем используется элемент управления <xref:System.Windows.Controls.ListBox>, допускающий выбор с помощью мыши или клавиатуры.  
   
@@ -83,7 +68,7 @@ ms.lasthandoff: 02/22/2017
   
 1.  Чтобы удалить существующую книгу из списка, выделите ее в разделе **Список книг** и нажмите кнопку **Remove Selected Book** (Удалить выбранную книгу). Обратите внимание, что запись книги удаляется не только из списка, но и из необработанного исходного текста XML.  
   
-2.  Чтобы добавить новую книгу в список, введите значения в элементы управления типа <xref:System.Windows.Controls.TextBox> **Идентификатор** и **Значение**, расположенные в последнем разделе, **Добавление книги**, а затем нажмите кнопку **Добавить книгу**. Обратите внимание, что новая книга добавляется в конец списка и исходного текста XML. Эта программа не выполняет проверку правильности входных значений.  
+2.  Чтобы добавить новую книгу в список, введите значения в элементы управления **Идентификатор** и **Значение**<xref:System.Windows.Controls.TextBox> в последнем разделе **Добавление книги**, а затем нажмите кнопку **Добавить книгу**. Обратите внимание, что новая книга добавляется в конец списка и исходного текста XML. Эта программа не выполняет проверку правильности входных значений.  
   
 #### <a name="to-edit-an-existing-book-entry"></a>Редактирование существующей записи книги  
   

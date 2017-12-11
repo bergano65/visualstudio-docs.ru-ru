@@ -1,30 +1,30 @@
 ---
-title: "Библиография по вопросам безопасности | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "безопасность [Visual Studio], дополнительные сведения"
+title: "Библиография по вопросам безопасности | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: security [Visual Studio], additional information
 ms.assetid: 3e839007-c388-4fc4-a6d1-8127cd207750
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: c523af49bde89a67111acbb456d7848ea42521c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Библиография по вопросам безопасности
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="security-bibliography"></a>Библиография по вопросам безопасности
 Ниже представлены избранные электронные и печатные ресурсы, посвященные вопросам разработки безопасных приложений и настройки безопасных сред.  
   
-## Веб\-узлы корпорации Microsoft  
- [Центр безопасности Microsoft](http://go.microsoft.com/fwlink/?LinkId=55529)  
- Описание деятельности Microsoft в сфере защиты приложений и систем разных уровней \(от настольных до сетевых\), а также ссылки на ресурсы по вопросам безопасности для специалистов в области информационных технологий, разработчиков и домашних пользователей.  
+## <a name="microsoft-web-sites"></a>Веб-узлы корпорации Microsoft  
+ [Центр безопасности Майкрософт](http://go.microsoft.com/fwlink/?LinkId=55529)  
+ Описание деятельности Microsoft в сфере защиты приложений и систем разных уровней (от настольных до сетевых), а также ссылки на ресурсы по вопросам безопасности для специалистов в области информационных технологий, разработчиков и домашних пользователей.  
   
  [Источники информации по безопасности на сайте MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
  Ссылки на документацию для разработчиков, примеры кода, технические статьи и другие ресурсы, посвященные разработке безопасных приложений.  

@@ -1,44 +1,45 @@
 ---
-title: "Настройка шаблонов проектов и элементов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "настройка шаблонов Visual Studio"
-  - "шаблоны Visual Studio, настройка"
+title: "Настройка шаблонов проектов и элементов | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- customizing Visual Studio templates
+- Visual Studio templates, customizing
 ms.assetid: d7344a0a-d93f-4b69-bbc4-0c2d67ef272b
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3170c28527aa4ecfe335a946624ad95489b75280
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Настройка шаблонов проектов и элементов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-После создания проекта и шаблонов элементов, все еще дальше они имеют возможность настраивать для удовлетворения приложения.  
+# <a name="customizing-project-and-item-templates"></a>Настройка шаблонов проектов и элементов
+После создания шаблонов проектов и элементов вы можете дополнительно настроить их в соответствии со своими потребностями.  
   
  Например, можно выполнить следующие задачи.  
   
--   Измените и экспортировать существующий шаблон в качестве пользовательского шаблона.  
+-   Вы можете изменить и экспортировать существующий шаблон в виде пользовательского шаблона.  
   
-     Дополнительные сведения см. в разделе [Практическое руководство. Обновление существующих шаблонов](../ide/how-to-update-existing-templates.md).  
+     Дополнительные сведения см. в статье [Практическое руководство. Обновление существующих шаблонов](../ide/how-to-update-existing-templates.md).  
   
--   Передайте пользовательские параметры в шаблон для замены существующих значений.  
+-   Вы можете передать пользовательские параметры в шаблон для замены существующих значений.  
   
      Дополнительные сведения см. в разделе [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).  
   
--   Настройка мастера, которые создают проекты из шаблонов.  
+-   Вы можете настроить мастеры, создающие проекты из шаблонов.  
   
-     Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md).  
+     Дополнительные сведения см. в статье [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md).  
   
-## Связанные подразделы  
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)  
+## <a name="related-sections"></a>Связанные разделы  
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)  
   
  [Практическое руководство. Устранение неполадок, связанных с шаблонами](../ide/how-to-troubleshoot-templates.md)  
   

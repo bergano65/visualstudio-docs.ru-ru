@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 09a5ecabf88a9f15bcd84bd83ffac5730680adae
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 444f397f01995b0aeef40c9d4efabbb57d65e594
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из построения
 В файле проекта можно использовать подстановочные знаки, чтобы включить все файлы из одного каталога или набора вложенных каталогов в качестве входных данных для сборки. Однако может присутствовать один файл в каталоге или один каталог в наборе вложенных каталогов, который не требуется включать в качестве входных данных для сборки. Этот файл или каталог можно явным образом исключить из списка входных данных. Кроме того, в проекте может быть файл, который требуется включить только при определенных условиях. Можно явно объявить условия, при которых файл включается в сборку.  
@@ -142,5 +127,4 @@ ms.lasthandoff: 02/22/2017
   
 ## <a name="see-also"></a>См. также  
  [Элементы](../msbuild/msbuild-items.md)   
- [MSBuild](../msbuild/msbuild.md)
- [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](../msbuild/msbuild.md) [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md)

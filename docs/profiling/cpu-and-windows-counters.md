@@ -4,40 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.property.counters
+f1_keywords: vs.performance.property.counters
 helpviewer_keywords:
 - Windows counters in Profiling Tools
 - CPU counters in Profiling Tools
 ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 51d524bafd6e5014c1542b05d9fd3a908eca41df
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 Профилировщик Visual Studio позволяет собирать данные о производительности, которые были сформированы операционной системой (счетчиками Windows), и данные о производительности, которые были сформированы процессором (счетчиками ЦП).  
@@ -47,7 +30,7 @@ ms.lasthandoff: 02/22/2017
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. статью [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Средства производительности в приложениях Windows 8 и Windows Server 2012).  
+>  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Счетчики Windows  
  Счетчики Windows являются компонентом инфраструктуры диагностики Windows, которая позволяет получать информацию о производительности операционной системы, приложения, службы или драйвера. Счетчики Windows определяются конфигурацией текущего компьютера, некоторые счетчики могут быть недоступны на других компьютерах. Счетчики производительности Windows собираются в файлах данных профилирования как метки профилирования, которые затем могут использоваться для фильтрования представлений и отчетов.  

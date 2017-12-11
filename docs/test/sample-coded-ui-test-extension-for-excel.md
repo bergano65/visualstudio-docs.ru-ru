@@ -4,37 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- coded UI tests, extensions for Excel
+helpviewer_keywords: coded UI tests, extensions for Excel
 ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 46e8adfd4e4b66e743af8a0db5aecd3f40eb2de7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 812227cb3eee5236f05e879a240133fa4bdcd13e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Пример расширения закодированного теста пользовательского интерфейса для Excel
 Компонент расширения примера выполняется в процессе закодированного теста пользовательского интерфейса [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и в некотором смысле является иерархическим с базовым классом `ExtensionPackage`. Классы `TechnologyManager`, `ActionFilter` и `PropertyProvider` находятся на следующем уровне, а элементы управления — на верхнем уровне.  
@@ -70,4 +52,3 @@ ms.lasthandoff: 05/19/2017
  [Класс ActionFilter](../test/sample-excel-extension-actionfilter-class.md)   
  [Классы Element](../test/sample-excel-extension-element-classes.md)   
  [Класс PropertyProvider](../test/sample-excel-extension-propertyprovider-class.md)
-

@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.inheritancelinelabel
-helpviewer_keywords:
-- Class Designer [Visual Studio], classes
+f1_keywords: vs.classdesigner.inheritancelinelabel
+helpviewer_keywords: Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 02cd1cabf8cf296130ace9a3dcf37a237805dfe9
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: b4ba110a67604a24517cac90c4645f118a33e722
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Классы Visual C++ в конструкторе классов
 Конструктор классов поддерживает классы C++ и визуализирует собственные классы C++ так же, как фигуры классов Visual Basic и Visual C#. Отличие состоит в том, что классы C++ могут обладать отношениями множественного наследования. Фигуру класса можно развернуть, чтобы отобразить дополнительные поля и методы класса, а также свернуть в целях экономии места.  
@@ -69,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  Команда **Показать производные классы** в коде C++ не поддерживается. Чтобы просмотреть производные классы, перейдите в представление классов, разверните узел типа, затем разверните вложенную папку **Производные типы** и перетащите нужные типы на схему классов.  
   
- Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование (NOTINBUILD)](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) и [Несколько базовых классов](/cpp/cpp/multiple-base-classes).  
+ Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) и [Несколько базовых классов](/cpp/cpp/multiple-base-classes).  
   
 ## <a name="abstract-classes"></a>Абстрактные классы  
  Конструктор классов поддерживает абстрактные классы (также называются "абстрактными базовыми классами"). Для этих классов не создаются экземпляры, но от них могут наследоваться другие классы. Используя пример из раздела "Множественное наследование" этого документа, вы можете создавать экземпляры класса `Bird` в виде отдельных объектов, как показано ниже:  
@@ -188,6 +171,6 @@ typedef struct
  [Working with Visual C++ Code (Class Designer)](../ide/working-with-visual-cpp-code-class-designer.md)  (Работа с кодом Visual C++ (конструктор классов))  
  [Классы и структуры](/cpp/cpp/classes-and-structs-cpp)   
  [Типы анонимных классов](/cpp/cpp/anonymous-class-types)   
- [Множественное наследование (NOTINBUILD)](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Множественное наследование](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
  [Несколько базовых классов](/cpp/cpp/multiple-base-classes)   
  [Шаблоны](/cpp/cpp/templates-cpp)

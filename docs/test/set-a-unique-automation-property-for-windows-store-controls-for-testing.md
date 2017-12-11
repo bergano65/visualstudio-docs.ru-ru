@@ -1,40 +1,24 @@
 ---
-title: "Задание уникального свойства автоматизации элементов управления для Магазина Windows при тестировании | Документы Майкрософт"
+title: "Назначение уникального свойства автоматизации элементам управления универсальной платформы Windows для тестирования | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
-caps.latest.revision: 10
+caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e931c898147cb93683ae618f96eed53ae13607ea
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Задание уникального свойства автоматизации элементов управления для Магазина Windows при тестировании
-Чтобы выполнять закодированные тесты ИП для XAML-приложения Магазина Windows, необходимо настроить уникальное свойство автоматизации, определяющее каждый элемент управления.  
+# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Назначение уникального свойства автоматизации элементам управления универсальной платформы Windows для тестирования
+Чтобы выполнять закодированные тесты пользовательского интерфейса для XAML-приложения универсальной платформы Windows, необходимо настроить уникальное свойство автоматизации, определяющее каждый элемент управления.  
   
  Можно назначить уникальное свойство автоматизации на основе типа элемента управления XAML в вашем приложении. Ниже описывается, как можно назначить уникальное свойство автоматизации в следующих ситуациях.  
   
@@ -219,5 +203,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Тестирование приложений Windows UWP и приложений Магазина Windows 8.1 с помощью закодированных тестов пользовательского интерфейса](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
-
+ [Тестирование приложений Windows UWP с помощью закодированных тестов пользовательского интерфейса](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)

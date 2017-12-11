@@ -1,34 +1,31 @@
 ---
 title: "Удаленная кроссплатформенная отладка кода Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: aa667357-763f-4ce6-8e47-48f9337658a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7d5526bbcde438896f63c0f9b4f75d919d3ca457
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 2711238ccc6d90b34df748c6b59e4130c74de69b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 
 Visual Studio позволяет локально и удаленно запускать приложения Python на компьютере Windows и выполнять их отладку (см. статью [Удаленная отладка](../debugger/remote-debugging.md)). Также с помощью [библиотеки ptvsd](https://pypi.python.org/pypi/ptvsd) они могут выполнять удаленную отладку, используя другую операционную систему, другое устройство или реализацию Python, отличную от CPython.
 
 При работе c ptvsd для отлаживаемого кода Python создается сервер отладки, к которому может подключаться Visual Studio. Для такого размещения нужно внести лишь небольшое изменение в код для импорта и запуска сервера и в некоторых случаях скорректировать на удаленном компьютере настройки сети и брандмауэра, чтобы разрешить подключения TCP.
 
-Обзор удаленной отладки можно найти в видео [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Подробное рассмотрение: удаленная кроссплатформенная отладка) (размещено на youtube.com, длительность 6 мин 22 с).
+Обзор удаленной отладки можно найти в видео [Подробное рассмотрение: удаленная кроссплатформенная отладка](https://youtu.be/y1Qq7BrV6Cc) (размещено на youtube.com, длительность 6 мин 22 с), которое относится как к Visual Studio 2015, так и к Visual Studio 2017.
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
@@ -185,4 +182,3 @@ Visual Studio выведет предупреждение о возможных 
 
 > [!Warning]
 > В настоящее время Visual Studio 2017 зависает при пропуске этих предупреждений. Необходимо устранить все проблемы перед попыткой соединения.
-

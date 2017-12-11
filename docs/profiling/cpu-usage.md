@@ -4,41 +4,24 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: fe80e2ab5816a22e956e2e5ad12a6ceee988df4b
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: fc00b770461862a0e577b4ffbe20710227e3b711
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-cpu-usage"></a>Анализ использования ЦП
 Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Использование ЦП** показывает, где ЦП тратит время при выполнении кода Visual C++, Visual C#/Visual Basic и JavaScript. Начиная с версии Visual Studio 2015 с обновлением 1 можно просматривать разбивку загрузки ЦП по функциям, не выходя из отладчика. Во время отладки можно включать и выключать профилирование ЦП и просматривать результаты при остановке выполнения, например в точке останова.  
   
-Существует несколько вариантов запуска сеанса диагностики и управления им. Например, средство **Загрузка ЦП** можно запустить на локальном и удаленном компьютерах, в имитаторе или эмуляторе. Можно анализировать производительность открытого в Visual Studio проекта, присоединившись к выполняемому приложению, либо запустить приложение, которое устанавливается из Магазина Windows. См. статью [Running Profiling Tools with or without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Выполнение средств профилирования с отладчиком и без него). Пошаговое руководство по анализу производительности приложения Магазина Windows, см. в статье [Анализ загрузки ЦП в универсальных приложениях Windows (UWP)](analyze-cpu-usage-in-a-windows-universal-app.md). 
+Существует несколько вариантов запуска сеанса диагностики и управления им. Например, средство **Загрузка ЦП** можно запустить на локальном и удаленном компьютерах, в имитаторе или эмуляторе. Можно анализировать производительность открытого в Visual Studio проекта, присоединившись к выполняемому приложению, либо запустить приложение, которое устанавливается из Microsoft Store. См. статью [Running Profiling Tools with or without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Выполнение средств профилирования с отладчиком и без него). Пошаговое руководство по анализу производительности для приложения универсальной платформы Windows см. в статье [Анализ загрузки ЦП в универсальных приложениях Windows (UWP)](analyze-cpu-usage-in-a-windows-universal-app.md). 
 
 Здесь мы покажем, как собирать и анализировать данные использования ЦП в окончательных сборках. Сведения об анализе данных использования ЦП при отладке см. в статьях [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md). 
   
@@ -128,4 +111,3 @@ ms.lasthandoff: 09/06/2017
 -   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` показывает время ЦП, затраченное на планирование и запуск 48 задач, которые являются оболочкой вызова `GetNumberAsync`.  
   
 -   `MainPage::<GetNumberAsync>b__b` показывает время ЦП, затраченное на выполнение задач, которые вызывают `GetNumber`.
-

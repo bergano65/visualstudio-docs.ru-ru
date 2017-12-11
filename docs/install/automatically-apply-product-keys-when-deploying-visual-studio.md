@@ -4,20 +4,18 @@ ms.custom:
 ms.date: 08/14/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 4c50384f734f4162fa1cf482c563ed35a6622adb
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 1ebf97930f115795139c9e748df7e03523088a21
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Автоматическое применение ключей продуктов при развертывании Visual Studio
 Ключ продукта можно применить программным способом в составе сценария, используемого для автоматизации развертывания Visual Studio. Ключи продуктов могут быть заданы на устройстве программно во время установки Visual Studio или после ее завершения.
@@ -60,7 +58,15 @@ ms.lasthandoff: 09/26/2017
 | `PID_ACTION_FAILURE`      | 5    |
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Ниже приведены несколько дополнительных вариантов:
+* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
+* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
+
 ## <a name="see-also"></a>См. также
  * [Установка Visual Studio](../install/install-visual-studio.md)
  * [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)
-

@@ -1,63 +1,63 @@
 ---
-title: "/Run (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/r - параметр Devenv"
-  - "/run - Devenv"
-  - "приложения [Visual Studio], выполнение"
-  - "Devenv, run - параметр"
-  - "r - параметр Devenv (/r)"
-  - "run - параметр Devenv"
+title: "-Run (devenv.exe) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- /run Devenv
+- run Devenv switch
+- applications [Visual Studio], running
+- /r Devenv switch
+- Devenv, /run switch
+- r Devenv switch (/r)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5be97e75ac7dc29a6dd0244293259bcd17591233
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# /Run (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Компилирует и выполняет указанный проект или решение.  
+# <a name="run-devenvexe"></a>/Run (devenv.exe)
+Компилирует и запускает указанный проект или указанное решение.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 devenv {/run|/r} {SolutionName|ProjectName}  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `SolutionName`  
- Обязательный.  Полный путь и имя файла решения.  
+ Обязательный. Полный путь и имя для файла решения.  
   
  `ProjectName`  
- Обязательный.  Полный путь и имя файла проекта.  
+ Обязательный. Полный путь и имя для файла проекта.  
   
-## Заметки  
- Компилирует и выполняет заданный проект или заданное решение в соответствии с параметрами, определенными для активной конфигурации решения.  С помощью этого переключателя запускается интегрированная среда разработки \(IDE\), которая остается активной после завершения выполнения проекта или решения.  
+## <a name="remarks"></a>Примечания  
+ Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр запускает интегрированную среду разработки (IDE), которая остается активной после завершения выполнения проекта или решения.  
   
--   Строки, содержащие пробелы, должны заключаться в двойные кавычки.  
+-   Строки с пробелами заключаются в двойные кавычки.  
   
--   Сводные данные, включая ошибки, могут отображаться в окне **Командная строка** или любом другом системном журнале, заданном переключателем `/out`.  
+-   Сводные данные, включая ошибки, могут отображаться в окне **Команда** или в любом файле журнала, указанном с помощью параметра `/out`.  
   
-## Пример  
- В этом примере выполняется решение `MySolution` с использованием активной конфигурации развертывания.  
+## <a name="example"></a>Пример  
+ Этот пример запускает решение `MySolution`, используя активную конфигурацию развертывания.  
   
 ```  
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [\/Runexit](../../ide/reference/runexit-devenv-exe.md)   
- [\/Build](../../ide/reference/build-devenv-exe.md)   
- [\/Rebuild](../../ide/reference/rebuild-devenv-exe.md)   
- [\/Out](../../ide/reference/out-devenv-exe.md)
+ [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)   
+ [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
+ [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
+ [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

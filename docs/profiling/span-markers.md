@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.markers.span
+f1_keywords: vs.cv.markers.span
 ms.assetid: 736b7765-9c71-44d7-85e5-79787d13d91c
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e476a1d0f3af8a0a0c9b9159d710fc7c5680a00d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 74919ddaa31bc7857a7bb9c30264830757f336b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="span-markers"></a>Маркеры диапазонов
 Маркер диапазона представляет содержательный этап приложения. Например, можно использовать диапазон для представления временного интервала, в течение которого обрабатывается определенный рабочий элемент. Его длина представляет длительность соответствующего этапа приложения. На этой иллюстрации показан диапазон в визуализаторе параллелизма:  
@@ -46,13 +28,13 @@ ms.lasthandoff: 05/13/2017
 ## <a name="span-category"></a>Категория диапазона  
  Маркер диапазона отображается одним из пяти различных цветов в зависимости от его категории. Цвета используются повторно, если отображается более пяти категорий. Категория может быть любым целым числом. На этом рисунке показано пять возможных цветов:  
   
- ![Пять диапазонов в различных категориях](~/profiling/media/cvmarkerspancategory.png "CVMarkerSpanCategory")  
+ ![Пять диапазонов в различных категориях](../profiling/media/cvmarkerspancategory.png "CVMarkerSpanCategory")  
 Цвета первых пяти категорий диапазонов  
   
 ## <a name="span-aggregation-markers"></a>Маркеры объединенных диапазонов  
  Иногда несколько маркеров диапазонов в визуализаторе параллелизма находятся настолько близко друг к другу, что они не могут быть показаны отдельно. Когда это происходит, отображается серый *маркер объединенных диапазонов*, который представляет базовые диапазоны. Когда вы наводите указатель на один из этих значков, выводится подсказка о количестве представленных базовых диапазонов. Для просмотра диапазонов увеличьте масштаб. Если вы максимально увеличили масштаб и все равно получаете маркер объединения, то базовые маркеры диапазонов можно просмотреть в [отчете по маркерам](../profiling/markers-report.md). На рисунке ниже показан маркер объединенных диапазонов.  
   
- ![Маркер объединенных диапазонов в визуализаторе параллелизма](~/profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
+ ![Маркер объединенных диапазонов в визуализаторе параллелизма](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 Маркер объединенных диапазонов  
   
 ## <a name="see-also"></a>См. также  

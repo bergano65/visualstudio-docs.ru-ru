@@ -4,45 +4,28 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
-Возможности расширенной безопасности, появившиеся в Windows 8 и Windows Server 2012, требовали значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. Этот раздел описывает изменения средств производительности, начиная с платформ Windows 8 и Windows Server 2012.
+Возможности расширенной безопасности, появившиеся в Windows 8 и Windows Server 2012, требовали значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. Этот раздел описывает изменения средств производительности, начиная с платформ Windows 8 и Windows Server 2012.
   
 > [!NOTE]
 >  Средства производительности в других поддерживаемых версиях Windows (Windows 7, Windows Server 2008 R2) не изменились.
   
 ##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
- [Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+ [Сбор данных в приложениях универсальной платформы Windows из интегрированной среды разработки Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, из интегрированной среды разработки Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -52,10 +35,10 @@ ms.lasthandoff: 06/21/2017
   
  [Сбора данных уровневого взаимодействия (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio  
- При профилировании приложения для Магазина Windows, написанного на языке JavaScript и HTML 5, собираются данные инструментирования для кода javascript. При профилировании приложения для Магазина Windows или компонента, написанного на Visual C++, Visual C# или Visual Basic, собираются данные выборки для машинного и управляемого кода. Вы можете профилировать приложение локально или на удаленном компьютере.  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях универсальной платформы Windows из интегрированной среды разработки Visual Studio  
+ При профилировании приложения универсальной платформы Windows, написанного на JavaScript и HTML 5, собираются данные инструментирования для кода JavaScript. При профилировании приложения или компонента универсальной платформы Windows, написанного на Visual C++, Visual C# или Visual Basic, собираются данные выборки для машинного и управляемого кода. Вы можете профилировать приложение локально или на удаленном компьютере.  
   
- Эти функции и параметры профилирования не поддерживаются при профилировании приложений для Магазина Windows:  
+ Эти функции и параметры профилирования не поддерживаются при профилировании приложений универсальной платформы Windows:  
   
 -   Профилирование приложений JavaScript с помощью метода выборки.  
   
@@ -71,21 +54,21 @@ ms.lasthandoff: 06/21/2017
   
 -   Параметры инструментирования, такие как сбор данных производительности и счетчиков Windows, или указание дополнительных параметров командной строки.  
   
- Дополнительные сведения о профилировании приложений для Магазина Windows см. в следующих разделах.  
+ Дополнительные сведения о профилировании приложений универсальной платформы Windows см. в следующих разделах.  
   
- [Запуск приложений для Магазина Windows на локальном компьютере](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [Запуск приложений UWP на локальном компьютере](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Запуск приложений Магазина Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [Запуск приложений UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [Средства профилирования](profiling-tools.md)  
   
 -   [Память JavaScript](../profiling/javascript-memory.md)
   
--   [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на локальном компьютере](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+-   [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows на локальном компьютере](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на удаленном устройстве](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+-   [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows на удаленном устройстве](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Анализ данных о производительности кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+-   [Анализ данных по производительности кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
@@ -106,7 +89,7 @@ ms.lasthandoff: 06/21/2017
   
 |Имя программы|Описание|  
 |---------------|-----------------|  
-|[VSPerf](../profiling/vsperf.md)|Сбор данных профилирования из приложений Магазина Windows и сбор примерных данных профилирования из приложений Windows 8 для настольных систем и приложений Windows Server 2012.|  
+|[VSPerf](../profiling/vsperf.md)|Сбор данных профилирования из приложений универсальной платформы Windows и сбор данных профилирования методом выборки из классических приложений Windows 8 и приложений Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Сбор данных профилирования инструментирования, параллелизма и уровневого взаимодействия из приложений, которые выполняются на рабочем столе Windows 8 или Windows Server 2012. Сбор всех типов данных профилирования из предыдущих версий Windows.|  
   
  Обе программы устанавливаются с помощью Visual Studio для использования на локальном компьютере.  
@@ -139,7 +122,7 @@ ms.lasthandoff: 06/21/2017
   
 1.  Чтобы собрать данные об уровневом взаимодействии из приложений, выполняющихся на рабочем столе Windows 8 или Windows Server 2012, необходимо использовать метод инструментирования.  
   
-2.  Вы не можете собрать данные об уровневом взаимодействии для приложений для Магазина Windows.  
+2.  Вы не можете собрать данные о взаимодействии уровней для приложений универсальной платформы Windows.  
   
 3.  Данные об уровневом взаимодействии можно включить во все методы профилирования на других поддерживаемых версиях Windows.  
   

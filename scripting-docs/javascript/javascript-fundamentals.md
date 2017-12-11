@@ -1,79 +1,81 @@
 ---
-title: "Основы JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JavaScript, основы"
+title: "Основы JavaScript | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: JavaScript, fundamentals
 ms.assetid: 0441e1e5-34e4-4d32-b188-f7fc35613478
-caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 01eb433680881975adc3ca05d6ce7a9ed9222bca
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Основы JavaScript
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] — это интерпретируемый объектный скриптовый язык.  
+# <a name="javascript-fundamentals"></a>Основы JavaScript
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]— это интерпретируемый объектно-ориентированный скриптовый язык.  
   
- В языке [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] используется синтаксис, аналогичный синтаксису языка C; он поддерживает структурированные конструкции, такие как `if...else`, `for` и `do...while`.  Фигурные скобки \({}\) используются для ограничения блоков операторов.  Язык поддерживает различные типы данных, включая `String`, `Number`, `Boolean`, `Object` и `Array`.  Также поддерживаются расширенные функции работы с датами, тригонометрические функции и регулярные выражения.  
+ Язык [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] использует синтаксис, похожий на C, и поддерживает структурированные конструкции, такие как `if...else`, `for` и `do...while`. Для разделения блоков операторов используются фигурные скобки ({}). Этот язык поддерживает различные типы данных, включая `String`, `Number`, `Boolean`, `Object` и `Array`. Он поддерживает улучшенные функции даты, тригонометрические функции и регулярные выражения.  
   
- Вместо классов в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] используются прототипы.  Определить объект можно путем создания функции конструктора.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] использует прототипы вместо классов. Объект можно определить, создав функцию конструктора.  
   
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] является слабо типизированным языком, что означает, что типы данных переменных не объявляются явно.  Во многих случаях [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] выполняет преобразования автоматически, когда они необходимы.  Например, при добавлении числа к элементу, состоящему из текста \(строка\), число преобразуется в текст.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] является слабо типизированным языком. Это означает, что вы не объявляете типы данных переменных явно. Во многих случаях [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] выполняет преобразования автоматически, когда они необходимы. Например, если добавить номер в элемент, который состоит из текста (строка), число преобразуется в текст.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Написание кода JavaScript](../javascript/writing-javascript-code.md)  
- Описание организации элементов внутри кода [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+ Описывает организацию элементов в коде [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Переменные JavaScript](../javascript/variables-javascript.md)  
- Описание концепции переменных в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+ Поясняет понятие переменных в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Типы данных](../javascript/data-types-javascript.md)  
- Перечисляет типы данных в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] с пояснением назначения каждого типа.  
+ Перечисляет типы данных в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] и описывает назначение каждого типа.  
   
  [Операторы](../javascript/operators-javascript.md)  
- Перечень операторов со ссылками на сведения о каждом операторе.  
+ Список операторов со ссылками на сведения о каждом из них.  
   
  [Приоритет операторов](../javascript/operator-subtractprecedence-javascript.md)  
- Описание правил, определяющих порядок выполнения операций при вычислении выражения.  
+ Поясняет правила, определяющие порядок выполнения операций при вычислении выражения.  
   
- [Управление выполнением программ](../javascript/controlling-program-flow-javascript.md)  
- Описание условных операторов и циклов в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+ [Управление выполнением программы](../javascript/controlling-program-flow-javascript.md)  
+ Поясняет условные операторы и циклы в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Функции](../javascript/functions-javascript.md)  
- Описание встроенных функций и порядка создания новых функций.  
+ Описывает встроенные функции и поясняет, как создавать функции.  
   
  [Объекты](../javascript/objects-and-arrays-javascript.md)  
- Описание концепции объектов в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+ Поясняет понятие объектов в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Встроенные объекты](../javascript/intrinsic-objects-javascript.md)  
- Перечень объектов, по умолчанию имеющихся в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], с пояснением назначения каждого объекта.  
+ Содержит список объектов, которые являются частью [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] по умолчанию, и поясняет назначение каждого из них.  
   
  [Создание собственных объектов](../javascript/creating-objects-javascript.md)  
- Описание порядка создания объекта путем определения функции конструктора.  
+ Поясняет, как создать объект, определив функцию конструктора.  
   
- [Вычисления с датами и временем](../javascript/calculating-dates-and-times-javascript.md)  
- Описание выполнения общих задач календаря и часов, таких как изменение и сравнение дат и вычисление затраченного времени.  
+ [Вычисления даты и времени](../javascript/calculating-dates-and-times-javascript.md)  
+ Описывает, как выполнять общие задачи, связанные с календарем и часами, например для обработки и сравнения дат, а также вычисления затраченного времени.  
   
  [Строки даты и времени](../javascript/date-and-time-strings-javascript.md)  
- Объясняет, как форматировать строки даты и времени.  
+ Описывает формат строк даты и времени.  
   
- [Отображение текста на веб\-странице](../javascript/displaying-text-in-a-webpage-javascript.md)  
- Описание различных способов отображение текста.  
+ [Отображение текста на веб-странице](../javascript/displaying-text-in-a-webpage-javascript.md)  
+ Описываются различные способы отображения текста.  
   
-## Связанные подразделы  
+## <a name="related-sections"></a>Связанные разделы  
  [Расширенный язык JavaScript](../javascript/advanced/advanced-javascript.md)  
- Описание расширенных функциональных возможностей [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], таких как рекурсия, массивы, устранение неполадок и т. д.  
+ Описывает дополнительные функции [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], такие как рекурсия, массивы, устранение неполадок и т. д.  
   
  [Справочник по языку JavaScript](../javascript/reference/javascript-reference.md)  
- Описание элементов, составляющих язык [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].
+ Описывает элементы, из которых состоит язык [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].

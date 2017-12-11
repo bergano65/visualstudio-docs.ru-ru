@@ -11,17 +11,17 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a5ed96f71b928cdfd3845a81830adaa8de65c054
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a064d56a0be2acf6000a9e7da770cb9b25d3b65f
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 Модульные тесты зачастую отражают структуру тестируемого кода. Например, отдельный проект модульного теста может быть создан для каждого проекта в продукте. Тестовый проект может находиться в том же решении, что и рабочий код, или в отдельном решении. В решении может быть несколько проектов модульных тестов.  
   
 > [!NOTE]
->  Расположение модульных тестов для машинного кода и структура тестового проекта могут отличаться от структуры, описанной в этом разделе. Дополнительные сведения см. в разделе [Добавление модульных тестов в существующие приложения C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
+>  Расположение модульных тестов для машинного кода и структура тестового проекта могут отличаться от структуры, описанной в этом разделе. Дополнительные сведения см. в разделе [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md).  
   
 ## <a name="to-create-a-unit-test-project"></a>Создание проекта модульного теста  
   
@@ -48,7 +48,7 @@ ms.lasthandoff: 10/27/2017
   
 -   [Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+-   [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)  
   
  **Выполнение модульных тестов**  
   

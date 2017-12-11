@@ -4,40 +4,22 @@ ms.custom:
 ms.date: 2015-10-05
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.UnitTest.CreateIntelliTest
+f1_keywords: vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c1c9f7dc62fab9de6bc32c80138c3fadbb036200
-ms.openlocfilehash: 79f4da148658c950957636fd050b5e83947f04b7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 533e1938e83a7d4dccc3be4d8847967ee7c91f6f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
-IntelliTest изучает код .NET, чтобы создать тестовые данные и набор модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Анализ случая выполняется для каждой условной ветви в коде. Например, анализируются операторы if, утверждения и все операции, которые могут вызывать исключения. Этот анализ используется в целях создания данных теста для параметризованного модульного теста для каждого из методов, создающих модульные тесты с высоким покрытием кода.  
+IntelliTest изучает код .NET, чтобы создать тестовые данные и набор модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Анализ случая выполняется для каждой условной ветви в коде. Например, анализируются операторы `if`, утверждения и все операции, которые могут вызывать исключения. Этот анализ используется в целях создания данных теста для параметризованного модульного теста для каждого из методов, создающих модульные тесты с высоким покрытием кода.  
   
  При запуске IntelliTest легко увидеть, какие тесты завершились сбоем, и добавить код для их исправления. Вы можете выбрать, какие созданные тесты следует сохранить в тестовый проект, чтобы предоставить набор регрессий. Изменив код, необходимо перезапустить IntelliTest, чтобы синхронизировать созданные тесты с изменениями в коде.  
 
@@ -60,7 +42,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
 2.  Щелкните правой кнопкой мыши метод в коде и выберите пункт **Запустить IntelliTest** , чтобы создать модульные тесты для кода в используемом методе.  
   
-     ![Щелкните правой кнопкой мыши поле в методе, чтобы создать модульные тесты](~/test/media/runpex.png "RunPEX")  
+     ![Щелкните правой кнопкой мыши поле в методе, чтобы создать модульные тесты](../test/media/runpex.png "RunPEX")  
   
      IntelliTest выполняет код несколько раз с разными вводными данными. Каждое выполнение представлено в таблице с входными данными теста и выходными результатами или исключением.  
   
@@ -92,7 +74,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
      Просмотрите предупреждения, чтобы решить, что следует сделать.  
   
-     ![Просмотр предупреждений](~/test/media/pexviewwarning.png "PEXViewWarning")  
+     ![Просмотр предупреждений](../test/media/pexviewwarning.png "PEXViewWarning")  
   
 2.  После изучения кода и выбора цели тестирования можно исправить предупреждение, чтобы выбрать классы для тестирования интерфейса.  
   
@@ -154,7 +136,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
  Примите формат по умолчанию для формирования тестов или измените способ именования вашего проекта и тестов. Вы можете создать новый тестовый проект или сохранить тесты в существующем проекте.  
   
- ![Создание IntelliTest с MSTest по умолчанию](~/test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
+ ![Создание IntelliTest с MSTest по умолчанию](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
 
 <a name="extend-framework"></a>  
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>В. Можно ли использовать другие платформы модульного тестирования с IntelliTest?  
@@ -176,4 +158,3 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос. Можно получить более подробную информацию о создании тестов?  
 
 **О** . Да, общий обзор приведен в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
-

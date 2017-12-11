@@ -1,57 +1,57 @@
 ---
-title: "Задача SignFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#SignFile"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, SignFile - задача"
-  - "SignFile - задача [MSBuild]"
+title: "Задача SignFile | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#SignFile
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, SignFile task
+- SignFile task [MSBuild]
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
-caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: f2e09933d8e1bcfc8e29712a78fe3b2454e42117
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Задача SignFile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="signfile-task"></a>Задача SignFile
 Подписывает указанный файл с помощью заданного сертификата.  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `SignFile`.  
   
- Обратите внимание, что сертификаты SHA\-256 разрешены только на компьютерах с .NET 4.5 или более поздней версией.  
+ Обратите внимание, что сертификаты SHA-256 разрешены только на компьютерах с .NET 4.5 или более поздней версией.  
   
 > [!WARNING]
->  Начиная с Visual Studio 2013 с обновлением 3, для этой задачи используется новая подпись, которая позволяет указывать версию целевой платформы для файла.  Новую подпись рекомендуется использовать там, где это возможно, поскольку процесс MSBuild работает с хэшами SHA\-256 только в том случае, если поддерживается целевая платформа .NET 4.5 или более поздней версии.  Если версия целевой платформы .NET 4.0 или ниже, хэш SHA\-256 использоваться не будет.  
+>  Начиная с Visual Studio 2013 с обновлением 3, для этой задачи используется новая подпись, которая позволяет указывать версию целевой платформы для файла. Новую подпись рекомендуется использовать там, где это возможно, поскольку процесс MSBuild работает с хэшами SHA-256 только в том случае, если поддерживается целевая платформа .NET 4.5 или более поздней версии. Если версия целевой платформы .NET 4.0 или ниже, хэш SHA-256 использоваться не будет.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`CertificateThumbprint`|Обязательный параметр `String`.<br /><br /> Задает сертификат, который будет использоваться для подписи.  Этот сертификат должен находиться в личном хранилище текущего пользователя.|  
+|---------------|-----------------|  
+|`CertificateThumbprint`|Обязательный параметр `String`.<br /><br /> Задает сертификат, который будет использоваться для подписи. Этот сертификат должен находиться в личном хранилище текущего пользователя.|  
 |`SigningTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает файлы, который будут подписаны с помощью сертификата.|  
-|`TimestampUrl`|Необязательный параметр `String`.<br /><br /> Задает URL\-адрес сервера отметок времени.|  
+|`TimestampUrl`|Необязательный параметр `String`.<br /><br /> Задает URL-адрес сервера отметок времени.|  
 |`TargetFrameworkVersion`|Версия платформы .NET Framework, используемой для целевого объекта.|  
   
-## Заметки  
- Помимо перечисленных выше параметров эта задача наследует параметры от класса <xref:Microsoft.Build.Utilities.Task>.  Список этих дополнительных параметров и их описания см. в разделе [Базовый класс Task](../msbuild/task-base-class.md).  
+## <a name="remarks"></a>Примечания  
+ Помимо перечисленных выше параметров эта задача наследует параметры от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Task Base Class](../msbuild/task-base-class.md) (Базовый класс Task).  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере используется задача `SignFile` для подписания файлов, указанных в коллекции элементов `FilesToSign`, с помощью сертификата, заданного свойством `Certificate`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemGroup>  
         <FileToSign Include="File.exe" />  
@@ -69,12 +69,12 @@ caps.handback.revision: 19
 ```  
   
 > [!NOTE]
->  Отпечатком сертификата является хэш SHA\-1 сертификата.  Дополнительные сведения см. в разделе [Получение хэша SHA\-1 сертификата доверенного корневого ЦС](http://msdn.microsoft.com/ru-ru/dd641990-9a88-4228-a245-017797131a87).  
+>  Отпечатком сертификата является хэш SHA-1 сертификата. Дополнительные сведения см. в разделе [Получение хэша SHA-1 сертификата доверенного корневого ЦС](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).  
   
-## Пример  
- В следующем примере используется задача `Exec` для подписания файлов, указанных в коллекции элементов `FilesToSign`, с помощью сертификата, заданного свойством `Certificate`.  Этот пример можно использовать для подписи файлов установщика Windows во время процесса построения.  
+## <a name="example"></a>Пример  
+ В следующем примере используется задача `Exec` для подписания файлов, указанных в коллекции элементов `FilesToSign`, с помощью сертификата, заданного свойством `Certificate`. Этот пример можно использовать для подписи файлов установщика Windows во время процесса построения.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemGroup>  
         <FileToSign Include="File.msi" />  
@@ -92,6 +92,6 @@ caps.handback.revision: 19
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

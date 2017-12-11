@@ -5,8 +5,7 @@ ms.custom:
 ms.date: 05/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,27 +16,11 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
-ms.openlocfilehash: 220b41f44cdc91ea84bf08b8eec8181dc01c25c7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/15/2017
-
+ms.openlocfilehash: 5d0f3e97f403bb7af144fad9e97afc932cdc6e83
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Руководство администратора Visual Studio 2017
 
@@ -72,13 +55,16 @@ ms.lasthandoff: 05/15/2017
 > [!TIP]
 > В дополнение к документации в руководстве администратора, хорошим источником информации по установке Visual Studio 2017 будет [блог Хита Стюарта (Heath Stewart)](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
 
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Кроме того, вы можете сообщить о проблемах при использовании продукта в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio IDE или платформу [UserVoice](https://visualstudio.uservoice.com/forums/121579). Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы. Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio) (требуется учетная запись [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>См. также
 * [Установка Visual Studio 2017](install-visual-studio.md)
 * [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
   * [Примеры параметров командной строки](command-line-parameter-examples.md)
   * [Сведения об идентификаторах рабочих нагрузок и компонентов](workload-and-component-ids.md)
 * [Создание сетевой установки Visual Studio](create-a-network-installation-of-visual-studio.md)
-  * [Особые рекомендации по установке Visual Studio в автономной среде](install-visual-studio-in-offline-environment.md)
+  * [Установка сертификатов, необходимых для установки Visual Studio в автономном режиме](install-certificates-for-visual-studio-offline.md)
 * [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)
 * [Автоматическое применение ключей продуктов при развертывании Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
 * [Настройка параметров по умолчанию для корпоративного развертывания Visual Studio](set-defaults-for-enterprise-deployments.md)
@@ -86,5 +72,3 @@ ms.lasthandoff: 05/15/2017
 * [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Управление обновлением развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)
-* [Сообщение о проблеме с помощью Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

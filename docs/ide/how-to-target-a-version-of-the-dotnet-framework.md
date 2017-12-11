@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
 ms.assetid: dea62d25-3d1b-492e-a6cc-b5154489800a
-caps.latest.revision: 50
-author: kempb
-ms.author: kempb
+caps.latest.revision: "50"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: eea7cb983f264fb58a4b1131f84f3ec1cb196be5
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 67145a9aaaf4c01b02bc1cc6db89e375639b4fcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Определение целевой версии .NET Framework
-<a id="how-to-target-a-version-of-the-net-framework" class="xliff"></a>
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Практическое руководство. Определение целевой версии .NET Framework
 В этом документе описано, как выбрать целевую версию .NET Framework при создании проекта и как изменить целевую версию для существующего проекта Visual Basic, Visual C# или Visual F#.  
   
 > [!IMPORTANT]
@@ -56,8 +39,7 @@ ms.lasthandoff: 05/30/2017
 > [!NOTE]
 >  В выпусках Visual Studio Express необходимо сначала создать проект, после чего можно будет изменить целевую версию, как описано ниже в разделе [Изменение целевой версии](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing).  
   
-#### Выбор целевой версии при создании проекта
-<a id="to-target-a-version-when-you-create-a-project" class="xliff"></a>  
+#### <a name="to-target-a-version-when-you-create-a-project"></a>Выбор целевой версии при создании проекта  
   
 1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
@@ -73,12 +55,11 @@ ms.lasthandoff: 05/30/2017
 ##  <a name="bkmk_existing"></a> Изменение целевой версии  
  Целевую версию .NET Framework в проекте Visual Basic, Visual C# или Visual F# можно изменить, воспользовавшись следующей процедурой.  
   
-#### Изменение целевой версии
-<a id="to-change-the-targeted-version" class="xliff"></a>  
+#### <a name="to-change-the-targeted-version"></a>Изменение целевой версии  
   
 1.  В **обозревателе решений** откройте контекстное меню проекта, для которого требуется изменить целевую платформу, и выберите пункт **Свойства**.  
   
-     ![Свойства проводника Visual Studio](~/ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
+     ![Свойства проводника Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
     >  Сведения об изменении целевой версии для проектов C++ см. в разделе [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).  
@@ -88,7 +69,7 @@ ms.lasthandoff: 05/30/2017
      ![Вкладка "Приложение" в разделе "Свойства приложений" Visual Studio](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")  
   
     > [!NOTE]
-    >  После создания приложения Магазина Windows невозможно изменить целевую версию Windows или .NET Framework.  
+    >  После создания приложения UWP невозможно изменить целевую версию Windows или .NET Framework.  
   
 3.  В списке **Целевая рабочая среда** выберите требуемую версию.  
   
@@ -99,8 +80,7 @@ ms.lasthandoff: 05/30/2017
     > [!NOTE]
     >  Если код содержит ссылки на другую версию .NET Framework, отличную от целевой, при компиляции и запуске кода могут появиться сообщения об ошибках. Для устранения этих ошибок необходимо изменить ссылки. См. раздел [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Обзор настройки для различных версий в Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
  [Настройка веб-проектов ASP.NET для различных версий .NET Framework](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   

@@ -4,36 +4,19 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 254f2d9121566ef14c5470c3d940e4f781a0f5e2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 32d6ac2581f71196d1f1d826d8f1024906b7cab9
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Анализ потребления ресурсов и активности потоков пользовательского интерфейса (XAML)
 Используйте профилировщик **Временная шкала приложения** , чтобы найти и исправить проблемы производительности в работе приложений XAML, связанные с взаимодействием. Это средство помогает улучшить производительность приложений XAML, предоставляя подробные сведения об использовании ресурсов приложений. Вы можете проанализировать время, затраченное приложением на подготовку кадров пользовательского интерфейса (макет и обработка), обработку запросов от сети и дисков, а также на такие сценарии, как запуск приложения, загрузка страницы и изменение размера окон.  
@@ -46,7 +29,7 @@ ms.lasthandoff: 06/30/2017
   
 1.  универсальные приложения для Windows (на Windows 10);  
   
-2.  Магазин Windows 8.1;  
+2.  Windows 8.1  
   
 3.  Windows Phone 8.1 (обычная платформа XAML);  
   
@@ -138,5 +121,7 @@ ms.lasthandoff: 06/30/2017
   
 ## <a name="see-also"></a>См. также  
  [Блог группы разработчиков WPF. Новое средство анализа производительности пользовательского интерфейса для приложений WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
- [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Улучшение производительности приложений WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Рекомендации по повышению производительности для приложений универсальной платформы Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [Улучшение производительности приложений WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
+ [Профилирование в Visual Studio](../profiling/index.md)  
+ [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

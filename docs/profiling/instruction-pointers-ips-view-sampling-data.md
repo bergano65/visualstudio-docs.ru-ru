@@ -1,46 +1,29 @@
 ---
-title: "Представление &quot;Указатели инструкций&quot; — данные выборки | Документы Майкрософт"
+title: "Представление \"Указатели инструкций\" — данные выборки | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Instruction Pointers view
+helpviewer_keywords: Instruction Pointers view
 ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 86a1e2fd1f25926eb8e6864d7b5174b192c4f5c9
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b328a12e2b82f6aa688180d9ac57066552e808c9
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Представление "Указатели инструкций" — данные выборки
 В представлении "Указатели инструкций" данных выборки перечисляются данные о производительности инструкций сборки, непосредственно выполняемых во время сбора выборок в сеансе профилирования.  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Столбец|Описание|  
 |------------|-----------------|  

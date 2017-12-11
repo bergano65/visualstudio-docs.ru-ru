@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d6550f2aa1aab249eda569ff84ddf4dcf488aa18
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 2e3e99bfad1ebf33f23c3b38189568935d0cedee
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Обновление проектов модульных тестов Visual Studio 2010
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] обеспечивает совместимость тестовых проектов с тестовыми проектами [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] с пакетом обновления 1 (SP1). Например, тестовые проекты, которые были созданы в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] с пакетом обновления 1 (SP1) можно открыть с помощью [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] без какого-либо обновления. Следовательно ваш коллектив может использовать и [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] с пакетом обновления 1 (SP1), и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] для работы с одним и тем же тестовым проектом. Дополнительные сведения см. в разделе [Обновление тестов из Visual Studio 2010](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
@@ -43,14 +26,14 @@ ms.lasthandoff: 05/13/2017
 >  Существующие модульные тесты в тестовых проектах [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] с пакетом обновления 1 (SP1) будут легко работать с [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] с пакетом обновления 1 (SP1) и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]. В файлы тестовых проектов не вносятся никакие изменения, если тестовый проект Visual Studio 2010, содержащий модульные тесты, открывается в [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] или наоборот.  
   
 > [!CAUTION]
->  Visual Studio 2010 не может открыть проект C++/CLI, который нацелен на набор инструментов 11.0, то есть проект, созданный в Visual Studio 2012. Это ограничение применяется ко всем проектам C++/CLI, а не только к проектам модульных тестов C++/CLI.  
+>  Visual Studio 2010 не может открыть проект C++/CLI, который нацелен на набор инструментов 11.0, то есть проект, созданный в Visual Studio 2012 или более поздней версии. Это ограничение применяется ко всем проектам C++/CLI, а не только к проектам модульных тестов C++/CLI.  
   
 > [!NOTE]
 >  Новые модульные тесты можно выполнять с помощью программы vstest.console.exe из командной строки. Дополнительные сведения об использовании vstest.console.exe см. в разделе [Параметры командной строки для VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options) или выполните команду с параметром вывода справки: **vstest.console.exe /?**. Вы можете продолжать запускать существующие модульные тесты с помощью команды MStest.exe. Дополнительные сведения см. в разделах [Запуск автоматических тестов из командной строки с помощью MSTest](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest) и [Параметры командной строки программы MSTest.exe](/devops-test-docs/test/mstest-exe-command-line-options).  
   
  Другое значительное изменение — это новый обозреватель тестов. В [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] некоторые окна тестирования, с которыми вы можете быть знакомы с предыдущих версий Visual Studio, объявлены нерекомендуемыми, как например, окно представления теста. Обозреватель тестов предназначен для лучшей поддержки разработчиков и коллективов, применяющих модульное тестирование на практике при разработке программного обеспечения. Дополнительные сведения см. в разделе [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md).  
   
-## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012"></a>Проблемы совместимости между Visual Studio 2010 с пакетом обновления 1 (SP1) и Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012-or-later"></a>Проблемы совместимости между Visual Studio 2010 с пакетом обновления 1 (SP1) и Visual Studio 2012 или более поздней версии  
  Ниже перечислены некоторые проблемы, которые следует учитывать при переносе модульных тестов между Visual Studio 2010 с пакетом обновления 1 (SP1) и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
 |Функциональность модульного теста|Проблеми|Решение|  
@@ -65,4 +48,3 @@ ms.lasthandoff: 05/13/2017
  [Модульное тестирование кода](../test/unit-test-your-code.md)   
  [Обновление тестов из более ранних версий Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-

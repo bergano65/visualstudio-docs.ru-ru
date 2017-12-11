@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,31 +13,15 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: caa4a551c437a6d0479ff1a6fdd5526c6837721a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="memory-usage-without-the-debugger"></a>Использование памяти без отладчика
 Средство **Использование памяти** без отладки можно использовать для выполнения перечисленных далее задач.  
@@ -220,5 +203,8 @@ ms.lasthandoff: 06/30/2017
 |**Инклюзивный размер (байт)**|Размер объектов в основном снимке с учетом размера объектов, содержащихся в этих объектах.|  
   
 ## <a name="see-also"></a>См. также  
- [Память JavaScript Memory](../profiling/javascript-memory.md) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md) [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Память JavaScript](../profiling/javascript-memory.md)  
+ [Профилирование в Visual Studio](../profiling/index.md)  
+ [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)  
+ [Рекомендации по повышению производительности для приложений универсальной платформы Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Диагностика проблем, связанных с памятью, с помощью нового средства "Использование памяти" в Visual Studio)

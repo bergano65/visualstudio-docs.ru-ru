@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,33 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, reference
+helpviewer_keywords: MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f6c59188abc8cbb9909c12438bc58fa9301d8af9
-ms.openlocfilehash: 25d55f075a3586356cc291e2811520a9bbafadf0
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] — это система сборки для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Далее приведены ссылки на разделы, содержащие справочную информацию по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -88,8 +71,7 @@ ms.lasthandoff: 05/19/2017
  Список символов, которые должны использоваться в составе "escape-последовательностей" для обеспечения их правильной интерпретации. Escape-последовательность — это ряд символов, который означает, что следующие за ним символы должны интерпретироваться по-другому.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Общие сведения об MSBuild. ](../msbuild/msbuild.md) 
- Представляет [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] и ссылки на разделы, в которых объясняется, как использовать его для создания проектов.  
+ [Общие сведения о MSBuild. ](../msbuild/msbuild.md) Представляет [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] и ссылки на разделы, в которых объясняется, как использовать его для создания проектов.  
   
  <xref:Microsoft.Build.Conversion>  
  Содержит ссылку на пространство имен Conversion.  

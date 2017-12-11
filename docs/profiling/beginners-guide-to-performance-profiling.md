@@ -4,42 +4,25 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords:
-- vs.performance.wizard.intropage
+f1_keywords: vs.performance.wizard.intropage
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 45
+caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: a5eabb6a62e4b362d9355772621d27f574034ff1
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Руководство по профилированию производительности для начинающих
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
@@ -174,5 +157,7 @@ ms.lasthandoff: 09/06/2017
 </div>
   
 ## <a name="see-also"></a>См. также  
- [[Использование памяти](../profiling/memory-usage.md) [Загрузка ЦП](../profiling/cpu-usage.md) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
-
+ [[Использование памяти](../profiling/memory-usage.md)  
+ [Использование ЦП](../profiling/cpu-usage.md)  
+ [Профилирование в Visual Studio](../profiling/index.md)  
+ [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

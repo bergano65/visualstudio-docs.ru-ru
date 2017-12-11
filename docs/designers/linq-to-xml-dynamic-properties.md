@@ -1,50 +1,51 @@
 ---
-title: "Динамические свойства LINQ to XML | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Динамические свойства LINQ to XML | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 561c7e12b1c8e888513b44b8fec36f8bb5e5f9fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Динамические свойства LINQ to XML
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В этом разделе приведены справочные сведения о динамических свойствах в LINQ to XML.В частности, эти свойства представляются классами <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>, которые находятся в пространстве имен <xref:System.Xml.Linq>.  
+# <a name="linq-to-xml-dynamic-properties"></a>Динамические свойства LINQ to XML
+В этом разделе приведены справочные сведения о динамических свойствах в LINQ to XML. В частности, эти свойства представляются классами <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>, которые находятся в пространстве имен <xref:System.Xml.Linq>.  
   
- Как уже рассказывалось в разделе [Общие сведения о связывании с данными в WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md), каждое динамическое свойство эквивалентно стандартному открытому свойству или методу в том же классе.В большинстве случаев следует использовать именно эти стандартные методы. Динамические свойства предоставляются специально для связывания данных с помощью LINQ to XML.Дополнительные сведения о стандартных членах этих классов см. в разделах со справочными сведениями <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>.  
+ Как уже рассказывалось в разделе [Общие сведения о привязке данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md), каждое динамическое свойство эквивалентно стандартному открытому свойству или методу в том же классе. В большинстве случаев следует использовать именно эти стандартные методы. Динамические свойства предоставляются специально для привязки данных с помощью LINQ to XML. Дополнительные сведения о стандартных членах этих классов см. в разделах со справочными сведениями <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>.  
   
  По разрешаемым ими значениям описанные в этом разделе динамические свойства делятся на две категории:  
   
 -   Простые, например свойства `Value` в классах <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>, которые разрешаются в одно значение.  
   
--   Индексированные значения, например свойства [Elements](../designers/elements-xelement-dynamic-property.md) и [Descendants](../designers/descendants-xelement-dynamic-property.md) класса <xref:System.Xml.Linq.XElement>, которые разрешаются в тип индексатора.Чтобы типы индексатора разрешились в требуемое значение или коллекцию, им необходимо передать параметр развернутого имени.  
+-   Индексированные значения, например свойства [Elements](../designers/elements-xelement-dynamic-property.md) и [Descendants](../designers/descendants-xelement-dynamic-property.md) класса <xref:System.Xml.Linq.XElement>, которые разрешаются в тип индексатора. Чтобы типы индексатора разрешились в требуемое значение или коллекцию, им необходимо передать параметр развернутого имени.  
   
- Все динамические свойства, которые возвращают индексированное значение типа <xref:System.Collections.Generic.IEnumerable%601>, используют отложенное выполнение.Дополнительные сведения об отложенном выполнении см. в разделе [Introduction to LINQ Queries \(C\#\)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
+ Все динамические свойства, которые возвращают индексированное значение типа <xref:System.Collections.Generic.IEnumerable%601>, используют отложенное выполнение. Дополнительные сведения об отложенном выполнении см. в разделе [Введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
   
-## В этом разделе  
+## <a name="in-this-section"></a>Содержание  
   
 |Раздел|Описание|  
-|------------|--------------|  
+|-----------|-----------------|  
 |[Динамические свойства класса XAttribute](../designers/xattribute-class-dynamic-properties.md)|Содержит сведения о динамических свойствах, представляемых классом <xref:System.Xml.Linq.XAttribute>.|  
 |[Динамические свойства класса XElement](../designers/xelement-class-dynamic-properties.md)|Содержит сведения о динамических свойствах, представляемых классом <xref:System.Xml.Linq.XElement>.|  
   
-## Справочник  
+## <a name="reference"></a>Ссылка  
  <xref:System.Xml.Linq>  
   
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>  
   
  <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>  
   
-## См. также  
- [Связывание с данными в WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)   
- [Общие сведения о связывании с данными в WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
- [Introduction to LINQ Queries \(C\#\)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
+## <a name="see-also"></a>См. также  
+ [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)   
+ [Общие сведения о привязке данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
+ [Введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)

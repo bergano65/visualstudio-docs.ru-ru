@@ -1,16 +1,15 @@
 ---
-title: "Выбор блока"
+title: "Выбор блоков | Документы Майкрософт"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
+ms.openlocfilehash: dfc46f3297dccda0692332efc451aa04e7997d36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 96abe05d5afde86118623fac46b92c73857f0447
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="block-selection"></a>Выбор блоков
 Visual Studio для Mac позволяет проще выбирать, вырезать, копировать и вставлять блоки кода. Прямоугольные блоки кода можно выделить и выбрать с помощью команды **OPTION+ПЕРЕТАСКИВАНИЕ** для блока кода. При вставке этого выбранного блока его форматирование сохраняется.

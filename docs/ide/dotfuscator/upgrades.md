@@ -1,14 +1,12 @@
 ---
 title: "Обновление Dotfuscator Community Edition (CE) | Документация Майкрософт"
 ms.date: 2017-02-08
-ms.prod: visual-studio-dev15
 ms.devlang: dotnet
-ms.technology:
-- dotfuscator
+ms.technology: vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, решения PreEmptive, защита PreEmptive, защита, community edition, обфускация, .NET, бесплатно, Visual Studio 2017, обновление, командная строка"
 helpviewer_keywords:
-- PreEmptive Protection - Dotfuscator
+- PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
 - Dotfuscator
@@ -25,44 +23,26 @@ description: "Узнайте, как обновить бесплатный вы�
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
-ms.openlocfilehash: 60ca38639f6523cdbace4efa4aa48b48d5e9a886
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 261fc98312914f5a80d2302a90e360dfde2ca17f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
-# Обновление Dotfuscator Community Edition (CE)
-<a id="upgrade-dotfuscator-community-edition-ce" class="xliff"></a>
+# <a name="upgrade-dotfuscator-community-edition-ce"></a>Обновление Dotfuscator Community Edition (CE)
 
 Dotfuscator Community Edition (Dotfuscator CE) предлагает множество функций защиты приложений, которые доступны всем разработчикам, использующим Microsoft Visual Studio.
 Однако пользователям, обновившим версию Dotfuscator, доступны дополнительные функции.
 
-## Регистрация Dotfuscator CE
-<a id="registering-dotfuscator-ce" class="xliff"></a>
+## <a name="registering-dotfuscator-ce"></a>Регистрация Dotfuscator CE
 
 Зарегистрированные пользователи Dotfuscator CE получают доступ к дополнительным функциям, таким как [поддержка командной строки][cli], позволяющим легко интегрировать Dotfuscator CE в ваш автоматический процесс сборки.
+Помимо этого, регистрация предоставляет доступ к Lucidator, встроенному средству, которое служит для [декодирования замаскированных трассировок стека][decode-obfuscated].
 
 Регистрация производится быстро, просто и бесплатно.
 Чтобы зарегистрировать Dotfuscator CE, см. [раздел "Регистрация Dotfuscator CE" на странице с вводными сведениями полного руководства пользователя Dotfuscator CE][register-ce].
 
-## Dotfuscator Professional
-<a id="dotfuscator-professional" class="xliff"></a>
+## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
 Хотя Dotfuscator Community Edition предоставляет базовый уровень защиты, **_PreEmptive Protection - Dotfuscator_ Professional Edition** включает улучшенные функции обфускации и возможности защиты.
 Сюда входит следующее.
@@ -77,7 +57,6 @@ Dotfuscator Community Edition (Dotfuscator CE) предлагает множес
   * Возможность [автоматически удалять неиспользуемый код из приложения][pruning], уменьшая объем важного кода, входящего в поставку.
 * *Защита целостности приложений*
   * Дополнительные [меры для защиты приложений][check-actions].
-  * Возможность внедрения кода для защиты от незаконного изменения и противодействия отладке в сборки `.dll`.
   * Возможность выдачи предупреждений перед окончанием срока жизненного цикла приложения.
   * Возможность уведомить код приложения при приближении окончания жизненного цикла или после него.
   * Шифрование телеметрии.
@@ -95,8 +74,7 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 Дополнительные сведения о расширенных функциях защиты приложений Dotfuscator Professional см. на [странице обзора Dotfuscator][product-about] PreEmptive Solutions и [сравните их с Community Edition][product-compare].
 [Полностью поддерживаемые пробные версии доступны по запросу на сайте preemptive.com][eval].
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 [Этот раздел в полном руководстве пользователя Dotfuscator CE][full]
 
@@ -108,8 +86,8 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 [linking]: https://www.preemptive.com/products/dotfuscator/features#linking
 [pruning]: https://www.preemptive.com/products/dotfuscator/features#pruning
 
-[check-actions]: https://www.preemptive.com/images/stories/Dotfuscator/webframe.html#Check%20Actions.html
-[features]: https://www.preemptive.com/images/stories/Dotfuscator/webframe.html#Feature_Usage_Tracking_and_the_Feature_Attribute.html
+[check-actions]: https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
+[features]: https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
 [eval]: https://www.preemptive.com/eval-request
@@ -121,4 +99,4 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 [register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
 [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
-
+[decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html

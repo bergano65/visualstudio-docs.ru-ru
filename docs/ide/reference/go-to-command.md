@@ -1,55 +1,55 @@
 ---
-title: "Команда Go To | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "edit.goto"
-helpviewer_keywords: 
-  - "Debug.GoTo - команда"
-  - "Перейти - команда"
+title: "Команда \"Перейти\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: edit.goto
+helpviewer_keywords:
+- Debug.Goto command
+- Go To command
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9273cd908a8948b47b818e9c4333cb8bd70fe094
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда Go To
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Перемещение курсора на указанную строку.  
+# <a name="go-to-command"></a>Команда Go To
+Перемещение курсор на указанную строку.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Edit.GoTo [linenumber]  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `linenumber`  
- Необязательный.  Целое число, задающее номер строки, на которую необходимо перейти.  
+ Необязательно. Целое число, задающее номер строки, к которой нужно перейти.  
   
-## Заметки  
- Нумерация строк начинается с единицы.  Если значение `linenumber` меньше единицы, то отображается первая строка.  Если значение `linenumber` больше номера последней строки, то отображается последняя строка.  
+## <a name="remarks"></a>Примечания  
+ Нумерация строк начинается с единицы. Если значение `linenumber` меньше единицы, отображается первая строка. Если значение `linenumber` больше номера последней строки, отображается последняя строка.  
   
- Если значение `linenumber` не указано, то отображается диалоговое окно **Переход на строку**.  
+ Если значение `linenumber` не указано, отображается диалоговое окно **Переход на строку**.  
   
- Псевдоним для данной команды — GoToLn.  
+ Эта команда имеет псевдоним GoToLn.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 >Edit.GoTo 125  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Окно "Команда"](../../ide/reference/command-window.md)   
- [Поле «Поиск\/Команда»](../../ide/find-command-box.md)   
+ [Командное окно](../../ide/reference/command-window.md)   
+ [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

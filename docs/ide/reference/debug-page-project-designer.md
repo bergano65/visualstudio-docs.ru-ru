@@ -4,44 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vb.ProjectPropertiesDebug
+f1_keywords: vb.ProjectPropertiesDebug
 helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b19b6e418203a33c410173d46e190bbd6c01e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 4de85af8011bf0bdc26f0412ca2ba0af5b8c0bd9
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debug-page-project-designer"></a>Страница "Отладка" в конструкторе проектов
 > [!WARNING]
->  Этот раздел не распространяется на приложения для Магазина Windows. См. статью [Запуск сеанса отладки (VB, C#, C++ и XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) в Центре разработчиков Windows.  
+>  Этот раздел не распространяется на приложения универсальной платформы Windows. См. статью [Запуск сеанса отладки (VB, C#, C++ и XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) в Центре разработчиков Windows.  
   
  На странице **Отладка** **конструктора проектов** можно настроить свойства отладки для проекта Visual Basic или C#.  
   

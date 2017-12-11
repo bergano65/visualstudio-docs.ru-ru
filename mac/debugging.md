@@ -1,5 +1,5 @@
 ---
-title: "Отладка с помощью Xamarin"
+title: "Отладка с помощью Xamarin | Документы Майкрософт"
 description: "Отладка — это типичная и неотъемлемая часть программирования. Являясь сформировавшейся интегрированной средой разработки, Visual Studio для Mac предоставляет обширный набор функций для облегчения отладки. Эта статья описывает использование всего арсенала средств отладки в Visual Studio для Mac — от безопасной отладки до визуализации данных."
 author: asb3993
 ms.author: amburns
@@ -7,15 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
+ms.openlocfilehash: 6d85c318b60e065be86d242bf3199b3716c59ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: d416c0967daa3354e09660e3b618e0cc6f3b49f7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
-
 # <a name="debugging-with-xamarin"></a>Отладка с помощью Xamarin
 
 
@@ -103,4 +100,3 @@ Visual Studio для Mac использует Mono Soft Debugger для отла
 Чтобы включить ее, перейдите в раздел **Visual Studio для Mac > Параметры > Отладчик** и убедитесь, что выбор параметра "**Отладка только кода проекта (без захода в код платформы)**" **отменен**, как показано ниже:
 
  ![Параметр "Отладка только кода проекта (без захода в код платформы)"](media/debugging-image8.png)
-

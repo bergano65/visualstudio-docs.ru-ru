@@ -1,34 +1,32 @@
 ---
 title: "Модульное тестирование для Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f3ad6523-5a4e-4209-8977-adc2da305df2
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 22b5ea7236d6dc418618d7fc006442fa6b9474d9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: b68dc3d2fb7877349fc319ce5ea6e799f80c1dbf
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="setting-up-unit-testing-for-python-code"></a>Настройка модульного тестирования для кода Python
 
 Модульные тесты — это сегменты кода, которые проверяют работу других частей кода в приложении, например изолированных функций, классов и т. д. Если приложение успешно проходит все модульные тесты, то вы по меньшей мере уверены, что все низкоуровневые функции работают правильно.
 
 В Python модульное тестирование широко используется для проверки скриптов в процессе разработки. Поддержка Python в Visual Studio включает обнаружение, выполнение и отладку модульных тестов непосредственно в контексте процесса разработки, а значит, вам не потребуется выполнять эти тесты отдельно.
 
-Эта статья содержит краткий обзор модульного тестирования в Visual Studio для Python. Общие сведения о модульном тестировании см. в статье о [модульном тестировании кода](../test/unit-test-your-code.md).
+Эта статья содержит краткий обзор модульного тестирования в Visual Studio для Python. Общие сведения о модульном тестировании см. в статье о [модульном тестировании кода](../test/unit-test-your-code.md). Также см. видео [Тестирование Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2 мин 31 с).
+
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
 
 ## <a name="discovering-and-viewing-tests"></a>Обнаружение и просмотр тестов
 

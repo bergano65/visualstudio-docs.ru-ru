@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,39 +13,23 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance tools, JavaScript [Store apps]
-- performance, JavaScript [Store apps]
-- performance, HTML [Store apps]
-- performance tools, HTML [Store apps]
+- performance tools, JavaScript [UWP apps]
+- performance, JavaScript [UWP apps]
+- performance, HTML [UWP apps]
+- performance tools, HTML [UWP apps]
 ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 753b4abd76b56ff46406b3a2f5ab5b8fb008c526
-ms.contentlocale: ru-ru
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML)
-В этом пошаговом руководстве описывается процесс определения и исправления проблем производительности с помощью [профилировщика скорости реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md). Профилировщик доступен в Visual Studio для универсальных приложений Windows и приложений для Магазина Windows, созданных с использованием JavaScript. В этом сценарии создается приложение тестирования производительности, которое обновляет элементы DOM слишком часто, а профилировщик используется для определения и решения этой проблемы.  
+В этом пошаговом руководстве описывается процесс определения и исправления проблем производительности с помощью [профилировщика скорости реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md). Профилировщик доступен в Visual Studio для универсальных приложений Windows и приложений универсальной платформы Windows, созданных с использованием JavaScript. В этом сценарии создается приложение тестирования производительности, которое обновляет элементы DOM слишком часто, а профилировщик используется для определения и решения этой проблемы.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Создание и запуск приложения тестирования производительности  
   
@@ -201,13 +184,13 @@ ms.lasthandoff: 02/22/2017
   
 7.  Выделите часть в середине графика использования ЦП продолжительностью от 1 до 2 секунд (щелкните и перетащите или воспользуйтесь клавишей tab и клавишами со стрелками). На следующем рисунке показан график использования ЦП после выделения. Эта незатененная область представляет собой выделение.  
   
-     ![Граф использования ЦП](~/profiling/media/js_htmlviz_app_cpu.png "JS_HTMLViz_App_CPU")  
+     ![Граф использования ЦП](../profiling/media/js_htmlviz_app_cpu.png "JS_HTMLViz_App_CPU")  
   
 8.  Выберите **Увеличить**.  
   
      График изменится, отображая выбранный период более подробно. На следующем рисунке показан график использования ЦП после увеличения. (Специфические данные могут различаться, но общая модель будет явной.)  
   
-     ![Представление с увеличенным масштабом](~/profiling/media/js_htmlviz_app_zoom.png "JS_HTMLViz_App_Zoom")  
+     ![Представление с увеличенным масштабом](../profiling/media/js_htmlviz_app_zoom.png "JS_HTMLViz_App_Zoom")  
   
      Сведения временной шкалы в нижней области отображаются в качестве примера сведений для выбранного периода.  
   

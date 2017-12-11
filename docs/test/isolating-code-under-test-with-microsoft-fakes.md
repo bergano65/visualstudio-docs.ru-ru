@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
-caps.latest.revision: 16
+caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1802f211002585a2f23e82b8e0b097c118bd1ff5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9726d092be94ba082adbcc21ebd09a94fe0c60d2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 Microsoft Fakes помогает изолировать тестируемый код, заменяя другие части приложения *заглушками* или *оболочками*. Это небольшие части кода, которые управляются тестами. Изолируя код для тестирования, при непрохождении теста вы будете знать, что причина лежит именно в этом коде, а не где-либо еще. Заглушки и оболочки также позволяют тестировать код, даже если другие части приложения еще не работают.  
@@ -264,4 +248,3 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
  [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
  [Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
-

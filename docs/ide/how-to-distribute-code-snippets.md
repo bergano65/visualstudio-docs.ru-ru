@@ -4,47 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- code snippets, distributing
+helpviewer_keywords: code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 8700d4814494aafb6558f354d5904ed647c1f5a7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+dev_langs: VB
+ms.openlocfilehash: e4c103aec04a9012b82c5fe979f8d5d23cfa1680
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-distribute-code-snippets"></a>Практическое руководство. Распространение фрагментов кода
 Фрагменты кода можно просто передать другим пользователям для установки на других компьютерах с помощью диспетчера фрагментов кода. Однако если нужно распространить несколько фрагментов или распространить фрагмент более широко, файл фрагмента можно включить в расширение Visual Studio, которое могут установить пользователи Visual Studio.  
 
- Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию пакета VSSDK, соответствующую вашей версии Visual Studio, можно на странице [Файлы Visual Studio для скачивания](https://www.visualstudio.com/downloads/).  
+Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию пакета VSSDK, соответствующую вашей версии Visual Studio, можно на странице [Файлы Visual Studio для скачивания](https://www.visualstudio.com/downloads/).  
 
 ## <a name="setting-up-the-extension"></a>Настройка расширения  
- В этой процедуре будет использоваться фрагмент кода Hello World, созданный в разделе [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). Текст файла SNIPPET будет предоставлен, так что вам не придется возвращаться к этому разделу.  
+В этой процедуре будет использоваться фрагмент кода Hello World, созданный в разделе [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). Текст файла SNIPPET будет предоставлен, так что вам не придется возвращаться к этому разделу.  
 
-1.  Создайте проект VSIX с именем **TestSnippet**. (**"Файл" > "Создать" > "Проект" > "Visual C#" (или "Visual Basic" > "Расширение среды"**)  
+1.  Создайте проект VSIX с именем **TestSnippet**. (**Файл** > **Создать** > **Проект** > **Visual C# (Visual Basic)** > **Расширение среды**.)  
 
 2.  Добавьте в проект **TestSnippet** новый XML-файл и присвойте ему имя **VBCodeSnippet.snippet**. Замените содержимое файла следующим кодом:  
 
@@ -84,7 +68,7 @@ ms.lasthandoff: 05/13/2017
 
 1.  Добавьте в папку **HelloWorldVB** текстовый файл и присвойте ему имя **HelloWorldVB.pkgdef**. Этот файл служит для добавления ряда разделов в реестр. В этом случае он добавляет новый подраздел в раздел  
 
-     **HKCU\Software\Microsoft\VisualStudio\14.0\Languages\CodeExpansions\Basic**.  
+     **HKCU\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic**.  
 
 2.  Добавьте в файл указанные ниже строки.  
 
@@ -94,13 +78,13 @@ ms.lasthandoff: 05/13/2017
     "HelloWorldVB"="$PackageFolder$"  
     ```  
 
-     Если изучить содержимое этого раздела, то можно понять, как указывать разные языки.  
+    Если изучить содержимое этого раздела, то можно понять, как указывать разные языки.  
 
 3.  Выберите файл PKGDEF в обозревателе решений и установите в окне **Свойства** для свойства **Действие сборки** значение **Содержимое**, для свойства **Копировать в выходной каталог** — значение **Всегда копировать**, а для свойства **Включить в VSIX** — значение **true**.  
 
 4.  Добавьте файл PKGDEF в качестве ресурса в манифест VSIX. В файле source.extension.vsixmanifest перейдите на вкладку **Активы** и нажмите **Создать**.  
 
-5.  В диалоговом окне **Добавить новый актив** выберите для параметра **Тип** значение **Microsoft.VisualStudio.VsPackage**, для параметра **Тип** — значение **Файл в файловой системе**, а для параметра **Путь** — значение **HelloWorldVB.pkgdef** (выберите его в раскрывающемся списке).  
+5.  В диалоговом окне **Добавить новый актив** выберите для параметра **Тип** значение **Microsoft.VisualStudio.VsPackage**, для параметра **Источник** — значение **Файл в файловой системе**, а для параметра **Путь** — значение **HelloWorldVB.pkgdef** (выберите его в раскрывающемся списке).  
 
 ### <a name="testing-the-snippet"></a>Тестирование фрагмента  
 
@@ -112,12 +96,11 @@ ms.lasthandoff: 05/13/2017
 
 4.  Протестируйте фрагмент кода. В экспериментальном экземпляре откройте проект Visual Basic, а затем откройте один из файлов кода. Поместите курсор где-либо в коде, щелкните правой кнопкой мыши и в контекстном меню выберите пункт **Вставить фрагмент**.  
 
-5.  В списке папок должна быть папка HelloWorldVB. Дважды щелкните его. Должно появиться всплывающее окно **Вставить фрагмент: HellowWorldVB >** с раскрывающимся списком **HelloWorldVB**. Откройте раскрывающийся список HelloWorldVB. В файл должна добавиться следующая строка:  
+5.  В списке папок должна быть папка HelloWorldVB. Дважды щелкните его. Должно появиться всплывающее окно **Вставить фрагмент: HelloWorldVB >** с раскрывающимся списком **HelloWorldVB**. Откройте раскрывающийся список HelloWorldVB. В файл должна добавиться следующая строка:  
 
     ```vb  
     Console.WriteLine("Hello, World!")  
     ```  
 
 ## <a name="see-also"></a>См. также  
- [Фрагменты кода](../ide/code-snippets.md)
-
+[Фрагменты кода](../ide/code-snippets.md)

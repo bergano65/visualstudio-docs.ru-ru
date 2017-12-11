@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, properties
+helpviewer_keywords: MSBuild, properties
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 6a83d555cf8968b6c1419633730e4b80d3b9aa3d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0fe5627c7307b2d06e894a236d60f4188e6cf427
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="msbuild-properties"></a>Свойства MSBuild
 Свойства представляют собой пары "имя-значение", с помощью которых выполняется настройка сборок. Свойства используются для передачи значений задачам, проверки условий и хранения значений, на которые можно давать ссылки в файле проекта.  
@@ -94,7 +78,7 @@ $(registry:Hive\MyKey\MySubKey)
 ```xml  
 <PropertyGroup>  
   <VisualStudioWebBrowserHomePage>  
-    $(registry:HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\WebBrowser@HomePage)  
+    $(registry:HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\WebBrowser@HomePage)  
   </VisualStudioWebBrowserHomePage>  
 <PropertyGroup>  
 ```  
@@ -108,7 +92,7 @@ $(registry:Hive\MyKey\MySubKey)
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   
- Кроме того, глобальные свойства можно задавать или изменять для дочерних проектов в сборках из нескольких проектов, используя атрибут `Properties` задачи MSBuild. Дополнительные сведения см. в разделе [Задача MSBuild](../msbuild/msbuild-task.md).  
+ Кроме того, глобальные свойства можно задавать или изменять для дочерних проектов в сборках из нескольких проектов, используя атрибут `Properties` задачи MSBuild. Глобальные свойства также передаются в дочерние проекты, если только с помощью атрибута `RemoveProperties` задачи MSBuild не указан список свойств, которые не должны передаваться. Дополнительные сведения см. в разделе [Задача MSBuild](../msbuild/msbuild-task.md).
   
  Если свойство задается с помощью атрибута `TreatAsLocalProperty` в теге проекта, это значение глобального свойства не переопределяет значение свойства, заданное в файле проекта. Дополнительные сведения см. в разделах [Элемент Project (MSBuild)](../msbuild/project-element-msbuild.md) и [Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
@@ -145,7 +129,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
                     ImageVersion="$(MySupportedVersion)"  
                     Version="$(MySupportedVersion)"/>  
                 <RequiredRuntime  
-                    ImageVersion="$(MyRequiredVersion)  
+                    ImageVersion="$(MyRequiredVersion)"  
                     Version="$(MyRequiredVersion)"  
                     SafeMode="$(MySafeMode)"/>  
             </Startup>  

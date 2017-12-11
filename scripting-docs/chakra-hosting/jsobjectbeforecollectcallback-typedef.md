@@ -1,23 +1,27 @@
 ---
-title: "JsObjectBeforeCollectCallback Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Определение типа (Typedef) JsObjectBeforeCollectCallback | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: f21a064a-579f-44cb-9d21-76b62e8c18f5
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7d11de01c44792d3e41cc2721a404f2ed906f02e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# JsObjectBeforeCollectCallback Typedef
+# <a name="jsobjectbeforecollectcallback-typedef"></a>JsObjectBeforeCollectCallback Typedef
 Обратный вызов, вызываемый перед сбором объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 typedef void (CALLBACK *JsObjectBeforeCollectCallback)(  
@@ -26,18 +30,18 @@ typedef void (CALLBACK *JsObjectBeforeCollectCallback)(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ref`  
  Объект для сбора.  
   
  `callbackState`  
  Состояние, переданное в `JsSetObjectBeforeCollectCallback`.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Этот API поддерживается только в режиме Edge.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

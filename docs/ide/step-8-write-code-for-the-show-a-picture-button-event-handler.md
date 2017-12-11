@@ -1,38 +1,22 @@
 ---
-title: "Шаг 8. Написание кода для обработчика событий кнопки &quot;Показать рисунок&quot; | Microsoft Docs"
+title: "Шаг 8. Написание кода для обработчика событий кнопки \"Показать рисунок\" | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
-caps.latest.revision: 24
-author: kempb
-ms.author: kempb
+caps.latest.revision: "24"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7e062ca977a85416d2e0bf0b7c2cef46b8f93cce
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: aab9138f4dc47395764607c3783df76b8708212b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
 На этом шаге выполняется создание кнопки **Показать рисунок**, которая работает следующим образом.  
@@ -43,7 +27,7 @@ ms.lasthandoff: 05/13/2017
   
  Среда IDE содержит мощное средство IntelliSense, которое помогает в написании кода. По мере написания кода, среда IDE открывает поле, в котором содержатся предлагаемые завершения для частей вводимых слов. Она пытается определить, что требуется сделать далее и автоматически переходит к последнему выбранному элементу из списка. Для перемещения по списку можно использовать клавиши со стрелками ВВЕРХ или ВНИЗ или можно продолжать вводить буквы, чтобы сузить выбор. Когда появится необходимый элемент, для его выбора нажмите клавишу TAB. Либо можно проигнорировать предложение, если оно не требуется.  
   
- ![Ссылка на видео](~/data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 4) или [Tutorial 1: Create a Picture Viewer in C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 4). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![Ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 4) или [Tutorial 1: Create a Picture Viewer in C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 4). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Написание кода для обработчика событий кнопки "Показать рисунок"  
   
@@ -51,12 +35,12 @@ ms.lasthandoff: 05/13/2017
   
 2.  Введите `i` в пустой строке между двумя фигурными скобками { } (в Visual Basic введите пустую строку между Private Sub… and End Sub). Откроется окно **IntelliSense**, как показано на рисунке ниже.  
   
-     ![IntelliSense с кодом Visual C#](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
+     ![IntelliSense с кодом Visual C#](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
 IntelliSense с кодом Visual C#  
   
 3.  Окно **IntelliSense** должно выделить слово **if** (в противном случае введите в нижнем регистре `f`). Обратите внимание, каким образом небольшое окно *подсказка* рядом с окном **IntelliSense** отображается с описанием **Фрагмент кода для инструкции if**. (в Visual Basic подсказка также указывает такой фрагмент, но немного с другим содержимым). Необходимо использовать этот фрагмент, поэтому нажмите клавишу TAB, чтобы вставить **if** в свой код. Затем снова нажмите клавишу TAB, чтобы использовать фрагмент **if**. (Если вы выберете что-то другое и окно **IntelliSense** исчезнет, нажмите клавишу BACKSPACE, чтобы удалить **i**, и повторно введите эту букву, чтобы снова открыть окно **IntelliSense**).  
   
-     ![Код Visual C#](~/ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+     ![Код Visual C#](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
 Код Visual C#  
   
 4.  Далее IntelliSense используется для ввода дополнительного кода для открытия диалогового окна **Открыть файл**. Если пользователь нажимает кнопку **ОК**, PictureBox загружает выбранный пользователем файл. Следующие действия показывают как ввести код. Хотя представлено множество действий, это просто несколько нажатий клавиш.  
@@ -72,13 +56,13 @@ IntelliSense с кодом Visual C#
         > [!NOTE]
         >  Окно **IntelliSense** может показывать свойства и методы. Чтобы определить, какие элементы отображаются, проверьте значок слева от каждого элемента в окне **IntelliSense**. Рядом с каждым методом представлен значок кубика, рядом с каждым свойством представлен значок гаечного ключа. Также рядом с каждым событием представлен значок с изображением молнии. Ниже представлены эти значки.  
   
-         ![Значок метода](~/ide/media/express_iconmethod.png "Express_IconMethod")  
+         ![Значок метода](../ide/media/express_iconmethod.png "Express_IconMethod")  
 Значок метода  
   
-         ![Значок свойства](~/ide/media/express_iconproperty.png "Express_IconProperty")  
+         ![Значок свойства](../ide/media/express_iconproperty.png "Express_IconProperty")  
 Значок свойства  
   
-         ![Значок события](~/ide/media/express_iconevent.png "Express_IconEvent")  
+         ![Значок события](../ide/media/express_iconevent.png "Express_IconEvent")  
 Значок события  
   
     4.  Начните набирать `ShowDialog` (для IntelliSense регистр значения не имеет). Метод `ShowDialog()` будет открывать диалоговое окно **Открыть файл**. После выделения **ShowDialog** в окне нажмите клавишу TAB. Также можно выделить "ShowDialog" и нажать клавишу F1 для получения соответствующей справки.  
@@ -112,7 +96,8 @@ IntelliSense с кодом Visual C#
   
     9. Теперь добавьте несколько строк кода. Их можно ввести вручную (или копировать и вставить), однако попробуйте использовать для добавления строк IntelliSense. Чем больше вы знакомы с IntelliSense, тем быстрее можете писать собственный код. Итоговая реализация метода `showButton_Click()` будет выглядеть следующим образом. (Выберите вкладку **VB** для просмотра версии кода для Visual Basic.)  
   
-         [!code-cs[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)] [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]  
+         [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
+         [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]  
   
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
   

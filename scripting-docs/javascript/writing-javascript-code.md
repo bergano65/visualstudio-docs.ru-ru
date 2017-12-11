@@ -1,53 +1,55 @@
 ---
-title: "Написание кода JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.htmldesigner.html"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "код, синтаксис JavaScript"
-  - "комментарии, код JavaScript"
-  - "код JavaScript"
+title: "Написание кода JavaScript | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.htmldesigner.html
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- code, JavaScript syntax
+- comments, JavaScript code
+- JavaScript code
 ms.assetid: dde28266-0d0f-4460-a819-f931cf0911ad
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e50bc25f818724b59d9adda51f97d76ae14de2b4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Написание кода JavaScript
-Как и во многих других языках программирования, код [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] состоит из операторов, блоков, содержащих связанные наборы операторов, и комментариев.  В операторах можно использовать переменные, строки, числа и выражения.  
+# <a name="writing-javascript-code"></a>Написание кода JavaScript
+Как и многие другие языки программирования, [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] организован в виде операторов, блоков, состоящих из связанных наборов операторов, а также комментариев. Внутри оператора можно использовать переменные, строки, числа и выражения.  
   
-## Операторы  
- Программа на [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] представляет собой коллекцию операторов.  Операторы [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] объединяют выражения таким образом, чтобы они выполняли одну общую задачу.  
+## <a name="statements"></a>Операторы  
+ Программа [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] представляет собой коллекцию операторов. Операторы [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] объединяют выражения таким образом, чтобы они выполняли единую задачу.  
   
- Оператор состоит из одного или нескольких выражений, ключевых слов или операторов \(символов\).  Обычно оператор записывается на одной строке, хотя оператор может быть записан и над двух или более строках.  Кроме того, два и более операторов можно записать на одной строке, разделяя их точкой с запятой.  Обычно каждая новая строка начинает новый оператор.  Рекомендуется завершать операторы явным образом.  Для этого используется точка с запятой \(;\), являющаяся символом завершения операторов [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+ Оператор состоит из одного или нескольких выражений, ключевых слов или операторов (символов). Как правило, оператор записывается на одной строке, хотя он может занимать две и более строк. Кроме того, несколько операторов можно записать на одной строке, разделяя их точкой с запятой. Обычно каждый новый оператор начинается с новой строки. Рекомендуется завершать операторы явным образом. Для этого в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] служит точка с запятой (;).  
   
- Далее показаны два примера операторов [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  Текст после символов \/\/ представляет собой *комментарии*, служащие для пояснения программы.  
+ Ниже приведены два примера операторов [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]. Операторы после символов // являются *комментариями*, то есть поясняющими замечаниями в программе.  
   
-```javascript  
+```JavaScript  
 var aBird = "Robin"; // Assign the text "Robin" to the variable aBird.  
 var today = new Date(); // Assign today's date to the variable today.  
 ```  
   
- Группа операторов [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], заключенных в фигурные скобки \({}\), называется *блоком*.  В общем, операторы, объединенные в блок, можно рассматривать как один оператор.  Это означает, что блоки можно использовать в любых местах, где [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] требует одного оператора.  В качестве известных исключений можно привести заголовки циклов **for** и `while`.  Следует отметить, что отдельные операторы в блоке заканчиваются точкой с запятой, но сам блок — нет.  
+ Группа операторов [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], заключенных в фигурные скобки ({}), называется *блоком*. Сгруппированные в блок операторы обычно можно рассматривать как единый оператор. Это означает, что блоки можно использовать в большинстве мест, где [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ожидает отдельный оператор. Здесь следует отметить важные исключения — заголовки циклов **for** и `while`. Обратите внимание, что отдельные операторы в блоке заканчиваются точкой с запятой, а сам блок — нет.  
   
- Как правило, блоки используются в функциях и условных выражениях.  Следует помнить, что в отличие от C\+\+ и некоторых других языков, блок в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] не считается новой областью; новую область создают только функции.  
+ Блоки обычно используются в функциях и условных выражениях. Обратите внимание, что, в отличие от C++ и некоторых других языков, [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] не считает блок новой областью. Новую область создают только функции.  
   
- В следующем примере предложение `else` содержит блок из двух операторов, заключенных в фигурные скобки.  Блок обрабатывается как один оператор.  Кроме того, сама функция состоит из блока операторов, заключенных в фигурные скобки.  Операторы под функцией находятся вне блока и, следовательно, не являются частью определения функции.  
+ В следующем примере предложение `else` содержит блок из двух операторов, заключенных в фигурные скобки. Этот блок обрабатывается как единый оператор. Кроме того, сама функция состоит из блока операторов, заключенных в фигурные скобки. Операторы под функцией выходят за пределы блока и поэтому не являются частью определения функции.  
   
-```javascript  
+```JavaScript  
 function inchestometers(inches)  
    {  
    if (inches < 0)  
@@ -64,16 +66,16 @@ var meters = inchestometers(inches);
 document.write("the value in meters is " + meters);  
 ```  
   
-## Комментарии  
- Комментарий [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], состоящий из одной строки, начинается с двух знаков косой черты \(\/\/\).  Ниже приведен пример комментария, состоящего из одной строки.  
+## <a name="comments"></a>Комментарии  
+ Однострочный комментарий [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] начинается с пары символов косой черты (//). Ниже приведен пример однострочного комментария.  
   
-```javascript  
+```JavaScript  
 var aGoodIdea = "Comment your code thoroughly."; // This is a single-line comment.  
 ```  
   
- Комментарий [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], состоящий из нескольких строк, начинается с косой черты и звездочки \(\/\*\), а заканчивается этими же знаками, стоящими в обратном порядке \(\*\/\).  
+ Многострочный комментарий [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] начинается с косой черты и звездочки (/*) и заканчивается этими же символами, стоящими в обратном порядке (\*/).  
   
-```javascript  
+```JavaScript  
 /*  
 This is a multiline comment that explains the preceding code statement.  
   
@@ -86,19 +88,19 @@ of the literal.
 ```  
   
 > [!NOTE]
->  При попытке вставить один многострочный комментарий внутрь другого результат будет обработан в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] неожиданным образом.  Знаки \*\/, означающие конец внутреннего многострочного комментария, будут считаться концом всего многострочного комментария.  Это означает, что текст, следующий за вложенным многострочным комментарием, не будет считаться комментарием; вместо этого он будет интерпретироваться как код [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] и вызовет синтаксические ошибки.  
+>  При попытке вставить один многострочный комментарий в другой [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] интерпретирует итоговый многострочный комментарий непредсказуемым образом. Символы */, обозначающие конец внутреннего многострочного комментария, интерпретируются как конец всего комментария. Это означает, что текст, следующий за внутренним многострочным комментарием, не будет закомментирован. Вместо этого он будет интерпретирован как код [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], что приведет к синтаксическим ошибкам.  
   
- Рекомендуется писать все комментарии как блоки однострочных комментариев.  Это позволяет переносить в комментарии крупные сегменты кода с помощью многострочных комментариев на более поздних этапах.  
+ Рекомендуется писать все комментарии в виде блоков однострочных комментариев. Позже это позволит закомментировать крупные сегменты кода с помощью многострочных комментариев.  
   
-```javascript  
+```JavaScript  
 // This is another multiline comment, written as a series of single-line comments.  
 // After the statement is executed, you can refer to the content of the   
 // aGoodIdea variable by using its name.  
 var extendedIdea = aGoodIdea + " You never know when you'll have to figure out what it does.";  
 ```  
   
-## Присваивания и равенство  
- Знак равенства \(\=\) используется в операторах [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] для присваивания значений переменным — это оператор присваивания.  Левый операнд оператора "\=" всегда является левосторонним значением.  Примеры левосторонних значений:  
+## <a name="assignments-and-equality"></a>Присваивания и равенство  
+ Знак равенства (=) используется в операторах [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] для присвоения значений переменным — это оператор присваивания. Левый операнд оператора = всегда является левосторонним значением. Примеры левосторонних значений:  
   
 -   переменные;  
   
@@ -106,20 +108,20 @@ var extendedIdea = aGoodIdea + " You never know when you'll have to figure out w
   
 -   свойства объекта.  
   
- Правый операнд оператора "\=" всегда является правосторонним значением.  Правосторонние значения могут быть произвольным значением любого типа, включая значение выражения.  Ниже приведен пример оператора присваивания в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+ Правый операнд оператора = всегда является правосторонним значением. Правосторонние значения могут быть произвольным значением любого типа, включая значение выражения. Ниже приведен пример оператора присваивания [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
-```javascript  
+```JavaScript  
 var anInteger = 3;  
 ```  
   
- Компилятор [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] интерпретирует этот оператор следующим образом: "присвоить значение 3 переменной **anInteger**" или "переменная **anInteger** принимает значение 3".  
+ Компилятор [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] интерпретирует этот оператор следующим образом: "присвоить значение 3 переменной **anInteger**" или "**anInteger** принимает значение 3".  
   
- Обратите внимание на разницу между оператором "\=" \(присваивание\) и оператором "\=\=" \(равенство\).  Если требуется сравнить два значения, чтобы определить, равны ли они, используйте два знака равенства \(\=\=\).  Подробно это обсуждается в разделе [Управление выполнением программ](../javascript/controlling-program-flow-javascript.md).  
+ Вам нужно понимать разницу между оператором = (присваивание) и оператором == (равенство). Если вы хотите сравнить два значения, чтобы определить, равны ли они, используйте два знака равенства (==). Это подробно рассмотрено в разделе [Управление выполнением программы](../javascript/controlling-program-flow-javascript.md).  
   
-## Выражения  
- Значение выражения [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] может быть любого допустимого типа [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] — число, строка, объект и т. д.  Простейшими выражениями являются литералы.  Ниже приведены некоторые примеры литеральных выражений [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+## <a name="expressions"></a>Выражения  
+ Значение выражения [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] может иметь любой допустимый тип [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] — число, строка, объект и т. д. Простейшими выражениями являются литералы. Ниже приведено несколько примеров литеральных выражений [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
-```javascript  
+```JavaScript  
 3.9                       // numeric literal  
 "Hello!"                  // string literal  
 false                     // boolean literal  
@@ -129,11 +131,11 @@ null                      // literal null value
 function(x){return x*x;}  // function literal  
 ```  
   
- Более сложные выражения могут содержать переменные, вызовы функций и другие выражения.  Для объединения выражений и создания сложных выражений можно использовать операторы.  Примеры операторов: `+` \(сложение\), `-` \(вычитание\), `*` \(умножение\) и `/` \(деление\).  
+ Более сложные выражения могут содержать переменные, вызовы функций и другие выражения. Вы можете комбинировать выражения, чтобы создавать более сложные выражения, с помощью операторов. Примеры операторов: `+` (сложение), `-` (вычитание), `*` (умножение) и `/` (деление).  
   
- Ниже приведены некоторые примеры сложных выражений [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+ Ниже приведено несколько примеров сложных выражений [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
-```javascript  
+```JavaScript  
 var anExpression = 3 * (4 / 5) + 6;  
 var aSecondExpression = Math.PI * radius * radius;  
 var aThirdExpression = aSecondExpression + "%" + anExpression;  

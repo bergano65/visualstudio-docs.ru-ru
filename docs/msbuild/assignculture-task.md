@@ -1,53 +1,53 @@
 ---
-title: "Задача AssignCulture | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "AssignCulture - задача [MSBuild]"
-  - "MSBuild, AssignCulture - задача"
+title: "Задача AssignCulture | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, AssignCulture task
+- AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: f1522f4d3b7f97ccea1529c043e6179502fcd14a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Задача AssignCulture
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Данная задача принимает список элементов, которые могут содержать строку действительного идентификатора языка и региональных параметров .NET в виде части имени файла, и позволяет получить элементы с метаданными `Culture`, содержащими соответствующий идентификатор языка и региональных параметров.  Например, имя файла Form1.fr\-fr.resx имеет встроенный идентификатор языка и региональных параметров "fr\-fr", поэтому задача выдает элемент, который имеет такое же имя файла с метаданными `Culture`, имеющими значение `fr-fr`.  Задача также выдает список имен файлов, в котором из имени файла удален язык и региональные параметры.  
+# <a name="assignculture-task"></a>Задача AssignCulture
+Эта задача принимает список элементов, которые могут содержать допустимую строку идентификатора языка и региональных параметров .NET в составе имени файла, и создает элементы, которые имеют метаданные `Culture`, содержащие соответствующий идентификатор языка и региональных параметров. Например, имя файла Form1.fr-fr.resx содержит идентификатор языка и региональных параметров "fr-fr", поэтому эта задача выдает элемент с тем же именем файла и метаданными `Culture`, равными `fr-fr`. Задача также выдает список имен файлов, из которых удалено указание языка и региональных параметров.  
   
-## Параметры задачи  
- В следующей таблице описаны параметры задачи `AssignCulture`.  
+## <a name="task-parameters"></a>Параметры задачи  
+ В следующей таблице приводятся параметры задачи `AssignCulture`.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`AssignedFiles`|Необязательный выходной параметр типа <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Содержит список элементов, полученных в параметре `Files`, где к каждому из них добавлена запись метаданных `Culture`.<br /><br /> Если входящий элемент из параметра `Files` уже содержит запись метаданных `Culture`, то используется исходная запись метаданных.<br /><br /> В задаче запись метаданных `Culture` назначается только в том случае, если имя файла содержит действительный идентификатор языка и региональных параметров.  Идентификатор языка и региональных параметров должен находиться в имени файла между двумя последними точками.|  
-|`AssignedFilesWithCulture`|Необязательный выходной параметр типа <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Содержит подмножество элементов из параметра `AssignedFiles`, имеющих запись метаданных `Culture`.|  
-|`AssignedFilesWithNoCulture`|Необязательный выходной параметр типа <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Содержит подмножество элементов из параметра `AssignedFiles`, для которых отсутствует запись метаданных `Culture`.|  
-|`CultureNeutralAssignedFiles`|Необязательный выходной параметр типа <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Содержит тот же список элементов, который может быть получен с помощью параметра `AssignedFiles`, но в нем из имени файла удален язык и региональные параметры.<br /><br /> Эта задача удаляет язык и региональные параметры из имени файла только в том случае, если оно является действительным идентификатором языка и региональных параметров.|  
-|`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Задание списка файлов со встроенными именами языка и региональных параметров для назначения языка и региональных параметров.|  
+|---------------|-----------------|  
+|`AssignedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит список элементов, полученных в параметре `Files`, с записью метаданных `Culture`, добавленной для каждого элемента.<br /><br /> Если входящий элемент из параметра `Files` уже содержит запись метаданных `Culture`, используется исходная запись метаданных.<br /><br /> Задача назначает запись метаданных `Culture` только в том случае, если имя файла содержит допустимый идентификатор языка и региональных параметров. Идентификатор языка и региональных параметров должен находиться между двумя последними точками в имени файла.|  
+|`AssignedFilesWithCulture`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит подмножество элементов из `AssignedFiles` параметра, у которых есть запись метаданных `Culture`.|  
+|`AssignedFilesWithNoCulture`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит подмножество элементов из `AssignedFiles` параметра, у которых нет записи метаданных `Culture`.|  
+|`CultureNeutralAssignedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит тот же список элементов, который создается в параметре `AssignedFiles`, за исключением того, что из имени файла удалено упоминание языка и региональных параметров.<br /><br /> Задача удаляет язык и региональные параметры из имени файла лишь в том случае, если это допустимый идентификатор.|  
+|`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает список файлов с внедренными именами языка и региональных параметров для назначения.|  
   
-## Заметки  
- Помимо параметров, которые перечислены выше, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который наследует от класса <xref:Microsoft.Build.Utilities.Task>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Примечания  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Пример  
- В следующем примере выполняется задача `AssignCulture` с коллекцией элементов `ResourceFiles`.  
+## <a name="example"></a>Пример  
+ Следующий пример выполняет задачу `AssignCulture` с коллекцией элементов `ResourceFiles`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemGroup>  
         <ResourceFiles Include="MyResource1.fr.resx"/>  
@@ -70,15 +70,15 @@ caps.handback.revision: 10
 </Project>  
 ```  
   
- В следующей таблице описаны значения выходных элементов после выполнения задачи.  Метаданные элемента показаны справа в круглых скобках.  
+ Следующая таблица описывает значение выходных элементов после выполнения этой задачи. Метаданные элемента представлены в скобках после соответствующего элемента.  
   
-|Коллекция элементов|Содержимое|  
-|-------------------------|----------------|  
-|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` \(без дополнительных метаданных\)|  
+|Коллекция элементов|Описание|  
+|---------------------|--------------|  
+|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` (без дополнительных метаданных)|  
 |`OutAssignedFilesWithCulture`|`MyResource1.fr.resx (Culture="fr")`|  
-|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` \(без дополнительных метаданных\)|  
-|`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`без дополнительных метаданных\)|  
+|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (без дополнительных метаданных)|  
+|`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`без дополнительных метаданных)|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

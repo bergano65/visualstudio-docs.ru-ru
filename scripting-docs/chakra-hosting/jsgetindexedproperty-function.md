@@ -1,27 +1,29 @@
 ---
-title: "Функция JsGetIndexedProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsGetIndexedProperty"
-helpviewer_keywords: 
-  - "JsGetIndexedProperty - функция"
+title: "Функция JsGetIndexedProperty | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsGetIndexedProperty
+helpviewer_keywords: JsGetIndexedProperty function
 ms.assetid: f61ea388-0ae6-4a19-b3b5-75ed49a3f32d
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 952681d72eb3cf9a5156484711a2c93d0d6ea90c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsGetIndexedProperty
+# <a name="jsgetindexedproperty-function"></a>Функция JsGetIndexedProperty
 Извлеките значение, расположенное по заданному индексу объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsGetIndexedProperty(  
@@ -31,7 +33,7 @@ STDAPI_(JsErrorCode) JsGetIndexedProperty(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
  Объект для выполнения операции.  
   
@@ -41,14 +43,14 @@ STDAPI_(JsErrorCode) JsGetIndexedProperty(
  `result`  
  Извлекаемое значение.  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

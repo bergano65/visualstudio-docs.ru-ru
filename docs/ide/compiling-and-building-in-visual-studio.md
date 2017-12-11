@@ -1,29 +1,26 @@
 ---
 title: "Компиляция и сборка в Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 5918c0070be747f7ebdca9d789d5706820b93e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/10/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 
 Запуск сборки позволяет создавать сборки и исполняемые приложения из вашего исходного кода на любом этапе цикла разработки. Как правило, процесс сборки происходит сходным образом для самых разных типов проектов, например для проектов Windows, ASP.NET, мобильных приложений и др. Процесс сборки также практически не отличается для разных языков программирования, таких как C#, Visual Basic, C++ и F#. 
@@ -61,4 +58,3 @@ ms.lasthandoff: 08/10/2017
 ## <a name="see-also"></a>См. также  
 
 - [Построение (компиляция) проектов веб-узлов](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
-

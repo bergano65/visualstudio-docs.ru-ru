@@ -1,27 +1,29 @@
 ---
-title: "Функция JsCreateFunction | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsCreateFunction"
-helpviewer_keywords: 
-  - "JsCreateFunction - функция"
+title: "Функция JsCreateFunction | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsCreateFunction
+helpviewer_keywords: JsCreateFunction function
 ms.assetid: b298a96a-5ef7-4203-a8c8-55f9bfc6d2bb
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4fa0b39c0475814b036784a9dbb48553d50a83ea
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsCreateFunction
+# <a name="jscreatefunction-function"></a>Функция JsCreateFunction
 Создает новую функцию JavaScript.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsCreateFunction(  
@@ -31,7 +33,7 @@ STDAPI_(JsErrorCode) JsCreateFunction(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `nativeFunction`  
  Метод, который требуется вызвать при вызове функции.  
   
@@ -41,14 +43,14 @@ STDAPI_(JsErrorCode) JsCreateFunction(
  `function`  
  Новый объект функции.  
   
-## Возвращаемое значение  
- Результат вызова \(если есть\).  
+## <a name="return-value"></a>Возвращаемое значение  
+ Результат вызова (если есть).  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

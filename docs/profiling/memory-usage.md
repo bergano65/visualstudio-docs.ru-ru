@@ -4,36 +4,19 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: f35dd690c97b4f69ff4633155f05dd9a2ebd7a2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 56ff9bcee976de7ae6be4bc410c275438f0f16ec
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="analyze-memory-usage"></a>Анализ использования памяти
 С помощью встроенного в отладчик средства диагностики **Использование памяти** вы сможете находить утечки памяти и выявлять ее неэффективное использование. С помощью средства "Использование памяти" можно сделать один или несколько *снимков* управляемой и собственной памяти в куче. Вы можете делать снимки приложений .NET, приложений на основе машинного кода, а также смешанных программ (на основе .NET и машинного кода).  
@@ -186,4 +169,5 @@ ms.lasthandoff: 09/06/2017
  [Блог о Visual C++: средства диагностики внутренней памяти для CTP-версии Visual Studio 2015](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
 
 ## <a name="see-also"></a>См. также
- [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Профилирование в Visual Studio](../profiling/index.md)  
+ [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

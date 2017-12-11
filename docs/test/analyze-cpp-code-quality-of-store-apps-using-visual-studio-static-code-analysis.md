@@ -1,42 +1,25 @@
 ---
-title: "Анализ качества кода C++ в приложениях Магазина с помощью функций анализа статического кода Visual Studio | Документы Майкрософт"
+title: "Анализ качества кода C++ в приложениях универсальной платформы Windows с помощью функций анализа статического кода Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.codeanalysis.propertypages.native.express
+f1_keywords: vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pt-br
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: c1e31415cf2f51c06650610fde945037ebe0191f
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c4c49f910615e1e181fe66feab3dce5bb3c90002
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода C++ в приложениях Магазина с помощью функций анализа статического кода Visual Studio
-![Применимо к Windows и Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="analyze-c-code-quality-of-uwp-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода C++ в приложениях универсальной платформы Windows с помощью функций анализа статического кода Visual Studio
+![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Средство анализа кода в выпусках Visual Studio Express анализирует код с целью найти общие проблемы и нарушения рекомендаций программирования. Предупреждения, возникающие в ходе анализа кода, отличаются от ошибок и предупреждений компилятора, потому что при анализе кода выполняется поиск конкретных шаблонов кода, которые являются допустимыми, но, тем не менее, могут вызвать проблемы при использовании кода вами или другими специалистами. Анализ кода позволяет находить дефекты в коде, которые невозможно обнаружить в процессе тестирования. Регулярный запуск средства анализа кода в процессе разработки позволяет создать приложение более высокого качества.  
   
@@ -78,7 +61,7 @@ ms.lasthandoff: 04/04/2017
   
  При разворачивании предупреждения строки кода, которые вызвали предупреждение, выделяются в редакторе кода Visual Studio.  
   
- ![Выделенный исходный код](~/test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
+ ![Выделенный исходный код](../test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
   
  Поняв, в чем заключается проблема, можно разрешить ее в коде. После этого повторно запустите анализ кода, чтобы убедиться, что предупреждение больше не отображается в окне анализа кода и исправление не привело к появлению новых предупреждений.  
   
@@ -244,4 +227,3 @@ ms.lasthandoff: 04/04/2017
 |[C28305](../code-quality/c28305.md)|При синтаксическом анализе токена обнаружена ошибка.|  
 |[C28350](../code-quality/c28350.md)|Заметка описывает ситуацию, к которой неприменимы условия.|  
 |[C28351](../code-quality/c28351.md)|Аннотация описывает ситуацию, когда динамическое значение (переменная) не может использоваться в условии.|
-

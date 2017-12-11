@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,30 +27,15 @@ helpviewer_keywords:
 - class view
 - object browser
 ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cf7325de6a4d5ee4cac1b48a7da33202034fde0c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: f85bcde09d6748aa781ceefd85ccbf138245aca6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>Просмотр структуры кода
 Вы можете проверить объекты и элементы в проектах Visual Studio, а также объекты и элементы в компонентах .NET Framework, компонентах COM, библиотеках динамической компоновки (DLL) и библиотеках типов (TLB).  
@@ -164,7 +148,7 @@ ms.lasthandoff: 05/13/2017
   
 -   Пользовательский набор компонентов  
   
- К пользовательским компонентам относятся исполняемые файлы управляемого кода, сборки библиотек, библиотеки типов и OCX-файлы. Пользовательские компоненты C++ добавить нельзя. Пользовательские параметры сохраняются в каталоге приложения пользователя Visual Studio — %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+ К пользовательским компонентам относятся исполняемые файлы управляемого кода, сборки библиотек, библиотеки типов и OCX-файлы. Пользовательские компоненты C++ добавить нельзя. Пользовательские параметры сохраняются в каталоге приложения пользователя Visual Studio — %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.  
   
  На левой панели **обозревателя объектов** отображаются физические контейнеры (например, компоненты .NET Framework и COM-компоненты). Вы можете развернуть узлы контейнера, чтобы просмотреть содержащиеся в них пространства имен, а затем развернуть пространства имен для отображения содержащихся в них типов. При выборе типа его члены (например, свойства и методы) отображаются на правой панели. На нижней правой панели отображаются подробные сведения о выбранном элементе.  
   

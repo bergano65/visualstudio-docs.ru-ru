@@ -1,46 +1,46 @@
 ---
-title: "Практическое руководство. Перемещение инструментированных двоичных файлов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.binaries"
-helpviewer_keywords: 
-  - "двоичные файлы, инструментированные"
-  - "инструментирование, инструментированные двоичные файлы"
-  - "инструментированные двоичные файлы и их перемещение"
-  - "средства профилирования, инструментированные двоичные файлы"
+title: "Практическое руководство. Перемещение инструментированных двоичных файлов | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.property.binaries
+helpviewer_keywords:
+- binaries, instrumented
+- instrumentation, instrumented binaries
+- instrumented binaries and relocating
+- profiling tools, instrumented binaries
 ms.assetid: 258f49e8-4b09-477e-a132-8fad685b66f4
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8a7c0423f136998b899375e221f18c085835ae05
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Перемещение инструментированных двоичных файлов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-relocate-instrumented-binaries"></a>Практическое руководство. Перемещение инструментированных двоичных файлов
 Во время инструментирования в двоичный файл вставляются зонды для измерения производительности приложения. При перемещении инструментированного двоичного файла копия оригинального двоичного файла инструментируется и помещается в указанное расположение. Этот вариант полезен, если вы не хотите, чтобы профилировщик переименовал ваш исходный двоичный файл. Если двоичный файл не перемещается, будет перезаписана оригинальная версия двоичного файла.  
   
  **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
-### Перемещение инструментированного двоичного файла  
+### <a name="to-relocate-instrumented-binary"></a>Перемещение инструментированного двоичного файла  
   
-1.  В **обозревателе производительности** щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.  
+1.  В **обозревателе производительности**щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.  
   
-2.  На **страницах свойств** щелкните пункт **Двоичный файл**.  
+2.  На **страницах свойств**щелкните пункт **Двоичный файл** .  
   
-3.  Установите флажок **Переместить инструментированные двоичные файлы**.  
+3.  Установите флажок **Переместить инструментированные двоичные файлы** .  
   
 4.  Укажите расположение для инструментированного двоичного файла.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)

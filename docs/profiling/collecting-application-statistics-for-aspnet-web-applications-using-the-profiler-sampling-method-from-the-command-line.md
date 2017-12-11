@@ -1,48 +1,32 @@
 ---
-title: "Сбор статистики по веб-приложениям ASP.NET при помощи метода выборки профилировщика из командной строки | Документы Майкрософт"
+title: "Сбор статистики для веб-приложений ASP.NET | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - profiling tools, sampling method
 - sampling profling method
 ms.assetid: f8383ab1-eb49-4d3f-8608-d8b4d51a81be
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: edd51a47e4db363e7a684a59c402fd49e533e6bb
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: fa272e590d1cec839e51110d63ee6224466d12e4
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
-# <a name="collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line"></a>Сбор статистики по веб-приложениям ASP.NET при помощи метода выборки профилировщика из командной строки
+# <a name="collect-statistics-for-aspnet-web-apps"></a>Сбор статистики для веб-приложений ASP.NET
+
 В этом разделе описаны процедуры и параметры для сбора статистики производительности веб-приложения ASP.NET с использованием средств командной строки **VSPerfASPNETCmd** и **VSPerfCmd** и метода профилирования выборки.  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
 >  Несмотря на то, что средство **VSPerfCmd** предоставляет полый доступ к функциональности средств профилирования, включая приостановку и возобновление профилирования, сбор дополнительных данных от процессора и счетчиков производительности Windows, следует использовать средство командной строки **VSPerfASPNETCmd**, если эта функциональность не требуется. Средство командной строки **VSPerfASPNETCmd** является предпочтительным при выполнении профилирования веб-сайтов ASP.NET с помощью отдельного профилировщика. В отличие от средства [VSPerfCmd](../profiling/vsperfcmd.md), нет необходимости устанавливать переменные среды и перезагружать компьютер. Дополнительные сведения см.в статье [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd).  

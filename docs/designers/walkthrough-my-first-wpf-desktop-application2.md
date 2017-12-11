@@ -1,45 +1,31 @@
 ---
-title: "Пошаговое руководство. Создание первого классического приложения WPF 2 | Документы Майкрософт"
+title: "Пошаговое руководство. Создание первого классического приложения WPF | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: d0e8435092fb5f7090c3631fd079e28de351704d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Пошаговое руководство. Создание первого классического приложения WPF
-<a name="introduction"></a> В этом пошаговом руководстве содержатся вводные сведения о разработке на основе платформы Windows Presentation Foundation (WPF). Вы создадите простейшее приложение, содержащее элементы, используемые в большинстве классических приложений WPF: разметку XAML, код программной части, определения приложения, элементы управления, макет, привязку данных и стили.  
+В этом пошаговом руководстве содержатся вводные сведения о разработке на основе платформы Windows Presentation Foundation (WPF). Вы создадите простейшее приложение, содержащее элементы, используемые в большинстве классических приложений WPF: разметку XAML, код программной части, определения приложения, элементы управления, макет, привязку данных и стили.  
   
-##  <a name="Create_The_Application_Code_Files"></a> Создание проекта приложения  
- В этом разделе вы создадите инфраструктуру приложения, включающую в себя проект и главное окно или форму.  
+## <a name="creating-the-application-project"></a>Создание проекта приложения  
+В этом разделе вы создадите инфраструктуру приложения, включающую в себя проект и главное окно или форму.  
   
 #### <a name="to-create-the-project"></a>Создание проекта  
   
@@ -88,8 +74,7 @@ ms.lasthandoff: 09/26/2017
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
             xmlns:local="clr-namespace:ExpenseIt"  
             mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500">  
-  
+            Title="ExpenseIt" Height="375" Width="500">    
     </NavigationWindow>  
     ```  
   
@@ -103,8 +88,7 @@ ms.lasthandoff: 09/26/2017
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
             xmlns:local="clr-namespace:ExpenseIt"  
             mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500">  
-  
+            Title="ExpenseIt" Height="375" Width="500">    
     </NavigationWindow>  
     ```  
   
@@ -116,7 +100,7 @@ ms.lasthandoff: 09/26/2017
   
      Это приведет к тому, что класс `MainWindow` будет наследоваться от `NavigationWindow`. В Visual Basic это происходит автоматически при изменении окна в XAML, поэтому изменять код не нужно.  
   
-##  <a name="add_files_to_the_application"></a> Добавление файлов в приложение  
+## <a name="adding-files-to-the-application"></a>Добавление файлов в приложение  
  В этом разделе вы добавите в приложение две страницы и изображение.  
   
 #### <a name="to-add-a-home-screen"></a>Добавление начального экрана  
@@ -142,30 +126,17 @@ ms.lasthandoff: 09/26/2017
           xmlns:local="clr-namespace:ExpenseIt"  
           mc:Ignorable="d"   
           d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home">  
-  
+          Title="ExpenseIt - Home">    
         <Grid>  
   
         </Grid>  
     </Page>  
     ```  
   
-     Или так на Visual Basic:  
+    В Visual Basic первая строка будет немного отличаться:  
   
     ```xaml  
     <Page x:Class="ExpenseItHome"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home">  
-        <Grid>  
-  
-        </Grid>  
-    </Page>  
     ```  
   
 5.  В конструкторе откройте вкладку **MainWindow.xaml** .  
@@ -182,24 +153,14 @@ ms.lasthandoff: 09/26/2017
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
             xmlns:local="clr-namespace:ExpenseIt"  
             mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">  
-  
+            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">    
     </NavigationWindow>  
     ```  
   
-     Или так на Visual Basic:  
+    В Visual Basic первая строка будет немного отличаться:  
   
     ```xaml  
-    NavigationWindow x:Class="MainWindow"  
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-            xmlns:local="clr-namespace:ExpenseIt"  
-            mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">  
-  
-    </NavigationWindow>  
+    <NavigationWindow x:Class="MainWindow"
     ```  
   
      Так же как и в случае с ранее заданными свойствами, вы могли задать свойство `Source` в категории **Прочие** в окне **Свойства** .  
@@ -219,7 +180,7 @@ ms.lasthandoff: 09/26/2017
      Файл ExpenseReportPage.xaml на C# теперь должен выглядеть так:  
   
     ```xaml  
-    Page x:Class="ExpenseIt.ExpenseReportPage"  
+    <Page x:Class="ExpenseIt.ExpenseReportPage"  
           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
@@ -227,30 +188,17 @@ ms.lasthandoff: 09/26/2017
           xmlns:local="clr-namespace:ExpenseIt"  
           mc:Ignorable="d"   
           d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - View Expense">  
-  
+          Title="ExpenseIt - View Expense">    
         <Grid>  
   
         </Grid>  
     </Page>  
     ```  
   
-     Или так на Visual Basic:  
+    В Visual Basic первая строка будет немного отличаться:  
   
     ```xaml  
     <Page x:Class="ExpenseReportPage"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - View Expense">  
-        <Grid>  
-  
-        </Grid>  
-    </Page>  
     ```  
   
 5.  Чтобы запустить приложение, в меню **Отладка**выберите команду **Начать отладку** (или нажмите клавишу F5).  
@@ -261,7 +209,7 @@ ms.lasthandoff: 09/26/2017
   
 6.  Закройте приложение, чтобы вернуться в режим конструктора.  
   
-##  <a name="Add_Layout"></a> Создание пользовательского интерфейса  
+## <a name="creating-the-user-interface"></a>Создание пользовательского интерфейса  
  Макет позволяет упорядочивать размещение элементов, а также управлять их размером и положением при изменении размеров формы. В этом разделе вы создадите сетку с одним столбцом и тремя строками. Вы добавите элементы управления на две страницы, добавите код и, наконец, определите повторно используемые стили для элементов управления.  
   
 #### <a name="to-create-the-layout"></a>Создание макета  
@@ -289,7 +237,7 @@ ms.lasthandoff: 09/26/2017
   
 1.  Откройте файл **ExpenseItHome.xaml**.  
   
-2.  Добавьте приведенный ниже код XAML непосредственно над тегом `</Grid>` , чтобы создать элементы управления `Border`, `ListBox` и `Button` .  
+2.  Добавьте приведенный ниже код XAML непосредственно над тегом `</Grid>`, чтобы создать элементы управления `Border`, `ListBox` и `Button`.  
   
     ```xaml  
     <!-- People list -->  
@@ -305,8 +253,7 @@ ms.lasthandoff: 09/26/2017
   
       <!-- View report button -->  
       <Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"  
-    Height="25" HorizontalAlignment="Right">View</Button>  
-  
+    Height="25" HorizontalAlignment="Right">View</Button>    
     ```  
   
      Обратите внимание на то, что элементы управления появятся в окне разработки. Элементы управления можно было бы также создать, перетащив их из окна **Панель элементов** в окно разработки и задав их свойства в окне **Свойства** .  
@@ -338,8 +285,7 @@ ms.lasthandoff: 09/26/2017
     ```xaml  
     <Grid.Background>  
         <ImageBrush ImageSource="watermark.png"/>  
-    </Grid.Background>  
-  
+    </Grid.Background>    
     ```  
   
 #### <a name="to-add-a-title"></a>Добавление заголовка  
@@ -349,8 +295,7 @@ ms.lasthandoff: 09/26/2017
 2.  Найдите строку `<Grid.ColumnDefinitions>` и добавьте следующий код сразу под ней:  
   
     ```xaml  
-    <ColumnDefinition Width="230" />  
-  
+    <ColumnDefinition Width="230" />    
     ```  
   
      Слева от существующих столбцов будет создан дополнительный столбец фиксированной ширины в 230 пикселей.  
@@ -358,8 +303,7 @@ ms.lasthandoff: 09/26/2017
 3.  Найдите строку `<Grid.RowDefinitions>` и добавьте следующий код сразу под ней:  
   
     ```xaml  
-    <RowDefinition />  
-  
+    <RowDefinition />    
     ```  
   
      В начало сетки будет добавлена строка.  
@@ -378,8 +322,7 @@ ms.lasthandoff: 09/26/2017
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
             FontWeight="Bold" FontSize="18" Foreground="#0066cc">  
         View Expense Report  
-    </Label>  
-  
+    </Label>    
     ```  
   
      Содержимое файла **ExpenseItHome.xaml** на C# теперь должно выглядеть так:  
@@ -430,52 +373,10 @@ ms.lasthandoff: 09/26/2017
     </Page>  
     ```  
   
-     Или так на Visual Basic:  
+    В Visual Basic первая строка будет немного отличаться:  
   
     ```xaml  
     <Page x:Class="ExpenseItHome"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home" >  
-        <Grid Margin="10,0,10,10">  
-            <Grid.ColumnDefinitions>  
-                <ColumnDefinition Width="230" />  
-                <ColumnDefinition />  
-            </Grid.ColumnDefinitions>  
-            <Grid.RowDefinitions>  
-                <RowDefinition />  
-                <RowDefinition Height="Auto"/>  
-                <RowDefinition />  
-                <RowDefinition Height="Auto"/>  
-            </Grid.RowDefinitions>  
-            <Border Grid.Column="1" Grid.Row="1" Height="35" Padding="5" Background="#4E87D4">  
-                <Label VerticalAlignment="Center" Foreground="White">Names</Label>  
-            </Border>  
-            <!-- People list -->  
-            <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
-            FontWeight="Bold" FontSize="18" Foreground="#0066cc">  
-                View Expense Report  
-            </Label>  
-            <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2">  
-                <ListBoxItem>Mike</ListBoxItem>  
-                <ListBoxItem>Lisa</ListBoxItem>  
-                <ListBoxItem>John</ListBoxItem>  
-                <ListBoxItem>Mary</ListBoxItem>  
-            </ListBox>  
-  
-            <!-- View report button -->  
-            <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"  
-    Height="25" HorizontalAlignment="Right">View</Button>  
-            <Grid.Background>  
-                <ImageBrush ImageSource="watermark.png"/>  
-            </Grid.Background>  
-        </Grid>  
-    </Page>  
     ```  
   
 6.  Если сейчас выполнить сборку и запуск приложения, оно должно выглядеть, как показано на рисунке ниже.  
@@ -486,11 +387,11 @@ ms.lasthandoff: 09/26/2017
   
 1.  Откройте файл **ExpenseItHome.xaml**.  
   
-2.  Выберите элемент `<Button` и добавьте следующий код XAML сразу же после элемента **HorizontalAlignment="Right"** : `Click="Button_Click"`.  
+2.  Выберите элемент `Button` и добавьте приведенный ниже код XAML сразу после элемента `HorizontalAlignment="Right"`: `Click="Button_Click"`.  
   
-     Будет добавлен обработчик событий `Click` кнопки. Код элемента **<Button** теперь должен выглядеть так:  
+     Будет добавлен обработчик событий `Click` кнопки. Код элемента **Button** теперь должен выглядеть так:  
   
-    ```  
+    ```xaml  
     <!-- View report button -->  
       <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"  
     Height="25" HorizontalAlignment="Right" Click="Button_Click">View</Button>  
@@ -505,8 +406,7 @@ ms.lasthandoff: 09/26/2017
     {  
         // View Expense Report  
         ExpenseReportPage expenseReportPage = new ExpenseReportPage();  
-        this.NavigationService.Navigate(expenseReportPage);  
-  
+        this.NavigationService.Navigate(expenseReportPage);    
     }  
     ```  
   
@@ -760,8 +660,7 @@ ms.lasthandoff: 09/26/2017
                 </DataGrid.Columns>  
             </DataGrid>  
         </Grid>  
-    </Grid>  
-  
+    </Grid>    
     ```  
   
      В элементы `<Label>` и `<Border>` будут добавлены стили.  
@@ -775,8 +674,7 @@ ms.lasthandoff: 09/26/2017
   
 2.  Добавьте следующий код XAML:  
   
-    ```xaml  
-  
+    ```xaml    
     <Grid.Resources>  
     <!-- Expense Report Data -->  
     <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">  
@@ -838,27 +736,26 @@ ms.lasthandoff: 09/26/2017
   
     ```csharp  
     // Custom constructor to pass expense report data  
-        public ExpenseReportPage(object data):this()  
-        {  
-            // Bind to expense report data.  
-            this.DataContext = data;  
-        }  
+    public ExpenseReportPage(object data):this()  
+    {  
+        // Bind to expense report data.  
+        this.DataContext = data;  
+    }  
     ```  
   
     ```vb  
     Partial Public Class ExpenseReportPage  
     Inherits Page  
-    Public Sub New()  
-    InitializeComponent()  
-    End Sub  
+        Public Sub New()  
+        InitializeComponent()  
+        End Sub  
   
-    ' Custom constructor to pass expense report data  
-    Public Sub New(ByVal data As Object)  
-    Me.New()  
-    ' Bind to expense report data.  
-    Me.DataContext = data  
-    End Sub  
-  
+        ' Custom constructor to pass expense report data  
+        Public Sub New(ByVal data As Object)  
+            Me.New()  
+            ' Bind to expense report data.  
+            Me.DataContext = data  
+        End Sub    
     End Class  
     ```  
   
@@ -873,8 +770,7 @@ ms.lasthandoff: 09/26/2017
     {  
         // View Expense Report  
         ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);  
-        this.NavigationService.Navigate(expenseReportPage);  
-  
+        this.NavigationService.Navigate(expenseReportPage);    
     }  
     ```  
   
@@ -905,8 +801,7 @@ ms.lasthandoff: 09/26/2017
     <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">  
         <Label Style="{StaticResource labelStyle}">Department:</Label>  
         <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>  
-    </StackPanel>  
-  
+    </StackPanel>    
     ```  
   
      Этот код привязывает элементы управления **Label** к соответствующим свойствам источника данных.  
@@ -924,8 +819,7 @@ ms.lasthandoff: 09/26/2017
         <DataTemplate x:Key="amountItemTemplate">  
             <Label Content="{Binding XPath=@ExpenseAmount}"/>  
         </DataTemplate>  
-    </Grid.Resources>  
-  
+    </Grid.Resources>    
     ```  
   
      Он определяет способ вывода данных отчета по расходам.  
@@ -993,5 +887,4 @@ ms.lasthandoff: 09/26/2017
 -   [Документы в WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
- [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

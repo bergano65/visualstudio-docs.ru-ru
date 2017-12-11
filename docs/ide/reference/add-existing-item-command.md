@@ -1,62 +1,62 @@
 ---
-title: "Команда Add Existing Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "project.addexistingitem"
-helpviewer_keywords: 
-  - "Добавить существующий элемент - команда"
-  - "File.AddExistingItem - команда"
+title: "Команда \"Добавить существующий элемент\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: project.addexistingitem
+helpviewer_keywords:
+- File.AddExistingItem command
+- Add Existing Item command
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: af35812ba5d01c174d8b9d53bcd9572a45b8e793
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда Add Existing Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Добавление существующего файла в текущее решение и открытие этого файла.  
+# <a name="add-existing-item-command"></a>Команда Add Existing Item
+Добавляет существующий файл в текущее решение и открывает его.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 File.AddExistingItem filename [/e:editorname]  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `filename`  
- Обязательный.  Полный путь и имя файла с расширением элемента, который необходимо добавить в текущее решение.  Если путь к файлу или имя файла содержит пробелы, то полный путь к файлу необходимо заключить в кавычки.  
+ Обязательный. Полный путь и имя файла с расширением для элемента, который нужно добавить в текущее решение. Если имя или путь файла содержат пробелы, нужно заключить весь путь в кавычки.  
   
-## Переключатели  
- \/e: `editorname`  
- Необязательный.  Имя редактора, в котором будет открыт файл.  Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
+## <a name="switches"></a>Переключатели  
+ /e: `editorname`  
+ Необязательно. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
   
- В синтаксической структуре аргумента \/e:`editorname` имена редакторов используются в том виде, в каком они отображаются в **диалоговом окне "Открыть с помощью"**, с заключением в кавычки.  Например, чтобы открыть таблицу стилей в редакторе исходного кода, необходимо ввести для аргумента \/e:`editorname` следующую строку.  
+ В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне **Открыть с помощью**, с заключением в кавычки. Например, чтобы открыть таблицу стилей в редакторе исходного кода, необходимо ввести для аргумента /e:`editorname` следующую строку:  
   
 ```  
 /e:"Source Code (text) Editor"  
 ```  
   
-## Заметки  
- Функция автозавершения пытается определить правильный путь и правильное имя файла во время их ввода пользователем.  
+## <a name="remarks"></a>Примечания  
+ Когда вы вводите данные, функция автозавершения пытается определить правильный путь и правильное имя файла.  
   
-## Пример  
- В этом примере в текущее решение добавляется файл Form1.frm.  
+## <a name="example"></a>Пример  
+ Этот пример добавляет файл Form1.frm в текущее решение.  
   
 ```  
 >File.AddExistingItem "C:\public\solution files\Form1.frm"  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Окно "Команда"](../../ide/reference/command-window.md)   
- [Поле «Поиск\/Команда»](../../ide/find-command-box.md)   
+ [Командное окно](../../ide/reference/command-window.md)   
+ [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

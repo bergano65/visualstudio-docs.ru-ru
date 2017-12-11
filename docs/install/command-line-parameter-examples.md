@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 05/06/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 0f07824b29e7851e353d472838a897853e227d6c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/09/2017
-
+ms.openlocfilehash: a3b12bfe0c289bfdefc6e3107960fd94889df287
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Примеры параметров командной строки для установки Visual Studio 2017
 Чтобы проиллюстрировать [использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md) на практике, здесь приводится несколько примеров, которые вы можете настроить в соответствии с требуемыми задачами.
@@ -43,7 +26,7 @@ ms.lasthandoff: 05/09/2017
 > Для выполнения всех команд требуются повышенные права администратора. Если запустить процесс с другими правами, появится запрос системы контроля учетных записей пользователей.
 
 > [!NOTE]
->  Чтобы объединить несколько строк в одну команду, используйте символ `^` в конце командной строки. Кроме того, можно просто поместить эти строки в одну строку. В PowerShell вместо этого используется символ обратного апострофа (`` ` ``). 
+>  Чтобы объединить несколько строк в одну команду, используйте символ `^` в конце командной строки. Кроме того, можно просто поместить эти строки в одну строку. В PowerShell вместо этого используется символ обратного апострофа (`` ` ``).
 
 * Установите минимальный экземпляр Visual Studio без интерактивных запросов с отображением хода выполнения процесса:
 ```
@@ -100,9 +83,11 @@ vs_enterprise.exe modify ^
    --passive
 ```
 
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Кроме того, вы можете сообщить о проблемах при использовании продукта в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio IDE или платформу [UserVoice](https://visualstudio.uservoice.com/forums/121579). Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы. Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio) (требуется учетная запись [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>См. также
 
  * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
  * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
  * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-

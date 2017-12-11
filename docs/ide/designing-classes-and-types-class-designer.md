@@ -1,56 +1,57 @@
 ---
-title: "Designing Classes and Types (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "types [Visual Studio], designing"
-  - "classes [Visual Studio], designing"
+title: "Конструирование классов и типов (конструктор классов) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- types [Visual Studio], designing
+- classes [Visual Studio], designing
 ms.assetid: 381481a2-87f4-475b-a780-18e85c8af350
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 07bae865601183446308a37f7c91255392fee342
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Designing Classes and Types (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-С помощью **Конструктора классов** можно не только отображать классы и типы, но также и разрабатывать их.  В следующих разделах описано, как это сделать.  
+# <a name="designing-classes-and-types-class-designer"></a>Конструирование классов и типов (конструктор классов)
+**Конструктор классов** позволяет не только визуализировать классы и типы, но также и конструировать их. Подробнее это описано в следующих разделах.  
   
 > [!NOTE]
->  При работе с конструктором классов создаваемый код перед выполнением необходимо проверять на соответствие контексту безопасности.  
+>  При работе с конструктором классов следует изучить выдаваемый им код, прежде чем выполнять его, чтобы убедиться в его соответствии текущему контексту безопасности.  
   
-## В этом подразделе  
- [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md)  
+## <a name="in-this-section"></a>Содержание  
+ [Практическое руководство. Создание типов с помощью конструктора классов](../ide/how-to-create-types-by-using-class-designer.md)  
   
- Объясняет, как использовать схему классов для создания типа.  
+ Описывает, как использовать диаграмму классов для создания типа.  
   
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Практическое руководство. Создание наследования между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
- Объясняет, как определить отношения наследования между типами.  
+ Описывает, как определить отношение наследования между типами.  
   
- [How to: Create Associations Between Types \(Class Designer\)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Практическое руководство. Создание ассоциаций между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
- Объясняет, как определить ассоциации в схеме классов.  
+ Описывает, как определить ассоциации на диаграмме классов.  
   
- [How to: Visualize a Collection Association \(Class Designer\)](../Topic/How%20to:%20Visualize%20a%20Collection%20Association%20\(Class%20Designer\).md)  
+ [Практическое руководство. Визуализация ассоциации коллекции в конструкторе класса (конструктор классов)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
- Объясняет, как определить ассоциацию коллекции в конструкторе классов.  
+ Описывает, как определить ассоциацию коллекции в конструкторе классов.  
   
- [Creating and Configuring Type Members \(Class Designer\)](../ide/creating-and-configuring-type-members-class-designer.md)  
+ [Создание и настройка членов типов (конструктор классов)](../ide/creating-and-configuring-type-members-class-designer.md)  
   
- Содержит информацию и ссылки на разделы о создании и настройке членов типов с помощью конструктора классов.  
+ Содержит сведения о создании и настройке членов типа с помощью конструктора классов, а также ссылки на соответствующие статьи.  
   
-## Связанные подразделы  
- [Viewing Types and Relationships \(Class Designer\)](../ide/viewing-types-and-relationships-class-designer.md)  
+## <a name="related-sections"></a>Связанные разделы  
+ [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)  
   
- [Refactoring Classes and Types \(Class Designer\)](../ide/refactoring-classes-and-types-class-designer.md)  
+ [Рефакторинг классов и типов (конструктор классов)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## См. также  
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>См. также  
+ [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)

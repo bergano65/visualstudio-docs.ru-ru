@@ -1,46 +1,47 @@
 ---
-title: "Задача AssignTargetPath | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+title: "Задача AssignTargetPath | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
-caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: dac2cd390d6b7b706785d4807e659ca44620def9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Задача AssignTargetPath
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Эта задача принимает список файлов и добавляет `<TargetPath>` атрибуты, если они уже не указаны.  
+# <a name="assigntargetpath-task"></a>Задача AssignTargetPath
+Эта задача принимает список файлов и добавляет атрибуты `<TargetPath>`, если они еще не указаны.  
   
-## Параметры задачи  
- В следующей таблице описаны параметры задачи `AssignTargetPath`.  
+## <a name="task-parameters"></a>Параметры задачи  
+ В следующей таблице приводятся параметры задачи `AssignTargetPath`.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`RootFolder`|Необязательный входной параметр `string`.<br /><br /> Путь к папке, содержащей целевые ссылки.|  
-|`Files`|Необязательный входной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Содержит входящий список файлов.|  
-|`AssignedFiles`|Необязательно<br /><br /> Выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`<br /><br /> Содержит результирующий список файлов.|  
+|---------------|-----------------|  
+|`RootFolder`|Необязательный входной параметр `string`.<br /><br /> Содержит путь к папке с целевыми ссылками.|  
+|`Files`|Необязательный входной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Содержит исходный список файлов.|  
+|`AssignedFiles`|Optional<br /><br /> Выходной параметр <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Содержит итоговый список файлов.|  
   
-## Заметки  
- Помимо параметров, которые перечислены выше, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который наследует от класса <xref:Microsoft.Build.Utilities.Task>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Примечания  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Пример  
- В следующем примере выполняется задача `AssignTargetPath` для настройки проекта.  
+## <a name="example"></a>Пример  
+ Следующий пример выполняет задачу `AssignTargetPath`, чтобы настроить проект.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="MyProject">  
         <AssignTargetPath  
@@ -53,6 +54,6 @@ RootFolder="Resources"
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

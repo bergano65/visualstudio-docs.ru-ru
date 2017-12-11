@@ -1,68 +1,68 @@
 ---
-title: "/Rebuild (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/rebuild - параметр Devenv"
-  - "приложения [Visual Studio], перестроение"
-  - "Devenv, /rebuild - параметр"
-  - "проекты [Visual Studio], перестроение"
-  - "rebuild - параметр Devenv (/rebuild)"
+title: "-Rebuild (devenv.exe) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /rebuild switch
+- rebuild Devenv switch (/rebuild)
+- projects [Visual Studio], rebuilding
+- /rebuild Devenv switch
+- applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fcabe7b1ce4130eb52369ff9f16900b1979b8582
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# /Rebuild (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Удаляет и затем выполняет построение заданной конфигурации решения.  
+# <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
+Удаляет и затем выполняет сборку заданной конфигурации решения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `SolnConfigName`  
- Обязательное.  Имя конфигурации решения, которая будет использоваться для повторного построения решения с именем `SolutionName`.  
+ Обязательный. Имя конфигурации решения, которая будет применяться для перестроения решения, указанного в `SolutionName`.  
   
  `SolutionName`  
- Обязательное.  Полный путь и имя файла решения.  
+ Обязательный. Полный путь и имя для файла решения.  
   
- \/project `ProjName`  
- Необязательный параметр.  Полный путь и имя файла проекта в решении.  Можно ввести путь к файлу проекта относительно папки `SolutionName`, или отображаемое имя проекта, или полный путь к файлу проекта и его имя.  
+ /project `ProjName`  
+ Необязательно. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
   
- \/projectconfig `ProjConfigName`  
- Необязательный параметр.  Имя конфигурации построения проекта, которая будет использоваться для повторного построения проекта с именем `/project`.  
+ /projectconfig `ProjConfigName`  
+ Необязательно. Имя конфигурации сборки проекта, которая применяется при перестроении указанного `/project`.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
--   С помощью этого переключателя выполняется та же функция, что и при помощи команды меню **Перестроить решение** в интегрированной среде разработки \(IDE\).  
+-   Этот параметр выполняет те же функции, что и команда меню **Перестроить решение** в интегрированной среде разработки (IDE).  
   
--   Строки, содержащие пробелы, должны заключаться в двойные кавычки.  
+-   Строки с пробелами заключаются в двойные кавычки.  
   
--   Сводные данные для удаления и построения, включая ошибки, могут отображаться в окне **Командная строка** или любом другом системном журнале, заданном переключателем `/out`.  
+-   Сводные данные для удаления и сборки, включая ошибки, могут отображаться в окне **Команда** или любом файле журнала, указанном с помощью параметра `/out`.  
   
-## Пример  
- В следующем примере выполняется удаление и повторное построение проекта `CSharpWinApp` при помощи конфигурации построения `Debug` в конфигурации решения `Debug` `MySolution`.  
+## <a name="example"></a>Пример  
+ В этом примере выполняется удаление и перестроение проекта `CSharpWinApp` с помощью конфигурации сборки `Debug` в конфигурации решения `Debug` `MySolution`.  
   
 ```  
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [\/Build](../../ide/reference/build-devenv-exe.md)   
- [\/Clean](../../ide/reference/clean-devenv-exe.md)   
- [\/Out](../../ide/reference/out-devenv-exe.md)
+ [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
+ [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
+ [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

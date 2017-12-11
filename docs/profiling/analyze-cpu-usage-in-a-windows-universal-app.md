@@ -4,37 +4,20 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c122b08e-e3bf-43e6-bd6c-e776e178fd9a
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 4d7596a891fd0cf6eef6c99ac44e21a0392847ae
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 59669f0430760bb98dd0cb63e05f433cb3a1fe54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>Анализ загрузки ЦП в универсальных приложениях Windows (UWP)
 ![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -136,7 +119,7 @@ ms.lasthandoff: 06/30/2017
   
 |||  
 |-|-|  
-|**Общая активность ЦП (%)**|![Уравнение для общего процента](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции и функций, которые вызывала данная функция. Обратите внимание, что это отличается от графика временной шкалы **Использование ЦП** , который сравнивает общую активность приложения за период времени с общей доступной емкостью ЦП.|  
+|**Общая активность ЦП (%)**|![Уравнение для данных процента общей активности](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции и функций, которые вызывала данная функция. Обратите внимание, что это отличается от графика временной шкалы **Использование ЦП** , который сравнивает общую активность приложения за период времени с общей доступной емкостью ЦП.|  
 |**Собственная активность ЦП (%)**|![Уравнение для процента собственной активности](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции, исключая выполнение функций, которые вызывала данная функция.|  
 |**Общее время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
 |**Собственное время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
@@ -329,4 +312,5 @@ namespace CpuUseDemo
   
 ```
 ## <a name="see-also"></a>См. также
- [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+ [Профилирование в Visual Studio](../profiling/index.md)  
+ [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

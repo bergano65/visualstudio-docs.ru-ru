@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,54 +12,39 @@ helpviewer_keywords:
 - Profiling Tools,JavaScript
 - web site performance profiling
 ms.assetid: 37d02aad-ca4d-4eb0-bf66-ca3ecef31fbe
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 6c394dfcf1c0df0cb7d006592b3dc386da328876
-ms.openlocfilehash: 40c90059930b16e081d7d46a24c1b93bdc34f98a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8e33605b75dfe80bf755081692bc8a4991def801
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Практическое руководство. Профилирование кода JavaScript в веб-страницах
 Средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] могут собирать данные о производительности для кода JavaScript, который выполняется в веб-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], на произвольной веб-странице или в приложении JavaScript путем использования метода профилирования инструментирования.  
   
- **Requirements**  
+ **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 -   Internet Explorer 8 или более поздней версии.  
   
 > [!WARNING]
->  Сведения о профилировании JavaScript в приложениях для Магазина Windows см. в разделе [Память JavaScript](../profiling/javascript-memory.md). 
+>  Сведения о профилировании JavaScript в приложениях универсальной платформы Windows см. в разделе [Память JavaScript](../profiling/javascript-memory.md). 
   
  Вы можете использовать мастер профилирования для создания сеанса производительности. Укажите способ инструментирования, а затем выберите вариант профилирования JavaScript на странице "Инструментирование" диалогового окна свойств для сеанса производительности.  
   
- При указании профилирования JavaScript профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], который выполняется на сервере.  
+ При указании профилирования JavaScript профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , который выполняется на сервере.  
   
--   Для веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], который выполняется на сервере.  
+-   Для веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , который выполняется на сервере.  
   
 -   На произвольной веб-странице профилируется код JavaScript, который выполняется в браузере.  
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Профилирование JavaScript в проекте веб-приложения ASP.NET  
   
-1.  В [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] откройте веб-проект [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+1.  В [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]откройте веб-проект [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .  
   
 2.  В меню **Анализ** выберите команду **Запустить мастер производительности**.  
   

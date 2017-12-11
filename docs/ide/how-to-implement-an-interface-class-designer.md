@@ -1,56 +1,57 @@
 ---
-title: "How to: Implement an Interface (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "interfaces [Visual Studio], implementing"
-  - "interfaces [Visual Studio]"
+title: "Практическое руководство. Реализация интерфейса (конструктор классов) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- interfaces [Visual Studio], implementing
+- interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f77a079a32cadb4a994e8874df2e9ae97dd93bf0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Implement an Interface (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Конструктор классов позволяет реализовать интерфейс на схеме классов путем подключения интерфейса к классу, который предоставляет код для методов интерфейса.  Конструктор классов создает реализацию интерфейса и отображает отношение между интерфейсом и классом как отношение наследования.  Чтобы реализовать интерфейс, необходимо нарисовать линию наследования между интерфейсом и классом или перетащить интерфейс из окна классов.  
+# <a name="how-to-implement-an-interface-class-designer"></a>Практическое руководство. Реализация интерфейса (конструктор классов)
+В конструкторе классов можно реализовать интерфейс на диаграмме классов путем подключения его к классу, который предоставляет код для методов интерфейса. Конструктор классов создает реализацию интерфейса и отображает связь между интерфейсом и классом в виде отношения наследования. Вы можете реализовать интерфейс, нарисовав между интерфейсом и классом линию наследования или перетащив интерфейс из представления классов.  
   
 > [!TIP]
->  Интерфейсы создаются точно так же, как и другие типы.  Если интерфейс существует, но не отображается на схеме классов, то сначала необходимо отобразить его.  Дополнительные сведения см. в разделах [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md) и [How to: View Existing Types \(Class Designer\)](../Topic/How%20to:%20View%20Existing%20Types%20\(Class%20Designer\).md).  
+>  Вы можете создавать интерфейсы точно так же, как и другие типы. Если интерфейс существует, но отсутствует на диаграмме классов, сначала отобразите его. Дополнительные сведения см. в разделах [Практическое руководство. Создание типов с помощью конструктора классов](../ide/how-to-create-types-by-using-class-designer.md) и [Практическое руководство. Просмотр существующих типов (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md).  
   
-### Реализация интерфейса с помощью линии наследования  
+### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Реализация интерфейса с помощью рисования линии наследования  
   
-1.  На схеме классов отобразите интерфейс и класс, который будет реализовать интерфейс.  
+1.  Отобразите на диаграмме классов интерфейс и класс, которые реализуют интерфейс.  
   
-2.  Нарисуйте линию наследования от класса к интерфейсу.  
+2.  Нарисуйте линию наследования от класса и интерфейса.  
   
-     К классу будет прикреплена метка с именем интерфейса, идентифицирующим отношение наследования.  Visual Studio создает заглушки для всех членов интерфейса.  
+     Отображается интерфейс без описания операций, подключенный к классу, а метка с именем интерфейса идентифицирует наследственную связь. Visual Studio создает заглушки для всех членов интерфейса.  
   
- Дополнительные сведения см. в разделе [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Создание наследования между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
-### Реализация интерфейса из "Окна классов"  
+### <a name="to-implement-an-interface-from-the-class-view-window"></a>Реализация интерфейса из окна представления классов  
   
-1.  На схеме классов отобразите класс, который будет реализовать интерфейс.  
+1.  Отобразите на диаграмме классов класс, который должен реализовать интерфейс.  
   
-2.  Откройте "Окно классов" и перейдите к интерфейсу.  
+2.  Откройте представление классов и найдите интерфейс.  
   
     > [!TIP]
-    >  Если "Окно классов" не открыто, откройте его из меню **Вид**.  Дополнительные сведения об "Окне классов" см. в разделе [Viewing Classes and Their Members](http://msdn.microsoft.com/ru-ru/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    >  Если представление классов не открыто, откройте его из меню **Вид**. Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
-3.  Перетащите узел интерфейса к фигуре класса на схеме.  
+3.  Перетащите узел интерфейса на фигуру класса на диаграмме.  
   
-     К классу будет прикреплена метка с именем интерфейса, идентифицирующим отношение наследования.  Visual Studio создает заглушки для всех членов интерфейса. На данном этапе интерфейс реализован.  
+     Отображается интерфейс без описания операций, подключенный к классу, а метка с именем интерфейса идентифицирует наследственную связь. Visual Studio создает заглушки для всех членов интерфейса, на этом этапе реализуется интерфейс.  
   
-## См. также  
- [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md)   
- [How to: View Existing Types \(Class Designer\)](../Topic/How%20to:%20View%20Existing%20Types%20\(Class%20Designer\).md)   
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [Refactoring Classes and Types \(Class Designer\)](../ide/refactoring-classes-and-types-class-designer.md)
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Создание типов с помощью конструктора классов](../ide/how-to-create-types-by-using-class-designer.md)   
+ [Практическое руководство. Просмотр существующих типов (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md)   
+ [Практическое руководство. Создание наследования между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
+ [Рефакторинг классов и типов (конструктор классов)](../ide/refactoring-classes-and-types-class-designer.md)

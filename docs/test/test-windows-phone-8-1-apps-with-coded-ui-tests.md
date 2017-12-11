@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 01b31305ba4ed3706e6368a2b8d9963e524c9c1a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Тестирование приложений Windows UWP и приложений Windows Phone 8.1 с помощью закодированных тестов пользовательского интерфейса
 
@@ -353,7 +336,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>В. Как создать закодированные тесты ИП для приложений универсальной платформы Windows (UWP)?  
  **О**. В зависимости от платформы, на которой выполняется тестирование приложения UWP, создание проекта закодированного теста ИП осуществляется одним из следующих способов.  
   
--   Приложение UWP, работающее на локальном компьютере, будет выполняться как приложение для Магазина. Чтобы проверить это, необходимо использовать шаблон **проекта закодированного теста ИП (Windows)** . Чтобы найти этот шаблон при создании нового проекта, перейдите к узлу **Windows**, **Универсальный** . Или перейдите к узлу **Windows**, **Windows 8**, **Windows** .  
+-   Приложение универсальной платформы Windows, работающее на локальном компьютере, будет выполняться как приложение универсальной платформы Windows. Чтобы проверить это, необходимо использовать шаблон **проекта закодированного теста ИП (Windows)** . Чтобы найти этот шаблон при создании нового проекта, перейдите к узлу **Windows**, **Универсальный** . Или перейдите к узлу **Windows**, **Windows 8**, **Windows** .  
   
 -   Приложение UWP, работающее на мобильном устройстве или в эмуляторе, будет выполняться как приложение Windows Phone. Чтобы проверить это, необходимо использовать шаблон **проекта закодированного теста ИП (Windows Phone)** . Чтобы найти этот шаблон при создании нового проекта, перейдите к узлу **Windows**, **Универсальный** . Или перейдите к узлу **Windows**, **Windows 8**, **Windows Phone** .  
   
@@ -387,10 +370,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 </RunSettings>  
 ```  
   
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>В. В чем отличия закодированных тестов ИП для XAML-приложений Магазина Windows и приложений Windows Phone?  
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-uwp-apps-and-windows-phone-apps"></a>В. В чем отличия закодированных тестов пользовательского интерфейса для XAML-приложений универсальной платформы Windows и приложений Windows Phone?  
  **О**. Существуют следующие основные различия.  
   
-|Функция|Приложения для Магазина Windows|Приложения Windows Phone|  
+|Функция|Приложения универсальной платформы Windows|Приложения Windows Phone|  
 |-------------|------------------------|------------------------|  
 |Цель для запуска тестов|Локальный или удаленный компьютер. Удаленные компьютеры можно указать при использовании автоматизированного тестового случая для выполнения тестов. См. раздел [Автоматизация тестового случая в Microsoft Test Manager](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager).|Эмулятор или устройство. См. раздел [В. Тесты можно выполнять только на эмуляторе или можно использовать и физическое устройство?](#TestingPhoneAppsCodedUI_EmulatorDevice) ранее.|  
 |Выполнение из командной строки|Файл параметров не требуется для указания цели.|Для указания цели требуется файл Runsettings.|  
@@ -399,11 +382,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Выполнение автоматизированных тестов в MTM|Поддерживается.|Не поддерживается.|  
 |Тесты на основе данных|Сведения об использовании внешних источников данных и атрибута DataSource тестового метода см. в разделе [Тесты на основе данных](../test/creating-a-data-driven-coded-ui-test.md) .|Данные указываются в строке с использованием атрибута DataRow тестового метода. См. раздел [Использование закодированных тестов ИП на основе данных для приложений Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) этой статьи.|  
   
- Сведения о закодированных тестах пользовательского интерфейса для приложений Магазина Windows см. в разделе [Тестирование приложений Windows UWP и приложений Магазина Windows 8.1 с помощью закодированных тестов пользовательского интерфейса](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md).  
+ Сведения о закодированных тестах пользовательского интерфейса для приложений универсальной платформы Windows см. в разделе [Тестирование приложений универсальной платформы Windows с помощью закодированных тестов пользовательского интерфейса](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md).  
   
 ## <a name="external-resources"></a>Внешние ресурсы  
  Блог Microsoft Visual Studio Application Lifecycle Management: [Использование закодированных тестов пользовательского интерфейса для проверки XAML-приложений Windows Phone](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
 ## <a name="see-also"></a>См. также  
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
-

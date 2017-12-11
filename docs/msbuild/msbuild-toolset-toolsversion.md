@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,39 +13,24 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 6a45db14ee055c4fbdf738cf36df503a4a1fffd0
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/31/2017
-
+ms.openlocfilehash: 85d570564ba3e82808f0876ead938f535368ec29
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл microsoft.common.tasks, файл microsoft.common.targets и такие компиляторы, как csc.exe и vbc.exe. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>Атрибут ToolsVersion  
- Укажите набор инструментов в атрибуте `ToolsVersion` элемента [Проект](../msbuild/project-element-msbuild.md) в файле проекта. В приведенном ниже примере показано, что проект должен быть построен с помощью набора инструментов MSBuild 12.0.  
+ Укажите набор инструментов в атрибуте `ToolsVersion` элемента [Проект](../msbuild/project-element-msbuild.md) в файле проекта. В приведенном ниже примере показано, что сборка проекта должна быть выполнена с помощью набора инструментов MSBuild 15.0.  
   
 ```xml  
-<Project ToolsVersion="12.0" ... </Project>  
+<Project ToolsVersion="15.0" ... </Project>  
 ```  
   
 ## <a name="how-the-toolsversion-attribute-works"></a>Как работает атрибут ToolsVersion  
@@ -134,4 +118,3 @@ ms.lasthandoff: 05/31/2017
 ## <a name="see-also"></a>См. также  
  [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)
-

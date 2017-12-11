@@ -1,26 +1,26 @@
 ---
-title: "Страница &#171;Клавиатура&#187;, папка &#171;Среда&#187;, диалоговое окно &#171;Параметры&#187; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Environment.Keyboard"
+title: "Страница \"Клавиатура\", папка \"Среда\", диалоговое окно \"Параметры\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.ToolsOptionsPages.Environment.Keyboard
 ms.assetid: 038da8dc-6126-4f3e-a361-a58cc04cafb3
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 921546055618ef107df2f87c7e400fccfd0f40d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Страница &#171;Клавиатура&#187;, папка &#171;Среда&#187;, диалоговое окно &#171;Параметры&#187;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Эта страница служит для назначения клавиш клавиатуры.  Дополнительные сведения о назначении клавиш см. в разделе [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)  
+# <a name="keyboard-environment-options-dialog-box"></a>Страница «Клавиатура», папка «Среда», диалоговое окно «Параметры»
+Эта страница служит для назначения клавиш клавиатуры. Дополнительные сведения о назначении клавиш см. в разделе [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

@@ -4,8 +4,7 @@ description: "Доменные политики и другие операции
 ms.date: 05/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,27 +17,11 @@ ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
 ms.author: heaths
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8f38b2707376d4bee8852ad107980fa925114d99
-ms.openlocfilehash: 05c5fd9e4be4cbf7d40e27c7c97793bc2466efe3
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/05/2017
-
+ms.openlocfilehash: ff6cc33a9bd7e5feddf83f770ef008ff6c33e4a9
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Настройка параметров по умолчанию для корпоративного развертывания Visual Studio
 
@@ -58,24 +41,34 @@ ms.lasthandoff: 05/05/2017
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`
 3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup` (на 64-разрядных операционных системах)
 
-Некоторые значения реестра устанавливаются автоматически при первом использовании, если они не были настроены ранее. Это гарантирует, что при последующих установках будут использоваться такие же значения. Они хранятся в втором разделе реестра, `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`.
+> [!IMPORTANT]
+> Если вы не задаете раздел `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup`, но вместо этого задаете один из других разделов, в 64-разрядных операционных системах необходимо задать оба других раздела. Эта проблема будет устранена в будущих обновлениях продукта.
 
-Вы можете задать следующие значения реестра.
+Некоторые параметры реестра устанавливаются автоматически при первом использовании, если они не были настроены ранее. Это гарантирует, что при последующих установках будут использоваться такие же значения. Они хранятся в втором разделе реестра, `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`.
 
-| **Name** | **Type** | **Default** | **Описание** |
+Вы можете задать указанные ниже значения реестра.
+
+| **Имя** | **Type** | **Default** | **Описание** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` или `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Каталог, где хранятся манифесты пакетов и полезные данные (необязательно). Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Сохранение полезных данных пакетов даже после их установки. Это значение можно изменить в любое время. После отключения этой политики удаляются все кэшированные полезные данные пакетов для экземпляров, которые вы восстанавливаете или изменяете. Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |
-| `SharedInstallationPath` | `REG_SZ` или `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Каталог, в котором устанавливаются некоторые пакеты, используемые совместно несколькими версиями экземпляров Visual Studio. Это значение можно изменить в любое время, но все изменения повлияют только на будущие установки. Все уже установленные продукты следует оставить на прежних местах, поскольку при перемещении они могут работать неправильно. |
+| `SharedInstallationPath` | `REG_SZ` или `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Каталог, в котором устанавливаются некоторые пакеты, используемые совместно несколькими версиями экземпляров Visual Studio. Это значение можно изменить в любое время, но все изменения повлияют только на будущие установки. Все уже установленные продукты необходимо оставить на прежних местах, так как при перемещении они могут работать неправильно. |
 
 > [!IMPORTANT]
 > Если вы измените политику реестра `CachePath` после любой установки, необходимо перенести существующий кэш пакетов в новое расположение и проверить его защиту, чтобы `SYSTEM` и `Administrators` имели полный доступ, а `Everyone` — доступ на чтение.
 > Если кэш не будет перенесен или правильно защищен, при последующих установках могут возникнуть проблемы.
+
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Ниже приведены несколько дополнительных вариантов:
+* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
+* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>См. также
 
  * [Установка Visual Studio](install-visual-studio.md)
  * [Отключение или перемещение кэша пакетов](disable-or-move-the-package-cache.md)
  * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
- * [Сообщение о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

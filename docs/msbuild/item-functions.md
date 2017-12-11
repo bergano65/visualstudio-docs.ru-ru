@@ -1,35 +1,35 @@
 ---
-title: "Функции элементов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, Функции элементов"
+title: "Функции элементов | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функции элементов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Начиная с MSBuild 4.0, код в задачах и целях может вызывать функции элементов для получения сведений об элементах проекта.  Эти функции упрощают получение элементов Distinct\(\) и занимают меньше времени, чем циклический просмотр всех элементов.  
+# <a name="item-functions"></a>Функции элементов
+Начиная с MSBuild 4.0, код в задачах и целевых объектах может вызывать функции элементов для получения сведений об элементах в проекте. Эти функции упрощают получение элементов Distinct() и выполняются быстрее, чем перебор элементов.  
   
-## Функции элементов строки  
- Можно использовать методы и свойства строки в платформе .NET Framework позволяет работать с переданным ей значение элемента.  Для методов <xref:System.String> укажите имя метода.  Для свойств <xref:System.String> укажите имя свойства после "get\_".  
+## <a name="string-item-functions"></a>Строковые функции элементов  
+ Строковые методы и свойства в .NET Framework можно использовать для обработки любого значения элемента. Для методов <xref:System.String> укажите имя метода. Для свойств <xref:System.String> укажите имя свойства после "get_".  
   
- Для элементов, имеющих несколько строк, метод строки или выполнения свойства на каждой строке.  
+ В элементах, имеющих несколько строк, строковый метод или строковое свойство выполняются для каждой строки.  
   
- В следующем примере показано, как использовать эти функции элемента строки.  
+ Следующий пример показывает, как использовать строковые функции элементов.  
   
-```  
+```xml  
 <ItemGroup>  
     <theItem Include="andromeda;tadpole;cartwheel" />  
 </ItemGroup>  
@@ -50,25 +50,25 @@ caps.handback.revision: 28
   -->  
 ```  
   
-## Встроенные функции элементов  
- Встроенные функции, доступные для элементов, перечислены в таблице ниже.  
+## <a name="intrinsic-item-functions"></a>Встроенные функции элементов  
+ В следующей таблице перечислены доступные для элементов встроенные функции.  
   
 |Функция|Пример|Описание|  
-|-------------|------------|--------------|  
+|--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Возвращает количество элементов.|  
-|`DirectoryName`|`@(MyItem->DirectoryName())`|Возвращает количество `Path.DirectoryName` для каждого элемента.|  
-|`Distinct`|`@(MyItem->Distinct())`|Возвращает элементы, имеющие различные значения `Include`.  Метаданные игнорируются.  При сравнении регистр не учитывается.|  
-|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Возвращает элементы, имеющие различные значения `itemspec`.  Метаданные игнорируются.  При сравнении учитывается регистр.|  
-|`Reverse`|`@(MyItem->Reverse())`|Возвращает порядок элементов в обратном порядке.|  
-|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Возвращает `boolean`, указывающее, имеет ли какой\-либо элемент заданного метаданные имя и значение.  При сравнении регистр не учитывается.|  
-|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Возвращает элементы с их очищенные метаданные.  Только `itemspec` сохранятьо.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName")`|Возвращает элементы, имеющие заданное имя метаданных.  При сравнении регистр не учитывается.|  
-|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Возвращает значения метаданных, которые имеют имя метаданных.|  
-|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue")`|Возвращает элементы с заданными метаданными имя и значение.  При сравнении регистр не учитывается.|  
+|`DirectoryName`|`@(MyItem->DirectoryName())`|Возвращает эквивалент `Path.DirectoryName` для каждого элемента.|  
+|`Distinct`|`@(MyItem->Distinct())`|Возвращает элементы, имеющие уникальные значения `Include`. Метаданные игнорируются. При сравнении регистр не учитывается.|  
+|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Возвращает элементы, имеющие уникальные значения `itemspec`. Метаданные игнорируются. При сравнении учитывается регистр.|  
+|`Reverse`|`@(MyItem->Reverse())`|Возвращает элементы в обратном порядке.|  
+|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Возвращает `boolean`, чтобы указать, имеет ли какой-либо элемент заданное имя и значение метаданных. При сравнении регистр не учитывается.|  
+|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Возвращает элементы с очищенными метаданными. Сохраняется только `itemspec`.|  
+|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Возвращает элементы, для которых указано имя метаданных. При сравнении регистр не учитывается.|  
+|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Возвращает значения метаданных, имеющие имя метаданных.|  
+|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Возвращает элементы, для которых указано имя и значение метаданных. При сравнении регистр не учитывается.|  
   
- В следующем примере показано, как использовать встроенные функции элемента.  
+ Следующий пример показывает, как использовать встроенные функции элементов.  
   
-```  
+```xml  
 <ItemGroup>  
     <TheItem Include="first">  
         <Plant>geranium</Plant>  
@@ -101,5 +101,5 @@ caps.handback.revision: 28
   -->  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Элементы](../msbuild/msbuild-items.md)

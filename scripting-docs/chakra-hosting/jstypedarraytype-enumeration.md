@@ -1,34 +1,38 @@
 ---
-title: "Перечисление JsTypedArrayType | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Перечисление JsTypedArrayType | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 67f3e51c-acbb-4fff-a414-0868a0dd5051
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 60fc3fbc2c81863894a824868d286c16c8e02ae5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Перечисление JsTypedArrayType
+# <a name="jstypedarraytype-enumeration"></a>Перечисление JsTypedArrayType
 Тип типизированного массива JavaScript.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 enum JsTypedArrayType;  
 ```  
   
-## Участники  
+## <a name="members"></a>Члены  
   
-### Значения  
+### <a name="values"></a>Значения  
   
 |Имя|Описание|  
-|---------|--------------|  
+|----------|-----------------|  
 |`JsArrayTypeInt8`|Массив int8.|  
 |`JsArrayTypeUint8`|Массив uint8.|  
 |`JsArrayTypeUint8Clamped`|Массив uint8 с ограничениями.|  
@@ -39,8 +43,8 @@ enum JsTypedArrayType;
 |`JsArrayTypeFloat32`|Массив float32.|  
 |`JsArrayTypeFloat64`|Массив float64.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

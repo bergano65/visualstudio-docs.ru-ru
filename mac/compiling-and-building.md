@@ -1,19 +1,17 @@
 ---
-title: "Компиляция и сборка в Visual Studio для Mac"
+title: "Компиляция и сборка в Visual Studio для Mac | Документы Майкрософт"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
+ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: ea98f80d037a03912cf3d8212588ebb7520b4bbb
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Компиляция и сборка в Visual Studio для Mac
 
 Visual Studio для Mac можно использовать для сборки приложений и создания сборок во время разработки проекта. Важно выполнять раннюю и частую компиляцию и сборку кода, чтобы выявить несоответствия типов и другие ошибки времени компиляции.
@@ -46,9 +44,9 @@ Visual Studio для Mac также можно использовать для �
 
 Подсистему сборки MSBuild можно использовать для сборки приложений с помощью командной строки.
 
-Дополнительные сведения об использовании MSBuild см. в разделе [MSBuild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild).
+Дополнительные сведения об использовании MSBuild см. в разделе [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 
 ### <a name="using-visual-studio-team-services"></a>Использование Visual Studio Team Services
 
-* [Сборка приложения Xamarin](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin)
+* [Сборка приложения Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [Непрерывная интеграция с помощью Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

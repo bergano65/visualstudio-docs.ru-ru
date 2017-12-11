@@ -1,12 +1,11 @@
 ---
-title: Remove Visual Studio 2017 | Microsoft Docs
-description: Learn how to remove Visual Studio, step-by-step.
+title: "Удаление Visual Studio 2017 | Документы Майкрософт"
+description: "Сведения о поэтапном удалении среды Visual Studio."
 ms.custom: 
 ms.date: 09/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,41 +21,46 @@ ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
 ms.author: heaths
 manager: erickn
+ms.openlocfilehash: 3c859b0023c9ea282afde837b17b7c93f3f4fbd7
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 37e7e36c04115dc1ccf4d0b8d78f047459108c80
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/13/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/22/2017
 ---
+# <a name="remove-visual-studio"></a>Удаление Visual Studio
 
-# <a name="remove-visual-studio"></a>Remove Visual Studio
+Если произошла неустранимая ошибка, из-за которой невозможно восстановить или удалить Visual Studio, вы можете запустить средство `InstallCleanup.exe`, чтобы удалить файлы установки и сведения о продукте. Запуск этого средства следует рассматривать как крайнюю меру в случае, если не удается восстановить или удалить среду, так как оно может удалить компоненты из других установок Visual Studio или других продуктов, которые нужно восстановить.
 
-If you encounter a catastrophic error and cannot repair or uninstall Visual Studio, you can run the `InstallCleanup.exe` tool to remove installation files and product information. This is to be done as a last resort if repair or uninstall fail, and may uninstall features from other Visual Studio installations or other products which will need to be repaired.
+При выполнении приведенных ниже инструкций средство можно запускать с различными параметрами командной строки, которые определяют следующее поведение:
 
-In the instructions below, you can run the tool with different command line switches with the following behavior.
-
-| Switch | Behavior |
+| Параметр | Поведение |
 | ------ | -------- |
-| `-i`   | This is the default if no other switch is passed and will remove only the main installation directory and product information. This behavior is preferable if you intend to reinstall the same version after you run the `InstallCleanup.exe` tool. |
-| `-f`   | This will remove the main installation directory, product information, and most other features installed outside the installation directory that may be shared with other Visual Studio installations or other products. This behavior is preferable if you intend to remove Visual Studio without reinstalling later. |
+| `-i`   | Этот параметр используется по умолчанию, если не переданы другие параметры. Он приводит к удалению только главного каталога установки и сведений о продукте. Такое поведение является предпочтительным, если после запуска средства `InstallCleanup.exe` вы планируете установить ту же версию. |
+| `-f`   | При указании этого параметра удаляются главный каталог установки, сведения о продукте и большинство других компонентов, которые установлены вне каталога установки и могут использоваться другими экземплярами Visual Studio или иными продуктами. Это поведение является предпочтительным, если вы планируете удалить среду Visual Studio и не устанавливать ее повторно. |
 
-1. Close the Visual Studio Installer.
-2. Open an administrator command prompt. To do this, follow these steps:
-   * On the **Start** menu, click **Run** (Start + R).
-   * Type **cmd**.
-   * Right-click **Command Prompt**, and then click **Run as administrator**.
-3. Type the full path of the `InstallCleanup.exe` utility and pass whichever command line switch you desire. By default, the path of the utility is as follows:
+1. Закройте установщик Visual Studio.
+2. Откройте командную строку от имени учетной записи администратора. Чтобы открыть командную строку с правами администратора, выполните указанные ниже действия.
+   * В меню **Пуск** выберите пункт **Выполнить** (Пуск + R).
+   * Наберите команду **cmd**.
+   * Щелкните правой кнопкой мыши пункт **Командная строка**и выберите команду **Запуск от имени администратора**.
+3. Введите полный путь к служебной программе `InstallCleanup.exe` и передайте в командной строке требуемые параметры. По умолчанию эта программа расположена по следующему адресу:
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```
 
-If you do not find `InstallCleanup.exe` under the Visual Studio Installer directory - always located at `%ProgramFiles(x86)%\Microsoft Visual Studio` - please follow the instructions to [install Visual Studio](install-visual-studio.md) and when the workload selection screen is displayed, close the window and follow the steps above again.
+Если вы не нашли файл `InstallCleanup.exe` в каталоге установщика Visual Studio, который всегда находится в `%ProgramFiles(x86)%\Microsoft Visual Studio`, следуйте инструкциям по [установке Visual Studio](install-visual-studio.md). Когда появится экран выбора рабочей нагрузки, закройте окно и выполните описанные выше действия снова.
 
-## <a name="see-also"></a>See also
-* [Install Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Modify Visual Studio 2017](modify-visual-studio.md)
-* [Uninstall Visual Studio 2017](uninstall-visual-studio.md)
-* [How to Report a Problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
+Ниже приведены несколько дополнительных вариантов:
+* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
+* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
+
+## <a name="see-also"></a>См. также
+* [Установка Visual Studio 2017](install-visual-studio.md)
+* [Обновление Visual Studio 2017](update-visual-studio.md)
+* [Изменение Visual Studio 2017](modify-visual-studio.md)
+* [Удаление Visual Studio 2017](uninstall-visual-studio.md)

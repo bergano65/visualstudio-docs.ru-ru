@@ -1,27 +1,29 @@
 ---
-title: "Функция JsGetPrototype | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsGetPrototype"
-helpviewer_keywords: 
-  - "JsGetPrototype - функция"
+title: "Функция JsGetPrototype | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsGetPrototype
+helpviewer_keywords: JsGetPrototype function
 ms.assetid: 05d743fc-103e-4a92-86f2-a063f39a2a6f
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cc1f3ae9780ca183d4d17c3eccb70bb4d56a50f3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsGetPrototype
+# <a name="jsgetprototype-function"></a>Функция JsGetPrototype
 Возвращает прототип объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsGetPrototype(  
@@ -30,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetPrototype(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
  Объект, прототип которого возвращается.  
   
  `prototypeObject`  
  Прототип объекта  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

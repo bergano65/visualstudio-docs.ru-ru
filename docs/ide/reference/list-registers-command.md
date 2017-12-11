@@ -1,32 +1,32 @@
 ---
-title: "Команда List Registers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listregisters"
-helpviewer_keywords: 
-  - "Debug.ListRegisters - команда"
-  - "Вывести регистры - команда"
-  - "ListRegisters - команда"
+title: "Команда \"Вывести регистры\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listregisters
+helpviewer_keywords:
+- list registers command
+- Debug.ListRegisters command
+- ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 83f4830b79c4492337abb6052b1b2803b34b5a9b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда List Registers
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Отображает значения выбранных регистров и позволяет вносить изменения в список отображаемых регистров.  
+# <a name="list-registers-command"></a>Команда List Registers
+Отображает значение выбранных регистров и позволяет изменить список отображаемых регистров.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]  
@@ -34,36 +34,36 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]  
 ```  
   
-## Переключатели  
- \/Display \[{`register`&#124;`registerGroup`}...\]  
- Отображает значения заданных элементов `register` или `registerGroup`.  Если элементы `register` или `registerGroup` не заданы, отображается список регистров по умолчанию.  Если этот переключатель не указан, поведение будет таким же.  Примеры.  
+## <a name="switches"></a>Переключатели  
+ /Display [{`register`&#124;`registerGroup`}...]  
+ Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:  
   
  `Debug.ListRegisters /Display eax`  
   
- , эквивалентно выражению  
+ эквивалентно  
   
  `Debug.ListRegisters eax`  
   
- \/List  
+ /List  
  Отображает все группы регистров в списке.  
   
- \/Watch \[{`register`&#124;`registerGroup`}...\]  
- Добавляет к списку одно или несколько значений `register` или `registerGroup`.  
+ /Watch [{`register`&#124;`registerGroup`}...]  
+ Добавляет одно или несколько значений `register` или `registerGroup` в список.  
   
- \/Unwatch \[{`register`&#124;`registerGroup`}...\]  
- Удаляет из списка одно или несколько значений `register` или `registerGroup`.  
+ /Unwatch [{`register`&#124;`registerGroup`}...]  
+ Удаляет одно или несколько значений `register` или `registerGroup` из списка.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Вместо `Debug.ListRegisters` можно использовать псевдоним `r`.  
   
-## Пример  
- В данном примере для отображения значений группы регистров `Flags` вместо `Debug.ListRegisters` используется псевдоним `r`.  
+## <a name="example"></a>Пример  
+ Этот пример использует псевдоним `r` для `Debug.ListRegisters`, чтобы отобразить значения группы регистров `Flags`.  
   
 ```  
 r /Display Flags  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Общие сведения об отладке: окно регистров](../../debugger/debugging-basics-registers-window.md)   
  [Практическое руководство. Использование окна регистров](../../debugger/how-to-use-the-registers-window.md)

@@ -4,8 +4,7 @@ description: "{{ЗАПОЛНИТЕЛЬ}}"
 ms.date: 08/14/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,14 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 72e217f8543b6b150cc0587c36fac692e150179d
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 7267b279a94094eb58fe51edd1ad36cd8967c711
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Управление обновлением сетевых развертываний Visual Studio
 
@@ -76,16 +74,18 @@ ms.lasthandoff: 09/26/2017
 Так как Visual Studio 2017 [сохраняет параметры в частном реестре](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), вы не можете изменить реестр обычным способом. Но Visual Studio предоставляет служебную программу `vsregedit.exe`, с помощью которой вы можете изменить параметры Visual Studio. Чтобы отключить уведомления, выполните следующую команду:
 
 ```cmd
-vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0 
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 (Не забудьте заменить каталог в соответствии с установленным экземпляром, который нужно изменить.)
 
 > [!TIP]
 > Используйте [vswhere.exe](tools-for-managing-visual-studio-instances.md#detecting-existing-visual-studio-instances) , чтобы найти определенный экземпляр Visual Studio на клиентской рабочей станции.
 
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Кроме того, вы можете сообщить о проблемах при использовании продукта в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio IDE или платформу [UserVoice](https://visualstudio.uservoice.com/forums/121579). Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы. Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio) (требуется учетная запись [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>См. также
 * [Установка Visual Studio](install-visual-studio.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Средства для управления экземплярами Visual Studio](tools-for-managing-visual-studio-instances.md)
-

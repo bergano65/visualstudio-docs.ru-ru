@@ -1,11 +1,10 @@
 ---
-title: Accessibility for People with Disabilities | Microsoft Docs
+title: "Специальные функции для людей с ограниченными возможностями | Документы Майкрософт"
 ms.custom: 
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,20 +15,18 @@ ms.assetid: 6bbcfc31-edbe-4143-a703-fde023efbb62
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 06c1879b8eeefd01588b3f5e5012af779da0ef67
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: f032b58bd5829aece1b69fd8a970dc5c92db494c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/23/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>Accessibility for People with Disabilities
+# <a name="accessibility-for-people-with-disabilities"></a>Специальные функции для людей с ограниченными возможностями
 > [!TIP]
-> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
-Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] more accessible for people with disabilities.  
+Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. Следующие разделы содержат сведения о компонентах, продуктах и службах, облегчающих работу с Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] людям с ограниченными возможностями.  
 
--   [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
+-   [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
 
--   [Accessibility Features of the Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)
-
+-   [Специальные возможности средства просмотра справки](../../ide/accessibility-features-of-the-help-viewer.md)

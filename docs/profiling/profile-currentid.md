@@ -1,36 +1,36 @@
 ---
-title: "PROFILE_CURRENTID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "PROFILE_CURRENTID"
+title: "PROFILE_CURRENTID | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: PROFILE_CURRENTID
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eaf85776b08f6df56b5e441d9e0c99e239bf8ca6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PROFILE_CURRENTID
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Параметр PROFILE\_CURRENTID возвращает псевдо\-маркер для идентификатора потока или идентификатора процесса в вызове функций NameProfile, StartProfile, StopProfile, SuspendProfile и ResumeProfile.  Этот параметр используется для указания функции выполнять действия в текущем потоке или процессе, а не в специально указанном потоке или процессе.  
+# <a name="profilecurrentid"></a>PROFILE_CURRENTID
+Параметр PROFILE_CURRENTID возвращает псевдотокен для идентификатора потока или идентификатора процесса в вызове функций NameProfile, StartProfile, StopProfile, SuspendProfile и ResumeProfile. Этот параметр предписывает функции выполнять действия в текущем потоке или процессе, а не в специально указанном потоке или процессе.  
   
-## Пример  
- PROFILE\_CURRENTID определяется в файле VSPerf.h следующим образом:  
+## <a name="example"></a>Пример  
+ PROFILE_CURRENTID определяется в файле VSPerf.h следующим образом:  
   
 ```  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
 ```  
   
-## Пример  
- В следующем примере демонстрируется использование параметра PROFILE\_CURRENTID.  В этом примере PROFILE\_CURRENTID передается как параметр в вызове функции [StartProfile](../profiling/startprofile.md) для определения текущего потока.  
+## <a name="example"></a>Пример  
+ В приведенном ниже примере демонстрируется использование параметра PROFILE_CURRENTID. В этом примере PROFILE_CURRENTID передается как параметр в вызове функции [StartProfile](../profiling/startprofile.md) для определения текущего потока.  
   
 ```  
 void ExerciseProfileCurrentID()  
@@ -59,8 +59,8 @@ void ExerciseProfileCurrentID()
 }  
 ```  
   
-## См. также  
- [Справочник по API\-интерфейсам профилировщика Visual Studio \(машинный код\)](../profiling/visual-studio-profiler-api-reference-native.md)   
+## <a name="see-also"></a>См. также  
+ [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [NameProfile](../profiling/nameprofile.md)   
  [ResumeProfile](../profiling/resumeprofile.md)   
  [StartProfile](../profiling/startprofile.md)   

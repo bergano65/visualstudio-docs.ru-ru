@@ -1,30 +1,33 @@
 ---
-title: "Объекты и массивы (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "массивы [JavaScript]"
-  - "массивы [JavaScript], объекты"
+title: "Объекты и массивы (JavaScript) | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript]
+- arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6776701ba108ae0ecefc2331c2b12272e0c1be19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объекты и массивы (JavaScript)
-Объекты [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] представляют собой коллекции свойств и методов.  Методом называется функция, являющаяся членом объекта.  Свойство представляет собой значение или набор значений \(в виде массива или объекта\), который является членом объекта.  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] поддерживает 4 типа объектов:  
+# <a name="objects-and-arrays-javascript"></a>Объекты и массивы (JavaScript)
+Объекты [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] представляют собой коллекции свойств и методов. Методом называется функция, являющаяся членом объекта. Свойство представляет собой значение или набор значений (в виде массива или объекта), который является членом объекта. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] поддерживает 4 типа объектов:  
   
 -   внутренние объекты, такие как `Array` и `String`;  
   
@@ -34,10 +37,10 @@ caps.handback.revision: 15
   
 -   объекты ActiveX.  
   
-## Свойства и методы Expando  
- Все объекты в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] поддерживают свойства и методы expando, которые могут добавляться и удаляться во время выполнения.  Эти свойства и методы могут иметь любые имена и определяться числами.  Если имя свойства или метода является простым идентификатором, оно может быть указано через точку после имени объекта, например `myObj.name`, `myObj.age` и `myObj.getAge`, как показано в следующем коде.  
+## <a name="expando-properties-and-methods"></a>Свойства и методы Expando  
+ Все объекты в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] поддерживают свойства и методы expando, которые могут добавляться и удаляться во время выполнения. Эти свойства и методы могут иметь любые имена и определяться числами. Если имя свойства или метода является простым идентификатором, оно может быть указано через точку после имени объекта, например `myObj.name`, `myObj.age` и `myObj.getAge`, как показано в следующем коде.  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
 myObj.name = "Fred";  
 myObj.age = 42;  
@@ -60,9 +63,9 @@ document.write(myObj.getAge());
   
 ```  
   
- Если имя свойства или метода не является простым идентификатором или во время написания скрипта неизвестно, для обозначения свойства можно использовать выражение в квадратных скобках.  Перед добавлением к объекту имена всех свойств expando в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] преобразуются в строки.  
+ Если имя свойства или метода не является простым идентификатором или во время написания скрипта неизвестно, для обозначения свойства можно использовать выражение в квадратных скобках. Перед добавлением к объекту имена всех свойств expando в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] преобразуются в строки.  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
   
 // Add two expando properties that cannot be written in the  
@@ -78,12 +81,12 @@ myObj[100] = "100";
   
  Дополнительные сведения о создании объекта из определения см. в разделе [Создание объектов](../javascript/creating-objects-javascript.md).  
   
-## Массивы как объекты  
- В [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] объекты и массивы обрабатываются практически одинаково, поскольку массивы — это просто особый тип объекта.  И объекты, и массивы могут иметь свойства и методы.  
+## <a name="arrays-as-objects"></a>Массивы как объекты  
+ В [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] объекты и массивы обрабатываются практически одинаково, поскольку массивы — это просто особый тип объекта. И объекты, и массивы могут иметь свойства и методы.  
   
- В отличие от объектов, массивы имеют свойство `length`.  При присвоении значения элементу массива, индекс которого больше его длины \(например, `myArray[100] = "hello"`\), значение свойства `length` автоматически увеличивается до новой длины.  Аналогично, при уменьшении значения свойства `length` любой элемент с индексом за пределами длины массива удаляется.  
+ В отличие от объектов, массивы имеют свойство `length`. При присвоении значения элементу массива, индекс которого больше его длины (например, `myArray[100] = "hello"`), значение свойства `length` автоматически увеличивается до новой длины. Аналогично, при уменьшении значения свойства `length` любой элемент с индексом за пределами длины массива удаляется.  
   
-```javascript  
+```JavaScript  
 // An array with three elements  
 var myArray = new Array(3);  
   
@@ -108,9 +111,9 @@ document.write("new length is : " + myArray.length);
   
 ```  
   
- Массивы предоставляют методы для перебора членов и манипулирования ими.  В следующем примере показано получение свойств объектов, хранящихся в массиве.  
+ Массивы предоставляют методы для перебора членов и манипулирования ими. В следующем примере показано получение свойств объектов, хранящихся в массиве.  
   
-```javascript  
+```JavaScript  
 var myArray = new Array(3);  
   
 // Add some data  
@@ -128,10 +131,10 @@ myArray.forEach(function (item) {
 // 2003  
 ```  
   
-## Многомерные массивы  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] непосредственно не поддерживает многомерные массивы, но поведение многомерных массивов можно получить, сохранив их в элементах другого массива. \(В элементах массива можно сохранять любые данные, включая другие массивы.\) Например, в следующем коде создается таблица умножения чисел до 5.  
+## <a name="multi-dimensional-arrays"></a>Многомерные массивы  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] непосредственно не поддерживает многомерные массивы, но поведение многомерных массивов можно получить, сохранив их в элементах другого массива. (В элементах массива можно сохранять любые данные, включая другие массивы.) Например, в следующем коде создается таблица умножения чисел до 5.  
   
-```javascript  
+```JavaScript  
 // The size of the table.  
 var iMaxNum = 5;  
 // Loop counters.  

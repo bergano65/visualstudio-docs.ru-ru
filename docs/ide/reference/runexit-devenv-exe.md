@@ -1,60 +1,60 @@
 ---
-title: "/Runexit (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/runexit - параметр Devenv"
-  - "Devenv, runexit - параметр"
-  - "runexit - параметр Devenv"
+title: "-Runexit (devenv.exe) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- runexit Devenv switch
+- Devenv, /runexit switch
+- /runexit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fdb1cf075c97290883879537089dcee456351c8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# /Runexit (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Компилирует и выполняет заданный проект или заданное решение, а затем закрывает интегрированную среду разработки \(IDE\).  
+# <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
+Компилирует и запускает указанный проект или указанное решение, а затем закрывает интегрированную среду разработки (IDE).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 devenv /runexit {SolutionName|ProjectName}  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `SolutionName`  
- Обязательный.  Полный путь и имя файла решения.  
+ Обязательный. Полный путь и имя для файла решения.  
   
  `ProjectName`  
- Обязательный.  Полный путь и имя файла проекта.  
+ Обязательный. Полный путь и имя для файла проекта.  
   
-## Заметки  
- Компилирует и выполняет заданный проект или заданное решение в соответствии с параметрами, определенными для активной конфигурации решения.  Этот переключатель минимизирует интегрированную среду разработки \(IDE\) во время выполнения проекта или решения и закрывает IDE после завершения выполнения проекта или решения.  
+## <a name="remarks"></a>Примечания  
+ Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр свертывает интегрированную среду разработки во время выполнения проекта или решения и закрывает ее их завершения.  
   
--   Строки, содержащие пробелы, должны заключаться в двойные кавычки.  
+-   Строки с пробелами заключаются в двойные кавычки.  
   
--   Сводные данные, включая ошибки, могут отображаться в окне **Командная строка** или любом другом системном журнале, заданном переключателем `/out`.  
+-   Сводные данные, включая ошибки, могут отображаться в окне **Команда** или в любом файле журнала, указанном с помощью параметра `/out`.  
   
-## Пример  
- В этом примере выполняется решение `MySolution` в минимизированной интегрированной среде разработки \(IDE\), использующей активную конфигурацию развертывания, а затем IDE закрывается.  
+## <a name="example"></a>Пример  
+ Этот пример запускает решение `MySolution` в свернутой интегрированной среде разработки, используя активную конфигурацию развертывания, а затем закрывает эту среду.  
   
 ```  
 devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [\/Run](../../ide/reference/run-devenv-exe.md)   
- [\/Build](../../ide/reference/build-devenv-exe.md)   
- [\/Rebuild](../../ide/reference/rebuild-devenv-exe.md)   
- [\/Out](../../ide/reference/out-devenv-exe.md)
+ [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
+ [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
+ [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
+ [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

@@ -1,39 +1,23 @@
 ---
 title: "Встроенные задачи MSBuild | Документация Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 6153ab5924f66d13e2c0664ed652f8eee6f91e4c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
@@ -44,12 +28,12 @@ ms.lasthandoff: 02/22/2017
  Элемент [UsingTask](../msbuild/usingtask-element-msbuild.md) содержит встроенную задачу. Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в TARGETS-файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="" />  
@@ -91,9 +75,9 @@ ms.lasthandoff: 02/22/2017
   
  Атрибут `Type` указывает тип кода, находящийся в элементе `Code`.  
   
--   Если значением атрибута `Type` является `Class`, тогда элемент `Code` содержит код для класса, производного от интерфейса <xref:Microsoft.Build.Framework.ITask>.  
+-   Если значением атрибута `Type` является `Class`, элемент `Code` содержит код для класса, производного от интерфейса <xref:Microsoft.Build.Framework.ITask>.  
   
--   Если значением атрибута `Type` является `Method`, тогда код определяет переопределение метода `Execute` интерфейса <xref:Microsoft.Build.Framework.ITask>.  
+-   Если значением атрибута `Type` является `Method`, код определяет переопределение метода `Execute` интерфейса <xref:Microsoft.Build.Framework.ITask>.  
   
 -   Если значением атрибута `Type` является `Fragment`, тогда код определяет содержимое метода `Execute`, а не сигнатуру или оператор `return`.  
   
@@ -108,12 +92,12 @@ ms.lasthandoff: 02/22/2017
  Рассмотрим более сложную встроенную задачу. Задача HelloWorld отображает приветствие "Hello, world!". Оно отображается на устройстве регистрации ошибок по умолчанию. Как правило, это системная консоль или окно **вывода** Visual Studio. В примере элемент `Reference` используется просто для наглядности.  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="System.Xml.dll"/>  
@@ -133,7 +117,7 @@ Log.LogError("Hello, world!");
  Задачу HelloWorld можно сохранить в файл с именем HelloWorld.targets, а затем вызвать его из проекта, как показано ниже.  
   
 ```xml  
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
   <Target Name="Hello">  
     <HelloWorld />  
@@ -182,9 +166,9 @@ Log.LogError("Hello, world!");
  Как показано ниже, встроенная задача заменяет каждое вхождение токена в указанном файле на указанное значение.  
   
 ```xml  
-<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="12.0">  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll">  
+  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
     <ParameterGroup>  
       <Path ParameterType="System.String" Required="true" />  
       <Token ParameterType="System.String" Required="true" />  

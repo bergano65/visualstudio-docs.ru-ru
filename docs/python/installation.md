@@ -1,28 +1,24 @@
 ---
 title: "Установка поддержки Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 09/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ce3d3656-7ba2-490d-92df-0bb3e3badf92
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2706cbc68ea9ff14477134ca01577e4f5850f36d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 613af31a2e44cc447980b68de4b0b5642dde1262
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Установка поддержки Python в Visual Studio под управлением Windows
 
 Чтобы установить поддержку Python для Visual Studio, выполните инструкции из раздела, который соответствует вашей версии Visual Studio.
@@ -31,7 +27,7 @@ ms.lasthandoff: 07/18/2017
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
 
-Для Visual Studio 2015 и более ранних версий требуется отдельно установить любой интерпретатор Python на ваш выбор. Дополнительные сведения см. в статье [Окружения Python](python-environments.md).
+Для Visual Studio 2015 и более ранних версий требуется отдельно установить любой интерпретатор Python на ваш выбор (Python 3.5 или более ранней версии; версия 3.6 не поддерживается). Дополнительные сведения см. в статье [Окружения Python](python-environments.md). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
 
 Чтобы быстро проверить поддержку Python после установки, откройте интерактивное окно Python. Для этого нажмите клавиши Alt + I и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
 
@@ -43,20 +39,42 @@ ms.lasthandoff: 07/18/2017
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Установите Visual Studio 2017 со страницы [https://www.visualstudio.com/vs/preview](https://www.visualstudio.com/vs/).
+1. Скачайте и запустите последнюю версию установщика Visual Studio 2017.
 
-1. В установщике Visual Studio выберите рабочую нагрузку **Web & Cloud > Python Development** (Облачная и веб-разработка > Разработка Python).
+    > [!div class="nextstepaction"]
+    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Установить Visual Studio 2017 Community</a>
+
+    >[!Tip]
+    > Выпуск Community предназначен для индивидуальных разработчиков, использования при аудиторном обучении и в научных исследованиях, а также разработки решений с открытым кодом. В других целях установите <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> или <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+
+1. В установщике предлагается список рабочих нагрузок, то есть групп связанных параметров для определенных целей разработки. Для Python выберите рабочую нагрузку **Разработка на Python**.
 
     ![Рабочая нагрузка разработки Python в установщике Visual Studio](media/installation-python-workload.png)
 
-    > [!Note]
-    > Также Python входит в рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
+    Необязательно: если вы занимаетесь обработкой и анализом данных, также рекомендуется установить рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**. Эта рабочая нагрузка включает в себя поддержку Python, а также языков R и F#. Дополнительные сведения см. в разделе [Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"](../rtvs/data-science-workload.md).
 
-1. В правой части окна установщика выберите интерпретатор Python и все дополнительные средства, которые вам нужны. Например, если планируется разработать расширения C++ для Python, включите параметр **Собственные средства разработки Python**.
+    > [!Note]
+    > Рабочие нагрузки для Python и обработки и анализа данных доступны только в выпуске 15.2 среды Visual Studio 2017 и более поздних выпусках.
+
+1. В правой области установщика при необходимости выберите дополнительные параметры. Чтобы принять параметры по умолчанию, пропустите этот шаг.
 
     ![Параметры разработки Python в установщике Visual Studio](media/installation-python-options.png)
 
-1. Если на компьютере уже установлены интерпретаторы, см. раздел [Создание окружения для существующего интерпретатора](python-environments.md#creating-an-environment-for-an-existing-interpreter).
+    | Параметр | Описание | 
+    | --- | --- |
+    | Дистрибутивы Python | Выберите любое сочетание 32- и 64-разрядных вариантов дистрибутивов Python 2, Python 3, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.) |
+    | Поддержка шаблонов Cookiecutter | Устанавливает графический пользовательский интерфейс Cookicutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. статью [Использование расширения Cookicutter](cookiecutter.md). |
+    | Поддержка веб-приложений Python | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](template-web.md). |
+    | Поддержка Интернета вещей для Python | Поддерживает разработку для Windows IoT Core с помощью Python. |
+    | Встроенные средства разработки Python | Устанавливает компилятор C++ и другие компоненты, необходимые для разработки собственных расширений для Python. См. статью [Создание расширения C++ для Python](cpp-and-python.md). |
+    | Основные инструменты облачных служб Azure | Обеспечивает дополнительную поддержку для разработки облачных служб Azure на Python. См. статью [Проекты облачных служб Azure](template-azure-cloud-service.md). |
+
+1. После установки в установщике предлагаются команды для изменения, запуска, восстановления и удаления Visual Studio. Если доступны обновления для установленных компонентов Visual Studio, кнопка **Изменить** меняется на **Обновить**. (Команду "Изменить" в этом случае можно выбрать в раскрывающемся меню.) Запускать среду Visual Studio и установщик можно также из меню "Пуск" в Windows. Для этого выполните поиск по запросу "Visual Studio".
+
+    ![Запуск, изменение или удаление Visual Studio посредством установщика](media/installation-vs-launch.png)
+
+
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -108,3 +126,4 @@ ms.lasthandoff: 07/18/2017
 
 Средства Python для Visual Studio 1.5 и более ранних версий можно установить только для текущего пользователя. Путь установки будет выглядеть так: `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>` Здесь &lt;VS_ver&gt; и &lt;PTVS_ver&gt; имеют то же значение, которое описано выше.
 
+<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

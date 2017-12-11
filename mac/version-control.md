@@ -1,19 +1,17 @@
 ---
-title: "Управление версиями"
+title: "Управление версиями | Документы Майкрософт"
 description: "Использование Git и Subversion в Visual Studio для Mac."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
+ms.openlocfilehash: 6e467cf6acda75948a189309b7648b1c4c085941
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a63ebdccc2a7cbde18715291a65ada613dc2c00e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="version-control"></a>Управление версиями
 
 Управление версиями — это система для управления файлами с множеством разных версий. При разработке программного обеспечения с ней обычно работает большое число разработчиков. Основная цель любой системы управления версиями (_VCS_) заключается в том, чтобы найти решение, позволяющее всем пользователям одновременно работать с базой кода.

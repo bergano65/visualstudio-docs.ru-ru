@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,33 +13,17 @@ helpviewer_keywords:
 - administrative privileges
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: badbf6892698c6e35ce76500001839c7c9e6734a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: e044e3d89f7cbaae28ff0fd3cefe1c6fe4583c65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Разрешения пользователей и Visual Studio
-<a id="user-permissions-and-visual-studio" class="xliff"></a>
+# <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 Для обеспечения безопасности следует по возможности запускать Visual Studio от имени обычного пользователя.  
 
 > [!WARNING]
@@ -53,7 +36,7 @@ ms.lasthandoff: 05/30/2017
 |Установка|Установка Visual Studio.|[Установка Visual Studio](../install/install-visual-studio.md)|  
 ||Установка, обновление или удаление локального содержимого справки.|[Установка локального содержимого и управление им](../ide/install-and-manage-local-content.md)|  
 |Типы приложений|Разработка решений для SharePoint.|[Требования по разработке решений SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
-||Получение лицензии разработчика для [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Получение лицензии разработчика (приложения Магазина Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|  
+||Получение лицензии разработчика для [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Получить лицензию разработчика](http://go.microsoft.com/fwlink/?LinkID=241313)|  
 |Панель элементов|Добавление классических элементов управления COM на **Панель элементов**.|[Использование панели элементов](../ide/using-the-toolbox.md)|  
 |Надстройки|Установка и использование надстроек, которые были созданы с помощью классической COM-модели в интегрированной среде разработки.|[Создание надстроек и мастеров](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |Сборка|Использование выполняющихся после сборки событий, которые регистрируют компонент.|[Сведения об этапах настраиваемой сборки и событиях сборки](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
@@ -66,12 +49,10 @@ ms.lasthandoff: 05/30/2017
 |Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения с использованием Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## Запуск Visual Studio от имени администратора
-<a id="running-visual-studio-as-an-administrator" class="xliff"></a>  
+## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора  
  Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.  
 
-#### Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] и [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]
-<a id="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd" class="xliff"></a>  
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] и [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
 
 1.  На **начальном экране** введите **Visual Studio**. Вы увидите установленные версии Visual Studio.  
 
@@ -79,8 +60,7 @@ ms.lasthandoff: 05/30/2017
 
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
 
-#### Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../debugger/includes/win7_md.md)] и [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]
-<a id="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd" class="xliff"></a>  
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../debugger/includes/win7_md.md)] и [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
 
 1.  Нажмите кнопку **Пуск** и выберите **Все программы**.  
 
@@ -88,8 +68,6 @@ ms.lasthandoff: 05/30/2017
 
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
 
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Установка Visual Studio](../install/install-visual-studio.md)
-

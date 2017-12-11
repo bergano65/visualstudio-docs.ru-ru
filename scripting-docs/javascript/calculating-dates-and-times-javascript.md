@@ -1,39 +1,42 @@
 ---
-title: "Вычисление даты и времени (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "арифметические действия с датой и временем [JavaScript]"
-  - "JavaScript, дата и время"
-  - "сравнение дат [JavaScript]"
-  - "вычисления даты и времени [JavaScript]"
+title: "Вычисление даты и времени (JavaScript) | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- date and time arithmetic [JavaScript]
+- JavaScript, date and time
+- date comparison [JavaScript]
+- date and time calculations [JavaScript]
 ms.assetid: ea976f78-d934-479b-9056-880390d8bddd
-caps.latest.revision: 34
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 34
+caps.latest.revision: "34"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 18b4ff307c8f2c48a37ed9ca50e7c5f1ff693ece
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Вычисление даты и времени (JavaScript)
-[Объект Date](../javascript/reference/date-object-javascript.md) можно использовать для выполнения общих задач, связанных с календарем и часами, например для сравнения дат и вычисления истекшего времени.  
+# <a name="calculating-dates-and-times-javascript"></a>Вычисление даты и времени (JavaScript)
+[Объект Date](../javascript/reference/date-object-javascript.md) можно использовать для выполнения общих задач, связанных с календарем и часами, например для сравнения дат и вычисления затраченного времени.  
   
-## Установка текущей даты  
- При создании экземпляра [объекта Date](../javascript/reference/date-object-javascript.md) без указания даты он возвращает значение, представляющее текущие дату и время, включая год, месяц, день, час, минуты, секунды и миллисекунды.  В дальнейшем эти дату и время можно считывать и изменять.  
+## <a name="setting-a-date-to-the-current-date"></a>Установка текущей даты  
+ При создании экземпляра [объекта Date](../javascript/reference/date-object-javascript.md) без указания даты он возвращает значение, представляющее текущие дату и время, включая год, месяц, день, час, минуты, секунды и миллисекунды. В дальнейшем эти дату и время можно считывать и изменять.  
   
- В следующем примере показано создание даты без использования параметров и ее отображение в формате *mm\-dd\-yy*.  
+ Следующий пример показывает создание даты без использования параметров и ее отображение в формате *мм-дд-гг*.  
   
-```javascript  
+```JavaScript  
 var dt = new Date();  
   
 // Display the month, day, and year. getMonth() returns a 0-based number.  
@@ -45,10 +48,10 @@ document.write(month + '-' + day + '-' + year);
 // Output: current month, day, year  
 ```  
   
-## Установка определенной даты  
+## <a name="setting-a-specific-date"></a>Установка определенной даты  
  Конкретную дату можно задать, передав строку даты в конструктор.  
   
-```javascript  
+```JavaScript  
 var dt = new Date('8/24/2009');  
 document.write(dt);  
   
@@ -59,11 +62,11 @@ document.write(dt);
 > [!IMPORTANT]
 >  Часовой пояс, отображаемый в строке даты, соответствует установленному на локальном компьютере.  
 >   
->  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] позволяет гибко задавать формат строки, используемой в качестве параметра.  Например, можно ввести "8\-24\-2009", "24 августа 2009" или "24 авг 2009".  
+>  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] позволяет гибко задавать формат строки, используемой в качестве параметра. Например, можно ввести "8-24-2009", "24 августа 2009" или "24 авг 2009".  
   
- Можно также указать время.  В следующем примере показан один из способов задания даты и времени в формате ISO.  "Z" означает время в формате UTC.  
+ Можно также указать время. В следующем примере показан один из способов задания даты и времени в формате ISO. "Z" означает время в формате UTC.  
   
-```javascript  
+```JavaScript  
 var dt = new Date('2010-06-09T15:20:00Z');  
 document.write(dt);  
 document.write("<br />");  
@@ -78,7 +81,7 @@ document.write(dt.toISOString());
   
  В следующем примере показаны другие способы задания времени.  
   
-```javascript  
+```JavaScript  
 var dtA = new Date('8/24/2009 14:52:10');  
   
 // The parameters are year, month, day, hours, minutes, seconds.  
@@ -93,12 +96,12 @@ document.write(dtB);
   
 ```  
   
-## Добавление и вычитание дней, месяцев и лет  
+## <a name="adding-and-subtracting-days-months-and-years"></a>Добавление и вычитание дней, месяцев и лет  
  Для задания определенных дат и времени можно использовать методы getX и setX объекта `Date`.  
   
- В следующем примере показано, как установить в качестве даты предыдущий день.  Обратите внимание, что при необходимости значения месяца и года также можно изменить.  
+ В следующем примере показано, как установить в качестве даты предыдущий день. Обратите внимание, что при необходимости значения месяца и года также можно изменить.  
   
-```javascript  
+```JavaScript  
 var myDate = new Date("1/1/1990");  
 var dayOfMonth = myDate.getDate();  
 myDate.setDate(dayOfMonth - 1);  
@@ -111,9 +114,9 @@ document.write(myDate);
  В следующем примере в качестве даты задается последний день месяца путем вычитания одного дня из первого дня следующего месяца.  
   
 > [!TIP]
->  Месяцы года нумеруются от 0 \(январь\) до 11 \(декабрь\), а  недели — от 0 \(воскресенье\) до 6 \(суббота\).  
+>  Месяцы года нумеруются от 0 (январь) до 11 (декабрь), а недели — от 0 (воскресенье) до 6 (суббота).  
   
-```javascript  
+```JavaScript  
 var myDate = new Date("1/1/1990")  
 myDate.setMonth(myDate.getMonth() + 1);  
   
@@ -125,12 +128,12 @@ document.write(myDate);
   
 ```  
   
-## Работа с днями недели  
- [Метод getDay](../javascript/reference/getday-method-date-javascript.md) получает день недели в виде числа от 0 \(воскресенье\) до 6 \(суббота\). \(В отличие от [метода getDate](../javascript/reference/getdate-method-date-javascript.md), получающего день месяца в виде числа от 1 до 31.\)  
+## <a name="working-with-days-of-the-week"></a>Работа с днями недели  
+ [Метод getDay](../javascript/reference/getday-method-date-javascript.md) получает день недели в виде числа от 0 (воскресенье) до 6 (суббота). (Он отличается от [метода getDate](../javascript/reference/getdate-method-date-javascript.md), получающего день месяца в виде числа от 1 до 31.)  
   
- В следующем примере в качестве даты задается День благодарения, который в США приходится на четвертый четверг ноября.  Скрипт находит 1 ноября текущего года, затем первый четверг и прибавляет три недели.  
+ В следующем примере в качестве даты задается День благодарения, который в США приходится на четвертый четверг ноября. Скрипт находит 1 ноября текущего года, затем первый четверг и прибавляет три недели.  
   
-```javascript  
+```JavaScript  
 var myDate = new Date();  
 myDate.setHours(0, 0, 0, 0);  
   
@@ -155,14 +158,14 @@ document.write(myDate);
   
 ```  
   
-## Подсчет затраченного времени  
- [Метод getTime](../javascript/reference/gettime-method-date-javascript.md) возвращает число миллисекунд, прошедших с полуночи 1 января 1970 года.  Для любой даты до этой он возвращает отрицательное число.  
+## <a name="calculating-elapsed-time"></a>Подсчет затраченного времени  
+ [Метод getTime](../javascript/reference/gettime-method-date-javascript.md) возвращает число миллисекунд, прошедших с полуночи 1 января 1970 года. Для любой даты до этой он возвращает отрицательное число.  
   
- [Метод getTime](../javascript/reference/gettime-method-date-javascript.md) можно использовать для задания начального и конечного времени при вычислении истекшего времени.  Это можно использовать для измерения коротких единиц, таких как несколько секунд, и больших единиц, таких как дни.  
+ [Метод getTime](../javascript/reference/gettime-method-date-javascript.md) можно использовать для задания начального и конечного времени при вычислении затраченного времени. Это можно использовать для измерения коротких единиц, таких как несколько секунд, и больших единиц, таких как дни.  
   
- В следующем примере вычисляется истекшее время в секундах.  [Метод getTime](../javascript/reference/gettime-method-date-javascript.md) получает число миллисекунд, прошедших с нулевой даты.  
+ В следующем примере вычисляется истекшее время в секундах. [Метод getTime](../javascript/reference/gettime-method-date-javascript.md) получает число миллисекунд, прошедших с нулевой даты.  
   
-```javascript  
+```JavaScript  
 var startTime = new Date('1/1/1990');  
 var startMsec = startTime.getMilliseconds();  
 startTime.setTime(5000000);  
@@ -173,11 +176,11 @@ document.write(elapsed);
   
 ```  
   
- Чтобы работать с единицами, которыми легче управлять, можно разделить миллисекунды, предоставленные методом [getTime](../javascript/reference/gettime-method-date-javascript.md), на соответствующее число.  Например, для преобразования миллисекунд в дни разделите их количество на 86 400 000 \(1000 миллисекунд x 60 секунд x 60 минут x 24 часа\).  
+ Чтобы работать с единицами, которыми легче управлять, можно разделить миллисекунды, предоставленные [методом getTime](../javascript/reference/gettime-method-date-javascript.md), на соответствующее число. Например, для преобразования миллисекунд в дни разделите их количество на 86 400 000 (1000 миллисекунд x 60 секунд x 60 минут x 24 часа).  
   
- В следующем примере показывается, сколько времени прошло с первого дня заданного года.  Для вычисления истекшего времени в днях, часах, минутах и секундах используются операции деления.  Летнее время не принято во внимание.  
+ В следующем примере показывается, сколько времени прошло с первого дня заданного года. Для вычисления истекшего времени в днях, часах, минутах и секундах используются операции деления. Летнее время не принято во внимание.  
   
-```javascript  
+```JavaScript  
 // Set the unit values in milliseconds.  
 var msecPerMinute = 1000 * 60;  
 var msecPerHour = msecPerMinute * 60;  
@@ -215,10 +218,10 @@ document.write(days + " days, " + hours + " hours, " + minutes + " minutes, " + 
 //Output: 164 days, 23 hours, 0 minutes, 0 seconds.  
 ```  
   
-### Определение возраста пользователя  
- В следующем примере берется день рождения пользователя и вычисляется его возраст.  Год рождения вычитается из текущего года, и из получившегося результата вычитается 1, если день рождения в текущем году еще не наступил.  
+### <a name="determining-the-users-age"></a>Определение возраста пользователя  
+ В следующем примере берется день рождения пользователя и вычисляется его возраст. Год рождения вычитается из текущего года, и из получившегося результата вычитается 1, если день рождения в текущем году еще не наступил.  
   
-```javascript  
+```JavaScript  
 var birthday = new Date("8/1/1985");  
 var today = new Date();  
 var years = today.getFullYear() - birthday.getFullYear();  
@@ -237,12 +240,12 @@ document.write("You are " + years + " years old.");
   
 ```  
   
-## Сравнение дат  
- При сравнении дат в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] необходимо иметь в виду, что оператор `==` возвращает значение `true`, только если даты с его обеих сторон относятся к одному и тому же объекту.  Поэтому при наличии двух отдельных объектов `Date`, для которых задана одна и та же дата, оператор `date1 == date2` возвращает значение `false`.  Кроме того, объект `Date`, для которого задана дата, но не задано время, инициализируется с использованием времени, соответствующим полуночи заданной даты.  Поэтому при сравнении объекта `Date`, установленного без заданного времени, например, с объектом `Date.now`, необходимо учитывать, что для объекта `Date` устанавливается значение полуночи, а для объекта `Date.now` такое значение не устанавливается.  
+## <a name="comparing-dates"></a>Сравнение дат  
+ При сравнении дат в [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] необходимо иметь в виду, что оператор `==` возвращает значение `true`, только если даты с его обеих сторон относятся к одному и тому же объекту. Поэтому при наличии двух отдельных объектов `Date`, для которых задана одна и та же дата, оператор `date1 == date2` возвращает значение `false`. Кроме того, объект `Date`, для которого задана дата, но не задано время, инициализируется с использованием времени, соответствующим полуночи заданной даты. Поэтому при сравнении объекта `Date`, установленного без заданного времени, например, с объектом `Date.now`, необходимо учитывать, что для объекта `Date` устанавливается значение полуночи, а для объекта `Date.now` такое значение не устанавливается.  
   
- В следующем примере проверяется, совпадает ли текущая дата с заданной, предшествует ли ей или следует после нее.  Для установки текущей даты в `todayAtMidn` скрипт создает объект `Date` для текущего года, месяца и дня.  
+ В следующем примере проверяется, совпадает ли текущая дата с заданной, предшествует ли ей или следует после нее. Для установки текущей даты в `todayAtMidn` скрипт создает объект `Date` для текущего года, месяца и дня.  
   
-```javascript  
+```JavaScript  
 // Get the current date at midnight.  
 var now = new Date();   
 var todayAtMidn = new Date(now.getFullYear(), now.getMonth(), now.getDate());  
@@ -266,7 +269,7 @@ else
   
  Изменив предыдущий пример, можно проверить, находится ли предоставленная дата в пределах конкретного диапазона.  
   
-```javascript  
+```JavaScript  
 // Get the current date at midnight.  
 var now = new Date();  
 var todayAtMidn = new Date(now.getFullYear(), now.getMonth(), now.getDate());  
@@ -288,5 +291,5 @@ else {
 // Output: Specified date is not in this range.  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект Date](../javascript/reference/date-object-javascript.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,30 +25,15 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 6c2b3c577685fcb09cd9e9c7eeee955b75e76e27
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="file-properties-javascript"></a>Свойства файлов (JavaScript)
 Свойства файлов можно использовать, чтобы указать, какие действия с файлами должны выполняться системой проекта. Например, можно задать свойства файла, чтобы указать, что файл необходимо добавить в пакет как файл ресурсов.  
@@ -73,7 +57,7 @@ ms.lasthandoff: 06/23/2017
 
 -   **Ресурс** — файл не включается в манифест пакета. Вместо этого содержимое файла индексируется в индексе ресурсов пакета, который входит в манифест пакета. Обычно используется для файлов ресурсов.  
 
- Значение по умолчанию для свойства **Действие пакета** зависит от расширения файла, добавляемого в решение.  
+Значение по умолчанию для свойства **Действие пакета** зависит от расширения файла, добавляемого в решение.  
 
 ### <a name="file-name-property"></a>Свойство "Имя файла"  
  Отображает имя файла как значение только для чтения. Чтобы переименовать файл, щелкните его правой кнопкой мыши в обозревателе решений и выберите **Переименовать**.  
@@ -82,7 +66,7 @@ ms.lasthandoff: 06/23/2017
  Отображает полный путь к файлу как значение только для чтения. Чтобы изменить путь к файлу, можно перетащить файл в обозреватель решений.  
 
 ## <a name="reference-file-properties"></a>Свойства файлов ссылок  
- В этом разделе описываются свойства, общие для файлов, на которые имеются ссылки из [!INCLUDE[win8_app_js](../../ide/reference/includes/win8_app_js_md.md)]. При выборе ссылки, такой как WINMD-файл, ссылка на SDK, ссылка проекта на проект или ссылка на сборку, в обозревателе решений другие свойства могут отображаться в окне "Свойства" в соответствии с типом файла.  
+ В этом разделе описываются свойства, общие для файлов, на которые имеются ссылки из приложения универсальной платформа Windows, созданного с помощью JavaScript. При выборе ссылки, такой как WINMD-файл, ссылка на SDK, ссылка проекта на проект или ссылка на сборку, в обозревателе решений другие свойства могут отображаться в окне "Свойства" в соответствии с типом файла.  
 
 ### <a name="culture"></a>Язык и региональные параметры  
  Отображает язык, связанный со ссылкой.  
@@ -113,4 +97,3 @@ ms.lasthandoff: 06/23/2017
 
 ## <a name="see-also"></a>См. также  
  [Управление свойствами проектов и решений](../../ide/managing-project-and-solution-properties.md)
-

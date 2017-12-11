@@ -1,36 +1,36 @@
 ---
-title: "Запуск построения из интегрированной среды разработки | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "построение"
+title: "Запуск сборки из интегрированной среды разработки | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 081bcfd01d8c28959bf0dd4d038e91895e9c3983
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Запуск построения из интегрированной среды разработки
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> для запуска сборок.  В этом разделе объясняется необходимость соблюдения этого требования, а также общие принципы для этого действия.  
+# <a name="starting-a-build-from-within-the-ide"></a>Запуск построения из интегрированной среды разработки
+Для запуска сборок пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>. Эта статья описывает причины этого требования, а также соответствующую процедуру.  
   
-## Параллельные построения и потоки  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] допускает наличие параллельных сборок, которым для доступа к общим ресурсам требуется посредник.  Системы проектов могут асинхронным образом запускать построения, но не должны вызывать функции построения из обратных вызовов, предоставленных в диспетчере построений.  
+## <a name="parallel-builds-and-threads"></a>Параллельные сборки и потоки  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет использовать параллельные сборки, при этом необходим посредник для доступа к общим ресурсам. Системы проектов могут запускать сборки асинхронно, однако такие системы не должны вызывать функции сборки из обратных вызовов, предоставляемых диспетчеру сборок.  
   
- Если система проектов изменяет переменные среды, то свойство построения NodeAffinity должно иметь значение OutOfProc.  Из\-за этого использование объектов узла невозможно, так как они требуют наличия внутрипроцессного узла.  
+ Если система проектов изменяет переменные среды, она должна присваивать NodeAffinity сборки значение OutOfProc. Это означает, что вы не можете использовать объекты узла, так как им требуется внутрипроцессный узел.  
   
-## Использование IVSBuildManagerAccessor  
- Следующий код представляет метод, который используется системой проектов для запуска построения:  
+## <a name="using-ivsbuildmanageraccessor"></a>Использование IVSBuildManagerAccessor  
+ Следующий код описывает метод, который система проектов может использовать для запуска сборки:  
   
-```  
+```csharp
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

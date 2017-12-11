@@ -1,66 +1,66 @@
 ---
-title: "Команда Open File | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "file.openfile"
-helpviewer_keywords: 
-  - "File.OpenFile - команда"
-  - "команды"
-  - "Открыть файл - команда"
+title: "Команда \"Открыть файл\" | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: file.openfile
+helpviewer_keywords:
+- Open File command
+- File.OpenFile command
+- of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f7b1576ce7c34e953c45d7b303190a00d77e86cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда Open File
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Открытие существующего файла и указание редактора.  
+# <a name="open-file-command"></a>Команда Open File
+Открывает существующий файл и позволяет указать редактор.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 File.OpenFile filename [/e:editorname]  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `filename`  
- Обязательный.  Полный или частичный путь и имя открываемого файла.  Пути, которые содержат пробелы, необходимо заключать в кавычки.  
+ Обязательный. Полный или частичный путь и имя для открываемого файла. Пути, содержащие пробелы, следует заключить в кавычки.  
   
-## Переключатели  
- \/e:`editorname`  
- Необязательный.  Имя редактора, в котором будет открыт файл.  Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
+## <a name="switches"></a>Переключатели  
+ /e:`editorname`  
+ Необязательно. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.  
   
- \/e: синтаксис аргумента`editorname` используются имена в редакторе по мере их появления в диалоговое окно открыть с помощью ", заключенные в кавычки.  
+ В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне "Открыть с помощью", с заключением в кавычки.  
   
- Например, чтобы открыть файл в редакторе исходного кода, необходимо ввести для аргумента \/e:`editorname` следующую строку.  
+ Например, чтобы открыть файл в редакторе исходного кода, нужно ввести для аргумента /e:`editorname` следующую строку:  
   
 ```  
 /e:"Source Code (text) Editor"  
 ```  
   
-## Заметки  
- При вводе пути функция автозавершения пытается определить правильный путь и имя файла.  
+## <a name="remarks"></a>Примечания  
+ Когда вы вводите путь, функция автозавершения пытается определить правильный путь и правильное имя файла.  
   
-## Пример  
- В приведенном примере в редакторе исходного кода открывается файл стилей Test1.css.  
+## <a name="example"></a>Пример  
+ Этот пример открывает файл стилей "Test1.CSS" в редакторе исходного кода.  
   
 ```  
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Окно "Команда"](../../ide/reference/command-window.md)   
+ [Командное окно](../../ide/reference/command-window.md)   
  [Окно интерпретации](../../ide/reference/immediate-window.md)   
- [Поле «Поиск\/Команда»](../../ide/find-command-box.md)   
+ [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

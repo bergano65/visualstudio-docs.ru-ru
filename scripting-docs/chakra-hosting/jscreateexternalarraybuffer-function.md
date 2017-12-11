@@ -1,22 +1,26 @@
 ---
-title: "Функция JsCreateExternalArrayBuffer | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Функция JsCreateExternalArrayBuffer | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 4a02aaec-0f67-4bf9-b37c-71cdb1410ca4
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 95459f9a9ff676f47d56ed584ad44a30f24fd4cb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsCreateExternalArrayBuffer
+# <a name="jscreateexternalarraybuffer-function"></a>Функция JsCreateExternalArrayBuffer
 Создает объект `ArrayBuffer` Javascript для доступа к внешней памяти.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(  
@@ -29,7 +33,7 @@ STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(
   
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `data`  
  Указатель на внешнюю память.  
   
@@ -43,16 +47,16 @@ STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(
  Предоставляемое пользователем состояние, которое будет передано обратно в finalizeCallback.  
   
  `result`  
- Новый объект `ArrayBuffer`.  
+ Новый объект `ArrayBuffer` .  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

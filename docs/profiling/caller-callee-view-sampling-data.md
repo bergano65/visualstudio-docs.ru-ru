@@ -4,42 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - sampling profiling method,Caller/Callee view
 - Caller/Callee view
 ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 1af055de45421ec9958a8663cfaa62c82bd4ae75
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 1754689211d36da390f8ea3a4899d891790b5213
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
-# Представление "Вызывающий/вызываемый" — данные выборки
-<a id="caller--callee-view---sampling-data" class="xliff"></a>
+# <a name="caller--callee-view---sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  
   
  **Текущая функция** отображается в средней таблице и показывает данные профилирования для выбранной функции. Значения включают все вызовы функции, попавшие в выборку.  
@@ -49,7 +31,7 @@ ms.lasthandoff: 07/14/2017
  **Функции, которые были вызваны текущей функцией**, отображаются в нижней таблице, в которой указываются данные профилирования для вызываемых (дочерних) функций выбранной функции, когда дочерняя функция вызывалась текущей функцией.  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Столбец|Описание|  
 |------------|-----------------|  
@@ -68,8 +50,7 @@ ms.lasthandoff: 07/14/2017
 |**Эксклюзивные выборки**|- Для текущей функции — количество выборок в сеансе профилирования, которые были собраны во время непосредственного выполнения функции, т. е. когда функция была вверху стека вызовов. Выборки, собранные во время выполнения дочерних функций этой функции, не учитываются эксклюзивными счетчиками.<br />- Для вызывающей функции — количество эксклюзивных выборок текущей функции, которые были собраны при вызове этой функцией текущей функции.<br />- Для вызываемой функции — количество эксклюзивных выборок этой функции, которые были собраны при вызове текущей функцией этой функции.|  
 |**% эксклюзивных выборок**|Процент от всех выборок сеанса профилирования, которые являются исключающими выборками данной функции.|  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Caller/Callee View - .NET Memory Sampling Data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки памяти .NET)  
  [Caller/Callee View - NET Memory Instrumentation Data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  (Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET)  
  [Caller/Callee View - Instrumentation Data](../profiling/caller-callee-view-instrumentation-data.md) (Представление "Вызывающий/вызываемый" — данные инструментирования)

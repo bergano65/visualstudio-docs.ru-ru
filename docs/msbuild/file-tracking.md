@@ -1,51 +1,51 @@
 ---
-title: "Отслеживание файлов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, отслеживание файлов"
+title: "Отслеживание файлов | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a43c651b6f39e53b77eabe261c67ad7ca0fdcf78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Отслеживание файлов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Функция отслеживания файлов записывает для процессов и подчиненных процессов вызовы, отправленные в файловую систему Windows.  Вызовы представленных ниже функций позволяют программам управлять включением функции отслеживания и указывать используемый файл журнала.  
+# <a name="file-tracking"></a>Отслеживание файлов
+Журналы отслеживания файлов отправляют в файловую систему Windows вызов процесса и его дочерних процессов. Вызывая указанные ниже функции, программы управляют включением и отключением ведения журнала, а также задают нужный файл журнала.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
- Прекращение отслеживания текущего контекста.  
+ Останавливает отслеживание в текущем контексте.  
   
  [ResumeTracking](../msbuild/resumetracking.md)  
- Продолжение отслеживания после вызова [SuspendTracking](../msbuild/suspendtracking.md).  
+ Возобновляет отслеживания после вызова [SuspendTracking](../msbuild/suspendtracking.md).  
   
  [SetThreadCount](../msbuild/setthreadcount.md)  
- Установка количества потоков, используемых для отслеживания.  
+ Задает количество потоков, используемых для отслеживания.  
   
  [StartTrackingContext](../msbuild/starttrackingcontext.md)  
- Начало нового контекста отслеживания.  
+ Запускает новый контекст отслеживания.  
   
  [StartTrackingContextWithRoot](../msbuild/starttrackingcontextwithroot.md)  
- Начало нового контекста отслеживания с указанным корневым каталогом.  
+ Запускает новый контекст отслеживания с указанным корнем.  
   
  [StopTrackingAndCleanup](../msbuild/stoptrackingandcleanup.md)  
- Завершение отслеживания и освобождение использованных ресурсов.  
+ Завершает отслеживание и освобождает использованные ресурсы.  
   
  [SuspendTracking](../msbuild/suspendtracking.md)  
- Временная приостановка отслеживания.  
+ Временно приостанавливает отслеживание.  
   
  [WriteAllTLogs](../msbuild/writealltlogs.md)  
- Запись журналов отслеживания для всех контекстов.  
+ Записывает журналы отслеживания для всех контекстов.  
   
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
- Запись журнала отслеживания для текущего контекста.
+ Записывает журнал отслеживания для текущего контекста.

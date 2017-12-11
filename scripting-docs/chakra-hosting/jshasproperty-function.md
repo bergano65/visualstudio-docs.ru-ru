@@ -1,27 +1,29 @@
 ---
-title: "Функция JsHasProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsHasProperty"
-helpviewer_keywords: 
-  - "JsHasProperty - функция"
+title: "Функция JsHasProperty | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsHasProperty
+helpviewer_keywords: JsHasProperty function
 ms.assetid: 26c94c3d-aae6-4257-8644-df63c7e714fb
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b8edbd1069936152b5edddc0561f45af2ba4ce36
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция JsHasProperty
+# <a name="jshasproperty-function"></a>Функция JsHasProperty
 Определяет, имеет ли объект свойство.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 STDAPI_(JsErrorCode) JsHasProperty(  
@@ -31,7 +33,7 @@ STDAPI_(JsErrorCode) JsHasProperty(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
  Объект, который может содержать свойство.  
   
@@ -39,16 +41,16 @@ STDAPI_(JsErrorCode) JsHasProperty(
  Идентификатор свойства.  
   
  `hasProperty`  
- Указывает, имеет ли объект \(или прототип\) свойство.  
+ Указывает, имеет ли объект (или прототип) свойство.  
   
-## Возвращаемое значение  
- Код `JsNoError`, если операция завершилась успешно, если нет, то код сбоя.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Код `JsNoError` , если операция завершилась успешно, если нет, то код сбоя.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Требуется контекст активного скрипта.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jsrt.h  
   
-## См. также  
- [Справочник \(среда выполнения JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>См. также  
+ [Справочник (среда выполнения JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

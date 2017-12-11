@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 6a9e8253c555f8f416b18cb46f211c3733ab788f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: a770fdeae316e6ee79e919df9c9cc1b4551b90b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="verify-your-xamarin-environment"></a>Проверка окружения Xamarin
 После завершения работы установщиков (см. раздел [Настройка и установка](../cross-platform/setup-and-install.md)) потратьте несколько минут на проверку готовности системы к разработке приложений в Xamarin.  
@@ -78,7 +62,7 @@ ms.lasthandoff: 05/13/2017
   
 > [!NOTE]
 >  В Visual Studio можно заметить наличие на панели инструментов кнопки диспетчера эмулятора Android (показано на следующем рисунке), по нажатию которой открывается диспетчер устройств, используемый конкретно для настройки эмулятора Google Android.  Это не оказывает влияния ни на эмулятор Visual Studio для Android, ни на Xamarin Player, каждый из которых имеет свой диспетчер устройств для настройки профилей.  Дополнительные сведения см. в статьях [Введение в эмулятор Visual Studio для Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (блог по Visual Studio ALM) и [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com).  
-> ![Проверка CrossPlat Xamarin 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
+> ![Проверка CrossPlat Xamarin 7](../cross-platform/media/crossplat-xamarin-verify-7.png "Проверка CrossPlat Xamarin 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
   
@@ -90,7 +74,7 @@ ms.lasthandoff: 05/13/2017
   
     -   Выберите в качестве целевого объекта **Emulator 8.1** (Эмулятор 8.1) или подключенное устройство в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу F5.  
   
-         ![Выбор эмулятора Windows Phone в качестве целевого объекта отладки](~/cross-platform/media/crossplat-xamarin-verify-4.png "Проверка CrossPlat Xamarin 4")  
+         ![Выбор эмулятора Windows Phone в качестве целевого объекта отладки](../cross-platform/media/crossplat-xamarin-verify-4.png "Проверка CrossPlat Xamarin 4")  
   
     -   Если не получается начать работу с эмулятором, ознакомьтесь со статьей [Устранение неполадок в эмуляторе Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx).  
   
@@ -106,11 +90,11 @@ ms.lasthandoff: 05/13/2017
   
     2.  Выберите в качестве целевого объекта **iPhoneSimulator** из раскрывающегося списка сборки Visual Studio, как показано ниже, или **iPhone** , если имеется связанное устройство. Если симуляторов в списке нет, запустите Xcode на компьютере Mac, выберите **Xcode -> Preferences** (Xcode -> Параметры) и нажмите кнопку **Download** (Cкачать). В разделе **Components** (Компоненты) вы должны увидеть доступные для скачивания версии симулятора. Дополнительные инструкции по отладке можно найти на странице Xamarin [Отладка](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com).  
   
-         ![Выбор целевого объекта сборки iPhoneSimulator](~/cross-platform/media/crossplat-xamarin-verify-5.png "Проверка CrossPlat Xamarin 5")  
+         ![Выбор целевого объекта сборки iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "Проверка CrossPlat Xamarin 5")  
   
     3.  Выберите целевой объект iPhone в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу F5. Это откроет симулятор на Mac, где можно будет взаимодействовать с приложением во время отладки из Visual Studio. Если у вас есть физический iPhone или iPad, подключенный к Mac, они отобразятся здесь, чтобы вы могли выбрать их. Если вы не видите перечисленные устройства или симуляторы, проверьте подключение к Mac, просмотрев раздел, на который указывает ссылка в шаге 1 выше, или перейдите в раздел **Средства** >**iOS** >**Xamarin Mac Agent**  
   
-         ![Выбор целевого объекта отладки iPhone](~/cross-platform/media/crossplat-xamarin-verify-6.png "Проверка CrossPlat Xamarin 6")  
+         ![Выбор целевого объекта отладки iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "Проверка CrossPlat Xamarin 6")  
   
     4.  Если возникли проблемы с подключением к Mac, ознакомьтесь со статьей [Устранение неполадок при подключении](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/xma-troubleshooting/) (xamarin.com).  
   
