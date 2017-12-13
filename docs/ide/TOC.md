@@ -6,6 +6,7 @@
 # [Начало разработки в Visual Studio](get-started-developing-with-visual-studio.md)
 ## [Начало работы с Visual C# и Visual Basic](getting-started-with-visual-csharp-and-visual-basic.md)
 ### [Краткое руководство. Создание первого веб-приложения ASP.NET Core](../ide/quickstart-aspnet-core.md)
+### [Краткое руководство. Создание консольного приложения Visual Basic](../ide/quickstart-visual-basic-console.md)
 ### [Пошаговое руководство. Создание простого приложения с помощью Visual C# или Visual Basic](walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 ### [Учебник 1. Создание приложения для просмотра рисунков](tutorial-1-create-a-picture-viewer.md)
 #### [Шаг 1. Создание проекта приложения Windows Forms](step-1-create-a-windows-forms-application-project.md)
