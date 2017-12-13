@@ -16,11 +16,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure
 С помощью платформы Windows Presentation Foundation (WPF) можно быстро создать современное классическое приложение, использующее мобильную службу Azure для хранения и предоставления данных.  
@@ -556,7 +556,7 @@ ms.lasthandoff: 10/31/2017
      Будет вызван метод **UpdateCheckedTodoItem** , и элемент будет удален как из списка, так и из базы данных.  
   
 ## <a name="next-steps"></a>Дальнейшие действия  
- Вы ознакомились с весьма простым примером классического приложения WPF, сервером для которого является Azure. Безусловно, реальное приложение скорее всего будет гораздо более сложными, но основные принципы те же. См. статью [WPF в .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ Вы ознакомились с весьма простым примером классического приложения WPF, сервером для которого является Azure. Безусловно, реальное приложение скорее всего будет гораздо более сложными, но основные принципы те же. См. статью [WPF в .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  Вы можете сделать пользовательский интерфейс более привлекательным, добавив цвета, фигуры, графические элементы и даже анимацию. См. разделы [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) и [Создание пользовательского интерфейса с помощью Blend для Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Сравнение средств см. в разделе [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
 

@@ -1,6 +1,7 @@
 # [Обзор интегрированной среды разработки Visual Studio IDE](visual-studio-ide.md)
-# Краткие руководства по IDE
+# Краткие руководства
 ## [Знакомство с интегрированной средой разработки Visual Studio](quickstart-ide-orientation.md)
+## [Проекты и решения](quickstart-projects-solutions.md)
 ## [Выбор цвета темы и текста для персонализации](quickstart-personalize-the-ide.md)
 ## [Написание кода в редакторе](quickstart-editor.md)
 # [Начало разработки в Visual Studio](get-started-developing-with-visual-studio.md)

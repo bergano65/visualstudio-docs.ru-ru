@@ -11,11 +11,11 @@ caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: dba101890bd2f27c85e8e6053944d8781fa03ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4f525157e9e34838be4379f8df0845b294880f11
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="setup-and-install"></a>Настройка и установка
 Для создания нативных приложений iOS, Android и Windows из общей базы кода C# и .NET с помощью Xamarin необходимо следующее:  
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="windows"></a> Программа установки Windows (Visual Studio и Xamarin)  
   
 > [!TIP]
->  Эти инструкции предназначены для Visual Studio 2017. Рекомендации для Visual Studio 2015 вы найдете на сайте [MSDN](https://msdn.microsoft.com/en-us/library/mt613162.aspx). Чтобы использовать Xamarin с Visual Studio 2013 (требуется обновление 2), следуйте инструкциям по [прямой установке Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
+>  Эти инструкции предназначены для Visual Studio 2017. Рекомендации для Visual Studio 2015 вы найдете на сайте [MSDN](setup-and-install.md). Чтобы использовать Xamarin с Visual Studio 2013 (требуется обновление 2), следуйте инструкциям по [прямой установке Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
 1.  [Скачайте и запустите установщик для любого выпуска Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional или Enterprise). Visual Studio 2017 Community — это бесплатный выпуск; выпуски Professional и Enterprise можно бесплатно использовать для ознакомления в течение 30 дней, по истечении которых необходимо приобрести лицензию.  
   

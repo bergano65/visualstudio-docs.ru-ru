@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c4ed4d6a90a91ac927feb3be76a06d8080267057
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Применение набора средств Visual Studio для Unity
 В этом разделе мы рассмотрим, как использовать возможности интеграции и повышения производительности набора средств Visual Studio для Unity, а также как использовать отладчик Visual Studio для разработки Unity.  
@@ -97,9 +97,9 @@ ms.lasthandoff: 11/29/2017
 |Открыть обозреватель проектов Unity|**ALT+SHIFT+E**|**View.UnityProjectExplorer**|  
 |Доступ к документации по Unity|**CTRL+ALT+M, CTRL+H**|**Help.UnityAPIReference**|  
 |Присоединиться к отладчику Unity (проигрыватель или редактор)|***Значение по умолчанию отсутствует***|**Debug.AttachUnityDebugger**|  
-
- Если вас не устраивает сочетание клавиш по умолчанию, его можно изменить. Как это сделать, см. в статье [Определение и настройка сочетаний клавиш в Visual Studio](https://msdn.microsoft.com/en-us/library/5zwses53.aspx).  
-
+  
+ Если вас не устраивает сочетание клавиш по умолчанию, его можно изменить. Как это сделать, см. в статье [Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+  
 ## <a name="unity-debugging"></a>Отладка Unity  
  Набор средств Visual Studio для Unity позволяет отлаживать скрипты редакторов и игр для проекта Unity с помощью мощного отладчика Visual Studio.  
 

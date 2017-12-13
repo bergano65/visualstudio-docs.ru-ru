@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Пошаговое руководство. Создание первого классического приложения WPF
 В этом пошаговом руководстве содержатся вводные сведения о разработке на основе платформы Windows Presentation Foundation (WPF). Вы создадите простейшее приложение, содержащее элементы, используемые в большинстве классических приложений WPF: разметку XAML, код программной части, определения приложения, элементы управления, макет, привязку данных и стили.  
@@ -851,40 +851,40 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Best_Practices"></a> Рекомендации  
  В этом примере продемонстрированы основные принципы разработки на основе WPF, поэтому в нем не соблюдаются рекомендации по разработке приложений. Полное описание рекомендаций по разработке приложений с помощью WPF и .NET Framework см. в следующих разделах:  
   
--   Специальные возможности: [Рекомендации по специальным возможностям](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Специальные возможности: [Рекомендации по специальным возможностям](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Безопасность: [Безопасность платформы Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Безопасность: [Безопасность платформы Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
--   Локализация: [Общие сведения о глобализации и локализации WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Локализация: [Общие сведения о глобализации и локализации WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Производительность [Улучшение производительности приложений WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Производительность [Улучшение производительности приложений WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a> Что дальше?  
  Вы освоили ряд приемов создания классических приложений с помощью WPF. У вас должно было сложиться общее представление о составных элементах приложения WPF, привязанного к данным. Информация в этом разделе ни в коем случае не является исчерпывающей, но мы надеемся, что у вас также есть теперь некоторое представление о возможностях, которые вы можете изучить самостоятельно, помимо рассмотренных в этом разделе.  
   
  Более подробную информацию об архитектуре и моделях программирования WPF см. в следующих разделах:  
   
--   [Архитектура WPF](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [Архитектура WPF](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [Обзор XAML](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [Обзор XAML](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Общие сведения о свойствах зависимости](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Общие сведения о свойствах зависимости](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Система макета](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Система макета](/dotnet/framework/wpf/advanced/layout)  
   
--   [Стили и шаблоны](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Стили и шаблоны](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Более подробную информацию о создании приложений см. в следующих разделах:  
   
--   [Обзор разработки приложений](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Обзор разработки приложений](/dotnet/framework/wpf/app-development/index)  
   
--   [Обзор элементов управления](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Обзор элементов управления](/dotnet/framework/wpf/controls/index)  
   
--   [Общие сведения о привязке данных](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Общие сведения о привязке данных](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [Общие сведения о графике, анимации и мультимедиа в WPF](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [Общие сведения о графике, анимации и мультимедиа в WPF](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [Документы в WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Документы в WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>См. также  
 [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
