@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: da14e15713e7c02dbd99bc0595e6ca19217a5cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>Использование расширения Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 этот компонент уже встроен. В ранних версиях Visual Studio этот компонент нужно устанавливать отдельно.
 
-Для Cookiecutter требуется Python 3.3 или более поздней версии (32- или 64-разрядная), Anaconda 3 4.2 или более поздней версии (32- или 64-разрядная). Если подходящий интерпретатор Python недоступен, в Visual Studio отображается предупреждение. Если вы устанавливаете интерпретатор Python в процессе выполнения Visual Studio, нажмите на панели инструментов Cookiecutter кнопку Home (Домой), чтобы обнаружить установленный интерпретатор.
+Для Cookiecutter требуется Python 3.3 или более поздней версии (32- или 64-разрядная), Anaconda 3 4.2 или более поздней версии (32- или 64-разрядная). Если подходящий интерпретатор Python недоступен, в Visual Studio отображается предупреждение. Если вы устанавливаете интерпретатор Python в процессе выполнения Visual Studio, нажмите на панели инструментов Cookiecutter кнопку Home (Домой), чтобы обнаружить установленный интерпретатор. (Дополнительные общие сведения о средах см. в разделе [Среды Python](python-environments.md).)
 
 После завершения установки выберите **Просмотр > Обозреватель Cookiecutter**, чтобы отрыть окно обозревателя.
 
