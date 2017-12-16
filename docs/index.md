@@ -3,11 +3,11 @@ layout: HubPage
 hide_bc: True
 title: "Документация по Visual Studio | Документация Майкрософт"
 description: "Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке."
-ms.openlocfilehash: a113a0782694c0cae5c69f52aadcec3a4b98c79f
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/15/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -74,390 +74,7 @@ ms.lasthandoff: 12/14/2017
         <h1>Документация по Visual Studio</h1>
         <ul class="pivots">
             <li>
-                <a href="#workloads">Рабочие нагрузки</a>
-                <ul id="workloads">
-                    <li>
-                        <a href="#windows">Windows</a>
-                        <ul id="windows" class="cardsC">
-                            <li>
-                                <div class="container intro">
-                                    <p>Разработка приложений и игр для всех устройств под управлением Windows с помощью Visual Studio.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка с помощью универсальной платформы Windows</h3>
-                                                    <p>Разработка приложений для Windows 10 на языках C#, VB или C++ с помощью универсальной платформы Windows.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка классических приложений .NET</h3>
-                                                    <p>Разработка приложений WPF, Windows Forms и консольных приложений с использованием .NET Framework.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка для Windows на C++</h3>
-                                                    <p>Разработка классических приложений Windows с помощью MFC, ATL и инструментов Microsoft C++.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#web">Интернет и облако</a>
-                        <ul id="web" class="cardsC">
-                            <li>
-                                <div class="container intro">
-                                    <p>Разработка современных веб-приложений с помощью Visual Studio и многофункциональных инструментов с открытым исходным кодом.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Веб-разработка</h3>
-                                                    <p>Создание веб-приложений с помощью ASP.NET и технологий, основанных на стандартах, таких как HTML, CSS и JavaScript.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка и управление в Azure</h3>
-                                                    <p>Разработка, тестирование, развертывание и администрирование масштабируемых приложений и служб в облаке Майкрософт.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Python</h3>
-                                                    <p>Интерактивная разработка для приложений Python с помощью привычных платформ, включая Django и Flask.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Node.js</h3>
-                                                    <p>Разработка масштабируемых сетевых приложений с помощью Node.js, асинхронной управляемой событиями среды выполнения JavaScript.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Хранение и обработка данных</h3>
-                                                    <p>Инструменты и платформы для разработки и тестирования решений по обработке данных с помощью SQL Server, Azure Data Lake или Hadoop.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
-                                  <div class="cardSize">
-                                    <div class="cardPadding">
-                                      <div class="card">
-                                        <div class="cardImageOuter">
-                                          <div class="cardImage bgdAccent1 cardScaleImage">
-                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
-                                        </div>
-                                        </div>
-                                          <div class="cardText">
-                                            <h3>Приложения для обработки и анализа данных и аналитические приложения</h3>
-                                            <p>Языки и средства для создания приложений для обработки и анализа данных, включая Python, R и F#.</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка для Office и SharePoint</h3>
-                                                    <p>Создание надстроек и решений для Office и SharePoint с помощью C#, Visual Basic и JavaScript.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#mobile">Мобильные приложения и игры</a>
-                        <ul id="mobile" class="cardsC">
-                            <li>
-                                <div class="container intro">
-                                    <p>Создание собственных или гибридных мобильных приложений для Android, iOS и Windows.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка мобильных приложений на платформе .NET</h3>
-                                                    <p>Создание межплатформенных приложений для iOS, Android или Windows с помощью Xamarin.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка игр с помощью Unity</h3>
-                                                    <p>Создание двухмерных и трехмерных игр с помощью Unity, мощной кроссплатформенной среды разработки.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка мобильных приложений на языке JavaScript</h3>
-                                                    <p>Создание межплатформенных приложений для iOS, Android или Windows с помощью платформы Apache Cordova.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка мобильных приложений на C++</h3>
-                                                    <p>Создание межплатформенных приложений для iOS, Android или Windows на С++.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка игр на C++</h3>
-                                                    <p>Используйте все возможности C++ для создания профессиональных игр на базе DirectX, Unreal или Cocos2D.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#other">Другие наборы инструментов</a>
-                        <ul id="other" class="cardsC">
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка расширений Visual Studio</h3>
-                                                    <p>Создание надстроек, расширяющих возможности Visual Studio, включая команды, анализаторы кода и окна инструментов.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Разработка приложений для Linux на C++</h3>
-                                                    <p>Создание и отладка приложений, запускаемых в среде Linux.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Кроссплатформенная разработка .NET Core</h3>
-                                                    <p>Создание кроссплатформенных приложений с помощью .NET Core, ASP.NET Core, HTML, JavaScript и средств разработки контейнеров.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#features">Функции</a>
+                <a href="#features">Задачи</a>
                 <ul id="features">
                     <li>
                         <a href="#features1"> </a>
@@ -814,6 +431,389 @@ ms.lasthandoff: 12/14/2017
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#workloads">Рабочие нагрузки</a>
+                <ul id="workloads">
+                    <li>
+                        <a href="#web">Интернет и облако</a>
+                        <ul id="web" class="cardsC">
+                            <li>
+                                <div class="container intro">
+                                    <p>Разработка современных веб-приложений с помощью Visual Studio и многофункциональных инструментов с открытым исходным кодом.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Веб-разработка</h3>
+                                                    <p>Создание веб-приложений с помощью ASP.NET и технологий, основанных на стандартах, таких как HTML, CSS и JavaScript.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка и управление в Azure</h3>
+                                                    <p>Разработка, тестирование, развертывание и администрирование масштабируемых приложений и служб в облаке Майкрософт.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Python</h3>
+                                                    <p>Интерактивная разработка для приложений Python с помощью привычных платформ, включая Django и Flask.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Node.js</h3>
+                                                    <p>Разработка масштабируемых сетевых приложений с помощью Node.js, асинхронной управляемой событиями среды выполнения JavaScript.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Хранение и обработка данных</h3>
+                                                    <p>Инструменты и платформы для разработки и тестирования решений по обработке данных с помощью SQL Server, Azure Data Lake или Hadoop.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
+                                  <div class="cardSize">
+                                    <div class="cardPadding">
+                                      <div class="card">
+                                        <div class="cardImageOuter">
+                                          <div class="cardImage bgdAccent1 cardScaleImage">
+                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
+                                        </div>
+                                        </div>
+                                          <div class="cardText">
+                                            <h3>Приложения для обработки и анализа данных и аналитические приложения</h3>
+                                            <p>Языки и средства для создания приложений для обработки и анализа данных, включая Python, R и F#.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка для Office и SharePoint</h3>
+                                                    <p>Создание надстроек и решений для Office и SharePoint с помощью C#, Visual Basic и JavaScript.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#windows">Windows</a>
+                        <ul id="windows" class="cardsC">
+                            <li>
+                                <div class="container intro">
+                                    <p>Разработка приложений и игр для всех устройств под управлением Windows с помощью Visual Studio.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка с помощью универсальной платформы Windows</h3>
+                                                    <p>Разработка приложений для Windows 10 на языках C#, VB или C++ с помощью универсальной платформы Windows.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка классических приложений .NET</h3>
+                                                    <p>Разработка приложений WPF, Windows Forms и консольных приложений с использованием .NET Framework.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка для Windows на C++</h3>
+                                                    <p>Разработка классических приложений Windows с помощью MFC, ATL и инструментов Microsoft C++.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#mobile">Мобильные приложения и игры</a>
+                        <ul id="mobile" class="cardsC">
+                            <li>
+                                <div class="container intro">
+                                    <p>Создание собственных или гибридных мобильных приложений для Android, iOS и Windows.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка мобильных приложений на платформе .NET</h3>
+                                                    <p>Создание межплатформенных приложений для iOS, Android или Windows с помощью Xamarin.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка игр с помощью Unity</h3>
+                                                    <p>Создание двухмерных и трехмерных игр с помощью Unity, мощной кроссплатформенной среды разработки.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка мобильных приложений на языке JavaScript</h3>
+                                                    <p>Создание межплатформенных приложений для iOS, Android или Windows с помощью платформы Apache Cordova.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка мобильных приложений на C++</h3>
+                                                    <p>Создание межплатформенных приложений для iOS, Android или Windows на С++.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка игр на C++</h3>
+                                                    <p>Используйте все возможности C++ для создания профессиональных игр на базе DirectX, Unreal или Cocos2D.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#other">Другие наборы инструментов</a>
+                        <ul id="other" class="cardsC">
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка расширений Visual Studio</h3>
+                                                    <p>Создание надстроек, расширяющих возможности Visual Studio, включая команды, анализаторы кода и окна инструментов.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Разработка приложений для Linux на C++</h3>
+                                                    <p>Создание и отладка приложений, запускаемых в среде Linux.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Кроссплатформенная разработка .NET Core</h3>
+                                                    <p>Создание кроссплатформенных приложений с помощью .NET Core, ASP.NET Core, HTML, JavaScript и средств разработки контейнеров.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </li>
