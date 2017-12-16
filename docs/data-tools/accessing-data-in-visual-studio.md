@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: da7176d3fd64591064bfd33a0780ba7939621182
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 12/08/2017
 
 ## <a name="net-languages"></a>В языках .NET
 
-Все .NET доступ к данным, включая в .NET Core основан на ADO.NET, набор классов, определяющий интерфейс для доступа к любой тип источника данных, реляционных и нереляционных. В Visual Studio есть несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, управление данными и пользователь получает данные. Документация в этом разделе описывается использование этих средств. Вы также можете программировать непосредственно на командных объектов ADO.NET. Дополнительные сведения о прямом вызове API-интерфейсы ADO.NET см. в разделе [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) в библиотеке MSDN.
+Все .NET доступ к данным, включая в .NET Core основан на ADO.NET, набор классов, определяющий интерфейс для доступа к любой тип источника данных, реляционных и нереляционных. В Visual Studio есть несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, управление данными и пользователь получает данные. Документация в этом разделе описывается использование этих средств. Вы также можете программировать непосредственно на командных объектов ADO.NET. Дополнительные сведения о прямом вызове API-интерфейсы ADO.NET см. в разделе [ADO.NET](/dotnet/framework/data/adonet/index).
 
 См. документацию доступа к данным непосредственно связаны с ASP.NET [работа с данными](http://www.asp.net/web-forms/overview/presenting-and-managing-data) на веб-сайте ASP.NET. Учебник по использованию платформы Entity Framework с ASP.NET MVC см. в разделе [Приступая к работе с Entity Framework 6 Code First MVC 5 с помощью](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 12/08/2017
 
 ## <a name="native-c"></a>Неуправляемый C++
 
-Приложения C++, подключиться к SQL Server следует использовать [Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) в большинстве случаев. Если связанные серверы, то необходим OLE DB и, используйте [собственный клиент SQL Server](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Доступ к другим базам данных с помощью [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) или непосредственно драйверы OLE DB. ODBC — это текущий интерфейс стандартной базы данных, но большинство баз данных предоставляют пользовательские функции, которые недоступны через интерфейс ODBC. OLE DB — это устаревшая технология доступа к данным COM, который по-прежнему поддерживается, но не рекомендуется для новых приложений. Дополнительные сведения см. в разделе [доступ к данным в Visual C++](https://docs.microsoft.com/cpp/data/).
+Приложения C++, подключиться к SQL Server следует использовать [Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) в большинстве случаев. Если связанные серверы, то необходим OLE DB и, используйте [собственный клиент SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Доступ к другим базам данных с помощью [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) или непосредственно драйверы OLE DB. ODBC — это текущий интерфейс стандартной базы данных, но большинство баз данных предоставляют пользовательские функции, которые недоступны через интерфейс ODBC. OLE DB — это устаревшая технология доступа к данным COM, который по-прежнему поддерживается, но не рекомендуется для новых приложений. Дополнительные сведения см. в разделе [доступ к данным в Visual C++](/cpp/data/data-access-in-cpp).
 
 Использование служб REST программы C++ могут использовать [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -106,11 +106,11 @@ ms.lasthandoff: 12/08/2017
 
 Моделирование данных&mdash;Visual Studio не обеспечивают уровень ORM C++. [ODB](http://www.codesynthesis.com/products/odb/) — популярный ORM открытым исходным кодом для C++.
 
-Дополнительные сведения о подключении к базам данных из приложений C++ см. в разделе [данных средств Visual Studio для C++](../data-tools/visual-studio-data-tools-for-cpp.md). Дополнительные сведения о технологиях доступа к данным прежних версий Visual C++ см. в разделе [доступа к данным](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
+Дополнительные сведения о подключении к базам данных из приложений C++ см. в разделе [данных средств Visual Studio для C++](../data-tools/visual-studio-data-tools-for-cpp.md). Дополнительные сведения о технологиях доступа к данным прежних версий Visual C++ см. в разделе [доступа к данным](/cpp/data/data-access-in-cpp).
 
 ## <a name="javascript"></a>JavaScript
 
-[JavaScript в Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) — полноправный язык для построения кросс платформенные приложения, приложения UWP, облачные службы, веб-сайтов и веб-приложений. Bower, Grunt, Gulp, npm и NuGet из среды Visual Studio можно использовать для установки избранные библиотек JavaScript и базам данных. Подключиться к хранилищу Azure и службам путем загрузки пакетов SDK из [веб-сайте Azure](https://azure.microsoft.com/). Edge.js — это библиотека, который подключается к источникам данных ADO.NET серверные JavaScript (Node.js).
+[JavaScript в Visual Studio](/scripting/javascript/javascript-language-reference) — полноправный язык для построения кросс платформенные приложения, приложения UWP, облачные службы, веб-сайтов и веб-приложений. Bower, Grunt, Gulp, npm и NuGet из среды Visual Studio можно использовать для установки избранные библиотек JavaScript и базам данных. Подключиться к хранилищу Azure и службам путем загрузки пакетов SDK из [веб-сайте Azure](https://azure.microsoft.com/). Edge.js — это библиотека, который подключается к источникам данных ADO.NET серверные JavaScript (Node.js).
 
 ## <a name="python"></a>Python
 
@@ -127,7 +127,7 @@ ms.lasthandoff: 12/08/2017
 [База данных Azure SQL](https://azure.microsoft.com/documentation/services/sql-database/)  
 Описывает, как подключиться к базе данных SQL Azure, реляционную базу данных в качестве службы.
 
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)  
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
 Описание средств, упрощающих конструктора, просмотр, тестирования и развертывания приложений, связанных данных и баз данных.
 
 [ADO.NET](/dotnet/framework/data/adonet/index)  
@@ -142,7 +142,7 @@ ms.lasthandoff: 12/08/2017
 [Данные в решениях Office](/office-dev/office-dev/data-in-office-solutions)  
 Содержит ссылки на разделы, в которых объясняется работа с данными в решениях Office. Сюда входят сведения о схемо ориентированном программировании, кэшировании данных и доступа к данным на стороне сервера.
 
-[Встроенный язык запросов LINQ](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+[Встроенный язык запросов LINQ](/dotnet/csharp/linq/)  
 Описывает возможности запросов, встроенные в C# и Visual Basic и общей модели для запроса реляционных баз данных, документы XML, наборы данных и коллекции в памяти.
 
 [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)  

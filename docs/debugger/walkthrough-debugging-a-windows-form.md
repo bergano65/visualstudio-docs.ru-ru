@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Пример. Отладка в Windows Forms
 Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.  
@@ -126,7 +126,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  На **отладки** меню, выберите **Windows**, затем **Контрольные значения**и нажмите кнопку **Контрольные значения 1**.  
   
-5.  В **Контрольные значения 1** щелкните пустую строку. В **имя** введите `textBox1.Text` (Если вы используете Visual Basic, Visual C# или J#) или `textBox1->Text` (если используется C++), затем нажмите клавишу ВВОД.  
+5.  В **Контрольные значения 1** щелкните пустую строку. В **имя** введите `textBox1.Text` (Если вы используете Visual Basic или Visual C#) или `textBox1->Text` (если используется C++), затем нажмите клавишу ВВОД.  
   
      **Контрольные значения 1** отобразит значение этой переменной в кавычки:  
   

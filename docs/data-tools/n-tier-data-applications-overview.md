@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>Общие сведения о N-уровневых приложениях для работы с данными
 *N-уровневые* приложения данных представляют собой приложения данных, разделенные на несколько *уровни*. Также называется «распределенных приложений» и «многоуровневых приложений», n уровневые приложения разделяют обработку на несколько отдельных уровней, которые распределены между клиентом и сервером. При разработке приложений, которые обращаются к данным, необходимо иметь четкое разделение между различными уровнями, которые составляют приложение.  
@@ -34,7 +34,7 @@ Visual Studio содержит некоторые возможности, поз
   
 -   [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет параметры для формирования классов DataContext и данных на отдельные пространства имен. Это позволяет логическое разделение доступа к данным и уровни данных сущности.  
   
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) предоставляет <xref:System.Data.Linq.Table%601.Attach%2A> метод, который позволяет объединять DataContext из различных уровней в приложении. Дополнительные сведения см. в разделе [N-уровневые и удаленные приложения и LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) предоставляет <xref:System.Data.Linq.Table%601.Attach%2A> метод, который позволяет объединять DataContext из различных уровней в приложении. Дополнительные сведения см. в разделе [N-уровневые и удаленные приложения и LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).  
   
 ## <a name="presentation-tier"></a>Уровень представления  
 *Уровень представления* уровень, на котором пользователи взаимодействуют с приложением. Он часто содержит дополнительную логику приложения также. Компоненты уровня представления обычно следующие:  
@@ -82,7 +82,7 @@ Visual Studio содержит некоторые возможности, поз
   
 [Пошаговое руководство. Создание многоуровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
-[N-уровневые и удаленные приложения и LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[N-уровневые и удаленные приложения и LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)  
   
 ## <a name="see-also"></a>См. также
 [Пошаговое руководство: Создание N-уровневое приложение](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   

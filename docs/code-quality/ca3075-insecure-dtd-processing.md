@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9660e2dc94cf23269b923c6ba5426a7cc384161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 955587b0fbf9a0fa48d2a7083bea04e102b7a622
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: обработка небезопасных DTD
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  Если вы используете небезопасные экземпляры <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> или ссылаетесь на источники внешних сущностей, средство синтаксического анализа может принять недоверенные входные данные и раскрыть конфиденциальную информацию злоумышленникам.  
   
 ## <a name="rule-description"></a>Описание правила  
- [DTD](https://msdn.microsoft.com/en-us/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Это правило активируется, если:  
+ Объект *определения типа документа (DTD)* является одним из двух способов определения допустимости документа, синтаксический анализатор XML в соответствии с определением [World Wide Web Consortium (W3C) языка (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Это правило активируется, если:  
   
 -   обработка DtdProcessing включена в экземпляре <xref:System.Xml.XmlReader> , который разрешает внешние сущности XML с использованием <xref:System.Xml.XmlUrlResolver>;  
   
@@ -60,11 +60,11 @@ ms.lasthandoff: 10/31/2017
   
 -   Отключите обработку DTD при работе с недоверенными источниками, задав для свойства <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> значение **true** .  
   
--   Класс XmlTextReader содержит полное требование наследования доверия. В разделе [требования к наследованию](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) для получения дополнительной информации.  
+-   Класс XmlTextReader содержит полное требование наследования доверия.  
   
  .NET 4 и более поздней версии  
   
--   Не включайте DtdProcessing при работе с недоверенными источниками, задав свойства DtdProcessing [запретить или игнорировать](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   Не включайте DtdProcessing при работе с недоверенными источниками, задав <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> свойства **запретить** или **Ignore**.  
   
 -   Убедитесь, что метод Load() принимает экземпляр XmlReader во всех случаях InnerXml.  
   

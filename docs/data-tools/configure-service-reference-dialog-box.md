@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>Настроить ссылку на службу - диалоговое окно
 **Настроить ссылку на службу** диалоговое окно позволяет настроить поведение [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] служб.  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/31/2017
  Определяет, будут ли методы службы WCF вызываться синхронно (значение по умолчанию) или асинхронно.  
   
  **Создать операции на основе задач**  
- При написании асинхронного кода этот параметр позволяет воспользоваться преимуществами библиотеки параллельных задач (TPL), которая была представлена в .Net Framework 4. В разделе [задач Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ При написании асинхронного кода этот параметр позволяет воспользоваться преимуществами библиотеки параллельных задач (TPL), которая была представлена в .Net Framework 4. В разделе [задач Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
   
  **Всегда создавать контракты сообщений**  
  Определяет, будут ли создаваться типы контрактов сообщений для клиента WCF. Дополнительные сведения о контрактах сообщений см. в разделе [использование контрактов сообщений](/dotnet/framework/wcf/feature-details/using-message-contracts).  
@@ -97,4 +97,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>См. также  
 
  [Способ: добавьте ссылку на веб-службы](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Служб Windows Communication Foundation и службы данных WCF](../data-tools/configure-service-reference-dialog-box.md)
+ [Службы Windows Communication Foundation и службы данных WCF](../data-tools/configure-service-reference-dialog-box.md)

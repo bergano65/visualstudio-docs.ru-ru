@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n уровневых приложениях
 *Многоуровневые приложения* , ориентированных на данные приложений, разделенные на несколько логических слоев (или *уровни*). Другими словами, n-уровневое приложение — это приложение, которое разделено на несколько проектов, при этом уровень доступа к данным, уровень бизнес-логики и уровень представления находятся каждый в своем отдельном проекте. Дополнительные сведения см. в разделе [Общие сведения о приложениях данных N-уровневые](../data-tools/n-tier-data-applications-overview.md).  
@@ -51,4 +51,4 @@ ms.lasthandoff: 11/09/2017
 [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
 [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
 [Создайте и настройте адаптеры таблиц TableAdapter](../data-tools/create-and-configure-tableadapters.md)  
-[N-уровневые и удаленные приложения и LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+[N-уровневые и удаленные приложения и LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

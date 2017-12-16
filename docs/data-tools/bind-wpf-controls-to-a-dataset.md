@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 В этом пошаговом руководстве вы создадите приложение WPF, содержащее элементы управления с привязкой к данным. Эти элементы управления привязаны к записям продуктов, инкапсулированным в набор данных. Вы также добавите кнопки для просмотра продуктов и сохранения изменений в записях продуктов.  
@@ -50,8 +50,6 @@ ms.lasthandoff: 11/09/2017
 Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.  
   
 -   Наборы данных и адаптеры таблицы. Дополнительные сведения см. в разделе [средства набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) и [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](/dotnet/framework/wpf/data/data-binding-overview).  
   
@@ -257,5 +255,4 @@ ms.lasthandoff: 11/09/2017
 ## <a name="see-also"></a>См. также
 [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
-[Обзор конструктор Silverlight и WPF](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
 [Общие сведения о привязке данных](/dotnet/framework/wpf/data/data-binding-overview)

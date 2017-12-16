@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Как: предоставляет службу асинхронной Visual Studio
 Если вы хотите получить службу без блокировки потока пользовательского интерфейса, необходимо создать асинхронную службу и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>и добавление службы с асинхронной пакета специальные асинхронных методов  
@@ -24,9 +24,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="implementing-an-asynchronous-service"></a>Реализация асинхронной службы  
   
-1.  Создайте проект VSIX (**файл / создать / проект / Visual C# / Extensiblity / проект VSIX**). Назовите проект **TestAsync**.  
+1.  Создайте проект VSIX (**файл > Создать > проект > Visual C# > Extensiblity > проект VSIX**). Назовите проект **TestAsync**.  
   
-2.  Добавьте в проект VSPackage. Выберите узел проекта в **обозреватель решений** и нажмите кнопку **добавить / создание элемента или элементы Visual C# / расширяемость / пакет Visual Studio**. Этому файлу имя **TestAsyncPackage.cs**.  
+2.  Добавьте в проект VSPackage. Выберите узел проекта в **обозревателе решений** и нажмите кнопку **Добавить > новый элемент > элементы Visual C# > расширяемости > пакета Visual Studio**. Этому файлу имя **TestAsyncPackage.cs**.  
   
 3.  В TestAsyncPackage.cs измените пакет для наследования от AsyncPackage, а не в пакет:  
   

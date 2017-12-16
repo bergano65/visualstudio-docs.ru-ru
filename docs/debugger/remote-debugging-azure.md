@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core для служб IIS и Azure в Visual Studio 2017 г.
 Развертывание веб-приложения ASP.NET на компьютере Windows Server с IIS и настроить его для удаленной отладки. В этом руководстве объясняется, как установить и настроить приложение ASP.NET Core Visual Studio 2017 г., развернуть его в службах IIS с помощью Azure и присоединить удаленный отладчик из Visual Studio.
@@ -47,11 +47,11 @@ ms.lasthandoff: 11/29/2017
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017 г. 
 
-1. Создание нового приложения ASP.NET Core. (Выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложения ASP.NET Core (.NET Core)**).
+1. Создание нового приложения ASP.NET Core. (Выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложения ASP.NET Core**).
 
     В **ASP.NET Core** шаблонов выберите пункт **веб-приложение**.
 
-2. Убедитесь, что **Включение поддержки Docker** — **не** выбранного и что **проверки подлинности** равно **без проверки подлинности**.
+2. Убедитесь, что **ASP.NET Core 2.0** выбран, **Включение поддержки Docker** — **не** выбранного и что **проверки подлинности** имеет значение **Без проверки подлинности**.
 
 3. Назовите проект **MyASPApp** и нажмите кнопку **ОК** для создания нового решения.
 

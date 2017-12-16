@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктора наборов данных
+
 В этом пошаговом руководстве будет создан набор данных с помощью **конструктора наборов данных**. Он поможет выполнить процесс создания нового проекта и добавления нового **DataSet** элемента к нему. Вы узнаете, как создавать таблицы, на основе таблиц в базе данных без использования мастера.  
-  
- В данном пошаговом руководстве представлены следующие задачи.  
-  
+
+В данном пошаговом руководстве представлены следующие задачи.  
+
 -   Создание нового **приложение Windows Forms** проекта.  
-  
+
 -   Добавление пустой **DataSet** в проект.  
-  
+
 -   Создание и настройка источника данных в приложении путем создания набора данных с **конструктора наборов данных**.  
-  
+ 
 -   Создание подключения к базе данных Northwind в **обозревателя серверов**.  
-  
+
 -   Создание таблиц с помощью адаптеров таблиц в наборе данных, основанных на таблицах в базе данных.  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Предварительные требования  

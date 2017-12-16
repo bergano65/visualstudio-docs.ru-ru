@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4cd3231856dafd869290082337528523544b1e19
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 В этом пошаговом руководстве вы создадите приложение WPF, содержащее элементы управления с привязкой к данным. Эти элементы управления привязаны к записям клиентов, инкапсулированным в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Вы также добавите кнопки, позволяющие клиентам просматривать и обновлять записи.  
@@ -56,8 +56,6 @@ ms.lasthandoff: 11/09/2017
 -   Модели данных в [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].  
   
 -   Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Общие сведения об Entity Framework](/dotnet/framework/data/adonet/ef/overview).  
-  
--   Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](/dotnet/framework/wpf/data/data-binding-overview).  
   

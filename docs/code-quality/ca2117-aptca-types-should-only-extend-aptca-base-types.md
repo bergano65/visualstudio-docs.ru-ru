@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA-типы должны расширять только базовые APTCA-типы
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Открытый или защищенный тип в сборке с <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> атрибут наследует от типа, объявленного в сборку, которая не имеет атрибута.  
   
 ## <a name="rule-description"></a>Описание правила  
- По умолчанию открытые или защищенные типы в сборках со строгими именами неявно защищены [требования к наследованию](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) с полным доверием. Сборки со строгими именами, имеющие <xref:System.Security.AllowPartiallyTrustedCallersAttribute> такая защита не имеют атрибута (APTCA). Атрибут отменяет требование наследования. Это позволяет предоставлять типы, объявленные в сборке, наследуемые типами, которые не имеют полного доверия.  
+ По умолчанию открытые или защищенные типы в сборках со строгими именами неявно защищены <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> с полным доверием. Сборки со строгими именами, имеющие <xref:System.Security.AllowPartiallyTrustedCallersAttribute> такая защита не имеют атрибута (APTCA). Атрибут отменяет требование наследования. Это позволяет предоставлять типы, объявленные в сборке, наследуемые типами, которые не имеют полного доверия.  
   
  Если в полностью доверенной сборке присутствует атрибут APTCA и тип в сборке наследует от типа, который не разрешены частично доверенные вызовы, возможные уязвимости безопасности. Если два типа `T1` и `T2` удовлетворять следующим условиям, злоумышленники могут использовать тип `T1` для обхода неявного полное требование наследования доверия, защищающий `T2`:  
   
@@ -85,6 +85,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>См. также  
  [Правила написания безопасного кода](/dotnet/standard/security/secure-coding-guidelines)   
- [Сборки .NET framework вызываемые кодом с частичным доверием](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Использование библиотек из не вполне надежного кода](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Требования к наследованию](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

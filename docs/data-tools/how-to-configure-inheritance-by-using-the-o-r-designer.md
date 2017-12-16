@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8b4c2ac7790bd2c5114b04a6119702013d54825b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 9943b6d5263a616523db92a67df58746579b0d51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Как: Настройка наследования с помощью реляционного конструктора объектов
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах. При однотабличном наследовании имеется единственная таблица базы данных, которая содержит поля как для родительских данных, так и для дочерних. Для реляционных данных столбец дискриминатора содержит значение, которое определяет, какому классу принадлежит каждая запись.  
@@ -56,7 +56,6 @@ ms.lasthandoff: 11/09/2017
 ## <a name="see-also"></a>См. также
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [Пошаговое руководство: Создание классов LINQ to SQL (конструктор O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
-[PAVE новые возможности для разработки приложений баз данных в Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
 [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
 [Пошаговое руководство: Создание классов LINQ to SQL, используя наследование одиночной таблицы (конструктор O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   

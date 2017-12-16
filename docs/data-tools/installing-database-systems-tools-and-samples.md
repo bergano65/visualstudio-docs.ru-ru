@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Базы данных, совместимой системы для Visual Studio
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/22/2017
 
 При использовании API-интерфейсов хранилища Azure, установите эмуляторов хранилища Azure на локальном компьютере во время разработки во избежание накладных расходов, пока вы не будете готовы к развертыванию в рабочей среде. Дополнительные сведения см. в разделе [использование эмулятора хранилища Azure для разработки и тестирования](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
 
-В следующем списке перечислены некоторые популярные систем баз данных, которые могут использоваться в проектах Visual Studio. Список не является исчерпывающим. Список сторонних поставщиков, предлагающих поставщиков данных ADO.NET, позволяющие тесная интеграция с помощью средств Visual Studio см. в разделе [поставщиков данных ADO.NET](https://msdn.microsoft.com/en-us/library/dd363565.aspx).
+В следующем списке перечислены некоторые популярные систем баз данных, которые могут использоваться в проектах Visual Studio. Список не является исчерпывающим. Список сторонних поставщиков, предлагающих поставщиков данных ADO.NET, позволяющие тесная интеграция с помощью средств Visual Studio см. в разделе [поставщиков данных ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 

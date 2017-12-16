@@ -13,11 +13,11 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b16b7e9f4dba55babfc7ad2ad90affe0ca93c508
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Создание и использование политик возврата с анализом кода
 При использовании управления версиями Team Foundation (TFVC) можно создать политику возврата с анализом кода для .NET Framework и проекты машинного кода (C/C++) в командном проекте. Политика возврата анализа кода можно использовать для отслеживания и повышения качества кода, возвращаемого в базу кода.  
@@ -43,6 +43,4 @@ ms.lasthandoff: 10/31/2017
  Описание способов добавления слов и токенов в словарь, который выполняется ссылка в правилах именования анализа кода.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Установка и внедрение системы контроля качества](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
-  
  [Улучшение качества кода с помощью политик возврата командного проекта](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

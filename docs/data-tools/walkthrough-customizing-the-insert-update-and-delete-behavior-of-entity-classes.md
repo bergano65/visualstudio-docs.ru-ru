@@ -15,14 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f711c0fcdd4866a1b097585052cdcb3733e426d8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство: Настройка инструкции insert, update и delete поведение классов сущностей
-[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную поверхность проектирования для создания и редактирования [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классов (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), можно использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную поверхность проектирования для создания и редактирования [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классов (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), можно использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](/dotnet/csharp/linq/).  
   
 По умолчанию логику для выполнения обновлений обеспечивает среда выполнения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Среда выполнения по умолчанию создает инструкции Вставить, Обновить и Удалить, основываясь на схеме таблицы (определения столбцов и информация о первичных ключах). Если вы не хотите использовать поведение по умолчанию, то можно конфигурировать поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд Вставить, Обновить и Удалить, необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций за счет хранимых процедур](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 11/09/2017
   
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 
-    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса... **.  
+    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса...** .  
 
        Откроется окно редактора запросов.  
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 11/09/2017
   
 #### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Создайте новый проект приложения Windows Forms, который содержит LINQ для классов SQL  
   
-1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта... **.  
+1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .  
   
 2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.  
 
@@ -182,7 +182,7 @@ ms.lasthandoff: 11/09/2017
   
 1.  Откройте файл LINQ to SQL в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Дважды щелкните **Northwind.dbml** файла в **обозревателе решений**.)  
   
-2.  В **обозревателя серверов**/**обозреватель баз данных**, разверните узел баз данных Northwind **хранимых процедур** узла и найдите ** InsertCustomers**, **UpdateCustomers**, и **DeleteCustomers** хранимых процедур.  
+2.  В **обозревателя серверов**/**обозреватель баз данных**, разверните узел баз данных Northwind **хранимых процедур** узла и найдите  **InsertCustomers**, **UpdateCustomers**, и **DeleteCustomers** хранимых процедур.  
   
 3.  Перетащите все три сохраненные процедуры на [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   

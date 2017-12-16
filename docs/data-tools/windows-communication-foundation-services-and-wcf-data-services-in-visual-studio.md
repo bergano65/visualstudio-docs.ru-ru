@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе содержатся вводные службы от [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] перспективы. Полную документацию см. в разделе [служб данных WCF 4.5](/dotnet/framework/data/wcf/index).  
@@ -243,7 +243,6 @@ Visual Studio предоставляет средства для работы с
 ||[Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Описывает, как использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md)|Представляет некоторые распространенные ошибки, которые могут возникать с ссылки на службу и способов их устранения.|  
 |[Отладка служб WCF](../debugger/debugging-wcf-services.md)|Описание общих проблем отладки и методов, которыми можно столкнуться при отладке службы WCF.|  
-|[Общие сведения о Windows Communication Foundation проверки подлинности службы](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Описывает способы использования WCF для предоставления службы роли веб-сайта.|  
 |[Пошаговое руководство. Создание многоуровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов.|  
 |[Диалоговое окно "Настроить ссылку на службу"](../data-tools/configure-service-reference-dialog-box.md)|Описание элементов пользовательского интерфейса из **настроить ссылку на службу** диалоговое окно.|  
   

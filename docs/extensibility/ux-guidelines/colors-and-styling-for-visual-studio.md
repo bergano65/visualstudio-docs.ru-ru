@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 ## <a name="using-color-in-visual-studio"></a>С помощью цвета в Visual Studio  
@@ -320,7 +320,7 @@ Windows использует несколько тем системного ур
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Создание VSPackage для настраиваемых цветов  
 Пакет VSPackage можно управлять шрифтов и цветов через пользовательские категории и отображения элементов на странице свойств шрифты и цвета. При использовании этого механизма, пакеты VSPackage должны реализовывать [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) интерфейса и его связанных интерфейсов.  
   
-В принципе этот механизм может использоваться для изменения всех существующих отображаемые элементы и категории, которые их содержат. Тем не менее он должен использоваться не для изменения текстовый редактор или своих отображаемых элементов. Дополнительные сведения о категории текстового редактора в разделе [шрифт и цвет Обзор](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+В принципе этот механизм может использоваться для изменения всех существующих отображаемые элементы и категории, которые их содержат. Тем не менее он должен использоваться не для изменения текстовый редактор или своих отображаемых элементов. Дополнительные сведения о категории текстового редактора в разделе [шрифт и цвет Обзор](../font-and-color-overview.md).  
   
 Чтобы реализовать пользовательские категории или отображать элементы, пакет VSPackage должен удовлетворять следующим требованиям:  
   
@@ -397,7 +397,7 @@ IDE кэширует сведения о параметрах шрифтов и 
   
  **ИЛИ**  
   
--   **опрос интегрированную среду разработки для изменения**. Это можно сделать с помощью реализовать систему [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейса. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) метода можно получить сведения о шрифт и цвет для отображения элементов. Дополнительные сведения о параметрах шрифтов и цветов см. в статье MSDN [параметров доступа к хранимых шрифта и](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **опрос интегрированную среду разработки для изменения**. Это можно сделать с помощью реализовать систему [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейса. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) метода можно получить сведения о шрифт и цвет для отображения элементов. Дополнительные сведения о параметрах шрифтов и цветов см. в статье MSDN [параметров доступа к хранимых шрифта и](../accessing-stored-font-and-color-settings.md).  
   
 > **Примечание:** чтобы гарантировать правильность результатов опроса, используйте [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов получения [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейса.
   

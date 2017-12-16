@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: проверьте использование deny и permit only
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Метод содержит проверку безопасности, которая задает действие по обеспечению безопасности PermitOnly или Deny.  
   
 ## <a name="rule-description"></a>Описание правила  
- [С использованием метода PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) и <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> действия по безопасности следует использовать только те, кто имеет специальными знаниями из [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] безопасности. Код, который использует эти действия безопасности, должен быть тщательно проанализирован на предмет безопасности.  
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Действие по обеспечению безопасности следует использовать только те, кто имеет специальными знаниями из [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] безопасности. Код, который использует эти действия безопасности, должен быть тщательно проанализирован на предмет безопасности.  
   
  Запретить изменяет поведение по умолчанию стека, которая происходит в ответ на запрос безопасности. Он позволяет указать разрешения, которые не должны предоставляться в течение метода отказа, независимо от фактических разрешений вызывающих методов в стеке вызовов. Если обход стека обнаруживается метод, защищенный действием Deny, и если запрошенное разрешение включается в отклоненные разрешения, обход стека не выполняется. Метод PermitOnly также изменяет поведение по умолчанию проверки стека. Он позволяет указать только те разрешения, которые могут быть предоставлены независимо от разрешений от вызывающих объектов кода. Если обход стека обнаруживается метод, защищенный действием PermitOnly, и если затребованное разрешение не включен в разрешения, которые определяются PermitOnly, обход стека не выполняется.  
   
@@ -82,5 +82,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
  [Правила написания безопасного кода](/dotnet/standard/security/secure-coding-guidelines)   
- [Переопределение проверок безопасности](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [С помощью метода PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+

@@ -16,11 +16,11 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eebc25b344e603cb66546db6d9179067d5995496
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5d42d7c7a78d6bde2560f6e5cf5538a93585870b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Общие сведения об анализе управляемого кода
 Анализа управляемого кода позволяет проанализировать управляемые сборки и получить такие сведения о сборках, как нарушения правил программирования и разработки, изложенных в руководствах по разработке Microsoft .NET Framework.  
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/31/2017
  Этого можно достичь, задав политики возврата. Дополнительные сведения см. в разделе [улучшение качества кода с помощью политик возврата командного проекта](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Интеграция командного построения  
- Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [Сборка приложения](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в разделе [сборок и выпусков](/vsts/build-release/index).  
   
 ## <a name="see-also"></a>См. также  
  [Использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   

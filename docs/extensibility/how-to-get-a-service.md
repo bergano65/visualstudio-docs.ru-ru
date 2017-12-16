@@ -13,11 +13,11 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ccb0abcf70f66812ab1ffe91958119f08c97966
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: dc427dbca201b472feca89201284ab009abd9d34
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-get-a-service"></a>Как: доступ к службе
 Часто требуется получить службы Visual Studio для доступа к другой функции. Как правило служба Visual Studio предоставляет один или несколько интерфейсов, которые можно использовать. Большинство служб можно получить из пакета VSPackage.  
@@ -28,9 +28,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Получение службы из инициализированный VSPackage  
   
-1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `GetServiceExtension`. Шаблон проекта VSIX в можно найти **новый проект** диалогового окна в разделе **Visual C# / Extensibility**.  
+1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `GetServiceExtension`. Шаблон проекта VSIX в можно найти **новый проект** диалогового окна в разделе **Visual C# > расширяемости**.  
   
-2.  Теперь добавьте пользовательскую команду шаблон элемента с именем **GetServiceCommand**. В **Добавление нового элемента** диалоговое окно, перейдите на **Visual C# / Extensibility** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя файла команд для **GetServiceCommand.cs**. Дополнительные сведения о том, как создать настраиваемую команду [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  Теперь добавьте пользовательскую команду шаблон элемента с именем **GetServiceCommand**. В **Добавление нового элемента** диалоговое окно, последовательно выберите пункты **Visual C# > расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя файла команд для **GetServiceCommand.cs**. Дополнительные сведения о том, как создать настраиваемую команду [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 3.  В GetServiceCommand.cs удалите текст метода MenuItemCommand и добавьте следующий код:  
   

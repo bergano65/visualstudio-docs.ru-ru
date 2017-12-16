@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio, рефакторинг функции (C#) | Документы Microsoft"
+title: "Функции в Visual Studio рефакторинга в C# | Документы Microsoft"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,17 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>Функции оптимизации кода для C# #
+# <a name="refactoring-features-in-c"></a>Возможности рефакторинга в C# #
 
-Рефакторинг — это процесс усовершенствования кода после его написания. Оптимизация изменяет внутренней структуры кода без изменения его поведения. В Visual Studio для C# доступны следующие возможности рефакторинга.
+Рефакторинг — это процесс изменения внутренней структуры кода без изменения его поведения. Чтобы сделать код более читаемым, удобный и надежный часто используется рефакторинга.
+
+В Visual Studio для C# доступны следующие возможности рефакторинга.
 
 * [Изменение сигнатуры метода](refactoring/change-method-signature.md)
 * [Преобразование метода Get в свойство и наоборот](refactoring/convert-get-method-to-property.md)
@@ -40,4 +42,6 @@ ms.lasthandoff: 11/29/2017
 
 ## <a name="see-also"></a>См. также
 
-[Использование среды разработки Visual Studio для C#](using-the-visual-studio-development-environment-for-csharp.md)  
+[Рефакторинг, создание кода и быстрых действий в Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Рефакторинг в Visual Basic](../vb-ide/refactoring-vb.md)  
+[Использование среды разработки Visual Studio для C#](using-the-visual-studio-development-environment-for-csharp.md)

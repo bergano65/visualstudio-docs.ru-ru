@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cba3d5568ee2fa2b4af0eb9c10995c813fe09c01
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Средства LINQ to SQL в Visual Studio
 LINQ to SQL была первой технологии объектно реляционного сопоставления, выпускаемых корпорацией Майкрософт. Он хорошо работает в основных сценариях и продолжает поддерживаться в Visual Studio, но он больше не находится в активной разработке. Использование LINQ SQL при обслуживании с устаревшим приложением, оно уже используется, или в простых приложений, использующих SQL Server и не требуют сопоставление нескольких таблиц. Как правило новые приложения должны использовать Entity Framework, при необходимости к слою объектно реляционного сопоставления.  
@@ -62,7 +62,7 @@ LINQ to SQL была первой технологии объектно реля
  Подобно другим объектам, [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы могут использовать наследование и выводиться из других классов. В базе данных, отношения наследования создаются несколькими способами. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах. Дополнительные сведения см. в разделе [как: Настройка наследования с помощью реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).  
   
 ## <a name="linq-to-sql-queries"></a>Запросы LINQ to SQL  
- Классы сущностей, созданных [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] предназначен для работы с [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d). Дополнительные сведения см. в разделе [как: запрашивать информацию](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
+ Классы сущностей, созданных [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] предназначен для работы с [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/). Дополнительные сведения см. в разделе [как: запрашивать информацию](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
   
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Отделение сгенерированного DataContext и кода класса сущностей в иные пространства имен Namespaces  
  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Предоставляет **контекстное пространство имен** и **пространство имен сущностей** свойства <xref:System.Data.Linq.DataContext>. Эти свойства определяют, какое пространство имен <xref:System.Data.Linq.DataContext> и кода классов сущностей генерируется в нем. По умолчанию эти свойства пустые и <xref:System.Data.Linq.DataContext> классы сущностей генерируются в пространстве имен приложения. Чтобы сгенерировать код в пространство имен, отличное от пространства имен приложения, введите значение в **контекстное пространство имен** и/или **пространство имен сущностей** свойства.
