@@ -1,7 +1,16 @@
-# [Обзор возможностей профилирования](profiling-feature-tour.md)
-## [Руководство по профилированию производительности для начинающих](beginners-guide-to-performance-profiling.md)
-## [Новые возможности средств профилирования](what-s-new-in-profiling-tools.md)
+
+# [Документация по профилированию](index.md)
+# Обзор
+## [Обзор возможностей профилирования](profiling-feature-tour.md)
+# Краткие руководства
+## [Анализ использования ЦП (управляемый код)](quickstart-cpu-usage-managed.md)
+## [Анализ использования ЦП (машинный код)](quickstart-cpu-usage-native.md)
+## [Анализ использования ЦП (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Учебники
+## [Профилирование производительности приложений в Visual Studio](beginners-guide-to-performance-profiling.md)
+# Основные понятия
 ## [Запуск средств профилирования с отладчиком или без него](running-profiling-tools-with-or-without-the-debugger.md)
+# Практические руководства
 ## [Анализ использования памяти](memory-usage.md)
 ### [События пользовательской встроенной кучи трассировки событий Windows](custom-native-etw-heap-events.md)
 ### [Использование памяти без отладчика](memory-usage-without-debugging2.md)
@@ -365,5 +374,7 @@
 ##### [Функция CvWriteAlert](cvwritealert-function.md)
 ##### [Функция CvWriteFlag](cvwriteflag-function.md)
 ##### [Функция CvWriteMessage](cvwritemessage-function.md)
-### [Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Анализ энергопотребления приложениями UWP](analyze-energy-use-in-store-apps.md)
+### [Служебная программа с интерфейсом командной строки визуализатора параллелизма (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Анализ энергопотребления приложениями Магазина](analyze-energy-use-in-store-apps.md)
+# Ресурсы
+## [Новые возможности средств профилирования](what-s-new-in-profiling-tools.md)
