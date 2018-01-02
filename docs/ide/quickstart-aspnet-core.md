@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 6879d29b1e8c36ce9456fc44cf738a57603a6d50
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: cfcb85704302303704ef9b4bb1affc60031793d9
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -74,6 +74,9 @@ ms.lasthandoff: 11/22/2017
 1. В верхней части веб-сайта выберите элемент **О программе**, чтобы просмотреть сообщение каталога, которое вы добавили в метод `OnGet()` для страницы **О программе**.
 
 1. Закройте веб-браузер.
+
+> [!NOTE]
+> Если появляется сообщение об ошибке **Не удается подключиться к веб-серверу "IIS Express"**, закройте программу Visual Studio и откройте ее с помощью команды **Запуск от имени администратора** (в контекстном меню). Затем снова запустите приложение.
 
 Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали нечто новое об интегрированной среде разработки Visual Studio. Если вы хотите ознакомиться с возможностями этого продукта более подробно, продолжите работу с руководством из раздела **Руководства** в содержании.
 

@@ -1,7 +1,7 @@
 ---
 title: "Параметры соглашений о написании кода .NET в EditorConfig | Документация Майкрософт"
 ms.custom: 
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -14,17 +14,15 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-ms.assetid: 
-caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e6ce48d060e340076b336083cb73bdd8145fc1a0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -283,17 +281,17 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio | Поддерживаемая версия |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# и Visual Basic | for_non_interface_members:none | Visual Studio 2017 версии 15.5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:none | Visual Studio 2017 версии 15.5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:none | Visual Studio 2017 версии 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# и Visual Basic | for_non_interface_members:none | Visual Studio 2017 версии 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:none | Visual Studio 2017 версии 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:none | Visual Studio 2017 версии 15.5 |
 
 **dotnet\_style\_require\_accessibility_modifiers**  
 Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
 
-| Значение | Описание |
+| Значение | Описание: |
 | ----- |:----------- |
 | always | Предпочитать указывать модификаторы доступа |
-| for_non_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. На данный момент это поведение соответствует параметру **always** и будет впоследствии использоваться для проверки при добавлении методов интерфейса C# по умолчанию. |
+| for\_non\_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. На данный момент это поведение соответствует параметру **always** и будет впоследствии использоваться для проверки при добавлении методов интерфейса C# по умолчанию. |
 | never | Предпочитать не указывать модификаторы доступа | 
 
 Примеры кода:  
@@ -577,126 +575,126 @@ csharp_style_var_elsewhere = true:suggestion
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio | Поддерживаемая версия |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | never:none | Visual Studio 2017 версия 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | never:none | Visual Studio 2017 версия 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 и IDE0024 | C# 7.0+ | never:none | Visual Studio 2017 версия 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | when_possible:none | Visual Studio 2017 версия 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | when_possible:none | Visual Studio 2017 версия 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | when_possible:none | Visual Studio 2017 версия 15.3 |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | Visual Studio 2017 версии 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | Visual Studio 2017 версии 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 и IDE0024 | C# 7.0+ | false:none | Visual Studio 2017 версии 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | true:none | Visual Studio 2017 версии 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:none | Visual Studio 2017 версии 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:none | Visual Studio 2017 версии 15.3 |  
 
 **csharp\_style\_expression\_bodied_methods**  
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
+Это правило принимает значения, описанные в следующей таблице:  
 
 | Значение | Описание |
 | ----- |:----------- |
-| when_possible | Предпочитать элементы, воплощающие выражение, для методов |
+| true | Предпочитать элементы, воплощающие выражение, для методов |
 | when_on_single_line | Предпочитать элементы, воплощающие выражение, для методов, если они будут находиться на одной строке |
-| never | Предпочитать тела блоков для методов | 
+| False | Предпочитать тела блоков для методов | 
 
 Примеры кода:  
 
 ```csharp
-// csharp_style_expression_bodied_methods = when_possible
+// csharp_style_expression_bodied_methods = true
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = never
+// csharp_style_expression_bodied_methods = false
 public int GetAge() { return this.Age; }
 ```  
 
 **csharp\_style\_expression\_bodied_constructors**  
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
+Это правило принимает значения, описанные в следующей таблице:   
 
 | Значение | Описание |
 | ----- |:----------- |
-| when_possible | Предпочитать элементы, воплощающие выражение, для конструкторов |
+| true | Предпочитать элементы, воплощающие выражение, для конструкторов |
 | when_on_single_line | Предпочитать элементы, воплощающие выражение, для конструкторов, если они будут находиться на одной строке |
-| never | Предпочитать тела блоков для конструкторов |  
+| False | Предпочитать тела блоков для конструкторов |  
 
 Примеры кода:  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = when_possible
+// csharp_style_expression_bodied_constructors = true
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = never
+// csharp_style_expression_bodied_constructors = false
 public Customer(int age) { Age = age; }
 ```  
 
 **csharp\_style\_expression\_bodied_operators**  
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
+Это правило принимает значения, описанные в следующей таблице:    
 
 | Значение | Описание |
 | ----- |:----------- |
-| when_possible | Предпочитать элементы, воплощающие выражение, для операторов |
+| true | Предпочитать элементы, воплощающие выражение, для операторов |
 | when_on_single_line | Предпочитать элементы, воплощающие выражение, для операторов, если они будут находиться на одной строке |
-| never | Предпочитать тела блоков для операторов |  
+| False | Предпочитать тела блоков для операторов |  
 
 Примеры кода:  
 
 ```csharp
-// csharp_style_expression_bodied_operators = when_possible
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = true
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = never
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = false
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **csharp\_style\_expression\_bodied_properties**  
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
+Это правило принимает значения, описанные в следующей таблице:   
 
 | Значение | Описание |
 | ----- |:----------- |
-| when_possible | Предпочитать элементы, воплощающие выражение, для свойств |
+| true | Предпочитать элементы, воплощающие выражение, для свойств |
 | when_on_single_line | Предпочитать элементы, воплощающие выражение, для свойств, если они будут находиться на одной строке |
-| never | Предпочитать тела блоков для свойств |  
+| False | Предпочитать тела блоков для свойств |  
 
 Примеры кода:  
 
 ```csharp
-// csharp_style_expression_bodied_properties = when_possible
+// csharp_style_expression_bodied_properties = true
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = never
+// csharp_style_expression_bodied_properties = false
 public int Age { get { return _age; }}
 ```  
 
 **csharp\_style\_expression\_bodied_indexers**  
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
+Это правило принимает значения, описанные в следующей таблице:  
 
 | Значение | Описание |
 | ----- |:----------- |
-| when_possible | Предпочитать элементы, воплощающие выражение, для индексаторов |
+| true | Предпочитать элементы, воплощающие выражение, для индексаторов |
 | when_on_single_line | Предпочитать элементы, воплощающие выражение, для индексаторов, если они будут находиться на одной строке |
-| never | Предпочитать тела блоков для индексаторов | 
+| False | Предпочитать тела блоков для индексаторов | 
 
 Примеры кода:  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = when_possible
+// csharp_style_expression_bodied_indexers = true
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = never
+// csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **csharp\_style\_expression\_bodied_accessors**  
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
+Это правило принимает значения, описанные в следующей таблице:   
 
 | Значение | Описание |
 | ----- |:----------- |
-| when_possible | Предпочитать элементы, воплощающие выражение, для методов доступа |
+| true | Предпочитать элементы, воплощающие выражение, для методов доступа |
 | when_on_single_line | Предпочитать элементы, воплощающие выражение, для методов доступа, если они будут находиться на одной строке |
-| never | Предпочитать тела блоков для методов доступа | 
+| False | Предпочитать тела блоков для методов доступа | 
 
 Примеры кода:  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = when_possible
+// csharp_style_expression_bodied_accessors = true
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = never
+// csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -705,12 +703,12 @@ public int Age { get { return _age; } set { _age = value; } }
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = never:none
-csharp_style_expression_bodied_constructors = never:none
-csharp_style_expression_bodied_operators = never:none
-csharp_style_expression_bodied_properties = when_possible:suggestion
-csharp_style_expression_bodied_indexers = when_possible:suggestion
-csharp_style_expression_bodied_accessors = when_possible:suggestion
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 ```  
 
 #### <a name="pattern_matching">Сопоставление шаблонов</a>
@@ -1049,7 +1047,7 @@ dotnet_sort_system_directives_first = true
 **csharp\_new\_line\_before\_open_brace**  
 Это правило определяет, следует ли располагать открывающую фигурную скобку `{` одной строке с предшествующим кодом или на новой строке. Для этого правила не нужно указывать значение **true** или **false**. Вместо этого укажите **all**, **none** либо один или несколько элементов кода, таких как **methods** или **properties**, чтобы определить, когда следует применять это правило. Все допустимые значения перечислены в следующей таблице:  
 
-| Значение | Описание 
+| Значение | Описание: 
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection, properties, types.<br>(При использовании нескольких значений разделяйте их с помощью ",".) | Требовать, чтобы фигурные скобки для указанных элементов кода размещались в новой строке (стиль Олмана). |
 | все | Требовать, чтобы фигурные скобки для всех выражений размещались в новой строке (стиль Олмана). |
@@ -1304,7 +1302,7 @@ default:
 **csharp\_indent_labels**  
 Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
 
-| Значение | Описание |
+| Значение | Описание: |
 | ----- |:----------- |
 | flush_left | Метки размещаются в крайнем левом столбце |
 | one_less_than_current | Метки размещаются на предыдущей позиции отступа относительно текущего контекста |
@@ -1370,11 +1368,11 @@ csharp_indent_labels = flush_left
 
 | Имя правила | Применимые языки | Значение по умолчанию в Visual Studio | Поддерживаемая версия |
 | ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | false | Visual Studio 2017 версия 15.3  |
+| csharp_space_after_cast |  C# | False | Visual Studio 2017 версия 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | Visual Studio 2017 версия 15.3  |
-| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | false | Visual Studio 2017 версия 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | false | Visual Studio 2017 версия 15.3  |
-| csharp_space_between_parentheses |  C# | false | Visual Studio 2017 версия 15.3  |
+| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | False | Visual Studio 2017 версия 15.3  |
+| csharp_space_between_method_call_parameter_list_parentheses |  C# | False | Visual Studio 2017 версия 15.3  |
+| csharp_space_between_parentheses |  C# | False | Visual Studio 2017 версия 15.3  |
 
 **csharp\_space\_after_cast**  
 Когда для этого правила задано значение **true**, требуется наличие пробела между типом и значением в приведении.  
@@ -1435,7 +1433,7 @@ MyMethod(argument);
 **csharp_space_between_parentheses**  
 Это правило принимает не значение **true** или **false**, а одно из следующих значений:  
 
-| Значение | Описание |
+| Значение | Описание: |
 | ----- |:------------|
 | control_flow_statements | Добавлять пробел между скобками для операторов потока управления |
 | выражения | Добавлять пробел между скобками для выражений |
