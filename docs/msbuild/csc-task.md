@@ -21,11 +21,11 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="csc-task"></a>Задача Csc
 Использует программу-оболочку для файла CSC.exe и создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения о программе CSC.EXE см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -63,6 +63,7 @@ ms.lasthandoff: 10/31/2017
 |`NoWin32Manifest`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, манифест Win32 по умолчанию не включается.|  
 |`Optimize`|Необязательный параметр `Boolean` .<br /><br /> Значение `true` включает оптимизации. Значение `false` отключает оптимизации. Дополнительные сведения см. в разделе [/optimize (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|Необязательный выходной параметр `String`.<br /><br /> Задает имя выходного файла. Дополнительные сведения см. в разделе [/out (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
+|`OutputRefAssembly`|Необязательный параметр `String` .<br /><br /> Задает имя выходного файла базовой сборки. Дополнительные сведения см. в разделе [/refout (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
 |`PdbFile`|Необязательный параметр `String` .<br /><br /> Задает имя файла отладочной информации. По умолчанию используется имя файла выходных данных с расширением PDB.|  
 |`Platform`|Необязательный параметр `String` .<br /><br /> Указывает целевую платформу процессора для выходного файла. Этот параметр может иметь значение `x86`, `x64` или `anycpu`. Значение по умолчанию — `anycpu`. Дополнительные сведения см. в разделе [/platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Вызывает импорт задачей информации об открытых типах из заданных элементов в текущий проект. Дополнительные сведения см. в разделе [/reference (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Вы можете задать псевдоним ссылки [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] в файле [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], добавив метаданные `Aliases` к исходному элементу Reference. Например, пусть требуется установить псевдоним LS1 в следующей командной строке CSC.<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Для этого используется следующий код.<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  

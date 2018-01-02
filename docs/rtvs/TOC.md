@@ -10,7 +10,7 @@
 # Практические руководства
 ## [Проекты R](projects.md)
 ### [Диспетчер пакетов](package-manager.md)
-### [Интеграция SQL Server](sql-server.md)
+### [Интеграция с SQL Server](sql-server.md)
 ## [Редактирование кода](code-editing.md)
 ### [IntelliSense](code-intellisense.md)
 ### [Выделение](code-linting.md)

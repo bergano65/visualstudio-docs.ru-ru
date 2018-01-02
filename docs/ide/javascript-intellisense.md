@@ -24,40 +24,41 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
-caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 694e747f09e38a2dc363057ccdb43ac55f4c61ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 056101593be6119d994cab40f1536fe130fc25bb
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
+
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] обеспечивает эффективное редактирование JavaScript. Система Visual Studio, основанная на языковой службе TypeScript, расширяет возможности IntelliSense, поддерживает современные компоненты JavaScript, а также улучшенные функции для повышения эффективности работы, такие как "Перейти к определению", рефакторинг и многое другое.
 
 > [!NOTE]
->  Языковая служба JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этом разделе, а также в этой [записи блога](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). Новые возможности редактирования в основном относятся к VS Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
+> Языковая служба JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этом разделе, а также в этой [записи блога](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). Новые возможности редактирования в основном относятся к Visual Studio Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
 
-Дополнительные сведения об общих функциональных возможностях IntelliSense в [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] см. в разделе [Использование технологии IntelliSense](../ide/using-intellisense.md). 
+Дополнительные сведения об общих функциональных возможностях IntelliSense в Visual Studio см. в разделе [Использование технологии IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности языковой службы JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-JavaScript IntelliSense в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] теперь отображает гораздо больше информации в списках элементов и параметров.
+Начиная с [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense отображает гораздо больше информации в списках членов и параметров.
 Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код.
 Для формирования такой информации TypeScript использует несколько источников.
+
 - [IntelliSense на основе определения типа](#TypeInference)
 - [IntelliSense на основе JSDoc](#JsDoc)
 - [IntelliSense на основе файлов объявления TypeScript](#TSDeclFiles)
 - [Автоматическое получение определений типов](#Auto)
 
 ### <a name="TypeInference"></a>IntelliSense на основе определения типа
+
 В большинстве случаев явные сведения о типах в JavaScript недоступны. Но тип обычно довольно легко вывести из контекста кода.
 Этот процесс называется определением типа.
 
-Для переменной или свойства типом обычно является тип значения, используемый для его инициализации, либо последнее присвоенное значение. 
+Для переменной или свойства типом обычно является тип значения, используемый для его инициализации, либо последнее присвоенное значение.
 
 ```js
 var nextItem = 10;
@@ -67,13 +68,14 @@ nextItem = "box";
 nextItem; // now we know nextItem is a string
 ```
 
-Для функции тип возвращаемого значения можно вывести из операторов return. 
+Для функции тип возвращаемого значения можно вывести из операторов return.
 
 Для параметров функций вывод сейчас отсутствует, однако это можно обойти с помощью файлов `.d.ts` TypeScript или JSDoc (см. в следующих разделах).
 
 Кроме того, есть специальный вывод для следующих элементов:
- - Классы в стиле ES3, определяемые с использованием функции конструктора и назначений свойству прототипа.
- - Шаблоны модуля в стиле CommonJS, указанные в качестве назначений свойств для объекта `exports` или назначений свойству `module.exports`.
+
+- Классы в стиле ES3, определяемые с использованием функции конструктора и назначений свойству прототипа.
+- Шаблоны модуля в стиле CommonJS, указанные в качестве назначений свойств для объекта `exports` или назначений свойству `module.exports`.
 
 ```js
 function Foo(param1) {
@@ -100,7 +102,7 @@ x.b = false;
 x. // <- "x" is shown as having properties a, b, and c of the types specified
 ```
 
-Как уже упоминалось, параметры функции никогда не выводятся. Однако с помощью тега `@param` JSDoc можно добавить типы и в параметры функции. 
+Как уже упоминалось, параметры функции никогда не выводятся. Однако с помощью тега `@param` JSDoc можно добавить типы и в параметры функции.
 
 ```js
 /**
@@ -110,7 +112,7 @@ function Foo(param1) {
     this.prop = param1; // "param1" (and thus "this.prop") are now of type "string".
 }
 ```
- 
+
 Сведения о поддерживаемых сейчас заметках JsDoc см. в [этом документе](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript).
 
 ### <a name="TsDeclFiles"></a> IntelliSense на основе файлов объявления TypeScript
@@ -119,20 +121,21 @@ function Foo(param1) {
 
 Ниже показан простой пример файла определения TypeScript, предоставляющий подобные сведения о типе (через интерфейс) файлу JavaScript в том же проекте (с помощью тега JsDoc).
 
-_**Объявления TypeScript, используемые в JavaScript**_
-
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
 ### <a name="Auto"></a> Автоматическое получение определений типов
+
 В среде TypeScript API наиболее популярных библиотек JavaScript описываются файлами `.d.ts`, а наиболее распространенным репозиторием для таких определений является [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-По умолчанию языковая служба языка сальса будет пытаться определить используемые библиотеки JavaScript, а затем автоматически скачать и указать в ссылке соответствующий файл `.d.ts`, описывающий эту библиотеку, чтобы расширить возможности IntelliSense. Файлы скачиваются в кэш, расположенный в пользовательской папке в `%LOCALAPPDATA%\Microsoft\TypeScript`. 
+По умолчанию языковая служба языка сальса будет пытаться определить используемые библиотеки JavaScript, а затем автоматически скачать и указать в ссылке соответствующий файл `.d.ts`, описывающий эту библиотеку, чтобы расширить возможности IntelliSense. Файлы скачиваются в кэш, расположенный в пользовательской папке в `%LOCALAPPDATA%\Microsoft\TypeScript`.
 
 > [!NOTE]
 > Эта функция **отключена** по умолчанию при использовании файла конфигурации `tsconfig.json`, но ее можно включить, воспользовавшись описанием ниже.
 
-Сейчас автоматическое определение работает для зависимостей, скачанных из npm (путем чтения файла `package.json`), Bower (путем чтения файла `bower.json`) и свободных файлов в проекте, которые примерно соответствуют списку из 400 наиболее популярных библиотек JavaScript. Например, если у вас в проекте есть `jquery-1.10.min.js`, для расширения возможностей редактирования будет получен и загружен файл `jquery.d.ts`. Этот файл `.d.ts` не оказывает влияния на проект. 
+Сейчас автоматическое определение работает для зависимостей, скачанных из npm (путем чтения файла `package.json`), Bower (путем чтения файла `bower.json`) и свободных файлов в проекте, которые примерно соответствуют списку из 400 наиболее популярных библиотек JavaScript. Например, если у вас в проекте есть `jquery-1.10.min.js`, для расширения возможностей редактирования будет получен и загружен файл `jquery.d.ts`. Этот файл `.d.ts` не оказывает влияния на проект.
 
 Если вы не хотите использовать автоматическое получение, отключите его, добавив указанный ниже файл конфигурации. Вы по-прежнему можете вручную поместить файлы определений для использования непосредственно в проекте.
 
+## <a name="see-also"></a>См. также
 
+[Использование технологии IntelliSense](../ide/using-intellisense.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Обзор возможностей профилирования
 
@@ -152,7 +152,7 @@ Visual Studio предоставляет широкий набор средст�
 |Средство производительности|Классические приложения Windows|Универсальные приложения Windows или приложения Магазина Windows|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Использование памяти](../profiling/memory-usage.md)|да|да|да|  
-|[Использование ЦП](../profiling/cpu-usage.md)|да|да|да|  
+|[Использование ЦП](../profiling/cpu-usage.md)|да|да|да (нет для .NET Core/ASP.NET Core)|  
 |[Использование GPU](../debugger/gpu-usage.md)|да|да|нет|  
 |[Временная шкала приложения](../profiling/application-timeline.md)|да|да|нет|  
 |[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|да|  

@@ -11,11 +11,11 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: de3ddc4288f2e14f0657f6bfb0ff3ee49ff7b5c9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a585310f19a03524d73deeb863b080d1d335c6c
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
 
@@ -226,7 +226,9 @@ public class Class1
 
 **Ответ.**
 
-Сейчас функция Live Unit Testing не работает с функцией "Загрузка упрощенного решения". Она работает, только если загружен по меньшей мере один из тестовых проектов. До этого она не будет работать, так как сейчас функция Live Unit Testing зависит по крайней мере от одного из тестовых проектов, ссылающихся на загружаемый адаптер теста (MSTest, xUnit или NUnit).
+Сейчас функция Live Unit Testing не работает с функцией "Загрузка упрощенного решения". Она работает, только если загружен по меньшей мере один из тестовых проектов. До этого она не будет работать, так как функция Live Unit Testing зависит по крайней мере от одного из тестовых проектов, ссылающихся на загружаемый адаптер теста (MSTest, xUnit или NUnit).
+
+Примечание. В Visual Studio 2017 версии 15.5 и более поздних функция загрузки упрощенного решения недоступна. В Visual Studio версии 15.5 и более поздних крупные решения, содержащие управляемый код, загружаются значительно быстрее, чем раньше, даже без функции загрузки упрощенного решения.
  
 ## <a name="why-does-live-unit-testing-does-not-capture-coverage-from-a-new-process-created-by-a-test"></a>Почему функция Live Unit Testing не записывает покрытие из созданного тестом процесса?
  

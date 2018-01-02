@@ -5,42 +5,43 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Сведения о настройке учетной записи Azure с оплатой по мере использования."
+Description: Learn how to set up your Azure Pay-As-You-Go account.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a59fdc870a1e791c362379be93224b4b50498be8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4add5862ba05a588a3320b3f2530787ff153c974
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="setting-up-azure-devtest-pay-as-you-go-subscription"></a>Настройка подписки Azure для разработки и тестирования с оплатой по мере использования
 Работайте вместе с участниками команды в облаке.  Создайте несколько подписок для разработки и тестирования с оплатой по мере использования для совместной работы с другими подписчиками с одновременной поддержкой изоляции между командами и средами.  Вы получите специальные скидки на почасовые тарифы на использование средств разработки и тестирования в рамках ПО подписки Azure.
 
 1.  Чтобы воспользоваться преимуществом подписки Azure с оплатой по мере использования, выберите ссылку **Активировать** в нижней части плитки преимущества.   
 
-![Плитка Azure PAYG](_img\vs-azure-payg\vs-azure-payg-tile.png) 
+    ![Плитка Azure PAYG](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 
 2.  Если вы уже активировали учетную запись Azure в рамках использования преимуществ подписки (например, если вы располагаете подпиской Enterprise и активировали ежемесячную сумму на счете Azure в размере 150 долларов США), перейдите к шагу 5.
 
 3.  На странице регистрации Microsoft Azure вы можете настроить предложение для разработки и тестирования с оплатой по мере использования (PAYG) или повысить уровень до предложения Visual Studio Enterprise.  Щелкните **Продолжать использовать текущее предложение (Тестирование и разработка с оплатой по мере использования)**, если вы не хотите выполнять повышать уровень. 
 
-![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-signup-cropped.png) 
+    ![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-signup-cropped.png) 
 
 4.  Чтобы подтвердить свою личность, введите номер телефона и нажмите кнопку "Отправить текстовое сообщение" или "Позвонить мне".  Введите полученный код.  Нажмите кнопку **Проверить код**. 
 
-![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-identity-cropped.png) 
+    ![Регистрация Azure PAYG](_img\vs-azure-payg\vs-azure-payg-identity-cropped.png) 
 
 
 5.  После этого укажите сведения о выставлении счетов для своей учетной записи и нажмите кнопку **Далее**.  (С этой кредитной карты будет списываться плата за все ваши покупки в Azure.)  
 
-![Оплата Azure PAYG](_img\vs-azure-payg\vs-azure-payg-payment-cropped.png) 
+    ![Оплата Azure PAYG](_img\vs-azure-payg\vs-azure-payg-payment-cropped.png) 
+        
 
 6.  В разделе "Соглашение" установите флажок, чтобы принять соглашение о подписке, условия предложения и заявление о конфиденциальности, а затем нажмите кнопку **Приобрести**. 
 
 7.  На странице **Добро пожаловать в Microsoft Azure** вы можете приобрести план поддержки или приступить к работе с подпиской.   
 
 8.  Если вы решили начать работу с подпиской, открывается [портал Microsoft Azure](https://portal.azure.com). Если вы зашли на него впервые, вам будет предложен краткий обзор некоторых функций.  После ознакомления с обзором или отказа от него вы увидите панель мониторинга.  Теперь вы готовы начать работу с Azure.
-
-![Панель мониторинга Azure PAYG](_img\vs-azure-payg\vs-azure-payg-dashboard-cropped.png) 
+  
+    ![Панель мониторинга Azure PAYG](_img\vs-azure-payg\vs-azure-payg-dashboard-cropped.png) 

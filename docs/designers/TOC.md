@@ -24,6 +24,7 @@
 ### [Начало работы с WPF](getting-started-with-wpf.md)
 #### [Введение в WPF](introduction-to-wpf.md)
 #### [Walkthrough: My First WPF Desktop Application](walkthrough-my-first-wpf-desktop-application2.md) (Пошаговое руководство. Создание первого классического приложения WPF)
+#### [Создание приложения WPF на C# или Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [Ресурсы сообщества по WPF](wpf-community-resources.md)
 #### [Привязка данных WPF с помощью LINQ to XML](wpf-data-binding-with-linq-to-xml.md)
 ##### [Общие сведения о привязке данных WPF с помощью LINQ to XML](wpf-data-binding-with-linq-to-xml-overview.md)

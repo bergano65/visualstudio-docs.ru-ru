@@ -1,7 +1,7 @@
 ---
 title: "Оптимизация производительности Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.performancecenter
 ms.technology: vs-ide-general
-ms.openlocfilehash: d1058ca5762db28f0afc678a9d31cc6f0f3be6bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 78a2a4dc41b4c6b3154951f6f48b95b3894fc92e
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="optimize-visual-studio-performance"></a>Оптимизация производительности Visual Studio
 Система Visual Studio рассчитана на максимально быстрый и эффективный запуск. Однако загрузка некоторых расширений и окон инструментов Visual Studio может негативно повлиять на время запуска. Вы можете управлять поведением медленных расширений и окон инструментов в диалоговом окне **Управление производительностью Visual Studio**. Общие рекомендации по повышению производительности см. в разделе [Советы и рекомендации по улучшению работы Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).  
@@ -66,17 +66,8 @@ ms.lasthandoff: 10/31/2017
 
     !["Управление производительностью Visual Studio" — представление окон инструментов](../ide/media/vside_perfdialog_toolwindows.png)
 
-## <a name="speed_up_solution_load"></a>Быстрая загрузка больших решений в Visual Studio 2017
-
-В Visual Studio 2017 появилась новая функция "Загрузка упрощенного решения", которая минимизирует время и память, необходимые для загрузки больших решений в интегрированной среде разработки. При наличии большого решения, содержащего много проектов C#, VB или C++, включение этой функции, скорее всего, позволит существенно повысить производительность. Подробные сведения об использовании этой функции см. в статье, посвященной [оптимизации загрузки решения](../ide/optimize-solution-loading-in-visual-studio.md).
-
-### <a name="enable-or-disable-lightweight-solution-load"></a>Включение и отключение загрузки упрощенного решения
-
-Щелкните правой кнопкой мыши имя решения в обозревателе решений и выберите **Включить загрузку упрощенного решения**. Выбрав этот параметр, закройте и снова откройте решение, чтобы активировать загрузку упрощенного решения.
-
-![обозреватель решений](../ide/media/VSIDE_LSL_Solution_Setting.png)
-
-Чтобы настроить глобальные параметры для загрузки простого решения, см. статью об [оптимизации загрузки решения](../ide/optimize-solution-loading-in-visual-studio.md#global_solution_load_settings).
+> [!NOTE]
+> В версиях Visual Studio, предшествовавших версии 15.5, была представлена функция **загрузки упрощенного решения**. В Visual Studio 2017 версии 15.5 и более поздних эта функция недоступна. В Visual Studio версии 15.5 и более поздних крупные решения, содержащие управляемый код, загружаются значительно быстрее, чем раньше, даже без функции загрузки упрощенного решения.  
 
 ## <a name="see-also"></a>См. также
 [Советы и рекомендации по улучшению работы Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

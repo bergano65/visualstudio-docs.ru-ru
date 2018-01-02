@@ -5,29 +5,32 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Сведения о том, как активировать учетную запись разработчика Windows, входящую в вашу подписку Visual Studio."
+Description: Learn how to activate the Windows Developer Account included with your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 1d299b7cd8419853e8123c8f4f0229a7cfdf9f35
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9dbab29d9f5852f22b1e18e68039a596a5c2b26e
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 #  <a name="activating-the-windows-developer-account-in-visual-studio-subscriptions"></a>Активация учетной записи разработчика Windows в подписках Visual Studio
 
 Учетная запись разработчика Windows позволяет отправлять в Магазин Windows платные и бесплатные приложения Windows.     
 
-Чтобы использовать учетную запись разработчика Windows, нужно настроить учетную запись или войти с помощью имеющейся учетной записи. 
+Чтобы использовать учетную запись разработчика Windows, нужно настроить учетную запись или войти с помощью имеющейся учетной записи.
+
+Для этого процесса рекомендуется создать использовать окно браузера в режиме конфиденциального просмотра.  Например, в Google Chrome откройте новое окно в режиме "Инкогнито".  В Internet Explorer создайте новое окно в режиме InPRivate.
 
 1.  В нижней части плитки преимущества щелкните ссылку **Получить код**.  Скопируйте код в буфер обмена, а затем нажмите кнопку **Активировать**. 
 
-![Плитка преимущества для разработчика Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    ![Плитка преимущества для разработчика Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2.  Начать процесс регистрации можно на сайте [https://developer.microsoft.com](https://developer.microsoft.com).  Чтобы продолжить, нажмите кнопку **Регистрация**. 
 
-![Регистрация преимущества для разработчика Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    ![Регистрация преимущества для разработчика Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+
 
 3.  Войдите в подписку.  При наличии нескольких учетных записей выберите ту из них, которая связана с вашей подпиской Enterprise. 
 4.  На следующей странице выберите страну или регион, где вы проживаете или занимаетесь бизнесом, а затем нажмите кнопку **Далее**. 
@@ -37,7 +40,8 @@ ms.lasthandoff: 10/27/2017
 8.  Вам может быть предложено проверить пароль.  Введите его и нажмите кнопку **Вход**. 
 9.  На странице регистрации и оплаты вставьте скопированный ранее код в поле "Промокод".  Страница обновится, отобразив сообщение о том, что *оплата не требуется*.  Нажмите кнопку **Далее**.
 
-![Регистрация преимущества для разработчика Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    ![Регистрация преимущества для разработчика Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+
 
 10. Просмотрите сведения об учетной записи, изучите соглашение с разработчиком приложений и установите флажок, чтобы подтвердить свое согласие с условиями и положениями.  Нажмите кнопку **Готово**. 
 11. Щелкните **Перейти к панели мониторинга**, чтобы начать работу с учетной записью разработчика Windows.

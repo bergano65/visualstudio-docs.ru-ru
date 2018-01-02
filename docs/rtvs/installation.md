@@ -8,16 +8,15 @@ ms.technology: devlang-r
 ms.tgt_pltfrm: 
 ms.devlang: r
 ms.topic: article
-ms.assetid: 3ff60292-1b88-4ee9-b2b2-edd957f1a519
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7a509743ce09f2bbfb69b62060abedb48e9777b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2abb64170fdaa7ce91308f1be2c683325bc1abdd
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Порядок установки инструментов R для Visual Studio
 
@@ -33,20 +32,21 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="supported-versions-of-visual-studio"></a>Поддерживаемые версии Visual Studio
 
-Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://www.visualstudio.com/downloads/), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание). 
+Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Windows Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://www.visualstudio.com/downloads/), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание).
+
+Инструменты RTVS в настоящее время не поддерживаются в Visual Studio для Mac.
 
 Если имеется только оболочка Visual Studio Shell, которая входит в состав таких продуктов, как Visual Studio Test Professional и SQL Server Management Studio, то RTVS не устанавливаются. В оболочке Visual Studio Shell отсутствуют необходимые компоненты для RTVS.
-
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Установка RTVS в Visual Studio 2017
 
 1. Запустите установщик Visual Studio. (См. раздел [Скачивание](https://www.visualstudio.com/downloads/), если вы еще не установили Visual Studio.) В Windows 7 убедитесь, что в установщике отображается версия Visual Studio *15.2 сборка 26430.12* или более поздней версии.
 
-2. Выберите рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
+1. Выберите рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
 
     ![Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения" в Visual Studio 2017](media/installation-data-science-workload.png)
 
-3. Настройте дополнительные параметры справа в разделе под тем же именем рабочей нагрузки. По умолчанию эта рабочая нагрузка включает поддержку F # и Python. Для R нужно выбрать по меньшей мере компоненты **Поддержка языка R**, **Поддержка времени выполнения для средств разработки R** и **Microsoft R Client**.
+1. Настройте дополнительные параметры справа в разделе под тем же именем рабочей нагрузки. По умолчанию эта рабочая нагрузка включает поддержку F # и Python. Для R нужно выбрать по меньшей мере компоненты **Поддержка языка R**, **Поддержка времени выполнения для средств разработки R** и **Microsoft R Client**.
 
 RTVS устанавливается в каталог `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio` — где `<version>` обычно `2017`, а `<edition>` — `Community`, `Professional` или `Enterprise`.
 
@@ -58,9 +58,9 @@ RTVS устанавливается в каталог `%ProgramFiles(x86)%\Micro
 
 Для RTVS требуется 64-разрядная установка R версии 3.2.1 или более поздней из одного или нескольких следующих источников.
 
-* [Microsoft R Open](https://mran.microsoft.com/download/)
-* [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)
-* [CRAN R](https://cran.r-project.org/bin/windows/base/)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [CRAN R](https://cran.r-project.org/bin/windows/base/)
 
 Для Microsoft R Open и CRAN R возможны установка и использование нескольких версий. Однако Microsoft R Client поддерживает только одну версию и всегда использует последнюю из версий, которые установлены на компьютере.
 
@@ -92,3 +92,4 @@ RTVS устанавливается в каталог `%ProgramFiles(x86)%\Micro
 - [Инструменты R. Примеры проектов](getting-started-samples.md)
 - [Получение справки](getting-started-help.md)
 - [Настройки параметров](options.md)
+- [Microsoft Machine Learning Server (прежнее название — R Server)](/machine-learning-server/)

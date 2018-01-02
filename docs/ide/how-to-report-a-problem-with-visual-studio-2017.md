@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Как сообщить о проблеме с Visual Studio 2017
 Если во время работы с Visual Studio возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как можно сообщить о проблеме, чтобы мы могли диагностировать и устранить ее.  
@@ -65,6 +65,12 @@ ms.lasthandoff: 11/09/2017
 ## <a name="submit-the-report"></a>Отправьте отчет  
 ###  <a name="submit_the_report"></a>  
  Нажмите кнопку **Отправить** для отправки отчета вместе с изображениями и файлами трассировки или дампа. (Если кнопка **Отправить** недоступна, убедитесь, что вы ввели название и описание отчета.)  
+
+## <a name="alternate-reporting"></a>Альтернативная система отчетов
+###  <a name="alternate_reporting"></a>  
+ Если вам не удается завершить установку Visual Studio или воспользоваться средством обратной связи в среде Visual Studio, доступ к этому средству также можно получить в приложении Visual Studio Installer. Щелкните значок обратной связи в правом верхнем углу приложения Visual Studio Installer и выполните действия, описанные в этой статье.
+
+ ![Чтобы открыть средство обратной связи, можно перейти к кнопке "Предоставление отзыва" в Visual Studio Installer с помощью клавиши табуляции.](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>См. также  
  [Обращайтесь к нам](../ide/talk-to-us.md)

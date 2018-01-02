@@ -5,21 +5,21 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Сведения о доступе к порталу администратора"
+Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 89661c12a820d2a7aa3bed562a5efec141dcf01a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="accessing-the-visual-studio-subsubscriptions-administrator-portal"></a>Доступ к порталу администратора для работы с подписками Visual Studio
+# <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Использование портала администратора для работы с подписками Visual Studio
 ## <a name="for-mpsa"></a>Для MPSA
 Для доступа к порталу администрирования подписок Visual Studio вы должны быть настроены в качестве администратора на портале Microsoft Business Center Portal (BCP). 
 
-Сведения о том, как стать администратором, см. в [кратком руководстве по управлению пользователями](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Если вы уже были настроены в качестве администратора, вы можете перейти непосредственно на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com).
+Сведения о том, как стать администратором, см. в [кратком руководстве по управлению пользователями](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Если вы уже были настроены в качестве администратора, можете перейти непосредственно на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com).
 
 ## <a name="for-volume-licensing-vl"></a>Корпоративное лицензирование
 С 1 марта 2017 г. клиенты, все еще не завершившие процесс перехода на портал, должны будут управлять подписками на веб-сайте [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx). 

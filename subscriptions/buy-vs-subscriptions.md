@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Сведения о способах приобретения подписок Visual Studio"
+Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c751048084e7f5e6ae65aee5b5fa52cff84c4439
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d78531fd3635c010f83a4ebe3c446c8c4c33e943
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 #   <a name="how-to-buy-a-subscription"></a>Приобретение подписки
 Приобрести подписки Visual Studio можно тремя способами.  
@@ -76,11 +76,11 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="view-visual-studio-subscriptions-assigned-to-you"></a>Просмотр подписок Visual Studio, назначенных вам
 
-Чтобы просмотреть назначенные вам подписки Visual Studio и их преимущества, перейдите на портал подписок Visual Studio (```https://my.visualstudio.com```).
+Чтобы просмотреть назначенные вам подписки Visual Studio и их преимущества, перейдите на портал подписок Visual Studio ([https://my.visualstudio.com](https://my.visualstudio.com)).
 
-<img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
-<img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
 ### <a name="marketplace-and-billing-qa"></a>Вопросы и ответы о Marketplace и выставлении счетов
 
@@ -89,23 +89,23 @@ ms.lasthandoff: 10/31/2017
 ## <a name="buying-standard-subscriptions-through-the-microsoft-store"></a>Приобретение стандартных подписок в Microsoft Store
 Стандартные подписки Visual Studio доступны в Microsoft Store.  Чтобы купить или продлить подписку, выполните указанные ниже действия.
 
-1. Подключитесь к [Microsoft Store](https://www.microsoft.com).
+1. Подключитесь к [Microsoft Store](https://www.microsoft.com/store).
 2. Щелкните вкладку **Программы**.
 3. Выберите пункт **Профессиональное ПО**.
 
-<img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
 
 4. В списке **Купить программное обеспечение** выберите **Visual Studio**.
 
-<img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
 
 5. В списке **Купить Visual Studio** выберите подписку, которую хотите купить. (Visual Studio Professional 2017 — это отдельная лицензия на интегрированную среду разработки, которая не включает в себя подписку.)
 
-<img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
 
 6. На странице с описанием продукта вам будет предложено купить новую подписку или продлить имеющуюся.  Выберите подписку требуемого типа и добавьте ее в корзину. 
 
-<img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
 
 7. В корзине нажмите кнопку **Оформление заказа**,чтобы перейти на страницу **Проверить и разместить заказ**.  (Чтобы продолжить, вам может потребоваться войти в учетную запись Майкрософт.) 
 

@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Сведения о том, как активировать преимущество Visual Studio Team Services (VSTS), входящее в вашу подписку Visual Studio."
+Description: Learn how to activate the Visual Studio Team Services (VSTS) benefit included in your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: ecdd2c06b9d27b0465253e1509aa120e14fea512
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 72579bda7fdaa16c40759f1bc20504f035ffa7c9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="activating-the-visual-studio-team-services-vsts-benefit-in-visual-studio-subscriptions"></a>Активация преимущества Visual Studio Team Services (VSTS) в подписках Visual Studio
 
@@ -22,16 +22,16 @@ ms.lasthandoff: 10/27/2017
 Чтобы использовать VSTS, потребуется учетная запись. Вы можете войти с помощью существующей учетной записи или создать новую.  Создание учетной записи:
 1.  В нижней части плитки преимущества щелкните ссылку "Начало работы".   
 
-![Плитка преимущества VSTS](_img\vs-vsts\vs-vsts-tile.png)
+    ![Плитка преимущества VSTS](_img\vs-vsts\vs-vsts-tile.png)
 
 2.  Введите имя для сайта проекта VSTS.  
 3.  Выберите, что следует использовать для управления проектом — **Git** или **систему управления версиями Team Foundation (TFVC)**.  После выбора системы управления версиями для командного проекта перейти к другой системе будет нельзя, однако в одной коллекции командных проектов могут быть и командные проекты TFVC, и командные проекты Git.  Не уверены, какую систему использовать? 
 - Git — это децентрализованная система управления версиями. Каждый разработчик имеет на своем компьютере разработки копию всего репозитория исходного кода. Разработчики могут фиксировать каждый набор изменений на своем компьютере разработки и выполнять операции управления версиями, такие как просмотр журнала и сравнение, без подключения к сети.  [Дополнительные сведения о Git](https://www.visualstudio.com/en-us/docs/git/gitquickstart)
-- Система управления версиями Team Foundation (TFVC) — это централизованная система управления версиями. Как правило, члены команды имеют на своих компьютерах разработки только одну версию каждого файла. Исторические данные ведутся только на сервере. Ветви основаны на путях и создаются на сервере. [Дополнительные сведения о системе управления версиями Team Foundation](https://www.visualstudio.com/en-us/docs/tfvc/overview).
+- Система управления версиями Team Foundation (TFVC) — это централизованная система управления версиями. Как правило, члены команды имеют на своих компьютерах разработки только одну версию каждого файла. Исторические данные ведутся только на сервере. Ветви основаны на путях и создаются на сервере. [Дополнительные сведения](https://www.visualstudio.com/en-us/docs/tfvc/overview) о системе управления версиями Team Foundation.
  
 4.  Щелкните **изменить сведения**, чтобы настроить параметры для имени проекта, способа организации работы (Agile, Scrum, CMMI), места размещения проектов, а также способа совместной работы.  Нажмите кнопку "Продолжить".
 
-![Сведения о проекте в рамках преимущества VSTS](_img\vs-vsts\vs-vsts-project-details.png)
+    ![Сведения о проекте в рамках преимущества VSTS](_img\vs-vsts\vs-vsts-project-details.png)
 
 5.  Создание учетной записи занимает считанные секунды, после чего отображается страница VSTS для вашего первого проекта, где используется указанное вами имя.  Теперь вы готовы начать работу с Visual Studio Team Services.
 

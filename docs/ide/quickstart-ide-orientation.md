@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio
 
-Из этого краткого (на 5–10 минут) описания возможностей среды разработки Visual Studio (IDE) вы узнаете о некоторых окнах, меню и других элементах пользовательского интерфейса.
+Из этого краткого (на 5–10 минут) описания возможностей среды разработки Visual Studio (IDE) вы узнаете о некоторых окнах, меню и других элементах пользовательского интерфейса.
 
 ## <a name="start-page"></a>Начальная страница
 
@@ -94,8 +94,10 @@ ms.lasthandoff: 11/22/2017
 
 - Вы можете перейти к разделу документации по VS, посвященному общим элементам пользовательского интерфейса, чтобы узнать больше о таких элементах управления, как [список ошибок](../ide/reference/error-list-window.md), [окно вывода](../ide/reference/output-window.md), [окно свойств](../ide/reference/properties-window.md) и [диалоговое окно параметров](../ide/reference/options-dialog-box-visual-studio.md).
 
-- Дополнительные сведения об IDE, включая инструкции по отладке, см. в статье [Обзор возможностей интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
+- Дополнительные сведения об IDE, включая инструкции по отладке, см. в статье [Обзор возможностей интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md).
 
 ## <a name="see-also"></a>См. также
 
-[Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+[Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
+[Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)  
+[Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)  

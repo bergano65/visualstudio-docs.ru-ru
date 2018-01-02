@@ -1,10 +1,10 @@
 ---
 title: "Устранение неполадок при установке | Документация Майкрософт"
 description: "Иногда возникают проблемы. Если происходит сбой установки или обновления Visual Studio, эта страница может помочь решить проблему."
-ms.date: 11/08/2017
+ms.date: 11/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f0f71dab64a99965facac9ccaa0fff9b53a6e3f6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio 2017
 
@@ -37,7 +37,8 @@ ms.lasthandoff: 11/11/2017
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Шаг 3. Удалите каталог с установщиком Visual Studio, чтобы устранить проблемы, связанные с обновлением
 Загрузчик установщика Visual Studio представляет собой минимально необходимый исполняемый файл небольшого размера, который устанавливает остальную часть установщика Visual Studio. Если вы удалите файлы установщика Visual Studio и повторно запустите загрузчик, это может решить некоторые ошибки, связанные с обновлением.
 
-**Примечание.** С помощью следующей процедуры можно переустановить файлы Visual Studio Installer и сбросить метаданные установки.
+>[!NOTE]
+С помощью следующей процедуры можно переустановить файлы Visual Studio Installer и сбросить метаданные установки.
 
 1. Закройте установщик Visual Studio.
 2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -57,11 +58,11 @@ ms.lasthandoff: 11/11/2017
 В качестве последнего средства можно [удалить Visual Studio](remove-visual-studio.md), чтобы удалить все файлы установки и сведения о продукте.
 
 1. Следуйте инструкциям в разделе [Удаление Visual Studio](remove-visual-studio.md).
-2. Повторно запустите загрузчик, описанный в разделе [Шаг 3. Удалите каталог с установщиком Visual Studio, чтобы устранить проблемы, связанные с обновлением](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Повторно запустите загрузчик, описанный в разделе [Шаг 3. Удалите каталог с установщиком Visual Studio, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Снова попробуйте установить или обновить Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Шаг 6. Связь с нами (необязательно)
-Если ни один из описанных выше шагов не позволил успешно выполнить установку, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Подробные сведения см. в разделе [Страница поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Если ни один из описанных выше шагов не позволил успешно выполнить установку, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Устранение неполадок с автономным установщиком
 Здесь мы приводим список известных проблем при установке из локального макета и варианты обходных действий, которые могут оказаться полезными.
@@ -88,11 +89,11 @@ ms.lasthandoff: 11/11/2017
 
 ## <a name="more-support-options"></a>Дополнительные варианты поддержки
 
-Вы можете сообщить о проблемах при использовании продукта в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md), которое имеется как в Visual Studio Installer, так и в интегрированной среде разработки Visual Studio.
+Если ни один из описанных выше шагов не позволил успешно выполнить установку, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов.
-
-* Вы можете отправить предложение через платформу [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
+* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
 * Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
 

@@ -1,5 +1,5 @@
 ---
-title: "Советы и рекомендации по работе в Visual Studio | Документы Майкрософт"
+title: "Сочетания клавиш Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Советы и рекомендации по работе в Visual Studio
-Перемещаться между компонентами [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] можно более эффективно, если использовать описанные в этом разделе сочетания клавиш. В этом разделе представлен небольшой набор доступных сочетаний клавиш. Более полный список см. в статье [Сочетания клавиш по умолчанию в Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Дополнительные сведения об оптимизации Visual Studio для использования специальных возможностей см. в статье [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md) (Специальные возможности. Советы и рекомендации).  
 
-##  <a name="BKMK_WindowMgmt"></a> Управление окнами  
+Перемещаться между компонентами Visual Studio можно более эффективно, если использовать описанные в этом разделе сочетания клавиш. В этом разделе представлен небольшой набор доступных сочетаний клавиш. Более полный список см. в статье [Сочетания клавиш по умолчанию в Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Дополнительные сведения об оптимизации Visual Studio для использования специальных возможностей см. в статье [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md) (Специальные возможности. Советы и рекомендации).
+
+##  <a name="BKMK_WindowMgmt"></a> Управление окнами
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 |Показать список открытых файлов|CTRL+ALT+СТРЕЛКА ВНИЗ|  
 |Показать все плавающие окна|CTRL+SHIFT+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a> Сочетания клавиш окна  
+##  <a name="BKMK_WindowShortcuts"></a> Сочетания клавиш окна
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 |Запустить новый экземпляр|WIN+SHIFT+N|  
 |Переключиться между окнами|WIN+N|  
 
-##  <a name="BKMK_Search"></a> Поиск в Visual Studio  
+##  <a name="BKMK_Search"></a> Поиск в Visual Studio
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |Быстрый запуск — задание области результатов|— @opt Параметры<br />— @cmd Команды<br />— @mru Самые последние использовавшиеся<br />— @doc Открытие документов|  
 |Искать в "Инструменты" > "Параметры"|Ctrl+E|  
 
-##  <a name="BKMK_EditorFind"></a> Поиск в редакторе  
+##  <a name="BKMK_EditorFind"></a> Поиск в редакторе
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |Поиск в файлах|Ctrl+Shift+F|  
 |Заменить в файлах|Ctrl+Shift+H|  
 
-##  <a name="BKMK_CodeEditor"></a> Редактор кода  
+##  <a name="BKMK_CodeEditor"></a> Редактор кода
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 |Перемещение между несколькими результатами "Показать"|F8 и SHIFT+F8|  
 |Переключение между окном редактора кода и окном "Показать определение"|SHIFT+ESC|  
 
-##  <a name="BKMK_Toolbars"></a> Панели инструментов  
+##  <a name="BKMK_Toolbars"></a> Панели инструментов
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 |Режим команд поля поиска|Введите ">"|  
 |Создать новый псевдоним|Команда >alias новый_псевдоним|  
 
-##  <a name="BKMK_Debugging"></a> Отладка  
+##  <a name="BKMK_Debugging"></a> Отладка
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ ms.lasthandoff: 10/31/2017
 |Очистить буфер окна интерпретации|>cls|  
 |Значение печати окна интерпретации|?varname|  
 
-##  <a name="BKMK_ALM"></a>Управление жизненным циклом приложения  
- См. статью [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4) (Сочетания клавиш: Visual Studio Online, веб-портал TFS и Team Explorer).  
+##  <a name="BKMK_ALM"></a>Управление жизненным циклом приложения
 
-## <a name="see-also"></a>См. также  
- [Блог о Visual Studio](http://blogs.msdn.com/b/visualstudio)   
- [Блог с советами и рекомендации по Visual Studio](http://blogs.msdn.com/b/zainnab)   
- [Видео о панели инструментов Visual Studio на канале Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Отправка ошибок на сайте Visual Studio Connect](http://connect.microsoft.com/VisualStudio)
+См. статью [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4) (Сочетания клавиш: Visual Studio Online, веб-портал TFS и Team Explorer).  
+
+## <a name="see-also"></a>См. также
+
+[Блог о Visual Studio](http://blogs.msdn.com/b/visualstudio)  
+[Блог с советами и рекомендации по Visual Studio](http://blogs.msdn.com/b/zainnab)  
+[Видео о панели инструментов Visual Studio на канале Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Отправка ошибок на сайте Visual Studio Connect](http://connect.microsoft.com/VisualStudio)

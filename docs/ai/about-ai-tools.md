@@ -10,11 +10,11 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 6dd677f04396e3473f1de054393de66a57681192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="visual-studio-tools-for-ai"></a>Инструменты Visual Studio для сценариев ИИ
 
@@ -31,6 +31,8 @@ ms.lasthandoff: 11/15/2017
 Благодаря интеграции инструментов Visual Studio для сценариев ИИ со службой Машинного обучения Azure вы можете легко просматривать коллекцию образцов экспериментов на основе CNTK, TensorFlow, MMLSpark и других платформ. 
 
 ![обозреватель образцов](media\about\gallery.png)
+
+[Дополнительные сведения о создании проектов из коллекции образцов](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Масштабирование зависимостей и процессов обучения моделей глубинного обучения в облаке
 Это расширение позволяет легко обучать модели на локальном компьютере или отправлять задания в облако благодаря интеграции с Машинным обучением Azure. Задания можно отправлять в различные целевые вычислительные узлы, такие как кластеры Spark, виртуальные машины GPU Azure и многие другие.  

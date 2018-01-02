@@ -7,41 +7,33 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ad9a9e8851d428010d7116ba94cc08ced211740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
-Для доступа к часто используемым командам Visual Studio можно использовать следующие сочетания клавиш по умолчанию. Полный список команд, которые имеют сочетания клавиш по умолчанию, см. в разделе [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
-  
+
+Для доступа к часто используемым командам Visual Studio можно использовать следующие сочетания клавиш по умолчанию. Полный список команд, которые имеют сочетания клавиш по умолчанию, см. в разделе [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
 > [!NOTE]
->  Сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.  
-  
- **Содержание раздела**  
-  
-||||||  
-|-|-|-|-|-|  
-|[Сборка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Правка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Проект](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Инструменты](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Окно](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|  
-|[Отладка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Файл](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Рефакторинг](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Вид](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||  
-  
-##  <a name="bkmk_build"></a> Сборка  
-  
+> Сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.
+
+## <a name="build"></a>Построить
+
 |Команды|Сочетания клавиш [контексты]|  
 |--------------|-------------------------------------|  
 |Build.BuildSolution|Ctrl+Shift+B [глобальный]|  
 |Build.Cancel|Ctrl+Break [глобальный]|  
 |Build.Compile|Ctrl+F7 [глобальный]|  
 |Build.RunCodeAnalysisonSolution|Alt+F11 [глобальный]|  
-  
-##  <a name="bkmk_debug"></a> Отладка  
-  
+
+## <a name="debug"></a>Отладка
+
 |Команды|Сочетания клавиш [контексты]|  
 |--------------|-------------------------------------|  
 |Debug.BreakatFunction|Ctrl+B [глобальный]|  
@@ -59,9 +51,9 @@ ms.lasthandoff: 10/31/2017
 |Debug.StepOver|F10 [глобальный]|  
 |Debug.StopDebugging|Shift+F5 [глобальный]|  
 |Debug.ToggleBreakpoint|F9 [глобальный]|  
-  
-##  <a name="bkmk_edit"></a> Правка  
-  
+
+## <a name="edit"></a>Правка
+
 |Команды|Сочетания клавиш [контексты]|  
 |--------------|-------------------------------------|  
 |Edit.BreakLine|ВВОД [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br /> или Shift+ВВОД [текстовый редактор]|  
@@ -110,9 +102,9 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|
 |Edit.Undo|Ctrl+Z [глобальный]<br /><br /> или Alt+Backspace [глобальный]|  
 |Edit.WordDeleteToEnd|Ctrl+Delete [текстовый редактор]|  
 |Edit.WordDeleteToStart|Ctrl+Backspace [текстовый редактор]|  
-  
-##  <a name="bkmk_file"></a> Файл  
-  
+
+## <a name="file"></a>Файл
+
 |Команды|Сочетания клавиш [контексты]|  
 |--------------|-------------------------------------|  
 |File.Exit|Alt+F4 [глобальный]|  
@@ -126,28 +118,28 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|
 |File.SaveAll|Ctrl+Shift+S [глобальный]|  
 |File.SaveSelectedItems|Ctrl+S [глобальный]|  
 |File.ViewinBrowser|Ctrl+Shift+W [глобальный]|  
-  
-##  <a name="bkmk_project"></a> Проект  
-  
+
+## <a name="project"></a>Проект
+
 |Команды|Сочетания клавиш [контексты]|  
 |--------------|-------------------------------------|  
 |Project.AddExistingItem|Shift+Alt+A [глобальный]|  
 |Project.AddNewItem|Ctrl+Shift+A [глобальный]|  
-  
-##  <a name="bkmk_refactor"></a> Рефакторинг  
-  
+
+## <a name="refactor"></a>Рефакторинг
+
 |Команда|Сочетание клавиш [контекст]|  
 |-------------|-----------------------------------|  
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [глобальный]|  
-  
-##  <a name="bkmk_tools"></a> Инструменты  
-  
+
+## <a name="tools"></a>Инструменты
+
 |Команда|Сочетание клавиш [контекст]|  
 |-------------|-----------------------------------|  
 |Tools.AttachtoProcess|Ctrl+Alt+P [глобальный]|  
-  
-##  <a name="bkmk_view"></a> Вид  
-  
+
+## <a name="view"></a>Просмотр
+
 |Команды|Сочетания клавиш [контексты]|  
 |--------------|-------------------------------------|  
 |View.ClassView|Ctrl+Shift+C [глобальный]|  
@@ -166,9 +158,9 @@ iew.TfsTeamExplorer|CTRL+\\, CTRL+M [глобальный]|
 |View.Toolbox|Ctrl+Alt+X [глобальный]|  
 |View.ViewCode|ВВОД [схема классов]<br /><br /> или F7 [конструктор параметров]|  
 |View.ViewDesigner|Shift+F7 [HTML-редактор в представлении кода]|  
-  
-##  <a name="bkmk_window"></a> Окно  
-  
+
+## <a name="window"></a>Окно
+
 |Команды|Сочетания клавиш [контексты]|  
 |--------------|-------------------------------------|  
 |Window.ActivateDocumentWindow|Esc [глобальный]|  
@@ -176,3 +168,7 @@ iew.TfsTeamExplorer|CTRL+\\, CTRL+M [глобальный]|
 |Window.NextDocumentWindow|Ctrl+F6 [глобальный]|  
 |Window.NextDocumentWindowNav|Ctrl+Tab [глобальный]|  
 |Window.NextSplitPane|F6 [глобальный]|
+
+## <a name="see-also"></a>См. также
+
+[Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)

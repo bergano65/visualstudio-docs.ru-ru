@@ -15,11 +15,11 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: e6e0b55e86130f316c09583d4a52e1ad3dc22608
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: 7d4b3634f651cd8fc0ebc9c2e5254914a62e3771
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="unit-test-your-code"></a>Модульное тестирование кода
 Модульные тесты позволяют разработчикам и тест-инженерам быстро искать логические ошибки в методах классов для проектов на языках [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] и [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/02/2017
   
 2.  **Платформа Microsoft для модульного тестирования управляемого кода.** Платформа для тестирования Microsoft для управляемого кода устанавливается с Visual Studio и предоставляет среду для тестирования кода в .NET.  
   
-3.  **Платформа Microsoft для модульного тестирования на C++.** Платформа для выполнения модульных тестов Microsoft для C++ устанавливается с Visual Studio и предоставляет среду для тестирования машинного кода.  
+3.  **Платформа Microsoft для модульного тестирования на C++.** Платформа для выполнения модульных тестов Microsoft для C++ устанавливается с Visual Studio и предоставляет среду для тестирования машинного кода.  Кроме того, в состав Visual Studio входят платформы Google Test, Boost.Test и CTest, а также сторонние адаптеры для дополнительных платформ тестирования. Дополнительные сведения см. в разделе [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md). 
   
 4.  **Средства покрытия кода.** Можно определить объем кода продукта, который покрывают модульные тесты, при помощи одной команды в Обозревателе тестов.  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 11/02/2017
 ## <a name="external-resources"></a>Внешние ресурсы  
   
 ### <a name="videos"></a>Видеоролики  
- [Канал 9. Модульное тестирование приложений универсальной платформы Windows, построенных с помощью XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Канал 9. Модульное тестирование приложений универсальной платформы Windows, построенных с помощью XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Форумы  
  [Visual Studio Unit Testing](http://go.microsoft.com/fwlink/?LinkId=224477) (Модульное тестирование в Visual Studio)  

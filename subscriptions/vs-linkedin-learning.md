@@ -9,11 +9,11 @@ Description: Learn how to activate the LinkedIn Learning benefit included as par
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 2a2f63be6036f37429b88324fd316a24be541937
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 62f08913a7fbefe0bd40f3dd752d96194916b0e5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="activating-the-linkedin-learning-benefit-in-your-visual-studio-subscription"></a>Активация преимущества LinkedIn Learning в подписках Visual Studio
 
@@ -36,63 +36,64 @@ ms.lasthandoff: 11/15/2017
 
 2. Найдите плитку LinkedIn Learning в категории "Образование" и щелкните ссылку **Получить код**.
 
-![Плитка преимущества LinkedIn Learning](_img\vs-linkedin\vs-linkedin-3-month-tile.png)
+    ![Плитка преимущества LinkedIn Learning](_img\vs-linkedin\vs-linkedin-3-month-tile.png)
 
-3. Если у вас уже есть учетная запись LinkedIn и вы вошли автоматически, вы немедленно перейдете на страницу активации преимущества LinkedIn Learning.  Если у вас есть учетная запись LinkedIn, но вы не вошли в нее автоматически, просто введите свои имя пользователя и пароль, а затем нажмите кнопку **Вход**.  Чтобы активировать предложение, перейдите к [шагу 15](#activate-your-offer).
+
+3. Если у вас уже есть учетная запись LinkedIn и вы вошли автоматически, вы немедленно перейдете на страницу активации преимущества LinkedIn Learning.  Если у вас есть учетная запись LinkedIn, но вы не вошли в нее автоматически, просто введите свои имя пользователя и пароль, а затем нажмите кнопку **Вход**.  Чтобы активировать предложение, перейдите к [этому шагу](#activate-your-offer).
 
 
 4. Если у вас еще нет учетной записи LinkedIn, нажмите кнопку **Присоединиться**.  
 
-![LinkedIn Learning — кнопка "Присоединиться"](_img\vs-linkedin\vs-linkedin-join-now.png)
+    ![LinkedIn Learning — кнопка "Присоединиться"](_img\vs-linkedin\vs-linkedin-join-now.png)
 
 5. Введите личные данные, выберите имя пользователя и пароль, а затем нажмите кнопку **Присоединиться**. 
 
-![LinkedIn Learning — создание учетной записи](_img\vs-linkedin\vs-linkedin-create-account.png)
+    ![LinkedIn Learning — создание учетной записи](_img\vs-linkedin\vs-linkedin-create-account.png)
 
 6. Укажите страну и почтовый индекс, а затем нажмите кнопку **Далее**.  
 
-![LinkedIn Learning — указание местонахождения](_img\vs-linkedin\vs-linkedin-set-location.png)
+    ![LinkedIn Learning — указание местонахождения](_img\vs-linkedin\vs-linkedin-set-location.png)
 
 7. Далее необходимо предоставить некоторые сведения о себе, чтобы заполнить профиль.  Укажите, являетесь ли вы учащимся, и сообщите последнюю должность, организацию и отрасль. 
 
-![LinkedIn Learning — роль](_img\vs-linkedin\vs-linkedin-role.png)
+    ![LinkedIn Learning — роль](_img\vs-linkedin\vs-linkedin-role.png)
 
 8. На этом этапе можно указать интересующие вас области.  Чтобы ускорить создание учетной записи, выберите пункт **Not sure yet.  I’m open!** (Пока сомневаюсь. Рассмотрю предложения).  (Определить области интересов можно будет позднее.)
 
-![LinkedIn Learning — интересы](_img\vs-linkedin\vs-linkedin-interests.png)
+    ![LinkedIn Learning — интересы](_img\vs-linkedin\vs-linkedin-interests.png)
 
-9.  Вы должны получить сообщение электронной почты с кодом подтверждения на указанный адрес.  Его отправитель — Центр сообщений Linkedin.  Если вы не видите сообщение в папке "Входящие", поищите его в папках нежелательной почты.  Введите код из сообщения и нажмите кнопку **Проверить**.  (Срок действия кода проверки истекает через несколько минут. Если вы не успели воспользоваться кодом, нажмите кнопку "Отправить повторно", чтобы получить новый код.)
+9.  Вы должны получить сообщение электронной почты с кодом подтверждения на указанный адрес.  Его отправитель — Центр сообщений Linkedin.  Если вы не видите сообщение в папке "Входящие", поищите его в папках нежелательной почты.  Введите код из сообщения и нажмите кнопку **Проверить**.  
 
-![LinkedIn Learning — проверка](_img\vs-linkedin\vs-linkedin-verify.png)
+    ![LinkedIn Learning — проверка](_img\vs-linkedin\vs-linkedin-verify.png)
 
 10. Если вы хотите импортировать контакты из учетной записи электронной почты, указанной ранее, это можно сделать сейчас.  В противном случае нажмите кнопку **Пропустить**. (Если вы решит пропустить этот шаг, появится запрос на подтверждение.  Выберите **Да**.)
 
-![LinkedIn Learning — контакты](_img\vs-linkedin\vs-linkedin-contacts.png)
+    ![LinkedIn Learning — контакты](_img\vs-linkedin\vs-linkedin-contacts.png)
 
 11. Оповещения о вакансиях позволяют вам узнавать о вакансиях в вашей области, которые могут вам подойти.  Вы можете настроить эти оповещения сразу или пропустить этот шаг и продолжить создание учетной записи.  
 
-![LinkedIn Learning — оповещения о вакансиях](_img\vs-linkedin\vs-linkedin-job-alerts.png)
+    ![LinkedIn Learning — оповещения о вакансиях](_img\vs-linkedin\vs-linkedin-job-alerts.png)
 
 12. В зависимости от предоставленных личных данных и выбранных настроек вам будут предложены рекомендованные контакты, что позволит вам приступить к созданию своей сети.  Вы можете добавить контакты или пропустить этот шаг.  
 
 13. Чтобы добавить фотографию в профиль, щелкните **Отправить фото**.  Этот шаг также можно пропустить.  (Фотографию можно будет добавить в любой момент.)
 
-![LinkedIn Learning — отправка фотографии](_img\vs-linkedin\vs-linkedin-photo.png)
+    ![LinkedIn Learning — отправка фотографии](_img\vs-linkedin\vs-linkedin-photo.png)
 
 14. Вы можете скачать приложение LinkedIn на телефон, чтобы иметь постоянный доступ к своей сети.  Для этого можно отправить ссылку на телефон или скачать приложение непосредственно из App Store или Google Play.  Чтобы пропустить этот шаг и скачать приложение позднее, нажмите кнопку **Далее**.  
 
-![LinkedIn Learning — отправка фотографии](_img\vs-linkedin\vs-linkedin-app.png)
+    ![LinkedIn Learning — отправка фотографии](_img\vs-linkedin\vs-linkedin-app.png)
 
 ## <a name="activate-your-offer"></a>Активация предложения
 15. После входа в учетную запись LinkedIn или создания новой учетной записи можно активировать подписку Premium и начать пользоваться LinkedIn Learning.  Щелкните **Активировать предложение**. 
 
-![Активация LinkedIn Learning](_img\vs-linkedin\vs-linkedin-Activate1.png)
+    ![Активация LinkedIn Learning](_img\vs-linkedin\vs-linkedin-Activate1.png)
 
 
 16. Вы можете начать знакомиться с интересующими вас навыками.  Выберите их в списке рекомендаций, выполните поиск других навыков или нажмите кнопку **Пропустить**, чтобы продолжить работу, не выбирая навыков. 
 
-![LinkedIn Learning — навыки](_img\vs-linkedin\vs-linkedin-skills.png)
+    ![LinkedIn Learning — навыки](_img\vs-linkedin\vs-linkedin-skills.png)
 
 17. Вы успешно активировали подписку Premium и можете приступать к использованию LinkedIn Learning и других ее преимуществ.
 
-![LinkedIn Learning — домашняя страница](_img\vs-linkedin\vs-linkedin-learning-home.png)
+    ![LinkedIn Learning — домашняя страница](_img\vs-linkedin\vs-linkedin-learning-home.png)
