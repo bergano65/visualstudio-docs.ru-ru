@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5be97e75ac7dc29a6dd0244293259bcd17591233
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97e4339546eda741ba961b0015f9f62edf231d24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 Компилирует и запускает указанный проект или указанное решение.  
@@ -36,10 +37,10 @@ devenv {/run|/r} {SolutionName|ProjectName}
   
 ## <a name="arguments"></a>Аргументы  
  `SolutionName`  
- Обязательный. Полный путь и имя для файла решения.  
+ Обязательно. Полный путь и имя для файла решения.  
   
  `ProjectName`  
- Обязательный. Полный путь и имя для файла проекта.  
+ Обязательно. Полный путь и имя для файла проекта.  
   
 ## <a name="remarks"></a>Примечания  
  Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр запускает интегрированную среду разработки (IDE), которая остается активной после завершения выполнения проекта или решения.  

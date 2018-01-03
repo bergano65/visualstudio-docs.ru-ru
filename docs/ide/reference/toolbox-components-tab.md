@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>Вкладка "Компоненты", панель элементов
 Отображает компоненты, которые можно добавить в конструкторы [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. В дополнение к компонентам [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)], которые входят в состав [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], таким как <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>, на этой вкладке можно добавить собственные или сторонние компоненты. Для получения дополнительной информации см. раздел [Практическое руководство. Управление вкладками панели элементов](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  

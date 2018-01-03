@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61924f7d9430661114f1fecc36d585e2d223604b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d4337a5755a58c03c827849417412885f42127a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-and-export-settings-command"></a>Импорт и экспорт параметров - команда
 Импортирует, экспортирует или сбрасывает параметры [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,13 +34,13 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
   
 ## <a name="switches"></a>Переключатели  
  /export:`filename`  
- Необязательно. Экспортирует текущие параметры в указанный файл  
+ Необязательный. Экспортирует текущие параметры в указанный файл  
   
  /import:`filename`  
- Необязательно. Импортирует текущие параметры в указанный файл  
+ Необязательный. Импортирует текущие параметры в указанный файл  
   
  /reset  
- Необязательно. Сбрасывает текущие параметры  
+ Необязательный. Сбрасывает текущие параметры  
   
 ## <a name="remarks"></a>Примечания  
  Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Практическое руководство. Совместное использование параметров на разных компьютерах или в разных версиях Visual Studio](http://msdn.microsoft.com/en-us/1131fb10-35c1-42da-9cd8-91aa3235b882).  

@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-feature-tour"></a>Обзор возможностей профилирования
 
@@ -154,13 +155,13 @@ Visual Studio предоставляет широкий набор средст�
 |[Использование памяти](../profiling/memory-usage.md)|да|да|да|  
 |[Использование ЦП](../profiling/cpu-usage.md)|да|да|да (нет для .NET Core/ASP.NET Core)|  
 |[Использование GPU](../debugger/gpu-usage.md)|да|да|нет|  
-|[Временная шкала приложения](../profiling/application-timeline.md)|да|да|нет|  
+|[Временная шкала приложения](../profiling/application-timeline.md)|да|да|Нет|  
 |[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|да|  
-|[Обозреватель производительности](../profiling/performance-explorer.md)|да|нет|да (нет для ASP.NET Core)|  
+|[Обозреватель производительности](../profiling/performance-explorer.md)|да|Нет|да (нет для ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|Только .NET Enterprise|Только .NET Enterprise|Только .NET Enterprise|
-|[Использование сети](../profiling/network-usage.md)|нет|да|нет| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|нет|да для HTML, нет для XAML|нет|  
-|[Память JavaScript](../profiling/javascript-memory.md)|нет|да для HTML, нет для XAML|нет|  
+|[Использование сети](../profiling/network-usage.md)|Нет|да|Нет| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Нет|да для HTML, нет для XAML|Нет|  
+|[Память JavaScript](../profiling/javascript-memory.md)|Нет|да для HTML, нет для XAML|Нет|  
 
 ## <a name="see-also"></a>См. также  
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

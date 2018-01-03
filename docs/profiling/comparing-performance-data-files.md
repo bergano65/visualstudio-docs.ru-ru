@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 586665565126dc67fe3fbeb7d3eda3e7061e4650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 734d0531cf1fbbbc2f7924cb1743cabf9e4a9578
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-performance-data-files"></a>Сравнение файлов данных о производительности
 Функция сравнения файлов данных средств профилирования позволяет выбрать два файла отчетов (VSP или VSPS) и создать отчет, в котором будут показаны различия и случаи снижения и повышения производительности в двух последовательных сеансах профилирования.  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
   
  Для снижения шума и фильтрации данных в строках таблицы сравнения, которые не изменились по сравнению с указанным значением, можно установить порог.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Сравнение файлов данных о производительности](../profiling/how-to-compare-performance-data-files.md)

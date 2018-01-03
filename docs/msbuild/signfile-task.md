@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f2e09933d8e1bcfc8e29712a78fe3b2454e42117
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c1e5e25d6a8b3b953d28676415266ccf245d418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="signfile-task"></a>Задача SignFile
 Подписывает указанный файл с помощью заданного сертификата.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 10/31/2017
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`CertificateThumbprint`|Обязательный параметр `String`.<br /><br /> Задает сертификат, который будет использоваться для подписи. Этот сертификат должен находиться в личном хранилище текущего пользователя.|  
-|`SigningTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает файлы, который будут подписаны с помощью сертификата.|  
-|`TimestampUrl`|Необязательный параметр `String`.<br /><br /> Задает URL-адрес сервера отметок времени.|  
+|`CertificateThumbprint`|Обязательный параметр `String` .<br /><br /> Задает сертификат, который будет использоваться для подписи. Этот сертификат должен находиться в личном хранилище текущего пользователя.|  
+|`SigningTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает файлы, который будут подписаны с помощью сертификата.|  
+|`TimestampUrl`|Необязательный параметр `String` .<br /><br /> Задает URL-адрес сервера отметок времени.|  
 |`TargetFrameworkVersion`|Версия платформы .NET Framework, используемой для целевого объекта.|  
   
 ## <a name="remarks"></a>Примечания  

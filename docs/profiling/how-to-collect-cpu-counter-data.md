@@ -16,16 +16,17 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 856ffdc2bc2e33dec6e7ff531b9ce5582fc9b3db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13bba809b77286cd4a6eea4efa41b69c317d23d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Практическое руководство. Сбор данных счетчиков производительности ЦП
 Счетчик событий ЦП используется для сбора данных о производительности конкретного оборудования. В этом разделе демонстрируется сбор данных счетчиков событий при использовании метода профилирования "Инструментирование".  
   
- **Requirements**  
+ **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

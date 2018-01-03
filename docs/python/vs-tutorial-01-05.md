@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2acd8aebda03d7d9809563a6c1959c8dd69bf96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Шаг 5. Установка пакетов в среде Python
 
@@ -48,28 +49,28 @@ ms.lasthandoff: 12/01/2017
 
 1. Создайте проект, выбрав пункт меню **Файл > Создать > Проект**, а затем выбрав шаблон "Приложение Python". В появившийся файл кода вставьте приведенный ниже код, который строит косинусоиду, как в предыдущих шагах учебника, но в теперь в виде графика.
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Запустите программу с отладчиком (F5) или без него (CTRL+F5), чтобы увидеть результат.
 
   ![Выходные данные примера matplotlib](media/environments-add-matplotlib3.png)
 
-
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Работа с Git](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Дополнительные сведения
+
 - [Среды Python](python-environments.md)

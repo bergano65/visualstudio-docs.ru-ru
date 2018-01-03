@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 359bcd55d73429c118abc802a08ab86da96064e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: abeb4b0f4a34270b8b4ae4155cac910c08cf5f0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-element-msbuild"></a>Элемент Output (MSBuild)
 Сохраняет выходные данные задачи в элементах и свойствах.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`TaskParameter`|Обязательный атрибут.<br /><br /> Имя выходного параметра задачи.|  
 |`PropertyName`|Должен быть задан атрибут `PropertyName` или `ItemName`.<br /><br /> Свойство, которое получает значение от выходного параметра задачи. Проект может ссылаться на это свойство, используя синтаксис `$(`*PropertyName*`)`. В качестве имени для этого свойства можно использовать новое имя свойства или имя, которое уже определено в проекте.<br /><br /> Этот атрибут нельзя использовать вместе с атрибутом `ItemName`.|  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Задача](../msbuild/task-element-msbuild.md)|Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 

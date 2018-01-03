@@ -34,11 +34,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 48cf258dbe267a6e2c2b020ee6613b4dac05b2eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="link-task"></a>Связывание задачи
 Создает оболочку для компоновщика Visual C++ link.exe. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (EXE) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).  
@@ -610,7 +611,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **PreprocessOutput**  
   
-     Необязательный параметр `ITaskItem[]`.  
+     Необязательный параметр `ITaskItem[]` .  
   
      Определяет массив выходных элементов препроцессора, которые могут использоваться и создаваться задачами.  
   
@@ -702,7 +703,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **Sources**  
   
-     Обязательный параметр `ITaskItem[]`.  
+     Обязательный параметр `ITaskItem[]` .  
   
      Определяет массив элементов исходного файла MSBuild, который может использоваться и создаваться задачами.  
   

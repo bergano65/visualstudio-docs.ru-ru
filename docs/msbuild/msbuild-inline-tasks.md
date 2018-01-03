@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea7720cbe005044e2b0eea021a720c79b651f740
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
@@ -142,7 +143,7 @@ Log.LogError("Hello, world!");
   
 -   Атрибут `Output` является необязательным и по умолчанию имеет значение `false`. Если же используется значение `true`, тогда этому параметру необходимо присвоить значение перед возвратом из метода Execute.  
   
- Например:  
+ Например, примененная к объекту директива  
   
 ```xml  
 <ParameterGroup>  

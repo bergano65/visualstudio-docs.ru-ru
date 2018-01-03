@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bf42c5b05ec68546bee938746f3e3b774303e5fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 910e04d9aafcd549e2192c8d54da87e01abd6d18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-an-android-native-activity-app"></a>Создание приложения Android Native Activity
 Установив компонент Visual C++ для разработки кроссплатформенных мобильных приложений, можно использовать Visual Studio 2015 для создания полнофункциональных приложений Android Native Activity. Пакет Android Native Development Kit (NDK) — это набор средств, с помощью которых можно реализовывать большинство возможностей приложения Android, используя чистый код C или C++. Для обеспечения взаимодействия кода C или C++ с Android используется определенный код Java JNI, выступающий в роли связующего. В Android NDK появилась возможность создавать приложения Native Activity с помощью API Android уровня 9. Код Native Activity популярен для создания игровых приложений и приложений с интенсивным использованием графики на основе Unreal Engine или OpenGL. В этом пошаговом руководстве показано создание простого приложения Native Activity, в котором используется OpenGL. В дополнительных разделах последовательно рассматриваются такие этапы жизненного цикла разработки, как редактирование, сборка, отладка и развертывание кода Native Activity.  

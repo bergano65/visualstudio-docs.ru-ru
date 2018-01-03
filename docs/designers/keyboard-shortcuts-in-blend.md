@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b6a19ed79db2625fc7e1ad339ab2396635767a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Сочетания клавиш в Blend
 ## <a name="project-shortcuts"></a>Сочетания клавиш для работы с проектами  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="view-shortcuts"></a>Сочетания клавиш для управления представлениями  
   
-|Действие|Действия|  
+|Действие|Сделайте следующее|  
 |----------------|-------------|  
 |Переключение между представлениями **Конструктор**, **Код** и **Разделить**|F11|  
 |Увеличение масштаба монтажной панели|CTRL + знак "равно" (=)|  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="workspace-shortcuts"></a>Сочетания клавиш для управления рабочими областями  
   
-|Действие|Действия|  
+|Действие|Сделайте следующее|  
 |----------------|-------------|  
 |Переключение между рабочими областями **Анимация** и **Конструктор**|CTRL+F11|  
 |Отображение или скрытие панели **Активы**|CTRL + точка (.)|  

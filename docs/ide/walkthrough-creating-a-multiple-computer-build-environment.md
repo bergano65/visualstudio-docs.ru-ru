@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 
@@ -289,8 +290,8 @@ ms.lasthandoff: 10/31/2017
     |Аргумент Vcvarsall.bat|Компилятор|Архитектура компьютера построения|Архитектура выходных данных сборки|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (по умолчанию)|Собственная 32-разрядная|x86, x64|x86|  
-    |x86_amd64|Кроссплатформенный компилятор x64|x86, x64|x64|  
-    |amd64|Собственная x64|x64|x64|  
+    |x86_amd64|Кроссплатформенный компилятор x64|x86, x64|X64|  
+    |amd64|Собственная x64|X64|X64|  
   
      В случае успешного выполнения файла vcvarsall.bat и отсутствия сообщений об ошибках вы можете пропустить следующий шаг и перейти к разделу [Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) этого документа.  
   

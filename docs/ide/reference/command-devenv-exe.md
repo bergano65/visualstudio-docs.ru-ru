@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f7f2914b59025d3cf1dc82d43191f43ec7b0115
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5ab19af1e746bdee9c4ec933507ac3092b0e82a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Выполняет заданную команду после запуска интегрированной среды разработки (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -32,7 +33,7 @@ devenv /command CommandName
   
 ## <a name="arguments"></a>Аргументы  
  `CommandName`  
- Обязательный. Полное имя команды [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] или ее псевдоним, заключенные в двойные кавычки. Дополнительные сведения о синтаксисе команд и псевдонимов см. в разделе [Команды Visual Studio](../../ide/reference/visual-studio-commands.md).  
+ Обязательно. Полное имя команды [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] или ее псевдоним, заключенные в двойные кавычки. Дополнительные сведения о синтаксисе команд и псевдонимов см. в разделе [Команды Visual Studio](../../ide/reference/visual-studio-commands.md).  
   
 ## <a name="remarks"></a>Примечания  
  После завершения запуска интегрированная среда разработки выполняет именованную команду. При использовании этого параметра среда IDE не отображает начальную страницу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] при запуске.  

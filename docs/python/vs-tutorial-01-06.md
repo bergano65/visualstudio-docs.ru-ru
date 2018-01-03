@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8356a9d4ab470b67a6e495d753fa498237e530f4
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 46048b135dc0023e2a7b918b72ec226af3ed22b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-working-with-git"></a>Шаг 6. Работа с Git
 
@@ -47,7 +48,6 @@ Visual Studio обеспечивает прямую интеграцию с ло
 ## <a name="going-deeper"></a>Дополнительные сведения
 
 Более подробное руководство по работе с Git см. в разделе [Совместное использование кода с помощью Visual Studio 2017 и VSTS Git](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017).
-
 
 ## <a name="tutorial-review"></a>Обзор руководства
 

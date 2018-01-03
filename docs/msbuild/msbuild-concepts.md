@@ -13,18 +13,19 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 4395f4c82be689b1d573be44948e98711ba066c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e57abdc78bc5b5844959fe2e3077688ec496df49
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-concepts"></a>Основные возможности MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет базовую схему XML, которую можно использовать для управления процессом сборки программного обеспечения, выполняемым платформой сборки. Чтобы указать компоненты в сборке и способ ее выполнения, используйте следующие четыре составляющие MSBuild: свойства, элементы, задачи и целевые объекты.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Свойства MSBuild](../msbuild/msbuild-properties.md)|Содержит вводную информацию о свойствах и коллекциях свойств. Свойства представляют собой пары "ключ — значение", с помощью которых выполняется настройка сборок.|  
 |[Элементы](../msbuild/msbuild-items.md)|Содержит описание общих понятий, относящихся к формату файлов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], и способов взаимодействия фрагментов.|  

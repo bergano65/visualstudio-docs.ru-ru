@@ -11,11 +11,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: b95b4754af66c39d741b7df8a74a433ff812f834
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8ddd21dde8057475c1169cf4ef3d43df84a1c96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
 **Типы оболочек** — одна из двух технологий Microsoft Fakes Framework, используемых для простой изоляции тестируемых компонентов от окружения. Оболочки отвлекают вызовы к отдельным методам в коде, написанным в рамках теста. Множество методов возвращает различные результаты в зависимости от внешних условиях, но оболочка находится под контролем теста и может возвращать последовательные результаты при каждом вызове. Это позволяет создавать тесты намного проще.  
@@ -24,7 +25,7 @@ ms.lasthandoff: 10/27/2017
   
  Обзор и рекомендации по быстрому началу работы см. в разделе [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)  
   
- **Requirements**  
+ **Требования**  
   
 -   Visual Studio Enterprise  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 46df0fc4be6abf639f939b5145765f0ba41b0b8c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e77803150d747d05d8f6b0002814010c45244282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-functions"></a>Функции свойств
 В версиях 4 и 4.5 платформы .NET Framework можно оценивать скрипты MSBuild с помощью функции свойства. Функции свойства можно использовать во всех случаях, где появляются свойства. В отличие от задач, функции свойства можно использовать за пределами целей и оценивать до запуска целей.  

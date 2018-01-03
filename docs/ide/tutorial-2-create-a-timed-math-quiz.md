@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 8f9534d7d899e8b49f0a3cbba80534b2ba148a49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 049bae0ee8665a17836ba0add5c442680e0a609d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание математической головоломки с ограничением по времени
 В этом учебнике вам предстоит создать головоломку, в которой игрок должен решить четыре арифметические задачи со случайными числами за определенное время. Вы научитесь:  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>Связанные разделы  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Шаг 1. Создание проекта и добавление меток в форму](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Начало работы: создание проекта, изменение свойств и добавление элементов управления `Label`.|  
 |[Шаг 2. Создание задачи на сложение случайных чисел](../ide/step-2-create-a-random-addition-problem.md)|Создание задачи на сложение с использованием класса `Random` для генерации случайных чисел.|  

@@ -12,16 +12,17 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e733a49617b55d2f09f7782c87c9160124ccd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 00ec00f549198972714e95d9c586b0a3e30f2ffb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overviews-performance-tools"></a>Обзоры (средства производительности)
 В данном разделе представлены концептуальные и терминологические обзоры средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], используемых для измерения характеристик производительности разрабатываемого приложения.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)  
  Сведения об основах профилирования с использованием средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   

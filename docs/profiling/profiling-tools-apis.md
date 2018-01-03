@@ -12,16 +12,17 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70892fc115767ede7d9ba23bf0fff5981ad12962
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b02eecfaaecb365519daa8cd59fd29252bc3340f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-tools-apis"></a>Интерфейсы API средств профилирования
 Вы можете вставить управляемые или собственные методы интерфейсов API средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], чтобы управлять сбором данных во время выполнения профилирования. В этом разделе описываются методы интерфейсов API и способы их использования.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)  
  Описывает методы средств профилирования C++.  
   

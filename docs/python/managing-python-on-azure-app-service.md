@@ -8,16 +8,18 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e56b5d55-6e6b-48af-af40-5172c768cabc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: db2929dc6f92af7b31747dbbea906417ef84b36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-python-on-azure-app-service"></a>Работа с Python в службе приложений Azure
 

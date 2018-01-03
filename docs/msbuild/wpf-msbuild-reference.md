@@ -20,16 +20,17 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8ed4228dbd7b9adf5909108ff0a46f0d94405615
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9af538203f5705e89b2c9492bbc2b2b4658ebfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-msbuild-reference"></a>Справочные сведения о WPF для MSBuild
 Windows Presentation Foundation (WPF) расширяет подсистему Microsoft Build Engine (MSBuild) за счет дополнительной поддержки сборок, которая описана в этом разделе.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [TARGETS-файлы](../msbuild/wpf-dot-targets-files.md)  
  Описывает TARGETS-файлы WPF.  
   

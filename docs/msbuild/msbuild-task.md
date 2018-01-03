@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f2c3e5db9336009d5197608497772bc20d211c51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 264b5b379b7c3f2fa364d01260e1da825b5d64d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-task"></a>Задача MSBuild
 Выполняет сборку проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] на основе другого проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------|  
 |`BuildInParallel`|Необязательный параметр `Boolean` .<br /><br /> Если его значение `true`, то сборка проектов, указанных в параметре `Projects`, выполняется параллельно, по возможности. Значение по умолчанию — `false`.|  
 |`Projects`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Он определяет файлы проекта, необходимые для сборки.|  
-|`Properties`|Необязательный параметр `String` .<br /><br /> Список разделенных точкой с запятой пар имя-значение для применения в качестве глобальных свойств к дочернему проекту. Указание этого параметра функционально эквивалентно заданию значения свойства с помощью ключа **/property** при выполнении сборки с использованием [MSBuild.exe](../msbuild/msbuild-command-line-reference.md). Например:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> При передаче проекту свойств с помощью параметра `Properties` [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает новый экземпляр проекта даже в том случае, если файл проекта уже загружен. При создании нового экземпляра проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] обрабатывает его как другой проект с другими глобальными свойствами, сборка которого может выполняться параллельно с другими экземплярами проекта. Например, сборка конфигурации выпуска может выполняться в одно время со сборкой конфигурации отладки.|  
+|`Properties`|Необязательный параметр `String` .<br /><br /> Список разделенных точкой с запятой пар имя-значение для применения в качестве глобальных свойств к дочернему проекту. Указание этого параметра функционально эквивалентно заданию значения свойства с помощью ключа **/property** при выполнении сборки с использованием [MSBuild.exe](../msbuild/msbuild-command-line-reference.md). Пример:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> При передаче проекту свойств с помощью параметра `Properties` [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает новый экземпляр проекта даже в том случае, если файл проекта уже загружен. При создании нового экземпляра проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] обрабатывает его как другой проект с другими глобальными свойствами, сборка которого может выполняться параллельно с другими экземплярами проекта. Например, сборка конфигурации выпуска может выполняться в одно время со сборкой конфигурации отладки.|  
 |`RebaseOutputs`|Необязательный параметр `Boolean` .<br /><br /> Если его значение `true`, то относительные пути целевых выходных элементов из созданных проектов корректируются таким образом, чтобы соответствовать вызывающему проекту. Значение по умолчанию — `false`.|  
 |`RemoveProperties`|Необязательный параметр `String` .<br /><br /> Задает набор глобальных свойств для удаления.|  
 |`RunEachTargetSeparately`|Необязательный параметр `Boolean` .<br /><br /> Если его значение `true`, то задача [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывает каждый целевой объект из списка, переданного в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], по одному, а не все одновременно. Задание для этого параметра значения `true` гарантирует вызов последующих целевых объектов даже в случае сбоя ранее вызванных объектов. В противном случае из-за сбоя во время сборки какого-то одного объекта вызов всех последующих целевых объектов прекратится. Значение по умолчанию — `false`.|  

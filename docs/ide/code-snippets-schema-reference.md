@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 Фрагменты кода IntelliSense — это предварительно созданные готовые части кода, которые можно вставить в приложение в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Фрагменты кода повышают производительность за счет сокращения времени, затрачиваемого на ввод повторяющихся частей кода и поиск примеров. С помощью схемы XML фрагментов кода IntelliSense вы можете создавать собственные фрагменты и добавлять их к фрагментам, которые уже есть в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 </Assembly>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Reference](../ide/code-snippets-schema-reference.md#reference)|Содержит сведения о ссылках на сборки, требуемые фрагментом кода.|  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
 </Author>    
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Содержит общие сведения о фрагменте кода.|  
   
@@ -122,7 +123,7 @@ $selected$ is a great color. I love $selected$.
 
 - **Language** - _обязательный_ атрибут, который задает язык фрагмента кода. Он может иметь одно из следующих значений:
 
-   |Значение|Описание|  
+   |Значение|Описание:|  
    |-----|-----------|  
    |`VB`|Определяет фрагмента кода Visual Basic.|  
    |`CSharp`|Определяет фрагмент кода C#.|  
@@ -134,7 +135,7 @@ $selected$ is a great color. I love $selected$.
  
 - **Kind** - _необязательный_ атрибут, который задает вид кода, содержащийся во фрагменте, и место, в которое должен быть вставлен фрагмент кода для его компиляции. Он может иметь одно из следующих значений:
 
-   |Значение|Описание|  
+   |Значение|Описание:|  
    |-----|-----------|  
    |`method body`|Указывает, что фрагмент кода является телом метода, и, следовательно, должен вставляться внутрь объявления метода.|  
    |`method decl`|Указывает, что фрагмент кода является методом, и, следовательно, должен вставляться внутрь класса или модуля.|  
@@ -145,7 +146,7 @@ $selected$ is a great color. I love $selected$.
 - **Delimiter** - _необязательный_ атрибут, который задает разделитель, используемый для описания литералов и объектов в коде. По умолчанию используется разделитель `$`.
 
 ### <a name="parent-element"></a>Родительский элемент
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Snippet](../ide/code-snippets-schema-reference.md#snippet)|Содержит ссылки, операции импорта, объявления и код для фрагмента кода.|
   
@@ -159,16 +160,16 @@ $selected$ is a great color. I love $selected$.
 </CodeSnippet>  
 ```  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Format`|Обязательный атрибут. Задает версию схемы фрагмента кода. Атрибут Format должен представлять собой строку синтаксиса x.x.x, где каждый символ "x" соответствует числовому значению номера версии. В Visual Studio фрагменты кода с нераспознаваемыми значениями атрибута `Format` игнорируются.|  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Обязательный элемент. Содержит общие сведения о фрагменте кода. Фрагмент кода должен содержать ровно один элемент `Header`.|  
 |[Элемент Snippet](../ide/code-snippets-schema-reference.md#snippet)|Обязательный элемент. Содержит код, который будет вставлен средой Visual Studio. Фрагмент кода должен содержать ровно один элемент `Snippet`.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets)|Корневой элемент схемы XML фрагмента кода.|  
   
@@ -181,7 +182,7 @@ $selected$ is a great color. I love $selected$.
 </CodeSnippets>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Необязательный элемент. Родительский элемент для всех данных фрагмента кода. Элемент `CodeSnippet` может содержать любое число элементов `CodeSnippets`, включая ноль.|  
   
@@ -195,12 +196,12 @@ $selected$ is a great color. I love $selected$.
 </Declarations>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Literal](../ide/code-snippets-schema-reference.md#literal)|Необязательный элемент. Задает литералы фрагмента кода, доступные для редактирования. Элемент `Literal` может содержать любое число элементов `Declarations`, включая ноль.|  
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object)|Необязательный элемент. Задает объекты фрагмента кода, доступные для изменения. Элемент `Object` может содержать любое число элементов `Declarations`, включая ноль.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Snippet](../ide/code-snippets-schema-reference.md#snippet)|Содержит ссылки, операции импорта, объявления и код для фрагмента кода.|  
   
@@ -213,7 +214,7 @@ $selected$ is a great color. I love $selected$.
 </Default>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Literal](../ide/code-snippets-schema-reference.md#literal)|Определяет доступные для редактирования поля литералов фрагмента кода.|  
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object)|Определяет доступные для редактирования поля объектов фрагмента кода.|  
@@ -229,7 +230,7 @@ $selected$ is a great color. I love $selected$.
 </Description>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Содержит общие сведения о фрагменте кода.|  
   
@@ -247,7 +248,7 @@ $selected$ is a great color. I love $selected$.
 </Function>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Literal](../ide/code-snippets-schema-reference.md#literal)|Определяет доступные для редактирования поля литералов фрагмента кода.|  
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object)|Определяет доступные для редактирования поля объектов фрагмента кода.|  
@@ -269,7 +270,7 @@ $selected$ is a great color. I love $selected$.
 </Header>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Author](../ide/code-snippets-schema-reference.md#author)|Необязательный элемент. Имя человека или компании, которые являются автором фрагмента кода. Элемент `Author` может содержать один элемент `Header` или ни одного такого элемента.|  
 |[Элемент Description](../ide/code-snippets-schema-reference.md#description)|Необязательный элемент. Описание фрагмента кода. Элемент `Description` может содержать один элемент `Header` или ни одного такого элемента.|  
@@ -279,7 +280,7 @@ $selected$ is a great color. I love $selected$.
 |[Элемент SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes)|Необязательный элемент. Группирует элементы `SnippetType`. Элемент `SnippetTypes` может содержать один элемент `Header` или ни одного такого элемента. При отсутствии элементов `SnippetTypes` фрагмент кода всегда действителен.|  
 |[Элемент Title](../ide/code-snippets-schema-reference.md#title)|Обязательный элемент. Понятное имя фрагмента кода. Элемент `Title` должен содержать ровно один элемент `Header`.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Родительский элемент для всех данных фрагмента кода.|  
   
@@ -295,7 +296,7 @@ $selected$ is a great color. I love $selected$.
 </HelpUrl>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Содержит общие сведения о фрагменте кода.|  
   
@@ -310,7 +311,7 @@ $selected$ is a great color. I love $selected$.
 </ID>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Literal](../ide/code-snippets-schema-reference.md#literal)|Определяет доступные для редактирования поля литералов фрагмента кода.|  
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object)|Определяет доступные для редактирования поля объектов фрагмента кода.|  
@@ -329,11 +330,11 @@ $selected$ is a great color. I love $selected$.
 </Import>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Namespace](../ide/code-snippets-schema-reference.md#namespace)|Обязательный элемент. Задает пространство имен, используемое фрагментом кода. Элемент `Namespace` должен содержать ровно один элемент `Import`.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Imports](../ide/code-snippets-schema-reference.md#imports)|Группирующий элемент для элементов **Import**.|  
   
@@ -349,11 +350,11 @@ $selected$ is a great color. I love $selected$.
 <Imports>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Import](../ide/code-snippets-schema-reference.md#import)|Необязательный элемент. Содержит импортированные пространства имен для фрагмента кода. Элемент `Imports` может содержать любое число элементов **Import**, включая ноль.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Snippet](../ide/code-snippets-schema-reference.md#snippet)|Содержит ссылки, операции импорта, объявления и код для фрагмента кода.|  
   
@@ -366,7 +367,7 @@ $selected$ is a great color. I love $selected$.
 </Keyword>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Keywords](../ide/code-snippets-schema-reference.md#keywords)|Группирует отдельные элементы `Keyword`.|  
   
@@ -382,11 +383,11 @@ $selected$ is a great color. I love $selected$.
 <Keywords>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Keyword](../ide/code-snippets-schema-reference.md#keyword)|Необязательный элемент. Содержит отдельные ключевые слова для фрагмента кода. Элемент `Keyword` может содержать любое число элементов `Keywords`, включая ноль.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Содержит общие сведения о фрагменте кода.|  
   
@@ -404,18 +405,18 @@ $selected$ is a great color. I love $selected$.
 </Literal>  
 ```  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Editable`|Необязательный атрибут элемента `Boolean`. Задает, доступен ли литерал для редактирования после вставки фрагмента кода. Значение данного атрибута по умолчанию — `true`.|  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Default](../ide/code-snippets-schema-reference.md#default)|Обязательный элемент. Задает значение по умолчанию литерала при вставке фрагмента кода. Элемент `Default` должен содержать ровно один элемент `Literal`.|  
 |[Function, элемент](../ide/code-snippets-schema-reference.md#function)|Необязательный элемент. Задает функцию для выполнения при получении литералом фокуса в Visual Studio. Элемент `Function` может содержать один элемент `Literal` или ни одного такого элемента.|  
 |[Элемент ID](../ide/code-snippets-schema-reference.md#id)|Обязательный элемент. Задает уникальный идентификатор для литерала. Элемент `ID` должен содержать ровно один элемент `Literal`.|  
 |[Элемент ToolTip](../ide/code-snippets-schema-reference.md#tooltip)|Необязательный элемент. Описывает ожидаемое значение и способ использования литерала. Элемент `Literal` может содержать один элемент **Tooltip** или ни одного такого элемента.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Declarations](../ide/code-snippets-schema-reference.md#declarations)|Содержит литералы и объекты фрагмента кода, доступные для редактирования.|  
   
@@ -431,7 +432,7 @@ $selected$ is a great color. I love $selected$.
 </Namespace>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Import](../ide/code-snippets-schema-reference.md#import)|Импортирует заданное пространство имен.|  
   
@@ -450,11 +451,11 @@ $selected$ is a great color. I love $selected$.
 </Object>  
 ```  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Editable`|Необязательный атрибут элемента `Boolean`. Задает, доступен ли литерал для редактирования после вставки фрагмента кода. Значение данного атрибута по умолчанию — `true`.|  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Default](../ide/code-snippets-schema-reference.md#default)|Обязательный элемент. Задает значение по умолчанию литерала при вставке фрагмента кода. Элемент `Default` должен содержать ровно один элемент `Literal`.|  
 |[Function, элемент](../ide/code-snippets-schema-reference.md#function)|Необязательный элемент. Задает функцию для выполнения при получении литералом фокуса в Visual Studio. Элемент `Function` может содержать один элемент `Literal` или ни одного такого элемента.|  
@@ -462,7 +463,7 @@ $selected$ is a great color. I love $selected$.
 |[Элемент ToolTip](../ide/code-snippets-schema-reference.md#tooltip)|Необязательный элемент. Описывает ожидаемое значение и способ использования литерала. Элемент `Literal` может содержать один элемент **Tooltip** или ни одного такого элемента.|  
 |[Элемент Type](../ide/code-snippets-schema-reference.md#type)|Обязательный элемент. Задает тип объекта. Элемент `Type` должен содержать ровно один элемент `Object`.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Declarations](../ide/code-snippets-schema-reference.md#declarations)|Содержит литералы и объекты фрагмента кода, доступные для редактирования.|  
   
@@ -476,12 +477,12 @@ $selected$ is a great color. I love $selected$.
 </Reference>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Assembly](../ide/code-snippets-schema-reference.md#assembly)|Обязательный элемент. Содержит имя сборки, на которую ссылается фрагмент кода. Элемент `Assembly` должен содержать ровно один элемент `Reference`.|  
 |[Элемент Url](../ide/code-snippets-schema-reference.md#url)|Необязательный элемент. Содержит URL-адрес, по которому доступны дополнительные сведения о сборке, на которую создается ссылка. Элемент `Url` может содержать один элемент `Reference` или ни одного такого элемента.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент References](../ide/code-snippets-schema-reference.md#references)|Группирующий элемент для элементов `Reference`.|  
   
@@ -494,11 +495,11 @@ $selected$ is a great color. I love $selected$.
 </References>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Reference](../ide/code-snippets-schema-reference.md#reference)|Необязательный элемент. Содержит сведения о ссылках на сборки для фрагмента кода. Элемент `Reference` может содержать любое число элементов `References`, включая ноль.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Snippet](../ide/code-snippets-schema-reference.md#snippet)|Содержит ссылки, операции импорта, объявления и код для фрагмента кода.|  
   
@@ -514,7 +515,7 @@ $selected$ is a great color. I love $selected$.
 </Shortcut>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Содержит общие сведения о фрагменте кода.|  
   
@@ -532,14 +533,14 @@ $selected$ is a great color. I love $selected$.
 </Snippet>    
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент Code](../ide/code-snippets-schema-reference.md#code)|Обязательный элемент. Задает код, который требуется вставить в файл документации. Элемент `Code` должен содержать ровно один элемент `Snippet`.|  
 |[Элемент Declarations](../ide/code-snippets-schema-reference.md#declarations)|Необязательный элемент. Задает литералы и объекты, которые составляют части фрагмента кода, доступные для изменения. Элемент `Declarations` может содержать один элемент `Snippet` или ни одного такого элемента.|  
 |[Элемент Imports](../ide/code-snippets-schema-reference.md#imports)|Необязательный элемент. Группирует отдельные элементы `Import`. Элемент `Imports` может содержать один элемент `Snippet` или ни одного такого элемента.|  
 ||Необязательный элемент. Группирует отдельные элементы `Reference`. Элемент `References` может содержать один элемент `Snippet` или ни одного такого элемента.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Позволяет задать заголовок и несколько фрагментов кода IntelliSense, которые можно вставить в файлы с кодом Visual Studio.|  
   
@@ -552,7 +553,7 @@ $selected$ is a great color. I love $selected$.
 <SnippetType>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes)|Группирует элементы `SnippetType`.|  
   
@@ -574,11 +575,11 @@ $selected$ is a great color. I love $selected$.
 <SnippetTypes>  
 ```  
   
-|Дочерний элемент|Описание|  
+|Дочерний элемент|Описание:|  
 |-------------------|-----------------|  
 |[Элемент SnippetType](../ide/code-snippets-schema-reference.md#snippettype)|Необязательный элемент. Задает способ вставки фрагмента кода в Visual Studio. Элемент `SnippetType` может содержать любое число элементов `SnippetTypes`, включая ноль.|  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Задает общие сведения о фрагменте кода.|  
   
@@ -591,7 +592,7 @@ $selected$ is a great color. I love $selected$.
 <Title>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Header](../ide/code-snippets-schema-reference.md#header)|Задает общие сведения о фрагменте кода.|  
   
@@ -606,7 +607,7 @@ $selected$ is a great color. I love $selected$.
 </ToolTip>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Literal](../ide/code-snippets-schema-reference.md#literal)|Определяет доступные для редактирования поля литералов фрагмента кода.|  
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object)|Определяет доступные для редактирования поля объектов фрагмента кода.|  
@@ -622,7 +623,7 @@ $selected$ is a great color. I love $selected$.
 </Type>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object)|Определяет доступные для редактирования поля объектов фрагмента кода.|  
   
@@ -640,7 +641,7 @@ $selected$ is a great color. I love $selected$.
 </Url>  
 ```  
   
-|Элемент Parent|Описание|  
+|Элемент Parent|Описание:|  
 |--------------------|-----------------|  
 |[Элемент Reference](../ide/code-snippets-schema-reference.md#reference)|Задает ссылки на сборки, требуемые фрагментом кода.|  
   

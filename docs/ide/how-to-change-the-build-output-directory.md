@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccbb32b9fd035a9058812eb5a3df306ff629086f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1dcd42cf2251a4cd20047eaa3fc67110cf048e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Практическое руководство. Изменение выходного каталога построения
 Вы можете указать расположение выходных данных проекта для каждой конфигурации (для отладки, выпуска или и того и другого).  

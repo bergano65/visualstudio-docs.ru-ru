@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ для разработки кроссплатформенных мобильных приложений
 Вы можете выполнять сборку приложений на основе машинного кода C++ для устройств iOS, Android и Windows, а также предоставлять общий доступ к общему коду в библиотеках, собранных для iOS, Android и Windows, с помощью Visual C++ для разработки кроссплатформенных мобильных приложений. Эта возможность доступна в среде Visual Studio 2015, вместе с которой устанавливаются пакеты SDK и средства, необходимые для кроссплатформенной разработки общих библиотек и собственных приложений. После ее установки можно использовать Visual C++ для создания кода, выполняющегося не только в Windows, Windows Phone и Xbox, но и на устройствах и платформах iOS и Android.  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="try-out-sample-code"></a>Испытайте образец кода  
  Скачайте образцы, демонстрирующие создание общих библиотек кода, которые можно использовать в приложениях Windows, Android и iOS, а также создание полностью готовых приложений Native Activity для Android. Чтобы приступить к работе, см. раздел [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md).  
   
-## <a name="in-this-section"></a>В данном разделе  
+## <a name="in-this-section"></a>Содержание раздела  
   
 1.  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
@@ -103,6 +104,6 @@ ms.lasthandoff: 10/31/2017
   
 3.  [Создание приложения Android Native Activity](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Создание приложения OpenGL ES в Android и iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4.  [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
 5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)

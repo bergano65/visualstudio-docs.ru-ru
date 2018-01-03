@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76d86738f53e0d6dc60289d1e3f395794f8482ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3fb9b831562e2d9e4ce7d686f49ac484d58f6804
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diagnostic-namespace"></a>Пространство имен diagnostic
 Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.  
@@ -29,18 +30,18 @@ ms.lasthandoff: 10/31/2017
 namespace diagnostic;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 ### <a name="classes"></a>Классы  
   
-|Имя|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |[Класс marker_series](../profiling/marker-series-class.md)|Представляет последовательный канал событий, созданных одним поставщиком.|  
 |[Класс span](../profiling/span-class.md)|Определяет этапы приложения.|  
   
 ### <a name="enumerations"></a>Перечисления  
   
-|Имя|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |[Перечисление marker_importance](../profiling/marker-importance-enumeration.md)|Представляет уровень важности маркера визуализатора параллелизма.|  
   

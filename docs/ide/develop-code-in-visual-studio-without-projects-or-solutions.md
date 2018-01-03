@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений  
 В Visual Studio 2017 вы можете открыть код практически из любого типа проекта на основе каталога без необходимости в решении или файле проекта. Это значит, что вы можете, например, найти проект кода в Git, клонировать его, а затем открыть прямо в Visual Studio и начать разработку, не создавая решение или проект.  

@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fe5e36b6d6f8cd7672c2300c385a1045bb677f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ceadf13f6567b303337b14b6b76be86ddcbac8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-xml-code-comments"></a>Создание XML-примечаний к коду
 Примечания в файлах исходного кода можно сделать доступными в виде IntelliSense. При добавлении параметра /doc в командную строку компилятора Visual Basic, C# или C++ создается XML-файл, который служит основой для документации IntelliSense.  

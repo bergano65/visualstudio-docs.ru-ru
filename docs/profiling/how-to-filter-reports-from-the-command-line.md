@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff4bae4f3071755149acdea49d312f8a9efcf31d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 27309a459128e6ed9ebb17d295bc39c6c621dcd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Практическое руководство. Фильтрация отчетов из командной строки
 С помощью параметров команды **VSPerfReport** можно фильтровать отчеты за определенный период времени в файле данных профилирования или ограничивать данные одним или несколькими процессами или потоками. Дополнительные сведения об этой команде см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Параметры|Описание|  
+|Параметры|Описание:|  
 |-------------|-----------------|  
 |**StartTime:**[*Значение*]|Отображает только данные, собранные после введенного значения (в миллисекундах).|  
 |**EndTime:**[*Значение*]|Отображает только данные, собранные до введенного значения (в миллисекундах).|  

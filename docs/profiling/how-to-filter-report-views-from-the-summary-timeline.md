@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 827e9702f495816a7cce4cb450bafa2590ddbba5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 17e837e43a1de3b052e8296a49d5b48956db0be6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале
 Данные, отображаемые в отчетах о производительности, можно фильтровать, задавая промежуток времени на временной шкале в представлении сводки. При фильтрации отчетов выполняется повторный анализ файла данных профилирования для включения только указанного отрезка времени.  

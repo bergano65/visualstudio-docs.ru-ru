@@ -15,16 +15,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 595297dbafb35ed8b3bb376ce5ddfee484ac2442
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: caf3c6168e81b7384fbf056f5365614950b24ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instrumentation-method-data-views"></a>Представление данных метода инструментирования
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, созданным с помощью метода инструментирования.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Представление "Сводка"](../profiling/summary-view-instrumentation-data.md)  
  Содержит перечень функций, на выполнение которых тратится больше всего времени, и функций, на которые приходится самая большая индивидуальная нагрузка.  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
  [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые включают данные об использовании памяти .NET.  
   
- [Представления данных о состязаниях ресурсов](../profiling/resource-contention-data-views.md)  
+ [Представления данных о конфликтах ресурсов](../profiling/resource-contention-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода конфликтов потоков.  
   
 ## <a name="see-also"></a>См. также  

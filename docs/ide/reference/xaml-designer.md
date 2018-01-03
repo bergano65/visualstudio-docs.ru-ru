@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3058e19d4ac6211c741efd973344a1af14238d10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xaml-designer-options-page"></a>Страница параметров конструктора XAML
 На странице параметров **конструктора XAML** можно настроить форматирование элементов и атрибутов в документах XAML. Чтобы открыть эту страницу, выберите меню **Сервис** а затем пункт **Параметры**. Чтобы открыть страницу свойств **конструктора XAML**, выберите узел **Конструктор XAML**. Параметры конструктора XAML применяются при открытии документа. То есть если вы изменили параметры, необходимо закрыть и повторно открыть Visual Studio, чтобы изменения вступили в силу.

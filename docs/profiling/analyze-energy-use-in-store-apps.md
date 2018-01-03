@@ -17,11 +17,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bcdebabac1197317b5e282be8bd648168f201673
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 Профилировщик **Расход энергии** в Visual Studio позволяет анализировать расход энергии приложениями универсальной платформы Windows на планшетных устройствах с низким энергопотреблением, постоянно или периодически работающих от аккумуляторов. На устройстве, работающем от аккумулятора, приложение с большим энергопотреблением может вызывать такое недовольство пользователя, что он в конце концов удалит его. Оптимизация расхода энергии позволяет улучшить восприятие приложения пользователями и повысить степень его использования.  

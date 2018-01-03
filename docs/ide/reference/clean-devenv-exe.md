@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd4b344860190d0dcfc01adf6ccf553d34c5b038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5982cfd7b9201008f4ecc5930041200fd4980dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Удаляет все промежуточные файлы и выходные каталоги.  
@@ -34,13 +35,13 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
   
 ## <a name="arguments"></a>Аргументы  
  `FileName`  
- Обязательный. Полный путь и имя для файла решения или файла проекта.  
+ Обязательно. Полный путь и имя для файла решения или файла проекта.  
   
  /project `ProjName`  
- Необязательно. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
+ Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
   
  /projectconfig `ProjConfigName`  
- Необязательно. Имя конфигурации сборки проекта, которая применяется при очистке указанного `/project`.  
+ Необязательный. Имя конфигурации сборки проекта, которая применяется при очистке указанного `/project`.  
   
 ## <a name="remarks"></a>Примечания  
  Этот параметр выполняет те же функции, что и команда меню **Очистить решение** в интегрированной среде разработки (IDE).  

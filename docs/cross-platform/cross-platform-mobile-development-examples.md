@@ -13,13 +13,14 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
+# <a name="cross-platform-mobile-development-examples"></a>Примеры разработки кроссплатформенных мобильных приложений
 Несколько шаблонов, устанавливаемых компонентом Visual C++ для разработки кроссплатформенных мобильных приложений, создают полноценные примеры, которые можно использовать для обучения. Кроме того, в Центре разработки для Windows есть несколько примеров приложений, которые можно скачать и испытать в Visual Studio.  
   
 -   [Пример приложения hello-jni для Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Пример приложения Bitmap Plasma для Android](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
-     Этот пример представляет собой приложение Bitmap Plasma, перенесенное из Android NDK. В нем демонстрируется полностью готовое приложение Java Native Interface для Android на основе OpenGL ES 2.0. С его помощью показано, как напрямую работать с буферами растровых пикселей Android для создания эффекта плазмы.  
+     Этот пример представляет собой приложение Bitmap Plasma, перенесенное из Android NDK. В нем демонстрируется полностью готовое приложение Java Native Interface для Android на основе OpenGL ES 2.0. С его помощью показано, как напрямую работать с буферами растровых пикселей Android для создания эффекта плазмы.  
   
 -   [Пример библиотеки TwoLibs для Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
   

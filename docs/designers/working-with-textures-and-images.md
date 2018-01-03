@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7c15d6bd2bd50b8ba8c5075ab2d90287e3a4750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-textures-and-images"></a>Работа с текстурами и изображениями
 Редактор изображений в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно использовать для создания и редактирования текстур и изображений. Редактор изображений поддерживает широкий диапазон форматов изображений и текстур, аналогичных тем, которые используются при разработке приложений DirectX.  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Редактор изображений](../designers/image-editor.md)|Сведения об использовании редактора изображений для работы с текстурами и изображениями.|  
 |[Примеры редактора изображений](../designers/image-editor-examples.md)|Раздел содержит ссылки на статьи, в которых демонстрируется использование редактора изображений для выполнения распространенных задач обработки изображений.|

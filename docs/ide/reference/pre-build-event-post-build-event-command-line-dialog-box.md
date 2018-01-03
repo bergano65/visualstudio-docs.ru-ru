@@ -37,11 +37,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d2ec0c94de336adf2c8fd10946466aafcecc72a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f9f928149adf689113e6257efaa06e94b467c95f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
 Вы можете ввести события до или после сборки для [страницы "События сборки" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) прямо в поле ввода или выбрать макросы, выполняемые до или после сборки, в списке доступных макросов.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="macros"></a>Макросы  
  Эти макросы можно использовать для указания расположений файлов или для получения фактического имени входного файла в случае множественного выбора. В этих макросах регистр не учитывается.  
   
-|Макрос|Описание|  
+|Макрос|Описание:|  
 |-----------|-----------------|  
 |`$(ConfigurationName)`|Имя текущей конфигурации проекта, например "Debug".|  
 |`$(OutDir)`|Путь к выходному каталогу файлов относительно каталога проекта. Путь разрешается в значение для свойства Output Directory. Он включает обратную косую черту "\\" в конце.|  

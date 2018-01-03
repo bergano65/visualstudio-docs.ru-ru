@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0244cbae9a331303434db89a42518812efc2677b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 915f7f3cbbee87f72c4643b8c5a2b4497bbd69dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-overview"></a>Обзор отчета о производительности
 Данные, собранные во время сеанса анализа производительности, можно просматривать в окне **Отчет о производительности** интегрированной среды разработки Visual Studio Team System Development Edition. Данные профилирования сохраняются в VSP- и VSPS-файлах. Окна представления отчета позволяют просматривать и анализировать данные о проблемах производительности приложения.  

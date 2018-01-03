@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3004f90f05a41ef0d2557236643af18b9be89d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateresource-task"></a>Задача GenerateResource
 Преобразовывает файлы формата TXT и RESX (файлы ресурсов на основе XML) и двоичные RESOURCES-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата TXT и RESX в RESOURCES-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `GenerateResource` .  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`AdditionalInputs`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит дополнительные входные данные для проверки зависимости, выполняемой этой задачей. Например, файлы проекта и целей построения, как правило, должны быть входными данными, чтобы в случае их обновления все ресурсы создались заново.|  
 |`EnvironmentVariables`|Необязательный параметр `String[]` .<br /><br /> Указывает массив пар "имя — значение" переменных среды, которые нужно передать в порожденный файл resgen.exe, дополняя (или выборочно переопределяя) обычный блок среды.|  

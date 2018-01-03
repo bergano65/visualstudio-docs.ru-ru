@@ -24,11 +24,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 094e3968b527261125753002d9b6a31c7bd5d244
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10dffd6ea1a07c33df07f27ee8268932f18d8c32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolveassemblyreference-task"></a>Задача ResolveAssemblyReference
 Определяет все сборки, которые зависят от указанных сборок. Сюда входят зависимости второго и `n`-го порядка.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 |`FindSatellites`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, выполняется поиск вспомогательных сборок. Значение по умолчанию — `true.`|  
 |`FindSerializationAssemblies`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, задача ищет сборки сериализации. Значение по умолчанию — `true`.|  
 |`FullFrameworkAssemblyTables`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает элементы, которые содержат метаданные FrameworkDirectory для связи списка redist с определенным каталогом платформы. Если связь не установлена, регистрируется ошибка. Логика разрешения ссылки на сборку (RAR) использует каталог целевой платформы, если значение FrameworkDirectory не задано.|  
-|`FullFrameworkFolders`|Необязательный параметр <xref:System.String?displayProperty=fullName>`[]`.<br /><br /> Указывает набор папок, содержащих каталог RedistList. Этот каталог представляет полную платформу для заданного клиентского профиля, например %programfiles%\reference assemblies\microsoft\framework\v4.0.|  
+|`FullFrameworkFolders`|Необязательный параметр <xref:System.String?displayProperty=fullName>`[]` .<br /><br /> Указывает набор папок, содержащих каталог RedistList. Этот каталог представляет полную платформу для заданного клиентского профиля, например %programfiles%\reference assemblies\microsoft\framework\v4.0.|  
 |`FullTargetFrameworkSubsetNames`|Необязательный параметр `String[]` .<br /><br /> Содержит список имен подсети целевой платформы. Если имя подсети в списке совпадает с именем в свойстве имени `TargetFrameworkSubset` , система исключает эту подсеть целевой платформы во время сборки.|  
 |`IgnoreDefaultInstalledAssemblyTables`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, задача ищет и использует дополнительные установленные таблицы сборок (или «списки Redist»), которые находятся в каталоге \RedistList в разделе `TargetFrameworkDirectories`. Значение по умолчанию — `false.`|  
 |`IgnoreDefaultInstalledAssemblySubsetTables`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, задача ищет и использует дополнительные установленные таблицы подсетей сборки (или «списки подсетей»), которые находятся в каталоге \SubsetList в разделе `TargetFrameworkDirectories`. Значение по умолчанию — `false.`|  

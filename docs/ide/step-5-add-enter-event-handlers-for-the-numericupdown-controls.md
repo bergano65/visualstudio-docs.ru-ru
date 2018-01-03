@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3d205dae6dd00ec5d763b9fb36f9c48041438ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 В пятой части этого учебника вам предстоит добавить обработчики событий "Ввод", чтобы сделать ввод ответов на задачи головоломки немного удобнее. Этот код будет выделять и удалять текущее значение в каждом элементе управления NumericUpDown, как только игрок выберет элемент управления и начнет вводить другое значение.  

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>Представления данных метода выборки профилировщика
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, созданным с помощью метода выборки.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/11/2017
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Представление "Сводка"](../profiling/summary-view-sampling-data.md)  
  Перечисляет функции, которые выполнялись чаще других во время выборки, а также функции, выполнявшие наибольший объем индивидуальной работы.  
   
@@ -43,10 +44,10 @@ ms.lasthandoff: 11/11/2017
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)  
  Упорядочивает данные профилирования по функциям и перечисляет функции, которые выполнялись в процессе выборки.  
   
- [Представление строк](../profiling/lines-view-sampling-data.md)  
+ [Представление "Строки"](../profiling/lines-view-sampling-data.md)  
  Перечисляет строки исходного кода, которые выполнялись в процессе выборки.  
   
- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-sampling-data.md)  
+ [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Перечисляет строки исходного кода, которые выполнялись в процессе выборки.  
   
 ## <a name="reference"></a>Ссылка  

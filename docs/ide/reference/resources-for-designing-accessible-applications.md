@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 Используйте следующие ссылки для поиска сведений о технологиях, поддерживающих разработку со специальными возможностями, а также советов и примеров по разработке приложений Windows и веб-сайтов со специальными возможностями. Общие сведения о специальных возможностях можно найти на веб-странице [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  

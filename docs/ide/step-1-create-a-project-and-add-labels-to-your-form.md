@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab50592e345a54853e9cfbd95d0b9bd1bc86d794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Шаг 1. Создание проекта и добавление в форму элементов управления Label
 Первые шаги разработки этой головоломки предполагают создание проекта, добавление меток, кнопки и других элементов управления в форму. Также вам предстоит задать свойства для каждого добавляемого элемента управления. Проект будет содержать форму, элементы управления и добавленный в следующих уроках учебника код. Кнопка запускает головоломку, метки служат для отображения задач, входящих в головоломку, а остальные элементы управления служат для отображения ответов и времени, оставшегося на решение головоломки.  

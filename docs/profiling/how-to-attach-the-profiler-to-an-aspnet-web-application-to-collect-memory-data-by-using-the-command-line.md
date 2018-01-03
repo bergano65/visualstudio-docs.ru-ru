@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a500597869b4306ef60dce6caf31bfde813d05e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 115b8faf48a45181394c4fc954e5d83348bc7224
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
 В этом разделе описан порядок использования программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью подключения профилировщика к веб-приложению [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и сбора данных по количеству выделений памяти .NET Framework и выделяемых объемах. Кроме того, с помощью этих программ можно собирать данные по времени существования объектов памяти .NET Framework.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
          Задайте один и только один из указанных ниже параметров.  
   
-        |Параметр|Описание|  
+        |Параметр|Описание:|  
         |------------|-----------------|  
         |**/globalsamplegc**|Включает сбор данных по выделению памяти.|  
         |**/globalsamplegclife**|Включает сбор данных по выделению памяти и времени существования объектов.|  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  Параметры **/user** и **/crosssession** обычно являются обязательными для приложений ASP.NET.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.|  
     |[/crossession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах входа. Этот параметр является обязательным, если приложение ASP.NET выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**.|  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором `PID`.|  
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/31/2017
   
     -   Введите команду **VSPerfCmd** [/detach](../profiling/detach.md)  
   
-         -или-  
+         - или -  
   
     -   Завершите рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Тип:  
   

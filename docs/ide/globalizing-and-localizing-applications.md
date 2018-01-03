@@ -19,18 +19,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>Глобализация и локализация приложений
 Если вы планируете распространять приложения для международного использования, следует учесть несколько аспектов на этапах проектирования и разработки. Даже если пока у вас нет подобных планов, небольшие заблаговременные приготовления помогут значительно облегчить смену курса в будущих версиях приложения. Службы, встроенные в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], упрощают разработку отдельного приложения, которое можно адаптировать для разных языков и региональных параметров с помощью управляемой разработки в Visual Studio.  
   
  Система Visual Studio изначально ориентирована на упрощение разработки международных версий за счет применения служб, встроенных в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. На следующих страницах описаны доступные в Visual Studio возможности по интернационализации.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Знакомство с международными приложениями на платформе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Представляет основные концепции, связанные с разработкой программного обеспечения для международного рынка в Visual Studio и [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   

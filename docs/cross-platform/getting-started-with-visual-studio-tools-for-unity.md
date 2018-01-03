@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 1727330a559b5a9aed41ea9063f3394e01bc45ab
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: 47b355d9b07ba2dab78111c36344eec94c935091
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
 В этом разделе вы узнаете, как установить инструменты Visual Studio для Unity и настроить проект Unity для работы с Visual Studio.  
@@ -24,7 +25,7 @@ ms.lasthandoff: 11/29/2017
 > [!IMPORTANT]
 >  В Unity 5.2 добавлена встроенная поддержка инструментов Visual Studio для Unity 2.1, что упрощает настройку проекта. Для использования этой возможности потребуется Unity 5.2.0 или более поздней версии в Windows и инструменты Visual Studio для Unity 2.1 или более поздней версии.  
 
-## <a name="prerequisites"></a>Необходимые компоненты  
+## <a name="prerequisites"></a>Предварительные требования  
  Для использования средств Visual Studio для Unity вам потребуется следующее:  
 
 -   версия **Visual Studio** , поддерживающая расширение, например Visual Studio Community, Professional, Premium или Enterprise (скачать Visual Studio Community можно бесплатно);  
@@ -111,7 +112,7 @@ ms.lasthandoff: 11/29/2017
 
  ![Открытие проекта Unity в Visual Studio.](../cross-platform/media/vstu_configure_open_in_visual_studio.png "vstu_configure_open_in_visual_studio")  
 
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
 
  Сведения о работе с проектом Unity и его отладке в Visual Studio см. в разделе [Использование инструментов Visual Studio для Unity](../cross-platform/using-visual-studio-tools-for-unity.md).  
 

@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 45ab3f266a46cd08d269f0c463fb6cc26f494a91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Функция Live Unit Testing в Visual Studio 2017
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
 <tr>
    <td>xUnit.net</td>
    <td> xunit.runner.visualstudio версии 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td> 
+   <td>xunit 1.9.2</td> 
 </tr>
 <tr>
    <td>NUnit</td>

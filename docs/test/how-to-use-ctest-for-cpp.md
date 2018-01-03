@@ -11,11 +11,12 @@ ms.assetid: a8b30934-5f38-4a18-8819-263e0733cdbe
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e1d00460a4acf26f23c256f8eb0180360315a98
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 1b471b90748442369cd9cf917e65fd283c5c52ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Использование CTest для C++ в Visual Studio
 Система CMake (которая включает в себя CTest) интегрирована в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**. Чтобы установить этот компонент на компьютере, откройте Visual Studio Installer и найдите пункт [Инструменты CMake для Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) в списке компонентов рабочей нагрузки.

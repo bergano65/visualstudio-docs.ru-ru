@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6152cfe60a7628ce830cbf589a6808f5ca87fae2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-functions"></a>Функции элементов
 Начиная с MSBuild 4.0, код в задачах и целевых объектах может вызывать функции элементов для получения сведений об элементах в проекте. Эти функции упрощают получение элементов Distinct() и выполняются быстрее, чем перебор элементов.  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="intrinsic-item-functions"></a>Встроенные функции элементов  
  В следующей таблице перечислены доступные для элементов встроенные функции.  
   
-|Функция|Пример|Описание|  
+|Функция|Пример|Описание:|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Возвращает количество элементов.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Возвращает эквивалент `Path.DirectoryName` для каждого элемента.|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 |`Reverse`|`@(MyItem->Reverse())`|Возвращает элементы в обратном порядке.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Возвращает `boolean`, чтобы указать, имеет ли какой-либо элемент заданное имя и значение метаданных. При сравнении регистр не учитывается.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Возвращает элементы с очищенными метаданными. Сохраняется только `itemspec`.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Возвращает элементы, для которых указано имя метаданных. При сравнении регистр не учитывается.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Возвращает элементы, для которых указано имя метаданных. При сравнении регистр не учитывается.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Возвращает значения метаданных, имеющие имя метаданных.|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Возвращает элементы, для которых указано имя и значение метаданных. При сравнении регистр не учитывается.|  
   

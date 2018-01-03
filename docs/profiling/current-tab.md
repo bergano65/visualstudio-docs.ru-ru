@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 506a74699ba9f3cf059feb34b16d69af0150895a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb69f11081015960cd79d54fb90893a9202c9bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="current-tab"></a>Вкладка "Текущий"
 На вкладке **Текущий** можно просмотреть стек вызова (если он доступен), ближайший к выбранной на данный момент точке на временной шкале, если выбран сегмент потока ЦП.  В данном случае точка выбора обозначена черной стрелкой или "крышкой", расположенной над временной шкалой. При выборе заблокированного сегмента "крышка" не отображается из-за отсутствия выполнения. Однако сегмент по-прежнему выбран и отображается стек вызовов.  

@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0537b1f335d46854dd43727ade695909db421ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Учебное руководство 1. Создание приложения для просмотра рисунков
 В этом руководстве выполняется создание программы, которая загружает изображение из файла и отображает его в окне. Изучается процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Выполняется настройка свойств элементов управления. Изучается использование контейнеров для согласованного изменения размеров формы. Также начинается создание кода. Вы научитесь:  
@@ -51,9 +52,9 @@ ms.lasthandoff: 10/31/2017
 >   
 >  Если вы хотите узнать в том, как писать приложения UWP на Visual C# или Visual Basic, см. раздел [Создание приложений UWP](https://developer.microsoft.com/windows/apps).
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начало разработки программы с создания проекта приложения Windows Forms.|  
 |[Шаг 2. Запуск программы](../ide/step-2-run-your-program.md)|Запуск программы приложения Windows Forms, которая была создана на предыдущем шаге.|  

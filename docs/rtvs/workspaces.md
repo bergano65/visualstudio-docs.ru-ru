@@ -8,16 +8,16 @@ ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: d610279c-d6c3-4084-939a-bf042f64d4dd
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 559f5832be6d4fa87be39941401f2222e075b7a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-science
+ms.openlocfilehash: 4e2cfe9faba79f955146bf929c4c8c1238d14fb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Управление выполнением кода R с помощью рабочих областей
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 
 В этом окне зеленым флажком обозначается активная рабочая область, к которой привязаны RTVS. Выберите синюю стрелку, чтобы задать рабочую область в качестве активной. Щелкните значок параметров (шестеренки) справа от каждой рабочей области, чтобы переименовать рабочую область, изменить ее расположение и аргументы командной строки. Красный значок X позволяет удалить рабочую область, добавленную вручную.
 
-Содержание раздела
+В этом разделе.
 
 - [Сохранение и сброс рабочей области](#saving-and-resetting-a-workspace)
 - [Локальные рабочие области](#local-workspaces)

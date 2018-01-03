@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0223d57cf4c16166149b1fc9e8903f563b724d20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23b4f8a116287d7bfe524173f9f88040ba5f1100
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setenv-task"></a>Задача SetEnv
 Задает или удаляет значение указанной переменной среды.  
@@ -34,9 +35,9 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>Параметры  
  В представленной ниже таблице приводятся параметры задачи **SetEnv**.  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
-|**Имя**|Обязательный параметр **string**.<br /><br /> Имя переменной среды.|  
+|**Name**|Обязательный параметр **string**.<br /><br /> Имя переменной среды.|  
 |**OutputEnvironmentVariable**|Необязательный параметр вывода **String**.<br /><br /> Содержит значение, которое присвоено переменной среды, заданной в параметре **Name**.|  
 |**Prefix**|Обязательный параметр `Boolean`.<br /><br /> Если он имеет значение `true`, значение параметра **Value** сцепляется со значением переменной среды, указанной в параметре **Name**, и результат присваивается этой переменной среды. Если `false`, переменной среды присваивается только значение **Value**.|  
 |**Целевой объект**|Необязательный параметр типа **String**.<br /><br /> Задает расположение, в котором хранится переменная среды. Укажите "`User`" или "`Machine`".<br /><br /> Дополнительные сведения см. в статье "Перечисление EnvironmentVariableTarget" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  

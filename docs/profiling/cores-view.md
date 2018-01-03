@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 867e6a8bffd25a25e9c021aa7565e2087a7c4bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a2ce5cc9d80e7b96318d0e1fcf8aead09652b41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view"></a>Представление "Ядра"
 В представление "Ядра" демонстрируется сопоставление выполнения потока с логическими ядрами процессора. При написании серверных приложений это представление может помочь оптимизировать производительность кэша за счет использования сходства потоков или управления пулом потоков. Оно также помогает изучать случаи, когда использование сходства потоков может усугубить проблему переходов между ядрами. Представление "Ядра" состоит из двух частей — графа и легенды.  
@@ -30,4 +31,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>См. также  
  [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)   
  [Представление "Использование"](../profiling/utilization-view.md)   
- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+ [Представление потоков](../profiling/threads-view-parallel-performance.md)

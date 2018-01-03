@@ -11,11 +11,12 @@ ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: "13"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4fc133d96f8306b46e4d820b6f7256db8c471122
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: uwp
+ms.openlocfilehash: cad1d4dd670f83c9dcb168127ecbe44f8687f09a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Тестирование библиотеки DLL на Visual C++ для приложений UWP 
 В этом разделе описывается один способ создания модульных тестов для библиотеки DLL на C++ для приложений на универсальной платформе Windows (UWP) с использованием среды тестирования Майкрософт для C++. Библиотека DLL RooterLib демонстрирует концепции теории пределов из математического анализа за счет реализации функции, которая вычисляет оценку квадратного корня из заданного числа. Библиотеки DLL могут быть включены в приложение UWP, демонстрирующее пользователям интересные вещи, которые можно сделать с помощью математических функций.  
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/15/2017
   
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")  
   
-     Обратите внимание на следующие условия.  
+     Обратите внимание на следующее.  
   
     -   Каждый тест определяется с использованием `TEST_METHOD(YourTestName){...}`.  
   

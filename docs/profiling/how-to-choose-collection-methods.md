@@ -16,16 +16,17 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94b842566c3f8bf5ad5374acda0ccc9e9b50cbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff646066c4e29c46c7ad3c24322d368fa54da9eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-choose-collection-methods"></a>Практическое руководство. Выбор методов сбора данных
 Средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживают три метода сбора данных о производительности: выборку, инструментирование и параллелизм. Метод выборки или инструментирования можно также использовать для сбора данных о времени существования и выделении памяти .NET.  
   
- **Requirements**  
+ **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   На первой странице мастера выберите один из следующих параметров:  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |------------|-----------------|  
 |**Выборка циклов ЦП**|Сбор статистики приложения, используемой для первоначального анализа и анализа проблем загрузки ЦП.|  
 |**Инструментирование**|Сбор подробных сведений о времени, которые удобно использовать для целевого анализа и анализа проблем производительности ввода-вывода.|  

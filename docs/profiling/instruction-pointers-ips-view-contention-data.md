@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53db0506509813b0c92651c8c53d681d8f650167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d6dcabe310743fee85c4560a0a37f029660bc90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Представление "Указатели инструкций" — данные конфликтов
 В представлении "Указатели инструкций" данных конфликтов приводятся данные по инструкциям сборки, выполнение которых было заблокировано в ходе сеанса профилирования.  
   
  В следующей таблице описаны значения столбцов в представлении "Указатели инструкций".  
   
-|Столбец|Описание|  
+|Столбец|Описание:|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время блокировки в данной функции.|  
 |**% эксклюзивного времени блокировки** |Процент времени блокировки, когда выполнялась инструкция.|  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 |**Конец исходной строки**|Номер строки в исходном файле, на которой заканчивается данная инструкция.|  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка столбцов представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view.md)   
  [Представление "Указатели инструкций" — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-sampling-data.md)
+ [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)

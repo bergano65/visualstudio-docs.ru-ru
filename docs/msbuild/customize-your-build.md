@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72bcca85f57a5c68e70dfa942ec607072af86561
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-your-build"></a>Настройка сборки
 Чтобы указать новое настраиваемое свойство для проектов в решении, в версиях MSBuild, предшествующих версии 15, приходилось вручную добавлять ссылку на это свойство в каждый файл проекта в решении. Либо приходилось определять свойство в файле PROPS и затем явно импортировать файл PROPS в каждый проект в решении.
@@ -87,7 +88,7 @@ Directory.Build.targets импортируется из Microsoft.Common.targets
 Ниже приведены сводные сведения об общем подходе, применяемом MSBuild:
 
 - Для каждого заданного проекта MSBuild находит первый `Directory.Build.props` сверху в структуре решения, объединяет его с параметрами по умолчанию и останавливает сканирование.
-- Если вы хотите обнаружить и объединить несколько уровней, импортируйте "внешний" файл из "внутреннего", как показано выше ([`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove)).
+- Если вы хотите обнаружить и объединить несколько уровней, импортируйте "внешний" файл из "внутреннего", как показано выше ([`<Import...>`](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove)).
 - Если "внешний" файл сам не импортирует ничего, расположенного выше, то сканирование останавливается здесь.
 - Для управления процессом сканирования и слияния используйте `$(DirectoryBuildPropsPath)` и `$(ImportDirectoryBuildProps)`.
 

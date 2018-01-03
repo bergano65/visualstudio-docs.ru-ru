@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-batching"></a>Пакетная обработка в MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может разделять списки элементов на разные категории или пакеты на основе метаданных элементов и поочередно выполнять целевой объект или задачу с использованием каждого пакета.  
@@ -88,13 +89,13 @@ ms.lasthandoff: 10/31/2017
  Другой пример пакетной обработки целевых объектов см. в разделе [Метаданные элементов в пакетной обработке целевых объектов](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Функции свойств с использованием метаданных  
- Пакетной обработкой можно управлять с помощью функций свойств, включающих метаданные. Например:  
+ Пакетной обработкой можно управлять с помощью функций свойств, включающих метаданные. Например, примененная к объекту директива  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
  использует <xref:System.IO.Path.Combine%2A> для объединения пути к корневой папке с путем элемента компиляции.  
   
- Функции свойств не могут находиться внутри значений метаданных.  Например:  
+ Функции свойств не могут находиться внутри значений метаданных.  Например, примененная к объекту директива  
   
  `%(Compile.FullPath.Substring(0,3))`  
   

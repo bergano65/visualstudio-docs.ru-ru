@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7f7b0858ec112bd78a0f2da6c9c6923414ada5e7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f12faac7a8c9e8ffdf9ef33716be4a87dad5dd96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>Задача CreateVisualBasicManifestResourceName
 Создает имя манифеста в стиле [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] на основе заданного имени RESX-файла или другого ресурса.  
@@ -32,10 +33,10 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры [задачи CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md).  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`ManifestResourceNames`|Выходной параметр <xref:Microsoft.Build.Framework.ITaskItem> `[]`, доступный только для чтения.<br /><br /> Итоговые имена манифестов.|  
-|`ResourceFiles`|Обязательный параметр `String`.<br /><br /> Имя файла ресурсов, на основе которого создается имя манифеста [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].|  
+|`ResourceFiles`|Обязательный параметр `String` .<br /><br /> Имя файла ресурсов, на основе которого создается имя манифеста [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].|  
 |`RootNamespace`|Необязательный параметр `String` .<br /><br /> Корневое пространство имен файла ресурсов, которое обычно берется из файла проекта. Может иметь значение `null`.|  
 |`PrependCultureAsDirectory`|Необязательный параметр `Boolean` .<br /><br /> Если `true`, имя языка и региональных параметров добавляется в имя папки перед именем ресурса манифеста. Значение по умолчанию — `true`.|  
 |`ResourceFilesWithManifestResourceNames`|Необязательный параметр вывода `String`, доступный только для чтения.<br /><br /> Возвращает имя файла ресурса, содержащее имя ресурса манифеста.|  

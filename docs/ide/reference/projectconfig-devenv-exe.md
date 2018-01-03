@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 954d2807e510e43e0931070335dce5f92d5c2464
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6069ed9b15ed49f2f7c7a5113f1377cebdd031fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 Указывает конфигурацию сборки проекта, применяемую при сборке, очистке, перестроении или развертывании проекта, указанного в аргументе `/project`.  
@@ -53,13 +54,13 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  Указывает, что проект должен быть развернут после сборки или перестроения.  
   
  `SolnConfigName`  
- Обязательный. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.  
+ Обязательно. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.  
   
  `SolutionName`  
- Обязательный. Полный путь и имя для файла решения.  
+ Обязательно. Полный путь и имя для файла решения.  
   
  /project `ProjName`  
- Необязательно. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
+ Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
   
  /projectconfig `ProjConfigName`  
  Необязательно. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.  

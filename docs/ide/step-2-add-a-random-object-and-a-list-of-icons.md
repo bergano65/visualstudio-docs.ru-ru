@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d61602ce6c1542e746f54ecebc8576326e5e6889
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9767bae7aaa7a4dcadd425cbccdde6ec56af5646
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Шаг 2. Добавление случайного объекта и списка значков
 На этом шаге будет создан набор парных символов для игры. Каждый символ добавляется в две случайные ячейки в TableLayoutPanel в форме. Для этого используются два оператора `new`, создающие два объекта. Первый является объектом `Random`. Такой же объект использовался в игре "Математическая головоломка". Он используется в этом коде для случайного выбора ячейки в TableLayoutPanel. Второй объект, который может показаться вам новым, это объект `List`, используемый для хранения случайно выбранных символов.  

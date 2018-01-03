@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aaa76694a60aad5c8bfcc2dd6d26feac03ab6e1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd9959d6883eec10f048733d3119206cc5dea3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Выбор элементов панели элементов, компоненты WPF
 На этой вкладке диалогового окна **Выбор элементов панели элементов** отображается список элементов управления Windows Presentation Foundation (WPF), доступных на локальном компьютере. Чтобы открыть этот список, выберите **Выбор элементов панели элементов** из меню **Сервис** для отображения диалогового окна **Выбор элементов панели элементов**, а затем выберите его вкладку **Компоненты WPF**. Для сортировки списка компонентов следует щелкнуть заголовок любого столбца.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/02/2017
 
 Столбцы на вкладке **Компоненты WPF** содержат следующие сведения:  
 
-Имя  
+name  
 Выводит список имен элементов управления WPF, для которых имеются записи в реестре вашего компьютера.  
 
 Пространство имен  

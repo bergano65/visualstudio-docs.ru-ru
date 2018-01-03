@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7aba2366893e188107632e5b8393fff79c0a5f82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b1aa3a18f8632890cd41a5ee7cb64e3d7c744888
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-keep-pairs-visible"></a>Шаг 7. Отмена исчезновения пар значков
 Игра работает правильно, пока игрок выбирает только пары значков, которые не совпадают. Но давайте посмотрим, что произойдет, когда игрок выберет совпадающую пару. Вместо того чтобы значки исчезали благодаря включению таймера (с помощью метода `Start()`), игра должна сбрасываться и больше не отслеживать метки с помощью ссылочных переменных `firstClicked` и `secondClicked`. Но цвета двух меток, которые были выбраны, не должны сбрасываться.  

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 744e3031c94a3b152728000e7c5425f85fb9e9ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c938f5effc963fa881506f55d0e4b271ae3a914
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Общие шаблоны для неправильно работающих многопоточных приложений
 Визуализатор параллелизма помогает разработчикам визуализировать поведение многопоточного приложения. В этом средстве предусмотрена коллекция общих шаблонов для нескольких многопоточных приложений с неправильным поведением. В коллекции содержатся типичные узнаваемые визуальные шаблоны, которые реализуются с помощью данного средства, а также объяснение поведения, представленного каждым шаблоном, вероятный результат такого поведения и наиболее распространенные способы его устранения.  

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e1be9c268826c64d775d56904dfdb1f3cd1bc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ae2bfdc41e3ce9901f91887f805298f13aa4fe8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="measure-mode-onoff"></a>Режим измерения (вкл/выкл)
 Используя этот инструмент, можно точно измерять длительность времени на временной шкале. Чтобы включить режим измерения, нажмите кнопку измерения (со значком линейки), а затем перетащите указатель по временной шкале. По мере перетаскивания обратите внимание на то, что область под указателем выделяется желтым цветом, а измеренное время отображается на панели инструментов справа от кнопки. Это значение вычисляется динамически по мере перетаскивания, так что можно сразу увидеть продолжительность того или иного события. Если отпустить кнопку мыши, значение времени останется видимым.  
@@ -28,4 +29,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>См. также  
  [Управление каналами](../profiling/manage-channels.md)   
  [Элемент управления масштабом (представление "Потоки")](../profiling/zoom-control-threads-view.md)   
- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+ [Представление потоков](../profiling/threads-view-parallel-performance.md)

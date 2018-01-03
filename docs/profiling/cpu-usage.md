@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe80e2ab5816a22e956e2e5ad12a6ceee988df4b
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eabbb315d03a6ba69d80d46276b0b6dff5846693
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage"></a>Анализ использования ЦП
 Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Использование ЦП** показывает, где ЦП тратит время при выполнении кода Visual C++, Visual C#/Visual Basic и JavaScript. Начиная с версии Visual Studio 2015 с обновлением 1 можно просматривать разбивку загрузки ЦП по функциям, не выходя из отладчика. Во время отладки можно включать и выключать профилирование ЦП и просматривать результаты при остановке выполнения, например в точке останова.  

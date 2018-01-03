@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3234206f72e1ed6cb1e4aa46aad431bac046835
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad450688e8399ef247333685f95423e5fab7bec8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="watch-command"></a>Команда Watch
 Создает и открывает указанный экземпляр окна **Контрольное значение** . Окно **Контрольные значения** можно использовать для вычисления значений переменных, выражений и регистров, чтобы изменять эти значения и сохранять результаты.  
@@ -33,7 +34,7 @@ Debug.Watch[index]
   
 ## <a name="arguments"></a>Аргументы  
  `index`  
- Обязательный. Номер экземпляра окна контрольных значений  
+ Обязательно. Номер экземпляра окна контрольных значений  
   
 ## <a name="remarks"></a>Примечания  
  Значение `index` должно быть целым числом. Допустимые значения: 1, 2, 3 и 4.  

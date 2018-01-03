@@ -25,15 +25,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e39cdb06c0de1a664b3c0c698aeee2e8d7476119
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 
-IntelliSense — это общий термин для нескольких возможностей: "Список членов", "Сведения о параметрах", "Краткие сведения" и "Завершить слово". Эти функции помогают получать дополнительные сведения об используемом коде, отслеживать параметры при вводе и добавлять вызовы свойств и методов путем нескольких нажатий клавиш.
+IntelliSense — это общий термин для нескольких возможностей: "Список членов", "Сведения о параметрах", "Краткие сведения" и "Завершить слово". Эти возможности помогают получать дополнительные сведения об используемом коде, отслеживать параметры при вводе и добавлять вызовы свойств и методов путем нескольких нажатий клавиш.
 
 Многие аспекты IntelliSense зависят от конкретного языка. Дополнительные сведения об IntelliSense для различных языков приведены в разделах, перечисленных в подразделе [См. также](#see-also).
 

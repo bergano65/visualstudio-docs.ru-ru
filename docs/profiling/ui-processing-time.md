@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af141426c0854edcbb7772aebcd87250f4730f6f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8171fa96848aa53fb151ed4d4701268308e4ad1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ui-processing-time"></a>Время обработки пользовательского интерфейса
 Эти сегменты на временной шкале связаны с периодами блокирования, отнесенными к категории "Обработка UI". Это означает, что поток переносит сообщения Windows или выполняет другие операции пользовательского интерфейса. В это время поток был заблокирован в интерфейсе API, который визуализатор параллелизма интерпретирует как обработку пользовательского интерфейса. К этой группе относятся такие интерфейсы API, как `GetMessage()` и `MsgWaitForMultipleObjects()`.  

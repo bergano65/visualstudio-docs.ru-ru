@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd95d18cfbf1ce04c1178a0befbc8cbf7613862e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="file-properties-javascript"></a>Свойства файлов (JavaScript)
 Свойства файлов можно использовать, чтобы указать, какие действия с файлами должны выполняться системой проекта. Например, можно задать свойства файла, чтобы указать, что файл необходимо добавить в пакет как файл ресурсов.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/02/2017
 ### <a name="file-version"></a>Версия файла  
  Отображает версию файла ссылки.  
 
-### <a name="identity"></a>Удостоверение  
+### <a name="identity"></a>идентификации  
  Отображает удостоверение ссылки, используемое в проекте, которое хранится в файле проекта.  
 
 ### <a name="package"></a>Пакет  

@@ -11,11 +11,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010
 Тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, которые созданы в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] с пакетом обновления 1 (SP1), автоматически восстанавливаются при открытии их в Visual Studio 2012 или более поздней версии. Если тестовые проекты помещаются в систему управления версиями, файлы проектов извлекаются для этого восстановления. После восстановления эти тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, можно использовать в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  

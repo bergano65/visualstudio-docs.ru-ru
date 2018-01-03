@@ -15,18 +15,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 95ffd0009e50f01e40a3182bfbf6c8c6947836c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66bd8d44fdd7ddfed502b72dcb60853fb63d3671
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
 Вы можете ознакомиться с дополнительными сведениями о способах настройки и изменения свойств проекта.  
   
 ## <a name="project-properties-pages"></a>Страницы свойств проекта  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Страница "Приложение" в конструкторе проектов (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].|  
 |[Страница "Приложение" в конструкторе проектов (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].|  

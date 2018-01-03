@@ -12,11 +12,12 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: f384722161ff46a193c1492698ab9ef7543eaefc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Инструменты, сценарии и возможности тестирования для разработчика
 
@@ -88,14 +89,14 @@ IntelliTest значительно сокращает усилия, необхо
 
 * [Приступая к работе с модульным тестированием](unit-test-your-code.md)
 * [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md)
-* [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+* [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
 * [Установка платформ модульного тестирования сторонних поставщиков](install-third-party-unit-test-frameworks.md)
 
 Visual Studio является расширяемой системой и позволяет использовать сторонние адаптеры модульного тестирования, такие как NUnit и xUnit.net. Кроме того, функция клонов кода обеспечивает высокое качество программного обеспечения, помогая определить блоки семантически сходного кода, которые являются кандидатами для совместного исправления ошибок или рефакторинга.
 
 ![Интеграция тестов сторонних разработчиков](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>См. также:
+## <a name="see-also"></a>См. также
 
 * [Приступая к работе с модульным тестированием](getting-started-with-unit-testing.md)
 * [Ускорение модульных тестов в Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)

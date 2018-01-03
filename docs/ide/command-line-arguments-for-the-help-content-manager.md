@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fa94458b1b3b02e2df666af099d97bb7e115c22
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Аргументы командной строки для диспетчера содержимого справки
 Можно указать способ развертывания и управления локальным содержимым справки с помощью аргументов командной строки для диспетчера содержимого справки (HlpCtntMgr.exe). Сценарии для этого средства командной строки необходимо выполнять с разрешениями администратора, кроме того, невозможно выполнить эти сценарии в качестве службы. С помощью этого средства можно выполнить следующие задачи.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 11/07/2017
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  
 ```  
   
-Например:  
+Пример:  
   
 ```  
 hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha  

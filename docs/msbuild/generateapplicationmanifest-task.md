@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 79e8958ca5e2e75ed62da63f52bdac5b0f3b5043
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0ae1ff71e2fb304849b70222fec7a4ce85c0560
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateapplicationmanifest-task"></a>Задача GenerateApplicationManifest
 Создает манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="item-metadata"></a>Метаданные элементов  
   
-|Имя метаданных|Описание|  
+|Имя метаданных|Описание:|  
 |-------------------|-----------------|  
 |`DependencyType`|Указывает, публикуется и устанавливается ли зависимость с приложением или необходимым условием. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Значение по умолчанию — Install.|  
 |`AssemblyType`|Указывает, является ли зависимость управляемой или машинной сборкой. Эти метаданные допустимы для всех зависимостей, но не используются для файлов. Допустимые значения для этих метаданных:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> Значение `Unspecified` используется по умолчанию и указывает, что манифест определяет тип сборки автоматически.|  

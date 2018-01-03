@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer"></a>Окно справки (Майкрософт)
 Вы можете установить и просмотреть материалы для различных продуктов и технологий на локальном компьютере, включая Visual Studio, .NET Framework, справочник по языку, SQL Server и описание разработки для Windows, используя окно справки (Майкрософт). Окно справки позволяет вам:  
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/07/2017
 
 ### <a name="navigation-tabs"></a>Вкладки навигации
 
-|Вкладка|Описание|
+|Вкладка|Описание:|
 |---|-----------|
 |Описание|Отображает установленное содержимое в виде иерархии (оглавление). Вы можете указать условия для фильтрации отображаемых заголовков.|
 |Индекс|Отображает список индексированных терминов в алфавитном порядке. Вы можете выполнить поиск по индексу, указать критерии для фильтрации записей и потребовать, чтобы записи индекса содержали указанный текст или начинались с него.|

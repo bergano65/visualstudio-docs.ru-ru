@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9360cce21ab859e962734e240977c67627b8739f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 614ace0800393b6c584da4cf4d85edfa7ea11b33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatetrustinfo-task"></a>Задача GenerateTrustInfo
 Создает доверие к приложению из базового манифеста и из параметров `TargetZone` и `ExcludedPermissions`.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `GenerateTrustInfo` .  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`ApplicationDependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает зависимые сборки.|  
 |`BaseManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает базовый манифест, на основе которого будет сформировано доверие к приложению.|  

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35d062e3ab0cae690cb6242f132a20c53604cd0c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f706ca6fcaba9d1f5423fee3f32eefdaca163b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Специальные возможности в окне справки
 Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В этот раздел входит информация о возможностях, продуктах и службах, помогающих предоставить окно справки (Майкрософт) для людей с разными физическими возможностями.  

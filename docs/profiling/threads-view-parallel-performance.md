@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Представление "Потоки" (параллельная производительность)
 Представление "Потоки" является наиболее полным и функциональным представлением визуализатора параллелизма. С помощью этого представления можно определить, выполняются ли потоки или они блокированы в результате синхронизации, ввода-вывода или по какой-либо другой причине.  

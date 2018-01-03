@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9be05b63169d155f7e1662112ca119422ddbc1a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Практическое руководство. Подписание манифестов приложения и развертывания
 Если вы хотите опубликовать приложение с помощью развертывания ClickOnce, манифесты приложения и развертывания должны быть подписаны парой из открытого и закрытого ключей с использованием технологии Authenticode. Манифесты можно подписать с помощью сертификата из хранилища сертификатов Windows или файла ключа.  

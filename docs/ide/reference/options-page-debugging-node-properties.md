@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6bb51d32ea249ba573733babcb7c9ed0cf0dde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-debugging-node-properties"></a>Страница "Параметры", свойства узла отладки
 В следующих таблицах описываются некоторые из страниц (или коллекций свойств), связанных с категорией **отладки** — `DTE.Properties("Debugging", <Property Page>)` — диалогового окна **Параметры**.  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="just-in-time"></a>JIT  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|Имя элемента свойства|Значение|Описание|  
+|Имя элемента свойства|Значение|Описание:|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (Boolean)|Определяет, включена ли JIT-отладка для управляемого кода.|  
 |JitNative|Get/Set (Boolean)|Определяет, включена ли JIT-отладка для машинного кода.|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="native"></a>машинный код;  
  `DTE.Properties("Debugging", "Native")`  
   
-|Имя элемента свойства|Значение|Описание|  
+|Имя элемента свойства|Значение|Описание:|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (Boolean)|Определяет, загружает ли отладчик таблицы экспорта библиотеки DLL.|  
 |EnableRPC|Get/Set (Boolean)|Определяет, может ли отладчик войти в удаленные вызовы процедур COM.|  

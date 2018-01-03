@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b2b66091c84606739b96f3aeca0b99fbaa2e950
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80464b6f2dc0f61061dbb3fdceb8bae8ec4449c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="message-task"></a>Задача Message
 Записывает сообщения в журнал в процессе сборки.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`Importance`|Необязательный параметр `String` .<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|  
+|`Importance`|Необязательный параметр `String` .<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|  
 |`Text`|Необязательный параметр `String` .<br /><br /> Текст ошибки для записи в журнал.|  
   
 ## <a name="remarks"></a>Примечания  

@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 С фрагментами кода [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] можно использовать три функции. Функции указываются в элементе [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) фрагмента кода. Сведения о создании фрагментов кода см. в разделе [Фрагменты кода](../ide/code-snippets.md).  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="functions"></a>Функции  
  Следующая таблица описывает функции, доступные для использования с элементом `Function` во фрагментах кода.  
   
-|Функция|Описание|Язык|  
+|Функция|Описание:|Язык|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  

@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5beb7a3db1e62937435ed7379c5f02e77c4f0795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 474b7c0167b02665a5bc2ff5c1297f768facbc32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>Создание отчетов профилировщика из командной строки
 Программа командной строки **VSPerfReport** позволяет создавать отчеты в формате XML или данных с разделителями-запятыми (CSV) из файлов данных профилирования (VSP). Типы отчетов VSPerfReport точно соответствуют табличным представлениям интерфейса для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Вы можете отфильтровать отчет, чтобы отобразить только ваш код и только сегмент файла данных профилирования. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  

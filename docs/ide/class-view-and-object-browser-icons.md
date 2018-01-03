@@ -19,28 +19,29 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b20e30cc983d6dd809daa264e4fedbb3a879386
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="class-view-and-object-browser-icons"></a>Значки представления классов и обозревателя объектов
 
 **Представление классов** и **обозреватель объектов** отображают значки, представляющие сущности кода, например пространства имен, классы, функции и переменные. Эти значки описаны в приведенной ниже таблице.
 
-|Значок|Описание|Значок|Описание|
+|Значок|Описание:|Значок|Описание:|
 |----------|-----------------|----------|-----------------|
 |![Символ пространства имен](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Пространство имен|![Символ объявления](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Метод или функция|
 |![Значок класса](../ide/media/vxclass_icon.gif "vxClass_Icon")|Класс|![Символ оператора](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|Оператор|  
-|![Символ интерфейса без описания операций](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Интерфейс|![Символ свойства](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Свойство|
+|![Символ интерфейса без описания операций](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Интерфейс|![Символ свойства](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Свойство.|
 |![Символ структуры](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Структура|![Значок поля](../ide/media/vxfield_icon.gif "vxField_Icon")|Поле или переменная|  
-|![Символ объединения](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Объединение|![Символ события](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Событие|  
+|![Символ объединения](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Объединение|![Символ события](../ide/media/vxevent_icon.gif "vxEvent_Icon")|событие|  
 |![Символ перечисления](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![Значок константы](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Константа|  
 |![Символ определения типа](../ide/media/vxtypedef_icon.gif "vxTypeDef_Icon")|TypeDef|![Символ элемента перечисления](../ide/media/vxenumitem_icon.gif "vxEnumItem_Icon")|Элемент перечисления|  
-|![Символ модуля Visual Studio](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Модуль|![Символ элемента сопоставления](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|Элемент сопоставления|  
+|![Символ модуля Visual Studio](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Module|![Символ элемента сопоставления](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|Элемент сопоставления|  
 |![Символ метода расширения](../ide/media/extensionmethod.gif "ExtensionMethod")|Метод расширения|![Символ объявления](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Внешнее объявление|  
-|![Символ делегата](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|Делегат|![Значок ошибки для представления классов и обозревателя объектов](../ide/media/erroricon.gif "ErrorIcon")|Ошибка|  
+|![Символ делегата](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|делегат|![Значок ошибки для представления классов и обозревателя объектов](../ide/media/erroricon.gif "ErrorIcon")|Error|  
 |![Символ исключения](../ide/media/vxexception_icon.gif "vxException_Icon")|Исключение|![Символ шаблона](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Шаблон|  
 |![Символ сопоставления](../ide/media/vxmap_icon.gif "vxMap_Icon")|Карта|![Символ восклицательного знака при ошибке](../ide/media/vxerror_icon.gif "vxError_Icon")|Неизвестно|  
 |![Символ перенаправления типов](../ide/media/ob_type_forward.gif "ob_type_forward")|Перенаправление типов|||  
@@ -49,7 +50,7 @@ ms.lasthandoff: 12/07/2017
 
 Приведенные ниже сигнальные значки применяются ко всем перечисленным выше значкам и указывают их доступность.
 
-|Значок|Описание|
+|Значок|Описание:|
 |----------|-----------------|  
 |\<Без сигнального значка>|Общедоступный. Доступен из любой части этого компонента, а также из любого компонента, который на него ссылается.|  
 |![Сигнальный символ "Защищенный"](../ide/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|Защищенный. Доступен из содержащего класса или типа, а также из производных от них классов и типов.|  

@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 003e4abaf5e6fbabead604c495b2018402cf74ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cf3f299f2b5ec2e38b5fe0315b6d0abc0411b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-configurations"></a>Общие сведения о конфигурациях построения
 Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка**, **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.  

@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Профилирование в кластерах высокопроизводительных вычислительных систем (HPC)
 Профилирование вычислительных узлов кластеров Microsoft Windows HPC можно выполнять методом выборки средств профилирования [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] или [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)]. Дополнительные сведения о HPC см. в разделе [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) на странице веб-сайта корпорации Майкрософт.  
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="hpc-launch-properties"></a>Свойства запуска HPC  
   
-|Свойство|Описание|  
+|Свойство.|Описание:|  
 |--------------|-----------------|  
 |**Головной узел**|Задает компьютер, выполняющий функцию головного узла HPC в сеансе профилирования.|  
 |**Число процессов**|Задает число экземпляров приложения, которые необходимо запустить в профилируемом приложении.|  
@@ -137,7 +138,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="advanced-properties"></a>Дополнительные свойства  
   
-|Свойство|Описание|  
+|Свойство.|Описание:|  
 |--------------|-----------------|  
 |**Имя проекта**|Имя текущего проекта или решения [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].|  
 |**Выполнить очистку после остановки профилировщика**|Если этот параметр активен, удаляет двоичные файлы, развернутые в каталоге выполнения. Файлы и каталоги, созданные пользовательской программой, на этом этапе не удаляются. Если каталог выполнения и каталог развертывания были созданы интерфейсом IDE, IDE пытается их удалить, однако если в этих каталогах есть файлы, развернутые не интерфейсом IDE, он этого не делает.|  

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6eaf5d77da1dbc6e005764087dad338458e7ce8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bba20817c03b7ff542c3af11a440ad8e619f5567
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="print-command"></a>Команда Print
 Вычисляет выражение или отображает указанный текст.  
@@ -34,7 +35,7 @@ Debug.Print text
   
 ## <a name="arguments"></a>Аргументы  
  `text`  
- Обязательный. Вычисляемое выражение или отображаемый текст.  
+ Обязательно. Вычисляемое выражение или отображаемый текст.  
   
 ## <a name="remarks"></a>Примечания  
  Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда  

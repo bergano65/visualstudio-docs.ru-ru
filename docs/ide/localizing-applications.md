@@ -18,16 +18,17 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55e4156552c58f7505ec8a497d7ebb9d6d3f2c94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c389f8dd13514d940941bcefc228236b3418e317
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-applications"></a>Локализация приложений
 *Локализация* — это процесс адаптации приложения для носителей определенного языка и культуры. Этот процесс состоит главным образом из перевода пользовательского интерфейса.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Иерархическая организация ресурсов для локализации](../ide/hierarchical-organization-of-resources-for-localization.md)  
  Описывает, как осуществляется хранение локализованных ресурсов и доступ к ним в Visual Studio.  
   

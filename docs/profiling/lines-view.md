@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa6492447650be1b7ab9db1725b7146fa808ecc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3b645a6cee08f1b27e353f01aaedcbc258d6d98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view"></a>Представление строк
 Представление "Строки" доступно только для данных профилировщика, собранных с использованием метода выборки. Представление недоступно для данных, собранных с использованием инструментирования.  
@@ -47,4 +48,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>См. также  
  [Представление "Строки"](../profiling/lines-view-sampling-data.md)   
  [Представление "Строки" — выборка](../profiling/lines-view-dotnet-memory-sampling-data.md)   
- [Представление строк](../profiling/lines-view-contention-data.md)
+ [Представление "Строки"](../profiling/lines-view-contention-data.md)

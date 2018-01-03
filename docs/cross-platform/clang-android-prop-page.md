@@ -44,15 +44,16 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Свойства проекта Clang (Android C++)
 
-Свойство | Описание | Варианты
+Свойство. | Описание: | Варианты
 --- | ---| ---
 Дополнительные каталоги включаемых файлов | Задает один или несколько каталогов для добавления в качестве пути включения; несколько значений разделяются точками с запятой. (-I[path]).
 Формат отладочной информации | Определяет тип отладочной информации, создаваемой компилятором. | **Нет** — отладочная информация не создается для ускорения компиляции.<br>**Полная отладочная информация (DWARF2)** — создание отладочной информации DWARF2.<br>**Информация о номерах строк** — создание информации только о номерах строк.<br>

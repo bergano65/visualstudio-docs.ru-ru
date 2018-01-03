@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 337bf9a33f781046f0713dbb52a72412229dcd17
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 515aefab86a0a047d7074d127d9dd621feb0117c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Практическое руководство. Создание шейдера текстуры с использованием оттенков серого
 В этом документе показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера текстуры с использованием оттенков серого. Этот шейдер изменяет значение цвета RGB в образце текстуры, а затем использует его вместе с неизмененным значением альфа-фактора, чтобы задать окончательный цвет.  

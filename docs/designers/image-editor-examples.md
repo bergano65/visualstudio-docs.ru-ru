@@ -12,18 +12,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b69e225bf4d7273e4e9ff1a33a1b5c4e8e332ebf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c257b39f6bb320ce39ca34278d6eff29a3f4615
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor-examples"></a>Примеры редактора изображений
 Статьи в этом разделе документации содержат примеры, которые демонстрируют, как можно использовать редактор изображений.  
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Практическое руководство. Создание простейшей текстуры](../designers/how-to-create-a-basic-texture.md)|Демонстрирует создание простейшей текстуры.|  
 |[Практическое руководство. Экспорт текстуры для использования с приложениями Direct2D или Javascipt](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Демонстрирует создание текстуры в формате DDS с предварительным умножением альфа-канала, которую можно использовать в приложении Direct2D или WWA.|  

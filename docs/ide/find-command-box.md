@@ -12,11 +12,12 @@ helpviewer_keywords: Find/Command box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fa54e65ed581d547d7e4a0c6c5d1c1e0908c0ca
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="findcommand-box"></a>Поиск/Команда - окно
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 12/07/2017
 
 ## <a name="searching-for-text"></a>Поиск текста
 
-После ввода текста в поле **Найти/Команда** и нажатия клавиши **ВВОД** среда Visual Studio по умолчанию выполняет поиск в текущем документе или окне инструментов с использованием параметров, указанных в диалоговом окне **Поиск в файлах**. Дополнительные сведения см. в разделе [Finding and Replacing Text](../ide/finding-and-replacing-text.md) (Поиск и замена текста).
+После ввода текста в поле **Найти/Команда** и нажатия клавиши **ВВОД** среда Visual Studio по умолчанию выполняет поиск в текущем документе или окне инструментов с использованием параметров, указанных в диалоговом окне **Поиск в файлах**. Для получения дополнительной информации см. [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Ввод команд
 

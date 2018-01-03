@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 652d69ed30c101e7ea8d9b85d9b71e597975d555
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 8cd00fe33cf463227dd09f93047350a96cee3b92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Работа с Python в Visual Studio
 
@@ -32,7 +32,7 @@ Visual Studio для Windows предоставляет средства [с о�
 - Пройдите учебник [Работа с Python в Visual Studio](vs-tutorial-01-01.md), в котором описывается вся процедура.
 - Затем воспользуйтесь приведенными ниже ссылками, чтобы изучить функции, связанные с Python, и возможности самой среды Visual Studio.
 
-| Функция | Описание | Документация по общим возможностям Visual Studio | 
+| Функция | Описание: | Документация по общим возможностям Visual Studio | 
 | --- | --- | --- |
 | [Система проектов Visual Studio](python-projects.md) | Неявным образом собирает структуру папок кода Python, поддерживая явное управление для выявления кода приложения, тестового кода, веб-страниц, JavaScript, скриптов сборки и т. д. | [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Шаблоны проектов](python-projects.md#project-templates) | Быстро создает структуру проектов для консольных приложений, веб-приложений, Azure, обработки и анализа данных и других типов проектов. | [Шаблоны Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |

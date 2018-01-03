@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f83fbf1427951057f2154e032fb58b178c8b39fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8eb0efae140613c6caa7bd71d72e0ce4cda37db8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-command"></a>Команда Start
 Начинает отладку запускаемого проекта.  
@@ -33,7 +34,7 @@ Debug.Start [address]
   
 ## <a name="arguments"></a>Аргументы  
  `address`  
- Необязательно. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.  
+ Необязательный. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.  
   
 ## <a name="remarks"></a>Примечания  
  При запуске команды **Запустить** она выполняет операцию RunToCursor по указанному адресу.  

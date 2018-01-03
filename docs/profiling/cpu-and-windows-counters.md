@@ -16,16 +16,17 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d22300bc675de5074497589af53b304b9a1caa4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 Профилировщик Visual Studio позволяет собирать данные о производительности, которые были сформированы операционной системой (счетчиками Windows), и данные о производительности, которые были сформированы процессором (счетчиками ЦП).  
   
- **Requirements**  
+ **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/11/2017
   
          **Примечание.** Нажмите кнопку **Отмена**, чтобы вернуться к предыдущей конфигурации выборки.  
   
-     -или-  
+     - или -  
   
     -   Выберите **Счетчики ЦП**, а затем — **Сбор данных счетчиков ЦП**. Счетчики ЦП отображаются в списке **Доступные счетчики**.  
   

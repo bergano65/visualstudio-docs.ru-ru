@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 879af047f09e34cf2d0f56e15ba786f7bb0562e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c7cf60293ca2d0a0ebd18dc9715d2954bd1128b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
 На данном шаге производится добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Затем на форму добавляются кнопки.  

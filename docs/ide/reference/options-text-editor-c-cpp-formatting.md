@@ -10,18 +10,19 @@ ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
-dev_langs: C++
+dev_langs: CPP
 helpviewer_keywords: Text Editor Options dialog box, formatting
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 081dc1215b0e8ac026455a5449761ce103c35551
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 5a96a88ca7edd21989764c843f57c01a7bf03b0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
 Позволяет изменять поведение по умолчанию редактора кода при написании программ на языках C и C++.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
  **Выделение совпадающих лексем**  
  Когда курсор находится рядом с фигурной скобкой, редактор может выделить парную скобку, что позволяет более удобным образом просматривать содержащийся внутри код.  
   
-## <a name="outlining"></a>Структура  
+## <a name="outlining"></a>структуризация  
  **Переходить в режим структурирования после открытия файлов**  
  При помещении файла в текстовый редактор можно включить возможность структурирования. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md). Если выбран этот параметр, возможность структурирования будет включаться при открытии файла.  
   

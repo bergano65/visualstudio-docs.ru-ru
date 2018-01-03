@@ -15,16 +15,17 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contention-data-views"></a>Представления данных о конфликтах ресурсов
 В этом разделе содержатся справочные сведения о представлениях и отчетах по файлам данных профилировщика, содержащих данные профилирования состязаний потоков.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Сводное представление —-данные профилировщика по состязаниям](../profiling/resource-contention-data-views.md)  
  Отображает графическую временную шкалу данных профилирования, а также список функций и ресурсов, задействованных в большинстве событий блокировки.  
   
@@ -49,10 +50,10 @@ ms.lasthandoff: 10/31/2017
  [Представление состязаний за ресурсы](../profiling/resource-contentions-view-contention-data.md)  
  Содержит список данных по состязаниям за ресурсы по заблокированным ресурсам.  
   
- [Представление строк](../profiling/lines-view-contention-data.md)  
+ [Представление "Строки"](../profiling/lines-view-contention-data.md)  
  Содержит список данных по состязаниям за ресурсы по строкам исходного кода.  
   
- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-contention-data.md)  
+ [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Содержит список состязаний за ресурсы по инструкциям.  
   
  [Представление "Процесс"](../profiling/process-view-contention-data.md)  

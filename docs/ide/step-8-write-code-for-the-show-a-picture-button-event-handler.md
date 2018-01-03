@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: aab9138f4dc47395764607c3783df76b8708212b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b7c76492e3d07b0c32edb4ea91a5b3c152f1a206
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
 На этом шаге выполняется создание кнопки **Показать рисунок**, которая работает следующим образом.  

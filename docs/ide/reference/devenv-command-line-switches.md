@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a22ac991b88dd62c91a9bf08f5397fe80e4ae37d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f06722f4a6192323d92ce6828b25bc57666de8bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для команды Devenv
 Команда Devenv позволяет задавать из командной строки различные параметры для интегрированной среды разработки (IDE), а также для сборки, отладки и развертывания проектов. Используйте эти параметры для запуска IDE из файла скрипта или из BAT-файла, например скрипта сборки программы в ночное время, либо для запуска IDE в особой конфигурации.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="devenv-switches"></a>Параметры команды Devenv  
  Используйте перечисленные ниже параметры командной строки для отображения интегрированной среды разработки и выполнения описанных задач.  
   
-|Параметр командной строки|Описание|  
+|Параметр командной строки|Описание:|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|Запускает среду IDE и выполняет указанную команду.|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|Загружает исполняемый файл [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] под управлением отладчика. Этот параметр недоступен для исполняемых файлов [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Дополнительные сведения см. в разделе [Автоматический запуск процесса в отладчике](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
  Используйте перечисленные ниже параметры командной строки для выполнения описанных задач. Эти параметры командной строки не отображают интегрированную среду разработки.  
   
-|Параметр командной строки|Описание|  
+|Параметр командной строки|Описание:|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Отображает справку по параметрам devenv в **окне командной строки**.<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Выполняет сборку указанного решения или проекта согласно конфигурации заданного решения.<br /><br /> **Devenv myproj.csproj /build**|  

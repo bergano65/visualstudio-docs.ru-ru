@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f477577f7c1ef95f03f5f68bf93e11a0f8b6488
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 4aa6d790276cf6dd125fc94d02685a91f50525ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-library-reference"></a>Справочник по библиотеке C++
 В этом разделе приводятся справочные сведения о пакете SDK визуализатора параллелизма.  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  В стандарте языка C++ использование идентификаторов, начинающихся с символа подчеркивания (`_`), зарезервировано для таких реализаций, как библиотеки. Не используйте в коде имена, начинающиеся с символа подчеркивания. Поведение элементов кода, имена которых соответствуют этому соглашению, не гарантируется и может быть изменено в будущем. По этим причинам такие элементы кода исключены из этой документации.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Пространство имен Concurrency (визуализатор параллелизма)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
 ## <a name="see-also"></a>См. также  

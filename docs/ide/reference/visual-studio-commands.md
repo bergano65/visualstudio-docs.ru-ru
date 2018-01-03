@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  Приведенные ниже команды принимают аргументы и/или параметры.  
   
-|Имя команды|Описание|  
+|Имя команды|Описание:|  
 |------------------|-----------------|  
 |[Добавление существующего элемента](../../ide/reference/add-existing-item-command.md)|Добавляет существующий файл в текущее решение и открывает его.|  
 |[Добавить существующий проект](../../ide/reference/add-existing-project-command.md)|Добавляет существующий проект в текущее решение.|  

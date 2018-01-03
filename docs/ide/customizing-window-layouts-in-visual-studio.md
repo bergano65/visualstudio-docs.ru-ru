@@ -27,11 +27,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Настройка макетов окон в Visual Studio
 В Visual Studio можно настроить расположение, размер и поведение окон, что позволит создать макеты окон, оптимально подходящие для различных рабочих процессов разработки. После того как макет будет настроен, интегрированная среда разработки запомнит его. Например, если после изменения места прикрепления окна **обозревателя решений** закрыть Visual Studio, во время следующего запуска окно **обозревателя решений** будет закреплено в том же месте, даже если работа будет продолжена на другом компьютере. Настраиваемому макету также можно присвоить имя, сохранить его, а затем переключаться между макетами с помощью одной команды. Например, можно создать один макет для редактирования, а другой —для отладки и переключаться между ними с помощью команды меню **Окно | Применить макет окна**.  
@@ -175,6 +176,6 @@ ms.lasthandoff: 10/31/2017
 
      Эти макеты автоматически передаются между выпусками Visual Studio, между экземплярами Blend на отдельных компьютерах и из любого выпуска Express в любую другую организацию Express. Однако макеты невозможно передавать между Visual Studio, Blend и Express.  
 
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
 
 [How to: Move Around in the IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md) (Практическое руководство. Перемещение по интегрированной среде разработки)

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd963c269ee5fe18d3f490bf85bab5dcf3afbf9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 Если для анализа файлов используется интегрированная среда разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], то при необходимости перенести VSP-файл на другой компьютер необходимо задать параметры проекта для анализа производительности таким образом, чтобы символы сохранялись или *сериализовывались* в файле отчета. Это увеличивает размер файла отчета. Сериализация символов необходима по двум причинам:  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 -   чтобы сохранить символы и обеспечить возможность переноса отчета о производительности с компьютера, на котором выполнялось профилирование. В этом случае, если отчет открывается для анализа на другом компьютере, который может иметь иные символы, выходные данные отчета не изменятся.  
   
- **Requirements**  
+ **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

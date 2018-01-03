@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7daf63f27d9c285c126e437f55d25ff674d7360f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd5ff13eec62eae238b126efd7001b1f6348551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования
 Можно указать команды, которые выполняются до или после инструментирования двоичных файлов в сеансе анализа производительности. Каждую команду, выполняемую из командной строки, можно указать как событие, предшествующее инструментированию или следующее за ним. Например, можно указать команды, которые автоматизируют повторное подписание сборки ключом строгого имени в пакетном файле, выполняемое после инструментирования двоичных файлов.  

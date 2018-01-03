@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d38ef64a370b11c2695ea1e03d2e3ceead7cb63c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 14deeec64d4645135f19587997844bfdd0b18cd5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diff"></a>/Diff
 Сравнение двух файлов. Различия отображаются в специальном окне Visual Studio.  
@@ -29,13 +30,13 @@ devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
   
 ## <a name="arguments"></a>Аргументы  
  `SourceFile`  
- Обязательный. Полный путь и имя первого файла, который следует сравнить.  
+ Обязательно. Полный путь и имя первого файла, который следует сравнить.  
   
  `TargetFile`  
- Обязательный. Полный путь и имя второго файла, который следует сравнить.  
+ Обязательно. Полный путь и имя второго файла, который следует сравнить.  
   
  `SourceDisplayName`  
- Необязательно. Отображаемое имя первого файла.  
+ Необязательный. Отображаемое имя первого файла.  
   
  `TargetDisplayName`  
- Необязательно. Отображаемое имя второго файла.
+ Необязательный. Отображаемое имя второго файла.

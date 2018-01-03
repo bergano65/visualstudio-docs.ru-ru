@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f54e50e62b7f7f8f6dd1610904b66c82da02380
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b003f4890b16a7b69f7f66f8b0ef83a0ade7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 Удаляет команды и интерфейс пользователя команд, связанный с указанной надстройкой.  
@@ -33,7 +34,7 @@ Devenv /ResetAddin AddIn
   
 ## <a name="arguments"></a>Аргументы  
  `AddIn`  
- Необязательно. Имя команды надстройки.  
+ Необязательный. Имя команды надстройки.  
   
 ## <a name="remarks"></a>Примечания  
  По умолчанию имя команды надстройки — *\<AddInSolutionName>*.Connect*.\<AddInSolutionName>*. Оно отображается в файле Connect.cs как параметр `commandName` метода `Exec`. Имя команды также можно проверить, начав вводить имя надстройки в окне "Команды" Visual Studio. Функция Intellisense закончит ввод.  

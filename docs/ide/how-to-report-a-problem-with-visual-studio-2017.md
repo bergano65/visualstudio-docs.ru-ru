@@ -11,11 +11,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Как сообщить о проблеме с Visual Studio 2017
 Если во время работы с Visual Studio возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как можно сообщить о проблеме, чтобы мы могли диагностировать и устранить ее.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/17/2017
 
 ## <a name="provide-a-screenshot-and-attachments-optional"></a>Предоставьте снимок экрана и вложения (необязательно)
 ###  <a name="provide_screenshots"></a>
- Выберите для отправки текущего экрана в Майкрософт. Можно добавить другие снимки экранов или файлы, нажав кнопку **Вложить дополнительные файлы**.  
+ Выберите для отправки текущего экрана в Майкрософт. Можно добавить другие снимки экранов или файлы, нажав кнопку **Вложить дополнительные файлы** .  
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Укажите дамп трассировки и кучи (необязательно)  
 ###  <a name="provide_a_trace_and_heap_dump"></a>  

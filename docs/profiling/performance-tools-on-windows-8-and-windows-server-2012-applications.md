@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b82860f4bdbf206441591703137f15decb294269
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
 Возможности расширенной безопасности, появившиеся в Windows 8 и Windows Server 2012, требовали значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. Этот раздел описывает изменения средств производительности, начиная с платформ Windows 8 и Windows Server 2012.
@@ -87,7 +88,7 @@ ms.lasthandoff: 12/07/2017
 ##  <a name="BKMK_Profiling_from_the_command_line"></a> Профилирование из командной строки  
  Используйте две следующие программы командной строки для сбора данных профилирования на устройствах Windows 8 и Windows Server 2012, в том числе тех, на которых не установлен Visual Studio.  
   
-|Имя программы|Описание|  
+|Имя программы|Описание:|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|Сбор данных профилирования из приложений универсальной платформы Windows и сбор данных профилирования методом выборки из классических приложений Windows 8 и приложений Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Сбор данных профилирования инструментирования, параллелизма и уровневого взаимодействия из приложений, которые выполняются на рабочем столе Windows 8 или Windows Server 2012. Сбор всех типов данных профилирования из предыдущих версий Windows.|  
@@ -138,7 +139,7 @@ ms.lasthandoff: 12/07/2017
   
  **Отчеты TIP**  
   
- Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] или [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] IDE. Получение отчетов об уровневом взаимодействии (TIP) на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступно.  
+ Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] или [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] IDE. Отчеты об уровневом взаимодействии на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступны.  
   
 ## <a name="see-also"></a>См. также  
  [Обозреватель производительности](../profiling/performance-explorer.md)   

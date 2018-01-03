@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18c417016071cc25bdccde1c85e97431f20195d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24a3f7d50d90769fe64b3657a0327eb8c96b7b42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-current-thread-command"></a>Команда Set Current Thread
 Задает указанный поток в качестве текущего.  
@@ -33,7 +34,7 @@ Debug.SetCurrentThread index
   
 ## <a name="arguments"></a>Аргументы  
  `index`  
- Обязательный. Выбирает поток по индексу.  
+ Обязательно. Выбирает поток по индексу.  
   
 ## <a name="example"></a>Пример  
   

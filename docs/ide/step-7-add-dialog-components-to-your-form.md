@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f076985edeeec43d9f5a71e0e53b3937d6b8358f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da81862b736605b93d4429e0e574ca5558a529c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Шаг 7. Добавление компонентов Dialog в форму
 Чтобы программа могла открывать графические файлы и изменять цвет фона, на данном шаге следует добавить в форму компоненты **OpenFileDialog** и **ColorDialog**.  

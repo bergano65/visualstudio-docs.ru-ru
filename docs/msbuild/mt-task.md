@@ -28,11 +28,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b0c421ca3d1e56c22cab7ff066d17d59914961c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mt-task"></a>Задача MT
 Является оболочкой для инструмента манифеста Майкрософт (mt.exe). Дополнительные сведения см. в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  В документации mt.exe в качестве префикса для параметров командной строки используется дефис (**-**), но в этом разделе используется косая черта (**/**). Допустим любой префикс.  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Необязательный параметр типа **String[]**.<br /><br /> Задает имя одного или нескольких файлов манифеста.<br /><br /> Дополнительные сведения см. в описании параметра **/manifest** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**AdditionalOptions**|Необязательный параметр типа **String**.<br /><br /> Список параметров командной строки. Например, "*/параметр1 /параметр2 /параметр#*". Этот параметр используется для указания параметров командной строки, не представленных каким-либо другим параметром задачи **MT**.<br /><br /> Дополнительные сведения см. в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  

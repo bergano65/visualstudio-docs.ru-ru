@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c2618dbaad3fcae95219e2b6a8a1f9b3d87bf09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a26dd168e83584b19a9d6ddad37496082c166f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Страница "Параметры", свойства узла "Шрифты и цвета"
 Этот документ описывает свойства шрифтов и цветов для окна инструментов, которое должно отображаться в списке **Шрифты и цвета** в категории **Среда** диалогового окна **Параметры**. Этим обеспечивается динамическая природа групп цветных элементов, которые могут меняться при установке и удалении пакетов VSPackage.  
@@ -29,15 +30,15 @@ ms.lasthandoff: 10/31/2017
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Текстовый редактор или принтер или диалоговые окна и окна инструментов  
  `DTE.Properties("FontsAndColors", "TextEditor")`  
   
- -или-  
+ - или -  
   
  `DTE.Properties("FontsAndColors", "Printer")`  
   
- -или-  
+ - или -  
   
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
-|Имя элемента свойства|Значение|Описание|  
+|Имя элемента свойства|Значение|Описание:|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (String)|Имя шрифта, например "Courier New".|  
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Значение <xref:EnvDTE.vsFontCharSet>, указывающее используемый тип кодировки, например иврит или русский язык.|  

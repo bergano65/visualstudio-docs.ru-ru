@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4beda1530fb36b4cad751c143a3a3962029f2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1986f1cf206774303ea9d3c040d7f10c05ffe491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="multiple-categories-are-present"></a>Наличие несколько категорий
 Выбран раздел, который содержит более одного вида операций за указанный диапазон времени. Обратите внимание на то, что два цвета отображаются вертикально друг над другом. Эти цвета обозначают две наиболее частые операции за указанный диапазон времени. Частота этих двух операций отображается относительно друг друга в виде третей или половин вертикального столбца. Чтобы просмотреть дополнительные сведения, попробуйте увеличить масштаб этого раздела представления потоков.  

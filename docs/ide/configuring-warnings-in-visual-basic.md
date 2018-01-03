@@ -16,11 +16,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
 Компилятор [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] включает в себя набор предупреждений о коде, который может привести к ошибкам во время выполнения. Эти сведения можно использовать для написания более понятного, быстродействующего и качественного кода с меньшим числом ошибок. Например, компилятор выведет предупреждение при попытке пользователя вызвать элемент неопределенной объектной переменной, произвести возврат из функции без задания возвращаемого значения либо выполнить блок `Try` с ошибками в логике для перехвата исключений.  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="examples"></a>Примеры  
  Эта таблица с примерами аргументов командной строки описывает назначение каждого аргумента.  
   
-|Аргумент|Описание|  
+|Аргумент|Описание:|  
 |--------------|-----------------|  
 |`vbc /warnaserror`|Указывает, что все предупреждения должны рассматриваться как ошибки.|  
 |`vbc /warnaserror:42024`|Указывает, что предупреждение 42024 должно рассматриваться как ошибка.|  

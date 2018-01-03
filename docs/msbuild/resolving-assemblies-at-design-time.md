@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7ce11fb27959f5d468e08f6967b53ac079a2a28e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Разрешение сборок во время разработки
 Когда вы добавляете ссылку на сборку с помощью вкладки .NET или диалога добавления ссылки, эта ссылка указывает на промежуточную ссылочную сборку, которая содержит всю информацию о типах и сигнатурах, но не обязательно включает программный код. На вкладке .NET перечислены все ссылочные сборки, соответствующие сборкам среды выполнения в платформе .NET Framework. Кроме того, в этот список включены ссылочные сборки, соответствующих сборкам среды выполнения в зарегистрированных папках AssemblyFoldersEx, используемых сторонними разработчиками.  

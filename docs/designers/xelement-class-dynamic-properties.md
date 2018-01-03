@@ -12,18 +12,19 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ba611fe5582b65e314046b80fb15751a0152b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c2583014552cffacaa3e2f9760fd61ead0af605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xelement-class-dynamic-properties"></a>Динамические свойства класса XElement
 Этот раздел описывает динамические свойства класса <xref:System.Xml.Linq.XElement?displayProperty=fullName>.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Attribute (XElement Dynamic Property)](../designers/attribute-xelement-dynamic-property.md) (Attribute (динамическое свойство XElement))|Возвращает индексатор, который используется для получения атрибута, соответствующего заданному развернутому имени.|  
 |[Элемент](../designers/element-xelement-dynamic-property.md)|Возвращает индексатор, используемый для получения дочернего элемента, соответствующего заданному развернутому имени.|  

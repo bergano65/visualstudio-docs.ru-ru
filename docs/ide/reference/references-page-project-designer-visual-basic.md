@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cada43ba0ac05d5ec7355f77578127c3339929be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6fb8d57be1101f8faa5826b2459a9a1658009d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Страница "Ссылки" в конструкторе проектов (Visual Basic)
 Страница **Ссылки** **конструктора проектов** служит для управления ссылками, веб-ссылками и импортированными пространствами имен в проекте. Проекты могут содержать ссылки на компоненты COM, веб-службы XML, сборки или библиотеки классов .NET Framework или другие библиотеки классов. Дополнительные сведения о ссылках см. в статье [Управление ссылками в проекте](../../ide/managing-references-in-a-project.md).  

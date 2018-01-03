@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>Общие сведения о методах сбора данных по производительности
 В средствах профилирования Visual Studio предусмотрено пять методов, которые можно использовать для сбора данных по производительности. В этом разделе описываются различные методы и предлагаются определенные сценарии, в которых может быть приемлемым сбор данных с помощью определенного метода.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/11/2017
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[Выборка](#sampling)|Собирает статистические данные по работе, выполненной приложением.|  
 |[Инструментирование](#instrumentation)|Собирает подробные сведения о времени для каждого вызова функции.|  
@@ -91,7 +92,7 @@ ms.lasthandoff: 11/11/2017
   
  [Сбор данных о параллелизме потоков и процессов](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
- [Представления данных о состязаниях ресурсов](../profiling/resource-contention-data-views.md)  
+ [Представления данных о конфликтах ресурсов](../profiling/resource-contention-data-views.md)  
   
  [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)  
   

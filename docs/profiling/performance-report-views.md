@@ -16,16 +16,17 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e93b23c9bd30ec81088b7ec9a81cda837d6bafd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cb369d239cd480456cd54382cab0befe5c37b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-views"></a>Представления отчетов о производительности
 Этот раздел содержит справочные сведения по отчетам и представлениям средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Представления файлов данных профилирования отображаются в интегрированной среде разработки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Отчеты создаются средством командной строки [VSPerfReport](../profiling/vsperfreport.md).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Представления общих данных](../profiling/common-data-views.md)  
  Справочные сведения, связанные с представлениями и отчетами по файлам данных профилирования, которые являются общими для всех методов профилирования.  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 625bc1301d4ea4a43fdd3dec7f28eb26171eb503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: deaed7caedfa825917d4d6740f3d1866f77da68e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Запуск автономного приложения в машинном коде с профилировщиком для сбора данных параллелизма при помощи командной строки
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска автономного (клиентского) приложения в машинном коде и сбора данных о параллелизме потоков и процессов.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
      С параметром **/start:concurrency** можно использовать любой из параметров, приведенных в следующей таблице.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Задает счетчик производительности Windows, данные которого будут собираться во время профилирования.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500.|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
      С параметром **/launch** можно использовать любой из параметров, приведенных в следующей таблице.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/args](../profiling/args.md) **:** `Arguments`|Указывает строку, которая содержит аргументы командной строки для передачи в целевое приложение.|  
     |[/console](../profiling/console.md)|Запускает целевое приложение командной строки в отдельном окне.|  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Пары параметров в следующей таблице запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff4c94b079d58cab51ec0539e17ada8696ebca89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 81133dadb79cc4fba24b66e97f7384232b6171ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="function-details-view"></a>Представление сведений о функции
 В окне **Function Details View** (Представление сведений о функции) отображаются следующие сведения:  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="function-performance-details"></a>Сведения о производительности функции  
  В таблице сведений о производительности функций представлены сводные данные для метрик производительности выбранной функции. Отображаются значение и процент. Вам необходимо указать данные профилирования диаграммы и таблицу данных в списке **Метрика производительности**.  
   
-|Столбец|Описание|  
+|Столбец|Описание:|  
 |------------|-----------------|  
 |**Монопольный доступ**|— Значение метрики производительности при выполнении текста функции.|  
 |**В вызовах**|— Значение метрики производительности в функциях, вызванных выбранной функцией.|  

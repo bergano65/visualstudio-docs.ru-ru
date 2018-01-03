@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23eabbdf18650238aa4eb078d0f73a8f583e70f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72419c37293a5ba0a9a7fd0583a1092356462a84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-logical-cores"></a>Логические ядра представления "Ядра"
 Каждое имя канала представляет одно из логических ядер, существующих в профилируемой системе. При именовании нумерация производится от 0 и до общего количества логических ядер. Например, четырехъядерная система будет включать логические ядра с номерами от 0 до 3.  

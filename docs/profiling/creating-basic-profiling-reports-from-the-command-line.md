@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 111227b41b3fe48af963f93f07cdee5e5511661f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Создание базовых отчетов профилирования из командной строки
 В этом разделе описываются основные команды VSPerfReport, которые создают отчеты со значениями, разделенными запятыми (CSV), из файла данных профилирования с расширением VSP или VSPS. Описание всех параметров отчета см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |**Модуль**|Перечисляет данные профилирования для модулей.|-   [Данные выборки](../profiling/modules-view-sampling-data.md)<br />-   [Данные инструментирования](../profiling/modules-view-instrumentation-data.md)<br />-   [Данные выборки памяти .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Данные инструментирования памяти .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Данные состязаний](../profiling/modules-view-contention-data.md)|  
 |**Process**|Перечисляет данные профилирования для процессов.|-   [Представление "Процесс"](../profiling/process-view.md)<br />-   [Данные состязаний](../profiling/process-view-contention-data.md)|  
 |**Поток**|Перечисляет данные профилирования для потоков.|-   [Представление "Процесс"](../profiling/process-view.md)|  
-|**Тип**|Перечисляет данные профилирования по типу.|-   [Представление "Выделения"](../profiling/dotnet-memory-allocations-view.md)|  
+|**Type**|Перечисляет данные профилирования по типу.|-   [Представление "Выделения"](../profiling/dotnet-memory-allocations-view.md)|  
 |**Contention**|Состязания за ресурсы.|-   [Состязания за ресурсы](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Перечисляет проблемы правил производительности.|— Перечисляются идентификатор CheckId, описание и расположение исходного кода, в котором имеется проблема с правилом.|  
 |**ETW**|Перечисляются события трассировки событий Windows, собранные в ходе сеанса профилирования.|-   [Отчет по трассировке событий Windows](../profiling/event-tracing-for-windows-etw-report.md)|

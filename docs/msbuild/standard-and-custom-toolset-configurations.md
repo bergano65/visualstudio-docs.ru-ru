@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a1b0b6e2cc44193a684c6f411df908b0a54d31f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 Набор инструментов MSBuild содержит ссылки на задачи, целевые объекты и средства, которые можно использовать для создания проекта приложения. В состав MSBuild входит стандартный набор инструментов, но вы также можете создавать пользовательские наборы. Сведения об указании набора инструментов см. в разделе [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  

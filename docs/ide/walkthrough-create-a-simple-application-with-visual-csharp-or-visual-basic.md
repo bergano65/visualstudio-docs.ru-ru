@@ -15,36 +15,29 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 44429ccde6dece8ff0b8a0c41fd4cff328d1160f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Пошаговое руководство. Создание простого приложения с помощью Visual C# или Visual Basic
-Выполняя данное пошаговое руководство, вы ознакомитесь со многими инструментами, диалоговыми окнами и конструкторами, которые можно использовать для создания приложений с помощью Visual Studio. Вам предстоит создать простое приложение "Hello, World", разработать пользовательский интерфейс, добавить код и отладить ошибки, одновременно приобретая навыки работы в интегрированной среде разработки (IDE).  
-  
- В этом разделе содержатся следующие подразделы.  
-  
- [Настройка интегрированной среды разработки (IDE)](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)  
-  
- [Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)  
-  
- [Отладка и тестирование приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
+Выполняя данное пошаговое руководство, вы ознакомитесь со многими инструментами, диалоговыми окнами и конструкторами, которые можно использовать для создания приложений с помощью Visual Studio. Вам предстоит создать простое приложение "Hello, World", разработать пользовательский интерфейс, добавить код и отладить ошибки, одновременно приобретая навыки работы в интегрированной среде разработки (IDE).
   
 ##  <a name="BKMK_ConfigureIDE"></a> Настройка интегрированной среды разработки (IDE)  
 При первом запуске Visual Studio вам будет предложено выполнить вход. Для этого пошагового руководства делать это необязательно. Затем может появиться диалоговое окно, в котором предлагается выбрать параметры разработки и цветовую тему. Оставьте значения по умолчанию и нажмите **Запуск Visual Studio**.  
 
 ![Диалоговое окно выбора параметров](../ide/media/exploreide-settings.png "exploreide-settings")
   
- После запуска Visual Studio вы увидите окна инструментов, меню и панели инструментов, а также основную область окна. Окна инструментов закреплены в левой и правой частях окна приложения, а панель **Быстрый запуск**, строка меню и стандартная панель инструментов закреплены в верхней его части. В центре окна приложения находится **Начальная страница**. При загрузке решения или проекта редакторы и конструкторы отображаются в области **Начальной страницы** . При разработке приложения чаще всего используется именно эта область.  
+После запуска Visual Studio вы увидите окна инструментов, меню и панели инструментов, а также основную область окна. Окна инструментов закреплены в левой и правой частях окна приложения, а панель **Быстрый запуск**, строка меню и стандартная панель инструментов закреплены в верхней его части. В центре окна приложения находится **Начальная страница**. При загрузке решения или проекта редакторы и конструкторы отображаются в области **Начальной страницы** . При разработке приложения чаще всего используется именно эта область.  
   
- ![Интегрированная среда разработки, в которой установлены общие параметры](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
+![Интегрированная среда разработки, в которой установлены общие параметры](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
   
 ##  <a name="BKMK_CreateApp"></a> Создание простого приложения  
   
 ### <a name="create-the-project"></a>Создание проекта  
- При создании приложения в Visual Studio необходимо сначала создать проект и решение. Этот пример демонстрирует создание проекта Windows Presentation Foundation (WPF).  
+При создании приложения в Visual Studio необходимо сначала создать проект и решение. Этот пример демонстрирует создание проекта Windows Presentation Foundation (WPF).  
   
 #### <a name="to-create-the-wpf-project"></a>Создание проекта WPF  
   
@@ -56,11 +49,11 @@ ms.lasthandoff: 10/31/2017
   
      ![Создание проекта WPF C# с именем HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
- Visual Studio создает решение и проект HelloWPFApp, а в **обозревателе решений** выводятся различные файлы. Конструктор WPF отображает представление кода и представление XAML MainWindow.xaml в представлении с разделением. Сдвигая разделитель, можно делать любое из представлений больше или меньше.  Можно выбрать для просмотра только визуальное представление или только представление XAML. (Дополнительные сведения см. в разделе [Конструктор WPF для разработчиков Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) В **Обозревателе решений**отображаются следующие элементы.  
+Visual Studio создает решение и проект HelloWPFApp, а в **обозревателе решений** выводятся различные файлы. Конструктор WPF отображает представление кода и представление XAML MainWindow.xaml в представлении с разделением. Сдвигая разделитель, можно делать любое из представлений больше или меньше.  Можно выбрать для просмотра только визуальное представление или только представление XAML. (Дополнительные сведения см. в разделе [Конструктор WPF для разработчиков Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) В **Обозревателе решений**отображаются следующие элементы.  
   
- ![Обозреватель решений с добавленными файлами HelloWPFApp](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+![Обозреватель решений с добавленными файлами HelloWPFApp](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
- После создания проекта его можно настраивать. С помощью окна **Свойства** (в меню **Вид** ) можно отображать и изменять параметры элементов проекта, элементов управления и других элементов в приложении.  
+После создания проекта его можно настраивать. С помощью окна **Свойства** (в меню **Вид** ) можно отображать и изменять параметры элементов проекта, элементов управления и других элементов в приложении.  
   
 #### <a name="to-change-the-name-of-mainwindowxaml"></a>Изменение имени MainWindow.xaml  
 Давайте присвоим файлу MainWindow более конкретное имя.  
@@ -73,7 +66,7 @@ ms.lasthandoff: 10/31/2017
      В **обозревателе решений** видно, что файл теперь имеет имя Greetings.xaml, а имя вложенного файла кода поменялось на Greetings.xaml.vb или Greetings.xaml.cs. Этот файл с текстом программы вложен в узел файла XAML, что означает их тесную связь.  
   
 ### <a name="design-the-user-interface-ui"></a>Конструирование пользовательского интерфейса (ИП)  
- В приложение будет добавлено три типа элементов управления: элемент управления TextBlock, два элемента управления RadioButton, и элемент управления Button.  
+В приложение будет добавлено три типа элементов управления: элемент управления TextBlock, два элемента управления RadioButton, и элемент управления Button.  
   
 #### <a name="to-add-a-textblock-control"></a>Добавление элемента управления TextBlock  
   
@@ -85,16 +78,16 @@ ms.lasthandoff: 10/31/2017
   
 3.  Добавьте элемент управления TextBlock в область конструктора, выбрав элемент управления **TextBlock** и перетащив его в окно. Отцентрируйте этот элемент в верхней части окна.  
   
- Окно должно выглядеть так, как показано на следующем рисунке:  
+Окно должно выглядеть так, как показано на следующем рисунке:  
   
- ![Элемент управления TextBlock в форме Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
+![Элемент управления TextBlock в форме Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
- Разметка XAML должна выглядеть приблизительно так, как показано ниже:  
+Разметка XAML должна выглядеть приблизительно так, как показано ниже:  
   
-     ```xaml  
-     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
-     ```  
-  
+```xaml  
+<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
+```  
+
 #### <a name="to-customize-the-text-in-the-text-block"></a>Настройка текста в текстовом блоке  
   
 1.  В представлении XAML найдите разметку для TextBlock и измените атрибут Text:  
@@ -158,7 +151,7 @@ IsChecked="True"
      ![Форма Greetings с метками элементов управления](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>Добавление кода к кнопке Display  
- После запуска приложения окно сообщения появится только тогда, когда пользователь выберет переключатель, а затем нажмет кнопку **Display**. Одно окно сообщения появится для Hello, и другое — для Goodbye. Для создания такого поведения добавьте код в событие Button_Click в файле Greetings.xaml.vb или Greetings.xaml.cs.  
+После запуска приложения окно сообщения появится только тогда, когда пользователь выберет переключатель, а затем нажмет кнопку **Display**. Одно окно сообщения появится для Hello, и другое — для Goodbye. Для создания такого поведения добавьте код в событие Button_Click в файле Greetings.xaml.vb или Greetings.xaml.cs.  
   
 #### <a name="add-code-to-display-message-boxes"></a>Добавление кода для отображения окон сообщений    
 1.  На поверхности разработки дважды щелкните кнопку **Display** .  
@@ -201,10 +194,10 @@ IsChecked="True"
 3.  Сохраните приложение.  
   
 ##  <a name="BKMK_DebugTest"></a> Отладка и тестирование приложения  
- После этого вам предстоит отладить приложение для выявления ошибок и тестирования того, что оба окна сообщений отображаются правильно. Приведенные ниже инструкции описывают, как выполнить сборку и запустить отладчик (дополнительные сведения см. в разделах [Сборка приложения WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) и [Сборка WPF](../debugger/debugging-wpf.md)).  
+После этого вам предстоит отладить приложение для выявления ошибок и тестирования того, что оба окна сообщений отображаются правильно. Приведенные ниже инструкции описывают, как выполнить сборку и запустить отладчик (дополнительные сведения см. в разделах [Building a WPF Application (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) (Построение приложения WPF) и [Debugging WPF](../debugger/debugging-wpf.md) ).  
   
 ### <a name="find-and-fix-errors"></a>Поиск и исправление ошибок  
- В этом шаге вам предстоит найти ошибку, которую мы намеренно допустили ранее, изменив имя файла MainWindow.xaml.  
+В этом шаге вам предстоит найти ошибку, которую мы намеренно допустили ранее, изменив имя файла MainWindow.xaml.  
   
 #### <a name="to-start-debugging-and-find-the-error"></a>Начало отладки и поиск ошибки  
   
@@ -218,7 +211,7 @@ IsChecked="True"
   
      ![Команда "Остановить отладку" в меню "Отладка"](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
   
- Файл MainWindow.xaml был переименован в Greetings.xaml в начале этого пошагового руководства, но код по-прежнему ссылается на файл mainwindow.xaml как на начальный универсальный код ресурса (URI) для приложения, поэтому проект не может быть запущен.  
+Файл MainWindow.xaml был переименован в Greetings.xaml в начале этого пошагового руководства, но код по-прежнему ссылается на файл mainwindow.xaml как на начальный универсальный код ресурса (URI) для приложения, поэтому проект не может быть запущен.  
   
 #### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>Задание Greetings.xaml в качестве начального универсального кода ресурса (URI)  
   
@@ -284,7 +277,7 @@ IsChecked="True"
   
 Поздравляем с завершением этого пошагового руководства! Построенный EXE-файл находится в каталоге решения и проекта (...\HelloWPFApp\HelloWPFApp\bin\Release\\). Чтобы изучить больше примеров, см. раздел [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
-## <a name="see-also"></a>См. также  
- [Новые возможности Visual Studio 2017](../ide/whats-new-in-visual-studio.md)   
- [Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)   
- [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)
+## <a name="see-also"></a>См. также
+[Новые возможности Visual Studio 2017](../ide/whats-new-in-visual-studio.md)   
+[Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)   
+[Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)

@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Обновлено для [выпуска 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -301,6 +302,6 @@ Visual Studio перемещает свои расширения, а также 
 ## <a name="see-also"></a>См. также
 * [Заметки о выпуске Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [What's New in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) (Новые возможности Visual C++)
-* [What's New in C#](https://docs.microsoft.com/dotnet/csharp/csharp-7) (Новые возможности C#)  
+* [What's New in C#](/dotnet/csharp/whats-new) (Новые возможности C#)  
 * [What's New for Team Foundation Server](https://www.visualstudio.com/docs/whats-new) (Новые возможности Team Foundation Server)
 * [Новые возможности Visual Studio для Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

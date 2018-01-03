@@ -25,11 +25,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 3299640b5db944c2e421a5b95df552ed36f80b77
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ffd317643b7ea1bfbf97bce6d533a76fd7bf1509
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cl-task"></a>Задача CL
 Использует оболочку компилятора Visual C++ — cl.exe. Компилятор создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).  
@@ -541,7 +542,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **PreprocessOutput**  
   
-     Необязательный параметр `ITaskItem[]`.  
+     Необязательный параметр `ITaskItem[]` .  
   
      Определяет массив выходных элементов препроцессора, которые могут использоваться и создаваться задачами.  
   
@@ -571,7 +572,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **ProcessorNumber**  
   
-     Необязательный параметр `Integer`.  
+     Необязательный параметр `Integer` .  
   
      Задает максимальное число процессоров, которые могут использоваться в многопроцессорной компиляции. Используйте этот параметр вместе с параметром **MultiProcessorCompilation**.  
   
@@ -627,7 +628,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **Sources**  
   
-     Обязательный параметр `ITaskItem[]`.  
+     Обязательный параметр `ITaskItem[]` .  
   
      Задает список исходных файлов, разделенных пробелами.  
   
@@ -779,7 +780,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **TLogReadFiles**  
   
-     Необязательный параметр `ITaskItem[]`.  
+     Необязательный параметр `ITaskItem[]` .  
   
      Определяет массив элементов, представляющих *журналы отслеживания чтения из файла*.  
   
@@ -787,7 +788,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **TLogWriteFiles**  
   
-     Необязательный параметр `ITaskItem[]`.  
+     Необязательный параметр `ITaskItem[]` .  
   
      Определяет массив элементов, представляющих *журналы отслеживания записи в файл*.  
   

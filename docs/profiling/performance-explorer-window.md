@@ -16,16 +16,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6fc3be33c332d643e5feb48f4a3733395c2a608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ab16dca3d4d27c157620f59774ec37f57aae020
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer-window"></a>Окно "Обозреватель производительности"
 Окно **Обозреватель производительности** в интегрированной среде разработки (IDE)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет настраивать и запускать сеансы анализа производительности при помощи средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- **Requirements**  
+ **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

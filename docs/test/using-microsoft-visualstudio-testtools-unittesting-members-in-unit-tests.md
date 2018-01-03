@@ -11,11 +11,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: "6"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1a723104cdd350dcc2c5fac80eef4e98b178df4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9468b796a601956941fb8d913e6ae6198afbfa59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 Платформа модульного тестирования поддерживает выполнение модульных тестов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. При написании кода модульных тестов используются классы и члены пространства имен Microsoft.VisualStudio.TestPlatform.UnitTestFramework>. Они используются как при создании модульных тестов с нуля, так и при доработке тестов, созданных из проверяемого кода.  

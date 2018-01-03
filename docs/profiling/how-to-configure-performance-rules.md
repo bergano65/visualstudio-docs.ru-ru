@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b1b5ac88e920a2bf684075bd89c7d1ddbec6904
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c9b389f570a1dd0a16fb4266268be953433aaa1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-performance-rules"></a>Практическое руководство. Настройка правил производительности
 В предупреждении о производительности средств профилирования Visual Studio указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы. Предупреждения также могут указывать на то, что может потребоваться изменить методы сбора для сбора более полезных данных. Предупреждения о производительности создаются в сеансе профилирования автоматически и отображаются в окне **Список ошибок** при открытии файла данных профилирования в [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Некоторые предупреждения могут не соответствовать интересующим вас сценариям, а другие могут быть созданы ошибочно. Можно настроить вывод или блокировку конкретных предупреждений о производительности.  

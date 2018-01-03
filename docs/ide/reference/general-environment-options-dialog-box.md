@@ -29,11 +29,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 615aff9adacc8c4ce54505b0267f4bb39608dfe1
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-environment-options-dialog-box"></a>Страница "Общие", папка "Среда", диалоговое окно "Параметры"
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 11/22/2017
 
 Позволяет использовать аппаратное ускорение графики вместо программного, если оно доступно.
 
-## <a name="other"></a>Другой
+## <a name="other"></a>Другое
 
 **Пунктов в меню "Окно"**  
 Задает количество окон, отображаемых в списке окон меню **Окно**. Введите число от 1 до 24. Число по умолчанию — 10.

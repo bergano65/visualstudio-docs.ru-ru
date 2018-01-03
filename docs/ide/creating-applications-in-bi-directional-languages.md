@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f79bc2ca79cdec10fa480d87f48abc240420c34e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Создание приложений для языков с двунаправленным письмом
 Visual Studio можно использовать для создания приложений, которые правильно отображают текст на языках, где письмо осуществляется справа налево, в том числе арабском и иврите. Для некоторых функций можно просто задать свойства. В других случаях требуется реализовать функции в коде.  

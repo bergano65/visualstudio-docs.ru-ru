@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 552e08a653c576a0f2e4bc916beaf4749ff490ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 Псевдонимы предоставляют средства для ввода команд в **Найти** или в окне **Команда**, сокращая текст, необходимый для набора выполняемых команд. Например, чтобы не вводить `>File.OpenFile` для отображения диалогового окна **Открытие файла**, можно использовать стандартный псевдоним `>of`.  

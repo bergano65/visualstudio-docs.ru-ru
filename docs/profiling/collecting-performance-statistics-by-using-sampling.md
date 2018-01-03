@@ -15,16 +15,17 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e66566160f458a34c069d1025f9bab311a2f5ec
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 4131bfc5bd361e4d2ac4aeca0c4f7003f975d462
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Использование метода выборки для сбора статистики производительности
 По умолчанию методом выборки средств профилирования [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] данные профилирования собираются каждые 10 000 000 циклов процессора (приблизительно каждую тысячную секунды для процессора с тактовой частотой 1 ГГц). Метод выборки целесообразно использовать для поиска проблем, относящихся к использованию процессора, также он предлагается для выполнения большинства операций анализа производительности.  
   
- **Requirements**  
+ **Требования**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

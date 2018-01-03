@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5aff5914d9b278b206f81abd4f28ce9f4dfa409c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.  
@@ -125,7 +126,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Чтобы найти и запустить выходную сборку с присоединением отладчика, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] требуется, чтобы были правильно заданы свойства `OutputPath`, `AssemblyName`и `OutputType` . Присоединение отладчика невозможно, если в процессе построения компилятор не создал файл .pdb.  
   
 ## <a name="design-time-target-execution"></a>Выполнение целевых объектов в режиме разработки  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пытается запустить выполнение целевых объектов с определенными именами при загрузке проекта. Эти целевые объекты включают в себя `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`и `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] запускает эти целевые объекты, что позволяет инициализировать компилятор, который обеспечивает функционирование IntelliSense. Возможна также инициализация отладчика и разрешение ссылок, отображаемых в обозревателе решений. Если эти целевые объекты отсутствуют, то загрузка и построение проекта будут выполняться правильно, но работа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в режиме разработки будет иметь функциональные ограничения.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пытается запустить выполнение целевых объектов с определенными именами при загрузке проекта. Эти целевые объекты включают в себя `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` и `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] запускает эти целевые объекты, что позволяет инициализировать компилятор, который обеспечивает функционирование IntelliSense. Возможна также инициализация отладчика и разрешение ссылок, отображаемых в обозревателе решений. Если эти целевые объекты отсутствуют, то загрузка и построение проекта будут выполняться правильно, но работа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в режиме разработки будет иметь функциональные ограничения.  
   
 ##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Чтобы изменить непосредственно проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , можно открыть файл проекта в XML-редакторе Visual Studio.  

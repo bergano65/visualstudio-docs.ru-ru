@@ -21,16 +21,17 @@ caps.latest.revision: "34"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ed3af7142d556c52fbed71f03d5cc53eb3025035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-element-msbuild"></a>Элемент Target (MSBuild)
 Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения.  
 
- \<Проект>  
+ \<Project>  
  \<Target>  
 
 ## <a name="syntax"></a>Синтаксис  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="attributes"></a>Атрибуты  
 
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Name`|Обязательный атрибут.<br /><br /> Имя целевого объекта.|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Если условие принимает значение `false`, целевой объект не будет выполнять тело целевого объекта или любые целевые объекты, заданные в атрибуте `DependsOnTargets`. Дополнительные сведения об условиях см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>Дочерние элементы  
 
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Задача](../msbuild/task-element-msbuild.md)|Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Целевой объект может содержать нуль и более задач.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Содержит набор определяемых пользователем элементов `Property`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `PropertyGroup`.|  
@@ -82,9 +83,9 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="parent-elements"></a>Родительские элементы  
 
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
 ## <a name="remarks"></a>Примечания  
  Первый целевой объект для выполнения задается во время выполнения. Целевые объекты могут иметь зависимости от других целевых объектов. Например, целевой объект для развертывания зависит от целевого объекта для компиляции. Обработчик [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет зависимости в том порядке, в котором они появляются в атрибуте `DependsOnTargets`, слева направо. Дополнительные сведения см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md).  

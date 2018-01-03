@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e80bd33d9351c6b2dd5ce65d327e6cdb40fc70a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e5e83629bdb2b93db3a34ba577da4df84b119cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-report-view-columns"></a>Практическое руководство. Настройка столбцов представлений отчета
 Средства производительности в Visual Studio Team System Development Edition являются полностью встроенными в интегрированную среду разработки (IDE), что позволяет легко их использовать при каждой необходимости. Ниже перечислены представления, которые можно настраивать путем добавления, удаления и изменения порядка столбцов.  
@@ -29,9 +30,9 @@ ms.lasthandoff: 10/31/2017
   
 -   [Представление "Функции"](../profiling/functions-view.md)  
   
--   [Представление строк](../profiling/lines-view.md)  
+-   [Представление "Строки"](../profiling/lines-view.md)  
   
--   [Представление указателей инструкций](../profiling/instruction-pointers-ips-view.md)  
+-   [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view.md)  
   
 -   [Представление "Вызывающий/вызываемый"](../profiling/caller-callee-view.md)  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Представление "Время существования объектов"](../profiling/object-lifetime-view.md)  
   
--   [Представление меток](../profiling/marks-view.md)  
+-   [Представление "Метки"](../profiling/marks-view.md)  
   
 -   [Представление "Процесс"](../profiling/process-view.md)  
   
