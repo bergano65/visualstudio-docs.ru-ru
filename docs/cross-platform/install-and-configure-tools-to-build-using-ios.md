@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 734c7b8a8416503e457f964d74e0a3773cbada2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в симуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.  
@@ -239,4 +240,4 @@ Visual C++ для разработки кроссплатформенных мо
      Здесь *путь_к_файлу_конфигурации* — это путь к файлу конфигурации в формате JSON. Параметры запуска и их значения не должны содержать дефисы.  
   
 ## <a name="see-also"></a>См. также  
- [Установка Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-shaders"></a>Работа с шейдерами
 Конструктор шейдеров на основе диаграмм в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно использовать для создания пользовательских эффектов шейдеров. Затем эти шейдеры можно будет применить в игре или приложении на основе DirectX.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Конструктор шейдеров](../designers/shader-designer.md)|Описывает способ использования конструктора шейдеров [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для работы с шейдерами.|  
 |[Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)|Описывает типы узлов в конструкторе шейдеров, которые можно использовать для достижения графических эффектов.|  

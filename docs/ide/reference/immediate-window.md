@@ -18,13 +18,14 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81856823b511fc89f5f156915f843d4b0202e907
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 026223f89822f2d76aa1185da8691c538b15ee62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="immediate-window"></a>Окно интерпретации
+# <a name="immediate-window"></a>окно интерпретации
 Окно **Интерпретация** используется для отладки и вычисления выражений, выполнения операторов, печати значений переменных и других действий. Оно позволяет вводить выражения, которые требуется вычислить или выполнить на языке разработки во время отладки. Чтобы открыть окно **Интерпретация**, откройте проект для редактирования, в меню **Отладка** выберите пункт **Окна** и выберите **Интерпретация** или нажмите клавиши CTRL+ALT+I.  
   
  Это окно можно использовать для выполнения отдельных команд [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. В число доступных команд входит команда `EvaluateStatement`, которую можно использовать для присвоения значений переменным. Окно **Интерпретация** также поддерживает технологию Intellisense.  

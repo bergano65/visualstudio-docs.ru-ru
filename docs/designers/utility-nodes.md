@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utility-nodes"></a>Служебные узлы
 Служебные узлы в конструкторе шейдеров представляют общие полезные вычисления, которые не удается отнести к другим категориям. Некоторые служебные узлы выполняют простые операции, такие как сложение векторов или условный выбор результатов, тогда как другие выполняют более сложные операции, такие как вычисление добавочного освещения в соответствии с популярными моделями освещения.  

@@ -12,11 +12,12 @@ caps.latest.revision: "64"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 95aa5c1a5df7200ff3fda3554ea5944767aeb082
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6e8eb7d7349bc88a54707c68a4e505d3f6720b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 Используя Visual Studio, можно создавать приложения для устройств Android, iOS и Windows.  При разработке приложения вы можете использовать инструменты Visual Studio для добавления подключенных служб, таких как Office 365, служба приложений Azure и Application Insights.

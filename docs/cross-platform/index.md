@@ -5,11 +5,12 @@ ms.author: apexprodleads
 ms.topic: landing-page
 title: "Документация по разработке мобильных приложений на C++ | Документация Майкрософт"
 description: "Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio."
-ms.openlocfilehash: 2d7dc3860091e11ab7b8983d9f1b739ffd383ba3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: apexprodleads
+ms.openlocfilehash: ec8f21742192a098543986d117241d2bb29bb36d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mobile-development-with-c-documentation"></a>Документация по разработке мобильных приложений на C++
 

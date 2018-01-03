@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0ec26ec3305cf56f5b03312816737ed7131f4d2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Практическое руководство. Поиск разделов в содержании
 Для поиска информации используйте вкладку **Содержание**. Содержание — это расширяемый список, в который входят все разделы в установленных книгах. Сведения о специальных возможностях для навигации по содержанию см. в разделе [Сочетания клавиш (средство просмотра справки)](../ide/shortcut-keys-help-viewer.md).  

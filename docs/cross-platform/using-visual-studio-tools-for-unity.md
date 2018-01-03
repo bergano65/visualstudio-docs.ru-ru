@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: unity
+ms.openlocfilehash: 06598b54e50db1566cc35c896061b4a2d1fb1a40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Применение набора средств Visual Studio для Unity
 В этом разделе мы рассмотрим, как использовать возможности интеграции и повышения производительности набора средств Visual Studio для Unity, а также как использовать отладчик Visual Studio для разработки Unity.  
@@ -129,7 +130,7 @@ ms.lasthandoff: 12/12/2017
  **Компьютер**  
  Имя компьютера или устройства, на котором выполняется этот экземпляр Unity.  
 
- **Тип**  
+ **Type**  
  **Редактор**, если этот экземпляр Unity выполняется как часть редактора Unity; **Проигрыватель**, если этот экземпляр Unity является автономным проигрывателем.  
 
  **Порт**  

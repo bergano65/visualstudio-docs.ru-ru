@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3eeb080af73966b48cf8be543faa4276ae3b438c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Практическое руководство. Создание основанного на геометрии шейдера градиента
 В этом документе показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания основанного на геометрии шейдера градиента. Этот шейдер масштабирует постоянное значение цвета RGB по высоте каждой точки объекта в абсолютном пространстве.  

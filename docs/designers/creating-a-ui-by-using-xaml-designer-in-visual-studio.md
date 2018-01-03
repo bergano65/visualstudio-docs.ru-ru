@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20ffb34c3c9ac1d2842995c53332eb241337b769
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9b628769c5945817aebd790820f1f16085f6564a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio
 Конструктор XAML в Visual Studio предоставляет визуальный интерфейс, помогающий создавать приложения Windows и веб-приложения на основе XAML. Вы можете создавать пользовательские интерфейсы для приложений, перетаскивая элементы управления из **области элементов** и задавая свойства в окне **Свойства** . Также можно изменить код XAML непосредственно в представлении XAML.  

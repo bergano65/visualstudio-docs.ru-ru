@@ -1,51 +1,8 @@
 ---
-title: "Практическое руководство. Просмотр отношения наследования между типами (конструктор классов) | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.classdesigner.AssociationTypeNotFoundError
-helpviewer_keywords:
-- types [Visual Studio], inheritance
-- types [Visual Studio], base
-- types [Visual Studio], derived
-ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5007a275759ca2bf3a84c555216546ad481150fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/class-designer/how-to-view-inheritance-between-types
+ms.openlocfilehash: f4203855e086a1bf45275f4a205649b47ff80890
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)
-Отношение наследования, если оно существует, между базовым типом и его производными типами можно найти на диаграмме классов в Конструкторе классов. Сведения о создании отношения наследования между двумя типами (если оно отсутствует) см. в статье [Практическое руководство. Создание наследования между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
-  
-### <a name="to-find-the-base-type"></a>Поиск базового типа  
-  
-1.  На диаграмме классов щелкните тип, базовый класс или интерфейс которого следует показать.  
-  
-2.  В меню **Диаграмма классов** выберите пункт **Показать базовый класс** или **Показать базовые интерфейсы**.  
-  
-     Базовый класс или интерфейс типа появится на диаграмме. Теперь будут показаны любые скрытые линии наследования между двумя фигурами.  
-  
- Вы также можете щелкнуть правой кнопкой тип, базовый тип которого необходимо показать, и выбрать команду **Показать базовый класс** или **Показать базовые интерфейсы**.  
-  
-### <a name="to-find-the-derived-types"></a>Поиск производных типов  
-  
-1.  На диаграмме классов щелкните тип, производные классы или интерфейсы которого следует показать.  
-  
-2.  В меню **Диаграмма классов** выберите пункт **Показать производные классы** или **Показать производные интерфейсы**.  
-  
-     На диаграмме появятся производные классы или интерфейсы типа. Теперь будут показаны любые скрытые линии наследования между фигурами.  
-  
- Вы также можете щелкнуть правой кнопкой тип, производные типы которого необходимо показать, и выбрать команду **Показать производные классы** или **Показать производные интерфейсы**.  
-  
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Создание ассоциаций между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md)   
- [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)

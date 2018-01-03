@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Работа с трехмерными ресурсами для игр и приложений
 Этот документ описывает средства [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], которые можно использовать для создания или изменения трехмерных моделей, текстур и шейдеров для игр и приложений на базе DirectX.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Работа с текстурами и изображениями](../designers/working-with-textures-and-images.md)|Описывает, как работать с изображениями и текстурами в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Работа с трехмерными моделями](../designers/working-with-3-d-models.md)|Описывает, как работать с трехмерными моделями в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  

@@ -11,11 +11,12 @@ caps.latest.revision: "11"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d428f340cd1c0c990ec196c3c9d84e6f22093805
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: b25344afa89c3b1244203a914b9b64347223870d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Основы создания приложений с помощью Xamarin.Forms в Visual Studio
 Если вы выполнили шаги в [Setup and install](../cross-platform/setup-and-install.md) и [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md), в этом пошаговом руководстве будет рассказано, как создать базовое приложение (показано ниже) с помощью Xamarin.Forms. Используя Xamarin.Forms, вы напишете весь код пользовательского интерфейса один раз в переносимой библиотеке классов (PCL). Затем Xamarin автоматически будет отображать собственные элементы управления пользовательского интерфейса для платформ iOS, Android и Windows. Это рекомендуемый подход, так как переносимая библиотека классов предоставляет оптимальную поддержку только тех интерфейсов API .NET, которые поддерживаются на всех целевых платформах, а также потому, что Xamarin.Forms позволяет совместно использовать код пользовательского интерфейса на разных платформах.  

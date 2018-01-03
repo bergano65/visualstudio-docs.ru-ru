@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 41fe8afba19939dfbbbd5c055f5ebd53e9fc2e04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
 Платформа Xamarin позволяет создавать кроссплатформенные мобильные приложения, предназначенные для Android, iOS и Windows, с помощью C#, .NET и Visual Studio. Платформа Xamarin дает возможность совместного использования большей части кода разными платформами, при этом лишь небольшая его часть должна соответствовать конкретной платформе. Дополнительные сведения о самой платформе Xamarin см. в разделе [Visual Studio и Xamarin](../cross-platform/visual-studio-and-xamarin.md).  

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64a10c356100e6ace36ec1c574c85479741113c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Практическое руководство. Исключение проектов из построения
 Вы можете создать решение без сборки всех проектов, которые оно содержит. Например, можно исключить проект, который прерывает сборку. После исследования и разрешения проблем можно будет построить этот проект.  

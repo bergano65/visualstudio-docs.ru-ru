@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77230702bf8dc582e176e4dd0f17eab3385966c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d97695cae08352ea213ba02008ab99bef7f61c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Практическое руководство. Отключение предупреждений компилятора
 Журнал сборки можно упорядочить, указав один вид предупреждений компилятора или несколько, которые не должны входить в журнал. Например, этот метод можно использовать для просмотра некоторых (не всех) сведений, которые автоматически создаются при установке таких уровней детализации ведения журнала сборки, как "Обычный", "Подробный" или "Диагностический". Дополнительные сведения о детализации см. в статье [Практическое руководство. Просмотр, сохранение и настройка файлов журнала построения](../ide/how-to-view-save-and-configure-build-log-files.md).  

@@ -1,40 +1,8 @@
 ---
-title: "Практическое руководство. Экспорт схем классов как изображений (конструктор классов) | Документы Майкрософт"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.classdesigner.exportdialog
-helpviewer_keywords: class diagrams, exporting as images
-ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 39969126d705c304cba499944cdedf3428be7f23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/class-designer/how-to-export-class-diagrams-as-images
+ms.openlocfilehash: 1debd371c2ecf99c47eb9de2b7a6ee62f6464c02
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Практическое руководство. Экспорт схем классов как изображений (конструктор классов)
-Чтобы экспортировать схему классов, созданную на основе кода в проекте, сохраните ее как изображение. Если вместо этого нужно экспортировать схемы класса UML, см. статью [Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md).  
-  
-1.  Откройте файл со схемой классов (CD).  
-  
-2.  В меню **Схема классов** или в контекстном меню области схемы выберите пункт **Экспортировать схему как рисунок**.  
-  
-3.  Выберите схему.  
-  
-4.  Выберите нужный формат.  
-  
-5.  Выберите **Экспорт**, чтобы завершить экспорт.  
-  
-     Чтобы автоматически обновить экспортированные изображения, на которые есть ссылки в других документах, еще раз экспортируйте схему в Visual Studio.  
-  
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Печать схем классов (конструктор классов)](../ide/how-to-print-class-diagrams-class-designer.md)   
- [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)
