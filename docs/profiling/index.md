@@ -3,11 +3,11 @@ layout: LandingPage
 title: "Профилирование приложений с помощью Visual Studio | Документация Майкрософт"
 description: "Узнайте, как с помощью Visual Studio 2017 создавать профили производительности для приложений, служб и инструментов на выбранном вами языке."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: e671683cf0ea257bf6170a3c2e41b8d0db503450
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 763740cd5f0f7e6da935dfd92418067f12a204c2
+ms.sourcegitcommit: 8dfdbe6dc01331c811707be2057b65c0b1f67e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="profiling-in-visual-studio"></a>Профилирование в Visual Studio
 
@@ -151,7 +151,7 @@ ms.lasthandoff: 12/14/2017
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Анализ энергопотребления (приложения Магазина)</h3>
+                        <h3>Анализ энергопотребления (приложения UWP)</h3>
                     </div>
                 </div>
             </div>
