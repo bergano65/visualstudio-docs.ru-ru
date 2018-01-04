@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b2cf0713a38187f27bfddd46b0ad32b592d397a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7df40a697bb294e369964fb6a4252b884794aea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-definitions"></a>Определения элементов
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 поддерживается статическое объявление элементов в файлах проекта с использованием элемента [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Однако метаданные можно добавлять только на уровне элемента, даже если метаданные для всех элементов идентичны. Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 элемент проекта с именем [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) позволяет обойти это ограничение. *ItemDefinitionGroup* позволяет определить набор определений элементов, который добавляет значения метаданных по умолчанию для всех элементов в именованном типе элементов.  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
  В этом примере к элементу i применяются метаданные по умолчанию m, так как метаданные m не определены явным образом элементом i. Однако к элементу i не применяются метаданные по умолчанию n, так как метаданные n уже определены элементом i.  
   
 > [!NOTE]
->  В именах элементов и параметров XML учитывается регистр. В именах метаданных элементов и \/свойств элемента регистр не учитывается. Поэтому имена элементов ItemDefinitionGroup, отличающиеся только регистром, следует рассматривать как одинаковые элементы ItemGroup.  
+>  В именах элементов и параметров XML учитывается регистр. В именах метаданных элементов и свойств элемента регистр не учитывается. Поэтому имена элементов ItemDefinitionGroup, отличающиеся только регистром, следует рассматривать как одинаковые элементы ItemGroup.  
   
 ## <a name="value-sources"></a>Источники значений  
  Значения для метаданных, определенных в ItemDefinitionGroup, могут поступать из множества различных источников:  
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Последняя спецификация имеет приоритет.  
   
- Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Например:  
+ Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Пример:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -145,7 +146,7 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Использование условий в ItemDefinitionGroup  
- Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Например:  
+ Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Пример:  
   
 ```xml  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -191,7 +192,7 @@ ms.lasthandoff: 10/31/2017
 В приведенном выше примере m может быть присвоено значение m1, так как Condition содержит ссылку на значение метаданных элемента i для элемента yes. 
   
 ## <a name="overriding-and-deleting-metadata"></a>Переопределение и удаление метаданных  
- Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Например:  
+ Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Пример:  
   
 ```xml  
 <ItemDefinitionGroup>  
