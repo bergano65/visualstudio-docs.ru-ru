@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c383f9b5c37c23886d968b13e45e1c5aa1c1c943
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 769ff8468bc2f8ea90201678c85351706b8a4652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Набор правил "Базовые нормы и правила разработки" для управляемого кода
 Можно использовать Microsoft базовые нормы и правила разработки набора правил в сосредоточиться на создании код проще для понимания и использования. Следует включить это правило, если проект содержит библиотечный код или если требуется принудительное применение рекомендаций для кода, который легко поддерживать.  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/31/2017
   
  В следующей таблице описаны все правила в наборе правил Майкрософт базовые нормы и правила разработки.  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть высвобождаемыми|  
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявите обработчики событий|  

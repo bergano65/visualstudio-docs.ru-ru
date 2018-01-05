@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e4c76efff009c85f9d607611d92d53cad5d2759
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1cf713e2c177a24938c44c4577da88d8943e4fef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: помечайте сборки атрибутом ComVisibleAttribute
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  Сборка не имеет <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> атрибут, применяемый к нему.  
   
 ## <a name="rule-description"></a>Описание правила  
- <xref:System.Runtime.InteropServices.ComVisibleAttribute> Атрибута определяет порядок обращения клиентов COM к управляемого кода. Для правильной разработки сборки должны явным образом указывать видимость COM. Видимость COM можно задать для всей сборки и затем переопределить для отдельных типов и членов типов. Если атрибут отсутствует, содержимое сборки будет видимым клиентам COM..  
+ <xref:System.Runtime.InteropServices.ComVisibleAttribute> Атрибута определяет порядок обращения клиентов COM к управляемого кода. Для правильной разработки сборки должны явным образом указывать видимость COM. Видимость COM можно задать для всей сборки и затем переопределить для отдельных типов и членов типов. Если атрибут отсутствует, содержимое сборки будет видимым клиентам COM.  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Чтобы устранить нарушение данного правила, добавьте атрибут к сборке. Если вы не хотите сборки будет видимым клиентам COM., примените атрибут и присвойте ему значение `false`.  

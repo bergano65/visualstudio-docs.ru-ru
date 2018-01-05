@@ -129,11 +129,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e256b519600a983886ac6d21317ef1757d7497f1
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
 В этой статье описываются типичные способы применения заметки для параметров простая функция — скалярных величин и указатели на структуры и классы и в большинстве буферов.  В этой статье также показано распространенных шаблонов использования для заметок. Дополнительные заметки, связанные с функциями, в разделе [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)  
@@ -484,7 +485,7 @@ ms.lasthandoff: 11/15/2017
   
 -   `_Struct_size_bytes_(size)`  
   
-     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа, с количеством байтов, которые получают по `size`.  Например:  
+     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа, с количеством байтов, которые получают по `size`.  Пример:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   

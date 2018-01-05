@@ -12,18 +12,19 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfe5e81256c6a1c105d8bff88c7f6271ffa4d235
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Базовые правила определения правильности" для управляемого кода
 Набор правил базовые правила определения правильности посвящена логики и общие ошибки в использовании API платформы. Базовые правила определения правильности включают правила в наборе правил минимальные правила и рекомендации. Дополнительные сведения см. в разделе [набор правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) следует включать этот набор правил в расширить список предупреждений, что минимального набора правил.  
   
  В следующей таблице описаны все правила в наборе правил базовые правила определения правильности Майкрософт.  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть высвобождаемыми|  
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявите обработчики событий|  

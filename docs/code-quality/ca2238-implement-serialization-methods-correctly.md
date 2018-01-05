@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca904e9259855127825b594db80cdc3524d53ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e3fa59585a5233bbebde7df0d074d303285c616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: следует правильно реализовывать методы сериализации
 |||  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 |Критическое изменение|Критическое, если метод отображается за пределами сборки.<br /><br /> Не критическое, если метод не отображается за пределами сборки.|  
   
 ## <a name="cause"></a>Причина  
- Метод, обрабатывающий событие сериализации, не имеет правильной сигнатуры, возвращаемого типа или отображения.  
+ Метод, обрабатывающий событие сериализации, не имеет правильной сигнатуры, типа возвращаемого значения или отображения.  
   
 ## <a name="rule-description"></a>Описание правила  
  Метод назначается обработчику событий сериализации, применив один из следующих атрибутов события сериализации:  

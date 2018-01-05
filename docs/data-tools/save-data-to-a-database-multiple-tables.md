@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: e6ed4bf0cb025feb2a4f52084857d9bdf5394770
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 403fe906172f31a979d9b714b8982fb5932c5b72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Сохранение данных в базе данных (несколько таблиц)
 Одним из наиболее распространенных сценариев в разработке приложений является отображение данных на форме в приложении Windows, изменение этих данных и отправка обновленных данных обратно в базу данных. Это пошаговое руководство описывает создание формы, отображающей данные из двух связанных таблиц, правку записей и сохранение изменений в базе данных. В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей".  
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/07/2017
   
     -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
-         -или-  
+         - или -  
   
     -   Выберите **новое подключение** Открытие **Добавить/изменить подключение** диалоговое окно.  
   

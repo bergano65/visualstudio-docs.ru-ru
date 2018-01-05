@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 334f31dcd68e031bfb25b4e0dcd6ce55b9d2f20c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 58d22a756edd625a9c664862d05de5fe405fd9f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Практическое руководство. Подключение к данным в службе
 Подключение приложения к данным, возвращаемым службой, запустив [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png) и выбрав **службы** на **Выбор типа источника данных**страницы.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
      Источник данных добавляется к **источники данных** окна.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
   
 #### <a name="to-add-functionality-to-your-application"></a>Добавление функциональности в приложение  
   

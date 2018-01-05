@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bd2aae360789646c78fa6b292b1ad97490fc2da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc11a71b9f6a68db2d795694af0326561b235f8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: свойства не должны возвращать массивы
 |||  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="example-violation"></a>Пример нарушения  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Следующий пример показывает свойства, которое нарушает это правило.  
   
 ### <a name="code"></a>Код  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="change-the-property-to-a-method-example"></a>Измените значение свойства на примере метод  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере нарушение устраняется путем изменения свойства в метод.  
   
 ### <a name="code"></a>Код  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="return-a-collection-example"></a>Пример возврата коллекции  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере нарушение устраняется путем изменения свойства для возврата  
   
  <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="allowing-users-to-modify-a-property"></a>Предоставление пользователям разрешения на изменение свойства  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Можно разрешить пользователю изменять свойство класса. В следующем примере свойство чтения/записи, которое нарушает это правило.  
   
 ### <a name="code"></a>Код  

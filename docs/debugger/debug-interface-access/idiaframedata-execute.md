@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29b284e466ce751e86f488203b4b22c0c18c6573
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ad08fd9800fdc197d4218fa55c83487e132f25d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Выполняет развертывание стека и возвращает результаты в интерфейсе обход кадра стека.  
@@ -38,7 +39,7 @@ HRESULT execute (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|Не удается выполнить кадра стека в кода пролога.|  
 |E_DIA_SYNTAX|Синтаксический анализ произошла ошибка в программе кадра.|  

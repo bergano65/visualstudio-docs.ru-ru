@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: a6c32f906ca3edfa8afb27937f859d93c8428168
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>С помощью программы C++ основные рекомендации
 Основные правила C++ — переносимой ряд рекомендации, правила и рекомендации о написании кода на C++, созданный специалистами C++ и конструкторы. В настоящее время Visual Studio поддерживает подмножество этих правил в рамках его средств анализа кода для C++. Средства проверки направляющих core устанавливаются по умолчанию в Visual Studio 2017 г и являются [предоставляется в виде пакета NuGet для Visual Studio 2015](#vs2015_corecheck).
@@ -63,7 +64,7 @@ int main()
   
 -   C26485 — правило Bounds.3: нет критичной массива в указатель.  
   
--   C26481 — правило Bounds.1: не используйте арифметических операций над указателями. Взамен рекомендуется использовать `span` .  
+-   C26481 — правило Bounds.1: не используйте арифметических операций над указателями. Взамен рекомендуется использовать `span`.  
   
  Если установлены и включены при компиляции кода C++ Проверьте основные наборы правил анализа кода, выводятся первые два предупреждения, но третий подавляется. Вот выходные данные сборки из примера кода:  
   
@@ -95,7 +96,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 
   - **Правила типов** применять [введите профиль основные правила C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-  **Visual Studio 2017 г. версия 15,5**:
+  **Visual Studio 2017 версии 15.5**:
   - **Класс правил** несколько правил, ориентированные на правильное использование виртуального спецификации и специальные методы. Это подмножество рекомендуется использовать для проверки [классы и иерархии классов](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class). 
   - **Правила параллелизма** одно правило, который перехватывает объявлен badlyly guard объектов. Дополнительные сведения см. [рекомендации, связанные с параллелизмом](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
   - **Правила объявления** несколько правил из [интерфейсы рекомендации](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) какие сосредоточиться на том, как глобальные переменные объявляются.  

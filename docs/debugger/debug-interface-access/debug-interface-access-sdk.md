@@ -17,16 +17,17 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e404f0b893453fa319d5c4df97319f8e77720805
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd84741d006304f7dfefe8ee4a1060ba64ffdb8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-interface-access-sdk"></a>SDK для доступа к интерфейсу отладки
 Microsoft отладки интерфейс средств разработки программного обеспечения (SDK для доступа к интерфейсу отладки) предоставляет доступ к отладочной информации, хранящейся в файлах базы данных (.pdb) программ средствами обработки после компиляции Microsoft. Так как формат PDB-файл, создаваемых средствами подвергаются константой редакции, предоставление доступа к формат оказывается нецелесообразным. С помощью API доступа к интерфейсу отладки, можно разрабатывать приложения, которые поиск и просматривать отладочной информации, хранящейся в PDB-файл. Такие приложения например, сообщающие сведения обратной трассировки стека и анализировать данные о производительности.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Начало работы](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
  Обзор пакета SDK для доступа к интерфейсу отладки функций и определяет, где установлен пакет SDK для, а также необходимых файлов заголовков и библиотек.  
   
