@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data"></a>Сохранение данных
 Сохранение данных — процесс переноса измененных данных в модели данных приложения обратно в исходное хранилище данных, обычно реляционной базе данных таких как SQL Server.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  Ниже описаны основные понятия и задачи, связанные с сохранением данных.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
 [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)  
  Обзор порядок изменения в наборе данных и как набор данных отслеживает сведения об изменениях, чтобы сохранить эти изменения в базе данных.  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: b7187ef8d3342ad050c66debf939e9c6a6213957
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Создание и использование политик возврата с анализом кода
 При использовании управления версиями Team Foundation (TFVC) можно создать политику возврата с анализом кода для .NET Framework и проекты машинного кода (C/C++) в командном проекте. Политика возврата анализа кода можно использовать для отслеживания и повышения качества кода, возвращаемого в базу кода.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 12/12/2017
   
  Создайте код политик возврата анализа с помощью параметры командного проекта [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]. Политики возврата задаются и применяются для командного проекта, но настраиваются и запустить для отдельных проектов кода на локальных компьютерах разработки выполнение анализа кода. В этом разделе описываются способы указания кода анализа политик возврата командного проекта и способ реализации пользовательских политик анализом кода для управляемого кода.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  Описание действий, которые позволяют устанавливать и изменять политики анализа кода для командного проекта.  
   

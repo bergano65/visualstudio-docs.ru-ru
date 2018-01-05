@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Реализация пользовательских политик возврата с анализом кода для управляемого кода
 Анализ кода, политика возврата указывает набор правил, которые члены командного проекта необходимо выполнить в исходном коде, перед возвратом в систему управления версиями. Корпорация Майкрософт предоставляет набор стандартных *наборов правил* правила анализа кода группы сгруппированы по функциональным областям. *Наборы правил настраиваемой политики* указать набор правил анализа кода, которые относятся к командному проекту. Набор правил хранится в RuleSet-файле.  

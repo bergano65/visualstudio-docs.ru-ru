@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c8606656b7ffe5f64c4c162b85d24bdbd9b1de0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d410f3796cdb30a620f0e0260f8cd529a4428831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: для сложных слов следует использовать правильный регистр
 |||  
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>См. также  
  [Правила именования](/dotnet/standard/design-guidelines/naming-guidelines)   
- [Соглашения о регистре](/dotnet/standard/design-guidelines/capitalization-conventions)
+ [Соглашения о написании прописными буквами](/dotnet/standard/design-guidelines/capitalization-conventions)

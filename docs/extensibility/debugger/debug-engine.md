@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-engine"></a>Отладка ядра
 Отладчик (DE) работает с интерпретатор или операционной системы, для предоставления службы отладки, такие как выполнение элемента управления, точки останова и оценки выражений. DE отвечает за мониторинг состояния отлаживаемой программы. Чтобы сделать это, DE использует указанные методы доступны для его в среде выполнения с поддерживаемой ли из ЦП или интерфейсы API, предоставляемый средой выполнения.  

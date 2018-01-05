@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Пошаговое руководство. Настройка и использование набора настраиваемых правил
 В этом пошаговом руководстве показано, как использовать средства анализа кода, которые были настроены для использования настраиваемый *набор правил* для библиотеки классов. Можно выбрать набор правил, связанного с типом проекта, заданным для решения, или можно выбрать другие наборы правил в соответствии со своими нуждами, такие как сканирование устаревшего кода для проблем, которые могут быть исправлены является критическим. В любом случае наборы правил можно настроить для тонкой настройки их в соответствии со своими требованиями проекта.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="prerequisites"></a>Предварительные требования  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] или [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
+-   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]или [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Использование наборов правил для анализа кода  
  Сначала создайте простой библиотеки классов.  

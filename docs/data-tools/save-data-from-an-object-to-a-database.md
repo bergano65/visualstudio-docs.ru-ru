@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1c7e99ce49df969fae439afac5d65369fae9c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: e7078e6814abeb0db2afd2cffe698f923e530179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 Можно сохранить данные в объектах в базе данных путем передачи значения из объекта в один из методов DBDirect адаптера таблицы (например, `TableAdapter.Insert`). Дополнительные сведения см. в разделе [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  При настройке адаптера таблицы, основной запрос должен предоставить достаточно данных для создания с помощью методов DBDirect. Например если он настроен для запроса данных из таблицы, у которого нет определен столбец первичного ключа, не создает DBDirect-методы.  
   
-|Метод DBDirect адаптера таблицы|Описание|  
+|Метод DBDirect адаптера таблицы|Описание:|  
 |----------------------------------|-----------------|  
 |`TableAdapter.Insert`|Добавление новых записей в базу данных и позволяет передавать значения отдельных столбцов в качестве параметров метода.|  
 |`TableAdapter.Update`|Обновляет существующие записи в базе данных. `Update` Метод принимает исходные и новые значения столбцов в качестве параметров метода. Исходные значения используются для обнаружения исходной записи, а новые значения используются для обновления этой записи.<br /><br /> `TableAdapter.Update` Метод также используется для согласования изменений в наборе данных обратно в базу данных, выполнив <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, или массив <xref:System.Data.DataRow>как параметры метода.|  

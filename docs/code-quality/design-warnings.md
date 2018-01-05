@@ -17,18 +17,19 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 56063dd3ff23088bb62d07ecde3d41c941a7fa2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ed7e9109e36255a8c8390d26455d6c3c568e550
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="design-warnings"></a>Предупреждения конструктора
 Предупреждения конструктора поддерживают соблюдение рекомендации по разработке .NET Framework.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA1000: не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|При вызове статического элемента универсального типа нужно указать аргумент этого типа. При вызове универсального экземпляра элемента, не поддерживающего вывод типа, для элемента нужно указать аргумент типа. В этих двух случаях синтаксис для определения аргумента типа различен, и его можно легко спутать.|  
 |[CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|В классе объявляется и реализуется поле экземпляра, которое относится к типу System.IDisposable и класс не реализует интерфейс IDisposable. Класс, в котором объявляется поле IDisposable, неявно владеет неуправляемым ресурсом и должен реализовывать интерфейс IDisposable.|  

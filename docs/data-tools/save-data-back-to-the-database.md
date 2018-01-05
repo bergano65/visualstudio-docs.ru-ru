@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Сохранить данные в базе данных
 Набор данных — в памяти данных. При изменении данных, рекомендуется сохранить эти изменения в базе данных. Одним из трех способов это сделать.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/12/2017
   
 Если вы знакомы с адаптеры таблиц TableAdapter, можно перейти непосредственно на один из следующих разделов:  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Вставка новых записей в базу данных](../data-tools/insert-new-records-into-a-database.md)|Как выполнять обновления и вставки с помощью адаптеров таблиц или команд объектов|  
 |[Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)|Выполнить обновление с адаптеры таблиц TableAdapter|  
@@ -122,7 +123,7 @@ ms.lasthandoff: 12/12/2017
   
  В следующей таблице приведены возможные значения <xref:System.Data.DataRowState> перечисления:  
   
-|Значение DataRowState|Описание|  
+|Значение DataRowState|Описание:|  
 |------------------------|-----------------|  
 |<xref:System.Data.DataRowState.Added>|Строка была добавлена как элемент в <xref:System.Data.DataRowCollection>. (Строки в этом состоянии не имеет соответствующей исходной версии, так как она не существовала при последней <xref:System.Data.DataRow.AcceptChanges%2A> был вызван метод).|  
 |<xref:System.Data.DataRowState.Deleted>|Строка была удалена с помощью <xref:System.Data.DataRow.Delete%2A> из <xref:System.Data.DataRow> объекта.|  
@@ -135,7 +136,7 @@ ms.lasthandoff: 12/12/2017
   
 В следующей таблице приведены возможные значения <xref:System.Data.DataRowVersion> перечисления:  
   
-|Значение DataRowVersion|Описание|  
+|Значение DataRowVersion|Описание:|  
 |--------------------------|-----------------|  
 |<xref:System.Data.DataRowVersion.Current>|Текущая версия записи содержит все изменения, которые были выполнены для записи с момента последнего <xref:System.Data.DataRow.AcceptChanges%2A> был вызван. Если строка была удалена, нет текущей версии нет.|  
 |<xref:System.Data.DataRowVersion.Default>|Значение по умолчанию записи, в соответствии с определением набора данных схема или источник данных.|  

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f04a49c8c68fcc597ecd98471b46932d467b365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c67e5963cdac0c9398ee2e4d54a4cd3347fee66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: необходимо определять методы доступа для аргументов атрибутов
 |||  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="custom-attributes-example"></a>Пример настраиваемых атрибутов  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере показано два атрибута, определяющих обязательный параметр (позиционные). Первый реализации атрибута задано неправильно. Реализация второго правильно работает.  
   
 ### <a name="code"></a>Код  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="positional-and-named-arguments"></a>Позиционные и именованные аргументы  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Позиционные и именованные аргументы упрощают для пользователей библиотеки обязательных атрибута и какие аргументы являются необязательными.  
   
  В следующем примере показана реализация атрибута, который использует позиционные и именованные аргументы.  

@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0cefdb203011a24769b5b180a442d22a90d0b5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20538a6729b1221d4559e65eae957b0125df7e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: коллекции должны реализовывать универсальный интерфейс
 |||  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="example-violation"></a>Пример нарушения  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере показано класс (ссылочный тип), производный от неуниверсальные `CollectionBase` класс, который нарушает это правило.  
   
 ### <a name="code"></a>Код  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="fix-by-base-class-change"></a>Устранить ошибку, измените базовый класс  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере нарушение устраняется путем изменения базового класса коллекции с неуниверсальные `CollectionBase` класса для универсального `Collection<T>` (`Collection(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) класса.  
   
 ### <a name="code"></a>Код  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="fix-by-interface-implementation"></a>Исправление посредством реализации интерфейсов  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Следующий пример нарушение устраняется посредством реализации следующих универсальных интерфейсов: `IEnumerable<T>`, `ICollection<T>`, и `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, и `IList(Of T)` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).  
   
 ### <a name="code"></a>Код  

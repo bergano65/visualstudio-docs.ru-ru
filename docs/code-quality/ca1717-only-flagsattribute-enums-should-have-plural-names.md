@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 787b2f5c1a838bb6312fe5d08cd8328b07460243
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 203ee8af0f28f272ece784f086f7aeba7341dfc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: только перечисления FlagsAttribute должны иметь имена во множественном числе
 |||  
@@ -57,4 +58,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>См. также  
  <xref:System.FlagsAttribute?displayProperty=fullName>   
- [Перечисление разработки](/dotnet/standard/design-guidelines/enum)
+ [Разработка перечислений](/dotnet/standard/design-guidelines/enum)

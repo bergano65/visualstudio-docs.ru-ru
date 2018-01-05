@@ -13,18 +13,19 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd - ошибки
 FxCopCmd не считает все ошибки неустранимыми. Если у FxCopCmd имеется достаточно данных для частичного анализа, он выполняет возникших ошибок анализа и отчетов. Код ошибки, который является 32-разрядное целое число, содержит битовую комбинацию числовых значений, соответствующих ошибкам.  
   
  В следующей таблице описаны коды ошибок, возвращенные FxCopCmd:  
   
-|Ошибка|Числовое значение|  
+|Error|Числовое значение|  
 |-----------|-------------------|  
 |Без ошибок|0x0|  
 |Ошибка анализа|0x1|  

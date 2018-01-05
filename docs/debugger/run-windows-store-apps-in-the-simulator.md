@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Запуск приложения UWP и Windows 8.1 в симуляторе
 Симулятор Visual Studio для приложений UWP и Windows 8.1 — это классическое приложение, которое имитирует приложение UWP или Windows 8.1. Можно запустить приложения выбирать физический размер и разрешение экрана, которые требуется эмулировать. Можно имитировать распространенные касания и поворота события и свойства сетевых подключений.
@@ -146,7 +147,7 @@ ms.lasthandoff: 11/11/2017
   
  [Реакция на системные события с фоновыми задачами](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Активация приостановки, возобновления и фоновых событий в приложениях UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Вызов событий приостановки, возобновления и фоновых событий в приложениях UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Навигация по симулятору с помощью клавиатуры  
  Панель инструментов имитатора можно перейти, нажав клавишу **сочетание клавиш CTRL + ALT + СТРЕЛКА ВВЕРХ** чтобы перенести фокус с окна симулятора на панель инструментов симулятора. Используйте клавиши **Стрелка вверх** и **Стрелка вниз** для перемещения между кнопками панели инструментов.  

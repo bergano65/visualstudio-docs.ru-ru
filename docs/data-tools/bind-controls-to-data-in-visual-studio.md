@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Привязка элементов управления к данным в Visual Studio
 Для пользователей приложения данные можно отображать путем привязки данных к элементам управления. Можно создать эти элементы управления с привязкой к данным путем перетаскивания элементов из **источники данных** окна на поверхность разработки или элементов управления в рабочей области в Visual Studio.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 |EDM (модель данных с использованием сущностей)|Да<sup>1</sup>|Да|Да|  
 |Классы LINQ-SQL|Не<sup>2</sup>|Не<sup>2</sup>|Не<sup>2</sup>|  
 |Службы (включая [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services и веб-служб)|Да|Да|Да|  
-|Объект|Да|Да|Да|  
+|Object|Да|Да|Да|  
 |SharePoint|Да|Да|Да|  
   
  1. Создать модель с помощью **модели EDM** мастера, затем перетащить нужные объекты в конструктор.  

@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d1efd7051d9119c4d0e6643c1d42e78d9cdde7cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Добавление пользовательских элементов управления в окно "Источники данных"
 При перетаскивании элемента из **источники данных** окна в рабочую область конструирования для создания элемента управления с привязкой к данным, можно выбрать тип элемента управления, который вы создаете. Каждый элемент в окне имеет отображает элементы управления, которые можно выбрать в списке. Набор элементов управления, связанных с каждым элементом, определяется тип данных элемента. Если элемент управления, который требуется создать не отображается в списке, необходимо выполнить инструкции этого раздела, чтобы добавить элемент управления в список.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
      Элемент управления должен иметь одно из следующих атрибутов.  
   
-    |Атрибут|Описание|  
+    |Атрибут|Описание:|  
     |---------------|-----------------|  
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Реализуйте этот атрибут для простого элемента управления, которые отображают отдельный столбец (или свойство) данных, например <xref:System.Windows.Forms.TextBox>.|  
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Реализуйте этот атрибут в элементе управления, которые отображают списки (или таблицы) данных, например <xref:System.Windows.Forms.DataGridView>.|  

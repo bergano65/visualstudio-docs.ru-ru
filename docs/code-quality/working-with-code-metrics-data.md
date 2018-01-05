@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198e4b6d0ba2f3517cf907007cc544ca2e154013
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-code-metrics-data"></a>Работа с данными метрик кода
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 12/14/2017
 
 Можно создать [Visual Studio Team Services (VSTS)](/vsts/index) рабочего элемента, который основан на приводит к **результатов метрики кода** окна. При создании рабочего элемента в Visual Studio автоматически вводит название в **заголовок** поля и данные метрик кода в разделе **журнал** вкладки.
 
-Дополнительные сведения о VSTS рабочих элементов см. в разделе [рабочие элементы](/vsts/work/work-items/index).
+Дополнительные сведения о VSTS рабочих элементов см. в разделе [рабочих элементов (VSTS)](/vsts/work/work-items/index).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Для создания рабочего элемента, на основе результата
 

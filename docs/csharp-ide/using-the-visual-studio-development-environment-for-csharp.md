@@ -18,18 +18,19 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4836bdb470bf993bdc6f2b8f581859030016600
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 206d93d748a1d1033df48f9156997bd37b27f482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Использование среды разработки Visual Studio для C# #
 Среда разработки Visual Studio (IDE) — это совокупность средств разработки, предоставляемых через единый пользовательский интерфейс. Некоторые средства используются совместно с другими языками [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], в то время как другие, например, компилятор C#, свойственны только Visual C#. В этом разделе содержатся ссылки на наиболее важные средства Visual C#.  
   
 ## <a name="related-topics"></a>Связанные разделы  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Общие сведения о многих компонентах и средствах разработки приложений, включенных в среду Visual Studio.|  
 |[Создание решений и проектов](../ide/creating-solutions-and-projects.md)|Описание процедуры создания проекта, который содержит все файлы с исходным кодом, файлы ресурсов, такие как значки, ссылки на внешние файлы и данные конфигурации, такие как параметры компилятора.|  

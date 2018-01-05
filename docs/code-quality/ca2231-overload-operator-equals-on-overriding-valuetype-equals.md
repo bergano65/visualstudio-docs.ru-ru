@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0295b7379fbac1ae3e1c84afca651503d6984ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ee207eb3e5c4babb5bcb9f7d88f9afd3908a3c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals
 |||  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Описание правила  
  В большинстве языков программирования отсутствует реализация по умолчанию для типов значений оператора равенства (==). Если язык программирования поддерживает перегрузки операторов, следует рассмотреть, реализации оператора равенства. Его поведение должно быть идентично <xref:System.Object.Equals%2A>.  
   
- Оператор проверки на равенство по умолчанию нельзя использовать в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object.Equals в реализации. Например:  
+ Оператор проверки на равенство по умолчанию нельзя использовать в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object.Equals в реализации. Пример:  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  

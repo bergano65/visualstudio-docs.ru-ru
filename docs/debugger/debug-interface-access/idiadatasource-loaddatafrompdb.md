@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b9192484e2ac9c957bc53a2e5a5a5965fd7a46a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01348d666b4e6a3b9333a242bb285eff44f5b7c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Открывает и подготавливает PDB-файл программы, как источник данных отладки.  
@@ -38,7 +39,7 @@ HRESULT loadDataFromPdb (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|Не удалось открыть файл, или определить, что файл имеет недопустимый формат.|  
 |E_PDB_FORMAT|Предпринята попытка доступа к файлу с устаревший формат.|  

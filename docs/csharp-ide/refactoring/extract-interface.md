@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractinterface
 dev_langs: csharp
-ms.openlocfilehash: 854e341a5c02b3bb4b0a596720a4899410550689
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8123154159e34597c0c76e941cd2db5824c9478e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-an-interface-in-c"></a>Извлечение интерфейса в C# #
 **Что:** позволяет создавать интерфейс с помощью существующих членов из класса, структуры или интерфейса.
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
      * Щелкните правой кнопкой мыши имя класса, выберите **Быстрые действия и рефакторинг** и выбрать пункт **извлечение интерфейса** из контекстного меню окна предварительного просмотра.
 
 1. В **извлечение интерфейса** диалоговое окно, появится окно, введите сведения, задаваемые: ![извлечение интерфейса](media/extractinterface_dialog.png)
-   | Поле | Описание |
+   | Поле | Описание: |
    | --- | --- |
    | **Имя нового интерфейса** | Имя интерфейса, который должен быть создан. Это будет по умолчанию я*ClassName*, где *ClassName* имя класса, выбранной выше. |
    | **Новое имя файла** | Имя файла, который будет создан, будет содержать интерфейс. Как с именем интерфейса, это будет по умолчанию я*ClassName*, где *ClassName* имя класса, выбранной выше. |

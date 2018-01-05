@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44ba1c444d9348babcf07bfd807d6b0767bf3de9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4d34acafb4f014b91e4c0f707060ce0442a413e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: переопределяйте равенство при перегрузке оператора равенства
 |||  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Примеры неоднородных определений равенства  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере показано тип с несогласованными определениями равенства. `BadPoint`изменяет значение равенства, предоставляя пользовательскую реализацию оператора равенства, но не переопределяет <xref:System.Object.Equals%2A> , чтобы он ведет себя идентично.  
   
 ### <a name="code"></a>Код  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
 **b == bcopy? Да**   
 ## <a name="class-example"></a>Пример класса  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере класс (ссылочный тип), нарушающий это правило.  
   
 ### <a name="code"></a>Код  
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="structure-example"></a>Пример структуры  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере показана структура (тип значения), нарушающий это правило.  
   
 ### <a name="code"></a>Код  

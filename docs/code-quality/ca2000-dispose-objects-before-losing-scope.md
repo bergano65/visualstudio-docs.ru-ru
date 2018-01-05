@@ -19,11 +19,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81c553a9ae45ed44e8c5d96f49f2063e6383e5ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 57b499756292a62c64b44f864042ffa740a14016
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: удалите объекты до того, как будет потеряна область действия
 |||  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Инициализацию членов удаляемого объекта не следует выполнять в конструкторе с помощью инструкции.  
   
--   Вложенные конструкторы, которые защищены только одним обработчиком исключений. Например:  
+-   Вложенные конструкторы, которые защищены только одним обработчиком исключений. Например, примененная к объекту директива  
   
     ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -166,4 +167,4 @@ End Function
 
 ## <a name="see-also"></a>См. также  
  <xref:System.IDisposable>   
- [Шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Шаблон ликвидации](/dotnet/standard/design-guidelines/dispose-pattern)

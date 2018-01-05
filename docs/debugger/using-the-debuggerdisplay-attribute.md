@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 263a6628154a5c36326c7fbdbd7a522cde28c40a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5221ba5a395e1cfbbe624b3d65e6762bedb8d2e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Использование атрибута DebuggerDisplay
 [DebuggerDisplayAttribute-класс](/dotnet/api/system.diagnostics.debuggerdisplayattribute) управляет отображением объекта, свойство или поле в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  Атрибут`DebuggerDisplay` также может принимать именованные параметры.  
   
-|Параметры|Назначение|  
+|Параметры|Цель|  
 |----------------|-------------|  
 |`Name`, `Type`|Эти параметры влияют на столбцы **Имя** и **Тип** окон переменных. (Для них также может быть задан вывод строк с использованием того же синтаксиса, что и для конструктора.) Злоупотребление этими параметрами или их неправильное использование может, однако, привести к выводу неудобочитаемых или недостоверных данных.|  
 |`Target`, `TargetTypeName`|Указывает конечный тип, когда атрибут используется на уровне сборки.|  

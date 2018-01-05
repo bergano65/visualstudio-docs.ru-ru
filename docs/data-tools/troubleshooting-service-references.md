@@ -20,17 +20,18 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: e46c8bf778ff18ea25096e524716bcb44916f460
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-service-references"></a>Диагностика ссылок на службы
 В этом разделе перечислены распространенные проблемы, которые могут возникнуть при работе с [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] или [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] ссылок в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="error-returning-data-from-a-service"></a>Ошибка возврата данных из службы  
- При возвращении `DataSet` или `DataTable` из службы, можно получить исключение «был превышен максимальный размер квоты входящих сообщений». По умолчанию `MaxReceivedMessageSize` для некоторых привязок задано относительно небольшое значение позволяет снизить уязвимость для атак типа "отказ в обслуживании". Можно увеличить это значение, чтобы избежать возникновения исключения. Для получения дополнительной информации см. <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.  
+ При возвращении `DataSet` или `DataTable` из службы, можно получить исключение «был превышен максимальный размер квоты входящих сообщений». По умолчанию `MaxReceivedMessageSize` для некоторых привязок задано относительно небольшое значение позволяет снизить уязвимость для атак типа "отказ в обслуживании". Можно увеличить это значение, чтобы избежать возникновения исключения. Дополнительные сведения см. в разделе <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.  
   
  Чтобы устранить эту ошибку:  
   

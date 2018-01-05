@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 00686648576ecc0f8054fe56112c5c47bb54adb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f27fdbe216b6ba2a738f6d9f45d746344d542b38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Создание таблиц подстановки в приложениях Windows Forms
 Термин *таблицы подстановки* описание элементов управления, привязанных к двух связанных таблиц данных. Эти элементы управления поиска отображают данные из первой таблицы на основе значения, выбранного во второй таблице.  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
      Теперь устанавливаются привязок поиска. См. в следующей таблице свойства, которые были установлены в элементе управления.  
   
-    |Свойство|Пояснение к параметру|  
+    |Свойство.|Пояснение к параметру|  
     |--------------|----------------------------|  
     |**Источник данных**|Visual Studio задает для этого свойства <xref:System.Windows.Forms.BindingSource>, созданный для перетаскиваемой на элемент управления таблицы (сравните с созданием <xref:System.Windows.Forms.BindingSource> при создании элемента управления).<br /><br /> Если вы хотите внести корректировку, установите это значение <xref:System.Windows.Forms.BindingSource> таблицы со столбцом, который требуется отобразить.|  
     |**DisplayMember**|Visual Studio задает для данного свойства первый столбец после первичного ключа, содержащий тип строковых данных для таблицы, которую вы перетаскиваете на элемент управления.<br /><br /> Если вы хотите внести корректировку, установите это имя столбца, который вы хотите отобразить.|  

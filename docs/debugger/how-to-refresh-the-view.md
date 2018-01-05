@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b52d62a3da405f2bc0abbac91b0de8c1690cab2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f2cff688dcc35d87c47a23d8243b68747c1c3f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-refresh-the-view"></a>Практическое руководство. Обновление представления
 Spy ++ делает «снимок» системных таблиц и обновляет представление на основе этих сведений. Очень важно периодически обновлять системные представления. При наличии представления Spy ++ откройте и не обновлялось представление будет отсутствовать эти процессы, потоки и windows, которые впоследствии создаются. Кроме того вы можете увидеть элементы, которые больше не существуют. **Обновление** команда доступна во всех представлениях за исключением представления сообщений.  

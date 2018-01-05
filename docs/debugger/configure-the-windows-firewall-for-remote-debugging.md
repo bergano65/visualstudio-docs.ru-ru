@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9432c65ec6a481b23655fb2a92915a4a4365ed5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7458c2f35bfd29c53b939b6300d2759f0e7897f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Настройка брандмауэра Windows для удаленной отладки
 В этом разделе описывается настройка брандмауэра для обеспечения удаленной отладки на компьютерах со следующими операционными системами:  
   
--   Windows 10  
+-   Windows 10  
   
 -   Windows 8 или 8.1  
   
@@ -117,8 +118,8 @@ ms.lasthandoff: 10/31/2017
 |||||  
 |-|-|-|-|  
 |**Порты**|**Входящий или исходящий**|**Протокол**|**Описание**|  
-|135, 139, 445|Исходящий|TCP|Обязательный.|  
-|137, 138|Исходящий|UDP|Обязательный.|  
+|135, 139, 445|Исходящий|TCP|Обязательно.|  
+|137, 138|Исходящий|UDP|Обязательно.|  
 |500, 4500|Исходящий|UDP|Требуется, если в соответствии с политикой домена обмен данными по сети должен осуществляться по протоколу IPSec.|  
 |80|Исходящий|TCP|Требуется для отладки веб-сервера.|
   

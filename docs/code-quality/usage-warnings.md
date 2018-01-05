@@ -17,18 +17,19 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57068ae8c3d6bb8f86b8a9b052f4d1e2f5fec2d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 740907b94611a0de4566260b5fd644048463178c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usage-warnings"></a>предупреждения использования
 Предупреждения использования поддерживают правильное использование платформы .NET Framework.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)|Сигнатура метода включает параметр, не использующийся в основной части метода.|  
 |[CA1806: не игнорируйте результаты метода](../code-quality/ca1806-do-not-ignore-method-results.md)|Создается, но никогда не используется новый объект, либо вызывается метод, который создает и возвращает новую строку, и такая новая строка никогда не используется, либо метод COM или P/Invoke возвращает HRESULT или код ошибки, который никогда не используется.|  

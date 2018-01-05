@@ -1,5 +1,5 @@
 ---
-title: "Устранение неполадок анализа кода | Документы Microsoft"
+title: "Устранение проблем, связанных с анализом кода | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,25 +12,26 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e552570eb48b9210b366ebbfe157fe656ab3fe0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0773c429ad8e738e0de280b4fe2abbf2fa6e5c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Устранение проблем, связанных с анализом кода
-Этот раздел содержит сведения об устранении неполадок для перечисленных ниже проблем анализа кода Visual Studio.  
+В этом разделе приводятся сведения об устранении указанных ниже неполадок, связанных с анализом кода в Visual Studio.  
   
--   [Изменения в Visual Studio 2010 правило набора, не отражаются в предыдущих версиях Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
+-   [Изменения в наборе правил Visual Studio 2010 не отражаются в предыдущих версиях Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a>Изменения в Visual Studio 2010 правило набора, не отражаются в предыдущих версиях Visual Studio  
- При создании набора правил в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] , содержащего дочерний набор правил, изменение дочерний набор правил не может применяться в выполнение анализа кода на компьютерах с использованием более ранней версии Visual Studio. Чтобы устранить эту проблему, необходимо принудительно перезаписать родительский набор правил, который является набор правил, содержащий дочерний набор правил.  
+##  <a name="ChildRuleSetChangesInPreviousVersions"></a> Изменения в наборе правил Visual Studio 2010 не отражаются в предыдущих версиях Visual Studio  
+ При создании в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] набора правил, содержащего дочерний набор правил, изменения, внесенные в дочерний набор правил, могут не применяться при анализе кода на компьютерах, на которых используется предыдущая версия Visual Studio. Для устранения этой проблемы необходимо принудительно перезаписать родительский набор правил, то есть набор правил, содержащий дочерний набор.  
   
-1.  Откройте родительский набор правил [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
+1.  Откройте родительский набор правил в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
   
-2.  Внесите изменения, такие как добавление или удаление правила, а затем сохраните набор правил.  
+2.  Внесите изменение, например добавьте или удалите правило, а затем сохраните набор правил.  
   
-3.  Повторно откройте набор правил, отменить изменение и сохраните снова набора правил.  
+3.  Повторно откройте набор правил, отмените изменение, а затем сохраните набор правил повторно.  
   
 ## <a name="see-also"></a>См. также  
  [Анализ качества приложения](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   

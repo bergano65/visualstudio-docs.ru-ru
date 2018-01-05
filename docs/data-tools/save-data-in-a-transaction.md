@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f8d1d25c2aaa66658df53dbaea366c196e8e7f6b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство: Сохранение данных в транзакции
 В этом пошаговом руководстве демонстрируется сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. В этом пошаговом руководстве вы создадите приложение Windows Forms. Мастер настройки источника данных будет использоваться для создания набора данных для двух таблиц в базе данных Northwind. Вы добавите с привязкой к данным элементы управления в форму Windows Forms, и будет изменена код BindingNavigator кнопку Сохранить обновление базы данных внутри области TransactionScope.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/09/2017
   
     -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
-         -или-  
+         - или -  
   
     -   Выберите **новое подключение** для запуска **Добавить/изменить подключение** диалоговое окно и создать подключение к базе данных Northwind.  
   

@@ -22,16 +22,17 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Подавление предупреждений при помощи атрибута SuppressMessage
 Часто полезно указать, что предупреждение неприменимо, чтобы члены группы знали, что код прошел проверку и выяснилось, что предупреждения должны подавляться. В исходном коде (ISS) позволяет разработчику расположить атрибут, подавляющий предупреждение, рядом с местом, в котором создается предупреждение. Можно добавить такой атрибут непосредственно в исходном файле, или можно использовать контекстное меню в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
 |||  
 |-|-|  

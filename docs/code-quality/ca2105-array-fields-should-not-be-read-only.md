@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bfc20d1bb2ae34455c836219bb809221f2ca382e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c791bfaa652570767a5ea0f3fa351b1b3b88b068
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: поля массивов не должны быть доступны только для чтения
 |||  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Чтобы устранить уязвимость системы безопасности, который определен с помощью этого правила, не следует полагаться на содержимое массива только для чтения, могут быть открыты для общего доступа. Настоятельно рекомендуется использовать один из следующих процедур:  
   
--   Замените массив строго типизированную коллекцию, которую нельзя изменить. Для получения дополнительной информации см. <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
+-   Замените массив строго типизированную коллекцию, которую нельзя изменить. Дополнительные сведения см. в разделе <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
   
 -   Замените открытое поле методом, который возвращает клон частного массива. Поскольку код не использует копию, отсутствует опасность, если элементы были изменены.  
   

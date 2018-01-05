@@ -17,16 +17,17 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8206ed1f1215a88408db6f3ef0be387932ec11a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c1349a2d92f8c824fe61844ba04606ed16075d3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Справочник по SDK для доступа к интерфейсу отладки
 Ссылка на все интерфейсы и вспомогательные перечисления и структуры в пакет SDK для завершения.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
  Полный справочник для всех интерфейсов, предоставляемых пакетом SDK для доступа к интерфейсу отладки.  
   

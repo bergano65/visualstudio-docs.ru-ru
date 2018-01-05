@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb6d83004414abd530a8274f5338b134de2a5403
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 6db3e112f45200221eff80c033daed4a04c152d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для машинного кода"
 Минимальные правила Microsoft для машинного кода связаны с наиболее важными проблемами в машинном коде, включая возможные уязвимости безопасности и случаи аварийного завершения работы приложений. Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|  
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|  

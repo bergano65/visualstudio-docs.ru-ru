@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1f67a87f4a704d3f76ccddba62112983c058a9f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8d55ecd52b3fa817e9a5ee199a69e3d29644346e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Microsoft Access (Windows Forms)
 Можно подключиться к базе данных (MDF-файла или ACCDB-файла) с помощью Visual Studio. После определения соединения, данные отображаются в **источники данных** окна. Здесь можно перетаскивать таблицы и представления на формы.   
@@ -120,7 +121,7 @@ ms.lasthandoff: 11/09/2017
 ## <a name="security"></a>Безопасность  
  Хранение конфиденциальных сведений (например, пароля) может повлиять на безопасность приложений. Использование проверки подлинности Windows (также называемой встроенными средствами безопасности) — более безопасный способ управления доступом к базе данных. Дополнительные сведения см. в разделе [Защита сведений о подключении](/dotnet/framework/data/adonet/protecting-connection-information).  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Только что созданный набор данных станет доступным в **источники данных** окна. Теперь можно выполнить любую из следующих задач:  
   
 -   Выберите элементы в **источники данных** окна и перетащите их на форму (см. [элементы управления Windows Forms, привязка к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  

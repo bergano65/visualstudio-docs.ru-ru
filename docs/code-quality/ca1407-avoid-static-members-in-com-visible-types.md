@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43240b8969026a8bbec18528230d3ca97bcb2236
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9cb2b7a95772ddd95bf4379ea0749cf42419a182
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: не используйте статические члены в видимых COM типах
 |||  
@@ -69,7 +70,7 @@ namespace Samples
   
 ## <a name="example-violation"></a>Пример нарушения  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере показан `static` метод, который нарушает это правило.  
   
 ### <a name="code"></a>Код  
@@ -80,7 +81,7 @@ namespace Samples
   
 ## <a name="example-fix"></a>Пример исправления  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Чтобы устранить нарушение в предыдущем примере, можно изменить метод на метод экземпляра, однако, не имеет смысла в данном экземпляре. Лучшим решением является явное применение `ComVisible(false)` в метод, чтобы сделать его снимите флажок, чтобы другие разработчики, что метод не виден из COM.  
   
  В следующем примере применяется <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> методу.  

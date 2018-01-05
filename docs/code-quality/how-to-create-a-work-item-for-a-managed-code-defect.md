@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f416f8000240101d8ac6e29603d1b2f662e1b76
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d42545329cfce4486e17fac000035c77307f07b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Практическое руководство. Создание рабочего элемента для дефекта управляемого кода
 Можно использовать функцию для журнала рабочего элемента с помощью отслеживания рабочих элементов [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]. Чтобы воспользоваться этой функцией, проект должен быть командный проект в [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  

@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bfc537118f6c1769ec98893099daa0c61d1b5b1d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-relationships-between-datasets"></a>Создать связи между наборами данных
 Наборы данных, содержащие связанные данные таблиц, используют <xref:System.Data.DataRelation> объектов для представления иерархическое отношение между таблицами и возврата связанных записей друг от друга. Добавление связанных таблиц к наборам данных с помощью **мастер настройки источника данных**, или **конструктора наборов данных**, создает и настраивает <xref:System.Data.DataRelation> объект.  
@@ -97,7 +98,7 @@ ms.lasthandoff: 11/09/2017
   
 8.  Установите или снимите **вложенное отношение** поле. Выбор этого параметра задает <xref:System.Data.DataRelation.Nested%2A> свойства `true`, и в этом случае дочерние строки связи вкладываются в родительский столбец записан как XML-данных или синхронизированы с этих строк <xref:System.Xml.XmlDataDocument>. Дополнительные сведения см. в разделе [вложение отношений DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).  
   
-9. Задайте правила, которые будут применяться при внесении изменений в записи в этих таблицах. Для получения дополнительной информации см. <xref:System.Data.Rule>.  
+9. Задайте правила, которые будут применяться при внесении изменений в записи в этих таблицах. Дополнительные сведения см. в разделе <xref:System.Data.Rule>.  
   
 10. Нажмите кнопку **ОК** для создания связи. Появится линия связи между двумя таблицами в конструкторе.  
   
