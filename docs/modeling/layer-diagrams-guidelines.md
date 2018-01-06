@@ -16,11 +16,12 @@ caps.latest.revision: "55"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 6f55cbcd7e213d228a8b20f89538dfd88d8c2038
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4590652f37c3f1a1bdaf6bd601aee8d01d1a1c98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-guidelines"></a>Схемы зависимостей: рекомендации
 Описание архитектуры приложения на высоком уровне, создавая *схемы зависимостей* в Visual Studio. Убедитесь, что кода дизайну это путем проверки кода с помощью диаграммы зависимостей. В процесс сборки также можно включить проверку слоев. В разделе [видео Channel 9: проектирования и проверки архитектуры с использованием схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=252073).  

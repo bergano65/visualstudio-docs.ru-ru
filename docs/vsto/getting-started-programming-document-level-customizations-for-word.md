@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 424c4867f0b18d7f819bf60a248b801741916efb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12265c725480324c396d59d848e5269432bb5d6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-word"></a>Приступая к работе: программирование настроек уровня документа для Word
   Если вы только начинающие работу создания настроек на уровне документа для Microsoft Office Word с помощью Visual Studio, вот что нужно знать.  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="binding-controls-to-data"></a>Привязка элементов управления к данным  
  Элементы управления содержимым и <xref:Microsoft.Office.Tools.Word.Bookmark> управления находятся в списке элементов управления, которые можно перетаскивать из **источники данных** окна. Добавление элементов управления содержимым и закладок подобным образом автоматически привязывает их к источнику данных, которая настраивается с помощью окна. Без написания кода, можно отобразить данные из базы данных, служб и бизнес-объектов. Дополнительные сведения см. в разделе [привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о создании настройки на уровне документа для Word, см [Пошаговое руководство: создание вашего первого уровня документа настройки для слова](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md). В этом пошаговом руководстве представлены средства разработки Office в Visual Studio и модель программирования для настроек на уровне документа Word.  
   
  Список разделов с пошаговыми руководствами для некоторых общих задач в проектах Word см. в разделе [общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md).  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [Пошаговое руководство: Создание первой настройки уровня документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)   
  [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)   
  [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)   
- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cd83a8d8e72c18f8a6929e8985f7a8635a940d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-buttons"></a>Кнопки окна свойств
 В зависимости от языка разработки и тип продукта, определенные кнопки отображаются по умолчанию на панели инструментов для **свойства** окна. Во всех случаях **по категориям**, **Alphabetized**, **свойства**, и **страницы свойств** отображаются кнопки. В Visual C# и Visual Basic **события** отображается кнопка. В некоторых проектах Visual C++ **сообщения VC ++** и **переопределяет VC** отображаются кнопки. Для других типов проектов могут отображаться дополнительные кнопки. Дополнительные сведения о кнопках в **свойства** окна, в разделе [окно свойств](../../ide/reference/properties-window.md).  

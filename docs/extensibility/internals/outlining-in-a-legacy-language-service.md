@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010ec576fe8d1cd52c82165793324eede0da9e6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 76f47edd31892a98ec3235bfc4a00f5f2e647408
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Структуризация в языковую службу прежних версий
 Структурирование делает возможным сворачивание сложную программу в общие сведения или структуры. Например в C# все методы можно свернуть, чтобы одна строка, показывающая сигнатуре метода. Кроме того классы и структуры можно свернуть, чтобы отображать только имена структуры и классы. В одном методе сложной логики можно свернуть, чтобы показать общий поток, отображая только первая строка инструкции, такие как `foreach`, `if`, и `while`.  

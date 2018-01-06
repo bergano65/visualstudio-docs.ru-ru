@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Как: открытие редакторов для открытых документов
 Еще до открытия окна документа проекта проекта сначала необходимо определить ли файл уже открыт в окне документа для другого редактора. Файл можно открыть в редакторе конкретного проекта или одним из стандартных редакторов зарегистрирована [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

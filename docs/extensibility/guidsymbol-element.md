@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dcad9882b1c72c15837529d736eeabff58f3826
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d5089d87156bd5eb191176fe73ab19a01d497b90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidsymbol-element"></a>Элемент GuidSymbol
 `GuidSymbol` Элемент содержит идентификатор GUID, представляющий меню, группы или команды пару. Идентификатор поступают из `IDSymbol` элемент в `GuidSymbol` элемент. `GuidSymbol` Элемент имеет `name` атрибут, который содержит понятное имя для идентификатора GUID, который содержится в `value` атрибута.  
@@ -40,18 +41,18 @@ ms.lasthandoff: 10/31/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Обязательный. Имя символа идентификатора GUID.|  
-|значение|Обязательный. Идентификатор GUID символом GUID.|  
+|имя|Обязательно. Имя символа идентификатора GUID.|  
+|value|Обязательно. Идентификатор GUID символом GUID.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент IDSymbol](../extensibility/idsymbol-element.md)|Содержит идентификатор, представляющий меню, группы или команды пару.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Symbols](../extensibility/symbols-element.md)|Группы `GuidSymbol` элементов в vsct-файл.|  
   

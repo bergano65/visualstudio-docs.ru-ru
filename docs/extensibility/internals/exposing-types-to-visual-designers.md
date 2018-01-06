@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-types-to-visual-designers"></a>Предоставление типов для визуальных конструкторов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]необходимо иметь доступ для определения классов и типов во время разработки для отображения визуального конструктора. Классы загружаются из предопределенного набора сборок, которые включают в себя набор зависимостей завершения текущего проекта (ссылки, а также их зависимости). Также может быть необходимо для визуальные конструкторы доступа классы и типы, определенные в файлы, созданные пользовательские средства.  

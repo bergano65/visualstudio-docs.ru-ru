@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 287618def7897cd2c91a63db9d8272c919190dfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 408d7801e883e85e37d721c342dba691702d77cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Практическое руководство. Изменение конфигурации развертывания SharePoint
   Можно создать конфигурацию развертывания или изменить существующую конфигурацию развертывания. Например можно выполнить за один шаг или изменить порядок шагов в процессе развертывания. Вы можете для создания или изменения конфигураций развертывания, так как встроенные и добавленные программным способом конфигурации нельзя изменить.  

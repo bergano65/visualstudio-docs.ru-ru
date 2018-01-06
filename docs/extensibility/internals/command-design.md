@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf6d0d7a9aa556aab454f90e4dcfc5dc4f236c03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe3db0582c65a2ece2162ab24afb6d179b865a27
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-design"></a>Команды конструктора
 При добавлении команды VSPackage, необходимо указать которых может отображаться, когда он доступен и каким образом будет обрабатываться.  
@@ -61,9 +62,9 @@ ms.lasthandoff: 10/31/2017
   
  В большинстве случаев среды обрабатывает команды с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса. Поскольку схема маршрутизации команд позволяет использовать множество различных объектов для обработки команд, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> может быть реализован любое количество объектов; они включают элементы управления ActiveX, окна представления реализации, объекты документа, иерархии проекта и VSPackage сами объекты (для глобальные команды). В некоторых специальных случаях, например, маршрутизация команд в иерархии, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс должен быть реализован.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Реализация](../../extensibility/internals/command-implementation.md)|Описывает, как реализуются команды в VSPackage.|  
 |[Доступность](../../extensibility/internals/command-availability.md)|Описывается, как Visual Studio контекст определяет список доступных команд.|  

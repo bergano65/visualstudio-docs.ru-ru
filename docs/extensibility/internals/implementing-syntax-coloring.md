@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>Реализация Цветовая подсветка синтаксиса
 При языковая служба предоставляет окрашивание синтаксиса, средство синтаксического анализа преобразует строки текста в массиве цветных элементов и возвращает соответствующий эти цветные элементы типов маркеров. Средство синтаксического анализа должен возвращать маркера типов, входящих в перечень цветных элементов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Отображает каждого цветного элемента в окне кода согласно атрибуты, назначенные в объекте colorizer соответствующий тип маркера.  

@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Приступая к работе с языковой службы и расширения редактора
 Редактор расширения можно использовать для добавления службы возможности языка, такие как структурирование, парные фигурные скобки, IntelliSense и лампочки языка программирования или в любой тип содержимого. Также можно настроить внешний вид и поведение редактора Visual Studio, например текст в выделение цветом, поля, элементы оформления и другие визуальные элементы. Можно также определять собственные типы содержимого и задать внешний вид и поведение текста представления, в которых отображается содержимое.  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="managing-extensions"></a>Управление расширениями  
  Расширения для Visual Studio, перечислены в **расширения и обновления** (на **средства** меню). Если вы тестируете расширения в экспериментальном экземпляре, он будет отображен в **расширения и обновления** в экспериментальном экземпляре, но не указана в экземпляре разработки.  
   
- Дополнительные сведения см. в разделе [поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+ Дополнительные сведения см. в разделе [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Использование шаблонов для создания расширений редактора  
  Редактор шаблонов можно использовать для создания расширений MEF, регулирующие классификаторы, элементы оформления и поля. Существуют шаблоны для проектов C# и Visual Basic. Дополнительные сведения см. в разделе [создания расширения с помощью шаблона элемента редактор](../extensibility/creating-an-extension-with-an-editor-item-template.md).  

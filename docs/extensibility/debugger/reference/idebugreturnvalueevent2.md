@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64fe7f3e673df9f78b81de73561e798b1415f15c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0ad57acd6218158b1dd10b0f18e421bcd397a2d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) после пошагового выполнения из или обходом функции.  
@@ -38,7 +39,7 @@ IDebugReturnValueEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugReturnValueEvent2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|Возвращает значение, возвращенное на шаг с выходом из функции.|  
   

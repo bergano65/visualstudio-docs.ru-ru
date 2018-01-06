@@ -24,11 +24,12 @@ caps.latest.revision: "93"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f270966c5c91dab1a492a775faca3da220a98d6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e4a536f99c81c19ecd22554896463a84715c7b35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 Чтобы настроить карту кода, можно изменить ее файл DGML. Например, можно изменить элементы, чтобы указать пользовательские стили, назначить свойства и категории кодовым точкам и связям либо связать узлы с документы или URL-адреса с кодовыми точками или связями. Дополнительные сведения о DGML-элементы в разделе [направленный граф разметки языка (DGML) ссылка](../modeling/directed-graph-markup-language-dgml-reference.md).  

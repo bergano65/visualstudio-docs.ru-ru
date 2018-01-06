@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed0ffd44e248cb1f420cb7be308a46c914fffee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-overview"></a>Общие сведения об интеграции управления источника
 В этом разделе сравниваются два способа интеграции в систему управления версиями Visual Studio; системы управления версиями подключаемого модуля и VSPackage, который предоставляет решение для управления версиями и новыми возможностями управления источника. Visual Studio позволяет вручную переключение между исходным пакеты VSPackage и подключаемые модули управления версиями, а также автоматического решение основано переключения.  

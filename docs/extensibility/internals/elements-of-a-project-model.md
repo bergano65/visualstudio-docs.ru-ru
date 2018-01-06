@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-a-project-model"></a>Элементы модели проекта
 Интерфейсы и реализации всех проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] совместно использовать базовую структуру: модель проекта для данного типа проекта. В модели проекта, являющийся VSPackage, вы разрабатываете, создаются объекты, соответствующие проектные решения и работает совместно с глобальной функции интегрированной среды разработки. Несмотря на то, что вы можете управлять сохраняется как элемент проекта, например, вы не управляете уведомление о том, что файл должен быть сохранен. Когда пользователь помещает фокус на элемент, открытие проекта и выбирает **Сохранить** на **файл** меню [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] меню линейчатые, тип кода проекта необходимо перехватить команды в интегрированной среде разработки, сохранять файл и отправьте уведомление в Интегрированной среде разработки, файл больше не изменяется.  

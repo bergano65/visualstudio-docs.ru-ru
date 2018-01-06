@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb60f482edeea1271c0f864fd5b907138e83d103
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-project-specific-editors"></a>Как: открытие редакторов конкретного проекта
 Если файл элемента, открываемого в проекте само по себе привязан к конкретной редактор для этого проекта, проект необходимо открыть файл с помощью редактора для конкретного проекта. Файл не может быть делегирована до механизм IDE для выбора редактора. Например вместо использования редактора стандартный рисунок, можно использовать этот параметр, редактор для конкретного проекта для указания конкретных растрового изображения редактор, который распознает сведения в файле, который является уникальным для проекта.  

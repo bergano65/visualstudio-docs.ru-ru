@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ab25807ffaf62773b6c02f22c548fb5e5c769ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3717d3bee3665705ce39307b640e02a931cd75f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verifying-and-debugging-sharepoint-code"></a>Проверка и отладка кода SharePoint
   С помощью IntelliTrace и модульного тестирования вы сможете гораздо легче отлаживать свои решения SharePoint и проверять, что каждый метод в них работает правильно. Можно использовать эти функции для проектов SharePoint в [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] так же, как и в проектах других типов.  
@@ -42,9 +43,9 @@ ms.lasthandoff: 10/31/2017
 ### <a name="support-for-microsoft-fakes-framework"></a>Поддержка Microsoft Fakes Framework  
  Проекты SharePoint поддерживают Microsoft Fakes, платформу изоляции, в которой можно создать тестовые заглушки и оболочки на основе делегатов (в приложениях на основе платформы .NET Framework). С помощью платформы Fakes вы можете создавать, поддерживать и встраивать заглушки в модульные тесты. Эти заглушки и оболочки изолируют модульные тесты от среды. Вы можете создавать заглушки для тестирования кода, который использует интерфейсы или незапечатанные классы с переопределяемыми методами. Можно создавать оболочки для перенаправления жестко заданных вызовов к запечатанным классам со статическими или непереопределяемыми методами альтернативной реализации оболочки. Вы также можете использовать делегаты с заглушками и оболочками для динамической настройки поведения отдельных членов заглушки. Дополнительные сведения см. в разделе [изоляция тестируемым кодом с помощью Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[IntelliTrace](/visualstudio/debugger/intellitrace)|Описаны более простые способы отладки решений Visual Studio с помощью IntelliTrace.|  
 |[Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Описывает использование IntelliTrace для поиска ошибок кода в проекте SharePoint.|  

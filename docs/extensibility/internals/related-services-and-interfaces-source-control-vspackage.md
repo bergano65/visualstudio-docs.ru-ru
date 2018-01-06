@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d652db21fb98cbb0f06c2ac5ceec0f8f239beff6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Связанных служб и интерфейсов (VSPackage управления источника)
 В этом разделе перечислены все интерфейсы, связанные с VSPackage в управления версиями [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Система управления версиями VSPackage реализует некоторые из этих интерфейсов и отчету другим пользователям для выполнения задач управления версиями.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Необязательно: сущности можно реализовать этот интерфейс для обеспечения широким набором функций.  
   
-|Интерфейс|Назначение|Реализуемый|Реализовать?|  
+|Интерфейс|Цель|Реализуемый|Реализовать?|  
 |---------------|-------------|--------------------|----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Редакторы вызывают этот интерфейс перед изменением или сохранение файла. Системы управления версиями VSPackage может извлечь этот файл или запретить операцию, если извлечение завершается ошибкой.|Система управления версиями VSPackage|Рекомендованное|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Этот интерфейс предоставляет основных функциях управления версиями для проектов, например регистрации и отмены регистрации проекты с системой управления версиями и поддержку управления глифы основные исходные.|Система управления версиями VSPackage|Обязательно|  

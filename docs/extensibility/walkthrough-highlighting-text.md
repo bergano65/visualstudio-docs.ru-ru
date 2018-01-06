@@ -13,11 +13,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f702a834b925f13525db122934a5593d313e0ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-highlighting-text"></a>Пошаговое руководство: Выделение текста
 Можно добавить различные визуальные эффекты в редактор, создавая компоненты Managed Extensibility Framework (MEF). В этом пошаговом руководстве показано, как выделить все вхождения текущего слова в текстовом файле. Если слово более одного раза в текстовый файл и поместите курсор в одно вхождение, каждое вхождение будет выделен.  

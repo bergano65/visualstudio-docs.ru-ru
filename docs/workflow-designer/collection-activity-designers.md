@@ -11,16 +11,17 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a4ceae41bd2ec87c3d1784f52405b70f9d905e29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ed466bd7a992d11bc804478eb3f7aa0ace3e3f90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collection-activity-designers"></a>Конструкторы действий коллекций
 Конструкторы операций коллекции используются для создания и настройки действий, используемых для управления коллекциями. В подразделах, содержащихся в данном разделе и перечисленных в следующей таблице, содержатся указания по использованию конструкторов операций и шаблонов [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.AddToCollection%601>.  
   

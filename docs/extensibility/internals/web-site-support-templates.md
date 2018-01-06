@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4e3d64f77064c04e131853786495c921711f2d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b17674b8cd5058ec20db4c483b2c3508aa275b29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support-templates"></a>Шаблоны веб-сайта поддержки
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Шаблоны проектов и элементов веб-сайтов предоставляют многократно используемых и настраиваемый веб-узел проектов и элементов, позволяющую ускорить процесс разработки устраняется необходимость для создания новых проектов веб-сайта и элементов с нуля. Дополнительные сведения о [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] шаблонов, см. раздел [Создание проекта и шаблонов элементов](../../ide/creating-project-and-item-templates.md).  

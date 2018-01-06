@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3694e8f4a8cdbdac147df3d6e60324888bccf048
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 698b46c7ccb0a3fb13c799349d36de0cadf80af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-4-check-in"></a>Тестов областям 4: Возврат
 Эта область тестирования подключаемый модуль системы управления версиями охватывает отправка обновленных элементов в хранилище версий через **вернуть** команды.  

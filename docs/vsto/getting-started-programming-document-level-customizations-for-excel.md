@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1755aa5c8e54bd1b84e0f88ea70b4163f3a87af6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c2f8d0a8360153b81d54b5d1867af452e6aaf9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Знакомство с программными настройками уровня документа для Excel
   Если вы только начинающие работу создания настроек на уровне документа для Microsoft Office Excel с помощью Visual Studio, вот что нужно знать.  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="using-data-binding"></a>Использование привязки данных  
  Элементы управления ведущего приложения также присутствуют в списке элементов управления, которые можно перетаскивать из **источники данных** окна. Добавление элементов управления ведущего приложения в этом образом автоматически привязывает их к источнику данных, которая настраивается с помощью окна. Без написания кода, можно отобразить данные из базы данных, веб-служб и бизнес-объектов. Дополнительные сведения см. в разделе [привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Сведения о создании настроек уровня документа для Excel, в разделе [Пошаговое руководство: Создание вашей первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md). В этом пошаговом руководстве представлены средства разработки Office в Visual Studio и модель программирования для настроек уровня документа для Excel.  
   
  Список разделов с пошаговыми руководствами для некоторых общих задач в проектах Excel см. в разделе [общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md).  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)   
  [Общие сведения о модели объектов Excel](../vsto/excel-object-model-overview.md)   
- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

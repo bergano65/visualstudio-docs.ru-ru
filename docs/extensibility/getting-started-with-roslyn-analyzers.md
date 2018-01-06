@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Приступая к работе с Roslyn анализаторы
 С помощью анализаторов динамической, основанное на проект кода в Visual Studio API авторы могут поставляться анализ кода для конкретного домена как часть своих пакетов NuGet.  Поскольку эти анализаторы берутся из платформой компилятора .NET (кодовое название «Roslyn»), они создают предупреждения в коде при вводе еще до завершения строки, (больше не ожидает создания кода для обнаружения проблем).  Анализаторы, также могут возникать исправления автоматического кода из строки лампочки Visual Studio позволяет очистить коде немедленно  

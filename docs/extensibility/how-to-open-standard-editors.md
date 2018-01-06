@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd3e3b8da06e6846c8c6adc6ddc3f65873c1e2bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dcf36dc8f4ef818a84719bc534a09ecf30baf76f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-standard-editors"></a>Как: открытие редакторов Standard
 При открытии стандартного редактора, предоставляется возможность определить стандартного редактора для назначенного типа файлов, вместо указания редактора для конкретного проекта файла интегрированной среды разработки.  

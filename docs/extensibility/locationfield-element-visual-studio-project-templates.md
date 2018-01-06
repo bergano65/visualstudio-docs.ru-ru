@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33be0fde28dded57aafa04e8d6862bcd6e0cf101
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1aa4acf4b0d2aeb83e4ea4feb70ace3ae55ea2b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Элемент LocationField (шаблоны проектов Visual Studio)
 Указывает ли **расположение** текстовое поле в **новый проект** включено, отключено или скрытым для шаблона проекта диалоговое окно.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет его отображения в любом **новый проект**.|  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 -   `Hidden`, указывает, что **расположение** поле **новый проект** диалоговое окно скрывается.  
   
 ## <a name="remarks"></a>Примечания  
- Значение по умолчанию — `Enabled`.  
+ Значение по умолчанию — `Enabled`.  
   
  **Расположение** текстовое поле в **новый проект** диалоговое окно позволяет пользователям возможность изменить каталог по умолчанию, в котором сохраняются новые проекты.  
   

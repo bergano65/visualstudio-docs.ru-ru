@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4dd37d33230be758bd5a5adf6f5e10d5a978800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 Модель для выделения, чтобы определить, какие данные будут отображаться в **свойства** окно основано на окно, которое имеет фокус в Интегрированной среде разработки. Все окна и объекта в выбранный период, могут иметь его Выбор объекта контекста, помещаются в контекст глобального выделения. Среды обновляет контекст глобального выделения значениями из рамки окна, если это окно находится в фокусе. При изменении фокуса, поэтому не контекст выделения.  

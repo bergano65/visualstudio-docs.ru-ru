@@ -12,11 +12,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 5c7571cbb4950f91c1b69ae88241c799577f79da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 18381aef265935cf927940f82dd0a47ee8197222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Перемещение по модели и обновление модели в коде программы
 Можно написать код для создания и удаления элементов модели, задавать их свойства и создания и удаления связи между элементами. Все изменения должны выполняться в рамках транзакции. Если элементы будут просмотрены в диаграмме, диаграмме будет «корректировке» автоматически в конце транзакции.  
@@ -161,7 +162,7 @@ ms.lasthandoff: 10/27/2017
 -   ElementLink - все отношения, ElementLinks  
   
 ##  <a name="transaction"></a>Выполнять изменения в транзакции  
- При каждом изменении ничего в хранилище программный код должен выполняться внутри транзакции. Это применяется для всех элементов модели, связи, фигур, диаграмм и их свойства. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
+ При каждом изменении ничего в хранилище программный код должен выполняться внутри транзакции. Это применяется для всех элементов модели, связи, фигур, диаграмм и их свойства. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
   
  Является наиболее удобным способом управления транзакции с `using` инструкции заключены в `try...catch` инструкции:  
   

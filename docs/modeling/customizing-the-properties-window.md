@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 962b4a8eac0d548d2c7a337207644bdc717fe3cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2c11cf4d8fb8d913c1d288b5daeb110b9003f7b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-properties-window"></a>Настройка окна свойств
 Можно настроить внешний вид и поведение окна свойств в доменный язык (DSL) в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В определении DSL определить свойства домена для каждого класса домена. По умолчанию при выборе экземпляра класса на схеме или в обозревателе моделей, каждое свойство домена указывается в окне «Свойства». Это позволяет просмотреть и изменить значения свойств домена, даже если они не были сопоставлены для полей фигур на схеме.  
@@ -141,7 +142,7 @@ ms.lasthandoff: 10/27/2017
   
  Атрибут можно задать для свойства с помощью **пользовательский атрибут** запись в окне «Свойства».  
   
- Тип `AnEditor` должен быть производным от типа, указанного в качестве второго параметра. Второй параметр должен быть либо <xref:System.Drawing.Design.UITypeEditor> или <xref:System.ComponentModel.ComponentEditor>. Для получения дополнительной информации см. <xref:System.ComponentModel.EditorAttribute>.  
+ Тип `AnEditor` должен быть производным от типа, указанного в качестве второго параметра. Второй параметр должен быть либо <xref:System.Drawing.Design.UITypeEditor> или <xref:System.ComponentModel.ComponentEditor>. Дополнительные сведения см. в разделе <xref:System.ComponentModel.EditorAttribute>.  
   
  Можно указать собственный редактор или редактор в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], такие как <xref:System.Windows.Forms.Design.FileNameEditor> или <xref:System.Drawing.Design.ImageEditor>. Например используйте следующую процедуру в свойств, в котором пользователь может ввести имя файла.  
   
@@ -177,7 +178,7 @@ ms.lasthandoff: 10/27/2017
   
 -   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, чтобы указать, будет открыть диалоговое окно или укажите раскрывающееся меню редактора.  
   
- Можно также обеспечивают графическое представление значения этого свойства, которое будет отображаться в сетке свойств. Чтобы сделать это, переопределите `GetPaintValueSupported`, и `PaintValue`.  Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.  
+ Можно также обеспечивают графическое представление значения этого свойства, которое будет отображаться в сетке свойств. Чтобы сделать это, переопределите `GetPaintValueSupported`, и `PaintValue`.  Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
 >  Добавьте код в отдельном файле кода в **Dsl** проекта.  
@@ -206,7 +207,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.  
+ Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.  
   
 ## <a name="providing-a-drop-down-list-of-values"></a>Предоставляет список раскрывающегося списка значений  
  Можно предоставить список значений, пользователь может выбрать.  

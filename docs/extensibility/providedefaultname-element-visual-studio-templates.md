@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 797382d770c9c6f0ac8b48ef5d7eb7652ff28f1b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 48dbc92687a813dcd2a99659b9c2a8cc26129c79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Элемент ProvideDefaultName (шаблоны Visual Studio)
 Указывает ли [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] система проектов будет создавать имя по умолчанию для шаблона в **Добавление нового элемента** или **новый проект** диалоговое окно.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
  Этот текст должен быть либо `true` или `false`, указывающее, требуется ли создавать имя по умолчанию для шаблона в **Добавление нового элемента** или **новый проект** диалоговое окно.  
   
 ## <a name="remarks"></a>Примечания  
- `ProvideDefaultName` — это необязательный элемент. Значение по умолчанию — `true`.  
+ `ProvideDefaultName` — это необязательный элемент. Значение по умолчанию — `true`.  
   
  Если `ProvideDefaultName` элемент `false`, **имя** поля в **Добавление нового элемента** и **новый проект** диалоговые окна содержат значение `<Enter_name>`.  
   

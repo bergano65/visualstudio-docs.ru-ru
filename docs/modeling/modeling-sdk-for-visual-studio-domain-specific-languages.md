@@ -15,11 +15,12 @@ caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4bc85e0b5d03af1a34676030144f36457c1366ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK моделирования для Visual Studio — доменные языки
 Используя пакет SDK моделирования для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно создать средств разработки мощных на основе моделей, которые можно интегрировать в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Таким же образом можно создать одно или несколько определений моделей и интегрировать их в набор средств.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/27/2017
   
  Рекомендации о дополнительных возможностях и устранение неполадок на сайте [форум по Visual Studio DSL & расширяемость средств моделирования](http://go.microsoft.com/fwlink/?LinkID=186074).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)  
   
  [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)  

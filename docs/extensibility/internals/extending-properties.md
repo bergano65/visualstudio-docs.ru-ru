@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abf254aa21be5ec4b7401e21afa5f9bcca00e011
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties"></a>Расширение свойств
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Свойства** окна браузера универсальных свойств для компонентов COM и COM + и поддерживает все [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] продуктов. **Свойства** окно работает с `ITypeInfo` введите сведения и метаданные COM +, чтобы вывести список свойств во время разработки для выбранного объекта в любое другое окно интегрированной среды разработки (IDE).  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
  Этот раздел содержит подробные сведения, относящиеся к отдельным областям **свойства** окна и интерфейсы, которые должны быть реализованы и вызова для заполнения окна.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Общие сведения об окне свойств](../../extensibility/internals/properties-window-overview.md)  
  Описание назначения **свойства** окна относительно окна инструментов и окна документа.  
   

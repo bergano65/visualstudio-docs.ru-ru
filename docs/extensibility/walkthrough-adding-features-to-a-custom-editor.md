@@ -13,11 +13,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df3621d87ae80c0eee105183edbc97a4e7ade62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Пошаговое руководство: Добавление функций специализированного редактора
 После создания пользовательского редактора, можно добавить дополнительные компоненты к нему.  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
         > [!NOTE]
         >  Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> для получения указателя на `IVsFileChangeEx`.  
   
-7.  Координировать события изменения документа с контролем исходного кода. Для этого:  
+7.  Координировать события изменения документа с контролем исходного кода. Для этого выполните следующие действия.  
   
     1.  Получение указателя на `IVsQueryEditQuerySave2` путем вызова `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.  
   
@@ -65,13 +66,13 @@ ms.lasthandoff: 10/31/2017
   
          Этот метод предлагает пользователю сохранить файл, если он не был сохранен, или если он был изменен с момента последнего сохранения.  
   
-8.  Включить **свойства** окно для отображения свойств для текста, выделенного в редакторе. Для этого:  
+8.  Включить **свойства** окно для отображения свойств для текста, выделенного в редакторе. Для этого выполните следующие действия.  
   
     1.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> выделение текста каждый раз изменяется, передача в реализации <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
   
     2.  Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> службы, чтобы получить указатель на <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-9. Разрешить пользователям путем перетаскивания элементов между редактор и **элементов**, или между внешних редакторов (например, Microsoft Word) и **элементов**. Для этого:  
+9. Разрешить пользователям путем перетаскивания элементов между редактор и **элементов**, или между внешних редакторов (например, Microsoft Word) и **элементов**. Для этого выполните следующие действия.  
   
     1.  Реализуйте `IDropTarget` на редактора для создания предупреждения интегрированной среды разработки, ваш редактор будет конечного расположения сброса.  
   

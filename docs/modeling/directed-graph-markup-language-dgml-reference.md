@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: e1ea2e37668806849b88d1fb7d6a15142518c076
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1d4c70d319e80eea95af6f71180b8ef4a37cad45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 Язык разметки направленных графов (Directed Graph Markup Language, DGML) описывает информацию, которая используется для визуализации и выполнения анализов сложности, а также служит форматом, в котором Visual Studio хранит карты кодов. Для описания циклических и ациклических направленных графов в DGML используется простой XML-код. Направленный граф представляет собой набор узлов, соединенных ссылками или границами. Узлы и ссылки могут быть использованы для представления сетевых структур, например элементов программного проекта.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
   
      `NeighborhoodDistance` — если карта организована в виде древовидной структуры или быстрых кластеров, показывает только узлы, удаленные от выбранных узлов не более, чем на указанное количество ссылок (1–7). В разделе [изменение макета карты](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  Если сослаться в элементе `<Link/>` на несуществующий элемент карты, она создаст элемент `<Node/>` автоматически.  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/27/2017
   
      `Reference` — задайте этот атрибут для связывания с документом или URL-адресом. В разделе [связать документы или URL-адреса для элементов кода и ссылками](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -134,7 +135,7 @@ ms.lasthandoff: 10/27/2017
   
      Этот элемент содержит список элементов `<Link>`, задающих ссылки между узлами. Дополнительные сведения см. в описании элемента `<Link/>`.  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -168,7 +169,7 @@ ms.lasthandoff: 10/27/2017
   
      `Property` — имя свойства, указывающего на элементы, которые имеют одинаковое значение этого свойства. Дополнительные сведения см. в описании элемента `<Property/>`.  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -192,7 +193,7 @@ ms.lasthandoff: 10/27/2017
   
      Этот элемент содержит список элементов `<Category/>`. Дополнительные сведения см. в описании элемента `<Category/>`.  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -221,7 +222,7 @@ ms.lasthandoff: 10/27/2017
   
      Категории предоставляют также базовый шаблон поведения, который определяет отображение узлов и ссылок на карте. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -249,7 +250,7 @@ ms.lasthandoff: 10/27/2017
   
      Этот элемент содержит список элементов `<Property/>`. Дополнительные сведения см. в описании элемента `<Property/>`.  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -274,7 +275,7 @@ ms.lasthandoff: 10/27/2017
   
      В разделе [присвоить категории элементов кода и ссылками](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).  
   
-     Пример.  
+     Пример  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  

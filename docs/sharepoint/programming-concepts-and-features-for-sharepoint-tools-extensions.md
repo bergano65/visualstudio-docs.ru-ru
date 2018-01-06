@@ -16,16 +16,17 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d6f3ae5608d8092fbeb065867ae04db4e04c95
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7030893cfb108a497ec167586fb90f5e88e61003
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Понятия программирования и возможности расширений SharePoint
   Существует несколько важных концепций программирования и функции, которые связаны с средств SharePoint в Visual Studio. Эти понятия и функции играют важную роль в большинстве расширения инструментов SharePoint.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
  Сравнивает использование клиентской и серверной объектной модели SharePoint из расширения инструментов SharePoint и предоставляет сведения о том, как можно создать *команды SharePoint* для вызова объектной модели сервера SharePoint.  
   

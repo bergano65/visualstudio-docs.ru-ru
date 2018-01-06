@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 ms.author: dagriffe
 author: dgriffen
 manager: ghogen
-ms.openlocfilehash: 15c63e446699f254ba33237c264c06c1da802811
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dagriffe
+ms.openlocfilehash: b601653e4b2d309d41f32ff71666567ab860e698
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме 2.0 с пакетом обновления языка VSIX
 
@@ -34,14 +35,14 @@ ms.lasthandoff: 10/31/2017
 ### <a name="packagelangaugepackmanifest-element"></a>Элемент PackageLangaugePackManifest
 
 В пределах `<PackageLanguagePackManifest>` элемент должен существовать следующий элемент:
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |-----------|-----------------|
 |`<Metadata>`| Элемент-контейнер для всех метаданных локализованного пакета
 
 ### <a name="metadata-element"></a>Элемент метаданных
 
 В пределах `<Metadata>` элемент может иметь следующие элементы:
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |-----------|-----------------|
 |`<DisplayName>`|Локализованное имя расширения должны быть установлены|
 |`<Description>`|Локализованное описание расширения должны быть установлены|
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |-----------|-----------------|
 |[Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)|Показано, как для обеспечения поддержки локализованного установочного пакета VSIX.|
 |[Справочник по схеме 2.0 расширений VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Манифест VSIX описывает содержимое файла развертывания с расширением VSIX, расширение Visual Studio установить с помощью **расширения и обновления** диалоговое окно.|

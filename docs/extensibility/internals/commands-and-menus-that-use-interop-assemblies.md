@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee9fa1faa52afb2ea6d8154b4767fcab2cee0981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d89b698a97d1793b3c5255966d9eca35ec1b78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Команды и меню, которые использовать сборки взаимодействия
 Пакет VSPackage, реализующий команды меню и панель инструментов с помощью сборок взаимодействия должен:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  Далее описывается, как выполнять эти задачи.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Определение состояния команды с помощью сборок взаимодействия](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
  Описывает, как VSPackage сообщает IDE о какие команды поддерживаются и доступны ли они в настоящее время.  
   

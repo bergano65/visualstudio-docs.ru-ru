@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>Как: реализации вложенных проектов
 При создании вложенного проекта типа существует, некоторые дополнительные действия, которые должны быть реализованы. Родительский проект принимает некоторые же обязанности, в которых имеются элементы решения, его проектов вложенных (дочерний). Родительский проект — это контейнер, аналогично решения проектов. В частности существует несколько событий, которые должны вызываться решением и в проектах родительского, чтобы создать иерархию вложенных проектов. Эти события описаны в следующий процесс для создания вложенных проектов.  

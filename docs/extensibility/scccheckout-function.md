@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de22bd4722df1cd78472fd9e180fdb8132401828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af8aac642ecd21f8f4709874e4e3e6ff0b3e58b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckout-function"></a>Функция SccCheckout
 Получает список имен полным путем к файлу, эта функция извлекает их на локальный диск. Комментарий применяется ко всем файлам, извлечения. Аргумент примечания могут быть `null` строки.  
@@ -62,7 +63,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Извлечение выполнено успешно.|  
 |SCC_E_FILENOTCONTROLLED|Выбранный файл не существует в системе управления версиями.|  

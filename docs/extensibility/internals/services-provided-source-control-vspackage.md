@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c30c374756578fd71dd344393b58f38cacadeb19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6951881e915b44c0cb0c85685280f2b770647f3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="services-provided-source-control-vspackage"></a>Службы, предоставляемые (VSPackage управления источника)
 Службы являются основным механизмом, через который общие функциональные возможности среди пакетов VSPackage, а также между Visual Studio интегрированной среды разработки (IDE) и его установленных пакетов VSPackage. Подробное описание службы и их важности в Интегрированной среде разработки Visual Studio см. в разделе[использование и предоставление службы](../../extensibility/using-and-providing-services.md).  

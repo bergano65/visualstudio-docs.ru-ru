@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 282a1bff821ee032d0d08038858c3a04fc7796ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3635a92f40f2ed313ca08dcc6357900ac002a60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `postActions` пространства имен `vstav3` содержит все элементы `postAction` , описывающие действия после развертывания, которые выполняются после установки решений Office.  
@@ -49,11 +50,11 @@ ms.lasthandoff: 10/31/2017
  Объект`postActions` имеет следующий элемент.  
   
 ### <a name="postaction"></a>postAction  
- Необязательно. Роль `postAction` элемент в `vstav3` пространство имен определяется в [&#60; postAction &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/postaction-element-office-development-in-visual-studio.md).  
+ Необязательный. Роль `postAction` элемент в `vstav3` пространство имен определяется в [&#60; postAction &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/postaction-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Пример действия, выполняемого после развертывания  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `postActions` манифеста приложения для решения Office, развертываемого с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

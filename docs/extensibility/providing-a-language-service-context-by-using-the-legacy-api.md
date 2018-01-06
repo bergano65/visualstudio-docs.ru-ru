@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79f58bf66e5d0a137738d0a2cc90f67a287246dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4dbee7d2998170277369f48c3b912307d2c7e414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Предоставляет контекст языковой службы с помощью API прежних версий
 Существует два варианта языковой службы предоставить контекст пользователя с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора: текст маркера контекста, задать либо все контекста пользователя. Здесь описаны различия между ними.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="provide-all-user-context-to-the-editor"></a>Укажите все контекст пользователя в редактор  
  Если вы создаете языковой службы и используете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основы редактора, а затем можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> интерфейс, чтобы предоставить контекст службы языка.  
   
- Для реализации `IVsLanguageContextProvider`, контейнер контекста (коллекция) подключен к редактора, который отвечает за обновление контейнера контекста. Когда **динамической справки** вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A> интерфейса на этот контейнер контекста в состоянии простоя, контейнер контекста запрашивает редактор для обновления. Редактор затем уведомляет языковой службы, его необходимо обновить редактор и передает указатель на контекст контейнера. Это делается путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A> способ языковой службы из редактора. Контейнер контекст с использованием указателя, языковой службы теперь добавлять и удалять атрибуты и ключевые слова. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.  
+ Для реализации `IVsLanguageContextProvider`, контейнер контекста (коллекция) подключен к редактора, который отвечает за обновление контейнера контекста. Когда **динамической справки** вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A> интерфейса на этот контейнер контекста в состоянии простоя, контейнер контекста запрашивает редактор для обновления. Редактор затем уведомляет языковой службы, его необходимо обновить редактор и передает указатель на контекст контейнера. Это делается путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A> способ языковой службы из редактора. Контейнер контекст с использованием указателя, языковой службы теперь добавлять и удалять атрибуты и ключевые слова. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.  
   
  Существует два разных способа реализации `IVsLanguageContextProvider`:  
   

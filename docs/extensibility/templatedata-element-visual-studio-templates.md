@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c0cda80ce9ff762547e6938ec27027fe5e045d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85dba252eedaeafbffdc58eadac91386ff6cac98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Элемент TemplateData (шаблоны Visual Studio)
 Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .  
@@ -46,9 +47,9 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[Имя](../extensibility/name-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает имя шаблона, он отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[Name](../extensibility/name-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает имя шаблона, он отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.|  
 |[Описание](../extensibility/description-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает описание шаблона, как оно отображается в либо **новый проект** или **Добавление нового элемента** диалоговое окно.|  
 |[Значок](../extensibility/icon-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает путь и имя файла изображения, который служит в качестве значок, который появляется в любом **новый проект** или **Добавление нового элемента** диалоговом для шаблона.|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон проекта, чтобы он отображался в указанной группе в **новый проект** диалоговое окно.|  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|  
   

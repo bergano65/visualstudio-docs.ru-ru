@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 063a569ff047b3febd2608cb3c1e0003f40f7785
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 04257a6ea4bfb3dbe788ba48ee3077b1847b000d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-isolated-shell"></a>Расширение изолированной оболочки
 Оболочка Visual Studio изоляцией можно расширить путем добавления пакетов VSPackage, Managed Extensibility Framework (MEF) компонент или универсального проекта VSIX в приложение изолированной оболочки.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Добавление проекта пакета Visual Studio с именем `MenuCommandsPackage`.  
   
-2.  На **базовых сведений о VSPackage** мастера, установить **название компании** для `Fabrikam` и **имя VSPackage** для `FabrikamMenuCommands`. Выберите **Далее** кнопки.  
+2.  На **базовых сведений о VSPackage** мастера, установить **название компании** для `Fabrikam` и **имя VSPackage** для `FabrikamMenuCommands`. Нажмите кнопку **Далее**.  
   
 3.  На следующей странице выберите **команду меню** и выберите **Далее**.  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 704c69efa4e0495a1a4aa7545fa6ba100488afe9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f42cccacee8b46b5bc3d637ad8f7153d704f8441
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 При открытии модели в версии Visual Studio, которая не поддерживает создание моделей, она открывается в режиме "только для чтения". В этом режиме можно изменить структуру схемы, но невозможно изменить модель.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/27/2017
   
 ##  <a name="RelatedTopics"></a>Связанные разделы  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)|На схеме слоев показана структура существующей или предложенной архитектуры. При создании кода его можно автоматически проверить относительно схемы слоев.|  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3290e33ac473c6914437f8ef036ec8047f46e063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ddf48e384b85946d4efcbb62359f24780507dfa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Изменение с помощью изолированной оболочки. Vsct-файла
 Проект пользовательского интерфейса для проекта изолированной оболочки Visual Studio содержит vsct-файл, который позволяет указать, какие группы приложений и отдельных команд доступны в приложении. Ниже приведен фрагмент из неизмененного vsct-файл.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="referenced-files"></a>Файлы, на которые имеются ссылки  
  Vsct-файл по умолчанию для приложения ссылается на следующие файлы. Эти файлы расположены в подкаталоге \VisualStudioIntegration\Common\Inc\ каталога установки Visual Studio SDK.  
   
-|Файл|Описание|  
+|Файл|Описание:|  
 |----------|-----------------|  
 |wbids.h|Удостоверения пользовательского интерфейса для Web Обзор пакета.|  
 |AppIDCmdUsed.vsct|Таблицы команд для основных элементов пользовательского интерфейса Visual Studio.|  

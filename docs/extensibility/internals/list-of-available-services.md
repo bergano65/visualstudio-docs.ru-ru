@@ -15,11 +15,12 @@ caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f2fca0baa747311b08983d8fc7e30efd02ae4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]и пакет SDK для Visual Studio поддерживает следующие службы. Некоторые пакеты предоставляют свои собственные службы, не перечисленных здесь — например, службы языка не имеют одной службы GUID. Чтобы найти идентификатор GUID языковой службы в реестре необходимо использовать имя языка.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="the-services"></a>Службы  
   
-|Служба|Интерфейс|Visual Studio|Visual Studio 2005|Описание|  
+|Служба|Интерфейс|Visual Studio|Visual Studio 2005|Описание:|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Да|Да|Используется по пакетам VSPackage для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейс из элемента управления ActiveX для упрощения передачи асинхронных данных.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Нет|Да|Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> ИДЕНТИФИКАТОР C/C++: SID_SDTE|  

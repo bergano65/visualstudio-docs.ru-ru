@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0a434800fef7029460854107e79f29a71c75285
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75b593110f68cd559717ae87920e898f39cdeb43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Условные атрибуты схемы VSCT XML
 Условные атрибуты могут быть применены к все списки и элементы. Логические операторы и выражения расширения символ вычислить значение true или false. Значение true, если связанный список или элемент включается в результат.  

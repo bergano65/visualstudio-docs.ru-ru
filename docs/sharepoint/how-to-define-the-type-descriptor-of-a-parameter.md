@@ -22,11 +22,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19722a4cffb0e3708939734253b0f2c4a408389e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 64d741146c0ee2421ab663f78601bfba8c373f86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Практическое руководство. Определение дескриптора типа параметра
   Дескриптор типа содержит свойства, описывающие тип данных параметра. Дескриптор типа может определить поле, сущность или коллекцию сущностей. Дополнительные сведения см. в разделе [дескриптора типа](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  

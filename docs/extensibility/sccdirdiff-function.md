@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea335ef6bcb2a27b4312c613062be0d365711cbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1f6f990bb33ddbc1d7591fa3ab9837f472f8418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdirdiff-function"></a>Функция SccDirDiff
 Эта функция отображает различия между текущий локальный каталог на диске клиента и соответствующий проект в системе управления версиями.  
@@ -54,7 +55,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Каталог на диске совпадает со значением в проект в системе управления исходным кодом.|  
 |SCC_I_FILESDIFFER|Каталог на диске отличается от проекта в системе управления версиями.|  

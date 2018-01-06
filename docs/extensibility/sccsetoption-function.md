@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a0bc7ab99c6bc3643ee61b403e4aa0c40c41a63a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccsetoption-function"></a>Функция SccSetOption
 Эта функция задает параметры, которые управляют поведением подключаемый модуль системы управления версиями.  
@@ -46,7 +47,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Параметр был успешно установлен.|  
 |SCC_I_SHARESUBPROJOK|Возвращается, если `nOption` был `SCC_OPT_SHARESUBPROJ` и подключаемый модуль системы управления версиями позволяет IDE, чтобы задать папку назначения.|  
@@ -57,7 +58,7 @@ SCCRTN SccSetOption(
   
  Сводка параметров и их значений.  
   
-|`nOption`|`dwValue`|Описание|  
+|`nOption`|`dwValue`|Описание:|  
 |---------------|---------------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Включает или отключает фоновую очереди событий.|  
 |`SCC_OPT_USERDATA`|Произвольное значение|Указывает значение пользователя должны быть переданы [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) функции обратного вызова.|  

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebd59cfada6064d40fe48df3cba4eaac3c3293b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c23e1fd5614963d8f52edc019e99287187fd9a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetuseroption-function"></a>Функция SccGetUserOption
 Эта функция извлекает множество параметров конкретного пользователя.  
@@ -46,7 +47,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Параметр был успешно извлечен.|  
 |SCC_E_OPNOTSUPPORTED|Параметр не поддерживается.|  
@@ -55,7 +56,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>Примечания  
  Эта команда поддерживает следующие параметры:  
   
-|Параметр User|Описание|  
+|Параметр User|Описание:|  
 |-----------------|-----------------|  
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, является ли пользователь хочет извлекать локальную версию файлов. `lpVal`назначается `SCC_USEROPT_COLV_YES` (пользователю необходимо извлечь локальных файлов) или `SCC_USEROPT_COLV_NO`.|  
   

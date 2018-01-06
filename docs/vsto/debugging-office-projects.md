@@ -22,11 +22,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 110d6231da40ab59c3979b97441b3ac0ad458b3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ab8d3f8f815ac2b86f58fdf14051c8032bbb5cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-office-projects"></a>Отладка проектов Office
   Для отладки проектов Office можно использовать такие же инструменты Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , как и для других проектов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Функциональные возможности отладчика[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , такие как возможность вставлять точки останова и просматривать переменные в окне **Локальные** , доступны и при отладке проектов Office. Дополнительные сведения о средствах отладки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] см. в разделе [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  

@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b7a24c793755cdd5102407d1a3a5cbfad103c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Пошаговое руководство. Создание пользовательского действия рабочего процесса сайта
   В этом пошаговом руководстве демонстрируется создание настраиваемого действия рабочего процесса на уровне сайта с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Рабочие процессы на уровне сайта применяются для всего сайта, а не только список на сайте). Пользовательское действие создает резервную копию списка извещений и копирует в него содержимое списка извещений.  

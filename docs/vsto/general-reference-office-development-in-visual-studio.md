@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1810a57d8f12cff2e34834684f39bf6f508ed5c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c297381f4629b35757693fd95f003a001034060c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Общие справочные материалы (разработка решений Office в Visual Studio)
   В этом разделе содержатся технические сведения о проектах Microsoft Office в Visual Studio.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Заинтересованы в разработке решений, расширяющих возможности Office через [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и их можно создавать с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Основные сборки модулей взаимодействия Office](../vsto/office-primary-interop-assemblies.md)  
  Список основных сборок взаимодействия, которые можно установить вместе с Office, а также приводится краткое описание каждого из них.  
   

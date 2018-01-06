@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: d9d1f6ac733a0feccb3f2fa8175fb85ed035b35c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 978344a6a51662c1d9103c386a917e1eb3cdc0ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Использование карт кода для отладки приложений
 Карты кода помогают не запутаться в больших базах кода, малознакомом или устаревшем коде. Например при отладке, может потребоваться просмотреть код во множестве файлов и проектов. Используйте карты кода для перехода между частями кода и просмотра связей между ними. Таким образом, вам не нужно держать весь этот код у себя в голове или рисовать отдельную схему. Карты кода помогут вспомнить особенности кода в случае перерыва в работе.  

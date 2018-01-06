@@ -14,18 +14,19 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 220e6d9bb9d360a51f9a83b5d0b4420cf64aef91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b23876c454a447f9a7e47d866f81208b813a17ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Строки подстановки, используемые в. Pkgdef и. Файлы pkgundef-файлов
 Можно использовать перечисленные ниже в .pkgdef строки подстановки и определение для Visual Studio файлы .pkgundef приложения isolated shell.  
   
 ## <a name="substitution-strings"></a>Строки подстановки  
   
-|Строка|Описание|  
+|String|Описание:|  
 |------------|-----------------|  
 |$=*RegistryEntry*$|Значение *RegistryEntry* входа. Если строка записи реестра заканчивается обратной косой чертой (\\), то используется значение по умолчанию раздела реестра. Например, подстановка строковые $= HKEY_CURRENT_USER\Environment\TEMP$ расширяется к временной папке текущего пользователя.|  
 |$AppName$|Полное имя приложения, которое передается AppEnv.dll точек входа. Полное имя состоит из имени приложения, подчеркивания и идентификатор класса (CLSID) объекта автоматизации приложения, который также записывается как значение параметра ThisVersionDTECLSID в pkgdef-файл проекта.|  

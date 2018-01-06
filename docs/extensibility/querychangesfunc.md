@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2da455cdafc399b64fe42109c7973185ce69c79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43add362011b31ce695e9a8d9e77d6ca2dedb0e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Функция обратного вызова, используемые [SccQueryChanges](../extensibility/sccquerychanges-function.md) операции для перечисления коллекцию имен файлов и определить состояние каждого файла.  
@@ -46,7 +47,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение  
  Интегрированная среда разработки возвращается код соответствующее сообщение об ошибке:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
 |SCC_I_OPERATIONCANCELED|Останавливает обработку.|  
@@ -84,7 +85,7 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  Код, указывающий состояние файла:  
   
-|Код|Описание|  
+|Код|Описание:|  
 |----------|-----------------|  
 |`SCC_CHANGE_UNKNOWN`|Невозможно определить, какие изменения были внесены.|  
 |`SCC_CHANGE_UNCHANGED`|Имя этого файла не изменены.|  

@@ -16,18 +16,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d25551d6af9b2250275713541dc9c9df39ca90ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 643bd434e058a24cc17936d9ab2f333489b8aa5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vstextbuffer-object"></a>Объект VSTextBuffer
 Объект текстового буфера представляет поток текст в кодировке Юникод, которая связана с файлом. Объект <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект может использоваться вне контекста базового редактора в случае мастер.  
   
  В следующей таблице показаны интерфейсы `VSTextBuffer`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Стандартный интерфейс OLE. Используется главным образом для обработки в буфере отмены и повтора.|  
 |[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Стандартный интерфейс OLE.|  

@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6bb99e6ef2c4a898285e4d7dae503aec0fc7d955
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 Как правило, текстовый шаблон T4 в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] начинается с директивы `template`, которая задает способ обработки шаблона. В каждом текстовом шаблоне и файлах, которые он содержит, может присутствовать только одна директива шаблона.  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/27/2017
  Директива `template` имеет несколько атрибутов, позволяющих задавать разные аспекты преобразования. Ни один атрибут не является обязательным.  
   
 ## <a name="compileroptions-attribute"></a>атрибут compilerOptions  
- Пример.  
+ Пример  
  `compilerOptions="optimize+"`  
   
  Допустимые значения:  
@@ -42,13 +43,13 @@ ms.lasthandoff: 10/27/2017
  Эти параметры применяются, если шаблон преобразован в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] и компилируется полученный код.  
   
 ## <a name="culture-attribute"></a>атрибут culture  
- Пример.  
+ Пример  
  `culture="de-CH"`  
   
  Допустимые значения:  
  "", инвариантные язык и региональные параметры, используемые по умолчанию.  
   
- Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Для получения дополнительной информации см. <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
   
  Этот атрибут задает язык и региональные параметры для использования при преобразовании блока выражений в текст.  
   
@@ -76,11 +77,11 @@ hostspecific="true"
  Допустимые значения:  
  `true, false, trueFromBase`. Значение по умолчанию — false.  
   
- Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское основное приложение, можно выполнить его приведение к типу пользовательского основного приложения.  
+ Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское ведущее приложение, можно выполнить его приведение к типу пользовательского ведущего приложения.  
   
  Поскольку тип данного свойства зависит от типа ведущего приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным ведущим приложением. Оно применяется к [шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Например:  
+ Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -105,7 +106,7 @@ Content of myFile is:
  Если атрибуты `inherits` и `hostspecific` используются совместно, укажите host="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.  
   
 ## <a name="language-attribute"></a>атрибут language  
- Пример.  
+ Пример  
  `language="VB"`  
   
  Допустимые значения:  
@@ -115,7 +116,7 @@ Content of myFile is:
   
  Атрибут language задает язык ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) для использования в исходном коде в блоках инструкций и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.  
   
- Например:  
+ Пример:  
   
 ```vb  
 <#@ template language="VB" #>  
@@ -215,7 +216,7 @@ This is the common footer.
  Дополнительные сведения см. в разделе [«Наследования в текстовые шаблоны» в блоге Джонс Гарета](http://go.microsoft.com/fwlink/?LinkId=208373).  
   
 ## <a name="linepragmas-attribute"></a>Атрибут LinePragmas  
- Пример.  
+ Пример  
  `linePragmas="false"`  
   
  Допустимые значения:  
@@ -228,7 +229,7 @@ This is the common footer.
  Этот атрибут также может помочь, если вы считаете, что абсолютные имена файлов в директивах pragma вызывают отвлекающие слияния в системе управления версиями.  
   
 ## <a name="visibility-attribute"></a>Атрибут Visibility  
- Пример.  
+ Пример  
  `visibility="internal"`  
   
  Допустимые значения:  

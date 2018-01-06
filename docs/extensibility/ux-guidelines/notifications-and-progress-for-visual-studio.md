@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Уведомления и хода выполнения для Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Системы уведомления  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="choosing-the-right-method"></a>Выбрав нужный метод  
  Используйте эту таблицу для помощи в выбор вправо метода для уведомления пользователя сообщения.  
   
-|Метод|Применение|Не используйте|  
+|Метод|Использовать|Не используйте|  
 |------------|---------|----------------|  
 |[Модальные диалоговые окна сообщений](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Используется, если требуется ответ от пользователя перед продолжением.|Не используйте, если нет необходимости блокировать пользователя и прерываний их потоком. Избегайте использования модальные диалоговые окна, если это возможно, для отображения сообщения в другой, обеспечивающий меньшее вмешательство способом.|  
 |[Строки состояния интегрированной среды разработки](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Используется, если имеется окружения текстовые сведения о состоянии процесса.|Не используйте отдельно. Лучше всего использовать в сочетании с другой механизм обратной связи.|  

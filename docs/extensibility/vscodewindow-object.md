@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0b114db98f5a8a50065c8a3219dc4179787c738
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2de0998a3d89c1af3e18fa60aa3f8511716f6165
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vscodewindow-object"></a>Объект VSCodeWindow
 Окно кода является специализированные документа, можно включить одно или несколько представлений текста обычно <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> объекта.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
  В следующей таблице приведены интерфейсы в <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> объекта.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Предоставляет общий доступ к механизм для поиска службы, определяющий глобальный уникальный идентификатор (GUID).|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Представляет несколько дочерних интерфейса (MDI) документа, содержащий одно или несколько представлений кода.|  

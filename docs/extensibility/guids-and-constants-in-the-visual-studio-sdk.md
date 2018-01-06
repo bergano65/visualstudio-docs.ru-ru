@@ -15,16 +15,17 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1334ec7b2fb5b1d11c5aee5a4febb50e63cece4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631ffac458cd5f7d29051cdd53431bf7f7e4ccb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Идентификаторы GUID и константы в Visual Studio SDK
 <xref:Microsoft.VisualStudio.VSConstants> Класс предоставляет доступ на выбор среды GUID и констант.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Идентификаторы GUID среды IDE](../extensibility/ide-guids.md)  
  Список идентификаторов GUID, предоставляемые <xref:Microsoft.VisualStudio.VSConstants>.  
   

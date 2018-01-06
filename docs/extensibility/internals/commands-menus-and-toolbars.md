@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ba153c6ec1d9944e889919d1d49817dcd97c9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa1513bcd61ac63fb9d2a59f69a8b2ce22cf5114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-menus-and-toolbars"></a>Команды, меню и панелей инструментов
 Меню и панелей инструментов — это способ доступа к командам в VSPackage. Команды — это функции, которые выполняют задачи, например печать документа, обновление представления или создание нового файла. Меню и панели инструментов — это удобные графические способы представления команд пользователям. Обычно связанные команды группируются в одном меню или на одной панели инструментов.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  В подразделах этого раздела описывается, как работают команды, меню и панелей инструментов в пакеты VSPackage.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
  Подробное описание спецификации формата таблицы команд.  
   

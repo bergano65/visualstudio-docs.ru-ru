@@ -31,11 +31,12 @@ caps.latest.revision: "243"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 0e0f33505754eb5047a6f8a9ce174c5c07466654
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Сопоставление зависимостей в разных решениях
 Чтобы разобраться в реализованных в коде зависимостях, визуализируйте их, создав карты кода. Это поможет увидеть, как код сочетается друг с другом без чтения файлов и строк кода.  
@@ -343,7 +344,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Совместное использование карты с другими пользователями Visual Studio  
  Для сохранения карты используйте меню **Файл** .  
   
- -или-  
+ - или -  
   
  Чтобы сохранить карту кода как часть определенного проекта, на панели инструментов карты последовательно выберите пункты **Совместный доступ**и **Переместить** \<*Имя_карты_кода*>**.dgml в**и укажите проект, в котором нужно сохранить карту.  
   

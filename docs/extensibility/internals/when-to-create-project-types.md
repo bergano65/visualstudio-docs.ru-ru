@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b532ad4e72fb15cd9409c362259347f6f3833d2e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f766619054ed1912d677ac08fad511cfd3a3dcb4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 Создание нового проекта типа основу для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для пользователей. Однако создание новый тип проекта не является обязательным для всех [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] настроек. Следующие рекомендации помогут вам определить, требуется ли новый тип проекта для вашего сценария.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="use-an-existing-project-type"></a>Использовать существующий тип проекта  
  Создание нового проекта иногда не является обязательным. В следующей таблице показаны задачи, которые необходимо создать тип проекта для.  
   
-|Задача|Описание|  
+|Задача|Описание:|  
 |----------|-----------------|  
 |Обработка команд|Любой пакет VSPackage может обрабатывать команды.|  
 |Сборка редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [окон документов и редакторы](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  

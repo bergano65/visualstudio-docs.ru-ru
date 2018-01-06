@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f06af0b884d404b3fd2e8e36cac235c10d254bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 787fd7c6980df9809fed9582f4ec8da81de8f862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (изолированная или кэш-памяти)
 Можно создать собственное приложение на основе Visual Studio в режиме интеграции или изолированной. В режиме интеграции доступны многие возможности Visual Studio, помимо приложения. В изолированном режиме можно выбрать подмножество средств Visual Studio, которые необходимо распространять вместе с собственное расширение.  

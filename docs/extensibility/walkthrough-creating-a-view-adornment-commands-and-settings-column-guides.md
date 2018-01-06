@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Пошаговое руководство: Создание оформления представление, команд и параметров (направляющие столбцов)
 Можно расширить редактор текста или кода Visual Studio с командами и эффектов представления.  В этом разделе показано, как приступить к работе с компонентом популярные расширения направляющие столбцов.  Руководства по столбцу можно визуально света линий, нарисованных для представления текстовый редактор для управления код, чтобы ширина определенных столбцов.  Специально форматированные кода может быть важно для примеров в документах и блогах, включают или отчеты об ошибках.  

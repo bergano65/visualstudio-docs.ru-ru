@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: willbrown
 ms.author: willbrown
 manager: justinclareburt
-ms.openlocfilehash: 99bdd5a0f31b9cbccd84a7c05f6d3cdcc0c267f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: willbrown
+ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Как: расширения создать совместимый с 2017 г. Visual Studio и Visual Studio 2015
 

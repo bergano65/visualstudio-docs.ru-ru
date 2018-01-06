@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f64b1412d0750bba4d3985d33286915e22f1474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2aef7ed21124c2e3555442819461f1989388ab22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetversion-function"></a>Функция SccGetVersion
 Эта функция возвращает номер версии API подключаемых модулей исходного элемента управления, поддерживаемых подключаемый модуль системы управления версиями.  
@@ -35,7 +36,7 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `LONG` тип данных, который содержит номер версии поддерживаемых API подключаемых модулей управления источника:  
   
-|WORD|Описание|  
+|WORD|Описание:|  
 |----------|-----------------|  
 |HIWORD|Основной номер версии|  
 |LOWORD|Дополнительный номер версии|  

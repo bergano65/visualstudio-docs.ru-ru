@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 98811cc3e7830dfcbf548bc34c5b3ee268e6f858
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставляет эффективный способ создания кода, документов, файлов конфигурации и другие артефакты из данных, представленных в модели. С помощью [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], можно создать набор классов, представляющих данные и вы можете использовать текстовые шаблоны в классах, имена и свойства отражают данные.  
@@ -36,7 +37,7 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставля
   
  В этом разделе рассматриваются некоторые из этих способов создания, изменения и отладки текстовых шаблонов, используемых в [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Обращение к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md)  
   
  Основные сведения о ссылке на доменного языка в текстовых шаблонах.  

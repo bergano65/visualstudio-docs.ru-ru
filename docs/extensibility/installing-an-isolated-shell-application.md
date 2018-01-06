@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c6d5d88563d97c18081cbf44b67e247d98a468
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fffbe31d9d5919c1e8b94482556c851fc07a1750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-an-isolated-shell-application"></a>При установке приложения изолированной оболочки
 Для установки приложения оболочки необходимо выполнить следующие действия.  
@@ -239,7 +240,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ### <a name="deciphering-return-values"></a>Расшифровки возвращаемого значения  
  В некоторых операционных системах для установки оболочки Visual Studio (изолированной) потребуется перезагрузка. Это условие может определяться код возврата вызова `ExecCmd`.  
   
-|Возвращаемое значение|Описание|  
+|Возвращаемое значение|Описание:|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Установка завершена. Теперь можно установить приложения.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Установка завершена. После перезагрузки компьютера, можно установить приложения.|  

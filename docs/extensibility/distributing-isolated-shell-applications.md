@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a40d2b8c108d7180ffc68ac2eee6811d49b21c08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 250f1d7769f6035e015eeb7247c439b27f913b78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>Распространение приложения изолированной оболочки
 Чтобы создать приложение изолированной оболочки, необходимо установить Visual Studio и пакет SDK для Visual Studio. Для распространения приложения на компьютерах других пользователей или клиентов, необходимо включить специальные распространяемого пакета для изолированной оболочки.  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Необходимые условия для распространения приложения изолированной оболочки  
   
-|Имя|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |SDK для Visual Studio|Пакет SDK, необходимо иметь для разработки и тестирования расширений [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Также можно использовать пакет SDK для создания собственного экземпляра оболочки Visual Studio изолированной.<br /><br /> Visual Studio является необходимым условием для пакета SDK.|  
 |Microsoft Visual Studio Isolated Shell распространяемого пакета|Распространяемый пакет, включить в программу установки, при построении и среду инструментов Visual Studio изолированной оболочки. Распространяемый пакет оболочки изолированного включает .NET Framework 4.5.|  

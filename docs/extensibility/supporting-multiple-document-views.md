@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79b9224a16388dabbe2b68553e5c0d9bfff29519
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4efd76830356996bdf75c923f457d19d2381763c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-multiple-document-views"></a>Поддержка нескольких представлений документов
 Можно обеспечить более одного представления документа, создав отдельный документ данных и объекты представления документа для редактора. Ниже перечислены некоторые случаи, в которых может потребоваться дополнительный документ-представление  

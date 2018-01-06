@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ad62f14ea658e4af6e22d4beef410e6d9cf02df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a124bbcadbf798f22b59111637038a09af7d75
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccenumchangedfiles-function"></a>Функция SccEnumChangedFiles
 Получив список локальных файлов, эта функция определяет, какие файлы отличаются от соответствующих версий в базе данных системы управления исходного кода.  
@@ -54,7 +55,7 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Операция успешно завершена.|  
 |SCC_UNSPECIFIEDERROR|Общая ошибка.|  

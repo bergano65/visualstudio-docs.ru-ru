@@ -20,18 +20,19 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817c95d511ff1b02558010f3046827684b72d4f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a43bc68a87d00dcce90f1a948b64dd786e9b440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-constants"></a>Константы интегрированной среды разработки
 <xref:Microsoft.VisualStudio.VSConstants> Класс содержит константы, относящихся к интегрированной среды разработки (IDE), ранее были определены только в файлах заголовков.  
   
 ## <a name="logical-and-physical-views"></a>Логические и физические представления  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` обработчики следует передать это значение, чтобы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы получить **открыть с помощью** диалоговое окно «», в данном случае на возможные представления кода.|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` обработчики передает это значение для <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы получить **открыть с помощью** диалоговое окно, в этом случае заполняется возможные <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging> отладки представления, которые сопоставляются с тем же самым представлением как <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>.|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="editor-factory-flags"></a>Флаги фабрики редактора  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_CLONEFILE>|Устаревшие флаг побитового первого параметра вместе <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метод.|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_OPENASNEW>|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, метод, это указывает фабрику редактора должен выполнить необходимые исправления.|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="visual-studio-errors"></a>Ошибки в Visual Studio  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Константа, возвращенных интерфейсы для работы в асинхронном режиме при рассматриваемый в объект уже занят|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для «несовместимый документ данных».|  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="visual-studio-constants"></a>Константы Visual Studio  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Перенаправленных проект».|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для «маркера элементов».|  

@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7481531c910ddf668ce911ae37215545b77903
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d52a9dbed6cec64426247a0b92bff2b8ec98ec97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Создание общих вычислитель выражений языка среды выполнения
 > [!IMPORTANT]
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  Некоторые аспекты отладочный пакет Visual Studio необходимо интерпретировать код в контексте языка программирования. Например, при выполнение останавливается в точке останова все выражения, введенные пользователем в **Контрольные значения** необходимо оценить и отображается окно. Кроме того, пользователь может изменить значение локальной переменной, введите выражение в **Контрольные значения** окно или в **Интерпретация** окна.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Вычисления выражений и среда CLR](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
  Объясняет, что при объединении собственный язык программирования в СРЕДЕ Visual Studio, написание EE поддерживает вычисление выражений в контексте элемента языка позволяет компилируются в промежуточный язык Microsoft (MSIL) без написания модуля отладки.  
   

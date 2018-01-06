@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c198065c72f1e6eaa0722de562abe6079f88aa1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7589c9a2aedf987af79689e8babccb554fbb4ccc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-tools"></a>Пользовательские средства
 *Пользовательские средства* позволяют средство, связанные с элементом в проекте и запуска этого средства, при каждом сохранении файла. Некоторые пользовательские средства иногда называют *генераторы одного файла*, часто используются для реализации трансляторы, создающих код на основе данных и наоборот. Например, создать один файл генераторы [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] в исходном коде от .settings и RESX-файлов. Созданный исходный код предоставляет строго типизированный доступ к данным в файлах с расширением Settings и .resx. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] И [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] типов проектов поддерживают пользовательские средства; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов — нет. Собственные типы проектов также могут поддерживать пользовательские средства.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
  Пользовательские средства связаны с `ProjectItem` объекта интерфейса и, как редакторы и конструкторы. Пользовательский инструмент принимает файл, представленный `ProjectItem` качестве входных данных и записывает новый файл, имя которого обеспечивается `DefaultExtension` метод.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)  
  Описывает использование <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> интерфейс для реализации пользовательского инструмента.  
   

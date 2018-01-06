@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-interfaces"></a>Интерфейсы службы языка прежних версий
 Для любого конкретного языка программирования одновременно может быть только один экземпляр службы языка. Тем не менее одной языковой службы можно использовать более одного редактора.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="additional-language-service-interfaces"></a>Интерфейсы службы дополнительных языков  
  Другие интерфейсы могут быть предоставлены в службе языка. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]запрашивает отдельный экземпляр эти интерфейсы для каждого экземпляра текстового буфера. Таким образом необходимо реализовать каждый из этих интерфейсов в своем объекте. В следующей таблице показаны интерфейсы, которые может потребоваться один экземпляр каждого экземпляра текстового буфера.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Управляет оформлений окно кода, например раскрывающуюся панель. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> метод. Имеется один <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> в окне кода.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Окрашивает ключевые слова языка и разделители. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>вызывается во время рисования. Избежать работы с большим объемом вычислений в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> или производительность может снизиться.|  

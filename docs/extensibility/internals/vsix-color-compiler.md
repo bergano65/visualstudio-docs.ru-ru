@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cdf8fd3d32678cc80d215d77e34cd7987d7bd29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-compiler"></a>Компилятор цветов VSIX
 Средство компилятора цветов расширений Visual Studio — консольное приложение, которое принимает XML-файл, представляющий цвета для существующих тем Visual Studio и элементы его .pkgdef файл для использования этих цветов в Visual Studio. Поскольку это упрощает поиск различий между XML-файлы, это средство используется для управления пользовательских цветов в системе управления версиями. Он также может связать среды сборки c, чтобы выходные данные сборки является допустимым pkgdef-файл.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |||  
 |-|-|  
 |**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|  
-|Имя|[Обязательно] Имя темы|  
+|name|[Обязательно] Имя темы|  
 |Идентификатор GUID|[Обязательно] (Должна соответствовать форматирование GUID) GUID темы|  
   
  При создании пользовательских цветов для Visual Studio, эти цвета должны быть определены следующие темы. Если цвета, не существует для конкретной темы, Visual Studio пытается загрузить отсутствующие цвета от светлого оформления.  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
 |||  
 |-|-|  
 |**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|  
-|Имя|[Обязательно] Имя категории|  
+|name|[Обязательно] Имя категории|  
 |Идентификатор GUID|[Обязательно] GUID категории (должна соответствовать форматирование GUID)|  
   
  **Цвет**  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 |||  
 |-|-|  
 |**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|  
-|Имя|[Обязательно] Имя цвета|  
+|name|[Обязательно] Имя цвета|  
   
  **Фона и переднего плана**  
   

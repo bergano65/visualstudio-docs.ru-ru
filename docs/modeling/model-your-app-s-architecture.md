@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 672e2ca393d8cd47466f44c1efb34e6648b7ed4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 669720bcffe8f33636147863b89c2a28113911c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-your-app39s-architecture"></a>Модель приложения &#39; s архитектуры
 Чтобы обеспечить соответствие пользователей программной системы или приложения потребностям, можно создавать модели в Visual Studio как часть описания общей структуры и поведения программной системы или приложения. С помощью моделей также можно описывать шаблоны, используемые при разработке. Такие модели помогают понять существующую архитектуру, обсуждать изменения и четко формулировать свои намерения.  

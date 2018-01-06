@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4315a55b74d938576572b0630f5dca553643a24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 183dc4ad9d7ea1a2f6855be050ad8459a3f801ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="simplified-embedding"></a>Упрощенное внедрения
 Упрощенная внедрение включена в редакторе, его объекту представления документа имеет родителя (то есть сделаны дочерний) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]и <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> интерфейс реализуется для обработки его окно команд. Упрощенная внедрения редакторы, не могут содержать активные элементы управления. На следующем рисунке показаны объекты, используемые для создания редактора с упрощенной внедрения.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  Все интерфейсы, реализованные создания редактора с упрощенной внедрения находятся в `CYourEditorDocument` объекта. Однако для поддержки нескольких представлений данных документа, разделите интерфейсы на отдельные объекты данных и представления, как указано в следующей таблице.  
   
-|Интерфейс|Расположение интерфейса|Применение|  
+|Интерфейс|Расположение интерфейса|Использовать|  
 |---------------|---------------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Просмотр|Обеспечивает подключение родительского окна.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Просмотр|Обработка команд.|  

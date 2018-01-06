@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>Модель для пакетов управления версиями
 Следующая модель представляет пример реализации элемента управления источника. В модели можно увидеть, интерфейсы, которые должны быть реализованы и среды служб, которые необходимо вызвать. Как и все службы фактически вызова методов определенный интерфейс, который можно получить посредством службы. Имена классов определяются для упрощения разделе способ выполнения системы управления версиями.  
@@ -25,10 +26,10 @@ ms.lasthandoff: 10/31/2017
  ![SCC &#95; Примеры TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
 Пример проекта системы управления версиями  
   
-## <a name="interfaces"></a>Интерфейсы  
+## <a name="interfaces"></a>интерфейсов,  
  Система управления версиями можно реализовать для вашего новых типов проектов в Visual Studio, используя список интерфейсов, показанные в следующей таблице.  
   
-|Интерфейс|Применение|  
+|Интерфейс|Использовать|  
 |---------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Вызывается по проектам и редакторы перед их сохранения или файлы изменение («грязные»). Этот интерфейс осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> службы.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Вызывается проектами, чтобы запросить разрешение на добавление, удаление или переименование файла или каталога. Этот интерфейс также вызывается проекты, чтобы сообщить среде при утвержденных сложения, удаление или переименование действия выполнена. Осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> службы.|  

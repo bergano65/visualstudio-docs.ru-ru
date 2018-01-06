@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e20d37d0e1162b49ca0fc92f92056b3541698454
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Файл DslDefinition.dsl
 В этом разделе описывается структура DslDefinition.dsl файла в проект Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] решение, которое определяет *доменного языка*. Файл DslDefinition.dsl описаны классы и отношения доменный язык, вместе с диаграммы, фигур, соединители, формат сериализации и **элементов** доменного языка и его средства редактирования. В решении доменного языка код, который определяет эти инструменты, генерируется согласно информации из файла DslDefinition.dsl.  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/27/2017
  Designer  
  В этом разделе определены конструктор (редактор), который объединяет в себе **элементов**, параметры проверки схемы и схему сериализации. Раздел конструктора также определяет корневой класс модели, который обычно является корневым классом схемы.  
   
- Обозреватель  
+ исходным кодом  
  В этом разделе описаны **обозреватель DSL** поведение (определенное в разделе XmlSerializationBehavior).  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Моникеры в файле DslDefinition.dsl  

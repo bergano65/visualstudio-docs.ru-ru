@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5118fe29463368bcca90e21830e1418d41c18339
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Текст события буфера в API прежних версий
 Объект текстового буфера создает несколько различных событий, которые позволяют реагировать на различных ситуациях.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="text-buffer-interfaces"></a>Интерфейсы буфера текста  
  Ниже перечислены интерфейсы, реализованные объект текстового буфера.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Включает создание составных действий (действия, сгруппированные в единое один отмены и повтора).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение документа данных управляется буфер текста.|  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="text-buffer-event-interfaces"></a>Интерфейсы событий буфера текста  
  Ниже перечислены интерфейсы для уведомления о событии буфера текста.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Сообщает клиенту при новой языковой службы, связанной с текстового буфера.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Сообщает клиенту, когда инициализируется буфер текста и при изменении данных в буфере.|  

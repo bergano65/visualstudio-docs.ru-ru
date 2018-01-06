@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Идентификаторы GUID и идентификаторов ID меню Visual Studio
 В этом разделе перечисляются значения GUID и ID меню и группы в строке меню Visual Studio. Эти значения определяются в vsct-файлами, которые устанавливаются как часть пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [IDE-Defined команд, меню и группы](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Группы в строке меню Visual Studio  
  Чтобы добавить меню в строке меню, установите одно из этих групп с родительским.  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Файл, представления и изменения|IDG_VS_MM_FILEEDITVIEW|  
 |Рефакторинг|IDG_VS_MM_REFACTORING:|  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Меню в строке меню Visual Studio  
  Чтобы добавить группу к существующему меню Visual Studio, установите одно из следующих меню с родительским. Подменю не включаются в этот список.  
   
-|Меню|Идентификатор|  
+|Меню|ID|  
 |----------|--------|  
 |Файл|IDM_VS_MENU_FILE|  
 |Правка|IDM_VS_MENU_EDIT|  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="file-menu-groups"></a>Файловые группы меню  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Новый или открытие|IDG_VS_FILE_FILE|  
 |Add|IDG_VS_FILE_ADD|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="edit-menu-groups"></a>Изменение группы меню  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Отменить/Повторить|IDG_VS_EDIT_UNDOREDO|  
 |Вырезания, копирования и вставки|IDG_VS_EDIT_CUTCOPY|  
@@ -98,14 +99,14 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="refactor-menu-groups"></a>Рефакторинг группы меню  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Common|IDG_REFACTORING_COMMON|  
 |Дополнительно|IDG_REFACTORING_ADVANCED|  
   
 ### <a name="view-menu-groups"></a>Просмотр групп меню  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Код формы|IDG_VS_VIEW_FORMCODE|  
 |Браузер|IDG_VS_VIEW_BROWSER|  
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-menu-groups"></a>Группы меню проекта  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Прочие добавить|IDG_VS_PROJ_MISCADD|  
 |Add|IDG_VS_PROJ_ADD|  
@@ -138,17 +139,17 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="build-menu-groups"></a>Построение группы меню  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Решение|IDG_VS_BUILD_SOLUTION|  
 |Выбранное|IDG_VS_BUILD_SELECTION|  
 |Оптимизация с использованием профиля|IDG_VS_PGO_SELECTION|  
 |Прочее|IDG_VS_BUILD_MISC|  
-|Cancel|IDG_VS_BUILD_CANCEL|  
+|Отмена|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="tools-menu-groups"></a>Группы меню средства  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Командная строка|IDG_VS_TOOLS_CMDLINE|  
 |Фрагменты кода|IDG_VS_TOOLS_SNIPPETS|  
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="window-menu-groups"></a>Группы меню окна  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Новый|IDG_VS_WINDOW_NEW|  
 |Закрепление или закрыть|IDG_VS_DOCKCLOSE|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="help-menu-groups"></a>Группы меню справки  
   
-|Группа|Идентификатор|  
+|Группа|ID|  
 |-----------|--------|  
 |Примеры|IDG_VS_HELP_SAMPLES|  
 |Поддержка|IDG_VS_HELP_SUPPORT|  

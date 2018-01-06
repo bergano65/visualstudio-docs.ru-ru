@@ -18,16 +18,17 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d87cb7a48d85e4bd3394a563b201466613a9c44f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-fonts-and-colors"></a>Шрифты и цвета
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Обеспечивает поддержку использования шрифты и цвета для отображения текста.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Обзор цвет и шрифт](../extensibility/font-and-color-overview.md)  
  Описание параметров шрифта и цвета текста в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Также понятия, категории и отображаемые элементы и описывает, как использовать атрибуты текста в пакеты VSPackage и базового редактора.  
   

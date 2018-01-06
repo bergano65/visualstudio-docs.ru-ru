@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12ed4c42335590b7e48d0f6f0fed716a7f149bd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61624d9926f4d984386f1a8b3fe8a575ce465331
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Конструктор инициализации и настройки метаданных
 Обработка метаданных и фильтрация атрибутов, связанных с конструктором или конструктор компонентов предоставляет механизм для приложений, чтобы определить, какие средства используются определенного конструктором для обработки различных <xref:System.Type> объектов (таких как структуры данных классы или графический сущности), когда конструктор доступен, и как интегрированная среда разработки Visual Studio настроена для поддержки конструктора (для экземпляра, который **элементов** категорию или вкладку доступен).  

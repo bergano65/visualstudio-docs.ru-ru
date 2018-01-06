@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a34a964450931071a290764074f4e955fe19aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b43963d657e8d1fe7aa24e98632d2ca46240c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support"></a>Поддержка веб-сайта
 Веб-сайт проекта система представляет собой систему проектов, которая создает веб-проектов. Веб-проекты в свою очередь создавать веб-приложения. Проект веб-сайта создает один исполняемый файл для каждой веб-страницы, связанный код. Дополнительные исполняемые файлы создаются из файлов исходного кода в папке /App_Code.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Шаблоны поддержки веб-сайтов](../../extensibility/internals/web-site-support-templates.md)  
  Список шаблонов, которые можно использовать для создания новых проектов веб-сайтов и связанных элементах.  
   

@@ -20,11 +20,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da7f4695bc817a66761c579b4c5af85b59ee041f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d4e1e92eab8def99a67b7da531770bb2dd58fc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="granting-trust-to-office-solutions"></a>Присвоение уровня доверия решениям Office
   Присвоение уровня доверия решениям Office означает изменение политики безопасности для каждого целевого компьютера, чтобы доверять сборку решения, манифест приложения, манифест развертывания и документа. Доверие может быть предоставлен для решения Office путем вы или конечным пользователем.  

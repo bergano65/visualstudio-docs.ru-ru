@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5d66bf7670d5ba9b6423461bdb5e5482819592f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Применение параметров подключения нескольких проектов
 Подключаемый модуль системы управления версиями созданное с помощью 1.2 API подключаемого модуля управления источника, можно использовать пакетную операцию на обработку же операция системы управления версиями в нескольких проектах или несколько контекстов соединений. Пакеты можно использовать для устранения избыточных, диалоговые окна работу пользователей на проект.  

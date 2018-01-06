@@ -26,11 +26,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ece3128c2d6850a1d1dd22d0328a4ee2c46da2b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4cacdbb314130fa45b5aa3820abbbffbcbc6c0bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>Интеграция бизнес-данных в SharePoint
   Можно интегрировать бизнес-данные в SharePoint. Бизнес-данные могут поступать от серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel и SAP, или веб-службы. Пользователи могут просмотра, добавления, изменения или удаления бизнес-данных с помощью внешних списков или деловых данных веб-частей в SharePoint.  Пользователи могут также доступ к этим данным вне сети, в приложении Microsoft Office, например Microsoft Outlook. Дополнительные сведения см. в разделе [где можно можно показать внешних данных](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -55,9 +56,9 @@ ms.lasthandoff: 10/31/2017
   
  Visual Studio создает файл кода службы для каждой сущности в модели. При добавлении метода в модель Visual Studio создает соответствующий метод в файл кода службы. Добавьте код для каждого метода для выполнения соответствующих задач. Например при добавлении метода создания модели, Visual Studio создает метод создания в файл кода службы. Этот метод вызывается службой BDC, когда пользователь щелкает **новый элемент** кнопка в виде списка, который основан на модели. Таким образом добавьте код создания метода, который добавляет новые данные в источнике данных. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)|Показано, как создать новую модель или импорт модели, экспортированных из SharePoint.|  
 |[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)|Руководство по разработке элементов модели с помощью средств разработки Visual Studio.|  

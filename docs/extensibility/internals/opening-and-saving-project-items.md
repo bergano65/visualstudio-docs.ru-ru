@@ -16,16 +16,17 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a30589591a7cef60ecfb19945366f8fcf539da02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a270811cc13d4b0e9af027ec2b4b5d2032582a3e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="opening-and-saving-project-items"></a>Открытие и сохранение элементов проекта
 При добавлении нового типа проекта, необходимо управлять Открытие и сохранение файлов проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). В следующих разделах рассматриваются различные способы открытия и сохранения файлов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Отображение файлов с помощью команды "Открыть файл"](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)  
  Предоставляет пошаговое объяснение как IDE обрабатывает **открыть файл** команда и роли проектов реагировать на эту команду.  
   

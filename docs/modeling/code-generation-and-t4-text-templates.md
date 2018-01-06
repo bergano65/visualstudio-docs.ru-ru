@@ -19,11 +19,12 @@ caps.latest.revision: "82"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 60840f3d47b43ea84bec66ea7957f613d2379901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Создание кода и текстовые шаблоны T4
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *текстовый шаблон T4* представляет собой сочетание блоков текста и логики управления, которое может создать текстовый файл. Логика управления записывается в виде фрагментов программного кода в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. В Visual Studio 2015 с обновлением 2 и более поздних версиях можно использовать функции C# версии 6.0 в директивах шаблонов T4. Созданный файл может быть текстом любого типа, например веб-страницей, файлом ресурса или исходным кодом программы на любом языке.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/27/2017
   
  Кроме того, шаблон содержит фрагменты программного кода. Эти фрагменты можно использовать для повторения разделов текста, создания условных разделов и отображения данных из приложения.  
   
- Чтобы создать выходные данные, приложение вызывает функцию, которая создается с помощью шаблона. Например:  
+ Чтобы создать выходные данные, приложение вызывает функцию, которая создается с помощью шаблона. Пример:  
   
 ```csharp  
 string webResponseText = new MyTemplate().TransformText();  
@@ -96,7 +97,7 @@ namespace Fabrikam.FirstJob
   
  Функция преобразования текстового шаблона называется *T4*.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
  В любом приложении, создающем текстовые файлы, предкомпилированные текстовые шаблоны являются простым и надежным методом определения текста. Тем не менее этот метод невозможно использовать для текстовых шаблонов, которые изменяются во время выполнения.  
   

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90268fed6f70f97c87bc1a09376aa93c1fda3106
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d26ede37f64a95e62ff15152ff69be22ccb1ce4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;настройки&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `customizations` пространства имен `vstov4` содержит все сведения об установке и загрузке каждого решения Office.  
@@ -66,11 +67,11 @@ ms.lasthandoff: 10/31/2017
  Элемент `customizations` имеет указанный ниже дочерний элемент.  
   
 ### <a name="customization"></a>настройка  
- Обязательный. `customization` Элемент в `vstov4` пространство имен определяется в [&#60; настройки &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Обязательно. `customization` Элемент в `vstov4` пространство имен определяется в [&#60; настройки &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Пример настройки на уровне документа  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `customizations` для настройки на уровне документа.  
   
 > [!NOTE]  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="example-of-an-vsto-add-in"></a>Пример надстройки VSTO  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `customizations` для надстройки VSTO. Это надстройка VSTO для Outlook, в которой используются области форм. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

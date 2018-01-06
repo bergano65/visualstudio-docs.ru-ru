@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e493cdbccf12019584bb08b82503d6a8c6ebeea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 14e5b641dc5bc51ac066f32332f3fdb2b01d1810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizing-and-viewing-data"></a>Визуализация и просмотр данных
 Визуализаторами типов и пользовательских средств просмотра представить данные способом быстро осмысленное разработчика. Вычислитель выражений (Эстония) можно поддерживать визуализаторами типов сторонних разработчиков, а также предоставить свои собственные пользовательские средства просмотра.  

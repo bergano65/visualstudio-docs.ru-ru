@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>Программа CreatePkgDef
 DLL-файл для расширение Visual Studio в качестве параметра принимает и создает pkgdef-файл вместе с библиотекой DLL. Pkgdef-файл содержит все сведения, в противном случае будут записаны в системный реестр при установке расширения.  
@@ -37,10 +38,10 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
   
 ## <a name="arguments"></a>Аргументы  
  / out =`FileName`  
- Обязательный. Задает имя выходного файла .pkgdef для`FileName`.  
+ Обязательно. Задает имя выходного файла .pkgdef для`FileName`.  
   
  /codebase  
- Необязательно. Принудительная регистрация с помощью служебной программы CodeBase.  
+ Необязательный. Принудительная регистрация с помощью служебной программы CodeBase.  
   
  / Assembly  
  Принудительная регистрация с помощью служебной программы сборки.  

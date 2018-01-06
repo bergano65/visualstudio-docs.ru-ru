@@ -15,18 +15,19 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ccbc7536a899226b7f2d9433b6c451df33bbde5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 197cc0f0997e80d6cae277c4b19c5bbc82dce805
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Приступая к работе с подключаемые модули управления версиями
 Чтобы создать подключаемый модуль системы управления версиями, необходимо создать библиотеку DLL, которая реализует функции, определенные в API подключаемых модулей управления источника, а затем зарегистрировать библиотеку DLL с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] чтобы сделать его доступным для использования в системе управления версиями исходного кода.  
   
  Три версии API подключаемых модулей управления источника (версии 1.1, 1.2 и 1.3) доступны для подключаемых модулей системы управления версиями. Здесь описаны API подключаемого модуля управления источника — версии 1.3. Она может быть полностью совместимы с подключаемые модули управления версиями поддержке версий 1.1 и 1.2. [Новые возможности источника управления Plug-in API версия 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) разделе описаны новые возможности, поддерживаемые в последней версии API-интерфейса подключаемого модуля управления источника.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Установка подключаемого модуля системы управления версиями](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
  Описание способов сделать записи реестра, необходимые для подключаемого модуля системы управления версиями библиотеки DLL.  
   

@@ -15,16 +15,17 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b167d85713acfd547083b38437c8b2400f2d739
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec256103aa9329c752029a7139eb2c5c533ae67b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Приступая к работе с пакеты VSPackage исходного элемента управления
 VSPackage системы управления версиями является более сложных альтернативой подключаемый модуль системы управления версиями. (См. [Создание подключаемый модуль системы управления источника](../../extensibility/internals/creating-a-source-control-plug-in.md) Дополнительные сведения об исходном управления подключаемых модулей.) VSPackage системы управления версиями обеспечивает полный контроль над модель управления версиями, функции и пользовательский интерфейс (UI), а также интегрируется в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среде, что VSPackage.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Определение порядка реализации пакета VSPackage системы управления версиями](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)  
  Объясняет выбор решения для управления источника и приведены общие рекомендации по выбору интеграции соответствующие пути.  
   

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f25b39178141f3e3a40899645a0a1af6c8417ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1006e85611044805c0f3bd1e0035595288a5b32d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-element-visual-studio-templates"></a>Элемент Reference (шаблоны Visual Studio)
 Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.  
@@ -46,13 +47,13 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает сведения о сборке, используемые шаблоном для добавления в проекты ссылки на эту сборку. Должен существовать один `Assembly` элемент в каждом `Reference` элемент.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Ссылки](../extensibility/references-element-visual-studio-templates.md)|Группы ссылок на сборки, которые добавляются в проекты.|  
   

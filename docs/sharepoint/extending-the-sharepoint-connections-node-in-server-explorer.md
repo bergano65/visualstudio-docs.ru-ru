@@ -19,11 +19,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3cf332197227e2055b322bce3658cde66dc48f90
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe9fb4a12d45cf5d713fb76fe3fe04e1346a8355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе сервера
   В Visual Studio можно подключиться к локальным сайтам SharePoint на компьютере разработчика с помощью **подключения SharePoint** узел в**обозревателя серверов** окна. Этот узел содержит многие компоненты локальных сайтов SharePoint в виде иерархического дерева. Например можно просмотреть списки, библиотеки документов и типы содержимого на локальных сайтах. Дополнительные сведения об использовании **обозревателя серверов** для подключения к локальным сайтам SharePoint, в разделе [просмотра SharePoint подключения с помощью сервера обозревателя](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  

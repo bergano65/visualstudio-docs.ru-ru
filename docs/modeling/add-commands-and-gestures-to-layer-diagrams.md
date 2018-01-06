@@ -14,11 +14,12 @@ caps.latest.revision: "38"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 40bad32ef38fb99032690804d572f630bb60ac6d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Добавление команд и жестов в схемы зависимостей
 Можно определить команды контекстного меню и обработчики жестов на схемах зависимостей в Visual Studio. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension (VSIX) и предоставить их другим пользователям Visual Studio.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/07/2017
  См. раздел [Требования](../modeling/extend-layer-diagrams.md#prereqs).  
   
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Определение команды или жеста в новом расширении VSIX  
- Самый быстрый способ создания расширения заключается в использовании шаблона проекта. В этом случае код и манифест VSIX размещаются в одном и том же проекте.  
+ Самый быстрый способ создания расширения заключается в использовании шаблона проекта. Он помещает код и манифест VSIX в один проект.  
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Определение расширения с использованием шаблона проекта  
   
@@ -246,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
   
      **OnDragDrop** — вызывается, когда пользователь перетаскивает элемент на схему.  
   
--   Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Пример:  
+-   Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Например:  
   
     ```  
     public void OnDragDrop(IShape target, IDataObject data)  

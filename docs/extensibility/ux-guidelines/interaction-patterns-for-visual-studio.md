@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e084ace914f65a9e97307f0a70d6c5e2211be55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 31a3bff68a15603c8d40818fa2d826da64421dad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Шаблоны взаимодействия для Visual Studio
 ## <a name="overview"></a>Обзор  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="visual-studio-client-pattern-types"></a>Типах шаблонов Visual Studio клиента  
   
-|Тип расписания|Описание|Примеры|  
+|Тип расписания|Описание:|Примеры|  
 |------------------|-----------------|--------------|  
 |**Шаблоны уровня приложения**|Высокоуровневые шаблоны, общие для приложения, определение или отображение контекст приложения и содержащий составную и шаблоны элементов управления в них|-Windows средство<br />-Windows документа|  
 |**Составные шаблоны**|Общие шаблоны, которые могут охватывать шаблоны приложений или распознанный шаблон состоит из нескольких элементов управления в различных конфигурациях|-Переключение представлений<br />-Построители list<br />-Отображение данных<br />-Уведомления<br />-Проверка<br />-Выбор модели|  

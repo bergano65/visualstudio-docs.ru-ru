@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Модель службы языка для прежних версий
 Языковая служба определяет элементы и функции для конкретного языка и используются для предоставления редакторе сведения для данного языка. Например редактор необходимо знать элементов и ключевые слова языка, для поддержки Цветовая подсветка синтаксиса.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  Ниже приводится обзор объектов в модели.  
   
-|Компонент|Объект|Функция|  
+|Компонент|Object|Функция|  
 |---------------|------------|--------------|  
 |Буфер текста|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Чтение и запись текстового потока Юникода. Это возможно, что текст, который используется в других кодировках.|  
 |Окно кода|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Окно документа, содержащего один или несколько представлений текста. Когда [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] находится в режиме многодокументного интерфейса (MDI), окно кода является дочерней формы MDI.|  

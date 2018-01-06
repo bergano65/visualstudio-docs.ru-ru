@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7856f8fac7e986f3e5383fa91261de39fe815a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Изображения и значки для Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a>Использование изображений в Visual Studio  
@@ -271,7 +272,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="base-palette"></a>Базовой палитры  
  Все стандартные значки содержать три базовых цветов. Значки содержат не градиентов или тени с один или два исключения для значка 3D-инструмента.  
   
-|Использование|Имя|Значение (Светлая тема)|Палитра|Пример|  
+|Использование|name|Значение (Светлая тема)|Палитра|Пример|  
 |-----------|----------|---------------------------|------------|-------------|  
 |Фон/Темная|VS BG|424242 / 66,66,66|![Образец 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Пример базовой палитры](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
 |Переднего плана и индикатор|VS FG|F0EFF1 / 240,239,241|![Палитра F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
@@ -284,7 +285,7 @@ ms.lasthandoff: 10/31/2017
 #### <a name="action-modifiers"></a>Модификаторы действий  
  Четыре цвета ниже указывают типы действия, необходимые модификаторы действий:  
   
-|Использование|Имя|Значение (все темы)|Палитра|  
+|Использование|name|Значение (все темы)|Палитра|  
 |-----------|----------|--------------------------|------------|  
 |Положительное число|Зеленый действие VS|388A34 / 56,138,52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Отрицательное число|Красный действие VS|A1260D / 161,38,13|![Палитра A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
@@ -327,14 +328,14 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="folder"></a>Папка  
   
-|Использование|Имя|Значение (все темы)|Палитра|Пример|  
+|Использование|name|Значение (все темы)|Палитра|Пример|  
 |-----------|----------|--------------------------|------------|-------------|  
 |Папки|Папка|DCB67A / 220,182,122|![Палитра DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Значок цвета папки](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Языки Visual Studio  
  Каждый из распространенных языков или платформ, доступные в Visual Studio имеет связанный цвет. Эти цвета используются на значок «базовый» или на языка модификаторы, которые отображаются в правом верхнем углу комплексной значки.  
   
-|Использование|Имя|Значение (все темы)|Палитра|  
+|Использование|name|Значение (все темы)|Палитра|  
 |-----------|----------|--------------------------|------------|  
 |ASP, HTML, WPF|Синий ASP HTML WPF|0095D 7 / 0,149,215|![Палитра 0095 D 7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|Фиолетовая CPP|9B4F96 / 155,79,150|![Палитра 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
@@ -356,25 +357,25 @@ ms.lasthandoff: 10/31/2017
 #### <a name="intellisense"></a>IntelliSense  
  Значки IntelliSense используется монопольный цветовой палитры. Чтобы помочь пользователям быстро различать различных элементов в списке IntelliSense контекстного меню используются эти цвета.  
   
-|Использование|Имя|Значение (все темы)|Палитра|  
+|Использование|name|Значение (все темы)|Палитра|  
 |-----------|----------|--------------------------|------------|  
 |Класс событий|Действие оранжевый VS|C27D1A / 194,125,26|![Палитра C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
 |Метод расширения, делегат метода, модуль,|Фиолетовая действие VS|652D 90 / 101,45,144|![Палитра 652 d 90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |Поле, элемент перечисления, макрос, структуры, объединения значение типа, оператор, интерфейс|Синий действие VS|00539C / 0,83,156|![Палитра 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Объект|Зеленый действие VS|388A34 / 56,138,52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Object|Зеленый действие VS|388A34 / 56,138,52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Константа, исключение, элемент перечисления, карты, элемент карты, имен шаблона, определение типа|Фон (VS BG)|424242 / 66,66,66|![Образец 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>Примеры значков IntelliSense  
   
 ||||||  
 |-|-|-|-|-|  
-|![Значок класса IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 36_IntelliSenseClass")<br />Класс|![Значок частного события IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 37_IntelliSensePrivateEvent")<br />Закрытые события|![Значок делегата IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 38_IntelliSenseDelegate")<br />Делегат|![Значок друга метода IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 39_IntelliSenseMethodFriend")<br />Метод Friend|![Значок поля](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 40_Field")<br />Поле|  
-|![Значок элемента перечисления защищенного IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />Защищенный элемент перечисления|![Значок объекта IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Объект|![Значок шаблона IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />Шаблон|![Значок ярлыка исключения IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />Ярлык исключения||  
+|![Значок класса IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 36_IntelliSenseClass")<br />Класс|![Значок частного события IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 37_IntelliSensePrivateEvent")<br />Закрытые события|![Значок делегата IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 38_IntelliSenseDelegate")<br />делегат|![Значок друга метода IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 39_IntelliSenseMethodFriend")<br />Метод Friend|![Значок поля](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 40_Field")<br />Поле|  
+|![Значок элемента перечисления защищенного IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />Защищенный элемент перечисления|![Значок объекта IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Object|![Значок шаблона IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />Шаблон|![Значок ярлыка исключения IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />Ярлык исключения||  
   
 ### <a name="notifications"></a>Уведомления  
  Уведомления в Visual Studio используются для указания состояния. Палитра уведомлений использует следующие четыре цвета, а также параметры автозаполнения черный или белый переднего плана, для определения уведомлений о со следующими уровнями состояния.  
   
-|Использование|Имя|Значение (все темы)|Палитра|  
+|Использование|name|Значение (все темы)|Палитра|  
 |-----------|----------|--------------------------|------------|  
 |Состояние: нейтральный|Синий уведомления (VS-синий)|1BA1E2 / 27,161,226|![Палитра 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |Состояние: положительное|Зеленый уведомления (VS зеленый)|339933 / 51,153,51|![Образец 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
@@ -392,7 +393,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  Как правило Visual Studio Online состоит из компонентов, размещенные в браузере. Цвет изменяется в разных средах, но стиль остается неизменным.  
   
-|Группа|Использование|Имя|Значение (все темы)|Палитра|  
+|Группа|Использование|name|Значение (все темы)|Палитра|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|Фон|TFSO BG|656565/ 101, 101, 101|![Образец 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|Контур|TFSO OUT|FFFFFF / 255, 255, 255|![Палитра FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  

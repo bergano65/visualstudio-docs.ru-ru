@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 115509e8ff79aafa703c429b476041d558e3167c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 519f40017fff5dd3241f4563c5a85d0d0d15c01b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Практическое руководство. Развертывание, публикация и обновление решений SharePoint на удаленном сервере
   Помимо развертывания решений SharePoint в локальной системе, вы можете публиковать изолированные решения SharePoint на удаленные сайты или локальные сайты SharePoint. Удаленный процесс публикации копирует WSP-файл на сервер SharePoint, устанавливает решение, а затем позволяет активировать решение. Вы также можете обновить удаленную установку решения SharePoint после внесения в нее изменений.  

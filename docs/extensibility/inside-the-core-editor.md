@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50db39e9a6b864df8876054b455b169531260a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4612f5779d6177d58cef7f087ef6e11bbe4ebd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-core-editor"></a>В редакторе Core
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Базового редактора — это набор несколько компонентов, которые позволяют изменять и запросов текстовых данных. Если вы настроили базового редактора с помощью предыдущих версий API, могут продолжать использовать эти настройки, которые будет маршрутизироваться с помощью редактора адаптеров. Рекомендуется, однако адаптации настройки новый редактор API.  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Интеграция со службами языка  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [При создании экземпляра базового редактора с помощью API прежних версий](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
  Пошаговые инструкции о способах использования <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> для создания экземпляра ядро редактора.  
   

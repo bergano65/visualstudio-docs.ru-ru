@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33c917f30ca7c5d42dc85036ef410519e6f0a721
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ee5a2ae08df4649d5e551973539321164d4a8e59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getvalidcompatibleframework-function"></a>Функция GetValidCompatibleFramework
   Этот API поддерживает инфраструктуру Office и не предназначен для использования непосредственно из программного кода.  
@@ -35,7 +36,7 @@ HRESULT WINAPI GetValidCompatibleFramework(
   
 #### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |*lpwszCompatibleFrameworksXML*|Не следует использовать.|  
 |*pbstrValidFrameworkTag*|Не следует использовать.|  

@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 307344a9027e629f08350b77adf99d22d0c127a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Выбор и денежные единицы в Интегрированной среде разработки
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) хранит сведения о пользователях в данный момент выбранные объекты с помощью выбора *контекста*. С контекстом выбора пакеты VSPackage могут участвовать в валюте отслеживания двумя способами:  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="selection-context"></a>Выделенный фрагмент  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE глобально хранит отслеживания о валюте интегрированной среды разработки в свой собственный объект контекста глобального выделения. В следующей таблице показаны элементы, которые составляют контекст выделения.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |Текущей иерархии|Обычно текущий проект; текущей иерархии NULL указывает текущее решение в целом.|  
 |Идентификатор текущего элемента|Выбранный элемент в текущей иерархии; Если существует несколько вариантов выбора в окне проекта, может быть несколько текущих элементов.|  

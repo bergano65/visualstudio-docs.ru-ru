@@ -15,16 +15,17 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a3c41646fa7424197325c48b4cd40bc7a9eb8ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b04ebb2fd28c808c742897bbf4ceb94505641e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-types"></a>Типы проектов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]содержит несколько типов проектов для языков, таких как [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]позволяет также создавать собственные типы проектов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Essentials](../../extensibility/internals/project-type-essentials.md)  
  Представлены важные сведения, необходимые для начала работы с типами проектов.  
   

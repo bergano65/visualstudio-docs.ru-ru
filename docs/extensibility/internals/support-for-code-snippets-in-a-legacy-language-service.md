@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0089e5a8bf85ba352788767c821d95f41ca60eec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковую службу прежних версий
 Фрагмент кода — это часть кода, вставляемый в файл исходного кода. Самого фрагмента является шаблоном на основе XML с набором полей. Эти поля будут выделены после вставки фрагмента кода, а также могут иметь разные значения в зависимости от контекста, в которую вставляется фрагмент. Сразу после вставки фрагмента кода, служба языка можно форматировать фрагмента кода.  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
  Следующие элементы подстановки может быть помещен в путь, хранящийся в \<DirPath > тег в файле индекса.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |% LCID %|Идентификатор языка.|  
 |% Корневого_каталога_установки %|Корневой каталог установки для Visual Studio, например, C:\Program Files\Microsoft Visual Studio 8.|  

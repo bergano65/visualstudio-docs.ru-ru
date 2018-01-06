@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f17e43e2fe98e36939c91b37e72b185cb14d09e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-project-items"></a>Расширение элементов проектов SharePoint
   Создание расширения элемента проекта, если вы хотите добавить функциональные возможности для типа элемента проекта SharePoint, который уже установлен в Visual Studio. Например, можно создать расширение для встроенной **приемника событий** или **определение списка** элементы проекта в Visual Studio, или можно создать расширение для пользовательского типа элементов проектов. Кроме того, можно создать расширение для всех типов элементов проектов SharePoint.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 |Пустой элемент|Microsoft.VisualStudio.SharePoint.GenericElement|  
 |Определение списка<br /><br /> Определение списка из типа содержимого|Microsoft.VisualStudio.SharePoint.ListDefinition|  
 |Экземпляр списка|Microsoft.VisualStudio.SharePoint.ListInstance|  
-|Модуль|Microsoft.VisualStudio.SharePoint.Module|  
+|Module|Microsoft.VisualStudio.SharePoint.Module|  
 |Последовательный рабочий процесс<br /><br /> Рабочий процесс конечного компьютера|Microsoft.VisualStudio.SharePoint.Workflow|  
 |Определение веб-сайта|Microsoft.VisualStudio.SharePoint.SiteDefinition|  
 |Визуальная веб-часть|Microsoft.VisualStudio.SharePoint.VisualWebPart|  

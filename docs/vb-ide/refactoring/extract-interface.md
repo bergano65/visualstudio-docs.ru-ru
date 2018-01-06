@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractinterface
 dev_langs: VB
-ms.openlocfilehash: 9616cae1282b992722f75eee091e2c9d271e85f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 08bbae629dbd0e1098eca67107926d290ffe7fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-an-interface-in-visual-basic"></a>Извлечение интерфейса в Visual Basic
 **Что:** позволяет создавать интерфейс с помощью существующих членов из класса, структуры или интерфейса.
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
      * Щелкните правой кнопкой мыши имя класса, выберите **Быстрые действия и рефакторинг** и выбрать пункт **извлечение интерфейса** из контекстного меню окна предварительного просмотра.
 
 1. В **извлечение интерфейса** диалоговое окно, появится окно, введите сведения, задаваемые: ![извлечение интерфейса](media/extractinterface_dialog.png)
-   | Поле | Описание |
+   | Поле | Описание: |
    | --- | --- |
    | **Имя нового интерфейса** | Имя интерфейса, который должен быть создан. Это будет по умолчанию я*ClassName*, где *ClassName* имя класса, выбранной выше. |
    | **Новое имя файла** | Имя файла, который будет создан, будет содержать интерфейс. Как с именем интерфейса, это будет по умолчанию я*ClassName*, где *ClassName* имя класса, выбранной выше. |

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Синтаксиса в языковую службу прежних версий
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]использует службу выделения цветом элементов языка определения и отобразить их с указанным цветов в редакторе.  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  Помимо использования colorizer языковой службы, пакет VSPackage можно также использовать общего назначения [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] механизм цветовой подсветки текста. Дополнительные сведения о механизме см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Реализация цветовой маркировки синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)  
  Описывает, как редактор получает доступ к языковую службу Цветовая подсветка синтаксиса и раскраску необходимо реализовать поддержку синтаксиса языковой службы.  
   

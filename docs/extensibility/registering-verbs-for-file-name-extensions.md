@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f430486c613e6281404110d4441d2a3d2100534
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff1902689524dd980c8223ca83863238254df448
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Регистрация команд для расширений имен файлов
 Сопоставление расширения имени файла с помощью приложения обычно имеет предпочтительный действие, которое возникает, когда пользователь дважды щелкает файл. Этот предпочитаемый действия, связанные с глагола, например открытие, соответствующее действие.  

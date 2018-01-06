@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Идентификаторы GUID и идентификаторов панелей инструментов Visual Studio
 В этом разделе перечисляются значения GUID и ID панелей инструментов, которые включены в среде разработки Visual Studio (IDE) и групп они содержат. Эти значения определяются в vsct-файлами, которые устанавливаются как часть пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [IDE-Defined команд, меню и группы](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  Только группы может просматривать непосредственно из панели инструментов. Чтобы добавить группу, присвоено значение родительского GUID и ID на панели инструментов. Чтобы добавить кнопку на панель инструментов, присвоено значение родительской группы на панели инструментов.  
   
-|Toolbar|Идентификатор|  
+|Toolbar|ID|  
 |-------------|--------|  
 |Стандартный|IDM_VS_TOOL_STANDARD|  
 |Построить|IDM_VS_TOOL_BUILD|  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="special-toolbars"></a>Специальные панели инструментов  
  Определенные этих панелей инструментов в интегрированной среде разработки Visual Studio, однако они служат специализированных функций и не размещайте группы команд.  
   
-|Toolbar|Идентификатор|  
+|Toolbar|ID|  
 |-------------|--------|  
 |Добавление команды|IDM_VS_TOOL_ADDCOMMAND|  
 |Не определено|IDM_VS_TOOL_UNDEFINED|  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="standard-toolbar-groups"></a>Стандартная панель инструментов группы  
   
-|Имя|Идентификатор|  
+|name|ID|  
 |----------|--------|  
 |Сохранение и открытие|IDG_VS_TOOLSB_SAVEOPEN|  
 |Вырезания или копирования|IDG_VS_TOOLSB_CUTCOPY|  
@@ -78,14 +79,14 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="build-toolbar-groups"></a>Построение группы на панели инструментов  
   
-|Имя|Идентификатор|  
+|name|ID|  
 |----------|--------|  
 |Панель построения|IDG_VS_BUILDBAR|  
-|Cancel|IDG_VS_BUILD_CANCEL|  
+|Отмена|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>Панель инструментов редактора текстов групп  
   
-|Имя|Идентификатор|  
+|name|ID|  
 |----------|--------|  
 |Завершение|IDM_VS_TOOL_TEXTEDITOR|  
 |Отступ|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="debug-toolbar-groups"></a>Отладка инструментов группы  
   
-|Имя|Идентификатор|  
+|name|ID|  
 |----------|--------|  
 |Выполнение|IDM_DEBUG_TOOLBAR|  
 |Отладка по шагам|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -103,7 +104,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="debug-location-toolbar-groups"></a>Расположение группы инструментов отладки  
   
-|Имя|Идентификатор|  
+|name|ID|  
 |----------|--------|  
 |Место отладки|IDG_DEBUG_CONTEXT_TOOLBAR|  
   

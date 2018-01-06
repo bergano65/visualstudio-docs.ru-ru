@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ce9c4ec33a76afbba1b334fdc5bac5aee17e334
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97993833d08479fbf518fb5b4852f46cc34f9bc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccreatesubproject-function"></a>Функция SccCreateSubProject
 Эта функция создает подпроект с заданным именем в существующий проект родительского заданные `lpParentProjPath` аргумент.  
@@ -62,7 +63,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Подпроект успешно создан.|  
 |SCC_E_INITIALIZEFAILED|Не удалось инициализировать родительский проект.|  

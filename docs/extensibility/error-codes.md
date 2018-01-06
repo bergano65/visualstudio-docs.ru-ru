@@ -16,16 +16,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50d05e529a3202f59df53801728b40fee1c68f40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13eff6aca9470e88be788fe3fcb625fecc32c2c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-codes"></a>Коды ошибок
 При API подключаемых модулей для управления источника функция возвращает ошибку, он ожидается один из следующих кодов ошибки. Все ошибки отрицательное значение, предупреждения или информационные коды являются положительными, и 0 — успех.  
   
-|Код ошибки|Значение|Описание|  
+|Код ошибки|Значение|Описание:|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Подключаемый модуль поддерживает добавление файлов из системы управления версиями в два этапа. Дополнительные сведения см. в разделе [SccSetOption](../extensibility/sccsetoption-function.md).|  
 |`SCC_I_FILEDIFFERS`|6|Имя локального файла отличается от файла в базе данных управления версиями (например, [SccDiff](../extensibility/sccdiff-function.md) могут возвращать это значение).|  

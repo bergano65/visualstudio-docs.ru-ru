@@ -23,11 +23,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5f111efa5c2276adcc76fdf13cdf5a805929c63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4b7a2d1be80e7c8bde780499894bccd82c572a16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Создание столбцов сайта, типов содержимого и списков для SharePoint
   Visual Studio предоставляет шаблоны элементов проекта для различных основных элементов SharePoint, включая *перечислены* и *типы содержимого*, которые могут включать столбцы сайтов (или  *поля*). Конструкторы для новых типов содержимого и списков позволяют создать эти элементы проще, чем когда-либо.  
@@ -46,9 +47,9 @@ ms.lasthandoff: 10/31/2017
   
  Новые конструкторы типов содержимого и списков в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] дают возможность создавать типы содержимого сайта и списки гораздо проще и интуитивнее, чем в предыдущей версии Visual Studio. Пользовательский интерфейс позволяет визуально создавать типы содержимого и списки знакомым способом, а также сортировать и группировать данные в списках и использовать заголовки групп. Дополнительные сведения о типах содержимого см. в разделе [типы содержимого](http://go.microsoft.com/fwlink/?LinkId=224997). Дополнительные сведения о списках см. в разделе [списка форм](http://go.microsoft.com/fwlink/?LinkId=224998) и [представления списка](http://go.microsoft.com/fwlink/?LinkId=224999).  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Показывает способы создания столбцов сайта, используемые в пользовательском типе содержимого. Тип содержимого затем используется в пользовательском списке.|  
   

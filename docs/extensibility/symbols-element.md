@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ef5b215e18163b10c8002affc959bd80b586cf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a6065162ce5ba7c8f611be7a093bba7a0c55fca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-element"></a>Элемент символы
 Определяет идентификаторы GUID и идентификаторов, которые используются другими элементами VSCT. Для неуправляемого кода, эти сведения обычно предоставляет файлы заголовков, которые определяются [Extern элемент](../extensibility/extern-element.md). Управляемый код использует дочерние элементы элемента символы определить эти данные.  
@@ -42,20 +43,20 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |Нет||  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |GuidSymbol|Определяет символ идентификатора GUID. GuidSymbol имеет два обязательных атрибута: имя и значение. Имя — это имя символа, а значение является значением идентификатора GUID, как строка.<br /><br /> Например:\<GuidSymbol имя = значение «guidVsPackage1Pkg» = «{c5f54698-101a-4846-84d3-dc748f9cd848}» / >|  
 |IDSymbol|Определяет символ. IDSymbol имеет два обязательных атрибута: имя и значение. Имя — это имя символа, а значение является значением символа как строка.<br /><br /> Например:\<IDSymbol имя = значение «MyMenuGroup» = «0x1020» / >|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент CommandTable](../extensibility/commandtable-element.md)|Корневой элемент файла vsct.|  
   

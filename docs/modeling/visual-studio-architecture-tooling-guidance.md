@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: b497cafd50361c9e644467c9ca1edf55ab1d8c91
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: dcedff359d3f602096508c2123988cd31453e471
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Руководство по средствам проектирования архитектуры Visual Studio
 Это руководство по архитектуре для работы с проектами — это загружаемый пакет практического руководства об использовании средств моделирования в Visual Studio 2010. Изображено высокоуровневое представление использования всех инструментов моделирования интегрированным образом и рассматриваются наиболее распространенные сценарии, в которых используются средства.  

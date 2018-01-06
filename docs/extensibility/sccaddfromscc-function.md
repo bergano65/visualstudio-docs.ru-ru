@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5027e765e12ff483a9a27795990f0ddfbb479a5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfromscc-function"></a>Функция SccAddFromScc
 Эта функция позволяет пользователю для поиска файлов, которые уже находятся в системе управления версиями и впоследствии сделать частью текущего проекта, эти файлы. Например эту функцию можно получить общего файла заголовка в текущий проект, не копируя файл. Возвращаемый массив файлов, `lplpFileNames`, содержит список файлов, которые пользователь хочет добавить в проект интегрированной среды разработки.  
@@ -50,7 +51,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Файлы были успешно расположен и добавлена в проект.|  
 |SCC_I_OPERATIONCANCELED|Операция была отменена не оказывает влияния.|  

@@ -11,11 +11,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 93b4d129cd09fe3d3b67bfc743286577b1e285dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 351b9025ba4631a515f1f6cf627e27e6afb3cc88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to--with-text-templates"></a>Практическое руководство по текстовым шаблонам
 Текстовые шаблоны в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предоставляют удобный способ создания текстом любого типа. Текстовые шаблоны можно использовать для создания текста во время выполнения как часть приложения, а также во время разработки для создания часть кода проекта. Этот раздел содержит описание наиболее часто задаваемые «Как?...» вопросы.  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/27/2017
   
 -   Добавьте текстовый шаблон времени выполнения в проект. Этот шаблон создает класс в коде, который можно создать и использовать для создания текста. В параметрах конструктора, можно передавать в нее данные. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
--   Если вы хотите сформировать на основе шаблонов, которые доступны только во время выполнения, можно использовать стандартные текстовые шаблоны. При создании [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения, можно вызвать службы текстовых шаблонов. Дополнительные сведения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). В других контекстах можно использовать модуль создания текстовых шаблонов. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
+-   Если вы хотите сформировать на основе шаблонов, которые доступны только во время выполнения, можно использовать стандартные текстовые шаблоны. При создании [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения, можно вызвать службы текстовых шаблонов. Дополнительные сведения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). В других контекстах можно использовать модуль создания текстовых шаблонов. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
   
      Используйте \<#@parameter#> директивы для передачи параметров в эти шаблоны. Дополнительные сведения см. в разделе [директива Parameter T4](../modeling/t4-parameter-directive.md).  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/27/2017
      Дополнительные сведения см. в разделе [Приступая к работе с доменными языками](../modeling/getting-started-with-domain-specific-languages.md) и [формирование кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Получение данных из[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], набором `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Например:  
+ Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], набором `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Пример:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

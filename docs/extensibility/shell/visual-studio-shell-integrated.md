@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74fa1e1d23725af1041d9c635a768b7667b3b888
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2159e0be2f54929e28a45215588515a522b542e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell-integrated"></a>Оболочка Visual Studio (интегрированная)
 Оболочка Visual Studio интегрированы включает интегрированной среды разработки (IDE), отладчик и интеграции системы управления версиями. Язык программирования, не включается. Тем не менее интегрированная оболочка предоставляют платформу, которая позволяет добавлять языков программирования.  

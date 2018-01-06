@@ -11,11 +11,12 @@ helpviewer_keywords: deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: c6dfe76ef1bfcfbcb0c39c33ea01668cc96f2596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5623ea382266fdbcd59bbe57b71522a7a1f4a31e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="locating-visual-studio"></a>Обнаружение Visual Studio
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
 
 Чтобы найти Visual Studio и другие инструменты в среды сборки c, скрипты PowerShell, установщики и другие сценарии, у нас есть ряд средств открытым исходным кодом можно использовать непосредственно или повторно распространить вместе с собственных сценариев.
 
-| Проект | Описание |
+| Проект | Описание: |
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | Один файл собственного исполняемый файл, чтобы найти экземпляры, соответствующие критериям, например выпуска или предварительной версии, что продукт установлен и устанавливаются, рабочая нагрузка. Также поддерживает поиск Visual Studio 2010 и более поздних версиях на то, что меньше возвращаются сведения, для Visual Studio 2017 г. и более поздних. В разделе [вики-сайте](https://github.com/Microsoft/vswhere/wiki) примеры. |
 | [Командлеты VSSetup](https://github.com/Microsoft/vssetup.powershell) | Поддерживаемые командлеты PowerShell 2.0 и более поздних, возвращающие подробные сведения как объекты можно использовать для поиска экземпляров на основе одного условия как _vswhere_ и для обнаружения свойств еще больше об экземплярах. В разделе [вики-сайте](https://github.com/Microsoft/vssetup.powershell/wiki) примеры. |

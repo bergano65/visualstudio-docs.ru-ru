@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e4ebcf8ca85c0ed6face82dfd91f8c5266013f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 18049c034286c33247aec11aba77071daa93ef5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Проверка подтипы проекта во время выполнения
 Пакет VSPackage, который зависит от подтип пользовательский проект следует логики для поиска, подтипа, чтобы он могут отклоняться корректно подтип не указан. Ниже показано, как проверить наличие указанного подтипа.  

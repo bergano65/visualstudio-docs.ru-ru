@@ -16,11 +16,12 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 886185c61f407906ff059b84b5f1f8b18e3ace98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: e798eb66601d253c180a72b730bb3531e21c11c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Пошаговое руководство: Создание приложения основные изолированной оболочки
 В этом пошаговом руководстве показано, как создать решение изолированной оболочки, Настройка окна справки о и создать программу установки, который устанавливает изолированной оболочки.  

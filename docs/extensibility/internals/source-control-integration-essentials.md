@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09e96719bd7d9a2091bf31dc343036f0312c02fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-essentials"></a>Essentials интеграции управления источника
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]поддерживает два типа интеграции системы управления версиями: элемент управления источником подключаемого модуля, созданное с помощью API подключаемого модуля управления источника (прежнее название — MSSCCI API) и решения интеграции VSPackage исходный элемент управления предоставляет базовые функциональные возможности, предоставляет функциональные возможности более надежным.  

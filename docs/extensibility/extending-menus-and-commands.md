@@ -16,11 +16,12 @@ caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c53f836b6384968bf812ae9ae559a281fda6f13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 815aac693686dc59d6934b00fb456c3a1afce72c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-menus-and-commands"></a>Расширение меню и команд
 Команды, способ добавления действий и процессов в Visual Studio. В большинстве случаев команды отображаются в меню или панели инструментов. Шаблон проекта VSPackage показан способ реализации очень простой команды. Немного больше времени, но по-прежнему простую реализацию, см. [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
  Следующие разделы описывают добавить различные команды, меню и панели инструментов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Добавление меню в строку меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)  
  Объясняет, как добавить меню в верхней строке меню Visual Studio.  
   

@@ -15,16 +15,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4bc84546daaa6e2404707b6663aa65e8309870
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75298d8fa2ede5db06bef624eeb385785c416747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions"></a>Решения
 Решение — это группа из одного или нескольких проектов, которые работают совместно, чтобы создать приложение. Проекта и состояние сведения, которые относятся к решению, хранятся в двух файлов решений, файл текстовый файл решения (SLN) и файл пользовательских параметров (.suo) двоичные решения.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Обзор набора средств Visual Studio для Unity](../../extensibility/internals/solutions-overview.md)  
  Описание типов файлов решения, включенных в решение и процесс, который происходит при открытии решения.  
   

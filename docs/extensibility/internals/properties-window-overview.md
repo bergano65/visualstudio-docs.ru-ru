@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0094accca0feb026fca02c78bf6e86fe512ce981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-overview"></a>Общие сведения об окне свойств
 **Свойства** окно используется для отображения свойств для объектов, выбранных в два основных типа окон [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Эти два типа окон являются:  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
  В следующей таблице перечислены используемые интерфейсы **свойства** окна.  
   
-|Имя интерфейса|Описание|  
+|Имя интерфейса|Описание:|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Предоставляет список категорий для **свойства** окна и сопоставляет каждое свойство категории.|  
 |[Интерфейс IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Предоставляет методы и свойства для программных средств и других приложений, поддерживающих автоматизацию объекта.|  

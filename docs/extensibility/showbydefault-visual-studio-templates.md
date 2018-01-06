@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b6679cdd8f6239d5548f95d8d07146c6cda1ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2b0622f2a264baf73ccfeb832c3f049f8ec6fef8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="showbydefault-visual-studio-templates"></a>Элемент ShowByDefault (шаблоны Visual Studio)
 Если `false`, указывает, что шаблон будет отображаться только под указанным [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
  Этот текст должен быть либо `true`, либо `false`. Значение true указывает, что шаблон будет отображаться для всех типов проектов. Значение false указывает, что шаблон будет отображаться только под указанным элементом `TemplateGroupID`.  
   
 ## <a name="remarks"></a>Примечания  
- `ShowByDefault` — это необязательный элемент. Значение по умолчанию — `true`.  
+ `ShowByDefault` — это необязательный элемент. Значение по умолчанию — `true`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  

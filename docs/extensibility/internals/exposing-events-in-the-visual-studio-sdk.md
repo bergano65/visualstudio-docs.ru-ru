@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7b392ac841a50d835186e79a383e404e7fba190
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Предоставление доступа к событиям в Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]позволяет источником событий с помощью автоматизации. Корпорация Майкрософт рекомендует, чтобы вы источник события для проектов и элементов проектов.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  «AutomationProjectItemEvents «=» возвращает объект AutomationProjectItemsEvents»  
   
-|Имя|Тип|Диапазон|Описание|  
+|name|Тип|Диапазон|Описание:|  
 |----------|----------|-----------|-----------------|  
 |По умолчанию (@)|REG_SZ|Неиспользуемые|Не используется. Поля данных можно использовать для документации.|  
 |AutomationProjectsEvents|REG_SZ|Имя объекта события.|Действителен только имя ключа. Поля данных можно использовать для документации.<br /><br /> В этом примере состоит из базового проекта образца.|  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
  AutomationEvents.h и AutomationEvents.cpp содержат объявления и реализации классов в следующей таблице.  
   
-|Класс|Описание|  
+|Класс|Описание:|  
 |-----------|-----------------|  
 |`CAutomationEvents`|Реализует объект корневой события, полученные из `DTE.Events` объекта.|  
 |`CProjectsEventsContainer` и `CProjectItemsEventsContainer`.|Реализуйте объекты источников событий, которые вызывают срабатывание соответствующих событий.|  

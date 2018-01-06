@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-model-core-components"></a>Основные компоненты модели проекта
 В модели проекта разверните следующие таблицы. Таблицы представлены краткие описания интерфейсов и служб, описанных в модели и интерфейсы и службы, связанные с конкретными объектами. Кроме того в таблице приведено описание других интерфейсов, которые не являются обязательными в проект создания и обслуживания, в зависимости от требований вашего проекта определенного типа.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-objects"></a>Объекты проекта  
   
-|Интерфейсы|Комментарии|  
+|интерфейсов,|Комментарии|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|Управляет Добавление и удаление элементов проекта, открывается редакторы и поддерживает сопоставление с каждой моникер документа и `VSITEMID`. Наследует от `IVsProject` и `IVsProject2`.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|Управляет свойствами навигации и отображения и предоставляет события.|  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="configuration-object"></a>Объект конфигурации  
   
-|Интерфейсы|Комментарии|  
+|интерфейсов,|Комментарии|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|Сведения о конфигурации.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|Позволяет управлять сведениями о конфигурации проекты.|  
@@ -69,13 +70,13 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="configuration-builder-object"></a>Объект конфигурации построителя  
   
-|Интерфейсы|Комментарии|  
+|интерфейсов,|Комментарии|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|Управляет операцией построения конфигурации проекта.|  
   
 ### <a name="additional-project-objects"></a>Дополнительные объекты проекта  
   
-|Интерфейсы|Комментарии|  
+|интерфейсов,|Комментарии|  
 |----------------|--------------|  
 |`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|Отображает элемент свойства в **свойства** окна.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|Отображает выходные данные для развертывания.|  

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c24765450d0bf8ffdab479bb28c822602892b595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a4ab4bd29c753fc03787fbbadbe106d2d8862b10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Завершение слов в языковую службу прежних версий
 Завершение слов заполняет отсутствуют символы на частично слова. Если имеется только один возможных завершения, завершения слово при вводе символ завершения. Если часть слова соответствует более одной возможности, отображается список возможных вариантов завершения. Символ завершения может быть любой символ, который не используется для идентификаторов.  

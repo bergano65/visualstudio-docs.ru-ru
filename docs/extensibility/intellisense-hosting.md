@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 850e4b2ef6d455bb141827fa125c4c7c6860b652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9727b6fcbe3c552273ca521e8fd14ab5e5181eb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense-hosting"></a>Размещение IntelliSense
 Visual Studio позволяет обеспечить работу IntelliSense. IntellSense размещение позволяет предоставить IntelliSense для кода, которая не размещена в текстовом редакторе Visual Studio.  
@@ -35,7 +36,7 @@ Visual Studio позволяет обеспечить работу IntelliSense.
   
  Флаги узла, определенного в [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), описаны ниже.  
   
-|Флаг узла IntelliSense|Описание|  
+|Флаг узла IntelliSense|Описание:|  
 |----------------------------|-----------------|  
 |IHF_READONLYCONTEXT|Этот флаг означает, что буфер контекста параметр только для чтения и редактирования выполняется только в текст темы.|  
 |IHF_NOSEPERATESUBJECT|Включение флаг означает, что существует является тема не отдельный IntelliSense. Субъект существует в буфере контекста, например в традиционные <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> система IntelliSense.|  

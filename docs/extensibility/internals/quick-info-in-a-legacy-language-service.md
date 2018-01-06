@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 692884d31e55921489aad0fbbea32ca1c094c6c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8e0fa4a65960d0324a4be19db61648be48b08349
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Краткие сведения в службе языка прежних версий
 Краткие сведения IntelliSense показывает информацию об идентификаторе в источнике, когда пользователь помещает курсор в идентификаторе и выбирает **краткие сведения** из **IntelliSense** меню или содержит мыши курсор на идентификатор. В этом случае всплывающей подсказки с информацией об идентификатор. Эти сведения обычно состоит из идентификатора типа. Когда отладчик активна, эти сведения могут включать текущее значение. Отладчик предоставляет значений выражения, пока языковая служба обрабатывает только идентификаторы.  

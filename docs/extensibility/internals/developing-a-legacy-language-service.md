@@ -19,11 +19,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e05fb3f0a33c0f033733c40b17d636243c18ee22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b7a88c00e980cb86764958886d737d5113dfe1fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-a-legacy-language-service"></a>Разработке службы языка для прежних версий
 Данном разделе содержатся ссылки на разделы, помогающие создать устаревших языковой службы.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  Мы рекомендуем начать использовать новый редактор API, как можно быстрее. Это повысит быстродействие языковой службы и позволяют воспользоваться преимуществами новых функций редактора.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Модель языковой службы прежних версий](../../extensibility/internals/model-of-a-legacy-language-service.md)  
  Предоставляет модель минимальной языковую службу для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] базового редактора. Эту модель можно использовать в качестве руководства по созданию службы языка.  
   

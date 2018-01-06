@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b7859738ac1fe70bdca4cdca5d2dff1220a22b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8109fade596b15e73234dda378e90c188388e41e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Практическое руководство. Добавление и удаление дополнительных сборок
   Если пакет SharePoint зависит от других сборок, функциональные возможности и данные, можно добавить сборки в пакет решения (WSP-файл). Таким образом, SharePoint server гарантирует, что пользовательские сборки установлены с помощью пакета.  

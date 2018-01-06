@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
 Можно создавать текстовые строки в приложении во время выполнения с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] текстовые шаблоны времени выполнения. Компьютер, на котором выполняется приложение не требуется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Шаблоны времени выполнения иногда называются «обработанных текстовых шаблонов», так как во время компиляции, шаблон создает код, который выполняется во время выполнения.  
@@ -114,7 +115,7 @@ This report is Company Confidential.
 ```  
   
 ### <a name="embedded-program-code"></a>Внедренный программный код  
- Программный код между можно вставлять `<#` и `#>`. Например:  
+ Программный код между можно вставлять `<#` и `#>`. Пример:  
   
 ```csharp  
 <table>  
@@ -419,7 +420,7 @@ End of common template.
 End material for DerivedTemplate1.  
 ```  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
  Шаблоны времени разработки: Если вы хотите использовать шаблон для создания кода, становится частью вашего приложения см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
  Шаблоны времени выполнения может использоваться в любом приложении, где шаблонов и их содержимое определяются во время компиляции. Однако если вы планируете написать [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширение, которое создает текст из шаблонов, которые можно изменять во время выполнения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 178acde6dbadeb9d87b672582efebe8dcbd71408
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2bdfe3431465ff1ceb5771fa3c24642e6aa2354
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Описывает расположение строк и столбцов в заданном тексте.  
@@ -39,7 +40,7 @@ public struct TEXT_POSITION {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  dwLine  
  Индекс строки в исходном файле.  
   

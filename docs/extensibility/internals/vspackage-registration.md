@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 263e2adf69aa479974a07dbb2acc2d4cd8f2a0dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1405fbeba34f3e3aa9c645f6eaffe90fe6ac9036
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-registration"></a>Регистрация VSPackage
 Пакеты VSPackage необходимо сообщить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , устанавливаются и должен быть загружен. Этот процесс выполняется путем записи данных в реестре. Это типичный задания установщика.  

@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd55b39f3a35e8ee8f3f16cc5a64e61cb824177
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: debfb63201652f5a9d3348e3bcd591c5efe66e33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>Дополнительные ресурсы для разработки решений Office
   Инструменты разработчика Microsoft Office в Visual Studio представляют только один из множества способов расширения приложений Office. Приложения Office также имеют ряд встроенных функций, таких как форматы Open XML, с которыми нельзя работать с помощью Инструментов разработчика Office в Visual Studio. Также эти функции не освещены в данной документации.  

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 464557102bd6dcbbbda4032c0588c55baa954664
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение доменного языка
 В этом пошаговом руководстве показано, как добавить свойство отслеживания в доменную модель.  
@@ -755,7 +756,7 @@ ms.lasthandoff: 10/27/2017
   
 10. Сохраните решение, а затем закройте экспериментальную сборку.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Если вы планируете использовать более одного отслеживания свойство или реализовать свойства отслеживания в нескольких DSL, можно создать текстовый шаблон для создания общий код для поддержки каждого свойства отслеживания. Дополнительные сведения о текстовых шаблонах см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md).  
   
 ## <a name="see-also"></a>См. также  

@@ -16,16 +16,17 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e376ced68301abae6090a87114e2178c0adc28cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 679559b70096dc7ec3baa792ea98c0c3fea7cc67
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-source-control-plug-in"></a>Создание подключаемого модуля системы управления версиями
 Пакет SDK для Visual Studio предоставляет ресурсы, которые позволяют добавлять возможности элемента управления источника для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Он позволяет использовать любой подключаемый модуль библиотеки DLL, которая соответствует с API подключаемых модулей управления источника, описанные в этой документации.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)  
  Описывает, как установить подключаемый модуль системы управления версиями и выделяет в настоящее время доступных версий API подключаемых модулей для управления источника.  
   

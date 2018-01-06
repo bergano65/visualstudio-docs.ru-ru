@@ -15,16 +15,17 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0201d2f282365a028b6251324b07276c995621ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1d0c9e684312468011f63bdfbb72d1cdadba6b08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-project-and-project-item-templates"></a>Добавление в проект и шаблоны элементов проекта
 При создании собственных типов проекта должно обеспечивать поддержку для добавления новых проектов и элементов проекта с помощью стандартной [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интеграции диалоговые окна Интегрированной среде разработки. В следующих разделах рассматриваются различные методы для добавления проектов и элементов проектов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Контекст проекта](../../extensibility/internals/project-context.md)  
  Объясняет, что проект предоставляет большую часть сведений о контексте для процесс в среде.  
   

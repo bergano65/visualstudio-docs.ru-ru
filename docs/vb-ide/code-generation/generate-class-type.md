@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Создание класса или типа в Visual Basic
 **Что:** позволяет немедленно создать код для класса или типа. 
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 
    ![Создание предварительного просмотра класса](media/class_preview.png)
 
-   Выбранное | Описание
+   Выбранное | Описание:
    --- | ---
    Создание класса*TypeName*"в новый файл | Создает класс с именем *TypeName* в файле с именем *TypeName*.cs или .vb
    Создание класса*TypeName*" | Создает класс с именем *TypeName* в текущем файле.
@@ -57,11 +58,11 @@ ms.lasthandoff: 10/31/2017
 
    ![Создать тип](media/class_newtype.png)
 
-   Выбранное | Описание
+   Выбранное | Описание:
    --- | ---
    Access | Задайте тип иметь *по умолчанию*, *внутренний* или *открытый* доступа.
    Тип | Это можно задать в качестве *класса* или *структуры*.
-   Имя | Это не может быть изменен и будет иметь имя, которое вы уже ввели.
+   name | Это не может быть изменен и будет иметь имя, которое вы уже ввели.
    Проект | При наличии нескольких проектов в решении, можно выбрать место жизни класса или структуры.
    Имя файла | Можно создать новый файл или тип можно добавить в существующий файл.
 

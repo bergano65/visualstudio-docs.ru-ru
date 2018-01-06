@@ -15,11 +15,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5072aef90e08d645bff2a1bb6800e409e7d2104
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cc4913141350b0e0efa65ec0b4db913b578460b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-extensibility"></a>Расширяемость устаревших языковой службы
 Языковая служба обеспечивает поддержку языка для редактирования исходного кода в Интегрированной среде разработки.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  В этом разделе рассматриваются структуру и реализацию службы языка прежних версий.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Миграция языковой службы прежних версий](../../extensibility/internals/migrating-a-legacy-language-service.md)  
  Объясняет, как обновить языковой службы из Visual Studio 2008 до последней версии.  
   

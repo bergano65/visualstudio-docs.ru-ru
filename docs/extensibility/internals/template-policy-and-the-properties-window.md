@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72460f39cf63346106c2ccd81dc9ab16f8af78b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-policy-and-the-properties-window"></a>Шаблон политики и окне «Свойства»
 Когда проект содержится внутри шаблона корпоративного проекта, что корпоративный проект шаблона могут применять политику. Шаблон политики становится ограничивающий системы, для которого можно задать значения по умолчанию для свойств, скрытие свойств, Добавление свойств и так далее.  

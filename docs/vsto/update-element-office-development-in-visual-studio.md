@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a41e7580e7c6c169554bb50c4d0c9af29a992b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1733ac8333675975bb5d4b42dce9df3c01e5ac0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio)
   `update` Элемент указывает интервал, когда решение будет выполнять проверку обновлений.  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`enabled`|Обязательный. Установите параметр enabled в одно из следующих значений:<br /><br /> -   **значение true,** для проверки наличия обновлений.<br />-   **false** Чтобы отключить проверку обновлений.|  
+|`enabled`|Обязательно. Установите параметр enabled в одно из следующих значений:<br /><br /> -   **значение true,** для проверки наличия обновлений.<br />-   **false** Чтобы отключить проверку обновлений.|  
   
  `update` Элемент имеет следующие дочерние элементы.  
   
@@ -56,14 +57,14 @@ ms.lasthandoff: 10/31/2017
   
  `expiration` Элемент имеет следующие атрибуты.  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`maximumAge`|-Обязательно. Значение этого атрибута в целое число.|  
-|`unit`|Обязательный. Задать `unit` одно из следующих значений:<br /><br /> -   **часы**<br />-   **дни**<br />-   **недель**|  
+|`unit`|Обязательно. Задать `unit` одно из следующих значений:<br /><br /> -   **часы**<br />-   **дни**<br />-   **недель**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Пример всегда проверка наличия обновлений  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере кода показан `update` элемент, который имеет значение всегда проверять наличие обновлений в решениях Office.  
   
 ### <a name="code"></a>Код  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="example-of-setting-a-default-update-interval"></a>Пример настройки по умолчанию интервал обновления  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере кода показан `update` элемента в манифесте приложения для решений Office. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8519e3ffe7de66b65ae80c5cd349de4edc0e40e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e614b2ec8ef404ef21e665ac5ae26dd73253f55
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Элемент ProjectTemplateLink (шаблоны Visual Studio)
 Задает путь к VSTEMPLATE-файлу для одного проекта в многопроектном шаблоне.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  \<TemplateContent >  
  \<ProjectCollection >  
  \<ProjectTemplateLink >  
--или-  
+- или -  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Указывает организацию и содержимое многопроектных шаблонов.|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|Группирует проекты в многопроектных шаблонах.|  

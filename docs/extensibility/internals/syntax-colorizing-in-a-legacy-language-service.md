@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c26b0e9b9f02cdf2aac68c2deb42980f42a7b5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8ec6641859653d9f16137353ee2571006ae592c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Синтаксис Раскраска в языковую службу прежних версий
 Синтаксис Раскраска-функция вызывает различных элементов языка программирования, отображаемый в файле исходного кода в различных цветов и стилей. Для поддержки этой возможности, необходимо указать средство синтаксического анализа или сканер, можно определить, какие типы лексические элементы или токены в файл. Многие языки различать ключевые слова, разделители (например, круглые или фигурные скобки) и комментарии по Раскраска их по-разному.  

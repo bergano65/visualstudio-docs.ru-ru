@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28901d9635a4a823507834cde201860fda1e2168
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f4d7d76e80fa165206a3faa53835b74c2716d94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccremove-function"></a>Функция SccRemove
 Эта функция удаляет файлы из системы управления версиями.  
@@ -62,7 +63,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Удаление выполнено успешно.|  
 |SCC_E_FILENOTCONTROLLED|Выбранный файл не существует в системе управления версиями.|  

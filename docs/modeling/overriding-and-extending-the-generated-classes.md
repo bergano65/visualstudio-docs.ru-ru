@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 81f218f9c0d9cd5d9c6abf8f4f9f0fb78181f4f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d794edbb4f554e71e5d65a3e48e5393be61896a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Переопределение и расширение созданных классов
 Определение DSL — это платформа, на которой можно построить мощный набор средств, которые основаны на доменного языка. Многие модули и процесса можно сделать путем переопределения и расширение классов, которые создаются из определения DSL. Эти классы включают не только доменные классы, явно определенных в схема определения DSL, но также и другие классы, определяющие области элементов, обозреватель, сериализации и т. д.  

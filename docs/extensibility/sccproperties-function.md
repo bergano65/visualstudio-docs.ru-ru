@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebe2ee8e0122db6777a341a96731398bf25b8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efaa2877743fcf69a61a79633108d203442489e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccproperties-function"></a>Функция SccProperties
 Эта функция отображает свойства системы управления версиями для файла или проекта.  
@@ -46,7 +47,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Успешно отобразить свойства.|  
 |SCC_I_RELOADFILE|Системы управления версиями изменил свойства файла, поэтому интегрированной среды разработки следует перезагрузить этот файл.|  

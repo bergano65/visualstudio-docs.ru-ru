@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1764bfc503e25860326b1910c432edcf95c8f21c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5bd53307323b1db4d5fa9e5407c3a0516f1187f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfilesfromscc-function"></a>Функция SccAddFilesFromSCC
 Эта функция добавляет список файлов из системы управления версиями в настоящее время открытый проект.  
@@ -70,7 +71,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|Проект не открыт.|  
 |SCC_E_OPNOTPERFORMED|Соединение не в том же проекте, в соответствии с`lpAuxProjPath.`|  

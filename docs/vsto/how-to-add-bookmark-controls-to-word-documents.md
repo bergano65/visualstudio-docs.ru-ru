@@ -20,11 +20,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7da98e9d013f131e889c287cd1d158b3fb25e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 86e23b3240739a063a738a984de936d8848fba9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Практическое руководство. Добавление закладок в документы Word
   В проектах на уровне документа элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> можно добавлять в документ во время разработки или во время выполнения. В проектах надстроек VSTO вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в любой открытый документ во время выполнения.  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Добавление элемента управления Bookmark в документ из панели элементов  
   
-1.  Откройте **панель элементов** и выберите вкладку **Элементы управления Word** .  
+1.  Откройте **панель элементов** и щелкните вкладку **Элементы управления Word** .  
   
 2.  Перетащите элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ.  
   

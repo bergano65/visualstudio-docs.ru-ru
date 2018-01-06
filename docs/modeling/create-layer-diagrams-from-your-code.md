@@ -16,11 +16,12 @@ caps.latest.revision: "64"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2e98b690fb8ba87dabb7fd8aa76a9aa44c613a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c0a13a32347b7150818fc80b82d0c03dc3fc4f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Создание схемы зависимостей в коде
 Чтобы визуализировать высокого уровня, логической архитектуры системы программного обеспечения, создайте *Диаграмма зависимостей* в Visual Studio. Чтобы удостовериться, что кода данным принципам проектирования, проверьте его с помощью диаграммы зависимостей. Можно создавать диаграммы зависимостей для проектов Visual C# .NET и Visual Basic .NET. Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/27/2017
   
 4.  В **добавьте в проект моделирования**найдите и выберите существующий проект моделирования в решении.  
   
-     -или-  
+     - или -  
   
      Выберите **создать новый проект моделирования** для добавления в решение новый проект моделирования.  
   

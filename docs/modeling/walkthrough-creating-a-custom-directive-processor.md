@@ -14,11 +14,12 @@ caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 *Процессоры директив* работают путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директивы* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.  
@@ -635,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  Сейчас вы добавите раздел для вашего пользовательского процессора директив в реестр в то же самое место.  
   
 > [!CAUTION]
->  Неправильное изменение реестра может привести к серьезному повреждению системы. Перед внесением изменений в реестр необходимо выполнить резервное копирование всех ценных данных на компьютере.  
+>  Неправильное изменение реестра может серьезно повредить систему. Перед внесением изменений в реестр необходимо выполнить резервное копирование всех ценных данных на компьютере.  
   
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Добавление раздела реестра для процессора директив  
   
@@ -658,7 +659,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      Ваш раздел реестра должен содержать следующие значения:  
   
-    |Имя|Тип|Данные|  
+    |name|Тип|Данные|  
     |----------|----------|----------|  
     |(Значение по умолчанию)|REG_SZ|(значение не задано)|  
     |Класс|REG_SZ|CustomDP.CustomDirectiveProcessor|  
@@ -666,11 +667,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      Если вы поместили сборку в глобальный кэш сборок, эти значения должны выглядеть так:  
   
-    |Имя|Тип|Данные|  
+    |name|Тип|Данные|  
     |----------|----------|----------|  
     |(Значение по умолчанию)|REG_SZ|(значение не задано)|  
     |Класс|REG_SZ|CustomDP.CustomDirectiveProcessor|  
-    |Сборка|REG_SZ|CustomDP.dll|  
+    |Assembly|REG_SZ|CustomDP.dll|  
   
 6.  Перезапустите Visual Studio.  
   

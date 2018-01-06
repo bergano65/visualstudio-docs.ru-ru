@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f329b1402917bc7c129bcdc9f504dfe99bcccbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b993512350e6bd27d0dce8ef359bc33fccde5ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Практическое руководство. Создание веб-части SharePoint с помощью конструктора
   Веб-часть можно создать, добавив **Визуальная веб-часть** элемента в любой проект SharePoint. Откроется конструктор Visual Web Developer в Visual Studio, где можно добавить элементы управления и код веб-части. Визуальных веб-частей работать так же, как веб-части. Единственное отличие заключается в разработке визуальных веб-частей в конструкторе Visual Web Developer.  

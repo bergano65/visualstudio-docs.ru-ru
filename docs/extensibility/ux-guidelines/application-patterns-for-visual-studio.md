@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Шаблоны приложений для Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Окно взаимодействия  
@@ -401,7 +402,7 @@ Modal, означает, что пользователям необходимо 
 | Имя кнопки | Сочетание клавиш |  
 | --- | --- |  
 | ОК | ВВОД |  
-| Cancel | ESC |  
+| Отмена | ESC |  
 | Справка | F1 |  
   
 #### <a name="imagery"></a>Изображения  
@@ -492,7 +493,7 @@ Modal, означает, что пользователям необходимо 
   
 Пользователь всегда должен иметь возможность определить результат операции перетаскивания и вставки при выборе элемента, перетащив его в целевое расположение и контролирует, какие из следующих указатели мыши появляется перед удалением элемента:  
   
-| Указатель мыши | Команда | Описание |  
+| Указатель мыши | Команда | Описание: |  
 | :---: | --- | --- |  
 | ![Значок мыши «не бросать»](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706 01_MouseNoDrop") | Не бросать | Не удалось удалить элемент в указанное расположение. |  
 | ![Значок мыши «Копировать»](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706 02_MouseCopy") | Копировать | Элемент будет скопирован в целевое расположение. |  

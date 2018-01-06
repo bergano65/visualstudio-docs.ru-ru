@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f29ca84669f563da5733c8c07b219d498ccf6ded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-project-objects"></a>Предоставление доступа к объектам в проекте
 Пользовательский проект типы могут предоставлять объекты автоматизации, чтобы разрешить доступ к проекту с помощью интерфейсов автоматизации. Каждый тип проекта должен предоставлять стандартные <xref:EnvDTE.Project> объект автоматизации, к которому осуществляется из <xref:EnvDTE.Solution>, которое содержит коллекцию всех проектов, которые открыты в Интегрированной среде разработки. Каждый элемент в проекте должен предоставляться <xref:EnvDTE.ProjectItem> объект, к которому с `Project.ProjectItems`. Помимо этих объектов автоматизации standard проектов можно выбрать объекты автоматизации проектов предложения.  

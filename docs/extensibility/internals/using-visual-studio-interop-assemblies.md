@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 298caf0b1c65ecb3612b927859b4d7d01720fc27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>С помощью сборок взаимодействия Visual Studio
 Visual Studio взаимодействия сборки позволяют управляемых приложений для доступа к COM-интерфейсы, которые обеспечивают расширяемость Visual Studio. Существуют некоторые различия между прямой COM-интерфейсы и их версиями, взаимодействия. Например обычно представлены в виде значений типа int значений HRESULT и необходимо обрабатывать таким же образом, как исключения и параметры (особенно параметры out) обрабатываются по-разному.  

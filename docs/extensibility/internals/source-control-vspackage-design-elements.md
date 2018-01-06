@@ -13,16 +13,17 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c78e6a8a93a89d39434552694b5d969698bea45e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 234346aba360d70d3bbc673067d2634a5112d0f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-design-elements"></a>Исходные элементы VSPackage конструктора элемента управления
 В этом разделе описаны структуры, VSPackage должен реализовать для глубокую интеграцию системы управления версиями. Он также содержит интерфейсы и службы, что система управления VSPackage могут реализовывать интерфейсы и службы системы управления версиями VSPackage можно использовать из других [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компонентов для поддержки его источником управления модель и функциональные возможности.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Структура пакета VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
  Определяет структуру системы управления версиями пакета VSPackage.  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0cde4ca360aa0059abcbe0b64d63b4a94e85d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-architecture"></a>Архитектура подключаемого модуля управления источника
 Можно добавить поддержки системы управления версиями для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), реализации, подключив подключаемый модуль системы управления версиями. Интегрированной среды разработки подключается к системе управления версиями, подключаемый модуль через четко определенный API подключаемых модулей для исходного элемента управления. Интегрированная среда разработки предоставляет функции управления версиями из системы управления версиями, предоставление пользовательского интерфейса (UI), состоящий из панели инструментов и команды меню. Подключаемый модуль системы управления версиями реализует функций системы управления версиями.  

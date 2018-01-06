@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aeb24f52b1b6b719e81dcd1a9bd93bd5822f8e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e3428e51dda2f8cc8410b6ac67f5779f7c2300ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Изменение запроса запроса сохраните (VSPackage управления источника)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]редакторы выполнить рассылку события запроса изменить запрос сохранить (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Заглушки управления источника реализует службу QEQS, чтобы получатель событий QEQS. Затем эти события делегируются VSPackage активного систему управления версиями. Активные систему управления версиями, VSPackage реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> и его методы. Методы `IVsQueryEditQuerySave2` интерфейса обычно называется непосредственно перед редактировании документа в первый раз, и непосредственно после сохранения документа.  

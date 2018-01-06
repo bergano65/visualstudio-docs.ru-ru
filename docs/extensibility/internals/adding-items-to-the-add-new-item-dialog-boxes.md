@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Добавление элементов, чтобы добавить новый элемент диалоговые окна
 Добавление элементов в процесс **Добавление нового элемента** запускает диалоговое окно с разделами реестра. Как показано в следующем разделе реестра в разделе AddItemTemplates содержит путь и имя каталога в элементы, которые были доступны в **Добавление нового элемента** помещаются диалоговое окно.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  «SortPriority» = dword:00000064  
   
-|Имя|Тип|Данные (RGS-файла)|Описание|  
+|name|Тип|Данные (RGS-файла)|Описание:|  
 |----------|----------|-----------------------------|-----------------|  
 |@ (По умолчанию)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Идентификатор ресурса для **добавить элемент** шаблонов.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Путь проекта элементов, отображаемых в диалоговом окне для **Добавление нового элемента** мастера.|  

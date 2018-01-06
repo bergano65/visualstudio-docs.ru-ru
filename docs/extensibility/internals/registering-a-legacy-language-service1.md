@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9335f9a9ad6aedab1f0455267c1cca48bf1b3ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2f8edcf34d43311be7406c307a7fea98169712a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-legacy-language-service"></a>Регистрация службы языка для прежних версий
 В managed package framework (MPF) службе языка предлагаемых VSPackage (см. [пакетов VSPackage](../../extensibility/internals/vspackages.md)) и зарегистрирован [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] путем добавления разделы и записи реестра. Этот процесс регистрации выполняется в частично во время установки, а частично во время выполнения.  

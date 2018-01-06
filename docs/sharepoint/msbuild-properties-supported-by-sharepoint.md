@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53e90448d5e7a24f4904f9c4ea02ac041531ce02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: af70078790c684ce774a203b265d7c767779ab15
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Свойства MSBuild, поддерживаемые в проектах SharePoint
   Любой [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойство, определенное в файле Microsoft.VisualStudio.SharePoint.targets, файл проекта или пользовательского файла проекта можно использовать в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов SharePoint. В дополнение к общим [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойства, предоставленные в проекте SharePoint определяет дополнительные свойства, характерные для проектов SharePoint.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>Свойства MSBuild, характерные для SharePoint  
  В следующей таблице перечислены [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойств, применяемых для проектов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Существуют другие свойства, но они предназначены для внутреннего использования.  
   
-|Имя свойства|Описание|  
+|Имя свойства|Описание:|  
 |-------------------|-----------------|  
 |SharePointSiteUrl|Строка, представляющая [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] на сайте SharePoint.|  
 |SandboxedSolution|Логическое значение, указывающее, является ли решение изолированное решение.|  

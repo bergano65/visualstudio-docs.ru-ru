@@ -13,16 +13,17 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea5169b3d74a77bbb079dab5b310a3b7ebbbeff0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f05a0b41a46adfee827f9cc1a36ab7bdd44cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-ins"></a>Подключаемые модули управления версиями
 В справочном разделе SDK подключаемого модуля управления источника содержит спецификацию полный интерфейс, позволяющий системы управления версиями для интеграции с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Указывает, синтаксис и семантику различных типов функции и данные, которые должны реализовывать подключаемый модуль системы управления версиями для взаимодействия с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)  
  Список функций, которые должны реализовывать подключаемый модуль системы управления версиями для соответствия API подключаемых модулей управления источника.  
   

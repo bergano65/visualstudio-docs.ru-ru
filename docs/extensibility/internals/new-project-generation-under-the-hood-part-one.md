@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Создание нового проекта: За кулисами, часть 1
 Когда-нибудь задумывались о том, как создать проект собственного типа? Интересно, что фактически происходит при создании нового проекта? Давайте peek за кулисами и посмотрим, что действительно происходит.  
@@ -91,7 +92,7 @@ devenv /installvstemplates
  Чем меньше число приоритет, чем выше уровень дерева.  
   
 ##### <a name="developeractivity"></a>DeveloperActivity  
- При наличии этого подраздела положение корневого узла управляется диалоговое окно параметров разработчика. Например:  
+ При наличии этого подраздела положение корневого узла управляется диалоговое окно параметров разработчика. Например, примененная к объекту директива  
   
  REG_SZ DeveloperActivity VC #  
   

@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 171a31147aec5c0477d6a23e73dc0e66693b534d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Как добавить элементы пользовательского интерфейса в пакеты VSPackage
 Пакет VSPackage можно добавлять элементы пользовательского интерфейса (UI, например, меню, панелей инструментов) и средства windows для Visual Studio с помощью vsct-файле.  

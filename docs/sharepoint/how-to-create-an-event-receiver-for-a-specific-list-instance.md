@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3db5af044b1e3eb25e68c96a42335082fd3523f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a820bc1a29db10fa5f65f1781c30218c62c2ee08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Практическое руководство. Создание приемника событий для конкретного экземпляра списка
   Приемник событий экземпляра списка реагирует на события, возникающие в любом экземпляре определения списка. Несмотря на то, что шаблон приемника событий позволяет отслеживать определенный экземпляр списка, можно изменить приемник событий, которая предназначена для определения списка, чтобы реагировать на события в определенный экземпляр списка.  

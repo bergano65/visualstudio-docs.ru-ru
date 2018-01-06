@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28b66dea8440c969926abd3892739f4e041b064
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fbba5070af77e1509ed3b3840a2045ae0f2c12b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-and-providing-services"></a>Использование и предоставления услуг
 Служба представляет собой контракт между двумя пакеты VSPackage. Один пакет VSPackage предоставляет определенный набор интерфейсов для другого пакета VSPackage для использования. Например [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предлагает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службы к любой VSPackage его загрузки. Эта служба предоставляет <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который может использоваться для записи в журнал действий. Дополнительные сведения см. в разделе [как: использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
@@ -29,13 +30,13 @@ ms.lasthandoff: 10/31/2017
   
  Visual Studio предлагает важные услуги, например следующие:  
   
-|Служба интегрированной среды разработки|Описание|  
+|Служба интегрированной среды разработки|Описание:|  
 |-----------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Предоставляет доступ к интегрированной среде разработки служб работы с базовую функциональность, пакеты VSPackage и реестра.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Предоставляет основные управления окнами и связанные с Пользовательским интерфейсом функциональных возможностей в Интегрированной среде разработки, такие как возможность создавать средства и окна документов.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Обеспечивает базовые функции, связанные с решением, такие как возможность перечислить проекты, создание новых проектов и отслеживать изменения в проект.|  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Основные компоненты службы](../extensibility/internals/service-essentials.md)  
  Представляет элементы важные обновления для Visual Studio.  
   

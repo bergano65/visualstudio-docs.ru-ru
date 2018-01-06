@@ -13,20 +13,21 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e5ad07694604c7b61c922cd097809fa037e0501
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 59de764dfcb976dfac303f44a67340e117ae5e06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-and-language-service-extensions"></a>Редактор и расширения службы языка
 Можно расширить большинство возможностей в редакторе кода Visual Studio. Редактор основан на Windows Presentation Foundation (WPF) и записана в управляемом коде. Несмотря на то, что такой подход отличается от схемы, в более ранних версиях Visual Studio, он предоставляет большинство тех же функций. Чтобы расширить редактор, следует используйте Managed Extensibility Framework (MEF).  
   
  Пакет SDK для Visual Studio предоставляет адаптеров, известный как *оболочки* для поддержки пакетов VSPackage, написанные для предыдущих версий. Тем не менее при наличии существующего пакета VSPackage, рекомендуется обновить его до новой технологии, чтобы получить более высокую производительность и надежность.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)|Общие сведения об использовании шаблонов элементов редактора.|  
 |[Расширение редактора и языковых служб](../extensibility/extending-the-editor-and-language-services.md)|Ссылки на документы, разработки, а также возможности редактора основных компонентов и показано, как расширить ее.|  

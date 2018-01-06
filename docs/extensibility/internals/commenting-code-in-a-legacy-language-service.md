@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8952612c9502704f79410461d29ca8ab87fa3ee4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e6dfeb31ab062d5182b56ba450450d41a6dab807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Комментирования кода в языковую службу прежних версий
 Языки программирования обычно предоставляют возможность добавлять заметки или код в комментарий. Комментарий — это часть текста, который предоставляет дополнительные сведения о коде, но игнорируется во время компиляции или интерпретации.  

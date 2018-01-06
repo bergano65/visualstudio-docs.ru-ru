@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d436ef99907556c93f48c55bea315ae66e6218e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9ec7071a1e4ca78bb116c577cdcc77f9798c050
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-2-get-from-source-control"></a>Область проверки 2: Получение из системы управления версиями
 Эта область тестирования охватывает тестовых случаев для получения элементов из хранилища версий с помощью команды Get. Эти тестовые случаи могут применяться для локальных и веб-проектов.  

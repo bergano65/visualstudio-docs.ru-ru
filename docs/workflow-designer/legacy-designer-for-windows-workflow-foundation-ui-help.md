@@ -15,18 +15,19 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ec5ec49c01fd4efb67991def2904a99304821cdd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e18f525143baac7b08c37fdaed45db7699488071
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation
 В этом разделе содержатся разделы контекстной Справки, относящиеся к средству [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий в [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Используйте конструктор прежних версий, если приложение ориентируется на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
  Можно открыть эти разделы [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] пользовательского интерфейса, нажав клавишу **F1** при прежних версий [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] используется диалоговое окно открытым.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Диалоговое окно "Привязка к свойству действия" (для прежних версий)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)  
   
  [Диалоговое окно "Выбор набора правил" (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md)  

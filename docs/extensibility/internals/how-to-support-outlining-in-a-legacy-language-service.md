@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e08ca6d5a670bb2c1a0f0073920c753add50322c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa57b0d09cb8422a9dde1f70306d2f3808b0384e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Как: поддерживает структуризация в языковую службу прежних версий
 Структурирование позволяет развернуть или свернуть различных областей текста. Используется как структурирование определены по-разному в разных языках. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md).  

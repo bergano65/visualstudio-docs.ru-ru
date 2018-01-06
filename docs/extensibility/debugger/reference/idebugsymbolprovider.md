@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33958c7159c6348aca696e295deb245031e904d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2fbafdf4e2227d7c4d4a69b8b310cf082ac72ee0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Этот интерфейс представляет поставщик символ, который предоставляет типы, возвращая их в виде полей и символы.  
@@ -38,7 +39,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugSymbolProvider`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |`Initialize`|Не рекомендуется. Не используется.|  
 |`Uninitialize`|Не рекомендуется. Не используется.|  

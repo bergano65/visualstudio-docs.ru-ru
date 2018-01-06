@@ -15,16 +15,17 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d580d3d74d8648b7181ac1ca384d3232fa8225b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 119e6dc088c6f6e80d79ab096d97b7404c530611
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-vspackages"></a>Регистрация пакетов VSPackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]использует файлы .pkgdef для описания и найдите пакет VSPackage. Pkgdef-файл содержит все сведения о регистрации, в противном случае следует добавить в системный реестр. Добавление атрибутов в исходный код, а затем выполнив зарегистрированные управляемые пакеты VSPackage [CreatePkgDef программы](../../extensibility/internals/createpkgdef-utility.md) в результирующей сборке, для создания pkgdef-файл.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Выбор расположения файла VSPackage к оболочке Visual Studio](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
  Описание пути загрузки для пакетов VSPackage.  
   

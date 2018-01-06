@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 035021b3a49bd3fb2af2863e3c8a9b2f88c56077
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 75759b501741329808198aafbc7dd39d0994cb98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Практическое руководство. Изменение размера внутри ячеек листа Excel
   При изменении размера столбцов или строк на листе, все элементы управления ведущего приложения, содержащиеся в ячейках, автоматически размеры, чтобы высота или ширина ячейки, размер которого был изменен. Элементы управления Windows Forms не меняют размер автоматически по умолчанию.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  При добавлении элементов управления во время разработки, необходимо задать параметры расположения для каждого элемента управления.  
   
- Если добавить элемент управления Windows Forms программными средствами и указать аргумент диапазона, элемент управления автоматически изменяет размер при изменении размера ячейки диапазона. Дополнительные сведения см. в разделе [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Если добавить элемент управления Windows Forms программными средствами и указать аргумент диапазона, элемент управления автоматически изменяет размер при изменении размера ячейки диапазона. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="resizing-controls-at-design-time"></a>Изменение размеров элементов управления во время разработки  
   

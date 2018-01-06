@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7987d2b6d22893e82893755ed76fa5253aeb600c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa699e0c6d4d23ec6e5cdc347627a98efb623672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-editor"></a>Редактор цветов VSIX
 Средство редактор цветов расширений Visual Studio можно создавать и изменять пользовательские цвета для Visual Studio. Средство также можно создавать ключи ресурсов темы, чтобы цвета, которые можно использовать в коде. Это средство удобно использовать для выбора цвета для расширения Visual Studio, которое поддерживает темы. Это средство позволяет открывать .pkgdef и XML-файлы. Тем Visual Studio (.vstheme-файлы) можно использовать с Visual Studio расширения редактора цвета, изменив расширение файла с XML-файла. Кроме того .vstheme файлы можно импортировать в текущий XML-файл.  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
  Некоторые распространенные коды состояния:  
   
--   Активно  
+-   Активная  
   
 -   Неактивные  
   

@@ -13,16 +13,17 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e0de435dca5c2bf16d9943f353ddb72080af969
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a5ae644d910cdad584c7b285c75987f39c26e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-configuration-options"></a>Управление параметрами конфигурации
 Когда вы создаете новый тип проекта, необходимо управлять проекта и решения параметры конфигурации, которые определяют, как ваш проект будет собран, упакованных, развертывания и выполнения. В следующих разделах рассматриваются конфигурации проекта и решения.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Обзор набора средств Visual Studio для Unity](../../extensibility/internals/configuration-options-overview.md)  
  Описывает способ проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] может поддерживать несколько конфигураций.  
   

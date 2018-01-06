@@ -15,16 +15,17 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b987d5e88bcbcf02bfd80ddf5c3ed0d67a149b53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35bd935683f8ace47536389ebc65f34311e9fcfd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Указание расположения файла VSPackage в оболочку VS
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]необходимо иметь возможность найти сборку библиотеки DLL для загрузки пакета VSPackage. Его можно найти различными способами, как описано в следующей таблице.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |Используйте раздел реестра CodeBase.|Ключ CodeBase может использоваться для направления [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для загрузки сборки VSPackage из любого полное имя пути. Значение ключа должно быть путь к библиотеке DLL. Это лучший способ иметь [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] загрузить сборку пакета. Такой подход иногда называют «база кода и закрытого каталога метод.» Во время регистрации значение codebase передаются классов атрибутов регистрации через экземпляр <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> типа.|  
 |Поместите DLL в **PrivateAssemblies** каталога.|Поместите сборку в **PrivateAssemblies** подкаталог [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] каталога. Сборки расположены в **PrivateAssemblies** обнаруживаются автоматически, но не отображаются в **Добавление ссылок** диалоговое окно. Разница между **PrivateAssemblies** и **PublicAssemblies** является то, что сборки в **PublicAssemblies** перечислены в **Добавление ссылок**  диалоговое окно. Если вы решили не использовать метод «каталог установки базы кода и закрытого», то следует установить в **PrivateAssemblies** каталога.|  

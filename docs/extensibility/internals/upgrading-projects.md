@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed049293c50fc59c7f6541a3b4a4cc58c6bd5a7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 Изменения в модель проекта из одной версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] к следующему может потребоваться обновление проектов и решений, чтобы их можно запускать на более новой версии. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Предоставляет интерфейсы, которые могут использоваться для реализации поддержки обновления в собственных проектах.  

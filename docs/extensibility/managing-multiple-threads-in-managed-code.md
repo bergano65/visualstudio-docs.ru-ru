@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c246c8be1d10893b018d5d0c5727d4af42efdc6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 84d59a626fbe745532d0e2499d7ba9a4c3105f5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Как: управление несколькими потоками в управляемом коде
 Если у вас есть расширение управляемого VSPackage, который вызывает асинхронный метод или имеет операций, которые выполняются в потоках, отличных от потоков пользовательского интерфейса Visual Studio, необходимо соблюдать правила, приведены ниже. Поток пользовательского интерфейса может обеспечивать отклик, так как его не нужно подождать, в другом потоке для выполнения. Код можно сделать более эффективен, так как нет дополнительных потоков, которые занимают место в стеке и может сделать его более надежным и простым для отладки, так как позволяет избежать взаимоблокировки и зависаний.  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051043583b4be3ce795fab544156c7a1f94d88c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e22bbdbbf297fd6eb4580bd53d55c96f2faac17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-projects"></a>Расширение проектов
 Проекты и решения способами Visual Studio организует файлы кода и ресурсов в единиц компиляции и развертывания. Можно найти дополнительные сведения о проектах в [проектов (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  В этом разделе описываются способы создания пользовательских проектов и управление различных типов решений Visual Studio.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Создание системы базового проекта. Часть 1](../extensibility/creating-a-basic-project-system-part-1.md)  
  Описывает создание системе пользовательских проектов.  
   

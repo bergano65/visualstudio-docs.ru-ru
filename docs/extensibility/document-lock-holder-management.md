@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4bd487bd3f5a6978af9f79eb9e0a00866b5df52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-lock-holder-management"></a>Управление владельца блокировки документа
 Запуск документа таблицы (RDT) содержит счетчик открытых документов и все блокировки изменения, которые у них есть. Можно разместить блокировки на изменение документа в RDT, если его программно изменять в фоновом режиме незаметно для пользователя отображается в окне документа, открытого документа. Эта функциональность часто используется конструкторами, изменяющие несколько файлов с помощью графического интерфейса пользователя.  

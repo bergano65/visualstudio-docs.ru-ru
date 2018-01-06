@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de361711234404e8b83e28aa1875b3549039bce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 447fa8749958a3fa2b65a6ef7eb878b906170e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Практическое руководство. Импорт главной страницы или темы
   Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]не предоставляет шаблоны для этих элементов, но можно создать их в SharePoint Designer и затем импортировать их в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [стандартный блок: страницы и пользовательский интерфейс](http://go.microsoft.com/fwlink/?LinkID=182095) на веб-сайте Майкрософт.  

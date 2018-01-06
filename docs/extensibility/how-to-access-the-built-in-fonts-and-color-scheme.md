@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Как: доступ к встроенных шрифтов и цветов
 Среда разработки Visual Studio (IDE) имеется схема шрифтов и цветов, связанный с окном редактора. Получить доступ к этой схеме через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса.  
@@ -58,11 +59,11 @@ ms.lasthandoff: 10/31/2017
   
 2.  Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:  
   
-    |Имя|Тип|Данные|Описание|  
+    |name|Тип|Данные|Описание:|  
     |----------|----------|----------|-----------------|  
     |Категория|REG_SZ|Идентификатор GUID|Произвольный идентификатор GUID, который идентифицирует категорию, которая содержит биржевых шрифт и цветовую схему.|  
     |Пакет|REG_SZ|Идентификатор GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Все пакеты VSPackage, используйте параметры шрифта и цвета по умолчанию используется идентификатор GUID.|  
-    |Идентификатора имени|REG_DWORD|Идентификатор|Идентификатор ресурса имя категории локализуемых в VSPackage.|  
+    |Идентификатора имени|REG_DWORD|ID|Идентификатор ресурса имя категории локализуемых в VSPackage.|  
     |ToolWindowPackage|REG_SZ|Идентификатор GUID|Идентификатор GUID для реализации VSPackage <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса.|  
   
 3.  

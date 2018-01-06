@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ea933a7e9efc08347ea107b089101f1e5d5459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4131e3d5139911c6a1bb9b44d8d8acaefa6cb632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Удаление данные системы управления версиями из. Proj и. SLN-файлы
 В версии 1.2 API подключаемых модулей управления источника SCC информация хранится в MSSCCPRJ. Файл SCC. Преимущество MSSCCPRJ. Файл SCC — что SCC сведения не источника - контролировать, как и в файлах ".proj" и .sln.  

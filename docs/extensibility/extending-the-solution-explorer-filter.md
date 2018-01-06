@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f34f19d41f3d624c57cc6c92d51b5c19ddb2137
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: afcaef724b5fc5f8270e5126e91d421f2e15b946
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Расширение фильтра обозревателя решений
 Вы можете расширить **обозревателе решений** фильтрации функциональные возможности, чтобы показать или скрыть различные файлы. Например, можно создать фильтр, который показывает только файлов C# класс фабрики в **обозревателе решений**, как показано в данном пошаговом руководстве.  

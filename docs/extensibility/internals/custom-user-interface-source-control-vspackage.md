@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6138ffcd0c56b87e9e29a316aa2ae0ad9f982e18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Настраиваемый пользовательский интерфейс (VSPackage управления источника)
 VSPackage объявляет элементами меню и состояние по умолчанию, файл таблицы команд Visual Studio (.vsct). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) будет отображаться элементы меню в состояние по умолчанию загружается пакет VSPackage. Впоследствии <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод вызывается для включения или отключения пунктов меню.  
@@ -52,7 +53,7 @@ VSPackage объявляет элементами меню и состояние
   
  В следующей таблице описаны конкретные сведения о том, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE скрывает различных элементов пользовательского интерфейса.  
   
-|Элемент пользовательского интерфейса|Описание|  
+|Элемент пользовательского интерфейса|Описание:|  
 |-------------|-----------------|  
 |Меню и панели инструментов|Пакет системы управления версиями необходимо задать начальные состояния видимости меню и панель инструментов с ИД пакета управления источника в [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздел vsct-файле. Это позволяет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, чтобы правильно настроить состояние элементов меню без загрузки VSPackage и вызова реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод.|  
 |Окна инструментов|Система управления версиями VSPackage скрывает все окна инструментов, которыми он владеет, когда становится неактивным.|  

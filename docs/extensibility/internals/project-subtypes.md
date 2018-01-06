@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84d2700e1dfb5d66fb2df6376db9e0ce5352ad4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes"></a>Подтипы проектов
 Подтипы проекта позволяют настраивать или flavor поведение системы проектов из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Настройки включают сохранение дополнительных данных в файле проекта, добавления или фильтрации элементов в **Добавление нового элемента** диалоговом управление как отладки и развертывания сборок и расширение проекта **свойство Страницы** диалоговое окно. Пакеты VSPackage реализовывать подтипы проекта с помощью COM статистической обработки.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  Система проектов Visual C++ не поддерживает подтипы проекта. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]подтипы проекта сам использует для реализации проектов SQL Server и смарт-устройств.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Разработка подтипов проекта](../../extensibility/internals/project-subtypes-design.md)  
  Описание концепции подтипы проекта.  
   

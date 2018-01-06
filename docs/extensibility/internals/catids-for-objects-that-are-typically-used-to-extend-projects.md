@@ -16,18 +16,19 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 568f5b98cd652e872e7bcc7d63e85de7f134546d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98349042fe66748ed4eb72a1604893e3f4e67d80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID для объектов, которые обычно используются для расширения проектов
 В следующей таблице перечислены CATID, которые используются для расширения `Project` и `ProjectItem` объектов автоматизации для [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], и [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] проекты. Эти CATID определяются в VSLangProj.olb.  
   
 ## <a name="listing-of-catids"></a>Перечень CATID  
   
-|Имя|Идентификатор GUID|  
+|name|Идентификатор GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="visual-basic-catids"></a>CATID Visual Basic  
  В следующей таблице перечислены CATID, которые используются для расширения [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] просматривать объекты. Все они определяются в VSLangProj.olb.  
   
-|Имя|Идентификатор GUID|  
+|name|Идентификатор GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectBrowseObject>|{E0FDC879-C32A-4751-A3D3-0B3824BD575F}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectConfigBrowseObject>|{67F8DD11-14EB-489b-87F0-F01C52AF3870}|  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="visual-c-catids"></a>CATID Visual C#  
  Для расширения можно использовать следующие CATID [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] просматривать объекты. Все они определяются в VSLangProj.olb.  
   
-|Имя|Идентификатор GUID|  
+|name|Идентификатор GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="c-catids"></a>CATID C++  
  Следующие [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] CATID не отображаются в библиотеках типов в системы проектов [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 и должны включаться в коде каждый раз, когда требуется расширить эти объекты проекта. Эти CATID будут включены в библиотеках типов в последних выпусках [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Имя|Идентификатор GUID|  
+|name|Идентификатор GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -73,7 +74,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  Следующие [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] CATID также не предоставляются в библиотеках типов в системы проектов [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 и должны включаться в коде каждый раз, когда требуется расширить эти объекты проекта. Эти CATID доступны только в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 и не будут доступны в более поздних версиях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Имя|Идентификатор GUID|  
+|name|Идентификатор GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  

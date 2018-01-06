@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f399cb0c88e044224d554cf8e17cc4d217498e87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Структура файл [Content_types] .xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types] .xml для установки пакета, но не устанавливает сам файл.  
@@ -34,32 +35,32 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="root-element"></a>Корневой элемент  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |`Types`|Содержит дочерние элементы, соответствующие типам файлов в пакете VSIX.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Xmlns`|(Обязательно). Расположение схемы, используемой для этого файл [Content_Types] .xml.|  
   
 ### <a name="attribute-name-attribute"></a>{Имя_атрибута} Атрибут  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |http://schemas.openformats.org/Package/2006/Content-Types|Расположение схемы типов содержимого.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  `Types` Элемент может содержать любое количество `Default` элементов.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |`Default`|Описывает тип содержимого в пакете VSIX. Каждому типу файла в пакете должно иметь свой собственный `Default` элемента.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Extension`|Расширение имени файла в пакете VSIX.|  
 |`ContentType`|Описывает тип содержимого, связанного с расширением имени файла.|  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  Следующий файл [Content_Types] .xml описывает типичные пакет VSIX.  
   
 ### <a name="code"></a>Код  

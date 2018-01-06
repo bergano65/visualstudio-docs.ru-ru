@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e0a131ef35202581ffb78a75a6b48239a7d81f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-imports"></a>Редактор Imports
 Вы можете импортировать ряд службы редактора, фабрик и брокеры, предоставляющих расширения с различными видами доступа базового редактора. Например, можно импортировать <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> для предоставления вам <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> для данного типа содержимого. (Для этого навигатора позволяет выполнять различные виды поиска на буфер текста.)  

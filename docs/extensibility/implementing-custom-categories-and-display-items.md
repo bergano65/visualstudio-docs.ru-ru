@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f03dbae8b320161705c50da06d605cfc335074cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2dedd54aa1db26e38b6f212c616bd38c09018961
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Реализация пользовательских категорий и отображаемые элементы
 VSPackage может предоставить управления шрифты и цвета текста для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) через пользовательские категории и отображаемые элементы.  
@@ -54,7 +55,7 @@ VSPackage может предоставить управления шрифты 
   
 -   Добавить в реестр с двумя значениями:  
   
-    |Имя|Тип|Данные|Описание|  
+    |name|Тип|Данные|Описание:|  
     |----------|----------|----------|-----------------|  
     |Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для определения категории.|  
     |Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID пакета VSPackage службы, которая поддерживает категории.|  
@@ -63,13 +64,13 @@ VSPackage может предоставить управления шрифты 
   
 ## <a name="to-create-or-identify-groups"></a>Для создания и определения групп  
   
--   Создать специальный тип категории запись реестра [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\ * \<группы >*]  
+-   Создать специальный тип категории запись реестра [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\  *\<группы >*]  
   
      *\<Группа >* нелокализованное имя группы.  
   
 -   Добавить в реестр с двумя значениями:  
   
-    |Имя|Тип|Данные|Описание|  
+    |name|Тип|Данные|Описание:|  
     |----------|----------|----------|-----------------|  
     |Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для определения группы.|  
     |Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID службы, которая поддерживает категории.|  
@@ -116,7 +117,7 @@ VSPackage может предоставить управления шрифты 
   
      IDE вызывает соответствующий метод после изменения пользователем **шрифты и цвета** страницы. Например, он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> метод, если выбран новый шрифт.  
   
-     -или-  
+     - или -  
   
 -   Опрос интегрированную среду разработки для изменения.  
   

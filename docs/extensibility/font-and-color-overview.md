@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13a2a8b584af507f8937fd6abb46c85f329de0b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09597130864ae0c1e79ef7470c58b25dde8a9263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="font-and-color-overview"></a>Обзор цвет и шрифт
 В этом разделе обсуждаются параметры шрифта и цвета текста в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Он также понятия, категории и отображаемые элементы и описываются как пакеты VSPackage и базового редактора использовать атрибуты текста.  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
      Только один **категории** поддерживает этот механизм, а именно, **текстовый редактор**.  
   
--   Более общие альтернативой поддерживает все остальные **категории** и компоненты пользовательского интерфейса, отличное от этого редактора источника при отображении текста. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
+-   Более общие альтернативой поддерживает все остальные **категории** и компоненты пользовательского интерфейса, отличное от этого редактора источника при отображении текста. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
   
 ## <a name="core-editor-text-settings"></a>Параметры текстового редактора Core  
  Управляемые параметры шрифта и цвета для базового редактора объекта службы языка **EditorCategory текст** в **Показать параметры для** поле со списком из **шрифты и цвета** страницу свойств.  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Механизм Раскраска четко определенных и оптимизирован.  
   
-     Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
+     Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
   
 -   Возможности, как использовать встроенные отображаемые элементы из **EditorCategory текст** и расширять их.  
   

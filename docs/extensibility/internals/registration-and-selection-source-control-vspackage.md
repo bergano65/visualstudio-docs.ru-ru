@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 118f715e71f610d4e9dc2589767f6fb54ab4e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Регистрация и выбора (VSPackage управления источника)
 Системы управления версиями, VSPackage должен быть зарегистрирован в предоставлении доступа к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Если зарегистрировано более одного элемента управления источника пакета VSPackage, пользователь может выбрать, какие VSPackage для загрузки в нужное время. В разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md) Дополнительные сведения о пакеты VSPackage и как их регистрации.  

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7456ebe1e28618270bd90f09186ec49814c62b66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d3dfd2111533896db2a3b298ff294ff180d4a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Возвращает расширенные сведения для свойства.  
@@ -54,7 +55,7 @@ int GetExtendedInfo (
   
  Этот метод (значения GUID задаются для C#, так как имя недоступно в любой сборке) обычно распознает следующие идентификаторы GUID. Дополнительные GUID могут создаваться для внутреннего использования.  
   
-|Имя|Идентификатор GUID|Описание|  
+|name|Идентификатор GUID|Описание:|  
 |----------|----------|-----------------|  
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Возвращает `IUnknown` интерфейса в документ. Как правило [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) можно получить из этого интерфейса `IUnknown` интерфейса.|  
 |guidCodeContext|{e2fc65e-56ce - 11d 1-b528-00aax004a8797}|Возвращает `IUnknown` интерфейс к контексту документа. Как правило [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) можно получить из этого интерфейса `IUnknown` интерфейса.|  

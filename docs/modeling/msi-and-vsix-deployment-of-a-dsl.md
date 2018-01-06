@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: dafee91f26cf45d780f1b222d8daf5977980a3f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0106c63a967e8780c56245d461231f7df47f5b35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 Доменный язык можно установить на локальном компьютере или на других компьютерах. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]должна быть установлена на конечном компьютере.  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/27/2017
   
     -   В обозреватель DSL выберите корневой узел и в окне свойств просмотрите:  
   
-        -   Описание  
+        -   Описание:  
   
         -   Версия  
   

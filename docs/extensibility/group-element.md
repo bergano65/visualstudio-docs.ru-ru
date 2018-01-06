@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: acdc524b00baaf0de52ad30ea7abad82dc57651b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5ff5f5bafec14099e5b10b9861be5936b75009
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="group-element"></a>Элемент Group
 Определяет группу команд VSPackage.  
@@ -37,23 +38,23 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|guid|Обязательный. Идентификатор GUID идентификатор GUID или идентификатор команды.|  
-|id|Обязательный. Идентификатор идентификатор GUID или идентификатор команды.|  
-|priority|Необязательно. Числовое значение, указывающее приоритет.|  
-|Условие|Необязательно. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Обязательно. Идентификатор GUID идентификатор GUID или идентификатор команды.|  
+|id|Обязательно. Идентификатор идентификатор GUID или идентификатор команды.|  
+|priority|Необязательный. Числовое значение, указывающее приоритет.|  
+|Условие|Необязательный. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|Родительский|Необязательно. Родительский элемент кнопки.|  
+|Родительский|Необязательный. Родительский элемент кнопки.|  
 |Комментарий|Необязательный комментарий.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд пакета VSPackage.|  
   

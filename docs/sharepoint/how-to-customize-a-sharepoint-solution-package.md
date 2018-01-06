@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d07f03c1aed1c2e85e65bd10a89bd62138d571c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5351165320dd0ff2d8c130c64adeff7be45de6fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Практическое руководство. Настройка пакета решения SharePoint
   Конструктор пакетов можно использовать для создания и настройки пакета (.wsp). Например можно добавить элементы проектов SharePoint и компоненты, указать, если веб-сервер сброса при развертывании решения и задать тип сервера развертывания.  

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87098c362e5b37690e2ab3116ffca431d58f129d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4859e47f8a7ade34a920e4d8e2fac3be58508de3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Настройка проекта для управления развертыванием
 Развертывание — это физического перемещения выходных элементов из процесс построения в правильное место для отладки и установки. Например веб-приложение может основаны на локальный компьютер и затем помещается на сервере.  

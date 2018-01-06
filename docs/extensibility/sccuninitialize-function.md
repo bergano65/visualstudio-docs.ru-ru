@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 434987489feccd5f576e04d69afbb4b39e1dc754
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5976313939ee9efa81c71e7894da8e5f45e2d017
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccuninitialize-function"></a>Функция SccUninitialize
 Эта функция очищает все распределения памяти или открытых соединений, созданных предыдущим вызовом [SccInitialize](../extensibility/sccinitialize-function.md) в процессе подготовки к выключению подключаемый модуль системы управления версиями.  
@@ -38,7 +39,7 @@ SCCRTN SccUninitialize (
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Операция очистки успешно завершена.|  
   
