@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 798ac2d76bb3d9b0bcad2a6dbf7e7aa300030b42
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0e97d2cc15e3b613fa56d2d4df1d5df8c68f9b06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Описывает одну инструкцию Дизассемблированный код для интегрированной среды разработки (IDE) для отображения.  
@@ -61,7 +62,7 @@ public struct DisassemblyData {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `dwFields`  
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) константа, указывающая, какие поля заполнены.  
   

@@ -28,11 +28,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 0ca5bb824cbe4e37db241aba956f9f6bf91d18cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Создание приложений ClickOnce для развертывания другими
 Не все разработчики, создающие развертывания ClickOnce планируется развертывать приложения сами. Многие из них просто упаковывают свое приложение с помощью ClickOnce и затем передают файлы клиенту, например большой корпорации. Клиент становится ответственным за размещение приложения в своей сети. В этом разделе рассматриваются некоторые из проблем, возникающих в этих развертываниях в версиях .NET Framework, предшествующих версии 3.5. Затем он описывает новое решение, предоставляемое с помощью новой функции «использовать манифест для доверия» в .NET Framework 3.5. В заключение приводятся рекомендуемые стратегии создания развертываний ClickOnce для клиентов, которые по-прежнему использовать старые версии платформы .NET Framework.  

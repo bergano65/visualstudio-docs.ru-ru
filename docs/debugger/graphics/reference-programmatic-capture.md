@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 899211452a776931e3d0d9742e499ed8ba78a652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3755dbb95dc220d070219fbac4a03885d5ed0158
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-programmatic-capture"></a>Справочник (программный захват)
 Диагностика графики поддерживает управление функциями записи через API программного захвата. Этот API можно использовать для переключения и добавления сообщений на головной дисплей, инициализации и создания файлов журнала графики, а также для захвата графических данных.  
@@ -25,13 +26,13 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="classes"></a>Классы  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
 |[Класс VsgDbg](vsgdbg-class.md)|Представляет интерфейс для программного управления компонентом диагностики графики в приложении.|  
   
 ### <a name="preprocessor-symbols"></a>Символы препроцессора  
   
-|Имя|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|Определяет своим наличием, нужно ли сохранять файл журнала графики в каталог временных файлов пользователя.|  
 |[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|Определяет имя файла журнала графики по умолчанию.|  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-articles"></a>Связанные статьи  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Capturing Graphics Information](capturing-graphics-information.md)|Показывает, как захватывать графическую информацию из приложения DirectX для использования инструментов диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], помогающих выявлять проблемы отрисовки.|  
 |[Обзор набора средств Visual Studio для Unity](overview-of-visual-studio-graphics-diagnostics.md)|Показывает, каким образом диагностика графики помогает отлаживать ошибки отрисовки в играх и приложениях DirectX.|

@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60898b7ea37c7e732453fd03f9c557b2494f66c5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eedc7e454c6523c1ab29e4ae685b14954c8e6d98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Практическое руководство. Использование диагностики графики с устройством ARM
 Диагностика графики поддерживает удаленную отладку приложений Direct3D на устройствах с архитектурой ARM с ОС Windows RT 8.1 или Windows Phone 8.1. Вы можете захватывать графические данные из приложения Direct3D, выполняющегося на устройстве, или использовать устройство в качестве компьютера воспроизведения для ранее захваченных графических данных.  

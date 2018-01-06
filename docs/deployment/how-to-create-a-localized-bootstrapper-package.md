@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f19ec03dda8666eea39b50af40a44ab2c68694ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание локализованного пакета загрузчика
 Закончив создание пакета начального загрузчика, вы можете сформировать его локализованные версии, создав по два или несколько файлов для каждого языкового стандарта: файл условий лицензионного соглашения на использование программного обеспечения (например, eula.rtf) и манифест пакета (package.xml).  

@@ -26,11 +26,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 344ba292f16098c969d287a88a5d441acc950de1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 842b52d063b5de701c74501410e3249da7358776
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
 Шаги данного руководства иллюстрируют способ отладки веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], также известных как веб-формы. Он показывает, как для запуска и остановки выполнения, установить точки останова и просматривать переменные в **Контрольные значения** окна.  

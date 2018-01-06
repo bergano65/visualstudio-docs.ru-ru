@@ -25,11 +25,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 60643d872594e9e868243adda33ae21a82dc7198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-clickonce-applications"></a>Локализация приложений ClickOnce
 Локализация — это процедура адаптации вашего приложения к конкретному языку и региональным параметрам. Эта процедура включает перевод текста пользовательского интерфейса на определенный язык, использование подходящего формата дат и валюты, изменение размера элементов управления в формах и зеркальное отражение элементов управления справа налево, если необходимо.  

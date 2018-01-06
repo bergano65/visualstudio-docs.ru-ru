@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b52121850bd82090e756f700880be02d35e6d86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Использование Microsoft Monitoring Agent
 Вы можете локально проверять размещенные в IIS веб-приложения ASP.NET и приложения SharePoint 2010 и 2013 на наличие ошибок, проблем производительности и других неполадок с помощью агента **Microsoft Monitoring Agent** События диагностики, созданные агентом, можно сохранять в файле журнала IntelliTrace (ITRACE). Открыв журнал в Visual Studio Enterprise (но не в выпуске Professional или Community), можно выполнить отладку с помощью любых диагностических средств Visual Studio. Для сбора диагностических данных IntelliTrace и данных метода можно запустить агент в режиме **трассировки** . Microsoft Monitoring Agent можно интегрировать с [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) и [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе.  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
 3.  Актуальные статьи справки вы найдете на[веб-сайте TechNet](http://technet.microsoft.com/systemcenter/default) .  
   
 ####  <a name="FullPermissionsITLog"></a> В. Как настроить разрешения для пула приложений?  
- **О.** Это можно сделать с помощью команды **icacls** в Windows или проводника Windows. Например:  
+ **О.** Это можно сделать с помощью команды **icacls** в Windows или проводника Windows. Пример:  
   
 -   Чтобы настроить разрешения с помощью команды **icacls** в Windows:  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
   
          `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     -или-  
+     - или -  
   
 -   Чтобы настроить разрешения с помощью проводника Windows:  
   
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/31/2017
   
     |||  
     |-|-|  
-    |*«\<appName >»*|Укажите путь к имени веб-сайта и веб-приложения в IIS. При желании можно также указать путь IIS.<br /><br /> *«\<IISWebsiteName >\\< IISWebAppName\>»*<br /><br /> -или-<br /><br /> **«IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*<br /><br /> Его можно посмотреть в диспетчере IIS. Пример:<br /><br /> ![Путь к веб-сайт IIS и веб-приложения](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Можно также использовать команды [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) и [Get-WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*«\<appName >»*|Укажите путь к имени веб-сайта и веб-приложения в IIS. При желании можно также указать путь IIS.<br /><br /> *«\<IISWebsiteName >\\< IISWebAppName\>»*<br /><br /> - или -<br /><br /> **«IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*<br /><br /> Его можно посмотреть в диспетчере IIS. Пример:<br /><br /> ![Путь к веб-сайт IIS и веб-приложения](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Можно также использовать команды [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) и [Get-WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<Режим_наблюдения >*|Выберите режим отслеживания.<br /><br /> <ul><li>**Monitor**. Запись минимальных сведений о событиях исключения и производительности. В этом режиме используется план сбора данных по умолчанию.</li><li>**Trace**. Запись сведений на уровне функций и отслеживание приложений SharePoint 2010 и приложений SharePoint 2013 с использованием указанного плана сбора данных. При выборе этого режима работа приложения может замедляться.<br /><br /> <ul><li>[В. Как настроить разрешения для пула приложений?](#FullPermissionsITLog)</li><li>[В. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)</li></ul><br />     В этом примере записываются события приложения SharePoint, размещенного на сайте SharePoint.<br /><br />     **Start-WebApplicationMonitoring «FabrikamSharePointSite\FabrikamSharePointApp» трассировка «C:\Program Files\Microsoft мониторинга Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml» «C:\IntelliTraceLogs»**</li><li>**Custom**. Запись пользовательских сведений с помощью заданного пользовательского плана сбора данных. Если после запуска отслеживания изменить план сбора данных, отслеживание необходимо перезапустить.</li></ul>|  
     |*«\<outputPath >»*|Укажите полный путь к каталогу для сохранения журналов IntelliTrace. Каталог необходимо создать перед началом отслеживания.|  
     |*\<UInt32 >*|Укажите максимальный размер журнала IntelliTrace. По умолчанию максимальный размер журнала IntelliTrace — 250 МБ.<br /><br /> Если размер журнала превосходит это ограничение, агент записывает новые записи вместо наиболее старых. Это ограничение можно изменить с помощью параметра **-MaximumFileSizeInMegabytes** или атрибута `MaximumLogFileSize` в плане сбора данных.|  
@@ -248,7 +249,7 @@ ms.lasthandoff: 10/31/2017
   
      **PS C:\\> Checkpoint-WebApplicationMonitoring «Fabrikam\FabrikamFiber.Web»**  
   
-     -или-  
+     - или -  
   
      **PS C: > Checkpoint-WebApplicationMonitoring «IIS:sitesFabrikamFabrikamFiber.Web»**  
   

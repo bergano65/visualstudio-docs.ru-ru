@@ -21,11 +21,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eb975b5d4c1f3450ca18b1ea0da3cd3b7fb6375
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Просмотр значений данных в подсказках в редакторе кода
 Подсказки данных предоставляют удобный способ просмотра сведений о переменных в программе во время отладки. Подсказки данных работают только в режиме прерывания и только с переменными, которые находятся в пределах текущей области выполнения.
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
   
 -   В подсказке по данным, поместите указатель мыши  **+**  входа, которая предшествует имени переменной.  
   
-    Переменная раскроется, отобразив свои элементы в виде дерева.
+    Переменная развернется, отобразив свои элементы в виде дерева.
 
     ![Просмотр подсказке](../debugger/media/dbg-tour-data-tips.gif "просмотра подсказки")
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Щелкните значок лупы ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "значок визуализатор") чтобы выбрать визуализатор по умолчанию для типа данных.  
   
-     -или-  
+     - или -  
   
      Щелкните всплывающую стрелку рядом с визуализатором, чтобы выбрать из всплывающего списка визуализатор для конкретного типа данных.  
   

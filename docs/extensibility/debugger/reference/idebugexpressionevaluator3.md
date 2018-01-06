@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3980f48063894d2bbde88a5dbe851e75c450b54c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c067875853a63bc1f861d93e8d70a15dcf3114df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
@@ -37,7 +38,7 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ## <a name="methods"></a>Методы  
  В дополнение к методам на [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейс, этот интерфейс реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Преобразует строку выражения проанализированный выражению, заданному символ поставщика и адрес вычисление кадра.|  
   

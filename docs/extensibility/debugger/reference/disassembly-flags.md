@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1959b101ed5c2aca4c1d806781952ad4e4e6b1ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c22724bbf8ba55e866a5139479bf2a56b5bf63fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 Задает флаги для дизассемблирования.  
@@ -48,7 +49,7 @@ public enum enum_DISASSEMBLY_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  DF_DOCUMENTCHANGE  
  Указывает, что эта инструкция является в другом документе, чем предыдущая.  
   

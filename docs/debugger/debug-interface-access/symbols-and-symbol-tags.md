@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 347ea483fda44d43d73b147a41a55f0945e515e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e51d02171455cd5b0b6051ed3b05c6d95278ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-and-symbol-tags"></a>Символы и теги символов
 Отладочной информации о скомпилированная программа хранится в PDB-файл программы, как символы, которые доступны с помощью API пакета SDK для отладки Interface Access (DIA). Все символы имеют [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) и [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) свойство. `symTag` Свойство указывает тип символа, в соответствии с определением [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md) перечисления. `symIndexId` Свойство `DWORD` значение, содержащее уникальный идентификатор для каждого вхождения символа.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
  При попытке получить доступ к свойству, если ошибка не возникает и свойство символ назначено значение, свойство «получить» возвращает метод `S_OK`. Возвращаемое значение `S_FALSE` указывает, что свойство не является допустимым для текущий символ.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)  
  Описывает различные расположения, которые могут иметь символ.  
   

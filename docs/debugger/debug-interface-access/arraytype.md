@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49a11b76688efbee897a432e62020bb92996bb37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 32fb3379eebe2bd0bee6df469e865ba89f3efabc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="arraytype"></a>ArrayType
 Массив идентифицируется `SymTagArray` символов.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  В следующей таблице показаны дополнительные свойства, допустимые для данного символа типа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_arrayIndexType](../../debugger/debug-interface-access/idiasymbol-get-arrayindextype.md)|`IDiaSymbol*`|Символ типа индекса массива.|  
 |[IDiaSymbol::get_arrayIndexTypeId](../../debugger/debug-interface-access/idiasymbol-get-arrayindextypeid.md)|`DWORD`|Идентификатор символ типа индекса массива.|  

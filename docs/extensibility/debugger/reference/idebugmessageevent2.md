@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ecc33a729864fe1fd84c16e732ffceb3b0f858a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Этот интерфейс используется подсистема отладки (DE) для отправки сообщения в Visual Studio, который требует ответа от пользователя.  
@@ -40,7 +41,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugMessageEvent2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Возвращает сообщение для отображения.|  
 |[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Задает ответ, если таковая имеется, из окна сообщения.|  

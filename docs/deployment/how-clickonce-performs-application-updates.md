@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 32e0b56ab5d4507c971948b98c8f7660650e70cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6ee199aa98c0c5b72a5693c840b892929e55477a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Выполнение обновлений приложения службой ClickOnce
 ClickOnce использует сведения о версии файла, указанный в манифесте развертывания приложения, чтобы принять решение об обновлении файлов приложения. После того как обновление начнется, ClickOnce использует метод, называемый *исправление файлов* во избежание избыточную загрузку файлов приложения.  

@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4a8ed7ebbd3fc2fc35e9145509ebf335652c4bbd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fbeaf6655ffc3e05afd9633add0defde9368a419
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Практическое руководство. Задание местоположения файла настраиваемого журнала для ошибок развертывания ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]обслуживает файлы журналов активации для всех развертываний. Этих журналах содержатся все ошибки, относящиеся к установке и инициализации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создается один файл журнала для активации каждого развертывания. Он хранит файлы журнала в папке временных файлов Интернета. Файл журнала для развертывания отображается для пользователя, когда происходит сбой активации, и пользователь нажимает кнопку **сведений** в диалоговом окне возникшей ошибки.  

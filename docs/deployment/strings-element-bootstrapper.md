@@ -21,11 +21,12 @@ caps.latest.revision: "4"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (загрузчик)
 Определяет локализованные строки названий продуктов, имена пакетов и сообщения об ошибках установки.  
@@ -44,14 +45,14 @@ ms.lasthandoff: 10/27/2017
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
  `Strings` Элемент является дочерним элементом `Package` элемента. Он не имеет атрибутов.  
   
-## <a name="string"></a>Строка  
+## <a name="string"></a>String  
  `String` Элемент является дочерним элементом `Strings` элемента. Объект `Strings` элемент может иметь один или несколько `String` элементов.  
   
  `String`имеет следующий атрибут.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Name`|Обязательный. Имя строки.|  
+|`Name`|Обязательно. Имя строки.|  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода задаются все англоязычные строки для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установщика.  

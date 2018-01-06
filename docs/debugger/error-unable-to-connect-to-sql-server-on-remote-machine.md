@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.sqlle_dcom_accessdenied
 dev_langs:
 - CSharp
@@ -14,16 +14,16 @@ dev_langs:
 - FSharp
 - C++
 - SQL
-ms.assetid: a922754e-6deb-43c6-935d-cc6dcc2a74d4
 caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 116da79ec31968e05bf5102ae5717fbfdcb94d97
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fbc4eaaa8a9144c028b8ed28b25ad7c6516e096e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Ошибка: не удается подключиться к SQL Server на удаленном компьютере
 Не удалось подключиться к SQL Server на удаленном компьютере *имя*. Доступ запрещен. Проверьте, что на удаленном компьютере установлен удаленный отладчик. Если удаленный компьютер не входит в домен, или если Visual Studio выполняется с локальной учетной записью, удаленный компьютер должен иметь учетную запись с тем же именем и паролем, что и локальная учетная запись.  

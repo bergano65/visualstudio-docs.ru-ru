@@ -22,11 +22,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec31ea837c78fc1d47c3df02d129ac3c5f4f3657
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23985c56ba61e5a788232523611a48cfde902335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-visualizers-of-data"></a>Создание настраиваемых средств визуализации данных
  Визуализаторы – это компоненты [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] пользовательского интерфейса отладчика. Объект *визуализатор* создает диалоговое окно или другой элемент интерфейса, в переменной или объекта способом, подходящим для этого типа данных. Например, HTML-визуализатор интерпретирует строку HTML и отображает результат в том виде, в каком она будет выглядеть в окне браузера; визуализатор точечных рисунков распознает структуру точечного рисунка и отображает его. Некоторые визуализаторы позволяют не только просматривать, но и редактировать данные.
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Если необходимо, чтобы визуализатор редактировал объекты данных, помимо их отображения, то необходимо переопределить методы `TransferData` или  `CreateReplacementObject` для <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.   
   
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
   
  [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 

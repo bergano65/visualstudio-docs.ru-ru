@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Реализация и регистрации поставщика порта
 Для отслеживания и указать порты, которые в свою очередь, управление процессами — роль поставщика порта. Во время порта должно быть создано поставщика порта создается с помощью CoCreate с идентификатором GUID поставщика порта (Диспетчер сеанса отладки [SDM] будет использовать поставщика порта выбранный пользователем или поставщика порта, указанный в системе проекта). Затем вызовет SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) для просмотра, могут быть добавлены все порты. Если порт может быть добавлен, путем вызова запрашивается новый порт [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) и передачи его [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий порт. `AddPort`Возвращает новый порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейса.  

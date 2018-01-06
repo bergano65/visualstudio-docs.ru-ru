@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; элемент (приложение ClickOnce)
 Определяет расширение файла, нужно связать с приложением.  
@@ -45,10 +46,10 @@ ms.lasthandoff: 10/27/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`extension`|Обязательный. Расширение файла, который нужно связать с приложением.|  
-|`description`|Обязательный. Описание типа файла для использования в оболочке.|  
-|`progid`|Обязательный. Имя, однозначно определяющее тип файла.|  
-|`defaultIcon`|Обязательный. Указывает значок, используемый для файлов с расширением. Файл значка должен быть указан с помощью [ \<файл > элемент](../deployment/file-element-clickonce-application.md) в [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md) , содержащий этот элемент.|  
+|`extension`|Обязательно. Расширение файла, который нужно связать с приложением.|  
+|`description`|Обязательно. Описание типа файла для использования в оболочке.|  
+|`progid`|Обязательно. Имя, однозначно определяющее тип файла.|  
+|`defaultIcon`|Обязательно. Указывает значок, используемый для файлов с расширением. Файл значка должен быть указан с помощью [ \<файл > элемент](../deployment/file-element-clickonce-application.md) в [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md) , содержащий этот элемент.|  
   
 ## <a name="remarks"></a>Примечания  
  Этот элемент должен включать ссылки на пространство имен XML в «urn: schemas-microsoft-com:clickonce.v1». Если `<fileAssociation>` элемент используется, он должен следовать после `<application>` элемента в его родительском [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md).  

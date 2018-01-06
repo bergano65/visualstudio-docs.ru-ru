@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d70923fa450f79aacd059ebb4d2fde753fb13564
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50fbee2dbdb30873c97f1ca465d99161add90a19
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 Представляет контрольную сумму для документа отладки и обеспечивает передачи контрольная сумма между компонентами.  
@@ -34,7 +35,7 @@ IDebugDocumentChecksum2 : IUnknown
 ## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugDocumentChecksum2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.|  
   

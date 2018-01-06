@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb69afe513010a7da4b4a85669bbc5f145f8dbc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 244f6c2113aef3b3c3576288a0c403d702d8b17a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="program-control"></a>Управление программой
 В Visual Studio отладки, все следующие проверки и продолжением процедуры происходит на уровне программ.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="methods-of-program-control"></a>Методы управления в программе  
  В следующей таблице показаны методы [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , должен быть реализован как минимум функциональной отладчик (DE) и управление выполнением.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Продолжает выполнение всех потоков, содержащихся в программе в остановленном состоянии. Требуется для управления выполнением.|  
 |[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Продолжает выполнение всех потоков, содержащихся в программе в остановленном состоянии. Требуется для управления выполнением.|  

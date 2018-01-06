@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0ee36596521f26ff4dd948e697640d0c82d796f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e1a3810f6f0c2de6bffb2f97c2f1fc446ea3b6d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdbg-class"></a>Класс VsgDbg
 Представляет интерфейс для программного управления компонента диагностики графики в приложении.  
@@ -27,19 +28,19 @@ ms.lasthandoff: 10/31/2017
 class VsgDbg;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `VsgDbg` Класс поддерживает следующие члены.  
   
 ### <a name="public-constructors"></a>Открытые конструкторы  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
 |[VsgDbg::VsgDbg (конструктор)](vsgdbg-vsgdbg-constructor.md)|Создает экземпляр класса `VsgDbg` класса и при необходимости подготавливает компонент диагностики графики для активного захвата и записи данных графики в приложении.|  
 |[VsgDbg::~VsgDbg (деструктор)](vsgdbg-tilde-vsgdbg-destructor.md)|Удаляет экземпляр `VsgDbg` класса.|  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
 |[AddMessage](addmessage.md)|Добавляет пользовательское сообщение диагностики графики Дисплей (Head).|  
 |[BeginCapture](begincapture.md)|Начинается интервал захвата, будут заканчиваться `EndCapture`.|  

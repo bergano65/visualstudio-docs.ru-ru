@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a9dbd550247f432a7329bfbba224220ea6ea5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2faa86e869e0b0d759ad46750b827d90005b88ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 Эта функция извлекает указатель на символ, представляющий родительский/контейнер этот символ.  
@@ -43,7 +44,7 @@ HRESULT get_container(
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  

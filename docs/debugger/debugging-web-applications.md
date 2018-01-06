@@ -22,16 +22,17 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e635a47553cdb0eef1b690e64323ca20188b476
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 238cb35212232865f154bcf5afa029abd4b30c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications"></a>Отладка веб-приложений
 В этом подразделе описана отладка нескольких типов веб-приложений.  
   
-## <a name="in-this-section"></a>Содержание   
+## <a name="in-this-section"></a>В этом разделе   
  [Отладка клиентского скрипта](../debugger/client-side-script-debugging.md)  
  Описаны скрипты тестирования и клиентские скрипты на страницах [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   

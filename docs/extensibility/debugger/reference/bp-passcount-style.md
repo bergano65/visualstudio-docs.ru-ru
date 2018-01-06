@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58baa5aca9ef5bddf5d7060fdc88022952bc9ce3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e272c92bbcc7364c967fc37c1e57b915e6cb64ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Указывает условие, связанное с количеством проход точки останова, вызывающее срабатывание точки останова.  
@@ -44,7 +45,7 @@ public enum enum_BP_PASSCOUNT_STYLE {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  BP_PASSCOUNT_NONE  
  Задает стиль счетчика проход не точки останова.  
   

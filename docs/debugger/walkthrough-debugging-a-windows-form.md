@@ -26,11 +26,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload: multiple
+ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Пример. Отладка в Windows Forms
 Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.  
@@ -155,7 +156,7 @@ ms.lasthandoff: 12/13/2017
 10. На **отладки** меню, выберите **остановить отладку**.  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>Присоединение к приложению Windows Form для отладки  
- В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] можно присоединить отладчик к выполняющемуся процессу. Если используется экспресс-выпуск, эта функция не поддерживается.  
+ В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] можно присоединить отладчик к выполняющемуся процессу. Если используется экспресс-выпуск, эта возможность не поддерживается.  
   
 #### <a name="to-attach-to-the-windows-form-application-for-debugging"></a>Присоединение к приложению Windows Form для отладки  
   

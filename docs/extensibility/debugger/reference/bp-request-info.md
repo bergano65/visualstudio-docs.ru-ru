@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f39aa59d566d85147b953ca8df4930d2a49eca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 87239c69d4d23f321dba4549f39724d48422a49f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Содержит сведения, необходимые для реализации точки останова.  
@@ -55,7 +56,7 @@ public struct BP_REQUEST_INFO {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `dwFields`  
  Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, которое указывает, какие поля заполнены.  
   

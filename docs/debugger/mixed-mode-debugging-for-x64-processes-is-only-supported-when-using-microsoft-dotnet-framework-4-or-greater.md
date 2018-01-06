@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c9961f9bbe0540b6b4dee04bd9446571e1f32f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>На 64-разрядных платформах Windows отладка в смешанном режиме поддерживается только при использовании платформы Microsoft.NET Framework версии 4.0 или выше
 Версии платформы .NET Framework, предшествующие версии 4, не поддерживают отладку в смешанном режиме для процессов x64. Это значит, что при выполнении отладки переход из управляемого кода в неуправляемый (как и обратный переход) невозможен.  
@@ -31,11 +32,11 @@ ms.lasthandoff: 10/31/2017
   
 -   Обновить проект так, чтобы в нем использовалась платформа Microsoft .NET Framework версии 4 или позднее.  
   
-     -или-  
+     - или -  
   
      Вести отладку управляемого и машинного кода в отдельных сеансах отладки.  
   
-     -или-  
+     - или -  
   
      Вести отладку смешанного кода в 32-разрядном процессе в соответствии со следующими процедурами:  
   

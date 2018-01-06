@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 970d14e258ca729ab861c966005efeeb218d7071
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c0dc4f85ffb6f84320b01e441297a1c8be5eb1c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 Некоторые символы могут идентифицироваться пространства имен, а впоследствии будет идентифицироваться по `SymTagUsingNameSpace` тег.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для этого типа символа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ компилируемого объекта включающего, блок или функции.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Идентификатор лексической родительского символа.|  

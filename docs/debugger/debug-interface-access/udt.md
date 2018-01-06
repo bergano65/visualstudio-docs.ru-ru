@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 975e739a3cb6ab4424875845b56b04643def107d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a2892a72a07f11a9026b6c76c9e991729b16e1a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="udt"></a>UDT
 Каждого класса, структуры и объединения определяется `SymTagUDT` символов. Каждый член, функции, данные, или вложенного типа и каждого базового класса отображается как дочерний класс определяемого пользователем типа (UDT).  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  В следующей таблице показаны дополнительные свойства, допустимые для данного символа типа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Символ для родительского класса, если таковые имеются.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Идентификатор родительского класса символа.|  

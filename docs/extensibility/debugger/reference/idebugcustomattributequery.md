@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d0c31a25ef2e791eabe4362f27c138ba506d752
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cb0bdb5277f71e5710a05b3c06b35318d8f173f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 Представляет запрос для настраиваемых атрибутов для метода или типа.  
@@ -31,7 +32,7 @@ IDebugCustomAttributeQuery : IUnknown
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Извлекает настраиваемый атрибут с заданным именем.|  
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Определяет, в указанном определен пользовательский атрибут.|  

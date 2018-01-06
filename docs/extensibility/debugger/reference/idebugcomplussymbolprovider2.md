@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab11d2b7df3cc69898544f2be567fbd7f5547f25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70b9803d175f1f9d01e868e692eeb12dd01da861
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 Представляет символ службу COM + с помощью методов, характерные для управляемого кода и расширяет возможности **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).  
@@ -31,7 +32,7 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 ## <a name="methods"></a>Методы  
  В дополнение к методам на [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс, этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[FunctionHasLineInfo](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-functionhaslineinfo.md)|Определяет, имеет ли указанный метод сведений о строке.|  
 |[GetTypesByName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypesbyname.md)|Извлекает объект типа с заданным именем.|  

@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 22a50c85db54ed58b675253bb071c4aab47fe197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 49ea73293e8cc491b515644a7e7d3f226a799339
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Развертывание ClickOnce в Windows Vista
 Создание приложений в Visual Studio для управления учетных записей пользователей (UAC) в Windows Vista обычно создается внедренный манифест, закодированы в двоичном XML-данные в исполняемом файле приложения. Поскольку приложения ClickOnce и COM-Взаимодействия без регистрации требуют внешнего манифеста, Visual Studio создает файл для этих типов проектов, содержащий данные UAC вместо внедренного манифеста. По умолчанию Visual Studio использует сведения из файла app.manifest для создания внешнего манифеста UAC (для развертывания ClickOnce и COM-Взаимодействия без регистрации) или для их внедрения в исполняемый файл приложения (для всех других случаев). Visual Studio предоставляет следующие возможности для создания манифеста:  

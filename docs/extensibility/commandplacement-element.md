@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71a53dfcb7ae7cca5b360d2e115c34909ca32f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a6a5c8d9220b0cd2c0dddfee283d222f4efb9ab8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandplacement-element"></a>Элемент CommandPlacement
 Элемент CommandPlacement включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню. С помощью элемента CommandPlacement, полностью переопределять эти элементы для изменения внешнего вида пользовательского интерфейса не нужно.  
@@ -39,22 +40,22 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|guid|Обязательный. Идентификатор guid набора команд, как определено в [символы элемент](../extensibility/symbols-element.md).|  
-|id|Обязательный. Идентификатор меню, группу или команду, чтобы разместить, как определено в `Symbols Element`.|  
-|priority|Обязательный. Определяет положение визуального элемента родительского элемента.|  
-|Условие|Необязательно. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Обязательно. Идентификатор guid набора команд, как определено в [символы элемент](../extensibility/symbols-element.md).|  
+|id|Обязательно. Идентификатор меню, группу или команду, чтобы разместить, как определено в `Symbols Element`.|  
+|priority|Обязательно. Определяет положение визуального элемента родительского элемента.|  
+|Условие|Необязательный. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|Родительский|Обязательный. Меню или группы, на котором размещается элемент должен располагаться.|  
+|Родительский|Обязательно. Меню или группы, на котором размещается элемент должен располагаться.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Определяет группы, CommandPlacements и CommandPlacement элементов.|  
   

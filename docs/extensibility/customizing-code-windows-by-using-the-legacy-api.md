@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a958e6f6aa815b7d5726c2c441876331fba56b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Настройка окна кода с помощью API прежних версий
 Окно кода — объект окна документа, который поддерживает один или несколько представлений текста. Конкретные возможности окна кода зависят от службы соответствующего языка. В режиме многодокументного интерфейса (MDI) окно кода — дочерняя рамка MDI.  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
  Языковая служба реализует диспетчера окон кода и отвечает за управление элементы оформления, например раскрывающуюся панель. Этот код вызывает окно <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> метод во время инициализации окна кода. При этом вызове языковой службы можно добавить раскрывающуюся панель или панель инструментов с кнопками (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) в окне кода.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  `Customizing Code Windows by Using the Legacy API`  
  Описываются способы настройки windows код, с помощью предыдущих версий API.  
   

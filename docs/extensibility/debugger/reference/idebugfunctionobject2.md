@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c0a13fead810ffc546488da22ba468e3ea4f323
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbf52230b93357e85326f868254cf1d5c5a9dbb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -46,7 +47,7 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Создает объект, который использует конструктор заданы параметры флаг оценки, а также значение времени ожидания.|  
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Создает объект string, имеющего указанную длину.|  

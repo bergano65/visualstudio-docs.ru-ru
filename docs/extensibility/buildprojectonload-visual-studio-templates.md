@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab3744d81f99c394a2633854a0ec24b76e665ecd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3f8c6eac012c8704c99a205e4a4a616d39e7857f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (шаблоны Visual Studio)
 Указывает, следует ли для построения проекта сразу после его создания.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
  Этот текст должен быть либо `true` или `false`, показывающее, постройте проект, сразу после его создания.  
   
 ## <a name="remarks"></a>Примечания  
- `BuildProjectOnLoad`— Это необязательный атрибут. Значение по умолчанию — `false`.  
+ `BuildProjectOnLoad`— Это необязательный атрибут. Значение по умолчанию — `false`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  

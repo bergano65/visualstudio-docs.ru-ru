@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ee54e8576d14e70e75372592501afc96517f5fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c49962892cdc0c83d8e3b7ae22ca0c4ee7f13d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 Используется для установки точек останова кода на основе строки, пользователь может ввести из интегрированной среды разработки (IDE).  
@@ -32,7 +33,7 @@ typedef struct _BP_LOCATION_CODE_STRING {
 } BP_LOCATION_CODE_STRING;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `bstrContext`  
  Контекст точки останова в коде, обычно имя метода или функции по результатам в стеке вызова.  
   

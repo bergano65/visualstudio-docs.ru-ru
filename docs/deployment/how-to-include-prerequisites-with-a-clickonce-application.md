@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 18431ea15b53959234da4b2c6dedb24b8fa2e390
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Включение требуемых компонентов в дистрибутив приложения ClickOnce
 Перед распространением программного обеспечения необходимых компонентов с приложением [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] следует загрузить на компьютер разработчика пакеты установщиков этих необходимых компонентов. После публикации приложения и нажатия кнопки **загрузить необходимые компоненты с местоположения моего приложения**, произойдет ошибка, если пакеты установщиков отсутствуют в **пакетов** папки.  

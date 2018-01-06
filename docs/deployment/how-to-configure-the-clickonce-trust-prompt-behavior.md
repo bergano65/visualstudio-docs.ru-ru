@@ -22,18 +22,19 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 24a229c7c96221c0b7f04a91d5f71fa566e71e81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8822d0aa9947dccbdfabc43d7090b52eba7d0844
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое руководство. Настройка поведения запроса о доверии ClickOnce
 Можно настроить запрос о доверии ClickOnce для элемента управления пользователи получают возможность установки приложения ClickOnce, таких как приложения Windows Forms, приложениях Windows Presentation Foundation, консольные приложения, браузера WPF приложений и решений Office. Настроить запрос о доверии при установке разделов реестра на компьютере для каждого конечного пользователя.  
   
  В следующей таблице показаны параметры конфигурации, которые могут применяться к каждой из пяти зон (Интернета, UntrustedSites, MyComputer, локальная интрасеть и TrustedSites).  
   
-|Параметр|Значение параметра реестра|Описание|  
+|Параметр|Значение параметра реестра|Описание:|  
 |------------|----------------------------|-----------------|  
 |Разрешение запроса о доверии.|`Enabled`|Запрос о доверии ClickOnce отображается, чтобы конечным пользователям можно предоставить доверие приложения ClickOnce.|  
 |Ограничение запроса о доверии.|`AuthenticodeRequired`|Запрос о доверии ClickOnce отображается только в том случае, если приложение ClickOnce подписано сертификатом, который идентифицирует издателя.|  

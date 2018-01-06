@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc69edbe0865953d242967490a0852c9da4942b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ff9458eed7f9c77a964240f81017d27d95d9622
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-flag-element"></a>Элемент Command флаг
 Изменяет его родительского элемента.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |AllowParams|Указывает, что пользователи могут вводить параметры команды в **команда** окна при вводе каноническое имя команды.<br /><br /> Допустимо для:`Button`|  
 |AlwaysCreate|Меню создается, даже если он не имеет групп и кнопки.<br /><br /> Допустимо для:`Menu`|  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Предоставляет группы для [элемент Button](../extensibility/button-element.md) элементов.|  
 |[Элемент Menus](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a08dcb196ff90343faa4b44edbb01a01e401df13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bc38c55ffab76923f81f2c2eb610ba18f23d701c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 Описывает связанная точка останова сведения о коде точки останова или точки останова по данным.  
@@ -43,7 +44,7 @@ public struct BP_RESOLUTION_INFO {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `dwFields`  
  Коллекция флагов из [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) перечисления, указывающее, какие поля заполнены.  
   

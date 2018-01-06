@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0da925fa76eb477a5995815f74a664899e721640
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9aed3df2d960c8c2a85e642fe9e1487861bcfe08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Возвращает флаг, который указывает, является ли символ данных входят в статистическое выражение или коллекция символов; компилятор будет рассматривать агрегированных символы как отдельные сущности, но они действительно являются частью одного символа большего размера.  
@@ -46,7 +47,7 @@ HRESULT get_isAggregated(
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23fd772b74c4caafbde37541933c38e306f9dc75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7b5b596f553c0f84c9306bba010d2b97a33e1a16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-the-debugger"></a>Запуск отладчика
 Запуск отладчика требуется отправить правильной последовательности, методов и событий с их соответствующие атрибуты.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
      Если `S_FALSE` возвращается, ядро отладки (DE) — для загрузки процессе виртуальной машины.  
   
-     -или-  
+     - или -  
   
      Если `S_OK` возвращается, DE является для загрузки в процессе из SDM. Затем SDM выполняет следующие задачи:  
   

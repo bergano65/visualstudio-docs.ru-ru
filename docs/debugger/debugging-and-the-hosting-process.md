@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02cdf8b50415a238c2af2735a20fea4ed8c23668
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01d4ebaada2c8ac65c1f44a5c80525f1b9e66a5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-and-the-hosting-process"></a>Отладка и процесс размещения
 В процессе размещения Visual Studio предусмотрены средства улучшения рабочих характеристик отладчика и новые возможности отладки, например, отладка с частичным доверием и вычисление выражения во время разработки. При необходимости процесс размещения можно отключить. Для получения дополнительной информации см. [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md). В следующих разделах описаны некоторые различия между отладкой с процессом размещения и отладкой без него.  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
  `Assembly.GetCallingAssembly().FullName` возвращает различные результаты в зависимости от того, включен процесс размещения или нет. Если процесс размещения включен, вызов `Assembly.GetCallingAssembly().FullName` возвращает `mscorlib`. При вызове `Assembly.GetCallingAssembly().FullName` с отключенным процессом размещения будет возвращено имя приложения.  
   
 ## <a name="see-also"></a>См. также  
- [Главный процесс (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
+ [Ведущий процесс (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [Как: отладка приложений частичного доверия](../debugger/how-to-debug-a-partial-trust-application.md)   
  [Практическое руководство. Отключение главного процесса](../ide/how-to-disable-the-hosting-process.md)

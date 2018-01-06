@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545241d254d8ea2d2532ee8590e8e1867d635592
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Отладка с использованием управляемого кода, с помощью отладчика Visual Studio
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 12/15/2017
 
 2. В разделе **Visual C#** или **Visual Basic**, выберите **.NET Core**, а затем в средней области выберите **консольного приложения (.NET Core)**.
 
-     Если вы не видите **консольного приложения (.NET Core)** шаблон проекта, нажмите кнопку **откройте установщик Visual Studio** ссылку в левой области **новый проект** диалоговое окно. Запускается Visual Studio Installer. Выберите **разработки настольных приложений .NET** и **.NET Core** рабочей нагрузки, нажмите кнопку **изменить**.
+     Если шаблон проекта **Консольное приложение (.NET Core)** отсутствует, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**. Запускается Visual Studio Installer. Выберите **разработки настольных приложений .NET** и **.NET Core** рабочей нагрузки, нажмите кнопку **изменить**.
 
 3. Введите имя, например **MyDbgApp** и нажмите кнопку **ОК**.
 

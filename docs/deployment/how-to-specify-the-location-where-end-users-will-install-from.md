@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41a601febff80b002512a3783d8405dc42e5d766
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a3a2770933f4a9f600b12a2d601deca855de3a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. Указание расположения, из которого будет производиться установка пользователями
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, место которого пользователи могут загрузить и установить приложение не обязательно является местом, где первоначально было опубликовано приложение. Например в некоторых организациях разработчик может опубликовать приложение на промежуточный сервер и затем администратор перемещает приложение на веб-сервере.  

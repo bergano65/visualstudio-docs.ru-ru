@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30b3ca5d68731fccf874b250741a6e67697539fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fb7e886940cf26341a6f0f0fd46bb1fc594cc7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Предоставляет свойства кадра стека.  
@@ -32,7 +33,7 @@ IDiaStackFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Ниже приведены методы, поддерживаемые этим интерфейсом.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Возвращает флаг, указывающий, что базового указателя выделяется для кода в этом диапазоне. Этот метод является устаревшим.|  
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Получает базовый адрес кадра.|  

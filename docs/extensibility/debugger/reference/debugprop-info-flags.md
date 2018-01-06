@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24b0208cdfd49ef07ba85803d03a1e2c4aa91553
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8e154f6e2ac9ef18632af875c13b00c63a283d59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Указывает, какую информацию, чтобы получить сведения об объекте debug свойство.  
@@ -68,7 +69,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  DEBUGPROP_INFO_FULLNAME  
  Инициализация или использовать `bstrFullName` поле.  
   

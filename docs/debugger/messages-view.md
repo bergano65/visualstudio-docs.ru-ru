@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538cd0cd023b8861d6adb88c19b42aac59c9f4dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messages-view"></a>Представление сообщений
 Каждое окно имеет связанное сообщение поток. Этот поток сообщений отображается окно представления сообщений. Отображаются дескриптор окна, код сообщения и сообщения. Представление сообщений для потока или процесса также можно создать. Это позволяет просматривать сообщения, отправленные на все окна, принадлежащие конкретному процессу или потоку, что особенно полезно при отслеживании сообщений об инициализации окон.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  При наличии достаточного количества сообщений выберите **остановить ведение журнала** из **сообщений** меню.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Управление представлениями сообщений](../debugger/how-to-control-messages-view.md)  
  Содержит описание процесса управления представления сообщений.  
   

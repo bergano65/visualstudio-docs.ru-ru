@@ -19,26 +19,27 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ef1451626cf980fbd6f096fa5dc92946edebd710
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7df31b2d76639ec0eedc353e857fc1c0c8df39b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифеста приложения является XML-файл, описывающий приложение, которое развертывается с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]манифесты приложений имеют следующие элементы и атрибуты.  
   
-|Элемент|Описание|Атрибуты|  
+|Элемент|Описание:|Атрибуты|  
 |-------------|-----------------|----------------|  
-|[\<сборка > элемент](../deployment/assembly-element-clickonce-application.md)|Обязательный. Это элемент верхнего уровня.|`manifestVersion`|  
-|[\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md)|Обязательный. Определяет основной сборки [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<сборка > элемент](../deployment/assembly-element-clickonce-application.md)|Обязательно. Это элемент верхнего уровня.|`manifestVersion`|  
+|[\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-application.md)|Обязательно. Определяет основной сборки [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
 |[\<trustInfo > элемент](../deployment/trustinfo-element-clickonce-application.md)|Определяет требования к безопасности приложения.|Нет|  
-|[\<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md)|Обязательный. Определяет точку входа в код приложения.|`name`|  
-|[\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md)|Обязательный. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно.|Нет|  
-|[\<Файл > элемент](../deployment/file-element-clickonce-application.md)|Необязательно. Идентифицирует каждого файла не являющиеся сборками, используемые приложением. Может включать данные изоляции модели COM, связанные с этим файлом.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md)|Необязательно. Определяет расширение файла, нужно связать с приложением.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
+|[\<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md)|Обязательно. Определяет точку входа в код приложения.|`name`|  
+|[\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md)|Обязательно. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно.|Нет|  
+|[\<Файл > элемент](../deployment/file-element-clickonce-application.md)|Необязательный. Идентифицирует каждого файла не являющиеся сборками, используемые приложением. Может включать данные изоляции модели COM, связанные с этим файлом.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<fileAssociation > элемент](../deployment/fileassociation-element-clickonce-application.md)|Необязательный. Определяет расширение файла, нужно связать с приложением.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Примечания  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Файл манифеста приложения определяет приложение, развернутое с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Дополнительные сведения о [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] см. в разделе [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md).  

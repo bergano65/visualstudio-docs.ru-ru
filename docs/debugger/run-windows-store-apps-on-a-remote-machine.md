@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e1b298f8088adf05992f7ebf8b5afbb743ec995
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: ebae0886db71b0b06f346d6bd174951b1c5d4752
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-on-a-remote-machine"></a>Запустите на удаленном компьютере приложений UWP
 ![Применяется только к Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/11/2017
 
 Для Windows 8.1 и Windows 10 ПК под управлением версии Windows с pre создателем обновления необходимо установить инструменты удаленной отладки на удаленном компьютере вручную перед отладкой. Следуйте инструкциям в этом разделе.
   
-##  <a name="BKMK_Prerequisites"></a> Необходимые компоненты  
+##  <a name="BKMK_Prerequisites"></a> Предварительные требования  
  Для отладки на удаленном устройстве необходимо выполнить следующие условия.  
   
 -   Удаленное устройство и компьютер Visual Studio должны быть подключены по сети или соединены напрямую с помощью кабеля Ethernet. Отладка через Интернет не поддерживается.  
@@ -105,5 +106,5 @@ ms.lasthandoff: 11/11/2017
  После этого в меню **Отладка** выберите **Начать отладку** (клавиша F5). Проект перекомпилируется, развертывается и запускается на удаленном устройстве. Отладчик приостанавливает выполнение в точках останова, что позволяет выполнить шаги с заходом, шаги с обходом и шаги с выходом в коде. Выберите **Остановить отладку** , чтобы завершить сеанс отладки и закрыть удаленное приложение. Дополнительные сведения см. в разделе [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>См. также  
- [Тестирование приложения UWP в Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Тестирование приложений UWP в Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

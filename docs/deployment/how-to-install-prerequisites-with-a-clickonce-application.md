@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 44acef520a15b86e15906eb4197f538b23b92d8a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 83458b627949cda5f918ec06a5f84bd9697ba6d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Установка необходимых компонентов при помощи ClickOnce-приложения
 Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений требуется установку правильную версию платформы .NET Framework на компьютере до их выполнения, так как многие приложения имеют другие необходимые компоненты. При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, можно выбрать набор необходимых компонентов для упаковки вместе с приложением. Во время установки проверка будет выполняться для каждого необходимого компонента определить, если он уже существует. Если не будет устанавливаться до установки [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  

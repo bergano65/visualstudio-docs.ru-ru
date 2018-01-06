@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4aba03fd68fc5e0e68dbf13887de0c25094fa951
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8f504a70950ea9e808d50bd8b9bc7ef5dd92d699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-file-name-extensions"></a>По расширениям файлов
 При регистрации расширение файла VSPackage, ее необходимо связать с версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Это важно при более одной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлен на компьютере.  

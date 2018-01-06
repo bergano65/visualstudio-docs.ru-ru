@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13161c2be23d2eec6f1d91fd59fc465cbc59a510
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43c112da892fadf95eb5a27880d82ec9d29419c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 Этот интерфейс обеспечивает доступ к идентификатор процесса, который является владельцем объекта, адрес которого представлен этот интерфейс.  
@@ -38,7 +39,7 @@ IDebugAddress2 : IDebugAddress
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы vtable  
  Помимо методов, наследуемых от [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс, этот интерфейс реализует следующий метод:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Извлекает идентификатор процесса, который является владельцем объекта, представленного этим интерфейсом.|  
   

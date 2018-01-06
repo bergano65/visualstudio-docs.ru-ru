@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df8ea8f5e95cf32f5b1425a4f110c424155b2ef2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f601cd38b5546d79f97e1c15a7c33c5de7df5d03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 Представляет обработчик одной отладки (DE), который управляет отладки один или несколько модулей.  
@@ -38,7 +39,7 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, наследуемых от [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), `IDebugEngine3` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Задает путь или пути, DE будет использовать для поиска символов отладки.|  
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Загрузка символов для всех модулей, которые еще не было их загруженные символы.|  

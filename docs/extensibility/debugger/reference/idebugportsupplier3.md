@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bd2a46573ca655df3372c33182860cf2d4816d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0e1c5c252e0674ee3de8371080e298f42de2112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Этот интерфейс позволяет вызывающему объекту для определения поставщика порта, чтобы защитить порты (их записи на диск) между вызовами отладчика и затем получить список сохраненных порты.  
@@ -38,7 +39,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, наследуемых от [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) интерфейс, этот интерфейс поддерживает следующие:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Возвращает, может ли поставщика порта сохранять портов (по их записи на диск) между вызовами отладчика.|  
 |[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Возвращает объект, который может использоваться для перечисления через все порты, которые были записаны на диск поставщика этого порта.|  

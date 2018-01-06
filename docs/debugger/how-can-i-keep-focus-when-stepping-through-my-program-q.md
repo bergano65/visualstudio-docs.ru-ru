@@ -23,14 +23,15 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba265c0719a1a2c95e4b3e3e1c5e2df8c0e246c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e5661b3a2d1936b2fa8b0a089be86312fb29704
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Как сохранить фокусировку при пошаговом выполнении программы?
-## <a name="description"></a>Описание  
+## <a name="description"></a>Описание:  
  В программе возникает проблема, связанная с активацией окна. При пошаговом выполнении программы с отладчиком не удается воспроизвести проблему, так как программа теряет фокусировку. Есть ли способ избежать этого?  
   
 ## <a name="solution"></a>Решение  

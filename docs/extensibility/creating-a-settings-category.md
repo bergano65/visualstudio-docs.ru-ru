@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016aac6f0e23b626b9023b978efa27e76924c6c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-settings-category"></a>Создание категории параметров
 В этом пошаговом руководстве создать категорию параметров Visual Studio и использовать его для сохранения значений и восстановить значения из файла параметров. Категория параметров — это группа связанных свойств, которые отображаются в виде «пользовательские параметры точки»; то есть как флажок в **Импорт и экспорт параметров** мастера. (Можно найти в **средства** меню.) Параметры сохранить или восстановить как категория, и отдельные параметры не отображаются в мастере. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Откройте файл VSPackage.resx и добавьте эти три строковые ресурсы.  
   
-    |Имя|Значение|  
+    |name|Значение|  
     |----------|-----------|  
     |106|Мои категории|  
     |107|Мои параметры|  

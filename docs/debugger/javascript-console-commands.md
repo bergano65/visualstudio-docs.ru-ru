@@ -21,11 +21,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9808c664e5e3d06558faf8f9b44a6a2bb6e9b83
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Команды консоли JavaScript в Visual Studio
 ![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/11/2017
 > [!TIP]
 >  Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
   
-|Команда|Описание|Пример|  
+|Команда|Описание:|Пример|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|Отправляет сообщение, если `expression` имеет значение **false**.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|Удаляет сообщения из окна консоли (включая сообщения об ошибках в скрипте), а также скрипт, появляющийся в окне консоли. Не удаляет скрипт, введенный после появления на консоли запроса на ввод.|`console.clear();`|  
@@ -71,7 +72,7 @@ ms.lasthandoff: 11/11/2017
 ## <a name="miscellaneous-commands"></a>Разные команды  
  Эти команды также доступны в окне консоли JavaScript (но недоступны в коде).  
   
-|Команда|Описание|Пример|  
+|Команда|Описание:|Пример|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|Возвращает указанный элемент в окно консоли. `$0` возвращает элемент, выбранный в настоящее время в проводнике DOM, `$1` возвращает элемент, ранее выбранный в проводнике DOM, и так далее до четвертого ранее выбранного элемента.|$3|  
 |`$(id)`|Возвращает элемент по идентификатору. Это команда быстрого доступа к `document.getElementById(id)`, где `id` — это строка, представляющая идентификатор элемента.|`$("contenthost")`|  

@@ -21,20 +21,21 @@ caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 263e3d9a01912c1b47dd518cfc9cd270937e4b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68c8f730bf684688cb09970a58ab79101022d4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по развертыванию ClickOnce
 Этот раздел содержит образцы приложений, пример кода и пошаговые руководства, которые иллюстрируют синтаксис, структуру и приемы, используемые для развертывания Windows Forms, WPF и консольных приложений.  
   
  Пример кода предназначен для использования в целях ознакомления и не должны использоваться в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.  
   
-## <a name="clickonce-deployment"></a>Развертывание ClickOnce  
+## <a name="clickonce-deployment"></a>развертывание ClickOnce  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Содержит сведения об использовании служебных программ .NET Framework для развертывания приложения ClickOnce.|  
 |[Загрузка сборок по требованию с помощью API развертывания ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Показано, как пометить определенные сборки в приложении как «необязательные» и их загрузка с помощью классов в <xref:System.Deployment.Application> пространства имен.|  

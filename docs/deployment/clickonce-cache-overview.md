@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1aa73140760f161971f30e4232658b18453f233f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9ca3465aafc36af24f36f86edd5bf3dc5c69d576
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-cache-overview"></a>Общие сведения о кэше ClickOnce
 Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, являются ли они установлены локально или размещаются в сети, хранятся на клиентском компьютере в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения *кэша*. Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] кэша — это семейство скрытых каталогов в каталоге локальные параметры папки Documents and Settings текущего пользователя. Этот кэш содержит файлы приложения, включая сборки, файлы конфигурации, приложения и пользовательские параметры и каталог данных. Кэш также отвечает за перенос каталог данных приложения до последней версии. Дополнительные сведения о миграции данных см. в разделе [доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  

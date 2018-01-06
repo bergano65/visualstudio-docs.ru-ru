@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eca5b5dff1bb7a00d8e138d367581081eaab6fc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ada6fe4eec6b8bda3f0b44f097581103ea7b138e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 InstallShield Limited Edition помогает создать файл установки и распространить его среди пользователей, чтобы они смогли установить классическое приложение или компонент без подключения к сети. InstallShield Limited Edition предоставляется бесплатно пользователям выпусков Visual Studio Professional и Enterprise. Он заменяет технологию установщика Windows, которая больше не поддерживается в Visual Studio. Кроме того, приложения и компоненты можно распространять с помощью технологии развертывания ClickOnce, которая требует подключения к сети. См. раздел [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  

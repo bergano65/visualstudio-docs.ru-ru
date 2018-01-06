@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8a7f722ea92e20bbceb7ed1bfe9eed31d23c32e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85c6c097867aea17be4b4aeca1431a05c74903a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Определяет структуру разрешения расположения точки останова.  
@@ -46,7 +47,7 @@ public struct BP_RESOLUTION_LOCATION {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `bpType`  
  Значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, указывающее способ интерпретации `bpResLocation` union или `unionmemberX` члены.  
   

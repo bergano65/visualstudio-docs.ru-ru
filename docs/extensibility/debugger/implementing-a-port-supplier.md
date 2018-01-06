@@ -15,18 +15,19 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bc985bf9fb55b67b5a332f007abe98c6718fbf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa70e2a6019a97c248e6d4b411dacc222be59a1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-port-supplier"></a>Реализация поставщика порта
 Порт поставщика предоставляет порты на запрос к диспетчеру сеанса отладки (SDM). Поставщика порта должен быть реализован при отладке на компьютер без DCOM или если требуется поддержка нового устройства. Например для предоставления отладки для сотовых телефонов, необходимо реализовать порт поставщика, который предоставляет порты, которые подключаются мобильного телефона (возможно с помощью IR или ячейки подключения) и перечисляет процессы и программы, запущенные на телефоне.  
   
  Для отладки программ на компьютерах, на основе Windows (включая удаленную отладку) Visual Studio предоставляет поставщикам портов для машинного кода и процессы Common Language Runtime (CLR), поэтому нет необходимости реализовывать собственные поставщика порта в тех случаях.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Реализация и регистрация поставщика порта](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
  Описывает, как SDM взаимодействует с поставщика порта и его портов.  
   

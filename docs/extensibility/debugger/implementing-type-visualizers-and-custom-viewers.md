@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 19718425df6f0c8a656db0e3d7ebf0f06937f780
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 301c0311b8398ae14b36fedca5653d607b3274c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Реализация визуализаторами типов и пользовательские средства просмотра
 > [!IMPORTANT]
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="custom-viewers"></a>Пользовательские средства просмотра  
  Пользовательские средства просмотра, реализованных в EE для определенного типа данных и представляются [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) интерфейса. Так как он доступен только в том случае, когда выполняется EE, который реализует пользовательское средство просмотра, определенной пользовательское средство просмотра не же гибкостью, что тип визуализатора. Реализация пользовательское средство просмотра проще, чем реализовать поддержку визуализаторами типов. Тем не менее поддержка визуализаторами типов предоставляет максимальную гибкость для конечного пользователя для визуализации данных или ее. В оставшейся части данного обсуждения касается только визуализаторами типов.  
   
-## <a name="interfaces"></a>Интерфейсы  
+## <a name="interfaces"></a>интерфейсов,  
  EE реализует следующие интерфейсы для поддержки визуализаторами типов, для использования в Visual Studio:  
   
 -   [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  

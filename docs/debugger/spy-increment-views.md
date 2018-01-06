@@ -15,16 +15,17 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdf541fb064064322679db6f381576a741af75a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-views"></a>Представления Spy++
 Spy ++ отображает представления в виде дерева окон, сообщений, процессов и потоков, доступных на компьютере.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Представление окон](../debugger/windows-view.md)  
  Отображение дерева доступных окон и элементов управления.  
   
@@ -34,7 +35,7 @@ Spy ++ отображает представления в виде дерева 
  [Представление процессов](../debugger/processes-view.md)  
  Отображает древовидное представление активных процессов.  
   
- [Представление "Потоки"](../debugger/threads-view.md)  
+ [Представление потоков](../debugger/threads-view.md)  
  Отображает древовидное представление активных потоков.  
   
 ## <a name="related-sections"></a>Связанные разделы  

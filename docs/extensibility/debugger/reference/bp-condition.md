@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e243ca1919368c8ea863383255b92a42befefe8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9ccc0b142e87acd3a09840f8c72f5fe1a35bc0a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 Описывает условия, при которых срабатывает точка останова.  
@@ -45,7 +46,7 @@ public struct BP_CONDITION {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `pThread`  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий активного потока для приложения, которое содержит точку останова.  
   

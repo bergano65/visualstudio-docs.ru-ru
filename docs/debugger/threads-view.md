@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>Представление потоков
 Представление "Потоки" — это простой список всех потоков, связанных с windows в системе. Отображается идентификатор потока и имя модуля для каждого потока. Процессы, не включены, но можно легко найти процесс, которому принадлежит выбранный поток.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  На рисунке выше показано представление "Потоки".  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Поиск потока в представлении потоков](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Описание поиска определенного потока в представлении потоков.  
   

@@ -12,11 +12,15 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload:
+- aspnet
+- dotnetcore
+- azure
+ms.openlocfilehash: 8d0163d9834a56735daf67050dbf3b8e74011dc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core для служб IIS и Azure в Visual Studio 2017 г.
 Развертывание веб-приложения ASP.NET на компьютере Windows Server с IIS и настроить его для удаленной отладки. В этом руководстве объясняется, как установить и настроить приложение ASP.NET Core Visual Studio 2017 г., развернуть его в службах IIS с помощью Azure и присоединить удаленный отладчик из Visual Studio.
@@ -75,7 +79,7 @@ ms.lasthandoff: 12/11/2017
 
     В Visual Studio должна быть достигнута точка останова.
 
-    Ну вот! Остальные шаги в этом разделе применяются к удаленную отладку на Виртуальной машине Azure.
+    Вот и все! Остальные шаги в этом разделе применяются к удаленную отладку на Виртуальной машине Azure.
 
 ## <a name="BKMK_azure_vm"></a>Удаленная отладка ASP.NET Core на Виртуальной машине Azure
 

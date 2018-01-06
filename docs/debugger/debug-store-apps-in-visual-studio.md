@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3920bfbd5b1ddbddc3166118ead0c7d0fefff8d8
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8684a1220b871e2c77f8c0229cddd807a6031cd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-uwp-apps-in-visual-studio"></a>Отладка приложений UWP в Visual Studio
 Отладчик Visual Studio позволяет вам управлять выполнением программы и изучать ее состояние. Чтобы найти причину неполадок в приложениях UWP и понять, как именно приложение работает, можно использовать отладчик. Когда вы приостанавливаете выполнение в отладчике, Visual Studio отображает исходный файл, содержащий выполняемый код, и выделяет выполняемый оператор. Вы можете просмотреть значение переменных, стек вызовов выполняемых функций и другие аспекты состояния программы. Вы можете продолжить выполнение (пошаговое) программы по одному оператору за раз, чтобы определить, как именно операторы изменяют значения в программе. В приложениях на JavaScript вы можете просмотреть и контролировать DOM на странице.  

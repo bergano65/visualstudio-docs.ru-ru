@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 519993c8527b0cd64c283416cd60eb48112e6886
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e728fbe2a9e430224a3da822cbcae45745eeb29e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 Пакет VSIX является VSIX-файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными, используемый для классификации и установки расширений Visual Studio. Эти метаданные содержатся в манифест VSIX и файл [Content_Types] .xml. Пакет VSIX также может содержать один или несколько файлов Extension.vsixlangpack для предоставления текста локализованные программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.  

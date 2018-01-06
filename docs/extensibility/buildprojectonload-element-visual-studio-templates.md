@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6d672eca7b818ce9bc06df4a09a7623be9e8d89f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload - элемент (шаблоны Visual Studio)
 Создает только новые проекты можно создавать и добавлять их в решение. Всего решения не создается.  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
  Этот текст должен быть либо `true` или `false` для указания, следует ли создать только новый проект, когда он создается на основе шаблона.  
   
 ## <a name="remarks"></a>Примечания  
- `BuildProjectOnLoad` — это необязательный элемент. Значение по умолчанию — `false`.  
+ `BuildProjectOnLoad` — это необязательный элемент. Значение по умолчанию — `false`.  
   
 ## <a name="example"></a>Пример  
  Следующий пример иллюстрирует метаданные для шаблона Visual C#.  

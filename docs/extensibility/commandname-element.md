@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f81ab0253c9820f1e6c89ebf455601059d43bda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b8e9dfcc3f918dba7444b6a3478c8b6a2fb5db21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandname-element"></a>Элемент CommandName
 `CommandName` Элемент указывает текст, отображаемый в категории «клавиатура» **параметры** диалоговое окно и в **команды** списка в **Настройка** диалоговое окно поле.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Элемент Strings](../extensibility/strings-element.md)|Группирует текстовые элементы, такие как `ButtonText` и `CommandName`.|  
   

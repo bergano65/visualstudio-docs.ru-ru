@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Пошаговое руководство. Создание пользовательского загрузчика для вывода окна с предупреждением о конфиденциальности
 Можно настроить приложения ClickOnce для автоматического обновления при появлении сборок с более новой версии файла и версии сборки. Чтобы убедиться в том, что пользователи согласны на это поведение, можно отобразить окно подтверждения к ним. Затем их можно выбрать, следует ли предоставить приложению для автоматического обновления. Если приложение не может выполнять автоматическое обновление, не устанавливает.  

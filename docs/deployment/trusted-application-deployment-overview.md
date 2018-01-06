@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 63377b7edde2204d30802361aa5628d3aa473652
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 34e83d6b035ba6ea91190fa89b9e1a63366e7907
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 Этот раздел содержит общие сведения о том, как развертывать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с повышенными правами с помощью технологии развертывания доверенных приложений.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="trusted-application-deployment-basics"></a>Основные принципы развертывания надежных приложений  
  В следующей таблице показаны объекты и роли, используемые в развертывании надежных приложений.  
   
-|Объект или роль|Описание|  
+|Объект или роль|Описание:|  
 |--------------------|-----------------|  
 |Администратор|Лицо организации, отвечающее за обновление и обслуживание клиентских компьютеров.|  
 |Диспетчер доверия|Подсистема в среде CLR, ответственная за обеспечение безопасности клиентского приложения.|  

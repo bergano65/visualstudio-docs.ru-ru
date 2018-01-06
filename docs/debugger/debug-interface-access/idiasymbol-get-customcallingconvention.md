@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc169fed9842f5bc5b7dbda3e9e9544197358a7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fca2f1e1311b42ad7d0920c6db8acfa80a63ba7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 Возвращает флаг, указывающий, является ли функция пользовательские соглашения о вызовах.  
@@ -43,7 +44,7 @@ HRESULT get_customCallingConvention(
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  

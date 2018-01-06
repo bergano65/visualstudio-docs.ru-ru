@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0d743c98fd9e311f7f118c152e579178b07513d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5bf80b78545242a625b9c3e212c101712ecbd9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="breakpoint-related-methods"></a>Методы, связанные с точки останова
 Отладчик (DE) должны поддерживать параметр точек останова. Отладка Visual Studio поддерживает следующие типы точек останова:  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  Создание и использование ожидающих точек останова требуется реализация [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) метода, а также следующие методы [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейсов.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Определяет, является ли заданное ожидающих точек останова можно привязать к расположения в коде.|  
 |[BIND](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Привязывает указанный ожидающих точек останова одно или несколько расположений кода.|  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
  Ожидающих точек останова, которые привязаны к коду расположение требует реализации следующих [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Возвращает ожидающая точка останова, которая содержит точку останова.|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Получает состояние связанная точка останова.|  
@@ -64,21 +65,21 @@ ms.lasthandoff: 10/31/2017
   
  Разрешение и запроса информации требует реализации из следующих [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Получает тип точки останова, представленный разрешением.|  
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Возвращает сведения о точках останова разрешение, описывающее точку останова.|  
   
  Устранение ошибок, которые могут возникнуть во время привязки необходимо реализовать следующие [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) методы.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Возвращает ожидающая точка останова, содержащий точку останова по ошибке.|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Возвращает разрешение ошибки точки останова, описывающий ошибки точки останова.|  
   
  Устранение ошибок, которые могут возникнуть во время привязки также требует следующих методов [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Получает тип точки останова.|  
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Возвращает сведения о разрешении точки останова.|  

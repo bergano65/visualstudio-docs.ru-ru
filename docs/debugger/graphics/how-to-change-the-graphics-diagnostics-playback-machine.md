@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35b8eb174ea8e0ca238bafe5a05dfbba54855cda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c2279fa20766180371834e3f3425d8e75e98d430
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Практическое руководство. Изменение машины воспроизведения диагностики графики
 Можно воспроизвести графические данные с помощью локального компьютера или с помощью удаленного компьютера или устройства.  

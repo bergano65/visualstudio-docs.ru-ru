@@ -17,11 +17,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efba273a64018e888738e57941316b307f9b6c47
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-applications"></a>Отладка приложений
 В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.  

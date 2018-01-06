@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03a74bf73f457009a6f17f8e7bdda8e4e7b9e35f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Оценки выражения окна контрольных значений
 > [!IMPORTANT]
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  Это необходимо для EE соответствовать это двухэтапный процесс, несмотря на то, что Visual Studio предполагается позволяет анализировать и оценивать в одном шаге EE при [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вызывается (это принцип работы образца MyCEE, например). Если ваш язык можно сформировать сложные выражения, можно разделить на этапе синтаксического анализа на этапе оценки. Это может повысить производительность в отладчике Visual Studio, если многие контрольных выражений появляются.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Пример реализации вычисления выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
  В образце MyCEE использует для процесса вычисления выражения.  
   

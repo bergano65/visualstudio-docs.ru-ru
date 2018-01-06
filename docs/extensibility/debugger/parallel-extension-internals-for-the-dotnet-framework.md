@@ -13,16 +13,17 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed417d9f63a90d539d104fb209b58703d10ccef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4cc64270cabb3e30ee3c13a1617222349e7b3677
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Внутри параллельной расширения для платформы .NET Framework
 Этот раздел описывает внутренние типы, методы и поля из классов, которые помогают реализовать пользовательские отладчик для параллельных расширений для .NET Framework.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Task-класс](../../extensibility/debugger/task-class-internal-members.md)  
  Описывает внутренние данные-члены <xref:System.Threading.Tasks.Task?displayProperty=fullName> класса.  
   

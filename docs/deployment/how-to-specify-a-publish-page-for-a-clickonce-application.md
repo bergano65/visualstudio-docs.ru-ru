@@ -21,11 +21,12 @@ caps.latest.revision: "18"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: e05718d2a00df76d2c78e16c5b4473ab48d43a39
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 491ef29c955c5ab06b8539ec5089f2ed32feaf36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Практическое руководство. Задание страницы публикации для приложения ClickOnce
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений, веб-страница по умолчанию (publish.htm) создается и публикуется вместе с приложением. Эта страница содержит имя приложения, ссылку для установки приложения и/или необходимых компонентов и ссылку на раздел справки с описанием [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. **Страницы публикации** свойство проекта можно указать имя для веб-страницы для вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  

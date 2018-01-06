@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Расписания&gt; элемент (загрузчик)
 `Schedules` Элемент содержит `Schedule` элементы, которые определяют времена команд, определенных с `Command` элемент должен выполняться.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Name`|Обязательный. Имя элемента расписания. Это соответствует `ScheduleName` свойство `Command` элемента. Когда `Command` ссылается на именованное расписание, он будет выполняться только во времени, указанного в этом `Schedule` элемента. Расписания также могут быть связаны с `FailIf` и `BypassIf` элементы, которые ограничивают эти условия выполнения по определенному расписанию. Дополнительные сведения см. в разделе [ \<команды > элемент](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Обязательно. Имя элемента расписания. Это соответствует `ScheduleName` свойство `Command` элемента. Когда `Command` ссылается на именованное расписание, он будет выполняться только во времени, указанного в этом `Schedule` элемента. Расписания также могут быть связаны с `FailIf` и `BypassIf` элементы, которые ограничивают эти условия выполнения по определенному расписанию. Дополнительные сведения см. в разделе [ \<команды > элемент](../deployment/commands-element-bootstrapper.md).|  
   
  Данный `Schedule` элемент может иметь только один из следующих дочерних элементов.  
   

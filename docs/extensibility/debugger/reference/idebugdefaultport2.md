@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a733ff466a8c0e8ad62e1d633054d0631024b9ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e2a388d25ec828eeedb5c86860ad697848a5cb77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Этот интерфейс предоставляет несколько методов для доступа к средства уведомления и порт сервера.  
@@ -38,7 +39,7 @@ IDebugDefaultPort2 : IDebugPort2
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, определенных в [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Возвращает интерфейс порта уведомление от данного порта.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Возвращает интерфейс, сервер, содержащий этот порт.|  

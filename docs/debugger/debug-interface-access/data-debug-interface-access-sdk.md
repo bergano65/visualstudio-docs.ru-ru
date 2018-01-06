@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea233e8bf26b3bbb9dd7b1e962e3729e172b5a7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f50ae8c40da9c895773330f488e63850013d35b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-debug-interface-access-sdk"></a>Data (SDK для доступа к интерфейсу отладки)
 Все переменные, такие как параметры, локальные переменные, глобальные переменные и члены класса, идентифицируются по `SymTagData` символов. Значения констант (`LocIsConstant`) также определены с этим типом.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для этого типа символа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Если поле, а затем одно из значений [CV_access_e-перечисление](../../debugger/debug-interface-access/cv-access-e.md).|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  

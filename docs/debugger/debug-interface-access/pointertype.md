@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5ee4ed193143a18c31bd454ed35b6056e0a0d2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5ed6e36db5332fdc7d009af1bcf11a6984c81ab5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pointertype"></a>PointerType
 Каждый указатель определяется `SymTagPointerType` символов.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  В следующей таблице показаны дополнительные свойства, допустимые для данного символа типа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE`Если указатель был помечен как константа.|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Размер в байтах указателя.|  

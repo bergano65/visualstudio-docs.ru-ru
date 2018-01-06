@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40bd08ef1cba620332d613fb1e1522982594ef51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3f5f04c65e9e5799c759dd5a77d7158c98b9d46d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
 Представляет динамическое поле [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объекта.  
@@ -31,7 +32,7 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ## <a name="methods"></a>Методы  
  В дополнение к методам на [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) интерфейс, этот интерфейс реализует следующие методы:  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Возвращает тип, заданный тип-примитив.|  
 |[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Возвращает тип, указанному токену.|  

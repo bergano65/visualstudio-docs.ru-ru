@@ -17,11 +17,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e944d73ae45de1a786a6df27652949a38eec81
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f90f5971a101b54aae1cd968d5d5dad67caec74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Добавление контекстного меню в окне инструментов
 В этом пошаговом руководстве помещает контекстное меню в окне инструментов. Контекстное меню — меню, которое открывается при щелчке кнопки, текстовое поле или фона окна. Команды контекстного меню работают так же, как команды на других меню или панели инструментов. Для поддержки контекстное меню, укажите его в vsct-файле и отобразить их в ответ на правой кнопки мыши.  

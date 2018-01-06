@@ -31,11 +31,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdbc4c62b599ac19ff5bf6b6b0eedf862cc1b77d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Просмотр стека вызовов и использование окна стека вызова в отладчике Visual Studio
 
@@ -136,7 +137,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Введите путь к каталогу с символами на компьютере, на котором производится отладка. Для локальной и удаленной отладки это путь на локальном компьютере.
   
-5.  Нажмите кнопку **ОК** закрыть **параметры** диалоговое окно.  
+5.  Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Параметры**.  
   
 ## <a name="see-also"></a>См. также  
  [Смешанный код и отсутствующие данные в окне стека вызовов](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  

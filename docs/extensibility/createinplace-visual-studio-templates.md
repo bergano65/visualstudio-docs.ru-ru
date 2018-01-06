@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce445dec4ca7d09f2fb8822fa9b5632356950042
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 05b4e7640a1d42c2796c7e41afe51dfac3da254a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (шаблоны Visual Studio)
 Указывает, нужно ли создать проект и выполнить замену в указанном расположении или выполнить замену во временном местоположении и сохраните проект в указанном расположении.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
  Этот текст должен быть либо `true`, либо `false`. Если `true`, создается проект и выполняется замена параметров в расположении, указанном в **новый проект** диалоговое окно. Если `false`, выполняется замена параметров во временном местоположении и проект копируется в указанное расположение.  
   
 ## <a name="remarks"></a>Примечания  
- `CreateInPlace` — это необязательный элемент. Значение по умолчанию — `true`.  
+ `CreateInPlace` — это необязательный элемент. Значение по умолчанию — `true`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  

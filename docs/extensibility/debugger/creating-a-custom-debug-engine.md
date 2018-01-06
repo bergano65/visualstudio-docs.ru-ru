@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb5971bf86c6b97d38daaf86f3a093da196020da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edee6528919cfe28c542be850b9a104188ce403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-debug-engine"></a>Создание модулем отладки
 Отладчик (DE) — это компонент, позволяет выполнить отладку конкретного архитектур во время выполнения. Обычно имеется только одна реализация DE в среде выполнения.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  Завершение и отсоединение  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Регистрация пользовательского модуля отладки](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
  Описаны шаги, необходимые для регистрации модуля отладки в Visual Studio, чтобы он может использоваться.  
   

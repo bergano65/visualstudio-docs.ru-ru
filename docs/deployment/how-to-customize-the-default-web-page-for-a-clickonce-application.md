@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fefafa0f9ea04a62d6ae79bd18834e36a1480f29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4927a5909ba4b09e796d52d81cc9821a5a9c4820
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Практическое руководство. Настройка используемой по умолчанию веб-страницы для ClickOnce-приложения
 При публикации приложения ClickOnce на веб-узле, на веб-странице автоматически создается и публикуется вместе с приложением. По умолчанию страница содержит имя приложения и ссылки для установки приложения, установите необходимые компоненты или справку в библиотеке MSDN.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/27/2017
   
 3.  Настройка страницы желаемым образом и сохраните его.  
   
-4.  Необязательно. Для предотвращения перезаписи опубликовать настроенный веб-страницы в Visual Studio, снимите флажок **автоматически создавать веб-страницу развертывания после каждой публикации** в диалоговом окне Параметры публикации.  
+4.  Необязательный. Для предотвращения перезаписи опубликовать настроенный веб-страницы в Visual Studio, снимите флажок **автоматически создавать веб-страницу развертывания после каждой публикации** в диалоговом окне Параметры публикации.  
   
 ## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   

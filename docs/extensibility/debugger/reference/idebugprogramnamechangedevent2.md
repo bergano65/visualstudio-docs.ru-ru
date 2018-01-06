@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90bc1312835797e6863d9b931e13d03ccea1f985
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92cab263f6f19b719ee6452b93b6cb53ba7efd1a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 Отправлено из модуля отладки (DE) для диспетчера сеанса отладки (SDM) при изменении имени программы.  

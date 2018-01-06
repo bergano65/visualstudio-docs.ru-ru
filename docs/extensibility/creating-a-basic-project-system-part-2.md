@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cef54d281555f49806ed59ad1627460a7752954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Создание базового проекта системы, часть 2
 В этой серии первого пошагового руководства [Создание базовой системы проектов, часть 1](../extensibility/creating-a-basic-project-system-part-1.md), показано, как создать базовый проект систему. В этом пошаговом руководстве построена в системе базовый проект шаблона Visual Studio, страницу свойств и другие функции. Перед началом этого первого пошагового руководства необходимо выполнить.  
@@ -282,7 +283,7 @@ ZipProjects:
   
 -   $safeprojectname$ — это имя, предоставленное пользователем в **новый проект** диалоговое окно, изменить, чтобы удалить все небезопасные символы и пробелы.  
   
- Полный список параметров шаблона см. в разделе [параметров шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметр, см. раздел [NIB: Практическое: передачи пользовательских параметров в шаблоны](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметр, см. раздел [NIB: Практическое: передачи пользовательских параметров в шаблоны](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Для замены параметров шаблона проекта  
   

@@ -21,11 +21,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4b7153b0a20c10e7dbdb31ac943f150f72cb39d8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 При использовании Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, службы IIS откажут в передаче этого файла и не будет выполнено развертывание.  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP не поддерживается для установки приложений  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. Только для публикации приложений можно использовать протокол FTP. В следующей таблице приведены эти различия:  
   
-|Тип URL-адреса|Описание|  
+|Тип URL-адреса|Описание:|  
 |--------------|-----------------|  
 |FTP: / /|Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения с помощью этого протокола.|  
 |http://|Можно установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения с помощью этого протокола.|  

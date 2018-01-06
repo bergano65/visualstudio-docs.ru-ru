@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75e0b83b81c0d0d80b29c6b9ab32826402fcec99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Этот интерфейс сообщает прослушивателя (обычно сеанса диспетчер отладочной [SDM] или модуля отладки) создания процесса и программ и удаления на определенный порт. Эти сведения можно использовать для представления в режиме реального времени представление процессов и программы, запущенные на порт.  
@@ -38,7 +39,7 @@ IDebugPortEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugPortEvents2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Отправляет события, которые описывают создание и уничтожение процессов и программ на порт.|  
   

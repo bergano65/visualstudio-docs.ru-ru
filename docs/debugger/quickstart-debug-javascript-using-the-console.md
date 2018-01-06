@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5aed6bc3f7cd8c258eb7f566d6843792f5949b95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Краткое руководство. Отладка JavaScript с помощью консоли
 ![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/11/2017
   
 -   Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md) .  
   
- Содержание раздела  
+ В этом разделе.  
   
 -   [Отладка с использованием окна консоли JavaScript](#InteractiveConsole)  
   

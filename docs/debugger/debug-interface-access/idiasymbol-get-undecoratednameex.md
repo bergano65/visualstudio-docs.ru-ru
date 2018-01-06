@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1dac35a0e01890488e6290759b563d25f7067067
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Извлекает часть или все недекорированного имени для C++ внутреннего имени (связь).  
@@ -51,7 +52,7 @@ HRESULT get_undecoratedNameEx(
 > [!NOTE]
 >  Флаг имена не определены в пакет SDK для, вам нужно добавить объявления в код или использовать необработанные значения.  
   
-|Flag|Значение|Описание|  
+|Flag|Значение|Описание:|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Разрешает полный undecoration.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Удаляет начальные знаки подчеркивания из расширенные ключевые слова корпорации Майкрософт.|  

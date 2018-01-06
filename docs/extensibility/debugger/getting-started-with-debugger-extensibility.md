@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1419f4e45aefed59aa36b249568a53a47ad3c459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Приступая к работе с расширения отладчика
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Содержатся сведения, которые необходимы для создания и настройки компонентов отладчик позволяет отлаживать программы изнутри [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   ATL COM  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Схема для расширения отладчика](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
  Описание процесса реализации отладки в продукт, в зависимости от того, компилятор и результаты ее выполнения.  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd022d8f0a0e38ffbd7402c69f622df74e24bc30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c521592ed6ede141727d2ac9b40c7c350d72053b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Отладка в смешанном режиме поддерживается только при использовании платформы Microsoft .NET Framework 2.0 или 3.0
 Версии платформы Microsoft .NET Framework, предшествующие версии 2.0, не поддерживают отладку в смешанном режиме для 64-разрядных процессов. Это значит, что при выполнении отладки переход из управляемого кода в неуправляемый (как и обратный переход) невозможен.  

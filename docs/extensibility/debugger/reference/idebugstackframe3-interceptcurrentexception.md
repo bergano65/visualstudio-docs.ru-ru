@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9631f2206705ef6daf36b355aa6cb1d5be6458d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9842527f90d9b2df7308f1e80e337de2848d9179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Вызывается в отладчике на текущий кадр стека при ему нужно перехватить текущее исключение.  
@@ -51,7 +52,7 @@ int InterceptCurrentException(
   
  Ниже приведены наиболее распространенные ошибки возвращает.  
   
-|Ошибка|Описание|  
+|Error|Описание:|  
 |-----------|-----------------|  
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Не может быть перехвачено текущее исключение.|  
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Текущий кадр выполнения еще не завершен поиск обработчика еще.|  

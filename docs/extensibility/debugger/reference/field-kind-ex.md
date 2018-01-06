@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 700eae83a53cf9ef88c81d33a07f9a79bd77a4b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 910ad92cbc71fd4fb1b98567ff4629ef563ac476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Перечисляет дополнительных типов полей, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.  
@@ -43,7 +44,7 @@ public enum enum_FIELD_KIND_EX
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  FIELD_KIND_EX_NONE  
  Поле не содержит расширенный тип.  
   

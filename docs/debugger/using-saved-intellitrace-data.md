@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.  
@@ -225,7 +226,7 @@ ms.lasthandoff: 10/31/2017
 |**Столбец**|**Отображает**|  
 |----------------|-------------------|  
 |**ID**|Идентификационный номер потока|  
-|**Имя**|Имя потока. Безымянные потоки отображаются как «\<без имени >».|  
+|**Name**|Имя потока. Безымянные потоки отображаются как «\<без имени >».|  
 |**Время начала**|Время создания потока|  
 |**Время окончания**|Время завершения выполнения потока|  
   

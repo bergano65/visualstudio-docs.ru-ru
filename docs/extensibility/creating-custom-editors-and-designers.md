@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 149870d9c9a0a281cb0bba167496cc4c37d6f83a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-editors-and-designers"></a>Создание пользовательских редакторов и конструкторов
 Среды разработки Visual Studio (IDE) может содержать разные типы редактора:  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
      Может быть внедрен, следует создавать главное окно для внешнего редактора и затем вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> метод и набор <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> значение перечисления `DP_External`. Если редактор не может быть внедрен, интегрированной среды разработки автоматически создает для него отдельное окно.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Пошаговое руководство. Создание специализированного редактора](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Объясняется, как создать пользовательский редактор.  
   

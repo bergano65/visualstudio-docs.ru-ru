@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 35d642256a199c8ee5bf5e67a6a0bfb414b9fccc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publishing-clickonce-applications"></a>Публикация ClickOnce-приложений
 При первой публикации приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установка свойств публикации выполняется с помощью мастера публикации. В мастере доступно только несколько свойств. Для всех остальных свойств устанавливаются значения по умолчанию.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="publish-page"></a>Страница "Публикация"  
  Страница **Публикация** **конструктора проектов** используется для настройки свойств развертывания ClickOnce. В следующей таблице приводится список разделов.  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Практическое руководство. Указание расположения, в которое копируются файлы средой Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Содержит сведения о выборе расположения, в котором Visual Studio размещает файлы приложения и манифесты.|  
 |[Практическое руководство. Указание расположения, из которого будет производиться установка пользователями](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Содержит сведения о выборе расположения для загрузки и установки приложения пользователями.|  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="related-topics"></a>Связанные разделы  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Практическое руководство. Создание ассоциаций файлов для приложения ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Содержит сведения о добавлении поддержки расширения имени файла в приложение ClickOnce.|  
 |[Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Демонстрирует извлечение параметров, передаваемых в URL-адрес, используемый для запуска приложения ClickOnce.|  

@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 48ad25fd215ae9485420b3fbbfa9ac3cd41b8827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b2560275ae08a9a860d62f11e0fb011e5e7a5b31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Практическое руководство. Публикация проекта, имеющего конкретный языковый стандарт
 Приложения нередко содержат компоненты с разными языковыми стандартами. В данном сценарии вы создадите решение, включающее несколько проектов, а затем опубликуете отдельные проекты для каждого языкового стандарта. Эта процедура показывает, как использовать макрос для публикации первого проекта в решении, на примере языкового стандарта "en". Если вы хотите выполнить данную процедуру с другим языковым стандартом, выберите в макросе соответствующее значение `localeString` (например, "de" или "de-DE").  

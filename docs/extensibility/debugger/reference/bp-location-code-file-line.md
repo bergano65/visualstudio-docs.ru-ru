@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3032c914408e94f430506549ab55e04815ba456c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8b2cfaedf63947f97ab912bb2ee657c54641beb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 Содержит данные, расположение точки останова в определенной строке в файле исходного кода.  
@@ -32,7 +33,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 } BP_LOCATION_CODE_FILE_LINE;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `bstrContext`  
  Контекст точки останова, обычно имя метода или функции по результатам в стеке вызова.  
   

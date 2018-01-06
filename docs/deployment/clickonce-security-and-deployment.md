@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>Развертывание и безопасность технологии ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]— это технология развертывания, которая позволяет создавать самообновления приложений Windows, которые могут устанавливаться и работать при минимальном участии пользователя. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]обеспечивает полную поддержку публикации и обновления приложений, развернутых с использованием технологии ClickOnce, если вы разработали проекты в Visual Basic и Visual C#. Сведения о развертывании приложений Visual C++ см. в разделе [развертывания ClickOnce для приложений Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="clickonce-tools"></a>Средства ClickOnce  
  Ниже приведены средства, можно использовать для создания, редактирования, входа и повторной подписи манифестов приложения и развертывания.  
   
-|Средство|Описание|  
+|Средство|Описание:|  
 |----------|-----------------|  
 |[Страница "Безопасность" в конструкторе проектов](../ide/reference/security-page-project-designer.md)|Признаки манифесты приложения и развертывания.|  
 |[Страница публикации в конструкторе проектов](../ide/reference/publish-page-project-designer.md)|Создания и изменения манифестов приложения и развертывания для приложений Visual Basic и Visual C#.|  

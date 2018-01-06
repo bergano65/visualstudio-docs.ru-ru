@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fafc5df1a2aa32fa60c1f41077f7e3fff29ddef7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c94d70f2be28a6a420d683335c99ee0466a52114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;сборка&gt; элемент (приложение ClickOnce)
 Элемент верхнего уровня для манифеста приложения.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`manifestVersion`|Обязательный. `manifestVersion` Атрибуту должно быть присвоено `1.0`.|  
+|`manifestVersion`|Обязательно. `manifestVersion` Атрибуту должно быть присвоено `1.0`.|  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показан `assembly` элемента в манифесте приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  

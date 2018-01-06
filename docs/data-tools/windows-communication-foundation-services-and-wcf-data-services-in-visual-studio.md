@@ -39,11 +39,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе содержатся вводные службы от [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] перспективы. Полную документацию см. в разделе [служб данных WCF 4.5](/dotnet/framework/data/wcf/index).  
@@ -233,9 +234,9 @@ Visual Studio предоставляет средства для работы с
   
 3.  В **Настройка ссылок на службы** снимите флажок **повторно использовать типы в указанных сборках** флажок.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Пошаговое руководство. Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Пошаговая демонстрация создания и использования служб WCF в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Пошаговая демонстрация того, как создавать и использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  

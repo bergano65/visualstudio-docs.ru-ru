@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08d82f867ac2723ff68da615d5dc6977b8038af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fae5211ac270832f07038faafbd6f5bc463d3944
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Выбор стратегии реализации ядра отладки
 Архитектура во время выполнения используется для определения стратегии реализации отладки ядра (DE). Модуль отладки могут быть созданы в процессе в программу, чтобы провести отладку, в работе диспетчера сеанса отладки для Visual Studio (SDM) или out of process для обеих функций. Следующие рекомендации помогут вам выбрать один из этих трех стратегий.  

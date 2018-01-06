@@ -13,18 +13,19 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6ec084c0d985ce5cc3cb0a886bd1fdcaf6cc3e54
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-descriptions"></a>Описания событий
 Каждый тип события имеет свое определенное назначение.  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>События и причины их использования  
   
-|Событие|Описание|  
+|событие|Описание:|  
 |-----------|-----------------|  
 |Активировать события документа|Возникают, когда модуль отладки (DE) хочет IDE, чтобы открыть или выводит документ на передний план.|  
 |Привязать точку останова или точка останова событий ошибок|Посылается, когда привязан точки останова, либо когда не удается выполнить привязку точки останова и возвращается сообщение об ошибке.|  

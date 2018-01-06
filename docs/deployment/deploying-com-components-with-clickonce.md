@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Развертывание компонентов COM с помощью ClickOnce
 Развертывание устаревших компонентов COM традиционно трудной задачей. Компоненты должны быть глобально зарегистрированы и таким образом, может вызвать нежелательные побочные эффекты между перекрывающимися приложениями. Такая ситуация встречается обычно не проблемы в приложениях .NET Framework, так как компоненты, полностью изолированы от приложения или side-by-side совместимы. Visual Studio позволяет развертывать изолированные компоненты COM в Windows XP или более поздней версии операционной системы.  

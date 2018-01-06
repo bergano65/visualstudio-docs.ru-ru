@@ -23,11 +23,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3dc1b7e6eee583494070cc9ebb151181dc805da
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
 "Изменить и продолжить" — это режим [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для отладки, позволяющий изменять код в режиме приостановки. После применения изменений кода можно возобновить выполнение кода с новыми изменениями и увидеть их эффект.  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/11/2017
   
  Подразделы данного раздела предоставляют дополнительные сведения об использовании этого режима и о том, какие виды изменений запрещены.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Применение изменений в режиме приостановки выполнения с помощью режима "Изменить и продолжить"](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Объясняется, как применять изменения кода в режиме приостановки.  
   

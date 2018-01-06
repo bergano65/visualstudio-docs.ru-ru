@@ -15,16 +15,17 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fe030aef4ba755b9a147bcc1430d2e6046c9dbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1d0e6e71dacef98cfaf38581d6638998509ab922
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="search-tools-for-spy-views"></a>Средства поиска для представлений Spy++
 Используйте эти диалоговые окна для определения данных, будет отображаться в окне представления Spy ++:  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Диалоговое окно "Поиск окна"](../debugger/find-window-dialog-box.md)  
  Используется для просмотра свойств или сообщений из указанного окна.  
   

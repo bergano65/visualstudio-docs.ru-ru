@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a191585a251af878c6abef5599a490d7eafe363
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-pixel-history"></a>Журнал пикселей графики
 Окно журнала пикселей графики в анализаторе графики Visual Studio помогает понять влияние на конкретный пиксель событий Direct3D, которые происходят в кадре вашей игры или приложения.  

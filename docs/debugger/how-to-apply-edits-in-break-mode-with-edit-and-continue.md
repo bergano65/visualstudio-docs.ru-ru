@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e925ab0f989a0d817ce7aaa7ca1d15171555f27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Практическое руководство. Применение изменений в режиме приостановки выполнения с помощью режима "Изменить и продолжить"
 Можно использовать "Изменить и продолжить" для изменения кода в режиме приостановки и продолжения затем работы без остановки и перезапуска приложения.  
@@ -42,11 +43,11 @@ ms.lasthandoff: 10/31/2017
   
     -   Установите точку останова в коде, а затем выберите **начать отладку** из **отладки** меню и ожидания приложение попадет на точке останова.  
   
-         -или-  
+         - или -  
   
     -   Начните отладку, а затем выберите **прервать все** из **отладки** меню.  
   
-         -или-  
+         - или -  
   
     -   При возникновении исключения выберите **Разрешить изменение** на**помощник по исключениям**.  
   

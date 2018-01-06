@@ -28,11 +28,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274cd182fa3b9eab23c151a4143c935c24f68fea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
 Эти методы могут пригодиться при отладке программы MFC.  
@@ -144,7 +145,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 -   Если необходимо обеспечить более точное управление функциями диагностики памяти, можно задать значение глобальной переменной MFC [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086), которая позволяет выборочно включать и отключать отдельные функции. Эта переменная может принимать следующие значения, заданные перечисляемым типом **afxMemDF**:  
   
-    |Значение|Описание|  
+    |Значение|Описание:|  
     |-----------|-----------------|  
     |**allocMemDF**|Включает выделение памяти с диагностикой (по умолчанию).|  
     |**delayFreeMemDF**|Задерживает освобождение памяти до выхода из программы при вызове `delete` или `free` . Это позволяет обеспечить выделение максимального объема памяти.|  
