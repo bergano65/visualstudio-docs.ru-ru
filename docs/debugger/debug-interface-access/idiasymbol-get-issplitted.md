@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eee1ad0cb809a6f3afac2b84b3224e162a64da36
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82197c35a0fc20a2c8562e441c4098aacd495776
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 Возвращает флаг, указывающий, является ли символ данных был разбит на статистической обработки или коллекции других символов; Компилятор обрабатывает символы как отдельные сущности, даже если они действительно являются частью больше символов.  
@@ -46,7 +47,7 @@ HRESULT get_isSplitted(
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  

@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Чтение данных XML в объект dataset
 ADO.NET предоставляет простые методы для работы с XML-данных. В этом пошаговом руководстве создается приложение Windows, которое загружает XML-данные в набор данных. Набор данных отображается в <xref:System.Windows.Forms.DataGridView> элемента управления. Наконец в текстовом поле отображается XML-схемы на основе содержимого файла XML.  
@@ -165,13 +166,13 @@ ADO.NET предоставляет простые методы для работ
   
 3.  Задайте следующие свойства:  
   
-    |Control|Свойство|Параметр|  
+    |Элемент управления|Свойство.|Параметр|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**Полосы прокрутки**|**По вертикали**|  
-    |`Button1`|**Имя**|`ReadXmlButton`|  
+    |`Button1`|**Name**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
-    |`Button2`|**Имя**|`ShowSchemaButton`|  
+    |`Button2`|**Name**|`ShowSchemaButton`|  
     ||**Text**|`Show Schema`|  
   
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Создание набора данных, который получает XML-данных  
@@ -238,10 +239,10 @@ ADO.NET предоставляет простые методы для работ
   
      Текстовое поле отображает схему XML для XML-файла.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Этом пошаговом руководстве рассматриваются основные принципы считывания файла XML в набор данных, а также для создания схемы на основе содержимого файла XML. Ниже приведены некоторые задачи, которые могут делать Далее.  
   
--   Изменение данных в наборе данных и сохранение их в виде XML. Для получения дополнительной информации см. <xref:System.Data.DataSet.WriteXml%2A>.  
+-   Изменение данных в наборе данных и сохранение их в виде XML. Дополнительные сведения см. в разделе <xref:System.Data.DataSet.WriteXml%2A>.  
   
 -   Изменение данных в наборе данных и записать его в базу данных. Дополнительные сведения см. в разделе [сохранение данных](../data-tools/saving-data.md).  
   

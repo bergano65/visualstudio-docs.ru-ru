@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a6794fb327e298aa8fa7ea313ff12e1b3ab99fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с использованием наследования с одной таблицей (реляционный конструктор объектов)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживает наследование одиночной таблицы, как именно она обычно осуществляется в реляционных системах. В этом пошаговом руководстве расширяется универсальным шагам, описанным в [как: Настройка наследования с помощью реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) раздела и предоставляет некоторые реальные данные, чтобы продемонстрировать наследование в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
     |Имя столбца|Тип данных|Разрешить значения null|  
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
-    |**Тип**|**int**|**True**|  
+    |**Type**|**int**|**True**|  
     |**FirstName**|**nvarchar(200)**|**False**|  
     |**Фамилия**|**nvarchar(200)**|**False**|  
     |**Диспетчер**|**int**|**True**|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**Тип**|**FirstName**|**Фамилия**|**Диспетчер**|  
+    |**ID**|**Type**|**FirstName**|**Фамилия**|**Диспетчер**|  
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Карлос**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
@@ -193,4 +194,4 @@ ms.lasthandoff: 10/31/2017
  [Пошаговое руководство: Создание классов LINQ to SQL (конструктор O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [Как: назначение хранимых процедур для выполнения обновления, вставки и удаления (конструктор O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [Как: Создание модели объектов в Visual Basic или C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+ [Практическое руководство. Создание модели объектов в Visual Basic или C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

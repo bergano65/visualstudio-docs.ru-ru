@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: aed66709c89c84c6dc4062ca8a4c2c3f38b368ec
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 5c1d86d634579370565f2def7af233b4edffae53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство: Создание службы данных WCF с WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простой [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , размещенном в [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] веб-приложения и последующий доступ к ней из приложения Windows Forms.  
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/07/2017
   
     -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
-         -или-  
+         - или -  
   
     -   Выберите **новое подключение** кнопку, чтобы настроить новое подключение к данным. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).  
   

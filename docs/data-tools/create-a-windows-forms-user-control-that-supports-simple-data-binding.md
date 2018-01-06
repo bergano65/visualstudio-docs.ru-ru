@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 5f8638a915abe222e5676e0f1aed5134ae00a8e4
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: e772e540c2f00fbd19f5b5e1bbe7603be59547c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает простую привязку данных
 При отображении данных на формах в приложениях Windows, можно выбрать существующие элементы управления из **элементов**, или можно создать пользовательские элементы управления, если приложение требует функциональные возможности, недоступные в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.DefaultBindingPropertyAttribute>, могут содержать одно свойство, которое можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.TextBox> или <xref:System.Windows.Forms.CheckBox>.  
@@ -182,7 +183,7 @@ ms.lasthandoff: 11/07/2017
   
 -   Нажмите клавишу F5 для запуска приложения.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания элемента управления, поддерживающего привязку к данным. Некоторые типичные дальнейшие действия.  
   
 -   Помещение пользовательских элементов управления в библиотеку элементов управления, чтобы их можно было повторно использовать в других приложениях.  

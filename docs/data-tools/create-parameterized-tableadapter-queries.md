@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b80f370f670f4dff4b65d7c0e7658f855d5e573
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 65c4ab52ead981d54cf9b0c64c7a3c1c941de5b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Создайте параметризованные запросы адаптера таблицы
 Параметризированный запрос возвращает данные, удовлетворяющие условиям предложения WHERE в запросе. Например, можно параметризировать список клиентов, чтобы отображать только клиентов из определенного города, добавив `WHERE City = @City` в конец инструкции SQL, возвращающей список клиентов.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Создайте новый адаптер таблицы, добавив предложение WHERE с требуемыми параметрами в инструкцию SQL. Дополнительные сведения см. в разделе [создайте и настройте адаптеры таблиц TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
   
-     -или-  
+     - или -  
   
 -   Добавьте запрос в существующий адаптер таблицы, добавив предложение WHERE с требуемыми параметрами в инструкцию SQL.
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Введите имя в **имя нового запроса** поле при создании нового запроса.  
   
-     -или-  
+     - или -  
   
      Выделите запрос в **имя существующего запроса** поле.  
   

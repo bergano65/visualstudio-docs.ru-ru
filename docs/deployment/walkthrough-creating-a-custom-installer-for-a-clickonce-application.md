@@ -22,11 +22,12 @@ caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 3b6a7069b520c1c4834ee3ca1a5824660803a665
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 06c048db48173913a2e1102d1e70f07369316439
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce
 Любое приложение ClickOnce на основе файла .exe можно автоматически устанавливается и обновляется с помощью настраиваемого установщика. Пользовательский установщик может реализовать особый пользовательский интерфейс во время установки, включая пользовательские диалоговые окна для обслуживания и обеспечения безопасности. Для выполнения операции по установке, использует пользовательский установщик <xref:System.Deployment.Application.InPlaceHostingManager> класса. В этом пошаговом руководстве показано, как создать пользовательский установщик, который автоматически устанавливает приложение ClickOnce.  
@@ -75,8 +76,8 @@ ms.lasthandoff: 10/27/2017
     MessageBox.Show("Installer object created.");  
     ```  
   
-## <a name="next-steps"></a>Дальнейшие действия  
- Приложения ClickOnce, также можно добавить настраиваемую логику обновления, включая пользовательский интерфейс для отображения во время процесса обновления. Для получения дополнительной информации см. <xref:System.Deployment.Application.UpdateCheckInfo>. ClickOnce-приложения также можно подавлять стандартной записи меню "Пуск", ярлык и добавление или удаление программ с помощью `<customUX>` элемента. Дополнительные сведения см. в разделе [ \<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) и <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
+## <a name="next-steps"></a>Следующие шаги  
+ Приложения ClickOnce, также можно добавить настраиваемую логику обновления, включая пользовательский интерфейс для отображения во время процесса обновления. Дополнительные сведения см. в разделе <xref:System.Deployment.Application.UpdateCheckInfo>. ClickOnce-приложения также можно подавлять стандартной записи меню "Пуск", ярлык и добавление или удаление программ с помощью `<customUX>` элемента. Дополнительные сведения см. в разделе [ \<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) и <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
   
 ## <a name="see-also"></a>См. также  
  [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)   

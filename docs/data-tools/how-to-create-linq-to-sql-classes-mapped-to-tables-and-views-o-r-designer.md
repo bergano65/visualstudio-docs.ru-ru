@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 318acd282090dd17fcfd7fd12e7370e906c67806
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Как: создать LINQ to SQL classes сопоставлены с таблицами и представлениями (O/R-конструктор)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]классы, которые сопоставляются таблицам БД или представлениям, называются *классы сущностей*. Класс сущностей сопоставляется с записью, тогда как отдельные свойства класса сущности сопоставляются отдельные столбцы, составляющие запись. Создание классов сущностей, основанных на таблицах базы данных или представления путем перетаскивания таблиц или представлений из **обозревателя серверов**/**обозреватель баз данных** на [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Создает классы и применяет специфические [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] атрибуты для их [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] функциональные возможности (передачи данных и редактирования возможности <xref:System.Data.Linq.DataContext>). Дополнительные сведения о [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы, в разделе [LINQ to SQL модель объектов](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  

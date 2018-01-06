@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8b602d83eee4be49f63eef0ee8d2cd3d77f5040
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: в операциях не должно быть переполнений
 |||  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="example-of-a-violation"></a>Пример нарушения  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере метод управляет целым числом, нарушающий это правило. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]требуется **удалить** целое число со знаком переполнения возможность отключена для этой срабатывание.  
   
 ### <a name="code"></a>Код  
@@ -85,7 +86,7 @@ End Sub
   
 ## <a name="fix-with-input-parameter-validation"></a>Исправить путем проверки входного параметра  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере предыдущее нарушение устраняется путем проверки входного значения.  
   
 ### <a name="code"></a>Код  
@@ -94,7 +95,7 @@ End Sub
   
 ## <a name="fix-with-a-checked-block"></a>Исправить с помощью проверенного блока  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере предыдущее нарушение устраняется путем заключения операции в проверенный блок. Если операция вызывает переполнение, <xref:System.OverflowException?displayProperty=fullName> будет создано.  
   
  Обратите внимание, что проверенные блоки не поддерживаются в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
@@ -109,7 +110,7 @@ End Sub
   
 1.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и выберите **свойства**.  
   
-2.  Выберите **построения** и нажмите кнопку **Дополнительно**.  
+2.  Перейдите на вкладку **Сборка** и нажмите кнопку **Дополнительно**.  
   
 3.  Выберите **Проверять арифметические переполнения и потери точности** и нажмите кнопку **ОК**.  
   

@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Создание простых данных приложения с помощью WPF и Entity Framework 6
 Этот walkthough показано, как создать приложение основные» форм на основе данных» в Visual Studio с SQL Server LocalDB, базы данных Northwind, Entity Framework 6 и Windows Presentation Foundation. Показано, как выполнять основные привязки данных с представлением основной подробности, а также имеет пользовательские «привязка навигатор» с кнопками «Переместить следующий», «Переместить предыдущий, ««Переместить в начало,» «переместить в конец,» «Обновить» и «Delete».  

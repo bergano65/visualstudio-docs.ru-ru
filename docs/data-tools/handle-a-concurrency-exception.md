@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9162274d234c22e8bbe299389d2b41f57a69d714
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллельности
 Исключения параллелизма (<xref:System.Data.DBConcurrencyException>) возникают при попытке двух пользователей изменить те же данные в базе данных в то же время. В этом пошаговом руководстве, создание приложения Windows, которое показывает, как перехватить <xref:System.Data.DBConcurrencyException>, найдите строку, которая вызвала ошибку и Узнайте стратегии для их обработки.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 
-    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса... **.  
+    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса...** .  
 
        Откроется окно редактора запросов.  
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/07/2017
   
 #### <a name="to-create-a-new-windows-forms-application-project"></a>Создание проекта приложения Windows Forms  
   
-1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта... **.  
+1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .  
   
 2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.  
 

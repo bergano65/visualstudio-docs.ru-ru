@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ead1571856fa04e10103fbf2274dc0e22295154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6e3110ca4988fcc12e547f3bcd82c1026f3aeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Справочник по API (отладки Visual Studio)
 Этот раздел включает концептуальный обзор API, руководство, которое показывает их синтаксис и использование для всех элементов API и целый ряд примеров кода. Все ссылки, перечислены в алфавитном порядке по категориям.  
   
  В следующей таблице показаны распространенные `HRESULT` значения, возвращаемые методами.  
   
-|Имя|Описание|Значение|  
+|name|Описание:|Значение|  
 |----------|-----------------|-----------|  
 |S_OK|Выполнено.|0x00000000|  
 |E_UNEXPECTED|Непредвиденная ошибка.|0x8000FFFF|  

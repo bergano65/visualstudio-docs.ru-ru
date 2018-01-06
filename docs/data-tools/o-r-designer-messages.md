@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 0c3e399e7c1885f8c288bc05c49ac0a020fc7470
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="or-designer-messages"></a>Сообщения реляционного конструктора объектов
 В этом разделе перечисляются сообщения, с которыми можно столкнуться при работе с реляционным конструктором объектов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Не удалось создать ассоциацию \<имя ассоциации > — свойство перечислено дважды](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
  [Не удалось создать ассоциацию \<имя ассоциации > — типы свойств не совпадают](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  

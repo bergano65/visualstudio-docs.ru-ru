@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68524053107052094d53b21cac93fbbc053881dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 498b3b3eced8e21cb2079715a0bd6c2375eb8dfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные правила определения правильности" для управляемого кода
 Набор правил расширенные правила определения правильности Майкрософт развертывает ошибки использования логики и платформы, о которых сообщает анализа кода. Лишние акцент делается на определенных сценариях, таких как COM-взаимодействие и мобильные приложения. Рекомендуется включить это правило, если один из этих сценариев применяется к вашему проекту или для поиска дополнительных ошибок в проекте.  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/31/2017
   
  В следующей таблице описаны все правила в наборе правил расширенные правила определения правильности Майкрософт.  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть высвобождаемыми|  
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявите обработчики событий|  

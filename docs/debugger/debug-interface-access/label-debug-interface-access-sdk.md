@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4afc3f990a06864157bf121f9c43ea2f8d5ea2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 090ed3ca526a2fb7d36a2b6c81d2563ba254dc07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="label-debug-interface-access-sdk"></a>Label (SDK для доступа к интерфейсу отладки)
 Расположение в программном коде определяется `SymTagLabel` символов.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для этого типа символа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Раздел часть расположение; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  

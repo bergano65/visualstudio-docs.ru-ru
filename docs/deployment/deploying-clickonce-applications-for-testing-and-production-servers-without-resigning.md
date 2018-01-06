@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 91261e0bb70092861f216333bd73a11dc07790ba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания
 В этом разделе описывается новая функция представлена в .NET Framework версии 3.5, которая обеспечивает возможность развертывания приложений ClickOnce из нескольких сетевых расположений без повторного подписывания ClickOnce или манифесты ClickOnce.  

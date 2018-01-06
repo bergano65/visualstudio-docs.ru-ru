@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b5e9e0a3ca0a994547679ba71e545b4235b6c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Практическое руководство. Создание настраиваемого набора правил
 В [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)], и [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], можно создавать и изменять пользовательский *набор правил* в соответствии с потребностями конкретного проекта, связанные с анализом кода. Создание пользовательского правила набора, можно открыть один или несколько стандартных наборов правил в редакторе набора правил. Можно добавлять или удалять определенные правила, и можно изменить действие, выполняемое при анализе кода устанавливается нарушение правила.  

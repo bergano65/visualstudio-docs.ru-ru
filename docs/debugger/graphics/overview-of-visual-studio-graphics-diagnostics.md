@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f713a1ced59ea1ed0eaf01a3d9630aa96e4c6bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Обзор диагностики графики Visual Studio
 Visual Studio *диагностики графики* — это набор инструментов для регистрации и последующего анализа проблем с производительностью и отрисовкой в приложениях Direct3D. Диагностику графики можно использовать для приложений, которые выполняются локально на компьютере под управлением Windows, в эмуляторе устройства Windows либо на удаленном компьютере или устройстве.  

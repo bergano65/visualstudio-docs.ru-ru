@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 38d50f1e3da0004869ae66df8e486affa1b68c2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Фиксация внутрипроцессных для элементов управления с привязкой к данным до сохранения данных
 При изменении значения в элементах управления с привязкой к данным, пользователь должен перейти с текущей записи для фиксации обновленного значения в источнике данных, к которому привязан элемент управления. При перетаскивании элементов из [окно "Источники данных"](add-new-data-sources.md) на форму, первый элемент, перетаскиваемая приводит к возникновению ошибки кода в **Сохранить** нажатия кнопки <xref:System.Windows.Forms.BindingNavigator>. Этот код вызывает <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод <xref:System.Windows.Forms.BindingSource>. Таким образом, вызов <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод создается только для первого <xref:System.Windows.Forms.BindingSource> , добавленного в форму.  

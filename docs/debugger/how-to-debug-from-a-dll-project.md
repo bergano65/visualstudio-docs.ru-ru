@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 371c48282b2f775833287046ed9810f0cbc8f69e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Как: отладку из проекта DLL в Visual Studio
 Для отладки DLL проекта можно задать вызывающее приложение в свойствах проекта из проекта DLL и затем запустите отладку из проекта DLL, сам. Для работы этого метода, приложение должно вызвать DLL и библиотеки DLL должны находиться в расположении, где приложение ожидает ее найти (в противном случае приложение может найти другую версию библиотеки DLL и вместо этого загрузить, и он не будет воспользоваться точками останова). Другие методы отладки библиотеки DLL см. в разделе [отладки проектов DLL](../debugger/debugging-dll-projects.md).

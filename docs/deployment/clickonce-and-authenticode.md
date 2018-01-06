@@ -22,11 +22,12 @@ caps.latest.revision: "18"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7fb428cf2bffd5ae10bb9e3cce95ba4021007ef1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aa1ab7ac947a5fbdf9d0423c57a987a4ffe8be97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce и технология Authenticode
 *Authenticode* — это технология Майкрософт, которая использует шифрование по отраслевому стандарту для подписания кода приложения цифровыми сертификатами, которые удостоверяют подлинность издателя приложения. Используя Authenticode для развертывания приложения, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] снижает риск заражения программой-трояном. Программа-троян — это вирус или другая вредоносная программа, которые злоумышленник представляет как легальную программу, исходящую из авторитетного и заслуживающего доверия источника. Подписание развертываний [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с помощью цифрового сертификата — это необязательный шаг, позволяющий убедиться, что сборки и файлы не были изменены.  

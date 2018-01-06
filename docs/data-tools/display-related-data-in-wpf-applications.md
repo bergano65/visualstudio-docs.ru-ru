@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: acd88eb0d4a485f01f9ced8cc1d2b2cebd182a71
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: data-storage
+ms.openlocfilehash: 5313269a4575cb41ebe6e8b9cedb5ca02d49b493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Отображение связанных данных в приложениях WPF
 В некоторых приложениях может потребоваться работать с данными из нескольких таблиц или сущностей, связанных друг с другом в иерархические связи. Например, может потребоваться отобразить сетку, в которой отображаются клиентов из `Customers` таблицы. Когда пользователь выбирает конкретного клиента, другой сетке отображаются заказы этого клиента из связанной `Orders` таблицы.

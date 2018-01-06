@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fafd9e813c22b899603a2e62c5a2c90ece1a709
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f34e840dc6389b721610251c592480afbdda5f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Получает тип контрольной суммы.  
@@ -41,7 +42,7 @@ HRESULT get_checksumType (
 ## <a name="remarks"></a>Примечания  
  Тип контрольной суммы является значение, которое может быть сопоставлен алгоритма подсчета контрольной суммы. Например стандартный формат файла PDB можно иметь одно из следующих значений:  
   
-|Тип контрольной суммы|Метка CryptoAPI|Описание|  
+|Тип контрольной суммы|Метка CryptoAPI|Описание:|  
 |-------------------|---------------------|-----------------|  
 |0|\<None >|Контрольная сумма отсутствует присутствует.|  
 |1|`CALG_MD5`|контрольная сумма, созданные с помощью алгоритма хэширования MD5.|  

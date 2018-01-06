@@ -77,11 +77,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947da9ccdbf67a71edfaa122de8861912a9e9596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc7b945a8c53d290f573eac4565f2240ec7a2d7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-heap-details"></a>Сведения о куче отладки CRT
 В этом разделе представлен подробный обзор отладочной кучи CRT.  
@@ -193,7 +194,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **_CrtDbgFlag** флаг содержит следующие битовые поля:  
   
-|Битовое поле|По умолчанию<br /><br /> value|Описание|  
+|Битовое поле|По умолчанию<br /><br /> value|Описание:|  
 |---------------|-----------------------|-----------------|  
 |**_CRTDBG_ALLOC_MEM_DF**|включить|Включает отладочное выделение. Если этот бит отключен, выделения остаются скрепленными вместе, но типы их блоков — **_IGNORE_BLOCK**.|  
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Off|Препятствует действительному освобождению памяти, как при эмуляции условий нехватки памяти. Если этот бит включен, освобожденные блоки хранятся в связанном списке отладочной кучи, но помечаются как **_FREE_BLOCK** и заполняются значением байтов.|  
@@ -303,7 +304,7 @@ typedef struct _CrtMemState
   
  Эти функции отчитываются о состоянии и содержимом кучи, использование этих сведений помогает обнаружить утечки памяти и решить другие подобные проблемы.  
   
-|Функция|Описание|  
+|Функция|Описание:|  
 |--------------|-----------------|  
 |[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Сохраняет снимок кучи в **_CrtMemState** структуры, предоставляемой приложением.|  
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|Сравнивает две структуры состояния памяти, сохраняет в третьей структуре различие между ними и возвращает значение TRUE при нахождении различий.|  

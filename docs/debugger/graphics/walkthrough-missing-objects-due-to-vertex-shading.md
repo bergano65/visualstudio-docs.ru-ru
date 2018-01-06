@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38873bfc295fc67c1fcf7ddfbdcadb1dabb409f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Пошаговое руководство. Отсутствие объектов вследствие заливки вершин
 В данном пошаговом руководстве показано, как с помощью средств диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исследовать объект, который отсутствует из-за ошибки, возникшей на этапе шейдера вершин.  

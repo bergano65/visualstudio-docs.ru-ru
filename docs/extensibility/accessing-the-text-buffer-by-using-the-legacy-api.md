@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facfc1670bf9d04035beffc47b7124bd5d309a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Доступ к буфер текста с помощью API прежних версий
 Текст отвечает за управление текстовыми потоками и сохранения файла. Несмотря на то, что буфер могли читать или записывать другие форматы, весь обычный обмен данными с помощью буфера выполняется с использованием кодировки Юникод. В прежних версий API-интерфейсы буфер текста можно использовать одно - или двумерной системе координат для обозначения расположений символа в буфере.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  Текст буфера второй ответственности — файл сохраняемости. Чтобы сделать это, реализующий объект текстового буфера <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> и выступает в качестве компонента объекта данных документа для элементов проекта и другие компоненты среды, участвующие в сохраняемости. Дополнительные сведения см. в разделе [открытия и сохранения элементов проекта](../extensibility/internals/opening-and-saving-project-items.md).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Изменение параметров представления с помощью API прежних версий](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
  Объясняется, как изменить параметры представления с помощью предыдущих версий API.  
   

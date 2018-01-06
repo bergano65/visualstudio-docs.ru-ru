@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de3a7bfaccec45dc6b7fce1def45a6e6de8e75f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899f9026b2e7c86ad1bd9f722dc7e1904cab2b9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Практическое руководство. Синхронизация наборов правил проекта кода с политикой возврата командного проекта
 Синхронизировать параметры анализа кода для проектов кода политики возврата для командного проекта, указав набор правил, который содержит по крайней мере правила, заданные в набор правил для политики возврата. Руководитель группы разработчиков можно принять имя и расположение набора правил для политики возврата. Чтобы обеспечить использование правильного набора правил анализа кода для проекта можно использовать один из следующих вариантов:  

@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 9f2373e3a851899d139360caf0f6bb8b6ab0efa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Как: сохранение данных с помощью транзакции
 Сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. Используйте <xref:System.Transactions.TransactionScope> участие в транзакции, которая автоматически управляемой объекта.  
@@ -54,4 +55,4 @@ ms.lasthandoff: 11/09/2017
   
 ## <a name="see-also"></a>См. также
 [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)  
-[Пошаговое руководство: Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)  
+[Пошаговое руководство. Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)  

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Средства LINQ to SQL в Visual Studio
 LINQ to SQL была первой технологии объектно реляционного сопоставления, выпускаемых корпорацией Майкрософт. Он хорошо работает в основных сценариях и продолжает поддерживаться в Visual Studio, но он больше не находится в активной разработке. Использование LINQ SQL при обслуживании с устаревшим приложением, оно уже используется, или в простых приложений, использующих SQL Server и не требуют сопоставление нескольких таблиц. Как правило новые приложения должны использовать Entity Framework, при необходимости к слою объектно реляционного сопоставления.  

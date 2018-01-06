@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30bfe092ed8454b14a7e26d77b375c75cabc0836
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f276239d76f02b9db68f7acacc52e693056f061
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 Извлекает интерфейс дополнительный номер версии.  
@@ -48,7 +49,7 @@ HRESULT get_frontEndMinor (
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание|  
+|Требование|Описание:|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для v7.0|  

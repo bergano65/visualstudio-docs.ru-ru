@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 29b24794c74f2bd042845384d72a3716506d5e2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Отключения ограничений при заполнении набора данных
 Если набор данных содержит ограничения (например, ограничения foreign key), они могут вызывать ошибки, связанные с порядком операций, выполняемых над набором данных. Например загрузка дочерних записей перед загрузкой связанных родительских записей может вызвать ошибку и нарушают ограничение. Сразу после загрузки дочерней записи ограничение проверяет связанной родительской записи и вызывает ошибку.  

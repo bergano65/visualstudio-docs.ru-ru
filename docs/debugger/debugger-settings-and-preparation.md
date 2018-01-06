@@ -21,18 +21,19 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b260610f32f7ece52870e6f6e90d5b0986b61d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c04bcc2688e3bc8aaa9e7fbcf3950d609c2eed7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
   
  Дополнительные сведения см. в разделе [Настройка конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Параметры проекта отладчика](../debugger/debugger-project-settings.md)  
  Объясняется, как задать параметры отладчика, как настроить отладку и выпуск конфигураций, и как управлять символами и исходным кодом. Кроме того, описываются параметры соответствующих проектов для конфигураций отладки C++, C#, F# и Visual Basic, а также веб-проектов.  
   

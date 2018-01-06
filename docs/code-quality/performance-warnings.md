@@ -18,18 +18,19 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2644275459343f0b30023439002d2fa83bb97c8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: baf04adf4589f0809db6a2de2bedcc0efd0f6fcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-warnings"></a>предупреждения производительности
 Предупреждения производительности поддерживают высокой производительности библиотек и приложений.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA1800: не выполняйте лишних приведений](../code-quality/ca1800-do-not-cast-unnecessarily.md)|Повторяющиеся приведения снижают производительность, особенно если приведения выполняются в компактных операторах итераций.|  
 |[CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)|Сигнатура метода включает параметр, не использующийся в основной части метода.|  

@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 47fad923b0e31d650d18426bf5f9a7da7bca3e38
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Создание базы данных и добавления таблицы в Visual Studio
 Visual Studio можно использовать для создания и обновления файла локальной базы данных в SQL Server Express LocalDB. Также можно создать базу данных, выполнив инструкции Transact-SQL в **обозреватель объектов SQL Server** окна инструментов в Visual Studio. В этом разделе мы будем создайте MDF-файл и добавьте таблицами и ключами с помощью конструктора таблиц.

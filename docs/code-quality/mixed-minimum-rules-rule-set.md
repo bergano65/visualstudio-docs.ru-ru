@@ -12,16 +12,17 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e5b0ddc7a8f521101e09f41b5036b4233a8bcdc6
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 430984d0f34c7596e78408d4138cd7506fdc7ba3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для смешанного кода"
 Минимальные правила Microsoft для смешанных сосредоточиться на наиболее важными проблемами в проектах C++, поддерживающие CLR, включая возможные уязвимости безопасности и сбои приложения. Следует включать этот набор правил в любой настраиваемый набор правил, создаваемые для проектов C++, поддерживающие среду.  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|  
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|  

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения об окнах отладчика в Visual Studio
 В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. При попадании в точку останова и выполнение останавливается, нажмите кнопку **Отладка > Windows**.  

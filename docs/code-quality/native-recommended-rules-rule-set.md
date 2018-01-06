@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07704e589ae56b04dc28ceb465afad7812a29111
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: f7728a293c1d93ab95a73d829bcdb37f5c09cc59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для машинного кода"
 Правила рекомендуется машинного кода связаны с наиболее распространенными и важными проблемами в машинном коде, включая возможные уязвимости безопасности и сбои приложения.  Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.  Этот набор правил предназначен для работы с Visual Studio Professional edition и более поздних версий.  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|  
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|  

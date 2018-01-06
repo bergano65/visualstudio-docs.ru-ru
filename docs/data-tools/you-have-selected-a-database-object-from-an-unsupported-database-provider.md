@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 05e638be5cc11f66052e5a1f6116e7205b824106
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 85a8e5883a8d78297336016ac295f9b5d76ce337
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Выбран объект базы данных из неподдерживаемого поставщика базы данных
 Реляционный конструктор объектов поддерживает только поставщик данных .NET Framework для SQL Server (<xref:System.Data.SqlClient>). Несмотря на то, что можно щелкнуть **ОК** и продолжить работу с объектами из неподдерживаемых поставщиков базы данных, можно испытать неожиданное поведение во время выполнения.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/09/2017
 
    Вы можете продолжить построение классов сущностей, сопоставляемым подключению, которое использует неподдерживаемых поставщиков базы данных. Можно испытать неожиданное поведение, когда используете неподдерживаемых поставщиков базы данных.  
   
-     -или-  
+     - или -  
   
 - Нажмите кнопку **отменить**.
 

@@ -12,16 +12,17 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac5ec4db1fe36d7e92c4f9062f8d0c28bae2263e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 4bfbf600850119078d91a988eb1e621cec9346e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Управляемый минимальные правила набора правил для управляемого кода
 Минимальные правила управляемых сосредоточиться на наиболее важные проблемы в коде, включая возможные уязвимости безопасности, сбои приложения и другие важные ошибки логики и проектирования. Следует включать этот набор правил в любой настраиваемый набор правил, создаваемые для проектов.  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть высвобождаемыми|  
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Удаляйте пустые методы завершения|  

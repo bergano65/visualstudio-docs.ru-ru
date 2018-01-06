@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec2b7a18dac9616db1743a50539c2860caca2e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1137c8c5c6041b41e8cbdc0e13d43b6188bd1b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-components"></a>Компоненты отладчика
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отладчик реализуется как VSPackage и управление сеансом отладки целиком. Сеанс отладки состоит из следующих элементов:  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  ![Общие сведения о компонентах отладки](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Пакет отладки](../../extensibility/debugger/debug-package.md)  
  Обсуждение отладки пакета, который выполняется в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] оболочки и обрабатывает все пользовательского интерфейса.  
   

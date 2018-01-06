@@ -22,16 +22,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4cab890c97599b8b925004b735e7f980f5ba2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52f1847112741e90634ce0e68acbcfdd11b837db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debugging-techniques"></a>Методы отладки CRT
 Эти методы могут пригодиться при отладке программы с использованием библиотеки времени выполнения языка С (CRT).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Работа с библиотекой отладки CRT](../debugger/crt-debug-library-use.md)  
  Поддержка отладки для библиотеки CRT и инструкции по применению ее средств.  
   

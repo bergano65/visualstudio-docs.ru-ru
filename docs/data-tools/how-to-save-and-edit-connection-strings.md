@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4a7482c269cd978d2c1848c896985b1194797e42
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: bb3ddcf8a4d1ac14b356bfabac2378ff345ef65b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Практическое руководство. Сохранение и изменение строк подключения
 Строки подключения в приложениях Visual Studio можно сохранить в файле конфигурации приложения (также называется параметрами приложения) или жестко непосредственно в приложении. Сохранение строк подключения в файле конфигурации приложения упрощает процесс обслуживания приложения. Если строку подключения необходимо изменить, вы можете обновить ее в файле параметров приложения (сравните это с ее изменением в исходном коде и повторной компиляцией приложения).

@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
-ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
+ms.workload: data-storage
+ms.openlocfilehash: 44139e06a09fc2883c7a42202129bfd3c82343d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктора наборов данных
 
@@ -118,7 +119,7 @@ ms.lasthandoff: 12/14/2017
   
      **Order Details** таблицы данных **OrderDetailsTableAdapter**и связь между данными **заказов** и **OrderDetails** таблиц добавляются в набор данных.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
   
 ### <a name="to-add-functionality-to-your-application"></a>Добавление функциональности в приложение  
   

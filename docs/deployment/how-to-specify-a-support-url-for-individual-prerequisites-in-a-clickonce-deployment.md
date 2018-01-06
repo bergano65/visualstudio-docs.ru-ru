@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2335c0279c8e7a23e1b514a8264651e73fedebfc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a73d6cd0996f3f0e91b5a5381ee1b8ccd58a2a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса поддержки для определенных необходимых компонентов в развертывании ClickOnce
 Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания можно проверить число необходимых компонентов, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для запуска приложения. К ним относятся требуемая Минимальная версия [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], версии операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], однако не может выполнить любые из этих предварительных условий самостоятельно. Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющий, почему произошел сбой установки.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/27/2017
       </dependency>  
     ```  
   
-5.  Необязательно. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (.application-файл) для вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.  
+5.  Необязательный. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (.application-файл) для вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.  
   
 6.  Необходимый компонент .NET Framework 4, добавьте `supportUrl` атрибут `compatibleFrameworks` элемента:  
   

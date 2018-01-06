@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e02e99eb621a5f7884e9848f0065fa0220be92
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 89488533ab8ba36b0344faa7f0b800d8c4ecc6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capturing-graphics-information"></a>Захват графической информации
 Захватывайте информацию графики из приложений DirectX, чтобы можно было использовать анализатор графики Visual Studio для диагностики проблем отрисовки и проблем производительности.  

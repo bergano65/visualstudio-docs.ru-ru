@@ -12,11 +12,12 @@ ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9312ad8a96c5829aae21c87e78a0d5f2f0db1b35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d349222b138a8d5c359d174849faf7641befc482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-frame-validation"></a>Проверка кадров графики
 <!-- VERSIONLESS -->
@@ -32,7 +33,7 @@ Visual Studio 2017 г. и расширенную поддержку **прове
 Серьезность | Повреждение, ошибка, предупреждение, сведения или сообщения.
 Категория | Приложения определено, прочие, инициализации, очистки, компиляции, состояния создания, параметр состояния, получение состояния, выполнения, обработки ресурсов, шейдера избыточностью и неиспользуемые.
 Сообщение | Сообщение, связанное с событием.
-Событие | Событие, связанное с ошибкой или предупреждением.
+событие | Событие, связанное с ошибкой или предупреждением.
 
 ## <a name="see-also"></a>См. также  
 [Диагностика графики (Отладка графики DirectX)](visual-studio-graphics-diagnostics.md)   

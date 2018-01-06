@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfbb1e05dadb18e9357e38d6ed660c248dccec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc892cbdf49ab883c2bd45f4ef13ddda21b23d83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Сведения компилируемого объекта разбивается между символами с `SymTagCompiland` тег (низкий подробности) и `SymTagCompilandDetails` тег (высокий уровень детализации). `SymTagCompilandDetails`требуется загрузка дополнительных символов. Тем не менее, он предоставляет широкий набор сведений о компилируемого объекта, который недоступен с `SymTagCompiland` символов.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для этого типа символа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|`DWORD`|Номер построения серверной части компилятора.|  
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Тыловой основной номер версии компилятора.|  

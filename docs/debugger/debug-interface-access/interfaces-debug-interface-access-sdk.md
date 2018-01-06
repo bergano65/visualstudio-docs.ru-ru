@@ -16,16 +16,17 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 044c6ce1dafbd5ce753d9e3a98d41ed1963a77ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e128aa0a4cbb30106981b152252ff308e21669b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Интерфейсы (SDK для доступа к интерфейсу отладки)
 Методы перечислены в алфавитном порядке в списке каждого интерфейса в таблице содержимого и на странице интерфейса в порядке таблицы Vtable.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)  
  Предоставляет управление как пакет SDK для рассчитывает виртуального и относительные виртуальные адреса для отладки объектов.  
   

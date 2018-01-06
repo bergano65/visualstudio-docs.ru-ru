@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d37843917be3a2668e9a2887f046eaee00600dc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Начало работы (SDK для доступа к интерфейсу отладки)
 Отладка Interface Access (DIA) пакет SDK предоставляет документацию инструкции и образец, в котором показано, как использовать API-Интерфейс доступа к интерфейсу отладки. Используйте интерфейсы и методы в пакете SDK для доступа к интерфейсу отладки при разработке пользовательских приложений, откройте файлы PDB-файл и .dbg и искать их содержимое для символов, значения, атрибуты, адреса и другие отладочную информацию. Этот пакет SDK также предоставляет ссылочные таблицы для свойства, связанные с использованием символов, содержащихся в приложениях C++.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  IDL: idl\dia2.idl  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Обзор набора средств Visual Studio для Unity](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
  Просматривает основная архитектура доступа  
   

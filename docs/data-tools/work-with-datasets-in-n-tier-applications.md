@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 1bb1b91894fc562b7080a8225b69b3703948a604
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n уровневых приложениях
 *Многоуровневые приложения* , ориентированных на данные приложений, разделенные на несколько логических слоев (или *уровни*). Другими словами, n-уровневое приложение — это приложение, которое разделено на несколько проектов, при этом уровень доступа к данным, уровень бизнес-логики и уровень представления находятся каждый в своем отдельном проекте. Дополнительные сведения см. в разделе [Общие сведения о приложениях данных N-уровневые](../data-tools/n-tier-data-applications-overview.md).  

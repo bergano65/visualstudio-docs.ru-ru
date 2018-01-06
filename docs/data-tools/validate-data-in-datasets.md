@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>Проверка данных в наборах данных
 Проверка данных представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме набора данных. Также процесс проверки подтверждает, что эти значения можно выполнять следующие правила, которые были установлены для вашего приложения. Это хороший способ проверить данные перед отправкой обновлений в основную базу данных. Это сокращает ошибки, а также потенциальное количество циклов приема-передачи между приложением и базы данных.  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/09/2017
   
 ## <a name="data-update-events"></a>События обновления данных  
   
-|Событие|Описание|  
+|событие|Описание:|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.ColumnChanging>|Изменяется значение в столбце. Событие передает строк и столбцов, а также предложенное новое значение.|  
 |<xref:System.Data.DataTable.ColumnChanged>|Было изменено значение в столбце. Событие передает строк и столбцов, а также предложенное значение.|  

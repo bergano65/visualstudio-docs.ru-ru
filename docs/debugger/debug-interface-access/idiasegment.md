@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12bc8e73457c1afc4b1799549ad43974d5771252
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0464b871cda03b507d0127f5deeb97b94167b21a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Сопоставляет данные из номер раздела в сегменты адресного пространства.  
@@ -32,7 +33,7 @@ IDiaSegment : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaSegment`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Извлекает номер сегмента.|  
 |[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Получает смещение в сегменты, где начинается раздел.|  

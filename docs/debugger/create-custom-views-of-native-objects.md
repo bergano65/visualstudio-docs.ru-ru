@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aa3a6f515ca039c86d453f5729800fe8e1637c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Создание настраиваемых представлений собственных объектов в отладчике Visual Studio
 Платформа Visual Studio Natvis позволяет настраивать то, как Visual Studio отображает собственные типы в окнах переменных отладчика (например, **Контрольные значения** окне **локальные** окна и в  **Подсказки данных**.
@@ -217,7 +218,7 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ####  <a name="BKMK_Versioning"></a> Элемент Version  
- Используйте элемент `Version` для ограничения области визуализаций конкретными модулями и их версиями, чтобы свести к минимуму конфликты имен и иметь возможность использовать разные визуализации для разных версий типов. Примеры.  
+ Используйте элемент `Version` для ограничения области визуализаций конкретными модулями и их версиями, чтобы свести к минимуму конфликты имен и иметь возможность использовать разные визуализации для разных версий типов. Пример:  
   
 ```xml
 <Type Name="DirectUI::Border">  

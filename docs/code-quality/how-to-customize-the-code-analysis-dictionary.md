@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a14870e494c9c8efeb7c15dabf034f059c4a3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
 Анализ кода используется встроенный словарь для проверки идентификаторов в код на наличие ошибок в других соглашениям об именовании, орфографии и грамматические регистр [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] рекомендации. Можно создать пользовательский словарь XML-файл для добавления, удаления или изменения термины, сокращения и акронимы встроенных словарь.  

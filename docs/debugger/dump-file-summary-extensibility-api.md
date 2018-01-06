@@ -17,16 +17,17 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb8b78df604aef31739b2a2e9d9f25b42e470b66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: aba2778e3859e0cb0de984ea47e056a417927e97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API расширяемости сводки файла дампа
 С помощью интерфейсов API расширяемости в этом разделе, можно расширить. Система проектов exe и **Сводка дампа** для использования со собственные пользовательские отладки ядра.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  API-интерфейсы для расширения **Сводка дампа** страницы и. Система проектов exe доступны в следующее пространство имен:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  

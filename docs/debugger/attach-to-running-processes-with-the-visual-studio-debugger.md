@@ -31,11 +31,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48462684498136d09354fb87917f553d522188c0
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 Отладчик Visual Studio можно подключить к запущенному процессу на локальном или удаленном компьютере. После запуска процесса, нажмите кнопку **Отладка > присоединение к процессу** (или нажмите клавишу **CTRL + ALT + P**) для открытия **присоединиться к процессу** диалоговое окно.

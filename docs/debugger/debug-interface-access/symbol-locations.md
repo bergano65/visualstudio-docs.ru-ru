@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2ab3403fe01ce4ead0d3e388eaadbc34595675
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4cd226ebc3d2853ddfa35f42c5990db940c4424
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-locations"></a>Местоположения символов
 Большинство символов иметь папку, определенный в файле образа. Указывается расположение символа со значением от [LocationType-перечисление](../../debugger/debug-interface-access/locationtype.md) перечисления. Символ могут поддерживать дополнительные свойства в зависимости от ее расположения.  

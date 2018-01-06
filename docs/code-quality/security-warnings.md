@@ -18,18 +18,19 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54b7a3a62c5940419b946b85424fa745298bb89b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f54a6dc2f47d10a47635a600d97decf3846e9d3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-warnings"></a>Предупреждения безопасности
 Предупреждения безопасности поддерживают более безопасные библиотеки и приложения. Эти предупреждения помогают устранить уязвимости в программе. Если отключить любое из этих предупреждений, следует четко обозначить в коде причину этого отключения, а также оповестить сотрудника, отвечающего за безопасность проекта разработки.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание|  
+|Правило|Описание:|  
 |----------|-----------------|  
 |[CA2100: проверьте SQL-запросы с целью выявления уязвимостей безопасности](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Метод задает свойство System.Data.IDbCommand.CommandText с использованием строки, созданной из строкового аргумента метода. Это правило предполагает, что строковый аргумент содержит введенные пользователем данные. Созданная из введенных пользователем данных командная строка SQL уязвима перед атаками путем внедрения кода SQL.|  
 |[CA2102: перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Элемент в сборке, не помеченной атрибутом RuntimeCompatibilityAttribute или помеченной атрибутом RuntimeCompatibility(WrapNonExceptionThrows = false), содержит блок catch, который обрабатывает исключения System.Exception, однако непосредственно за этим блоком не следует общий блок catch.|  

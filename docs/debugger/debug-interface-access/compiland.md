@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a93cc4b98d46989aedfb212a54e6a5df5692ad59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f11216e437488a918a439166afb9000193e565a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compiland"></a>Compiland
 Имеется один `SymTagCompiland` символов для связанных каждую единицу компиляции файл .exe. Сведения компилируемого объекта разбивается между символами с `SymTagCompiland` тег, который можно получить без загрузки компилируемого объекта дополнительные символы и символы с `SymTagCompilandDetails` тег, который может потребоваться загрузка дополнительных символов.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для этого типа символа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Если изменить и продолжить был включен в компиляцию.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ для файла .exe.|  

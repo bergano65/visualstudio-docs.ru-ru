@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c3b336305e0365d6a1bd014e24bf548e38c7848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 137c584b787bb0534770ca6f16bd8b326b8f1acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functiontype"></a>FunctionType
 Каждой подписи уникальные функции определяется `SymTagFunctionType` символов. Каждый параметр определяется как символ дочерний класс с `SymTagFunctionArgType` тег.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  В следующей таблице показаны дополнительные свойства, допустимые для данного символа типа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)|`DWORD`|Одно из значений [cv_call_e-перечисление](../../debugger/debug-interface-access/cv-call-e.md).|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Класс, являющийся членом этой функции (или метод).|  

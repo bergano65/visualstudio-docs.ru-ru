@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9da2cd7b8a99d750692a69be406c9c8f82c461d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-net-framework-source"></a>Практическое руководство. Отладка исходного кода .NET Framework
 Самую последнюю версию [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предоставляет новые возможности для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] отладки. Для отладки [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] источника, необходимо иметь доступ к символам отладки для кода. Также необходимо включить пошаговое выполнение [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] источника.  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
      Если не загружать символы прямо сейчас, они будут загружены автоматически при следующей отладке разрабатываемой программы.  
   
-7.  Нажмите кнопку **ОК** закрыть **параметры** диалоговое окно.  
+7.  Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Параметры**.  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Загрузка символов Framework вручную с помощью окна "Модули"  
   

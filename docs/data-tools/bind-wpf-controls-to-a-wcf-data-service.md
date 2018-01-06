@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 В этом пошаговом руководстве вы создадите приложение WPF, содержащее элементы управления с привязкой к данным. Эти элементы управления привязаны к записям клиентов, инкапсулированным в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Вы также добавите кнопки, позволяющие клиентам просматривать и обновлять записи.  
@@ -311,7 +312,7 @@ ms.lasthandoff: 12/12/2017
   
 8.  Закройте приложение.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
 После прохождения пошагового руководства вы можете выполнить следующие задачи.  
   
 -   Сведения об использовании **источники данных** окно в Visual Studio для привязки WPF элементы управления к другим типам источников данных. Дополнительные сведения см. в разделе [WPF привязать элементы управления к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md).  

@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db196ef924383068ed5572b2711f374b74ef789a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9a4e8214228209c5eadbd6649a9b50de86f89459
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (SDK для доступа к интерфейсу отладки)
 Дружественные классы и дружественные функции идентифицируются `SymTagFriend` символов. Они являются дочерними родителя определяемых пользователем типов (UDT) и имеют [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) свойство.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>Свойства  
  В следующей таблице показаны дополнительные свойства, допустимые для данного символа типа.  
   
-|Свойство|Тип данных|Описание|  
+|Свойство.|Тип данных|Описание:|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Символ для родительского определяемого пользователем ТИПА.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Идентификатор родительского класса символа.|  

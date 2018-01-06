@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bb4ee4550f70681152fc14cc66a642597125ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Практическое руководство. Использование окна потоков GPU
 С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении. Дополнительные сведения о приложениях, работающих на GPU см. в разделе [Обзор C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  Установите точку останова в коде GPU.  
   
-6.  В строке меню выберите **отладки**, **начать отладку**. Подождите, пока приложение достигнет точки останова.  
+6.  В строке меню выберите **Отладка**, **Начать отладку**. Подождите, пока приложение достигнет точки останова.  
   
 7.  Выберите в строке меню **отладки**, **Windows**, **потоки GPU**.  
   

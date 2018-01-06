@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 118d19a1be813b0488503be86a316ccc82bd7b37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29b783e20925b3eaa4a7b0956fdcfdbcab06a328
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="metadata-as-source"></a>Метаданные как исходный код
 Функция "метаданные как исходный код" позволяет просматривать метаданные в виде исходного кода на языке C# в предназначенном только для чтения буфере. Это дает возможность просматривать объявления типов и членов (без реализации). Метаданные можно просмотреть в виде исходного кода, запустив команду **Перейти к определению** для типов и членов, исходный код которых не доступен из проекта или решения.  
