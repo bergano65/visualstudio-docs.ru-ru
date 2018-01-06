@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0f01e10050fcbdb5cf27390464ae6b8b3e62d64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-provider"></a>Символ поставщика
 Реализация вычислителя выражений должен получить доступ к символической отладочной информации, создаваемой компилятором языка для вычисления переменных и выражений. Это выполняется путем использования интерфейсов поставщика символ (SP), также называется обработчика символов.  

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 998ce86fdf714c65763748971e89fa45ec289a51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a29b9453fa7fd36564fef2956c1d41cc7f29cf07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="directory-status-code-enumerator"></a>Перечислитель код состояния каталога
 `SccDirStatus` Перечислитель содержит именованные константы, определяющие состояние каталога в системе управления версиями. Это перечисление используется методом [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Это впервые появилась в версии 1.2 API подключаемых модулей управления источника.  
@@ -35,7 +36,7 @@ enum SccDirStatus {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  SCC_DIRSTATUS_INVALID  
  Не удалось получить состояние; не следует полагаться на него.  
   

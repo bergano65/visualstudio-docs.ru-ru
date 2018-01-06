@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37c607089b548486e1df23f64f60d45f37f23978
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 052ea8dd40254e3c5d852e3fc95722d185c08239
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Указывает состояние символы для модуля.  
@@ -38,7 +39,7 @@ public enum enum_MODULE_INFO_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  MIF_SYMBOLS_LOADED  
  Хотя бы один набор символов был загружен в модуле (в противном случае символы не были загружены).  
   

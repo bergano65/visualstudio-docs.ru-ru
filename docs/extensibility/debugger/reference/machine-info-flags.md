@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b820c7290326c29ca7453e175b588af6832f6009
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 833125b28b661abba3043b97c76b086c28eb1acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
 Используется для описания на машине.  
@@ -38,7 +39,7 @@ public enum enum_MACHINE_INFO_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  MCIFLAG_TERMINAL_SERVICES_AVAILABLE  
  Указывает, что доступны служб терминалов.  
   

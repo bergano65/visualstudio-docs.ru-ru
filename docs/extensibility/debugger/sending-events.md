@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf4c3b0f494a5825820b8f794ccaf5dc727786e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bfdefc3202a026516edb3f9221e0626e1a83b4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-events"></a>Отправка событий
 Механизм для обмена данными между отладчиком и модуль отладки (DE) это событие модель, основанная на DCOM. События отправляются в виде COM-объектов, и каждое событие имеет параметры, укажите следующее:  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  Все события отладки отправляются с помощью метода [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Источники событий](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
  Описание двух источников событий: модуль отладки (DE) и сеанс отладки manager (SDM).  
   

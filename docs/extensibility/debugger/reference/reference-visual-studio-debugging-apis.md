@@ -16,18 +16,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 492b86581f567aa6bcca7f782e588ca82f1878f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 30b81a0926ebb984aab852b53c081742ea44f391
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Справочник (API-интерфейсов отладки Visual Studio)
 Ссылки Visual Studio пакет SDK для отладки структуры базовой модели для архитектуры во время выполнения и функциональные возможности отладчика, и его компонентов. Документация делает предположения минимально как можно подробнее компоненты и интерфейсы, описываемый, отдельно от поведения, которые он определяет, через интерфейсы.  
   
  В справочном разделе предназначена для предоставления поддержки для различных как набор языков, время выполнения и операционных систем можно.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
  Содержит документацию по интерфейсам, перечислители и структуры отладки API Visual Studio.  
   

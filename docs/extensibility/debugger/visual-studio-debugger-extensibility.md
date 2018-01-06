@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9a14f95fbed47670b3c5b5db19e4e0e6b8ba074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5b5943dc8087a22e1bdfb94ae6d0d10335c174a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Расширения отладчика Visual Studio
 Visual Studio включает отладчик полностью интерактивный исходного кода, предоставляет мощные и простые в использовании средства для отслеживания ошибок в программах. Отладчик имеет полную поддержку Visual Basic, C#, C/C++ и JavaScript. Однако в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], в котором доступны из [центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkId=214453), других языках программирования, которые могут поддерживаться в отладчике с широкими возможностями, же.  
@@ -32,7 +33,7 @@ Visual Studio включает отладчик полностью интера�
   
  В следующих разделах описаны способы расширения отладчика с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Начало работы](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
  Описывает, что [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки предложений и как установить пакет SDK.  
   
