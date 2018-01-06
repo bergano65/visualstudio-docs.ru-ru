@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02f3d66b7d519546f1da89bb323ec9ab740628f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 44b938467454d73c460cc9276b46bc165d36bcee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-legacy-workflow-projects"></a>Создание проектов рабочих процессов для прежних версий
 В данном разделе описывается создание проектов рабочих процессов с помощью средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] более ранней версии, предоставляемого средой vs2010. Средство [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий ориентировано на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Он содержит сведения об использовании шаблонов проектов рабочего процесса, которые представлены в таблице ниже.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/27/2017
 |Библиотека рабочих процессов конечного автомата|Проект для создания библиотеки рабочего процесса конечного автомата.|  
 |Пустой проект рабочего процесса|Пустой проект для создания приложения рабочего процесса.|  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Как создавать проекты рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-workflow-projects-legacy.md)  
   
  [Как создавать консольные приложения последовательных рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)  

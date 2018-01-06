@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4781830d73d36f981937a51e7f9a8bf86780198c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37da28d4c5db1e008af29c03997943720dcfbada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Как добавлять узлы в рабочую область в обозревателе XML-схем
 В этом разделе объясняется, как добавить узлы в [рабочей области конструктора XML-схем](../xml-tools/xml-schema-designer-workspace.md) из обозревателя XML-схем. Цель может быть достигнута посредством перетаскивания узлов из обозревателя XML-схемы на представление конструктора XSD, или использованием контекстного меню обозревателя XML-схем. Можно также добавить узлы, выделенные в результате поиска, выполненного в обозревателе XML-схем. Дополнительные сведения см. в разделе [как: Добавление схемы задать поиска результат узлов в рабочую область](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  

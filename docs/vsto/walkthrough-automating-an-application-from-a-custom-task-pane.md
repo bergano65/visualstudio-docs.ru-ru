@@ -22,11 +22,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c08f04af21e42761b9b9c7e1a760e71fe79d025a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d7c349261770e6b489a793f6f4533a852c96a8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>Руководство. Автоматизация приложения в настраиваемой области задач
   В этом пошаговом руководстве рассматриваются способы создания настраиваемой области задач, которая автоматизирует PowerPoint. Настраиваемая область задач вставляет даты в слайд, когда пользователь нажимает элемент управления <xref:System.Windows.Forms.MonthCalendar> в ней.  
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/31/2017
   
      Дата вставляется на первом слайде активной презентации.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:  
   
 -   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).  

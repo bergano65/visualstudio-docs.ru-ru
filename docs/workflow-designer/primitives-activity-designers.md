@@ -11,23 +11,24 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c691e4dc60afca2d56a63af8572d75b02e970e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="primitives-activity-designers"></a>Конструкторы действий с базовыми функциями
 Конструкторы примитивных действий используются для создания и настройки различных действий в пространстве имен <xref:System.Activities.Statements>, например Assign and Delay. В подразделах этого раздела описывается использование действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Назначение](../workflow-designer/assign-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.Assign>.  
   
  [Задержка](../workflow-designer/delay-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.Delay>.  
   
- [Метод InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
+ [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.InvokeMethod>.  
   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)  

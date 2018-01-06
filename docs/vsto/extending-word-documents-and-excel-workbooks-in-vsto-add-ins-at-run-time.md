@@ -23,11 +23,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93010f03384e3cb3930911115ee92b3bb9205b9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 80b01aa30e1f90ad1f2e810519f92a05eb1be954
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения
   Надстройку VSTO можно использовать для настройки документов Word и книг Excel одним из описанных ниже способов.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  Для использования данных функциональных возможностей необходимо в среде выполнения создать объект, расширяющий документ или книгу.  
   
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для следующих приложений: Excel и Word. Для получения дополнительной информации см. [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для следующих приложений: Excel и Word. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generating-extended-objects-in-vsto-add-ins"></a>Создание расширенных объектов в надстройках VSTO  
  *Расширенные объекты* — это экземпляры типов, предоставляемых средой выполнения Visual Studio Tools для Office, и расширяющие функциональные возможности объектов, существующих в объектных моделях Word или Excel (так называемых *собственных объектов Office*). Чтобы создать расширенный объект для объекта Word или Excel, используйте метод GetVstoObject. При первом вызове метода GetVstoObject для указанного объекта Word или Excel он возвращает новый объект, расширяющий указанный объект. С каждым последующим вызовом этого метода для одного и того же объекта Word или Excel возвращается один и тот же расширенный объект.  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
 ##  <a name="AddControls"></a> Добавление управляемых элементов управления в документы и листы  
- После создания объекта <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet>в документ или на лист можно добавить элементы управления, которым соответствуют эти расширенные объекты. Чтобы сделать это, используйте свойство элементов управления <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Дополнительные сведения см. в разделе [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ После создания объекта <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet>в документ или на лист можно добавить элементы управления, которым соответствуют эти расширенные объекты. Чтобы сделать это, используйте свойство элементов управления <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Добавлять можно элементы управления Windows Forms или *элементы управления ведущего приложения*. Элемент управления ведущего приложения — это элемент управления, предоставляемый средой выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , которая упаковывает соответствующий элемент управления в основную сборку взаимодействия Word или Excel. Элемент управления ведущего приложения предоставляет все возможности, лежащие в основе собственного объекта Office, но, кроме того, вызывает события и может быть связан с данными с помощью модели привязки данных Windows Forms. Для получения дополнительной информации см. [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   

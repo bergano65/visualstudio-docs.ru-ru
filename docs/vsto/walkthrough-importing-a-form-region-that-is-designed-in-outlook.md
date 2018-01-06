@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 63073ca3100f1b4a11d5a39043e5d5eeebe7b628
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf5b5ff9f2c3b2db5d7082e4eecd9eee4e235866
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Пошаговое руководство. Импорт области формы, созданной в Outlook
   В этом пошаговом руководстве демонстрируется создание области формы в Microsoft Office Outlook, а также ее импорт в проект надстройки Outlook VSTO с помощью мастера **Создать область формы** . Создание области формы в Outlook позволяет добавить собственные элементы управления Outlook в область формы, связанную с данными Outlook. После импорта области формы можно обрабатывать события каждого элемента управления.  
@@ -247,7 +248,7 @@ ms.lasthandoff: 10/31/2017
   
      В списке**Эта задача зависит от следующих задач** появится пункт **50 % завершено — Зависимая задача** .  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о настройке пользовательского интерфейса приложения Outlook см. в следующих разделах.  
   
 -   Дополнительные сведения о том, как внешний вид области формы путем перетаскивания элементов управления в визуальный конструктор см. в разделе [Пошаговое руководство: разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  

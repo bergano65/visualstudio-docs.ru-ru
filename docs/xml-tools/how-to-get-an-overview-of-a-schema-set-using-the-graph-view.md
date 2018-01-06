@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 88f2f9f565afef2cc3f8d3f6e9e9397fe5ce6955
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9499e9972f32998b66be23d60acb8c585776d62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Как получить общие сведения о наборе схем с использованием представления графика
 В этом разделе описывается использование [представление графика](../xml-tools/graph-view.md) для просмотра высокоуровневое представление узлов в наборе схем и связях между узлами.  

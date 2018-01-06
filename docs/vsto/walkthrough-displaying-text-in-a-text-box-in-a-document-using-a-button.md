@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75146e583f2b15557a2f88ba18ed5d8798c7603b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28d755d6123b2911bccd10e668212e1ea6a54484
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>Пошаговое руководство. Отображение текста в текстовом поле документа с помощью кнопки
   В этом пошаговом руководстве демонстрируется использование кнопок и текстовых полей в настройке уровня документа для Microsoft Office Word.  
@@ -71,9 +72,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  Перетащите **кнопку** управления в документ и измените следующие свойства.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Имя**|**insertText**|  
+    |**Name**|**insertText**|  
     |**Text**|**Вставка текста**|  
   
  Теперь можно написать код, который будет выполняться при нажатии кнопки.  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Убедитесь, что **Hello World!** отображается в текстовом поле.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы использования кнопок и текстовых полей в документах Word. Ниже приводятся некоторые из возможных последующих задач.  
   
 -   Использование поля со списком для изменения форматирования. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение документов форматирования с помощью элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  

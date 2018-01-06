@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы для моментального снимка отладки в Visual Studio
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 11/22/2017
 - Отладка моментального снимка с несколькими клиентами Visual Studio к той же службы приложения в настоящее время не поддерживается.
 - В проектах ASP.NET Core Roslyn IL оптимизации поддерживаются не полностью. Для некоторых проектов ASP.NET Core может не быть видеть некоторые переменные или использовать некоторые переменные в условных операторах. 
 - Специальные переменные, такие как *$FUNCTION* или *$CALLER*, не могут выполняться в условных инструкциях или logpoints для проектов ASP.NET Core.
-- Моментальный снимок не удается выполнить отладку на службы приложений, имеющих [локальное кэширование](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) включен.
+- Моментальный снимок не удается выполнить отладку на службы приложений, имеющих [локальное кэширование](/azure/app-service/app-service-local-cache) включен.
 - Отладка приложения API моментальных снимков в настоящее время не поддерживается.
 
 ## <a name="see-also"></a>См. также

@@ -19,11 +19,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b97c44da9740d36ea68766c8dc0e56e535d5165
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: faef08b559a2e792630c03bcd09acf5122b9ddac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
   Для использования компонентов приложения Microsoft Office из проекта Office необходимо использовать основную сборку взаимодействия (PIA) для приложения. Основная сборка взаимодействия позволяет управляемому коду взаимодействовать с основанной на COM объектной моделью приложения Microsoft Office.  

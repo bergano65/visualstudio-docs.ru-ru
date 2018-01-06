@@ -19,11 +19,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c7992f36f82d7caf56b09b0f6887eed363b6665
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d732f16d6794fbe59dd6f67fa904fcee916ce69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Пошаговое руководство. Создание первой настройки уровня документа для Word
   В этом вводном пошаговом руководстве показано, как создавать настройку на уровне документа для Microsoft Office Word. Функциональные возможности, создаваемые в таком решении, доступны только в том случае, когда открыт конкретный документ. Для внесения изменений в приложение настройку на уровне документа использовать нельзя (например, для отображения новой вкладки ленты, когда открыт любой документ).  
@@ -141,7 +142,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Теперь после создания базовой настройки на уровне документа для Word в следующих разделах можно ознакомиться с процессом разработки настроек:  
   
 -   Общие задачи программирования, которые можно выполнять в настройках на уровне документа: [программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md).  

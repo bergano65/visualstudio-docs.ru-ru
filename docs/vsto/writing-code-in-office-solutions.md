@@ -37,11 +37,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2147076bd4aa90230d1216af19459efe71209d50
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5d6a400f5c1ee523e2bb3fd95be215af0e5ba371
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-in-office-solutions"></a>Написание кода в решениях Office
   Написание кода в проектах Office и в проектах других типов в Visual Studio несколько отличается друг от друга. Многие из этих отличий связаны с тем, каким образом объектные модели Office предоставляются управляемому коду. Другие отличия связаны со структурой проектов Office.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="using-primary-interop-assemblies-at-design-time-and-run-time"></a>Использование основных сборок взаимодействия на этапе разработки и во время выполнения  
  Для выполнения большинства задач разработки необходимо, чтобы основные сборки взаимодействия Office были установлены и зарегистрированы в глобальном кэше сборок на компьютере разработчика. Для получения дополнительной информации см. [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
- Наличие основных сборок взаимодействия Office на компьютере конечного пользователя для запуска решений Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздних версий, не требуется. Дополнительные сведения см. в разделе [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md).  
+ Наличие основных сборок взаимодействия Office на компьютере конечного пользователя для запуска решений Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздних версий, не требуется. Для получения дополнительной информации см. [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="using-types-in-primary-interop-assemblies"></a>Использование типов в основных сборках взаимодействия  
  Основные сборки взаимодействия Office содержат комбинацию типов, предоставляющих объектную модель приложений Office и дополнительные типы инфраструктуры, которые не предназначены для прямого использования в коде. Общие сведения о типах в основных сборках взаимодействия Office см. в разделе [Overview of Classes and Interfaces in the Office Primary Interop Assemblies](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Основные различия между Visual Basic и Visual C#  
  В следующей таблице показаны основные различия между Visual Basic и Visual C# при разработке решений Office.  
   
-|Функция|Описание|Поддержка Visual Basic|Поддержка Visual C#|  
+|Функция|Описание:|Поддержка Visual Basic|Поддержка Visual C#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Необязательные параметры|Многие методы Microsoft Office имеют параметры, которые не являются обязательными при вызове метода. Если для параметра никакое значение не передается, используется значение по умолчанию.|Visual Basic поддерживает необязательные параметры.|Visual C# поддерживает необязательные параметры в большинстве случаев. Дополнительные сведения см. в разделе [необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Передача параметров по ссылке|В большинстве основных сборок взаимодействия Microsoft Office необязательные параметры могут передаваться по значению. Однако в некоторых основных сборках взаимодействия необязательные параметры, которые принимают ссылочные типы, должны передаваться по ссылке.<br /><br /> Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передача аргументов по значению и по ссылку &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передача параметров &#40; И &#35; Руководство по программированию &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Для передачи параметров по ссылке дополнительные действия не требуются. При необходимости компилятор Visual Basic автоматически передает параметры по ссылке.|В большинстве случаев компилятор Visual C# автоматически передает параметры по ссылке. Дополнительные сведения см. в разделе [необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|  
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Основные различия между разработкой для Office и управляемым кодом  
  В таблице ниже указаны основные различия между разработкой для Office и управляемым кодом, написанным на Visual Basic или Visual C#.  
   
-|Функция|Описание|Поддержка Visual Basic и Visual C#|  
+|Функция|Описание:|Поддержка Visual Basic и Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
 |Индексы массивов|Нижняя граница массива коллекций в приложениях Microsoft Office начинается с 1. Visual Basic и Visual C# используют массивы, которые начинаются с нуля. Дополнительные сведения см. в разделе [массивы &#40; И &#35; Руководство по программированию &#41; ](/dotnet/csharp/programming-guide/arrays/index) и [массивов в Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Для доступа к первому элементу коллекции в объектной модели приложения Microsoft Office используйте индекс 1 вместо 0.|  
   

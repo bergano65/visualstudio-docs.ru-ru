@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a48af8fb930f30157314b408ff4b77f4c397ff7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 98783b05d531f41583bbd3843e50a808f655ba2b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-xsd-files"></a>Образец XSD-файлов
 Следующие примеры файлов используются в документации конструктора XSD-схем.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="in-this-section"></a>Содержание  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Образец XSD-файла: схема заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md)|XML-документ, который содержит схему типичного заказа на покупку.|  
 |[Образец XSD-файла: простая схема](../xml-tools/sample-xsd-file-simple-schema.md)|Документ XSD, содержащий простую схему.|  

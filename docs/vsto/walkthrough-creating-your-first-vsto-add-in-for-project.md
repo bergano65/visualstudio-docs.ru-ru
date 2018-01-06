@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 324d5e07ed2c1515036282abe12336f90225993f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 391bd4bbdfe87f1bc00ac14356c61f988b8bf041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Пошаговое руководство. Создание первой надстройки VSTO для Project
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Project. Функции, создаваемые в таком решении, доступны для самого приложения независимо от того, какие проекты открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/31/2017
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **FirstProjectAddIn** и открывает файл кода **ThisAddIn** в редакторе.  
   
 ## <a name="writing-code-that-adds-a-new-task-to-a-project"></a>Создание кода, добавляющего новую задачу в проект  
- Добавьте код в файл кода ThisAddIn. В этом коде для добавления новой задачи в проект используется объектная модель Project. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
+ Затем добавьте код в файл ThisAddIn. В этом коде для добавления новой задачи в проект используется объектная модель Project. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
   
 -   Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Project. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
   
@@ -122,7 +123,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для Project, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.  
   
 -   Общие задачи программирования, которые можно выполнять в надстройках VSTO для Project: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  

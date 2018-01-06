@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cbb7b09e5c36980ceeedd99f69241996bd25bfa3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 61d58b172c185a908a6314664ccd4cfe2172dc8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Разработка приложений с помощью конструктора рабочего процесса
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] - это визуальный конструктор и отладчик для графического создания и отладки приложений [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] в [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)], размещенном в среде разработки [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Он позволяет создавать сложные приложения рабочего процесса, библиотеки действий и службы [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] с помощью шаблонов и конструкторов действий. [!INCLUDE[crabout](../test/includes/crabout_md.md)]рабочие процессы, в разделе [Windows Workflow Foundation &#91;. .NET Framework 4 &#93; ](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/27/2017
   
 -   **Добавление ссылки на службу...**  функциональность позволяет создавать действия автоматически, доступ к веб-служб.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Использование конструктора рабочих процессов](../workflow-designer/using-the-workflow-designer.md)  
  Показывает, как создать новые действия и проекты рабочего процесса с использованием встроенных конструкторов, а также как использовать другие средства, предоставляемые конструктором, для обработки аргументов, переменных, выражений, операций импорта и строки навигации.  
   

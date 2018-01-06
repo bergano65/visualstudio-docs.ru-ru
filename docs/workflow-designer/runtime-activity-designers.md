@@ -11,16 +11,17 @@ caps.latest.revision: "3"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: da5d71a36b39f47dc0a068e9aa25950687143f29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a90e858a8eed0c6d1c92423b1f074bf51c01eb63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="runtime-activity-designers"></a>Конструкторы действий среды выполнения
 Конструкторы действий времени выполнения служат для сохранения и завершения действий рабочего процесса. В подразделах этого раздела описывается использование конструкторов действий [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Сохранение](../workflow-designer/persist-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.Persist>.  
   

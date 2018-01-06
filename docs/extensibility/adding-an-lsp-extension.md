@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e38c040e732571e3343c30d84745d2602a1088d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: vssdk
+ms.openlocfilehash: 92ea72f3d64edc31c187198a5af73ed98c0fc8be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Добавление расширения языка протокола сервера
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 11/11/2017
 * Именованные каналы
 * сокеты
 
-LSP и для него поддержку в Visual Studio призван встроенного языковой службы, которые не являются частью продукта Visual Studio. Он не предназначен для расширения существующих служб языка (например, C#) в Visual Studio. Для расширения существующих языков, см. руководство по службе языка расширения (например, [платформой компилятора .NET «Roslyn»](https://docs.microsoft.com/visualstudio/extensibility/dotnet-compiler-platform-roslyn-extensibility)).
+LSP и для него поддержку в Visual Studio призван встроенного языковой службы, которые не являются частью продукта Visual Studio. Он не предназначен для расширения существующих служб языка (например, C#) в Visual Studio. Для расширения существующих языков, см. руководство по службе языка расширения (например, [платформой компилятора .NET «Roslyn»](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)).
 
 ## <a name="language-server-protocol-features-supported"></a>Поддерживаемые возможности протокола сервера языка
 
@@ -62,8 +63,8 @@ $/ cancelRequest | да
 Рабочая область/didChangeConfiguration | да
 Рабочая область/didChangeWatchedFiles | да
 Рабочая область символ | да
-Рабочая область/executeCommand |
-Рабочая область/applyEdit |
+Рабочая область/executeCommand | да
+Рабочая область/applyEdit | да
 textDocument/publishDiagnostics | да
 textDocument/didOpen | да
 textDocument/didChange | да
@@ -82,12 +83,12 @@ textDocument и форматирование | да
 textDocument/rangeFormatting | да
 textDocument/onTypeFormatting |
 textDocument или определение | да
-textDocument/codeAction |
+textDocument/codeAction | да
 textDocument/codeLens |
 codeLens и разрешения |
 textDocument/documentLink |
 documentLink и разрешения |
-textDocument или переименуйте |
+textDocument или переименуйте | да
 
 ## <a name="getting-started"></a>Начало работы
 
@@ -149,13 +150,13 @@ LSP не содержит спецификацию указания выделе
 
 ## <a name="creating-a-simple-language-client"></a>Создание простой язык клиента
 
-### <a name="main-interface---ilanguageclienthttpsdocsmicrosoftcomdotnetapimicrosoftvisualstudiolanguageserverclientilanguageclientviewvisualstudiosdk-2017"></a>Основной интерфейс - [ILanguageClient](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
+### <a name="main-interface---ilanguageclientdotnetapimicrosoftvisualstudiolanguageserverclientilanguageclientviewvisualstudiosdk-2017"></a>Основной интерфейс - [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
 
 После создания проекта VSIX, добавьте следующие пакеты NuGet в проект:
 
 * [Microsoft.VisualStudio.LanguageServer.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
-Затем можно создать новый класс, реализующий [ILanguageClient](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) интерфейса, основной интерфейс, необходимый для подключения к серверу язык на основе LSP клиентов языка.
+Затем можно создать новый класс, реализующий [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) интерфейса, основной интерфейс, необходимый для подключения к серверу язык на основе LSP клиентов языка.
 
 Ниже представлен пример:
 
@@ -208,9 +209,9 @@ namespace MockLanguageExtension
 }
 ```
 
-Основные методы, которые должны быть реализованы [OnLoadedAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) и [ActivateAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) вызывается при загрузке расширения Visual Studio и Готово к запуску язык сервера. В этот метод можно вызвать [StartAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) делегат немедленно указывают сервер языка должен быть запущен, или можно выполнить дополнительную логику и вызвать [StartAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) позже. **Чтобы активировать сервер языка в определенный момент необходимо вызвать StartAsync.**
+Основные методы, которые должны быть реализованы [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) и [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) вызывается при загрузке расширения Visual Studio и Готово к запуску язык сервера. В этот метод можно вызвать [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) делегат немедленно указывают сервер языка должен быть запущен, или можно выполнить дополнительную логику и вызвать [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) позже. **Чтобы активировать сервер языка в определенный момент необходимо вызвать StartAsync.**
 
-[ActivateAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) метод в конечном счете вызывается путем вызова [StartAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) делегата; он содержит логику для запуска языка сервера и установить подключение к нему. Объект подключения нужно будет возвращаться, содержащее потоков для чтения с сервера и записи к серверу. Все исключения будет перехвачено и отображается для пользователя с помощью сообщение информационную панель в Visual Studio.
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) метод в конечном счете вызывается путем вызова [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) делегата; он содержит логику для запуска языка сервера и установить подключение к нему. Объект подключения нужно будет возвращаться, содержащее потоков для чтения с сервера и записи к серверу. Все исключения будет перехвачено и отображается для пользователя с помощью сообщение информационную панель в Visual Studio.
 
 ### <a name="activation"></a>Активация
 
@@ -241,7 +242,7 @@ Visual Studio использует [MEF](https://github.com/Microsoft/vs-mef/blo
 
 ### <a name="content-type-definition"></a>Определение типа содержимого
 
-В настоящее время единственным способом, чтобы загрузить расширение серверного ваш язык на основе LSP является тип содержимого файла. То есть при определении клиентском классе языка (который реализует [ILanguageClient](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), необходимо определить типы файлов, при открытии, который будет загружать расширения. Если нет файлов, которые соответствуют вашей определенный тип содержимого открываются, решение не будет загружено.
+В настоящее время единственным способом, чтобы загрузить расширение серверного ваш язык на основе LSP является тип содержимого файла. То есть при определении клиентском классе языка (который реализует [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), необходимо определить типы файлов, при открытии, который будет загружать расширения. Если нет файлов, которые соответствуют вашей определенный тип содержимого открываются, решение не будет загружено.
 
 Это осуществляется посредством определения одного или нескольких классов ContentTypeDefinition:
 
@@ -264,7 +265,7 @@ namespace MockLanguageExtension
 }
 ```
 
-В приведенном выше примере для файлов, которые заканчиваются расширением .bar создается определение типа содержимого. Определение типа содержимого присваивается имя «панель» и **должен** являются производными от [CodeRemoteContentTypeName](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
+В приведенном выше примере для файлов, которые заканчиваются расширением .bar создается определение типа содержимого. Определение типа содержимого присваивается имя «панель» и **должен** являются производными от [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
 
 После добавления определения типа содержимого, можно определить причины для загрузки расширения языка клиента в классе клиента языка:
 
@@ -334,14 +335,32 @@ namespace MockLanguageExtension
     "foo.maxNumberOfProblems": 10
   }
   ```
+### <a name="enabling-diagnostics-tracing"></a>Включение трассировки диагностики
+Можно включить трассировку диагностики для вывода всех сообщений между клиентом и сервером, которые могут быть полезны при отладке проблем.  Чтобы включить диагностическую трассировку, выполните следующие действия.
+
+1. Откройте или создайте файл параметров рабочей области «VSWorkspaceSettings.json» (см. выше).
+2. Добавьте следующую строку в файле параметров json:
+
+```json
+{
+    "foo.server.trace": "Off"
+}
+```
+
+Существует 3 возможных значений для детализации трассировки:
+* «Off»: полностью отключить трассировку
+* «Сообщения»: трассировка включена, но метод только имя и ответа идентификатор трассируются.
+* «Verbose»: трассировка включена; Это событие регистрируется сообщение целиком rpc.
+
+Когда трассировка включена, содержимое записывается в файл в каталоге «% temp%\VisualStudio\LSP».  Она будет следовать формат именования [LanguageClientName]-[меткой времени] .log.  В настоящее время трассировку можно включить только для сценариев, открыть папку.  Открытия одного файла для активации сервера языка отсутствует поддержка трассировки диагностики. 
 
 ### <a name="custom-messages"></a>Пользовательские сообщения
 
-Существует API-интерфейсов на месте для упрощения передачи сообщений и прием сообщений от языка сервера, которые не являются частью стандартного языка протокол сервера. Для обработки пользовательских сообщений, реализовать [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) интерфейса в клиентском классе языка. [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) библиотека используется для передачи пользовательских сообщений между клиентом языка и языка сервера. Так как расширение языка клиента LSP так же, как любое другое расширение Visual Studio, можно добавить дополнительные функции (которые не поддерживаются LSP) для Visual Studio (с использованием других API-интерфейсы Visual Studio) расширения с помощью пользовательских сообщений.
+Существует API-интерфейсов на месте для упрощения передачи сообщений и прием сообщений от языка сервера, которые не являются частью стандартного языка протокол сервера. Для обработки пользовательских сообщений, реализовать [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) интерфейса в клиентском классе языка. [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) библиотека используется для передачи пользовательских сообщений между клиентом языка и языка сервера. Так как расширение языка клиента LSP так же, как любое другое расширение Visual Studio, можно добавить дополнительные функции (которые не поддерживаются LSP) для Visual Studio (с использованием других API-интерфейсы Visual Studio) расширения с помощью пользовательских сообщений.
 
 #### <a name="receiving-custom-messages"></a>Получение пользовательских сообщений
 
-Чтобы получить пользовательские сообщения от языка сервера, реализовать [CustomMessageTarget](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) свойство [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) и вернуть объект, который знает, как обрабатывать пользовательские сообщения . Пример ниже.
+Чтобы получить пользовательские сообщения от языка сервера, реализовать [CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) свойство [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) и вернуть объект, который знает, как обрабатывать пользовательские сообщения . Пример ниже.
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -376,7 +395,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 #### <a name="sending-custom-messages"></a>Отправка пользовательских сообщений
 
-Для отправки на сервер языка пользовательские сообщения, реализуйте [AttachForCustomMessageAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) метод [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Этот метод вызывается, когда сервер языка не запущен и готов к приему сообщений. Объект [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) объект передается как параметр, который затем можно сохранить для отправки сообщений для языка сервера с помощью [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) API-интерфейсы. Пример ниже.
+Для отправки на сервер языка пользовательские сообщения, реализуйте [AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) метод [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Этот метод вызывается, когда сервер языка не запущен и готов к приему сообщений. Объект [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) объект передается как параметр, который затем можно сохранить для отправки сообщений для языка сервера с помощью [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) API-интерфейсы. Пример ниже.
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -410,7 +429,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 Иногда разработчик расширения может потребоваться перехвата LSP сообщений, отправленных и полученных от языка сервера. Например разработчик расширения могут для изменения параметра сообщения, отправленные для определенного сообщения LSP или изменять результаты, возвращаемые с сервера языка LSP возможности (например, варианты завершения). При необходимости это расширение разработчики могут использовать MiddleLayer API для перехвата сообщений LSP.
 
-Каждое сообщение LSP имеет свой собственный интерфейс среднего уровня для перехвата. Для перехвата определенного сообщения, создайте класс, реализующий интерфейс среднего уровня для сообщения. Затем реализовать [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) в клиентском классе язык интерфейса и возвращает экземпляр объекта в [MiddleLayer](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) свойство. Пример ниже.
+Каждое сообщение LSP имеет свой собственный интерфейс среднего уровня для перехвата. Для перехвата определенного сообщения, создайте класс, реализующий интерфейс среднего уровня для сообщения. Затем реализовать [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) в клиентском классе язык интерфейса и возвращает экземпляр объекта в [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) свойство. Пример ниже.
 
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage

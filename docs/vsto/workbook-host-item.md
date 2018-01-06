@@ -25,11 +25,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baeb44b4804f74aad4b2850eb0bbd4ad539b33e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21017bc63f028bdbd65d27b0df0cba2e31d407ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workbook-host-item"></a>Ведущий элемент книги
   Ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> является типом, который расширяет тип <xref:Microsoft.Office.Interop.Excel.Workbook> из основной сборки взаимодействия для Excel. Ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> предоставляет все свойства, методы и события объекта <xref:Microsoft.Office.Interop.Excel.Workbook> , но также предоставляет дополнительные компоненты.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
  В проектах уровня документа имеется ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> по умолчанию, который представляет книгу в проекте. В проектах надстройки VSTO во время выполнения можно создавать ведущие элементы <xref:Microsoft.Office.Tools.Excel.Workbook> .  
   
 ## <a name="understanding-the-workbook-host-item-in-document-level-projects"></a>Основные сведения о ведущих элементах книги в проектах уровня документа  
- Для доступа к книге в проекте используйте класс `ThisWorkbook` . Класс `ThisWorkbook` обеспечивает доступ к членам ведущего элемента <xref:Microsoft.Office.Tools.Excel.Workbook> для выполнения основных задач по настройке, например для запуска кода при открытии или закрытии книги. Для получения дополнительной информации см. [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
+ Для доступа к книге в проекте используйте класс `ThisWorkbook` . Класс `ThisWorkbook` обеспечивает доступ к членам ведущего элемента <xref:Microsoft.Office.Tools.Excel.Workbook> для выполнения основных задач по настройке, например для запуска кода при открытии или закрытии книги. Дополнительные сведения см. в разделе [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
   
  Класс `ThisWorkbook` предоставляет место, в котором можно начать создание кода в проекте. Поскольку этот класс предоставляет все свойства, методы и события, что и объект <xref:Microsoft.Office.Interop.Excel.Workbook> в основной сборке взаимодействия для Excel, вы также можете использовать `ThisWorkbook` для доступа к объектной модели Excel. Дополнительные сведения см. в разделе [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 >  Средства разработки Office в Visual Studio не поддерживают общие книги.  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>Основные сведения о ведущих элементах книги в проектах надстроек VSTO  
- В проектах надстроек VSTO можно создавать ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> во время выполнения для любой книги, открытой в Excel. Для создания <xref:Microsoft.Office.Tools.Excel.Workbook> ведущий элемент, используйте метод GetVstoObject. Дополнительные сведения см. в разделе [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ В проектах надстроек VSTO можно создавать ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> во время выполнения для любой книги, открытой в Excel. Для создания <xref:Microsoft.Office.Tools.Excel.Workbook> ведущий элемент, используйте метод GetVstoObject. Для получения дополнительной информации см. [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>См. также  
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   

@@ -12,16 +12,17 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14a6cf63bbe227a2ab0a4bd2790d863ee6295145
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8847f079646f2c90d50c7a7f3c8ecbd5c510150
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer-tasks"></a>Задачи конструктора XML-схемы.
 Данный раздел описывает способы выполнения типичных задач с использованием панели инструментов конструктора XML-схемы.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Как создавать и изменять файл XSD-схемы](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)  
  Описывает процесс создания нового файла XML-схемы (XSD) и добавления содержимого в XSD-файл.  
   

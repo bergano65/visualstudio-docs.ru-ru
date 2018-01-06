@@ -23,11 +23,12 @@ caps.latest.revision: "91"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09a356408815ed6fea416d27e59a58a4edc6a6a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e84bd10c2a7e3ce4c760e0f9231390d4fd037616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщика Windows
 Узнайте, как создать файл установщика Windows для решения Office при помощи [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
   
   
-|Пример<br /><br />|Описание<br /><br />|  
+|Пример<br /><br />|Описание:<br /><br />|  
 |----------|---------------|  
 |[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Надстройка VSTO Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Настройка уровня документа Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
@@ -333,7 +334,7 @@ ms.lasthandoff: 10/31/2017
   
 |Версия Office<br /><br />|Путь конфигурации InstallShield<br /><br />|  
 |------------------|------------------------------------|  
-|32-разрядная<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
+|32-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
 |64-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
    **Установщики для компьютера на основе версии Windows**  
   
@@ -341,7 +342,7 @@ ms.lasthandoff: 10/31/2017
   
 |Версия Windows<br /><br />|Путь конфигурации InstallShield<br /><br />|  
 |-------------------|------------------------------------|  
-|32-разрядная<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
+|32-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
 |64-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
    > [!NOTE]  
    >    Для установщика для 64-разрядной версии Windows требуется два пути реестра, так как это дает пользователям возможность выполнять 32-разрядных и 64-разрядной версии Office на компьютере под управлением 64-разрядной версии Windows.  

@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2f7b77dfb83fbadb4b05685e684e95ee0c2d57cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 56a20f6e29f0f1bd6e071e6d3b48442c0bf02e77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; конструктора действий
 Действие <xref:System.Activities.Statements.ParallelForEach%601> перечисляет элементы коллекции и выполняет вложенную инструкцию для каждого элемента коллекции параллельно, асинхронно в том же потоке. Это действие управления потоком следует использовать вместо действия <xref:System.Activities.Statements.Sequence>, если ожидается, что вложенные действия перейдут в режим бездействия.  
@@ -42,8 +43,8 @@ ms.lasthandoff: 10/27/2017
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **ParallelForEach\<Int32 >**. Значение можно дополнительно изменить в **свойства** сетки или напрямую в заголовке конструктора действий.|  
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите действие из панели элементов в **текст** поле на **ParallelForEach\<T >** конструктора действий с текстом подсказки «Перетащить действие сюда».|  
-|**TypeArgument**|True|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, указанное в универсальном параметре *T*. По умолчанию **TypeArgument** равно **Int32**. Чтобы изменить тип T в **ParallelForEach < T\>**  конструктора действий, измените значение **TypeArgument** поле со списком в сетке свойств.|  
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, введите значение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] выражения в **значения** поле на **ForEach < T\>**  конструктором операций в поле с текстом подсказки «Введите выражение VB» или в **Значения** поле на **свойства** окна.|  
+|**TypeArgument**|Да|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, указанное в универсальном параметре *T*. По умолчанию **TypeArgument** равно **Int32**. Чтобы изменить тип T в **ParallelForEach < T\>**  конструктора действий, измените значение **TypeArgument** поле со списком в сетке свойств.|  
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Да|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, введите значение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] выражения в **значения** поле на **ForEach < T\>**  конструктором операций в поле с текстом подсказки «Введите выражение VB» или в **Значения** поле на **свойства** окна.|  
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Оценивается после каждого выполнения итерации. Если результат оценки равен true, то запланированные ожидающие итерации отменяются. Если это свойство не задано, все запланированные инструкции выполняются до завершения.|  
   
  По умолчанию итератор цикла является именованным элементом. Можно изменить имя переменной итератора в **ForEach** поле **ParallelForEach\<T >** конструктора действий. Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ParallelForEach%601>.  

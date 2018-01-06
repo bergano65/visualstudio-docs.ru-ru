@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ecfdc4d736f2be4ba4a8810b039ac11c88228160
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6016947237274d65d3b59954d783c2a31f3d2b91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; конструктора действий
 Действие <xref:System.Activities.Statements.ForEach%601> выполняет действие, содержащееся в его теле <xref:System.Activities.Statements.ForEach%601.Body%2A> для каждого элемента указанной коллекции <xref:System.Activities.Statements.ForEach%601.Values%2A>.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/27/2017
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ForEach%601>. Значение по умолчанию — ForEach < Int32\>. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|  
 |<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|Коллекция элементов для итерации. Для задания <xref:System.Activities.Statements.ForEach%601.Values%2A>, введите команду [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] выражения в **значения** поле на **ForEach < T\>**  действия конструктора или в сетке свойств.|  
-|*TypeArgument*|True|Тип элементов в <xref:System.Activities.Statements.ForEach%601.Values%2A> коллекции, указанное в универсальном параметре *T*. По умолчанию *TypeArgument* равно **Int32**. Чтобы изменить тип, измените значение *TypeArgument* поле со списком в сетке свойств.|  
+|*TypeArgument*|Да|Тип элементов в <xref:System.Activities.Statements.ForEach%601.Values%2A> коллекции, указанное в универсальном параметре *T*. По умолчанию *TypeArgument* равно **Int32**. Чтобы изменить тип, измените значение *TypeArgument* поле со списком в сетке свойств.|  
   
  По умолчанию именем итератора цикла является **элемент**. Можно изменить имя переменной итератора в конструкторе операций <xref:System.Activities.Statements.ForEach%601>. Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ForEach%601>.  
   

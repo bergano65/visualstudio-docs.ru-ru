@@ -20,16 +20,17 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae6ff23763300a4baa748479c609217123c765c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
   Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- **Применяется к:** информация в этой статье относится к проектам надстроек VSTO для Excel. Для получения дополнительной информации см. [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Применяется к:** информация в этой статье относится к проектам надстроек VSTO для Excel. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
@@ -74,23 +75,23 @@ ms.lasthandoff: 10/31/2017
   
 5.  В окне **Свойства** измените следующие свойства.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Имя**|**Button**|  
+    |**Name**|**Button**|  
     |**Label**|**Button**|  
   
 6.  Добавьте второй флажок в **group1**, а затем измените следующие свойства.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Имя**|**NamedRange**|  
+    |**Name**|**NamedRange**|  
     |**Label**|**NamedRange**|  
   
 7.  Добавьте третий флажок в **group1**, а затем измените следующие свойства.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Имя**|**Элемент управления ListObject**|  
+    |**Name**|**Элемент управления ListObject**|  
     |**Label**|**Элемент управления ListObject**|  
   
 ## <a name="adding-controls-to-the-worksheet"></a>Добавление элементов управления на лист  
@@ -185,7 +186,7 @@ ms.lasthandoff: 10/31/2017
   
      Элементы управления, добавленные в Sheet1, больше не отображаются.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения об элементах управления в проектах надстройки VSTO для Excel см. в следующем разделе:  
   
 -   Дополнительные сведения о сохранении элементов управления на лист, см. VSTO для Excel надстройки пример динамических элементов управления в [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  

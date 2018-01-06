@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 65510d727fdf0640ca8efa646a14d0814951cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8288db6ddca4041a409b435ccd730d0b15b013b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-activity-designer"></a>Использование конструктора действия для прежних версий
 В данном разделе описано использование конструктора действий в средстве [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] более ранней версии. Используйте конструктор более ранней версии, если приложение должно ориентироваться на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/27/2017
   
 |Свойство|Комментарии|  
 |--------------|--------------|  
-|**Имя**|Имя действия.|  
+|**Name**|Имя действия.|  
 |**Базовый класс**|Базовый класс от которого наследуется действие. Базовый класс по умолчанию — [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). В **свойства** окно, нажмите кнопку **базовый класс** многоточие **[...]**  для выбора другого базового класса в [Обзор и выбор диалоговое окно типа .NET (для прежних версий)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  
 |**Описание**|Пользовательское описание действия.|  
 |**Включено**|Значение **True** по умолчанию, чтобы включить проверку и выполнение действия. Значение **False** Чтобы выключить проверку и выполнение действия. Сведения о выполнении и проверке действия см. в разделе [разработка действий рабочего процесса](http://go.microsoft.com/fwlink?LinkID=65024).|  

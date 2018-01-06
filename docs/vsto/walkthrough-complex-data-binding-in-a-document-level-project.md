@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dff7896b24508891a62ad3a0760880ed6a68a65a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 10d35a0cec1e927fbc264d64ef911503f68f1606
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Сложная привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы сложная привязка данных в проекте уровня документа. Можно привязать несколько ячеек в лист Microsoft Office Excel к полям базы данных "Борей" SQL Server.  
@@ -182,7 +183,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Добавьте следующие данные в пустой строке.  
   
-    |EmployeeID|LastName|FirstName|Заголовок|  
+    |КодСотрудника|LastName|FirstName|Заголовок|  
     |----------------|--------------|---------------|-----------|  
     |10|Климов|Сергей|Менеджер по продажам|  
   
@@ -218,7 +219,7 @@ ms.lasthandoff: 10/31/2017
   
      Фильтр удаляется и отображаются все строки.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы привязки таблицы в базе данных к объекту списка. Ниже приводятся некоторые из возможных последующих задач.  
   
 -   Кэширование данных использовать в автономном режиме. Дополнительные сведения см. в разделе [как: кэширование данных для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  

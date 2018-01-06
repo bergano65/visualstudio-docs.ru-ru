@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: b6b6c0498b98f38b786ce846fd6d975287a2c75e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8be40a9cae29291951a320422755f0ff5d1f7365
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallel-activity-designer"></a>Конструктор действия Parallel
 Действие <xref:System.Activities.Statements.Parallel> выполняет коллекцию дочерних действий параллельно.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
 |Имя свойства|Обязательно|Использование|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **параллельных**. Значение можно дополнительно изменить в **свойства** сетки или напрямую в заголовке конструктора действий.|  
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Содержит коллекцию дочерних действий, которые должны быть выполнены.|  
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|Да|Содержит коллекцию дочерних действий, которые должны быть выполнены.|  
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Вычисляется после завершения какой-либо ветви. Если значение равно **True**, то запланированные ожидающие выполнения ветви отменяются. Если это свойство не задано или равно **False**, действие завершается, если все его дочерние действия будут завершены. Значение по умолчанию — **null**.|  
   
 ## <a name="see-also"></a>См. также  

@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d89215c759b4fabc48f697100f2935d0fa33e5ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0b54ad4592e22f828074ef29d734f7f9441921f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Практическое руководство. Повторное включение надстройки VSTO, которая была отключена
   Приложения Microsoft Office могут отключать надстройки VSTO, которые ведут себя непредсказуемым образом. Если приложение не загружает надстройку VSTO при попытке выполнить отладку, возможно, вы жестко или мягко отключили надстройку VSTO.  

@@ -23,11 +23,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4293d13ffc5b69c23c0b613a3d9747248d6fa790
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3df07b6f60d4b870c830fc419b88decbe2f8fde1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Необязательные параметры в решениях Office
   Многие методы в объектных моделях приложений Microsoft Office принимают необязательные параметры. При использовании Visual Basic для разработки решения Office в Visual Studio значение для необязательных параметров передавать не нужно, так как для каждого отсутствующего параметра автоматически используется значение по умолчанию. В большинстве случаев можно также опустить необязательные параметры в проектах Visual C#. Тем не менее, нельзя опускать необязательные **ref** параметры `ThisDocument` классов в проектах уровня документа Word.  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>См. также  
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

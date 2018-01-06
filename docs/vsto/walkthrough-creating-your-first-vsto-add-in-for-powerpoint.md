@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655aea7bed7e61bd37f30240d02a8214b9ff23ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d0f0a2162c4144c6a9fd67650d467b9828a3add
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Возможности, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   написание кода, использующего объектную модель PowerPoint для добавления текстового поля в каждый новый слайд;  
   
--   построение и запуск проекта для тестирования;  
+-   Построение и запуск проекта для тестирования.  
   
 -   очистка проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
   
@@ -71,15 +72,15 @@ ms.lasthandoff: 10/31/2017
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает **FirstPowerPointAddIn** проект и открывает **ThisAddIn** файл исходного кода в редакторе.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Написание кода, добавляющего текст в каждый новый слайд  
- Добавьте код в файл кода ThisAddIn. Новый код использует объектную модель PowerPoint для добавления текстового поля в каждый новый слайд. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
+ Затем добавьте код в файл ThisAddIn. Новый код использует объектную модель PowerPoint для добавления текстового поля в каждый новый слайд. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
   
--   Частичное определение класса `ThisAddIn`. Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели PowerPoint. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
+-   Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели PowerPoint. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
   
 -   Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда PowerPoint загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Дополнительные сведения см. в разделе [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
 #### <a name="to-add-a-text-box-to-each-new-slide"></a>Добавление текстового поля в каждый новый слайд  
   
-1.  В файл кода ThisAddIn добавьте указанный ниже код в класс `ThisAddIn`. В коде определяется обработчик события <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> объекта <xref:Microsoft.Office.Interop.PowerPoint.Application>.  
+1.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. В коде определяется обработчик события <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> объекта <xref:Microsoft.Office.Interop.PowerPoint.Application>.  
   
      Когда пользователь добавляет новый слайд в активную презентацию, этот обработчик событий добавляет текстовое поле в верхнюю часть нового слайда, а также добавляет в поле текст.  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 10/31/2017
   
  Для изменения каждого нового слайда в приведенных выше примерах кода используются следующие объекты:  
   
--   Поле `Application` класса `ThisAddIn`. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.PowerPoint.Application>, который представляет текущий экземпляр PowerPoint.  
+-   Поле `Application` класса `ThisAddIn` . Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.PowerPoint.Application>, который представляет текущий экземпляр PowerPoint.  
   
 -   Параметр `Sld` обработчика событий для события <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>. Параметр `Sld` — это объект <xref:Microsoft.Office.Interop.PowerPoint.Slide>, который представляет новый слайд. Дополнительные сведения см. в разделе [решения PowerPoint](../vsto/powerpoint-solutions.md).  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для PowerPoint, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах:  
   
 -   Общие задачи программирования, которые можно выполнять в надстройках VSTO для PowerPoint. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  

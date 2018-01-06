@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda89cc132ecd496605c19194c0221de503f4469
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8720fe94797e212cb332368572b291ce7fb40a26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-xml-files"></a>Как изменять XML-файлы
 Редактор XML - это новый редактор для XML-файлов. Его можно использовать для отдельных XML-файлов или файлов, связанных с проектами Visual Studio. Редактор XML связан со следующими расширениями файлов: CONFIG, DTD, XML, XSD, XDR, XSLT и VSSETTINGS. Для редактора XML также зарегистрированы файлы всех типов с содержимым в формате XML или DTD, для которых не зарегистрирован специальный редактор.  

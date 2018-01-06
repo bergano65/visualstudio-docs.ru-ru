@@ -30,11 +30,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097a4247ccc7604dd4c39b81e0f733578fc91c89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-task-panes"></a>Настраиваемые области задач
   Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Настраиваемые области задач позволяют создать собственную область задач и предоставлять пользователям знакомый интерфейс для доступа к функциям вашего решения. Например, интерфейс может содержать элементы управления, которые выполняют код для изменения документов или отображения данных из источника данных.  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
   
  В следующей таблице перечислены изменения, которые можно выполнять в настраиваемой области задач с помощью свойств <xref:Microsoft.Office.Tools.CustomTaskPane>.  
   
-|Задача|Свойство|  
+|Задача|Свойство.|  
 |----------|--------------|  
 |Изменение размера области задач|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
 |Изменение расположения области задач|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
  В следующей таблице перечислены события, которые можно обрабатывать для реагирования на изменения, вносимые пользователем в настраиваемой области задач.  
   
-|Задача|Событие|  
+|Задача|событие|  
 |----------|-----------|  
 |Реагирование на изменение пользователем расположения области задач.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |Реагирование в случае, когда пользователь скрывает область задач или делает ее видимой.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  

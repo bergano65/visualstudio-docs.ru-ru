@@ -26,16 +26,17 @@ caps.latest.revision: "88"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 236bd457f478d21ed27d31b0a28871e1102a1547
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: db8c6e3363cf1a67dfef5f3dd606dd65ed6f7a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка приложений Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.  
   
- Содержание раздела  
+ В этом разделе.  
   
 -   [Создание надстроек для Office и SharePoint](#Apps)  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
  **Дополнительные сведения**  
   
-|Целевой тип|См.|  
+|Кому|См.|  
 |--------|---------|  
 |Дополнительные сведения о средствах разработки Napa для Office 365.|[Средства разработки Napa для Office 365](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
  **Дополнительные сведения**  
   
-|Целевой тип|См.|  
+|Кому|См.|  
 |--------|---------|  
 |Узнайте больше о надстройках Office, а затем создайте собственную надстройку.|[Надстройки Office](http://msdn.microsoft.com/office/dn448457)|  
 |Сравните различные способы расширения возможностей Office и решите, следует ли использовать приложение или надстройку Office.|[Схема действий для надстроек Office, VSTO и VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
  **Дополнительные сведения**  
   
-|Целевой тип|См.|  
+|Кому|См.|  
 |--------|---------|  
 |Узнайте больше о надстройках SharePoint, а затем создайте собственную надстройку.|[Надстройки SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Сравните надстройки SharePoint с традиционными решениями SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
  **Дополнительные сведения**  
   
-|Целевой тип|Чтение|  
+|Кому|Чтение|  
 |--------|----------|  
 |Сравните различные способы расширения возможностей Office и решите, следует ли использовать надстройку VSTO или надстройку Office.|[Схема действий для надстроек Office, VSTO и VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
 |Создание надстройки VSTO.|[Создание настройки VSTO с помощью Visual Studio](https://msdn.microsoft.com/library/jj620922.aspx)|  
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
  **Дополнительные сведения**  
   
-|Целевой тип|См.|  
+|Кому|См.|  
 |--------|---------|  
 |Сравните решения SharePoint с надстройками SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
 |Создайте решение SharePoint.|[Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)|  

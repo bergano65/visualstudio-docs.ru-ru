@@ -18,11 +18,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e528bb0ef732400639f8604cf471d7f54a89ae73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b5dcbf99dcc6005c89a7bc67030f2e0f2fddfc5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Практическое руководство. Заполнение документов данными из базы данных
   Доступ к данным в проектах уровня документа для Microsoft Office можно получить таким же образом, как при доступе к данным в проектах Windows Forms. Используйте те же средства и код для получения данных из базы данных в ваше решение. Также можно использовать элементы управления Windows Forms для отображения данных.  

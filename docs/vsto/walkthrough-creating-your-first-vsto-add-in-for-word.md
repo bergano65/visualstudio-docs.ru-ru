@@ -20,11 +20,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a61a56401e97a47da0903dadfff35e16c974bbc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb36af8973ce44de9c6e7bbb06af8040da420dbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Пошаговое руководство. Создание первой надстройки VSTO для Word
   В этом вводном пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Word. Возможности, создаваемые в таком решении, доступны для самого приложения независимо от того, какие документы открыты.  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>Написание кода для добавления текста в сохраняемый документ  
  Добавьте код в файл кода ThisAddIn. Новый код использует объектную модель Word для добавления стандартного текста в каждый сохраненный документ. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
   
--   Частичное определение класса `ThisAddIn`. Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Word. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
+-   Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Word. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.  
   
 -   Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда Excel загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Дополнительные сведения см. в разделе [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
@@ -122,7 +123,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для Word, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.  
   
 -   Общие задачи программирования, которые можно выполнять в надстройках VSTO: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  

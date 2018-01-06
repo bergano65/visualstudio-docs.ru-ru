@@ -23,11 +23,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 70c956981c9e211d16d39ac22f759b6a21e0bc5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 66b9c93c9a1c4bcf55b4efc5e95d5b6353f9bd68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство. Вызов кода из VBA в надстройках VSTO
   В этом пошаговом руководстве показано, как предоставить объект в надстройке VSTO другим решениям Microsoft Office, включая Visual Basic для приложений (VBA) и надстроек VSTO COM.  
@@ -117,7 +118,7 @@ ms.lasthandoff: 10/31/2017
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Для получения дополнительной информации см. [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -145,7 +146,7 @@ ms.lasthandoff: 10/31/2017
   
 9. Выйдите из Excel.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о программировании надстроек VSTO см. в следующих статьях:  
   
 -   Для автоматизации ведущего приложения и выполнения других задач в проектах надстроек VSTO используйте класс `ThisAddIn` . Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  

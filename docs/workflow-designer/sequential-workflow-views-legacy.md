@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 74aac4ab6406b4f400d6d5951c00b2a92af91ec0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8b54fbb37d33bdb6d4e397c81ad85bffd39b221f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sequential-workflow-views-legacy"></a>Представления последовательных рабочих процессов (для прежних версий)
 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] предоставляет средство [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий, которое можно использовать для приложений, работающих с [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
   
  В следующей таблице перечислены имена и описание каждого представления.  
   
-|Параметры меню/вкладок|Описание|  
+|Параметры меню/вкладок|Описание:|  
 |----------------------|-----------------|  
 |**Представление SequentialWorkflow**|Щелкните правой кнопкой мыши область конструктора и выберите **представление SequentialWorkflow** параметр в контекстном меню, чтобы отобразить **последовательный рабочий процесс** представление, которое показывает, основанные на действиях графический представление последовательного рабочего процесса. Или выберите **представление SequentialWorkflow** из **рабочего процесса** меню.|  
 |**Просмотр обработчика отмены**|Щелкните правой кнопкой мыши область конструктора и выберите **Просмотр обработчика отмены** параметр в контекстном меню, чтобы отобразить **последовательный рабочий процесс** просмотреть, какие показано [CancellationHandlerActivity ](http://go.microsoft.com/fwlink?LinkID=65050) действия, связанного с рабочим процессом. Или выберите **Просмотр обработчика отмены** из **рабочего процесса** меню.|  

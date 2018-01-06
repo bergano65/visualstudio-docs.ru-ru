@@ -19,11 +19,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50960f95b317f389cfe9f99154e51a5103b419d3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45052deff58e992b427f72188fcb0dc8ade91b95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-office-solutions"></a>Обеспечение безопасности решений Office
   Модель безопасности для решений Office использует несколько технологий: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Центр управления безопасностью в Microsoft Office и зону ограниченных узлов браузера Internet Explorer. Работа различных возможностей безопасности описана в следующих разделах.  

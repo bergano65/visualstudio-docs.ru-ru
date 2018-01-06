@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: b7deb3daed85c0c15d299052642abcb732ff12c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 55061da71038b3af38049a431db08fda6638144f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-expression-editor"></a>Как использовать редактор выражений
 Редактор выражений является элементом управления [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], который используется во многих действиях рабочего потока в качестве средства их ввода и вычисления. Редактор выражений предоставляет полноценные возможности редактирования интегрированной среды разработки, включая IntelliSense, выделение цветом, сведения о параметре, подчеркивание некоторых типов ошибок волнистыми линиями, а также другие функции. Компилятор проверяет выражение после его ввода. Если выражение является недопустимым, то отображается значок ошибки. Редактор можно открыть как **редактор выражений** диалоговое окно.  

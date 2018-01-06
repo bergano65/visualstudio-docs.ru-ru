@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5093e5561140a0ebff57da1f7c21a8954ee58bb3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aa1cdd0dd563a5f87d4e32f779985afd63319032
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-argument-designer"></a>Как использовать конструктор аргументов
 По сравнению с предыдущими версиями [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], конструктор аргументов упрощает передачу данных в действие и из действия. Конструктор нажав **аргументы** кнопки в нижнем левом углу визуальной разработки. Конструктор содержит список аргументов, которые появляются в табличной форме и могут быть отсортированы по каждому заголовку столбца, за исключением **значение по умолчанию** столбца. Каждый аргумент содержит имя, направление передачи свойства (IN, OUT или IN/OUT), тип и значение выражения по умолчанию (если такое существует). Имя и значение выражения по умолчанию представляют собой изменяемые текстовые поля, а тип и направление - раскрывающееся меню. [! ВКЛЮЧИТЬ[crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).  

@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d75076bc811cc94a62f7b737116984a08295961
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a1e61b3b2055e6a32fa1e179232e7366fe2b3d16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Пошаговое руководство. Вызов кода из VBA в проекте Visual C#
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Excel из кода Visual Basic для приложений (VBA) в книге. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `Sheet1` , представление метода коду VBA в книге и вызов метода из кода VBA в книге.  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Для получения дополнительной информации см. [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -243,7 +244,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  Выйдите из Excel без сохранения изменений.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о вызове кода в решениях Office из VBA см. в следующих разделах:  
   
 -   Вызов кода в ведущем элементе в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual C#. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  

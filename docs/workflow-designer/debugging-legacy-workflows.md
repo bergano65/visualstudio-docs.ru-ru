@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2253eb414e58d5168cf6e1d2f4c22880d18d1bd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d15236de90af6a8749482f2b159d66c28a1b8c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-legacy-workflows"></a>Отладка рабочих процессов прежних версий
 При использовании средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий в среде [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] для сборки приложений [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], предназначенных для платформы .NET Framework 3.0 или 3.5, можно выполнять отладку рабочих процессов так же, как других программ, путем установки точек останова, присоединения к процессам, оценки потоков и стека вызова. Кроме того, существует возможность удаленной отладки.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/27/2017
   
 -   Отладка в смешанном режиме.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Вызов отладчика Visual Studio для Windows Workflow Foundation (для прежних версий)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
  [Отключение отладчика Visual Studio для Windows Workflow Foundation (для прежних версий)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  

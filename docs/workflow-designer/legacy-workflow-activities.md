@@ -15,18 +15,19 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8a5c35fb036c1d9a94bd42c5ceabe17ae65e7b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 756fa86cf892120b0062e2816f146425ac1b4fa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-workflow-activities"></a>Действия с рабочими процессами для прежних версий
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] включает набор действий по умолчанию, которые предоставляют функции работы с потоками управления, условиями, обработки событий, управления состоянием и взаимодействия с приложениями и службами. При разработке рабочих процессов можно использовать действия, предоставляемые системой [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], или создавать собственные пользовательские действия.  
   
  В следующей таблице приведен набор предопределенных действий среды [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]. Многие, но не все из этих действий представлены конструкторами действий, которые можно получить доступ из **элементов** из [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Чтобы создать действие, перетащите его конструктор из **элементов** и поместите его в рабочей области конструирования.  
   
-|Действие|Описание|  
+|Действие|Описание:|  
 |--------------|-----------------|  
 |[CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65025)|При использовании **HandleExternalEventActivity** действия для входящих и исходящих взаимодействий с локальными службами. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Использование действия CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65060).|  
 |[Операции CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050)|Используется для хранения логики сложного действия, отмененного до завершения выполнения всех дочерних элементов составного действия. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Использование действия CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65061).|  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/27/2017
   
  [!INCLUDE[crabout](../test/includes/crabout_md.md)]способы создания пользовательских действий см. в разделе [Разработка пользовательских действий](http://go.microsoft.com/fwlink?LinkID=65023) и [использование конструктора действий прежних версий](../workflow-designer/using-the-legacy-activity-designer.md).  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Представления действий (для прежних версий)](../workflow-designer/activity-views-legacy.md)  
  Описание различных представлений конструктора действий.  
   

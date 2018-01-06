@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e012b9f173e432cfee88beec7d861faaa7be03b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 197da04c42b97f274979e46a2ba4691747365362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Рекомендации по созданию областей формы Outlook
   Следующие сведения помогут вам оптимизировать области формы и предотвращать потенциальные проблемы.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="UsingFormRegions"></a> Using Form Region Names  
  Существует несколько имен, используемых для описания области формы. Важно понимать разницу между этими именами и то, как они влияют на область формы. В следующей таблице представлено описание этих имен.  
   
-|Имя области формы|Описание|  
+|Имя области формы|Описание:|  
 |----------------------|-----------------|  
 |Имя элемента области формы|Имя, заданное для элемента **Область формы Outlook** в диалоговом окне **Добавление нового элемента** . Это имя файла кода области формы, которое отображается в **обозревателе решений**.|  
 |Свойство<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> |Вы указываете это имя на странице **Введите текст описания и выберите параметры отображения** мастера **создания области формы Outlook** . Оно отображается как свойство **FormRegionName** в окне **Свойства** .<br /><br /> Используйте свойство <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> , чтобы указать метку, идентифицирующую область формы в пользовательском интерфейсе Outlook. Для отдельных областей формы это имя отображается в виде кнопки на ленте элемента Outlook.<br /><br /> Для соседних областей формы это имя отображается в заголовке над областью формы.|  

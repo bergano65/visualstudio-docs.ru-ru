@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e6e4b91bb64601dbd54046e7d9a3ebfd9a73943
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: c4be3c2f5428b7b2c246c1649a73ae8584ffe28e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-document-validation"></a>Проверка XML-документа
 Редактор XML проверяет синтаксис XML 1.0, а также выполняет проверку правильности данных по мере их ввода. Редактор может выполнять проверку правильности с помощью определения типа документа (DTD) или схемы. Все ошибки формата XML 1.0 выделяются подчеркиванием красными волнистыми линиями. Синими волнистыми линиями подчеркиваются семантические ошибки, обнаруженные на основе проверки правильности по определению DTD или по схеме. Для каждой ошибки создается связанная с ней запись в списке ошибок. Также можно просмотреть сообщение об ошибке, удерживая указатель мыши над подчеркиванием волнистой линией.  

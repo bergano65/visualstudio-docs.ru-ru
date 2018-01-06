@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d442dbf376d5615b6c10842c16d01183fc70056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d8c1d13263972462ef30e55a34c316f5dd0c7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-xml-snippets"></a>Как использовать XML-фрагменты
 Можно вызывать XML-фрагменты с помощью следующих двух команд из контекстного меню XML Editor. **Вставить фрагмент** вставляет XML-фрагмент в положении курсора. **Окружить** команда создает оболочку для XML-фрагмент вокруг выбранного текста. Для каждого XML-фрагмента имеются назначенные типы фрагментов. Типы фрагментов определяют, будет ли фрагмент доступен с **вставить фрагмент** команды **окружить** или для обеих команд.  

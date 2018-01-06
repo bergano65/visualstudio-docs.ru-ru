@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1161af5501ebd0df8137293b137600697af91516
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 08b20f308e4022b7ad12d68a92f7cb5422728639
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Практическое руководство. Настройка встроенной вкладки
   На встроенную вкладку можно добавить группы и элементы управления. Встроенная вкладка — это вкладка, которая уже есть на ленте приложения Microsoft Office. Например **данные** — Встроенная вкладка в Excel. При создании настраиваемой группы она отображается на вкладке последней, но вы можете свободно перемещать группу на вкладке.  

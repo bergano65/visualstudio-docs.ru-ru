@@ -32,11 +32,12 @@ caps.latest.revision: "76"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8d086aec822d0e2e9ecc80834703cc5481f9eef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 106b61c18b9124a72c1b149dcab04e30be5f25f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Общие сведения об использовании элементов управления Windows Forms в документах Office
   Элементы управления Windows Forms — это объекты, с которыми пользователи могут взаимодействовать для ввода данных и работы с ними. В проектах для Microsoft Office Excel или Microsoft Office Word на уровне документа можно добавлять элементы управления Windows Forms в документ или книгу в проекте во время проектирования или добавить их программными средствами в среде выполнения. Программными средствами в среде выполнения эти элементы управления можно добавлять в любой открытый документ или книгу в надстройке VSTO для Excel или Word.  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="adding-windows-forms-controls-programmatically"></a>Добавление элементов управления Windows Forms программными средствами  
  В документы Word или листы Excel вы можете добавлять элементы управления Windows Forms в среде выполнения. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] предоставляет вспомогательные методы для добавления наиболее распространенных элементов управления Windows Forms. Эти вспомогательные методы позволяют быстро добавлять элементы управления в документ Office и получать доступ к объединенным функциональным возможностям элементов управления Windows Forms и их функциям, связанным с Office.  
   
- Дополнительные сведения см. в разделе [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="using-windows-forms-controls-in-document-level-projects"></a>Использование элементов управления Windows Forms в проектах уровня документа  
  Некоторые аспекты использования элементов управления Windows Forms в документах, относящиеся только к проектам уровня документа, позволяют создавать пользовательский интерфейс документа с помощью конструктора Visual Studio.  
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Чтобы добавить элемент управления как перемещаемую форму, используйте перегрузку, которая принимает верхнюю и левую координаты элемента управления.  
   
- Дополнительные сведения см. в разделе [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  При открытии шаблона Word в конструкторе Visual Studio не являющиеся встроенными элементы управления шаблона могут не отображаться, поскольку Visual Studio открывает шаблон в **обычном** режиме. Чтобы увидеть эти элементы управления, измените режим представления на **режим разметки**.  
   

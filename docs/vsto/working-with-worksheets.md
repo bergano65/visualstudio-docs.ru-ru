@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc188299dbc5fe6f8f048b4971fa4973ba2f72f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 979f3aa0d138d1e66248ffc51b4f4cc72d62adf4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-worksheets"></a>Работа с листами
   Классы <xref:Microsoft.Office.Tools.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Worksheet> содержат методы и свойства, применяемые для выполнения задач с листами.  

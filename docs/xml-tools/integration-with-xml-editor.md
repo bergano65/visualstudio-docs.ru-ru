@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab405ec541393e2b9aa256b40ccea5cce061cdc3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5fef7ed581ad39488bc35d9cc46ac211008f5962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integration-with-xml-editor"></a>Интеграция с редактором XML
 Конструктор XML-схем объединен с редактором XML. Если вы измените XSD-файл в редакторе XML, изменения будут отражены в [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md). Если у вас есть [представление графика](../xml-tools/graph-view.md) или [представления модели содержимого](../xml-tools/content-model-view.md) открыт, изменения будут отражены и в них. Можно перемещаться между конструктором XML-схем и редактором XML, используя любой из следующих методов.  

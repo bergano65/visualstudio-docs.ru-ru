@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2733464db0ab6047af7c47fb8278d7126b41fe6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 441ec5380e6b722b96fee731388b652a86a6828b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Диалоговое окно «Обзор и выбор типа .NET» (для прежних версий)
 В этом разделе описывается использование **Обзор и Выбор типа .NET** диалоговое окно в прежних [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -26,10 +27,10 @@ ms.lasthandoff: 10/27/2017
   
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **Обзор и Выбор типа .NET** диалоговое окно.  
   
-|Элемент пользовательского интерфейса|Описание|  
+|Элемент пользовательского интерфейса|Описание:|  
 |----------------|-----------------|  
 |**Имя типа:**|Имя выбранного в данный момент типа.|  
-|**Тип**|Левая панель содержит представление в виде дерева сборок, на которые есть ссылки. Правая панель содержит типы, доступные для выделения из сборки, на которую есть ссылка, выбранной в левой панели.|  
+|**Type**|Левая панель содержит представление в виде дерева сборок, на которые есть ссылки. Правая панель содержит типы, доступные для выделения из сборки, на которую есть ссылка, выбранной в левой панели.|  
   
 ## <a name="see-also"></a>См. также  
  [Использование конструктора действия для прежних версий](../workflow-designer/using-the-legacy-activity-designer.md)

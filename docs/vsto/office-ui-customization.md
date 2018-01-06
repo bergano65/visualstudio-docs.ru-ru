@@ -21,11 +21,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7af3c33ed45a5e0b9678a41900280b1e665766ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization"></a>Настройка пользовательского интерфейса Office
   Для настройки пользовательского интерфейса приложений Microsoft Office можно использовать Office Developer Tools в Visual Studio. В этой статье описываются возможности пользовательского интерфейса, которые можно настраивать:  
@@ -49,13 +50,13 @@ ms.lasthandoff: 10/31/2017
   
 |Функция|Поддерживаемые типы проектов|Поддерживаемые приложения Microsoft Office|  
 |-------------|-----------------------------|---------------------------------------------|  
-|Панель действий|Настройки уровня документа.|Excel<br /><br /> Word|  
-|Настраиваемые области задач|Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
-|Настраиваемый пользовательский интерфейс ленты|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Word<br /><br /> Visio|  
-|Представление Backstage|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Word<br /><br /> Visio|  
+|Панель действий|Настройки уровня документа.|Excel<br /><br /> Слово|  
+|Настраиваемые области задач|Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Слово<br /><br /> Excel|  
+|Настраиваемый пользовательский интерфейс ленты|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Слово<br /><br /> Visio|  
+|Представление Backstage|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Слово<br /><br /> Visio|  
 |Области формы Outlook|Надстройки VSTO|Outlook - приложение|  
-|Элементы управления в документах|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> Word|  
-|Контекстные меню|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
+|Элементы управления в документах|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> Слово|  
+|Контекстные меню|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Слово<br /><br /> Visio<br /><br /> Excel|  
   
 ##  <a name="Actions"></a>Панели действий и настраиваемые области задач  
  Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Практически все приложения Microsoft Office содержат встроенные области задач. Примером области задач является область задач "Справка" в Word.  

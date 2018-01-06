@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40076f607e66ec76aaa42ae297d22b38a6234ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 46e83b8450a441eb7bc405c855271e315edb2e3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>Пошаговое руководство. Программирование реакции на события элементов управления NamedRange
   В этом пошаговом руководстве демонстрируется добавление <xref:Microsoft.Office.Tools.Excel.NamedRange> управления на лист Microsoft Office Excel и программированию его событий с помощью средств разработки Office в Visual Studio.  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  Щелкните за пределами `namedRange1`и убедитесь, что текст в отношении <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> событие вставляется голубым цветом в `namedRange2`.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы Программирование реакции на события <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления. Вот задачу, которая может быть следующей:  
   
 -   Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).  

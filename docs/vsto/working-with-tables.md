@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3723d4612df985b1ddd9bd31188596ebefc3548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6baa1a72ec8f51a25d5abc0539b27b71b41c5d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-tables"></a>Работа с таблицами
   В подразделах этого раздела приведены пошаговые инструкции и примеры кода для работы с таблицами в проектах Office с помощью объектной модели Microsoft Office Word. В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применяются в настройках на уровне документа.  

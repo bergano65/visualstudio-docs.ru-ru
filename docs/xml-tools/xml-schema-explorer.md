@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fa99ea63f9af2c69519691add827053b3059ac0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-explorer"></a>Обозреватель схемы XML
 Обозреватель XML-схем интегрирован с Microsoft Visual Studio, а редактор XML позволяет работать со схемами языка определения схемы XML (XSD). При открытии файла схемы XML **набора схем** узел отображается в обозревателе XML-схем. Все включенные, импортированные или переопределенные схемы для конечного файла, а также любые файлы, которые указаны через инструкцию `include` или `import`, также появляются в обозревателе XML-схемы.  
@@ -80,7 +81,7 @@ ms.lasthandoff: 11/02/2017
   
  Нельзя перетаскивать локальные узлы или импортируемые пространства имен.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
 -   [Поиск набора схем](../xml-tools/searching-the-schema-set.md)  
   

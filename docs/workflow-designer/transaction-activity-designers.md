@@ -11,16 +11,17 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d761023ab8b933283a2b7f340039f9e7e63acb8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 63f49363ae60ce5188889e4b6bad7f7d491e2949
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="transaction-activity-designers"></a>Конструкторы действий транзакций
 Конструкторы операций транзакций используются для создания и настройки действий транзакций, например, компенсации и подтверждения. В подразделах этого раздела и перечисленных в следующей таблице приводится описание использования действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.CancellationScope>.  
   

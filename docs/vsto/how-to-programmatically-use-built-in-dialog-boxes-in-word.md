@@ -18,11 +18,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd7d81837699aedd1c6c61d0cb0d9e2e9a64db4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 25353b95a997380ea682059a43494cc2a977f943
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Практическое руководство. Программное использование встроенных диалоговых окон в Word
   При работе с Microsoft Office Word, бывают ситуации, при необходимости отображать диалоговые окна для ввода данных пользователем. Несмотря на то, что вы можете создать собственные, также можно использовать подход с использованием встроенных диалоговых окон в Word, представленных в <xref:Microsoft.Office.Interop.Word.Dialogs> коллекцию <xref:Microsoft.Office.Interop.Word.Application> объекта. Это позволяет получить доступ к более чем 200 встроенных диалоговых окон, которые представлены в виде перечисления.  

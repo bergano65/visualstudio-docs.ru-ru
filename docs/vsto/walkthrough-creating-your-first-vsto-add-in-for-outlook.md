@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 514e6e0f52867b586135050d555508caec8cb6e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a5fb633d58485ab605cbfed1d3bddeb7b70e100f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>Пошаговое руководство. Создание первой надстройки VSTO для Outlook
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Outlook. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какой элемент Outlook открыт. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Теперь, когда вы создали базовую надстройку VSTO для Outlook, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах.  
   
 -   Общие задачи программирования, которые можно выполнять с помощью надстроек VSTO для Outlook. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  

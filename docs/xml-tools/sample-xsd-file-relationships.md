@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f747a6fd05d19d56ce94f368cb89a18ff83a8b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8832852f8b27b1ea3b2bd97abc271a2afc076743
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-xsd-file-relationships"></a>Образец XSD-файла: связи
 Следующий файл XSD используется в различных примерах документации конструктора схем XSD. Данный файл является схемой типичного заказа на покупку, включающей заметки и документацию.  

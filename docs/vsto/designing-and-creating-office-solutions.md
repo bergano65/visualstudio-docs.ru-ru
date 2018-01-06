@@ -20,11 +20,12 @@ caps.latest.revision: "103"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02f5d5cf2d726755cce4b3de2dcd74a5dad18db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b7322faa797ea9ce51af0cd716ffb6536f062ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-and-creating-office-solutions"></a>Designing and Creating Office Solutions
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания решений Office различного типа. В этом разделе описываются шаблоны проектов и приведены рекомендации по созданию проектов Office. Сведения о реализации кода и настроек пользовательского интерфейса после создания проекта см. в разделе [разработка решений Office](../vsto/developing-office-solutions.md).  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Создание решений для 64-разрядного выпуска Microsoft Office  
  Microsoft Office доступен в 64- и 32-разрядном выпусках. Для создания решений Office, которые могут выполняться в любом выпуске, целевой платформы для проекта должно быть присвоено **любой ЦП**. Это значение по умолчанию для проектов Office. Дополнительные сведения см. в разделе [построение решений Office](../vsto/building-office-solutions.md).  
   
- Существуют отдельные 64- и 32-разрядная версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которые используются в 64- и 32-разрядном выпусках Microsoft Office. Для получения дополнительной информации см. [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
+ Существуют отдельные 64- и 32-разрядная версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которые используются в 64- и 32-разрядном выпусках Microsoft Office. Дополнительные сведения см. в разделе [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
 ## <a name="assemblies-in-office-solutions"></a>Сборки в решениях Office  
  При создании проекта Office с помощью средств разработки решений на базе Office в Visual Studio разрабатываемый код в конечном итоге компилируется в сборку. Обычно сборка развертывается на общем сервере или в каталоге на клиентском компьютере.  

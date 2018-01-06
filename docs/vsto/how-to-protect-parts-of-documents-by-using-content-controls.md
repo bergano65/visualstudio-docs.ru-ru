@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf53de6bb247ecb0cf3195310e84c0be548eb717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 894379e107865e4a4d187c963a88fe23b6eec6d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Практическое руководство. Защита частей документов с помощью элементов управления содержимым
   При защите части документа вы запрещаете пользователям изменять или удалять содержимое в ней. Для защиты частей документа Microsoft Office с помощью элементов управления содержимым можно использовать несколько способов:  

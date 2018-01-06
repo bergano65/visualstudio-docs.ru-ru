@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a0868c898b9713bec07939a2e0404eb17d988ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d01c39479918b95203a7dacdba17c1ff9d1ec9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer"></a>Конструктор схемы XML
 Конструктор XML-схем (конструктор XSD) является графическим инструментом, позволяющим визуализировать набор схем на разных уровнях абстракции. Конструктор XSD состоит из следующих основных компонентов:  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Представления модели содержимого](../xml-tools/content-model-view.md) предоставляет графическое представление подробных сведений о локальных и глобальных узлах схемы, включая простые и сложные типы, элементы, группы, атрибуты и группы атрибутов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Обозреватель схемы XML](../xml-tools/xml-schema-explorer.md)  
  Содержит общие сведения об обозревателе XML-схем и о том, как он позволяет работать со схемами языка определения схемы XML (XSD).  
   

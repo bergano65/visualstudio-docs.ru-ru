@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Общие сведения об объектной модели Visio
   Для разработки решений Office для Microsoft Office Visio вы можете взаимодействовать с объектной моделью Visio. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Visio и определены в пространстве имен Microsoft.Office.Interop.Visio.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Page - объект  
   
-### <a name="application-object"></a>Объект Application  
+### <a name="application-object"></a>объект приложения;  
  Объект Microsoft.Office.Interop.Visio.Application представляет приложение Visio и является родителем для всех других объектов. Обычно его элементы применяются к Visio как к единому целому. Свойства и методы Microsoft.Office.Interop.Visio.Application и Microsoft.Office.Interop.Visio.ApplicationSettings объектов можно использовать для управления средой Visio.  
   
  В проектах надстройки VSTO, можно получить доступ к объекту Microsoft.Office.Interop.Visio.Application с помощью `Application` поле `ThisAddIn` класса. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  

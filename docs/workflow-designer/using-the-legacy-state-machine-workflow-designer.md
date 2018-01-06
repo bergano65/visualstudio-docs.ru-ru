@@ -20,11 +20,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 99be4338bcee9ffb5c7cb9cf28f6187128345f85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Использование конструктора рабочих процессов конечного автомата для прежних версий
 При создании нового проекта рабочего процесса состояние компьютера в [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] , ориентированного [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], вы можете использовать любой **рабочего процесса консольного приложения автомата** или  **Состояние библиотеки рабочего процесса машины** шаблонов проекта прежних версий. Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии. Сведения об устаревших шаблонов проекта конечного автомата см. в разделе [как: создать состояние компьютера рабочего процесса консольных приложений (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) и [как: Создание библиотеки рабочего процесса автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="state-machine-workflow-activities"></a>Действия рабочего процесса конечного автомата  
  В следующей таблице представлены основные действия, которые используются в конструкторе рабочих процессов конечного автомата.  
   
-|Имя панели элементов|Действие|Описание|  
+|Имя панели элементов|Действие|Описание:|  
 |------------------|--------------|-----------------|  
 |**Состояние**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Представляет состояние в конечном автомате; может содержать дополнительные **StateActivity** действия. Дополнительные сведения см. в разделе [использование действия StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Задает переход к новому состоянию. Дополнительные сведения см. в разделе [использование действия SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|  

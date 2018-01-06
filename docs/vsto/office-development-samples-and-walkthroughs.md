@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd90fbaf4e8f16d1975cbc540bedf2c1e26c018c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e8af98ecf48c01a7c81afad54398afdfdc8456b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Образцы и пошаговые руководства разработки Office
   Этот раздел содержит образцы приложений, пример кода и пошаговые руководства, которые иллюстрируют синтаксис, структуру и приемы, используемые для построения решений Microsoft Office.  
@@ -41,9 +42,9 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Заинтересованы в разработке решений, расширяющих возможности Office через [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и их можно создавать с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Примеры разработки решений Office](../vsto/office-development-samples.md)|Ссылки на образцы приложений, иллюстрирующих использование разработка решений Office и SharePoint в Visual Studio.|  
 |[Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)|Список пошаговых руководств, представляющих собой введение в средства разработки Office в Visual Studio и описывает, как можно интегрировать в бизнес-приложений Microsoft Office Word.|  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-sections"></a>Связанные разделы  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Ссылки на сведения об установке, шаблоны проектов, основных сборок взаимодействия Office, и новые возможности разработки для Office.|  
 |[Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Объясняет, как управляемый код работы решения Office с точки зрения разработчика и конечного пользователя и включает сведения о как управляемый код работает с документами Office и приложений.|  

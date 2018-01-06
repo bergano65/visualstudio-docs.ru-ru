@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a575ab2ede1c537ea4a62b27656946f838ef8b47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d367dbbe273f39bef9ebb6161211864d6d430b97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Окна рабочих процессов в Visual Studio (для прежних версий)
 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий, входящий в состав [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], можно использовать для приложений, работающих с [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Конструктор прежних версий - это визуальный конструктор, с помощью которого создаются рабочие процессы. Можно перетаскивать действия из **элементов** проектирования поверхность и настроить их там. Как и окно редактора [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], он занимает основную область окна, используемую другими окнами редакторов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Имя рабочего процесса отображается в строке заголовка окна [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Общие сведения об объектной модели Outlook
   Для разработки надстроек VSTO для Microsoft Office Outlook вы можете взаимодействовать с объектами, которые предоставляются объектной моделью Outlook. Объектная модель Outlook предоставляет классы и интерфейсы, которые представляют элементы пользовательского интерфейса. Например, объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет все приложение, объект <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> — папку, содержащую электронные сообщения или другие элементы, а объект <xref:Microsoft.Office.Interop.Outlook.MailItem> — электронное сообщение.  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="mapifolder-object"></a>Объект MAPIFolder  
  Объект <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> представляет папку, содержащую электронные сообщения, контакты, задачи и другие элементы. Outlook предоставляет 16 объектов <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> по умолчанию.  
   
- Объекты <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> по умолчанию определяются значениями перечисления <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Например:  
+ Объекты <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> по умолчанию определяются значениями перечисления <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Например, примененная к объекту директива  
   
  Соответствует Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox **папки "Входящие"** папку Outlook.  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="refdoc"></a> Использование документации по объектной модели Outlook  
  Полные сведения об объектной модели Outlook см. в справочнике по основной сборке взаимодействия (PIA) Outlook и в справочнике по объектной модели VBA.  
   
-### <a name="primary-interop-assembly-reference"></a>Документация по основной сборке взаимодействия  
+### <a name="primary-interop-assembly-reference"></a>Справочник по основной сборке взаимодействия  
  В справочных документах по основной сборке взаимодействия Outlook описываются типы основной сборки взаимодействия для Outlook 2010. Дополнительные сведения см. в разделе [Документация по основной сборке взаимодействия Outlook 2010](http://go.microsoft.com/fwlink/?LinkId=189580).  
   
  Помимо информации о всех типах в основных сборках взаимодействия, эта документация также содержит дополнительные сведения о структуре основных сборок взаимодействия и примеры кода для общих задач автоматизации Outlook.  
@@ -136,7 +137,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Работа с элементами контактов](../vsto/working-with-contact-items.md)|Содержит разделы, в которых описывается выполнение задач с контактами.|  
 |[Работа с элементами почты](../vsto/working-with-mail-items.md)|Содержит разделы, в которых описывается выполнение задач с элементами почты.|  

@@ -20,16 +20,17 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3d9ef7af80e7840405433ec7d87f647b90442c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bedad8aa3b47a3cdd09f3f94d927be88c5950964
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-text-in-documents"></a>Работа с текстом в документах
   В подразделах данного раздела приведены пошаговые инструкции и примеры кода для работы с текстом в проектах Office с помощью объектной модели Microsoft Office Word.  
   
- В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применялись в настройках на уровне документа.  
+ В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применяются в настройках на уровне документа.  
   
 |Задача|Процедура|  
 |----------|---------------|  

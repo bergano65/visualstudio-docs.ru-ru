@@ -35,11 +35,12 @@ caps.latest.revision: "67"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b9650014deb748607598b470d7eb797193213f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d994f3b8b6612313ec689947c1da4c5b423fe362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Программные ограничения ведущих элементов и элементов управления ведущего приложения
   Каждый ведущий элемент и элемент управления ведущего приложения создается, чтобы работать аналогично собственному объекту Microsoft Office Word или Microsoft Office Excel с дополнительными функциями. Но есть ряд фундаментальных различий между поведением во время выполнения ведущих элементов и элементов управления ведущего приложения с одной стороны и собственных объектов Office с другой стороны.  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
  В проектах уровня документа нельзя создавать ведущие элементы во время выполнения. Ведущие элементы можно создавать в проектах уровня документа только во время разработки. Дополнительные сведения см. в разделах [Document Host Item](../vsto/document-host-item.md), [Workbook Host Item](../vsto/workbook-host-item.md)и [Worksheet Host Item](../vsto/worksheet-host-item.md).  
   
- В проектах надстроек VSTO можно создавать ведущие элементы <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>и <xref:Microsoft.Office.Tools.Excel.Worksheet> во время выполнения. Дополнительные сведения см. в разделе [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ В проектах надстроек VSTO можно создавать ведущие элементы <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>и <xref:Microsoft.Office.Tools.Excel.Worksheet> во время выполнения. Для получения дополнительной информации см. [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="programmatically-creating-host-controls"></a>Программное создание элементов управления ведущего приложения  
  Во время выполнения можно программными средствами добавлять элементы управления ведущего приложения в ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet> . Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  

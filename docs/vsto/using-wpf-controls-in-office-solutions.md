@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f15eea2c0f1e7e62990d860007a7efc4966cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9cbb87017b910accae5ebc63b648691c50f88476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>Использование элементов управления WPF в решениях Office
   Хотя решения, созданные с помощью средств разработки Office в Visual Studio, предназначены для работы непосредственно с элементами управления Windows Forms, в них также можно использовать элементы управления WPF. Windows Presentation Foundation (WPF) — это альтернатива Windows Forms для разработки пользовательских интерфейсов. WPF использует язык разметки XAML для реализации новых методов включения элементов пользовательского интерфейса, объектов мультимедиа и документов. Дополнительные сведения см. в разделе [введение в WPF в Visual Studio 2015](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs).  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
      Visual Studio автоматически создает объект <xref:System.Windows.Forms.Integration.ElementHost>, в котором размещается пользовательский элемент управления WPF, в пользовательском элементе управления Windows Forms.  
   
-8.  Напишите код, который программными средствами добавляет пользовательский элемент управления Windows Forms в документ или на лист. Дополнительные сведения см. в разделе [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+8.  Напишите код, который программными средствами добавляет пользовательский элемент управления Windows Forms в документ или на лист. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
     > [!NOTE]  
     >  В конструкторе невозможно перетащить пользовательский элемент управления Windows Forms в документ или на лист.  

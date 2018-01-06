@@ -21,11 +21,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fcc1b96607c36fdfbc2f9940a7b7984b3b299fa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 22a894902a36aa12ff0962270391a2311ce40169
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Практическое руководство. Программное определение и выделение диапазонов в документах
   Вы можете определить диапазон в документе Microsoft Office Word с помощью объекта <xref:Microsoft.Office.Interop.Word.Range>. Можно выбрать весь документ несколькими способами, например, с помощью <xref:Microsoft.Office.Interop.Word.Range.Select%2A> метод <xref:Microsoft.Office.Interop.Word.Range> объекта или с помощью свойства Content <xref:Microsoft.Office.Tools.Word.Document> класс (в настройке на уровне документа) или <xref:Microsoft.Office.Interop.Word.Document> класс (в Надстройка VSTO).  

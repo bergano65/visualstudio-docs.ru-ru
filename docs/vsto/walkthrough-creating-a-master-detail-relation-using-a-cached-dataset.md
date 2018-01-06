@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b392b4de0288478c73fba8cecd88be1f701cd5ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 124f4ca6450b5fe19bc707627dfed03e46307cff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Пошаговое руководство: Создание отношения подробности Master с помощью кэшированного набора данных
   В этом пошаговом руководстве демонстрируется создание иерархического отношения на листе и кэширование данных, решения можно использовать в автономном режиме.  
@@ -187,7 +188,7 @@ ms.lasthandoff: 10/31/2017
   
 8.  Подключитесь к базе данных. Снова подключить компьютер сети, если база данных расположена на сервере, или запустите службы SQL Server, если база данных находится на компьютере разработчика.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы создания связи главного и подчиненного представлений данных на листе и кэширование набора данных. Ниже приводятся некоторые из возможных последующих задач.  
   
 -   Развертывание решения. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md)  

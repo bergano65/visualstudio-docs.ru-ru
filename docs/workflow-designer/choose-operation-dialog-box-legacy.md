@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 320233edede13e2f33bdcb206b056bf1d0b94b8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2db745d34c86e4b0aa5639872106096421044bce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Диалоговое окно «Выбор операции» (для прежних версий)
 В этом разделе описывается использование **выбрать операцию** диалоговое окно в прежних [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/27/2017
   
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **выбрать операцию** диалоговое окно.  
   
-|Элемент пользовательского интерфейса|Описание|  
+|Элемент пользовательского интерфейса|Описание:|  
 |----------------|-----------------|  
 |**Добавление контракта**|Создает новый контракт. В этом контракте можно задать новые операции. (Применяется только с объектом класса <xref:System.Workflow.Activities.ReceiveActivity>.)|  
 |**Операция добавления**|Добавляет новый контракт, который был создан в новые операции **выбрать операцию** диалоговое окно. **Примечание:** новые операции можно добавлять только в контракты, которые созданы посредством **выбрать операцию** диалоговое окно. <br /><br /> (Применяется только с объектом класса <xref:System.Workflow.Activities.ReceiveActivity>.)|  

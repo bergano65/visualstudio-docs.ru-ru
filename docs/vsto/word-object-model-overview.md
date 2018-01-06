@@ -22,11 +22,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd89a4cd713e4cdff22ffbbd570ee2e0bf60ef37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b01307811930ec865e2b38e899318dfdd99c74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-object-model-overview"></a>Общие сведения об объектной модели Word
   При разработке решений Word в Visual Studio выполняется взаимодействие с объектной моделью Word. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Word и определены в пространстве имен <xref:Microsoft.Office.Interop.Word> .  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
  Помимо объектной модели Word, проекты Office в Visual Studio предоставляют *ведущие элементы* и *элементы управления ведущего приложения* , расширяющие некоторые объекты из объектной модели Word. Поведение ведущих элементов и элементов управления ведущего приложения аналогично поведению объектов Word, однако они обладают дополнительными функциональными возможностями, такими как возможность привязки данных и дополнительные события. Дополнительные сведения см. в разделах [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md) и [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-### <a name="application-object"></a>Объект Application  
+### <a name="application-object"></a>объект приложения;  
  Объект <xref:Microsoft.Office.Interop.Word.Application> представляет приложение Word и является родителем для всех других объектов. Обычно его элементы применяются к Word как к единому целому. Свойства и методы данного объекта можно использовать для управления средой Word.  
   
  В проектах надстройки VSTO для получения доступа к объекту <xref:Microsoft.Office.Interop.Word.Application> можно использовать поле `Application` класса `ThisAddIn` . Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
   
  Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Word.Document> , предоставляя тип <xref:Microsoft.Office.Tools.Word.Document> . Этот тип является *ведущим элементом* , который предоставляет доступ ко всем функциям объекта <xref:Microsoft.Office.Interop.Word.Document> и добавляет дополнительные события, а также позволяет добавлять управляемые элементы управления.  
   
- При создании проекта на уровне документа для доступа к элементам <xref:Microsoft.Office.Tools.Word.Document> можно использовать созданный класс `ThisDocument` в проекте. Для доступа к членам ведущего элемента <xref:Microsoft.Office.Tools.Word.Document> можно использовать ключевые слова **Me** или **this** из кода в классе `ThisDocument` или `Globals.ThisDocument` из кода за пределами класса `ThisDocument` . Для получения дополнительной информации см. [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md). Например, для выделения первого абзаца в документе используйте следующий код.  
+ При создании проекта на уровне документа для доступа к элементам <xref:Microsoft.Office.Tools.Word.Document> можно использовать созданный класс `ThisDocument` в проекте. Для доступа к членам ведущего элемента <xref:Microsoft.Office.Tools.Word.Document> можно использовать ключевые слова **Me** или **this** из кода в классе `ThisDocument` или `Globals.ThisDocument` из кода за пределами класса `ThisDocument` . Дополнительные сведения см. в разделе [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md). Например, для выделения первого абзаца в документе используйте следующий код.  
   
  [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
  [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]  

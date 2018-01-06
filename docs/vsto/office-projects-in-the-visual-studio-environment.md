@@ -46,11 +46,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f91a3ad121305e6d7a00df1ab1b337bdea73c1c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8cf489d5a1c4246adf4f5c4220229acb05ac67d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Проекты Office в среде Visual Studio
   Разработка проектов Microsoft Office аналогична разработке в Visual Studio проектов других типов, таких как проекты Windows Forms. При создании или открытии проекта Office элементы проекта отображаются в **обозревателе решений**. Для проектов уровня документа документ (документ Word или книга Excel) открывается в среде Visual Studio и используется в качестве визуального конструктора.  

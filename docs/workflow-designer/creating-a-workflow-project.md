@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>Создание проекта рабочего процесса
 Рабочие процессы, службы рабочего процесса [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)], настраиваемые действия и настраиваемые конструкторы действий можно создавать с помощью шаблонов проектов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В этом разделе описано создание библиотек и приложений с помощью шаблонов проектов, доступных в среде [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/27/2017
   
  В последнем разделе описывается, как добавлять действия рабочего процесса, конструкторы, службы и другие элементы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в существующий проект рабочего процесса или другой проект.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Как создать консольное приложение рабочего процесса](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  Описывает создание консольного приложения рабочего процесса.  
   

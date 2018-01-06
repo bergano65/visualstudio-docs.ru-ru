@@ -11,16 +11,17 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 45ffc19d3ede7af9d32e4599f17ecde9bd097bb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7453a61f599b8d3e051fea1c016d914814ec7fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-flow-activity-designers"></a>Конструкторы действия управления потоком
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] включает определенное количество системных действий, которые могут быть использованы для построения рабочих процессов. В этом разделе содержатся действия, предусмотренные системой, и служащие для управления потоком в пределах рабочего процесса. В следующих подразделах приводится описание этих действий, а также описание их использования.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Выполняет действие, содержащееся в теле хотя бы один раз, пока заданное условие не примет значение **true**.  
   

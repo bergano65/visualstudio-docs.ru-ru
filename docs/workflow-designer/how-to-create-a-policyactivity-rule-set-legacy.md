@@ -17,11 +17,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 49c511c2d881a9996efe07dcc030e80e21a8cf88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1b57fe5f33bdbc4dfb7ab76856bdd80a3246ea9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Как создать набор правил PolicyActivity (для прежних версий)
 В этом разделе описывается создание набора правил действия политики с помощью средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/27/2017
   
     -   Введите имя набора правил. Нажмите кнопку **RuleSetReference** многоточие **[...]** , а затем выберите **изменить** в [правила задайте диалоговое окно Выбор (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
   
-         -или-  
+         - или -  
   
     -   Введите имя набора правил. Разверните **RuleSetReference** и нажмите кнопку с многоточием **[...]**  в **RuleSet Definition** свойство.  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/27/2017
   
 8.  Нажмите кнопку **добавить правило** еще раз, чтобы добавить новое правило.  
   
-9. По завершении нажмите кнопку **ОК**.  
+9. Завершив настройку, нажмите кнопку **ОК**.  
   
 ## <a name="see-also"></a>См. также  
  [Действие PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   

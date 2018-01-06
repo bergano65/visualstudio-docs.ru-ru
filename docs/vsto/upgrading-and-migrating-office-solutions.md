@@ -21,11 +21,12 @@ caps.latest.revision: "105"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8189032a38aba69b63cb96f824c973b0d41a1aad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Обновление и перенос решений Office
   Если проект Microsoft Office был создан в более ранней версии Visual Studio, его необходимо обновить для использования в текущей версии Visual Studio. Чтобы обновить проект Microsoft Office, откройте его в версии Visual Studio, имеющей в своем составе инструменты разработчика Microsoft Office. Дополнительные сведения о версиях Visual Studio, имеющих инструменты разработчика Microsoft Office см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

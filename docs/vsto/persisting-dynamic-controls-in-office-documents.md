@@ -23,11 +23,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e78fb90532cf75ca2e0f2a9dc6b6aa9759c75e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8aef9cc040e6a1bc2449e8b0c5b7de91083b98e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Сохранение динамических элементов управления в документах Office
   Элементы управления, добавленные во время выполнения, не сохраняются при сохранении и закрытии документа или книги. Точное поведение элементов управления ведущего приложения и Windows Forms различается. В обоих случаях можно добавить в решение код для повторного создания элементов управления при повторном открытии документа.  

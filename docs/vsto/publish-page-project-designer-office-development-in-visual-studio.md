@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ce726d9d86bd57e5cf245010212545f0055c8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 508557ab96747327e090bfa12b118a1a39ad9bbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Страница публикации в конструкторе проектов (разработка для Office в Visual Studio)
   Страница **Публикация** в **конструкторе проектов** используется для настройки свойств развертывания.  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  **Расположение папки публикации (веб-сайт, ftp-сервер или путь к файлу)**  
- Обязательный.  
+ Обязательно.  
   
  Расположение папки публикации — это каталог, в который Visual Studio копирует файлы решения, такие как манифесты, сборки и другие файлы из сборки. Вы должны иметь доступ на запись в этом каталоге.  
   

@@ -21,11 +21,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca768bd681c20826ffbdeeec94706b8b37c129f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ea64eaa32d43369ad264c8ddfce49d5a070a311a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>Пошаговое руководство. Вставка данных в книгу на сервере
   В этом пошаговом руководстве показано, как вставить данные в наборе данных, который кэшируется в книге Microsoft Office Excel без запуска Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.  
@@ -166,7 +167,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  На **проекты** щелкните **AdventureWorksDataSet** и нажмите кнопку **ОК**.  
   
-6.  В разделе **AdventureWorksDataSet** пространство имен **AdventureWorksDataSet** сборки, нажмите кнопку **AdventureWorksLTDataSet** и нажмите кнопку **Готово **.  
+6.  В разделе **AdventureWorksDataSet** пространство имен **AdventureWorksDataSet** сборки, нажмите кнопку **AdventureWorksLTDataSet** и нажмите кнопку **Готово** .  
   
      **Источники данных** откроется окно, и **AdventureWorksLTDataSet** добавляется в список источников данных.  
   
@@ -290,7 +291,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Убедитесь, что <xref:Microsoft.Office.Tools.Excel.ListObject> заполняется данными при открытии книги.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о работе с кэшированными данными в следующих разделах:  
   
 -   Изменение данных в кэшированный набор данных без запуска Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).  
