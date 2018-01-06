@@ -19,14 +19,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c4ec0178a4767e7e0c5c726816dcd7088e14f17b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-the-tasks-window"></a>Использование окна задач
-**Задачи** напоминает окно **потоков** окна, за исключением того, что он отображает сведения о <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), или [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) объектов, а не каждый поток. Как и потоки, задачи представляют асинхронные операции, которые могут выполняться параллельно; однако несколько задач могут выполняться в одном потоке. 
+**Задачи** напоминает окно **потоков** окна, за исключением того, что он отображает сведения о <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), или [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) объектов, а не каждый поток. Как и потоки, задачи представляют асинхронные операции, которые могут выполняться параллельно; однако несколько задач могут выполняться в одном потоке. 
   
  В управляемом коде, можно использовать **задачи** окна при работе с <xref:System.Threading.Tasks.Task?displayProperty=fullName> объектов или с **await** и **async** ключевые слова (**Await** и **Async** в VisualBasic). Дополнительные сведения о задачах в управляемом коде см. в разделе [параллельного программирования](/dotnet/standard/parallel-programming/index).  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/07/2017
 ## <a name="tasks-column-information"></a>Сведения в столбцах окна "Задачи"  
  Столбцы в **задачи** окна отображаются следующие сведения.  
   
-|Имя столбца|Описание|  
+|Имя столбца|Описание:|  
 |-----------------|-----------------|  
 |**Флаги**|Показывает, какие задачи помечены, и позволяет помечать задачи и снимать с них метки.|  
 |**Значки**|Рядом с текущей задачей отображается желтая стрелка. Текущая задача находится на самом верхнем уровне текущего потока.<br /><br /> Белая стрелка указывает прерванную задачу, т.е. задачу, которая была текущей во время вызова отладчика.<br /><br /> Значок паузы указывает задачу, замороженную пользователем. Задачу можно заморозить или разморозить, щелкнув ее в списке правой кнопкой мыши.|  

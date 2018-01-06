@@ -23,17 +23,18 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b823675623f20df49edb87582f3e40695aec50e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 650d16b525f1917e28bb4fae88047df14f35f35c
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя
 Для настройки компьютера, чтобы можно было выполнить рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe или w3wp.exe) с учетной записью пользователя, выполните следующие действия.  
 
  > [!IMPORTANT]
- > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) с удостоверением для каждого пула приложений.
+ > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) с удостоверением для каждого пула приложений.
   
 ## <a name="procedure"></a>Процедура  
   

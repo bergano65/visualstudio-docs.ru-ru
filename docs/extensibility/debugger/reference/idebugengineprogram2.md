@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e4b7d83f40607dbb94371e4ca3244a9bb5b9a5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 896370d83634580e46f666a8fb9f56f768bf06a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 Этот интерфейс обеспечивает поддержку многопоточных отладки.  
@@ -38,7 +39,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEngineProgram2`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
 |[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Остановка всех потоков в этой программе.|  
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Следит за выполнение (или остановки наблюдения за выполнения) или делать это в данном потоке.|  

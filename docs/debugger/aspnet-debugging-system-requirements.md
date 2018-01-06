@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30ac9c68104423c559ad3bfa8712426b67a4c734
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Отладка ASP.NET: системные требования
 В этом разделе описаны требования к программному обеспечению и безопасности для сценариев локальной и удаленной отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
  Для отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] рабочего процесса (размещаемую пула приложений), необходимо иметь разрешение на отладку этого процесса. По умолчанию [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложения до IIS 6.0 работают в **ASPNET** пользователя. В службах IIS 6.0 и IIS 7.0 **СЕТЕВОЙ службы** учетная запись используется по умолчанию. Если рабочий процесс выполняется от имени учетной записи **ASPNET**или **NETWORK SERVICE**, для его отладки необходимо иметь права администратора.
 
  > [!IMPORTANT]
- > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) с удостоверением для каждого пула приложений.
+ > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) с удостоверением для каждого пула приложений.
   
  Имя рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] варьируется в зависимости от сценария отладки и версии служб IIS. Дополнительные сведения см. в разделе [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Отладка приложений ASP.NET в Visual Studio
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 
 - IIS Express, который включен по умолчанию в Visual Studio 2012 и более поздних версий
 
-    -или-
+    - или -
 
 - Локальный IIS веб-сервера (версии 8.0 или более поздней версии), правильность настройки и запуска приложения ASP.NET без ошибок.
 
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
 
 2. Если внешний сервер (пользовательский), введите правильный URL-адрес в **URL-адрес проекта** (или **базовый URL-адрес**) поля.
 
-    Если локальный сервер IIS внешнего сервера, необходимо установить IIS и правильно настроен. Например необходимая версия ASP.NET необходимо настроить в IIS. Дополнительные сведения см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Если вы хотите протестировать развертывание, а также отладку, см. раздел [развертывание для тестирования](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Если локальный сервер IIS внешнего сервера, необходимо установить IIS и правильно настроен. Например необходимая версия ASP.NET необходимо настроить в IIS. Дополнительные сведения см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Если вы хотите протестировать развертывание, а также отладку, см. раздел [развертывание для тестирования](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Если внешний сервер [удаленного](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), присоединение к процессу, вместо того, не используются указанные ниже параметры проекта для отладки.
 
@@ -134,7 +135,7 @@ ms.lasthandoff: 10/31/2017
 
 Если вы используете локальный веб-сервер IIS, выполните следующие действия.
 
-1. Убедитесь, что службы IIS установлены правильно. Дополнительные сведения см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. Убедитесь, что службы IIS установлены правильно. Дополнительные сведения см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Убедитесь, что установить правильную версию ASP.NET на сервере. Используйте установщик веб-платформы (WebPI) для установки ASP.NET 4.5 (с узла сервера в Windows Server 2012 R2, выберите **получить новые компоненты платформы Web** и выполните поиск ASP.NET). Для установки ASP.NET Core см [публикация в службах IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 

@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство: Настройка инструкции insert, update и delete поведение классов сущностей
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную поверхность проектирования для создания и редактирования [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классов (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), можно использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](/dotnet/csharp/linq/).  
@@ -259,12 +260,12 @@ ms.lasthandoff: 12/12/2017
     > [!NOTE]
     >  Если приложение использует SQL Server Express Edition, в зависимости от значения **Копировать в выходной каталог** свойство файла базы данных, изменения могут не отображаться при нажатии клавиши F5 на шаге 10. 
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
 В зависимости от требований приложения есть несколько шагов, которые возможно потребуется выполнить после создания классов сущностей [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.  
   
 -   Реализуйте конкурентную проверку во время обновлений. Сведения см. в разделе [оптимистичного параллелизма: Обзор](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).  
   
--   Добавьте запросы LINQ в данные фильтра Сведения см. в разделе [введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+-   Добавьте запросы LINQ в данные фильтра Сведения см. в разделе [введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
   
 ## <a name="see-also"></a>См. также
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     

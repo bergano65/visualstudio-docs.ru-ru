@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка. Не удается запустить отладку на веб-сервере
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 10/31/2017
 
 * Проверьте конфигурацию пула приложений, его при необходимости исправьте и повторите попытку.
 
-    Можно настроить пул приложений для версии ASP.NET, не соответствует проекта Visual Studio. Обновление версий ASP.NET в пуле приложений и перезапустите ее. Дополнительные сведения см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Можно настроить пул приложений для версии ASP.NET, не соответствует проекта Visual Studio. Обновление версий ASP.NET в пуле приложений и перезапустите ее. Дополнительные сведения см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Кроме того Если изменен пароль учетных данных, может потребоваться обновить их в пул приложений или веб-сайта.  В пуле приложений, обновите учетные данные в **Дополнительные параметры > модель процесса > удостоверение**. Для веб-сайта, обновите учетные данные в **основные параметры > подключиться от имени...** . Перезапуск пула приложений.
     
@@ -129,7 +129,7 @@ ms.lasthandoff: 10/31/2017
 
 * Убедитесь в том, что на сервере IIS установлена необходимая версия ASP.NET.
 
-    Несовпадение версий ASP.NET в IIS и в проекте Visual Studio может вызвать эту проблему. Необходимо установить версию платформы в файле web.config. Чтобы установить ASP.NET в IIS, используйте [установщика веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Кроме того, в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) или ASP.NET Core [узла в Windows с помощью IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Несовпадение версий ASP.NET в IIS и в проекте Visual Studio может вызвать эту проблему. Необходимо установить версию платформы в файле web.config. Чтобы установить ASP.NET в IIS, используйте [установщика веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Кроме того, в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) или ASP.NET Core [узла в Windows с помощью IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
 * Устраните ошибки проверки подлинности, если используется только IP-адрес
 
@@ -155,7 +155,7 @@ ms.lasthandoff: 10/31/2017
 
      Если службы IIS не установлены правильно, должны отобразиться ошибки при вводе `http://localhost` в браузере.
      
-     Дополнительные сведения о развертывании в IIS см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) и ASP.NET Core [узла в Windows с помощью IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Дополнительные сведения о развертывании в IIS см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) и ASP.NET Core [узла в Windows с помощью IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Создать простое приложение ASP.NET на сервере (или используйте файл basic web.config).
 

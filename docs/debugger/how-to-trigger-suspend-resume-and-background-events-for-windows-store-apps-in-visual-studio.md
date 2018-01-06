@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP в Visual Studio
 Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.  
   
  Кроме того, в этом разделе описывается, как отладить **Фоновые задачи**. Фоновые задачи позволяют выполнять определенные операции в фоновом процессе, даже если приложение не выполняется. Можно использовать отладчик, чтобы перевести приложение в режим отладки, а затем, не запуская пользовательский интерфейс, запустить фоновую задачу и начать ее отладку.  
   
- Дополнительные сведения о задачах управления жизненным циклом процесса и фона в разделе [запуск возобновления и многозадачной](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Дополнительные сведения о задачах управления жизненным циклом процесса и фона в разделе [запуск возобновления и многозадачной](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [События управления жизненным циклом процессов активации](#BKMK_Trigger_Process_Lifecycle_Management_events)  
@@ -124,7 +125,7 @@ ms.lasthandoff: 11/11/2017
 4.  Выберите журнал **Диагностические** .  
   
 ## <a name="see-also"></a>См. также  
- [Тестирование приложения UWP в Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Тестирование приложений UWP в Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Жизненный цикл приложения](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [Запуск, возобновление и многозадачной](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
