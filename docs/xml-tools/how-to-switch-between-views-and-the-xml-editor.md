@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aeec1914acc64fe748d8c5d0f487b5349b84e59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea46fac34eea04f364f07d010267be5b1ef2ea69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Как переключаться между представлениями и редактором XML
 Данный раздел описывает процесс переключения между представлениями конструктора XML-схем (конструктор XSD) и редактором XML. В этом примере используется [схемы заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md).  

@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 256eaf2b451f91abdcc90c2beeedb7f689e95db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]предоставляет средства для создания пользовательских рабочих процессов, которые управляют жизненным циклом документов и элементов списка веб-сайте SharePoint. Предоставляется конструктор, набор элементов управления действием и ссылки на необходимые сборки. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]также включает **мастер настройки SharePoint**, помогающие создавать и настраивать рабочие процессы.  
@@ -135,9 +136,9 @@ ms.lasthandoff: 10/31/2017
 ## <a name="importing-globally-reusable-workflows"></a>Импорт глобальные рабочие процессы  
  Помимо создания конкретного узла рабочих процессов для повторного использования, SharePoint Designer позволяет создавать *глобальные рабочие процессы*, — рабочих процессов, которые можно использовать на любом сайте SharePoint. Проект Импорт рабочего процесса для повторного использования в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] в настоящее время не удается импортировать глобальные рабочие процессы. Тем не менее можно либо использовать SharePoint Designer для преобразования глобального рабочего процесса в рабочий процесс для повторного использования, либо импортировать рабочий процесс как непреобразованных декларативного рабочего процесса. Дополнительные сведения см. в разделе [Импорт элементов из существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Пошаговые инструкции по созданию и отладке простого [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса.|  
 |[Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Описание по шагам процедуры для создания более полнофункциональных [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса с формами связывания и запуска.|  

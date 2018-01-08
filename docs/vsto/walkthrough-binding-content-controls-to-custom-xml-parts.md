@@ -22,11 +22,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 252bbce784e412282f6092afdc53905faeb947d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 69073c8c737d8c4d8ee36bfc44fec9c5ea8075c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям
   В этом пошаговом руководстве показано, как привязать элементы управления содержимым в настройке на уровне документа для Word к XML-данным, хранящимся в документе.  
@@ -253,7 +254,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>Порядок привязки элементов управления содержимым к элементам в пользовательской XML-части  
   
-1.  Добавьте следующий метод в класс `ThisDocument`. Он привязывает каждый элемент управления содержимым к элементу в пользовательской XML-части и задает формат отображения даты <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.  
+1.  Добавьте следующий метод в класс `ThisDocument` . Он привязывает каждый элемент управления содержимым к элементу в пользовательской XML-части и задает формат отображения даты <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.  
   
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]  
@@ -311,7 +312,7 @@ ms.lasthandoff: 10/31/2017
   
 14. Закрыть **item2.xml** файла.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения об использовании элементов управления содержимым см. в следующих разделах.  
   
 -   Использование всех доступных элементов управления содержимым для создания шаблона. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание шаблона с помощью элементов управления содержимым](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  

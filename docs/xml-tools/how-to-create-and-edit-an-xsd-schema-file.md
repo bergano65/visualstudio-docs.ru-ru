@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03679a6d6acbee2a69d0ffa576b3606be4b64a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 098dc82734ca200ff538f284e002c1cbff424fbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Как создавать и изменять файл XSD-схемы
 Данный раздел описывает процесс создания нового файла XML-схемы (XSD) и добавления содержимого в XSD-файл.  

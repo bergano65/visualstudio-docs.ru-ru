@@ -24,11 +24,12 @@ caps.latest.revision: "66"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6bee3ed6bb88945d880f1fb855cec0f7cb9be27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f2727d3c1608db15ab4b46285c0ad6971864978e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-object-model-overview"></a>Excel Object Model Overview
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
  С этими четырьмя объектами и их составляющими связана большая часть работы в Excel.  
   
-### <a name="application-object"></a>Объект приложения  
+### <a name="application-object"></a>объект приложения;  
  Объект Excel <xref:Microsoft.Office.Interop.Excel.Application> представляет само приложение Excel. Объект <xref:Microsoft.Office.Interop.Excel.Application> представляет множество сведений о выполняемом приложении, параметрах соответствующего экземпляра и текущих объектах пользователя, открытых в экземпляре.  
   
 > [!NOTE]  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Решения Excel](../vsto/excel-solutions.md)|Инструкции по созданию настроек уровня документа и надстроек VSTO для Microsoft Office Excel.|  
 |[Работа с диапазонами](../vsto/working-with-ranges.md)|Примеры выполнения стандартных задач с диапазонами.|  

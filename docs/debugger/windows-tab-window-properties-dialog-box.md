@@ -6,25 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a49ec9b52d2eaf6dc336ed28d5b4e531bb3b25cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8336d854f8288429c40ff308e0f0c8004edfe1c
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Вкладка "Окна" диалогового окна "Свойства окна"
 Используйте **Windows** вкладке отображаются сведения об окнах, связанных с выбранным окном. Для отображения [диалоговое окно "Свойства"](../debugger/window-properties-dialog-box.md), перемещение фокуса к [представление окон](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.  
   
  Следующие параметры доступны на **Windows** вкладки:  
   
-|Ввод|Описание|  
+|Ввод|Описание:|  
 |-----------|-----------------|  
 |**Следующее окно**|Дескриптор следующего периода того же уровня в той же последовательности (Z-порядок) отображаются в представлении дерева окна («нет», если окно не далее). Выберите этот параметр для просмотра свойств следующего окна.|  
 |**Предыдущее окно**|Дескриптор предыдущего окна того же уровня в той же последовательности (Z-порядок) отображаются в представлении дерева окна («нет», если нет предыдущего окна). Выберите этот параметр для просмотра свойств предыдущего окна.|  

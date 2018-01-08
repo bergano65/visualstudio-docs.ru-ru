@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d083ff3a6c39b0d399b641db7e3a33d4f200e7bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b4f455ad27966f5ac3c5dba6c3ac276670f74b26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `addin` пространства имен `vstav3` содержит сведения, относящиеся к настройкам уровня документа и надстройкам VSTO Microsoft Office, разработанным с помощью Visual Studio.  
@@ -60,20 +61,20 @@ ms.lasthandoff: 10/31/2017
  Элемент `addin` имеет указанные ниже дочерние элементы.  
   
 ### <a name="entrypoints"></a>entryPoints  
- Обязательный. `entryPoints` Элемент описан в [&#60; entryPoints &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Обязательно. `entryPoints` Элемент описан в [&#60; entryPoints &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="update"></a>обновить  
- Обязательный. `update` Элемент описан в [&#60; Обновить &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/update-element-office-development-in-visual-studio.md).  
+ Обязательно. `update` Элемент описан в [&#60; Обновить &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/update-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactions"></a>postActions  
- Необязательно. `postActions` Элемент описан в [&#60; postActions &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ Необязательный. `postActions` Элемент описан в [&#60; postActions &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/postactions-element-office-development-in-visual-studio.md).  
   
 ### <a name="application"></a>приложение  
- Обязательный. `application` Элемент описан в [&#60; приложения &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/application-element-office-development-in-visual-studio.md).  
+ Обязательно. `application` Элемент описан в [&#60; приложения &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/application-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере кода показан элемент `addin` в решении Office уровня документа, которое развернуто с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
@@ -137,7 +138,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере кода показан элемент `addin` в решении Office уровня приложения, которое развернуто с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

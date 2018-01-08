@@ -18,11 +18,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbf93e29e9bde2029bfff262a953d5858f17d084
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ea7605ae01dc839dcac8e2cde3f658a94d6bb474
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Изменения проектирования проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4.5
   Начиная с версии [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], в Visual Studio появился ряд изменений в структуре проектов Office, которые ориентируются на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию. Если вы знакомы с проектами Office в предыдущих версиях Visual Studio, вам следует ознакомиться с этими изменениями до разработки проектов Office, ориентированных на платформу .NET Framework версии 4.0 или более поздней. По умолчанию, все проекты, создаваемые с помощью Visual Studio 2013 или более поздней версии, ориентируются на платформу .NET Framework 4.0 или более поздней версии.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
  В следующих разделах описываются изменения в структуре проектов Office.  
   
 ## <a name="understanding-the-interface-based-design-of-the-visual-studio-2010-tools-for-office-runtime"></a>Основные сведения о структуре, основанной на интерфейсах, среды выполнения набора средств Visual Studio 2010 для Office  
- При разработке проекта Office, ориентированного на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, большинство типов, используемых в среде выполнения набора средств Visual Studio 2010 для Office, являются интерфейсами. Это — значительное изменение по сравнению с предыдущими версиями [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], в которых эти типы являются классами. Например, при ориентировании на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию типы <xref:Microsoft.Office.Tools.Excel.Worksheet> и <xref:Microsoft.Office.Tools.Word.Document> являются интерфейсами, а не классами. Для получения дополнительной информации см. [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
+ При разработке проекта Office, ориентированного на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, большинство типов, используемых в среде выполнения набора средств Visual Studio 2010 для Office, являются интерфейсами. Это — значительное изменение по сравнению с предыдущими версиями [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], в которых эти типы являются классами. Например, при ориентировании на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию типы <xref:Microsoft.Office.Tools.Excel.Worksheet> и <xref:Microsoft.Office.Tools.Word.Document> являются интерфейсами, а не классами. Дополнительные сведения см. в разделе [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
  Для любых типов, которые можно было создать непосредственно в предыдущих версиях [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], теперь используются методы объекта Globals.Factory для получения экземпляров этих типов. Например, чтобы получить объект, реализующий интерфейс <xref:Microsoft.Office.Tools.Excel.SmartTag> интерфейсом, используйте метод Globals.Factory.CreateSmartTag. Дополнительные сведения см. в следующих разделах:  
   

@@ -31,11 +31,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7fa4e3b548f5839b16a6bdeaf4a7d8ba6d00beb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 738c7988dbd5ee4757b231904be08dcf295ba5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-solutions"></a>Решения Word
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Word. Эти решения можно использовать для автоматизации Word, расширения функциональных возможностей Word и настройки пользовательского интерфейса Word. Дополнительные сведения о различиях между настроек на уровне документа и надстроек VSTO см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -110,9 +111,9 @@ ms.lasthandoff: 10/31/2017
 |----------|--------------------------|  
 |Создание настраиваемой области задач.|[Настраиваемые области задач](../vsto/custom-task-panes.md)|  
   
-### <a name="related-topics"></a>Связанные разделы  
+### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Word Object Model Overview](../vsto/word-object-model-overview.md)|Содержит общие сведения об основных типах, предоставляемых объектной моделью Word.|  
 |[Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)|Содержит сведения о расширенных объектах (предоставляемых из [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), которые можно использовать в решениях Word.|  

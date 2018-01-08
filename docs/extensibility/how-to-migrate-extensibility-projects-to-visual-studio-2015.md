@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Как: миграция расширяемость проектов Visual Studio 2015
 Вот как можно обновить расширения.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Удалить ссылочные сборки VS SDK из проекта, выберите их, щелкните правой кнопкой мыши и **удалить**.  
   
-3.  Добавьте NuGet версии ссылочных сборок VS SDK.  Оставаясь в **ссылки обозревателя решений** открытым узлом **управление пакетами NuGet...**  диалогового окна.  Если вы хотите узнать больше об этом диалоговом окне, см. раздел [пользовательского интерфейса диспетчера пакетов](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Ссылочные сборки VS SDK публикуются на [nuget.org](http://www.nuget.org) по [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Добавьте NuGet версии ссылочных сборок VS SDK.  Оставаясь в **ссылки обозревателя решений** открытым узлом **управление пакетами NuGet...**  диалогового окна.  Если вы хотите узнать больше об этом диалоговом окне, см. раздел [пользовательского интерфейса диспетчера пакетов](/NuGet/Tools/Package-Manager-UI). Ссылочные сборки VS SDK публикуются на [nuget.org](http://www.nuget.org) по [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  С помощью **nuget.org** как вашей **источник пакета**, поиск по имени пакета NuGet, удовлетворяющее необходимая ссылка сборки (например: Microsoft.VisualStudio.Shell.14.0) и установите его в вашей проект.  NuGet может добавить несколько ссылочных сборок для удовлетворения зависимостей исходную сборку.  
   

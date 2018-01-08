@@ -31,11 +31,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3df5fca6d41070b09ceb8b8be9b05212b7caa69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf3fde8e5a7e91719da11faca01453b405e30401
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-office-solutions"></a>Построение решений Office
   Сборка и отладка проектов Office в принципе не отличается от сборки и отладки других типов проектов в Visual Studio, например Windows Forms. В этом разделе описываются существующие различия. Общие сведения о построении приложений см. в разделе [компилирование и сборка в Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -108,9 +109,9 @@ ms.lasthandoff: 10/31/2017
 ## <a name="using-the-clean-command"></a>Использование команды очистки  
  Для удаления файлов, созданных при сборке проекта, с компьютера разработчика можно использовать команду **Очистить** в меню **Сборка** среды [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Команда **Очистить** удаляет все файлы в каталоге выходных файлов сборки. Для проектов на уровне приложения команда **Очистить** также удаляет записи реестра, созданные в процессе сборки.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Отладка проектов Office](../vsto/debugging-office-projects.md)|Описываются проблемы, которые могут возникать при отладке проектов Office.|  
 |[Пошаговое руководство. Создание первой настройки на уровне документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Содержит сведения о создании базовой настройки на уровне документа для Excel.|  

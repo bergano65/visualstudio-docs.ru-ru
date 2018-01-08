@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 847b547aae785d94f8d9025b7b4badf9d8b21075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 36053a8ef415e35f1244d0e379a49a46ea24f33d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Простая привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы привязки данных в проекте уровня документа. Одного поля данных в базе данных SQL Server привязана к именованному диапазону в Microsoft Office Excel. Также показаны способы добавления элементов управления, которые позволяют прокручивать все записи в таблице.  
@@ -186,7 +187,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Щелкните другие кнопки прокрутки для подтверждения, что записи меняются должным образом.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве описываются основные принципы привязки именованного диапазона к полю в базе данных. Ниже приводятся некоторые из возможных последующих задач.  
   
 -   Кэширование данных использовать в автономном режиме. Дополнительные сведения см. в разделе [как: кэширование данных для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  

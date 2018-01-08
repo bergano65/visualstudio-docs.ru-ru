@@ -37,11 +37,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48670b03444a8701dc3c23fe591a962e01f51f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 87d1fe708d4090fc6d2dd9509a04d13e7a21e079
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.  
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
  Код в обработчике событий `ThisAddIn_Startup` — это первый код пользователя, подлежащий выполнению, если надстройка VSTO не переопределяет метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . В этом случае обработчик событий `ThisAddIn_Startup` вызывается после <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
   
- Не добавляйте код в `ThisAdd-In_Startup` обработчик событий, если для кода требуется Открытие документа. Вместо этого добавьте код в событие, которое приложение Office генерирует, когда пользователь создает или открывает документ. Для получения дополнительной информации см. [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+ Не добавляйте код в `ThisAdd-In_Startup` обработчик событий, если для кода требуется Открытие документа. Добавьте код в событие, которое создает приложение Office, когда пользователь создает или открывает документ. Для получения дополнительной информации см. [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  Дополнительные сведения о последовательности запуска надстроек VSTO см. в разделе [надстроек VSTO архитектура](../vsto/architecture-of-vsto-add-ins.md).  
   

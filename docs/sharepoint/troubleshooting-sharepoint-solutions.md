@@ -19,17 +19,18 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa3ecb6be4ba458c7a703e77e56c6ba51490887d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5454aa06d4256c6c5e9ee1a8aa9573377ce9abdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Устранение неполадок решений SharePoint
   Следующие проблемы или предупреждения могут возникнуть при отладке решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. Дополнительные сведения см. в разделе [отладку решений рабочих процессов SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Ограничения токенов в изолированных визуальных веб-частях  
- Визуальные веб-части в изолированных решениях не могут обрабатывать стандартные токены, например $SPUrl, которые поддерживает среда выполнения SharePoint. В результате URL-адрес не может быть разрешен, и нельзя просмотреть содержимое в представлении кода в конструкторе визуальной веб-части при ссылке на него непосредственно в элементе скрипта, как в следующем примере:  
+ Визуальные веб-части в изолированных решениях не могут обрабатывать стандартные токены, например $SPUrl, которые поддерживает среда выполнения SharePoint. В результате URL-адрес не может быть разрешен, и нельзя просмотреть содержимое в конструкторе в конструкторе визуальной веб-части при ссылке на него непосредственно в элементе скрипта, как в следующем примере:  
   
 ```xml  
 <script src="<% $SPUrl:~site/SiteAssets/ListOperations.js %>"></script>  

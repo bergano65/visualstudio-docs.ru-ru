@@ -27,11 +27,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 513b2216a99f37ba3aff1174965470b20921072f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc29b307f6459e3a5841ae1dd1c60ae9ab9ed152
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Шаблоны проектов и элементов проектов SharePoint
   В следующих разделах описываются доступные проекты SharePoint и шаблоны элементов проекта, а также способы их использования. 
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="list"></a>Список  
  Список — это экземпляр пригодного для повторного использования базового определения списка SharePoint, такого как календарь или список задач. После добавления списка в решение конструктор списка позволяет добавлять столбцы сайтов в список и создавать пользовательские столбцы списка. Это включает столбцы сайта из типов содержимого. Можно указать *представление* список, который определяет столбцы, которые будут отображаться в списке. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) и [стандартный блок: списки и библиотеки документов](http://go.microsoft.com/fwlink/?LinkId=179421).  
   
-### <a name="module"></a>Модуль  
+### <a name="module"></a>Module  
  *Модули* (не следует путать с [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] модули) содержит все файлы, которые вы хотите развернуть на сервере SharePoint, такие как изображения или примечания. Элемент проекта модуля содержит **модуль** узла. Узел "Модуль" содержит два шаблона элементов проекта: XML-файл определений, выполняющий роль манифеста модуля, и файл sample.txt, прилагаемый для примера. Дополнительные сведения см. в разделе [с использованием модулей, чтобы включить файлы в решении](../sharepoint/using-modules-to-include-files-in-the-solution.md) и [модулей](http://go.microsoft.com/fwlink/?LinkId=179425).  
   
 ### <a name="sequential-workflow-farm-solution-only"></a>Последовательный рабочий процесс (только для решения фермы)  

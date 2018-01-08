@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>Основы отладки
 Отладчик Visual Studio позволяет наблюдать за поведением программы во время выполнения и искать таким образом логические ошибки. Отладчик работает со всеми языками программирования Visual Studio и библиотеками. С помощью отладчика можно прерывать выполнение для пошагового выполнения кода и оценки переменных в приложении.  
   
-## <a name="in-this-section"></a>Содержание  
  [Начало работы с отладчиком](../debugger/getting-started-with-the-debugger.md)  
  Объясняется, как использовать возможности отладчика для отладки приложений.  
-
- [Видео об отладчике](../debugger/getting-started-with-the-debugger.md#video)  
- Показано, как использовать возможности отладчика для отладки приложений.
   
  [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)  
  Описывает, как осуществлять пошаговое выполнение кода с помощью отладчика.  

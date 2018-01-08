@@ -16,16 +16,17 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ecd310065162451c6d7d6857b1f21646a82b8ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ff40bf1abb6d3583d7df8ec8423cf7be743a12c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Справочник по API-интерфейсам (расширения средств SharePoint)
   Этот раздел содержит справочную документацию по API для расширения инструментов SharePoint в Visual Studio.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  <xref:Microsoft.VisualStudio.SharePoint>  
  Содержит типы, используемые для расширения системы проектов SharePoint. Например, можно расширить встроенные проекты и элементы проектов SharePoint или создать собственные элементы проектов.  
   

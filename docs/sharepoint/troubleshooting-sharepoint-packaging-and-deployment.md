@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Устранение неполадок, связанных с упаковкой и развертыванием решений SharePoint
   В разделе рассмотрены различные проблемы, которые могут возникнуть при упаковке и развертывании решений SharePoint.  
@@ -51,10 +52,10 @@ ms.lasthandoff: 10/31/2017
   
  В следующей таблице продемонстрированы параметры **Устранение конфликта развертывания** свойство.  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
-|Automatic|Обнаруживает и разрешает конфликты автоматически.|  
-|Запрос|Обнаруживает и выводит отчет о конфликтах для разработчика перед их разрешением.|  
+|Автоматический|Обнаруживает и разрешает конфликты автоматически.|  
+|Запрашивать|Обнаруживает и выводит отчет о конфликтах для разработчика перед их разрешением.|  
 |Нет|Не обнаруживает конфликты.|  
   
 ## <a name="differences-between-f5-deployment"></a>Различия в развертывании с помощью клавиши F5  

@@ -24,11 +24,12 @@ caps.latest.revision: "86"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b3e40a5a11e681f372b9cb76b43060b87ac900b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf755c0e90eda2c5478d16305b7540dd86b9ef5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-document-level-customizations"></a>Архитектура настроек на уровне документа
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] является частью настроек на уровне документа для Microsoft Office Word и Microsoft Office Excel. В этой статье описываются следующие аспекты надстроек уровня документа.  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="visual-studio-tools-for-office-runtime"></a>Набор средств Visual Studio для Office (среда выполнения)  
  Для запуска настроек уровня документа, созданных с помощью средств разработчика Office в Visual Studio, на компьютерах конечных пользователей должна быть установлена среда выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Среда выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] содержит неуправляемые компоненты, которые загружают сборку настройки, а также набор управляемых сборок. Эти управляемые сборки предоставляют объектную модель, которую код надстройки использует для автоматизации и расширения ведущего приложения.  
   
- Для получения дополнительной информации см. [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
+ Дополнительные сведения см. в разделе [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
 ##  <a name="HowCustomizationsWork"></a> How Customizations Work with Microsoft Office Applications  
  Когда пользователь открывает документ, который является частью настройки Microsoft Office, приложение использует манифест развертывания, связанный с этим документом, для обнаружения и загрузки последней версии сборки настройки. Расположение манифеста развертывания хранится в пользовательском свойстве документа с именем _AssemblyLocation. Строка, идентифицирующая данное расположение, вставляется в свойство при сборке решения.  

@@ -22,11 +22,12 @@ caps.latest.revision: "68"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 811e4eff77780bda2b348c26bb220a29d5fd1731
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5503bed26a5e2657bb499a7a25098c373e149e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
   Конструктор лент позволяет создать настраиваемую вкладку, а затем добавить и расположить на ней элементы управления.  
@@ -155,7 +156,7 @@ ms.lasthandoff: 10/31/2017
   
      Панели действий будут скрыты.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:  
   
 -   Добавление пользовательского интерфейса на основе контекста к настройкам уровня документа. Дополнительные сведения см. в разделе [Actions Pane Overview](../vsto/actions-pane-overview.md).  

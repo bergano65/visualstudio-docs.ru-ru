@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
 - Spy++, message options
@@ -15,16 +15,17 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1d2adec322d5fff76e918e1fa11b37e2339b070
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 45878b19619f5a3842d235242603293d990a510a
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="message-options-dialog-box"></a>Диалоговое окно "Параметры сообщения"
 Используйте это диалоговое окно для выбора сообщений, отображаемых в [представления сообщений](../debugger/messages-view.md). Чтобы открыть это диалоговое окно предназначено выберите **сообщений журнала** из **Spy** меню.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Вкладка "Окна" диалогового окна "Параметры сообщения"](../debugger/windows-tab-message-options-dialog-box.md)  
  Используется для выбора типов сообщений для отображения. Включает инструмент поиска.  
   

@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bab156bdd1589aaac10a619409b44e50558b9c15
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 67ee77197493cbba0161a3ee53a0617a58b62522
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство. Добавление страницы приложения в рабочий процесс
   В этом пошаговом руководстве демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса. Она построена на проект, описанный в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/31/2017
     using Microsoft.SharePoint.Navigation;  
     ```  
   
-3.  Добавьте следующий код в метод `Page_Load`.  
+3.  Добавьте следующий код в метод `Page_Load`:  
   
     ```vb  
     Try  
@@ -342,7 +343,7 @@ ms.lasthandoff: 10/31/2017
   
      Страница сводки отчета по расходам перечислены все отчеты о расходах, превышен лимит, объем превышения и общая сумма по всем отчетам.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о страницах приложений SharePoint см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
  Дополнительные сведения о том, как создать содержимое страницы SharePoint с помощью Visual Web Designer в Visual Studio в следующих разделах:  

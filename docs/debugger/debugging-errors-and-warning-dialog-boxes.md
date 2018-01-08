@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: VS.WebClient.AccessRequiredDialog
 dev_langs:
 - CSharp
@@ -24,16 +24,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b348bd05b6997a990033fd279f29dd5e23886cb6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 547c9befa5868aee669bc663bf5f7542e8d09ab7
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
 Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Диалоговое окно "Ошибка в утверждении"](../debugger/assertion-failed-dialog-box.md)  
   
  [Диалоговое окно "Не удается изменить значение"](../debugger/cannot-change-value-dialog-box.md)  

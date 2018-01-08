@@ -21,11 +21,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d846c1a0a52011991d231e567c1727e456a1feee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a946c190197b40dbc51fe2ddbcff434a21d84c11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bookmark-control"></a>Bookmark - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> представляет собой закладку с уникальным именем, которая предоставляет события и может быть привязана к данным. Закладка может использоваться как заполнитель для пометки элемента или расположения в документе Microsoft Office Word. Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> представляет собой комбинацию объектов <xref:Microsoft.Office.Interop.Word.Bookmark> и <xref:Microsoft.Office.Interop.Word.Range> .  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> также имеет свойство <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> . Оно отличается от свойства <xref:Microsoft.Office.Interop.Word.Range.Text%2A> , которое доступно в свойстве <xref:Microsoft.Office.Tools.Word.Bookmark.Range%2A> элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> или в свойстве <xref:Microsoft.Office.Interop.Word.Bookmark.Range%2A> объекта <xref:Microsoft.Office.Interop.Word.Bookmark> .  
   
-|Свойство Text|Описание|  
+|Свойство Text|Описание:|  
 |-------------------|-----------------|  
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>|Используйте это свойство для отображения текста в закладке и оставления закладки в документе. Назначение текста закладке расширяет диапазон закладки и не удаляет ее.<br /><br /> Например, `Bookmark1.Text = "Hello world"` вставляет текст в закладку и оставляет закладку неизменной.|  
 |<xref:Microsoft.Office.Interop.Word.Range.Text%2A>|Используйте это свойство для отображения текста в расположении закладки и автоматического удаления ее. Например, `Bookmark1.Range.Text = "Hello world"` вставляет текст в закладку и удаляет закладку.|  

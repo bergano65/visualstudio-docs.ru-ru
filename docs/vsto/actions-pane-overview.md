@@ -20,18 +20,19 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>Общие сведения о панели действий
   Панель действий — это настраиваемая **действия с документами** область задач, подключенные к определенному документу Microsoft Office Word или книге Microsoft Office Excel. Она размещается внутри области задач Office вместе с другими встроенными областями задач, таких как **XML-источник** в Excel или **стили и форматирование** области задач в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Панель действий можно создать только в настройке на уровне документа Word или Excel. Невозможно создать панель действий в надстройке VSTO. Для получения дополнительной информации см. [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ Панель действий можно создать только в настройке на уровне документа Word или Excel. Невозможно создать панель действий в надстройке VSTO. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Панель действий отличается от настраиваемых областей задач. Настраиваемые области задач связаны с приложением, а не с конкретным документом. Вы можете создавать настраиваемые области задач в надстройках VSTO для некоторых приложений Microsoft Office. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  

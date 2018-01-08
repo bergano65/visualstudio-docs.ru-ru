@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb219d1f88635a82efbc41acb031cdb46a6d7713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9b3c9d82b625b2666513f0443493aac59d916e41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `entryPoints` пространства имен `vstav3` содержит все элементы `entryPoint` , связанные с решением Office.  
@@ -50,11 +51,11 @@ ms.lasthandoff: 10/31/2017
  У элемента`entryPoints` имеются перечисленные ниже элементы.  
   
 ### <a name="entrypoint"></a>entryPoint  
- Обязательный. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [&#60; entryPoint &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ Обязательно. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [&#60; entryPoint &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для решения на уровне документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `entryPoints` манифеста приложения для решения на уровне приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="multi-project-deployment-example"></a>Пример развертывания нескольких проектов  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `entryPoints` в манифесте приложения для многопроектного развертывания. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

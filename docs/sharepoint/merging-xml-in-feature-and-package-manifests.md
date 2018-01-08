@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d418e757a93d77b0034bbdb8287b0e81a5a3860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 895bb4f7bde787a135699e4197622037413a1869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>Слияние XML в манифестах компонентов и пакетов
   Компоненты и пакеты определяются [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлов манифеста. Эти манифесты в пакете представляют собой комбинацию данных, сформированных из конструкторов и пользовательского [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] введенного пользователем в шаблон манифеста. Во время упаковки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] сливает пользовательские [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] инструкции с предоставляемыми конструктором [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] для формирования в пакете [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файл манифеста. Одинаковые элементы, за исключением указанных далее в исключения слияния, объединяются во избежание [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ошибок проверки после развертывания файлов в SharePoint и сделать файл манифеста файлы компактный и эффективный.  
@@ -54,8 +55,8 @@ ms.lasthandoff: 10/31/2017
 |ElementFile|Расположение|  
 |ElementManifests или манифест элемента|Расположение|  
 |Свойства и свойства|Ключ|  
-|CustomUpgradeAction|Имя|  
-|CustomUpgradeActionParameter|Имя|  
+|CustomUpgradeAction|name|  
+|CustomUpgradeActionParameter|name|  
   
 > [!NOTE]  
 >  Поскольку единственный способ изменить элемент CustomUpgradeAction в пользовательских [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] редактора, эффект слияния не недостаточно.  

@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 86dba79e6e8b7e3f3b2837e494cfeddd2692d0cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Построение ClickOnce-приложений из командной строки
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], можно создавать проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле можно перестроить проект, созданный с [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, имеющем только [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установлен. Это позволяет воспроизвести сборки с помощью автоматизированного процесса, например, в центре сборки лаборатории или с помощью дополнительных методы написания сценариев вне области построения самого проекта.  
@@ -160,12 +161,12 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL и UpdateURL  
  Ниже приведены четыре варианта URL-адрес для развертывания ClickOnce.  
   
-|Параметр URL-адреса|Описание|  
+|Параметр URL-адреса|Описание:|  
 |----------------|-----------------|  
 |`PublishURL`|Требуется при публикации приложения ClickOnce на веб-сайт.|  
-|`InstallURL`|Необязательно. Задайте этот параметр URL-адрес, если сайта установки отличается от `PublishURL`. Например, можно задать `PublishURL` путь FTP и установите `InstallURL` для URL-адрес.|  
-|`SupportURL`|Необязательно. Задайте этот параметр URL-адрес, если сайта поддержки отличается от `PublishURL`. Например, можно задать `SupportURL` для веб-сайта поддержки пользователей компании.|  
-|`UpdateURL`|Необязательно. Задайте этот параметр URL-адрес, если расположение обновлений отличается от `InstallURL`. Например, можно задать `PublishURL` путь FTP и установите `UpdateURL` для URL-адрес.|  
+|`InstallURL`|Необязательный. Задайте этот параметр URL-адрес, если сайта установки отличается от `PublishURL`. Например, можно задать `PublishURL` путь FTP и установите `InstallURL` для URL-адрес.|  
+|`SupportURL`|Необязательный. Задайте этот параметр URL-адрес, если сайта поддержки отличается от `PublishURL`. Например, можно задать `SupportURL` для веб-сайта поддержки пользователей компании.|  
+|`UpdateURL`|Необязательный. Задайте этот параметр URL-адрес, если расположение обновлений отличается от `InstallURL`. Например, можно задать `PublishURL` путь FTP и установите `UpdateURL` для URL-адрес.|  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   

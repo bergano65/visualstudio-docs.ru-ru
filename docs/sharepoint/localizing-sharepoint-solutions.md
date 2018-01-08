@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>Локализация решений SharePoint
   Процесс подготовки приложений, чтобы можно было использовать во всем мире называется локализации. Локализация — перевод ресурсы для конкретного языка и региональных параметров. Дополнительные сведения см. в разделе [Globalizing и локализация приложений](/visualstudio/ide/globalizing-and-localizing-applications). В этом разделе Общие сведения о локализации решения SharePoint.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="resource-files"></a>Файлы ресурсов  
  Существует три типа файлов ресурсов: по умолчанию, не зависящий от языка и языка.  
   
-|Тип файла ресурсов|Описание|  
+|Тип файла ресурсов|Описание:|  
 |------------------------|-----------------|  
 |По умолчанию|Также известен как резервный ресурс, файл ресурсов по умолчанию содержит строки, локализованные для культуры по умолчанию, например «английский». Они используются, если не локализованных файлов ресурсов для указанного языка не найден. Ресурсы по умолчанию имеют отдельные файлы, они хранятся в основную сборку приложения.|  
 |Зависящий от языка|Файл ресурсов, содержащий строки, локализованные для языка, но не является определенной культурой. Например, «fr» для французского языка.|  
@@ -91,7 +92,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- Например:  
+ Пример:  
   
 ```  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  

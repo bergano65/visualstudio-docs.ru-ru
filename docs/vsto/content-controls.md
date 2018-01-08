@@ -43,11 +43,12 @@ caps.latest.revision: "65"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-controls"></a>Элементы управления содержимым
   Элементы управления содержимым позволяют разрабатывать документы и шаблоны, которые имеют следующие возможности и возможности.  
@@ -208,7 +209,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-binding-events-for-content-controls"></a>События привязки данных для элементов управления содержимым  
  Все элементы управления содержимым предоставляют набор событий, которые можно обрабатывать для выполнения задач, связанных с данными, например для проверки соответствия текста в элементе управления заданным критериям перед обновлением источника данных. В следующей таблице перечислены события элементов управления, которые относятся к привязке данных.  
   
-|Задача|Событие|  
+|Задача|событие|  
 |----------|-----------|  
 |Выполнение кода непосредственно перед тем, как Word автоматически обновит текст в элементе управления содержимым, привязанном к пользовательской XML-части.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |Выполнение кода непосредственно перед тем, как Word автоматически обновит данные в пользовательской XML-части, которая привязана к элементу управления содержимым (то есть после изменения текста в элементе управления содержимым).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  

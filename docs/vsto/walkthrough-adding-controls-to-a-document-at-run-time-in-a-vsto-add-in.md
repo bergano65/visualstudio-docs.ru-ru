@@ -20,16 +20,17 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d220cca9ddd08004540768bbeb7322d28dedaa8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28ed2ff2d68dc5a23cfceeb5d5f0eab6dea35eb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
   Вы можете добавлять элементы управления в любой открытый документ Microsoft Office Word с помощью надстройки VSTO. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Word.Controls.Button> или <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в документ.  
   
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Word 2010. Для получения дополнительной информации см. [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Word 2010. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
@@ -82,17 +83,17 @@ ms.lasthandoff: 10/31/2017
   
 8.  В окне **Свойства** измените следующие свойства.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Имя**|**addButtonCheckBox**|  
+    |**Name**|**addButtonCheckBox**|  
     |**Метка**|**Кнопка “Добавить”**|  
   
 9. Добавьте второй флажок в **group1**, а затем измените следующие свойства.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Имя**|**addRichTextCheckBox**|  
-    |**Метка**|**Добавление элемента управления форматированием текста**|  
+    |**Name**|**addRichTextCheckBox**|  
+    |**Label**|**Добавление элемента управления форматированием текста**|  
   
 10. В конструкторе лент дважды щелкните элемент **Добавить кнопку**.  
   
@@ -179,7 +180,7 @@ ms.lasthandoff: 10/31/2017
   
      Кнопка удаляется из документа.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения об элементах управления в надстройках VSTO см. в следующих статьях.  
   
 -   Пример, демонстрирующий способы добавления других типов элементов управления в документ во время выполнения и повторного создания этих элементов управления при повторном открытии документа, см. в разделе "Пример динамических элементов управления в надстройке Word" по адресу [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  

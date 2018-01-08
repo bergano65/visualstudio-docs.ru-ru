@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b2785e69bbfd6dff17f73b9840b88ad48454e0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a3c152640963da1414c34770fff68645e33098ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Пошаговое руководство. Профилирование приложения SharePoint
   В этом пошаговом руководстве рассказывается, как использовать средства профилирования в Visual Studio, чтобы оптимизировать производительность приложений SharePoint. Примером приложения служит приемник событий компонентов SharePoint, который содержит цикл простоя, что ведет к снижению производительности приемника событий компонентов. Профилировщик Visual Studio позволяет найти и исключить наиболее затратную (медленного выполнения) часть проекта, также известный как *Горячий путь*.  

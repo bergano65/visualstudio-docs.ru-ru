@@ -12,20 +12,21 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: c14cc612c544fff9a415d68ef173edcc2f9dbd87
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 347a38a67762ed92dbf5daeb0a74d428b9e7d8f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="initialize-correlation-dialog-box"></a>Диалоговое окно «Инициализация корреляции»
 **Инициализация корреляции** диалоговое окно используется в [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] изменение <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> свойство <xref:System.ServiceModel.Activities.InitializeCorrelation> действия. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) раздела.  
   
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **инициализация корреляции** диалоговое окно.  
   
-|Элемент пользовательского интерфейса|Описание|  
+|Элемент пользовательского интерфейса|Описание:|  
 |----------------|-----------------|  
-|**Корреляции**|Дескриптор корреляции <xref:System.ServiceModel.Activities.CorrelationHandle> для инициализации.|  
+|**Корреляция**|Дескриптор корреляции <xref:System.ServiceModel.Activities.CorrelationHandle> для инициализации.|  
 |**Инициализация**|По ключу/паре значений, содержащих данные инициализации. Это соответствует свойству <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Примером пару допустимый ключ значение будет раздел с именем «OrderID», связанное с переменной с именем OrderID.|  
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Вызов диалогового окна «Инициализация корреляции»  

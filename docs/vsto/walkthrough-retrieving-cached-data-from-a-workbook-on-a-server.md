@@ -21,11 +21,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb745f97b2ab1499206b94cfcd03c2255c7bb3b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 31a895bfc4892959eedba846f226bccba3435bb6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-retrieving-cached-data-from-a-workbook-on-a-server"></a>Пошаговое руководство. Получение кэшированных данных из книги на сервере
   В этом пошаговом руководстве показано, как извлечь данные из набора данных, который кэшируется в книге Microsoft Office Excel без запуска Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.  
@@ -302,7 +303,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Нажмите клавишу ВВОД, чтобы закрыть приложение.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о работе с кэшированными данными в следующих разделах:  
   
 -   Изменение данных в кэшированный набор данных без запуска Excel. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).  

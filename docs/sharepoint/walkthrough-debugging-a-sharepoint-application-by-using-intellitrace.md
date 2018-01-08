@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a020b82dccd1491e0381bee8ff104b944d5cf7b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 34ee1ca7d62a661f915edba1adc22c18f90256b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace
   С помощью IntelliTrace гораздо легче отлаживать решения SharePoint. Традиционные отладчики показывают только снимок решения в текущий момент. Тем не менее IntelliTrace можно использовать для просмотра прошедших событий решения и контекста, в котором эти события произошли, а также для перехода к коду.  
@@ -259,7 +260,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Разверните решение в SharePoint, а затем откройте сайт SharePoint в браузере.  
   
-     Компонент автоматически активируется, что приводит к добавлению приемником компонента объявления и задачи.  
+     Возможность автоматически активируется, что приводит к добавлению приемником возможности объявления и задачи.  
   
 2.  Отображение содержимого списков извещений и задач.  
   

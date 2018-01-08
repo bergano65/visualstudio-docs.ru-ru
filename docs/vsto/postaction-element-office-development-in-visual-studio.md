@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 581ef7bafc075419df8e2dfb1731b334a9564455
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d42476d7298025fb18a703f027a2a870faf204a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `postAction` пространства имен `vstav3` содержит элементы `entrypoint` и все элементы `postActionData` , связанные с действиями после развертывания, которые выполняются после установки решений Office.  
@@ -47,14 +48,14 @@ ms.lasthandoff: 10/31/2017
  У элемента`postAction` имеются перечисленные ниже элементы.  
   
 ### <a name="entrypoint"></a>entrypoint  
- Необязательно. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [&#60; entryPoints &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Необязательный. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [&#60; entryPoints &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactiondata"></a>postActionData  
- Необязательно. Роль `postActionData` элемент в `vstav3` пространство имен определяется в [&#60; postActionData &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ Необязательный. Роль `postActionData` элемент в `vstav3` пространство имен определяется в [&#60; postActionData &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Пример действия, выполняемого после развертывания  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В приведенном ниже примере кода показан элемент `postAction` манифеста приложения для решения Office, развертываемого с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

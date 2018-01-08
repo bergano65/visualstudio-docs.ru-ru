@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64bac205a64eaf321bb0144d9f81edfa065b9029
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d585c6019455fae5305a848ef62c74cfedf6b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-ranges"></a>Работа с диапазонами
   Классы <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Interop.Excel.Range> содержат методы и свойства, применяемые для выполнения задач с диапазонами.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 |Применение стилей к ячейкам в области.|[Практическое руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|  
 |Поиск текста в диапазонах листа.|[Практическое руководство. Программный поиск текста в диапазонах ячеек на листе](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|  
 |Применение цвета к тексту в диапазоне ячеек.|[Практическое руководство. Программное применение цвета к диапазонам Excel](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|  
-|Программное выполнение вычислений Excel.|[Как: программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
+|Программное выполнение вычислений Excel.|[Практическое руководство. Программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
 |Отображение строки в ячейке.|[Практическое руководство. Программное отображение строки в ячейке листа](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|  
   
  Дополнительные сведения о задачах и объектной модели Excel см. в разделе [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  

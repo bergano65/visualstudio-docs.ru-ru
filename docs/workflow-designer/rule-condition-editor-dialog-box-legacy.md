@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 98a42547786e15815ef760e9f397c3c469c4a1a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a4f38bed7fc164fd5283b98afe780bc81a6a7265
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор условий для правила» (для прежних версий)
 В этом разделе описывается использование **редактор условий для правил** диалоговое окно в прежних [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/27/2017
   
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **редактор условий для правил** диалоговое окно.  
   
-|Элемент пользовательского интерфейса|Описание|  
+|Элемент пользовательского интерфейса|Описание:|  
 |----------------|-----------------|  
 |**Условие:**|Введите выражение для условия правила.|  
 |**ХОРОШО**|Нажмите для сохранения условия правила.|  

@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Средства платформы Entity Framework в Visual Studio
-Entity Framework — это технология объектно реляционного сопоставления, которая позволяет разработчикам .NET для работы с реляционными данными, с помощью специфических для домена объектов. Отпадает необходимость для большинства, разработчикам обычно приходится писать код доступа к данным. Entity Framework является рекомендуемые объектно реляционного сопоставления (ORM), моделирование технологии для новых приложений .NET.  
+Entity Framework — это технология объектно реляционного сопоставления, которая позволяет разработчикам .NET для работы с реляционными данными, с помощью специфических для домена объектов. Это устраняет необходимость в большей части кода для доступа к данным, который разработчикам обычно приходится писать. Entity Framework является рекомендуемые объектно реляционного сопоставления (ORM), моделирование технологии для новых приложений .NET.  
   
-Средства платформы Entity Framework предназначены для создания приложений Entity Framework (EF). Полная документация по Entity Framework находится здесь: [EF ядра и EF 6](https://docs.microsoft.com/ef/).  
+Средства платформы Entity Framework предназначены для создания приложений Entity Framework (EF). Полная документация по Entity Framework находится здесь: [EF ядра и EF 6](/ef/).  
   
 С помощью средства платформы Entity Framework, можно создать *концептуальной модели* из существующей базы данных графически визуализации и изменения концептуальной модели. Либо можно сначала создать концептуальную модель с помощью графических средств, а затем создать базу данных, которая поддерживает эту модель. В любом случае можно автоматически обновлять модель при изменении основной базы данных и автоматически создавать код объектного уровня для приложения. Процессы создания базы данных и создания кода объектного уровня допускают настройку.  
   
@@ -46,10 +47,10 @@ Entity Framework — это технология объектно реляцио
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
-|[Платформа ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Описывает использование [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] средств, который [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] предоставляет для создания приложений.|  
-|[Модель EDM](/dotnet/framework/data/adonet/entity-data-model)|Содержит ссылки и сведения для работы с данными, которые используются приложениями, построенных на [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
+|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Описывает использование [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] средств, который [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] предоставляет для создания приложений.|  
+|[Сущностная модель данных](/dotnet/framework/data/adonet/entity-data-model)|Содержит ссылки и сведения для работы с данными, которые используются приложениями, построенных на [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
 |[Документации по Entity Framework (EF))](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|Предоставляет индекс видеоролики, учебные материалы и дополнительно документацию, которая поможет вам наиболее Entity Framework.|  
 |[ASP.NET 5 приложения для новой базы данных](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|В этой статье описывается создание нового приложения ASP.NET 5 с помощью Entity Framework 7.|  
   

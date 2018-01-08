@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03d7f2eedef03a4995a9f14540351df80bd537f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-mail-items"></a>Работа с элементами почты
   <xref:Microsoft.Office.Interop.Outlook.MailItem> Класс содержит методы и свойства, предназначенные для выполнения задач с сообщениями электронной почты.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Задача|Процедура|  
 |----------|---------------|  
 |Создайте сообщение электронной почты.|[Практическое руководство. Программное создание электронного письма](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Осуществляется отправка сообщения электронной почты.|[Как: отправка по электронной почте](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Осуществляется отправка сообщения электронной почты.|[Практическое руководство. Программная отправка сообщений по электронной почте](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
 |Ответ на новые сообщения электронной почты с настраиваемым действием.|[Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
 |Сохранение вложений.|[Практическое руководство. Программное сохранение вложений из сообщений электронной почты Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
 |Добавление вложения|[Практическое руководство. Программное вложение файлов в сообщения электронной почты Outlook](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  

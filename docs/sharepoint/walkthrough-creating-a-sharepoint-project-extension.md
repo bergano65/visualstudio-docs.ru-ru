@@ -19,11 +19,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1974f32731d8ba45b2210b9d9231a7e69d6905f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2ca99a5ad13989f29126b23a93055b174bb49150
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Пошаговое руководство. Создание расширения проекта SharePoint
   В этом пошаговом руководстве показано, как создавать расширения для проектов SharePoint. Можно использовать расширение проекта реагировать на события на уровне проекта, например, когда проект добавлена, удалена или переименована. Также можно добавлять пользовательские свойства или реагировать на них при изменении значения свойства. В отличие от расширений элемента проекта расширения проекта нельзя связать с определенным типом проекта SharePoint. При создании расширения проекта это расширение загружается при открытии любого проекта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

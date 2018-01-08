@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.assertions
 dev_langs:
 - CSharp
@@ -23,16 +23,17 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ca228390193dfb4408b0ccb43d864509e46d89d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0899e9ab0c01a25dcb0fa3a1f991e9dfa9726d40
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="assertion-failed-dialog-box"></a>Сбой проверочного утверждения - диалоговое окно
 Оператор утверждения задает условия, которые должны выполняться на определенных этапах работы программы. Если эти условия не выполняются, утверждение признается ложным, выполнение программы прерывается и появляется это диалоговое окно.  
   
-|Для подтверждения текущих параметров нажмите кнопку|Целевой тип|  
+|Нажмите кнопку|Кому|  
 |-----------|--------|  
 |Повторить|Отладить утверждение или получить справку по утверждениям.|  
 |Пропустить|Пропустить утверждение и продолжить выполнение программы.|  

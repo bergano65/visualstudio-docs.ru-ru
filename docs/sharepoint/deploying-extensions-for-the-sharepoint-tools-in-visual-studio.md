@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0145982781ca3e21229a7af46090ed2addcaccde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 18f1b473de12b53f3e1a7829d1f1c3b49862aef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Разработка расширений для средств SharePoint в Visual Studio
   Чтобы развернуть расширение инструментов SharePoint, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX), который содержит сборку расширения и другие файлы, которые требуется распространить с расширением. Пакет VSIX представляет сжатый файл, который соответствует стандарту Open Packaging Conventions (OPC). Пакеты VSIX имеют используется расширение VSIX.  

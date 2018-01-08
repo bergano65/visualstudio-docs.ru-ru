@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8afe8ed1d59f8daec34a99b1479079a69a1bc740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c885fe006f1a6a65f97b1f11de61e0639dd1559a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Пошаговое руководство. Расширение типа проектного элемента SharePoint
   Можно использовать **модель подключения к бизнес-данным** элемент проекта для создания модели для службы бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта данные в модели не отображается для пользователей. Необходимо также создать внешнего списка в SharePoint, чтобы пользователи могли просматривать данные.  

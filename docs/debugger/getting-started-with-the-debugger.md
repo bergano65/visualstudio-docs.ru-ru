@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Дополнительные сведения для отладки с помощью Visual Studio
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 12/15/2017
 
 |         |         |
 |---------|---------|
-| ![Посмотреть видео](../install/media/video-icon.png "WatchVideo") | [Посмотреть видео](#video) по отладке, отображающий аналогичные действия. |
+|  ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео")  |    [Посмотреть видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) по отладке, отображающий аналогичные действия. |
 
 Хотя нашего примера приложения C#, функции, применимые к C++, Visual Basic, JavaScript и другие языки, поддерживаемые Visual Studio (за исключением иное).
 
@@ -278,12 +279,6 @@ ms.lasthandoff: 12/15/2017
 3. Нажмите клавишу F5, чтобы продолжить работу приложения.
 
 Дополнительные сведения о компонентах отладчика см. в разделе [отладчик советы и рекомендации](../debugger/debugger-tips-and-tricks.md).
-
-## <a name="video"></a>Видео по отладке
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ## <a name="see-also"></a>См. также
 

@@ -12,16 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload:
+- data-storage
+- dotnet
+ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Данные средства Visual Studio для .NET
 Visual Studio и .NET Framework обеспечивают широкий API и инструменты для подключения к базам данных, моделирования данных в памяти и отображения данных в пользовательском интерфейсе. Классы .NET Framework, которые предоставляют функциональные возможности доступа к данным, называются [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, вместе с данными в Visual Studio для работы с проектами изначально была разработана в основном для поддержки реляционных баз данных и XML. Наши дни многие поставщики баз данных NoSQL или сторонних разработчиков, обеспечивают поставщиков ADO.NET.  
   
-[.NET core](https://www.dotnetfoundation.org/netcore) поддерживает ADO.NET, за исключением наборов данных и связанных типов. Если в качестве цели .NET Core и требуют уровень объектно реляционного сопоставления (ORM), используйте [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
+[.NET core](https://www.dotnetfoundation.org/netcore) поддерживает ADO.NET, за исключением наборов данных и связанных типов. Если в качестве цели .NET Core и требуют уровень объектно реляционного сопоставления (ORM), используйте [Entity Framework Core](/ef/core/).  
   
 В примере ниже показан упрощенный вид базовая архитектура:  
   

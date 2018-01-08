@@ -18,11 +18,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7375071522ea59c9c00a5fa94277a3817438d25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1a2659e1c6ebf7bee8320f10549c2a8914010648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство. Создание пользовательского шага развертывания для проектов SharePoint
   При развертывании проекта SharePoint в Visual Studio выполняет ряд шагов развертывания в определенном порядке. Visual Studio включает многие встроенные шаги развертывания, но можно также создать свои собственные.  

@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a27b4e76e0cd8f986441778ed39c7fbb5a2211
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="signing-vsix-packages"></a>Подписывание пакетов VSIX
 Расширения сборок не обязательно должны быть подпись перед их работу в Visual Studio, но это рекомендуется делать это.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Добавление в проект в VSIX.  
   
-2.  Щелкните правой кнопкой мыши узел проекта в обозревателе решений, выбрав **Добавить &#124; Управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавление пакетов NuGet см. в разделе [документации по NuGet](http://docs.microsoft.com/NuGet) и [пользовательского интерфейса диспетчера пакетов](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) разделы.  
+2.  Щелкните правой кнопкой мыши узел проекта в обозревателе решений, выбрав **Добавить &#124; Управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавление пакетов NuGet см. в разделе [документации по NuGet](/NuGet) и [пользовательского интерфейса диспетчера пакетов](/NuGet/Tools/Package-Manager-UI) разделы.  
   
 3.  Поиск VSIXSignTool из VisualStudioExtensibility и установите пакет NuGet.  
   

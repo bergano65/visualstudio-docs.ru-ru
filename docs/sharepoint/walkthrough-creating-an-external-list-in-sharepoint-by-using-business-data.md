@@ -26,11 +26,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: babb8456593ba953982390f048960449069ca6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
   Служба бизнес-данным (BDC) позволяет отображать бизнес-данных из серверных приложений, веб-служб и баз данных в SharePoint.  
@@ -199,11 +200,11 @@ ms.lasthandoff: 10/31/2017
   
 10. Повторите шаг 6, чтобы создать дескриптор типа для каждого из указанных ниже полей.  
   
-    |Имя|Имя типа|  
+    |name|Имя типа|  
     |----------|---------------|  
     |FirstName|System.String|  
     |LastName|System.String|  
-    |Phone|System.String|  
+    |Номер телефона|System.String|  
     |emailAddress|System.String|  
     |EmailPromotion|System.Int32|  
     |NameStyle|System.Boolean|  
@@ -263,7 +264,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-the-project"></a>Тестирование проекта  
   
-1.  Выберите **F5** ключа.  
+1.  Нажмите клавишу **F5**.  
   
      Откроется сайт SharePoint.  
   
@@ -285,7 +286,7 @@ ms.lasthandoff: 10/31/2017
   
      В форме отобразятся подробности выбранного контакта.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о разработке моделей для службы BDC в SharePoint в следующих разделах:  
   
 -   [Как: Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md).  

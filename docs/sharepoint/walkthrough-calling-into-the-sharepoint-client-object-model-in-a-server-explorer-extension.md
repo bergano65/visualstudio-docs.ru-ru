@@ -18,11 +18,12 @@ caps.latest.revision: "100"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 489a11c215fe590b85e9dfaf5cbd815fdc43acb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4b7cc5797643309e7929f455bfcf94db85f90b0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов
   В этом пошаговом руководстве показано, как вызывать клиентскую объектную модель SharePoint из расширения для **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об использовании клиентской объектной модели SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -288,6 +289,6 @@ ms.lasthandoff: 10/31/2017
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
- [Создание значка или другого изображения & #40; редактор изображений для значков & #41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Создание значка или другого изображения &#40; редактор изображений для значков &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

@@ -30,11 +30,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bba3f2e5f645b6b97fb43b22e7dfc1028a01ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3398364f4c9e4046c3ab4670a544a96c5ac455c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
   С помощью веб-частей, можно изменить содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. Веб-части, серверные элементы управления, которые выполняются в страницу веб-частей: они являются составными частями страниц, которые отображаются на сайте SharePoint. В разделе [стандартный блок: веб-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="web-part-item"></a>Элемент веб-части  
  Объект **веб-часть** элемента содержит файлы, которые можно использовать для разработки веб-части для сайта SharePoint. При добавлении **веб-часть** элемента, Visual Studio создает папку в проекте и добавляет в нее несколько файлов. В следующей таблице описаны каждого файла.  
   
-|Файл|Описание|  
+|Файл|Описание:|  
 |----------|-----------------|  
 |Файл Elements.XML|Содержит сведения, используемые файлом определения компонента в проекте для развертывания веб-части.|  
 |файл .webpart|Предоставляет сведения, необходимые для отображения веб-части в веб-частей SharePoint.|  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="sharepoint-controls"></a>Элементы управления SharePoint  
  Visual Studio предоставляет некоторые элементы управления для создания страницы SharePoint, например страниц приложений. Эти элементы управления отображаются в **элементов** под **элементы управления SharePoint**. Функциональные возможности этих элементов управления является производным от [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) имен, содержащее ASP.NET серверных элементов управления, используемые на страницах сайты и списки SharePoint.  
   
-|Имя элемента|Описание|  
+|Имя элемента|Описание:|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Вставляет ASP меню. Дополнительные сведения см. в разделе [Обзор элемента управления меню](http://go.microsoft.com/fwlink/?LinkId=235316).|  
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет **ССЫЛКУ** на странице ASPX элемента и применяет один или несколько внешних таблицах стилей определяется **CssRegistration**.|  
@@ -112,9 +113,9 @@ ms.lasthandoff: 10/31/2017
   
  Дополнительные сведения о когда может потребоваться создать старого стиля SharePoint веб-частей см. в разделе [уместно в Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290). Дополнительные сведения о создании веб-части с помощью старого стиля SharePoint веб-частей см. в разделе [Пошаговое руководство, Создание базовых веб-части SharePoint](http://go.microsoft.com/fwlink/?LinkId=169288).  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Показано, как создать веб-частей для SharePoint страницы.|  
 |[Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Показано, как создать веб-частей для SharePoint с помощью визуального конструктора.|  

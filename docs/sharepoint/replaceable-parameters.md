@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>Подстановочные параметры
   Подстановочные параметры или *маркеры*, можно использовать в файлах проекта для представления значений элементов решения SharePoint, фактические значения не известны во время разработки. Они действуют аналогично стандартным токенам шаблонов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [параметров шаблона](/visualstudio/ide/template-parameters).  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="tokens-list"></a>Список токенов  
  В следующей таблице перечислены доступные токены.  
   
-|Имя|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|Имя файла содержащего проекта, такие как «NewProj.csproj».|  
 |$SharePoint.Project.FileNameWithoutExtension$|Имя файла содержащего проекта без расширения имени файла. Например, «NewProj».|  

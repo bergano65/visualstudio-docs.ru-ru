@@ -18,11 +18,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a9f981db2b48c550e1312acf4f387a495a0386e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 16cccaf9a8639ef2d7213140121b087cd15e72d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-deploying-a-project-task-list-definition"></a>Пошаговое руководство. Развертывание определения списка задач проекта
   В этом пошаговом руководстве рассматривается использование [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] для создания, настройки, отладки и развертывания списка SharePoint с целью отслеживания задач проекта.  
@@ -185,7 +186,7 @@ ms.lasthandoff: 10/31/2017
   
      Дополнительные сведения об удаленном развертывании см. в разделе [решений с помощью](http://go.microsoft.com/fwlink/?LinkId=217680) и [Добавление и развертывание решений с помощью PowerShell в SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=217682).  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о настройке и развертывании решений SharePoint в следующих разделах:  
   
 -   [Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)  

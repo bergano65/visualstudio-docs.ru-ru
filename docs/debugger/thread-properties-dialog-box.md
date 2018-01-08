@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
@@ -15,18 +15,19 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9250db8b405885b5f8e8c76a68d0663c52d82ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0abdebd821051d6821567c8a8ec87329868c6b28
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="thread-properties-dialog-box"></a>Диалоговое окно "Свойства потока"
 Используйте это диалоговое окно поиска дополнительных сведений о конкретном потоке. Чтобы открыть это диалоговое окно предназначено, переместите фокус элементу [представление "Потоки"](../debugger/threads-view.md) окна, либо открыть [представления сообщений](../debugger/messages-view.md) и разверните сообщение. Выберите любой узел потока в дереве, а затем выберите **свойства** из **представление** меню.  
   
  **Общие** отображается только вкладка. В операционных системах Windows 98 и Windows 95 измененную версию на этой вкладке отображается.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Вкладка "Общие" диалогового окна "Свойства потока"](../debugger/general-tab-thread-properties-dialog-box.md)  
  Используйте это диалоговое окно предназначено для поиска дополнительных сведений о выделенном потоке.  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
  [Поиск потока в представлении потоков](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Описание поиска определенного потока в представлении потоков.  
   
- [Представление "Потоки"](../debugger/threads-view.md)  
+ [Представление потоков](../debugger/threads-view.md)  
  Отображает древовидное представление активных потоков.  
   
  [Представления Spy++](../debugger/spy-increment-views.md)  

@@ -31,11 +31,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46f484bc9dc597bc43ea4e7e2474d5b7efcb1f3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f12823ecb3fdc8d90d9f7c3651c6e04e6b0f6635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-solutions"></a>Решения Excel
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Excel. Эти решения можно использовать для автоматизации Excel, расширения функциональных возможностей Excel и настройки пользовательского интерфейса Excel. Дополнительные сведения о различиях между настроек на уровне документа и надстроек VSTO см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="automating"></a> Автоматизация Excel  
  Объектная модель Excel предоставляет различные типы, которые можно использовать для автоматизации Excel. Например, можно программно создавать диаграммы, форматировать листы и задавать значения диапазонов и ячеек. Дополнительные сведения см. в разделе [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
- При разработке своих решений Excel в Visual Studio можно также использовать *ведущие элементы* и *элементы управления ведущего приложения* . Данные элементы являются объектами, которые расширяют некоторые часто используемые объекты в объектной модели Excel, например объекты <xref:Microsoft.Office.Interop.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Range> . Расширенные объекты ведут себя как объекты Excel, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных. Дополнительные сведения см. в разделе [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).  
+ При разработке своих решений Excel в Visual Studio можно также использовать *ведущие элементы* и *элементы управления ведущего приложения* . Данные элементы являются объектами, которые расширяют некоторые часто используемые объекты в объектной модели Excel, например объекты <xref:Microsoft.Office.Interop.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Range> . Расширенные объекты ведут себя как объекты Excel, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных. Для получения дополнительной информации см. [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).  
   
 ##  <a name="doclevel"></a> Developing Document-Level Customizations for Excel  
  Настройка на уровне документа для Microsoft Office Excel состоит из сборки, связанной с конкретной книгой. Как правило, сборка расширяет книгу посредством настройки пользовательского интерфейса и автоматизации Excel. В отличие от надстройки VSTO, которая связана с самим приложением Excel, функциональные возможности, реализуемые в настройке, доступны только в том случае, когда соответствующая книга открыта в Excel.  
@@ -112,9 +113,9 @@ ms.lasthandoff: 10/31/2017
 |----------|--------------------------|  
 |Создание настраиваемой области задач.|[Настраиваемые области задач](../vsto/custom-task-panes.md)|  
   
-### <a name="related-topics"></a>Связанные разделы  
+### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Excel Object Model Overview](../vsto/excel-object-model-overview.md)|Содержит общие сведения об основных типах, предоставляемых объектной моделью Excel.|  
 |[Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)|Содержит сведения о расширенных объектах (предоставляемых из [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), которые можно использовать в решениях Excel.|  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 |[Пошаговое руководство. Создание первой настройки на уровне документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Содержит сведения о создании базовой настройки на уровне документа для Excel.|  
 |[Пошаговое руководство. Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|Содержит сведения о создании базовой надстройки VSTO для Excel.|  
 |[Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|Содержит сведения о добавлении кнопки Windows Forms, <xref:Microsoft.Office.Tools.Excel.NamedRange>, и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист во время выполнения с помощью надстройки VSTO.|
-|[Основные сведения о Соавторство и надстройки](./understanding-coauthoring-and-addins.md)|Описывает изменения, которые может потребоваться внести решения для размещения Соавторство.|  
+|[Основные сведения о совместном редактировании и надстройках](./understanding-coauthoring-and-addins.md)|Описывает изменения, которые может потребоваться внести решения для размещения Соавторство.|  
 |[Excel 2010 при разработке решений для Office](http://go.microsoft.com/fwlink/?LinkId=199011)|Ссылки на статьи и справочную документацию о разработке решений Excel. Они не относятся к разработке решений Office в Visual Studio.|  
   
   

@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
 - process properties, Spy++
@@ -15,18 +15,19 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fc116cc0085d5db9e54ca6befce6d3627c5d975
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e1178cd848cbac3589faeb2292e2ceadf52c11b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="process-properties-dialog-box"></a>Диалоговое окно "Свойства процесса"
 Используйте это диалоговое окно предназначено для получения дополнительных сведений об определенном процессе. Чтобы открыть это диалоговое окно предназначено, переместите фокус элементу [представление процессов](../debugger/processes-view.md) окна. Выберите любой узел процесса в дереве, а затем выберите **свойства** из **представление** меню.  
   
  В Windows 98 и Windows 95 операционных системах только измененную версию **Общие** отображается вкладка.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Вкладка "Общие" диалогового окна "Свойства процесса"](../debugger/general-tab-thread-properties-dialog-box.md)  
  Используйте это диалоговое окно поиска дополнительных сведений о выбранном процессе.  
   

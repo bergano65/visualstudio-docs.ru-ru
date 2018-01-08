@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0c34dc6e3cc7fd9339e9f2a183bcc11d54008e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bc425459cee4b4398ead78939283ab4db6efc134
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `formRegion` пространства имен `vstov4` определяет область формы Microsoft Office Outlook, связанную с надстройкой VSTO.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`name`|Обязательный. Определяет имя области формы.|  
+|`name`|Обязательно. Определяет имя области формы.|  
   
  Элемент `formRegion` имеет указанные ниже дочерние элементы.  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`name`|Обязательный. Определяет форму, которая связана с областью формы.|  
+|`name`|Обязательно. Определяет форму, которая связана с областью формы.|  
   
 ## <a name="example"></a>Пример  
  В приведенном ниже примере кода показан элемент `formRegion` манифеста приложения для надстройки VSTO для Outlook, развертываемой с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Имеется три класса сообщений, связанных с одной и той же областью формы. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  

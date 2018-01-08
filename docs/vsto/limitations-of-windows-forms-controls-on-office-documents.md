@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations of Windows Forms Controls on Office Documents
   Существуют некоторые различия между элементы управления Windows Forms, которые добавляются в документы Microsoft Office Word или листы Microsoft Office Excel и элементы управления Windows Forms, которые были добавлены в Windows Forms. Например, при добавлении <xref:Microsoft.Office.Tools.Word.Controls.Button> элементов управления в документ, свойства, такие как <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, и <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> работать не так, как и следует ожидать.  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/31/2017
 |Изменение размера элемента управления|Если элемент управления с помощью одного из восьми маркеров изменения размера, новые размеры элемента управления не отражаются в **свойства** окна, пока не будет повторно элемента управления.|  
 |Поведение элемента управления|Элементы управления на листе Excel могут вести себя непредсказуемым образом, при разбиении окно листа. Например, доступ к <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> на листе может предоставляться только в одном из windows.|  
 |Имена элементов управления.|Нельзя использовать зарезервированные слова для именования элементов управления приложения. Например, при добавлении <xref:Microsoft.Office.Tools.Excel.Controls.Button> на лист и измените имя на **системы**, возникают ошибки при построении проекта.|  
-|Добавление элементов управления программными средствами|Не используйте конструктор элемента управления для добавления элемента управления в документ во время выполнения. Вместо этого используйте вспомогательные методы, предоставляемые [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Например, используйте <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> метод, чтобы добавить кнопку на лист. Если вы хотите добавить элемент управления, который не поддерживается в эти вспомогательные методы, можно использовать метод AddControl. Дополнительные сведения см. в разделе [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
+|Добавление элементов управления программными средствами|Не используйте конструктор элемента управления для добавления элемента управления в документ во время выполнения. Вместо этого используйте вспомогательные методы, предоставляемые [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Например, используйте <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> метод, чтобы добавить кнопку на лист. Если вы хотите добавить элемент управления, который не поддерживается в эти вспомогательные методы, можно использовать метод AddControl. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
 |Копирование элементов управления|При копировании элемента управления Windows Forms и вставьте его в документ во время выполнения, в документ будет вставлен пустой контейнер элемента управления ActiveX. Элемент управления Windows Forms не отображается в новом месте, а код, содержащий исходный элемент управления не копируется в контейнер элемента управления ActiveX.|  
   
 ## <a name="limitations-in-document-level-projects"></a>Ограничения в проектах уровня документа  

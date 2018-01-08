@@ -20,18 +20,19 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86ffd65cf0ebe19a9f3c1f42c24fc365536be661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Начало отладки многопоточных приложений в Visual Studio
 Visual Studio предоставляет несколько средств и элементы пользовательского интерфейса для отладки многопоточных приложений. Этого учебника показано, как использовать маркеры потоков **Параллельные стеки** окне **контроль параллельных данных** окна, условные точки останова и точки останова фильтра. Этот учебник занимает всего несколько минут, но оно позволит ознакомиться со средствами для отладки многопоточных приложений.
 
 |         |         |
 |---------|---------|
-| ![Посмотреть видео](../install/media/video-icon.png "WatchVideo") | [Посмотреть видео](#video) на многопотоковая отладка, показывающий аналогичные действия. |
+|  ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео")  |    [Посмотреть видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) на многопотоковая отладка, показывающий аналогичные действия. |
 
 Другие разделы предоставляют дополнительные сведения об использовании других многопоточных средства отладки.
 
@@ -372,12 +373,6 @@ Visual Studio предоставляет несколько средств и э
 #### <a name="to-switch-to-another-thread"></a>Для переключения на другой поток 
 
 - Чтобы переключиться в другой поток, в разделе [как: переключиться в другой поток во время отладки](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
-
-## <a name="video"></a>Видео на многопотоковая Отладка
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 #### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Для получения дополнительных сведений о окна параллельных стека и контроль параллельных данных  
   

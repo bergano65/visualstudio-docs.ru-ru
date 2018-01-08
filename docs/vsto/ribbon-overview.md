@@ -23,11 +23,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fcf026af4877ee2aefe17551763752d385b63493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-overview"></a>Обзор ленты
   Лента позволяет так организовать связанные команды, чтобы их можно было легко найти. Команды отображаются на ленте в виде элементов управления. Элементы управления объединены в *группы* на горизонтальной полосе в верхней части окна приложения. Связанные группы расположены на вкладках.  
@@ -117,9 +118,9 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-### <a name="related-topics"></a>Связанные разделы  
+### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)|Показано, как настроить ленту приложения Microsoft Office, добавьте **Лента (визуальный конструктор)** или **Лента (XML)** элемента в проект Office.|  
 |[Конструктор лент](../vsto/ribbon-designer.md)|Описание использования конструктора лент для добавления пользовательских вкладок, групп и элементов управления на ленту приложения Microsoft Office.|  

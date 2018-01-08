@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Практическое руководство. Использование мастеров для шаблонов проекта
 Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс, который при реализации позволяет запускать пользовательский код, когда пользователь создает проект на основе шаблона.  
@@ -310,6 +311,8 @@ namespace $safeprojectname$
      Обратите внимание, что `$custommessage$` был заменен текстом, введенным в форму ввода пользовательского мастера.  
   
 ## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
- [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)   
- [Элемент WizardExtension (шаблоны Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)
+
+<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
+[Настройка шаблонов](../ide/customizing-project-and-item-templates.md)  
+[Элемент WizardExtension (шаблоны Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)  
+[Пакеты NuGet в шаблонах Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

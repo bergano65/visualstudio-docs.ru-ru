@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d64c0767cce43d5b157fca82cc3e1e210a2f8c58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc016efd3d0a3525f733929c294946bf9376417b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint
   В этом пошаговом руководстве демонстрируется создание шаблона простого последовательного рабочего процесса. Рабочий процесс выполняет проверку свойства общей библиотекой, чтобы определить, выполнялось ли рецензирование документа. Если документ были проверены, рабочий процесс завершается.  
@@ -168,7 +169,7 @@ ms.lasthandoff: 10/31/2017
   
 12. В **свойства** окна, задайте свойства, как показано в следующей таблице.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
     |**CorrelationToken**|**workflowToken**|  
     |**Вызывается**|**onWorkflowItemChanged**|  
@@ -286,7 +287,7 @@ ms.lasthandoff: 10/31/2017
   
 12. В **Общие документы** убедитесь, что значение под **статус документа** столбцу присваивается **Рецензирование завершено**. Обновить **Общие документы** и удостоверьтесь, что значение под **MySharePointWorkflow - Workflow1** столбцу присваивается **завершено**. Это означает, что рабочий процесс завершается, и рецензирование документа.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о создании шаблонов рабочих процессов в следующих разделах:  
   
 -   Дополнительные сведения о действиях рабочего процесса SharePoint см. в разделе [действий рабочего процесса для SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=178992).  

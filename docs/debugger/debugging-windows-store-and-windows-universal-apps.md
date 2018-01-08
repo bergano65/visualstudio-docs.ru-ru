@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 258389c08971089c523e2881a455411ea767801a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Отладка универсальных приложений Windows (UWP)
 Отладчик Visual Studio обеспечивает полную поддержку для отладки приложения UWP.  
@@ -30,13 +31,11 @@ ms.lasthandoff: 11/11/2017
   
 Для отладки приложений Windows Phone 8, в разделе [отладки приложений для Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
-## <a name="in-this-section"></a>Содержание раздела  
-  
 |||  
 |-|-|  
 |[Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Запуск приложений UWP на локальном компьютере, в эмуляторе или симуляторе приложений или на удаленном устройстве.|  
 |[Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Поиск и устранение ошибок в приложениях UWP с помощью отладчика Visual Studio.|  
-|[Отладка пакета установленного приложения](../debugger/debug-installed-app-package.md)|Отладка развернутых приложений, локальные и удаленные.|
+|[Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)|Отладка развернутых приложений, локальные и удаленные.|
 |[Предварительная загрузка контента для приложений UWP](../debugger/prefetch-content-for-windows-store-apps.md)|Анализируйте влияние класса ContentPrefetcher на приложения UWP.|  
   
 ## <a name="see-also"></a>См. также  

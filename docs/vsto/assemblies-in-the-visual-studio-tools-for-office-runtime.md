@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 130cf43e7c11eeccae8fdbdd22b46faf6bfe3c49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dff032c3f43c662b75f4d0b757f16e70095efc33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Сборки среды выполнения Visual Studio Tools for Office
   При создании проекта Office Visual Studio автоматически добавляет ссылки на сборки [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , используемые для данного типа проектов и платформы .NET Framework, для которой предназначен этот проект. В расширениях Office для .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]и [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]используются разные сборки. Дополнительные сведения о расширениях Office см. в разделе [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Сборки в расширениях Office для .NET Framework 4 и [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  В приведенной ниже таблице перечислены сборки, включенные в расширения Office для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Документацию по пространствам имен и типы в этих сборках см. в разделе [Справочник по управляемой &#40; разработка решений Office в Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
   
-|Имя сборки|Описание|  
+|Имя сборки|Описание:|  
 |-------------------|-----------------|  
 |Microsoft.Office.Tools.Common.dll|Предоставляет следующие типы:<br /><br /> -Типы для создания настроек ленты и смарт-тегов. **Примечание:** смарт-теги являются устаревшими в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Типы для создания панелей действий в настройках уровня документа и настраиваемых областей задач в надстройках VSTO.|  
 |Microsoft.Office.Tools.Excel.dll|Предоставляет интерфейсы, включающие ведущие элементы и элементы управления ведущего приложения для проектов Excel, а также вспомогательные типы. Для получения дополнительной информации см. [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).|  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  Проекты, предназначенные для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , также ссылаются на указанные ниже сборки. Эти сборки не входят в распространяемый пакет [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Они представляют собой независимые сборки, которые необходимо развертывать вместе с решением. По умолчанию они копируются в выходную папку построения для проекта (свойство **Копировать локально** имеет для этих сборок значение **True**). Если проект развертывается с помощью ClickOnce, эти сборки включаются в создаваемый пакет.  
   
-|Имя сборки|Описание|  
+|Имя сборки|Описание:|  
 |-------------------|-----------------|  
 |Microsoft.Office.Tools.Common.v4.0.Utilities.dll|Предоставляет базовые классы для создаваемого класса `ThisAddIn` в проектах надстроек VSTO и создаваемого класса ленты во всех проектах.|  
 |Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|Предоставляет следующие типы:<br /><br /> -Базовые классы для создаваемого `ThisWorkbook` и `Sheet` классов в уровня документа проектов для Excel.<br />-Элементы управления Windows Forms, которые можно использовать на листах в проектах Excel.|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Сборки в расширениях Office для .NET Framework 3.5  
  В приведенной ниже таблице перечислены сборки, включенные в расширения Office для .NET Framework 3.5. Документацию по пространствам имен и классам в этих сборках см. в следующем справочном разделе документации к Visual Studio 2008: [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
-|Имя сборки|Описание|  
+|Имя сборки|Описание:|  
 |-------------------|-----------------|  
 |Microsoft.Office.Tools.Common.v9.0.dll|Предоставляет следующие типы:<br /><br /> -Microsoft.Office.Tools.AddIn базовый класс для надстроек VSTO.<br />-Классы для создания настроек ленты и смарт-тегов. **Примечание:** смарт-теги являются устаревшими в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Классы для создания панелей действий в настройках уровня документа и настраиваемых областей задач в надстройках VSTO.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет ведущие элементы и элементы управления ведущего приложения для решений Excel. Для получения дополнительной информации см. [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).|  

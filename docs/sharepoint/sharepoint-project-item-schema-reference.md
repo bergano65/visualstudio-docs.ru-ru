@@ -28,11 +28,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 67f9d29ff18f4ec12653838d25dc3951a53757bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e02d3eff52ce0318f9a6f2a6e57c6e0fb2e3a56a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Справочные материалы по схеме элементов проектов SharePoint
   Visual Studio использует схему элемента проекта SharePoint для проверки содержимого SPDATA-файлы. SPDATA-файл указывает содержимое и поведение элемента проекта SharePoint. Дополнительные сведения о содержимом элементов проектов SharePoint см. в разделе [Создание шаблонов элементов и проектов для элементов проекта SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  Корневой элемент — [ProjectItem](../sharepoint/projectitem-element.md) элемента. В следующей таблице описаны все элементы, определенные в схеме.  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Представляет коллекцию пользовательских элементов данных, связанных с элементом проекта SharePoint.|  
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Представляет пользовательский элемент данных, связанный с элементом проекта SharePoint, в формате ключ значение. Ключ и значение должны быть строками.|  

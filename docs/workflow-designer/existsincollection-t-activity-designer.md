@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6427ae5e10a2c1405e69b375c7bb2e77467d81d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd3028335ed48f4eba8c647f124d0d537deaf3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; конструктора действий
 **ExistsInCollection\<T >** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.ExistsInCollection%601> действия.  
@@ -35,9 +36,9 @@ ms.lasthandoff: 10/27/2017
 |Имя свойства|Обязательно|Использование|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ExistsInCollection%601>. Значение по умолчанию — ExistsInCollection < Int32\>. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|  
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Элемент, добавляемый в коллекцию\<T >. Этот элемент относится к типу *T* относится к типу *TypeArgument*. Чтобы указать элемент, введите в выражение Visual Basic в таблице свойств.|  
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Да|Элемент, добавляемый в коллекцию\<T >. Этот элемент относится к типу *T* относится к типу *TypeArgument*. Чтобы указать элемент, введите в выражение Visual Basic в таблице свойств.|  
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Коллекция, в которую следует добавить элемент. Эта коллекция имеет тип **ICollection < TypeArgument\>.** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|  
-|*TypeArgument*|True|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию это *TypeArgument* установлен тип **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|  
+|*TypeArgument*|Да|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию это *TypeArgument* установлен тип **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|  
 |<xref:System.Activities.Activity%601.Result%2A>|False|Значение, которое указывает, содержится ли в коллекции указанный объект. Чтобы указать переменную, к которой необходимо привязать результат, введите переменную Visual Basic в таблице свойств.|  
   
 ## <a name="see-also"></a>См. также  

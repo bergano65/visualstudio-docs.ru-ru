@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd3f81580af908d06fe7389c04a6559d14f1075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b1a0f4175dc884283dcf92b7f6268a518cdaf0ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>Вызов объектных моделей SharePoint
   При создании расширений для средств SharePoint в Visual Studio, может потребоваться вызов API SharePoint для выполнения определенных задач. Например при создании пользовательского шага развертывания для проектов SharePoint, может потребоваться вызвать API-интерфейсы SharePoint для выполнения некоторых задач для развертывания решений.  

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Какой &#39; новые возможности Visual Studio 2015 SDK
 Пакет SDK для Visual Studio имеет следующие новые и обновленные средства для Visual Studio 2015, Visual Studio 2015 обновлена и Visual Studio 2017 г.  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
  В C++ VSPackage мастер поддерживает команды меню, окна инструментов и пользовательских редакторов. Найдите его в **новый проект** диалогового окна в **Visual C++ и расширяемости**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS SDK ссылочные сборки через NuGet  
- Для повышения переносимость и расширяемость проектов для управления доступом можно использовать NuGet версии ссылочных сборок VS SDK.  Они доступны на [nuget.org](http://www.nuget.org) опубликованное [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) и может быть легко добавлена в проект или решение в Visual Studio **ссылается / управление NuGet Пакеты** диалогового окна. Можно добавить отдельные ссылки на сборки расширяемость для конкретного или добавить VS SDK ссылается на сборки, одновременно с помощью пакета SDK для VS [Meta пакета](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Дополнительные сведения о NuGet см. в разделе [документации по NuGet](http://docs.microsoft.com/NuGet) и [пользовательского интерфейса диспетчера пакетов](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) разделы.  
+ Для повышения переносимость и расширяемость проектов для управления доступом можно использовать NuGet версии ссылочных сборок VS SDK.  Они доступны на [nuget.org](http://www.nuget.org) опубликованное [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) и может быть легко добавлена в проект или решение в Visual Studio **ссылается / управление NuGet Пакеты** диалогового окна. Можно добавить отдельные ссылки на сборки расширяемость для конкретного или добавить VS SDK ссылается на сборки, одновременно с помощью пакета SDK для VS [Meta пакета](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Дополнительные сведения о NuGet см. в разделе [документации по NuGet](/NuGet) и [пользовательского интерфейса диспетчера пакетов](/NuGet/Tools/Package-Manager-UI) разделы.  
   
  При использовании NuGet версии ссылочных сборок VS SDK другому пользователю не нужно установить пакет SDK для VS для открытия и сборки проекта.  NuGet ссылочные сборки и средства построения VS SDK автоматически устанавливается на компьютере для этого проекта.  
   

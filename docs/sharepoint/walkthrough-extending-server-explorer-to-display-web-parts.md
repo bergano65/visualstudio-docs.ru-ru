@@ -20,11 +20,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0dce1b5ecafbccfdf9816bbc4ef3e8fee3e5c2fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8fea089340c0d51fb5b88bf20d5521defc5dcc71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Пошаговое руководство. Расширение обозревателя сервера, чтобы в нем отображались веб-части
   В Visual Studio можно использовать **подключения SharePoint** узел **обозревателя серверов** просматривать компоненты на сайтах SharePoint. Тем не менее **обозревателя серверов** по умолчанию не отображаются некоторые компоненты. В этом пошаговом руководстве вы будете расширить **обозревателя серверов** подключить отображается коллекции веб-частей на сайте SharePoint.  
@@ -379,6 +380,6 @@ ms.lasthandoff: 10/31/2017
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
- [Создание значка или другого изображения & #40; редактор изображений для значков & #41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Создание значка или другого изображения &#40; редактор изображений для значков &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

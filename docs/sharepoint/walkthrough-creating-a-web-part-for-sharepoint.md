@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3293382ffc0c36fb78bb115d0f38c311278a7151
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3a580d662c09e0f8a73deca2c4e0cea7cea6650c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Пошаговое руководство. Создание веб-части для SharePoint
   Веб-части позволяют пользователям напрямую изменять содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. В этом пошаговом руководстве показано, как создать веб-части с помощью **веб-часть** шаблона элемента в Visual Studio 2010.  

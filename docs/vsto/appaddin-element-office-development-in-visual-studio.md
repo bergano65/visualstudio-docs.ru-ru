@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5637a449ea40f6e4f910e061c7e2e324c91ae70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c099f73e98542c29718efc4158593da35d333abd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `appAddin` пространства имен `vstov4` хранит сведения о настройках для надстроек VSTO.  
@@ -45,24 +46,24 @@ ms.lasthandoff: 10/31/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`application`|Обязательный. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|  
+|`application`|Обязательно. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|  
 |`loadBehavior`|Необязательный. По умолчанию `loadBehavior` включен путем установки значения . Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в разделе [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|`keyName`|Обязательный. Это значение является именем раздела реестра, который будет использоваться приложением для загрузки надстройки VSTO. Для получения дополнительной информации см. [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|`keyName`|Обязательно. Это значение является именем раздела реестра, который будет использоваться приложением для загрузки надстройки VSTO. Для получения дополнительной информации см. [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
  Элемент `appAddin` имеет указанные ниже дочерние элементы.  
   
 ### <a name="friendlyname"></a>friendlyName  
- Необязательно. `friendlyName` Подробно описан элемент [&#60; friendlyName &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Необязательный. `friendlyName` Подробно описан элемент [&#60; friendlyName &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>Описание  
- Необязательно. `description` Подробно описан элемент [&#60; описание &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/description-element-office-development-in-visual-studio.md).  
+ Необязательный. `description` Подробно описан элемент [&#60; описание &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
  Является обязательным только для надстроек VSTO для Outlook, включающих области форм. `formRegions` Подробно описан элемент [&#60; formRegions &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере кода показаны элементы `appAddin` в решении Outlook, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

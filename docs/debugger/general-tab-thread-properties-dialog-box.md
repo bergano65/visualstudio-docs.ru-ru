@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -15,18 +15,19 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2af344735b88fb7091ec438638c948a7f7f2ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8d53c373c58e31f2a2719df8afa6dd0da9cd3c6
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Вкладка "Общие" диалогового окна "Свойства потока"
 Используйте это диалоговое окно предназначено для получения дополнительных сведений о конкретном потоке. Чтобы открыть это диалоговое окно предназначено, переместите фокус элементу [представление "Потоки"](../debugger/threads-view.md) окна, либо открыть [представления сообщений](../debugger/messages-view.md) и разверните сообщение. Выберите любой узел потока в дереве, а затем выберите **свойства** из **представление** меню.  
   
  **Свойства потока** диалоговое окно содержит одну область **Общие** вкладки. Доступны следующие параметры:  
   
-|Запись|Описание|  
+|Ввод|Описание:|  
 |-----------|-----------------|  
 |**Имя модуля**|Имя модуля.|  
 |**Идентификатор потока**|Уникальный идентификатор данного потока. Обратите внимание, что идентификаторы потоков используются неоднократно; они определяют потока только в течение времени существования этого потока.|  

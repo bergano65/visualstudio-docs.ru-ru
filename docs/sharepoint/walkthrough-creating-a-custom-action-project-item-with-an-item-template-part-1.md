@@ -20,11 +20,12 @@ caps.latest.revision: "152"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddab05340b898a1a9a1868c7e537e6b53cc013b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
   Системы проектов SharePoint в Visual Studio можно расширить путем создания собственного проекта типов элементов. В этом пошаговом руководстве вы создадите элемент проекта, который может быть добавлен в проект SharePoint для создания настраиваемого действия на сайте SharePoint. Это настраиваемое действие добавляет пункт меню, чтобы **действия сайта** на сайте SharePoint.  
@@ -450,7 +451,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  Закройте экспериментальный экземпляр Visual Studio и экземпляр, в котором открыт решение CustomActionProjectItem.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  После выполнения этого пошагового руководства, можно добавить мастер для шаблона элемента. При добавлении пользователем элемента проекта настраиваемого действия в проект SharePoint, мастер собирает сведения о действии (например, его расположение и URL-адрес для перехода при выборе действия) и добавляет их в файл Elements.xml в новый элемент проекта. Дополнительные сведения см. в разделе [Пошаговое руководство: создание элемент проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 ## <a name="see-also"></a>См. также  

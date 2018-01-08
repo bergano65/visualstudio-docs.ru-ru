@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Пошаговое руководство. Написание визуализатора на C# #
 В данном пошаговом руководстве показано, как написать простой визуализатор, используя C#. Визуализатор, который вы создадите в данном пошаговом руководстве, показывает содержание строки, используя окно сообщений Windows Forms. Этот простой визуализатор строки сам по себе не очень полезен, но он демонстрирует основные действия для создания более полезных визуализаторов других типов данных.  
@@ -69,7 +66,7 @@ ms.lasthandoff: 11/11/2017
   
 6.  В файле DebuggerSide.cs добавьте следующий оператор к операторам `using`:  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ ms.lasthandoff: 11/11/2017
   
 1.  В DebuggerSide.cs перейдите к следующей строке кода:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  Измените код на:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,8 +92,8 @@ ms.lasthandoff: 11/11/2017
   
 -   В `public class DebuggerSide`, добавьте следующий **метод:**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
@@ -113,7 +110,7 @@ ms.lasthandoff: 11/11/2017
   
 4.  В файле DebuggerSide.cs добавьте следующий оператор к операторам `using`:  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ ms.lasthandoff: 11/11/2017
   
 1.  Добавьте следующую строку кода в метод `Show`:  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -133,16 +130,16 @@ ms.lasthandoff: 11/11/2017
   
  Отладочная часть кода написана. Тем не менее, необходимо выполнить еще одно действие: добавить атрибут, который сообщает отлаживаемому коду, какой набор классов формирует визуализатор.  
   
-#### <a name="to-add-the-debuggee-side-code"></a>Чтобы добавить код отлаживаемой стороны  
+#### <a name="to-add-the-debuggee-side-code"></a>Чтобы добавить код отлаживаемого объекта  
   
 1.  Добавьте следующий код атрибута в DebuggerSide.cs — после операторов `using`, но перед `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  На **построения** меню, выберите **построить MyFirstVisualizer**. Построение проекта должно пройти без ошибок. Если при построении все же возникнут ошибки, исправьте их, прежде чем продолжить.  
@@ -153,7 +150,7 @@ ms.lasthandoff: 11/11/2017
   
 1.  Добавьте следующий метод в класс `public DebuggerSide`:  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -203,13 +200,13 @@ ms.lasthandoff: 11/11/2017
   
 3.  В TestConsole.cs добавьте следующий код к инструкциям `using`:  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  В метод `Main` добавьте следующий код:  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  

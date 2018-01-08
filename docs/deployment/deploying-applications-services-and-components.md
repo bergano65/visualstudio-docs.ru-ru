@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Общие сведения о развертывании в Visual Studio
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/15/2017
 
     ![Выберите опубликовать](../deployment/media/quickstart-publish.png)
 
-- **Среда выполнения Visual C++**: вы можете развернуть среду выполнения Visual C++ с помощью локальное развертывание или статическое связывание. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Среда выполнения Visual C++**: вы можете развернуть среду выполнения Visual C++ с помощью локальное развертывание или статическое связывание. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Публикация в Интернете или развернуть на сетевом ресурсе
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 12/15/2017
 
     Можно также развернуть приложений ASP.NET и служб в ряд других способов. Дополнительные сведения см. в разделе [ASP.NET развертывание веб-приложений и служб](http://www.asp.net/aspnet/overview/deployment).
 
-- **Среда выполнения Visual C++**: вы можете развернуть среду выполнения Visual C++ с использованием центрального развертывания. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Среда выполнения Visual C++**: вы можете развернуть среду выполнения Visual C++ с использованием центрального развертывания. Дополнительные сведения см. в разделе [развертывание собственного приложения для настольных компьютеров (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 - **Рабочий стол Windows** можно опубликовать классическое приложение Windows на веб-сервере или в сетевой общей папке, с помощью развертывания ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в разделе [развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) и [развернуть собственное приложение с помощью ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/15/2017
     > [!NOTE]
     > Если вы еще нет учетной записи Azure, вы можете [регистрации здесь](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-- Другие **служб Azure**: см. конкретный [службы Azure](https://docs.microsoft.com/azure/#pivot=products) документации для разных вариантов развертывания, поддерживаемый Visual Studio.
+- Другие **служб Azure**: см. конкретный [службы Azure](/azure/#pivot=products) документации для разных вариантов развертывания, поддерживаемый Visual Studio.
 
 ### <a name="publish-to-microsoft-store"></a>Публикация в Microsoft Store
 

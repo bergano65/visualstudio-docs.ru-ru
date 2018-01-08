@@ -20,20 +20,21 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a68df6ecfbf4c511922ae89f67e9323a245432d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 986cf8cd6051a08948fb633168792d127cddc5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по разработке решений SharePoint
   Этот раздел содержит образцы приложений, пример кода и пошаговые руководства, которые иллюстрируют синтаксис, структуру и приемы, используемые для построения решений SharePoint.  
   
  Пример кода предназначен для использования в целях ознакомления и не должны использоваться в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
-|Раздел|Описание|  
+|Раздел|Описание:|  
 |-----------|-----------------|  
 |[Примеры разработки решений SharePoint](../sharepoint/sharepoint-development-samples.md)|Описывает образцы приложений, которые демонстрируют, как использовать средства разработки SharePoint в Visual Studio.|  
 |[Пошаговые руководства по разработке решений SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Пошаговое руководство, представляющее собой введение в средства разработки SharePoint в Visual Studio.|  

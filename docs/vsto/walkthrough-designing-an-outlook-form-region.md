@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2d8e1f8ad116bd6db12eca288e567a652e502a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 715d58e205442511db9709a5e57b1b689e008628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Пошаговое руководство. Разработка области формы Outlook
   Пользовательские области формы расширяют стандартные или настраиваемые формы Microsoft Office Outlook. В этом пошаговом руководстве показано, как проектировать пользовательскую область формы, которая отображается в виде новой страницы в окне инспектора элемента контактов. В этой области формы отображается карта каждого адреса, указанного для контакта, путем отправки информации об адресе на веб-сайт локального поиска Windows Live. Сведения об областях форм см. в разделе [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md).  
@@ -168,7 +169,7 @@ ms.lasthandoff: 10/31/2017
   
      Появляется область формы Map It, где отображается веб-сайт локального поиска. **Business**, **Главная**, и **других** в тестовой области появляются адреса. Выберите в тестовой области адрес, который необходимо сопоставить.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о настройке пользовательского интерфейса приложения Outlook см. в следующих разделах.  
   
 -   Дополнительные сведения о настройке ленты элемента Outlook см. в разделе [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  

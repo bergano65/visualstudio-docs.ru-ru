@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 848fc50b8886cc736c5a7a856beec238c084d879
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3dca463352d5e698b74ecc6bda2a1579e3290513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Практическое руководство. Включение файлов с помощью модуля
   *Модули* (не следует путать с [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] модулей) — это контейнеры, которые позволяют развернуть файлы, такие как главные страницы ASPX, текстовые файлы или изображения в SharePoint.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
      При добавлении файла в проект, его запись автоматически добавляется в файл Elements.xml модуля. При развертывании проекта, файлы копируются на сервер SharePoint, относительно корневого каталога проекта, который задается **файл** элемента **URL-адрес** атрибут, например `Url="Module1/New Folder/SomeFile.doc`. Если вы хотите изменить место развертывания файла, либо переместите его в другую папку **обозревателе решений** или изменить его **URL-адрес** параметр.  
   
-8.  Все файлы, которые должны отображаться в библиотеке документов, добавьте `Type="GhostableInLibrary"` атрибут их записи в Elements.xml. Например:  
+8.  Все файлы, которые должны отображаться в библиотеке документов, добавьте `Type="GhostableInLibrary"` атрибут их записи в Elements.xml. Например, примененная к объекту директива  
   
     ```  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  

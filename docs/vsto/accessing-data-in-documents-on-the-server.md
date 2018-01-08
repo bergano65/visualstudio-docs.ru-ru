@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8345f7d197f44455ae990c159550587bbc79de24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d81c8b10f5ace634cc58bd3135af9b2e69f1c519
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-data-in-documents-on-the-server"></a>Доступ к данным в документах на сервере
   Вы можете программировать на данных в настройке уровня документа, без использования объектной модели Microsoft Office Word или Microsoft Office Excel. Это означает, что получить доступ к данным, содержащимся в документе на сервере, у которого нет Word или Excel. Например, код на сервере (например, в [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] страницы) можно настроить данных в документе и пересылать настроенный документ конечному пользователю. Когда конечный пользователь открывает документ, код привязки данных в сборке решения привязывает настроенные данные в документ. Это возможно, поскольку данные в документе, отделен от пользовательского интерфейса. Дополнительные сведения см. в разделе [кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md).  

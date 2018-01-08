@@ -35,11 +35,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3786e74f9913400e7a95d962c8512d2263d6ae39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29407d3f8d95f815b588fff30a4e1268904eb54d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-tools-in-visual-studio"></a>Средства XML в Visual Studio
 *Расширяемый язык разметки (XML)* — это язык разметки, позволяющий описывать данные. Он упрощает точное объявление контента и помогает получать более значимые результаты поиска на различных платформах. Кроме того, XML позволяет разделять представление от данных. Например, в HTML теги используются, чтобы сообщить браузеру, что данные должны быть выделены полужирным шрифтом или курсивом. В XML теги применяются только для описания данных, например названия города, температуры и атмосферного давления. В XML для представления данных в браузере используются таблицы стилей, например таблицы XSL и каскадные таблицы стилей (CSS). XML отделяет данные от представления и обработки. Это позволяет отображать и обрабатывать данные необходимым способом, применяя различные таблицы стилей и приложения.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
  Дополнительные сведения см. в разделе [Центр разработчиков XML](http://go.microsoft.com/fwlink/?LinkID=100176), где представлены последняя документация, технические сведения, загрузки, группы новостей и другие ресурсы для разработчиков XML.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Работа с XML-данными](../xml-tools/working-with-xml-data.md)  
  Описание роли XML в обработке данных в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/31/2017
  Описание классов и других элементов, из которых состоит пространство имен <xref:System.Xml.Serialization>, а также ссылки на более подробное описание каждого элемента.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Модель объектов XML-документов (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)  
+ [Модель объектов документов XML (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)  
  Описание соответствия <xref:System.Xml.XmlDocument> и связанных классов спецификации пространству имен объектной модели документов W3C (базовой) уровня 1 и 2.  
   
  [Чтение XML с помощью XmlReader](http://msdn.microsoft.com/en-us/3029834c-a27e-4331-b7aa-711924062182)  

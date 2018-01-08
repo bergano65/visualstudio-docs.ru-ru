@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7768465f46e5344b88da9006a7de2396e3b75ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 150c8794fb35ca017be7e0873dc0d1b84ebfc38c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Интерфейс IWefDebuggingSupport
   Реализованный в среде отладки, такие как Visual Studio, для упрощения отладки приложений для Office. Приложения Office, такие как Word или Excel, получает этот интерфейс из Visual Studio и затем вызывает методы в интерфейсе в некоторых точках во время сеанса отладки.  
@@ -43,7 +44,7 @@ interface IWefDebuggingSupport : IUnknown
 ## <a name="methods"></a>Методы  
  В следующей таблице перечислены методы, которые определяет этот интерфейс IWefDebuggingSupport.  
   
-|Имя|Описание|  
+|name|Описание:|  
 |----------|-----------------|  
 |[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Возвращает сведения о приложениях для Office, которые вставляются автоматически во время отладки.|  
 |[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Представляет идентификатор процесса, который будет выполняться содержимого Framework расширения Web (WEF).|  

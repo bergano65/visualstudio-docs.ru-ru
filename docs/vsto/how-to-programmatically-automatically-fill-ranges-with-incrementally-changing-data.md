@@ -20,11 +20,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fad536f7e9f0891f7630cd86d31cea279d5706f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4b832ed0e025cd374ac3cbc645824fe7f37dcf9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Практическое руководство. Автоматическое заполнение диапазонов данными, значения которых изменяются с постоянным шагом, с помощью программных средств
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет также автоматического заполнения диапазона на листе значениями. Чаще всего <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод используется для хранения постепенно увеличения или уменьшения значения в диапазоне. Можно указать поведение, необязательную константу из <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> перечисления.  

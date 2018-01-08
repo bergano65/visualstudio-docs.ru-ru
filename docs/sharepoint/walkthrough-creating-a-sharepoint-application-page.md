@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e49e8d50905dc0bb0b3c104a7133fe7435e2e944
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 161d1d1e6b48de029124290ff38d04427c543b6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-sharepoint-application-page"></a>Пошаговое руководство. Создание страницы приложения SharePoint
   Страница приложения — это разновидность страницы ASP.NET. Страницы приложения содержат содержимое, объединенное с главной страницей SharePoint. Дополнительные сведения см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
@@ -158,7 +159,7 @@ ms.lasthandoff: 10/31/2017
   
      Страницы приложения обновляется и отображает все элементы, которые созданы на всех сайтах фермы серверов.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о страницах приложений SharePoint см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
  Дополнительные сведения о том, как создать содержимое страницы SharePoint с помощью Visual Web Designer в следующих разделах:  
