@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed7ae018725e4ba2da5239609d90276d007827aa
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: aspnet
+ms.openlocfilehash: 0dfcc66145b78e1070c552536fc7a86e87c7e04d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на IIS на удаленном компьютере
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/29/2017
 
 ## <a name="BKMK_deploy_asp_net"></a>Установка ASP.NET 4.5 на Windows Server
 
-Если требуется более подробные сведения для установки ASP.NET на IIS, см. раздел [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+Если требуется более подробные сведения для установки ASP.NET на IIS, см. раздел [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 1. Используйте установщик веб-платформы (WebPI) для установки ASP.NET 4.5 (с узла сервера в Windows Server 2012 R2, выберите **получить новые компоненты платформы Web** и выполните поиск ASP.NET)
 
@@ -173,7 +174,7 @@ ms.lasthandoff: 11/29/2017
 В большинстве установок необходимые порты открыты путем установки ASP.NET и удаленный отладчик. Тем не менее может потребоваться проверить, что открыты порты.
 
 > [!NOTE]
-> На виртуальной Машине Azure, необходимо открыть порты, через [сетевой группы безопасности](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+> На виртуальной Машине Azure, необходимо открыть порты, через [сетевой группы безопасности](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Необходимые порты:
 

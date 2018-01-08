@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c1fa8867c4f9ab46b50f0b2a144970d772cbd71
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: azure
+ms.openlocfilehash: 7008ac8ea30e704403542b7b9786cffb1c5da158
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Публикация приложений ASP.NET или ASP.NET Core для службы приложений Azure с помощью Visual Studio
 
@@ -71,5 +72,5 @@ ms.lasthandoff: 12/15/2017
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Развертывание приложения ASP.NET Core в Azure](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [Непрерывное развертывание ASP.NET Core в Azure с помощью Git](https://docs.microsoft.com/en-us/aspnet/core/publishing/azure-continuous-deployment)
+- [Развертывание приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+- [Непрерывное развертывание ASP.NET Core в Azure с помощью Git](/aspnet/core/publishing/azure-continuous-deployment)

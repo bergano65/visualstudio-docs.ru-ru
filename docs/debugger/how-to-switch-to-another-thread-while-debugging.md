@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Как: переключение на другой поток при отладке в Visual Studio
 При отладке многопоточных приложений, можно использовать один из нескольких методов для переключения из потока, который вы работали с на другой поток.
 
 > [!NOTE]
-> Если вы хотите управлять порядком, в котором потоки выполняют, необходимо [Замораживание и размораживание потоков](/debugger/get-started-debugging-multithreaded-apps.md).
+> Если вы хотите управлять порядком, в котором потоки выполняют, необходимо [Замораживание и размораживание потоков](../debugger/get-started-debugging-multithreaded-apps.md).
 
 При рассмотрении потоков в окне редактора кода и различных окон отладки многопоточных желтая стрелка указывает текущий поток. Зеленая стрелка с фигурным концом указывает, что поток не является текущей текущий контекст отладчика.
   
