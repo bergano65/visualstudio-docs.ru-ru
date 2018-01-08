@@ -7,6 +7,8 @@
 ## [Отладка приложения ASP.NET](quickstart-debug-aspnet.md)
 # Учебники
 ## [Сведения об отладке с помощью Visual Studio](getting-started-with-the-debugger.md)
+## [Отладка живого приложения Azure](debug-live-azure-applications.md)
+## [Отладка ASP.NET в IIS или IIS Express](how-to-enable-debugging-for-aspnet-applications.md)
 ## [Удаленная отладка проекта на C#](remote-debugging-csharp.md)
 ## [Удаленная отладка проекта на C++](remote-debugging-cpp.md)
 ## [Удаленная отладка ASP.NET Core на компьютере со службами IIS](remote-debugging-aspnet-on-a-remote-iis-computer.md)
@@ -61,7 +63,6 @@
 ### [Выполнение отладки с помощью JIT-отладчика](debug-using-the-just-in-time-debugger.md)
 #### [Практическое руководство. Реагирование на JIT-отладчик](just-in-time-debugging-in-visual-studio.md)
 ## Настройка отладки
-### [Отладка пользовательского кода](just-my-code.md)
 ### [Управление исключениями с помощью отладчика](managing-exceptions-with-the-debugger.md)
 #### [Возобновление выполнения после исключения](continuing-execution-after-an-exception.md)
 #### [Практическое руководство. Анализ системного кода после исключения](how-to-examine-system-code-after-an-exception.md)
@@ -70,6 +71,7 @@
 ##### [Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения](how-to-write-a-run-time-error-reporting-function.md)
 ##### [Использование проверки кода во время выполнения без библиотеки среды выполнения языка C](using-run-time-checks-without-the-c-run-time-library.md)
 ### [Указание файлов символов (PDB) и файлов с исходным кодом в отладчике Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+### [Отладка пользовательского кода](just-my-code.md)
 ### [Параметры отладчика и подготовка](debugger-settings-and-preparation.md)
 #### [Параметры проекта отладчика](debugger-project-settings.md)
 ##### [Практическое руководство. Установка параметров отладчика](how-to-specify-debugger-settings.md)
@@ -339,7 +341,7 @@
 #### [Представление процессов](processes-view.md)
 ##### [Практическое руководство. Поиск процесса в представлении процессов](how-to-search-for-a-process-in-processes-view.md)
 ##### [Практическое руководство. Отображение свойств процесса](how-to-display-process-properties.md)
-#### [Представление "Потоки"](threads-view.md)
+#### [Представление потоков](threads-view.md)
 ##### [Практическое руководство. Поиск потока в представлении потоков](how-to-search-for-a-thread-in-threads-view.md)
 ##### [Практическое руководство. Отображение свойств потока](how-to-display-thread-properties.md)
 ### [Справочник по Spy++](spy-increment-reference.md)
