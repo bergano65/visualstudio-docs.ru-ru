@@ -1,5 +1,5 @@
 ---
-title: "Символы для смешанного режима отладки Python и C++ в Visual Studio | Документы Майкрософт"
+title: "Символы для смешанного режима отладки Python и C++ в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: bda4551908c8254f83548650cc88e78a2a6ec473
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: e1257b402d3ad6f950429425aabe4d6302fb8ab1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>Установка отладочных символов для интерпретаторов Python
 

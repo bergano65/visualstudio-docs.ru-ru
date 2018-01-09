@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 Дополнительные сведения о специальных возможностях клавиатуры см. в разделе [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Использование только клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -533,7 +534,7 @@ ms.lasthandoff: 12/07/2017
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|Insert|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|B|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|С|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|I|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|O|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|Ctrl+Shift+K<br /><br /> или<br /><br /> Ctrl+E, C|  

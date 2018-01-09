@@ -17,11 +17,12 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2bafcbf441d4efd6446e77f619379a665597e063
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3862c6ed49e00ffa3800cccbedb2b846823418ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Установка Visual Studio в среде, защищенной брандмауэром или прокси-сервером
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/22/2017
 Если это возможно в вашей среде, добавьте следующие домены как для протокола HTTP, так и для протокола HTTPS.
 
 ## <a name="microsoft-domains"></a>Домены Майкрософт
-| Домен | Назначение |
+| Домен | Цель |
 | ------ | ------- |
 | go.microsoft.com | Настройка разрешения URL-адресов |
 | aka.ms | Настройка разрешения URL-адресов |

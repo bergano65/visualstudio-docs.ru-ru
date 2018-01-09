@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.openlocfilehash: 4f202f1a000951616b49d7614bc91e71aa2457f6
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: f865e5de3e4936e7003bce71ea628dae033432c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Каталог компонентов для Visual Studio Team Explorer 2017
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/04/2017
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 15.0.26606.0 | Обязательно
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная страница Visual Studio для пользователей C++ | 15.0.27128.1 | Optional
@@ -49,7 +50,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная с
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя | Версия
+Идентификатор компонента | name | Версия
 --- | --- | ---
 Н/Д | Н/Д | Н/Д
 

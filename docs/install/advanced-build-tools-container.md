@@ -11,11 +11,12 @@ ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: 8ab92d3936306ac47a59df33b4a1131341b28d44
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 6009114d16871f4582aae298b25de9a3b9fe5888
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-example-for-containers"></a>Расширенный пример для контейнеров
 
@@ -99,3 +100,4 @@ At line:1 char:1
 ## <a name="see-also"></a>См. также
 * [Установка средств сборки в контейнер](build-tools-container.md)
 * [Известные проблемы для контейнеров](build-tools-container-issues.md)
+* [Идентификаторы рабочих нагрузок и компонентов для Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)

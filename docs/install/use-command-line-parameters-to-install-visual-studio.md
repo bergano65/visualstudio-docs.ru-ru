@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 09/22/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,11 +15,12 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ac513a2273177125b52628d12dfdbc499cf77bf1
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
 При установке Visual Studio 2017 из командной строки вы можете использовать различные параметры командной строки, позволяющие настраивать процесс установки и управлять им. В командной строке вы можете выполнить следующие действия:
@@ -132,7 +133,13 @@ ms.lasthandoff: 11/11/2017
 Каждая операция создает в каталоге `%TEMP%` несколько файлов журнала, которые показывают ход выполнения установки. Отсортируйте содержимое папки по дате и найдите файлы, которые начинаются с `dd_bootstrapper`, `dd_client` и `dd_setup` (для программы начальной загрузки, установщика и модуля установки соответственно).
 
 ## <a name="get-support"></a>Техническая поддержка
-Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Кроме того, вы можете сообщить о проблемах при использовании продукта в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio IDE или платформу [UserVoice](https://visualstudio.uservoice.com/forums/121579). Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы. Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio) (требуется учетная запись [GitHub](https://github.com/)).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Ниже приведены несколько дополнительных вариантов:
+* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
+* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>См. также
 

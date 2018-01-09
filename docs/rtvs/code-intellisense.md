@@ -1,5 +1,5 @@
 ---
-title: "IntelliSense для кода R в Visual Studio | Документация Майкрософт"
+title: "IntelliSense для кода R в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,28 +12,29 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 160b39690cf2c1ebf933fb7a17f5d5b17b4d422a
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: a54ebc3abb5f63e2503f48e050e5b9d3e3546abb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense"></a>IntelliSense
 
 IntelliSense в Visual Studio отображает сведения о функциях, которые можно вызывать, элементах объектов, аргументах функций и [фрагментах кода](code-snippets.md) прямо в представлении при написании кода. IntelliSense также отображает возможные варианты при вводе и автоматически завершает их при нажатии клавиш TAB или ВВОД (сведения о вкладке **Дополнительно** см. в разделе, посвященном [параметрам редактора](code-editing.md#editor-options)). IntelliSense доступен как в редакторе, так и в [интерактивном окне](interactive-repl.md).
 
-![IntelliSense — отображение сигнатуры функции](media/intellisense-function-signature.png) 
+![IntelliSense — отображение сигнатуры функции](media/intellisense-function-signature.png)
 
 При вводе функции или другого оператора технология IntelliSense предлагает меню автозавершения ввода, содержимое которого отсортировано с учетом уже введенного текста (с учетом регистра).
 
 ![Меню автозавершения IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Нажмите клавишу TAB (или ВВОД или ПРОБЕЛ, в зависимости от заданных параметров), чтобы вставить элемент, выбранный в раскрывающемся списке. Выбор можно изменить с помощью клавиш со стрелками. 
+Нажмите клавишу TAB (или ВВОД или ПРОБЕЛ, в зависимости от заданных параметров), чтобы вставить элемент, выбранный в раскрывающемся списке. Выбор можно изменить с помощью клавиш со стрелками.
 
 IntelliSense также предлагает варианты для членов объектов R.
- 
+
 ![IntelliSense — предложения для членов объекта](media/intellisense-auto-complete-r-objects.png)
- 
+
 При нажатии клавиши ESC меню полностью закрывается. Чтобы снова открыть его , нажмите клавиши CTRL + ПРОБЕЛ.
 
 При вводе открывающей `(` для вызова функции выполняется вставка закрывающей `)` и открывается справка по сигнатуре, как было указано выше.

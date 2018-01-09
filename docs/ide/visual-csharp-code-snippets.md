@@ -17,11 +17,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C#
 Фрагменты кода — это готовые фрагменты кода, которые можно быстро вставлять в свой код. Например, фрагмент кода `for` создает пустой цикл `for`. Некоторые фрагменты кода являются окружающими, т. е. позволяют сначала выбрать строки кода, а затем фрагмент кода, в который будут включены выбранные строки. Например, если выбрать строки кода и затем активировать фрагмент кода `for`, будет создан блок цикла `for`, внутри которого будут находиться выбранные строки кода. Фрагменты кода ускоряют, упрощают написание программ и делают этот процесс более надежным.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 12/07/2017
 ## <a name="default-code-snippets"></a>Фрагменты кода по умолчанию  
  По умолчанию в Visual Studio включены следующие фрагменты кода.  
 
-|Имя (или сокращенное имя)|Описание|Допустимые места для вставки фрагмента|  
+|Имя (или сокращенное имя)|Описание:|Допустимые места для вставки фрагмента|  
 |--------------------------|-----------------|---------------------------------------|  
 |#if|Создает директивы [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) и [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|В любом месте.|  
 |#region|Создает директивы [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) и [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|В любом месте.|  
@@ -45,7 +46,7 @@ ms.lasthandoff: 12/07/2017
 |cw|Создает вызов <xref:System.Console.WriteLine%2A>.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |do|Создает цикл [do](/dotnet/csharp/language-reference/keywords/do)`while`.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |else|Создает [else](/dotnet/csharp/language-reference/keywords/if-else) блок.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|enum|Создает объявление типа [enum](/dotnet/csharp/language-reference/keywords/enum).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
+|перечисление|Создает объявление типа [enum](/dotnet/csharp/language-reference/keywords/enum).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |equals|Создает объявление метода, которое переопределяет метод <xref:System.Object.Equals%2A>, определенный в классе <xref:System.Object>.|Внутри класса или структуры.|  
 |exception|Создает объявление класса, производного от исключения (по умолчанию <xref:System.Exception>).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |for|Создает цикл [for](/dotnet/csharp/language-reference/keywords/for).|Внутри метода, индексатора, метода доступа к свойству или событию.|  

@@ -1,5 +1,5 @@
 ---
-title: "Удаленная отладка Azure для Python в Visual Studio | Документация Майкрософт"
+title: "Удаленная отладка Azure для Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: c9ac484d90d7c80cbff0e20f33ede099b36c9786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Удаленная отладка кода Python а Azure
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 12/01/2017
 
 Когда проект правильно развернут и для него включены веб-сокеты, вы можете подключиться к службе приложений из **обозревателя сервера** в Visual Studio (**Просмотр > Обозреватель сервера**). Найдите нужный сайт в разделе **Azure > Служба приложений**, открыв соответствующую группу ресурсов, щелкните его правой кнопкой мыши и выберите действие **Подключить отладчик (Python)**. (Другая команда, **Подключить отладчик**, действует для приложений .NET, работающих под управлением служб IIS, и будет полезна только в тех случаях, когда рядом с приложением Python размещен код .NET.)
 
-Теперь вы можете перейти в Visual Studio непосредственно к набору инструкций для прямого подключения, как описано ниже в разделе [Подключение без обозревателя серверов](#attaching-without-server-explorer). Если вы не видите команды **Подключить отладчик (Python)** или Visual Studio не может подключиться к сайту, воспользуйтесь статьей [Устранение неполадок с удаленной отладкой Azure с помощью Инструментов Python для Visual Studio](debugging-azure-remote-troubleshooting.md).
+Теперь вы можете перейти в Visual Studio непосредственно к набору инструкций для прямого подключения, как описано ниже в разделе [Подключение без обозревателя серверов](#attaching-without-server-explorer). Если вы не видите команды **Подключить отладчик (Python)** или Visual Studio не может подключиться к сайту, воспользуйтесь статьей [Устранение неполадок с удаленной отладкой Azure с помощью инструментов Python для Visual Studio](debugging-azure-remote-troubleshooting.md).
 
 При успешном подключении Visual Studio переключается в представление отладчика. Панель инструментов указывает, какой процесс проходит отладку, например URI `wss://`:
 

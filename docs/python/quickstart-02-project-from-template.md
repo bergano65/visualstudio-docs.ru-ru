@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 745e6abe6aa9e1637d7ab79c0f76fb8874e8f6af
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: ee329df0bda8869215969941024deba6d94743fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 
@@ -81,10 +82,10 @@ ms.lasthandoff: 12/01/2017
 
 1. Запустите программу, нажав клавиши CTRL+F5 или выбрав пункт меню **Отладка > Запуск без отладки**. Результаты отображаются в окне консоли.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Учебник. Работа с Python в Visual Studio](vs-tutorial-01-01.md)
+> [Руководство. Работа с Python в Visual Studio](vs-tutorial-01-01.md)
 
 ## <a name="see-also"></a>См. также
 

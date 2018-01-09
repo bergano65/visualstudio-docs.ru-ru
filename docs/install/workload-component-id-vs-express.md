@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.openlocfilehash: 124a40e4e8f4b713e17aa05f95efccc5fcec3589
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: a628d2af0ccfaf66c936b391a977a0869139c98b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Идентификаторы рабочих нагрузок и компонентов для Visual Studio Desktop Express 2017
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 12/04/2017
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.0.27019.1 | Обязательно
 Microsoft.Component.HelpViewer | Help Viewer | 15.0.27005.2 | Обязательно
@@ -59,18 +60,18 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства раз�
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.0.26606.0 | Обязательно
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 1.10.50912.1 | Обязательно
 Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 15.0.26606.0 | Обязательно
-Microsoft.VisualStudio.Component.EntityFramework | Инструменты для Entity Framework 6 | 15.0.26208.0 | Обязательное
+Microsoft.VisualStudio.Component.EntityFramework | Инструменты для Entity Framework 6 | 15.0.26208.0 | Обязательно
 Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.0.27128.1 | Обязательно
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.0.27019.1 | Обязательно
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.0.27019.1 | Обязательно
 Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.0.26606.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательное
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательное
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательно
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательно
 Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательно
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.0.26919.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательное
+Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательно
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
 Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательно
 Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI | 15.0.27019.1 | Обязательно
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.0.27019.1 | Обязательно
@@ -86,7 +87,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK 
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя | Версия
+Идентификатор компонента | name | Версия
 --- | --- | ---
 Н/Д | Н/Д | Н/Д
 

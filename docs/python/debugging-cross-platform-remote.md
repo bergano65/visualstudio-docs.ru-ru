@@ -1,5 +1,5 @@
 ---
-title: "Удаленная кроссплатформенная отладка кода Python в Visual Studio | Документы Майкрософт"
+title: "Удаленная кроссплатформенная отладка кода Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: aa667357-763f-4ce6-8e47-48f9337658a8
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7d5526bbcde438896f63c0f9b4f75d919d3ca457
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 

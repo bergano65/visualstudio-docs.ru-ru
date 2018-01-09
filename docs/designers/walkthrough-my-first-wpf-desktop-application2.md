@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Пошаговое руководство. Создание первого классического приложения WPF
 В этом пошаговом руководстве содержатся вводные сведения о разработке на основе платформы Windows Presentation Foundation (WPF). Вы создадите простейшее приложение, содержащее элементы, используемые в большинстве классических приложений WPF: разметку XAML, код программной части, определения приложения, элементы управления, макет, привязку данных и стили.  
@@ -268,7 +269,7 @@ ms.lasthandoff: 12/12/2017
   
 1.  Выберите приведенное ниже изображение и сохраните его с именем `watermark.png`.  
   
-     ![Изображение водяного знака для пошагового руководства](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Изображение водяного знака для пошагового руководства](../designers/media/wpf_watermark.png "водяной знак")  
   
     > [!NOTE]
     >  Вы также можете создать собственное изображение и сохранить его с именем `watermark.png`.  

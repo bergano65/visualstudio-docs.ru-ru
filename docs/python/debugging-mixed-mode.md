@@ -1,5 +1,5 @@
 ---
-title: "Смешанный режим отладки для Python в Visual Studio | Документы Майкрософт"
+title: "Смешанный режим отладки для Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -8,20 +8,20 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4ca86a87-e254-4ab7-b3ba-a0ab99c1da93
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2f7253e91535e5c9f3214b712da135db46ed7cf9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 762829628e4f52c797bf98acf83a48eec0cbce6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-python-and-c-together"></a>Совместная отладка Python и C++
 
-Большинство обычных отладчиков Python поддерживает только отладку кода Python. Но на практике Python используется совместно с C или C++, если требуется высокая производительность или возможность напрямую вызывать интерфейсы API платформ (например, см. раздел [Создание расширения C++ для Python](cpp-and-python.md). При загрузке проекта Python Visual Studio предоставляет интегрированную одновременную отладку в смешанном режиме для Python и машинного кода (C/C++) с объединением стеков вызовов, возможностью переключаться между Python и машинным кодом, точками останова для кода любого типа, а также возможностью видеть представления объектов Python в кадрах машинного кода и наоборот.
+Большинство обычных отладчиков Python поддерживает только отладку кода Python. Но на практике Python используется совместно с C или C++, если требуется высокая производительность или возможность напрямую вызывать интерфейсы API платформ (пример см. в разделе [Создание расширения C++ для Python](cpp-and-python.md)). При загрузке проекта Python Visual Studio предоставляет интегрированную одновременную отладку в смешанном режиме для Python и машинного кода (C/C++) с объединением стеков вызовов, возможностью переключаться между Python и машинным кодом, точками останова для кода любого типа, а также возможностью видеть представления объектов Python в кадрах машинного кода и наоборот.
 
 ![Отладка в смешанном режиме](media/mixed-mode-debugging.png) 
 

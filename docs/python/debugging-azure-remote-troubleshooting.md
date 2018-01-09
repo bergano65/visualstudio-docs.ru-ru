@@ -1,5 +1,5 @@
 ---
-title: "Устранение неполадок с удаленной отладкой Azure для Python в Visual Studio | Документация Майкрософт"
+title: "Устранение неполадок с удаленной отладкой Azure для Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,13 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6dc28135245cae755189174b18000b5c06537b6d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 4d64338d619cbff77333e6518569d5e3b8376e36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Устранение неполадок с удаленной отладкой для Python и Azure
+# <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>Устранение неполадок с удаленной отладкой для Python и Azure
 
 Если Visual Studio не удается подключиться к [службе приложений Azure для удаленной отладки](debugging-azure-remote.md), это может быть вызвано любой из следующих причин:
 

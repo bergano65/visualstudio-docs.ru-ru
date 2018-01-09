@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d9c163063cfa4e2a78f8a07ab74efbecb355448
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef4179c5bc0fb80e2fb65d54885c342ca49bce3b
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Синхронизация параметров в Visual Studio
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Отключение синхронизации параметров для конкретного компьютера
 
-Синхронизированные параметры для Visual Studio включены по умолчанию. Чтобы отключить синхронизированные параметры на компьютере, перейдите в меню **Сервис &#124; Параметры &#124; Среда &#124; Синхронизированные параметры** и снимите флажок.  Например, если отключить синхронизацию параметров Visual Studio на компьютере A, изменения параметров, внесенные на компьютере A, не отображаются на компьютере B или C. Параметры компьютеров B и C будут продолжать синхронизироваться друг с другом, но не с компьютером A.
+Синхронизированные параметры для Visual Studio включены по умолчанию. Чтобы отключить синхронизированные параметры на компьютере, перейдите на страницу **Сервис &#124; Параметры &#124; Среда &#124; Учетные записи** и снимите флажок.  Например, если отключить синхронизацию параметров Visual Studio на компьютере A, изменения параметров, внесенные на компьютере A, не отображаются на компьютере B или C. Параметры компьютеров B и C будут продолжать синхронизироваться друг с другом, но не с компьютером A.
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Синхронизация параметров в разных семействах продуктов и выпусках Visual Studio
 

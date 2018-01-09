@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1097a5724e1fcab96be99c58532e15fedd59da30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a48416fc2508240cd03e545c0b798d3d24ab6f6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="display-data-in-blend"></a>Отображение данных в Blend
 При настройке макета страниц вы можете просмотреть демонстрационные данные в конструкторе. Демонстрационные данные можно создать с нуля или с помощью существующего класса. Вы также можете подключиться к *динамическим данным* , которые появятся в вашем приложении при его запуске.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")  
   
- Если требуется, чтобы демонстрационные данные отображались на страницах при запуске приложения, нажмите элемент **Параметры источника данных** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d"), а затем щелкните **Разрешить при выполнении приложения**.  
+ Если требуется, чтобы демонстрационные данные отображались на страницах при запуске приложения, выберите элемент **Параметры источника данных** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d"), а затем щелкните **Разрешить при выполнении приложения**.  
   
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Existing"></a> Создание демонстрационных данных из класса  
  Если вы уже создали классы, которые описывают структуру данных, вы можете создать демонстрационные данные на их основе.  
   
- Чтобы создать демонстрационные данные на основе класса, откройте XAML-документ и на панели **Данные** нажмите кнопку **Создать демонстрационные данные**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") , а затем щелкните **Создать демонстрационные данные из класса**.  
+ Чтобы создать демонстрационные данные на основе класса, откройте XAML-документ и на панели **Данные** нажмите кнопку **Создать демонстрационные данные**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f"), а затем щелкните **Создать демонстрационные данные из класса**.  
   
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание демонстрационных данных из класса](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).  
   

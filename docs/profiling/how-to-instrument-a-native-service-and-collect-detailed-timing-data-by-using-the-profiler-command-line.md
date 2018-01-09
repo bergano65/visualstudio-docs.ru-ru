@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5219a55c009b313ef3b0059efc588213729ff43e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 0b393114c1e5fbc4f4b3c746eba422a07c65e662
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование собственной службы и сбор подробных данных об использовании времени с помощью командной строки профилировщика
 Эта статья описывает использование программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью инструментирования собственной (C/C++) службы, а также для сбора подробных данных по использованию времени.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  Параметры **/user** и **/crosssession** обычно являются обязательными для приложений ASP.NET.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.|  
     |[/crossession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах входа. Этот параметр является обязательным, если приложение ASP.NET выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**.|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  

@@ -1,5 +1,5 @@
 ---
-title: "Визуализация данных с помощью инструментов R для Visual Studio | Документация Майкрософт"
+title: "Визуализация данных с помощью инструментов R для Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5d022864609dca3aeaa2a759ea05e1f37abd203f
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 7449e6037300eab33d89f32f98d58a5e265ad21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Создание визуальных графиков данных с помощью R
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 12/04/2017
 
 ![Изображение с параметрами построения графиков](media/plotting-hero-image.png)
 
-Содержание раздела
+В этом разделе.
 
 - [Окно графиков](#the-plot-window)
 - [Несколько окон графиков](#multiple-plot-windows)
@@ -55,7 +56,7 @@ ms.lasthandoff: 12/04/2017
 
 На панели инструментов окна графиков находятся соответствующие команды, большинство из которых также доступны в меню **Инструменты R > Графики**.
 
-| Кнопка | Команда | Описание | 
+| Кнопка | Команда | Описание: | 
 | --- | --- | --- |
 | ![Кнопка "Создать окно графиков"](media/plotting-toolbar-01-new-plot-window.png) | Создать окно графиков | Создание отдельного окна графиков со своим собственным журналом. См. подраздел [Несколько окон графиков](#multiple-plot-windows). |
 | ![Кнопка "Активировать окно графиков"](media/plotting-toolbar-02-activate-plot-window.png) | Активировать окно графиков | Выбор текущего окна графиков в качестве активного окна, чтобы последующие команды `plot` отображались в нем. См. подраздел [Несколько окон графиков](#multiple-plot-windows). См. подраздел [Несколько окон графиков](#multiple-plot-windows). |

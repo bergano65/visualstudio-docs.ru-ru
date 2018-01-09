@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
-ms.openlocfilehash: 2c691f2e0d4aae1344afd18f50a858e17f99c547
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 4b41304a893dbee45b7de08edb9a37e07ef8656d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Каталог компонентов для Visual Studio Build Tools 2017
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/04/2017
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Обязательно
 Microsoft.VisualStudio.Component.CoreBuildTools | Ядро Visual Studio Build Tools | 15.0.27005.2 | Обязательно
@@ -55,7 +56,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 15
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 1.0–1.1 | 15.0.26606.0 | Обязательно
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.0.26919.1 | Обязательно
@@ -69,7 +70,7 @@ Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Основные возможности Visual C++ Build Tools | 15.0.27005.2 | Обязательно
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Распространяемый компонент Visual C++ 2017 с обновлением | 15.0.27019.1 | Обязательно
@@ -110,7 +111,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Пакеты SDK д�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.0.26621.2 | Обязательно
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.0.26621.2 | Обязательно
@@ -130,7 +131,7 @@ Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.0.27128.1 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.0.26419.1 | Необязательный
+Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.0.26419.1 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.0.27019.1 | Optional
@@ -140,7 +141,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разраб�
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя | Версия
+Идентификатор компонента | name | Версия
 --- | --- | ---
 Microsoft.VisualStudio.Component.VC.Tools.14.11 | Набор инструментов v14.11 для VC++ 2017 версии 15.4 | 15.0.27128.1
 

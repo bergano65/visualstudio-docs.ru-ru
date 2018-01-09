@@ -17,11 +17,12 @@ ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: ff6cc33a9bd7e5feddf83f770ef008ff6c33e4a9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f269e9c719ee685567161fbf8d5edb05b17ea9cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Настройка параметров по умолчанию для корпоративного развертывания Visual Studio
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/22/2017
 
 Вы можете задать указанные ниже значения реестра.
 
-| **Имя** | **Type** | **Default** | **Описание** |
+| **Name** | **Type** | **Default** | **Описание** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` или `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Каталог, где хранятся манифесты пакетов и полезные данные (необязательно). Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Сохранение полезных данных пакетов даже после их установки. Это значение можно изменить в любое время. После отключения этой политики удаляются все кэшированные полезные данные пакетов для экземпляров, которые вы восстанавливаете или изменяете. Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |

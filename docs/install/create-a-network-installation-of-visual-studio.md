@@ -4,7 +4,7 @@ description: "Описывается создание сетевой точки 
 ms.date: 10/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,20 +12,21 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 77f6de05b27eb0a226e29ace7962847ebd45bd16
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Создание сетевой установки Visual Studio 2017
 
 Обычно администратор предприятия создает точку сетевой установки для развертывания на клиентских рабочих станциях. Среда Visual Studio 2017 разработана таким образом, чтобы вы могли кэшировать файлы для первоначальной установки вместе со всеми обновлениями продуктов в одну папку. (Этот процесс также известен как _создание макета_.) Это сделано для того, чтобы клиентские рабочие станции могли использовать то же сетевое расположение для управления установкой, даже если они еще не были обновлены до последнего сервисного обновления.
 
-> [!NOTE]
-> Если вы используете в организации несколько версий Visual Studio (например, Visual Studio Professional и Visual Studio Enterprise), вам нужно создать отдельную сетевую папку установки для каждого выпуска.
+ > [!NOTE]
+ > Если вы используете в организации несколько версий Visual Studio (например, Visual Studio Professional и Visual Studio Enterprise), вам нужно создать отдельную сетевую папку установки для каждого выпуска.
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Скачивание загрузчика Visual Studio
 
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/11/2017
 Для выполнения этого действия необходимо подключение к Интернету. Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, приведенных в следующих примерах.
 
    > [!IMPORTANT]
-   > Для установки полного макета Visual Studio 2017 потребуется как минимум 35 ГБ дискового пространства. Скачивание этого макета может занять некоторое время.  Чтобы создать макет, содержащий только выбранные компоненты для установки, см. инструкции в разделе [Настройка сетевого макета](#customizing-the-network-layout).
+   > Для установки полного макета Visual Studio 2017 потребуется как минимум 35 ГБ дискового пространства. Скачивание этого макета может занять некоторое время.  Чтобы создать макет, содержащий только выбранные компоненты для установки, см. инструкции в разделе [Настройка сетевого макета](#customizing-the-network-layout).
 
    > [!TIP]
    > Эти команды необходимо выполнять из каталога загрузки. На компьютере с ОС Windows 10 это обычно каталог `C:\Users\<username>\Downloads`.
@@ -151,7 +152,13 @@ ms.lasthandoff: 11/11/2017
 У нас есть и другие возможности технической поддержки. Список доступных вариантов вы найдете на странице в статье [Talk to us](../ide/how-to-report-a-problem-with-visual-studio-2017.md) (Свяжитесь с нами).
 
 ## <a name="get-support"></a>Техническая поддержка
-Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Кроме того, вы можете сообщить о проблемах при использовании продукта в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio IDE или платформу [UserVoice](https://visualstudio.uservoice.com/forums/121579). Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы. Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio) (требуется учетная запись [GitHub](https://github.com/)).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Ниже приведены несколько дополнительных вариантов:
+* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
+* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>См. также
 * [Установка Visual Studio](install-visual-studio.md)

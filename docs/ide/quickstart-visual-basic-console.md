@@ -1,7 +1,7 @@
 ---
-title: "Краткое руководство. Создание консольного приложения на Visual Basic в Visual Studio | Документы Майкрософт"
+title: "Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 12/05/2017
+ms.date: 12/10/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -12,16 +12,17 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 57441895ccff8bf32b59d6306ca4ae618382d356
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: 46557b646db37b3f04420ca5b91ab71c4f5b088a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="quickstart-create-a-console-app-in-visual-studio-with-visual-basic"></a>Краткое руководство. Создание консольного приложения на Visual Basic в Visual Studio
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое приложение на Visual Basic, выполняющееся в консоли.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали это.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
 
 ## <a name="create-a-project"></a>Создание проекта
 Сначала вы создадите проект приложения Visual Basic. Для этого типа проекта уже имеются все нужные файлы шаблонов, что избавляет вас от лишней работы.
@@ -32,11 +33,11 @@ ms.lasthandoff: 12/11/2017
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите проект *HelloWorld*.
 
-   ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../ide/media/new-project-vb-dotnet-helloworld-console-app.png)
+   ![Шаблон проекта "Консольное приложение (.NET Core)" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
      Если шаблон проекта **Консольное приложение (.NET Core)** отсутствует, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**.
 
-   ![Выбор ссылки "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../ide/media/vb-open-visual-studio-installer.png)
+   ![Выбор ссылки "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
      Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.
 
@@ -81,4 +82,5 @@ ms.lasthandoff: 12/11/2017
 
 ## <a name="see-also"></a>См. также
 * [Краткое руководство. Создание приложения Windows Forms "Hello World" на Visual Basic в Visual Studio](quickstart-visual-basic-winforms.md)
-* [Дополнительные сведения об IntelliSense в Visual Basic](visual-basic-specific-intellisense.md)
+* [Учебник. Начало работы с Visual Basic в Visual Studio](tutorial-visual-basic-console.md)
+* [IntelliSense для файлов кода Visual Basic](visual-basic-specific-intellisense.md)

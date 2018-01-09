@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: c9171e4c-1bba-4581-b18e-cc8a9ad25f0c
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9eca2beb71e6e0e8a1a861e00119caba0bd62923
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: python
+ms.openlocfilehash: 964ed265f4e2587a1bef4812797987c47d52fa80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>Шаг 2. Написание и выполнение кода
 
@@ -42,14 +42,14 @@ ms.lasthandoff: 11/02/2017
     ```
 
 1. Обратите внимание на раскраску синтаксических конструкций, которая позволяет отличить оператор `print` от аргумента `"Hello Visual Studio"`. Кроме того, на время удалите последний символ `"` в строке и обратите внимание на то, как код, содержащий синтаксические ошибки, подчеркивается в Visual Studio красной линий. Чтобы исправить ошибку, снова добавьте символ `"`.
- 
+
     ![Раскраска синтаксических конструкций и выделение ошибок посредством IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > Visual Studio предоставляет полный контроль над внешним видом и поведением среды разработки, что позволяет настроить ее, как вам нравится. Выберите пункт меню **Сервис > Параметры** и изучите параметры на вкладках **Среда** и **Текстовый редактор**. По умолчанию вы видите ограниченный набор параметров. Чтобы просмотреть все параметры для каждого языка программирования, щелкните **Показать все параметры** внизу диалогового окна. 
 
 1. Чтобы выполнить весь написанный код, нажмите клавиши CTRL+F5 или выберите команду меню **Отладка > Запуск без отладки**. Если в коде все еще есть ошибки, в Visual Studio будут выведены предупреждения.
- 
+
 1. При запуске программы появляется окно консоли с результатами, так же как при запуске интерпретатора Python с `PythonApplication1.py` из командной строки. Чтобы закрыть это окно и вернуться в редактор Visual Studio, нажмите любую клавишу.
 
     ![Выходные данные при первом запуске программы](media/vs-getting-started-python-07-output.png)
@@ -71,8 +71,8 @@ ms.lasthandoff: 11/02/2017
 1. Затем импортируйте элементы `sin`, `cos` и `radians`. Обратите внимание, как для каждого из них будут выводиться варианты автозавершения. По завершении код должен выглядеть следующим образом:
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
@@ -81,22 +81,20 @@ ms.lasthandoff: 11/02/2017
 1. Добавьте еще код для печати значений косинуса в интервале до 360 градусов.
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Снова запустите программу, нажав клавиши CTRL+F5 или выбрав пункт меню **Отладка > Запуск без отладки**. По завершении закройте окно вывода.
 
-
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Использование интерактивного окна REPL](vs-tutorial-01-03.md)
-
 
 ## <a name="going-deeper"></a>Дополнительные сведения
 
 - [Редактирование кода](code-editing.md)
 - [Форматирование кода](code-formatting.md)
-- [Оптимизация кода](code-refactoring.md)
+- [Рефакторинг кода](code-refactoring.md)
 - [Использование PyLint](code-pylint.md)

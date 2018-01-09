@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.openlocfilehash: ef6a121f848d39534b9a96bd215e1d3dba04a923
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: fee9a1edc3a96c3c1c2d7e4979a8ac589c55b86c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Каталог компонентов для Агента тестирования Visual Studio 2017
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/04/2017
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Основные функции агента тестирования | 15.0.27019.1 | Обязательно
 
@@ -48,7 +49,7 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Основные ф�
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя | Версия
+Идентификатор компонента | name | Версия
 --- | --- | ---
 Н/Д | Н/Д | Н/Д
 

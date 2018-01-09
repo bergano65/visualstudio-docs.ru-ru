@@ -1,5 +1,5 @@
 ---
-title: "Ошибка \"Требуется проверка подлинности на прокси-сервере\" | Документы Майкрософт"
+title: "Исправление ошибок \"Требуется проверка подлинности на прокси-сервере\" | Документы Майкрософт"
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6544edb62bac07f5ab787e4a3b2f8abaebafa777
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: e33e0e2896ccb3a5f7fe6d6da57f509af30d77fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="proxy-authorization-required"></a>Требуется проверка подлинности на прокси-сервере
 
@@ -56,10 +57,6 @@ ms.lasthandoff: 11/17/2017
 
         В `proxyaddress="<http://<yourproxy:port#>`необходимо вставить правильный адрес прокси-сервера в сети.
 
-    ИЛИ
+    OR
 
 - Добавить код, который позволит вам использовать прокси-сервер, также можно по инструкциям, приведенным в [этой публикации](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) .
-
-## <a name="see-also"></a>См. также
-
-[Ресурсы в Интернете, используемые Visual Studio](../connected-environment.md)

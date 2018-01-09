@@ -11,11 +11,12 @@ ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4c50384f734f4162fa1cf482c563ed35a6622adb
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3fbea34afa4e82ea360a0dfefe4f18dc74d11f19
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Автоматическое применение ключей продуктов при развертывании Visual Studio
 Ключ продукта можно применить программным способом в составе сценария, используемого для автоматизации развертывания Visual Studio. Ключи продуктов могут быть заданы на устройстве программно во время установки Visual Studio или после ее завершения.
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/22/2017
 
 Если `StorePID.exe` успешно применен к ключу продукта, для параметра `%ERRORLEVEL%` возвращается значение 0. При обнаружении ошибок возвращается один из следующих кодов в зависимости от состояния ошибки:
 
-| Ошибка                     | Код |
+| Error                     | Код |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |

@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 7392a100-100c-458c-9394-828695109015
-ms.openlocfilehash: 15b071a3c98ba470aca7be2eb9e6364a414afcb4
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 27d0f817bb74e833359faaffbc467f2344d166eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Каталог компонентов для Visual Studio Feedback Client 2017
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/04/2017
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.27005.2 | Обязательно
 
@@ -48,7 +49,7 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback C
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя | Версия
+Идентификатор компонента | name | Версия
 --- | --- | ---
 Н/Д | Н/Д | Н/Д
 

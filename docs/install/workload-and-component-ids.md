@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
-ms.openlocfilehash: 46b831b2c3097b64d130f0cb47eb6150c5b82845
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ba73e3c53e03bf3d6deb65deea0aabd715fc69fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017
 Щелкайте имена выпусков в таблице ниже, чтобы увидеть идентификаторы доступных рабочих нагрузок и компонентов, которые нужны для установки Visual Studio из командной строки или для определения в качестве зависимости в манифесте VSIX.

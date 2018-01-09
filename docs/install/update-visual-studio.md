@@ -1,7 +1,7 @@
 ---
 title: "Обновление Visual Studio 2017 | Документы Майкрософт"
 description: "Сведения о поэтапном обновлении среды Visual Studio."
-ms.date: 11/08/2017
+ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - update Visual Studio
 - change visual studio
 - changing Visual Studio
-ms.assetid: db005b65-d233-4471-b337-551fb3fa2464
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 472b14cc16c7dc8c3a0a9bb21ac7d64a858d0094
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
 Регулярные обновления Visual Studio служат для добавления новых функций и исправления ошибок, о которых сообщают наши пользователи. Чтобы всегда иметь под рукой [последний оптимизированный выпуск Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), следует выполнить обновление. Ниже описывается порядок действий.
@@ -30,9 +30,9 @@ ms.lasthandoff: 11/22/2017
 ## <a name="update-by-using-the-notifications-hub"></a>Обновление с помощью центра уведомлений
 1. При наличии доступных обновлений в Visual Studio появится флажок уведомления.
 
-  ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notification-flag.png "Флажок уведомления в Visual Studio")
+  ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notification-flag.png "Флажок уведомления об обновлении в Visual Studio")
 
-  Щелкните или выберите флажок уведомления, чтобы открыть **центр уведомлений**.
+  Выберите флажок уведомления, чтобы открыть **центр уведомлений**.
 
   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-hub.png "Центр уведомлений в Visual Studio")
 
@@ -43,6 +43,22 @@ ms.lasthandoff: 11/22/2017
 3. В диалоговом окне **Расширения и обновления** нажмите кнопку **Обновить**.
 
   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-extensions-and-updates.png "Диалоговое окно "Расширения и обновления" в Visual Studio")
+
+### <a name="more-about-visual-studio-notifications"></a>Подробнее об уведомлениях Visual Studio
+
+В Visual Studio выводятся уведомления о доступности обновления для самой среды Visual Studio или для любых ее компонентов, а также об определенных событиях в среде Visual Studio.
+
+* Желтый цвет флажка уведомления означает, что доступно обновление Visual Studio для установки.
+* Красный цвет флажка уведомления означает проблему с лицензией.
+* Черный цвет флажка уведомления означает, что имеются дополнительные или информационные сообщения для просмотра.
+
+Выберите флажок уведомления, чтобы открыть **центр уведомлений**, а затем выберите уведомления, в отношении которых необходимо предпринять меры. Уведомление можно также проигнорировать или закрыть.
+
+ ![Просмотр дополнительного или информационного сообщения в центре уведомлений](media/notification-flag-optional.png "Флажок уведомления о дополнительном или информационном сообщении в Visual Studio")
+
+Вы можете настроить пропуск уведомления, чтобы оно больше не отображалось в Visual Studio. Чтобы сбросить список игнорируемых уведомлений, нажмите кнопку **Параметры** в центре уведомлений.
+
+   ![Нажатие кнопки "Параметры" в центре уведомлений для просмотра параметров уведомлений](media/vs-notifications-hub-settings-button.png "Нажатие кнопки "Параметры" в центре уведомлений для просмотра параметров уведомлений")
 
 ## <a name="update-by-using-the-visual-studio-installer"></a>Обновление с помощью установщика Visual Studio
 1.  Запустите установщик. Для продолжения работы может потребоваться обновление самого установщика. В этом случае появится соответствующий запрос.
@@ -70,4 +86,4 @@ ms.lasthandoff: 11/22/2017
 * [Установка Visual Studio 2017](install-visual-studio.md)
 * [Изменение Visual Studio 2017](modify-visual-studio.md)
 * [Удаление Visual Studio 2017](uninstall-visual-studio.md)
-* [Руководство по Visual Studio 2017 для администратора](visual-studio-administrator-guide.md)
+* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)

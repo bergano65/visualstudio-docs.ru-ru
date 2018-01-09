@@ -1,7 +1,7 @@
 ---
-title: "Актуальная версия инструментов R для Visual Studio | Документация Майкрософт"
+title: "Актуальная версия инструментов R для Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 12/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
@@ -12,17 +12,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 835a854e4b5540910b5d6a6bae2e3bf89748c860
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 11bad9be7d64d0760b1e7a3d138b8770f0459899
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rtvs-current-version"></a>Актуальная версия RTVS
 
-На момент последнего изменения этой страницы самой актуальной версией инструментов R для Visual Studio (RTVS) была версия **1.3.31108.1213**. Ваша версия может отличаться в зависимости от версии Visual Studio и того, используете ли вы канал предварительных версий.
+На момент последнего изменения этой страницы самой актуальной версией инструментов R для Visual Studio (RTVS) была версия **1.0.31108.1213**. Ваша версия может отличаться в зависимости от версии Visual Studio и того, используете ли вы канал предварительных версий.
 
-Чтобы проверить версию, в Visual Studio выберите **Справка > О программе** и прокрутите вниз до записи **Инструменты R для Visual Studio**. 
+Чтобы проверить версию, в Visual Studio выберите **Справка > О программе** и прокрутите вниз до записи **Инструменты R для Visual Studio**.
 
 ![Проверка версии RTVS в Visual Studio (VS2017)](media/current-version.png)
 

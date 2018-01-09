@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +63,8 @@ ms.lasthandoff: 12/01/2017
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Вставка нескольких строк кода с помощью команды отправки в интерактивное окно](media/vs-getting-started-python-15-interactive5.png)
@@ -82,16 +83,15 @@ ms.lasthandoff: 12/01/2017
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Чтобы скопировать содержимое интерактивного окна полностью, включая приглашения и выходные данные, используйте стандартную команду **Копировать**.
 
 1. Итак, вы проработали небольшую часть кода с помощью среды REPL в интерактивном окне, а затем легко добавили этот код в исходный файл проекта. Если снова выполнить этот код с помощью клавиш CTRL+F5 (или команды **Отладка > Начать без отладки**), отобразятся именно те результаты, которые были нужны.
 
-
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Выполнение кода в отладчике](vs-tutorial-01-04.md)

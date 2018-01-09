@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.openlocfilehash: 588174ad2bc6f0ef99e08871c2a7faee81a38ace
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: e3a45c67e3104f6f01c509c379e49dbe1c07a0c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Каталог компонентов для Visual Studio Test Controller 2017
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/04/2017
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основные функции Test Controller | 15.0.27128.1 | Обязательно
 
@@ -48,7 +49,7 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основны�
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя | Версия
+Идентификатор компонента | name | Версия
 --- | --- | ---
 Н/Д | Н/Д | Н/Д
 

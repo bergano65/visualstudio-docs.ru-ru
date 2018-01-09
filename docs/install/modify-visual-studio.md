@@ -17,11 +17,12 @@ ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f003d5f5a598971d27c55e90ba3bbfbfdc5ae1f1
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 8278b138e8cf7a8780ad83d591a823fdb85f2b08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio 2017 путем добавления или удаления рабочих нагрузок и компонентов
 Мы упростили не только персонализацию Visual Studio в соответствии с выполняемыми задачами, но и настройку самой среды Visual Studio. Теперь больше не нужно обращаться к панели управления. Вместо этого запустите Visual Studio Installer и внесите нужные изменения.

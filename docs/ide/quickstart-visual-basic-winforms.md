@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 388784b53018c30357f496cfbeb533c0a07a3053
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Краткое руководство. Создание приложения Windows Forms на Visual Basic в Visual Studio
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое приложение на Visual Basic, имеющее пользовательский интерфейс на основе Windows.
@@ -95,5 +96,5 @@ ms.lasthandoff: 12/11/2017
 Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали нечто новое о Visual Basic и интегрированной среде разработки Visual Studio. Если вы хотите изучить все более подробно, продолжите работу с руководством из раздела **Руководства** в содержании.  
 
 ## <a name="see-also"></a>См. также   
-* [Краткое руководство. Создание консольного приложения на Visual Basic в Visual Studio](quickstart-visual-basic-console.md) ](https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio)
+* [Краткое руководство. Создание консольного приложения на Visual Basic в Visual Studio](quickstart-visual-basic-console.md)
 * [Дополнительные сведения об IntelliSense в Visual Basic](visual-basic-specific-intellisense.md)  

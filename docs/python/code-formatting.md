@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8d693278eb9d60d690e797d4e14163495239cd31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: adffbe879701944d5492c36dd40acc813f6afa8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="formatting-python-code"></a>Форматирование кода Python
 

@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
 Вы можете сохранять файлы с определенной кодировкой для поддержки языков с двунаправленным письмом. Можно также указать кодировку при открытии файла, чтобы система Visual Studio отобразила его правильно.  
@@ -58,6 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Выполните шаги 2 и 3 из предыдущей процедуры.  
   
-## <a name="see-also"></a>См. также  
- [Кодировка и глобализация Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
- [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>См. также
+[Кодировка и разрывы строк](encodings-and-line-breaks.md)  
+[Кодировка и глобализация Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
+[Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

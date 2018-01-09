@@ -1,5 +1,5 @@
 ---
-title: "Рефакторинг кода Python в Visual Studio | Документы Майкрософт"
+title: "Рефакторинг кода Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-python-code"></a>Рефакторинг кода Python
 
@@ -28,6 +29,7 @@ Visual Studio предлагает несколько команд для авт
 - [Удаление неиспользуемых инструкций import](#remove-imports) — удаляет неиспользуемые операции импорта.
 
 <a name="rename-variable"</a>
+
 ## <a name="rename"></a>Переименовать
 
 1. Щелкните правой кнопкой мыши идентификатор, который нужно переименовать, и выберите команду **Переименовать** или поместите курсор внутрь этого идентификатора и выберите команду меню **Правка > Рефакторинг > Переименовать...**  (F2).

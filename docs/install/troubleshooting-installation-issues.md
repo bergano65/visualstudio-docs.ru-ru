@@ -14,11 +14,12 @@ ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9cd0a1b21cf7a61c9340c36be5db419d71c36e1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio 2017
 

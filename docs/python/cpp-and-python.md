@@ -1,7 +1,7 @@
 ---
 title: "Работа с C++ и Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 09/28/2017
+ms.date: 1/2/20178
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b7b83243d676c5393669eaa8faa8e8cc34ec2580
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Создание расширения C++ для Python
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 12/01/2017
 
 1. Задайте определенный свойства, как описано ниже, а затем нажмите кнопку **ОК**.
 
-    | Вкладка | Свойство | Значение | 
+    | Вкладка | Свойство. | Значение | 
     | --- | --- | --- |
     | Общие | Общие > Целевое имя | Задайте в этом поле значение, которое точно соответствует имени модуля, считываемому Python. |
     | | Общие > Конечное расширение | .pyd |
@@ -124,14 +125,14 @@ ms.lasthandoff: 12/01/2017
     > Не устанавливайте для параметра **C/C++ > Создание кода > Библиотека времени выполнения** значение "Многопоточная DLL с возможностью отладки (/MDd)" даже для конфигурации отладки. Выберите среду выполнения "Многопоточная DLL (/MD)", так как именно с ее помощью создаются двоичные файлы Python не для отладки. Если задать параметр /MDd, при создании конфигурации отладки для библиотеки DLL возникает ошибка *C1189: Py_LIMITED_API несовместим с Py_DEBUG, Py_TRACE_REFS и Py_REF_DEBUG*. Кроме того, если удалить `Py_LIMITED_API` во избежание этой ошибки сборки, Python аварийно завершает работу при попытке импортировать модуль. (Этот сбой возникает в вызове библиотеки DLL `PyModule_Create`, как описано ниже, и сопровождается сообщением *Fatal Python error: PyThreadState_Get: no current thread* (Неустранимая ошибка Python: PyThreadState_Get — нет текущего потока).)
     >
     > Обратите внимание, что параметр /MDd используется для сборки двоичных файлов отладки Python (например, python_d.exe), но его выбор для библиотеки DLL расширения по-прежнему вызывает ошибку сборки с `Py_LIMITED_API`.
-   
+
 1. Щелкните проект C++ правой кнопкой мыши и выберите **Сборка**, чтобы протестировать конфигурации (отладочную и окончательную). Файлы `.pyd` находятся в папке *solution* в каталоге **Debug** и **Release**, а не в самой папке проекта C++.
 
 1. Добавьте следующий код в главный файл `.cpp` проекта:
 
     ```cpp
     #include <Windows.h>
-    #include <cmath>    
+    #include <cmath>
 
     const double e = 2.7182818284590452353602874713527;
 
@@ -149,7 +150,6 @@ ms.lasthandoff: 12/01/2017
     ```
 
 1. Еще раз выполните сборку проекта C++, чтобы убедиться в правильности кода.
-
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>Преобразование проекта C++ в расширение для Python
 
@@ -171,11 +171,12 @@ ms.lasthandoff: 12/01/2017
     }
     ```
 
-1. Добавьте структуру, определяющую способ представления функции `tanh` C++ для Python:
+1. Добавьте структуру, определяющую способ представления функции `tanh_impl` C++ для Python:
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
-        // The first property is the name exposed to python, the second is the C++ function name        
+        // The first property is the name exposed to Python, fast_tanh, the second is the C++
+        // function name that contains the implementation.
         { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
 
         // Terminate the array with an object containing nulls.
@@ -183,22 +184,22 @@ ms.lasthandoff: 12/01/2017
     };
     ```
 
-1. Добавьте структуру, определяющую модуль так, как он отображается в коде Python. (Внутренние для проекта C++ имена файлов, такие как module.cpp, являются несущественными.)
+1. Добавьте структуру, которая определяет модуль так, как вы хотите ссылаться на него в своем коде Python, в частности, при использовании оператора `from...import`. В приведенном ниже примере имя модуля superfastcode означает, что `from superfastcode import fast_tanh` можно использовать в Python, так как функция `fast_tanh` определена в `superfastcode_methods`. (Внутренние для проекта C++ имена файлов, такие как module.cpp, являются несущественными.)
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name as Python sees it
+        "superfastcode",                        // Module name to use with Python import statements
         "Provides some functions, but faster",  // Module description
         0,
-        superfastcode_methods                   // Structure that defines the methods
+        superfastcode_methods                   // Structure that defines the methods of the module
     };
     ```
 
 1. Добавьте метод, вызываемый Python при загрузке модуля. Он должен иметь имя `PyInit_<module-name>`, где *&lt;module_name&gt;* точно соответствует свойству **Общие > Конечное имя** проекта C++ (то есть соответствует имени файла `.pyd`, созданного проектом).
 
     ```cpp
-    PyMODINIT_FUNC PyInit_superfastcode() {    
+    PyMODINIT_FUNC PyInit_superfastcode() {
         return PyModule_Create(&superfastcode_module);
     }
     ```
@@ -229,7 +230,7 @@ ms.lasthandoff: 12/01/2017
     sfc_module = Extension('superfastcode', sources = ['module.cpp'])
 
     setup(name = 'superfastcode', version = '1.0',
-        description = 'Python Package with superfastcode C++ Extension',
+        description = 'Python Package with superfastcode C++ extension',
         ext_modules = [sfc_module]
         )
     ```
@@ -249,7 +250,7 @@ ms.lasthandoff: 12/01/2017
 1. Добавьте приведенные ниже строки в файл `.py`, чтобы вызвать метод `fast_tanh`, экспортированный из библиотеки DLL, и получить его выходные данные. Если ввести оператор `from s` вручную, вы увидите `superfastcode` в списке завершения, а после ввода `import` отображается метод `fast_tanh`.
 
     ```python
-    from superfastcode import fast_tanh    
+    from superfastcode import fast_tanh
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 

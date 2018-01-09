@@ -22,18 +22,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML)
 В этом пошаговом руководстве описывается процесс определения и исправления проблем производительности с помощью [профилировщика скорости реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md). Профилировщик доступен в Visual Studio для приложений UWP, созданных с использованием JavaScript. В этом сценарии создается приложение тестирования производительности, которое обновляет элементы DOM слишком часто, а профилировщик используется для определения и решения этой проблемы.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Создание и запуск приложения тестирования производительности  
   
-1.  В Visual Studio создайте проект универсального приложения Windows на JavaScript. (Выберите **Файл > Создать > Проект**.) Щелкните **JavaScript** в левой области, выберите **Windows**, **Windows 10**, а затем выберите **Универсальные приложения** или **Windows Phone**.  
+1.  В Visual Studio создайте проект универсального приложения Windows на JavaScript. (Выберите **Файл > Создать > Проект**. Щелкните **JavaScript** в левой области, выберите **Windows**, **Windows 10**, а затем выберите **Универсальные приложения** или **Windows Phone**.  
   
 2.  > [!IMPORTANT]
     >  Результаты диагностики, приведенные в этом разделе, проверены в приложении Windows 8.  
@@ -202,7 +203,7 @@ ms.lasthandoff: 12/07/2017
   
      ![Событие таймера](../profiling/media/js_htmlviz_app_timer.png "JS_HTMLViz_App_Timer")  
   
-     Из этих данных можно сделать несколько фактических выводов. Например:  
+     Из этих данных можно сделать несколько фактических выводов. Пример:  
   
     -   Каждое событие `Timer` обозначения цветом в целях идентификации в качестве события скрипта, включает вызов `document.createElement`, за которым следует вычисление стиля и вызов `style.backgroundColor` и `appendChild()`.  
   

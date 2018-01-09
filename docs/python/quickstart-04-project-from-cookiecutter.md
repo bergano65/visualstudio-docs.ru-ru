@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a7bbb71c-fa07-42e8-bef9-0b9cf6dd628a
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: a877ea77a854659372bfc73b9ef85bc8c81d3be4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: d0b21c78ab31c093ef48300ac746c3c2fd7d6778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Краткое руководство. Создание проекта на основе шаблона Cookiecutter
 
@@ -39,15 +39,14 @@ ms.lasthandoff: 10/31/2017
 
 1. По завершении процесса появится сообщение "Файлы успешно созданы". Выберите команду **Открыть в обозревателе решений**, чтобы открыть проект.
 
-1. Чтобы запустить программу, нажмите клавиши CTRL+F5 или выберите пункт меню **Отладка > Запуск без отладки**. 
+1. Чтобы запустить программу, нажмите клавиши CTRL+F5 или последовательно выберите **"Отладка" > "Запустить без отладки"**. 
 
     ![Выходные данные проекта шаблона python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 
-
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Учебник. Работа с Python в Visual Studio](vs-tutorial-01-01.md)
+> [Руководство. Работа с Python в Visual Studio](vs-tutorial-01-01.md)
 
 ## <a name="see-also"></a>См. также
 

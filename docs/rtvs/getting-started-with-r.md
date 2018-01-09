@@ -1,5 +1,5 @@
 ---
-title: "Начало работы с инструментами R для Visual Studio | Документы Майкрософт"
+title: "Начало работы с R в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: eb08ea4541bd32e9e28987b103272a87c7a223c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Начало работы с инструментами R для Visual Studio
 
