@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Шаблоны веб-проектов Python
 
@@ -68,13 +68,12 @@ Visual Studio не включает в себя сами эти платформ
 Шаблон **веб-проекта Bottle** содержит стандартный код, который выполняет необходимую настройку. Импортированное приложение Bottle может не содержать этот код, однако в этом случае следующие параметры запускают приложение с помощью установленного модуля `bottle`:
 
 - Группа **команды запуска сервера**:
-
-    - **Команда**: `bottle` (модуль);
-    - **Аргументы**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`.
+  - **Команда**: `bottle` (модуль);
+  - **Аргументы**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`.
 
 - Группа **команды отладки сервера**:
-    - **Команда**: `bottle` (модуль);
-    - **Аргументы**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`.
+  - **Команда**: `bottle` (модуль);
+  - **Аргументы**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`.
 
 При отладке с помощью Visual Studio мы не рекомендуем использовать параметр `--reload`.
 
@@ -83,12 +82,11 @@ Visual Studio не включает в себя сами эти платформ
 В настоящее время для создания приложений Pyramid лучше всего использовать средство командной строки `pcreate`. После создания приложения его можно импортировать с помощью шаблона [На основе существующего кода Python](python-projects.md#creating-a-project-from-existing-files). Затем настройте параметры в свойствах **универсального веб-проекта**. Эти параметры предполагают, что платформа Pyramid установлена в виртуальной среде в `..\env`.
 
 - Группа **отладки**:
-
-    - **Порт сервера**: 6543 (или заданный в INI-файлах).
+  - **Порт сервера**: 6543 (или заданный в INI-файлах).
 
 - Группа **команды запуска сервера**:
-    - Команда: `..\env\scripts\pserve-script.py` (сценарий);
-    - Аргументы: `Production.ini`
+  - Команда: `..\env\scripts\pserve-script.py` (сценарий);
+  - Аргументы: `Production.ini`
 
 - Группа **команды отладки сервера**:
     - Команда: `..\env\scripts\pserve-script.py` (сценарий);
@@ -146,7 +144,7 @@ Visual Studio не включает в себя сами эти платформ
 
 В настоящее время для установки пакетов рекомендуется использовать консоль разработки, после того как вы установили расширения сайта и выполнили pip напрямую. Очень важно указать полный путь к Python. Иначе может быть использован ошибочный путь. Как правило, нет необходимости использовать виртуальную среду. Пример:
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

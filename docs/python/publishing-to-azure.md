@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: a5c3d0c63ad049d641368ceb3f9ef395f243e51c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 043e720d96c021bf510047a8dc7643d057d8982d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Публикация в службу приложений Azure
 
@@ -31,10 +31,10 @@ Visual Studio предоставляет возможность публиков
 
 - [Необходимые компоненты](#prerequisites)
 - [Создание службы приложений Azure](#create-an-azure-app-service)
-- [Настройка Python в службе приложений](#configure-python-on-app-service)
-- [Публикация в службе приложений — Visual Studio 2017](#publish-to-app-service-visual-studio-2017)
-- [Публикация в службе приложений — Visual Studio 2015](#publish-to-app-service-visual-studio-2015)
-- [Удаленная отладка в службе приложений](#remote-debugging-on-app-service)
+- [Настройка Python в службе приложений](#configure-python-on-azure-app-service)
+- [Публикация в службе приложений — Visual Studio 2017](#publish-to-app-service---visual-studio-2017)
+- [Публикация в службе приложений — Visual Studio 2015](#publish-to-app-service---visual-studio-2015)
+- [Удаленная отладка в службе приложений](#remote-debugging-on-azure-app-service)
 
 > [!Note]
 > Общие сведения об изменениях, произошедших в Visual Studio 2017 по сравнению с Visual Studio 2015, см. в записи блога [Публикация в Azure в Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
@@ -53,10 +53,10 @@ Visual Studio предоставляет возможность публиков
 
 Для публикации в Azure требуется целевая служба приложений. Вы можете создать службу приложений с помощью подписки Azure или воспользоваться временным сайтом.
 
-Если у вас еще нет подписки, начните со страницы [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/en-us/free/), где вы сможете получить большой кредит на использование служб Azure. Кроме того, вы можете [присоединиться к Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/) и в течение целого года ежемесячно получить кредит на сумму 25 долларов США.
+Если у вас еще нет подписки, начните со страницы [Создайте бесплатную учетную запись Azure уже сегодня](https://azure.microsoft.com/free/), где вы сможете получить большой кредит на использование служб Azure. Кроме того, вы можете [присоединиться к Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/) и в течение целого года ежемесячно получить кредит на сумму 25 долларов США.
 
 > [!Tip]
-> Хотя в Azure запрашиваются данные кредитной карты для проверки счета, деньги с этой карты не взимаются. Чтобы избежать дополнительной платы, можно также установить [предельную сумму расходов](https://docs.microsoft.com/azure/billing/billing-spending-limit) равной бесплатному кредиту. Кроме того, Azure предоставляет бесплатный план службы приложений, который идеально подходит для простых тестовых приложений, как описано в следующем разделе.
+> Хотя в Azure запрашиваются данные кредитной карты для проверки счета, деньги с этой карты не взимаются. Чтобы избежать дополнительной платы, можно также установить [предельную сумму расходов](/azure/billing/billing-spending-limit) равной бесплатному кредиту. Кроме того, Azure предоставляет бесплатный план службы приложений, который идеально подходит для простых тестовых приложений, как описано в следующем разделе.
 
 ### <a name="using-a-subscription"></a>Использование подписки
 
@@ -88,7 +88,7 @@ Visual Studio предоставляет возможность публиков
 
 При публикации в Службе приложений Azure из Visual Studio 2017 на сервер копируются только файлы проекта. Поэтому необходимо создать файлы, требуемые для настройки серверной среды.
 
-1. В **обозревателе решений** Visual Studio щелкните проект правой кнопкой мыши и выберите пункты *Добавить > Новый элемент...*. В открывшемся диалоговом окне выберите шаблон "Azure web.config (Fast CGI)" и нажмите кнопку "ОК". В корне проекта будет создан файл `web.config`. 
+1. В **обозревателе решений** Visual Studio щелкните проект правой кнопкой мыши и выберите пункты *Добавить > Новый элемент...*. В открывшемся диалоговом окне выберите шаблон "Azure web.config (Fast CGI)" и нажмите кнопку "ОК". В корне проекта будет создан файл `web.config`.
 
 1. Измените запись `PythonHandler` в файле `web.config` так, чтобы путь соответствовал установке Python на сервере. Например, для 64-разрядной версии Python 3.6.1 эта запись должна выглядеть так:
 
@@ -164,7 +164,7 @@ Visual Studio предоставляет возможность публиков
 
     В. С помощью консоли Kudu обновите все пакеты, перечисленные в файле `requirements.txt` приложения: перейдите в папку Python, которая используется в файле `web.config`, например `/home/python361x64`, и выполните следующую команду, как описано в разделе [Консоль Kudu](managing-python-on-azure-app-service.md#azure-app-service-kudu-console):
 
-    ```
+    ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
@@ -188,9 +188,9 @@ Visual Studio предоставляет возможность публиков
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Публикация в службе приложений — Visual Studio 2015
 
 > [!Note] 
-> На сайте youtube.com можно просмотреть краткое видео по этому процессу: [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Руководство по Python для Visual Studio. Создание веб-сайта, длительность 3 мин 10 с). 
+> На сайте youtube.com можно просмотреть краткое видео по этому процессу: [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Руководство по Python для Visual Studio. Создание веб-сайта, длительность 3 мин 10 с).
 
-1. В **Обозревателе решений** щелкните проект правой кнопкой мыши и выберите действие **Публикация**. 
+1. В **Обозревателе решений** щелкните проект правой кнопкой мыши и выберите действие **Публикация**.
 
 1. В диалоговом окне **Публикация** выберите вариант **Служба приложений Microsoft Azure**.
 
@@ -226,4 +226,4 @@ Visual Studio предоставляет возможность публиков
 
 В Visual Studio 2017 эти компоненты необходимо добавить непосредственно в проект. Щелкните правой кнопкой мыши проект в **обозревателе решений**, выберите **Добавить > Новый элемент...** и выберите шаблон "Файл web.config удаленной отладки Azure". В проекте появятся отладочный файл `web.debug.config` и папка со средствами `ptvsd`.
 
-После развертывания этих файлов на сервере (автоматически в Visual Studio 2015 или при следующей публикации в Visual Studio 2017) можно воспользоваться инструкциями по [удаленной отладке в Azure](https://docs.microsoft.com/visualstudio/python/debugging-azure-remote).
+После развертывания этих файлов на сервере (автоматически в Visual Studio 2015 или при следующей публикации в Visual Studio 2017) можно воспользоваться инструкциями по [удаленной отладке в Azure](debugging-azure-remote.md).

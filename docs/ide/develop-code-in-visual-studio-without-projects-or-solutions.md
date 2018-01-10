@@ -30,11 +30,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений  
 В Visual Studio 2017 вы можете открыть код практически из любого типа проекта на основе каталога без необходимости в решении или файле проекта. Это значит, что вы можете, например, найти проект кода в Git, клонировать его, а затем открыть прямо в Visual Studio и начать разработку, не создавая решение или проект.  
@@ -172,7 +172,7 @@ Visual Studio поддерживает выполнение кода на мно
 
   ![Команда настраиваемой задачи сборки](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Добавьте приведенные ниже задачи сборки в файл tasks.vs.json. В этом примере мы добавим две задачи: одну с именем makefile-build, которая будет использовать команду nMake для выполнения сборки проекта, и вторую — makefile-clean, которая будет вызывать команду nMake с аргументом clean. Эти задачи должны быть добавлены в существующий массив tasks. Обратите внимание, что это только пример задач сборки. Чтобы они заработали, у вас должна быть рабочая нагрузка с установленной программой командной строки [nMake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference).  
+1. Добавьте приведенные ниже задачи сборки в файл tasks.vs.json. В этом примере мы добавим две задачи: одну с именем makefile-build, которая будет использовать команду nMake для выполнения сборки проекта, и вторую — makefile-clean, которая будет вызывать команду nMake с аргументом clean. Эти задачи должны быть добавлены в существующий массив tasks. Обратите внимание, что это только пример задач сборки. Чтобы они заработали, у вас должна быть рабочая нагрузка с установленной программой командной строки [nMake](/cpp/build/nmake-reference).
 
   ```xml
   {

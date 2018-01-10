@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Обновлено для [выпуска 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -224,7 +224,7 @@ Visual Studio перемещает свои расширения, а также 
 * **Сочетание лучших возможностей универсальной платформы Windows и Win32** <br/>
 Чтобы улучшить платформу Windows 10 и максимально упростить работу с ней для разработчиков любых приложений .NET, в том числе для универсальной платформы Windows, Windows Presentation Foundation, Windows Forms или Xamarin, мы представляем [мост для классических приложений](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root). Благодаря новому типу проекта, "Пакет приложений", в Visual Studio 2017 версии 15.5 вы можете создавать пакеты приложений Windows для проектов Windows Presentation Foundation или Windows Forms так же, как и для проектов для универсальной платформы Windows. После упаковки приложения вы получаете все преимущества его развертывания в Windows 10 и возможность распространять его через магазин Microsoft Store (пользовательские приложения) или через магазин Microsoft Store для бизнеса и для образовательных учреждений. Поскольку упакованные приложения получают доступ ко всей области API универсальной платформы Windows и к API Win32 для классических приложений, теперь вы можете постепенно модернизировать свои приложения Windows Presentation Foundation и Windows, используя возможности API универсальной платформы Windows и Windows 10. Более того, вы можете включить в приложения для универсальной платформы Windows компоненты Win32, благодаря чему получите доступ к возможностям Win32 в классическом приложении. 
 
-Дополнительные сведения об универсальной платформе Windows см. на странице [Разработка приложений для универсальной платформы Windows (UWP)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp).
+Дополнительные сведения об универсальной платформе Windows см. на странице [Разработка приложений для универсальной платформы Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
 
 ## <a name="mobile-app-development"></a>Разработка мобильных приложений
 ### <a name="xamarin"></a>Xamarin
@@ -271,7 +271,7 @@ Visual Studio перемещает свои расширения, а также 
 
 **Новые возможности версии 15.3**: Visual Studio 2017 версии 15.3 поддерживает разработку .NET Core 2.0. Для использования .NET Core 2.0 необходимо отдельно скачать и установить пакет SDK для .NET Core 2.0.  
 
-Дополнительные сведения см. в [руководстве по .NET Core](https://docs.microsoft.com/dotnet/core/index).
+Дополнительные сведения см. в [руководстве по .NET Core](/dotnet/core/index).
 
 ## <a name="games-development"></a>Разработка игр
 ### <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity

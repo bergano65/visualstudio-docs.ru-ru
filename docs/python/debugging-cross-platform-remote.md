@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 
@@ -36,9 +36,9 @@ Visual Studio позволяет локально и удаленно запус
 - удаленный компьютер с Python на базе операционной системы, такой как Mac OSX или Linux;
 - открытый порт 5678 (входящий трафик) в брандмауэре этого компьютера, который используется по умолчанию для удаленной отладки.
 
-Можно без труда создать [виртуальные машины Linux в Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) и [получить к ним доступ с помощью удаленного рабочего стола](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) из Windows. Удобно использовать Ubuntu для виртуальной машины, так как Python устанавливается по умолчанию. В противном случае см. список в разделе [Выбор и установка интерпретатора Python](python-environments.md#selecting-and-installing-python-interpreters) с перечнем дополнительных расположений скачиваемых файлов Python.
+Можно без труда создать [виртуальные машины Linux в Azure](/azure/virtual-machines/linux/creation-choices) и [получить к ним доступ с помощью удаленного рабочего стола](/azure/virtual-machines/linux/use-remote-desktop) из Windows. Удобно использовать Ubuntu для виртуальной машины, так как Python устанавливается по умолчанию. В противном случае см. список в разделе [Выбор и установка интерпретатора Python](python-environments.md#selecting-and-installing-python-interpreters) с перечнем дополнительных расположений скачиваемых файлов Python.
 
-Дополнительные сведения о создании правила брандмауэра для виртуальной машины Azure см. в разделе [Открытие портов для виртуальной машины в Azure с помощью портала Azure](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Дополнительные сведения о создании правила брандмауэра для виртуальной машины Azure см. в разделе [Открытие портов для виртуальной машины в Azure с помощью портала Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Подготовка скрипта к отладке
 
@@ -132,14 +132,13 @@ Visual Studio позволяет локально и удаленно запус
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Защита подключения отладчика с помощью протокола SSL
 
 По умолчанию подключение к серверу удаленной отладки PTVSD защищено только с помощью секрета, а все данные передаются в виде обычного текста. Для более безопасного соединения PTVSD поддерживает протокол SSL, который настраивается следующим образом.
 
 1. На удаленном компьютере создайте отдельный самозаверяющий сертификат и файлы ключа, используя openssl:
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -152,8 +151,8 @@ Visual Studio позволяет локально и удаленно запус
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    То же изменение можно внести в файл кода на локальном компьютере, но так как этот код не выполнялся, делать это необязательно.    
+
+    То же изменение можно внести в файл кода на локальном компьютере, но так как этот код не выполнялся, делать это необязательно.
 
 1. Перезапустите программу Python на удаленном компьютере, подготовив ее к отладке.
 

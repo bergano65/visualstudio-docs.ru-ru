@@ -14,11 +14,11 @@ dev_langs:
 - CSharp
 - VB
 ms.workload: multiple
-ms.openlocfilehash: 5d60fa62ee23ef942a6ef3ec20b7840374a33149
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7e70e4366ca91e00beeb4fff49ec30d4618bde81
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quick-actions"></a>Быстрые действия
 
@@ -592,7 +592,7 @@ Dim s As String = $"My string with {num} in the middle"
 | ------- | -------------------- | ----------------  |
 | IDE0017 | C# и Visual Basic | Visual Studio 2017 RTW |
 
-Это быстрое действие позволяет использовать [инициализаторы объектов](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md), чтобы не вызывать конструктор и не добавлять строки операторов назначения.
+Это быстрое действие позволяет использовать [инициализаторы объектов](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers), чтобы не вызывать конструктор и не добавлять строки операторов назначения.
 
 ```csharp
 // Before
@@ -622,7 +622,7 @@ Dim c = New Customer() With {.Age = 21}
 | ------- | -------------------- | ----------------  |
 | IDE0028 | C# и Visual Basic | Visual Studio 2017 RTW |
 
-Это быстрое действие позволяет использовать [инициализаторы набора](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md), чтобы не вызывать несколько раз метод `Add` из вашего класса.
+Это быстрое действие позволяет использовать [инициализаторы набора](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers), чтобы не вызывать несколько раз метод `Add` из вашего класса.
 
 ```csharp
 // Before

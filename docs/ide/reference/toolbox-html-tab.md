@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88d34f29593af6e15a30c45f44793c60794ebb24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 Вкладка **HTML** панели элементов предоставляет компоненты, которые полезны для использования на веб-страницах и веб-формах. Для просмотра этой вкладки сначала откройте HTML-документ в конструкторе HTML. В меню **Вид** щелкните **Панель элементов** и откройте вкладку **HTML** на панели элементов.  
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Ввод (файл)**  
  ![Поле файла страницы HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -100,7 +100,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Ввод (пароль)**  
  ![Поле пароля Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -114,7 +114,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](http://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](http://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Ввод (флажок)**  
  ![Параметр Checkbox панели элементов веб-страницы HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -161,7 +161,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Таблица**  
  ![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

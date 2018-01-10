@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 57bc02e04f4e30e0284bacbb98ec6bfe1defaa72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 
 ### <a name="project-references"></a>Ссылки на проекты
 
-Проекты универсальной платформы Windows (UWP) могут создавать ссылки на другие проекты UWP в решении либо на двоичные файлы или проекты, ориентированные на Windows 8.1, при условии, что эти проекты не используют интерфейсы API, которые являются устаревшими в Windows 10. Более подробную информацию см. в разделе [Перенос приложения из среды выполнения Windows 8 в UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).
+Проекты универсальной платформы Windows (UWP) могут создавать ссылки на другие проекты UWP в решении либо на двоичные файлы или проекты, ориентированные на Windows 8.1, при условии, что эти проекты не используют интерфейсы API, которые являются устаревшими в Windows 10. Более подробную информацию см. в разделе [Перенос приложения из среды выполнения Windows 8 в UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
 Если вы решили изменить целевую платформу проектов Windows 8.1 на Windows 10, ознакомьтесь со статьей [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 

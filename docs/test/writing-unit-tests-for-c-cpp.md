@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
-caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: dd663d17dc7d0dc66af7cdd27f0da3cf9a253523
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikeblome
+ms.openlocfilehash: d926e28dc918900715090d32f929b6b7ff5cb482
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 С помощью окна **Обозреватель тестов** вы можете создавать и выполнять модульные тесты для C++ так же, как для других языков. Дополнительные сведения об использовании **обозревателя тестов** см. в разделе [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md). 
@@ -38,7 +37,7 @@ ms.lasthandoff: 12/22/2017
 
 2) Компонент **Boost.Test** включен по умолчанию в рабочую нагрузку **Разработка классических приложений на C++**. Он интегрирован с **обозревателем тестов**, но в настоящее время не имеет шаблона проекта, поэтому его необходимо настроить вручную. Дополнительные сведения см. в разделе [Практическое руководство. Использование Boost.Test в Visual Studio](how-to-use-boost-test-for-cpp.md). 
 
-3) Поддержка **CTest** включена в компонент [Инструменты CMake для Visual Studio](/cpp/ide/cmake-tools-for-cpp.md), который входит в рабочую нагрузку **Разработка классических приложений на C++**. Однако CTest пока не полностью интегрирован с **обозревателем тестов**. Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest в Visual Studio](how-to-use-ctest-for-cpp.md).
+3) Поддержка **CTest** включена в компонент [Инструменты CMake для Visual Studio](/cpp/ide/cmake-tools-for-cpp), который входит в рабочую нагрузку **Разработка классических приложений на C++**. Однако CTest пока не полностью интегрирован с **обозревателем тестов**. Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest в Visual Studio](how-to-use-ctest-for-cpp.md).
 
 
 **Visual Studio 2015 и более ранние версии**

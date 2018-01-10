@@ -14,16 +14,15 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
-caps.latest.revision: "33"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f0d0250e2810adc8fd79239aa8e0807b04bbf0a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a582796e7436df49a719d758896ee8dcea43b068
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. Создание модульного теста, управляемого данными
 Используя платформу модульного тестирования Майкрософт для управляемого кода, можно настроить метод модульного теста для получения значений из источника данных, которые впоследствии будут использоваться в методе теста. Этот метод последовательно выполняется для каждой строки в источнике данных, что облегчает тестирование разнообразных входных данных с помощью одного метода.  
@@ -147,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Конструктор с одним параметром использует информацию о подключении, хранящуюся в файле app.config решения. В файле конфигурации XML-элемент с именем *dataSourceSettingsName* содержит в себе информацию о подключении.  
   
- Использование файла app.config позволяет менять расположение источника данных и при этом не вносить изменения в сам модульный тест. Дополнительные сведения о создании и использовании файла app.config см. в разделе [Пошаговое руководство. Использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).  
+ Использование файла app.config позволяет менять расположение источника данных, и при этом не вносить изменения в сам модульный тест. Дополнительные сведения о создании и использовании файла app.config см. в разделе [Пошаговое руководство. Использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).  
   
 ```  
 [DataSource(connectionString, tableName)]  

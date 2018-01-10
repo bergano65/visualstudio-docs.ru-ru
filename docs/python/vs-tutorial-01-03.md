@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/22/2017
     ![Интерактивное окно Python; изменение размера перетаскиванием](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Размеры любых окон в Visual Studio можно изменять, перетаскивая граничные разделители. Вы также можете перетаскивать окна за пределы окна Visual Studio и изменять их расположение внутри этого окна, как вам нравится. Подробные сведения см. в статье <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">Настройка макетов окон</a>.
+    > Размеры любых окон в Visual Studio можно изменять, перетаскивая граничные разделители. Вы также можете перетаскивать окна за пределы окна Visual Studio и изменять их расположение внутри этого окна, как вам нравится. Подробные сведения см. в статье [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Введите несколько операторов, например `print("Hello, Visual Studio")`, и выражений, например `123/456`, чтобы сразу увидеть результаты:
 

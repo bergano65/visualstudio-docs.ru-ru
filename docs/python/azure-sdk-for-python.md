@@ -1,7 +1,7 @@
 ---
 title: "Пакет Azure SDK для Python | Документация Майкрософт"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: 43fbcc0c5c1674d127755a61ef3e15523e792a21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 647b07e3816551e60e176280199ad5298db53200
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
 
@@ -31,7 +31,7 @@ Azure SDK устанавливается из [пакетов Python](https://py
 
 Чтобы установить **последнюю стабильную версию** (поддерживает Python 2.7 и 3.3 +), выполните следующие действия.
 
-```bash
+```command
 pip install azure
 ```
 
@@ -43,14 +43,14 @@ pip install azure
 
 [Раздел пакета Azure SDK в Центре разработчиков для языка Python](http://azure.microsoft.com/develop/python/) также имеет ряд полезных ресурсов, включая учебные материалы.
 
-  - Создание веб-приложений с помощью [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) и [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-  - [Хранилище BLOB-объектов](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
-  - [Хранилище таблиц](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
-  - [Хранилище очередей](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
-  - [DocumentDB](https://docs.microsoft.com/azure/documentdb/documentdb-python-application)
-  - [Очереди служебной шины](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-  - [Разделы и подписки, связанные со служебной шиной Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
-  - [Управление службами](https://docs.microsoft.com/azure/cloud-services/cloud-services-python-how-to-use-service-management)
+- Создание веб-приложений с помощью [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) и [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- [Хранилище BLOB-объектов](/azure/storage/storage-python-how-to-use-blob-storage)
+- [Хранилище таблиц](/azure/storage/storage-python-how-to-use-table-storage)
+- [Хранилище очередей](/azure/storage/storage-python-how-to-use-queue-storage)
+- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Очереди служебной шины](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+- [Разделы и подписки, связанные со служебной шиной Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- [Управление службами](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Для общедоступных интерфейсов API без документации хорошим источником информации будут модульные тесты, представленные в [репозитории GitHub для пакета SDK](https://github.com/Azure/azure-sdk-for-python).
 

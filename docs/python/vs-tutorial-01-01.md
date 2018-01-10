@@ -1,7 +1,7 @@
 ---
 title: "Работа с Python в Visual Studio, шаг 1 | Документы Майкрософт"
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c80eb8b09a7bbcfc813c70d548f9762422262ed
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Работа с Python в Visual Studio
 
@@ -51,7 +51,7 @@ Visual Studio обеспечивает первоклассную поддерж
 
     Обратите внимание на то, что поддержка Python в Visual Studio включает в себя ряд шаблонов проектов, включая веб-приложения на платформах Bottle, Flask и Django. Однако для целей данного пошагового руководства мы начнем с пустого проекта.
 
-1. Выберите шаблон **Приложение Python**, укажите имя проекта и нажмите кнопку **ОК**. 
+1. Выберите шаблон **Приложение Python**, укажите имя проекта и нажмите кнопку **ОК**.
 
 1. Через несколько секунд в окне **обозревателя решений** Visual Studio (1) будет показана структура проекта. Файл кода по умолчанию откроется в редакторе (2). Кроме того, откроется окно свойств (3), в котором приводятся дополнительные сведения для элемента, выбранного в обозревателе решений, включая его точное расположение на диске.
 

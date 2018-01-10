@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf97be0c7a7b5bb9d6a9d43ceeb5cd9e9334025d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-pylint-to-check-python-code"></a>Проверка кода Python с помощью PyLint
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 
 1. В командной строке перейдите в корневой каталог проекта (где находится файл `.pyproj`) и выполните следующую команду, чтобы создать файл конфигурации с заметками:
 
-   ```bash
+   ```command
    pylint --generate-rcfile > .pylintrc
    ```
 
@@ -57,7 +57,4 @@ ms.lasthandoff: 12/22/2017
 1. Сохраните файл `.pylintrc`, снова запустите PyLint и убедитесь, что предупреждения больше не появляются.
 
 > [!Tip]
-> Для использования файла `.pylintrc` из сетевой папки создайте переменную среды с именем `PYLINTRC` и присвойте ей в качестве значения имя файла в сетевой папке с указанием UNC-пути или буквы подключенного диска. Пример:
-> ```
-> PYLINTRC=\\myshare\python\.pylintrc
-> ```
+> Для использования файла `.pylintrc` из сетевой папки создайте переменную среды с именем `PYLINTRC` и присвойте ей в качестве значения имя файла в сетевой папке с указанием UNC-пути или буквы подключенного диска. Например, `PYLINTRC=\\myshare\python\.pylintrc`.

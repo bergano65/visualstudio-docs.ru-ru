@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 8cd00fe33cf463227dd09f93047350a96cee3b92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Работа с Python в Visual Studio
 
@@ -55,7 +55,7 @@ Visual Studio для Windows предоставляет средства [с о�
 
 **В. Доступна ли поддержка Python в Visual Studio для Mac?**
 
-О. Пока нет, однако она запрошена на сайте [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). В документации по [Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/) указаны поддерживаемые сейчас типы разработки. А пока [нормальная работа с Python за счет доступных расширений](https://code.visualstudio.com/docs/languages/python) обеспечивается Visual Studio Code в Windows, Mac и Linux.
+О. Пока нет, однако она запрошена на сайте [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). В документации по [Visual Studio для Mac](/visualstudio/mac/) указаны поддерживаемые сейчас типы разработки. А пока [нормальная работа с Python за счет доступных расширений](https://code.visualstudio.com/docs/languages/python) обеспечивается Visual Studio Code в Windows, Mac и Linux.
 
 **В. Что можно использовать для создания пользовательского интерфейса с помощью Python?**
 
