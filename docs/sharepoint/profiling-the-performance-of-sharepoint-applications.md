@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Профилирование производительности приложений SharePoint
   Если медленно выполняемых приложений SharePoint или неэффективно, можно использовать функции профилирования в Visual Studio для определения неисправного кода и других элементов. С помощью нагрузочного тестирования функции, можно определить, как приложение SharePoint выполняет под нагрузкой, например, если многие пользователи доступ к приложению одновременно. Выполняя веб-тесты производительности, можно оценить, как приложение выполняет в Интернете. С помощью закодированных тестов пользовательского интерфейса, можно проверить, ли все приложение SharePoint, включая ее пользовательский интерфейс функционирует правильно. При совместном использовании этих тестов, они могут помочь выявить проблемы производительности, перед развертыванием приложения.  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[Модульное тестирование кода](/visualstudio/test/unit-test-your-code)|Описывает способ поиска логических ошибок в коде с помощью модульных тестов.|  
 |[Тестирование приложений SharePoint 2010 с помощью закодированных тестов пользовательского интерфейса](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Описание способов тестирования пользовательского интерфейса приложений SharePoint.|  
   
-## <a name="see-also"></a>См. также  
- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Тестирование приложения](/devops-test-docs/test/test-apps-early-and-often)   
- [Улучшение качества кода](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>См. также
+
+[Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[Улучшение качества кода](/visualstudio/test/improve-code-quality)

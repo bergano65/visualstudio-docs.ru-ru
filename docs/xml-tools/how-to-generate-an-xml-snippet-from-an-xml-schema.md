@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Как создать XML-фрагмент из XML-схемы
 Редактор XML может создавать XML-фрагменты из схемы на языке XSD. Например, во время работы с XML-файлом, если курсор находится сразу после имени элемента, можно нажать клавишу TAB, чтобы заполнить элемент XML-данными, созданными на основе информации схемы для этого элемента.  
@@ -138,7 +138,7 @@ ms.lasthandoff: 12/22/2017
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ### <a name="output"></a>Вывод  
  Далее приведены XML-данные, созданные на основе информации схемы, которая связана с элементом `Contact`. Элементы, отмеченные как `bold` обозначают редактируемые поля в XML-фрагмент.  
@@ -152,7 +152,7 @@ ms.lasthandoff: 12/22/2017
     <Type>Voice</Type>  
   </Phone>  
 </Contact>  
-```  
+```
   
 ## <a name="see-also"></a>См. также  
  [XML-фрагменты](../xml-tools/xml-snippets.md)   

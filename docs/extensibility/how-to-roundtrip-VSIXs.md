@@ -13,11 +13,11 @@ author: willbrown
 ms.author: willbrown
 manager: justinclareburt
 ms.workload: willbrown
-ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Как: расширения создать совместимый с 2017 г. Visual Studio и Visual Studio 2015
 
@@ -169,7 +169,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 Пример:
 
 ```xml
-<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201… Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
 * Добавьте дополнительные условные инструкции `<import>` тегов, имеющих Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Это можно сделать, вставив `'$(VisualStudioVersion)' == '14.0' And` с передней стороны оператора условия. Эти инструкции будут отображаться в колонтитулы csproj-файле.
@@ -177,7 +177,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 Пример:
 
 ```xml
-<Import Project="packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0… Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
 * Добавьте дополнительные условные инструкции `<Error>` тегов, содержащих Microsoft.VSSDK.BuildTools ссылки.  Это можно сделать, вставив `'$(VisualStudioVersion)' != '14.0' And` с передней стороны оператора условия. Эти инструкции будут отображаться в нижнем колонтитуле csproj-файле.
@@ -185,7 +185,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 Пример:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…/>
+<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
 * Добавьте дополнительные условные инструкции `<Error>` тегов, имеющих Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Это можно сделать, вставив `'$(VisualStudioVersion)' == '14.0' And` с передней стороны оператора условия. Эти инструкции будут отображаться в нижнем колонтитуле csproj-файле.
@@ -193,7 +193,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 Пример:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…/>
+<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
 * Сохраните csproj-файл и закройте его.

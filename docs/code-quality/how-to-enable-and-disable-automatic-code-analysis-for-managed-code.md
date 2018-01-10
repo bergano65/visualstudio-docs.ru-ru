@@ -13,14 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 198047196ba6f58c69736ef67352267845047b52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c6dc55e2acee733538121bf5aac51b935e2d86d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Практическое руководство. Включение и отключение автоматического анализа управляемого кода
-Можно настроить выполнение перед каждой сборкой управляемого кода проекта анализа кода. Можно задать разные свойства анализа кода для каждого [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] конфигурации.  
+Можно настроить анализ кода для выполнения после каждой сборки проекта управляемого кода. Можно задать разные свойства анализа кода для каждого [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] конфигурации.  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Включение или отключение автоматического анализа кода  
   

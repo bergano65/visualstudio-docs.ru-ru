@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Сократите затраты времени на отладку приложения, используя IntelliTrace для записи и отслеживания истории выполнения кода. Вы сможете без труда находить ошибки, поскольку IntelliTrace позволяет выполнять следующие задачи.  
@@ -47,7 +47,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**Отладка приложения с помощью IntelliTrace:**<br /><br /> -Отображение прошлых событий.<br />-Show me сведений о вызовах с прошлыми событиями.<br />-Сохранение сеанса IntelliTrace.<br />-Элемент управления, которые IntelliTrace собирает данные.|-   [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Отладка с ведением журнала](../debugger/historical-debugging.md)<br />-   [Просмотр моментальных снимков, с помощью обратной шаг IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|-   [Сбор дополнительных данных диагностики в ручных тестах](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|-   [Сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Сбор данных IntelliTrace из развернутых приложений**|-   [Использование автономного сборщика IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Запуск отладки из файла журнала IntelliTrace (ITRACE-файл).**|-   [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Приложение аварийно завершает работу на тестовом компьютере, но успешно выполняется на компьютере разработчика.  
   
-     Можно собирать данные IntelliTrace из Microsoft Test Manager, сохранить эти данные в файле .iTrace и вложить этот файл в рабочий элемент Team Foundation Server для последующего изучения. В разделе [сбор дополнительных данных диагностики в ручных тестах](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) и [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
+     Можно собирать данные IntelliTrace из Microsoft Test Manager, сохранить эти данные в файле .iTrace и вложить этот файл в рабочий элемент Team Foundation Server для последующего изучения. В разделе [сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) и [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   
 -   В развернутом приложении происходит ошибка или сбой.  
   
@@ -180,8 +180,6 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="in-this-section"></a>Содержание раздела  
  [Возможности IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Включить данных диагностической трассировки в сообщения об ошибках, которые трудно воспроизвести](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)  
   
