@@ -12,11 +12,11 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd5e1012c37660917d77e2643922d8a90a8e2ffe
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Создается конструктор в C# #
 **Что:** позволяет немедленно сформировать код для нового конструктора для класса. 
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 
    ![Создать результат конструктора](media/constructor_result.png)
 
-## <a id="selection"></a>Добавьте параметр существующий конструктор
+## <a id="addparameter"></a>Добавьте параметр существующий конструктор
 1. Добавьте параметр для существующего экземпляра объекта.
 
 1. Поместите курсор в строке которого красной волнистой линией, указывающее, используется конструктор, который еще не существует.
