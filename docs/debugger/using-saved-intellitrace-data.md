@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.  
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/22/2017
     |**Источник**|**См. разделы**|  
     |----------------|-------------|  
     |Сеанс IntelliTrace в Visual Studio Enterprise (но не в выпусках Professional или Community)|[Возможности IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+    |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent либо отдельно, либо вместе с System Center 2012 R2 Operations Manager для веб-приложений ASP.NET и приложений SharePoint, работающих в развертывании|-   [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)<br />-   [Новые возможности для System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> Выберите действие  
@@ -266,7 +266,7 @@ ms.lasthandoff: 12/22/2017
   
  [Возможности IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Сбор дополнительных данных диагностики в ручных тестах](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)  
+ [Сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
