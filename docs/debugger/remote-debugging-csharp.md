@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 959622dff7770d314dc5fa2da1e8a81ade34cac4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка проекта C# или Visual Basic в Visual Studio
 Для отладки приложения Visual Studio, который был развернут на другом компьютере, установки и запуска средств удаленного компьютера, на котором развернуто приложение, настроить проект для подключения к удаленному компьютеру из Visual Studio и затем запустите приложение.
@@ -40,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > Отладка между двумя компьютерами, подключенными через прокси-сервер не поддерживается. Отладка в различных странах через высокой задержкой или низкой пропускной способностью, таких как удаленный доступ к Интернету, либо через Интернет не рекомендуется и может произойти сбой или медленную неприемлемо.
   
-## <a name="download-and-install-the-remote-tools"></a>Скачивание и установка инструментов удаленной отладки
+## <a name="download-and-install-the-remote-tools"></a>Загрузите и установите инструменты удаленной отладки
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

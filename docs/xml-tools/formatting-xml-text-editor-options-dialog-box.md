@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5c15327837dbcd2fb1fe795a1e9891451df22e4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a4d6de24a75b5a08820878bc74633c02ab4118f
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Диалоговое окно «Форматирование», «XML», «Текстовый редактор», «Свойства»
 При помощи этого диалогового окна можно задать настройки форматирования для XML Editor. Вы можете получить доступ к **параметры** диалогового окна **средства** меню.  
@@ -35,12 +35,12 @@ ms.lasthandoff: 12/22/2017
  **Выравнивание каждого из атрибутов на строке**  
  Выравнивает второй и последующий атрибуты по вертикали в соответствии с обозначением отступом первого атрибута. Следующий XML-текст является примером того, как выравниваются атрибуты.  
   
-```  
+```xml
 <item id = "123-A"  
       name = "hammer"  
       price = "9.95">  
 </item>  
-```  
+```
   
 ## <a name="auto-reformat"></a>Автоматическое переформатирование  
  **При вставке из буфера обмена**  
@@ -55,12 +55,12 @@ ms.lasthandoff: 12/22/2017
   
  Содержимое элемента считается смешанным, если элемент содержит текст и разметку. Далее приводится пример элемента со смешанным содержимым.  
   
-```  
+```xml
 <dir>c:\data\AlphaProject\  
   <file readOnly="false">test1.txt</file>  
   <file readOnly="false">test2.txt</file>  
 </dir>  
-```  
+```
   
 ## <a name="see-also"></a>См. также  
  [Свойства XML-документа, окно "Свойства"](../xml-tools/xml-document-properties-properties-window.md)   

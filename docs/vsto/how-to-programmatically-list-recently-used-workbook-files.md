@@ -15,17 +15,15 @@ helpviewer_keywords:
 - RecentFiles property
 - Excel [Office development in Visual Studio], recently used files listing
 - recent file list, Excel
-ms.assetid: 210a3753-4845-4875-b34a-a30d3a1299b3
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 629b27c5947a2744886ac0d3fed8898ece386c6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8a64f8a934e8cd7cdbbed11a87d15e795d19d0f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Практическое руководство. Программный вывод списка последних использовавшихся файлов книг Excel
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Свойство возвращает коллекцию, содержащую имена всех файлов, которые отображаются в списке недавно использовавшихся файлов Microsoft Office Excel. Длина списка зависит от числа файлов, которые пользователь выбрал для сохранения. Результаты могут отображаться в диапазоне.  

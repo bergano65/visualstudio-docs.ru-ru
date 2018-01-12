@@ -23,17 +23,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], deploying
 - deploying applications [Office development in Visual Studio], troubleshooting
 - solutions [Office development in Visual Studio], deploying Office solutions (2007 system)
-ms.assetid: 4cdf4bc6-72c5-4166-8019-d5fd61281079
-caps.latest.revision: "78"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8c22db51700a711bed0edd2d5a8431d6dc64c281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4cb4c4b2e5154293279e0993daabdbc8f74165b3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploying-an-office-solution"></a>Развертывание решения Office
   Решения Office можно развертывать с помощью ClickOnce или установщика Windows. Использование ClickOnce позволяет сократить число шагов, необходимых для развертывания и обновления решения. При использовании установщика Windows разработчик получает больший контроль над процессом установки решения и над тем, какие именно страницы программы установки отображаются, когда пользователь устанавливает решение.  

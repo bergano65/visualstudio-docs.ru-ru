@@ -17,17 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 - rights management [Office development in Visual Studio]
 - Office documents [Office development in Visual Studio, restricted permissions
-ms.assetid: 9728f5fe-9122-48e7-b0a3-9f5e0a16164f
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 21431cd16407d61db6f981aad68d52906c2de1f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 561f17acd17cb34892d3f2d4f0eefa05dfced0e4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Общие сведения об управлении правами на доступ к данным и расширениях управляемого кода
   Microsoft Office Word и Microsoft Office Excel предоставляют управления правами (IRM), функцию, которая может помочь предотвратить несанкционированные пользователи от просмотра или изменения конфиденциальные сведения. Дополнительные сведения о работе управления правами см.  

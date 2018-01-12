@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies, Office
 - Office development in Visual Studio, about developing solutions
-ms.assetid: 5dfc519f-a851-4661-8d2b-47e0d221e10e
-caps.latest.revision: "69"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Общие сведения о разработке решений Office (VSTO)
   Благодаря применению Microsoft Office в качестве внешнего интерфейса для решений, можно эффективно использовать привычные пользовательские интерфейсы и инструменты Microsoft Office, например, функции обработки текста в Word, функции анализа данных в Excel и функции управления электронной почтой в Outlook. В Visual Studio можно разрабатывать решения для настройки приложений Office и добавления конкретных функций, необходимых для бизнес-процессов. Например, можно включить Word в генератор контрактов, собирающий контракты на основе уже существующих частей, которые можно сделать редактируемыми или нередактируемыми. С помощью Excel можно создать лист автоматической разработки бюджета, настраиваемый для различных проектов. Пользователи также могут применять решения Office в автономном режиме, что делает сложные решения более удобными, чем решения, построенные на основе веб-архитектуры.  

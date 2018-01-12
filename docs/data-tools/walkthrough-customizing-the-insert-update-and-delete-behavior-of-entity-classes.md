@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c5be469cd93ce0b920e9100b43d642fd96427a79
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство: Настройка инструкции insert, update и delete поведение классов сущностей
+
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную поверхность проектирования для создания и редактирования [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классов (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), можно использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](/dotnet/csharp/linq/).  
   
 По умолчанию логику для выполнения обновлений обеспечивает среда выполнения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Среда выполнения по умолчанию создает инструкции Вставить, Обновить и Удалить, основываясь на схеме таблицы (определения столбцов и информация о первичных ключах). Если вы не хотите использовать поведение по умолчанию, то можно конфигурировать поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд Вставить, Обновить и Удалить, необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций за счет хранимых процедур](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).  
   
 > [!NOTE]
->  В этом пошаговом руководстве требуется доступность **InsertCustomer**, **UpdateCustomer**, и **DeleteCustomer** хранимых процедур в базе данных Northwind.  
+> В этом пошаговом руководстве требуется доступность **InsertCustomer**, **UpdateCustomer**, и **DeleteCustomer** хранимых процедур в базе данных Northwind.  
   
 Это пошаговое руководство обеспечивает действия, которые необходимо выполнить, чтобы отменить поведение по умолчанию среды выполнения LINQ to SQL для сохранения данных обратно в базе данных, используя сохраненные процедуры.  
   
@@ -48,7 +49,8 @@ ms.lasthandoff: 01/05/2018
   
 -   Сконфигурируйте класс Configure так, чтобы он использовал сохраненные процедуры Вставить, Обновить и Удалить.  
   
-## <a name="prerequisites"></a>Предварительные требования  
+## <a name="prerequisites"></a>Предварительные требования
+
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
   
 1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
@@ -65,12 +67,13 @@ ms.lasthandoff: 01/05/2018
 
        Через некоторое время завершения выполнения запроса и создания базы данных "Борей".  
   
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Создание приложения и добавление классов LINQ to SQL  
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Создание приложения и добавление классов LINQ to SQL
+
 Поскольку вы будете работать с классами [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] и отображать данные на Windows Form, создайте новой приложение Windows Forms и добавьте файл классов LINQ to SQL.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Создайте новый проект приложения Windows Forms, который содержит LINQ для классов SQL  
+### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Создайте новый проект приложения Windows Forms, который содержит LINQ для классов SQL
   
 1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .  
   
@@ -90,10 +93,11 @@ ms.lasthandoff: 01/05/2018
   
      Пустой файл классов LINQ to SQL Classes (Northwind.dbml) добавляется в проект, и открывается [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-## <a name="creating-the-customer-entity-class-and-object-data-source"></a>Создание класса сущностей Customer и источника данных об объекте  
- Создание [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы, которые сопоставляются с таблицами базы данных путем перетаскивания таблиц из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. В результате получите классы сущностей LINQ to SQL, которые сопоставляются с таблицами базы данных. После создания классов сущностей, их можно использовать в качестве источников данных об объекте точно так же как другие классы, которые имеют общие свойства  
+## <a name="creating-the-customer-entity-class-and-object-data-source"></a>Создание класса сущностей Customer и источника данных об объекте
+
+Создание [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы, которые сопоставляются с таблицами базы данных путем перетаскивания таблиц из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. В результате получите классы сущностей LINQ to SQL, которые сопоставляются с таблицами базы данных. После создания классов сущностей, их можно использовать в качестве источников данных об объекте точно так же как другие классы, которые имеют общие свойства  
   
-#### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Для создания класса сущностей Customer и настройки с ним источника данных  
+### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Для создания класса сущностей Customer и настройки с ним источника данных
   
 1.  В **обозревателя серверов**/**обозревателя базы данных**, найдите таблицу Customer в SQL Server версии образца базы данных Northwind. 
   
@@ -118,17 +122,18 @@ ms.lasthandoff: 01/05/2018
     >  Если **клиента** класс недоступен, отмените работу мастера, постройте проект и снова запустите мастер.  
 8.  Нажмите кнопку **Готово** для создания источника данных и добавления **клиента** класса сущности, который **источники данных** окна.  
   
-## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Создание представления DataGridView для отображения данных класса Customer на Windows Form  
- Создание элементов управления, привязанных к классам сущностей, перетащив [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] элементов из источника данных **источники данных** окна в форму Windows.  
+## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Создание представления DataGridView для отображения данных класса Customer на Windows Form
+
+Создание элементов управления, привязанных к классам сущностей, перетащив [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] элементов из источника данных **источники данных** окна в форму Windows.  
   
-#### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Для добавления элементов управления, привязанных к классам сущностей  
+### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Для добавления элементов управления, привязанных к классам сущностей
   
 1.  Откройте форму Form1 в конструкторе.  
   
 2.  Из **источники данных** перетащите **клиента** узел на форму Form1.  
   
     > [!NOTE]
-    >  Для отображения **источники данных** окно, нажмите кнопку **Показать источники данных** на **данные** меню.  
+    > Для отображения **источники данных** окно, нажмите кнопку **Показать источники данных** на **данные** меню.  
   
 3.  Откройте форму Form1 в редакторе кода.  
   
@@ -154,10 +159,11 @@ ms.lasthandoff: 01/05/2018
         = northwindDataContext1.Customers;    
     ```  
   
-## <a name="implementing-save-functionality"></a>Реализация кнопки Save Functionality (Сохранить функциональные возможности)  
- По умолчанию опция создания кнопки Сохранить не активизирована и реализовать сохранение функциональных возможностей невозможно. Итак, код для сохранения измененных данных в базе данных, когда создаются привязанные к данным элементы управления для источников данных об объекте, не будет автоматически добавляться. В этом разделе объясняется как включить опцию создания кнопки Сохранить и включить кнопку Сохранить функциональные возможности для объектов [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)].  
+## <a name="implementing-save-functionality"></a>Реализация кнопки Save Functionality (Сохранить функциональные возможности)
+
+По умолчанию опция создания кнопки Сохранить не активизирована и реализовать сохранение функциональных возможностей невозможно. Итак, код для сохранения измененных данных в базе данных, когда создаются привязанные к данным элементы управления для источников данных об объекте, не будет автоматически добавляться. В этом разделе объясняется как включить опцию создания кнопки Сохранить и включить кнопку Сохранить функциональные возможности для объектов [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)].  
   
-#### <a name="to-implement-save-functionality"></a>Для реализации кнопки Save Functionality (Сохранить функциональные возможности)  
+### <a name="to-implement-save-functionality"></a>Для реализации кнопки Save Functionality (Сохранить функциональные возможности)
   
 1.  Откройте форму Form1 в конструкторе.  
   
@@ -177,9 +183,9 @@ ms.lasthandoff: 01/05/2018
     northwindDataContext1.SubmitChanges();  
     ```  
   
-## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>Переопределение поведения по умолчанию для выполнения обновлений (Inserts, Updates и Deletes)  
+## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>Переопределение поведения по умолчанию для выполнения обновлений (Inserts, Updates и Deletes)
   
-#### <a name="to-override-the-default-update-behavior"></a>Для переопределения поведения по умолчанию при обновлении  
+### <a name="to-override-the-default-update-behavior"></a>Для переопределения поведения по умолчанию при обновлении
   
 1.  Откройте файл LINQ to SQL в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Дважды щелкните **Northwind.dbml** файла в **обозревателе решений**.)  
   
@@ -230,13 +236,14 @@ ms.lasthandoff: 01/05/2018
 19. Нажмите кнопку **ОК**.  
   
 > [!NOTE]
->  Хотя это не повлияет на работу данного пошагового руководства, следует заметить, что [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] автоматически обрабатывает значения, создаваемые в базе данных, для столбцов идентификаторов (с автоматическим приращением), столбцов rowguidcol (идентификатор GUID, создаваемый базой данных) и столбцов timestamp в ходе операций вставки и обновления. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Для возврата генерируемых базой данных значений нужно вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> в `true` и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> в одно из следующих: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> или <xref:System.Data.Linq.Mapping.AutoSync>.  
+> Хотя это не повлияет на работу данного пошагового руководства, следует заметить, что [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] автоматически обрабатывает значения, создаваемые в базе данных, для столбцов идентификаторов (с автоматическим приращением), столбцов rowguidcol (идентификатор GUID, создаваемый базой данных) и столбцов timestamp в ходе операций вставки и обновления. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Для возврата генерируемых базой данных значений нужно вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> в `true` и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> в одно из следующих: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> или <xref:System.Data.Linq.Mapping.AutoSync>.  
   
-## <a name="testing-the-application"></a>Тестирование приложения  
- Запустите приложение снова, чтобы убедиться, что **UpdateCustomers** хранимой процедуры правильно обновляет запись клиента в базе данных.  
-  
-#### <a name="to-test-the-application"></a>Тестирование приложения  
-  
+## <a name="testing-the-application"></a>Тестирование приложения
+
+Запустите приложение снова, чтобы убедиться, что **UpdateCustomers** хранимой процедуры правильно обновляет запись клиента в базе данных.
+
+### <a name="to-test-the-application"></a>Тестирование приложения
+
 1.  Нажмите клавишу F5.  
   
 2.  Измените запись в таблице, чтобы проверить поведение Обновления.  
@@ -258,19 +265,20 @@ ms.lasthandoff: 01/05/2018
 10. Нажмите клавишу F5 и убедитесь, что удаленная запись была стерта из базы данных.  
   
     > [!NOTE]
-    >  Если приложение использует SQL Server Express Edition, в зависимости от значения **Копировать в выходной каталог** свойство файла базы данных, изменения могут не отображаться при нажатии клавиши F5 на шаге 10. 
-  
-## <a name="next-steps"></a>Следующие шаги  
-В зависимости от требований приложения есть несколько шагов, которые возможно потребуется выполнить после создания классов сущностей [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.  
-  
--   Реализуйте конкурентную проверку во время обновлений. Сведения см. в разделе [оптимистичного параллелизма: Обзор](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).  
-  
--   Добавьте запросы LINQ в данные фильтра Сведения см. в разделе [введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
-  
+    > Если приложение использует SQL Server Express Edition, в зависимости от значения **Копировать в выходной каталог** свойство файла базы данных, изменения могут не отображаться при нажатии клавиши F5 на шаге 10.
+
+## <a name="next-steps"></a>Следующие шаги
+
+В зависимости от требований приложения есть несколько шагов, которые возможно потребуется выполнить после создания классов сущностей [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.
+
+- Реализуйте конкурентную проверку во время обновлений. Сведения см. в разделе [оптимистичного параллелизма: Обзор](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
+
+- Добавьте запросы LINQ в данные фильтра Сведения см. в разделе [введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+
 ## <a name="see-also"></a>См. также
-[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     
-[Методы DataContext](../data-tools/datacontext-methods-o-r-designer.md)   
+
+[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[Методы DataContext](../data-tools/datacontext-methods-o-r-designer.md)  
 [Как: назначение хранимых процедур для выполнения обновления, вставки и удаления](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
-[Запросы LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)  
- 
+[Запросы LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

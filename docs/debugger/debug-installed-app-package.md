@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Отладка пакета установленного приложения в Visual Studio (UWP)
 
@@ -94,6 +94,8 @@ ms.lasthandoff: 12/22/2017
 
 > [!NOTE]
 > Приложения UWP могут разрабатываться и компилируются в Windows 8.1 или более поздней версии, но требует Windows 10 для запуска. При разработке приложения UWP на ПК с Windows 8.1, можно удаленно отлаживать приложение UWP, работающее на другом устройстве Windows 10, условии, что на узле и на целевом компьютере в одной сети. Чтобы сделать это, загрузите и установите инструменты удаленной отладки для Visual Studio на обоих компьютерах. Установленная версия должна совпадать с существующей версией Visual Studio, вы установили и выберите (x86 x 64) архитектуры также должно совпадать с количеством целевого приложения.
+
+Сведения о дополнительных параметрах удаленного развертывания приложений UWP в разделе [развертывание и отладка приложений UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   
 ## <a name="see-also"></a>См. также  
  [Отладка в Visual Studio](../debugger/index.md)  

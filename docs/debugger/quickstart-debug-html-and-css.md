@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Отладка HTML и CSS в приложениях Windows 8.1 и UWP
 ![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Для приложений, созданных с использованием языка JavaScript, Visual Studio позволяет выполнять комплексную отладку, которая включает в себя функции, знакомые разработчикам Internet Explorer и Visual Studio. Эти возможности поддерживаются для [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], приложения Windows Phone и приложений, созданных с помощью средств Visual Studio для Apache Cordova.  
+ Для приложений, созданных с использованием языка JavaScript, Visual Studio позволяет выполнять комплексную отладку, которая включает в себя функции, знакомые разработчикам Internet Explorer и Visual Studio. Эти возможности поддерживаются для приложений UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], приложения Windows Phone и приложений, созданных с помощью средств Visual Studio для Apache Cordova.  
   
  С помощью интерактивной модели отладки, предоставляемой средствами проверки DOM, вы можете просмотреть и изменить визуализируемый код HTML и CSS. Все это можно делать без остановки и перезапуска отладчика.
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  Пример, демонстрирующий, как выбирать элементы с помощью **элемент Select** кнопку см. в разделе [стилей CSS, отладка с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ##  <a name="BrowserSupport"></a> Поддержка браузерами и платформами  
- Инструменты Visual Studio для JavaScript, проводник DOM и окно консоли JavaScript поддерживаются в следующих платформах:  
+ Проводник DOM и окна консоли JavaScript поддерживаются на следующих платформах:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]и приложения Windows Phone с использованием JavaScript и HTML  
+-   Приложения UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] и приложениями Windows Phone, с помощью JavaScript и HTML  
   
 -   Internet Explorer 11 на платформе [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

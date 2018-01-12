@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 Отладчик Visual Studio можно подключить к запущенному процессу на локальном или удаленном компьютере. После запуска процесса, нажмите кнопку **Отладка > присоединение к процессу** (или нажмите клавишу **CTRL + ALT + P**) для открытия **присоединиться к процессу** диалоговое окно.
@@ -147,10 +147,7 @@ ms.lasthandoff: 12/22/2017
 |Другие типы поддерживаемого приложения на серверный процесс отладки|Использовать инструменты удаленной отладки (если сервер является удаленным) и присоединения к процессу|Iexplore.exe или других процессов|При необходимости используйте диспетчер задач для определения процесса. В разделе [удаленной отладки](../debugger/remote-debugging.md) и дальнейших разделах этой статьи|
 |Удаленная отладка классического приложения Windows|F5 и инструментов удаленной отладки|Н/Д| В разделе [удаленной отладки](../debugger/remote-debugging.md)|
 |Удаленное отлаживать приложение универсальной (UWP), OneCore, HoloLens и IoT|Отладка пакета установленного приложения|Н/Д|В разделе [отлаживать установленный пакет приложения](debug-installed-app-package.md) вместо **присоединиться к процессу**|
-|Отладка универсальных приложений Windows (UWP), OneCore, HoloLens и IoT приложение, которое вы не запускали из Visual Studio|Отладка пакета установленного приложения|Н/Д|В разделе [отлаживать установленный пакет приложения](debug-installed-app-package.md) вместо **присоединиться к процессу**|
-  
-> [!WARNING]
->  Чтобы присоединить UWP, который написан на языке JavaScript, сначала необходимо включить отладку для приложения. В разделе [присоединить отладчик](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) в центре разработчиков Windows.  
+|Отладка универсальных приложений Windows (UWP), OneCore, HoloLens и IoT приложение, которое вы не запускали из Visual Studio|Отладка пакета установленного приложения|Н/Д|В разделе [отлаживать установленный пакет приложения](debug-installed-app-package.md) вместо **присоединиться к процессу**|  
   
 > [!NOTE]
 >  Чтобы отладчик мог присоединиться к коду на языке C++, код должен предоставлять `DebuggableAttribute`. Это можно добавить в код автоматически, путем связывания с параметром [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) компоновщика.

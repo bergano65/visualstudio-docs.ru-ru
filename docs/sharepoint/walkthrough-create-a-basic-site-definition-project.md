@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-ms.assetid: b0df5b0e-5fa0-43d8-a339-6d92f1276764
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a792ab750decf1a14b589116d886c847b3ddd478
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 72a99a082fb1626013be6fa0ac5c759a43fd58a7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство. Создание базового проекта определения сайта
   В этом пошаговом руководстве демонстрируется создание простейшего определения сайта, содержащий Визуальная веб-часть с некоторыми элементами управления, на нем. Для ясности визуальной веб-части, создаваемом имеет несколько элементов управления. Тем не менее можно создать более сложное определений сайтов SharePoint, которые включают дополнительные функциональные возможности.  

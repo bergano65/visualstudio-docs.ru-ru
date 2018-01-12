@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP в Visual Studio
 Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.  
@@ -109,7 +109,7 @@ ms.lasthandoff: 01/05/2018
      ![Приостановка, возобновление, завершение и фоновых задач](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Активация событий управления жизненным циклом процесса и фоновых задач из установленного приложения  
- Чтобы загрузить приложение, уже установленное в отладчик, используйте диалоговое окно "Отлаживать установленное приложение". Например можно отладить приложение, установленное из магазина Microsoft или отладить приложение при наличии исходных файлов для приложения, но не отдельного проекта Visual Studio для приложения. С помощью диалогового окна "Отлаживать установленное приложение" можно запустить приложение в режиме отладки на компьютере Visual Studio или удаленном устройстве либо настроить приложение для выполнения в режиме отладки, но не запускать его. Дополнительные сведения см. в подразделе **Запуск установленного приложения в отладчике** раздела [Запуск сеанса отладки](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) для [JavaScript](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) или **Visual C++, Visual C# и Visual Basic** .  
+ Чтобы загрузить приложение, уже установленное в отладчик, используйте диалоговое окно "Отлаживать установленное приложение". Например можно отладить приложение, установленное из магазина Microsoft или отладить приложение при наличии исходных файлов для приложения, но не отдельного проекта Visual Studio для приложения. С помощью диалогового окна "Отлаживать установленное приложение" можно запустить приложение в режиме отладки на компьютере Visual Studio или удаленном устройстве либо настроить приложение для выполнения в режиме отладки, но не запускать его. В разделе **Запуск установленного приложения в отладчике** раздел [запуск сеанса отладки в приложении UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
   
  После загрузки приложения в отладчик можно использовать любую из описанных выше процедур.  
   

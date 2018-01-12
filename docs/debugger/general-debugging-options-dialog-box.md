@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bf693d7a5339e57edeaed82c25ed552901e1ea51
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Страница "Общие", папка "Отладка", диалоговое окно "Параметры"
 **Сервис > Параметры > Отладка > Общие** странице можно задать следующие параметры:  
@@ -85,7 +85,7 @@ ms.lasthandoff: 01/04/2018
     Неявный вызов функции преобразования строковых значений при вычислении объектов в окнах переменных. В этом случае результат отображается в виде строки, а не имени типа. Применимо только при отладке кода C#. Этот параметр можно переопределить с помощью атрибута DebuggerDisplay (см. [с помощью атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
 **Включение поддержки исходного сервера**  
-Дает отладчику Visual Studio указание получать исходные файлы с серверов системы управления версиями, реализующих протокол SrcSrv (`srcsrv.dll`). Team Foundation Server и инструменты отладки для Windows — два исходных сервера, которые реализуют этот протокол. Дополнительные сведения о настройке SrcSrv см. в разделе [SrcSrv](hhttps://msdn.microsoft.com/en-us/library/windows/hardware/ff558791(v=vs.85).aspx) документации. Кроме того, в разделе [укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+Дает отладчику Visual Studio указание получать исходные файлы с серверов системы управления версиями, реализующих протокол SrcSrv (`srcsrv.dll`). Team Foundation Server и инструменты отладки для Windows — два исходных сервера, которые реализуют этот протокол. Дополнительные сведения о настройке SrcSrv см. в разделе [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) документации. Кроме того, в разделе [укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 >  Поскольку при чтении PDB-файлов может выполняться произвольный код в файлах, убедитесь, что вы доверяете серверу.  

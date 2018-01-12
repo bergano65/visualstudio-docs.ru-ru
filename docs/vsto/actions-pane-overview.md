@@ -15,17 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-ms.assetid: 1b9b7db5-b19f-44ea-a774-f0962ca03bd2
-caps.latest.revision: "101"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0e3fb356c00b3e9943ba8aff696283d4c5339e18
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="actions-pane-overview"></a>Общие сведения о панели действий
   Панель действий — это настраиваемая **действия с документами** область задач, подключенные к определенному документу Microsoft Office Word или книге Microsoft Office Excel. Она размещается внутри области задач Office вместе с другими встроенными областями задач, таких как **XML-источник** в Excel или **стили и форматирование** области задач в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.  

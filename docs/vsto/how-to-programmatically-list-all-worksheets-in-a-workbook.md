@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, listing worksheets
 - worksheets, listing
-ms.assetid: 38b63d1d-6047-44e8-b089-c576c6179e4a
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9a4478e7fb0895e15be5d239da541b7c9fab7e44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7909e82b57d9d0d06217bfd252aa923d5aee2b20
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Практическое руководство. Программное перечисление всех листов в книге
   Класс <xref:Microsoft.Office.Interop.Excel.Workbook> предоставляет объект <xref:Microsoft.Office.Interop.Excel.Worksheets>. Этот объект содержит коллекцию всех объектов <xref:Microsoft.Office.Interop.Excel.Worksheet> в книге.  

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords: deployment, local folder
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4e575a6d885b079c1c5afd0af6cbdadcd1d38d96
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Развертывание веб-приложения или приложения .NET Core в локальной папке, используя средство публикации Visual Studio
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
-1. В Visual Studio выберите **файл > Новый проект**.
+1. В Visual Studio последовательно выберите **Файл > Создать проект**.
 
 1. В разделе **Visual C#** или **Visual Basic**, выберите **.NET Core**, а затем в средней области выберите **консольного приложения (.NET Core)**.
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="deploy-to-a-local-folder"></a>Развертывание в локальную папку
 
-1. В обозревателе решений щелкните правой кнопкой мыши проект и выберите команду **публикации**.
+1. В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
 
     ![Выберите опубликовать](../deployment/media/quickstart-publish.png "выберите публикации")
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/05/2018
 
 1. Для повторной публикации, нажмите кнопку **публикации**.
 
-Разверните опубликованные файлы любым способом. Например можно упаковать их в ZIP-файле, используйте команду простое копирование или развертывать вместе с любой пакет установки, по своему усмотрению.
+Разверните опубликованные файлы любым удобным вам способом. Например можно упаковать их в ZIP-файле, используйте команду простое копирование или развертывать вместе с любой пакет установки, по своему усмотрению.
 
 ## <a name="next-steps"></a>Следующие шаги
 

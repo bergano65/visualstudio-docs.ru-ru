@@ -9,17 +9,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 dev_langs: 
 helpviewer_keywords: 
-ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2158
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Рекомендации по разработке для COM, VSTO и VBA надстройки Office
   При разработке надстройки COM VSTO и VBA для Office, выполните рекомендации по разработке описано в этой статье.   Это позволит обеспечить:

@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Сократите затраты времени на отладку приложения, используя IntelliTrace для записи и отслеживания истории выполнения кода. Вы сможете без труда находить ошибки, поскольку IntelliTrace позволяет выполнять следующие задачи.  
@@ -56,7 +56,7 @@ ms.lasthandoff: 01/09/2018
 |||  
 |-|-|  
 |**Поддерживается**|-Visual C# и Visual Basic приложения, использующие .NET Framework 2.0 или более поздних версий.<br />     Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br />     Для отладки приложений SharePoint с помощью IntelliTrace, в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Для отладки приложения Microsoft Azure с помощью IntelliTrace, в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Ограниченная поддержка**|-.NET core и поддерживается только для событий приложений ASP.NET Core<br />-Приложения F # на экспериментальной основе<br />— Поддерживается только для событий приложений для магазина Windows|  
+|**Ограниченная поддержка**|-.NET core и поддерживается только для событий приложений ASP.NET Core<br />-Приложения F # на экспериментальной основе<br />-Поддерживается только для событий приложений UWP|  
 |**Не поддерживается**|-C++, другие языки и скрипт<br />— Службы Windows, Silverlight, Xbox или [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] приложений|  
   
 > [!NOTE]

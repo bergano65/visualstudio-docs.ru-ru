@@ -18,23 +18,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Отладка универсальных приложений Windows (UWP)
-Отладчик Visual Studio обеспечивает полную поддержку для отладки приложения UWP.  
-  
-Сведения об отладке универсальных приложений Windows см. в разделе [развертывание и отладка приложений UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps).  
+Отладчик Visual Studio обеспечивает полную поддержку для отладки приложения UWP и Windows 8.1.  
   
 Для отладки приложений Windows Phone 8, в разделе [отладки приложений для Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
 |||  
 |-|-|  
-|[Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Запуск приложений UWP на локальном компьютере, в эмуляторе или симуляторе приложений или на удаленном устройстве.|  
-|[Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Поиск и устранение ошибок в приложениях UWP с помощью отладчика Visual Studio.|  
+|[Запуск сеанса отладки для приложений UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|Запуск приложений UWP на локальном компьютере, подключенном устройстве, в эмуляторе или симуляторе приложений или на удаленном устройстве.|  
 |[Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)|Отладка развернутых приложений, локальные и удаленные.|
 |[Предварительная загрузка контента для приложений UWP](../debugger/prefetch-content-for-windows-store-apps.md)|Анализируйте влияние класса ContentPrefetcher на приложения UWP.|  
   

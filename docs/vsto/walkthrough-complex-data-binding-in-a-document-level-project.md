@@ -15,17 +15,15 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 - multiple column data binding [Office development in Visual Studio]
 - data binding [Office development in Visual Studio], multiple columns
-ms.assetid: 32ffad3d-fba4-476a-99b8-ef440434f4e1
-caps.latest.revision: "50"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 10d35a0cec1e927fbc264d64ef911503f68f1606
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ee0dc3da505807a572b646c4c286132cc45ca81
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Сложная привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы сложная привязка данных в проекте уровня документа. Можно привязать несколько ячеек в лист Microsoft Office Excel к полям базы данных "Борей" SQL Server.  

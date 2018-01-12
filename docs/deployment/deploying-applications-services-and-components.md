@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 dev_langs:
 - FSharp
 - VB
@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Общие сведения о развертывании в Visual Studio
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/05/2018
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, и **.NET Core**: можно использовать средство публикации для развертывания веб-сайт через FTP или веб-развертывания. Дополнительные сведения см. в разделе [развертывание на веб-сайт](quickstart-deploy-to-a-web-site.md).
 
-    В обозревателе решений щелкните правой кнопкой мыши проект и выберите команду **публикации**. В средство публикации выберите параметр требуется и выполните шаги настройки.
+    В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**. В средство публикации выберите параметр требуется и выполните шаги настройки.
 
     ![Выберите IIS, FTP и т. д.](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/05/2018
 
 ### <a name="publish-to-azure"></a>Публикация в Azure
 
-- **ASP.NET, ASP.NET Core, Python, Node.js и .NET Core** веб-приложения: можно использовать средство публикации для быстрого развертывания приложений в службе приложений Azure или к виртуальной машине Azure. В обозревателе решений щелкните правой кнопкой мыши проект и выберите команду **публикации**. В диалоговом окне «публикация» выберите **службу приложений Microsoft Azure** или **виртуальные машины Microsoft Azure**, а затем выполните действия по настройке.
+- **ASP.NET, ASP.NET Core, Python, Node.js и .NET Core** веб-приложения: можно использовать средство публикации для быстрого развертывания приложений в службе приложений Azure или к виртуальной машине Azure. В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**. В диалоговом окне «публикация» выберите **службу приложений Microsoft Azure** или **виртуальные машины Microsoft Azure**, а затем выполните действия по настройке.
 
     ![Выберите службы приложений Azure](../deployment/media/quickstart-publish-azure.png "выберите службы приложений Azure")
 

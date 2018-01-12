@@ -16,17 +16,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], developing
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-ms.assetid: 51fb5bdd-b99c-4716-83bc-e66a5da15169
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3a580d662c09e0f8a73deca2c4e0cea7cea6650c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c4701cf7509b368c1264436d97d9fc95722e4aff
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Пошаговое руководство. Создание веб-части для SharePoint
   Веб-части позволяют пользователям напрямую изменять содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. В этом пошаговом руководстве показано, как создать веб-части с помощью **веб-часть** шаблона элемента в Visual Studio 2010.  

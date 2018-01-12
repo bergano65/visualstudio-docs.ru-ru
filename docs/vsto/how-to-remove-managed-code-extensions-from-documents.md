@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], removing
 - documents [Office development in Visual Studio], managed code extensions
-ms.assetid: e893d9a5-72a5-4087-b81b-04d4d3d9ebf8
-caps.latest.revision: "30"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 77325f725edcec41d71e5af38572f05e59c86198
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c83f9794cdce71db9f51a6adca69fbeabc8c7a8e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Практическое руководство. Удаление расширений управляемого кода из документов
   Можно программно удалить сборку настройки из документа или книги, которая является частью настройки уровня документа для Microsoft Office Word или Microsoft Office Excel. Затем пользователи могут открывать документы и просматривать содержимое, но любой собственный пользовательский интерфейс (UI), добавление в документы не будут отображаться и код не будет выполняться.  
