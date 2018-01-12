@@ -14,11 +14,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 2e354145fa47e243c3dea1641086626e9bcc2c5c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebb3acfb9fcd49a682e888058b71adbd4119429a
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Данные средства Visual Studio для C++
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
 Чтобы подключиться к базам данных SQL, приложений C++ неуправляемого кода можно использовать драйверы ODBC и OLE DB и ADO поставщика, который входит в состав Windows. Их можно подключиться к любой базе данных, которая поддерживает эти интерфейсы. Драйвер ODBC является стандартным. OLE DB предоставляется для обеспечения обратной совместимости. Дополнительные сведения об этих технологий данных см. в разделе [компоненты доступа к данным Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/aa968814.aspx).  
   
-Чтобы воспользоваться преимуществами пользовательских функций в SQL Server 2005 и более поздней версии, используйте [собственный клиент SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Собственный клиент также содержит, драйвер ODBC для SQL Server и поставщика SQL Server OLE DB в одну собственную динамическую библиотеку (DLL). Они поддерживают приложения, использующие API машинного кода (ODBC, OLE DB и ADO) для Microsoft SQL Server.  Собственный клиент SQL Server устанавливается вместе с SQL Server Data Tools. Руководство по программированию находится здесь: [программирование SQL Server Native Client](/sql/sql-docs/docs/relational-databases/native-client/sql-server-native-client-programming).  
+Чтобы воспользоваться преимуществами пользовательских функций в SQL Server 2005 и более поздней версии, используйте [собственный клиент SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Собственный клиент также содержит, драйвер ODBC для SQL Server и поставщика SQL Server OLE DB в одну собственную динамическую библиотеку (DLL). Они поддерживают приложения, использующие API машинного кода (ODBC, OLE DB и ADO) для Microsoft SQL Server.  Собственный клиент SQL Server устанавливается вместе с SQL Server Data Tools. Руководство по программированию находится здесь: [программирование SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming).  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Подключение к localDB через ODBC и собственный клиент SQL из приложения C++  
   

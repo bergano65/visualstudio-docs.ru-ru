@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Вы можете отладить приложение Visual Studio, развернутое на другом компьютере. Для этого используется удаленный отладчик Visual Studio.
@@ -35,15 +35,15 @@ ms.lasthandoff: 12/22/2017
 |Сценарий|Ссылка|
 |-|-|-|
 |ASP.NET|[Удаленная отладка ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) или [удаленная отладка ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# или Visual Basic|[Удаленная отладка проект C# или Visual Basic](remote-debugging-csharp.md)|
-|C++|[Удаленная отладка проекта C++](remote-debugging-cpp.md)|
-|Универсальные приложения Windows (UWP)|[Отладка установленного пакета приложения](debug-installed-app-package.md)|
+|C# или Visual Basic|[Удаленная отладка проект C# или Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C++|[Удаленная отладка проекта C++](../debugger/remote-debugging-cpp.md)|
+|Универсальные приложения Windows (UWP)|[Запускайте приложения UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md) и [отладки пакета установленного приложения](../debugger/debug-installed-app-package.md)|
 |Azure|[Удаленной отладки ASP.NET в Azure](remote-debugging-azure.md)|
 |Azure Service Fabric|[Отладка удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Если вы только хотите загрузить и установить удаленный отладчик и не нужны дополнительные инструкции, для вашего сценария, следуйте инструкциям в этой статье.
   
-## <a name="download-and-install-the-remote-tools"></a>Скачивание и установка инструментов удаленной отладки  
+## <a name="download-and-install-the-remote-tools"></a>Загрузите и установите инструменты удаленной отладки  
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

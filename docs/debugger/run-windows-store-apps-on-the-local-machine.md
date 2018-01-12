@@ -1,49 +1,8 @@
 ---
-title: "Запускайте приложения UWP на локальном компьютере | Документы Microsoft"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
-ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
-caps.latest.revision: "15"
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 63cb81c9bc168ad0bda8d675c0bf0bbde3759eff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+redirect_url: /visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml
+ms.openlocfilehash: 309b1bbf8e16ef7747db5583c103cd4b74ec4570
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
-# <a name="run-uwp-apps-on-the-local-machine"></a>Запускайте приложения UWP на локальном компьютере
-![Применяется только к Windows](../debugger/media/windows_only_content.png "windows_only_content")  
-  
- Для отладки, тестирование или анализ производительности приложения UWP, запускается приложение на том же компьютере, где размещается Visual Studio. Если экран устройства поддерживает сенсорное управление, вам становятся доступны все функции приложения, в противном случае вы сможете использовать только жесты, выполняемые с помощью мыши и клавиатуры.  
-  
-##  <a name="BKMK_How_to_run_on_a_local_machine"></a>Запуск на локальном компьютере  
- Чтобы запустить приложение на локальном компьютере, выберите **локального компьютера** из раскрывающегося списка рядом с кнопкой "Начать отладку" в отладчике **Стандартная** инструментов.  
-  
- ![Запуск на локальном компьютере](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
-  
- Если вы не видите **стандартные** инструментов, нажмите кнопку **представление** последовательно выберите пункты **панели инструментов**и нажмите кнопку **стандартные**.  
-  
- Выбор, производимый в раскрывающемся списке, сохраняется в файле свойств проекта и используется для запуска по умолчанию.  
-  
- Целевой объект запуска также можно задать напрямую в файле свойств проекта. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **свойства**. Выполните одно из следующих действий.  
-  
--   В проектах C# и Visual Basic щелкните **отладки** , а затем выберите **локального компьютера** из **целевое устройство** раскрывающегося списка.  
-  
-     ![И &#35; и страницы свойств проекта Visual Basic](../debugger/media/vsrun_cs_vb_projprop_local.png "VSRUN_CS_VB_ProjProp_Local")  
-  
--   В проектах C++ и JavaScript разверните узел **свойства конфигурации** узла, нажмите кнопку **Отладка**, а затем выберите **локальный отладчик** из **отладчика Чтобы запустить** списка.  
-  
-     ![C# 43; &#43; и страницы свойств проекта JavaScript](../debugger/media/vsrun_cpp_js_projprop_local.png "VSRUN_CPP_JS_ProjProp_Local")  
