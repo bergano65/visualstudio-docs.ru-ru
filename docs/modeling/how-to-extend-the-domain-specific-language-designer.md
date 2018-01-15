@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
-caps.latest.revision: "9"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9eaa07b0fdf0055ea4ba2849f6438882a22cf85e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8db29f57c05f1bc9c80c3dc658c23a7c7e109edd
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 Расширения можно создать в конструктор, который позволяет изменять определения DSL. Типы расширения, который может быть включают добавление команды меню добавления обработчиков для перетащите и дважды щелкните жестов и правила, которые происходят при изменении определенных типов значений или связей. Расширения можно упаковать как Visual Studio Integration Extension (VSIX) и распространяются среди других пользователей.  

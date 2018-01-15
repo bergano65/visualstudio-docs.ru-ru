@@ -11,17 +11,15 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selecticondialog
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords: Domain-Specific Language, toolbox
-ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
-caps.latest.revision: "26"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8f9d26b727281c3443549bd38afce5d9da043334
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e7ce422f22a2420e3972477bfe9513b88a5861f1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Настройка элементов и панели элементов
 Для тех элементов, которые пользователи смогут добавлять в свои модели, необходимо определить содержание панели элементов. Панель элементов может содержать два вида средств: средства элемента и средства подключения. В созданном конструкторе пользователь может выбрать средство элемента, чтобы перетащить фигуры на схему, и средство подключения, чтобы протянуть связи между фигурами. В целом средства элемента позволяют пользователям добавлять в модели экземпляры классов доменов, а средства подключения — экземпляры доменных связей.  

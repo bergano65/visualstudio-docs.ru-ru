@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: models, versions of Visual Studio
-ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
-caps.latest.revision: "20"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f42cccacee8b46b5bc3d637ad8f7153d704f8441
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1483fe7d62baf5d81865897308fb9d25947213c3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 При открытии модели в версии Visual Studio, которая не поддерживает создание моделей, она открывается в режиме "только для чтения". В этом режиме можно изменить структуру схемы, но невозможно изменить модель.  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
 -   Два файла для схемы, которую требуется просмотреть, например, схемы **MyDiagram.classdiagram и MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Для схемы зависимостей, должен также иметь файл с именем *Моя_схема***. layerdiagram.suppressions**.  
+    >  Для схемы зависимостей, должен также иметь файл с именем * Моя_схема ***. layerdiagram.suppressions**.  
   
 -   Файл проекта моделирования (**MyModel.modelproj**)  
   

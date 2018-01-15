@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
-caps.latest.revision: "13"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebfb92bb316cc8c4dc192192c1a00ea42420bcff
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставляет эффективный способ создания кода, документов, файлов конфигурации и другие артефакты из данных, представленных в модели. С помощью [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], можно создать набор классов, представляющих данные и вы можете использовать текстовые шаблоны в классах, имена и свойства отражают данные.  

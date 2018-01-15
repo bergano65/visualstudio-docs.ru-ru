@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a4794f1cde57f365ec4ec98251763e8d0e839ae0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0be62faf81fc9d7da60a03596c25cc01a9bf0eac
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Практическое руководство. Предоставление доступа к коду со стороны VBA в проекте Visual C#
   Код Visual C# проекта на Visual Basic для приложений (VBA) можно предоставлять, если требуется два типа кода для взаимодействия друг с другом.  
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/10/2018
   
      Дополнительные сведения о ведущих элементах см. в разделе [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Извлечение интерфейса от класса, который вы предоставляете коду VBA. В **извлечение интерфейса** диалогового окна выберите открытые элементы, которые требуется включить в объявлении интерфейса. Дополнительные сведения см. в разделе [извлечь рефакторинг интерфейса &#40; C# 35; &#41; ](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
+6.  Извлечение интерфейса от класса, который вы предоставляете коду VBA. В **извлечение интерфейса** диалогового окна выберите открытые элементы, которые требуется включить в объявлении интерфейса. Дополнительные сведения см. в разделе [извлечь рефакторинг интерфейса](../ide/reference/extract-interface-csharp.md).
   
 7.  Добавить **открытый** ключевое слово объявление интерфейса.  
   

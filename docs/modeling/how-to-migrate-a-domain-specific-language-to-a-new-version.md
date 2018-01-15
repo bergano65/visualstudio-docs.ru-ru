@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a1b7a8b2abafa4c63192c207ad73d00e508bddfa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос доменного языка в новую версию
 Можно перенести проекты, которые определяют и используют доменного языка для [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] версии [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , включенного в состав [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -63,9 +61,9 @@ ms.lasthandoff: 12/22/2017
   
     1.  Нажмите кнопку **преобразовать**.  
   
-         До преобразования каждого файла проекта, копия *проекта***.csproj** сохраняется как *проекта***. vs2008.csproj**  
+         До преобразования каждого файла проекта, копия *проекта *** .csproj** сохраняется как *проекта ***.vs2008.csproj**  
   
-         Каждая копия *решения***.sln** сохраняется как *решения***. vs2008.sln**  
+         Каждая копия *решения *** .sln** сохраняется как *решения ***.vs2008.sln**  
   
     2.  Проверьте все неудачные преобразования, включенные в отчет.  
   

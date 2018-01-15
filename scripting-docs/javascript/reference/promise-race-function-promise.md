@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fedd512f4565009c8429b43b0d9d93de943d13fb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d35c448ad143facdcd783df0551505e440521b98
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="promiserace-function-promise"></a>Функция Promise.race (Promise)
 Создает новый объект Promise, который будет разрешен или отклонен с тем же значением результата, что и первый разрешенный или отклоненный объект Promise в числе переданных аргументов.  
@@ -34,7 +34,7 @@ Promise.race(iterable)
   
 #### <a name="parameters"></a>Параметры  
  `iterable`  
- Обязательный. Один или несколько объектов Promise.  
+ Обязательно. Один или несколько объектов Promise.  
   
 ## <a name="remarks"></a>Примечания  
  Если один из объектов Promise в объекте `iterable` уже разрешен или отклонен, `Promise.race` возвращает разрешенный или отклоненный объект Promise в том же виде, а результирующее значение равно значению, которое использовалось для разрешения (или отклонения) этого объекта. Если в объекте `iterable` разрешены или отклонены уже несколько объектов Promise, `Promise.race` возвращает объект Promise, разрешенный таким же образом, как и первый итерированный объект Promise. Если итерируемый объект не содержит разрешенных или отклоненных объектов Promise, объект Promise, возвращенный из `Promise.race`, также не разрешается и не отклоняется.  
@@ -46,7 +46,7 @@ var p1 = new Promise(function(resolve, reject) {
     setTimeout(resolve, 0, 'success');  
 });  
 var p2 = new Promise(function(resolve, reject) { });  
-var p2 = new Promise(function(resolve, reject) { });  
+var p3 = new Promise(function(resolve, reject) { });  
   
 var race = Promise.race( [p1, p2, p3] );  
 race.then(function(result) {  

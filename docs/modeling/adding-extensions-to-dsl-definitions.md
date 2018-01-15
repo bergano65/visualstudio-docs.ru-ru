@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 07e133be-92ab-4936-a02b-45d2012bd0a6
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77a631d7f245dfe6d324e2b392349b559447212f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3abe11e747db81579fb3851a1d05562d3f2fd11
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Добавление расширений в определения доменных языков
 Модуль определения DSL позволяет создать пакет расширения для доменного языка (DSL). Так же, как DSL расширения DSL, которое содержится в Visual Studio Integration Extension (VSIX), можно установить на компьютере пользователя. Дополнительные возможности можно динамически включать и отключать во время выполнения. Нет необходимости явно разрабатывать расширения доменного языка и расширения могут создать позже или сторонними производителями, без изменения расширенной DSL.  

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, generating templates from templates
-ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
-caps.latest.revision: "35"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 634d5617d1f42891953f8f1a73bcc5d09a8ffa9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d8aeee2588d0f86708bf76f3630fa0d9ecd5bd1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Практическое руководство. Создание шаблонов из шаблонов с помощью escape-последовательностей
 Можно создать текстовый шаблон, создающий другой текстовый шаблон, сгенерированный текстовый вывод. Чтобы сделать это, необходимо использовать escape-последовательности для разграничения теги текстового шаблона. Если не использовать escape-последовательности, сгенерированный текстовый шаблон будет иметь предопределенное значение. Дополнительные сведения об использовании escape-последовательностей в текстовых шаблонах см. в разделе [с помощью Escape-последовательностей в текстовых шаблонах](../modeling/using-escape-sequences-in-text-templates.md).  

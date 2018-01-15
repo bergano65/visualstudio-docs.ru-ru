@@ -15,17 +15,15 @@ helpviewer_keywords:
 - mapping code relationships
 - code maps
 - mapping relationships in code
-ms.assetid: 9fd0c9a2-d351-40c8-be88-0749788264bf
-caps.latest.revision: "49"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 978344a6a51662c1d9103c386a917e1eb3cdc0ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f9ff795b745119339d2800d8b30bfb7a71b1b61e
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Использование карт кода для отладки приложений
 Карты кода помогают не запутаться в больших базах кода, малознакомом или устаревшем коде. Например при отладке, может потребоваться просмотреть код во множестве файлов и проектов. Используйте карты кода для перехода между частями кода и просмотра связей между ними. Таким образом, вам не нужно держать весь этот код у себя в голове или рисовать отдельную схему. Карты кода помогут вспомнить особенности кода в случае перерыва в работе.  

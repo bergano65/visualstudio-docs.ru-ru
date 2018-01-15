@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords: Domain-Specific Language, serialization
-ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
-caps.latest.revision: "17"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Настройка хранилища файлов и XML-сериализации
 Когда пользователь сохраняет экземпляр, или *модель*, доменного языка (DSL) в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], создается или обновляется в XML-файл. Файл можно загрузить в память для повторного создания модели в хранилище.  

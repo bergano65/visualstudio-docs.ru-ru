@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords: Domain-Specific Language, deletion
-ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Настройка функции удаления
 Удаление элемента обычно приводит также к удалению связанных элементов. Удаляются все подключенные к нему отношения и дочерние элементы. Это поведение называется *удаление распространений*. Распространение удалений можно настраивать, например, для организации удаления дополнительных связанных элементов. Написав код программы, можно сделать распространение удалений зависимым от состояния модели. Также можно в ответ на удаление вызвать другие изменения.  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
 >  Чтобы добавить программный код в определение DSL, создайте отдельный файл кода в **Dsl** проекта и записи определения разделяемых классов для расширения классов в папке созданного кода. Дополнительные сведения см. в разделе [написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a>Определение закрытия Delete  
- Операции удаления с помощью класса *YourModel***DeleteClosure** определить, какие элементы, чтобы удалить данный первоначального выбора. Проходя диаграмму отношений, он циклично вызывает методы `ShouldVisitRelationship()` и `ShouldVisitRolePlayer()`. Эти методы можно переопределить. ShouldVisitRolePlayer входит в состав идентификации ссылки и элемент в одной из ролей по ссылке. Это позволяет вернуть одно из следующих значений:  
+ Операции удаления с помощью класса *YourModel *** DeleteClosure** чтобы определить, какие элементы, чтобы удалить данный первоначального выбора. Проходя диаграмму отношений, он циклично вызывает методы `ShouldVisitRelationship()` и `ShouldVisitRolePlayer()`. Эти методы можно переопределить. ShouldVisitRolePlayer входит в состав идентификации ссылки и элемент в одной из ролей по ссылке. Это позволяет вернуть одно из следующих значений:  
   
 -   **VisitorFilterResult.Yes**— должен быть удален элемент и walker следует продолжить попробовать элемента с другими элементами.  
   

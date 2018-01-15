@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
-caps.latest.revision: "3"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 911cc5e7959e5a392ff4ff53945ca5277605f7b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3c024fc6be841f5329f133ece35ed0ef7517eb3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 Несколько доменных языков можно упаковать как часть единого решения, чтобы устанавливать их вместе.  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  Объедините манифесты VSIX доменных языков:  
   
-    1.  Откройте *YourVsixProject***\source.extension.manifest**.  
+    1.  Откройте * YourVsixProject ***\source.extension.manifest**.  
   
     2.  Для каждого DSL выберите **Добавление содержимого** и добавьте:  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  Постройте решение.  
   
- Получившийся проект VSIX установит оба доменных языка. Можно проверить их, нажав клавишу F5 или развернуть *YourVsixProject***\bin\Debug\\\*.vsix**.  
+ Получившийся проект VSIX установит оба доменных языка. Можно проверить их, нажав клавишу F5 или развернуть * YourVsixProject ***\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>См. также  
  [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

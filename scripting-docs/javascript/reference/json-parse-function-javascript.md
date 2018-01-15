@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>Функция JSON.parse (JavaScript)
 Преобразует строку нотации объектов JavaScript (JSON) в объект.  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   Убедитесь, что аргумент `text` был сериализован реализацией, совместимой с JSON, например `JSON.stringify`.  
   
--   Запустите аргумент `text` в проверяющем элементе управления JSON, например [JSLint](http://www.jslint.com/) , для идентификации синтаксических ошибок.  
+-   Запустите `text` аргумента в проверяющем элементе управления JSON как [JSLint](http://www.jslint.com/) или [JSON в CSV-ФАЙЛ](https://json-csv.com) для идентификации синтаксических ошибок.  
   
 ## <a name="example"></a>Пример  
  В следующем примере используется `JSON.parse` для преобразования строки JSON в объект.  

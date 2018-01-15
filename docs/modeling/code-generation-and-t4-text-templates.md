@@ -14,17 +14,15 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
-caps.latest.revision: "82"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6eeadb77cd0250ab7b2cc48c2abdb8d9f1a1f373
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Создание кода и текстовые шаблоны T4
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *текстовый шаблон T4* представляет собой сочетание блоков текста и логики управления, которое может создать текстовый файл. Логика управления записывается в виде фрагментов программного кода в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. В Visual Studio 2015 с обновлением 2 и более поздних версиях можно использовать функции C# версии 6.0 в директивах шаблонов T4. Созданный файл может быть текстом любого типа, например веб-страницей, файлом ресурса или исходным кодом программы на любом языке.  

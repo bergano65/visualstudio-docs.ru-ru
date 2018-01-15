@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
-caps.latest.revision: "41"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: de8564aa1743ed22ff4a600d9bf655bbb4adaed4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Создание файлов с помощью служебной программы TextTransform
 TextTransform.exe является средством командной строки, которое можно использовать для преобразования текстового шаблона. При вызове TextTransform.exe указываются имя файла текстового шаблона как аргумент. TextTransform.exe вызывает обработчик преобразования текста и обрабатывает текстового шаблона. TextTransform.exe обычно вызывается из скриптов. Тем не менее это не обычно не требуется, поскольку выполняется преобразование текста в Visual Studio или в процессе построения.  

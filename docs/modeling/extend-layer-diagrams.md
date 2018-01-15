@@ -10,17 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-ms.assetid: 83fca301-b008-485a-87eb-218050e71451
-caps.latest.revision: "39"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 477c51d4172f893e4506eff1b2a11b626993b327
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 076964379f0903945767110a3c19edb87d3c7092
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="extend-dependency-diagrams"></a>Расширения схемы зависимостей
 Можно написать код для создания и обновления схемы зависимостей и для проверки структуры кода программы по схемам зависимостей в Visual Studio. Вы можете добавить команды, которые отображаются в контекстном меню схем, настроить жесты перетаскивания, а также получить доступ к модели слоев из текстовых шаблонов. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension (VSIX) и предоставить их другим пользователям Visual Studio.  

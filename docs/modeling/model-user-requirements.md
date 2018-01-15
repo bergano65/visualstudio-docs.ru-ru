@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - requirements
 - stories
-ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: "28"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="model-user-requirements"></a>Моделирование требований пользователей
 Visual Studio помогает понимать и обсуждать потребности пользователей, а также информировать о них других. Для этого можно составлять схемы о деятельности пользователей и о том, как система помогает им в достижении целей. Модель требований — это набор этих схем, каждая из которых иллюстрирует отдельный аспект потребностей пользователей. Демонстрационные видеоматериалы см. в разделе [Моделирование бизнес-среды](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
@@ -61,7 +59,7 @@ Visual Studio помогает понимать и обсуждать потре
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Бизнес-правило — это требование, не связанное с определенным вариантом использования, которое необходимо соблюдать во всех частях системы.  
   
- Многие бизнес-правила представляют собой ограничения отношений между концептуальными классами. Можно написать эти *статических**бизнес-правил* как комментарии, связанные с соответствующими классами на концептуальной схеме классов. Пример:  
+ Многие бизнес-правила представляют собой ограничения отношений между концептуальными классами. Можно написать эти *статических ** бизнес-правил* как комментарии, связанные с соответствующими классами на концептуальной схеме классов. Пример:  
   
  ![Правило в комментарии, вложенном в класс Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Сопоставление зависимостей в разных решениях
-Чтобы разобраться в реализованных в коде зависимостях, визуализируйте их, создав карты кода. Это поможет увидеть, как код сочетается друг с другом без чтения файлов и строк кода.  
-  
- ![Просмотр зависимостей в решениях](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Далее приводится несколько ссылок на видеоролики**:  
-  
--   [Выявление зависимостей кода путем визуализации](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Визуализация влияния изменений](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Анализ сложного кода с помощью карт кода](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a> Начало работы с картами кода  
- **Для работы с картами кода необходимо иметь либо**:  
+
+Чтобы разобраться в реализованных в коде зависимостях, визуализируйте их, создав карты кода. Это поможет увидеть, как код сочетается друг с другом без чтения файлов и строк кода.
+
+![Просмотр зависимостей в решениях](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Далее приводится несколько ссылок на видеоролики**:
+
+- [Выявление зависимостей кода путем визуализации](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Визуализация влияния изменений](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Анализ сложного кода с помощью карт кода](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a> Начало работы с картами кода
+
+**Для работы с картами кода необходимо иметь либо**:
   
 -   Visual Studio Enterprise: позволяет создавать карты кода в редакторе кода, обозревателе решений, представлении классов или обозревателе объектов.  
   
@@ -171,7 +171,7 @@ ms.lasthandoff: 12/22/2017
   
 10. Еще один способ концентрации в комплексном решении — это создать новую карту с выбранными элементами существующей карты. Выделите необходимые элементы, удерживая нажатой клавишу **CTRL** , откройте контекстное меню и выберите пункт **Новый граф по выделенному фрагменту**.  
   
-     ![Показать выбранные элементы на новой карте кода](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Показать выбранные элементы на новой карте кода](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Выбранные элементы будут добавлены в новую карту вместе с контекстом. Скройте папки решений и другие контейнеры, вы не хотите просмотреть с помощью команды **фильтры** области.  
   

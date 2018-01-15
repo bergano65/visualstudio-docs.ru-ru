@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
-caps.latest.revision: "16"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Начало работы с доменными языками
 В этом разделе объясняются основные понятия в определении и использовании доменный язык (DSL), созданные с помощью пакета SDK для моделирования для Visual Studio.  
@@ -143,7 +141,7 @@ ms.lasthandoff: 12/22/2017
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>Содержимое модели  
- Содержимое файла, который является экземпляром DSL называется *модели*. Модель содержит *модель**элементы* и *ссылки* между элементами. Определение DSL определяет, какие типы элементов модели и ссылки могут существовать в модели. Например в DSL, созданные на основе шаблона минимальной языка, есть один тип элемента модели и одного типа ссылки.  
+ Содержимое файла, который является экземпляром DSL называется *модели*. Модель содержит *модели ** элементы* и *ссылки* между элементами. Определение DSL определяет, какие типы элементов модели и ссылки могут существовать в модели. Например в DSL, созданные на основе шаблона минимальной языка, есть один тип элемента модели и одного типа ссылки.  
   
  Определение DSL можно указать, каким образом модель отображается на схеме. Можно выбрать из множества стилей фигур и соединителей. Можно указать, что некоторые компоненты отображаются внутри других фигур.  
   

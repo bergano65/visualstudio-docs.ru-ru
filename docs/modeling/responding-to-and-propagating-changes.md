@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, events
-ms.assetid: fc2e9ac5-7a84-44ed-9945-94e45f89c227
-caps.latest.revision: "24"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3923579e180439c3d08680f6e67149901214245
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>Реагирование на изменения и их распространение
 Если элемент создан, удаления или обновления, можно написать код, распространяет изменения на другие части модели, или на внешние ресурсы, такие как файлы, базы данных или другие компоненты.  

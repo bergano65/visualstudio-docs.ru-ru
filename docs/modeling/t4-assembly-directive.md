@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
-caps.latest.revision: "4"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a9d475a535d40af9a254a3f82839a8b733c2343d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1d40e8627527328e30e0f31194a794dfee2e33e8
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 В текстовом шаблоне времени проектирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] директива `assembly` загружает сборку, чтобы в коде шаблона можно было использовать ее типы. Это дает эффект, аналогичный добавлению ссылки на сборку в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

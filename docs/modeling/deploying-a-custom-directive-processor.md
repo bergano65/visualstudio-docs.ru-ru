@@ -7,20 +7,18 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
-Для использования пользовательского процессора директив в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] на любом компьютере необходимо зарегистрировать его одним из описанных в этом разделе способов.  
+Для использования пользовательского процессора директив в Visual Studio на любом компьютере, необходимо зарегистрировать его одним из способов, описанных в этом разделе.  
   
  Альтернативные методы таковы:  
   
@@ -30,7 +28,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Определить раздел реестра. При использовании данного метода вы добавляете для процессора директив раздел реестра.  
   
- Эти методы необходимо использовать только в том случае, если требуется преобразовать текстовый шаблон в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если используется в вашем собственном приложении, это пользовательское ведущее приложение отвечает за поиск процессора директив для каждой директивы.  
+ Необходимо использовать один из этих методов только в том случае, если требуется преобразовать текстовый шаблон в Visual Studio или [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если используется в вашем собственном приложении, это пользовательское ведущее приложение отвечает за поиск процессора директив для каждой директивы.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Развертывание процессора директив в VSIX  
  Можно добавить пользовательский процессор директив [расширения Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Разработка пользовательского процессора директив в проекте VSIX  
   
-1.  Создайте проект VSIX в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1.  Создайте проект VSIX в Visual Studio.  
   
     -   В **новый проект** диалогового окна разверните **Visual Basic** или **Visual C#**, затем разверните **расширяемости**. Нажмите кнопку **проект VSIX**.  
   
@@ -104,19 +102,19 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-install-the-custom-directive-processor"></a>Установка пользовательского процессора директив  
   
-1.  В Проводнике Windows (Проводнике в Windows 8) откройте каталог сборки (обычно это bin\Debug или bin\Release).  
+1.  В проводнике Windows откройте каталог сборки (обычно это bin\Debug или bin\Release).  
   
 2.  Если требуется установить процессор директив на другой компьютер, скопируйте vsix-файл на другой компьютер.  
   
-3.  Дважды щелкните vsix-файл. Откроется окно установщика расширений [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3.  Дважды щелкните vsix-файл. Откроется установщик расширений Visual Studio.  
   
-4.  Перезапустите [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Теперь вы сможете запускать текстовые шаблоны, содержащие директивы со ссылками на ваш пользовательский процессор директив. Каждая директива имеет следующую форму:  
+4.  Перезапустите Visual Studio. Теперь вы сможете запускать текстовые шаблоны, содержащие директивы со ссылками на ваш пользовательский процессор директив. Каждая директива имеет следующую форму:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Удаление или временное отключение пользовательского процессора директив  
   
-1.  В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **средства** меню, нажмите кнопку **Диспетчер расширений**.  
+1.  В Visual Studio **средства** меню, нажмите кнопку **Диспетчер расширений**.  
   
 2.  Выберите VSIX, содержащий процессор директив и нажмите кнопку **удаления** или **отключить**.  
   
@@ -169,7 +167,7 @@ ms.lasthandoff: 12/22/2017
   
      **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Если нужно установить процессор директив в экспериментальной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], после "11.0" вставьте "Exp".  
+     Если требуется установить процессор директив в экспериментальной версии Visual Studio "после «11.0» вставьте «Exp».  
   
 3.  Добавьте раздел реестра с именем, совпадающим с именем класса процессора директив.  
   
