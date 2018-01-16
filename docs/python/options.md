@@ -1,7 +1,7 @@
 ---
 title: "Параметры Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Параметры для Python в Visual Studio
 
@@ -40,6 +40,8 @@ ms.lasthandoff: 12/22/2017
 - [Диагностические параметры](#diagnostics-options)
 - [Параметры интерактивных окон](#interactive-windows-options)
 - [Дополнительные параметры редактора Python](#advanced-python-editor-options)
+
+Обратите внимание, что в группе **Экспериментальные** содержатся параметры для компонентов, которые все еще находятся в режиме разработки и здесь не рассматриваются. Они часто обсуждаются в записях [блога Майкрософт по разработке на Python](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Общие параметры
 
@@ -69,7 +71,6 @@ ms.lasthandoff: 12/22/2017
 | Включить отладку стандартной библиотеки Python | Off | Позволяет выполнить по шагам исходный код стандартной библиотеки во время отладки, однако увеличивает время запуска отладчика.|
 
 ![Вкладка "Отладка" диалогового окна "Параметры"](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Диагностические параметры
 
