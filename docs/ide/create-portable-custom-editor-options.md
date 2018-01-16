@@ -11,12 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 0219ff704e22ab1c27d47e312825a66cb3a15166
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -32,43 +31,86 @@ ms.lasthandoff: 12/22/2017
 
 Поскольку параметры содержатся в файле в базе кода, они передаются вместе с этой базой кода. Параметры текстового редактора применяются при открытии файла кода в редакторе, совместимом с EditorConfig. Дополнительные сведения о файлах EditorConfig см. на веб-сайте [EditorConfig.org](http://editorconfig.org/).
 
-## <a name="override-editorconfig-settings"></a>Переопределение параметров EditorConfig
-
-При добавлении файла с расширением editorconfig в папку в иерархии файлов его параметры применяются ко всем соответствующим файлам на этом уровне и ниже. Чтобы переопределить параметры EditorConfig для конкретного проекта или базы кода так, чтобы использовались соглашения, отличные от соглашений в файле EditorConfig верхнего уровня, просто добавьте файл с расширением editorconfig в корень репозитория базы кода или каталога проекта. Обязательно добавьте в файл свойство ```root=true```, чтобы среда Visual Studio не искала другие файлы с расширением editorconfig выше в структуре каталогов. Новые параметры в файле EditorConfig применяются к файлам того же уровня и к файлам во всех подкаталогах.
-
-```
-# top-most EditorConfig file
-root = true
-```
-
-![Иерархия EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
-
-Файлы EditorConfig считываются сверху вниз. В последнюю очередь считываются ближайшие файлы EditorConfig. Соглашения из соответствующих разделов EditorConfig применяются в том порядке, в котором они были считаны, поэтому приоритет имеют соглашения в ближайших файлах.
-
 ## <a name="supported-settings"></a>Поддерживаемые параметры
 
-Редактор в Visual Studio поддерживает следующие свойства из основного набора [свойств EditorConfig](http://editorconfig.org/#supported-properties):
+Редактор в Visual Studio поддерживает основной набор [свойств EditorConfig](http://editorconfig.org/#supported-properties):
 
 - indent_style
 - indent_size
 - tab_width
 - end\_of_line
 - charset
+- trim\_trailing_whitespace
+- insert\_final_newline
 - корневой
 
 Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
-
-## <a name="editing-editorconfig-files"></a>Редактирование файлов EditorConfig
-
-Visual Studio предоставляет определенные возможности IntelliSense для редактирования файлов с расширением editorconfig. При редактировании большого количества файлов EDITORCONFIG может быть полезным расширение [Языковая служба EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig).
-
-После того как вы закончили редактировать файл EditorConfig, необходимо повторно загрузить файлы кода, чтобы новые параметры вступили в силу.
 
 ## <a name="adding-and-removing-editorconfig-files"></a>Добавление и удаление файлов EditorConfig
 
 Добавление файла EditorConfig в проект или базу кода не приводит к преобразованию существующих стилей в новые. Например, если в качестве отступов в вашем файле используются символы табуляции, при добавлении файла EditorConfig, в котором отступы задаются пробелами, символы отступа не преобразовываются в пробелы. Тем не менее для новых строк будет использоваться формат, заданный в файле EditorConfig.
 
 Если удалить файл EditorConfig из проекта или базы кода, вам необходимо закрыть и снова открыть все файлы кода, чтобы восстановить глобальные параметры редактора для новых строк кода.
+
+### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Добавление файла EditorConfig в проект или решение
+
+1. Откройте проект или решение в Visual Studio. Выберите узел проекта или решения в зависимости от того, следует ли применять настройки EDITORCONFIG-файла ко всем проектам в решении или только к одному. В проекте или решении можно также выбрать папку, в которую будет добавлен EDITORCONFIG-файл.
+
+1. В строке меню выберите **Проект** > **Добавить новый элемент** либо нажмите сочетание клавиш **CTRL**+**SHIFT**+**A**.
+
+   Откроется диалоговое окно **Добавление нового элемента**.
+
+1. В категориях слева выберите **Общие**, а затем шаблон **Текстовый файл**. В текстовом поле **Имя** введите `.editorconfig`, а затем нажмите кнопку **ОК**.
+
+   В обозревателе решений появится EDITORCONFIG-файл, который откроется в редакторе.
+
+   ![EDITORCONFIG-файл в обозревателе решений](media/editorconfig-in-solution-explorer.png)
+
+1. Измените файл по своему усмотрению, например:
+
+```EditorConfig
+root = true
+
+[*.{cs,vb}]
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+csharp_new_line_before_open_brace = methods
+```
+
+Кроме того, можно установить [расширение языковой службы EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). После установки этого расширения просто выберите пункты **Добавить** > **EDITORCONFIG-файл** в контекстном меню узла решения, узла проекта или любой папки в обозревателе решений.
+
+![Добавление EDITORCONFIG-файла с расширением](media/editorconfig-extension-add.png)
+
+## <a name="override-editorconfig-settings"></a>Переопределение параметров EditorConfig
+
+При добавлении файла с расширением editorconfig в папку в иерархии файлов его параметры применяются ко всем соответствующим файлам на этом уровне и ниже. Можно также переопределить параметры EditorConfig для конкретного проекта, базы кода или части кода так, чтобы использовать другие соглашения, чем в остальных частях базы кода. Это может быть полезно при включении кода из-каких либо еще мест без изменения его соглашений.
+
+Чтобы переопределить некоторые или все параметры EditorConfig, добавьте EDITORCONFIG-файл на уровне иерархии файлов, к которой следует применить эти переопределенные параметры. Новые параметры в файле EditorConfig будут применяться к файлам того же уровня и к файлам во всех подкаталогах.
+
+![Иерархия EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
+
+Если необходимо переопределить только некоторые параметры, просто укажите их в EDITORCONFIG-файле. Будут переопределены только те свойства, которые явно перечислены в файле более низкого уровня. Другие параметры из EDITORCONFIG-файлов более высокого уровня будут применяться по-прежнему. Чтобы к этой части базы кода _не_ применялись параметры из _любых_ EDITORCONFIG-файлов более высокого уровня, добавьте свойство ```root=true``` в EDITORCONFIG-файл более низкого уровня:
+
+```EditorConfig
+# top-most EditorConfig file
+root = true
+```
+
+Файлы EditorConfig считываются сверху вниз. В последнюю очередь считываются ближайшие файлы EditorConfig. Соглашения из соответствующих разделов EditorConfig применяются в том порядке, в котором они были считаны, поэтому приоритет имеют соглашения в ближайших файлах.
+
+## <a name="editing-editorconfig-files"></a>Редактирование файлов EditorConfig
+
+Visual Studio предоставляет определенные возможности IntelliSense для редактирования файлов с расширением editorconfig.
+
+![IntelliSense в EDITORCONFIG-файле](media/editorconfig-intellisense-no-extension.png)
+
+После того как вы закончили редактировать файл EditorConfig, необходимо повторно загрузить файлы кода, чтобы новые параметры вступили в силу.
+
+При редактировании большого количества EDITORCONFIG-файлов может быть полезным расширение [Языковая служба EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). В число возможностей этого расширения входят выделение синтаксиса, улучшенная технология IntelliSense, функции проверки и форматирования кода.
+
+![IntelliSense с расширением языковой службы EditorConfig](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>Пример
 
@@ -82,7 +124,7 @@ Visual Studio предоставляет определенные возможн
 
 Добавим в проект новый файл EDITORCONFIG с приведенным ниже содержимым. Параметр `[*.cs]` означает, что это изменение применяется только к файлам кода на C# в проекте.
 
-```
+```EditorConfig
 # Top-most EditorConfig file
 root = true
 
@@ -107,7 +149,7 @@ indent_style = tab
 
 Чтобы найти файлы с расширением editorconfig в родительских каталогах, откройте командную строку и выполните следующую команду из корня диска, на котором находится проект:
 
-```
+```Shell
 dir .editorconfig /s
 ```
 

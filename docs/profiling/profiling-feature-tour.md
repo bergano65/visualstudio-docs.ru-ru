@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Обзор возможностей профилирования
 
@@ -147,7 +147,8 @@ Visual Studio предоставляет широкий набор средст�
 
 ![Средство "Обозреватель производительности"](../profiling/media/prof-tour-performance-explorer.png "Обозреватель производительности")
 
-## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?  
+## <a name="tool_support_info"></a>Какие средства следует использовать?  
+
 Ниже приведена таблица со списком различных средств, предлагаемых в Visual Studio, и различных типов проектов, в которых эти средства можно использовать.
   
 |Средство производительности|Классические приложения Windows|Универсальные приложения Windows или приложения Магазина Windows|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ Visual Studio предоставляет широкий набор средст�
 |[Временная шкала приложения](../profiling/application-timeline.md)|да|да|Нет|  
 |[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|да|  
 |[Обозреватель производительности](../profiling/performance-explorer.md)|да|Нет|да (нет для ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Только .NET Enterprise|Только .NET Enterprise|Только .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|Только .NET и Visual Studio Enterprise|Только .NET и Visual Studio Enterprise|Только .NET и Visual Studio Enterprise|
 |[Использование сети](../profiling/network-usage.md)|Нет|да|Нет| 
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Нет|да для HTML, нет для XAML|Нет|  
 |[Память JavaScript](../profiling/javascript-memory.md)|Нет|да для HTML, нет для XAML|Нет|  

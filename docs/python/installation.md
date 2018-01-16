@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8136bd3e694ae544b176b8da6bfc2b721eb0c89
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Установка поддержки Python в Visual Studio под управлением Windows
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/22/2017
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
 
-Для Visual Studio 2015 и более ранних версий требуется отдельно установить любой интерпретатор Python на ваш выбор (Python 3.5 или более ранней версии; версия 3.6 не поддерживается). Дополнительные сведения см. в статье [Среды Python](python-environments.md). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
+Для Visual Studio 2015 и более ранних версий требуется отдельно установить любой интерпретатор Python на ваш выбор (Python 3.5 или более ранней версии; версия 3.6 не поддерживается, и будет выводиться сообщение "Неподдерживаемая версия Python 3.6"). Дополнительные сведения см. в статье [Среды Python](python-environments.md). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
 
 Чтобы быстро проверить поддержку Python после установки, откройте интерактивное окно Python. Для этого нажмите клавиши Alt + I и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
 
@@ -60,10 +60,10 @@ ms.lasthandoff: 12/22/2017
 
     ![Параметры разработки Python в установщике Visual Studio](media/installation-python-options.png)
 
-    | Параметр | Описание: | 
+    | Параметр | Описание: |
     | --- | --- |
     | Дистрибутивы Python | Выберите любое сочетание 32- и 64-разрядных вариантов дистрибутивов Python 2, Python 3, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.) |
-    | Поддержка шаблонов Cookiecutter | Устанавливает графический пользовательский интерфейс Cookicutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. статью [Использование расширения Cookicutter](cookiecutter.md). |
+    | Поддержка шаблонов Cookiecutter | Устанавливает графический пользовательский интерфейс Cookiecutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. раздел [Использование расширения Cookiecutter](cookiecutter.md). |
     | Поддержка веб-приложений Python | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](template-web.md). |
     | Поддержка Интернета вещей для Python | Поддерживает разработку для Windows IoT Core с помощью Python. |
     | Встроенные средства разработки Python | Устанавливает компилятор C++ и другие компоненты, необходимые для разработки собственных расширений для Python. См. статью [Создание расширения C++ для Python](cpp-and-python.md). |
@@ -83,7 +83,7 @@ ms.lasthandoff: 12/22/2017
 
 1. Выберите **Языки программирования > Инструменты Python для Visual Studio** и нажмите **Далее**:
 
-    ![Выбор PTVS в установщике Visual Studio 2015](media/installation-vs2015.png)    
+    ![Выбор PTVS в установщике Visual Studio 2015](media/installation-vs2015.png)
 
 1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](python-environments.md#selecting-and-installing-python-interpreters). Если интерпретатор уже установлен, см. раздел [Создание окружения для существующего интерпретатора](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
@@ -114,11 +114,11 @@ ms.lasthandoff: 12/22/2017
 
 Здесь:
 
-- &lt;VS_ver&gt; принимает одно из этих значений:    
-    - 14.0 for Visual Studio 2015
-    - 12.0 for Visual Studio 2013
-    - 11.0 for Visual Studio 2012
-    - 10.0 for Visual Studio 2010
+- &lt;VS_ver&gt; принимает одно из этих значений:
+  - 14.0 for Visual Studio 2015
+  - 12.0 for Visual Studio 2013
+  - 11.0 for Visual Studio 2012
+  - 10.0 for Visual Studio 2010
 - &lt;PTVS_ver&gt; — это номер версии, например 2.2, 2.1, 2.0, 1.1, 1.5 или 1.0.
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Пользовательские установки (для версии 1.5 и более ранних)

@@ -1,7 +1,7 @@
 ---
-title: "Практическое руководство. Устранение неполадок, связанных с шаблонами, в Visual Studio | Документы Майкрософт"
+title: "Устранение неполадок, связанных с загрузкой шаблона проекта и шаблона элемента Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -11,60 +11,64 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d78554f39be1fdf21c5bbcb4d0abf5cf691fce9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Практическое руководство. Устранение неполадок, связанных с шаблонами
 
 Если шаблон не загружается в среде разработки, локализовать проблему можно несколькими способами.
 
-## <a name="validating-the-vstemplate-file"></a>Проверка файла VSTEMPLATE
+## <a name="validate-the-vstemplate-file"></a>Проверка файла VSTEMPLATE
 
-Если файл VSTEMPLATE в шаблоне не соответствует схеме шаблона [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], шаблон может не появиться в диалоговом окне **Новый проект**.
+Если файл VSTEMPLATE в шаблоне не соответствует схеме шаблона Visual Studio, шаблон может не отображаться в диалоговом окне **Новый проект**.
 
 ### <a name="to-validate-the-vstemplate-file"></a>Процедура проверки файла VSTEMPLATE
 
-1.  Найдите ZIP-файл, содержащий шаблон.  
+1. Найдите ZIP-файл, содержащий шаблон.
 
-2.  Извлеките ZIP-файл.  
+1. Извлеките ZIP-файл.
 
-3.  В меню **Файл** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] выберите пункт **Открыть** и затем пункт **Файл**.
+1. В Visual Studio в меню **Файл** выберите **Открыть** > **Файл**.
 
-4.  Выберите файл VSTEMPLATE для шаблона и нажмите кнопку **Открыть**.  
-  
-5.  Убедитесь, что XML-код в файле VSTEMPLATE соответствует схеме шаблона [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения о схеме VSTEMPLATE см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+1. Выберите файл VSTEMPLATE для шаблона и нажмите кнопку **Открыть**.
+
+1. Убедитесь, что XML-код в файле VSTEMPLATE соответствует схеме шаблона. Дополнительные сведения о схеме VSTEMPLATE см. в разделе [Справочник по схеме шаблонов](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
     > Чтобы обеспечить поддержку IntelliSense во время работы с файлом VSTEMPLATE, добавьте атрибут `xmlns` в элемент `VSTemplate` и присвойте ему значение http://schemas.microsoft.com/developer/vstemplate/2005.
 
-6.  Сохраните VSTEMPLATE-файл и закройте его.  
-  
-7.  Выберите включенные в шаблон файлы, щелкните правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в ZIP-файл.  
-  
-8.  Поместите новый ZIP-файл в тот же каталог, где находится старый ZIP-файл.  
-  
-9. Удалите извлеченные файлы шаблона и ZIP-файл старого шаблона.
+1. Сохраните VSTEMPLATE-файл и закройте его.
 
-## <a name="monitoring-the-event-log"></a>Мониторинг журнала событий
+1. Выберите включенные в шаблон файлы, щелкните правой кнопкой мыши и выберите пункты **Отправить** > **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в ZIP-файл.
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] регистрирует ошибки, обнаруженные при обработке ZIP-файлов шаблона. Если шаблон не отображается должным образом в диалоговом окне **Новый проект**, вы можете воспользоваться **средством просмотра событий** для устранения неполадки.
+1. Поместите новый ZIP-файл в тот же каталог, где находится старый ZIP-файл.
+
+1. Удалите извлеченные файлы шаблона и ZIP-файл старого шаблона.
+
+## <a name="monitor-the-event-log"></a>Мониторинг журнала событий
+
+Visual Studio регистрирует ошибки, обнаруживаемые при обработке ZIP-файлов шаблона. Если шаблон не отображается должным образом в диалоговом окне **Новый проект**, вы можете воспользоваться **средством просмотра событий** для устранения неполадки.
 
 ### <a name="to-locate-template-errors-in-event-viewer"></a>Поиск ошибок шаблона в средстве просмотра событий
 
-1.  В Windows нажмите кнопку **Пуск**, выберите **Панель управления**, дважды щелкните **Администрирование** и **Просмотр событий**.  
-  
-2.  В левой области щелкните **Приложение**.  
-  
-3.  Найдите события, у которых `Visual Studio - VsTemplate` имеет значение **Source**.  
-  
-4.  Дважды щелкните событие шаблона, чтобы просмотреть ошибку.
+1. В Windows в меню **Пуск** выберите **Средства администрирования Windows** > **Средство просмотра событий**.
+
+1. В левой области выберите **Журналы Windows** > **Приложения**.
+
+1. Найдите события, у которых `Visual Studio - VsTemplate` имеет значение **Source**.
+
+1. Чтобы просмотреть ошибку, дважды щелкните событие шаблона.
+
+## <a name="enable-diagnostic-logging"></a>Включение ведения журнала диагностики
+
+Чтобы включить ведение журнала диагностики для обнаружения шаблонов, выполните действия, описанные в разделе [Устранение неполадок обнаружения шаблонов (расширяемость)](../extensibility/troubleshooting-template-discovery.md).
 
 ## <a name="see-also"></a>См. также
 
-[Настройка шаблонов](../ide/customizing-project-and-item-templates.md)   
-[Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
-[Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+[Устранение неполадок обнаружения шаблонов (расширяемость)](../extensibility/troubleshooting-template-discovery.md)  
+[Настройка шаблонов](../ide/customizing-project-and-item-templates.md)  
+[Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)  
+[Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)

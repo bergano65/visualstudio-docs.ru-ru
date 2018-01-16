@@ -1,40 +1,36 @@
 ---
-title: "Преимущество Visual Studio Team Services"
+title: "Visual Studio Team Services для подписчиков Visual Studio"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Visual Studio Team Services (VSTS) benefit included in your Visual Studio subscription.
+Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 72579bda7fdaa16c40759f1bc20504f035ffa7c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: c2545855f7e5226a1a679d5d8b558f1964fe72b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="activating-the-visual-studio-team-services-vsts-benefit-in-visual-studio-subscriptions"></a>Активация преимущества Visual Studio Team Services (VSTS) в подписках Visual Studio
 
-Большинство подписок Visual Studio включает доступ к Visual Studio Team Services (VSTS).  Это отличное дополнение для вашей интегрированной среды разработки, предоставляющее бесплатные репозитории Git, гибкие инструменты планирования и размещаемые сборки для любого языка.  
+Если для входа в VSTS используется то же удостоверение, которое применялось для активации подписки Visual Studio, этот момент распознается автоматически. Это действует как для основного удостоверения, используемого для входа на портал подписчиков, так и для любого альтернативного удостоверения, настроенного для вашей подписки Visual Studio. VSTS поддерживает учетные записи Майкрософт (такие как @outlook.com) и рабочие или учебные учетные записи (использующие службу Azure Active Directory, управляемую организацией). В VSTS можно использовать и основное, и альтернативное удостоверения, а также присоединить любое количество учетных записей VSTS в качестве члена.
 
-Чтобы использовать VSTS, потребуется учетная запись. Вы можете войти с помощью существующей учетной записи или создать новую.  Создание учетной записи:
-1.  В нижней части плитки преимущества щелкните ссылку "Начало работы".   
+# <a name="vsts-features-included-by-visual-studio-subscription-level"></a>Компоненты VSTS, включенные в зависимости от уровня подписки Visual Studio
 
-    ![Плитка преимущества VSTS](_img\vs-vsts\vs-vsts-tile.png)
+Эти компоненты VSTS включены в состав следующих подписок: 
+- Visual Studio Enterprise: [Basic](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web), [управление пакетами](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- Visual Studio Professional: [Basic](https://www.visualstudio.com/team-services/compare-features/)
+- Платформы MSDN: [Basic](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- Visual Studio Test Professional: [Basic](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
-2.  Введите имя для сайта проекта VSTS.  
-3.  Выберите, что следует использовать для управления проектом — **Git** или **систему управления версиями Team Foundation (TFVC)**.  После выбора системы управления версиями для командного проекта перейти к другой системе будет нельзя, однако в одной коллекции командных проектов могут быть и командные проекты TFVC, и командные проекты Git.  Не уверены, какую систему использовать? 
-- Git — это децентрализованная система управления версиями. Каждый разработчик имеет на своем компьютере разработки копию всего репозитория исходного кода. Разработчики могут фиксировать каждый набор изменений на своем компьютере разработки и выполнять операции управления версиями, такие как просмотр журнала и сравнение, без подключения к сети.  [Дополнительные сведения о Git](https://www.visualstudio.com/en-us/docs/git/gitquickstart)
-- Система управления версиями Team Foundation (TFVC) — это централизованная система управления версиями. Как правило, члены команды имеют на своих компьютерах разработки только одну версию каждого файла. Исторические данные ведутся только на сервере. Ветви основаны на путях и создаются на сервере. [Дополнительные сведения](https://www.visualstudio.com/en-us/docs/tfvc/overview) о системе управления версиями Team Foundation.
- 
-4.  Щелкните **изменить сведения**, чтобы настроить параметры для имени проекта, способа организации работы (Agile, Scrum, CMMI), места размещения проектов, а также способа совместной работы.  Нажмите кнопку "Продолжить".
+Эти компоненты VSTS включены для всех платных подписок — [облачных и стандартных](https://www.visualstudio.com/vs/pricing/), а также для подписок, предлагаемых новичкам по [программе BizSpark](https://bizspark.microsoft.com/) и партнерам с [ компетенцией](https://partner.microsoft.com/membership/competencies) в Microsoft Partner Network. VSTS не входит в состав [Microsoft Action Pack](https://partner.microsoft.com/membership/action-pack) или в [программу Imagine](https://imagine.microsoft.com/) для студентов и учебных заведений, хотя каждый может бесплатно создать учетную запись VSTS с максимум пятью членами команды.
 
-    ![Сведения о проекте в рамках преимущества VSTS](_img\vs-vsts\vs-vsts-project-details.png)
+# <a name="create-your-vsts-account"></a>Создание учетной записи VSTS
 
-5.  Создание учетной записи занимает считанные секунды, после чего отображается страница VSTS для вашего первого проекта, где используется указанное вами имя.  Теперь вы готовы начать работу с Visual Studio Team Services.
+Чтобы использовать VSTS, необходимо создать учетную запись или быть добавленным в качестве члена в учетную запись, которая принадлежит другому пользователю. Создание учетной записи VSTS выполняется бесплатно, и можно создать несколько учетных записей VSTS. 
 
-Еще вы получите сообщение электронной почты, подтверждающее создание вашей учетной записи.  В нем также указан URL-адрес вашей учетной записи, адрес электронной почты для входа и предпочитаемый адрес.  
-
-![Приветственное сообщение для преимущества VSTS](_img\vs-vsts\vs-vsts-welcome.png)
+[Как зарегистрироваться в VSTS](https://docs.microsoft.com/vsts/accounts/index)

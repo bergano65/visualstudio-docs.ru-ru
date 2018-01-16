@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a7dac076dabaf0d44a1eda9c267e5c9b2eafe5a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 65f14d96bd495a1b3f8ca138176fbf805fdfeb67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Обзор Microsoft IntelliTest
 
@@ -56,7 +55,7 @@ IntelliTest позволяет определить поведение кода 
 
 Приведенный ниже пример создает два ограничения для параметра **value**, чтобы инструмент IntelliTest создал требуемую строку.
 
-```
+```csharp
 using System;
 using Microsoft.Pex.Framework; 
 using Microsoft.VisualStudio.TestTools.UnitTesting; 
@@ -84,10 +83,9 @@ public partial class HelloWorldTest {
 7. "Hello\0World!"
 8. "Hello World!"
 
-Перейдите [сюда](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest#Anchor_0), чтобы узнать, где сохраняются созданные тесты.
-Созданный тестовый кода должен содержать следующий тест:
+Сведения о сохранении созданных тестов см. в статье [Создание модульных тестов для кода с помощью IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md). Созданный тестовый кода должен содержать следующий тест:
 
-```
+```csharp
 [TestMethod]
 [PexGeneratedBy(typeof(global::HelloWorldTest))]
 [PexRaisedException(typeof(Exception))]
@@ -99,8 +97,7 @@ public void HelloWorldThrowsException167()
 
 Все просто!
 
-<a name="limitations"></a>
-## <a name="limitations"></a>Ограничения
+## <a name="limitations"></a> Ограничения
 
 Этот раздел описывает ограничения инструмента IntelliTest:
 
@@ -165,7 +162,7 @@ IntelliTest использует автоматический [поиск реш
 ## <a name="further-reading"></a>Дополнительные сведения
 
 * [Запись блога с общими сведениями](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/) на сайте MSDN.
-* [Создание модульных тестов для кода с помощью IntelliTest](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
+* [Создание модульных тестов для кода с помощью IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
 
 ## <a name="got-feedback"></a>Хотите оставить отзыв?
 

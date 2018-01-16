@@ -12,14 +12,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 Чтобы определить, какая часть кода проекта в действительности тестируется закодированными тестами, такими как модульные тесты, можно воспользоваться возможностью покрытия кода в Visual Studio. Для обеспечения эффективной защиты от ошибок тесты должны выполнять ("покрывать") большую часть кода.  
@@ -267,15 +268,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  После выполнения сборки результаты покрытия кода присоединяются к тестовому запуску и отображаются в сводке сборки.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Анализ покрытия кода в командной строке  
- Для выполнения тестов из командной строки используйте vstest.console.exe. Покрытие кода входит в возможности этой служебной программы. Дополнительные сведения см. в статье [Параметры командной строки для VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options).  
+
+Для выполнения тестов из командной строки используйте vstest.console.exe. Покрытие кода является параметром программы vstest.console.exe.
+
+1.  Запустите командную строку разработчика Visual Studio.
   
-1.  Запустите командную строку разработчика Visual Studio.  
+    В меню **Пуск** Windows выберите **Visual Studio 2017** > **Командная строка разработчика VS 2017**.  
   
-     В меню **Пуск** ОС Windows последовательно щелкните **Все программы**, **Microsoft Visual Studio**, **Инструменты Visual Studio**, **Командная строка разработчика**.  
+2.  Выполните следующую команду:
   
-2.  Выполните следующий файл.  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
 ## <a name="troubleshooting"></a>Устранение неполадок  
  Если вы не видите результаты покрытия кода, воспользуйтесь рекомендациями из статьи [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md) (Устранение неполадок с покрытием кода).  

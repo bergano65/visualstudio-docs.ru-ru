@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Работа с интерактивным окном Python
 
@@ -48,7 +48,7 @@ Visual Studio предоставляет ряд режимов REPL Python.
 
 ![Ссылка на интерактивное окно в окне Python Environments (Среды Python)](media/interactive-window-opening.png)
 
-Второй способ — ближе к концу в меню **Просмотр > Другие окна** находится команда **Интерактивное окно Python** для вашего окружения по умолчанию, а также команда для перехода в окно окружения:
+Второй способ — ближе к концу в меню **Просмотр > Другие окна** находится команда **Интерактивное окно Python** для вашей среды по умолчанию, а также команда для перехода в окно среды:
 
 ![Пункты меню интерактивного окна после выбора "Просмотр" > "Другие окна"](media/interactive-window-menu.png)
 

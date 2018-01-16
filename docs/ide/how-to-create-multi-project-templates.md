@@ -1,184 +1,179 @@
 ---
-title: "Практическое руководство. Создание многопроектных шаблонов | Документы Майкрософт"
+title: "Создание многопроектных шаблонов для Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual Studio templates, creating multi-project templates
-- project templates, creating multi-project templates
+- Visual Studio templates, creating multi-project
+- project templates, multi-project
 - multi-project templates
-ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac7701e3e4dc11bc5634436c3e6f831f6711e514
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: 86952d3b742abf3b73b22e17d695717ca8dac9bd
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
-Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. Когда в диалоговом окне **Новый проект** создается проект, основанный на многопроектном шаблоне, каждый проект в шаблоне добавляется в решение.  
 
- Многопроектный шаблон — это два или несколько шаблонов проектов с корневым шаблоном типа `ProjectGroup`.
+Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. Когда в диалоговом окне **Новый проект** создается проект, основанный на многопроектном шаблоне, каждый проект в шаблоне добавляется в решение.
 
- Многопроектные шаблоны также ведут себя иначе, чем обычные шаблоны. Многопроектные шаблоны имеют следующие уникальные характеристики:  
-  
--   Отдельным проектам в многопроектном шаблоне невозможно назначить имена через диалоговое окно **Новый проект**. Вместо этого нужно использовать атрибут `ProjectName` элемента `ProjectTemplateLink`, чтобы указать имя для каждого проекта. Дополнительные сведения см. в первом примере в следующем разделе.  
-  
--   Многопроектные шаблоны могут содержать проекты, написанные на разных языках, но сам шаблон можно поместить только в одну категорию с помощью элемента `ProjectType`.  
-  
-### <a name="to-create-a-multi-project-template"></a>Создание многопроектного шаблона  
-  
-1.  Создайте проекты для включения в многопроектный шаблон.
-    1.  Создайте проект.  
-  
-    > [!NOTE]
-    >  Называя проект, который будет источником для шаблонов, используйте только допустимые символы идентификаторов. Шаблон, экспортированный из проекта, имя которого содержит недопустимые символы, может привести к ошибкам компиляции в будущих проектах, основанных на шаблоне. Дополнительные сведения о допустимых символах идентификаторов см. в статье [Имена объявленных элементов](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
-  
-    2.  Внесите в проект все необходимые изменения, пока он не будет готов к сохранению в качестве шаблона.  
-  
-    3.  По мере необходимости отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения о замене параметров см. в разделе [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).  
-  
-    4.  В меню **Проект** выберите команду **Экспорт шаблона**. Откроется мастер **экспорта шаблонов**.  
-  
-    5.  Щелкните **Шаблон проекта**.  
-  
-    6.  При наличии нескольких проектов в текущем решении выберите проекты, которые требуется экспортировать в шаблон.  
-  
-    7.  Нажмите кнопку **Далее**.  
-  
-    8.  Выберите значок и рисунок предварительного просмотра для создаваемого шаблона. Они будут отображаться в диалоговом окне **Новый проект**.  
-  
-    9. Введите имя и описание шаблона.  
-  
-    10. Нажмите кнопку **Готово**. Проект будет экспортирован в ZIP-файл и помещен в указанное расположение вывода, а также (если установлен соответствующий флажок) импортирован в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-2.  Извлеките файл VSTEMPLATE из созданного ZIP-файла в каталог, в котором находится файл проекта, используемый для экспорта шаблона.
+Многопроектный шаблон содержит два или несколько шаблонов проектов с корневым шаблоном типа `ProjectGroup`.
 
-3.  Создайте корневой VSTEMPLATE-файл, который будет содержать метаданные для многопроектного шаблона. Дополнительные сведения см. в первом примере в следующем разделе.  
-  
-4.  Выберите включаемые в шаблон файлы и папки, щелкните выбранное правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Файлы и папки сжимаются в ZIP-файл.  
-  
-> [Примечание.] Многопроектный шаблон должен включать следующие элементы, сжатые в ZIP-файл:  
->   
-> -   Корневой VSTEMPLATE-файл для всего многопроектного шаблона. Этот корневой VSTEMPLATE-файл содержит метаданные, отображаемые в диалоговом окне **Новый проект**, а также указывает место для поиска VSTEMPLATE-файлов для проектов в этом шаблоне. Этот файл должен находиться в корне ZIP-файла.  
->   
-> -   Одна или несколько папок, содержащих файлы, которые нужны для завершения шаблона проекта. Сюда входят все файлы кода для проекта, а также VSTEMPLATE-файл.  
->   
-> Например, ZIP-файл многопроектного шаблона с двумя проектами может иметь следующие файлы и каталоги:  
->   
->  MultiProjectTemplate.vstemplate  
->   
->  \Project1\Project1.vstemplate  
->   
->  \Project1\Project1.vbproj  
->   
->  \Project1\Class.vb  
->   
->  \Project2\Project2.vstemplate  
->   
->  \Project2\Project2.vbproj  
->   
->  \Project2\Class.vb  
->   
->  Корневой VSTEMPLATE-файл многопроектного шаблона отличается от однопроектного шаблона следующим образом:  
->   
-> -   Атрибут `Type` элемента `VSTemplate` содержит значение `ProjectGroup`. Пример:  
->   
->     ```  
->     <VSTemplate Version="2.0.0" Type="ProjectGroup"  
->         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
->     ```  
->   
-> -   Элемент `TemplateContent` содержит элемент `ProjectCollection` с одним или несколькими элементами `ProjectTemplateLink`, которые определяют пути к файлам VSTEMPLATE для включенных проектов. Пример:  
->   
->     ```  
->     <TemplateContent>  
->         <ProjectCollection>  
->             <ProjectTemplateLink>  
->                 Project1\Project1.vstemplate  
->             </ProjectTemplateLink>  
->             <ProjectTemplateLink>  
->                 Project2\Project2.vstemplate  
->             </ProjectTemplateLink>  
->         </ProjectCollection>  
->     </TemplateContent>  
->     ```  
->   
-  
-5.  Поместите ZIP-файл шаблона в каталог шаблонов проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ProjectTemplates\\.  
-  
-## <a name="example"></a>Пример  
- В этом примере показан простой корневой VSTEMPLATE-файл, включающий несколько проектов. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту. Если атрибут `ProjectName` не существует, имя VSTEMPLATE-файла используется в качестве имени проекта.  
-  
-```  
-<VSTemplate Version="2.0.0" Type="ProjectGroup"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-Project Template Sample</Name>  
-        <Description>An example of a multi-project template</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink ProjectName="My Windows Application">  
-                WindowsApp\MyTemplate.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink ProjectName="My Class Library">  
-                ClassLib\MyTemplate.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="example"></a>Пример  
- В этом примере используется элемент `SolutionFolder`, чтобы разделить проекты на две группы — `Math Classes` и `Graphics Classes`. Шаблон содержит четыре проекта, два из которых размещаются в отдельных папках решения.  
-  
-```  
-<VSTemplate Version="2.0.0" Type="ProjectGroup"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-Project Template Sample</Name>  
-        <Description>An example of a multi-project template</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <SolutionFolder Name="Math Classes">  
-                <ProjectTemplateLink ProjectName="MathClassLib1">  
-                    MathClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="MathClassLib2">  
-                    MathClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-            <SolutionFolder Name="Graphics Classes">  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib1">  
-                    GraphicsClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib2">  
-                    GraphicsClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-        </ProjectCollection>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)   
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Элемент SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
- [Элемент ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+Многопроектные шаблоны ведут себя иначе, чем шаблоны для одного проекта. Они имеют следующие уникальные характеристики:
+
+- Отдельным проектам в многопроектном шаблоне невозможно назначить имена через диалоговое окно **Новый проект**. Вместо этого нужно использовать атрибут `ProjectName` элемента `ProjectTemplateLink` в VSTEMPLATE-файле, чтобы указать имя для каждого проекта.
+
+- Многопроектные шаблоны могут содержать проекты для разных языков, но сам шаблон можно поместить только в одну категорию. Категория шаблона указывается в элементе `ProjectType` VSTEMPLATE-файла.
+
+Многопроектный шаблон должен включать следующие элементы, сжатые в ZIP-файл:
+
+- Корневой VSTEMPLATE-файл для всего многопроектного шаблона. Этот корневой VSTEMPLATE-файл содержит метаданные, отображаемые в диалоговом окне **Новый проект**, а также указывает место для поиска VSTEMPLATE-файлов для проектов в этом шаблоне. Этот файл должен находиться в корне ZIP-файла.
+
+- Две или более папок, содержащих файлы, которые нужны для завершения шаблона проекта. Сюда входят все файлы кода для проекта, а также VSTEMPLATE-файл.
+
+Например, ZIP-файл многопроектного шаблона с двумя проектами может иметь следующие файлы и каталоги:
+
+- MultiProjectTemplate.vstemplate
+- \Project1\Project1.vstemplate
+- \Project1\Project1.vbproj
+- \Project1\Class.vb
+- \Project2\Project2.vstemplate
+- \Project2\Project2.vbproj
+- \Project2\Class.vb
+
+Корневой VSTEMPLATE-файл многопроектного шаблона отличается от однопроектного шаблона следующим образом:
+
+- Атрибут `Type` элемента `VSTemplate` содержит значение `ProjectGroup`, а не `Project`. Пример:
+
+    ```xml
+    <VSTemplate Version="2.0.0" Type="ProjectGroup"
+        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    ```
+
+- Элемент `TemplateContent` содержит элемент `ProjectCollection` с одним или несколькими элементами `ProjectTemplateLink`, которые определяют пути к файлам VSTEMPLATE для включенных проектов. Пример:
+
+    ```xml
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink>
+                Project1\Project1.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink>
+                Project2\Project2.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+    ```
+
+## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Создание многопроектного шаблона из существующего решения
+
+1. Создайте решения и добавьте два или более проектов.
+
+1. Настройте проекты для экспорта в шаблон.
+
+1. В меню **Проект** выберите пункт **Экспорт шаблона**.
+
+   Открывается **мастер экспорта шаблонов**.
+
+1. На странице **Выбор типа шаблона** выберите **Шаблон проекта**. Выберите проект, который необходимо экспортировать в шаблон, а затем нажмите кнопку **Далее**.
+
+1. На странице **Выбор параметров шаблона** введите имя шаблона и необязательное описание, значок и рисунок предварительного просмотра для шаблона. Нажмите кнопку **Готово**.
+
+   Проект будет экспортирован в ZIP-файл и помещен в указанное выходное расположение.
+
+   > [!NOTE]
+   > Каждый проект необходимо отдельно экспортировать в шаблон, поэтому повторите предыдущие шаги для каждого проекта в решении.
+
+1. Создайте каталог для шаблона, содержащий вложенный каталог для каждого проекта.
+
+1. Извлеките содержимое ZIP-файла каждого проекта в соответствующий созданный вложенный каталог.
+
+1. В базовом каталоге создайте XML-файл с расширением **VSTEMPLATE**. Этот файл содержит метаданные для многопроектного шаблона. Пример структуры файла приведен ниже. Укажите относительный путь к VSTEMPLATE-файлу каждого проекта.
+
+1. Выберите базовый каталог и в контекстном меню выберите пункты **Отправить** > **Сжатая ZIP-папка**.
+
+   Файлы и папки сжимаются в ZIP-файл.
+
+1. Скопируйте ZIP-файл в пользовательский каталог шаблона проекта. По умолчанию это каталог %USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ProjectTemplates.
+
+1. В Visual Studio откройте диалоговое окно **Новый проект** и убедитесь, что в нем отображается шаблон.
+
+## <a name="two-project-example"></a>Пример для двух проектов
+
+В этом примере показан простой корневой VSTEMPLATE-файл, включающий несколько проектов. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемент `ProjectTemplateLink` указывает имя, которое задано проекту.
+
+> [!TIP]
+> Если атрибут `ProjectName` не указан, в качестве имени проекта используется имя VSTEMPLATE-файла.
+
+```xml
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-Project Template Sample</Name>
+        <Description>An example of a multi-project template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="My Windows Application">
+                WindowsApp\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="My Class Library">
+                ClassLib\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="example-with-solution-folders"></a>Пример с папками решений
+
+В этом примере используется элемент `SolutionFolder`, чтобы разделить проекты на две группы — `Math Classes` и `Graphics Classes`. Шаблон содержит четыре проекта, два из которых размещаются в отдельных папках решения.
+
+```xml
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-Project Template Sample</Name>
+        <Description>An example of a multi-project template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="Math Classes">
+                <ProjectTemplateLink ProjectName="MathClassLib1">
+                    MathClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="MathClassLib2">
+                    MathClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+            <SolutionFolder Name="Graphics Classes">
+                <ProjectTemplateLink ProjectName="GraphicsClassLib1">
+                    GraphicsClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="GraphicsClassLib2">
+                    GraphicsClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>См. также
+
+[Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)  
+[Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)  
+[Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)  
+[Элемент SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
+[Элемент ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
