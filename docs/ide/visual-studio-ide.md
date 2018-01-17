@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Обзор интегрированной среды разработки Visual Studio
 
@@ -76,7 +76,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ## <a name="install-the-visual-studio-ide"></a>Установка интегрированной среды разработки Visual Studio
 
-Чтобы приступить к работе, скачайте и установите Visual Studio. [Здесь](https://www.visualstudio.com/vs/visual-studio-2017/) вы можете скачать версию Visual Studio 2017.
+Чтобы приступить к работе, скачайте и установите Visual Studio. [Здесь](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) вы можете скачать версию Visual Studio 2017.
 
 Сегодня Visual Studio значительно компактнее и проще в использовании. Этот модульный установщик позволяет выбрать и установить *рабочие нагрузки*, которые являются группами функций, необходимыми для предпочитаемого языка программирования или платформы. Этот подход обеспечивает меньший объем установки Visual Studio, а значит установка и обновления происходят быстрее.
 

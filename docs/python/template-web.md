@@ -12,12 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-web-project-templates"></a>Шаблоны веб-проектов Python
 
@@ -31,7 +33,7 @@ Visual Studio не включает в себя сами эти платформ
 
 Каждый шаблон (Bottle, Flask и Django) имеет начальный сайт с несколькими страницами и статическими файлами. Этот код позволяет локально выполнить запуск и отладку сервера (некоторые параметры для этого кода необходимо получить из среды) и развернуть проект в Microsoft Azure (где необходимо указать объект [приложения WSGI](http://www.python.org/dev/peps/pep-3333/)).
 
-При создании проекта из шаблона для конкретной платформы отображается диалоговое окно для установки необходимых пакетов с помощью pip. Чтобы при публикации веб-сайта были настроены правильные зависимости, для веб-проектов рекомендуется использовать [виртуальную среду](python-environments.md#virtual-environments).
+При создании проекта из шаблона для конкретной платформы отображается диалоговое окно для установки необходимых пакетов с помощью pip. Чтобы при публикации веб-сайта были настроены правильные зависимости, для веб-проектов рекомендуется использовать [виртуальную среду](python-environments.md#global-and-virtual-environments).
 
 ![Диалоговое окно, с помощью которого можно установить необходимые пакеты для шаблона проекта](media/template-web-requirements-txt-wizard.png)
 

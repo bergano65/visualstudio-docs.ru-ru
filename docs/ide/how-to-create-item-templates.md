@@ -11,11 +11,11 @@ helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 
@@ -62,8 +62,6 @@ ms.lasthandoff: 01/05/2018
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
-
-   Для проектов Windows 8.1 на C# в VSTEMPLATE-файле добавьте следующий XML-код между открывающим и закрывающим тегами `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Для проектов Windows 8.1 на C++ используйте значение `WinRT-Native-6.3`. Для проектов Windows 10 и других типов проектов см. раздел [Элемент TemplateGroupID (расширяемость)](../extensibility/templategroupid-element-visual-studio-templates.md). Полный справочник по VSTEMPLATE-файлу см. в разделе [Справочник по схеме шаблонов (расширяемость)](../extensibility/visual-studio-template-schema-reference.md).
 
 1. Сохраните VSTEMPLATE-файл в Visual Studio и закройте его.
 

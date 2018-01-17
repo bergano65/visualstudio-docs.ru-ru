@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Практическое руководство. Устранение неполадок, связанных с шаблонами
 
@@ -47,20 +47,6 @@ ms.lasthandoff: 01/05/2018
 1. Поместите новый ZIP-файл в тот же каталог, где находится старый ZIP-файл.
 
 1. Удалите извлеченные файлы шаблона и ZIP-файл старого шаблона.
-
-## <a name="monitor-the-event-log"></a>Мониторинг журнала событий
-
-Visual Studio регистрирует ошибки, обнаруживаемые при обработке ZIP-файлов шаблона. Если шаблон не отображается должным образом в диалоговом окне **Новый проект**, вы можете воспользоваться **средством просмотра событий** для устранения неполадки.
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>Поиск ошибок шаблона в средстве просмотра событий
-
-1. В Windows в меню **Пуск** выберите **Средства администрирования Windows** > **Средство просмотра событий**.
-
-1. В левой области выберите **Журналы Windows** > **Приложения**.
-
-1. Найдите события, у которых `Visual Studio - VsTemplate` имеет значение **Source**.
-
-1. Чтобы просмотреть ошибку, дважды щелкните событие шаблона.
 
 ## <a name="enable-diagnostic-logging"></a>Включение ведения журнала диагностики
 

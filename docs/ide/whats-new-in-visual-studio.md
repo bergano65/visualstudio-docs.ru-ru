@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Обновлено для [выпуска 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -127,7 +127,7 @@ Visual Studio перемещает свои расширения, а также 
 *   Преобразование if-to-switch
 *   Удаление неиспользуемой переменной
 
-Дополнительные сведения см. в разделе [Распространенные быстрые действия](../ide/quick-actions.md#common-quick-actions).
+Дополнительные сведения см. в разделе [Распространенные быстрые действия](../ide/common-quick-actions.md).
 
 #### <a name="interact-with-git"></a>Взаимодействие с Git
 Если вы работаете с проектом в Visual Studio, вы можете настроить код, а также быстро зафиксировать и опубликовать его в службе Git. Вы также можете управлять репозиториями Git, используя пункты меню в правом нижнем углу IDE.

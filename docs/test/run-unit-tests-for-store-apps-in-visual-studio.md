@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: uwp
 author: gewarren
-ms.openlocfilehash: b1cc13dfd81876f647178ebf3702c778cabb533e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Выполнение модульных тестов для приложений универсальной платформы Windows в Visual Studio
 В этом разделе описывается выполнение модульных тестов с помощью обозревателя тестов в Microsoft Visual Studio.  
@@ -55,7 +55,7 @@ ms.lasthandoff: 01/09/2018
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Запуск тестов в обозревателе тестов  
  При построении проекта тестирования тесты появляются в Обозревателе тестов. Если Обозреватель тестов не виден, выберите **Тест** в меню Visual Studio, выберите **Windows**, затем выберите **Обозреватель тестов**.  
   
- ![Обозреватель модульных тестов](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Обозреватель модульных тестов](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  При выполнении, написании и повторном запуске тестов обозреватель тестов отображает результаты в группах по умолчанию **Неудачные тесты**, **Пройденные тесты**, **Пропущенные тесты** и **Не запущенные тесты**. Можно изменить способ группировки тестов обозревателем тестов.  
   
