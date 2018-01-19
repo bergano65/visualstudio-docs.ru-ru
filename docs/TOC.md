@@ -84,6 +84,13 @@
 #### [Определение целевой версии .NET Framework](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Обзор настройки для различных версий](ide/visual-studio-multi-targeting-overview.md)
 ##### [Определение целевой версии .NET Framework](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### Создание шаблонов проектов и элементов
+##### [Создание шаблонов проектов](ide/how-to-create-project-templates.md)
+##### [Создание многопроектных шаблонов](ide/how-to-create-multi-project-templates.md)
+##### [Создание шаблонов элементов](ide/how-to-create-item-templates.md)
+##### [Создание многофайловых шаблонов элементов](ide/how-to-create-multi-file-item-templates.md)
+##### [Создание веб-шаблонов](ide/how-to-manually-create-web-templates.md)
+##### [Устранение неполадок, связанных с шаблонами](ide/how-to-troubleshoot-templates.md)
 #### [Поддержка 64-разрядных сред IDE Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Разработка без проектов и решений ("Открытая папка")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Написание кода в редакторе](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [Кодировки и разрывы строк](ide/encodings-and-line-breaks.md)
 ##### [Сохранение и открытие файлов с использованием определенной кодировки](ide/how-to-save-and-open-files-with-encoding.md)
 #### [Структура](ide/outlining.md)
-#### [Автоматическое создание кода](ide/code-generation-in-visual-studio.md)
+#### [Создание и исправление кода](ide/code-generation-in-visual-studio.md)
 ##### [Фрагменты кода](ide/code-snippets.md)
 ###### Использование фрагментов кода
 ####### [Фрагменты кода Visual C#](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [Настройка шаблонов проектов и элементов](ide/customizing-project-and-item-templates.md)
 #### [Обновление существующих шаблонов](ide/how-to-update-existing-templates.md)
 #### [Замена параметров в шаблоне](ide/how-to-substitute-parameters-in-a-template.md)
-### Создание шаблонов проектов и элементов
-#### [Создание шаблонов проектов](ide/how-to-create-project-templates.md)
-#### [Создание многопроектных шаблонов](ide/how-to-create-multi-project-templates.md)
-#### [Создание шаблонов элементов](ide/how-to-create-item-templates.md)
-#### [Создание многофайловых шаблонов элементов](ide/how-to-create-multi-file-item-templates.md)
-#### [Создание веб-шаблонов](ide/how-to-manually-create-web-templates.md)
+### Шаблоны проектов и элементов
 ### [Параметры шаблона](ide/template-parameters.md)
-### [Справочник по схемам шаблонов (расширяемость)](extensibility/visual-studio-template-schema-reference.md)
-### [Устранение неполадок, связанных с шаблонами](ide/how-to-troubleshoot-templates.md)
+### [Справочник по схемам шаблонов (расширяемость)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## Общие элементы пользовательского интерфейса
 ### [Иерархия вызовов](ide/reference/call-hierarchy.md)
 ### [Просмотр изменений](ide/preview-changes.md)
