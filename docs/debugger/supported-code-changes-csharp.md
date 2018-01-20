@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Поддерживаемые изменения кода (C# и Visual Basic)
 Операция "Изменить и продолжить" обрабатывает большинство типов изменений, вносимых в код внутри тела метода. Однако большинство изменений за пределами тела метода и некоторые изменения в теле метода во время отладки применены быть не могут. Чтобы такие неподдерживаемые изменения вступили в силу, необходимо остановить отладку и заново запустить ее для обновленной версии кода.
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="unsupported-app-scenarios"></a>Приложение неподдерживаемые сценарии
 
-Неподдерживаемые приложений и платформ включают ASP.NET 5, эмулятор Silverlight 5, Windows Phone и Windows Phone и Windows 8.1.
+Неподдерживаемые приложений и платформ включают ASP.NET 5, Silverlight 5 и Windows 8.1.
 
 > [!NOTE]
 > Приложения, которые поддерживаются включить UWP в Windows 10 и x86- и x64 приложений, предназначенных для .NET Framework 4.6 рабочего стола или более поздней версии, (платформа .NET Framework — только версия рабочего стола).

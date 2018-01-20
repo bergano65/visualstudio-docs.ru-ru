@@ -25,17 +25,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: b21dcdefde586b4a2724c8c0a659462b5f0898f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Параметры проекта для конфигураций отладки C#
 Можно изменить параметры проекта для конфигурации отладки C# в **страницы свойств** окна, как описано в [конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком **страницы свойств** окна.  
   
 > [!WARNING]
->  Этот раздел не распространяется на приложения UWP и Windows 8.1. В разделе [запуск сеанса отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  Этот раздел не распространяется на приложения универсальной платформы Windows. В разделе [запуск сеанса отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ##  <a name="BKMK_Debug_tab"></a>Вкладки отладчика  
   

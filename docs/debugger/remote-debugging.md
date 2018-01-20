@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Вы можете отладить приложение Visual Studio, развернутое на другом компьютере. Для этого используется удаленный отладчик Visual Studio.
@@ -34,12 +34,11 @@ ms.lasthandoff: 01/10/2018
 
 |Сценарий|Ссылка|
 |-|-|-|
-|ASP.NET|[Удаленная отладка ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) или [удаленная отладка ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# или Visual Basic|[Удаленная отладка проект C# или Visual Basic](../debugger/remote-debugging-csharp.md)|
-|C++|[Удаленная отладка проекта C++](../debugger/remote-debugging-cpp.md)|
+|Azure|[Отладка ASP.NET в службе приложений Azure (отладчик моментальных снимков)](../debugger/debug-live-azure-applications.md), [удаленная отладки ASP.NET в Azure](../debugger/remote-debugging-azure.md), или [отлаживать приложение Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|ASP.NET|[Удаленная отладки ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) или [удаленной отладки ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|C# или Visual Basic|[Удаленная отладка проекта C# или Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C++|[Удаленная отладка проекта на C++](../debugger/remote-debugging-cpp.md)|
 |Универсальные приложения Windows (UWP)|[Запускайте приложения UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md) и [отладки пакета установленного приложения](../debugger/debug-installed-app-package.md)|
-|Azure|[Удаленной отладки ASP.NET в Azure](remote-debugging-azure.md)|
-|Azure Service Fabric|[Отладка удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Если вы только хотите загрузить и установить удаленный отладчик и не нужны дополнительные инструкции, для вашего сценария, следуйте инструкциям в этой статье.
   
@@ -53,9 +52,9 @@ ms.lasthandoff: 01/10/2018
 
 1. Найти **msvsmon.exe** в каталоге, соответствующих используемой версии Visual Studio. Для Visual Studio Enterprise 2017 г.:
 
-      **Программа файлы (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
-      **Программа файлы (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 
 2. Общий ресурс **удаленный отладчик** папку на компьютере Visual Studio.
 

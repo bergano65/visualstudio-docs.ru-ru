@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Использование файлов дампа с помощью Visual Studio
 Файлы дампа с кучами или без куч; Создание файла дампа; Открытие файла дампа; Поиск двоичных файлов, в PDB-файл и исходного файла для файла дампа.
@@ -56,11 +56,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual Studio поддерживает отладку файлов дампа, создаваемых приложениями в машинных кодах на устройствах ARM. Visual Studio также поддерживает отладку файлов дампа, создаваемых управляемыми приложениями на устройствах ARM, но только в отладчике машинного кода.  
   
--   Для отладки [режима ядра](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) дампа файлов в Visual Studio 2013, загрузите [Windows 8.1 версией из средства отладки для Windows](http://msdn.microsoft.com/windows/hardware/gg463009). В разделе [ядра отладки в Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Для отладки [режима ядра](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) файлы дампа, загрузите средства отладки для Windows, которая является частью [набор драйверов Windows (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   Visual Studio не удается выполнить отладку файлов дампа, сохраненных в старом формате, известном как [дампа пользовательского режима полного](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Обратите внимание, что "полный дамп в режиме пользователя" и "дамп с кучей" — это не одно и то же.  
   
--   Чтобы отлаживать, используя [SOS.dll (расширение отладки SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) в Visual Studio необходимо установить средства отладки для Windows, входит в набор драйверов Windows (WDK). В разделе [Предварительная версия Windows 8.1: скачивание комплектов, bits и средств](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   Чтобы отлаживать, используя [SOS.dll (расширение отладки SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) в Visual Studio необходимо установить средства отладки для Windows, которая является частью [набор драйверов Windows (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Создание файла дампа  
  Создание файла дампа с использованием Visual Studio:  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>Отладка приложений
 В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 |||  
 |-|-|  
-|[Отладка UWP и приложений Windows 8.1](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Описание способов отладки приложения UWP.|  
+|[Отладка приложений UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Описание способов отладки приложения UWP.|  
 |[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Способы отладки управляемого кода (Visual C#, Visual Basic и F3).|  
 |[Отладка машинного кода](../debugger/debugging-native-code.md)|Способы отладки разных приложений с машинным кодом C++.|  
 |[Отладка кода GPU](../debugger/debugging-gpu-code.md)|Способы отладки кода C++, выполняющегося в GPU.|  

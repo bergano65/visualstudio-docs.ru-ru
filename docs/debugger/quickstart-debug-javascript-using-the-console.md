@@ -1,5 +1,5 @@
 ---
-title: "Краткое руководство: Отладка JavaScript с помощью консоли | Документы Microsoft"
+title: "Отладка JavaScript с помощью консоли | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,31 +8,25 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.JavaScriptConsole
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>Краткое руководство. Отладка JavaScript с помощью консоли
-![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Отладка JavaScript с помощью консоли в Visual Studio
   
- Окно консоли JavaScript для взаимодействия и отладки приложений UWP, созданных с использованием JavaScript. Эти возможности поддерживаются для приложений UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] приложения, приложения Windows Phone и приложений, созданных с помощью средств Visual Studio для Apache Cordova. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Окно консоли JavaScript для взаимодействия и отладки приложений UWP, созданных с использованием JavaScript. Эти возможности поддерживаются для приложений UWP и приложений, созданных с помощью средств Visual Studio для Apache Cordova. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  Окно консоли JavaScript предоставляет вам следующие возможности:  
   
@@ -48,36 +42,26 @@ ms.lasthandoff: 01/10/2018
   
 -   Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md) .  
   
- В этом разделе.  
-  
--   [Отладка с использованием окна консоли JavaScript](#InteractiveConsole)  
-  
--   [Интерактивная отладка и режим приостановки выполнения](#InteractiveDebuggingBreakMode)  
-  
--   [Однострочный и многострочный режим в окне консоли JavaScript](#SinglelineMultilineMode)  
-  
--   [Переключение контекста выполнения скрипта](#Switching)  
-  
 > [!TIP]
->  Если окно консоли JavaScript закрыто, выберите **Отладка**>**Windows** > **Консоль JavaScript** , чтобы снова открыть его. Окно отображается только во время сеанса отладки скрипта.  
+>  Если окно консоли JavaScript закрыто, выберите **отладки**> **Windows** > **консоли JavaScript** Чтобы снова открыть его. Окно отображается только во время сеанса отладки скрипта.  
   
  С помощью окна консоли JavaScript можно взаимодействовать с приложением, не останавливая и не перезапуская отладчик. Дополнительные сведения см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md). Сведения о других функциях отладки JavaScript, таких как использование проводника DOM и задание точек останова, разделе [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Отладка с использованием окна консоли JavaScript  
  Далее приведена процедура создания приложения `FlipView` и инструкции по интерактивной отладке ошибки кодирования JavaScript.  
   
-> [!CAUTION]
+> [!NOTE]
 >  В примере приложения представляет собой приложение UWP. Однако описываемые здесь функции консоли также применимы к приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Отладка кода JavaScript в приложении FlipView  
   
 1.  Создайте новое решение в Visual Studio, выбрав **Файл** > **Новый проект**.  
   
-2.  Выберите **JavaScript** > **Приложения Магазина**, выберите **Приложения Windows** или **Приложения Windows Phone**и нажмите кнопку **Пустое приложение**.  
+2.  Выберите **JavaScript** > **универсальное приложение для Windows**, а затем выберите **WinJS приложения**.  
   
 3.  Введите имя проекта, например `FlipViewApp`, и нажмите кнопку **ОК** , чтобы создать приложение.  
   
-4.  В элементе BODY файла Default.HTML замените существующий код HTML следующим кодом:  
+4.  В элементе BODY index.html замените существующий код HTML следующим кодом:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -133,9 +117,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
         };  
   
@@ -153,7 +137,7 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-7.  Если цель отладки еще не выбрана, выберите **Имитатор** или — для Windows Phone — **Emulator 8.1 WVGA 4 inch 512MB** в раскрывающемся списке рядом с кнопкой **Устройство** на панели инструментов **Отладка** .  
+7.  Если цель отладки еще не выбрана, выберите **локального компьютера** из раскрывающегося списка рядом с **устройства** кнопку **отладки** инструментов:  
   
      ![Список выбора отладки целевой](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -161,7 +145,7 @@ ms.lasthandoff: 01/10/2018
   
      Приложение выполняется, но изображения отсутствуют. Ошибки APPHOST в окне консоли JavaScript указывают на отсутствие изображений.  
   
-9. С `FlipView` приложение, работающее в симуляторе или эмуляторе телефона введите `Data.items` в строке ввода окна консоли (рядом с полем «>>» символов) и нажмите клавишу ВВОД.  
+9. С `FlipView` приложение, работающее, тип `Data.items` в строке ввода окна консоли (рядом с полем «>>» символов) и нажмите клавишу ВВОД.  
   
      В окне консоли отображается визуализатор для объекта `items` . Это означает, что объект `items` создан и доступен в текущем контексте скрипта. В окне консоли можно щелкнуть узлы объекта, чтобы просмотреть значения свойств (или использовать клавиши со стрелками). Если щелкнуть объект `items._data` , как показано на рисунке, можно увидеть, что ссылки на источник изображений являются неправильными, как и ожидалось. Изображения по умолчанию (logo.png) все еще присутствуют в объекте, а отсутствующие изображения перемешаны с нужными.  
   
@@ -174,9 +158,9 @@ ms.lasthandoff: 01/10/2018
 11. Чтобы устранить эту проблему в интерактивном режиме без остановки сеанса отладки, откройте файл default.js и выберите этот код функции `updateImages` :  
   
     ```javascript  
-    pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
      Скопируйте и вставьте этот код в строку ввода консоли JavaScript.  
@@ -187,9 +171,9 @@ ms.lasthandoff: 01/10/2018
 12. Исправьте вызовы функции `push` в командной строке, заменив `pages.push` на `Data.items.setAt`. Исправленный код должен выглядеть следующим образом.  
   
     ```javascript  
-    Data.items.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    Data.items.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    Data.items.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    Data.items.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    Data.items.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    Data.items.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
     > [!TIP]
@@ -201,7 +185,7 @@ ms.lasthandoff: 01/10/2018
   
 15. Введите в командной строке `Data.items.length = 3` и нажмите клавишу ВВОД. Это позволяет удалить лишние элементы данных.  
   
-16. Проверьте имитатор или эмулятор телефона еще раз, и вы увидите, что необходимые изображения теперь отображаются на соответствующих страницах `FlipView` .  
+16. Проверьте приложение еще раз, и вы увидите, что необходимые изображения теперь отображаются на соответствующих `FlipView` страниц.  
   
 17. В обозревателе DOM отображается обновленный элемент DIV, и можно перейти в поддерево, чтобы найти нужные элементы IMG.  
   
@@ -218,7 +202,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  В файле default.html приложения `FlipView` , созданного ранее, откройте контекстное меню функции `updateImages()` , а затем выберите **Точка останова** > **Вставить точку останова**.  
   
-2.  Выберите **Локальный компьютер** или **Emulator 8.1 WVGA, 4 дюйма, 512 МБ** в раскрывающемся списке рядом с кнопкой **Начать отладку** на панели инструментов **Отладка** .  
+2.  Выберите **локального компьютера** в раскрывающемся списке рядом с **начать отладку** кнопку **отладки** инструментов.  
   
 3.  Выберите **Отладка** > **Начать отладку**или нажмите клавишу F5.  
   
@@ -239,7 +223,7 @@ ms.lasthandoff: 01/10/2018
 6.  Скопируйте одну строку функции из окна вывода в строку ввода и измените значение индекса на 3:  
   
     ```javascript  
-    pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.setAt(3, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
     ```  
   
 7.  Нажмите клавишу ВВОД, чтобы выполнить эту строку кода.  
@@ -264,16 +248,7 @@ ms.lasthandoff: 01/10/2018
   
  ![Целевой выбор в окне консоли JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")  
   
- Вы также можете переключить контекст выполнения с помощью команды `cd` , однако вы должны знать имя другого контекста выполнения, а используемая вами ссылка должна находиться в области. Список **Целевой объект** предоставляет более удобный доступ к другим контекстам выполнения.  
-  
-##  <a name="BrowserSupport"></a> Поддержка браузерами и платформами  
- Окно консоли JavaScript поддерживается на следующих платформах:  
-  
--   Приложения UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]и приложения Windows Phone с помощью JavaScript и HTML  
-  
--   Internet Explorer 11 на платформе [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 на платформе [!INCLUDE[win8](../debugger/includes/win8_md.md)]  
+ Вы также можете переключить контекст выполнения с помощью команды `cd` , однако вы должны знать имя другого контекста выполнения, а используемая вами ссылка должна находиться в области. Список **Целевой объект** предоставляет более удобный доступ к другим контекстам выполнения.   
   
 ## <a name="see-also"></a>См. также  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

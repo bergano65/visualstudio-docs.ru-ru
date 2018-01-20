@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
 "Изменить и продолжить" — это режим [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для отладки, позволяющий изменять код в режиме приостановки. После применения изменений кода можно возобновить выполнение кода с новыми изменениями и увидеть их эффект.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
  Изменить и продолжить поддерживается в приложениях UWP для Windows 10 и x86- и x64 приложений, предназначенных для .NET Framework 4.6 рабочего стола или более поздней версии, (платформа .NET Framework — только версия рабочего стола).
 
  > [!NOTE]
- > Неподдерживаемые приложений и платформ включают ASP.NET 5, эмулятор Silverlight 5, Windows Phone и Windows Phone и Windows 8.1.
+ > Неподдерживаемые приложений и платформ включают ASP.NET 5, Silverlight 5 и Windows 8.1.
   
  Изменить и продолжить не поддерживается при отладке с использованием функции **присоединиться к процессу**. Изменить и продолжить не поддерживается для оптимизированного кода или смешанного управляемого и машинного кода. Дополнительные сведения см. в разделе [поддерживаемые изменения кода (C# и Visual Basic](../debugger/supported-code-changes-csharp.md).
   

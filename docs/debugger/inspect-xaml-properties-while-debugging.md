@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Просмотр свойств XAML во время отладки
 Вы можете получить в режиме реального времени представление о выполнении кода XAML с **динамическое визуальное дерево** и **динамический обозреватель свойств**. Эти средства обеспечивают представление элементов пользовательского интерфейса выполняющегося приложения XAML в виде дерева, а также отображение свойств среды выполнения любого выбранного элемента интерфейса.  
@@ -27,7 +27,6 @@ ms.lasthandoff: 12/22/2017
 |Тип приложения|Операционная система и средства|  
 |-----------------|--------------------------------|  
 |Приложения Windows Presentation Foundation (4.0 и более поздних версий)|Windows 7 и более поздних версий|  
-|Windows 8.1 и Windows Phone 8.1 приложений|Windows 10 и более поздних версий, с [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |Универсальные приложения Windows|Windows 10 и более поздних версий, с [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Просмотр элементов в динамическом визуальном дереве  

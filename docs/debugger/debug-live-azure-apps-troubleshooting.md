@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы для моментального снимка отладки в Visual Studio
 
@@ -71,6 +71,17 @@ ms.lasthandoff: 01/05/2018
 - Специальные переменные, такие как *$FUNCTION* или *$CALLER*, не могут выполняться в условных инструкциях или logpoints для проектов ASP.NET Core.
 - Моментальный снимок не удается выполнить отладку на службы приложений, имеющих [локальное кэширование](/azure/app-service/app-service-local-cache) включен.
 - Отладка приложения API моментальных снимков в настоящее время не поддерживается.
+
+## <a name="site-extension-upgrade"></a>Обновление расширения сайта
+
+Отладка моментальных снимков и Application Insights, зависят от ICorProfiler, который загружается в процесс сайта и вызывает проблемы блокировки файлов во время обновления. Мы рекомендуем эту процедуру, чтобы убедиться, что без простоя, на рабочем сайте.
+
+- Создание [слот развертывания](/azure/app-service/web-sites-staged-publishing) в службе приложений и развертывания сайта в слоте.
+- Переключить слот с производства из Cloud Explorer в Visual Studio или на портале Azure.
+- Остановите узел слота. Это займет несколько секунд для завершения процесса w3wp.exe узел от всех экземпляров.
+- Обновление расширения слот сайта с сайта Kudu или портала Azure (*колонка службы приложения > средства разработки > расширения > обновление*).
+- Запустите веб-сайт слота. Мы рекомендуем, посетив этот сайт для прогрева еще раз.
+- Переключить слот с производства.
 
 ## <a name="see-also"></a>См. также
 

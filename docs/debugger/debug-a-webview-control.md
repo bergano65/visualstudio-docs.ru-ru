@@ -18,16 +18,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 40c3a112d77e7e00d95aaa92a77a3b6739c96293
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c463bc443540e136b2cffd1a4abdda2cc543d05
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Отладка элемента управления WebView в приложении UWP
-![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Для проверки и отладки элементов управления `WebView` в приложении среды выполнения Windows вы можете настроить Visual Studio на вложение отладчика скрипта при запуске приложения. Начиная с обновления 2 для Visual Studio 2013, у вас появилось два способа взаимодействия с элементами управления `WebView` с помощью отладчика.  
+ Для проверки и отладки элементов управления `WebView` в приложении среды выполнения Windows вы можете настроить Visual Studio на вложение отладчика скрипта при запуске приложения. У вас есть два способа взаимодействия с `WebView` элементы управления с помощью отладчика:  
   
 -   Откройте [проводника DOM](../debugger/quickstart-debug-html-and-css.md) для `WebView` экземпляра и проверьте элементы DOM, изучите проблемы со стилями CSS и протестируйте динамические отрисовываемые изменения в стилях.  
   

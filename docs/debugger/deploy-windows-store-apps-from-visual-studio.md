@@ -1,7 +1,7 @@
 ---
 title: "Развертывать приложения UWP из Visual Studio | Документы Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Развертывать приложения UWP из Visual Studio
-![Применяется только к Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  Функциональность развертывания Visual Studio выполняет сборку и регистрацию приложений UWP, созданных с помощью Visual Studio на целевом устройстве. Конкретный способ регистрации зависит от того, является ли целевое устройство локальным или удаленным:  
   
@@ -48,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  На панели инструментов отладчика Visual Studio выберите цель развертывания в раскрывающемся списке рядом с кнопкой **Начать отладку** .  
   
-     ![Запуск на локальном компьютере](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
+     ![Run on Local Machine](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
   
 3.  В меню **Сборка** выберите пункт **Развернуть**.  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 На удаленном устройстве Windows 10, необходимо включить [режим разработчика](/windows/uwp/get-started/enable-your-device-for-development). На устройствах Windows 10, выполняется обновление создателя или более поздней версии, инструменты удаленной отладки устанавливаются автоматически при развертывании приложения. Дополнительные сведения см. в разделе [отладки пакета установленного приложения](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> На Windows 8.1 и pre разработчика обновления версии Windows 10 необходимо установить инструменты удаленной отладки для Visual Studio на удаленном устройстве, а удаленный отладчик должен быть запущен. В Windows 8.1 необходимо также установить лицензию разработчика.
+> На pre разработчика обновления версии Windows 10 необходимо установить инструменты удаленной отладки для Visual Studio на удаленном устройстве и удаленный отладчик должен быть запущен.
   
 Развертывание использует канал сети удаленного отладчика для отправки файлов приложения на удаленное устройство.  
   
@@ -117,5 +115,6 @@ ms.lasthandoff: 01/10/2018
 -   На странице свойств "Отладка" для JavaScript установите для параметра **Запустить приложение** значение **Да**.  
   
 ## <a name="see-also"></a>См. также  
- [Отладка пакета установленного приложения](../debugger/debug-installed-app-package.md).   
+ [Параметры расширенного удаленного развертывания](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Отладка пакета установленного приложения](../debugger/debug-installed-app-package.md)   
  [Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
