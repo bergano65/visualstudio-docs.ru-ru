@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core для служб IIS и Azure в Visual Studio 2017 г.
-Развертывание веб-приложения ASP.NET на компьютере Windows Server с IIS и настроить его для удаленной отладки. В этом руководстве объясняется, как установить и настроить приложение ASP.NET Core Visual Studio 2017 г., развернуть его в службах IIS с помощью Azure и присоединить удаленный отладчик из Visual Studio.
+Для службы приложений Azure, рекомендуется отлаживать, используя [отладчик моментального снимка](../debugger/debug-live-azure-applications.md) или следовать инструкциям в этом разделе, чтобы подключить отладчик из Visual Studio. Если вы используете Windows Server со службами IIS на Виртуальной машине Azure, вы также можно задать для удаленной отладки. В этом руководстве объясняется, как установить и настроить приложение ASP.NET Core Visual Studio 2017 г., развернуть его в службах IIS с помощью Azure и присоединить удаленный отладчик из Visual Studio.
 
 > [!WARNING]
 > Не забудьте удалить ресурсы Azure, созданные после завершения действия в этом учебнике. Таким образом можно избежать дополнительной ненужных затрат.
@@ -36,11 +36,11 @@ ms.lasthandoff: 01/10/2018
 
 Для службы приложений Azure необходимо развернуть приложение из Visual Studio в Azure, но необходимо вручную установить или настроить IIS или удаленный отладчик (эти компоненты, были представлены пунктирной линией), как показано на следующем рисунке.
 
-![Компоненты удаленной отладки](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+![Remote debugger components](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
 
 Для виртуальной Машины Azure необходимо развернуть приложение из Visual Studio в Azure, а также необходимо вручную установить роль IIS и удаленным отладчиком, как показано на следующем рисунке.
 
-![Компоненты удаленной отладки](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+![Remote debugger components](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
 
 > [!NOTE]
 > Отладке ASP.NET Core в Azure Service Fabric см. в разделе [отладки удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/10/2018
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Удаленная отладка ASP.NET Core в службе приложений Azure
 
-Из Visual Studio можно быстро публиковать и отладка приложения, чтобы полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS и его нельзя настроить. Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если требуется возможность настройки IIS, попробуйте отладить [виртуальной Машины Azure](#BKMK_azure_vm).) 
+Из Visual Studio можно быстро публиковать и отладка приложения, чтобы полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS и его нельзя настроить. Более подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если требуется возможность настройки IIS, попробуйте отладить [виртуальной Машины Azure](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>Чтобы развернуть приложение и удаленной отладки
 
@@ -93,10 +93,10 @@ ms.lasthandoff: 01/10/2018
 
 В зависимости от настройки безопасности браузера, он может сэкономить время, чтобы добавить следующие надежные сайты в браузер, поэтому можно легко загрузить программное обеспечение, описанный в этом учебнике. Возможно, потребуется доступ к этим сайтам:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- загружаемые
+- visualstudio.com
 
 При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются. (Если требуется загрузить более раннюю версию удаленного отладчика из my.visualstudio.com некоторые дополнительные надежные сайты необходимы для входа.)
 
@@ -184,7 +184,7 @@ ms.lasthandoff: 01/10/2018
 2. В Visual Studio щелкните **Отладка > присоединить к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017 г., вы можете повторно присоединить с тем же процессом, ранее присоединена к с помощью **Отладка > повторно присоединиться к процессу...** (Shift + Alt + P). 
+    > В Visual Studio 2017 г., вы можете повторно присоединить с тем же процессом, ранее присоединена к с помощью **Отладка > повторно присоединиться к процессу...** (Shift+Alt+P). 
 
 3. Задайте для поля квалификатор  **\<имя удаленного компьютера >: 4022**.
 4. Нажмите кнопку **Обновить**.
