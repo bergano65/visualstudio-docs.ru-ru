@@ -29,11 +29,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
 Эти методы могут пригодиться при отладке программы MFC.  
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/22/2017
     -   [Сборка приложения MFC с отладочной информацией для избранных модулей](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> Функция AfxDebugBreak  
- MFC предоставляет особую функцию [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) для жесткого задания точек останова в исходном коде:  
+ MFC предоставляет особую [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) функции для жесткого задания точек останова в исходном коде:  
   
 ```  
 AfxDebugBreak( );  
@@ -149,7 +149,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     |-----------|-----------------|  
     |**allocMemDF**|Включает выделение памяти с диагностикой (по умолчанию).|  
     |**delayFreeMemDF**|Задерживает освобождение памяти до выхода из программы при вызове `delete` или `free` . Это позволяет обеспечить выделение максимального объема памяти.|  
-    |**checkAlwaysMemDF**|Вызывает [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) каждый раз при выделении или освобождении памяти.|  
+    |**checkAlwaysMemDF**|Вызовите [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) каждый раз при выделении или освобождении памяти.|  
   
      Эти значения можно комбинировать с помощью логической операции ИЛИ, как показано ниже:  
   

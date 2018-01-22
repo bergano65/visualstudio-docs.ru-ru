@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio C++ основные правила проверки ссылку | Документы Microsoft"
 ms.custom: 
-ms.date: 11/15/2017
+ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Справочные материалы по Проверка правила C++ основной
 В этом разделе перечислены предупреждения C++ основные правила проверки. Сведения об анализе кода см. в разделе [/ analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрый запуск: анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
@@ -26,17 +26,17 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="ownerpointer-group"></a>OWNER_POINTER группы
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
   Возвращают объект с областью, вместо размещенных в куче, если он имеет конструктор перемещения. В разделе [C++ основные рекомендации R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr). 
      
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)  
   Сброс или явно удалить владельца\<T > указатель «% переменная %». В разделе [C++ основные рекомендации R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
      
 [C26404 DONT_DELETE_INVALID](C26404.md)  
-  Не удаляйте владельца\<T > которого возможно в недопустимом состоянии. В разделе [C++ основные рекомендации R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
+  Не удаляйте владельца\<T >, которые могут быть в недопустимом состоянии. В разделе [C++ основные рекомендации R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
 
 [C26405 DONT_ASSIGN_TO_VALID](C26405.md)  
-  Владелец не назначается\<T > которого может быть в допустимом состоянии. В разделе [C++ основные рекомендации R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
+  Владелец не назначается\<T >, которые могут быть в допустимом состоянии. В разделе [C++ основные рекомендации R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
 
 [C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md)  
   Не присваивайте необработанный указатель владельца\<T >. В разделе [C++ основные рекомендации R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
@@ -56,7 +56,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rawpointer-group"></a>RAW_POINTER группы
  
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
-Не присвоить результат выделение или вызов функции с владельцем\<T > возвращаемого значения на необработанный указатель, используйте владельца<T> вместо него. В разделе [C++ основные рекомендации I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
+Не присвоить результат выделение или вызов функции с владельцем\<T > возвращаемое значение к указателю необработанные; используйте владельца\<T > вместо него. В разделе [C++ основные рекомендации I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
 
 [C26401 DONT_DELETE_NON_OWNER](c26401.md)  
 Не удаляйте необработанный указатель, который не является владельцем\<T >. В разделе [C++ основные рекомендации I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
@@ -123,16 +123,30 @@ ms.lasthandoff: 12/22/2017
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md)  
   Глобальный инициализатор обращается к extern объекта «% символ». В разделе [C++ основные рекомендации I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).  
   
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Избегайте неименованные объектов, содержащих пользовательские построения и удаления. [ES.84: (Старайтесь) объявить локальную переменную без имени](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 ## <a name="class-group"></a>Класс группы
     
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md)  
   При определении или удалить все операции по умолчанию в типе «% символ», определение или удалите их все. В разделе [C++ основные рекомендации C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).  
+
+
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) функции «% символ» должен быть помечен как «override». В разделе [ C.128: виртуальные функции следует указывать только один виртуальный, переопределения или последний](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final). 
+
   
 [C26434 DONT_HIDE_METHODS](C26434.md)  
   Функция «% symbol_1» скрывает невиртуальной функции «% symbol_2%». В разделе [C++ основные рекомендации C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).  
   
+
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) функции «% символ» следует указать только один из «virtual», «override» или «final». В разделе [ C.128: виртуальные функции следует указывать только один виртуальный, переопределения или последний](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md). 
+
+
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)  
   Тип «% % символ» виртуальная функция должен либо открытый виртуальных и защищенных невиртуальный деструктор. В разделе [C++ основные рекомендации C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).  
+
+
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) переопределение деструктор не следует использовать явное «override» и «virtual» описателей. В разделе [C.128: виртуальные функции следует указывать только один виртуальный, переопределения или последний](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 
 ## <a name="type-group"></a>Тип группы
     
@@ -158,37 +172,37 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="const-group"></a>CONST группы
     
-C26460 USE_CONST_REFERENCE_ARGUMENTS:  
+C26460 USE_CONST_REFERENCE_ARGUMENTS  
   Аргумент ссылки «% аргумента %» для функции «% функции» может быть помечен как `const`. В разделе [C++ основные рекомендации con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
 C26461 USE_CONST_POINTER_ARGUMENTS: аргумент указателя «% аргумента %» для функции «% функции» может быть помечен как указатель на `const`. В разделе [C++ основные рекомендации con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
-C26462 USE_CONST_POINTER_FOR_VARIABLE:  
+C26462 USE_CONST_POINTER_FOR_VARIABLE  
   Только один раз присваивается значение, на который указывает «% переменная %», пометьте его как указатель на `const`. В разделе [C++ основные рекомендации con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26463 USE_CONST_FOR_ELEMENTS:  
+C26463 USE_CONST_FOR_ELEMENTS  
   Элементы массива «% массива» назначаются только один раз, элементы пометить `const`. В разделе [C++ основные рекомендации con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26464 USE_CONST_POINTER_FOR_ELEMENTS:  
+C26464 USE_CONST_POINTER_FOR_ELEMENTS  
   Значения, на который указывает элементы массива «% массива» назначаются только один раз, элементы пометить как указатель на `const`. В разделе [C++ основные рекомендации con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
 
-C26496 USE_CONST_FOR_VARIABLE:  
+C26496 USE_CONST_FOR_VARIABLE  
   Переменной «% переменная %» присваивается только один раз, пометьте его как `const`. В разделе [C++ основные рекомендации con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26497 USE_CONSTEXPR_FOR_FUNCTION:  
+C26497 USE_CONSTEXPR_FOR_FUNCTION  
   Это функция % функции могут быть помечены `constexpr` при необходимости вычисление во время компиляции. В разделе [C++ основные рекомендации F.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-constexpr).  
   
-C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL:  
+C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL  
   Можно использовать функции % % этот вызов функции `constexpr` при необходимости вычисление во время компиляции. В разделе [C++ основные рекомендации con.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-constexpr).  
 
 ## <a name="type-group"></a>Тип группы
-C26465 NO_CONST_CAST_UNNECESSARY:  
+C26465 NO_CONST_CAST_UNNECESSARY  
   Не используйте `const_cast` для снятия `const`. `const_cast`не является обязательным. потерей постоянства или неустойчивости не удаляется с этого преобразования. В разделе [Type.3 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
   
-C26466 NO_STATIC_DOWNCAST_POLYMORPHIC:  
+C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   Не используйте `static_cast` downcasts. Приведение из полиморфного типа следует использовать dynamic_cast. В разделе [Type.2 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).  
   
-C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:  
+C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR  
   Не используйте `reinterpret_cast`. Можно использовать приведение из void * `static_cast`. В разделе [Type.1 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
   
 [C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md)  
@@ -203,22 +217,22 @@ C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md)  
   Не следует использовать стиль функции C приведения. В разделе [C++ основные рекомендации ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).  
      
-C26490 NO_REINTERPRET_CAST:  
+C26490 NO_REINTERPRET_CAST  
   Не используйте `reinterpret_cast`. В разделе [Type.1 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26491 NO_STATIC_DOWNCAST:  
+C26491 NO_STATIC_DOWNCAST  
   Не используйте `static_cast` downcasts. В разделе [Type.2 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26492 NO_CONST_CAST:  
+C26492 NO_CONST_CAST  
   Не используйте `const_cast` для снятия `const`. В разделе [Type.3 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
     
-C26493 NO_CSTYLE_CAST:  
+C26493 NO_CSTYLE_CAST  
   Не используйте C-стиль приведения. В разделе [Type.4 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type). 
      
-C26494 VAR_USE_BEFORE_INIT:  
+C26494 VAR_USE_BEFORE_INIT  
   Переменная «% переменная %» не инициализирован. Всегда Инициализируйте объект. В разделе [Type.5 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26495 MEMBER_UNINIT:  
+C26495 MEMBER_UNINIT  
   Переменная «% переменная %» не инициализирован. Всегда инициализируйте переменную-член. В разделе [Type.6 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
 ## <a name="bounds-group"></a>Группы ГРАНИЦ
@@ -226,10 +240,10 @@ C26495 MEMBER_UNINIT:
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)   
   Не используйте арифметических операций над указателями. Вместо этого используйте диапазон. В разделе [Bounds.1 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26482 NO_DYNAMIC_ARRAY_INDEXING:  
+C26482 NO_DYNAMIC_ARRAY_INDEXING  
   Только индексы массивов с помощью константных выражений. В разделе [Bounds.2 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26483 STATIC_INDEX_OUT_OF_RANGE:  
+C26483 STATIC_INDEX_OUT_OF_RANGE  
   Значение % значение находится за пределами (0, привязанные %) переменной «% переменная %». Только индексы массивов с помощью константными выражениями, которые находятся в пределах границ массива. В разделе [Bounds.2 правила C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   

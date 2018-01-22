@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Поддержка и свойств конфигурации проекта
 **Свойства** окна в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) может отображать свойства проекта и конфигурации. Чтобы обеспечить страницу свойств для типа проекта, чтобы пользователь может задать свойства для вашего приложения.  
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/22/2017
  Managed Package Framework для проектов (MPFProj) предоставляет вспомогательные классы для создания и управления новую систему проектов. Найти источник кода и компиляция инструкции в [MPF для проектов - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Сохранение и настройка свойств проекта  
- Свойства проектов и конфигурации сохраняются в файле проекта, который имеет расширение имени файла, связанного с типом проекта, например, .csproj, .vbproj и .myproj. Обычно проекты языка использовать файл шаблона для создания файла проекта. Однако фактически несколькими способами для связи типа и шаблонов проекта. Дополнительные сведения см. в разделе [NIB: шаблоны Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) и [описание шаблона каталога (. Файлы VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Свойства проектов и конфигурации сохраняются в файле проекта, который имеет расширение имени файла, связанного с типом проекта, например, .csproj, .vbproj и .myproj. Обычно проекты языка использовать файл шаблона для создания файла проекта. Однако фактически несколькими способами для связи типа и шаблонов проекта. Дополнительные сведения см. в разделе [описание шаблона каталога (. Файлы VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
  Свойства проектов и конфигурации создаются путем добавления элементов в файле шаблона. Затем эти свойства доступны для любой проект, созданный с помощью типа проекта, использующего этот шаблон. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]проекты и MPFProj, используют [не в сборке: Обзор MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) схема для файлов шаблонов. Эти файлы имеют раздел PropertyGroup для каждой конфигурации. Свойства проектов обычно сохраняются в первом разделе PropertyGroup, имеет аргумент конфигурации пустой строкой.  
   

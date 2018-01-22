@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Создание нового проекта: За кулисами, часть 2
 В [Создание нового проекта: В механизме, часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы узнали, как **новый проект** диалоговое окно заполняется значениями. Предположим, что вы выбрали **приложения Windows Visual C#**, заполненных **имя** и **расположение** текстовые поля и выборе ОК.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="generating-the-solution-files"></a>Создание файлов решения  
  Выбор шаблона приложения направляет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] распаковка и открытие соответствующего VSTEMPLATE-файл и для запуска шаблона для интерпретации команд XML в этом файле. Эти команды создают проектов и элементов проектов в новом или существующем решении.  
   
- Шаблон распаковывает источника файлов, называемых шаблонов элементов из той же папки расширением ZIP, содержащий VSTEMPLATE-файл. Шаблон копирует эти файлы в новый проект, настройка их соответствующим образом. Обзор шаблонов проектов и элементов см. в разделе [NIB: шаблоны Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Шаблон распаковывает источника файлов, называемых шаблонов элементов из той же папки расширением ZIP, содержащий VSTEMPLATE-файл. Шаблон копирует эти файлы в новый проект, настройка их соответствующим образом.  
   
 ### <a name="template-parameter-replacement"></a>Замена параметров шаблона  
  Когда шаблон копирует шаблона элемента в новый проект, он заменяет любые параметры шаблона строк в файле. Параметр шаблона — это специальный маркер, который является и стоять знак доллара, например $date$.  

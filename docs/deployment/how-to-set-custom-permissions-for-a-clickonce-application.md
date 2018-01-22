@@ -20,11 +20,11 @@ author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload: multiple
-ms.openlocfilehash: 671f48cfac80595832f7aeee71e0e87388f947e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a2a9a3315b58fa0181c004917081362cf60df4c0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения
 Можно развернуть приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , которое использует разрешения по умолчанию для зон Интернета или локальной интрасети. Кроме того, можно создать настраиваемую зону с определенными разрешениями, которые нужны приложению. Это можно сделать, настроив разрешения безопасности на странице **Безопасность** **конструктора проектов**.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 12/22/2017
 7.  Добавьте XML-код для разрешений, которые требуются приложению, перед элементом `</applicationRequestMinimum>` .  
   
     > [!NOTE]
-    >  Можно использовать метод `ToXml` набора разрешений, чтобы создать XML-код для манифеста приложения. Например, чтобы создать XML-код для набора разрешений <xref:System.Security.Permissions.EnvironmentPermission> , вызовите метод <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> . Дополнительные сведения о структуре XML-кода набора разрешений см. в разделе [NIB. Практическое руководство. Импорт набора разрешений с помощью XML-файла](http://msdn.microsoft.com/en-us/dea16b54-c108-408a-ac36-cdc05f746236).  
+    >  Можно использовать метод `ToXml` набора разрешений, чтобы создать XML-код для манифеста приложения. Например, чтобы создать XML-код для набора разрешений <xref:System.Security.Permissions.EnvironmentPermission> , вызовите метод <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .  
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   

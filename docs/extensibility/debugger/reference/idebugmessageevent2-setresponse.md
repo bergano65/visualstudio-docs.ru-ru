@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 3e10d353d3f2b89d9c8697a8748b820bef73df03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2ea8e766561261b4860f973002d302ac99caa8dd
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 Задает ответ, если таковая имеется, из окна сообщения.  
@@ -42,11 +42,11 @@ int SetResponse(
   
 #### <a name="parameters"></a>Параметры  
  `dwResponse`  
- [in] Указывает ответ, используя правила Win32 `MessageBox` функции. В разделе [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) функция подробные сведения.  
+ [in] Указывает ответ, используя правила Win32 `MessageBox` функции. В разделе [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) функция подробные сведения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
- [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)
+ [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

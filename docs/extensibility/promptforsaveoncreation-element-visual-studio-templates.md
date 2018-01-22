@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны проектов Visual Studio)
 Указывает, будет ли пользователю предлагается ввести место сохранения проекта в **новый проект** диалоговое окно при создании проекта. Если этот элемент имеет значение `true`, то пользователю предлагается для сохранения расположения; Если `false`, то они не запрашиваются. (То есть временного проекта создается).  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="remarks"></a>Примечания  
  `PromptForSaveOnCreation` — это необязательный элемент. Значение по умолчанию — `false`.  
   
- Временные проекты, проекты, которые могут создавать и изменять без сохранения содержимого проекта на диске. Дополнительные сведения см. в разделе [NIB временные проекты](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Временные проекты, проекты, которые могут создавать и изменять без сохранения содержимого проекта на диске.  
   
 ## <a name="example"></a>Пример  
  В следующем примере задается значение `PromptForSaveOnCreation` равно `false`, которое указывает, чтобы разрешить проекта, который будет создан как временный проект.  

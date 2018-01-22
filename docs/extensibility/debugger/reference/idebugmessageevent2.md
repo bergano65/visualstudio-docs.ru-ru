@@ -15,11 +15,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e61b6bae37b9e37dc9e448122f4595f3cba20f7f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Этот интерфейс используется подсистема отладки (DE) для отправки сообщения в Visual Studio, который требует ответа от пользователя.  
@@ -49,16 +49,16 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Примечания  
  DE будет использовать этот интерфейс, если он требует определенного ответа от пользователя для конкретного сообщения. Например, если DE возвращает сообщение «Доступ запрещен» после попытки удаленно присоединения к программе, DE отправляет это конкретное сообщение в Visual Studio в `IDebugMessageEvent2` событие с тип окна сообщения `MB_RETRYCANCEL`. Это позволяет пользователю повторить попытку или отменить операцию присоединения.  
   
- DE определяет, как это сообщение может быть обработано соглашениям функцию Win32 `MessageBox` (см. [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) подробные сведения).  
+ DE определяет, как это сообщение может быть обработано соглашениям функцию Win32 `MessageBox` (см. [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) подробные сведения).  
   
  Используйте [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) интерфейс для отправки сообщений в Visual Studio, не требующие ответа от пользователя.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   

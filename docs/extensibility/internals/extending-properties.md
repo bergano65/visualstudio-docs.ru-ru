@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>Расширение свойств
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Свойства** окна браузера универсальных свойств для компонентов COM и COM + и поддерживает все [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] продуктов. **Свойства** окно работает с `ITypeInfo` введите сведения и метаданные COM +, чтобы вывести список свойств во время разработки для выбранного объекта в любое другое окно интегрированной среды разработки (IDE).  
   
- **Свойства** окно, которое можно открыть, нажав F4 на клавиатуре или выбрав **окно свойств** на **представление** меню, используется для просмотра и редактирования зависящие от конфигурации, во время разработки свойства и события выбранных объектов. Свойства, зависящие от конфигурации, связанные с решениями и проектами, отображаются на [страницы свойств](../../extensibility/internals/property-pages.md). Дополнительные сведения см. в разделе [NIB: свойства](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [управление параметры конфигурации](../../extensibility/internals/managing-configuration-options.md), и [NIB: управление элементами в проектах](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ **Свойства** окно, которое можно открыть, нажав F4 на клавиатуре или выбрав **окно свойств** на **представление** меню, используется для просмотра и редактирования зависящие от конфигурации, во время разработки свойства и события выбранных объектов. Свойства, зависящие от конфигурации, связанные с решениями и проектами, отображаются на [страницы свойств](../../extensibility/internals/property-pages.md). Для получения дополнительной информации [управление параметры конфигурации](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Общие сведения об окне свойств](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Окно \"Свойства\"  

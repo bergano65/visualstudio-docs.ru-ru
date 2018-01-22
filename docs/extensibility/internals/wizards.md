@@ -14,11 +14,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 96d91fa687c914f0c3f98c4ddca64a93a5d70d02
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wizards"></a>Мастеры
 После создания мастера, обычно требуется добавить его в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), чтобы другие могли использовать. Затем откроется мастер добавлены в **Добавление нового проекта** или **Добавление нового элемента** диалоговым окнам. Чтобы увидеть **Добавление нового проекта** или **Добавление нового элемента** диалоговое окно диалоговые окна, щелкните правой кнопкой мыши в открытом решении **обозреватель решений**, пункты **добавить**, и Нажмите кнопку **новый проект** или **новый элемент**.  
@@ -50,9 +50,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-sections"></a>Связанные разделы  
  [Типы проектов](../../extensibility/internals/project-types.md)  
  Ссылки на дополнительные разделы, которые содержат сведения о создании новых типов проектов.  
-  
- [Пошаговое руководство: Создание мастера](http://msdn.microsoft.com/Library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
- Показывает, как создать мастер.  
   
  [Расширение проектов](../../extensibility/extending-projects.md)  
  Описывает использование [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекты и решения для организации файлов кода и файлов ресурсов и способы реализации системы управления версиями.
