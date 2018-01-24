@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: fd882c536fefde9a9eb6ab546d6049d1f1216771
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 31ec03dbc2eda481d4de82a848d696b80e99cb2e
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Создайте форму Windows Form для поиска данных
 Довольно распространенным сценарием приложения является отображение выбранных данных на форме. Например, вам может потребоваться отобразить заказы для определенного клиента или сведения о конкретном заказе. В таком сценарии пользователь вводит в форму информацию, после чего выполняется запрос, включающий в себя эти введенные пользователем данные в качестве параметра; таким образом, данные выбираются на основе параметризированного запроса. Запрос возвращает только те данные, которые удовлетворяют введенным пользователем условиям. Это пошаговое руководство показывает, как создать запрос, возвращающий клиентов из определенного города, и изменить пользовательский интерфейс, чтобы пользователи могли ввести название города и нажать кнопку для выполнения запроса.  
@@ -48,11 +48,12 @@ ms.lasthandoff: 12/22/2017
   
 -   Ввод параметров в форму и выполнение параметризованного запроса.  
   
-## <a name="prerequisites"></a>Предварительные требования  
+## <a name="prerequisites"></a>Предварительные требования
+
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
-  
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
-  
+
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.
+
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 
     1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса...** .  

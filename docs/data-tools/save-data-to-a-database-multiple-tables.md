@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 403fe906172f31a979d9b714b8982fb5932c5b72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e3841a0052081700be899576e1adc0a0740fecec
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Сохранение данных в базе данных (несколько таблиц)
 Одним из наиболее распространенных сценариев в разработке приложений является отображение данных на форме в приложении Windows, изменение этих данных и отправка обновленных данных обратно в базу данных. Это пошаговое руководство описывает создание формы, отображающей данные из двух связанных таблиц, правку записей и сохранение изменений в базе данных. В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей".  
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>Предварительные требования  
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
   
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
   
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 

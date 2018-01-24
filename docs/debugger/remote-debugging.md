@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Вы можете отладить приложение Visual Studio, развернутое на другом компьютере. Для этого используется удаленный отладчик Visual Studio.
@@ -34,11 +34,13 @@ ms.lasthandoff: 01/19/2018
 
 |Сценарий|Ссылка|
 |-|-|-|
-|Azure|[Отладка ASP.NET в службе приложений Azure (отладчик моментальных снимков)](../debugger/debug-live-azure-applications.md), [удаленная отладки ASP.NET в Azure](../debugger/remote-debugging-azure.md), или [отлаживать приложение Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|Служба приложений Azure|[Моментальный снимок отладчик](../debugger/debug-live-azure-applications.md) или [удаленная отладки ASP.NET в Azure](../debugger/remote-debugging-azure.md)|
+|Виртуальная машина Azure|[Удаленная отладка ASP.NET в Azure](../debugger/remote-debugging-azure.md)|
+|Azure Service Fabric|[Отладка приложения Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Удаленная отладки ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) или [удаленной отладки ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# или Visual Basic|[Удаленная отладка проекта C# или Visual Basic](../debugger/remote-debugging-csharp.md)|
 |C++|[Удаленная отладка проекта на C++](../debugger/remote-debugging-cpp.md)|
-|Универсальные приложения Windows (UWP)|[Запускайте приложения UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md) и [отладки пакета установленного приложения](../debugger/debug-installed-app-package.md)|
+|Универсальные приложения Windows (UWP)|[Запускайте приложения UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md) или [отладки пакета установленного приложения](../debugger/debug-installed-app-package.md)|
 
 Если вы только хотите загрузить и установить удаленный отладчик и не нужны дополнительные инструкции, для вашего сценария, следуйте инструкциям в этой статье.
   

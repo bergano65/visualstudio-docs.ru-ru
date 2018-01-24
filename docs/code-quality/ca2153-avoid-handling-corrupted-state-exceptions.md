@@ -7,28 +7,28 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 92fa57068a760fc8168fa46cf32a5660293b2e9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d46b1c9e87b0bf5b8c0b12cfe10ac4cd85a4741c
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: запрет на обработку исключений поврежденного состояния
+
 |||  
 |-|-|  
 |TypeName|AvoidHandlingCorruptedStateExceptions|  
 |CheckId|CA2153|  
 |Категория|Microsoft.Security|  
 |Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- [Исключения сбоя состояния (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) указывают на то, что в процессе имеется повреждение памяти. Если перехватывать их вместо того, чтобы позволить процессу завершиться сбоем, это может привести к уязвимостям в системе безопасности, если злоумышленнику удастся поместить эксплойт в поврежденную область памяти.  
+
+## <a name="cause"></a>Причина
+
+[Исключения сбоя состояния (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) указать, что память в процессе имеется повреждение. Если перехватывать их вместо того, чтобы позволить процессу завершиться сбоем, это может привести к уязвимостям в системе безопасности, если злоумышленнику удастся поместить эксплойт в поврежденную область памяти.
   
 ## <a name="rule-description"></a>Описание правила  
  Исключение CSE указывает на то, что состояние процесса было повреждено, и не перехватывается системой. В случае повреждения состояния общий обработчик перехватывает это исключение, только если вы пометили метод соответствующим атрибутом `HandleProcessCorruptedStateExceptions` . По умолчанию [Common Language Runtime (CLR)](/dotnet/standard/clr) не вызывает обработчики catch для исключений CSE.  

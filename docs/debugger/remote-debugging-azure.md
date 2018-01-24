@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core для служб IIS и Azure в Visual Studio 2017 г.
-Для службы приложений Azure, рекомендуется отлаживать, используя [отладчик моментального снимка](../debugger/debug-live-azure-applications.md) или следовать инструкциям в этом разделе, чтобы подключить отладчик из Visual Studio. Если вы используете Windows Server со службами IIS на Виртуальной машине Azure, вы также можно задать для удаленной отладки. В этом руководстве объясняется, как установить и настроить приложение ASP.NET Core Visual Studio 2017 г., развернуть его в службах IIS с помощью Azure и присоединить удаленный отладчик из Visual Studio.
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на сервере IIS в Azure в Visual Studio 2017 г.
+
+В этом руководстве объясняется, как установить и настроить приложение ASP.NET Core Visual Studio 2017 г., развернуть его в службах IIS с помощью Azure и присоединить удаленный отладчик из Visual Studio.
+
+Способ, рекомендуемый для удаленной отладки в Azure зависит от сценария:
+
+* Отладке ASP.NET Core в службе приложений Azure см. в разделе [отладки Azure приложения с помощью отладчика моментального снимка](../debugger/debug-live-azure-applications.md). Это рекомендуемый метод.
+* Отладка ASP.NET Core в службе приложений Azure с помощью более традиционные возможности отладки, выполните действия, описанные в этом разделе (см. в разделе [удаленной отладки на службе приложений Azure](#remote_debug_azure_app_service)).
+
+    В этом случае необходимо развернуть приложение из Visual Studio в Azure, но необходимо вручную установить или настроить IIS или удаленный отладчик (эти компоненты, были представлены пунктирной линией), как показано на следующем рисунке.
+
+    ![Remote debugger components](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* Для отладки службы IIS на Виртуальной машине Azure, выполните действия, описанные в этом разделе (см. в разделе [удаленной отладки на Виртуальной машине Azure](#remote_debug_azure_vm)). Это позволяет использовать пользовательскую конфигурацию служб IIS, но действий Установка и развертывание более сложной.
+
+    Для виртуальной Машины Azure необходимо развернуть приложение из Visual Studio в Azure, а также необходимо вручную установить роль IIS и удаленным отладчиком, как показано на следующем рисунке.
+
+    ![Remote debugger components](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* Отладке ASP.NET Core в Azure Service Fabric см. в разделе [отладки удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
 > Не забудьте удалить ресурсы Azure, созданные после завершения действия в этом учебнике. Таким образом можно избежать дополнительной ненужных затрат.
 
-В этом разделе показано как:
-
-* Удаленная отладка ASP.NET Core на службу приложений Azure
-
-* Удаленная отладка ASP.NET Core на Виртуальной машине Azure
-
-Для службы приложений Azure необходимо развернуть приложение из Visual Studio в Azure, но необходимо вручную установить или настроить IIS или удаленный отладчик (эти компоненты, были представлены пунктирной линией), как показано на следующем рисунке.
-
-![Remote debugger components](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-Для виртуальной Машины Azure необходимо развернуть приложение из Visual Studio в Azure, а также необходимо вручную установить роль IIS и удаленным отладчиком, как показано на следующем рисунке.
-
-![Remote debugger components](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> Отладке ASP.NET Core в Azure Service Fabric см. в разделе [отладки удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ### <a name="requirements"></a>Требования
 
@@ -61,11 +63,11 @@ ms.lasthandoff: 01/19/2018
 
 4. Откройте файл About.cshtml.cs и установите точку останова в `OnGet` метода (в старые шаблоны откройте HomeController.cs вместо и задать точку останова в `About()` метода).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Удаленная отладка ASP.NET Core в службе приложений Azure
+## <a name="remote_debug_azure_app_service"></a>Удаленная отладка ASP.NET Core в службе приложений Azure
 
 Из Visual Studio можно быстро публиковать и отладка приложения, чтобы полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS и его нельзя настроить. Более подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если требуется возможность настройки IIS, попробуйте отладить [виртуальной Машины Azure](#BKMK_azure_vm).) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>Чтобы развернуть приложение и удаленной отладки
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Чтобы развернуть приложение и удаленной отладки с помощью обозревателя серверов
 
 1. В Visual Studio, щелкните правой кнопкой мыши узел проекта и выберите команду **публикации**.
 
@@ -73,7 +75,7 @@ ms.lasthandoff: 01/19/2018
 
     Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. В **обозревателя серверов**, щелкните правой кнопкой мыши в экземпляре приложения и выберите **подключить отладчик**.
+3. Откройте **обозревателя серверов** (**представление** > **обозревателя серверов**), щелкните правой кнопкой мыши в экземпляре приложения и выберите **присоединить отладчик**.
 
 4. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
@@ -81,7 +83,7 @@ ms.lasthandoff: 01/19/2018
 
     Вот и все! Остальные шаги в этом разделе применяются к удаленную отладку на Виртуальной машине Azure.
 
-## <a name="BKMK_azure_vm"></a>Удаленная отладка ASP.NET Core на Виртуальной машине Azure
+## <a name="remote_debug_azure_vm"></a>Удаленная отладка ASP.NET Core на Виртуальной машине Azure
 
 Можно создать Azure VM для Windows Server и затем установить и настройки служб IIS и другие необходимые программные компоненты. Это занимает больше времени, чем развертывание для службы приложения Azure и требует выполните оставшиеся действия в этом учебнике.
 

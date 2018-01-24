@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1525a858885bb7b824967712186f81e060f63519
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Создание простых данных приложения с помощью ADO.NET
 При создании приложения, которое работает в базе данных, необходимо выполнить основные задачи, такие как определение строк подключения, вставка данных и выполнения хранимых процедур. В этом разделе, вы можете узнать, как взаимодействовать с базой данных из простого приложения «форм на основе данных» Windows Forms с помощью Visual C# или Visual Basic и ADO.NET.  Все данные технологии .NET, включая наборы данных, LINQ to SQL и Entity Framework, в конечном счете выполните действия, которые очень похожи на те, приведенными в этой статье.  
@@ -47,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB. Если у вас нет SQL Server Express LocalDB, его можно установить с [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+-   SQL Server Express LocalDB. Если у вас нет SQL Server Express LocalDB, его можно установить с [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 В этом разделе предполагается, что уже знакомы с основными функциями интегрированной среды разработки Visual Studio и можно создавать приложения Windows Forms, добавить формы в проект, добавить кнопки и другие элементы управления в формы, задать свойства элементов управления и код для простых событий. Если вы не уверены, что справитесь с этими задачами, рекомендуем выполнить [Приступая к работе с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) раздела перед выполнением этого пошагового руководства.  
   

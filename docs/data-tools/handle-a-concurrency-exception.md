@@ -23,11 +23,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71572ac38c7aed3154360d3bad9e4b84fe0107e3
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллельности
 Исключения параллелизма (<xref:System.Data.DBConcurrencyException>) возникают при попытке двух пользователей изменить те же данные в базе данных в то же время. В этом пошаговом руководстве, создание приложения Windows, которое показывает, как перехватить <xref:System.Data.DBConcurrencyException>, найдите строку, которая вызвала ошибку и Узнайте стратегии для их обработки.  
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>Предварительные требования  
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
   
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
   
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 

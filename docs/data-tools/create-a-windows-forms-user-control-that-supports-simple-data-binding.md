@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: e772e540c2f00fbd19f5b5e1bbe7603be59547c7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63df502f17a5c85e51e658854d2ab7dec312fcc5
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает простую привязку данных
 При отображении данных на формах в приложениях Windows, можно выбрать существующие элементы управления из **элементов**, или можно создать пользовательские элементы управления, если приложение требует функциональные возможности, недоступные в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.DefaultBindingPropertyAttribute>, могут содержать одно свойство, которое можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.TextBox> или <xref:System.Windows.Forms.CheckBox>.  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>Предварительные требования  
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
   
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
   
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 

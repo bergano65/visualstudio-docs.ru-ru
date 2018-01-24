@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 160cf1021e6b95dcfc6cf8ee97b20c4502f9099e
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство: Сохранение данных в транзакции
 В этом пошаговом руководстве демонстрируется сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. В этом пошаговом руководстве вы создадите приложение Windows Forms. Мастер настройки источника данных будет использоваться для создания набора данных для двух таблиц в базе данных Northwind. Вы добавите с привязкой к данным элементы управления в форму Windows Forms, и будет изменена код BindingNavigator кнопку Сохранить обновление базы данных внутри области TransactionScope.  
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>Предварительные требования  
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
   
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **разработки настольных приложений .NET** рабочей нагрузки, или в отдельных компонентов.  
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **разработки настольных приложений .NET** рабочей нагрузки, или в отдельных компонентов.  
   
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 

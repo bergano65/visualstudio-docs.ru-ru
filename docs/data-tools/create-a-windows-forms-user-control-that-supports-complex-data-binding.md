@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c5e59b34a1093b90320bfdd05989913e72600a8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc3ebe35c7b9697921e50a9ea310723128b494be
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает сложную привязку данных
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 12/22/2017
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.
 
-1. Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.
+1. Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.
 
 1. Установка образца базы данных Northwind, выполните следующие действия:
 
@@ -68,9 +68,9 @@ ms.lasthandoff: 12/22/2017
 
        Откроется окно редактора запросов.
 
-    2. Копировать [сценарий Northwind Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) в буфер обмена. Этот скрипт T-SQL создает базу данных Northwind с нуля и заполняет ее данными.
+    1. Копировать [сценарий Northwind Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) в буфер обмена. Этот скрипт T-SQL создает базу данных Northwind с нуля и заполняет ее данными.
 
-    3. Вставьте скрипт T-SQL в редакторе запросов, а затем выберите **Execute** кнопки.
+    1. Вставьте скрипт T-SQL в редакторе запросов, а затем выберите **Execute** кнопки.
 
        Через некоторое время завершения выполнения запроса и создания базы данных "Борей".
 

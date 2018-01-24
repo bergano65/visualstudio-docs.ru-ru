@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c3ecb38b4f208eac3a49cc2f0e21fb98ef81ea68
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c17803a6a1f0f2681b7b1c8510ebe66072c9c38
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Создать пользовательский элемент управления Windows Forms, поддерживающих привязку данных подстановки
 При отображении данных в формах Windows Forms можно выбрать существующие элементы управления из **элементов**, или можно создать пользовательские элементы управления, если приложение требует функциональные возможности, недоступные в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.LookupBindingPropertiesAttribute>, могут содержать три свойства, которые можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.ComboBox>.  
@@ -57,11 +57,12 @@ ms.lasthandoff: 12/22/2017
   
 -   Создание формы для отображения данных в новом элементе управления.  
   
-## <a name="prerequisites"></a>Предварительные требования  
+## <a name="prerequisites"></a>Предварительные требования
+
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
-  
-1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
-  
+
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страницы загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.
+
 2.  Установка образца базы данных Northwind, выполните следующие действия:  
 
     1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса...** .  

@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Настроить ссылку на службу - диалоговое окно
-**Настроить ссылку на службу** диалоговое окно позволяет настроить поведение [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] служб.  
-  
+
+**Настроить ссылку на службу** диалоговое окно позволяет настроить поведение служб Windows Communication Foundation (WCF).
+
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Чтобы получить доступ к **настроить ссылку на службу** диалоговое окно, щелкните правой кнопкой мыши службы ссылки в **обозреватель решений** и выберите **настроить ссылку на службу**. Диалоговое окно можно также перейти, щелкнув **Дополнительно** кнопку в **Add Service Reference Dialog Box**.  
-  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+
+Чтобы получить доступ к **настроить ссылку на службу** диалоговое окно, щелкните правой кнопкой мыши службы ссылки в **обозреватель решений** и выберите **настроить ссылку на службу**. Диалоговое окно можно также перейти, щелкнув **Дополнительно** кнопку в **Add Service Reference Dialog Box**.
+
 ## <a name="task-list"></a>список задач  
   
 -   Чтобы изменить адрес размещения службы WCF, введите новый адрес в **адрес** поля.  
@@ -86,16 +87,15 @@ ms.lasthandoff: 12/22/2017
  **Список сборок**  
  Содержит список сборок, на которые заданы ссылки, для проекта или веб-сайта. Когда **повторно использовать типы в указанных сборках, на которую указывает ссылка** выбран, отдельные сборки может быть отмечена или очищена.  
   
- **Добавление веб-ссылки**  
- Отображает [добавить веб-ссылки-диалоговое окно](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
-  
-> [!NOTE]
->  Этот параметр следует использовать только для проектов, целевой платформой которых является [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0.  
-  
-> [!NOTE]
->  **Add Web Reference** доступны, только если определена кнопка **настроить ссылку на службу** диалоговое окно из **Add Service Reference Dialog Box**.  
-  
-## <a name="see-also"></a>См. также  
+ **Добавление веб-ссылки** отображает диалоговое окно Добавить веб-ссылку.
 
- [Способ: добавьте ссылку на веб-службы](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Службы Windows Communication Foundation и службы данных WCF](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> Этот параметр следует использовать только для проектов, целевой платформой которых является [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0.
+
+> [!NOTE]
+> **Add Web Reference** доступны, только если определена кнопка **настроить ссылку на службу** диалоговое окно из **Add Service Reference Dialog Box**.
+
+## <a name="see-also"></a>См. также
+
+[Способ: добавьте ссылку на веб-службы](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Службы Windows Communication Foundation и службы данных WCF](../data-tools/configure-service-reference-dialog-box.md)

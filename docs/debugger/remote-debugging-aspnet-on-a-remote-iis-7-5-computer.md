@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 35b8cd394881ba5bf075044d30aee17ab6a321c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на IIS на удаленном компьютере
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
 
-![Компоненты удаленной отладки](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
+![Remote debugger components](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-В этом руководстве объясняется, как установить и настроить приложение Visual Studio 2017 г. ASP.NET MVC 4.5.2, его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET Core. в разделе [удаленной отладки ASP.NET Core на компьютере с IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Кроме того, можно развернуть и отладить в IIS с помощью Azure. Дополнительные сведения см. в разделе [удаленной отладки на платформе Azure](../debugger/remote-debugging-azure.md).
+В этом руководстве объясняется, как установить и настроить приложение Visual Studio 2017 г. ASP.NET MVC 4.5.2, его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET Core. в разделе [удаленной отладки ASP.NET Core на компьютере с IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Для службы приложений Azure, можно легко развернуть и отладить на экземпляре предварительно настроенных служб IIS с помощью либо [отладчик моментального снимка](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 необходимые) или с помощью [присоединении отладчика из обозревателя серверов](../debugger/remote-debugging-azure.md).
 
 Эти процедуры протестированы на эти конфигурации сервера:
 * Windows Server 2012 R2 и IIS 8 (для Windows Server 2008 R2, сервера используются разные процедуры)
@@ -50,10 +50,10 @@ ms.lasthandoff: 01/10/2018
 
 В зависимости от настроек безопасности он может сэкономить время, чтобы добавить следующие надежные сайты в браузер, поэтому можно легко загрузить программное обеспечение, описанный в этом учебнике. Возможно, потребуется доступ к этим сайтам:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- загружаемые
+- visualstudio.com
 
 При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются. (Если требуется загрузить более раннюю версию удаленного отладчика из my.visualstudio.com некоторые дополнительные надежные сайты необходимы для входа.)
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]
     > Если вы используете Windows Server 2008 R2, установите ASP.NET 4, вместо этого с помощью этой команды:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Перезагрузку системы (или выполните **net stop был /y** следуют **net start w3svc** из командной строки, чтобы отобразить изменение в системе путь).
 
@@ -147,7 +147,7 @@ ms.lasthandoff: 01/10/2018
 2. В Visual Studio щелкните **Отладка > присоединить к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017 г., можно подключить с тем же процессом, ранее присоединена к с помощью **Отладка > повторно присоединиться к процессу...** (Shift + Alt + P). 
+    > В Visual Studio 2017 г., можно подключить с тем же процессом, ранее присоединена к с помощью **Отладка > повторно присоединиться к процессу...** (Shift+Alt+P). 
 
 3. Задайте для поля квалификатор  **\<имя удаленного компьютера >: 4022**.
 4. Нажмите кнопку **Обновить**.
