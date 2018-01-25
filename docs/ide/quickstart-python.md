@@ -1,5 +1,6 @@
 ---
 title: "Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio | Документы Майкрософт"
+description: "Краткое введение в использование кода Python в Visual Studio, предназначенного для создания простого веб-приложения с помощью платформы Falcon."
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
@@ -67,7 +70,7 @@ ms.lasthandoff: 01/09/2018
 
 Дополнительные сведения о Falcon см. на веб-сайте [falconframework.org](https://falconframework.org/).
 
-Обратите внимание на то, что вместо установки библиотек в глобальной среде разработчики обычно создают "виртуальную среду", в которой устанавливаются библиотеки для определенного проекта. Многие шаблоны проектов Python в Visual Studio включают в себя файл `requirements.txt` со списком библиотек, от которых зависит шаблон. При создании проекта на основе одного из таких шаблонов автоматически создается виртуальная среда, в которой устанавливаются библиотеки. Дополнительные сведения см. в разделе [Виртуальные среды](../python/python-environments.md#virtual-environments) в статье "Среды Python".
+Обратите внимание на то, что вместо установки библиотек в глобальной среде разработчики обычно создают "виртуальную среду", в которой устанавливаются библиотеки для определенного проекта. Многие шаблоны проектов Python в Visual Studio включают в себя файл `requirements.txt` со списком библиотек, от которых зависит шаблон. При создании проекта на основе одного из таких шаблонов автоматически создается виртуальная среда, в которой устанавливаются библиотеки. Дополнительные сведения см. в разделе [Виртуальные среды](../python/python-environments.md#creating-virtual-environments) в статье "Среды Python".
 
 ## <a name="add-a-code-file"></a>Добавление файла кода
 

@@ -15,15 +15,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: c757f67efb26d1ca9e029447b044d9b6c6ea8a65
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c83a24cbcbe13047ef103f86c8bd81fee1506c2d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"
 
-Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения" в Visual Studio объединяет в себе три языка и их соответствующие дистрибутивы времени выполнения:
+Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения", сведения о которой отображаются в установщике Visual Studio, объединяет в себе три языка и их соответствующие дистрибутивы времени выполнения:
 
 - [R и Microsoft R Client](../rtvs/index.md)
 - [Python и Anaconda](../python/python-in-visual-studio.md)

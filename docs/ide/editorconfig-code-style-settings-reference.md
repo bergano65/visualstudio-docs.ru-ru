@@ -1,7 +1,7 @@
 ---
 title: "Параметры соглашений о написании кода .NET в EditorConfig | Документация Майкрософт"
 ms.custom: 
-ms.date: 12/05/2017
+ms.date: 01/10/2018
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -18,12 +18,14 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: kaseyu
-ms.openlocfilehash: 1eaef82dd904c867510770a1850d5893434a78e1
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- dotnet
+- dotnetcore
+ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -81,6 +83,8 @@ error | При несоблюдении этого правила стиля в�
         - dotnet\_style\_explicit\_tuple_names
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
+        - dotnet\_prefer\_inferred\_tuple_names
+        - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
 - Параметры стиля кода C#
     - [Неявные и явные типы](#var)
         - csharp\_style\_var\_for\_built\_in_types
@@ -116,7 +120,7 @@ error | При несоблюдении этого правила стиля в�
 
 Это правило стиля (идентификаторы правила IDE0003 и IDE0009) может применяться к полям, свойствам, методам или событиям. Значение **true** означает, что перед символом кода предпочтительно добавлять `this.` в C# или `Me.` в Visual Basic. Значение **false** означает, что перед символом кода предпочтительно _не_ добавлять `this.` или `Me.`.
 
-В следующей таблице указаны имена правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+В следующей таблице указаны имена правил, применяемые языки программирования и значения по умолчанию:
 
 | Имя правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | ----------- | -------------------- | ----------------------|
@@ -219,7 +223,7 @@ AddHandler Elapsed, AddressOf Handler
 
 В файле EDITORCONFIG эти правила могут иметь следующий вид:
 
-```
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_qualification_for_field = false:suggestion
@@ -232,7 +236,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 Это правило стиля можно применить к локальным переменным, параметрам методов и членам классов, а также в виде отдельного правила для ввода выражений доступа к члену. Значение **true** означает предпочтение ключевого слова языка (например, `int` или `Integer`) вместо имени типа (например, `Int32`) для типов, имеющих представляющее их ключевое слово. Значение **false** означает предпочтение имени типа вместо ключевого слова языка.
 
-В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования и значения по умолчанию:
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
@@ -287,7 +291,7 @@ Dim local = Int32.MaxValue
 
 В файле EDITORCONFIG эти правила могут иметь следующий вид:
 
-```
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
@@ -364,7 +368,7 @@ End Class
 
 В файле EDITORCONFIG эти правила могут иметь следующий вид:
 
-```
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
@@ -384,13 +388,15 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
 
-| Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio |
-| --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_object_initializer | IDE0017 | C# и Visual Basic | true:suggestion |
-| dotnet_style_collection_initializer | IDE0028 | C# и Visual Basic | true:suggestion |
-| dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ и Visual Basic 15+ | true:suggestion |
-| dotnet_style_coalesce_expression | IDE0029 | C# и Visual Basic | true:suggestion |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0+ и Visual Basic 14+ | true:suggestion |
+| Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio | Версия Visual Studio 2017 |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_object_initializer | IDE0017 | C# и Visual Basic | true:suggestion | Первый выпуск |
+| dotnet_style_collection_initializer | IDE0028 | C# и Visual Basic | true:suggestion | Первый выпуск |
+| dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ и Visual Basic 15+ | true:suggestion | Первый выпуск |
+| dotnet_style_coalesce_expression | IDE0029 | C# и Visual Basic | true:suggestion | Первый выпуск |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0+ и Visual Basic 14+ | true:suggestion | Первый выпуск |
+| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ и Visual Basic 15+ | true:suggestion | 15.6 (предварительная версия 2) |
+| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# и Visual Basic | true:suggestion | 15.6 (предварительная версия 2) |
 
 **dotnet\_style\_object_initializer**
 
@@ -523,9 +529,40 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-В файле EDITORCONFIG эти правила могут иметь следующий вид:
+**dotnet\_prefer\_inferred\_tuple_names**
+
+- Если это правило имеет значение **true**, предпочтение отдается выводимым именам элементов кортежа.
+- Если это правило имеет значение **true**, предпочтение отдается явным именам элементов кортежа.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+
+- Если это правило имеет значение **true**, предпочтение отдается выводимым именам автономных членов типа.
+- Если это правило имеет значение **true**, предпочтение отдается явным именам автономных членов типа.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
 
 ```
+
+В файле EDITORCONFIG эти правила могут иметь следующий вид:
+
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_object_initializer = true:suggestion
@@ -533,6 +570,8 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>Параметры стиля кода C#
@@ -543,7 +582,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Правила стилей в этом разделе (идентификаторы правил IDE0007 и IDE0008) относятся к использованию ключевого слова [var](/dotnet/csharp/language-reference/keywords/var) или явного типа в объявлении переменной. Это правило можно отдельно применять для встроенных типов, если этот тип является очевидным, а также в других местах.
 
-В следующей таблице указаны имена правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+В следующей таблице указаны имена правил, применяемые языки программирования и значения по умолчанию:
 
 | Имя правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | ----------- | -------------------- | ----------------------|
@@ -598,7 +637,7 @@ bool f = this.Init();
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_var_for_built_in_types = true:suggestion
@@ -745,7 +784,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_expression_bodied_methods = false:none
@@ -760,7 +799,7 @@ csharp_style_expression_bodied_accessors = true:suggestion
 
 Правила стилей в этом разделе относятся к использованию [сопоставления шаблонов](/dotnet/csharp/pattern-matching) в C#.
 
-В следующей таблице указаны имена и идентификаторы правил, применяемые версии языков, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+В следующей таблице указаны имена и идентификаторы правил, применяемые версии языков и значения по умолчанию:
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
@@ -800,7 +839,7 @@ if (s != null) {...}
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -811,7 +850,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 Это правило стиля определяет, объявляются ли переменные `out` встроенным образом или нет. Начиная с версии 7 языка C# [переменную out можно объявлять в списке аргументов вызова метода](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), а не отдельно.
 
-В следующей таблице указаны имена и идентификаторы правил, применяемые версии языков, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+В следующей таблице указаны имена и идентификаторы правил, применяемые версии языков и значения по умолчанию:
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | --------- | -------- | -------------------- | ----------------------|
@@ -835,7 +874,7 @@ if (int.TryParse(value, out i) {...}
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_inlined_variable_declaration = true:suggestion
@@ -917,7 +956,7 @@ fibonacci = (int n) =>
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
@@ -929,7 +968,7 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 
 Эти правила стиля определяют синтаксис, связанный с проверкой `null`, включая использование выражений `throw` или операторов `throw`, а также выбор между проверкой Null и использованием условного оператора объединения (`?.`) при вызове [лямбда-выражения](/dotnet/csharp/lambda-expressions).
 
-В следующей таблице указаны имена и идентификаторы правил, применяемые версии языков, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+В следующей таблице указаны имена и идентификаторы правил, применяемые версии языков и значения по умолчанию:
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
@@ -969,7 +1008,7 @@ if (func != null) { func(args); }
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_throw_expression = true:suggestion
@@ -1003,7 +1042,7 @@ if (test) this.Display();
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_braces = true:none
@@ -1080,7 +1119,7 @@ using System.Threading.Tasks;
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
@@ -1277,7 +1316,7 @@ var q = from a in e from b in e
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_new_line_before_open_brace = methods, properties, control_blocks, types
@@ -1426,7 +1465,7 @@ class C
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_indent_case_contents = true
@@ -1533,7 +1572,7 @@ int y = ( int )x;
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_space_after_cast = true
@@ -1590,7 +1629,7 @@ public int MyProperty
 
 Пример файла EDITORCONFIG:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_preserve_single_line_statements = true

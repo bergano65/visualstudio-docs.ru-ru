@@ -18,19 +18,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
-Для обеспечения безопасности следует по возможности запускать Visual Studio от имени обычного пользователя.  
+
+Для обеспечения безопасности следует по возможности запускать Visual Studio от имени обычного пользователя.
 
 > [!WARNING]
->  Также необходимо компилировать, запускать и отлаживать только те решения Visual Studio, которые получены от надежных людей или из надежных расположений.  
+> Также необходимо компилировать, запускать и отлаживать только те решения Visual Studio, которые получены от надежных людей или из надежных расположений.
 
- В интегрированной среде разработки Visual Studio можно выполнять большинство операций от имени обычного пользователя, а права администратора требуются для выполнения следующих задач:  
+В интегрированной среде разработки Visual Studio можно выполнять большинство операций от имени обычного пользователя, а права администратора требуются для выполнения следующих задач:
 
 |Область|Задача|Дополнительные сведения|  
 |----------|----------|--------------------------|  
@@ -50,25 +51,21 @@ ms.lasthandoff: 12/22/2017
 |Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения с использованием Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора  
- Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.  
+## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] и [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
+Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.
 
-1.  На **начальном экране** введите **Visual Studio**. Вы увидите установленные версии Visual Studio.  
+### <a name="to-run-visual-studio-with-administrative-permissions"></a>Запуск Visual Studio с правами администратора
 
-2.  Выберите версию Visual Studio, которую нужно запустить, а затем откройте контекстное меню (оно появится внизу экрана). Выберите **Запуск от имени администратора**.  
+Эти инструкции предназначены для Windows 10. Для других версий Windows они аналогичны.
 
-     После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
+1. Откройте меню **Пуск** и перейдите к Visual Studio 2017.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../debugger/includes/win7_md.md)] и [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
+1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2017** выберите **More (Дополнительно)** > **Запуск от имени администратора**.
 
-1.  Нажмите кнопку **Пуск** и выберите **Все программы**.  
+     После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
 
-2.  В папке **Microsoft Visual Studio** *версия* выберите **Visual Studio** *версия*, откройте контекстное меню, а затем выберите пункт **Запуск от имени администратора**.  
+## <a name="see-also"></a>См. также
 
-     После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
-
-## <a name="see-also"></a>См. также  
- [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Установка Visual Studio](../install/install-visual-studio.md)
+[Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[Установка Visual Studio](../install/install-visual-studio.md)
