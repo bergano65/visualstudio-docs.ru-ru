@@ -15,17 +15,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6c75991ed6c55d7905bcaaca5947f7f32897ab14
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d87beb4e8f475bd52c5be7f1d75f27ecf3b691ac
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Использование расширения Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 этот компонент уже встроен. В ранних версиях Visual Studio этот компонент нужно устанавливать отдельно.
 
-Для Cookiecutter требуется Python 3.3 или более поздней версии (32- или 64-разрядная), Anaconda 3 4.2 или более поздней версии (32- или 64-разрядная). Если подходящий интерпретатор Python недоступен, в Visual Studio отображается предупреждение. Если вы устанавливаете интерпретатор Python в процессе выполнения Visual Studio, нажмите на панели инструментов Cookiecutter кнопку Home (Домой), чтобы обнаружить установленный интерпретатор. (Дополнительные общие сведения о средах см. в разделе [Среды Python](python-environments.md).)
+Для Cookiecutter требуется Python 3.3 или более поздней версии (32- или 64-разрядная), Anaconda 3 4.2 или более поздней версии (32- или 64-разрядная). Если подходящий интерпретатор Python недоступен, в Visual Studio отображается предупреждение. Если вы устанавливаете интерпретатор Python в процессе выполнения Visual Studio, нажмите на панели инструментов Cookiecutter кнопку Home (Домой), чтобы обнаружить установленный интерпретатор. (Дополнительные общие сведения о средах см. в разделе [Среды Python](managing-python-environments-in-visual-studio.md).)
 
 После завершения установки выберите **Просмотр > Обозреватель Cookiecutter**, чтобы отрыть окно обозревателя.
 

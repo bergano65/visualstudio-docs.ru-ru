@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Начало работы с Visual Basic в Visual Studio
 В этом учебнике по Visual Basic вы используете среду Visual Studio для создания и запуска нескольких разных консольных приложений. В процессе работы вы ознакомитесь с некоторыми возможностями [интегрированной среды разработки (IDE)](visual-studio-ide.md) Visual Studio.
@@ -82,11 +82,11 @@ Visual Studio — это интегрированный набор средст
      Console.ReadKey(True)
     ```
 
-    Этот код заменяют имеющиеся операторы [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1), [Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1) и [Console.ReadKey]().
+    Этот код заменяет существующие операторы <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> и <xref:System.Console.ReadKey%2A>.
 
  ![Окно кода с кодом приложения](../ide/media/vb-codewindow-what-name.png)
 
-3. Когда откроется окно консоли, введите свое имя. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:       
+3. Когда откроется окно консоли, введите свое имя. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:
 
    ![Окно консоли с вопросом "What Is Your Name" (Как вас зовут), временем и датой, а также сообщением "Press any key to continue" (Чтобы продолжить, нажмите любую клавишу)](../ide/media/vb-console-what-name.png)
 

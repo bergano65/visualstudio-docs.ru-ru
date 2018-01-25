@@ -24,7 +24,7 @@
 8. При необходимости запустите программу, нажав клавиши CTRL+F5 или последовательно выбрав **"Отладка" > "Запуск без отладки"**. 
 
 > [!div class="nextstepaction"]
-> [Руководство. Работа с Python в Visual Studio](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Руководство. Работа с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>См. также
 

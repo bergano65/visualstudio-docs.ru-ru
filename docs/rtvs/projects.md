@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Создание проектов R в Visual Studio
 
@@ -119,6 +119,6 @@ ms.lasthandoff: 12/22/2017
 Проект, выделенный полужирным шрифтом, является "запускаемым" проектом для решения; чтобы изменить его, щелкните правой кнопкой мыши другой проект и выберите **Назначить запускаемым проектом**.
 
 > [!Note]
-> В настоящее время не существует явной интеграции языков R и C#/C++ (такой, которая имеется для Python, см. раздел [Создание расширения C++ для Python](../python/cpp-and-python.md)).  Тем не менее есть библиотеки, содержащие мосты C# и C++ для R.
+> В настоящее время не существует явной интеграции языков R и C#/C++ (такой, которая имеется для Python, см. раздел [Создание расширения C++ для Python](../python/working-with-c-cpp-python-in-visual-studio.md)).  Тем не менее есть библиотеки, содержащие мосты C# и C++ для R.
 
 Дополнительные сведения об управлении проектами и решениями см. в разделе [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).

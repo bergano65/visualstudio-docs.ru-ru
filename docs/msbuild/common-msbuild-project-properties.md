@@ -1,7 +1,7 @@
 ---
 title: "Общие свойства проектов MSBuild | Документация Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-sdk
@@ -23,11 +23,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в TARGETS-файлы, предоставляемые MSBuild.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 |AssemblyName|Имя окончательной выходной сборки после сборки проекта.|  
 |BaseAddress|Задает базовый адрес главной выходной сборки. Это свойство эквивалентно переключателю `/baseaddress` компилятора.|  
 |BaseOutputPath|Задает базовый путь для выходного файла. Если это свойство задано, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] будет использовать `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Пример синтаксиса:`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`.|  
-|BaseIntermediateOutputPath|Папка верхнего уровня, в которой создаются все промежуточные выходные папки, зависящие от конфигурации. Значение по умолчанию — `obj\`. Примером является следующий код: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`.|  
+|BaseIntermediateOutputPath|Папка верхнего уровня, в которой создаются все промежуточные выходные папки, зависящие от конфигурации. Значение по умолчанию — `obj\`. Примером является следующий код: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`.|  
 |BuildInParallel|Логическое значение, указывающее, выполняется ли сборка или удаление ссылок параллельно при использовании [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в мультипроцессорном режиме. Значение по умолчанию — `true`; это означает, что сборка проектов будет выполняться параллельно, если система имеет несколько ядер или процессоров.|  
 |BuildProjectReferences|Логическое значение, указывающее, выполняется ли сборка ссылок с помощью [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Задайте значение `false`, если сборка проекта ведется в изолированной среде разработки (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; в противном случае задайте значение `true`.|  
 |CleanFile|Имя файла, который будет использоваться в качестве "средства очистки кэша". Средство очистки кэша — это список созданных файлов, которые необходимо удалить во время выполнения операции очистки. Процесс сборки помещает этот файл в промежуточную выходную папку.<br /><br /> Это свойство указывает только имена файлов, для которых отсутствует информация о пути.|  
@@ -75,12 +75,11 @@ ms.lasthandoff: 12/22/2017
 |IntermediateOutputPath|Полный путь к промежуточной выходной папке, производный от `BaseIntermediateOutputPath`, если путь не указан. Например, \obj\debug\\. Если эти свойство переопределено, задание `BaseIntermediateOutputPath` не имеет силы.|  
 |KeyContainerName|Имя контейнера ключа строгого имени.|  
 |KeyOriginatorFile|Имя файла ключа строгого имени.|  
-|NoWin32Manifest|Определяет, создает ли компилятор манифест Win32 по умолчанию в выходной сборке. Используемое по умолчанию значение `false` означает, что манифест Win32 по умолчанию создается для всех приложений. Это свойство эквивалентно переключателю `/nowin32manifest` компилятора vbc.exe.|  
 |ModuleAssemblyName|Имя сборки, в которую должен быть включен скомпилированный модуль. Это свойство эквивалентно переключателю `/moduleassemblyname` компилятора.|  
 |NoLogo|Логическое значение, указывающее, требуется ли отключить эмблему компилятора. Это свойство эквивалентно переключателю `/nologo` компилятора.|  
-|NoStdLib|Логическое значение, указывающее, следует ли избегать ссылок на стандартную библиотеку (mscorlib.dll). Значение по умолчанию — `false`.|  
+|NoStdLib|Логическое значение, указывающее, следует ли избегать ссылок на стандартную библиотеку (mscorlib.dll). Значение по умолчанию — `false`.|  
 |NoVBRuntimeReference|Логическое значение, указывающее, следует ли включить в проект в качестве ссылки среду выполнения [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (Microsoft.VisualBasic.dll).|  
-|NoWin32Manifest|Логическое значение, указывающее, внедряется ли в исполняемый файл приложения информация манифеста контроля учетных записей (UAC). Применяется только к проектам Visual Studio, нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, этот элемент игнорируется. Значение `False` (используется по умолчанию) указывает, что информация манифеста UAC внедряется в исполняемый файл приложения. Значение `True` указывает, что информация манифеста UAC не внедряется.<br /><br /> Это свойство применяется только к проектам [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, это свойство игнорируется.<br /><br /> Добавлять свойство NoWin32Manifest следует только в том случае, если не требуется, чтобы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] внедряла какую-либо информацию манифеста в исполняемый файл приложения; этот процесс называется *виртуализацией*. Для использования виртуализации задайте `<ApplicationManifest>` вместе с `<NoWin32Manifest>` следующим образом:<br /><br /> —   Для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] удалите узел `<ApplicationManifest>`. (В проектах [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] `<NoWin32Manifest>` игнорируется, если существует узел `<ApplicationManifest>`.)<br />—   Для проектов [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] установите для параметра `<ApplicationManifest>` значение `False`, а для параметра `<NoWin32Manifest>` — значение `True`. (В проектах [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] `<ApplicationManifest>` переопределяет `<NoWin32Manifest>`.)|  
+|NoWin32Manifest|Логическое значение, указывающее, внедряется ли в исполняемый файл приложения информация манифеста контроля учетных записей (UAC). Применяется только к проектам Visual Studio, нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, этот элемент игнорируется. Значение `False` (используется по умолчанию) указывает, что информация манифеста UAC внедряется в исполняемый файл приложения. Значение `True` указывает, что информация манифеста UAC не внедряется.<br /><br /> Это свойство применяется только к проектам [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, это свойство игнорируется.<br /><br /> Добавлять свойство NoWin32Manifest следует только в том случае, если не требуется, чтобы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] внедряла какую-либо информацию манифеста в исполняемый файл приложения; этот процесс называется *виртуализацией*. Для использования виртуализации задайте `<ApplicationManifest>` вместе с `<NoWin32Manifest>` следующим образом:<br /><br /> —   Для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] удалите узел `<ApplicationManifest>`. (В проектах [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] `<NoWin32Manifest>` игнорируется, если существует узел `<ApplicationManifest>`.)<br />—   Для проектов [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] установите для параметра `<ApplicationManifest>` значение `False`, а для параметра `<NoWin32Manifest>` — значение `True`. (В проектах [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] `<ApplicationManifest>` переопределяет `<NoWin32Manifest>`.)<br /> Это свойство эквивалентно переключателю `/nowin32manifest` компилятора vbc.exe.|  
 |Optimize|Логическое значение, которое, будучи установленным в `true`, разрешает оптимизации компилятора. Это свойство эквивалентно переключателю `/optimize` компилятора.|  
 |OptionCompare|Задает способ сравнения строк. Допустимые значения: "binary" и "text". Это свойство эквивалентно переключателю `/optioncompare` компилятора vbc.exe.|  
 |OptionExplicit|Логическое значение, которое, будучи установленным в `true`, требует явного объявления переменных в исходном коде. Это свойство эквивалентно переключателю `/optionexplicit` компилятора.|  
@@ -92,7 +91,7 @@ ms.lasthandoff: 12/22/2017
 |PdbFile|Имя выдаваемого PDB-файла. Это свойство эквивалентно переключателю `/pdb` компилятора csc.exe.|  
 |Platform|Операционная система, для которой выполняется сборка. Допустимые значения: "Любой ЦП", "x86" и "x64".|  
 |ProduceReferenceAssembly|Логическое значение, которое при задании `true` включает создание [ссылочных сборок](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) для текущей сборки. При использовании этой функции `Deterministic` должно иметь значение `true`. Это свойство соответствует параметру `/refout` компиляторов `vbc.exe` и `csc.exe`.|
-|RemoveIntegerChecks|Логическое значение, указывающее, включены ли проверки ошибок переполнения для целых чисел. Значение по умолчанию — `false`. Это свойство эквивалентно переключателю `/removeintchecks` компилятора vbc.exe.|  
+|RemoveIntegerChecks|Логическое значение, указывающее, включены ли проверки ошибок переполнения для целых чисел. Значение по умолчанию — `false`. Это свойство эквивалентно переключателю `/removeintchecks` компилятора vbc.exe.|  
 |SGenUseProxyTypes|Логическое значение, указывающее, следует ли создавать прокси-типы с помощью SGen.exe.<br /><br /> Цель SGen использует это свойство для установки флага UseProxyTypes. По умолчанию это свойство имеет значение true, и пользовательского интерфейса для изменения этого значения не существует. Чтобы создать сборку сериализации для типов, не относящихся к веб-службам, добавьте это свойство в файл проекта и присвойте ему значение false, прежде чем импортировать Microsoft.Common.Targets или C#/VB.targets.|  
 |SGenToolPath|Необязательный путь, указывающий расположение, откуда можно получить SGen.exe при переопределении текущей версии SGen.exe.|  
 |StartupObject|Задает класс или модуль, содержащий метод Main или процедуру Sub Main. Это свойство эквивалентно переключателю `/main` компилятора.|  

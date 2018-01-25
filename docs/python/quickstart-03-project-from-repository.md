@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio
 
-После [установки средств поддержки Python в Visual Studio 2017](installation.md) вы можете легко клонировать репозиторий с кодом Python и создать на его основе проект.
+После [установки средств поддержки Python в Visual Studio 2017](installing-python-support-in-visual-studio.md) вы можете легко клонировать репозиторий с кодом Python и создать на его основе проект.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ ms.lasthandoff: 01/12/2018
 14. Запустите программу еще раз. Теперь она должна остановиться на следующей ошибке. Продолжайте исправлять ошибки и повторно запускать программу, если хотите.
 
 > [!Important]
-> В этом кратком руководстве вы создали прямой клон репозитория *python_koans* в GitHub. Такой репозиторий защищен автором от непосредственного изменения, поэтому попытка зафиксировать в нем изменения завершится неудачей. На практике разработчики вместо этого создают вилку такого репозитория в собственной учетной записи GitHub, вносят в нее изменения, а затем создают запросы на вытягивание для отправки изменений в исходный репозиторий. Эти действия описываются в разделе [Учебник, шаг 6. Работа с Git](vs-tutorial-01-06.md).
+> В этом кратком руководстве вы создали прямой клон репозитория *python_koans* в GitHub. Такой репозиторий защищен автором от непосредственного изменения, поэтому попытка зафиксировать в нем изменения завершится неудачей. На практике разработчики вместо этого создают вилку такого репозитория в собственной учетной записи GitHub, вносят в нее изменения, а затем создают запросы на вытягивание для отправки изменений в исходный репозиторий. Эти действия описываются в разделе [Учебник, шаг 6. Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Руководство. Работа с Python в Visual Studio](vs-tutorial-01-01.md)
+> [Руководство. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Создание среды для существующего интерпретатора Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installation.md).
-- [Расположения установки](installation.md#install-locations).
+- [Создание среды для существующего интерпретатора Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md).
+- [Расположения установки](installing-python-support-in-visual-studio.md#install-locations).

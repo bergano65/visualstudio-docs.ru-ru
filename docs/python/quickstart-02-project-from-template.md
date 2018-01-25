@@ -15,19 +15,19 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 4cc18515fd0fa2c24eb38e78f7be315e865f94d0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 
-[Установив поддержку Python в Visual Studio 2017](installation.md), можно легко создать проект Python с помощью различных шаблонов.
+[Установив поддержку Python в Visual Studio 2017](installing-python-support-in-visual-studio.md), можно легко создать проект Python с помощью различных шаблонов.
 
 1. Запустите Visual Studio.
 
-1. Выберите **Файл > Создать > Проект** (CTRL+SHIFT+N). В диалоговом окне **Новый проект** выполните поиск слова "Python" и выберите нужный шаблон. Обратите внимание, что при выборе шаблона отображается его краткое описание. (См. также раздел [Проекты Python](python-projects.md#project-templates).)
+1. Выберите **Файл > Создать > Проект** (CTRL+SHIFT+N). В диалоговом окне **Новый проект** выполните поиск слова "Python" и выберите нужный шаблон. Обратите внимание, что при выборе шаблона отображается его краткое описание. (См. также раздел [Проекты Python](managing-python-projects-in-visual-studio.md#project-templates).)
 
     ![VS2017 Диалоговое окно "Новый проект" с шаблоном Python](media/projects-new-project-dialog2.png)
 
@@ -87,10 +87,10 @@ ms.lasthandoff: 01/12/2018
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Руководство. Работа с Python в Visual Studio](vs-tutorial-01-01.md)
+> [Руководство. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Создание среды для существующего интерпретатора Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installation.md).
-- [Расположения установки](installation.md#install-locations).
+- [Создание среды для существующего интерпретатора Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md).
+- [Расположения установки](installing-python-support-in-visual-studio.md#install-locations).

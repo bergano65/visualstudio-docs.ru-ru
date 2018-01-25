@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3109f33c24b3ff217f6e48c6458a4c6514b0b151
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 340ef03d7b9449f6fc9ee50a4c24afff03120e6f
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Анализ потребления ресурсов и активности потоков пользовательского интерфейса (XAML)
 Используйте профилировщик **Временная шкала приложения** , чтобы найти и исправить проблемы производительности в работе приложений XAML, связанные с взаимодействием. Это средство помогает улучшить производительность приложений XAML, предоставляя подробные сведения об использовании ресурсов приложений. Вы можете проанализировать время, затраченное приложением на подготовку кадров пользовательского интерфейса (макет и обработка), обработку запросов от сети и дисков, а также на такие сценарии, как запуск приложения, загрузка страницы и изменение размера окон.  
@@ -31,8 +31,6 @@ ms.lasthandoff: 12/22/2017
 1.  универсальные приложения для Windows (на Windows 10);  
   
 2.  Windows 8.1  
-  
-3.  Windows Phone 8.1 (обычная платформа XAML);  
   
 4.  Windows Presentation Foundation (.NET 4.0 и более поздней версии).  
   

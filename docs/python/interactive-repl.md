@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: bf04cbfaff76747c952f9cf86e93fea47be2e91f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Работа с интерактивным окном Python
 
@@ -38,7 +38,7 @@ Visual Studio предоставляет ряд режимов REPL Python.
 
 В этой статье описывается **стандартный** режим REPL и режим **отладки** REPL. Дополнительные сведения о режимах IPython см. в статье [Using Python in the Interactive Window](interactive-repl-ipython.md) (Использование Python в интерактивном окне).
 
-Подробное пошаговое руководство с примерами, включая взаимодействие с редактором, например с помощью клавиш CTRL+ВВОД, см. в разделе [Шаг 3. Использование интерактивного окна REPL](vs-tutorial-01-03.md). Вводный видеоролик: [Интерактивное окно Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2 мин 22 с).
+Подробное пошаговое руководство с примерами, включая взаимодействие с редактором, например с помощью клавиш CTRL+ВВОД, см. в разделе [Шаг 3. Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Вводный видеоролик: [Интерактивное окно Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2 мин 22 с).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 

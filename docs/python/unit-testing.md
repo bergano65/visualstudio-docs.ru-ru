@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Настройка модульного тестирования для кода Python
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/12/2018
 
 По соглашению Visual Studio считает тестами все методы, имена которых начинаются с `test`. Это можно продемонстрировать на следующем примере:
 
-1. Откройте [Проект Python](python-projects.md), загруженный в Visual Studio, щелкните его правой кнопкой мыши, выберите **Добавить > Новый элемент...**, а затем выберите **Модульный тест Python** и нажмите **Добавить**.
+1. Откройте [Проект Python](managing-python-projects-in-visual-studio.md), загруженный в Visual Studio, щелкните его правой кнопкой мыши, выберите **Добавить > Новый элемент...**, а затем выберите **Модульный тест Python** и нажмите **Добавить**.
 
 1. Этот процесс создает файл `test1.py`, код которого при прямом вызове скрипта импортирует стандартный модуль `unittest`, производный от тестового класса `unittest.TestCase`, и вызывает метод `unittest.main()`:
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 01/12/2018
 
 ![Отладка теста](media/unit-test-debugging.png)
 
-Вы также можете использовать команды **Анализ покрытия кода для выбранных тестов** и **Профилировать тест**, если их поддерживает используемая версия Visual Studio (см. раздел [Матрица возможностей](python-in-visual-studio.md#features-matrix)).
+Вы также можете использовать команды **Анализ покрытия кода для выбранных тестов** и **Профилировать тест**, если их поддерживает используемая версия Visual Studio (см. раздел [Матрица возможностей](overview-of-python-tools-for-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Известные проблемы
 
