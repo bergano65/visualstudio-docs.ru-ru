@@ -18,6 +18,7 @@
 # Практические руководства
 ## [Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md)
 ## [Использование точек останова](using-breakpoints.md)
+### [Устранение неполадок точек останова](troubleshooting-breakpoints.md)
 ## [Проверка данных](debugger-windows.md)
 ### [Проверка переменных](autos-and-locals-windows.md)
 ### [Установка контрольных значений для переменных](watch-and-quickwatch-windows.md)
