@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3f81f4bca6d268cd9fd32a6edf44cbde40d7c357
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4cac577dae64d1d566ffce8a954a909e720c56dd
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-domain-relationships"></a>Свойства доменных связей
 В следующей таблице свойства связаны с доменной связи. Сведения о связях домена см. в разделе [Общие сведения о моделях, классы и отношения](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. в разделе [настройку и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -38,4 +38,4 @@ ms.lasthandoff: 01/13/2018
 |Ключевое слово Help|Необязательное ключевое слово, используемое для индексации справки F1 для доменной связи.|\<None >|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

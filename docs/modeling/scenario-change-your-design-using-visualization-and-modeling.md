@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 8ad4a4141d27c9250d53a567ac09b1c5ffa05f49
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: изменение проекта с помощью визуализации и моделирования
 Инструменты визуализации и моделирования в Visual Studio позволяют контролировать соответствие системы требованиям пользователей.
@@ -485,11 +485,10 @@ ms.lasthandoff: 01/22/2018
 |------------------|---------------|  
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>См. также  
- [Визуализация кода](../modeling/visualize-code.md)   
- [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)   
- [Использование моделей в гибкой разработки](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)   
+## <a name="see-also"></a>См. также
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Визуализация кода](../modeling/visualize-code.md)   
+[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)   
+[Использование моделей в гибкой разработки](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
  

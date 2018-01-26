@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 64a7f5ae729ff2badfc03750efa43c70973a7498
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Как правило, шаблоны создаются, чтобы они менять код, они создают в соответствии с данными из *модели*. Модель — файла или базы данных, которая содержит основные сведения о требованиях приложения.  
@@ -298,12 +298,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
  Если изменяется исходная модель, необходимо перезапустить все шаблоны в решении. Чтобы сделать это вручную, выберите **преобразовать все шаблоны** на **построения** меню.  
   
- Если установлен пакет SDK визуализации и моделирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], все шаблоны можно преобразовывать автоматически при выполнении сборки. Для этого внесите изменения в файл проекта (CSPROJ или VBPROJ) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:  
+ После установки Visual Studio пакет SDK моделирования, что все шаблоны, преобразовывать автоматически при выполнении сборки. Для этого внесите изменения в файл проекта (CSPROJ или VBPROJ) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:
 
+> [!NOTE]
+> В Visual Studio 2017 г SDK преобразования текстового шаблона и Visual Studio пакет SDK моделирования устанавливаются автоматически при установке отдельных функций Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  

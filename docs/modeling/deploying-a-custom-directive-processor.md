@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
+
 Для использования пользовательского процессора директив в Visual Studio на любом компьютере, необходимо зарегистрировать его одним из способов, описанных в этом разделе.  
   
- Альтернативные методы таковы:  
+Альтернативные методы таковы:  
   
--   [Расширение Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Предоставляет способ установки и удаления процессора директив на вашем и других компьютерах. Обычно можно упаковывать другие возможности в тот же VSIX.  
+-   [Расширения Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Предоставляет способ установки и удаления процессора директив на вашем и других компьютерах. Обычно можно упаковывать другие возможности в тот же VSIX.  
   
 -   [VSPackage](../extensibility/internals/vspackages.md). Вы определяете VSPackage, содержащий помимо процессора директив и другие возможности; это удобный метод регистрации процессора директив.  
   
 -   Определить раздел реестра. При использовании данного метода вы добавляете для процессора директив раздел реестра.  
   
- Необходимо использовать один из этих методов только в том случае, если требуется преобразовать текстовый шаблон в Visual Studio или [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если используется в вашем собственном приложении, это пользовательское ведущее приложение отвечает за поиск процессора директив для каждой директивы.  
+Необходимо использовать один из этих методов только в том случае, если требуется преобразовать текстовый шаблон в Visual Studio или MSBuild. Если используется в вашем собственном приложении, это пользовательское ведущее приложение отвечает за поиск процессора директив для каждой директивы.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>Развертывание процессора директив в VSIX  
- Можно добавить пользовательский процессор директив [расширения Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>Развертывание процессора директив в VSIX
+
+Можно добавить пользовательский процессор директив [расширения Visual Studio (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
   
  Необходимо убедиться, что следующие два элемента содержатся в файле с расширением vsix:  
   
@@ -39,10 +41,10 @@ ms.lasthandoff: 01/13/2018
   
 -   Файл pkgdef, регистрирующий процессор директив. Корневое имя файла сборки должно совпадать с именем сборки. Например, файлы могут называться CDP.dll и CDP.pkgdef.  
   
- Чтобы просмотреть или изменить содержимое файла vsix, измените расширение его имени на zip и откройте этот файл. После изменения содержимого снова поменяйте расширение имени файла на vsix.  
-  
- Файл vsix можно создать несколькими способами. Следующая процедура представляет один из них.  
-  
+Чтобы просмотреть или изменить содержимое файла vsix, измените расширение его имени на zip и откройте этот файл. После изменения содержимого снова поменяйте расширение имени файла на vsix.  
+
+Файл vsix можно создать несколькими способами. Следующая процедура представляет один из них.  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Разработка пользовательского процессора директив в проекте VSIX  
   
 1.  Создайте проект VSIX в Visual Studio.  
@@ -90,11 +92,11 @@ ms.lasthandoff: 01/13/2018
   
 5.  В проекте добавьте ссылки на следующее:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Добавьте в проект класс вашего пользовательского процессора директив.  
   
@@ -197,5 +199,6 @@ ms.lasthandoff: 01/13/2018
 |Класс|REG_SZ|\<**На полное имя класса**>|  
 |Assembly|REG_SZ|\<**Имя сборки в глобальном кэше СБОРОК**>|  
   
-## <a name="see-also"></a>См. также  
- [Создание пользовательских обработчиков директив для текстовых шаблонов T4](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>См. также
+
+[Создание пользовательских обработчиков директив для текстовых шаблонов T4](../modeling/creating-custom-t4-text-template-directive-processors.md)

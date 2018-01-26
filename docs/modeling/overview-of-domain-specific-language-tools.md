@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c1a163e50e2f237430ba13d57a76cfc0d6b1d67
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 1fcba975443deb768a2b3de36bd2744183cdcf40
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 Доменный язык (Инструменты DSL), который размещается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], позволяют создать доменный язык и затем создать все, что пользователи должны иметь для создания моделей, основанных на языке.  
@@ -77,4 +77,4 @@ ms.lasthandoff: 01/13/2018
   
 ## <a name="see-also"></a>См. также  
  [Экспериментальный экземпляр](../extensibility/the-experimental-instance.md)   
- [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

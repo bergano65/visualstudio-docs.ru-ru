@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a3ee963ef1ac4c4159f0fe1922bfafa90875fad7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b6e23b91f411cd5260d31927ec35957a3f6c00c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Сведения о моделях, классах и отношениях
 Доменный язык (DSL), определяется его файл определения DSL вместе с любой пользовательской программы код, который вы могли бы написать. Большая часть программного кода в решении DSL создается из этого файла.  
@@ -25,7 +25,7 @@ ms.lasthandoff: 01/13/2018
 ## <a name="the-dsl-definition"></a>Определение DSL  
  При открытии `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] окно напоминает следующий рисунок.  
   
- ![Конструктор DSL](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Наиболее важные сведения в определения DSL отображается в схема определения DSL. Дополнительные сведения, которые также является частью DslDefinition.dsl, отображается в обозревателе DSL, которая обычно появляется у части диаграммы. Работа с диаграммой для наиболее частых задач и с помощью обозревателя DSL для дополнительной настройки.  
   
@@ -150,4 +150,4 @@ ms.lasthandoff: 01/13/2018
  Связь производного специализирует его базового отношения. Домен классы, которые ссылки должен быть производным от ее или таким же, как классы, связанные с базовым связи. При создании ссылки производного связи в модели это экземпляр производный и базовый связи. В программном коде можно перейти на противоположном конце канала, с использованием свойства, созданные с помощью базового или производного класса.  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

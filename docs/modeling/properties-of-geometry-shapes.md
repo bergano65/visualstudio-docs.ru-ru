@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 84773891342b18a583cf2919a7d09e0aaa9d2b93
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7c2b54b5bbda108c7f616eb71f7945e071721856
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-geometry-shapes"></a>Свойства геометрических фигур
 Геометрических фигур можно использовать для указания того, как экземпляры классов домена отображаются в доменного языка. Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. в разделе [настройку и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -52,4 +52,4 @@ ms.lasthandoff: 01/13/2018
 |Ключевое слово Help|Ключевое слово, используемое для индексации справки F1 для этой фигуры.|\<None >|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

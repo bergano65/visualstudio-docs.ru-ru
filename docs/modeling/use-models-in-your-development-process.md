@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 08517439e2b99ca9ceba29ad3c7558494cf6bb47
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 42c873fc8c7991d5397d611c0aa6009bfc1720c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 В Visual Studio можно использовать модель для изучения и изменения системы, приложения или компонента. Модель может помочь визуализировать среду, в которой работает система, уточнить требования пользователей, определить архитектуру системы, проанализировать код и убедиться, что код удовлетворяет этим требованиям. В разделе [видео Channel 9: Совершенствование архитектуры путем моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).  
@@ -130,12 +130,13 @@ ms.lasthandoff: 01/13/2018
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
-## <a name="see-also"></a>См. также  
- [Использование моделей в гибкой разработки](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
- [Моделирование требований пользователей](../modeling/model-user-requirements.md)   
- [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)   
- [Разработка тестов на основе модели](../modeling/develop-tests-from-a-model.md)   
- [Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)
+## <a name="see-also"></a>См. также
+
+[Использование моделей в гибкой разработки](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
+[Моделирование требований пользователей](../modeling/model-user-requirements.md)   
+[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)   
+[Разработка тестов на основе модели](../modeling/develop-tests-from-a-model.md)   
+[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

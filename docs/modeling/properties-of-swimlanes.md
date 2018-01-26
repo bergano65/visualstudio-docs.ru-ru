@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fdbd94abdaa3a1acb460a3b2a5b276d169c20269
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 84107514e728dbfa79b7dfdaee6c3febaee21274
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-swimlanes"></a>Свойства дорожек
 Полосы задач можно добавить в диаграмму. Дорожки разделить схему на вертикальной или горизонтальной области. Можно определить других фигур, отображаемых в дорожки. Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. в разделе [настройку и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -51,4 +51,4 @@ ms.lasthandoff: 01/13/2018
 |Ключевое слово Help|Ключевое слово, используемый для индексации справки F1 для этой дорожки.|\<None >|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

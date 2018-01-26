@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fe3d624fdfd187ebec59f43fbde8c750958d6703
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d610a7410232104428281d90bf7c67992e2a378
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="debugging-xslt"></a>Отладка XSLT
 Для отладки XSLT можно использовать отладчик среды Visual Studio. Отладчик поддерживает задание точек останова, просмотр состояний выполнения XSLT и т. д. Отладка XSLT доступна в Visual Studio Team System и в выпуске Professional Edition.  
@@ -57,5 +57,5 @@ ms.lasthandoff: 12/22/2017
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Представляет отладчик Visual Studio.  
   
- [Справочник по XSLT](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [XSLT Reference](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  Предоставляет справочные материалы по элементам и функциям XSLT.

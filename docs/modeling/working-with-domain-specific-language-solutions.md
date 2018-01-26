@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Работа с решениями на доменных языках
 Доменный язык (DSL), создается с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения. В этом разделе рассматривается для установки и настройки решений.  
@@ -47,5 +47,5 @@ ms.lasthandoff: 01/13/2018
  [Практическое руководство. Расширение конструктора доменного языка](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Конструктор DSL с помощью команд меню, можно настроить.  
   
- [Автоматизация преобразования всех шаблонов](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Автоматизация преобразования всех шаблонов](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Чтобы избежать, щелкнув преобразовать все шаблоны, его можно сделать автоматически в процессе построения.

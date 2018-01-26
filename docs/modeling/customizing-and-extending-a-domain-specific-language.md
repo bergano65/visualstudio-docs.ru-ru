@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Настройка и расширение доменного языка
 Visual Studio моделирования и визуализации SDK (VMSDK) предоставляет несколько уровней, в которых можно определить средств моделирования:  
@@ -55,7 +55,7 @@ Visual Studio моделирования и визуализации SDK (VMSDK)
 |Удалять, Переподчинение и повторное связывание связанных элементов, при удалении элемента.|Задать **распространяет удалить** значение роли отношений. Более сложные последствия переопределить `ShouldVisitRelationship` и `ShouldVisitRolePlayer` методы в `MyDslDeleteClosure` класс, определенный в **DomainModel.cs**<br /><br /> В разделе [Настройка функции удаления](../modeling/customizing-deletion-behavior.md)|  
 |Сохранить макет формы и внешний вид на копирование и перетаскивания.|Добавление фигуры и соединители скопированный `ElementGroupPrototype`. Является наиболее удобным способом для переопределения`ElementOperations.CreateElementGroupPrototype()`<br /><br /> В разделе [Настройка функции копирования](../modeling/customizing-copy-behavior.md).|  
 |Вставьте фигуры в выбранное место, например в текущее положение указателя.|Переопределить `ClipboardCommandSet.ProcessOnCopy()` использовать версию специфическая `ElementOperations.Merge().` разделе [Настройка функции копирования](../modeling/customizing-copy-behavior.md).|  
-|Создать дополнительные связи, при вставке|Переопределить ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Создать дополнительные связи, при вставке|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Включить перетаскивания из этой диаграммы других доменного языка и Windows элементов|В разделе [как: добавить обработчик перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Разрешить фигуры или, которая позволяет перетаскивать дочерние фигуры, например к порту, как если бы были перетащить родительского.|Определите директива слияния элементов для целевого объекта класса переслать удаляемый объект к родительскому элементу. В разделе [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md).|  
 |Разрешить фигуры или средства, чтобы перетащить фигуру дополнительные ссылки или объекты, созданные. Например, чтобы разрешить комментарий перетаскиваемого на элемент, к которому это должна быть установлена связь.|Определить директива слияния элементов для целевого класса домена и ссылки должен быть создан. В сложных случаях можно добавить пользовательский код. В разделе [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md).|  
@@ -70,10 +70,10 @@ Visual Studio моделирования и визуализации SDK (VMSDK)
 |Объединить несколько доменного языка, чтобы они работали в рамках одного приложения.|В разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
 |Разрешить DSL расширять сторонними производителями и контролировать расширения.|[Расширение доменного языка с помощью MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Совместное использование классов в различных доменных языках с помощью библиотеки доменных языков](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Определение политики блокировки для создания сегментов, доступных только для чтения](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>См. также  
- [Способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md)   
- [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>См. также
+
+[Способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md)   
+[Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

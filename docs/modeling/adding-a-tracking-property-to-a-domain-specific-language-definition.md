@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение доменного языка
 В этом пошаговом руководстве показано, как добавить свойство отслеживания в доменную модель.  
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/13/2018
   
  Например в средства доменного языка (Инструменты DSL), отображаемое имя свойства класса домена имеет значение по умолчанию, которое вычисляется с помощью имени класса домена, но пользователь можно изменить значение во время разработки или выполнить его сброс до вычисленное значение.  
   
- В этом пошаговом руководстве создается доменный язык (DSL), с пространством имен, отслеживания свойство, которое имеет значение по умолчанию на основе свойства по умолчанию пространство имен модели. Дополнительные сведения об отслеживании свойств см. в разделе [определение свойства отслеживания](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ В этом пошаговом руководстве создается доменный язык (DSL), с пространством имен, отслеживания свойство, которое имеет значение по умолчанию на основе свойства по умолчанию пространство имен модели. Дополнительные сведения об отслеживании свойств см. в разделе [определение свойства отслеживания](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   Инструменты DSL поддержка отслеживания дескрипторов свойств. Однако конструктор DSL не может использоваться для добавления свойства отслеживания язык. Таким образом необходимо добавить пользовательский код для определения и реализации свойства отслеживания.  
   
@@ -48,9 +48,9 @@ ms.lasthandoff: 01/13/2018
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>Создание проекта DSL  
  Создайте проект для вашего доменного языка.  
@@ -253,7 +253,7 @@ ms.lasthandoff: 01/13/2018
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Чтобы изменить дескриптор типа для класса домена ExampleModel  
   
 1.  Добавьте следующий код в файл TypeDescriptor.cs.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 34d2008b4316d75d37292b5baa456bf9cdc65e15
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d2d6d4ebfa8ca86179afb8d88b59dca6b42d9e26
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Работа с обозревателем доменного языка
 **Обозреватель DSL** отображает несколько типов данных в виде дерева. Дополнительные сведения о большинство элементов в обозреватель DSL. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -43,4 +43,4 @@ ms.lasthandoff: 01/13/2018
 -   **Поведение сериализации XML**. Настройки сериализации для модели. Дополнительные сведения о сериализации см. в разделе [Настройка хранения файлов и XML-сериализация](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

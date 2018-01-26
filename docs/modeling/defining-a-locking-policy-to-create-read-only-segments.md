@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1b26da119360462c5237977a1b1da8ac5041d84a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 Неизменность API-Интерфейс [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] визуализации и моделирования SDK позволяет программам для блокировки всех или части модели доменного языка (DSL), чтобы его можно считывать, но не изменяется. Этот параметр только для чтения может использоваться, например, чтобы пользователь, можно попросить коллеги можно добавить заметки и просмотрите модель DSL, но запретить их изменять исходный.  
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/13/2018
 > [!NOTE]
 >  Политики блокировки, можно обойти с помощью отражения. Он предоставляет четкой границы для сторонних разработчиков, но не обеспечивают надежную защиту.  
   
- Дополнительные сведения и примеры можно найти по адресу [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [визуализации и моделирования SDK](http://go.microsoft.com/fwlink/?LinkId=186128) веб-сайта.  
+ Дополнительные сведения и примеры можно найти по адресу Visual Studio [визуализации и моделирования SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) веб-сайта.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   

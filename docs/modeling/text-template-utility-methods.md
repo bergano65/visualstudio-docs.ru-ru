@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Служебные методы для текстовых шаблонов
-Существует несколько методов, всегда будут доступны пользователю при написании кода [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] текстового шаблона. Эти методы определяются в <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Существует несколько методов, всегда будут доступны пользователю при написании кода в Visual Studio текстовый шаблон. Эти методы определяются в <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  Можно также использовать другие методы и службы, предоставляемые средой размещения в шаблоне обычный текст (без предварительной обработки). Например, разрешения путей к файлам, журнал ошибок и получения служб, предоставляемых [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и любыми загруженными пакетами.  Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Можно также использовать другие методы и службы, предоставляемые средой размещения в шаблоне обычный текст (без предварительной обработки). Например, разрешения путей к файлам, журнал ошибок и получения служб, предоставляемых Visual Studio и любые загруженными пакетами. Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Написать методы  
- Можно использовать `Write()` и `WriteLine()` методы можно добавлять текст в стандартный блок кода, вместо использования блока кода выражения. Следующие два блока кода функционально эквивалентны.  
+## <a name="write-methods"></a>Написать методы
+
+Можно использовать `Write()` и `WriteLine()` методы можно добавлять текст в стандартный блок кода, вместо использования блока кода выражения. Следующие два блока кода функционально эквивалентны.  
   
-##### <a name="code-block-with-an-expression-block"></a>Блок кода с блоком выражения  
+### <a name="code-block-with-an-expression-block"></a>Блок кода с блоком выражения  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Блок кода, с помощью WriteLine()  
+### <a name="code-block-using-writeline"></a>Блок кода, с помощью WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Методы для отступов  
+## <a name="indentation-methods"></a>Методы для отступов
+
  Отступ методы можно использовать для форматирования выходных данных текстовый шаблон. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Класс имеет `CurrentIndent` строковое свойство, которое отображает текущий отступ в текстовом шаблоне и `indentLengths` поле, список отступы, которые были добавлены. Можно добавить отступ с `PushIndent()` метод и удалить отступ с `PopIndent()` метод. Для удаления всех отступов, используйте `ClearIndent()` метод. Следующий блок кода показано использование этих методов.  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Методы ошибок и предупреждений  
- Ошибки и предупреждения служебные методы можно использовать для добавления сообщений в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] список ошибок. Например следующий код будет добавлен сообщение об ошибке в списке ошибок.  
+ Ошибки и предупреждения служебные методы можно использовать для добавления сообщений список ошибок Visual Studio. Например следующий код будет добавлен сообщение об ошибке в списке ошибок.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Тип `this.Host` зависит от типа узла, в котором выполняется шаблон. В шаблоне, который выполняется в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно привести `this.Host` для `IServiceProvider` для получения доступа к службам, например интегрированной среды разработки. Пример:  
+ Тип `this.Host` зависит от типа узла, в котором выполняется шаблон. В шаблоне, на котором выполняется в Visual Studio, можно привести `this.Host` для `IServiceProvider` для получения доступа к службам, например интегрированной среды разработки. Пример:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

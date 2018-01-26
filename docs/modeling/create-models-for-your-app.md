@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
+
 Схемы моделирования помогают понять, уточнить и передать другим сведения о коде и пользовательских требованиях, которым должна удовлетворять ваша программная система.
-  
- Чтобы узнать, какие версии Visual Studio поддерживают все типы схем, в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Для визуализации архитектуры системы или имеющегося кода создайте следующие схемы:  
-  
+
+Чтобы узнать, какие версии Visual Studio поддерживают все типы схем, в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+
+Для визуализации архитектуры системы или имеющегося кода создайте следующие схемы:  
+
 |**Схема**|**Что показывает**|  
 |-----------------|---------------|  
 |[Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|  
@@ -52,11 +53,10 @@ ms.lasthandoff: 01/13/2018
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|  
 |[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|Используйте модели, чтобы описать общую структуру и поведение системы, а также обеспечить ее соответствие потребностям пользователей.|  
 |[Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)|Убедитесь, что программное обеспечение соответствует потребностям пользователей и общей архитектуре системы.|  
-|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработки](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|  
+|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработки](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|  
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Упорядочивайте модели в рамках проекта большого или среднего размера.|  
   
-## <a name="external-resources"></a>Внешние ресурсы  
-  
-|**Категория**|**Links**|  
-|------------------|---------------|  
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>Ресурсы
+
+[Форум по средствам моделирования и визуализации в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Форум по расширяемости Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

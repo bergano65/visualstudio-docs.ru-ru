@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на компьютере удаленного IIS в Visual Studio 2017 г.
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
 
 ![Remote debugger components](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-В этом руководстве объясняется, как установить и настроить Visual Studio ASP.NET Core 2017 г., его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET 4.5.2 разделе [удаленной отладки ASP.NET на сервере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Кроме того, можно развернуть и отладить в IIS с помощью Azure. Для службы приложений Azure, можно легко развернуть и отладить на экземпляре предварительно настроенных служб IIS с помощью либо [отладчик моментального снимка](../debugger/debug-live-azure-applications.md) или [присоединении отладчика из обозревателя серверов](../debugger/remote-debugging-azure.md).
+В этом руководстве объясняется, как установить и настроить Visual Studio ASP.NET Core 2017 г., его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET 4.5.2 разделе [удаленной отладки ASP.NET на сервере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Кроме того, можно развернуть и отладить в IIS с помощью Azure. Для службы приложений Azure, можно легко развернуть и отладить на предварительно настроенный экземпляр IIS и удаленный отладчик с помощью [отладчик моментального снимка](../debugger/debug-live-azure-applications.md) или [присоединении отладчика из обозревателя серверов](../debugger/remote-debugging-azure.md).
 
 Эти процедуры протестированы на эти конфигурации сервера:
 * Windows Server 2012 R2 и служб IIS 8
