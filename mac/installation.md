@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
 
@@ -49,6 +49,18 @@ ms.lasthandoff: 12/07/2017
 
   ![Выбор элементов](media/installer-image5.png)
 
+  Если вы не хотите устанавливать все платформы, выберите нужные с помощью приведенных ниже рекомендаций.
+
+  * **Приложения, использующие Xamarin**:
+      - Xamarin.Forms — выберите платформы **Android** и **iOS**.
+      - Только iOS — выберите платформу **iOS** (вам нужно также установить [**Xcode**](https://developer.apple.com/xcode/)).
+      - Только Android — выберите платформу **Android** (вам нужно также выбрать соответствующие зависимости).
+      - Только Mac— выберите платформу **macOS** (вам нужно также установить [**Xcode**](https://developer.apple.com/xcode/)).
+      - Полностью кроссплатформенные приложения Xamarin — выберите платформы **Android**, **iOS** и **macOS**.
+  * **Приложения .NET Core** — выберите платформу **.NET Core**.
+  * **Веб-приложения ASP.NET Core** — выберите платформу **.NET Core**.
+  * **Разработка кроссплатформенных игр Unity** — не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac. Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](~/setup-vsmac-tools-unity.md).
+
   На этом экране установки отображается версия и размер каждого компонента. Вы можете щелкнуть каждый из компонентов, чтобы отобразить список его зависимостей (для Android), просмотреть скачиваемые им дополнительные пакеты (для .NET Core) или просмотреть обязательные дополнительные приложения (для iOS и macOS):
 
   ![Дополнительные зависимости для Android](media/installer-image6.png)
@@ -74,17 +86,6 @@ ms.lasthandoff: 12/07/2017
 > [!NOTE]
 Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://www.visualstudio.com/vs/).
 
-## <a name="manual-installation"></a>Установка вручную
-
-Если установка продукта или одного из его компонентов завершается сбоем, возможно, решить проблему удастся путем установки вручную. Чтобы просмотреть необходимые компоненты и скачать каждый из них, выполните указанные ниже действия.
-
-1. На втором экране Visual Studio Installer в строке меню выберите **Показать инструкции по установке вручную**.
-
-    ![Пункт меню для установки вручную](media/installer-image12.png)
-
-2. Следуйте инструкциям по скачиванию и установке компонентов вручную.
-
-  ![Диалоговое окно установки вручную](media/installer-image13.png)
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Установка Visual Studio для Mac в среде, защищенной брандмауэром или прокси-сервером
 
@@ -92,4 +93,24 @@ ms.lasthandoff: 12/07/2017
 
 Настройте сеть, разрешив доступ к следующим расположениям:
 
-* [Конечные точки Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+* [Конечные точки Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+
+## <a name="next-steps"></a>Следующие шаги
+
+Установка Visual Studio для Mac позволяет перейти к написанию кода для приложений. Следующие руководства помогут вам в создании и развертывании проектов.
+
+### <a name="ios"></a>iOS
+
+1. [Привет, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
+2. [Подготовка устройства](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (для запуска приложения на устройстве).
+
+
+### <a name="android"></a>Android
+
+1. [Использование диспетчера пакетов SDK Android для Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Эмулятор SDK для Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Настройка устройства для разработки](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+
+### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Приложения .NET Core, веб-приложения ASP.NET Core, разработка игр Unity
+
+Другие рабочие нагрузки описаны [на этой странице](~/workloads.md).

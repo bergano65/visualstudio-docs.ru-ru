@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 06/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,19 +17,20 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 Дополнительные сведения о специальных возможностях клавиатуры см. в разделе [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Использование только клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Сочетания клавиш позволяют получать доступ к различным командам и окнам Visual Studio. В этом разделе перечислены сочетания клавиш по умолчанию для профиля "Обычные параметры среды разработки", который мог быть выбран при установке Visual Studio. Независимо от выбранного профиля сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**. Кроме того, сочетания клавиш можно настраивать, назначая командам другие сочетания клавиш.
 
-Список распространенных сочетаний клавиш и другие сведения о средствах повышения производительности см. в статьях [Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Tips and Tricks](../ide/tips-and-tricks-for-visual-studio.md) (Советы и рекомендации) и [Productivity Tips](../ide/productivity-tips-for-visual-studio.md) (Советы по повышению производительности).
+Список распространенных сочетаний клавиш и другие сведения о средствах повышения производительности см. в руководствах по работе со [стандартными сочетаниями клавиш для часто используемых команд в Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) и [клавиатурой](../ide/tips-and-tricks-for-visual-studio.md), а также способами [повышения производительности](../ide/productivity-tips-for-visual-studio.md).
 
 В следующей таблице перечислены разделы, команды которых являются глобальными и доступны с помощью сочетаний клавиш из любого раздела Visual Studio.
 

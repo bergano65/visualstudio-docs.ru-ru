@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,16 +14,17 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 Профилировщик **Расход энергии** в Visual Studio позволяет анализировать расход энергии приложениями универсальной платформы Windows на планшетных устройствах с низким энергопотреблением, постоянно или периодически работающих от аккумуляторов. На устройстве, работающем от аккумулятора, приложение с большим энергопотреблением может вызывать такое недовольство пользователя, что он в конце концов удалит его. Оптимизация расхода энергии позволяет улучшить восприятие приложения пользователями и повысить степень его использования.  
@@ -106,7 +108,7 @@ if (performance && performance.mark) {
      Visual Studio анализирует собранные данные и отображает результаты.  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Сбор данных профилирования расхода энергии установленным приложением  
- Инструмент "Расход энергии" можно запускать только в приложениях Магазина Windows 8.1, запущенных из решения Visual Studio или установленных из Магазина Windows. Когда решение открыто в Visual Studio, конечный объект по умолчанию — **Запускаемый проект**. Выбор в качестве конечного объекта установленного приложения.  
+ Средство "Расход энергии" можно запускать только в приложениях UWP, запущенных из решения Visual Studio или установленных из Microsoft Store. Когда решение открыто в Visual Studio, конечный объект по умолчанию — **Запускаемый проект**. Выбор в качестве конечного объекта установленного приложения.  
   
 1.  Щелкните **Изм. конечн. объект** и выберите **Установленное приложение**.  
   

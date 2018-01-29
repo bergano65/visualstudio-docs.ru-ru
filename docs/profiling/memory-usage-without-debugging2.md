@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,16 +13,17 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 1d2f023900735b2e8f3f2235850ab55ec6237efc
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Анализ использования памяти без отладчика Visual Studio
 Средство **Использование памяти** без отладки можно использовать для выполнения перечисленных далее задач.  
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/04/2018
   
 -   Сравнение моментальных снимков для поиска первопричины возникновения проблем с памятью.  
   
- В этом разделе описывается применение инструмента "Использование памяти" для анализа универсального приложения Windows на XAML. Если вы хотите проанализировать использование памяти в универсальных приложениях Windows на базе JavaScript и HTML, см. статью [Analyze memory usage (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx) (Анализ использования памяти [JavaScript]).  
+ В этом разделе описывается применение инструмента "Использование памяти" для анализа приложения XAML UWP. Если вы хотите проанализировать использование памяти в приложениях UWP на базе JavaScript и HTML, см. [анализ использования памяти в JavaScript](../profiling/javascript-memory.md).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Запуск диагностического сеанса по использованию памяти  
   

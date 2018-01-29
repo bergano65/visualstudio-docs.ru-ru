@@ -4,14 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Анализ использования памяти JavaScript в приложениях UPW
 Анализатор памяти JavaScript доступен в Visual Studio и помогает получать информацию об использовании памяти и находить утечки памяти в приложениях универсальной платформы Windows, разработанных для Windows с использованием JavaScript. К поддерживаемым приложениям относятся приложения для универсальных приложений Windows.
@@ -48,36 +46,14 @@ ms.lasthandoff: 12/22/2017
   
      Объекты, которые не создаются непосредственно в коде приложения, автоматически отфильтровываются. Можно также фильтровать данные по именам объектов.  
   
- Руководство по процедуре поиска утечек памяти в работающем приложении см. в статье [Walkthrough: Find a memory leak (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md) (Пошаговое руководство. Поиск утечек памяти [JavaScript]).  
-  
- В этом разделе.  
-  
- [Запуск анализатора памяти JavaScript](#Run)   
- [Проверка использования памяти](#Check)   
- [Isolate a memory leak](#Isolate)   
- [Просмотр сводки использования памяти в реальном времени](#LiveMemory)   
- [View a snapshot summary](#SnapshotSummary)   
- [Просмотр сведений о снимке](#SnapshotDetails)   
- [Просмотр разницы между снимками](#SnapshotDiff)   
- [Просмотр объектов по доминатору](#FoldObjects)   
- [Фильтрация данных по идентификатору](#Filter)   
- [Поиск объекта в дереве объектов](#ShowInRootsView)   
- [Просмотр общих ссылок на объекты](#References)   
- [Отображение встроенных объектов](#BuiltInValues)   
- [Сохранение файлов диагностических сеансов](#Save)   
- [Associate source code with memory usage data](#JSConsoleCommands)   
- [Советы по выявлению проблем памяти](#Tips)  
-  
 ##  <a name="Run"></a> Запуск анализатора памяти JavaScript  
- Анализатор памяти можно использовать при наличии работающего приложения универсальной платформы Windows, открытого в Visual Studio или установленного на компьютере с ОС [!INCLUDE[win8](../debugger/includes/win8_md.md)] или более поздних версий.  
+ Анализатор памяти можно использовать, когда в Visual Studio открыто работающее приложение UWP.
   
 #### <a name="to-run-the-memory-analyzer"></a>Запуск анализатора памяти  
   
 1.  Запустите Visual Studio.  
   
-2.  При запуске приложения из Visual Studio в списке **Начать отладку** на панели инструментов **Стандартная** выберите целевой объект отладки проекта: эмулятор Windows Phone или (для приложения универсальной платформы Windows) **Локальный компьютер**, **Имитатор** или **Удаленный компьютер**.  
-  
-     Дополнительные сведения об этих возможностях см. в разделе [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  При запуске приложения из Visual Studio в списке **Начать отладку** на панели инструментов **Стандартная** выберите целевой объект отладки проекта: **локальный компьютер** или **устройство**.  
   
 3.  В строке меню выберите **Отладка**, **Профилировщик производительности...**.  
   
@@ -400,6 +376,3 @@ if (performance && performance.mark) {
          С помощью этих команд можно изолировать проблемы, которые не удается изолировать вручную с помощью снимка кучи.  
   
     -   Создайте тестовый объект и отслеживайте его в представлениях анализатора памяти JavaScript, например в представлении "Типы". Например, можно прикрепить очень большой объект к другому объекту, чтобы увидеть, был ли определенный объект или элемент удален сборщиком мусора.  
-  
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Поиск утечек памяти (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

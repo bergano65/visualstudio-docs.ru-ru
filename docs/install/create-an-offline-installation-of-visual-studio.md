@@ -2,10 +2,11 @@
 title: "Создание автономной установки Visual Studio | Документы Майкрософт"
 description: "Узнайте, как установить Visual Studio в автономном режиме."
 ms.custom: 
-ms.date: 08/30/2017
+ms.date: 01/17/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,12 +17,13 @@ ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6eb68b00e429db1336f851d6e4789ae0b4c8b803
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b9badba3247846ce63b79d48da7482ff0c58b693
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Создание автономной установки Visual Studio 2017
 
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 Если вы хотите выполнить автономную установку, так как подключение к Интернету недоступно или ненадежно, см. статью [Установка Visual Studio 2017 в сетевых средах с низкой пропускной способностью или низким уровнем надежности](../install/install-vs-inconsistent-quality-network.md). Вы можете создать локальный кэш файлов, необходимых для автономной установки, с помощью командной строки. При этом заменяются ISO-файлы, доступные для предыдущих версий.
 
 > [!NOTE]
-> Если вы являетесь администратором предприятия, которому требуется развернуть Visual Studio 2017 в сети клиентских рабочих станций, которые отделены от Интернета брандмауэром, см. статьи [Создание сетевой установки Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) и [Особые рекомендации по установке Visual Studio в автономной среде](../install/install-visual-studio-in-offline-environment.md).
+> Если вы являетесь администратором предприятия и вам нужно развернуть Visual Studio 2017 в сети клиентских рабочих станций, которые отделены от Интернета брандмауэром, см. руководства по [созданию сетевой установки Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) и [установке сертификатов, требуемых для автономной установки Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
 
 ## <a name="get-support"></a>Техническая поддержка
 Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

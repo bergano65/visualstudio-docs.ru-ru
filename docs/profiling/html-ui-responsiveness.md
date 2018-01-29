@@ -4,31 +4,29 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Анализ скорости реагирования пользовательского интерфейса HTML в универсальных приложениях Windows
 В этой статье описано, как можно изолировать проблемы производительности в приложениях с помощью профилировщика скорости реагирования. Это специальное средство оценки производительности для универсальных приложений Windows.  
@@ -42,9 +40,9 @@ ms.lasthandoff: 12/22/2017
 -   Обновления визуальных элементов происходят реже, чем ожидалось. Такой симптом возникает при слишком большой занятости потока пользовательского интерфейса для поддержания стабильной частоты кадров. Например, если поток пользовательского интерфейса занят, кадры могут отбрасываться. Некоторые операции, не связанные с потоком пользовательского интерфейса — например, сетевые запросы, декодирование изображений и рисование — также могут ограничивать частоту обновлений визуальных элементов. (Не все рисование выполняется в потоке пользовательского интерфейса.)  
   
 ##  <a name="RunningProfiler"></a> Запуск средства скорости реагирования ИП HTML  
- Средство "Отклик пользовательского интерфейса HTML" можно использовать при наличии рабочего приложения универсальной платформы Windows или приложения Windows 8.1, открытого в Visual Studio или установленного на компьютере с ОС Windows 8.1 или более поздней версии.  
+ При наличии рабочего приложения UWP, открытого в Visual Studio, можно использовать средство "Скорость реагирования пользовательского интерфейса HTML".  
   
-1.  При запуске приложения из Visual Studio в раскрывающемся списке **Начать отладку** на панели инструментов **Стандартная** выберите целевой объект развертывания, такой как один из эмуляторов Windows Phone, **Локальный компьютер**, **Имитатор**или **Удаленный компьютер**.  
+1.  При запуске приложения из Visual Studio в раскрывающемся списке **Начать отладку** на панели инструментов **Стандартные** выберите в качестве назначения развертывания **локальный компьютер** или **устройство**.  
   
 2.  В меню **Отладка** выберите пункт **Профилировщик производительности...**  
   

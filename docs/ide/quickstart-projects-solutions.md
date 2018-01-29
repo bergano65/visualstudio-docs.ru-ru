@@ -10,12 +10,13 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Краткое руководство. Проекты и решения
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 12/22/2017
    Проект с именем "QuickDate" появляется под решением в **обозревателе решений**. Сейчас он содержит один файл с именем **App.config**.
 
    > [!NOTE]
-   > Если вы не видите **Visual C#** в левой области диалогового окна, нужно установить рабочую нагрузку **Разработка классических приложений .NET**. Это легко сделать, выбрав ссылку **Открыть Visual Studio Installer** в нижней части левой области. Открывается **Visual Studio Installer**, где можно выбрать подходящую рабочую нагрузку и нажать кнопку **Изменить**.
+   > Если вы не видите **Visual C#** в левой области диалогового окна, нужно установить рабочую нагрузку **Разработка классических приложений .NET**. Это легко сделать, выбрав ссылку **Открыть Visual Studio Installer** в нижней части левой области диалогового окна. После запуска **Visual Studio Installer** выберите рабочую нагрузку **Разработка классических приложений .NET** и нажмите кнопу **Изменить**.
 
    ![Ссылка "Открыть Visual Studio Installer"](media/quickstart-projects-open-installer.png)
 

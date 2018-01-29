@@ -1,10 +1,11 @@
 ---
 title: "Использование параметров командной строки для установки Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 09/22/2017
+ms.date: 01/17/2018
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,12 +16,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
 При установке Visual Studio 2017 из командной строки вы можете использовать различные параметры командной строки, позволяющие настраивать процесс установки и управлять им. В командной строке вы можете выполнить следующие действия:
@@ -40,7 +42,10 @@ ms.lasthandoff: 12/22/2017
 
 > Синтаксис: `vs_enterprise.exe [command] <options>...`
 
-(Замените `vs_enterprise.exe` в соответствии с выпуском продукта, который вы устанавливаете. Дополнительные сведения см. на странице с [примерами параметров командной строки](command-line-parameter-examples.md).)
+(Замените `vs_enterprise.exe` в соответствии с выпуском продукта, который вы устанавливаете.
+
+>[!TIP]
+> Дополнительные примеры использования командной строки для установки Visual Studio 2017 см. на странице с [примерами параметров командной строки](command-line-parameter-examples.md).)
 
 | **Команда** | **Описание** |
 | ----------------------- | --------------- |
@@ -143,7 +148,6 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>См. также
 
- * [Установка Visual Studio 2017](install-visual-studio.md)
- * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
+ * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)

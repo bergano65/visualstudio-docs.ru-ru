@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>Фрагменты кода
 
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 
 В Visual Studio существует два типа фрагментов кода: фрагменты расширения, которые добавляются в указанное курсором место и могут заменить собой ярлык фрагмента, и фрагменты окружения (только в C# и C++), которые добавляются вокруг выделенного блока кода.
 
-Пример вставки фрагмента. В C# ярлык TRYF служит для вставки блока TRY-FINALLY:
+Пример кода расширения. В C# ярлык TRYF служит для вставки блока TRY-FINALLY:
 
 ```csharp
 try

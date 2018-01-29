@@ -165,7 +165,7 @@
 ###### [Переименование](ide/reference/rename-vb.md)
 ###### [Синхронизация типа и имени файла](ide/reference/sync-type-and-file-vb.md)
 #### [Советы по повышению производительности](ide/productivity-tips-for-visual-studio.md)
-##### [Советы и рекомендации](ide/tips-and-tricks-for-visual-studio.md)
+##### [Советы по использованию клавиатуры](ide/tips-and-tricks-for-visual-studio.md)
 ##### [Советы для разработчиков .NET](ide/visual-studio-2017-for-dotnet-developers.md)
 ##### [Определение и настройка сочетаний клавиш](ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 ###### [Сочетания клавиш по умолчанию для часто используемых команд](ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

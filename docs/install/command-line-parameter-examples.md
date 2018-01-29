@@ -2,21 +2,23 @@
 title: "Примеры параметров командной строки для установки Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 05/06/2017
-ms.reviewer: tims
+ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4729300eea0a4e1474779edd4bec021a5db9e73c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f91810f53a27cc988c44e6c283364bb2d29e39e0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Примеры параметров командной строки для установки Visual Studio 2017
 Чтобы проиллюстрировать [использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md) на практике, здесь приводится несколько примеров, которые вы можете настроить в соответствии с требуемыми задачами.
@@ -35,6 +37,15 @@ vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
 ```
+
+* Обновите экземпляр Visual Studio с помощью командной строки без интерактивных запросов но с отображением хода выполнения процесса:
+```
+vs_enterprise.exe --update --quiet --wait
+vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+```
+
+> [!NOTE]
+> Обе команды являются обязательными. Первая команда обновляет Visual Studio Installer. Первая команда обновляет экземпляр Visual Studio. Чтобы избежать появления диалогового окна "Контроль учетных записей", запустите командную строку с правами администратора. 
 
 * Выполните автоматическую установку экземпляра Visual Studio для настольных ПК с французским языковым пакетом. Управление должно возвращаться только после завершения установки продукта.
 ```

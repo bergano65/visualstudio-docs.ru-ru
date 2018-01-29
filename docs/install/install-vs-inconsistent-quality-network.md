@@ -1,25 +1,26 @@
 ---
 title: "Установка в сетевых средах с низкой пропускной способностью или низким уровнем надежности | Документация Майкрософт"
 description: "Описание принципов работы установщика Visual Studio в условиях плохого сетевого подключения с инструкциями по скачиванию файлов установки перед началом установки."
-ms.date: 08/30/2017
-ms.reviewer: tims
+ms.date: 01/17/2018
+ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- '{{PLACEHOLDER}}'
-- '{{PLACEHOLDER}}'
-ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
-author: timsneath
+- installing Visual Studio
+- no internet connection
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Установка Visual Studio 2017 в сетевых средах с низкой пропускной способностью или низким уровнем надежности
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 12/22/2017
 Однако если подключение к Интернету недоступно или ненадежно, вы можете создать локальный кэш файлов, необходимых для автономной установки, с помощью командной строки. Ниже описывается порядок действий.
 
 > [!NOTE]
-> Если вы являетесь администратором предприятия, которому требуется развернуть Visual Studio 2017 в сети клиентских рабочих станций, которые отделены от Интернета брандмауэром, см. статьи [Создание сетевой установки Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) и [Особые рекомендации по установке Visual Studio в автономной среде](../install/install-visual-studio-in-offline-environment.md).
+> Если вы являетесь администратором предприятия и вам нужно развернуть Visual Studio 2017 в сети клиентских рабочих станций, которые отделены от Интернета брандмауэром, см. руководства по [созданию сетевой установки Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) и [установке сертификатов, требуемых для автономной установки Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>Шаг 1. Скачивание начального загрузчика Visual Studio
 
@@ -84,8 +85,8 @@ ms.lasthandoff: 12/22/2017
 
 ```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
 
-  > [!NOTE]
-  > Если возникает ошибка, указывающая на недопустимую подпись, вам нужно установить обновленные сертификаты. Откройте папку "Сертификаты" в автономном кэше. Дважды щелкните каждый файл сертификата и выполните инструкции в мастере диспетчера сертификатов. Если он предложит ввести пароль, оставьте это поле пустым.
+> [!NOTE]
+> Если возникает ошибка, указывающая на недопустимую подпись, вам нужно установить обновленные сертификаты. Откройте папку "Сертификаты" в автономном кэше. Дважды щелкните каждый файл сертификата и выполните инструкции в мастере диспетчера сертификатов. Если он предложит ввести пароль, оставьте это поле пустым.
 
 ## <a name="list-of-language-locales"></a>Список языковых стандартов
 

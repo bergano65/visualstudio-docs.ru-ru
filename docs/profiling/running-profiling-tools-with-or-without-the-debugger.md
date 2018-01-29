@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Выполнение средств профилирования с отладчиком и без него
 Теперь в Visual Studio можно выбирать средства производительности. Некоторые из них (например, **Загрузка ЦП** и **Использование памяти**) можно использовать с отладчиком или без него. Средства производительности, используемые без отладчика, предназначены для выполнения в конфигурациях выпуска, а средства, интегрированные в отладчик, предназначены для выполнения в конфигурациях отладки.  
@@ -77,7 +79,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  В меню **Отладка** выберите пункт **Профилировщик производительности...** (сочетание клавиш — ALT+F2).  
   
-3.  На странице запуска средств диагностики выберите режим запуска одного средства или нескольких средств в сеансе. Отображаются только инструменты, подходящие типу проекта и языку программирования. При выборе средства диагностики можно указать только те средства, которые могут работать в одном и том же сеансе диагностики. Вот как может выглядеть вариант вашего выбора для универсального приложения Windows на C#:  
+3.  На странице запуска средств диагностики выберите режим запуска одного средства или нескольких средств в сеансе. Отображаются только инструменты, подходящие типу проекта и языку программирования. При выборе средства диагностики можно указать только те средства, которые могут работать в одном и том же сеансе диагностики. Так могут выглядеть выбранные варианты для приложения C# UWP:  
   
      ![Выбор средств диагностики](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
@@ -123,7 +125,7 @@ ms.lasthandoff: 12/22/2017
  ![Указание URL-адреса для отображения в Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
- Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  Для универсальных приложений Windows см. раздел [Запуск приложений универсальной платформы Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  См. руководство по [запуску приложений UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Записи в блогах и статьи MSDN от команды разработчиков средств диагностики  
  [Журнал MSDN Magazine. Анализ производительности во время отладки в Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
