@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Начало работы с отладчиком Visual Studio
 Отладчик Visual Studio можно легко использовать на любом языке. Здесь мы покажем, как выполнить отладку простой программы C#, но можно применить те же действия к коду на других языках, например C++ и JavaScript.
@@ -27,7 +29,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>Отладка простого проекта C#  
  Давайте начнем с простого консольного приложения C# (**файл > Создать > проект**, а затем выберите **Visual C#** и затем **консольное приложение**). Если вы никогда не работали с Visual Studio, см. раздел [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  Можно навести на **testInt** переменной, чтобы просмотреть текущее значение в подсказке.  
   
- ![DBG &#95; Основные сведения о &#95; данные &#95; Советы по](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  Под окном кода должны увидеть **видимые**, **локальные**, и **Контрольные значения** windows. В этих окнах отображаются текущие значения переменных во время выполнения. Оба **видимые** и **локальные** Показать windows **testInt** со значением **10**.  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  Чтобы увидеть разницу между **шаг с заходом** и **шаг с обходом**, нам нужно добавить метод, вызываемый другим методом. Добавьте метод в приложение C# и вызовите его из метода Main. Код должен выглядеть следующим образом:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  

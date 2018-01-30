@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Навигация по коду с помощью отладчика Visual Studio
 Ознакомиться с командами и сочетания клавиш для перемещения кода в отладчике, и, чтобы быстрее и проще для поиска и устранения проблем в приложении. При перемещении кода в отладчике можно проверять состояние приложения или Дополнительные сведения о его поток выполнения.  
@@ -32,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
  Зеленая стрелка также запускает отладчик (то же, что **F5**).  
   
- ![DBG &#95; Основные сведения о &#95; Запустить &#95; Отладка](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Включить несколько способов, что можно запустить приложение с подключенным отладчиком **F11** ([шаг с заходом в код](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([шаг с обходом кода](#BKMK_Step_over_Step_out)), или с помощью с помощью **выполнить до текущей позиции**.  См. другие разделы в этом разделе приводятся сведения о сделать эти параметры.  
   
  При отладке, желтая линия показан код, который будет выполнена следующей.  
   
- ![DBG &#95; Основные сведения о &#95; Разрыв &#95; Режим](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Во время отладки, можно переключаться между команды **F5**, **F11** и использовать другие функции, описанные в этом разделе (например, точки останова), чтобы быстро найти код, который будет использоваться для просмотра.  
   
@@ -56,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Отладчик фактически осуществляет пошаговое выполнение операторов кода, а не физических строк. Например, предложение `if` может быть записано в одной строке:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ ms.lasthandoff: 12/22/2017
 |Команда клавиатуры|Команда меню|Описание:|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Шаг с обходом**|Если текущая строка содержит вызов функции **шаг с обходом** выполняет код, а затем приостанавливает выполнение в первой строке кода после возврата вызываемой функции.|  
-|**SHIFT + F11**|**Шаг с выходом**|**Шаг с выходом** продолжает выполнение кода и приостанавливает выполнение, когда текущая функция возвращает (отладчик пропускает до текущей функции).|  
+|**Shift+F11**|**Шаг с выходом**|**Шаг с выходом** продолжает выполнение кода и приостанавливает выполнение, когда текущая функция возвращает (отладчик пропускает до текущей функции).|  
   
 > [!TIP]
 >  Если необходимо найти точку входа в приложение, начните с **F10** или **F11**. Эти команды зачастую полезно при проверке состояние приложения или найти дополнительные сведения о его поток выполнения.  
@@ -90,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
      Для установки простой точки останова в коде откройте исходный файл в редакторе Visual Studio. Поместите курсор в строку кода, где требуется приостановить выполнение и щелкните правой кнопкой мыши в окне кода, чтобы открыть контекстное меню и выберите **останова > Вставить точку останова** (или нажмите клавишу **F9**). Отладчик приостанавливает выполнение справа, перед выполнением указанной строки.  
   
-     ![Установите точку останова](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
+     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
      Точки останова в Visual Studio предоставляют широкий набор дополнительных функций, таких как условные точки останова и точки трассировки. В разделе [использование точек останова](../debugger/using-breakpoints.md).  
   
