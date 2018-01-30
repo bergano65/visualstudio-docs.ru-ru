@@ -20,6 +20,7 @@
 ## [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md)
 ### [Выполнение модульного теста как 64-разрядного процесса](run-a-unit-test-as-a-64-bit-process.md)
 ### [Пошаговое руководство. Создание и запуск модульных тестов для приложений UWP](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
+### [Вопросы и ответы по обозревателю тестов](test-explorer-faq.md)
 ## [Настройка модульных тестов с помощью файла .runsettings](configure-unit-tests-by-using-a-dot-runsettings-file.md)
 ## [Создание модульных тестов для управляемого кода](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 ### [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
