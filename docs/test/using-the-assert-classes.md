@@ -14,13 +14,14 @@ helpviewer_keywords:
 - unit tests, Assert classes
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: f2d0e0020ae26a3a2331643f74f436441612b9fc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 01d41202f49a61a1ae2ba0f926b5c5b563ab351c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-the-assert-classes"></a>Использование классов Assert
 Классы Assert пространства имен UnitTestingFramework служат для проверки определенных функциональных возможностей. Метод модульного теста использует код метода в коде разработки, но докладывает о корректности поведения кода только в том случае, если включены операторы Assert.  
@@ -59,6 +60,7 @@ ms.lasthandoff: 01/09/2018
   
  Если необходимо, чтобы метод теста проверял, является ли исключение, возникающее в этом методе, на самом деле требуемым исключением, включите в метод теста атрибут ExpectedExceptionAttribute.  
   
-## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>См. также
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
+[Модульное тестирование кода](../test/unit-test-your-code.md)

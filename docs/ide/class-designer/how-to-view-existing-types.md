@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.CannotShowBaseType
+f1_keywords:
+- vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
 - types [Visual Studio], visualizing
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fa9ab600c4f4be61a80b819fd20104a3639f0a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f9b5b4aed79dfbfda19020cfda17af68d7ae186c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Практическое руководство. Просмотр существующих типов (конструктор классов)
 Для просмотра существующего типа и его членов, добавьте его фигуру на диаграмму классов.  
@@ -50,7 +53,7 @@ ms.lasthandoff: 12/22/2017
 Кроме того, чтобы просмотреть типы в проекте, можно перетащить один или более типов из узла проекта в «Окне классов» на схему классов.  
   
 > [!TIP]
->  Если представление классов не открыто, откройте его из меню **Вид**. Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Если представление классов не открыто, откройте его из меню **Вид**.
   
 Чтобы отобразить типы на схеме в месте по умолчанию, выберите один или несколько типов в представлении классов, щелкните правой кнопкой мыши выбранные типы и выберите команду **Просмотр схемы класса**.  
   

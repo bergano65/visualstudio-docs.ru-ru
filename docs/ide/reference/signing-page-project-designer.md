@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,16 +20,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 53fe343002de3f89431927c95f36a0c092b36c2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="signing-page-project-designer"></a>Страница "Подписывание" в конструкторе проектов
 Используйте страницу **Подписывание** **конструктора проектов** для подписи манифестов приложения и развертывания, а также сборок (подпись с помощью строгих имен).  
@@ -89,11 +91,11 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  При подписи сборки у вас не всегда может быть доступ к закрытому ключу. Например, организация может использовать тщательно охраняемую пару ключей, не предоставляемую разработчикам для повседневного использования. Открытый ключ может быть доступен, однако доступ к закрытому ключу может предоставляться лишь нескольким сотрудникам. В этом случае можно использовать *отложенную* или *частичную подпись* для предоставления открытого ключа, отложив добавление закрытого ключа до передачи сборки.  
   
-## <a name="see-also"></a>См. также  
- [Справочник по свойствам проектов](../../ide/reference/project-properties-reference.md)   
- [Управление сборками и подписывание манифестов](../../ide/managing-assembly-and-manifest-signing.md)   
- [Подписывание управляемых приложений с использованием строгого имени](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Практическое руководство. Подписание манифестов приложения и развертывания](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Практическое руководство. Подписывание сборки (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)   
- [Практическое руководство. Подписание сборки строгим именем](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [Сборки со строгими именами](/dotnet/framework/app-domains/strong-named-assemblies)   
+## <a name="see-also"></a>См. также
+
+[Справочник по свойствам проектов](../../ide/reference/project-properties-reference.md)  
+[Управление сборками и подписывание манифестов](../../ide/managing-assembly-and-manifest-signing.md)  
+[Практическое руководство. Подписание манифестов приложения и развертывания](../../ide/how-to-sign-application-and-deployment-manifests.md)  
+[Практическое руководство. Подписывание сборки (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)  
+[Практическое руководство. Подписание сборки строгим именем](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)  
+[Сборки со строгими именами](/dotnet/framework/app-domains/strong-named-assemblies) 

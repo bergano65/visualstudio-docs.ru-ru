@@ -15,17 +15,19 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 Узнайте, каким образом редактор Visual Studio поддерживает возможности чтения и перемещения по разным языкам программирования и как можно добавить поддержку редактора Visual Studio для других языков.  
@@ -40,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 |||||||  
 |-|-|-|-|-|-|  
 |Bat|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Перейти|JavaDoc|Objective-C|ShaderLab|Visual C#|  
+|Clojure|Перейти|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|LESS|Python|SQL-код|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
@@ -62,7 +64,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual C++  
   
--   Visual C#  
+-   C#  
   
  Все эти типы файлов имеют описанные ранее функции, даже если поддержка для данного языка еще не была установлена. Установка специальной поддержки для некоторых языков может обеспечить дополнительную поддержку, например IntelliSense и другие расширенные языковые функции, такие как лампочки.  
   

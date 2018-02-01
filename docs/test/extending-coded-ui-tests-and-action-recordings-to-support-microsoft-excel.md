@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ae08752c7687844fbe620bf6314496b474b6e915
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0133db8e1060da48e5938a08ded187fa900b4d30
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel
 Платформа тестирования для закодированных пользовательских интерфейсов и записей действий поддерживает не все пользовательские интерфейсы. Возможно, пользовательский интерфейс, который вы хотите протестировать, не поддерживается. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса или запись действия для электронной таблицы [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Тем не менее можно создать собственное расширение для платформы закодированных тестов пользовательского интерфейса, которое будет поддерживать определенный пользовательский интерфейс, используя расширяемость такой платформы. В следующем разделе представлен пример расширения платформы для поддержки создания закодированных тестов пользовательского интерфейса и записей действий для [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Дополнительные сведения о поддерживаемых платформах см. в статье [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
@@ -68,14 +69,16 @@ ms.lasthandoff: 01/09/2018
   
  Возможно, понадобится изменить точные пути для копирования, но дополнительные установки не потребуются. На 64-разрядном компьютере используйте 32-разрядную командную строку Visual Studio Enterprise для запуска файла `CopyDrop.bat`.  
   
-### <a name="testing-excel-with-the-sampletestproject"></a>Тестирование Excel с помощью SampleTestProject  
- Тест можно запустить в предоставленном тестовом проекте, где используется определенная версия Excel, которая может у вас отсутствовать, или можно создать собственный тестовый проект и записать свой тест. Дополнительные сведения см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
-  
-## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
- [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+### <a name="testing-excel-with-the-sampletestproject"></a>Тестирование Excel с помощью SampleTestProject
+
+Тест можно запустить в предоставленном тестовом проекте, где используется определенная версия Excel, которая может у вас отсутствовать, или можно создать собственный тестовый проект и записать свой тест. Дополнительные сведения см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md).
+
+## <a name="see-also"></a>См. также
+
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
+[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
+[Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
+[Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

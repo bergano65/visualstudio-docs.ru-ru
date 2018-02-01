@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cc663c02d3151e6dd55c1c35388ac7b33f049bb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Иерархическая организация ресурсов для локализации
 В Visual Studio локализованные ресурсы (такие данные, как строки и изображения, относящиеся к определенным языкам и региональным параметрам) хранятся в отдельных файлах. Они загружаются в соответствии с языком и региональными параметрами пользовательского интерфейса. Чтобы понять, как загружаются локализованные ресурсы, их можно представить в виде упорядоченной иерархии.  
@@ -50,10 +52,9 @@ ms.lasthandoff: 12/22/2017
   
  ![Схема NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>См. также  
- [Языки нейтральных ресурсов для локализации](../ide/neutral-resources-languages-for-localization.md)   
- [Безопасность и локализованные вспомогательные сборки](../ide/security-and-localized-satellite-assemblies.md)   
- [Локализация приложений](../ide/localizing-applications.md)   
- [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)   
- [Практическое руководство. Установка значений Culture и UICulture для глобализации форм Windows Forms](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
- [Практическое руководство. Указание значений языка и региональных параметров (пользовательского интерфейса) для глобализации веб-страниц ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+## <a name="see-also"></a>См. также
+
+[Языки нейтральных ресурсов для локализации](../ide/neutral-resources-languages-for-localization.md)  
+[Безопасность и локализованные вспомогательные сборки](../ide/security-and-localized-satellite-assemblies.md)  
+[Локализация приложений](../ide/localizing-applications.md)  
+[Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

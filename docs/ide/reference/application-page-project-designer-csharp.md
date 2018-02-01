@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f9b348ad39b26b22e1678e76a1310e2c3f9b863
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
+
 Страница **Приложение** в **конструкторе проектов** служит для задания параметров и свойств приложения проекта.  
   
 Чтобы получить доступ к странице **Приложение**, выберите узел проекта (не узел **Решение**) в **обозревателе решений**. Затем в строке меню выберите **Проект** > **Свойства**. После того как откроется конструктор проектов, перейдите на вкладку **Приложение**.  
@@ -98,8 +99,4 @@ ms.lasthandoff: 12/22/2017
 **Файл ресурсов**  
 Установите переключатель в это положение, если проект содержит файл ресурсов. В этом случае параметры **Значок** и **Манифест** будут отключены.  
   
-Введите путь и имя или воспользуйтесь кнопкой "Обзор" (**...**), чтобы добавить к проекту файл ресурсов Win32.  
-  
-## <a name="see-also"></a>См. также  
-[Управление свойствами приложения](../../ide/application-properties.md)  
-[Написание кода в решениях Office](/office-dev/office-dev/writing-code-in-office-solutions)
+Введите путь и имя или воспользуйтесь кнопкой "Обзор" (**...**), чтобы добавить к проекту файл ресурсов Win32.

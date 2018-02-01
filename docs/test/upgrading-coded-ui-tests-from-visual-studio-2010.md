@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010
 Тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, которые созданы в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] с пакетом обновления 1 (SP1), автоматически восстанавливаются при открытии их в Visual Studio 2012 или более поздней версии. Если тестовые проекты помещаются в систему управления версиями, файлы проектов извлекаются для этого восстановления. После восстановления эти тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, можно использовать в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -25,7 +26,7 @@ ms.lasthandoff: 01/09/2018
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  Visual Studio включает несколько типов тестового проекта. Если вы создадите новый закодированный тест пользовательского интерфейса, он будет создан в типе проекта закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в разделе [Обновление тестов из более ранних версий Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+> Visual Studio включает несколько типов тестового проекта. Если вы создадите новый закодированный тест пользовательского интерфейса, он будет создан в типе проекта закодированных тестов пользовательского интерфейса.
   
 > [!WARNING]
 >  Тестовые проекты[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] , содержащие закодированные тесты пользовательского интерфейса, необходимо перестроить при открытии тестового проекта в [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] или [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] параллельно с [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -66,6 +67,5 @@ ms.lasthandoff: 01/09/2018
 ## <a name="see-also"></a>См. также
 
 [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Обновление тестов из более ранних версий Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)  
 [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Работа с несколькими учетными записями пользователя
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 1. Щелкните правой кнопкой мыши узел проекта в обозревателе решений и выберите **Добавить > Подключенная служба**. Откроется мастер **добавления подключенной службы** со списком служб в учетной записи Azure, связанной с идентификатором входа Visual Studio. Обратите внимание, что вам не нужно выполнять отдельный вход в Azure. Однако необходимо войти в другие учетные записи при первой попытке доступа к их ресурсам с данного компьютера.
 
     > [!WARNING]
-    > При первом создании приложения UWP в Visual Studio на конкретном компьютере вам будет предложено включить устройство для работы в режиме разработки путем последовательного выбора **Параметры | Обновления и безопасность | Для разработчиков**  на вашем компьютере. Дополнительные сведения см. в разделе [Включение устройства для разработки](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).
+    > При первом создании приложения UWP в Visual Studio на конкретном компьютере вам будет предложено включить устройство для работы в режиме разработки путем последовательного выбора **Параметры | Обновления и безопасность | Для разработчиков**  на вашем компьютере. Дополнительные сведения см. в разделе [Включение устройства для разработки](/windows/uwp/get-started/enable-your-device-for-development).
 
 ### <a name="access_azure"></a> Доступ к Azure Active Directory в веб-проекте
 

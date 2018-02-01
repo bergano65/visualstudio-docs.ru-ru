@@ -16,13 +16,14 @@ helpviewer_keywords:
 - data-driven unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a582796e7436df49a719d758896ee8dcea43b068
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 74d271b6d1c9124d323b9c1ecbbfe9e716b1c5b8
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. Создание модульного теста, управляемого данными
 Используя платформу модульного тестирования Майкрософт для управляемого кода, можно настроить метод модульного теста для получения значений из источника данных, которые впоследствии будут использоваться в методе теста. Этот метод последовательно выполняется для каждой строки в источнике данных, что облегчает тестирование разнообразных входных данных с помощью одного метода.  
@@ -182,12 +183,12 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
  После исправления тестируемого метода и повторного выполнения теста панель результатов станет зеленой и метод теста переместится в группу **Пройденные тесты**.  
   
-## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Практическое руководство. Создание и выполнение модульного теста](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
- [Модульное тестирование кода](../test/unit-test-your-code.md)   
- [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)   
- [Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+## <a name="see-also"></a>См. также
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>  
+[Модульное тестирование кода](../test/unit-test-your-code.md)  
+[Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)  
+[Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

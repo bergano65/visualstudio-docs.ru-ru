@@ -7,18 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: coded UI tests, data-driven
+helpviewer_keywords:
+- coded UI tests, data-driven
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 50d4a9d6b300a46ac074989e91d9eb4aecf9a496
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f88dcf7bf952cf96663e8d42ad9d64e6459cb7d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
+
 Для тестирования различных условий можно запускать тесты несколько раз с различными значениями параметров. Управляемые данными закодированные тесты пользовательского интерфейса — удобный способ сделать это. Вы задаете значения параметров в источнике данных, и каждая строка в источнике данных — это итерация закодированного теста пользовательского интерфейса. Общий результат теста будет основываться на результате всех итераций. Например если одна итерация завершается неудачей, общим результатом теста будет ошибка.  
   
  **Требования**  
@@ -47,17 +50,16 @@ ms.lasthandoff: 01/09/2018
      ![Создание метода тестирования](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Закройте построитель теста. Метод добавляется в тест.  
-  
-    ```csharp  
+
+    ```csharp
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
         // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.  
-        this.UIMap.AddNumbers();  
-  
-    }  
-    ```  
-  
+        this.UIMap.AddNumbers();
+    }
+    ```
+
 5.  С помощью метода `AddNumbers()` проверьте, выполняется ли тест. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Запуск тестов**. (Сочетание клавиш: Ctrl + R, T).  
   
      В окне обозревателя тестов отображается результат теста, показывающий, пройден тест или нет. Чтобы открыть окно обозревателя тестов, в меню **ТЕСТ** выберите пункт **Окна**, а затем выберите пункт **Обозреватель тестов**.  
@@ -78,7 +80,7 @@ ms.lasthandoff: 01/09/2018
   
      Так как метод `ValidateSum` проверяет результаты метода `AddNumbers`, переместите его в нижнюю часть блока кода.  
   
-    ```csharp  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -86,8 +88,8 @@ ms.lasthandoff: 01/09/2018
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
 9. Убедитесь, что тест выполняется, с помощью метода `ValidateSum()`. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Запуск тестов**. (Сочетание клавиш: Ctrl + R, T).  
   
@@ -123,7 +125,7 @@ ms.lasthandoff: 01/09/2018
   
 1.  Чтобы привязать источник данных, добавьте атрибут `DataSource` в существующий атрибут `[TestMethod]`, который находится сразу над методом теста.  
   
-    ```  
+    ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
     public void CodedUITestMethod1()  
     {  
@@ -132,14 +134,13 @@ ms.lasthandoff: 01/09/2018
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-  
-    ```  
-  
+    }
+    ```
+
      Источник данных теперь доступен для использования в этом тестовом методе.  
   
     > [!TIP]
-    >  Примеры использования других типов источников данных, таких как XML, SQL Express и Excel, см. в разделе [Примеры атрибутов источников данных](#CreateDataDrivenCUIT_QA_DataSourceAttributes).  
+    > Примеры использования других типов источников данных, таких как XML, SQL Express и Excel, см. в разделе [Примеры атрибутов источников данных](#CreateDataDrivenCUIT_QA_DataSourceAttributes).  
   
 2.  Запустите тест.  
   
@@ -151,7 +152,7 @@ ms.lasthandoff: 01/09/2018
   
 1.  Добавьте `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` в верхнюю часть файла CodedUITest.cs:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text.RegularExpressions;  
@@ -163,11 +164,11 @@ ms.lasthandoff: 01/09/2018
     using Microsoft.VisualStudio.TestTools.UITest.Extension;  
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;  
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
-    ```  
+    ```
   
 2.  Добавьте `TestContext.DataRow[]` в метод `CodedUITestMethod1()`, который будет применять значения из источника данных. Значения из источника данных переопределяют константы, назначенные элементам управления UIMap, с помощью элементов управления `SearchProperties`:  
   
-    ```  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -177,8 +178,8 @@ ms.lasthandoff: 01/09/2018
         this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
      Чтобы понять, в какие свойства поиска следует кодировать данные, используйте редактор закодированных тестов пользовательского интерфейса.  
   
@@ -235,26 +236,26 @@ ms.lasthandoff: 01/09/2018
   
 ### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Вопрос. Можно ли использовать управляемые данными тесты в моем приложении Windows Phone?  
  **О.** Да. Закодированные тесты ИП на основе данных для Windows Phone определяются с помощью атрибута DataRow тестового метода. В следующем примере для x и y заданы значения 1 и 2 в первой итерации и значения -1 и -2 во второй итерации теста.  
-  
-```  
+
+```csharp
 [DataRow(1, 2, DisplayName = "Add positive numbers")]  
 [DataRow(-1, -2, DisplayName = "Add negative numbers")]  
 [TestMethod]  
-public void DataDrivingDemo_MyTestMethod(int x, int y)  
-  
-```  
-  
- Дополнительные сведения см. в разделе [Использование управляемых данными закодированных тестов пользовательского интерфейса в приложениях Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
+public void DataDrivingDemo_MyTestMethod(int x, int y)
+```
+
+Дополнительные сведения см. в разделе [Использование управляемых данными закодированных тестов пользовательского интерфейса в приложениях Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).
   
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>В. Почему не следует изменять файл UIMap.Designer?  
  **О**. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. В этом примере и в большинстве случаев изменения кода, необходимые, чтобы тест использовал источник данных, можно делать в файле исходного кода теста (т. е. CodedUITest1.cs).  
-  
- Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.  
-  
-## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
- [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.  
+
+## <a name="see-also"></a>См. также
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
+[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
+[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md)   
+[Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
+[Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesAdvancedServices
-helpviewer_keywords: Advanced Settings for Services dialog box
+f1_keywords:
+- vb.ProjectPropertiesAdvancedServices
+helpviewer_keywords:
+- Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77f2f55d142f87e43f2bd3848c8dcd0b352c197e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 264f90329bfbf969f50dbc38073bdda26987fd26
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Диалоговое окно "Дополнительные параметры служб"
 Службы клиентских приложений предоставляют упрощенный доступ к службам входа, ролей и профилей [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] из приложений Windows Forms и Windows Presentation Foundation (WPF). Вы можете использовать страницу **Службы** **конструктора проектов**, чтобы настраивать службы клиентских приложений. Дополнительные сведения о странице **Службы** см. в разделе [Страница "Службы" в конструкторе проектов](../../ide/reference/services-page-project-designer.md).  
@@ -28,14 +32,14 @@ ms.lasthandoff: 12/22/2017
   
  Чтобы открыть диалоговое окно **Дополнительные параметры служб**, выберите узел проекта в **обозревателе решений** и затем в меню **Проект** щелкните команду **Свойства**. Когда откроется окно **Конструктор проектов**, перейдите на вкладку **Службы** и нажмите кнопку **Дополнительно**. Эта кнопка остается недоступной, пока вы не включите службы клиентских приложений.  
   
-## <a name="task-list"></a>список задач  
- [Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
- [Практическое руководство. Автономная работа со службами клиентских приложений](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
-  
-## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
+## <a name="task-list"></a>список задач
+
+- [Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
+
  **Локально сохранять хэш пароля для обеспечения входа вне сети**  
- Указывает, будет ли зашифрованный пароль пользователя кэшироваться локально, чтобы пользователь мог войти в систему из автономного режима. Дополнительные сведения см. в разделе [Практическое руководство. Работа со службами клиентских приложений в автономном режиме](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Этот параметр установлен по умолчанию.  
+ Указывает, будет ли зашифрованный пароль пользователя кэшироваться локально, чтобы пользователь мог войти в систему из автономного режима. Этот параметр установлен по умолчанию.
   
  **Требовать, чтобы пользователи повторяли вход, если у файла cookie сервера истек срок действия**  
  Указывает, проходят ли проверенные ранее пользователи повторную проверку подлинности автоматически, если приложение обращается к ролям или службе профиля, когда истек срок действия файла cookie для проверки подлинности сервера. Выберите этот параметр, чтобы запретить доступ к службам приложений и требовать явную повторную проверку подлинности после истечения срока действия файла cookie. Этот параметр полезен при развертывании приложений в общедоступных системах, чтобы пользователи, которые прекратили пользоваться приложением, не входили в систему автоматически. По умолчанию этот флажок снят.  
@@ -48,8 +52,8 @@ ms.lasthandoff: 12/22/2017
  **Использовать настраиваемую строку подключения**  
  Указывает, используют ли поставщики клиентских служб настраиваемое хранилище данных для локального кэша. По умолчанию поставщики используют для кэша локальную файловую систему. При выборе этого параметра автоматически заполняется текстовое поле со строкой подключения по умолчанию. Можно сохранить строку подключения по умолчанию для автоматического создания и использования базы данных SQL Server Compact Edition, либо указать строку подключения для существующей базы данных SQL Server. Дополнительные сведения см. в разделе [Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). По умолчанию этот флажок снят.  
   
-## <a name="see-also"></a>См. также  
- [Службы клиентских приложений](/dotnet/framework/common-client-technologies/client-application-services)   
- [Страница "Службы" в конструкторе проектов](../../ide/reference/services-page-project-designer.md)   
- [Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
- [Практическое руководство. Автономная работа со службами клиентских приложений](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
+## <a name="see-also"></a>См. также
+
+[Службы клиентских приложений](/dotnet/framework/common-client-technologies/client-application-services)  
+[Страница "Службы" в конструкторе проектов](../../ide/reference/services-page-project-designer.md)  
+[Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
