@@ -39,6 +39,7 @@
 ### Ссылка
 #### [Идентификаторы рабочих нагрузок и компонентов Visual Studio](install/workload-and-component-ids.md)
 #### [Номера сборки и даты выпуска Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
+## [Использование Visual Studio на виртуальной машине Azure](install/using-visual-studio-vm.md)
 ## [Установка средств сборки в контейнер](install/build-tools-container.md)
 ### [Расширенный пример для контейнеров](install/advanced-build-tools-container.md)
 ### [Известные проблемы для контейнеров](install/build-tools-container-issues.md)
