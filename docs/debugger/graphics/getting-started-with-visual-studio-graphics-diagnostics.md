@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 05/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36045b311a73af96df51553f9025a1de84c93b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Начало работы с диагностикой графики Visual Studio
 В этом разделе вы подготовитесь к первому использованию диагностики графики, а затем запишите кадры из приложения Direct3D и проверите их в анализаторе графики.  
@@ -31,13 +31,6 @@ ms.lasthandoff: 12/22/2017
  Необязательный компонент Windows *графических инструментов* предоставляет инфраструктуру записи и воспроизведения, необходимую для диагностики графики в Windows 10.  
   
  Сведения об установке графических инструментов см. в разделе [Установка графических инструментов для Windows 10](#InstallGraphicsTools).  
-  
-### <a name="windows-81-prerequisites"></a>Необходимые компоненты для Windows 8.1  
- Пакет средств разработки программного обеспечения Windows (SDK) для Windows 8.1 предоставляет инфраструктуру записи и воспроизведения, необходимую для диагностики графики в Windows 8.1, и поддерживает разработку для Windows 8.1 и Windows 8.  
-  
- [Загрузить Windows Software Development Kit (SDK) для Windows 8.1](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)  
-  
- Чтобы использовать удаленный компьютер воспроизведения под управлением Windows 10 с компьютера разработки под управлением Windows 8.1, необходимо установить пакет SDK для Windows 10 на компьютере разработки и необязательный компонент графических инструментов на компьютере воспроизведения.  
   
 ##  <a name="InstallGraphicsTools"></a>Установка графических инструментов для Windows 10  
  В Windows 10 инфраструктура диагностики графики предоставляется дополнительным компонентом Windows, который называется *графических инструментов*. Данный компонент необходим для записи и воспроизведения графической информации в Windows 10 независимо от того, производится ли запись для приложения, настроенного на предыдущую версию Windows, и какую версию Direct3D оно использует. Вы можете установить компонент графических инструментов заранее; в противном случае он будет установлен по требованию при первом запуске сеанса диагностики графики из Visual Studio.  
@@ -66,9 +59,7 @@ ms.lasthandoff: 12/22/2017
  Если у вас уже есть свое приложение Direct3D для изучения диагностики графики, это замечательно! В противном случае используйте один из следующих:
 
 - **DirectX 11 (универсальное приложение Windows)** или **DirectX 12 (универсальное приложение Windows)** шаблоны проектов для Windows 10.
-- **Приложение DirectX (Windows 8.1)** шаблон проекта для Windows 8.1.
 - [Образцом Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) для Windows 10.  
-- [Примера игры DirectX marble maze](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) для Windows 8.1.  
   
  Прежде чем продолжить убедитесь, что можете выполнить сборку приложения.  
   

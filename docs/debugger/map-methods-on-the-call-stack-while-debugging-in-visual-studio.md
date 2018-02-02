@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.workload: multiple
-ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Создание визуального карты стека вызовов при отладке в Visual Studio Enterprise
 Создайте карту кода для визуального отслеживания стека вызовов при отладке. В это сопоставление можно вносить примечания для отслеживания операций, выполняемых кодом. Таким образом, вы сможете сосредоточиться на поиске ошибок.
@@ -46,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Код, поддерживающий отладку: Visual C# .NET, Visual Basic .NET, C++, JavaScript и X++  
+-   Код, который можно отлаживать, таких как Visual C#, Visual Basic, C++, JavaScript или X ++  
 
 Ниже приведен краткий карту кода.
   
@@ -95,7 +98,7 @@ ms.lasthandoff: 12/22/2017
  ![Обновление карты кода следующим стеком вызовов](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>Добавление связанного кода в сопоставление  
- Теперь у вас есть карта — то, что далее? При работе с Visual C# .NET или Visual Basic .NET, добавьте элементы, такие как поля, свойства и методы, для отслеживания операций в коде.  
+ Теперь у вас есть карта — то, что далее? При работе с Visual C# или Visual Basic добавьте элементы, такие как поля, свойства и методы, для отслеживания операций в коде.  
   
  Дважды щелкните метод для просмотра его определения кода или используйте контекстное меню метода. (Клавиатура: выберите метод в сопоставлении и нажмите клавишу **F12**)  
   

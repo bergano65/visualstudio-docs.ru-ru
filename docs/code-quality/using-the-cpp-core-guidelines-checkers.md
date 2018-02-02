@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>С помощью программы C++ основные рекомендации
 Основные правила C++ — переносимой ряд рекомендации, правила и рекомендации о написании кода на C++, созданный специалистами C++ и конструкторы. В настоящее время Visual Studio поддерживает подмножество этих правил в рамках его средств анализа кода для C++. Средства проверки направляющих core устанавливаются по умолчанию в Visual Studio 2017 г и являются [предоставляется в виде пакета NuGet для Visual Studio 2015](#vs2015_corecheck).
@@ -191,7 +191,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 ```
 Убедитесь в том, что вы добавляете эти свойства перед импортом файла Microsoft.Cpp.targets. Выбор наборов правил конкретных или создать настраиваемый набор правил можно использовать набор правил по умолчанию, который включает другие PREfast проверки.
 
-Можно выполнить проверки основных C++ только на указанных файлов с таким же образом, как [описанных ранее](#coreckeck_per_file), но с помощью MSBuild файлов. Переменные среды можно задать с помощью `BuildMacro` элемента:
+Можно выполнить проверки основных C++ только на указанных файлов с таким же образом, как [описанных ранее](#corecheck_per_file), но с помощью MSBuild файлов. Переменные среды можно задать с помощью `BuildMacro` элемента:
 
 ```xml
 <ItemGroup>

@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Проверка кода по схемам зависимостей
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 01/22/2018
   
 -   Visual Studio на сервере Team Foundation Build для проверки кода автоматически с помощью Team Foundation Build  
   
--   Решение, которое содержит проект моделирования со схемой зависимостей. Это зависимостей схема должна быть связана с артефактами в проектах Visual C# .NET или Visual Basic .NET, который нужно проверить. В разделе [создавать диаграммы зависимостей в коде](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Решение, которое содержит проект моделирования со схемой зависимостей. Это зависимостей схема должна быть связана с артефактами в проектах C# или Visual Basic, который нужно проверить. В разделе [создавать диаграммы зависимостей в коде](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   

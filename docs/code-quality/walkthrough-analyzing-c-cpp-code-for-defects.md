@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Пошаговое руководство. Проверка кода C/C++ на наличие дефектов
 В этом пошаговом руководстве показано, как для анализа кода C/C++ для возможных дефектов в коде с помощью средства анализа кода для кода C/C++.  
@@ -85,9 +87,9 @@ ms.lasthandoff: 12/22/2017
   
 3.  Устраните это предупреждение с помощью макроса SUCCEEDED. Код должен выглядеть следующим образом:  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  В **список ошибок**, дважды щелкните следующее предупреждение:  
   
@@ -95,17 +97,17 @@ ms.lasthandoff: 12/22/2017
   
 5.  Для решения этого предупреждения проверки на равенство. Код должен выглядеть примерно следующим кодом:  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Обрабатывать предупреждения как ошибки  
   
 1.  В файле Bug.cpp добавьте следующие `#pragma` инструкции в начало файла, чтобы предупреждение C6001 как ошибка:  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  Перестройте проект CodeDefects.  
   
@@ -141,17 +143,14 @@ ms.lasthandoff: 12/22/2017
   
 8.  Чтобы устранить это предупреждение, используйте оператор «if» для проверки возвращаемого значения. Код должен выглядеть следующим образом:  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Перестройте проект заметок.  
   
@@ -161,15 +160,13 @@ ms.lasthandoff: 12/22/2017
   
 1.  Добавление заметок формальные параметры и возвращаемое значение функции `AddTail` с помощью условия Pre и Post, как показано в следующем примере:  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Перестройте проект заметок.  
   
@@ -181,19 +178,21 @@ ms.lasthandoff: 12/22/2017
   
 4.  Чтобы устранить это предупреждение, используйте оператор «if» для проверки возвращаемого значения. Код должен выглядеть следующим образом:  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Перестройте проект заметок.  
   
      Сборка проекта выполняется без предупреждения или ошибки.  
   
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Проверка управляемого кода на наличие дефектов](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>См. также
+
+[Пошаговое руководство. Проверка управляемого кода на наличие дефектов](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[Анализ кода для C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

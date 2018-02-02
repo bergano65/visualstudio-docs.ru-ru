@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - FSharp
 - VB
@@ -30,12 +32,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d4d759f0e271e3473c41635dcbc8777423d361d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 4b29267f46495378d0bf6ae53e991372509d7543
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
 Создайте карту кода для визуального отслеживания стека вызовов при отладке. В это сопоставление можно вносить примечания для отслеживания операций, выполняемых кодом. Таким образом, вы сможете сосредоточиться на поиске ошибок.  
@@ -46,7 +49,7 @@ ms.lasthandoff: 01/13/2018
   
 -   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Код, поддерживающий отладку: Visual C# .NET, Visual Basic .NET, C++, JavaScript и X++  
+-   Код, который можно отлаживать, таких как Visual C#, Visual Basic, C++, JavaScript или X ++  
   
  Пример  
   
@@ -91,7 +94,7 @@ ms.lasthandoff: 01/13/2018
  ![Обновление карты кода следующим стеком вызовов](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>Добавление связанного кода в сопоставление  
- Теперь у вас есть карта — то, что далее? При работе с Visual C# .NET или Visual Basic .NET, добавьте элементы, такие как поля, свойства и методы, для отслеживания операций в коде.  
+ Теперь у вас есть карта — то, что далее? Если вы работаете с C# или Visual Basic, добавьте элементы, такие как поля, свойства и методы, для отслеживания операций в коде.  
   
  Дважды щелкните метод для просмотра его определения кода или используйте контекстное меню метода. (Клавиатура: выберите метод в сопоставлении и нажмите клавишу **F12**)  
   
