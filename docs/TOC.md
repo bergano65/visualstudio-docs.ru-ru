@@ -1,5 +1,6 @@
 # [Документация по Visual Studio](ide/index.md)
 # [Обзор набора средств Visual Studio для Unity](ide/visual-studio-ide.md)
+## [Новые возможности](ide/whats-new-in-visual-studio.md)
 # Установка
 ## [Установка Visual Studio](install/install-visual-studio.md)
 ## [Вход в Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -309,8 +310,7 @@
 #### [Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Создание приложений для языков с двунаправленным письмом](ide/creating-applications-in-bi-directional-languages.md)
 # Ссылка
-## [Новые возможности](ide/whats-new-in-visual-studio.md)
-### Шаблоны проектов и элементов
+## Шаблоны проектов и элементов
 ### [Параметры шаблона](ide/template-parameters.md)
 ### [Справочник по схемам шаблонов (расширяемость)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## Общие элементы пользовательского интерфейса

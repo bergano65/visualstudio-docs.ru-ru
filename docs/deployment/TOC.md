@@ -24,7 +24,7 @@
 ## Node.js
 ### [Публикация на веб-сайте Azure с помощью веб-развертывания](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [Публикация в службу приложений Azure](/visualstudio/python/publishing-to-azure)
+### [Публикация в службу приложений Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Практические руководства
 ## [Развертывание и безопасность технологии ClickOnce](clickonce-security-and-deployment.md)
 ### [Выбор стратегии развертывания ClickOnce](choosing-a-clickonce-deployment-strategy.md)
