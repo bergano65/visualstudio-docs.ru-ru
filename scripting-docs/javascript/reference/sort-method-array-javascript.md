@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>Метод sort (Array) (JavaScript)
 Сортирует `Array`.  
@@ -37,10 +38,10 @@ arrayobj.sort(sortFunction)
   
 ## <a name="parameters"></a>Параметры  
  `arrayObj`  
- Обязательный. Любой объект `Array`.  
+ Обязательно. Любой объект `Array`.  
   
  `sortFunction`  
- Необязательно. Имя функции, используемый для определения порядка элементов. Если не указан, элементы сортируются в восходящем порядке символов ASCII.  
+ Необязательный. Имя функции, используемый для определения порядка элементов. Если не указан, элементы сортируются в восходящем порядке символов ASCII.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Отсортированный массив.  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>Примечания  
  `sort` Метод сортировки `Array` объекта на месте; нет новых `Array` объект создается во время выполнения.  
   
- Если указать функцию в `sortFunction` аргумент, оно должно возвращать одно из следующих значений:  
+ `sortFunction`принимает два аргумента и должен возвращать одно из следующих значений:  
   
--   Отрицательное значение, если первый переданный аргумент меньше второго аргумента.  
+-   Отрицательное значение (меньше 0), если первый аргумент, передаваемый меньше значения второго аргумента.  Первый аргумент сортируется в нижний индекс.
   
--   Нуль, если аргументы эквивалентны.  
+-   Ноль (0), если два аргумента эквивалентны.  Два аргумента сортируются относительно других элементов в массиве, но не сортируются относительно друг друга.
   
--   Положительное значение, если первый аргумент больше значения второго аргумента.  
+-   Положительное значение (0) Если первого аргумента больше значения второго аргумента.  Нижний индекс сортируется второго аргумента.
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как использовать метод `sort`.  
