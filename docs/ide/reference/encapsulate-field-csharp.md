@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.encapsulatefield
-dev_langs: csharp
-ms.workload: dotnet
+f1_keywords:
+- vs.csharp.refactoring.encapsulatefield
+dev_langs:
+- csharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: 383f4e5bac2072b77d8e1d862cd4a1b859a57f7c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="encapsulate-a-field-in-c"></a>Инкапсуляция поля в C# #
 
@@ -36,7 +39,7 @@ ms.lasthandoff: 01/13/2018
 1. Затем выполните одно из следующих действий:
    * **Клавиатура**
      * Нажмите клавиши **CTRL+R**, а затем — **CTRL+E**.  (Обратите внимание, что сочетание клавиш может отличаться в зависимости от выбранного профиля.)
-     * Нажмите клавиши **CTRL+.**, чтобы активировать меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Инкапсулировать поле**.
+     * Нажмите клавиши **CTRL + .**, чтобы активировать меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Инкапсулировать поле**.
    * **Мышь**
      * Последовательно выберите **Правка >Рефакторинг > Инкапсулировать поле**.
      * Щелкните код правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Инкапсулировать поле**.

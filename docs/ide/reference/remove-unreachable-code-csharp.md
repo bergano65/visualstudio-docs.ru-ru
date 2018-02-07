@@ -10,13 +10,15 @@ ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-dev_langs: csharp
-ms.workload: dotnet
+dev_langs:
+- csharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: 12b6910aad6399b72b3e4bc10e6b857cc98c09bb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="remove-unreachable-code-in-c"></a>Удаление недоступного кода в C# #
 
@@ -32,9 +34,9 @@ ms.lasthandoff: 01/13/2018
 
 ![Затемнение недоступного кода](media/unreachablecode-faded-cs.png)
 
-1. Затем сделайте следующее:
+1. Затем выполните одно из следующих действий:
    * **Клавиатура**
-     * Нажмите клавиши **CTRL+.**, чтобы активировать меню **Быстрые действия и рефакторинг**. Затем выберите во всплывающем окне предварительного просмотра пункт **Удалить недоступный код**.
+     * Нажмите клавиши **CTRL + .**, чтобы активировать меню **Быстрые действия и рефакторинг**. Затем выберите во всплывающем окне предварительного просмотра пункт **Удалить недоступный код**.
    * **Мышь**
      * Щелкните код правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**. Затем выберите во всплывающем окне предварительного просмотра пункт **Удалить недоступный**.
 

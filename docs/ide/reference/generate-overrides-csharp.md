@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 56b1753dbdcfbf8ce318e964a16879f02b1482c4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-c"></a>Создание переопределений для методов Equals и GetHashCode на C# #
 
@@ -37,10 +39,10 @@ ms.lasthandoff: 01/13/2018
 
 1. Затем выполните одно из следующих действий:
    * **Клавиатура**
-     * Нажмите клавиши **CTRL+.**, чтобы активировать меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Создать "Equals(object)"** или **Создать Equals и GetHashCode**.
+     * Нажмите клавиши **CTRL + .**, чтобы активировать меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Создать "Equals(object)"** или **Создать Equals и GetHashCode**.
    * **Мышь**
      * Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Создать "Equals(object)"** или **Создать Equals и GetHashCode**.
-     * Щелкните ![значок лампочки,](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с объявлением типа.
+     * Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с объявлением типа.
 
    ![Создание переопределений — предварительный просмотр](media/overrides-preview-cs.png)
 

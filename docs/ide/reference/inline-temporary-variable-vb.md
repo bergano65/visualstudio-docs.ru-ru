@@ -9,12 +9,13 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7553a67892322a1acb2db33d7a16b399b6f0b23a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="inline-a-temporary-variable-in-visual-basic"></a>Замена временной переменной в Visual Basic
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 01/13/2018
 
 1. Затем выполните одно из следующих действий:
    * **Клавиатура**
-     * Нажмите клавиши **CTRL+.**, чтобы открыть меню **Быстрые действия и рефакторинг**.
+     * Нажмите клавиши **CTRL + .**, чтобы открыть меню **Быстрые действия и рефакторинг**.
    * **Мышь**
      * Щелкните код правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef6b3bddfb90c64872de331c988f10595e179eb8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-6-working-with-git"></a>Шаг 6. Работа с Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/22/2018
 
 Visual Studio обеспечивает прямую интеграцию с локальными репозиториями Git, а также репозиториями, находящимися в таких службах, как GitHub и Visual Studio Team Services. Эта интеграция включает в себя клонирование репозитория, фиксацию изменений и управление ветвями.
 
-Этот раздел описывает создание локального репозитория Git для существующего проекта. Руководство по созданию проекта из удаленного репозитория Git см. в разделе [Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio](quickstart-03-project-from-repository.md).
+Этот раздел описывает создание локального репозитория Git для существующего проекта. Руководство по созданию проекта из удаленного репозитория Git см. в разделе [Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Открыв проект в Visual Studio, например проект из [предыдущего шага](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), щелкните решение правой кнопкой мыши и выберите **Добавить решение в систему управления версиями**. Visual Studio создает локальный репозиторий Git, содержащий код вашего проекта, и отображает связанные с Git элементы управления в нижней части окна Visual Studio. Эти элементы управления показывают ожидающие фиксации, изменения, имя репозитория и ветвь. Наведите указатель на эти элементы управления для просмотра дополнительных сведений.
 
@@ -67,6 +67,6 @@ Visual Studio обеспечивает прямую интеграцию с ло
 Далее вы можете заняться изучением основных понятий и практических руководств, включая следующие:
 
 - [Создание расширения C++ для Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Публикация в службу приложений Azure](publishing-to-azure.md)
-- [Профилирование](profiling.md)
-- [Модульное тестирование](unit-testing.md)
+- [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Профилирование](profiling-python-code-in-visual-studio.md)
+- [Модульное тестирование](unit-testing-python-in-visual-studio.md)

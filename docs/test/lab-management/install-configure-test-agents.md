@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>Установка и настройка агентов тестирования
 
@@ -81,7 +83,7 @@ ms.lasthandoff: 01/09/2018
 | Сценарии, поддерживаемые Agents для Visual Studio 2013 | Альтернатива в TFS и TS |
 | --- | --- |
 | Рабочий процесс "сборка-развертывание-тестирование" в Visual Studio | Пользователи могут использовать [определение сборки](https://www.visualstudio.com/team-services/continuous-integration/) (не сборку XAML) для сценариев сборки, развертывания и тестирования в TFS. |
-| Нагрузочные тесты (тестирование производительности) с использованием удаленных локальных компьютеров | Используйте обновление 5 для контроллеров/агентов тестирования 2013 для локального выполнения нагрузочных тестов. [Дополнительные сведения](https://msdn.microsoft.com/en-us/library/ff400223.aspx). |
+| Нагрузочные тесты (тестирование производительности) с использованием удаленных локальных компьютеров | Используйте обновление 5 для контроллеров/агентов тестирования 2013 для локального выполнения нагрузочных тестов. [Дополнительные сведения](https://msdn.microsoft.com/library/ff400223.aspx). |
 | Удаленное выполнение автоматических тестов из Microsoft Test с использованием лабораторной среды | Сейчас альтернативы этому сценарию не существует. Мы рекомендуем использовать задачу "Запуск функциональных тестов" в определениях сборок и выпусков (не в сборке XAML) для удаленного выполнения тестов. |
 | Разработчики, выполняющие удаленные тесты в Visual Studio | Больше не поддерживается. |
 
