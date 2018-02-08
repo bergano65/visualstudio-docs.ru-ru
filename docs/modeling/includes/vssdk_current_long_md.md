@@ -1,1 +1,0 @@
- SDK для Visual Studio 

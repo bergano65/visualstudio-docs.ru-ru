@@ -1,1 +1,0 @@
-Самая актуальная документация по версии-кандидату Visual Studio 2017: [Документация по версии-кандидату Visual Studio 2017](http://docs.microsoft.com/visualstudio).

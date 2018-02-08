@@ -1,7 +1,0 @@
-# [Использование среды выполнения Windows в JavaScript](using-the-windows-runtime-in-javascript.md)
-## [Вопросы, связанные с использованием API среды выполнения Windows](considerations-when-using-the-windows-runtime-api.md)
-## [Использование асинхронных методов среды выполнения Windows](using-windows-runtime-asynchronous-methods.md)
-### [Специальные свойства ошибок из асинхронных методов среды выполнения Windows](special-error-properties-from-asynchronous-windows-runtime-methods.md)
-## [Обработка событий среды выполнения Windows в JavaScript](handling-windows-runtime-events-in-javascript.md)
-## [Представление типов среды выполнения Windows в JavaScript](javascript-representation-of-windows-runtime-types.md)
-## [Представления объектов DateTime и TimeSpan в среде выполнения Windows](windows-runtime-datetime-and-timespan-representations.md)
