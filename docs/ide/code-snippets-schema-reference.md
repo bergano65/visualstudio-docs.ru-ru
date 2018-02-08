@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 Фрагменты кода IntelliSense — это предварительно созданные готовые части кода, которые можно вставить в приложение в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Фрагменты кода повышают производительность за счет сокращения времени, затрачиваемого на ввод повторяющихся частей кода и поиск примеров. С помощью схемы XML фрагментов кода IntelliSense вы можете создавать собственные фрагменты и добавлять их к фрагментам, которые уже есть в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -240,7 +242,7 @@ $selected$ is a great color. I love $selected$.
  Задает функцию, выполняемую при получении фокуса литералом или объектом в Visual Studio.  
   
 > [!NOTE]
->  Элемент `Function` поддерживается только фрагментами кода Visual C#.  
+>  Элемент `Function` поддерживается только фрагментами кода C#.  
   
 ```xml  
 <Function>  
@@ -563,7 +565,7 @@ $selected$ is a great color. I love $selected$.
   
 -   `Expansion` позволяет вставить фрагмент кода в то место, где находится курсор.  
   
--   `Refactoring` указывает, что фрагмент кода используется во время рефакторинга Visual C#. `Refactoring` не может использоваться в пользовательских фрагментах кода.  
+-   `Refactoring` указывает, что фрагмент кода используется во время рефакторинга C#. `Refactoring` не может использоваться в пользовательских фрагментах кода.  
   
 ##  <a name="snippettypes"></a> Элемент SnippetTypes  
  Группирует отдельные элементы `SnippetType`. Если элемент `SnippetTypes` отсутствует, фрагмент кода может быть вставлен в любое место кода.  

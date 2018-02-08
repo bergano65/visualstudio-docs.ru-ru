@@ -7,17 +7,20 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codedUItest.testeditor
-helpviewer_keywords: coded UI test, Coded UI Test Editor
+f1_keywords:
+- vs.codedUItest.testeditor
+helpviewer_keywords:
+- coded UI test, Coded UI Test Editor
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 2302c2bbfbd38ff307335b525aa319afb5f07e25
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0cb316475748033bb020a2f3065f9492a5a201ed
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса
 Редактор закодированных тестов пользовательского интерфейса позволяет легко изменять закодированные тесты пользовательского интерфейса. В редакторе закодированных тестов пользовательского интерфейса можно искать, просматривать и редактировать свойства методов теста и действия пользовательского интерфейса. Кроме того, можно использовать карту элементов управления пользовательского интерфейса для просмотра и редактирования соответствующих элементов управления.  
@@ -194,7 +197,7 @@ ms.lasthandoff: 01/09/2018
  *Что еще мне нужно знать?*  
  **Примечания**  
   
--   ![Предварительное требование](../test/media/prereq.png "Предварительное требование") Если требуется убедиться в доступности конкретного элемента управления перед действием пользовательского интерфейса, рассмотрите возможность добавления пользовательского кода в метод теста с помощью соответствующего метода UITestControl.WaitForControlXXX(). [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+-   ![Предварительное требование](../test/media/prereq.png "Prereq") Чтобы убедиться в доступности конкретного элемента управления перед действием пользовательского интерфейса, попробуйте добавить пользовательский код в метод теста с помощью соответствующего метода UITestControl.WaitForControlXXX(). [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
  **Советы**  
   
@@ -216,6 +219,6 @@ ms.lasthandoff: 01/09/2018
 ## <a name="see-also"></a>См. также
 
 [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)  
-[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)  
+[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md)  
 [Создание управляемого данными закодированного теста пользовательского интерфейса](../test/creating-a-data-driven-coded-ui-test.md)  
 [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,19 +25,21 @@ helpviewer_keywords:
 - formatting [C#]
 - Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 0c4303cb996094562ed955e58f6b7ec37b38fc2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-formatting"></a>"Параметры", "Текстовый редактор", C#, "Форматирование"
-Используйте диалоговое окно страницы свойств **Форматирование** для задания параметров форматирования кода в редакторе кода. Для доступа к этому диалоговому окну щелкните пункт **Параметры** в меню **Сервис**, разверните папки **Текстовый редактор** и **C#**, а затем выберите **Форматирование**.  
+
+Используйте диалоговое окно страницы свойств **Форматирование** для задания параметров форматирования кода в редакторе кода. Чтобы получить доступ к диалоговому окну **Параметры** в Visual Studio, выберите **Средства** > **Параметры**. Затем разверните **текстовый редактор**, выберите **C#**, **Стиль кода** и щелкните **Форматирование**.  
   
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  

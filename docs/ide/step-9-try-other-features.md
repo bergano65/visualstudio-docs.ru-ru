@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5db8c070b5e0796e64071a8c28d4d36715cd8fc0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 198ce949913dc7d35052e50c4bd13a559e8336e5
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="step-9-try-other-features"></a>Шаг 9. Изучение других возможностей
 Для изучения других функций попробуйте изменить значки и цвета, добавить в игру таймер или звуки. Чтобы сделать игру интереснее, увеличьте игровое поле или измените настройки таймера.  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 -   Добавьте звуки, которые будут воспроизводиться при нахождении игроком пары, отображении двух несовпадающих значков и повторном сокрытии значков программой.  
   
     > [!TIP]
-    >  Для воспроизведения звуков можно использовать пространство имен System.media. Дополнительные сведения см. в разделе [Воспроизведение звуков в приложении Windows Forms (C# .NET)](http://youtu.be/qOh4ooHg1UU) или [Воспроизведение звука в Visual Basic](http://youtu.be/-4oPDeQrtMs).  
+    >  Для воспроизведения звуков можно использовать пространство имен System.media. Дополнительные сведения см. в руководстве по воспроизведению звуков в [приложении Windows Forms (C#)](http://youtu.be/qOh4ooHg1UU) и [Visual Basic](http://youtu.be/-4oPDeQrtMs).  
   
 -   Сделайте игру труднее, увеличив игровое поле.  
   

@@ -4,33 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesAdvancedCompile
-helpviewer_keywords: Advanced Compiler Settings dialog box
+f1_keywords:
+- vb.ProjectPropertiesAdvancedCompile
+helpviewer_keywords:
+- Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3dd72236cf23131d510f9d512ea1dcd2a4dd15a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b2e8661fb7984fd5b04b64211bf209827683ee0a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
+
 Диалоговое окно **Дополнительные параметры компилятора** в **конструкторе проектов** позволяет задать дополнительные свойства конфигурации сборки. Это окно применяется только к проектам Visual Basic.  
   
-### <a name="to-access-this-dialog-box"></a>Вызов диалогового окна  
+### <a name="to-access-this-dialog-box"></a>Вызов диалогового окна
   
 1.  В **обозревателе решений** выберите узел проекта (не узел **Решение**).  
   
 2.  В меню **Проект** выберите пункт **Свойства**. После открытия окна **Конструктор проектов** перейдите на вкладку **Компиляция** .  
   
-3.  На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3.  На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в пошаговом руководстве по [настройке конфигураций отладки и выпусков](../../debugger/how-to-set-debug-and-release-configurations.md).
   
 4.  Щелкните **Дополнительные параметры компиляции**.  
   
@@ -65,9 +70,11 @@ ms.lasthandoff: 12/22/2017
  **Настраиваемые константы**  
  В это текстовое поле вы можете ввести любые настраиваемые константы для своего приложения. Записи нужно разделять запятыми в следующем формате: **Имя1="Значение1",Имя2="Значение2",Имя3="Значение3"**.  
   
-## <a name="other-settings"></a>Другие параметры  
+## <a name="other-settings"></a>Другие параметры
+
  **Создать сборки сериализации**  
  Этот параметр определяет, будет ли компилятор создавать сборки сериализации XML. Сборки сериализации могут повысить производительность при запуске <xref:System.Xml.Serialization.XmlSerializer>, если вы использовали этот класс для сериализации типов в коде. По умолчанию этот параметр имеет значение **Автоматически**, которое указывает, что сборки сериализации будут создаваться только в том случае, если вы использовали <xref:System.Xml.Serialization.XmlSerializer> для кодирования типов в XML-код. **Отключено** указывает, что сборки сериализации никогда не создаются, независимо от того, используется ли в вашем коде <xref:System.Xml.Serialization.XmlSerializer>. **Включено** указывает, что сборки сериализации создаются всегда. Сборкам сериализации присваиваются имена `TypeName`.XmlSerializers.dll.  
-  
-## <a name="see-also"></a>См. также  
- [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+
+## <a name="see-also"></a>См. также
+
+[Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

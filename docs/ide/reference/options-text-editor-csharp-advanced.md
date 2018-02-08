@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,19 +19,20 @@ helpviewer_keywords:
 - outlining options [C#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 1f7bcff6d2e94944985789db2bf0ac80150a478e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 193b61ab95daa84c5815c251c7d52103c88977e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>"Параметры", "Текстовый редактор", C#, "Дополнительно"
-Это диалоговое окно позволяет изменять параметры для форматирования в редакторе, рефакторинга кода и комментариев XML-документации в Visual C#. Для доступа к этому диалоговому окну щелкните элемент **Параметры** в меню **Сервис**, разверните папки **Текстовый редактор** и **C#**, а затем выберите **Дополнительно**.  
+Это диалоговое окно позволяет изменять параметры для форматирования в редакторе, рефакторинга кода и комментариев XML-документации в C#. Для доступа к этому диалоговому окну щелкните элемент **Параметры** в меню **Сервис**, разверните папки **Текстовый редактор** и **C#**, а затем выберите **Дополнительно**.  
   
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -76,9 +78,9 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="organize-usings"></a>Упорядочить директивы using  
  Располагать директивы "System" первыми при сортировке using  
- При выборе этого параметра директивы using `System` отображаются перед другими директивами using. Дополнительные сведения см. в разделе, посвященном управлению директивами using, в статье [IntelliSense для Visual C#](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
+ При выборе этого параметра директивы using `System` отображаются перед другими директивами using. Дополнительные сведения см. в руководстве по управлению директивами using в [IntelliSense для C#](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
   
 ## <a name="see-also"></a>См. также  
  [Комментарии XML-документации](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Настройка параметров языка редактора](../../ide/reference/setting-language-specific-editor-options.md)   
- [IntelliSense для Visual C#](../../ide/visual-csharp-intellisense.md)
+ [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

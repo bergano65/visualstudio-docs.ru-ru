@@ -1,23 +1,23 @@
 ---
-title: "Обработка лицензий с истекшим сроком действия | Visual Studio Marketplace"
+title: "Работа с подписками с истекшим сроком действия | Документация Майкрософт"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Сведения о том, как администраторы могут обрабатывать подписки Visual Studio с истекшим сроком действия"
+Description: Learn how administrators can handle expired Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 5a1e0ef44d6298e508fd3a4565214b3bddfb1c91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ffe9a2367d2ce0933e7f57831400fafb9aeac26e
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="handling-expired-subscriptions"></a>Работа с подписками с истекшим сроком действия
 
-Когда срок действия подписки пользователя истекает, рядом с его именем на портале появляется красная полоска. Чтобы такой пользователь мог продолжать пользоваться преимуществами подписки Visual Studio, необходимо продлить его лицензию. 
+Когда срок действия подписки пользователя истекает, рядом с его именем на портале в списке подписок появляется красная полоска. Чтобы такой пользователь мог продолжать пользоваться преимуществами подписки Visual Studio, необходимо продлить его лицензию. 
 
 ![Список подписок с истекшим сроком действия](_img\expired-subscriptions\expired-list.png) 
 

@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 1ca2e83bab05c336f4b4ed37a13271c636b457dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 71d7f7e342ecd6d9ca3bff4e04b84352c65c0e17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса
 В этом пошаговом руководстве создается простое приложение Windows Presentation Foundation (WPF), чтобы с его помощью продемонстрировать создание, редактирование и обслуживание закодированного теста пользовательского интерфейса. В этом пошаговом руководстве приведены решения для корректировки тестов с проблемами, связанными со временем и рефакторингом элементов управления.  
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/09/2018
   
      Откроется окно "UIMap — построитель кодированных тестов ИП", а окно Visual Studio свернется.  
   
-     Дополнительные сведения о параметрах в этом диалоговом окне см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+     Дополнительные сведения о параметрах в этом диалоговом окне см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md).  
   
 8.  Щелкните **Начать запись** в окне "UIMap — построитель кодированных тестов ИП".  
   
@@ -368,26 +369,20 @@ ms.lasthandoff: 01/09/2018
   
 ## <a name="external-resources"></a>Внешние ресурсы  
   
-### <a name="videos"></a>Видеоролики  
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>Видеоролики
+
+![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Getting started with Coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230573) (Начало работы с закодированными тестами пользовательского интерфейса).  
   
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Maintenance And debugging of coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230574) (Обслуживание и отладка закодированных тестов пользовательского интерфейса)  
   
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Hand coding coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230575) (Кодирование закодированных тестов пользовательского интерфейса вручную)
   
-### <a name="hands-on-lab"></a>Практическое лабораторное занятие  
- [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="faq"></a>часто задаваемые вопросы
+
+[Вопросы и ответы о закодированных тестах пользовательского интерфейса](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
   
-### <a name="faq"></a>часто задаваемые вопросы  
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
-  
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
-  
-### <a name="forum"></a>Форум  
- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
-  
-## <a name="see-also"></a>См. также  
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Начало работы с конструктором WPF](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>См. также
+
+[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)  
+[Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

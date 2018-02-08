@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 17b234a774914e998c228dc780b645864420658d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fcef9fc80bbc55b07cd9dad68e217c9982a3b1f7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов)
 Определенные типы значений не всегда имеют или требуют определенное значение. Это распространенная практика в базах данных, где некоторым полям нельзя назначить любое значение. Например, полю базы данных можно присвоить значение NULL, чтобы указать, что ему еще не было назначено значение.  
@@ -37,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
 Конструктор классов отображает тип, допускающий значение NULL, так же, как он отображает его базовый тип.  
   
-Дополнительные сведения о типах, допускающих значение NULL, в Visual C# см. в разделе [Типы, допускающие значения NULL](/dotnet/csharp/programming-guide/nullable-types/index). Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).  
+См. дополнительные сведения о [типах, допускающих значение NULL в C#](/dotnet/csharp/programming-guide/nullable-types/index). Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).  
   
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   

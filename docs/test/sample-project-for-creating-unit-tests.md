@@ -10,29 +10,30 @@ ms.topic: article
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 500b3a3c28b2ccb07e8fb61552aff9c427d780d6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: b1b92a223a54c48dd08cce2fc02904f1b66606bc
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Пример проекта для создания модульных тестов
-Этот пример кода предназначен для использования в указанных ниже пошаговых руководствах.  
-  
--   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода). Пошаговое руководство по созданию и настройке модульных тестов, их выполнению и изучению результатов.  
-  
--   [Пошаговое руководство. Запуск тестов и просмотр покрытия кода](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). В этом пошаговом руководстве описан порядок просмотра данных о покрытии кода, отражающих тестируемую часть кода проекта.  
-  
--   [Walkthrough: using the command-line test utility](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867) (Пошаговое руководство. Использование служебной программы для тестирования командной строки). В этом пошаговом руководстве с помощью программы командной строки MSTest.exe выполняются тесты и просматриваются результаты.  
-  
-## <a name="sample-code"></a>Пример кода  
- Единственная умышленно допущенная в этом примере ошибка заключается в том, что у метода Debit в m_balance += amount вместо знака плюс перед знаком равно должен стоять минус.  
-  
-```  
+
+Этот пример кода предназначен для использования в указанных ниже пошаговых руководствах.
+
+- [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода). Пошаговое руководство по созданию и настройке модульных тестов, их выполнению и изучению результатов.
+
+- [Пошаговое руководство. Использование служебной программы для тестирования с интерфейсом командной строки](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). В этом пошаговом руководстве с помощью программы командной строки MSTest.exe выполняются тесты и просматриваются результаты.
+
+## <a name="sample-code"></a>Пример кода
+
+Единственная умышленно допущенная в этом примере ошибка заключается в том, что у метода Debit в m_balance += amount вместо знака плюс перед знаком равно должен стоять минус.
+
+```csharp
 using System;   
   
 namespace BankAccountNS  
@@ -120,18 +121,18 @@ namespace BankAccountNS
             ba.Credit(5.77);  
             ba.Debit(11.22);  
             Console.WriteLine("Current balance is ${0}", ba.Balance);  
-        }  
-  
-    }  
-}  
-```  
-  
- /* Использованные в примерах компании, организации, продукты, доменные имена, адреса электронной почты, эмблемы, имена людей, географические названия и события являются вымышленными.  Любые совпадения с реальными именами и названиями случайны. \*/  
-  
-## <a name="working-with-the-code"></a>Работа с кодом  
- Для работы с этим кодом необходимо сначала создать для него проект в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Следуйте инструкциям из раздела, посвященного подготовке к выполнению [пошагового руководства по созданию и запуску модульных тестов](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
-  
-## <a name="see-also"></a>См. также  
- [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода)  
- [Пошаговое руководство. Запуск тестов и просмотр покрытия кода](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [Пошаговое руководство. Использование служебной программы для тестирования с интерфейсом командной строки](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+        }
+    }
+}
+```
+
+/* Использованные в примерах компании, организации, продукты, доменные имена, адреса электронной почты, эмблемы, имена людей, географические названия и события являются вымышленными. Любые совпадения с реальными именами и названиями случайны. \*/
+
+## <a name="working-with-the-code"></a>Работа с кодом
+
+Для работы с этим кодом необходимо сначала создать для него проект в Visual Studio. Следуйте инструкциям из раздела, посвященного подготовке к выполнению [пошагового руководства по созданию и запуску модульных тестов](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+
+## <a name="see-also"></a>См. также
+
+[Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+[Пошаговое руководство. Использование служебной программы для тестирования с интерфейсом командной строки](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

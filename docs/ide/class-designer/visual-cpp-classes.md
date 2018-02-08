@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.inheritancelinelabel
-helpviewer_keywords: Class Designer [Visual Studio], classes
+f1_keywords:
+- vs.classdesigner.inheritancelinelabel
+helpviewer_keywords:
+- Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Классы Visual C++ в конструкторе классов
-Конструктор классов поддерживает классы C++ и визуализирует собственные классы C++ так же, как фигуры классов Visual Basic и Visual C#. Отличие состоит в том, что классы C++ могут обладать отношениями множественного наследования. Фигуру класса можно развернуть, чтобы отобразить дополнительные поля и методы класса, а также свернуть в целях экономии места.  
+Конструктор классов поддерживает классы C++ и визуализирует собственные классы C++ так же, как фигуры классов Visual Basic и C#. Отличие состоит в том, что классы C++ могут обладать отношениями множественного наследования. Фигуру класса можно развернуть, чтобы отобразить дополнительные поля и методы класса, а также свернуть в целях экономии места.  
   
 > [!NOTE]
 >  Конструктор классов не поддерживает объединения (это особый тип класса, в котором объем выделяемой памяти равен размеру самого большого элемента данных объединения).  
@@ -53,7 +57,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  Команда **Показать производные классы** в коде C++ не поддерживается. Чтобы просмотреть производные классы, перейдите в представление классов, разверните узел типа, затем разверните вложенную папку **Производные типы** и перетащите нужные типы на схему классов.  
   
-Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) и [Несколько базовых классов](/cpp/cpp/multiple-base-classes).  
+Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование](https://msdn.microsoft.com/library/6td5yws2.aspx) и [Несколько базовых классов](/cpp/cpp/multiple-base-classes).  
   
 ## <a name="abstract-classes"></a>Абстрактные классы  
 Конструктор классов поддерживает абстрактные классы (также называются "абстрактными базовыми классами"). Для этих классов не создаются экземпляры, но от них могут наследоваться другие классы. Используя пример из раздела "Множественное наследование" этого документа, вы можете создавать экземпляры класса `Bird` в виде отдельных объектов, как показано ниже:  
@@ -166,11 +170,12 @@ typedef struct
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Класс<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Класс<br /><br /> `C<T>`<br /><br /> Класс шаблона<br /><br /> `D`<br /><br /> Класс<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
-  
+
 ## <a name="see-also"></a>См. также
-[Работа с кодом на Visual C++](working-with-visual-cpp-code.md)   
-[Классы и структуры](/cpp/cpp/classes-and-structs-cpp)   
-[Типы анонимных классов](/cpp/cpp/anonymous-class-types)   
-[Множественное наследование](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
-[Несколько базовых классов](/cpp/cpp/multiple-base-classes)   
+
+[Работа с кодом на Visual C++](working-with-visual-cpp-code.md)  
+[Классы и структуры](/cpp/cpp/classes-and-structs-cpp)  
+[Типы анонимных классов](/cpp/cpp/anonymous-class-types)  
+[Множественное наследование](https://msdn.microsoft.com/library/6td5yws2.aspx)  
+[Несколько базовых классов](/cpp/cpp/multiple-base-classes)  
 [Шаблоны](/cpp/cpp/templates-cpp)

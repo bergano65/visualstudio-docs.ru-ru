@@ -1,5 +1,5 @@
 ---
-title: "Преимущество Microsoft Azure"
+title: "Преимущество Microsoft Azure | Документация Майкрософт"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,28 +9,70 @@ Description: Learn how to activate the Azure benefit included in your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 32cb58f86a3664764f645f133a42d298e72dedbc
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 7354f96a441faa587e2f669ee39defcf3ced1ff6
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
+
+## <a name="overview"></a>Обзор
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный кредит Azure](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки. 
 
-Активировать преимущество можно на [портале подписчика](https://my.visualstudio.com/benefits) на странице "Преимущества" в категории **Средства**. 
+## <a name="eligibililty"></a>Право на участие 
 
-1.  В нижней части плитки преимущества щелкните ссылку **Активировать**.   
+| Уровень подписки или программа                                 | Преимущество                     | Возможность возобновления                                                   |
+|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
+| Visual Studio Enterprise — уровень "Стандартный"                            | Ежемесячный кредит в размере 150 долл. США         |   Да                                                        |
+| Visual Studio Enterprise — годовая подписка                              | Ежемесячный кредит в размере 150 долл. США         |   Да                                                        |
+| Visual Studio Enterprise — месячная подписка                             | Недоступно               |                                                              |
+| Visual Studio Professional — уровень "Стандартный"                          | Ежемесячный кредит в размере 50 долл. США          |   Да                                                        |
+| Visual Studio Professional — годовая подписка                            | Ежемесячный кредит в размере 50 долл. США          |   Да                                                        | 
+| Visual Studio Professional — месячная подписка                           | Недоступно               |                                                              |
+| Visual Studio Test Pro                                       | Ежемесячный кредит в размере 50 долл. США          |   Да                                                        |
+| MSDN Platforms                                               | Ежемесячный кредит в размере 100 долл. США         |   Да                                                        |
+| Visual Studio Dev Essentials                                 | Бесплатные службы + кредит в размере 200 долл. США | Службы бесплатны на постоянной основе.  Только однократный кредит в размере 200 долл. США.  |
+| Visual Studio Enterprise — NFR*                              | Ежемесячный кредит в размере 150 долл. США         |   Да                                                        |
+| Visual Studio Enterprise — FTE                               | Ежемесячный кредит в размере 150 долл. США         |   Да                                                        |
+| Visual Studio Enterprise — Microsoft Partner Network         | Ежемесячный кредит в размере 150 долл. США         |   Да                                                        |
+| Visual Studio Professional — Microsoft Partner Network       | Недоступно               |                                                              |
+| Visual Studio Enterprise — Imagine (уровень "Стандартный")                | Недоступно               |                                                              |
+| Visual Studio Enterprise — Imagine (уровень "Премиум")                 | Недоступно               |                                                              |
+| Visual Studio Enterprise — BizSpark                          | Ежемесячный кредит в размере 150 долл. США         |   Да                                                        |
+| Visual Studio Enterprise — программное обеспечение и службы MCT           | Ежемесячный кредит в размере 100 долл. США         |   Да                                                        |
+| Visual Studio Enterprise — программное обеспечение и службы для разработчика MCT | Ежемесячный кредит в размере 150 долл. США         |   Да                                                        |
+*Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)  
+
+Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+
+## <a name="activation-steps"></a>Процедура активации
+
+1.  Войдите на страницу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+
+2.  Найдите плитку "Azure" в разделе "Средства" на странице "Преимущества" и щелкните ссылку **Активировать** в нижней части плитки преимущества.   
+
 ![Плитка Azure](_img\vs-azure\vs-azure-tile.png)
 
-2.  Укажите сведения, необходимые для создания подписки на Azure, установите флажок, чтобы принять условия использования, после чего выберите **Регистрация**: ![регистрация в Azure](_img\vs-azure\vs-azure-sign-up-cropped.png).
+3.  Укажите сведения, необходимые для создания подписки на Azure, установите флажок, чтобы принять условия использования, а нажмите кнопку **Регистрация**: 
 
- 
-3.  Когда учетная запись будет готова, вы можете выбрать план поддержки Azure (приобретается отдельно) или приступить к использованию подписки Azure.  
+![Регистрация в Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+
+4.  Когда учетная запись будет готова, вы можете выбрать план поддержки Azure (приобретается отдельно) или приступить к использованию подписки Azure.  
+
 ![Подготовка Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    
+5.  Загрузится панель мониторинга Azure. При первом использовании можно просмотреть обзор.  Он состоит из ряда экранных подсказок по выполнению различных задач и поиску важной информации.  После завершения или закрытия обзора откроется панель мониторинга Azure. 
 
-4.  Загрузится панель мониторинга Azure. При первом использовании можно просмотреть обзор.  Он состоит из ряда экранных подсказок по выполнению различных задач и поиску важной информации.  После завершения или закрытия обзора откроется панель мониторинга Azure. 
-5.  Добавьте [портал Azure](https://portal.azure.com) в закладки для быстрого доступа в будущем.
+6.  Добавьте [портал Azure](https://portal.azure.com) в закладки для быстрого доступа в будущем.
 ![Панель мониторинга Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
+## <a name="faq"></a>часто задаваемые вопросы
+*Проверка обновлений*
 
+## <a name="support-resources"></a>Ресурсы поддержки
+-  Нужна помощь с Azure?  Ознакомьтесь со следующими ресурсами:
+    - Техническая поддержка: https://azure.microsoft.com/support/options/. 
+    - [Документация](/azure/)
+-  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
+-  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 

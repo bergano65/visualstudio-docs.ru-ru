@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 3e0be7d788d4471f249b50f8c846343514b1c346
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 Платформа модульного тестирования поддерживает выполнение модульных тестов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. При написании кода модульных тестов используются классы и члены пространства имен Microsoft.VisualStudio.TestPlatform.UnitTestFramework>. Они используются как при создании модульных тестов с нуля, так и при доработке тестов, созданных из проверяемого кода.  
@@ -41,9 +42,10 @@ ms.lasthandoff: 01/09/2018
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.DataSourceElementCollection  
   
-## <a name="attributes-used-to-establish-a-calling-order"></a>Атрибуты, используемые для установки порядка вызовов  
- Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
-  
+## <a name="attributes-used-to-establish-a-calling-order"></a>Атрибуты, используемые для установки порядка вызовов
+
+Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+
 ### <a name="for-assemblies"></a>Для сборок  
  Методы AssemblyInitialize и AssemblyCleanup вызываются сразу после загрузки сборки и непосредственно перед ее выгрузкой.  
   
@@ -64,8 +66,9 @@ ms.lasthandoff: 01/09/2018
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute  
   
-## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Атрибуты, используемые для идентификации тестовых классов и методов  
- Каждый тестовый класс должен иметь атрибут TestClass, а каждый тестовый метод — атрибут TestMethod. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
+## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Атрибуты, используемые для идентификации тестовых классов и методов
+
+Каждый тестовый класс должен иметь атрибут TestClass, а каждый тестовый метод — атрибут TestMethod. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute  
   
@@ -120,12 +123,10 @@ ms.lasthandoff: 01/09/2018
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.CssProjectStructureAttribute  
   
-## <a name="classes-used-with-private-accessors"></a>Классы, используемые с закрытыми методами доступа  
- Как описывается в разделе [Использование Publicize для создания закрытого метода доступа](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb), вы можете создать модульный тест для закрытого метода. При этом создается класс закрытых методов доступа, являющийся экземпляром объекта класса PrivateObject. Класс PrivateObject является классом-оболочкой, использующим отражение в рамках процесса доступа через закрытые методы. Аналогичным является класс PrivateType, но вместо вызова закрытых методов экземпляра используется вызов закрытых статических методов.  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType  
-  
-## <a name="see-also"></a>См. также  
- Microsoft.VisualStudio.TestPlatform.UnitTestFramework
+## <a name="classes-used-with-private-accessors"></a>Классы, используемые с закрытыми методами доступа
+
+Можно создать модульный тест для закрытого метода. При этом создается класс закрытых методов доступа, являющийся экземпляром объекта класса PrivateObject. Класс PrivateObject является классом-оболочкой, использующим отражение в рамках процесса доступа через закрытые методы. Аналогичным является класс PrivateType, но вместо вызова закрытых методов экземпляра используется вызов закрытых статических методов.
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType

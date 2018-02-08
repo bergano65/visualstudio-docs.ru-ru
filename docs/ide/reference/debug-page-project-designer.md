@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesDebug
+f1_keywords:
+- vb.ProjectPropertiesDebug
 helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 305f5160ab91fdfa61e9133ab9f867194e4a117f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="debug-page-project-designer"></a>Страница "Отладка" в конструкторе проектов
 > [!WARNING]
@@ -29,16 +32,16 @@ ms.lasthandoff: 12/22/2017
   
  На странице **Отладка** **конструктора проектов** можно настроить свойства отладки для проекта Visual Basic или C#.  
   
- Чтобы открыть страницу **Отладка**, выберите узел проекта в **обозревателе решений**. В меню **Проект** выберите пункт *Имя проекта***Свойства**. Когда откроется **конструктор проектов**, перейдите на вкладку **Отладка**.  
+ Чтобы открыть страницу **Отладка**, выберите узел проекта в **обозревателе решений**. В меню **Проект** выберите *Имя_проекта***Свойства**. Когда откроется **конструктор проектов**, перейдите на вкладку **Отладка**.  
   
 ## <a name="configuration-and-platform"></a>Конфигурация и платформа  
  Приведенные ниже параметры позволяют выбрать конфигурацию и платформу для просмотра или внесения изменений.  
   
  **Конфигурация**  
- Указывает параметры конфигурации для отображения или изменения. Возможные параметры: **Отладка** (по умолчанию), **Выпуск** и **Все конфигурации**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Указывает параметры конфигурации для отображения или изменения. Возможные параметры: **Отладка** (по умолчанию), **Выпуск** и **Все конфигурации**.
   
  **Платформа**  
- Указывает параметры платформы для отображения или изменения. Варианты: **Любой ЦП** (по умолчанию), **x64** и **x86**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Указывает параметры платформы для отображения или изменения. Варианты: **Любой ЦП** (по умолчанию), **x64** и **x86**.
   
 ## <a name="start-action"></a>Запустить действие  
  **Действие при запуске**: указывает, что именно нужно запустить при отладке приложения: проект, пользовательскую программу, URL-адрес или ничего. По умолчанию этот параметр имеет значение **Запуск проекта**. Параметр **Действие при запуске** на странице **Отладка** определяет значение свойства `StartAction`.  
@@ -74,10 +77,10 @@ ms.lasthandoff: 12/22/2017
   
  Для выполнения отладки в зоне безопасности нужно включить этот параметр и установить флажок **Отладить это приложение с выбранным набором разрешений** в диалоговом окне [Дополнительные параметры безопасности](../../ide/reference/advanced-security-settings-dialog-box.md).  
   
-## <a name="see-also"></a>См. также  
- [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)   
- [Параметры проекта для конфигураций отладки C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Параметры проекта для конфигурации отладки Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Управление свойствами отладки](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Практическое руководство. Создание и изменение конфигураций](../../ide/how-to-create-and-edit-configurations.md)
+## <a name="see-also"></a>См. также
+
+[Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)  
+[Параметры проекта для конфигураций отладки C#](../../debugger/project-settings-for-csharp-debug-configurations.md)  
+[Параметры проекта для конфигурации отладки Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
+[Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)  
+[Практическое руководство. Создание и изменение конфигураций](../../ide/how-to-create-and-edit-configurations.md)

@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Тестирование приложений SharePoint 2010 с помощью закодированных тестов пользовательского интерфейса
 Включение закодированных тестов пользовательского интерфейса в приложение SharePoint дает возможность проверки того, является ли все приложение, включая элементы управления пользовательского интерфейса, правильным. Можно также использовать закодированные тесты пользовательского интерфейса для проверки значений и логики в пользовательском интерфейсе.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 01/09/2018
 -   ![Необходимый компонент](../test/media/prereq.png "Prereq") Элементы управления Visio и PowerPoint 2010 в приложении SharePoint не поддерживаются.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Создание закодированного теста пользовательского интерфейса для приложения SharePoint  
- [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) для приложений SharePoint 2010 происходит таким же способом, что и создание тестов для других типов приложений. Запись и воспроизведение поддерживаются для всех элементов управления в интерфейсе веб-редактирования. Интерфейс для выбора категорий и веб-частей — стандартные веб-элементы управления.  
+ [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md) для приложений SharePoint 2010 происходит таким же способом, что и создание тестов для других типов приложений. Запись и воспроизведение поддерживаются для всех элементов управления в интерфейсе веб-редактирования. Интерфейс для выбора категорий и веб-частей — стандартные веб-элементы управления.  
   
  ![Веб-части SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   

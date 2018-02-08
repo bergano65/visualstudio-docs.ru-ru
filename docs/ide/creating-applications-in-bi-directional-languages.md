@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b0d0010d9aa4c56fdffef2eceb458776a863d23
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Создание приложений для языков с двунаправленным письмом
 Visual Studio можно использовать для создания приложений, которые правильно отображают текст на языках, где письмо осуществляется справа налево, в том числе арабском и иврите. Для некоторых функций можно просто задать свойства. В других случаях требуется реализовать функции в коде.  
@@ -80,15 +82,16 @@ Visual Studio можно использовать для создания при
 -   Текст кода и литералов. В редакторе кода (который также является текстовым редактором) можно использовать арабский или иврит для имен классов, функций, переменных, свойств, строковых литералов, атрибутов и т. д. Однако редактор не поддерживает порядок чтения справа налево — текст всегда начинается у левого поля.  
   
     > [!TIP]
-    >  Рекомендуется выносить строковые литералы в файлы ресурсов вместо того, чтобы жестко программировать их в программах. Дополнительные сведения см. в разделе [Пошаговое руководство. Локализация Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Рекомендуется выносить строковые литералы в файлы ресурсов вместо того, чтобы жестко программировать их в программах. Дополнительные сведения см. в описании [ресурсов в классических приложениях (.NET Framework)](/dotnet/framework/resources/index).
   
     > [!NOTE]
-    >  Ссылаться на объекты, названные на этих языках, следует согласованно. Например, если в имени переменной на арабском используется кашида, нужно всегда использовать кашиду при обращении к этой переменной, в противном случае возникнут ошибки.  
+    > Ссылаться на объекты, названные на этих языках, следует согласованно. Например, если в имени переменной на арабском используется кашида, нужно всегда использовать кашиду при обращении к этой переменной, в противном случае возникнут ошибки.  
   
 -   Комментарии к коду. Вы можете создавать комментарии на арабском или иврите. Кроме того, можно использовать эти языки в построителе комментариев.  
   
-## <a name="see-also"></a>См. также  
- [Поддержка двунаправленного письма для приложений Windows Forms](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Поддержка двунаправленного письма в веб-приложениях ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [Глобализация приложений](../ide/globalizing-applications.md)   
- [Локализация приложений](../ide/localizing-applications.md)
+## <a name="see-also"></a>См. также
+
+[Поддержка двунаправленного письма для приложений Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)  
+[Двухсторонний режим для веб-приложений ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[Глобализация приложений](../ide/globalizing-applications.md)  
+[Локализация приложений](../ide/localizing-applications.md)

@@ -11,17 +11,19 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
+
 В данном пошаговом руководстве демонстрируется использование источника данных, определенного в файле app.config, для модульного тестирования. Вы узнаете, как создать файл app.config, определяющий источник данных, который может использоваться классом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. В данном пошаговом руководстве представлены следующие задачи:  
   
 -   создание файла app.config;  
@@ -148,20 +150,20 @@ ms.lasthandoff: 01/09/2018
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- Элемент `microsoft.visualstudio.testtools` должен выглядеть примерно следующим образом.  
-  
-```  
+Элемент `microsoft.visualstudio.testtools` должен выглядеть примерно следующим образом.
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- Окончательный файл app.config должен выглядеть примерно следующим образом.  
-  
-```  
+```
+
+Окончательный файл app.config должен выглядеть примерно следующим образом.
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +219,11 @@ ms.lasthandoff: 01/09/2018
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Создание модульного теста с помощью источников данных файла app.config  
   
-1.  Добавьте модульный тест в тестовый проект.  
-  
-     Дополнительные сведения см. в разделе [Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+1.  Добавьте модульный тест в тестовый проект.
   
 2.  Замените автоматически созданное содержимое модульного теста следующим кодом.  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +264,11 @@ ms.lasthandoff: 01/09/2018
 3.  Проверьте атрибуты DataSource. Обратите внимание на имена параметров из файла app.config.  
   
 4.  Выполните построение решения и запустите тесты MyTestMethod и MyTestMethod2.  
-  
+
 > [!IMPORTANT]
->  Разверните элементы как источники данных, чтобы они были доступны для теста в каталоге развертывания.  
-  
+> Разверните элементы как источники данных, чтобы они были доступны для теста в каталоге развертывания.
+
 ## <a name="see-also"></a>См. также
 
 [Модульное тестирование кода](../test/unit-test-your-code.md)  
-[Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [Практическое руководство. Создание модульного теста, управляемого данными](../test/how-to-create-a-data-driven-unit-test.md)

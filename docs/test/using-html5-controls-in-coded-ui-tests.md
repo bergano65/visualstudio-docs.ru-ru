@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: e3589707f07564bbcd84151b0eedeb1c0029428b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 093457cf2aea3951db89e6fa677ec03fe55df89a
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 Закодированные тесты ИП поддерживают некоторые элементы управления HTML5 в Internet Explorer 9 и Internet Explorer 10.  
@@ -136,12 +137,12 @@ string ValueAsNumber
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
  **Элемент управления ProgreesBar:** с элементом управления ProgressBar нельзя взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления.  
-  
+
  ![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
-  
-## <a name="see-also"></a>См. также  
- [Элементы HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Настройка закодированного теста пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+## <a name="see-also"></a>См. также
+
+[Элементы HTML](http://go.microsoft.com/fwlink/?LinkID=232441)  
+[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)  
+[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md)  
+[Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

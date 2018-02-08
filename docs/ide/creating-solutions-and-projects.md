@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fb9b5119659600b4bfd902e61eda70a85b645efd
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="create-solutions-and-projects"></a>Создание решений и проектов
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 01/22/2018
 1. В мастере перейдите к месту хранения файлов и введите имя нового проекта в поле **Имя**. По завершении нажмите кнопку **Готово**.
 
 > [!NOTE]
-> Этот вариант лучше всего подходит для относительно простой коллекции файлов. В настоящее время поддерживаются только типы проектов Visual C++, Apache Cordova, Visual Basic и Visual C#.
+> Этот вариант лучше всего подходит для относительно простой коллекции файлов. Сейчас поддерживаются только типы проектов Visual C++, Apache Cordova, Visual Basic и C#.
 
 ## <a name="add-files-to-a-solution"></a>Добавление файлов в решение
 

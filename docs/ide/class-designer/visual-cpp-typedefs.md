@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords: Class Designer [Visual Studio], typedefs
+helpviewer_keywords:
+- Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 63bd8657d62a05edb1c9772776ca1216a0eee5ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 96d7e8cee6ce024040184aca50b5f5cb6facf388
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Операторы typedef языка Visual C++ в конструкторе классов
 Операторы typedef создают один или несколько уровней косвенного обращения между именем и его базовым типом. Конструктор классов поддерживает те определения типов C++, которые объявлены с ключевым словом `typedef`, например:  
@@ -48,10 +51,10 @@ typedef class coord
    unsigned x;  
    unsigned y;  
 };  
-```  
-  
-Дополнительные сведения об использовании типа `typedef` см. в статье [Описатель typedef](https://msdn.microsoft.com/en-us/library/05w82thz.aspx).  
-  
+```
+
+Дополнительные сведения об использовании типа `typedef` см. в разделе о [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs).
+
 Фигура определения типа C++ имеет форму типа, указанного в определении типа. Например, если источник объявляет `typedef class`, у фигуры будут скругленные углы и метка **класса**. У `typedef struct` фигура имеет квадратные углы и метку **Структура**.  
   
 Классы и структуры могут иметь вложенные определения типов, объявленные в них. Таким образом, фигуры классов и структур могут отображать объявления вложенных определений типов как вложенные фигуры.  
@@ -201,5 +204,6 @@ typedef
 -> MyIntVect  
   
 ## <a name="see-also"></a>См. также
-[Работа с кодом на Visual C++](working-with-visual-cpp-code.md)   
-[Описатель typedef](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)
+
+[Работа с кодом на Visual C++](working-with-visual-cpp-code.md)  
+[Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)

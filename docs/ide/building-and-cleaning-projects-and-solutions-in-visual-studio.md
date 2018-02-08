@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Построение и очистка проектов и решений в Visual Studio
 Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в статье [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).  
@@ -58,11 +60,11 @@ ms.lasthandoff: 12/22/2017
   
 1.  В **обозревателе решений** выберите или откройте решение.  
   
-2.  В строке меню выберите **Сборка**, а затем выберите либо **Собрать***имя_проекта*, либо **Перестроить***имя_проекта*.  
+2.  В строке меню выберите **Сборка**, а затем выберите либо **Построить***Имя_проекта* или **Перестроить***Имя_проекта*.  
   
-    -   Выберите **Собрать***имя_проекта*, чтобы собрать только те компоненты проекта, которые были изменены с момента последней сборки.  
+    -   Выберите **Построить***Имя_проекта*, чтобы выполнить сборку только тех компонентов проекта, которые были изменены с момента последней сборки.  
   
-    -   Выберите **Перестроить***имя_проекта*, чтобы очистить проект, а затем собрать файлы проекта и все компоненты проекта.  
+    -   Выберите **Перестроить***Ия_проекта*, чтобы очистить проект, а затем выполнить сборку файлов проекта и всех его компонентов.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Сборка только запускаемого проекта и его зависимостей  
   
@@ -111,11 +113,12 @@ ms.lasthandoff: 12/22/2017
     -   Нажмите сочетание клавиш CTRK+Break.  
   
 ## <a name="see-also"></a>См. также
-[Практическое руководство. Просмотр, сохранение и настройка файлов журнала построения](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
-[Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
-[Конфигурации отладки и выпуска проекта](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[Справочные сведения о построении C/C++](/cpp/build/reference/c-cpp-building-reference)   
-[Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)   
+
+[Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)  
+[Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)  
+[Практическое руководство. Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)  
+[Справочные сведения о сборке C/C++](/cpp/build/reference/c-cpp-building-reference)  
+[Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)  
 [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)

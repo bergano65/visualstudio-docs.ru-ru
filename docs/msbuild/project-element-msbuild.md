@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Project
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +20,17 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7735cce0a03f31c98cc45b481b8697d306f63f4d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec6074fd7e360d50cffb84b4e83bb85c80ece090
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="project-element-msbuild"></a>Элемент Project (MSBuild)
 Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .  
@@ -38,8 +41,10 @@ ms.lasthandoff: 12/22/2017
 <Project InitialTargets="TargetA;TargetB"  
          DefaultTargets="TargetC;TargetD"  
          TreatAsLocalProperty="PropertyA;PropertyB"  
-         ToolsVersion=<version number>  
+         ToolsVersion=<version number>
+         Sdk="name[/version]"
          xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+    <Sdk... />
     <Choose>... </Choose>  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
@@ -59,7 +64,7 @@ ms.lasthandoff: 12/22/2017
 |---------------|-----------------|  
 |`DefaultTargets`|Необязательный атрибут.<br /><br /> Целевой объект или объекты по умолчанию служат точкой входа сборки, если целевой объект не указан. Несколько целевых объектов разделяются точкой с запятой (;).<br /><br /> Если целевой объект по умолчанию не указан в атрибуте `DefaultTargets` или командной строке [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], обработчик выполняет первый целевой объект в файл проекта после вычисления элементов [Импорт](../msbuild/import-element-msbuild.md).|  
 |`InitialTargets`|Необязательный атрибут.<br /><br /> Исходный целевой объект или объекты, выполняемые до целевых объектов, заданных в атрибуте `DefaultTargets` или в командной строке. Несколько целевых объектов разделяются точкой с запятой (;).|  
-|`SDK`|Необязательный атрибут. (Доступен только для проектов .NET Core в Visual Studio 2017 или более поздних версиях.)<br /><br /> Версия пакета SDK для создания неявных операторов import, которые добавляются в PROJ-файл. Например, `<Project Sdk="Microsoft.NET.Sdk/1.0.0-RC" />`.|  
+|`Sdk`|Необязательный атрибут. <br /><br /> Имя и (необязательно) версия пакета SDK для создания неявных операторов import, которые добавляются в PROJ-файл. Если версия не указана, MSBuild будет пытаться использовать версию по умолчанию.  Например, `<Project Sdk="Microsoft.NET.Sdk" />` или `<Project Sdk="My.Custom.Sdk/1.0.0" />`.|  
 |`ToolsVersion`|Необязательный атрибут.<br /><br /> Версия набора инструментов MSBuild используется для определения значений $(MSBuildBinPath) и $(MSBuildToolsPath).|  
 |`TreatAsLocalProperty`|Необязательный атрибут.<br /><br /> Имена свойств, которые не будут относиться к глобальным. Этот атрибут запрещает определенным свойствам командной строки переопределять значения свойств, заданные в файле проекта или целевых объектов и всех последующих операциях импорта. Несколько свойств разделяются точкой с запятой (;).<br /><br /> Как правило, глобальные свойства переопределяют значения свойств, заданных в файле проекта или целевых объектов. Если свойство указано в значении `TreatAsLocalProperty`, значение глобального свойства не переопределяет значения свойств, заданные в этом файле и всех последующих операциях импорта. Дополнительные сведения см. в разделе [Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Примечание**. Чтобы задать глобальные свойства из командной строки, используйте параметр **/property** (или **/p**). Кроме того, вы можете задать или изменить глобальные свойства для дочерних проектов в сборках нескольких проектов, используя атрибут `Properties` задачи MSBuild. Дополнительные сведения см. в разделе [Задача MSBuild](../msbuild/msbuild-task.md).|  
 |`Xmlns`|Необязательный атрибут.<br /><br /> Если указан, атрибут `xmlns` должен иметь значение "http://schemas.microsoft.com/developer/msbuild/2003".|  
@@ -72,8 +77,9 @@ ms.lasthandoff: 12/22/2017
 |[Import](../msbuild/import-element-msbuild.md)|Необязательный элемент.<br /><br /> Позволяет файлу проекта импортировать другой файл проекта. Проект может содержать любое число элементов `Import`, включая ноль.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Необязательный элемент.<br /><br /> Группирующий элемент для отдельных элементов. Элементы указываются с помощью элемента [Item](../msbuild/item-element-msbuild.md). Проект может содержать любое число элементов `ItemGroup`, включая ноль.|  
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|Необязательный элемент.<br /><br /> Предоставляет способ сохранения данные, не относящихся к [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать один элемент `ProjectExtensions` или ни одного такого элемента.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Необязательный элемент.<br /><br /> Группирующий элемент для отдельных свойств. Свойства задаются с помощью элемента [Property](../msbuild/property-element-msbuild.md). Проект может содержать любое число элементов `PropertyGroup`, включая ноль.|  
-|[Target](../msbuild/target-element-msbuild.md)|Необязательный элемент.<br /><br /> Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения. Задачи указываются с помощью элемента [Task](../msbuild/task-element-msbuild.md). Проект может содержать любое число элементов `Target`, включая ноль.|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Необязательный элемент.<br /><br /> Группирующий элемент для отдельных свойств. Свойства задаются с помощью элемента [Property](../msbuild/property-element-msbuild.md). Проект может содержать любое число элементов `PropertyGroup`, включая ноль.|
+|[Sdk](../msbuild/sdk-element-msbuild.md)|Необязательный элемент.<br /><br /> Ссылка на пакет SDK для проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  Этот элемент может использоваться в качестве альтернативы атрибуту Sdk.|  
+|[Целевой объект](../msbuild/target-element-msbuild.md)|Необязательный элемент.<br /><br /> Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения. Задачи указываются с помощью элемента [Task](../msbuild/task-element-msbuild.md). Проект может содержать любое число элементов `Target`, включая ноль.|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|Необязательный элемент.<br /><br /> Предоставляет способ регистрации задач в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать любое число элементов `UsingTask`, включая ноль.|  
 
 ### <a name="parent-elements"></a>Родительские элементы  

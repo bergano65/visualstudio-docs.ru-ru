@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: output directory, changing
+helpviewer_keywords:
+- output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d1dcd42cf2251a4cd20047eaa3fc67110cf048e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 14aad8b82a3757fecb1d449a671fc07c2582bb5f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Практическое руководство. Изменение выходного каталога построения
 Вы можете указать расположение выходных данных проекта для каждой конфигурации (для отладки, выпуска или и того и другого).  
@@ -32,7 +35,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  В строке меню выберите **Проект**, *Свойства* **имя_приложения**. Можно также щелкнуть правой кнопкой мыши узел проекта в **обозревателе решений** и выбрать пункт **Свойства**.  
   
-2.  Если у вас есть проект Visual Basic, выберите вкладку **Компиляция** . Если у вас есть проект Visual C#, выберите вкладку **Сборка** . Если у вас есть проект C++ или JavaScript, выберите вкладку **Общие** .  
+2.  Если у вас есть проект Visual Basic, выберите вкладку **Компиляция** . Если у вас есть проект C#, выберите вкладку **Сборка**. Если у вас есть проект C++ или JavaScript, выберите вкладку **Общие** .  
   
 3.  В раскрывающемся списке конфигураций в верхней части окна выберите конфигурацию, расположение файла выходных данных которой нужно изменить (отладка, выпуск или все).  
   

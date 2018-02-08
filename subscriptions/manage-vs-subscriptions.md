@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 ## <a name="signing-in-to-the-portal"></a>Вход на портал
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/01/2017
 #### <a name="workschool-accounts"></a>Рабочие или учебные учетные записи
 Если подписка была предоставлена организацией или учебным заведением, вы должны были получить приветственное сообщение электронной почты.  
 1.  Перейдите на [портал подписчика](https://my.visualstudio.com/).
-2.  Введите адрес электронной почты, назначенный новой подписке Visual Studio. Этот адрес также указан в **приветственном письме** подписчику. Если приветственное письмо не было получено, проверьте папки нежелательной почты.
+2.  Введите адрес электронной почты, назначенный новой подписке Visual Studio. Этот адрес также указан в приветственном сообщении электронной почты для подписчика. Если такое сообщение не было получено, проверьте папки с нежелательной почтой.
 3.  Нажмите кнопку **Продолжить**.
 4.  Вы перейдете на страницу входа предприятия.
 5.  Введите пароль.

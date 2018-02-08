@@ -1,38 +1,57 @@
 ---
-title: "Преимущество LinkedIn Learning"
+title: "Преимущество LinkedIn Learning в подписках Visual Studio | Документация Майкрософт"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 11/7/2017
+Ms.date: 1/12/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the LinkedIn Learning benefit included as part of a Premium subscription included in your Visual Studio subscription.
+Description: Learn about the LinkedIn Learning benefit included as part of a LinkedIn Premium subscription included in selected Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 62f08913a7fbefe0bd40f3dd752d96194916b0e5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8ef318cb7cdefefc079b230f0e44fdeb5f0c2d8f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="activating-the-linkedin-learning-benefit-in-your-visual-studio-subscription"></a>Активация преимущества LinkedIn Learning в подписках Visual Studio
+# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
+## <a name="overview"></a>Обзор
 Получите все возможности LinkedIn, включая доступ к специалистам и знаниям, которые необходимы вам для карьерного роста.  Перенимайте наиболее востребованные деловые, технические и творческие навыки у отраслевых экспертов.
 
-Подписка Visual Studio включает в себя подписку на LinkedIn Premium, которая предоставляет преимущество LinkedIn Learning.  Срок действия подписки Premium зависит от типа имеющейся подписки Visual Studio.
-
-| Подписка                                                     | Преимущество                      |
-|------------------------------------------------------------------|------------------------------|
-| Стандартная и годовая облачная подписки на Visual Studio Enterprise   | Подписка Premium на 6 месяцев |
-| Стандартная и годовая облачная подписки на Visual Studio Professional | Подписка Premium на 3 месяца |
-| Visual Studio Test Professional                                  | Подписка Premium на 3 месяца |
-| MSDN Platforms                                                   | Подписка Premium на 3 месяца |
-| Visual Studio Dev Essentials                                     | Подписка Premium на 3 месяца | 
-
+Некоторые подписки Visual Studio включают подписку на LinkedIn уровня "Премиум", которая предоставляет преимущество LinkedIn Learning.  Срок действия подписки уровня "Премиум" зависит от типа имеющейся подписки Visual Studio.
 Чтобы вы могли воспользоваться преимуществом LinkedIn Learning, вам потребуется учетная запись LinkedIn.  Если у вас ее еще нет, вы сможете создать ее перед активацией подписки Premium.  
 
-Чтобы активировать подписку Premium и преимущество LinkedIn Learning, выполните указанные ниже действия.
-1. Выполните вход на странице [https://my.visualstudio.com](https://my.visualstudio.com/benefits).
+## <a name="eligibility"></a>Право на участие
+| Уровень подписки или программа                                                  | Преимущество               | Возможность возобновления                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise — уровень "Стандартный"                                             | 6 месяцев              |  Нет                                                                |
+| Visual Studio Enterprise — годовая подписка                                               | 6 месяцев              |  Нет                                                                |
+| Visual Studio Enterprise — месячная подписка                                              | Недоступно         |                                                                    |
+| Visual Studio Professional — уровень "Стандартный"                                           | 3 месяца              |  Нет                                                                |
+| Visual Studio Professional — годовая подписка                                             | 3 месяца              |  Нет                                                                | 
+| Visual Studio Professional — месячная подписка                                            | Недоступно         |                                                                    |
+| Visual Studio Test Pro                                                        | 3 месяца              |  Нет                                                                |
+| MSDN Platforms                                                                | 3 месяца              |  Нет                                                                |
+| Visual Studio Dev Essentials                                                  | 3 месяца              |  Нет                                                                |
+| Visual Studio Enterprise — NFR<sup>1</sup>                                               | 6 месяцев              |  Нет                                                                |
+| Visual Studio Enterprise — FTE                                                | Недоступно         |                                                                    |
+| Visual Studio Enterprise — Microsoft Partner Network                          | Недоступно         |                                                                    |
+| Visual Studio Professional — Microsoft Partner Network                        | Недоступно         |                                                                    |
+| Visual Studio Enterprise — Imagine (уровень "Стандартный")                                 | Недоступно         |                                                                    |
+| Visual Studio Enterprise — Imagine (уровень "Премиум")                                  | Недоступно         |                                                                    |
+| Visual Studio Enterprise — BizSpark                                           | Недоступно         |                                                                    |
+| Microsoft Certified Trainer — программное обеспечение и службы                             | Недоступно         |                                                                    |
+| Microsoft Certified Trainer — разработчик программного обеспечения и служб                   | Недоступно         |                                                                    |
+
+<sup>1</sup> *Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)*   
+
+Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+
+## <a name="activation-steps"></a>Процедура активации
+Чтобы активировать подписку на LinkedIn Learning уровня "Премиум" и преимущество LinkedIn Learning, сделайте следующее:
+1. Войдите на страницу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Найдите плитку LinkedIn Learning в категории "Образование" и щелкните ссылку **Получить код**.
 
@@ -41,7 +60,7 @@ ms.lasthandoff: 12/01/2017
 
 3. Если у вас уже есть учетная запись LinkedIn и вы вошли автоматически, вы немедленно перейдете на страницу активации преимущества LinkedIn Learning.  Если у вас есть учетная запись LinkedIn, но вы не вошли в нее автоматически, просто введите свои имя пользователя и пароль, а затем нажмите кнопку **Вход**.  Чтобы активировать предложение, перейдите к [этому шагу](#activate-your-offer).
 
-
+### <a name="create-a-linkedin-account"></a>Создание учетной записи LinkedIn
 4. Если у вас еще нет учетной записи LinkedIn, нажмите кнопку **Присоединиться**.  
 
     ![LinkedIn Learning — кнопка "Присоединиться"](_img\vs-linkedin\vs-linkedin-join-now.png)
@@ -84,7 +103,7 @@ ms.lasthandoff: 12/01/2017
 
     ![LinkedIn Learning — отправка фотографии](_img\vs-linkedin\vs-linkedin-app.png)
 
-## <a name="activate-your-offer"></a>Активация предложения
+### <a name="activate-your-offer"></a>Активация предложения
 15. После входа в учетную запись LinkedIn или создания новой учетной записи можно активировать подписку Premium и начать пользоваться LinkedIn Learning.  Щелкните **Активировать предложение**. 
 
     ![Активация LinkedIn Learning](_img\vs-linkedin\vs-linkedin-Activate1.png)
@@ -97,3 +116,13 @@ ms.lasthandoff: 12/01/2017
 17. Вы успешно активировали подписку Premium и можете приступать к использованию LinkedIn Learning и других ее преимуществ.
 
     ![LinkedIn Learning — домашняя страница](_img\vs-linkedin\vs-linkedin-learning-home.png)
+
+## <a name="faq"></a>часто задаваемые вопросы
+*Проверка обновлений*
+
+## <a name="support-resources"></a>Ресурсы поддержки
+-  Нужна помощь с LinkedIn Learning?  Ознакомьтесь со следующими ресурсами:
+    - Справка по [использованию LinkedIn Learning](https://www.linkedin.com/help/learning).
+    - Справка по общим вопросам о [LinkedIn](https://www.linkedin.com/help/linkedin), включая создание учетных записей и профилей, а также поддержку сети.
+-  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
+-  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/).    

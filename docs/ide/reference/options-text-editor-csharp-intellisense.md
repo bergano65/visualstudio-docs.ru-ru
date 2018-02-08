@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,19 +18,20 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 322ae48b1ded8dfef7e25a80937da957e50f756f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-intellisense"></a>"Параметры", "Текстовый редактор", C#, IntelliSense
-Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для Visual C#. Чтобы получить доступ к странице свойств **IntelliSense**, щелкните **Параметры** в меню **Сервис**, затем щелкните **C#** в папке **Текстовый редактор** и выберите **IntelliSense.**  
+Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для C#. Чтобы получить доступ к странице свойств **IntelliSense**, щелкните **Параметры** в меню **Сервис**, затем щелкните **C#** в папке **Текстовый редактор** и выберите **IntelliSense.**  
   
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -44,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  Если этот параметр выбран, IntelliSense добавляет ключевые слова C#, например [class](/dotnet/csharp/language-reference/keywords/class), в список завершения.  
   
  **Помещать фрагменты кода в списки завершения**  
- Если этот параметр выбран, IntelliSense добавляет псевдонимы для фрагментов кода C# в список завершения. Если псевдоним фрагмента кода совпадает с ключевым словом, например [class](/dotnet/csharp/language-reference/keywords/class), оно заменяется ярлыком. Дополнительные сведения см. в разделе [Фрагменты кода Visual C#](../../ide/visual-csharp-code-snippets.md).  
+ Если этот параметр выбран, IntelliSense добавляет псевдонимы для фрагментов кода C# в список завершения. Если псевдоним фрагмента кода совпадает с ключевым словом, например [class](/dotnet/csharp/language-reference/keywords/class), оно заменяется ярлыком. Дополнительные сведения см. в описании [фрагментов кода C#](../../ide/visual-csharp-code-snippets.md).  
   
 ## <a name="selection-in-completion-lists"></a>Выделение в списках завершения  
  **Зафиксирован после ввода следующих знаков**  

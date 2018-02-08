@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 475c228dc7031dbb7cb98d9f325fcce89f31223b
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Страница "Список задач", папка "Среда", диалоговое окно "Параметры"
 На странице "Параметры" можно добавлять, удалять и изменять токены комментариев, используемые при создании напоминаний **списка задач**. Чтобы отобразить эти параметры, выберите **Параметры** в меню **Сервис**, разверните папку **Среда** и выберите **Список задач**.  
@@ -51,7 +53,7 @@ ms.lasthandoff: 12/22/2017
  При вставке в код комментария, который начинается с токена, указанного в **списке токенов**, этот комментарий отображается в **списке задач** как новая запись всякий раз, когда файл открывается для редактирования. Можно перейти непосредственно к строке кода, содержащей комментарий, щелкнув эту запись **списка задач**. Дополнительные сведения см. в статье [Использование списка задач](../../ide/using-the-task-list.md).  
   
  Список лексем  
- Отображает список лексем и позволяет добавлять или удалять пользовательские лексемы. В языках Visual C# и Visual C++ учитывается регистр лексем комментариев, однако в Visual Basic регистр не учитывается.  
+ Отображает список лексем и позволяет добавлять или удалять пользовательские лексемы. В языках C# и Visual C++ учитывается регистр лексем комментариев, но в Visual Basic регистр не учитывается.  
   
 > [!NOTE]
 >  Если не ввести точное значение токена в том виде, как он представлен в **списке токенов**, задача комментария не будет отображена в **списке задач**.  

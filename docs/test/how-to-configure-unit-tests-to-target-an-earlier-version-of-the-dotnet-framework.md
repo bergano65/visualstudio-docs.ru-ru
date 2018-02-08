@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 author: gewarren
-ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 13780b561ba14cc06269e443265313e3b2e664c6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
 При создании тестового проекта в Microsoft Visual Studio последняя версия платформы .NET Framework устанавливается в качестве целевой по умолчанию. Кроме того, при обновлении тестовых проектов, созданных в предыдущих версиях Visual Studio, они обновляются до последней версии платформы .NET Framework. Путем изменения свойств проекта можно явно изменить целевую версию .NET Framework для проекта на более раннюю.  
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/09/2018
   
      Будут показаны свойства тестового проекта Visual Basic.  
   
-5.  На вкладке **Компиляция** выберите **Дополнительные параметры компиляции**, как показано на приведенной ниже иллюстрации.  
+5.  На вкладке **Компиляция** выберите **Дополнительные параметры компиляции**, как показано на приведенной ниже иллюстрации.
   
      ![Дополнительные параметры компиляции](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 01/09/2018
   
      Будут показаны свойства тестового проекта Visual C#.  
   
-5.  На вкладке **Приложение** выберите **Целевая рабочая среда**, а затем **.NET Framework 3.5** или более позднюю версию из раскрывающегося списка, чтобы изменить целевую платформу, как показано на рисунке ниже. Указывать версию клиента не следует.  
+5.  На вкладке **Приложение** выберите **Целевая платформа**. В раскрывающемся списке выберите **.NET Framework 3.5** или более поздней версии, как показано на следующем рисунке. Указывать версию клиента не следует.
   
      ![Раскрывающийся список "Целевая рабочая среда"](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
@@ -125,8 +126,8 @@ ms.lasthandoff: 01/09/2018
   
 8.  В обозревателе решений выберите в контекстном меню нового тестового проекта Visual C++ пункт **Перезагрузить проект**.  
   
-## <a name="see-also"></a>См. также  
- [Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Создание решений SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Построение и отладка решений SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>См. также
+
+[Создание решений SharePoint](/office-dev/office-dev/create-sharepoint-solutions)  
+[Построение и отладка решений SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)  
+[Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

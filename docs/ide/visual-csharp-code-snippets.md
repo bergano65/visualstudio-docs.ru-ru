@@ -1,30 +1,32 @@
 ---
-title: "Фрагменты кода Visual C# | Документы Майкрософт"
+title: "Фрагменты кода C# | Документация Майкрософт"
 ms.custom: 
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
 - Code Snippet Inserter [C#]
-- Visual C#, default snippets
+- C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 04b75cb77a41d69edfae565660d7dbabe6c10ee9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C#
+# <a name="c-code-snippets"></a>Фрагменты кода C#
 Фрагменты кода — это готовые фрагменты кода, которые можно быстро вставлять в свой код. Например, фрагмент кода `for` создает пустой цикл `for`. Некоторые фрагменты кода являются окружающими, т. е. позволяют сначала выбрать строки кода, а затем фрагмент кода, в который будут включены выбранные строки. Например, если выбрать строки кода и затем активировать фрагмент кода `for`, будет создан блок цикла `for`, внутри которого будут находиться выбранные строки кода. Фрагменты кода ускоряют, упрощают написание программ и делают этот процесс более надежным.  
 
  Можно вставить фрагмент кода в месте расположения курсора или вставить окружающий фрагмент кода вокруг выделенного в данный момент кода. Меню вставки фрагмента кода вызывается с помощью команд **Вставить фрагмент кода** или **Окружить** из меню **IntelliSense** или с помощью сочетаний клавиш CTRL+K и затем X или CTRL+K и затем S, соответственно.  

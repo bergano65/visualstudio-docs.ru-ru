@@ -4,11 +4,12 @@ ms.custom:
 ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - Visual Basic projects, references
 - troubleshooting references
 - referencing files from projects
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2b7046240f711d640b8143afddb667e2726eb35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ecca7ee3d9d5ae6a4f347df7438cb38718d702b4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Диагностика неработающих ссылок
 
@@ -61,7 +63,7 @@ ms.lasthandoff: 12/22/2017
 
 1. Если вы используете Visual Basic, выберите страницу **Ссылки** и нажмите кнопку **Пути для ссылок**. В диалоговом окне **Пути для ссылок** введите путь к папке с элементом, на который нужно сослаться, в поле **Папка**, а затем нажмите кнопку **Добавить папку**.
 
-    Если вы используете Visual C#, выберите страницу **Пути для ссылок**. В поле **Папка** введите путь к папке с элементом, на который нужно сослаться, а затем нажмите кнопку **Добавить папку**.
+    Если вы используете C#, выберите страницу **Пути для ссылок**. В поле **Папка** введите путь к папке с элементом, на который нужно сослаться, а затем нажмите кнопку **Добавить папку**.
 
 ## <a name="referenced-file-has-been-deleted"></a>Файл, на который указывает ссылка, удален.
 
