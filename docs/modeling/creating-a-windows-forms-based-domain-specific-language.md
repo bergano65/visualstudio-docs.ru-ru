@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
 Windows Forms можно использовать для отображения состояния модели доменного языка (DSL), вместо использования схема DSL. В этом разделе описывается привязка к DSL формы Windows Forms, с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] визуализации и моделирования SDK.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 DSL экземпляра, показывая формы пользовательского интерфейса Windows и обозреватель модели.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Создание Windows Forms DSL  
@@ -70,7 +71,7 @@ DSL экземпляра, показывая формы пользователь
 ## <a name="updating-the-dsl-definition"></a>Обновление определения DSL  
  Следующие определения DSL используется в этом пошаговом руководстве.  
   
- ![DSL &#45; WPF &#45; 1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>Для обновления определения DSL  
   
@@ -123,13 +124,13 @@ DSL экземпляра, показывая формы пользователь
   
 2.  Выберите **объекта**, **Далее**.  
   
-     Разверните **Dsl**, **Company.FarmApp**и выберите **фермы**, который является корневой класс модели. Выберите **Готово**.  
+     Разверните **Dsl**, **Company.FarmApp**и выберите **фермы**, который является корневой класс модели. Нажмите кнопку **Готово**.  
   
      В обозревателе решений щелкните **пользовательского интерфейса** проекта теперь содержит **Properties\DataSources\Farm.datasource**  
   
      Свойства и отношения класса модели отображаются в окне Источники данных.  
   
-     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf-3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Для подключения к модели в форму  
   
@@ -304,7 +305,7 @@ DSL экземпляра, показывая формы пользователь
   
      Вы сможете изменить имя элемента в представлении сетки данных. Можно также удалить из него.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>Код для добавления элемента  
  Для кнопки нового элемента немного проще следующий альтернативный образец программного кода.  

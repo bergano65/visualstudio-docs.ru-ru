@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 060cf2551f6c79259c7094d52f35db92f9ebcfef
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
 Другие пользователи Visual Studio могут устанавливать расширения моделирования слоев, созданные вами с помощью Visual Studio.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 01/13/2018
 2.  Выберите имя расширения и нажмите кнопку **удаления**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Установка расширения на сервере Team Foundation Build  
- Как правило, на серверах [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] не установлена среда Visual Studio, поэтому установить VSIX двойным щелчком мыши невозможно. Установка [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] включает несколько компонентов для запуска расширения VSIX, но установка расширения выполняется вручную.  
+ [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] серверы обычно не имеют установленной среды Visual Studio, и поэтому не удается установить расширение VSIX, дважды щелкнув его. Установка [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] включает несколько компонентов для запуска расширения VSIX, но установка расширения выполняется вручную.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Установка расширения слоев на сервере [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]  
   
@@ -56,11 +57,11 @@ ms.lasthandoff: 01/13/2018
   
     -   Установка только для сетевой службы, в которой выполняется [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]:  
   
-         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\\Extensions\Microsoft [версия]  
+         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
     -   Если сервер [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] настроен на выполнение в интерактивном режиме от имени определенного пользователя, установить расширение можно только для этого пользователя:  
   
-         %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [версия]  
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % — *DriveName*: пользователи*UserName*AppDataLocal.  

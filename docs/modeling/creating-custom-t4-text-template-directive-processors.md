@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, custom directive processors
+helpviewer_keywords:
+- text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe637b6ae730cf70113abda14fad794c30868242
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Создание пользовательских обработчиков директив для текстовых шаблонов T4
 *Процесс преобразования текстового шаблона* принимает *текстового шаблона* файл в качестве входных данных и создает текстовый файл на выходе. *Преобразования текстовых шаблонов* процесс и обработчик взаимодействует с основное приложение преобразования текстовых шаблонов и один или несколько текстового шаблона элементов управления *процессоров директив* для завершения процесса. Дополнительные сведения см. в разделе [процесс преобразования текстового шаблона](../modeling/the-text-template-transformation-process.md).  

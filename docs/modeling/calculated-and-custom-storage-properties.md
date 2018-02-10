@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, programming domain properties
+helpviewer_keywords:
+- Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3d8749e87a25cc9243cf7e76a99b027975673ab4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Вычисляемые и пользовательские свойства хранилища
 Все свойства домена в доменный язык (DSL) могут отображаться для пользователя на диаграмме и в обозревателе ваш язык и может осуществляться программного кода. Однако свойства различаются способами, их значения должны храниться.  
@@ -26,7 +28,7 @@ ms.lasthandoff: 01/13/2018
 |Вид Свойства домена|Описание:|  
 |--------------------------|-----------------|  
 |**Стандартная** (по умолчанию)|Свойства домена, который сохраняется в *хранения* и сериализован в файл.|  
-|**Вычисляемый**|Свойство домена только для чтения, которое не сохраняется в хранилище, но вычисляется на основе других значений.<br /><br /> Например `Person.Age` может вычисляться из `Person.BirthDate`.<br /><br /> Вы должны предоставить код, который выполняет вычисление. Как правило можно вычислить значение от других свойств домена. Вы также можете использовать внешние ресурсы.|  
+|**Calculated**|Свойство домена только для чтения, которое не сохраняется в хранилище, но вычисляется на основе других значений.<br /><br /> Например `Person.Age` может вычисляться из `Person.BirthDate`.<br /><br /> Вы должны предоставить код, который выполняет вычисление. Как правило можно вычислить значение от других свойств домена. Вы также можете использовать внешние ресурсы.|  
 |**Пользовательского хранилища**|Свойства домена, не сохраняются непосредственно в хранилище, но может быть get и set.<br /><br /> Вы должны предоставить методы, которые получают и задают значение.<br /><br /> Например `Person.FullAddress` могут храниться в `Person.StreetAddress`, `Person.City`, и `Person.PostalCode`.<br /><br /> Также можно получить доступ к внешним ресурсам, например получать и задавать значения из базы данных.<br /><br /> Код не следует задавать значения в хранилище при `Store.InUndoRedoOrRollback` имеет значение true. В разделе [транзакций и пользовательские задания](#setters).|  
   
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Предоставляет код для хранения вычисляемых или пользовательские свойства  

@@ -4,10 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.TextTemplating.TextTemplating
+f1_keywords:
+- VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
 - generating text
 - .tt files
@@ -17,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6eeadb77cd0250ab7b2cc48c2abdb8d9f1a1f373
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 029b5264d5275458aee1893df0ba4dd4d83d1a91
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Создание кода и текстовые шаблоны T4
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *текстовый шаблон T4* представляет собой сочетание блоков текста и логики управления, которое может создать текстовый файл. Логика управления записывается в виде фрагментов программного кода в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. В Visual Studio 2015 с обновлением 2 и более поздних версиях можно использовать функции C# версии 6.0 в директивах шаблонов T4. Созданный файл может быть текстом любого типа, например веб-страницей, файлом ресурса или исходным кодом программы на любом языке.  

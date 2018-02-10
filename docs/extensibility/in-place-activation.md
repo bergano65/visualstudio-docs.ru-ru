@@ -4,18 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-csharp
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], custom - in-place view activation
+helpviewer_keywords:
+- editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: "26"
+caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 16c091dc6d5602e4d19b8679794ef2794b29d7ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="in-place-activation"></a>Активация на месте
 Если в представлении редактора размещаются элементы ActiveX или другие активные элементы управления, представление редактора следует реализовать как элемент ActiveX или как активный объект данных документа с помощью модели встроенной активации.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/27/2017
   
  Все интерфейсы, реализуемые для создания редактора встроенной активации, показаны в одном объекте `CYourEditorDocument` , но такая конфигурация поддерживает только одно представление данных документа. Дополнительные сведения о поддержке нескольких представлений данных документа см. в разделе [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
-|Интерфейс|Тип объекта|Применение|  
+|Интерфейс|Тип объекта|Использовать|  
 |---------------|--------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>|Просмотр|Позволяет встроенным объектам VSPackage работать как полностью интегрированным компонентам интегрированной среды разработки с помощью службы <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Эта служба интегрирует меню, панели инструментов и команды объекта в интегрированную среду разработки и отправляет уведомления об изменениях состояния.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Просмотр|Основное средство, с помощью которого внедренный объект предоставляет основные функциональные возможности своему контейнеру и взаимодействует с ним.|  

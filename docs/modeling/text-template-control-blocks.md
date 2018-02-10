@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, template code
+helpviewer_keywords:
+- text templates, template code
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b484c084413e74860244be325c125e74df2e9ef8
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: aea2d274e209c6ea0493da4bd743b008c9a5921f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="text-template-control-blocks"></a>Управляющие блоки текстовых шаблонов
 Блоки управления позволяют писать код в текстовом шаблоне для изменения выходных данных. Существует три вида блока управления, которые различаются по открывающей скобке:  
@@ -147,7 +149,7 @@ Some text.
   
  При использовании блоков управления необходимо помнить о следующих аспектах.  
   
--   **Язык.** В текстовом шаблоне можно использовать код C# или Visual Basic. Языком по умолчанию является C#, но можно указать Visual Basic с помощью параметра `language` директивы `template`. (Дополнительные сведения о `template` директив, см. в разделе [директивы текстовых шаблонов T4](../modeling/t4-text-template-directives.md).)  
+-   **Language.** В текстовом шаблоне можно использовать код C# или Visual Basic. Языком по умолчанию является C#, но можно указать Visual Basic с помощью параметра `language` директивы `template`. (Дополнительные сведения о `template` директив, см. в разделе [директивы текстовых шаблонов T4](../modeling/t4-text-template-directives.md).)  
   
      Язык, который вы используете в блоках управления, не связан с языком или форматом текста, создаваемого в текстовом шаблоне. Можно создать шаблон C#, используя код Visual Basic, и наоборот.  
   

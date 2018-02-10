@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Интеграция моделей с помощью Visual Studio Modelbus
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus предоставляет метод для создания связей между моделями, а также из других инструментов в модели. Например можно связать доменный язык (DSL), моделей и моделей UML. или создать интегрированный набор DSL.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus предоставляет метод для создания связей между моделями, а также из других инструментов в модели. Например можно связать доменный язык (DSL), моделей и моделей UML. или создать интегрированный набор DSL.  
   
  ModelBus позволяет создать уникальную ссылку на модель или на определенный элемент внутри модели. Эта ссылка может храниться вне модели, например в элементе другой модели. Если впоследствии средству потребуется доступ к элементу, инфраструктура ModelBus загрузит соответствующую модель и вернет элемент. При необходимости модель можно отобразить для пользователя. Если доступ к файлу в его прежнем расположении невозможен, ModelBus предложит пользователю его найти. Если пользователь найдет файл, ModelBus исправит все ссылки на этот файл.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 01/13/2018
  В папке `ModelBusAdapters\bin\*` содержатся сборки, построенные проектом `Dsl` и проектом `ModelBusAdapters`. Чтобы сослаться на этот DSL из другого DSL, импортируйте эти сборки.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Проверка возможности ссылки на элементы  
- По умолчанию адаптеры [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus используют для идентификации элемента его глобальный уникальный идентификатор. Это значит, что такие идентификаторы должны храниться в файле модели.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Адаптеры ModelBus использовать идентификатор guid элемента для обозначения по умолчанию. Это значит, что такие идентификаторы должны храниться в файле модели.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Проверка сохранности идентификаторов элемента  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  В проект "Отладка" в экспериментальном экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] добавьте файлы, являющиеся экземплярами каждого DSL.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus может разрешать ссылки только на модели, которые являются элементами того же решения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus можно разрешить только ссылки на модели, которые представляют собой элементы в одном [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.  
   
 4.  Создайте и сохраните несколько элементов и связей в экземпляре предоставляемого DSL.  
   

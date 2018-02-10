@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, models
+helpviewer_keywords:
+- Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b6e23b91f411cd5260d31927ec35957a3f6c00c1
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: c0e2faf70c6d5857d967fc26e88242c54ea9906f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Сведения о моделях, классах и отношениях
 Доменный язык (DSL), определяется его файл определения DSL вместе с любой пользовательской программы код, который вы могли бы написать. Большая часть программного кода в решении DSL создается из этого файла.  

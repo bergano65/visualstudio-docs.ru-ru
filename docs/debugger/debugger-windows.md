@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc526231ef92fd1cacd384cd48089fa97c59320
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения об окнах отладчика в Visual Studio
-В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. При попадании в точку останова и выполнение останавливается, нажмите кнопку **Отладка > Windows**.  
+
+В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. При попадании в точку останова и выполнение останавливается, нажмите кнопку **Отладка > Windows**.
 
 ||||
 |-|-|-|
@@ -39,10 +40,10 @@ ms.lasthandoff: 02/01/2018
 |Параллельные стеки|CTRL+SHIFT+D, S|[Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)|
 |Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Получение запуска отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Потоки|CTRL+ALT+H|[Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md)|
-|Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)| 
+|Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
 |Потоки GPU|-|[Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)| 
-|Интерактивная отладка Python|SHIFT+ALT+I|[Начало работы с PTVS. Interactive Python](../python/python-interactive-repl-in-visual-studio.md)
+|Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)|
+|Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная среда REPL Python](../python/interactive-repl.md)|
 |Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Обозреватель DOM|CTRL+ALT+V, D|[Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Динамическое визуальное дерево|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -52,5 +53,6 @@ ms.lasthandoff: 02/01/2018
 |Дизассемблированный код|CTRL+ALT+D|[Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|
 |Регистры|CTRL+ALT+G|[Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>См. также  
- [Основы отладки](../debugger/debugger-basics.md)
+## <a name="see-also"></a>См. также
+
+[Основы отладки](../debugger/debugger-basics.md)

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - architecture, dependency diagrams
@@ -16,11 +15,12 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 840758b0b370c452ac4428c6bfdad525662ed420
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Схемы зависимостей: рекомендации
 Описание архитектуры приложения на высоком уровне, создавая *схемы зависимостей* в Visual Studio. Убедитесь, что кода дизайну это путем проверки кода с помощью диаграммы зависимостей. В процесс сборки также можно включить проверку слоев. В разделе [видео Channel 9: проектирования и проверки архитектуры с использованием схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=252073).  

@@ -6,23 +6,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: "80025080"
+f1_keywords:
+- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: "100"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -86,11 +88,9 @@ ms.lasthandoff: 01/08/2018
 
 В .NET у вас есть три варианта для моделирования и обработка данных в памяти после его получения из источника данных:
 
-[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)  
-Технология Microsoft ORM. Его можно использовать для программирования реляционных данных как полноценные объекты .NET. Для новых приложений следует отдавать по умолчанию при необходимости модели. Он требует настраиваемую поддержку от базового поставщика ADO.NET.
+[Платформа Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md) технология Microsoft ORM. Его можно использовать для программирования реляционных данных как полноценные объекты .NET. Для новых приложений следует отдавать по умолчанию при необходимости модели. Он требует настраиваемую поддержку от базового поставщика ADO.NET.
 
-[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
-Объектно реляционного сопоставления предыдущих поколений. Он хорошо подходит для более сложных сценариев, но больше не находится в активной разработке.
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) объектно реляционного сопоставления предыдущих поколений. Он хорошо подходит для более сложных сценариев, но больше не находится в активной разработке.
 
 [Наборы данных](../data-tools/dataset-tools-in-visual-studio.md)  
 Самый старый из три технологии моделирования. Она предназначена главным образом для быстрой разработки приложений «форм на основе данных», в которых не обработки огромные объемы данных или выполнения сложных запросов или преобразования. Объект DataSet состоит из объектов DataTable и DataRow, логически гораздо больше, чем объекты .NET похожих объектов базы данных SQL. Для относительно простых приложений, основанных на источниках данных SQL наборов данных по-прежнему может быть хорошим выбором.
@@ -115,39 +115,31 @@ ms.lasthandoff: 01/08/2018
 
 ## <a name="python"></a>Python
 
-Установка [средства Python для Visual Studio](http://microsoft.github.io/PTVS/) вместе с вашей избранные платформы Python для создания приложений, CPython или IronPython (.NET). Средства Python для Visual Studio веб-сайта есть несколько учебников по подключению к данным, включая [Django и база данных SQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django и MySQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) и [Bottle и MongoDB на Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+Установка [поддержка Python в Visual Studio](../python/python-in-visual-studio.md) для создания приложений Python. Документация Azure есть несколько учебников на подключение к данным, включая следующие:
+- [Django и база данных SQL в Azure](/azure/app-service/app-service-web-get-started-python)
+- [Django и MySQL в Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
+- Работать с [большие двоичные объекты](/azure/storage/blobs/storage-quickstart-blobs-python), [файлы](/azure/storage/files/storage-python-how-to-use-file-storage), [очереди](/azure/storage/queues/storage-python-how-to-use-queue-storage), и [таблиц (Cosmo DB)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>См. также
 
-[Данные, устройств и аналитика](https://msdn.microsoft.com/data-and-devices)  
-Введение в интеллектуальный облака Майкрософт, включая Cortana Analytics Suite и поддержка Интернета вещей.
+[Данные, устройств и аналитика](https://msdn.microsoft.com/data-and-devices) введение в интеллектуальный облака Майкрософт, включая Cortana Analytics Suite и поддержка Интернета вещей.
 
-[Хранилище Microsoft Azure](https://azure.microCsoft.com/documentation/services/storage/)  
-Описание хранилища Azure и создание приложений с помощью Azure BLOB-объектов, таблиц, очередей и файлов.
+[Хранилище Microsoft Azure](https://azure.microCsoft.com/documentation/services/storage/) описывает хранилища Azure и создание приложений с помощью Azure BLOB-объектов, таблиц, очередей и файлов.
 
-[База данных Azure SQL](https://azure.microsoft.com/documentation/services/sql-database/)  
-Описывает, как подключиться к базе данных SQL Azure, реляционную базу данных в качестве службы.
+[База данных SQL Azure](https://azure.microsoft.com/documentation/services/sql-database/) описывается подключение к базе данных SQL Azure, реляционную базу данных в качестве службы.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
-Описание средств, упрощающих конструктора, просмотр, тестирования и развертывания приложений, связанных данных и баз данных.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) описаны средства, упрощающие конструктора, просмотр, тестирования и развертывания приложений, связанных данных и баз данных.
 
-[ADO.NET](/dotnet/framework/data/adonet/index)  
-Описание архитектуры ADO.NET и способов использования классов ADO.NET для управления данными приложения и взаимодействия с источниками данных и XML.
+[ADO.NET](/dotnet/framework/data/adonet/index) описание архитектуры ADO.NET и способов использования классов ADO.NET для управления данными приложения и взаимодействия с источниками данных и XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
-Описывает, как создавать приложения данные, которые позволяют разработчикам программировать в концептуальной модели, а не непосредственно к реляционной базе данных.
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) описывается создание данных приложений, которые позволяют разработчикам программировать в концептуальной модели, а не непосредственно к реляционной базе данных.
 
-[Службы данных WCF 4.5](/dotnet/framework/data/wcf/index)  
-Описывает использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[Службы данных WCF 4.5](/dotnet/framework/data/wcf/index) описывается использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Данные в решениях Office](../vsto/data-in-office-solutions.md)  
-Содержит ссылки на разделы, в которых объясняется работа с данными в решениях Office. Сюда входят сведения о схемо ориентированном программировании, кэшировании данных и доступа к данным на стороне сервера.
+[Данные в решениях Office](../vsto/data-in-office-solutions.md) содержит ссылки на разделы, в которых объясняется работа с данными в решениях Office. Сюда входят сведения о схемо ориентированном программировании, кэшировании данных и доступа к данным на стороне сервера.
 
-[Встроенный язык запросов LINQ](/dotnet/csharp/linq/)  
-Описывает возможности запросов, встроенные в C# и Visual Basic и общей модели для запроса реляционных баз данных, документы XML, наборы данных и коллекции в памяти.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) описывает возможности запросов, встроенные в C# и Visual Basic и общей модели для запроса реляционных баз данных, документы XML, наборы данных и коллекции в памяти.
 
-[Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)  
-Описание работы с .NET Framework XML функции XML данные отладки XSLT и архитектура XML-запроса.
+[Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) описание работы с .NET Framework XML функции XML данные отладки XSLT и архитектура XML-запроса.
 
-[XML-документы и данные](/dotnet/standard/data/xml/index)  
-Здесь приводится обзор обширного и встроенного набора классов, предназначенных для работы с XML-документами и данными в .NET Framework.
+[XML-документы и данные](/dotnet/standard/data/xml/index) приводится обзор обширного и встроенного набора классов для работы с XML-документами и данными в .NET Framework.

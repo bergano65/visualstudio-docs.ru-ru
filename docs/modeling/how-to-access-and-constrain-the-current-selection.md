@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, accessing the current selection
+helpviewer_keywords:
+- Domain-Specific Language, accessing the current selection
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9eaf9d13d6c5bc81153d459dc592b99f9e893733
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Практическое руководство. Предоставление и ограничение доступа к текущему выделению
 При написании обработчика команды или жеста для вашего доменного языка, можно определить, какой элемент, который пользователь щелкнул правой кнопкой мыши. Вы также можете запретить от выбранной фигуры и поля. Например можно расположить в том, что когда пользователь щелкает значок decorator, фигуру, которая содержит его вместо него будет выбран. Ограничить выбор таким образом уменьшает количество обработчиков, которые необходимо написать. Он также упрощает для пользователей, потому что можно щелкните в любом месте фигуры без необходимости избежать декоратор.  

@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, generated code
+helpviewer_keywords:
+- Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a2e7e206e6e8b45580bd6c37b91ad62e67794b9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 Доменный язык (DSL) создает API, который можно использовать для чтения и обновления экземпляров DSL в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Этот API определяется в коде, созданном из определения DSL. В этом разделе описывается созданный API.  
@@ -57,7 +59,7 @@ ms.lasthandoff: 01/13/2018
 ## <a name="generated-files-in-dsl"></a>Файлы, созданные в DSL  
  Следующие созданные файлы отображаются в **Dsl** проекта.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  Схема для файлов, содержащая экземпляры DSL. Этот файл копируется в компиляции (**bin**) каталога. Если вы устанавливаете доменного языка, можно скопировать этот файл на **11.0\Xml\Schemas \Program Files\Microsoft Visual Studio** для проверки файлов модели. Дополнительные сведения см. в разделе [развертывание решений доменный язык](../modeling/deploying-domain-specific-language-solutions.md).  
   

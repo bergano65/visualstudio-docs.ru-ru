@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- vssdk
+ms.openlocfilehash: c1a8338f0ebd964e5d039ffa8dff000a441523f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Создание элемента управления панели элементов WPF
 Шаблон элемента управления панели элементов WPF (Windows Presentation Framework) позволяет создавать элементы управления WPF, которые автоматически добавляются в **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания **элементов** элемента управления, который можно передавать другим пользователям.  
@@ -61,7 +63,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  Откройте MyToolboxControl.xaml.cs в представлении кода.  
   
-2.  Найдите класс MyToolboxControl и переименуйте его в TestControl. (Самый быстрый способ сделать это является переименование класса, выберите **переименование** в контекстном меню и выполнение действий. (Дополнительные сведения о **переименование** см. в разделе [Переименовать рефакторинг (C#)](../ide/reference/rename-csharp.md).)
+2.  Найдите класс MyToolboxControl и переименуйте его в TestControl. (Самый быстрый способ сделать это является переименование класса, выберите **переименование** в контекстном меню и выполнение действий. (Дополнительные сведения о **переименование** см. в разделе [Переименовать рефакторинг (C#)](../ide/reference/rename.md).)
   
 3.  Последовательно выберите пункты `ProvideToolboxControl` атрибута и измените значение первого параметра в **теста**. Это имя группы, которая будет содержать элемент управления в **элементов**.  
   

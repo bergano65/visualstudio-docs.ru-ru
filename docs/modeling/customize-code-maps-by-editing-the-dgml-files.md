@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency graphs, creating path aliases
@@ -22,12 +21,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3787bea9eccd46104cd48c2bd2cdff27d8aeb872
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 Чтобы настроить карту кода, можно изменить ее файл DGML. Например, можно изменить элементы, чтобы указать пользовательские стили, назначить свойства и категории кодовым точкам и связям либо связать узлы с документы или URL-адреса с кодовыми точками или связями. Дополнительные сведения о DGML-элементы в разделе [направленный граф разметки языка (DGML) ссылка](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -255,9 +256,9 @@ ms.lasthandoff: 01/13/2018
   
     -   `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="`*NameInLegendBox*`"`  
+    -   `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="`*NameInStylePickerBox*`"`  
+    -   `ValueLabel="` *NameInStylePickerBox* `"`  
   
      Чтобы применить пользовательский стиль ко всем типам целевого объекта не следует использовать это условие.  
   
@@ -293,7 +294,7 @@ ms.lasthandoff: 01/13/2018
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator>:: = «<» &#124; «\<=» &#124; «=» &#124; «> =» &#124; «>» &#124; «! =» &#124; «или» &#124; «и» &#124; «+» &#124; «*» &#124; «/» &#124; "-"  
+     <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -301,7 +302,7 @@ ms.lasthandoff: 01/13/2018
   
      <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet>:: = Идентификатор  
+     <PropertyGet> ::= Identifier  
   
      <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   

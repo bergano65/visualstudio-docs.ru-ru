@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, definition file
+helpviewer_keywords:
+- Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Файл DslDefinition.dsl
 В этом разделе описывается структура DslDefinition.dsl файла в проект Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] решение, которое определяет *доменного языка*. Файл DslDefinition.dsl описаны классы и отношения доменный язык, вместе с диаграммы, фигур, соединители, формат сериализации и **элементов** доменного языка и его средства редактирования. В решении доменного языка код, который определяет эти инструменты, генерируется согласно информации из файла DslDefinition.dsl.  

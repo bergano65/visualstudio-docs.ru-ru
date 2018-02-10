@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Анализ кода для управляемого кода Обзор
 
@@ -39,11 +41,11 @@ ms.lasthandoff: 01/22/2018
 
 Правила анализа управляемого кода группируются в *наборов правил*. Пользователь может воспользоваться стандартными наборами правил Майкрософт или создать настраиваемый набор правил в соответствии со своими нуждами. Дополнительные сведения см. в разделе [использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
 
-## <a name="in-source-suppression"></a>В исходном коде
+## <a name="suppress-warnings"></a>Отключение предупреждений
 
 Зачастую удобно указать, что предупреждение неприменимо. Это позволяет сообщить разработчику и другими лицам, которые, возможно, будут проверять код позже, что предупреждение рассмотрено и либо отложено, либо проигнорировано.
 
-В источнике подавления предупреждений реализуется с помощью настраиваемых атрибутов. Чтобы подавить предупреждение, добавьте атрибут `SuppressMessage` в исходный код, как показано в следующем примере:
+Подавление в исходном коде предупреждений реализуется с помощью настраиваемых атрибутов. Чтобы подавить предупреждение, добавьте атрибут `SuppressMessage` в исходный код, как показано в следующем примере:
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-Дополнительные сведения см. в разделе [подавления предупреждений с помощью атрибута SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).
+Дополнительные сведения см. в разделе [предупреждений](../code-quality/in-source-suppression-overview.md).
+
+> [!NOTE]
+> При переносе проекта Visual Studio 2017 г., вы можете столкнуться внезапно с огромное количество предупреждений анализа кода. Если вы не можете устранить предупреждения и временно отключить анализ кода, откройте страницы свойств (**проекта** > ***проекта* свойства...** ) и перейдите к **анализа кода** вкладки. Отмените выбор **включить анализ кода в построении**, а затем перестройте проект. Кроме того можно выбрать другой, меньший набор правил в выполняться код. Не забудьте включить анализ кода на когда вы будете готовы устранить предупреждения.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Запуск анализа кода в рамках политики возврата
 

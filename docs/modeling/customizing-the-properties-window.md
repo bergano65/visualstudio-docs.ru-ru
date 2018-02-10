@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, Properties window
+helpviewer_keywords:
+- Domain-Specific Language, Properties window
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8193fa12967848308c1e992f5d5f5011890042ea
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 545c8181cdaa3f13d2de04f13101d2678f9fd0ab
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-the-properties-window"></a>Настройка окна свойств
 Можно настроить внешний вид и поведение окна свойств в доменный язык (DSL) в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В определении DSL определить свойства домена для каждого класса домена. По умолчанию при выборе экземпляра класса на схеме или в обозревателе моделей, каждое свойство домена указывается в окне «Свойства». Это позволяет просмотреть и изменить значения свойств домена, даже если они не были сопоставлены для полей фигур на схеме.  

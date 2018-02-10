@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 845c7168aff8232bab8c9320c48b538c114752f1
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 Поведение некоторых стандартных команд, определенных в доменном языке автоматически, можно изменять. Например, можно изменить **Вырезать** таким образом, чтобы исключить конфиденциальные сведения. Для этого необходимо переопределить методы в классе наборов команд. Эти классы определяются в файле CommandSet.cs проекта DslPackage project и являются производными от класса <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -154,6 +155,6 @@ protected override void ProcessOnMenuDeleteCommand()
  [Как: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Справочник по схеме VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
+ [VSCT XML Schema Reference](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK - образец схемы канала. Настройка широко DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
  [Пример кода: схемы канала](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

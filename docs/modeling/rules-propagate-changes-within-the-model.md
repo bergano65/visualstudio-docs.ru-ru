@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d8646866794a1a09c3f1e1e1f84011093dfc7c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: af086275f641e3237f8d22308c960ad30240b647
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 Можно создать правило хранилища для распространения изменений от одного элемента к другому в визуализации и моделирования SDK (VMSDK). При изменении любого элемента в хранилище правил планируются для выполнения, обычно в том случае, если внешняя транзакция фиксируется. Существуют различные типы правил для различных типов событий, таких как элемент добавляется или удаляется. Правила можно присоединить к определенным типам элементов, фигуры или схемы. Многие встроенные функции определяются правилами: например, правила обеспечивают, диаграммы обновляются при изменении модели. Доменный язык можно настроить путем добавления собственных правил.  

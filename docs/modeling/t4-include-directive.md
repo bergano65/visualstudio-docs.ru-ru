@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a048fbd28b6993791e0f2475829a1aeede3f879
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="t4-include-directive"></a>Директива Include T4
 В текстовый шаблон в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно включить текст из другого файла, воспользовавшись директивой `<#@include#>`. Директивы `include` можно разместить в любом месте текстового шаблона перед первым блоком функций класса `<#+ ... #>`. Включенные файлы также могут содержать директивы `include` и другие директивы. Это позволяет использовать один и тот же код шаблона и стандартный текст в нескольких шаблонах.  

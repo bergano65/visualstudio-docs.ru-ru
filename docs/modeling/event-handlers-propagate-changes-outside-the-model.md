@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Обработчики событий распространяют изменения за пределы модели
 В визуализации и моделирования SDK, можно указать обработчики событий хранилища для распространения изменений к ресурсам за пределами магазина, таких как переменные без хранилища, файлы моделей в других хранилищах или в других [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения. Обработчики событий в хранилище, выполняются после завершения транзакции, в которой произошло событие триггера. Кроме того, они выполняются в операции отмены или повтора. Таким образом в отличие от сохранить правила событий хранилища наиболее полезны для обновления значений, которые находятся за пределами хранилища. В отличие от событий .NET зарегистрированных обработчиков событий в хранилище для прослушивания класс: необходимо зарегистрировать отдельный обработчик для каждого экземпляра. Дополнительные сведения о выборе между различными способами обработки изменений см. в разделе [распространение изменений и реагирование на](../modeling/responding-to-and-propagating-changes.md).  
