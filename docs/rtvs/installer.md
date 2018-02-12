@@ -1,23 +1,26 @@
 ---
 title: "Инструменты R для Visual Studio. Приветствие | Документация Майкрософт"
+description: "Сводная информация для разработчиков об Инструментах R для Visual Studio."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 747744ca3a0d01b09cbba53a499902f13f3e8b51
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 55cadf3d02f6b0713a315c374b7979495b3ab01e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Инструменты R для Visual Studio. Приветствие
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="resources"></a>Ресурсы
 
 - [Документация](index.md)
-- [Действия по установке](installation.md)
+- [Действия по установке](installing-r-tools-for-visual-studio.md)
 - [Отправка и просмотр ошибок и запросов функций на GitHib](https://github.com/Microsoft/RTVS/issues)
 - [Изучение исходного кода и участие в его разработке](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
 - Чтобы отправить отзыв, не используя Github (что предпочтительно), воспользуйтесь меню **Инструменты R > Отзыв** в Visual Studio.

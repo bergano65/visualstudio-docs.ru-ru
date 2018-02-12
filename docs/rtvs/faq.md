@@ -1,23 +1,26 @@
 ---
 title: "Вопросы и ответы об Инструментах R для Visual Studio | Документы Майкрософт"
+description: "Часто задаваемые вопросы об R в Visual Studio."
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 9fe92fb38d1b03b081cb53fc620f60180daf5b24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 8abdaa1e156cf2be07f08f6cebcf67031bf91c2f
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="frequently-asked-questions"></a>Вопросы и ответы
 
@@ -67,7 +70,7 @@ ms.lasthandoff: 12/22/2017
 
 **В. Где можно скачать интерпретаторы?**
 
-О. На странице [установки](installation.md).
+О. На странице [установки](installing-r-tools-for-visual-studio.md).
 
 В. **Что такое Microsoft R Server?**
 
@@ -89,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 
 В. **Что такое удаленные службы в Visual Studio?**
 
-О. Удаленные службы R для Visual Studio позволяют настроить компьютер Windows или Linux, чтобы затем подключаться к нему из RTVS. См. статью [Настройка удаленных рабочих областей](workspaces-remote-setup.md).
+О. Удаленные службы R для Visual Studio позволяют настроить компьютер Windows или Linux, чтобы затем подключаться к нему из RTVS. См. статью [Настройка удаленных рабочих областей](setting-up-remote-r-workspaces.md).
 
 В. **Могут ли Инструменты R для Visual Studio подключаться к Microsoft R Server?**
 
@@ -101,7 +104,7 @@ ms.lasthandoff: 12/22/2017
 
 В. **Могут ли Инструменты R для Visual Studio подключаться к удаленному компьютеру с установленной средой R?**
 
-Для выполнения кода на языке R на удаленном компьютере требуется служба, ожидающая запросы, принимающая код и отправляющая результаты обратно на клиентский компьютер. Именно этим занимаются удаленные службы R для Visual Studio. См. статью [Настройка удаленных рабочих областей](workspaces-remote-setup.md).
+Для выполнения кода на языке R на удаленном компьютере требуется служба, ожидающая запросы, принимающая код и отправляющая результаты обратно на клиентский компьютер. Именно этим занимаются удаленные службы R для Visual Studio. См. статью [Настройка удаленных рабочих областей](setting-up-remote-r-workspaces.md).
 
 В. **Что такое удаленный сеанс?**
 

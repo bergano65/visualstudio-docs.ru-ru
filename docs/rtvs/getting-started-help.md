@@ -1,23 +1,26 @@
 ---
 title: "Окно справки в инструментах R для Visual Studio | Документация Майкрософт"
+description: "Справка по R встроена непосредственно в интерактивное окно в Visual Studio (знак \"?\") ."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Справка в инструментах R для Visual Studio
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 > [!Tip]
 > Окно справки, как и все остальные элементы Visual Studio, можно упорядочивать и закреплять. См. статью [Настройка макетов окон в Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Чтобы открыть справку в браузере, выберите меню **Инструменты R > Параметры** и задайте для свойства **Браузер для справки R** значение `External`. См. [Параметры](options.md).
+> Чтобы открыть справку в браузере, выберите меню **Инструменты R > Параметры** и задайте для свойства **Браузер для справки R** значение `External`. См. [Параметры](options-for-r-tools-in-visual-studio.md).
 
 Для поиска по справке используйте команду `??`, указав после нее искомый текст. Если условие поиска содержит пробелы, используйте кавычки:
 
@@ -52,7 +55,7 @@ ms.lasthandoff: 12/22/2017
     ![Вызов справки через контекстное меню](media/help-right-click.png)
 
 > [!Tip]
-> Чтобы открыть интегрированную справку в браузере, выберите **Инструменты R > Параметры** и задайте для параметра **Веб-браузер для функции F1** значение `External`. См. [Параметры](options.md).
+> Чтобы открыть интегрированную справку в браузере, выберите **Инструменты R > Параметры** и задайте для параметра **Веб-браузер для функции F1** значение `External`. См. [Параметры](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Интегрированный поиск на сайте StackOverflow
 
@@ -64,4 +67,4 @@ ms.lasthandoff: 12/22/2017
 
 ![Изменение строки поиска в Интернете для функции F1](media/options-dialog.png)
 
-Если вы предпочитаете отобразить результаты в браузере, измените параметр **Веб-браузер для функции F1**, как описано в разделе [Параметры](options.md).
+Если вы предпочитаете отобразить результаты в браузере, измените параметр **Веб-браузер для функции F1**, как описано в разделе [Параметры](options-for-r-tools-in-visual-studio.md).

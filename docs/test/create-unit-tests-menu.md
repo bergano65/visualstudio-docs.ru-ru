@@ -7,20 +7,22 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
+helpviewer_keywords:
+- unit testing, create unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: cf851d9fbd32bfdd07c6e1a67517ddf38784799c
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
 
-Команда **Создать модульные тесты** в Visual Studio позволяет создать заглушки для методов модульного тестирования. Эта функция упрощает настройку тестового проекта, тестового класса и заглушки тестового метода в нем. 
+Команда **Создать модульные тесты** в Visual Studio позволяет создать заглушки для методов модульного тестирования. Эта функция упрощает настройку тестового проекта, тестового класса и заглушки тестового метода в нем.
 
 ## <a name="availability-and-extensions"></a>Высокая доступность и расширения
 
@@ -63,8 +65,7 @@ ms.lasthandoff: 01/09/2018
 
 Однако эта функция также применима и для ситуаций, когда разработчик сначала пишет некоторый код, а затем использует его для начальной загрузки процедуры модульного тестирования. В рамках потока написания кода разработчику может потребоваться быстро создать заглушку для метода модульного тестирования (с подходящим тестовым классом и тестовым проектом) для определенного фрагмента кода. 
 
-## <a name="more-information"></a>Дополнительные сведения
+## <a name="see-also"></a>См. также
 
-См. запись блога [Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) (Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов").
-
-Дополнительные записи блога о модульном тестировании см. [здесь](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/).
+[Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) (Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов")  
+[Записи блога о функции модульного тестирования](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)

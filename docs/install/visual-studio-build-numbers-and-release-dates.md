@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 01/17/2018
+ms.date: 01/31/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,17 +13,20 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dee8cbd037fc1b4dda7f420e9a2cbff925d9a23
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: b6724896790d6fd3c6356bf63c6119f856640531
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio 2017
 В следующей таблице представлен актуальный список дат выпуска и номеров сборки Visual Studio 2017.
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.6 | выпуска | 29.01.2018 | 15.5.27130.2027 |
+| 15.5.5 | выпуска | 25.01.2018 | 15.5.27130.2026 |
+| 15.6.0 (предварительная версия 3.0) | Предварительный просмотр | 25.01.2018 | 15.6.27323.2 |
 | 15.5.4 | выпуска | 01.16.2018 | 15.5.27130.2024 |
 | 15.6.0 (предварительная версия 2.0) | Предварительный просмотр | 01.10.2018 | 15.6.27309.0 |
 | 15.5.3 | выпуска | 01.09.2018 | 15.5.27130.2020 |

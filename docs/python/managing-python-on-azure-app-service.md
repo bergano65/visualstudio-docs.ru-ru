@@ -1,14 +1,16 @@
 ---
-title: "Работа с Python в службе приложений Azure | Документы Майкрософт"
+title: "Установка интерпретаторов и библиотек Python в Службе приложений Azure | Документация Майкрософт"
+description: "Установка интерпретатора и библиотек Python в Службе приложений Azure и настройка веб-приложений, чтобы в них содержалась правильная ссылка на интерпретатор."
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Работа с Python в службе приложений Azure
 
@@ -131,7 +133,7 @@ FastCGI — это интерфейс, работающий на уровне �
 - `WSGI_HANDLER` должен указывать на приложение WSGI, импортируемое из приложения.
 - `WSGI_LOG` является необязательным, но рекомендуется для отладки приложения. 
 
-Дополнительные сведения о содержимом файла `web.config` для веб-приложений Bottle, Flask и Django см. в статье [Публикация в Azure](publishing-to-azure.md).
+Дополнительные сведения о содержимом файла `web.config` для веб-приложений Bottle, Flask и Django см. в статье [Публикация в Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ### <a name="configuring-the-httpplatform-handler"></a>Настройка обработчика HttpPlatform
 

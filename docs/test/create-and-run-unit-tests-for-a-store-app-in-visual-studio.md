@@ -1,5 +1,5 @@
 ---
-title: "Создание и запуск модульных тестов для приложения универсальной платформы Windows в Visual Studio | Документы Майкрософт"
+title: "Создание и выполнение модульных тестов в Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,32 +7,31 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit tests
+helpviewer_keywords:
+- unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: e809cdbdce23d6bfafcfae2501a25c982455ba46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 911a330f61cb403b11f0fe860e1bc650837e50e3
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Создание и запуск модульных тестов для приложения универсальной платформы Windows в Visual Studio
-Инструменты модульного тестирования Visual Studio предназначены для разработчиков и групп, внедряющих модульное тестирование в свои методики разработки программного обеспечения. Модульные тесты предоставляют разработчикам и тест-инженерам эффективный и удобный способ поиска логических ошибок в методах классов в проектах Visual C#, Visual Basic и Visual C++.  
-  
-> [!NOTE]
->  Подразделы данного раздела описывают функциональность Visual Studio 2012 Express для Windows 8. Visual Studio Ultimate, VS Premium и VS Professional предоставляет дополнительные функции для модульного тестирования.  
->   
->  -   В VS Ultimate, VS Premium и VS Professional можно использовать любые сторонние среды модульного тестирования или среды с открытым кодом, для которых создан адаптер надстройки для обозревателя тестов корпорации Майкрософт. Кроме того, с помощью VS Ultimate и VS Premium можно анализировать и отображать данные о покрытии кода для тестов.  
-> -   В VS Ultimate можно запускать тесты после каждой сборки. Вы также можете использовать Microsoft Fakes — платформу изоляции для управляемого кода, позволяющую сосредоточиться на тестировании разрабатываемого кода за счет замены кода системы и сторонних функций.  
-> -   **JavaScript**. Модульное тестирование JavaScript недоступно из интерфейса IDE Visual Studio Express для Windows 8. В Visual Studio Professional, Premium и Ultimate платформы модульного тестирования JavaScript доступны в виде расширений в коллекции Visual Studio. Вы также можете тестировать код JavaScript с помощью одной из автономных сторонних платформ модульных тестов JavaScript или платформ с открытым исходным кодом.  
->   
->  См. дополнительные сведения о [модульном тестировании кода](../test/unit-test-your-code.md) в библиотеке MSDN.  
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [Модульное тестирование кода C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  
-  
- [Модульное тестирование библиотеки DLL на C++](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)  
-  
- [Выполнение модульных тестов в обозревателе тестов](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
+# <a name="create-and-run-unit-tests-in-visual-studio"></a>Создание и выполнение модульных тестов в Visual Studio
+
+Инструменты модульного тестирования Visual Studio предназначены для разработчиков и групп, внедряющих модульное тестирование в свои методики разработки программного обеспечения. Модульные тесты предоставляют разработчикам и тест-инженерам эффективный и удобный способ поиска логических ошибок в методах классов в проектах Visual C#, Visual Basic и Visual C++.
+
+## <a name="in-this-section"></a>Содержание раздела
+
+[Модульное тестирование кода C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
+
+[Модульное тестирование библиотеки DLL на C++](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)
+
+[Выполнение модульных тестов в обозревателе тестов](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
+
+## <a name="see-also"></a>См. также
+
+[Модульное тестирование кода](../test/unit-test-your-code.md)

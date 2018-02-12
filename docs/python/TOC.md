@@ -25,6 +25,7 @@
 ### [Форматирование кода](formatting-python-code.md)
 ### [Рефакторинг кода](refactoring-python-code.md)
 ### [Использование PyLint](linting-python-code.md)
+## [Определение пользовательских команд меню](defining-custom-python-project-commands.md)
 ## [Интерактивный Python (REPL)](python-interactive-repl-in-visual-studio.md)
 ### [Использование IPython REPL](interactive-repl-ipython.md)
 ## [Отладка](debugging-python-in-visual-studio.md)

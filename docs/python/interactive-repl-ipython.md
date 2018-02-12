@@ -1,29 +1,31 @@
 ---
 title: "IPython REPL в Visual Studio | Документация Майкрософт"
+description: "Использование интерактивного окна Visual Studio в режиме IPython для интерактивной среды разработки с широкими возможностями, в том числе функцией интерактивных параллельных вычислений."
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33765a2c70f6c58759e2722b04d770b6f8822a6
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d084731c821bf31743e8c4dce5f31881f19a56f4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Использование IPython в интерактивном окне
 
-Интерактивное окно Visual Studio в режиме IPython предоставляет удобную интерактивную среду разработки с широкими возможностями, в том числе функцией интерактивных параллельных вычислений. Этот раздел описывает использование IPython в интерактивном окне Visual Studio, где также доступны все стандартные функции [интерактивного окна](interactive-repl.md).
+Интерактивное окно Visual Studio в режиме IPython предоставляет удобную интерактивную среду разработки с широкими возможностями, в том числе функцией интерактивных параллельных вычислений. Этот раздел описывает использование IPython в интерактивном окне Visual Studio, где также доступны все стандартные функции [интерактивного окна](python-interactive-repl-in-visual-studio.md).
 
 Для работы вам потребуется установленное окружение [Anaconda](https://www.continuum.io), которое включает IPython и все необходимые библиотеки.
 
@@ -64,14 +66,14 @@ ms.lasthandoff: 01/12/2018
         xs = np.arange(20)
         ys = np.random.rand(20)
         # You can provide either a single color or an array. To demonstrate this,
-        # the first bar of each set will be colored cyan.
-        cs = [c] * len(xs) 
-        cs[0] = 'c' 
+        # the first bar of each set is colored cyan.
+        cs = [c] * len(xs)
+        cs[0] = 'c'
         ax.bar(xs, ys, zs=z, zdir='y', color=cs, alpha=0.8)
 
-    ax.set_xlabel('X') 
-    ax.set_ylabel('Y') 
-    ax.set_zlabel('Z') 
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
     plt.show()
     ```
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Шаг 4. Выполнение кода в отладчике
 
@@ -114,5 +114,5 @@ ms.lasthandoff: 01/22/2018
 
 ### <a name="going-deeper"></a>Дополнительные сведения
 
-- [Отладка кода Python](debugging.md).
+- [Отладка](debugging-python-in-visual-studio.md)
 - Полную документацию по возможностям отладки Visual Studio можно найти в статье [Отладка в Visual Studio](../debugger/debugger-feature-tour.md).

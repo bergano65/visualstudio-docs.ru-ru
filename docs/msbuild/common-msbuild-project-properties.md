@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: e1da05cbbb2415ad6ce701e1330f9e9e60568aeb
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в TARGETS-файлы, предоставляемые MSBuild.  
@@ -50,7 +52,7 @@ ms.lasthandoff: 01/22/2018
 |BaseOutputPath|Задает базовый путь для выходного файла. Если это свойство задано, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] будет использовать `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Пример синтаксиса:`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`.|  
 |BaseIntermediateOutputPath|Папка верхнего уровня, в которой создаются все промежуточные выходные папки, зависящие от конфигурации. Значение по умолчанию — `obj\`. Примером является следующий код: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`.|  
 |BuildInParallel|Логическое значение, указывающее, выполняется ли сборка или удаление ссылок параллельно при использовании [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в мультипроцессорном режиме. Значение по умолчанию — `true`; это означает, что сборка проектов будет выполняться параллельно, если система имеет несколько ядер или процессоров.|  
-|BuildProjectReferences|Логическое значение, указывающее, выполняется ли сборка ссылок с помощью [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Задайте значение `false`, если сборка проекта ведется в изолированной среде разработки (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; в противном случае задайте значение `true`.|  
+|BuildProjectReferences|Логическое значение, указывающее, выполняется ли сборка ссылок с помощью [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если сборка проекта ведется в изолированной среде разработки (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], автоматически задается значение `false`. В противном случае задайте значение `true`. Значение `/p:BuildProjectReferences=false` можно указать в командной строке, чтобы избежать проверки актуальности проектов, на которые оно ссылается.|  
 |CleanFile|Имя файла, который будет использоваться в качестве "средства очистки кэша". Средство очистки кэша — это список созданных файлов, которые необходимо удалить во время выполнения операции очистки. Процесс сборки помещает этот файл в промежуточную выходную папку.<br /><br /> Это свойство указывает только имена файлов, для которых отсутствует информация о пути.|  
 |CodePage|Задает кодовую страницу, используемую для всех файлов исходного кода при компиляции. Это свойство эквивалентно переключателю `/codepage` компилятора.|  
 |CompilerResponseFile|Необязательный файл ответа, который можно передавать задачам компилятора.|  
@@ -71,7 +73,7 @@ ms.lasthandoff: 01/22/2018
 |ExcludeDeploymentUrl|Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Примечание.** ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl.|  
 |FileAlignment|Задает выравнивание размеров выходного файла в байтах. Допустимые значения: 512, 1024, 2048, 4096, 8192. Это свойство эквивалентно переключателю `/filealignment` компилятора.|  
 |FrameworkPathOverride|Задает расположение библиотек mscorlib.dll и microsoft.visualbasic.dll. Этот параметр эквивалентен переключателю `/sdkpath` компилятора vbc.exe.|  
-|GenerateDocumentation|(только для Visual Basic .NET) Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки.|
+|GenerateDocumentation|(Только для Visual Basic) Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки.|
 |IntermediateOutputPath|Полный путь к промежуточной выходной папке, производный от `BaseIntermediateOutputPath`, если путь не указан. Например, \obj\debug\\. Если эти свойство переопределено, задание `BaseIntermediateOutputPath` не имеет силы.|  
 |KeyContainerName|Имя контейнера ключа строгого имени.|  
 |KeyOriginatorFile|Имя файла ключа строгого имени.|  
