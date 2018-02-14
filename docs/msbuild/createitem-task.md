@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-caps.latest.revision: "15"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6e9088f73310da32875636b33a5a843d277c1e8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 26f3851380e4cb7820a10b203a5e7a1b6c96287b
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="createitem-task"></a>Задача CreateItem
 Заполняет коллекцию элементов входными элементами. Это позволяет копировать элементы из одного списка в другой.  
@@ -35,7 +37,7 @@ ms.lasthandoff: 12/22/2017
 >  Эта задача является устаревшей. Начиная с .NET Framework 3.5, группы элементов могут размещать внутри элемента [Target](../msbuild/target-element-msbuild.md). Дополнительные сведения см. в разделе [Элементы](../msbuild/msbuild-items.md).  
   
 ## <a name="attributes"></a>Атрибуты  
- В следующей таблице приводятся параметры задачи `CreateItem`.  
+ В следующей таблице приводятся параметры задачи `CreateItem` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  

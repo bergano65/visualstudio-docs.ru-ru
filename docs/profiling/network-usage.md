@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf6aed0c2864792e3cf47f944610fcb2de0f185
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: f9c69d20bb0b1658514245870d1173d82b0f8979
+ms.sourcegitcommit: f19704f37319044620e13f90cbea58123586f4a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети для приложений UWP
 Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](/uwp/api/windows.web.http). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.  
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/19/2018
  Средство "Сеть" поддерживает только приложения UWP. Другие платформы в настоящее время не поддерживаются.  
   
 > [!NOTE]
->  Более полное описание средства "Сеть" см. в разделе [Введение в средство "Сеть" Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+>  Более полное описание средства "Сеть" см. в разделе [Введение в средство "Сеть" Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
   
 ## <a name="collecting-network-tool-data"></a>Сбор данных средством «Сеть»  
  Средство **Сеть** следует запускать с открытым проектом Visual Studio на компьютере Visual Studio.  

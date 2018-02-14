@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,16 +20,17 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: "29"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10dffd6ea1a07c33df07f27ee8268932f18d8c32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0003b1f747238467afd4754cb77cc1ac47a07a86
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolveassemblyreference-task"></a>Задача ResolveAssemblyReference
 Определяет все сборки, которые зависят от указанных сборок. Сюда входят зависимости второго и `n`-го порядка.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `ResolveAssemblyReference` .  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`AllowedAssemblyExtensions`|Необязательный параметр `String[]` .<br /><br /> Расширения имен файлов сборки для использования при разрешении ссылок. Расширения имен файлов по умолчанию: EXE и DLL.|  
 |`AllowedRelatedFileExtensions`|Необязательный параметр `String[]` .<br /><br /> Расширения имен файлов для поиска файлов, связанных друг с другом. Расширения по умолчанию: PDB и XML.|  
@@ -70,7 +71,7 @@ ms.lasthandoff: 12/22/2017
 |`ScatterFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` , доступный только для чтения.<br /><br /> Содержит точечные файлы, связанные с одной из заданных сборок.<br /><br /> Элементы в этом параметре могут содержать следующие метаданные элемента:<br /><br /> -   `CopyLocal`: значение `Boolean` . Указывает, следует ли копировать указанную ссылку в выходной каталог.|  
 |`SearchPaths`|Обязательный параметр `String[]` .<br /><br /> Указывает каталоги или специальные расположения, в которых выполняется поиск на диске файлов, представляющих сборки. Порядок, в котором перечислены пути поиска, имеет значение. Для каждой сборки поиск по списку путей выполняется слева направо. Когда файл, представляющий сборку, найден, этот поиск останавливается, и начинается поиск для следующей сборки.<br /><br /> Этот параметр принимает разделенный точками с запятой список значений, которые могут быть либо путями к каталогам, либо специальными литеральными значениями из следующего перечня:<br /><br /> -   `{HintPathFromItem}`: указывает, что задача проверит метаданные `HintPath` базового элемента.<br />-   `{CandidateAssemblyFiles}`: указывает, что задача проверит файлы, переданные через параметр `CandidateAssemblyFiles`.<br />-   `{Registry:_AssemblyFoldersBase_, _RuntimeVersion_, _AssemblyFoldersSuffix_}`: указывает, что задача выполнит поиск в дополнительных папках, указанных в реестре. `_AssemblyFoldersBase_`, `_RuntimeVersion_` и `_AssemblyFoldersSuffix_` нужно заменить на конкретные значения для расположения в реестре, где требуется искать. Спецификация по умолчанию для общих целевых объектов имеет значение `{Registry:$(FrameworkRegistryBase),$(TargetFrameworkVersion),$(AssemblyFoldersSuffix)$(AssemblyFoldersExConditions)}`.<br />-   `{AssemblyFolders}`: указывает, что задача будет использовать схему поиска сборок из реестра Visual Studio.NET 2003.<br />-   `{GAC}`: указывает, что задача будет выполнять поиск в глобальном кэше сборок.<br />-   `{RawFileName}`: указывает, что задача будет рассматривать значение `Include` элемента в качестве точного пути и имени файла.|  
 |`SerializationAssemblyFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` , доступный только для чтения.<br /><br /> Содержит все найденные сборки сериализации XML. Эти элементы помечаются как CopyLocal=true, только если ссылка или зависимость, вызвавшая этот элемент, имеет значение CopyLocal=true.<br /><br /> Свойство CopyLocal метаданных `Boolean` указывает, следует ли копировать указанную ссылку в выходной каталог.|  
-|`Silent`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, сообщения не регистрируются. Значение по умолчанию — `false`.|  
+|`Silent`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, сообщения не регистрируются. Значение по умолчанию — `false`.|  
 |`StateFile`|Необязательный параметр `String` .<br /><br /> Задает имя файла, указывающее, где следует сохранить промежуточное состояние сборки для этой задачи.|  
 |`SuggestedRedirects`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` , доступный только для чтения.<br /><br /> Содержит один элемент для каждого отдельного конфликтующего удостоверения сборки независимо от значения параметра `AutoUnify` . Сюда входят все языки и региональные параметры и найденные PKT, у которых не было подходящей записи bindingRedirect в файле конфигурации приложения.<br /><br /> Каждый элемент может содержать следующие сведения.<br /><br /> -   `Include` : содержит полное имя семейства сборок со значением поля «Версия», равным 0.0.0.0.<br />-   `MaxVersion` : содержат максимальный номер версии.|  
 |`TargetedRuntimeVersion`|Необязательный параметр `String` .<br /><br /> Указывает целевую версию среды выполнения, например 2.0.57027 или v2.0.57027.|  

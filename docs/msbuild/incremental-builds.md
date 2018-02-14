@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild, incremental builds
+helpviewer_keywords:
+- msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1238748b07d820a045e440e8d130bf9423668854
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ee1e8a136937b1291950a9df71b93a1e5c90f8c2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="incremental-builds"></a>Инкрементные построения
 Инкрементные сборки — это сборки, оптимизированные таким образом, чтобы целевые объекты с выходными файлами, которые актуальны в отношении соответствующих входных файлов, не выполнялись. Целевой элемент может иметь оба атрибута `Inputs` и `Outputs`, указывающих, какие элементы целевой объект ожидает в качестве входных данных и какие элементы создает в качестве выходных. MSBuild пытается найти однозначное соответствие между значениями этих атрибутов. Если однозначное соответствие существует, MSBuild сравнивает метку времени каждого входного элемента с меткой времени соответствующего выходного элемента. Выходные файлы без однозначного соответствия сравниваются со всеми входными файлами. Элемент считается актуальным, если возраст его выходного файла меньше или равен возрасту его входных файлов.  

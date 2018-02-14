@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +16,17 @@ helpviewer_keywords:
 - MSBuild, UpdateManifest task
 - UpdateManifest task [MSBuild]
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
-caps.latest.revision: "4"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f01c36ff7e89bbd1919d54896ec70abdcadf5fcf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 609f057cd5284ff88d6b73870850a678e500ee14
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="updatemanifest-task"></a>Задача UpdateManifest
 Обновляет выбранные свойства в манифесте и выполняет повторное подписание.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `UpdateManifest` .  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает манифест приложения.|  
 |`ApplicationPath`|Обязательный параметр `String` .<br /><br /> Указывает путь к манифесту приложения.|  

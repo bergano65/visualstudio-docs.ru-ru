@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: d677c74d44f1ddc0b250d6763cef4738cd642832
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: b9f87e95a2d4088bb72890ef3f9508d9c5e02abc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Установка Visual C++ для разработки кроссплатформенных мобильных приложений
 [Visual C++ для разработки кроссплатформенных мобильных приложений](http://go.microsoft.com/fwlink/p/?LinkId=536383) — это устанавливаемый компонент Visual Studio 2015. Он включает в себя кроссплатформенные шаблоны Visual Studio, и вместе с ним устанавливаются кроссплатформенные средства и пакеты SDK, что позволяет быстро приступить к работе, не ища, не скачивая и не настраивая их самостоятельно. Эти средства можно использовать в Visual Studio для быстрого создания, редактирования, отладки и тестирования кроссплатформенных проектов. В этом разделе описывается установка средств и программного обеспечения сторонних разработчиков, необходимых для разработки кроссплатформенных приложений с помощью Visual Studio. Обзор компонента см. в статье [Visual C++ для разработки кросс-платформенных мобильных приложений](http://go.microsoft.com/fwlink/p/?LinkId=536387).  

@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-caps.latest.revision: "26"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f00f7464d44423be4d37694c42ad3bfddaaea3e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 07381c84ec7213fe17aabb1db91cc1ab3be6188d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolvecomreference-task"></a>Задача ResolveComReference
 Принимает список из одного или нескольких имен библиотек типов или TLB-файлов и определяет местоположение этих библиотек типов на диске.  
@@ -34,12 +36,12 @@ ms.lasthandoff: 12/22/2017
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `ResolveCOMReference` .  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`DelaySign`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, помещает открытый ключ в сборку. Если присвоено значение `false`, полностью подписывает сборку.|  
 |`EnvironmentVariables`|Необязательный параметр `String[]` .<br /><br /> Массив пар переменных среды, разделенных знаками равенства. Эти переменные частично передаются в порожденный tlbimp.exe и aximp.exe, дополняя или выборочно переопределяя обычный блок окружения.|  
 |`ExecuteAsTool`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, из соответствующей внепроцессной требуемой версии .NET Framework запустятся программы Tlbimp.exe и Aximp.exe для создания необходимых сборок-оболочек. Этот параметр разрешает настройку для различных версий.|  
-|`IncludeVersionInInteropName`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, версия библиотеки типов будет включена в имя программы-оболочки. Значение по умолчанию — `false`.|  
+|`IncludeVersionInInteropName`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, версия библиотеки типов будет включена в имя программы-оболочки. Значение по умолчанию — `false`.|  
 |`KeyContainer`|Необязательный параметр `String` .<br /><br /> Задает контейнер, хранящий пару из открытого и закрытого<br /><br /> ключей.|  
 |`KeyFile`|Необязательный параметр `String` .<br /><br /> Задает элемент, содержащий пару из открытого и закрытого<br /><br /> ключей.|  
 |`NoClassMembers`|Необязательный параметр `Boolean`.|  
@@ -48,7 +50,7 @@ ms.lasthandoff: 12/22/2017
 |`ResolvedModules`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.|  
 |`SdkToolsPath`|Необязательный параметр <xref:System.String?displayProperty=fullName> .<br /><br /> Если `ExecuteAsTool` имеет значение `true`, в качестве значения этого параметра следует установить путь к инструментам пакета SDK для целевой версии платформы.|  
 |`StateFile`|Необязательный параметр `String` .<br /><br /> Указывает файл кэша для меток времени COM-компонентов. Если он отсутствует, при каждом запуске будут повторно создаваться все оболочки.|  
-|`TargetFrameworkVersion`|Необязательный параметр `String` .<br /><br /> Указывает версию целевой платформы проекта.<br /><br /> Значение по умолчанию — `String.Empty`. Это означает, что фильтрация по целевой платформе для ссылки не выполняется.|  
+|`TargetFrameworkVersion`|Необязательный параметр `String` .<br /><br /> Указывает версию целевой платформы проекта.<br /><br /> Значение по умолчанию — `String.Empty`. Это означает, что фильтрация по целевой платформе для ссылки не выполняется.|  
 |`TargetProcessorArchitecture`|Необязательный параметр `String` .<br /><br /> Указывает предпочитаемую архитектуру целевого процессора. После преобразования передается во флаг /machine tlbimp.exe.<br /><br /> Значение параметра должно быть элементом <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает путь к файлу библиотеки типов для COM-ссылок. Элементы, включенные в этот параметр, могут содержать метаданные элементов. Дополнительные сведения см. в разделе "Метаданные элементов TypeLibFiles" ниже.|  
 |`TypeLibNames`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает имена библиотек для разрешения. Элементы, включенные в этот параметр, должны содержать метаданные элементов. Дополнительные сведения см. в разделе "Метаданные элементов TypeLibNames" ниже.|  

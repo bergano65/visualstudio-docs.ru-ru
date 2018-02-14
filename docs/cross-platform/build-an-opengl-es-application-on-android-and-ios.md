@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 6378826a090b05a681a4808573eefd95899b9f6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: af4a0a340589fcedd7121e164ffcd6ec2ed43e70
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 Установив компонент Visual C++ для разработки кроссплатформенных мобильных приложений, вы можете создавать решения и проекты Visual Studio для приложений iOS и Android с общим кодом. В этом пошаговом руководстве показано, как разработать шаблон приложения, который служит для создания как простейшего приложения iOS, так и приложения Android Native Activity. Приложения имеют общий код C++, который использует технологию OpenGL ES для отображения одинакового анимированного вращающегося куба на обеих платформах. OpenGL ES (GLES) — это интерфейс API двухмерной и трехмерной графики, который поддерживается многими мобильными устройствами.  
