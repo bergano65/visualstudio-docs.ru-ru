@@ -1,3 +1,5 @@
+---
+---
 # <a name="create-an-ai-project-from-existing-code"></a>Создание проекта ИИ на основе имеющегося кода
 
 [Установив инструменты Visual Studio для сценариев ИИ](installation.md), вы можете легко перенести существующий код Python в проект Visual Studio.

@@ -1,3 +1,5 @@
+---
+---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Клонирование репозитория с кодом Python в Visual Studio
 
 После [установки инструментов Visual Studio для сценариев ИИ](installation.md) вы можете легко клонировать репозиторий с кодом Python и создать на его основе проект.

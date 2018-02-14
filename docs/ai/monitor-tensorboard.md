@@ -1,3 +1,5 @@
+---
+---
 # <a name="monitor-with-tensorboard"></a>Отслеживание с помощью TensorBoard
 
 TensorBoard позволяет визуально отслеживать процесс обучения модели. 
