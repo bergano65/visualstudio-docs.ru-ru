@@ -23,9 +23,8 @@
 ### Установка в сети
 #### [Создание сетевой установки Visual Studio](install/create-a-network-installation-of-visual-studio.md)
 #### [Обновление сетевой установки Visual Studio](install/update-a-network-installation-of-visual-studio.md)
-#### [Установка Visual Studio в среде, защищенной брандмауэром или прокси-сервером](install/install-visual-studio-behind-a-firewall-or-proxy-server.md)
-#### [Исправление ошибок авторизации прокси-сервера](ide/reference/proxy-authorization-required.md)
-#### [Добавление URL-адресов в частной сети в список разрешений](ide/whitelisting-urls-in-a-private-network.md)
+#### [Установка и использование Visual Studio в среде, защищенной брандмауэром или прокси-сервером](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+##### [Устранение неполадок сети при установке и использовании Visual Studio](install/troubleshooting-network-related-errors-in-visual-studio.md)
 ### Развертывание на предприятии
 #### [Автоматизация установки Visual Studio с помощью файла ответов](install/automated-installation-with-response-file.md)
 #### [Автоматическое применение ключей продуктов при развертывании Visual Studio](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
@@ -188,6 +187,7 @@
 ### [Разработка приложений Office и SharePoint](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [Работа с файлами XML и XSLT](xml-tools/xml-tools-in-visual-studio.md)
 ### Дополнительные учебники
+#### [Создание приложения WPF на C# или Visual Basic](ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [Учебник 1. Создание приложения для просмотра рисунков (C#)](ide/tutorial-1-create-a-picture-viewer.md)
 ##### [Шаг 1. Создание проекта приложения Windows Forms](ide/step-1-create-a-windows-forms-application-project.md)
 ##### [Шаг 2. Запуск программы](ide/step-2-run-your-program.md)
