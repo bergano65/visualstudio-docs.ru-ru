@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: code analysis, check-in policies
+helpviewer_keywords:
+- code analysis, check-in policies
 ms.assetid: 3fa5a849-e05f-4e31-8ba3-b014c889d94d
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b7187ef8d3342ad050c66debf939e9c6a6213957
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Создание и использование политик возврата с анализом кода
 При использовании управления версиями Team Foundation (TFVC) можно создать политику возврата с анализом кода для .NET Framework и проекты машинного кода (C/C++) в командном проекте. Политика возврата анализа кода можно использовать для отслеживания и повышения качества кода, возвращаемого в базу кода.  
