@@ -1,48 +1,75 @@
-# [Подписки Visual Studio](index.md)
-# Обзор
-## [Сравнение вариантов подписок](compare-subscriptions.md)
-
-# Практические руководства
-##  Подписчики
-### [Приобретение подписки](buy-vs-subscriptions.md)
-### [Управление подпиской](manage-vs-subscriptions.md)
-### [Использование скачиваемых файлов для подписчиков](subscriber-downloads.md)
-### [Использование ключей продукта](product-keys.md)
-### Активация преимуществ
-#### Инструменты
-##### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md) 
-##### [Visual Studio Team Services](vs-vsts.md)
-##### [Microsoft Azure](vs-azure.md) 
-##### [Parasoft](vs-parasoft.md)
-##### [WhiteSource Bolt](vs-whitesource.md)
-##### [Enterprise Mobility + Security ](vs-ems.md)
-##### [Учетная запись разработчика Windows](vs-windows-dev.md)
-##### [Разработчик приложений для Office 365](vs-office-dev.md)
-##### [Power BI Pro](vs-pbi.md)
-##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
-##### [Оплата по мере использования в Microsoft Azure](vs-azure-payg.md) 
-#### Образование
-##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn Learning](vs-linkedin-learning.md)
-##### [Opsgility](vs-opsgility.md)
-##### [Pluralsight](vs-pluralsight.md)
-##### [Обучение Xamarin University](vs-xamarin.md)
-##### [Электронные учебные курсы Microsoft E-Learning](vs-elearn.md)
-##### [Подписка на журнал MSDN Magazine](vs-msdn.md)
-#### Поддержка
-##### [Техническая поддержка](vs-tech-support.md)
-
-## Администраторы
-### [Общие сведения для администраторов](admin-responsibilities.md)
-### [Доступ к порталу администратора](access-admin-portal.md)
-### [Использование портала администратора](using-admin-portal.md)
-### [Назначение подписки](assign-license.md)
-### [Изменение подписки](edit-license.md)
-### [Удаление подписки](delete-license.md)
-### [Поиск подписки](search-license.md)
-### [Работа с подписками с превышенным числом утверждений](handle-overclaimed-license.md)
-### [Работа с подписками с истекшим сроком действия](handle-expired-license.md)
-
+# [Подписки Visual Studio](index.md) 
+## Возможности для подписчиков
+### [Использование портала для подписчиков](using-the-subscriber-portal.md)
+#### [Активация розничной подписки](activate-store-subscriptions.md)
+#### [Вход](signing-in.md)
+##### [Вход с помощью псевдонима](aliasing.md)
+#### [Управление подписками](manage-vs-subscriptions.md)
+### [Скачивание программного обеспечения](subscriber-downloads.md)
+#### [Список доступного для скачивания программного обеспечения](software-download-list.md)
+### [Получение ключей продукта и управление ими](product-keys.md)
+### Visual Studio Dev Essentials
+#### [Присоединение к программе Visual Studio Dev Essentials](join-dev-essentials.md)
+#### [Выход из программы Visual Studio Dev Essentials](leave-vsde.md)
+### [Преимущества для подписчиков](subscriber-benefits.md)
+## Использование преимуществ для подписчиков
+### Инструменты
+#### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md) 
+#### [Visual Studio Team Services](vs-vsts.md)
+#### [Деньги на счете в Azure](vs-azure.md) 
+#### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
+#### [Parasoft](vs-parasoft.md)
+#### [WhiteSource Bolt](vs-whitesource.md)
+#### [Enterprise Mobility + Security](vs-ems.md)
+#### [Учетная запись разработчика Windows](vs-windows-dev.md)
+#### [Подписка на Office 365 для разработчиков](vs-office-dev.md)
+#### [Power BI Pro ](vs-pbi.md)
+#### [Современные требования для TFS](vs-modernreq.md)
+#### [Оплата за Azure по мере использования](vs-azure-payg.md)
+### Профессиональное развитие
+#### [LinkedIn Learning](vs-linkedin-learning.md)
+#### [DataCamp](vs-datacamp.md)
+#### [Opsgility](vs-opsgility.md)
+#### [Pluralsight](vs-pluralsight.md)
+#### [Обучение Xamarin University](vs-xamarin.md)
+#### [Электронные учебные курсы Microsoft](vs-elearn.md)
+#### [Подписка на журнал MSDN](vs-msdn.md)
+### Преимущества поддержки
+#### [Чат с Помощником по Azure](vs-azure-advisory-chat.md)
+#### [Сообщество Azure](vs-azure-community.md)
+#### [Техническая поддержка](vs-tech-support.md)
+#### [Приоритетная поддержка на форуме](vs-priority-support.md)
+#### [Поддержка Concierge](vs-concierge-chat.md)
+## Управление подписками
+### Обзор
+#### [Сведения об управлении подписками](subscription-management-info.md)
+#### [Обязанности администратора](admin-responsibilities.md)
+#### [Управление администраторами](managing-admins.md)
+#### [Доступ к порталу](access-admin-portal.md)
+#### Подключение организации
+##### [Поиск номера PCN](find-pcn.md)
+##### [Управление несколькими номерами PCN](multiple-pcns.md)
+##### [Поиск основного контактного лица](find-primary-contact.md)
+##### [Поиск идентификаторов подписок](find-subscription-id.md)
+### Использование портала администрирования
+#### [Назначение подписки](assign-license.md)
+#### [Повторная отправка электронных писем о назначении](resend-assignment-email.md)
+#### [Изменение подписки](edit-license.md)
+#### [Удаление подписки](delete-license.md)
+#### [Поиск подписки](search-license.md)
+#### [Превышение доступности](handle-overclaimed-license.md)
+#### [Подписки, срок действия которых истек](handle-expired-license.md)
+#### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
+## Приобретение подписок на Visual Studio
+### [Сравнение подписок](compare-subscriptions.md)
+### Приобретение подписок на облачные службы
+#### [Обзор набора средств Visual Studio для Unity](vscloud-overview.md)
+#### [Первая покупка](vscloud-first-purchase.md)
+#### [Продление](vscloud-renewals.md)
+#### [Дополнительные покупки](vscloud-buy-more.md)
+#### [Отмена](vscloud-cancel.md)
 ## Ресурсы
-### [Условия использования](vs-license-terms.md)
-### [Поддержка по подпискам](https://www.visualstudio.com/subscriptions/support/)
+### [Условия лицензии Visual Studio](vs-license-terms.md)
+### [Технический документ о лицензировании Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Сравнение вариантов подписок и цен на них](https://www.visualstudio.com/vs/pricing)
+### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://www.visualstudio.com/vs/compare)
