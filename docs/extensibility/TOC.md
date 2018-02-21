@@ -189,7 +189,7 @@
 ## [Практическое руководство. Использование контекста пользовательского интерфейса на основе правил для расширений Visual Studio](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Практическое руководство. Диагностика производительности расширения](how-to-diagnose-extension-performance.md)
 ## [Устранение неполадок, связанных с пакетами VSPackage](troubleshooting-vspackages.md)
-# [Оболочка (изолированная или интегрированная)](shell/)
+# [Оболочка (изолированная или интегрированная)](https://vspartner.com/pages/vsshells)
 # [Доставка расширений Visual Studio](shipping-visual-studio-extensions.md)
 ## [Шаблон проекта VSIX](vsix-project-template.md)
 ## [Начало работы с шаблоном проекта VSIX](getting-started-with-the-vsix-project-template.md)

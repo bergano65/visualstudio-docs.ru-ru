@@ -1,40 +1,31 @@
 ---
-title: "Использование IntelliSense | Документы Майкрософт"
+title: "IntelliSense в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Using IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>Использование IntelliSense в Visual Studio
 
 IntelliSense — это общий термин для нескольких возможностей: "Список членов", "Сведения о параметрах", "Краткие сведения" и "Завершить слово". Эти возможности помогают получать дополнительные сведения об используемом коде, отслеживать параметры при вводе и добавлять вызовы свойств и методов путем нескольких нажатий клавиш.
 
@@ -86,7 +77,7 @@ IntelliSense — это общий термин для нескольких во
 
 ## <a name="complete-word"></a>Завершить слово
 
-Функция "Завершить слово" завершает оставшуюся часть имени переменной, команды или функции после ввода достаточного количества символов для однозначного определения термина. Чтобы вызвать функцию "Завершить слово", можно выбрать пункт меню **Изменить** > **IntelliSense** > **Завершить слово** либо нажать клавиши **CTRL** + **ПРОБЕЛ** или кнопку **Завершить слово** на панели инструментов редактора.
+Функция "Завершить слово" завершает оставшуюся часть имени переменной, команды или функции после ввода достаточного количества символов для однозначного определения термина. Чтобы вызвать функцию "Завершить слово", можно выбрать пункт меню **Изменить** > **IntelliSense** > **Завершить слово** либо нажать клавиши **CTRL**+**ПРОБЕЛ** или кнопку **Завершить слово** на панели инструментов редактора.
 
 ## <a name="intellisense-options"></a>Параметры IntelliSense
 
@@ -110,7 +101,7 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>См. также
 
-[Возможности IntelliSense в Visual Basic](../ide/visual-basic-specific-intellisense.md)  
+[Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
 [C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [IntelliSense для JavaScript](../ide/javascript-intellisense.md)  
 [Написание и рефакторинг кода (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  

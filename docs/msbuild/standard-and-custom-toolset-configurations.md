@@ -1,55 +1,52 @@
 ---
 title: "Стандартные и настраиваемые конфигурации наборов инструментов | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 19e01346c8af84faad2ac1877091a395db3fd3ce
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 Набор инструментов MSBuild содержит ссылки на задачи, целевые объекты и средства, которые можно использовать для создания проекта приложения. В состав MSBuild входит стандартный набор инструментов, но вы также можете создавать пользовательские наборы. Сведения об указании набора инструментов см. в разделе [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
   
 ## <a name="standard-toolset-configurations"></a>Стандартные конфигурации набора инструментов  
- В MSBuild 12.0 входят следующие стандартные наборы инструментов:  
+ В MSBuild 15.0 входят следующие стандартные наборы инструментов:  
   
 |ToolsVersion|Путь к набору инструментов (указанный в свойстве сборки MSBuildToolsPath или MSBuildBinPath)|  
 |------------------|--------------------------------------------------------------------------------------------|  
 |2.0|*Путь установки Windows*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Путь установки Windows*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Путь установки Windows*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
+|15.0|*Путь установки Visual Studio*\MSBuild\15.0\bin|  
   
- Значение `ToolsVersion` определяет набор инструментов, который используется проектом, создаваемым в среде Visual Studio. В [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] значение по умолчанию — 12.0 (вне зависимости от версии, указанной в файле проекта), но этот атрибут можно переопределить с помощью параметра командной строки **/toolsversion**. Сведения об этом атрибуте и других способах указания `ToolsVersion` см. в разделе [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ Значение `ToolsVersion` определяет набор инструментов, который используется проектом, создаваемым в среде Visual Studio. В Visual Studio 2017 значение по умолчанию — "15.0" (вне зависимости от версии, указанной в файле проекта), но этот атрибут можно переопределить с помощью параметра командной строки **/toolsversion**. Сведения об этом атрибуте и других способах указания `ToolsVersion` см. в разделе [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
- Если атрибут `ToolsVersion` не указан, в разделе реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<Version Number\>\DefaultToolsVersion** определяется значение `ToolsVersion`, которое всегда равно 2.0.  
-  
- Путь установки MSBuild.exe указывается в приведенных ниже разделах реестра.  
+ Visual Studio 2017 не использует раздел реестра для хранения пути к MSBuild. Для версий MSBuild, предшествующих 15.0, которые установлены с Visual Studio 2017, путь установки MSBuild.exe указывается в приведенных ниже разделах реестра.  
   
 |Раздел реестра .|Имя ключа|Строковое значение параметра|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Путь установки .NET Framework 2.0|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Путь установки .NET Framework 3.5|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Путь установки .NET Framework 4|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\12.0\|MSBuildToolsPath|Путь установки MSBuild|  
   
 ### <a name="sub-toolsets"></a>Поднаборы инструментов  
- Если раздел реестра в приведенной выше таблице содержит подраздел, MSBuild использует его для определения пути к вложенному набору инструментов, который может переопределять путь в родительском наборе инструментов. Вот пример такого подраздела:  
+ Если раздел реестра в приведенной выше таблице содержит подраздел, MSBuild использует его для определения пути к вложенному набору инструментов, который переопределяет путь в родительском наборе инструментов. Вот пример такого подраздела:  
   
  \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0  
   
@@ -63,11 +60,11 @@ ms.lasthandoff: 12/22/2017
 ## <a name="custom-toolset-definitions"></a>Пользовательские определения для набора инструментов  
  Если стандартный набор инструментов не удовлетворяет требованиям сборки, можно создать пользовательский набор инструментов. Например, возможен сценарий сборки в лабораторной среде, в которой для сборки проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] должна быть отдельная система. С помощью пользовательского набора инструментов можно при создании проектов или запуске файла MSBuild.exe присваивать атрибуту `ToolsVersion` пользовательские значения. Это позволяет также использовать свойство `$(MSBuildToolsPath)` для импорта файлов TARGETS из данного каталога и определять пользовательские свойства набора инструментов для любых проектов, использующих этот набор.  
   
- Укажите пользовательский набор инструментов в файле конфигурации для MSBuild.exe (или для пользовательского средства, в котором размещается ядро MSBuild). Например, файл конфигурации для MSBuild.exe может включать в себя указанное ниже определение набора инструментов, если требуется переопределить поведение ToolsVersion 12.0.  
+ Укажите пользовательский набор инструментов в файле конфигурации для MSBuild.exe (или для пользовательского средства, в котором размещается ядро MSBuild). Например, файл конфигурации для MSBuild.exe может включать в себя указанное ниже определение набора инструментов, если требуется переопределить поведение ToolsVersion 15.0.  
   
 ```xml  
-<msbuildToolsets default="12.0">  
-   <toolset toolsVersion="12.0">  
+<msbuildToolsets default="15.0">  
+   <toolset toolsVersion="15.0">  
       <property name="MSBuildToolsPath"   
         value="C:\SpecialPath" />  
    </toolset>  
@@ -80,7 +77,7 @@ ms.lasthandoff: 12/22/2017
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=12.0.0.0, Culture=neutral,   
+       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  

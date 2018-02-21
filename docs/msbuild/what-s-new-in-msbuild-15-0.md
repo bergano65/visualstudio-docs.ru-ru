@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 03/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-caps.latest.revision: "23"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ae35bafc612b4fd7b76a06c47300fee4f35ce5ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 81ee5566181a96ef36e8ce8f1545a22964301198
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="whats-new-in-msbuild-15"></a>Новые возможности MSBuild 15
 MSBuild теперь предоставляется в составе [основного пакета SDK .NET](https://www.microsoft.com/net/download/core). Проекты на базе .NET Core можно создавать в Windows, macOS и Linux.  
@@ -39,7 +39,7 @@ MSBuild теперь предоставляется в составе [осно�
 -   Свойства `SDK35ToolsPath` и `SDK40ToolsPath` указывают на пакет SDK для платформы .NET Framework, поставляемый с соответствующей версией Visual Studio (например, 10.0A для инструментов 4.X).  
 
 ## <a name="updates"></a>Обновления
-- В элемент [Project](../msbuild/project-element-msbuild.md) добавлен новый атрибут `SDK`. Также атрибут `Xmlns` стал необязательным.
+- В элемент [Project](../msbuild/project-element-msbuild.md) добавлен новый атрибут `SDK`. Также атрибут `Xmlns` стал необязательным. Дополнительные сведения см. в разделах [Пакеты, метаданные и платформы](/dotnet/core/packages) и [Дополнения к формату CSPROJ для .NET Core](/dotnet/core/tools/csproj).
 - Для внешних целевых объектов элемента [Item](../msbuild/item-element-msbuild.md) добавлен новый атрибут `Update`. Кроме того, снято ограничение на атрибут `Remove`.
 - `Directory.Build.props` является определяемым пользователем файлом, который содержит настройки для проектов в каталоге. Этот файл автоматически импортируется из Microsoft.Common.targets, если свойству `ImportDirectoryBuildTargets` не задано значение **false**. Microsoft.Common.targets импортирует `Directory.Build.targets`.
 - Все метаданные с именами, которые не противоречат текущему списку атрибутов, можно по желанию разработчика выразить в виде атрибута. Дополнительные сведения см. в статье [Элемент Item (MSBuild)](../msbuild/item-element-msbuild.md).

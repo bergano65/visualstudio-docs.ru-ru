@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: f1e94d08addc4045bfda9ffa34b77755a0a54a89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 193856ca96395db9a5b3bd494a5b8f1f7331f702
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
@@ -23,16 +23,16 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="uninstall-script"></a>Скрипт удаления
 
-Вы можете удалить систему Visual Studio и связанных с ней компоненты за один раз с помощью скрипта удаления, расположенного [здесь](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
+Вы можете удалить систему Visual Studio и связанные с ней компоненты за один раз с помощью [скрипта удаления](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
 Этот скрипт содержит основную часть команд, приведенных в этой статье. Вследствие возможных внешних зависимостей в этом скрипте опущено два аспекта:
 
 - **Удаление Mono**
 - **Удаление Android AVD**
 
-Чтобы запустить скрипт, выполните следующее:
+Чтобы запустить скрипт, выполните следующее.
 
-1. Щелкните скрипт правой кнопкой мыши и выберите пункт **Сохранить как**, чтобы сохранить файл на Mac.
+1. Щелкните скрипт правой кнопкой мыши и выберите пункт **Сохранить как...**, чтобы сохранить файл на Mac.
 2. Откройте терминал и измените рабочий каталог на папку, куда был скачан скрипт:
 
     ```bash
@@ -48,11 +48,11 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
-Первый шаг при удалении Visual Studio с Mac заключается в поиске файла **Visual Studio.app** в каталоге **/Applications** и перетаскивании его в **корзину**. Можно также щелкнуть правой кнопкой мыши и выбрать пункт **Переместить в удаленные**, как показано ниже:
+Первый шаг при удалении Visual Studio с Mac заключается в поиске файла **Visual Studio.app** в каталоге **/Applications** и перетаскивании его в **корзину**. Можно также щелкнуть правой кнопкой мыши и выбрать пункт **Переместить в удаленные**, как показано на следующем рисунке:
 
 ![Перемещение приложения Visual Studio в корзину](media/uninstall-image1.png)
 
-Удаление этого набора приложений приведет к удалению Visual Studio для Mac, даже если в файловой системе остались другие файлы, связанные с Xamarin.
+Удаление этого набора приложений приводит к удалению Visual Studio для Mac, даже если в файловой системе остались другие файлы, связанные с Xamarin.
 
 Чтобы удалить все следы Visual Studio для Mac, нужно выполнить в терминале следующие команды:
 
@@ -60,16 +60,18 @@ ms.lasthandoff: 10/31/2017
 sudo rm -rf "/Applications/Visual Studio.app"
 rm -rf ~/Library/Caches/VisualStudio
 rm -rf ~/Library/Preferences/VisualStudio
-rm -rf "~/Library/Preferences/Visual Studio"
+rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Developer/Xamarin
+rm -rf ~/Library/Application\ Support/VisualStudio
+rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Удаление Mono SDK (MDK)
 
-Mono представляет собой реализацию .NET Framework Майкрософт с открытым исходным кодом и используется всеми продуктами Xamarin — Xamarin.iOS, Xamarin.Android и Xamarin.Mac, чтобы обеспечить разработку на C# в рамках этих платформ.
+Mono представляет собой реализацию .NET Framework Майкрософт с открытым исходным кодом и используется всеми продуктами Xamarin (Xamarin.iOS, Xamarin.Android и Xamarin.Mac), чтобы обеспечить разработку на C# в рамках этих платформ.
 
 > [!WARNING]
 > Существуют и другие приложения, не входящие в Visual Studio для Mac, которые используют Mono, например Unity.
@@ -126,8 +128,6 @@ rm -rf ~/.android/avd
 
 Xamarin.iOS позволяет разрабатывать приложения iOS на языках C# и F # в Visual Studio для Mac.
 
-Узел сборки Xamarin также автоматически устанавливался вместе с более ранними версиями Xamarin.iOS, чтобы обеспечить разработку приложений iOS в Visual Studio. Чтобы удалить оба этих компонента с компьютера, сделайте следующее:
-
 Выполните следующие команды в терминале для удаления всех файлов Xamarin.iOS из файловой системы:
 
 ```bash
@@ -141,7 +141,7 @@ sudo pkgutil --forget com.xamarin.xamarin.ios.pkg
 
 ## <a name="uninstall-xamarinmac"></a>Удаление Xamarin.Mac
 
-После успешного удаления Visual Studio для Mac можно удалить продукт Xamarin.Mac и его лицензию с помощью двух следующих команд:
+Удалить продукт Xamarin.Mac и его лицензию с компьютера Mac можно с помощью двух соответствующих команд:
 
 ```bash
 sudo rm -rf /Library/Frameworks/Xamarin.Mac.framework
@@ -156,7 +156,7 @@ rm -rf ~/Library/Xamarin.Mac
 sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstall
 ```
 
-В более старых версиях требуется вручную удалить следующие компоненты:
+В более старых версиях требуется вручную удалить следующие артефакты:
 
 * Приложение Workbooks в `"/Applications/Xamarin Workbooks.app"`
 * Приложение Inspector в `"Applications/Xamarin Inspector.app"`

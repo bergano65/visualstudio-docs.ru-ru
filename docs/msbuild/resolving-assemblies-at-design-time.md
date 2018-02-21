@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild
+helpviewer_keywords:
+- msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 10c327995363b2064498f88d9ec1a02a18650970
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Разрешение сборок во время разработки
 Когда вы добавляете ссылку на сборку с помощью вкладки .NET или диалога добавления ссылки, эта ссылка указывает на промежуточную ссылочную сборку, которая содержит всю информацию о типах и сигнатурах, но не обязательно включает программный код. На вкладке .NET перечислены все ссылочные сборки, соответствующие сборкам среды выполнения в платформе .NET Framework. Кроме того, в этот список включены ссылочные сборки, соответствующих сборкам среды выполнения в зарегистрированных папках AssemblyFoldersEx, используемых сторонними разработчиками.  
   
 ## <a name="multi-targeting"></a>Нацеливание на несколько версий  
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] позволяет нацеливать приложения на версии .NET Framework, использующие Common Language Runtime (CLR) версии 2.0 или 4. Сюда входят версии платформы .NET Framework 2.0, 3.0, 3.5, 4, 4.5 и 4.5.1 и версии Silverlight 1.0, 2.0 и 3.0. Если будет выпущена новая версия платформы .NET Framework, основанная на среде CLR версии 2.0 или 4, эту платформу можно будет установить с помощью пакета нацеливания, и тогда она автоматически будет включена в список целевых платформ в Visual Studio.  
+ [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] позволяет нацеливать приложения на версии .NET Framework, использующие общеязыковую среду выполнения (CLR) версии 2.0 или 4. Сюда входят версии платформы .NET Framework 2.0, 3.0, 3.5, 4, 4.5 и 4.5.1 и версии Silverlight 1.0, 2.0 и 3.0. Если будет выпущена новая версия платформы .NET Framework, основанная на среде CLR версии 2.0 или 4, эту платформу можно будет установить с помощью пакета нацеливания, и тогда она автоматически будет включена в список целевых платформ в Visual Studio.  
   
 ## <a name="how-type-resolution-works"></a>Как работает разрешение типов  
  Во время выполнения среда CLR разрешает типы в сборке, просматривая глобальный кэш сборок, каталог bin и все проверочные пути. Эту функцию выполняет fusion-загрузчик. Как же fusion-загрузчик узнает, что нужно искать? Это зависит от разрешения, выполненного во время разработки при сборке приложения.  

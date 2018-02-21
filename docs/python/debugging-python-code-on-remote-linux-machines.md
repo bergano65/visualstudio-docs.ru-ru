@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11e48a67540ff7df665cc044557751be4b1c3be0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 
@@ -29,9 +29,9 @@ Visual Studio позволяет локально и удаленно запус
 
 При работе c ptvsd для отлаживаемого кода Python создается сервер отладки, к которому может подключаться Visual Studio. Для такого размещения нужно внести лишь небольшое изменение в код для импорта и запуска сервера и в некоторых случаях скорректировать на удаленном компьютере настройки сети и брандмауэра, чтобы разрешить подключения TCP.
 
-Обзор удаленной отладки можно найти в видео [Подробное рассмотрение: удаленная кроссплатформенная отладка](https://youtu.be/y1Qq7BrV6Cc) (размещено на youtube.com, длительность 6 мин 22 с), которое относится как к Visual Studio 2015, так и к Visual Studio 2017.
-
-> [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Обзор удаленной отладки можно найти в видео [Подробное рассмотрение: удаленная кроссплатформенная отладка](https://youtu.be/y1Qq7BrV6Cc) (размещено на youtube.com, длительность 6 мин 22 с), которое относится как к Visual Studio 2015, так и к Visual Studio 2017. |
 
 ## <a name="setting-up-a-linux-computer"></a>Настройка компьютера Linux
 

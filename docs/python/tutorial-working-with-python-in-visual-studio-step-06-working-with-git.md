@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Шаг 6. Работа с Git
 
@@ -35,7 +35,7 @@ Visual Studio обеспечивает прямую интеграцию с ло
 
   ![Отображение дополнительных сведений при наведении указателя мыши на элемент управления Git в окне Visual Studio](media/working-with-git-01.png)
 
-1. Выбрав заголовок репозитория, можно открыть окно **Team Explorer** с различными параметрами Git. Область **Синхронизация**, как показано на рисунке, предоставляет параметры для публикации в удаленном репозитории.
+1. Выбрав заголовок репозитория, можно открыть окно **Team Explorer** с различными параметрами Git. Область **Синхронизация**, отображаемая при выборе заголовка **Отправка** (как показано на рисунке), предоставляет параметры для публикации в удаленном репозитории.
 
   ![Team Explorer в Visual Studio после создания локального репозитория](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Visual Studio обеспечивает прямую интеграцию с ло
 
   ![Team Explorer в Visual Studio отображает ветви](media/working-with-git-04.png)
 
-1. При использовании локального репозитория зафиксированные изменения помещаются сразу в него. При подключении к удаленному репозиторию выберите **Синхронизация** для передачи локальных фиксаций.
+1. При использовании локального репозитория зафиксированные изменения помещаются сразу в него. Если вы подключены к удаленному репозиторию, выберите заголовок, выберите **Синхронизировать**, чтобы переключиться на раздел **Синхронизация**, и используйте представленные там команды.
 
 ## <a name="going-deeper"></a>Дополнительные сведения
 

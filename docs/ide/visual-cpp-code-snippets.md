@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C++
 
@@ -31,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 
 - В меню **Правка > IntelliSense** выберите пункт **Вставить фрагмент**.
 
-- Нажмите клавиши **CTRL+K+X**.
+- Нажмите клавиши **CTRL**+**K**+**X**
 
 Должен появиться список вариантов, начинающийся с **#if**. Если выбрать **#if**, в файл должен добавиться следующий код:
 
@@ -47,11 +50,11 @@ ms.lasthandoff: 12/22/2017
 
 Чтобы заключить выделенный код во фрагмент кода, выделите одну или несколько строк и выполните одно из указанных ниже действий.
 
-1. Щелкните правой кнопкой мыши, чтобы открыть контекстное меню, и выберите пункт **Разместить во фрагменте**.
+- Щелкните правой кнопкой мыши, чтобы открыть контекстное меню, и выберите пункт **Заключить в**.
 
-2. В меню **Правка > IntelliSense** выберите пункт **Разместить во фрагменте**.
+- В меню **Правка** > **IntelliSense** выберите пункт **Заключить в**.
 
-3. Нажмите клавиши **CTRL+K+S**.
+- На клавиатуре нажмите клавиши **CTRL**+**K**+**S**.
 
 Выберите **#if**. Результат должен быть примерно таким:
 

@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Сравнение вариантов подписок Visual Studio
 
@@ -39,10 +39,10 @@ ms.lasthandoff: 12/01/2017
 
 **Программы**. Помимо стандартных и облачных подписок, корпорация Майкрософт предлагает подписки в рамках ряда специальных программ.
 
-- [Imagine](https://imagine.microsoft.com/en-us/about). Учащимся бесплатно предоставляются программное обеспечение и средства для разработки ПО профессионального уровня, то есть все необходимое для создания игр, приложений и веб-сайтов.
+- [Imagine](https://imagine.microsoft.com/about). Учащимся бесплатно предоставляются программное обеспечение и средства для разработки ПО профессионального уровня, то есть все необходимое для создания игр, приложений и веб-сайтов.
 - [BizSpark](https://bizspark.microsoft.com/About/Offers). Бесплатные продукты и услуги для новых предприятий.  Участники программы BizSpark получают бесплатный доступ ко всему программному обеспечению Майкрософт для разработки и тестирования, включая Azure, Windows, Visual Studio, Office и SQL Server. 
-- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/en-us). В зависимости от вашего уровня участия в MPN вы можете получить до 10 подписок на выпуск Enterprise. 
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx). Эксклюзивный доступ к ресурсам, которые позволят вам совершенствовать свои технические знания и навыки обучения.
+- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/). В зависимости от вашего уровня участия в MPN вы можете получить до 10 подписок на выпуск Enterprise. 
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx). Эксклюзивный доступ к ресурсам, которые позволят вам совершенствовать свои технические знания и навыки обучения. Дополнительные сведения о правах на использование обучения, включенных в подписки MCT Software & Services и MCT Developer Software & Services, см. на веб-сайте программы [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA). 
 
 ## <a name="visual-studio-licensing"></a>Лицензирование Visual Studio
 Подписки Visual Studio лицензируются по принципу "На пользователя". Одно лицо может использовать программное средство для проектирования, разработки, тестирования или демонстрации своих программ на любом количестве устройств. Подписка Visual Studio также позволяет лицензированному пользователю использовать пробные версии ПО и симулировать среды клиентов в целях диагностирования проблем, связанных с их ПО.
@@ -62,4 +62,4 @@ ms.lasthandoff: 12/01/2017
 
 [Сравните возможности интегрированной среды разработки Visual Studio](https://www.visualstudio.com/vs/compare/)
 
-Дополнительные сведения о правах на использование обучения, включенных в подписки MCT Software & Services и MCT Developer Software & Services, см. на веб-сайте программы [Microsoft Certified Trainer](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA).  
+ 

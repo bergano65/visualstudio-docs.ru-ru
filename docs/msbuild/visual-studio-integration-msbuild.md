@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.  
@@ -53,10 +54,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- С этой целью[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проверяет условия в `PropertyGroup`, `ItemGroup`, `Import`, свойствах и элементах объекта.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проверяет условия в `PropertyGroup`, `ItemGroup`, `Import`, свойствах и элементах объекта.  
   
 ## <a name="additional-build-actions"></a>Дополнительные действия при построении  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) . В этом меню всегда приводятся имена типов элементов`Compile`, `EmbeddedResource`, `Content`и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). В этом меню всегда приводятся имена типов элементов`Compile`, `EmbeddedResource`, `Content`и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
   
 ```xml  
 <ItemGroup>  

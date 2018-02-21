@@ -1,10 +1,10 @@
 ---
 title: "Набор инструментов MSBuild (ToolsVersion) | Документация Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: "30"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e274fa60ff209436be9d11f52464d7b42972ef47
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл microsoft.common.tasks, файл microsoft.common.targets и такие компиляторы, как csc.exe и vbc.exe. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.  
@@ -32,7 +32,10 @@ ms.lasthandoff: 12/22/2017
   
 ```xml  
 <Project ToolsVersion="15.0" ... </Project>  
-```  
+``` 
+
+> [!NOTE] 
+> Некоторые типы проектов используют атрибут `sdk` вместо `ToolsVersion`. Дополнительные сведения см. в разделах [Пакеты, метаданные и платформы](/dotnet/core/packages) и [Дополнения к формату CSPROJ для .NET Core](/dotnet/core/tools/csproj).
   
 ## <a name="how-the-toolsversion-attribute-works"></a>Как работает атрибут ToolsVersion  
  При создании проекта в Visual Studio или обновлении существующего проекта атрибут с именем `ToolsVersion` автоматически включается в файл проекта, а его значение соответствует версии MSBuild, включенной в выпуск Visual Studio. Дополнительные сведения см. в разделе [Указание конкретной версии или профиля .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
@@ -72,7 +75,7 @@ ms.lasthandoff: 12/22/2017
   
 -   с помощью методов <xref:Microsoft.Build.Utilities.ToolLocationHelper>.  
   
- Свойства набора инструментов указывают на пути к инструментам. В соответствии со значением атрибута `ToolsVersion` в файле проекта MSBuild определяет местоположение соответствующего раздела реестра, а затем использует сведения из раздела реестра для настройки свойств набора инструментов. Например, если атрибут `ToolsVersion` имеет значение `12.0`, то MSBuild задает свойства набора инструментов в соответствии со следующим разделом реестра: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+ Свойства набора инструментов указывают на пути к инструментам. Начиная с Visual Studio 2017, система MSBuild больше не имеет фиксированного расположения. По умолчанию она находится в папке MSBuild\15.0\Bin относительно папки установки Visual Studio. В более ранних версиях MSBuild определяет местоположение соответствующего раздела реестра в соответствии со значением атрибута `ToolsVersion` в файле проекта, а затем использует сведения из этого раздела для настройки свойств набора инструментов. Например, если атрибут `ToolsVersion` имеет значение `12.0`, то MSBuild задает свойства набора инструментов в соответствии со следующим разделом реестра: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
  Свойства набора инструментов:  
   
@@ -95,7 +98,7 @@ ms.lasthandoff: 12/22/2017
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> возвращает путь к папке инструментов построения.  
   
 ### <a name="sub-toolsets"></a>Поднаборы инструментов  
- Как говорилось выше в этом разделе, для указания пути к основным инструментам в MSBuild используется раздел реестра. Если в разделе имеется подраздел, то он используется в MSBuild для указания пути к поднабору инструментов, в котором содержатся дополнительные инструменты. В этом случае набор инструментов определяется комбинацией определений свойств, которые настраиваются в двух разделах.  
+ В версиях младше 15.0 для указания пути к основным инструментам в MSBuild используется раздел реестра. Если в разделе имеется подраздел, то он используется в MSBuild для указания пути к поднабору инструментов, в котором содержатся дополнительные инструменты. В этом случае набор инструментов определяется комбинацией определений свойств, которые настраиваются в двух разделах.  
   
 > [!NOTE]
 >  Если имена свойств набора инструментов конфликтуют, то значение, определенное для пути подраздела, заменяет значение, установленное для пути корневого раздела.  
@@ -106,7 +109,7 @@ ms.lasthandoff: 12/22/2017
   
 -   "11.0" указывает на поднабор инструментов .NET Framework 4.5;  
   
--   "12.0" указывает на поднабор инструментов .NET Framework 4.5.1;  
+-   "12.0" указывает на поднабор инструментов .NET Framework 4.5.1; 
   
  Поднаборы инструментов 10.0 и 11.0 должны использоваться с ToolsVersion 4.0. В более поздних версиях версии поднабора инструментов и ToolsVersion должны совпадать.  
   

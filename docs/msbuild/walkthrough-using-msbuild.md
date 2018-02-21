@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Пошаговое руководство. Использование MSBuild
 MSBuild является платформой сборки для корпорации Майкрософт и Visual Studio. Это практическое руководство содержит вводную информацию о стандартных блоках MSBuild и описывает способы записи и отладки проектов MSBuild, а также управления ими. Здесь рассматриваются следующие вопросы:  
@@ -60,45 +61,33 @@ MSBuild является платформой сборки для корпора
      Файл проекта откроется в редакторе кода.  
   
 ## <a name="targets-and-tasks"></a>Целевые объекты и задачи  
- Файлы проекта представляют собой файлы в формате XML с корневым узлом [Проект](../msbuild/project-element-msbuild.md).  
+Файлы проекта представляют собой файлы в формате XML с корневым узлом [Проект](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Необходимо указать пространство имен xmlns в элементе "Проект".  
+Необходимо указать пространство имен xmlns в элементе "Проект". Если `ToolsVersion` присутствует в новом проекте, он должен иметь значение "15.0".
   
- Создание приложения выполняется с помощью элементов [Целевой объект](../msbuild/target-element-msbuild.md) и [Задача](../msbuild/task-element-msbuild.md).  
+Создание приложения выполняется с помощью элементов [Целевой объект](../msbuild/target-element-msbuild.md) и [Задача](../msbuild/task-element-msbuild.md).  
   
 -   Задача — это наименьшая единица работы или, другими словами, атом сборки. Задачи являются независимыми исполняемыми компонентами, которые могут иметь входные и выходные данные. Сейчас в проекте отсутствуют определенные задачи или задачи, на которые существуют ссылки. Процедура добавления задач в файл проекта описывается в следующих разделах. Дополнительные сведения см. в статье о [задачах](../msbuild/msbuild-tasks.md).  
   
--   Целевой объект представляет собой именованную последовательность задач. В конце файла проекта существует два целевых объекта, которые в настоящее время заключены в комментарии HTML: BeforeBuild и AfterBuild.  
+-   Целевой объект представляет собой именованную последовательность задач. Дополнительные сведения см. в статье о [целевых объектах](../msbuild/msbuild-targets.md).  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Дополнительные сведения см. в статье о [целевых объектах](../msbuild/msbuild-targets.md).  
-  
- Узел "Проект" имеет необязательный атрибут DefaultTargets, выбирающий целевой объект по умолчанию для сборки, в этом случае — Build.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- Целевой объект Build не определен в файле проекта. Он импортируется из файла Microsoft.CSharp.targets с помощью элемента [Import](../msbuild/import-element-msbuild.md).  
+Целевой объект по умолчанию не определен в файле проекта. Вместо этого он задан в импортированных проектах. Элемент [Import](../msbuild/import-element-msbuild.md) указывает импортированные проекты. Например, в проекте C# целевой объект по умолчанию импортируется из файла Microsoft.CSharp.targets. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- Импортированные файлы вставляются в файл проекта везде, где на них указывает ссылка.  
+Импортированные файлы вставляются в файл проекта везде, где на них указывает ссылка.  
+
+> [!NOTE]
+> Некоторые типы проектов, например .NET Core, используют упрощенную схему с атрибутом `Sdk` вместо `ToolsVersion`. Эти проекты имеют неявные импорты и отличные значения атрибутов по умолчанию.
   
- MSBuild отслеживает целевые объекты сборки и гарантирует, что каждый целевой объект будет построен не более одного раза.  
+MSBuild отслеживает целевые объекты сборки и гарантирует, что каждый целевой объект будет построен не более одного раза.  
   
 ## <a name="adding-a-target-and-a-task"></a>Добавление целевого объекта и задачи  
  Добавьте целевой объект в файл проекта. Добавьте задачу в целевой объект, который выводит сообщение.  
@@ -158,9 +147,6 @@ MSBuild является платформой сборки для корпора
   
  Переключаясь между редактором кода и командной строкой, можно изменять файл проекта и сразу же видеть результаты.  
   
-> [!NOTE]
->  Если команда msbuild выполняется без параметра /t, создается целевой объект, заданный атрибутом DefaultTarget элемента Project, в данном случае — Build. Будет собрано приложение Windows Forms BuildApp.exe.  
-  
 ## <a name="build-properties"></a>Свойства сборки  
  Свойства сборки являются парами "имя — значение", управляющими сборкой. В верхней части файла проекта уже определено несколько свойств сборки:  
   
@@ -178,10 +164,10 @@ MSBuild является платформой сборки для корпора
  Все свойства являются дочерними элементами по отношению к элементам PropertyGroup. Имя свойства — это имя дочернего элемента, а значение свойства — это текстовый элемент дочернего элемента. Например, примененная к объекту директива  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- определяет свойство с именем TargetFrameworkVersion, задавая ему строковое значение v12.0.  
+ определяет свойство с именем TargetFrameworkVersion, задавая ему строковое значение "v15.0".  
   
  Свойства сборки можно переопределить в любое время. If  
   
@@ -223,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]

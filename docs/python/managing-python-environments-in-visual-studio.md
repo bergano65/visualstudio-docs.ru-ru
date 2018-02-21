@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="python-environments"></a>Среды Python
 
@@ -70,13 +70,13 @@ ms.lasthandoff: 02/01/2018
 
 Чтобы открыть окно окружений Python, последовательно выберите в меню **Просмотр > Другие окна > Окружения Python** или щелкните правой кнопкой узел проекта **Окружения Python** в обозревателе решений и выберите **Просмотреть все окружения Python**:
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+![Команда View All Python Environments (Показать все среды Python) в обозревателе решений](media/environments-view-all.png)
 
 В любом случае в обозревателе решений откроется окно со средами Python в виде одноуровневой вкладки.
 
 ![Окно со средами Python](media/environments-default-view.png)
 
-В примере выше видно, что установлена версия Python 3.4 (32-разрядный интерпретатор CPython) вместе с 32- и 64-разрядной версиями IronPython 2.7. Для всех новых проектов используется выделенное окружение по умолчанию, то есть Python 3.4. Если среды не отображаются, это значит, вы установили Инструменты Python для Visual Studio версии 2015 или более ранней, но еще не установили интерпретатор Python (см. сведения в разделе [Выбор и установка интерпретаторов Python](#selecting-and-installing-python-interpreters) выше). Команда **+Настроить** позволяет [создать окружение для существующего интерпретатора](#create-an-environment-for-an-existing-interpreter).
+В примере выше видно, что установлена версия Python 3.4 (32-разрядный интерпретатор CPython) вместе с 32- и 64-разрядной версиями IronPython 2.7. Для всех новых проектов используется выделенное окружение по умолчанию, то есть Python 3.4. Если среды не отображаются, это значит, вы установили Инструменты Python для Visual Studio версии 2015 или более ранней, но еще не установили интерпретатор Python (см. сведения в разделе [Выбор и установка интерпретаторов Python](#selecting-and-installing-python-interpreters) выше). Команда **+Настроить** позволяет [создать окружение для существующего интерпретатора](#creating-an-environment-for-an-existing-interpreter).
 
 Справа от каждого окружения в списке есть элемент управления, который позволяет открыть интерактивное окно для этого окружения. Также может отображаться еще один элемент управления, отвечающий за обновление базы данных IntelliSense для этого окружения.
 

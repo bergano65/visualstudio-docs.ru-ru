@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Работа с Python в Visual Studio (Windows)
 
@@ -70,7 +70,7 @@ Visual Studio для Windows предоставляет средства [с о�
 
 ## <a name="features-matrix"></a>Матрица возможностей
 
-Поддержку Python можно установить в следующих выпусках Visual Studio, как описано в [руководство по установке](installing-python-support-in-visual-studio.md):
+Функции Python можно установить в следующих выпусках Visual Studio, как описано в [руководстве по установке](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (все выпуски)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (все выпуски)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +81,7 @@ Visual Studio для Windows предоставляет средства [с о�
 - Visual Studio 2012 (версии Pro или более высокой версии)
 - Visual Studio 2010 с пакетом обновления 1 (версии Pro или более высокой версии; требуется .NET 4.5)
 
-Поддерживаемые возможности в разных версиях и выпусках Visual Studio.
+Функции полностью поддерживаются только в последней версии Visual Studio. Они доступны и в предыдущих версиях, но поддерживаются не полностью.
 
 | Поддержка Python | 2017 | 2015 | 2013 Comm | 2013 для настольных систем | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -166,6 +166,8 @@ Visual Studio для Windows предоставляет средства [с о�
 | Удаленная отладка (Windows, Mac OS X Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | Окно интерактивной отладки | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
+
+<a name="matrix-profiling"></a>
 
 | Профилирование | 2017 | 2015 | 2013 Comm | 2013 для настольных систем | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
 ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
-caps.latest.revision: "27"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: dbb673b263cc7cf4931a07b968a763faf057fad4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generatedeploymentmanifest-task"></a>Задача GenerateDeploymentManifest
 Создает манифест развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Манифест развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] описывает развертывание приложения, определяя уникальный идентификатор для развертывания, признаки развертывания, такие как режим установки и оперативный режим, задавая параметры обновления приложения и расположения обновления, а также указывая соответствующий манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -34,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры для задачи `GenerateDeploymentManifest`.  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`AssemblyName`|Необязательный параметр `String` .<br /><br /> Указывает поле `Name` удостоверения сборки для создаваемого манифеста. Если этот параметр не задан, то имя выводится из параметра `EntryPoint` или `InputManifest`. Если вывести имя не удалось, задача сообщает об ошибке.|  
 |`AssemblyVersion`|Необязательный параметр `String` .<br /><br /> Указывает поле `Version` удостоверения сборки для создаваемого манифеста. Если этот параметр не задан, задача использует значение 1.0.0.0.|  
@@ -50,7 +52,7 @@ ms.lasthandoff: 12/22/2017
 |`MaxTargetPath`|Необязательный параметр `String` .<br /><br /> Определяет максимальную допустимую длину пути к файлу при развертывании приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Если этот параметр указан, то с ним сверяется длина каждого пути к файлу в приложении. Любые элементы, превышающие это ограничение, вызовут предупреждение сборки. Если это значение не определено или равно нулю, то проверка не выполняется.|  
 |`MinimumRequiredVersion`|Необязательный параметр `String` .<br /><br /> Указывает, может ли пользователь пропустить обновление. Если у пользователя установлена версия, которая меньше, чем минимально требуемая, он не сможет пропустить обновление. Этот входной параметр применяется, только когда параметр `Install` имеет значение `true`.|  
 |`OutputManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает имя создаваемого выходного файла манифеста. Если этот параметр не задан, имя выходного файла выводится из идентификатора создаваемого манифеста.|  
-|`Platform`|Необязательный параметр `String` .<br /><br /> Указывает целевую платформу приложения. Этот параметр может иметь следующие значения:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Значение по умолчанию — `AnyCPU`.|  
+|`Platform`|Необязательный параметр `String` .<br /><br /> Указывает целевую платформу приложения. Этот параметр может иметь следующие значения:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Значение по умолчанию — `AnyCPU`.|  
 |`Product`|Необязательный параметр `String` .<br /><br /> Указывает имя приложения. Если этот параметр не задан, имя выводится из идентификатора создаваемого манифеста. Это имя используется для имени ярлыка в меню "Пуск" и является частью имени, которое отображается в диалоговом окне "Установка и удаление программ".|  
 |`Publisher`|Необязательный параметр `String` .<br /><br /> Указывает имя издателя приложения. Если этот параметр не задан, имя выводится из имени зарегистрированного пользователя или из идентификатора создаваемого манифеста. Это имя используется для имени папки в меню "Пуск" и является частью имени, которое отображается в диалоговом окне "Установка и удаление программ".|  
 |`SuiteNamel`|Необязательный параметр `String` .<br /><br /> Задает имя папки в меню "Пуск", в которой располагается приложение после развертывания ClickOnce.|  

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>Задача MT
 Является оболочкой для инструмента манифеста Майкрософт (mt.exe). Дополнительные сведения см. в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -55,11 +56,11 @@ ms.lasthandoff: 12/22/2017
 |**EnableDPIAwareness**|Необязательный параметр `Boolean` .<br /><br /> Если имеет значение `true`, добавляются сведения манифеста, которые помечают приложение как поддерживающее определение DPI. При написании приложения, поддерживающего определение DPI, пользовательский интерфейс выглядит единообразно при использовании различных параметров отображения в высоком разрешении DPI.<br /><br /> Дополнительные сведения см. в разделе "Высокий DPI" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**GenerateCatalogFiles**|Необязательный параметр `Boolean` .<br /><br /> Если имеет значение `true`, создаются файлы определения каталога (CDF-файлы).<br /><br /> Дополнительные сведения см. в описании параметра **/makecdfs** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**GenerateCategoryTags**|Необязательный параметр `Boolean` .<br /><br /> Если имеет значение `true`, создаются теги категорий. Если значение параметра равно `true`, также необходимо указать параметр задачи **ManifestFromManagedAssemblyMT**.<br /><br /> Дополнительные сведения см. в описании параметра **/category** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
-|**InputResourceManifests**|Необязательный параметр типа **String**.<br /><br /> Введите манифест из ресурса типа RT_MANIFEST, имеющий указанный идентификатор. Укажите ресурс в формате *\<файл>[***;***[***#***]<код_ресурса>]*, где дополнительный параметр `resource_id` — это неотрицательное 16-разрядное число.<br /><br /> Если идентификатор `resource_id` не указан, используется значение по умолчанию CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Дополнительные сведения см. в описании параметра **/inputresource** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
+|**InputResourceManifests**|Необязательный параметр типа **String**.<br /><br /> Введите манифест из ресурса типа RT_MANIFEST, имеющий указанный идентификатор. Укажите ресурс в формате *\<файл>[***;***[***#***]<код_ресурса>]*, где дополнительный параметр `resource_id` — это неотрицательное 16-разрядное число.<br /><br /> Если идентификатор `resource_id` не указан, используется значение по умолчанию CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Дополнительные сведения см. в описании параметра **/inputresource** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ManifestFromManagedAssembly**|Необязательный параметр типа **String**.<br /><br /> Создает манифест из указанной управляемой сборки.<br /><br /> Дополнительные сведения см. в описании параметра **/managedassemblyname** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ManifestToIgnore**|Необязательный параметр типа **String**.<br /><br /> (Не используется.)|  
 |**OutputManifestFile**|Необязательный параметр типа **String**.<br /><br /> Задает имя выходного манифеста. Если этот параметр опущен и операции совершаются только с одним манифестом, то этот манифест изменяется на месте.<br /><br /> Дополнительные сведения см. в описании параметра **/out** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
-|**OutputResourceManifests**|Необязательный параметр типа **String**.<br /><br /> Манифест выводится в ресурс типа RT_MANIFEST, имеющий указанный идентификатор. Ресурс указывается в формате *\<файл>[***;***[***#***]<код_ресурса>]*, где дополнительный параметр `resource_id` — это неотрицательное 16-разрядное число.<br /><br /> Если идентификатор `resource_id` не указан, используется значение по умолчанию CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Дополнительные сведения см. в описании параметра **/outputresource** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
+|**OutputResourceManifests**|Необязательный параметр типа **String**.<br /><br /> Манифест выводится в ресурс типа RT_MANIFEST, имеющий указанный идентификатор. Ресурс указывается в формате *\<файл>[***;***[***#***]<код_ресурса>]*, где дополнительный параметр `resource_id` — это неотрицательное 16-разрядное число.<br /><br /> Если идентификатор `resource_id` не указан, используется значение по умолчанию CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Дополнительные сведения см. в описании параметра **/outputresource** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**RegistrarScriptFile**|Необязательный параметр типа **String**.<br /><br /> Задает имя файла скрипта регистратора (RGS-файла), который должен использоваться для поддержки манифеста модели COM без регистрации.<br /><br /> Дополнительные сведения см. в описании параметра **/rgs** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ReplacementsFile**|Необязательный параметр типа **String**.<br /><br /> Указывает файл, содержащий значения для замещаемых строк в файле скрипта регистратора (RGS-файле).<br /><br /> Дополнительные сведения см. в описании параметра **/replacements** в разделе "Mt.exe" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ResourceOutputFileName**|Необязательный параметр типа **String**.<br /><br /> Определяет выходной файл ресурсов для внедрения манифеста в выходные данные проекта.|  
