@@ -45,7 +45,7 @@
 ### [Пошаговое руководство. Написание модульных тестов для библиотек DLL на C/C++](walkthrough-writing-unit-tests-for-cpp-dlls.md)
 ### [Справочные материалы по API платформы модульного тестирования Майкрософт для C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 ## [Создание и выполнение модульных тестов для приложений UWP](create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
-### [Модульное тестирование библиотеки DLL на Visual C++ для приложений UWP](unit-testing-a-visual-cpp-dll-for-store-apps.md)
+### [Модульное тестирование библиотеки DLL для UWP на C++](unit-testing-a-visual-cpp-dll-for-store-apps.md)
 ### [Модульное тестирование кода Visual C# в приложениях UWP](unit-testing-visual-csharp-code-in-a-store-app.md)
 ### [Запуск модульных тестов для приложений UWP](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Использование покрытия кода для определения объема протестированного кода](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

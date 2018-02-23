@@ -1,5 +1,6 @@
 # [Обзор набора средств Visual Studio для Unity](overview-of-python-tools-for-visual-studio.md)
 # [Установка](installing-python-support-in-visual-studio.md)
+## [Установка интерпретаторов Python](installing-python-interpreters.md)
 # Краткие руководства
 ## [Создание проекта на основе имеющегося кода](quickstart-01-project-from-existing.md)
 ## [Создание проекта из шаблона](quickstart-02-python-in-visual-studio-project-from-template.md)
@@ -14,13 +15,17 @@
 ## [5 — установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 ## [6 — работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 # Основные понятия
-## [Среды Python](managing-python-environments-in-visual-studio.md)
 ## [Проекты Python](managing-python-projects-in-visual-studio.md)
 ### [Шаблоны веб-проектов](python-web-application-project-templates.md)
 ### [Шаблон веб-проекта Django](python-django-web-application-project-template.md)
 ### [Шаблон облачной службы Azure](python-azure-cloud-service-project-template.md)
 ## [Пакет Azure SDK для Python](azure-sdk-for-python.md)
 # Практические руководства
+## [Управление окружениями](managing-python-environments-in-visual-studio.md)
+### [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
+### [Использование requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
+### [Пути поиска](search-paths.md)
+### [Ссылка на окно окружения](python-environments-window-tab-reference.md)
 ## [Редактирование кода](editing-python-code-in-visual-studio.md)
 ### [Форматирование кода](formatting-python-code.md)
 ### [Рефакторинг кода](refactoring-python-code.md)
