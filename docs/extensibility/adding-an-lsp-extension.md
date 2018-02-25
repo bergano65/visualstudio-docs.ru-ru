@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Добавление расширения языка протокола сервера
 
@@ -136,7 +136,7 @@ LSP не содержит спецификацию указания выделе
 
 1. Создайте папку с именем «Грамматик» внутри модуля или он может быть любое имя.
 
-2. Расположен в папке «Грамматик» включить все файлы *.tmlanguage или *.tmtheme, хотелось бы предоставляющее пользовательских выделение цветом.
+2. В папке «Грамматик» включают *.tmlanguage, *.plist, *.tmtheme или файлы *.json, которой вы хотите предоставляющих настраиваемые выделение цветом.
 
 3. Щелкните правой кнопкой мыши на файлы, а также выберите **свойства**. Изменить действие при построении **содержимого** и **включить в VSIX** значение true.
 
