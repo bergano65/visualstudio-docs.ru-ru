@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 101d16c647887aced273804fc80a890d5102d22c
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Добавление ссылок с использованием NuGet или расширения SDK
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 01/05/2018
 |Для поддержки отладки можно использовать пакет символов.|Y|PDB-файлы, размещаемые в пакете SDK, выбираются автоматически.|Y||
 |Механизм поддерживает автообновление диспетчера пакетов.|Н/Д|Пакет SDK обновляется с помощью MSBuild.|Y||
 |Механизм поддерживает упрощенный формат манифеста.|Y|SDKManifest.xml поддерживает множество атрибутов, однако обычно требуется их небольшая часть.|Y||
-|Механизм доступен для всех выпусков Visual Studio.|Y|Пакет SDK поддерживает все выпуски Visual Studio — от Visual Studio Express до [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|Y|NuGet поддерживает все выпуски Visual Studio — от Visual Studio Express до [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|
+|Механизм доступен для всех выпусков Visual Studio.|Y|Пакет SDK поддерживает все выпуски Visual Studio.|Y|NuGet поддерживает все выпуски Visual Studio.|
 |Механизм доступен для всех типов проектов.|в|Пакет SDK поддерживает приложения [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], начиная с [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|в|Можно просмотреть список доступных проектов.|
 
 ## <a name="see-also"></a>См. также

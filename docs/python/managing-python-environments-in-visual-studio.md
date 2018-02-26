@@ -2,13 +2,12 @@
 title: "Управление окружениями Python в Visual Studio | Документация Майкрософт"
 description: "Использование окна окружений Python в Visual Studio для управления глобальными и виртуальными окружениями, настройка пользовательских окружений, установка интерпретаторов Python, установка пакетов, задание путей для поиска и управление окружениями для проектов Visual Studio."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/13/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-dev_langs:
-- python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 author: kraigb
@@ -17,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6abf950f7af86bf65b14752bd1cd9df4a6e292e5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-environments"></a>Среды Python
 
@@ -50,7 +49,7 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="selecting-and-installing-python-interpreters"></a>Выбор и установка интерпретаторов Python
 
-По умолчанию при установке рабочей нагрузки Python для разработки в Visual Studio 2017 также устанавливается Python 3 (64-разрядная версия). При необходимости вы можете установить 32-разрядную и 64-разрядную версии Python 2, Python 3, Anaconda 2 и Anaconda 3, как описано в руководстве по [установке](installing-python-support-in-visual-studio.md). Кроме того, можно вручную установить любой интерпретатор из приведенной ниже таблицы.
+По умолчанию при установке рабочей нагрузки Python для разработки в Visual Studio 2017 также устанавливается Python 3 (64-разрядная версия). При необходимости вы можете установить 32-разрядную и 64-разрядную версии Python 2, Python 3, Anaconda 2 и Anaconda 3, как описано в руководстве по [установке](installing-python-support-in-visual-studio.md). Кроме того, можно вручную установить любой интерпретатор из приведенной ниже таблицы. Visual Studio определит его. (Например, если вы установили Anaconda 3 перед установкой Visual Studio, вам не нужно снова устанавливать этот дистрибутив с помощью установщика Visual Studio.)
 
 Для Visual Studio 2015 и более ранних версий нужно вручную установить один из интерпретаторов.
 
@@ -70,13 +69,16 @@ ms.lasthandoff: 02/09/2018
 
 Чтобы открыть окно окружений Python, последовательно выберите в меню **Просмотр > Другие окна > Окружения Python** или щелкните правой кнопкой узел проекта **Окружения Python** в обозревателе решений и выберите **Просмотреть все окружения Python**:
 
-![Команда View All Python Environments (Показать все среды Python) в обозревателе решений](media/environments-view-all.png)
+    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
 
 В любом случае в обозревателе решений откроется окно со средами Python в виде одноуровневой вкладки.
 
 ![Окно со средами Python](media/environments-default-view.png)
 
-В примере выше видно, что установлена версия Python 3.4 (32-разрядный интерпретатор CPython) вместе с 32- и 64-разрядной версиями IronPython 2.7. Для всех новых проектов используется выделенное окружение по умолчанию, то есть Python 3.4. Если среды не отображаются, это значит, вы установили Инструменты Python для Visual Studio версии 2015 или более ранней, но еще не установили интерпретатор Python (см. сведения в разделе [Выбор и установка интерпретаторов Python](#selecting-and-installing-python-interpreters) выше). Команда **+Настроить** позволяет [создать окружение для существующего интерпретатора](#creating-an-environment-for-an-existing-interpreter).
+В примере выше видно, что установлена версия Python 3.4 (32-разрядный интерпретатор CPython) вместе с 32- и 64-разрядной версиями IronPython 2.7. Для всех новых проектов используется выделенное окружение по умолчанию, то есть Python 3.4. Если среды не отображаются, это значит, вы установили Инструменты Python для Visual Studio версии 2015 или более ранней, но еще не установили интерпретатор Python (см. сведения в разделе [Выбор и установка интерпретаторов Python](#selecting-and-installing-python-interpreters) выше). Команда **+Настроить** позволяет [создать окружение для существующего интерпретатора](#create-an-environment-for-an-existing-interpreter).
+
+> [!Tip]
+> Visual Studio обнаруживает обновления для существующих интерпретаторов, например обновление Python 2.7.11 до версии 2.7.14, с помощью установщиков с сайта python.org. В ходе установки старое окружение исчезнет из списка **окружений Python**, прежде чем на его месте появится обновление.
 
 Справа от каждого окружения в списке есть элемент управления, который позволяет открыть интерактивное окно для этого окружения. Также может отображаться еще один элемент управления, отвечающий за обновление базы данных IntelliSense для этого окружения.
 
@@ -87,9 +89,9 @@ ms.lasthandoff: 02/09/2018
 > [!Note]
 > Несмотря на то что Visual Studio учитывает параметр system-site-packages, его нельзя изменить из среды Visual Studio.
 
-Чтобы получить основные сведения об управлении окружениями в Visual Studio, просмотрите [это видео](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2 мин 35 с).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) об окружениях Python в Visual Studio (2 мин 35 с).|
 
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Создание среды для существующего интерпретатора
 

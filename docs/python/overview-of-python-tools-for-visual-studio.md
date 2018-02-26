@@ -2,7 +2,7 @@
 title: "Общие сведения о поддержке Python в Visual Studio (Windows) | Документация Майкрософт"
 description: "Общие сведения о функциях, доступных для Python в Visual Studio (Инструменты Python для Visual Studio или PTVS), включая функцию вопросов и ответов и матрицу поддержки возможностей в разных версиях Visual Studio."
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Работа с Python в Visual Studio (Windows)
 
@@ -50,9 +50,10 @@ Visual Studio для Windows предоставляет средства [с о�
 
 Рабочая нагрузка Python также включает пакет [SDK Azure для Python](azure-sdk-for-python.md), что упрощает использование служб Azure в Windows, Mac OS X и Linux.
 
-Основные сведения можно получить в кратком видеокурсе [Инструменты Python для Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) в Microsoft Virtual Academy (общая длительность приблизительно 22 минуты). 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите серию видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) об основах использования Python в Visual Studio (всего 22 мин). |
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Также см. следующие видео от Microsoft Virtual Academy:<ul><li>[Introduction to Programming with Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382) (Введение в программирование на языке Python)</li><li>[Python Beginner: Strings and Functions](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015) (Python для новичков. Строки и функции)</li><li>[Python Fundamentals: List and Loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019) (Основы Python. Списки и циклы)</li><li>[Top Python Questions](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (Популярные вопросы о Python)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Вопросы и ответы
 
@@ -81,7 +82,8 @@ Visual Studio для Windows предоставляет средства [с о�
 - Visual Studio 2012 (версии Pro или более высокой версии)
 - Visual Studio 2010 с пакетом обновления 1 (версии Pro или более высокой версии; требуется .NET 4.5)
 
-Функции полностью поддерживаются только в последней версии Visual Studio. Они доступны и в предыдущих версиях, но поддерживаются не полностью.
+> [!Important]
+> Функции полностью поддерживаются только в последней версии Visual Studio. Они доступны и в предыдущих версиях, но поддерживаются не полностью.
 
 | Поддержка Python | 2017 | 2015 | 2013 Comm | 2013 для настольных систем | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

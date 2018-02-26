@@ -2,7 +2,7 @@
 title: "Редактирование кода Python в Visual Studio | Документы Майкрософт"
 description: "Редактор кода Python в Visual Studio предоставляет возможности IntelliSense, работы с фрагментами кода и навигации, а также функции форматирования, анализа кода и рефакторинга."
 ms.custom: 
-ms.date: 07/10/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,21 +17,21 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2bbf7169e7d60d5dac1119f543cbcfe61e922ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="editing-python-code"></a>Редактирование кода Python
 
-Разработчики много времени работают с редактором кода. Чтобы повысить эффективность этой работы, [поддержка Python в Visual Studio](installing-python-support-in-visual-studio.md) предоставляет соответствующие функции. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация. 
+Разработчики много времени работают с редактором кода. Чтобы повысить эффективность этой работы, [поддержка Python в Visual Studio](installing-python-support-in-visual-studio.md) предоставляет соответствующие функции. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация.
 
 Редактор также интегрируется с интерактивным окном в Visual Studio, упрощая обмен кодом между ними. Подробные сведения см. в разделах [Учебник, шаг 3. Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) и [Использование интерактивного окна. Команда Send code to interactive (Отправить код в интерактивное окно)](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command).
 
-Основные сведения о редактировании кода Python см. в видеоролике [Редактирование кода Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2 мин 30 с):
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) с примером редактирования кода Python (2 мин 30 с).|
 
 Общие сведения о редактировании кода в Visual Studio см. в статье [Создание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода.
 

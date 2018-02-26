@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Рекомендации по использованию клавиатуры в Visual Studio
 
@@ -84,8 +84,8 @@ ms.lasthandoff: 01/29/2018
 |Выбор блока|Удерживать ALT и перетащить указатель мыши, клавиши SHIFT+ALT+СТРЕЛКА||
 |Переместить строку вверх или вниз|ALT+СТРЕЛКА ВВЕРХ или ALT+СТРЕЛКА ВНИЗ||
 |Дублировать строку|CTRL+E,V|Visual Studio 2017 версии 15.6 — предварительная версия 2|
-|Развернуть выделение|CTRL+W|Visual Studio 2017 версии 15.5|
-|Свернуть выделение|CTRL+SHIFT+W|Visual Studio 2017 версии 15.5|
+|Развернуть выделение|**SHIFT**+**ALT**+**=**|Visual Studio 2017 версии 15.5|
+|Свернуть выделение|**SHIFT**+**ALT**+**-**|Visual Studio 2017 версии 15.5|
 |Перейти к определению|F12||
 |Показать определение|ALT+F12||
 |Перейти к стеку определений|CTRL+SHIFT+8 (назад), CTRL+SHIFT+7 (вперед)||
@@ -125,9 +125,9 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="see-also"></a>См. также
 
-[Сочетания клавиш (VSTS и TFS)](/vsts/collaborate/keyboard-shortcuts)  
-[Блог о Visual Studio](http://blogs.msdn.com/b/visualstudio)  
-[Блог с советами и рекомендации по Visual Studio](http://blogs.msdn.com/b/zainnab)  
-[Видео о панели инструментов Visual Studio на канале Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
-[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Отправка ошибок на сайте Visual Studio Connect](http://connect.microsoft.com/VisualStudio)
+- [Сочетания клавиш (VSTS и TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Блог о Visual Studio](http://blogs.msdn.com/b/visualstudio)
+- [Блог с советами и рекомендации по Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Видео о панели инструментов Visual Studio на канале Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Отправка ошибок на сайте Visual Studio Connect](http://connect.microsoft.com/VisualStudio)

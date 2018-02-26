@@ -1,22 +1,34 @@
 ---
-title: "Как повторно отправить сообщения о назначении подписки через VLSC | Документация Майкрософт"
+title: "Как повторно отправлять электронные сообщения о назначении подписки с сайта manage.visualstudio.com или через VLSC | Документация Майкрософт"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 12/29/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to a subscriber from within VLSC
+Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7162435044a578a94249774305f2c6b8b6438219
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails-from-vlsc"></a>Как повторно отправить сообщения о назначении подписки через VLSC
+# <a name="how-to-resend-subscription-assignment-emails"></a>Как повторно отправлять электронные сообщения о назначении подписки
 
+Действия по повторной отправке сообщений электронной почты о назначении подписки зависят от того, с помощью какого портала выполняется управление подписками. 
+
+## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>Повторная отправка электронных сообщений о назначении подписки с сайта manage.visualstudio.com
+
+Повторная отправка электронных сообщений о назначениях с помощью портала manage.visualstudio.com выполняется очень просто:
+
+1. Войдите на портал [manage.visualstudio.com](https://manage.visualstudio.com). 
+2. На вкладке **Фильтр** найдите подписчика, которому необходимо повторно отправить электронное сообщение о назначении подписки. Дополнительные сведения о фильтрации см. в инструкциях по [поиску подписок](/visualstudio/subscriptions/search-license).
+3. Выберите подписчика.  Выбрать несколько подписчиков можно, удерживая клавиши CTRL или SHIFT.
+4. Щелкните **Повторная отправка** в верхней части результатов поиска.  
+
+## <a name="resending-assignment-emails-from-within-vlsc"></a>Повторная отправка электронных сообщений о назначении подписки с помощью VLSC
 Если вы назначили подписку определенному подписчику через VLSC, а затем этот подписчик попросил повторно отправить ему сообщение о назначении, для этого проще всего изменить адрес электронной почты в этой подписке, а затем восстановить прежний адрес. Это действие приводит к автоматической отправке сообщения о назначении подписки.
 
 Следуйте приведенным ниже инструкциям, чтобы повторно отправить сообщение о назначении.
@@ -36,4 +48,3 @@ ms.lasthandoff: 01/29/2018
 
 > [!NOTE]
 > - Для новых подписок сообщение электронной почты о назначении отправляется автоматически. Описанный выше процесс нужен только в том случае, если пользователь просит отправить новое уведомление или исходное уведомление не было доставлено по любой причине.
-> - Для подписок, назначенных через https://manage.visualstudio.com, эта процедура не требуется.  Чтобы повторно отправить сообщение электронной почты с помощью портала, просто выберите нужного подписчика и нажмите кнопку **Повторно отправить** в верхней части списка подписчиков.  

@@ -14,37 +14,25 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f047b143a7d0955d8ac3e2708098a903c73da59
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
+
 Используя Visual Studio, можно создавать приложения для устройств Android, iOS и Windows.  При разработке приложения вы можете использовать инструменты Visual Studio для добавления подключенных служб, таких как Office 365, служба приложений Azure и Application Insights.
 
- Поддерживается создание приложений с помощью C# и .NET Framework, HTML и JavaScript или C++. Существует возможность совместного использования кода, строк, изображений, а в некоторых случаях даже пользовательского интерфейса.
+Поддерживается создание приложений с помощью C# и .NET Framework, HTML и JavaScript или C++. Существует возможность совместного использования кода, строк, изображений, а в некоторых случаях даже пользовательского интерфейса.
 
- Для создания игр или мощных графических приложений установите инструменты Visual Studio для Unity. Это позволит максимально эффективно использовать функции Visual Studio и Unity — популярного движка и среды разработки для игр и мощных графических приложений в Windows, iOS, Android и на других платформах.
+Для создания игр или мощных графических приложений установите инструменты Visual Studio для Unity. Это позволит максимально эффективно использовать функции Visual Studio и Unity — популярного движка и среды разработки для игр и мощных графических приложений в Windows, iOS, Android и на других платформах.
 
- **В этой статье:**
+## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Сборка приложений для устройств Android, iOS и Windows (.NET Framework)
 
--   [Сборка приложения для устройств Android, iOS и Windows (.NET Framework)](#NET)
+![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
 
-    -   [Целевые устройства Android, iOS и Windows из единой базы кода](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
-
-    -   [Целевые устройства Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
-
--   [Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)](#HTML)
-
--   [Сборка приложений для устройств Android и Windows (C++)](#CPP)
-
--   [Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity](#Unity)
-
-##  <a name="NET"></a> Сборка приложения для устройств Android, iOS и Windows (.NET Framework)
- ![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
-
- С помощью Xamarin вы можете указать Android, iOS и Windows в качестве целевых устройств в одном и том же решении, при этом код и даже графический интерфейс будут использоваться совместно.
+С помощью Xamarin вы можете указать Android, iOS и Windows в качестве целевых устройств в одном и том же решении, при этом код и даже графический интерфейс будут использоваться совместно.
 
 |**Дополнительные сведения**|
 |--------------------|
@@ -52,7 +40,7 @@ ms.lasthandoff: 02/09/2018
 |[Сведения о Xamarin в Visual Studio](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Visual Studio и Xamarin](../cross-platform/visual-studio-and-xamarin.md) (Библиотека MSDN)|
 |[Управление жизненным циклом приложений (ALM) c приложениями Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (Библиотека MSDN)|
-|[Дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Сведения о сходстве между Swift и C#](http://aka.ms/scposter) (download.microsoft.com)|
 |[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 

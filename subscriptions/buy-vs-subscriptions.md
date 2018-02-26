@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>Приобретение подписки
 Существует два основных типа подписок Visual Studio (облачная и стандартная), которые представлены на [странице цен на Visual Studio](https://www.visualstudio.com/vs/pricing/).
@@ -26,13 +26,14 @@ ms.lasthandoff: 01/29/2018
 ## <a name="buy-visual-studio-standard-subscriptions"></a>Приобретение подписок Visual Studio уровня "Стандартный"
 Для приобретения стандартной подписки Visual Studio потребуется обратиться к поставщику программного обеспечения или зайти на сайт [Microsoft Store](https://www.microsoft.com/store).
 
-*   Чтобы оформить подписку Azure и совершать покупки в Visual Studio Marketplace, требуется [личная учетная запись Майкрософт](https://www.microsoft.com/account) либо [рабочая или учебная учетная запись](/azure/active-directory/sign-up-organization), если вы совершаете покупки для организации и она управляет удостоверениями с помощью Azure Active Directory (Azure AD).
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>Приобретение облачных подписок на Visual Studio
+
+Чтобы оформить подписку Azure и совершать покупки в Visual Studio Marketplace, требуется [личная учетная запись Майкрософт](https://www.microsoft.com/account) либо [рабочая или учебная учетная запись](/azure/active-directory/sign-up-organization), если вы совершаете покупки для организации и она управляет удостоверениями с помощью Azure Active Directory (Azure AD).
 
 > [!WARNING]
 > Если вы используете подписку Azure для приобретения облачных подписок Visual Studio, счета будут отображаться как дополнительные и не будут подпадать под действие обязательств по оплате Azure. См. [вопросы и ответы](/vsts/billing/faq-azure-billing) о выставлении счетов в Azure.  
-
-### <a name="buy-subscriptions"></a>Приобретение подписок
-
 
 1.  Войдите в [Visual Studio Marketplace > Подписки](https://marketplace.visualstudio.com/subscriptions).
 

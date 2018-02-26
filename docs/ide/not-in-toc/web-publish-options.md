@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Выбор подходящих вариантов публикации
 
@@ -50,6 +50,8 @@ ms.lasthandoff: 01/29/2018
 - Вы не хотите выполнять настройки уровня компьютера на серверах, где размещено веб-приложение.
 
 > Если вы хотите использовать службу приложений Azure в своем центре обработки данных или на других локальных компьютерах, воспользуйтесь для этого [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
+
+См. дополнительные сведения о [публикации приложений ASP.NET Core в Службе приложений Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Виртуальные машины Azure
 
@@ -83,7 +85,7 @@ ms.lasthandoff: 01/29/2018
 - Вам необходимо только локальное тестовое развертывание.
 - Вы хотите проверять и при необходимости изменять файлы приложения независимо друг от друга перед их отправкой в другой целевой объект развертывания.
 
-
+См. дополнительные сведения о [развертывании приложений .NET Core с помощью Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Пользовательские целевые объекты
 
@@ -103,3 +105,5 @@ ms.lasthandoff: 01/29/2018
 - Вы используете облачные службы на платформе, отличной от Azure, доступ к которой возможен через URL-адреса.
 - Вы хотите использовать для развертывания учетные данные, отличные от используемых в Visual Studio, или напрямую связанные с вашими учетными записями Azure.
 - Вы хотите удалять файлы из целевого объекта при каждом развертывании.
+
+См. дополнительные сведения об [использовании IIS 8.0 с ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45), а также руководство по [удаленной отладке ASP.NET на удаленном компьютере IIS](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

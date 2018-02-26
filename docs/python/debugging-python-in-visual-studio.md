@@ -2,7 +2,7 @@
 title: "Отладка кода Python в Visual Studio | Документация Майкрософт"
 description: "Пошаговое руководство по отладке кода Python в Visual Studio, в том числе задание точек останова, отладка по шагам, проверка значений, просмотр исключений и отладка в интерактивном окне."
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c3b4bf4c08f9ecd13a313c717b4da9c0a5d5a45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-your-python-code"></a>Отладка кода Python
 
@@ -34,9 +34,9 @@ Visual Studio предоставляет широкие возможности �
 - [Отладка в смешанном режиме для Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Символы для отладки в смешанном режиме](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
-Общие сведения об отладке см. в видеоролике [Отладка Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Microsoft Virtual Academy, 3 мин 32 с).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) с примером отладки Python (3 мин 32 с)|
 
 <a name="debugging-without-a-project"></a>
 

@@ -2,7 +2,7 @@
 title: "Управление проектами приложений Python в Visual Studio | Документация Майкрософт"
 description: "Статья описывает, для чего нужны проекты в Visual Studio, демонстрирует способы создания и управления проектами для кода Python и знакомит вас с доступными для Python шаблонами проектов."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Проекты Python
 
@@ -40,11 +40,10 @@ Visual Studio предоставляет множество шаблонов п�
 >
 > Проект Visual Studio можно создать из существующего кода, как описано в разделе [Создание проекта из существующих файлов](#creating-a-project-from-existing-files).
 
-Введение в проекты Python в Visual Studio представлено в видео [Getting Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Написание кода Python) длительностью 2 мин 17 с в Microsoft Virtual Academy.
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-Также см. более старое видео [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Подробный обзор. Использование системы управления версиями в проектах Python) длительностью 8 мин 55 с на сайте youtube.com.
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) с общими сведениями о проектах Python (2 мин 17 с). |
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Также см. видео [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Подробный обзор. Использование системы управления версиями в проектах Python) длительностью 8 мин 55 с, размещенном на сайте youtube.com. |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Добавление файлов, назначение файла запуска и настройка сред
 
