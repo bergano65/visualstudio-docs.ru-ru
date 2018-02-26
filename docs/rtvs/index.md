@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 762b56336fa790d57ffa38510aa319e744b5959c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Работа с R в Visual Studio
 
@@ -52,9 +52,9 @@ R — это расширяемый язык и среда для статис�
 
 Дополнительные сведения см. в разделе [Часто задаваемые вопросы](faq.md).
 
-Следующий видеоролик также содержит краткий обзор (5 мин 48 с) возможностей инструментов R:
-
-> [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) с обзором Инструментов R для Visual Studio (12:36). Также см. [другие видео об Инструментах R](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
 ## <a name="send-us-your-feedback"></a>Отправьте нам свой отзыв.
 
