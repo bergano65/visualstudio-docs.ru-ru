@@ -217,7 +217,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.Replace|CTRL+H|  
 |Edit.ReplaceinFiles|Ctrl+Shift+H|  
 |Edit.SelectAll|CTRL+A|  
-|Edit.SelectNextControl|Вкладка|  
+|Edit.SelectNextControl|Tab|  
 |Edit.SelectPreviousControl|SHIFT+Tab|  
 |Edit.ShowTileGrid|ВВОД|  
 |Edit.SizeControlDown|Ctrl+Shift+СТРЕЛКА ВНИЗ|  
