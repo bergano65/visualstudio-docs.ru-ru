@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,18 +19,20 @@ dev_langs:
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: Options dialog box, debugging
+helpviewer_keywords:
+- Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Страница "Общие", папка "Отладка", диалоговое окно "Параметры"
 **Сервис > Параметры > Отладка > Общие** странице можно задать следующие параметры:  
@@ -115,7 +118,7 @@ ms.lasthandoff: 01/10/2018
 Отключение всех пользовательских настроек представления структуры объектов. Дополнительные сведения о настройках представлений см. в разделе [Создание настраиваемых представлений объектов .managed](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
 **Отключать JIT-оптимизацию при загрузке модуля (только управляемый код)**  
-Отключение JIT-оптимизации управляемого кода при загрузке модуля (и JIT-компиляции), если присоединен отладчик. Отключение оптимизации позволяет упростить процесс отладки некоторых проблем, однако может отрицательно сказаться на производительности. В режиме "Только мой код" при отключении JIT-оптимизации в коде пользователя ("Мой код") может отображаться посторонний код.
+Отключение JIT-оптимизации управляемого кода при загрузке модуля (и JIT-компиляции), если присоединен отладчик. Отключение оптимизации позволяет упростить процесс отладки некоторых проблем, однако может отрицательно сказаться на производительности. В режиме "Только мой код" при отключении JIT-оптимизации в коде пользователя ("Мой код") может отображаться посторонний код. Дополнительные сведения см. в разделе [JIT-оптимизацию и отладка](../debugger/jit-optimization-and-debugging.md).
 
 **Включение отладки JavaScript для ASP.NET (Chrome и Internet Explorer)** включает отладчик сценариев для приложений ASP.NET. При первом использовании в браузере Chrome может понадобиться выполнить вход в браузер при первом использовании, чтобы Chrome расширения, установленные ранее. Отключите этот параметр, чтобы вернуться к поведению предыдущих версий.    
 

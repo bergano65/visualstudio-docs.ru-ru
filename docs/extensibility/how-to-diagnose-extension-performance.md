@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Оценка влияния расширения при запуске
 
@@ -30,6 +32,9 @@ ms.lasthandoff: 12/22/2017
 ![Управление производительности Visual Studio](media/manage-performance.png)
 
 Этот документ предназначен для помощи разработчикам расширения, описывая вычисление влияние расширения и как их можно проанализировать локально для проверки, если расширение может отображаться как расширения, влияющие на производительность.
+
+> [!NOTE]
+> Этот документ посвящен влияние расширения на загрузку запуска и решения. Расширения также сказаться на производительности Visual Studio, если они вызывают пользовательский Интерфейс для перестать отвечать на запросы. Дополнительные сведения по этой теме см [как: пользовательский Интерфейс диагностики задержки, вызванные расширения](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Влияние запуска расширений
 
