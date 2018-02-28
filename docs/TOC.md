@@ -97,6 +97,7 @@
 ##### [Замена параметров в шаблоне](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Поддержка 64-разрядных сред IDE Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Разработка без проектов и решений ("Открытая папка")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [Настройка сборки и отладка задач](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [Написание кода в редакторе](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Поиск и замена текста](ide/finding-and-replacing-text.md)
 ##### [Использование регулярных выражений](ide/using-regular-expressions-in-visual-studio.md)
