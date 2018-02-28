@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 С помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно программно захватывать графические данные из приложения Direct3D.  
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/05/2018
   
 -   Вызывайте `CaptureCurrentFrame`в случаях, когда проблемы с отрисовкой трудно предугадать и выявить при ручном тестировании, но можно прогнозировать программно при помощи информации о состоянии приложения во время выполнения.  
   
-##  <a name="CaptureDX11_2"></a>Программный захват в Windows 10  
+##  <a name="CaptureDX11_2"></a> Программный захват в Windows 10  
  В этой части пошагового руководства демонстрируется программный захват в приложениях, использующих интерфейс API DirectX 11.2 в Windows 10, который использует метод надежного захвата.
   
  В этом разделе рассмотрены следующие задачи:  
@@ -79,7 +79,7 @@ ms.lasthandoff: 02/05/2018
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Проверьте значение `HRESULT` , возвращенное `DXGIGetDebugInterface1` , чтобы убедиться в том, что вы получили допустимый интерфейс перед тем, как его использовать.  
+     Не забудьте проверить `HRESULT` возвращенных [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) Чтобы получить допустимый интерфейс перед его использованием:  
   
     ```  
     if (FAILED(getAnalysis))  

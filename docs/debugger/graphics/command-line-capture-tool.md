@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68ea5a718b1a0d1ccff7155f842bc3808d640c21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>Программа командной строки для захвата
 DXCap.exe — это программа командной строки для захвата и воспроизведения данных диагностики графики. Она поддерживает все функциональные уровни Direct3D версий 10–12.  
@@ -42,12 +44,12 @@ DXCap.exe -info
   
  `-frame` `frames`  
  В режиме захвата параметр `frames` определяет кадры, которые необходимо захватить. Первый кадр имеет номер 1. Чтобы указать несколько кадров, можно перечислить их через запятую или использовать диапазоны. Например если `frames` — `2, 5, 7-9, 15`, затем кадры `2`, `5`, `7`, `8`, `9`, и `15` регистрируются.  
+
+> [!TIP]
+> Используйте `-frame` `manual` для указания, что кадры будут захватываться вручную, нажав клавишу Print Screen. Кадры можно захватывать, когда приложение запущено. Чтобы остановить захват кадров, вернитесь в интерфейс командной строки и нажмите клавишу ВВОД.  
   
  `-period` `periods`  
  В режиме захвата параметр `periods` определяет интервал времени (в секундах), в течение которого необходимо захватывать кадры. Чтобы указать несколько периодов, можно перечислить их через запятую или использовать диапазоны. Например если `periods` — `2.1-5, 7.0-9.3`, то кадры, отрисовываемые между `2.1` и `5` секунд и между`7` и `9.3` регистрируются секунд.  
-  
- `-manual`  
- В режиме захвата `-manual` указывает, что кадры будут захватываться вручную, нажав клавишу Print Screen. Кадры можно захватывать, когда приложение запущено. Чтобы остановить захват кадров, вернитесь в интерфейс командной строки и нажмите клавишу ВВОД.  
   
  `-c` `app` [`args...`]  
  Режим захвата. В режиме захвата параметр `app` определяет имя приложения, из которого необходимо захватить графические данные. `args...` определяет дополнительные параметры командной строки для этого приложения.  
@@ -167,13 +169,13 @@ DXCap.exe -e map
  **Пакет «Microsoft.BingMaps»:**  
  **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe C:\Program**  
  **Полное имя: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Имя: Microsoft.BingMaps**  
  **Издатель: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Вашингтон, США, C = US**  
  **Версия: 2.1.2914.1734**  
  **Можно будет запустить приложения:**  
  **Идентификатор: AppexMaps**  
- **EXE-файла: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: нет**  
  ** AppSpec (Чтобы запустить): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** последняя строка выходных данных для каждого перечисленного приложения приводится команда, можно использовать для захвата графических данных из него.  
   
