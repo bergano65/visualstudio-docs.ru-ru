@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49b27fcc972cf8b0bb0411f5ee54ea611cdd4d75
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b75aae5811fa2410cf169d3401184b8af7ca381d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-web-application-project-templates"></a>Шаблоны проекта веб-приложений Python
 
@@ -35,7 +35,7 @@ Visual Studio не включает в себя сами эти платформ
 
 Каждый шаблон (Bottle, Flask и Django) имеет начальный сайт с несколькими страницами и статическими файлами. Этот код позволяет локально выполнить запуск и отладку сервера (некоторые параметры для этого кода необходимо получить из среды) и развернуть проект в Microsoft Azure (где необходимо указать объект [приложения WSGI](http://www.python.org/dev/peps/pep-3333/)).
 
-При создании проекта из шаблона для конкретной платформы отображается диалоговое окно для установки необходимых пакетов с помощью pip. Чтобы при публикации веб-сайта были настроены правильные зависимости, для веб-проектов рекомендуется использовать [виртуальную среду](managing-python-environments-in-visual-studio.md#global-and-virtual-environments).
+При создании проекта из шаблона для конкретной платформы отображается диалоговое окно для установки необходимых пакетов с помощью pip. Чтобы при публикации веб-сайта были настроены правильные зависимости, для веб-проектов рекомендуется использовать [виртуальную среду](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ![Диалоговое окно, с помощью которого можно установить необходимые пакеты для шаблона проекта](media/template-web-requirements-txt-wizard.png)
 

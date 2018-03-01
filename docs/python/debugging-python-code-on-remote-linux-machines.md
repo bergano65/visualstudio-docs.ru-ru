@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 
@@ -40,7 +40,7 @@ Visual Studio позволяет локально и удаленно запус
 - удаленный компьютер с Python на базе операционной системы, такой как Mac OSX или Linux;
 - открытый порт 5678 (входящий трафик) в брандмауэре этого компьютера, который используется по умолчанию для удаленной отладки.
 
-Можно без труда создать [виртуальные машины Linux в Azure](/azure/virtual-machines/linux/creation-choices) и [получить к ним доступ с помощью удаленного рабочего стола](/azure/virtual-machines/linux/use-remote-desktop) из Windows. Удобно использовать Ubuntu для виртуальной машины, так как Python устанавливается по умолчанию. В противном случае см. список в разделе [Выбор и установка интерпретатора Python](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) с перечнем дополнительных расположений скачиваемых файлов Python.
+Можно без труда создать [виртуальные машины Linux в Azure](/azure/virtual-machines/linux/creation-choices) и [получить к ним доступ с помощью удаленного рабочего стола](/azure/virtual-machines/linux/use-remote-desktop) из Windows. Удобно использовать Ubuntu для виртуальной машины, так как Python устанавливается по умолчанию. В противном случае см. список в разделе [Выбор и установка интерпретатора Python](installing-python-interpreters.md) с перечнем дополнительных расположений скачиваемых файлов Python.
 
 Дополнительные сведения о создании правила брандмауэра для виртуальной машины Azure см. в разделе [Открытие портов для виртуальной машины в Azure с помощью портала Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
