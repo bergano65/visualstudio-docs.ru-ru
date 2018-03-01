@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f6122e989ce1394f31aab26b3c2eace68e9f3d21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Проекты облачных служб Azure для Python
 
@@ -93,7 +93,7 @@ Visual Studio предоставляет шаблоны, которые помо
 
 Обратите внимание, что экземпляры облачной службы не содержат компилятор C, поэтому все библиотеки с расширениями C должны содержать предварительно скомпилированные двоичные файлы.
 
-PIP и его зависимости, а также указанные в файле `requirements.txt` пакеты скачиваются автоматически и могут создавать оплачиваемый сетевой трафик. В разделе [Управление необходимыми пакетами](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) подробно описаны правила управления файлами `requirements.txt`.
+PIP и его зависимости, а также указанные в файле `requirements.txt` пакеты скачиваются автоматически и могут создавать оплачиваемый сетевой трафик. В разделе [Управление необходимыми пакетами](managing-required-packages-with-requirements-txt.md) подробно описаны правила управления файлами `requirements.txt`.
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
