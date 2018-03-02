@@ -43,7 +43,6 @@
 #### [Практическое руководство. Сбор данных о производительности для веб-сайта](how-to-collect-performance-data-for-a-web-site.md)
 #### [Практическое руководство. Создание сеансов анализа производительности вручную](how-to-manually-create-performance-sessions.md)
 #### [Пошаговое руководство. Выявление проблем с производительностью](walkthrough-identifying-performance-problems.md)
-#### [Пример PeopleTrax (средства профилирования)](peopletrax-sample-profiling-tools.md)
 ### [Настройка сеансов анализа производительности](configuring-performance-sessions.md)
 #### [Практическое руководство. Справочная информация о символах Windows](how-to-reference-windows-symbol-information.md)
 #### [Практическое руководство. Выбор методов сбора данных](how-to-choose-collection-methods.md)
