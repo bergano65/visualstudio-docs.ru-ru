@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Практическое руководство. Обеспечение простоты поддержки кода с помощью политики возврата с анализом кода
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Как: обеспечение простоты поддержки кода с политикой возврата анализа кода
 
 Разработчики могут использовать средство метрики кода для измерения сложности и удобства сопровождения свой код, но не могут вызывать метрики кода в рамках политики возврата. Тем не менее можно включить правила анализа кода, позволяющие проверить соответствие кода стандартам метрик кода и выполнение правил при помощи политик возврата. Дополнительные сведения о метриках кода см. в разделе [значения метрик кода](../code-quality/code-metrics-values.md).
 

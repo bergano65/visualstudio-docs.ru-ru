@@ -1,5 +1,5 @@
 ---
-title: "Как для получения данных метрик кода в Visual Studio | Документы Microsoft"
+title: "Способы получения данных метрик кода в Visual Studio | Документы Microsoft"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как: получения данных метрик кода
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 
 - В **результатов метрики кода** окно, выберите **Рассчитать метрики кода для решения** кнопки.
 
-   Результаты генерируются и **результатов метрики кода** откроется окно.
+Результаты генерируются и **результатов метрики кода** откроется окно.
 
 ## <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Создание результатов метрики кода для одного или нескольких выбранных проектов
 
@@ -49,8 +50,9 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="to-view-the-results-details"></a>Чтобы просмотреть подробные результаты
 
-- В **результатов метрики кода** окна, разверните дерево в **иерархии** столбца.
+В **результатов метрики кода** окна, разверните дерево в **иерархии** столбца.
 
 ## <a name="see-also"></a>См. также
 
-[Значения метрик кода](../code-quality/code-metrics-values.md)
+- [Используйте окно результатов метрики кода](../code-quality/working-with-code-metrics-data.md)
+- [Значения метрик кода](../code-quality/code-metrics-values.md)
