@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0faae917aba237a85c6a01743d89cf66adf06296
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: c946f9d0fea5192f75d2fd0a9865827b6027ef50
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="profiling-python-code"></a>Профилирование кода Python
 
@@ -38,6 +38,9 @@ ms.lasthandoff: 02/19/2018
 |   |   |
 |---|---|
 | ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) с примером профилирования Python (3 мин 00 с)|
+
+> [!Note]
+> Сейчас Visual Studio поддерживает только этот уровень профилирования приложений, но мы хотим получить ваши отзывы о других возможностях. Используйте [кнопку обратной связи **Была ли эта страница полезной?**](#feedback) внизу страницы.
 
 ## <a name="profiling-for-ironpython"></a>Профилирование для IronPython
 

@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.cores
-helpviewer_keywords: Concurrency Visualizer, Cores View
+f1_keywords:
+- vs.performance.view.cores
+helpviewer_keywords:
+- Concurrency Visualizer, Cores View
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a2ce5cc9d80e7b96318d0e1fcf8aead09652b41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1867f2b0ba84590068b1ae54b0a7aa1d48475247
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cores-view"></a>Представление "Ядра"
-В представление "Ядра" демонстрируется сопоставление выполнения потока с логическими ядрами процессора. При написании серверных приложений это представление может помочь оптимизировать производительность кэша за счет использования сходства потоков или управления пулом потоков. Оно также помогает изучать случаи, когда использование сходства потоков может усугубить проблему переходов между ядрами. Представление "Ядра" состоит из двух частей — графа и легенды.  
+**Представление ядер** — отображает то, как выполнение потока сопоставлено с ядрами логического процессора. Выберите **Анализ** > **Визуализатор параллелизма**, чтобы запустить визуализатор. При написании серверных приложений это представление может помочь оптимизировать производительность кэша за счет использования сходства потоков или управления пулом потоков. Оно также помогает изучать случаи, когда использование сходства потоков может усугубить проблему переходов между ядрами. Представление "Ядра" состоит из двух частей — графа и легенды.  
   
  В графе отображаются логические ядра по оси Y и время по оси X. Каждый поток в графе имеет уникальный цвет, поэтому можно отслеживать его перемещение между ядрами с течением времени. Можно отфильтровать потоки в графе, выбрав их в области легенды.  
   

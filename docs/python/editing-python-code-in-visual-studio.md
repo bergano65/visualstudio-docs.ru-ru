@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>Редактирование кода Python
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="intellisense"></a>IntelliSense
 
-Технология IntelliSense предоставляет следующие возможности: [автозавершения](#completions), [справка по сигнатурам](#signature-help), [вывод кратких сведений](#quick-info) и [цветовая маркировка синтаксиса](#code-coloring). В целях повышения производительности функция IntelliSense зависит от базы данных завершения, которая создается для каждой среды Python в проекте. После добавления, удаления или обновления пакетов может потребоваться обновить базы данных. Их состояние отображается в окне **Окружения Python** (элемент того же уровня, что и обозреватель решений) на вкладке **IntelliSense** (дополнительные сведения см. в статье [Среды Python](managing-python-environments-in-visual-studio.md)). 
+Технология IntelliSense предоставляет следующие возможности: [автозавершения](#completions), [справка по сигнатурам](#signature-help), [вывод кратких сведений](#quick-info) и [цветовая маркировка синтаксиса](#code-coloring). В целях повышения производительности функция IntelliSense зависит от базы данных завершения, которая создается для каждой среды Python в проекте. После добавления, удаления или обновления пакетов может потребоваться обновить базы данных. Их состояние отображается в окне **Окружения Python** (элемент того же уровня, что и обозреватель решений) на вкладке **IntelliSense** (см. дополнительные сведения об [окне "Окружения Python"](python-environments-window-tab-reference.md#intellisense-tab)).
 
 ### <a name="completions"></a>Автозавершения
 

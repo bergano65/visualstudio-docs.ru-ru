@@ -29,4 +29,4 @@
 
 ## <a name="see-also"></a>См. также
 
-- [Создание среды для существующего интерпретатора Python](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Определение существующего окружения Python вручную](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).

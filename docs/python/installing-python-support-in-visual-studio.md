@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Установка поддержки Python в Visual Studio под управлением Windows
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/19/2018
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
 
-Для Visual Studio 2015 и более ранних версий требуется отдельно установить любой интерпретатор Python (Python 3.5 или более ранней версии; версия 3.6 не поддерживается, и будет выводиться сообщение "Неподдерживаемая версия Python 3.6"). Дополнительные сведения см. в статье [Среды Python](managing-python-environments-in-visual-studio.md). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
+Для Visual Studio 2015 и более ранних версий требуется отдельно [установить любой интерпретатор Python](installing-python-interpreters.md) (требуется Python 3.5 или более ранней версии, так как версия 3.6 не поддерживается, и будет выводиться соответствующее сообщение). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
 
 Чтобы быстро проверить поддержку Python после установки, откройте интерактивное окно Python. Для этого нажмите клавиши Alt + I и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
 
@@ -91,7 +91,7 @@ ms.lasthandoff: 02/19/2018
 
     ![Выбор PTVS в установщике Visual Studio 2015](media/installation-vs2015.png)
 
-1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Если интерпретатор уже установлен, см. раздел [Создание окружения для существующего интерпретатора](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](installing-python-interpreters.md). Если интерпретатор уже установлен, но Visual Studio не обнаруживает его автоматически, см. руководство по [определению существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 и более ранние версии
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 02/19/2018
     - Visual Studio 2012: [PTVS 2.1 для Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 для Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Selecting and installing Python interpreters](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) (Установка и настройка интерпретаторов Python). Если интерпретатор уже установлен, см. раздел [Создание окружения для существующего интерпретатора](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. [Selecting and installing Python interpreters](installing-python-interpreters.md) (Установка и настройка интерпретаторов Python). Если интерпретатор уже установлен, но Visual Studio не обнаруживает его автоматически, см. руководство по [определению существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="install-locations"></a>Расположения установки
 

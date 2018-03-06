@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67cf109b0964bcb9eca104ec138f968e273111e9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4b9b7a51436eeeb67634714216f9a583de679a07
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Краткое руководство. Создание проекта на основе шаблона Cookiecutter
 
@@ -55,6 +55,6 @@ ms.lasthandoff: 02/09/2018
 ## <a name="see-also"></a>См. также
 
 - [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md)
-- [Создание среды для существующего интерпретатора Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md).
 - [Расположения установки](installing-python-support-in-visual-studio.md#install-locations).
