@@ -20,18 +20,18 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27be497a62a21aa8dc222c96539a48f7e5d62425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e99ead2f921f5247757192bcb3330aa4ebca8d7
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-operators"></a>Операторы JavaScript
 В следующей таблице перечислены операторы [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="operators"></a>Операторы  
   
-|Описание|Элемент языка|  
+|Описание:|Элемент языка|  
 |-----------------|----------------------|  
 |Прибавляет значение выражения к значению переменной и присваивает результат переменной.|[Оператор присваивания сложения (+=)](../../javascript/reference/addition-assignment-operator-decrement-equal-javascript.md)|  
 |Выполняет сложение двух чисел или объединяет две строки.|[Оператор сложения (+)](../../javascript/reference/addition-operator-decrement-javascript.md)|  
@@ -67,8 +67,8 @@ ms.lasthandoff: 10/27/2017
 |Выполняет логическое умножение двух выражений.|[Оператор логического И (&&)](../../javascript/reference/logical-and-operator-decrement-javascript.md)|  
 |Выполняет логическое отрицание выражения.|[Оператор логического НЕ (!)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|  
 |Выполняет логическое разделение двух выражений.|[Логическое или оператор (&#124; &#124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|  
-|Делит значение переменной на значение выражения и присваивает остаток переменной.|[Оператор присваивания модуля (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
-|Выполняет деление двух чисел и возвращает остаток.|[Оператор модуля (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
+|Делит значение переменной на значение выражения и присваивает остаток переменной.|[Остаток от деления оператор назначения (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
+|Выполняет деление двух чисел и возвращает остаток.|[Оператор остатка (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
 |Умножает значение переменной на значение выражения и присваивает результат переменной.|[Оператор присваивания умножения (*=)](../../javascript/reference/multiplication-assignment-operator-decrement-equal-javascript.md)|  
 |Выполняет умножение двух чисел.|[Оператор умножения (*)](../../javascript/reference/multiplication-operator-decrement-javascript.md)|  
 |Создает новый объект.|[Оператор new](../../javascript/reference/new-operator-decrementjavascript.md)|  
