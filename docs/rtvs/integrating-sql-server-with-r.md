@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Работа с SQL Server и R
 
@@ -32,9 +32,9 @@ ms.lasthandoff: 02/09/2018
 > - Visual Studio 2017: запустите установщик Visual Studio и выберите рабочую нагрузку "Хранение и обработка данных", которая включает SQL Server Data Tools.
 > - Visual Studio 2015: следуйте инструкциям в разделе [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-В следующем видео (3 мин, 3 с) представлен краткий обзор SQL Server и R.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) с обзором SQL Server и R (3 мин 3 с). |
 
 ## <a name="creating-and-running-sql-queries"></a>Создание и выполнение SQL-запросов
 
@@ -65,9 +65,9 @@ RTVS упрощает громоздкий и подверженный ошиб�
 - [Написание и тестирование хранимой процедуры SQL](#write-and-test-a-sql-stored-procedure)
 - [Публикация хранимой процедуры SQL](#publish-a-sql-stored-procedure)
 
-В следующем видео (6 мин, 9 с) представлен обзор этих функций.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) с обзором хранимых процедур SQL Server и R (6 мин 9 с). |
 
 ### <a name="add-a-database-connection"></a>Добавление подключения к базе данных
 

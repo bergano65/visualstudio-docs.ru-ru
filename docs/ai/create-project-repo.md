@@ -36,7 +36,7 @@
 
     ![Первые выходные данные из программы Python MNIST](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Если вы используете Anaconda и возникает ошибка об отсутствии numpy, может быть необходимо [изменить среду Python на подходящую для Anaconda](../python/managing-python-environments-in-visual-studio.md)
+> Если при использовании Anaconda вы получаете ошибку об отсутствии numpy, вам нужно [изменить окружение Python на подходящую для работы с Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
 11. Вы можете использовать TensorBoard для визуального отображения хода выполнения. Щелкните проект правой кнопкой мыши и выберите **Запуск TensorBoard**, а затем укажите каталог для журналов TensorBoard с выходными данными.
 

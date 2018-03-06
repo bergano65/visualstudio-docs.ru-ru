@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Порядок установки инструментов R для Visual Studio
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Установка RTVS в Visual Studio 2017
 
-1. Запустите установщик Visual Studio. (См. раздел [Скачивание](https://www.visualstudio.com/downloads/), если вы еще не установили Visual Studio.) В Windows 7 убедитесь, что в установщике отображается версия Visual Studio *15.2 сборка 26430.12* или более поздней версии.
+1. Запустите установщик Visual Studio. (См. раздел [Скачивание](https://www.visualstudio.com/downloads/), если вы еще не установили Visual Studio.) В Windows 7 убедитесь, что в установщике отображается Visual Studio 2017 *версии 15.2 сборки 26430.12* или более поздней версии.
 
 1. Выберите рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
 
@@ -81,12 +81,12 @@ RTVS устанавливается в каталог `%ProgramFiles(x86)%\Micro
 
 Вариант автономной установки подходит для компьютеров, которые не подключены к Интернету.
 
-1. Следуйте инструкциям по созданию автономного установщика для вашей версии Visual Studio: 
+1. Следуйте инструкциям по созданию автономного установщика для вашей версии Visual Studio:
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Для Visual Studio 2015 скачайте автономные установщики RTVS: [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) и [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+1. Для Visual Studio 2015 скачайте автономные установщики RTVS: [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) и [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Установите Visual Studio и RTVS с помощью автономных установщиков.
 

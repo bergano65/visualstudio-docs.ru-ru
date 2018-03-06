@@ -4,23 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology:
+- tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.workload: unity
-ms.openlocfilehash: 45a06d17b2a3033af64c9d9a007af4a74dedabba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- unity
+ms.openlocfilehash: f3ff8389c6d8f84ed534f259ada36db7489f7b31
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Журнал изменений (набор средств Visual Studio для Unity)
 Журнал изменений в наборе средств Visual Studio для Unity  
+
+## <a name="3503"></a>3.5.0.3
+ Выпущено 09.01.2018 г.
+
+### <a name="bug-fixes"></a>Исправления ошибок  
+
+-   **Интеграция:**  
+
+    -   Исправлено автоматическое преобразование отладочных символов PDB в MDB.
 
 ## <a name="3502"></a>3.5.0.2
  Выпущено 04.12.2017
@@ -547,7 +558,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="1920"></a>1.9.2.0  
  Выпущено 09.10.2014 г.  
 
-### <a name="new-features"></a>Новые компоненты  
+### <a name="new-features"></a>Новые функции  
 
 -   Улучшено обнаружение проигрывателей Unity.  
 
@@ -570,7 +581,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="1910"></a>1.9.1.0  
  Выпущено 22.09.2014 г.  
 
-### <a name="new-features"></a>Новые компоненты  
+### <a name="new-features"></a>Новые функции  
 
 -   Оптимизирована привязка точки останова к исходным расположениям.  
 
@@ -615,7 +626,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="1900"></a>1.9.0.0  
  Выпущено 29.07.2014 г.  
 
-### <a name="new-features"></a>Новые компоненты  
+### <a name="new-features"></a>Новые функции  
 
 -   В окне "Присоединить отладчик Unity" добавлена возможность ввода пользовательского IP-адреса и порта для отладки.  
 
@@ -690,7 +701,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="1810"></a>1.8.1.0  
  Выпущено 21.11.2013 г.  
 
-### <a name="new-features"></a>Новые компоненты  
+### <a name="new-features"></a>Новые функции  
 
 -   Изменены мастера MonoBehaviour с API-интерфейсами Unity 4.3.  
 
@@ -723,7 +734,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="1800"></a>1.8.0.0  
  Выпущено 24.09.2013 г.  
 
-### <a name="new-features"></a>Новые компоненты  
+### <a name="new-features"></a>Новые функции  
 
 -   Значительно повышена скорость подключения отладчика.  
 
@@ -800,7 +811,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="1200"></a>1.2.0.0  
  Выпущено 25.03.2013 г.  
 
-### <a name="new-features"></a>Новые компоненты  
+### <a name="new-features"></a>Новые функции  
 
 -   Значительно повышена скорость подключения отладчика.  
 
@@ -1014,7 +1025,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="1040"></a>1.0.4.0  
  Выпущено 05.09.2012 г.  
 
-### <a name="new-features"></a>Новые компоненты  
+### <a name="new-features"></a>Новые функции  
 
 -   Автоматическое преобразование отладочных символов в Unity.  
 

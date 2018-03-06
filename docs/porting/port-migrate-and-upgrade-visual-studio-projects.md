@@ -1,7 +1,7 @@
 ---
 title: "Перенос, миграция и обновление проектов Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 02/12/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -23,11 +23,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd23e22024e493256d2ba839998d561e2894a80
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 035bf2c514988dc65fe5182ad4b5371915dd2dce
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Перенос, миграция и обновление проектов Visual Studio
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 02/15/2018
 | Silverlight | Проекты Silverlight не поддерживаются в Visual Studio 2017. Для поддержки приложений Silverlight продолжайте использовать Visual Studio 2015. |
 | Службы SQL Server Reporting Services и службы SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | Поддержка этих типов проектов обеспечивается двумя расширениями из коллекции Visual Studio: [Проекты моделирования Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) и [Проекты Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Поддержка SSDT также включена в рабочую нагрузку хранения и обработки данных в Visual Studio 2017. |
 | Службы интеграции SQL Server (SSIS) | Поддержка Visual Studio 2017 доступна в рамках SQL Server Data Tools (SSDT). Дополнительные сведения см. в [блоге SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
-| Visual C++ | Проекты и решения, созданные в Visual Studio 2015, можно открывать с помощью Visual Studio 2017. Для работы в Visual Studio 2017 проекты, созданные в боле ранних версиях Visual Studio, могут требовать обновления или использования более нового набора инструментов. Дополнительные сведения см. в статье [Руководство по переносу и обновлению Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide). |
+| Visual C++ | Visual Studio 2017 можно использовать для работы в проектах, которые созданы в более ранних версиях Visual Studio (до Visual Studio 2010). При первом открытии проекта вы можете выполнить обновление до последней версии компилятора и набора инструментов или продолжить использование исходную версию. В этом случае Visual Studio 2017 не будет вносить изменения в файл проекта, используя набор инструментов из более ранней установки Visual Studio для сборки проекта. Это означает, что при необходимости вы по-прежнему можете открывать проект в исходной версии Visual Studio. Дополнительные сведения см. в разделе [Использование собственного многоплатформенного нацеливания в Visual Studio для сборки старых проектов](/cpp/porting/use-native-multi-targeting). |
 | Расширяемость Visual Studio/VSIX | Проекты с минимальной версией 14.0 или меньше обновляются до минимальной версии 15.0, что не позволяет открывать проекты в более ранних версиях Visual Studio. Чтобы открыть проект в более ранних версиях, задайте `$(VisualStudioVersion)` в качестве значения минимальной версии. См. также [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Microsoft Test Manager или Visual Studio 2010 с пакетом обновления 1 (SP1) можно использовать для открытия сред, которые были созданы в какой-либо из этих версий. Но версия Microsoft Test Manager должна соответствовать версии Visual Studio 2010 с пакетом обновления 1 (SP1), чтобы можно было создавать среды. |
 | Средства Visual Studio для Apache Cordova | Проекты можно открывать в Visual Studio 2017, но они не являются обратно совместимыми. После открытия проекта в Visual Studio 2015 предлагается разрешить внесение изменений в проект. Это позволит обновить проект, чтобы вместо файла `taco.json` использовать набор инструментов для управления версиями библиотеки Cordova, платформами и подключаемыми модулями, а также зависимостями узлов или npm. Дополнительные сведения см. в [руководстве по миграции](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015). |
