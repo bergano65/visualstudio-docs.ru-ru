@@ -188,6 +188,7 @@
 ## [Практическое руководство. Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
 ## [Практическое руководство. Использование контекста пользовательского интерфейса на основе правил для расширений Visual Studio](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Практическое руководство. Диагностика производительности расширения](how-to-diagnose-extension-performance.md)
+## [Практическое руководство: диагностика задержек в пользовательском интерфейсе, связанных с расширениями](how-to-diagnose-ui-delays-caused-by-extensions.md)
 ## [Устранение неполадок, связанных с пакетами VSPackage](troubleshooting-vspackages.md)
 # [Оболочка (изолированная или интегрированная)](https://vspartner.com/pages/vsshells)
 # [Доставка расширений Visual Studio](shipping-visual-studio-extensions.md)

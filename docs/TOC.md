@@ -33,6 +33,8 @@
 #### [Управление обновлением развертываний Visual Studio](install/controlling-updates-to-visual-studio-deployments.md)
 ### Управление установками
 #### [Средства для обнаружения экземпляров Visual Studio и управления ими](install/tools-for-managing-visual-studio-instances.md)
+### Управление подписками
+#### [Подписки Visual Studio: общие сведения для администратора](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Руководство администратора Help Viewer](ide/help-viewer-administrator-guide.md)
 #### [Аргументы командной строки для диспетчера содержимого справки](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Переопределение диспетчера содержимого справки](ide/help-content-manager-overrides.md)
@@ -46,7 +48,7 @@
 # Краткие руководства
 ## [Ориентация Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Проекты и решения](ide/quickstart-projects-solutions.md)
-## [Написание кода в редакторе](ide/quickstart-editor.md)
+## [Использование редактора](ide/quickstart-editor.md)
 ## [Выбор цвета темы и текста для персонализации](ide/quickstart-personalize-the-ide.md)
 ## [Создание консольного приложения на C++](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Создание веб-приложения на Python](ide/quickstart-python.md)
@@ -98,7 +100,7 @@
 #### [Поддержка 64-разрядных сред IDE Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Разработка без проектов и решений ("Открытая папка")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Настройка сборки и отладка задач](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Написание кода в редакторе](ide/writing-code-in-the-code-and-text-editor.md)
+### [Использование редактора](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Поиск и замена текста](ide/finding-and-replacing-text.md)
 ##### [Использование регулярных выражений](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Поле "Поиск/команда"](ide/find-command-box.md)
