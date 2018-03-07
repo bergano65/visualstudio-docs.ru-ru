@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 997220d3b1a7305f84f61ee5fd4c205d1157f1b2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a100cd5dfef6dcb36f6ce845000db31d82173a2d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Введение локальной переменной в Visual Studio
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/09/2018
 1. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
-     - Нажмите клавиши **CTRL + .**, чтобы открыть меню **Быстрые действия и рефакторинг**.
+     - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
      - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) который отображается в поле слева, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
@@ -73,5 +73,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>См. также
 
-[Создание кода](../code-generation-in-visual-studio.md)  
-[Просмотр изменений](../../ide/preview-changes.md)
+- [Создание кода](../code-generation-in-visual-studio.md)
+- [Просмотр изменений](../../ide/preview-changes.md)

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8de048928286017d4e6f79bda6aff804b49d3150
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4e5da77f3053aabc2e8e4813c8ef5e7fb3407b5f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Создание поля, свойства или локальной переменной в Visual Studio
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 02/09/2018
 1. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
-     - Нажмите клавиши **CTRL + .**, чтобы открыть меню **Быстрые действия и рефакторинг**.
+     - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
      - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) .
@@ -72,5 +72,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>См. также
 
-[Создание кода](../code-generation-in-visual-studio.md)  
-[Просмотр изменений](../../ide/preview-changes.md)
+- [Создание кода](../code-generation-in-visual-studio.md)
+- [Просмотр изменений](../../ide/preview-changes.md)
