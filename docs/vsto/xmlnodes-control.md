@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a3759070d406e721a12e01950e0e99cea40d1fc
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -33,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  После Visual Studio создает коллекцию XML-узлов, элемент управления можно программировать непосредственно, не обращаясь к объектной модели Word. <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления можно удалить только путем удаления сопоставления элементов из документа.  
   
 > [!NOTE]  
->  При доступе к дочернему элементу <xref:Microsoft.Office.Tools.Word.XMLNodes> управление с помощью <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> свойство возвращает <xref:Microsoft.Office.Interop.Word.XMLNode> объекта, а не <xref:Microsoft.Office.Tools.Word.XMLNode> элемента управления. Для получения дополнительной информации см. [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  При доступе к дочернему элементу <xref:Microsoft.Office.Tools.Word.XMLNodes> управление с помощью <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> свойство возвращает <xref:Microsoft.Office.Interop.Word.XMLNode> объекта, а не <xref:Microsoft.Office.Tools.Word.XMLNode> элемента управления. Для получения дополнительной информации см. [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ## <a name="binding-data-to-the-control"></a>Привязка данных к элементу управления  
  <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления не поддерживает привязку данных. Это вызвано <xref:Microsoft.Office.Tools.Word.XMLNodes> управления не имеет возможности привязки к сложным данным, а также простая привязка данных невозможно представить повторяющиеся данные.  

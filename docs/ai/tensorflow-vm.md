@@ -9,17 +9,18 @@ ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 424072fd91672921c470dbc16e1a9287b1cc575a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Обучение модели TensorFlow в облаке
 
-В этом учебнике мы обучим модель TensorFlow с помощью [набора данных MNIST](http://yann.lecun.com/exdb/mnist/) в виртуальной машине Azure для [глубинного обучения](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview). 
+В этом учебнике мы обучим модель TensorFlow с помощью [набора данных MNIST](http://yann.lecun.com/exdb/mnist/) в виртуальной машине Azure для [глубинного обучения](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview).
 
 База данных MNIST содержит обучающий набор из 60 000 примеров и тестовый набор из 10 000 примеров рукописных цифр.
 
@@ -28,10 +29,10 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Настройка виртуальной машины Azure для глубинного обучения
 
-> [!NOTE] 
+> [!NOTE]
 > В качестве **типа ОС** выберите Linux.
 
-Инструкции по настройке виртуальной машины для глубинного обучения можно найти [здесь](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). 
+Инструкции по настройке виртуальной машины для глубинного обучения можно найти [здесь](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Удаление комментария в скобках
 
@@ -41,13 +42,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Скачивание образца кода
 
-Скачайте [репозиторий GitHub](https://github.com/Microsoft/samples-for-ai), содержащий образцы для начала работы с глубинным обучением на основе TensorFlow, CNTK, Theano и других библиотек. 
+Скачайте [репозиторий GitHub](https://github.com/Microsoft/samples-for-ai), содержащий образцы для начала работы с глубинным обучением на основе TensorFlow, CNTK, Theano и других библиотек.
 
 ## <a name="open-project"></a>Открытие проекта
 
 - Запустите Visual Studio и выберите **Файл > Открыть > Решение или проект**.
 
-- В скачанном репозитории с образцами выберите папку **Tensorflow Examples** и откройте файл **TensorflowExamples.sln**. 
+- В скачанном репозитории с образцами выберите папку **Tensorflow Examples** и откройте файл **TensorflowExamples.sln**.
 
 ![Открытие проекта](media\tensorflow-local\open-project.png)
 
@@ -55,7 +56,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ## <a name="add-azure-remote-vm"></a>Добавление удаленной виртуальной машины Azure
 
-В обозревателе сервера щелкните правой кнопкой мыши узел **Удаленные компьютеры** в узле "Средства ИИ" и выберите пункт "Добавить…". Введите отображаемое имя удаленного компьютера, IP-узел, порт SSH, имя пользователя и пароль или файл ключа. 
+В обозревателе сервера щелкните правой кнопкой мыши узел **Удаленные компьютеры** в узле "Средства ИИ" и выберите пункт "Добавить…". Введите отображаемое имя удаленного компьютера, IP-узел, порт SSH, имя пользователя и пароль или файл ключа.
 
 ![Добавление нового удаленного компьютера](media\tensorflow-vm\add-remote-vm.png)
 
@@ -68,11 +69,11 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 - В списке **Используемый кластер** выберите удаленный компьютер (с префиксом "rm:"), куда нужно отправить задание.
 
-- Введите **имя задания**. 
+- Введите **имя задания**.
 
-- Нажмите кнопку **Отправить**. 
+- Нажмите кнопку **Отправить**.
 
-## <a name="check-status-of-job"></a>Проверка состояния задания 
+## <a name="check-status-of-job"></a>Проверка состояния задания
 Для просмотра состояния задания и сведений о нем разверните узел виртуальной машины, куда было отправлено задание, в **обозревателе сервера**. Дважды щелкните элемент **Задания**.
 
 ![Браузер заданий](media\tensorflow-vm\job-browser.png)

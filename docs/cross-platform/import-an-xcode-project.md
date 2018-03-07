@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
-caps.latest.revision: "7"
+ms.technology: vs-ide-mobile
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 9de84c4330bb87ad13b865bda39f9ecafab4debd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 339c634277d6f53a54bcb428f80ae21b82d76797
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="import-an-xcode-project"></a>Импорт проекта XCode
 Microsoft Visual C++ для разработки кроссплатформенных мобильных приложений позволяет переносить в Visual Studio проекты XCode. После переноса проекта вы сможете создать кроссплатформенные библиотеки и совместно использовать код в нескольких проектах. Мастер импорта из XCode упрощает процесс импорта проектов и отделение кода C++ в целевых объектах XCode для использования в качестве статической библиотеки или проекта общего кода. Вы можете управлять своим кодом, связанным с iOS, в Visual Studio и по-прежнему использовать XCode для раскадровки и сборки проекта. Сведения о том, как легко переместить код между Visual Studio и XCode см. в разделе "Перенос изменений в коде между XCode и Visual Studio".  

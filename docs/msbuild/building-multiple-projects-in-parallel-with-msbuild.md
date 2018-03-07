@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da2af4fd9ed552ad9e0232acfb6a7567718b5c6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 15f34d6e512da839166b9c8bb9165a6cefbc9598
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Параллельное построение нескольких проектов с помощью MSBuild
 С помощью MSBuild вы можете ускорить сборку нескольких проектов, выполняя ее параллельно. Для параллельного выполнения сборки используйте следующие параметры на компьютере с несколькими процессорами или многоядерным процессором:  
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/09/2018
  Следующий пример сообщает MSBuild, что нужно использовать три рабочих процесса. С этой конфигурацией MSBuild сможет одновременно выполнять сборку трех проектов.  
   
 ```  
-msbuild.exe myproj.proj /maxcpucount:3  
+msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>Параметр задачи BuildInParallel  
