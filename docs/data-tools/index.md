@@ -5,12 +5,14 @@ ms.author: gewarren
 title: "Разработка решений по обработке данных с использованием средств для работы с данными в Visual Studio | Документация Майкрософт"
 description: "Сведения о средствах для решений по работе с данными в Visual Studio."
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 74a4d787439f8a615f7f9937438e19179630b9f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.topic: landing-page
+ms.workload:
+- data-storage
+ms.openlocfilehash: a3b0473237595dee29de024c7cbc04b6db82c93a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Использование средств для работы с данными в Visual Studio для разработки решений по обработке данных
 
