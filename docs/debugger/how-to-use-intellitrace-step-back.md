@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Шаг назад моментальные снимки представления с помощью IntelliTrace в Visual Studio
 
@@ -107,5 +107,7 @@ IntelliTrace в режиме только для событий позволяю
 
     Решение
     * Завершение сеанса отладки, чтобы удалить все моментальные снимки. 
+
+* При отладке приложения, процесс имеет большое количество областей уникальный памяти, например приложение, которое загружает большое количество библиотек DLL, могут повлиять пошаговое выполнение производительности с помощью моментальных снимков включена. Эта проблема будет устранена в будущих версиях Windows. При возникновении этой проблемы доступа к нам по адресу stepback@microsoft.com. 
 
 * При сохранении файла с **Отладка > IntelliTrace > сеанса IntelliTrace Сохранить** в режиме события и моментальные снимки, дополнительные данные, полученные моментальные снимки недоступна в ITRACE-файл. Для точки останова и пошагово событий увидеть ту же информацию как если бы сохранен файл в режиме только для событий IntelliTrace. 
