@@ -1,51 +1,47 @@
 ---
 title: "Конструктор действия FlowDecision | Документы Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-caps.latest.revision: 
-author: ErikRe
-ms.author: erikre
-manager: erikre
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3fd48f33e5499f7a67aed02c7b732ebe6b3b7b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b533bf037340fab0c70dfc5ca9e40c4443c9867
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="flowdecision-activity-designer"></a>Конструктор действия FlowDecision
-Узел <xref:System.Activities.Statements.FlowDecision> - это специализированный узел, который обеспечивает ветвление для передачи управления одной из двух альтернатив в зависимости от указанного условия. Если ветвление требует наличие более двух ветвей, следует вместо этого метода использовать <xref:System.Activities.Statements.FlowSwitch%601>.  
-  
-## <a name="the-flowdecision-node"></a>Узел The FlowDecision  
- Используйте <xref:System.Activities.Statements.FlowDecision>, когда поток можно разветвить на два пути. Узел <xref:System.Activities.Statements.FlowDecision> обладает <xref:System.Activities.Statements.FlowDecision.Condition%2A> и <xref:System.Activities.Statements.FlowNode>, связанными с двумя возможными значениями: <xref:System.Activities.Statements.FlowDecision.True%2A> или <xref:System.Activities.Statements.FlowDecision.False%2A>. Выполняется оценка <xref:System.Activities.Statements.FlowDecision.Condition%2A>, причем значение этой оценки определяет следующее <xref:System.Activities.Statements.FlowNode>, которое будет обработано внутри <xref:System.Activities.Statements.Flowchart>.  
-  
-### <a name="using-the-flowdecision-designer"></a>Использование конструктора FlowDecision  
- **FlowDecision** можно найти в **блок-схема** категории **элементов**, который нажав **элементов** на вкладке [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)  
-  
- **FlowDecision** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] внутри конструктора **блок-схема** конструктора действий. При этом создается <xref:System.Activities.Statements.FlowDecision> с меткой **решение** в <xref:System.Activities.Statements.Flowchart> действия. Указатель мыши над областью конструктора и **True** и **False** появятся квадратные маркеры две ветви.  
-  
- После перетаскивания **FlowDecision** конструктор и других конструкторов в **блок-схема**, узлы можно соединить друг с другом, чтобы указать порядок выполнения. Чтобы создать связь между исходным узлом (включая **True** и **False** ответвления **FlowDecision**) и узел назначения, наведите указатель на конструктор исходного узла и на каждой его стороне появятся квадратные маркеры. Щелкните один из них и перетащите его, удерживая кнопку мыши, к одному из маркеров, которые похожим образом появляются на целевом узле при наведении мыши. Отпустите кнопку мыши для создания ссылки между этими двумя узлами, что отмечено стрелкой от исходного к целевому конструктору.  
-  
- Выражение, указывающее <xref:System.Activities.Statements.FlowDecision.Condition%2A> можно ввести в **условие** поле **свойства** окно, нажав кнопку, где написано «Введите выражение VB».  
-  
-### <a name="the-flowdecision-properties"></a>Свойства FlowDecision  
- В следующей таблице показаны свойства <xref:System.Activities.Statements.FlowDecision> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или в области конструктора.  
-  
-|Имя свойства|Обязательно|Использование|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Условие, которое определяет, какой из путей будет использован потоком данных.|  
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Путь, предпринятый при удовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|  
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Путь, предпринятый при неудовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|  
-  
-## <a name="see-also"></a>См. также  
- [Блок-схемы](../workflow-designer/flowchart-activity-designers.md)   
- [Блок-схемы](../workflow-designer/flowchart-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+Узел <xref:System.Activities.Statements.FlowDecision> - это специализированный узел, который обеспечивает ветвление для передачи управления одной из двух альтернатив в зависимости от указанного условия. Если ветвление требует наличие более двух ветвей, следует вместо этого метода использовать <xref:System.Activities.Statements.FlowSwitch%601>.
+
+## <a name="the-flowdecision-node"></a>Узел The FlowDecision
+ Используйте <xref:System.Activities.Statements.FlowDecision>, когда поток можно разветвить на два пути. Узел <xref:System.Activities.Statements.FlowDecision> обладает <xref:System.Activities.Statements.FlowDecision.Condition%2A> и <xref:System.Activities.Statements.FlowNode>, связанными с двумя возможными значениями: <xref:System.Activities.Statements.FlowDecision.True%2A> или <xref:System.Activities.Statements.FlowDecision.False%2A>. Выполняется оценка <xref:System.Activities.Statements.FlowDecision.Condition%2A>, причем значение этой оценки определяет следующее <xref:System.Activities.Statements.FlowNode>, которое будет обработано внутри <xref:System.Activities.Statements.Flowchart>.
+
+### <a name="using-the-flowdecision-designer"></a>Использование конструктора FlowDecision
+ **FlowDecision** можно найти в **блок-схема** категории **элементов**, который нажав **элементов** на вкладке [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+
+ **FlowDecision** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] внутри конструктора **блок-схема** конструктора действий. При этом создается <xref:System.Activities.Statements.FlowDecision> с меткой **решение** в <xref:System.Activities.Statements.Flowchart> действия. Указатель мыши над областью конструктора и **True** и **False** появятся квадратные маркеры две ветви.
+
+ После перетаскивания **FlowDecision** конструктор и других конструкторов в **блок-схема**, узлы можно соединить друг с другом, чтобы указать порядок выполнения. Чтобы создать связь между исходным узлом (включая **True** и **False** ответвления **FlowDecision**) и узел назначения, наведите указатель на конструктор исходного узла и на каждой его стороне появятся квадратные маркеры. Щелкните один из них и перетащите его, удерживая кнопку мыши, к одному из маркеров, которые похожим образом появляются на целевом узле при наведении мыши. Отпустите кнопку мыши для создания ссылки между этими двумя узлами, что отмечено стрелкой от исходного к целевому конструктору.
+
+ Выражение, указывающее <xref:System.Activities.Statements.FlowDecision.Condition%2A> можно ввести в **условие** поле **свойства** окно, нажав кнопку, где написано «Введите выражение VB».
+
+### <a name="the-flowdecision-properties"></a>Свойства FlowDecision
+ В следующей таблице показаны свойства <xref:System.Activities.Statements.FlowDecision> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или в области конструктора.
+
+|Имя свойства|Обязательно|Использование|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Условие, которое определяет, какой из путей будет использован потоком данных.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Путь, предпринятый при удовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Путь, предпринятый при неудовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+
+## <a name="see-also"></a>См. также
+
+- [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
+- [Блок-схема](../workflow-designer/flowchart-activity-designer.md)
+- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)

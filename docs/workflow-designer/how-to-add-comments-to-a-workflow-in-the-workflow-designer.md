@@ -1,63 +1,61 @@
 ---
 title: "Как: добавлять комментарии в рабочий процесс в конструкторе рабочих процессов | Документы Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
-caps.latest.revision: "7"
-ms.author: sdanie
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 0a508fe657be8e2a12c54bc7ae1a46f338273cd9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: eb7825f79ee54b02d764e4ad8754ee1382b5d41f
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Как добавлять комментарии в рабочий процесс в конструкторе рабочих процессов
-Чтобы упростить создание более сложных рабочих процессов большего размера, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] дает разработчикам возможность добавлять заметки к следующим типам элементов в конструкторе.  
-  
--   <xref:System.Activities.Activity>  
-  
--   <xref:System.Activities.Statements.State>  
-  
--   <xref:System.Activities.Statements.Transition>  
-  
--   Классы, производные от <xref:System.Activities.Statements.FlowNode>.  
-  
--   <xref:System.Activities.Variable>  
-  
--   <xref:System.Activities.Argument>  
-  
+
+Чтобы упростить создание более сложных рабочих процессов большего размера, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] дает разработчикам возможность добавлять заметки к следующим типам элементов в конструкторе.
+
+-   <xref:System.Activities.Activity>
+
+-   <xref:System.Activities.Statements.State>
+
+-   <xref:System.Activities.Statements.Transition>
+
+-   Классы, производные от <xref:System.Activities.Statements.FlowNode>.
+
+-   <xref:System.Activities.Variable>
+
+-   <xref:System.Activities.Argument>
+
 > [!IMPORTANT]
->  Содержимое заметки сохраняется в виде обычного текста в файле XAML, связанном с рабочим процессом, и потенциально может быть прочитано другими. Избегайте добавлять в заметку конфиденциальные сведения.  
-  
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Добавление заметки к действию в конструкторе  
-  
-1. В конструкторе рабочих процессов щелкните правой кнопкой мыши элемент в конструктор рабочих процессов и выберите **заметки**, **добавить заметку**.  
-  
-1. Добавьте текст заметки в предоставленное для этого место.  
-  
+> Содержимое заметки сохраняется в виде обычного текста в файле XAML, связанном с рабочим процессом, и потенциально может быть прочитано другими. Избегайте добавлять в заметку конфиденциальные сведения.
+
+### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Добавление заметки к действию в конструкторе
+
+1. В конструкторе рабочих процессов щелкните правой кнопкой мыши элемент в конструктор рабочих процессов и выберите **заметки**, **добавить заметку**.
+
+1. Добавьте текст заметки в предоставленное для этого место.
+
    Элемент показывает значок заметки. Если навести курсор мыши на значок заметки отображает текст заметки.
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Отображение заметки в конструкторе действия  
-  
-1.  В конструкторе действия с заметкой, отображаемой за пределами действия, нажмите **ПИН-код** значок в декоративном элементе заметки.  
-  
-   Заметка отображается в конструкторе действия. На снимке экрана ниже заметка «Запуск действия в рабочем процессе» отображается в конструкторе действия.  
-  
-   ![Примечание, отображаемое в конструкторе действий](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
-  
-1. Для отображения заметки за пределами конструктора действий, наведите указатель мыши на область заметки в конструкторе действия и нажмите кнопку **открепить** значок  
-  
-   ![Примечание, отображаемое за пределами конструктора действий](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
-  
+### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Отображение заметки в конструкторе действия
+
+1.  В конструкторе действия с заметкой, отображаемой за пределами действия, нажмите **ПИН-код** значок в декоративном элементе заметки.
+
+   Заметка отображается в конструкторе действия. На снимке экрана ниже заметка «Запуск действия в рабочем процессе» отображается в конструкторе действия.
+
+   ![Примечание, отображаемое в конструкторе действий](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+
+1. Для отображения заметки за пределами конструктора действий, наведите указатель мыши на область заметки в конструкторе действия и нажмите кнопку **открепить** значок
+
+   ![Примечание, отображаемое за пределами конструктора действий](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+
 ### <a name="showing-or-hiding-all-annotations"></a>Отображение или скрытие всех заметок
 
 1. Щелкните правой кнопкой мыши действие, которое имеет заметку. Выберите **заметки**, **Показать все заметки**.
