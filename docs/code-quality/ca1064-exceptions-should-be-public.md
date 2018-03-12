@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - ExceptionsShouldBePublic
 - CA1064
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7779be831b32572addb6198b5a5be46616cdb1b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b376de69c288a084ff3bb33aba1e1b8a0bc881e5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: исключения должны быть открытыми
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Описание правила  
  Внутреннее исключение видна только внутри своей внутренней области. После выхода исключения за пределы внутренней области для перехвата исключения можно использовать только базовое исключение. Если внутренне исключение унаследовано от <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>, внешний код не имеет достаточных сведений, чтобы знать, что делать с исключением.  
   
- Но если код содержит открытый исключение, которое затем используется как базовое значение для внутреннего исключения, резонно предположить, что код Далее out сможет правильно обработать базовое исключение. Открытые исключение будет содержать больше сведений, чем то, что обеспечивается T:System.Exception, T:System.SystemException или T:System.ApplicationException.  
+ Но если код содержит открытый исключение, которое затем используется как базовое значение для внутреннего исключения, резонно предположить, что код Далее out сможет правильно обработать базовое исключение. Открытые исключение будет содержать больше сведений, чем то, что обеспечивается <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>.  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Сделать общедоступными исключение или извлечь внутреннего исключения из открытых исключение, которое не является <xref:System.Exception>, <xref:System.SystemException>, или <xref:System.ApplicationException>.  
