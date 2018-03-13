@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  Чтобы решить, какой из этих типов проектов наилучшим образом подходит для вашего решения, определите, должен ли ваш код выполняться только в том случае, если открыт конкретный документ, или код должен быть доступен всегда, когда работает приложение. Дополнительные сведения о шаблонах проектов см. в разделе [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md).  
   
- Типы проектов, которые можно создавать, зависят от того, какие приложения Office установлены на компьютере разработчика. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ Типы проектов, которые можно создавать, зависят от того, какие приложения Office установлены на компьютере разработчика. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>Настройки уровня документа  
  Настройки на уровне документа состоят из сборки, которая связана с одиночным документом, книгой или шаблоном в Microsoft Office Word или Microsoft Office Excel. Сборка загружается при открытии связанного документа. Возможности создаваемых настроек доступны только в том случае, если связанный документ открыт. Настройки не могут вносить изменения на уровне приложения, например, отображать новый пункт меню или вкладку на ленте, если открыт любой документ.  
