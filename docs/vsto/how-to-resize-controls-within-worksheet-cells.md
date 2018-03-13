@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  При добавлении элементов управления во время разработки, необходимо задать параметры расположения для каждого элемента управления.  
   
- Если добавить элемент управления Windows Forms программными средствами и указать аргумент диапазона, элемент управления автоматически изменяет размер при изменении размера ячейки диапазона. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Если добавить элемент управления Windows Forms программными средствами и указать аргумент диапазона, элемент управления автоматически изменяет размер при изменении размера ячейки диапазона. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="resizing-controls-at-design-time"></a>Изменение размеров элементов управления во время разработки  
   

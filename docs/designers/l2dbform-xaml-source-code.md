@@ -4,15 +4,17 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-designers
+ms.technology:
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b815904a7ac2b8a050cd4b907698c43a91d929dc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
@@ -20,7 +22,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>Исходный код L2DBForm.xaml
-Этот раздел содержит и описывает исходный XAML-файл для [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
+Этот раздел содержит и описывает исходный XAML-файл для [Привязка данных WPF с использованием примера LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
   
 ## <a name="overall-ui-structure"></a>Общая структура интерфейса  
  Что является типичным для проекта WPF, данный файл содержит один родительский элемент, XML-элемент <xref:System.Windows.Window> , связанный с производным классом `L2XDBFrom` в пространстве имен `LinqToXmlDataBinding` .  

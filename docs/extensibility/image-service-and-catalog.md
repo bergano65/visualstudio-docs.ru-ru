@@ -7,11 +7,12 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -512,7 +513,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
   
- **IconMappingFilename** относительный путь неявно выходящую $PackageFolder$ (как показано в примере выше) или абсолютный путь явно корнем в каталог, определенный параметром переменной среды, например @"%UserProfile%\ dir1\dir2\MyMappingFile.csv».  
+ **IconMappingFilename** относительный путь неявно выходящую $PackageFolder$ (как показано в примере выше) или абсолютный путь явно корнем в каталог, определенный параметром переменной среды, например @"%UserProfile%\dir1\dir2\MyMappingFile.csv".  
   
 ## <a name="how-do-i-port-a-project-system"></a>Как перенести систему проектов?  
  **Как предоставить ImageMonikers для проекта**  

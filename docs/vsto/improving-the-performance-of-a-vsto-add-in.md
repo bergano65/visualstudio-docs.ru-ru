@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,7 +14,8 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -98,7 +100,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Этот подход не является обязательным в том случае, при развертывании надстройки VSTO в защищенной папке на компьютерах пользователей.  
   
- Для получения дополнительной информации см. [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Для получения дополнительной информации см. [Развертывание решения Office с помощью установщика Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
 ##  <a name="Bypass"></a> Bypass Ribbon Reflection  
  При создании решения с помощью [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]убедитесь, что ваши пользователи установили самую последнюю версию среды выполнения набора средств Visual Studio 2010 для Office, когда вы развертываете решение. Более старые версии среды выполнения выполняют отражение в сборки решения для поиска настроек ленты. Этот процесс может привести к замедлению загрузки надстройки VSTO.  
