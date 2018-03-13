@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc4946c79b16b3fb28e0991ff38cfe96e22a9e1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: bb2e7a3dcd800367ab54945cb0c406ce7afcf45a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Обзор интегрированной среды разработки Visual Studio
 
@@ -190,7 +190,7 @@ Visual Studio предлагает набор инструментов, позв
 
  ![Рефакторинг](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** — это общий термин для набора очень популярных функций, отображающих сведения о типах в коде непосредственно в редакторе и в некоторых случаях автоматически создающих небольшие отрывки кода. По сути, IntelliSense представляет собой базовую документацию, встроенную в редактор, что избавляет от необходимости поиска информации о типах в отдельном окне справки. Функции IntelliSense зависят от языка. Дополнительные сведения см. в руководствах по [C# IntelliSense](../ide/visual-csharp-intellisense.md), [IntelliSense для Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense для JavaScript](../ide/javascript-intellisense.md) и [IntelliSense для файлов кода Visual Basic](../ide/visual-basic-specific-intellisense.md). На следующем рисунке показаны некоторые функции IntelliSense в действии.
+- **IntelliSense** — это общий термин для набора очень популярных функций, отображающих сведения о типах в коде непосредственно в редакторе и в некоторых случаях автоматически создающих небольшие отрывки кода. По сути, IntelliSense представляет собой базовую документацию, встроенную в редактор, что избавляет от необходимости поиска информации о типах в отдельном окне справки. Функции IntelliSense зависят от языка. Дополнительные сведения см. в руководствах по [IntelliSense для C# ](../ide/visual-csharp-intellisense.md), [IntelliSense для Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense для JavaScript](../ide/javascript-intellisense.md) и [IntelliSense для Visual Basic](../ide/visual-basic-specific-intellisense.md). На следующем рисунке показаны некоторые функции IntelliSense в действии.
 
   ![Список элементов Visual Studio](../ide/media/vs2017_Intellisense.png)
 

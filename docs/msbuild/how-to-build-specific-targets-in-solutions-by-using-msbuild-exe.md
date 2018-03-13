@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ec27d619b64353bf0cbac6a8b92c582ef5a590
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4437c8030f66ae24d94a83d796c0d0edf7e59c79
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Практическое руководство. Построение особых целей в решениях с помощью MSBuild.exe
 Можно использовать MSBuild.exe для создания конкретных целевых объектов определенных проектов в решении.  
@@ -31,15 +31,21 @@ ms.lasthandoff: 02/09/2018
   
 1.  В командной строке введите `MSBuild.exe <SolutionName>.sln`, где `<SolutionName>` соответствует имени файла решения, содержащего целевой объект, который требуется выполнить.  
   
-2.  Укажите целевой объект после параметра **/t** в формате *имя_проекта*:*имя_целевого_объекта*.  
+2. Укажите целевой объект после параметра `/target:` в формате **`ProjectName`**`:`**`TargetName`**. Если в имени проекта содержатся символы `%`, `$`, `@`, `;`, `.`, `(`, `)` или `'`, замените их на `_` в указанном имени целевого объекта.
   
 ## <a name="example"></a>Пример  
  В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения `NewFolder`.  
   
-```  
-msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
-```  
-  
+```
+msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean`
+```
+
+## <a name="troubleshooting"></a>Устранение неполадок
+
+Если вы хотите изучить доступные возможности, воспользуйтесь параметром отладки, предоставляемым MSBuild. Задайте переменную среды `MSBUILDEMITSOLUTION=1` и выполните сборку решения. Будет создан файл MSBuild с именем `<SolutionName>.sln.metaproj` и отображением внутреннего представления решения во время построения. Просмотрите это представление, чтобы определить, какие целевые объекты доступны для сборки.
+
+Не выполняйте сборку с этой заданной переменной среды, пока вам не потребуется этом внутреннее представление. Этот параметр может вызвать проблемы сборки в решении.
+
 ## <a name="see-also"></a>См. также  
  [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   

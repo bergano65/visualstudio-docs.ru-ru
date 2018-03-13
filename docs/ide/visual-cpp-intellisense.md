@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0a00fb9fa52bcba39f4648fc3ffb9800890ac30
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3d375ebccd96f6b8e987bd74f229abd70bfa9ab6
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="visual-c-intellisense"></a>IntelliSense для Visual C++
+# <a name="visual-c-intellisense"></a>IntelliSense для Visual C++
 
 Технология IntelliSense для C++ доступна для автономных файлов, а также для файлов, являющихся частью проекта C++. В кроссплатформенных проектах некоторые возможности IntelliSense доступны в файлах CPP и C в проекте с общим кодом даже в том случае, если вы находитесь в контексте Android или iOS.
 

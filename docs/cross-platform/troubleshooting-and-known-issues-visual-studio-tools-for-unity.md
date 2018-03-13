@@ -4,26 +4,26 @@ ms.custom:
 ms.date: 10/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-unity-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
-caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.workload: unity
-ms.openlocfilehash: 7ede7734ec2a8c261cce3f31e06e77f932edd326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- unity
+ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
-В этом разделе рассмотрены решения по устранению проблем, типичных для набора средств Visual Studio для Unity, приведено описание известных проблем и показано, как улучшить функционирование набора средств Visual Studio для Unity с помощью отчетов об ошибках.  
+В этом разделе рассмотрены решения по устранению проблем, типичных для набора средств Visual Studio для Unity, приведено описание известных проблем и показано, как улучшить функционирование набора средств Visual Studio для Unity с помощью отчетов об ошибках.
 
-## <a name="troubleshooting"></a>Устранение неполадок  
-Сведения об устранении некоторых типичных проблем, характерных для набора средств Visual Studio для Unity, см. в следующих разделах.  
+## <a name="troubleshooting"></a>Устранение неполадок
+Сведения об устранении некоторых типичных проблем, характерных для набора средств Visual Studio для Unity, см. в следующих разделах.
 
 ### <a name="visual-studio-crashes"></a>Сбои Visual Studio
 Это может быть вызвано повреждением кэша MEF в Visual Studio.
@@ -40,7 +40,7 @@ ms.lasthandoff: 12/22/2017
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Проблемы с Visual Studio 2015 и Intellisense или с раскраской кода
+### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Проблемы с Visual Studio 2015 и IntelliSense или с раскраской кода.
 Попробуйте установить для Visual Studio 2015 обновление 3.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio перестает отвечать на запросы
@@ -74,90 +74,90 @@ USB-порт обеспечивает достаточную скорость д
 
 Вы можете попробовать предпринять следующие меры при связи через USB, чтобы узнать открытые порты на подключенном устройстве (при этом проигрыватель должен работать, чтобы вы могли увидеть порт отладки, который всегда имеет форму 56xxx):
 
-```shell  
+```shell
 adb shell netstat
-```  
+```
 
 Перенаправьте порт на локальный ПК:
 
-```shell  
+```shell
 adb forward tcp:56xxx tcp:56xxx
-```  
+```
 
 Подключите VSTU с помощью перенаправленного порта 127.0.0.1:56xxx.
 
-### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Миграция из UnityVS в набор средств Visual Studio для Unity  
- В случае миграции из UnityVS в набор средств Visual Studio для Unity необходимо создать новые решения Visual Studio для ваших проектов Unity.  
+### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Миграция из UnityVS в набор средств Visual Studio для Unity
+ В случае миграции из UnityVS в набор средств Visual Studio для Unity необходимо создать новые решения Visual Studio для ваших проектов Unity.
 
-##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Перенос проекта Unity из UnityVS 1.8 в набор средств Visual Studio для Unity 1.9  
+##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Перенос проекта Unity из UnityVS 1.8 в набор средств Visual Studio для Unity 1.9
 
-1.  Удалите старые файлы решения и проекта из проекта Unity. В корневом каталоге проекта Unity найдите файлы SLN и PROJ (специфические для Visual Studio) и удалите их все.  
+1.  Удалите старые файлы решения и проекта из проекта Unity. В корневом каталоге проекта Unity найдите файлы SLN и PROJ (специфические для Visual Studio) и удалите их все.
 
-2.  Импортируйте пакет набора средств Visual Studio для Unity в свой пакет Unity. Дополнительные сведения о том, как импортировать пакет VSTU, см. в разделе "Настройка набора средств Visual Studio для Unity" на странице [Начало работы](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
+2.  Импортируйте пакет набора средств Visual Studio для Unity в свой пакет Unity. Дополнительные сведения о том, как импортировать пакет VSTU, см. в разделе "Настройка набора средств Visual Studio для Unity" на странице [Начало работы](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .
 
-3.  Создайте новые файлы решения и проекта. Если их нужно создать сейчас, в редакторе Unity в главном меню выберите **Средства Visual Studio**, **Создать файлы проекта**. В противном случае этот шаг можно пропустить. Набор средств Visual Studio для Unity автоматически создаст новые файлы при выборе **Средства Visual Studio**, **Открыть в Visual Studio**.  
+3.  Создайте новые файлы решения и проекта. Если их нужно создать сейчас, в редакторе Unity в главном меню выберите **Средства Visual Studio**, **Создать файлы проекта**. В противном случае этот шаг можно пропустить. Набор средств Visual Studio для Unity автоматически создаст новые файлы при выборе **Средства Visual Studio**, **Открыть в Visual Studio**.
 
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>В ОС Windows система Visual Studio предлагает скачать целевую платформу Unity  
- Инструментам Visual Studio для Unity требуется платформа .NET Framework 3.5, которая не установлена по умолчанию в Windows 8 или Windows 10. Чтобы устранить эту проблему, следуйте инструкциям по загрузке и установке .NET Framework 3.5.  
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>В ОС Windows система Visual Studio предлагает скачать целевую платформу Unity
+ Инструментам Visual Studio для Unity требуется платформа .NET Framework 3.5, которая не установлена по умолчанию в Windows 8 или Windows 10. Чтобы устранить эту проблему, следуйте инструкциям по загрузке и установке .NET Framework 3.5.
 
-## <a name="known-issues"></a>Известные проблемы  
- Применительно к набору средств Visual Studio для Unity существуют известные проблемы, которые возникают вследствие взаимодействия отладчика со старой версией компилятора C# в Unity. Мы работаем над устранением этих проблем, но в то же время могут возникать другие проблемы.  
+## <a name="known-issues"></a>Известные проблемы
+ Применительно к набору средств Visual Studio для Unity существуют известные проблемы, которые возникают вследствие взаимодействия отладчика со старой версией компилятора C# в Unity. Мы работаем над устранением этих проблем, но в то же время могут возникать другие проблемы.
 
--   При отладке Unity иногда аварийно завершает работу.  
+-   При отладке Unity иногда аварийно завершает работу.
 
--   При отладке Unity иногда зависает.  
+-   При отладке Unity иногда зависает.
 
--   Пошаговая отладка с заходом и выходом из методов иногда ведет себя некорректно, особенно в итераторах или внутри инструкций switch.  
+-   Пошаговая отладка с заходом и выходом из методов иногда ведет себя некорректно, особенно в итераторах или внутри инструкций switch.
 
-## <a name="reporting-errors"></a>Ведение отчетов об ошибках  
- Помогите нам улучшить качество набора средств Visual Studio для Unity: отправляйте нам отчеты об ошибках при аварийном выходе, зависании или в случае других ошибок. Эти сведения помогают нам определять причину и устранять проблемы в наборе средств Visual Studio для Unity. Спасибо!  
+## <a name="reporting-errors"></a>Ведение отчетов об ошибках
+ Помогите нам улучшить качество набора средств Visual Studio для Unity: отправляйте нам отчеты об ошибках при аварийном выходе, зависании или в случае других ошибок. Эти сведения помогают нам определять причину и устранять проблемы в наборе средств Visual Studio для Unity. Спасибо!
 
-### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Как сообщить об ошибке в случае зависания Visual Studio  
- Существуют отчеты о том, что иногда Visual Studio  зависает при отладке с помощью набора средств Visual Studio для Unity, но чтобы разобраться в проблеме, нам требуется больше данных. Вы можете помочь нам разобраться с проблемой, если выполните следующие действия.  
+### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Как сообщить об ошибке в случае зависания Visual Studio
+ Существуют отчеты о том, что иногда Visual Studio  зависает при отладке с помощью набора средств Visual Studio для Unity, но чтобы разобраться в проблеме, нам требуется больше данных. Вы можете помочь нам разобраться с проблемой, если выполните следующие действия.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Создание отчета о зависании Visual Studio во время отладки с помощью набора средств Visual Studio для Unity
 
-*В Windows:*  
+*В Windows:*
 
 1.  Откройте новый экземпляр Visual Studio.
 
-2.  Откройте диалоговое окно "Присоединение к процессу". В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Присоединение к процессу**.  
+2.  Откройте диалоговое окно "Присоединение к процессу". В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Присоединение к процессу**.
 
-3.  Присоедините отладчик к замороженному экземпляру Visual Studio. В диалоговом окне **Присоединение к процессу** выберите замороженный экземпляр Visual Studio в таблице **Доступные процессы** , а затем нажмите кнопку **Присоединить** .  
+3.  Присоедините отладчик к замороженному экземпляру Visual Studio. В диалоговом окне **Присоединение к процессу** выберите замороженный экземпляр Visual Studio в таблице **Доступные процессы** , а затем нажмите кнопку **Присоединить** .
 
-4.  Приостановите отладчик. В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Прервать все** или просто нажмите **CTRL+ALT+BREAK**.  
+4.  Приостановите отладчик. В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Прервать все** или просто нажмите **CTRL+ALT+BREAK**.
 
-5.  Создайте дамп потока. В окне командной строки введите следующую команду и нажмите клавишу **ВВОД**:  
+5.  Создайте дамп потока. В окне командной строки введите следующую команду и нажмите клавишу **ВВОД**:
 
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+    ```powershell
+    Debug.ListCallStack /AllThreads /ShowExternalCode
+    ```
 
-    Возможно, сначала будет нужно отобразить окно **Команда** . В Visual Studio в главном меню выберите **Представление**, **Другие окна**, **Командное окно**.  
+    Возможно, сначала будет нужно отобразить окно **Команда** . В Visual Studio в главном меню выберите **Представление**, **Другие окна**, **Командное окно**.
 
 *На Mac:*
 
 1. Откройте терминал и получите идентификатор процесса Visual Studio для Mac:
 
-    ```shell  
+    ```shell
     ps aux | grep "[V]isual Studio.app"
     ```
 
 1. Запустите отладчик lldb.
 
-    ```shell  
+    ```shell
     lldb
     ```
 
 1. Подключитесь к экземпляру Visual Studio для Mac, используя идентификатор процесса:
 
-    ```shell  
+    ```shell
     process attach --pid THE_PID_OF_THE_VSFM_PROCESS
     ```
 
 1. Извлеките трассировку стека для всех потоков:
 
-    ```shell  
+    ```shell
     bt all
     ```
 

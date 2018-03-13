@@ -20,31 +20,31 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>Операторы (JavaScript)
-В [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] имеется полный набор операторов, включая арифметические, логические, битовые операторы, операторы присваивания, а также ряд операторов другого назначения. Их описание и примеры см. в соответствующих разделах.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] располагает полным набором операторов, включая арифметические, логические, битовые операторы, операторы присваивания, а также рядом операторов другого назначения. Их описание и примеры см. в соответствующих разделах.  
   
 ## <a name="computational-operators"></a>Операторы вычислений  
   
-|Описание|Символ|  
+|Описание:|Символ|  
 |-----------------|------------|  
 |[Унарное отрицание](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Инкремент](../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Декремент](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Умножение](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Деление](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Арифметический модуль](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Арифметический остаток](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Сложение](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Вычитание](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
 ## <a name="logical-operators"></a>Логические операторы  
   
-|Описание|Символ|  
+|Описание:|Символ|  
 |-----------------|------------|  
 |[Логическое НЕ](../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Меньше](../javascript/reference/comparison-operators-javascript.md)|\<|  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="bitwise-operators"></a>Побитовые операторы  
   
-|Описание|Символ|  
+|Описание:|Символ|  
 |-----------------|------------|  
 |[Побитовое НЕ](../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
 |[Побитовый сдвиг влево](../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
@@ -74,14 +74,14 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="assignment-operators"></a>Операторы присваивания  
   
-|Описание|Символ|  
+|Описание:|Символ|  
 |-----------------|------------|  
 |[Назначение](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|=|  
 |[Составное присваивание](../javascript/reference/compound-assignment-operators-javascript.md)|*OP*= (например, += и &=)|  
   
 ## <a name="miscellaneous-operators"></a>Прочие операторы  
   
-|Описание|Символ|  
+|Описание:|Символ|  
 |-----------------|------------|  
 |[delete](../javascript/reference/delete-operator-decrementjavascript.md)|удалить|  
 |[typeof](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  
@@ -95,7 +95,7 @@ ms.lasthandoff: 10/27/2017
   
  Простые строки, числа и логические значения сравниваются по значению. Если их значения совпадают, они считаются равными. Объекты (включая `Array`, `Function`, `String`, **Number**, `Boolean`, **Error**, `Date` и `RegExp`) сравниваются по ссылке. Даже если две переменные этих типов имеют одинаковые значения, они равны, только если относятся к одному и тому же объекту.  
   
- Например:  
+ Пример:  
   
 ```JavaScript  
 // Two strings with the same value.  

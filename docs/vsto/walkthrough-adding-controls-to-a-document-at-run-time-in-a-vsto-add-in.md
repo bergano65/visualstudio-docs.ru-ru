@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: dcf309bbfdd608a4ca93809804c51006ce7c2dd7
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -28,7 +30,7 @@ ms.lasthandoff: 01/10/2018
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
   Вы можете добавлять элементы управления в любой открытый документ Microsoft Office Word с помощью надстройки VSTO. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Word.Controls.Button> или <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в документ.  
   
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Word 2010. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Word 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   

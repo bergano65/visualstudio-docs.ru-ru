@@ -22,7 +22,7 @@
 ### [Пошаговое руководство. Создание и запуск модульных тестов для приложений UWP](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
 ### [Вопросы и ответы по обозревателю тестов](test-explorer-faq.md)
 ## [Настройка модульных тестов с помощью файла .runsettings](configure-unit-tests-by-using-a-dot-runsettings-file.md)
-## [Создание модульных тестов для управляемого кода](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+## Создание модульных тестов для управляемого кода
 ### [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 ### [Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов](quick-start-test-driven-development-with-test-explorer.md)
 ### [Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
@@ -53,7 +53,7 @@
 ### [Анализ покрытия кода в тестах проверки построения](analyzing-code-coverage-in-build-verification-tests.md)
 ### [Устранение неполадок с покрытием кода](troubleshooting-code-coverage.md)
 ## [Использование эмуляторов для изоляции модульных тестов приложений SharePoint 2010](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
-# [Знакомство с Live Unit Testing](live-unit-testing-intro.md)
+# [Динамическое модульное тестирование](live-unit-testing-intro.md)
 ## [Новые возможности в Live Unit Testing](live-unit-testing-whats-new.md)
 ## [Начало работы с Live Unit Testing](live-unit-testing-start.md)
 ## [Использование динамического модульного тестирования в Visual Studio 2017 Enterprise Edition](live-unit-testing.md)
@@ -88,4 +88,3 @@
 # [Управление тестовой лабораторией](lab-management/using-a-lab-environment-for-your-application-lifecycle.md)
 ## [Использование функций сборки и выпуска для автоматического тестирования](lab-management/use-build-or-rm-instead-of-lab-management.md)
 ## [Установка и настройка агентов тестирования](lab-management/install-configure-test-agents.md)
-## [Обновление диспетчера SCVMM 2008 R2 до версии SCVMM 2012](lab-management/upgrade-scvmm-2008-r2-scvmm-2012.md)

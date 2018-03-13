@@ -1,10 +1,10 @@
 ---
 title: "Параметр devenv.exe | Документы Майкрософт"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,11 +14,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93f03de74540d130d66ce123b355691e0828b93e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e37fe50eefc36e7b5396f396d2b614851a0bd9cb
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```shell
 devenv /setup
 ```
 
@@ -34,13 +34,14 @@ devenv /setup
 
 У этого параметра нет аргументов. Команда `devenv /setup` обычно выдается в качестве последнего этапа процесса установки. Использование параметра `/setup` не приводит к запуску Visual Studio.
 
-Для использования параметров `devenv` и [devenv](../../ide/reference/setup-devenv-exe.md) нужно запустить [devenv](../../ide/reference/installvstemplates-devenv-exe.md) от имени администратора.
+> [!NOTE]
+> Для использования параметра `/setup` нужно запустить `devenv` от имени администратора.
 
 ## <a name="example"></a>Пример
 
 В этом примере показан последний этап установки версии Visual Studio, включающей пакеты VSPackage.
 
-```
+```shell
 devenv /setup
 ```
 

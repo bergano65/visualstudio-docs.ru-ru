@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,7 +21,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -88,7 +90,7 @@ ms.lasthandoff: 01/10/2018
 5.  На ленте выберите **разработчика** вкладки.  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6.  В **элементов управления** выберите **текст** кнопку ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") добавление <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>в первую ячейку.  
   
@@ -317,7 +319,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Изменение данных в пользовательских XML-частях при закрытии документа. При следующем открытии документа пользователем элементы управления содержимым, привязанные к XML-элементам, покажут новые данные.  
   
--   Использование элементов управления содержимым для защиты частей документов. Для получения дополнительной информации см. [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Использование элементов управления содержимым для защиты частей документов. Для получения дополнительной информации см. [Практическое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>См. также  
  [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   

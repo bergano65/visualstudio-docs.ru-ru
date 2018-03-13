@@ -1,8 +1,6 @@
 ---
 title: "Стандартная страница справки F1 в Visual Studio | Документация Майкрософт"
-ms.date: 01/01/2018
-ms.reviewer: 
-ms.suite: 
+ms.date: 02/28/2018
 ms.topic: article
 robots: noindex,nofollow
 f1_keywords:
@@ -10,17 +8,29 @@ f1_keywords:
 - vs.ambient
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: f4c6e344acba0774a6a6a6f2dfe83bab9ff5ca18
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/28/2018
 ---
 # Справка F1
 
-Похоже, вы оказались здесь по ошибке. Если вы ищете справку F1 по ключевому слову или имени API, до нажатия **F1** убедитесь, что курсор располагается внутри слова или справа от него. Если это не работает, попробуйте выполнить поиск на сайте https://docs.microsoft.com.
+Похоже, нам не удалось найти то, что вы искали. Приносим свои извинения. [Помогите нам улучшить справку](#help-us-improve-f1).
 
-Если вы ищете справку в самом текстовом редакторе, см. руководство по [созданию кода в редакторе](../../ide/writing-code-in-the-code-and-text-editor.md).
+## Позиция курсора
+
+Если вы ищете справку F1 по ключевому слову или имени API, до нажатия **F1** убедитесь, что курсор располагается внутри слова или справа от него. Если это не работает, выберите нужный вариант в списке [полезных ссылок](#useful-links) или выполните поиск на сайте https://docs.microsoft.com.
+
+## Полезные ссылки
+
+- Общие сведения о Visual Studio см. в [обзоре Visual Studio](../../ide/visual-studio-ide.md).
+- Справочные сведения о текстовом редакторе Visual Studio см. в статье [Использование редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Справочные сведения о C# см. в [руководстве по C#](/dotnet/csharp/index).
+- Справочные сведения о Visual Basic см. в [руководстве по Visual Basic](/dotnet/visual-basic/).
+- Справочные сведения о F# см. в [руководстве по F#](/dotnet/fsharp/).
+- Справочные сведения о Python см. в статье [Python в Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
+- Справочные сведения о C++ см. в статье [C++ в Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
 ## Помогите нам улучшить справку F1
 

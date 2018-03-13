@@ -10,11 +10,11 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a7768be8726fe38ade6857993b67c1c32f8611aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 Подписки Visual Studio — это исчерпывающий набор инструментов для разработки, развертывания великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux, и управления такими приложениями.  Преимущества подписок включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.
@@ -137,14 +137,14 @@ ms.lasthandoff: 03/05/2018
 ---
 
 <h2>Преимущества</h2>
-<ul class="panelContent cardsW">
+<ul class="cardsD cols cols3">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
                         <h3>Средства разработчика</h3>
-                        <p>Вы можете получить доступ к последним версиям Visual Studio:                         полнофункциональной интегрированной среде разработки для создания приложений для Android, iOS, Windows, macOS,                         веб-приложений и облачных приложений, а также к другим межплатформенным                         инструментам на ПК или компьютере Mac.</p>
+                        <p>Вы получите доступ к последним версиям Visual Studio — полнофункциональной интегрированной среде разработки для создания приложений для Android, iOS, Windows, macOS, веб-приложений и облачных приложений, а также к другим межплатформенным инструментам на ПК или компьютере Mac.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio для Mac</li>
