@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 |Edit.Delete|Delete [глобальный, Team Explorer]<br /><br /> или Shift+Delete [схема последовательностей, схема действий UML, схема слоев]<br /><br /> или Ctrl+Delete [схема классов]|  
 |Edit.Find|Ctrl+F [глобальный]|  
 |Edit.FindAllReferences|Shift+F12 [глобальный]|  
-dit.FindinFiles|Ctrl+Shift+F [глобальный]|  
+|Edit.FindinFiles|Ctrl+Shift+F [глобальный]|  
 |Edit.FindNext|F3 [глобальный]|  
 |Edit.FindNextSelected|Ctrl+F3 [глобальный]|  
 |Edit.FormatDocument|Ctrl+K, Ctrl+D [текстовый редактор]|  
@@ -82,7 +84,7 @@ dit.FindinFiles|Ctrl+Shift+F [глобальный]|
 |Edit.LineDownExtendColumn|Shift+Alt+СТРЕЛКА ВНИЗ [текстовый редактор]|  
 |Edit.LineOpenAbove|Ctrl+ВВОД [текстовый редактор]|  
 |Edit.ListMembers|Ctrl+J [текстовый редактор, конструктор рабочих процессов]<br /><br /> или Ctrl+K, Ctrl+L [конструктор рабочих процессов]<br /><br /> или Ctrl+K, L [конструктор рабочих процессов]|  
-dit.NavigateTo|Ctrl+, [глобальный]|  
+|Edit.NavigateTo|Ctrl+, [глобальный]|  
 |Edit.OpenFile|Ctrl+Shift+G [глобальный]|  
 |Edit.OvertypeMode|Insert [текстовый редактор]|  
 |Edit.ParameterInfo|Ctrl+Shift+ПРОБЕЛ [текстовый редактор, конструктор рабочих процессов]<br /><br /> или Ctrl+K, Ctrl+P [конструктор рабочих процессов]<br /><br /> или Ctrl+K, P [конструктор рабочих процессов]|  
@@ -93,7 +95,7 @@ dit.NavigateTo|Ctrl+, [глобальный]|
 |Edit.SelectAll|Ctrl+A [глобальный]|  
 |Edit.SelectCurrentWord|Ctrl+W [текстовый редактор]|  
 |Edit.SelectionCancel|Esc [текстовый редактор, конструктор отчетов, конструктор параметров, конструктор Windows Forms, редактор управляемых ресурсов]|  
-dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|  
+|Edit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|  
 |Edit.TabLeft|Shift+Tab [текстовый редактор, конструктор отчетов, конструктор Windows Forms]|  
 |Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L [текстовый редактор]|  
 |Edit.ToggleBookmark|Ctrl+K, Ctrl+K [текстовый редактор]|  
@@ -155,7 +157,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|
 |View.ServerExplorer|Ctrl+Alt+S [глобальный]|  
 |View.ShowSmartTag|CTRL+. [Global]<br /><br /> или Shift+Alt+F10 [глобальный, HTML-редактор в конструкторе]|  
 |View.SolutionExplorer|Ctrl+Alt+L [глобальный]|  
-iew.TfsTeamExplorer|CTRL+\\, CTRL+M [глобальный]|  
+|View.TfsTeamExplorer|CTRL+\\, CTRL+M [глобальный]|  
 |View.Toolbox|Ctrl+Alt+X [глобальный]|  
 |View.ViewCode|ВВОД [схема классов]<br /><br /> или F7 [конструктор параметров]|  
 |View.ViewDesigner|Shift+F7 [HTML-редактор в представлении кода]|  

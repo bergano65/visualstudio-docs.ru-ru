@@ -2,7 +2,7 @@
 title: "Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio | Документация Майкрософт"
 description: "Быстро создавайте проекты Python в Visual Studio на основе одного из встроенных шаблонов."
 ms.custom: 
-ms.date: 09/25/2017
+ms.date: 03/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 648c1e2b4ee3a5c9bc10d74ee384a08bc5ddce64
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 4ab0f91022240d1fcf60bd6889ea9b2ec39f2db3
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 
@@ -66,14 +66,14 @@ ms.lasthandoff: 02/23/2018
             output += "%04d" % (carry + (total / scale))
             carry = total % scale
 
-        return output;
+        return output
 
     def test_py():
-        digits = 1000;
+        digits = 1000
 
         start = perf_counter()
-        output = pi_digits_Python(digits);
-        elapsed = perf_counter() - start;
+        output = pi_digits_Python(digits)
+        elapsed = perf_counter() - start
 
         print("PI to " + str(digits) + " digits in " + str(int(elapsed * 10000)/10000) + " seconds:")
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 02/23/2018
         print(output.replace("3", "3.", 1))
 
     if __name__ == "__main__":
-        test_py();
+        test_py()
     ```
 
 1. Запустите программу, нажав клавиши CTRL+F5 или выбрав пункт меню **Отладка > Запуск без отладки**. Результаты отображаются в окне консоли.

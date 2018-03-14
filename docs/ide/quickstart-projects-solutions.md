@@ -12,15 +12,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Краткое руководство. Проекты и решения
 
 В этом 10-минутном кратком руководстве мы изучим, что означает создание решения и проекта в Visual Studio. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку на второй проект.
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали это.
 
 > [!TIP]
 > В качестве упражнения мы создадим решение и проект с нуля, чтобы понять концепцию проекта. В повседневной работе с Visual Studio вы, скорее всего, будете использовать для создания проекта множество доступных в этой среде шаблонов проектов.

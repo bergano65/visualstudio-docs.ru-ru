@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -39,7 +40,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -77,12 +79,12 @@ ms.lasthandoff: 01/10/2018
   
  Ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> не действует как контейнер для элементов управления, имеющихся в пользовательском интерфейсе. Вместо этого конструктор для данного ведущего элемента функционирует как область компонентов, что позволяет перетаскивать компоненты, такие как <xref:System.Data.DataSet>, в рабочую область конструирования. Для получения дополнительной информации см. [Workbook Host Item](../vsto/workbook-host-item.md).  
   
- Ведущие элементы нельзя создавать программными средствами в проектах уровня документа. Вместо этого используйте классы `ThisDocument`, `ThisWorkbook`или `Sheet`*n* , которые Visual Studio автоматически создает в проекте во время разработки. Эти созданные классы являются производными от ведущих элементов и обеспечивают точку входа для кода. Для получения дополнительной информации см. [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Ведущие элементы нельзя создавать программными средствами в проектах уровня документа. Вместо этого используйте классы `ThisDocument`, `ThisWorkbook`или `Sheet`*n* , которые Visual Studio автоматически создает в проекте во время разработки. Эти созданные классы являются производными от ведущих элементов и обеспечивают точку входа для кода. Для получения дополнительной информации см. [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>Основные сведения о ведущих элементах в проектах надстроек VSTO  
  При создании надстройки VSTO вы не имеете доступа ко всем ведущим элементам по умолчанию. Тем не менее вы можете создать ведущие элементы <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>и <xref:Microsoft.Office.Tools.Excel.Worksheet> в надстройках VSTO Word и Excel в среде выполнения.  
   
- После создания ведущего элемента вы можете выполнять такие задачи, как добавление элементов управления в документы. Для получения дополнительной информации см. [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ После создания ведущего элемента вы можете выполнять такие задачи, как добавление элементов управления в документы. Для получения дополнительной информации см. [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="host-controls"></a>Элементы управления ведущего приложения  
  Элементы управления ведущего приложения расширяют различные объекты пользовательского интерфейса в объектных моделях Word и Excel, например Microsoft.Office.Interop.Word.ContentControl и <xref:Microsoft.Office.Interop.Excel.Range> объектов.  
@@ -127,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Перетаскивайте элементы управления ведущего приложения из окна **Источники данных** в свои документы и листы. Это позволяет добавлять элементы управления, которые уже привязаны к данным. Дополнительные сведения см. в разделе [привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- В проектах надстроек VSTO уровня документа можно также добавлять некоторые элементы управления ведущего приложения в документы во время выполнения. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ В проектах надстроек VSTO уровня документа можно также добавлять некоторые элементы управления ведущего приложения в документы во время выполнения. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Дополнительные сведения о добавлении элементов управления ведущего приложения в документы см. в следующих разделах.  
   
@@ -158,7 +160,7 @@ ms.lasthandoff: 01/10/2018
   
  Если элемент управления ведущего приложения добавлен в документ во время разработки, не следует удалять его программными средствами во время выполнения, поскольку при следующей попытке использовать этот элемент управления в коде возникнет исключение. Метод `Delete` элемента управления ведущего приложения удаляет только элементы управления ведущего приложения, добавленные в документ во время выполнения. Если вы вызовете метод `Delete` элемента управления ведущего приложения, созданного во время разработки, возникнет исключение.  
   
- Например, метод <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> успешно удаляет <xref:Microsoft.Office.Tools.Excel.NamedRange> , только если он был добавлен в лист программным образом, который называется динамическим созданием элементов управления ведущего приложения. Динамически созданные элементы управления ведущего приложения можно также удалить, передав имя элемента управления в метод `Remove` свойства <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> или <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> . Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Например, метод <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> успешно удаляет <xref:Microsoft.Office.Tools.Excel.NamedRange> , только если он был добавлен в лист программным образом, который называется динамическим созданием элементов управления ведущего приложения. Динамически созданные элементы управления ведущего приложения можно также удалить, передав имя элемента управления в метод `Remove` свойства <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> или <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> . Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Если конечный пользователь удаляет элемент управления ведущего приложения из документа во время выполнения, может произойти непредвиденный сбой решения. Для защиты от удаления элементов управления ведущего приложения можно использовать функции защиты документа в Word и Excel. Дополнительные сведения см. в разделе [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
@@ -172,7 +174,7 @@ ms.lasthandoff: 01/10/2018
 >  Не устанавливайте для свойства <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> объекта <xref:Microsoft.Office.Interop.Excel.Application> в Excel значение **false**. Установка для этого свойства значения **false** предотвращает инициирование каких-либо событий в Excel, включая события элементов управления ведущего приложения.  
   
 ## <a name="see-also"></a>См. также  
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
  [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   

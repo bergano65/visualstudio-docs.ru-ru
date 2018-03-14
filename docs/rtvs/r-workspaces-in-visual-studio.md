@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Управление выполнением кода R с помощью рабочих областей
 
@@ -31,17 +31,6 @@ ms.lasthandoff: 02/09/2018
 ![Окно "Рабочие области" в инструментах R для Visual Studio (VS2017)](media/workspaces-window.png)
 
 В этом окне зеленым флажком обозначается активная рабочая область, к которой привязаны RTVS. Выберите синюю стрелку, чтобы задать рабочую область в качестве активной. Щелкните значок параметров (шестеренки) справа от каждой рабочей области, чтобы переименовать рабочую область, изменить ее расположение и аргументы командной строки. Красный значок X позволяет удалить рабочую область, добавленную вручную.
-
-В этом разделе.
-
-- [Сохранение и сброс рабочей области](#saving-and-resetting-a-workspace)
-- [Локальные рабочие области](#local-workspaces)
-- [Удаленные рабочие области](#remote-workspaces)
-- [Вход в удаленную рабочую область](#remote-workspace-logon)
-- [Переключение между рабочими областями](#switching-between-workspaces)
-- [Каталоги на локальных и удаленных компьютерах](#directories-on-local-and-remote-computers)
-- [Копирование файлов проекта в удаленные рабочие области](#copying-project-files-to-remote-workspaces)
-- [Копирование файлов из удаленной рабочей области](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>Сохранение и сброс рабочей области
 

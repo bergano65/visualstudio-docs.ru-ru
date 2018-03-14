@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 8655a03659bd3b69e23fd155620d42df6d52386c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -34,7 +36,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  В следующем примере защита паролем не используется; однако вы можете рассмотреть возможность использования пароля при добавлении защиты документов. Дополнительные сведения см. в примере системы защиты документов по адресу [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
- Для защиты частей документов можно также использовать элементы управления содержимым. Для получения дополнительной информации см. [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Для защиты частей документов можно также использовать элементы управления содержимым. Для получения дополнительной информации см. [Практическое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="protecting-a-document-that-is-part-of-a-document-level-customization"></a>Защита документа, который является частью настройки уровня документа  
   

@@ -7,23 +7,25 @@ ms.suite:
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
-В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое веб-приложение ASP.NET Core на языке C#. Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое веб-приложение ASP.NET Core на языке C#.
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали это.
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -86,6 +88,5 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="see-also"></a>См. также
 
-[Начало работы с C# и ASP.NET в Visual Studio](tutorial-csharp-aspnet-core.md)  
-[Начало работы с C# и Visual Basic в Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
-[Начало работы с Razor Pages в ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Начало работы с C# и ASP.NET в Visual Studio](tutorial-csharp-aspnet-core.md)
+* [Начало работы с Razor Pages в ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
