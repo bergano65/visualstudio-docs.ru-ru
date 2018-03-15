@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>Оператор typeof (JavaScript)
 Возвращает строку, которая идентифицирует тип данных выражения.  
@@ -41,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>Примечания  
  *Выражение* аргумент — выражение, для которого выполняется поиск информации.  
   
- `typeof` Оператор возвращает сведения о типе в виде строки. Существует шесть возможные значения, `typeof` возвращает: «число», «строку» «boolean», «,» «функция» и «undefined».  
+ `typeof` Оператор возвращает сведения о типе в виде строки. Существует семь возможные значения, `typeof` возвращает: «число», «строку» «boolean», «объекта» «функции» «undefined» и «неизвестно».  
   
  В скобках необязательны `typeof` синтаксиса.  
+
+ Объект может возвратить в XMLHTTPRequest неизвестного типа. COM-объекта с не аналогом в JavaScript могут также возвращать в неизвестный тип.
   
 ## <a name="example"></a>Пример  
  В следующем примере проверяется тип данных переменных.  

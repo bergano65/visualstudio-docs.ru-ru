@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 144410e0e9b5b8d5d40fee86a1573bd179aea44a
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>команды MenuCommand и OleMenuCommand
 Вы можете создавать команды меню на основе объекта <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> и реализовывать соответствующие обработчики событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -190,9 +190,9 @@ ms.lasthandoff: 02/09/2018
   
     |Свойство MenuCommand|Флаг OLECMDF|  
     |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
   
      Чтобы изменить текст команды меню, используйте свойство <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> в объекте <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , как показано в следующем примере.  
   
@@ -238,7 +238,7 @@ ms.lasthandoff: 02/09/2018
   
     -   Если команда является частью контекстного меню и скрыта по умолчанию:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
+         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
     -   Если команда использует флаг `TEXTCHANGES` , задайте в элементе `rgwz` параметра `pCmdText` новый текст команды, а в элементе `cwActual` параметра `pCmdText` — размер командной строки.  
   

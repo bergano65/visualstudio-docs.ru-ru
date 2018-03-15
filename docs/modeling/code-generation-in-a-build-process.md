@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [Преобразование текста](../modeling/code-generation-and-t4-text-templates.md) может вызываться в рамках [процесс построения](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения. Имеются задачи сборки, которые специализируются на преобразовании текста. Задачи сборки T4 запускают выполнение текстовых шаблонов времени разработки, а также компилируют текстовые шаблоны времени выполнения (предварительно обработанные).  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  Это означает, что таких вещей, как имена файлов проекта невозможен доступ таким же образом при сборке текстового шаблона в MSBuild. Тем не менее, вы можете [передать данные среды в текстовые шаблоны и процессоры директив с помощью параметров сборки](#parameters).  
   
-##  <a name="buildserver"></a>Настройка компьютеров  
+##  <a name="buildserver"></a> Настройка компьютеров  
  Чтобы включить задачи сборки на компьютере разработчика, необходимо установите пакет SDK моделирования для Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Чтобы указать, что доступные только для чтения файлы следует перезаписывать, вставьте такое свойство:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  Если не настроить шаг постобработки, при перезаписи файла в список ошибок будет записываться информация об ошибке.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Передача данных контекста сборки в шаблоны  
+##  <a name="parameters"></a> Передача данных контекста сборки в шаблоны  
  Можно задать значения параметров в файле проекта. Например, можно передать [построения](../msbuild/msbuild-properties.md) свойства и [переменных среды](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -242,7 +242,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 >  `ResolveParameterValue` получает данные из `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры будут иметь значения по умолчанию.  
   
-##  <a name="msbuild"></a>Использование свойств проекта в сборке и директив #include  
+##  <a name="msbuild"></a> Использование свойств проекта в сборке и директив #include  
  Макросы Visual Studio, такие как $ (solutiondir) не работают в MSBuild. Вместо этого можно использовать свойства проекта.  
   
  Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myLibFolder`.  

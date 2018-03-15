@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0cb73a5e5f40d21a5b17faae9602e40f7cd39d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: e13fb299d513f045c4c7c339a9c6602890079e40
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Создание нескольких экземпляров окна инструментов
 Вы можете программировать окна инструментов, чтобы несколько экземпляров могут быть открыты одновременно. По умолчанию окна инструментов может иметь только один экземпляр открыть.  
@@ -36,14 +38,14 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="making-a-tool-window-multi-instance"></a>Создание нескольких экземпляр окна инструментов  
   
-1.  Откройте **MIToolWindowPackage.cs** файла и найти `ProvideToolWindow` атрибута. и `MultiInstances=true` параметра, как показано в следующем примере.  
+1.  Откройте **MIToolWindowPackage.cs** файла и найти `ProvideToolWindow` атрибута. и `MultiInstances=true` параметра, как показано в следующем примере:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
         [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
         [ProvideMenuResource("Menus.ctmenu", 1)]  
         [ProvideToolWindow(typeof(MultiInstanceToolWindow.MIToolWindow), MultiInstances = true)]  
-        [Guid(MIToolWindowPackageGuids.PackageGuidString)]  
+        [Guid(MIToolWindowPackage.PackageGuidString)]  
         public sealed class MIToolWindowPackage : Package  
     {. . .}  
     ```  
@@ -52,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  Чтобы создать экземпляр окна, вызовите <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод и задайте его `id` доступных значение и его `create` флаг `true`.  
   
-     По умолчанию значение `id` параметр <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод `0`. Это делает окно инструментов с одним экземпляром. Для более одного экземпляра размещаемой каждый экземпляр должен иметь собственный уникальный `id`.  
+     По умолчанию значение `id` параметр <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод `0`. Это значение делает окно инструментов с одним экземпляром. Для более одного экземпляра размещаемой каждый экземпляр должен иметь собственный уникальный `id`.  
   
 4.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект, возвращаемый <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> свойства экземпляра окна инструментов.  
   
