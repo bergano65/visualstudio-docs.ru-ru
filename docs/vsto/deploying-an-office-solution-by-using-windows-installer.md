@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -50,7 +52,7 @@ ms.lasthandoff: 01/10/2018
   
 - [Настройка зависимых компонентов в качестве необходимых компонентов](#Configure)  
   
-- [Specify where you want to deploy the solution on the user's computer](#Location)  
+- [Указание места развертывания решения на компьютере пользователя](#Location)  
   
 - [Настройка надстройки VSTO](#ConfigureRegisitry)  
   
@@ -77,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 Прежде чем решение можно будет запускать на компьютерах пользователей, необходимо предоставить доверие одним из следующих способов. В противном случае пользователи должны будут ответить на запрос о доверии при установке решения.  
   
   
-- Подписывание манифеста с помощью сертификата, который определяет известного и надежного издателя. Для получения дополнительной информации см. [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
+- Подписывание манифеста с помощью сертификата, который определяет известного и надежного издателя. Дополнительные сведения см. в разделе [Предоставление доверия решению с помощью подписи приложения и манифестов развертывания](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
 - Решение устанавливается в каталог Program Files на компьютере пользователя.  
   

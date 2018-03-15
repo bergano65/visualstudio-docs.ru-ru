@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -41,7 +42,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -170,7 +172,7 @@ ms.lasthandoff: 01/10/2018
   
  В проектах на уровне документа и проектах надстроек VSTO для привязки элемента управления содержимым к источнику данных программным образом можно использовать метод <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> свойства <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> элемента управления. После этого следует передать строку **текст** для *propertyName* параметр <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> метода. **Текст** свойством является свойство привязки данных по умолчанию элементов управления содержимым.  
   
- Элементы управления содержимым также поддерживают двухстороннюю привязку данных, при которой изменения в элементе управления переносятся в источник данных. Дополнительные сведения см. в разделе [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Элементы управления содержимым также поддерживают двухстороннюю привязку данных, при которой изменения в элементе управления переносятся в источник данных. Дополнительные сведения см. в разделе [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
 >  Элементы управления содержимым не поддерживают сложную привязку данных. Если для привязки <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> или <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> к источнику данных применяется модель данных Windows Forms, при щелчке элемента управления пользователи увидят только одно значение. Если эти элементы управления необходимо привязать к набору значений данных, которые пользователь может выбирать, то эти элементы можно привязать к элементам в пользовательской XML-части.  
