@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,11 +24,12 @@ helpviewer_keywords:
 - ClickOnce applications, code access security policies
 - security, ClickOnce
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e4897ad027354ef54a77fdad3488d2e623264741
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -58,9 +60,9 @@ ms.lasthandoff: 12/22/2017
   
  Приложениям, развернутым из разных расположений, без запроса предоставляются различные уровни разрешений. Например, если приложение развертывается из Интернета, оно получает очень ограниченный набор разрешений. При установке из локальной интрасети оно получает больше разрешений, а при установке с компакт-диска оно получает разрешения полного доверия.  
   
- В качестве отправной точки для настройки разрешений можно выбрать зону безопасности в списке **Зоны** на странице **Безопасность** . Если приложение может развертываться из нескольких зон, выберите зону с наименьшими разрешениями. Для получения дополнительной информации см. [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
+ В качестве отправной точки для настройки разрешений можно выбрать зону безопасности в списке **Зоны** на странице **Безопасность** . Если приложение может развертываться из нескольких зон, выберите зону с наименьшими разрешениями. Для получения дополнительной информации см. [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Свойства, которые можно установить, зависят от набора разрешений; не все наборы разрешений имеют настраиваемые свойства. Дополнительные сведения о полном списке разрешений, которые может запрашивать ваше приложение, см. в разделе <xref:System.Security.Permissions>. Дополнительные сведения о том, как задать разрешения для настраиваемой зоны, см. в разделе [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Свойства, которые можно установить, зависят от набора разрешений; не все наборы разрешений имеют настраиваемые свойства. Дополнительные сведения о полном списке разрешений, которые может запрашивать ваше приложение, см. в разделе <xref:System.Security.Permissions>. Дополнительные сведения о том, как задать разрешения для настраиваемой зоны, см. в разделе [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>Отладка приложения, обладающего ограниченными разрешениями  
  Как разработчик, вы, скорее всего, используете компьютер разработчика с разрешениями полного доверия. Таким образом, при отладке приложения вы не видите те исключения безопасности, которые могут видеть пользователи при запуске этого приложения с ограниченными разрешениями.  
@@ -71,7 +73,7 @@ ms.lasthandoff: 12/22/2017
   
  Кроме того, при написании кода компонент IntelliSense в редакторе кода отключает все члены, не включенные в настроенные разрешения безопасности.  
   
- Для получения дополнительной информации см. [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Для получения дополнительной информации см. [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Разрешения безопасности для приложений веб-браузера  
  Visual Studio предоставляет следующие типы проектов для приложений Windows Presentation Foundation (WPF).  

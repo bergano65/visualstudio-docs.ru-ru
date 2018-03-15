@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - custom prerequisites
 - redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 12/22/2017
  Сначала начальный загрузчик проверяет, установлены ли необходимые компоненты. Если нет, то начальный загрузчик показывает лицензионные соглашения. Как только конечный пользователь примет условия лицензионного соглашения, начнется установка необходимых компонентов. Если все необходимые компоненты обнаружены, начальный загрузчик просто запустит установщик приложения.  
   
 ## <a name="creating-custom-packages"></a>Создание пользовательских пакетов  
- Для создания манифестов можно использовать редактор XML в Visual Studio. Дополнительные сведения см. в разделах [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) и [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Пример создания пакета загрузчика см. в разделе [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Для создания манифестов можно использовать редактор XML в Visual Studio. Дополнительные сведения см. в разделах [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) и [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Пример создания пакета загрузчика см. в разделе [Пошаговое руководство. Создание пользовательского загрузчика для вывода окна с предупреждением о конфиденциальности](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Чтобы создать пакет начального загрузчика, необходимо отправить распространяемый компонент в форме EXE- или MSI-файла в Генератор манифестов начального загрузчика. После этого Генератор манифестов начального загрузчика создаст следующие файлы.  
   

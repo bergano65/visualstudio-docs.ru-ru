@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,7 +28,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 63f316d3ac6fefbef37735cddc8fb7a87a8d4bfb
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -81,7 +83,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   Службы, разрабатываемые в настройке на уровне документа, необходимо сделать доступными для конечных пользователей, которые могут получать доступ к этим службам, путем написания кода VBA в документе.  
   
- Средства разработки решений на базе Office в Visual Studio предоставляют подобную функцию для надстроек VSTO. Если вы разрабатываете надстройку VSTO, то можете вызывать код в надстройке VSTO из других решений Microsoft Office. Для получения дополнительной информации см. [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Средства разработки решений на базе Office в Visual Studio предоставляют подобную функцию для надстроек VSTO. Если вы разрабатываете надстройку VSTO, то можете вызывать код в надстройке VSTO из других решений Microsoft Office. Для получения дополнительной информации см. [Вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 > [!NOTE]  
 >  Эту функцию нельзя использовать в проектах шаблонов Word. Ее можно использовать только в проектах документов Word, книг Excel или шаблонов Excel.  
