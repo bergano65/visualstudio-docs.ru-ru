@@ -197,7 +197,7 @@ ms.lasthandoff: 01/25/2018
  *Что еще мне нужно знать?*  
  **Примечания**  
   
--   ![Предварительное требование](../test/media/prereq.png "Prereq") Чтобы убедиться в доступности конкретного элемента управления перед действием пользовательского интерфейса, попробуйте добавить пользовательский код в метод теста с помощью соответствующего метода UITestControl.WaitForControlXXX(). [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+-   ![Предварительное требование](../test/media/prereq.png "Prereq") Чтобы убедиться в доступности конкретного элемента управления перед действием пользовательского интерфейса, попробуйте добавить пользовательский код в метод теста с помощью соответствующего метода UITestControl.WaitForControlXXX(). [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
  **Советы**  
   

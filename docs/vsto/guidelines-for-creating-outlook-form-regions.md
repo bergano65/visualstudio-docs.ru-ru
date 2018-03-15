@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -57,9 +59,9 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="ClassNames"></a> Общие сведения о типах и именах классов сообщений  
  Имя типа элемента Outlook отличается от имени класса сообщений для элемента Outlook. Например имя типа элемента RSS — Microsoft.Office.Interop.Outlook.PostItem. Имя класса сообщений для элемента RSS — IPM. Post.RSS.  
   
- Используйте имя типа для ссылки на элемент Outlook в коде. Список имен типов см. в разделе [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Используйте имя типа для ссылки на элемент Outlook в коде. Список имен типов см. в разделе [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
- Используйте имя класса сообщений элемента Outlook в мастере **создания области формы Outlook** , чтобы связать этот элемент с областью формы. Список допустимых имен классов сообщений см. в разделе [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Используйте имя класса сообщений элемента Outlook в мастере **создания области формы Outlook** , чтобы связать этот элемент с областью формы. Список допустимых имен классов сообщений см. в разделе [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ##  <a name="ReadingPane"></a> Designing Adjoining Form Regions for the Reading Pane  
  Область чтения Outlook можно использовать для предварительного просмотра элемента Outlook без его открытия. Область чтения предназначена только для чтения. Таким образом, элементы управления для ввода, добавляемые в смежную область формы, например текстовое поле, могут работать некорректно при открытии элемента и области формы в области чтения.  
