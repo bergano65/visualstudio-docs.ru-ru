@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 973e7b627a7b5c121ff388874577fe59c45529d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 674bae5b22c5b9ecc5d6fda4a9a4e30e4fcd1660
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="task-comments"></a>Комментарии к задачам
 
-При написании кода рекомендуется явным образом комментировать незаконченный или сомнительный код или предлагать быстрые обходные пути с предупреждениями. Visual Studio для Mac предоставляет сигнальные токены по умолчанию TODO, HACK, FIXME и UNDONE, однако в разделе **Visual Studio > Параметры... > Окружение > Задачи** можно задать настраиваемые токены, как показано ниже:
+При написании кода рекомендуется явным образом комментировать незаконченный или сомнительный код или предлагать быстрые обходные пути с предупреждениями. По умолчанию в Visual Studio для Mac предоставляются маркеры сигналов TODO, HACK, FIXME и UNDONE. Персонализированные маркеры можно определить в разделе **Visual Studio > Параметры... > Окружение > Задачи**, как показано на следующем изображении:
 
  ![Параметры списка задач](media/source-editor-image10.png)
 

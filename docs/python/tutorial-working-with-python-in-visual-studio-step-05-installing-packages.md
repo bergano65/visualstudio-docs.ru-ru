@@ -2,7 +2,7 @@
 title: "Работа с Python в Visual Studio. Шаг 5 — установка пакетов | Документация Майкрософт"
 description: "Шаг 5 базового руководства по работе с Python в среде Visual Studio описывает возможности Visual Studio для управления пакетами в среде Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Шаг 5. Установка пакетов в среде Python
 
@@ -44,19 +44,21 @@ ms.lasthandoff: 02/09/2018
   ![Установка пакета matplotlib в среде](media/environments-add-matplotlib1.png)
 
 1. Согласитесь на повышение прав, если появится соответствующий запрос.
- 
-1. После установки пакета он появится в окне "Окружения Python". Если щелкнуть знак **X** справа от пакета, он будет удален. 
+
+1. После установки пакета он появится в окне "Окружения Python". Если щелкнуть знак **X** справа от пакета, он будет удален.
 
   ![Завершение установки matplotlib в среде](media/environments-add-matplotlib2.png)
 
   Небольшой индикатор выполнения под названием среды указывает на то, что Visual Studio создает базу данных IntelliSense для нового пакета. На вкладке **IntelliSense** также приводятся более подробные сведения. Имейте в виду, что пока база данных не будет готова, функции IntelliSense, такие как автозавершение и проверка синтаксиса, будут неактивны для этого пакета в редакторе.
 
+  Обратите внимание, что в **Visual Studio 2017 версии 15.6** и более поздних версий используются другие (более быстрые) методы для работы с IntelliSense. На вкладке **IntelliSense** отображается соответствующее сообщение.
+
 1. Создайте проект, выбрав пункт меню **Файл > Создать > Проект**, а затем выбрав шаблон "Приложение Python". В появившийся файл кода вставьте приведенный ниже код, который строит косинусоиду, как в предыдущих шагах учебника, но в теперь в виде графика.
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

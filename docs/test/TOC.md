@@ -50,7 +50,6 @@
 ### [Запуск модульных тестов для приложений UWP](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Использование покрытия кода для определения объема протестированного кода](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [Настройка анализа покрытия кода](customizing-code-coverage-analysis.md)
-### [Анализ покрытия кода в тестах проверки построения](analyzing-code-coverage-in-build-verification-tests.md)
 ### [Устранение неполадок с покрытием кода](troubleshooting-code-coverage.md)
 ## [Использование эмуляторов для изоляции модульных тестов приложений SharePoint 2010](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [Динамическое модульное тестирование](live-unit-testing-intro.md)

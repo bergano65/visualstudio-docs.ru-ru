@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef143862c56f07edc844874bbf71cd916ac9eabc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-6-working-with-git"></a>Шаг 6. Работа с Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
 
 Visual Studio обеспечивает прямую интеграцию с локальными репозиториями Git, а также репозиториями, находящимися в таких службах, как GitHub и Visual Studio Team Services. Эта интеграция включает в себя клонирование репозитория, фиксацию изменений и управление ветвями.
 
-Этот раздел описывает создание локального репозитория Git для существующего проекта. Руководство по созданию проекта из удаленного репозитория Git см. в разделе [Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+В этой статье описано создание локального репозитория Git для существующего проекта. Руководство по созданию проекта из удаленного репозитория Git см. в разделе [Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Открыв проект в Visual Studio, например проект из [предыдущего шага](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), щелкните решение правой кнопкой мыши и выберите **Добавить решение в систему управления версиями**. Visual Studio создает локальный репозиторий Git, содержащий код вашего проекта, и отображает связанные с Git элементы управления в нижней части окна Visual Studio. Эти элементы управления показывают ожидающие фиксации, изменения, имя репозитория и ветвь. Наведите указатель на эти элементы управления для просмотра дополнительных сведений.
 

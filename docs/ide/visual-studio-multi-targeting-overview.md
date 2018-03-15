@@ -1,10 +1,11 @@
 ---
 title: "Нацеливание на платформу .NET Framework в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
 
@@ -48,7 +50,7 @@ ms.lasthandoff: 01/22/2018
 
 При работе над проектом, нацеленным на более раннюю версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio динамически изменяет среду разработки, как показано ниже:
 
-- Фильтрует элементы в диалоговых окнах **Новый проект** **Добавить новый элемент** **Добавить новую ссылку** и **Добавление ссылки на службу**, чтобы пропустить варианты, которые недоступны в целевой версии.
+- Фильтрует элементы в диалоговых окнах **Добавить новый элемент**, **Добавить новую ссылку** и **Добавление ссылки на службу**, чтобы пропустить варианты, которые недоступны в целевой версии.
 
 - Фильтрует пользовательские элементы управления на **панели элементов**, чтобы удалить те из них, которые недоступны в целевой версии, и отобразить только наиболее актуальные элементы, если доступно несколько элементов управления.
 
@@ -65,7 +67,11 @@ ms.lasthandoff: 01/22/2018
 
 ## <a name="selecting-a-target-framework-version"></a>Выбор целевой версии платформы
 
-При создании проекта выберите целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в диалоговом окне **Новый проект**. Список доступных шаблонов проектов фильтруется в зависимости от выбранного значения. Для существующего проекта можно изменить целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в диалоговом окне свойств проекта. Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+При создании проекта выберите целевую версию .NET Framework в диалоговом окне **Новый проект**. Список доступных платформ включает их установленные версии, соответствующие типу выбранного шаблона. Для типов шаблонов, которые не требуют .NET Framework, например шаблонов .NET Core, раскрывающийся список **Framework** скрыт.
+
+![Раскрывающийся список Framework в диалоговом окне "Новый проект"](media/vside-newproject-framework.png)
+
+Для существующего проекта можно изменить целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в диалоговом окне свойств проекта. Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Разрешение системных ссылок и пользовательских ссылок на сборки
 

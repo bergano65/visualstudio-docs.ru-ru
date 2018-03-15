@@ -1,26 +1,26 @@
 ---
 title: "Сочетания клавиш Visual Studio | Документы Майкрософт"
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Рекомендации по использованию клавиатуры в Visual Studio
 
-Перемещаться между компонентами Visual Studio можно более эффективно, если использовать описанные в этом разделе сочетания клавиш. В этом разделе представлен небольшой набор доступных сочетаний клавиш. Более полный список см. в статье [Сочетания клавиш по умолчанию в Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Дополнительные сведения об оптимизации Visual Studio для использования специальных возможностей см. в статье [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md) (Специальные возможности. Советы и рекомендации).
+Перемещаться между компонентами Visual Studio можно более эффективно, если использовать описанные в этой статье сочетания клавиш.
+
+Здесь перечислены лишь некоторые из доступных сочетаний клавиш. Более полный список см. в статье [Сочетания клавиш по умолчанию в Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Дополнительные сведения об оптимизации Visual Studio для использования специальных возможностей см. в статье [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md) (Специальные возможности. Советы и рекомендации).
 
 ## <a name="window-management"></a>Управление окнами
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 02/19/2018
 |Редактор, масштаб|CTRL+SHIFT+> (больше), CTRL+SHIFT+< (меньше)||
 |Выбор блока|Удерживать ALT и перетащить указатель мыши, клавиши SHIFT+ALT+СТРЕЛКА||
 |Переместить строку вверх или вниз|ALT+СТРЕЛКА ВВЕРХ или ALT+СТРЕЛКА ВНИЗ||
-|Дублировать строку|CTRL+E,V|Visual Studio 2017 версии 15.6 — предварительная версия 2|
+|Дублировать строку|CTRL+E,V|Visual Studio 2017 версии 15.6|
 |Развернуть выделение|**SHIFT**+**ALT**+**=**|Visual Studio 2017 версии 15.5|
 |Свернуть выделение|**SHIFT**+**ALT**+**-**|Visual Studio 2017 версии 15.5|
 |Перейти к определению|F12||

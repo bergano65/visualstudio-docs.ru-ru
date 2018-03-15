@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Использование IPython в интерактивном окне
 
-Интерактивное окно Visual Studio в режиме IPython предоставляет удобную интерактивную среду разработки с широкими возможностями, в том числе функцией интерактивных параллельных вычислений. Этот раздел описывает использование IPython в интерактивном окне Visual Studio, где также доступны все стандартные функции [интерактивного окна](python-interactive-repl-in-visual-studio.md).
+Интерактивное окно Visual Studio в режиме IPython предоставляет удобную интерактивную среду разработки с широкими возможностями, в том числе функцией интерактивных параллельных вычислений. В этой статье описано использование IPython в интерактивном окне Visual Studio, где также доступны все стандартные функции [интерактивного окна](python-interactive-repl-in-visual-studio.md).
 
 Для работы вам потребуется установленное окружение [Anaconda](https://www.continuum.io), которое включает IPython и все необходимые библиотеки.
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 02/09/2018
 
 IPython имеет множество других полезных функций, таких как экранирование символов для системной оболочки, подстановка переменных, запись вывода и т. д. Дополнительные сведения см. в [документации по IPython](http://ipython.org/documentation.html).
 
-## <a name="related-topics"></a>См. также
+## <a name="related-articles"></a>Связанные статьи
 
 - Чтобы легко пользоваться Jupyter без установки, попробуйте бесплатную [размещенную службу записных книжек Azure](https://notebooks.azure.com/), позволяющую сохранять и совместно использовать записные книжки.
 

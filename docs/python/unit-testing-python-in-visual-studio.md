@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 55b99e2f572b075c1e9ab1658c8a02b3fdd5ea88
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Настройка модульного тестирования для кода Python
 
@@ -43,16 +43,16 @@ ms.lasthandoff: 02/19/2018
 
 1. Этот процесс создает файл `test1.py`, код которого при прямом вызове скрипта импортирует стандартный модуль `unittest`, производный от тестового класса `unittest.TestCase`, и вызывает метод `unittest.main()`:
 
-  ```python
-  import unittest
+    ```python
+    import unittest
 
-  class Test_test1(unittest.TestCase):
-      def test_A(self):
-          self.fail("Not implemented")
+    class Test_test1(unittest.TestCase):
+        def test_A(self):
+            self.fail("Not implemented")
 
-  if __name__ == '__main__':
-      unittest.main()
-  ```
+    if __name__ == '__main__':
+        unittest.main()
+    ```
 
 1. Если нужно, сохраните этот файл, а затем откройте обозреватель тестов, последовательно выбрав **Тест > Окна > Обозреватель тестов**.
 

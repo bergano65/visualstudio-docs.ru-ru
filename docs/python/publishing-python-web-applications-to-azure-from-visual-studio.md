@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 79036afd66d9c8c23ffb6351d6fd5329004479f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Публикация в службу приложений Azure
 
@@ -74,7 +74,7 @@ Visual Studio предоставляет возможность публиков
 
 ## <a name="configure-python-on-azure-app-service"></a>Настройка Python в Службе приложений Azure
 
-Создав службу приложений с запущенным пустым веб-приложением (в подписке или на бесплатном сайте), установите выбранную версию Python, как описано в статье [Работа с Python в службе приложений Azure](managing-python-on-azure-app-service.md). Для публикации из Visual Studio 2017 запишите точный путь к интерпретатору Python, установленному с расширением сайта, как описано в этой статье.
+Создав службу приложений с запущенным пустым веб-приложением (в подписке или на бесплатном сайте), установите выбранную версию Python, как описано в статье [Работа с Python в службе приложений Azure](managing-python-on-azure-app-service.md). Для публикации из Visual Studio 2017 запишите точный путь к интерпретатору Python, установленному с расширением сайта, как описано в этой статье.
 
 При необходимости можно также установить пакет `bottle`, используя эти инструкции. Этот пакет устанавливается в процессе выполнения других действий в данном руководстве.
 

@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Как работает сортировка результатов тестирования в иерархическом представлении?
 
-  Иерархическое представление сортирует тесты по алфавиту, а не по результату. Другие параметры группирования обычно сортируют результаты тестов по результату, а затем по алфавиту. Ниже для сравнения приведены другие параметры группирования. Вы можете отправить отзыв о данной структуре [в этом вопросе GitHub](https://github.com/Microsoft/vstest/issues/1425).
+  Иерархическое представление сортирует тесты по алфавиту, а не по результату. Другие параметры группирования обычно сортируют результаты тестов по результату, а затем по алфавиту. Для сравнения ознакомьтесь с вариантами группирования на приведенном ниже изображении. Вы можете отправить отзыв о данной структуре [в этом вопросе GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. В представлении иерархии есть значки пройденных, не пройденных, пропущенных и не выполненных тестов возле группирований проектов, пространств имен и классов. Что означают эти значки?
+
+  Значки возле группирований проектов, пространств имен и классов указывают на состояние тестов в определенном группировании. См. приведенную ниже таблицу.
+
+  ![Значки иерархии в обозревателе тестов](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>Функции
 

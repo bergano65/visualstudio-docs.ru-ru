@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Работа с интерактивным окном Python
 
@@ -38,7 +38,7 @@ Visual Studio предоставляет ряд режимов REPL Python.
 | IPython | REPL взаимодействует с серверной частью IPython | Команды IPython, средства Pylab | Нет | Да, встроенные в REPL |
 | IPython без Pylab | REPL взаимодействует с серверной частью IPython | Стандартный IPython | Нет | Да, в отдельном окне | 
 
-В этой статье описывается **стандартный** режим REPL и режим **отладки** REPL. Дополнительные сведения о режимах IPython см. в статье [Using Python in the Interactive Window](interactive-repl-ipython.md) (Использование Python в интерактивном окне).
+В этой статье описаны **стандартный** режим REPL и режим **отладки** REPL. Дополнительные сведения о режимах IPython см. в статье [Using Python in the Interactive Window](interactive-repl-ipython.md) (Использование Python в интерактивном окне).
 
 Подробное пошаговое руководство с примерами, включая взаимодействие с редактором, например с помощью клавиш CTRL+ВВОД, см. в разделе [Шаг 3. Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 

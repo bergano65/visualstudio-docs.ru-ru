@@ -1,7 +1,7 @@
 ---
 title: "Задача RemoveDuplicates | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 03/01/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: msbuild
@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b735b706ec7c258e168c75dcfd8b456df23a021e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ce3271b84d4d6bbb4f7905294d0c9fad678c1b8f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="removeduplicates-task"></a>Задача RemoveDuplicates
 Удаляет повторяющиеся элементы из указанной коллекции элементов.  
@@ -38,7 +38,7 @@ ms.lasthandoff: 02/09/2018
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
-|`Filtered`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию элементов, из которой удалены все повторяющиеся элементы.|  
+|`Filtered`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию элементов, из которой удалены все повторяющиеся элементы. При этом порядок входных элементов остается неизменным и сохраняется первый экземпляр каждого повторяющегося элемента.|  
 |`Inputs`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Коллекция элементов, из которой нужно удалить повторяющиеся элементы.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -70,7 +70,30 @@ ms.lasthandoff: 02/09/2018
     </Target>  
 </Project>  
 ```  
+
+ В примере ниже видно, что в задаче `RemoveDuplicates` сохраняется порядок входных элементов. По завершении задачи в коллекции элементов `FilteredItems` содержатся элементы MyFile2.cs, MyFile1.cs и MyFile3.cs в указанном порядке.  
   
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+  
+    <ItemGroup>  
+        <MyItems Include="MyFile2.cs"/>  
+        <MyItems Include="MyFile1.cs" />  
+        <MyItems Include="MyFile3.cs" />  
+        <MyItems Include="myfile1.cs"/>  
+    </ItemGroup>  
+  
+    <Target Name="RemoveDuplicateItems">  
+        <RemoveDuplicates  
+            Inputs="@(MyItems)">  
+            <Output  
+                TaskParameter="Filtered"  
+                ItemName="FilteredItems"/>  
+        </RemoveDuplicates>  
+    </Target>  
+</Project>  
+```  
+
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   

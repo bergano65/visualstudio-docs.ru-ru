@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Проекты облачных служб Azure для Python
 
@@ -30,7 +30,7 @@ Visual Studio предоставляет шаблоны, которые помо
 
 [Облачная служба](http://go.microsoft.com/fwlink/?LinkId=306052) состоит из произвольного числа *рабочих ролей* и *веб-ролей*, каждая из которых выполняет концептуально независимую задачу и может реплицироваться на несколько виртуальных машин в целях масштабирования. Веб-роли служат для размещения интерфейсных веб-приложений. При использовании Python для создания такого приложения подходит любая веб-платформа с поддержкой WSGI (поддерживаемая [шаблоном веб-проекта](python-web-application-project-templates.md)). Рабочие роли предназначены для длительных рабочих процессов, которые не взаимодействуют с пользователями напрямую. Обычно они используют библиотеки для работы с [данными](http://go.microsoft.com/fwlink/?LinkId=401571) и [службой приложений](http://go.microsoft.com/fwlink/?LinkId=401572), которые можно установить с помощью [`pip install azure`](http://pypi.org/project/azure).
 
-Эта статья содержит сведения о шаблоне проекта и других возможностях Visual Studio 2017 (в более ранних версиях эти функции также доступны, но с некоторыми отличиями). Дополнительные сведения о работе с Azure в Python вы найдете в [центре Azure для разработчиков Python](http://go.microsoft.com/fwlink/?linkid=254360).
+Эта статья содержит сведения о шаблоне проекта и других возможностях Visual Studio 2017 (в более ранних версиях эти функции также доступны, но с некоторыми отличиями). Дополнительные сведения о работе с Azure в Python вы найдете в [центре Azure для разработчиков Python](http://go.microsoft.com/fwlink/?linkid=254360).
 
 ## <a name="create-a-project"></a>Создание проекта
 

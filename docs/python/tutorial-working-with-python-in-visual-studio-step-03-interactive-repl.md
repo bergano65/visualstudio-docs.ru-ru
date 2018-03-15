@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/09/2018
 
 1. Чтобы открыть интерактивное окно, в обозревателе решений щелкните правой кнопкой мыши среду Python проекта (например, "Python 3.6 (32-разрядная версия)", как на рисунке выше) и выберите пункт **Открыть интерактивное окно**. Также можно выбрать **Вид > Другие окна > Интерактивные окна Python** в главном меню Visual Studio.
 
-1. Интерактивное окно откроется под редактором с обычной командной строкой REPL Python `>>>`. Часто требуется увеличить интерактивное окно. Для этого можно перетащить разделитель между двумя окнами.
+1. Интерактивное окно открывается под редактором со стандартной командной строкой REPL Python `>>>`. С помощью раскрывающегося списка **Окружения** можно выбрать определенный интерпретатор для работы. Кроме того, часто требуется увеличить интерактивное окно. Для этого можно перетащить разделитель между двумя окнами:
 
     ![Интерактивное окно Python; изменение размера перетаскиванием](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/09/2018
 > [!div class="nextstepaction"]
 > [Выполнение кода в отладчике](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>Дополнительные сведения
+## <a name="going-deeper"></a>Дополнительные сведения
 
 - [Работа с интерактивным окном Python](python-interactive-repl-in-visual-studio.md)
 - [Использование IPython REPL](interactive-repl-ipython.md)

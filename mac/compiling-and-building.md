@@ -6,19 +6,17 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abf772f1e00239b3a66e01c95dd827a392a12902
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Компиляция и сборка в Visual Studio для Mac
 
 Visual Studio для Mac можно использовать для сборки приложений и создания сборок во время разработки проекта. Важно выполнять раннюю и частую компиляцию и сборку кода, чтобы выявить несоответствия типов и другие ошибки времени компиляции.
 
-## <a name="choosing-a-build-method"></a>Выбор метода сборки:
-
-### <a name="using-the-ide"></a>Использование интегрированной среды разработки
+## <a name="building-from-the-ide"></a>Создание в интегрированной среде разработки
 
 Использование Visual Studio для Mac позволяет мгновенно создавать и запускать сборки, а также сохранять контроль над функциями сборки. Visual Studio для Mac использует в качестве базовой системы сборки MSBuild.
 
@@ -40,13 +38,13 @@ Visual Studio для Mac также можно использовать для �
 
     ![Добавление настраиваемых команд](media/compiling-and-building-image6.png)
 
-### <a name="building-from-command-line"></a>Сборка из командной строки
+## <a name="building-from-command-line"></a>Сборка из командной строки
 
 Подсистему сборки MSBuild можно использовать для сборки приложений с помощью командной строки.
 
 Дополнительные сведения об использовании MSBuild см. в разделе [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 
-### <a name="using-visual-studio-team-services"></a>Использование Visual Studio Team Services
+## <a name="building-from-visual-studio-team-services"></a>Сборка в Visual Studio Team Services
 
 * [Сборка приложения Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [Непрерывная интеграция с помощью Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

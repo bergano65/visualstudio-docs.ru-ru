@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Просмотр определений типов и элементов
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 01/13/2018
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Просмотр декомпилированных исходных определений вместо метаданных (C#)
 
-Эта новая возможность появилась в **Visual Studio 2017 версии 15.6 (предварительная версия 2)**.Она позволяет выбрать вариант просмотра декомпилированного исходного кода при просмотре определения типа или элемента C#, код которого недоступен. Чтобы включить эту функцию, выберите в строке меню **Инструменты** > **Параметры**. Затем разверните раздел **Текстовый редактор** > **C#** > **Дополнительно**и выберите **Enable navigation to decompiled sources** (Включить навигацию к декомпилированным источникам).
+Эта новая возможность появилась в **Visual Studio 2017 версии 15.6**. Она позволяет выбрать вариант отображения декомпилированного исходного кода при просмотре определения типа или элемента C#, код которого недоступен. Чтобы включить эту функцию, выберите в строке меню **Инструменты** > **Параметры**. Затем разверните раздел **Текстовый редактор** > **C#** > **Дополнительно**и выберите **Enable navigation to decompiled sources** (Включить навигацию к декомпилированным источникам).
 
 ![Просмотр декомпилированного определения](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ ms.lasthandoff: 01/13/2018
 
 ## <a name="see-also"></a>См. также
 
-[Перемещение по коду](../ide/navigating-code.md)  
+[Навигация по коду](../ide/navigating-code.md)
 [Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
