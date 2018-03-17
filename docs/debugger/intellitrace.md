@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ IntelliTrace можно использовать в выпуске Visual Studio
 |||
 |-|-|
 |**Поддерживается**|-Visual C# и Visual Basic приложения, использующие .NET Framework 2.0 или более поздних версий.<br/>Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br/>Для отладки приложений SharePoint с помощью IntelliTrace, в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Для отладки приложения Microsoft Azure с помощью IntelliTrace, в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Ограниченная поддержка**|-.NET core и поддерживается только для событий приложений ASP.NET Core<br />-Приложения F # на экспериментальной основе<br />-Поддерживается только для событий приложений UWP|
-|Не поддерживается|-C++, другие языки и скрипт<br />— Службы Windows, Silverlight, Xbox или [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] приложений|
+|**Ограниченная поддержка**|-.NET core и ASP.NET Core приложений поддерживается для определенных событий только (контроллер MVC, ADO.NET и HTTPClicent) в локальной отладки. Автономный сборщик не поддерживается для приложений .NET Core и ASP.NET Core.<br />-Приложения F # на экспериментальной основе<br />-Поддерживается только для событий приложений UWP|
+|**Не поддерживается**|-C++, другие языки и скрипт<br />— Службы Windows, Silverlight, Xbox или [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] приложений|
 
 > [!NOTE]
 > Если требуется отладить уже запущенному процессу, можно собирать только события IntelliTrace (без сведений о вызовах). Можно присоединить к процессу на локальном компьютере только 32-разрядная или 64-разрядной. События, происходящие перед присоединением к процессу, не собираются.

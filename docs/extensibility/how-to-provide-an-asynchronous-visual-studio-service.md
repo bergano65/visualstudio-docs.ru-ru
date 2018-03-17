@@ -7,19 +7,20 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c13a899e5c678040d6ffe5b1996fd3ee96e9cc09
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4aac446e9ed71b6e6b0c86ea64068af7a6184767
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Как: предоставляет службу асинхронной Visual Studio
-Если вы хотите получить службу без блокировки потока пользовательского интерфейса, необходимо создать асинхронную службу и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>и добавление службы с асинхронной пакета специальные асинхронных методов  
+Если вы хотите получить службу без блокировки потока пользовательского интерфейса, необходимо создать асинхронную службу и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>и добавление службы с асинхронной пакета специальные асинхронных методов.
   
  Сведения об обслуживании синхронной Visual Studio см. в разделе [как: обслуживать](../extensibility/how-to-provide-a-service.md).  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 7.  Вот реализация асинхронной службы. Обратите внимание, что необходимо задать в конструкторе асинхронный доступ к службе, а не синхронный доступ к службе.  
   
-    ```  
+    ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService  
     {  
         private Microsoft.VisualStudio.Shell.IAsyncServiceProvider serviceProvider;  
@@ -92,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Необходимо добавить **AllowsBackgroundLoading = true** на <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Дополнительные сведения о PackageRegistrationAttribute см. в разделе [регистрация и Отмена регистрации пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
- Ниже приведен пример AsyncPackage асинхронную службу регистрации в::  
+ Ниже приведен пример AsyncPackage асинхронную службу регистрации в:
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  
@@ -107,7 +108,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 1.  В TestAsyncPackage.cs, удалите `Initialize()` метод и переопределение `InitializeAsync()` метод. Добавьте службу и метод обратного вызова для создания служб. Ниже приведен пример асинхронной инициализатора Добавление службы:  
   
-    ```  
+    ```csharp
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
         this.AddService(typeof(STextWriterService), CreateService);  
@@ -146,7 +147,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync(<userpath>), "this is a test");  
+        await textService.WriteLineAsync(<userpath>), "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -164,7 +165,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 2.  Шаблон пользовательской команды повторно добавляет `Initialize()` метод файл TestAsyncPackage.cs для инициализации команды. В метод Initialize() скопируйте строки, которая инициализирует команды. Он должен выглядеть так:  
   
-    ```  
+    ```csharp
     TestAsyncCommand.Initialize(this);  
     ```  
   
@@ -182,7 +183,7 @@ public sealed class TestAsyncPackage : AsyncPackage
         ITextWriterService textService =   
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync((<userpath>, "this is a test");  
+        await textService.WriteLineAsync((<userpath>, "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -193,9 +194,9 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 4.  Найдите в файле TestAsyncCommand.cs `MenuItemCallback()` метод. Удаление тела метода.  
   
-5.  Добавить с помощью инструкции:  
+5.  Добавьте инструкцию using:  
   
-    ```  
+    ```csharp 
     using System.IO;  
     ```  
   
@@ -208,14 +209,14 @@ public sealed class TestAsyncPackage : AsyncPackage
            this.ServiceProvider.GetService(typeof(STextWriterService))  
               as ITextWriterService;  
         // don't forget to change <userpath> to a local path  
-        await writer.WriteLineAsync((<userpath>),"this is a test");  
+        await textService.WriteLineAsync((<userpath>),"this is a test");  
        }  
   
     ```  
   
 7.  Вызовите этот метод из `MenuItemCallback()` метод:  
   
-    ```  
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         GetAsyncService();  
