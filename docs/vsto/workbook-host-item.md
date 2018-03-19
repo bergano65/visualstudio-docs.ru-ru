@@ -57,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 >  Средства разработки Office в Visual Studio не поддерживают общие книги.  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>Основные сведения о ведущих элементах книги в проектах надстроек VSTO  
- В проектах надстроек VSTO можно создавать ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> во время выполнения для любой книги, открытой в Excel. Для создания <xref:Microsoft.Office.Tools.Excel.Workbook> ведущий элемент, используйте метод GetVstoObject. Для получения дополнительной информации см. [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ В проектах надстроек VSTO можно создавать ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> во время выполнения для любой книги, открытой в Excel. Для создания <xref:Microsoft.Office.Tools.Excel.Workbook> ведущий элемент, используйте метод GetVstoObject. Для получения дополнительной информации см. [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>См. также  
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   
