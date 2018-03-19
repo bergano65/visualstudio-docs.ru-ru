@@ -1,32 +1,35 @@
 ---
 title: "Отладка ASP.NET - Visual Studio | Документы Microsoft"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Отладка ASP.NET с помощью отладчика Visual Studio
 
-Отладчик Visual Studio предоставляет множество мощные средства для отладки приложений. В этом разделе предоставляет быстрый способ узнать некоторые основные возможности.
+Отладчик Visual Studio предоставляет множество мощные средства для отладки приложений. В этой статье вы ознакомитесь с некоторыми основными возможностями.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
-1. В Visual Studio выберите **файл > Новый проект**.
+1. В Visual Studio последовательно выберите **Файл > Создать проект**.
 
 1. В разделе **Visual C#**, выберите **Web**, а затем в средней области выберите **веб-приложения ASP.NET Core**.
 
@@ -91,19 +94,19 @@ ms.lasthandoff: 12/22/2017
     ![Попадание в точку останова](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > При наличии точки останова в цикле или рекурсии или если у вас много точек останова, которые часто пошаговом выполнении, используйте [условную точку останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) чтобы убедиться в том, что кода приостанавливается только в том случае, если соблюдаются определенные условия. Это экономит время и может упростить для отладки проблем, которые трудно воспроизвести.
+    > При наличии точки останова в цикле или рекурсии или при наличии многие точки останова, которые вы часто пошагово, используйте [условную точку останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) чтобы убедиться в том, что кода приостанавливается только в том случае, если соблюдаются определенные условия. Это экономит время и может упростить для отладки проблем, которые трудно воспроизвести.
 
 ## <a name="navigate-code"></a>Навигация по коду
 
-Существуют различные команды, чтобы отладчик, чтобы продолжить. Мы рассмотрим команду навигации полезный код, новые возможности Visual Studio 2017 г.
+Существуют различные команды, чтобы отладчик, чтобы продолжить. Мы покажем команде навигации полезный код, новые возможности Visual Studio 2017 г.
 
-- Пока выполнение приостановлено в точке останова, наведите указатель мыши на инструкцию `return c2` до зеленая **выполнения щелкните** кнопку ![запуска, щелкните](../debugger/media/dbg-tour-run-to-click.png) и нажмите клавишу **выполнения щелкните** кнопка.
+Пока выполнение приостановлено в точке останова, наведите указатель мыши на инструкцию `return c2` до зеленая **выполнения щелкните** кнопку ![запуска, щелкните](../debugger/media/dbg-tour-run-to-click.png) и нажмите клавишу **выполнения щелкните** кнопка.
 
-    ![Нажмите кнопку запуска](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Нажмите кнопку запуска](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    Приложение продолжает выполнение и останавливается на строке кода, где была нажата кнопка.
+Приложение продолжает выполнение и останавливается на строке кода, где была нажата кнопка.
 
-    Общие команды клавиатуры для включения пошагового выполнения кода **F10** и **F11**. Более подробные инструкции см. в разделе [руководство для начинающих](../debugger/getting-started-with-the-debugger.md).
+Общие команды клавиатуры для включения пошагового выполнения кода **F10** и **F11**. Более подробные инструкции см. в разделе [руководство для начинающих](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Отслеживание значений переменных в подсказке по данным
 
@@ -133,9 +136,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- Дополнительные сведения об отладчике см. в разделе [запустить отладчик и перемещаться по коду](../debugger/getting-started-with-the-debugger.md).
-- Чтобы узнать больше о точках останова, в разделе [использование точек останова](../debugger/using-breakpoints.md).
+В этом учебнике вы узнали, как запустить отладчик, пошаговое выполнение кода и проверять значения переменных. Имеет смысл получить подробный обзор возможности отладчика, а также ссылки на дополнительные сведения.
 
-## <a name="see-also"></a>См. также  
- [Отладка в Visual Studio](../debugger/index.md)  
- [Обзор функций отладчика](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Обзор функций отладчика](../debugger/debugger-feature-tour.md)

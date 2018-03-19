@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Установка Visual Studio SDK
 Пакет SDK для Visual Studio является дополнительным компонентом в программе установки Visual Studio. VS SDK также можно установить позже.  
@@ -35,6 +35,6 @@ ms.lasthandoff: 02/09/2018
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Установка из командной строки Visual Studio SDK  
-Как и в Visual Studio рабочей нагрузки или компонента, можно также установить этот элемент из командной строки. В разделе [использовать параметры командной строки для установки Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) подробные сведения о параметрах командной строки, соответствующие и способ определения идентификаторов рабочей нагрузки или компонента.
+Как с любой рабочей нагрузки Visual Studio или компонента, можно также установить **разработки расширения Visual Studio** рабочей нагрузки (идентификатор: Microsoft.VisualStudio.Workload.VisualStudioExtension) из командной строки. В разделе [использовать параметры командной строки для установки Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) подробные сведения о параметрах командной строки, соответствующие и общие инструкции по определению рабочей нагрузки или компонент идентификаторов.
   
  Обратите внимание, что необходимо использовать установщик Visual Studio, который соответствует установленной версии Visual Studio. Например при наличии Visual Studio Enterprise, установленной на компьютере, необходимо запустить программу установки Visual Studio Enterprise (vs_enterprise.exe).
