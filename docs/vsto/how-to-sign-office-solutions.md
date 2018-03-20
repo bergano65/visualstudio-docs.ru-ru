@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2883f75c6ca75e1875621f9c6779db09722d6945
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Если вы вручную не измените приложения и манифестов развертывания с помощью манифеста средства создания и редактирования (mage.exe и mageui.exe), перед использованием их необходимо повторной подписи манифестов. Для получения дополнительной информации см. [How to: Re-sign Application and Deployment Manifests](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Если вы вручную не измените приложения и манифестов развертывания с помощью манифеста средства создания и редактирования (mage.exe и mageui.exe), перед использованием их необходимо повторной подписи манифестов. Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="signing-by-using-a-certificate"></a>С помощью сертификата подписи  
  Сертификат — это файл, содержащий уникальный ключ, идентифицирующий издателя решения. Можно приобретать сертификаты из центра сертификации, или создать собственный сертификат и подписать его сертификации.  
