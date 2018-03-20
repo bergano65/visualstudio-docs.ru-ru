@@ -1,11 +1,7 @@
 ---
 title: "Справочное руководство по IntelliTest | Инструменты тестирования для разработчиков Майкрософт | Документы Майкрософт"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -14,18 +10,18 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 30c23fc51f136d7fc3dcfeca191f5c469fb1e331
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8216d8b4f27bb1211bc90d829233602edc915e43
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="intellitest-reference-manual"></a>Справочное руководство по IntelliTest
 
 ## <a name="contents"></a>Описание
 
 * **[Общие сведения о IntelliTest](introduction.md)**
-  - [Основы IntelliTest](introduction.md#hello-world)
+  - [Основы IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Ограничения](introduction.md#limitations)
     * [Недетерминированность](introduction.md#nondeterminism)
     * [Параллелизм](introduction.md#concurrency)
@@ -33,13 +29,13 @@ ms.lasthandoff: 01/09/2018
     * [Платформа](introduction.md#platform)
     * [Язык](introduction.md#language)
     * [Символьная аналитика](introduction.md#symbolic-reasoning)
-    * [Неправильные трассировки стека](introduction.md#incorrect-stack)
+    * [Неправильные трассировки стека](introduction.md#incorrect-stack-traces)
   - [Дополнительные сведения](introduction.md#further-reading)<p>&nbsp;</p>
 
 * **[Начало работы с IntelliTest](getting-started.md)**
   - [Важные атрибуты](getting-started.md#important-attributes)
   - [Важные статические вспомогательные классы](getting-started.md#helper-classes)<p>&nbsp;</p>
- 
+
 * **[Создание теста](test-generation.md)**
   - [Генераторы тестов](test-generation.md#test-generators)
   - [Параметризованное модульное тестирование](test-generation.md#parameterized-unit-testing)

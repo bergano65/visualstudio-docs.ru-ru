@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  Базовые классы не являются частью распространяемого пакета [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Вместо этого, они определены в сборках служебных программ, которые входят в состав Visual Studio. Эти сборки копируются в выходную папку при сборке проектов Office и должны быть развернуты вместе с вашим решением. Дополнительные сведения о сборках служебных программ см. в разделе [Assemblies in the Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
   
 ## <a name="breaking-changes-in-office-projects-that-are-retargeted-to-the-net-framework-4"></a>Критические изменения в проектах Office, которые переориентируются на .NET Framework 4  
- В следующей таблице перечислены наиболее важные критические изменения, которые вы можете обнаружить в проектах Office, переориентируемых на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии. Дополнительные сведения см. в разделе [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+ В следующей таблице перечислены наиболее важные критические изменения, которые вы можете обнаружить в проектах Office, переориентируемых на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии. Дополнительные сведения см. в статье [Перенос решений Office на платформу .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
 |Критическое изменение|Последствие|  
 |---------------------|-----------------|  
@@ -60,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |Классы ведущих элементов, таких как `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, и `ThisAddIn`, больше не предоставляют метод Dispose, который можно переопределить.|Необходимо переместить любой код в переопределение метода Dispose в обработчик событий завершения работы в классе ведущего элемента, например, `ThisAddIn_Shutdown`и удалить переопределение метода Dispose из класса ведущего элемента.|  
   
 ## <a name="see-also"></a>См. также  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Перенос решений Office на платформу .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Новые возможности разработки для Office](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Обзор инструментов Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
