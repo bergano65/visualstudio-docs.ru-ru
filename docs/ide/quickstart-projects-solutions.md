@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Краткое руководство. Проекты и решения
 
@@ -185,10 +185,10 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="see-also"></a>См. также
 
-[Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)  
-[Управление свойствами проекта и решения](../ide/managing-project-and-solution-properties.md)  
-[Управление ссылками в проекте](../ide/managing-references-in-a-project.md)  
-[Разработка кода в Visual Studio без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
+- [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
+- [Управление свойствами проекта и решения](../ide/managing-project-and-solution-properties.md)
+- [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
+- [Разработка кода в Visual Studio без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)

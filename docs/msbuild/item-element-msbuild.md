@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Элемент Item (MSBuild)
 Содержит определяемый пользователем элемент и его метаданные. Каждый элемент, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть указан как дочерний для элемента `ItemGroup`.  
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/09/2018
 
 |Атрибут|Описание:|  
 |---------------|-----------------|  
-|`Include`|Обязательный атрибут.<br /><br /> Файл или подстановочный знак, включаемый в список элементов.|  
+|`Include`|Необязательный атрибут.<br /><br /> Файл или подстановочный знак, включаемый в список элементов.|  
 |`Exclude`|Необязательный атрибут.<br /><br /> Файл или подстановочный знак, исключаемый из списка элементов.|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
 |`Remove`|Необязательный атрибут.<br /><br /> Файл или подстановочный знак, удаляемый из списка элементов.<br /><br />|  

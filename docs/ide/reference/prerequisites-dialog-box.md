@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ea735e5e300d2b2cde301a4cf52424cabbba934
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 01/29/2018
 |**.NET Framework 3.5 SP1**|Этот пакет устанавливает следующие компоненты:<br /><br /> — .NET Framework версий 2.0, 3.0 и 3.5.<br />— Поддержка всех версий платформы .NET Framework в 32-разрядных (x86) и 64-разрядных (x64) операционных системах.<br />— Языковые пакеты для каждой версии платформы .NET Framework, устанавливаемой с помощью пакета.<br />— Пакеты обновления платформы .NET Framework 2.0 и 3.0.<br /><br /> Платформа NET Framework 3.0 включена в операционную систему Windows Vista, а платформа .NET Framework 3.5 — в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Платформа .NET Framework 3.5 требуется для всех проектов Visual Basic и C#, которые компилируются для 32-разрядных операционных систем и для которых целевой платформой является **.NET Framework 3.5**, а также для проектов Visual Basic и C#, компилируемых для 64-разрядных операционных систем. (платформа IA64 не поддерживается). Обратите внимание, что по умолчанию проекты Visual Basic и C# компилируются для любой архитектуры ЦП. Дополнительные сведения см. в руководстве по [настройке для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) и описании [предварительных условий для развертывания 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Этот элемент выбран по умолчанию.|
 |**Microsoft .NET Framework 4.x**|Этот пакет устанавливает платформу .NET Framework 4.х для платформ x86 и x64.|
 |**Microsoft System CLR Types для SQL Server 2014 (x64 и x86)**|Этот пакет устанавливает Microsoft System CLR Types для SQL Server 2014 для платформ x86 и x64.|
-|**SQL Server 2008 R2, экспресс-выпуск**|Этот пакет устанавливает SQL Server 2008 R2, экспресс-выпуск — бесплатный выпуск Microsoft SQL Server 2008 R2, который является идеальной базой данных для небольших веб-приложений, серверных или классических приложений. Его можно использоваться бесплатно для разработки и эксплуатации. Для распространения экспресс-выпуска SQL Server 2008 R2 вместе с приложением требуется бесплатная [регистрация](http://go.microsoft.com/fwlink/?LinkId=130380).|
+|**SQL Server 2008 R2, экспресс-выпуск**|Этот пакет устанавливает SQL Server 2008 R2, экспресс-выпуск — бесплатный выпуск Microsoft SQL Server 2008 R2, который является идеальной базой данных для небольших веб-приложений, серверных или классических приложений. Его можно использоваться бесплатно для разработки и эксплуатации.|
 |**SQL Server 2012, экспресс-выпуск**|Этот пакет устанавливает Microsoft SQL Server 2012, экспресс-выпуск.|
 |**LocalDB для SQL Server 2012, экспресс-выпуск**|Этот пакет устанавливает LocalDB для Microsoft SQL Server 2012, экспресс-выпуск.|
 |**Библиотеки среды выполнения Visual C++ "14" (ARM)**|Этот пакет устанавливает библиотеки времени выполнения Visual C++ для архитектуры Itanium, содержащие процедуры для программирования для операционной системы Microsoft Windows. Эти процедуры автоматизируют многие часто встречающиеся задачи программирования, которые не реализованы в языках C и C++.<br /><br /> Дополнительные сведения см. в [Справочнике по библиотеке времени выполнения](/cpp/c-runtime-library/c-run-time-library-reference).|
@@ -58,7 +58,7 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="see-also"></a>См. также
 
-[Страница публикации в конструкторе проектов](../../ide/reference/publish-page-project-designer.md)  
-[Обязательные требования к развертыванию приложений](../../deployment/application-deployment-prerequisites.md)  
-[Предварительные условия для развертывания 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
-[Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+- [Страница публикации в конструкторе проектов](../../ide/reference/publish-page-project-designer.md)
+- [Обязательные требования к развертыванию приложений](../../deployment/application-deployment-prerequisites.md)
+- [Предварительные условия для развертывания 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
