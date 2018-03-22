@@ -1,3 +1,11 @@
-- name: Документы
+- name: Docs
   tocHref: /
   topicHref: /
+  items:
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/
+      items:
+        - name: Подключенная среда
+          tocHref: /visualstudio/connected-environment/
+          topicHref: /visualstudio/connected-environment/
