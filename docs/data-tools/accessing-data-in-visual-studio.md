@@ -1,5 +1,5 @@
 ---
-title: "Доступ к данным в Visual Studio | Документы Microsoft"
+title: Доступ к данным в Visual Studio | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: article
 f1_keywords:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/15/2018
 
 ||||
 |-|-|-|
-|База данных SQL|DocumentDB|Хранилища (большие двоичные объекты, очереди, таблицы файлов)|
+|База данных SQL|DB Azure Cosmos|Хранилища (большие двоичные объекты, очереди, таблицы файлов)|
 |Хранилище данных SQL|База данных SQL Server Stretch|StorSimple|
 
 И многое другое!
