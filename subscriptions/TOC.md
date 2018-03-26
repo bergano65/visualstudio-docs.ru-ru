@@ -1,8 +1,9 @@
-# [Подписки Visual Studio](index.md) 
+# [Подписки Visual Studio](index.md)
 ## Возможности для подписчиков
 ### [Использование портала для подписчиков](using-the-subscriber-portal.md)
 #### [Активация розничной подписки](activate-store-subscriptions.md)
 #### [Вход](signing-in.md)
+#### [Альтернативные удостоверения](vs-alternate-identity.md)
 ##### [Вход с помощью псевдонима](aliasing.md)
 #### [Управление подписками](manage-vs-subscriptions.md)
 ### [Скачивание программного обеспечения](subscriber-downloads.md)
@@ -14,9 +15,9 @@
 ### [Преимущества для подписчиков](subscriber-benefits.md)
 ## Использование преимуществ для подписчиков
 ### Инструменты
-#### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md) 
+#### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
 #### [Visual Studio Team Services](vs-vsts.md)
-#### [Деньги на счете в Azure](vs-azure.md) 
+#### [Деньги на счете в Azure](vs-azure.md)
 #### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
@@ -61,15 +62,17 @@
 #### [Подписки, срок действия которых истек](handle-expired-license.md)
 #### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
 ## Приобретение подписок на Visual Studio
-### [Сравнение подписок](compare-subscriptions.md)
+### [Сравнение вариантов подписок](https://www.visualstudio.com/vs/pricing)
 ### Приобретение подписок на облачные службы
 #### [Обзор набора средств Visual Studio для Unity](vscloud-overview.md)
-#### [Первая покупка](vscloud-first-purchase.md)
-#### [Продление](vscloud-renewals.md)
-#### [Дополнительные покупки](vscloud-buy-more.md)
-#### [Отмена](vscloud-cancel.md)
+#### [Часто задаваемые вопросы о выставлении счетов](vscloud-billing-faq.md)
+#### [Условия покупки для поставщиков облачных решений](vscloud-csp.md)
+### Подписки, предлагаемые по программам
+#### [Microsoft Partner Network](program-mpn.md)
+#### [Управление подписками для MPN](manage-mpn-subscriptions.md)
+#### [Microsoft for Startups](program-startups.md)
 ## Ресурсы
 ### [Условия лицензии Visual Studio](vs-license-terms.md)
-### [Технический документ о лицензировании Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Технический документ по лицензированию Visual Studio](http://aka.ms/vslicensing)
 ### [Сравнение вариантов подписок и цен на них](https://www.visualstudio.com/vs/pricing)
 ### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://www.visualstudio.com/vs/compare)
