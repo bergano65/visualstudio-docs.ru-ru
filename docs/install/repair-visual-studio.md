@@ -1,22 +1,24 @@
 ---
-title: "Восстановление Visual Studio 2017 | Документы Майкрософт"
-description: "Сведения о восстановлении установки Visual Studio 2017."
-keywords: "Не добавляйте и не изменяйте ключевые слова, не проконсультировавшись со специалистом по оптимизации для поисковых систем."
+title: Восстановление Visual Studio 2017 | Документы Майкрософт
+description: Сведения о восстановлении установки Visual Studio 2017.
+keywords: Не добавляйте и не изменяйте ключевые слова, не проконсультировавшись со специалистом по оптимизации для поисковых систем.
 author: PoulChapman
 ms.author: pchapman
 manager: ghogen
-ms.reviewer: 
+ms.reviewer: ''
 ms.date: 09/28/2017
 ms.topic: article
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.workload: pchapman
-ms.openlocfilehash: 9112042014f89e6e5c7e1293f890e14a882d34fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.workload:
+- multiple
+ms.openlocfilehash: e3ead2104ef89ed7b3b118e660c8f18a3e587a00
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="repair-visual-studio-2017"></a>Восстановление Visual Studio 2017
 

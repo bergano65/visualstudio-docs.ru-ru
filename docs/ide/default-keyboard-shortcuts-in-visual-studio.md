@@ -1,12 +1,12 @@
 ---
-title: "Сочетания клавиш по умолчанию в Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Сочетания клавиш по умолчанию в Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -719,7 +719,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.CharLeftExtend|Shift+СТРЕЛКА ВЛЕВО|  
 |Edit.CharRight|Стрелка вправо|  
 |Edit.CharRightExtend|Shift+СТРЕЛКА ВПРАВО|  
-|Edit.InsertTab|Вкладка|  
+|Edit.InsertTab|Tab|  
 |Edit.LineDown|Стрелка вниз|  
 |Edit.LineDownExtend|Shift+СТРЕЛКА ВНИЗ|  
 |Edit.LineUp|Стрелка вверх|  
@@ -831,7 +831,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.HideSelection|Ctrl+M, Ctrl+H|  
 |Edit.IncreaseFilterLevel|Alt+.|  
 |Edit.IncrementalSearch|CTRL+I|  
-|Edit.InsertTab|Вкладка|  
+|Edit.InsertTab|Tab|  
 |Edit.LineCut|CTRL+L|  
 |Edit.LineDelete|CTRL+SHIFT+L|  
 |Edit.LineDown|Стрелка вниз|  
@@ -1050,7 +1050,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.DocumentEndExtend|Shift+End|  
 |Edit.DocumentStart|Главная страница|  
 |Edit.DocumentStartExtend|Shift+Home|  
-|Edit.InsertTab|Вкладка|  
+|Edit.InsertTab|Tab|  
 |Edit.LineDown|Стрелка вниз|  
 |Edit.LineDownExtend|Shift+СТРЕЛКА ВВЕРХ|  
 |Edit.LineUp|Стрелка вверх|  
