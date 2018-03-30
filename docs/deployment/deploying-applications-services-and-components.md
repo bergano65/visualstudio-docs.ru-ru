@@ -1,12 +1,13 @@
 ---
-title: "Общие сведения о развертывании - Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Общие сведения о развертывании - Visual Studio | Документы Microsoft
+ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +22,19 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: d07129bc373cf74c8ba373b3c51847016d585ade
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="deployment-overview-in-visual-studio"></a>Общие сведения о развертывании в Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Краткое руководство: Сначала посмотрим, развертывание в Visual Studio
 
 Развертывание приложения, службы или компонента — это механизм их распространения для установки на других компьютерах, устройствах, серверах и в облаке. В Visual Studio можно выбрать соответствующий подход в зависимости от требуемого типа развертывания. (Такие как развертывание командной строки и NuGet другими средствами развертывания, не описанные здесь поддерживают множество типов приложений.)
 
@@ -40,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 
 ### <a name="deploy-to-local-folder"></a>Развернуть локальную папку
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, и **.NET Core**: средство публикации для развертывания на локальный папка. Параметры, доступные зависят от типа приложения. В обозревателе решений щелкните правой кнопкой мыши проект и выберите команду **публикации**, а затем выберите **папки**. Дополнительные сведения см. в разделе [развернуть локальную папку](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, и **.NET Core**: средство публикации для развертывания в локальную папку. Параметры, доступные зависят от типа приложения. В обозревателе решений щелкните правой кнопкой мыши проект и выберите команду **публикации**, а затем выберите **папки**. Дополнительные сведения см. в разделе [развернуть локальную папку](quickstart-deploy-to-local-folder.md).
 
     ![Выберите опубликовать](../deployment/media/quickstart-publish.png)
 

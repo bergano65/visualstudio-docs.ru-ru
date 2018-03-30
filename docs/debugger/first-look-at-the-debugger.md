@@ -1,32 +1,32 @@
 ---
-title: "Начало работы с отладчиком в Visual Studio | Документы Microsoft"
+title: Начало работы с отладчиком в Visual Studio | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Начало работы с отладчиком Visual Studio
 Отладчик Visual Studio можно легко использовать на любом языке. Здесь мы покажем, как выполнить отладку простой программы C#, но можно применить те же действия к коду на других языках, например C++ и JavaScript.
 
 Видео, показывающая аналогичные функциональные возможности, в разделе [начало работы с отладчиком](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>Отладка простого проекта C#  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Отладка простого проекта C#  
  Давайте начнем с простого консольного приложения C# (**файл > Создать > проект**, а затем выберите **Visual C#** и затем **консольное приложение**). Если вы никогда не работали с Visual Studio, см. раздел [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Дополнительные сведения о точках останова см. в разделе [использование точек останова](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a>Отслеживание значений переменных  
+##  <a name="BKMK_Inspect_Variables"></a> Отслеживание значений переменных  
  Отладка часто предусматривает поиск переменные, которые не содержат значения, которые предполагается, что в определенный момент. Мы рассмотрим несколько способов проверить переменные.  
   
  Снова начните отладку. Выполнение остановится перед выполнением кода `Console.WriteLine`. Может вызвать выполнение, перейти к следующему шагу (щелкните **Отладка > шаг с обходом** или **F10**). В этом случае можно выбрать **шаг с заходом** (**F11**) и получить тот же результат; мы различия будут описаны позже. Строка с последней фигурной скобкой метода должна окраситься желтым цветом. Взгляните на окно консоли. Вы увидите **10**.  

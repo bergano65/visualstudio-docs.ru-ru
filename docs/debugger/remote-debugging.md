@@ -1,13 +1,13 @@
 ---
-title: "Удаленная отладка в Visual Studio | Документы Microsoft"
+title: Удаленная отладка в Visual Studio | Документы Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -19,17 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
+caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Вы можете отладить приложение Visual Studio, развернутое на другом компьютере. Для этого используется удаленный отладчик Visual Studio.
@@ -52,7 +52,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="fileshare_msvsmon"></a>(Необязательно) Для запуска удаленного отладчика из общей папки
+### <a name="fileshare_msvsmon"></a> (Необязательно) Для запуска удаленного отладчика из общей папки
 
 Можно найти удаленный отладчик (**msvsmon.exe**) на компьютере с Visual Studio Community, Professional или Enterprise, которые уже установлены. В некоторых сценариях самым простым способом настройки удаленной отладки является запуск удаленного отладчика (msvsmon.exe) из общей папки. Для ограничения использования см. страницу справки удаленный отладчик (**Справка > использование** удаленного отладчика).
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a>Настройка удаленного отладчика  
+### <a name="configure_msvsmon"></a> Настройка удаленного отладчика  
 После первого запуска удаленного отладчика можно изменить некоторые аспекты его конфигурации.
   
 -   Если необходимо добавить разрешения для других пользователей, чтобы подключиться к удаленному отладчику, выберите **Сервис > разрешения**. Для предоставления разрешений или отказа в предоставлении необходимо обладать правами администратора.
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/23/2018
      > [!WARNING]
      >  Вы можете запускать инструменты удаленной отладки в режиме "без аутентификации", однако настоятельно рекомендуется не использовать этот режим. При работе в этом режиме сетевая безопасность не обеспечивается. Режим без аутентификации можно выбрать, только если вы уверены в отсутствии вредоносного или опасного трафика.
 
-##  <a name="bkmk_configureService"></a>(Необязательно) Настройка удаленного отладчика в качестве службы
+##  <a name="bkmk_configureService"></a> (Необязательно) Настройка удаленного отладчика в качестве службы
 Для отладки в ASP.NET и другие серверные среды, необходимо запустить удаленный отладчик с правами администратора или, если они всегда работает, запуска удаленного отладчика в качестве службы.
   
  Если вы хотите настроить удаленный отладчик как службу, выполните следующие действия.  

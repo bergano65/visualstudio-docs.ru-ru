@@ -1,13 +1,13 @@
 ---
-title: "Создание визуального карты стека вызовов | Документы Microsoft"
-ms.custom: 
+title: Создание визуального карты стека вызовов | Документы Microsoft
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: 
+caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: f5fc0025c9d7870b0de042922d87d3a23d7728c5
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Создание визуального карты стека вызовов при отладке в Visual Studio Enterprise
 Создайте карту кода для визуального отслеживания стека вызовов при отладке. В это сопоставление можно вносить примечания для отслеживания операций, выполняемых кодом. Таким образом, вы сможете сосредоточиться на поиске ошибок.
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/01/2018
   
  Дополнительные сведения о командах и действиях, которые можно использовать при работе с картами кода см. в разделе [Просмотр и переупорядочение карт кода](../modeling/browse-and-rearrange-code-maps.md).  
   
-##  <a name="MapStack"></a>Сопоставление стека вызовов  
+##  <a name="MapStack"></a> Сопоставление стека вызовов  
   
 1.  Приступите к отладке. (Клавиатура: **F5**)  
   
@@ -87,17 +87,17 @@ ms.lasthandoff: 02/01/2018
   
      Эта карта будет автоматически обновляться в ходе отладки. В разделе [обновление сопоставления путем добавления следующего стека вызовов](#UpdateMap).  
   
-##  <a name="MakeNotes"></a>Добавление примечаний к коду  
+##  <a name="MakeNotes"></a> Добавление примечаний к коду  
  Добавьте комментарии для отслеживания операций в коде. Чтобы добавить новую строку в комментарий, нажмите клавишу **Shift + Return**.  
   
  ![Добавление комментария к стеку вызовов на карте кода](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")  
   
-##  <a name="UpdateMap"></a>Обновление сопоставления путем добавления следующего стека вызовов  
+##  <a name="UpdateMap"></a> Обновление сопоставления путем добавления следующего стека вызовов  
  Выполните приложение до следующей точки останова или зайдите в функцию. В сопоставление будет добавлен новый стек вызовов.  
   
  ![Обновление карты кода следующим стеком вызовов](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
-##  <a name="AddRelatedCode"></a>Добавление связанного кода в сопоставление  
+##  <a name="AddRelatedCode"></a> Добавление связанного кода в сопоставление  
  Теперь у вас есть карта — то, что далее? При работе с Visual C# или Visual Basic добавьте элементы, такие как поля, свойства и методы, для отслеживания операций в коде.  
   
  Дважды щелкните метод для просмотра его определения кода или используйте контекстное меню метода. (Клавиатура: выберите метод в сопоставлении и нажмите клавишу **F12**)  
@@ -121,7 +121,7 @@ ms.lasthandoff: 02/01/2018
   
  ![Методы, использующие поле на карте кода со стеком вызовов](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")  
   
-##  <a name="FindBugs"></a>Поиск ошибок с помощью карты  
+##  <a name="FindBugs"></a> Поиск ошибок с помощью карты  
  Визуализация кода поможет вам быстрее находить ошибки. Например предположим, что вы ищите ошибку в программе для рисования. Когда вы создаете линию и пробуете отменить ее создание, ничего не происходит до тех пор, пока не будет нарисована следующая линия.  
   
  Установив точки останова в методах `clear`, `undo` и `Repaint`, вы начинаете отладку и создаете сопоставление, аналогичное представленному ниже:  
@@ -172,7 +172,7 @@ ms.lasthandoff: 02/01/2018
   
 -   **Как остановить сопоставление добавляло новые стеки вызова автоматически?**  
   
-     Выберите ![кнопки &#45; Автоматическое отображение стека вызовов на карте кода](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") на панели инструментов карты. Чтобы вручную добавить текущий стек вызовов на карту, нажмите клавишу **Ctrl** + **Shift** + **`**.  
+     Выберите ![кнопку &#45; стек вызовов Показать на карте кода автоматически](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") на панели инструментов карты. Чтобы вручную добавить текущий стек вызовов на карту, нажмите клавишу **Ctrl** + **Shift** + **`**.  
   
      По-прежнему будут выделение существующие стеки вызовов на карте, во время отладки.  
   

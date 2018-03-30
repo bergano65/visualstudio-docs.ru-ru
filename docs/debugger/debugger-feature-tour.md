@@ -1,29 +1,30 @@
 ---
-title: "Обзор возможностей отладчика | Документы Microsoft"
-ms.custom: H1HackMay2017
-ms.date: 05/19/2017
-ms.reviewer: 
-ms.suite: 
+title: 'Отладчик Visual Studio Обзор возможностей: | Документы Microsoft'
+description: Ознакомьтесь с помощью отладчика Visual Studio
+ms.custom: mvc
+ms.date: 03/27/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 2e031716c68d44a9d08a4b074c5dcb58d5553041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="feature-tour-of-the-visual-studio-debugger"></a>Обзор возможностей отладчика Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Краткое руководство: Сначала посмотрим, отладчик Visual Studio
 
 Этот раздел знакомит с возможностями отладчика Visual Studio. Если вы хотите попробовать, открыв свое приложение в Visual Studio, это можно сделать, или можно изучить пример приложения с использованием [руководство для начинающих](../debugger/getting-started-with-the-debugger.md).
 

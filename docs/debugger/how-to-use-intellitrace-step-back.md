@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Шаг назад моментальные снимки представления с помощью IntelliTrace в Visual Studio
 
@@ -39,11 +39,11 @@ ms.lasthandoff: 03/22/2018
 
 1. Откройте проект в Visual Studio Enterprise.
 
-1. Последовательно выберите пункты **Сервис > Параметры > IntelliTrace** и выберите параметр **IntelliTrace события и моментальные снимки**. 
+1. Откройте **средства** > **параметры** > **IntelliTrace** и выберите параметр **IntelliTrace события и моментальные снимки** . 
 
     ![Включить режим события IntelliTrace и моментальные снимки](../debugger/media/intellitrace-enable-snapshots.png "режим включить события IntelliTrace и моментальные снимки")
 
-1. Задайте один или несколько точек останова в проекте и начните отладку (нажмите клавишу **F5**), или запустите отладку, пошаговое выполнение кода (**F10** или **F11**).
+1. В проекте, задать один или несколько точек останова и начните отладку (нажмите клавишу **F5**), или запустите отладку, пошаговое выполнение кода (**F10** или **F11**).
 
     IntelliTrace создается снимок процесс приложения на каждом отладчик событий шаг и точки останова. Эти события записываются в **событий** вкладке **средства диагностики** окно вместе с другими событиями IntelliTrace. Чтобы открыть это окно, выберите **отладки** > **Windows** > **Показать средства диагностики**.
 
