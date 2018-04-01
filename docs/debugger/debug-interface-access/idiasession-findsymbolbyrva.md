@@ -1,20 +1,24 @@
 ---
-title: "IDiaSession::findSymbolByRVA | Документы Microsoft"
-ms.custom: 
+title: IDiaSession::findSymbolByRVA | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSession::findSymbolByRVA method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSession::findSymbolByRVA method
 ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1b7b1f488bf51f2e7bd9081f42e43a0f0ba5b070
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

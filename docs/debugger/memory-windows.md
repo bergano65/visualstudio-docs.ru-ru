@@ -1,13 +1,15 @@
 ---
-title: "Просмотреть объем памяти для переменных в отладчике | Документы Microsoft"
+title: Просмотреть объем памяти для переменных в отладчике | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.memory
+f1_keywords:
+- vs.debug.memory
 dev_langs:
 - CSharp
 - VB
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - debugging [Visual Studio], Memory window
 - buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
