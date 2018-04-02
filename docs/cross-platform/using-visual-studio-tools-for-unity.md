@@ -1,11 +1,11 @@
 ---
-title: "Использование инструментов Visual Studio для Unity | Документация Майкрософт"
-ms.custom: 
+title: Использование инструментов Visual Studio для Unity | Документация Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: conceptdev
@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Применение набора средств Visual Studio для Unity
 В этом разделе мы рассмотрим, как использовать возможности интеграции и повышения производительности набора средств Visual Studio для Unity, а также как использовать отладчик Visual Studio для разработки Unity.
@@ -134,6 +134,12 @@ ms.lasthandoff: 02/28/2018
 
 > [!IMPORTANT]
 >  Так как набор средств Visual Studio для Unity и экземпляр Unity взаимодействуют через сетевой UDP-сокет, ваш брандмауэр может об этом запросить. В данном случае соединение нужно авторизовать, чтобы VSTU и Unity могли обмениваться данными.
+
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Устранение неполадок соединения между Unity и Visual Studio
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>Проверка включения присоединения редактора
+
+В меню Unity выберите **Edit > Preferences** (Правка > Настройки) и перейдите на вкладку **External Tools** (Внешние средства). Проверьте, установлен ли флажок **Editor Attaching** (Присоединение редактора). Дополнительные сведения см. в [документации по настройкам Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ###  <a name="debugging-your-project-in-a-unity-player"></a>Отладка проекта в проигрывателе Unity
  Набор средств Visual Studio для Unity можно подключить непосредственно к приложению Unity, работающему в автономном проигрывателе, когда вы не используете редактор Unity, или для отладки проблем, относящихся к конкретной платформе.

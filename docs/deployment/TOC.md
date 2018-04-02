@@ -1,7 +1,8 @@
 # [Документация по развертыванию](index.md)
 # Обзор
-## [Общие сведения о развертывании](deploying-applications-services-and-components.md)
+## [Общие сведения о развертывании](deploying-applications-services-and-components-resources.md)
 # Краткие руководства
+## [Первое знакомство с развертыванием](deploying-applications-services-and-components.md)
 ## [Развертывание в локальную папку](quickstart-deploy-to-local-folder.md)
 ## [Развертывание на веб-сайт](quickstart-deploy-to-a-web-site.md)
 ## [Развертывание в Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [Элемент <Signature> (развертывание ClickOnce)](signature-element-clickonce-deployment.md)
 #### [Элемент <customErrorReporting> (развертывание ClickOnce)](customerrorreporting-element-clickonce-deployment.md)
 ### [Справочник по неуправляемым интерфейсам API ClickOnce](clickonce-unmanaged-api-reference.md)
-# Ресурсы
-## [Развертывание приложений, служб и компонентов](deploying-applications-services-and-components-resources.md)
 

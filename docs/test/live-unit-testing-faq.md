@@ -1,9 +1,7 @@
 ---
-title: "Часто задаваемые вопросы о функции Live Unit Testing | Документация Майкрософт"
+title: Часто задаваемые вопросы о функции Live Unit Testing | Документация Майкрософт
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
 
@@ -25,7 +23,6 @@ ms.lasthandoff: 02/21/2018
 **Ответ.**
 
 Сведения о новых возможностях и улучшениях в Live Unit Testing начиная с версии 15.3 среды Visual Studio 2017 см. в статье [Новые возможности в Live Unit Testing](live-unit-testing-whats-new.md).
-
 
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Какие платформы тестирования поддерживает функция Live Unit Testing и каковы минимальные поддерживаемые версии?
 
@@ -58,8 +55,7 @@ ms.lasthandoff: 02/21/2018
 
 Если у вас есть старые тестовые проекты на основе MSTest, которые ссылаются на `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, и вы не хотите переходить на более новые пакеты NuGet MSTest, выполните обновление до Visual Studio 2017 версии 15.4.
 
-В некоторых случаях, чтобы обеспечить работу Live Unit Testing, вам потребуется явным образом восстановить пакеты NuGet, на которые ссылается проект в решении. Это можно сделать, выполнив сборку решения явным образом (в меню верхнего уровня Visual Studio **Пересобрать решение** выберите **Cобрать**) или восстановив пакеты в решении (щелкните решение правой кнопкой мыши и выберите **Восстановить пакеты NuGet**) перед включением Living Unit Testing.
-
+В некоторых случаях, чтобы обеспечить работу Live Unit Testing, вам потребуется явным образом восстановить пакеты NuGet, на которые ссылается проект в решении. Вы можете восстановить пакеты, выполнив сборку решения явным образом (в меню верхнего уровня Visual Studio выберите **Сборка**, **Пересобрать решение**) или щелкнув решение правой кнопкой мыши и выбрав пункт **Восстановить пакеты NuGet** перед включением Living Unit Testing.
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Совместима ли функция Live Unit Testing с проектами .NET Core?
 
@@ -75,9 +71,9 @@ ms.lasthandoff: 02/21/2018
 
 - Пакеты NuGet, на которые имеются ссылки в проекте, не были восстановлены. Чтобы устранить эту проблему, перед включением Live Unit Testing выполните явную сборку решения или восстановите пакеты NuGet в решении.
 
-- При использовании в проекте тестов на основе MSTest удалите ссылку на `Microsoft.VisualStudio.QualityTools.UnitTestFramework` и добавьте ссылки на последнюю версию пакетов NuGet для MSTest, `MSTest.TestAdapter` (минимальная версия — 1.1.11) и `MSTest.TestFramework` (минимальная версия — 1.1.11). Дополнительные сведения см. в разделе "Поддерживаемые тестовые платформы" статьи [Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md#supported-test-frameworks).
+- При использовании в проекте тестов на основе MSTest удалите ссылку на `Microsoft.VisualStudio.QualityTools.UnitTestFramework` и добавьте ссылки на последнюю версию пакетов NuGet для MSTest, `MSTest.TestAdapter` (минимальная версия — 1.1.11) и `MSTest.TestFramework` (минимальная версия — 1.1.11). Дополнительные сведения см. в разделе "Поддерживаемые тестовые платформы" статьи [Использование Live Unit Testing в Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks).
 
-- По крайней мере один проект в решении должен иметь ссылку на NuGet или прямую ссылку на тестовую платформу xUnit, NUnit или MSTest. Этот проект также должен иметь ссылку на соответствующий пакет NuGet для адаптера теста Visual Studio. Ссылку на адаптер теста Visual Studio можно также создать, используя файл `.runsettings`. Файл `.runsettings` должен иметь запись, аналогичную следующей:
+- По крайней мере один проект в решении должен иметь ссылку на NuGet или прямую ссылку на платформу тестирования xUnit, NUnit или MSTest. Этот проект также должен иметь ссылку на соответствующий пакет NuGet для адаптера теста Visual Studio. Ссылку на адаптер теста Visual Studio можно также создать, используя файл `.runsettings`. Файл `.runsettings` должен иметь запись, аналогичную следующей:
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ ms.lasthandoff: 02/21/2018
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Почему Live Unit Testing показывает неправильный объем протестированного кода после обновления адаптера теста, на который ссылаются проекты Visual Studio, до поддерживаемой версии?
 
@@ -174,7 +170,7 @@ ms.lasthandoff: 02/21/2018
 
 **Ответ.**
 
-Пользовательские параметры см. в разделе "Добавление и исключение тестовых проектов и методов теста" статьи [Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods). Это очень полезно, когда необходимо выполнить конкретный набор тестов для определенного сеанса редактирования или сохранить личные настройки.
+Пользовательские параметры см. в разделе "Добавление и исключение тестовых проектов и методов теста" статьи [Использование Live Unit Testing в Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods). Это полезно, когда необходимо выполнить конкретный набор тестов для определенного сеанса редактирования или сохранить личные настройки.
  
 Для параметров, относящихся к конкретному решению, вы можете программно применить атрибут <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName>, чтобы исключить методы, свойства, классы или структуры из инструментирования с помощью функции Live Unit Testing. Кроме того, чтобы исключить весь проект из инструментирования, в файле проекта для свойства `<ExcludeFromCodeCoverage>` можно задать значение `true`. Функция Live Unit Testing будет по-прежнему выполнять неинструментированные тесты, но их покрытие визуализироваться не будет.
 
@@ -203,7 +199,7 @@ public class Class1
 
 **Ответ.**
 
-Эта проблема исправлена и отсутствует в Visual Studio 2017 версии 15.3. Выполните обновление до этой версии Visual Studio.
+Эта проблема исправлена и отсутствует в Visual Studio 2017 версии 15.3. Выполните обновление до этой версии Visual Studio.
 
 Это известная ошибка прежних версий Visual Studio 2017, которая в сборках Live Unit Testing может повлиять на внедрение следующих данных заголовка Win32 PE:
 

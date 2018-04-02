@@ -1,12 +1,12 @@
 ---
-title: "Профилирование производительности приложений в Visual Studio | Документы Майкрософт"
+title: Профилирование производительности приложений в Visual Studio | Документы Майкрософт
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bacc4e9ebb0b0125b22089ec53a97248e9e1f4e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Профилирование производительности приложений в Visual Studio
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
@@ -40,6 +40,9 @@ ms.lasthandoff: 01/04/2018
 |  ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео")  |    Просмотрите [видео об использовании средств диагностики](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), где показано, как можно анализировать загрузку ЦП и использование памяти. |
 
 В этом разделе мы обсудим анализ загрузки ЦП в обычном рабочем процессе отладки. Анализировать загрузку ЦП также можно без подключения отладчика — вы можете просто указать выполняющееся приложение. Дополнительные сведения см. в разделе [Сбор данных профилирования без отладки](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) и в статье [Выполнение средств профилирования с отладчиком и без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+
+> [!NOTE]
+> Для .NET Core и ASP.NET Core средство загрузки ЦП в настоящее время предоставляет неточные результаты для переносимых PBD-файлов. Используйте вместо этого полные PDB-файлы.
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Шаг 1. Сбор данных профилирования 
   

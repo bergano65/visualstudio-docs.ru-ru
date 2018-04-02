@@ -1,12 +1,13 @@
 ---
-title: "Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio | Документы Майкрософт
+description: В этом кратком руководстве вы создадите приложение Node.js в Visual Studio.
+ms.custom: ''
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -17,11 +18,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio вы создадите простое веб-приложение Node.js. Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.  
@@ -29,21 +30,21 @@ ms.lasthandoff: 02/19/2018
 ## <a name="create-a-project"></a>Создание проекта
 Сначала вы создадите проект веб-приложения Node.js.
 
+1. Если у вас не установлена среда выполнения Node.js, установите версию LTS с веб-сайта [Node.js](https://nodejs.org/en/download/).
+
+    Как правило, Visual Studio автоматически обнаруживает установленную среду выполнения Node.js. В противном случае вы можете указать в проекте ссылку на установленную среду.
+
 1. Откройте Visual Studio 2017.  
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.  
+1. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.  
 
-3. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Пустое веб-приложение Node.js** и нажмите кнопку **ОК**.   
+1. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Пустое веб-приложение Node.js** и нажмите кнопку **ОК**.   
 
      Если шаблон проекта **Пустое веб-приложение Node.js** отсутствует, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.  
 
      ![Рабочая нагрузка Node.js в установщике Visual Studio](../ide/media/quickstart-nodejs-workload.png)  
 
-    Visual Studio создаст решение и откроет проект. В редакторе откроется файл **server.js**.
-
-4. Если у вас не установлена среда выполнения Node.js, установите его ее с веб-сайта [Node.js](https://nodejs.org/en/download/).
-
-    Как правило, Visual Studio автоматически обнаруживает установленную среду выполнения Node.js. В противном случае вы можете указать в проекте ссылку на установленную среду.
+    Visual Studio создаст решение и откроет проект. Файл *server.js* откроется в редакторе в левой области.
 
 ## <a name="explore-the-ide"></a>Изучение интегрированной среды разработки  
 
@@ -61,11 +62,11 @@ ms.lasthandoff: 02/19/2018
 
    ![Командная строка Node.js](../ide/media/quickstart-nodejs-command-prompt.png) 
 
-1. В редакторе, в котором открыт файл **server.js**, выберите `http.createServer` и нажмите клавишу **F12** или выберите пункт **Перейти к определению** в контекстном меню. Эта команда выполняет переход к определению функции `createServer` в index.d.ts.  
+1. В редакторе, в котором открыт файл *server.js*, выберите `http.createServer` и нажмите клавишу **F12** или выберите пункт **Перейти к определению** в контекстном меню. Эта команда выполняет переход к определению функции `createServer` в index.d.ts.  
 
    ![Контекстное меню "Перейти к определению"](../ide/media/quickstart-nodejs-gotodefinition.png)  
 
-1. Установите курсор в конце строки кода `res.end('Hello World\n');` и измените ее следующим образом:
+1. Вернитесь к файлу *server.js*, установите курсор в конце строки кода `res.end('Hello World\n');` и измените ее следующим образом:
 
     `res.end('Hello World\n' + res.connection.`
 
@@ -88,6 +89,5 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="next-steps"></a>Следующие шаги 
 
-- Пройдите [учебник по Node.js](../nodejs/tutorial-nodejs.md)  
-- Дополнительные сведения об [интегрированной среде разработки Visual Studio](../ide/visual-studio-ide.md)  
-- Дополнительные сведения об [Инструментах Node.js для Visual Studio](https://github.com/Microsoft/nodejstools/wiki)
+- Пройдите [учебник по Node.js и выпуску Express](../nodejs/tutorial-nodejs.md)  
+- Пройдите [учебник по Node.js и React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  

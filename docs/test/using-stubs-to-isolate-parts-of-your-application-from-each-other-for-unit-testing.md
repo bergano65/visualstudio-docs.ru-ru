@@ -1,508 +1,472 @@
 ---
-title: "Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании | Microsoft Docs"
-ms.custom: 
+title: Использование заглушек для изоляции частей приложений при модульном тестировании в Visual Studio | Документы Майкрософт
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: eb7e66bd7cae362411783fb3e2063115f1f3769c
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5639fd12180e77bd1ac9011745311c03f1d9abfe
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
-*Типы заглушек* — это одна из двух технологий, которые платформа Microsoft Fakes предоставляет для более простого изолирования тестируемого компонента от других вызываемых компонентов. Заглушка — это небольшая часть кода, которая заменяет собой другой компонент во время тестирования. Преимущество использования заглушки заключается в том, что она возвращает последовательные результаты, упрощая написание теста. Тесты можно выполнять, даже если другие компоненты пока не работают.  
-  
- Обзор и рекомендации по быстрому началу работы с Fakes см. в разделе [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
-  
- Для использования заглушек необходимо написать компонент таким образом, чтобы он использовал только интерфейсы, а не классы для ссылки на другие части приложения. Это рекомендуемая практика разработки, поскольку при внесении изменений в одну часть, скорее всего, не потребуется вносить изменения в другую. При тестировании это позволяет заменить заглушку на реальный компонент.  
-  
- На схеме представлен компонент StockAnalyzer, который требуется протестировать. Обычно он использует другой компонент — RealStockFeed. Но RealStockFeed возвращает различные результаты при каждом вызове его методов, что усложняет тестирование StockAnalyzer.  Во время тестирования мы заменяем этот компонент на другой класс — StubStockFeed.  
-  
- ![Классы Real и Stub соответствуют одному интерфейсу.](../test/media/fakesinterfaces.png "FakesInterfaces")  
-  
- Поскольку предполагается, что заглушки могут структурировать код таким образом, они обычно используются для изолирования одной части приложения от другой. Для изолирования ее от других сборок, которыми вы не можете управлять, например System.dll, обычно используются оболочки. См. [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
-  
- **Требования**  
-  
--   Visual Studio Enterprise  
-  
-## <a name="in-this-topic"></a>Содержание раздела  
-  
--   [Использование заглушек](#how)  
-  
-    -   [Разработка для внедрения зависимости](#Dependency)  
-  
-    -   [Создание заглушек](#GeneratingStubs)  
-  
-    -   [Создание теста с заглушками](#WriteTest)  
-  
-    -   [Проверка значений параметров](#mocks)  
-  
--   [Заглушки для различных видов членов типа](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_basics)  
-  
-    -   [Методы](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Methods)  
-  
-    -   [Свойства](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Properties)  
-  
-    -   [События](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Events)  
-  
-    -   [Универсальные методы](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Generic_methods)  
-  
-    -   [Заглушки виртуальных классов](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Partial_stubs)  
-  
--   [Отладка заглушек](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Debugging_stubs)  
-  
--   [Ограничения заглушки](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_limitation)  
-  
--   [Изменение поведения заглушек по умолчанию](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Changing_the_default_behavior_of_stubs)  
-  
-##  <a name="How"></a> Использование заглушек  
-  
-###  <a name="Dependency"></a> Разработка для внедрения зависимости  
- Для использования заглушек приложение должно быть разработано таким образом, чтобы различные компоненты не зависели друг от друга, а только от определений интерфейса. Вместо соединения во время компиляции компоненты соединяются во время выполнения. Этот шаблон позволяет создать надежное и легко обновляемое программное обеспечение, поскольку изменения, как правило, не выходят за границы компонентов. Им рекомендуется пользоваться, даже если вы не используете заглушки. При написании нового кода легко использовать шаблон [внедрения зависимости](http://en.wikipedia.org/wiki/Dependency_injection). При написании тестов для существующего программного обеспечения может потребоваться выполнить его рефакторинг. Если это непрактично, можно рассмотреть возможность использования оболочек.  
-  
- Начнем с показательного примера, представленного на схеме. Класс StockAnalyzer считывает курсы акций и выдает некоторые интересные результаты. Он имеет несколько открытых методов, которые требуется протестировать. Для простоты рассмотрим только один из этих методов, который сообщает текущий курс определенной акции. Требуется написать модульный тест этого метода. Вот первый вариант теста.  
-  
-```csharp  
-[TestMethod]  
-public void TestMethod1()  
-{  
-    // Arrange:  
-    var analyzer = new StockAnalyzer();  
-    // Act:  
-    var result = analyzer.GetContosoPrice();  
-    // Assert:  
-    Assert.AreEqual(123, result); // Why 123?  
-}  
-```  
-  
-```vb  
-<TestMethod()> Public Sub TestMethod1()  
-    ' Arrange:  
-    Dim analyzer = New StockAnalyzer()  
-    ' Act:  
-    Dim result = analyzer.GetContosoPrice()  
-    ' Assert:  
-    Assert.AreEqual(123, result) ' Why 123?  
-End Sub  
-```  
-  
- Одна проблема с данным тестом немедленно бросается в глаза: курсы акции различаются, поэтому утверждение обычно будет выдавать ошибку.  
-  
- Другая проблема может заключаться в том, что компонент StockFeed, который используется классом StockAnalyzer, в данный момент находится в разработке. Вот первый вариант кода тестируемого метода.  
-  
-```csharp  
-public int GetContosoPrice()  
-{  
-    var stockFeed = new StockFeed(); // NOT RECOMMENDED  
-    return stockFeed.GetSharePrice("COOO");  
-}  
-```  
-  
-```vb  
-Public Function GetContosoPrice()  
-    Dim stockFeed = New StockFeed() ' NOT RECOMMENDED  
-    Return stockFeed.GetSharePrice("COOO")  
-End Function  
-```  
-  
- В таком виде этот метод может не компилироваться или может вызвать исключение, поскольку работа над классом StockFeed еще не завершена.  
-  
- Внедрение интерфейса позволит решить обе эти проблемы.  
-  
- При внедрении интерфейса применяется следующее правило:  
-  
--   Код любого компонента приложения не должен явно ссылаться на класс в другом компоненте ни в объявлении, ни в операторе `new`. Вместо этого переменные и параметры необходимо объявлять с помощью интерфейсов. Экземпляры компонента должны создаваться только в контейнере компонента.  
-  
-     "Компонент" в данном случае означает класс или группу классов, которые разрабатываются и обновляются вместе. Обычно компонент — это код в одном проекте Visual Studio. Отделять классы в одном компоненте не так важно, поскольку они обновляются одновременно.  
-  
-     Также не имеет особого значения отделять компоненты от классов относительно стабильной платформы, например System.dll. Если написать интерфейсы для всех этих классов, код будет перегружен.  
-  
- Таким образом, код StockAnalyzer можно улучшить, отделив его от StockFeed с помощью интерфейса следующим образом.  
-  
-```csharp  
-public interface IStockFeed  
-{  
-    int GetSharePrice(string company);  
-}  
-  
-public class StockAnalyzer  
-{  
-    private IStockFeed stockFeed;  
-    public Analyzer(IStockFeed feed)  
-    {  
-        stockFeed = feed;  
-    }  
-    public int GetContosoPrice()  
-    {  
-        return stockFeed.GetSharePrice("COOO");  
-    }  
-}  
-```  
-  
-```vb  
-Public Interface IStockFeed  
-    Function GetSharePrice(company As String) As Integer  
-End Interface  
-  
-Public Class StockAnalyzer  
-    ' StockAnalyzer can be connected to any IStockFeed:  
-    Private stockFeed As IStockFeed  
-    Public Sub New(feed As IStockFeed)  
-        stockFeed = feed  
-    End Sub    
-    Public Function GetContosoPrice()  
-        Return stockFeed.GetSharePrice("COOO")  
-    End Function  
-End Class  
-  
-```  
-  
- В этом примере классу StockAnalyzer передается реализация IStockFeed при построении. В готовом приложении код инициализации выполнил бы следующее подключение.  
-  
-```  
-analyzer = new StockAnalyzer(new StockFeed())  
-```  
-  
- Существуют более гибкие способы выполнения этого подключения. Например, StockAnalyzer может принять объект фабрики, который может создать экземпляры различных реализаций IStockFeed в различных условиях.  
-  
-###  <a name="GeneratingStubs"></a> Создание заглушек  
- Вы отделили класс, который необходимо протестировать, от других используемых им компонентов. Такое отделение позволяет не только сделать приложение более надежным и гибким, но и подключить тестируемый компонент к реализациям заглушки интерфейсов для тестирования.  
-  
- Достаточно написать заглушки как классы обычным способом. Однако Microsoft Fakes предлагает более динамический способ создания наиболее подходящей заглушки для каждого теста.  
-  
- Чтобы использовать заглушки, необходимо сначала создать типы заглушек из определений интерфейса.  
-  
-##### <a name="adding-a-fakes-assembly"></a>Добавление сборки имитации  
-  
-1.  В обозревателе решений разверните список **Ссылки** проекта модульного теста.  
-  
-    -   При работе в Visual Basic необходимо выбрать **Показать все файлы** на панели инструментов обозревателя решений, чтобы просмотреть список "Ссылки".  
-  
-2.  Выберите сборку, содержащую определения интерфейса, для которых необходимо создать заглушки.  
-  
-3.  В контекстном меню щелкните **Добавить сборку имитаций**.  
-  
-###  <a name="WriteTest"></a> Создание теста с заглушками  
-  
-```csharp  
-[TestClass]  
-class TestStockAnalyzer  
-{  
-    [TestMethod]  
-    public void TestContosoStockPrice()  
-    {  
-      // Arrange:  
-  
-        // Create the fake stockFeed:  
-        IStockFeed stockFeed =   
-             new StockAnalysis.Fakes.StubIStockFeed() // Generated by Fakes.  
-                 {  
-                     // Define each method:  
-                     // Name is original name + parameter types:  
-                     GetSharePriceString = (company) => { return 1234; }  
-                 };  
-  
-        // In the completed application, stockFeed would be a real one:  
-        var componentUnderTest = new StockAnalyzer(stockFeed);  
-  
-      // Act:  
-        int actualValue = componentUnderTest.GetContosoPrice();  
-  
-      // Assert:  
-        Assert.AreEqual(1234, actualValue);  
-    }  
-    ...  
-}  
-```  
-  
-```vb  
-<TestClass()> _  
-Class TestStockAnalyzer  
-  
-    <TestMethod()> _  
-    Public Sub TestContosoStockPrice()  
-        ' Arrange:  
-        ' Create the fake stockFeed:  
-        Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed  
-        With stockFeed  
-            .GetSharePriceString = Function(company)  
-                                       Return 1234  
-                                   End Function  
-        End With  
-        ' In the completed application, stockFeed would be a real one:  
-        Dim componentUnderTest As New StockAnalyzer(stockFeed)  
-        ' Act:  
-        Dim actualValue As Integer = componentUnderTest.GetContosoPrice  
-        ' Assert:  
-        Assert.AreEqual(1234, actualValue)  
-    End Sub  
-End Class  
-  
-```  
-  
- Особую роль здесь играет класс `StubIStockFeed`. Для каждого открытого типа в сборке, на которую указывает ссылка, механизм Microsoft Fakes создает класс заглушки. Имя класса заглушки является производным от имени интерфейса, где `Fakes.Stub` — это префикс, за которым следуют имена типов параметров.  
-  
- Заглушки также создаются для методов получения и задания свойств, для событий и для универсальных методов.  
-  
-###  <a name="mocks"></a> Проверка значений параметров  
- Можно проверить, что компонент передает правильные значения, когда вызывает другой компонент. Можно поместить утверждение в заглушку или сохранить значение и проверить его в основной части теста. Пример:  
-  
-```csharp  
-[TestClass]  
-class TestMyComponent  
-{  
-  
-    [TestMethod]  
-    public void TestVariableContosoPrice()  
-    {  
-     // Arrange:  
-        int priceToReturn;  
-        string companyCodeUsed;  
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()  
-            {  
-               GetSharePriceString = (company) =>   
-                  {   
-                     // Store the parameter value:  
-                     companyCodeUsed = company;  
-                     // Return the value prescribed by this test:  
-                     return priceToReturn;  
-                  };  
-            };  
-        // Set the value that will be returned by the stub:  
-        priceToReturn = 345;  
-  
-     // Act:  
-        int actualResult = componentUnderTest.GetContosoPrice();  
-  
-     // Assert:  
-        // Verify the correct result in the usual way:  
-        Assert.AreEqual(priceToReturn, actualResult);  
-  
-        // Verify that the component made the correct call:  
-        Assert.AreEqual("COOO", companyCodeUsed);  
-    }  
-...}  
-  
-```  
-  
-```vb  
-<TestClass()> _  
-Class TestMyComponent  
-    <TestMethod()> _  
-    Public Sub TestVariableContosoPrice()  
-        ' Arrange:  
-        Dim priceToReturn As Integer  
-        Dim companyCodeUsed As String = ""  
-        Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()  
-        With stockFeed  
-            ' Implement the interface's method:  
-            .GetSharePriceString = _  
-                Function(company)  
-                    ' Store the parameter value:  
-                    companyCodeUsed = company  
-                    ' Return a fixed result:  
-                    Return priceToReturn  
-                End Function  
-        End With  
-        ' Create an object to test:  
-        Dim componentUnderTest As New StockAnalyzer(stockFeed)  
-        ' Set the value that will be returned by the stub:  
-        priceToReturn = 345  
-  
-        ' Act:  
-        Dim actualResult As Integer = componentUnderTest.GetContosoPrice()  
-  
-        ' Assert:  
-        ' Verify the correct result in the usual way:  
-        Assert.AreEqual(priceToReturn, actualResult)  
-        ' Verify that the component made the correct call:  
-        Assert.AreEqual("COOO", companyCodeUsed)  
-    End Sub  
-...  
-End Class  
-```  
-  
-##  <a name="BKMK_Stub_basics"></a> Заглушки для различных видов членов типа  
-  
-###  <a name="BKMK_Methods"></a> Методы  
- Как описано в примере, методы могут быть заменены заглушками путем добавления делегата в экземпляр класса заглушки. Имя типа заглушки является производным от имен метода и параметров. Например, даны следующие интерфейс `IMyInterface` и метод `MyMethod`.  
-  
-```csharp  
-// application under test  
-interface IMyInterface   
-{  
-    int MyMethod(string value);  
-}  
-```  
-  
- Мы присоединяем заглушку к методу `MyMethod`, который всегда возвращает значение 1.  
-  
-```csharp  
-// unit test code  
-  var stub = new StubIMyInterface ();  
-  stub.MyMethodString = (value) => 1;  
-  
-```  
-  
- Если не предоставить заглушку для функции, Fakes создаст функцию, возвращающую значение по умолчанию возвращаемого типа. Для чисел значением по умолчанию является 0, а для типов классов — `null` (C#) или `Nothing` (Visual Basic).  
-  
-###  <a name="BKMK_Properties"></a> Свойства  
- Методы получения и задания свойств представляются как отдельные делегаты и могут быть заменены заглушками отдельно. Например, рассмотрим свойство `Value` интерфейса `IMyInterface`.  
-  
-```csharp  
-// code under test  
-interface IMyInterface   
-{  
-    int Value { get; set; }  
-}  
-  
-```  
-  
- Мы присоединяем делегаты к методам получения и задания свойства `Value`, чтобы сымитировать автосвойство.  
-  
-```csharp  
-// unit test code  
-int i = 5;  
-var stub = new StubIMyInterface();  
-stub.ValueGet = () => i;  
-stub.ValueSet = (value) => i = value;  
-  
-```  
-  
- Если не предоставить методы-заглушки для метода получения или задания свойства, Fakes создаст заглушку, хранящую значения, чтобы свойство заглушки выступало в роли простой переменной.  
-  
-###  <a name="BKMK_Events"></a> События  
- События представляются как поля делегата. В результате любые события, замененные заглушками, могут вызываться путем вызова резервного поля события. Рассмотрим следующий интерфейс, который требуется заменить заглушкой.  
-  
-```csharp  
-// code under test  
-interface IWithEvents   
-{  
-    event EventHandler Changed;  
-}  
-```  
-  
- Чтобы вызвать событие `Changed`, достаточно вызвать резервный делегат.  
-  
-```csharp  
-// unit test code  
-  var withEvents = new StubIWithEvents();  
-  // raising Changed  
-  withEvents.ChangedEvent(withEvents, EventArgs.Empty);  
-  
-```  
-  
-###  <a name="BKMK_Generic_methods"></a> Универсальные методы  
- Чтобы заменить универсальные методы заглушками, предоставьте делегат для каждого требуемого экземпляра метода. Например, рассмотрим следующий интерфейс, содержащий универсальный метод.  
-  
-```csharp  
-// code under test  
-interface IGenericMethod   
-{  
-    T GetValue<T>();  
-}  
-```  
-  
- Можно написать тест, в котором экземпляр `GetValue<int>` заменяется заглушкой.  
-  
-```csharp  
-// unit test code  
-[TestMethod]  
-public void TestGetValue()   
-{  
-    var stub = new StubIGenericMethod();  
-    stub.GetValueOf1<int>(() => 5);  
-  
-    IGenericMethod target = stub;  
-    Assert.AreEqual(5, target.GetValue<int>());  
-}  
-```  
-  
- Если бы код вызвал `GetValue<T>` с любым другим экземпляром, то заглушка просто вызвала бы поведение.  
-  
-###  <a name="BKMK_Partial_stubs"></a> Заглушки виртуальных классов  
- В предыдущих примерах заглушки создавались из интерфейсов. Заглушки также можно создавать из класса с виртуальными или абстрактными членами. Пример:  
-  
-```csharp  
-// Base class in application under test  
-    public abstract class MyClass  
-    {  
-        public abstract void DoAbstract(string x);  
-        public virtual int DoVirtual(int n)  
-        { return n + 42; }  
-        public int DoConcrete()  
-        { return 1; }  
-    }  
-```  
-  
- В заглушке, созданной из этого класса, можно задать методы делегата для DoAbstract() и DoVirtual(), но не DoConcrete().  
-  
-```csharp  
-// unit test  
-  var stub = new Fakes.MyClass();  
-  stub.DoAbstractString = (x) => { Assert.IsTrue(x>0); };  
-  stub.DoVirtualInt32 = (n) => 10 ;  
-  
-```  
-  
- Если не предоставить делегат для виртуального метода, Fakes может предоставить поведение по умолчанию или вызвать метод в базовом классе. Чтобы вызывался базовый метод, задайте свойство `CallBase`.  
-  
-```csharp  
-// unit test code  
-var stub = new Fakes.MyClass();  
-stub.CallBase = false;  
-// No delegate set - default delegate:  
-Assert.AreEqual(0, stub.DoVirtual(1));  
-  
-stub.CallBase = true;  
-//No delegate set - calls the base:  
-Assert.AreEqual(43,stub.DoVirtual(1));  
-```  
-  
-##  <a name="BKMK_Debugging_stubs"></a> Отладка заглушек  
- Типы заглушек призваны обеспечить бесперебойную отладку. По умолчанию отладчик должен обходить любой создаваемый код, чтобы сразу переходить к пользовательским реализациям членов, которые присоединены к заглушке.  
-  
-##  <a name="BKMK_Stub_limitation"></a> Ограничения заглушки  
-  
-1.  Сигнатуры методов с указателями не поддерживаются.  
-  
-2.  Запечатанные классы или статические методы не могут быть заменены заглушками, поскольку типы заглушек зависят от диспетчеризации виртуальных методов. В таких случаях используйте типы оболочек, которые описываются в разделе [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
-  
-##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Изменение поведения заглушек по умолчанию  
- Каждый созданный тип заглушки содержит экземпляр интерфейса `IStubBehavior` (через свойство `IStub.InstanceBehavior`). Поведение вызывается каждый раз, когда клиент вызывает член без присоединенного пользовательского делегата. Если поведение не задано, будет использоваться экземпляр, возвращаемый свойством `StubsBehaviors.Current`. По умолчанию это свойство возвращает поведение, вызывающее исключение `NotImplementedException`.  
-  
- Это поведение можно изменить в любое время, задав свойство `InstanceBehavior` в любом экземпляре заглушки. Например, в следующем фрагменте кода изменяется поведение, которое ничего не делает или возвращает значение по умолчанию для возвращаемого типа `default(T)`.  
-  
-```csharp  
-// unit test code  
-var stub = new StubIFileSystem();  
-// return default(T) or do nothing  
-stub.InstanceBehavior = StubsBehaviors.DefaultValue;  
-```  
-  
- Поведение также можно изменить глобально для всех объектов заглушки, для которых не было задано поведение, путем задания свойства `StubsBehaviors.Current`.  
-  
-```csharp  
-// unit test code  
-//change default behavior for all stub instances  
-//where the behavior has not been set  
-StubBehaviors.Current =   
-    BehavedBehaviors.DefaultValue;  
-```  
-  
-## <a name="external-resources"></a>Внешние ресурсы  
-  
-### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
-  
-## <a name="see-also"></a>См. также  
- [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+# <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
+
+*Типы заглушек* — это одна из двух технологий, которые платформа Microsoft Fakes предоставляет для более простого изолирования тестируемого компонента от других вызываемых компонентов. Заглушка — это небольшая часть кода, которая заменяет собой другой компонент во время тестирования. Преимущество использования заглушки заключается в том, что она возвращает последовательные результаты, упрощая написание теста. Тесты можно выполнять, даже если другие компоненты пока не работают.
+
+ Обзор и рекомендации по быстрому началу работы с Fakes см. в разделе [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
+
+ Для использования заглушек необходимо написать компонент таким образом, чтобы он использовал только интерфейсы, а не классы для ссылки на другие части приложения. Это рекомендуемая практика разработки, поскольку при внесении изменений в одну часть, скорее всего, не потребуется вносить изменения в другую. При тестировании это позволяет заменить заглушку на реальный компонент.
+
+ На схеме представлен компонент StockAnalyzer, который требуется протестировать. Обычно он использует другой компонент — RealStockFeed. Но RealStockFeed возвращает различные результаты при каждом вызове его методов, что усложняет тестирование StockAnalyzer.  Во время тестирования мы заменяем этот компонент на другой класс — StubStockFeed.
+
+ ![Классы Real и Stub соответствуют одному интерфейсу.](../test/media/fakesinterfaces.png "FakesInterfaces")
+
+ Поскольку предполагается, что заглушки могут структурировать код таким образом, они обычно используются для изолирования одной части приложения от другой. Для изолирования ее от других сборок, которыми вы не можете управлять, например System.dll, обычно используются оболочки. См. [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+
+ **Требования**
+
+-   Visual Studio Enterprise
+
+## <a name="how-to-use-stubs"></a>Использование заглушек
+
+###  <a name="Dependency"></a> Разработка для внедрения зависимости
+ Для использования заглушек приложение должно быть разработано таким образом, чтобы различные компоненты не зависели друг от друга, а только от определений интерфейса. Вместо соединения во время компиляции компоненты соединяются во время выполнения. Этот шаблон позволяет создать надежное и легко обновляемое программное обеспечение, поскольку изменения, как правило, не выходят за границы компонентов. Им рекомендуется пользоваться, даже если вы не используете заглушки. При написании нового кода легко использовать шаблон [внедрения зависимости](http://en.wikipedia.org/wiki/Dependency_injection). При написании тестов для существующего программного обеспечения может потребоваться выполнить его рефакторинг. Если это непрактично, можно рассмотреть возможность использования оболочек.
+
+ Начнем с показательного примера, представленного на схеме. Класс StockAnalyzer считывает курсы акций и выдает некоторые интересные результаты. Он имеет несколько открытых методов, которые требуется протестировать. Для простоты рассмотрим только один из этих методов, который сообщает текущий курс определенной акции. Требуется написать модульный тест этого метода. Вот первый вариант теста.
+
+```csharp
+[TestMethod]
+public void TestMethod1()
+{
+    // Arrange:
+    var analyzer = new StockAnalyzer();
+    // Act:
+    var result = analyzer.GetContosoPrice();
+    // Assert:
+    Assert.AreEqual(123, result); // Why 123?
+}
+```
+
+```vb
+<TestMethod()> Public Sub TestMethod1()
+    ' Arrange:
+    Dim analyzer = New StockAnalyzer()
+    ' Act:
+    Dim result = analyzer.GetContosoPrice()
+    ' Assert:
+    Assert.AreEqual(123, result) ' Why 123?
+End Sub
+```
+
+ Одна проблема с данным тестом немедленно бросается в глаза: курсы акции различаются, поэтому утверждение обычно будет выдавать ошибку.
+
+ Другая проблема может заключаться в том, что компонент StockFeed, который используется классом StockAnalyzer, в данный момент находится в разработке. Вот первый вариант кода тестируемого метода.
+
+```csharp
+public int GetContosoPrice()
+{
+    var stockFeed = new StockFeed(); // NOT RECOMMENDED
+    return stockFeed.GetSharePrice("COOO");
+}
+```
+
+```vb
+Public Function GetContosoPrice()
+    Dim stockFeed = New StockFeed() ' NOT RECOMMENDED
+    Return stockFeed.GetSharePrice("COOO")
+End Function
+```
+
+ В таком виде этот метод может не компилироваться или может вызвать исключение, поскольку работа над классом StockFeed еще не завершена.
+
+ Внедрение интерфейса позволит решить обе эти проблемы.
+
+ При внедрении интерфейса применяется следующее правило:
+
+-   Код любого компонента приложения не должен явно ссылаться на класс в другом компоненте ни в объявлении, ни в операторе `new`. Вместо этого переменные и параметры необходимо объявлять с помощью интерфейсов. Экземпляры компонента должны создаваться только в контейнере компонента.
+
+     "Компонент" в данном случае означает класс или группу классов, которые разрабатываются и обновляются вместе. Обычно компонент — это код в одном проекте Visual Studio. Отделять классы в одном компоненте не так важно, поскольку они обновляются одновременно.
+
+     Также не имеет особого значения отделять компоненты от классов относительно стабильной платформы, например System.dll. Если написать интерфейсы для всех этих классов, код будет перегружен.
+
+ Таким образом, код StockAnalyzer можно улучшить, отделив его от StockFeed с помощью интерфейса следующим образом.
+
+```csharp
+public interface IStockFeed
+{
+    int GetSharePrice(string company);
+}
+
+public class StockAnalyzer
+{
+    private IStockFeed stockFeed;
+    public Analyzer(IStockFeed feed)
+    {
+        stockFeed = feed;
+    }
+    public int GetContosoPrice()
+    {
+        return stockFeed.GetSharePrice("COOO");
+    }
+}
+```
+
+```vb
+Public Interface IStockFeed
+    Function GetSharePrice(company As String) As Integer
+End Interface
+
+Public Class StockAnalyzer
+    ' StockAnalyzer can be connected to any IStockFeed:
+    Private stockFeed As IStockFeed
+    Public Sub New(feed As IStockFeed)
+        stockFeed = feed
+    End Sub
+    Public Function GetContosoPrice()
+        Return stockFeed.GetSharePrice("COOO")
+    End Function
+End Class
+
+```
+
+ В этом примере классу StockAnalyzer передается реализация IStockFeed при построении. В готовом приложении код инициализации выполнил бы следующее подключение.
+
+```
+analyzer = new StockAnalyzer(new StockFeed())
+```
+
+ Существуют более гибкие способы выполнения этого подключения. Например, StockAnalyzer может принять объект фабрики, который может создать экземпляры различных реализаций IStockFeed в различных условиях.
+
+###  <a name="GeneratingStubs"></a> Создание заглушек
+ Вы отделили класс, который необходимо протестировать, от других используемых им компонентов. Такое отделение позволяет не только сделать приложение более надежным и гибким, но и подключить тестируемый компонент к реализациям заглушки интерфейсов для тестирования.
+
+ Достаточно написать заглушки как классы обычным способом. Однако Microsoft Fakes предлагает более динамический способ создания наиболее подходящей заглушки для каждого теста.
+
+ Чтобы использовать заглушки, необходимо сначала создать типы заглушек из определений интерфейса.
+
+##### <a name="adding-a-fakes-assembly"></a>Добавление сборки имитации
+
+1.  В обозревателе решений разверните список **Ссылки** проекта модульного теста.
+
+    -   При работе в Visual Basic необходимо выбрать **Показать все файлы** на панели инструментов обозревателя решений, чтобы просмотреть список "Ссылки".
+
+2.  Выберите сборку, содержащую определения интерфейса, для которых необходимо создать заглушки.
+
+3.  В контекстном меню щелкните **Добавить сборку имитаций**.
+
+###  <a name="WriteTest"></a> Создание теста с заглушками
+
+```csharp
+[TestClass]
+class TestStockAnalyzer
+{
+    [TestMethod]
+    public void TestContosoStockPrice()
+    {
+      // Arrange:
+
+        // Create the fake stockFeed:
+        IStockFeed stockFeed =
+             new StockAnalysis.Fakes.StubIStockFeed() // Generated by Fakes.
+                 {
+                     // Define each method:
+                     // Name is original name + parameter types:
+                     GetSharePriceString = (company) => { return 1234; }
+                 };
+
+        // In the completed application, stockFeed would be a real one:
+        var componentUnderTest = new StockAnalyzer(stockFeed);
+
+      // Act:
+        int actualValue = componentUnderTest.GetContosoPrice();
+
+      // Assert:
+        Assert.AreEqual(1234, actualValue);
+    }
+    ...
+}
+```
+
+```vb
+<TestClass()> _
+Class TestStockAnalyzer
+
+    <TestMethod()> _
+    Public Sub TestContosoStockPrice()
+        ' Arrange:
+        ' Create the fake stockFeed:
+        Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed
+        With stockFeed
+            .GetSharePriceString = Function(company)
+                                       Return 1234
+                                   End Function
+        End With
+        ' In the completed application, stockFeed would be a real one:
+        Dim componentUnderTest As New StockAnalyzer(stockFeed)
+        ' Act:
+        Dim actualValue As Integer = componentUnderTest.GetContosoPrice
+        ' Assert:
+        Assert.AreEqual(1234, actualValue)
+    End Sub
+End Class
+
+```
+
+ Особую роль здесь играет класс `StubIStockFeed`. Для каждого открытого типа в сборке, на которую указывает ссылка, механизм Microsoft Fakes создает класс заглушки. Имя класса заглушки является производным от имени интерфейса, где `Fakes.Stub` — это префикс, за которым следуют имена типов параметров.
+
+ Заглушки также создаются для методов получения и задания свойств, для событий и для универсальных методов.
+
+###  <a name="mocks"></a> Проверка значений параметров
+ Можно проверить, что компонент передает правильные значения, когда вызывает другой компонент. Можно поместить утверждение в заглушку или сохранить значение и проверить его в основной части теста. Пример:
+
+```csharp
+[TestClass]
+class TestMyComponent
+{
+
+    [TestMethod]
+    public void TestVariableContosoPrice()
+    {
+     // Arrange:
+        int priceToReturn;
+        string companyCodeUsed;
+        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+            {
+               GetSharePriceString = (company) =>
+                  {
+                     // Store the parameter value:
+                     companyCodeUsed = company;
+                     // Return the value prescribed by this test:
+                     return priceToReturn;
+                  };
+            };
+        // Set the value that will be returned by the stub:
+        priceToReturn = 345;
+
+     // Act:
+        int actualResult = componentUnderTest.GetContosoPrice();
+
+     // Assert:
+        // Verify the correct result in the usual way:
+        Assert.AreEqual(priceToReturn, actualResult);
+
+        // Verify that the component made the correct call:
+        Assert.AreEqual("COOO", companyCodeUsed);
+    }
+...}
+
+```
+
+```vb
+<TestClass()> _
+Class TestMyComponent
+    <TestMethod()> _
+    Public Sub TestVariableContosoPrice()
+        ' Arrange:
+        Dim priceToReturn As Integer
+        Dim companyCodeUsed As String = ""
+        Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
+        With stockFeed
+            ' Implement the interface's method:
+            .GetSharePriceString = _
+                Function(company)
+                    ' Store the parameter value:
+                    companyCodeUsed = company
+                    ' Return a fixed result:
+                    Return priceToReturn
+                End Function
+        End With
+        ' Create an object to test:
+        Dim componentUnderTest As New StockAnalyzer(stockFeed)
+        ' Set the value that will be returned by the stub:
+        priceToReturn = 345
+
+        ' Act:
+        Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
+
+        ' Assert:
+        ' Verify the correct result in the usual way:
+        Assert.AreEqual(priceToReturn, actualResult)
+        ' Verify that the component made the correct call:
+        Assert.AreEqual("COOO", companyCodeUsed)
+    End Sub
+...
+End Class
+```
+
+##  <a name="BKMK_Stub_basics"></a> Заглушки для различных видов членов типа
+
+###  <a name="BKMK_Methods"></a> Методы
+ Как описано в примере, методы могут быть заменены заглушками путем добавления делегата в экземпляр класса заглушки. Имя типа заглушки является производным от имен метода и параметров. Например, даны следующие интерфейс `IMyInterface` и метод `MyMethod`.
+
+```csharp
+// application under test
+interface IMyInterface
+{
+    int MyMethod(string value);
+}
+```
+
+ Мы присоединяем заглушку к методу `MyMethod`, который всегда возвращает значение 1.
+
+```csharp
+// unit test code
+  var stub = new StubIMyInterface ();
+  stub.MyMethodString = (value) => 1;
+
+```
+
+ Если не предоставить заглушку для функции, Fakes создаст функцию, возвращающую значение по умолчанию возвращаемого типа. Для чисел значением по умолчанию является 0, а для типов классов — `null` (C#) или `Nothing` (Visual Basic).
+
+###  <a name="BKMK_Properties"></a> Свойства
+ Методы получения и задания свойств представляются как отдельные делегаты и могут быть заменены заглушками отдельно. Например, рассмотрим свойство `Value` интерфейса `IMyInterface`.
+
+```csharp
+// code under test
+interface IMyInterface
+{
+    int Value { get; set; }
+}
+
+```
+
+ Мы присоединяем делегаты к методам получения и задания свойства `Value`, чтобы сымитировать автосвойство.
+
+```csharp
+// unit test code
+int i = 5;
+var stub = new StubIMyInterface();
+stub.ValueGet = () => i;
+stub.ValueSet = (value) => i = value;
+
+```
+
+ Если не предоставить методы-заглушки для метода получения или задания свойства, Fakes создаст заглушку, хранящую значения, чтобы свойство заглушки выступало в роли простой переменной.
+
+###  <a name="BKMK_Events"></a> События
+ События представляются как поля делегата. В результате любые события, замененные заглушками, могут вызываться путем вызова резервного поля события. Рассмотрим следующий интерфейс, который требуется заменить заглушкой.
+
+```csharp
+// code under test
+interface IWithEvents
+{
+    event EventHandler Changed;
+}
+```
+
+ Чтобы вызвать событие `Changed`, достаточно вызвать резервный делегат.
+
+```csharp
+// unit test code
+  var withEvents = new StubIWithEvents();
+  // raising Changed
+  withEvents.ChangedEvent(withEvents, EventArgs.Empty);
+
+```
+
+###  <a name="BKMK_Generic_methods"></a> Универсальные методы
+ Чтобы заменить универсальные методы заглушками, предоставьте делегат для каждого требуемого экземпляра метода. Например, рассмотрим следующий интерфейс, содержащий универсальный метод.
+
+```csharp
+// code under test
+interface IGenericMethod
+{
+    T GetValue<T>();
+}
+```
+
+ Можно написать тест, в котором экземпляр `GetValue<int>` заменяется заглушкой.
+
+```csharp
+// unit test code
+[TestMethod]
+public void TestGetValue()
+{
+    var stub = new StubIGenericMethod();
+    stub.GetValueOf1<int>(() => 5);
+
+    IGenericMethod target = stub;
+    Assert.AreEqual(5, target.GetValue<int>());
+}
+```
+
+ Если бы код вызвал `GetValue<T>` с любым другим экземпляром, то заглушка просто вызвала бы поведение.
+
+###  <a name="BKMK_Partial_stubs"></a> Заглушки виртуальных классов
+ В предыдущих примерах заглушки создавались из интерфейсов. Заглушки также можно создавать из класса с виртуальными или абстрактными членами. Пример:
+
+```csharp
+// Base class in application under test
+    public abstract class MyClass
+    {
+        public abstract void DoAbstract(string x);
+        public virtual int DoVirtual(int n)
+        { return n + 42; }
+        public int DoConcrete()
+        { return 1; }
+    }
+```
+
+ В заглушке, созданной из этого класса, можно задать методы делегата для DoAbstract() и DoVirtual(), но не DoConcrete().
+
+```csharp
+// unit test
+  var stub = new Fakes.MyClass();
+  stub.DoAbstractString = (x) => { Assert.IsTrue(x>0); };
+  stub.DoVirtualInt32 = (n) => 10 ;
+
+```
+
+ Если не предоставить делегат для виртуального метода, Fakes может предоставить поведение по умолчанию или вызвать метод в базовом классе. Чтобы вызывался базовый метод, задайте свойство `CallBase`.
+
+```csharp
+// unit test code
+var stub = new Fakes.MyClass();
+stub.CallBase = false;
+// No delegate set - default delegate:
+Assert.AreEqual(0, stub.DoVirtual(1));
+
+stub.CallBase = true;
+//No delegate set - calls the base:
+Assert.AreEqual(43,stub.DoVirtual(1));
+```
+
+##  <a name="BKMK_Debugging_stubs"></a> Отладка заглушек
+ Типы заглушек призваны обеспечить бесперебойную отладку. По умолчанию отладчик должен обходить любой создаваемый код, чтобы сразу переходить к пользовательским реализациям членов, которые присоединены к заглушке.
+
+##  <a name="BKMK_Stub_limitation"></a> Ограничения заглушки
+
+1.  Сигнатуры методов с указателями не поддерживаются.
+
+2.  Запечатанные классы или статические методы не могут быть заменены заглушками, поскольку типы заглушек зависят от диспетчеризации виртуальных методов. В таких случаях используйте типы оболочек, которые описываются в разделе [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+
+##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Изменение поведения заглушек по умолчанию
+ Каждый созданный тип заглушки содержит экземпляр интерфейса `IStubBehavior` (через свойство `IStub.InstanceBehavior`). Поведение вызывается каждый раз, когда клиент вызывает член без присоединенного пользовательского делегата. Если поведение не задано, будет использоваться экземпляр, возвращаемый свойством `StubsBehaviors.Current`. По умолчанию это свойство возвращает поведение, вызывающее исключение `NotImplementedException`.
+
+ Это поведение можно изменить в любое время, задав свойство `InstanceBehavior` в любом экземпляре заглушки. Например, в следующем фрагменте кода изменяется поведение, которое ничего не делает или возвращает значение по умолчанию для возвращаемого типа `default(T)`.
+
+```csharp
+// unit test code
+var stub = new StubIFileSystem();
+// return default(T) or do nothing
+stub.InstanceBehavior = StubsBehaviors.DefaultValue;
+```
+
+ Поведение также можно изменить глобально для всех объектов заглушки, для которых не было задано поведение, путем задания свойства `StubsBehaviors.Current`.
+
+```csharp
+// unit test code
+//change default behavior for all stub instances
+//where the behavior has not been set
+StubBehaviors.Current =
+    BehavedBehaviors.DefaultValue;
+```
+
+## <a name="see-also"></a>См. также
+
+- [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

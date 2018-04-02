@@ -1,10 +1,10 @@
 ---
-title: "Как сообщить о проблеме с Visual Studio 2017 | Документы Майкрософт"
-ms.custom: 
-ms.date: 02/26/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+title: Как сообщить о проблеме с Visual Studio 2017 | Документы Майкрософт
+ms.custom: ''
+ms.date: 03/11/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Как сообщить о проблеме с Visual Studio 2017
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 02/28/2018
 
  Нажмите кнопку **Отправить** для отправки отчета вместе с изображениями и файлами трассировки или дампа. (Если кнопка **Отправить** недоступна, убедитесь, что вы ввели название и описание отчета.)
 
-## Альтернативная система отчетов <a name="alternate_reporting"></a>
+## Альтернативные способы отправки отчетов <a name="alternate_reporting"></a>
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Сообщение о проблеме с помощью Visual Studio Installer
 
@@ -77,9 +77,9 @@ ms.lasthandoff: 02/28/2018
 
  ![Чтобы открыть средство обратной связи, можно перейти к кнопке "Предоставление отзыва" в Visual Studio Installer с помощью клавиши табуляции.](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>Сообщение о проблеме напрямую сообществу разработчиков Visual Studio
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Поиск проблем и решений с помощью сообщества разработчиков Visual Studio
 
-Если вы не хотите или не можете использовать Visual Studio, чтобы сообщить о проблеме, можно напрямую обратиться в сообщество разработчиков Visual Studio. Дополнительные сведения см. на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio, есть вероятность, что о ней уже сообщили и решение опубликовано в сообществе разработчиков Visual Studio. Дополнительные сведения см. на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Отправка отзыва или предложения по продукту
 

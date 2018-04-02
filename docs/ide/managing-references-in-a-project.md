@@ -1,12 +1,12 @@
 ---
-title: "Управление ссылками в проекте | Документы Майкрософт"
-ms.custom: 
+title: Управление ссылками в проекте | Документы Майкрософт
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
 
@@ -108,7 +108,7 @@ ms.lasthandoff: 01/29/2018
 
 Разработчики могут создавать приложения, которые ссылаются на проекты или сборки, предназначенные для другой версии платформы .NET Framework. Например, разработчик может создать приложение, предназначенное для [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] и ссылающееся на сборку, которая предназначена для [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. При создании проекта, предназначенного для более ранней версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], задание в этом проекте ссылки на проект или сборку для более новой версии невозможно.
 
-Дополнительные сведения см. в разделе [Указание конкретной версии или профиля .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Дополнительные сведения см. в статье [Обзор настройки для различных версий](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Перекрестные ссылки между проектами
 
@@ -125,5 +125,5 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="see-also"></a>См. также
 
-[Диагностика неработающих ссылок](../ide/troubleshooting-broken-references.md)  
+[Диагностика неработающих ссылок](../ide/troubleshooting-broken-references.md)
 [Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

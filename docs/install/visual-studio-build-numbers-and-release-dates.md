@@ -1,23 +1,23 @@
 ---
-title: "Номера сборки и даты выпуска Visual Studio 2017 | Документация Майкрософт"
-description: "Актуальный список выпущенных версий и номера сборки Visual Studio 2017, отсортированные по дате."
-keywords: 
+title: Номера сборки и даты выпуска Visual Studio 2017 | Документация Майкрософт
+description: Актуальный список выпущенных версий и номера сборки Visual Studio 2017, отсортированные по дате.
+keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/08/2018
+ms.date: 03/19/2018
 ms.topic: article
-helpviewer_keywords: 
+helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
-ms.service: 
+ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: fffebc62b18226d50fb836144f250894b6a013fd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 4fb2238d8a0afb8334a05585bf040931da81d66a
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio 2017
 
@@ -25,6 +25,10 @@ ms.lasthandoff: 03/12/2018
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.3 | выпуска | 19 марта 2018 г. | 15.6.27428.2011 |
+| 15.7.0 (предварительная версия 1.0) | Предварительный просмотр | 13 марта 2018 г. | 15.7.27512.0 |
+| 15.6.2 | выпуска | 13 марта 2018 г. | 15.6.27428.2005 |
+| 15.0.11 | выпуска | 13 марта 2018 г. | 15.0.26228.29 |
 | 15.6.1 | выпуска | 8 марта 2018 г. | 15.6.27428.2002 |
 | 15.6.1 (предварительная версия 1.0) | Предварительный просмотр | 8 марта 2018 г. | 15.6.27428.2002 |
 | 15.6.0 | выпуска | 5 марта 2018 г. | 15.6.27428.1 |

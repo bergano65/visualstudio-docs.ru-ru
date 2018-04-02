@@ -1,27 +1,27 @@
 ---
-title: "Получение журналов построения с помощью MSBuild | Документы Майкрософт"
-ms.custom: 
+title: Получение журналов построения с помощью MSBuild | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-caps.latest.revision: 
+caps.latest.revision: 27
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Получение журналов построения с помощью MSBuild
 С помощью параметров MSBuild можно указать объем данных сборки для проверки и необходимость сохранения данных сборки в один или несколько файлов. Можно также указать пользовательское средство ведения журналов для сбора данных сборки. Сведения о параметрах командной строки MSBuild, не рассматриваемых в этом разделе, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
@@ -45,7 +45,7 @@ ms.lasthandoff: 02/09/2018
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>Сохранение журнала построения в файл  
  Параметр **/fileLogger** (**fl**) можно использовать для сохранения данных сборки в файл. В следующем примере данные сборки сохраняются в файл с именем `msbuild.log`.  
   
@@ -72,7 +72,19 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 ```  
   
  Дополнительные сведения см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
-  
+
+## <a name="saving-a-binary-log"></a>Сохранение двоичного файла журнала
+
+Чтобы сохранить журнал в сжатом двоичном формате, используйте параметр **/binaryLogger** (**bl**). Этот журнал содержит подробное описание процесса сборки и может считываться определенными средствами анализа журнала.
+
+В следующем примере создается двоичный файл журнала с именем `binarylogfilename`.
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+Дополнительные сведения см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
+
 ## <a name="using-a-custom-logger"></a>Использование пользовательского средства ведения журнала  
  Для создания собственного средства ведения журнала можно разработать управляемый тип, реализующий интерфейс <xref:Microsoft.Build.Framework.ILogger>. Пользовательское средство ведения журнала можно использовать, например для отправке ошибок сборки по электронной почте, регистрации их в базе данных или в XML-файл журнала. Дополнительные сведения см. в разделе [Средства ведения журнала сборки](../msbuild/build-loggers.md).  
   

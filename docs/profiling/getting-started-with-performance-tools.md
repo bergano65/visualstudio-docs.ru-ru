@@ -1,30 +1,30 @@
 ---
-title: "Приступая к работе со средствами производительности | Документы Майкрософт"
-ms.custom: 
+title: Приступая к работе со средствами оценки производительности | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="getting-started-with-performance-tools"></a>Приступая к работе со средствами производительности
+# <a name="getting-started-with-performance-tools"></a>Приступая к работе со средствами оценки производительности
 Этот раздел содержит обзор основные понятий и задач, выполняемых при сборе, просмотре и анализе производительности кода с помощью средств оценки производительности Visual Studio.  
   
  Эти средства предоставляют несколько способов сбора и анализа данных производительности. Однако, как правило, рекомендуется сначала использовать значения по умолчанию мастера производительности, позволяющего собирать статистические данные приложения, которые могут указывать на проблемы с производительностью в коде.  
@@ -33,13 +33,12 @@ ms.lasthandoff: 02/27/2018
   
 -   Отчеты о производительности позволяют взглянуть на разные уровни структуры вашего приложения, от строк исходного кода до процессов, а также на данные выполнения программы, от вызовов и вызванных функций до конкретной функции в дереве вызовов всего приложения.  
   
-## <a name="common-tasks"></a>Общие задачи  
+## <a name="common-tasks"></a>Типичные задачи  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
 |**Быстрое профилирование приложения или веб-сайта:** с помощью мастера производительности можно настроить и запустить сеанс профилирования для решения Visual Studio или веб-сайта.|-   [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Практическое руководство. Сбор данных о производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**Профилирование приложения без мастера:** узнайте, как использовать страницы свойств сеанса анализа производительности для создания сеанса производительности.|-   [Практическое руководство. Создание сеансов анализа производительности вручную](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Попробуйте:** получите практический опыт профилирования, используя пример приложения.|-   [Пошаговое руководство. Выявление проблем с производительностью](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Пример PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>См. также  
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)   

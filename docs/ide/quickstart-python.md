@@ -1,13 +1,13 @@
 ---
-title: "Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio | Документы Майкрософт"
-description: "Краткое введение в использование кода Python в Visual Studio, предназначенного для создания простого веб-приложения с помощью платформы Falcon."
-ms.custom: 
-ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+title: Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio | Документы Майкрософт
+description: Краткое введение в использование кода Python в Visual Studio, предназначенного для создания простого веб-приложения с помощью платформы Falcon.
+ms.custom: ''
+ms.date: 03/14/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
-В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio вы создадите простое веб-приложение Python. Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio вы создадите простое веб-приложение Python. Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали это. В установщике выберите рабочую нагрузку **Разработка на Python**.
 
 ## <a name="create-the-project"></a>Создание проекта
 

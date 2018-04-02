@@ -1,23 +1,25 @@
 ---
-title: "Анализ использования ЦП в Visual Studio | Документы Майкрософт"
+title: Анализ использования ЦП в Visual Studio | Документы Майкрософт
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.workload:
+- multiple
+ms.openlocfilehash: 2324c857807f2f15762ce36539df3d7c2ad01b4b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage"></a>Анализ использования ЦП
 Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Использование ЦП** показывает, где ЦП тратит время при выполнении кода Visual C++, Visual C#/Visual Basic и JavaScript. Начиная с версии Visual Studio 2015 с обновлением 1 можно просматривать разбивку загрузки ЦП по функциям, не выходя из отладчика. Во время отладки можно включать и выключать профилирование ЦП и просматривать результаты при остановке выполнения, например в точке останова.  
@@ -25,6 +27,9 @@ ms.lasthandoff: 01/19/2018
 Существует несколько вариантов запуска сеанса диагностики и управления им. Например, средство **Загрузка ЦП** можно запустить на локальном и удаленном компьютерах, в имитаторе или эмуляторе. Можно анализировать производительность открытого в Visual Studio проекта, присоединившись к выполняемому приложению, либо запустить приложение, которое устанавливается из Microsoft Store. См. статью [Running Profiling Tools with or without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Выполнение средств профилирования с отладчиком и без него).
 
 Здесь мы покажем, как собирать и анализировать данные использования ЦП в окончательных сборках. Сведения об анализе данных использования ЦП при отладке см. в статьях [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md). 
+
+> [!NOTE]
+> Для .NET Core и ASP.NET Core средство загрузки ЦП в настоящее время предоставляет неточные результаты для переносимых PBD-файлов. Используйте вместо этого полные PDB-файлы.
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Сбор данных о загрузке ЦП  
   

@@ -1,26 +1,28 @@
 ---
-title: "Практическое руководство. Изменение шрифтов и цветов в Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Практическое руководство. Изменение шрифтов и цветов в Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ccfb4f178fa2e6db89b9ebaf16ca1f072cfc8720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b5d03f67edc604a7c2dd7e4cd32620a52812e09
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в Visual Studio
 
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 > При изменении цветовой темы шрифты текста и их размер в интегрированной среде разработки возвращаются к значениям по умолчанию или ранее настроенным значениям.
 
 > [!TIP]
-> Для создания и редактирования тем Visual Studio можно установить [редактор цветовых тем Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor).
+> Для создания и редактирования тем Visual Studio можно установить [редактор цветовых тем Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor).
 
 ## <a name="use-windows-high-contrast-colors"></a>Использование цветов Windows высокой контрастности
 
@@ -71,5 +73,5 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>См. также
 
-[Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)  
+[Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
 [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

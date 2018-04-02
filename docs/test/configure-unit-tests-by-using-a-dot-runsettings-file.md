@@ -1,18 +1,18 @@
 ---
-title: "Настройка модульных тестов в Visual Studio с помощью файла *.runsettings* | Документы Майкрософт"
+title: Настройка модульных тестов в Visual Studio с помощью файла .runsettings | Документы Майкрософт
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/08/2018
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ ms.lasthandoff: 03/08/2018
 
 Сборщик видеоданных захватывает запись экрана при выполнении тестов. Эта запись полезна для устранения неполадок тестов пользовательского интерфейса. Сборщик видеоданных доступен в **Visual Studio 2017 версии 15.5** и более поздних версий.
 
-Для настройки любого другого типа адаптера диагностических данных необходимо использовать файл параметров тестирования. Дополнительные сведения см. в разделе [Указание параметров тестирования для тестов Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
+Для настройки любого другого типа адаптера диагностических данных необходимо использовать файл параметров тестирования.
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>См. также
 
-[Настройка анализа покрытия кода](../test/customizing-code-coverage-analysis.md)
+- [Настройка анализа покрытия кода](../test/customizing-code-coverage-analysis.md)

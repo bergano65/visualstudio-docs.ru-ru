@@ -1,23 +1,23 @@
 ---
-title: "Настройка шрифтов и цветовых тем в Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Настройка шрифтов и цветовых тем в Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6d1ebe9838102b383353ed8c7d4d9c15fadaf9
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 2098540adda6de1ab003a6a9d526519d1d753730
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 
@@ -29,22 +29,22 @@ ms.lasthandoff: 03/09/2018
 
 По умолчанию в Visual Studio 2017 установлена тема **Синяя**. Давайте изменим ее на тему **Темная**.
 
-1. В строке меню выберите **Сервис**, **Параметры**.
+1. В строке меню выберите **Сервис** > **Параметры**.
 
-1. В разделе **Среда** откройте страницу **Общие**, измените значение параметра **Цветовая тема** на **Темная** и нажмите кнопку **ОК**.
+1. На странице параметров **Среда** > **Общие** измените значение параметра **Цветовая тема** на **Темная** и нажмите кнопку **ОК**.
 
    Цветовая тема для всей интегрированной среды разработки изменится на тему **Темная**.
 
    ![VS с темой "Темная"](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Вы можете выбрать дополнительные предопределенные темы, установив **редактор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Когда вы установите это средство, в раскрывающемся списке с цветовыми темами появятся дополнительные темы.
+> Вы можете выбрать дополнительные предопределенные темы, установив **редактор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Когда вы установите это средство, в раскрывающемся списке с цветовыми темами появятся дополнительные темы.
 
 ## <a name="change-text-color"></a>Изменение цвета текста
 
 Теперь настроим несколько цветов текста для редактора. Сначала откроем XML-файл, чтобы просмотреть цвета по умолчанию.
 
-1. В строке меню выберите **Файл**, **Создать**, **Файл...**
+1. В строке меню выберите **Файл** > **Создать** > **Файл...**.
 
 1. В диалоговом окне **Новый файл** в разделе **Общие** выберите **XML-файл** и нажмите кнопку **Открыть**.
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 03/09/2018
 
    ![Цвета шрифта в файле XML](media/quickstart-personalize-xml-file.png)
 
-1. Чтобы открыть диалоговое окно **Параметры**, в строке меню выберите **Инструменты**, **Параметры**.
+1. Чтобы открыть диалоговое окно **Параметры**, в строке меню выберите **Сервис** > **Параметры**.
 
 1. В разделе **Среда** выберите категорию **Шрифты и цвета**.
 
@@ -102,9 +102,9 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="see-also"></a>См. также
 
-[Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)  
-[Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)  
-[Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
-[Настройка редактора](../ide/customizing-the-editor.md)  
-[Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
+- [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
+- [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+- [Настройка редактора](../ide/customizing-the-editor.md)
+- [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)

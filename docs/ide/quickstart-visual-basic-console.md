@@ -1,12 +1,12 @@
 ---
-title: "Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое приложение на Visual Basic, выполняющееся в консоли.
@@ -81,9 +81,8 @@ ms.lasthandoff: 01/05/2018
 
    ![Окно консоли с фразой "Hello World" и надписью "Чтобы продолжить, нажмите любую клавишу"](../ide/media/vb-console-hello-world-press-any-key.png)
 
-Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали нечто новое о Visual Basic и интегрированной среде разработки Visual Studio. Если вы хотите изучить все более подробно, продолжите работу с руководством из раздела **Руководства** в содержании.
+## <a name="next-steps"></a>Следующие шаги
+Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали нечто новое о Visual Basic и интегрированной среде разработки Visual Studio. Для получения дополнительных сведений перейдите к следующему учебнику.
 
-## <a name="see-also"></a>См. также
-* [Краткое руководство. Создание приложения Windows Forms "Hello World" на Visual Basic в Visual Studio](quickstart-visual-basic-winforms.md)
-* [Учебник. Начало работы с Visual Basic в Visual Studio](tutorial-visual-basic-console.md)
-* [IntelliSense для файлов кода Visual Basic](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Начало работы с Visual Basic в Visual Studio](tutorial-visual-basic-console.md)

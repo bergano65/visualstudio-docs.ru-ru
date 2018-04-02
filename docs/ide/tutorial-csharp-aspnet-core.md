@@ -1,12 +1,12 @@
 ---
-title: "Начало работы с C# и ASP.NET Core в Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Начало работы с C# и ASP.NET Core в Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 12/11/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Начало работы с C# и ASP.NET в Visual Studio
 В этом учебнике по разработке на языке C# с помощью ASP.NET Core в Visual Studio вы создадите веб-приложение ASP.NET Core на C#, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение.
@@ -167,12 +167,9 @@ Visual Studio — это интегрированный набор средст
 
  ![Нажатие кнопки "Остановить отладку" на панели инструментов](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Следующие шаги
 
-Поздравляем с завершением этого учебника!
+Поздравляем с завершением этого учебника! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio. Для получения дополнительных сведений перейдите к следующему учебнику.
 
-## <a name="see-also"></a>См. также
-* [Начало работы с ASP.NET Core MVC и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [Начало работы с Razor Pages в ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [What's New in C#](/dotnet/csharp/whats-new) (Новые возможности C#)
-* [Справочник по языку C#](/dotnet/csharp/language-reference/index)
-* Видеокурс [Основы программирования на C# для начинающих](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169)
+ > [!div class="nextstepaction"]
+ > [Начало работы с ASP.NET Core MVC и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

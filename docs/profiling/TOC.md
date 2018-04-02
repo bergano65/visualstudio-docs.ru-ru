@@ -1,8 +1,8 @@
 
 # [Документация по профилированию](index.md)
 # Обзор
-## [Обзор возможностей профилирования](profiling-feature-tour.md)
 # Краткие руководства
+## [Первое знакомство с профилированием](profiling-feature-tour.md)
 ## [Анализ использования ЦП (управляемый код)](quickstart-cpu-usage-managed.md)
 ## [Анализ использования ЦП (машинный код)](quickstart-cpu-usage-native.md)
 ## [Анализ использования ЦП (ASP.NET)](quickstart-cpu-usage-aspnet.md)

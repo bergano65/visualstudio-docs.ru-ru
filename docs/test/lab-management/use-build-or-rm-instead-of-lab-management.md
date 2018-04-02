@@ -1,7 +1,7 @@
 ---
-title: "Использование управления сборками и выпусками для автоматического тестирования в Visual Studio | Документация Майкрософт"
+title: Использование управления сборками и выпусками для автоматического тестирования в Visual Studio | Документация Майкрософт
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Использование управления сборками и выпусками вместо Lab Management для автоматического тестирования
 
@@ -43,7 +43,7 @@ MTM и Lab Management используют определение сборки X
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Самостоятельное управление окружениями SCVMM
 
-[Центр лабораторий в Microsoft Test Manager](https://msdn.microsoft.com/library/dd997438.aspx) позволяет управлять библиотекой шаблонов среды, а также подготавливать окружения по запросу с помощью [сервера SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+[Центр тестирования в Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) позволяет управлять библиотекой шаблонов среды, а также подготавливать окружения по запросу с помощью [сервера SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Функции самостоятельной подготовки центра лабораторий преследуют две отдельные цели:
 

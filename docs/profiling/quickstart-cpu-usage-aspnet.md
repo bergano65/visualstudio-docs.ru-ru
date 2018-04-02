@@ -1,31 +1,36 @@
 ---
-title: "Анализ данных по использованию ЦП (ASP.NET) | Документы Майкрософт"
-ms.custom: 
+title: Анализ данных по использованию ЦП (ASP.NET) | Документы Майкрософт
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 2d92c4fcdbc3c4af3269876836602025a4403463
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 16bdbcbc66673f872215a7b3812c4c6f7f1724b3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Анализ данных по использованию ЦП в Visual Studio (ASP.NET)
 
 Visual Studio предоставляет множество эффективных возможностей для анализа проблем с производительностью приложения. В этой статье вы ознакомитесь с некоторыми основными возможностями. Мы рассмотрим средство, позволяющее выявлять узкие места производительности, возникающие из-за высокой загрузки ЦП. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
 
 Центр диагностики предоставляет различные возможности по запуску сеансов диагностики и управлению ими. Если описываемое здесь средство **Загрузка ЦП** не предоставляет необходимые данные, можно воспользоваться [другими средствами профилирования](../profiling/Profiling-Tools.md), предоставляющими другие виды информации, которая может оказаться полезной. Как правило, проблемы производительности приложения могут вызываться другими компонентами помимо ЦП, такими как память, отрисовка пользовательского интерфейса или время запроса сети.
+
+> [!NOTE]
+> Для .NET Core и ASP.NET Core средство загрузки ЦП в настоящее время предоставляет неточные результаты для переносимых PBD-файлов. Используйте вместо этого полные PDB-файлы.
 
 ## <a name="create-a-project"></a>Создание проекта
 

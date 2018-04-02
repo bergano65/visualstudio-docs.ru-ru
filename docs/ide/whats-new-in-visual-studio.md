@@ -1,12 +1,12 @@
 ---
-title: "Новые возможности Visual Studio 2017 | Документация Майкрософт"
-ms.custom: 
+title: Новые возможности Visual Studio 2017 | Документация Майкрософт
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 90d6ef6132f8844343388f35a441386c66b838c6
+ms.sourcegitcommit: 6871148ce356977b057febdb4d5a7655e7c295bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
-#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Обновлено для [выпуска 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Обновлено для [выпуска 15.6](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Хотите обновить предыдущую версию Visual Studio? Visual Studio 2017 — это лучший инструмент для разработки любого приложения под любую платформу. Используйте Visual Studio 2017 для разработки приложений для Android, iOS, Windows, Linux, а также веб-приложений и облачных приложений. Быстро пишите код, выполняйте отладку и диагностику с легкостью, часто тестируйте и уверенно создавайте выпуски решений. Visual Studio можно расширить и настроить, создав собственные расширения. Система управления версиями в этом выпуске делает разработку гибкой, а совместную работу — эффективной.
 
 Ниже приведен общий обзор изменений, внесенных с момента выпуска предыдущей версии — Visual Studio 2015.

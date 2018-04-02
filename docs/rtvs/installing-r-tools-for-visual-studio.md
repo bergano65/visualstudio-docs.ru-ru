@@ -1,13 +1,13 @@
 ---
-title: "Установка инструментов R для Visual Studio | Документация Майкрософт"
-description: "Узнайте, как установить Инструменты R для Visual Studio 2017 и Visual Studio 2015, в том числе автономная установка."
-ms.custom: 
+title: Установка инструментов R для Visual Studio | Документация Майкрософт
+description: Узнайте, как установить Инструменты R для Visual Studio 2017 и Visual Studio 2015, в том числе автономная установка.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 dev_langs:
 - R
 ms.topic: article
@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Порядок установки инструментов R для Visual Studio
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/21/2018
 
 ## <a name="supported-versions-of-visual-studio"></a>Поддерживаемые версии Visual Studio
 
-Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Windows Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://www.visualstudio.com/downloads/), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание).
+Инструменты R для Visual Studio (RTVS) поддерживаются в выпусках Windows Community (бесплатный), Professional и Enterprise как [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), так и [Visual Studio 2015 с обновлением 3 (или более поздней версии)](http://go.microsoft.com/fwlink/?LinkId=691129) (прямое скачивание).
 
 Инструменты RTVS в настоящее время не поддерживаются в Visual Studio для Mac.
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/21/2018
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Установка RTVS в Visual Studio 2017
 
-1. Запустите установщик Visual Studio. (См. раздел [Скачивание](https://www.visualstudio.com/downloads/), если вы еще не установили Visual Studio.) В Windows 7 убедитесь, что в установщике отображается Visual Studio 2017 *версии 15.2 сборки 26430.12* или более поздней версии.
+1. Запустите установщик Visual Studio и выберите вариант **Изменить** (подробные сведения см. в разделе [Изменение Visual Studio](../install/modify-visual-studio.md)). Если вы еще не установили Visual Studio, см. раздел [Установка Visual Studio](../install/install-visual-studio.md). В Windows 7 убедитесь, что в установщике отображается Visual Studio 2017 *версии 15.2 сборки 26430.12* или более поздней версии.
 
 1. Выберите рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
 
@@ -86,7 +86,7 @@ RTVS устанавливается в каталог `%ProgramFiles(x86)%\Micro
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Для Visual Studio 2015 скачайте автономные установщики RTVS: [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) и [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
+1. Для Visual Studio 2015 скачайте автономные установщики RTVS со страниц [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) и [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Установите Visual Studio и RTVS с помощью автономных установщиков.
 

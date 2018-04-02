@@ -1,7 +1,7 @@
 # [Документация по отладчику](index.md)
-# Обзор
-## [Обзор функций отладчика](debugger-feature-tour.md)
+# [Обзор набора средств Visual Studio для Unity](debugger-overview.md)
 # Краткие руководства
+## [Первое знакомство с отладчиком](debugger-feature-tour.md)
 ## [Отладка управляемого приложения](quickstart-debug-with-managed.md)
 ## [Отладка собственного приложения](quickstart-debug-with-cplusplus.md)
 ## [Отладка приложения ASP.NET](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Просмотр строковых значений в визуализаторе](string-visualizer-dialog-box.md)
 ### [Просмотр дизассемблированного кода](how-to-use-the-disassembly-window.md)
 #### [Практическое руководство. Перемещение вверх или вниз по содержимому памяти](how-to-page-up-or-down-in-memory.md)
-### [Просмотр стека вызовов](how-to-use-the-call-stack-window.md)
-#### [Смешанный код и отсутствующие данные в окне стека вызовов](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Практическое руководство. Выход из пошагового выполнения управляемого кода, когда фрагменты машинного кода не отображаются в окне стека вызовов](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Просмотр значений регистров](how-to-use-the-registers-window.md)
 #### [Сведения об окне регистров](debugging-basics-registers-window.md)
 #### [Практическое руководство. Отображение и скрытие групп регистров](how-to-display-and-hide-register-groups.md)
