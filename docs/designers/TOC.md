@@ -20,6 +20,7 @@
 #### [Продукты и службы, поддерживающие специальные возможности (Blend)](accessibility-products-and-services-blend.md)
 ### [Сочетания клавиш для конструктора XAML](keyboard-shortcuts-for-xaml-designer.md)
 ### [Отладка или отключение кода проекта в конструкторе XAML](debugging-or-disabling-project-code-in-xaml-designer.md)
+### [Ошибки и предупреждения XAML](xaml-errors-warnings.md)
 ## [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 ### [Начало работы с WPF](getting-started-with-wpf.md)
 #### [Введение в WPF](introduction-to-wpf.md)

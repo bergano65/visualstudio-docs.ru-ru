@@ -30,6 +30,7 @@
 
 # Практическое руководство
 ##[Совместное использование среды разработки](how-to/share-dev-environment.md)
+##[Использование настраиваемого канала NuGet](how-to/use-a-custom-nuget-feed.md)
 ##[Использование kubectl с подключенной средой Visual Studio](how-to/use-kubectl-with-vsce.md)
 
 # [Устранение неполадок](troubleshooting.md)
