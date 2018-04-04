@@ -1,6 +1,6 @@
 ---
 title: Использование регулярных выражений в Visual Studio | Документы Майкрософт
-ms.custom: 03/26/2018
+ms.date: 03/26/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,8 +17,8 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 37d8dca622fd5af546971b1c8d3451b27c183584
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/28/2018
@@ -65,7 +65,7 @@ ms.lasthandoff: 03/28/2018
 |Соответствует символу Юникода|\\uXXXX, где XXXX указывает значение символа Юникода.|`\u0065` совпадает с символом "e".|
 |Соответствует идентификатору|\b(\_\\w+&#124;\[\\w-\[0-9\_\]\]\w*)\b|Соответствует "type1" но не &type1" или "#define".|
 |Соответствует строке внутри кавычек|((\\\".+?\\\")&#124;(\'.+?\'))|Соответствует любой строке внутри одинарных или двойных кавычек.|
-|Соответствует шестнадцатеричному числу.|\b0[xX]([0-9a-fA-F]\)\b|Совпадает с «0xc67f», но не с «0xc67fc67f».|
+|Соответствует шестнадцатеричному числу.|\\b0\[xX\](\[0-9a-fA-F\]+)\\)\b|Совпадает с «0xc67f», но не с «0xc67fc67f».|
 |Соответствует целым и десятичным числам|\b[0-9]*\\.\*[0-9]+\b|Совпадает с "1,333".|
 
 > [!TIP]

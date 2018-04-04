@@ -1,12 +1,8 @@
 ---
-title: "Анализ кода для управляемого кода Обзор | Документы Microsoft"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Анализ управляемого кода в Visual Studio кода | Документы Microsoft
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>Анализ кода для управляемого кода Обзор
+# <a name="overview-of-code-analysis-for-managed-code"></a>Обзор анализа кода для управляемого кода
+
+2017 г. Visual Studio анализирует управляемого кода двумя способами: с помощью прежних версий *FxCop* статического анализа управляемых сборок и с платформой компилятора .NET *анализаторы*. В этом разделе рассматриваются FxCop статического анализа кода. Дополнительные сведения об анализе кода с помощью анализаторов платформой компилятора .NET см. в разделе [анализаторы Обзор Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 Анализа управляемого кода позволяет проанализировать управляемые сборки и получить такие сведения о сборках, как нарушения правил программирования и разработки, изложенных в руководствах по разработке Microsoft .NET Framework.
 
@@ -76,5 +74,6 @@ Public class MyClass
 
 ## <a name="see-also"></a>См. также
 
-[Использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[Как: Включение и отключение автоматического анализа кода](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Общие сведения о Roslyn анализаторы](../code-quality/roslyn-analyzers-overview.md)
+- [Использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Как: Включение и отключение автоматического анализа кода](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

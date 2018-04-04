@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/03/2018
 ---
 1.  На устройства или сервера компьютера, необходимо выполнить отладку (а не на машине под управлением Visual Studio) получите правильную версию инструментов удаленной отладки.
 
     |Версия|Ссылка|Примечания|
     |-|-|-|
-    |Visual Studio 2017 г. (последняя версия)|[Инструменты удаленной отладки](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Всегда Загрузите версию, соответствующую операционную систему устройства (x86 или x64). Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
+    |Visual Studio 2017 г. (последняя версия)|[Инструменты удаленной отладки](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Всегда Загрузите версию, соответствующую операционную систему устройства (x86 или x64). Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
     |Visual Studio 2017 г. (существующих дольше остальных)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|My.VisualStudio.com доступны инструменты удаленной отладки для более ранних выпусков Visual Studio 2017 г. При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
     |Visual Studio 2015 с обновлением 3|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
     |Visual Studio 2015 (существующих дольше остальных)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|

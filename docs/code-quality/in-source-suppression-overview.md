@@ -1,9 +1,6 @@
 ---
-title: "Отключение предупреждений анализа кода в Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Отключение предупреждений анализа кода в Visual Studio | Документы Microsoft
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Подавление предупреждений анализа кода
+# <a name="suppress-code-analysis-warnings"></a>Отключение предупреждений анализа кода
 
 Часто полезно указать, что предупреждение неприменимо. Это значит, что члены команды код прошел проверку и предупреждения можно подавить. Подавление (ISS) используется в исходном <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут для подавления предупреждений. Атрибут можно разместить рядом сегмент кода, который создает предупреждение. Можно добавить <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибутов в исходный файл, введя его в, или можно использовать контекстное меню на предупреждение в **список ошибок** автоматически добавляться.
 
@@ -94,7 +91,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 В целях удобства пропуск имени правила не рекомендуется.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Подавление Выборочный нарушений в теле метода
+## <a name="suppress-selective-violations-within-a-method-body"></a>Отключение Выборочный нарушений в теле метода
 
 Подавление атрибуты могут применяться к методу, но не может быть внедрен в теле метода. Это означает, что все нарушения определенное правило, подавляются при добавлении <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> к методу атрибут.
 
@@ -160,7 +157,7 @@ public class Animal
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`всегда содержит имя элемента полным.
+> `Target` всегда содержит имя элемента полным.
 
 ## <a name="global-suppression-file"></a>Файл глобального подавления
 
@@ -168,4 +165,5 @@ public class Animal
 
 ## <a name="see-also"></a>См. также
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Использовать Roslyn анализаторы](../code-quality/use-roslyn-analyzers.md)
