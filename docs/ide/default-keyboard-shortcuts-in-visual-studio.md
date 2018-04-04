@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 Дополнительные сведения о специальных возможностях клавиатуры см. в разделе [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Использование только клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -831,7 +831,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.HideSelection|Ctrl+M, Ctrl+H|  
 |Edit.IncreaseFilterLevel|Alt+.|  
 |Edit.IncrementalSearch|CTRL+I|  
-|Edit.InsertTab|Tab|  
+|Edit.InsertTab|Вкладка|  
 |Edit.LineCut|CTRL+L|  
 |Edit.LineDelete|CTRL+SHIFT+L|  
 |Edit.LineDown|Стрелка вниз|  
@@ -1134,6 +1134,7 @@ ms.lasthandoff: 01/23/2018
 |Design.ShowHandles|F9|  
 |Design.ZoomIn|Ctrl+Alt+=|  
 |Design.ZoomOut|Ctrl+Alt+-|  
+|Параметры конструктора|CTRL+SHIFT+;|  
 |Format.EditText|F2|  
 |Format.ResetLayout.All|CTRL+SHIFT+R|  
 |Выполнить код проекта|Ctrl+F9|  

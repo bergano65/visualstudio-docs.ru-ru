@@ -1,15 +1,15 @@
 ---
-title: "Пакет Azure SDK для Python | Документация Майкрософт"
-description: "Пакет SDK Azure для Python — это удобное средство для работы со службами Microsoft Azure из приложений Python на любой платформе."
-ms.custom: 
+title: Пакет Azure SDK для Python | Документация Майкрософт
+description: Пакет SDK Azure для Python — это удобное средство для работы со службами Microsoft Azure из приложений Python на любой платформе.
+ms.custom: ''
 ms.date: 01/22/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: baa206dfbb9caf58ce872d0c9dee22e183403adb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 728fc1249671025ca99f36f62aab19a1282f15aa
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
 
@@ -50,7 +50,7 @@ pip install azure
 - [Хранилище BLOB-объектов](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Хранилище таблиц](/azure/storage/storage-python-how-to-use-table-storage)
 - [Хранилище очередей](/azure/storage/storage-python-how-to-use-queue-storage)
-- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Очереди служебной шины](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Разделы и подписки, связанные со служебной шиной Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Управление службами](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
@@ -64,6 +64,6 @@ pip install azure
 
 ## <a name="support"></a>Поддержка
 
-Репозиторий для пакета SDK находится по адресу [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
+Репозиторий Git для пакета SDK находится в каталоге [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 Если при использовании пакета SDK у вас возникнут любые проблемы или вопросы, [оставьте в репозитории описание проблем](https://github.com/Azure/azure-sdk-for-python/issues).

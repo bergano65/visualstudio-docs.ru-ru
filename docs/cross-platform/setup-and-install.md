@@ -1,23 +1,23 @@
 ---
-title: "Установка Xamarin для Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Установка Xamarin для Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: bcaa49552c0e904b07cc90f3ae7e44aaa58a3895
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: a935ab3768d5e900aea681b392e920763cb53016
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-and-install"></a>Настройка и установка
 
@@ -82,9 +82,9 @@ ms.lasthandoff: 02/28/2018
 
 ##  <a name="mac"></a> Настройка Mac (Apple ID, Xcode и Xamarin)
 
-1.  Создайте бесплатный идентификатор Apple ID на сайте [https://appleid.apple.com](https://appleid.apple.com/), если у вас его нет. Это необходимо для установки приложения Xcode и входа в него.
+1.  Создайте бесплатный идентификатор Apple ID в разделе [https://appleid.apple.com](https://appleid.apple.com/), если у вас его нет. Это необходимо для установки приложения Xcode и входа в него.
 
-2.  Скачайте и установите Xcode на странице  [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)и добавьте ваш идентификатор Apple ID, как описано в разделе [Добавление учетной записи для XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+2.  Скачайте и установите Xcode на странице [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) и добавьте ваш идентификатор Apple ID, как описано в разделе [Добавление учетной записи для XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
 3.  Скачайте и установите Xamarin, следуя указаниям в статье [Установка и настройка Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 

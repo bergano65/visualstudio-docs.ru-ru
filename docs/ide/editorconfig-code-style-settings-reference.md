@@ -1,5 +1,5 @@
 ---
-title: "Параметры соглашений о написании кода .NET в EditorConfig в Visual Studio | Документы Майкрософт"
+title: Параметры соглашений о написании кода .NET в EditorConfig в Visual Studio | Документы Майкрософт
 ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 53345fa849715a8065b0bf569977393033608caa
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -77,10 +77,11 @@ error | При несоблюдении этого правила стиля в�
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_style\_coalesce_expression
-        - dotnet\_style\_null_propagation
         - dotnet\_prefer\_inferred\_tuple_names
         - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+    - [Настройки проверки Null](#null_checking)
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
 - Параметры стиля кода C#
     - [Неявные и явные типы](#var)
         - csharp\_style\_var\_for\_built\_in_types
@@ -102,7 +103,7 @@ error | При несоблюдении этого правила стиля в�
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - [Настройки проверки Null](#null_checking)
+    - [Настройки проверки Null](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
     - [Настройки блока кода](#code_block)
@@ -380,7 +381,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="expression_level">Настройки уровня выражений</a>
 
-Правила стилей в этом разделе относятся к настройкам уровня выражений, включая использование инициализаторов объектов, инициализаторов коллекций, явных имен кортежей, выражений объединения со значением Null против тернарных операторов и условного оператора со значением Null.
+Правила стилей в этом разделе относятся к настройкам уровня выражений, включая использование инициализаторов объектов, инициализаторов наборов, явных или выводимых имен кортежей и выводимых анонимных типов.
 
 В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
 
@@ -389,10 +390,8 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 | dotnet_style_object_initializer | IDE0017 | C# и Visual Basic | true:suggestion | Первый выпуск |
 | dotnet_style_collection_initializer | IDE0028 | C# и Visual Basic | true:suggestion | Первый выпуск |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ и Visual Basic 15+ | true:suggestion | Первый выпуск |
-| dotnet_style_coalesce_expression | IDE0029 | C# и Visual Basic | true:suggestion | Первый выпуск |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0+ и Visual Basic 14+ | true:suggestion | Первый выпуск |
-| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ и Visual Basic 15+ | true:suggestion | 15,6 |
-| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# и Visual Basic | true:suggestion | 15,6 |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ и Visual Basic 15+ | true:suggestion | 15,6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# и Visual Basic | true:suggestion | 15,6 |
 
 **dotnet\_style\_object_initializer**
 
@@ -475,6 +474,60 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
+**dotnet\_style\_prefer\_inferred\_tuple_names**
+
+- Если это правило имеет значение **true**, предпочтение отдается выводимым именам элементов кортежа.
+- Если это правило имеет значение **true**, предпочтение отдается явным именам элементов кортежа.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+
+- Если это правило имеет значение **true**, предпочтение отдается выводимым именам автономных членов типа.
+- Если это правило имеет значение **true**, предпочтение отдается явным именам автономных членов типа.
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
+
+```
+
+В файле EDITORCONFIG эти правила могут иметь следующий вид:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+```
+
+#### <a name="null_checking">Параметры проверки NULL</a>
+
+Правила стилей в этом разделе относятся к параметрам проверки NULL.
+
+В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
+
+| Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio | Версия Visual Studio 2017 |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_coalesce_expression | IDE0029 | C# и Visual Basic | true:suggestion | Первый выпуск |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0+ и Visual Basic 14+ | true:suggestion | Первый выпуск |
+
 **dotnet\_style\_coalesce_expression**
 
 - Когда для этого правила задано значение **true**, предпочтение отдается выражениям объединения со значением Null вместо проверки тернарного оператора.
@@ -525,49 +578,13 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-**dotnet\_prefer\_inferred\_tuple_names**
-
-- Если это правило имеет значение **true**, предпочтение отдается выводимым именам элементов кортежа.
-- Если это правило имеет значение **true**, предпочтение отдается явным именам элементов кортежа.
-
-Примеры кода:
-
-```csharp
-// dotnet_style_prefer_inferred_tuple_names = true
-var tuple = (age, name);
-
-// dotnet_style_prefer_inferred_tuple_names = false
-var tuple = (age: age, name: name);
-```
-
-**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
-
-- Если это правило имеет значение **true**, предпочтение отдается выводимым именам автономных членов типа.
-- Если это правило имеет значение **true**, предпочтение отдается явным именам автономных членов типа.
-
-Примеры кода:
-
-```csharp
-// dotnet_style_prefer_inferred_anonymous_type_member_names = true
-var anon = new { age, name };
-
-// dotnet_style_prefer_inferred_anonymous_type_member_names = false
-var anon = new { age = age, name = name };
-
-```
-
 В файле EDITORCONFIG эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>Параметры стиля кода C#
@@ -960,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking">Настройки проверки Null</a>
+#### <a name="null_checking_csharp">Настройки проверки Null</a>
 
 Эти правила стиля определяют синтаксис, связанный с проверкой `null`, включая использование выражений `throw` или операторов `throw`, а также выбор между проверкой Null и использованием условного оператора объединения (`?.`) при вызове [лямбда-выражения](/dotnet/csharp/lambda-expressions).
 
@@ -1545,7 +1562,7 @@ MyMethod(argument);
 
 **csharp_space_between_parentheses**
 
-Это правило принимает не значение **true** или **false**, а одно из следующих значений:
+Это правило принимает одно или несколько значений из следующей таблицы:
 
 | Значение | Описание: |
 | ----- |:------------|
@@ -1553,14 +1570,16 @@ MyMethod(argument);
 | выражения | Добавлять пробел между скобками для выражений |
 | type_casts | Размещать пробел между скобками в приведениях типов |
 
+Если пропустить это правило или использовать значение, отличное от `control_flow_statements`, `expressions` или `type_casts`, этот параметр не применяется.
+
 Примеры кода:
 
 ```csharp
 // csharp_space_between_parentheses = control_flow_statements
-for( int i;i<x;i++ ) { ... }
+for ( int i = 0; i < 10; i++ ) { }
 
 // csharp_space_between_parentheses = expressions
-var z = ( x * y ) - ( ( y - x ) * 3);
+var z = ( x * y ) - ( ( y - x ) * 3 );
 
 // csharp_space_between_parentheses = type_casts
 int y = ( int )x;

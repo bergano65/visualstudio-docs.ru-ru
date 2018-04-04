@@ -1,24 +1,24 @@
 ---
-title: "Создание приложений с собственным пользовательским интерфейсом с использованием Xamarin в Visual Studio"
-ms.custom: 
+title: Создание приложений с собственным пользовательским интерфейсом с использованием Xamarin в Visual Studio
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: 31
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 71004088d421bcc2e0809fc4004cd7af887b95af
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 Выполнив действия, описанные в разделах [Установка и настройка](../cross-platform/setup-and-install.md) и [Проверка среды Xamarin](../cross-platform/verify-your-xamarin-environment.md), вы можете перейти к этому пошаговому руководству, в котором будет описано, как создать базовое приложение Xamarin (показано ниже) с собственным пользовательским интерфейсом. При использовании собственного пользовательского интерфейса общий код находится в переносимой библиотеке классов (PCL), а проекты для отдельных платформ содержат определения пользовательского интерфейса.  
@@ -101,7 +101,7 @@ ms.lasthandoff: 02/09/2018
   
  Далее в переносимую библиотеку классов добавляется код, который обращается к данным от службы погоды и сохраняет эти данные:  
   
-1.  Чтобы запустить этот пример, необходимо сначала зарегистрироваться для получения бесплатного ключа API на сайте [http://openweathermap.org/appid](http://openweathermap.org/appid).  
+1.  Чтобы запустить этот пример, зарегистрируйтесь на сайте [http://openweathermap.org/appid](http://openweathermap.org/appid) для получения бесплатного ключа API.  
   
 2.  Щелкните проект **WeatherApp** правой кнопкой мыши и выберите пункт **Добавить > Класс…** В диалоговом окне **Добавление нового элемента** дайте файлу имя **Weather.cs**. Этот класс будет использован для хранения данных службы погоды.  
   
