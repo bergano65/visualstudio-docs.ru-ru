@@ -3,22 +3,22 @@ title: Восстановление Visual Studio 2017 | Документы М
 description: Сведения о восстановлении установки Visual Studio 2017.
 keywords: Не добавляйте и не изменяйте ключевые слова, не проконсультировавшись со специалистом по оптимизации для поисковых систем.
 author: PoulChapman
-ms.author: pchapman
-manager: ghogen
+ms.author: tglee
+manager: douge
 ms.reviewer: ''
 ms.date: 09/28/2017
-ms.topic: article
+ms.topic: conceptual
 ms.suite: ''
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ead2104ef89ed7b3b118e660c8f18a3e587a00
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: acc8697b74a45bcf21eb312c9c3d47e6105646a9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="repair-visual-studio-2017"></a>Восстановление Visual Studio 2017
 

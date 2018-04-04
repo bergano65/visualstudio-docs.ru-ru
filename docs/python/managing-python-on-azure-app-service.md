@@ -1,16 +1,16 @@
 ---
-title: "Установка интерпретаторов и библиотек Python в Службе приложений Azure | Документация Майкрософт"
-description: "Установка интерпретатора и библиотек Python в Службе приложений Azure и настройка веб-приложений, чтобы в них содержалась правильная ссылка на интерпретатор."
-ms.custom: 
+title: Установка интерпретаторов и библиотек Python в Службе приложений Azure | Документация Майкрософт
+description: Установка интерпретатора и библиотек Python в Службе приложений Azure и настройка веб-приложений, чтобы в них содержалась правильная ссылка на интерпретатор.
+ms.custom: ''
 ms.date: 09/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f48a8040203f50970aa16d511f94222bf1578bb1
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Работа с Python в службе приложений Azure
 
@@ -217,4 +217,4 @@ FastCGI — это интерфейс, работающий на уровне �
 
 Сведения о командах и проверке подлинности см. в [документации по Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Просмотреть учетные данные можно также с помощью команды `az webapp deployment list-publishing-profiles`, которая выполняется в интерфейсе командной строки Azure (см. описание команды [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)). Вспомогательную библиотеку для отправки команд Kudu можно найти на сайте [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Просмотреть учетные данные можно также с помощью команды `az webapp deployment list-publishing-profiles`, которая выполняется в интерфейсе командной строки Azure (см. описание команды [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles)). Вспомогательную библиотеку для отправки команд Kudu можно найти на сайте [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

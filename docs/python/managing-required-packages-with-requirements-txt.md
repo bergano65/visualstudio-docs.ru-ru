@@ -1,26 +1,26 @@
 ---
-title: "Использование файла requirements.txt для управления требованиями к пакетам | Документы Microsoft"
-description: "Файл requirements.txt можно использовать для управления зависимостями проекта. Если вы получаете проект, содержащий файл requirements.txt, эти зависимости можно легко установить за один шаг."
-ms.custom: 
+title: Использование файла requirements.txt для управления требованиями к пакетам | Документы Microsoft
+description: Файл requirements.txt можно использовать для управления зависимостями проекта. Если вы получаете проект, содержащий файл requirements.txt, эти зависимости можно легко установить за один шаг.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 808e7a66d4e0130ee8080b124b33b22561bb2a58
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b9d1a35d8ba34561c56ca14261591c7b80bacdb0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
 

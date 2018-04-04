@@ -6,7 +6,7 @@ ms.date: 02/19/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
-- vs-nodejs
+- vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3c0b387e29df6bc46b8a7c3e79ccb50fa16e3ed6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и React в Visual Studio
 В Visual Studio можно легко создать проект Node.js и использовать IntelliSense и другие встроенные функции, поддерживающие Node.js. В этом учебнике по Visual Studio вы создадите проект веб-приложения Node.js на основе шаблона Visual Studio. Затем вы создадите простое приложение с помощью React. 
@@ -149,7 +149,6 @@ ms.lasthandoff: 03/15/2018
 
     ```javascript
     'use strict';
-    var http = require('http');
     var path = require('path');
     var express = require('express');
 
