@@ -50,6 +50,8 @@
 
 # [Рабочие нагрузки](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+## [Azure](azure-workload.md)
+### [Подключенные службы](connected-services.md)
 ## [Разработка игр на Unity](unity-tools.md)
 ### [Установка](setup-vsmac-tools-unity.md)
 ### [Использование инструментов Unity](using-vsmac-tools-unity.md)
