@@ -2,7 +2,7 @@
 title: Наборы правил анализа кода в Visual Studio | Документы Microsoft
 ms.date: 04/02/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
@@ -12,19 +12,54 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 837ba95fc50ac32855889c4eca9010712906e646
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 3d6ac4a771efc34fcee8cdf46d21bf7a265da17b
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Задает использование правил для группировки правил анализа кода
 
-При настройке анализа кода в Visual Studio можно выбрать из списка встроенных *наборов правил*. Набор правил — это логическая группа правил анализа кода, которые определяют целевые задачи и определенных условий. Например можно применить набор правил, предназначенный для сканирования кода на наличие общедоступных API, или можно применить набор, включающий только минимальный рекомендуемый набор правил. Также можно применять набор правил, который включает все правила.
+При настройке анализа кода в Visual Studio можно выбрать из списка встроенных *наборов правил*. Набор правил относятся к проекту и группирование кода правила анализа, которые определяются целевые задачи и особые условия для этого проекта. Например можно применить набор правил, предназначенный для сканирования кода на наличие общедоступных API, или только минимальные правила и рекомендации. Также можно применять набор правил, который включает все правила.
 
-Можно настроить набор правил путем добавления или удаления правил или изменяя степени серьезности правила отображаются в виде предупреждений и ошибок в **список ошибок**. Настраиваемые наборы правил могут соответствовать потребностям конкретной среды разработки. При настройке набора правил, страница набора правил предоставляет средства, помогающие в процессе поиска и фильтрации.
+Можно настроить набор правил путем добавления или удаления правил или изменяя степени серьезности правила отображаются в виде предупреждений и ошибок в **список ошибок**. Настраиваемые наборы правил могут соответствовать потребностям конкретной среды разработки. При настройке набора правил в редакторе набора правил предоставляет средства, помогающие в процессе поиска и фильтрации.
+
+## <a name="rule-set-format"></a>Формат набора правил
+
+Набор правил, указывается в формате XML в *.ruleset* файла. Правила, которые состоят из идентификатора и *действия*, группируются по Идентификатору анализатора и пространства имен в файле.
+
+XML-содержимое *.ruleset* файла выглядит примерно так:
+
+```xml
+<RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
+  <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
+    <Name Resource="HelloWorldRules_Name" />
+    <Description Resource="HelloWorldRules_Description" />
+  </Localization>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1001" Action="Warning" />
+    <Rule Id="CA1009" Action="Warning" />
+    <Rule Id="CA1016" Action="Warning" />
+    <Rule Id="CA1033" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1802" Action="Error" />
+    <Rule Id="CA1814" Action="Info" />
+    <Rule Id="CA1823" Action="None" />
+    <Rule Id="CA2217" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+> [!TIP]
+> Проще [изменить набор правил](../code-quality/working-in-the-code-analysis-rule-set-editor.md) в графическом **редактор набора правил** чем вручную.
+
+Правило, задайте для проекта указан по `CodeAnalysisRuleSet` свойство в файле проекта Visual Studio. Пример:
+
+```xml
+<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+```
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: Настройка настраиваемого набора правил](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-- [Справочник по набору правил анализа кода](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)
+- [Справочник по набору правил анализа кода](../code-quality/rule-set-reference.md)
