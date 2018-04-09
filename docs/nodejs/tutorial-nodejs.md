@@ -6,7 +6,7 @@ ms.date: 03/13/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
-- vs-nodejs
+- vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 В этом учебнике по разработке с помощью Node.js и Express в Visual Studio вы создадите простое веб-приложение Node.js, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение. Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.  
@@ -45,6 +45,8 @@ ms.lasthandoff: 03/15/2018
 * У вас должна быть установлена среда выполнения Node.js.
 
     Если она не установлена, установите версию LTS с веб-сайта [Node.js](https://nodejs.org/en/download/). Как правило, Visual Studio автоматически обнаруживает установленную среду выполнения Node.js. Если установленная среда выполнения не обнаружена, вы можете настроить проект так, чтобы он ссылался на установленную среду выполнения, на странице свойств (после создания проекта щелкните его узел правой кнопкой мыши и выберите пункт **Свойства**).
+
+    Этот учебник был протестирован с Node.js 8.10.0.
 
 ## <a name="create-a-project"></a>Создание проекта
 Сначала вы создадите проект веб-приложения Node.js.
@@ -119,6 +121,8 @@ ms.lasthandoff: 03/15/2018
         res.render('index', { title: 'Express', "data" });
     });
     ```
+
+    В строке кода, содержащей `res.render`, присутствует ошибка. Нужно устранить ее, прежде чем запускать приложение. Мы исправим ее в следующем разделе.
 
 ## <a name="use-intellisense"></a>Использование IntelliSense
 

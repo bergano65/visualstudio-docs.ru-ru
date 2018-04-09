@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: faa901c14bd5d115aa3e7384a5d3b63c0410b64b
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 8a6bf78c0f0abcef9158bfdb753f5c8ea4050c33
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Установка поддержки Python в Visual Studio под управлением Windows
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 03/17/2018
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Загрузите и запустите последнюю версию установщика Visual Studio 2017. Если вы уже установили Visual Studio, запустите установщик Visual Studio, выберите вариант **Изменить** (см. раздел [Изменение Visual Studio](../install/modify-visual-studio.md)) и перейдите к шагу 2.
+1. Загрузите и запустите последнюю версию установщика Visual Studio 2017. Если вы уже установили Visual Studio, запустите Visual Studio Installer, выберите вариант **Изменить** (см. раздел [Изменение Visual Studio](../install/modify-visual-studio.md)) и перейдите к шагу 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Установить Visual Studio 2017 Community</a>

@@ -8,11 +8,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 813a2c003923159b6805280ab3a7f5c3c0559f13
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -147,7 +147,7 @@ ms.lasthandoff: 03/19/2018
 
 Сборщик видеоданных захватывает запись экрана при выполнении тестов. Эта запись полезна для устранения неполадок тестов пользовательского интерфейса. Сборщик видеоданных доступен в **Visual Studio 2017 версии 15.5** и более поздних версий.
 
-Для настройки любого другого типа адаптера диагностических данных необходимо использовать файл параметров тестирования.
+Для настройки любого другого типа адаптера диагностических данных нужно использовать [файл параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md).
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
