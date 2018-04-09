@@ -53,6 +53,7 @@
 ## [Создание веб-приложения на Python](ide/quickstart-python.md)
 ## [Создание веб-приложения на Node.js](ide/quickstart-nodejs.md)
 ## [Создание веб-приложения на C#](ide/quickstart-aspnet-core.md)
+## [Создание приложения UWP на C#](ide/quickstart-uwp-csharp.md)
 ## [Создание консольного приложения на Visual Basic](ide/quickstart-visual-basic-console.md)
 # Учебники
 ## [C++ в Visual Studio](/cpp/build/vscpp-step-0-installation)

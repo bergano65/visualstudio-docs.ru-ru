@@ -1,25 +1,25 @@
 ---
-title: "Отладчика, в Visual Studio | Документы Microsoft"
+title: Отладчика, в Visual Studio | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения об окнах отладчика в Visual Studio
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 02/09/2018
 |Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
 |Потоки GPU|-|[Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)|
-|Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная среда REPL Python](../python/interactive-repl.md)|
+|Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная среда REPL Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Обозреватель DOM|CTRL+ALT+V, D|[Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Динамическое визуальное дерево|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|

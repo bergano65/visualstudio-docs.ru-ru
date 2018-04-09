@@ -7,7 +7,7 @@
 ## [Отладка приложения ASP.NET](quickstart-debug-aspnet.md)
 # Учебники
 ## [Сведения об отладке с помощью Visual Studio](getting-started-with-the-debugger.md)
-## [Запуск кода Python в отладчике…](../python/vs-tutorial-01-04.md)
+## [Запуск кода Python в отладчике…](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Отладка живого приложения Azure](debug-live-azure-applications.md)
 ## [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Практические руководства
