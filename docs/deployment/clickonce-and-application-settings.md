@@ -22,10 +22,10 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce и параметры приложения
 Параметры приложения для Windows Forms позволяет легко создавать, хранить и поддерживать настраиваемые приложения и параметры пользователя на стороне клиента. Следующий документ описывает принципы работы файлов параметров приложения в приложении ClickOnce и как ClickOnce переносит параметры при обновлении до следующей версии.  

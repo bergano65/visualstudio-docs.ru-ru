@@ -1,11 +1,11 @@
 ---
-title: "Задача GetReferenceAssemblyPaths | Документы Майкрософт"
-ms.custom: 
+title: Задача GetReferenceAssemblyPaths | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -13,17 +13,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 178ef49c-5dee-405b-a14b-a37f41dc0609
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6063ca7f69d5dd04c0675090eb6c6deb3075bdf5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="getreferenceassemblypaths-task"></a>Задача GetReferenceAssemblyPaths
 Возвращает пути к эталонным сборкам для различных версий .NET Framework.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `GetReferenceAssemblyPaths` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`ReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker`. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|  
 |`FullFrameworkReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker` без учета профильной части моникера. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|  

@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d28b6d4eb18535cbfef39790b544288ad39659c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Метод NotifyDebuggerOfWaitCompletion
 Метод заполнителя, используется как целевой объект точки останова в отладчике. Этот метод не должен быть встроенным или оптимизированного.  
   
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   

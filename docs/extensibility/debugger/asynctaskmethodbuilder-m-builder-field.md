@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: e76425b81bc2198bbe96740c792b6da47a14d846
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>Поле AsyncTaskMethodBuilder.m_builder
 Представляет обычный построитель объект делегирует этот экземпляр не являющимися универсальными.  
   
- **Пространство имен:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   

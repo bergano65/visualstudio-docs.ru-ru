@@ -1,22 +1,22 @@
 ---
-title: "Активация на месте | Документы Microsoft"
-ms.custom: 
+title: Активация на месте | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: 
+caps.latest.revision: 26
 manager: douge
 ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="in-place-activation"></a>Активация на месте
 Если в представлении редактора размещаются элементы ActiveX или другие активные элементы управления, представление редактора следует реализовать как элемент ActiveX или как активный объект данных документа с помощью модели встроенной активации.  
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="objects-and-interfaces-used"></a>Используемые объекты и интерфейсы  
  Объекты, используемые для реализации встроенной активации, показаны на рисунке ниже.  
   
- ![В &#45; редактор встроенной активации](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
+ ![В&#45;поместите редактор активации](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Редактор встроенной активации  
   
 > [!NOTE]

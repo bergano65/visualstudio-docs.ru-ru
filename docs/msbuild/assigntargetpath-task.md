@@ -1,11 +1,11 @@
 ---
-title: "Задача AssignTargetPath | Документы Майкрософт"
-ms.custom: 
+title: Задача AssignTargetPath | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -13,17 +13,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: f279d3e22f0af72a718bf0646a1ffa81b943076b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="assigntargetpath-task"></a>Задача AssignTargetPath
 Эта задача принимает список файлов и добавляет атрибуты `<TargetPath>`, если они еще не указаны.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="task-parameters"></a>Параметры задачи  
  В следующей таблице приводятся параметры задачи `AssignTargetPath`.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`RootFolder`|Необязательный входной параметр `string`.<br /><br /> Содержит путь к папке с целевыми ссылками.|  
 |`Files`|Необязательный входной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Содержит исходный список файлов.|  

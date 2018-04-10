@@ -1,11 +1,11 @@
 ---
-title: "Задача ResolveNonMSBuildProjectOutput | Документы Майкрософт"
-ms.custom: 
+title: Задача ResolveNonMSBuildProjectOutput | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, ResolveNonMSBuildProjectOutput task
 - ResolveNonMSBuildProjectOutput task [MSBuild]
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e451f301aa7a5bb4ac8f176d9ebe59fa66b0f662
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>Задача ResolveNonMSBuildProjectOutput
 Определяет выходные файлы для ссылок на проекты, не относящихся к MSBuild.  
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `ResolveNonMSBuildProjectOutput` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`PreresolvedProjectOutputs`|Необязательный параметр `String` .<br /><br /> Задает XML-строку, содержащую разрешенные выходные данные проекта.|  
 |`ProjectReferences`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Задает ссылки проекта.|  

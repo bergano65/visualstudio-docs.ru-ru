@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2c657b7cef89871e17af442e41229c2fda0f4b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>Метод GetTaskSchedulersForDebugger
 Получает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые активны в данный момент.  
   
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   

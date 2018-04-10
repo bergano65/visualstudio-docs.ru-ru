@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9638be7b2f3f3a6c235a4768cdb493fea701a4dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="mstateobject-field"></a>m_stateObject поля
+# <a name="mstateobject-field"></a>m_stateObject Field
 Объект, представляющий данные, будут использоваться действие.  
   
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   

@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2b4a1645ed229ba47a6eea952094f76b571917f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. Свойство ObjectIdForDebugger
 Возвращает объект, который может использоваться для уникальной идентификации этого конструктора в режим отладчика.  
   
- **Пространство имен:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   

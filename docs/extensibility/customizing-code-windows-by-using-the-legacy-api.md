@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Настройка окна кода с помощью API прежних версий
 Окно кода — объект окна документа, который поддерживает один или несколько представлений текста. Конкретные возможности окна кода зависят от службы соответствующего языка. В режиме многодокументного интерфейса (MDI) окно кода — дочерняя рамка MDI.  

@@ -1,11 +1,11 @@
 ---
-title: "Знаки, требующие отключения их специального значения | Документация Майкрософт"
-ms.custom: 
+title: Знаки, требующие отключения их специального значения | Документация Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - special characters to escape
 - msbuild, special characters to escape
 ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
-caps.latest.revision: 
+caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: b79a497af179f0038f09f2455ed206a0f99aeddc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="special-characters-to-escape"></a>Знаки, требующие отключения их специального значения
 Специальные знаки необходимо экранировать только в том случае, если они имеют особое значение в контексте, в котором используются. Например, звездочка (*) является специальным символом только в атрибутах "Включить" и "Исключить" определения элемента или при вызове <xref:Microsoft.Build.Tasks.CreateItem>. Во всех остальных случаях звездочка считается символом звездочки. Если не требуется экранировать звездочки в файлах проекта, использование их в таком виде не приносит никакого вреда.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 02/09/2018
   
  Полный список специальных символов для экранирования см. далее.  
   
-|Знак|Описание:|  
+|Знак|Описание|  
 |---------------|-----------------|  
 |%|Знак процента, используемый для ссылки на метаданные.|  
 |$|Знак доллара, используемый для ссылки на свойства.|  

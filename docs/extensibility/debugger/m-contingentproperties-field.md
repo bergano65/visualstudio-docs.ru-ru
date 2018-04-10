@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 01c31d057ff3aa99dff235e6b4cf81408c47701d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="mcontingentproperties-field"></a>m_contingentProperties поля
+# <a name="mcontingentproperties-field"></a>m_contingentProperties Field
 Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.  
   
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   

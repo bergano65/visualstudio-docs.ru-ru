@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef1bce81e20772660a6074c15bd5dad494804373
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Адаптация кода прежних версий в редактор
 В редакторе Visual Studio имеет множество функций, которые можно открыть из существующие компоненты кода. Ниже показано, как адаптировать компонент не MEF, например, VSPackage, чтобы использовать функциональные возможности редактора. Инструкции также показано, как использовать адаптеры для получения служб редактора в управляемом и неуправляемом коде.  

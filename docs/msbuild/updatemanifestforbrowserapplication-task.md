@@ -1,11 +1,11 @@
 ---
-title: "Задача UpdateManifestForBrowserApplication | Документация Майкрософт"
-ms.custom: 
+title: Задача UpdateManifestForBrowserApplication | Документация Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -18,24 +18,24 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-caps.latest.revision: 
+caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: fcc1c9fe8b28b2055c73cad626cc02ef8a56aa98
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Задача UpdateManifestForBrowserApplication
 Задача <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> выполняется для добавления элемента **\<hostInBrowser />** в манифест приложения (*имя_проекта*.exe.manifest) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].  
   
 ## <a name="task-parameters"></a>Параметры задачи  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Обязательный параметр **ITaskItem[]**.<br /><br /> Задает путь и имя файла манифеста приложения, в который необходимо добавить элемент `<hostInBrowser />`.|  
 |`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />**. Если задано значение **true**, новый элемент `<`**hostInBrowser />** включается в элемент **\<entryPoint />**. Обратите внимание, что включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />**. Если указано значение **false**, манифест приложения не изменяется.|  

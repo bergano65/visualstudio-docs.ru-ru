@@ -1,12 +1,12 @@
 ---
-title: "Отладка HTML и CSS в приложениях UWP | Документы Microsoft"
-ms.custom: 
+title: Отладка HTML и CSS в приложениях UWP | Документы Microsoft
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Отладка HTML и CSS в приложениях UWP в Visual Studio
   
@@ -180,7 +180,7 @@ ms.lasthandoff: 01/19/2018
   
      На следующем рисунке показана вкладка **Вычисленные** .  
   
-     ![DOM Explorer Computed tab](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")  
+     ![Вкладка "вычисляемый обозревателя DOM"](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")  
   
 14. В главном окне проводника DOM дважды щелкните встроенный стиль высоты и ширины элемента DIV `fView` . Теперь можно изменить здесь значения. В этом сценарии требуется удалить их полностью.  
   
@@ -211,7 +211,7 @@ ms.lasthandoff: 01/19/2018
   
      На следующем рисунке показано как **макета** выглядит вкладка, если вы используете эмулятор с 100 пикс смещение и поле).  
   
-     ![DOM Explorer Layout tab](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
+     ![Вкладка макета проводника DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
      Это неправильно. На вкладке **Вычисленные** также отображаются те же значения полей.  
   
@@ -246,7 +246,7 @@ ms.lasthandoff: 01/19/2018
   
  При выборе элементов с помощью окна проводника DOM и наведении указателя мыши на элемент соответствующий элемент выделяется в запущенном приложении. Чтобы выбрать элемент, необходимо щелкнуть по нему в проводнике DOM (или воспользоваться для выбора элементов клавишами со стрелками). Элементы в проводнике DOM можно также выбирать с помощью кнопки **Выбрать элемент** . На следующем рисунке показана кнопка **Выбор элемента** .  
   
- ![Select Element Button in DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+ ![Выберите элемент в проводнике DOM](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
  При нажатии кнопки **Выбрать элемент** (или сочетания клавиш CTRL+B) меняется режим выделения, то есть элемент в проводнике DOM можно выделить, щелкнув по нему в запущенном приложении. По щелчку режим возвращается в нормальный режим выделения. При нажатии кнопки **Выбор элемента**приложение отображается на переднем плане, а вид курсора меняется в соответствии с новым режимом выделения. Если щелкнуть выделенный элемент, проводник DOM снова отображается на переднем плане, а указанный элемент выделен.  
   

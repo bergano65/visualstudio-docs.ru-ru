@@ -1,11 +1,11 @@
 ---
-title: "Задача VCMessage | Документы Майкрософт"
-ms.custom: 
+title: Задача VCMessage | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vc.task.vcmessage
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - VCMessage task (MSBuild (Visual C++))
 - MSBuild (Visual C++), VCMessage task
 ms.assetid: 956675fd-05dc-40b4-856f-616145103498
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f3ec9c3b41d7ef8bffaa1dd1c607cd39610143b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="vcmessage-task"></a>Задача VCMessage
 Заносит в журнал предупреждения и сообщения об ошибках, возникшие при сборке.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи **VCMessage**.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |**Аргументы**|Необязательный параметр типа **String**.<br /><br /> Разделенный точками с запятой список отображаемых сообщений.|  
 |**Код**|Обязательный параметр **string**.<br /><br /> Номер ошибки, определяющий сообщение.|  

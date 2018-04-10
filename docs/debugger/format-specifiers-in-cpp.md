@@ -1,12 +1,12 @@
 ---
-title: "Описателях в отладчике (C++) | Документы Microsoft"
-ms.custom: 
+title: Описателях в отладчике (C++) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug
@@ -28,17 +28,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели формата в C++ в отладчике Visual Studio
 С помощью описателей формата можно изменить формат, в котором значение отображается в окне **Контрольные значения** .  
@@ -88,7 +88,7 @@ int main() {
 |**s32b**|Строка UTF-32 (без кавычек)|\<расположение > U «Здравствуй, мир»|Здравствуй, мир!|  
 |**en**|перечисление|Суббота(6)|Суббота|  
 |**hv**|Тип указателя — указывает на то, что проверяемое значение указателя является результатом выделения кучи для массива, например `new int[3]`.|\<расположение > {\<первый элемент >}|\<расположение > {\<первый элемент >, \<второй элемент >,...}|  
-|**na**|Подавляет адрес указателя на объект в памяти.|\<расположение >, {элемент = значение …}|{элемент = значение …}|  
+|**na**|Подавляет адрес указателя на объект в памяти.|\<location>, {member=value...}|{элемент = значение …}|  
 |**nd**|Отображает только данные базового класса без учета производных классов.|`(Shape*) square` включает данные базового и производных классов|Отображает только данные базового класса|  
 |hr|Код ошибки HRESULT или Win32 (В настоящее время отладчик автоматически расшифровывает коды HRESULT, и в этих случаях данный спецификатор не требуется.)|S_OK|S_OK|  
 |wc|Флаг класса Window|0x0010|WC_DEFAULTCHAR|  
@@ -120,11 +120,11 @@ int main() {
 |**f**|Число с плавающей запятой со знаком|(3./2.), f|1.500000|  
 |**e**|Число в экспоненциальном представлении со знаком|(3.0/2.0)|1,500000e+000|  
 |**g**|Число с плавающей запятой со знаком или число в экспоненциальном представлении со знаком, в зависимости от того, какой формат короче|(3.0/2.0)|1.5|  
-|c|одиночный символ|\<расположение >|101 'e'|  
-|s|const char*|\<расположение >|"Здравствуй, мир!"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<расположение >|L"Здравствуй, мир!"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<расположение >|Здравствуй, мир!|  
-|s8|const char*|\<расположение >|"Здравствуй, мир!"|  
+|c|одиночный символ|\<location>|101 'e'|  
+|s|const char*|\<location>|"Здравствуй, мир!"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"Здравствуй, мир!"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|Здравствуй, мир!|  
+|s8|const char*|\<location>|"Здравствуй, мир!"|  
 |hr|Код ошибки HRESULT или Win32 (В настоящее время отладчик автоматически расшифровывает коды HRESULT, и в этих случаях данный спецификатор не требуется.)|S_OK|S_OK|  
 |wc|Флаг класса Window|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Номера сообщений Windows|0x0010|WM_CLOSE|  

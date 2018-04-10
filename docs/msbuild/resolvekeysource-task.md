@@ -1,11 +1,11 @@
 ---
-title: "Задача ResolveKeySource | Документы Майкрософт"
-ms.custom: 
+title: Задача ResolveKeySource | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveKeySource
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - ResolveKeySource task [MSBuild]
 - MSBuild, ResolveKeySource task
 ms.assetid: 449f06c2-e9aa-4236-ab1e-c45c25452b2e
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 42faa2075c7c594ff19b15bf2be16742b62f6202
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="resolvekeysource-task"></a>Задача ResolveKeySource
 Определяет источник ключа строгого имени.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="task-parameters"></a>Параметры задачи  
  В следующей таблице приводятся параметры задачи `ResolveKeySource`.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`AutoClosePasswordPromptShow`|Необязательный параметр `Int32` .<br /><br /> Возвращает или задает длительность (в секундах) отображения сообщения с обратным отсчетом.|  
 |`AutoClosePasswordPromptTimeout`|Необязательный параметр `Int32` .<br /><br /> Получает или задает интервал времени в секундах перед закрытием диалогового окна запроса пароля.|  

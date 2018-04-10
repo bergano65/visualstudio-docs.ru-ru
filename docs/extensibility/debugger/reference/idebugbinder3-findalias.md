@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: b88ae0da5f90da45d33ec56169665e9c8430846c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Этот метод осуществляет поиск псевдоним, заданному имени. Выполняется поиск всех псевдонимов в программе.  

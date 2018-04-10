@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d37956c01cbbebbe29d7506cf5eacd9456b3bbc1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="adding-search-to-a-tool-window"></a>Добавление поиска в окно инструментов
 При создании или обновлении расширения окна инструментов, можно добавить те же функциональные возможности поиска, которое отображается в другом месте в Visual Studio. Эти функции включают следующие компоненты:  

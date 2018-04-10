@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c3540dc77821e6aa3fb3884d82cd0c83eee8e24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Этот интерфейс представляет текстовый документ.  
@@ -43,7 +43,7 @@ IDebugDocumentText2 : IDebugDocument2
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В дополнение к методам на `IDebugDocument2` интерфейс, этот интерфейс реализует следующие методы:  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Получает размер текста в этой позиции в документе.|  
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Получение текста из указанной позиции в документе.|  

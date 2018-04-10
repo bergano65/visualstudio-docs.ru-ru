@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-an-options-page"></a>Создание страницы параметров
 В этом пошаговом руководстве создается простой Сервис/Параметры страницы, использующей сетку свойств для проверки и задать свойства.  
@@ -246,7 +246,7 @@ ms.lasthandoff: 12/22/2017
   
     ```  
   
-     Этот код вызывает <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> для создания или получения `OptionPageGrid` экземпляра. `OptionPageGrid`вызовы <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> загрузить ее параметров, которые являются открытые свойства.  
+     Этот код вызывает <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> для создания или получения `OptionPageGrid` экземпляра. `OptionPageGrid` вызовы <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> загрузить ее параметров, которые являются открытые свойства.  
   
 2.  Теперь добавьте пользовательскую команду шаблон элемента с именем **MyToolsOptionsCommand** для отображения значения. В **Добавление нового элемента** диалоговое окно, перейдите на **Visual C# / Extensibility** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя файла команд для **MyToolsOptionsCommand.cs**.  
   

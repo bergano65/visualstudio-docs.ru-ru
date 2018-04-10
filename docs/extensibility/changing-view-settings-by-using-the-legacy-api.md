@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Изменение параметров представления с помощью API прежних версий
 Параметры основных функций редактора, например перенос по словам, выделения и виртуальное пространство, которые могут быть изменены пользователем с помощью параметра **параметры** диалоговое окно. Однако это также можно изменить эти параметры программным образом.  

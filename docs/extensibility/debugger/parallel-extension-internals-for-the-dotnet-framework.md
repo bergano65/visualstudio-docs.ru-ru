@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4cc64270cabb3e30ee3c13a1617222349e7b3677
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Внутри параллельной расширения для платформы .NET Framework
 Этот раздел описывает внутренние типы, методы и поля из классов, которые помогают реализовать пользовательские отладчик для параллельных расширений для .NET Framework.  

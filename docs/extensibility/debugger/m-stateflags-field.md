@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 90fd3f602e94379f1f2031cb53a5c9508df1d191
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="mstateflags-field"></a>m_stateFlags поля
+# <a name="mstateflags-field"></a>m_stateFlags Field
 Хранит сведения о текущем состоянии <xref:System.Threading.Tasks.Task> объекта.  
   
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   

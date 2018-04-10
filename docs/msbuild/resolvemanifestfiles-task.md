@@ -1,11 +1,11 @@
 ---
-title: "Задача ResolveManifestFiles | Документация Майкрософт"
-ms.custom: 
+title: Задача ResolveManifestFiles | Документация Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ResolveManifestFiles task [MSBuild]
 - MSBuild, ResolveManifestFiles task
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
-caps.latest.revision: 
+caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 088af1d1ef0a83b695b0a36baaa424a4926f3112
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="resolvemanifestfiles-task"></a>Задача ResolveManifestFiles
 Разрешает следующие элементы в процессе сборки в файлы для создания манифеста: элементы сборки, зависимости, вспомогательные элементы, содержимое, отладочные символы и документация.  
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `ResolveManifestFiles` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`DeploymentManifestEntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет имя манифеста развертывания.|  
 |`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет управляемую сборку или ссылку на манифест ClickOnce, являющуюся точкой входа в манифест.|  
