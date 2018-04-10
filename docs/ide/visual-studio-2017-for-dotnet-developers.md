@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Руководство по повышению производительности работы в Visual Studio 2017 для разработчиков на платформе .NET
 
@@ -31,12 +31,7 @@ ms.lasthandoff: 03/28/2018
 - [Сочетания клавиш в Visual Studio (IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Коллекция расширений Visual Studio](../ide/media/VSIDE_Productivity_Extensibility.png)
-
 Ниже приведены широко используемые сочетания клавиш в Visual Studio. 
-
-> [!NOTE]
-> Некоторые расширения переопределяют установленные по умолчанию сочетания клавиш в Visual Studio, и для использования приведенных ниже команд необходимо восстановить эти сочетания. Чтобы восстановить заданные по умолчанию сочетания клавиш в Visual Studio, выберите **Сервис > Импорт и экспорт параметров... > Сбросить все параметры** или **Сервис > Параметры > Клавиатура > Сброс**.
 
 | Сочетание клавиш (все профили) | Команда | Описание: |
 |-|-|-|
@@ -52,6 +47,9 @@ ms.lasthandoff: 03/28/2018
 | **CTRL+F5** | Запуск без отладки | Запуск приложения без отладки |
 | **CTRL+K,D** (профиль по умолчанию) или **CTRL+E,D** (профиль C#) | Форматировать документ | Очистка нарушений форматирования в файле на основе заданных параметров перевода строки, интервалов и отступов |
 | **CTRL+\\E** (профиль по умолчанию) или **CTRL+W,E** (профиль C#) | Просмотреть список ошибок | Просмотр всех ошибок в документе, проекте или решении |
+
+> [!NOTE]
+> Некоторые расширения отменяют привязку настраиваемых сочетаний клавиш по умолчанию в Visual Studio. Чтобы использовать следующие команды, восстановите заданные по умолчанию сочетания клавиш в Visual Studio, выбрав **Сервис > Импорт и экспорт параметров... > Сбросить все параметры** или **Сервис > Параметры > Клавиатура > Сброс**.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Мне необходимо быстро переходить к файлам или типам.
 В Visual Studio 2017 есть функция _Перейти ко всем_ (**CTRL+T**). Она позволяет быстро перейти к объявлению любого файла, типа, члена или символа.
