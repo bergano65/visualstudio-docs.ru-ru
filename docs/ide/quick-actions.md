@@ -1,30 +1,34 @@
 ---
-title: "Быстрые действия | Документы Майкрософт"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: Быстрые действия | Документы Майкрософт
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.workload: multiple
-ms.openlocfilehash: 259e033aa32caaca59f37d7dc77ac095b4709878
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 30a3243b924032cd2501d42bb8aad37777e2f814
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="quick-actions"></a>Быстрые действия
 
 Быстрые действия позволяют легко создавать и изменять код, а также выполнять его рефакторинг одним действием. Быстрые действия доступны для C#, [C++](/cpp/ide/writing-and-refactoring-code-cpp) и файлов кода Visual Basic. Некоторые действия доступны только для определенного языка, тогда как другие доступны для всех языков.
 
-Быстрые действия можно применять, используя значок лампочки ![Маленький значок лампочки](media/vs2015_lightbulbsmall.png) или сочетание клавиш **CTRL**+**.** когда курсор находится на подходящей строке кода. Лампочка видна, если проблема подчеркнута красной волнистой линией и Visual Studio предлагает способ ее исправления. Например, если имеется ошибка, подчеркнутая красной волнистой линией, лампочка загорится, когда станут доступны пути исправления этой ошибки.
+Быстрые действия можно использовать для решения следующих задач:
+
+- исправление кода при нарушениях правил [анализатора кода](../code-quality/roslyn-analyzers-overview.md);
+- [игнорирование](../code-quality/use-roslyn-analyzers.md) нарушений правил анализа кода;
+- применение рефакторинга (например, [встраивание временной переменной](../ide/reference/inline-temporary-variable.md));
+- создание кода (например, [представление локальной переменной](../ide/reference/introduce-local-variable.md)).
+
+Быстрые действия можно применять, используя значок лампочки ![Маленький значок лампочки](media/vs2015_lightbulbsmall.png) или сочетание клавиш **CTRL**+**.** когда курсор находится на строке кода, для которой доступно действие. Лампочка видна, если проблема подчеркнута красной волнистой линией и Visual Studio предлагает способ ее исправления. Например, если имеется ошибка, подчеркнутая красной волнистой линией, лампочка загорится, когда станут доступны пути исправления этой ошибки.
 
 Сторонние разработчики могут предоставить для любого языка пользовательскую диагностику и предложения, например в рамках SDK, и лампочки Visual Studio будут появляться на основе этих правил.
 
@@ -34,17 +38,17 @@ ms.lasthandoff: 01/13/2018
 
 1. Нажмите клавиши **CTRL**+**.** в любом месте строки, чтобы обойти лампочку и перейти непосредственно к списку возможных исправлений.
 
-   ![Лампочка с наведением указателя мыши](../ide/media/vs2015_lightbulb_hover.png "VS2017_LightBulb_Hover")
+   ![Лампочка с наведением указателя мыши](../ide/media/vs2015_lightbulb_hover.png)
 
 ## <a name="to-see-potential-fixes"></a>Просмотр возможных исправлений
 
 Щелкните стрелку вниз или ссылку "Показать возможные исправления", чтобы увидеть список быстрых действий, которые может предпринять лампочка.
 
-![Расширенная лампочка](../ide/media/vs2015_lightbulb_hover_expanded.png "VS2017_LightBulb_hover_expanded")
+![Расширенная лампочка](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
 ## <a name="see-also"></a>См. также
 
-[Создание кода в Visual Studio](../ide/code-generation-in-visual-studio.md)  
-[Распространенные быстрые действия](../ide/common-quick-actions.md)  
-[Стили кода и быстрые действия](../ide/code-styles-and-quick-actions.md)  
-[Написание и рефакторинг кода (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Создание кода в Visual Studio](../ide/code-generation-in-visual-studio.md)
+- [Распространенные быстрые действия](../ide/common-quick-actions.md)
+- [Стили кода и быстрые действия](../ide/code-styles-and-quick-actions.md)
+- [Написание и рефакторинг кода (C++)](/cpp/ide/writing-and-refactoring-code-cpp)

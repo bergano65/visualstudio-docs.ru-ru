@@ -1,11 +1,7 @@
 ---
-title: "Распространенные быстрые действия | Документы Майкрософт"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: Распространенные быстрые действия | Документы Майкрософт
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,15 +11,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
 
-В этих разделах статьи перечислены некоторые распространенные быстрые действия, которые применяются как к коду C#, так и к коду Visual Basic.
+В этих разделах статьи перечислены некоторые распространенные быстрые действия, которые применяются как к коду C#, так и к коду Visual Basic. Эти действия являются *исправлениями кода* для встроенных [правил анализатора](../code-quality/roslyn-analyzers-overview.md) в Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Действия для исправления ошибок
 
@@ -176,7 +172,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Действия для удаления ненужного кода
 
-### <a name="remove-unnecesary-usingsimports"></a>Удаление ненужных операторов using/Import
+### <a name="remove-unnecessary-usingsimports"></a>Удаление ненужных директив using/Import
 
 Быстрое действие **Удалить ненужные директивы using/импорты** удалит все неиспользуемые операторы `using` и `Import` для текущего файла.  При выборе этого элемента неиспользованные директивы import пространства имен немедленно удаляются.
 
@@ -239,7 +235,7 @@ public MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS0219, BC42024 | C# и Visual Basic | Visual Studio 2017 версия 15.3 |
 
-### <a name="remove-type-from-default-value-expression"></a>Удаление типа из выражения значения **по умолчанию**
+### <a name="remove-type-from-default-value-expression"></a>Удаление типа из выражения значения по умолчанию
 
 Это быстрое действие удаляет тип значения из выражения значения по умолчанию и использует [литерал по умолчанию](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), если компилятор может вывести тип выражения.
 
@@ -260,7 +256,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 ## <a name="actions-that-add-missing-code"></a>Действия для добавления недостающего кода
 
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Добавление директив using/Imports для типов в ссылочных сборках, пакетах NuGet или других типов в решении
+### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Добавление директив using/imports для типов в ссылочных сборках, пакетах NuGet или других типов в решении
 
 При использовании типов, расположенных в других проектах вашего решения, автоматически появляется быстрое действие, но другие нужно включить на вкладке **Сервис > Параметры > C#** или **Basic > Дополнительно**:
 
@@ -475,7 +471,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>Преобразование кода
 
-### <a name="convert-if-construct-to-switch"></a>Преобразование конструкции **if** в конструкцию **switch**
+### <a name="convert-if-construct-to-switch"></a>Преобразование конструкции if в конструкцию switch
 
 Это быстрое действие позволяет преобразовать конструкцию **if-then-else** в конструкцию **switch**.
 
@@ -741,7 +737,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>Преобразование `ReferenceEquals` в `is null`
+### <a name="convert-referenceequals-to-is-null"></a>Преобразование ReferenceEquals в is null
 
 |  ИД диагностики | Применимые языки |  Поддерживаемая версия |
 | ------- | -------------------- | ----------------  |
@@ -959,4 +955,4 @@ Console.WriteLine($"{x} {y}");
 
 ## <a name="see-also"></a>См. также
 
-[Быстрые действия](../ide/quick-actions.md)  
+[Быстрые действия](../ide/quick-actions.md)

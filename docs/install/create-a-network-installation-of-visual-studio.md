@@ -1,25 +1,27 @@
 ---
-title: "Создание сетевой установки Visual Studio | Документация Майкрософт"
-description: "Описывается создание сетевой точки установки для развертывания Visual Studio на предприятии"
+title: Создание сетевой установки Visual Studio | Документация Майкрософт
+description: Описывается создание сетевой точки установки для развертывания Visual Studio на предприятии
 ms.date: 10/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: timsneath
+author: tglee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c85d839c76d272a0a90a37fa16fc812596c3198e
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Создание сетевой установки Visual Studio 2017
 
@@ -143,7 +145,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > Загрузчик Visual Studio 2017, доступный на веб-сайте [VisualStudio.com](http://www.visualstudio.com), скачивает и устанавливает последний выпуск Visual Studio 2017, доступный на момент очередного запуска. Если вы скачаете загрузчик Visual Studio сегодня, но запустите его через шесть месяцев, будет установлен более поздний выпуск Visual Studio 2017. Если же вы создадите макет, при установке Visual Studio на основе этого макета будет установлена определенная версия Visual Studio, включенная в этот макет. Даже если в Интернете уже существует новая версия, вы получите только ту версию Visual Studio, которая включена в ваш макет.
 
-Если вам нужно создать макет для более ранней версии Visual Studio 2017, откройте страницу https://my.visualstudio.com и скачайте фиксированную (fixed) версию начального загрузчика Visual Studio 2017.
+Если вам нужно создать макет для более ранней версии Visual Studio 2017, откройте страницу https://my.visualstudio.com и скачайте фиксированную (fixed) версию начального загрузчика Visual Studio 2017.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Техническая поддержка по вопросам, связанным с автономным установщиком
 

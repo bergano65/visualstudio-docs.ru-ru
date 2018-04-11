@@ -1,12 +1,13 @@
 ---
-title: "Переменные (JavaScript) | Документы Майкрософт"
-ms.custom: 
+title: Переменные (JavaScript) | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Переменные (JavaScript)
 В [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] переменная содержит значение, например "hello" или 5. Используя переменную, разработчик ссылается на данные, которые она представляет, например `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -48,7 +49,7 @@ var count = 0, amount = 100;
 ## <a name="naming-variables"></a>Именование переменных  
  В языке [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] учитывается регистр символов. Это значит, что имя переменной **myCounter** отличается от имени переменной **MYCounter**. Имена переменных могут быть любой длины. Ниже приведены правила создания допустимых имен переменных.  
   
--   Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре) или символом подчеркивания (_). Обратите внимание, что в качестве первого символа нельзя использовать число.  
+-   Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре), которая соответствует соглашениям об именовании переменных Unicode, или символом подчеркивания (_). Обратите внимание, что в качестве первого символа нельзя использовать число.  
   
 -   Последующие символы должны быть буквами, числами или символами подчеркивания (_).  
   

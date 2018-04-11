@@ -1,24 +1,24 @@
 ---
-title: "Использование Visual Studio на виртуальной машине Azure | Документация Майкрософт"
-description: "Узнайте, как использовать Visual Studio на виртуальной машине Azure."
+title: Использование Visual Studio на виртуальной машине Azure | Документация Майкрософт
+description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - azure services
 - virtual machine; VM
 - installation
 - visual studio
 author: PhilLee-MSFT
-ms.author: phillee
-manager: sacalla
+ms.author: tglee
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4492a35c7d58aa92c2c3e86de5bd6be8f8ad9eca
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 Применение Visual Studio на предварительно настроенной виртуальной машине Azure — это простой и быстрый способ использования налаженной среды разработки. Образы системы с различными конфигурациями Visual Studio доступны в [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
@@ -28,12 +28,13 @@ ms.lasthandoff: 03/08/2018
 ## <a name="what-configurations-and-versions-are-available"></a>Доступные конфигурации и версии
 Образы большинства последних основных версий (Visual Studio 2017 и Visual Studio 2015) можно найти в Azure Marketplace. Для каждой основной версии доступна исходная версия (RTW) и последние обновленные версии. Каждая из этих версий включает выпуски Visual Studio Enterprise и Visual Studio Community. Эти образы обновляются по крайней мере раз в месяц и включают последние обновления Visual Studio и Windows. Названия образов не изменяются. В описании каждого из них содержится версия установленного продукта и дата выпуска образа.
 
-| Версия выпуска              | Выпуски            | Версия продукта     |
-|:-----------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017 — последняя версия (15.6) |    Enterprise, Community     |      Версия 15.6.0     |
-|         Visual Studio 2017 — RTW           |    Enterprise, Community     |      Версия 15.0.10    |
-|   Visual Studio 2015 — последняя версия (обновление 3)   |    Enterprise, Community     |  Версия 14.0.25431.01  |
-|         Visual Studio 2015 — RTW           |             Нет             | Срок действия обслуживания истек |
+| Версия выпуска                                              | Выпуски                     |     Версия продукта     |
+|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
+| Visual Studio 2017 — последняя версия (15.6)                    |    Enterprise, Community     |      Версия 15.6.4     |
+| Visual Studio 2017: последняя предварительная версия (версия 15.7, предварительная версия 3) |    Enterprise, Community     |      Версия 15.7.0     |
+|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.10    |
+|   Visual Studio 2015 — последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01  |
+|         Visual Studio 2015 — RTW                              |             Нет             | Срок действия обслуживания истек |
 
 > [!NOTE]
 > В соответствии с политикой обслуживания корпорации Майкрософт обслуживание изначально выпущенной версии Visual Studio 2015 (RTW) завершено. Обновление 3 — это последняя версия семейства продуктов Visual Studio 2015.
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/08/2018
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
        add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^ 
+       add Microsoft.Net.Component.4.7.TargetingPack ^
        add Microsoft.Net.Component.4.6.2.SDK ^
        add Microsoft.Net.Component.4.6.2.TargetingPack ^
        add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
@@ -75,14 +76,14 @@ Azure предлагает разные размеры виртуальных м
    * Standard_D2_v2
    * Standard_D2S_v2
    * Standard_D3_v2
-    
+
 Дополнительные сведения о последних размерах виртуальных машин Windows в Azure см. в [этой статье](/azure/virtual-machines/windows/sizes).
 
 Используя Azure, вы всегда можете изменить размер виртуальной машины. Для этого можно подготовить новую виртуальную машину с более подходящим размером или изменить размер существующего экземпляра. Дополнительные сведения см. в статье [Изменение размера виртуальной машины Windows](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Что делать после запуска виртуальной машины?
 В Visual Studio в Azure применяется модель с использованием собственной лицензии. Так же как и при установке на собственном оборудовании, одним из первых шагов является лицензирование Visual Studio. Чтобы разблокировать Visual Studio, сделайте следующее:
-- Войдите с помощью учетной записи Майкрософт, связанной с подпиской Visual Studio. 
+- Войдите с помощью учетной записи Майкрософт, связанной с подпиской Visual Studio.
 - Разблокируйте Visual Studio с помощью ключа продукта, предоставленного во время покупки.
 
 Дополнительные сведения см. в статьях [Вход в Visual Studio](../ide/signing-in-to-visual-studio.md) и [Как разблокировать Visual Studio](../ide/how-to-unlock-visual-studio.md).
@@ -91,7 +92,7 @@ Azure предлагает разные размеры виртуальных м
 
 Спектр сред разработки довольно большой, а создание более сложных сопряжено со значительными расходами. Независимо от конфигурации вашей среды вы можете сохранить или записать настроенную виртуальную машину в качестве базового образа, который в будущем сможете использовать вы или другие члены команды. Загружая новую виртуальную машину, вы можете подготовить ее из базового образа, а не образа Azure Marketplace.
 
-Краткое описание процесса. Запустите средство System Preparation Tool (Sysprep), завершите работу виртуальной машины, а затем запишите *(рис. 1)* ее в качестве образа с помощью пользовательского интерфейса портала Azure. Azure сохраняет VHD-файл образа в выбранную учетную запись хранения. Затем новый образ появится в списке ресурсов подписки в виде ресурса "Образ".
+Краткое описание процесса. Запустите средство System Preparation Tool (Sysprep), завершите работу виртуальной машины, а затем запишите *(рис. 1)* ее в качестве образа с помощью пользовательского интерфейса портала Azure. Azure сохраняет `.vhd`-файл образа в выбранную учетную запись хранения. Затем новый образ появится в списке ресурсов подписки в виде ресурса "Образ".
 
 <img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*Рис. 1. Запись образа через пользовательский интерфейс портала Azure.*</center>
 
