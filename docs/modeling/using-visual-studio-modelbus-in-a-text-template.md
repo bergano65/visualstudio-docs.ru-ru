@@ -1,9 +1,9 @@
 ---
-title: "С помощью Visual Studio ModelBus в текстовом шаблоне | Документы Microsoft"
-ms.custom: 
+title: С помощью Visual Studio ModelBus в текстовом шаблоне | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
 При написании текстовых шаблонов, которые считывают модель, которая содержит [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus ссылается, может потребоваться разрешить ссылки для доступа к целевой модели. В этом случае необходимо адаптировать текстовых шаблонов и упоминаемой доменного языка (DSL):  
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  Создание нового DSL с помощью шаблона решения минимальной языка. Имя языка MBConsumer и расширение файла на «.consume».  
   
-2.  В проекте DSL добавьте ссылку на сборку MBProvider DSL. Щелкните правой кнопкой мыши `MBConsumer\Dsl\References` и нажмите кнопку **добавить ссылку**. В **Обзор** найдите`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  В проекте DSL добавьте ссылку на сборку MBProvider DSL. Щелкните правой кнопкой мыши `MBConsumer\Dsl\References` и нажмите кнопку **добавить ссылку**. В **Обзор** найдите `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      Это позволяет создать код, который использует другие DSL. Если вы хотите создавать ссылки на несколько DSL, также добавьте их.  
   
@@ -277,7 +277,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
      `Provider File|*.provide`  
   
-     Подстрока после «&#124;» является фильтром для диалогового окна выбора файла. Можно установить его, чтобы включить все файлы с помощью *.\*  
+     Подстрока после «&#124;» фильтров, в диалоговом окне выбора файла. Можно установить его, чтобы включить все файлы с помощью *.\*  
   
      В **тип элемента модели** введите имена один или несколько доменов классы в поставщике DSL (например, Company.MBProvider.Task). Они могут быть абстрактные классы. Если список не заполнено, пользователь может задать ссылку на любой элемент.  
   

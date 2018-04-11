@@ -1,9 +1,9 @@
 ---
-title: "Настройка создания и перемещения элементов | Документы Microsoft"
-ms.custom: 
+title: Настройка создания и перемещения элементов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Настройка создания и перемещения элементов
 Вы можете разрешить элемент, чтобы перетащить в другое, из панели элементов или в Вставка или операции перемещения. Может иметь перемещенные элементы, связанные с целевых элементов, с помощью связей, указанных вами.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="defining-an-element-merge-directive"></a>Определение слияния директивы Element  
  Доменные классы отношений между доменами, фигур, соединители и диаграмм можно добавить директивы слияния элементов. Можно добавить или найти их в обозреватель DSL в принимающего класса домена. Принимающего класса является класс домена элемента, который уже находится в модели, а также в которой будут объединены нового или скопированного элемента.  
   
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
+ ![DSL&#45;EMD&#95;сведения](../modeling/media/dsl-emd_details.png "DSL EMD_Details")  
   
  **Индексирования класс** — это класс домена элементов, которые могут быть объединены в члена принимающего класса. Экземпляры подклассы класса индексирования будут объединены с этой EMD, также если вы не задали **применяется подклассов** значение False.  
   

@@ -1,11 +1,11 @@
 ---
-title: "Задача Warning | Документы Майкрософт"
-ms.custom: 
+title: Задача Warning | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Warning
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: ca4e9906d31468b028f1ad9a39c196bd54e3fb9e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="warning-task"></a>Задача Warning
 Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи `Warning`.  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`Code`|Необязательный параметр `String` .<br /><br /> Код предупреждения для связи с предупреждением.|  
 |`File`|Необязательный параметр `String` .<br /><br /> Указывает соответствующий файл (при его наличии). Если файл не указан, используется файл, содержащий задачу Warning.|  

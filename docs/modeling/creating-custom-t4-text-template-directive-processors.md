@@ -1,9 +1,9 @@
 ---
-title: "Создание процессорами директив текстового шаблона T4 пользовательских | Документы Microsoft"
-ms.custom: 
+title: Создание процессорами директив текстового шаблона T4 пользовательских | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
@@ -14,17 +14,17 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Создание пользовательских обработчиков директив для текстовых шаблонов T4
 *Процесс преобразования текстового шаблона* принимает *текстового шаблона* файл в качестве входных данных и создает текстовый файл на выходе. *Преобразования текстовых шаблонов* процесс и обработчик взаимодействует с основное приложение преобразования текстовых шаблонов и один или несколько текстового шаблона элементов управления *процессоров директив* для завершения процесса. Дополнительные сведения см. в разделе [процесс преобразования текстового шаблона](../modeling/the-text-template-transformation-process.md).  
   
  Для создания пользовательского процессора директив создается класс, наследующий <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> либо <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
- Это различие между этими двумя <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> реализует минимальный интерфейс, необходимый для получения параметров от пользователя и создание кода, который создает выходной файл шаблона. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>реализует требует или предоставляет шаблон проектирования. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>обрабатывает два специальных параметра `requires` и `provides`.  Например, пользовательский процессор директив может принять имя файла от пользователя, откройте и чтение файла и затем сохранить текстового файла в переменной с именем `fileText`. Подкласс <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> может принимать имя файла от пользователя в качестве значения `requires` и имя переменной, в которой для хранения текста в качестве значения параметра `provides` параметр. Этот процессор будет открыть и прочитать файл и сохраните текстовый файл в указанной переменной.  
+ Это различие между этими двумя <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> реализует минимальный интерфейс, необходимый для получения параметров от пользователя и создание кода, который создает выходной файл шаблона. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> реализует требует или предоставляет шаблон проектирования. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> обрабатывает два специальных параметра `requires` и `provides`.  Например, пользовательский процессор директив может принять имя файла от пользователя, откройте и чтение файла и затем сохранить текстового файла в переменной с именем `fileText`. Подкласс <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> может принимать имя файла от пользователя в качестве значения `requires` и имя переменной, в которой для хранения текста в качестве значения параметра `provides` параметр. Этот процессор будет открыть и прочитать файл и сохраните текстовый файл в указанной переменной.  
   
  Перед вызовом пользовательского процессора директив из текстового шаблона в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], необходимо зарегистрировать его.  
   
@@ -50,17 +50,17 @@ ms.lasthandoff: 02/09/2018
   
  Наиболее важным `DirectiveProcessor` используются следующие методы, которые необходимо реализовать.  
   
--   `bool IsDirectiveSupported(string directiveName)`-Возврата `true` Если процессор директив может обрабатывать именованные директивы.  
+-   `bool IsDirectiveSupported(string directiveName)` -Возврата `true` Если процессор директив может обрабатывать именованные директивы.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`– Процессор шаблонов вызывает этот метод для каждого вхождения директивы в шаблоне. Ваш процессор должен сохранять результаты.  
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` – Процессор шаблонов вызывает этот метод для каждого вхождения директивы в шаблоне. Ваш процессор должен сохранять результаты.  
   
  После последнего вызова ProcessDirective() будет вызывать эти методы:  
   
--   `string[] GetReferencesForProcessingRun()`– Должен возвращать имена сборок, которые требуется код шаблона.  
+-   `string[] GetReferencesForProcessingRun()` – Должен возвращать имена сборок, которые требуется код шаблона.  
   
--   `string[] GetImportsForProcessingRun()`– Должен возвращать пространства имен, который можно использовать в коде шаблона.  
+-   `string[] GetImportsForProcessingRun()` – Должен возвращать пространства имен, который можно использовать в коде шаблона.  
   
--   `string GetClassCodeForProcessingRun()`– Должен возвращать код методов, свойств и другие определения, которые можно использовать код шаблона. Для этого проще всего построить строку, содержащую код C# или Visual Basic. Чтобы сделать процессор директив можно было вызывать из шаблона, который использует любой язык среды CLR, можно составлять операторы в виде дерева CodeDom и затем возвращать результат сериализации этого дерева на языке, используемом в шаблоне.  
+-   `string GetClassCodeForProcessingRun()` – Должен возвращать код методов, свойств и другие определения, которые можно использовать код шаблона. Для этого проще всего построить строку, содержащую код C# или Visual Basic. Чтобы сделать процессор директив можно было вызывать из шаблона, который использует любой язык среды CLR, можно составлять операторы в виде дерева CodeDom и затем возвращать результат сериализации этого дерева на языке, используемом в шаблоне.  
   
 -   Дополнительные сведения см. в разделе [Пошаговое руководство: Создание пользовательского процессора директив](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   

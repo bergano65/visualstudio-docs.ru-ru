@@ -1,9 +1,9 @@
 ---
-title: "Рекомендации по написанию текстовых шаблонов T4 | Документы Microsoft"
-ms.custom: 
+title: Рекомендации по написанию текстовых шаблонов T4 | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: accf32ad313cbbfe11c2e85fdfe3101ab428c4a4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Рекомендации по написанию текстовых шаблонов T4
 Эти общие рекомендации могут быть полезны при создании программного кода или других ресурсов приложения в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Они не являются фиксированными правила.  

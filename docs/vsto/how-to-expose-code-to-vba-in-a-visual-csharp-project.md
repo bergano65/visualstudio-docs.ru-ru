@@ -1,12 +1,12 @@
 ---
-title: "Как: предоставлять к коду VBA в проекте Visual C# | Документы Microsoft"
-ms.custom: 
+title: 'Как: предоставлять к коду VBA в проекте Visual C# | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Практическое руководство. Предоставление доступа к коду со стороны VBA в проекте Visual C#
   Код Visual C# проекта на Visual Basic для приложений (VBA) можно предоставлять, если требуется два типа кода для взаимодействия друг с другом.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="exposing-code-in-a-visual-c-project"></a>Предоставление доступа к коду в проекте Visual C#  
  Чтобы позволить коду VBA для вызова кода в проекте Visual C#, измените код, чтобы его видимым для COM и задайте **ReferenceAssemblyFromVbaProject** свойства **True** в конструкторе.  
   
- Пошаговое руководство для вызова метода в проекте Visual C# из VBA см [Пошаговое руководство: вызов кода из VBA в Visual C &#35; Проект](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ Пошаговое руководство для вызова метода в проекте Visual C# из VBA см [Пошаговое руководство: вызов кода из VBA в Visual C&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 #### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Чтобы предоставить доступ к коду в проекте Visual C# в код VBA  
   
@@ -108,8 +108,8 @@ ms.lasthandoff: 02/09/2018
 ## <a name="see-also"></a>См. также  
  [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [Пошаговое руководство: Вызов кода из VBA в Visual C &#35; Проект](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Объединение настроек VBA и настроек на уровне документа](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Пошаговое руководство: Вызов кода из VBA в Visual C&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Практическое руководство. Предоставление доступа к коду со стороны VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Этот интерфейс используется подсистема отладки (DE) для отправки событий отладки диспетчера сеанса отладки (SDM).  
@@ -35,7 +35,7 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]реализует этот интерфейс для получения событий из модуля отладки.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] реализует этот интерфейс для получения событий из модуля отладки.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
  Модуль отладки обычно получает этот интерфейс, когда вызывает SDM [присоединение](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [присоединение](../../../extensibility/debugger/reference/idebugengine2-attach.md), или [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Модуль отладки отправляет события SDM путем вызова [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
@@ -43,7 +43,7 @@ IDebugEventCallback2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEventCallback2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Отправляет уведомление SDM событий отладки.|  
   

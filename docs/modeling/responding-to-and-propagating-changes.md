@@ -1,9 +1,9 @@
 ---
-title: "Реагирование на изменения и их распространение | Документы Microsoft"
-ms.custom: 
+title: Реагирование на изменения и их распространение | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, events
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f814cc9ca963b59217dc486539d22f42f487a3db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>Реагирование на изменения и их распространение
 Если элемент создан, удаления или обновления, можно написать код, распространяет изменения на другие части модели, или на внешние ресурсы, такие как файлы, базы данных или другие компоненты.  

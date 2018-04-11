@@ -1,9 +1,9 @@
 ---
-title: "Пошаговое руководство: Создание основное приложение текстового шаблона | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание основное приложение текстового шаблона | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов
 Объект *текстового шаблона ** узла* предоставляет среду, которая включает *преобразования текстовых шаблонов* для запуска. Ведущее приложение отвечает за управление взаимодействием этого процессора с файловой системой. Подсистема или *процессора директив* , требующий файл или сборку можно запросить ресурс с узла. В ответ ведущее приложение просмотрит каталоги и глобальный кэш сборок в поиске запрошенного ресурса. Дополнительные сведения см. в разделе [процесс преобразования текстового шаблона](../modeling/the-text-template-transformation-process.md).  

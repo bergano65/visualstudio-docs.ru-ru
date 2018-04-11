@@ -1,9 +1,9 @@
 ---
-title: "Как: Добавление команды в контекстное меню | Документы Microsoft"
-ms.custom: 
+title: 'Как: Добавление команды в контекстное меню | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Практическое руководство. Добавление команды в контекстное меню
 Чтобы пользователи могли выполнять задачи, характерные для вашего доменного языка (DSL), можно добавить в него команды меню. Команды отображаются в контекстном меню, когда пользователь нажимает схему правой кнопкой мыши. Команду можно настроить таким образом, чтобы она появлялась в меню только при определенных обстоятельствах. Например, можно сделать команду видимой, только когда пользователь выбирает определенные типы элементов или элементы в определенных состояниях.  
@@ -51,7 +51,7 @@ ms.lasthandoff: 02/09/2018
   
  В остальных случаях используйте для определения команд метод MEF. Дополнительные сведения см. в разделе [расширение доменного языка с помощью MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-##  <a name="VSCT"></a>Объявите по команде в Commands.Vsct  
+##  <a name="VSCT"></a> Объявите по команде в Commands.Vsct  
  Команды меню объявляются в файле DslPackage\Commands.vsct. Эти определения указывают на метки элементов меню и место их отображения в меню.  
   
  Файл для редактирования, Commands.vsct, импортирует определения из нескольких h-файлы, которые находятся в каталоге *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc. Он также включает файл GeneratedVsct.vsct, который создается из определения DSL.  
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>Обновление версии пакета в Package.tt  
+##  <a name="version"></a> Обновление версии пакета в Package.tt  
  При добавлении или изменении команды обновляйте параметр `version`<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>, который применяется к классу пакета перед выпуском новой версии доменного языка.  
   
  Поскольку класс пакета определяется в созданном классе, обновите атрибут в файле текстового шаблона, из которого создается файл Package.cs.  
@@ -146,7 +146,7 @@ ms.lasthandoff: 02/09/2018
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>Укажите поведение команды  
+##  <a name="CommandSet"></a> Укажите поведение команды  
  В доменном языке уже имеются некоторые команды, внедренные в разделяемый класс, который был объявлен в файле DslPackage\GeneratedCode\CommandSet.cs. Чтобы добавить новые команды, необходимо расширить этот класс, создав новый файл с частичным объявлением того же класса. Обычно это имя класса  *\<YourDslName >*`CommandSet`. Лучше всего начать с проверки имени класса и его содержимого.  
   
  Класс набора команд производится из <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -224,15 +224,15 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.  
   
--   `this.IsDiagramSelected()` - `true`Если пользователь щелкнет пустую область схемы.  
+-   `this.IsDiagramSelected()` - `true` Если пользователь щелкнет пустую область схемы.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`-пользователь не выбран нескольких объектов  
+-   `this.IsSingleSelection()` -пользователь не выбран нескольких объектов  
   
--   `this.SingleSelection`-Фигура или схема, на который пользователь щелкнул правой кнопкой мыши  
+-   `this.SingleSelection` -Фигура или схема, на который пользователь щелкнул правой кнопкой мыши  
   
--   `shape.ModelElement as MyLanguageElement`-элемент модели, представленной фигуры.  
+-   `shape.ModelElement as MyLanguageElement` -элемент модели, представленной фигуры.  
   
  Как правило, свойство `Visible` должно определяться выбранным параметром, а свойство `Enabled` — состоянием выбранных элементов.  
   
@@ -299,7 +299,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 >  В случае изменений в разделе "Символы" VSCT-файла для сопоставления нужно будет также изменить эти объявления. Кроме того, необходимо увеличить номер версии в Package.tt  
   
- Зарегистрируйте команды меню как часть данного набора команд. `GetMenuCommands()`вызывается один раз после инициализации схеме:  
+ Зарегистрируйте команды меню как часть данного набора команд. `GetMenuCommands()` вызывается один раз после инициализации схеме:  
   
 ```  
 protected override IList<MenuCommand> GetMenuCommands()  

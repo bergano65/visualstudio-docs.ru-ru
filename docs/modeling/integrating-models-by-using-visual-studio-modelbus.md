@@ -1,9 +1,9 @@
 ---
-title: "Интеграция моделей с помощью Visual Studio Modelbus | Документы Microsoft"
-ms.custom: 
+title: Интеграция моделей с помощью Visual Studio Modelbus | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Интеграция моделей с помощью Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus предоставляет метод для создания связей между моделями, а также из других инструментов в модели. Например можно связать доменный язык (DSL), моделей и моделей UML. или создать интегрированный набор DSL.  
@@ -33,10 +33,10 @@ ms.lasthandoff: 02/09/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>Предоставление доступа к DSL  
+##  <a name="provide"></a> Предоставление доступа к DSL  
  Перед созданием ссылок ModelBus на модель или ее элементы необходимо определить ModelBusAdapter для DSL. Проще всего это сделать с помощью расширения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus, добавляющего команды в Конструктор DSL.  
   
-###  <a name="expose"></a>Чтобы предоставить для шины модели определения доменного языка  
+###  <a name="expose"></a> Чтобы предоставить для шины модели определения доменного языка  
   
 1.  Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [визуализации и моделирования SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
  В папке `ModelBusAdapters\bin\*` содержатся сборки, построенные проектом `Dsl` и проектом `ModelBusAdapters`. Чтобы сослаться на этот DSL из другого DSL, импортируйте эти сборки.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Проверка возможности ссылки на элементы  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Адаптеры ModelBus использовать идентификатор guid элемента для обозначения по умолчанию. Это значит, что такие идентификаторы должны храниться в файле модели.  
+ По умолчанию адаптеры [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus используют для идентификации элемента его глобальный уникальный идентификатор. Это значит, что такие идентификаторы должны храниться в файле модели.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Проверка сохранности идентификаторов элемента  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Метод `ResolveElementReference`, чтобы найти правильный элемент по ссылке ModelBus.  
   
-##  <a name="editRef"></a>Доступ к DSL из другой DSL  
+##  <a name="editRef"></a> Доступ к DSL из другой DSL  
  Ссылки ModelBus можно сохранять в свойство домена в DSL, написав специальный код, который будет их использовать. Также можно позволить пользователю создавать ссылки ModelBus, выбирая файлы модели и элементы в нем.  
   
  Чтобы включить DSL для использования ссылки на другой DSL, следует сначала убедиться в его *потребителя* ссылок шины модели.  
@@ -144,7 +144,7 @@ ms.lasthandoff: 02/09/2018
 3.  В проект "Отладка" в экспериментальном экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] добавьте файлы, являющиеся экземплярами каждого DSL.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus можно разрешить только ссылки на модели, которые представляют собой элементы в одном [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus может разрешать ссылки только на модели, которые являются элементами того же решения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.  
   
 4.  Создайте и сохраните несколько элементов и связей в экземпляре предоставляемого DSL.  
   

@@ -1,9 +1,9 @@
 ---
-title: "MSI-ФАЙЛ и развертывания VSIX DSL | Документы Microsoft"
-ms.custom: 
+title: MSI-ФАЙЛ и развертывания VSIX DSL | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
-Доменный язык можно установить на локальном компьютере или на других компьютерах. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]должна быть установлена на конечном компьютере.  
+Доменный язык можно установить на локальном компьютере или на других компьютерах. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должна быть установлена на конечном компьютере.  
   
-##  <a name="which"></a>Выбор между VSIX и MSI развертывания  
+##  <a name="which"></a> Выбор между VSIX и MSI развертывания  
  Существует два способа развертывания доменного языка:  
   
 |Метод|Преимущества|  
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/09/2018
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения)|Очень простое для развертывания: копирование и выполнения **.vsix** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. [Установка и удаление DSL с помощью VSX](#Installing).|  
 |MSI (файл установщика)|-Позволяет пользователю открыть [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , дважды щелкнув файл DSL.<br />— Связывает значка с типом файла DSL на целевом компьютере.<br />— Связывает XSD (XML schema) с типом файла DSL. Это позволяет избежать предупреждения, когда файл загружается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Проект установки необходимо добавить в решение, чтобы создать MSI-ФАЙЛ.<br /><br /> Дополнительные сведения см. в разделе [развертывание DSL с помощью MSI-файл](#msi).|  
   
-##  <a name="Installing"></a>Установка и удаление с помощью VSX DSL  
+##  <a name="Installing"></a> Установка и удаление с помощью VSX DSL  
  При установке с помощью данного метода Доменного пользователя можно открыть файл DSL изнутри [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], но не удается открыть файл из проводника Windows.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Установка с помощью VSX DSL  
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/09/2018
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Развертывание DSL в MSI-ФАЙЛ  
+##  <a name="msi"></a> Развертывание DSL в MSI-ФАЙЛ  
  Определив файл MSI (установщик Windows) для доменного языка, можно разрешить пользователям открывать DSL файлы из проводника Windows. Значок и краткое описание можно также связать с расширением имени файла. Кроме того MSI-ФАЙЛ можно установить XSD, который может использоваться для проверки файлов DSL. Если нужно, вы можете добавить другие компоненты в MSI-ФАЙЛ, который будет установлен в то же время.  
   
  Дополнительные сведения о MSI-файлов и других возможностях развертывания см. в разделе [развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md).  
@@ -76,7 +76,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  Задать `InstalledByMsi` в манифесте расширения. Это предотвращает VSX устанавливается и удаляется за исключением по MSI-ФАЙЛ. Это важно, если другие компоненты, которые будут включены в MSI-ФАЙЛ.  
   
-    1.  Open DslPackage\source.extension.tt  
+    1.  Откройте DslPackage\source.extension.tt  
   
     2.  Вставьте следующую строку перед `<SupportedProducts>`:  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 02/09/2018
   
     -   В обозреватель DSL выберите корневой узел и в окне свойств просмотрите:  
   
-        -   Описание:  
+        -   Описание  
   
         -   Версия  
   

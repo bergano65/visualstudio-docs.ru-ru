@@ -1,12 +1,12 @@
 ---
-title: "Устранение неполадок решений SharePoint | Документы Microsoft"
-ms.custom: 
+title: Устранение неполадок решений SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Устранение неполадок решений SharePoint
   Следующие проблемы или предупреждения могут возникнуть при отладке решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. Дополнительные сведения см. в разделе [отладку решений рабочих процессов SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  Эта проблема возникает при переименовании импортируемого экземпляра списка, а затем запустите его в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Сообщение об ошибке  
- Ошибка сборки: произошла ошибка в шаге развертывания «Активация компонентов»: файл Template\Features\\[*Импорт проекта**функция**имя*] \Files\Lists \\[*старый**имя списка*] \Schema.xml не существует.  
+ Ошибка сборки: произошла ошибка в шаге развертывания «Активация компонентов»: файл Template\Features\\[*Импорт проекта**функция**имя*] \Files\Lists\\[*старый ** имя списка*] \Schema.xml не существует.  
   
 ### <a name="resolution"></a>Решение  
  При импорте экземпляр списка, атрибут с именем CustomSchema добавляется в файл Elements.xml экземпляра списка. Elements.XML включает путь пользовательского файла schema.xml для экземпляра списка. При переименовании экземпляра списка в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], изменяет путь развертывания пользовательского файла Schema.XML, но значение пути атрибута CustomSchema не обновляется. В результате экземпляр списка не удается найти файл schema.xml в пути, который указан в атрибуте CustomSchema при активации компонента.  

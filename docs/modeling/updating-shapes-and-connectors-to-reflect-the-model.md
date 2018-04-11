@@ -1,9 +1,9 @@
 ---
-title: "Обновление фигур и соединителей в соответствии с моделью | Документы Microsoft"
-ms.custom: 
+title: Обновление фигур и соединителей в соответствии с моделью | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Обновление фигур и соединителей в соответствии с моделью
 В доменного языка в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], чтобы внешний вид фигуры отражают состояние базовой модели.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Этот метод можно использовать для свойства домена и не хранилище функции, такие как размер фигуры.  
   
-##  <a name="OnAssociatedProperty"></a>Использовать для обновления других компонентов фигуры associatevaluewith)  
+##  <a name="OnAssociatedProperty"></a> Использовать для обновления других компонентов фигуры associatevaluewith)  
  Для некоторых функций фигуры, например, имеет ли тень или стиль стрелки соединительной линии отсутствует метод встроенных раскрытия компонента, как свойства домена.  Изменения таких компонентов, не под управлением системы транзакции. Таким образом, не подходит для их обновления с помощью правил, поскольку правила не вызываются, когда пользователь выполняет команду отмены.  
   
  Вместо этого можно обновить с помощью таких компонентов, <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. В следующем примере значение свойства домена в отношение, которое отображает соединитель управляется стиль стрелки соединительной линии:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`должен быть вызван один раз для каждого свойства домена, который требуется зарегистрировать. После его вызова, все изменения к указанному свойству будет вызывать `OnAssociatedPropertyChanged()` в фигуры, представляющие свойства элемента модели.  
+ `AssociateValueWith()` должен быть вызван один раз для каждого свойства домена, который требуется зарегистрировать. После его вызова, все изменения к указанному свойству будет вызывать `OnAssociatedPropertyChanged()` в фигуры, представляющие свойства элемента модели.  
   
  Нет необходимости вызывать `AssociateValueWith()` для каждого экземпляра. Несмотря на то, что InitializeResources является методом экземпляра, он вызывается только один раз для каждого класса формы.

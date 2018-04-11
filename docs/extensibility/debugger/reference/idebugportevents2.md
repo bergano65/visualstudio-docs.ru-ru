@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Этот интерфейс сообщает прослушивателя (обычно сеанса диспетчер отладочной [SDM] или модуля отладки) создания процесса и программ и удаления на определенный порт. Эти сведения можно использовать для представления в режиме реального времени представление процессов и программы, запущенные на порт.  
@@ -43,12 +43,12 @@ IDebugPortEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugPortEvents2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Отправляет события, которые описывают создание и уничтожение процессов и программ на порт.|  
   
 ## <a name="remarks"></a>Примечания  
- `IDebugPortEvents2`также используется SDM для отладки программы, которые запускаются в процессе, который уже отлаживается.  
+ `IDebugPortEvents2` также используется SDM для отладки программы, которые запускаются в процессе, который уже отлаживается.  
   
  Порт события передаются SDM этим интерфейсом.  
   

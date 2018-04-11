@@ -1,9 +1,9 @@
 ---
-title: "Способ: измените команду меню «Стандартная» в доменный язык | Документы Microsoft"
-ms.custom: 
+title: 'Способ: измените команду меню «Стандартная» в доменный язык | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 Поведение некоторых стандартных команд, определенных в доменном языке автоматически, можно изменять. Например, можно изменить **Вырезать** таким образом, чтобы исключить конфиденциальные сведения. Для этого необходимо переопределить методы в классе наборов команд. Эти классы определяются в файле CommandSet.cs проекта DslPackage project и являются производными от класса <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  Если вы хотите создать собственные команды меню, см. раздел [как: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>Какие команды можно изменить?  
+##  <a name="what"></a> Какие команды можно изменить?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Поиск команд, доступных для изменения  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
     > [!NOTE]
     >  Обычно генерируемые файлы не редактируются. При следующей генерации файлов все изменения будут утеряны.  
   
-##  <a name="extend"></a>Расширить соответствующую команду set-класс  
+##  <a name="extend"></a> Расширить соответствующую команду set-класс  
  Создайте новый файл, содержащий частичное описание класса наборов команд.  
   
 #### <a name="to-extend-the-command-set-class"></a>Расширение класса наборов команд  
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/09/2018
   
      **Примечание** Если файл шаблона класса используются для создания нового файла, необходимо исправить пространство имен и имя класса.  
   
-##  <a name="override"></a>Переопределите методы команд  
+##  <a name="override"></a> Переопределите методы команд  
  Большинство команд имеют два связанных методов: метод с именем, например `ProcessOnStatus`... определяет, следует ли команда видимы и включены. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`... вызывается, когда пользователь щелкает команду и следует выполнять функции команды. Возможно, потребуется переопределение одного или двух этих методов.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Изменение условий отображения команды в меню  
@@ -137,15 +137,15 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.  
   
--   `this.IsDiagramSelected()` - `true`Если пользователь щелкнет пустую область схемы.  
+-   `this.IsDiagramSelected()` - `true` Если пользователь щелкнет пустую область схемы.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`-пользователь не выбран нескольких фигур  
+-   `this.IsSingleSelection()` -пользователь не выбран нескольких фигур  
   
--   `this.SingleSelection`-Фигура или схема, на который пользователь щелкнул правой кнопкой мыши  
+-   `this.SingleSelection` -Фигура или схема, на который пользователь щелкнул правой кнопкой мыши  
   
--   `shape.ModelElement as MyLanguageElement`-элемент модели, представленной фигуры.  
+-   `shape.ModelElement as MyLanguageElement` -элемент модели, представленной фигуры.  
   
  Дополнительные сведения о том, как перейти от элемента к элементу и о способах создания объектов и ссылок см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
@@ -155,6 +155,6 @@ protected override void ProcessOnMenuDeleteCommand()
  [Как: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [VSCT XML Schema Reference](../extensibility/vsct-xml-schema-reference.md)   
+ [Справочник по схеме VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK - образец схемы канала. Настройка широко DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
  [Пример кода: схемы канала](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

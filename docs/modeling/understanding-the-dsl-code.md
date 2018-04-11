@@ -1,9 +1,9 @@
 ---
-title: "Общие сведения о коде DSL | Документы Microsoft"
-ms.custom: 
+title: Общие сведения о коде DSL | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 Доменный язык (DSL) создает API, который можно использовать для чтения и обновления экземпляров DSL в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Этот API определяется в коде, созданном из определения DSL. В этом разделе описывается созданный API.  

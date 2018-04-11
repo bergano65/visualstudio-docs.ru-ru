@@ -1,9 +1,9 @@
 ---
-title: "Расширение доменного языка с помощью MEF | Документы Microsoft"
-ms.custom: 
+title: Расширение доменного языка с помощью MEF | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 Доменный язык (DSL) можно расширить с помощью Managed Extensibility Framework (MEF). Вы или другие разработчики смогут для записи расширений для языка DSL без изменения определения DSL и программного кода. К таким расширениям относятся команды меню, обработчиков и перетащите и проверки. Пользователи смогут установить DSL и при необходимости установить расширения для него.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  Создайте новую папку с именем **MefExtension** внутри **DslPackage** проекта. Добавьте следующие файлы на него:  
   
-     Имя файла:`CommandExtensionVSCT.tt`  
+     Имя файла: `CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
     >  Идентификатор GUID набора в этот файл должен совпадать с GUID CommandSetId, которая определена в DslPackage\GeneratedCode\Constants.tt  
@@ -44,21 +44,21 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     Имя файла:`CommandExtensionRegistrar.tt`  
+     Имя файла: `CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     Имя файла:`ValidationExtensionEnablement.tt`  
+     Имя файла: `ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     Имя файла:`ValidationExtensionRegistrar.tt`  
+     Имя файла: `ValidationExtensionRegistrar.tt`  
   
      При добавлении этого файла, необходимо включить проверки в DSL с помощью по крайней мере один из параметров в **EditorValidation** в обозреватель DSL.  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     Имя файла:`PackageExtensionEnablement.tt`  
+     Имя файла: `PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -76,21 +76,21 @@ ms.lasthandoff: 02/09/2018
   
 2.  Создайте новую папку с именем **MefExtension** внутри **Dsl** проекта. Добавьте следующие файлы на него:  
   
-     Имя файла:`DesignerExtensionMetaDataAttribute.tt`  
+     Имя файла: `DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     Имя файла:`GestureExtensionEnablement.tt`  
+     Имя файла: `GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     Имя файла:`GestureExtensionController.tt`  
+     Имя файла: `GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -176,7 +176,7 @@ ms.lasthandoff: 02/09/2018
 ### <a name="menu-commands"></a>Команды меню  
  Чтобы написать команду меню, определите класс, который реализует <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> и префикса класса с атрибутом, который определен в доменного языка, с именем *YourDsl*`CommandExtension`. Можно написать более одного класса команды меню.  
   
- `QueryStatus()`вызывается каждый раз, когда пользователь щелкает правой кнопкой мыши схему. Его следует проверить текущее выделение и настроить `command.Enabled` для указания того, когда применяется команда.  
+ `QueryStatus()` вызывается каждый раз, когда пользователь щелкает правой кнопкой мыши схему. Его следует проверить текущее выделение и настроить `command.Enabled` для указания того, когда применяется команда.  
   
 ```  
 using System.ComponentModel.Composition;  

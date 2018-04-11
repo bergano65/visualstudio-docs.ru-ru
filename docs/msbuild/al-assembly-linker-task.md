@@ -1,11 +1,11 @@
 ---
-title: "Задача AL (компоновщик сборок) |Документация Майкрософт"
-ms.custom: 
+title: Задача AL (компоновщик сборок) |Документация Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="al-assembly-linker-task"></a>Задача AL (компоновщик сборок)
 Задача AL включает AL.exe — инструмент, распространяемый с [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Этот компоновщик сборок используется для создания сборки с манифестом из одного или нескольких файлов, являющихся модулями или файлами ресурсов. Компиляторы и среды разработки обеспечивают указанные возможности, в связи с чем необходимость в непосредственном использовании этого задания возникает достаточно редко. Компоновщик сборок особенно полезен, если нужно создать единую сборку из нескольких файлов компонентов, например при разработке на нескольких языках. Эта задача не объединяет модули в один файл сборки. Отдельные модули должны оставаться распределенными и доступными для правильной загрузки результирующей сборки. Дополнительные сведения об инструменте AL.exe см. в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `AL` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`AlgorithmID`|Необязательный параметр `String` .<br /><br /> Задает алгоритм хэширования всех файлов многофайловой сборки, кроме файла, содержащего манифест сборки. Дополнительные сведения см. в документации по параметру `/algid` в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`BaseAddress`|Необязательный параметр `String` .<br /><br /> Задает адрес для загрузки библиотеки DLL на компьютер пользователя во время выполнения. Приложения загружаются быстрее, если задан базовый адрес DLL и операционная система не перемещает библиотеки в пространстве процесса. Этот параметр соответствует свойству /base[address](/dotnet/framework/tools/al-exe-assembly-linker).|  

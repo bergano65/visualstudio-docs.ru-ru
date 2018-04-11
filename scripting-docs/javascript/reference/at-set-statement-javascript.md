@@ -1,13 +1,13 @@
 ---
-title: "@setОператор (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: '@set Оператор (JavaScript) | Документы Microsoft'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@setОператор (JavaScript)
+# <a name="set-statement-javascript"></a>@set Оператор (JavaScript)
 Создает переменные, используемые вместе с операторами условной компиляции.  
   
 > [!WARNING]
@@ -43,11 +43,11 @@ ms.lasthandoff: 10/27/2017
 ```  
   
 ## <a name="parameters"></a>Параметры  
- *VarName*  
- Обязательный. Допустимое имя переменной [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Должно всегда предваряться знаком "@".  
+ *varname*  
+ Обязательно. Допустимое имя переменной [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Должно всегда предваряться знаком "@".  
   
  `term`  
- Обязательный. Ноль или более унарных операторов, за которыми следует константа, переменная условной компиляции или выражение в скобках.  
+ Обязательно. Ноль или более унарных операторов, за которыми следует константа, переменная условной компиляции или выражение в скобках.  
   
 ## <a name="remarks"></a>Примечания  
  В коде условной компиляции поддерживаются числовые и логические переменные. Строки не поддерживаются. Переменные, созданные с помощью оператора `@set`, обычно используются в операторах условной компиляции, но могут применяться и в любом другом коде [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
@@ -96,5 +96,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>См. также  
  [Условная компиляция](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onИнструкции](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@cc_on Инструкции](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if Оператор](../../javascript/reference/at-if-statement-javascript.md)

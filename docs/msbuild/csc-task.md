@@ -1,11 +1,11 @@
 ---
-title: "Задача Csc | Документы Майкрософт"
-ms.custom: 
+title: Задача Csc | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 
+caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a74f8c43d35104957b62fb3da93d2acbf6a9a303
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="csc-task"></a>Задача Csc
 Использует программу-оболочку для файла CSC.exe и создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения о программе CSC.EXE см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Csc` .  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Необязательный параметр `String[]` .<br /><br /> Задает дополнительные каталоги для поиска ссылок. Дополнительные сведения см. в разделе [/lib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option).|  
 |`AddModules`|Необязательный параметр `String` .<br /><br /> Задает один или несколько модулей, которые должны быть частью сборки. Дополнительные сведения см. в разделе [/addmodule (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option).|  
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/09/2018
 |`Resources`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Внедряет ресурс [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/resource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [/resource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
 |`ResponseFiles`|Необязательный параметр `String` .<br /><br /> Задает файл ответов, содержащий команды для этой задачи. Дополнительные сведения см. в документации синтаксиса [@ (указание файла ответа)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option).|  
 |`Sources`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает один или несколько файлов исходного кода [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].|  
-|`TargetType`|Необязательный параметр `String` .<br /><br /> Задает формат выходного файла. Этот параметр может принимать одно из следующих значений: `library` (создается библиотека кода), `exe` (создается консольное приложение), `module` (создается модуль) или `winexe` (создается программа Windows). Значение по умолчанию — `library`. Дополнительные сведения см. в разделе [/target (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).|  
+|`TargetType`|Необязательный параметр `String` .<br /><br /> Задает формат выходного файла. Этот параметр может принимать одно из следующих значений: `library` (создается библиотека кода), `exe` (создается консольное приложение), `module` (создается модуль) или `winexe` (создается программа Windows). Значение по умолчанию — `library`. Дополнительные сведения см. в разделе [/target (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).|  
 |`TreatWarningsAsErrors`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр равен `true`, все предупреждения обрабатываются как ошибки. Дополнительные сведения см. в разделе [/warnaserror (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).|  
 |`UseHostCompilerIfAvailable`|Необязательный параметр `Boolean` .<br /><br /> Предписывает задаче использовать внутрипроцессный объект компилятора, если он доступен. Используется только в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |`Utf8Output`|Необязательный параметр `Boolean` .<br /><br /> Регистрирует выходные данные компилятора в кодировке UTF-8. Дополнительные сведения см. в разделе [/utf8output (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/utf8output-compiler-option).|  

@@ -1,9 +1,9 @@
 ---
-title: "Проверка доменного языка | Документы Microsoft"
-ms.custom: 
+title: Проверка доменного языка | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Проверка в доменных языках
 Автор доменного языка может определить ограничения проверки, позволяющие контролировать полноценность созданной пользователем модели. Например, если доменный язык позволяет рисовать генеалогическое дерево людей и их предков, можно написать ограничения, согласно которым даты рождения детей должны быть позже дат рождения родителей.  
@@ -142,7 +142,7 @@ public partial class ParentsHaveChildren
   
  Пример применяется к представленной ниже модели домена. Отношение ParentsHaveChildren имеет роли, которые называются Child и Parent.  
   
- ![Схема определения DSL &#45; Модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Схема определения DSL &#45; модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>Категории проверки  
  В атрибуте <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> можно указать, когда метод проверки должен быть выполнен.  
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  Обработчики также вызываются после операций "Отменить" или "Повторить", влияющие на ссылки или элементы.  
   
-##  <a name="custom"></a>Категории пользовательской проверки  
+##  <a name="custom"></a> Категории пользовательской проверки  
  В дополнение к категориям стандартной проверки, например "Меню" и "Открыть", можно определить собственные категории. Эти категории могут вызываться из кода программы. Пользователь не может вызвать их напрямую.  
   
  Обычно пользовательские категории используются для определения категории, которая проверяет, удовлетворяет ли модель предусловиям конкретного устройства.  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>Альтернативы для проверки  
+##  <a name="alternatives"></a> Альтернативы для проверки  
  Ограничения проверки создают отчеты об ошибках, но не изменяют модель. Если вместо этого требуется избежать недопустимости модели, можно использовать другие технологии.  
   
  Однако эти технологии не рекомендуются. Как правило, лучше разрешить пользователю самому решать, как исправить недопустимую модель.  
@@ -341,7 +341,7 @@ validationController.ValidateCustom
  **Откат транзакции при попытке недопустимое изменение.** Можно также определить правила для этой цели, но в некоторых случаях можно переопределить свойство обработчик **OnValueChanging()**, или попытка переопределения одного метода, такие как `OnDeleted().` для отката транзакции, используйте `this.Store.TransactionManager.CurrentTransaction.Rollback().` для получения дополнительных сведений сведения см. в разделе [обработчики изменений значений свойств домена](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Обеспечьте уведомление пользователя о том, что изменения были отрегулированы и произведен откат. Например используйте`System.Windows.Forms.MessageBox.Show("message").`  
+>  Обеспечьте уведомление пользователя о том, что изменения были отрегулированы и произведен откат. Например используйте `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>См. также  
  [Навигация по модели и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md)   

@@ -1,9 +1,9 @@
 ---
-title: "Практическое руководство по текстовым шаблонам | Документы Microsoft"
-ms.custom: 
+title: Практическое руководство по текстовым шаблонам | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>Практическое руководство по текстовым шаблонам
 Текстовые шаблоны в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предоставляют удобный способ создания текстом любого типа. Текстовые шаблоны можно использовать для создания текста во время выполнения как часть приложения, а также во время разработки для создания часть кода проекта. Этот раздел содержит описание наиболее часто задаваемые «Как?...» вопросы.  
@@ -79,7 +79,7 @@ ms.lasthandoff: 02/09/2018
   
      Дополнительные сведения см. в разделе [Приступая к работе с доменными языками](../modeling/getting-started-with-domain-specific-languages.md) и [формирование кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Получение данных из[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Получение данных из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], набором `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Пример:  
   
 ```csharp  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Более общие вопросы  
   
-###  <a name="starting"></a>Что такое лучший способ начать создание текстового шаблона  
+###  <a name="starting"></a> Что такое лучший способ начать создание текстового шаблона  
   
 1.  Создайте конкретный пример созданного файла.  
   
