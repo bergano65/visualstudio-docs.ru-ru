@@ -14,14 +14,14 @@ ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 19
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36f0bf93b85b3bc9582b7b0c656b0d105b61cecb
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 05397e8dc965b23f0a60b9d7cbfcbb40621821a9
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Пошаговое руководство. Создание простого приложения с помощью C# или Visual Basic
 Выполняя данное пошаговое руководство, вы ознакомитесь со многими инструментами, диалоговыми окнами и конструкторами, которые можно использовать для создания приложений с помощью Visual Studio. Вам предстоит создать простое приложение "Hello, World", разработать пользовательский интерфейс, добавить код и отладить ошибки, одновременно приобретая навыки работы в интегрированной среде разработки (IDE).

@@ -8,8 +8,6 @@ curl -L https://aka.ms/get-vsce-mac | bash
 ```
 
 ### <a name="install-on-windows"></a>Установка в Windows
-1. Установите [Git для Windows](https://git-scm.com/downloads), выберите параметры установки по умолчанию. 
-1. Загрузите **kubectl.exe** по [этой ссылке](https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/windows/amd64/kubectl.exe) и **сохраните** его в свое расположение.
 1. Загрузите и запустите [установщик интерфейса командной строки для подключенной среды](https://aka.ms/get-vsce-windows). 
 
 ### <a name="install-on-linux"></a>Установка на Linux
@@ -23,5 +21,5 @@ curl -L https://aka.ms/get-vsce-mac | bash
 1. Установка расширения: 
 
 ```cmd
-code --install-extension path-to-downloaded-extension/vsce-0.1.0.vsix
+code --install-extension path-to-downloaded-extension/vsce-0.1.1.vsix
 ```
