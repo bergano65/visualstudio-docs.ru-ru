@@ -1,32 +1,34 @@
 ---
-title: "Настройка предупреждений в Visual Basic | Документы Майкрософт"
-ms.custom: 
+title: Настройка предупреждений в Visual Basic | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
+# <a name="configuring-warnings-in-visual-basic"></a>Настройка предупреждений в Visual Basic
 Компилятор [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] включает в себя набор предупреждений о коде, который может привести к ошибкам во время выполнения. Эти сведения можно использовать для написания более понятного, быстродействующего и качественного кода с меньшим числом ошибок. Например, компилятор выведет предупреждение при попытке пользователя вызвать элемент неопределенной объектной переменной, произвести возврат из функции без задания возвращаемого значения либо выполнить блок `Try` с ошибками в логике для перехвата исключений.  
   
- Иногда компилятор предоставляет дополнительную логику от имени пользователя, чтобы последний мог сосредоточиться на поставленной задаче, а не на предупреждении возможных ошибок. В предыдущих версиях [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для ограничения дополнительной логики, предоставляемой компилятором [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], использовался `Option Strict`. Настройка предупреждений позволяет более детально ограничить эту логику на уровне отдельных предупреждений.  
+ Иногда компилятор предоставляет дополнительную логику от имени пользователя, чтобы последний мог сосредоточиться на поставленной задаче, а не на предупреждении возможных ошибок. В предыдущих версиях [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для ограничения дополнительной логики, предоставляемой компилятором [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], использовался оператор **Option Strict**. Настройка предупреждений позволяет более детально ограничить эту логику на уровне отдельных предупреждений.  
   
  Вы можете настроить проект и отключить некоторые предупреждения, не относящиеся к приложению, и превратить другие предупреждения в ошибки. На этой странице поясняется, как включать и отключать отдельные предупреждения.  
   
@@ -76,12 +78,12 @@ ms.lasthandoff: 12/22/2017
  Идентификатор: 42017  
   
 ### <a name="operands-of-type-object-warnings"></a>Предупреждения для операндов типа Object  
- Создаются при наличии операндов типа `Object`, которые могут привести к ошибке с `Option Strict On`. По умолчанию для новых проектов это предупреждение включено.  
+ Создаются при наличии операндов типа `Object`, которые могут привести к ошибке с оператором **Option Strict On**. По умолчанию для новых проектов это предупреждение включено.  
   
  Идентификатор: 42018 и 42019  
   
-### <a name="declarations-require-as-clause-warnings"></a>Предупреждения для объявлений, требующих предложение "As"  
- Создаются, когда объявление переменной, функции или свойства, где отсутствует предложение `As`, приводит к ошибке с `Option Strict On`. Предполагается, что переменные, которым не назначен тип, имеют тип `Object`. По умолчанию для новых проектов это предупреждение включено.  
+### <a name="declarations-require-as-clause-warnings"></a>Предупреждения для объявлений, требующих предложение As  
+ Создаются, когда объявление переменной, функции или свойства, где отсутствует предложение `As`, приводит к ошибке с оператором **Option Strict On**. Предполагается, что переменные, которым не назначен тип, имеют тип `Object`. По умолчанию для новых проектов это предупреждение включено.  
   
  Идентификатор: 42020 (объявление переменной), 42021 (объявление функции) и 42022 (объявление свойства).  
   
@@ -122,7 +124,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>См. также  
  [Типы ошибок](/dotnet/visual-basic/programming-guide/language-features/error-types)   
- [Оператор Try... Catch... Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
+ [Оператор Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
  [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   

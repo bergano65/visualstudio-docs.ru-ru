@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 
@@ -70,6 +70,10 @@ ms.lasthandoff: 03/19/2018
   Значки возле группирований проектов, пространств имен и классов указывают на состояние тестов в определенном группировании. См. приведенную ниже таблицу.
 
   ![Значки иерархии в обозревателе тестов](media/testex-hierarchyicons.png)
+  
+### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. В поле поиска обозревателя тестов фильтр "Путь к файлу" больше не используется.
+
+Фильтр "Путь к файлу"в поле поиска **обозревателя тестов** удален в Visual Studio 2017 версии 15.7 (предварительная версия 3). Эта функция используется мало. Чтобы обозреватель тестов получал методы теста быстрее, ее можно исключить. Если это изменение прерывает работу последовательности разработки, сообщите нам, отправив отзыв в [сообщество разработчиков](https://developercommunity.visualstudio.com/).
 
 ## <a name="features"></a>Функции
 

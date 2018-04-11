@@ -1,26 +1,26 @@
 ---
-title: "Управление окружениями и интерпретаторами Python в Visual Studio | Документация Майкрософт"
-description: "Использование окна окружений Python в Visual Studio для управления глобальными и виртуальными окружениями, настройка пользовательских окружений, установка интерпретаторов Python, установка пакетов, задание путей для поиска и управление окружениями для проектов Visual Studio."
-ms.custom: 
-ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+title: Управление окружениями и интерпретаторами Python | Документация Майкрософт
+description: Использование окна окружений Python в Visual Studio для управления глобальными и виртуальными окружениями, настройка пользовательских окружений, установка интерпретаторов Python, установка пакетов, задание путей для поиска и управление окружениями для проектов Visual Studio.
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Управление средами Python в Visual Studio
 
@@ -35,6 +35,8 @@ ms.lasthandoff: 03/09/2018
 
 Обратите также внимание, что вы не можете управлять окружениями для кода Python, который открыт только в качестве папки с помощью элементов **Файл > Открыть > Папка**. В таком случае [создайте проект Python на основе существующего кода](quickstart-01-python-in-visual-studio-project-from-existing-code.md), чтобы использовать функции окружения Visual Studio.
 
+Если вы хотите установить пакеты в окружении, см. сведения о [вкладке "Пакеты"](python-environments-window-tab-reference.md#packages-tab).
+
 ## <a name="types-of-environments"></a>Типы окружений
 
 ### <a name="global-environments"></a>Глобальные среды
@@ -47,7 +49,7 @@ ms.lasthandoff: 03/09/2018
 
 Пакеты, установленные в глобальном окружении, доступны для всех проектов, в которых оно используется. При этом могут возникать конфликты, если двум проектам требуются несовместимые пакеты или разные версии одного пакета. Виртуальные окружения позволяют избежать таких конфликтов. В них применяются интерпретатор и стандартная библиотека из глобального окружения, но раздельные хранилища пакетов в изолированных папках.
 
-В Visual Studio вы можете создать для конкретного проекта виртуальное окружение, которое хранится во вложенной папке проекта (см. раздел о [создании виртуальных окружений](selecting-a-python-environment-for-a-project.md#creating-a-virtual-environment)). Кроме того, виртуальное окружение определяется в файле проекта. Также в файл проекта `requirements.txt` Visual Studio записывает все пакеты, которые вы устанавливаете в этом виртуальном окружении. Если вы предоставляете общий доступ к проекту, и другие разработчики открывают его на своих компьютерах, в Visual Studio можно повторно создать виртуальное окружение.
+В Visual Studio вы можете создать для конкретного проекта виртуальное окружение, которое хранится во вложенной папке проекта. В Visual Studio есть команда для создания файла `requirements.txt` из виртуального окружения, что позволяет легко воссоздать окружение на других компьютерах. См. дополнительные сведения о [виртуальных окружениях](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="conda-environments"></a>Окружения Conda
 

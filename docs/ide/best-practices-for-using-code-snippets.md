@@ -1,11 +1,11 @@
 ---
-title: "Рекомендации по использованию фрагментов кода | Документы Майкрософт"
-ms.custom: 
+title: Рекомендации по использованию фрагментов кода | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Рекомендации по использованию фрагментов кода
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/09/2018
 
 Настраивая расположения файлов под приложения, нужно обдумать следующее:
 
-- Поиск доступного места. У пользователей может не быть доступа к папке "Program Files" на компьютере, поэтому хранение файлов вместе с файлами приложения может оказаться невозможным.
+- Поиск доступного места. У пользователей может не быть доступа к папке *Program Files* на компьютере, поэтому хранение файлов вместе с файлами приложения может оказаться невозможным.
 
 - Поиск безопасного расположения. Хранение файлов в корневой папке (*C:\\*) не является безопасным. Для данных приложения рекомендуем использовать папку *Application Data*. Для хранения данных отдельных пользователей приложение может создать файл для каждого из них в папке *Documents*.
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 02/09/2018
 
     - Фрагмент может содержать ссылки, которые автоматически добавляются в проект и могут быть загружены из любой точки в системе. Эти ссылки могли быть скачаны на ваш компьютер оттуда же, откуда и сам фрагмент кода. Фрагмент может вызвать метод по ссылке, который выполняет вредоносный код. Для защиты от таких атак просмотрите блоки импорта и ссылок в файле фрагмента кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Фрагменты кода IntelliSense в Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
 [Защита приложений](../ide/securing-applications.md)  

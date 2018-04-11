@@ -1,16 +1,16 @@
 ---
-title: "Устранение неполадок с удаленной отладкой Azure для Python в Visual Studio | Документы Майкрософт"
-description: "Устранение неполадок во время отладки приложения Python, выполняющегося в Службе приложений Azure, с помощью Visual Studio."
-ms.custom: 
+title: Устранение неполадок с удаленной отладкой Azure для Python | Документация Майкрософт
+description: Устранение неполадок во время отладки приложения Python, выполняющегося в Службе приложений Azure, с помощью Visual Studio.
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b183cab67e8ac9382808832fb5c2c1e5283e70c0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 92429ea893c4eccee75f3a70ffda44eac8f91aa9
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Устранение неполадок с удаленной отладкой Python и Azure
 

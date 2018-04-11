@@ -1,26 +1,28 @@
 ---
-title: "Компиляция и сборка в Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Компиляция и сборка в Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 
@@ -42,20 +44,20 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="overview-of-building-from-the-ide"></a>Общие сведения о сборке из IDE  
 
-При создании проекта среда Visual Studio создает для него конфигурации сборки по умолчанию, а также содержащее проект решение.  Эти конфигурации определяют, как выполняется сборка и развертывание решений и проектов. В частности, используются уникальные конфигурации проектов для разных целевых платформ (например, Windows или Linux) и типов сборки (например, отладка или выпуск). Вы можете как угодно изменять эти конфигурации и при необходимости создавать свои собственные.
+При создании проекта среда Visual Studio создает для него конфигурации сборки по умолчанию, а также содержащее проект решение.  Эти конфигурации определяют, как выполняется сборка и развертывание решений и проектов. В частности, используются уникальные конфигурации проектов для разных целевых платформ (например, Windows или Linux) и типов сборки (например, отладка или выпуск). Вы можете как угодно изменять эти конфигурации и при необходимости создавать свои собственные.
 
-Начальные сведения о сборке в IDE см. в разделе [Пошаговое руководство. Построение приложения](walkthrough-building-an-application.md).  
+Начальные сведения о сборке в IDE см. в разделе [Пошаговое руководство. Построение приложения](walkthrough-building-an-application.md).  
 
 Затем ознакомьтесь с разделом [Построение и очистка проектов и решений в Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md), чтобы узнать о настройке разных аспектов процесса. Настройки включают [изменение выходных каталогов](how-to-change-the-build-output-directory.md), [указание настраиваемых событий построения](specifying-custom-build-events-in-visual-studio.md), [управление зависимостями проекта](how-to-create-and-remove-project-dependencies.md), [управление файлами журнала построения](how-to-view-save-and-configure-build-log-files.md) и [отключение предупреждений компилятора](how-to-suppress-compiler-warnings.md).
 
 После этого вы можете познакомиться с другими задачами:
 - [Общие сведения о конфигурациях построения](understanding-build-configurations.md)
 - [Общие сведения о платформах построения](understanding-build-platforms.md)
-- [Управление свойствами проекта и решения](managing-project-and-solution-properties.md)  
+- [Управление свойствами проектов и решений](managing-project-and-solution-properties.md)  
 - Назначение событий построения в [C#](how-to-specify-build-events-csharp.md) и [Visual Basic](how-to-specify-build-events-visual-basic.md) 
 - [Задание параметров сборок](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- [Параллельное построение нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+- [Параллельная сборка нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
   
 ## <a name="see-also"></a>См. также  
 
-- [Построение (компиляция) проектов веб-узлов](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
+- [Сборка (компиляция) проектов веб-узлов](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   

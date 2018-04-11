@@ -1,27 +1,27 @@
 ---
-title: "Выбор подходящих вариантов публикации | Документы Майкрософт"
-ms.custom: 
+title: Выбор подходящих вариантов публикации | Документы Майкрософт
+ms.custom: ''
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 
+caps.latest.revision: 1
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 5e9eb5423b33fbdd27921afcd6ae6f5758bfc910
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # Выбор подходящих вариантов публикации
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/19/2018
 - [файловая система](#file-system);
 - [пользовательские целевые объекты (IIS, FTP и т. д.)](#custom-targets), к которым относятся все произвольные веб-серверы.
 
-На вкладке **Публикация** можно выбрать существующий профиль публикации, импортировать существующий или создать новый с помощью параметров, описанных здесь.
+На вкладке **Публикация** можно выбрать существующий профиль публикации, импортировать существующий или создать новый с помощью параметров, описанных здесь. См. [общие сведения о развертывании и параметрах публикации в IDE для разных типов приложений](../../deployment/deploying-applications-services-and-components.md).
 
 ## Веб-приложения службы приложений Azure
 

@@ -1,22 +1,24 @@
 ---
-title: "Анализ использования памяти в Visual Studio | Документация Майкрософт"
+title: Анализ использования памяти в Visual Studio | Документация Майкрософт
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Профилирование использования памяти в Visual Studio
 С помощью встроенного в отладчик средства диагностики **Использование памяти** вы сможете находить утечки памяти и выявлять ее неэффективное использование. С помощью средства "Использование памяти" можно сделать один или несколько *снимков* управляемой и собственной памяти в куче, чтобы понять влияние использования памяти типов объектов. Вы можете делать снимки приложений .NET, приложений на основе машинного кода, а также смешанных программ (на основе .NET и машинного кода).  
@@ -33,6 +35,12 @@ ms.lasthandoff: 01/04/2018
 >  **Поддержка пользовательского распределителя** . Профилировщик внутренней памяти работает путем сбора данных событий [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) выделения памяти, создаваемых во время выполнения.  Распределители в CRT и пакете Windows SDK аннотированы на уровне исходного кода, что позволяет регистрировать их данные выделения.  Если вы создаете собственные распределители, любые функции, возвращающие указатель на только что выделенную память в куче, можно декорировать с использованием [__declspec](/cpp/cpp/declspec)(allocator), как показано в этом примере для myMalloc:  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+В этом руководстве рассмотрены следующие задачи:
+
+> [!div class="checklist"]
+> * Создание моментальных снимков с данными об использовании памяти
+> * Анализ данных использования памяти
 
 ## <a name="collect-memory-usage-data"></a>Сбор данных об использовании памяти
 
@@ -165,6 +173,9 @@ ms.lasthandoff: 01/04/2018
   
  [Блог по Visual C++. Профилирование памяти в Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>См. также
- [Профилирование в Visual Studio](../profiling/index.md)  
- [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>Следующие шаги
+
+В этом руководстве вы узнали, как собирать и анализировать данные об использовании памяти. Если вы уже ознакомились с [общими сведениями о профилировщике](../profiling/profiling-feature-tour.md), можно перейти к анализу данных об использовании ЦП в приложениях.
+
+> [!div class="nextstepaction"]
+> [Анализ использования ЦП](../profiling/beginners-guide-to-performance-profiling.md) 

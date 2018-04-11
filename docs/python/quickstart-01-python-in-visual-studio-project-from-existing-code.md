@@ -1,27 +1,27 @@
 ---
-title: "Краткое руководство. Создание проекта Python в Visual Studio на основе имеющегося кода | Документация Майкрософт"
-description: "Быстро создавайте проекты Python в Visual Studio из имеющегося кода с помощью удобного шаблона."
-ms.custom: 
+title: Краткое руководство. Создание проекта Python на основе существующего кода | Документация Майкрософт
+description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python из существующей папки на основе удобного шаблона.
+ms.custom: mvc
 ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8e57fb97b5e792375cefb344306a9bdc71836be
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b31cda03c2ca233e90e1ba0194d83845805e28f3
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Краткое руководство. Создание проекта Python на основе существующего кода
 

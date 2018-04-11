@@ -1,26 +1,26 @@
 ---
-title: "Выбор и установка интерпретаторов Python | Документация Майкрософт"
-description: "Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков."
-ms.custom: 
+title: Выбор и установка интерпретаторов Python | Документация Майкрософт
+description: Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 Кроме того, любой интерпретатор из приведенной ниже таблицы можно установить вручную, не используя Visual Studio Installer. Например, если вы установили Anaconda 3 еще до установки Visual Studio, нет необходимости снова устанавливать этот дистрибутив с помощью Visual Studio Installer.
 
-Для Visual Studio 2015 и более ранних версий нужно вручную установить один из интерпретаторов.
+Для **Visual Studio 2015 и более ранних версий** нужно вручную установить один из интерпретаторов.
 
 Visual Studio (любой версии) автоматически обнаруживает все установленные интерпретаторы Python и окружения для них, проверяя значения в реестре (в соответствии с [описанием регистрации Python в реестре Windows 514 PEP](https://www.python.org/dev/peps/pep-0514/)).
 

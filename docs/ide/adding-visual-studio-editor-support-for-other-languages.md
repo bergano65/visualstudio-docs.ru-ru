@@ -1,10 +1,10 @@
 ---
-title: "Добавление поддержки редактора Visual Studio для других языков | Документы Майкрософт"
-ms.custom: 
+title: Добавление поддержки редактора Visual Studio для других языков | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - syntax colorization
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -23,11 +23,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 Узнайте, каким образом редактор Visual Studio поддерживает возможности чтения и перемещения по разным языкам программирования и как можно добавить поддержку редактора Visual Studio для других языков.  
@@ -66,24 +66,24 @@ ms.lasthandoff: 01/29/2018
   
 -   C#  
   
- Все эти типы файлов имеют описанные ранее функции, даже если поддержка для данного языка еще не была установлена. Установка специальной поддержки для некоторых языков может обеспечить дополнительную поддержку, например IntelliSense и другие расширенные языковые функции, такие как лампочки.  
+Все эти типы файлов имеют описанные ранее функции, даже если поддержка для данного языка еще не была установлена. Установка специальной поддержки для некоторых языков может обеспечить дополнительную поддержку, например IntelliSense и другие расширенные языковые функции, такие как лампочки.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Добавление поддержки для неподдерживаемых языков  
  Visual Studio 2015 с обновлением 1 и более поздние версии предоставляют языковую поддержку в редакторе с помощью [грамматики TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык программирования в настоящее время не поддерживается в редакторе Visual Studio, выполните поиск в Интернете — пакет TextMate для языка уже может существовать. Если вы не можете найти пакет, добавьте для него поддержку в Visual Studio 2015 с обновлением 1 или более поздних версиях самостоятельно, создав модель пакета TextMate для грамматики языка и фрагментов кода.  
   
  Добавьте новые грамматики TextMate для Visual Studio в следующую папку:  
   
- % userprofile %\\. vs\Extensions  
+ *%userprofile%\\.vs\Extensions*  
   
  По этому базовому пути добавьте следующие папки, если они допускаются в вашем случае.  
   
 |Имя папки|Описание:|  
 |-----------------|-----------------|  
-|\\*\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, **\Matlab**.|  
-|\Syntaxes|Папка грамматики. Содержит файлы JSON грамматики для языка, например **Matlab.json**.|  
-|\Snippets|Папка фрагментов кода. Содержит фрагменты кода для языка.|  
+|\\*\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, *\Matlab*.|  
+|*\Syntaxes*|Папка грамматики. Содержит файлы *JSON* грамматики для языка, например *Matlab.json*.|  
+|*\Snippets*|Папка фрагментов кода. Содержит фрагменты кода для языка.|  
   
- В Windows % userprofile % разрешается в путь: c:\Users\\*\<имя_пользователя>*. Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.  
+ В Windows *%userprofile%* разрешается в путь *c:\Users\\*\<user name>*.* Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.  
   
  Дополнительные сведения о создании грамматик TextMate см. в статьях [TextMate. Общие сведения о грамматике языка: добавление выделения синтаксиса исходного кода, внедренного и HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [Заметки о создании грамматики языка и пользовательской темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).  
   

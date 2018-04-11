@@ -1,36 +1,36 @@
 ---
-title: "Эмулятор Visual Studio для Android | Документация Майкрософт"
-ms.custom: 
+title: Эмулятор Visual Studio для Android | Документация Майкрософт
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: de44978f60b42ccd91c6d362738981adffb05de9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 Эмулятор Visual Studio для Android — это приложение для настольного компьютера, которое эмулирует устройство Android. Он предоставляет виртуализированную среду, в которой доступны возможности отладки и тестирования приложений для Android без использования физического устройства. Он также предлагает изолированную среду для прототипов ваших приложений.  
+
+> [!IMPORTANT]
+> В большинстве случаев мы рекомендуем использовать эмулятор Google Android вместо эмулятора Android для Visual Studio:
+> - Когда требуются образы эмулятора Android для Visual Studio с Android 7.0 или более поздние версии (мы не планируем публиковать образы Android 6.0 и более ранних версий).
+> - При использовании Инструментов Visual Studio для Apache Cordova. Дополнительные сведения см. в статье [Запуск приложения Apache Cordova на Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
   
  Эмулятор Visual Studio для Android обеспечивает производительность, сравнимую с быстродействием реального устройства. Однако перед публикацией приложение рекомендуется проверить на физическом устройстве.  
   
  Приложение можно протестировать в уникальном профиле устройства для каждой платформы Android, разрешений экрана и других свойств оборудования, поддерживаемых эмулятором Visual Studio для Android.
-
-> [!NOTE]
-> Рекомендуем использовать эмулятор Google Android в следующих случаях:
-> - При использовании Инструментов Visual Studio для Apache Cordova. Дополнительные сведения см. в статье [Запуск приложения Apache Cordova на Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
-> - Когда требуются образы эмулятора Android для Visual Studio с Android 7.0 или более поздние версии (мы не планируем публиковать образы Android 6.0 и более ранних версий).
   
 ##  <a name="Installing"></a> Установка и удаление  
  Установка  

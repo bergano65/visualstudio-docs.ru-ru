@@ -1,16 +1,16 @@
 ---
-title: "Шаблон проекта облачной службы Azure для Python в Visual Studio | Документация Майкрософт"
-description: "Обзор шаблонов облачных служб Azure в Visual Studio, написанных на языке Python, в том числе развертывание роли, зависимости и устранение неполадок."
-ms.custom: 
+title: Шаблон проекта облачной службы Azure для Python | Документы Майкрософт
+description: Обзор шаблонов облачных служб Azure в Visual Studio, написанных на языке Python, в том числе развертывание роли, зависимости и устранение неполадок.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,17 +18,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Проекты облачных служб Azure для Python
 
 Visual Studio предоставляет шаблоны, которые помогут быстро начать разработку облачных служб Azure с использованием Python.
 
-[Облачная служба](http://go.microsoft.com/fwlink/?LinkId=306052) состоит из произвольного числа *рабочих ролей* и *веб-ролей*, каждая из которых выполняет концептуально независимую задачу и может реплицироваться на несколько виртуальных машин в целях масштабирования. Веб-роли служат для размещения интерфейсных веб-приложений. При использовании Python для создания такого приложения подходит любая веб-платформа с поддержкой WSGI (поддерживаемая [шаблоном веб-проекта](python-web-application-project-templates.md)). Рабочие роли предназначены для длительных рабочих процессов, которые не взаимодействуют с пользователями напрямую. Обычно они используют библиотеки для работы с [данными](http://go.microsoft.com/fwlink/?LinkId=401571) и [службой приложений](http://go.microsoft.com/fwlink/?LinkId=401572), которые можно установить с помощью [`pip install azure`](http://pypi.org/project/azure).
+[Облачная служба](http://go.microsoft.com/fwlink/?LinkId=306052) состоит из произвольного числа *рабочих ролей* и *веб-ролей*, каждая из которых выполняет концептуально независимую задачу и может реплицироваться на несколько виртуальных машин для масштабирования. Веб-роли служат для размещения интерфейсных веб-приложений. При использовании Python для создания такого приложения подходит любая веб-платформа с поддержкой WSGI (поддерживаемая [шаблоном веб-проекта](python-web-application-project-templates.md)). Рабочие роли предназначены для длительных рабочих процессов, которые не взаимодействуют с пользователями напрямую. Обычно они используют библиотеки для работы с [данными](http://go.microsoft.com/fwlink/?LinkId=401571) и [службой приложений](http://go.microsoft.com/fwlink/?LinkId=401572), которые можно установить с помощью [`pip install azure`](http://pypi.org/project/azure).
 
 Эта статья содержит сведения о шаблоне проекта и других возможностях Visual Studio 2017 (в более ранних версиях эти функции также доступны, но с некоторыми отличиями). Дополнительные сведения о работе с Azure в Python вы найдете в [центре Azure для разработчиков Python](http://go.microsoft.com/fwlink/?linkid=254360).
 

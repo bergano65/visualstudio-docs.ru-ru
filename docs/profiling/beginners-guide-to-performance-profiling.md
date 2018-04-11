@@ -7,7 +7,7 @@ ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Профилирование производительности приложений в Visual Studio
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
@@ -43,6 +43,12 @@ ms.lasthandoff: 03/15/2018
 
 > [!NOTE]
 > Для .NET Core и ASP.NET Core средство загрузки ЦП в настоящее время предоставляет неточные результаты для переносимых PBD-файлов. Используйте вместо этого полные PDB-файлы.
+
+В этом руководстве рассмотрены следующие задачи:
+
+> [!div class="checklist"]
+> * Сбор данных об использовании ЦП
+> * Анализ данных о загрузке ЦП
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Шаг 1. Сбор данных профилирования 
   
@@ -155,9 +161,10 @@ ms.lasthandoff: 03/15/2018
 
 > [!TIP]
 > Если вы выполняете профилирование внешнего кода, вызывающего функции Windows, следует убедиться, что используются самые новые версии PDB-файлов. Без этих файлов имена функций Windows в представлениях отчетов будут отображаться в непонятном или трудном для понимания виде. Дополнительные сведения о том, как убедиться в наличии нужных файлов, см. в статье [Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-  
-## <a name="see-also"></a>См. также  
- [Использование памяти](../profiling/memory-usage.md)  
- [Использование ЦП](../profiling/cpu-usage.md)  
- [Профилирование в Visual Studio](../profiling/index.md)  
- [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+
+## <a name="next-steps"></a>Следующие шаги
+
+В этом руководстве вы узнали, как собирать и анализировать данные об использовании ЦП. Если вы уже ознакомились с [общими сведениями о профилировщике](../profiling/profiling-feature-tour.md), можно перейти к анализу данных об использовании памяти в приложениях.
+
+> [!div class="nextstepaction"]
+> [Анализ данных об использовании памяти](../profiling/memory-usage.md) 
