@@ -1,21 +1,23 @@
 ---
-title: "Как: ответ на отладчик Just-In-Time | Документы Microsoft"
-ms.custom: 
+title: 'Как: ответ на отладчик Just-In-Time | Документы Microsoft'
+ms.custom: ''
 ms.date: 05/23/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -36,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 
 1. (Веб-приложений) Если вы пытаетесь запустить веб-приложения, можно отключить отладку скриптов.
 
-    Для Internet Explorer или Edge Запретить отладку скриптов в диалоговом окне Свойства обозревателя. Вы можете использовать эти параметры из **панели управления** > **сеть и Интернет** > **обозревателя** (точные действия зависят от вашей версия Windows и в браузере).
+    Для Internet Explorer или Microsoft Edge Запретить отладку скриптов в диалоговом окне Свойства обозревателя. Вы можете использовать эти параметры из **панели управления** > **сеть и Интернет** > **обозревателя** (точные действия зависят от вашей версия Windows и в браузере).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
