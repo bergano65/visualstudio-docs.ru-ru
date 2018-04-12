@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Создание файлов с помощью служебной программы TextTransform
 
@@ -54,13 +54,13 @@ TextTransform [<options>] <templateName>
 
 |**Параметр**|**Описание**|
 |----------------|---------------------|
-|**-out** \<filename>|Файл, в который записывается выходные данные преобразования.|
-|**-r** \<assembly>|Сборка, используемая для компиляции и выполнения шаблона текста.|
-|**-u** \<пространство имен >|Пространство имен, которое используется для компиляции шаблона.|
-|**-I** \<includedirectory >|Каталог, содержащий текстовые шаблоны, включенные в указанный текстовый шаблон.|
+|**-out** \<имя файла >|Файл, в который записывается выходные данные преобразования.|
+|**-r** \<сборки >|Сборка, используемая для компиляции и выполнения шаблона текста.|
+|**-u** \<namespace>|Пространство имен, которое используется для компиляции шаблона.|
+|**-I** \<includedirectory>|Каталог, содержащий текстовые шаблоны, включенные в указанный текстовый шаблон.|
 |**-P** \<referencepath>|Указывает каталог поиска для сборок, указанных в текстовом шаблоне или с помощью **- r** параметр.<br /><br /> Например чтобы включить сборки, используемые для Visual Studio API, используйте<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
-|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Имя, полное имя типа и сборка процессора директив, который может использоваться для обработки пользовательских директивы в текстовом шаблоне.|
-|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|Укажите значение параметра для процессора директив. Если указать только имя параметра и значение параметра будет доступен для всех процессоров директив. При указании процессора директив параметр доступен только для указанного процессора. При указании имени директивы, то параметр будет доступен только при обработке указанной директивы.<br /><br /> Для доступа к значения параметров из процессора директив или текстовый шаблон, используйте [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). В текстовом шаблоне включают `hostspecific` в директиве шаблона и вызвать сообщение на `this.Host`. Пример:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Всегда введите "!" помечает, даже если не указан необязательный процессора и имен директивы. Пример:<br /><br /> `-a !!param!value`|
+|**-dp** \<processorName >!\< имя_класса >! \<assemblyName&#124;codeBase >|Имя, полное имя типа и сборка процессора директив, который может использоваться для обработки пользовательских директивы в текстовом шаблоне.|
+|**-** [processorName]! [directiveName]! \<Имя_параметра >! \<parameterValue >|Укажите значение параметра для процессора директив. Если указать только имя параметра и значение параметра будет доступен для всех процессоров директив. При указании процессора директив параметр доступен только для указанного процессора. При указании имени директивы, то параметр будет доступен только при обработке указанной директивы.<br /><br /> Для доступа к значения параметров из процессора директив или текстовый шаблон, используйте [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). В текстовом шаблоне включают `hostspecific` в директиве шаблона и вызвать сообщение на `this.Host`. Пример:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Всегда введите "!" помечает, даже если не указан необязательный процессора и имен директивы. Пример:<br /><br /> `-a !!param!value`|
 |**-h**|Предоставляет справку.|
 
 ## <a name="related-topics"></a>См. также
