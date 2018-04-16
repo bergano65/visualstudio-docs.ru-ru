@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2018
 ---
@@ -104,7 +104,7 @@ ms.lasthandoff: 04/10/2018
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет создан файл с именем **CreateMsiSetupProject.vdproj**.  
   
-6.  В проводнике Windows, скопируйте Dsl\\*.vdproj в новую папку с именем установки.  
+6.  В проводнике Windows, скопируйте Dsl\\\*.vdproj в новую папку с именем установки.  
   
      (Если нужно, вы может теперь исключить CreateMsiSetupProject.tt из проекта Dsl.)  
   

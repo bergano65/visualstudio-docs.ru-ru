@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/10/2018
   
  Для развертывания расширения к главному [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]и на другие компьютеры, выполните следующие действия:  
   
-1.  Найдите VSIX-файл установки, в проект VSIX в bin\\*\\\*.vsix  
+1.  Найдите VSIX-файл установки, в проект VSIX в bin\\*\*\\\*.vsix  
   
 2.  Скопируйте этот файл на конечный компьютер и в проводнике Windows (или File Explorer), дважды щелкните его.  
   
