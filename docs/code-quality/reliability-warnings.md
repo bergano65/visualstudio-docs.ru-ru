@@ -1,13 +1,10 @@
 ---
-title: "Предупреждения надежности | Документы Microsoft"
-ms.custom: 
+title: Предупреждения надежности | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
@@ -15,24 +12,23 @@ helpviewer_keywords:
 - reliability warnings
 - managed code analysis warnings, reliability warnings
 ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 336548a51b6ee388f81602abca5a1d0421864c18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 61f7757a3e97f8634c593a8aba52ae1df4fdba73
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reliability-warnings"></a>предупреждения надежности
 Предупреждения надежности поддерживают надежность библиотек и приложений, например правильного использования памяти и потоков.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA2000: удалите объекты до того, как будет потеряна область действия](../code-quality/ca2000-dispose-objects-before-losing-scope.md)|Необходимо явно удалить объект до того, как все ссылки на него окажутся вне области действия, так как может произойти исключительное событие, которое воспрепятствует выполнению метода завершения объекта.|  
 |[CA2001: избегайте вызовов проблемных методов](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Член вызывает потенциально опасный или проблемный метод.|  

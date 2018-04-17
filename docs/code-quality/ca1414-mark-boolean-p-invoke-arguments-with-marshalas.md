@@ -1,12 +1,10 @@
 ---
-title: "CA1414: Пометьте логические аргументы P-Invoke с помощью атрибута MarshalAs | Документы Microsoft"
-ms.custom: 
+title: 'CA1414: Пометьте логические аргументы P-Invoke с помощью атрибута MarshalAs | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
 ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ce70291bd59ef3211c9fea871c8155f1a3e7fed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 16e561e04444fba7200c00f299cc775978829100
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: пометьте логические аргументы P/Invoke с помощью атрибута MarshalAs
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Метод вызова платформы объявление включает <xref:System.Boolean?displayProperty=fullName> параметра или возвращаемого значения, но <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> параметра или возвращаемого значения не применяется атрибут.  
   
 ## <a name="rule-description"></a>Описание правила  
- Платформа вызывать неуправляемый код метода доступа и определяется с помощью `Declare` ключевое слово в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Указывает поведение маршалинга, которая используется для преобразования типов данных между управляемым и неуправляемым кодом. Типы много простых данных, такие как <xref:System.Byte?displayProperty=fullName> и <xref:System.Int32?displayProperty=fullName>, единое представление в неуправляемом коде и не требуют спецификацию их поведение маршалинга; общеязыковая среда выполнения автоматически предоставляет правильное поведение.  
+ Платформа вызывать неуправляемый код метода доступа и определяется с помощью `Declare` ключевое слово в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Указывает поведение маршалинга, которая используется для преобразования типов данных между управляемым и неуправляемым кодом. Типы много простых данных, такие как <xref:System.Byte?displayProperty=fullName> и <xref:System.Int32?displayProperty=fullName>, единое представление в неуправляемом коде и не требуют спецификацию их поведение маршалинга; общеязыковая среда выполнения автоматически предоставляет правильное поведение.  
   
  <xref:System.Boolean> Тип данных имеет несколько представлений в неуправляемом коде. Когда <xref:System.Runtime.InteropServices.MarshalAsAttribute> не установлен, поведением маршалинга по умолчанию <xref:System.Boolean> имеет тип данных <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Это 32-разрядное целое число, которое не во всех случаях. Логическое представление, которые требуются для неуправляемого метода необходимо определить и сопоставить соответствующие <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool — это тип BOOL в Win32, который всегда равна 4 байтам. Для C++ следует использовать значение UnmanagedType.U1 `bool` или другие типы 1 байт.  
   

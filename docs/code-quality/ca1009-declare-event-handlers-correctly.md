@@ -1,12 +1,10 @@
 ---
-title: "CA1009: Правильно объявите обработчики событий | Документы Microsoft"
-ms.custom: 
+title: 'CA1009: Правильно объявите обработчики событий | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1009
 - DeclareEventHandlersCorrectly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1009
 - DeclareEventHandlersCorrectly
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8e72f10ef44c784af98628f4b0c1ed3b72814977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d207bff88129cb9cc6769cc47ae6e70cbe74d1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: правильно объявите обработчики событий
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  Для этого правила отключать вывод предупреждений не следует.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано делегат, который подходит для обработки событий. Методы, которые могут быть вызваны, этот обработчик событий соответствует подписи, которая указана в руководствах по разработке. `AlarmEventHandler`является именем типа делегата. `AlarmEventArgs`является производным от базового класса для данных события <xref:System.EventArgs>, и содержит предупреждения данные события.  
+ В следующем примере показано делегат, который подходит для обработки событий. Методы, которые могут быть вызваны, этот обработчик событий соответствует подписи, которая указана в руководствах по разработке. `AlarmEventHandler` является именем типа делегата. `AlarmEventArgs` является производным от базового класса для данных события <xref:System.EventArgs>, и содержит предупреждения данные события.  
   
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]

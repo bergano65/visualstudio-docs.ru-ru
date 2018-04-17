@@ -1,13 +1,10 @@
 ---
-title: "Параметры для конфигурации отладки Visual Basic проекта | Документы Microsoft"
-ms.custom: 
+title: Параметры для конфигурации отладки Visual Basic проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vbProjectPropertiesDebug
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debug configurations, Visual Basic
 ms.assetid: 72a8483a-af0b-4403-8b0d-ee9ad71ee435
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 727e36da37c38d57013071d1d5013c27b8a95b87
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 Можно изменить параметры проекта для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] конфигурации отладки в **страницы свойств** окна, как описано в [конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком **страницы свойств** окна.  
@@ -43,7 +39,7 @@ ms.lasthandoff: 01/22/2018
   
 ### <a name="debug-tab"></a>Вкладки отладчика  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |-------------|-----------------|  
 |**Конфигурация**|Устанавливает режим для компиляции приложения. Выбор среди **Активная (Отладка)**, **отладки**, **выпуска**, **все конфигурации**.|  
 |**Действие при запуске**|Эта группа элементов управления описывает действия, которые будут происходить при выборе команды "Пуск" в меню "Отладка".<br /><br /> -   **Запуск проекта** значение по умолчанию и запускает Автозагружаемый проект для отладки. <br />-   **Запуск внешней программы** дает возможность запуска и присоединения к программе, которая не является частью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проекта. Дополнительные сведения см. в разделе [присоединение к процессу под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Запуск браузера, URL-адрес** позволяет отлаживать веб-приложения.|  
@@ -55,7 +51,7 @@ ms.lasthandoff: 01/22/2018
   
 ### <a name="compile-tab-press-advanced-compile-options-button"></a>Вкладка компиляции: нажмите кнопку "Дополнительные параметры компиляции"  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |-------------|-----------------|  
 |**Включить оптимизацию**|Этот параметр не должен быть установлен. Оптимизация приводит к тому, что фактически выполняемый код отличается из исходного кода в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], что затрудняет отладку. Если код оптимизирован, символы при отладке с параметром "Только мой код" по умолчанию не загружаются.|  
 |**Создавать отладочную информацию**|Параметр по умолчанию для отладочной и окончательной версий. Этот параметр (эквивалент параметра компилятора "/debug") создает отладочную информацию во время построения. Отладчик использует эти данные, чтобы показывать при отладке имена переменных и другие сведения в понятном формате. При компиляции программы без этих данных функциональность отладчика будет ограничена. Дополнительные сведения см. в разделе [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug).|  

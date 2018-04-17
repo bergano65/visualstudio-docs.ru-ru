@@ -1,12 +1,10 @@
 ---
-title: "Аннотация параметров функции и возвращаемых значений | Документы Microsoft"
-ms.custom: 
+title: Аннотация параметров функции и возвращаемых значений | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
 - _Inout_updates_all_opt_
@@ -125,16 +123,16 @@ f1_keywords:
 - _Result_nullonfailure_
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daeed5dd92116af4346cd8aa2086e6a3dd3af216
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
 В этой статье описываются типичные способы применения заметки для параметров простая функция — скалярных величин и указатели на структуры и классы и в большинстве буферов.  В этой статье также показано распространенных шаблонов использования для заметок. Дополнительные заметки, связанные с функциями, в разделе [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)  
@@ -188,7 +186,7 @@ ms.lasthandoff: 12/22/2017
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     В этом примере код, вызывающий предоставляет буфер `size` элементы для `p1`.  `MyStringCopy`в результате некоторые элементы допустимым. Что более важно `_Null_terminated_` заметки на `PWSTR` означает, что `p1` находится в состоянии после символом null.  Таким образом по-прежнему четко определенных количество допустимых элементов, но число определенный элемент не является обязательным.  
+     В этом примере код, вызывающий предоставляет буфер `size` элементы для `p1`.  `MyStringCopy` в результате некоторые элементы допустимым. Что более важно `_Null_terminated_` заметки на `PWSTR` означает, что `p1` находится в состоянии после символом null.  Таким образом по-прежнему четко определенных количество допустимых элементов, но число определенный элемент не является обязательным.  
   
      `_bytes_` Variant предоставляет размер в байтах вместо элементов. Используйте только в том случае, если размер не могут быть выражены как элементы.  Например `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичное функцию, которая использует `wchar_t` бы.  
   

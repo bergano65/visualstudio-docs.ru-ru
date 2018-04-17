@@ -1,21 +1,19 @@
 ---
-title: "CA3076: Выполнение небезопасного скрипта XSLT | Документы Microsoft"
-ms.custom: 
+title: 'CA3076: Выполнение небезопасного скрипта XSLT | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 66d415b792558dce91de0205ee688fecb5caa182
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9793d0af1c2207b5201cb9e0e7bebe0d7bf4ef1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: выполнение небезопасного скрипта XSLT
 
@@ -34,11 +32,11 @@ ms.lasthandoff: 01/23/2018
 
 **XSLT** — это стандарт консорциума World Wide Web (W3C) для преобразования XML-данных. XSLT обычно используется для записи таблиц стилей в целях преобразования данных XML в другие форматы, такие как HTML, текст фиксированной длины, текст с разделителями-запятыми или другой формат XML. Хотя эта возможность по умолчанию запрещена, вы можете включить ее для проекта.
 
-Чтобы обезопасить вас от атак, это правило активируется каждый раз, когда XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> получает небезопасную комбинацию экземпляров <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, которая допускает обработку вредоносных скриптов.
+Чтобы вы являетесь не от атак, это правило срабатывает каждый раз, когда XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Получает небезопасную комбинацию экземпляров <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, которая допускает обработку вредоносных скриптов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-- Замените небезопасный аргумент XsltSettings на XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> или на экземпляр с отключенными функциями документов и выполнением скриптов.
+- Замените небезопасный аргумент XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> или с экземпляром, отключил документов функции и выполнением скриптов.
 
 - Замените аргумент <xref:System.Xml.XmlResolver> на NULL или экземпляр <xref:System.Xml.XmlSecureResolver> .
 

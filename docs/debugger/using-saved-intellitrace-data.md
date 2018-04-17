@@ -1,13 +1,10 @@
 ---
-title: "С помощью сохраненных данных IntelliTrace | Документы Microsoft"
-ms.custom: 
+title: С помощью сохраненных данных IntelliTrace | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2a39531134d4c2f041c170d328c79d157fd74a0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.  
@@ -167,11 +163,11 @@ ms.lasthandoff: 01/09/2018
   
      Пример:  
   
-     ![IntelliTrace &#45; Ошибка SharePoint &#45; Идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; ошибка SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  Откройте ITRACE-файл, затем перейдите в меню **Анализ** и введите идентификатор корреляции SharePoint для просмотра соответствующего веб-запроса и записанных событий.  
   
-     ![Журнал IntelliTrace &#45; Введите идентификатор корреляции SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![Журнал IntelliTrace &#45; введите Корреляционный идентификатор SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  Просмотрите события в разделе **События запроса**. События отображаются сверху вниз в порядке, в котором они произошли.  
   
@@ -179,7 +175,7 @@ ms.lasthandoff: 01/09/2018
   
     2.  Выберите **Начать отладку** , чтобы начать отладку в точке, где произошло событие.  
   
-     ![Файл журнала IntelliTrace &#45; Просмотр веб-запросов &#43; события](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![Файл журнала IntelliTrace &#45; просмотр веб-запросов &#43; событий](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  Можно просмотреть эти типы событий SharePoint вместе с событиями IntelliTrace:  
   
@@ -209,7 +205,7 @@ ms.lasthandoff: 01/09/2018
   
 3.  Выберите **Исключение отладки** , чтобы начать отладку в точке и в момент возникновения исключения.  
   
-     ![Журнал IntelliTrace &#45; Необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  Пошаговые инструкции см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
   

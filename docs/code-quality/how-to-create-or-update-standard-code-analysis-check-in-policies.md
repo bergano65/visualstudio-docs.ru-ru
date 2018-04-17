@@ -1,26 +1,23 @@
 ---
-title: "Как: Создание или обновление стандартных политик анализом кода возврата | Документы Microsoft"
-ms.custom: 
+title: 'Как: Создание или обновление стандартных политик анализом кода возврата | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fba16ee285faeafdc37fc38e6b5bb0a0725a46
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
 
@@ -53,7 +50,7 @@ ms.lasthandoff: 02/01/2018
 
 Установите или снимите следующие параметры:
 
-    |Параметр|Описание:|  
+    |Параметр|Описание|  
     |------------|-----------------|  
     |**Включить возврат файлов, которые являются частью текущего решения.**|Анализ кода можно выполнять только с файлами, указанными в файлах конфигурации решения и проекта. Эта политика гарантирует, что весь код, который является частью решения анализируется.|  
     |**Применять анализа кода C/C++ (/ analyze)**|Требует, что все проекты C или C++ построены с / analyze-параметр компилятора для выполнения анализа кода, прежде чем они могут быть возвращены.|  
