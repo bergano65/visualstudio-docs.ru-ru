@@ -1,6 +1,6 @@
 
 # [Документация по профилированию](index.md)
-# Обзор
+# [Обзор набора средств Visual Studio для Unity](profiling-overview.md)
 # Краткие руководства
 ## [Первое знакомство с профилированием](profiling-feature-tour.md)
 ## [Анализ использования ЦП (управляемый код)](quickstart-cpu-usage-managed.md)
@@ -208,15 +208,15 @@
 ##### [Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd](rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 ##### [Сбор статистики по веб-приложениям ASP.NET с помощью метода выборки профилировщика из командной строки](collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)
 ###### [Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)
-##### [Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)
+##### [Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)
 ###### [Практическое руководство. Инструментирование статически скомпилированного веб-приложения ASP.NET и сбор профилировщиком подробных данных о времени с помощью командной строки](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
-###### [Практическое руководство. Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор профилировщиком подробных данных о времени с помощью командной строки](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
+###### [Практическое руководство. Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор профилировщиком подробных данных о времени с помощью командной строки](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)
 ##### [Сбор данных параллелизма для веб-приложений ASP.NET с помощью командной строки профилировщика](collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)
 ###### [Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных параллелизма с помощью командной строки](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)
 ##### [Сбор данных об использовании памяти для веб-приложений ASP.NET с помощью командной строки профилировщика](collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)
 ###### [Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)
 ###### [Практическое руководство. Инструментирование статически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-###### [Практическое руководство. Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+###### [Практическое руководство. Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
 ##### [Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET](how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)
 #### [Профилирование служб из командной строки](command-line-profiling-of-services.md)
 ##### [Сбор статистики приложения для служб с помощью метода выборки профилировщика](collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)

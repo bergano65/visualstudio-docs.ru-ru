@@ -3,14 +3,16 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
-title: "Документация по разработке мобильных приложений на C++ | Документация Майкрософт"
-description: "Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio."
-ms.workload: apexprodleads
-ms.openlocfilehash: ec8f21742192a098543986d117241d2bb29bb36d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology: vs-ide-mobile
+title: Документация по разработке мобильных приложений на C++ | Документация Майкрософт
+description: Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio.
+ms.workload:
+- apexprodleads
+ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-development-with-c-documentation"></a>Документация по разработке мобильных приложений на C++
 
