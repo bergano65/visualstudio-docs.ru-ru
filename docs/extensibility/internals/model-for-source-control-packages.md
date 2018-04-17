@@ -1,32 +1,28 @@
 ---
-title: "Для пакетов управления версиями | Документы Microsoft"
-ms.custom: 
+title: Для пакетов управления версиями | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa0dcdd930412e4e53c59509848f0b7c1503c47b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-for-source-control-packages"></a>Модель для пакетов управления версиями
 Следующая модель представляет пример реализации элемента управления источника. В модели можно увидеть, интерфейсы, которые должны быть реализованы и среды служб, которые необходимо вызвать. Как и все службы фактически вызова методов определенный интерфейс, который можно получить посредством службы. Имена классов определяются для упрощения разделе способ выполнения системы управления версиями.  
   
- ![SCC &#95; Примеры TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
+ ![SCC&#95;примеры TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
 Пример проекта системы управления версиями  
   
 ## <a name="interfaces"></a>интерфейсов,  

@@ -1,12 +1,10 @@
 ---
-title: "&lt;customHostSpecified&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: '&lt;customHostSpecified&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - customHostSpecified element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 80007310f5556bcc8c67b61e7ff41953cc7c900e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9d74dac27e4d4a5735dc73ebb069d985d17022d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; элемент (Разработка решений Office в Visual Studio)
   `customHostSpecified` Элемент указывает, что это решение не является автономным приложением. Решения Office содержат компоненты, которые размещены в приложениях Microsoft Office.  

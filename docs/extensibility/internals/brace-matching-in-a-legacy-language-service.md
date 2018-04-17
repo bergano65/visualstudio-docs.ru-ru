@@ -1,26 +1,24 @@
 ---
-title: "Парные фигурные скобки в языковую службу прежних версий | Документы Microsoft"
-ms.custom: 
+title: Парные фигурные скобки в языковую службу прежних версий | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c496c65244f0ede0c3a6385f6cf1329479a17c22
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c9df179d6f5b1bd6d7b9f2c827568b6954860b81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Парные фигурные скобки в языковую службу прежних версий
 Парные фигурные скобки позволяет разработчику отслеживать языковые элементы, которые нужно выполнить друг с другом, таких как круглые и фигурные скобки. Когда разработчик вводит закрывающую фигурную скобку, выделяется открывающей фигурной скобки.  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="enabling-support-for-brace-matching"></a>Включение поддержки парные фигурные скобки  
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Атрибут можно установить `MatchBraces`, `MatchBracesAtCaret`, и `ShowMatchingBrace` именованные параметры, задать соответствующие свойства <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства языка и предпочтений можно также задать пользователем.  
   
-|Запись реестра|Свойство.|Описание:|  
+|Запись реестра|Свойство.|Описание|  
 |--------------------|--------------|-----------------|  
 |`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Включает парные фигурные скобки|  
 |`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Включает проверку соответствия фигурных скобок как курсор перемещается.|  

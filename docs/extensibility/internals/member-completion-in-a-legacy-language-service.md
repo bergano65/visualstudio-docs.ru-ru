@@ -1,27 +1,25 @@
 ---
-title: "Завершение члена в языковую службу прежних версий | Документы Microsoft"
-ms.custom: 
+title: Завершение члена в языковую службу прежних версий | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e77511bdaaa96dc75f5be75c175b63fcd3cc3253
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0cc22190c9228d2e166be94ed0d5cc78105e2404
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Завершение члена в языковую службу прежних версий
 Завершение IntelliSense член является всплывающей подсказки, которая отображает список возможных элементов в конкретной области, например класс, структуру, перечисление или пространства имен. Например в C#, если пользователь вводит «this» последующей точкой, список всех членов класса или структуры в текущей области представлены в список, из которого пользователь может выбрать.  

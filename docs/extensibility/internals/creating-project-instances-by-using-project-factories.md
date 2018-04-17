@@ -1,26 +1,24 @@
 ---
-title: "Создание экземпляров проекта с помощью фабрик проекта | Документы Microsoft"
-ms.custom: 
+title: Создание экземпляров проекта с помощью фабрик проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8a331c131eaf48eb7be8bc3709599412aa01b1ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b3a59eee6701caf0b4d3b56df273b280f8bf6ece
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Создание экземпляров проекта с помощью фабрик проекта
 Типы проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использовать *фабрики проектов* создавать экземпляры объектов проекта. Стандартный класс фабрики для COM-объектов, создаваемых посредством функции CoCreateInstance аналогично фабрики проектов. Однако объекты проекта не создаваемых посредством функции CoCreateInstance: они могут создаваться только с помощью фабрики проектов.  

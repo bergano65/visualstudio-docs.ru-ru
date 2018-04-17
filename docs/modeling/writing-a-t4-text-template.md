@@ -1,25 +1,23 @@
 ---
-title: "Написание текстового шаблона T4 | Документы Microsoft"
-ms.custom: 
+title: Написание текстового шаблона T4 | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 140e49af62b2ea1a9bb43b7cf3fb95ccc7b257e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-страницы будет содержать "\<html > …» и все прочие стандартные части HTML-страницы. Вставляемые в шаблон, *блоки управления*, они являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.  
@@ -211,7 +209,7 @@ private void WriteSquareLine(int i)
   
  Дополнительные сведения см. в разделе [директива Import T4](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a>Включение кода и текста  
+###  <a name="Include"></a> Включение кода и текста  
  Директива `include` вставляет текст из другого файла шаблона. Например, эта директива вставляет содержимое файла `test.txt`:  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -241,7 +239,7 @@ private void WriteSquareLine(int i)
   
  **Загрузка файла в виде модели с поддержкой перемещения**. Более эффективный способ — это чтение данных как модели, по которой может перемещаться код текстового шаблона. Например, можно загрузить XML-файл и выполнять навигацию по этому файлу с помощью выражений XPath. Можно также использовать [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) для создания набора классов, с помощью которых можно считывать данные XML.  
   
- **Редактирование файла модели в схему или форму.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]предоставляет средства, которые позволяют редактировать модель как схему или форму Windows. Это упрощает обсуждение модели с пользователями созданного приложения. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] также создает набор строго типизированных классов, отражающих структуру модели. Дополнительные сведения см. в разделе [формирование кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **Редактирование файла модели в схему или форму.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставляет средства, которые позволяют редактировать модель как схему или форму Windows. Это упрощает обсуждение модели с пользователями созданного приложения. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] также создает набор строго типизированных классов, отражающих структуру модели. Дополнительные сведения см. в разделе [формирование кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>Относительные пути файлов в шаблонах времени разработки  
  В [текстового шаблона времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), чтобы ссылаться на файл в расположении, относительном к текстовому шаблону, используйте `this.Host.ResolvePath()`. Кроме того, необходимо задать выражение `hostspecific="true"` в директиве `template`:  

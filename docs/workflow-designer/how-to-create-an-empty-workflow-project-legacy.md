@@ -1,5 +1,5 @@
 ---
-title: "Как: создать пустой проект рабочего процесса (для прежних версий) | Документы Microsoft"
+title: 'Как: создать пустой проект рабочего процесса (для прежних версий) | Документы Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce595536d1e26d029556ca03a26428f6b425fff
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 961425eb7f3b4d412ddcb572bc21a91bdde6e957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Как создать пустой проект рабочего процесса (для прежних версий)
 Выполните следующие действия, чтобы создать пустой проект рабочего процесса с помощью прежних версий конструктора рабочих процессов Windows, предоставляемые [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  Запустите Visual Studio.
 
-2.  На **файл** последовательно выберите пункты **New**, а затем выберите **проекта**.
+2.  В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
 
      Откроется диалоговое окно **Новый проект** .
 

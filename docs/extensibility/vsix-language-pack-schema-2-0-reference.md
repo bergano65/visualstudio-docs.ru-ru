@@ -1,28 +1,26 @@
 ---
-title: "Справочник по схеме 2.0 с пакетом обновления языка VSIX | Документы Microsoft"
-ms.custom: 
+title: Справочник по схеме 2.0 с пакетом обновления языка VSIX | Документы Microsoft
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language pack
 - localize vsix
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-caps.latest.revision: "8"
 ms.author: dagriffe
 author: dgriffen
-manager: ghogen
-ms.workload: dagriffe
-ms.openlocfilehash: b601653e4b2d309d41f32ff71666567ab860e698
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dagriffe
+ms.openlocfilehash: 571f90f31014dcc4d5686483bfc037e458f4a31e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме 2.0 с пакетом обновления языка VSIX
 
@@ -35,14 +33,14 @@ ms.lasthandoff: 12/22/2017
 ### <a name="packagelangaugepackmanifest-element"></a>Элемент PackageLangaugePackManifest
 
 В пределах `<PackageLanguagePackManifest>` элемент должен существовать следующий элемент:
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |`<Metadata>`| Элемент-контейнер для всех метаданных локализованного пакета
 
 ### <a name="metadata-element"></a>Элемент метаданных
 
 В пределах `<Metadata>` элемент может иметь следующие элементы:
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |`<DisplayName>`|Локализованное имя расширения должны быть установлены|
 |`<Description>`|Локализованное описание расширения должны быть установлены|
@@ -69,7 +67,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)|Показано, как для обеспечения поддержки локализованного установочного пакета VSIX.|
 |[Справочник по схеме 2.0 расширений VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Манифест VSIX описывает содержимое файла развертывания с расширением VSIX, расширение Visual Studio установить с помощью **расширения и обновления** диалоговое окно.|

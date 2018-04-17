@@ -1,27 +1,23 @@
 ---
-title: "Конфигурация решения | Документы Microsoft"
-ms.custom: 
+title: Конфигурация решения | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7b2a453d4ea4e8b92b40ee126f9441e6f353606
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-configuration"></a>Конфигурация решения
 Свойства уровня решения сохранять конфигурации решения. Они прямой поведение **запустить** ключ (F5) и **построения** команд. По умолчанию эти команды построения и запуска отладочной конфигурации. Обе команды выполняются в контексте конфигурации решения. Это означает, что пользователь может ожидать F5 для запуска и сборки, независимо от активного решения настраивается с помощью параметров. Среды, предназначено для оптимизации для решения, но не в проектах, когда дело доходит до построения и запуска.  

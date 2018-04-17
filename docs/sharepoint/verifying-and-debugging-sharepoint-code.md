@@ -1,13 +1,10 @@
 ---
-title: "Проверка и отладка кода SharePoint | Документы Microsoft"
-ms.custom: 
+title: Проверка и отладка кода SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, unit testing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c824a5e08375d90f84db2499f76099f87ef035f
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: fc294bcd94c7fd4c1ed699d8aaceab66eaecc47b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="verifying-and-debugging-sharepoint-code"></a>Проверка и отладка кода SharePoint
  
@@ -49,7 +46,7 @@ ms.lasthandoff: 02/21/2018
 
 ## <a name="related-articles"></a>Связанные статьи
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[IntelliTrace](/visualstudio/debugger/intellitrace)|Описаны более простые способы отладки решений Visual Studio с помощью IntelliTrace.|
 |[Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Описывает использование IntelliTrace для поиска ошибок кода в проекте SharePoint.|

@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
   Конструктор лент позволяет создать настраиваемую вкладку, а затем добавить и расположить на ней элементы управления.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio открывает новую книгу в конструкторе и добавляет **MyExcelRibbon** проекта **обозревателе решений**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Создание панелей действий  
+##  <a name="BKMK_CreateActionsPanes"></a> Создание панелей действий  
  Добавьте в проект две настраиваемые панели действий. Позже на настраиваемой вкладке будут добавлены кнопки для скрытия и отображения этих панелей действий.  
   
 #### <a name="to-create-actions-panes"></a>Создание панелей действий  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Повторите этапы 1–5, чтобы создать вторую панель действий и метку. Задать **текст** свойство второй метки значение **панель действий 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Создание настраиваемой вкладки  
+##  <a name="BKMK_CreateCustomTab"></a> Создание настраиваемой вкладки  
  Один из принципов проектирования приложений Office состоит в том, что пользователь всегда должен иметь возможность распоряжаться пользовательским интерфейсом приложения Office. Чтобы обеспечить такую возможность для панелей действий, можно добавить на настраиваемую вкладку ленты кнопки, скрывающие и отображающие каждую панель. Чтобы создать настраиваемую вкладку, добавьте **Лента (визуальный конструктор)** в проект. Конструктор помогает добавлять и размещать элементы управления, задавать их свойства и обрабатывать связанные с ними события.  
   
 #### <a name="to-create-a-custom-tab"></a>Создание настраиваемой вкладки  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Задать **метка** свойства **скрыть панель действий**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Скрытие и отображение панелей действий при помощи кнопок настраиваемой вкладки  
+##  <a name="BKMK_HideShowActionsPane"></a> Скрытие и отображение панелей действий при помощи кнопок настраиваемой вкладки  
  Последним этапом является добавление кода, который взаимодействует с пользователем. Добавьте обработчики событий для событий <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> обеих кнопок и события <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Добавьте в эти обработчики событий код для скрытия и отображения панелей действий.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Скрытие и отображение панелей действий при помощи кнопок настраиваемой вкладки  

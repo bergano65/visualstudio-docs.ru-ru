@@ -1,27 +1,25 @@
 ---
-title: "Доставка расширений Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Доставка расширений Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX deployment
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3c646ec2c5159e6c3551776761baa9328e3d62bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 После завершения разработки модуля, можно установить его на других компьютерах, использовать его совместно с друзьями и сотрудниками или опубликовать его в Visual Studio Marketplace. В этом разделе рассматривается, все, что необходимо сделать, чтобы опубликовать и поддерживать расширение: работа с VSIX-файлы, публикации, локализации и обновления.  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Объясняется, как использовать шаблон проекта VSIX для установки пользовательского шаблона проекта.|  
 |[Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Компоненты пакета VSIX.|  

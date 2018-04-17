@@ -1,27 +1,25 @@
 ---
-title: "Создание базового проекта системы, часть 2 | Документы Microsoft"
-ms.custom: 
+title: Создание базового проекта системы, часть 2 | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 699f9176fd39cacaf2bb4f433cd9d2ceb8e326b5
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: f39150f02481e18997035a8027518648fa410f48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Создание базового проекта системы, часть 2
 В этой серии первого пошагового руководства [Создание базовой системы проектов, часть 1](../extensibility/creating-a-basic-project-system-part-1.md), показано, как создать базовый проект систему. В этом пошаговом руководстве построена в системе базовый проект шаблона Visual Studio, страницу свойств и другие функции. Перед началом этого первого пошагового руководства необходимо выполнить.  

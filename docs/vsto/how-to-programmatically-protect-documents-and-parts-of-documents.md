@@ -1,13 +1,10 @@
 ---
-title: "Как: программная Защита документов и их частей документов | Документы Microsoft"
-ms.custom: 
+title: 'Как: программная Защита документов и их частей документов | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Word documents, protection
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8655a03659bd3b69e23fd155620d42df6d52386c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e25dd6af67307ebf28a63893411bb2dfaa7bf61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Практическое руководство. Программная защита документов и их частей
   Вы можете добавлять защиту в документы Microsoft Office Word, чтобы запретить пользователям вносить изменения в документ.  
@@ -77,7 +74,7 @@ ms.lasthandoff: 01/10/2018
  [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)   
  [Защита паролем в документах Office](../vsto/password-protection-on-office-documents.md)   
  [Как: код разрешено выполнение с выделенным документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Практическое руководство. Добавление закладок в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

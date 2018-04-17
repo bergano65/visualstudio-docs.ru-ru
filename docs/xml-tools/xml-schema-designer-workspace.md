@@ -1,23 +1,21 @@
 ---
-title: "Рабочая область конструктора схемы XML | Документы Microsoft"
-ms.custom: 
+title: Рабочая область конструктора схемы XML | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7a3da032000d5d286e8476673b3c53b993b18303
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a44f620319ed1d706a1fbefec52438512ebefc41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-designer-workspace"></a>Рабочая область конструктора XML-схем
 Конструктор XML-схем (конструктор XSD) является графическим инструментом, позволяющим просматривать XML-схемы. В дополнение к [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), что позволяет просматривать и перемещаться по дереву XML-схемы и выполнять поиск, конструктор XSD предоставляет три представления, которые позволяют изучить более подробно XSD-схему. Начальное представление является точкой запуска конструктора XSD; из начального представления можно переходить к другим представлениям конструктора XSD и просматривать подробные сведения о наборе схем. Представление графика позволяет просматривать общие сведения о наборе схем и связях между узлами схемы. Представление модели содержимого предоставляет графическое представление подробных сведений о локальных и глобальных узлах схемы, включая простые и сложные типы, элементы, группы, атрибуты и группы атрибутов.  

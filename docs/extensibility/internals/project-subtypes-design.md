@@ -1,27 +1,23 @@
 ---
-title: "Проект подтипы конструктора | Документы Microsoft"
-ms.custom: 
+title: Проект подтипы конструктора | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Подтипы конструктора проектов
 Подтипы проекта позволяют пакеты VSPackage расширяют проектами с помощью Microsoft Build Engine (MSBuild). Использование статистической обработки позволяет повторно использовать большую часть реализации в системе проектов управляемого ядра [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , но по-прежнему настройки поведения для того или иного сценария.  
@@ -63,7 +59,7 @@ ms.lasthandoff: 12/22/2017
  Является агрегатом подтип многоуровневого проекта состоит из трех уровней, базовый проект, который является статистическая обработка проводится путем подтипом проекта, то затем агрегируются с подтипом проекта Дополнительно. Рисунок рассматриваются некоторые вспомогательные интерфейсов, предоставляемых в составе [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] архитектура подтип проекта.  
   
 ##### <a name="deployment-mechanisms"></a>Механизмы развертывания  
- Из нескольких условий базовой системы проектов функциональные возможности расширены за счет подтипом проекта — это механизмы развертывания. Подтип проекта влияет механизмы развертывания путем реализации интерфейсов конфигурации (например, <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>), получаются путем вызова QueryInterface для <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. В сценарии, где подтипом проекта и подтипом проекта Дополнительно добавьте другую конфигурацию реализации, вызывает базовый проект `QueryInterface` подтипов Дополнительно проекта `IUnknown`. Если подтипом внутреннего проекта содержит реализации конфигурации, запрашивающее базового проекта, подтипом проекта дополнительно делегирует реализацию, предоставляемую подтип внутреннего проекта. В качестве механизма для сохранения состояния уровень статистическая обработка, реализации всех уровней подтипов проекта <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> для сохранения без построения связанные XML-данных в файлы проекта. Дополнительные сведения см. в разделе [сохранение данных в файле проекта MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>реализуется как механизм для извлечения из подтипов проекта автоматизированным расширителям.  
+ Из нескольких условий базовой системы проектов функциональные возможности расширены за счет подтипом проекта — это механизмы развертывания. Подтип проекта влияет механизмы развертывания путем реализации интерфейсов конфигурации (например, <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>), получаются путем вызова QueryInterface для <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. В сценарии, где подтипом проекта и подтипом проекта Дополнительно добавьте другую конфигурацию реализации, вызывает базовый проект `QueryInterface` подтипов Дополнительно проекта `IUnknown`. Если подтипом внутреннего проекта содержит реализации конфигурации, запрашивающее базового проекта, подтипом проекта дополнительно делегирует реализацию, предоставляемую подтип внутреннего проекта. В качестве механизма для сохранения состояния уровень статистическая обработка, реализации всех уровней подтипов проекта <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> для сохранения без построения связанные XML-данных в файлы проекта. Дополнительные сведения см. в разделе [сохранение данных в файле проекта MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> реализуется как механизм для извлечения из подтипов проекта автоматизированным расширителям.  
   
  Ниже рассматриваются реализация расширителя автоматизации, объект обзора конфигурации проекта в частности, использовать подтипов проекта, для расширения условий базовой системы проектов.  
   

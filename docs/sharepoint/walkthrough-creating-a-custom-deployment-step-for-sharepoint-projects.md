@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство. Создание пользовательского шага развертывания для проектов SharePoint
   При развертывании проекта SharePoint в Visual Studio выполняет ряд шагов развертывания в определенном порядке. Visual Studio включает многие встроенные шаги развертывания, но можно также создать свои собственные.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Выберите **проект VSIX** шаблона, имя проекта **UpgradeDeploymentStep**и нажмите кнопку **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **UpgradeDeploymentStep** проекта **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **UpgradeDeploymentStep** проекта **обозревателе решений**.  
   
 #### <a name="to-create-the-extension-project"></a>Создание проекта расширения  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Выберите **библиотеки классов** шаблон проекта, присвойте проекту имя **DeploymentStepExtension**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **DeploymentStepExtension** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **DeploymentStepExtension** в решение проект и открывает файл кода по умолчанию Class1.  
   
 5.  Удалите файл Class1 код из проекта.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Выберите **Готово** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает проект EmployeesListDefinition.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает проект EmployeesListDefinition.  
   
 8.  Откройте контекстное меню для проекта EmployeesListDefinition, **добавить**, а затем выберите **новый элемент**.  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **По умолчанию (пустое)** выбирается в **создать настраиваемый список на основе:** списка.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает элемент списка сотрудников с заголовка столбца и одной пустой экземпляр и откроется конструктор списка.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает элемент списка сотрудников с заголовка столбца и одной пустой экземпляр и откроется конструктор списка.  
   
 12. В конструкторе списка на **столбцы** выберите **введите имя нового или существующего столбца** строк, а затем добавьте следующие столбцы в **отображаемое имя столбца** списка:  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Откроется конструктор и редактор свойств.  
   
-4.  На **представления** выберите **электронной почты** столбец и выберите  **<**  клавишу, чтобы переместить этот столбец из **выбранные столбцы**список **доступные столбцы** списка.  
+4.  На **представления** выберите **электронной почты** столбец и выберите **<** клавишу, чтобы переместить этот столбец из **выбранные столбцы**список **доступные столбцы** списка.  
   
      Это действие удалит данные поля из представления по умолчанию **сотрудников** список на сайте SharePoint.  
   

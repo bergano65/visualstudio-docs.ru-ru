@@ -1,25 +1,24 @@
 ---
-title: "Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2 | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2 | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите его с шаблоном проекта в Visual Studio, можно также создать мастер для шаблона. Мастер можно использовать для сбора информации от пользователей, при использовании шаблона для создания нового проекта, содержащего элемент проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Отладка и тестирование мастера.  
   
 > [!NOTE]  
->  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения данного пошагового руководства, необходимо сначала создать решение SiteColumnProjectItem, выполнив [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,10 +57,10 @@ ms.lasthandoff: 01/10/2018
   
 -   Столбцы сайта SharePoint. Дополнительные сведения см. в разделе [столбцы](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Основные сведения о компонентах мастера  
+##  <a name="wizardcomponents"></a> Основные сведения о компонентах мастера  
  Мастер, представленный в этом пошаговом руководстве, содержит несколько компонентов. В следующей таблице описаны эти компоненты.  
   
-|Компонент|Описание:|  
+|Компонент|Описание|  
 |---------------|-----------------|  
 |Реализация мастера|Это класс, с именем `SiteColumnProjectWizard`, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейса. Этот интерфейс определяет методы, вызываемые Visual Studio при запуске мастера и завершения и в определенные моменты при мастер выполняет.|  
 |Пользовательский Интерфейс мастера|Это окно на основе WPF, с именем `WizardWindow`. В этом окне включает два элемента управления пользователя, с именем `Page1` и `Page2`. Эти пользовательские элементы управления представляют две страницы мастера.<br /><br /> В этом пошаговом руководстве <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> метод реализации мастер отображает пользовательский Интерфейс мастера.|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  В списке шаблонов проектов выберите **Библиотека пользовательских элементов управления WPF**, назовите проект **ProjectTemplateWizard**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **ProjectTemplateWizard** проекта в решение и откроет файл UserControl1.xaml по умолчанию.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **ProjectTemplateWizard** проекта в решение и откроет файл UserControl1.xaml по умолчанию.  
   
 6.  Удалите файл UserControl1.xaml из проекта.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Выберите **библиотеки классов** шаблон проекта, присвойте проекту имя **SharePointCommands**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **SharePointCommands** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **SharePointCommands** в решение проект и открывает файл кода по умолчанию Class1.  
   
 5.  Удалите файл Class1 код из проекта.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Если вы разрабатываете проект Visual Basic, ProjectTemplateWizard пространство имен импортировано в проект с помощью **конструктора проектов**.  
   
-     Дополнительные сведения см. в разделе [как: Добавление или удаление Импортируемые пространства имен &#40; Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Дополнительные сведения см. в разделе [как: Добавление или удаление Импортируемые пространства имен &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Чтобы настроить проект SharePointCommands  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Щелкните стрелку рядом с **добавить** , а затем кнопку **ссылку Добавить** в появившемся меню.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавление файла кода для **SharePointCommands** проект в качестве связи. Файл кода находится в **ProjectTemplateWizard** также скомпилирована в проект, но код в файле **SharePointCommands** проекта.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавление файла кода для **SharePointCommands** проект в качестве связи. Файл кода находится в **ProjectTemplateWizard** также скомпилирована в проект, но код в файле **SharePointCommands** проекта.  
   
 5.  В **SharePointCommands** проект, добавить другой файл кода с именем команды.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Дополнительные сведения о `WizardExtension` элемент, в разделе [элемент WizardExtension &#40; Шаблоны Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Дополнительные сведения о `WizardExtension` элемент, в разделе [элемент WizardExtension &#40;шаблоны Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Сохраните и закройте файл.  
   

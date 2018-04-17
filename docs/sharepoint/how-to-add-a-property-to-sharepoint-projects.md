@@ -1,12 +1,10 @@
 ---
-title: "Как: Добавление свойства в проекты SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Как: Добавление свойства в проекты SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a4318550e74d5324195de173659d96abaf952979
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Практическое руководство. Добавление свойства в проекты SharePoint
   Расширение проекта можно использовать, чтобы добавить свойство в любой проект SharePoint. Это свойство отображается в **свойства** окна, когда проект выбран в **обозревателе решений**.  
@@ -48,9 +47,9 @@ ms.lasthandoff: 01/10/2018
   
  Чтобы сохранить изменения значений свойств **задать** методы доступа для свойств используют следующие API:  
   
--   `CustomUserFileProperty`использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство для сохранения своего значения в файл пользовательских параметров проекта.  
+-   `CustomUserFileProperty` использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство для сохранения своего значения в файл пользовательских параметров проекта.  
   
--   `CustomProjectFileProperty`использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод для сохранения своего значения в файл проекта.  
+-   `CustomProjectFileProperty` использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод для сохранения своего значения в файл проекта.  
   
  Дополнительные сведения о сохранении данных в этих файлах см. в разделе [сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   

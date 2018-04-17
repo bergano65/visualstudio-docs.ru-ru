@@ -1,23 +1,21 @@
 ---
-title: "Пошаговое руководство: Использование диагностики графики для отладки вычислительного шейдера | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Использование диагностики графики для отладки вычислительного шейдера | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4498f819dae42c1f010fa97891511253624d7b97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера
 В этом пошаговом руководстве демонстрируется использование инструментов диагностики графики Visual Studio для анализа вычислительного шейдера, который выдает неверные результаты.  
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  Проверить **список событий графики** для события draw, которое выполняет отрисовку набора данных. Чтобы облегчить эту задачу, введите `Draw` в **поиска** в правом верхнем углу **список событий графики** окна. Список будет отфильтрован и будет содержать только события, в названиях которых присутствует слово «Draw». В этом сценарии вы выясняете, что эти события Draw произошли:  
   
-     ![Список событий &#40; EL &#41; события рисования. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![Список событий &#40;EL&#41; события рисования. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  Перейдите к каждому событию Draw, следя за целевым объектом отрисовки на вкладке документа журнала графики.  
   
@@ -102,11 +100,11 @@ ms.lasthandoff: 12/22/2017
   
 6.  Изучите исходный код вычислительного шейдера для этапа вычисления сил. В этом сценарии вы определяете, что источник ошибки находится здесь.  
   
-     ![Отладка ForceCS &#95; Простой вычислительного шейдера. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![Отладка ForceCS&#95;простой вычислительного шейдера. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  После определения местоположения ошибки можно остановить отладку и изменить исходный код вычислительного шейдера, чтобы обеспечить правильное вычисление расстояния между взаимодействующими частицами. В этом сценарии вы просто меняете строку `float2 diff = N_position + P_position;` на `float2 diff = N_position - P_position;`:  
   
- ![Исправленный вычислений &#45; код шейдера. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![Исправленный вычислений&#45;код шейдера. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  В этом сценарии, поскольку вычислительные шейдеры компилируются во время выполнения, можно просто перезапустить приложение после внесения изменений, чтобы посмотреть, как они влияют на симуляцию. Повторять сборку приложения не нужно. При запуске приложения выясняется, что теперь симуляция работает правильно.  
   

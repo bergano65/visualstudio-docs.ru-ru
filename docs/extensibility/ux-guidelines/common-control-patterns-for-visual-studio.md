@@ -1,26 +1,24 @@
 ---
-title: "Общие шаблоны элементов управления для Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Общие шаблоны элементов управления для Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8383537a7e9d49f79e98da4dd95a3474803315d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Общие шаблоны элементов управления для Visual Studio
-##  <a name="BKMK_CommonControls"></a>Стандартные элементы управления  
+##  <a name="BKMK_CommonControls"></a> Стандартные элементы управления  
   
 ### <a name="overview"></a>Обзор  
 Стандартные элементы управления составляют большую часть пользовательского интерфейса в Visual Studio. Наиболее распространенных элементов управления, используемых в интерфейсе Visual Studio, должны соответствовать [рекомендации взаимодействие Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). В этом разделе относится только к Visual Studio и рассматриваются особые ситуации или сведения, которые расширяют эти рекомендации Windows.  
@@ -52,10 +50,10 @@ ms.lasthandoff: 12/22/2017
   
 -   **Инструментов, редакторы документов, рабочих областей конструирования и тематические диалоговых окон:** использовать специализированные теме внешний вид с помощью службы цвета.  
   
-###  <a name="BKMK_Scrollbars"></a>Полосы прокрутки  
+###  <a name="BKMK_Scrollbars"></a> Полосы прокрутки  
  Полосы прокрутки, должны соответствовать [полосы прокрутки Общие шаблоны взаимодействия для Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/bb787527\(v=vs.85\).aspx) , если только они все вместе со сведения о содержимом, как и в редакторе кода.  
   
-###  <a name="BKMK_InputFields"></a>Поля ввода  
+###  <a name="BKMK_InputFields"></a> Поля ввода  
  Поведение типичного взаимодействия выполните [Windows Desktop рекомендации для текстовых полей](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742442\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Визуальный стиль  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
   
      ![Исправьте длина поля ввода: поле ввода является разумного ширину для ожидаемого содержимого. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Исправьте длина поля ввода: поле ввода является разумного ширину для ожидаемого содержимого.
   
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a>Поля со списком и раскрывающиеся списки  
+###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Поля со списком и раскрывающиеся списки  
 Поведение типичного взаимодействия выполните [правила рабочего стола Windows раскрывающиеся списки и поля со списком](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Визуальный стиль  
@@ -94,7 +92,7 @@ ms.lasthandoff: 12/22/2017
   
 ![Правильный: в раскрывающемся списке подбирается для обеспечения возможности роста преобразования, но не излишне long. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Правильный: в раскрывающемся списке подбирается для обеспечения возможности роста преобразования, но не излишне long. 
   
-###  <a name="BKMK_CheckBoxes"></a>Флажки  
+###  <a name="BKMK_CheckBoxes"></a> Флажки  
 Поведение типичного взаимодействия выполните [Windows Desktop рекомендации для флажков](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Визуальный стиль  
@@ -113,7 +111,7 @@ ms.lasthandoff: 12/22/2017
   
      ![Правильный: флажок выравнивается с первой строки текста. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Правильный: флажок выравнивается с первой строки текста.
   
-###  <a name="BKMK_RadioButtons"></a>Переключатели  
+###  <a name="BKMK_RadioButtons"></a> Переключатели  
 Поведение типичного взаимодействия выполните [Windows Desktop правила для переключателей](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Визуальный стиль  
@@ -122,7 +120,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="specialized-interactions"></a>Специализированные взаимодействия  
 Использовать рамки группы для заключения вариантов переключатель, если не нужно поддерживать различие группы в макете тесной необязательно.  
   
-###  <a name="BKMK_GroupFrames"></a>Группа кадров  
+###  <a name="BKMK_GroupFrames"></a> Группа кадров  
 Поведение типичного взаимодействия выполните [Windows Desktop правила для группы кадры](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742405\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Визуальный стиль  
@@ -136,7 +134,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Иногда допустимо использовать горизонтальное правило вместо контейнера группы кадра.  
   
-##  <a name="BKMK_TextControls"></a>Текстовые элементы управления
+##  <a name="BKMK_TextControls"></a> Текстовые элементы управления
 
 ### <a name="static-text-fields"></a>Поля статического текста
 
@@ -217,7 +215,7 @@ ms.lasthandoff: 12/22/2017
 
 Если требуется, чтобы пользователи имели возможность скопировать сведения, динамический текст должен быть в поле текст только для чтения.
   
-##  <a name="BKMK_ButtonsAndHyperlinks"></a>Кнопки и гиперссылки  
+##  <a name="BKMK_ButtonsAndHyperlinks"></a> Кнопки и гиперссылки  
   
 ### <a name="overview"></a>Обзор  
 Элементы управления кнопок и ссылок (гиперссылки), должны соответствовать [основные рекомендации рабочего стола Windows, по гиперссылкам](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx) использования, известные слова, изменение размера и интервалов.  
@@ -331,11 +329,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Подчеркивание не должен отображаться при наведении указателя мыши. Вместо этого отзывы пользователю, что связь является активным является небольшие изменения и курсор соответствующую ссылку.  
   
-##  <a name="BKMK_TreeViews"></a>Представления в виде дерева  
+##  <a name="BKMK_TreeViews"></a> Представления в виде дерева  
   
 В древовидном представлении предоставляют способ организации сложных перечислены в родительско дочерние группы. Пользователь может развернуть или свернуть родительские группы для отображения или скрытия базового дочерних элементов. Каждый элемент в виде дерева можно выбрать для получения дополнительных действий.  
   
-###  <a name="BKMK_TreeViewVisualStyle"></a>Стиль визуального представления дерева  
+###  <a name="BKMK_TreeViewVisualStyle"></a> Стиль визуального представления дерева  
   
 #### <a name="expanders"></a>Расширитель  
 Элементы управления древовидного представления должны соответствовать expander проектирования, используемые Windows и Visual Studio. Каждый узел использует элемента управления expander для отображения или скрытия базовые элементы. Использование элемента управления expander обеспечивает согласованность для пользователей, которые могут возникнуть различные в древовидном представлении в Windows и Visual Studio.  
@@ -359,7 +357,7 @@ ms.lasthandoff: 12/22/2017
   
 ![И вертикальной и горизонтальной полосы прокрутки отображаются, так как содержимое превышен лимит элемента управления иерархического представления. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />И вертикальной и горизонтальной полосы прокрутки отображаются, так как содержимое превышен лимит элемента управления иерархического представления.
   
-###  <a name="BKMK_TreeViewInteractions"></a>Взаимодействие представление дерева  
+###  <a name="BKMK_TreeViewInteractions"></a> Взаимодействие представление дерева  
   
 #### <a name="context-menus"></a>Контекстные меню  
 Узла иерархического представления можно узнать, подменю параметры контекстного меню. Как правило это происходит, когда пользователь щелкнул правой кнопкой мыши элемент или нажата клавиша меню на клавиатуре Windows с выбранного элемента. Очень важно, что узел получает фокус и выбран. Это помогает пользователю определить, какой элемент принадлежит подменю.  

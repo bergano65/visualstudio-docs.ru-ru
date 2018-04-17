@@ -1,34 +1,30 @@
 ---
-title: "Службы Essentials | Документы Microsoft"
-ms.custom: 
+title: Службы Essentials | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>Essentials службы
-Служба представляет собой контракт между двумя пакеты VSPackage. Один пакет VSPackage предоставляет определенный набор интерфейсов для другого пакета VSPackage для использования. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]сам является коллекцию пакетов VSPackage, предоставляющий службы для других пакетов VSPackage.  
+Служба представляет собой контракт между двумя пакеты VSPackage. Один пакет VSPackage предоставляет определенный набор интерфейсов для другого пакета VSPackage для использования. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сам является коллекцию пакетов VSPackage, предоставляющий службы для других пакетов VSPackage.  
   
  Например можно использовать службу SVsActivityLog для получения интерфейса IVsActivityLog, который можно использовать для записи в журнал действий. Дополнительные сведения см. в разделе [как: использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]также предоставляет некоторые встроенные службы, которые не зарегистрированы. Пакеты VSPackage могут заменять встроенные или других служб, предоставляя переопределение службы. Для любой службы разрешена только одна служба переопределения.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также предоставляет некоторые встроенные службы, которые не зарегистрированы. Пакеты VSPackage могут заменять встроенные или других служб, предоставляя переопределение службы. Для любой службы разрешена только одна служба переопределения.  
   
  Службы имеют не возможность обнаружения. Таким образом необходимо знать идентификатор службы (SID) службы, которую требуется использовать, и необходимо знать, какие интерфейсы он предоставляет. В справочной документации для службы предоставляет эти сведения.  
   
@@ -70,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 Большинство служб Visual Studio можно получить путем вызова статического <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод.  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>использует кэшированные службе задан поставщик, который инициализируется первый раз, любой VSPackage на основе пакета. Необходимо гарантировать, что это условие выполнено, иначе наберитесь null службы.  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> использует кэшированные службе задан поставщик, который инициализируется первый раз, любой VSPackage на основе пакета. Необходимо гарантировать, что это условие выполнено, иначе наберитесь null службы.  
   
 К счастью <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> правильно работает в большинстве случаев.  
   

@@ -1,27 +1,23 @@
 ---
-title: "Данные документа и документа представление в редакторах | Документы Microsoft"
-ms.custom: 
+title: Данные документа и документа представление в редакторах | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb445ca70ac74cf2601e9f1035549bb686fca798
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Данные документа и представление документа в редакторах
 Пользовательский редактор состоит из двух частей: объект данных документа и объект представления документа. Как бы имена, объект данных документа представляет текстовые данные для отображения, а объект представления документа (или «view») — один или несколько периодов, в котором отображается объект данных документа.  
@@ -29,9 +25,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="document-data-object"></a>Объект данных документа  
  Объект данных документа является представлением данных текста в буфер текста. Это объект COM, сохраняет текст документа и другие сведения, обработки документа сохраняемости и включает несколько представлений данных. Дополнительные сведения см. в разделе .  
   
- <xref:EnvDTE80.Window2.DocumentData%2A>и [окна документов](../extensibility/internals/document-windows.md).  
+ <xref:EnvDTE80.Window2.DocumentData%2A> и [окна документов](../extensibility/internals/document-windows.md).  
   
- Пользовательские редакторы и конструкторы можно использовать <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объекта или собственные настраиваемые буфера. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>ниже упрощенная модель внедрения стандартного редактора, поддерживает несколько представлений и предоставляет интерфейсы событий, которые используются для управления несколькими представлениями.  
+ Пользовательские редакторы и конструкторы можно использовать <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объекта или собственные настраиваемые буфера. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ниже упрощенная модель внедрения стандартного редактора, поддерживает несколько представлений и предоставляет интерфейсы событий, которые используются для управления несколькими представлениями.  
   
 ## <a name="document-view-object"></a>Объект представления документа  
  Окно, отображающее код и текст называется документа представления или представления. При создании редактора, можно выбрать одно представление, в котором текст отображается в одном окне, или несколько представление, в котором отображается текст в несколько окон. Выбор зависит от приложения. Например при необходимости изменения side-by-side выбирается несколько представления. Каждое представление связан с элементом в интегрированной среды разработки (IDE) под управлением таблицы document (RDT). Представление windows принадлежит проекту или <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта.  

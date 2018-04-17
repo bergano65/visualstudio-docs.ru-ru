@@ -1,13 +1,10 @@
 ---
-title: "Страница публикации, конструктор (Разработка решений Office в Visual Studio) проекта | Документы Microsoft"
-ms.custom: 
+title: Страница публикации, конструктор (Разработка решений Office в Visual Studio) проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Страница публикации в конструкторе проектов (разработка для Office в Visual Studio)
   Страница **Публикация** в **конструкторе проектов** используется для настройки свойств развертывания.  
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  Возможные варианты расположения — локальный компьютер, общая папка UNC или веб-сайт HTTP/HTTPS. Путь может быть локальным (*c:\foldername\publishfolder*), относительным (*публикации\\*), или полным (*\\\servername\foldername* или http://*servername/foldername*).  
   
- Расположение публикации по умолчанию — *http://localhost/projectname/* , если установлены службы IIS, или каталог publish\, если службы IIS не установлены.  
+ По умолчанию — расположение публикации *http://localhost/projectname/* Если установлены службы IIS, или каталог publish\, если это сделать службы IIS не установлены.  
   
  **URL-адрес папки установки**  
  Необязательный.  

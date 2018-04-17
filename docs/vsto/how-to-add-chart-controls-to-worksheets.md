@@ -1,13 +1,10 @@
 ---
-title: "Как: Добавление элементов управления диаграммой на листы | Документы Microsoft"
-ms.custom: 
+title: 'Как: Добавление элементов управления диаграммой на листы | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ea64dc0f73d642d3d5ea7e693eda42c8d882c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d951b70566231db956ef8771b022937af5ee5807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления диаграммой на листы
   Элементы управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавлять на лист Microsoft Office Excel во время разработки и во время выполнения в настройках на уровне документа. Элементы управления <xref:Microsoft.Office.Tools.Excel.Chart> также можно добавлять во время выполнения в надстройках VSTO.  
@@ -40,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
  Дополнительные сведения о <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления, в разделе [элемент управления диаграммы](../vsto/chart-control.md).  
   
-##  <a name="designtime"></a>Добавление элементов управления диаграммы во время разработки  
+##  <a name="designtime"></a> Добавление элементов управления диаграммы во время разработки  
  Для добавления элемента управления <xref:Microsoft.Office.Tools.Excel.Chart> на лист можно использовать ту же процедуру, что и для добавления диаграммы в приложении.  
   
 > [!NOTE]  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  В **Выбор источника данных** диалоговое окно, нажмите кнопку **ОК**.  
   
-##  <a name="runtimedoclevel"></a>Добавление элементов управления диаграммы во время выполнения в проекте уровня документа  
+##  <a name="runtimedoclevel"></a> Добавление элементов управления диаграммы во время выполнения в проекте уровня документа  
  Элемент управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавлять динамически во время выполнения. При закрытии документа динамически созданные диаграммы не сохраняются в документе как элементы управления ведущего приложения. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Добавление элемента управления «Диаграмма» на лист программным образом  
@@ -70,7 +67,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
-##  <a name="runtimeaddin"></a>Добавление элементов управления диаграммы во время выполнения в проекте надстройки VSTO  
+##  <a name="runtimeaddin"></a> Добавление элементов управления диаграммы во время выполнения в проекте надстройки VSTO  
  Элемент управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавить программным образом на любой открытый лист в проекте надстройки VSTO. Для получения дополнительной информации см. [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
  При закрытии листа динамически созданные элементы управления «Диаграмма» не сохраняются в листе как элементы управления ведущего приложения. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -92,7 +89,7 @@ ms.lasthandoff: 01/10/2018
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Элемент управления диаграммы](../vsto/chart-control.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

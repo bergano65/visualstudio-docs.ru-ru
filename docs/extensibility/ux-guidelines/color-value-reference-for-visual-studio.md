@@ -1,24 +1,24 @@
 ---
-title: "Цвет ссылок значение для Visual Studio | Документы Microsoft"
-description: "Ссылка: Коды Hex для создания нового токены цветов в Visual Studio"
-keywords: "цвет, шестнадцатеричный код, цветового тона, теме пользовательского интерфейса, темы"
+title: Цвет ссылок значение для Visual Studio | Документы Microsoft
+description: 'Ссылка: Коды Hex для создания нового токены цветов в Visual Studio'
+keywords: цвет, шестнадцатеричный код, цветового тона, теме пользовательского интерфейса, темы
 author: brickgeorge
 ms.author: v-brickg
 ms.date: 08/04/2017
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: 
+ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-sdk
+manager: douge
+ms.workload:
+- v-brickg
+ms.openlocfilehash: 421fca16db2ed2792a539ead2ab46d325cee3a11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Справочник по значениям цвета для Visual Studio
 В этом разделе приведены справочные сведения по создания новый цвет маркеров. При создании нового пользовательского интерфейса, схожие цвета из существующего пользовательского интерфейса можно использовать для выбора цвета для каждой основной темы и имени системного цвета для этого элемента Контрастная темы. 
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 
 | | Светлая тема | Темная тема | "Голубой" теме | Высокая контрастность | 
 | --- | :---: | :---: | :---: | :---: |
-| По умолчанию | ![Образец #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 образца")<br />`#FFEEEEF2` |   ![Образец #FF2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 образца")<br />`#FF2D2D30` |  ![Образец #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 образца")<br />`#FFEEEEF2` |  ![Образец ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark палитры")<br />`ControlDark` |
+| Значение по умолчанию | ![Образец #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 образца")<br />`#FFEEEEF2` |   ![Образец #FF2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 образца")<br />`#FF2D2D30` |  ![Образец #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 образца")<br />`#FFEEEEF2` |  ![Образец ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark палитры")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Глиф развертывания
 
@@ -162,9 +162,9 @@ ms.lasthandoff: 12/22/2017
 | Фон: нажата | ![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br />`#FF007ACC` | ![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br />`#FF007ACC` | ![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br />`#FF007ACC` | ![Выделите образец](../../extensibility/ux-guidelines/media/HCHighlight.png "образец выделения")<br />`Highlight` |
 | Передний план: отключено | ![Образец #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 образца")<br />`#FFA2A4A5` | ![Образец #FF656565](../../extensibility/ux-guidelines/media/656565.png "#FF656565 образца")<br />`#FF656565` | ![Образец #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 образца")<br />`#FFA2A4A5` | ![Образец GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText палитры")<br />`GrayText` |
 | Фон: отключено | ![Образец #FFF5F5F5](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 образца")<br />`#FFF5F5F5` | ![Образец #FF252526](../../extensibility/ux-guidelines/media/252526.png "#FF252526 образца")<br />`#FF252526` | ![Образец #FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 образца")<br />`#FFF6F6F6` | ![Окно палитры](../../extensibility/ux-guidelines/media/HCWindow.png "окно палитры")<br />`Window` |
-| Граница: при наведении курсора мыши | ![Образец #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 образца")<br />`#FFC9DEF5` | ![Образец #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 образца")<br />`#FF3E3E40` |![Образец #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE палитры")<br /> `#FFFEFEFE` | ![Образец HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText палитры")<br />`HighlightText` |
-| Граница: нажата | ![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br />`#FF007ACC` | ![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br />`#FF007ACC` |![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br /> `#FF007ACC` | ![Образец HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText палитры")<br />`HighlightText` |
-| Граница: отключено | ![Образец #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB палитры")<br />`#FFCCCEDB` | ![Образец #FF434346](../../extensibility/ux-guidelines/media/434346.png "#FF434346 образца")<br />`#FF434346` | ![Образец #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 образца")<br />`#FFC6C6C6` | ![Образец WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame палитры")<br />`WindowFrame` |
+| Граница: при наведении курсора мыши | ![Образец #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 образца")<br />`#FFC9DEF5` | ![ Образец #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 образца")<br />`#FF3E3E40` |![Образец #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE палитры")<br /> `#FFFEFEFE` | ![Образец HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText палитры")<br />`HighlightText` |
+| Граница: нажата | ![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br />`#FF007ACC` | ![ Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br />`#FF007ACC` |![Образец #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC образца")<br /> `#FF007ACC` | ![Образец HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText палитры")<br />`HighlightText` |
+| Граница: отключено | ![Образец #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB палитры")<br />`#FFCCCEDB` | ![ Образец #FF434346](../../extensibility/ux-guidelines/media/434346.png "#FF434346 образца")<br />`#FF434346` | ![Образец #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 образца")<br />`#FFC6C6C6` | ![Образец WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame палитры")<br />`WindowFrame` |
 
 ## <a name="properties-grid-control-elements"></a>Элементы управления сетки свойств
 
@@ -309,7 +309,7 @@ ms.lasthandoff: 12/22/2017
 | Передний план (текст): при наведении курсора мыши | ![Образец #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E образца")<br />`#FF1E1E1E` | ![Образец #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF палитры")<br />`#FFFFFFFF` | ![Образец #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E образца")<br />`#FF1E1E1E` | ![Образец HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText палитры")<br />`HighlightText` |
 | Фон: при наведении курсора мыши | ![Образец #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 образца")<br />`#FFC9DEF5` | ![Образец #FF606060](../../extensibility/ux-guidelines/media/606060.png "#FF606060 образца")<br />`#FF606060` | ![Образец #FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF образца")<br />`#FFFDF4BF` | ![Выделите образец](../../extensibility/ux-guidelines/media/HCHighlight.png "образец выделения")<br />`Highlight` |
 | Передний план (текст): нажата | ![Образец #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF палитры")<br />`#FFFFFFFF` | ![Образец #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF палитры")<br />`#FFFFFFFF` | ![Образец #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF палитры")<br />`#FFFFFFFF` | ![Образец HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText палитры")<br />`HighlightText` |
-| Фон: нажата | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Выделите образец](../../extensibility/ux-guidelines/media/HCHighlight.png "образец выделения")<br />`Highlight` |
+| Фон: нажата | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![ Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Выделите образец](../../extensibility/ux-guidelines/media/HCHighlight.png "образец выделения")<br />`Highlight` |
 | Передний план (текст): выбранный | ![Образец #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF палитры")<br />`#FFFFFFFF` | ![Образец #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF палитры")<br />`#FFFFFFFF` | ![Образец #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF палитры")<br />`#FFFFFFFF` | ![Образец HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText палитры")<br />`HighlightText` |
 | Фон: выбранный | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Образец #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF образца")<br />`#FF3399FF` | ![Выделите образец](../../extensibility/ux-guidelines/media/HCHighlight.png "образец выделения")<br />`Highlight` |
 
@@ -340,7 +340,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > **Для сравнения только показаны образцы высокой контрастности.** Использование имени системного цвета для высокой контрастности пользовательского интерфейса и не используйте средство выбора цвета или пипетки на эти образцы. Высокая контрастность образцы в этом разделе отражают темы высокой контрастности № 1 в Windows. Цвета будут отличаться в других темах высокой контрастности.
 
-### <a name="default"></a>По умолчанию
+### <a name="default"></a>Значение по умолчанию
 
 | | Светлая тема | Темная тема | "Голубой" теме | Высокая контрастность | 
 | --- | :---: | :---: | :---: | :---: |
@@ -390,7 +390,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > **Для сравнения только показаны образцы высокой контрастности.** Использование имени системного цвета для высокой контрастности пользовательского интерфейса и не используйте средство выбора цвета или пипетки на эти образцы. Высокая контрастность образцы в этом разделе отражают темы высокой контрастности № 1 в Windows. Цвета будут отличаться в других темах высокой контрастности.
 
-### <a name="default"></a>По умолчанию
+### <a name="default"></a>Значение по умолчанию
 
 | | Светлая тема | Темная тема | "Голубой" теме | Высокая контрастность | 
 | --- | :---: | :---: | :---: | :---: |
@@ -398,7 +398,7 @@ ms.lasthandoff: 12/22/2017
 | Фон | ![Образец #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE палитры")<br />`#FEFEFE` | ![Образец #252526](../../extensibility/ux-guidelines/media/252526.png "#252526 образца")<br />`#252526` | ![Образец #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE палитры")<br />`#FEFEFE` | ![Образец элемента управления](../../extensibility/ux-guidelines/media/HCControl.png "управления палитры")<br />`Control` |
 | Border | ![Образец #717171](../../extensibility/ux-guidelines/media/717171.png "#717171 образца")<br />`#717171` | ![Образец #999999](../../extensibility/ux-guidelines/media/999999.png "#999999 палитры")<br />`#999999` | ![Образец #717171](../../extensibility/ux-guidelines/media/717171.png "#717171 образца")<br />`#717171` | ![Образец ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark палитры")<br />`ControlDark` |
 | Text | ![Образец #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E образца")<br />`#1E1E1E` | ![Образец #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 образца")<br />`#F1F1F1` | ![Образец #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E образца")<br />`#1E1E1E` | ![Образец ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText палитры")<br />`ControlText` |
-| Глиф | ![Образец](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E образца")<br />`#1E1E1E` | ![Образец #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 образца")<br />`#F1F1F1` | ![Образец #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E образца")<br />`#1E1E1E` | ![Образец ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText палитры")<br />`ControlText` |
+| Глиф | ![ Образец](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E образца")<br />`#1E1E1E` | ![Образец #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 образца")<br />`#F1F1F1` | ![Образец #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E образца")<br />`#1E1E1E` | ![Образец ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText палитры")<br />`ControlText` |
 
 ### <a name="disabled"></a>Отключено
 
@@ -447,7 +447,7 @@ ms.lasthandoff: 12/22/2017
 
 ### <a name="initial-appearance"></a>Исходный вид
 
-#### <a name="default"></a>По умолчанию
+#### <a name="default"></a>Значение по умолчанию
 
 | | Светлая тема | Темная тема | "Голубой" теме | Высокая контрастность | 
 | --- | :---: | :---: | :---: | :---: |
@@ -512,7 +512,7 @@ ms.lasthandoff: 12/22/2017
 | :---: | :---: | :---: | :---: |
 | ![По умолчанию внешний список раскрывающегося списка/со списком "светлой" темой](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.png "по умолчанию внешний список раскрывающегося списка/со списком "светлой" темой") | ![По умолчанию внешний вид списка раскрывающегося списка или списком в "темной" теме](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.dark.png "по умолчанию внешний вид списка раскрывающегося списка или списком в "темной" теме") | ![По умолчанию внешний вид списка раскрывающегося списка или списком в "голубой" теме](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.blue.png "по умолчанию внешний вид списка раскрывающегося списка или списком в "голубой" теме") | ![По умолчанию внешний вид списка раскрывающегося списка или списком в тему с высокой контрастностью](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.list.hc.png "внешний вид списка раскрывающегося списка или списком в высококонтрастную тему по умолчанию") |
 
-#### <a name="default"></a>По умолчанию
+#### <a name="default"></a>Значение по умолчанию
 
 | | Светлая тема | Темная тема | "Голубой" теме | Высокая контрастность | 
 | --- | :---: | :---: | :---: | :---: |

@@ -1,12 +1,10 @@
 ---
-title: "Общие сведения об объектной модели Excel | Документы Microsoft"
-ms.custom: 
+title: Общие сведения об объектной модели Excel | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel Object Model Overview
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  В этом разделе приводится краткий обзор объектной модели Excel. Ресурсы, где узнать больше о всей объектной модели Excel см. в разделе [использование документации по объектной модели Excel](#ExcelOMDocumentation).  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [как следует использовать обработчики событий в Excel 2007 надстройки?](http://go.microsoft.com/fwlink/?LinkID=130291), и [как формы для создания пузырек Диаграммы в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [как следует использовать обработчики событий в Excel 2007 надстройки?](http://go.microsoft.com/fwlink/?LinkID=130291), и [как формы для создания пузырьковой диаграммы в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>Доступ к объектам в проекте Excel  
  При создании нового проекта надстройки VSTO для Excel среда Visual Studio автоматически создает файл кода ThisAddIn.vb или ThisAddIn.cs. Доступ к объекту приложения можно получить с помощью свойства `Me.Application` или `this.Application`.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- Класс `Globals` в проекте можно использовать для получения доступа к объекту `ThisWorkbook`, `Sheet1`, `Sheet2` или `Sheet3` вне соответствующего класса. Дополнительные сведения см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md). В следующем примере вызывается <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> метод `Sheet1` независимо от того, размещен ли код в одном из `Sheet`  *n*  классы или `ThisWorkbook` класса.  
+ Класс `Globals` в проекте можно использовать для получения доступа к объекту `ThisWorkbook`, `Sheet1`, `Sheet2` или `Sheet3` вне соответствующего класса. Дополнительные сведения см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md). В следующем примере вызывается <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> метод `Sheet1` независимо от того, размещен ли код в одном из `Sheet` *n* классы или `ThisWorkbook` класса.  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio расширяет объект <xref:Microsoft.Office.Interop.Excel.Range>, предоставляя типы <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>. Эти типы обладают большинством функций объекта <xref:Microsoft.Office.Interop.Excel.Range>, а также новыми функциями, такими как возможность привязки данных и новые события. Дополнительные сведения см. в разделе [управления NamedRange](../vsto/namedrange-control.md) и [управления XmlMappedRange](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a>Использование документации по объектной модели Excel  
+##  <a name="ExcelOMDocumentation"></a> Использование документации по объектной модели Excel  
  Полные сведения об объектной модели Excel см. в справочнике по основной сборке взаимодействия (PIA) Excel и в справочнике по объектной модели VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Документация по основной сборке взаимодействия  
@@ -117,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Решения Excel](../vsto/excel-solutions.md)|Инструкции по созданию настроек уровня документа и надстроек VSTO для Microsoft Office Excel.|  
 |[Работа с диапазонами](../vsto/working-with-ranges.md)|Примеры выполнения стандартных задач с диапазонами.|  

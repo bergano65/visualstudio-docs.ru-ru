@@ -1,28 +1,26 @@
 ---
-title: "Макет для Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Макет для Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Макет для Visual Studio
 Большинство диалоговых окон Visual Studio [макет диалогового окна программы](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), которые являются unthemed диалоговые окна этого стандарта выполните [принципы макет диалогового окна Windows Desktop](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Перемещении обновить его пользовательского интерфейса Visual Studio более наглядными диалоговые окна есть новый макет, устанавливает их возможности, как определение продукта. Эти [тематический макет диалогового окна](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) имеют вид теме.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Макет диалогового окна программы  
+##  <a name="BKMK_UtilityDialogLayout"></a> Макет диалогового окна программы  
   
 -   Все элементы управления в диалоговое окно программы должны начинаются с верхнего левого и потока сверху вниз.  
   
@@ -104,7 +102,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Длина строки должна быть научились ширины для пользователя для синтаксического анализа и чтение. Средний диалоговое окно должно быть не более чем 550 пикселей в ширину.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Внутренний кнопки  
+####  <a name="BKMK_InteriorCommandButtons"></a> Внутренний кнопки  
  В более сложных диалоги внутреннего управления может иметь свой собственный связанных кнопок, что может повлиять на котором расположены кнопки фиксации в диалоговом окне.  
   
 -   Вертикальное выравнивание (столбец) внутреннюю кнопок, когда использование **ОК**/**отменить** ориентированы по горизонтали в правом нижнем углу.  
@@ -124,7 +122,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="browse-button"></a>[Обзор...] Кнопка  
  **[Обзор...]**  кнопок, выполните в текстовом поле должна описывать «Обзор …» в полном объеме, включая кнопку с многоточием. Если места не хватает пространства или имеется несколько **[Обзор...]**  кнопок на экране кнопку может быть сокращен до просто кнопку с многоточием.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Тематический макет диалогового окна  
+##  <a name="BKMK_ThemedDialogLayout"></a> Тематический макет диалогового окна  
  Тематические диалоговых окон в Visual Studio имеют вид светлее и предоставлять дополнительные пробелы. Типографская разметка предоставляет дополнительные выделения и интерес, предлагает более открыта межстрочный интервал и разновидность размеры шрифтов и веса. Если это возможно, chrome и строки состояния были ограниченной или удалены. Макет этих диалоговых окон должны следовать этому простому шаблону:  
   
 1.  Имеет белый фон диалогового окна.  

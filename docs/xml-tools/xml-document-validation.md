@@ -1,23 +1,21 @@
 ---
-title: "Проверка XML-документа | Документы Microsoft"
-ms.custom: 
+title: Проверка XML-документа | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c4be3c2f5428b7b2c246c1649a73ae8584ffe28e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e226590b31a7b6b96755199bdb93cd95d438f08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-document-validation"></a>Проверка XML-документа
 Редактор XML проверяет синтаксис XML 1.0, а также выполняет проверку правильности данных по мере их ввода. Редактор может выполнять проверку правильности с помощью определения типа документа (DTD) или схемы. Все ошибки формата XML 1.0 выделяются подчеркиванием красными волнистыми линиями. Синими волнистыми линиями подчеркиваются семантические ошибки, обнаруженные на основе проверки правильности по определению DTD или по схеме. Для каждой ошибки создается связанная с ней запись в списке ошибок. Также можно просмотреть сообщение об ошибке, удерживая указатель мыши над подчеркиванием волнистой линией.  

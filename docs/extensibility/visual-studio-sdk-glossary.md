@@ -1,27 +1,23 @@
 ---
-title: "Глоссарий Visual Studio SDK | Документы Microsoft"
-ms.custom: 
+title: Глоссарий Visual Studio SDK | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-glossary"></a>Глоссарий Visual Studio SDK
 Этот словарь содержит определения терминов, используемых в [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] документации.  
@@ -76,7 +72,7 @@ ms.lasthandoff: 12/22/2017
  Используется для обозначения к документу в целом — как `DocData` и `DocView`. Например, содержит DocumentFrame `DocView`, но он также сохраняет ссылку на `DocData` для обработки сохраняемости.  
   
  DocView  
- DocObject/Embedding или WindowPane с которой взаимодействует пользователь, для просмотра и управления базовый `DocData`. Обратите внимание, что пользователи не могут использовать разделения документов и представлений, который является частью `DocObject` интерфейса конструктора. Пользователям всего DocObject использоваться в качестве представления, а не с помощью более абстрактное (и менее документально оформленными принципами) представление о базовых данных, известных как `DocData`. `DocView`объекты всегда внедряются с объектами фрейма документа (дочерние окна MDI) интегрированной среды разработки.  
+ DocObject/Embedding или WindowPane с которой взаимодействует пользователь, для просмотра и управления базовый `DocData`. Обратите внимание, что пользователи не могут использовать разделения документов и представлений, который является частью `DocObject` интерфейса конструктора. Пользователям всего DocObject использоваться в качестве представления, а не с помощью более абстрактное (и менее документально оформленными принципами) представление о базовых данных, известных как `DocData`. `DocView` объекты всегда внедряются с объектами фрейма документа (дочерние окна MDI) интегрированной среды разработки.  
   
  DTE  
  `DTE` (Расширения средств разработки) объекта является точкой доступа верхнего уровня в модели автоматизации Visual Studio, который позволяет программно автоматизации и расширения интегрированной среды разработки.  

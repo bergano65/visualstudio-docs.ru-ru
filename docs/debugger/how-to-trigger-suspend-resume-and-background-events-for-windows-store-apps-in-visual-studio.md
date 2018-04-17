@@ -1,13 +1,10 @@
 ---
-title: "Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP | Документы Microsoft"
-ms.custom: 
+title: Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP | Документы Microsoft
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 33958dd97c4ca8958c4f96ebe84697f2953afa9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP в Visual Studio
 Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.  
@@ -83,11 +79,11 @@ ms.lasthandoff: 01/19/2018
   
     -   Для проектов Visual C# и Visual Basic выберите **Не запускать, а отлаживать мой код при открытии**.  
   
-         ![C# 35; &#47; Свойство отладки запуска приложения VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;VB свойство отладки запуска приложения](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   Для проектов JavaScript и Visual C++ выберите **Нет** из списка **Запустить приложение** .  
   
-         ![C# 43; #43; &#47; Свойство отладки запуска VB приложения](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;свойство отладки запуска VB приложения](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  Нажмите клавишу **F5** , чтобы перевести приложение в режим отладки. Обратите внимание, что в списке **Процесс** на панели инструментов **Место отладки** указывается имя пакета приложения, которое требуется указать в режиме отладки.  
   

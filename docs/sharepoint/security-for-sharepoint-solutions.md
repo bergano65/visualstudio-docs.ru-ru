@@ -1,12 +1,10 @@
 ---
-title: "Безопасность решений SharePoint | Документы Microsoft"
-ms.custom: 
+title: Безопасность решений SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6e9aff74a49f738f4a0ed0df68ffe2e9a5b33525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 471de3ab69a969f5153723658c628d659038c3a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-for-sharepoint-solutions"></a>Безопасность решений SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]включает в себя следующие возможности для повышения безопасности приложений SharePoint.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] включает в себя следующие возможности для повышения безопасности приложений SharePoint.  
   
 ## <a name="safe-control-entries"></a>Записи безопасных элементов управления  
  Каждый элемент проекта SharePoint, созданный в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеет **записи безопасных элементов управления** свойство, которое представляет безопасный коллекции элементов управления. Его **безопасном** вложенное свойство позволяет указать, безопасные элементы управления. Дополнительные сведения см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) и [указание безопасное веб-частей](http://go.microsoft.com/fwlink/?LinkId=177521).  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  *Внедрение скрипта* представляет вставку потенциально вредоносный код в элементы управления или веб-страниц. Для защиты сайтов SharePoint 2010 от внедрения скрипта участники невозможно просматривать и изменять веб-частей и их свойствам по умолчанию. Это поведение контролируется с помощью атрибута SafeControl вызывается SafeAgainstScript. В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], установите значение этого атрибута в элементе проекта **записи безопасных элементов управления** вложенное свойство **безопасен в отношении скриптов**. Дополнительные сведения см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) и [как: элементы управления пометить как безопасные элементы управления](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
   
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista и Windows 7 контроль учетных записей  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] встроенная функция безопасности управления учетных записей пользователей (UAC). Для разработки решений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] на [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] системах контроля учетных Записей необходимо запустить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] системный администратор. Из **запустить** меню, откройте контекстное меню для [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], а затем выберите **Запуск от имени администратора**.  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] встроенная функция безопасности управления учетных записей пользователей (UAC). Для разработки решений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] на [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] системах контроля учетных Записей необходимо запустить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] системный администратор. Из **запустить** меню, откройте контекстное меню для [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], а затем выберите **Запуск от имени администратора**.  
   
  Чтобы настроить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ярлык всегда Запуск от имени администратора, откройте ее контекстное меню, выберите **свойства**, выберите **Дополнительно** кнопку в **свойства**диалоговое окно, а затем выберите **Запуск от имени администратора** флажок.  
   

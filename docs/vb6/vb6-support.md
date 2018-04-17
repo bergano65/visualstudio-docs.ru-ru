@@ -1,8 +1,8 @@
 ---
-title: "Поддержка Visual Basic 6.0 оператор | Документы Microsoft"
+title: Поддержка Visual Basic 6.0 оператор | Документы Microsoft
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Информация о поддержке для Visual Basic 6.0 в Windows
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/09/2018
 - Windows Server 2012, включая R2
 - Windows Server 2008, включая R2
 
-Команды Visual Basic цель состоит в приложениях Visual Basic 6.0 продолжают работать в поддерживаемых версиях Windows. Как описано в этом документе выполнения core Visual Basic 6.0 будет поддерживается для полное время поддерживаемых версий Windows, который имеет пять лет Основная фаза поддержки следуют пять лет расширенной поддержки (http://support.microsoft.com/gp/lifepolicy). Поддержка панель будет сокращено до серьезных регрессий и важных проблемах безопасности для существующих приложений.
+Команды Visual Basic цель состоит в приложениях Visual Basic 6.0 продолжают работать в поддерживаемых версиях Windows. Как описано в этом документе, выполнения core Visual Basic 6.0 будет поддерживаться для полное время поддерживаемых версий Windows, который составляет пять лет Основная фаза поддержки следуют пять лет расширенной поддержки (http://support.microsoft.com/gp/lifepolicy). Поддержка панель будет сокращено до серьезных регрессий и важных проблемах безопасности для существующих приложений.
 
 ## <a name="technical-summary"></a>Технические сведения
 
@@ -73,8 +73,8 @@ Visual Basic 6.0 состоит из этих ключевых результа�
 
 Поддержка и/или доставки в поддерживаемых версиях Windows двоичных файлов среды выполнения Visual Basic 6.0 не изменить политику поддержки интегрированная среда разработки Visual Basic 6.0 или Visual Studio 6.0 IDE в целом. Эти продукты выходят из расширенной поддержкой 8 апреля 2008 г.
 
-Сведения о жизненном цикле поддержки продуктов корпорации Майкрософт можно найти на http://support.microsoft.com/gp/lifepolicy. В рамках этого жизненного цикла поддержки Майкрософт будет продолжать поддержки среды выполнения Visual Basic 6.0 в поддерживаемых версиях Windows для поддержки время существования этих операционных систем. Это означает, например, что среда выполнения Visual Basic 6.0 будет поддерживаться в Windows Server 2003 до июня 2008 г. для поддержки и июня 2013 г. для расширенной поддержки.
-Дополнительные сведения о жизненном цикле поддержки или подробные сведения о Дополнительные варианты поддержки посетите нашу страницу поддержки в http://www.microsoft.com/support.
+Сведения о жизненном цикле поддержки продуктов корпорации Майкрософт можно найти в http://support.microsoft.com/gp/lifepolicy. В рамках этого жизненного цикла поддержки Майкрософт будет продолжать поддержки среды выполнения Visual Basic 6.0 в поддерживаемых версиях Windows для поддержки время существования этих операционных систем. Это означает, например, что среда выполнения Visual Basic 6.0 будет поддерживаться в Windows Server 2003 до июня 2008 г. для поддержки и июня 2013 г. для расширенной поддержки.
+Для более подробные сведения о жизненном цикле поддержки или подробные сведения о других вариантах поддержки, посетите нашу страницу поддержки в http://www.microsoft.com/support.
 
 ## <a name="64-bit-windows"></a>64-разрядной версии Windows
 
@@ -149,7 +149,7 @@ Visual Basic 6.0 состоит из этих ключевых результа�
 
 
 > [!NOTE]
-> &#42;  Поддержка среды выполнения VB6 ограничивается жизненный цикл поддержки Windows.  Например если целевой ОС расширенная поддержка, VB6 не может иметь более высокий уровень поддержки, чем расширенная поддержка.  [Таблицы фактов жизненного цикла поддержки Windows](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) содержит жизненного цикла Дополнительные сведения о предыдущих и текущих версий Windows.
+> &#42;Поддержка среды выполнения VB6 ограничивается жизненный цикл поддержки Windows.  Например если целевой ОС расширенная поддержка, VB6 не может иметь более высокий уровень поддержки, чем расширенная поддержка.  [Таблицы фактов жизненного цикла поддержки Windows](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) содержит жизненного цикла Дополнительные сведения о предыдущих и текущих версий Windows.
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Использование среды выполнения Visual Basic 6.0 внутри VBA и Office
 
@@ -180,52 +180,52 @@ VBScript не связан с Visual Basic 6.0 и данное заявлени�
 | | | | |
 |---|---|---|---|
 |ATL.dll|         msadcor.dll|     msorcl32.dll|   ole2.dll|
-|asycfilt.dll|    msadcs.dll|      Msvbvm60.dll|   Ole32.dll|
-|comcat.dll|      msadds.dll|      msvcirt.dll|    oleaut32.dll|
-|версия|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
-|dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   Oledb32.dll|
-|dcomcnfg.exe|    Msado15.dll|     Mtxdm.dll|      oledb32r.dll|
-|dllhost.exe|     msador15.dll|    MtxOCI.dll|     oledlg.dll|
-|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
-|ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
-|expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
-|hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
-|Hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
-|imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
-|iprop.dll|       msdaosp.dll|     odbccr32.dll|   Secur32.dll|
+|Asycfilt.dll|    Msadcs.dll|      Msvbvm60.dll|   Ole32.dll|
+|Comcat.dll|      msadds.dll|      Msvcirt.dll|    Oleaut32.dll|
+|версия|     msaddsr.dll|     Msvcrt.dll|     Oleaut32.dll|
+|dbnmpntw.dll|    msader15.dll|    Msvcrt40.dll|   Oledb32.dll|
+|DCOMCNFG.exe|    Msado15.dll|     Mtxdm.dll|      oledb32r.dll|
+|Dllhost.exe|     msador15.dll|    MtxOCI.dll|     oledlg.dll|
+|Ds16gt.dll|      msadrh15.dll|    Odbc16gt.dll|   olepro32.dll|
+|ds32gt.dll|      mscpxl32.dll|    Odbc32.dll|     olethk32.dll|
+|expsrv.dll|      msdadc.dll|      Odbc32gt.dll|   Regsvr32.exe|
+|hh.exe|          Msdaenum.dll|    Odbcad32.exe|   rpcns4.dll|
+|Hhctrl.ocx|      msdaer.dll|      Odbccp32.cpl|   Rpcrt4.dll|
+|IMAGEHLP.dll|    MSDAORA.dll|     Odbccp32.dll|   Scrrun.dll|
+|iprop.dll|       msdaosp.dll|     ODBCCR32.dll|   Secur32.dll|
 |Itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
-|Itss.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
-|mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
-|Mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
-|mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   stdole32.tlb|
+|Itss.dll|        MSDAPS.dll|      odbcint.dll|    SQLOLEDB.dll|
+|mfc40.dll|       msdasc.dll|      odbcji32.dll|   Sqlsrv32.dll|
+|Mfc42.dll|       MSDASQL.dll|     odbcjt32.dll|   stdole2.tlb|
+|mfc42enu.dll|    msdasqlr.dll|    Odbctrac.dll|   stdole32.tlb|
 |msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   Storage.dll|
-|msadcer.dll|     msdatt.dll|      odexl32.dll|    vbajet32.dll|
-|msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
-|msadcfr.dll|     msdfmap.ini|     odpdx32.dll|                |
-|msadco.dll|      msjtes40.dll|    odtext32.dll|               |
+|msadcer.dll|     msdatt.dll|      odexl32.dll|    VBAJET32.dll|
+|msadcf.dll|      Msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
+|msadcfr.dll|     Msdfmap.ini|     odpdx32.dll|                |
+|Msadco.dll|      msjtes40.dll|    odtext32.dll|               |
 
 ## <a name="supported-runtime-files-to-distribute-with-your-application"></a>Поддерживаемые среды выполнения файлы для распространения с приложением
 
 | | | | |
 |---|---|---|---|
 |comct232.ocx |msbind.dll   |msdbrptr.dll  |msstdfmt.dll| 
-|comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |msstkprp.dll| 
-|comctl32.ocx |mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
-|COMDLG32.ocx |mscomct2.ocx |mshtmpgr.dll  |mswinsck.ocx| 
-|dbadapt.dll  |mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
-|dbgrid32.ocx |mscomm32.ocx |msmapi32.ocx  |richtx32.ocx| 
-|dblist32.ocx |msdatgrd.ocx |msmask32.ocx  |sysinfo.ocx|  
+|comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |Msstkprp.dll| 
+|Comctl32.ocx |Mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
+|COMDLG32.ocx |mscomct2.ocx |mshtmpgr.dll  |Mswinsck.ocx| 
+|dbadapt.dll  |MSCOMCTL.ocx |MSINET.ocx    |picclp32.ocx| 
+|dbgrid32.ocx |mscomm32.ocx |Msmapi32.ocx  |richtx32.ocx| 
+|dblist32.ocx |msdatgrd.ocx |Msmask32.ocx  |sysinfo.ocx|  
 |mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |tabctl32.ocx| 
-|msadodc.ocx  |msdatrep.ocx |msrdo20.dll
+|msadodc.ocx  |msdatrep.ocx |Msrdo20.dll
 
 ## <a name="unsupported-but-supported-and-compatible-updates-or-upgrades-are-available"></a>Не поддерживается, поддерживаемых и совместимый обновления доступны, но
 
 | | | | |
 |---|---|---|---|
 |dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
-|mdac_typ.exe| msexcl35.dll| msjtor35.dll| mstext35.dll|
-|mschart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
-|msdaerr.dll|  msjint35.dll| mspdox35.dll| odbctl32.dll|
+|Mdac_typ.exe| msexcl35.dll| msjtor35.dll| Mstext35.dll|
+|MSChart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
+|msdaerr.dll|  msjint35.dll| Mspdox35.dll| odbctl32.dll|
 |msdatl2.dll|  msjt4jlt.dll| msrd2x35.dll| oledb32x.dll|
 
 ## <a name="unsupported-runtime-files"></a>Файлы среды CLR не поддерживается
@@ -235,11 +235,11 @@ VBScript не связан с Visual Basic 6.0 и данное заявлени�
 |anibtn32.ocx| spin32.ocx|   rpcltscm.dll|  rdocurs.dll|
 |graph32.ocx|  gauge32.ocx|  rpcmqcl.dll|   vbar332.dll|
 |keysta32.ocx| gswdll32.dll| rpcmqsvr.dll|  visdata.exe|
-|autmgr32.exe| ciscnfg.exe|  rpcss.exe|     vsdbflex.srg|
-|autprx32.dll| olecnv32.dll| dbmsshrn.dll|  threed32.ocx|
+|autmgr32.exe| ciscnfg.exe|  RPCSS.exe|     vsdbflex.srg|
+|autprx32.dll| Olecnv32.dll| dbmsshrn.dll|  threed32.ocx|
 |racmgr32.exe| rpcltc1.dll|  dbmssocn.dll|  MSWLess.ocx|
 |racreg32.dll| rpcltc5.dll|  windbver.exe|  tlbinf32.dll|
-|grid32.ocx|   rpcltccm.dll| msderun.dll|   triedit.dll|
+|grid32.ocx|   rpcltccm.dll| msderun.dll|   TriEdit.dll|
 |msoutl32.ocx| rpclts5.dll|  odkob32.dll|
 
 ## <a name="localization-support-binaries"></a>Двоичные файлы для поддержки локализации

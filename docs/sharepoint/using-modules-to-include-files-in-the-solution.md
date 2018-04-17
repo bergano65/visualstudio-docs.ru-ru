@@ -1,12 +1,10 @@
 ---
-title: "Использование модулей для включения файлов в решении | Документы Microsoft"
-ms.custom: 
+title: Использование модулей для включения файлов в решении | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c7f0fff081215e1bf1a9e2c5320668f2c698b2e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Использование модулей для включения файлов в решение
   Могут возникнуть ситуации, когда требуется развернуть файлы на сервере SharePoint, независимо от их типа, например главные страницы. Чтобы сделать это, можно использовать *модули* (не следует путать с [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] модули кода). Модули являются контейнерами для файлов решения SharePoint. При развертывании решения файлы в модуле копируются в указанные папки на сервере SharePoint.  
@@ -44,14 +43,14 @@ ms.lasthandoff: 01/10/2018
   
  Новые модули содержат следующие файлы по умолчанию:  
   
-|Имя файла|Описание:|  
+|Имя файла|Описание|  
 |---------------|-----------------|  
 |Файл Elements.XML|Файл определения модуля.|  
 |Sample.txt|Файл-заполнитель, который служит в качестве примера файла в модуле.|  
   
  Файл Elements.xml содержит следующие элементы:  
   
-|Имя элемента|Описание:|  
+|Имя элемента|Описание|  
 |------------------|-----------------|  
 |Элементы|Содержит все элементы, определенные в модуле.|  
 |Module|Модуль элемент имеет один атрибут, *имя*, указывающий имя модуля в формате `<Module Name="Module1">`.<br /><br /> Обратите внимание, что если изменить имя модуля (или его *имя папки* свойства), необходимо вручную обновить имя в элементе Module.<br /><br /> Если указать вложенный каталог для файлов в элементе Module [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) автоматически создаст соответствующую структуру каталогов для них.|  

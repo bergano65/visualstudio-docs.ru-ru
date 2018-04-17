@@ -1,13 +1,10 @@
 ---
-title: "Написание кода в решениях Office | Документы Microsoft"
-ms.custom: 
+title: Написание кода в решениях Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Написание кода в решениях Office
   Написание кода в проектах Office и в проектах других типов в Visual Studio несколько отличается друг от друга. Многие из этих отличий связаны с тем, каким образом объектные модели Office предоставляются управляемому коду. Другие отличия связаны со структурой проектов Office.  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="understanding-primary-interop-assemblies"></a>Основные сведения об основных сборках взаимодействия  
  Приложения Microsoft Office предоставляют многие свои функциональные возможности для автоматизации. Однако непосредственно для автоматизации приложений Office управляемый код (например, Visual Basic или C#) использовать нельзя. Для автоматизации приложений Office с помощью управляемого кода необходимо использовать основные сборки взаимодействия (PIA) для Office. Основная сборка взаимодействия позволяет управляемому коду взаимодействовать с основанной на COM объектной моделью приложений Office.  
   
- Каждое приложение Microsoft Office имеет сборку PIA. При создании проекта Office в Visual Studio ссылка на соответствующую сборку PIA автоматически добавляется в проект. Чтобы автоматизировать функции других приложений Office из проекта, необходимо вручную добавить ссылку на соответствующую сборку PIA. Дополнительные сведения см. в разделе [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ Каждое приложение Microsoft Office имеет сборку PIA. При создании проекта Office в Visual Studio ссылка на соответствующую сборку PIA автоматически добавляется в проект. Чтобы автоматизировать функции других приложений Office из проекта, необходимо вручную добавить ссылку на соответствующую сборку PIA. Дополнительные сведения см. в разделе [Практическое руководство. Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 ### <a name="using-primary-interop-assemblies-at-design-time-and-run-time"></a>Использование основных сборок взаимодействия на этапе разработки и во время выполнения  
  Для выполнения большинства задач разработки необходимо, чтобы основные сборки взаимодействия Office были установлены и зарегистрированы в глобальном кэше сборок на компьютере разработчика. Для получения дополнительной информации см. [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Дополнительные сведения см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Рекомендации по пространству имен в решениях Office  
- После создания проекта *пространство имен по умолчанию* (или *корневое пространство имен* в Visual Basic) проекта Office изменить будет нельзя. Пространство имен по умолчанию будет всегда соответствовать имени проекта, указанному при создании проекта. Если проект переименовать, пространство имен по умолчанию изменено не будет. Дополнительные сведения о пространстве имен по умолчанию в проектах см. в разделе [&#40; страницы приложения, конструктор проектов C# 35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) и [&#40; страницы приложения, конструктор проектов Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ После создания проекта *пространство имен по умолчанию* (или *корневое пространство имен* в Visual Basic) проекта Office изменить будет нельзя. Пространство имен по умолчанию будет всегда соответствовать имени проекта, указанному при создании проекта. Если проект переименовать, пространство имен по умолчанию изменено не будет. Дополнительные сведения о пространстве имен по умолчанию в проектах см. в разделе [страницы приложения, конструктор проектов &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) и [страницы приложения, конструктор проектов &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Изменение пространства имен классов ведущих элементов в проектах C#  
  В проектах Office на Visual C# классы ведущих элементов (например, `ThisAddIn`, `ThisWorkbook`или `ThisDocument` ) имеют собственные пространства имен. По умолчанию пространство имен для ведущих элементов в проекте совпадает с именем проекта, которое было указано при создании проекта.  
@@ -107,25 +104,25 @@ ms.lasthandoff: 01/10/2018
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Основные различия между Visual Basic и Visual C#  
  В следующей таблице показаны основные различия между Visual Basic и Visual C# при разработке решений Office.  
   
-|Функция|Описание:|Поддержка Visual Basic|Поддержка Visual C#|  
+|Функция|Описание|Поддержка Visual Basic|Поддержка Visual C#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Необязательные параметры|Многие методы Microsoft Office имеют параметры, которые не являются обязательными при вызове метода. Если для параметра никакое значение не передается, используется значение по умолчанию.|Visual Basic поддерживает необязательные параметры.|Visual C# поддерживает необязательные параметры в большинстве случаев. Дополнительные сведения см. в разделе [необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Передача параметров по ссылке|В большинстве основных сборок взаимодействия Microsoft Office необязательные параметры могут передаваться по значению. Однако в некоторых основных сборках взаимодействия необязательные параметры, которые принимают ссылочные типы, должны передаваться по ссылке.<br /><br /> Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передача аргументов по значению и по ссылку &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передача параметров &#40; И &#35; Руководство по программированию &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Для передачи параметров по ссылке дополнительные действия не требуются. При необходимости компилятор Visual Basic автоматически передает параметры по ссылке.|В большинстве случаев компилятор Visual C# автоматически передает параметры по ссылке. Дополнительные сведения см. в разделе [необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Передача параметров по ссылке|В большинстве основных сборок взаимодействия Microsoft Office необязательные параметры могут передаваться по значению. Однако в некоторых основных сборках взаимодействия необязательные параметры, которые принимают ссылочные типы, должны передаваться по ссылке.<br /><br /> Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передача аргументов по значению и по ссылке &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передача параметров &#40;C&#35; Руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Для передачи параметров по ссылке дополнительные действия не требуются. При необходимости компилятор Visual Basic автоматически передает параметры по ссылке.|В большинстве случаев компилятор Visual C# автоматически передает параметры по ссылке. Дополнительные сведения см. в разделе [необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Параметризованные свойства|Некоторые свойства принимают параметры и действуют как функции только для чтения.|Visual Basic поддерживает свойства, принимающие параметры.|Visual C# поддерживаются свойства, принимающие параметры.|  
 |Позднее связывание|Позднее связывание подразумевает определение свойств объектов во время выполнения, а не приведение переменных к типу объекта во время разработки.|Visual Basic выполняет позднее связывание, если параметр **Option Strict** отключен. Если параметр **Option Strict** включен, для доступа к членам с поздним связыванием необходимо явным образом преобразовать объекты и использовать типы в пространстве имен <xref:System.Reflection> . Дополнительные сведения см. в разделе [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|Visual C# выполняет позднее связывание в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Дополнительные сведения см. в разделе [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|  
   
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Основные различия между разработкой для Office и управляемым кодом  
  В таблице ниже указаны основные различия между разработкой для Office и управляемым кодом, написанным на Visual Basic или Visual C#.  
   
-|Функция|Описание:|Поддержка Visual Basic и Visual C#|  
+|Функция|Описание|Поддержка Visual Basic и Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
-|Индексы массивов|Нижняя граница массива коллекций в приложениях Microsoft Office начинается с 1. Visual Basic и Visual C# используют массивы, которые начинаются с нуля. Дополнительные сведения см. в разделе [массивы &#40; И &#35; Руководство по программированию &#41; ](/dotnet/csharp/programming-guide/arrays/index) и [массивов в Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Для доступа к первому элементу коллекции в объектной модели приложения Microsoft Office используйте индекс 1 вместо 0.|  
+|Индексы массивов|Нижняя граница массива коллекций в приложениях Microsoft Office начинается с 1. Visual Basic и Visual C# используют массивы, которые начинаются с нуля. Дополнительные сведения см. в разделе [массивы &#40;C&#35; руководство по программированию&#41; ](/dotnet/csharp/programming-guide/arrays/index) и [массивов в Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Для доступа к первому элементу коллекции в объектной модели приложения Microsoft Office используйте индекс 1 вместо 0.|  
   
 ## <a name="see-also"></a>См. также  
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [События в проектах Office](../vsto/events-in-office-projects.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Практическое руководство. Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md)   
  [Совместная разработка решений Office](../vsto/collaborative-development-of-office-solutions.md)  

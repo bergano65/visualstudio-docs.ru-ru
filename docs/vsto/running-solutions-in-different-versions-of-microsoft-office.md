@@ -1,12 +1,10 @@
 ---
-title: "Запуск решений в различных версиях Microsoft Office | Документы Microsoft"
-ms.custom: 
+title: Запуск решений в различных версиях Microsoft Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - multiple Office versions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f39217b456694b7e611e0386cede9fdf3c11baf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e228f407edd38e173da78c092c0cca7061a661a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-solutions-in-different-versions-of-microsoft-office"></a>Запуск решений в различных версиях Microsoft Office
     
@@ -48,9 +47,9 @@ ms.lasthandoff: 01/10/2018
   
 |Выпуск Visual Studio, используемый для создания решения|Версия Office, используемая шаблоном проекта|Версии Office, где можно запускать решение|Необходимая среда выполнения на компьютере конечного пользователя|Требуемая версия .NET Framework на компьютере конечного пользователя|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
-|Visual Studio 2008 Professional<br /><br /> или<br /><br /> Visual Studio Team System 2008|Система Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> Система Microsoft Office 2007|Visual Studio 2010 Tools для Office Runtime<sup>1</sup><br /><br /> или<br /><br /> Набор средств Visual Studio для системы Microsoft Office (версия среды выполнения: 3.0)|.NET Framework 3,5|  
-|Один из следующих выпусков Visual Studio 2005 с VSTO 2005 SE<sup>2</sup> установлены:<br /><br /> — Visual Studio 2005 Tools for Office<br />— Visual Studio Team System 2005.<br />-Visual Studio 2005 Professional|Система Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (только 32-разрядная<sup>3</sup>)<br /><br /> Система Microsoft Office 2007|Среда выполнения набора средств Visual Studio 2005 для Office, второй выпуск|.NET Framework 2.0, .NET Framework 3.0 или .NET Framework 3.5|  
-|Любой из следующих выпусков Visual Studio:<br /><br /> -Visual Studio 2008 Professional<br />-Visual Studio Team System 2008<br />— Visual Studio 2005 Tools for Office (с или без VSTO 2005 SE<sup>2</sup> установлен)<br />-Visual Studio Team System 2005 (с или без VSTO 2005 SE<sup>2</sup> установлен)<br />— Visual Studio 2005 Professional с VSTO 2005 SE<sup>2</sup> установлен|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (только 32-разрядная<sup>3</sup>)<br /><br /> Система Microsoft Office 2007<br /><br /> Microsoft Office 2003|Среда выполнения набора средств Visual Studio 2005 для Office, второй выпуск|.NET Framework 2.0, .NET Framework 3.0 или .NET Framework 3.5|  
+|Visual Studio 2008 Professional<br /><br /> или<br /><br /> Visual Studio Team System 2008|Система Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> Система Microsoft Office 2007|Visual Studio 2010 Tools для Office Runtime<sup>1</sup><br /><br /> или<br /><br /> Набор средств Visual Studio для системы Microsoft Office (версия среды выполнения: 3.0)|.NET Framework 3,5|  
+|Один из следующих выпусков Visual Studio 2005 с VSTO 2005 SE<sup>2</sup> установлены:<br /><br /> — Visual Studio 2005 Tools for Office<br />— Visual Studio Team System 2005.<br />-Visual Studio 2005 Professional|Система Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (только 32-разрядная<sup>3</sup>)<br /><br /> Система Microsoft Office 2007|Среда выполнения набора средств Visual Studio 2005 для Office, второй выпуск|.NET Framework 2.0, .NET Framework 3.0 или .NET Framework 3.5|  
+|Любой из следующих выпусков Visual Studio:<br /><br /> -Visual Studio 2008 Professional<br />-Visual Studio Team System 2008<br />— Visual Studio 2005 Tools for Office (с или без VSTO 2005 SE<sup>2</sup> установлен)<br />-Visual Studio Team System 2005 (с или без VSTO 2005 SE<sup>2</sup> установлен)<br />— Visual Studio 2005 Professional с VSTO 2005 SE<sup>2</sup> установлен|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (только 32-разрядная<sup>3</sup>)<br /><br /> Система Microsoft Office 2007<br /><br /> Microsoft Office 2003|Среда выполнения набора средств Visual Studio 2005 для Office, второй выпуск|.NET Framework 2.0, .NET Framework 3.0 или .NET Framework 3.5|  
   
  1. Приложения [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] содержат среду выполнения набора средств Visual Studio 2010 для Office. Таким образом, в этом сценарии данные приложения всегда используют среду выполнения набора средств Visual Studio 2010 для Office, а не набор средств Visual Studio для системы Microsoft Office (версия среды выполнения: 3.0). Приложения в выпуске 2007 системы Microsoft Office могут использовать среду выполнения набора средств Visual Studio 2010 для Office или набор средств Visual Studio для системы Microsoft Office (версия среды выполнения: 3.0).  
   

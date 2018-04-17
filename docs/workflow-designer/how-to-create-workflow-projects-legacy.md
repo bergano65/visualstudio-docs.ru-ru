@@ -1,5 +1,5 @@
 ---
-title: "Как: Создание проектов рабочих процессов (для прежних версий) | Документы Microsoft"
+title: 'Как: Создание проектов рабочих процессов (для прежних версий) | Документы Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc38c6b323ee06ed9b312811eb892e7654134d05
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Как создавать проекты рабочих процессов (для прежних версий)
 Выполните следующие шаги для создания проекта [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], ориентированного на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Эта процедура использует конструктор прежних версий рабочего процесса Windows, предоставляемые [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  Запустите [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)].
 
-2.  На **файл** последовательно выберите пункты **New**, а затем выберите **проекта**.
+2.  В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
 
      Откроется диалоговое окно **Новый проект** .
 

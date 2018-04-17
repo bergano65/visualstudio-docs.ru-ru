@@ -1,27 +1,25 @@
 ---
-title: "Страницы свойств | Документы Microsoft"
-ms.custom: 
+title: Страницы свойств | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1b08e210a57388d77859600c02c0e6a30a404884
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages"></a>Страницы свойств
 Пользователи просматривать и изменять зависящие от конфигурации и - независимые свойства проекта с помощью страниц свойств. Объект **страницы свойств** кнопка включена в **свойства** окне или на панели инструментов обозревателя решений для объектов, предоставляющих вид страницы свойств для выбранного объекта. Страницы свойств создаются средой и доступны для проектов и решений. Они тем не менее, также могут быть доступны только для элементов проекта, которые делают используйте свойств в зависимости от конфигурации. Эта возможность может использоваться, если файлы в проекте требуют параметров компилятора коммутатора создано правильно.  
@@ -50,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
  Категории отображаются в категории верхнего уровня представляет страницу отдельные свойства. Категории и подкатегории записи, доступные в диалоговом окне определяются путем реализации `ISpecifyPropertyPages` и `IVsPropertyPage`.  
   
- `IDispatch`объекты для элементов в контейнере выделения, которые имеют свойства, который будет отображаться на страницах Реализуйте свойство `ISpecifyPropertyPages` для перечисления списка идентификаторов класса. Идентификаторы класса передаются как переменные в `ISpecifyPropertyPages` и используются для создания экземпляра страницы свойств. Список идентификаторов класса также передается `IVsPropertyPage` для создания древовидной структуры в левой части диалогового окна. Страницы свойств, а затем передайте сведения обратно в `IDispatch` объект, реализующий `ISpecifyPropertyPages` и вводит информацию для каждой страницы.  
+ `IDispatch` объекты для элементов в контейнере выделения, которые имеют свойства, который будет отображаться на страницах Реализуйте свойство `ISpecifyPropertyPages` для перечисления списка идентификаторов класса. Идентификаторы класса передаются как переменные в `ISpecifyPropertyPages` и используются для создания экземпляра страницы свойств. Список идентификаторов класса также передается `IVsPropertyPage` для создания древовидной структуры в левой части диалогового окна. Страницы свойств, а затем передайте сведения обратно в `IDispatch` объект, реализующий `ISpecifyPropertyPages` и вводит информацию для каждой страницы.  
   
  Свойства объекта обзора можно получить с помощью `IDispatch` для каждого объекта в контейнере выделения.  
   
@@ -73,11 +71,11 @@ ms.lasthandoff: 12/22/2017
   
      Можно указать проект или проекты из решения страница свойств, которая будет запускаться при нажатии пользователем клавиши F5 или выбирает в меню Построение выполнения. Эта процедура работает так же, как старый активного проекта, в том смысле, что его имя отображается в обозревателе решений с полужирным шрифтом.  
   
-     Запускаемый проект как свойство в модели автоматизации можно получить путем вызова `DTE.Solution.SolutionBuild.StartupProjects`. В пакете VSPackage, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> методы. `IVsSolutionBuildManager`доступен как служба с `QueryService` на SID_SVsSolutionBuildManager. Дополнительные сведения см. в разделе [объект конфигурации проекта](../../extensibility/internals/project-configuration-object.md) и [конфигурации решения](../../extensibility/internals/solution-configuration.md).  
+     Запускаемый проект как свойство в модели автоматизации можно получить путем вызова `DTE.Solution.SolutionBuild.StartupProjects`. В пакете VSPackage, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> методы. `IVsSolutionBuildManager` доступен как служба с `QueryService` на SID_SVsSolutionBuildManager. Дополнительные сведения см. в разделе [объект конфигурации проекта](../../extensibility/internals/project-configuration-object.md) и [конфигурации решения](../../extensibility/internals/solution-configuration.md).  
   
 -   Конфигурации построения активного решения  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]имеется активная конфигурация решения, доступные в модели автоматизации, реализовав `DTE.Solution.SolutionBuild.ActiveConfiguration`. Конфигурация решения является коллекция, содержащая одну конфигурацию проекта для каждого проекта в решении (каждый проект может иметь несколько конфигураций на нескольких платформах с разнородными именами). Дополнительные сведения, относящиеся к страницы свойств решения см. в разделе [конфигурации решения](../../extensibility/internals/solution-configuration.md).  
+     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имеется активная конфигурация решения, доступные в модели автоматизации, реализовав `DTE.Solution.SolutionBuild.ActiveConfiguration`. Конфигурация решения является коллекция, содержащая одну конфигурацию проекта для каждого проекта в решении (каждый проект может иметь несколько конфигураций на нескольких платформах с разнородными именами). Дополнительные сведения, относящиеся к страницы свойств решения см. в разделе [конфигурации решения](../../extensibility/internals/solution-configuration.md).  
   
 -   Выбранный проект  
   

@@ -1,27 +1,25 @@
 ---
-title: "Ресурсы в пакетах VSPackage | Документы Microsoft"
-ms.custom: 
+title: Ресурсы в пакетах VSPackage | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-in-vspackages"></a>Ресурсы в пакетах VSPackage
 Локализованные ресурсы можно внедрять в собственном вспомогательные библиотеки DLL пользовательского интерфейса, управляемого вспомогательные библиотеки DLL, или в управляемом VSPackage сам.  
@@ -85,7 +83,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Примечания по реализации  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]задержки загрузки пакетов VSPackage, когда это возможно. Вследствие того, что внедрения файла CTO в VSPackage является то, что [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] необходимо загружать такие пакеты VSPackage в памяти во время установки, являющийся при построении таблицы объединенные команд. Ресурсы можно извлечь из пакетов VSPackage с помощью проверки метаданных без выполнения кода в пакете VSPackage. VSPackage не инициализирован в данный момент сводится к минимуму снижение производительности.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] задержки загрузки пакетов VSPackage, когда это возможно. Вследствие того, что внедрения файла CTO в VSPackage является то, что [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] необходимо загружать такие пакеты VSPackage в памяти во время установки, являющийся при построении таблицы объединенные команд. Ресурсы можно извлечь из пакетов VSPackage с помощью проверки метаданных без выполнения кода в пакете VSPackage. VSPackage не инициализирован в данный момент сводится к минимуму снижение производительности.  
   
  Когда [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] запросы ресурс из VSPackage после установки, он скорее всего, уже загружены и инициализации, поэтому сводится к минимуму снижение производительности.  
   

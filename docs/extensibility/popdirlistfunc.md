@@ -2,28 +2,24 @@
 title: POPDIRLISTFUNC | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8503afb26ec8dc244db39dff5bddcc6d3b733896
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 44a11e6edc9666fcd7614d467a2c9ffaa86b4365
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Функция обратного вызова, присвоенное [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) функции, чтобы обновить коллекцию для каталогов и (необязательно) имена файлов, чтобы узнать, что в системе управления версиями.  
@@ -53,7 +49,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение  
  Интегрированная среда разработки возвращается код соответствующее сообщение об ошибке:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
 |SCC_I_OPERATIONCANCELED|Останавливает обработку.|  

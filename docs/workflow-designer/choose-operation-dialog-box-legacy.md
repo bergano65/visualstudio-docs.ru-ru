@@ -1,5 +1,5 @@
 ---
-title: "Выберите диалоговое окно «операция» (для прежних версий) | Документы Microsoft"
+title: Выберите диалоговое окно «операция» (для прежних версий) | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: bc3ec902-7797-494e-af48-e70c97eb6779
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2d26d97fd147ea39e8d074ea65f4a4121f9be71
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 5b4bd8318c4b10dab878ffd96667ce7057e653ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Диалоговое окно «Выбор операции» (для прежних версий)
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/12/2018
 
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **выбрать операцию** диалоговое окно.
 
-|Элемент пользовательского интерфейса|Описание:|
+|Элемент пользовательского интерфейса|Описание|
 |----------------|-----------------|
 |**Добавление контракта**|Создает новый контракт. В этом контракте можно задать новые операции. (Применяется только с объектом класса <xref:System.Workflow.Activities.ReceiveActivity>.)|
 |**Операция добавления**|Добавляет новый контракт, который был создан в новые операции **выбрать операцию** диалоговое окно. **Примечание:** новые операции можно добавлять только в контракты, которые созданы посредством **выбрать операцию** диалоговое окно. <br /><br /> (Применяется только с объектом класса <xref:System.Workflow.Activities.ReceiveActivity>.)|

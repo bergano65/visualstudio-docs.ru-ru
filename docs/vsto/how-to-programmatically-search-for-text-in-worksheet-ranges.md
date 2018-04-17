@@ -1,12 +1,10 @@
 ---
-title: "Как: программный поиск текста в диапазонах листа | Документы Microsoft"
-ms.custom: 
+title: 'Как: программный поиск текста в диапазонах листа | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - text searches, worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 42c95ab26437ad590d457ad926db6e070a7c8de0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2749834f459085b8d182b58f12a4c372f7493cba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Практическое руководство. Программный поиск текста в диапазонах ячеек на листе
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет искать текст в диапазоне. Этот текст также может иметь строки ошибок, которые могут присутствовать в ячейку листа, таких как `#NULL!` или `#VALUE!`. Дополнительные сведения о строках ошибок см. в разделе [значения ячеек ошибки](http://msdn.microsoft.com/library/office/ff839168.aspx).  

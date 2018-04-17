@@ -1,5 +1,5 @@
 ---
-title: "Как: Создание консольного приложения рабочего процесса конечного автомата (для прежних версий) | Документы Microsoft"
+title: 'Как: Создание консольного приложения рабочего процесса конечного автомата (для прежних версий) | Документы Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d345afcddaae2e3a139fbf7861b78f57774ead6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bc38466c29bbe88202561daf5ee9097367040310
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Как создать консольные приложения рабочих процессов конечных автоматов (для прежних версий)
 Выполните следующие действия для создания проекта консольного приложения рабочего процесса состояния компьютера с помощью прежних версий, предоставляемые конструктора рабочих процессов Windows [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  Запустите Visual Studio.
 
-2.  На **файл** последовательно выберите пункты **New**, а затем выберите **проекта**.
+2.  В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
 
      Откроется диалоговое окно **Новый проект** .
 

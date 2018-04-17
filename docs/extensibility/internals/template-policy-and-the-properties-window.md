@@ -1,32 +1,28 @@
 ---
-title: "Шаблон политики и окне «Свойства» | Документы Microsoft"
-ms.custom: 
+title: Шаблон политики и окне «Свойства» | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 759864533aa5bd3455a4e01c6642817107abb1a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-policy-and-the-properties-window"></a>Шаблон политики и окне «Свойства»
 Когда проект содержится внутри шаблона корпоративного проекта, что корпоративный проект шаблона могут применять политику. Шаблон политики становится ограничивающий системы, для которого можно задать значения по умолчанию для свойств, скрытие свойств, Добавление свойств и так далее.  
   
- С помощью шаблона политики для управления отображением данных в **свойства** окно отличается от реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>обрабатывает свойства объекта на уровне компонентов, хотя шаблона политики можно использовать для ограничения свойств объекта на уровне решения или проекта. Другими словами  
+ С помощью шаблона политики для управления отображением данных в **свойства** окно отличается от реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> обрабатывает свойства объекта на уровне компонентов, хотя шаблона политики можно использовать для ограничения свойств объекта на уровне решения или проекта. Другими словами  
   
 -   Реализуйте методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> для определения того, что должно отображаться в **свойства** окна для конкретных объектов  
   

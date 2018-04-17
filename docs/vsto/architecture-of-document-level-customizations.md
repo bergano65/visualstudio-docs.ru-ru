@@ -1,13 +1,10 @@
 ---
-title: "Архитектура настроек на уровне документа | Документы Microsoft"
-ms.custom: 
+title: Архитектура настроек на уровне документа | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>Архитектура настроек на уровне документа
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] является частью настроек на уровне документа для Microsoft Office Word и Microsoft Office Excel. В этой статье описываются следующие аспекты надстроек уровня документа.  
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Общие сведения о создании настроек уровня документа см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md), [Приступая к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), и [Приступая к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+ Общие сведения о создании настроек уровня документа см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Приступая к работе программирование настроек на уровне документа для Word ](../vsto/getting-started-programming-document-level-customizations-for-word.md), и [Приступая к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Understanding Customizations  
  При использовании инструментов разработчика Office в Visual Studio для построения настройки уровня документа вы создаете сборку управляемого кода, связанную с определенным документом. Документ или книга со связанной сборкой называются имеющими расширения управляемого кода. Для получения дополнительной информации см. [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md).  
   
  Когда пользователь открывает документ, сборка загружается приложением Microsoft Office. После загрузки сборки настройка может отвечать на события при открытом документе. Настройка также может обращаться к объектной модели для автоматизации и расширения приложения при открытом документе и использовать любой из классов в [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- Сборка взаимодействует с COM-компонентами приложения посредством основной сборки взаимодействия приложения. Дополнительные сведения см. в разделе [основных сборках взаимодействия Office](../vsto/office-primary-interop-assemblies.md) и [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Сборка взаимодействует с COM-компонентами приложения посредством основной сборки взаимодействия приложения. Дополнительные сведения см. в разделе [основных сборках взаимодействия Office](../vsto/office-primary-interop-assemblies.md) и [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Если пользователь открывает несколько настроек уровня документа в одно и то же время, то каждая сборка загружается в отдельном домене приложения. Это означает, что некорректное поведение одного решения не может привести к сбою других решений. Настройки уровня документа предназначены для работы с одним документом в одном домене приложений. Они не предназначены для взаимодействия между документами. Дополнительные сведения о доменах приложений см. в разделе [домены приложений](/dotnet/framework/app-domains/application-domains).  
   

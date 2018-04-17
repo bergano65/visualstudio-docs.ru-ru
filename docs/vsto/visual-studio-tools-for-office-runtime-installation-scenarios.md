@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio Tools for Office сценарии установки среды выполнения | Документы Microsoft"
-ms.custom: 
+title: Visual Studio Tools for Office сценарии установки среды выполнения | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, installation scenarios
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c63f5e4cef88ed927326b69f1fa389e34b06c8b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f5671f078d6650842c704437ce04a625a4fcb944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office Runtime Installation Scenarios
   Установку среды выполнения набора средств Visual Studio 2010 для Office можно выполнять на трех разных этапах:  

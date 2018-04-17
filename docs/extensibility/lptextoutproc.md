@@ -1,13 +1,10 @@
 ---
-title: "LPTEXTOUTPROC | Документы Microsoft"
-ms.custom: 
+title: LPTEXTOUTPROC | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 235d98ba6a5ca665857b8a18db5ca823ecc0c7c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Когда пользователь выполняет операцию системы управления версиями из внутри интегрированной среды разработки (IDE), подключаемый модуль системы управления версиями может потребоваться передачи ошибка или состояние сообщения, относящиеся к работе. Подключаемый модуль может отображать свой собственный окон сообщений, для этой цели. Однако для более прозрачную интеграцию, подключаемый модуль можно передать строки в интегрированную среду разработки, которая затем отображает их в его собственном способ отображения сведений о состоянии. — Это механизм `LPTEXTOUTPROC` указатель функции. IDE реализует эту функцию, (более подробно ниже) для отображения ошибок и состояний.  
@@ -51,7 +47,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  Тип сообщения. В следующей таблице перечислены поддерживаемые значения для этого параметра.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Сообщение считается сведения, предупреждение или ошибка.|  
 |`SCC_MSG_STATUS`|Сообщение отображается состояние и могут отображаться в строке состояния.|  
@@ -65,7 +61,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|Отображается строка или операция выполнена успешно.|  
 |SCC_MSG_RTN_CANCEL|Пользователю необходимо отменить операцию.|  
@@ -75,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Структуры  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a>SccMsgDataIsCancelled  
+###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp  
 typedef struct {  
@@ -85,7 +81,7 @@ typedef struct {
   
  Эта структура передается со `SCC_MSG_BACKGROUND_IS_CANCELLED` сообщения. Он используется для связи ID фоновых операций, который был отменен.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a>SccMsgDataOnBeforeGetFile  
+###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp  
 typedef struct {  
@@ -96,7 +92,7 @@ typedef struct {
   
  Эта структура передается со `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` сообщения. Он используется для связи, имя файла будет извлекаться и идентификатор фоновых операций, который выполняет извлечение.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a>SccMsgDataOnAfterGetFile  
+###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp  
 typedef struct {  
@@ -108,7 +104,7 @@ typedef struct {
   
  Эта структура передается со `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` сообщения. Он используется для обмена данными результат извлечения указанного файла, а также идентификатор фоновых операций, который выполнял извлечение. Увидеть возвращаемые значения для [SccGet](../extensibility/sccget-function.md) для учитывая то, что в результате.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a>SccMsgDataOnMessage  
+###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  

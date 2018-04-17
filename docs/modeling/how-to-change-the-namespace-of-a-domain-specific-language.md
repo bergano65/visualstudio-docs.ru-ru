@@ -1,23 +1,21 @@
 ---
-title: "Как: изменить пространство имен доменного языка | Документы Microsoft"
-ms.custom: 
+title: 'Как: изменить пространство имен доменного языка | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 468cf24ccb16452c93583b2aa99af560d920bcf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0e05aaf6d8049aa780b9b00843ca8382463f1c31
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Практическое руководство. Изменение пространства имен доменного языка
 Можно изменить пространство имен доменного языка. Необходимо внести изменения в **обозреватель DSL**, в свойствах проекта Dsl пакета и сведения о сборке.  
@@ -48,7 +46,7 @@ ms.lasthandoff: 02/09/2018
   
 10. Сброс в экспериментальном экземпляре Visual Studio.  
   
-    1.  Delete **\Users\\***{your name}***\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1.  Удалить **\Users\\***{имя}***\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2.  В ОС Windows **запустить** меню, выберите **все программы**, **Microsoft Visual Studio 2010 SDK**, **средства**, **сброса Экспериментальный экземпляр**.  
   

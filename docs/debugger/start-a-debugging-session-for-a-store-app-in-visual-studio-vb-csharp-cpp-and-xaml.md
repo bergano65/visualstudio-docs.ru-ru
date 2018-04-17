@@ -1,12 +1,10 @@
 ---
-title: "Запуск сеанса отладки для приложений UWP в Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Запуск сеанса отладки для приложений UWP в Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 01/04/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -34,16 +32,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 667fa5294f813a59425516e7e6d97177ca681365
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Запуск сеанса отладки для приложений UWP в Visual Studio
   
@@ -76,10 +74,10 @@ ms.lasthandoff: 01/19/2018
 |**Локальный компьютер**|Отладка приложения в текущем сеансе на локальном компьютере.|  
 |**Имитатор**|Отладка приложения в имитаторе Visual Studio для приложений UWP. Имитатор представляет окно на рабочем столе, которое позволяет отлаживать функциональные возможности устройства, такие как сенсорный ввод и поворот устройства —, могут быть недоступны на локальном компьютере. Этот параметр доступен, только если ваше приложение **Минимальная версия целевой. Версия** меньше или равно операционной системы на компьютере разработки. В разделе [UWP запуска приложений в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Удаленный компьютер**|Отладка приложения на устройстве, подключенном к локальному компьютеру по интрасети или подсоединенном с помощью кабеля Ethernet напрямую. Для удаленной отладки инструменты удаленной отладки для Visual Studio должны быть установлены и запущены на удаленном устройстве. В разделе [приложений UWP, запустите на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
-|**Device**|Отладка приложения на USB-устройством. Устройство должно быть разблокировано разработчика и разблокировать текста на экране.|  
+|**Устройство**|Отладка приложения на USB-устройством. Устройство должно быть разблокировано разработчика и разблокировать текста на экране.|  
 |**Эмулятор мобильных устройств**|Загрузки эмулятор с конфигурацией, указанной в поле имя эмулятора, развернуть приложение и запустить отладку. Эмуляторы доступны только на машинах Hyper-V включен.|  
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Выберите дополнительные параметры отладки  
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Выберите дополнительные параметры отладки  
 
 Если необходимо настроить дополнительные параметры отладки, откройте страницу свойств для проекта.
   
@@ -89,11 +87,11 @@ ms.lasthandoff: 01/19/2018
   
     -   В Visual C# и Visual Basic выберите **Отладка**.  
   
-         ![И &#35; &#47; Страница свойств отладки проекта VB](../debugger/media/dbg_csvb_debugpropertypage.png)  
+         ![C&#35; &#47; странице свойств отладки проекта VB](../debugger/media/dbg_csvb_debugpropertypage.png)  
   
     -   В Visual C++ и JavaScript разверните **свойства конфигурации** узел и выберите **Отладка**.  
   
-         ![C# 43; &#43; Страницы свойств отладки приложения UWP](../debugger/media/dbg_cpp_debugpropertypage.png)  
+         ![C&#43; &#43; страница свойств отладки приложения UWP](../debugger/media/dbg_cpp_debugpropertypage.png)  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Выбор отладчика  
 По умолчанию Visual Studio выполняет отладку управляемого кода в приложениях C# и Visual Basic. В приложениях C# и Visual Basic можно выбрать отладку управляемого и машинного кода C/C++. В приложениях C++ Visual Studio отлаживает машинный код по умолчанию. В приложениях JavaScript Visual Studio выполняет отладку сценария по умолчанию. 
@@ -179,11 +177,11 @@ ms.lasthandoff: 01/19/2018
   
 Запуск установленного приложения в отладчике, выберите **отладки**, затем **другие целевые объекты отладки**, а затем **отлаживать установленный пакет приложения**. Дополнительные инструкции см. в разделе [отладки пакета установленного приложения](../debugger/debug-installed-app-package.md).
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Присоединить отладчик к выполняемому приложению UWP  
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Присоединить отладчик к выполняемому приложению UWP  
 
 Для отладки выполняющегося приложения UWP, выберите **отладки**, затем **другие целевые объекты отладки**, а затем **отлаживать установленный пакет приложения**. Дополнительные инструкции см. в разделе [отладки пакета установленного приложения](../debugger/debug-installed-app-package.md).
   
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Присоединить отладчик к выполняемому приложению Windows 8.x
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Присоединить отладчик к выполняемому приложению Windows 8.x
  Чтобы подключить отладчик к приложению [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , нужно воспользоваться диспетчером отлаживаемых пакетов и настроить приложение на выполнение в режиме отладки. Диспетчер отлаживаемых пакетов устанавливается вместе с инструменты удаленной отладки для Visual Studio.  
   
  Подключение отладчика к приложению полезно, когда требуется отладить уже установленное приложение, например приложение, устанавливаемое из [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]. Подключение необходимо, когда имеются исходные файлы приложения, но отсутствует проект Visual Studio для приложения. Например, установлена специальная система построений, в которой не используются проекты и решения Visual Studio.  

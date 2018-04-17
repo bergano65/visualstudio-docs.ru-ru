@@ -1,5 +1,5 @@
 ---
-title: "Конструктор прежних версий для Windows Workflow Foundation Справка по пользовательскому Интерфейсу | Документы Microsoft"
+title: Конструктор прежних версий для Windows Workflow Foundation Справка по пользовательскому Интерфейсу | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: b3a0104f-4485-45ac-9794-82d54e45fb09
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1eca03c08776206de3ba6706205736a52dfc9e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bf5aa9e108113abe1e26226027e27a3867e28a61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation
 Этот раздел содержит разделы контекстной справки прежних версий конструктора рабочих процессов Windows в [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Используйте конструктор прежних версий, если приложение ориентируется на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

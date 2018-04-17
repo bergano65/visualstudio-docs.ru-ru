@@ -1,34 +1,30 @@
 ---
-title: "Источник функции API подключаемого модуля управления | Документы Microsoft"
-ms.custom: 
+title: Источник функции API подключаемого модуля управления | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: beaab13c76b3d50f97662e66c1f72dc83161e96d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a834c4352ea2444c2669a57f760ed373999b07dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля управления источника
 API подключаемых модулей исходный элемент управления предоставляет следующие функции, которые должны реализовывать системы управления версиями в соответствии с этот API. Подписи каждой функции и семантику, связанные с битовые флаги и другие параметры описаны в этой справке.  
   
 ## <a name="initialization-and-housekeeping-functions"></a>Инициализация и вспомогательные функции  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Закрывает проект.|  
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Запрашивает пользователя для настройки дополнительных параметров для данной команды.|  
@@ -40,7 +36,7 @@ API подключаемых модулей исходный элемент уп
   
 ## <a name="core-source-control-functions"></a>Основные функции управления источника  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccAdd](../extensibility/sccadd-function.md)|Добавляет массив имен полный путь для системы управления версиями, заданные файлы.|  
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Позволяет пользователю для поиска файлов, которые уже находятся в системе управления версиями, а затем сделайте эти файлы частью текущего проекта.|  
@@ -62,7 +58,7 @@ API подключаемых модулей исходный элемент уп
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Функции, которые поддерживают дополнительные возможности (версия 1.2 API-интерфейса подключаемого модуля управления источника)  
  Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.2 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций управления исходным кодом и возможности.  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Запускает пакетную операцию.|  
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Создает подпроект с заданным именем в существующий проект родительского.|  
@@ -76,7 +72,7 @@ API подключаемых модулей исходный элемент уп
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Функции, поддерживающие расширенные возможности (версия 1.3 API-интерфейса подключаемого модуля управления источника)  
  Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.3 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций управления исходным кодом и возможности.  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |--------------|-----------------|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Добавляет список файлов из системы управления версиями в текущий проект.|  
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Возвращает список файлов из системы управления версиями без пользовательского интерфейса.|  

@@ -1,12 +1,10 @@
 ---
-title: "Создание страниц для SharePoint | Документы Microsoft"
-ms.custom: 
+title: Создание страниц для SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - page layouts[SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4b65c601d36dd04d95466fc8f8dff7a95b70c44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f484c0501cbeede5600a4831d3d872ac81b3b5c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-pages-for-sharepoint"></a>Создание страниц для SharePoint
   Можно создать страницы приложений, страниц сайта, главных страниц и макетов страниц для сайта SharePoint.  
@@ -37,7 +36,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="types-of-sharepoint-pages"></a>Типы страниц SharePoint  
  В следующей таблице описаны четыре основных типа страниц, которые содержит сайт SharePoint.  
   
-|Тип страницы|Описание:|  
+|Тип страницы|Описание|  
 |---------------|-----------------|  
 |Страницы приложения|Создание страницы приложения страницу, чтобы содержать пользовательский код или страницу можно было использовать на нескольких сайтах. В противном случае страницу сайта может быть лучшим вариантом.|  
 |Страницы сайта|Создание страницы сайта, если необходимо выполнить следующие действия:<br /><br /> -Добавьте страницу в библиотеке SharePoint.<br />-Включите страницы, чтобы узел функции, такие как динамический веб-части и зоны веб-частей.<br />-Пользователи могли настроить страницу с помощью SharePoint Designer.<br /><br /> Не создавать страницу сайта, если страница содержит пользовательский код. Несмотря на то, что пользовательский код можно добавить на страницу сайта, код не будет выполняться, когда пользователь настраивает страницы с помощью SharePoint Designer.|  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Описание процедуры добавления страниц приложений: содержимое .aspx, объединенное с главной страницей SharePoint.|  
 |[Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)|Показано, как создавать страницы ASP.NET, которые выполняются на сайте SharePoint.|  

@@ -1,12 +1,10 @@
 ---
-title: "Параметры для конфигурации отладки C++ проекта | Документы Microsoft"
-ms.custom: 
+title: Параметры для конфигурации отладки C++ проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
 - VC.Project.IVCGPUDebugPageObject.EnvironmentMerge
@@ -111,16 +109,16 @@ helpviewer_keywords:
 - pdb files, debug build project settings
 - /MAP linker option
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
-caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2a18ec0d33ce66d62b71aedb4d15ef4273df957f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Параметры проекта для конфигурации отладки C++
 Можно изменить параметры проекта для конфигурации отладки C или Visual C++ в **страницы свойств** диалоговое окно, как описано в [как: задать отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком **страницы свойств** диалоговое окно.  
@@ -158,19 +156,19 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="cc-folder-general-category"></a>Папка "C/C++" (категория "Общие")  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |-------------|-----------------|  
 |**Формат отладочной информации** ([/Z7, / Zd, Zi, /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format))|Указывает тип отладочных данных, создаваемых для проекта.<br /><br /> По умолчанию установлен формат /ZI, означающий создание базы данных программы (PDB) в формате, совместимом с операцией "Изменить и продолжить". Дополнительные сведения см. в разделе [/Z7, / Zd, / Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format).|  
   
 ## <a name="cc-folder-optimization-category"></a>Папка "C/C++" (категория "Оптимизация")  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |-------------|-----------------|  
 |**Optimization**|Указывает, должен ли компилятор оптимизировать создаваемый им код. При оптимизации исполняемый код изменяется. Оптимизированный код не совпадает в точности с исходным кодом. Это усложняет отладку.<br /><br /> Параметр по умолчанию (**отключено (/ 0d**) отключает оптимизацию. Можно производить разработку при отключенной оптимизации и включить оптимизацию только при создании рабочей версии программы.|  
   
 ## <a name="linker-folder-debugging-category"></a>Папка "Компоновщик" (категория "Отладка")  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |-------------|-----------------|  
 |**Создать отладочную информацию** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|Указывает компоновщику необходимость включать сведения, формат которых задается ключом /Z7, /Zd, Zi или /ZI.|  
 |**Создавать файл базы данных программы** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|В этом поле вводится имя PDB-файла. Должен быть выбран формат отладочной информации ZI или /Zi.|  

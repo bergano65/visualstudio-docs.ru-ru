@@ -1,27 +1,23 @@
 ---
-title: "Пошаговое руководство: Отображение кратких сведений подсказки | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Отображение кратких сведений подсказки | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81974967094d238f12141ad7cd31bcc8015b9633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Пошаговое руководство: Отображение подсказок кратких сведений
 Краткие сведения является функцией IntelliSense, отображающий сигнатуры методов и описания, когда пользователь перемещает указатель на имя метода. Функции, основанный на языке, например кратких сведений можно реализовать путем определения идентификаторов, для которых требуется предоставить описания кратких сведений и создания всплывающей подсказки, в которой для отображения содержимого. Кратких сведений можно определить в контекст языковой службы, можно определить тип имени собственного файла расширения и содержимое и отображение кратких сведений для только этот тип или кратких сведений можно отобразить для существующего типа содержимого (например, «текст»). В этом пошаговом руководстве демонстрируется отображение кратких сведений для типа содержимого «text».  

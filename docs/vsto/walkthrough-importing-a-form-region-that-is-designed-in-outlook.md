@@ -1,13 +1,10 @@
 ---
-title: "Пошаговое руководство: Импорт области формы, разработанной в Outlook | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Импорт области формы, разработанной в Outlook | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8a6abfd5c09194fe9fb37f05a50d874c0239cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7823284096894dce54d0ba83b4aec0027a76fe97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Пошаговое руководство. Импорт области формы, созданной в Outlook
   В этом пошаговом руководстве демонстрируется создание области формы в Microsoft Office Outlook, а также ее импорт в проект надстройки Outlook VSTO с помощью мастера **Создать область формы** . Создание области формы в Outlook позволяет добавить собственные элементы управления Outlook в область формы, связанную с данными Outlook. После импорта области формы можно обрабатывать события каждого элемента управления.  

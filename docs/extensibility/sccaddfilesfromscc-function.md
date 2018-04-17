@@ -1,29 +1,25 @@
 ---
-title: "Функция SccAddFilesFromSCC | Документы Microsoft"
-ms.custom: 
+title: Функция SccAddFilesFromSCC | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd53307323b1db4d5fa9e5407c3a0516f1187f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc42a7be878ce52f4d951171c6b5cb08e195d564
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfilesfromscc-function"></a>Функция SccAddFilesFromSCC
 Эта функция добавляет список файлов из системы управления версиями в настоящее время открытый проект.  
@@ -75,10 +71,10 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|Проект не открыт.|  
-|SCC_E_OPNOTPERFORMED|Соединение не в том же проекте, в соответствии с`lpAuxProjPath.`|  
+|SCC_E_OPNOTPERFORMED|Соединение не в том же проекте, в соответствии с `lpAuxProjPath.`|  
 |SCC_E_NOTAUTHORIZED|Пользователь не авторизован для обновления базы данных.|  
 |SCC_E_NONSPECIFICERROR|Произошла неизвестная ошибка.|  
 |SCC_I_RELOADFILE|Файл или проект должен быть перезагружен.|  

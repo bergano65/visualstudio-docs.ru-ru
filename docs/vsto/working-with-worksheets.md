@@ -1,12 +1,10 @@
 ---
-title: "Работа с листами | Документы Microsoft"
-ms.custom: 
+title: Работа с листами | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], common tasks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 61dd449c4e495f5bf70f14f4295526d4a2dc3fec
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f7e55b281c2b6ba571e9d0b33f355b99f6b2f53f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-worksheets"></a>Работа с листами
   Классы <xref:Microsoft.Office.Tools.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Worksheet> содержат методы и свойства, применяемые для выполнения задач с листами.  

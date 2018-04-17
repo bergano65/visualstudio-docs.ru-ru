@@ -1,27 +1,23 @@
 ---
-title: "Пошаговое руководство: Отображение парные фигурные скобки | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Отображение парные фигурные скобки | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 370340246cd75e53580d1ac2b6c591f0854cb23e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Пошаговое руководство: Отображение парные фигурные скобки
 Можно реализовать функции, основанный на языке, например парные фигурные скобки, определив фигурные скобки, который должен соответствовать и добавив парные фигурные скобки тег текстовой метки, когда курсор находится на одном из фигурные скобки. Фигурные скобки можно определить в контексте языка, можно определить тип имени собственного файла расширения и содержимое и применяются только к этому типу теги или теги можно применить к существующему типу содержимого (например, «текст»). Следующего пошагового руководства демонстрируется применение парные фигурные скобки теги с типом содержимого «text».  

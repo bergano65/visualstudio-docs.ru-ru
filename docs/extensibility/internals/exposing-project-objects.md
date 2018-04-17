@@ -1,26 +1,24 @@
 ---
-title: "Предоставление доступа к объектам проекта | Документы Microsoft"
-ms.custom: 
+title: Предоставление доступа к объектам проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project objects, exposing
 - extensibility, project objects
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4eaa2a5e8c5c153698069084b9f0cfe406cad7db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-project-objects"></a>Предоставление доступа к объектам в проекте
 Пользовательский проект типы могут предоставлять объекты автоматизации, чтобы разрешить доступ к проекту с помощью интерфейсов автоматизации. Каждый тип проекта должен предоставлять стандартные <xref:EnvDTE.Project> объект автоматизации, к которому осуществляется из <xref:EnvDTE.Solution>, которое содержит коллекцию всех проектов, которые открыты в Интегрированной среде разработки. Каждый элемент в проекте должен предоставляться <xref:EnvDTE.ProjectItem> объект, к которому с `Project.ProjectItems`. Помимо этих объектов автоматизации standard проектов можно выбрать объекты автоматизации проектов предложения.  

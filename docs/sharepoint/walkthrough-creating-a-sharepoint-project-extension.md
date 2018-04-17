@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание расширения проекта SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание расширения проекта SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Пошаговое руководство. Создание расширения проекта SharePoint
   В этом пошаговом руководстве показано, как создавать расширения для проектов SharePoint. Можно использовать расширение проекта реагировать на события на уровне проекта, например, когда проект добавлена, удалена или переименована. Также можно добавлять пользовательские свойства или реагировать на них при изменении значения свойства. В отличие от расширений элемента проекта расширения проекта нельзя связать с определенным типом проекта SharePoint. При создании расширения проекта это расширение загружается при открытии любого проекта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  В **имя** введите **Расширение_проекта**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **Расширение_проекта** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **Расширение_проекта** в решение проект и открывает файл кода по умолчанию Class1.  
   
 5.  Удалите файл Class1 код из проекта.  
   
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  В **обозревателе решений**, откройте контекстное меню Файл source.extension.vsixmanifest и выберите **откройте** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Открывает файл в конструкторе манифеста. Сведения, отображаемые в **метаданные** также отображается вкладка **расширения и обновления**. Все пакеты VSIX требуется файл extension.vsixmanifest. Дополнительные сведения об этом файле см. в разделе [ссылки 1.0 схемы расширения VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Открывает файл в конструкторе манифеста. Сведения, отображаемые в **метаданные** также отображается вкладка **расширения и обновления**. Все пакеты VSIX требуется файл extension.vsixmanifest. Дополнительные сведения об этом файле см. в разделе [ссылки 1.0 схемы расширения VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  В **название продукта** введите **настраиваемое свойство проекта**.  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Запустите отладочную сборку проекта, выбрав **F5** ключа или выберите в строке меню, выберите **отладки**, **начать отладку**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Устанавливает расширение для %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 проекта и запускает экспериментальный экземпляр [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Устанавливает расширение для %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 проекта и запускает экспериментальный экземпляр [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 3.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], создайте проект для решения фермы SharePoint и использовать значения по умолчанию для других значений в мастере.  
   

@@ -1,23 +1,21 @@
 ---
-title: "Кэш схемы | Документы Microsoft"
-ms.custom: 
+title: Кэш схемы | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Кэш схем
 XML Editor предоставляет кэш схем, расположенный в каталоге %InstallRoot%\Xml\Schemas. Кэш схем - общий для всех пользователей компьютера и включает стандартные XML-схемы, используемые для поддержки технологии IntelliSense и проверки правильности XML-документа.  
@@ -30,20 +28,20 @@ XML Editor предоставляет кэш схем, расположенны�
 |--------------|-----------------|  
 |catalog.xsd|Схема для файлов каталога схем редактора XML. Сведения о каталоге схем см. ниже.|  
 |DotNetConfig.xsd|Схема для файлов Web.Config, «http://schemas.microsoft.com/.NETConfiguration/v2.0».|  
-|msbuild.xsd|Схема для сборочных файлов программы MSBuild, «http://schemas.microsoft.com/developer/msbuild/2003».|  
+|msbuild.xsd|Схема для файлов MSBuild, «http://schemas.microsoft.com/developer/msbuild/2003».|  
 |msdata.xsd|Схема для XSD-аннотаций, добавленных классом <xref:System.Data.DataSet>, «urn:schemas-microsoft-com:xml-msdata».|  
 |msxsl.xsd|Схема для расширений блоков скриптов XSLT (Майкрософт), urn:schemas-microsoft-com:xslt.|  
 |SnippetFormat.xsd|Схема для файлов фрагментов кода XML. Например, см. %InstallDir%\VC#\Expansions.|  
-|Soap1.1.xsd|Схема для протокола SOAP 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
+|Soap1.1.xsd|Схема для протокола SOAP (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
 |Soap1.2.xsd|Схема для протокола SOAP 1.2.|  
-|SiteMapSchema.xsd|Схема для XML-файла карты узла ASP.NET, «http://schemas.microsoft.com/AspNet/SiteMap-File-1.0».|  
-|wsdl.xsd|Схема для языка описания веб-служб (WSDL), http://schemas.xmlsoap.org/wsdl/.|  
-|xenc.xsd|Схема для шифрования XML, http://www.w3.org/2000/09/xmldsig#.|  
-|xhtml.xsd|Схема для XHTML, http://www.w3.org/1999/xhtml.|  
+|SiteMapSchema.xsd|Схема для XML-файл карты веб-узла ASP.NET, «http://schemas.microsoft.com/AspNet/SiteMap-File-1.0».|  
+|wsdl.xsd|Схема для языка описания веб-служб, http://schemas.xmlsoap.org/wsdl/.|  
+|xenc.xsd|Схема для XML-шифрования http://www.w3.org/2000/09/xmldsig#.|  
+|xhtml.xsd|Схема для XHTML http://www.w3.org/1999/xhtml.|  
 |xlink.xsd|Схема для XLink1.0, http://www.w3.org/1999/xlink.|  
-|xml.xsd|Схема, описывающая атрибуты xml:space и xml:lang, http://www.w3.org/XML/1998/namespace.|  
-|xmlsig.xsd|Схема для цифровых сигнатур XML, http://www.w3.org/2000/09/xmldsig#.|  
-|xsdschema.xsd|Схема, описывающая сам язык XSD, http://www.w3.org/2001/XMLSchema.|  
+|xml.xsd|Схема, описывающая атрибуты XML: space и XML: lang, http://www.w3.org/XML/1998/namespace.|  
+|xmlsig.xsd|Схема для цифровых подписей XML http://www.w3.org/2000/09/xmldsig#.|  
+|xsdschema.xsd|Схема, описывающая XSD, http://www.w3.org/2001/XMLSchema.|  
 |xslt.xsd|Схема для преобразований XML, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Обновление схем в кэше  

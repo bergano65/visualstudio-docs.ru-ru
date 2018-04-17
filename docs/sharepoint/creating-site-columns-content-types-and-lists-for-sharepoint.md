@@ -1,12 +1,10 @@
 ---
-title: "Создание столбцов сайта, типов содержимого и списков для SharePoint | Документы Microsoft"
-ms.custom: 
+title: Создание столбцов сайта, типов содержимого и списков для SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.ContentTypeSetting
 - VS.SharePointTools.ContentTypeDesigner.CommonPropertiesPage
@@ -20,13 +18,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6f6ca2ad09bd41206873045f9eeb26b5e590a049
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1025884bb23290c616a42a8cbbdcbad1d5814b67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Создание столбцов сайта, типов содержимого и списков для SharePoint
   Visual Studio предоставляет шаблоны элементов проекта для различных основных элементов SharePoint, включая *перечислены* и *типы содержимого*, которые могут включать столбцы сайтов (или  *поля*). Конструкторы для новых типов содержимого и списков позволяют создать эти элементы проще, чем когда-либо.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Показывает способы создания столбцов сайта, используемые в пользовательском типе содержимого. Тип содержимого затем используется в пользовательском списке.|  
   

@@ -3,8 +3,7 @@ title: Константы интегрированной среды разраб
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -14,17 +13,16 @@ helpviewer_keywords:
 - IDE, constants
 - physical views
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0184cd4654f07b407a12ca12f0ff9da39c9ec890
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: e9c7e870b02dbe5a903ca8195954ffd5a8f63549
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-constants"></a>Константы интегрированной среды разработки
 
@@ -47,7 +45,7 @@ ms.lasthandoff: 03/28/2018
 |-----------|-----------------|
 |[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Устаревшие флаг побитового первого параметра вместе <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метод.|
 |[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, метод, это указывает фабрику редактора должен выполнить необходимые исправления.|
-|[CEF.OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метода, этот флаг имеет взаимно exclusive [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
+|[CEF. OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метода, этот флаг имеет взаимно exclusive [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
 |[CEF. Автоматическая](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> , это указывает фабрики редакторов следует создать редактор без отображения пользовательского интерфейса (UI).|
 
 ## <a name="visual-studio-errors"></a>Ошибки в Visual Studio
@@ -76,8 +74,8 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для широковещательной рассылки сообщения уведомления через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает конец модальность.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для широковещательной рассылки сообщения уведомления через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, указывающее, что метрики командной строки были изменены.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , указывающее, что файл cookie не задано.|
-|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, которое представляет отсутствующий элемент проекта. Это значение используется в том случае, если нет текущего выделенного фрагмента.|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет корень иерархии проекта и используется для идентификации всей иерархии, в отличие от одного элемента.|
+|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, которое представляет отсутствующий элемент проекта. Это значение используется в том случае, если нет текущего выделенного фрагмента.|
+|[VSITEMID. Корень](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет корень иерархии проекта и используется для идентификации всей иерархии, в отличие от одного элемента.|
 |[VSITEMID. Выделенный фрагмент](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет текущий выбранный элемент или элементы, которые могут включать корень иерархии.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents

@@ -1,13 +1,10 @@
 ---
-title: "Обновление и перенос решений Office | Документы Microsoft"
-ms.custom: 
+title: Обновление и перенос решений Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - migrating Office solutions in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 920fc096072cb4304e76ca8171d52d3e40caeb3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Обновление и перенос решений Office
   Если проект Microsoft Office был создан в более ранней версии Visual Studio, его необходимо обновить для использования в текущей версии Visual Studio. Чтобы обновить проект Microsoft Office, откройте его в версии Visual Studio, имеющей в своем составе инструменты разработчика Microsoft Office. Дополнительные сведения о версиях Visual Studio, имеющих инструменты разработчика Microsoft Office см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -91,7 +88,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Обновление решений Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)   
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Перенос решений Office на платформу .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Обновление проекта. Диалоговое окно "Параметры"](../vsto/project-upgrade-options-dialog-box.md)  
   
   

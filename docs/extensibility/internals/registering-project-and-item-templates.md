@@ -1,12 +1,10 @@
 ---
-title: "Регистрация шаблонов проектов и элементов | Документы Microsoft"
-ms.custom: 
+title: Регистрация шаблонов проектов и элементов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85c22d0191d015979dff5a4845c4dda0af96ee60
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-project-and-item-templates"></a>Регистрация шаблонов проектов и элементов
-Типы проектов необходимо зарегистрировать каталоги, где находятся их шаблонов проектов и элементов проектов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]использует сведения о регистрации, связанные с типами проектов, чтобы определить, что для отображения в **Добавление нового проекта** и **Добавление нового элемента** диалоговым окнам.  
+Типы проектов необходимо зарегистрировать каталоги, где находятся их шаблонов проектов и элементов проектов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использует сведения о регистрации, связанные с типами проектов, чтобы определить, что для отображения в **Добавление нового проекта** и **Добавление нового элемента** диалоговым окнам.  
   
  Дополнительные сведения о шаблонах см. в разделе [Добавление проекта и шаблоны элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Имя по умолчанию для проектов этого типа.|  
 |DisplayName|REG_SZ|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован пакетов.|  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Идентификатор ресурса для шаблонов добавить элемент.|  
 |TemplatesDir|REG_SZ|Путь проекта элементов, отображаемых в диалоговом окне **Добавление нового элемента** мастера.|  
@@ -86,7 +84,7 @@ ms.lasthandoff: 12/22/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Тип|Описание:|  
+|name|Тип|Описание|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **поиск в файлах** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, не помечен как общий.|  
 |CommonOpenFilesFilter|REG_DWORD|Создает фильтр, один из распространенных фильтров в **открыть файл** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, не помечен как общий.|  

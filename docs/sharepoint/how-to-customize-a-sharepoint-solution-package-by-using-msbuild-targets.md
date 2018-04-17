@@ -1,13 +1,10 @@
 ---
-title: "Как: Настройка пакета решения SharePoint с помощью целевых объектов MSBuild | Документы Microsoft"
-ms.custom: 
+title: 'Как: Настройка пакета решения SharePoint с помощью целевых объектов MSBuild | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
   С помощью целевых объектов MSBuild, управляемых в командной строке, можно настраивать способ создания пакетов SharePoint (WSP-файлов) в Visual Studio. Например, можно настроить свойства MSBuild для изменения промежуточного каталога пакета и группы элементов MSBuild с перечисляемыми файлами.  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Откройте проект, откройте ее контекстное меню и выберите **выгрузить проект**.  
   
-4.  В **обозревателе решений**, откройте контекстное меню для проекта и выберите **изменить***ProjectName***.vbproj** или **Изменить***ProjectName***.csproj**.  
+4.  В **обозревателе решений**, откройте контекстное меню для проекта и выберите **изменить***ProjectName***.vbproj** или **изменить***ProjectName*** .csproj**.  
   
 5.  После строки `Import` в конце файла проекта добавьте следующую строку.  
   

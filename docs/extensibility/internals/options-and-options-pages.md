@@ -1,12 +1,10 @@
 ---
-title: "Параметры и параметры страницы | Документы Microsoft"
-ms.custom: 
+title: Параметры и параметры страницы | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>Параметры и параметры страницы
 Щелкнув **параметры** на **средства** открывает меню **параметры** диалоговое окно. Параметры в этом диалоговом Собирательно называются страницы параметров. Дерево в области переходов включает параметры категорий, а каждая категория имеет параметры страницы. При выборе страницы ее содержимое отображается в правой области. Эти страницы позволяют изменить значения параметров, которые определяют состояния пакета VSPackage.  
@@ -56,11 +54,11 @@ ms.lasthandoff: 12/22/2017
 ## <a name="option-attributes-and-layout"></a>Атрибуты параметра и макет  
  Пользовательский интерфейс (UI), страница предоставляет определяет внешний вид параметры на странице пользовательские параметры. Макет, пометки и описание параметров на странице универсальные параметры определяются следующие атрибуты:  
   
--   <xref:System.ComponentModel.CategoryAttribute>Определяет категорию параметра.  
+-   <xref:System.ComponentModel.CategoryAttribute> Определяет категорию параметра.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>Определяет отображаемое имя параметра.  
+-   <xref:System.ComponentModel.DisplayNameAttribute> Определяет отображаемое имя параметра.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>Определяет описание параметра.  
+-   <xref:System.ComponentModel.DescriptionAttribute> Определяет описание параметра.  
   
     > [!NOTE]
     >  Эквивалент атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определены в [образец управляемого проекта](http://go.microsoft.com/fwlink/?LinkId=122774).  

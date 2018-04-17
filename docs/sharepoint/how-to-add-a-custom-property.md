@@ -1,13 +1,10 @@
 ---
-title: "Способ: добавить пользовательское свойство | Документы Microsoft"
-ms.custom: 
+title: 'Способ: добавить пользовательское свойство | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], custom properties
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d616a18850e9635dc580a3a09845640a793ac284
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ecc7bba2cd33f0c7f4d78ef8607d078eb7f752a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-custom-property"></a>Практическое руководство. Добавление пользовательского свойства
   Можно добавлять пользовательские свойства в модель с помощью **редактор свойств**. Можно получить доступ к этим свойствам в код, чтобы получить сведения, такие как строки соединения и другие данные во время выполнения.  

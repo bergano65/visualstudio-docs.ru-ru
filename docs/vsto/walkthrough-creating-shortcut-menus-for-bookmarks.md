@@ -1,13 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание контекстного меню для закладок | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание контекстного меню для закладок | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Пошаговое руководство. Создание контекстного меню для закладок
   В этом пошаговом руководстве показано, как создать контекстное меню для <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в настройки уровня документа для Word. Когда пользователь щелкает правой кнопкой мыши текст в закладку, контекстное меню отображается и параметры для форматирования текста.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Создание проекта  
+##  <a name="BKMK_CreateProject"></a> Создание проекта  
  Первым шагом является создание проекта документа Word в Visual Studio.  
   
 #### <a name="to-create-a-new-project"></a>Создание нового проекта  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio откроет новый документ Word в конструкторе и добавляет **Мое контекстное меню закладок** проекта **обозревателе решений**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Добавление текста и закладок в документ  
+##  <a name="BKMK_addtextandbookmarks"></a> Добавление текста и закладок в документ  
  Добавьте в документ текст, а затем добавьте двумя перекрывающимися закладками.  
   
 #### <a name="to-add-text-to-your-document"></a>Добавление текста в документ  
@@ -77,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  Выделите слова «Создание контекстного меню при щелчке правой кнопкой мыши текст», а затем нажмите кнопку **ОК**.  
   
-     `bookmark1`добавляется в документ.  
+     `bookmark1` добавляется в документ.  
   
 3.  Добавьте еще один <xref:Microsoft.Office.Tools.Word.Bookmark> управления слова «щелкните правой кнопкой мыши текст в закладку».  
   
-     `bookmark2`добавляется в документ.  
+     `bookmark2` добавляется в документ.  
   
     > [!NOTE]  
     >  Слова «щелкните правой кнопкой мыши текст», как в `bookmark1` и `bookmark2`.  
   
  При добавлении закладки в документ во время разработки <xref:Microsoft.Office.Tools.Word.Bookmark> создается элемент управления. Вы можете программировать на несколько событий закладки. Можно написать код, который <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> события закладки, чтобы при щелчке правой кнопкой мыши на текст в закладку, появится контекстное меню.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Добавление команд в контекстное меню  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Добавление команд в контекстное меню  
  Добавьте кнопки в контекстном меню, появляющемся при щелчке правой кнопкой мыши документ.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Для добавления команд в контекстное меню  
@@ -148,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Форматирование текста в закладке  
+##  <a name="BKMK_formattextbkmk"></a> Форматирование текста в закладке  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>Для форматирования текста в закладке  
   

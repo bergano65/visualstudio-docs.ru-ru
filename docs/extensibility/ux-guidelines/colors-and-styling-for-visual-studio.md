@@ -2,24 +2,20 @@
 title: Цвета и стили для Visual Studio | Документы Microsoft
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 ## <a name="using-color-in-visual-studio"></a>С помощью цвета в Visual Studio
@@ -359,7 +355,7 @@ Windows использует несколько тем системного ур
 
 Службы, указанный в разделе реестра необходимо обеспечить реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> для соответствующей группы.
 
-![Implementation of IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Реализация `IVsFontAndColorGroup`
+![Реализация интерфейса IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304 a_FontAndColorGroup")<br />Реализация `IVsFontAndColorGroup`
 
 ### <a name="to-implement-ide-support"></a>Чтобы обеспечить поддержку интегрированной среды разработки
 Реализуйте [GetObject](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), которое возвращает либо [IVsFontAndColorDefaults](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) интерфейса или <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> интерфейс IDE для каждой категории или группы кодом GUID.
@@ -398,7 +394,7 @@ IDE кэширует сведения о параметрах шрифтов и 
 
 -   **обрабатывать события, вызываемые IDE** путем реализации [IVsFontAndColorEvents](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) интерфейса. IDE вызывает соответствующий метод следующие пользовательские изменения страницы шрифты и цвета. Например, он вызывает [OnFontChanged](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) метод, если выбран новый шрифт.
 
- **OR**
+ **ИЛИ**
 
 -   **опрос интегрированную среду разработки для изменения**. Это можно сделать с помощью реализовать систему [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейса. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) метода можно получить сведения о шрифт и цвет для отображения элементов. Дополнительные сведения о параметрах шрифтов и цветов см. в статье MSDN [параметров доступа к хранимых шрифта и](../accessing-stored-font-and-color-settings.md).
 

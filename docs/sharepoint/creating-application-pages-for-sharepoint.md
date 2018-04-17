@@ -1,12 +1,10 @@
 ---
-title: "Создание страниц приложений для SharePoint | Документы Microsoft"
-ms.custom: 
+title: Создание страниц приложений для SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0ae0580ed4f684f888175ae83afe21dbcd9bf42c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 68731e2a0c933f3f48f3a2211a9d17ca21e50242
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-application-pages-for-sharepoint"></a>Создание страниц приложений для SharePoint
   *Страницы приложения* является веб-страницу ASP.NET, предназначенный для использования в веб-сайта SharePoint. Страницы приложений представляют собой особый тип страницы ASP.NET. Основное различие между страницей приложения и стандартной страницы ASP.NET, что на странице приложения содержит содержимое, объединенное с главной страницей SharePoint. Главная страница позволяет страницам приложения иметь же внешний вид и поведение, как и другие страницы на сайте.  
@@ -46,14 +45,14 @@ ms.lasthandoff: 01/10/2018
 ## <a name="creating-an-application-page"></a>Создание страницы приложения  
  Чтобы создать страницу приложения, добавьте **страницы приложения** элемента в проект SharePoint. При создании страницы приложения Visual Studio добавляет следующие папки в проект:  
   
-|Папка|Описание:|  
+|Папка|Описание|  
 |------------|-----------------|  
 |Макеты|Сопоставляется с _layouts виртуального каталога в файловой системе SharePoint.|  
 |Вложенная папка раскладки|Содержит файлы, входящие в состав страницы приложения. По умолчанию эта папка имеет имя, совпадающее с именем проекта. Эту папку можно переименовать в любое время. При запуске проекта Visual Studio развертывает эту папку в виртуальном каталоге _layouts файловой системы SharePoint.|  
   
  Visual Studio добавляет следующие файлы в проект:  
   
-|Файл|Описание:|  
+|Файл|Описание|  
 |----------|-----------------|  
 |Файл страницы ASP.NET (.aspx)|Содержит XML-разметку, определяющего страницу.|  
 |Файл кода страницы приложения.|Содержит код страницы приложения. Добавьте код, который обрабатывает события в этот файл.|  

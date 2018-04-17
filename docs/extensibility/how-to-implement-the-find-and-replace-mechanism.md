@@ -1,27 +1,23 @@
 ---
-title: "Как: реализовать поиск и замена механизм | Документы Microsoft"
-ms.custom: 
+title: 'Как: реализовать поиск и замена механизм | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
 ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971d4565c95cab23e683a1a4f20c75ebea81b8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26d1866d9b816dfca3f82f98db372865f9d27a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Как: реализовать поиск и замена механизм
 Visual Studio предлагает два способа реализации поиска и замены. Можно передать текст изображение в оболочку и позвольте ему обрабатывать поиска, выделение и замена текста. Это позволяет пользователям указывать несколько фрагментов текста. Кроме того пакет VSPackage может управления этой функцией, сам. В обоих случаях необходимо уведомить оболочки о текущей цели и цели для всех открытых документов.  

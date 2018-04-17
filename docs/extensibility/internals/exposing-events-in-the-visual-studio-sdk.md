@@ -1,29 +1,27 @@
 ---
-title: "Предоставление доступа к событиям в Visual Studio SDK | Документы Microsoft"
-ms.custom: 
+title: Предоставление доступа к событиям в Visual Studio SDK | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 02ddcf0c2321f6f4c07170117c6474b993c340f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Предоставление доступа к событиям в Visual Studio SDK
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]позволяет источником событий с помощью автоматизации. Корпорация Майкрософт рекомендует, чтобы вы источник события для проектов и элементов проектов.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] позволяет источником событий с помощью автоматизации. Корпорация Майкрософт рекомендует, чтобы вы источник события для проектов и элементов проектов.  
   
  События получаются путем автоматизации потребителей из <xref:EnvDTE.DTEClass.Events%2A> объекта или <xref:EnvDTE.DTEClass.GetObject%2A> («EventObjectName»). Среда вызывает метод `IDispatch::Invoke` с помощью `DISPATCH_METHOD` или `DISPATCH_PROPERTYGET` флаги для возврата при возникновении события.  
   
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
  «AutomationProjectItemEvents «=» возвращает объект AutomationProjectItemsEvents»  
   
-|name|Тип|Диапазон|Описание:|  
+|name|Тип|Диапазон|Описание|  
 |----------|----------|-----------|-----------------|  
 |По умолчанию (@)|REG_SZ|Неиспользуемые|Не используется. Поля данных можно использовать для документации.|  
 |AutomationProjectsEvents|REG_SZ|Имя объекта события.|Действителен только имя ключа. Поля данных можно использовать для документации.<br /><br /> В этом примере состоит из базового проекта образца.|  
@@ -73,7 +71,7 @@ ms.lasthandoff: 12/22/2017
   
  AutomationEvents.h и AutomationEvents.cpp содержат объявления и реализации классов в следующей таблице.  
   
-|Класс|Описание:|  
+|Класс|Описание|  
 |-----------|-----------------|  
 |`CAutomationEvents`|Реализует объект корневой события, полученные из `DTE.Events` объекта.|  
 |`CProjectsEventsContainer` и `CProjectItemsEventsContainer`.|Реализуйте объекты источников событий, которые вызывают срабатывание соответствующих событий.|  

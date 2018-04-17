@@ -1,26 +1,24 @@
 ---
-title: "Конфигурации для построения проекта | Документы Microsoft"
-ms.custom: 
+title: Конфигурации для построения проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-building"></a>Настройка проекта для построения
 Список конфигураций решения для данного решения осуществляется с диалоговым окном конфигурации решения.  
@@ -51,9 +49,9 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  Проекты в списке, установленными флажками, но доступны для изменения были добавлены в среде, из-за явные зависимости, заданные <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> интерфейсы и не может быть изменено. Например, при добавлении ссылки на проект из [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] проекта на другой проект автоматически добавляет зависимость сборки, который можно удалить, удалив ссылку. Проекты, флажки которых не установлены и доступны для изменения нельзя выбрать, поскольку при этом формируют цикл зависимости (например, Project1 будет находиться в зависимости от Project2 и Project2 будет находиться в зависимости от Project1), который бы блокировке построения.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]процессы построения включают обычной компиляции и связь операций, которые вызываются с помощью одной команды построения. Также поддерживаются два других процессов построения: операции очистки для удаления всех выходных элементов из предыдущего построения и проверку обновлений, чтобы определить, изменилась ли выходной элемент в конфигурации.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] процессы построения включают обычной компиляции и связь операций, которые вызываются с помощью одной команды построения. Также поддерживаются два других процессов построения: операции очистки для удаления всех выходных элементов из предыдущего построения и проверку обновлений, чтобы определить, изменилась ли выходной элемент в конфигурации.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>объекты возвращают соответствующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (возвращенный <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) для управления их процессов построения. Для уведомления о состоянии операции построения, пока он завершилась, конфигурации выполнять вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, интерфейс, реализованный средой и любого другого объекта интересны события состояния сборки.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> объекты возвращают соответствующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (возвращенный <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) для управления их процессов построения. Для уведомления о состоянии операции построения, пока он завершилась, конфигурации выполнять вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, интерфейс, реализованный средой и любого другого объекта интересны события состояния сборки.  
   
  После построения, параметры конфигурации можно использовать для определения ли они могут выполняться под контролем отладчика. Реализация конфигурации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> для поддержки отладки.  
   

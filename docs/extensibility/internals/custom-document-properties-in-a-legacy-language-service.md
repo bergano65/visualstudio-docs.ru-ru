@@ -1,27 +1,25 @@
 ---
-title: "Настраиваемые свойства документа в службе языка прежних версий | Документы Microsoft"
-ms.custom: 
+title: Настраиваемые свойства документа в службе языка прежних версий | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d1159ccc35f47b34069461b27239173c1860b18a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc4706a7cd1a666da8562ce78de5af9366c69fab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Настраиваемые свойства документа в службе языка прежних версий
 Свойства документа, которые могут отображаться в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** окна. Языки программирования обычно не имеют свойства, связанные с отдельными исходных файлов. Однако XML поддерживает свойства документа, которые влияют на кодирование, схемы и таблицы стилей.  

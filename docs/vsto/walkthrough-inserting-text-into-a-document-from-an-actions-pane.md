@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Вставка текста в документ из панели действий | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Вставка текста в документ из панели действий | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 26d79087a4dbf7fc176ab3deb2c98cd5fdb5ba8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9e562f66dd43b4adc45727c8de1457a24ddf97b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Пошаговое руководство. Вставка текста в документ из панели действий
   В этом пошаговом руководстве показано, как создать панель действий в документ Microsoft Office Word. Панель действий содержит два элемента управления для сбора входных данных и затем отправить текст в документ.  
@@ -114,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
     |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Name**|**getName**|  
+    |**Name**|**GetName**|  
     |**Size**|**130, 20**|  
   
 5.  Добавьте второй **метка** управления к элементу управления панели действий и измените **текст** свойства **адрес**.  
@@ -123,7 +122,7 @@ ms.lasthandoff: 01/10/2018
   
     |Свойство.|Значение|  
     |--------------|-----------|  
-    |**Name**|**getAddress**|  
+    |**Name**|**GetAddress**|  
     |**Принимает возврата**|**True**|  
     |**Multiline**|**True**|  
     |**Size**|**130, 40**|  

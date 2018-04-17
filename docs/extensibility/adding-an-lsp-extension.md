@@ -1,25 +1,21 @@
 ---
-title: "Добавление расширения протокола сервера языка | Документы Microsoft"
-ms.custom: 
+title: Добавление расширения протокола сервера языка | Документы Microsoft
+ms.custom: ''
 ms.date: 11/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bb6c82eab6878e99c9840ed593d9b9993056d391
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Добавление расширения языка протокола сервера
 
@@ -57,15 +53,15 @@ LSP и для него поддержку в Visual Studio призван вст
 Выход | да
 $/ cancelRequest | да
 окна/showMessage | да
-window/showMessageRequest | да
+окна/showMessageRequest | да
 окна/logMessage | да
 Данные телеметрии и события |
 Клиент или registerCapability |
 Клиент или unregisterCapability |
-workspace/didChangeConfiguration | да
-workspace/didChangeWatchedFiles | да
+Рабочая область/didChangeConfiguration | да
+Рабочая область/didChangeWatchedFiles | да
 Рабочая область символ | да
-workspace/executeCommand | да
+Рабочая область/executeCommand | да
 Рабочая область/applyEdit | да
 textDocument/publishDiagnostics | да
 textDocument/didOpen | да
@@ -87,7 +83,7 @@ textDocument/onTypeFormatting |
 textDocument или определение | да
 textDocument/codeAction | да
 textDocument/codeLens |
-codeLens/resolve |
+codeLens и разрешения |
 textDocument/documentLink |
 documentLink и разрешения |
 textDocument или переименуйте | да
@@ -114,7 +110,7 @@ textDocument или переименуйте | да
 
 * **Источник**: определяются вручную
 * **Имя**: предварительной версией клиента языка сервера протокола
-* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
+* **Идентификатор**: Microsoft.VisualStudio.LanguageServer.Client.Preview
 * **Диапазон версий**: [1.0,2.0)
 * **Как обеспечивается разрешения зависимости**: установлено пользователем
 * **Загрузить URL-адрес**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
@@ -252,7 +248,7 @@ Visual Studio использует [MEF](https://github.com/Microsoft/vs-mef/blo
 
 ![Определение активов MEF](media/lsp-define-asset.png)
 
-* **Type**: Microsoft.VisualStudio.MefComponent
+* **Тип**: Microsoft.VisualStudio.MefComponent
 * **Источник**: проект в текущем решении
 * **Проект**: [проект]
 

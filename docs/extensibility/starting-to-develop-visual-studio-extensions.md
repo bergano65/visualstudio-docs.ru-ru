@@ -1,26 +1,24 @@
 ---
-title: "Начало разработки расширений Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Начало разработки расширений Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Начало разработки расширений Visual Studio
 Если не вы написали расширение Visual Studio, прежде чем, возможно, некоторые вопросы. Мы перечислены некоторые из наиболее распространенных здесь. Если вы не видите информацию вы ищете, используйте кнопки обратной связи (**Эта страница была полезной?** в нижней части экрана) попросить вас.  
@@ -60,7 +58,7 @@ ms.lasthandoff: 01/05/2018
   
 -   [Изолированная оболочка Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>Какие шаблоны проекта предоставляются VSSDK?  
+##  <a name="BKMK_ProjectTemplate"></a> Какие шаблоны проекта предоставляются VSSDK?  
  Два основных типа расширения, пакеты VSPackage и расширения MEF. В общем случае расширений VSPackage, используются для расширения, которые применяют или расширяют команд, окон инструментов и проекты. Расширений MEF позволяет расширить и настроить в редакторе Visual Studio.  
   
  Для расширений Visual C# и Visual Basic VSSDK предоставляет пустой шаблон проекта VSIX, который можно использовать вместе с шаблонами новых элементов, созданных команд меню, окна инструментов и расширений редактора. Можно также использовать этот шаблон, шаблоны проектов пакетов, фрагменты кода и других артефактов, для распространения среди других пользователей.  

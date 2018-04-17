@@ -1,21 +1,18 @@
 ---
-title: "Как: использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio | Документы Microsoft"
-ms.custom: 
+title: 'Как: использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Как: использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 Visual Studio позволяет загружать пакеты VSPackage, когда некоторые хорошо известные <xref:Microsoft.VisualStudio.Shell.UIContext>активируются s. Эти контексты пользовательского интерфейса не являются мельчайшие Контролируемая, оставив расширение авторы нет выбора Однако выбирает доступный контекст пользовательского интерфейса, который активирует перед точкой действительно требуется VSPackage для загрузки. Список известных контекстов пользовательского интерфейса см. в разделе <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -137,7 +134,7 @@ Visual Studio позволяет загружать пакеты VSPackage, ко
 |ConfigSettingsStoreQuery:\<запроса >|«запрос» представляет собой полный путь в хранилище конфигураций параметров, которое должно вычисляться с ненулевое значение. Запрос разбивается на «коллекция» и «propertyName» в последней косой черты.|  
 |ActiveProjectFlavor:\<projectTypeGuid >|Каждый раз, когда выбранный проект является специфической термин будет иметь значение true (совокупно) и сборки, соответствующие типу данного проекта GUID.|  
 |ActiveEditorContentType:\<contentType >|Термин будет иметь значение true, если выбранный документ — это текстовый редактор с заданным типом содержимого.|  
-|ActiveProjectCapability:\<выражения >|Термин имеет значение true, при возможности активного проекта соответствует указанного выражения. Выражение может быть нечто вроде VB &#124; C#|  
+|ActiveProjectCapability:\<выражения >|Термин имеет значение true, при возможности активного проекта соответствует указанного выражения. Выражение может быть примерно VB &#124; CSharp|  
 |SolutionHasProjectCapability:\<выражения >|Аналогична выше, но термин имеет значение true, если решение содержит любой загруженный проект, который соответствует выражению.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Термин будет иметь значение true, если решение содержит проект, который является специфической (совокупно) и сборки, соответствующие типу данного проекта GUID.|
 

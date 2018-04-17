@@ -1,26 +1,24 @@
 ---
-title: "Регистрация обработчиков команд сборки взаимодействия | Документы Microsoft"
-ms.custom: 
+title: Регистрация обработчиков команд сборки взаимодействия | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a4b2c0d40029cbc84d64a4ffe5ee50c59c893b95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , чтобы интегрированной среды разработки (IDE) правильно перенаправляет его команды.  
@@ -54,11 +52,11 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
   
  В следующей таблице описаны поля \< *сведения о ресурсах*>.  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |\<*Путь к DLL-Библиотека ресурсов*>|Это полный путь к DLL, содержащую ресурс меню ресурса или указан, указание того, что в пакете VSPackage ресурсов DLL для использования (как указано в подразделе пакеты, где зарегистрирован сам пакет VSPackage).<br /><br /> Обычно это поле оставить пустым.|  
 |\<*Идентификатор ресурса меню*>|Это идентификатор ресурса `CTMENU` ресурс, который содержит все элементы пользовательского интерфейса для VSPackage как откомпилирован из [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) файла.|  
-|\<*Версия меню*>|Это число, используемое в качестве версии для `CTMENU` ресурсов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Это значение используется для определения того, ему следует произвести повторное слияние содержимого `CTMENU` ресурсов с использованием своего кэша всех `CTMENU` ресурсов. Произвести повторное слияние инициируется, выполнив команду setup devenv.<br /><br /> Это значение следует изначально задано значение 1 и увеличивается на единицу после каждого изменения в `CTMENU` ресурсов и перед инициализацией произвести повторное слияние.|  
+|\<*Версия меню*>|Это число, используемое в качестве версии для `CTMENU` ресурсов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Это значение используется для определения того, ему следует произвести повторное слияние содержимого `CTMENU` ресурсов с использованием своего кэша всех `CTMENU` ресурсов. Произвести повторное слияние инициируется, выполнив команду setup devenv.<br /><br /> Это значение следует изначально задано значение 1 и увеличивается на единицу после каждого изменения в `CTMENU` ресурсов и перед инициализацией произвести повторное слияние.|  
   
 ### <a name="example"></a>Пример  
  Ниже приведен пример несколько записей ресурсов:  

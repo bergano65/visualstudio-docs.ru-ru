@@ -1,27 +1,23 @@
 ---
-title: "Как: обновление строки состояния | Документы Microsoft"
-ms.custom: 
+title: 'Как: обновление строки состояния | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - update status bar
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76801810aafa3bd4048776ca38385ad1cf508d94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1b5f7e6849736f0fc226c51f69a1526aca8e971a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-update-the-status-bar"></a>Как: обновление строки состояния
 **Строка состояния** находится панель элементов управления в нижней части многих приложений windows, содержащий один или несколько строк текста состояния или индикаторы.  

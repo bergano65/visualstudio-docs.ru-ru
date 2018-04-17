@@ -1,23 +1,21 @@
 ---
-title: "Создание пакета средств разработки программного обеспечения | Документы Microsoft"
-ms.custom: 
+title: Создание пакета средств разработки программного обеспечения | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 55b62ac0ac448023793f511389146ebb1b07da0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-software-development-kit"></a>Создание пакета средств разработки для программного обеспечения
 Пакет средств разработки программного обеспечения (SDK) — это коллекция интерфейсов API, который можно ссылаться как одного элемента в Visual Studio. **Диспетчер ссылок** диалоговом окне приводится список всех пакетов SDK, относящиеся к проекту. При добавлении в проект пакет SDK, API-интерфейсы доступны в Visual Studio.  
@@ -34,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Пакет SDK расширения](#ExtensionSDKs)  
   
-##  <a name="PlatformSDKs"></a>Пакет SDK платформ  
+##  <a name="PlatformSDKs"></a> Пакет SDK платформ  
  Пакет SDK платформ, необходимы для разработки приложений для платформы. Например [!INCLUDE[win81](../debugger/includes/win81_md.md)] требуется пакет SDK для разработки приложений для [!INCLUDE[win81](../debugger/includes/win81_md.md)].  
   
 ### <a name="installation"></a>Установка  
@@ -54,7 +52,7 @@ ms.lasthandoff: 12/22/2017
                         \[arch]  
 ```  
   
-|Узел|Описание:|  
+|Узел|Описание|  
 |----------|-----------------|  
 |Папка "Ссылки"|Содержит двоичные файлы, содержащие интерфейсы API, которые могут быть спроектированы для. Могут включать файлы метаданных Windows (WinMD) или сборки.|  
 |DesignTime папки|Содержит файлы, которые нужны только во время предварительного-run или отладки. Могут включать XML-документы, библиотеки, заголовки, двоичные файлы во время разработки для элементов, MSBuild артефакты и так далее<br /><br /> Документы XML в идеальном случае помещается в папку \DesignTime, но документы XML для ссылок будут размещаться рядом с файлом ссылку в Visual Studio. Например, XML-документации \References ссылку\\[config]\\[arch]\sample.dll будет \References\\[config]\\[arch]\sample.xml и локализованная версия этого документа будут \References\\[config]\\[arch]\\[locale]\sample.xml.|  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
 |Архитектура папки|Может существовать ни одна папка поддерживаемой архитектуры. Visual Studio поддерживает следующих архитектур: x86, x64, ARM и neutral. Примечание: Win32 сопоставляется x86, а для нейтрального AnyCPU.<br /><br /> MSBuild ищет только в рамках \CommonConfiguration\neutral пакеты SDK платформ.|  
 |SDKManifest.xml|Этот файл описывает, как Visual Studio следует использовать пакет SDK. Посмотрите на манифест пакета SDK для [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Отображаемое имя:** значение, которое обозревателя объектов отображаются в списке просмотра.<br /><br /> **PlatformIdentity:** существование этот атрибут сообщает Visual Studio и MSBuild, пакет SDK — это платформа SDK и не должны копироваться ссылки, добавленные из его локально.<br /><br /> **TargetFramework:** этот атрибут используется в Visual Studio, чтобы убедиться, что только проекты, предназначенные одинаковые платформы, как указано в значении этого атрибута можно использовать пакет SDK.<br /><br /> **MinVSVersion:** этот атрибут используется в Visual Studio для использования только на пакеты SDK, применимые к нему.<br /><br /> **Ссылка:** этот атрибут должен быть указано для только ссылки, которые содержат элементы управления. Сведения о том, как указать, является ли ссылка содержит элементы управления см. ниже.|  
   
-##  <a name="ExtensionSDKs"></a>Пакет SDK расширения  
+##  <a name="ExtensionSDKs"></a> Пакет SDK расширения  
  В следующих разделах описаны, что необходимо сделать, чтобы развернуть пакет SDK для расширений.  
   
 ### <a name="installation"></a>Установка  
@@ -173,7 +171,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson: Максимальная целевая версия платформы должен использоваться для указания версии платформы, на которых ваш пакет SDK расширений не будут работать. Например пакет среды выполнения Microsoft Visual C++ v11.0 должны ссылаться только проекты Windows 8. Таким образом MaxPlatformVersion проект Windows 8 — 8.0. Это означает, что диспетчер ссылок отфильтровывает пакет среды выполнения Microsoft Visual C++ для проекта Windows 8.1 и MSBuild вызывает ошибку при [!INCLUDE[win81](../debugger/includes/win81_md.md)] проект ссылается на него. Примечание: этот элемент поддерживается начиная с [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
   
-7.  AppliesTo: Указывает, пакеты SDK, которые доступны в диспетчере ссылок, указав применимые типы проектов Visual Studio. Распознаются девять значений: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, управляемый и машинный код. Разработчику пакета SDK можно использовать и ("+"), или («&#124;»), не («!») операторы, можно указать только область типов проектов, которые применяются в пакет SDK.  
+7.  AppliesTo: Указывает, пакеты SDK, которые доступны в диспетчере ссылок, указав применимые типы проектов Visual Studio. Распознаются девять значений: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, управляемый и машинный код. Разработчику пакета SDK можно использовать и ("+"), или («&#124;»), а не («!») операторы, можно указать только область типов проектов, которые применяются в пакет SDK.  
   
      WindowsAppContainer идентифицирует проекты для [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] приложений.  
   
@@ -195,7 +193,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 16. Ссылка на файл: указан для только эти ссылки, содержать элементы управления или собственные файлы Winmd. Сведения о том, как указать, содержит ли ссылка элементов см. в разделе [Указание расположения элементов панели элементов](#ToolboxItems) ниже.  
   
-##  <a name="ToolboxItems"></a>Указание расположения элементов панели инструментов  
+##  <a name="ToolboxItems"></a> Указание расположения элементов панели инструментов  
  Элемент ToolBoxItems схемы SDKManifest.xml указывает категории и расположению элементов области элементов на платформе и пакет SDK расширения. В следующих примерах для указания других мест. Это применимо для ссылки на WinMD или DLL.  
   
 1.  Разместите элементы управления в категорию области элементов по умолчанию.  

@@ -1,29 +1,25 @@
 ---
-title: "IEEDataStorage | Документы Microsoft"
-ms.custom: 
+title: IEEDataStorage | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage
 helpviewer_keywords:
 - IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a28b738c757924f2a3c588d52ea896dc6301384
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aeb98c4c4d3b544616412b3cf5cf8a162fddbd6b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Этот интерфейс представляет собой массив байтов.  
@@ -43,7 +39,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  `IEEDataStorage` Интерфейс реализует следующие методы:  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Получает указанное число байтов данных для предоставленного буфера.|  
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Возвращает число доступных байтов данных.|  

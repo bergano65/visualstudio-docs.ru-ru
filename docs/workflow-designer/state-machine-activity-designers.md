@@ -1,18 +1,18 @@
 ---
-title: "Состояние компьютера конструкторы | Документы Microsoft"
+title: Состояние компьютера конструкторы | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e93ba35830f3b0c08ea7957ab3fbcb6ea254a7a1
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bde93d8ac1907accf4f7d14da186aa43ccb169a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="state-machine-activity-designers"></a>Конструкторы действий конечных автоматов
 Конструктор рабочих процессов Windows включает ряд конструкторов действий, которые можно использовать при создании рабочих процессов. Этот раздел содержит предоставленные системой конструкторы действий, которые используются для создания рабочих процессов конечного автомата и управления ими. В следующих подразделах приводится описание этих конструкторов, а также описание их использования.
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/12/2018
 
  [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Обмен сообщениями](../workflow-designer/messaging-activity-designers.md)
 
  [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
 

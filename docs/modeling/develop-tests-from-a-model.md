@@ -1,23 +1,21 @@
 ---
-title: "Разработка тестов на основе модели | Документы Microsoft"
-ms.custom: 
+title: Разработка тестов на основе модели | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Разработка тестов на основе модели
 Чтобы организовать тесты системы и компонентов, можно использовать требования и модели архитектуры. Такой подход позволяет обеспечить проверку требований, важных для пользователей и других заинтересованных лиц, и помогает быстро обновлять тесты при изменении требований. Если вы используете [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], также поддерживаются ссылки между моделями и тестами.  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  С точки зрения тестирования модель требований представляется краткой версией тестов. Поэтому на протяжении проекта необходимо поддерживать отношение между тестами и моделью.  
   
-##  <a name="Attaching"></a>Присоединение тестовых случаев с элементами модели  
+##  <a name="Attaching"></a> Присоединение тестовых случаев с элементами модели  
  Если в проекте используется [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], вы можете связать тесты с элементами модели. Это позволяет быстро находить тесты, на которые влияет изменение требований, и помогает отслеживать, в какой степени было удовлетворено требование.  
   
  Тесты можно связать со всеми видами элементов. Ниже представлено несколько примеров.  

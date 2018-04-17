@@ -1,12 +1,10 @@
 ---
-title: "Поддержка средства обзора символ | Документы Microsoft"
-ms.custom: 
+title: Поддержка средства обзора символ | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
 - browsers, symbol browsers
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08185f64310da610253dc35e69323b17ab0177fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Вспомогательные средства обзора символ
 **Обозреватель объектов**, **представление классов**, **обозревателя вызовов** и **результаты поиска символа** средства предоставляют средства в Visual Studio для просмотра символов. Эти средства отображают иерархическое дерево представления символов и отображения связей между символами в дереве. Символы могут представлять пространства имен, объекты, классы, члены класса и остальные элементы языка, содержатся в различных компонентов. Компоненты включают внешних проектов Visual Studio [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] компоненты и библиотеки типов (TLB). Дополнительные сведения см. в разделе [Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).  

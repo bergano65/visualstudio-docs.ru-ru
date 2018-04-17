@@ -1,21 +1,19 @@
 ---
-title: "Приступая к работе с доменными языками | Документы Microsoft"
-ms.custom: 
+title: Приступая к работе с доменными языками | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 68b750735c8f5d5f6bd7f1497565692c8836914c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 791686b948c5a0541cbe8f8cb420f38ef885c9d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Начало работы с доменными языками
 В этом разделе объясняются основные понятия в определении и использовании доменный язык (DSL), созданные с помощью пакета SDK для моделирования для Visual Studio.
@@ -89,7 +87,7 @@ ms.lasthandoff: 02/09/2018
   
  После этого пользовательский интерфейс примет следующий вид:  
   
- ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![Конструктор DSL](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Данное решение определяет доменный язык. Дополнительные сведения см. в разделе [Общие сведения о пользовательском интерфейсе доменный язык средства](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -102,7 +100,7 @@ ms.lasthandoff: 02/09/2018
   
 -   **Проект DslPackage** этот проект содержит код, который разрешает экземпляров DSL, чтобы открыть и редактировать в Visual Studio.  
   
-##  <a name="Debugging"></a>Под управлением DSL  
+##  <a name="Debugging"></a> Под управлением DSL  
  Можно запускать решение DSL, сразу после его создания. Позже можно изменить определения DSL постепенно, запуск решения после каждого изменения.  
   
 #### <a name="to-experiment-with-the-dsl"></a>Чтобы поэкспериментировать с DSL  
@@ -198,7 +196,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  На схеме DslDefinition переименование **ExampleModel** для **FamilyTreeModel**, **ExampleElement** для **лицо**,  **Целевые объекты** для **родительских элементов**, и **источников** для **дочерних**. Можно щелкнуть каждый метку, чтобы изменить его.  
   
-     ![Схема определения DSL &#45; Модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")  
+     ![Схема определения DSL &#45; модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 2.  Переименуйте элемент и соединителя средства.  
   
@@ -391,7 +389,7 @@ ms.lasthandoff: 02/09/2018
   
  Дополнительные сведения см. в разделе [развертывание решений доменный язык](../modeling/deploying-domain-specific-language-solutions.md).  
   
-##  <a name="Reset"></a>Удаление старого экспериментальный доменного языка  
+##  <a name="Reset"></a> Удаление старого экспериментальный доменного языка  
  При создании экспериментальный доменного языка, больше не нужны, их можно удалить с компьютера с Сброс в экспериментальном экземпляре Visual Studio.  
   
  Это приведет к удалению с компьютера все экспериментальные DSL и другие экспериментальные расширений Visual Studio. Это расширения, которые были выполнены в режиме отладки.  

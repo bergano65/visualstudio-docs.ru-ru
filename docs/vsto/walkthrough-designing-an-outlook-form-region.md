@@ -1,13 +1,10 @@
 ---
-title: "Пошаговое руководство: Разработка области формы Outlook | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Разработка области формы Outlook | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Пошаговое руководство. Разработка области формы Outlook
   Пользовательские области формы расширяют стандартные или настраиваемые формы Microsoft Office Outlook. В этом пошаговом руководстве показано, как проектировать пользовательскую область формы, которая отображается в виде новой страницы в окне инспектора элемента контактов. В этой области формы отображается карта каждого адреса, указанного для контакта, путем отправки информации об адресе на веб-сайт локального поиска Windows Live. Сведения об областях форм см. в разделе [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md).  
@@ -159,7 +156,7 @@ ms.lasthandoff: 01/10/2018
     |Тип адреса|Адрес|  
     |------------------|-------------|  
     |**Business**|**Main St. 4567 Буффало, NY**|  
-    |**Домашняя**|**Северная St. 1234 Буффало, NY**|  
+    |**Корневая папка**|**Северная St. 1234 Буффало, NY**|  
     |**Другое**|**Main St. 3456 Сиэтл, WA**|  
   
 4.  Сохраните и закройте элемент контактов.  

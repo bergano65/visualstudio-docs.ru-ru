@@ -1,13 +1,10 @@
 ---
-title: "Общие справочные материалы (Разработка решений Office в Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: Общие справочные материалы (Разработка решений Office в Visual Studio) | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Общие справочные материалы (разработка решений Office в Visual Studio)
   В этом разделе содержатся технические сведения о проектах Microsoft Office в Visual Studio.  
@@ -40,14 +37,14 @@ ms.lasthandoff: 01/10/2018
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)  
  Описывает, как манифесты развертывания, используемых решениями Office.  
   
- [Справочник по пользовательскому интерфейсу &#40; разработка решений Office в Visual Studio &#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ [Справочник по пользовательскому интерфейсу &#40;разработка решений Office в Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
  Разделы, описывающие параметры, которые отображаются в различных диалоговых окон, windows и других пользовательских интерфейсов.  
   
- [Сообщения об ошибках &#40; разработка решений Office в Visual Studio &#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
+ [Сообщения об ошибках &#40;разработка решений Office в Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
  Разделы, описывающие сообщения об ошибках для проектов Office.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Ссылки на сведения об установке, шаблоны проектов, основных сборок взаимодействия Office, и новые возможности разработки для Office.  
   
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)  

@@ -1,28 +1,26 @@
 ---
-title: "Устаревший языковой службы Essentials | Документы Microsoft"
-ms.custom: 
+title: Устаревший языковой службы Essentials | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
 - Visual Studio, integrating programming languages
 - programming languages, integrating into Visual Studio
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3323d317ac8b04731d1573d5c1a05150e012cbfa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 68b92b821ad77b050ad2116da6fd930b975dad5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-essentials"></a>Essentials устаревших языковой службы
 Необходимо указать языковую службу интеграции на языке программирования в Visual Studio. В этом разделе объясняется, функции, доступные в службах прежних версий языка.  
@@ -34,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
  Устаревший языковые службы предоставляют следующие возможности:  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |-------------|-----------------|  
 |Цветовая подсветка синтаксиса|В результате представление редактора для отображения различных цветов и стилей шрифтов для различных элементов языка. Этих различий можно сделать проще читать и изменять файлы.<br /><br /> Общие сведения см. в разделе [цветовой подсветки синтаксиса в языковую службу прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Сведения об этой возможности в managed package framework (MPF) см. в разделе [синтаксис Раскраска в языковую службу прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
 |Завершение операторов|Выполняет инструкцию или ключевое слово, которое пользователь начинает вводить. Завершение операторов помогает пользователям более легко вводить сложных инструкций с меньше ввода кода и меньше вероятность возникновения ошибки.<br /><br /> Общие сведения см. в разделе [завершение операторов в языковую службу прежних версий](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Сведения об этой возможности в MPF см. в разделе [завершение слов в языковую службу прежних версий](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
@@ -46,7 +44,7 @@ ms.lasthandoff: 12/22/2017
   
  Следующие функции относятся к поддержки для языков программирования, но не являются частью служб языка:  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |-------------|-----------------|  
 |Вычислители выражений|Поддерживает [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчика в целях проверки точки останова и указания списка выражений для отображения в **видимые** окон отладки.<br /><br /> Дополнительные сведения см. в разделе [языковой службы поддержки для отладки](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Средства обзора символ|Поддерживает **обозреватель объектов**, **представление классов**, **Обозреватель вызовов**, и **результаты поиска символа**.|

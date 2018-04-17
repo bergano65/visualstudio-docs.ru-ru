@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Пошаговое руководство. Расширение обозревателя сервера, чтобы в нем отображались веб-части
   В Visual Studio можно использовать **подключения SharePoint** узел **обозревателя серверов** просматривать компоненты на сайтах SharePoint. Тем не менее **обозревателя серверов** по умолчанию не отображаются некоторые компоненты. В этом пошаговом руководстве вы будете расширить **обозревателя серверов** подключить отображается коллекции веб-частей на сайте SharePoint.  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Выберите **проект VSIX** шаблона, имя проекта **WebPartNode**и нажмите кнопку **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartNode** проекта **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **WebPartNode** проекта **обозревателе решений**.  
   
 #### <a name="to-create-the-extension-project"></a>Создание проекта расширения  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  В списке шаблонов проектов выберите **библиотеки классов**, присвойте проекту имя **WebPartNodeExtension**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartNodeExtension** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **WebPartNodeExtension** в решение проект и открывает файл кода по умолчанию Class1.  
   
 5.  Удалите файл Class1 код из проекта.  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  В списке шаблонов проектов выберите **библиотеки классов**, присвойте проекту имя **WebPartCommands**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartCommands** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **WebPartCommands** в решение проект и открывает файл кода по умолчанию Class1.  
   
 6.  Удалите файл Class1 код из проекта.  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Щелкните стрелку рядом с **добавить** , а затем кнопку **ссылку Добавить** в появившемся меню.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет файлы кода в проект WebPartCommands как ссылки. В результате файлы кода находятся в проекте WebPartNodeExtension, но код в файлы также компилируются в проекте WebPartCommands.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет файлы кода в проект WebPartCommands как ссылки. В результате файлы кода находятся в проекте WebPartNodeExtension, но код в файлы также компилируются в проекте WebPartCommands.  
   
 5.  Откройте контекстное меню для **WebPartCommands** проект еще раз и кнопку **добавить ссылку**.  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Выберите **ресурсов** , а затем выберите **этот проект не содержит файл ресурсов по умолчанию. Щелкните здесь, чтобы создать его** ссылку.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает файл ресурсов и открывает его в конструкторе.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает файл ресурсов и открывает его в конструкторе.  
   
 4.  В верхней части конструктора, щелкните стрелку рядом с **добавить ресурс** меню команды, а затем выберите **добавить новый значок** в появившемся меню.  
   
@@ -378,6 +377,6 @@ ms.lasthandoff: 01/10/2018
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
- [Создание значка или другого изображения &#40; редактор изображений для значков &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Создание значка или другого изображения &#40;редактор изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

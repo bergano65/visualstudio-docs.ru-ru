@@ -1,12 +1,10 @@
 ---
-title: "Развертывание, публикация и обновление пакетов решений SharePoint | Документы Microsoft"
-ms.custom: 
+title: Развертывание, публикация и обновление пакетов решений SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SharePointProjectPropertyTab
 - VS.SharePointTools.Project.Publishing
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5990ab0f6ff6ec02131921f54197dd28e7f4e6ff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aac96c7954a52a3277b08efcd89fa24a743117be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Развертывание, публикация и обновление пакетов решений SharePoint
   После разработки решения SharePoint в Visual Studio можно либо развернуть его пакетный файл (.wsp) на локальном сервере SharePoint, либо опубликовать его на локальном или удаленном сервере SharePoint. При развертывании файлов можно настроить, как должна выполняться развертка пакетных файлов (.wsp).  
@@ -49,9 +48,9 @@ ms.lasthandoff: 01/10/2018
 ## <a name="customizing-the-deployment-process"></a>Настройка процесса развертывания  
  Ниже приведены две конфигурации развертывания, можно использовать при отладке и развертывании решения SharePoint.  
   
-|Конфигурация развертывания|Описание:|  
+|Конфигурация развертывания|Описание|  
 |------------------------------|-----------------|  
-|По умолчанию|Конфигурация развертывания по умолчанию. При развертывании выполняются следующие действия.<br /><br /> 1.  Запуск команды, выполняемой перед развертыванием.<br />2.  Утилизация пула приложений IIS.<br />3.  Отзыв решения.<br />4.  Добавление решения.<br />5.  Активация компонентов.<br />6.  Запуск команды, выполняемой после развертывания.<br /><br /> При удалении пакета выполняются следующие действия отката.<br /><br /> 1.  Утилизация пула приложений IIS.<br />2.  Отзыв решения.|  
+|Значение по умолчанию|Конфигурация развертывания по умолчанию. При развертывании выполняются следующие действия.<br /><br /> 1.  Запуск команды, выполняемой перед развертыванием.<br />2.  Утилизация пула приложений IIS.<br />3.  Отзыв решения.<br />4.  Добавление решения.<br />5.  Активация компонентов.<br />6.  Запуск команды, выполняемой после развертывания.<br /><br /> При удалении пакета выполняются следующие действия отката.<br /><br /> 1.  Утилизация пула приложений IIS.<br />2.  Отзыв решения.|  
 |Без активации|Эта конфигурация развертывания выполняются те же действия, как конфигурация по умолчанию, но этап активации пропускается.|  
   
  Можно создать собственную конфигурацию развертывания для завершения одного шага или изменить порядок шагов в процессе развертывания. Дополнительные сведения см. в разделе [как: изменение конфигурации развертывания SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  

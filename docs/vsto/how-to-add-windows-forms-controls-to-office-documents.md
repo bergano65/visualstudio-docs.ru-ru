@@ -1,12 +1,10 @@
 ---
-title: "Как: Добавление элементов управления в документы Office Windows Forms | Документы Microsoft"
-ms.custom: 
+title: 'Как: Добавление элементов управления в документы Office Windows Forms | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 937c64f8fadf8763d4e5b3ad32489262cddafdfd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ebd26c78e30e522b3d961d42226fc42825eb2a2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>How to: Add Windows Forms Controls to Office Documents
   Вы можете добавить элементы управления Windows Forms в документы Microsoft Office Word и Microsoft Office Excel во время разработки в проектах уровня документа. Во время выполнения можно добавить элементы управления в настройки уровня документа и надстройки VSTO. Например, можно добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> на лист, чтобы пользователи могли выбрать из списка параметров.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [как следует добавить элементы управления на поверхность документа во время выполнения?](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
-##  <a name="designtime"></a>Добавление элементов управления во время разработки  
+##  <a name="designtime"></a> Добавление элементов управления во время разработки  
  Вы можете добавить элементы управления Windows Forms в документ в проекте на уровне документа во время разработки несколькими способами.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -102,10 +101,10 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.  
   
-##  <a name="runtimedoclevel"></a>Добавление элементов управления во время выполнения в проектах уровня документа  
- Вы можете программно добавить элементы управления Windows Forms в документ во время выполнения. В Word используйте методы свойства <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> класса `ThisDocument`. В Excel, используйте методы <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> свойство `Sheet`  *n*  класса. У каждого метода есть несколько перегрузок, которые позволяют указать расположение элемента управления разными способами.  
+##  <a name="runtimedoclevel"></a> Добавление элементов управления во время выполнения в проектах уровня документа  
+ Вы можете программно добавить элементы управления Windows Forms в документ во время выполнения. В Word используйте методы свойства <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> класса `ThisDocument`. В Excel, используйте методы <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> свойство `Sheet` *n* класса. У каждого метода есть несколько перегрузок, которые позволяют указать расположение элемента управления разными способами.  
   
- При добавлении элемента управления Windows Forms в документ во время выполнения он не сохраняется в документе при закрытии документа. Элемент управления можно восстановить при следующем открытии документа. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ При добавлении элемента управления Windows Forms в документ во время выполнения он не сохраняется в документе при закрытии документа. Элемент управления можно восстановить при следующем открытии документа. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-windows-forms-control-at-run-time"></a>Добавление элемента управления Windows Forms во время выполнения  
   
@@ -116,10 +115,10 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]  
   
-##  <a name="runtimeaddin"></a>Добавление элементов управления во время выполнения в надстройках VSTO  
+##  <a name="runtimeaddin"></a> Добавление элементов управления во время выполнения в надстройках VSTO  
  Вы можете добавить элементы управления Windows Forms программным способом в любой открытый документ во время выполнения. Сначала создайте ведущий элемент, основанный на открытом документе или листе. Затем в Word используйте методы свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> нового ведущего элемента. В Excel используйте методы свойства <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> нового ведущего элемента. У каждого метода есть несколько перегрузок, которые позволяют указать расположение элемента управления разными способами.  
   
- При добавлении элемента управления Windows Forms в документ во время выполнения он не сохраняется в документе при закрытии документа. Элемент управления можно восстановить при следующем открытии документа. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ При добавлении элемента управления Windows Forms в документ во время выполнения он не сохраняется в документе при закрытии документа. Элемент управления можно восстановить при следующем открытии документа. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Дополнительные сведения о создании ведущих элементов в проектах надстройки VSTO см. в разделе [расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
@@ -139,6 +138,6 @@ ms.lasthandoff: 01/10/2018
  [Элементы управления в документах Office Windows Forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Как: изменение размера элементов управления внутри ячеек листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   

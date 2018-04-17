@@ -1,13 +1,10 @@
 ---
-title: "Устранение неполадок SharePoint упаковки и развертывания | Документы Microsoft"
-ms.custom: 
+title: Устранение неполадок SharePoint упаковки и развертывания | Документы Microsoft
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Устранение неполадок, связанных с упаковкой и развертыванием решений SharePoint
   В разделе рассмотрены различные проблемы, которые могут возникнуть при упаковке и развертывании решений SharePoint.
@@ -42,7 +39,7 @@ ms.lasthandoff: 03/02/2018
  Чтобы выявить причины неполадок в Visual Studio, SharePoint и на других уровнях, можно воспользоваться разделом реестра EnableDiagnostics для просмотра трассировки стека. Дополнительные сведения см. в разделе [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Добавление выходных данных проекта в пакет решения
- Выходные данные проекта можно добавлять с помощью "Конструктора пакетов". Однако при добавлении выходных данных пакета, убедитесь, что платформа проекта соответствует платформе решения SharePoint. Мы рекомендуем использовать **любой ЦП** целевой платформы для сборок, которые вы хотите развернуть на сервере SharePoint. Дополнительные сведения см. в разделе [компиляция, конструктора проектов &#40; Visual Basic &#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) и [Дополнительные параметры компилятора &#40; Visual Basic &#41; ](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Выходные данные проекта можно добавлять с помощью "Конструктора пакетов". Однако при добавлении выходных данных пакета, убедитесь, что платформа проекта соответствует платформе решения SharePoint. Мы рекомендуем использовать **любой ЦП** целевой платформы для сборок, которые вы хотите развернуть на сервере SharePoint. Дополнительные сведения см. в разделе [страница компиляции, конструктор проектов &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) и [расширенного компилятора диалоговое окно параметров &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
 
 ## <a name="validation-warnings-and-errors"></a>Предупреждения и ошибки проверки
  Средства разработки SharePoint в Visual Studio выполняют проверочные шаги для проверки правильности формирования пакета решения. Также, для компонентов и пакетов, можно создать пользовательские проверочные шаги. Дополнительные сведения см. в разделе [как: Создание пользовательских компонентов и правила проверки пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -52,7 +49,7 @@ ms.lasthandoff: 03/02/2018
 
  В следующей таблице продемонстрированы параметры **Устранение конфликта развертывания** свойство.
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |Автоматический|Обнаруживает и разрешает конфликты автоматически.|
 |Запрашивать|Обнаруживает и выводит отчет о конфликтах для разработчика перед их разрешением.|

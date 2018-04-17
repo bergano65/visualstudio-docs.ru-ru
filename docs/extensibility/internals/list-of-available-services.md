@@ -1,35 +1,33 @@
 ---
-title: "Список доступных служб | Документы Microsoft"
-ms.custom: 
+title: Список доступных служб | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6f2caeaee433fc0c47d8332c4443d104e26a7ee7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]и пакет SDK для Visual Studio поддерживает следующие службы. Некоторые пакеты предоставляют свои собственные службы, не перечисленных здесь — например, службы языка не имеют одной службы GUID. Чтобы найти идентификатор GUID языковой службы в реестре необходимо использовать имя языка.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и пакет SDK для Visual Studio поддерживает следующие службы. Некоторые пакеты предоставляют свои собственные службы, не перечисленных здесь — например, службы языка не имеют одной службы GUID. Чтобы найти идентификатор GUID языковой службы в реестре необходимо использовать имя языка.  
   
  Используются идентификаторы GUID службы, перечисленные здесь или получены из другого источника (например, службы языков) для получения основной интерфейс, показанная с каждой службы.  
   
 ## <a name="the-services"></a>Службы  
   
-|Служба|Интерфейс|Visual Studio|Visual Studio 2005|Описание:|  
+|Служба|Интерфейс|Visual Studio|Visual Studio 2005|Описание|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Да|Да|Используется по пакетам VSPackage для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейс из элемента управления ActiveX для упрощения передачи асинхронных данных.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Нет|Да|Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> ИДЕНТИФИКАТОР C/C++: SID_SDTE|  

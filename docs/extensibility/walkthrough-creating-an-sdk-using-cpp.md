@@ -1,23 +1,21 @@
 ---
-title: "Пошаговое руководство: Создание пакета SDK с помощью C++ | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание пакета SDK с помощью C++ | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Пошаговое руководство: Создание пакета SDK с помощью C++
 В этом пошаговом руководстве демонстрируется создание собственной математические библиотеки C++ SDK, пакет SDK как Visual Studio Extension (VSIX) и затем использовать его для создания приложения. Пошаговое руководство состоит из следующие действия:  
@@ -31,7 +29,7 @@ ms.lasthandoff: 01/09/2018
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Для создания собственного и библиотеки среды выполнения Windows  
+##  <a name="createClassLibrary"></a> Для создания собственного и библиотеки среды выполнения Windows  
   
 1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/09/2018
   
 9. В строке меню последовательно выберите **Сборка**и **Собрать решение**.  
   
-##  <a name="createVSIX"></a>Создание проекта расширения NativeMathVSIX  
+##  <a name="createVSIX"></a> Создание проекта расширения NativeMathVSIX  
   
 1.  В **обозревателе решений**, откройте контекстное меню для **решения «NativeMath»**и нажмите кнопку **добавить**, **новый проект**.  
   
@@ -143,7 +141,7 @@ ms.lasthandoff: 01/09/2018
   
 18. Выберите **установить** кнопку и дождитесь завершения установки запустите Visual Studio.  
   
-##  <a name="createSample"></a>Создание примера приложения, использующего библиотеку классов  
+##  <a name="createSample"></a> Создание примера приложения, использующего библиотеку классов  
   
 1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
@@ -171,7 +169,7 @@ ms.lasthandoff: 01/09/2018
   
 9. Нажмите клавишу F5, чтобы запустить приложение.  
   
-10. В приложении, ввести любых двух чисел, выберите операцию и выберите  **=**  кнопки.  
+10. В приложении, ввести любых двух чисел, выберите операцию и выберите **=** кнопки.  
   
      Отображается правильный результат.  
   

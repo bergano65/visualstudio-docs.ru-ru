@@ -1,29 +1,25 @@
 ---
-title: "IDebugProperty2 | Документы Microsoft"
-ms.custom: 
+title: IDebugProperty2 | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2
 helpviewer_keywords:
 - IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc1305fb8534dc8e14192268913290aef25f2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb0cd134d30da277ddc1f984e0cf9e57dd5e4963
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Этот интерфейс представляет свойство кадра стека, свойство документа программы или некоторые другие свойства. Свойство обычно является результатом вычисления выражения.  
@@ -41,7 +37,7 @@ IDebugProperty2 : IUnknown
  DE реализует этот интерфейс для представления значения определенного типа. Например значение может быть числовое значение в результате вычисления выражения, контекст памяти, используемый для отображения в памяти, или список регистров и их значения.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Вызовите [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) получить этот интерфейс, который представляет результат вычисления. `IDebugExpression2::EvaluateAsync`Возвращает этот интерфейс, отправляя [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) интерфейс SDM, который в свою очередь вызывает [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) для извлечения свойства.  
+ Вызовите [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) получить этот интерфейс, который представляет результат вычисления. `IDebugExpression2::EvaluateAsync` Возвращает этот интерфейс, отправляя [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) интерфейс SDM, который в свою очередь вызывает [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) для извлечения свойства.  
   
  [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) возвращает этот интерфейс для предоставления документа связанный скрипт.  
   
@@ -54,7 +50,7 @@ IDebugProperty2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProperty2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Заполняет [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структура, описывающая свойства.|  
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|Задает значение свойства из строки.|  

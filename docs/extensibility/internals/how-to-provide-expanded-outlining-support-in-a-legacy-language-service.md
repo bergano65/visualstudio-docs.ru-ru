@@ -1,27 +1,25 @@
 ---
-title: "Укажите структурирование поддержку в языковую службу | Документы Microsoft"
-ms.custom: 
+title: Укажите структурирование поддержку в языковую службу | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
 - outlining, supporting
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1133166560fa371bbb5a2b008175034d48a2a7b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6467a1e3386daedc4a67aa420c06cf01187b8d22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Как: поддерживают расширенные структурирования в языковую службу прежних версий
 Существует два варианта для расширения структуры поддержки для вашего языка только поддерживает **свернуть в определения** команды. Можно добавить управляемые редактор структурные области и добавить управляемая клиентом структурные области.  
@@ -31,7 +29,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-implement-an-editor-controlled-outline-region"></a>Для реализации редактора управляемых структурную область  
   
-1.  Вызовите `QueryService` для<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
+1.  Вызовите `QueryService` для <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
   
      Возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.  
   

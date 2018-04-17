@@ -1,27 +1,23 @@
 ---
-title: "Поля окна свойств и интерфейсы | Документы Microsoft"
-ms.custom: 
+title: Поля окна свойств и интерфейсы | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a286d8cc782305b746789f56af431d7a62f8e2fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 Модель для выделения, чтобы определить, какие данные будут отображаться в **свойства** окно основано на окно, которое имеет фокус в Интегрированной среде разработки. Все окна и объекта в выбранный период, могут иметь его Выбор объекта контекста, помещаются в контекст глобального выделения. Среды обновляет контекст глобального выделения значениями из рамки окна, если это окно находится в фокусе. При изменении фокуса, поэтому не контекст выделения.  
@@ -49,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
  Наконец, в нижней части **свойства** окно также содержит описание полей, выбранных в **свойства** окна сетки. Дополнительные сведения см. в разделе [Получение описаний полей из окна свойств](#getting-field-descriptions-from-the-properties-window).  
   
-## <a name="updating-property-values-in-the-properties-window"></a>Обновление значений свойств в окне «Свойства»
+## <a name="updating-property-values-in-the-properties-window"></a> Обновление значений свойств в окне «Свойства»
 Существует два способа поддерживать синхронизацию окна **Свойства** с изменениями значения свойства. Первый — вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс, который предоставляет доступ к базовым функциям окон, включая доступ и создание окна инструментов и документов, предоставляемых средой. Следующие шаги описывают этот процесс синхронизации.  
   
 ### <a name="updating-property-values-using-ivsuishell"></a>Обновление значений свойств с помощью IVsUIShell  
@@ -67,7 +63,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Рекомендации по реализации интерфейса IConnection  
   
-1.  `IConnection`предоставляет доступ к подобъекту перечислителя, с <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> интерфейса. Он также предоставляет доступ для всех подобъектов точки соединения, каждый из которых реализует <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейса.  
+1.  `IConnection` предоставляет доступ к подобъекту перечислителя, с <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> интерфейса. Он также предоставляет доступ для всех подобъектов точки соединения, каждый из которых реализует <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейса.  
   
 2.  Любой объект обзора отвечает за реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> событий. Окно **Свойства** будет содержать рекомендацию события, заданного через `IConnection`.  
   
@@ -75,9 +71,9 @@ ms.lasthandoff: 12/22/2017
   
 4.  Клиент может вызвать `IConnection` интерфейс для получения доступа к подобъекту перечислителя, с <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> интерфейса. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Интерфейс может затем вызвать для перечисления точек подключения для каждого исходящего идентификатора интерфейса (IID).  
   
-5.  `IConnection`также можно вызывать для получения доступа к подобъектам точки с <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейс для каждого исходящего IID. Через <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейса, клиент запускает или завершает работу цикла рекомендаций с доступным для подключения объектом и собственной синхронизацией клиента. Клиент может также вызывать <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейс для получения объекта перечислителя с <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> интерфейс для перечисления соединений, для которых ему известно.  
+5.  `IConnection` также можно вызывать для получения доступа к подобъектам точки с <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейс для каждого исходящего IID. Через <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейса, клиент запускает или завершает работу цикла рекомендаций с доступным для подключения объектом и собственной синхронизацией клиента. Клиент может также вызывать <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейс для получения объекта перечислителя с <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> интерфейс для перечисления соединений, для которых ему известно.  
   
-## <a name="getting-field-descriptions-from-the-properties-window"></a>Получение описаний полей из окна «Свойства»
+## <a name="getting-field-descriptions-from-the-properties-window"></a> Получение описаний полей из окна «Свойства»
 В нижней части окна **Свойства** в области описания отображаются сведения, относящиеся к выбранному полю свойства. Эта функция включена по умолчанию. Если необходимо скрыть поле описания, правой кнопкой мыши щелкните окно **Свойства** и выберите пункт **Описание**. При этом также снимается флажок рядом с заголовком **Описание** в окне меню. Чтобы отобразить поле повторно, выполните те же действия для включения пункта **Описание** .  
   
  В поле описания информацию можно получить из <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Каждый метод, интерфейс, компонентный класс и т. д. может иметь нелокализованный атрибут `helpstring` в библиотеке типов. **Свойства** получает строку из <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.  

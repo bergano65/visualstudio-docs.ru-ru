@@ -1,29 +1,25 @@
 ---
-title: "IDebugProperty2::GetExtendedInfo | Документы Microsoft"
-ms.custom: 
+title: IDebugProperty2::GetExtendedInfo | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetExtendedInfo
 helpviewer_keywords:
 - IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d3dfd2111533896db2a3b298ff294ff180d4a70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e6865361ac0b518f4fa78a3521973d756e6ab780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Возвращает расширенные сведения для свойства.  
@@ -59,7 +55,7 @@ int GetExtendedInfo (
   
  Этот метод (значения GUID задаются для C#, так как имя недоступно в любой сборке) обычно распознает следующие идентификаторы GUID. Дополнительные GUID могут создаваться для внутреннего использования.  
   
-|name|Идентификатор GUID|Описание:|  
+|name|Идентификатор GUID|Описание|  
 |----------|----------|-----------------|  
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Возвращает `IUnknown` интерфейса в документ. Как правило [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) можно получить из этого интерфейса `IUnknown` интерфейса.|  
 |guidCodeContext|{e2fc65e-56ce - 11d 1-b528-00aax004a8797}|Возвращает `IUnknown` интерфейс к контексту документа. Как правило [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) можно получить из этого интерфейса `IUnknown` интерфейса.|  

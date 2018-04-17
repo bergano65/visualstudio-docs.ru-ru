@@ -1,12 +1,10 @@
 ---
-title: "Импорт элементов из существующего сайта SharePoint | Документы Microsoft"
-ms.custom: 
+title: Импорт элементов из существующего сайта SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Импорт элементов из существующего сайта SharePoint
   Шаблон проекта "Импорт пакета решения SharePoint" позволяет многократно использовать элементы, такие как типы контента и поля, из существующих сайтов SharePoint в новом решении SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Хотя большинство импортированных решений можно запускать без изменений, существуют некоторые ограничения и вопросы, которые необходимо учитывать, особенно если вы изменяете какие-либо элементы после их импорта.  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="item-name-character-limit"></a>Максимальное количество символов для имен элементов  
  В[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] существует ограничение в 260 символов для имен проекта и элементов проекта, включая путь. Если при импорте решения имя элемента превышает это ограничение, возникает ошибка:  
   
- **Указанный путь, имя файла или оба имеют слишком большую длину. Полное имя файла должно быть короче 260 символов, а имя каталога должно быть короче 248 символов.**  
+ **Указанный путь, имя файла или оба имеют слишком большую длину. Полное имя файла должно содержать меньше 260 символов, а имя каталога — меньше 248 символов**  
   
  При возникновении этой ошибки элемент не создается. Наиболее часто эта проблема возникает с импортированными модулями. Чтобы избежать этой проблемы, выполните следующие действия.  
   

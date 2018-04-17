@@ -1,12 +1,10 @@
 ---
-title: "Мастер публикации (Разработка Office в Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: Мастер публикации (Разработка Office в Visual Studio) | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Мастер публикации (разработка для Office в Visual Studio)
   Используйте **мастер публикации** для копирования файлов решения в указанном расположении, создать файлы манифеста и программу установки.  
@@ -45,9 +44,9 @@ ms.lasthandoff: 01/10/2018
   
 -   Путь соглашения об универсальных именах (UNC), такие как \\\ServerName\MyApplication\\.  
   
--   URL-адрес веб-сайта, например http://www.microsoft.com/MyApplication.  
+-   URL-адрес веб-сайта, такие как http://www.microsoft.com/MyApplication.  
   
- Расположение публикации по умолчанию — *http://localhost/projectname/* , если установлены службы IIS, или каталог publish\, если службы IIS не установлены.  
+ По умолчанию — расположение публикации *http://localhost/projectname/* Если установлены службы IIS, или каталог publish\, если это сделать службы IIS не установлены.  
   
 > [!NOTE]  
 >  Если целевой компьютер работает под управлением Windows Vista, предусмотрены дополнительные действия. Должны быть права администратора на компьютере Windows Vista для использования параметра Локальные публикации. Кроме того, по умолчанию всегда является *публикации\\*  каталог, независимо от того, что у вас есть установлены службы IIS.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>См. также  
  [Развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Публикация страницы, конструктор проектов &#40; разработка решений Office в Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Страница публикации, конструктор проектов &#40;разработка решений Office в Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
   
   

@@ -1,23 +1,21 @@
 ---
-title: "Свойства декораторов | Документы Microsoft"
-ms.custom: 
+title: Свойства декораторов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95338b26019a2faf2afc2eb6be019ac33d6ece3c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 15df31a6bdfe7e93dd6c70ccf2ef4c6b3b946d69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-decorators"></a>Свойства декораторов
 Декораторы доступны значки, текст или развернуть/свернуть угловые скобки, которые могут отображаться на формы или соединительные линии на диаграмме. В следующих таблицах показаны три типа декоратора свойства. Некоторые свойства отображаются только фигуры декораторов или только декораторов соединителя.  
@@ -26,7 +24,7 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="expandcollapse-decorator"></a>Развернуть/свернуть Decorator  
   
-|Свойство.|Описание:|По умолчанию|  
+|Свойство.|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |DisplayName|Имя decorator, которое будет отображаться в конструкторе созданный.|Развернуть свернуть Decorator|  
 |name|Имя декоратор.|ExpandCollapseDecorator|  
@@ -39,7 +37,7 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="icon-decorator"></a>Значок Decorator  
   
-|Свойство.|Описание:|По умолчанию|  
+|Свойство.|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |DefaultIcon|Путь к файлу значка или изображения для отображения.|\<None >|  
 |DisplayName|Имя декоратора для отображения в конструкторе созданный.|Значок Decorator|  
@@ -53,7 +51,7 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="textdecorator"></a>TextDecorator  
   
-|Свойство.|Описание:|По умолчанию|  
+|Свойство.|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |DefaultText|Отображаемый текст по умолчанию.|Метка|  
 |DisplayName|Имя декоратора для отображения в конструкторе созданный.|Метка|  

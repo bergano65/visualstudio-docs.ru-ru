@@ -1,28 +1,26 @@
 ---
-title: "Проекты вложение | Документы Microsoft"
-ms.custom: 
+title: Проекты вложение | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project nesting
 - nested projects
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 35d0f4f8906acc08733894d1c24b6d8c2199e1f7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="nesting-projects"></a>Вложенность проектов
 Разработчики приложений предприятия, использующие пакет VS удобным образом можно группировать схожие типы проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью *проекта вложенности*. Например проект шаблона предприятия использует вложенных проектов для проектов группы по категориям. Проекты оболочкой, проекты веб-интерфейса и так далее, группируются вместе в одной категории.  

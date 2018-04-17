@@ -1,13 +1,10 @@
 ---
-title: "Примеры разработки решений Office | Документы Microsoft"
-ms.custom: 
+title: Примеры разработки решений Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, samples
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33f9d5ebea74ca17693959a20ba568e42d824128
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-development-samples"></a>Примеры разработки решений Office
   Visual Studio содержит примеры приложений, которые демонстрируют, как использовать инструменты разработчика Microsoft Office для создания решений Office. Код в этих примерах показывает синтаксис, структуру и приемы, используемые для сборки решений Office.  

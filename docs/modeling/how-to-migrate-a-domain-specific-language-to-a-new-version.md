@@ -1,21 +1,19 @@
 ---
-title: "Как: перенос доменного языка в новую версию | Документы Microsoft"
-ms.custom: 
+title: 'Как: перенос доменного языка в новую версию | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f6aa84a55e629f003a1d9b896a5c095dc2d19ac
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d65739aa02f5e5a36f317bd113dd4dc349bde957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос доменного языка в новую версию
 Можно перенести проекты, которые определяют и используют доменного языка для [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] версии [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , включенного в состав [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -24,7 +22,7 @@ ms.lasthandoff: 02/09/2018
   
  Необходимо запустить средство миграции явным образом: оно не запускается автоматически при открытии решения в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Инструментов и документов подробные инструкции можно найти по этому пути:  
   
- **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Перед переносе проектов DSL  
  Средство миграции изменяет [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] файлы проекта (**.csproj**) и файлы решений (**.sln**).  
@@ -43,7 +41,7 @@ ms.lasthandoff: 02/09/2018
   
     -   Дважды щелкните средство в проводнике Windows (или File Explorer) или запустить средство из командной строки. Средство — в этом расположении:  
   
-         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Выберите папку, содержащую решения и проекты, которые нужно преобразовать.  
   

@@ -1,27 +1,25 @@
 ---
-title: "Как: открытие редакторов конкретного проекта | Документы Microsoft"
-ms.custom: 
+title: 'Как: открытие редакторов конкретного проекта | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ae2e634d36c13632619d01cc97d5726dc5576819
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-open-project-specific-editors"></a>Как: открытие редакторов конкретного проекта
 Если файл элемента, открываемого в проекте само по себе привязан к конкретной редактор для этого проекта, проект необходимо открыть файл с помощью редактора для конкретного проекта. Файл не может быть делегирована до механизм IDE для выбора редактора. Например вместо использования редактора стандартный рисунок, можно использовать этот параметр, редактор для конкретного проекта для указания конкретных растрового изображения редактор, который распознает сведения в файле, который является уникальным для проекта.  

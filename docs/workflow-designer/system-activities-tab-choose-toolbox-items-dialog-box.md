@@ -1,5 +1,5 @@
 ---
-title: "Откройте вкладку System.Activities и Выбор элементов панели элементов-диалоговое окно | Документы Microsoft"
+title: Откройте вкладку System.Activities и Выбор элементов панели элементов-диалоговое окно | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07da20e7d412fc9904b6af1f36406afc9c35a9e8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Вкладка «System.Activities», диалоговое окно «Выбор элементов области элементов»
 На этой вкладке **Выбор элементов панели элементов** диалоговое окно отображает список [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] действий, шаблонов и элементов, доступных пользователю. Для отображения этого списка, выберите **Выбор элементов панели элементов** из **средства** меню или щелкнув правой кнопкой мыши **элементов** и выбрав **Выбор элементов**для отображения **Выбор элементов панели элементов** диалоговое окно, а затем выберите его **System.Activities** вкладки. По умолчанию список содержит действия рабочих процессов из сборок System.Activities, System.ServiceModel.Activities и System.Activities.Core.Presentation assemblies. Однако только предоставленные системой действия и действия, добавленные из других сборок, отображаемых в **элементов** отмечены по умолчанию. Недавно добавленные действия автоматически отмечаются и появляются в **элементов** при нажатии кнопки **ОК** в диалоговом окне. Кроме того, эти элементы появляются в **элементов** в новой категории, которая соответствует пространству имен, в котором находится действие, элемент или шаблон.

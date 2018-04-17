@@ -1,23 +1,21 @@
 ---
-title: "Основы UX для Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Основы UX для Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Основы UX для Visual Studio
 ## <a name="best-practices"></a>Рекомендации  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 Принудительное пользователю выполнять чтение пояснительного текста перед закрытием пользовательского интерфейса является антишаблонов в среде Visual Studio. Правильно разработанное, видео ссылки должны отображаться подсказка с дополнительными сведениями о при наведении указателя мыши и выбрав пункт «&times;» следует закрыть сообщение без необходимости дальнейшей взаимодействовать.
 
 
- ![Пояснительный текст anti &#45; шаблон &#45; Неверный](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Шаблон неправильную ссылку на видео
+ ![Пояснительный текст anti&#45;шаблон &#45; неправильный](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Шаблон неправильную ссылку на видео
   
 #### <a name="result"></a>Результат  
  Вместо простого кнопка закрытия (одним щелчком мыши) пользователь вынужден позволяет просто закрыть пользовательский Интерфейс в каждом месте, отображаются ссылки на видео с двумя отдельными щелчками.  
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="alternatives"></a>Альтернативные варианты  
  Правильный подход для этой ситуации можно выполнить общий шаблон для Internet Explorer, Microsoft Office и Visual Studio: при наведении курсора мыши, пользователь может видеть описание элемента tooltip и одним щелчком мыши скрывает пользовательский Интерфейс.  
   
- ![Пояснительный текст anti &#45; шаблон &#45; правильный](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti исправьте шаблон")<br />Шаблон правильные ссылки на видео
+ ![Пояснительный текст anti&#45;шаблон &#45; правильный](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti исправьте шаблон")<br />Шаблон правильные ссылки на видео
   
 ### <a name="using-command-bars-for-settings"></a>Использование командной строки для параметров  
  **Рисунок А** представляет этот антишаблон: размещение параметр под Командная кнопка, применяется не только в команду. В этот эскиз есть команды, помимо начать отладку, как и представление в браузере, запуск без отладки и шаг с заходом —, будут использовать выбранный параметр.  

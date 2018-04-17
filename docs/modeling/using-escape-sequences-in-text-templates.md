@@ -1,23 +1,21 @@
 ---
-title: "Использование Escape-последовательностей в текстовых шаблонах | Документы Microsoft"
-ms.custom: 
+title: Использование Escape-последовательностей в текстовых шаблонах | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f6ab5346ed82aadea339bc8ee45ac4a3bfb72c65
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7362d6f4fa722c9ef7a119b22028baad418fbf85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Использование escape-последовательностей в текстовых шаблонах
 Можно использовать escape-последовательностей в текстовых шаблонах для генерирования тегов текстовых шаблонов и (в C# код) для управления escape-символы и кавычки.  

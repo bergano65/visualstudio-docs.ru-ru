@@ -1,21 +1,19 @@
 ---
-title: "Определение политики блокировки для создания сегментов, доступных только для чтения | Документы Microsoft"
-ms.custom: 
+title: Определение политики блокировки для создания сегментов, доступных только для чтения | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dc7e620c04e31a063bbe8fada68527d391f0a903
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 75fe3205f1b43cb21fa78976ac2547ef3bd2fdfc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 Неизменность API-Интерфейс [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] визуализации и моделирования SDK позволяет программам для блокировки всех или части модели доменного языка (DSL), чтобы его можно считывать, но не изменяется. Этот параметр только для чтения может использоваться, например, чтобы пользователь, можно попросить коллеги можно добавить заметки и просмотрите модель DSL, но запретить их изменять исходный.  
@@ -103,7 +101,7 @@ partition.SetLocks(Locks.Delete);
 -   Добавьте этот класс службы, которые доступны через DocData доменного языка.  
   
 ### <a name="to-define-a-locking-policy"></a>Для определения политики блокировки  
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>применяются следующие определения:  
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> применяются следующие определения:  
   
 ```  
 public interface ILockingPolicy  
@@ -146,7 +144,7 @@ namespace Company.YourDsl.DslPackage // Change
   
 ```  
   
- Чтобы убедиться в том, что пользователи всегда могут удалять элементы, даже если другие код вызывает метод`SetLocks(Lock.Delete):`  
+ Чтобы убедиться в том, что пользователи всегда могут удалять элементы, даже если другие код вызывает метод `SetLocks(Lock.Delete):`  
   
  `return proposedLocks & (Locks.All ^ Locks.Delete);`  
   

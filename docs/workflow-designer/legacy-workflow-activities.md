@@ -1,5 +1,5 @@
 ---
-title: "Действия рабочего процесса прежних версий | Документы Microsoft"
+title: Действия рабочего процесса прежних версий | Документы Microsoft
 ms.date: 01/18/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c719725f3d4ebfffe291ff31115ddd0cc5f3d4
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-workflow-activities"></a>Действия с рабочими процессами для прежних версий
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/12/2018
 
  В следующей таблице приведен набор предопределенных действий среды [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]. Многие, но не все из этих действий представлены конструкторами действий, которые можно получить доступ из **элементов** из [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Чтобы создать действие, перетащите его конструктор из **элементов** и поместите его в рабочей области конструирования.
 
-|Действие|Описание:|
+|Действие|Описание|
 |--------------|-----------------|
 |<xref:System.Workflow.Activities.CallExternalMethodActivity>|При использовании **HandleExternalEventActivity** действия для входящих и исходящих взаимодействий с локальными службами. Дополнительные сведения см. в разделе [использование действия CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65060).|
 |**System.Workflow.Activities.CancellationHandlerActivity**|Используется для хранения логики сложного действия, отмененного до завершения выполнения всех дочерних элементов составного действия. Дополнительные сведения см. в разделе [использование действия CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65061).|

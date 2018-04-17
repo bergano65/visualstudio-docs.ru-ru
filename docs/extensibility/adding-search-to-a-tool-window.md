@@ -2,26 +2,22 @@
 title: Добавление в окно инструментов поиска | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-caps.latest.revision: 38
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d37956c01cbbebbe29d7506cf5eacd9456b3bbc1
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d4b89cbaa1afa4fd961baf139eeebcff19c8d48f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-search-to-a-tool-window"></a>Добавление поиска в окно инструментов
 При создании или обновлении расширения окна инструментов, можно добавить те же функциональные возможности поиска, которое отображается в другом месте в Visual Studio. Эти функции включают следующие компоненты:  

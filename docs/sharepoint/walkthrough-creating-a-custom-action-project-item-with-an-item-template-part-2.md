@@ -1,25 +1,24 @@
 ---
-title: "Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2 | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2 | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите его с шаблоном элемента в Visual Studio, можно также создать мастер для шаблона. Мастер можно использовать для сбора информации от пользователей, при использовании шаблона для добавления в проект новый экземпляр элемента проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Выберите **Библиотека пользовательских элементов управления WPF** шаблон проекта, присвойте проекту имя **ItemTemplateWizard**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **ItemTemplateWizard** проекта в решение.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **ItemTemplateWizard** проекта в решение.  
   
 6.  Удаление элемента управления UserControl1 из проекта.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Дополнительные сведения о `WizardExtension` элемент, в разделе [элемент WizardExtension &#40; Шаблоны Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Дополнительные сведения о `WizardExtension` элемент, в разделе [элемент WizardExtension &#40;шаблоны Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Сохраните и закройте файл.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      **Параметры списка** появится страница.  
   
-4.  В разделе **связи** заголовок в верхней части страницы выберите **центр разработки SharePoint** связывания, убедитесь, что в браузере будет открыта http://msdn.microsoft.com/sharepoint/ веб-сайта Default.aspx, а затем закройте браузер.  
+4.  В разделе **связи** заголовок в верхней части страницы выберите **центр разработки SharePoint** связывания, убедитесь, что в браузере будет открыта веб-сайт http://msdn.microsoft.com/sharepoint/default.aspxи затем закройте браузер.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Очистка компьютера разработчика  
  После завершения тестирования элемента проекта удалите шаблон элемента проекта из экспериментального экземпляра Visual Studio.  

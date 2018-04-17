@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eec0f2eaf7cc415e026a8427f7a881cd7ed15160
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5814262d68d9bf32ee3a0f72e3e0a15811a75a9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
-  В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Возможности, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Возможности, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Нажмите кнопку **ОК**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает **FirstPowerPointAddIn** проект и открывает **ThisAddIn** файл исходного кода в редакторе.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает **FirstPowerPointAddIn** проект и открывает **ThisAddIn** файл исходного кода в редакторе.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Написание кода, добавляющего текст в каждый новый слайд  
  Затем добавьте код в файл ThisAddIn. Новый код использует объектную модель PowerPoint для добавления текстового поля в каждый новый слайд. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  

@@ -1,26 +1,24 @@
 ---
-title: "Элемент CommandPlacement | Документы Microsoft"
-ms.custom: 
+title: Элемент CommandPlacement | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a6a5c8d9220b0cd2c0dddfee283d222f4efb9ab8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 14f28c8e2758d2dde9cf38db268abc9fa9b4f863
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commandplacement-element"></a>Элемент CommandPlacement
 Элемент CommandPlacement включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню. С помощью элемента CommandPlacement, полностью переопределять эти элементы для изменения внешнего вида пользовательского интерфейса не нужно.  
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор guid набора команд, как определено в [символы элемент](../extensibility/symbols-element.md).|  
 |id|Обязательно. Идентификатор меню, группу или команду, чтобы разместить, как определено в `Symbols Element`.|  
@@ -49,13 +47,13 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Родительский|Обязательно. Меню или группы, на котором размещается элемент должен располагаться.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Определяет группы, CommandPlacements и CommandPlacement элементов.|  
   

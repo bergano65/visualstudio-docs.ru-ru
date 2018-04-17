@@ -1,32 +1,30 @@
 ---
-title: "Использование RDT_ReadLock | Документы Microsoft"
-ms.custom: 
+title: Использование RDT_ReadLock | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
 - visible
 - RDT_EditLock
 - invisible
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31c13d9255442459c884379e83b619e1f73a1c2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fda2fbb4a4b03dff9d677d9c7581a4138d9fcf7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rdtreadlock-usage"></a>Использование RDT_ReadLock
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>представляет собой флаг, который предоставляет логику для блокировки документа на в под управлением документа таблицы (RDT), который приводится список все документы, открытые в настоящий момент в Интегрированной среде разработки Visual Studio. Этот флаг определяет, при открытии документов и является ли документ видимым в пользовательском интерфейсе или принудительное незаметно в памяти.
+<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> представляет собой флаг, который предоставляет логику для блокировки документа на в под управлением документа таблицы (RDT), который приводится список все документы, открытые в настоящий момент в Интегрированной среде разработки Visual Studio. Этот флаг определяет, при открытии документов и является ли документ видимым в пользовательском интерфейсе или принудительное незаметно в памяти.
 
 Как правило, используется <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> когда верно одно из следующих:
 
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock и изменение документа
 
-Флаг предыдущих упомянутые указывает, что даст невидимой Открытие документа его `RDT_EditLock` при открытии документа пользователем в видимое **DocumentWindow**. В этом случае пользователю предоставляется **Сохранить** приглашение по видимых **DocumentWindow** закрыт. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel`реализации, использующие <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> служба изначально работать, только если `RDT_ReadLock` извлекается (т. е. когда документ будет открыт незаметно для синтаксического анализа данных). Позже, если требуется изменить документ, затем блокировки будет обновлена до слабым **RDT_EditLock**. Если пользователь затем открывает документ в видимое **DocumentWindow**, `CodeModel`слабое `RDT_EditLock` освобождается.
+Флаг предыдущих упомянутые указывает, что даст невидимой Открытие документа его `RDT_EditLock` при открытии документа пользователем в видимое **DocumentWindow**. В этом случае пользователю предоставляется **Сохранить** приглашение по видимых **DocumentWindow** закрыт. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` реализации, использующие <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> служба изначально работать, только если `RDT_ReadLock` извлекается (т. е. когда документ будет открыт незаметно для синтаксического анализа данных). Позже, если требуется изменить документ, затем блокировки будет обновлена до слабым **RDT_EditLock**. Если пользователь затем открывает документ в видимое **DocumentWindow**, `CodeModel`слабое `RDT_EditLock` освобождается.
 
 Если пользователь закрывает **DocumentWindow** и выбирает **нет** при запросе на сохранение открытых документов, то `CodeModel` реализация удаляет все сведения в документе и открытия документ с диска незаметно при очередном Дополнительные сведения не требуются для документа. Особенность такое поведение является экземпляром, когда пользователь открывает **DocumentWindow** невидимой открытого документа, его изменение, закрывает его и затем выбирает **нет** при запросе на сохранение документа. В этом случае, если документ имеет `RDT_ReadLock`, документ фактически не закрывается и измененный документ остается открытым незаметно в памяти, несмотря на то, что пользователь не был сохранен в документе.
 

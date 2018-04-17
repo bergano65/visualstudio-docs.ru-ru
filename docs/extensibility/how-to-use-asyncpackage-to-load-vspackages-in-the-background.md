@@ -1,23 +1,19 @@
 ---
-title: "Как: используется для загрузки пакетов VSPackage в фоновом режиме AsyncPackage | Документы Microsoft"
-ms.custom: 
+title: 'Как: используется для загрузки пакетов VSPackage в фоновом режиме AsyncPackage | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.technology: vs-ide-sdk
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97f21f75020e77cf6780fa71c21eae827940d9ec
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: bc014b2072c5e6472d17095f0c0789c35116a3c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Как: использовать AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
 Загрузка и инициализация пакета VS может привести к дискового ввода-вывода. Если таких операций ввода-вывода происходит в потоке пользовательского интерфейса, он может привести к проблемам скорости реагирования. Для решения этой проблемы Visual Studio 2015 появился <xref:Microsoft.VisualStudio.Shell.AsyncPackage> класс, который позволяет загрузка пакета в фоновом потоке.  

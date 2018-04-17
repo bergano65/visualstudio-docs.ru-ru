@@ -1,32 +1,30 @@
 ---
-title: "Какой &#39; новые возможности системы управления версиями | Документы Microsoft"
-ms.custom: 
+title: Что&#39;новые возможности системы управления версиями | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>Какой &#39; новые возможности системы управления версиями
+# <a name="what39s-new-in-source-control"></a>Что&#39;новые возможности системы управления версиями
 В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] может обеспечить решение управления глубокий уровень интеграции источника, реализовав VSPackage системы управления версиями. В этом разделе описаны возможности системы управления версиями пакетов VSPackage и общие сведения о реализации действий.  
   
 ## <a name="the-source-control-vspackage"></a>VSPackage управления источника  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]поддерживает два типа исходного решения для управления. Во всех версиях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], можно интегрировать на основе API подключаемых модулей для управления источника подключаемого модуля. Можно также создать пакет VSPackage для системы управления версиями, которая предоставляет прямой интеграции [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] подходит для решения для управления источника, которые требуется высокий уровень квалификации и автономность.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает два типа исходного решения для управления. Во всех версиях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], можно интегрировать на основе API подключаемых модулей для управления источника подключаемого модуля. Можно также создать пакет VSPackage для системы управления версиями, которая предоставляет прямой интеграции [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] подходит для решения для управления источника, которые требуется высокий уровень квалификации и автономность.  
   
  VSPackage может добавлять практически любые функциональные возможности для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Элемент управления источником VSPackage предоставляет полный исходный элемент управления [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], из пользовательского интерфейса, которые отображаются для пользователя, для обмена данными между серверную систему управления версиями.  
   

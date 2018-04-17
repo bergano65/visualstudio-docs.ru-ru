@@ -1,12 +1,10 @@
 ---
-title: "Как: программное создание элемента электронной почты | Документы Microsoft"
-ms.custom: 
+title: 'Как: программное создание элемента электронной почты | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 213fe5c13e4882eac450335b672731df2072c69f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3e6fedb9024dcb965917492b3eb8f759c0f6c8ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-create-an-e-mail-item"></a>Практическое руководство. Программное создание элемента электронной почты
   В этом примере создается сообщение электронной почты в Microsoft Office Outlook.  

@@ -1,12 +1,10 @@
 ---
-title: "Позднее связывание в решениях Office | Документы Microsoft"
-ms.custom: 
+title: Позднее связывание в решениях Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Позднее связывание в решениях Office
   Некоторые типы в объектных моделях приложений Office предоставляют функциональные возможности, доступные через компоненты позднего связывания. Например некоторые методы и свойства могут возвращать различные типы объектов в зависимости от контекста приложения Office, и некоторые типы могут предоставлять различные методы или свойства в различных контекстах.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  В большинстве случаев в справочной документации перечислены возможные типы возвращаемого значения для элемента, который возвращает <xref:System.Object>. Преобразование или приведение объекта дает возможность IntelliSense для объекта в редакторе кода.  
   
- Сведения о преобразовании в Visual Basic см. в разделе [неявные и явные преобразования &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) и [функция CType &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Сведения о преобразовании в Visual Basic см. в разделе [неявные и явные преобразования &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) и [функция CType &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Примеры  
  В следующем примере кода показано, как приведение объекта к определенному типу в проекте Visual Basic где **Option Strict** включен. Такой тип проекта, необходимо явно привести <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> свойства <xref:Microsoft.Office.Interop.Excel.Range>. В этом примере требуется проект Excel на уровне документа с классом листа `Sheet1`.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>См. также  
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Использование типа dynamic &#40; И &#35; Руководство по программированию &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Использование типа dynamic &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Оператор Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection) (Отражение (C#))  
  [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection) (Отражение (Visual Basic))  

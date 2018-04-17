@@ -1,13 +1,10 @@
 ---
-title: "Объединение настроек VBA и настроек на уровне документа | Документы Microsoft"
-ms.custom: 
+title: Объединение настроек VBA и настроек на уровне документа | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
 - VST.VBAInterop.ProjectLoadFailure
@@ -27,14 +24,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 63f316d3ac6fefbef37735cddc8fb7a87a8d4bfb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 01870498522ce138925fdaaf4c6ada9b13961f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>Объединение настроек VBA и настроек на уровне документа
   Код Visual Basic для приложений (VBA) можно использовать в документе, который является частью настройки на уровне документа для Microsoft Office Word или Microsoft Office Excel. Код VBA можно вызывать в документе из сборки настройки, или проект можно настроить таким образом, чтобы позволить коду VBA в документе вызывать код в сборке настройки.  
@@ -120,7 +117,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
     3.  Для свойства **ReferenceAssemblyFromVbaProject** любого класса ведущего элемента в проекте установите значение **True**. Это внедряет библиотеку типов сборки настройки в саму сборку и добавляет ссылку на библиотеку типов в проект VBA в документе.  
   
- Подробные инструкции см. в разделе [как: предоставлять к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) и [как: предоставлять к коду VBA в Visual C &#35; Проект](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Подробные инструкции см. в разделе [как: предоставлять к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) и [как: предоставлять к коду VBA в Visual C&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Свойства **EnableVbaCallers** и **ReferenceAssemblyFromVbaProject** доступны в окне **Свойства** только во время разработки. Они не могут использоваться во время выполнения. Для просмотра свойств откройте конструктор для ведущего элемента в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения о конкретных задачах, выполняемых в Visual Studio при задании этих свойств, см. в статье [Задачи, выполняемые свойствами ведущих элементов](#PropertyTasks).  
   
@@ -256,9 +253,9 @@ GetManagedClass(pdispInteropObject Object) As Object
   
 ## <a name="see-also"></a>См. также  
  [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Как: предоставлять к коду VBA в Visual C &#35; Проект](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Как: предоставлять к коду VBA в Visual C&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Пошаговое руководство: Вызов кода из VBA в Visual C &#35; Проект](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Пошаговое руководство: Вызов кода из VBA в Visual C&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [VBA и решений Office в Visual Studio по сравнению](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  

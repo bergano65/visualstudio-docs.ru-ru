@@ -1,26 +1,24 @@
 ---
-title: "Практическое руководство: Отладка модулем отладки | Документы Microsoft"
-ms.custom: 
+title: 'Практическое руководство: Отладка модулем отладки | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0b814b441846479163aad4e003480cc9cfadde44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 95a2db2bc5e8990f536abc851941c337a1dee277
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Практическое руководство: Отладка модулем отладки
 Тип проекта запускается отладчик (DE) из <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> метод. Это означает, что DE запускается под управлением экземпляра [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] управление типа проекта. Тем не менее что экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не удается выполнить отладку DE. Какие следующим приведены шаги для отладки вашего пользовательского DE.  

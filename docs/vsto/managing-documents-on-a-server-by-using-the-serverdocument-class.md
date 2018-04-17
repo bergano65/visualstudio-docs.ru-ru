@@ -1,12 +1,10 @@
 ---
-title: "Управление документами на сервере с помощью класса ServerDocument | Документы Microsoft"
-ms.custom: 
+title: Управление документами на сервере с помощью класса ServerDocument | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2120e7c70abaddd4f51c0214a2c5ae517cf955cc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ef676de4ff352a557019f68037203364a97834d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Managing Documents on a Server by Using the ServerDocument Class
   Можно использовать в класса ServerDocument [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] для управления несколькими аспектами настроек уровня документа, даже если не установлено приложение Microsoft Office Word и Microsoft Office Excel. Можно выполнять следующие задачи:  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  При наличии устаревшего приложения, использующего класса ServerDocument в Visual Studio Tools для системы Microsoft Office (версия 3.0 среды выполнения), Visual Studio Tools для системы Microsoft Office (версии 3.0 среды выполнения) должен устанавливаться на компьютерах под управлением приложения. Средства Visual Studio 2010 для Office Runtime не может запускать эти приложения.  
   
-##  <a name="CachedData"></a>Работа с кэшированными данными в документе  
+##  <a name="CachedData"></a> Работа с кэшированными данными в документе  
  Класса ServerDocument содержит члены, которые можно использовать для работы с кэшем данных в настроенных документах. Дополнительные сведения о кэшированных данных см. в разделе [кэширование данных](../vsto/caching-data.md) и [доступ к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  В следующей таблице перечислены члены, которые можно использовать для работы с кэшированными данными.  
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
 |Чтобы определить, имеет ли документ кэш данных.|метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A>;|  
 |Для доступа к кэшированным данным в документе.<br /><br /> Для получения дополнительной информации см. [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).|Свойство <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>.|  
   
-##  <a name="CustomizationInfo"></a>Управление настройкой документа  
+##  <a name="CustomizationInfo"></a> Управление настройкой документа  
  Члены класса ServerDocument можно использовать для управления сборкой настройки, связанной с документом. Программным образом, удаление настройки из документа, чтобы документ больше не является частью настройки.  
   
  Ниже перечислены члены, которые можно использовать для управления сборки настройки.  

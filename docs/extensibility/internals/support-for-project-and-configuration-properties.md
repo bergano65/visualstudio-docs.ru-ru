@@ -1,26 +1,24 @@
 ---
-title: "Поддержка проектов и свойства конфигурации | Документы Microsoft"
-ms.custom: 
+title: Поддержка проектов и свойства конфигурации | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Поддержка и свойств конфигурации проекта
 **Свойства** окна в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) может отображать свойства проекта и конфигурации. Чтобы обеспечить страницу свойств для типа проекта, чтобы пользователь может задать свойства для вашего приложения.  
@@ -32,7 +30,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="persistence-of-project-and-configuration-properties"></a>Сохранение и настройка свойств проекта  
  Свойства проектов и конфигурации сохраняются в файле проекта, который имеет расширение имени файла, связанного с типом проекта, например, .csproj, .vbproj и .myproj. Обычно проекты языка использовать файл шаблона для создания файла проекта. Однако фактически несколькими способами для связи типа и шаблонов проекта. Дополнительные сведения см. в разделе [описание шаблона каталога (. Файлы VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Свойства проектов и конфигурации создаются путем добавления элементов в файле шаблона. Затем эти свойства доступны для любой проект, созданный с помощью типа проекта, использующего этот шаблон. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]проекты и MPFProj, используют [не в сборке: Обзор MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) схема для файлов шаблонов. Эти файлы имеют раздел PropertyGroup для каждой конфигурации. Свойства проектов обычно сохраняются в первом разделе PropertyGroup, имеет аргумент конфигурации пустой строкой.  
+ Свойства проектов и конфигурации создаются путем добавления элементов в файле шаблона. Затем эти свойства доступны для любой проект, созданный с помощью типа проекта, использующего этот шаблон. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] проекты и MPFProj, используют [не в сборке: Обзор MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) схема для файлов шаблонов. Эти файлы имеют раздел PropertyGroup для каждой конфигурации. Свойства проектов обычно сохраняются в первом разделе PropertyGroup, имеет аргумент конфигурации пустой строкой.  
   
  В следующем коде показано начало базовый файл проекта MSBuild.  
   
@@ -62,9 +60,9 @@ ms.lasthandoff: 01/22/2018
   
  `SettingsPage` Класса и `Microsoft.VisualStudio.Package.ProjectNode` класса предоставляют эти методы для сохранения свойства проекта и конфигурации:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`и `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` сохранять сведения о свойствах проекта.  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` и `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` сохранять сведения о свойствах проекта.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`и `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` сохранения свойств конфигурации.  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` и `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` сохранения свойств конфигурации.  
   
     > [!NOTE]
     >  Реализации `Microsoft.VisualStudio.Package.SettingsPage` и `Microsoft.VisualStudio.Package.ProjectNode` классы используют `Microsoft.Build.BuildEngine` методы get и set свойства проекта и конфигурации из файла проекта (MSBuild).  

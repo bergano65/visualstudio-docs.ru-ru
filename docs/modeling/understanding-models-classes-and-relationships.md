@@ -1,23 +1,21 @@
 ---
-title: "Общие сведения о моделях, классы и отношения | Документы Microsoft"
-ms.custom: 
+title: Общие сведения о моделях, классы и отношения | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c0e2faf70c6d5857d967fc26e88242c54ea9906f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95584a1fc0cb8652a060d19c8e76be476c10c1bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Сведения о моделях, классах и отношениях
 Доменный язык (DSL), определяется его файл определения DSL вместе с любой пользовательской программы код, который вы могли бы написать. Большая часть программного кода в решении DSL создается из этого файла.  
@@ -27,7 +25,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="the-dsl-definition"></a>Определение DSL  
  При открытии `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] окно напоминает следующий рисунок.  
   
- ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![Конструктор DSL](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Наиболее важные сведения в определения DSL отображается в схема определения DSL. Дополнительные сведения, которые также является частью DslDefinition.dsl, отображается в обозревателе DSL, которая обычно появляется у части диаграммы. Работа с диаграммой для наиболее частых задач и с помощью обозревателя DSL для дополнительной настройки.  
   
@@ -135,7 +133,7 @@ ms.lasthandoff: 02/09/2018
   
  Настройка кратности роли, введя на диаграмме или путем изменения `Multiplicity` свойство в **свойства** окна. В следующей таблице описаны параметры для этого свойства.  
   
-|Количество элементов типа|Описание:|  
+|Количество элементов типа|Описание|  
 |-----------------------|-----------------|  
 |0.. * (ноль или более)|Каждый экземпляр класса домена может иметь несколько экземпляров связи или нет экземпляров связи.|  
 |От 0 до 1 (ноль к одному)|Каждый экземпляр класса домена может иметь не более одной связи или нет экземпляров связи.|  

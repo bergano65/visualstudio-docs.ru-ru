@@ -1,13 +1,10 @@
 ---
-title: "Изменения проектирования проектов Office, ориентированных на .NET Framework 4 или .NET Framework 4.5 | Документы Microsoft"
-ms.custom: 
+title: Изменения проектирования проектов Office, ориентированных на .NET Framework 4 или .NET Framework 4.5 | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Изменения проектирования проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4.5
   Начиная с версии [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], в Visual Studio появился ряд изменений в структуре проектов Office, которые ориентируются на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию. Если вы знакомы с проектами Office в предыдущих версиях Visual Studio, вам следует ознакомиться с этими изменениями до разработки проектов Office, ориентированных на платформу .NET Framework версии 4.0 или более поздней. По умолчанию, все проекты, создаваемые с помощью Visual Studio 2013 или более поздней версии, ориентируются на платформу .NET Framework 4.0 или более поздней версии.  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |Изменился синтаксис методов GetVstoObject и HasVstoObject|Необходимо передать объект Globals.Factory этих методов при доступе к ним в собственных объектах из основных сборок взаимодействия (PIA), или использовать эти методы для объекта, который возвращается свойством Globals.Factory в своем проекте. Дополнительные сведения см. в разделе [обновление проектов Excel и Word, переносятся на платформу .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |События элементов управления содержимым Word связаны с новыми делегатами.|Необходимо изменить любой код, который обрабатывает события элементов управления содержимым Word, и указать новые делегаты. Дополнительные сведения см. в разделе [обновление проектов Excel и Word, переносятся на платформу .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Классы OLEObject и OLEControl были переименованы.|Необходимо изменить любой код, который использует экземпляры этих классов, чтобы использовать вместо них объекты <xref:Microsoft.Office.Tools.Excel.ControlSite> или <xref:Microsoft.Office.Tools.Word.ControlSite> . Дополнительные сведения см. в разделе [обновление проектов Excel и Word, переносятся на платформу .NET Framework 4 или .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Классы ведущих элементов, таких как `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, и `ThisAddIn`, больше не предоставляют метод Dispose, который можно переопределить.|Необходимо переместить любой код в переопределение метода Dispose в обработчик событий завершения работы в классе ведущего элемента, например, `ThisAddIn_Shutdown`и удалить переопределение метода Dispose из класса ведущего элемента.|  
+|Классы ведущих элементов, таких как `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, и `ThisAddIn`, больше не предоставляют метод Dispose, который можно переопределить.|Необходимо переместить любой код в переопределение метода Dispose в обработчик событий завершения работы в классе ведущего элемента, например, `ThisAddIn_Shutdown`и удалить переопределение метода Dispose из класса ведущего элемента.|  
   
 ## <a name="see-also"></a>См. также  
  [Перенос решений Office на платформу .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

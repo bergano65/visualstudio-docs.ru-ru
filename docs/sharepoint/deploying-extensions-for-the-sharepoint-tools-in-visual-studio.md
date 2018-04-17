@@ -1,13 +1,10 @@
 ---
-title: "Развертывание расширений для средств SharePoint в Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Развертывание расширений для средств SharePoint в Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Разработка расширений для средств SharePoint в Visual Studio
   Чтобы развернуть расширение инструментов SharePoint, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX), который содержит сборку расширения и другие файлы, которые требуется распространить с расширением. Пакет VSIX представляет сжатый файл, который соответствует стандарту Open Packaging Conventions (OPC). Пакеты VSIX имеют используется расширение VSIX.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  В **обозревателе решений**, откройте контекстное меню для шаблона проекта или элемента проекта и нажмите кнопку **выгрузить проект**.  
   
-7.  Снова откройте контекстное меню узла проекта и выберите **изменить***Имя_проекта_шаблона***.csproj** или **изменить**  *Имя_проекта_шаблона***.vbproj**.  
+7.  Снова откройте контекстное меню узла проекта и выберите **изменить***Имя_проекта_шаблона***.csproj** или **изменить***Имя_проекта_шаблона***. VBPROJ**.  
   
 8.  Выберите следующее `VSTemplate` элемента в файле проекта.  
   

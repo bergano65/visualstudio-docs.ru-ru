@@ -1,26 +1,24 @@
 ---
-title: "Элемент строки | Документы Microsoft"
-ms.custom: 
+title: Элемент строки | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 61d6498cafaf97033864bc31d55c257c9a3a564f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c5994144f07b8af84f61d7833737f45593c551b2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="strings-element"></a>Элемент строки
 Элемент строки должен содержать по крайней мере **ButtonText** дочерний элемент. Все дочерние элементы являются необязательными. Недопустимый XML символы, такие как «&» и "<" должны быть реализованы как сущности ("&amp;«и»&lt;" и т. д).  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |ButtonText|Это поле и пять следующие текстовые поля в определение команды позволяют указать текст, отображаемый в разных меню. По умолчанию `ButtonText` поле отображается в контроллеры меню. `ButtonText` Поле становится значением по умолчанию, если другие текстовые поля остаются пустыми. `ButtonText` Поля не может быть пустым, даже если указаны другие текстовые поля.|  
 |ToolTipText|`ToolTipText` Поле указывает текст, отображаемый в подсказке для элемента меню.<br /><br /> Если `ToolTipText` поле не заполнено, `ButtonText` используется поле.|  
@@ -58,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Button](../extensibility/button-element.md)|Определяет элемент, который пользователь может взаимодействовать с.|  
 |[Элемент Menu](../extensibility/menu-element.md)|Определяет отдельный элемент меню.|  

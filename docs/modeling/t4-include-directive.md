@@ -1,21 +1,19 @@
 ---
-title: "T4 Директива Include | Документы Microsoft"
-ms.custom: 
+title: T4 Директива Include | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4cfa7742a75b24288ef3617d8195a75e13d8e817
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-include-directive"></a>Директива Include T4
 В текстовый шаблон в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно включить текст из другого файла, воспользовавшись директивой `<#@include#>`. Директивы `include` можно разместить в любом месте текстового шаблона перед первым блоком функций класса `<#+ ... #>`. Включенные файлы также могут содержать директивы `include` и другие директивы. Это позволяет использовать один и тот же код шаблона и стандартный текст в нескольких шаблонах.  
@@ -111,7 +109,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a>Использование свойств проекта в MSBuild и Visual Studio  
+##  <a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio  
  Несмотря на то, что в директиве include можно использовать макросы Visual Studio, такие как $ (solutiondir), они не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.  
   
  Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myIncludeFolder`.  

@@ -1,12 +1,10 @@
 ---
-title: "Защита паролем в документах Office | Документы Microsoft"
-ms.custom: 
+title: Защита паролем в документах Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 52cadcec85580a9214da844bf887323227490f22
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5d85f1dc0aa54da22b02259aea372f2ad6dd42ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="password-protection-on-office-documents"></a>Защита паролей в документах Office
   Можно задать пароль документы Microsoft Office Word и книг Microsoft Office Excel, чтобы они не может быть открыта тем, кто знает пароль. Этот параметр называется **пароль для открытия**.  

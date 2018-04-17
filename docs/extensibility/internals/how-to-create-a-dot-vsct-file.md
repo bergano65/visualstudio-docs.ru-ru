@@ -1,27 +1,23 @@
 ---
-title: "Как: создать. Vsct-файле | Документы Microsoft"
-ms.custom: 
+title: 'Как: создать. Vsct-файле | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64d9b35030a18a6258de52ed0f12f9796044ba5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c6456b0b866f08956862fa197719354bedf0ecf6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-vsct-file"></a>Как: создать. Vsct-файла  
   
@@ -102,9 +98,9 @@ ms.lasthandoff: 12/22/2017
   
 3.  В командной строке Visual Studio перейдите в каталог, содержащий файлы CTO и CTSYM.  
   
-4.  Введите **vsct.exe** *ctofilename***.cto** *vsctfilename***.vsct -S***symfilename***.ctsym**.  
+4.  Тип **vsct.exe** *ctofilename *** .cto** * vsctfilename***.vsct -S***symfilename ***.ctsym**.  
   
-     `ctofilename`Имя файла cto `vsctfilename` имя файла vsct, который нужно создать, и `symfilename` имя файла ctsym.  
+     `ctofilename` Имя файла cto `vsctfilename` имя файла vsct, который нужно создать, и `symfilename` имя файла ctsym.  
   
      В результате этого процесса будет создан файл компилятора таблицы команд XML. Этот файл можно изменить и скомпилировать с помощью vsct.exe, компилятора VSCT, как и любой другой файл VSCT.  
   

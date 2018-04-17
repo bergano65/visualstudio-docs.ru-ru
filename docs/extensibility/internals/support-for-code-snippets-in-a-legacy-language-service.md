@@ -1,27 +1,25 @@
 ---
-title: "Поддержка фрагментов кода в языковую службу прежних версий | Документы Microsoft"
-ms.custom: 
+title: Поддержка фрагментов кода в языковую службу прежних версий | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: eb62481b9ba2c42ed067275480ba137b151a483b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковую службу прежних версий
 Фрагмент кода — это часть кода, вставляемый в файл исходного кода. Самого фрагмента является шаблоном на основе XML с набором полей. Эти поля будут выделены после вставки фрагмента кода, а также могут иметь разные значения в зависимости от контекста, в которую вставляется фрагмент. Сразу после вставки фрагмента кода, служба языка можно форматировать фрагмента кода.  
@@ -87,7 +85,7 @@ ms.lasthandoff: 12/22/2017
   
  Следующие элементы подстановки может быть помещен в путь, хранящийся в \<DirPath > тег в файле индекса.  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |% LCID %|Идентификатор языка.|  
 |% Корневого_каталога_установки %|Корневой каталог установки для Visual Studio, например, C:\Program Files\Microsoft Visual Studio 8.|  

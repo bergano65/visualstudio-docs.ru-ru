@@ -1,30 +1,26 @@
 ---
-title: "Элемент SupportsCodeSeparation (шаблоны Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: Элемент SupportsCodeSeparation (шаблоны Visual Studio) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: affe4d6c73271bea467e373bd8100b3b7f06c0ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Элемент SupportsCodeSeparation (шаблоны проектов Visual Studio)
 Указывает ли **поместить код в отдельный файл** флажок будет доступен в **Добавление нового элемента** диалоговое окно.  
@@ -50,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет его отображения в любом **новый проект** или **новый элемент** диалоговое окно.|  
   
@@ -64,7 +60,7 @@ ms.lasthandoff: 12/22/2017
   
  `SupportsCodeSeparation` Элемент доступен только для веб-шаблоны элемента.  
   
- Разделение кода или модель страницы с выделенным кодом позволяет поместить разметку в один файл и программный код — в другой файл. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]и других языков .NET использовать эту модель.  
+ Разделение кода или модель страницы с выделенным кодом позволяет поместить разметку в один файл и программный код — в другой файл. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и других языков .NET использовать эту модель.  
   
 ## <a name="example"></a>Пример  
  В следующем примере задается для отображения **поместить код в отдельный файл** параметр.  

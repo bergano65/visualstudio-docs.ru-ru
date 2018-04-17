@@ -1,5 +1,5 @@
 ---
-title: "Справка пользовательского интерфейса конструктора рабочих процессов | Документы Microsoft"
+title: Справка пользовательского интерфейса конструктора рабочих процессов | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: f7afc443-7c7f-4b0f-9517-c58070a640de
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a3a0a8ce47958e00678806aae151c1d715f6f1
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 8049362e7765b2ac9f8f3529f8d283ca43bc7b13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="workflow-designer-ui-help"></a>Справка по пользовательскому интерфейсу конструктора рабочих процессов
 Этот раздел содержит разделы контекстной справки для конструктора рабочих процессов Windows. При работе [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], эти разделы доступны из пользовательского интерфейса, нажав клавишу **F1** при [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] используется диалоговое окно открытым.

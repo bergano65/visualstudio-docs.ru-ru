@@ -1,28 +1,26 @@
 ---
-title: "Выбор и денежные единицы в Интегрированной среде разработки | Документы Microsoft"
-ms.custom: 
+title: Выбор и денежные единицы в Интегрированной среде разработки | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Выбор и денежные единицы в Интегрированной среде разработки
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) хранит сведения о пользователях в данный момент выбранные объекты с помощью выбора *контекста*. С контекстом выбора пакеты VSPackage могут участвовать в валюте отслеживания двумя способами:  
@@ -34,11 +32,11 @@ ms.lasthandoff: 12/22/2017
 ## <a name="selection-context"></a>Выделенный фрагмент  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE глобально хранит отслеживания о валюте интегрированной среды разработки в свой собственный объект контекста глобального выделения. В следующей таблице показаны элементы, которые составляют контекст выделения.  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Текущей иерархии|Обычно текущий проект; текущей иерархии NULL указывает текущее решение в целом.|  
 |Идентификатор текущего элемента|Выбранный элемент в текущей иерархии; Если существует несколько вариантов выбора в окне проекта, может быть несколько текущих элементов.|  
-|Текущий`SelectionContainer`|Содержит один или несколько объектов, для которых в окне свойств должны отображаться свойства.|  
+|Текущий `SelectionContainer`|Содержит один или несколько объектов, для которых в окне свойств должны отображаться свойства.|  
   
  Кроме того среда поддерживает два глобальных списков:  
   

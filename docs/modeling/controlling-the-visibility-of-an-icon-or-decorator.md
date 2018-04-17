@@ -1,21 +1,19 @@
 ---
-title: "Управление видимостью значка или Decorator | Документы Microsoft"
-ms.custom: 
+title: Управление видимостью значка или Decorator | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 835d9d356a06c831bb3decf6d0a5a6a4b5620302
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7682bbb448caa6dbd1938dfc6dcdb6d89c083680
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Управление видимостью значка или декоратора
 Объект *decorator* значок или строки текста, который отображается на фигуре в доменный язык (DSL). Можно внести декоратора отображаются и исчезают в зависимости от состояния свойства в модели. Например в форму, представляющую человека, может иметь различные значки, которые отображаются в зависимости от пола лица, число дочерних объектов и т. д.  

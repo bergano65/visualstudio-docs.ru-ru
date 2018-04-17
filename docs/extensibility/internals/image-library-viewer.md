@@ -1,22 +1,19 @@
 ---
-title: "Средство просмотра библиотеки изображений | Документы Microsoft"
-ms.custom: 
+title: Средство просмотра библиотеки изображений | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ee0be99b307955017b896f70019dfc05481717c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-library-viewer"></a>Средство просмотра библиотеки изображений
 Средство просмотра библиотеки изображений Visual Studio можно загрузить и поиска манифестов изображений, чтобы пользователи могли работать с ними таким же образом, что и Visual Studio. Пользователь может изменить фон, размеры, DPI, высокая контрастность и другие параметры. Средство также отображает сведения о загрузке для каждого манифест изображения и сведения об источнике для каждого изображения в манифест изображения. Это средство удобно использовать для:  

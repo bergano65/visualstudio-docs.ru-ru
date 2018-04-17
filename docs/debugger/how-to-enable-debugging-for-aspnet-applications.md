@@ -1,12 +1,10 @@
 ---
-title: "Включение отладки для приложений ASP.NET | Документы Microsoft"
+title: Включение отладки для приложений ASP.NET | Документы Microsoft
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Отладка приложений ASP.NET в Visual Studio
 
@@ -142,7 +140,7 @@ ms.lasthandoff: 01/05/2018
     > [!NOTE]
     > Если вы используете Windows Server 2008 R2, установите ASP.NET 4, вместо этого с помощью этой команды:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Откройте **Internet Information Services (IIS) Manager**. (В левой панели диспетчера серверов выберите **IIS**. Щелкните правой кнопкой мыши сервер и выберите **Диспетчер Internet Information Services (IIS)**.)
 

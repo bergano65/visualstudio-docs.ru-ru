@@ -1,27 +1,23 @@
 ---
-title: "Редактор и языковой службы расширения | Документы Microsoft"
-ms.custom: 
+title: Редактор и языковой службы расширения | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK]
 ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59de764dfcb976dfac303f44a67340e117ae5e06
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2fceb0487c23dc34d3f4f4937d7a5998340ae3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editor-and-language-service-extensions"></a>Редактор и расширения службы языка
 Можно расширить большинство возможностей в редакторе кода Visual Studio. Редактор основан на Windows Presentation Foundation (WPF) и записана в управляемом коде. Несмотря на то, что такой подход отличается от схемы, в более ранних версиях Visual Studio, он предоставляет большинство тех же функций. Чтобы расширить редактор, следует используйте Managed Extensibility Framework (MEF).  
@@ -30,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)|Общие сведения об использовании шаблонов элементов редактора.|  
 |[Расширение редактора и языковых служб](../extensibility/extending-the-editor-and-language-services.md)|Ссылки на документы, разработки, а также возможности редактора основных компонентов и показано, как расширить ее.|  

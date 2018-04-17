@@ -1,28 +1,26 @@
 ---
-title: "Структура файл [Content_types] .xml | Документы Microsoft"
-ms.custom: 
+title: Структура файл [Content_types] .xml | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Структура файл [Content_types] .xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types] .xml для установки пакета, но не устанавливает сам файл.  
@@ -35,32 +33,32 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="root-element"></a>Корневой элемент  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |`Types`|Содержит дочерние элементы, соответствующие типам файлов в пакете VSIX.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Xmlns`|(Обязательно). Расположение схемы, используемой для этого файл [Content_Types] .xml.|  
   
 ### <a name="attribute-name-attribute"></a>{Имя_атрибута} Атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
-|http://schemas.openformats.org/Package/2006/Content-Types|Расположение схемы типов содержимого.|  
+|http://schemas.openformats.org/package/2006/content-types|Расположение схемы типов содержимого.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  `Types` Элемент может содержать любое количество `Default` элементов.  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |`Default`|Описывает тип содержимого в пакете VSIX. Каждому типу файла в пакете должно иметь свой собственный `Default` элемента.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Extension`|Расширение имени файла в пакете VSIX.|  
 |`ContentType`|Описывает тип содержимого, связанного с расширением имени файла.|  
@@ -87,7 +85,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  Следующий файл [Content_Types] .xml описывает типичные пакет VSIX.  
   
 ### <a name="code"></a>Код  

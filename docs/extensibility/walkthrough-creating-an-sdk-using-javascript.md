@@ -1,23 +1,21 @@
 ---
-title: "Пошаговое руководство: Создание пакета SDK с использованием JavaScript | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание пакета SDK с использованием JavaScript | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2132269329c8b6af3ac846596adea7b3462db5bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Пошаговое руководство: Создание пакета SDK с использованием JavaScript
 В этом пошаговом руководстве объясняется использование JavaScript для создания простых математических SDK как Visual Studio Extension (VSIX).  Пошаговое руководство состоит из следующих частей:  
@@ -31,7 +29,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a>Создание проекта SimpleMathVSIX расширения SDK  
+##  <a name="createSimpleMathVSIX"></a> Создание проекта SimpleMathVSIX расширения SDK  
   
 1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
@@ -142,7 +140,7 @@ ms.lasthandoff: 12/22/2017
   
 21. Перезапустите Visual Studio.  
   
-##  <a name="createSampleApp"></a>Создание примера приложения, использующего пакет SDK  
+##  <a name="createSampleApp"></a> Создание примера приложения, использующего пакет SDK  
   
 1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
@@ -315,7 +313,7 @@ ms.lasthandoff: 12/22/2017
   
 11. Нажмите клавишу F5 для построения и запуска приложения.  
   
-12. В пользовательский Интерфейс приложения введите любых двух чисел, выберите операцию и затем выберите  **=**  кнопки. Отображается правильный результат.  
+12. В пользовательский Интерфейс приложения введите любых двух чисел, выберите операцию и затем выберите **=** кнопки. Отображается правильный результат.  
   
 ## <a name="see-also"></a>См. также  
  [Создание пакета средств разработки для программного обеспечения](../extensibility/creating-a-software-development-kit.md)

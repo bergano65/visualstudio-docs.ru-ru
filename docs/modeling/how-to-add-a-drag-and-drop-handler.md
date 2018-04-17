@@ -2,20 +2,18 @@
 title: 'Как: Добавление обработчика и перетащите | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61eff22f3a666f067f4a1eddd8ecab84429fea21
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 9b87a2e8a87721217f4c8e5442c25d9c4efd0236
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 Чтобы пользователи могли перетаскивать элементы в схему из других схем или других частей [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно добавить в доменный язык обработчики событий перетаскивания. Кроме того, можно добавить обработчики для таких событий, как двойной щелчок кнопки мыши. Вместе, и перетащите и дважды щелкните обработчики называются *обработчики жестов*.  

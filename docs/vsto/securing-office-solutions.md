@@ -1,12 +1,10 @@
 ---
-title: "Обеспечение безопасности решений Office | Документы Microsoft"
-ms.custom: 
+title: Обеспечение безопасности решений Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 271aad509d5ad2adb764b55f93fa65a8178424bd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a587534406d128655f9c24c9195902afb8e8817b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-office-solutions"></a>Обеспечение безопасности решений Office
   Модель безопасности для решений Office использует несколько технологий: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Центр управления безопасностью в Microsoft Office и зону ограниченных узлов браузера Internet Explorer. Работа различных возможностей безопасности описана в следующих разделах.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="GrantingTrustToSolutions"></a>Присвоение уровня доверия решениям Office  
+##  <a name="GrantingTrustToSolutions"></a> Присвоение уровня доверия решениям Office  
  Присвоение уровня доверия решениям Office означает изменение политики безопасности для каждого конечного пользователя таким образом, что доверие решению Office предоставляется на основании следующего свидетельства.  
   
 -   Сертификат, используемый для подписания манифеста развертывания.  
@@ -50,16 +49,16 @@ ms.lasthandoff: 01/10/2018
   
  Дополнительные сведения см. в разделе [Присвоение уровня доверия решениям Office](../vsto/granting-trust-to-office-solutions.md).  
   
-##  <a name="GrantingTrustToDocuments"></a>Присвоение уровня доверия документам  
+##  <a name="GrantingTrustToDocuments"></a> Присвоение уровня доверия документам  
  Настройка уровня документа требует, чтобы документ находился в каталоге, назначенном в качестве надежного расположения. Для получения дополнительной информации см. [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="GrantingTrustWindowsInstaller"></a>Предоставление доверия при использовании установщика Windows  
+##  <a name="GrantingTrustWindowsInstaller"></a> Предоставление доверия при использовании установщика Windows  
  Чтобы создать MSI-файл для установки решений Office в каталог Program Files, можно использовать установщик Windows. Для этого требуются права администратора. Для решений Office в каталог Program Files средств Visual Studio 2010 для среды выполнения Office считает эти решения Office доверенными и не выводит запрос о доверии ClickOnce.  
   
-##  <a name="Security"></a>Рекомендации по обеспечению безопасности для решений Office  
+##  <a name="Security"></a> Рекомендации по обеспечению безопасности для решений Office  
  Средства безопасности, предоставляемые [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] и Microsoft Office, помогают защитить решения Office от различных угроз безопасности. Дополнительные сведения см. в разделе [Specific Security Considerations for Office Solutions](../vsto/specific-security-considerations-for-office-solutions.md).  
   
-##  <a name="SecurityDuringDeployment"></a>Безопасность во время разработки  
+##  <a name="SecurityDuringDeployment"></a> Безопасность во время разработки  
  Чтобы упростить процесс разработки, Visual Studio задает политику безопасности, требуемую для выполнения и отладки решения на компьютере, при каждой сборке проекта. В некоторых случаях могут потребоваться дополнительные меры обеспечения безопасности при разработке проекта.  
   
 ### <a name="document-level-solutions"></a>Решения уровня документа  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
   
  Через некоторое время может накопиться большое количество временных сертификатов, поэтому их нужно периодически удалять.  
   
-##  <a name="VisualStudioToolsForOfficeRuntime"></a>Visual Studio Tools для Office Runtime  
+##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools для Office Runtime  
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Содержит функции для проверки удостоверения издателя и разрешений, выданных для настройки. Он проверяет разрешения, выполняя последовательность проверок безопасности.  
   
 ### <a name="security-during-customization-loading"></a>Безопасность во время загрузки настройки  

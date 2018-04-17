@@ -1,12 +1,10 @@
 ---
-title: "Сведения о параметрах в прежних версий языка Service1 | Документы Microsoft"
-ms.custom: 
+title: Сведения о параметрах в прежних версий языка Service1 | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковую службу прежних версий
 Подсказка о параметрах IntelliSense предоставляет пользователям подсказки, где они находятся в конструкция языка.  
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
  Отображение кратких сведений параметр инициируются языковой службы за счет перехвата команды. Для перехвата пользователя символов, должен реализовывать объект языковой службы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса и передать указатель для представления текста вашей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> реализацию путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса. Команда фильтр перехватывает команды, вводимые в окне кода. Мониторинг сведений о команде о том, когда для отображения сведений о параметрах для пользователя. Можно использовать один и тот же фильтр команды для завершения операторов, маркеры ошибок и т. д.  
   
- При вводе ключевого слова, для которого языковая служба может предоставить подсказки языковая служба создаст <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> и вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс уведомления IDE, чтобы отобразить подсказку. Создание <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> с помощью `VSLocalCreateInstance` и указав компонентного класса `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`является функцией, определяемой в vsdoc.h файла заголовка, который вызывает `QueryService` для локального реестра и вызовы `CreateInstance` на этот объект для `CLSID_VsMethodTipWindow`.  
+ При вводе ключевого слова, для которого языковая служба может предоставить подсказки языковая служба создаст <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> и вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс уведомления IDE, чтобы отобразить подсказку. Создание <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> с помощью `VSLocalCreateInstance` и указав компонентного класса `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` является функцией, определяемой в vsdoc.h файла заголовка, который вызывает `QueryService` для локального реестра и вызовы `CreateInstance` на этот объект для `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Предоставление метода совет  
  Чтобы предоставить метод совет, вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> интерфейс, передав его реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейса.  

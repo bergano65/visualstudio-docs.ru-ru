@@ -1,13 +1,10 @@
 ---
-title: "Развертывание решения Office с помощью установщика Windows | Документы Microsoft"
-ms.custom: 
+title: Развертывание решения Office с помощью установщика Windows | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщика Windows
 Узнайте, как создать файл установщика Windows для решения Office при помощи [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -70,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
   
   
-|Пример<br /><br />|Описание:<br /><br />|  
+|Пример<br /><br />|Описание<br /><br />|  
 |----------|---------------|  
 |[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Надстройка VSTO Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Настройка уровня документа Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
@@ -239,7 +236,7 @@ ms.lasthandoff: 01/10/2018
   
 6. В диалоговом окне **Сохранить как** перейдите в папку **Рабочий стол** .  
   
-7. В **тип** выберите **все файлы (&#42;. &#42;)**.  
+7. В **тип** выберите **все файлы (&#42;.&#42;)** .  
   
 8. В поле **Имя файла** введите **Visual Studio 2010 Tools for Office Runtime.prq**, а затем нажмите кнопку **Сохранить** .  
   
@@ -334,16 +331,16 @@ ms.lasthandoff: 01/10/2018
   
 |Версия Office<br /><br />|Путь конфигурации InstallShield<br /><br />|  
 |------------------|------------------------------------|  
-|32-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
-|64-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
+|32-разрядная<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
+|64-разрядная<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
    **Установщики для компьютера на основе версии Windows**  
   
   
   
 |Версия Windows<br /><br />|Путь конфигурации InstallShield<br /><br />|  
 |-------------------|------------------------------------|  
-|32-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
-|64-разрядная версия<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
+|32-разрядная<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
+|64-разрядная<br /><br />|**HKEY_LOCAL_MACHINE\SOFTWARE(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />|  
    > [!NOTE]  
    >    Для установщика для 64-разрядной версии Windows требуется два пути реестра, так как это дает пользователям возможность выполнять 32-разрядных и 64-разрядной версии Office на компьютере под управлением 64-разрядной версии Windows.  
   
@@ -493,7 +490,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Откройте файл проекта решения в Блокноте. Для проектов Visual Basic имя файла — ExcelWorkbook.vbproj. Для проектов C# имя файла — ExcelWorkbook.csproj.  
   
-14. В файле проекта найдите  **&lt;SolutionID&gt;**  элемент, скопируйте его значение в буфер обмена, а затем закройте Блокнот.  
+14. В файле проекта найдите **&lt;SolutionID&gt;** элемент, скопируйте его значение в буфер обмена, а затем закройте Блокнот.  
   
    Это значение передается в консольное приложение как параметр.  
   
@@ -533,7 +530,7 @@ ms.lasthandoff: 01/10/2018
   
 9. В строке меню выберите **Сборка**, **Сборка OfficeAddInSetup**.  
   
-   После завершения сборки файл setup.exe можно найти **OfficeAddInSetup** проектов в следующем расположении: *OfficeAddInSetupProjectRoot***\ OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   После завершения сборки файл setup.exe можно найти **OfficeAddInSetup** проектов в следующем расположении: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\Express\SingleImage\DiskImages\ ДИСК 1\**  
   
   
 ## <a name="see-also"></a>См. также  

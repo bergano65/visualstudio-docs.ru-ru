@@ -1,26 +1,24 @@
 ---
-title: "Основные компоненты модели проекта | Документы Microsoft"
-ms.custom: 
+title: Основные компоненты модели проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2cfb9db9c354eb4c10ece0f5a8259f3d4a104e28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-model-core-components"></a>Основные компоненты модели проекта
 В модели проекта разверните следующие таблицы. Таблицы представлены краткие описания интерфейсов и служб, описанных в модели и интерфейсы и службы, связанные с конкретными объектами. Кроме того в таблице приведено описание других интерфейсов, которые не являются обязательными в проект создания и обслуживания, в зависимости от требований вашего проекта определенного типа.  
@@ -101,7 +99,7 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Предоставляет базовые функциональные возможности интегрированной среды разработки, связанные с Пользовательским интерфейсом, такие как возможность создания и перечислить окна инструментов или окна документа или сообщение об ошибке для пользователя.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|Предоставляет доступ к строке состояния интегрированной среды разработки.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Используется для реализации модели автоматизации. В модели проекта, будет возвращать объект свойств, которая позволяет создает экземпляр этого объекта.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Используется для реализации событий, буфер обмена для объекта в иерархии проекта. `SVsUIHierWinClipboardHelper`обеспечивает правильное дескриптор вырезания, копирования и вставки.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Используется для реализации событий, буфер обмена для объекта в иерархии проекта. `SVsUIHierWinClipboardHelper` обеспечивает правильное дескриптор вырезания, копирования и вставки.|  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

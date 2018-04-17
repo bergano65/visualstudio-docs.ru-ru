@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Расширение типа элемента проекта SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Расширение типа элемента проекта SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Пошаговое руководство. Расширение типа проектного элемента SharePoint
   Можно использовать **модель подключения к бизнес-данным** элемент проекта для создания модели для службы бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта данные в модели не отображается для пользователей. Необходимо также создать внешнего списка в SharePoint, чтобы пользователи могли просматривать данные.  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  В **имя** введите **GenerateExternalDataLists**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **GenerateExternalDataLists** проекта **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **GenerateExternalDataLists** проекта **обозревателе решений**.  
   
 7.  Если файл source.extension.vsixmanifest не открывается автоматически, откройте ее контекстное меню проекта GenerateExternalDataLists и выберите **открыть**  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  В **имя** введите **BdcProjectItemExtension**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **BdcProjectItemExtension** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **BdcProjectItemExtension** в решение проект и открывает файл кода по умолчанию Class1.  
   
 6.  Удалите файл Class1 код из проекта.  
   

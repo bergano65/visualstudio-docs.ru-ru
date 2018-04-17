@@ -1,12 +1,10 @@
 ---
-title: "Замечания об обезвреженных решениях | Документы Microsoft"
-ms.custom: 
+title: Замечания об обезвреженных решениях | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
   *Изолированные решения* — это функция Microsoft SharePoint 2010, позволяющая пользователям семейства сайта загружать собственные решения с пользовательским кодом. Общие изолированное решение — пользователей, отправка собственные веб-части.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Изолированное приложение SharePoint работает в безопасном, отслеживаемом процессе, который имеет доступ к ограниченной части веб-фермы. Microsoft SharePoint 2010 использует сочетание функций, коллекций решений, контроля решений и структуры проверки обезвреженных решений.  
   
 ## <a name="specifying-project-trust-level"></a>Указание уровня доверия проекта  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]поддерживает изолированные решения через свойство логическое проекта, который называется *изолированное решение*. Это свойство можно задать в любое время в проекте, или он может быть указан при создании проекта в **мастер настройки SharePoint**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] поддерживает изолированные решения через свойство логическое проекта, который называется *изолированное решение*. Это свойство можно задать в любое время в проекте, или он может быть указан при создании проекта в **мастер настройки SharePoint**.  
   
 > [!NOTE]  
 >  Изменение *изолированное решение* свойства проекта после его создания может вызвать ошибки проверки.  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Поддержка для всех веб-частей, которые являются производными от`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Поддержка для всех веб-частей, которые являются производными от `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Веб-части  
   

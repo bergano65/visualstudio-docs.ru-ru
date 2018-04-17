@@ -1,13 +1,10 @@
 ---
-title: "Как: Добавление и удаление элементов в компонентах SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Как: Добавление и удаление элементов в компонентах SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c3084e92b9102d487b019bd27163ad72c3b1254
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7d097562ecf1abe021d78440bc6c96019d2eb97d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Практическое руководство. Добавление и удаление элементов в компонентах SharePoint
   При создании решения SharePoint в Visual Studio добавляет элементы проекта SharePoint по умолчанию компонента. Перед развертыванием можно добавлять и удалять элементы проектов SharePoint, чтобы изменить функцию SharePoint.  

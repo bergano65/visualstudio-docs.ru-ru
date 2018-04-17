@@ -1,12 +1,10 @@
 ---
-title: "Создание модели подключения к бизнес-данным | Документы Microsoft"
-ms.custom: 
+title: Создание модели подключения к бизнес-данным | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, Business Data Connectivity service
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ab375e95d1deccb614a7908ec7608ffcb0da2e9c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f823c8c67750dec31c6c2b534ecc7500e20defaf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-business-data-connectivity-model"></a>Создание модели подключения к бизнес-данным
   Можно создать модель бизнес-данным (BDC) или настроить существующую модель BDC с помощью Visual Studio. Каждый проект SharePoint может содержать только одну модель. Дополнительные сведения см. в разделе [интеграции бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio добавляет следующие файлы в новую папку.  
   
-|Файл|Описание:|  
+|Файл|Описание|  
 |----------|-----------------|  
 |Файл определения модели|Содержит XML-код, который определяет сущности, методы, объекты строке из БИЗНЕС-системы и другие метаданные, описывающие модель.<br /><br /> Изменения метаданных в этом файле с помощью конструктора BDC **Обозреватель BDC**, **Подробности метода BDC** окна, и **свойства** окна.|  
 |Файл кода службы сущности|Содержит методы, получения, обновления и удаления экземпляров сущности по умолчанию.|  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Практическое руководство. Создание модели подключения к бизнес-данным](../sharepoint/how-to-create-a-bdc-model.md)|Показано, как создать новую модель BDC.|  
 |[Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Показано, как импортировать существующей модели в проект SharePoint.|  

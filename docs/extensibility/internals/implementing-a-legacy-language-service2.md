@@ -2,26 +2,22 @@
 title: Реализация языка прежних версий Service2 | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
-caps.latest.revision: 26
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20dc3cf7b4db090bf7fcd0086b3e72575d8490cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d54572bc3b105af01ed42b01a27f363da80d58de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация службы языка для прежних версий
 Чтобы реализовать языковую службу, с помощью платформы управляемых пакетов (MPF), должен быть производным от класса <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:  
@@ -199,7 +195,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-languageservice-class"></a>В классе LanguageService  
   
-|Метод|Возвращаемый класс|Описание:|  
+|Метод|Возвращаемый класс|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнения для представления текста.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки настраиваемых свойств документа.|  
@@ -216,7 +212,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-source-class"></a>В классе источника  
   
-|Метод|Возвращаемый класс|Описание:|  
+|Метод|Возвращаемый класс|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки внешнего вида списки завершения IntelliSense (этот метод обычно не переопределяется).|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в список ошибок список задач; в частности поддержка функций за рамками при открытии файла и перехода к строке, вызвавшего ошибку.|  
@@ -226,7 +222,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-authoringscope-class"></a>В классе AuthoringScope  
   
-|Метод|Возвращаемый класс|Описание:|  
+|Метод|Возвращаемый класс|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Список объявлений, например члены или типы. Этот метод должен быть реализован, но может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен быть экземпляр вашей версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур методов в данном контексте. Этот метод должен быть реализован, но может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен быть экземпляр вашей версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|  

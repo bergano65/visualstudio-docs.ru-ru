@@ -1,26 +1,24 @@
 ---
-title: "Конструктор инициализации и настройки метаданных | Документы Microsoft"
-ms.custom: 
+title: Конструктор инициализации и настройки метаданных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 61624d9926f4d984386f1a8b3fe8a575ce465331
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a6334f65b942b2eab3543d866ae1b98a186569ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Конструктор инициализации и настройки метаданных
 Обработка метаданных и фильтрация атрибутов, связанных с конструктором или конструктор компонентов предоставляет механизм для приложений, чтобы определить, какие средства используются определенного конструктором для обработки различных <xref:System.Type> объектов (таких как структуры данных классы или графический сущности), когда конструктор доступен, и как интегрированная среда разработки Visual Studio настроена для поддержки конструктора (для экземпляра, который **элементов** категорию или вкладку доступен).  

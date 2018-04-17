@@ -1,24 +1,20 @@
 ---
-title: "команды MenuCommand и OleMenuCommands | Документы Microsoft"
-ms.custom: 
+title: команды MenuCommand и OleMenuCommands | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 144410e0e9b5b8d5d40fee86a1573bd179aea44a
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 47ec8bd549f8f5093a7035f37ad728c1e245e3b9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>команды MenuCommand и OleMenuCommand
 Вы можете создавать команды меню на основе объекта <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> и реализовывать соответствующие обработчики событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -259,5 +255,5 @@ ms.lasthandoff: 03/15/2018
 -   Если `GUID` и ID команды соответствуют паре GUID:ID, которая используется командой в VSCT-файле, выполните код, связанный с командой, и верните значение <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
 ## <a name="see-also"></a>См. также  
- [VSCT XML Schema Reference](../extensibility/vsct-xml-schema-reference.md)   
+ [Справочник по схеме VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)

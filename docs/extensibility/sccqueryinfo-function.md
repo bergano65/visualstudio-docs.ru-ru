@@ -1,29 +1,25 @@
 ---
-title: "Функция SccQueryInfo | Документы Microsoft"
-ms.custom: 
+title: Функция SccQueryInfo | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e2838709d7c2c2ad6e6b1eeef36c2cc0018a1a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccqueryinfo-function"></a>Функция SccQueryInfo
 Эта функция получает сведения о состоянии для набора выбранных файлов в системе управления версиями.  
@@ -55,7 +51,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Запрос успешно выполнен.|  
 |SCC_E_ACCESSFAILURE|Возникла проблема с доступом к системе управления версиями, возможно, причиной проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
@@ -69,11 +65,11 @@ SCCRTN SccQueryInfo(
   
  При использовании этой функции для извлечения файлов, обратите внимание на следующие `MSSCCI` состояние требований:  
   
--   `SCC_STATUS_OUTBYUSER`будет установлен, если файл извлечен текущим пользователем.  
+-   `SCC_STATUS_OUTBYUSER` будет установлен, если файл извлечен текущим пользователем.  
   
--   `SCC_STATUS_CHECKEDOUT`Нельзя задавать, если `SCC_STATUS_OUTBYUSER` имеет значение.  
+-   `SCC_STATUS_CHECKEDOUT` Нельзя задавать, если `SCC_STATUS_OUTBYUSER` имеет значение.  
   
--   `SCC_STATUS_CHECKEDOUT`устанавливается только если файл извлечен в указанный рабочий каталог.  
+-   `SCC_STATUS_CHECKEDOUT` устанавливается только если файл извлечен в указанный рабочий каталог.  
   
 -   Если файл извлечен текущим пользователем в папке, отличной от рабочий каталог `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.  
   

@@ -1,27 +1,23 @@
 ---
-title: "Битовые флаги, используемые определенные команды | Документы Microsoft"
-ms.custom: 
+title: Битовые флаги, используемые определенные команды | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Битовые флаги, используемые определенных команд
 Поведение ряда функций API подключаемых модулей управления источника можно изменить, задав одного или нескольких битов в одно значение. Эти значения называются битовые флаги. Различные битовые флаги, используемые API подключаемых модулей управления источника приводится подробное описание, сгруппированных по функции, который использует их.  
@@ -29,24 +25,24 @@ ms.lasthandoff: 12/22/2017
 ## <a name="checked-out-flag"></a>Извлечен флаг  
  Этот флаг может быть задан либо для [SccAdd](../extensibility/sccadd-function.md) или [SccCheckin](../extensibility/scccheckin-function.md).  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Сохраните файл извлечен.|  
   
 ## <a name="add-flags"></a>Добавление флагов  
  Эти флаги используются [SccAdd](../extensibility/sccadd-function.md).  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Подключаемый модуль системы управления версиями должен автоматически определить, является ли файл текстовым или двоичным.|  
 |`SCC_FILETYPE_TEXT`|0x01|Типом файла является текст.|  
-|`SCC_FILETYPE_BINARY`|0x04|Имеет двоичный тип файла. **Примечание:** `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` флаги являются взаимоисключающими. Задайте одно или ни одного.|  
+|`SCC_FILETYPE_BINARY`|0x04|Имеет двоичный тип файла. **Примечание:** `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` флаги являются взаимоисключающими.   Задайте одно или ни одного.|  
 |`SCC_ADD_STORELATEST`|0x02|Хранить только последнюю версию (без изменения).|  
   
 ## <a name="diff-flags"></a>Разница между флаги  
  [SccDiff](../extensibility/sccdiff-function.md) использует эти флаги для определения области действия операции поиска различий. `SCC_DIFF_QD_xxx` Флаги являются взаимоисключающими. Если указан один из них, не визуальную обратную связь будет должен быть предоставлен. В «быстрый» diff (длина Очереди), подключаемый модуль не определяет, как файл отличается, только в том случае, если он отличается. Если ни одна из эти флаги указан, выполняется «visual diff»; Подробный файл различия вычисляются и отображаются. Если Запрошенная длина Очереди не поддерживается, подключаемый модуль перемещается Далее лучшее из них. Для экземпляра если подключаемый модуль не поддерживает это интегрированной среды разработки запрашивает контрольную сумму, подключаемый модуль выполняет full содержимое Проверьте (по-прежнему гораздо быстрее, чем визуального отображения).  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Игнорировать различия в регистре.|  
 |`SCC_DIFF_IGNORESPACE`|0x0004|Игнорировать различия символы разделители. **Примечание:** `SCC_DIFF_IGNORECASE` и `SCC_DIFF_IGNORESPACE` флаги являются битовые флаги необязательно.|  
@@ -58,14 +54,14 @@ ms.lasthandoff: 12/22/2017
 ## <a name="populatelist-flag"></a>Флаг PopulateList  
  Этот флаг используется [SccPopulateList](../extensibility/sccpopulatelist-function.md) в `fOptions` параметра.  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_PL_DIR`|0x00000001L|Каталоги, файлы не передает интегрированной среды разработки.|  
   
 ## <a name="populatedirlist-flags"></a>Флаги PopulateDirList  
  Эти флаги используются [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) в `fOptions` параметра.  
   
-|Значение параметра|Значение|Описание:|  
+|Значение параметра|Значение|Описание|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Изучите только один уровень каталогов для каталогов (это значение по умолчанию).|  
 |SCC_PDL_RECURSIVE|0x0001|Рекурсивно проверить все каталоги в каждом заданном каталоге.|  
@@ -74,7 +70,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="openproject-flags"></a>Флаги OpenProject  
  Эти флаги используются [SccOpenProject](../extensibility/sccopenproject-function.md) в `dwFlags` параметра.  
   
-|Значение параметра|Значение|Описание:|  
+|Значение параметра|Значение|Описание|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|Если проект не существует в системе управления версиями, создайте его. Если этот флаг не установлен, запрашивать пользователя для проекта для создания (если `SCC_OP_SILENTOPEN` установлен флаг).|  
 |SCC_OP_SILENTOPEN|0x00000002L|Не запрашивать пользователя для создания проекта; только возвращаемым `SCC_E_UNKNOWNPROJECT`.|  
@@ -82,7 +78,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="get-flags"></a>Получение флагов  
  Эти флаги используются [SccGet](../extensibility/sccget-function.md) и [SccCheckout](../extensibility/scccheckout-function.md).  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_GET_ALL`|0x00000001L|IDE передает каталоги, файлы не: получить все файлы в этих каталогах.|  
 |`SCC_GET_RECURSIVE`|0x00000002L|Передача каталоги интегрированной среды разработки: получение этих каталогов и всех подкаталогах.|  
@@ -90,7 +86,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="noption-values"></a>nOption значения  
  Эти флаги используются [SccSetOption](../extensibility/sccsetoption-function.md) в `nOption` параметра.  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Задать состояние очереди событий.|  
 |`SCC_OPT_USERDATA`|0x00000002L|Укажите данные пользователя для `SCC_OPT_NAMECHANGEPFN`.|  
@@ -102,7 +98,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="dwval-bitflags"></a>dwVal битовые флаги  
  Эти флаги используются [SccSetOption](../extensibility/sccsetoption-function.md) в `dwVal` параметра.  
   
-|Flag|Значение|Описание:|Используемые `nOption` значение|  
+|Flag|Значение|Описание|Используемые `nOption` значение|  
 |----------|-----------|-----------------|-----------------------------|  
 |`SCC_OPT_EQ_DISABLE`|0x00L|Приостанавливает действие очереди событий.|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|Включает ведения журнала очереди событий.|`SCC_OPT_EVENTQUEUE`|  

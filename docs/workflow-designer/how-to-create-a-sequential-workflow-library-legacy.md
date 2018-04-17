@@ -1,5 +1,5 @@
 ---
-title: "Как: Создание библиотеки последовательных рабочих процессов (для прежних версий) | Документы Microsoft"
+title: 'Как: Создание библиотеки последовательных рабочих процессов (для прежних версий) | Документы Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 9433ccf3-1eab-4d53-90ff-2e7b2341676c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 165f63bec8fea7ec23b7e919d0f5e6c050b9ad6d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 49ef9bd788a98178250e8830786d6301816ff616
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Как создать библиотеку последовательных рабочих процессов (для прежних версий)
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  Запустите Visual Studio.
 
-2.  На **файл** последовательно выберите пункты **New**, а затем выберите **проекта**.
+2.  В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
 
      Откроется диалоговое окно **Новый проект** .
 

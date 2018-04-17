@@ -1,5 +1,5 @@
 ---
-title: "Как: с помощью редактора выражений | Документы Microsoft"
+title: 'Как: с помощью редактора выражений | Документы Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be43ad439c8868064fc7e0bab79e051abb991e0d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>Как использовать редактор выражений
 Редактор выражений является элементом управления конструктора рабочих процессов Windows, используемый в множество действий рабочего процесса с точки зрения ввода и вычисления. Редактор выражений предоставляет полноценные возможности редактирования интегрированной среды разработки, включая IntelliSense, выделение цветом, сведения о параметре, подчеркивание некоторых типов ошибок волнистыми линиями, а также другие возможности. Компилятор проверяет выражение после его ввода. Если выражение является недопустимым, то отображается значок ошибки. Редактор можно открыть как **редактор выражений** диалоговое окно.

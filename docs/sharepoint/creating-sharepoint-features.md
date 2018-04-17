@@ -1,12 +1,10 @@
 ---
-title: "Создание компонентов SharePoint | Документы Microsoft"
-ms.custom: 
+title: Создание компонентов SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>Создание компонентов SharePoint
   Компонент SharePoint можно использовать для группировки связанных элементов проекта SharePoint для упрощения развертывания. Создание функции, задавать их области и отмечать другие компоненты как зависимости с помощью конструктора компонентов SharePoint. Конструктор также создает манифест, который является XML-файл с описанием каждого компонента.  
@@ -41,10 +40,10 @@ ms.lasthandoff: 01/10/2018
   
  Следующая таблица описывает свойства компонента, которые отображаются в конструкторе компонентов.  
   
-|Свойство.|Описание:|  
+|Свойство.|Описание|  
 |--------------|-----------------|  
-|Заголовок|Необязательный. Название компонента по умолчанию имеет значение *имя_решения**FeatureName*.|  
-|Описание:|Необязательный. Описание функции SharePoint.|  
+|Заголовок|Необязательный. Название компонента по умолчанию имеет значение *имя_решения ** имя_компонента*.|  
+|Описание|Необязательный. Описание функции SharePoint.|  
 |Область|Обязательно. Если компонент создан с помощью **обозревателе решений**, область по умолчанию имеет значение в Интернете.<br /><br /> -Ферма: Активация компонента для всей фермы серверов.<br /><br /> -Узел: Активация компонента для всех веб-сайтов в семействе веб-сайтов.<br /><br /> -Web: Активация компонента для определенного веб-сайта.<br /><br /> -WebApplication: Активация компонента для всех веб-сайтов в веб-приложении.|  
 |Элементы в решении|Все элементы SharePoint, которые могут быть добавлены к компоненту.|  
 |Элементы в компоненте|Элементы проектов SharePoint, которые были добавлены к компоненту.|  

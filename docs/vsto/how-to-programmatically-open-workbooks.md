@@ -1,12 +1,10 @@
 ---
-title: "Как: открытие книг | Документы Microsoft"
-ms.custom: 
+title: 'Как: открытие книг | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], opening workbooks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 11fe801cf80c15953056f4f6fdd50c5c4fadd3c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a243e4972bcee77aa9d76957ab5cce289e30e120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Практическое руководство. Программное открытие книг Excel
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Коллекции в Microsoft Office Excel позволяет работать со всеми открытыми книгами и открывать книги.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
  [Как: программным путем создания новых книг](../vsto/how-to-programmatically-create-new-workbooks.md)   
  [Как: программное Сохранение книг](../vsto/how-to-programmatically-save-workbooks.md)   
  [Как: программное закрытие книг Excel](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)  
   

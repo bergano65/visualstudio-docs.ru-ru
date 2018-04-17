@@ -1,27 +1,23 @@
 ---
-title: "Общие сведения об окне свойств | Документы Microsoft"
-ms.custom: 
+title: Общие сведения об окне свойств | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>Общие сведения об окне свойств
 **Свойства** окно используется для отображения свойств для объектов, выбранных в два основных типа окон [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Эти два типа окон являются:  
@@ -39,12 +35,12 @@ ms.lasthandoff: 12/22/2017
   
  В следующей таблице перечислены используемые интерфейсы **свойства** окна.  
   
-|Имя интерфейса|Описание:|  
+|Имя интерфейса|Описание|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Предоставляет список категорий для **свойства** окна и сопоставляет каждое свойство категории.|  
 |[Интерфейс IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Предоставляет методы и свойства для программных средств и других приложений, поддерживающих автоматизацию объекта.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Содержит кнопки с многоточием (...), вызывается *построители* , открывать окна модальное диалоговое окно, реализуемый сам объект. Используется, когда значение не является типизированным легко пользователем в текстовое поле. Например он может использоваться для открытия палитру цветов, определяющее значение RGB для вас.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Предоставляет доступ к объектам, которые используются для обновления сведений, отображаемых в **свойства** окна. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>реализуется пакетов VSPackage для каждого окна, который содержит доступный для выбора объектов, содержащих связанные свойства для отображения.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Предоставляет доступ к объектам, которые используются для обновления сведений, отображаемых в **свойства** окна. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> реализуется пакетов VSPackage для каждого окна, который содержит доступный для выбора объектов, содержащих связанные свойства для отображения.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Сведения о типе объекта, например методы интерфейса и поля структуры.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Позволяет пакетам VSPackage для получения уведомлений о событиях выбора и для получения сведений о текущей иерархии проекта, элемента, значение элемента и контекст пользовательского интерфейса командной строки.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Предоставляет среду с доступом к множественный выбор.|  

@@ -1,26 +1,24 @@
 ---
-title: "MSSCCPRJ. Файл SCC | Документы Microsoft"
-ms.custom: 
+title: MSSCCPRJ. Файл SCC | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Файл SCC
 При помещении в Visual Studio решение или проект в системе управления версиями с помощью интегрированной среды разработки IDE получает две основные сведения из системы управления версиями, подключаемый модуль в виде строк. Эти строки «AuxPath» и «ProjName» не видны в интегрированную среду разработки, но они используются подключаемого модуля, чтобы найти решение или проект в системе управления версиями. Интегрированной среды разработки обычно получает эти строки в первый раз, вызвав [SccGetProjPath](../extensibility/sccgetprojpath-function.md), и затем сохраняет их в файл решения или проекта для будущих вызовах [SccOpenProject](../extensibility/sccopenproject-function.md). Если внедрены в файлы решения и проекта, строки «AuxPath» и «ProjName» не обновляются автоматически при копирует файлы решения и проекта, которые находятся в системе управления версиями или ветвления, вилки, пользователем. Чтобы убедиться, что файлы решения и проекта указывают на их правильное расположение в системе управления версиями, пользователи должны вручную обновить строки. Так как предполагается, что строки быть непрозрачным, не всегда возможно очистить как они должны быть обновлены.  
@@ -46,23 +44,23 @@ ms.lasthandoff: 12/22/2017
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Иллюстрация MSSCCPRJ. Формат файла SCC  
  Ниже приведен образец MSSCCPRJ. Формат файла SCC (номера строк предоставляются только в качестве руководства и не должен включаться в тексте файла):  
   
- [Строка 1]`SCC = This is a Source Code Control file`  
+ [Строка 1] `SCC = This is a Source Code Control file`  
   
  [Строка 2]  
   
- [Строка 3]`[TestApp.sln]`  
+ [Строка 3] `[TestApp.sln]`  
   
- [Строка 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [Строка 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Строка 5]`SCC_Project_Name = "$/TestApp"`  
+ [Строка 5] `SCC_Project_Name = "$/TestApp"`  
   
  [Строка 6]  
   
- [Строка 7]`[TestApp.csproj]`  
+ [Строка 7] `[TestApp.csproj]`  
   
- [Строка 8]`SCC_Aux_Path = "\\server\vss\"`  
+ [Строка 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Строка 9]`SCC_Project_Name = "$/TestApp"`  
+ [Строка 9] `SCC_Project_Name = "$/TestApp"`  
   
  Первая строка состояния назначение файла и служит в качестве подписи для всех файлов этого типа. Эта строка должна появиться так же, как это все MSSCCPRJ. Файлы SCC:  
   

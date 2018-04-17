@@ -1,23 +1,21 @@
 ---
-title: "Свойства определения DSL | Документы Microsoft"
-ms.custom: 
+title: Свойства определения DSL | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5ccf6937aa3c317feb81a907348d41e4d322d346
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 94e14dffe32024143f0ad33031738ccf37d301bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>Свойства определения доменного языка
 Определение свойств DslDefinition *доменного языка* определения свойств, таких как нумерация версий. DslDefinition свойства отображаются в **свойства** окна при нажатии кнопки пустую область на диаграмме *конструктора доменного языка*.  
@@ -26,7 +24,7 @@ ms.lasthandoff: 02/09/2018
   
  DslDefinition имеет свойства в таблице ниже.  
   
-|Свойство.|Описание:|По умолчанию|  
+|Свойство.|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |Модификатор доступа|Определяет, является ли модификатор доступа для класса домена public или internal.|public|  
 |Настраиваемые атрибуты|Пользовательские атрибуты для класса домена.<br /><br /> **Примечание** Чтобы добавить атрибут, нажав кнопку обзора.|\<None >|  
@@ -37,7 +35,7 @@ ms.lasthandoff: 02/09/2018
 |Пространство имен пакетов|Пространство имен для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пакет, созданный для этого DSL.|\<None >|  
 |Название продукта|Имя продукта, который будет зарегистрирован для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пакет, созданный для этого DSL.|\<None >|  
 |Примечания|Заметки, связанные с этим классом домена.|\<None >|  
-|Описание:|Описание для этого класса домена.|\<None >|  
+|Описание|Описание для этого класса домена.|\<None >|  
 |Отображаемое имя|Имя, которое будет отображаться в конструкторе, созданный для этого класса домена.|\<None >|  
 |Ключевое слово Help|Ключевое слово справки, связанное с этим классом домена.|\<None >|  
 |Построить|Номер инкрементного построения для данного определения доменного языка.|0|  

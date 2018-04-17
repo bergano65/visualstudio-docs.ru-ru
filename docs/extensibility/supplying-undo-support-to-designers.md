@@ -1,27 +1,23 @@
 ---
-title: "Предоставление отмены поддержки для конструкторов | Документы Microsoft"
-ms.custom: 
+title: Предоставление отмены поддержки для конструкторов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>Предоставление поддержки отмены для конструкторов
 Конструкторы, редакторы, как и обычно требуется для поддержки операций отмены, чтобы пользователи могут отменить их последние изменения, при изменении элемента кода.  
@@ -30,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
  Конструктора реализации, которые требуются для обеспечения поддержки функцией отмены:  
   
--   Обеспечивает управление отмены путем реализации абстрактного базового класса<xref:System.ComponentModel.Design.UndoEngine>  
+-   Обеспечивает управление отмены путем реализации абстрактного базового класса <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   Указывайте сохраняемости и CodeDOM поддержка путем реализации <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> и <xref:System.ComponentModel.Design.IComponentChangeService> классы.  
   
@@ -73,7 +69,7 @@ ms.lasthandoff: 12/22/2017
   
  Пакет SDK для среды обеспечивает поддержку CodeDOM и сохраняемость, указав:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>как реализации<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> как реализации <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  Объект <xref:System.ComponentModel.Design.IComponentChangeService> , предоставляемые [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]'' узле разработки.  
   
@@ -100,7 +96,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Изменения свойств выполняются через <xref:System.ComponentModel.TypeDescriptor> объекта.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>события создаются вручную, при изменении в отменяемом фиксации.  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> события создаются вручную, при изменении в отменяемом фиксации.  
   
 -   Изменения в конструкторе был создан в контексте <xref:System.ComponentModel.Design.DesignerTransaction>.  
   

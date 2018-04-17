@@ -1,27 +1,23 @@
 ---
-title: "С помощью текстовых маркеров с помощью прежних версий API | Документы Microsoft"
-ms.custom: 
+title: С помощью текстовых маркеров с помощью прежних версий API | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>С помощью текстовых маркеров с помощью API прежних версий
 Текстовая метка — с плавающей запятой диапазон текста в буфере, который может повлиять на отображение и поведение области текста. Маркеры включают точки останова, закладки, подчеркивание волнистой линией и только для чтения областей. По сути текстовых маркеров отличаются от Цветовая подсветка синтаксиса. Цветовая подсветка синтаксиса — быстрый способ передачи синтаксис, связанный с областью текста. Цветовая подсветка синтаксиса обычно запрашивается, когда Windows перерисовывает экрана, когда важна скорость. Цветовая подсветка синтаксиса изменяет цвет текста. Текст метки можно изменить многие другие свойства текста. Можно «float» и применить специальное поведение текстовых маркеров: выделение цветом.  
@@ -33,7 +29,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Как: Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)|Описание процедуры добавления стандартного текста тип маркера, предоставляемых [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора для представления текста.|  
 |[Как: реализовать маркеры ошибки](../extensibility/how-to-implement-error-markers.md)|Описывает, как реализовать экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] маркер, который используется для указания ошибок с помощью красными волнистыми линиями.|  

@@ -1,13 +1,10 @@
 ---
-title: "Как: выполнения кода при выполнении шагов развертывания | Документы Microsoft"
-ms.custom: 
+title: 'Как: выполнения кода при выполнении шагов развертывания | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad603c9f303cd5bf2b3dc317efddd2694e10a867
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1e678ac17ac2bdae2b92e34a91da41399c873a51
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Практическое руководство. Запуск кода после выполнения шагов развертывания
   Если вы хотите выполнить дополнительные задачи для шага развертывания проекта SharePoint, может обрабатывать события, вызываемые элементами проекта SharePoint, до и после выполнения каждого шага развертывания, в Visual Studio. Дополнительные сведения см. в разделе [расширение SharePoint упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  

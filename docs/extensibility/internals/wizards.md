@@ -1,27 +1,23 @@
 ---
-title: "Мастеры | Документы Microsoft"
-ms.custom: 
+title: Мастеры | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96d91fa687c914f0c3f98c4ddca64a93a5d70d02
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 03cee9de14da76ea65882d906acb3af88e72e999
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wizards"></a>Мастеры
 После создания мастера, обычно требуется добавить его в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), чтобы другие могли использовать. Затем откроется мастер добавлены в **Добавление нового проекта** или **Добавление нового элемента** диалоговым окнам. Чтобы увидеть **Добавление нового проекта** или **Добавление нового элемента** диалоговое окно диалоговые окна, щелкните правой кнопкой мыши в открытом решении **обозреватель решений**, пункты **добавить**, и Нажмите кнопку **новый проект** или **новый элемент**.  

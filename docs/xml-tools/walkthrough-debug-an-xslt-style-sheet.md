@@ -1,23 +1,21 @@
 ---
-title: "Пошаговое руководство: Отладка таблицы стилей XSLT | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Отладка таблицы стилей XSLT | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa4604ae256fdd4a3f935cc05ff7aec0fda4e842
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: abf12dc5f290cdabad2b9b7a6f650d488978cf22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Пошаговое руководство: отладка таблицы стилей XSLT
 Шаги в данном пошаговом руководстве демонстрируют, как использовать XSLT-отладчик. Шаги включают просмотр переменных, задание точек останова и пошаговое прохождение кода. Таблица стилей находит все книги, которые стоят меньше средней цены книги.  

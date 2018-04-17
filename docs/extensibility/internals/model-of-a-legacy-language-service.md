@@ -1,27 +1,23 @@
 ---
-title: "Модель службы языка для прежних версий | Документы Microsoft"
-ms.custom: 
+title: Модель службы языка для прежних версий | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>Модель службы языка для прежних версий
 Языковая служба определяет элементы и функции для конкретного языка и используются для предоставления редакторе сведения для данного языка. Например редактор необходимо знать элементов и ключевые слова языка, для поддержки Цветовая подсветка синтаксиса.  
@@ -52,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 |Окно кода|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Окно документа, содержащего один или несколько представлений текста. Когда [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] находится в режиме многодокументного интерфейса (MDI), окно кода является дочерней формы MDI.|  
 |Просмотр текста|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Окно, которое дает пользователю возможность перехода и просмотра текста с помощью клавиатуры и мыши. Текст отображается для пользователя как редактор. Можно использовать представления текста в обычный редактор windows, в окне вывода и окно "Интерпретация". Кроме того можно настроить одно или несколько представлений текст в окне кода.|  
 |Диспетчер текста|Управляется <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> службы, из которого можно получить <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> указатель|Компонент, который поддерживает общие сведения, совместно используется всеми компонентами, описанных выше.|  
-|Служба языка|Реализация зависит от; реализует<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Объект, который предоставляет редактор зависящие от языка сведения, например подсветку синтаксиса, завершение операторов и проверка соответствия фигурных скобок.|  
+|Служба языка|Реализация зависит от; реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Объект, который предоставляет редактор зависящие от языка сведения, например подсветку синтаксиса, завершение операторов и проверка соответствия фигурных скобок.|  
   
 ## <a name="see-also"></a>См. также  
  [Данные документа и представление документа в специализированных редакторах](../../extensibility/document-data-and-document-view-in-custom-editors.md)

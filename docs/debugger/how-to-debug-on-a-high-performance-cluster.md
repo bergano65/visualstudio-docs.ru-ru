@@ -1,12 +1,10 @@
 ---
-title: "Как: отладке на кластере высокой производительности | Документы Microsoft"
-ms.custom: 
+title: 'Как: отладке на кластере высокой производительности | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - cluster debugging
 - high-perfomance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 18a8d66da62fd480934c750a6b809465022c5d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d90037fbf147dd0234ee356f217ab97e5af87a01
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Практическое руководство. Отладка в высокопроизводительном кластере
 Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Требования к удаленной установке в общем см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
@@ -70,7 +68,7 @@ ms.lasthandoff: 12/22/2017
   
      —или—  
   
-     `ProcessID =`*yourprocessIDnumber*  
+     `ProcessID =` *yourprocessIDnumber*  
   
      Чтобы создать более сложный фильтр, можно объединять предложения, используя `&` (оператор AND), `||` (оператор OR), `!` (оператор NOT), и круглые скобки.  
   
@@ -84,11 +82,11 @@ ms.lasthandoff: 12/22/2017
   
 3.  В **Фильтр точки останова** диалоговое окно, введите:  
   
-     `ThreadName =`*yourthreadname*  
+     `ThreadName =` *yourthreadname*  
   
      —или—  
   
-     `ThreadID =`*yourthreadIDnumber*  
+     `ThreadID =` *yourthreadIDnumber*  
   
      Чтобы создать более сложный фильтр, можно объединять предложения, используя `&` (оператор AND), `||` (оператор OR), `!` (оператор NOT), и круглые скобки.  
   

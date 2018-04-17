@@ -1,29 +1,25 @@
 ---
-title: "Элемент Folder (шаблоны проектов Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: Элемент Folder (шаблоны проектов Visual Studio) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Элемент Folder (шаблоны проектов Visual Studio)
 Указывает папку, в которые будут добавлены в проект.  
@@ -54,19 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
-|`Folder`|Указывает папку для добавления в проект. `Folder`элементы могут содержать дочерние `Folder` элементов.|  
+|`Folder`|Указывает папку для добавления в проект. `Folder` элементы могут содержать дочерние `Folder` элементов.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Задает файл для добавления в проект.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Проект](../extensibility/project-element-visual-studio-templates.md)|Необязательный дочерний элемент элемента [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Примечания  
- `Folder`Необязательный дочерний `Project`.  
+ `Folder` Необязательный дочерний `Project`.  
   
  Для организации элементов проекта в папках в шаблоне можно использовать любой из следующих способов:  
   

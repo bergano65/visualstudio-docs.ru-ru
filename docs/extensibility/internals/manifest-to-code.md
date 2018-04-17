@@ -1,22 +1,19 @@
 ---
-title: "Для кода манифеста | Документы Microsoft"
-ms.custom: 
+title: Для кода манифеста | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-to-code"></a>Манифеста для кода
 Манифест, чтобы средство кода является консольным приложением, которое принимает файл .imagemanifest службы образов в Visual Studio и создает файлы для ссылок на значения манифест изображения на C++, C#, VB или vsct-файлами для расширений Visual Studio или программы-оболочки. Это средство создает файлы программы-оболочки, которые можно использовать для запрашивающего изображений из Visual Studio изображение службы непосредственно или для передачи значения манифеста через API-интерфейсы, если код не может обрабатывать любой из пользовательского интерфейса и подготовки к просмотру.  

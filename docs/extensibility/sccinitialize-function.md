@@ -1,29 +1,25 @@
 ---
-title: "Функция SccInitialize | Документы Microsoft"
-ms.custom: 
+title: Функция SccInitialize | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>Функция SccInitialize
 Эта функция инициализирует подключаемый модуль системы управления версиями и предоставляет возможности и ограничения для интегрированной среды разработки (IDE).  
@@ -71,7 +67,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>Возвращаемое значение  
  Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Успешно инициализации элемента управления источника.|  
 |SCC_E_INITIALIZEFAILED|Не удалось инициализировать систему.|  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  `lpCallerName` И `lpSccName` параметры позволяют интегрированной среды разработки и подключаемый модуль системы управления версиями для обмена имена. Эти имена можно использовать только для различения нескольких экземпляров, или они действительно могут появляться в диалоговых окнах и меню.  
   
- `lpAuxPathLabel` Параметр является строкой, используемой как комментарий определение вспомогательного проекта пути, который хранится в файле решения и передан в систему управления версиями подключаемого модуля в вызове [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]использует строку «проект SourceSafe:»; другие источника подключаемые модули управления рекомендуется воздержаться от использования данной конкретной строки.  
+ `lpAuxPathLabel` Параметр является строкой, используемой как комментарий определение вспомогательного проекта пути, который хранится в файле решения и передан в систему управления версиями подключаемого модуля в вызове [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] использует строку «проект SourceSafe:»; другие источника подключаемые модули управления рекомендуется воздержаться от использования данной конкретной строки.  
   
  `lpSccCaps` Дает системы управления версиями подключаемого модуля место для хранения, указывающее, подключаемые в возможности битовые флаги. (Полный список возможностей битовые флаги см. в разделе [флаги возможностей](../extensibility/capability-flags.md)). Например если подключаемый модуль планы для записи результатов в функцию обратного вызова, предоставленный вызывающим объектом, подключаемый модуль нужно задать возможность бит SCC_CAP_TEXTOUT. Это будет отправлять сигнал интегрированной среды разработки для создания окна для управления результаты версии.  
   

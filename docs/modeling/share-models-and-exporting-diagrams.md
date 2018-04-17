@@ -1,29 +1,27 @@
 ---
-title: "Совместное использование моделей и экспорт схем | Документы Microsoft"
-ms.custom: 
+title: Совместное использование моделей и экспорт схем | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a615fcbd55d8520e2c340d3b1d0afe0321fd1f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a40e35ef01698639f89aa64cc1494d7721506895
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Общий доступ к моделям и экспорт схем
 В Visual Studio есть несколько способов организовать совместное использование моделей и схем с коллегами.  
   
- Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="working-on-a-model-as-a-team"></a>Работа с моделью в команде  
  Пользователи Visual Studio можно создавать и изменять модели, схемы зависимостей и направленные графы.  
@@ -35,7 +33,7 @@ ms.lasthandoff: 02/09/2018
  Рекомендации по организации моделей в средних и крупных проектов см. в разделе [структуры решения моделирования](../modeling/structure-your-modeling-solution.md).  
   
 ## <a name="reading-and-reviewing-models"></a>Чтение и рецензирование моделей  
- Участники команды, использующие некоторые версии Visual Studio (который не удается создать модели) могут читать модели, схемы моделирования и направленные графы, но не позволяет их редактировать.  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Участники команды, использующие некоторые версии Visual Studio (который не удается создать модели) могут читать модели, схемы моделирования и направленные графы, но не позволяет их редактировать.  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Диаграмма зависимостей может быть открыто только в пределах модели, в котором он был создан. Чтобы предоставить доступ к схеме, нужно предоставить доступ ко всем файлам проекта моделирования или к их копиям.  
   
@@ -48,7 +46,7 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Совместно используйте модели в рамках проекта большого или среднего размера.|  
 |[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|Вы можете копировать части схем в приложения, например PowerPoint или Word, и печатать схемы в XPS-файлы.|  

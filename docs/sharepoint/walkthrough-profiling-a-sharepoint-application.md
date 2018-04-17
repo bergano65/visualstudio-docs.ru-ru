@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Профилирование приложения SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Профилирование приложения SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Пошаговое руководство. Профилирование приложения SharePoint
   В этом пошаговом руководстве рассказывается, как использовать средства профилирования в Visual Studio, чтобы оптимизировать производительность приложений SharePoint. Примером приложения служит приемник событий компонентов SharePoint, который содержит цикл простоя, что ведет к снижению производительности приемника событий компонентов. Профилировщик Visual Studio позволяет найти и исключить наиболее затратную (медленного выполнения) часть проекта, также известный как *Горячий путь*.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Поддерживаемые редакции Microsoft Windows и SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые редакции Microsoft Windows и SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Выберите **Готово** кнопки. Проект отображается в **обозревателе решений**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Добавление компонента и приемника событий компонента  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Добавление компонента и приемника событий компонента  
  Затем добавьте в проект компонент вместе с приемником событий для этого компонента. Этот приемник событий будет содержать код для профилирования.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Добавление компонента и приемника событий компонента  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Сохраните проект.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>Настройка и развертывание приложения SharePoint  
+##  <a name="BKMK_ConfigSharePointApp"></a> Настройка и развертывание приложения SharePoint  
  Теперь, когда проект SharePoint готов, настройте и разверните его на сервере SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Методика настройки и развертывания приложения SharePoint  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      Мастер включает профилирование приложения на сервере, отображает **Обозреватель производительности** окна, а затем собирает, развертывает и запускает приложение SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a>Запуск приложения SharePoint  
+##  <a name="BKMK_RunSPApp"></a> Запуск приложения SharePoint  
  Активируйте компонент SharePoint, запустив код события `FeatureActivation`.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Запуск приложения SharePoint  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      После закрытия SharePoint профилировщик создает и отображает отчет о профилировании выборки и сохраняет его как VSP-файл в **ProfileTest** папку проекта.  
   
-##  <a name="BKMK_ViewResults"></a>Просмотр и Интерпретация результатов профилирования  
+##  <a name="BKMK_ViewResults"></a> Просмотр и Интерпретация результатов профилирования  
  Теперь, после запуска и профилирования приложения SharePoint, просмотрите результаты теста.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>Просмотр и интерпретация результатов профилирования  

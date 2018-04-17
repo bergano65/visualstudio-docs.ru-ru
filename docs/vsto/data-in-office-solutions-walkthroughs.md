@@ -1,12 +1,10 @@
 ---
-title: "Данные в пошаговые руководства по решениям Office | Документы Microsoft"
-ms.custom: 
+title: Данные в пошаговые руководства по решениям Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a30280c2e47a5beac99c52eefb61fcbc7fbbdea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Пошаговые руководства по данным в решениях Office
   В следующих пошаговых руководствах показано, как работать с данными в настройках уровня документа и надстройках VSTO для Microsoft Office Word и Microsoft Office Excel.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
  [Пошаговые руководства по настройке пользовательского интерфейса Office](../vsto/office-ui-customization-walkthroughs.md)   
  [Безопасность и пошаговые руководства по развертыванию](../vsto/security-and-deployment-walkthroughs.md)   
  [Примеры разработки решений Office](../vsto/office-development-samples.md)   
- [Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
   

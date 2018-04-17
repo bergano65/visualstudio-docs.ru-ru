@@ -1,12 +1,10 @@
 ---
-title: "Как: Локализация компонента | Документы Microsoft"
-ms.custom: 
+title: 'Как: Локализация компонента | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-a-feature"></a>Практическое руководство. Локализация компонента
   По умолчанию заголовки компонентов и описаний используют жестко запрограммированные значения строк. Для локализации, заголовок и описание компонента, замените строки выражения, ссылающиеся на локализованные ресурсы.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Для локализации **заголовок** и **описание** поля компонента, используйте следующий формат для ввода значений в них:  
   
-     `$Resources:`*Идентификатор строки*  
+     `$Resources:` *Идентификатор строки*  
   
      Например, введите $Resources:**заголовок** в **название компонента** , а затем $Resources:**описание** в **описание функции** поле .  
   

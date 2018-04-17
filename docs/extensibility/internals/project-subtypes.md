@@ -1,32 +1,30 @@
 ---
-title: "Подтипы проекта | Документы Microsoft"
-ms.custom: 
+title: Подтипы проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e91a16ad11f7089230138919519922d58f3cc472
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes"></a>Подтипы проектов
 Подтипы проекта позволяют настраивать или flavor поведение системы проектов из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Настройки включают сохранение дополнительных данных в файле проекта, добавления или фильтрации элементов в **Добавление нового элемента** диалоговом управление как отладки и развертывания сборок и расширение проекта **свойство Страницы** диалоговое окно. Пакеты VSPackage реализовывать подтипы проекта с помощью COM статистической обработки.  
   
 > [!NOTE]
->  Система проектов Visual C++ не поддерживает подтипы проекта. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]подтипы проекта сам использует для реализации проектов SQL Server и смарт-устройств.  
+>  Система проектов Visual C++ не поддерживает подтипы проекта. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] подтипы проекта сам использует для реализации проектов SQL Server и смарт-устройств.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Разработка подтипов проекта](../../extensibility/internals/project-subtypes-design.md)  

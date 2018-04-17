@@ -1,10 +1,8 @@
 ---
-title: "Как: создать доменный язык решение | Документы Microsoft"
-ms.custom: 
+title: 'Как: создать доменный язык решение | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5adfe90d88f46f4a3c31c1ddb6eb860403d57fe4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c2b14b407a6274e444ff50a6693b20b7ec763e72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
 Доменный язык (DSL) создается с помощью специального [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения.  
@@ -81,7 +79,7 @@ ms.lasthandoff: 02/09/2018
     > [!NOTE]
     >  Если появится сообщение, предупреждающее не выполнение текстовых шаблонов из ненадежных источников, нажмите кнопку **ОК**. Можно задать данное сообщение не появится снова.  
   
-##  <a name="settings"></a>Страницы мастера конструктора DSL  
+##  <a name="settings"></a> Страницы мастера конструктора DSL  
  Можно оставить несколько полей, отличаются от значений по умолчанию. Тем не менее задайте поле расширение файла.  
   
 ### <a name="solution-settings-page"></a>Страница параметров решения  

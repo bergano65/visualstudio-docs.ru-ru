@@ -1,21 +1,19 @@
 ---
-title: "Направленные ссылки языка разметки графа (DGML) | Документы Microsoft"
-ms.custom: 
+title: Направленные ссылки языка разметки графа (DGML) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 Язык разметки направленных графов (Directed Graph Markup Language, DGML) описывает информацию, которая используется для визуализации и выполнения анализов сложности, а также служит форматом, в котором Visual Studio хранит карты кодов. Для описания циклических и ациклических направленных графов в DGML используется простой XML-код. Направленный граф представляет собой набор узлов, соединенных ссылками или границами. Узлы и ссылки могут быть использованы для представления сетевых структур, например элементов программного проекта.  
@@ -25,7 +23,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [класс цвета](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a>Синтаксис DGML  
+##  <a name="DGML"></a> Синтаксис DGML  
  В следующей таблице описаны виды элементов, используемых в языке DGML.  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -95,7 +93,7 @@ ms.lasthandoff: 02/09/2018
   
      Следующий список описывает некоторые из необязательных атрибутов, которые могут быть включены в элемент.  
   
-     `Label`— Отображаемое имя узла.  
+     `Label` — Отображаемое имя узла.  
   
      Атрибуты стилей. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
@@ -301,7 +299,7 @@ ms.lasthandoff: 02/09/2018
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>Псевдонимы для часто используемых путей  
+###  <a name="AddAlias"></a> Псевдонимы для часто используемых путей  
  Замена часто используемых путей псевдонимами уменьшает размер DGML-файла и время, требуемое на загрузку или сохранение файла. Для создания псевдонима добавьте раздел `<Paths></Paths>` в конце DGML-файла. В этом разделе добавьте элемент `<Path/>` для того, чтобы определить псевдоним для пути.  
   
 ```xml  

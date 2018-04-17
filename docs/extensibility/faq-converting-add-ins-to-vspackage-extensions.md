@@ -1,23 +1,21 @@
 ---
-title: "Часто задаваемые вопросы: Преобразование надстроек для расширений VSPackage | Документы Microsoft"
-ms.custom: 
+title: 'Часто задаваемые вопросы: Преобразование надстроек для расширений VSPackage | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Часто задаваемые вопросы. Преобразование надстроек в расширения VSPackage
 Надстройки устарели. Чтобы сделать новые расширения Visual Studio, необходимо создать расширение VSIX. Здесь приведены ответы на некоторые часто задаваемые вопросы о преобразовании надстроек Visual Studio для расширения VSIX.  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Как преобразовать проект надстройки в проект VSIX?  
  Невозможно преобразовать проект надстройки непосредственно в проект VSIX, поскольку механизмами проекты VSIX не совпадают, как и в проектах надстроек. Шаблон проекта VSIX, а также шаблоны элементов проекта вправо с большим числом код, который позволяет сравнительно легко подготовить к и работает как расширение VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a>Как начать разработку расширения VSIX?  
+##  <a name="BKMK_StartDeveloping"></a> Как начать разработку расширения VSIX?  
  Ниже приведен порядок выполнения файл VSIX, который содержит команду меню.  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Чтобы сделать расширение VSIX, которое содержит команды меню  
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
      На **средства** меню (в экспериментальном экземпляре) вы увидите кнопку с именем **Мои команды с именем**. При выборе этой кнопки, появится сообщение: **TestVSPackagePackage.MenuItemCallback() внутри**.  
   
-##  <a name="BKMK_RunAddin"></a>Как выполнять код надстройки в VSPackage  
+##  <a name="BKMK_RunAddin"></a> Как выполнять код надстройки в VSPackage  
  Код надстройки можно запустить одним из двух способов.  
   
 -   Путем запуска команды меню (код находится в методе `IDTCommandTarget.Exec`).  

@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание первой настройки уровня документа для Excel | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание первой настройки уровня документа для Excel | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Пошаговое руководство. Создание первой настройки уровня документа для Excel
   В этом вводном пошаговом руководстве показано, как создавать настройку на уровне документа для Microsoft Office Excel. Функциональные возможности, создаваемые в таком решения, доступны только в том случае, когда открыта конкретная книга. Для внесения изменений в приложение настройки на уровне документа использовать нельзя (например, для отображения новой вкладки ленты, когда открыта любая книга).  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Выберите **создания документа**и нажмите кнопку **ОК**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает **FirstWorkbookCustomization** проекта, а также добавляет в проект следующие файлы.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает **FirstWorkbookCustomization** проекта, а также добавляет в проект следующие файлы.  
   
     -   *FirstWorkbookCustomization*.xlsx представляет книгу Excel в проекте. Содержит все листы и диаграммы.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Развертывание настроек на уровне документа для Excel: [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
- [Общие сведения о разработке решений Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Решения Excel](../vsto/excel-solutions.md)   
  [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
  [Общие сведения о модели объектов Excel](../vsto/excel-object-model-overview.md)   

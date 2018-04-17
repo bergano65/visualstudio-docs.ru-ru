@@ -1,13 +1,10 @@
 ---
-title: "Отладка многопоточного приложения, используя окно \"Потоки\" | Документы Microsoft"
+title: Отладка многопоточного приложения, используя окно "Потоки" | Документы Microsoft
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 367bade1041012670ae47937c21be42e38157dca
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 78a233722242548bd40322c872dc9c2e6d0925b9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Пошаговое руководство: Отладка многопоточных приложений в Visual Studio, используя окно "Потоки"
 Visual Studio предоставляет **потоков** окна и другие пользовательского интерфейса элементов для отладки многопоточных приложений. Этот учебник показывает, как использовать **потоков** окна и **место отладки** инструментов. Сведения о других средствах см. в разделе [Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md). Этот учебник занимает всего несколько минут, но оно позволит ознакомиться со средствами для отладки многопоточных приложений.   
@@ -215,7 +211,7 @@ Visual Studio предоставляет **потоков** окна и друг
   
      Содержимое **стек вызовов** окна были изменены. 
 
-## <a name="bkmk_freeze"></a>Замораживание и размораживание потоков 
+## <a name="bkmk_freeze"></a> Замораживание и размораживание потоков 
 
 Можно заморозить или разморозить (приостанавливать и возобновлять) потоки для управления порядком, в котором потоки выполнения работы. Это может помочь при устранении проблем параллелизма, например взаимоблокировки и состояние гонки.
 

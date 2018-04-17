@@ -1,23 +1,21 @@
 ---
-title: "Общие цвета для Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Общие цвета для Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
 Если вы разрабатываете пользовательский Интерфейс, который использует стандартные элементы оболочки Visual Studio, или нужно элемента интерфейса для согласования с аналогичными функциями, используйте существующие имена токенов в файлах определения пакетов для выбора и назначения цветов. Таким образом можно обеспечить согласованность пользовательского интерфейса со всей средой Visual Studio и его автоматическое обновление при добавлении или обновлении тем.  
@@ -858,7 +856,7 @@ ms.lasthandoff: 12/22/2017
 | Фон ссылки | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Градиента для данного маркера, не используется в теме пользовательского интерфейса.) |
 | Передний план (текст ссылки) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>Представления в виде дерева  
+###  <a name="BKMK_TreeView"></a> Представления в виде дерева  
 Некоторых окнах инструментов, включая обозреватель решений, обозреватель серверов и представление классов, реализована иерархическая организационная схема, цвета которой определяются названиями цветов в `TreeView` категории. Все элементы в иерархическом представлении имеют цвета фона и текста. Элементы с вложенными дочерними элементами также имеют глифы, которые указывают на то, является ли элемент свернутым или развернутым.  
 
 ![Представление в виде дерева (красная линия)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Представление в виде дерева (красная линия)
@@ -1041,7 +1039,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="command-structures"></a>Структура команд  
 
-###  <a name="BKMK_CommandMenus"></a>Меню  
+###  <a name="BKMK_CommandMenus"></a> Меню  
 Меню может произойти в нескольких местах в среде Visual Studio: в главном меню, внедренных в документов или окно инструментов или щелкните правой кнопкой мыши в различных местах в Интегрированной среде разработки. Реализация меню, связанных с другими элементами пользовательского интерфейса, рассматривается в разделах, посвященных соответствующим элементам. Всегда используйте стандартную реализацию меню, предоставляемую средой Visual Studio. Однако в некоторых редких случаях доступ к стандартным меню Visual Studio может отсутствовать. В таких ситуациях используйте указанные ниже имена токенов для обеспечения согласованности пользовательского интерфейса с другими меню в Visual Studio.  
 
 ![Меню Visual Studio (красная линия)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Меню Visual Studio (красная линия)
@@ -1282,7 +1280,7 @@ ms.lasthandoff: 12/22/2017
 | Передний план (текст) | `Environment.CommandBarTextInactive` |
 | Border | Н/Д |
 
-####  <a name="BKMK_CommandComboBox"></a>Поля со списком командной строки
+####  <a name="BKMK_CommandComboBox"></a> Поля со списком командной строки
 
 > [!IMPORTANT]
 > Поле со списком похоже на раскрывающийся список, но включает область для ввода и редактирования текста. Если раскрывающийся список не включает область для редактирования текста, используйте токены цветов для [командной строке раскрывающихся списков](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
@@ -1307,7 +1305,7 @@ ms.lasthandoff: 12/22/2017
 
 **Кнопка раскрывающегося списка командной строки: состояние по умолчанию**  
 
-![Поле со списком поле drop &#45; вниз кнопки](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Кнопка раскрывающегося списка командной строки
+![Раскрывающегося поля со списком&#45;Кнопка вниз](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Кнопка раскрывающегося списка командной строки
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ ms.lasthandoff: 12/22/2017
 | Фон | Нет |
 | Передний план (глиф) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>Раскрывающийся список командной строки
+####  <a name="BKMK_CommandDropDown"></a> Раскрывающийся список командной строки
 
 > [!IMPORTANT]
 >  Раскрывающийся список похож на поле со списком, но не имеет области для ввода и редактирования текста. Если раскрывающийся список включает область для редактирования текста, используйте токены цветов для [командной строке поля со списком](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
@@ -1489,7 +1487,7 @@ ms.lasthandoff: 12/22/2017
 
  **Поле выбора раскрывающегося списка командной строки: нажата состояния**  
 
-![DROP &#45; вниз поле выбора нажата](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Нажата командной строке поле выбора раскрывающегося списка
+![Удалить&#45;вниз поле выбора нажата](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Нажата командной строке поле выбора раскрывающегося списка
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |

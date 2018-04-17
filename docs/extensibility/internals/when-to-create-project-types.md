@@ -1,27 +1,23 @@
 ---
-title: "Когда следует создавать типы проектов | Документы Microsoft"
-ms.custom: 
+title: Когда следует создавать типы проектов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f766619054ed1912d677ac08fad511cfd3a3dcb4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 732d71e09d00cd5dbaa077b8a62e240fe401540b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 Создание нового проекта типа основу для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для пользователей. Однако создание новый тип проекта не является обязательным для всех [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] настроек. Следующие рекомендации помогут вам определить, требуется ли новый тип проекта для вашего сценария.  
@@ -53,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="use-an-existing-project-type"></a>Использовать существующий тип проекта  
  Создание нового проекта иногда не является обязательным. В следующей таблице показаны задачи, которые необходимо создать тип проекта для.  
   
-|Задача|Описание:|  
+|Задача|Описание|  
 |----------|-----------------|  
 |Обработка команд|Любой пакет VSPackage может обрабатывать команды.|  
 |Сборка редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [окон документов и редакторы](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  

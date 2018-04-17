@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1 | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1 | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 1
   Проекты SharePoint представляют собой контейнеры для одного или нескольких элементов проекта SharePoint. Системы проектов SharePoint в Visual Studio можно расширить путем создания собственных типов элементов проектов SharePoint и связывая их с шаблоном проекта. В этом пошаговом руководстве будет определить тип элемента проекта для создания столбца сайта, и затем вы создадите шаблон проекта, который может использоваться для создания нового проекта, который содержит элемента проекта столбца сайта.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  Это изолированный Пошаговое руководство. После выполнения этого пошагового руководства, элемент проекта можно улучшить, добавив мастер в шаблоне проекта. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения данного пошагового руководства.  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  В **имя** введите **SiteColumnProjectItem**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **SiteColumnProjectItem** проекта **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **SiteColumnProjectItem** проекта **обозревателе решений**.  
   
 #### <a name="to-create-the-project-template-project"></a>Создание проекта шаблона проекта  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  В **имя** введите **SiteColumnProjectTemplate**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **SiteColumnProjectTemplate** проекта в решение.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **SiteColumnProjectTemplate** проекта в решение.  
   
 6.  Удалите файл Class1 код из проекта.  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  В **имя** введите **ProjectItemTypeDefinition** и выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **ProjectItemTypeDefinition** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **ProjectItemTypeDefinition** в решение проект и открывает файл кода по умолчанию Class1.  
   
 5.  Удалите файл Class1 код из проекта.  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   Добавляет `ProjectItem` элементы для каждого filethat включенных в каждый экземпляр проекта.  
   
-    -   Использует пространство имен «http://schemas.microsoft.com/developer/vstemplate/2005». Другие файлы проекта в этом решении используйте пространство имен «http://schemas.microsoft.com/developer/msbuild/2003». Таким образом создается предупреждение схемы XML-сообщения, но их можно игнорировать в этом пошаговом руководстве.  
+    -   Использует пространство имен «http://schemas.microsoft.com/developer/vstemplate/2005». Другие файлы проекта в этом решении используется «http://schemas.microsoft.com/developer/msbuild/2003» пространства имен. Таким образом создается предупреждение схемы XML-сообщения, но их можно игнорировать в этом пошаговом руководстве.  
   
      Дополнительные сведения о содержимом VSTEMPLATE-файлов см. в разделе [Справочник схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   

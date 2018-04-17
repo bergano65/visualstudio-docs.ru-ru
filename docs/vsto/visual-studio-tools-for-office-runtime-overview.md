@@ -1,12 +1,10 @@
 ---
-title: "Средства Visual Studio для среды | Документы Microsoft"
-ms.custom: 
+title: Средства Visual Studio для среды | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ed9f3657fcb49a7b39ee41d2ce9b73dddda7fd93
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f357e593c7fe1e3dc5e4803b93ac515911ed9f75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Общие сведения об инструментах Visual Studio для среды выполнения Office
   Для запуска решений, созданных с помощью Microsoft Office Developer Tools в Visual Studio, на компьютерах конечных пользователей должна быть установлена среда выполнения набора средств Visual Studio 2010 для Office. Для получения дополнительной информации см. [How to: Install the Visual Studio Tools for Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Среда выполнения Visual Studio 2010 Tools for Office состоит из двух основных компонентов:  
@@ -107,9 +106,9 @@ ms.lasthandoff: 01/10/2018
   
 |Выпуск Windows|Выпуск Microsoft Office|Необходимая версия среды выполнения Visual Studio Tools for Office|  
 |------------------------|---------------------------------|--------------------------------------------------------------------|  
-|32-разрядная версия|32-разрядная версия|32-разрядная версия|  
-|64-разрядная версия|32-разрядная версия|64-разрядная версия|  
-|64-разрядная версия|64-разрядная версия|64-разрядная версия|  
+|32-разрядная|32-разрядная|32-разрядная|  
+|64-разрядная|32-разрядная|64-разрядная|  
+|64-разрядная|64-разрядная|64-разрядная|  
   
  При установке Office необходимая версия [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] устанавливается вместе с Office. Например, при установке 64-разрядного выпуска Office в 64-разрядную версию Windows также устанавливается 64-разрядная версия [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Дополнительные сведения об установке [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] с Office см. в разделе [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   

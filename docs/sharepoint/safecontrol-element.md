@@ -1,13 +1,10 @@
 ---
-title: "Элемент SafeControl | Документы Microsoft"
-ms.custom: 
+title: Элемент SafeControl | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SafeControl element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7458120d7a130de96a1a271c83e5376fe94481f3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 14e5d2cfd526d228d84ac6ff084e3873224c08c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="safecontrol-element"></a>Элемент SafeControl
   Представляет элемент управления ASPX или веб-части, которые обозначены как безопасные для любому пользователю получить доступ к любой странице ASPX на сайте SharePoint.  
@@ -43,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |**Assembly**|Необязательный **xs: String** атрибута.<br /><br /> Имя сборки, в которой определен элемент управления ASPX или веб-части. По умолчанию этот атрибут используется **$SharePoint.Project.AssemblyFullName$** заменяемый параметр для имени сборки. Дополнительные сведения см. в разделе [подстановочные параметры](../sharepoint/replaceable-parameters.md).|  
 |**IsSafe**|Необязательный **xs: Boolean** атрибута.<br /><br /> Указывает, является ли элемент управления ASPX или веб-часть безопасная настройка для недоверенных пользователей для доступа к.|  
@@ -57,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX и веб-частей, отмеченных как безопасные для любому пользователю получить доступ к любой странице ASPX на сайте SharePoint.|  
   
@@ -68,7 +65,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|**Пространство имен**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Пространство имен**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
 |**Может быть пустым.**|Нет|  

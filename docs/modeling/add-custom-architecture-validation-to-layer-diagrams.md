@@ -2,22 +2,20 @@
 title: Добавление пользовательской проверки архитектуры в схемы зависимостей | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 4ede78d8866a33e69f9859ff3616d59e8d807ea4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Добавление пользовательской проверки архитектуры в схемы зависимостей
 В Visual Studio позволяет проверять исходный код в проекте по модели слоев, чтобы проверить, исходный код соответствует зависимостям на схеме зависимостей. В программе предусмотрен стандартный алгоритм проверки, однако вы можете определять собственные расширения проверки.  

@@ -1,23 +1,19 @@
 ---
-title: "Изображения службы и каталога | Документы Microsoft"
-ms.custom: 
+title: Изображения службы и каталога | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Служба изображений и каталога
 Это руководство содержит рекомендации и советы и рекомендации по внедрению изображений службы Visual Studio и каталог образа, представленные в Visual Studio 2015.  
@@ -661,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Примеры  
  Некоторые примеры Visual Studio на сайте GitHub были обновлены для использования службы образов в составе разных точках расширяемости Visual Studio.  
   
- Проверьте [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) для самые свежие образцы.  
+ Проверьте [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) для самые свежие образцы.  
   
 ### <a name="tooling"></a>Инструментарий  
  Набор средств поддержки службы образов был создан для помощи в создании или обновлении пользовательский Интерфейс, который работает со службой изображения. Дополнительные сведения о каждом инструменте см. в документации, поставляемой с этими средствами. Средства будут включены в [пакет SDK для Visual Studio 2015.](http://msdn.microsoft.com/library/bb166441.aspx)  

@@ -1,27 +1,23 @@
 ---
-title: "Команды, которые необходимо выполнить после установки | Документы Microsoft"
-ms.custom: 
+title: Команды, которые необходимо выполнить после установки | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Команды, которые необходимо выполнить после установки
 При развертывании расширения через файл MSI необходимо запустить `devenv /setup` как часть установки в порядке для Visual Studio для обнаружения расширений.  
@@ -73,7 +69,7 @@ ms.lasthandoff: 12/22/2017
  Настраиваемые действия должны быть авторизованы в таблицу InstallExecuteSequence необходимо запланировать их для выполнения во время установки. Использовать соответствующее свойство в каждой строке столбца условие для препятствующих пользовательские действия выполняются, если это версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не установлен в системе.  
   
 > [!NOTE]
->  `Null`значение свойства `False` при использовании в условиях.  
+>  `Null` значение свойства `False` при использовании в условиях.  
   
  Значение столбца для каждого настраиваемого действия последовательности зависит от других значений последовательности в пакет установщика Windows. Значения последовательности должны быть таким образом, чтобы закрыть devenv.exe пользовательские действия запуска от имени можно ближе к непосредственно перед InstallFinalize стандартное действие.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Элементы управления в документах Office Windows Forms | Документы Microsoft"
-ms.custom: 
+title: Элементы управления в документах Office Windows Forms | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -30,14 +27,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], Windows Forms
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2693c31d06edc621f355749f76caf04e44fb28e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Общие сведения об использовании элементов управления Windows Forms в документах Office
   Элементы управления Windows Forms — это объекты, с которыми пользователи могут взаимодействовать для ввода данных и работы с ними. В проектах для Microsoft Office Excel или Microsoft Office Word на уровне документа можно добавлять элементы управления Windows Forms в документ или книгу в проекте во время проектирования или добавить их программными средствами в среде выполнения. Программными средствами в среде выполнения эти элементы управления можно добавлять в любой открытый документ или книгу в надстройке VSTO для Excel или Word.  
@@ -153,7 +150,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>См. также  
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
  [Элементы управления Windows Forms](/dotnet/framework/winforms/controls/index)   
  [Ограничения для элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   

@@ -1,27 +1,25 @@
 ---
-title: "Решение (. Файл SLN) | Документы Microsoft"
-ms.custom: 
+title: Решение (. Файл SLN) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73d6f7fb83e9420f59122135761ce44ea641fe57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-sln-file"></a>Решение (. Файл SLN)
 Решение — это структура, для организации проектов в Visual Studio. Решение хранит сведения о состоянии для проектов в SLN (текстовый, общие) и файлы .suo (решения двоичный, пользовательские параметры). Дополнительные сведения о SUO-файлы в разделе [пользовательских параметров решения (. Файл SUO)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
@@ -96,7 +94,7 @@ EndGlobal
   
  Если сведения для сохранения, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> интерфейс вызывается с указателем <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> метод. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> Средой для получения пары «имя значение» из затем вызывается метод `IPropertyBag` интерфейса и записывать данные SLN-файл.  
   
- `SaveSolutionProps`и `WriteSolutionProps` объекты, называются рекурсивно средой для получения сведений, которые будут сохраняться с `IPropertyBag` интерфейс, пока все изменения были введены в SLN-файл. Таким образом можно гарантировать, что данные будут сохранены с решения и доступных очередном открытии решения.  
+ `SaveSolutionProps` и `WriteSolutionProps` объекты, называются рекурсивно средой для получения сведений, которые будут сохраняться с `IPropertyBag` интерфейс, пока все изменения были введены в SLN-файл. Таким образом можно гарантировать, что данные будут сохранены с решения и доступных очередном открытии решения.  
   
  Чтобы увидеть, если у него есть все, чтобы сохранить SLN-файл перечисляется каждого загруженного пакета VSPackage. Это только во время загрузки, получат разделов реестра. Среде знает о загруженных пакетов, так как они находятся в памяти во время сохранения решения.  
   

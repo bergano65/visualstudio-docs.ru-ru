@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание первой настройки уровня документа для Word | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание первой настройки уровня документа для Word | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Пошаговое руководство. Создание первой настройки уровня документа для Word
   В этом вводном пошаговом руководстве показано, как создавать настройку на уровне документа для Microsoft Office Word. Функциональные возможности, создаваемые в таком решении, доступны только в том случае, когда открыт конкретный документ. Для внесения изменений в приложение настройку на уровне документа использовать нельзя (например, для отображения новой вкладки ленты, когда открыт любой документ).  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Выберите **создания документа**и нажмите кнопку **ОК**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает **FirstDocumentCustomization** проекта, а также добавляет **FirstDocumentCustomization** документа и файл кода ThisDocument в проект. **FirstDocumentCustomization** документ автоматически открывается в конструкторе.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создает **FirstDocumentCustomization** проекта, а также добавляет **FirstDocumentCustomization** документа и файл кода ThisDocument в проект. **FirstDocumentCustomization** документ автоматически открывается в конструкторе.  
   
 ## <a name="closing-and-reopening-the-document-in-the-designer"></a>Закрытие и повторное открытие документа в конструкторе  
  Если вы случайно или преднамеренно закрыли документ в конструкторе во время разработки проекта, его можно снова открыть.  
@@ -158,7 +157,7 @@ ms.lasthandoff: 01/10/2018
 -   Развертывание настроек на уровне документа для Word: [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>См. также  
- [Общие сведения о разработке решений Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Решения Word](../vsto/word-solutions.md)   
  [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
  [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)   

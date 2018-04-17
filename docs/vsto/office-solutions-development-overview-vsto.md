@@ -1,13 +1,10 @@
 ---
-title: "Общие сведения о разработке решений Office (VSTO) | Документы Microsoft"
-ms.custom: 
+title: Общие сведения о разработке решений Office (VSTO) | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Общие сведения о разработке решений Office (VSTO)
   Благодаря применению Microsoft Office в качестве внешнего интерфейса для решений, можно эффективно использовать привычные пользовательские интерфейсы и инструменты Microsoft Office, например, функции обработки текста в Word, функции анализа данных в Excel и функции управления электронной почтой в Outlook. В Visual Studio можно разрабатывать решения для настройки приложений Office и добавления конкретных функций, необходимых для бизнес-процессов. Например, можно включить Word в генератор контрактов, собирающий контракты на основе уже существующих частей, которые можно сделать редактируемыми или нередактируемыми. С помощью Excel можно создать лист автоматической разработки бюджета, настраиваемый для различных проектов. Пользователи также могут применять решения Office в автономном режиме, что делает сложные решения более удобными, чем решения, построенные на основе веб-архитектуры.  
@@ -91,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  Для обеспечения безопасности решений VSTO для Office [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] выполняет ряд проверок безопасности при установке и загрузке решения. Эти проверки включают в себя проверку уровня доверия расположения манифеста развертывания или сертификата, используемого для подписания манифеста развертывания. Для получения дополнительной информации см. [Securing Office Solutions](../vsto/securing-office-solutions.md).  
   
 ## <a name="see-also"></a>См. также  
- [Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)   
  [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Приступая к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   

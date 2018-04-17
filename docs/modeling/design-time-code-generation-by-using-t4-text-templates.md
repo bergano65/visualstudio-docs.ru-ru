@@ -1,10 +1,8 @@
 ---
-title: "Создание кода во время разработки с помощью текстовых шаблонов T4 | Документы Microsoft"
-ms.custom: 
+title: Создание кода во время разработки с помощью текстовых шаблонов T4 | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fea82e3343016ab4221a482e2c7975a6d39c1afb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Как правило, шаблоны создаются, чтобы они менять код, они создают в соответствии с данными из *модели*. Модель — файла или базы данных, которая содержит основные сведения о требованиях приложения.  
@@ -294,7 +292,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Текстовый шаблон выполняется в собственном домене приложений; доступ к службам предоставляется путем маршалинга. В этих обстоятельствах метод GetCOMService() надежнее, чем GetService().  
   
-##  <a name="Regenerating"></a>Автоматическое повторное создание кода  
+##  <a name="Regenerating"></a> Автоматическое повторное создание кода  
  Как правило, несколько файлов в решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создаются с помощью одной модели ввода. Каждый файл создается на основе своего собственного шаблона, но все шаблоны относятся к одной модели.  
   
  Если изменяется исходная модель, необходимо перезапустить все шаблоны в решении. Чтобы сделать это вручную, выберите **преобразовать все шаблоны** на **построения** меню.  
@@ -322,7 +320,7 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a>Преобразование существующего файла в шаблон  
+##  <a name="Converting"></a> Преобразование существующего файла в шаблон  
  Полезной возможностью шаблонов является то, что они очень похожи на создаваемые им файлы и включают некоторую часть программного кода. Это предполагает удобный способ создания шаблона. Сначала создайте обычный файл в качестве прототипа, например [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] файл, а затем постепенно вводите создающий код, изменяющий созданный файл.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Преобразование существующего файла в шаблон времени разработки  

@@ -2,26 +2,22 @@
 title: Выражения вычисления интерфейсы | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ce9f82e88c6275000c17d40e2b1e1494683715
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be9582f965fe1d8a00c97548dbc5f458ae4e1198
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluation-interfaces"></a>Интерфейсы вычисление выражений
 > [!IMPORTANT]
@@ -40,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual Studio (VS)  
   
-|Интерфейс|Реализуемый|Описание:|  
+|Интерфейс|Реализуемый|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Представляет числовой псевдоним для переменной.|  
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Представляет числовой псевдоним для переменной и обеспечивает вычислитель выражений (EE), чтобы получить домен приложения для псевдонима.|  

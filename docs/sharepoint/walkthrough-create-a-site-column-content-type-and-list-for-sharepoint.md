@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint
   Следующие процедуры демонстрируют способы создания пользовательских столбцов сайта SharePoint, или *поля*, а также тип содержимого, используют столбцы сайтов. Ниже также показан способ создания списка, использующего новый тип содержимого.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Создание пользовательских столбцов сайта  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Создание пользовательских столбцов сайта  
  В этом примере создается список для управления пациентами в больнице. Во-первых, необходимо создать новый проект SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и добавить столбцы сайтов в него следующим образом.  
   
 #### <a name="to-create-the-project"></a>Создание проекта  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  С помощью той же процедуры, добавьте два дополнительных столбца сайта в проект: **Patient ID** (тип = «Integer») и **Doctor Name** (тип = «Text»). Задайте значение параметра группы **столбцы сайта клиники**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Создание пользовательского типа содержимого  
+##  <a name="BKMK_CreateCustContType"></a> Создание пользовательского типа содержимого  
  Теперь создайте тип содержимого (основанный на типе содержимого "Контакт"), который включает в себя столбцы сайта, созданные перед этим. Вы можете сэкономить время, базируя тип содержимого на существующем типе содержимого, так как базовый тип содержимого имеет несколько столбцов сайта для использования в новом типе содержимого.  
   
 #### <a name="to-create-a-custom-content-type"></a>Чтобы создать пользовательский тип содержимого  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. В строке меню выберите **файл**, **сохранить все**, а затем закройте конструктор типа содержимого.  
   
-##  <a name="BKMK_CreateList"></a>Создание списка  
+##  <a name="BKMK_CreateList"></a> Создание списка  
  Теперь создайте список, в котором используется новый тип содержимого и столбцы сайтов.  
   
 #### <a name="to-create-a-list"></a>Создание списка  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. В **имя столбца** выберите **Patient Name**, убедитесь, что **Сортировка** столбцу присваивается **по возрастанию**, а затем выберите  **ОК** кнопки.  
   
-##  <a name="BKMK_TestApp"></a>Тестирование приложения  
+##  <a name="BKMK_TestApp"></a> Тестирование приложения  
  Теперь, когда пользовательские столбцы сайтов, тип содержимого и список готовы, разверните их в SharePoint и запустите приложение для тестирования.  
   
 #### <a name="to-test-the-application"></a>Тестирование приложения  
@@ -231,6 +230,6 @@ ms.lasthandoff: 01/10/2018
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Как: Создание настраиваемого поля типа](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Типы содержимого](http://go.microsoft.com/fwlink/?LinkId=192080)   
- [Столбцы](http://go.microsoft.com/fwlink/?LinkId=192081)  
+ [столбцы](http://go.microsoft.com/fwlink/?LinkId=192081)  
   
   

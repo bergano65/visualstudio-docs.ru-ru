@@ -1,12 +1,10 @@
 ---
-title: "&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: '&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - <addin> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b362894449670a7c672d36fa5b7421a9efb0976b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5795c15b4e7ecaa29a26d942fb09122aae6a579f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;Надстройка&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `addin` пространства имен `vstav3` содержит сведения, относящиеся к настройкам уровня документа и надстройкам VSTO Microsoft Office, разработанным с помощью Visual Studio.  
-  
+
 ## <a name="syntax"></a>Синтаксис  
-  
+
 ```  
 <addIn>  
   <entryPointsCollection>  
@@ -50,33 +49,33 @@ ms.lasthandoff: 01/10/2018
   </application  
 </addIn>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
  Элемент `addin` пространства имен `vstav3` содержит сведения о решений Office и приложении Microsoft Office. Этот элемент должен принадлежать следующему пространству имен: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Дочерние элементы также должны быть в этом пространство имен.  
-  
+
  У элемента `addin` нет атрибутов.  
-  
+
  Элемент `addin` имеет указанные ниже дочерние элементы.  
-  
+
 ### <a name="entrypoints"></a>entryPoints  
- Обязательно. `entryPoints` Элемент описан в [&#60; entryPoints &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
-  
+ Обязательно. `entryPoints` Элемент описан в [ &#60;entryPoints&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+
 ### <a name="update"></a>обновить  
- Обязательно. `update` Элемент описан в [&#60; Обновить &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/update-element-office-development-in-visual-studio.md).  
-  
+ Обязательно. `update` Элемент описан в [ &#60;обновление&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+
 ### <a name="postactions"></a>postActions  
- Необязательный. `postActions` Элемент описан в [&#60; postActions &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/postactions-element-office-development-in-visual-studio.md).  
-  
+ Необязательный. `postActions` Элемент описан в [ &#60;postActions&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
+
 ### <a name="application"></a>приложение  
- Обязательно. `application` Элемент описан в [&#60; приложения &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/application-element-office-development-in-visual-studio.md).  
-  
+ Обязательно. `application` Элемент описан в [ &#60;приложения&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
-  
-### <a name="description"></a>Описание:  
+
+### <a name="description"></a>Описание  
  В следующем примере кода показан элемент `addin` в решении Office уровня документа, которое развернуто с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
-  
+
 ### <a name="code"></a>Код  
-  
+
 ```  
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
@@ -133,14 +132,14 @@ ms.lasthandoff: 01/10/2018
   </vstav3:application>  
 </vstav3:addIn>  
 ```  
-  
+
 ## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
-  
-### <a name="description"></a>Описание:  
+
+### <a name="description"></a>Описание  
  В следующем примере кода показан элемент `addin` в решении Office уровня приложения, которое развернуто с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
-  
+
 ### <a name="code"></a>Код  
-  
+
 ```  
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
@@ -191,10 +190,8 @@ ms.lasthandoff: 01/10/2018
   </vstav3:application>  
 </vstav3:addIn>  
 ```  
-  
+
 ## <a name="see-also"></a>См. также  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  

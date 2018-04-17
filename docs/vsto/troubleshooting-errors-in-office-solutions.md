@@ -1,13 +1,10 @@
 ---
-title: "Устранение неполадок в решениях Office | Документы Microsoft"
-ms.custom: 
+title: Устранение неполадок в решениях Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
   Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Отладка проектов](#debugging)  
   
-##  <a name="creating"></a>Создание, обновление и открытие проектов  
+##  <a name="creating"></a> Создание, обновление и открытие проектов  
  При создании или открытии проектов Office могут возникнуть следующие ошибки.  
   
 ### <a name="the-project-cannot-be-created"></a>Невозможно создать проект  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  После завершения обновления проекта можно удалить среду выполнения набора средств Visual Studio 2005 для Office (второй выпуск) с компьютера разработчика, если она не используется другими решениями Office.  
   
-##  <a name="designers"></a>Использование конструкторов  
+##  <a name="designers"></a> Использование конструкторов  
  При работе с конструктором документов, книг или листов в проектах уровня документа могут возникнуть следующие ошибки.  
   
 ### <a name="designer-failed-to-load-correctly"></a>Не удалось правильно загрузить конструктор  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Даже если пространство имен Word или Excel было импортировано и имеют доступ ко всем классам внутри него, необходимо полностью указать все типы в Word или Excel для устранения неоднозначности имен.  
   
-##  <a name="building"></a>Построение проектов  
+##  <a name="building"></a> Построение проектов  
  При сборке проектов Office могут возникнуть следующие ошибки.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Не удается выполнить сборку проекта уровня документа, основанного на документе с ограниченными разрешениями  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Ошибки компиляции возникают после удаления элемента управления NamedRange  
  При удалении элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с неактивного листа в конструкторе невозможно удалить автоматически создаваемый код из проекта, и могут возникать ошибки компилятора. Чтобы удалить код, перед удалением элемента управления необходимо выбрать лист, содержащий элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>, чтобы сделать его активным. Если автоматически создаваемый код не удаляется при удалении элемента управления, можно удалить код с помощью конструктора, сделав лист активным и изменив его, чтобы пометить его как измененный. При повторной сборке проекта код удаляется.  
   
-##  <a name="debugging"></a>Отладка проектов  
+##  <a name="debugging"></a> Отладка проектов  
  При отладке проектов Office могут возникнуть следующие ошибки.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>При публикации и установке решения на компьютере разработки появляется запрос на удаление  

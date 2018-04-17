@@ -1,18 +1,18 @@
 ---
-title: "Способ: Установите точки останова в рабочих процессах | Документы Microsoft"
+title: 'Способ: Установите точки останова в рабочих процессах | Документы Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ed757fab518d9cfe23b26186e6bded06eafe1e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: e4112e74336faf1fb456ebd94dd7c7617747a11f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Практическое руководство. Задание точек останова в рабочих процессах
 При использовании конструктора рабочих процессов Windows можно задать точки останова в графических рабочих процессах, как это делается в код Visual Basic или C#. Как ожидалось, выполнение рабочего процесса останавливается в каждой заданной точке останова.

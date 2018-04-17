@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Вставка данных в книгу на сервере | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Вставка данных в книгу на сервере | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 389252ed9457935c86dcaca0ce8a9a5733202d94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7257094aa0fb29c1b03878f5ac39c3d4f4864022
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>Пошаговое руководство. Вставка данных в книгу на сервере
   В этом пошаговом руководстве показано, как вставить данные в наборе данных, который кэшируется в книге Microsoft Office Excel без запуска Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Нажмите кнопку **ОК**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **AdventureWorksDataSet** проекта **обозревателе решений** и открывает **Class1.cs** или **Class1.vb** файл кода.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **AdventureWorksDataSet** проекта **обозревателе решений** и открывает **Class1.cs** или **Class1.vb** файл кода.  
   
 9. В **обозревателе решений**, щелкните правой кнопкой мыши **Class1.cs** или **Class1.vb**, а затем нажмите кнопку **удалить**. Этот файл не обязательно для данного пошагового руководства.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Убедитесь, что **создания документа** установлен и нажмите кнопку **ОК**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Открывает **AdventureWorksReport** книгу в конструкторе и добавляет **AdventureWorksReport** проекта **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Открывает **AdventureWorksReport** книгу в конструкторе и добавляет **AdventureWorksReport** проекта **обозревателе решений**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Добавление набора данных к источникам данных в проекте книги Excel  
  Перед отображением набора данных в книге Excel, необходимо сначала добавить набор данных к источникам данных в проекте книги Excel.  
@@ -221,7 +220,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Нажмите кнопку **ОК**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **DataWriter** проекта **обозревателе решений** и открывает **Program.cs** или **Module1.vb** файл кода.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **DataWriter** проекта **обозревателе решений** и открывает **Program.cs** или **Module1.vb** файл кода.  
   
 ## <a name="adding-data-to-the-cached-dataset-by-using-the-console-application"></a>Добавление данных в кэшированный набор данных с помощью консольного приложения  
  Используйте <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса в консольном приложении, чтобы заполнить кэшированный набор данных в книге с данными.  

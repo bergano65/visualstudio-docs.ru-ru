@@ -1,23 +1,21 @@
 ---
-title: "Шаблоны взаимодействия для Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Шаблоны взаимодействия для Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31a3bff68a15603c8d40818fa2d826da64421dad
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 094e16fea46e459dd64338ffa5daf3f7b98afb90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Шаблоны взаимодействия для Visual Studio
 ## <a name="overview"></a>Обзор  
@@ -27,7 +25,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="visual-studio-client-pattern-types"></a>Типах шаблонов Visual Studio клиента  
   
-|Тип расписания|Описание:|Примеры|  
+|Тип расписания|Описание|Примеры|  
 |------------------|-----------------|--------------|  
 |**Шаблоны уровня приложения**|Высокоуровневые шаблоны, общие для приложения, определение или отображение контекст приложения и содержащий составную и шаблоны элементов управления в них|-Windows средство<br />-Windows документа|  
 |**Составные шаблоны**|Общие шаблоны, которые могут охватывать шаблоны приложений или распознанный шаблон состоит из нескольких элементов управления в различных конфигурациях|-Переключение представлений<br />-Построители list<br />-Отображение данных<br />-Уведомления<br />-Проверка<br />-Выбор модели|  

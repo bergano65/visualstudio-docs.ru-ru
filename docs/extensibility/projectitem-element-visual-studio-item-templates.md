@@ -1,30 +1,26 @@
 ---
-title: "Элемент ProjectItem (шаблоны элементов Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: Элемент ProjectItem (шаблоны элементов Visual Studio) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe9abece45efdc206e775bc8f5e79666e334001
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 886fc57258b4ccafaa4ab8d522fad632de455e17
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Элемент ProjectItem (шаблоны элементов Visual Studio)
 Указывает файл, который включен в шаблоне элемента.  
@@ -67,7 +63,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Задает содержимое шаблона.|  
   
@@ -77,7 +73,7 @@ ms.lasthandoff: 12/22/2017
  Объект `string` , представляющее имя файла в ZIP-файле шаблона.  
   
 ## <a name="remarks"></a>Примечания  
- `ProjectItem`Необязательный дочерний `TemplateContent`.  
+ `ProjectItem` Необязательный дочерний `TemplateContent`.  
   
  `TargetFileName` Атрибут можно использовать для переименования файлов с параметрами. Например если файл `MyFile.vb` существует в корневом каталоге ZIP-файл шаблона, но файл должен называться на основе имени файла, введенного пользователем в нужной **Добавление нового элемента** диалоговое окно, используется следующий XML-код:  
   

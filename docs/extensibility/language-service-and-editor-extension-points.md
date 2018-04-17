@@ -2,26 +2,22 @@
 title: Служба языка и точек расширения редактора | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-caps.latest.revision: 33
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3c253ba52da1fd6bb9133e44ba6858e8f1a4151
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-service-and-editor-extension-points"></a>Служба языка и точек расширения редактора
 Редактор предоставляет точки расширения, которые можно расширить как части компонента Managed Extensibility Framework (MEF), включая большинство возможностей службы языка. Они перечислены категории точки основным расширением.  
@@ -47,9 +43,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="extending-content-types"></a>Расширение типов содержимого  
  Типы содержимого являются определениями типов тексту, обрабатываемому в редакторе, например, «текст», «код» или «CSharp». Определить новый тип содержимого, объявив переменную типа <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> и предоставляя новый тип содержимого, уникальное имя. Чтобы зарегистрировать тип содержимого с помощью редактора, его необходимо экспортируйте вместе со следующими атрибутами:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>— Имя типа содержимого.  
+-   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> — Имя типа содержимого.  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>— Имя типа содержимого, из которого создается данный тип содержимого. Тип содержимого может наследовать от нескольких типов содержимого.  
+-   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> — Имя типа содержимого, из которого создается данный тип содержимого. Тип содержимого может наследовать от нескольких типов содержимого.  
   
  Поскольку <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> класс запечатан, можно экспортировать его без параметра типа.  
   
@@ -298,7 +294,7 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
   
 -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: в результате форматирования для отображения в пользовательском Интерфейсе  
   
- В конструкторе необходимо указать отображаемое имя и внешний вид тега. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>Определяет цвет заливки и <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> определяет цвет границы. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> Локализуемое имя определение формата.  
+ В конструкторе необходимо указать отображаемое имя и внешний вид тега. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> Определяет цвет заливки и <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> определяет цвет границы. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> Локализуемое имя определение формата.  
   
  Ниже приведен пример определения формата:  
   
@@ -346,7 +342,7 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, «текст» или «код»), для которого действителен оформления.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: тип представления текста, для которого действителен этот оформления. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> в основном используется для представления текста из файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>используется для представления текста, что пользователь может изменить или перемещаться с помощью мыши и клавиатуры. Примеры <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представления: представление текстового редактора и **вывода** окна.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: тип представления текста, для которого действителен этот оформления. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> в основном используется для представления текста из файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> используется для представления текста, что пользователь может изменить или перемещаться с помощью мыши и клавиатуры. Примеры <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представления: представление текстового редактора и **вывода** окна.  
   
  В следующем примере показано атрибуты экспорта на поставщике оформления.  
   
@@ -374,7 +370,7 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, «текст» или «код»), для которого действителен вашей оформления.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: тип представления текста, для которого данный тег или оформления является допустимым. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> в основном используется для представления текста из файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>используется для представления текста, что пользователь может изменить или перемещаться с помощью мыши и клавиатуры. Примеры <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представления: представление текстового редактора и **вывода** окна.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: тип представления текста, для которого данный тег или оформления является допустимым. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> в основном используется для представления текста из файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> используется для представления текста, что пользователь может изменить или перемещаться с помощью мыши и клавиатуры. Примеры <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представления: представление текстового редактора и **вывода** окна.  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: тип тега или оформления, который вы определили. Необходимо добавить второй <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> для <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>.  
   
@@ -514,7 +510,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>рекомендуется к использованию для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> рекомендуется к использованию для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Кроме того необходимо реализовать поставщик одного типа:  
   
@@ -527,7 +523,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>рекомендуется к использованию для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> рекомендуется к использованию для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Необходимо экспортировать поставщика вместе со следующими атрибутами:  
   

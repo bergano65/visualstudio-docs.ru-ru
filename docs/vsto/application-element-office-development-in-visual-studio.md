@@ -1,13 +1,10 @@
 ---
-title: "&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: '&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f20c4c8e6d44c62282f68173ce980f650da2692
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8550b5374bde5d18d3f645c08f89902250ae5f2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `application` пространства имен `vstav3` служит оболочкой для описания решений Office. Дочерние элементы настроек уровня документа и надстроек VSTO отличаются друг от друга.  
@@ -65,11 +62,11 @@ ms.lasthandoff: 01/10/2018
  Элемент `application` имеет следующий элемент.  
   
 ### <a name="customization"></a>настройка  
- Роль `customization` элемент в `vstov3` пространство имен определяется в [&#60; настройки &#62; Элемент &#40; разработка решений Office в Visual Studio &#41; ](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Роль `customization` элемент в `vstov3` пространство имен определяется в [ &#60;настройки&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере кода показан элемент `application` в решении Office уровня документа, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере кода показан элемент `application` в решении Office уровня приложения, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  

@@ -1,13 +1,10 @@
 ---
-title: "Устранение неполадок при развертывании решения Office | Документы Microsoft"
-ms.custom: 
+title: Устранение неполадок при развертывании решения Office | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Устранение неполадок, связанных с развертыванием решения Office
   В этом разделе содержатся сведения об устранении неполадок, которые могут возникнуть при развертывании решений Office.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  Вы можете добавить .NET Framework, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]и основные сборки взаимодействия Office в пакет установки в качестве необходимых компонентов, развертываемых вместе с решением Office. Сведения о том, как установка основных сборок взаимодействия см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) и [как: установить основные сборки взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>Публикация с использованием Localhost может вызвать проблемы установки  
- Если для решений уровня документа в качестве местоположения публикации или установки используется строка http://localhost, **Мастер публикаций** не преобразует эту строку в имя компьютера. В таком случае необходимо установить решение на компьютере разработки. Чтобы развернутые решения могли использовать службы IIS на компьютере разработки, вместо localhost указывайте полное имя для всех расположений HTTP, HTTPS и FTP.  
+ При использовании «http://localhost» в качестве местоположения публикации или установки для решений уровня документа **мастер публикации** не преобразует строку в имя компьютера. В таком случае необходимо установить решение на компьютере разработки. Чтобы развернутые решения могли использовать службы IIS на компьютере разработки, вместо localhost указывайте полное имя для всех расположений HTTP, HTTPS и FTP.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Вместо обновленных сборок загружаются кэшированные сборки  
  Fusion, загрузчик сборок .NET Framework, загружает кэшированную копию сборок, если выходной путь проекта указывает на сетевой файловый ресурс, сборка подписана строгим именем и версия сборки настройки не изменена. При обновлении сборки, которая удовлетворяет этим условиям, обновление не будет отображаться при следующем запуске проекта, поскольку будет загружена кэшированная копия.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Загрузка сборок вместо загрузки кэшированных копий  
   
-1.  В меню последовательно выберите **Проект**, *ProjectName***Свойства**.  
+1.  В строке меню выберите **проекта**, * имя_проекта ***свойства**.  
   
 2.  На странице **Приложения** выберите **Сведения о сборке**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>Повторная установка решений Office приводит к возникновению исключения "Аргумент вне допустимого диапазона"  
  При повторной установке решения Office может возникать исключение <xref:System.ArgumentOutOfRangeException> со следующим сообщением об ошибке: "Заданный аргумент находится вне диапазона допустимых значений".  
   
- Такая ситуация возникает, если регистр URL-адреса для местоположения установки отличается. Например, эта ошибка будет отображаться, если вы первый раз установили решение Office с адреса [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) , а во второй раз использовали адрес [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) .  
+ Такая ситуация возникает, если регистр URL-адреса для местоположения установки отличается. Например, эта ошибка будет отображаться при установке решения Office от [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) в первый раз, а затем использовать [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) во второй раз.  
   
  Чтобы предотвратить появление этого сообщения, используйте один и тот же регистр при установке решения Office.  
   

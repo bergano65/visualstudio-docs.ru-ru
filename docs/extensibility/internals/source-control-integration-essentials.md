@@ -1,30 +1,28 @@
 ---
-title: "Источник Essentials интеграции управления | Документы Microsoft"
-ms.custom: 
+title: Источник Essentials интеграции управления | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Essentials интеграции управления источника
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]поддерживает два типа интеграции системы управления версиями: элемент управления источником подключаемого модуля, созданное с помощью API подключаемого модуля управления источника (прежнее название — MSSCCI API) и решения интеграции VSPackage исходный элемент управления предоставляет базовые функциональные возможности, предоставляет функциональные возможности более надежным.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает два типа интеграции системы управления версиями: элемент управления источником подключаемого модуля, созданное с помощью API подключаемого модуля управления источника (прежнее название — MSSCCI API) и решения интеграции VSPackage исходный элемент управления предоставляет базовые функциональные возможности, предоставляет функциональные возможности более надежным.  
   
 ## <a name="source-control-plug-in"></a>Подключаемый модуль системы управления версиями  
  Подключаемый модуль системы управления источника представляет собой библиотеку DLL, реализующим API-Интерфейс подключаемого модуля управления источника. Регистрация источника управления интеграции функциональные возможности обеспечиваются через API-Интерфейс. Этот подход проще в реализации, чем VSPackage системы управления версиями, и она использует [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательский интерфейс (UI) для большинства операций системы управления версиями.  

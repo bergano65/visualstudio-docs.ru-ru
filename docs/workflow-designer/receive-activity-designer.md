@@ -1,5 +1,5 @@
 ---
-title: "Конструктор действия receive | Документы Microsoft"
+title: Конструктор действия receive | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Конструктор действия Receive
 **Receive** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.Receive> действия. Действие <xref:System.ServiceModel.Activities.Receive> получает сообщение - либо встроенное, например <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> или <xref:System.Xml.Linq.XElement>, либо определяемое контрактом данных приложения, контрактом сообщений или классом XML, поддерживающим сериализацию.
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|Указывает коллекцию известных типов для операции службы, реализуемой этим действием <xref:System.ServiceModel.Activities.Receive>. Это свойство должно использоваться вместе со свойством <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>, установленным в значение <xref:System.Runtime.Serialization.DataContractSerializer>. Не учитывается, если используется <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Нажмите кнопку с многоточием рядом с **KnownTypes** в таблице свойств для отображения **редактор коллекции типов** диалоговое окно с помощью которого можно добавить необходимые типы. Дополнительные сведения об использовании этого поля в разделе [диалоговое окно редактора коллекции типа](../workflow-designer/type-collection-editor-dialog-box.md) раздела.|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|Задает <xref:System.Net.Security.ProtectionLevel> для сообщения.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> означает только проверку подлинности.<br />2. <xref:System.Net.Security.ProtectionLevel> означает необходимость подписи данных для обеспечения целостности передаваемых данных.<br />3. <xref:System.Net.Security.ProtectionLevel> означает необходимость шифрования и подписи данных для обеспечения конфиденциальности и целостности передаваемых данных.|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|Указывает тип используемого сериализатора для операции службы, реализуемой действием <xref:System.ServiceModel.Activities.Receive>. Значение по умолчанию равно <xref:System.Runtime.Serialization.DataContractSerializer>, при котором выполняется сериализация и десериализация экземпляра типа в XML-поток или документ, который использует переданный контракт данных. <xref:System.Xml.Serialization.XmlSerializer> также может быть использован в том случае, если необходим больший контроль над XML.|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Указывает заголовок действия сообщения. Если оно не задано явно, его значение по умолчанию: https://tempuri.org/ {пространство имен контракта службы} / {имя контракта службы} / {имя операции}.|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Указывает заголовок действия сообщения. Если оно не задано явно, его значение по умолчанию: https://tempuri.org/{service контракта пространство имен} / {имя контракта службы} / {имя операции}.|
 
 ## <a name="see-also"></a>См. также
 

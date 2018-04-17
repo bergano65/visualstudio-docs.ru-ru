@@ -1,26 +1,23 @@
 ---
-title: "Повышение производительности надстройки VSTO | Документы Microsoft"
-ms.custom: 
+title: Повышение производительности надстройки VSTO | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Повышение производительности надстройки VSTO
   Для повышения удобства работы пользователей можно оптимизировать надстройки VSTO, создаваемые для приложений Office, что позволит быстрее выполнять запуск, завершать работу, открывать элементы и выполнять другие задачи. Если ваша надстройка VSTO предназначена для Outlook, можно уменьшить вероятность ее отключения из-за низкой производительности. Для повышения производительности надстройки VSTO можно реализовать следующие стратегии:  
@@ -84,9 +81,9 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     Сведения о создании события после сборки в проекте C# см. в разделе [как: Указание событий сборки &#40; C# 35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Сведения о создании события после сборки в проекте C# см. в разделе [как: Указание событий сборки &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     Сведения о создании события после сборки в проекте Visual Basic см. в разделе [как: Указание событий сборки &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Сведения о создании события после сборки в проекте Visual Basic см. в разделе [как: Указание событий сборки &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
 ##  <a name="Publish"></a> Publish Office Solutions by Using Windows Installer  
  Если вы публикуете решение с помощью установщика Windows, среда выполнения набора средств Visual Studio 2010 для Office пропускает перечисленные ниже шаги при загрузке надстройки VSTO.  

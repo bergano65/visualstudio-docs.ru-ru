@@ -1,13 +1,10 @@
 ---
-title: "Элемент управления NamedRange | Документы Microsoft"
-ms.custom: 
+title: Элемент управления NamedRange | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Range
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - NamedRange control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22adc003c10e95de0e701eb3f382d9e530b28acf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5273baec024da8eb339e8f3d12541fc6e98e97c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="namedrange-control"></a>NamedRange - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> представляет собой диапазон с уникальным именем, который предоставляет события и может быть привязан к данным. Дополнительные сведения см. в разделе [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
@@ -40,7 +37,7 @@ ms.lasthandoff: 01/10/2018
  Вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в лист во время выполнения в надстройке VSTO. Для получения дополнительной информации см. [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 > [!NOTE]  
->  По умолчанию динамически созданные именованные диапазоны не сохраняются как ведущие элементы управления в листе при его закрытии. Для получения дополнительной информации см. [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+>  По умолчанию динамически созданные именованные диапазоны не сохраняются как ведущие элементы управления в листе при его закрытии. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Элементы управления<xref:Microsoft.Office.Tools.Excel.NamedRange> могут состоять только из диапазонов в определенных листах. Элементы управления<xref:Microsoft.Office.Tools.Excel.NamedRange> не могут иметь относительные имена, применимые для всех листов, и они не могут состоять из диапазонов, распространяющихся на несколько листов в книге (трехмерных диапазонов).  
   

@@ -1,27 +1,25 @@
 ---
-title: "С помощью сборок взаимодействия Visual Studio | Документы Microsoft"
-ms.custom: 
+title: С помощью сборок взаимодействия Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>С помощью сборок взаимодействия Visual Studio
 Visual Studio взаимодействия сборки позволяют управляемых приложений для доступа к COM-интерфейсы, которые обеспечивают расширяемость Visual Studio. Существуют некоторые различия между прямой COM-интерфейсы и их версиями, взаимодействия. Например обычно представлены в виде значений типа int значений HRESULT и необходимо обрабатывать таким же образом, как исключения и параметры (особенно параметры out) обрабатываются по-разному.  
@@ -32,7 +30,7 @@ Visual Studio взаимодействия сборки позволяют уп�
  По умолчанию <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> создает исключение каждый раз, когда ему передается значение HRESULT, который имеет значение меньше нуля. В случаях, когда такие HRESULT являются допустимыми и не создавалось исключение, должны быть переданы дополнительные значения HRESULT <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> после проверяются значения. Если проверяемые значения HRESULT совпадает со значениями HRESULT, явно переданных <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, исключение не возникает.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Класс содержит константы для общих значений HRESULT, например, <xref:Microsoft.VisualStudio.VSConstants.S_OK> и <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] значения HRESULT, например, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> и <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>также предоставляет <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> и <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> методы, которые соответствуют макросы SUCCEEDED и FAILED в COM.  
+>  <xref:Microsoft.VisualStudio.VSConstants> Класс содержит константы для общих значений HRESULT, например, <xref:Microsoft.VisualStudio.VSConstants.S_OK> и <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] значения HRESULT, например, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> и <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> также предоставляет <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> и <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> методы, которые соответствуют макросы SUCCEEDED и FAILED в COM.  
   
  Например, рассмотрим следующий вызов функции, в котором <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> является допустимым возвращаемым значением, но любое другое значение HRESULT меньше нуля представляет ошибку.  
   
@@ -47,7 +45,7 @@ Visual Studio взаимодействия сборки позволяют уп�
 ## <a name="returning-hresults-to-com-from-managed-code"></a>Возврат значений HRESULT в COM из управляемого кода  
  Если исключение не возникает, управляемый код возвращает <xref:Microsoft.VisualStudio.VSConstants.S_OK> для COM-функция, который вызвал его. COM-взаимодействие поддерживает общие исключения, которые являются строго типизированными в управляемом коде. Например, метод, принимающий недопустимый `null` возникает исключение аргумента <xref:System.ArgumentNullException>.  
   
- Если достоверно неизвестно, какие исключения, но известно значение HRESULT, который вы хотите вернуть в COM, можно использовать <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> метод для создания соответствующего исключения. Это работает даже с нестандартными ошибками, например, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>пытается сопоставить значение HRESULT переданное ему значение со строго типизированным исключением. Если это ему не удается, он создает универсальное исключение COM. Конечным результатом является то, что значение HRESULT передается <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> из управляемого кода возвращается функция COM, который вызвал его.  
+ Если достоверно неизвестно, какие исключения, но известно значение HRESULT, который вы хотите вернуть в COM, можно использовать <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> метод для создания соответствующего исключения. Это работает даже с нестандартными ошибками, например, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> пытается сопоставить значение HRESULT переданное ему значение со строго типизированным исключением. Если это ему не удается, он создает универсальное исключение COM. Конечным результатом является то, что значение HRESULT передается <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> из управляемого кода возвращается функция COM, который вызвал его.  
   
 > [!NOTE]
 >  Исключения снижают производительность и предназначены для указания на аномальные состояния программы. Часто наступающие условия следует обрабатывать внутри программы без создания исключений.  

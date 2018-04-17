@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов
   В этом пошаговом руководстве показано, как вызывать клиентскую объектную модель SharePoint из расширения для **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об использовании клиентской объектной модели SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  В **имя** введите **WebPartNode**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartNode** проекта **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **WebPartNode** проекта **обозревателе решений**.  
   
 #### <a name="to-create-the-extension-project"></a>Создание проекта расширения  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  В **имя** введите **WebPartNodeExtension**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartNodeExtension** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **WebPartNodeExtension** в решение проект и открывает файл кода по умолчанию Class1.  
   
 6.  Удалите файл Class1 код из проекта.  
   
@@ -287,6 +286,6 @@ ms.lasthandoff: 01/10/2018
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
- [Создание значка или другого изображения &#40; редактор изображений для значков &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Создание значка или другого изображения &#40;редактор изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

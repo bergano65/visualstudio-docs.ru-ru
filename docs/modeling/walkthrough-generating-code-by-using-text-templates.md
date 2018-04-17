@@ -1,24 +1,22 @@
 ---
-title: "Пошаговое руководство: Создание кода с помощью текстовых шаблонов | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание кода с помощью текстовых шаблонов | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 46cbf0c6a28b10434ed364dffd77c4c01620d6ea
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7099edb08216cd91858a20e65c7bb2fede786977
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Пошаговое руководство. Создание кода с помощью текстовых шаблонов
 Создание кода позволяет создавать программный код, который является строго типизированным, но при этом может быть легко изменен при изменении исходной модели. Сравните это с альтернативным методом написания полностью универсальной программы, принимающей файл конфигурации. Он является более гибким, однако в результате получается код, который труден для чтения и редактирования, а также не отличается высокой производительностью. Данное преимущество рассматривается в этом пошаговом руководстве.  

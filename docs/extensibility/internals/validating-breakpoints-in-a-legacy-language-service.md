@@ -1,26 +1,24 @@
 ---
-title: "Проверка точек останова в языковую службу прежних версий | Документы Microsoft"
-ms.custom: 
+title: Проверка точек останова в языковую службу прежних версий | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 03bf1534789ba24e1bbf597874ea427057073b61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Проверка точек останова в языковую службу прежних версий
 Точка останова указывает, что остановки выполнения программы в определенный момент во время выполнения в отладчике. Пользователя можно установить точку останова в любой строке в исходном файле, поскольку редактор не имеет сведений о том, что такое является допустимым расположением точки останова. При запуске отладчика все помеченные точки останова (называемые ожидающих точек останова) привязаны соответствующее место в выполняемой программы. В то же время, которые проверяются точки останова, чтобы убедиться, что они указывают допустимый код расположения. Например точки останова на комментарий является недопустимым, поскольку нет кода в этом расположении в исходном коде. Отладчик отключает недопустимые точки останова.  

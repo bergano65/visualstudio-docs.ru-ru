@@ -1,26 +1,24 @@
 ---
-title: "Создание пакета установщика Windows | Документы Microsoft"
-ms.custom: 
+title: Создание пакета установщика Windows | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2055f57e78c348f3f8e53187126588f382f0b944
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 215e1496d35059448cf11457658b7d1270b5677d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-a-windows-installer-package"></a>Создание пакета установщика Windows
 Установщик Windows модели дисках с данными. Вместо того чтобы писать процедурных скрипта для копирования файлов и запись реестра, например, можно создавать строки и столбцы в таблицах базы данных, которые содержат данные файлов и реестра.  
@@ -49,9 +47,9 @@ ms.lasthandoff: 12/22/2017
   
 -   Набор инструментов XML установщика Windows  
   
-     Набор средств построения пакетов установщика Windows из исходного XML-файлов. Набор инструментов является открытым исходным кодом Microsoft project. Можно загрузить исходный код и исполняемых файлов на основе [http://sourceforge.net/projects/wix](http://sourceforge.net/projects/wix).  
+     Набор средств построения пакетов установщика Windows из исходного XML-файлов. Набор инструментов является открытым исходным кодом Microsoft project. Можно загрузить исходный код и исполняемых файлов на основе [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
- Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], в разделе [http://visualstudiogallery.com](http://visualstudiogallery.com/).  
+ Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], в разделе [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
   
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -1,26 +1,24 @@
 ---
-title: "Пример реализации локальных переменных | Документы Microsoft"
-ms.custom: 
+title: Пример реализации локальных переменных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 56ac92989abe929884ac029e3b9c9c7dafad5fd9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-implementation-of-locals"></a>Пример реализации локальных переменных
 > [!IMPORTANT]
@@ -30,17 +28,17 @@ ms.lasthandoff: 12/22/2017
   
 1.  Visual Studio вызывает отладки механизма (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) для получения [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, представляющий все свойства кадра стека, включая локальные переменные.  
   
-2.  `IDebugStackFrame2::GetDebugProperty`вызовы [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) для получения объекта, описывающая метод, в котором произошло точки останова. DE предоставляет поставщик символ ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), адреса ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) и связыватель ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
+2.  `IDebugStackFrame2::GetDebugProperty` вызовы [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) для получения объекта, описывающая метод, в котором произошло точки останова. DE предоставляет поставщик символ ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), адреса ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) и связыватель ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
   
-3.  `IDebugExpressionEvaluator::GetMethodProperty`вызовы [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) с предоставленным адресом `IDebugAddress` объекта [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) представляет метод, содержащий указанный адрес.  
+3.  `IDebugExpressionEvaluator::GetMethodProperty` вызовы [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) с предоставленным адресом `IDebugAddress` объекта [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) представляет метод, содержащий указанный адрес.  
   
 4.  `IDebugContainerField` Запрашивается интерфейс [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) интерфейса. Это этот интерфейс обеспечивает доступ к локальные переменные для этого метода.  
   
-5.  `IDebugExpressionEvaluator::GetMethodProperty`Создает экземпляр класса (называется `CFieldProperty` в образце), реализующий `IDebugProperty2` интерфейс для представления метода локальные переменные. `IDebugMethodField` Объект помещается в этом `CFieldProperty` объекта вместе с `IDebugSymbolProvider`, `IDebugAddress` и `IDebugBinder` объектов.  
+5.  `IDebugExpressionEvaluator::GetMethodProperty` Создает экземпляр класса (называется `CFieldProperty` в образце), реализующий `IDebugProperty2` интерфейс для представления метода локальные переменные. `IDebugMethodField` Объект помещается в этом `CFieldProperty` объекта вместе с `IDebugSymbolProvider`, `IDebugAddress` и `IDebugBinder` объектов.  
   
 6.  При `CFieldProperty` инициализации объекта [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) будет вызван на `IDebugMethodField` объекта, чтобы получить [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) структуру, содержащую все отображаемые сведения о сам метод .  
   
-7.  `IDebugExpressionEvaluator::GetMethodProperty`Возвращает `CFieldProperty` объекта в виде `IDebugProperty2` объекта.  
+7.  `IDebugExpressionEvaluator::GetMethodProperty` Возвращает `CFieldProperty` объекта в виде `IDebugProperty2` объекта.  
   
 8.  Visual Studio вызывает [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) в возвращенном `IDebugProperty2` объекта с фильтром `guidFilterLocalsPlusArgs`. Возвращает [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объект, содержащий метод локальные переменные. Это перечисление заполняется вызовы [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) и [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
   

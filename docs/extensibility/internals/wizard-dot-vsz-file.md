@@ -1,27 +1,25 @@
 ---
-title: "Мастер (. Файл VSZ) | Документы Microsoft"
-ms.custom: 
+title: Мастер (. Файл VSZ) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsz files
 - vsz files
 - wizards, files
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f70d41b353640a3b2b108a55f14b8737a7fe1f8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 15c07da8c41bcf5fc65e35e1347095b2e8d8415e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wizard-vsz-file"></a>Мастер (. Файл VSZ)
 Интегрированной среды разработки (IDE) использует VSZ-файлы для запуска мастера. Эти VSZ-файлы содержат информацию, которую использует интегрированной среды разработки, чтобы определить, какой мастер следует вызвать и какие сведения для передачи в мастер.  
@@ -39,7 +37,7 @@ Param="WIZARDUI = FALSE"
   
  Ниже приведены компоненты в VSZ-файле.  
   
-|Отделение|Описание:|  
+|Отделение|Описание|  
 |----------|-----------------|  
 |VSWizard|Первый параметр в файле — номер версии формата файла шаблона. Этот номер версии должен быть 6.0, 7.0, 7.1 или 8.0. Другие номера не может быть запущена и приводят к ошибке Недопустимый формат.|  
 |Мастер|Это поле содержит OLE идентификатор ProgID в мастере, либо строковое представление GUID для CLSID мастера, который создается в интегрированной среде разработки.|  

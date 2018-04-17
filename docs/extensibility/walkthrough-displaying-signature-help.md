@@ -1,27 +1,23 @@
 ---
-title: "Пошаговое руководство: Отображение справки сигнатуры | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Отображение справки сигнатуры | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a714fdb268f44fd2a65d04184d899ced3de53bb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Пошаговое руководство: Отображение справки сигнатуры
 Справка по сигнатурам (также известный как *сведения о параметре*) отображает подписи метода во всплывающей подсказке, когда пользователь вводит символ начала списка параметра (обычно открывающая скобка). Как параметр и параметр разделителя (обычно запятую) типизированы, подсказка обновляется для отображения следующего параметра полужирным шрифтом. Справка по сигнатурам можно определить в контекст языковой службы, можно определить тип имени собственного файла расширения и содержимое и отобразить справку по подписи для только этот тип или можно отобразить справку по подписи для существующего типа содержимого (например, «текст»). В этом пошаговом руководстве показано, как отобразить справку по подписи для типа содержимого «text».  

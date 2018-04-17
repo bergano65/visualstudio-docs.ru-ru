@@ -1,27 +1,23 @@
 ---
-title: "Добавление элементов, чтобы добавить новый элемент диалоговым окнам | Документы Microsoft"
-ms.custom: 
+title: Добавление элементов, чтобы добавить новый элемент диалоговым окнам | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Добавление элементов, чтобы добавить новый элемент диалоговые окна
 Добавление элементов в процесс **Добавление нового элемента** запускает диалоговое окно с разделами реестра. Как показано в следующем разделе реестра в разделе AddItemTemplates содержит путь и имя каталога в элементы, которые были доступны в **Добавление нового элемента** помещаются диалоговое окно.  
@@ -41,7 +37,7 @@ ms.lasthandoff: 12/22/2017
   
  «SortPriority» = dword:00000064  
   
-|name|Тип|Данные (RGS-файла)|Описание:|  
+|name|Тип|Данные (RGS-файла)|Описание|  
 |----------|----------|-----------------------------|-----------------|  
 |@ (По умолчанию)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Идентификатор ресурса для **добавить элемент** шаблонов.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Путь проекта элементов, отображаемых в диалоговом окне для **Добавление нового элемента** мастера.|  
@@ -69,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  Например в проекте Visual Basic может потребоваться веб-проектов и клиентских проектов. Веб-формы не полезные элементы для добавления в проект клиента, и windows forms не являются полезные элементы для добавления в проект веб-сервера. Таким образом можно создать один шаблон каталог, содержащий файлы для обоих типов проектов. Затем путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, можно скрыть элементы, которые не должны отображаться в зависимости от типа проекта или параметры проекта в проекте.  
   
 ## <a name="filtering-project-items"></a>Фильтрация элементов проекта  
- `IVsFilterAddProjectItemDlg2`предоставляет для фильтрации элементов в дереве (левая панель), файлы проекта (правая панель), одним из следующих способов:  
+ `IVsFilterAddProjectItemDlg2` предоставляет для фильтрации элементов в дереве (левая панель), файлы проекта (правая панель), одним из следующих способов:  
   
 -   Локализованные имена (заголовки, отображаемые в диалоговом окне, содержащихся в VSDir-файл), предоставляемые `IVsFilterAddProjectItemDlg`.  
   

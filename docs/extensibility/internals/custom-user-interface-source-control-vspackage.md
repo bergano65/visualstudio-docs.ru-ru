@@ -1,26 +1,24 @@
 ---
-title: "Настраиваемый пользовательский интерфейс (VSPackage управления источника) | Документы Microsoft"
-ms.custom: 
+title: Настраиваемый пользовательский интерфейс (VSPackage управления источника) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Настраиваемый пользовательский интерфейс (VSPackage управления источника)
 VSPackage объявляет элементами меню и состояние по умолчанию, файл таблицы команд Visual Studio (.vsct). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) будет отображаться элементы меню в состояние по умолчанию загружается пакет VSPackage. Впоследствии <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод вызывается для включения или отключения пунктов меню.  
@@ -49,11 +47,11 @@ VSPackage объявляет элементами меню и состояние
   
  Необходимая <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, а также любые дополнительные интерфейсы, связанные с системой управления версиями не вызываются, когда система управления версиями VSPackage неактивна.  
   
- Когда [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] запускает интегрированную среду разработки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] задает контекст пользовательского интерфейса командной строки на идентификатор текущего управления версиями по умолчанию идентификатор пакета VSPackage. В этом случае статического пользовательского интерфейса элемента управления активной исходной VSPackage могут появляться в Интегрированной среде разработки без фактически загрузки VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Приостанавливает для VSPackage для регистрации [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] через <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> перед отправкой каких-либо вызовов VSPackage.  
+ Когда [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] запускает интегрированную среду разработки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] задает контекст пользовательского интерфейса командной строки на идентификатор текущего управления версиями по умолчанию идентификатор пакета VSPackage. В этом случае статического пользовательского интерфейса элемента управления активной исходной VSPackage могут появляться в Интегрированной среде разработки без фактически загрузки VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Приостанавливает для VSPackage для регистрации [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] через <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> перед отправкой каких-либо вызовов VSPackage.  
   
  В следующей таблице описаны конкретные сведения о том, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE скрывает различных элементов пользовательского интерфейса.  
   
-|Элемент пользовательского интерфейса|Описание:|  
+|Элемент пользовательского интерфейса|Описание|  
 |-------------|-----------------|  
 |Меню и панели инструментов|Пакет системы управления версиями необходимо задать начальные состояния видимости меню и панель инструментов с ИД пакета управления источника в [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздел vsct-файле. Это позволяет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, чтобы правильно настроить состояние элементов меню без загрузки VSPackage и вызова реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод.|  
 |Окна инструментов|Система управления версиями VSPackage скрывает все окна инструментов, которыми он владеет, когда становится неактивным.|  

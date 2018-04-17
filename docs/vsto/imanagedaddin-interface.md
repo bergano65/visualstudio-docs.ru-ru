@@ -1,13 +1,10 @@
 ---
-title: "Интерфейс IManagedAddin | Документы Microsoft"
-ms.custom: 
+title: Интерфейс IManagedAddin | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce339bb56368ab5c7e88d1cc8956a3b19a7e89b3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d626257d3a2683a6fbb6032e8053572fd1301645
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin - интерфейс
   Реализуйте интерфейс IManagedAddin для создания компонента, который загружает управляемые надстройки VSTO. Этот интерфейс был добавлен в выпуске 2007 системы Microsoft Office.  
@@ -48,7 +45,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Методы  
  В следующей таблице перечислены методы, которые определены в интерфейс IManagedAddin.  
   
-|name|Описание:|  
+|name|Описание|  
 |----------|-----------------|  
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Вызывается, когда приложение Microsoft Office загружает управляемую надстройку VSTO.|  
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Вызывается непосредственно перед тем, как приложение Microsoft Office выгружает управляемую надстройку VSTO.|  
@@ -67,7 +64,7 @@ interface IManagedAddin : IUnknown
   
 2.  Приложение ищет запись `Manifest` под записью для каждой надстройки VSTO.  
   
-     Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` запись в HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<имя приложения >*\Addins\\  *\<ИД надстройки >*. Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.  
+     Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` запись в HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<имя приложения >*\Addins\\ * \<ИД надстройки >*. Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.  
   
 3.  Если приложение находит запись `Manifest` , приложение пытается загрузить компонент загрузчика управляемой надстройки VSTO. Приложение делает это, пытаясь создать COM-объект, реализующий интерфейс IManagedAddin.  
   
@@ -90,6 +87,6 @@ interface IManagedAddin : IUnknown
 >  Этот идентификатор CLSID также используется библиотекой VSTOLoader.dll в среде выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Таким образом, при использовании IManagedAddin для создания собственного загрузчика надстроек VSTO и компонент среды выполнения не может развертывать этот компонент на компьютерах под управлением надстроек VSTO, которые зависят от [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по неуправляемым API &#40; разработка решений Office в Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Справочник по API-Интерфейс неуправляемого &#40;разработка решений Office в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
   
   

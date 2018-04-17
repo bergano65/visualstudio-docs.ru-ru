@@ -1,5 +1,5 @@
 ---
-title: "В конструкторе рабочих процессов прежних версий машины | Документы Microsoft"
+title: В конструкторе рабочих процессов прежних версий машины | Документы Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ helpviewer_keywords:
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf214ce8e65ba65127d82686770b00cfd8d3f90
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Использование конструктора рабочих процессов конечного автомата для прежних версий
 При создании нового проекта рабочего процесса состояние компьютера в [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] , ориентированного [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], вы можете использовать любой **рабочего процесса консольного приложения автомата** или  **Состояние библиотеки рабочего процесса машины** шаблонов проекта прежних версий. Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии. Сведения об устаревших шаблонов проекта конечного автомата см. в разделе [как: создать состояние компьютера рабочего процесса консольных приложений (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) и [как: Создание библиотеки рабочего процесса автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="state-machine-workflow-activities"></a>Действия рабочего процесса конечного автомата
  В следующей таблице представлены основные действия, которые используются в конструкторе рабочих процессов конечного автомата.
 
-|Имя панели элементов|Действие|Описание:|
+|Имя панели элементов|Действие|Описание|
 |------------------|--------------|-----------------|
 |**Состояние**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Представляет состояние в конечном автомате; может содержать дополнительные **StateActivity** действия. Дополнительные сведения см. в разделе [использование действия StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Задает переход к новому состоянию. Дополнительные сведения см. в разделе [использование действия SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|

@@ -1,26 +1,24 @@
 ---
-title: "Пользовательские параметры | Документы Microsoft"
-ms.custom: 
+title: Пользовательские параметры | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 17a629c2d93bb5e91fb301d4da9dca825e5b8917
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2fb61109a05b84eeb83b887ba0fc1a9f9fef299f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-parameters"></a>Пользовательские параметры
 Пользовательские параметры управляют работой мастер после запуска мастера. Связанные VSZ-файл предоставляет массив пользовательских параметров, которые упаковываются интегрированной средой разработки (IDE) и передавать мастеру как массив строк, при запуске мастера. После этого мастер анализирует массив строк и использует сведения для управления самой операции мастера. Таким образом мастер можно настроить функциональные возможности, в зависимости от содержимого VSZ-файле.  

@@ -1,27 +1,23 @@
 ---
-title: "Сохранение данных в файле проекта MSBuild | Документы Microsoft"
-ms.custom: 
+title: Сохранение данных в файле проекта MSBuild | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 324f9dfd4e381e9580e4940f06f652ef64d9d3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Сохранение данных в файле проекта MSBuild
 Подтип проекта может потребоваться сохранить подтипа данных в файле проекта для последующего использования. Подтип проекта использует долговременного хранения файла проекта для отвечать следующим требованиям:  
@@ -45,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="persisting-build-related-information"></a>Сохранение информации, связанные с построением  
  Сохранение данных полезно для построения проекта обрабатываться с помощью MSBuild. Система MSBuild сохраняет главную таблицу данных, связанные с построением. Подтипы проекта отвечают за доступ к данным для получения и задания значений свойств. Подтипы проекта также можно расширить таблицы данных, связанные с построением путем добавления дополнительных свойств, которые необходимо сохранить и удалять свойства, поэтому они не сохраняются.  
   
- Для изменения данных MSBuild подтипом проекта отвечает за извлечение из базовой системы проектов через объект свойства MSBuild <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>Представляет интерфейс, реализованный в основная система проектов и статистической обработки запросов подтип проекта для него, выполнив `QueryInterface`.  
+ Для изменения данных MSBuild подтипом проекта отвечает за извлечение из базовой системы проектов через объект свойства MSBuild <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Представляет интерфейс, реализованный в основная система проектов и статистической обработки запросов подтип проекта для него, выполнив `QueryInterface`.  
   
  В следующей процедуре представлены действия по удалению свойства с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   

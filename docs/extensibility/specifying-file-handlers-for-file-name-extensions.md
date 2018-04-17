@@ -1,27 +1,23 @@
 ---
-title: "Указание файла обработчики для расширений имен файлов | Документы Microsoft"
-ms.custom: 
+title: Указание файла обработчики для расширений имен файлов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d0086f8badb32431c85f16e1f74fe8f186c9b2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Указание файла обработчики для расширений имен файлов
 Существует несколько способов определения приложения, который обрабатывает файл, который имеет расширение конкретного файла. Команды OpenWithList и подключу двумя способами для указания файла обработчики в разделе реестра для расширения файла.  
@@ -53,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Вы можете зарегистрировать различных приложений, которые могут открывать файлов с определенным расширением, добавив идентификаторы ProgID с версиями HKEY_CLASSES_ROOT в качестве значения\\*\<расширения >*\OpenWithProgids ключа. Этот раздел реестра со списком альтернативные идентификаторы ProgID, связанный с расширением файла. Приложения, связанные с перечисленных идентификаторы ProgID появляются в **открыть с помощью***название продукта* подменю. Если указано и то же приложение в обоих `OpenWithList` и `OpenWithProgids` ключей, операционная система выполняет слияние повторяющиеся значения.  
+ Вы можете зарегистрировать различных приложений, которые могут открывать файлов с определенным расширением, добавив идентификаторы ProgID с версиями HKEY_CLASSES_ROOT в качестве значения\\*\<расширения >*\OpenWithProgids ключа. Этот раздел реестра со списком альтернативные идентификаторы ProgID, связанный с расширением файла. Приложения, связанные с перечисленных идентификаторы ProgID появляются в **открыть с помощью *** название продукта* подменю. Если указано и то же приложение в обоих `OpenWithList` и `OpenWithProgids` ключей, операционная система выполняет слияние повторяющиеся значения.  
   
 > [!NOTE]
 >  `OpenWithProgids` Ключа поддерживается только в Windows XP. Так как в других операционных системах игнорировать этот ключ, не используйте его как только регистрация для обработчиков файлов. Используйте этот ключ для повышения удобства работы пользователя в Windows XP.  

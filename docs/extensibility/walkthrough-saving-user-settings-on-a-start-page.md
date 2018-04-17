@@ -1,23 +1,21 @@
 ---
-title: "Пошаговое руководство: Сохранение пользовательских параметров на начальной странице | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Сохранение пользовательских параметров на начальной странице | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8ea4d4a07ed9f61f20ca2b3f79b99d3a2ebfa0b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Пошаговое руководство: Сохранение пользовательских параметров на начальной странице
 Можно сохранить пользовательские параметры для Начальная страница. С помощью этого пошагового руководства, можно создать элемент управления, который сохраняет параметр в реестре, когда пользователь нажимает кнопку, а затем извлекает задание каждый раз при загрузке начальной страницы. Шаблон проекта начальной страницы включает в себя настраиваемый пользовательский элемент управления, и этот элемент управления вызывает XAML начальной страницы по умолчанию, у вас сам изменение начальной страницы.  

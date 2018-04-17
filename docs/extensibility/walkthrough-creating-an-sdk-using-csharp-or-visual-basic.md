@@ -1,23 +1,21 @@
 ---
-title: "Пошаговое руководство: Создание пакета SDK с помощью C# или Visual Basic | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание пакета SDK с помощью C# или Visual Basic | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2106c26e8320e64a641197528c6b91223ef20342
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство: Создание пакета SDK с помощью C# или Visual Basic
 В этом пошаговом руководстве вы узнаете, как создать простой пакет SDK для математические библиотеки с помощью Visual C# и затем пакета SDK как Visual Studio Extension (VSIX). Будут выполнены следующие действия:  
@@ -31,7 +29,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Создание компонента среды выполнения Windows SimpleMath  
+##  <a name="createClassLibrary"></a> Создание компонента среды выполнения Windows SimpleMath  
   
 1.  В строке меню выберите **файл**, **New**, **новый проект**.  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 9. В **обозревателе решений**, откройте контекстное меню для **SimpleMath** узел проекта, а затем выберите **сборки**.  
   
-##  <a name="createVSIX"></a>Создание проекта расширения SimpleMathVSIX  
+##  <a name="createVSIX"></a> Создание проекта расширения SimpleMathVSIX  
   
 1.  В контекстном меню для **решения «SimpleMath»** узел, выберите **добавить**, **новый проект**.  
   
@@ -154,7 +152,7 @@ ms.lasthandoff: 12/22/2017
   
 30. Выберите **установить** кнопку, дождитесь завершения установки и перезапустите Visual Studio.  
   
-##  <a name="createSample"></a>Создание примера приложения, использующего библиотеку классов  
+##  <a name="createSample"></a> Создание примера приложения, использующего библиотеку классов  
   
 1.  В строке меню выберите **файл**, **New**, **новый проект**.  
   
@@ -237,7 +235,7 @@ ms.lasthandoff: 12/22/2017
   
 12. Нажмите клавишу F5, чтобы запустить приложение.  
   
-13. В приложении, ввести любых двух чисел, выберите операцию и выберите  **=**  кнопки.  
+13. В приложении, ввести любых двух чисел, выберите операцию и выберите **=** кнопки.  
   
      Отображается правильный результат.  
   

@@ -1,26 +1,24 @@
 ---
-title: "Оболочка Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Оболочка Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9240df0a4f551ab4fa47fc2ceacaf0654dc562e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71b624cee0e55f95f90a86eac943828bbc26ac97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Оболочки является основным агентом интеграции в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Оболочка предоставляет необходимые функциональные возможности, чтобы позволить пакетам VSPackage для совместного использования общих служб. Из-за архитектурных цель [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] — vest основные функциональные возможности в пакеты VSPackage, оболочка — это платформа для предоставляют основные функциональные возможности и поддерживает обмен данными между среди его компоненте пакеты VSPackage.  
@@ -44,9 +42,9 @@ ms.lasthandoff: 12/22/2017
   
     -   Текущий проект  
   
-    -   Текущий элемент в проект или текущий идентификатор элемента<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+    -   Текущий элемент в проект или текущий идентификатор элемента <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   Текущее выделение для **свойства** окна или`SelectionContainer`  
+    -   Текущее выделение для **свойства** окна или `SelectionContainer`  
   
     -   Контекст пользовательского интерфейса, идентификаторы или CmdUIGuids, управлять отображением команд, меню и панелей инструментов  
   

@@ -1,12 +1,10 @@
 ---
-title: "Расширение инструментов SharePoint в Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Расширение инструментов SharePoint в Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: db0afa41641cd9d5ae04cfe6d391dbf0fe814f0f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d5ad6f27574fcb7bd8a859bcd21ac65e159596e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>Расширение средств SharePoint в Visual Studio
   Средства SharePoint в Visual Studio, требованиям многих сценариев развертывания приложений. Однако бывают ситуации, где они не предоставляют функций, которые вы или другими разработчиками. В таких случаях можно расширения инструментов SharePoint для создания функциональных возможностей.  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Основные понятия программирования и функции расширений SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Справочник по &#40; Расширения средств SharePoint &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [Справочник по &#40;расширения средств SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [Отладка расширений для средств SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

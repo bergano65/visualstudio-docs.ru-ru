@@ -1,23 +1,21 @@
 ---
-title: "Как: перехватывать нажатие фигуры или Decorator | Документы Microsoft"
-ms.custom: 
+title: 'Как: перехватывать нажатие фигуры или Decorator | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4e096209c462452a7956f89560edaa74d8678cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a1eecce61b59016c0fa359f861fc1edb0ebc61a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Практическое руководство. Перехват щелчка фигуры или декоратора
 Ниже описано, как если щелкнуть значок decorator или фигуры перехватить. Можно перехватить щелчки, двойные щелчки, перетаскивает, и другие жесты и сделать элемент ответа.  

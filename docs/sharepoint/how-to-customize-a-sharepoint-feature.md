@@ -1,13 +1,10 @@
 ---
-title: "Как: Настройка компонента SharePoint | Документы Microsoft"
-ms.custom: 
+title: 'Как: Настройка компонента SharePoint | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: adb4283a56715da704df8991543ea89c6cbc79a4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f22ec947e9aa3cae15427915bd5aff4122a67797
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Практическое руководство. Настройка компонента SharePoint
   Можно создать и настроить функции SharePoint с помощью конструктора возможностей в Visual Studio. Например можно задать область компонента и добавить другие компоненты как зависимости. По умолчанию конструктор компонентов открывается при добавлении нового компонента в обозревателе решений или обозревателе пакетов SharePoint.  

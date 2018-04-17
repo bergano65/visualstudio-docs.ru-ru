@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1 | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1 | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
   Системы проектов SharePoint в Visual Studio можно расширить путем создания собственного проекта типов элементов. В этом пошаговом руководстве вы создадите элемент проекта, который может быть добавлен в проект SharePoint для создания настраиваемого действия на сайте SharePoint. Это настраиваемое действие добавляет пункт меню, чтобы **действия сайта** на сайте SharePoint.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  Это изолированный Пошаговое руководство. После выполнения этого пошагового руководства, элемент проекта можно улучшить, добавив мастер в шаблоне элемента. Дополнительные сведения см. в разделе [Пошаговое руководство: создание элемент проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
->  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения данного пошагового руководства.  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  В **имя** введите **CustomActionProjectItem**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **CustomActionProjectItem** проекта **обозревателе решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **CustomActionProjectItem** проекта **обозревателе решений**.  
   
 #### <a name="to-create-the-item-template-project"></a>Создание проекта шаблона элемента  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  В **имя** введите **ItemTemplate**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **ItemTemplate** проекта в решение.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **ItemTemplate** проекта в решение.  
   
 #### <a name="to-create-the-extension-project"></a>Создание проекта расширения  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  В **имя** введите **ProjectItemDefinition**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **ProjectItemDefinition** в решение проект и открывает файл кода по умолчанию Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **ProjectItemDefinition** в решение проект и открывает файл кода по умолчанию Class1.  
   
 5.  Удалите файл Class1 код из проекта.  
   
@@ -430,7 +429,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Если **отладка скриптов отключена** диалоговое окно, выберите **Да** кнопку, чтобы продолжить отладку проекта.  
   
-4.  На **действия сайта** меню, выберите **центр разработки SharePoint**, убедитесь, что в браузере будет открыта http://msdn.microsoft.com/sharepoint/default.aspx веб-сайта, а затем закройте веб-браузер.  
+4.  На **действия сайта** меню, выберите **центр разработки SharePoint**, убедитесь, что в браузере будет открыта веб-сайт http://msdn.microsoft.com/sharepoint/default.aspxи закройте веб-браузер.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Очистка компьютера разработчика  
  После завершения тестирования элемента проекта удалите шаблон элемента проекта из экспериментального экземпляра Visual Studio.  
@@ -459,6 +458,6 @@ ms.lasthandoff: 01/10/2018
  [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
- [Создание значка или другого изображения &#40; редактор изображений для значков &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Создание значка или другого изображения &#40;редактор изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

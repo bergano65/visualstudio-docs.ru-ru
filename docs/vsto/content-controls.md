@@ -1,13 +1,10 @@
 ---
-title: "Элементы управления содержимым | Документы Microsoft"
-ms.custom: 
+title: Элементы управления содержимым | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
 - VST.Toolbox.RichTextContentControl
@@ -41,14 +38,14 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1c56b7e48ce42699330e8eb40595d9cc761736e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-controls"></a>Элементы управления содержимым
   Элементы управления содержимым позволяют разрабатывать документы и шаблоны, которые имеют следующие возможности и возможности.  
@@ -130,7 +127,7 @@ ms.lasthandoff: 01/10/2018
 |Выполнение кода после добавления элемента управления содержимым в документ в результате выполнения операции повтора или отмены.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> элемента управления.|  
 |Выполнение кода непосредственно перед удалением из документа элемента управления содержимым.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> элемента управления.|  
   
-##  <a name="Protection"></a>Защита частей документов с помощью элементов управления содержимым  
+##  <a name="Protection"></a> Защита частей документов с помощью элементов управления содержимым  
  При защите части документа вы запрещаете пользователям изменять или удалять содержимое в этой части документа. Для защиты частей документа с помощью элементов управления содержимым можно использовать несколько способов.  
   
  Если область, которую необходимо защитить, находится внутри элемента управления содержимым, то чтобы запретить изменение или удаление элемента управления, можно использовать свойства элемента управления содержимым.  
@@ -146,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
  Дополнительные сведения об использовании элементов управления содержимым для защиты частей документов см. в разделе [как: защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a>Привязка данных к элементам управления содержимым  
+##  <a name="DataBinding"></a> Привязка данных к элементам управления содержимым  
  Для отображения данных в документах элемент управления содержимым можно привязать к источнику данных. При обновлении источника данных элемент управления содержимым будет показывать внесенные изменения. Изменения также можно сохранить обратно в источник данных.  
   
  Элементы управления содержимым предоставляют следующие возможности по привязке данных.  
@@ -233,7 +230,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
  Чтобы определить, когда пользователь изменяет содержимое элемента управления содержимым, элемент управления можно привязать к пользовательской XML-части, а затем обрабатывать событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Это событие возникает, когда пользователь изменяет содержимое элемента управления, привязанного к пользовательской XML-части. Пошаговое руководство для привязки элемента управления содержимым к пользовательской XML-части в разделе [Пошаговое руководство: привязка элементов управления содержимым к пользовательским XML-](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-###  <a name="checkbox"></a>Элементы управления содержимым "флажок" в проектах Word  
+###  <a name="checkbox"></a> Элементы управления содержимым "флажок" в проектах Word  
  В Word 2010 появился новый тип элемента управления содержимым, который представляет флажок. Однако [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] не предоставляет соответствующий тип CheckBoxContentControl для использования в проектах Office. Чтобы создать содержимое элемента управления "флажок" в [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или Word 2010, используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> для создания объекта <xref:Microsoft.Office.Tools.Word.ContentControl> и передайте значение <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> в этот метод для указания элемента управления содержимым "флажок". В следующем примере кода показано, как это сделать.  
   
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

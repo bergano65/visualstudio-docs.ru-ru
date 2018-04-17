@@ -1,13 +1,10 @@
 ---
-title: "Создание решений SharePoint | Документы Microsoft"
-ms.custom: 
+title: Создание решений SharePoint | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84cc2df4bd683315676acaa7e3f0eead1c36e859
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-sharepoint-solutions"></a>Создание решений SharePoint
   Приложения SharePoint можно создавать не только в SharePoint Designer, но и в Visual Studio. Visual Studio обеспечивает быструю разработку решений SharePoint с помощью таких компонентов, как средства расширенной отладки, IntelliSense, завершение операторов и шаблоны проектов. В Visual Studio также используются преимущества дополнительных средств и языков платформы .NET Framework. Проекты SharePoint можно разрабатывать с помощью Visual Basic или Visual C#, а приложения для проектов SharePoint можно разрабатывать с помощью JavaScript.  
@@ -36,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|![Документация](../sharepoint/media/vs-icon-documentation.gif "документации")|**Документация**<br /><br /> -   [Приступая к работе &#40; Разработка приложений SharePoint в Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Расширение инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![Документация](../sharepoint/media/vs-icon-documentation.gif "документации")|**Документация**<br /><br /> -   [Приступая к работе &#40;разработка приложений SharePoint в Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Расширение инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
 |![Документация](../sharepoint/media/vs-icon-documentation.gif "документации")|**Основные задачи**<br /><br /> -   [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Как: Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Как: создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Как: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Как: создать пользовательский элемент управления для страницы приложения SharePoint или веб-части](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![Пошаговые руководства](../sharepoint/media/vs-icon-walkthroughs.gif "пошаговые руководства")|**Пошаговые руководства**<br /><br /> -   [Пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![Примеры кода](../sharepoint/media/vs-icon-codesamples.gif "примеры кода")|**Примеры кода**<br /><br /> -   [Примеры разработки решений SharePoint](../sharepoint/sharepoint-development-samples.md)<br />-   [Загрузки разработчика SharePoint](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
