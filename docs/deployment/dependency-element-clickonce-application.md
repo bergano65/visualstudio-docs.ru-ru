@@ -1,12 +1,10 @@
 ---
-title: "&lt;зависимость&gt; элемент (приложение ClickOnce) | Документы Microsoft"
-ms.custom: 
+title: '&lt;зависимость&gt; элемент (приложение ClickOnce) | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be31fafb64b44d6d98917edb11f82a69fbc41c76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;зависимость&gt; элемент (приложение ClickOnce)
 Идентифицирует платформу или зависимость сборки, необходимые для приложения.  
@@ -98,7 +96,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="dependentos"></a>dependentOS  
  Необязательный. Содержит `osVersionInfo` элемента. `dependentOS` И `dependentAssembly` элементы являются взаимоисключающими: одно из них должен быть `dependency` элемент, но не оба.  
   
- `dependentOS`поддерживает следующие атрибуты.  
+ `dependentOS` поддерживает следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
@@ -124,7 +122,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="dependentassembly"></a>dependentAssembly  
  Необязательный. Содержит `assemblyIdentity` элемента. `dependentOS` И `dependentAssembly` элементы являются взаимоисключающими: одно из них должен быть `dependency` элемент, но не оба.  
   
- `dependentAssembly`имеет следующие атрибуты.  
+ `dependentAssembly` имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
@@ -140,7 +138,7 @@ ms.lasthandoff: 12/22/2017
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`name`|Обязательно. Определяет имя приложения.|  
-|`version`|Обязательно. Указывает номер версии приложения в следующем формате:`major.minor.build.revision`|  
+|`version`|Обязательно. Указывает номер версии приложения в следующем формате: `major.minor.build.revision`|  
 |`publicKeyToken`|Необязательный. Указывает символ 16 шестнадцатеричную строку, которая представляет собой последние 8 байтов `SHA-1` хэш-значение открытого ключа, которым подписана приложения или сборки. Открытый ключ, используемый для подписи каталога должен быть не менее 2048 бит.|  
 |`processorArchitecture`|Необязательный. Задает процессор. Допустимые значения: `x86` для 32-разрядной версии Windows и `I64` для 64-разрядной версии Windows.|  
 |`language`|Необязательный. Идентифицирует две части кодов языка, например EN-US, сборки.|  
@@ -148,7 +146,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="hash"></a>hash  
  `hash` Элемент является необязательным и дочерним для `assemblyIdentity` элемента. `hash` Элемент не имеет атрибутов.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]использует алгоритмической хэш всех файлов в приложении в качестве проверки безопасности, чтобы убедиться, что ни один из файлов был изменен после развертывания. Если `hash` элемент не был включен, эта проверка не выполняется. Поэтому, пропустив `hash` элемента не рекомендуется.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] использует алгоритмической хэш всех файлов в приложении в качестве проверки безопасности, чтобы убедиться, что ни один из файлов был изменен после развертывания. Если `hash` элемент не был включен, эта проверка не выполняется. Поэтому, пропустив `hash` элемента не рекомендуется.  
   
 ### <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
  `dsig:Transforms` Элемент является обязательным дочерним элементом `hash` элемента. `dsig:Transforms` Элемент не имеет атрибутов.  
@@ -156,14 +154,14 @@ ms.lasthandoff: 12/22/2017
 ### <a name="dsigtransform"></a>DSIG:Transform  
  `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемента. `dsig:Transform` Элемент имеет следующие атрибуты.  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственным значением, используемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ### <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
  `dsig:DigestMethod` Элемент является обязательным дочерним элементом `hash` элемента. `dsig:DigestMethod` Элемент имеет следующие атрибуты.  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственным значением, используемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   

@@ -1,23 +1,21 @@
 ---
-title: "Диагностика проблем после развертывания | Документы Microsoft"
-ms.custom: 
-ms.date: 06/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Диагностика проблем после развертывания | Документы Microsoft
+ms.custom: ''
+ms.date: 04/10/2018
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
-caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc5ffb60e10f28fc33654a78f3f8486e42a2ed85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="diagnose-problems-after-deployment"></a>Диагностика проблем после развертывания
 Для диагностики проблем в веб-приложении ASP.NET после развертывания с помощью IntelliTrace включите сведения о построении в свою версию, чтобы Visual Studio могла автоматически найти нужные исходные файлы и файлы символов, необходимые для отладки журнала IntelliTrace.  
@@ -34,18 +32,14 @@ ms.lasthandoff: 12/22/2017
 
 -   Visual Studio Enterprise (но не выпуск Professional или Community) для просмотра данных диагностики и отладки кода с помощью IntelliTrace.  
 
-##  <a name="SetUpBuild"></a>Шаг 1: Включение в выпуск сведений о сборке  
+##  <a name="SetUpBuild"></a> Шаг 1: Включение в выпуск сведений о сборке  
  Настройте процесс построения для создания манифеста сборки (файл BuildInfo.config) для веб-проекта и включите этот манифест в выпуск. Этот манифест содержит сведения о проекте, систему управления версиями и систему сборки, которые использовались для создания конкретной сборки. Эти сведения позволяют Visual Studio найти соответствующий источник и символы после открытия журнала IntelliTrace для просмотра записанных событий.  
 
-###  <a name="AutomatedBuild"></a>Создание манифеста сборки для автоматизированной сборки с помощью Team Foundation Server  
-
- Выполните эту процедуру, если вы используете систему управления версиями Team Foundation или Git.
-  
- **Шаг 2.** [Шаг 2. Release your app](#DeployRelease)  
+###  <a name="AutomatedBuild"></a> Создание манифеста сборки для автоматизированной сборки с помощью Team Foundation Server  
   
  Выполните эту процедуру, если вы используете систему управления версиями Team Foundation или Git.  
  
- ####  <a name="TFS2017"></a>Team Foundation Server 2017 г.
+ ####  <a name="TFS2017"></a> Team Foundation Server 2017 г.
 
  Настройте определение сборки, чтобы добавить расположения исходного кода, сборки и символов в манифест сборки (файл BuildInfo.config). Team Foundation Build автоматически создает этот файл и помещает его в выходную папку проекта.
   
@@ -55,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  При создании нового шаблона, выберите шаблон ASP.NET Core (.NET Framework). 
   
-     ![Выберите шаблон процесса сборки &#45; TFS 2017 г](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![Выбор шаблона процесса сборки &#45; TFS 2017 г](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3.  Укажите место сохранения файла символов (PDB-файла), чтобы исходный код индексировался автоматически.  
   
@@ -72,8 +66,10 @@ ms.lasthandoff: 12/22/2017
      Любой пользователь, у которого есть доступ к вашему веб-серверу, может видеть эти расположения в манифесте сборки. Убедитесь, что сервер системы управления версиями защищен.
   
 6.  Запустите новую сборку.  
+  
+    Последовательно выберите пункты [шаг 2: выпуск приложения](#DeployRelease)  
 
-####  <a name="TFS2013"></a>Team Foundation Server 2013  
+####  <a name="TFS2013"></a> Team Foundation Server 2013  
  Настройте определение сборки, чтобы добавить расположения исходного кода, сборки и символов в манифест сборки (файл BuildInfo.config). Team Foundation Build автоматически создает этот файл и помещает его в выходную папку проекта.  
 
 1.  [Измените определение сборки или создайте новое определение сборки.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
@@ -82,7 +78,7 @@ ms.lasthandoff: 12/22/2017
 
 2.  Выберите шаблон по умолчанию (TfvcTemplate.12.xaml) или свой собственный пользовательский шаблон.  
 
-     ![Выберите шаблон процесса сборки &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![Выбор шаблона процесса сборки &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
 
 3.  Укажите место сохранения файла символов (PDB-файла), чтобы исходный код индексировался автоматически.  
 
@@ -116,9 +112,9 @@ ms.lasthandoff: 12/22/2017
 
 6.  Запустите новую сборку.  
 
- **Шаг 2.** [Шаг 2. Release your app](#DeployRelease)  
+    Последовательно выберите пункты [шаг 2: выпуск приложения](#DeployRelease)  
 
-####  <a name="TFS2012_2010"></a>Team Foundation Server 2012 или 2010  
+####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 или 2010  
  Выполните следующие действия, чтобы автоматически создать манифест сборки (файл BuildInfo.config) для проекта и поместить его в выходную папку проекта. Файл отображается в выходной папке как "*ИмяПроекта*.BuildInfo.config", однако после публикации приложения в папке развертывания ему присваивается имя "BuildInfo.config".  
 
 1.  Установите любой выпуск Visual Studio 2013 на сервер сборки Team Foundation Build.  
@@ -141,9 +137,9 @@ ms.lasthandoff: 12/22/2017
 
 4.  Запустите новую сборку.  
 
- **Шаг 2.** [Шаг 2. Release your app](#DeployRelease)  
+    Последовательно выберите пункты [шаг 2: выпуск приложения](#DeployRelease)  
 
-###  <a name="ManualBuild"></a>Создание манифеста сборки для ручной сборки с помощью Visual Studio  
+###  <a name="ManualBuild"></a> Создание манифеста сборки для ручной сборки с помощью Visual Studio  
  Выполните следующие действия, чтобы автоматически создать манифест сборки (файл BuildInfo.config) для проекта и поместить его в выходную папку проекта. Файл отображается в выходной папке как "*ИмяПроекта*.BuildInfo.config", однако после публикации приложения в папке развертывания ему присваивается имя "BuildInfo.config".  
 
 1.  В **обозревателе решений**выгрузите веб-проект.  
@@ -168,9 +164,9 @@ ms.lasthandoff: 12/22/2017
 
 4.  Запустите новую сборку.  
 
- **Шаг 2.** [Шаг 2. Release your app](#DeployRelease)  
+    Последовательно выберите пункты [шаг 2: выпуск приложения](#DeployRelease)  
 
-###  <a name="MSBuild"></a>Создание манифеста сборки для ручной сборки с помощью MSBuild.exe  
+###  <a name="MSBuild"></a> Создание манифеста сборки для ручной сборки с помощью MSBuild.exe  
  Добавьте следующие аргументы сборки при выполнении сборки:  
 
  **/p:GenerateBuildInfoConfigFile = true**  
@@ -179,7 +175,7 @@ ms.lasthandoff: 12/22/2017
 
  **/ p: buildsymbolstorepath =**\<*путь к символам*>  
 
-##  <a name="DeployRelease"></a>Шаг 2: Выпуск приложения  
+##  <a name="DeployRelease"></a> Шаг 2: Выпуск приложения  
  Если вы используете [пакет Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) , который был создан процессом сборки для развертывания приложения, манифест сборки автоматически переименовывается из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещается в ту же папку, что и файл Web.config приложения на веб-сервере.  
 
  Если для развертывания приложения вы используете другие методы, убедитесь, что манифест сборки переименован из "*ИмяПроекта*.BuildInfo.config" в "BuildInfo.config" и помещен в ту же папку, что и файл Web.config приложения, на веб-сервере.  
@@ -187,7 +183,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="step-3-monitor-your-app"></a>Шаг 3. Отслеживание работы приложения  
  Настройте отслеживание производительности приложения на веб-сервере, чтобы отслеживать проблемы приложения, регистрировать события диагностики и сохранять эти события в файл журнала IntelliTrace. В разделе [отслеживание проблем развертывания для выпуска](../debugger/using-the-intellitrace-stand-alone-collector.md).  
 
-##  <a name="InvestigateEvents"></a>Шаг 4: Поиск проблем  
+##  <a name="InvestigateEvents"></a> Шаг 4: Поиск проблем  
  Для просмотра записанных событий и отладки кода с помощью IntelliTrace на компьютере разработки или другом компьютере должна быть установлена среда Visual Studio Enterprise. Кроме того, можно использовать такие средства, как CodeLens, карты отладчика и карты кода, которые помогают диагностировать проблемы.  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Открытие журнала IntelliTrace и соответствующего решения  
@@ -208,7 +204,7 @@ ms.lasthandoff: 12/22/2017
 
      В противном случае выберите другую рабочую область или создайте новую рабочую область. Visual Studio сопоставит всю ветвь с этой рабочей областью.  
 
-     ![Открыть из системы управления версиями &#45; Создание новой рабочей области](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Открыть из системы управления версиями &#45; создать новую рабочую область](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
 
      Для создания рабочей области с конкретными сопоставлениями или с именем, отличным от имени вашего компьютера, щелкните **Управление**.  
 
@@ -254,13 +250,13 @@ ms.lasthandoff: 12/22/2017
 
      Теперь можно просмотреть другие записанные значения, стек вызова или использовать окно **IntelliTrace** для [перемещения вперед или назад "по времени" между различными записанными событиями](../debugger/intellitrace.md), по связанному с ними коду и значениям, записанным в эти моменты времени. [Что такое, что означают остальные события и данные в журнале IntelliTrace?](../debugger/using-saved-intellitrace-data.md)  
 
-###  <a name="WhatElse"></a>Что еще можно сделать отсюда?  
+###  <a name="WhatElse"></a> Что еще можно сделать отсюда?  
 
 -   [Получить дополнительные сведения об этом коде](../ide/find-code-changes-and-other-history-with-codelens.md). Чтобы найти ссылки на этот код, журнал изменений, связанные ошибки, рабочие элементы, проверки кода или модульные тесты — все, не выходя из редактора - используйте индикаторы CodeLens в редакторе.  
 
-     ![CodeLens-45; Просмотреть ссылки на этот код](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![CodeLens &#45; просмотреть ссылки на этот код](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
-     ![CodeLens-45; Просмотр журнала изменений для этого кода](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![CodeLens &#45; Просмотр журнала изменений для этого кода](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
 -   [Сопоставьте текущую позицию в коде во время отладки.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Чтобы визуально отслеживать методы, которые были вызваны во время сеанса отладки, сопоставьте стек вызовов.  
 
@@ -268,12 +264,12 @@ ms.lasthandoff: 12/22/2017
 
 ###  <a name="FAQ"></a> Вопросы и ответы  
 
-####  <a name="WhyInclude"></a>В. Зачем включать сведения о проекте, системы управления версиями, сборке и символах в выпуск?  
+####  <a name="WhyInclude"></a> В. Зачем включать сведения о проекте, системы управления версиями, сборке и символах в выпуск?  
  Visual Studio использует эти сведения для поиска соответствующего решения и исходного кода для отлаживаемого выпуска. Когда вы открываете журнал IntelliTrace и выбираете событие для запуска отладки, Visual Studio использует символы для поиска и отображения участка кода, в котором возникло событие. Вы можете просмотреть записанные значения и перейти вперед или назад по ходу выполнения кода.  
 
  Если вы используете TFS, и эти сведения не находится в манифест сборки (файл BuildInfo.config), Visual Studio выполняет поиск соответствующего источника и символам на текущем подключенном сервере TFS. Если Visual Studio не удается найти правильный экземпляр TFS или соответствующий исходный код, вы получите запрос на выбор другого экземпляра TFS.  
 
-####  <a name="InvalidConfigFile"></a>Вопрос. в журнале IntelliTrace отсутствуют сведения о моем развернутом приложении. Почему это произошло? Что делать?  
+####  <a name="InvalidConfigFile"></a> Вопрос. в журнале IntelliTrace отсутствуют сведения о моем развернутом приложении. Почему это произошло? Что делать?  
  Это могло произойти при выполнении развертывания с компьютера разработки или в отсутствие подключения к TFS во время развертывания.  
 
 1.  Перейдите в папку развертывания проекта.  
@@ -377,17 +373,17 @@ ms.lasthandoff: 12/22/2017
         </Build>  
         ```  
 
-####  <a name="IneligibleWorkspace"></a>Вопрос. Почему Visual Studio сообщает, что выбранная рабочая область недопустима?  
+####  <a name="IneligibleWorkspace"></a> Вопрос. Почему Visual Studio сообщает, что выбранная рабочая область недопустима?  
  **О.** Выбранная рабочая область не имеет сопоставлений между папкой системы управления версиями и локальной папкой. Чтобы создать сопоставление для данной рабочей области, щелкните **Управление**. В противном случае выберите уже сопоставленную рабочую область или создайте новую рабочую область.  
 
  ![Открыть из системы управления версиями без сопоставленной рабочей области](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
 
-####  <a name="ChooseTeamProject"></a>Вопрос. Почему невозможно продолжать работу, пока не выбрана командная или другая коллекция?  
+####  <a name="ChooseTeamProject"></a> Вопрос. Почему невозможно продолжать работу, пока не выбрана командная или другая коллекция?  
  **О.** Это может произойти по любой из следующих причин.  
 
 -   Программа Visual Studio не подключена к TFS.  
 
-     ![Открыть из системы управления версиями &#45; не подключен](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![Открыть из системы управления версиями &#45; не подключены](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
 
 -   Программа Visual Studio не нашла решение или проект в текущей командной коллекции.  
 
@@ -397,12 +393,12 @@ ms.lasthandoff: 12/22/2017
 
      Указанный сервер TFS может больше не содержать соответствующий источник или вовсе не существовать в результате перехода на новый TFS. Если указанный TFS не существует, по прошествии приблизительно минуты время ожидания Visual Studio завершится, и вам будет предложено подключиться к другой коллекции. Для продолжения подключитесь к правильному серверу TFS.  
 
-     ![Открыть из системы управления версиями &#45; Миграция](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Открыть из системы управления версиями &#45; миграции](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
-####  <a name="WhatWorkspace"></a>Вопрос. что такое рабочая область?  
+####  <a name="WhatWorkspace"></a> Вопрос. что такое рабочая область?  
  **Ответ** вашей [рабочей области хранится копия источника](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) , и можно разрабатывать и тестировать его отдельно до возврата работы. Если у вас еще нет рабочей области, которая сопоставлена с найденным решением или проектом, то Visual Studio предложит выбрать доступную рабочую область или создать новую рабочую область с именем вашего компьютера в качестве имени рабочей области по умолчанию.  
 
-####  <a name="UntrustedSymbols"></a>Вопрос. Почему появляется сообщение о ненадежных символах?  
+####  <a name="UntrustedSymbols"></a> Вопрос. Почему появляется сообщение о ненадежных символах?  
  ![Отладка с путем ненадежных символах? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **Ответ** это сообщение появляется, когда путь к символам в файле манифеста сборки (\<*ProjectName*>. BuildInfo.config) не включена в список доверенных путей к символам. Добавить путь к списку путей к символам можно в параметрах отладчика.

@@ -2,12 +2,9 @@
 title: '&lt;Продукт&gt; элемент (загрузчик) | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: 8
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: af40da0690bd8b6cc9cc12dd16fe9e11045b0624
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb087d4daaceca4ae1ba913b3bacc9f85c2b9cb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Продукт&gt; элемент (загрузчик)
 `Product` Элемент является элементом верхнего уровня XML в файле продукта.  
@@ -146,7 +142,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
  `Product` Элемент является обязательным в файле продукта. Он имеет следующий атрибут.  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`ProductCode`|Уникальный идентификатор продукта.|  
   

@@ -1,13 +1,10 @@
 ---
-title: "Предупреждения удобства обслуживания | Документы Microsoft"
-ms.custom: 
+title: Предупреждения удобства обслуживания | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
@@ -15,24 +12,23 @@ helpviewer_keywords:
 - managed code analysis warnings, maintainability warnings
 - maintainability warnings
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d432dab79d5cd88d398a74c352cc9d34c8b4f2e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c09c73821449a6911f893f8884213e77a9a29981
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="maintainability-warnings"></a>предупреждения удобства обслуживания
 Предупреждения удобства обслуживания поддерживает сопровождение библиотек и приложений.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA1500: имена переменных не должны совпадать с именами полей](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|Метод экземпляра объявляет параметр или локальную переменную, имя которого совпадает с именем поля экземпляра объявляющего типа, который приводит к ошибкам.|  
 |[CA1501: избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)|Тип расположен глубже четырех уровней в иерархии наследования. Глубокие иерархии вложенных типов трудно отслеживать, понимать и поддерживать.|  

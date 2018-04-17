@@ -1,11 +1,8 @@
 ---
-title: "Привязка элементов управления WPF к набору данных | Документы Microsoft"
-ms.custom: 
+title: Привязка элементов управления WPF к набору данных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 В этом пошаговом руководстве вы создадите приложение WPF, содержащее элементы управления с привязкой к данным. Эти элементы управления привязаны к записям продуктов, инкапсулированным в набор данных. Вы также добавите кнопки для просмотра продуктов и сохранения изменений в записях продуктов.  
@@ -183,11 +180,11 @@ ms.lasthandoff: 12/22/2017
 7.  В **свойства** окна, установите флажок рядом с полем **IsReadOnly** свойство.  
   
 ## <a name="navigating-product-records"></a>Навигация по записям продуктов  
- Добавьте код, позволяющий пользователям выполнять прокрутку записей продуктов с помощью  **\<**  и  **>**  кнопки.  
+ Добавьте код, позволяющий пользователям выполнять прокрутку записей продуктов с помощью **\<** и **>** кнопки.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Предоставление пользователям возможности навигации по записям продуктов  
   
-1.  В конструкторе, дважды щелкните  **<**  кнопки на поверхности окна.  
+1.  В конструкторе, дважды щелкните **<** кнопки на поверхности окна.  
   
      Visual Studio открывает файл кода программной части и создает новую `backButton_Click` обработчик событий для <xref:System.Windows.Controls.Primitives.ButtonBase.Click> события.  
   
@@ -201,7 +198,7 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Вернуться в конструктор и дважды щелкните  **>**  кнопки.  
+4.  Вернуться в конструктор и дважды щелкните **>** кнопки.  
   
 5.  Добавьте следующий код в обработчик событий `nextButton_Click`.  
   
@@ -236,7 +233,7 @@ ms.lasthandoff: 12/22/2017
   
     -   Текстовые поля отображают данные из первой записи продукта с фотографией. Этот продукт имеет идентификатор 713 и имя **Long Sleeve Logo Jersey, S**.  
   
-    -   Можно щелкнуть  **>**  или  **<**  для перехода по другим записям продуктов.  
+    -   Можно щелкнуть **>** или **<** для перехода по другим записям продуктов.  
   
 2.  В одной из записей продуктов измените **размер** значение, а затем нажмите кнопку **сохранить изменения**.  
   

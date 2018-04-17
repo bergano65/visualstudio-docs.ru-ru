@@ -1,12 +1,10 @@
 ---
-title: "CA1819: Свойства не должны возвращать массивы | Документы Microsoft"
-ms.custom: 
+title: 'CA1819: Свойства не должны возвращать массивы | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - PropertiesShouldNotReturnArrays
 - CA1819
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - PropertiesShouldNotReturnArrays
 - CA1819
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cc11a71b9f6a68db2d795694af0326561b235f8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a80f70c8aa61a404597de512e7cbee2da959b166
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: свойства не должны возвращать массивы
 |||  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="example-violation"></a>Пример нарушения  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  Следующий пример показывает свойства, которое нарушает это правило.  
   
 ### <a name="code"></a>Код  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="change-the-property-to-a-method-example"></a>Измените значение свойства на примере метод  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере нарушение устраняется путем изменения свойства в метод.  
   
 ### <a name="code"></a>Код  
@@ -68,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="return-a-collection-example"></a>Пример возврата коллекции  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере нарушение устраняется путем изменения свойства для возврата  
   
  <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.  
@@ -79,7 +77,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="allowing-users-to-modify-a-property"></a>Предоставление пользователям разрешения на изменение свойства  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  Можно разрешить пользователю изменять свойство класса. В следующем примере свойство чтения/записи, которое нарушает это правило.  
   
 ### <a name="code"></a>Код  

@@ -2,26 +2,22 @@
 title: Журнал пикселей графики | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
-caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73e51108c4280d6e3ebf69000c9863610e4a25da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-pixel-history"></a>Журнал пикселей графики
 Окно журнала пикселей графики в анализаторе графики Visual Studio помогает понять влияние на конкретный пиксель событий Direct3D, которые происходят в кадре вашей игры или приложения.  
@@ -41,7 +37,7 @@ ms.lasthandoff: 12/22/2017
   
  Можно развернуть каждый примитив, чтобы проверить, как вывод построителя текстуры объединяется с существующим цветом пикселя для создания результирующего цвета. Здесь также можно проверить или отладить код построителя текстуры, связанного с примитивом, а также можно далее развернуть узел вершинного построителя текстуры для проверки его входных данных.  
   
-###  <a name="exclusion"></a>Исключение примитива  
+###  <a name="exclusion"></a> Исключение примитива  
  Примитив может исключаться из оказания влияния на цвет пикселя в силу различных причин. Каждая причина представлена значком, который описан в таблице ниже.  
   
 |Значок|Причина исключения|  

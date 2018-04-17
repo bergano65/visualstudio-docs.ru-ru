@@ -1,26 +1,24 @@
 ---
-title: "Элемент меню | Документы Microsoft"
-ms.custom: 
+title: Элемент меню | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 58b948e7ec420442eae839cd4eeefbccbe6b509d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5c44ca8a78a331d66d099b8d141c4b66c1144949
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="menu-element"></a>Элемент меню
 Определяет один элемент меню. Существуют шесть типа меню: контекстное меню, MenuController, MenuControllerLatched, инструментов и ToolWindowToolbar.  
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |guid|Обязательно. Идентификатор GUID идентификатор GUID или идентификатор команды.|  
 |id|Обязательно. Идентификатор идентификатор GUID или идентификатор команды.|  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Родительский|Необязательный. Родительский элемент данного элемента меню.|  
 |CommandFlag|Обязательно. В разделе [команды элемент флаг](../extensibility/command-flag-element.md). Ниже приведены допустимые значения CommandFlag меню.<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -этот флаг не влияет на отображение панели инструментов.<br />-   **DontCache**<br />-   **DynamicVisibility** -этот флаг не влияет на отображение панели инструментов.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
@@ -60,7 +58,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Menus](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  
   

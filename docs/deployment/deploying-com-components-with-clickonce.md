@@ -1,12 +1,10 @@
 ---
-title: "Развертывание компонентов COM с помощью ClickOnce | Документы Microsoft"
-ms.custom: 
+title: Развертывание компонентов COM с помощью ClickOnce | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Развертывание компонентов COM с помощью ClickOnce
 Развертывание устаревших компонентов COM традиционно трудной задачей. Компоненты должны быть глобально зарегистрированы и таким образом, может вызвать нежелательные побочные эффекты между перекрывающимися приложениями. Такая ситуация встречается обычно не проблемы в приложениях .NET Framework, так как компоненты, полностью изолированы от приложения или side-by-side совместимы. Visual Studio позволяет развертывать изолированные компоненты COM в Windows XP или более поздней версии операционной системы.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]обеспечивает простой и безопасный механизм развертывания приложений .NET. Однако если приложение использует устаревшие компоненты COM, необходимо выполнить дополнительные действия для его развертывания. В этом разделе описывается развертывать изолированные компоненты COM и ссылок на собственные компоненты (например, Visual Basic 6.0 или Visual C++).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] обеспечивает простой и безопасный механизм развертывания приложений .NET. Однако если приложение использует устаревшие компоненты COM, необходимо выполнить дополнительные действия для его развертывания. В этом разделе описывается развертывать изолированные компоненты COM и ссылок на собственные компоненты (например, Visual Basic 6.0 или Visual C++).  
   
- Дополнительные сведения о развертывании изолированные компоненты COM см. в разделе «упростить развертывание приложения с [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM без регистрации» в [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Дополнительные сведения о развертывании изолированные компоненты COM см. в разделе «упростить развертывание приложения с [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM без регистрации» в [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM-Взаимодействия без регистрации  
  COM-Взаимодействия без регистрации — это новая технология, развертывания и активации изолированных COM-компонентов. Он работает путем помещения библиотеки типов компонента и сведения о регистрации, который обычно устанавливается в системный реестр в XML-файл, называемый манифестом, хранящихся в той же папке, что и приложение.  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
  Если генератор манифеста встречает изолированную ссылку COM, то перечисляются все `CoClass` операций в библиотеке типов компонентов, сопоставляя каждый элемент с соответствующими данными регистрации и создавая определения манифеста для COM классы в файле библиотеки типов.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Развертывание компонентов COM-Взаимодействия без регистрации с помощью ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]технологии развертывания хорошо подходит для развертывания изолированных компонентов COM, так как оба [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-Взаимодействия без регистрации требуют наличия манифеста для развертывания компонентов.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] технологии развертывания хорошо подходит для развертывания изолированных компонентов COM, так как оба [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-Взаимодействия без регистрации требуют наличия манифеста для развертывания компонентов.  
   
  Как правило автор компонента должен предоставлять манифест. Если нет, однако Visual Studio не может создавать манифест автоматически для COM-компонента. Создание манифеста выполняется во время [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] процесса публикации; Дополнительные сведения см. в разделе [публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md). Эта функция также позволяет использовать устаревшие компоненты, созданные в предыдущих средах разработки, таких как Visual Basic 6.0.  
   

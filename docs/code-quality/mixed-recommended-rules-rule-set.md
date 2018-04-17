@@ -1,29 +1,26 @@
 ---
-title: "Набор правил смешанного рекомендуемые правила | Документы Microsoft"
-ms.custom: 
+title: Набор правил смешанного рекомендуемые правила | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbfc45e481cddb9fbf07e8755a48eda403796eb
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: dfecf4019244e02816686783171cb34cd0c0c1d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для смешанных сред"
 
 Правила Microsoft для смешанных рекомендуется связаны с наиболее важными и распространенными проблемами в проектах C++, поддерживающие среду, включая возможные уязвимости безопасности, сбои приложения и другие важные ошибки логики и проектирования. Следует включать этот набор правил в любой настраиваемый набор правил, создаваемые для проектов C++, поддерживающие среду.
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|

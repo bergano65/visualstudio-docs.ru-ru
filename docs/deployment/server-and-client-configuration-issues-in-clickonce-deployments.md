@@ -1,12 +1,10 @@
 ---
-title: "Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документы Microsoft"
-ms.custom: 
+title: Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 11cc26689b20f989cb449f67387052caf3096811
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 При использовании Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, службы IIS откажут в передаче этого файла и не будет выполнено развертывание.  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
  Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение будет работать по протоколу SSL, за исключением случаев, когда Internet Explorer инициирует запрос SSL-сертификат. Запрос может возникнуть, когда существует проблема с сертификат, например когда имена узлов не совпадают или сертификата истек. Чтобы сделать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] работать через SSL-подключение, убедитесь, что сертификат обновлен и соответствие данным сайта в данных сертификата.  
   
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce и проверка подлинности прокси-сервера  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]предоставляет поддержку для интеграции с Windows проверка подлинности прокси-сервера, начиная с .NET Framework 3.5. Нет определенных Machine.config не требуется. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]предоставляет поддержку для других протоколов проверки подлинности, такие как обычную или дайджест.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет поддержку для интеграции с Windows проверка подлинности прокси-сервера, начиная с .NET Framework 3.5. Нет определенных Machine.config не требуется. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет поддержку для других протоколов проверки подлинности, такие как обычную или дайджест.  
   
  Можно также установить исправление для .NET Framework 2.0, чтобы включить эту функцию. Дополнительные сведения см. в разделе http://go.microsoft.com/fwlink/?LinkId=158730.  
   
@@ -96,9 +94,9 @@ ms.lasthandoff: 12/22/2017
  При использовании Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск как расположение установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство создания и манифеста редактирования)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) и [MageUI.exe (средство создания и манифеста редактирования, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP не поддерживается для установки приложений  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. Только для публикации приложений можно использовать протокол FTP. В следующей таблице приведены эти различия:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. Только для публикации приложений можно использовать протокол FTP. В следующей таблице приведены эти различия:  
   
-|Тип URL-адреса|Описание:|  
+|Тип URL-адреса|Описание|  
 |--------------|-----------------|  
 |FTP: / /|Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения с помощью этого протокола.|  
 |http://|Можно установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения с помощью этого протокола.|  
@@ -122,7 +120,7 @@ ms.lasthandoff: 12/22/2017
   
 -   При создании типа MIME с расширением «*», тип MIME «application/octet-stream», позволяющая тип разблокировать файл для загрузки файлов. (Однако блокируется файл, который не удается загрузить типы, например .aspx, .asmx).  
   
- Сведения о настройке типов MIME в Windows Server, обратитесь к статье базы знаний Майкрософт KB326965, «IIS 6.0 Does не обслуживать неизвестные типы MIME» в [http://support.microsoft.com/default.aspx?scid=kb;en-us;326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+ Сведения о настройке типов MIME в Windows Server, обратитесь к статье базы знаний Майкрософт KB326965, «IIS 6.0 Does не обслуживать неизвестные типы MIME» в [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Сопоставления типов содержимого  
  При публикации по протоколу HTTP, тип содержимого (также известные как тип MIME) для файла .application должно быть «приложения/x-ms приложение». Если у вас есть [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] установлен на сервере, это будет задано для вас автоматически. Если это не установлен, то необходимо создать ассоциацию MIME-тип для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] виртуального корня приложения (или всего сервера).  

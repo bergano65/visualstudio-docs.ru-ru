@@ -1,34 +1,30 @@
 ---
-title: "Вкладка \"файл подкачки\", диалоговое окно \"Свойства процесса\" | Документы Microsoft"
-ms.custom: 
+title: Вкладка "файл подкачки", диалоговое окно "Свойства процесса" | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cf35a2043764a4b174b5e45fcbe1bc83a72a52
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 1c5a0b5b498eacab4f53471530f51f8c59aed25e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Вкладка "Файл подкачки" диалогового окна "Свойства процесса"
 Используйте **файла подкачки** вкладку для просмотра сведений о файле подкачки процесса. Для отображения [диалоговое окно "Свойства процесса"](../debugger/process-properties-dialog-box.md), перемещение фокуса к [представление процессов](../debugger/processes-view.md) окна. Выберите любой узел процесса в дереве, а затем выберите **свойства** из **представление** меню.  
   
  Следующие параметры доступны на **файла подкачки** вкладки:  
   
-|Ввод|Описание:|  
+|Ввод|Описание|  
 |-----------|-----------------|  
 |**Байт файла подкачки**|Текущее количество страниц, которые использует этот процесс в файл подкачки. В файле подкачки хранятся страниц данных, используемой процессом, но не содержащихся в других файлах. Файл подкачки используется всеми процессами, и нехватка места в файле подкачки может привести к ошибкам при выполнении других процессов.|  
 |**Байт файла подкачки (пик)**|Максимальное число страниц, которые использовались в файле подкачки на этот процесс.|  

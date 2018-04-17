@@ -1,13 +1,10 @@
 ---
-title: "Защита приложений ClickOnce | Документы Microsoft"
-ms.custom: 
+title: Защита приложений ClickOnce | Документы Microsoft
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-clickonce-applications"></a>Защита приложений ClickOnce
 К приложению[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут применяться ограничения управления доступом для кода на платформе .NET Framework, позволяющие ограничить доступ кода к защищенным ресурсам и операциям. Важно понимать влияние управления доступом для кода, чтобы писать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] соответствующим образом. Для ограничения доступа приложение может использовать зоны с полным или частичным доверием, такие как Интернет и интрасеть.  
@@ -51,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
  При включении разрешения, не являющегося частью разрешения, устанавливаемого по умолчанию для зоны, из которой было развернуто приложение, пользователю будет предложено предоставить разрешение во время установки или обновления. Чтобы запретить вывод запросов, администратор системы может задать политику развертывания ClickOnce, которая определит конкретного издателя приложения в качестве доверенного источника. На компьютерах, на которых развернута эта политика, разрешения предоставляются автоматически, и для пользователя не выводятся запросы.  
   
- Ответственность за работу приложения с надлежащими разрешениями лежит на разработчике. Если приложение во время исполнения запрашивает разрешения за пределами зоны, может возникнуть исключение безопасности. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет отлаживать приложения в целевой зоне безопасности. и помогает разрабатывать защищенные приложения. Для получения дополнительной информации см. [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Ответственность за работу приложения с надлежащими разрешениями лежит на разработчике. Если приложение во время исполнения запрашивает разрешения за пределами зоны, может возникнуть исключение безопасности. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет отлаживать приложения в целевой зоне безопасности. и помогает разрабатывать защищенные приложения. Для получения дополнительной информации см. [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Дополнительные сведения об управлении доступом для кода и ClickOnce см. в статье [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md).  
   

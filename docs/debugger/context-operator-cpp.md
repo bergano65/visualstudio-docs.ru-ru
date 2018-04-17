@@ -1,13 +1,10 @@
 ---
-title: "Оператор контекста в отладчике (C++) | Документы Microsoft"
-ms.custom: 
+title: Оператор контекста в отладчике (C++) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.operators
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - debugging [C++], expressions
 - native expression evaluator
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cae22698a0200dc0971f45dbcfd7b28005f8f0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 918561fb4efcce71874c571863a10a40b15bbaa1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Оператор контекста в отладчике Visual Studio (C++)
 Оператор контекста в C++ можно использовать для уточнения имени переменной, выражения или расположения точки останова. С помощью оператора контекста можно указать имя из внешней области, чтобы это имя не оказалось перекрыто локальным именем.  

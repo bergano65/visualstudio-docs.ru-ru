@@ -1,29 +1,25 @@
 ---
-title: "IDiaSymbol::get_InlSpec | Документы Microsoft"
-ms.custom: 
+title: IDiaSymbol::get_InlSpec | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_InlSpec method
 ms.assetid: 30af6a2f-be84-429e-a96a-d0f9ed9343fb
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8b96e3a44ae1bb03cde58fc28af4871e80aaf4
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 5afff5c93067afcd887da0815e8cdfd2ff5fe606
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 Эта функция получает флаг, указывающий ли функция была помечена как встроенная (с помощью одного из [встроенным образом, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) атрибутов).  
@@ -48,7 +44,7 @@ HRESULT get_inlSpec(
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание:|  
+|Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  

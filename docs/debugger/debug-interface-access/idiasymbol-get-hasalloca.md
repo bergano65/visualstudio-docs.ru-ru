@@ -1,29 +1,25 @@
 ---
-title: "IDiaSymbol::get_hasAlloca | Документы Microsoft"
-ms.custom: 
+title: IDiaSymbol::get_hasAlloca | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasAlloca method
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fbd78644e28bbcf9fa7977128580385198445f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 171955d48365fc14a189e7d4a942c0e5a2101b0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
 Возвращает флаг, указывающий, является ли функция содержит вызов `alloca` (который используется для выделения памяти в стеке).  
@@ -46,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание:|  
+|Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  

@@ -1,25 +1,21 @@
 ---
-title: "Средство командной строки для захвата | Документы Microsoft"
-ms.custom: 
+title: Средство командной строки для захвата | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: f284fdbd4172c560c30aa3d7defb8a496e8e8e9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-line-capture-tool"></a>Программа командной строки для захвата
 DXCap.exe — это программа командной строки для захвата и воспроизведения данных диагностики графики. Она поддерживает все функциональные уровни Direct3D версий 10–12.  
@@ -169,13 +165,13 @@ DXCap.exe -e map
  **Пакет «Microsoft.BingMaps»:**  
  **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe C:\Program**  
  **Полное имя: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Имя: Microsoft.BingMaps**  
  **Издатель: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Вашингтон, США, C = US**  
  **Версия: 2.1.2914.1734**  
  **Можно будет запустить приложения:**  
  **Идентификатор: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **EXE-файла: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: нет**  
  ** AppSpec (Чтобы запустить): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** последняя строка выходных данных для каждого перечисленного приложения приводится команда, можно использовать для захвата графических данных из него.  
   

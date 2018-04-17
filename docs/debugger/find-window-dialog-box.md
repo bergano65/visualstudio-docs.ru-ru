@@ -1,26 +1,24 @@
 ---
-title: "Поиск-диалоговое окно | Документы Microsoft"
-ms.custom: 
+title: Поиск-диалоговое окно | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, finding windows
 - finding windows with Spy++
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fac3e7bfe487c3c8a8b99cdf9495d41e630a685
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 738c91b169817f8b5b6078b6886f55edce59ef1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-window-dialog-box"></a>Диалоговое окно "Поиск окна"
 Используйте это диалоговое окно для выбора окна и отображения его свойств или сообщений. Чтобы открыть это диалоговое окно предназначено выберите **Поиск окна** из **Spy** меню.  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
  **Класс**  
  Класс окна.  
   
- **Стиль**  
+ **стиль**  
  Стиль окна.  
   
  **Rect**  

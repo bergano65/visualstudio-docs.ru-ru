@@ -2,11 +2,8 @@
 title: 'Ошибка: Ошибка входа в систему рабочей группы удаленного | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.workgroup_remote_logon_failure
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - logon failure, remote debugging
 - remote debugging, logon failure
-caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ec2de37279e1f383751c9652aeeac74473c50f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 216f2f73a0e290e50a29390f9aae100b2eb8f335
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Ошибка: сбой удаленного входа в систему рабочей группы
 Текст сообщения об ошибке:  

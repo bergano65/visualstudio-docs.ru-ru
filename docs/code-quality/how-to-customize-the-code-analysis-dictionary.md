@@ -1,27 +1,25 @@
 ---
-title: "Как: Настройка словаря анализа кода | Документы Microsoft"
-ms.custom: 
+title: 'Как: Настройка словаря анализа кода | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2d60b2a187b7fccf4d5f564d9554badd5da9dec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
 Анализ кода используется встроенный словарь для проверки идентификаторов в код на наличие ошибок в других соглашениям об именовании, орфографии и грамматические регистр [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] рекомендации. Можно создать пользовательский словарь XML-файл для добавления, удаления или изменения термины, сокращения и акронимы встроенных словарь.  
@@ -75,7 +73,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Словарь или сокращений/CasingExceptions и сокращение](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a>Словарь и слов и распознается/слов  
+###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Словарь и слов и распознается/слов  
  Чтобы включить термин в список терминов, распознаваемых при анализе кода как правильно написанные, добавьте этот термин во внутренний текст элемента Dictionary/Words/распознаны и Word. Термины в словарь и слов/Recognized/Word элементы не учитывают регистр.  
   
  **Пример**  
@@ -110,7 +108,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Словарь или слова или нераспознанный или Word  
+###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Словарь или слова или нераспознанный или Word  
  Чтобы исключить термин из списка терминов, распознаваемых при анализе кода как правильно написанные, добавьте термин, чтобы исключить как внутренний текст элемента Dictionary/Words/нераспознано или Word. Условия в элементах Dictionary/Words/нераспознано/Word не учитывают регистр.  
   
  **Пример**  
@@ -145,7 +143,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Словарь или слова и не рекомендуется и выражение [@PreferredAlternate]  
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Словарь или слова и не рекомендуется и выражение [@PreferredAlternate]  
  Чтобы включить термин в список терминов, распознаваемых при анализе кода как устаревшие, добавьте этот термин во внутренний текст элемента словаря/слова или не рекомендуемые к использованию или выражение. Нерекомендуемый термин — это слово, которое написано правильно, но не должны использоваться.  
   
  Чтобы включить предлагаемый альтернативный термин в предупреждении, укажите альтернативного в атрибуте PreferredAlternate элемента Term. Если вы не хотите предложить альтернативный, можно оставить значение атрибута пустым.  
@@ -182,7 +180,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)  
   
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Словарь или слова или составного или выражение [@CompoundAlternate]  
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Словарь или слова или составного или выражение [@CompoundAlternate]  
  Во встроенном словаре некоторые термины определяются как единый отдельный термин, а не как составной термин. Чтобы включить термин в список терминов, распознаваемых при анализе кода как составное слово и укажите правильный регистр символов для термина, добавьте этот термин во внутренний текст элемента словаря/слова или составного или выражение. В атрибуте CompoundAlternate элемента Term укажите отдельные слова, составляющих составной термин с прописной первую букву каждого слова (стиле Pascal). Обратите внимание, что выражения, заданного во внутреннем тексте автоматически добавляется в словарь, слова или DiscreteExceptions список.  
   
 -   Устаревший термин в словарь и слов/элемент устарел или термин не учитывается регистр знаков.  
@@ -215,7 +213,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Словарь или слова или DiscreteExceptions или выражение  
+###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Словарь или слова или DiscreteExceptions или выражение  
  Чтобы исключить термин в список терминов, распознаваемых при анализе кода как отдельный, отдельное слово термин установленном правила определения регистра для составных слов, добавьте термин во внутренний текст элемента словаря/Words/DiscreteExceptions/Term. Термин в словарь и слов/DiscreteExceptions/выражение элемента не учитывает регистр.  
   
  **Пример**  
@@ -240,7 +238,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Словарь или сокращений/CasingExceptions и сокращение  
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Словарь или сокращений/CasingExceptions и сокращение  
  Для включения в список терминов, которые анализа кода определяет, как написано правильно аббревиатура и указать, как сокращение термин установленном регистр правила для составных слов, добавьте этот термин во внутренний текст элемента словаря или сокращений/CasingExceptions / Элемент acronym. Сокращение в элемент словаря или сокращений/CasingExceptions/Acronym учитывается регистр.  
   
  **Пример**  
@@ -263,7 +261,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
-##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Для применения пользовательского словаря в проект  
+##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Для применения пользовательского словаря в проект  
   
 1.  В **обозревателе решений**, используйте один из следующих процедур:  
   

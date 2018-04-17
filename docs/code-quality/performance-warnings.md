@@ -1,13 +1,10 @@
 ---
-title: "Предупреждения о производительности | Документы Microsoft"
-ms.custom: 
+title: Предупреждения о производительности | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
@@ -16,24 +13,23 @@ helpviewer_keywords:
 - performance, warnings
 - managed code analysis warnings, performance warnings
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf04adf4589f0809db6a2de2bedcc0efd0f6fcb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5148fca78362625c2283f680b5bddf31cdf5d22c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="performance-warnings"></a>предупреждения производительности
 Предупреждения производительности поддерживают высокой производительности библиотек и приложений.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA1800: не выполняйте лишних приведений](../code-quality/ca1800-do-not-cast-unnecessarily.md)|Повторяющиеся приведения снижают производительность, особенно если приведения выполняются в компактных операторах итераций.|  
 |[CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)|Сигнатура метода включает параметр, не использующийся в основной части метода.|  

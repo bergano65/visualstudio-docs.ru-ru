@@ -1,29 +1,25 @@
 ---
-title: "IDiaFrameData::get_program | Документы Microsoft"
-ms.custom: 
+title: IDiaFrameData::get_program | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaFrameData::get_program method
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10d5d331c4308586485ea77824cda4864c6ee943
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc770db5f5cf16d9870e05ada01e235206b94078
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Извлекает строку программы, которая используется для вычисления перед обращением к текущей функции набор регистров.  
@@ -44,7 +40,7 @@ HRESULT get_program (
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Строка программы является последовательность макросы, интерпретируются для установления пролога. Например, кадр стека обычно может использовать строку программы `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Формат — польский обратную нотацию, где операторы следуют операндов. `T0`Представляет временной переменной в стеке. В этом примере выполняет следующие действия:  
+ Строка программы является последовательность макросы, интерпретируются для установления пролога. Например, кадр стека обычно может использовать строку программы `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Формат — польский обратную нотацию, где операторы следуют операндов. `T0` Представляет временной переменной в стеке. В этом примере выполняет следующие действия:  
   
 1.  Переместить содержимое регистра `ebp` для `T0`.  
   

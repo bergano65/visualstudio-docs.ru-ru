@@ -1,23 +1,20 @@
 ---
-title: "Данные класса наследования (конструктор O-R) | Документы Microsoft"
-ms.custom: 
+title: Данные класса наследования (конструктор O-R) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c881f70b966a4a0b4d5bf173bcac4569d6a9c1ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a27b3978e1cfad5cb2fefae63104dc51c2efdc50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-class-inheritance-or-designer"></a>Наследование классов данных (конструктор O/R)
 Подобно другим объектам, [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы могут использовать наследование и выводиться из других классов. В коде можно определить отношения наследования между объектами, объявляя, что один класс наследует от другого. В базе данных, отношения наследования создаются несколькими способами. [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах.  
@@ -38,7 +35,7 @@ ms.lasthandoff: 12/22/2017
   
  Создание модели объекта, который использует наследование и соответствует реляционным данным, может быть несколько запутанным. В этом разделе содержатся сведения об основных концепциях и отдельных свойствах, которые требуются для конфигурирования наследования. В следующих подразделах представлено более четкое объяснение того, как конфигурировать наследование при помощи [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Как: Настройка наследования с помощью реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Описывает способы конфигурирования классов сущностей, использующих наследование одной таблицы при помощи [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].|  
 |[Пошаговое руководство: Создание классов LINQ to SQL, используя наследование одиночной таблицы (конструктор O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Предоставляет пошаговые инструкции по конфигурированию классов сущностей, использующих наследование одной таблицы, при помощи [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].|  

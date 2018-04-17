@@ -1,12 +1,10 @@
 ---
-title: "Справочник по API неуправляемым ClickOnce | Документы Microsoft"
-ms.custom: 
+title: Справочник по API неуправляемым ClickOnce | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: cplusplus
-ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Справочник по неуправляемым интерфейсам API ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]неуправляемых открытых API из библиотеки dfshim.dll.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] неуправляемых открытых API из библиотеки dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
  Очищает или удаление всех подключенных приложений из [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] кэш приложения.  
@@ -46,7 +44,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание:|Тип|  
+|Параметр|Описание|Тип|  
 |---------------|-----------------|----------|  
 |`pcwzActivationUrl`|Указатель на `ActivationURL`.|LPCWSTR|  
 |`pcwzPathToDeploymentManifest`|Указатель на `PathToDeploymentManifest`.|LPCWSTR|  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение HRESULT, представляющее тип сбоя. Возвращает HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER), если буфер слишком мал.  
   
 ### <a name="remarks"></a>Примечания  
- Указатели не должны иметь значение null. `pcwzActivationUrl`и `pcwzPathToDeploymentManifest` не может быть пустым.  
+ Указатели не должны иметь значение null. `pcwzActivationUrl` и `pcwzPathToDeploymentManifest` не может быть пустым.  
   
  Это вызывающим Очистка URL-адрес активации. Например это касается добавления escape-символов где они нужны или удаления строки запроса.  
   
@@ -74,7 +72,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="parameters"></a>Параметры  
   
-|Параметр|Описание:|Тип|  
+|Параметр|Описание|Тип|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|Указатель NULL нулевым байтом строка, содержащая URL-адрес манифеста развертывания.|LPCWSTR|  
 |`data`|Зарезервировано для будущего использования. Должен иметь значение NULL.|LPVOID|  

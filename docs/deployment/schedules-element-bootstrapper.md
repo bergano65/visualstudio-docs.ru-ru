@@ -2,12 +2,9 @@
 title: '&lt;Расписания&gt; элемент (загрузчик) | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 5
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2b3cba1fcb5ac2d38b08383c8906adb2037e9651
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Расписания&gt; элемент (загрузчик)
 `Schedules` Элемент содержит `Schedule` элементы, которые определяют времена команд, определенных с `Command` элемент должен выполняться.  
@@ -51,7 +47,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="schedule"></a>Расписание  
  `Schedule` Элемент является дочерним элементом `Schedules` элемента. Объект `Schedules` элемент должен иметь по крайней мере один `Schedule` элемента.  
   
- `Schedule`имеет следующий атрибут.  
+ `Schedule` имеет следующий атрибут.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  

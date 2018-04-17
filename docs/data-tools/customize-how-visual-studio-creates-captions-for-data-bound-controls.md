@@ -1,28 +1,25 @@
 ---
-title: "Настроить, как Visual Studio создает заголовки для элементов управления с привязкой к данным | Документы Microsoft"
-ms.custom: 
+title: Настроить, как Visual Studio создает заголовки для элементов управления с привязкой к данным | Документы Microsoft
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Настроить, как Visual Studio создает заголовки для элементов управления с привязкой к данным
 При перетаскивании элементов из [окно "Источники данных"](add-new-data-sources.md) в конструктор, особое внимание вступает в действие: имена столбцов в названия преобразуются в более удобном для чтения строку, когда два или более слов признаны объединенные вместе. Можно настроить способ, в котором были созданы эти метки, задав **SmartCaptionExpression**, **SmartCaptionReplacement**, и **SmartCaptionSuffix** значения в **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data конструкторы** раздел реестра.  
@@ -34,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 Следующая таблица описывает значения реестра, которые управляют названиями элементов управления.  
   
-|Элемент реестра|Описание:|  
+|Элемент реестра|Описание|  
 |-------------------|-----------------|  
 |**SmartCaptionExpression**|Регулярное выражение, используемое для формирования шаблонов.|  
 |**SmartCaptionReplacement**|Формат для отображения всех групп, в виде **SmartCaptionExpression**.|  
@@ -44,14 +41,14 @@ ms.lasthandoff: 12/22/2017
   
 |Элемент реестра|Значение по умолчанию|Объяснение|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Соответствует символу нижнего регистра, за которым следует символ верхнего регистра или символ подчеркивания.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Соответствует символу нижнего регистра, за которым следует символ верхнего регистра или символ подчеркивания.|  
 |**SmartCaptionReplacement**|$1 $2|$1 представляет все символы в круглые скобки первого выражения соответствия, а $2 — все символы в виде второго круглые скобки. Замена — первое совпадение, пробел и второе соответствие.|  
-|**SmartCaptionSuffix**|:|Представляет знак, добавляемый к возвращаемой строки. Например, если заголовок является `Company Name`, суффикс превращает ее`Company Name:`|  
+|**SmartCaptionSuffix**|:|Представляет знак, добавляемый к возвращаемой строки. Например, если заголовок является `Company Name`, суффикс превращает ее `Company Name:`|  
   
 > [!CAUTION]
 > Вам следует очень внимательно, при выполнении действий в редакторе реестра. Создайте резервную копию реестра перед его изменением. Неправильное использование редактора реестра может привести к серьезным проблемам, которые могут потребовать переустановки операционной системы. Корпорация Майкрософт не гарантирует проблем, вызванных неправильным использованием редактора реестра. Ответственность за использование редактора реестра лежит на пользователе.  
 >   
->  В следующей статье базы знаний содержатся инструкции по резервное копирование, изменение и восстановлении реестра: [Описание системного реестра Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  В следующей статье базы знаний содержатся инструкции по резервное копирование, изменение и восстановлении реестра: [Описание системного реестра Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Чтобы изменить поведение смарт-субтитров из окна «Источники данных»  
   

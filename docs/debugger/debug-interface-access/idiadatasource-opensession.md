@@ -1,29 +1,25 @@
 ---
-title: "IDiaDataSource::openSession | Документы Microsoft"
-ms.custom: 
+title: IDiaDataSource::openSession | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaDataSource::openSession method
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b7cfaf3e2cf7331576ca79b9820bafb761fc44c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 701b3dda0341544e5d94a2b0a9e8ddf8f55d33f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Открывается сеанс для выполнения запросов к символы.  
@@ -43,7 +39,7 @@ HRESULT openSession (
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) объекта не ранее был инициализирован с помощью источника символы.|  
 |E_INVALIDARG|Недопустимый `ppSession` параметра.|  
@@ -52,7 +48,7 @@ HRESULT openSession (
 ## <a name="remarks"></a>Примечания  
  Этот метод открывает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект для источника данных.  
   
- `IDiaSession`объекты реализации запросов в источник данных. Сеанс управляет одно адресное пространство для каждого набора символов отладки. Если файл .exe или .dll, описываемый символы источника данных активного в нескольких адресов в диапазоне (например, если у нескольких процессов загружены), то следует использовать один сеанс для каждого из диапазонов адресов.  
+ `IDiaSession` объекты реализации запросов в источник данных. Сеанс управляет одно адресное пространство для каждого набора символов отладки. Если файл .exe или .dll, описываемый символы источника данных активного в нескольких адресов в диапазоне (например, если у нескольких процессов загружены), то следует использовать один сеанс для каждого из диапазонов адресов.  
   
 ## <a name="example"></a>Пример  
   

@@ -1,27 +1,25 @@
 ---
-title: "Развертывать приложения UWP из Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Развертывать приложения UWP из Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Развертывать приложения UWP из Visual Studio
   
@@ -39,14 +37,14 @@ ms.lasthandoff: 01/19/2018
   
 -   Развертывание приложения, для которого будет выполнена отладка, при его запуске другим приложением или методом.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Развертывание приложений UWP  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Развертывание приложений UWP  
  Ручное развертывание приложения не вызывает никаких сложностей:  
   
 1.  Если вы выполняете развертывание на удаленное устройство, укажите имя или IP-адрес устройства на странице свойств для запускаемого проекта приложения. (Необходимые для этого действия перечислены ниже в этом разделе.)  
   
 2.  На панели инструментов отладчика Visual Studio выберите цель развертывания в раскрывающемся списке рядом с кнопкой **Начать отладку** .  
   
-     ![Run on Local Machine](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
+     ![Запуск на локальном компьютере](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
   
 3.  В меню **Сборка** выберите пункт **Развернуть**.  
   
@@ -81,7 +79,7 @@ ms.lasthandoff: 01/19/2018
   
  **Указание удаленного устройства на странице проекта JavaScript или Visual C++**  
   
- ![C# 43; &#43; свойства для удаленной отладки проекта](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; свойства для удаленной отладки проекта](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Выберите **Удаленный отладчик** из списка **Отладчик для запуска** .  
   

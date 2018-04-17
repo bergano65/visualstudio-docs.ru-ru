@@ -2,12 +2,9 @@
 title: Отладка HTML и CSS в приложениях UWP | Документы Microsoft
 ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 26cf420c56b49979d2fa2a7a5ea11c4752b3cf5e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Отладка HTML и CSS в приложениях UWP в Visual Studio
   
@@ -165,7 +161,7 @@ ms.lasthandoff: 04/10/2018
   
 11. В окне проводника DOM выберите элемент DIV для раздела с идентификатором `"fView"`. Для просмотра и выбора правильного элемента DIV используйте клавиши со стрелкой. (Клавиши со стрелкой вправо можно просмотреть дочерние элементы элемента.)  
   
-     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![Проводник DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Можно также выбрать элемент DIV в левом нижнем углу окна консоли JavaScript, введя `select(fView)` на >> входной строке и нажмите клавишу ВВОД.  

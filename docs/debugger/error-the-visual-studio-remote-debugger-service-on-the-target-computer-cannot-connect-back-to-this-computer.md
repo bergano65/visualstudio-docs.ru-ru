@@ -2,11 +2,8 @@
 title: 'Ошибка: Службе удаленного отладчика Visual Studio на целевом компьютере не удается подключиться к этому компьютеру | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
@@ -15,17 +12,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4553bceb8757b49c6d21f4bbe85e47f90e5b4dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0cbf99ebb249cc6a1bddf81be5177be4c537cf56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Ошибка: службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру
 Эта ошибка означает, что служба удаленного отладчика Visual Studio запущена под управлением учетной записи пользователя, которая не может пройти проверку подлинности при попытке подключиться к компьютеру, с которого происходит отладка.  

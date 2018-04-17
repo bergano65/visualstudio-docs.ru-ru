@@ -1,12 +1,10 @@
 ---
-title: "CA2116: Методы APTCA должны вызывать только методы APTCA | Документы Microsoft"
-ms.custom: 
+title: 'CA2116: Методы APTCA должны вызывать только методы APTCA | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: методы APTCA должны вызывать только методы APTCA
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  Если в полностью доверенной сборке присутствует атрибут APTCA, и она выполняет код в другой сборке, для которой не разрешены частично доверенные вызовы, возможные уязвимости безопасности. Если два метода `M1` и `M2` удовлетворять следующим условиям, злоумышленники могут использовать метод `M1` Чтобы обойти запрос ссылок неявное полного доверия, который защищает `M2`:  
   
--   `M1`объявляется открытый метод в сборке с полным доверием, помеченной атрибутом APTCA.  
+-   `M1` объявляется открытый метод в сборке с полным доверием, помеченной атрибутом APTCA.  
   
--   `M1`вызывает метод `M2` за пределами `M1`в сборке.  
+-   `M1` вызывает метод `M2` за пределами `M1`в сборке.  
   
 -   `M2`его сборка не имеет атрибута APTCA и, таким образом, не должна выполняться пользователем или от имени частично доверенным вызывающим.  
   

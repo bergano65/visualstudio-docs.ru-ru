@@ -1,13 +1,10 @@
 ---
-title: "Предупреждения глобализации | Документы Microsoft"
-ms.custom: 
+title: Предупреждения глобализации | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.globalizationrules
 helpviewer_keywords:
@@ -16,24 +13,23 @@ helpviewer_keywords:
 - globalization [Visual Studio], warnings
 - managed code analysis warnings, globalization warnings
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1de7a644cd22a05ab10001a61bb91b5374211915
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 07f53a5d975b679d8431481f152b2655f097822d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalization-warnings"></a>Предупреждения глобализации
 Предупреждения глобализации поддерживают международные библиотеки и приложения.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA1300: укажите MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md)|Чтобы окно сообщения для языков, в которых используется порядок чтения справа налево, отображалось правильно, методу Show следует передать члены RightAlign и RtlReading перечисления MessageBoxOptions.|  
 |[CA1301: не следует допускать повторяющихся сочетаний клавиш быстрого доступа](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Клавиша доступа, также называемая клавишей быстрого доступа, обеспечивает клавиатурный доступ к элементу управления с помощью клавиши ALT. Если несколько элементов управления имеют дублирующиеся клавиши доступа, поведение клавиши доступа определено нечетко.|  

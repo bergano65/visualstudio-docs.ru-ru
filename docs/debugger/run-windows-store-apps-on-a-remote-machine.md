@@ -1,28 +1,26 @@
 ---
-title: "Запускайте приложения UWP на удаленном компьютере | Документы Microsoft"
-ms.custom: 
+title: Запускайте приложения UWP на удаленном компьютере | Документы Microsoft
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Запускайте приложения UWP на удаленном компьютере в Visual Studio
   
@@ -51,11 +49,11 @@ ms.lasthandoff: 01/19/2018
 > [!WARNING]
 >  Не имеет безопасности сети, при выборе режима проверки подлинности **Universal (небезопасного протокола)** или **нет**. Выберите эти режимы только в том случае, если вы уверены, что сеть не риску вредоносного или опасного трафика.  
   
-##  <a name="BKMK_DirectConnect"></a>Подключение напрямую USB-кабелю 
+##  <a name="BKMK_DirectConnect"></a> Подключение напрямую USB-кабелю 
 
 В Windows 10, можно развернуть на USB-устройством, выбрав **устройства** вместо **удаленный компьютер** как целевой объект развертывания (это можно сделать в **Стандартная** инструментов или на странице свойств отладки).
 
-##  <a name="BKMK_ConnectVS"></a>Настройка проекта Visual Studio для удаленной отладки  
+##  <a name="BKMK_ConnectVS"></a> Настройка проекта Visual Studio для удаленной отладки  
  Удаленное устройство для подключения указывается в свойствах проекта. Процедура различается в зависимости от языка программирования. Можно ввести сетевое имя удаленного устройства или его можно выбрать из **удаленного подключения** диалоговое окно.  
   
  ![Выберите диалоговое окно подключения к удаленному отладчику](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +63,7 @@ ms.lasthandoff: 01/19/2018
 > [!TIP]
 >  При возникновении проблем с подключением к удаленному устройству нужно попытаться ввести IP-адрес устройства. Чтобы определить IP-адрес устройства, откройте командное окно и введите **ipconfig**. IP-адрес указан в виде **IPv4 Address**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Выбор удаленного устройства для проектов C# и Visual Basic  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Выбор удаленного устройства для проектов C# и Visual Basic  
   
 1.  Выберите имя проекта в обозревателе решений, а затем щелкните **Свойства** в контекстном меню.  
   
@@ -77,7 +75,7 @@ ms.lasthandoff: 01/19/2018
 
     ![Свойства управляемого проекта для удаленной отладки](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Выбор удаленного устройства для проектов JavaScript и C++  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Выбор удаленного устройства для проектов JavaScript и C++  
   
 1.  Выберите имя проекта в обозревателе решений, а затем щелкните **Свойства** в контекстном меню.  
   
@@ -87,19 +85,19 @@ ms.lasthandoff: 01/19/2018
   
 4.  Введите сетевое имя удаленного устройства в поле **Имя компьютера** или щелкните в этом поле стрелку вниз, чтобы выбрать устройство в диалоговом окне **Выбрать подключение к удаленному отладчику** .  
 
-    ![C# 43; &#43; свойства для удаленной отладки проекта](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43; свойства для удаленной отладки проекта](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>Загрузите и установите инструменты удаленной отладки (обновление до создатели)
+## <a name="BKMK_download"></a> Загрузите и установите инструменты удаленной отладки (обновление до создатели)
 
 Если вы используете pre создатель обновления версии Windows 10, затем выполните следующие действия. В противном случае этот раздел можно пропустить.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Настройка удаленного отладчика
+### <a name="BKMK_setup"></a> Настройка удаленного отладчика
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>Запуск сеанса удаленной отладки  
+##  <a name="BKMK_RunRemoteDebug"></a> Запуск сеанса удаленной отладки  
  Запуск, остановка и навигация по сеансу удаленной отладки осуществляется так же, как в локальном сеансе. В версиях обновления pre разработчика Windows 10 убедитесь, что запущен монитор удаленной отладки на удаленном устройстве.  
   
  После этого в меню **Отладка** выберите **Начать отладку** (клавиша F5). Проект перекомпилируется, развертывается и запускается на удаленном устройстве. Отладчик приостанавливает выполнение в точках останова, что позволяет выполнить шаги с заходом, шаги с обходом и шаги с выходом в коде. Выберите **Остановить отладку** , чтобы завершить сеанс отладки и закрыть удаленное приложение.

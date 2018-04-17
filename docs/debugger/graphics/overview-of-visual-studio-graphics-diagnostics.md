@@ -1,23 +1,20 @@
 ---
-title: "Обзор диагностики графики Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Обзор диагностики графики Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 9981fe267420a6bc364e23ab5d8e058c87089b98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Обзор диагностики графики Visual Studio
 Visual Studio *диагностики графики* — это набор инструментов для регистрации и последующего анализа проблем с производительностью и отрисовкой в приложениях Direct3D. Диагностику графики можно использовать для приложений, которые выполняются локально на компьютере под Управлением Windows или на удаленном ПК или устройства.  
@@ -123,4 +120,4 @@ Visual Studio *диагностики графики* — это набор ин
   
 ## <a name="see-also"></a>См. также  
  [Средство командной строки для захвата](command-line-capture-tool.md)   
- [HLSL Debugger](hlsl-shader-debugger.md)
+ [Отладчик HLSL](hlsl-shader-debugger.md)

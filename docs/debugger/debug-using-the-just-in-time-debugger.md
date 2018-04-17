@@ -1,26 +1,24 @@
 ---
-title: "Отладка с помощью JIT-отладчик | Документы Microsoft"
-ms.custom: 
+title: Отладка с помощью JIT-отладчик | Документы Microsoft
+ms.custom: ''
 ms.date: 07/06/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1bfaed6a788d61f239fb8fb69095549fe5c20d6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Отладка с помощью JIT-отладчик в Visual Studio
 Just-In-Time отладка автоматически запускает Visual Studio при возникновении исключения или неустранимой ошибки в программе, на котором выполняется вне Visual Studio. Это позволяет тестировать приложение, не запуская Visual Studio и начинать отладку в Visual Studio при возникновении проблемы.
@@ -30,7 +28,7 @@ Just-In-Time отладка автоматически запускает Visual
 > [!TIP] 
 > Если требуется узнать, как реагировать на только время диалоговое окно отладчика см. в разделе [в этом разделе](../debugger/just-in-time-debugging-in-visual-studio.md).
 
-##  <a name="BKMK_Enabling"></a>Включение или отключение непосредственно в время отладки  
+##  <a name="BKMK_Enabling"></a> Включение или отключение непосредственно в время отладки  
 Можно включить или отключить непосредственно времени отладки из Visual Studio **Сервис > Параметры** диалоговое окно.
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Включение или отключение JIT–отладки  
@@ -55,7 +53,7 @@ JIT-отладка может оставаться включенной даже
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Отключение JIT-отладки путем редактирования реестра  
   
-1.  На **запустить** меню, найдите и запустите`regedit.exe`  
+1.  На **запустить** меню, найдите и запустите `regedit.exe`  
   
 2.  В **редактора реестра** окна, найдите и удалите следующие параметры реестра:  
   

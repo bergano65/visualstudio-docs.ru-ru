@@ -1,28 +1,26 @@
 ---
-title: "Предупреждения криптографии | Документы Microsoft"
-ms.custom: 
+title: Предупреждения криптографии | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5270a9b2cb2801d80dc9a087821e73d6c54bfe1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ed273485df4e8bbd3b76dfd39fa38ec697052bb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cryptography-warnings"></a>Предупреждения криптографии
 Предупреждения криптографии поддерживают более безопасные библиотеки и приложения посредством правильного использования криптографии. Эти предупреждения помогают устранить уязвимости в программе. Если отключить любое из этих предупреждений, следует четко обозначить в коде причину этого отключения, а также оповестить сотрудника, отвечающего за безопасность проекта разработки.  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA5350: не используйте ненадежные алгоритмы шифрования](../code-quality/ca5350-do-not-use-weak-cryptographic-algorithms.md)|Ненадежные алгоритмы шифрования и функции хэширования еще используются сегодня по ряду причин, но они не должны использоваться для обеспечения конфиденциальности или целостности данных, которые они защищают.        Это правило срабатывает при обнаружении в коде алгоритмов TripleDES, SHA1 или RIPEMD160.|  
 |[CA5351: не используйте ослабленные алгоритмы шифрования](../code-quality/ca5351-do-not-use-broken-cryptographic-algorithms.md)|Ослабленные алгоритмы шифрования не считаются безопасными, и их использование настоятельно не рекомендуется. Это правило срабатывает при обнаружении в коде хэш-алгоритма MD5 или алгоритмов шифрования RC2 или DES.|

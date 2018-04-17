@@ -2,26 +2,22 @@
 title: Состояние графики | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
-caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de0874a605325f3f61547a202701eeeeb4d5a24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f62e38a041d51136ea32bc94270445af7008eb2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-state"></a>Состояние графики
 Окно «Состояние» в диагностике графики Visual Studio помогает понять состояние графики, активное на момент возникновения текущего события, такого как вызов Draw.  
@@ -32,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="state-views"></a>Представления состояний  
  Вы можете просмотреть таблицу состояний несколькими разными способами:  
   
-|Просмотр|Описание:|  
+|Просмотр|Описание|  
 |----------|-----------------|  
 |Представление входного состояния API|Это представление представляет состояние в виде расположения объектов Direct3D, составляющих данное состояние.|  
 |Представление входного логического состояния|Это представление представляет состояние в виде логической схемы, которая не отражает объекты Direct3D, составляющие данное состояние.|  

@@ -1,37 +1,33 @@
 ---
-title: "BuildProjectOnLoad (шаблоны Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: BuildProjectOnLoad (шаблоны Visual Studio) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b3fc7842e71ff1bff3bd3e362f0c12afcf4292f
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (шаблоны Visual Studio)
 Указывает, следует ли для построения проекта сразу после его создания.  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateData >  
- \<BuildProjectOnLoad>  
+ \<BuildProjectOnLoad >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,7 +46,7 @@ ms.lasthandoff: 02/01/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
@@ -60,7 +56,7 @@ ms.lasthandoff: 02/01/2018
  Этот текст должен быть либо `true` или `false`, показывающее, постройте проект, сразу после его создания.  
   
 ## <a name="remarks"></a>Примечания  
- `BuildProjectOnLoad`— Это необязательный атрибут. Значение по умолчанию — `false`.  
+ `BuildProjectOnLoad` — Это необязательный атрибут. Значение по умолчанию — `false`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  

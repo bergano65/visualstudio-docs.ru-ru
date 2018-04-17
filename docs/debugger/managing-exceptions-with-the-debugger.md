@@ -1,13 +1,10 @@
 ---
-title: "Управление исключениями с помощью отладчика Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Управление исключениями с помощью отладчика Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 063f4581a741325ce34022b731322cf0a4e37e39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -145,7 +141,7 @@ ms.lasthandoff: 01/29/2018
   
  ![Восстановить значения по умолчанию параметры исключения](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Указать отладчику продолжать на обработанные пользователем исключения  
+##  <a name="BKMK_UserUnhandled"></a> Указать отладчику продолжать на обработанные пользователем исключения  
  При отладке кода .NET или JavaScript с параметром [Just My Code](../debugger/just-my-code.md)можно указать отладчику не прерывать выполнение при возникновении исключений, которые не обрабатываются в пользовательском коде, но обрабатываются в другом месте.  
   
 1.  В окне **Параметры исключений** откройте контекстное меню, щелкнув в окне правой кнопкой мыши, а затем затем выберите команду **Показать столбцы**. (Если параметр **Только мой код**отключен, данная команда не отображается.)  
@@ -156,7 +152,7 @@ ms.lasthandoff: 01/29/2018
   
  Например, веб-приложения ASP.NET обрабатывают исключения путем их преобразования в код состояния HTTP 500 ([Обработка исключений в API ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), что может затруднить определение источника исключения. В следующем примере пользовательский код вызывает метод `String.Format()` , который создает <xref:System.FormatException>. Выполнение прерывается следующим образом.  
   
- ![разрывы на &#45;пользователя; исключение unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![прерывает выполнение пользователя&#45;исключение unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Добавление и удаление исключений  
  Исключения можно добавлять и удалять. Можно удалить любой тип исключения из любой категории. Для этого нужно выбрать исключение и нажать кнопку **Удалить** (знак «минус») на панели инструментов **Параметры исключений** либо щелкнуть исключение правой кнопкой мыши и в контекстном меню выбрать команду **Удалить** . Удаление исключения аналогично снятию флажка для исключения и заключается в том, что при возникновении исключения отладчик продолжит выполнение.  
@@ -190,7 +186,7 @@ public class GenericException<T> : Exception
 Можно задать условия для исключения в **параметры исключений** диалоговое окно. В настоящее время поддерживаются этим условиям относятся имена модуля для включения или исключения для исключения. Установив имена модулей в качестве условий, вы можете прервать для исключения только в модулях определенного кода или не требуется выполнять критические на конкретных модулей.
 
 > [!NOTE]
-> Добавление условий в исключение новые возможности[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Добавление условий в исключение новые возможности [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Чтобы добавить условные исключения, выберите **изменить условие** значок в диалоговом окне параметры исключений или щелкните правой кнопкой мыши исключение и выберите **изменения условий**.
 

@@ -1,12 +1,10 @@
 ---
-title: "CA2233: Операции не должно быть переполнений | Документы Microsoft"
-ms.custom: 
+title: 'CA2233: Операции не должно быть переполнений | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OperationsShouldNotOverflow
 - CA2233
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 35fafef574f7d72d54e4e9c44b1b1091ccb0de7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: в операциях не должно быть переполнений
 |||  
@@ -47,8 +45,8 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="example-of-a-violation"></a>Пример нарушения  
   
-### <a name="description"></a>Описание:  
- В следующем примере метод управляет целым числом, нарушающий это правило. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]требуется **удалить** целое число со знаком переполнения возможность отключена для этой срабатывание.  
+### <a name="description"></a>Описание  
+ В следующем примере метод управляет целым числом, нарушающий это правило. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] требуется **удалить** целое число со знаком переполнения возможность отключена для этой срабатывание.  
   
 ### <a name="code"></a>Код  
  [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
@@ -86,7 +84,7 @@ End Sub
   
 ## <a name="fix-with-input-parameter-validation"></a>Исправить путем проверки входного параметра  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере предыдущее нарушение устраняется путем проверки входного значения.  
   
 ### <a name="code"></a>Код  
@@ -95,7 +93,7 @@ End Sub
   
 ## <a name="fix-with-a-checked-block"></a>Исправить с помощью проверенного блока  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере предыдущее нарушение устраняется путем заключения операции в проверенный блок. Если операция вызывает переполнение, <xref:System.OverflowException?displayProperty=fullName> будет создано.  
   
  Обратите внимание, что проверенные блоки не поддерживаются в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  

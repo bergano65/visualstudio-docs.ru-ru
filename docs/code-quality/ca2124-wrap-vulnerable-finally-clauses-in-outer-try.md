@@ -1,12 +1,10 @@
 ---
-title: "CA2124: Помещайте уязвимые предложения finally во внешний блок try | Документы Microsoft"
-ms.custom: 
+title: 'CA2124: Помещайте уязвимые предложения finally во внешний блок try | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2124
 - WrapVulnerableFinallyClausesInOuterTry
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2124
 - WrapVulnerableFinallyClausesInOuterTry
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 567c519b09042dbd0bba447d4631544dd78ca1ad
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: aea14934a8148a6123d5d3463378035cde5e32d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: помещайте уязвимые предложения finally во внешний блок try
 |||  
@@ -50,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="pseudo-code-example"></a>Пример псевдокода  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В приведенном ниже псевдокоде показан шаблон, обнаруживаемый этим правилом.  
   
 ### <a name="code"></a>Код  

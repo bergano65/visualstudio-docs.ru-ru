@@ -1,12 +1,10 @@
 ---
-title: "Отладка LINQ | Документы Microsoft"
-ms.custom: 
+title: Отладка LINQ | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b08f98e7073ad1c0a42d596424d544d5624f272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-linq"></a>Отладка LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с некоторыми ограничениями поддерживает отладку кода встроенного языка запросов (LINQ). Большинство возможностей отладки работают с операторами LINQ, включая пошаговое выполнение, установку точек останова и просмотр результатов в окнах отладчика. В этом разделе описаны основные ограничения для отладки LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Просмотр результатов оператора LINQ  
+##  <a name="BKMK_ViewingLINQResults"></a> Просмотр результатов оператора LINQ  
  Можно просмотреть результаты инструкции LINQ с помощью окна подсказок, окна "Контрольные значения" и диалогового окна "Быстрая проверка". При работе в окне исходного кода, можно ненадолго остановить указатель мыши на запросе в окне исходного кода для того, чтобы появилась подсказка. Можно скопировать переменную LINQ и вставить её в окно "Контрольные значения" или диалоговое окно "Быстрая проверка".  
   
  В LINQ запрос вычисляется не при его создании или объявлении, а только при использовании. Таким образом, запросу не присваивается значение до тех пор, пока оно не будет вычислено. Полное описание создания и вычисления запросов см. в разделе [введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) или [написание вашего первого запроса LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Вычисление запроса может привести к побочным эффектам, таким как изменение значений данных или состояния программы. Не все запросы имеют побочные эффекты. Чтобы определить, может ли запрос быть безопасно вычислен без побочных эффектов, необходимо понимать код, который реализует запрос.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Пошаговое выполнение и LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Пошаговое выполнение и LINQ  
  Пошаговое выполнение при отладке кода LINQ имеет ряд особенностей, о которых следует знать.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -108,7 +106,7 @@ End Function
   
  Измененный запрос вызывает функцию `IsEven` при каждом проходе через `items`. Чтобы проверить, выполняется ли для каждого элемента заданное условие, можно использовать окна отладчика или пройти по коду в пошаговом режиме в `IsEven`. Предикат в этом примере достаточно прост. Тем не менее, при отладке более сложных предикатов этот метод может оказаться весьма полезным.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Изменить и продолжить для LINQ не поддерживается  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Изменить и продолжить для LINQ не поддерживается  
  Изменить и продолжить поддерживает изменения в запросах LINQ с ограничениями. Дополнительные сведения см. в разделе [EnC поддерживаемые изменения](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>См. также  

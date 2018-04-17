@@ -1,12 +1,10 @@
 ---
-title: "Просмотреть значения в подсказках в редакторе кода | Документы Microsoft"
-ms.custom: 
+title: Просмотреть значения в подсказках в редакторе кода | Документы Microsoft
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DataTips
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0c098e4b4ae94c5145a193e1903aa04a0eb757b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Просмотр значений данных в подсказках в редакторе кода
 Подсказки данных предоставляют удобный способ просмотра сведений о переменных в программе во время отладки. Подсказки данных работают только в режиме прерывания и только с переменными, которые находятся в пределах текущей области выполнения.
@@ -75,7 +73,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Чтобы развернуть переменную для просмотра ее элементов  
   
--   В подсказке по данным, поместите указатель мыши  **+**  входа, которая предшествует имени переменной.  
+-   В подсказке по данным, поместите указатель мыши **+** входа, которая предшествует имени переменной.  
   
     Переменная развернется, отобразив свои элементы в виде дерева.
 

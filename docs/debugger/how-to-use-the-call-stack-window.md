@@ -2,12 +2,9 @@
 title: Просмотр стека вызовов в отладчике Visual Studio | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,17 +26,16 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a55f940c6310300b458f4497f8659bfc0897d4b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Просмотр стека вызовов и использование окна стека вызова в отладчике Visual Studio
 
@@ -71,7 +67,7 @@ ms.lasthandoff: 12/22/2017
   
 **[\<Внешнего кода >]**  
   
-## <a name="bkmk_switch"></a>Переключиться в другой кадр стека (изменение контекста отладчика)
+## <a name="bkmk_switch"></a> Переключиться в другой кадр стека (изменение контекста отладчика)
   
 1.  В **стек вызовов** окно, щелкните правой кнопкой мыши кадр стека, код и данные которого нужно просмотреть.
 
@@ -113,9 +109,9 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="change-the-optional-information-displayed"></a>Изменить отображение дополнительных сведений  
   
--   Щелкните правой кнопкой мыши **стек вызовов** окна "и" set "или" снимите флажок **Показать \<**  *информацией, которая должна*  **>** .  
+-   Щелкните правой кнопкой мыши **стек вызовов** окна "и" set "или" снимите флажок **Показать \< ***информацией, которая должна***>**.  
   
-## <a name="bkmk_symbols"></a>Загрузить символы для модуля
+## <a name="bkmk_symbols"></a> Загрузить символы для модуля
 В **стек вызовов** окна, можно загрузить символы для кода, который в данный момент нет загруженных символов отладки. Это могут быть символы платформы .NET Framework или системные символы, загруженные с общедоступных серверов символов корпорации Microsoft, или символы в каталоге символов на компьютере, на котором производится отладка.  
   
 В разделе [укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

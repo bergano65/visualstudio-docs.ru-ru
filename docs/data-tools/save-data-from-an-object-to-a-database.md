@@ -1,11 +1,8 @@
 ---
-title: "Сохранение данных из объекта в базе данных | Документы Microsoft"
-ms.custom: 
+title: Сохранение данных из объекта в базе данных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e7078e6814abeb0db2afd2cffe698f923e530179
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 5a62fee0fa1eada720eb63f4606ba86cbb16efb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 Можно сохранить данные в объектах в базе данных путем передачи значения из объекта в один из методов DBDirect адаптера таблицы (например, `TableAdapter.Insert`). Дополнительные сведения см. в разделе [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
@@ -36,7 +33,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  При настройке адаптера таблицы, основной запрос должен предоставить достаточно данных для создания с помощью методов DBDirect. Например если он настроен для запроса данных из таблицы, у которого нет определен столбец первичного ключа, не создает DBDirect-методы.  
   
-|Метод DBDirect адаптера таблицы|Описание:|  
+|Метод DBDirect адаптера таблицы|Описание|  
 |----------------------------------|-----------------|  
 |`TableAdapter.Insert`|Добавление новых записей в базу данных и позволяет передавать значения отдельных столбцов в качестве параметров метода.|  
 |`TableAdapter.Update`|Обновляет существующие записи в базе данных. `Update` Метод принимает исходные и новые значения столбцов в качестве параметров метода. Исходные значения используются для обнаружения исходной записи, а новые значения используются для обновления этой записи.<br /><br /> `TableAdapter.Update` Метод также используется для согласования изменений в наборе данных обратно в базу данных, выполнив <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, или массив <xref:System.Data.DataRow>как параметры метода.|  

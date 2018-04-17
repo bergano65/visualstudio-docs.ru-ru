@@ -2,12 +2,9 @@
 title: '&lt;Команды&gt; элемент (загрузчик) | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Команды&gt; элемент (загрузчик)
 `Commands` Элемент реализует тесты, которые описываются элементами, расположенными под `InstallChecks` элемент и объявляет пакет, который [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загрузчик должен установить в случае сбоя проверки.  
@@ -96,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="bypassif"></a>BypassIf  
  `BypassIf` Элемент является дочерним элементом `InstallConditions` элемент и описывает положительное условие, при котором команда не должна выполняться. Каждый `InstallConditions` элемент может иметь ноль или более `BypassIf` элементов.  
   
- `BypassIf`имеет следующие атрибуты.  
+ `BypassIf` имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
@@ -108,7 +104,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="failif"></a>FailIf  
  `FailIf` Элемент является дочерним элементом `InstallConditions` элемент и описывает положительное условие, в котором следует остановить процесс установки. Каждый `InstallConditions` элемент может иметь ноль или более `FailIf` элементов.  
   
- `FailIf`имеет следующие атрибуты.  
+ `FailIf` имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
@@ -119,10 +115,10 @@ ms.lasthandoff: 12/22/2017
 |`Schedule`|Необязательный. Имя `Schedule` тег, который определяет, когда следует применять это правило.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes` Элемент является дочерним элементом `Command` элемента. `ExitCodes` Элемент содержит один или несколько `ExitCode` элементы, определяющие, что делать в ответ на код выхода из пакета установки. Может быть один необязательный `ExitCode` под элементом `Command` элемента. `ExitCodes`не имеет атрибутов.  
+ `ExitCodes` Элемент является дочерним элементом `Command` элемента. `ExitCodes` Элемент содержит один или несколько `ExitCode` элементы, определяющие, что делать в ответ на код выхода из пакета установки. Может быть один необязательный `ExitCode` под элементом `Command` элемента. `ExitCodes` Не имеет атрибутов.  
   
 ## <a name="exitcode"></a>ExitCode  
- `ExitCode` Элемент является дочерним элементом `ExitCodes` элемента. `ExitCode` Определяет, что делать в ответ на код выхода из пакета установки. `ExitCode`не содержит дочерних элементов и имеет следующие атрибуты.  
+ `ExitCode` Элемент является дочерним элементом `ExitCodes` элемента. `ExitCode` Определяет, что делать в ответ на код выхода из пакета установки. `ExitCode` не содержит дочерних элементов и имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  

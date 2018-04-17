@@ -1,11 +1,8 @@
 ---
-title: "Обновление MDF-файлы | Документы Microsoft"
-ms.custom: 
+title: Обновление MDF-файлы | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Express
 - SQL Server LocalDB
@@ -15,14 +12,15 @@ helpviewer_keywords:
 - upgrading to LocalDB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b0e12b716d98920ea2d358a43116042ca54ffd2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 91a58a3605873f309b44f3d22ef4fbc2ca8c12f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлы
 
@@ -64,7 +62,7 @@ Visual Studio можно использовать, чтобы открыть п�
   
 2.  В **добавить подключение** диалоговом окне укажите следующие сведения:  
   
-    -   **Источник данных**:`Microsoft SQL Server (SqlClient)`  
+    -   **Источник данных**: `Microsoft SQL Server (SqlClient)`  
   
     -   **Имя сервера**:  
   

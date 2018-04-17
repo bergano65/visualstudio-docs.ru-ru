@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Отладка в Windows Forms | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Отладка в Windows Forms | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - Windows Forms, debugging
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 20013d5af0cd06f37c5e502618253354e9410374
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Пример. Отладка в Windows Forms
 Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.  
@@ -67,7 +65,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  На **представление** последовательно выберите пункты **элементов**.  
   
-     Откроется Панель элементов. Дополнительные сведения см. в разделе [элементов](../ide/reference/toolbox.md).  
+     Откроется Панель элементов. См. дополнительные сведения о [панели элементов](../ide/reference/toolbox.md).  
   
 7.  На панели инструментов нажмите кнопку **кнопку** управления и перетащите его на поверхность разработки формы. Сбросьте кнопку в форму.  
   
@@ -90,7 +88,7 @@ ms.lasthandoff: 12/22/2017
     textBox1->Text = "Button was clicked!";  
     ```  
   
-11. На **построения** последовательно выберите пункты **построить решение**.  
+11. В меню **Сборка** выберите команду **Собрать решение**.  
   
      Проект должен быть построен без ошибок.  
   

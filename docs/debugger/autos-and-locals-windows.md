@@ -1,13 +1,10 @@
 ---
-title: "Отслеживание значений переменных в окнах локальных переменных и видимые | Документы Microsoft"
+title: Отслеживание значений переменных в окнах локальных переменных и видимые | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 2b3bad753a18352ebbf68bef5f398a8039a9c4dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Проверить переменные «видимые» и «локальные» в Visual Studio
 **Видимые** окна (во время отладки, **CTRL + ALT + V, A**, или **Отладка > Windows > видимые**) и **локальные** окна (во время отладки **CTRL + ALT + V, L**, или **Отладка > Windows > локальные**) являются весьма полезен при необходимости для просмотра значений переменных при отладке. В окне **Локальные** отображаются переменные, которые определены в локальной области, которой обычно является функция или метод, выполняемые в текущий момент. В окне **Видимые** отображаются переменные, используемые вокруг текущей строки (места, где остановилось выполнение отладчика). Только переменные, которые будут отображаться в этом окне отличается на разных языках. См. раздел [What variables appear in the Autos Window?](#bkmk_whatvariables) ниже.  
@@ -35,7 +31,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Просмотр объектов в окнах "Видимые" и "Локальные"  
 Массивы и объекты отображаются в окнах "Видимые" и "Локальные" как элементы управления типа "дерево". Щелкните стрелку слева от имени переменной, чтобы развернуть представление и увидеть поля и свойства. Ниже приведен пример объекта [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) в окне **Локальные** .  
   
-![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
+![Локальные переменные&#45;FileStream](../debugger/media/locals-filestream.png "FileStream локальные переменные")  
   
 ## <a name="bkmk_whatvariables"></a> Какие переменные отображаются в окне "Видимые"?  
  Окно **Видимые** можно использовать в коде C#, Visual Basic и C++. Окно **Видимые** не поддерживает JavaScript и F#.  
@@ -55,7 +51,7 @@ ms.lasthandoff: 01/29/2018
 
  Если установить точку останова в строке `c = 3`и запустить отладчик, то после остановки выполнения окно **Видимые** будет выглядеть так:  
 
- ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
+ ![Видимые&#45;CSharp](../debugger/media/autos-csharp.png "видимые CSharp")  
 
  Обратите внимание на то, что значение `c` равно 0, так как строка `c = 3` еще не была выполнена.  
 
@@ -75,7 +71,7 @@ ms.lasthandoff: 01/29/2018
 
  Если установить точку останова в строке `e = 5;` и запустить отладчик, то после остановки выполнения окно **Видимые** будет выглядеть так:  
   
- ![Видимые-45; Cplus](../debugger/media/autos-cplus.png "Cplus видимые")  
+ ![Видимые&#45;Cplus](../debugger/media/autos-cplus.png "Cplus видимые")  
   
  Обратите внимание на то, что переменная не инициализирована, так как код в строке `e = 5;` еще не выполнен.  
   

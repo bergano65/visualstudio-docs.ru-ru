@@ -1,11 +1,8 @@
 ---
-title: "Устранение неполадок ссылок на службы | Документы Microsoft"
-ms.custom: 
+title: Устранение неполадок ссылок на службы | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 827533f76f8807cca146b9ea0b7483cb8fb84caf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-service-references"></a>Диагностика ссылок на службы
 В этом разделе перечислены распространенные проблемы, которые могут возникнуть при работе с [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] или [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] ссылок в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -33,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="error-returning-data-from-a-service"></a>Ошибка возврата данных из службы  
  При возвращении `DataSet` или `DataTable` из службы, можно получить исключение «был превышен максимальный размер квоты входящих сообщений». По умолчанию `MaxReceivedMessageSize` для некоторых привязок задано относительно небольшое значение позволяет снизить уязвимость для атак типа "отказ в обслуживании". Можно увеличить это значение, чтобы избежать возникновения исключения. Дополнительные сведения см. в разделе <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.  
   
- Чтобы устранить эту ошибку:  
+ Чтобы исправить эту ошибку, сделайте следующее:  
   
 1.  В **обозревателе решений**, дважды щелкните файл app.config, чтобы открыть его.  
   
@@ -42,14 +39,14 @@ ms.lasthandoff: 12/22/2017
 ## <a name="cannot-find-a-service-in-my-solution"></a>Не удается найти службу в решении  
  При нажатии кнопки **Discover** кнопку в **добавить ссылку на службу** диалоговое окно, один или несколько проектов библиотеки службы WCF в решении не отображаются в списке служб. Это может произойти, если библиотека службы будет добавлен в решение, но еще не скомпилирована.  
   
- Чтобы устранить эту ошибку:  
+ Чтобы исправить эту ошибку, сделайте следующее:  
   
 -   В **обозревателе решений**, щелкните правой кнопкой мыши проект библиотеки служб WCF и нажмите кнопку **сборки**.  
   
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Ошибка доступа к службе удаленного рабочего стола  
  Когда пользователь открывает службы WCF, размещенных на веб сервере через удаленный рабочий стол и пользователь не имеет права администратора, используется проверка подлинности NTLM. Если пользователь не обладает правами администратора, пользователь может получить следующее сообщение об ошибке: «не разрешен для схемы проверки подлинности клиента «Анонимный» HTTP-запроса. От сервера получен заголовок проверки подлинности был «NTLM».»  
   
- Чтобы устранить эту ошибку:  
+ Чтобы исправить эту ошибку, сделайте следующее:  
   
 1.  В проекте веб-сайта, откройте **свойства** страницы.  
   

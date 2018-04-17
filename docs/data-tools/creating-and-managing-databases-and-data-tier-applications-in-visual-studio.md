@@ -1,28 +1,25 @@
 ---
-title: "Проекты, проекты сервера и проекты приложений уровня данных в Visual Studio базы данных | Документы Microsoft"
-ms.custom: 
+title: Проекты, проекты сервера и проекты приложений уровня данных в Visual Studio базы данных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
 - databases, managing change
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: baca17712d6cf39753dab51c60fee901c0ea08ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Проекты баз данных и приложений уровня данных в Visual Studio  
 Проекты базы данных можно использовать для создания новых баз данных, новые приложения уровня данных (DAC) и для обновления существующих баз данных и приложений уровня данных. Проекты баз данных и проекты приложений уровня данных позволяют применять методы управления версии элемента управления и проект для вести разработку базы данных в таким же образом, что эти методы применяются для управляемого и машинного кода. Можно упростить управление изменениями баз данных и серверов баз данных путем создания команды разработчиков *проекта DAC*, *проекта базы данных*, или *проект сервера* и помещение их в системе управления версиями. Члены команды могут извлекать файлы, чтобы сделать, построения и тестирования изменений в *изолированной среде разработки*, или "песочницы", прежде чем их совместно с группой. Чтобы обеспечить качество кода, команды Готово и проверки всех изменений для конкретного выпуска базы данных в промежуточной среде до развертывания изменений в рабочей.  

@@ -1,12 +1,10 @@
 ---
-title: "Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания | Документы Microsoft"
-ms.custom: 
+title: Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - deploymentProvider tag
 - manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 54474f0388ecbdbc9b1b1cb207544fd7091c1e96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания
 В этом разделе описывается новая функция представлена в .NET Framework версии 3.5, которая обеспечивает возможность развертывания приложений ClickOnce из нескольких сетевых расположений без повторного подписывания ClickOnce или манифесты ClickOnce.  
@@ -54,11 +52,11 @@ ms.lasthandoff: 12/22/2017
   
  Важно помнить это приложения, исключающие `deploymentProvider` нельзя изменять местоположение своей установки во время обновления, пока они поставляют обновление, которое включает `deploymentProvider` тег еще раз.  
   
- Ниже приведены два примера позволяет прояснить это утверждение. В первом примере публикация приложения ClickOnce, которое не имеет `deploymentProvider` тега и попросите пользователей установить его с http://www.adatum.com/MyApplication/. Если вы решите, что вы хотите опубликовать следующего обновления приложения от http://subdomain.adatum.com/MyApplication/, будет иметь это это означает в манифесте развертывания, который находится в http://www.adatum.com/MyApplication/ невозможно. Необходимо выполнить одно из следующих действий:  
+ Ниже приведены два примера позволяет прояснить это утверждение. В первом примере публикация приложения ClickOnce, которое не имеет `deploymentProvider` тега и попросите пользователей установить его из http://www.adatum.com/MyApplication/. Если вы решите для публикации приложения из следующего обновления http://subdomain.adatum.com/MyApplication/, будет никак не могут это это означает в манифесте развертывания, который находится в http://www.adatum.com/MyApplication/. Необходимо выполнить одно из следующих действий:  
   
 -   Попросите пользователей удалить предыдущую версию и установить новую версию из нового расположения.  
   
--   Включить обновление на http://www.adatum.com/MyApplication/, включающий `deploymentProvider` команды http://www.adatum.com/MyApplication/. Отпустите другим обновлением позже с помощью `deploymentProvider` команды http://subdomain.adatum.com/MyApplication/.  
+-   Включить обновление на http://www.adatum.com/MyApplication/ , включающего `deploymentProvider` команды http://www.adatum.com/MyApplication/. Отпустите другим обновлением позже с помощью `deploymentProvider` команды http://subdomain.adatum.com/MyApplication/.  
   
  Во втором примере публикация приложения ClickOnce, которое указывает `deploymentProvider`, а затем решили удалить его. Один раз новой версии без `deploymentProvider` был загружен для клиентов, можно не будет перенаправлять путь, используемый для обновления до выпуска версии приложения, которое имеет `deploymentProvider` восстановлена. Как и в первом примере `deploymentProvider` первоначально должен указывать на местоположение текущего обновления, а не на новое местоположение. В этом случае при попытке вставить `deploymentProvider` , обозначающий http://subdomain.adatum.com/MyApplication/, то произойдет сбой следующего обновления.  
   

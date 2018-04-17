@@ -1,28 +1,25 @@
 ---
-title: "Команды консоли JavaScript в Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Команды консоли JavaScript в Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: df4055790cf715b3a521b6ccc09d5c6920a47136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Команды консоли JavaScript в Visual Studio
   
@@ -41,7 +38,7 @@ ms.lasthandoff: 01/19/2018
 > [!TIP]
 >  Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
   
-|Команда|Описание:|Пример|  
+|Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|Отправляет сообщение, если `expression` имеет значение **false**.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|Удаляет сообщения из окна консоли (включая сообщения об ошибках в скрипте), а также скрипт, появляющийся в окне консоли. Не удаляет скрипт, введенный после появления на консоли запроса на ввод.|`console.clear();`|  
@@ -67,7 +64,7 @@ ms.lasthandoff: 01/19/2018
 ## <a name="miscellaneous-commands"></a>Разные команды  
  Эти команды также доступны в окне консоли JavaScript (но недоступны в коде).  
   
-|Команда|Описание:|Пример|  
+|Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|Возвращает указанный элемент в окно консоли. `$0` возвращает элемент, выбранный в настоящее время в проводнике DOM, `$1` возвращает элемент, ранее выбранный в проводнике DOM, и так далее до четвертого ранее выбранного элемента.|$3|  
 |`$(id)`|Возвращает элемент по идентификатору. Это команда быстрого доступа к `document.getElementById(id)`, где `id` — это строка, представляющая идентификатор элемента.|`$("contenthost")`|  
@@ -89,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Просмотр объектов в окне консоли JavaScript  
  При использовании окна консоли JavaScript можно взаимодействовать с любым объектом, находящимся в области. Чтобы проверить в окне консоли объект вне области, используйте `console.log` , `console.dir`и прочие команды в коде. Кроме того, для взаимодействия в окне консоли с объектом, находящимся в области, можно установить в коде точку останова (**Точка останова** > **Insert Точка останова**).  
   
-##  <a name="ConsoleLog"></a>Форматирование вывода команды console.log  
+##  <a name="ConsoleLog"></a> Форматирование вывода команды console.log  
  При передаче множественных аргументов команде `console.log`, консолью обрабатывает их как массив и объединяет вывод.  
   
 ```javascript  

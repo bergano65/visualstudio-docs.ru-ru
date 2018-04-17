@@ -1,12 +1,10 @@
 ---
-title: "CA1305: Укажите IFormatProvider | Документы Microsoft"
-ms.custom: 
+title: 'CA1305: Укажите IFormatProvider | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SpecifyIFormatProvider
 - CA1305
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1305
 - SpecifyIFormatProvider
 ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8bb3d993cc79ebf683f0a2622628bfc87d7c065a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d54b14c42ae6f656ad3329b8663c37e1dd29b4d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: укажите IFormatProvider
 |||  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
  Это безопасно подавить предупреждение из этого правила, когда известно, что поставщик языка и региональных параметров и формат по умолчанию является правильным выбором и удобства поддержки кода не является важным разработки приоритет.  
   
 ## <a name="example"></a>Пример  
- В следующем примере `BadMethod` вызывает два нарушения данного правила. `GoodMethod`исправляет первого нарушения путем передачи инвариантного языка и региональных параметров для <xref:System.String.Compare%2A>и исправляет второй нарушение путем передачи текущего языка и региональных параметров для <xref:System.String.ToLower%2A> из-за `string3` отображается для пользователя.  
+ В следующем примере `BadMethod` вызывает два нарушения данного правила. `GoodMethod` исправляет первого нарушения путем передачи инвариантного языка и региональных параметров для <xref:System.String.Compare%2A>и исправляет второй нарушение путем передачи текущего языка и региональных параметров для <xref:System.String.ToLower%2A> из-за `string3` отображается для пользователя.  
   
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_1.cs)]  
   

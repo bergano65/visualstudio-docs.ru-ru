@@ -1,12 +1,10 @@
 ---
-title: "Поиск утечек памяти с помощью библиотеки CRT | Документы Microsoft"
-ms.custom: 
+title: Поиск утечек памяти с помощью библиотеки CRT | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -29,16 +27,16 @@ helpviewer_keywords:
 - _CRTDBG_MAP_ALLOC
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c02fea4639d130840f3f5dbbd9e77693c676d304
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Обнаружение утечек памяти с помощью библиотеки CRT
 Утечки памяти, определяемые как сбой при освобождении ранее выделенной памяти, — это одна из наиболее трудно обнаруживаемых ошибок в приложениях C/C++. Небольшая утечка памяти сначала может остаться незамеченной, но постепенно нарастающая утечка памяти может приводить к различным симптомам, от снижения производительности до аварийного завершения приложения из-за нехватки памяти. Более того, приложение, в котором происходит утечка памяти, может использовать всю доступную память и привести к аварийному завершению другого приложения, в результате чего может быть непонятно, какое приложение отвечает за сбой. Даже безобидная на первый взгляд утечка памяти может быть признаком других проблем, требующих устранения.  

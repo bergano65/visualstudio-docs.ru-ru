@@ -1,28 +1,26 @@
 ---
-title: "Набор правил минимальные правила для машинного | Документы Microsoft"
-ms.custom: 
+title: Набор правил минимальные правила для машинного | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6db3e112f45200221eff80c033daed4a04c152d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 33617535363aaff853779e2dfe3ad011db027bba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для машинного кода"
 Минимальные правила Microsoft для машинного кода связаны с наиболее важными проблемами в машинном коде, включая возможные уязвимости безопасности и случаи аварийного завершения работы приложений. Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|  
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|  

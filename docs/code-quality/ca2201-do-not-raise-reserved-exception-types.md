@@ -1,12 +1,10 @@
 ---
-title: "CA2201: Не вызывайте зарезервированные типы исключений | Документы Microsoft"
-ms.custom: 
+title: 'CA2201: Не вызывайте зарезервированные типы исключений | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: не вызывайте зарезервированные типы исключений
 |||  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |Описание параметра|Исключение|  
 |---------------------------|---------------|  
-|`null`ссылка|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` Ссылка|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |Вне диапазона допустимых значений (таких как индекс для коллекции или списка)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |Недопустимый `enum` значение|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |Содержит формат, который не соответствует спецификациям параметров метода (например, строка формата для `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |В противном случае значение недопустимо|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- Когда операция недопустима для текущего состояния объекта throw<xref:System.InvalidOperationException?displayProperty=fullName>  
+ Когда операция недопустима для текущего состояния объекта throw <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- Исключение при выполнении операции на объекте, который был удален<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ Исключение при выполнении операции на объекте, который был удален <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- Когда операция не поддерживается (например, в переопределенном **методы Stream.Write** в поток открыт для чтения) throw<xref:System.NotSupportedException?displayProperty=fullName>  
+ Когда операция не поддерживается (например, в переопределенном **методы Stream.Write** в поток открыт для чтения) throw <xref:System.NotSupportedException?displayProperty=fullName>  
   
- Исключение при преобразовании приведет к переполнению, (например, в явной перегрузке оператора приведения)<xref:System.OverflowException?displayProperty=fullName>  
+ Исключение при преобразовании приведет к переполнению, (например, в явной перегрузке оператора приведения) <xref:System.OverflowException?displayProperty=fullName>  
   
  В других случаях рекомендуется создать свой собственный тип, производный от <xref:System.Exception> и создает исключение, которое.  
   

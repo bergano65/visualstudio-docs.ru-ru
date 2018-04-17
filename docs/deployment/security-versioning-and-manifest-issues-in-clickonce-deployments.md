@@ -1,13 +1,10 @@
 ---
-title: "Управление версиями, проблем безопасности и манифестов в развертываниях ClickOnce | Документы Microsoft"
-ms.custom: 
+title: Управление версиями, проблем безопасности и манифестов в развертываниях ClickOnce | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,11 +25,11 @@ ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dd693a35725d41b2b8ced99d78bd4a62d8d9e3a
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: ec828d555748dbd31a7746d18170d733d4668c9a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Вопросы безопасности, контроля версий и манифестов в развертываниях ClickOnce
 
@@ -44,7 +41,7 @@ ms.lasthandoff: 02/28/2018
 
 Из-за риска сделать приложения уязвимыми к атакам [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений не могут запрашивать повышение уровня разрешений, если включен контроль учетных Записей для клиента. Любой [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, которое пытается установить его `requestedExecutionLevel` атрибут `requireAdministrator` или `highestAvailable` не будут устанавливаться на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].
 
-В некоторых случаях вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] будет выполнена попытка запустить с правами администратора из-за алгоритма обнаружения установщика [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В этом случае можно задать `requestedExecutionLevel` атрибута в манифесте приложения для `asInvoker`. Это вызовет само приложение, чтобы запустить без повышения уровня разрешений. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 
+В некоторых случаях вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] будет выполнена попытка запустить с правами администратора из-за алгоритма обнаружения установщика [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В этом случае можно задать `requestedExecutionLevel` атрибута в манифесте приложения для `asInvoker`. Это вызовет само приложение, чтобы запустить без повышения уровня разрешений. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] автоматически добавляет данный атрибут во все манифесты приложений.
 
 Если вы разрабатываете приложение, необходимы права администратора в течение всего времени существования приложения, следует рассмотреть возможность развертывания приложения с помощью технологии установщика Windows (MSI), вместо этого. Дополнительные сведения см. в разделе [основы установщика Windows](../extensibility/internals/windows-installer-basics.md).
 
@@ -70,7 +67,7 @@ ms.lasthandoff: 02/28/2018
 
 Файлы манифеста, которые используются в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] являются XML-файлы, и они должны быть корректным и допустимым: они должны подчиняться правилам синтаксиса XML, используйте только элементы и атрибуты, определенные в соответствующей схеме XML.
 
-То, что может вызвать проблемы в файле манифеста выбирает имя для приложения, которое содержит специальные символы, такие как одинарные или двойные кавычки. Имя приложения является частью его [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] удостоверений. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]  Если приложение не удается активировать, убедитесь, что для имени используются только буквенные и цифровые символы и попытаться повторить развертывание.
+То, что может вызвать проблемы в файле манифеста выбирает имя для приложения, которое содержит специальные символы, такие как одинарные или двойные кавычки. Имя приложения является частью его [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] удостоверений. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] в настоящее время не выполняет синтаксический разбор удостоверений, которые содержат специальные символы. Если приложение не удается активировать, убедитесь, что для имени используются только буквенные и цифровые символы и попытаться повторить развертывание.
 
 Если манифесты развертывания или приложения было изменено вручную, то может их непреднамеренное повреждение. Поврежденный манифест будет препятствовать правильной [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установки. Можно устранить такие ошибки во время выполнения, нажав кнопку **сведения** на **ошибка ClickOnce** диалоговое окно и чтения сообщение об ошибке в журнале. В журнале будет содержаться одно из следующих сообщений:
 

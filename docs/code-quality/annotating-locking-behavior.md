@@ -1,12 +1,10 @@
 ---
-title: "Аннотация поведения блокировки | Документы Microsoft"
-ms.custom: 
+title: Аннотация поведения блокировки | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
 - _Lock_kind_mutex_
@@ -32,16 +30,16 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34364681aeeed7626b10b6714d785fbf861f42d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9e42762c77b1ee5fe006a48c4cf7abebea196a0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-locking-behavior"></a>Аннотация поведения блокировки
 Во избежание ошибок параллелизма в многопоточных программах, всегда выполняйте соответствующую дисциплину блокировок и используйте заметки SAL.  
@@ -68,7 +66,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="locking-annotations"></a>Блокировки заметок  
  В следующей таблице перечислены блокировки заметок.  
   
-|Комментарий|Описание:|  
+|Комментарий|Описание|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Аннотирует функцию и указывает, что функция после вызова увеличивает на единицу число монопольных блокировок объекта блокировок с именем `expr`.|  
 |`_Acquires_lock_(expr)`|Аннотирует функцию и указывает, что функция после вызова увеличивает на единицу число блокировок объекта блокировок с именем `expr`.|  
@@ -92,7 +90,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Встроенные SAL для непредоставленных явно объектов блокировки  
  Некоторые объекты блокировки не предоставляются с помощью реализации связанных с ним функций блокировки.  В следующей таблице перечислены встроенные переменные SAL, которые содержат заметки для функций, действующих на эти защищенные объекты блокировки.  
   
-|Комментарий|Описание:|  
+|Комментарий|Описание|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Описывает отмену спин-блокировки.|  
 |`_Global_critical_region_`|Описывает критическую область.|  
@@ -102,7 +100,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="shared-data-access-annotations"></a>Заметки доступа к общим данным  
  В следующей таблице перечисляются аннотации для доступа к разделяемым данным.  
   
-|Комментарий|Описание:|  
+|Комментарий|Описание|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Аннотирует переменную и указывает на то, что при доступе к данной переменной количество блокировок объекта с именем `expr` не менее единицы.|  
 |`_Interlocked_`|Добавляет заметки к переменной и эквивалентно `_Guarded_by_(_Global_interlock_)`.|  

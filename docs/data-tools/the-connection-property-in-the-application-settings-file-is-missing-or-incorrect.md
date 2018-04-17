@@ -1,23 +1,20 @@
 ---
-title: "Свойства соединения в файле настройки приложения пропущены или неверны | Документы Microsoft"
-ms.custom: 
+title: Свойства соединения в файле настройки приложения пропущены или неверны | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 7b18e64c01c8540b3f3188c06eae7286cf5f3647
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7d95775add848cfff6e5f5200fb75f1ac1e82952
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Свойство подключения в файле параметров приложения отсутствует или неверно
 Свойства соединения в файле настройки приложения пропущены или неверны. Строка подключения из DBML-файла использовалась на его месте.  

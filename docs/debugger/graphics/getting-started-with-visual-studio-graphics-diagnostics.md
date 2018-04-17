@@ -1,23 +1,20 @@
 ---
-title: "Приступая к работе с диагностикой графики Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Приступая к работе с диагностикой графики Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 05/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 11de8cc6cf559d82ffa7ac543e396644057346c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Начало работы с диагностикой графики Visual Studio
 В этом разделе вы подготовитесь к первому использованию диагностики графики, а затем запишите кадры из приложения Direct3D и проверите их в анализаторе графики.  
@@ -32,7 +29,7 @@ ms.lasthandoff: 02/01/2018
   
  Сведения об установке графических инструментов см. в разделе [Установка графических инструментов для Windows 10](#InstallGraphicsTools).  
   
-##  <a name="InstallGraphicsTools"></a>Установка графических инструментов для Windows 10  
+##  <a name="InstallGraphicsTools"></a> Установка графических инструментов для Windows 10  
  В Windows 10 инфраструктура диагностики графики предоставляется дополнительным компонентом Windows, который называется *графических инструментов*. Данный компонент необходим для записи и воспроизведения графической информации в Windows 10 независимо от того, производится ли запись для приложения, настроенного на предыдущую версию Windows, и какую версию Direct3D оно использует. Вы можете установить компонент графических инструментов заранее; в противном случае он будет установлен по требованию при первом запуске сеанса диагностики графики из Visual Studio.  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Установка графических инструментов для Windows 10  

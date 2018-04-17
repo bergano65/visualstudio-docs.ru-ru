@@ -1,11 +1,8 @@
 ---
-title: "Пошаговое руководство: Создание N-уровневое приложение | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание N-уровневое приложение | Документы Microsoft'
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: a22ba174310aa9fc3f7e2676c140d164911d5bf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Пошаговое руководство. Создание многоуровневого приложения для работы с данными
 *N-уровневые* данных приложения, приложения, доступ к данным и разделены на несколько логических слоев или *уровни*. Разделение компонентов приложения на несколько отдельных уровней повышает удобство обслуживания и масштабируемость приложения. Это обеспечивается за счет упрощения внедрения новых технологий, которые можно применить к отдельному уровню без пересмотра всего решения. N-уровневая архитектура включает в себя уровень представления, средний уровень и уровень данных. Средний уровень обычно содержит слой доступа к данным, слой бизнес-логики и общие компоненты, такие как аутентификация и проверка. Уровень данных содержит реляционную базу данных. N-уровневые приложения обычно хранят конфиденциальную информацию на слое доступа к данным среднего уровня, чтобы обеспечить изоляцию от конечных пользователей, работающих с уровнем представления. Дополнительные сведения см. в разделе [Общие сведения о приложениях данных N-уровневые](../data-tools/n-tier-data-applications-overview.md).  
@@ -154,7 +151,7 @@ ms.lasthandoff: 01/23/2018
   
 4.  В **DataSet проекта** выберите **DataEntityTier**.  
   
-5.  На **построения** последовательно выберите пункты **построить решение**.  
+5.  В меню **Сборка** выберите команду **Собрать решение**.  
   
  Набор данных и адаптеры таблицы делятся на два проекта библиотеки классов. Проект, который изначально содержал весь набор данных (DataAccessTier), теперь содержит только адаптеры таблицы. Проект, предназначенный **DataSet проекта** свойство (DataEntityTier) содержит типизированный набор данных: NorthwindDataSet.Dataset.Designer.vb (или NorthwindDataSet.Dataset.Designer.cs).  
   

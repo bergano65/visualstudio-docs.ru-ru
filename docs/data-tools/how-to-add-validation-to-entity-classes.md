@@ -1,26 +1,23 @@
 ---
-title: "Как: Добавление проверки в классы сущностей | Документы Microsoft"
-ms.custom: 
+title: 'Как: Добавление проверки в классы сущностей | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 1ff8eb04ae9b5009aff13dc8588633b34d4d72dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: df0f97994fd5144f9fff7cf9a5ce90fc43249476
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Как: Добавление проверки в классы сущностей
 *Проверка* классов сущностей представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме объекта, а также правилам, установленным для приложения. Проверка данных перед отправкой обновлений в основную базы данных рекомендуется, это уменьшает количество ошибок. Это также уменьшает потенциальное количество циклов передачи между приложением и базой данных.  

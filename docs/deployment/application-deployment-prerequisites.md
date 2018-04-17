@@ -1,12 +1,10 @@
 ---
-title: "Необходимые условия для развертывания приложения | Документы Microsoft"
-ms.custom: 
+title: Необходимые условия для развертывания приложения | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Предварительные условия для развертывания приложения
 Чтобы обеспечить успешную установку и запуск приложения, необходимо, в первую очередь, убедиться, что компоненты, от которых зависит приложение, уже установлены на целевом компьютере. Например, большинство приложений, которые создаются при помощи [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], имеют зависимость от [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], поэтому перед установкой приложения на целевом компьютере должна быть установлена правильная версия среды CLR.  
@@ -48,10 +46,10 @@ ms.lasthandoff: 12/22/2017
   
 -   Минимальная версия сборок, которые должны быть предварительно установлены в глобальном кэше сборок (GAC), как указано в декларации зависимости от сборки в манифесте сборки.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]можно обнаружить отсутствующие необходимые компоненты и необходимые компоненты можно установить с помощью загрузчика. Дополнительные сведения см. в разделе [как: Установка необходимых компонентов с приложением ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] можно обнаружить отсутствующие необходимые компоненты и необходимые компоненты можно установить с помощью загрузчика. Дополнительные сведения см. в разделе [как: Установка необходимых компонентов с приложением ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Чтобы изменить значения в манифестах, созданных такими инструментами, как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и MageUI.exe, необходимо отредактировать манифест приложения в текстовом редакторе, а затем снова подписать манифест приложения и манифест развертывания. Дополнительные сведения см. в разделе [как: повторно подписать приложение и манифесты развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Чтобы изменить значения в манифестах, созданных такими инструментами, как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и MageUI.exe, необходимо отредактировать манифест приложения в текстовом редакторе, а затем снова подписать манифест приложения и манифест развертывания. Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Если для развертывания приложения используются Visual Studio и ClickOnce, то выбираемые по умолчанию пакеты начального загрузчика будут зависеть от версии .NET Framework в решении. Однако при изменении целевой версии .NET Framework, необходимо обновить параметры в **диалоговое окно «необходимые условия»** вручную.  
   
@@ -74,13 +72,13 @@ ms.lasthandoff: 12/22/2017
   
  В случае изменения параметров начального загрузчика необходимо изменить неподписанный начальный загрузчик, а затем подписать файл начального загрузчика.  
   
-|Аргумент командной строки|Описание:|  
+|Аргумент командной строки|Описание|  
 |---------------------------|-----------------|  
 |**-?, -h, - Справка**|Открывает диалоговое окно "Справка".|  
 |**-URL-адрес, - componentsurl**|Показывает сохраненный URL и URL-адреса компонентов для этой установки.|  
-|**-URL-адрес =**`location`|Настраивает URL на то место, где Setup.exe будет искать приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
-|**-componentsurl =**`location`|Настраивает URL на то место, где Setup.exe будет искать зависимости, такие как [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Когда `true`, то зависимости загружаются из предпочтительного источника на сайте поставщика. Это значение переопределяет **- componentsurl** параметр. Когда `false`, то зависимости загружаются по URL-адресу, определяемое **- componentsurl**.|  
+|**-URL-адрес =** `location`|Настраивает URL на то место, где Setup.exe будет искать приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
+|**-componentsurl =** `location`|Настраивает URL на то место, где Setup.exe будет искать зависимости, такие как [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Когда `true`, то зависимости загружаются из предпочтительного источника на сайте поставщика. Это значение переопределяет **- componentsurl** параметр. Когда `false`, то зависимости загружаются по URL-адресу, определяемое **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Поддержка операционной системой  
  Начальный загрузчик Visual Studio не поддерживается параметром установки Server Core операционной системы Windows Server 2008 или Windows Server 2008 R2, что означает незначительную поддержку серверной среды с ограниченным функционалом. Например, параметр установки Server Core поддерживает только профиль .NET Framework 3.5 Server Core, поэтому возможности Visual Studio, которые требуют полной установки .NET Framework, работать не будут.  

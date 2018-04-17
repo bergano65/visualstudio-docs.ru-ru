@@ -1,23 +1,20 @@
 ---
-title: "Как: Включение и выключение (конструктор O-R) плюрализации | Документы Microsoft"
-ms.custom: 
+title: 'Как: Включение и выключение (конструктор O-R) плюрализации | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a78f38d4b02311a164e0858744b70fbc5fb0ddaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 6340946491ebaa8fa6bec395632e7d7943b4935e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Как: Включение и выключение (конструктор O/R) плюрализации
 По умолчанию при перетаскивании объектов базы данных, имена которых заканчиваются на s или йства из **обозревателя серверов**/**обозреватель баз данных** на [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), имена создаваемых классов сущностей изменяются с множественного числа на единственное. Это делается, чтобы более точно представить факт, что иллюстрируемый класс сущностей сопоставляется с единственной записью данных. Например, добавление таблицы Customers в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] дает класс сущностей с именем Customer, поскольку класс будет содержать данные только для одного клиента.  

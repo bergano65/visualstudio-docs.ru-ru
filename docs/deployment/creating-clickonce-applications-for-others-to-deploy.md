@@ -1,12 +1,10 @@
 ---
-title: "Создание приложений ClickOnce для других пользователей для развертывания | Документы Microsoft"
-ms.custom: 
+title: Создание приложений ClickOnce для других пользователей для развертывания | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - ClickOnce applications, deployed by others
 - ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c3cd93353cd20ac52f95d7852c306124561cdf0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Создание приложений ClickOnce для развертывания другими
 Не все разработчики, создающие развертывания ClickOnce планируется развертывать приложения сами. Многие из них просто упаковывают свое приложение с помощью ClickOnce и затем передают файлы клиенту, например большой корпорации. Клиент становится ответственным за размещение приложения в своей сети. В этом разделе рассматриваются некоторые из проблем, возникающих в этих развертываниях в версиях .NET Framework, предшествующих версии 3.5. Затем он описывает новое решение, предоставляемое с помощью новой функции «использовать манифест для доверия» в .NET Framework 3.5. В заключение приводятся рекомендуемые стратегии создания развертываний ClickOnce для клиентов, которые по-прежнему использовать старые версии платформы .NET Framework.  

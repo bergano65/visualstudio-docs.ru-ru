@@ -1,30 +1,28 @@
 ---
-title: "Набор базовые правила определения правильности правил для управляемого кода | Документы Microsoft"
-ms.custom: 
+title: Набор базовые правила определения правильности правил для управляемого кода | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3b40f8844b76f7c5fafcadff6c3c20ac9b607dd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Базовые правила определения правильности" для управляемого кода
 Набор правил базовые правила определения правильности посвящена логики и общие ошибки в использовании API платформы. Базовые правила определения правильности включают правила в наборе правил минимальные правила и рекомендации. Дополнительные сведения см. в разделе [набор правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) следует включать этот набор правил в расширить список предупреждений, что минимального набора правил.  
   
  В следующей таблице описаны все правила в наборе правил базовые правила определения правильности Майкрософт.  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть высвобождаемыми|  
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявите обработчики событий|  
@@ -33,11 +31,11 @@ ms.lasthandoff: 12/22/2017
 |[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми|  
 |[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Переместите P/Invokes в класс NativeMethods|  
 |[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Не следует скрывать методы базового класса|  
-|[CA1063 СЛЕДУЕТ](../code-quality/ca1063-implement-idisposable-correctly.md)|Правильно реализовывать IDisposable|  
+|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Правильно реализовывать IDisposable|  
 |[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Не вызывайте исключения в непредвиденных местах|  
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Избегайте повторяющиеся сочетания клавиш|  
 |[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Должны существовать точки входа P/Invoke|  
-|[CA1401 МЕТОДЫ](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Методы P/Invoke не должны быть видимыми|  
+|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Методы P/Invoke не должны быть видимыми|  
 |[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Типы макета Auto не должны быть видимыми для COM|  
 |[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Вызывайте GetLastError сразу после P/Invoke|  
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Базовые типы типу видимых COM должны быть видимыми для COM|  

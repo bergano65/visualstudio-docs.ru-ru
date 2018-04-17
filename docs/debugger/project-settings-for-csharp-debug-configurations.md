@@ -1,12 +1,10 @@
 ---
-title: "Параметры для конфигураций отладки C# проекта | Документы Microsoft"
-ms.custom: 
+title: Параметры для конфигураций отладки C# проекта | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debugging [C#], debugger settings
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f51964a303641e8e430417d63d0241603d7f360
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Параметры проекта для конфигураций отладки C#
 Можно изменить параметры проекта для конфигурации отладки C# в **страницы свойств** окна, как описано в [конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком **страницы свойств** окна.  
@@ -37,7 +35,7 @@ ms.lasthandoff: 01/19/2018
 > [!WARNING]
 >  Этот раздел не распространяется на приложения универсальной платформы Windows. В разделе [запуск сеанса отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a>Вкладки отладчика  
+##  <a name="BKMK_Debug_tab"></a> Вкладки отладчика  
   
 |**Параметр**|**Описание**|  
 |-----------------|---------------------|  
@@ -49,9 +47,9 @@ ms.lasthandoff: 01/19/2018
 |**Разрешить отладку неуправляемого кода**|Разрешает отлаживать вызовы машинного (неуправляемого) кода Win32 из управляемого приложения.|  
 |**Разрешить отладку SQL Server**|Разрешает отладку объектов базы данных SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a>Вкладка Построение  
+##  <a name="BKMK_Build_tab"></a> Вкладка Построение  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |-------------|-----------------|  
 |**Символы условной компиляции:**|Здесь определяются константы DEBUG и TRACE.<br /><br /> Эти константы включают условную компиляцию [класса Debug](/dotnet/api/system.diagnostics.debug) и [класса Trace](/dotnet/api/system.diagnostics.trace). Эти константы определены, отладки и методы класса Trace выводят информацию в [окно вывода](../ide/reference/output-window.md). Если эти константы не определены, то методы классов Отладка и Трассировка не компилируются и выходные данные не создаются.<br /><br /> -Debug обычно определяется в отладочной версии программы и не определено в версии выпуска.<br />-Трассировка обычно определяется в версиях отладки и выпуска.|  
 |**Оптимизировать код**|Этот параметр в отладочной версии программы следует отключать, если только не обнаружена ошибка в оптимизированном коде. Оптимизированный код отлаживать гораздо труднее, так как команды не соответствуют точно операторам в окнах с исходным кодом.|  

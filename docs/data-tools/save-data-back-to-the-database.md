@@ -1,11 +1,8 @@
 ---
-title: "Сохранить данные в базе данных | Документы Microsoft"
-ms.custom: 
+title: Сохранить данные в базе данных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Сохранить данные в базе данных
 Набор данных — в памяти данных. При изменении данных, рекомендуется сохранить эти изменения в базе данных. Одним из трех способов это сделать.  
@@ -44,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
 Если вы знакомы с адаптеры таблиц TableAdapter, можно перейти непосредственно на один из следующих разделов:  
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Вставка новых записей в базу данных](../data-tools/insert-new-records-into-a-database.md)|Как выполнять обновления и вставки с помощью адаптеров таблиц или команд объектов|  
 |[Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)|Выполнить обновление с адаптеры таблиц TableAdapter|  
@@ -123,7 +120,7 @@ ms.lasthandoff: 12/22/2017
   
  В следующей таблице приведены возможные значения <xref:System.Data.DataRowState> перечисления:  
   
-|Значение DataRowState|Описание:|  
+|Значение DataRowState|Описание|  
 |------------------------|-----------------|  
 |<xref:System.Data.DataRowState.Added>|Строка была добавлена как элемент в <xref:System.Data.DataRowCollection>. (Строки в этом состоянии не имеет соответствующей исходной версии, так как она не существовала при последней <xref:System.Data.DataRow.AcceptChanges%2A> был вызван метод).|  
 |<xref:System.Data.DataRowState.Deleted>|Строка была удалена с помощью <xref:System.Data.DataRow.Delete%2A> из <xref:System.Data.DataRow> объекта.|  
@@ -136,7 +133,7 @@ ms.lasthandoff: 12/22/2017
   
 В следующей таблице приведены возможные значения <xref:System.Data.DataRowVersion> перечисления:  
   
-|Значение DataRowVersion|Описание:|  
+|Значение DataRowVersion|Описание|  
 |--------------------------|-----------------|  
 |<xref:System.Data.DataRowVersion.Current>|Текущая версия записи содержит все изменения, которые были выполнены для записи с момента последнего <xref:System.Data.DataRow.AcceptChanges%2A> был вызван. Если строка была удалена, нет текущей версии нет.|  
 |<xref:System.Data.DataRowVersion.Default>|Значение по умолчанию записи, в соответствии с определением набора данных схема или источник данных.|  
@@ -158,7 +155,7 @@ ms.lasthandoff: 12/22/2017
   
  Можно создавать подмножества измененных записей с помощью `GetChanges` метод таблицы данных (<xref:System.Data.DataTable.GetChanges%2A>) или набора данных (<xref:System.Data.DataSet.GetChanges%2A>) сам. При вызове метода для таблицы данных, он возвращает копию таблицы, содержащий только измененные записи. Аналогично при вызове метода для набора данных, получить новый набор данных, содержащий только измененные записи в нем.  
   
- `GetChanges`сам по себе возвращает все измененные записи. Напротив, передав нужного <xref:System.Data.DataRowState> как параметр `GetChanges` метод, можно указать какое подмножество измененных записей требуется: добавленные записи, которые помечены для удаления, отсоединенные записи или измененные записи.  
+ `GetChanges` сам по себе возвращает все измененные записи. Напротив, передав нужного <xref:System.Data.DataRowState> как параметр `GetChanges` метод, можно указать какое подмножество измененных записей требуется: добавленные записи, которые помечены для удаления, отсоединенные записи или измененные записи.  
   
  Получение подмножества измененных записей полезно в том случае, если вы хотите отправить другому компоненту для обработки записей. Вместо отправки всего набора данных, можно уменьшить дополнительные издержки на подключение к другому компоненту путем получения только записи, необходимые для компонента.   
   

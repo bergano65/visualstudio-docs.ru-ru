@@ -1,29 +1,25 @@
 ---
-title: "Создание настраиваемых представлений собственных объектов в отладчике | Документы Microsoft"
-ms.custom: 
+title: Создание настраиваемых представлений собственных объектов в отладчике | Документы Microsoft
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Создание настраиваемых представлений собственных объектов в отладчике Visual Studio
 Платформа Visual Studio Natvis позволяет настраивать то, как Visual Studio отображает собственные типы в окнах переменных отладчика (например, **Контрольные значения** окне **локальные** окна и в  **Подсказки данных**.
@@ -464,7 +460,7 @@ ms.lasthandoff: 12/22/2017
 -   Можно оставить поле `ValueNode` пустым или использовать `this` для ссылки на сам узел связанного списка.  
   
 #### <a name="customlistitems-expansion"></a>Расширение LinkedListItems  
- Расширение `CustomListItems` позволяет записывать настраиваемую логику для обхода структуры данных, например хэш-таблицы. Следует использовать `CustomListItems` для визуализации данных структуры, в которых все, что вам необходимо оценить можно выразить через выражения C++, но не вполне подходит под определение `ArrayItems`, `TreeItems`, или`LinkedListItems.`  
+ Расширение `CustomListItems` позволяет записывать настраиваемую логику для обхода структуры данных, например хэш-таблицы. Следует использовать `CustomListItems` для визуализации данных структуры, в которых все, что вам необходимо оценить можно выразить через выражения C++, но не вполне подходит под определение `ArrayItems`, `TreeItems`, или `LinkedListItems.`  
   
  Визуализатор для CAtlMap является отличным примером подходящих ситуаций для использования `CustomListItems` .  
   
@@ -542,7 +538,7 @@ ms.lasthandoff: 12/22/2017
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Расширение ExpandedItem  
  Элемент `ExpandedItem` может использоваться для создания агрегированного дочернего представления путем отображения свойств базовых классов или данных-членов так, как будто они являются дочерними элементами визуализируемого типа. Указанное выражение вычисляется, и дочерние узлы результата добавляются в список дочерних элементов визуализируемого типа. Например, предположим, что у нас есть интеллектуальный указатель типа `auto_ptr<vector<int>>`, который обычно отображается как:  
   
- ![Авто &#95; ptr &#60; вектор &#60; int &#62; &#62; расширение по умолчанию](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![Auto&#95;ptr&#60;вектор&#60;int&#62; &#62; расширение по умолчанию](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  Чтобы просмотреть значения вектора, необходимо развернуть два уровня в окне переменных, проходя через член _Myptr. При добавлении элемента `ExpandedItem` можно исключить переменную `_Myptr` из иерархии и просмотреть непосредственно элементы вектора elements::  
   
@@ -555,7 +551,7 @@ ms.lasthandoff: 12/22/2017
 </Type>  
 ```  
   
- ![Авто &#95; ptr &#60; вектор &#60; int &#62; &#62; Расширение ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![Auto&#95;ptr&#60;вектор&#60;int&#62; &#62; расширение ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  В следующем примере показано, как добавлять свойства из базового класса в производном классе. Предположим, класс `CPanel` является производным от `CFrameworkElement`. Вместо повторения свойств, полученных от базового класса `CFrameworkElement` , узел `ExpandedItem` позволяет присоединить эти свойства к дочернему списку класса `CPanel` . **Nd** описателя формата, который отключает визуализации, поиск совпадения для производного класса, здесь необходим. В противном случае выражение `*(CFrameworkElement*)this` вызывает `CPanel` визуализации будет применена снова, поскольку правила сопоставления типов визуализации по умолчанию считают ее наиболее подходящей. С помощью **nd** описателей дает отладчику указание использовать визуализацию базового класса или расширение по умолчанию базового класса, если базовый класс не имеет визуализации.  
   

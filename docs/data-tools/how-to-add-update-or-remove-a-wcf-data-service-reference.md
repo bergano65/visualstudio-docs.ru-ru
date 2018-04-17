@@ -1,11 +1,8 @@
 ---
-title: "Как: Добавление, обновление или удаление ссылки на службу данных WCF | Документы Microsoft"
-ms.custom: 
+title: 'Как: Добавление, обновление или удаление ссылки на службу данных WCF | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c35fdaabf3de306af0541fb4781a085a3c409ff8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 2e128268a0dd81aead3204436bb8f4ea80b5a048
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF
 Объект *службы ссылку* позволяет проекту использовать одну или несколько [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Используйте **добавить ссылку на службу** диалогового окна для поиска [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в текущем решении, локально, в локальной сети или в Интернете.  
@@ -41,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 2.  В **адрес** введите URL-адрес для службы и нажмите кнопку **Go** для поиска службы. Если служба реализует безопасности имени и пароля пользователя, может потребоваться ввести имя пользователя и пароль.  
   
     > [!NOTE]
-    >  Службы должны ссылаться только из надежного источника. Добавление ссылок из ненадежного источника может нарушить безопасность.  
+    >  Ссылаться на службы следует только из надежного источника. Добавление ссылок из ненадежного источника может нарушить безопасность.  
   
      Можно также выбрать URL-адрес из **адрес** списка, в котором хранятся последние 15 URL-адресов, по которым были найдены допустимые метаданные служб.  
   

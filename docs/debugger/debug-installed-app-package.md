@@ -1,13 +1,10 @@
 ---
-title: "Отладка пакета установленного приложения (UWP) | Документы Microsoft"
+title: Отладка пакета установленного приложения (UWP) | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +17,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 9c1406637b6d1dce312b0574cfba3c9a4f7356e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Отладка пакета установленного приложения в Visual Studio (UWP)
 
@@ -62,7 +58,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > Visual Studio также можно присоединить к любому выполняющемуся процессу приложения UWP, выбрав **отладки**, а затем **присоединиться к процессу**. Присоединение к выполняющемуся процессу не требует исходный проект Visual Studio, но загрузка символов процесса поможет значительно, процесс, который не нужно, чтобы исходный код для отладки.
   
-## <a name="remote"></a>Отладка приложения установлен или не запущен на удаленном компьютере 
+## <a name="remote"></a> Отладка приложения установлен или не запущен на удаленном компьютере 
 
 При отладке пакета установленного приложения на удаленном компьютере в первый раз Visual Studio устанавливает правильная версия удаленных средств для целевого устройства. Целевое устройство должен быть компьютер Windows 10, XBox, IoT и HoloLens устройства.
 

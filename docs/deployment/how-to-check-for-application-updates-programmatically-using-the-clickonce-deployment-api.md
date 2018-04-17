@@ -1,12 +1,10 @@
 ---
-title: "Как: проверка обновлений для приложения программным путем с помощью API развертывания ClickOnce | Документы Microsoft"
-ms.custom: 
+title: 'Как: проверка обновлений для приложения программным путем с помощью API развертывания ClickOnce | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2812a12541d71d29beff453c66344f85be904f5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Практическое руководство. Проверка обновлений для приложения программным способом с помощью функций API развертывания технологии ClickOnce
 ClickOnce предоставляет два способа обновления приложения после его развертывания. Во-первых можно настроить развертывание технологии ClickOnce для автоматической проверки обновлений через определенные промежутки времени. Во-вторых, можно написать код, использующий <xref:System.Deployment.Application.ApplicationDeployment> класса, чтобы проверить наличие обновлений на основе события, такого как запрос пользователя.  
@@ -50,7 +48,7 @@ ClickOnce предоставляет два способа обновления 
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Развертывание приложения, которое проверяет наличие обновлений программным способом с помощью Mage.exe  
   
--   Следуйте инструкциям по развертыванию приложения с помощью Mage.exe, как описано в статье [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). При вызове Mage.exe для создания манифеста развертывания, убедитесь, что с помощью параметра `providerUrl`, а также указать URL-адрес, где приложение ClickOnce должно проверять наличие обновлений. Если ваше приложение будет обновлять из [http://www.adatum.com/MyApp](http://www.adatum.com/MyApp), например, при вызове создания манифеста развертывания может выглядеть следующим образом:  
+-   Следуйте инструкциям по развертыванию приложения с помощью Mage.exe, как описано в статье [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). При вызове Mage.exe для создания манифеста развертывания, убедитесь, что с помощью параметра `providerUrl`, а также указать URL-адрес, где приложение ClickOnce должно проверять наличие обновлений. Если ваше приложение будет обновлять из [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), например, при вызове создания манифеста развертывания может выглядеть следующим образом:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  

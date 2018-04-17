@@ -1,27 +1,25 @@
 ---
-title: "Архитектура вычислителя выражений | Документы Microsoft"
-ms.custom: 
+title: Архитектура вычислителя выражений | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fdcdfef67531af40027a2dfe8c731fe9ba5128f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-architecture"></a>Архитектура вычислителя выражений
 > [!IMPORTANT]
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
  DE создает объект, реализующий интерфейс [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) интерфейс помещает `IDebugParsedExpression` объекта в `IDebugExpression2` объекта и возвращает `IDebugExpression2` объекта из `IDebugExpressionContext2::ParseText`.  
   
 ### <a name="evaluating-the-expression"></a>Вычисление выражения  
- Visual Studio вызывает либо [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для вычисления выражения проанализированный. Обе эти методы вызывают [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` вызывает метод немедленно, а `IDebugExpression2::EvaluateAsync` вызывает метод через в фоновом потоке) для вычисления выражения проанализированный и возврата [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, который представляет значение и тип выражения проанализированный. `IDebugParsedExpression::EvaluateSync`Использование предоставленного SH, адреса и привязки для преобразования выражения проанализированный в фактическое значение, представленное `IDebugProperty2` интерфейса.  
+ Visual Studio вызывает либо [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для вычисления выражения проанализированный. Обе эти методы вызывают [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` вызывает метод немедленно, а `IDebugExpression2::EvaluateAsync` вызывает метод через в фоновом потоке) для вычисления выражения проанализированный и возврата [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, который представляет значение и тип выражения проанализированный. `IDebugParsedExpression::EvaluateSync` Использование предоставленного SH, адреса и привязки для преобразования выражения проанализированный в фактическое значение, представленное `IDebugProperty2` интерфейса.  
   
 ### <a name="for-example"></a>Например  
  После достижения точки останова в работающей программе, пользователь выбирает для просмотра переменной в **Быстрая проверка** диалоговое окно. Это диалоговое окно предназначено показывает имя переменной, значение, а его тип. Как правило, он может изменять значение.  

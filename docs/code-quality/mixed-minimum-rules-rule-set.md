@@ -1,28 +1,26 @@
 ---
-title: "Набор правил смешанного минимальные правила | Документы Microsoft"
-ms.custom: 
+title: Набор правил смешанного минимальные правила | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 430984d0f34c7596e78408d4138cd7506fdc7ba3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 783e88e22456f4babffa8d6f1748385c6dac819e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для смешанного кода"
 Минимальные правила Microsoft для смешанных сосредоточиться на наиболее важными проблемами в проектах C++, поддерживающие CLR, включая возможные уязвимости безопасности и сбои приложения. Следует включать этот набор правил в любой настраиваемый набор правил, создаваемые для проектов C++, поддерживающие среду.  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|  
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|  

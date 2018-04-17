@@ -1,26 +1,24 @@
 ---
-title: "Изменение значения локального | Документы Microsoft"
-ms.custom: 
+title: Изменение значения локального | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 03e6acb4ee9756d0bbb14a6e3667375d32cafba9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 422d1702f319db6da21892bcaa1bd50adad7909d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changing-the-value-of-a-local"></a>Изменение значения локального
 > [!IMPORTANT]
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  После пользователь вводит новое значение, Visual Studio вызывает [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) на [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, связанный с локальной.  
   
-2.  `IDebugProperty2::SetValueAsString`выполняет следующие задачи:  
+2.  Метод `IDebugProperty2::SetValueAsString` выполняет указанные ниже задачи.  
   
     1.  Оценивает строку для получения значения.  
   

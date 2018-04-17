@@ -1,11 +1,8 @@
 ---
-title: "Изменение данных в наборах данных | Документы Microsoft"
-ms.custom: 
+title: Изменение данных в наборах данных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: afb484c1d3bfdd705c5a28f150e4631048ead49d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a72949ad06b9140faa3e5013a8fd07e98b4db172
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 Изменение данных в таблицах данных, подобно изменить данные в таблице в любой базе данных. Процесс может включать вставки, обновления и удаления записей в таблице. В форму с привязкой к данным можно указать, какие поля являются изменяемые пользователем. В таких случаях инфраструктуры привязки данных обрабатывает все отслеживания изменений, чтобы эти изменения можно отправить в базу данных более поздней версии. Если предполагается передавать эти изменения в базе данных программным путем вносить изменения в данных, необходимо использовать объекты и методы, которые выполняют отслеживания изменений для вас.  

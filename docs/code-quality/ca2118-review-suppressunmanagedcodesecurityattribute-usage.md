@@ -1,12 +1,10 @@
 ---
-title: "CA2118: Обзор использования SuppressUnmanagedCodeSecurityAttribute | Документы Microsoft"
-ms.custom: 
+title: 'CA2118: Обзор использования SuppressUnmanagedCodeSecurityAttribute | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: обзор использования SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Открытый или защищенный тип или член <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> атрибута.  
   
 ## <a name="rule-description"></a>Описание правила  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>изменяет поведение системы безопасности по умолчанию для элементов, выполняющих неуправляемый код, с помощью COM взаимодействия или вызова неуправляемого кода. Как правило, система открывает [данных и моделирование](/dotnet/framework/data/index) на разрешение неуправляемого кода. Это требование происходит во время выполнения для каждого вызова члена и проверяет каждого участника в стеке вызовов для разрешения. Когда атрибут присутствует, система создает [требования связывания](/dotnet/framework/misc/link-demands) для разрешения: разрешения непосредственно вызывающего метода проверяются во время JIT-компиляции вызывающего объекта.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> изменяет поведение системы безопасности по умолчанию для элементов, выполняющих неуправляемый код, с помощью COM взаимодействия или вызова неуправляемого кода. Как правило, система открывает [данных и моделирование](/dotnet/framework/data/index) на разрешение неуправляемого кода. Это требование происходит во время выполнения для каждого вызова члена и проверяет каждого участника в стеке вызовов для разрешения. Когда атрибут присутствует, система создает [требования связывания](/dotnet/framework/misc/link-demands) для разрешения: разрешения непосредственно вызывающего метода проверяются во время JIT-компиляции вызывающего объекта.  
   
  Этот атрибут служит в основном для повышения производительности; однако, прирост производительности сопряжен со значительными рисками безопасности. Если атрибут поместить в открытые члены, вызывающие встроенные методы, вызывающие объекты в стеке вызовов (кроме непосредственного вызывающего объекта) не требуется разрешение на выполнение неуправляемого кода неуправляемый код. В зависимости от действий открытого члена и обработки ввода он может разрешить ненадежных вызывающих объектов для доступа к функциям, как правило, недоступны надежному коду.  
   

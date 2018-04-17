@@ -1,13 +1,10 @@
 ---
-title: "Предупреждения безопасности | Документы Microsoft"
-ms.custom: 
+title: Предупреждения безопасности | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
@@ -16,24 +13,23 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 397259c509e07ede09752b7c410bb6362170c412
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-warnings"></a>Предупреждения безопасности
 Предупреждения безопасности поддерживают более безопасные библиотеки и приложения. Эти предупреждения помогают устранить уязвимости в программе. Если отключить любое из этих предупреждений, следует четко обозначить в коде причину этого отключения, а также оповестить сотрудника, отвечающего за безопасность проекта разработки.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA2100: проверьте SQL-запросы с целью выявления уязвимостей безопасности](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Метод задает свойство System.Data.IDbCommand.CommandText с использованием строки, созданной из строкового аргумента метода. Это правило предполагает, что строковый аргумент содержит введенные пользователем данные. Созданная из введенных пользователем данных командная строка SQL уязвима перед атаками путем внедрения кода SQL.|  
 |[CA2102: перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Элемент в сборке, не помеченной атрибутом RuntimeCompatibilityAttribute или помеченной атрибутом RuntimeCompatibility(WrapNonExceptionThrows = false), содержит блок catch, который обрабатывает исключения System.Exception, однако непосредственно за этим блоком не следует общий блок catch.|  

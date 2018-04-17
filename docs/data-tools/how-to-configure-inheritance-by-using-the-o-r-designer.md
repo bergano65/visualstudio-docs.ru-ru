@@ -1,23 +1,20 @@
 ---
-title: "Как: Настройка наследования с помощью конструктора O R | Документы Microsoft"
-ms.custom: 
+title: 'Как: Настройка наследования с помощью конструктора O R | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b53dec270481ca8aa6009b9ddd27bdcdfeae6037
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: d55d91fb7275b37a1fc233377955ce0f17742f63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Как: Настройка наследования с помощью реляционного конструктора объектов
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах. При однотабличном наследовании имеется единственная таблица базы данных, которая содержит поля как для родительских данных, так и для дочерних. Для реляционных данных столбец дискриминатора содержит значение, которое определяет, какому классу принадлежит каждая запись.  

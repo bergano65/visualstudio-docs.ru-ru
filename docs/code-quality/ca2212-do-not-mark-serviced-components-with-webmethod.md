@@ -1,12 +1,10 @@
 ---
-title: "CA2212: Не следует помечать обслуживаемые компоненты атрибутом WebMethod | Документы Microsoft"
-ms.custom: 
+title: 'CA2212: Не следует помечать обслуживаемые компоненты атрибутом WebMethod | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2212
 - DoNotMarkServicedComponentsWithWebMethod
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2212
 - DoNotMarkServicedComponentsWithWebMethod
 ms.assetid: 774bc55d-e588-48ee-8f38-c228580feca2
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ad9d4b25e7143f9c2e8cc597d432b52e3e4a8132
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ca33b1dfeafa3894b3ad82fd42a04d8310d2bd50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: не следует помечать обслуживаемые компоненты атрибутом WebMethod
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Метод в типе, который наследует от <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> помечается <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Описание правила  
- <xref:System.Web.Services.WebMethodAttribute>применяется к методам в пределах веб-служб XML, созданных с помощью ASP.NET; он позволяет вызывать метод из удаленного веб-клиентов. Метод и класс должен быть открытыми и выполняться в веб-приложения ASP.NET. <xref:System.EnterpriseServices.ServicedComponent>типы поддерживаемых приложений COM + и могут использовать службы COM +. <xref:System.Web.Services.WebMethodAttribute>не применяется к <xref:System.EnterpriseServices.ServicedComponent> типы, поскольку они не предназначены для сценариев. В частности, добавление атрибута к <xref:System.EnterpriseServices.ServicedComponent> метод не выполняет метод вызываемой удаленных веб-клиентов. Поскольку <xref:System.Web.Services.WebMethodAttribute> и <xref:System.EnterpriseServices.ServicedComponent> метод иметь конфликтующие поведения и требования для контекста и потока транзакций, поведение метода будет неправильным в некоторых сценариях.  
+ <xref:System.Web.Services.WebMethodAttribute> применяется к методам в пределах веб-служб XML, созданных с помощью ASP.NET; он позволяет вызывать метод из удаленного веб-клиентов. Метод и класс должен быть открытыми и выполняться в веб-приложения ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> типы поддерживаемых приложений COM + и могут использовать службы COM +. <xref:System.Web.Services.WebMethodAttribute> не применяется к <xref:System.EnterpriseServices.ServicedComponent> типы, поскольку они не предназначены для сценариев. В частности, добавление атрибута к <xref:System.EnterpriseServices.ServicedComponent> метод не выполняет метод вызываемой удаленных веб-клиентов. Поскольку <xref:System.Web.Services.WebMethodAttribute> и <xref:System.EnterpriseServices.ServicedComponent> метод иметь конфликтующие поведения и требования для контекста и потока транзакций, поведение метода будет неправильным в некоторых сценариях.  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Чтобы устранить нарушение данного правила, удалите атрибут из <xref:System.EnterpriseServices.ServicedComponent> метод.  

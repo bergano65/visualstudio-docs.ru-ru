@@ -1,11 +1,8 @@
 ---
-title: "Иерархическое обновление | Документы Microsoft"
-ms.custom: 
+title: Иерархическое обновление | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +17,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1b374ac0b062069e11a5fa9b15822a4146cbaebf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchical-update"></a>Иерархическое обновление
 *Иерархическое обновление* называется процесс сохранения обновленных данных (из набора данных двух или более связанных таблиц) в базу данных, сохраняя ограничения ссылочной целостности. *Ссылочная целостность* — это правила согласованности условий, заданные с помощью ограничений в базе данных, которые управляют поведением вставки, обновления и удаления связанных записей. Например это целостность данных обеспечивает создание записи клиента перед предоставлением заказов, которые должны быть созданы для этого клиента.  Дополнительные сведения о связях в наборах данных см. в разделе [отношения в наборах данных](../data-tools/relationships-in-datasets.md)  
@@ -114,7 +111,7 @@ ms.lasthandoff: 12/22/2017
   
  Ниже перечислены часто используемые методы и свойства `TableAdapterManager` класса:  
   
-|Член|Описание:|  
+|Член|Описание|  
 |------------|-----------------|  
 |Метод `UpdateAll`|Сохраняет все данные из всех таблиц данных.|  
 |Свойство `BackUpDataSetBeforeUpdate`|Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|  

@@ -1,27 +1,23 @@
 ---
-title: "Пошаговое руководство: Добавление функций специализированного редактора | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Добавление функций специализированного редактора | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Пошаговое руководство: Добавление функций специализированного редактора
 После создания пользовательского редактора, можно добавить дополнительные компоненты к нему.  
@@ -148,7 +144,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Во избежание команды меню, как правило в пользовательском Интерфейсе перед изобретать новые команды следует использовать существующие команды в Интегрированной среде разработки. Общие команды определяются в SharedCmdDef.vsct и ShellCmdDef.vsct. Эти файлы устанавливаются по умолчанию в подкаталоге VisualStudioIntegration\Common\Inc вашей [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] установки.  
   
--   `ISelectionContainer`можно выразить одной или нескольких выбранных элементов. Каждого выбранного объекта реализуется в виде `IDispatch` объекта.  
+-   `ISelectionContainer` можно выразить одной или нескольких выбранных элементов. Каждого выбранного объекта реализуется в виде `IDispatch` объекта.  
   
 -   IDE реализует `IOleUndoManager` как служба, доступны из <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> или объектом, который может быть создан посредством <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Ваш редактор реализует `IOleUndoUnit` интерфейс для каждого `Undo` действие.  
   

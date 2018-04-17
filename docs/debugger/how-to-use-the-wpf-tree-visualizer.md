@@ -1,12 +1,10 @@
 ---
-title: "Как: использование визуализатора дерева WPF | Документы Microsoft"
-ms.custom: 
+title: 'Как: использование визуализатора дерева WPF | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,21 +14,21 @@ helpviewer_keywords:
 - WPF, debugging
 - debugging, WPF
 ms.assetid: 2a1bf1cd-90f9-4d06-9fb4-1bfc925afef3
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 78806b2ace7872db06ff403bcae28bb6eff21cd2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d25e7c2e6b086bced66df747cd26cc7279e52f96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Практическое руководство. Использование визуализатора дерева WPF
 Визуализатор дерева WPF можно использовать для изучения визуального дерева объекта WPF, а также для просмотра свойств зависимостей WPF для объектов, содержащихся в дереве. Дополнительные сведения о визуальных деревьев см. в разделе [деревьев в WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Дополнительные сведения о свойствах зависимостей см. в разделе [Общие сведения о свойствах зависимостей](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
   
- При открытии визуализатора дерева WPF отобразятся две панели: **визуального дерева** слева и **свойства** *имя***:**  *Тип* на правой панели. Выберите любой объект **визуального дерева** области и **свойства** *имя***:***тип* область автоматически обновляется для отображения свойств этого объекта.  
+ При открытии визуализатора дерева WPF отобразятся две панели: **визуального дерева** слева и **свойства** *имя***:***тип* области в правой части. Выберите любой объект **визуального дерева** области и **свойства** *имя***:***тип* панель автоматически обновляется для отображения свойства для этого объекта.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Открытие визуализатора дерева WPF  
   
@@ -54,7 +52,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-search-the-properties-list"></a>Поиск в списке свойств  
   
--   В **свойства** *имя***:***тип* области, введите строку, которую необходимо найти в **фильтрации**поле.  
+-   В **свойства** *имя***:***тип* области, введите строку, которую необходимо найти в **фильтра** поле.  
   
      Визуализатор дерева WPF немедленно найдет свойства, соответствующие введенной строке; после этого появится список тех свойств, которые совпадают с введенной строкой. Для поиска более точных совпадений введите больше символов.  
   

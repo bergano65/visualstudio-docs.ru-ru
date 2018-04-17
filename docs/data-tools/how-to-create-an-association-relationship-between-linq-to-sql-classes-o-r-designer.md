@@ -1,23 +1,20 @@
 ---
-title: "Как создать связь между классы LINQ to SQL с помощью реляционного конструктора объектов | Документы Microsoft"
-ms.custom: 
+title: Как создать связь между классы LINQ to SQL с помощью реляционного конструктора объектов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 5c86eff5c25dbabb368d7d90ed46be718b8db8e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: caf084ea7c3d4fdf9d793d279669c4114bfd81d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Как: создать ассоциацию между LINQ to SQL classes (O/R-конструктор)
 Ассоциации между классами сущностей в [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] аналогичны отношениям между таблицами в базе данных. Ассоциации между классами сущностей с помощью можно создавать **Редактор ассоциаций** диалоговое окно.  
@@ -30,7 +27,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="association-properties"></a>Свойства ассоциации
 После создания ассоциации при выборе ассоциации в реляционном конструкторе, имеются некоторые конфигурируемые свойства в **свойства** окна. (Ассоциация представляет собой линию между связанными классами). В следующей таблице представлены описания свойств ассоциации.  
   
-|Свойство|Описание:|  
+|Свойство|Описание|  
 |--------------|-----------------|  
 |**Количество элементов**|Контролирует, представляет ли ассоциация отношение "один-ко-многим" или отношение "один-к-одному".|  
 |**Дочернее свойство**|Определяет, создавать ли свойство на основе родителя, который является коллекцией, или на основе ссылки на дочерние записи на стороне внешнего ключа ассоциации. Например, в ассоциации между таблицами Customer и Order Если **дочернее свойство** равно **True**, свойство с именем Orders создается на основе родительского класса.|  

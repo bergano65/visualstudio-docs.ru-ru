@@ -1,11 +1,8 @@
 ---
-title: "Привязка элементов управления WPF к службе данных WCF | Документы Microsoft"
-ms.custom: 
+title: Привязка элементов управления WPF к службе данных WCF | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 В этом пошаговом руководстве вы создадите приложение WPF, содержащее элементы управления с привязкой к данным. Эти элементы управления привязаны к записям клиентов, инкапсулированным в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Вы также добавите кнопки, позволяющие клиентам просматривать и обновлять записи.  
@@ -247,11 +244,11 @@ ms.lasthandoff: 12/22/2017
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Навигации по торговым записям  
-Добавьте код, позволяющий пользователям выполнять прокрутку торговых записей с помощью  **\<**  и  **>**  кнопки.  
+Добавьте код, позволяющий пользователям выполнять прокрутку торговых записей с помощью **\<** и **>** кнопки.  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Предоставление пользователям возможности навигации по торговым записям  
   
-1.  В конструкторе, дважды щелкните  **<**  кнопки на поверхности окна.  
+1.  В конструкторе, дважды щелкните **<** кнопки на поверхности окна.  
   
      Visual Studio открывает файл кода программной части и создает новую `backButton_Click` обработчик событий для <xref:System.Windows.Controls.Primitives.ButtonBase.Click> события.  
   
@@ -260,7 +257,7 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  Вернитесь в конструктор и дважды щелкните  **>**  кнопки.  
+3.  Вернитесь в конструктор и дважды щелкните **>** кнопки.  
   
      Visual Studio открывает файл кода программной части и создает новую `nextButton_Click` обработчик событий для <xref:System.Windows.Controls.Primitives.ButtonBase.Click> события.  
   
@@ -302,7 +299,7 @@ ms.lasthandoff: 12/22/2017
   
     -   Текстовые поля отображают разные поля данных из первой торговой записи, имеющей код заказа на продажу **71774**.  
   
-    -   Можно щелкнуть  **>**  или  **<**  для перехода по другим торговым записям.  
+    -   Можно щелкнуть **>** или **<** для перехода по другим торговым записям.  
   
 5.  В одной из записей о продажах, введите текст в **комментарий** , а затем щелкните **сохранить изменения**.  
   

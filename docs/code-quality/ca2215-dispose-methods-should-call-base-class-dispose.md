@@ -1,12 +1,10 @@
 ---
-title: "CA2215: Методы Dispose должны вызывать метод dispose базового класса | Документы Microsoft"
-ms.custom: 
+title: 'CA2215: Методы Dispose должны вызывать метод dispose базового класса | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2215
 - DisposeMethodsShouldCallBaseClassDispose
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallBaseClassDispose
 - CA2215
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 791de4f70113df3759e920591ec94da5108eec9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8eb5c56ab3affe6322a858dfcd34c3b138f26d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: методы Dispose должны вызывать такие же методы базового класса
 |||  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
  Если тип наследуется от удаляемого типа, он должен вызвать <xref:System.IDisposable.Dispose%2A> метод базового типа из собственного <xref:System.IDisposable.Dispose%2A> метод. Вызов метода базового типа Dispose гарантирует, что освобождаются все ресурсы, созданные базовым типом.  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, вызовите `base`.<xref:System.IDisposable.Dispose%2A> в ваш <xref:System.IDisposable.Dispose%2A> метод.  
+ Чтобы устранить нарушение этого правила, вызовите метод `base`.<xref:System.IDisposable.Dispose%2A> в вашей <xref:System.IDisposable.Dispose%2A> метод.  
   
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Можно безопасно подавить предупреждение из этого правила, если вызов `base`.<xref:System.IDisposable.Dispose%2A> происходит на более глубоком уровне вызывающего, чем правила проверки.  

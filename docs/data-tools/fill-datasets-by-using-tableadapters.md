@@ -1,11 +1,8 @@
 ---
-title: "Заполнение наборов данных с помощью адаптеров таблиц | Документы Microsoft"
-ms.custom: 
+title: Заполнение наборов данных с помощью адаптеров таблиц | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: efd40aa9e702ce855438e29f65e5bcd221bae9a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Заполнения набора данных с помощью адаптера таблицы
 Компонент адаптера таблицы заполняет набор данных данными из базы данных, на основе одного или нескольких запросов или хранимых процедур, указанных вами. Адаптеры таблиц можно также выполнить добавляет, обновления и удаления в базе данных, чтобы сохранить изменения, внесенные в набор данных. Можно также выдать глобальные команды, которые не связаны с любой конкретной таблицы.  
@@ -38,7 +35,7 @@ ms.lasthandoff: 12/22/2017
   
  Подробные сведения об операциях адаптера таблицы можно пропустить непосредственно на один из следующих разделов:  
   
-|Раздел|Описание:|  
+|Раздел|Описание|  
 |-----------|-----------------|  
 |[Создание и настройка адаптеров таблиц](../data-tools/create-and-configure-tableadapters.md)|Использование конструкторов для создания и настройки адаптеров таблиц|  
 |[Создание параметризованных запросов адаптера таблицы](../data-tools/create-parameterized-tableadapter-queries.md)|Как разрешить пользователям аргументы процедуры TableAdapter или запросов|  
@@ -85,7 +82,7 @@ ms.lasthandoff: 12/22/2017
   
  Ниже перечислены часто используемые методы и свойства TableAdapters:  
   
-|Член|Описание:|  
+|Член|Описание|  
 |------------|-----------------|  
 |`TableAdapter.Fill`|Заполняет таблицу результатов команды SELECT адаптера таблицы TableAdapter связанные данные.|  
 |`TableAdapter.Update`|Отправляет изменения в базу данных и возвращает целое число, представляющее число строк, затронутых при обновлении. Дополнительные сведения см. в разделе [обновления данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md).|  
@@ -118,7 +115,7 @@ ms.lasthandoff: 12/22/2017
   
  Ниже перечислены часто используемые методы и свойства `TableAdapterManager` класса:  
   
-|Член|Описание:|  
+|Член|Описание|  
 |------------|-----------------|  
 |Метод `UpdateAll`|Сохраняет все данные из всех таблиц данных.|  
 |Свойство `BackUpDataSetBeforeUpdate`|Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|  

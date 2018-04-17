@@ -1,25 +1,21 @@
 ---
-title: "Проверьте приложение отладки с ведением журнала | Документы Microsoft"
-ms.custom: 
+title: Проверьте приложение отладки с ведением журнала | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 315a5c06a1ecda7976f17e20a299daed5dad65bd
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: bc13151ad58d5fa8a4832e577326dcbf2d7ff44b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Проверьте приложение с помощью IntelliTrace с ведением журнала отладки в Visual Studio
 Можно использовать [отладка с ведением журнала](../debugger/historical-debugging.md) переход назад и вперед по выполнению приложения и проверять его состояние.  

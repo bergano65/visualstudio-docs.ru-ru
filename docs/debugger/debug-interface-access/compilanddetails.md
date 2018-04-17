@@ -1,53 +1,49 @@
 ---
-title: "CompilandDetails | Документы Microsoft"
-ms.custom: 
+title: CompilandDetails | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CompilandDetails symbol
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc892cbdf49ab883c2bd45f4ef13ddda21b23d83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16f9239028cada1108092af3bc5a511964f89c6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compilanddetails"></a>CompilandDetails
-Сведения компилируемого объекта разбивается между символами с `SymTagCompiland` тег (низкий подробности) и `SymTagCompilandDetails` тег (высокий уровень детализации). `SymTagCompilandDetails`требуется загрузка дополнительных символов. Тем не менее, он предоставляет широкий набор сведений о компилируемого объекта, который недоступен с `SymTagCompiland` символов.  
+Сведения компилируемого объекта разбивается между символами с `SymTagCompiland` тег (низкий подробности) и `SymTagCompilandDetails` тег (высокий уровень детализации). `SymTagCompilandDetails` требуется загрузка дополнительных символов. Тем не менее, он предоставляет широкий набор сведений о компилируемого объекта, который недоступен с `SymTagCompiland` символов.  
   
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для этого типа символа.  
   
-|Свойство.|Тип данных|Описание:|  
+|Свойство.|Тип данных|Описание|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|`DWORD`|Номер построения серверной части компилятора.|  
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Тыловой основной номер версии компилятора.|  
 |[IDiaSymbol::get_backEndMinor](../../debugger/debug-interface-access/idiasymbol-get-backendminor.md)|`DWORD`|Тыловой дополнительный номер версии компилятора.|  
 |[IDiaSymbol::get_compilerName](../../debugger/debug-interface-access/idiasymbol-get-compilername.md)|`BSTR`|Имя компилятора, которое вызвало это компилируемого объекта (только в версии DIA SDK 8.0 или более поздней версии).|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Если изменить и продолжить была включена в компиляцию.|  
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Если изменить и продолжить была включена в компиляцию.|  
 |[IDiaSymbol::get_frontEndBuild](../../debugger/debug-interface-access/idiasymbol-get-frontendbuild.md)|`DWORD`|Номер построения интерфейса компилятора.|  
 |[IDiaSymbol::get_frontEndMajor](../../debugger/debug-interface-access/idiasymbol-get-frontendmajor.md)|`DWORD`|Интерфейсный основной номер версии компилятора.|  
 |[IDiaSymbol::get_frontEndMinor](../../debugger/debug-interface-access/idiasymbol-get-frontendminor.md)|`DWORD`|Интерфейсный дополнительный номер версии компилятора.|  
-|[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE`Если это компилируемого объекта имеет отладочной информации (только в версии DIA SDK 8.0 или более поздней версии).|  
-|[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE`Если это компилируемого объекта содержит управляемый код (только в пакет SDK для версии 8.0 или более поздней версии).|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE`Если компилируемого объекта был скомпилирован с [/GS (проверка безопасности буфера)](/cpp/build/reference/gs-buffer-security-check) переключатель компилятора (только в версии DIA SDK 8.0 или более поздней версии).|  
-|[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE`Если компилируемого объекта было преобразовано из общих промежуточного языка (CIL) кода в машинный код.|  
-|[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE`Если определяемых пользователем типов (UDT), выровненный по указаны некоторые границы памяти (только в версии DIA SDK 8.0 или более поздней версии).|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE`Если компилируемого объекта был скомпилирован с [/hotpatch (создать образ с обновлениями)](/cpp/build/reference/hotpatch-create-hotpatchable-image) переключатель компилятора (только в пакет SDK для версии 8.0 или более поздней версии).|  
-|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE`Если компилируемого объекта был скомпилирован с [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation) переключатель компилятора (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE` Если это компилируемого объекта имеет отладочной информации (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE` Если это компилируемого объекта содержит управляемый код (только в пакет SDK для версии 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Если компилируемого объекта был скомпилирован с [/GS (проверка безопасности буфера)](/cpp/build/reference/gs-buffer-security-check) переключатель компилятора (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE` Если компилируемого объекта было преобразовано из общих промежуточного языка (CIL) кода в машинный код.|  
+|[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE` Если определяемых пользователем типов (UDT), выровненный по указаны некоторые границы памяти (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` Если компилируемого объекта был скомпилирован с [/hotpatch (создать образ с обновлениями)](/cpp/build/reference/hotpatch-create-hotpatchable-image) переключатель компилятора (только в пакет SDK для версии 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` Если компилируемого объекта был скомпилирован с [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation) переключатель компилятора (только в версии DIA SDK 8.0 или более поздней версии).|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|`BOOL`|Значение TRUE, если компилируемого объекта является модулем промежуточного языка Майкрософт (MSIL) (только в пакет SDK для версии 8.0 или более поздней версии).|  
 |[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|Язык исходного кода.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ компилируемого объекта.|  

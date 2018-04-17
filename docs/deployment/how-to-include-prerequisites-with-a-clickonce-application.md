@@ -1,23 +1,21 @@
 ---
-title: "Как: включить необходимые компоненты ClickOnce-приложения | Документы Microsoft"
-ms.custom: 
+title: 'Как: включить необходимые компоненты ClickOnce-приложения | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7283ce590770c1ed2d14ffb79ec71d594c8b21f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Включение требуемых компонентов в дистрибутив приложения ClickOnce
 Перед распространением программного обеспечения необходимых компонентов с приложением [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] следует загрузить на компьютер разработчика пакеты установщиков этих необходимых компонентов. После публикации приложения и нажатия кнопки **загрузить необходимые компоненты с местоположения моего приложения**, произойдет ошибка, если пакеты установщиков отсутствуют в **пакетов** папки.  
@@ -25,7 +23,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  Чтобы добавить пакет установщика для платформы .NET Framework, см. [руководство по развертыванию .NET Framework для разработчиков](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a>Добавление пакета установщика с помощью файла Package.xml  
+##  <a name="Package"></a> Добавление пакета установщика с помощью файла Package.xml  
   
 1.  В проводнике откройте **пакетов** папки.  
   
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 4.  Найдите **имя** элемент, содержащий **http://go.microsoft.com/fwlink**и скопируйте URL-адрес. Включить **LinkID** часть.  
   
     > [!NOTE]
-    >  Если не **имя** элемент содержит **http://go.microsoft.com/fwlink**откройте **Product.xml** в корневой папке необходимого компонента и найдите  **fwlink** строка.  
+    >  Если не **имя** элемент содержит **http://go.microsoft.com/fwlink**откройте **Product.xml** в корневой папке необходимого компонента и найдите **fwlink** строка.  
   
     > [!IMPORTANT]
     >  Некоторые необходимые компоненты имеют несколько пакетов установщиков (например, для 32-разрядных или 64-разрядных систем). При наличии нескольких **имя** элементы содержат **fwlink**, остальные действия необходимо повторить для каждого из них.  

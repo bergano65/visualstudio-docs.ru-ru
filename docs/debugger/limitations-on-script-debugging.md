@@ -1,12 +1,10 @@
 ---
-title: "Ограничения на отладку скриптов | Документы Microsoft"
-ms.custom: 
+title: Ограничения на отладку скриптов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - script debugging, limitations
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2b959428d940fd61c9c343f468fca71d56332c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations-on-script-debugging"></a>Ограничения на отладку скриптов
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживает отладку клиентского скрипта с некоторыми ограничениями, которые описаны в этом разделе.  
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Точки останова должны быть установлены внутри блоков `<script>`. Невозможно сопоставление точек останова во встроенном скрипте или блоках `<% %>`.  
   
--   URL-адрес браузера для страницы должен содержать имя страницы. Например: http://microsoft.com/default.apsx. При сопоставлении точек останова невозможно распознать перенаправление с адреса, такого как http://microsoft.com, на страницу по умолчанию.  
+-   URL-адрес браузера для страницы должен содержать имя страницы. Например, http://microsoft.com/default.apsx. Сопоставление точек останова невозможно распознать перенаправление с адреса, например http://microsoft.com страницу по умолчанию.  
   
 -   Точка останова должна быть задана на странице, указанной в URL-адресе браузера, а не в файле (ascx) элемента управления ASPX, эталонной странице или другом файле, включенном в эту страницу. Точки останова, установленные во включенных страницах, не могут быть сопоставлены.  
   

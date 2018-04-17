@@ -1,27 +1,25 @@
 ---
-title: "Обновление проектов | Документы Microsoft"
-ms.custom: 
+title: Обновление проектов | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 Изменения в модель проекта из одной версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] к следующему может потребоваться обновление проектов и решений, чтобы их можно запускать на более новой версии. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Предоставляет интерфейсы, которые могут использоваться для реализации поддержки обновления в собственных проектах.  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
   
  Дополнительные сведения о резервном копировании и обновление проектов см. комментарии для интерфейса IVsProjectUpgrade в vsshell2.idl.  
   
-## <a name="upgrading-custom-projects"></a>Обновление пользовательских проектов
+## <a name="upgrading-custom-projects"></a> Обновление пользовательских проектов
 Если вы изменяете данные, сохраненные в файле проекта, при переводе продукта с одной версии Visual Studio на другую, то вам необходимо обеспечить обновление файла проекта со старой версии до новой. Для обеспечения обновления позволяет участвовать в **мастера преобразования Visual Studio**, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> интерфейса. Этот интерфейс содержит единственный доступный метод для обновления копии. Обновление проекта происходит в процессе открытия решения. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Интерфейс реализуется фабрикой проектов или по крайней мере должен доступен из фабрики проектов.  
   
  Старый механизм, который использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> интерфейс по-прежнему поддерживается, но по сути обновляет систему проектов в рамках открытого проекта. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Интерфейс называется таким образом [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды, даже если <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> вызывается или реализуется интерфейс. Такой подход позволяет использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> для реализации копирования и обновления только для частей проекта и остальную работу выполнять на месте (возможно, в новое место) <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> интерфейс.  
@@ -92,7 +90,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  Используйте методы класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> после обновления, связанные с сообщений для пользователя, с помощью мастера миграции Visual Studio.  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>интерфейс используется для реализации любого типа обновления файлов, которое должно происходить в рамках обновления проекта. Этот интерфейс не вызывается из <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, а предоставляется как механизм для обновления файлов, которые входят в систему проекта, но в основной системе проекта не может быть непосредственно учитывать. Например, такая ситуация может возникнуть, если связанными с компилятором файлами и свойствами с одной стороны и остальной системой проекта с другой стороны занимаются разные команды разработчиков.  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> интерфейс используется для реализации любого типа обновления файлов, которое должно происходить в рамках обновления проекта. Этот интерфейс не вызывается из <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, а предоставляется как механизм для обновления файлов, которые входят в систему проекта, но в основной системе проекта не может быть непосредственно учитывать. Например, такая ситуация может возникнуть, если связанными с компилятором файлами и свойствами с одной стороны и остальной системой проекта с другой стороны занимаются разные команды разработчиков.  
   
 ### <a name="ivsprojectupgrade-implementation"></a>Реализация интерфейса IVsProjectUpgrade  
  Если системе проекта реализован <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> , он не может участвовать в **мастера преобразования Visual Studio**. Тем не менее даже если вы реализуете <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> интерфейса, можно по-прежнему делегировать для обновления файлов <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> реализации.  

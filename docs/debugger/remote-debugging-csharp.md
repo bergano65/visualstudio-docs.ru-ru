@@ -1,13 +1,10 @@
 ---
-title: "Удаленное отлаживать проект C# или VB в Visual Studio | Документы Microsoft"
+title: Удаленное отлаживать проект C# или VB в Visual Studio | Документы Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a7c6892eb43191c69608e66b05f8177777e3e006
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка проекта C# или Visual Basic в Visual Studio
 Для отладки приложения Visual Studio, который был развернут на другом компьютере, установки и запуска средств удаленного компьютера, на котором развернуто приложение, настроить проект для подключения к удаленному компьютеру из Visual Studio и затем запустите приложение.
@@ -50,14 +46,14 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > В некоторых сценариях может быть наиболее эффективным для запуска удаленного отладчика из общей папки. Дополнительные сведения см. в разделе [запуск удаленного отладчика из общей папки](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Настройка удаленного отладчика
+## <a name="BKMK_setup"></a> Настройка удаленного отладчика
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Если необходимо добавить разрешения для других пользователей, изменение режима проверки подлинности, или номер порта удаленного отладчика, в разделе [настроить удаленный отладчик](../debugger/remote-debugging.md#configure_msvsmon).
   
-## <a name="remote_csharp"></a>Удаленная отладка проекта
+## <a name="remote_csharp"></a> Удаленная отладка проекта
 Отладчик не может развертывать классические приложения Visual C# и Visual Basic на удаленном компьютере, но вы все же можете выполнять их удаленную отладку описанным ниже образом. В следующей процедуре предполагается, что необходимо выполнить отладку его на компьютере с именем **MJO DL**, как показано на следующем рисунке.
   
 1.  Создание проекта WPF с именем **MyWpf**.  
@@ -97,7 +93,7 @@ ms.lasthandoff: 01/10/2018
   
 13. При появлении запроса введите сетевые учетные данные для подключения к удаленному компьютеру.  
   
-     Необходимые учетные данные зависят от конфигурации безопасности вашей сети. Например на компьютере домена, можно ввести имя домена и пароль. На компьютере, отличном от домена можно ввести имя компьютера и имя учетной записи пользователя, таких как  **MJO-DL\name@something.com** , вместе с правильным паролем.
+     Необходимые учетные данные зависят от конфигурации безопасности вашей сети. Например на компьютере домена, можно ввести имя домена и пароль. На компьютере, отличном от домена можно ввести имя компьютера и имя учетной записи пользователя, таких как **MJO-DL\name@something.com**, вместе с правильным паролем.
 
      Вы увидите, что главное окно приложения WPF открыт на удаленном компьютере.
   

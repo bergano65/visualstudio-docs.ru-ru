@@ -1,26 +1,24 @@
 ---
-title: "Диалоговое окно параметров сообщение | Документы Microsoft"
-ms.custom: 
+title: Диалоговое окно параметров сообщение | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
 - Spy++, message options
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45878b19619f5a3842d235242603293d990a510a
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ba1a2e4153e09bfd1af1c23b66587e0fc23b0280
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-options-dialog-box"></a>Диалоговое окно "Параметры сообщения"
 Используйте это диалоговое окно для выбора сообщений, отображаемых в [представления сообщений](../debugger/messages-view.md). Чтобы открыть это диалоговое окно предназначено выберите **сообщений журнала** из **Spy** меню.  

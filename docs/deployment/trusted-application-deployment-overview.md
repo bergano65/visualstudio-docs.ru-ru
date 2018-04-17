@@ -1,12 +1,10 @@
 ---
-title: "Общие сведения о развертывании приложения доверенных | Документы Microsoft"
-ms.custom: 
+title: Общие сведения о развертывании приложения доверенных | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - trusted application deployment
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
-caps.latest.revision: "31"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 34e83d6b035ba6ea91190fa89b9e1a63366e7907
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 46a43a372a8a8c4de407d4063ea2a625ede38b14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 Этот раздел содержит общие сведения о том, как развертывать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с повышенными правами с помощью технологии развертывания доверенных приложений.  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="trusted-application-deployment-basics"></a>Основные принципы развертывания надежных приложений  
  В следующей таблице показаны объекты и роли, используемые в развертывании надежных приложений.  
   
-|Объект или роль|Описание:|  
+|Объект или роль|Описание|  
 |--------------------|-----------------|  
 |Администратор|Лицо организации, отвечающее за обновление и обслуживание клиентских компьютеров.|  
 |Диспетчер доверия|Подсистема в среде CLR, ответственная за обеспечение безопасности клиентского приложения.|  

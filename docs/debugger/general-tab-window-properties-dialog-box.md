@@ -1,34 +1,30 @@
 ---
-title: "Вкладка \"Общие\", диалоговое окно \"Свойства\" | Документы Microsoft"
-ms.custom: 
+title: Вкладка "Общие", диалоговое окно "Свойства" | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aea8d5eb998280d6602f4ea28eb0b52d5f86da3
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 0186b03bd599a3644321b186dbd19c8d7338aca5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Вкладка "Общие" диалогового окна "Свойства окна"
 Используйте **Общие** вкладке отображаются сведения о выбранном окне. Для отображения [диалоговое окно "Свойства"](../debugger/window-properties-dialog-box.md), перемещение фокуса к [представление окон](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.  
   
  Следующие параметры доступны на **Общие** вкладки:  
   
-|Ввод|Описание:|  
+|Ввод|Описание|  
 |-----------|-----------------|  
 |**Заголовок окна**|Текст в заголовке окна или текст, содержащийся в окне, если он является элементом управления.|  
 |**Дескриптор окна**|Уникальный идентификатор этого окна. Номера дескрипторов окон используются неоднократно; они определяют окна только в течение времени существования этого окна.|  

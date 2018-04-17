@@ -2,28 +2,24 @@
 title: IDiaSymbol::get_isStripped | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isStripped method
 ms.assetid: cc2c4a0b-ab9f-4b79-a8ff-a3badb0405d6
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c273e6872c3874d9d39a0ed8782ec0e6c624c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 368230e048662169e557e135c78cab0ddc3a3806
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 Возвращает флаг, указывающий, были ли закрытые символы удаляются из файла символов.  
@@ -51,7 +47,7 @@ HRESULT get_isStripped(
   
 ## <a name="requirements"></a>Требования  
   
-|Требование|Описание:|  
+|Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
 |Версия:|ПАКЕТ SDK для версии 8.0|  

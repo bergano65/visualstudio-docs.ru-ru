@@ -1,12 +1,10 @@
 ---
-title: "CA1039: Списки обладают строгой типизацией | Документы Microsoft"
-ms.custom: 
+title: 'CA1039: Списки обладают строгой типизацией | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1039
 - ListsAreStronglyTyped
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 358ae06a2913f7b89338027c79f81c298253d23b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a52479c5c89cf2098ac90e3f755110fb81bb2697
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: списки обладают строгой типизацией
 |||  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Описание правила  
  Это правило требует <xref:System.Collections.IList> реализации предоставляли строго типизированные элементы, чтобы пользователям не придется приводить аргументы к <xref:System.Object?displayProperty=fullName> типа при использовании функциональных возможностей интерфейса. <xref:System.Collections.IList> Интерфейс реализуется классом коллекции объектов, доступных по индексу. В этом правиле предполагается, что тип, реализующий <xref:System.Collections.IList> делает это для управления коллекцией экземпляров типа, более строгого, чем <xref:System.Object>.  
   
- <xref:System.Collections.IList>реализует <xref:System.Collections.ICollection?displayProperty=fullName> и <xref:System.Collections.IEnumerable?displayProperty=fullName> интерфейсов. Если вы реализуете <xref:System.Collections.IList>, необходимо предоставить обязательные строго типизированные члены для <xref:System.Collections.ICollection>. Если расширение объектов в коллекции <xref:System.ValueType?displayProperty=fullName>, необходимо указать строго типизированный элемент для <xref:System.Collections.IEnumerable.GetEnumerator%2A> во избежание на снижение производительности, вызванные упаковка-преобразование; это не является обязательным, если объекты коллекции имеют ссылочный тип.  
+ <xref:System.Collections.IList> реализует <xref:System.Collections.ICollection?displayProperty=fullName> и <xref:System.Collections.IEnumerable?displayProperty=fullName> интерфейсов. Если вы реализуете <xref:System.Collections.IList>, необходимо предоставить обязательные строго типизированные члены для <xref:System.Collections.ICollection>. Если расширение объектов в коллекции <xref:System.ValueType?displayProperty=fullName>, необходимо указать строго типизированный элемент для <xref:System.Collections.IEnumerable.GetEnumerator%2A> во избежание на снижение производительности, вызванные упаковка-преобразование; это не является обязательным, если объекты коллекции имеют ссылочный тип.  
   
  В соответствии с этим правилом текста явно реализуйте члены интерфейса с помощью имен в виде InterfaceName.InterfaceMemberName, такие как <xref:System.Collections.IList.Add%2A>. Явные члены интерфейса используйте типы данных, которые объявлены в интерфейсе. Реализовать строго типизированные элементы, используя имена членов интерфейса, такие как `Add`. Объявите строго типизированные члены как открытые и объявления параметров и возвращаемых значений иметь строгий тип, который управляется коллекции. Строгие типы заменяют слабый типы, такие как <xref:System.Object> и <xref:System.Array> , которые были объявлены в интерфейсе.  
   

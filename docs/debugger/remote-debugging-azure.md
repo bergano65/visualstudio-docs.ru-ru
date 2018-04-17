@@ -1,26 +1,23 @@
 ---
-title: "Удаленная отладки ASP.NET Core для служб IIS и Azure | Документы Microsoft"
+title: Удаленная отладки ASP.NET Core для служб IIS и Azure | Документы Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 021b9c9fe0e4e921e339db432fdf6d248624c92c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на сервере IIS в Azure в Visual Studio 2017 г.
 
@@ -33,13 +30,13 @@ ms.lasthandoff: 01/23/2018
 
     В этом случае необходимо развернуть приложение из Visual Studio в Azure, но необходимо вручную установить или настроить IIS или удаленный отладчик (эти компоненты, были представлены пунктирной линией), как показано на следующем рисунке.
 
-    ![Remote debugger components](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Компоненты удаленной отладки](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
 
 * Для отладки службы IIS на Виртуальной машине Azure, выполните действия, описанные в этом разделе (см. в разделе [удаленной отладки на Виртуальной машине Azure](#remote_debug_azure_vm)). Это позволяет использовать пользовательскую конфигурацию служб IIS, но действий Установка и развертывание более сложной.
 
     Для виртуальной Машины Azure необходимо развернуть приложение из Visual Studio в Azure, а также необходимо вручную установить роль IIS и удаленным отладчиком, как показано на следующем рисунке.
 
-    ![Remote debugger components](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Компоненты удаленной отладки](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
 
 * Отладке ASP.NET Core в Azure Service Fabric см. в разделе [отладки удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
@@ -63,7 +60,7 @@ ms.lasthandoff: 01/23/2018
 
 4. Откройте файл About.cshtml.cs и установите точку останова в `OnGet` метода (в старые шаблоны откройте HomeController.cs вместо и задать точку останова в `About()` метода).
 
-## <a name="remote_debug_azure_app_service"></a>Удаленная отладка ASP.NET Core в службе приложений Azure
+## <a name="remote_debug_azure_app_service"></a> Удаленная отладка ASP.NET Core в службе приложений Azure
 
 Из Visual Studio можно быстро публиковать и отладка приложения, чтобы полностью подготовленные экземпляр IIS. Однако предустановку конфигурации IIS и его нельзя настроить. Более подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Если требуется возможность настройки IIS, попробуйте отладить [виртуальной Машины Azure](#BKMK_azure_vm).) 
 
@@ -83,7 +80,7 @@ ms.lasthandoff: 01/23/2018
 
     Вот и все! Остальные шаги в этом разделе применяются к удаленную отладку на Виртуальной машине Azure.
 
-## <a name="remote_debug_azure_vm"></a>Удаленная отладка ASP.NET Core на Виртуальной машине Azure
+## <a name="remote_debug_azure_vm"></a> Удаленная отладка ASP.NET Core на Виртуальной машине Azure
 
 Можно создать Azure VM для Windows Server и затем установить и настройки служб IIS и другие необходимые программные компоненты. Это занимает больше времени, чем развертывание для службы приложения Azure и требует выполните оставшиеся действия в этом учебнике.
 
@@ -95,7 +92,7 @@ ms.lasthandoff: 01/23/2018
 
 В зависимости от настройки безопасности браузера, он может сэкономить время, чтобы добавить следующие надежные сайты в браузер, поэтому можно легко загрузить программное обеспечение, описанный в этом учебнике. Возможно, потребуется доступ к этим сайтам:
 
-- microsoft.com
+- Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
@@ -109,15 +106,15 @@ ms.lasthandoff: 01/23/2018
 1. Установка [.NET Core Windows Server, где размещены](https://aka.ms/dotnetcore-2-windowshosting) пакета на хост-системы. Пакет для установки среды выполнения .NET Core, основной библиотеке .NET и модуль ASP.NET Core. Более подробные инструкции см. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Если система не использует подключение к Интернету, загрузка и установка  *[Visual C++ 2015 распространяемый компонент Microsoft](https://www.microsoft.com/download/details.aspx?id=53840)*  перед установкой пакета .NET Core Windows Server, где размещены.
+    > Если система не использует подключение к Интернету, загрузка и установка *[Visual C++ 2015 распространяемый компонент Microsoft](https://www.microsoft.com/download/details.aspx?id=53840)* перед установкой пакета .NET Core Windows Server, где размещены.
 
 3. Перезагрузку системы (или выполните **net stop был /y** следуют **net start w3svc** из командной строки, чтобы отобразить изменение в системе путь).
 
-### <a name="BKMK_install_webdeploy"></a>(Необязательно) Установка веб-развертывания 3.6 в Windows Server
+### <a name="BKMK_install_webdeploy"></a> (Необязательно) Установка веб-развертывания 3.6 в Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a>Настройка веб-сайта ASP.NET на сервере Windows Server
+### <a name="BKMK_deploy_asp_net"></a> Настройка веб-сайта ASP.NET на сервере Windows Server
 
 1. Откройте **Диспетчер служб IIS** и перейдите к разделу **Сайты**.
 
@@ -129,7 +126,7 @@ ms.lasthandoff: 01/23/2018
 
     Если вы не видите одному из этих пользователей с доступом, выполните действия, чтобы добавить IUSR в качестве пользователя с правами на чтение и выполнение.
 
-### <a name="bkmk_webdeploy"></a>(Необязательно) Публикация и развертывание приложения с помощью веб-развертывание из Visual Studio
+### <a name="bkmk_webdeploy"></a> (Необязательно) Публикация и развертывание приложения с помощью веб-развертывание из Visual Studio
 
 Если вы установили веб-развертывания с помощью установщика веб-платформы, можно развернуть приложение непосредственно из Visual Studio.
 
@@ -169,11 +166,11 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="BKMK_msvsmon"></a>Загрузите и установите инструменты удаленной отладки на Windows Server
+### <a name="BKMK_msvsmon"></a> Загрузите и установите инструменты удаленной отладки на Windows Server
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Настройка удаленного отладчика на Windows Server
+### <a name="BKMK_setup"></a> Настройка удаленного отладчика на Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -186,7 +183,7 @@ ms.lasthandoff: 01/23/2018
 2. В Visual Studio щелкните **Отладка > присоединить к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017 г., вы можете повторно присоединить с тем же процессом, ранее присоединена к с помощью **Отладка > повторно присоединиться к процессу...** (Shift+Alt+P). 
+    > В Visual Studio 2017 г., вы можете повторно присоединить с тем же процессом, ранее присоединена к с помощью **Отладка > повторно присоединиться к процессу...** (Shift + Alt + P). 
 
 3. Задайте для поля квалификатор  **\<имя удаленного компьютера >: 4022**.
 4. Нажмите кнопку **Обновить**.
@@ -211,7 +208,7 @@ ms.lasthandoff: 01/23/2018
 
     В Visual Studio должна быть достигнута точка останова.
 
-### <a name="bkmk_openports"></a>Устранение неполадок: Откройте требуемых портов в Windows Server
+### <a name="bkmk_openports"></a> Устранение неполадок: Откройте требуемых портов в Windows Server
 
 В большинстве установок необходимые порты открыты путем установки ASP.NET и удаленный отладчик. Тем не менее если приложение будет размещено за брандмауэром Устранение неполадок развертывания, может потребоваться убедитесь, что необходимые порты открыты.
 

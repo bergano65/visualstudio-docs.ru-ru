@@ -1,12 +1,10 @@
 ---
-title: "CA2218: Переопределяйте GetHashCode при переопределении Equals | Документы Microsoft"
-ms.custom: 
+title: 'CA2218: Переопределяйте GetHashCode при переопределении Equals | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OverrideGetHashCodeOnOverridingEquals
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eed9ae032a89eb30785acb71feac47d6c4f8cdc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a7844f4bc10acabeef81001a0c0890c603410ec5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: переопределяйте GetHashCode при переопределении Equals
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Открытый тип переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> , но не переопределяет <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Описание правила  
- <xref:System.Object.GetHashCode%2A>Возвращает значение, на основе текущего экземпляра, используемое для алгоритмов хэширования и структур данных, например в хэш-таблице. Два объекта, которые имеют одинаковый тип и равны должен возвращать одинаковые хэш-код для обеспечения правильной работы экземпляров следующих типов:  
+ <xref:System.Object.GetHashCode%2A> Возвращает значение, на основе текущего экземпляра, используемое для алгоритмов хэширования и структур данных, например в хэш-таблице. Два объекта, которые имеют одинаковый тип и равны должен возвращать одинаковые хэш-код для обеспечения правильной работы экземпляров следующих типов:  
   
 -   <xref:System.Collections.Hashtable?displayProperty=fullName>  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 -   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>  
   
--   Типы, реализующие<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
+-   Типы, реализующие <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Чтобы устранить нарушение данного правила, необходимо предоставить реализацию <xref:System.Object.GetHashCode%2A>. Для пары объектов того же типа, необходимо убедиться, что реализация возвращает то же значение, если реализация <xref:System.Object.Equals%2A> возвращает `true` для пары.  
@@ -65,7 +63,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="class-example"></a>Пример класса  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере класс (ссылочный тип), нарушающий это правило.  
   
 ### <a name="code"></a>Код  
@@ -79,7 +77,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="structure-example"></a>Пример структуры  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере показана структура (тип значения), нарушающий это правило.  
   
 ### <a name="code"></a>Код  

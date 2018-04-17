@@ -1,13 +1,10 @@
 ---
-title: "Предупреждения использования | Документы Microsoft"
-ms.custom: 
+title: Предупреждения использования | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.usagerules
 helpviewer_keywords:
@@ -15,24 +12,23 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740907b94611a0de4566260b5fd644048463178c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a4b909b1ac54103e5a360b9d6f2a7eed2f2c0be8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="usage-warnings"></a>предупреждения использования
 Предупреждения использования поддерживают правильное использование платформы .NET Framework.  
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-|Правило|Описание:|  
+|Правило|Описание|  
 |----------|-----------------|  
 |[CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)|Сигнатура метода включает параметр, не использующийся в основной части метода.|  
 |[CA1806: не игнорируйте результаты метода](../code-quality/ca1806-do-not-ignore-method-results.md)|Создается, но никогда не используется новый объект, либо вызывается метод, который создает и возвращает новую строку, и такая новая строка никогда не используется, либо метод COM или P/Invoke возвращает HRESULT или код ошибки, который никогда не используется.|  

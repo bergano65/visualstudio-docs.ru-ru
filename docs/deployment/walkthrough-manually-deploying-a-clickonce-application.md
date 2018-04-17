@@ -1,13 +1,10 @@
 ---
-title: "Разбор примера: Развертывание вручную приложения ClickOnce | Документы Microsoft"
-ms.custom: 
+title: 'Разбор примера: Развертывание вручную приложения ClickOnce | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Разбор примера: развертывание вручную приложения ClickOnce
 Если Visual Studio нельзя использовать для развертывания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, или если необходимо использовать дополнительные функции развертывания, таких как развертывание надежных приложений следует использовать средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты. В этом пошаговом руководстве описывается создание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью версии командной строки (Mage.exe) или графической версии (MageUI.exe) манифеста средства создания и редактирования.  
@@ -70,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Определите, требуется ли приложению необходимые компоненты на клиентском компьютере.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения, развернутые из Visual Studio могут включать предварительные условия для установки начального загрузчика (setup.exe) с развертыванием. В этом примере создается два манифеста, необходимые для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Загрузчик необходимых компонентов можно создать с помощью [задача GenerateBootstrapper](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, развернутые из Visual Studio могут включать предварительные условия для установки начального загрузчика (setup.exe) с развертыванием. В этом примере создается два манифеста, необходимые для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Загрузчик необходимых компонентов можно создать с помощью [задача GenerateBootstrapper](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Чтобы развернуть приложение с помощью средства командной строки Mage.exe  
   
@@ -128,7 +124,7 @@ ms.lasthandoff: 12/22/2017
   
 10. Скопируйте все файлы в каталоге развертывания назначение развертывания или носителя. Это может быть папка на веб-сайта или сайта FTP, общий файловый ресурс или компакт-диска.  
   
-11. Предоставить пользователям URL-адрес, UNC-путь или физический носитель, необходимые для установки приложения. Если указать URL-адрес или UNC-имя, необходимо предоставить пользователям полный путь к манифесту развертывания. Например если AppToDeploy развертывается http://webserver01/ в каталоге AppToDeploy, полный URL-адрес будет http://webserver01/AppToDeploy/AppToDeploy.application.  
+11. Предоставить пользователям URL-адрес, UNC-путь или физический носитель, необходимые для установки приложения. Если указать URL-адрес или UNC-имя, необходимо предоставить пользователям полный путь к манифесту развертывания. Например, если развертывается AppToDeploy http://webserver01/ в каталоге AppToDeploy полный путь URL-адрес будет иметь http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Чтобы развернуть приложение с помощью графического средства MageUI.exe  
   
@@ -203,7 +199,7 @@ ms.lasthandoff: 12/22/2017
   
 28. Скопируйте все файлы в каталоге развертывания назначение развертывания или носителя. Это может быть папка на веб-сайта или сайта FTP, общий файловый ресурс или компакт-диска.  
   
-29. Предоставить пользователям URL-адрес, UNC-путь или физический носитель, необходимые для установки приложения. Если указать URL-адрес или UNC-имя, необходимо предоставить пользователям полный путь манифеста развертывания. Например если AppToDeploy развертывается http://webserver01/ в каталоге AppToDeploy, полный URL-адрес будет http://webserver01/AppToDeploy/AppToDeploy.application.  
+29. Предоставить пользователям URL-адрес, UNC-путь или физический носитель, необходимые для установки приложения. Если указать URL-адрес или UNC-имя, необходимо предоставить пользователям полный путь манифеста развертывания. Например, если развертывается AppToDeploy http://webserver01/ в каталоге AppToDeploy полный путь URL-адрес будет иметь http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Если необходимо развернуть новую версию приложения, создайте новый каталог с именем новой версии — например, 1.0.0.1—and скопировать новые файлы приложения в новый каталог. Далее необходимо выполнить предыдущие шаги, чтобы создать и подписать новый манифест приложения и обновить и подписать манифест развертывания. Укажите ту же версию, более поздней версии в Mage.exe `-New` и `-Update` вызовов, как [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] обновляет только новые версии с наибольшее целое число слева. Если вы использовали MageUI.exe, можно обновить манифест развертывания, открыв его, выбрав **ссылка приложения** вкладку, щелкнув **выбрать манифест** кнопку, а затем выбрав обновленный манифест приложения.  

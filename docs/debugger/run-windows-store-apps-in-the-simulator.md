@@ -1,28 +1,26 @@
 ---
-title: "Запуск приложений UWP в симуляторе | Документы Microsoft"
-ms.custom: 
+title: Запуск приложений UWP в симуляторе | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск в симуляторе приложений UWP
 Симулятор Visual Studio для приложений UWP — это классическое приложение, которое имитирует приложение UWP. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать симулятор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать распространенные касания и поворота события и свойства сетевых подключений.
@@ -98,7 +96,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 >  Можно сохранить масштабированные версии точечных рисунков в приложении, и Windows загрузит правильный рисунок для текущего масштаба. Дополнительные сведения см. в разделе [начальный конструктора и пользовательского интерфейса](/windows/uwp/layout/design-and-ui-intro). Однако, если изменить разрешение симулятора таким образом, чтобы ОС Windows выбрала другое изображение для соответствия разрешению, необходимо остановить и перезапустить сеанс отладки для просмотра нового изображения.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Создание снимка приложения для представления магазин Microsoft  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Создание снимка приложения для представления магазин Microsoft  
  При отправке приложения в Microsoft Store, необходимо включить снимки экрана приложения.  
   
 > [!NOTE]

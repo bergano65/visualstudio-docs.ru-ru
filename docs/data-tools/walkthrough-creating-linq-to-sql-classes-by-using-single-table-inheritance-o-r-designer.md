@@ -1,26 +1,23 @@
 ---
-title: "Пошаговое руководство: Создание классов LINQ to SQL, используя наследование одиночной таблицы (конструктор O-R) | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание классов LINQ to SQL, используя наследование одиночной таблицы (конструктор O-R) | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 8a0c6702a965ae2733d2461cf30f5fd91f27dba3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с использованием наследования с одной таблицей (реляционный конструктор объектов)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживает наследование одиночной таблицы, как именно она обычно осуществляется в реляционных системах. В этом пошаговом руководстве расширяется универсальным шагам, описанным в [как: Настройка наследования с помощью реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) раздела и предоставляет некоторые реальные данные, чтобы продемонстрировать наследование в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -57,8 +54,8 @@ ms.lasthandoff: 12/22/2017
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
     |**Type**|**int**|**True**|  
-    |**FirstName**|**nvarchar(200)**|**False**|  
-    |**Фамилия**|**nvarchar(200)**|**False**|  
+    |**FirstName**|**Nvarchar(200)**|**False**|  
+    |**Фамилия**|**Nvarchar(200)**|**False**|  
     |**Диспетчер**|**int**|**True**|  
   
 3.  Задайте столбец ID в качестве первичного ключа  

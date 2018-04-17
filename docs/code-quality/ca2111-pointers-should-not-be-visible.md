@@ -1,12 +1,10 @@
 ---
-title: "CA2111: Указатели не должны быть видимыми | Документы Microsoft"
-ms.custom: 
+title: 'CA2111: Указатели не должны быть видимыми | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2111
 - PointersShouldNotBeVisible
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 31ae25892b6b5a153a0a4d1e52047eb5be2368d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ce027b8e6bcf39623e07a862d4f9fb23c33b9967
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: указатели не должны быть видимыми
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Открытый или защищенный <xref:System.IntPtr?displayProperty=fullName> или <xref:System.UIntPtr?displayProperty=fullName> поле не только для чтения.  
   
 ## <a name="rule-description"></a>Описание правила  
- <xref:System.IntPtr>и <xref:System.UIntPtr> являются типами указателей, которые используются для доступа к неуправляемой памяти. Если указатель не является закрытым, внутренним или доступным только для чтения, вредоносный код может изменить значение указателя, что приведет к предоставлению доступа к произвольным областям памяти или сбоям приложения или системы.  
+ <xref:System.IntPtr> и <xref:System.UIntPtr> являются типами указателей, которые используются для доступа к неуправляемой памяти. Если указатель не является закрытым, внутренним или доступным только для чтения, вредоносный код может изменить значение указателя, что приведет к предоставлению доступа к произвольным областям памяти или сбоям приложения или системы.  
   
  Если вы собираетесь безопасный доступ к типу, содержащему поле указателя, см. раздел [CA2112: защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   

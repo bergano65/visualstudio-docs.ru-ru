@@ -1,23 +1,21 @@
 ---
-title: "CA3075: Обработка небезопасных DTD | Документы Microsoft"
-ms.custom: 
+title: 'CA3075: Обработка небезопасных DTD | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34f3d518e282650f9369aa3af8fe1600b4f28662
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7b15c358c80a60b4ff91fd9c741fbddf2467ae8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: обработка небезопасных DTD
 |||  
@@ -37,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
 -   задано свойство <xref:System.Xml.XmlNode.InnerXml%2A> в XML;  
   
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>свойство задается для синтаксического анализа.  
+-   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> свойство задается для синтаксического анализа.  
   
 -   недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver> ;  
   
--   метод XmlReader.<xref:System.Xml.XmlReader.Create%2A> вызывается с небезопасным экземпляром <xref:System.Xml.XmlReaderSettings> или без экземпляра;  
+-   Средство чтения XML.<xref:System.Xml.XmlReader.Create%2A> метод вызывается с небезопасным <xref:System.Xml.XmlReaderSettings> экземпляра или без экземпляра.  
   
--   <xref:System.Xml.XmlReader>будет создано небезопасных параметров или значений.  
+-   <xref:System.Xml.XmlReader> будет создано небезопасных параметров или значений.  
   
  В каждом из этих случаев результат одинаковый: содержимое из файловой системы или сетевых папок с компьютера, на котором обрабатывается XML, станет доступно злоумышленнику, что впоследствии можно использовать для атак типа "отказ в обслуживании".  
   

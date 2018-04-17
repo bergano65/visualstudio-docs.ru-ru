@@ -1,13 +1,10 @@
 ---
-title: "Удаленная отладки проекта Visual C++ | Документы Microsoft"
+title: Удаленная отладки проекта Visual C++ | Документы Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: df0caacf8d3d99117208ce197e075f20f6df8b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Удаленная отладка проекта Visual C++ в Visual Studio
 Чтобы отладить приложение Visual Studio на другом компьютере, установить и запустить средства удаленного на компьютере, где будет производиться развертывание приложения, настройте проект для подключения к удаленному компьютеру из Visual Studio, а затем развернуть и запустить приложение.
@@ -50,14 +46,14 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > В некоторых сценариях может быть наиболее эффективным для запуска удаленного отладчика из общей папки. Дополнительные сведения см. в разделе [запуск удаленного отладчика из общей папки](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Настройка удаленного отладчика
+## <a name="BKMK_setup"></a> Настройка удаленного отладчика
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Если необходимо добавить разрешения для других пользователей, изменение режима проверки подлинности, или номер порта удаленного отладчика, в разделе [настроить удаленный отладчик](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Удаленная отладка проекта Visual C++  
+## <a name="remote_cplusplus"></a> Удаленная отладка проекта Visual C++  
  В следующей процедуре имя и путь проекта — C:\remotetemp\MyMfc, а имя удаленного компьютера — **MJO DL**.  
   
 1.  Создание приложения MFC с именем **mymfc.**  
@@ -96,7 +92,7 @@ ms.lasthandoff: 01/10/2018
   
 10. При появлении запроса введите сетевые учетные данные для подключения к удаленному компьютеру.  
   
-     Необходимые учетные данные относятся к конфигурации безопасности вашей сети. Например на компьютере домена, может выбрать сертификат безопасности или введите имя домена и пароль. На компьютере, отличном от домена можно ввести имя компьютера и имя учетной записи пользователя, таких как  **MJO-DL\name@something.com** , вместе с правильным паролем.  
+     Необходимые учетные данные относятся к конфигурации безопасности вашей сети. Например на компьютере домена, может выбрать сертификат безопасности или введите имя домена и пароль. На компьютере, отличном от домена можно ввести имя компьютера и имя учетной записи пользователя, таких как **MJO-DL\name@something.com**, вместе с правильным паролем.  
   
 11. На компьютере с Visual Studio вы должны увидеть, что выполнение остановилось в точке останова.  
   

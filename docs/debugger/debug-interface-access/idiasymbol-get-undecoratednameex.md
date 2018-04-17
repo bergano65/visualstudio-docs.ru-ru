@@ -2,28 +2,24 @@
 title: IDiaSymbol::get_undecoratedNameEx | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d737ccfe9dbbcdf7a205fb847bb81344cd18ff0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Извлекает часть или все недекорированного имени для C++ внутреннего имени (связь).  
@@ -56,7 +52,7 @@ HRESULT get_undecoratedNameEx(
 > [!NOTE]
 >  Флаг имена не определены в пакет SDK для, вам нужно добавить объявления в код или использовать необработанные значения.  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Разрешает полный undecoration.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Удаляет начальные знаки подчеркивания из расширенные ключевые слова корпорации Майкрософт.|  

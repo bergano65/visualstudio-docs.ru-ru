@@ -1,13 +1,10 @@
 ---
-title: "Описателях в отладчике (C#) | Документы Microsoft"
-ms.custom: 
+title: Описателях в отладчике (C#) | Документы Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,17 +23,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fee9e4c355c83ae44cf6147084c95a3b213bce5a
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: c4b238833ecf96a80c66d6751b9a9afa772e2fee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели формата в C# в отладчике Visual Studio
 С помощью описателей формата можно изменить формат, в котором значение отображается в окне **Контрольные значения** . Можно также использовать описатели формата в **Интерпретация** окне **команда** окна в [точки трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)и даже в окнах исходного кода. Если вы приостановите выполнение на выражении в одном из этих окон, результат отобразится в подсказке по данным. Отображение результата в подсказке по данным будет соответствовать спецификатору формата.  

@@ -1,29 +1,25 @@
 ---
-title: "Использование атрибута DebuggerDisplay | Документы Microsoft"
-ms.custom: 
+title: Использование атрибута DebuggerDisplay | Документы Microsoft
+ms.custom: ''
 ms.date: 08/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C#], debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11770efcc517b9ec713656f540d75b0a2c412ae7
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 70cf3801477ccf70a44cf87e672c8be7142f9b07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Использование атрибута DebuggerDisplay
 [DebuggerDisplayAttribute-класс](/dotnet/api/system.diagnostics.debuggerdisplayattribute) управляет отображением объекта, свойство или поле в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.  

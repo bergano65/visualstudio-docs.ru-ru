@@ -1,23 +1,21 @@
 ---
-title: "Как: публикация приложения WPF с включенными визуальными стилями | Документы Microsoft"
-ms.custom: 
+title: 'Как: публикация приложения WPF с включенными визуальными стилями | Документы Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
 Визуальные стили включить внешний стандартных элементов управления, изменяются в зависимости от выбранного пользователем темы. По умолчанию визуальные стили не включен для приложений Windows Presentation Foundation (WPF), поэтому их необходимо включить вручную. Тем не менее Включение визуальные стили для приложения WPF и затем Публикация решения приведет к ошибке. Описывается, как устранить эту ошибку и процесс для публикации приложения WPF с включенными визуальными стилями. Дополнительные сведения о стилях см. в разделе [наглядный обзор стили](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Дополнительные сведения об этой ошибке см. в разделе [Устранение конкретных ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -34,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
  Затем можно переместить опубликованных файлов в расположение, из которого требуется конечным пользователям для установки приложения.  
   
-##  <a name="BKMK_publishsolwovs"></a>Публикация решения без включенными визуальными стилями  
+##  <a name="BKMK_publishsolwovs"></a> Публикация решения без включенными визуальными стилями  
   
 1.  Убедитесь, что проект не имеет включенными визуальными стилями. Во-первых Проверьте файл манифеста проекта следующий XML-код. Затем при наличии XML заключите в тег комментария XML.  
   
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Чтобы открыть файл манифеста в проекте Visual Basic  
   
-    1.  В строке меню выберите **проекта**, *ProjectName***свойства**, где *ProjectName* имя проекта WPF.  
+    1.  В строке меню выберите **проекта**, * имя_проекта ***свойства**, где *ProjectName* имя проекта WPF.  
   
          Отображаются страницы свойств для проекта WPF.  
   
@@ -58,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Чтобы открыть файл манифеста в проектах C#  
   
-    1.  В строке меню выберите **проекта**, *ProjectName***свойства**, где *ProjectName* имя проекта WPF.  
+    1.  В строке меню выберите **проекта**, * имя_проекта ***свойства**, где *ProjectName* имя проекта WPF.  
   
          Отображаются страницы свойств для проекта WPF.  
   
@@ -73,7 +71,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  Постройте и публикации решения. Дополнительные сведения о том, как опубликовать решение см. в разделе [как: публикация приложения ClickOnce с использованием мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Создать файл манифеста  
+##  <a name="BKMK_CreateManifest"></a> Создать файл манифеста  
   
 1.  Вставьте следующий XML-код в файл блокнота.  
   
@@ -94,7 +92,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  Остальных процедур предполагается, что этот файл имеет имя **themes.manifest** и что файл сохраняется в каталоге C:\temp на компьютере.  
   
-##  <a name="BKMK_embedmanifest"></a>Внедрять файл манифеста в исполняемый файл опубликованного решения  
+##  <a name="BKMK_embedmanifest"></a> Внедрять файл манифеста в исполняемый файл опубликованного решения  
   
 1.  Откройте **командную строку Visual Studio**.  
   
@@ -107,7 +105,7 @@ ms.lasthandoff: 12/22/2017
     > -   Решение находится в следующем каталоге: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      Решение публикуется в следующий каталог: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Самую последнюю версию файлов опубликованное приложение находится в следующем каталоге:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   Самую последнюю версию файлов опубликованное приложение находится в следующем каталоге: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Необходимо использовать имя или расположение каталогов, описанных выше. Имя и расположение, описанных выше, используются только для иллюстрации шагов, необходимых для публикации решения.  
   
@@ -123,7 +121,7 @@ ms.lasthandoff: 12/22/2017
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Подписывать манифесты приложения и развертывания  
+##  <a name="BKMK_signappdeplyman"></a> Подписывать манифесты приложения и развертывания  
   
 1.  В командной строке выполните следующую команду для удаления `.deploy` расширения из исполняемого файла в текущем каталоге.  
   
