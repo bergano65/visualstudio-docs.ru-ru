@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Создание базового проекта определения сайта | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Создание базового проекта определения сайта | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 72a99a082fb1626013be6fa0ac5c759a43fd58a7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство. Создание базового проекта определения сайта
   В этом пошаговом руководстве демонстрируется создание простейшего определения сайта, содержащий Визуальная веб-часть с некоторыми элементами управления, на нем. Для ясности визуальной веб-части, создаваемом имеет несколько элементов управления. Тем не менее можно создать более сложное определений сайтов SharePoint, которые включают дополнительные функциональные возможности.  

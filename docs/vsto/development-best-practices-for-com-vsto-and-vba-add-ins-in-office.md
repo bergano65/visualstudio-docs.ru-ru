@@ -1,23 +1,24 @@
 ---
-title: "Рекомендации для разработки и рекомендации по COM, VSTO и VBA надстройки Office | Документы Microsoft"
-ms.custom: 
+title: Рекомендации для разработки и рекомендации по COM, VSTO и VBA надстройки Office | Документы Microsoft
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Рекомендации по разработке для COM, VSTO и VBA надстройки Office
   При разработке надстройки COM VSTO и VBA для Office, выполните рекомендации по разработке описано в этой статье.   Это позволит обеспечить:
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/10/2018
 
 Для предоставления положения о поддержке для клиентских приложений Office (например, Word или Excel), сначала убедитесь, что надстройки выполняются в текущей версии Office и затем фиксировать для предоставления обновлений, если добавить в приостанавливает выполнение в будущем выпуске. Необходимо протестировать надстроек, когда корпорация Майкрософт выпускает новую сборку или обновление для Office. Microsoft редко изменяются платформой расширяемости COM, VSTO и VBA в Office, и эти изменения будут также отражены в.
 
->Важно: Корпорации Майкрософт существует список поддерживаемых надстроек для отчеты о готовности и контактные сведения независимых поставщиков программного обеспечения. Для получения надстройки в списке в разделе [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Важно: Корпорации Майкрософт существует список поддерживаемых надстроек для отчеты о готовности и контактные сведения независимых поставщиков программного обеспечения. Для получения надстройки в списке в разделе [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Монитор процесса можно использовать для отладки установки или загрузки проблемы
 Если надстройка имеет проблемы совместимости, во время установки или загрузки, они могут свидетельствовать о проблемы с доступом к файлу или реестру. Используйте [монитор процесса](/sysinternals/downloads/procmon) или аналогичное средство отладки для входа и сравнивается поведение для рабочей среды для выявления проблемы.

@@ -1,12 +1,10 @@
 ---
-title: "Пошаговое руководство: Импорт пользовательской главной страницы и страницы с изображением сайта | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Импорт пользовательской главной страницы и страницы с изображением сайта | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Пошаговое руководство. Импорт пользовательской главной страницы и страницы сайта с изображением
   В этом пошаговом руководстве показано, как импортировать пользовательскую главную страницу и страницу сайта с изображением в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимо иметь следующие компоненты для выполнения данного пошагового руководства.  
   
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
@@ -153,7 +152,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  На **выберите элементы для импорта** в разделе **модуль** в **тип** столбец, установите флажки для только файлы в следующей таблице для импорта.  
   
-    |Имя файла|Описание:|  
+    |Имя файла|Описание|  
     |---------------|-----------------|  
     |_catalogsmasterpage\_|Пользовательская главная страница.|  
     |images_|Файл изображения в файловой системе SharePoint.|  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Откройте сайт SharePoint для просмотра развернутых элементов.  
   
- Альтернативный способ импорта файлов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывания их в SharePoint состоит в добавлении файлов в модули [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Как: Импорт главной страницы или темы](../sharepoint/how-to-import-a-master-page-or-theme.md) и [использование модулей для включения файлов в решении](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Альтернативный способ импорта файлов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывания их в SharePoint состоит в добавлении файлов в модули [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Как: Импорт главной страницы или темы](../sharepoint/how-to-import-a-master-page-or-theme.md) и [использование модулей для включения файлов в решении](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>См. также  
  [Импорт элементов из существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   

@@ -1,12 +1,10 @@
 ---
-title: "Как: кэширование данных в документе, защищенном паролем | Документы Microsoft"
-ms.custom: 
+title: 'Как: кэширование данных в документе, защищенном паролем | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Практическое руководство. Кэширование данных в документе, защищенном паролем
   При добавлении данных в кэш данных в документе или книге, защищенной паролем, изменения кэшированных данных не сохраняются автоматически. Можно сохранить изменения в кэшированных данных путем переопределения двух методов в проекте.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Кэширование данных в книге Excel, защищенной паролем  
   
-1.  В `ThisWorkbook` класс или один из `Sheet`  *n*  классы, пометьте открытое поле или свойство, которое будет кэшироваться. Для получения дополнительной информации см. [Caching Data](../vsto/caching-data.md).  
+1.  В `ThisWorkbook` класс или один из `Sheet` *n* классов, пометьте открытое поле или свойство, которое будет кэшироваться. Для получения дополнительной информации см. [Caching Data](../vsto/caching-data.md).  
   
 2.  Переопределить <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> метод `ThisWorkbook` класса и снять защиту с книги.  
   

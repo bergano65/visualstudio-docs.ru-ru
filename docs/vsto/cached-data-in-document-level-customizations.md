@@ -1,12 +1,10 @@
 ---
-title: "Кэшированные данные в настройках уровня документа | Документы Microsoft"
-ms.custom: 
+title: Кэшированные данные в настройках уровня документа | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Кэшированные данные в настройках уровня документа
   Основная цель настроек уровня документа — отделение данных от представления в документах Office. Данные относятся к сведениям, хранящимся в документе, включая числа и текст. Представление ссылается на пользовательский интерфейс и объектной модели Microsoft Office Word и Microsoft Office Excel.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Дополнительные сведения о настройках уровня документа см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) и [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).  
+ Дополнительные сведения о настройках уровня документа см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) и [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>Основные сведения о модели программирования кэшированных данных  
  Область данных может содержать любой объект в решении, отвечающий определенным требованиям. Эти объекты включают <xref:System.Data.DataSet> объектов, <xref:System.Data.DataTable> объектов и любой другой объект, могут быть сериализованы с <xref:System.Xml.Serialization.XmlSerializer> класса. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).  

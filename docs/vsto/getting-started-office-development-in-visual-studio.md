@@ -1,13 +1,10 @@
 ---
-title: "Приступая к работе (Разработка решений Office в Visual Studio) | Документы Microsoft"
-ms.custom: 
+title: Приступая к работе (Разработка решений Office в Visual Studio) | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04be00558cd3dd22cb9aa7546d6797778b1bae2c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e0c945667f99fdd6df431413e3f1f96d06eca4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>Начало работы (разработка решений Office в Visual Studio)
   В этом разделе содержатся подразделы, позволяющие начать работу со средствами разработчика для Microsoft Office в Visual Studio.  
@@ -31,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 >  Заинтересованы в разработке решений, расширяющих возможности Office через [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и их можно создавать с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Общие сведения о разработке решений Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Общие сведения о разработке решений Office в Visual Studio.  
   
  [Изменения структуры проектов Office для .NET Framework 4 и .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  

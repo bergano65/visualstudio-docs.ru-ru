@@ -1,13 +1,10 @@
 ---
-title: "Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace | Документы Microsoft"
-ms.custom: 
+title: 'Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace | Документы Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace
 
@@ -58,7 +55,7 @@ ms.lasthandoff: 02/21/2018
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Создание приемника компонента</a>
+## <a name="BKMK_CreateReceiver"></a> Создание приемника компонента
 
 Сначала создайте пустой проект SharePoint с приемником компонента.
 
@@ -76,7 +73,7 @@ ms.lasthandoff: 02/21/2018
 
 4. Откройте контекстное меню для Feature1.feature, а затем выберите **добавить приемник событий** добавить модуль кода в компонент.
 
-## <a name="BKMK_AddCode">Добавление кода в приемник компонента</a>
+## <a name="BKMK_AddCode"></a> Добавление кода в приемник компонента
 
 Добавьте код для двух методов в приемник компонента: `FeatureActivated` и `FeatureDeactivating`. Эти методы активируются каждый раз, когда компонент включается или отключается в SharePoint, соответственно.
 
@@ -250,7 +247,7 @@ ms.lasthandoff: 02/21/2018
     }
     ```
 
-## <a name="BKMK_Test1">Тестирование проекта</a>
+## <a name="BKMK_Test1"></a> Тестирование проекта
 
 Теперь, когда код добавлен в приемник компонента и сборщик данных выполняется, разверните и запустите решение SharePoint для тестирования правильности работы.
 
@@ -277,7 +274,7 @@ ms.lasthandoff: 02/21/2018
 
      Обработчик событий FeatureDeactivating() вызывает ошибку.
 
-## <a name="BKMK_CollectDiagnosticData">Сбор данных IntelliTrace с помощью Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Сбор данных IntelliTrace с помощью Microsoft Monitoring Agent
 
 Если установить Microsoft Monitoring Agent в системе, на котором выполняется SharePoint, можно отлаживать решения SharePoint с использованием данных, более точно, чем универсальный информации, которую возвращает IntelliTrace. Агент работает вне Visual Studio с помощью командлетов PowerShell для захвата отладочной информации в процессе выполнения решения SharePoint.
 
@@ -300,9 +297,9 @@ ms.lasthandoff: 02/21/2018
 
 3. В окне PowerShell, выполните [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) команду, чтобы создать ITRACE-файл, остановить наблюдение и перезапустите решения SharePoint.
 
-     **STOP-WebApplicationMonitoring***»\<SharePointSite >\\< SharePointAppName\>»* 
+     **STOP-WebApplicationMonitoring***»\<SharePointSite >\\< SharePointAppName\>»*
 
-## <a name="BKMK_DebugSolution">Отладка и исправление решения SharePoint</a>
+## <a name="BKMK_DebugSolution"></a> Отладка и исправление решения SharePoint
 
 Теперь можно просмотреть файл журнала IntelliTrace в Visual Studio для поиска и исправления ошибки в решении SharePoint.
 

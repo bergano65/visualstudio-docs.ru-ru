@@ -1,12 +1,10 @@
 ---
-title: "Пользовательских XML-частях Обзор | Документы Microsoft"
-ms.custom: 
+title: Пользовательских XML-частях Обзор | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,20 +23,21 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8dc3e4b1abc5f60f9ca63e374ab8870df6bb0d41
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 672be641d34f524f1be1972542e89d1e97a1b3d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-xml-parts-overview"></a>Custom XML Parts Overview
   Для некоторых приложений Microsoft Office в документах можно внедрять XML-данные. При внедрении в документ XML-данных, называются *пользовательской XML-части*.  
   
  Для создания и изменения пользовательских XML-частей в документе можно использовать надстройку VSTO или решение в Visual Studio на уровне документа. Для создания и изменения пользовательских XML-частей запускать приложение Microsoft Office не требуется.  
   
- **Применяется к:** информация в этой статье относится к проектам уровня документа и проектам надстроек VSTO для Excel, PowerPoint и Word. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Применяется к:** информация в этой статье относится к проектам уровня документа и проектам надстроек VSTO для Excel, PowerPoint и Word. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Visual Studio также позволяет кэшировать объекты данных в настройках на уровне документа. Несмотря на некоторые сходства, эта возможность отличается от пользовательских XML-частей. Дополнительные сведения см. в разделе [кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md).  

@@ -1,13 +1,10 @@
 ---
-title: "Отладка расширений для средств SharePoint в Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Отладка расширений для средств SharePoint в Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ead91600a4f62899f2b7182f2d7248afa77651d3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7f976db455fc0cd847c648eb586b95fb81f6d5fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для средств SharePoint в Visual Studio
   Можно выполнить отладку расширения инструментов SharePoint в экспериментальном экземпляре или обычном экземпляре Visual Studio. Если требуется для устранения неполадок поведения расширения, можно также изменить значения реестра для отображения дополнительных сведений об ошибке и настройки выполнением команд SharePoint в Visual Studio.  
@@ -118,13 +115,13 @@ ms.lasthandoff: 01/10/2018
   
  Для устранения каких-либо расширений инструментов SharePoint можно создать и установить значение EnableDiagnostics. В следующей таблице описаны это значение.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |EnableDiagnostics|REG_DWORD указывает, отображаются ли диагностические сообщения в **вывода** окна.<br /><br /> Чтобы отобразить диагностическую информацию, это значение равно 1. Чтобы отключить отображение сообщений, это значение равно 0 или удалите это значение.<br /><br /> Для записи сообщений в **вывода** расширения средств SharePoint в окне, используйте службы проектов SharePoint. Дополнительные сведения см. в разделе [использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|  
   
  Если расширение содержит команду SharePoint, можно создать и установить дополнительные значения для облегчения устранения неполадок в команде. В следующей таблице описаны эти значения.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |AttachDebuggerToHostProcess|REG_DWORD указывает, следует ли отображать диалоговое окно позволяет подключить отладчик к vssphost4.exe при запуске. Это полезно, если команда, необходимо выполнить отладку выполняется vssphost.exe сразу после ее запуска, а не достаточно времени, чтобы вручную присоединить отладчик перед выполнением команды. Чтобы отобразить диалоговое окно, вызывает vssphost4.exe <xref:System.Diagnostics.Debugger.Break%2A> метод при запуске.<br /><br /> Чтобы включить это поведение, это значение равно 1. Чтобы отключить это поведение, это значение равно 0 или удалите это значение.<br /><br /> Если это значение равно 1, можно также увеличить значение HostProcessStartupTimeout самостоятельно достаточно времени, чтобы присоединить отладчик Visual Studio ожидает vssphost4.exe сигнала успешно запущена.|  
 |ChannelOperationTimeout|REG_DWORD указывает время в секундах, Visual Studio для выполнения команды SharePoint. Если команда не будет выполнена вовремя, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> возникает исключение.<br /><br /> Значение по умолчанию — 120 секунд.|  

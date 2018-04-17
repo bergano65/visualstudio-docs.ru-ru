@@ -1,24 +1,23 @@
 ---
-title: "Создание надстроек VSTO для Office с помощью Visual Studio | Документы Microsoft"
-ms.custom: 
+title: Создание надстроек VSTO для Office с помощью Visual Studio | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Создание надстроек VSTO для Office с помощью Visual Studio
   Вы можете использовать инструменты разработчика Microsoft Office в Visual Studio для создания приложений платформы .NET Framework, которые расширяют возможности Office. Эти приложения также называются *решениями Office*.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   [Центр разработчика Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) содержит ссылки на технические статьи, примеры кода, загружаемые материалы, сведения сообщества, материалы службы поддержки и другую документацию по настройке Office и бизнес-приложениям на базе Office.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Ссылки на сведения о настройке компьютера разработчика для создания решений Office, первых шагах по созданию решений Office, а также новых возможностях разработки решений Office в Visual Studio.  
   
  [Обновление и перенос решений Office](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,13 +85,13 @@ ms.lasthandoff: 01/10/2018
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)  
  Ссылки на примеры приложений и разделы с пошаговыми инструкциями по выполнению типовых задач.  
   
- [Общие справочные сведения о &#40; разработка решений Office в Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Общие справочные сведения о &#40;разработка решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Ссылки на подробные сведения об основных сборках взаимодействия Office, манифестах, элементах пользовательского интерфейса и сообщениях об ошибках.  
   
- [Управляемые ссылки &#40; разработка решений Office в Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [Справочник по управляемой &#40;разработка решений Office в Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  Ссылки на сведения о пространствах имен API и типах, используемые в проектах Office, который предназначены для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Справочную документацию по пространствам имен и типам API, используемым в проектах Office, которые предназначаются для платформы .NET Framework 3.5, см. в следующем справочном разделе документации по Visual Studio 2008: [Справочник по управляемому API выпуска 2007 системы Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
- [Справочник по неуправляемым API &#40; разработка решений Office в Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Справочник по API-Интерфейс неуправляемого &#40;разработка решений Office в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Ссылки на сведения об интерфейсах COM, которые можно использовать для выполнения таких действий, как загрузка и выгрузка управляемых надстроек VSTO в приложениях Office.  
   
 ## <a name="related-sections"></a>Связанные разделы  

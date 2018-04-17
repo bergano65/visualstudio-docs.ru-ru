@@ -1,13 +1,10 @@
 ---
-title: "Приступая к работе Программирование надстроек VSTO | Документы Microsoft"
-ms.custom: 
+title: Приступая к работе Программирование надстроек VSTO | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
 dev_langs:
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f395ce7fb85d71ed6e8c3f7dfb10726907832873
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fb257a709f2f81f124e2510403a9d6853180a56b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-programming-vsto-add-ins"></a>Getting Started Programming VSTO Add-ins
-  Надстройки VSTO можно использовать для автоматизации приложений Microsoft Office, расширения функциональных возможностей приложения и настройки пользовательского интерфейса приложения. Сведения о сравнении надстроек VSTO для других типов решений Office, можно создать с помощью Visual Studio см. в разделе [Общие сведения о разработке решений Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Надстройки VSTO можно использовать для автоматизации приложений Microsoft Office, расширения функциональных возможностей приложения и настройки пользовательского интерфейса приложения. Сведения о сравнении надстроек VSTO для других типов решений Office, можно создать с помощью Visual Studio см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
@@ -62,7 +59,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="customizing-the-user-interface-of-applications"></a>Настройка пользовательского интерфейса приложений  
  Существует несколько способов настройки пользовательского интерфейса ведущего приложения с помощью надстройки VSTO.  
   
--   Для Excel и Word в документы можно добавлять управляемые элементы управления. Для получения дополнительной информации см. [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+-   Для Excel и Word в документы можно добавлять управляемые элементы управления. Для получения дополнительной информации см. [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 -   Можно настроить ленту, если ее поддерживает приложение. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
   
@@ -93,7 +90,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>См. также  
  [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Приступая к работе &#40; разработка решений Office в Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
  [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

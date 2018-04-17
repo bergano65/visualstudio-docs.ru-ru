@@ -1,13 +1,10 @@
 ---
-title: "Bookmark-элемент управления | Документы Microsoft"
-ms.custom: 
+title: Bookmark-элемент управления | Документы Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
 dev_langs:
@@ -20,21 +17,21 @@ helpviewer_keywords:
 - Bookmark control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38e3286d24f0591ca4ced3339118b6d0d4bfe1d7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f70fa1016762e0811da0e4850eda0428278c463e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bookmark-control"></a>Bookmark - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> представляет собой закладку с уникальным именем, которая предоставляет события и может быть привязана к данным. Закладка может использоваться как заполнитель для пометки элемента или расположения в документе Microsoft Office Word. Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> представляет собой комбинацию объектов <xref:Microsoft.Office.Interop.Word.Bookmark> и <xref:Microsoft.Office.Interop.Word.Range> .  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- В проектах на уровне документа вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ во время разработки или во время выполнения. В проектах надстроек VSTO вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в любой открытый документ во время выполнения. Для получения дополнительной информации см. [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+ В проектах на уровне документа вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ во время разработки или во время выполнения. В проектах надстроек VSTO вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в любой открытый документ во время выполнения. Для получения дополнительной информации см. [Практическое руководство. Добавление закладок в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
 ## <a name="binding-data-to-the-control"></a>Привязка данных к элементу управления  
  Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> поддерживает простую привязку данных. Закладка должна быть привязана к источнику данных с помощью свойства <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> . Свойство <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> — это свойство привязки данных по умолчанию для закладки.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> также имеет свойство <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> . Оно отличается от свойства <xref:Microsoft.Office.Interop.Word.Range.Text%2A> , которое доступно в свойстве <xref:Microsoft.Office.Tools.Word.Bookmark.Range%2A> элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> или в свойстве <xref:Microsoft.Office.Interop.Word.Bookmark.Range%2A> объекта <xref:Microsoft.Office.Interop.Word.Bookmark> .  
   
-|Свойство Text|Описание:|  
+|Свойство Text|Описание|  
 |-------------------|-----------------|  
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>|Используйте это свойство для отображения текста в закладке и оставления закладки в документе. Назначение текста закладке расширяет диапазон закладки и не удаляет ее.<br /><br /> Например, `Bookmark1.Text = "Hello world"` вставляет текст в закладку и оставляет закладку неизменной.|  
 |<xref:Microsoft.Office.Interop.Word.Range.Text%2A>|Используйте это свойство для отображения текста в расположении закладки и автоматического удаления ее. Например, `Bookmark1.Range.Text = "Hello world"` вставляет текст в закладку и удаляет закладку.|  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>См. также  
  [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
- [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Практическое руководство. Добавление закладок в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Пошаговое руководство: Создание контекстного меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
