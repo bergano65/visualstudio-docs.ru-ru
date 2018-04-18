@@ -184,7 +184,7 @@ ms.lasthandoff: 04/16/2018
 
 -   [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+-   [Настройка карт кода путем редактирования DGML-файлов](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
 
 -   Для поиска потенциальных проблем в коде [запустите анализатор](../modeling/find-potential-problems-using-code-map-analyzers.md).  
 
@@ -328,7 +328,7 @@ ms.lasthandoff: 04/16/2018
 
 -   Отключите автоматическое добавление родительских элементов с помощью кнопки **Включить родительские элементы** на панели инструментов карты кода.  
 
--   Удалите ненужные узлы и ссылки, отредактировав файл карты кода. Изменение карты не влияет на базовый код. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+-   Удалите ненужные узлы и ссылки, отредактировав файл карты кода. Изменение карты не влияет на базовый код. См. раздел [Настройка карт кода путем редактирования DGML-файлов](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
 
  ![Пропустить сборку и включить родительские элементы кнопки](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 
@@ -384,4 +384,4 @@ ms.lasthandoff: 04/16/2018
 
 -   [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+-   [Настройка карт кода путем редактирования DGML-файлов](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
