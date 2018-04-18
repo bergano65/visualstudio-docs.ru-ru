@@ -1,24 +1,25 @@
 ---
-title: "Удаление назначения | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can delete subscription assignments
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e774eb24037275e87f9549d419804d12ab67dd39
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Удаление назначения | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Сведения о том, как администраторы могут удалять назначения подписок
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 15f657a33c7c852c816d13e3d373a2b40035001d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Удаление назначений в подписках Visual Studio
 
 Если подписчику больше не требуется подписка Visual Studio, например, если он покидает организацию, завершил проект или переходит на другую должность, его подписку можно удалить и назначить другому пользователю. Имейте в виду, что при переназначении подписки преимущества подписчика сбрасываются, за исключением ключей продуктов.  Новый пользователь сможет запросить неиспользованные ключи и просмотреть ранее запрошенные ключи, но лимит запрашиваемых ключей **не** сбрасывается. 
 1.  Щелкните имя подписчика, которого нужно удалить. Чтобы выбрать для удаления несколько подписчиков, нажмите и удерживайте клавишу **CTRL**, а затем щелкните имя каждого подписчика, которого нужно удалить, или нажмите клавиши **CTRL+A**, чтобы выбрать и удалить всех подписчиков. На приведенном ниже рисунке показаны три выбранных подписчика.
-2.  Чтобы удалить выбранных подписчиков, нажмите кнопку **Удалить**. Когда появится запрос на подтверждение удаления, нажмите кнопку **ОК**. 
+2.  Чтобы удалить выбранных подписчиков, нажмите кнопку **Удалить**. 
+3.  Когда появится запрос на подтверждение удаления, нажмите кнопку **ОК**. 
 
 ![Удаление подписчиков](_img\delete-license\delete-subscribers.png)

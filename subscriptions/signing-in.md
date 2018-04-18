@@ -1,19 +1,19 @@
 ---
-title: "Вход в подписки Visual Studio | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Вход в подписки Visual Studio | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Как войти в подписку Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Вход в подписку Visual Studio
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 01/29/2018
 3. [Использование учетной записи Майкрософт для входа в рабочую или учебную учетную запись](#using-your-microsoft-account-to-sign-in-to-a-work-or-school-account)
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Вход в систему с учетной записью Майкрософт (MSA)
-1. Откройте страницу [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Посетите сайт [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Введите адрес электронной почты, который вы указали при создании или приобретении подписки Visual Studio.
     
    > [!NOTE] 
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/29/2018
 При первом входе в подписку Visual Studio Dev Essentials вы увидите диалоговое окно приветствия.  Щелкните в нем действие **Подтвердить**, чтобы принять условия участия в программе.
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Вход с рабочей или учебной учетной записью 
-1. Откройте страницу [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Посетите сайт [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Введите адрес электронной почты, для которого назначена новая подписка Visual Studio.
     
    > [!NOTE]
@@ -57,7 +57,7 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="using-your-microsoft-account-to-sign-in-to-a-work-or-school-account"></a>Использование учетной записи Майкрософт для входа в рабочую или учебную учетную запись
 
-1. Перейдите на страницу [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Перейдите по адресу [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Введите адрес электронной почты, назначенный новой подписке Visual Studio. 
 
    > [!NOTE]

@@ -4,20 +4,20 @@ description: Актуальный список выпущенных версий
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.date: 03/22/2018
-ms.topic: article
+manager: douge
+ms.date: 04/04/2018
+ms.topic: reference
 helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
 ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: bd209ce81800bd289a36e469fb23e6eec0dd008e
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 7f941891c858d36d4cbe1de706d100c0b27d9c85
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio 2017
 
@@ -25,6 +25,7 @@ ms.lasthandoff: 03/28/2018
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.5 | выпуска | 4 апреля 2018 г. | 15.6.27428.2027 |
 | 15.6.4 | выпуска | 22 марта 2018 г. | 15.6.27428.2015 |
 | 15.7.0 (предварительная версия 2.0) | Предварительный просмотр | 21 марта 2018 г. | 15.7.27520.0 |
 | 15.6.3 | выпуска | 19 марта 2018 г. | 15.6.27428.2011 |

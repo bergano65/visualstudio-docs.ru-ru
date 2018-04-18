@@ -1,5 +1,5 @@
 ---
-title: "Управление правами администратора на портале администратора подписок Visual Studio"
+title: Управление правами администратора на портале администратора подписок Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,15 +10,15 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Управление правами администратора на портале администратора подписок Visual Studio
 
 ## <a name="overview"></a>Обзор 
-На портале администратора подписок Visual Studio (https://manage.visualstudio.com) существуют две роли управления.
+На портале администратора подписок Visual Studio (https://manage.visualstudio.com) существуют две роли управления:
 
 **Суперадминистраторы.** При первой настройке организации основное контактное лицо или контактное лицо для уведомлений становится суперадминистратором по умолчанию. Это контактное лицо может назначить дополнительных суперадминистраторов или администраторов. Помимо управления подписками для отдельных подписчиков, супердминистраторы могут добавлять и удалять других администраторов и суперадминистраторов. Если в системе больше двух суперадминистраторов, их можно удалить, кроме двух последних. 
 

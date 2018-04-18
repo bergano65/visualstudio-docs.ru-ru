@@ -1,25 +1,30 @@
 ---
-title: "Где можно узнать об управлении подписками? | Документы Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/29/2017
-Ms.topic: Get-Started-Article
-Description: Find More Information About Subscription Management?
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Сведения об управлении подписками | Документы Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/13/2018
+ms.topic: Get-Started-Article
+description: Дополнительные сведения об управлении подписками
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f3294d37202dd8a9454fdeb056f35b298fdba554
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="where-can-i-find-more-information-about-subscription-management"></a>Где можно узнать об управлении подписками?
+# <a name="learn-about-subscription-management"></a>Сведения об управлении подписками
 
-Возможности управления подписками доступны для клиентов, которые приобрели подписки с помощью Volume Licensing Service Center (VLSC), Microsoft Product and Services Agreement (MPSA) или облачной подписки Visual Studio.  
+Возможности управления подписками доступны для клиентов, которые приобрели подписки с помощью соглашения корпоративного лицензирования, соглашения о продуктах и службах Майкрософт (MPSA) или облачной подписки Visual Studio.  
 
-Из-за наличия разных каналов приобретения администраторы подписки должны знать, как были приобретены подписки, чтобы использовать соответствующие разрешения и руководства пользователя. 
+Из-за наличия разных каналов приобретения администраторы подписки должны знать, как были приобретены подписки, чтобы использовать соответствующие разрешения и настройки пользователя. Сведения настройках администраторов для каждого типа соглашения можно найти в разделе о получении доступа к порталу. 
 
 Команда разработчиков подписок Visual Studio создала [портал администрирования подписок](https://www.visualstudio.com/subscriptions-administration/) Visual Studio.  Этот портал предназначен для того, чтобы помочь администраторам подписки быстро оценить средства и функции, которые им нужно назначить и с помощью которых можно управлять корпоративными подписками. 
 
+На портале администрирования подписок можно узнать информацию по следующим вопросам:
+- Управление подписками на [портале управления подписками](https://manage.visualstudio.com).
+- Управление подписками посредством центра поддержки корпоративных лицензий для организации, которые еще не были перенесены на портал управления подписками. 
+- Переход на новый портал.
+- Другие советы и рекомендации для администраторов подписки.

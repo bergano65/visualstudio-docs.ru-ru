@@ -1,19 +1,19 @@
 ---
-title: "Использование загружаемых файлов подписчика в подписках Visuals Studio | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Использование загружаемых файлов подписчика в подписках Visuals Studio | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Сведения о том, как найти и скачать продукты Майкрософт, входящее в вашу подписку Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Использование скачиваемых файлов подписчика в подписках Visual Studio
 Ваши преимущества подписчика включают в себя доступ к обширному спектру скачиваемого программного обеспечения.  
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="what-do-i-get"></a>Что я получаю?
 Число и тип скачиваемых файлов зависит от вашего уровня подписки и членства в программах.  Например, подписчикам со стандартными подписками Visual Studio Enterprise доступно больше разнообразных файлов для скачивания, а подписчикам, получающим подписки по программе Microsoft Partner Network или BizSpark, — меньше.  Чтобы узнать, какие именно скачиваемые файлы доступны для каждого уровня подписки, скачайте список [продуктов, упорядоченных по уровню преимущества](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
-Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Как найти скачиваемые файлы на портале подписчика? 
 На странице [Загрузки](https://my.visualstudio.com/downloads/featured) отображаются только скачиваемые файлы, включенные в вашу подписку.  Если вы используете несколько подписок или членств в программах, отображаются скачиваемые файлы для вашего **наивысшего уровня подписки**, даже если вы работаете с другой подпиской.  Например, при наличии подписки Visual Studio Professional и членства Visual Studio Dev Essentials, связанных с одним идентификатором входа, даже если вы просматриваете преимущества Dev Essentials, отображаются скачиваемые файлы для подписки уровня Professional.  

@@ -1,19 +1,19 @@
 ---
-title: "Работа с подписками с истекшим сроком действия | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can handle expired Visual Studio subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: ffe9a2367d2ce0933e7f57831400fafb9aeac26e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Работа с подписками с истекшим сроком действия | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Сведения о том, как администраторы могут обрабатывать подписки Visual Studio с истекшим сроком действия
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f4f1e049ce5f236fc1bce958d698b15637cb265d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="handling-expired-subscriptions"></a>Работа с подписками с истекшим сроком действия
 
@@ -21,4 +21,8 @@ ms.lasthandoff: 01/29/2018
 
 ![Список подписок с истекшим сроком действия](_img\expired-subscriptions\expired-list.png) 
 
-Чтобы продлить подписки, обратитесь к торговому посреднику по программе корпоративного лицензирования или продавцу продуктов Майкрософт. Сообщите ему номер соглашения и номер счета покупки. Торговый посредник или продавец продуктов Майкрософт предоставит вам инструкции по продлению или приобретению дополнительных подписок. После размещения заказа или продления контракта новые подписки станут доступны и их можно будет назначить пользователям.
+**Для продления подписок**
+1.  Обратитесь к торговому посреднику по программе корпоративного лицензирования или продавцу продуктов Майкрософт. 
+2.  Сообщите ему номер соглашения и номер счета покупки. 
+
+Торговый посредник или продавец продуктов Майкрософт предоставит вам инструкции по продлению или приобретению дополнительных подписок. После размещения заказа или продления контракта новые подписки станут доступны и их можно будет [назначить пользователям](/assign-license/). 

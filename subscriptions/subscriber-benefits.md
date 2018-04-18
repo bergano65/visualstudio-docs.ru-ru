@@ -1,19 +1,19 @@
 ---
-title: "Подписки Visual Studio: преимущества для подписчиков"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: 'Подписки Visual Studio: преимущества для подписчиков'
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: Узнайте о преимуществах, предусмотренных подпиской Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Преимущества, предусмотренные подпиской Visual Studio
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 02/19/2018
 Преимущества делятся на три категории:
 
 ## <a name="tools"></a>Инструменты
-В категории "Инструменты" доступно множество флагманских продуктов — таких, как [Visual Studio IDE](/vs-ide-benefit), [Visual Studio Team Services](/vs-vsts) и [Azure](/vs-azure).  В зависимости от уровня подписки, эта категория также может включать учетные записи разработчиков Windows и Office 365, Центр приложений Visual Studio и продукты от наших партнеров, например WhiteSource Bolt и ModernRequirements.
+В категории "Инструменты" доступно множество флагманских продуктов — таких, как [Visual Studio IDE](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/) и [Azure](/vs-azure/).  В зависимости от уровня подписки, эта категория также может включать учетные записи разработчиков Windows и Office 365, Центр приложений Visual Studio и продукты от наших партнеров, например WhiteSource Bolt и ModernRequirements.
 
 ## <a name="professional-development"></a>Профессиональное развитие
 Чтобы вы могли постоянно совершенствовать свои навыки и быть в курсе новейших технологий, мы предоставляем вам доступ к некоторым из лучших материалов для интерактивного обучения от ведущих компаний. Например, мы предоставляем доступ к таким прекрасным обучающим ресурсам, как:

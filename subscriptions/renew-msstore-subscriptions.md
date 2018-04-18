@@ -1,5 +1,5 @@
 ---
-title: "Как продлить подписку на Visual Studio, приобретенную в Microsoft Store? | Документы Майкрософт"
+title: Как продлить подписку на Visual Studio, приобретенную в Microsoft Store? | Документы Майкрософт
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,17 +10,17 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>Как продлить подписку, приобретенную в Microsoft Store?
 Обзор. Розничные подписки часто приобретаются в Microsoft Store. Они отмечаются как подписки для розничной торговли. Просмотреть сведения о подписках можно по адресу https://my.visualstudio.com/subscriptions. 
 
 ## <a name="renew-your-subscription"></a>Продлите подписку: 
 
-1. Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
+1. Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 2. Войдите в подписку.  (Справка по [входу](/visualstudio/subscriptions/signing-in).)
 3. Войдя в систему, вы увидите список текущих подписок.
 4. Убедитесь, что тип подписки — "Розничная торговля".
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="activate-your-subscription"></a>Активация подписки 
 Вы можете активировать свою подписку, используя страницу подтверждения или сообщение электронной почты с подтверждением.  (Если вы не видите это сообщение в почтовом ящике, проверьте папки с нежелательной почтой.)   
-1. Щелкните ссылку **Щелкните здесь, чтобы выполнить вход**.  Откроется страница [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+1. Щелкните ссылку **Щелкните здесь, чтобы выполнить вход**.  Произойдет перенаправление на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 2. Войдите в подписку.  (Справка по [входу](/visualstudio/subscriptions/signing-in).)
 3. Введите ключ продукта, который доступен на странице подтверждения оплаты или в сообщении электронной почты с подтверждением, а затем нажмите кнопку **Активировать**.
     ![Ввод ключа продукта](_img//buy-retail/enter-product-key.png)
-4. Теперь подписка должна отображаться на странице [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+4. Теперь подписка будет отображаться на странице [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).

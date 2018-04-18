@@ -1,25 +1,28 @@
 ---
-title: "Изменение подписок на портале администратора | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Изменение подписок на портале администратора | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Сведения о том, как администраторы могут изменять назначения подписок.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Изменение назначений для подписок Visual Studio
 
+У администраторов подписок есть возможность вносить изменения в подписки, назначенные сотрудникам организации.  В этой статье рассматриваются типы изменений, которые можно сделать, и приводятся необходимые действия. 
+
 ## <a name="making-changes-to-subscriber-information"></a>Изменение сведений о подписчике
 Вы можете изменить сведения о подписчике, чтобы исправить ошибки или внести актуальные данные. 
-**Обратите внимание, что изменение адреса электронной почты подписчика приведет к сбросу существующих преимуществ.**
+> [!NOTE]
+> Изменение адреса электронной почты подписчика приведет к сбросу существующих преимуществ.
 
 Чтобы изменить подписчика, выберите многоточие (...) рядом с адресом электронной почты подписчика при наведении на него указателя мыши. Отображается раскрывающийся список.  Выберите **Изменить**, чтобы изменить данные подписчика. Чтобы открыть окно редактирования, также можно дважды щелкнуть строку подписчика в сетке.
 
@@ -53,7 +56,7 @@ ms.lasthandoff: 01/29/2018
 
     ![Изменение лицензии — отправка файла с массовыми изменениями](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  После отправки файла вы увидите уведомление о том, что она выполнена успешно. 
+5.  После отправки файла вы увидите уведомление о том, что она выполнена успешно. На этом этапе изменения, которые вы внесли, будут отражены в данных о подписчике. 
 
     ![Изменение лицензии — отправка массовых изменений завершена](_img\edit-license\edit-license-bulk-upload-complete.png)
 
