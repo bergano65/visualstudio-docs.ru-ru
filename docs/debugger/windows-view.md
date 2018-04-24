@@ -2,8 +2,7 @@
 title: Представление окон | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea2801baab38f84b8af8f2154f2be4f05dc205f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="windows-view"></a>Представление окон
 При первом открытии Spy ++, представление окон в дерево всех окон и элементов управления в системе. Отображаются имя дескриптора и класс окна. В верхней части дерева является текущее окно на рабочем столе. Все остальные окна являются дочерними элементами рабочего стола и перечисляются в соответствии со стандартной иерархией. Дочерние окна отображаются в раскрывающихся списках под их родительских объектов.  

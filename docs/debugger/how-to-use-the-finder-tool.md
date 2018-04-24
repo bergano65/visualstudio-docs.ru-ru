@@ -2,8 +2,7 @@
 title: 'Как: инструмент поиска | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8feed3e948c6dba91edccb36162656589539a0a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f358adbd8721a55d278c392018463d49e5a8a60e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-the-finder-tool"></a>Практическое руководство. Использование инструмента поиска
 Можно использовать инструмент поиска в **Поиск окна** диалогового окна свойств или сообщений окна. Инструмент поиска можно находить отключенные дочерние окна и точно определять, какое окно следует выделить, если отключены дочерних окон.  

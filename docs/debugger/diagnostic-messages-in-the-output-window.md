@@ -2,8 +2,7 @@
 title: Отправить диагностические сообщения в окне вывода | Документы Microsoft
 ms.custom: ''
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -29,11 +28,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b85d16fffe8ddf6e0523eecca09e044283b7e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Отправить диагностические сообщения в окне вывода
 Можно написать сообщения во время выполнения для **вывода** окна с помощью `Debug` класса или `Trace` класса, которые входят в состав из <xref:System.Diagnostics> библиотеки классов. Класс Debug используется, если необходимо выводить сообщение только в отладочной версии программы. Класс Trace используется в том случае, если необходимо выводить сообщение и в отладочной версии программы, и в выпускаемой.  

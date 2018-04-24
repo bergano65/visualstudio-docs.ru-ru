@@ -2,8 +2,7 @@
 title: 'Как: Отладка исключений ASP.NET | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1f6babfc3312ca746f64c888b569110d70dedb0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5923818e93170ded1f857ac20d42cd6134aed5d3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Практическое руководство. Отладка исключений ASP.NET
 Отладка исключений является важной частью разработки надежного [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложения. Общие сведения об отладке исключений находится в [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md).  

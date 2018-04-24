@@ -2,8 +2,7 @@
 title: 'Как: поиск процесса в представлении процессов | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 621d1bd084a96a094ae1a6bc3823b3da26aa734c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d23199031ce46e57e44a01720493fad4e77c7430
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Практическое руководство. Поиск процесса в представлении процессов
 Можно поиск определенного процесса в представлении процессов с помощью его процесс идентификатор или строку модуля как условия поиска. Можно также указать начальное направление поиска. Поля в диалоговом окне отобразятся атрибуты процессов, выбранных в дерево процесса.  
