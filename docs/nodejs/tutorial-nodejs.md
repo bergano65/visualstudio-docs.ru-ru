@@ -3,28 +3,24 @@ title: Создание приложения Node.js и Express в Visual Studio
 description: В этом учебнике вы создадите приложение Node.js и Express в Visual Studio.
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
-В этом учебнике по разработке с помощью Node.js и Express в Visual Studio вы создадите простое веб-приложение Node.js, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение. Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.  
+В этом учебнике по разработке с помощью Node.js и Express в Visual Studio вы создадите простое веб-приложение Node.js, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение. Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
 
 В этом руководстве вы узнаете, как:
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ ms.lasthandoff: 04/03/2018
 ## <a name="create-a-project"></a>Создание проекта
 Сначала вы создадите проект веб-приложения Node.js.
 
-1. Откройте Visual Studio 2017.  
+1. Откройте Visual Studio 2017.
 
-1. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.  
+1. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.
 
-1. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Базовое приложение Azure Node.js Express 4** и нажмите кнопку **ОК**.   
+1. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Базовое приложение Azure Node.js Express 4** и нажмите кнопку **ОК**.
 
-     Если шаблон проекта **Базовое приложение Azure Node.js Express 4** отсутствует, необходимо сначала установить рабочую нагрузку **Разработка Node.js**. 
+     Если шаблон проекта **Базовое приложение Azure Node.js Express 4** отсутствует, необходимо сначала установить рабочую нагрузку **Разработка Node.js**.
 
     Visual Studio создаст решение и откроет проект. Файл *app.js* проекта откроется в редакторе (в левой области).
 
@@ -130,11 +126,11 @@ ms.lasthandoff: 04/03/2018
 
 1. После строки `data` введите `: get`, и IntelliSense покажет функцию `getData`. Выберите `getData`.
 
-    ![Использование IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![Использование IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. Удалите запятую (`,`) перед элементом `"data"`, и выражение будет выделено зеленым цветом (подсветка синтаксиса). Наведите указатель на подсветку синтаксиса.
 
-    ![Просмотр синтаксической ошибки](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![Просмотр синтаксической ошибки](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     В последней строке этого сообщения указывается, что интерпретатор JavaScript ожидал запятую (`,`).
 
@@ -152,15 +148,15 @@ ms.lasthandoff: 04/03/2018
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных или поведение памяти либо выполнение ветви кода. 
+    Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных или поведение памяти либо выполнение ветви кода.
 
-    ![Задание точки останова](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![Задание точки останова](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>Запуск приложения
 
 1. На панели инструментов отладки выберите целевой объект отладки.
 
-    ![Выбор целевого объекта отладки](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![Выбор целевого объекта отладки](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. Чтобы запустить приложение, нажмите клавишу **F5** (**Отладка** > **Начать отладку**).
 
@@ -178,15 +174,15 @@ ms.lasthandoff: 04/03/2018
 
 1. Нажимайте кнопки, чтобы просмотреть различные изображения.
 
-    ![Выполняемые в браузере приложения](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![Выполняемые в браузере приложения](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. Закройте веб-браузер.  
+1. Закройте веб-браузер.
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Необязательно) Публикация в Службу приложений Azure
 
 1. В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
 
-   ![Публикация в службу приложений Azure](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![Публикация в службу приложений Azure](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Выберите цель **Служба приложений Microsoft Azure**.
 
@@ -198,11 +194,11 @@ ms.lasthandoff: 04/03/2018
 
     После успешного развертывания в браузере откроется приложение, выполняющееся в Службе приложений Azure. Нажмите кнопку, чтобы отобразить изображение.
 
-   ![Приложение, работающее в Службе приложений Azure](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![Приложение, работающее в Службе приложений Azure](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 Поздравляем с завершением этого учебника!
 
-## <a name="next-steps"></a>Следующие шаги 
+## <a name="next-steps"></a>Следующие шаги
 
 В этом учебнике вы узнали, как создать и запустить приложение Node.js с помощью Express и прервать выполнение отладчика с помощью точки останова.
 

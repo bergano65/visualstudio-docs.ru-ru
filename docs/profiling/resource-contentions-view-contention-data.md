@@ -1,29 +1,24 @@
 ---
-title: "Представление \"Состязание за ресурсы\" — данные по состязаниям | Документы Майкрософт"
-ms.custom: 
+title: Представление "Состязание за ресурсы" — данные по состязаниям | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
 helpviewer_keywords:
 - Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5cb6b102025591a6ef00ca594657dca511f5b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e33a27d5f2b14effc9d8a90e903b34822d81edfb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resource-contentions-view---contention-data"></a>Представление "Состязание за ресурсы" — данные по состязаниям
 В представлении "Состязание за ресурсы" приводятся данные по состязаниям за ресурсы, являющиеся источниками событий состязания. Событие состязания возникает, когда функция в потоке вынуждена ожидать доступа к ресурсу из-за того, что функции в другом потоке предоставлен монопольный доступ к ресурсу. Каждый из ресурсов является корневым узлом дерева вызовов, в котором представлены пути выполнения функций, приведшие к созданию событий состязания.  

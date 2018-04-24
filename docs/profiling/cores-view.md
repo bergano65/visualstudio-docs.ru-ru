@@ -1,29 +1,24 @@
 ---
-title: "Представление \"Ядра\" | Документы Майкрософт"
-ms.custom: 
+title: Представление "Ядра" | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cores
 helpviewer_keywords:
 - Concurrency Visualizer, Cores View
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1867f2b0ba84590068b1ae54b0a7aa1d48475247
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: aeac6a7322cb5f08751512f68797560d83ac4fd8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view"></a>Представление "Ядра"
 **Представление ядер** — отображает то, как выполнение потока сопоставлено с ядрами логического процессора. Выберите **Анализ** > **Визуализатор параллелизма**, чтобы запустить визуализатор. При написании серверных приложений это представление может помочь оптимизировать производительность кэша за счет использования сходства потоков или управления пулом потоков. Оно также помогает изучать случаи, когда использование сходства потоков может усугубить проблему переходов между ядрами. Представление "Ядра" состоит из двух частей — графа и легенды.  

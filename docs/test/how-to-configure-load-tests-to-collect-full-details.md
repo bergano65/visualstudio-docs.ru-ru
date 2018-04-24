@@ -1,20 +1,20 @@
 ---
 title: Сбор полных сведений об активности виртуальных пользователей для нагрузочного тестирования в Visual Studio | Документы Майкрософт
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual user activity chart, configuring
 - virtual user activity chart, configuring
 ms.assetid: cb22e43b-af4d-4e09-9389-3c3fa00786f7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b410c91ff2b6c57b86c7fe377df4bf31173f9384
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d18a93fad0d113369f48e21ae74a08484b99485c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>Практическое руководство. Настройка нагрузочных тестов на сбор полных сведений, чтобы в результатах теста отображалась информация об активности виртуальных пользователей
 

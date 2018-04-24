@@ -1,27 +1,22 @@
 ---
-title: "Представление указателей инструкций — данные выборки памяти .NET | Документы Майкрософт"
-ms.custom: 
+title: Представление указателей инструкций — данные выборки памяти .NET | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
 ms.assetid: 7d91cc14-e8e9-4ebb-b14f-b9f0da770508
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 193497f6fd995c8e3a31b5228675130d97641ffa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 34d06b3223b6c0bea059c333bd107068fd0adcee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Представление указателей инструкций — данные выборки памяти .NET
 В представлении указателей инструкций данных профилирования выделения памяти .NET, собранных методом выборки, перечислены инструкции сборки, которые выделяли память в сеансе профилирования. Столбцы представления также показывают размер и число выделений.  
@@ -46,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 |**Исключающие выделения**|Общее число объектов, которые были созданы инструкцией.|  
 |**% эксклюзивных выделений**|Процент от общего числа объектов, созданных в ходе профилирования, которые были выделены инструкцией.|  
 |**Исключающие байты**|Количество байтов памяти, выделенных инструкцией в ходе сеанса профилирования.|  
-| **% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных инструкцией в ходе сеанса профилирования.|  
+|**% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных инструкцией в ходе сеанса профилирования.|  
   
 ## <a name="see-also"></a>См. также  
  [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)

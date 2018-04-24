@@ -1,34 +1,32 @@
 ---
-title: "Команды Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Команды Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c4fc6746648e57903bd0da45bc15758b30a60801
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.  
   
  Полный список команд и их синтаксис приведены в диалоговом окне **"Параметры" (страница "Клавиатура", папка "Окружение")** .  
   
- Escape-символом для команд Visual Studio является крышка (^) — следующий за ней символ интерпретируется буквально, а не как управляющий символ. Благодаря этому в значение параметра можно внедрить прямые кавычки ("), пробелы, начальные символы косой черты, крышки или другие знаки, за исключением имен параметров. Например:  
+ Escape-символом для команд Visual Studio является крышка (^) — следующий за ней символ интерпретируется буквально, а не как управляющий символ. Благодаря этому в значение параметра можно внедрить прямые кавычки ("), пробелы, начальные символы косой черты, крышки или другие знаки, за исключением имен параметров. Например, примененная к объекту директива  
   
 ```  
 >Edit.Find ^^t /regex  

@@ -1,30 +1,26 @@
 ---
-title: "Команда \"Создать файл\" | Документы Майкрософт"
-ms.custom: 
+title: Команда "Создать файл" | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - file.newfile
 helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7f0232a4e08c134a7dffcc3d10a2180e235717
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9634d71954b51534dfabf2c77b4709687d46453d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="new-file-command"></a>Команда New File
 Создает файл и открывает его. Файл отображается в папке "Прочие файлы".  
@@ -41,7 +37,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
   
 ## <a name="switches"></a>Переключатели  
  /t:`templatename`  
- Необязательно. Указывает тип создаваемого файла.  
+ Необязательный. Указывает тип создаваемого файла.  
   
  В синтаксической структуре аргумента /t:`templatename` используются данные из диалогового окна "Создание файла". Введите имя категории, обратную косую черту (`\`) и имя шаблона, а затем заключите всю строку в кавычки.  
   

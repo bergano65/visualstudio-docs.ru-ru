@@ -1,13 +1,10 @@
 ---
-title: "Команда \"Вывести исходный код\" | Документы Майкрософт"
-ms.custom: 
+title: Команда "Вывести исходный код" | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Debug.ListSource
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3f3e6cb441697fb8546fcec485d292e979690b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d21a18a58832918b566e925c7c3898988740a1a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-source-command"></a>Команда List Source
 Отображает заданные строки исходного кода.  
@@ -42,7 +38,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
  Необязательный. Указание числа строк для отображения.  
   
  /Current  
- Необязательно. Отображение текущей строки.  
+ Необязательный. Отображение текущей строки.  
   
  /File:`filename`  
  Необязательный. Путь к файлу для отображения. Если имя файла не указано, при выполнении команды выводится исходный код строки текущего оператора.  

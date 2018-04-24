@@ -2,11 +2,8 @@
 title: Задача GetAssemblyIdentity | Документы Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, GetAssemblyIdentity task
 - GetAssemblyIdentity task [MSBuild]
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
-caps.latest.revision: 8
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 995f77fac8e62e963207408a1e127a557906d10e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 8b670b8ff3028dc0c9a029d7d00f9fee6f34447c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="getassemblyidentity-task"></a>Задача GetAssemblyIdentity
 Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.  
@@ -36,7 +32,7 @@ ms.lasthandoff: 04/10/2018
 ## <a name="task-parameters"></a>Параметры задачи  
  В следующей таблице приводятся параметры задачи `GetAssemblyIdentity`.  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`Assemblies`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит извлеченные идентификаторы сборок.|  
 |`AssemblyFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы, из которых требуется извлечь идентификаторы.|  
@@ -49,22 +45,19 @@ ms.lasthandoff: 04/10/2018
 ## <a name="example"></a>Пример  
  Следующий пример извлекает идентификатор файлов, указанных в элементе `MyAssemblies`, и выводит их в элемент `MyAssemblyIdentities`.  
   
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyAssemblies Include="File1.dll;File2.dll" />  
-    </ItemGroup>  
-    <Target Name="RetrieveIdentities">  
-        <GetAssemblyIdentity  
-            AssemblyFiles="@(MyAssemblies)"  
-            <Output  
-                TaskParameter="Assemblies"  
-                ItemName="MyAssemblyIdentities"  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <MyAssemblies Include="File1.dll;File2.dll" />
+    </ItemGroup>
+    <Target Name="RetrieveIdentities">
+        <GetAssemblyIdentity AssemblyFiles="@(MyAssemblies)">
+            <Output TaskParameter="Assemblies" ItemName="MyAssemblyIdentities" />
+        </GetAssemblyIdentity>
     </Target>  
 </Project>  
-```  
-  
+```
+
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

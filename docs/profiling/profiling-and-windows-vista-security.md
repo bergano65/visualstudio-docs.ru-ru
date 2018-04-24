@@ -1,26 +1,23 @@
 ---
-title: "Профилирование и безопасность Windows Vista | Документы Майкрософт"
-ms.custom: 
+title: Профилирование и безопасность Windows Vista | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,security
 - performance tools, security
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0dad9e27eff76c36cadf132cb3a1b0aaec1e44da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6f03c5d6a7afec1010653c6e4a66a3770573ea5e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-and-windows-vista-security"></a>Профилирование и безопасность Windows Vista
 В зависимости от параметров разрешений на доступ пользователей [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], предоставленных администратором компьютера, отдельный пользователь может иметь разрешение безопасности для профилирования процесса на этом компьютере. Возможные различия между пользователями проиллюстрированы в следующих примерах:  

@@ -1,27 +1,22 @@
 ---
-title: "Представление \"Функции\" — данные выборки памяти .NET | Документы Майкрософт"
-ms.custom: 
+title: Представление "Функции" — данные выборки памяти .NET | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d2df0182f976af36e9182d080ef6b51130c826
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eea5a55f57ed6b3fb710195dfe94839bdb17fb7e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Представление "Функции" — данные выборки памяти .NET
 В представлении "Функции" данных профилирования выделения памяти .NET, собранных с помощью методов выборки, представлены функции, выделявшие память в процессе профилирования, а также указан размер и количество выделенных блоков.  
@@ -43,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 |**Инклюзивные байты**|Число байтов памяти, которые были выделены данной функцией и ее дочерними функциями.|  
 |**Включающие байты %**|Процент от общего числа байтов памяти, выделенных при профилировании, которые являются инклюзивными байтами для данной функции.|  
 |**Исключающие байты**|Число байтов памяти, которые были выделены данной функцией, но не ее дочерними функциями.|  
-| **% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных при профилировании, которые являются эксклюзивными байтами для данной функции.|  
+|**% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных при профилировании, которые являются эксклюзивными байтами для данной функции.|  
   
 ## <a name="see-also"></a>См. также  
  [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

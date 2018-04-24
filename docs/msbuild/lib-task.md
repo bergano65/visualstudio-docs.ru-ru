@@ -2,11 +2,8 @@
 title: Задача LIB | Документы Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -25,17 +22,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: 7
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 69dec38691969eafa92a13dea0333fbc17060354
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lib-task"></a>Задача LIB
 Заключает в оболочку 32-разрядный диспетчер библиотек Майкрософт lib.exe. Диспетчер библиотек создает библиотеку объектных файлов в формате COFF и управляет ею. Диспетчер библиотек также может создавать файлы экспорта и импортировать библиотеки в экспортированные справочные определения. Дополнительные сведения см. в разделах [Справочник по LIB](/cpp/build/reference/lib-reference) и [Запуск программы LIB](/cpp/build/reference/running-lib).  
@@ -43,7 +39,7 @@ ms.lasthandoff: 04/10/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи **LIB**. Большинство параметров задач соответствуют параметрам командной строки.  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|Необязательный параметр типа **String[]**.<br /><br /> Указывает дополнительные элементы для добавления в командную строку.|  
 |**AdditionalLibraryDirectories**|Необязательный параметр типа **String[]**.<br /><br /> Переопределяет путь к библиотеке среды. Задает имя каталога.<br /><br /> Дополнительные сведения см. в разделе [Параметр /LIBPATH (дополнительный параметр Libpath)](/cpp/build/reference/libpath-additional-libpath).|  

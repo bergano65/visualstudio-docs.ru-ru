@@ -2,23 +2,19 @@
 title: Управление жизненным циклом приложений (ALM) для приложений Xamarin | Документы Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: ''
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f6eea5a99245249a244dbb7cd31e61799f7c0103
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: e2af3c9ada788c195cffb811cbfded9c43604c7a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
 Платформа Xamarin позволяет создавать кроссплатформенные мобильные приложения, предназначенные для Android, iOS и Windows, с помощью C#, .NET и Visual Studio. Платформа Xamarin дает возможность совместного использования большей части кода разными платформами, при этом лишь небольшая его часть должна соответствовать конкретной платформе. Дополнительные сведения о самой платформе Xamarin см. в разделе [Visual Studio и Xamarin](../cross-platform/visual-studio-and-xamarin.md).  

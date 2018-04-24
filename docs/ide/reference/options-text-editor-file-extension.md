@@ -1,13 +1,10 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"Расширение файла\" | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f3f21c13c30abafdb59e5e997210cd0d7b4fcfb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 24a87480bfe7a2d60df9ccd94ac0711c71de9223
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-file-extension"></a>"Параметры", "Текстовый редактор", "Расширение файла"
 Это диалоговое окно параметров позволяет задать способ обработки файлов с определенными расширениями в интегрированной среде разработки Visual Studio (IDE). Для каждого введенного **расширения** можно выбрать соответствующий редактор. Это дает возможность выбрать редактор или конструктор интегрированной среды разработки, в котором будут открываться документы определенного типа. Чтобы отобразить эти параметры, выберите в меню **Сервис** пункт **Параметры**, разверните узел **Текстовый редактор**, а затем выберите **расширение файла**.  

@@ -1,23 +1,21 @@
 ---
-title: "Шаг 9. Проверка, комментирование и тестирование кода | Документы Майкрософт"
-ms.custom: 
+title: Шаг 9. Проверка, комментирование и тестирование кода | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
-caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b46e51ac48ffab06bf17508f6c99ccc2fd7fa7c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Шаг 9. Проверка, комментирование и тестирование кода
 Затем в код добавляется комментарий. Комментарий это заметка, которая не влияет на выполнение программы. Он облегчает понимание назначения кода тем, кто читает этот код. Добавление комментариев в код — хорошая привычка. В Visual C# строка обозначается как комментарий с помощью двух косых черт (//). В Visual Basic строка обозначается как комментарий с помощью одинарной кавычки('). После добавления комментария программа проверяется. Рекомендуется регулярно выполнять и тестировать код при работе над проектами, чтобы можно было на ранних стадиях выявлять и устранять проблемы, прежде чем код станет слишком сложным. Это называется *итеративным тестированием*.  

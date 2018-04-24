@@ -1,30 +1,26 @@
 ---
-title: "Команда \"Найти\" | Документы Майкрософт"
-ms.custom: 
+title: Команда "Найти" | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - edit.find
 helpviewer_keywords:
 - Find command
 - Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dde6bed2fda4dbf68a37636df83044e945a1f5d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a4f20be9aafaa6002ba329b7dd14c132dbfcab70
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-command"></a>Команда Find
 Выполняет поиск в файлах с использованием набора параметров, доступных на вкладке **Найти в файлах** диалогового окна **Поиск и замена**.  
@@ -48,13 +44,13 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
  Необязательный. Выполняет поиск только в текущем документе. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.  
   
  /markall или/m  
- Необязательно. Помещает изображение в каждой строке, содержащей совпадение в текущем документе.  
+ Необязательный. Помещает изображение в каждой строке, содержащей совпадение в текущем документе.  
   
  /open или /o  
  Необязательный. Выполняет поиск по всем открытым документам, как если бы они были одним документом. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.  
   
  /options или /t  
- Необязательно. Отображает список текущих параметров поиска, но не выполняет сам поиск.  
+ Необязательный. Отображает список текущих параметров поиска, но не выполняет сам поиск.  
   
  /proc или /p  
  Необязательный. Выполняет поиск только в текущей процедуре. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.  

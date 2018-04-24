@@ -2,22 +2,19 @@
 title: Управление жизненным циклом приложения (ALM) для приложений Unity | Документы Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 author: dantogno
 ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 05196d7c9e6b1b441db61f599dcfe39c4d5cba56
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Использование управления жизненным циклом приложения (ALM) с приложениями Unity
 Разработка приложений для современных платформ включает гораздо больше, чем просто написание кода. Эти действия, называемые DevOps (разработка + операции), охватывают весь жизненный цикл приложения и включают планирование и отслеживание работы, проектирование и реализацию кода, управление репозиторием исходного кода, выполнение сборок, управление непрерывной интеграцией и развертываниями, тестирование (включая модульные тесты и тесты пользовательского интерфейса), выполнение всевозможной диагностики в средах разработки и рабочих средах и отслеживание производительности приложения и поведения пользователей в режиме реального времени с помощью телеметрии и анализа.

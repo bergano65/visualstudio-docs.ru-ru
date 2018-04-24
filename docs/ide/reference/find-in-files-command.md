@@ -1,30 +1,26 @@
 ---
-title: "Команда Find in Files | Документы Майкрософт"
-ms.custom: 
+title: Команда Find in Files | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - edit.findinfiles
 helpviewer_keywords:
 - Edit.FindInFiles command
 - find in files command
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b041772c98fb8466ebc262863638ae5583500ef6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 115d096c56568b0c30387a65352cd1585adf15c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-in-files-command"></a>Команда Find in Files
 Поиск в файлах с использованием набора параметров, доступных на вкладке **Найти в файлах** диалогового окна **Поиск и замена**.  
@@ -49,13 +45,13 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
  Необязательный. Определяет расширения файлов, в которых будет проводиться поиск. Если переключатель не определен, используется предыдущее расширение, вводившееся ранее.  
   
  /lookin: `searchpath`  
- Необязательно. Каталог, в котором будет производиться поиск. Если путь содержит пробелы, необходимо заключить полный путь в кавычки.  
+ Необязательный. Каталог, в котором будет производиться поиск. Если путь содержит пробелы, необходимо заключить полный путь в кавычки.  
   
  /names или /n  
  Необязательный. Отображает список имен файлов, содержащих совпадения.  
   
  /options или /t  
- Необязательно. Отображает список текущих параметров поиска, но не выполняет сам поиск.  
+ Необязательный. Отображает список текущих параметров поиска, но не выполняет сам поиск.  
   
  /regex или /r  
  Необязательный. Использует стандартные специальные символы в аргументе `findwhat` для представления текстовых шаблонов вместо самих букв. Полный список знаков регулярных выражений см. в разделе [Регулярные выражения](../../ide/using-regular-expressions-in-visual-studio.md).  
@@ -71,10 +67,10 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ```  
   
  /sub или /s  
- Необязательно. Выполняет поиск в папках, вложенных в каталог, который указан в аргументе /lookin:`searchpath`.  
+ Необязательный. Выполняет поиск в папках, вложенных в каталог, который указан в аргументе /lookin:`searchpath`.  
   
  /text2 или /2  
- Необязательно. Отображает результаты поиска в окне "Результаты поиска 2".  
+ Необязательный. Отображает результаты поиска в окне "Результаты поиска 2".  
   
  /wild или /l  
  Необязательный. Использует стандартные специальные символы в аргументе `findwhat` для представления символа или последовательности символов.  

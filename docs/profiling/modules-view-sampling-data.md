@@ -1,26 +1,23 @@
 ---
-title: "Представление \"Модули\" — данные выборки | Документы Майкрософт"
-ms.custom: 
+title: Представление "Модули" — данные выборки | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 - sampling profiling method,Modules view
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 053b1ea5903675f60d59c3574f982f2461e39e4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8bc3fcbced64b7bcd460b1a25e0dc442b6970795
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---sampling-data"></a>Представление "Модули" — данные выборки
 В представлении "Модули" данных выборки отображаются данные производительности, сгруппированные по модулям, выбранным в данных профилирования. Каждый модуль представляет собой корневой узел иерархического дерева. Выбранные функции модуля указываются в узле модуля.  

@@ -1,26 +1,23 @@
 ---
-title: "Общие сведения о сеансе анализа производительности | Документы Майкрософт"
-ms.custom: 
+title: Общие сведения о сеансе анализа производительности | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
 - performance sessions
 ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-session-overview"></a>Общие сведения о сеансе анализа производительности
 В данном обзоре приводится информация об основах профилирования. Разработчики, у которых нет опыта анализа производительности, узнают, как средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют быстро повысить продуктивность их работы и производительность их кода. Разработчики, обладающие опытом профилирования, получат представление об особенностях функций и процессов средств профилирования.  

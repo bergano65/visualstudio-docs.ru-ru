@@ -1,15 +1,14 @@
 ---
-title: "Темы редактора"
+title: Темы редактора
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: e114b0aeca2cdbbbd7dff1dbf68fbe86b4cf6d8a
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 779eb33db0bca527c37d346b05f0cb3fa038f16b
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="editor-themes"></a>Темы редактора
 Вы можете задать любую из 10 цветовых схем, предоставляемых по умолчанию в Visual Studio для Mac, с помощью параметров меню **Visual Studio > Параметры... > Текстовый редактор > Color Themes** (Цветовые темы):

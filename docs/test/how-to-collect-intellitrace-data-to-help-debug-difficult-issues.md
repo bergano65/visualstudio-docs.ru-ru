@@ -1,7 +1,7 @@
 ---
 title: Данные IntelliTrace в Visual Studio | Документы Майкрософт
 ms.date: 10/13/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04c4c1cd4429228ffa90e06ac9675901602c3cd0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Практическое руководство. Сбор данных IntelliTrace для отладки сложных проблем
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 03/19/2018
 
 5.  Перейдите на вкладку **Общие**. Выберите **только события IntelliTrace**, чтобы записывать значимые события диагностики с минимальным влиянием на производительность во время тестирования.
 
-     **-**или-
+     **-** или-
 
      Выберите **события и сведения о вызовах IntelliTrace**, чтобы записывать события диагностики и трассировку на уровне методов, в которой отображаются сведения о вызовах. Этот уровень трассировки может влиять на производительность при выполнении тестов.
 

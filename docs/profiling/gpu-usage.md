@@ -1,23 +1,19 @@
 ---
-title: "Использование GPU | Документы Майкрософт"
-ms.custom: 
+title: Использование GPU | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 9926846ceaba3591a3e89f2eba0fa2d3888e9302
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="gpu-usage"></a>Использование GPU
 Используйте инструмент учета использования GPU в концентраторе производительности и диагностики Visual Studio, чтобы получить более полное представление о высокоуровневом использовании оборудования в вашем приложении Direct3D. С его помощью можно определить, привязана ли производительность приложения к ЦП или GPU, и понять, как более эффективно использовать оборудование платформы. Инструмент учета использования GPU поддерживает приложения, использующие Direct3D 12, Direct3D 11 и Direct3D 10 и не поддерживает другие графические API, например Direct2D или OpenGL.  

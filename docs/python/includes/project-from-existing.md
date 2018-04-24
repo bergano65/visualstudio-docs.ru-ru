@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 37079cfaa1204cd8ce7a77e1e2f5aa91ea844ea5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/19/2018
+---
 1. Запустите Visual Studio и выберите **Файл > Создать > Проект**.
 
 1. В диалоговом окне **Создание проекта** выполните поиск по запросу "Python", выберите шаблон "На основе существующего кода Python", укажите имя и расположение проекта, а затем нажмите кнопку **ОК**.

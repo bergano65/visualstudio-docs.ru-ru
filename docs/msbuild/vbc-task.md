@@ -2,11 +2,8 @@
 title: Задача Vbc| Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-caps.latest.revision: 19
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b38f523a3a1c97798cdd629290791ab5e480f8
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: b80612f7d7fa97c8ba31de1a631049f48d1f82be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vbc-task"></a>Задача Vbc
 Использует программу-оболочку для файла vbc.exe, который создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (.netmodule). Дополнительные сведения о файле vbc.exe. см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -36,7 +32,7 @@ ms.lasthandoff: 04/10/2018
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Vbc` .  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Необязательный параметр `String[]` .<br /><br /> Задает дополнительные папки, в которых выполняется поиск сборок, указанных в атрибуте References.|  
 |`AddModules`|Необязательный параметр `String[]` .<br /><br /> Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту. Этот параметр соответствует параметру [/addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) компилятора vbc.exe.|  
@@ -72,7 +68,7 @@ ms.lasthandoff: 04/10/2018
 |`OutputAssembly`|Необязательный выходной параметр `String`.<br /><br /> Задает имя выходного файла. Этот параметр соответствует параметру [/out](/dotnet/visual-basic/reference/command-line-compiler/out) компилятора vbc.exe.|  
 |`Platform`|Необязательный параметр `String` .<br /><br /> Указывает целевую платформу процессора для выходного файла. Этот параметр может иметь значение `x86`, `x64`, `Itanium` или `anycpu`. Значение по умолчанию — `anycpu`. Этот параметр соответствует параметру [/platform](/dotnet/visual-basic/reference/command-line-compiler/platform) компилятора vbc.exe.|  
 |`References`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Вызывает импорт задачей информации об открытых типах из заданных элементов в текущий проект. Этот параметр соответствует параметру [/reference](/dotnet/visual-basic/reference/command-line-compiler/reference) компилятора vbc.exe.|  
-|`RemoveIntegerChecks`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, отключает проверку переполнения для целочисленных значений. Значение по умолчанию — `false`. Этот параметр соответствует параметру [/removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) компилятора vbc.exe.|  
+|`RemoveIntegerChecks`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, отключает проверку переполнения для целочисленных значений. Значение по умолчанию — `false`. Этот параметр соответствует параметру [/removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) компилятора vbc.exe.|  
 |`Resources`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Внедряет ресурс .NET Framework в выходной файл. Этот параметр соответствует параметру [/resource](/dotnet/visual-basic/reference/command-line-compiler/resource) компилятора vbc.exe.|  
 |`ResponseFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает файл ответов, содержащий команды для этой задачи. Этот параметр соответствует параметру [@ (указание файла ответа)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) компилятора vbc.exe.|  
 |`RootNamespace`|Необязательный параметр `String` .<br /><br /> Задает корневое пространство имен для всех объявлений типов. Этот параметр соответствует параметру [/rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) компилятора vbc.exe.|  

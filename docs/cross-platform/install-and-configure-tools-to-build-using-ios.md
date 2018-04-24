@@ -1,26 +1,22 @@
 ---
-title: "Установка и настройка средств для разработки с помощью iOS | Документы Майкрософт"
-ms.custom: 
+title: Установка и настройка средств для разработки с помощью iOS | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d015b927f8ba0fa62244a6cd09ff19efcb46451d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5374001e63f83f13e0956314e9af88808d624dae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в симуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.  
@@ -151,7 +147,7 @@ Visual C++ для разработки кроссплатформенных мо
   
 3.  В строке меню Visual Studio выберите **Сервис**, **Параметры**.  
   
-4.  В диалоговом окне **Параметры** разверните узлы **Кроссплатформенный**, **C++**и **iOS**.  
+4.  В диалоговом окне **Параметры** разверните узлы **Кроссплатформенный**, **C++** и **iOS**.  
   
 5.  В полях **Имя узла** и **Порт** введите значения, полученные при запуске удаленного агента. Именем узла может быть DNS-имя или IP-адрес компьютера Mac. Порт по умолчанию — 3030.  
   

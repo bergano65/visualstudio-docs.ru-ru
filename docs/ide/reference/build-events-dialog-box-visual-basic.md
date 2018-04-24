@@ -1,13 +1,10 @@
 ---
-title: "Диалоговое окно \"События сборки\" (Visual Basic) | Документы Майкрософт"
-ms.custom: 
+title: Диалоговое окно "События сборки" (Visual Basic) | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - Build Events dialog box
 - post-build events
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da28d0858784a8e71006c0ec072c3aea5110037e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76c384d5f3f5eaaab33c139ffc5528129e758670
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Диалоговое окно "События построения" (Visual Basic)
 В диалоговом окне **События сборки** можно задать инструкции по конфигурации сборки. Здесь же можно указать условия, при которых будут выполняться события, предшествующие сборке и следующие после нее. Дополнительные сведения см. в статье [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  

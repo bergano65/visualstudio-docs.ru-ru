@@ -1,26 +1,22 @@
 ---
-title: "Установка Visual C++ для разработки кроссплатформенных мобильных приложений | Документы Майкрософт"
-ms.custom: 
+title: Установка Visual C++ для разработки кроссплатформенных мобильных приложений | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b9f87e95a2d4088bb72890ef3f9508d9c5e02abc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64bdc654bc1bcd6721cc29052a9409e00f6afd07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Установка Visual C++ для разработки кроссплатформенных мобильных приложений
 [Visual C++ для разработки кроссплатформенных мобильных приложений](http://go.microsoft.com/fwlink/p/?LinkId=536383) — это устанавливаемый компонент Visual Studio 2015. Он включает в себя кроссплатформенные шаблоны Visual Studio, и вместе с ним устанавливаются кроссплатформенные средства и пакеты SDK, что позволяет быстро приступить к работе, не ища, не скачивая и не настраивая их самостоятельно. Эти средства можно использовать в Visual Studio для быстрого создания, редактирования, отладки и тестирования кроссплатформенных проектов. В этом разделе описывается установка средств и программного обеспечения сторонних разработчиков, необходимых для разработки кроссплатформенных приложений с помощью Visual Studio. Обзор компонента см. в статье [Visual C++ для разработки кросс-платформенных мобильных приложений](http://go.microsoft.com/fwlink/p/?LinkId=536387).  
@@ -127,7 +123,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  В строке меню Visual Studio выберите **Сервис**, **Параметры**.  
   
-2.  В диалоговом окне **Параметры** разверните узлы **Кроссплатформенный**, **C++**и выберите **Android**.  
+2.  В диалоговом окне **Параметры** разверните узлы **Кроссплатформенный**, **C++** и выберите **Android**.  
   
      ![Параметры пути к средствам Android](../cross-platform/media/cppmdd_options_android.PNG "CPPMDD_Options_Android")  
   

@@ -1,27 +1,22 @@
 ---
-title: "Навигатор использования | Документы Майкрософт"
-ms.custom: 
+title: Навигатор использования | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.utilizationnavigator
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c68443f15330a63e8372445fcbd80be8bd0dfc18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb7829408a2cb4cee74c4059d03567c3fc7f6c8a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="utilization-navigator"></a>Навигатор использования
 Вы можете применять навигатор использования в визуализаторе параллелизма для выбора интервала времени в трассировке. Визуализатор параллелизма показывает загруженность ядер ЦП целевым процессом во времени. Это облегчает просмотр шаблонов загрузки ЦП, а также позволяет сравнить данные загрузки и данные в других представлениях. Навигатор использования отображается в верхней части каждого представления в визуализаторе параллелизма. На рисунке ниже показан навигатор использования.  

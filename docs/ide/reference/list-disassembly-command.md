@@ -1,30 +1,26 @@
 ---
-title: "Команда \"Вывести дизассемблированный код\" | Документы Майкрософт"
-ms.custom: 
+title: Команда "Вывести дизассемблированный код" | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listdisassembly
 helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a704ac783f4efc300de26c2a5e987f82fc2e9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3007b5d675ab8e48406fdaaa69c4858554968920
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-disassembly-command"></a>Команда List Disassembly
 Начинает процесс отладки и позволяет указать способ обработки ошибок.  
@@ -44,7 +40,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  Необязательный. Количество инструкций для отображения. Значение по умолчанию — 8.  
   
  /endaddress: `expression` [или] /e: `expression`  
- Необязательно. Адрес, на котором нужно остановить дизассемблирование.  
+ Необязательный. Адрес, на котором нужно остановить дизассемблирование.  
   
  /codebytes:`yes`&#124;`no` [или] /bytes:`yes`&#124;`no` [или] /b:`yes`&#124;`no`  
  Необязательный. Указывает, следует ли отображать байты кода. Значение по умолчанию — `no`.  

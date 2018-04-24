@@ -1,27 +1,23 @@
 ---
-title: "Страница \"Клавиатура\", папка \"Среда\", диалоговое окно \"Параметры\" | Документы Майкрософт"
-ms.custom: 
+title: Страница "Клавиатура", папка "Среда", диалоговое окно "Параметры" | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
 ms.assetid: 038da8dc-6126-4f3e-a361-a58cc04cafb3
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af17bb8fb72043e7cbe87c2b291c49fcca97efa4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7e028fa925fd2de5b49194f45a9083017280b177
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>Страница «Клавиатура», папка «Среда», диалоговое окно «Параметры»
 Эта страница служит для назначения клавиш клавиатуры. Дополнительные сведения о назначении клавиш см. в разделе [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

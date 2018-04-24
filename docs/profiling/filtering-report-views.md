@@ -1,27 +1,22 @@
 ---
-title: "Фильтрация представлений отчетов | Документы Майкрософт"
-ms.custom: 
+title: Фильтрация представлений отчетов | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="filtering-report-views"></a>Фильтрация представлений отчетов
 Чтобы ограничить данные профилирования, отображаемые в представлениях отчета о производительности и экспортируемые в файлы отчетов, можно применить фильтры к файлам данных профилирования. Отчет можно ограничить данными, полученными между двумя метками времени. Кроме того, можно ограничиться данными определенных процессов или потоков. Фильтры можно сохранить в файле, а затем создать фильтр в другом файле данных профилирования, импортировав в него сохраненный фильтр.  

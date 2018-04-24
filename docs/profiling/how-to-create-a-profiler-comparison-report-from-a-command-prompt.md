@@ -1,23 +1,20 @@
 ---
-title: "Практическое руководство. Создание сравнительного отчета профилировщика с помощью командной строки | Документы Майкрософт"
-ms.custom: 
+title: Практическое руководство. Создание сравнительного отчета профилировщика с помощью командной строки | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3eb863a53b1e03ca71db9c18a1d8188ef47b392
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5377b9970c488be3f3b37e2834f469dae76f693d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Практическое руководство. Создание отчета сравнения профилировщиков с помощью командной строки
 Вы можете создать отчет Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] о результатах сравнения данных по производительности в двух файлах данных профилирования (VSP или VSPS). В отчете приводятся различия, снижение производительности и улучшения в одном сеансе профилирования по сравнению с другим. Значения в отчете отражают отклонения или степень изменения по сравнению с базовым планом в первом из указанных файлов. Это отклонение вычисляется на основе разности между старым (базовым) значением и результатом нового анализа. Сравнение данных профилирования может выполняться на основе функций кода, модулей приложения, строк, указателей инструкций и типов.  

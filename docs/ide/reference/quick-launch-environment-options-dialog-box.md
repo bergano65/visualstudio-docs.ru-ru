@@ -1,13 +1,10 @@
 ---
-title: "Поле \"Быстрый запуск\", папка \"Среда\", диалоговое окно \"Параметры\" | Документы Майкрософт"
-ms.custom: 
+title: Поле "Быстрый запуск", папка "Среда", диалоговое окно "Параметры" | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
 - vs.quicklaunch
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebc5f8374befec666a35977fc73f4dc7df3d71e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Страница «Быстрый запуск», папка «Среда», диалоговое окно «Параметры»
 Поле **Быстрый запуск** можно использовать для быстрого поиска и выполнения действий для ресурсов интегрированной среды разработки, таких как параметры, шаблоны и меню. Поле **Быстрый запуск** не подходит для поиска кода и символов. Поле поиска **Быстрый запуск** находится в правом верхнем углу строки меню и доступно при нажатии клавиш CTRL+Q. Просто введите строку поиска в поле. Для поиска строк, содержащих @, используйте «@@».  

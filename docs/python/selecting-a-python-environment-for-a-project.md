@@ -1,26 +1,21 @@
 ---
-title: Выбор окружения для проекта | Документация Майкрософт
+title: Выбор окружения для проекта
 description: В обозревателе решений Visual Studio вы можете назначить определенный интерпретатор и (или) окружение Python, которые следует всегда использовать для конкретного проекта, игнорируя окружение по умолчанию. Также вы можете создавать виртуальные окружения и управлять ими.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Выбор интерпретатора и окружения Python для проекта
 
@@ -111,7 +106,7 @@ ms.lasthandoff: 03/28/2018
 
 Чтобы установить новые пакеты, щелкните окружение правой кнопкой мыши и выберите действие **Установить пакет Python...**. В окне **Окружения Python** откроется вкладка **Пакеты**. Введите условие поиска (лучше всего имя пакета), и в Visual Studio отобразятся все подходящие пакеты.
 
-Пакеты (и зависимости) в Visual Studio скачиваются из репозитория [Python Package Index (PyPI)](https://pypi.python.org/pypi). В нем же вы можете искать доступные пакеты. В строке состояния Visual Studio и окне вывода отображаются сведения об установке. Чтобы удалить пакет, щелкните его правой кнопкой мыши и выберите команду **Удалить**.
+Пакеты (и зависимости) в Visual Studio скачиваются из репозитория [Python Package Index (PyPI)](https://pypi.org). В нем же вы можете искать доступные пакеты. В строке состояния Visual Studio и окне вывода отображаются сведения об установке. Чтобы удалить пакет, щелкните его правой кнопкой мыши и выберите команду **Удалить**.
 
 Не забывайте, что отображаемые записи могут быть неточными, а задания установки и удаления — ненадежными или недоступными. Visual Studio использует диспетчер пакетов pip, если он доступен, и при необходимости скачивает и устанавливает его. Visual Studio также может использовать диспетчер пакетов простой установки (easy_install). Здесь же отображаются пакеты, установленные с помощью команд `pip` или `easy_install` из командной строки.
 

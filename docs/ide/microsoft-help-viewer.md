@@ -1,13 +1,10 @@
 ---
-title: "Автономная справочная документация по Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Автономная справочная документация по Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - Help Viewer, navigating
 - toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c703ee241cac40cdec434957a10c5e64dbb730b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-help-viewer"></a>Окно справки (Майкрософт)
 Вы можете установить и просмотреть материалы для различных продуктов и технологий на локальном компьютере, включая Visual Studio, .NET Framework, справочник по языку, SQL Server и описание разработки для Windows, используя окно справки (Майкрософт). Окно справки позволяет вам:  
@@ -52,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 
 ### <a name="navigation-tabs"></a>Вкладки навигации
 
-|Вкладка|Описание:|
+|Tab|Описание:|
 |---|-----------|
 |Описание|Отображает установленное содержимое в виде иерархии (оглавление). Вы можете указать условия для фильтрации отображаемых заголовков.|
 |Индекс|Отображает список индексированных терминов в алфавитном порядке. Вы можете выполнить поиск по индексу, указать критерии для фильтрации записей и потребовать, чтобы записи индекса содержали указанный текст или начинались с него.|

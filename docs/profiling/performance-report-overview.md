@@ -1,27 +1,24 @@
 ---
-title: "Обзор отчета о производительности | Документы Майкрософт"
-ms.custom: 
+title: Обзор отчета о производительности | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, about performance rerports
 - performance, reports
 - performance reports, about performance reports
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 915f7f3cbbee87f72c4643b8c5a2b4497bbd69dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-report-overview"></a>Обзор отчета о производительности
 Данные, собранные во время сеанса анализа производительности, можно просматривать в окне **Отчет о производительности** интегрированной среды разработки Visual Studio Team System Development Edition. Данные профилирования сохраняются в VSP- и VSPS-файлах. Окна представления отчета позволяют просматривать и анализировать данные о проблемах производительности приложения.  
