@@ -2,8 +2,7 @@
 title: 'Как: укажите URL-адрес поддержки для отдельных предварительных условий в развертывании ClickOnce | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, prerequisites
 - ClickOnce deployment, URLs
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86d4b765dc5e6c56fdc8e7a3b082afaa72accf49
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4fe4deb04dbcc29a04036973d479803ee4667c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса поддержки для определенных необходимых компонентов в развертывании ClickOnce
 Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания можно проверить число необходимых компонентов, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для запуска приложения. К ним относятся требуемая Минимальная версия [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], версии операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], однако не может выполнить любые из этих предварительных условий самостоятельно. Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющий, почему произошел сбой установки.  

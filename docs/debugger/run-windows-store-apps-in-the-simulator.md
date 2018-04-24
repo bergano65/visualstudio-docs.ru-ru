@@ -2,8 +2,7 @@
 title: Запуск приложений UWP в симуляторе | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск в симуляторе приложений UWP
 Симулятор Visual Studio для приложений UWP — это классическое приложение, которое имитирует приложение UWP. Как правило будет необходимо выполнить отладку на локальном компьютере, подключенном устройстве или удаленном компьютере. Однако в некоторых сценариях может потребоваться использовать симулятор Visual Studio для эмуляции различных физический размер и разрешение экрана. Можно имитировать распространенные касания и поворота события и свойства сетевых подключений.

@@ -2,8 +2,7 @@
 title: 'Пошаговое руководство: Отладка веб-формы | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fbd7250aef7becd3dc2d29b38eccf9cc6c0f430
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
 Шаги данного руководства иллюстрируют способ отладки веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], также известных как веб-формы. Он показывает, как для запуска и остановки выполнения, установить точки останова и просматривать переменные в **Контрольные значения** окна.  

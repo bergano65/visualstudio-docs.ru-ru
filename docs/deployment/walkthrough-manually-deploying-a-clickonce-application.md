@@ -2,8 +2,7 @@
 title: 'Разбор примера: Развертывание вручную приложения ClickOnce | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71ab59e09f450d1656d77c551b3f44d0a60f1a57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Разбор примера: развертывание вручную приложения ClickOnce
 Если Visual Studio нельзя использовать для развертывания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, или если необходимо использовать дополнительные функции развертывания, таких как развертывание надежных приложений следует использовать средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты. В этом пошаговом руководстве описывается создание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью версии командной строки (Mage.exe) или графической версии (MageUI.exe) манифеста средства создания и редактирования.  

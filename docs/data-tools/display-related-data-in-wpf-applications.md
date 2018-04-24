@@ -1,6 +1,5 @@
 ---
-title: Отображение связанных данных в приложениях WPF | Документы Microsoft
-ms.custom: ''
+title: Отображение связанных данных в приложениях WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,11 +17,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5258f12a7ede6727736225e1e8308773db3c91c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b293656a0eeffeba304ef4692f9c021ae9639d22
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Отображение связанных данных в приложениях WPF
 В некоторых приложениях может потребоваться работать с данными из нескольких таблиц или сущностей, связанных друг с другом в иерархические связи. Например, может потребоваться отобразить сетку, в которой отображаются клиентов из `Customers` таблицы. Когда пользователь выбирает конкретного клиента, другой сетке отображаются заказы этого клиента из связанной `Orders` таблицы.
@@ -56,5 +55,6 @@ ms.lasthandoff: 04/16/2018
      ![Окно источников данных, показывающая связь](../data-tools/media/datasources2.gif "DataSources2")
 
 ## <a name="see-also"></a>См. также
-[Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
-[Создание таблиц подстановки в приложениях WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)
+
+- [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [Создание таблиц подстановки в приложениях WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)

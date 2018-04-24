@@ -2,8 +2,7 @@
 title: 'Как: укажите расположение, где пользователи будут устанавливать с | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - installation, specifying installation an URL
 - Installation URL property
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3161cfb36c09f78911a762347f9c9ec6d125ee39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0152cf6b03f2e089ee8633ef4abae9043e41bc24
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. Указание расположения, из которого будет производиться установка пользователями
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, место которого пользователи могут загрузить и установить приложение не обязательно является местом, где первоначально было опубликовано приложение. Например в некоторых организациях разработчик может опубликовать приложение на промежуточный сервер и затем администратор перемещает приложение на веб-сервере.  

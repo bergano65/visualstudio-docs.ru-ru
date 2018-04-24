@@ -2,8 +2,7 @@
 title: Отладка кода GPU | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e873eb89f1f5b22307b4a2be960d7b04121c222
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e423a36fd9477c01354c23f31afd686d79a3ba4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-gpu-code"></a>Отладка кода GPU
 Можно выполнять отладку кода C++, который выполняется в графическом процессоре (GPU). Поддержка отладки GPU в Visual Studio включает обнаружение состояния гонки, запуск процессов и присоединение к ним, а также интеграцию с окнами отладчика.  

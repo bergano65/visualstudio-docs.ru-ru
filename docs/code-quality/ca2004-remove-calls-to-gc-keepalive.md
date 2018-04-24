@@ -1,10 +1,8 @@
 ---
-title: 'CA2004: Удалите вызовы GC. KeepAlive | Документы Microsoft'
-ms.custom: ''
+title: 'CA2004: удалите вызовы GC.KeepAlive'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - RemoveCallsToGCKeepAlive
 - CA2004
@@ -17,28 +15,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25c42202f7df2214295af4e3d1a448266cfa6cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2f05764f5147a064815cdb744420686fb6a5a7c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: удалите вызовы GC.KeepAlive
-|||  
-|-|-|  
-|TypeName|RemoveCallsToGCKeepAlive|  
-|CheckId|CA2004|  
-|Категория|Microsoft.Reliability|  
-|Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- Классы используют `SafeHandle` , но по-прежнему содержат вызовы `GC.KeepAlive`.  
-  
-## <a name="rule-description"></a>Описание правила  
- При преобразовании к `SafeHandle` использование, удалить все вызовы `GC.KeepAlive` (объект). В этом случае классам не требуется вызывать `GC.KeepAlive`, при условии, что они не имеют метод завершения, а на `SafeHandle` для завершения дескриптора ОС для них.  Хотя затраты на оставшиеся в вызове `GC.KeepAlive` может оказаться незначительной по производительности, понимание того, вызов `GC.KeepAlive` является необходимым или достаточно решить проблему, которая больше не существует делает код труднее время существования Ведение.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Удалите вызов `GC.KeepAlive`.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+|||
+|-|-|
+|TypeName|RemoveCallsToGCKeepAlive|
+|CheckId|CA2004|
+|Категория|Microsoft.Reliability|
+|Критическое изменение|Не критическое|
+
+## <a name="cause"></a>Причина
+ Классы используют `SafeHandle` , но по-прежнему содержат вызовы `GC.KeepAlive`.
+
+## <a name="rule-description"></a>Описание правила
+ При преобразовании к `SafeHandle` использование, удалить все вызовы `GC.KeepAlive` (объект). В этом случае классам не требуется вызывать `GC.KeepAlive`, при условии, что они не имеют метод завершения, а на `SafeHandle` для завершения дескриптора ОС для них.  Хотя затраты на оставшиеся в вызове `GC.KeepAlive` может оказаться незначительной по производительности, понимание того, вызов `GC.KeepAlive` является необходимым или достаточно решить проблему, которая больше не существует делает код труднее время существования Ведение.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Удалите вызов `GC.KeepAlive`.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Это предупреждение можно отключить только в том случае, если это не технически правильно будет преобразовать в `SafeHandle` использование в классе.

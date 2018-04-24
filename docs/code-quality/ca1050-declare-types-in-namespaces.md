@@ -1,10 +1,8 @@
 ---
-title: 'CA1050: Объявляйте типы в пространствах имен | Документы Microsoft'
-ms.custom: ''
+title: 'CA1050: объявляйте типы в пространствах имен'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1050
 - DeclareTypesInNamespaces
@@ -17,40 +15,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47c63d066127780b629a93572593ed729651c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 174f30b8f4e58d7289b93cd9f5a8a8253c7a4fba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: объявляйте типы в пространствах имен
-|||  
-|-|-|  
-|TypeName|DeclareTypesInNamespaces|  
-|CheckId|CA1050|  
-|Категория|Microsoft.Design|  
-|Критическое изменение|Критическое|  
-  
-## <a name="cause"></a>Причина  
- Открытый или защищенный тип определен вне области именованного пространства имен.  
-  
-## <a name="rule-description"></a>Описание правила  
- Типы объявляются в пространствах имен во избежание конфликтов имен и с целью упорядочения связанных типов в иерархии объектов. Типы, которые находятся за пределами любого именованного пространства имен находятся в глобальное пространство имен, которое нельзя ссылаться в коде.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, поместите тип в пространстве имен.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Несмотря на то, что вы не отключайте предупреждение из этого правила, можно безопасно использовать, когда сборки не будут использоваться вместе с другими сборками.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано это библиотека, которая имеет тип объявлен вне пространства имен и тип, который имеет то же имя, объявленные в пространстве имен.  
-  
+|||
+|-|-|
+|TypeName|DeclareTypesInNamespaces|
+|CheckId|CA1050|
+|Категория|Microsoft.Design|
+|Критическое изменение|Критическое|
+
+## <a name="cause"></a>Причина
+ Открытый или защищенный тип определен вне области именованного пространства имен.
+
+## <a name="rule-description"></a>Описание правила
+ Типы объявляются в пространствах имен во избежание конфликтов имен и с целью упорядочения связанных типов в иерархии объектов. Типы, которые находятся за пределами любого именованного пространства имен находятся в глобальное пространство имен, которое нельзя ссылаться в коде.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, поместите тип в пространстве имен.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Несмотря на то, что вы не отключайте предупреждение из этого правила, можно безопасно использовать, когда сборки не будут использоваться вместе с другими сборками.
+
+## <a name="example"></a>Пример
+ В следующем примере показано это библиотека, которая имеет тип объявлен вне пространства имен и тип, который имеет то же имя, объявленные в пространстве имен.
+
  [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]  
-  
-## <a name="example"></a>Пример  
- Следующее приложение использует библиотеки, в которой был определен ранее. Обратите внимание, что тип, объявленный вне пространства имен создается при имя `Test` не уточнен пространством имен. Обратите внимание, что для доступа к `Test` введите `Goodspace`, требуется указать имя пространства имен.  
-  
+ [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+
+## <a name="example"></a>Пример
+ Следующее приложение использует библиотеки, в которой был определен ранее. Обратите внимание, что тип, объявленный вне пространства имен создается при имя `Test` не уточнен пространством имен. Обратите внимание, что для доступа к `Test` введите `Goodspace`, требуется указать имя пространства имен.
+
  [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

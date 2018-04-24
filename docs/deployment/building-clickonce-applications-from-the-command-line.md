@@ -2,8 +2,7 @@
 title: Построение ClickOnce-приложений из командной строки | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4488f32b135d766f494bc94946fbf77d42eb1e95
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Построение ClickOnce-приложений из командной строки
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], можно создавать проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле можно перестроить проект, созданный с [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, имеющем только [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установлен. Это позволяет воспроизвести сборки с помощью автоматизированного процесса, например, в центре сборки лаборатории или с помощью дополнительных методы написания сценариев вне области построения самого проекта.  

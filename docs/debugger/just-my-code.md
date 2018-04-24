@@ -2,8 +2,7 @@
 title: Отладка кода пользователя только мой код | Документы Microsoft
 ms.custom: ''
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf41b8d264d353b6c47acd2e0a762a57d46412e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b59072f17ecfa810bec422770aeff24e0d8e2d99
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Укажите, следует ли выполнить отладку пользовательского кода, с использованием "только мой код" в Visual Studio
 Можно настроить Visual Studio автоматически шаг с обходом системные, платформенные и другие не являющиеся пользовательскими вызовы и свернуть такие вызовы в окне стека вызовов. Функция, которая включает или отключает это поведение называется *только мой код*. В этом разделе описывается использование только мой код в проектах C#, Visual Basic, C++ и JavaScript.

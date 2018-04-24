@@ -2,8 +2,7 @@
 title: 'Как: отладке на кластере высокой производительности | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d90037fbf147dd0234ee356f217ab97e5af87a01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97e692d4d376473f3eaf283a53117d0bf343ea71
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Практическое руководство. Отладка в высокопроизводительном кластере
 Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Требования к удаленной установке в общем см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  

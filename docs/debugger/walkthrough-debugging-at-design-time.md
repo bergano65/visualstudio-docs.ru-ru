@@ -2,8 +2,7 @@
 title: Отладка во время разработки — Visual Studio | Документы Microsoft
 ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e907cff461852d09e7b5b00482d2bdf42c0340
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c569ba018cfaa65cf2fec3edcf0676ef374db225
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-at-design-time-in-visual-studio"></a>Отладка во время разработки в Visual Studio
 

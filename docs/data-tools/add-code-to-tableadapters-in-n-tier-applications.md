@@ -1,6 +1,5 @@
 ---
-title: Добавьте код для объектов TableAdapter в многоуровневых приложениях | Документы Microsoft
-ms.custom: ''
+title: Добавьте код для объектов TableAdapter в многоуровневых приложениях
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,58 +15,59 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c732842f5a98bfb1c78a125830f730aeeb5321
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 165d0e76eb030d8a173761733245c993115ed315
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавьте код для объектов TableAdapter в многоуровневых приложениях
-Можно расширить функциональные возможности адаптера таблицы путем создания файла разделяемого класса для адаптера таблицы и добавления к нему кода (вместо добавления кода в *DatasetName*. DataSet.Designer-файл). Разделяемые классы позволяют коду для определенного класса разделяться между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (тип)](/dotnet/csharp/language-reference/keywords/partial-type).  
-  
-Код, определяющий адаптер таблицы создается каждый раз при внесении изменений в адаптер таблицы в наборе данных. Этот код также создается при внесении изменений во время выполнения мастеров, изменяющих конфигурацию адаптера таблицы. Чтобы предотвратить удаление во время повторного формирования адаптера таблицы в коде, добавьте код в файл разделяемого класса адаптера таблицы.  
-  
-По умолчанию после разделения кода адаптера таблицы и набора данных получается отдельные файлы классов в каждом проекте. Исходный проект содержит файл с именем *DatasetName*. Designer.vb (или *DatasetName*. Designer.cs), содержащий код адаптера таблицы. Проект, который назначен в **Dataset проекта** свойство имеет файл с именем *DatasetName*. DataSet.Designer.vb (или *DatasetName*. DataSet.Designer.cs), содержащий код набора данных.  
-  
+Можно расширить функциональные возможности адаптера таблицы путем создания файла разделяемого класса для адаптера таблицы и добавления к нему кода (вместо добавления кода в *DatasetName*. DataSet.Designer-файл). Разделяемые классы позволяют коду для определенного класса разделяться между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (тип)](/dotnet/csharp/language-reference/keywords/partial-type).
+
+Код, определяющий адаптер таблицы создается каждый раз при внесении изменений в адаптер таблицы в наборе данных. Этот код также создается при внесении изменений во время выполнения мастеров, изменяющих конфигурацию адаптера таблицы. Чтобы предотвратить удаление во время повторного формирования адаптера таблицы в коде, добавьте код в файл разделяемого класса адаптера таблицы.
+
+По умолчанию после разделения кода адаптера таблицы и набора данных получается отдельные файлы классов в каждом проекте. Исходный проект содержит файл с именем *DatasetName*. Designer.vb (или *DatasetName*. Designer.cs), содержащий код адаптера таблицы. Проект, который назначен в **Dataset проекта** свойство имеет файл с именем *DatasetName*. DataSet.Designer.vb (или *DatasetName*. DataSet.Designer.cs), содержащий код набора данных.
+
 > [!NOTE]
->  При разделении наборов данных и адаптеров таблиц (установив **DataSet проекта** свойства), существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.  
-  
+>  При разделении наборов данных и адаптеров таблиц (установив **DataSet проекта** свойства), существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.
+
 > [!NOTE]
->  Набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчики событий, когда требуется проверка. Дополнительные сведения см. в разделе [Добавление проверки в n уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md).  
-  
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
-  
-## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Добавление пользовательского кода в TableAdapter в многоуровневых приложениях  
-  
+> Набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчики событий, когда требуется проверка. Дополнительные сведения см. в разделе [Добавление проверки в n уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
+
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+
+## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Добавление пользовательского кода в TableAdapter в многоуровневых приложениях
+
 1.  Найдите проект, который содержит файл с расширением XSD.
-  
-2.  Дважды щелкните **.xsd** файл, чтобы открыть **конструктора наборов данных**.  
-  
-3.  Щелкните правой кнопкой мыши TableAdapter, который требуется добавить код, а затем выберите **Просмотр кода**.  
-  
-     Разделяемый класс создается и открывается в редакторе кода.  
-  
-4.  Добавьте код в объявление разделяемого класса.  
-  
-5.  В следующем примере показано, куда нужно добавить код для `CustomersTableAdapter` в `NorthwindDataSet`:  
-  
-    ```vb  
-    Partial Public Class CustomersTableAdapter  
-        ' Add code here to add functionality   
-        ' to the CustomersTableAdapter.  
-    End Class  
-    ```  
-  
-    ```csharp  
-    public partial class CustomersTableAdapter  
-    {  
-        // Add code here to add functionality  
-        // to the CustomersTableAdapter.  
-    }  
-    ```  
-  
+
+2.  Дважды щелкните **.xsd** файл, чтобы открыть **конструктора наборов данных**.
+
+3.  Щелкните правой кнопкой мыши TableAdapter, который требуется добавить код, а затем выберите **Просмотр кода**.
+
+     Разделяемый класс создается и открывается в редакторе кода.
+
+4.  Добавьте код в объявление разделяемого класса.
+
+5.  В следующем примере показано, куда нужно добавить код для `CustomersTableAdapter` в `NorthwindDataSet`:
+
+    ```vb
+    Partial Public Class CustomersTableAdapter
+        ' Add code here to add functionality
+        ' to the CustomersTableAdapter.
+    End Class
+    ```
+
+    ```csharp
+    public partial class CustomersTableAdapter
+    {
+        // Add code here to add functionality
+        // to the CustomersTableAdapter.
+    }
+    ```
+
 ## <a name="see-also"></a>См. также
-[Общие сведения о данных N-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)   
-[Добавление кода для наборов данных в n уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
-[Создайте и настройте адаптеры таблиц TableAdapter](create-and-configure-tableadapters.md)   
-[Общие сведения о иерархическое обновление](hierarchical-update.md)   
+
+- [Общие сведения о N-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md)
+- [Добавление кода для наборов данных в многоуровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
+- [Создайте и настройте адаптеры таблиц TableAdapter](create-and-configure-tableadapters.md)
+- [Общие сведения о иерархическое обновление](hierarchical-update.md)

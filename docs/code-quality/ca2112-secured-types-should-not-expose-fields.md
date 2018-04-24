@@ -1,10 +1,8 @@
 ---
-title: 'CA2112: Защищенные типы не должны предоставлять поля | Документы Microsoft'
-ms.custom: ''
+title: 'CA2112: защищенные типы не должны предоставлять поля'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2112
 - SecuredTypesShouldNotExposeFields
@@ -17,58 +15,57 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 050aa2a5048ed4d58e6b5a285f584eda330f178f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3fd94add5a2fbb1d77025f44f35bc9456ab1e55
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: защищенные типы не должны предоставлять поля
-|||  
-|-|-|  
-|TypeName|SecuredTypesShouldNotExposeFields|  
-|CheckId|CA2112|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое|  
-  
-## <a name="cause"></a>Причина  
- Открытый или защищенный тип содержит открытые поля и защищен [требования связывания](/dotnet/framework/misc/link-demands).  
-  
-## <a name="rule-description"></a>Описание правила  
- Если код имеет доступ к экземпляру типа, защищенного запросом компоновки, то для получения доступа к полям типа коду не требуется удовлетворять запросу компоновки.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, сделать поля неоткрытыми и добавить открытые свойства или методы, возвращающие данные поля. Проверки безопасности LinkDemand для типов защиты доступа к свойствам и методам типа. Тем не менее доступом для кода не применяется к полям.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Для проблем безопасности и создать эффективную систему необходимо устранить нарушения, делая nonpublic открытые поля. Можно подавить предупреждение из этого правила, если поле не содержит информации, которую требуется защищать, и не следует полагаться на значения поля.  
-  
-## <a name="example"></a>Пример  
- Следующий пример состоит из типа библиотеки (`SecuredTypeWithFields`) с незащищенными полями, типа (`Distributor`), можно создать экземпляры типа библиотеки ошибочный передает экземпляров типа нет разрешения для их создания и кода приложения, можно прочитать поля экземпляра, несмотря на то, что он не имеет разрешения, которое защищает тип.  
-  
- Следующий код библиотеки нарушает правило.  
-  
- [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]  
-  
-## <a name="example"></a>Пример  
- Приложение не может создать экземпляр из-за запрос компоновки защищает тип. Следующий класс позволяет приложению получить экземпляр защищенного типа.  
-  
- [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]  
-  
-## <a name="example"></a>Пример  
- В следующем приложении демонстрируется, как это сделать, без разрешения для доступа к методам защищенного типа, код может обращаться к его поля.  
-  
- [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]  
-  
- В этом примере формируются следующие данные:  
-  
- **Создание экземпляра SecuredTypeWithFields.**  
-**Защищенные поля типа: 22, 33**  
-**Изменение защищенного типа поля...**  
-**Поля объекта в кэше: 99, 33**   
-## <a name="related-rules"></a>Связанные правила  
- [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
-  
-## <a name="see-also"></a>См. также  
- [Требования связывания](/dotnet/framework/misc/link-demands)   
- [Данные и моделирование](/dotnet/framework/data/index)
+|||
+|-|-|
+|TypeName|SecuredTypesShouldNotExposeFields|
+|CheckId|CA2112|
+|Категория|Microsoft.Security|
+|Критическое изменение|Критическое|
+
+## <a name="cause"></a>Причина
+ Открытый или защищенный тип содержит открытые поля и защищен [требования связывания](/dotnet/framework/misc/link-demands).
+
+## <a name="rule-description"></a>Описание правила
+ Если код имеет доступ к экземпляру типа, защищенного запросом компоновки, то для получения доступа к полям типа коду не требуется удовлетворять запросу компоновки.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, сделать поля неоткрытыми и добавить открытые свойства или методы, возвращающие данные поля. Проверки безопасности LinkDemand для типов защиты доступа к свойствам и методам типа. Тем не менее доступом для кода не применяется к полям.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Для проблем безопасности и создать эффективную систему необходимо устранить нарушения, делая nonpublic открытые поля. Можно подавить предупреждение из этого правила, если поле не содержит информации, которую требуется защищать, и не следует полагаться на значения поля.
+
+## <a name="example"></a>Пример
+ Следующий пример состоит из типа библиотеки (`SecuredTypeWithFields`) с незащищенными полями, типа (`Distributor`), можно создать экземпляры типа библиотеки ошибочный передает экземпляров типа нет разрешения для их создания и кода приложения, можно прочитать поля экземпляра, несмотря на то, что он не имеет разрешения, которое защищает тип.
+
+ Следующий код библиотеки нарушает правило.
+
+ [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]
+
+## <a name="example"></a>Пример
+ Приложение не может создать экземпляр из-за запрос компоновки защищает тип. Следующий класс позволяет приложению получить экземпляр защищенного типа.
+
+ [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]
+
+## <a name="example"></a>Пример
+ В следующем приложении демонстрируется, как это сделать, без разрешения для доступа к методам защищенного типа, код может обращаться к его поля.
+
+ [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]
+
+ В этом примере формируются следующие данные:
+
+ **Создание экземпляра SecuredTypeWithFields. ** 
+ **Защищенный тип поля: 22, 33**
+**изменение защищенного типа поля... ** 
+ **Полей объекта в кэше: 99, 33**
+## <a name="related-rules"></a>Связанные правила
+ [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+
+## <a name="see-also"></a>См. также
+ [Требования связывания](/dotnet/framework/misc/link-demands) [данных и моделирование](/dotnet/framework/data/index)

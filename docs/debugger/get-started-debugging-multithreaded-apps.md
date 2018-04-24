@@ -2,8 +2,7 @@
 title: Начало отладки многопоточных приложений | Документы Microsoft
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cea34a609905ea54b00115ee6d9419eb07c58c0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 067f28cfbc90d26088b37eb40b730edca37533d2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Начало отладки многопоточных приложений в Visual Studio
 Visual Studio предоставляет несколько средств и элементы пользовательского интерфейса для отладки многопоточных приложений. Этого учебника показано, как использовать маркеры потоков **Параллельные стеки** окне **контроль параллельных данных** окна, условные точки останова и точки останова фильтра. Этот учебник занимает всего несколько минут, но оно позволит ознакомиться со средствами для отладки многопоточных приложений.

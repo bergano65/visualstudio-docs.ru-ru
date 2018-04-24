@@ -2,8 +2,7 @@
 title: Вариант формата отображения глубиной цвета 16 бит | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620bc415349a46ba8ab2315d6d41b93dc9194ca1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e8f8328b180c398cab5ff7fa0f29dfc578414e3a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="16bpp-render-target-format-variant"></a>Вариант формата однобуферной прорисовки 16 бит/пкс
 Для всех целевых объектов отрисовки и буферов фона задается формат пикселей DXGI_FORMAT_B5G6R5_UNORM.  

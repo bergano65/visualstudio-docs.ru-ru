@@ -2,8 +2,7 @@
 title: 'Как: задание альтернативного местоположения для обновлений развертывания | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deployment update, alternative locations
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 107fb4680b2ee5600c2cee847ebb3d2b5efd7da4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c6778d5cad698e6eea541b94df6f8eb793746c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. Задание альтернативного местоположения для обновлений развертывания
 Можно установить на [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения изначально с компакт-диска или из общей папки, но приложение должно проверять наличие периодических обновлений в Интернете. Можно указать альтернативное расположение для обновлений в манифесте развертывания, чтобы ваше приложение может обновляться из Интернета после начальной установки.  

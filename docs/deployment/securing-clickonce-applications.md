@@ -2,8 +2,7 @@
 title: Защита приложений ClickOnce | Документы Microsoft
 ms.custom: ''
 ms.date: 02/17/2017
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13ec12009a48d841a991519ab929794279fe2a5e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="securing-clickonce-applications"></a>Защита приложений ClickOnce
 К приложению[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут применяться ограничения управления доступом для кода на платформе .NET Framework, позволяющие ограничить доступ кода к защищенным ресурсам и операциям. Важно понимать влияние управления доступом для кода, чтобы писать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] соответствующим образом. Для ограничения доступа приложение может использовать зоны с полным или частичным доверием, такие как Интернет и интрасеть.  

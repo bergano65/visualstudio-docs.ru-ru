@@ -1,8 +1,7 @@
 ---
-title: Служебные методы для текстовых шаблонов | Документы Microsoft
-ms.custom: ''
+title: Служебные методы для текстовых шаблонов
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
 author: gewarren
@@ -11,11 +10,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 37e268313aa6662ca250aed36be193864bbf0ed5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9367c5c8e65c58a79b0d8e864c5a9a201fbe3954
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="text-template-utility-methods"></a>Служебные методы для текстовых шаблонов
 
@@ -23,113 +22,116 @@ ms.lasthandoff: 04/16/2018
 
 > [!TIP]
 > Можно также использовать другие методы и службы, предоставляемые средой размещения в шаблоне обычный текст (без предварительной обработки). Например, разрешения путей к файлам, журнал ошибок и получения служб, предоставляемых Visual Studio и любые загруженными пакетами. Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
-  
+
 ## <a name="write-methods"></a>Написать методы
 
-Можно использовать `Write()` и `WriteLine()` методы можно добавлять текст в стандартный блок кода, вместо использования блока кода выражения. Следующие два блока кода функционально эквивалентны.  
-  
-### <a name="code-block-with-an-expression-block"></a>Блок кода с блоком выражения  
-  
-```  
-<#  
-int i = 10;  
-while (i-- > 0)  
-    { #>  
-        <#= i #>  
-    <# }  
-#>  
-```  
-  
-### <a name="code-block-using-writeline"></a>Блок кода, с помощью WriteLine()  
-  
-```  
-<#   
-    int i = 10;  
-    while (i-- > 0)  
-    {   
-        WriteLine((i.ToString()));  
-    }  
-#>  
-```  
-  
- Может оказаться полезным использовать один из этих служебных методов вместо блока выражения в длинном блоке кода с вложенными управляющими структурами.  
-  
- `Write()` И `WriteLine()` методы имеют две перегруженные версии, одна из которых принимает один строковый параметр и одно принимает строки составного формата, а также массив объектов для включения в строку (например `Console.WriteLine()` метода). Следующие два применения `WriteLine()` функционально эквивалентны:  
-  
-```  
-<#  
-    string msg = "Say: {0}, {1}, {2}";  
-    string s1 = "hello";  
-    string s2 = "goodbye";  
-    string s3 = "farewell";  
-  
-    WriteLine(msg, s1, s2, s3);  
-    WriteLine("Say: hello, goodbye, farewell");  
-#>   
-```  
-  
+Можно использовать `Write()` и `WriteLine()` методы можно добавлять текст в стандартный блок кода, вместо использования блока кода выражения. Следующие два блока кода функционально эквивалентны.
+
+### <a name="code-block-with-an-expression-block"></a>Блок кода с блоком выражения
+
+```
+<#
+int i = 10;
+while (i-- > 0)
+    { #>
+        <#= i #>
+    <# }
+#>
+```
+
+### <a name="code-block-using-writeline"></a>Блок кода, с помощью WriteLine()
+
+```
+<#
+    int i = 10;
+    while (i-- > 0)
+    {
+        WriteLine((i.ToString()));
+    }
+#>
+```
+
+Может оказаться полезным использовать один из этих служебных методов вместо блока выражения в длинном блоке кода с вложенными управляющими структурами.
+
+`Write()` И `WriteLine()` методы имеют две перегруженные версии, одна из которых принимает один строковый параметр и одно принимает строки составного формата, а также массив объектов для включения в строку (например `Console.WriteLine()` метода). Следующие два применения `WriteLine()` функционально эквивалентны:
+
+```
+<#
+    string msg = "Say: {0}, {1}, {2}";
+    string s1 = "hello";
+    string s2 = "goodbye";
+    string s3 = "farewell";
+
+    WriteLine(msg, s1, s2, s3);
+    WriteLine("Say: hello, goodbye, farewell");
+#>
+```
+
 ## <a name="indentation-methods"></a>Методы для отступов
 
- Отступ методы можно использовать для форматирования выходных данных текстовый шаблон. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Класс имеет `CurrentIndent` строковое свойство, которое отображает текущий отступ в текстовом шаблоне и `indentLengths` поле, список отступы, которые были добавлены. Можно добавить отступ с `PushIndent()` метод и удалить отступ с `PopIndent()` метод. Для удаления всех отступов, используйте `ClearIndent()` метод. Следующий блок кода показано использование этих методов.  
-  
-```  
-<#  
-    WriteLine(CurrentIndent + "Hello");  
-    PushIndent("    ");  
-    WriteLine(CurrentIndent + "Hello");  
-    PushIndent("    ");  
-    WriteLine(CurrentIndent + "Hello");  
-    ClearIndent();  
-    WriteLine(CurrentIndent + "Hello");  
-    PushIndent("    ");  
-    WriteLine(CurrentIndent + "Hello");  
-#>  
-```  
-  
- Этот блок кода выводятся следующие данные:  
-  
-```  
-Hello  
-        Hello  
-                Hello  
-Hello  
-        Hello  
-```  
-  
-## <a name="error-and-warning-methods"></a>Методы ошибок и предупреждений  
- Ошибки и предупреждения служебные методы можно использовать для добавления сообщений список ошибок Visual Studio. Например следующий код будет добавлен сообщение об ошибке в списке ошибок.  
-  
-```  
-<#  
-  try  
-  {  
-    string str = null;  
-    Write(str.Length.ToString());  
-  }  
-  catch (Exception e)  
-  {  
-    Error(e.Message);  
-  }  
-#>    
-```  
-  
-## <a name="access-to-host-and-service-provider"></a>Доступ к узла и поставщик услуг  
- Свойство `this.Host` позволяют осуществлять доступ к свойствам узла, выполняющего шаблона. Для использования `this.Host`, необходимо задать `hostspecific` атрибута в `<@template#>` директиву:  
-  
- `<#@template ... hostspecific="true" #>`  
-  
- Тип `this.Host` зависит от типа узла, в котором выполняется шаблон. В шаблоне, на котором выполняется в Visual Studio, можно привести `this.Host` для `IServiceProvider` для получения доступа к службам, например интегрированной среды разработки. Пример:  
-  
-```  
-EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  
-                       .GetService(typeof(EnvDTE.DTE));  
-```  
-  
-## <a name="using-a-different-set-of-utility-methods"></a>С помощью другой набор служебных методов  
- В рамках процесса создания текстового файла шаблона преобразуется в класс, который всегда имеет имя `GeneratedTextTransformation`и наследует от <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Если вы хотите использовать другой набор методов, можно написать собственный класс и укажите его в директиве template. Этот класс должен наследовать из <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
-```  
-<#@ template inherits="MyUtilityClass" #>  
-```  
-  
- Используйте `assembly` директивы для ссылки на сборку, где можно найти скомпилированного класса.
+Отступ методы можно использовать для форматирования выходных данных текстовый шаблон. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Класс имеет `CurrentIndent` строковое свойство, которое отображает текущий отступ в текстовом шаблоне и `indentLengths` поле, список отступы, которые были добавлены. Можно добавить отступ с `PushIndent()` метод и удалить отступ с `PopIndent()` метод. Для удаления всех отступов, используйте `ClearIndent()` метод. Следующий блок кода показано использование этих методов.
+
+```
+<#
+    WriteLine(CurrentIndent + "Hello");
+    PushIndent("    ");
+    WriteLine(CurrentIndent + "Hello");
+    PushIndent("    ");
+    WriteLine(CurrentIndent + "Hello");
+    ClearIndent();
+    WriteLine(CurrentIndent + "Hello");
+    PushIndent("    ");
+    WriteLine(CurrentIndent + "Hello");
+#>
+```
+
+Этот блок кода выводятся следующие данные:
+
+```
+Hello
+        Hello
+                Hello
+Hello
+        Hello
+```
+
+## <a name="error-and-warning-methods"></a>Методы ошибок и предупреждений
+
+Ошибки и предупреждения служебные методы можно использовать для добавления сообщений список ошибок Visual Studio. Например следующий код будет добавлен сообщение об ошибке в списке ошибок.
+
+```
+<#
+  try
+  {
+    string str = null;
+    Write(str.Length.ToString());
+  }
+  catch (Exception e)
+  {
+    Error(e.Message);
+  }
+#>
+```
+
+## <a name="access-to-host-and-service-provider"></a>Доступ к узла и поставщик услуг
+
+Свойство `this.Host` позволяют осуществлять доступ к свойствам узла, выполняющего шаблона. Для использования `this.Host`, необходимо задать `hostspecific` атрибута в `<@template#>` директиву:
+
+`<#@template ... hostspecific="true" #>`
+
+Тип `this.Host` зависит от типа узла, в котором выполняется шаблон. В шаблоне, на котором выполняется в Visual Studio, можно привести `this.Host` для `IServiceProvider` для получения доступа к службам, например интегрированной среды разработки. Пример:
+
+```
+EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
+                       .GetService(typeof(EnvDTE.DTE));
+```
+
+## <a name="using-a-different-set-of-utility-methods"></a>С помощью другой набор служебных методов
+
+В рамках процесса создания текстового файла шаблона преобразуется в класс, который всегда имеет имя `GeneratedTextTransformation`и наследует от <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Если вы хотите использовать другой набор методов, можно написать собственный класс и укажите его в директиве template. Этот класс должен наследовать из <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
+```
+<#@ template inherits="MyUtilityClass" #>
+```
+
+Используйте `assembly` директивы для ссылки на сборку, где можно найти скомпилированного класса.

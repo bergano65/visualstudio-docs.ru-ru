@@ -1,6 +1,5 @@
 ---
-title: Добавление новых подключений | Документы Microsoft
-ms.custom: ''
+title: Добавление новых подключений
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 
@@ -37,9 +36,9 @@ ms.lasthandoff: 04/16/2018
 
 ![Значок нового подключения обозревателя сервера](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata значок нового подключения обозревателя сервера")
 
-Откроется окно **добавить подключение** диалоговое окно. Здесь мы ввели имя экземпляра SQL Server LocalDB.  
+Откроется окно **добавить подключение** диалоговое окно. Здесь мы ввели имя экземпляра SQL Server LocalDB.
 
-![Добавление нового подключения](../data-tools/media/raddata-add-new-connection-dialog.png "raddata добавить новое диалоговое окно соединения")  
+![Добавление нового подключения](../data-tools/media/raddata-add-new-connection-dialog.png "raddata добавить новое диалоговое окно соединения")
 
 ## <a name="change-the-provider"></a>Изменить поставщика
 
@@ -57,4 +56,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>См. также
 
-[Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

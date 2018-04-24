@@ -1,6 +1,5 @@
 ---
 title: Пошаговое руководство анализ управляемого кода на наличие дефектов кода | Документы Microsoft
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство: Анализ управляемого кода для кода ошибки
 
@@ -30,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 
 1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**.
 
-1. В **новый проект** диалогового окна разверните **установленные** > **Visual C#**и нажмите кнопку **классического Windows**.
+1. В **новый проект** диалогового окна разверните **установленные** > **Visual C#** и нажмите кнопку **классического Windows**.
 
 1. Выберите **библиотека классов (.NET Framework)** шаблона.
 
@@ -61,21 +60,21 @@ ms.lasthandoff: 04/16/2018
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>Анализ управляемого проекта для дефекта кода
 
 1. Выберите проект в CodeAnalysisManagedDemo **обозревателе решений**.
-  
+
 1. В меню **Проект** выберите пункт **Свойства**.
-  
+
      Откроется страница свойств CodeAnalysisManagedDemo.
-  
+
 1. Выберите **анализа кода** вкладки.
-  
+
 1. Убедитесь, что **включить анализ кода в построении** проверяется.
-  
+
 1. Из **выполнить этот набор правил** раскрывающемся списке выберите **все правила Майкрософт**.
-  
+
 1. На **файл** меню, нажмите кнопку **сохранить выбранные элементы**, а затем закройте страницы свойств.
-  
+
 1. На **построения** меню, нажмите кнопку **построения CodeAnalysisManagedDemo**.
-  
+
     Предупреждения при построении проекта CodeAnalysisManagedDemo отображаются в **список ошибок** и **вывода** windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Исправьте проблемы анализа кода

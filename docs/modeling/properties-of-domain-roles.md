@@ -1,19 +1,18 @@
 ---
-title: Свойства роли домена | Документы Microsoft
-ms.custom: ''
+title: Свойства доменных ролей
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Свойства доменных ролей
 Свойства в следующей таблице сопоставлены роли домена. Сведения о роли домена см. в разделе [Общие сведения о моделях, классы и отношения](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. в разделе [настройку и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,7 +39,8 @@ ms.lasthandoff: 04/16/2018
 |Отображаемое имя свойства|Имя, которое отображается в конструкторе, созданный для свойства созданных ролей.|Скорректированное значение свойства имени свойства.|
 
 > [!NOTE]
->  Отображаемое имя по умолчанию основан на значение связанного свойства посредством вставки пробелов перед каждый символ верхнего регистра, которому предшествует символ в нижнем регистре и, не следуют другие символы верхнего регистра.
+> Отображаемое имя по умолчанию основан на значение связанного свойства посредством вставки пробелов перед каждый символ верхнего регистра, которому предшествует символ в нижнем регистре и, не следуют другие символы верхнего регистра.
 
 ## <a name="see-also"></a>См. также
- [Свойства доменных связей](../modeling/properties-of-domain-relationships.md)
+
+- [Свойства доменных связей](../modeling/properties-of-domain-relationships.md)

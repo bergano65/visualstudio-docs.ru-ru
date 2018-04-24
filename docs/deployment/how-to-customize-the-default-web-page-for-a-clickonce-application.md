@@ -2,8 +2,7 @@
 title: 'Как: Настройка веб-страницы по умолчанию для приложения ClickOnce | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], publishing
 - publishing, ClickOnce
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cfbe5ac94f2c740b1424f9bdc5a215ee571ef5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 743d7f259da4129eda578808d1ce04619104a3f1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Практическое руководство. Настройка используемой по умолчанию веб-страницы для ClickOnce-приложения
 При публикации приложения ClickOnce на веб-узле, на веб-странице автоматически создается и публикуется вместе с приложением. По умолчанию страница содержит имя приложения и ссылки для установки приложения, установите необходимые компоненты или справку в библиотеке MSDN.  

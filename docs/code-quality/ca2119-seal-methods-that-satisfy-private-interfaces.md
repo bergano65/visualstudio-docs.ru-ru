@@ -1,10 +1,8 @@
 ---
-title: 'CA2119: Запечатайте методы, соответствующие частным интерфейсам | Документы Microsoft'
-ms.custom: ''
+title: 'CA2119: запечатайте методы, соответствующие частным интерфейсам'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -17,56 +15,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f54b6c58e30145759881a8a612ad6f7edfd044d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e80462b53e68d2feff540b3fd2ae4cfbcabc6da8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: запечатайте методы, соответствующие частным интерфейсам
-|||  
-|-|-|  
-|TypeName|SealMethodsThatSatisfyPrivateInterfaces|  
-|CheckId|CA2119|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое|  
-  
-## <a name="cause"></a>Причина  
- Наследуемый открытый тип предоставляет реализацию переопределяемого метода `internal` (`Friend` в Visual Basic) интерфейса.  
-  
-## <a name="rule-description"></a>Описание правила  
- Методы интерфейса являются открытыми, которые нельзя изменить путем реализации типа. Внутренний интерфейс создает контракт, который не предназначен для реализации за пределами сборки, определяющий интерфейс. Открытый тип, реализующий метод внутреннего интерфейса с помощью `virtual` (`Overridable` в Visual Basic) модификатор позволяет вызвать метод для переопределения с помощью производного типа, который находится за пределами сборки. Если второй тип в определяющей сборке вызывает метод и ожидает только внутреннего контракта, поведение может быть нарушено, если вместо этого выполняется переопределенный метод во внешней сборке. Это создает уязвимость системы безопасности.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, предотвратить метод переопределение извне с помощью одного из следующих:  
-  
--   Сделайте объявляющий тип `sealed` (`NotInheritable` в Visual Basic).  
-  
--   Изменить доступность объявляющий тип для `internal` (`Friend` в Visual Basic).  
-  
--   Удалите все открытые конструкторы из объявляющего типа.  
-  
--   Реализуйте метод без использования `virtual` модификатор.  
-  
--   Реализуйте метод явным образом.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Его можно безопасно подавить предупреждение из этого правила, если после тщательного анализа проблем безопасности не существует, могут быть использованы, если этот метод переопределен за пределами сборки.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано типа `BaseImplementation`, который нарушает это правило.  
-  
+|||
+|-|-|
+|TypeName|SealMethodsThatSatisfyPrivateInterfaces|
+|CheckId|CA2119|
+|Категория|Microsoft.Security|
+|Критическое изменение|Критическое|
+
+## <a name="cause"></a>Причина
+ Наследуемый открытый тип предоставляет реализацию переопределяемого метода `internal` (`Friend` в Visual Basic) интерфейса.
+
+## <a name="rule-description"></a>Описание правила
+ Методы интерфейса являются открытыми, которые нельзя изменить путем реализации типа. Внутренний интерфейс создает контракт, который не предназначен для реализации за пределами сборки, определяющий интерфейс. Открытый тип, реализующий метод внутреннего интерфейса с помощью `virtual` (`Overridable` в Visual Basic) модификатор позволяет вызвать метод для переопределения с помощью производного типа, который находится за пределами сборки. Если второй тип в определяющей сборке вызывает метод и ожидает только внутреннего контракта, поведение может быть нарушено, если вместо этого выполняется переопределенный метод во внешней сборке. Это создает уязвимость системы безопасности.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, предотвратить метод переопределение извне с помощью одного из следующих:
+
+-   Сделайте объявляющий тип `sealed` (`NotInheritable` в Visual Basic).
+
+-   Изменить доступность объявляющий тип для `internal` (`Friend` в Visual Basic).
+
+-   Удалите все открытые конструкторы из объявляющего типа.
+
+-   Реализуйте метод без использования `virtual` модификатор.
+
+-   Реализуйте метод явным образом.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Его можно безопасно подавить предупреждение из этого правила, если после тщательного анализа проблем безопасности не существует, могут быть использованы, если этот метод переопределен за пределами сборки.
+
+## <a name="example"></a>Пример
+ В следующем примере показано типа `BaseImplementation`, который нарушает это правило.
+
  [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]  
-  
-## <a name="example"></a>Пример  
- В следующем примере используется реализация виртуального метода из предыдущего примера.  
-  
+ [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+
+## <a name="example"></a>Пример
+ В следующем примере используется реализация виртуального метода из предыдущего примера.
+
  [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
  [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]  
-  
-## <a name="see-also"></a>См. также  
- [Интерфейсы](/dotnet/csharp/programming-guide/interfaces/index)   
- [Интерфейсы](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)
+ [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+
+## <a name="see-also"></a>См. также
+ [Интерфейсы](/dotnet/csharp/programming-guide/interfaces/index) [интерфейсов](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)

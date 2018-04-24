@@ -1,10 +1,8 @@
 ---
-title: 'CA1502: Избегайте чрезмерной сложности | Документы Microsoft'
-ms.custom: ''
+title: 'CA1502: избегайте чрезмерной сложности'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
 - CA1502
@@ -17,79 +15,79 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 990a1336019325313c2152b38b7fa8525d52720a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15180a882fb0e6f30bf20409a4b4da3cfe0c8034
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: избегайте чрезмерной сложности
-|||  
-|-|-|  
-|TypeName|AvoidExcessiveComplexity|  
-|CheckId|CA1502|  
-|Категория|Microsoft.Maintainability|  
-|Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- Метод имеет чрезмерного цикломатическую сложность.  
-  
-## <a name="rule-description"></a>Описание правила  
- *Сложность* измеряет число линейно независимых путей в методе, которое определяется числом и сложностью условных ветвей. Низкий цикломатическую сложность обычно указывает метод, который можно легко понять, проверки и поддержки. Цикломатическую сложность вычисляется на основе диаграммы потока управления метода и задается следующим образом:  
-  
- сложность = количество граней - количество узлов + 1  
-  
- где узел представляет логическую точку ветвления и граница представляет линию между узлами.  
-  
- Правило приводит к нарушению, если более 25 цикломатическую сложность.  
-  
- Дополнительные сведения о метриках кода в [Оценка сложности и удобства поддержки управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, выполните рефакторинг метода, чтобы снизить цикломатическую сложность.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Это безопасно подавить предупреждение из этого правила, если трудно уменьшить сложность и метод легко понять, проверки и поддержки. В частности, метод, который содержит большой `switch` (`Select` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) инструкция является кандидатом для исключения. Риск дестабилизации базового позднее в процессе цикла разработки или внесения непредвиденных изменений в поведение времени выполнения ранее поставленного кода может перевесить преимущества удобства поддержки оптимизации кода кода.  
-  
-## <a name="how-cyclomatic-complexity-is-calculated"></a>Вычисление цикломатическую сложность  
- Цикломатическую сложность рассчитывается путем сложения 1 следующее:  
-  
--   Количество ветвей (например, `if`, `while`, и `do`)  
-  
--   Количество `case` инструкций в `switch`  
-  
- В следующих примерах показано методы, которые имеют различные цикломатическую сложность.  
-  
-## <a name="example"></a>Пример  
- **Цикломатическую сложность 1**  
-  
+|||
+|-|-|
+|TypeName|AvoidExcessiveComplexity|
+|CheckId|CA1502|
+|Категория|Microsoft.Maintainability|
+|Критическое изменение|Не критическое|
+
+## <a name="cause"></a>Причина
+ Метод имеет чрезмерного цикломатическую сложность.
+
+## <a name="rule-description"></a>Описание правила
+ *Сложность* измеряет число линейно независимых путей в методе, которое определяется числом и сложностью условных ветвей. Низкий цикломатическую сложность обычно указывает метод, который можно легко понять, проверки и поддержки. Цикломатическую сложность вычисляется на основе диаграммы потока управления метода и задается следующим образом:
+
+ сложность = количество граней - количество узлов + 1
+
+ где узел представляет логическую точку ветвления и граница представляет линию между узлами.
+
+ Правило приводит к нарушению, если более 25 цикломатическую сложность.
+
+ Дополнительные сведения о метриках кода в [Оценка сложности и удобства поддержки управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, выполните рефакторинг метода, чтобы снизить цикломатическую сложность.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Это безопасно подавить предупреждение из этого правила, если трудно уменьшить сложность и метод легко понять, проверки и поддержки. В частности, метод, который содержит большой `switch` (`Select` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) инструкция является кандидатом для исключения. Риск дестабилизации базового позднее в процессе цикла разработки или внесения непредвиденных изменений в поведение времени выполнения ранее поставленного кода может перевесить преимущества удобства поддержки оптимизации кода кода.
+
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Вычисление цикломатическую сложность
+ Цикломатическую сложность рассчитывается путем сложения 1 следующее:
+
+-   Количество ветвей (например, `if`, `while`, и `do`)
+
+-   Количество `case` инструкций в `switch`
+
+ В следующих примерах показано методы, которые имеют различные цикломатическую сложность.
+
+## <a name="example"></a>Пример
+ **Цикломатическую сложность 1**
+
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]  
-  
-## <a name="example"></a>Пример  
- **Цикломатическую сложность 2**  
-  
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]
+
+## <a name="example"></a>Пример
+ **Цикломатическую сложность 2**
+
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]  
-  
-## <a name="example"></a>Пример  
- **Цикломатическую сложность 3**  
-  
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]
+
+## <a name="example"></a>Пример
+ **Цикломатическую сложность 3**
+
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]  
-  
-## <a name="example"></a>Пример  
- **Сложность 8.**  
-  
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]
+
+## <a name="example"></a>Пример
+ **Сложность 8.**
+
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
- [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]  
-  
-## <a name="related-rules"></a>Связанные правила  
- [CA1501: избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)  
-  
-## <a name="see-also"></a>См. также  
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]
+
+## <a name="related-rules"></a>Связанные правила
+ [CA1501: избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)
+
+## <a name="see-also"></a>См. также
  [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

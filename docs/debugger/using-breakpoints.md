@@ -2,8 +2,7 @@
 title: Использование точек останова в отладчике в Visual Studio | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -37,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 755b167d49aed33aee30f4a616b7609bf2cd0d6c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Использование точек останова в отладчике Visual Studio
 Если необходимо остановить выполнение отладчика, например, чтобы увидеть состояние переменных кода или просмотреть стек вызовов, можно установить точки останова. Точка останова — один из важнейших инструментов разработчика для выполнения отладки.  

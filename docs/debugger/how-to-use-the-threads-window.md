@@ -2,8 +2,7 @@
 title: Отладка многопоточного приложения, используя окно "Потоки" | Документы Microsoft
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a233722242548bd40322c872dc9c2e6d0925b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09fccc98f52c80a00c2c6a215742ae25b2fc7a4d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Пошаговое руководство: Отладка многопоточных приложений в Visual Studio, используя окно "Потоки"
 Visual Studio предоставляет **потоков** окна и другие пользовательского интерфейса элементов для отладки многопоточных приложений. Этот учебник показывает, как использовать **потоков** окна и **место отладки** инструментов. Сведения о других средствах см. в разделе [Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md). Этот учебник занимает всего несколько минут, но оно позволит ознакомиться со средствами для отладки многопоточных приложений.   

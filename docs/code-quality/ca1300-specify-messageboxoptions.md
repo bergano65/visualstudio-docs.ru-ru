@@ -1,10 +1,8 @@
 ---
-title: 'CA1300: Укажите MessageBoxOptions | Документы Microsoft'
-ms.custom: ''
+title: 'CA1300: укажите MessageBoxOptions'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyMessageBoxOptions
 - CA1300
@@ -17,38 +15,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914654c5e2eee601ee2b314f15f5dfadb686c047
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2d0b28d804dc6932e66de9dcd758fd05fc888f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: укажите MessageBoxOptions
-|||  
-|-|-|  
-|TypeName|SpecifyMessageBoxOptions|  
-|CheckId|CA1300|  
-|Категория|Microsoft.Globalization|  
-|Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- Метод вызывает перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> метод, который не принимает <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> аргумент.  
-  
-## <a name="rule-description"></a>Описание правила  
- Чтобы отобразить окно сообщения для языков, в которых используется порядок чтения справа налево, <xref:System.Windows.Forms.MessageBoxOptions> и <xref:System.Windows.Forms.MessageBoxOptions> члены <xref:System.Windows.Forms.MessageBoxOptions> перечисления должны быть переданы <xref:System.Windows.Forms.MessageBox.Show%2A> метод. Изучите <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> вмещающего элемента управления для определения необходимости используется порядок чтения справа налево.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, вызовите перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A> метода, принимающего <xref:System.Windows.Forms.MessageBoxOptions> аргумент.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Можно безопасно отключать предупреждение из этого правила, если библиотека кода не быть локализован для языка и региональных параметров используется порядок чтения справа налево.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано метод, который отображает окно сообщения, который имеет параметры, соответствующие порядку чтения языка и региональных параметров. В примере требуется файл ресурсов, оно не отображается. Следуйте комментариям в примере для построения примера без файла ресурсов и тестирование компонента справа налево.  
-  
+|||
+|-|-|
+|TypeName|SpecifyMessageBoxOptions|
+|CheckId|CA1300|
+|Категория|Microsoft.Globalization|
+|Критическое изменение|Не критическое|
+
+## <a name="cause"></a>Причина
+ Метод вызывает перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> метод, который не принимает <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> аргумент.
+
+## <a name="rule-description"></a>Описание правила
+ Чтобы отобразить окно сообщения для языков, в которых используется порядок чтения справа налево, <xref:System.Windows.Forms.MessageBoxOptions> и <xref:System.Windows.Forms.MessageBoxOptions> члены <xref:System.Windows.Forms.MessageBoxOptions> перечисления должны быть переданы <xref:System.Windows.Forms.MessageBox.Show%2A> метод. Изучите <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> вмещающего элемента управления для определения необходимости используется порядок чтения справа налево.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, вызовите перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A> метода, принимающего <xref:System.Windows.Forms.MessageBoxOptions> аргумент.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Можно безопасно отключать предупреждение из этого правила, если библиотека кода не быть локализован для языка и региональных параметров используется порядок чтения справа налево.
+
+## <a name="example"></a>Пример
+ В следующем примере показано метод, который отображает окно сообщения, который имеет параметры, соответствующие порядку чтения языка и региональных параметров. В примере требуется файл ресурсов, оно не отображается. Следуйте комментариям в примере для построения примера без файла ресурсов и тестирование компонента справа налево.
+
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
- [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]  
-  
-## <a name="see-also"></a>См. также  
- <xref:System.Resources.ResourceManager?displayProperty=fullName>   
- [Ресурсы в приложениях для настольных систем](/dotnet/framework/resources/index)
+ [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]
+
+## <a name="see-also"></a>См. также
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Ресурсы в приложениях для настольных систем](/dotnet/framework/resources/index)

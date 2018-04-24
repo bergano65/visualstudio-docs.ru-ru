@@ -1,10 +1,8 @@
 ---
-title: 'CA2216: Высвобождаемые типы должны объявлять метод завершения | Документы Microsoft'
-ms.custom: ''
+title: 'CA2216: высвобождаемые типы должны объявлять метод завершения'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DisposableTypesShouldDeclareFinalizer
 - CA2216
@@ -17,54 +15,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3023967091c09610791f5032731772aa15b8bf6c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6fbcc8ffe9b81b39734c9b9a4cc6070e584d1183
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: высвобождаемые типы должны объявлять метод завершения
-|||  
-|-|-|  
-|TypeName|DisposableTypesShouldDeclareFinalizer|  
-|CheckId|CA2216|  
-|Категория|Microsoft.Usage|  
-|Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- Тип, реализующий <xref:System.IDisposable?displayProperty=fullName>и имеет поля, предусматривающие использование неуправляемых ресурсов, не реализует метод завершения, в соответствии с <xref:System.Object.Finalize%2A?displayProperty=fullName>.  
-  
-## <a name="rule-description"></a>Описание правила  
- Нарушение этого правила выводится в том случае, если удаляемого типа содержит поля из следующих типов:  
-  
--   <xref:System.IntPtr?displayProperty=fullName>  
-  
--   <xref:System.UIntPtr?displayProperty=fullName>  
-  
--   <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, реализуйте метод завершения, который вызывает ваш <xref:System.IDisposable.Dispose%2A> метод.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Можно безопасно подавить предупреждение из этого правила, если тип не реализует <xref:System.IDisposable> с целью освобождения неуправляемых ресурсов.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано тип, нарушающий это правило.  
-  
- [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]  
-  
-## <a name="related-rules"></a>Связанные правила  
- [CA2115: вызывайте GC.KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
-  
- [CA1816: вызов GC.SuppressFinalize должен осуществляться правильно](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
-  
- [CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
-  
-## <a name="see-also"></a>См. также  
- <xref:System.IDisposable?displayProperty=fullName>   
- <xref:System.IntPtr?displayProperty=fullName>   
- <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>   
- <xref:System.UIntPtr?displayProperty=fullName>   
- <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [Шаблон ликвидации](/dotnet/standard/design-guidelines/dispose-pattern)
+|||
+|-|-|
+|TypeName|DisposableTypesShouldDeclareFinalizer|
+|CheckId|CA2216|
+|Категория|Microsoft.Usage|
+|Критическое изменение|Не критическое|
+
+## <a name="cause"></a>Причина
+ Тип, реализующий <xref:System.IDisposable?displayProperty=fullName>и имеет поля, предусматривающие использование неуправляемых ресурсов, не реализует метод завершения, в соответствии с <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+
+## <a name="rule-description"></a>Описание правила
+ Нарушение этого правила выводится в том случае, если удаляемого типа содержит поля из следующих типов:
+
+-   <xref:System.IntPtr?displayProperty=fullName>
+
+-   <xref:System.UIntPtr?displayProperty=fullName>
+
+-   <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, реализуйте метод завершения, который вызывает ваш <xref:System.IDisposable.Dispose%2A> метод.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Можно безопасно подавить предупреждение из этого правила, если тип не реализует <xref:System.IDisposable> с целью освобождения неуправляемых ресурсов.
+
+## <a name="example"></a>Пример
+ В следующем примере показано тип, нарушающий это правило.
+
+ [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]
+
+## <a name="related-rules"></a>Связанные правила
+ [CA2115: вызывайте GC.KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+
+ [CA1816: вызов GC.SuppressFinalize должен осуществляться правильно](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+
+ [CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+
+## <a name="see-also"></a>См. также
+ <xref:System.IDisposable?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName> <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName> <xref:System.Object.Finalize%2A?displayProperty=fullName> [Шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)

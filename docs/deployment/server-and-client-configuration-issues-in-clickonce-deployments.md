@@ -2,8 +2,7 @@
 title: Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cc26689b20f989cb449f67387052caf3096811
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 077333237d1b384208355be7edb1aeb184678a05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 При использовании Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, службы IIS откажут в передаче этого файла и не будет выполнено развертывание.  

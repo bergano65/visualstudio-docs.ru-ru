@@ -1,10 +1,8 @@
 ---
-title: 'CA2123: Запросы компоновки переопределения должны быть идентичны базовым | Документы Microsoft'
-ms.custom: ''
+title: 'CA2123: запросы компоновки переопределения должны быть идентичны базовым'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2123
 - OverrideLinkDemandsShouldBeIdenticalToBase
@@ -17,39 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c23bdf9246855fc4a91d5cd5f748f8f8fb17a67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7aa696c1d08b71078ff4ae3beed7283d0b0333e2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: запросы компоновки переопределения должны быть идентичны базовым
-|||  
-|-|-|  
-|TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|  
-|CheckId|CA2123|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое|  
-  
-## <a name="cause"></a>Причина  
- Открытый или защищенный метод в открытом типе переопределяет метод или реализует интерфейс и не с одинаковыми [требования связывания](/dotnet/framework/misc/link-demands) как интерфейс или виртуальный метод.  
-  
-## <a name="rule-description"></a>Описание правила  
- Это правило сравнивает метод с его базовым методом (который является интерфейсом или виртуальным методом другого типа), а затем сравнивает запросы ссылок для каждого из них. Нарушение сообщается, если метод или метод базового содержит запрос компоновки, а другой — нет.  
-  
- Если это правило нарушается, то вредоносный вызывающий объект может обойти запрос ссылок путем вызова небезопасного метода.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, примените то же требование ссылки к переопределению метода или реализации. Если это невозможно, пометьте метод полным требованием или полностью удалить атрибут.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано различные нарушения этого правила.  
-  
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]  
-  
-## <a name="see-also"></a>См. также  
- [Правила написания безопасного кода](/dotnet/standard/security/secure-coding-guidelines)   
- [Требования связывания](/dotnet/framework/misc/link-demands)
+|||
+|-|-|
+|TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
+|CheckId|CA2123|
+|Категория|Microsoft.Security|
+|Критическое изменение|Критическое|
+
+## <a name="cause"></a>Причина
+ Открытый или защищенный метод в открытом типе переопределяет метод или реализует интерфейс и не с одинаковыми [требования связывания](/dotnet/framework/misc/link-demands) как интерфейс или виртуальный метод.
+
+## <a name="rule-description"></a>Описание правила
+ Это правило сравнивает метод с его базовым методом (который является интерфейсом или виртуальным методом другого типа), а затем сравнивает запросы ссылок для каждого из них. Нарушение сообщается, если метод или метод базового содержит запрос компоновки, а другой — нет.
+
+ Если это правило нарушается, то вредоносный вызывающий объект может обойти запрос ссылок путем вызова небезопасного метода.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, примените то же требование ссылки к переопределению метода или реализации. Если это невозможно, пометьте метод полным требованием или полностью удалить атрибут.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Для этого правила отключать вывод предупреждений не следует.
+
+## <a name="example"></a>Пример
+ В следующем примере показано различные нарушения этого правила.
+
+ [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
+
+## <a name="see-also"></a>См. также
+ [Правила написания безопасного кода](/dotnet/standard/security/secure-coding-guidelines) [требования связывания](/dotnet/framework/misc/link-demands)

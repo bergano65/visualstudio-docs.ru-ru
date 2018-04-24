@@ -2,8 +2,7 @@
 title: 'Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, on-demand download
 - on-demand assemblies, ClickOnce
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9dc200d2dbab68dd3cc4577f5024df4077bfc6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48ed3828f70424ee328c1fc52873e1a0f7e620aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce
 По умолчанию все сборки, включенные в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения загружаются при первом запуске приложения. Однако могут иметь части приложения, которые используются в небольшое количество пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. Следующий пример демонстрирует, как пометить определенные сборки в приложении как «необязательные» и их загрузка с помощью классов в <xref:System.Deployment.Application> пространства имен, если они необходимы для общеязыковой среды выполнения (CLR).  

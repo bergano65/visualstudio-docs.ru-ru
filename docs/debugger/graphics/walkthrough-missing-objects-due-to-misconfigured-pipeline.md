@@ -2,8 +2,7 @@
 title: 'Пошаговое руководство: Отсутствие объектов вследствие неправильной настройки конвейера | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 172effd2abffd6a7467a2fcb3490e39331910d4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2833c3ae2a8f03b69314db9e3723a640c4327587
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Пошаговое руководство. Отсутствие объектов вследствие неправильной настройки конвейера
 В данном пошаговом руководстве показано, как с помощью средств диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исследовать объект, который отсутствует из-за незаданного шейдера пикселей.  
