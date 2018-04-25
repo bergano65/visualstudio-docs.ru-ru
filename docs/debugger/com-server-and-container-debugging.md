@@ -2,8 +2,7 @@
 title: COM-сервера и контейнера Отладка | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa27c3d63a21bf3a1cad31bb705df6532eed873c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b4c23d362a930f28ccb1a097de44a936e55cacf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="com-server-and-container-debugging"></a>Отладка сервера и контейнеров COM
 Приложения COM выполняют множество задач без прямого вмешательства программиста. Связь между DLL-файлами, использование счетчиков объектов и операции с буфером обмена — только несколько областей, где можно столкнуться с неожиданностями. В случае их возникновения прежде всего необходимо установить источник проблемы.  

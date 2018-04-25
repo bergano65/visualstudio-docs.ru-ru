@@ -2,8 +2,7 @@
 title: Создание настраиваемых представлений собственных объектов в отладчике | Документы Microsoft
 ms.custom: ''
 ms.date: 06/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38656b9c5ce4165f2a04b5e6d76411ce7f005855
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Создание настраиваемых представлений собственных объектов в отладчике Visual Studio
 Платформа Visual Studio Natvis позволяет настраивать то, как Visual Studio отображает собственные типы в окнах переменных отладчика (например, **Контрольные значения** окне **локальные** окна и в  **Подсказки данных**.

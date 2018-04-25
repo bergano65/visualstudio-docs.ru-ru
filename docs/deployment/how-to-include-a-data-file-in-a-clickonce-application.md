@@ -2,8 +2,7 @@
 title: 'Как: включение файла данных в приложение ClickOnce | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], data files
 - data access, ClickOnce applications
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db35de0320e1f75d37cea3ad0c9e32536184305f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 Каждый [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установки приложения назначается каталог данных на локальном диске конечного компьютера где приложение может работать со своими данными. Файлы данных могут содержать файлы любого типа: текстовые файлы, XML-файлы или даже файлы Microsoft Access (.mdb) базы данных. Следующие процедуры показывают, как добавить файл данных любого типа в вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  

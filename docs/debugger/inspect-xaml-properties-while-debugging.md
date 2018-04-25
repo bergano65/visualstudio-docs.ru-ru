@@ -2,8 +2,7 @@
 title: Просмотр свойств XAML во время отладки | Документы Microsoft
 ms.custom: ''
 ms.date: 03/06/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c48e3623ba073d13a2b9ce2309b47a65ef45befb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcb2877a79afc310985102972d870caae560b393
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Просмотр свойств XAML во время отладки
 Вы можете получить в режиме реального времени представление о выполнении кода XAML с **динамическое визуальное дерево** и **динамический обозреватель свойств**. Эти средства обеспечивают представление элементов пользовательского интерфейса выполняющегося приложения XAML в виде дерева, а также отображение свойств среды выполнения любого выбранного элемента интерфейса.  

@@ -1,10 +1,8 @@
 ---
-title: 'CA1812: Не создавайте внутренние классы | Документы Microsoft'
-ms.custom: ''
+title: 'CA1812: не создавайте внутренние классы без экземпляров'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1812
 - AvoidUninstantiatedInternalClasses
@@ -17,84 +15,84 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ddd32dd590523fa4b3bfe4ab2d63951ccf503a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf39d775c5602aaddf5b9487d175ddbbdd70d52e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: не создавайте внутренние классы без экземпляров
-|||  
-|-|-|  
-|TypeName|AvoidUninstantiatedInternalClasses|  
-|CheckId|CA1812|  
-|Категория|Microsoft.Performance|  
-|Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- Экземпляр типа уровня сборки не создается кодом в сборке.  
-  
-## <a name="rule-description"></a>Описание правила  
- Это правило пытается найти вызов одного из конструкторов типа и приводит к нарушению, если запрос не найден.  
-  
- Это правило не проверяет следующие типы:  
-  
--   Типы значений  
-  
--   Абстрактные типы  
-  
--   Перечисления  
-  
--   Делегаты  
-  
--   Типы массивов, определяемые компилятором  
-  
--   Типы, не может быть создан и определяют `static` (`Shared` в Visual Basic) методов только.  
-  
- Если применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> для сборки, который анализируется, это правило не будет выполняться на каких-либо конструкторов, которые помечены как `internal` , так как невозможно определить, используется ли поле в другом `friend` сборки.  
-  
- Несмотря на то, что нельзя обойти это ограничение в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] анализ кода, внешний автономный инструмент FxCop будет выполняться во внутренних конструкторах при каждом `friend` сборки присутствует в анализе.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, удалите тип или добавьте код, который его использует. Если тип содержит только статические методы, добавьте один из следующих к типу, чтобы запретить компилятору выдача публичного экземпляра конструктора по умолчанию:  
-  
--   Закрытый конструктор для типов, предназначенных для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] версий 1.0 и 1.1.  
-  
--   `static` (`Shared` В Visual Basic) модификатор для типов, предназначенных для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Его можно безопасно подавить предупреждение из этого правила. Рекомендуется отключить предупреждение в следующих ситуациях:  
-  
--   Например создания через отражение позднего связывания методы класса <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.  
-  
--   Класс автоматически создается средой выполнения или [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Например, классы, реализующие <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> или <xref:System.Web.IHttpHandler?displayProperty=fullName>.  
-  
--   Класс передается в качестве параметра универсального типа, имеющего нового ограничения. Например следующий пример вызывает это правило.  
-  
-    ```csharp  
-    internal class MyClass  
-    {     
-        public DoSomething()     
-        {  
-        }  
-    }   
-    public class MyGeneric<T> where T : new()  
-    {  
-        public T Create()  
-        {  
-            return new T();     
-        }  
-    }  
-    // [...]   
-    MyGeneric<MyClass> mc = new MyGeneric<MyClass>();  
-    mc.Create();  
-    ```  
-  
- В этих случаях рекомендуется отключить предупреждение.  
-  
-## <a name="related-rules"></a>Связанные правила  
- [CA1811: не используйте невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)  
-  
- [CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)  
-  
+|||
+|-|-|
+|TypeName|AvoidUninstantiatedInternalClasses|
+|CheckId|CA1812|
+|Категория|Microsoft.Performance|
+|Критическое изменение|Не критическое|
+
+## <a name="cause"></a>Причина
+ Экземпляр типа уровня сборки не создается кодом в сборке.
+
+## <a name="rule-description"></a>Описание правила
+ Это правило пытается найти вызов одного из конструкторов типа и приводит к нарушению, если запрос не найден.
+
+ Это правило не проверяет следующие типы:
+
+-   Типы значений
+
+-   Абстрактные типы
+
+-   Перечисления
+
+-   Делегаты
+
+-   Типы массивов, определяемые компилятором
+
+-   Типы, не может быть создан и определяют `static` (`Shared` в Visual Basic) методов только.
+
+ Если применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> для сборки, который анализируется, это правило не будет выполняться на каких-либо конструкторов, которые помечены как `internal` , так как невозможно определить, используется ли поле в другом `friend` сборки.
+
+ Несмотря на то, что нельзя обойти это ограничение в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] анализ кода, внешний автономный инструмент FxCop будет выполняться во внутренних конструкторах при каждом `friend` сборки присутствует в анализе.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, удалите тип или добавьте код, который его использует. Если тип содержит только статические методы, добавьте один из следующих к типу, чтобы запретить компилятору выдача публичного экземпляра конструктора по умолчанию:
+
+-   Закрытый конструктор для типов, предназначенных для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] версий 1.0 и 1.1.
+
+-   `static` (`Shared` В Visual Basic) модификатор для типов, предназначенных для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Его можно безопасно подавить предупреждение из этого правила. Рекомендуется отключить предупреждение в следующих ситуациях:
+
+-   Например создания через отражение позднего связывания методы класса <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+
+-   Класс автоматически создается средой выполнения или [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Например, классы, реализующие <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> или <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+
+-   Класс передается в качестве параметра универсального типа, имеющего нового ограничения. Например следующий пример вызывает это правило.
+
+    ```csharp
+    internal class MyClass
+    {
+        public DoSomething()
+        {
+        }
+    }
+    public class MyGeneric<T> where T : new()
+    {
+        public T Create()
+        {
+            return new T();
+        }
+    }
+    // [...]
+    MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
+    mc.Create();
+    ```
+
+ В этих случаях рекомендуется отключить предупреждение.
+
+## <a name="related-rules"></a>Связанные правила
+ [CA1811: не используйте невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
+
+ [CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
+
  [CA1804: удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)

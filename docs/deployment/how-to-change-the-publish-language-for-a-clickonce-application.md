@@ -2,8 +2,7 @@
 title: 'Как: изменение языка публикации для приложения ClickOnce | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, changing publish language
 - publishing, ClickOnce
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b1590eb45950cb0e8b9de668b7eabe62d13c3b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d39535138b8b6e6be0c3384c73ab660d368c9b0c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Практическое руководство. Изменение языка публикации для приложения ClickOnce
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, пользовательский интерфейс, отображаемый во время установки значения по умолчанию для языка и региональных параметров компьютера разработки. При публикации локализованного приложения необходимо указать язык и региональные параметры, соответствующие локализованной версии. Это определяется `Publish language` свойство проекта.  

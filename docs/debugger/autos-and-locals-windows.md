@@ -2,8 +2,7 @@
 title: Отслеживание значений переменных в окнах локальных переменных и видимые | Документы Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bad753a18352ebbf68bef5f398a8039a9c4dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Проверить переменные «видимые» и «локальные» в Visual Studio
 **Видимые** окна (во время отладки, **CTRL + ALT + V, A**, или **Отладка > Windows > видимые**) и **локальные** окна (во время отладки **CTRL + ALT + V, L**, или **Отладка > Windows > локальные**) являются весьма полезен при необходимости для просмотра значений переменных при отладке. В окне **Локальные** отображаются переменные, которые определены в локальной области, которой обычно является функция или метод, выполняемые в текущий момент. В окне **Видимые** отображаются переменные, используемые вокруг текущей строки (места, где остановилось выполнение отладчика). Только переменные, которые будут отображаться в этом окне отличается на разных языках. См. раздел [What variables appear in the Autos Window?](#bkmk_whatvariables) ниже.  

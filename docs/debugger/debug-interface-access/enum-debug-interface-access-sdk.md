@@ -2,8 +2,7 @@
 title: Enum (доступа к интерфейсу отладки SDK) | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 534e06f34c3caf502bf4611d7140b75994aa89ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 381e0165840f2b4d8c6a7921cfedca03250fba53
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enum (SDK для доступа к интерфейсу отладки)
 Перечисления идентифицируются по `SymTagEnum` символов. Каждое значение перечисления отображается как дочерний элемент класса с `SymTagConstant` тег.  

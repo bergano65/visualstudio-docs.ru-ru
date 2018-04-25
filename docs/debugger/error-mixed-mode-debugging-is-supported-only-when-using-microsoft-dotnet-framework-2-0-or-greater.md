@@ -2,9 +2,8 @@
 title: 'Ошибка: Отладка в смешанном режиме поддерживается только при использовании платформы Microsoft .NET Framework 2.0 или более поздней | Документы Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 389356f13979c7447643ef358376ec976361b299
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f1bfa33fbb936e609fa9b824a4863830c7ed466
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Ошибка: смешанный режим отладки поддерживается только при использовании Microsoft.NET Framework 2.0 или выше
 Чтобы выполнить отладку смешанного собственного и управляемого кода, необходимо наличие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] версии 2.0, 3.0., 3.5 или 4. Отладка в смешанном режиме с более ранними версиями [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] не поддерживается.  

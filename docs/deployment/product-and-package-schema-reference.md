@@ -2,8 +2,7 @@
 title: Продукт и справочник по схемам пакета | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -23,16 +22,16 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4df5288f05f14c146c934c8d9d5b916a4bb2fc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
 Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Примеры внешних зависимостей [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и компоненты доступа к данным Майкрософт (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависимость, например локализованных сборок, лицензионные соглашения и документация зависящие от языка и региональных параметров.  

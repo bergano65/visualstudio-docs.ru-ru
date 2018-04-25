@@ -1,10 +1,8 @@
 ---
-title: 'CA2138: Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity | Документы Microsoft'
-ms.custom: ''
+title: 'CA2138: прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2138
 ms.assetid: a14c4d32-f079-4f3a-956c-a1657cde0f66
@@ -13,33 +11,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd12cf43425c863b72c7a77b8ccd8884c0ad7d2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 10cded476edadfa6141ec68a84d74c4d8704aa35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity
-|||  
-|-|-|  
-|TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|  
-|CheckId|CA2138|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое|  
-  
-## <a name="cause"></a>Причина  
- Прозрачный для безопасности метод вызывает метод, помеченный <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута.  
-  
-## <a name="rule-description"></a>Описание правила  
- Это правило срабатывает для любого прозрачного метода, который вызывается непосредственно в машинном коде, например, с помощью через P/Invoke (неуправляемого) вызова. P/Invoke и COM-взаимодействия методы, помеченные с <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута приведет к проверки LinkDemand для вызывающего метода. Поскольку прозрачный для системы безопасности код не может удовлетворить требования LinkDemand, код также не может вызывать методы, помеченные атрибутом SuppressUnmanagedCodeSecurity или методы класса, помеченного атрибутом SuppressUnmanagedCodeSecurity. Метод завершится с ошибкой или требования будут преобразованы в полное требование.  
-  
- Нарушение этого правила приводит к <xref:System.MethodAccessException> в модели прозрачности безопасности уровня 2 и вызову полного требования <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> в модель прозрачности уровня 1.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, удалите <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута и пометьте метод <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибута.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
-  
-## <a name="example"></a>Пример  
+|||
+|-|-|
+|TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
+|CheckId|CA2138|
+|Категория|Microsoft.Security|
+|Критическое изменение|Критическое|
+
+## <a name="cause"></a>Причина
+ Прозрачный для безопасности метод вызывает метод, помеченный <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута.
+
+## <a name="rule-description"></a>Описание правила
+ Это правило срабатывает для любого прозрачного метода, который вызывается непосредственно в машинном коде, например, с помощью через P/Invoke (неуправляемого) вызова. P/Invoke и COM-взаимодействия методы, помеченные с <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута приведет к проверки LinkDemand для вызывающего метода. Поскольку прозрачный для системы безопасности код не может удовлетворить требования LinkDemand, код также не может вызывать методы, помеченные атрибутом SuppressUnmanagedCodeSecurity или методы класса, помеченного атрибутом SuppressUnmanagedCodeSecurity. Метод завершится с ошибкой или требования будут преобразованы в полное требование.
+
+ Нарушение этого правила приводит к <xref:System.MethodAccessException> в модели прозрачности безопасности уровня 2 и вызову полного требования <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> в модель прозрачности уровня 1.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, удалите <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибута и пометьте метод <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибута.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Для этого правила отключать вывод предупреждений не следует.
+
+## <a name="example"></a>Пример
  [!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]

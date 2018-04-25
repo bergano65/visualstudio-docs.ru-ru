@@ -2,8 +2,7 @@
 title: Создание настраиваемых средств визуализации данных | Документы Microsoft
 ms.custom: ''
 ms.date: 06/19/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dac2fd507936ffc3b305e8d1339000def3e00e2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2a1602808cb21bd247d2bb1d249ab7ddea81524
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-visualizers-of-data"></a>Создание настраиваемых средств визуализации данных
  Визуализаторы – это компоненты [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] пользовательского интерфейса отладчика. Объект *визуализатор* создает диалоговое окно или другой элемент интерфейса, в переменной или объекта способом, подходящим для этого типа данных. Например, HTML-визуализатор интерпретирует строку HTML и отображает результат в том виде, в каком она будет выглядеть в окне браузера; визуализатор точечных рисунков распознает структуру точечного рисунка и отображает его. Некоторые визуализаторы позволяют не только просматривать, но и редактировать данные.

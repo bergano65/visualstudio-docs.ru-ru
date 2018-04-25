@@ -1,10 +1,8 @@
 ---
-title: 'CA1049: Типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми | Документы Microsoft'
-ms.custom: ''
+title: 'CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1049
 - TypesThatOwnNativeResourcesShouldBeDisposable
@@ -17,49 +15,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 435286622b03bb59e2173faf644649ad66bd3f71
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6484d6d6313db543f0e80a1e66c3051839fe0a06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми
-|||  
-|-|-|  
-|TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|  
-|CheckId|CA1049|  
-|Категория|Microsoft.Design|  
-|Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- Ссылается на тип <xref:System.IntPtr?displayProperty=fullName> поля, <xref:System.UIntPtr?displayProperty=fullName> поля, или <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> поле, но не реализует <xref:System.IDisposable?displayProperty=fullName>.  
-  
-## <a name="rule-description"></a>Описание правила  
- Это правило предполагает, что <xref:System.IntPtr>, <xref:System.UIntPtr>, и <xref:System.Runtime.InteropServices.HandleRef> поля сохранения указателей на неуправляемые ресурсы. Типы, выделяющие неуправляемые ресурсы, должны реализовывать <xref:System.IDisposable> позволяет вызывающим освобождать эти ресурсы по требованию и сокращать время существования объектов, занимающих ресурсы.  
-  
- Рекомендуемый шаблон для очистки неуправляемых ресурсов является неявные и явные возможность освободить эти ресурсы с помощью <xref:System.Object.Finalize%2A?displayProperty=fullName> метод и <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> метода, соответственно. Сборщик мусора вызывает <xref:System.Object.Finalize%2A> метод объекта через некоторое неопределенное время после объект определен как больше не доступен. После <xref:System.Object.Finalize%2A> вызове дополнительный сбор мусора для освобождения объекта требуется. <xref:System.IDisposable.Dispose%2A> Метод позволяет вызывающему объекту явно освобождать ресурсы по требованию, более ранних, чем ресурсы будут освобождены Если оставить сборщика мусора. После его освобождает неуправляемые ресурсы, <xref:System.IDisposable.Dispose%2A> должен вызывать <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> метод, чтобы знать, что сборщик мусора <xref:System.Object.Finalize%2A> больше не должен вызываться; это устраняет потребность в дополнительных мусора и сокращает время существования объекта.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение данного правила, реализуйте <xref:System.IDisposable>.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Можно безопасно подавить предупреждение из этого правила, если тип не ссылается неуправляемый ресурс. В противном случае не отключайте предупреждение из этого правила из-за сбоя для реализации <xref:System.IDisposable> может привести к неуправляемые ресурсы станут недоступными или простаивающие.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано тип, реализующий <xref:System.IDisposable> для очистки неуправляемых ресурсов.  
-  
+|||
+|-|-|
+|TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
+|CheckId|CA1049|
+|Категория|Microsoft.Design|
+|Критическое изменение|Не критическое|
+
+## <a name="cause"></a>Причина
+ Ссылается на тип <xref:System.IntPtr?displayProperty=fullName> поля, <xref:System.UIntPtr?displayProperty=fullName> поля, или <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> поле, но не реализует <xref:System.IDisposable?displayProperty=fullName>.
+
+## <a name="rule-description"></a>Описание правила
+ Это правило предполагает, что <xref:System.IntPtr>, <xref:System.UIntPtr>, и <xref:System.Runtime.InteropServices.HandleRef> поля сохранения указателей на неуправляемые ресурсы. Типы, выделяющие неуправляемые ресурсы, должны реализовывать <xref:System.IDisposable> позволяет вызывающим освобождать эти ресурсы по требованию и сокращать время существования объектов, занимающих ресурсы.
+
+ Рекомендуемый шаблон для очистки неуправляемых ресурсов является неявные и явные возможность освободить эти ресурсы с помощью <xref:System.Object.Finalize%2A?displayProperty=fullName> метод и <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> метода, соответственно. Сборщик мусора вызывает <xref:System.Object.Finalize%2A> метод объекта через некоторое неопределенное время после объект определен как больше не доступен. После <xref:System.Object.Finalize%2A> вызове дополнительный сбор мусора для освобождения объекта требуется. <xref:System.IDisposable.Dispose%2A> Метод позволяет вызывающему объекту явно освобождать ресурсы по требованию, более ранних, чем ресурсы будут освобождены Если оставить сборщика мусора. После его освобождает неуправляемые ресурсы, <xref:System.IDisposable.Dispose%2A> должен вызывать <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> метод, чтобы знать, что сборщик мусора <xref:System.Object.Finalize%2A> больше не должен вызываться; это устраняет потребность в дополнительных мусора и сокращает время существования объекта.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение данного правила, реализуйте <xref:System.IDisposable>.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Можно безопасно подавить предупреждение из этого правила, если тип не ссылается неуправляемый ресурс. В противном случае не отключайте предупреждение из этого правила из-за сбоя для реализации <xref:System.IDisposable> может привести к неуправляемые ресурсы станут недоступными или простаивающие.
+
+## <a name="example"></a>Пример
+ В следующем примере показано тип, реализующий <xref:System.IDisposable> для очистки неуправляемых ресурсов.
+
  [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]  
-  
-## <a name="related-rules"></a>Связанные правила  
- [CA2115: вызывайте GC.KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
-  
- [CA1816: вызов GC.SuppressFinalize должен осуществляться правильно](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
-  
- [CA2216: высвобождаемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
-  
- [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
-  
-## <a name="see-also"></a>См. также  
- [Очистка неуправляемых ресурсов](/dotnet/standard/garbage-collection/unmanaged)   
- [Шаблон ликвидации](/dotnet/standard/design-guidelines/dispose-pattern)
+ [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
+
+## <a name="related-rules"></a>Связанные правила
+ [CA2115: вызывайте GC.KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+
+ [CA1816: вызов GC.SuppressFinalize должен осуществляться правильно](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+
+ [CA2216: высвобождаемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+
+ [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+
+## <a name="see-also"></a>См. также
+ [Очистка неуправляемых ресурсов](/dotnet/standard/garbage-collection/unmanaged) [шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)

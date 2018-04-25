@@ -1,10 +1,8 @@
 ---
-title: 'CA2215: Методы Dispose должны вызывать метод dispose базового класса | Документы Microsoft'
-ms.custom: ''
+title: 'CA2215: методы Dispose должны вызывать такие же методы базового класса'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2215
 - DisposeMethodsShouldCallBaseClassDispose
@@ -18,42 +16,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8eb5c56ab3affe6322a858dfcd34c3b138f26d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61cb33b8fb717914e109ca7ed43e01dd1c18edb6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: методы Dispose должны вызывать такие же методы базового класса
-|||  
-|-|-|  
-|TypeName|DisposeMethodsShouldCallBaseClassDispose|  
-|CheckId|CA2215|  
-|Категория|Microsoft.Usage|  
-|Критическое изменение|Не критическое|  
-  
-## <a name="cause"></a>Причина  
- Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> наследует от типа, который также реализует <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Не вызывает метод наследующий тип <xref:System.IDisposable.Dispose%2A> метод родительского типа.  
-  
-## <a name="rule-description"></a>Описание правила  
- Если тип наследуется от удаляемого типа, он должен вызвать <xref:System.IDisposable.Dispose%2A> метод базового типа из собственного <xref:System.IDisposable.Dispose%2A> метод. Вызов метода базового типа Dispose гарантирует, что освобождаются все ресурсы, созданные базовым типом.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы устранить нарушение этого правила, вызовите метод `base`.<xref:System.IDisposable.Dispose%2A> в вашей <xref:System.IDisposable.Dispose%2A> метод.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Можно безопасно подавить предупреждение из этого правила, если вызов `base`.<xref:System.IDisposable.Dispose%2A> происходит на более глубоком уровне вызывающего, чем правила проверки.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано тип `TypeA` , реализующий <xref:System.IDisposable>.  
-  
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано тип `TypeB` , наследуемый от типа `TypeA` и правильно вызывает его <xref:System.IDisposable.Dispose%2A> метод.  
-  
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]  
-  
-## <a name="see-also"></a>См. также  
- <xref:System.IDisposable?displayProperty=fullName>   
- [Шаблон ликвидации](/dotnet/standard/design-guidelines/dispose-pattern)
+|||
+|-|-|
+|TypeName|DisposeMethodsShouldCallBaseClassDispose|
+|CheckId|CA2215|
+|Категория|Microsoft.Usage|
+|Критическое изменение|Не критическое|
+
+## <a name="cause"></a>Причина
+ Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> наследует от типа, который также реализует <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Не вызывает метод наследующий тип <xref:System.IDisposable.Dispose%2A> метод родительского типа.
+
+## <a name="rule-description"></a>Описание правила
+ Если тип наследуется от удаляемого типа, он должен вызвать <xref:System.IDisposable.Dispose%2A> метод базового типа из собственного <xref:System.IDisposable.Dispose%2A> метод. Вызов метода базового типа Dispose гарантирует, что освобождаются все ресурсы, созданные базовым типом.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы устранить нарушение этого правила, вызовите метод `base`.<xref:System.IDisposable.Dispose%2A> в вашей <xref:System.IDisposable.Dispose%2A> метод.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Можно безопасно подавить предупреждение из этого правила, если вызов `base`.<xref:System.IDisposable.Dispose%2A> происходит на более глубоком уровне вызывающего, чем правила проверки.
+
+## <a name="example"></a>Пример
+ В следующем примере показано тип `TypeA` , реализующий <xref:System.IDisposable>.
+
+ [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+
+## <a name="example"></a>Пример
+ В следующем примере показано тип `TypeB` , наследуемый от типа `TypeA` и правильно вызывает его <xref:System.IDisposable.Dispose%2A> метод.
+
+ [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
+
+## <a name="see-also"></a>См. также
+ <xref:System.IDisposable?displayProperty=fullName> [Шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)

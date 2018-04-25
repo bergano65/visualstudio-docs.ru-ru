@@ -2,8 +2,7 @@
 title: Поддерживаемые изменения кода (C# и Visual Basic) | Документы Microsoft
 ms.custom: ''
 ms.date: 10/11/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eba3de7930b650ad7c1fc2d6ad4511ca3ca4c9d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 855e8111721480b98c1395811090a54dd6e3ab2a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Поддерживаемые изменения кода (C# и Visual Basic)
 Операция "Изменить и продолжить" обрабатывает большинство типов изменений, вносимых в код внутри тела метода. Однако большинство изменений за пределами тела метода и некоторые изменения в теле метода во время отладки применены быть не могут. Чтобы такие неподдерживаемые изменения вступили в силу, необходимо остановить отладку и заново запустить ее для обновленной версии кода.

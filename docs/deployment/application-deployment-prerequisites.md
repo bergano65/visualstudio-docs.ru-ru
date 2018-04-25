@@ -2,8 +2,7 @@
 title: Необходимые условия для развертывания приложения | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48f72640bdf8efc53b278e4600c6b262dc1a26bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Предварительные условия для развертывания приложения
 Чтобы обеспечить успешную установку и запуск приложения, необходимо, в первую очередь, убедиться, что компоненты, от которых зависит приложение, уже установлены на целевом компьютере. Например, большинство приложений, которые создаются при помощи [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], имеют зависимость от [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], поэтому перед установкой приложения на целевом компьютере должна быть установлена правильная версия среды CLR.  

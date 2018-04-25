@@ -2,8 +2,7 @@
 title: Компилируемого объекта | Документы Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6420c235098414d09de2f0c269ebf85333d5c1f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6236a585c635ed62f8316191940899dc60a89c03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="compiland"></a>Compiland
 Имеется один `SymTagCompiland` символов для связанных каждую единицу компиляции файл .exe. Сведения компилируемого объекта разбивается между символами с `SymTagCompiland` тег, который можно получить без загрузки компилируемого объекта дополнительные символы и символы с `SymTagCompilandDetails` тег, который может потребоваться загрузка дополнительных символов.  
