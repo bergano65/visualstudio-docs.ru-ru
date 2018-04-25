@@ -194,4 +194,6 @@
 ##### [Задача UidManager](uidmanager-task.md)
 ##### [Задача UpdateManifestForBrowserApplication](updatemanifestforbrowserapplication-task.md)
 ### [Знаки, требующие отключения их специального значения](special-characters-to-escape.md)
+## [Программное использование MSBuild](msbuild-api.md)
+### [Обновление до MSBuild 15](updating-an-existing-application.md)
 ## [Глоссарий MSBuild](msbuild-glossary.md)
