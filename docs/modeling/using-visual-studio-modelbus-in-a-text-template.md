@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cf490467c9a3c328429589d5a1fbb379922d4a0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0a5eb101ccf8276b875a2ee461224bd37ebdefb4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
 При написании текстовых шаблонов, которые считывают модель, которая содержит [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus ссылается, может потребоваться разрешить ссылки для доступа к целевой модели. В этом случае необходимо адаптировать текстовых шаблонов и упоминаемой доменного языка (DSL):

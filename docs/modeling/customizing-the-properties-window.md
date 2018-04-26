@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 50753da026f091d541bffd664f0aa964b4cba3f0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7020d3f49d5a693d2b64891c089138be4c073115
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-the-properties-window"></a>Настройка окна свойств
 Можно настроить внешний вид и поведение окна свойств в доменный язык (DSL) в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В определении DSL определить свойства домена для каждого класса домена. По умолчанию при выборе экземпляра класса на схеме или в обозревателе моделей, каждое свойство домена указывается в окне «Свойства». Это позволяет просмотреть и изменить значения свойств домена, даже если они не были сопоставлены для полей фигур на схеме.

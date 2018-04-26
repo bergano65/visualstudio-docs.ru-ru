@@ -1,7 +1,9 @@
 ---
-title: Справка пользовательского интерфейса конструктора рабочих процессов | Документы Microsoft
+title: Справка по пользовательскому интерфейсу конструктора рабочих процессов
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], user interface help
 - Workflow Designer [WFD], user interface help
@@ -11,13 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8049362e7765b2ac9f8f3529f8d283ca43bc7b13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c87a7089044fb8b2c5be14062952e7546a63abb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-ui-help"></a>Справка по пользовательскому интерфейсу конструктора рабочих процессов
-Этот раздел содержит разделы контекстной справки для конструктора рабочих процессов Windows. При работе [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], эти разделы доступны из пользовательского интерфейса, нажав клавишу **F1** при [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] используется диалоговое окно открытым.
 
- Кроме этого, он также содержит несколько разделов, посвященных навигации и сообщениям об ошибках.
+Этот раздел содержит разделы контекстной справки для конструктора рабочих процессов Windows. При работе в Visual Studio 2010, можно открыть эти разделы из пользовательского интерфейса, нажав клавишу **F1** при откройте диалоговое окно конструктора рабочих процессов.
+
+Кроме этого, он также содержит несколько разделов, посвященных навигации и сообщениям об ошибках.

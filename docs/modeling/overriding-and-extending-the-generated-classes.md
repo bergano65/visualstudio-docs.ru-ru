@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77a33546d02738ae03e4da5180aa15e2b94f91ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ff0f020f2ab7558df6cc6f7865500a9910718145
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Переопределение и расширение созданных классов
 Определение DSL — это платформа, на которой можно построить мощный набор средств, которые основаны на доменного языка. Многие модули и процесса можно сделать путем переопределения и расширение классов, которые создаются из определения DSL. Эти классы включают не только доменные классы, явно определенных в схема определения DSL, но также и другие классы, определяющие области элементов, обозреватель, сериализации и т. д.

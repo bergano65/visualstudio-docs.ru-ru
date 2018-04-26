@@ -1,7 +1,9 @@
 ---
-title: Отключение отладчика Visual Studio для Windows Workflow Foundation (для прежних версий) | Документы Microsoft
+title: Конструктор рабочих процессов - отключение отладчика Visual Studio для Windows Workflow Foundation (для прежних версий)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Отключение отладчика Visual Studio для Windows Workflow Foundation (для прежних версий)
 
-В этом разделе описывается отключение [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] отладчика с помощью файла конфигурации, при построении [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] приложений в конструкторе рабочих процессов прежних версий Windows. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+В этом разделе описывается отключение отладчика Visual Studio, с помощью файла конфигурации, при построении приложений для Windows Workflow Foundation (WF) в конструкторе рабочих процессов прежних версий Windows. Используйте конструктор рабочих процессов прежних версий, для целевой платформы .NET Framework 3.5 или WinFX.
 
- По умолчанию отладчик [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] для [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] включен для ведущего процесса. Чтобы отключить отладку рабочего процесса, вы должны явно выключить ее путем добавления записи «DisableWorkflowDebugging»  **\<коммутаторы >** элемент в  **\<system.diagnostics >**раздел файла конфигурации узла.
+ По умолчанию Visual Studio отладчик для Windows Workflow Foundation (WF) включен для ведущего процесса. Чтобы отключить отладку рабочего процесса, вы должны явно выключить ее путем добавления записи «DisableWorkflowDebugging»  **\<коммутаторы >** элемент в  **\<system.diagnostics >** раздел файла конфигурации узла.
 
  В следующем примере показано, как изменить файл конфигурации главного узла, чтобы отключить отладку рабочего процесса.
 

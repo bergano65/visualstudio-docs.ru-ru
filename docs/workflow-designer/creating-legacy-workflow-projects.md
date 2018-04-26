@@ -1,7 +1,9 @@
 ---
-title: Создание проектов рабочих процессов прежних версий | Документы Microsoft
+title: Конструктор рабочих процессов - Создание проектов рабочих процессов прежних версий
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>Создание проектов рабочих процессов для прежних версий
-В этом разделе описывается создание проектов рабочих процессов с помощью конструктора рабочих процессов Windows, предоставляемого средой vs2010 прежних версий. Средство [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий ориентировано на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Он содержит сведения об использовании шаблонов проектов рабочего процесса, которые представлены в таблице ниже.
+
+В этом разделе описывается создание проектов рабочих процессов с помощью предыдущих версий Visual Studio 2010, предоставляемые конструктора рабочих процессов Windows. Конструктор рабочих процессов прежних версий предназначен для платформы .NET Framework 3.5 или WinFX. Он содержит сведения об использовании шаблонов проектов рабочего процесса, которые представлены в таблице ниже.
 
 |Шаблон проекта|Описание|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ ms.lasthandoff: 04/16/2018
 |Консольное приложение рабочего процесса конечного автомата|Проект для создания консольного приложения рабочего процесса конечного автомата.|
 |Библиотека рабочих процессов конечного автомата|Проект для создания библиотеки рабочего процесса конечного автомата.|
 |Пустой проект рабочего процесса|Пустой проект для создания приложения рабочего процесса.|
-
-## <a name="in-this-section"></a>В этом разделе
- [Как создавать проекты рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [Как создавать консольные приложения последовательных рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [Как создать библиотеку последовательных рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [Как создать библиотеку действий рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [Как создать консольные приложения рабочих процессов конечных автоматов (для прежних версий)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [Как создать библиотеку рабочих процессов конечного автомата (для прежних версий)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [Как создать пустой проект рабочего процесса (для прежних версий)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [Как настроить свойства проекта рабочего процесса (для прежних версий)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [Как добавить новый элемент в проект рабочего процесса (для прежних версий)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>См. также
 
