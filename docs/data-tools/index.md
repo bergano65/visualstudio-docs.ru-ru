@@ -1,18 +1,20 @@
 ---
 layout: LandingPage
+ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 title: Использование средств для работы с данными в Visual Studio для разработки решений по обработке данных
 description: Сведения о средствах для решений по работе с данными в Visual Studio.
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8dbea90a21da05b67fdc730a6965d3f295807ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 03f82da87bc546eea7d2b20100e11ca32ab72aad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Использование средств для работы с данными в Visual Studio для разработки решений по обработке данных
 

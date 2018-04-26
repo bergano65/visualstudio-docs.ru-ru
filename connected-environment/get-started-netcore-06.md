@@ -1,18 +1,19 @@
 ---
 title: Создание среды разработки .NET Core с контейнерами с помощью Kubernetes в облаке — шаг 6 — сведения о коллективной разработке | Документы Майкрософт
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Быстрая разработка Kubernetes с контейнерами и микрослужбами в Azure
 keywords: Docker, Kubernetes, Azure, AKS, служба контейнеров Azure, контейнеры
-manager: ghogen
-ms.openlocfilehash: 80e02e6ce1299278ba1abf530f38cb10b9f36c51
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 4da5051b760a12f8fd8837072ada44c8c5a9b239
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>Начало работы в подключенной среде с .NET Core
 

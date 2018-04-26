@@ -1,10 +1,9 @@
 ---
-title: Команда "Вывести регистры" | Документы Майкрософт
-ms.custom: ''
+title: Команда List Registers
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listregisters
 helpviewer_keywords:
@@ -17,53 +16,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4bd4dac2cc8faf6d98ee130e0796254035b1ca2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1113f7a4e1a61e6fe2954dfe8d98b9b2c52e6732
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="list-registers-command"></a>Команда List Registers
-Отображает значение выбранных регистров и позволяет изменить список отображаемых регистров.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]  
-[/Watch [{register|registerGroup}...]]  
-[/Unwatch [{register|registerGroup}...]]  
-```  
-  
-## <a name="switches"></a>Переключатели  
- /Display [{`register`&#124;`registerGroup`}...]  
- Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:  
-  
- `Debug.ListRegisters /Display eax`  
-  
- эквивалентно  
-  
- `Debug.ListRegisters eax`  
-  
- /List  
- Отображает все группы регистров в списке.  
-  
- /Watch [{`register`&#124;`registerGroup`}...]  
- Добавляет одно или несколько значений `register` или `registerGroup` в список.  
-  
- /Unwatch [{`register`&#124;`registerGroup`}...]  
- Удаляет одно или несколько значений `register` или `registerGroup` из списка.  
-  
-## <a name="remarks"></a>Примечания  
- Вместо `Debug.ListRegisters` можно использовать псевдоним `r`.  
-  
-## <a name="example"></a>Пример  
- Этот пример использует псевдоним `r` для `Debug.ListRegisters`, чтобы отобразить значения группы регистров `Flags`.  
-  
-```  
-r /Display Flags  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Общие сведения об отладке: окно регистров](../../debugger/debugging-basics-registers-window.md)   
- [Практическое руководство. Использование окна регистров](../../debugger/how-to-use-the-registers-window.md)
+Отображает значение выбранных регистров и позволяет изменить список отображаемых регистров.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
+[/Watch [{register|registerGroup}...]]
+[/Unwatch [{register|registerGroup}...]]
+```
+
+## <a name="switches"></a>Переключатели
+ /Display [{`register`&#124;`registerGroup`}...]
+
+ Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:
+
+ `Debug.ListRegisters /Display eax`
+
+ эквивалентно
+
+ `Debug.ListRegisters eax`
+
+ /List
+
+ Отображает все группы регистров в списке.
+
+ /Watch [{`register`&#124;`registerGroup`}...]
+
+ Добавляет одно или несколько значений `register` или `registerGroup` в список.
+
+ /Unwatch [{`register`&#124;`registerGroup`}...]
+
+ Удаляет одно или несколько значений `register` или `registerGroup` из списка.
+
+## <a name="remarks"></a>Примечания
+ Вместо `Debug.ListRegisters` можно использовать псевдоним `r`.
+
+## <a name="example"></a>Пример
+ Этот пример использует псевдоним `r` для `Debug.ListRegisters`, чтобы отобразить значения группы регистров `Flags`.
+
+```
+r /Display Flags
+```
+
+## <a name="see-also"></a>См. также
+
+- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Общие сведения об отладке: окно регистров](../../debugger/debugging-basics-registers-window.md)
+- [Практическое руководство. Использование окна регистров](../../debugger/how-to-use-the-registers-window.md)

@@ -1,18 +1,20 @@
 ---
 layout: LandingPage
+ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: "Создание кода и управление им с помощью Visual Studio | Документация Майкрософт"
-description: "Узнайте, как использовать редактор кода и другие средства Visual Studio для создания, просмотра, развития кода и управления им."
+title: Создание кода и управление им с помощью Visual Studio | Документация Майкрософт
+description: Узнайте, как использовать редактор кода и другие средства Visual Studio для создания, просмотра, развития кода и управления им.
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 88550be8e6d2d7e226d591a5011da5d3affbb511
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 41126bc657177067dbfe1980f47f0aa1425699d6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Создание кода и управление им с помощью Visual Studio
 
