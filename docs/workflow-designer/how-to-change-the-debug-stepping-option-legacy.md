@@ -1,7 +1,9 @@
 ---
-title: 'Как: изменить вариант пошаговой отладки (для прежних версий) | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: изменить вариант пошаговой отладки (для прежних версий)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - branch stepping
 - debugging, stepping options
@@ -14,28 +16,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aedb8e738dc2e6ca2b066dd9a2cd42e332bbd8be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31047cedd4e8772b9ebab4ef238a8fe32bc07663
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Как изменить вариант пошаговой отладки (для прежних версий)
-В этом разделе описывается изменение варианта пошаговой отладки для [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] приложения в конструкторе рабочих процессов прежних версий Windows, параллельными действиями. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- При отладке действий прежних версий, которые выполняются одновременно, таких как **ParallelActivity** или **ConditionedActivityGroup**, можно использовать один из двух вариантов для пошаговой проверки кода.
+В этом разделе описывается изменение вариант для приложений Windows Workflow Foundation (WF) в конструкторе рабочих процессов прежних версий Windows, имеющих параллельные действия пошаговой отладки. Используйте конструктор рабочих процессов прежних версий, для целевой платформы .NET Framework 3.5 или WinFX.
 
- Выполните следующие действия, чтобы изменить вариант пошаговой отладки в проекте рабочего процесса прежних версий.
+При отладке действий прежних версий, которые выполняются одновременно, таких как **ParallelActivity** или **ConditionedActivityGroup**, можно использовать один из двух вариантов для пошаговой проверки кода.
+
+Выполните следующие действия, чтобы изменить вариант пошаговой отладки в проекте рабочего процесса прежних версий.
 
 ## <a name="procedures"></a>Процедуры
 
-#### <a name="to-change-the-debug-stepping-option"></a>Изменение варианта пошаговой отладки
+### <a name="to-change-the-debug-stepping-option"></a>Изменение варианта пошаговой отладки
 
 1.  Запустите Visual Studio.
 
-2.  Откройте существующий проект рабочего процесса прежних версий или создайте новый проект, в котором применяются параллельные действия и который предназначен для работы с [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+2.  Откройте существующий проект рабочего процесса прежних версий или создайте новый проект, в котором используются параллельные действия и который нацелен WinFX или .NET Framework версии 3.5.
 
-3.  На **рабочего процесса** меню прежних версий [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], пункты **отладки**, а затем **варианты пошаговой отладки**.
+3.  На **рабочего процесса** меню в конструкторе рабочих процессов прежних версий, укажите **отладки**, а затем **варианты пошаговой отладки**.
 
 4.  Выберите либо **экземпляр** или **ветви**.
 

@@ -1,7 +1,9 @@
 ---
-title: Конструктор действия Compensate | Документы Microsoft
+title: Конструктор рабочих процессов - конструктора операций Compensate
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
@@ -10,13 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef289304338ea64a72c073711a287612d39bd1a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8278066a12df0d195770391d0b2f3144ba16487d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="compensate-activity-designer"></a>Конструктор действия Compensate
+
 **Compensate** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Compensate> действия.
 
 ## <a name="the-compensate-activity"></a>Действие Compensate
@@ -25,12 +28,12 @@ ms.lasthandoff: 04/16/2018
  Объект <xref:System.Activities.Statements.CompensationToken>, указанный <xref:System.Activities.Statements.Compensate.Target%2A>, предоставляет возможность для явного подтверждения или компенсации действия <xref:System.Activities.Statements.CompensableActivity>, как только <xref:System.Activities.Statements.CompensableActivity.Body%2A> действия <xref:System.Activities.Statements.CompensableActivity> будет успешно завершено.
 
 ### <a name="using-the-compensate-activity-designer"></a>Использование конструктора операций Compensate
- **Compensate** конструктора действий можно найти в **транзакции** категории **элементов**, который нажав **элементов** вкладка на левой стороне [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+ **Compensate** конструктора действий можно найти в **транзакции** категории **элементов**. Чтобы открыть **элементов**выберите **элементов** вкладка в левой части конструктора рабочих процессов (либо выберите **инструментов** из **представление**меню или сочетание клавиш CTRL + ALT + X.)
 
- **Compensate** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] поверхности везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.Compensate> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для Compensate. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Compensate** конструктора или в **DisplayName** поле сетки свойств.
+ **Compensate** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Перемещение конструктора действий создает <xref:System.Activities.Statements.Compensate> действия по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для Compensate. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Compensate** конструктора или в **DisplayName** поле сетки свойств.
 
 ### <a name="the-compensate-properties"></a>Свойства Compensate
- В следующей таблице показаны свойства <xref:System.Activities.Statements.CancellationScope> и описано их использование в конструкторе. Свойство <xref:System.Activities.Activity.DisplayName%2A> может быть изменено в таблице свойств или в области [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], однако свойство <xref:System.Activities.Statements.Compensate.Target%2A> можно изменить только в таблице свойств.
+ В следующей таблице показаны свойства <xref:System.Activities.Statements.CancellationScope> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> Свойство можно изменить в таблице свойств или на поверхности конструктора рабочих процессов. Изменить <xref:System.Activities.Statements.Compensate.Target%2A> свойства в сетке свойств.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

@@ -1,7 +1,9 @@
 ---
-title: Конструктор шаблона SendAndReceiveReply | Документы Microsoft
+title: Конструктор рабочих процессов - конструктор шаблона SendAndReceiveReply
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
 - System.ServiceModel.Activities.ReceiveReply.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4edb5081c58772fc67bb24b4832e7068f1a0344d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c6a4749ed138b22ac3d600befad01ef1776478e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sendandreceivereply-template-designer"></a>Конструктор шаблона SendAndReceiveReply
 
 **SendAndReceiveReply** шаблон используется для создания пары предварительно настроенных <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.ReceiveReply> действий в <xref:System.Activities.Statements.Sequence> действия, которые соотносятся как часть обмен сообщениями запрос ответ шаблон на стороне клиента.
 
 ## <a name="the-sendandreceivereply-template"></a>Шаблон SendAndReceiveReply
- Добавление **SendAndReceiveReply** шаблона выполняет три операции Помимо создания <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.ReceiveReply> действий в <xref:System.Activities.Statements.Sequence> действия:
+
+Добавление **SendAndReceiveReply** шаблона выполняет три операции Помимо создания <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.ReceiveReply> действий в <xref:System.Activities.Statements.Sequence> действия:
 
 1.  Настраивает свойства <xref:System.ServiceModel.Activities.Send.OperationName%2A>, <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> действия <xref:System.ServiceModel.Activities.Send>.
 
@@ -31,16 +34,16 @@ ms.lasthandoff: 04/16/2018
 3.  Создает <xref:System.ServiceModel.Activities.CorrelationHandle> в качестве переменной в родительском действии.
 
 ### <a name="using-the-sendandreceivereply-template-designer"></a>Использование конструктора шаблонов SendAndReceiveReply
- **SendAndReceiveReply** конструктора действий можно найти в **обмен сообщениями** категории **элементов**, который нажав **элементов**  на вкладке [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+ **SendAndReceiveReply** конструктора действий можно найти в **обмен сообщениями** категории **элементов**, который нажав **элементов**  вкладку в конструкторе рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **SendAndReceiveReply** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] , где обычно размещаются действия. При этом создается <xref:System.ServiceModel.Activities.Send> действия, который может быть настроен с **отправки** конструктора действий и связанное <xref:System.ServiceModel.Activities.ReceiveReply> , можно настроить с помощью **ReceiveReplyForSend** конструктора.
+ **SendAndReceiveReply** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия. При этом создается <xref:System.ServiceModel.Activities.Send> действия, который может быть настроен с **отправки** конструктора действий и связанное <xref:System.ServiceModel.Activities.ReceiveReply> , можно настроить с помощью **ReceiveReplyForSend** конструктора.
 
  Дополнительные сведения об использовании **отправки** конструктор для настройки <xref:System.ServiceModel.Activities.Send> действия, в разделе [отправки](../workflow-designer/send-activity-designer.md) раздела.
 
  Дополнительные сведения об использовании **ReceiveReplyForSend** конструктор для настройки <xref:System.ServiceModel.Activities.ReceiveReply> действие, в следующем разделе.
 
 ### <a name="properties-of-receivereply"></a>Свойства ReceiveReply
- В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.ReceiveReply> и описано их использование в конструкторе. These properties can be edited in properties grid and some can be edited on [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]designer surface.
+ В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.ReceiveReply> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, и некоторые можно изменить в области Designerdesigner рабочего процесса.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

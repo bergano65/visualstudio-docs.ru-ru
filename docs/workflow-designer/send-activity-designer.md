@@ -1,7 +1,9 @@
 ---
-title: Конструктор действия send | Документы Microsoft
+title: Конструктор рабочих процессов - конструктор действия Send
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -10,30 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="send-activity-designer"></a>Конструктор действия Send
 
 **Отправки** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.Send> действия.
 
 ## <a name="the-send-activity"></a>Действие Send
+
  Действие <xref:System.ServiceModel.Activities.Send> предназначено для отправки сообщения службе. Действие <xref:System.ServiceModel.Activities.ReceiveReply> может быть привязано к действию <xref:System.ServiceModel.Activities.Send>, которое получает сообщение в процессе обмена сообщениями по шаблону «запрос-ответ» на стороне клиента.
 
 ### <a name="using-the-send-activity-designer"></a>Использование конструктора действия Send
- **Отправки** конструктора действий можно найти в **обмен сообщениями** категории **элементов**, которой нажав **элементов** вкладки в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+ **Отправки** конструктора действий можно найти в **обмен сообщениями** категории **элементов**, которой нажав **элементов** в конструкторе рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **Отправки** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] , где обычно размещаются действия. Будет создано действие <xref:System.ServiceModel.Activities.Send> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> Send. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **отправки** конструктора или в **DisplayName** поле сетки свойств.
+ **Отправки** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия. Будет создано действие <xref:System.ServiceModel.Activities.Send> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> Send. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **отправки** конструктора или в **DisplayName** поле сетки свойств.
 
  Для создания <xref:System.ServiceModel.Activities.ReceiveReply> действия и привяжите его к выбранному <xref:System.ServiceModel.Activities.Send> действия, щелкните правой кнопкой мыши **отправки** конструктора, щелкните действие **создать ReceiveReply** элемента в контекстном меню и **ReceiveReplyForSend** появится ниже конструктора **отправки** конструктора. Действие <xref:System.ServiceModel.Activities.ReceiveReply> получает сообщение в процессе обмена сообщениями по шаблону «запрос-ответ» на стороне клиента. Он может быть настроен с **ReceiveReplyForSend** конструктора.
 
  Кроме того **SendAndReceiveReply** конструктора шаблонов в **обмен сообщениями** категории **элементов** можно использовать для создания пары предварительно настроенных <xref:System.ServiceModel.Activities.Send>и <xref:System.ServiceModel.Activities.ReceiveReply> действий. Дополнительные сведения об использовании **SendAndReceiveReply** и **ReceiveReplyForSend** шаблонов, см. раздел [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) раздела.
 
 ### <a name="the-send-activity-properties"></a>Свойства действия Send
- В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.Send> и описано их использование в конструкторе. Эти свойства могут быть изменены в таблице свойств или в области [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.Send> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или на поверхности конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

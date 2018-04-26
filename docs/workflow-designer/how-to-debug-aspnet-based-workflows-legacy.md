@@ -1,7 +1,9 @@
 ---
-title: 'Как: отладки рабочих процессов на основе ASP.NET (для прежних версий) | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: отладки рабочих процессов на основе ASP.NET (для прежних версий)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Как отлаживать рабочие процессы, основанные на ASP.NET (для прежних версий)
-В этом разделе описывается отладка [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-основе [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] приложения, предназначенные либо [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] в конструкторе рабочих процессов прежних версий Windows.
 
- Отладку рабочих процессов прежних версий, которые запущены в ASP.NET, или рабочих процессов более ранней версии, которые опубликованы как веб-службы, можно выполнить посредством присоединения к процессу, в котором размещается рабочий процесс.
+В этом разделе описывается отладка приложений ASP.NET на базе Windows Workflow Foundation (WF), ориентированных на платформы .NET Framework версии 3.5 или WinFX в конструкторе рабочих процессов прежних версий Windows.
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>Отладка рабочих процессов, основанных на ASP.NET
+Отладку рабочих процессов прежних версий, которые запущены в ASP.NET, или рабочих процессов более ранней версии, которые опубликованы как веб-службы, можно выполнить посредством присоединения к процессу, в котором размещается рабочий процесс.
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>Отладка рабочих процессов, основанных на ASP.NET
 
 1.  Включение отладки для приложения ASP.NET, задав **debug = true** в файле web.config.
 

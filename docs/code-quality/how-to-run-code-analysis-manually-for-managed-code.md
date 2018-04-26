@@ -1,6 +1,7 @@
 ---
 title: Практическое руководство. Запуск анализа управляемого кода вручную
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2690ff071b217fb95388dde7c4b2eda28189f5f3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b2a9fa4af1737b59af67388ba12cf79eca0b7563
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Практическое руководство. Запуск анализа управляемого кода вручную
 Средство анализа кода предоставляет сведения для вас о возможных дефектах в исходном коде. Можно выполнить анализ кода автоматически при каждом построении проекта кода, а также можно выполнить анализ кода вручную. Правила, которые проверяются во время выполнения анализа кода задаются на странице "Анализ кода" на страницах свойств проекта. Дополнительные сведения см. в разделе [как: Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

@@ -1,5 +1,5 @@
 ---
-title: Назначение ролей контроллеру и агенту тестирования для выполнения автоматических тестов в Visual Studio | Документы Майкрософт
+title: Назначение ролей контроллеру и агенту тестирования для выполнения автоматических тестов в Visual Studio
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 932a6fe470812fc647cad653fb95ba7ca8997ab0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Назначение ролей контроллеру и агенту тестирования
 

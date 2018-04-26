@@ -1,30 +1,24 @@
 ---
-title: Состояние компьютера конструкторы | Документы Microsoft
+title: Конструктор рабочих процессов - конструкторы действий конечных автоматов
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bde93d8ac1907accf4f7d14da186aa43ccb169a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="state-machine-activity-designers"></a>Конструкторы действий конечных автоматов
+
 Конструктор рабочих процессов Windows включает ряд конструкторов действий, которые можно использовать при создании рабочих процессов. Этот раздел содержит предоставленные системой конструкторы действий, которые используются для создания рабочих процессов конечного автомата и управления ими. В следующих подразделах приводится описание этих конструкторов, а также описание их использования.
-
-## <a name="in-this-section"></a>В этом разделе
- [StateMachine](../workflow-designer/statemachine-activity-designer.md) содержит коллекцию состояний и моделирует рабочие процессы с помощью известной парадигмы конечного автомата.
-
- [Состояние](../workflow-designer/state-activity-designer.md) представляет состояние, в котором может находиться конечный автомат.
-
- [Конечное состояние](../workflow-designer/finalstate-activity-designer.md) представляет состояние, которое завершает экземпляр конечного автомата.
-
- [Переход](../workflow-designer/transition-activity-designer.md) представляет переход между двумя состояниями.
 
 ## <a name="reference"></a>Ссылка
  <xref:System.Activities.Statements.StateMachine>

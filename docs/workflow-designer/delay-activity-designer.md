@@ -1,7 +1,9 @@
 ---
-title: Отложить конструктора | Документы Microsoft
+title: Конструктор рабочих процессов - конструктор действия Delay
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7159330588151d4845184fcb6688b20f8d13afd0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e22c80712bcb0c792fb929ae85b84912122a0bc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="delay-activity-designer"></a>Конструктор действия Delay
+
 **Задержки** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Delay> действия.
 
 ## <a name="the-delay-activity"></a>Действие Delay
- Действие <xref:System.Activities.Statements.Delay> откладывает выполнение рабочего процесса на указанное время.
+
+Действие <xref:System.Activities.Statements.Delay> откладывает выполнение рабочего процесса на указанное время.
 
 ### <a name="using-the-delay-activity-designer"></a>Использование конструктора действия Delay
- **Задержки** конструктора действий можно найти в **примитивы** категории **элементов**, который нажав **элементов**вкладке [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **Задержки** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] поверхности везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.Delay>, где значение <xref:System.Activities.Activity.DisplayName%2A> по умолчанию равно Delay. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **задержки** конструктора или в **DisplayName** поле сетки свойств.
+**Задержки** конструктора действий можно найти в **примитивы** категории **элементов**, который нажав **элементов**вкладки конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+
+**Задержки** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.Delay>, где значение <xref:System.Activities.Activity.DisplayName%2A> по умолчанию равно Delay. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **задержки** конструктора или в **DisplayName** поле сетки свойств.
 
 ### <a name="the-delay-properties"></a>Свойства Delay
- В следующей таблице показаны свойства <xref:System.Activities.Statements.Delay> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, а некоторые ― в области конструктора [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+
+В следующей таблице показаны свойства <xref:System.Activities.Statements.Delay> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств и их некоторые можно изменить в области Designerdesigner рабочего процесса.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

@@ -1,9 +1,8 @@
 ---
-title: Средства XML в Visual Studio | Документы Microsoft
-ms.custom: ''
+title: Средства XML в Visual Studio
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -35,11 +34,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f823a42d5a89dd22fd273a2971a3b323487a525b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-tools-in-visual-studio"></a>Средства XML в Visual Studio
 
@@ -51,40 +50,24 @@ XML лежит в основе многих возможностей Visual Stud
 
 Дополнительные сведения см. в разделе <xref:System.Xml?displayProperty=fullName> документации.
 
-## <a name="in-this-section"></a>В этом разделе
-
-[Работа с XML-данными](../xml-tools/working-with-xml-data.md)  
-Описание роли XML в методе обработки данных в Visual Studio.
-
-[Отладка XSLT](../xml-tools/debugging-xslt.md)  
-Ссылки на разделы об использовании отладчика Visual для отладки XSLT.
-
 ## <a name="reference"></a>Ссылка
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)  
-Предоставляет [редактора XML](http://go.microsoft.com/fwlink/?LinkId=228249) синтаксический анализ дерева с помощью [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
+[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) предоставляет [редактора XML](http://go.microsoft.com/fwlink/?LinkId=228249) синтаксический анализ дерева с помощью [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
 
-[Справочник по XML-стандартам](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-Сведения о технологиях XML, в том числе XML, определении типа документа (DTD), языке определения схемы XML (XSD) и XSLT.
+[Справочник по стандартам XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) предоставляет сведения о технологиях XML, в том числе XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
 
-<xref:System.Xml?displayProperty=fullName>  
-Описание классов и других элементов, из которых состоит пространство имен <xref:System.Xml>, а также ссылки на более подробное описание каждого элемента.
+<xref:System.Xml?displayProperty=fullName> Описание классов и других элементов, составляющих <xref:System.Xml> пространства имен и предоставляет ссылки на более подробные сведения о каждом элементе.
 
-<xref:System.Xml.Serialization?displayProperty=fullName>  
-Описание классов и других элементов, из которых состоит пространство имен <xref:System.Xml.Serialization>, а также ссылки на более подробное описание каждого элемента.
+<xref:System.Xml.Serialization?displayProperty=fullName> Описание классов и других элементов, составляющих <xref:System.Xml.Serialization> пространства имен и ссылки на более подробные сведения о каждом элементе.
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[Модель объектов документов XML (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)  
-Описание соответствия <xref:System.Xml.XmlDocument> и связанных классов спецификации пространству имен объектной модели документов W3C (базовой) уровня 1 и 2.
+[Модель объектов XML документа (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom) описывает как <xref:System.Xml.XmlDocument> и связанные с ним классы должно соответствовать объектной модели документов W3C (ядро), уровень 1 и уровень 2 спецификации пространству имен.
 
 [Обработка XML-данных с XmlReader и XmlWriter](https://msdn.microsoft.com/library/cc189001(v=vs.95).aspx)
 
-[Преобразования XSLT](/dotnet/standard/data/xml/xslt-transformations)  
-Описание реализации рекомендации XSLT 1.0 в классе <xref:System.Xml.Xsl.XslCompiledTransform>.
+[Преобразования XSLT](/dotnet/standard/data/xml/xslt-transformations) описывает как <xref:System.Xml.Xsl.XslCompiledTransform> класс реализует рекомендаций XSLT 1.0.
 
-[Обработка XML-данных с использованием модели данных XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)  
-Описание того, как класс <xref:System.Xml.XPath.XPathNavigator> может обрабатывать данные XML, которые хранятся в объекте <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument>. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.
+[Обработка XML-данных с помощью модели данных XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) описывает как <xref:System.Xml.XPath.XPathNavigator> класс может обрабатывать XML-данные, хранящиеся в <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> объекта. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.
 
-[Модель объектов схемы XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)  
-Описание классов, используемых для создания и обработки схем XML с применением класса <xref:System.Xml.Schema.XmlSchema> для загрузки и редактирования схемы.
+[Объектную модель схемы XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) описываются классы, используемые для создания и обработки XML-схем, предоставляя <xref:System.Xml.Schema.XmlSchema> класса для загрузки и изменения схемы.

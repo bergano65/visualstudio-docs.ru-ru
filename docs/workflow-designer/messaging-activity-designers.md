@@ -1,21 +1,24 @@
 ---
-title: Конструкторы действий обмена сообщениями | Документы Microsoft
+title: Конструктор рабочих процессов - конструкторы действий обмена сообщениями
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="messaging-activity-designers"></a>Конструкторы действий обмена сообщениями
-Конструкторы операций обмена сообщениями используются для создания и настройки действий обмена сообщениями, которые отправляют и получают сообщения [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] из приложения [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]. [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] Представляет пять действия обмена сообщениями и конструктора рабочих процессов Windows предоставляет два новых конструктора шаблонов, которые позволяют управлять обменом сообщениями в рабочем процессе. В подразделах этого раздела и перечисленных в следующей таблице приводится описание использования действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.
+
+Конструкторы операций обмена сообщениями используются для создания и настройки действий обмена сообщениями, которые отправляют и получают сообщения Windows Communication Foundation (WCF) из приложения Windows Workflow Foundation (WF). .NET Framework 4 представляет пять действий обмена сообщениями и конструктор рабочих процессов Windows предоставляет два новых конструктора шаблонов, которые позволяют управлять обменом сообщениями в рабочем процессе. В этом разделе и перечисленных в следующей таблице представлены рекомендации о том, как использовать действие в конструкторе рабочих процессов и конструкторы, шаблон.
 
 ## <a name="reference"></a>Ссылка
  <xref:System.Activities.Activity>

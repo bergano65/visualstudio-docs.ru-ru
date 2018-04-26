@@ -1,7 +1,9 @@
 ---
-title: Конструктор действия InvokeMethod | Документы Microsoft
+title: Конструктор рабочих процессов - конструктор действия InvokeMethod
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -10,25 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2e1cbb097d86d0e13ba8581389d7356001ff92
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b612966da1244c745edbe8a5c92b1b300554a388
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokemethod-activity-designer"></a>Конструктор действия InvokeMethod
+
 **Метод InvokeMethod** конструктор используется для создания и настройки <xref:System.Activities.Statements.InvokeMethod> действия.
 
 ## <a name="the-invokemethod-activity"></a>Действие InvokeMethod
- <xref:System.Activities.Statements.InvokeMethod> Вызывает открытый метод заданного объекта или типа.
+
+<xref:System.Activities.Statements.InvokeMethod> Вызывает открытый метод заданного объекта или типа.
 
 ### <a name="using-the-invokemethod-activity-designer"></a>Использование конструктора операций InvokeMethod
- **InvokeMethod** конструктора действий можно найти в **примитивы** категории **элементов**, который нажав **элементов** вкладка [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или же CTRL + ALT + X.)
+ **InvokeMethod** конструктора действий можно найти в **примитивы** категории **элементов**, который нажав **элементов** вкладки конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или же CTRL + ALT + X.)
 
- **InvokeMethod** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] поверхности где-либо обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Это создает действие <xref:System.Activities.Statements.InvokeMethod> с именем по умолчанию <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **InvokeMethod** конструктора или в **DisplayName** поле сетки свойств.
+ **InvokeMethod** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, где каждый раз, если обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Это создает действие <xref:System.Activities.Statements.InvokeMethod> с именем по умолчанию <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **InvokeMethod** конструктора или в **DisplayName** поле сетки свойств.
 
 ### <a name="the-invokemethod-properties"></a>Свойства InvokeMethod
- В следующей таблице показаны свойства <xref:System.Activities.Statements.InvokeMethod> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств и некоторые свойства ― в области конструктора [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ В следующей таблице показаны свойства <xref:System.Activities.Statements.InvokeMethod> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, и некоторые можно изменить в области Designerdesigner рабочего процесса.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

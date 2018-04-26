@@ -1,9 +1,9 @@
 ---
-title: Выбор фрагмента кода | Документы Майкрософт
-ms.custom: ''
+title: выбор фрагмента кода
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01cfc51591264b258518f4c90276a7ece11250
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippet-picker"></a>выбор фрагмента кода
 
@@ -47,15 +47,17 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
-Имя элемента  
+Имя элемента
+
 Редактируемое текстовое поле с именем элемента, выбранного в **списке элементов**. Чтобы выполнить последовательный поиск нужного элемента, начните вводить его имя в этом поле. Продолжайте набирать буквы до тех пор, пока требуемый элемент не будет выбран в **списке элементов**.
 
-Список элементов  
+Список элементов
+
 Список фрагментов кода, доступных для вставки, или список папок с фрагментами кода. Чтобы вставить фрагмент или развернуть папку, выберите требуемый элемент и нажмите клавишу ВВОД.
 
 ## <a name="see-also"></a>См. также
 
-[Рекомендации по использованию фрагментов кода](../../ide/best-practices-for-using-code-snippets.md)  
-[Фрагменты кода IntelliSense в Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Установка закладок в коде](../../ide/setting-bookmarks-in-code.md)  
-[Практическое руководство. Использование окружающих фрагментов кода](../../ide/how-to-use-surround-with-code-snippets.md)
+- [Рекомендации по использованию фрагментов кода](../../ide/best-practices-for-using-code-snippets.md)
+- [Фрагменты кода IntelliSense в Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Установка закладок в коде](../../ide/setting-bookmarks-in-code.md)
+- [Практическое руководство. Использование окружающих фрагментов кода](../../ide/how-to-use-surround-with-code-snippets.md)

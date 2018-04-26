@@ -1,7 +1,9 @@
 ---
-title: Конструктор действия receive | Документы Microsoft
+title: Конструктор рабочих процессов - конструктор действия Receive
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -10,29 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7573c126ce8e11143d3b39a637c44649d15acf95
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receive-activity-designer"></a>Конструктор действия Receive
+
 **Receive** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.Receive> действия. Действие <xref:System.ServiceModel.Activities.Receive> получает сообщение - либо встроенное, например <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> или <xref:System.Xml.Linq.XElement>, либо определяемое контрактом данных приложения, контрактом сообщений или классом XML, поддерживающим сериализацию.
 
 ## <a name="the-receive-activity"></a>Действие Receive
- Действие <xref:System.ServiceModel.Activities.Receive> может получать один или несколько элементов в зависимости от используемого типа приема содержимого. Действие <xref:System.ServiceModel.Activities.SendReply> может быть привязано к действию <xref:System.ServiceModel.Activities.Receive>, которое получает сообщение в процессе обмена сообщениями по шаблону «запрос-ответ» на стороне службы.
+
+Действие <xref:System.ServiceModel.Activities.Receive> может получать один или несколько элементов в зависимости от используемого типа приема содержимого. Действие <xref:System.ServiceModel.Activities.SendReply> может быть привязано к действию <xref:System.ServiceModel.Activities.Receive>, которое получает сообщение в процессе обмена сообщениями по шаблону «запрос-ответ» на стороне службы.
 
 ### <a name="using-the-receive-activity-designer"></a>Использование конструктора действия Receive
- **Receive** конструктора действий можно найти в **обмен сообщениями** категории **элементов**, который нажав **элементов**вкладки [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+ **Receive** конструктора действий можно найти в **обмен сообщениями** категории **элементов**, который нажав **элементов**вкладку в конструкторе рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **Receive** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] , где обычно размещаются действия. При этом создается действие <xref:System.ServiceModel.Activities.Receive> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для Receive. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **Receive** конструктора или в **DisplayName** поле сетки свойств.
+ **Receive** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия. При этом создается действие <xref:System.ServiceModel.Activities.Receive> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для Receive. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **Receive** конструктора или в **DisplayName** поле сетки свойств.
 
  Для создания <xref:System.ServiceModel.Activities.SendReply> действия и привяжите его к выбранному <xref:System.ServiceModel.Activities.Receive> действия, щелкните правой кнопкой мыши **Receive** конструктора, щелкните действие **создать SendReply** элемента в контекстном меню и **SendReplyToReceive** появится ниже конструктора **Receive** конструктора. Действие <xref:System.ServiceModel.Activities.SendReply> отправляет ответное сообщение в процессе обмена сообщениями по шаблону «запрос-ответ» на стороне службы. Он может быть настроен с **SendReplyToReceive** конструктора.
 
  Кроме того **ReceiveAndSendReply** конструктора шаблонов в **обмен сообщениями** категории **элементов** можно использовать для создания пары предварительно настроенных <xref:System.ServiceModel.Activities.Receive>и <xref:System.ServiceModel.Activities.SendReply> действия. Дополнительные сведения об использовании **ReceiveAndSendReply** и **SendReplyToReceive** шаблона, в разделе [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) раздела.
 
 ### <a name="the-receive-activity-properties"></a>Свойства действия Receive
- В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.Receive> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или в области [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Свойство <xref:System.ServiceModel.Activities.Receive.OperationName%2A> является единственным обязательным свойством.
+ В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.Receive> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или в рабочей области конструктора рабочих процессов. Свойство <xref:System.ServiceModel.Activities.Receive.OperationName%2A> является единственным обязательным свойством.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

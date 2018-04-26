@@ -1,7 +1,9 @@
 ---
-title: Обзор и Выбор типа .NET-диалоговое | Документы Microsoft
+title: Конструктор рабочих процессов - Обзор и выбор диалоговое окно типа .NET
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Диалоговое окно "Обзор и выбор типа .NET"
 
@@ -34,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Выбор значения или ссылочного типа из браузера типов
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Выбор значения или ссылочного типа из браузера типов
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Выбор значения или ссылочного типа из браузера типов
 
 1.  В **имя типа** введите имя типа, который вы хотите использовать.
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
     -   Введите достаточное количество символов в **имя типа** для уникальной идентификации типа, который вы хотите использовать, и нажмите клавишу ВВОД для выбора типа
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Выбор универсального типа из браузера типов
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>Выбор универсального типа из браузера типов
 
 1.  В **имя типа** введите имени типа, который вы хотите использовать.
 

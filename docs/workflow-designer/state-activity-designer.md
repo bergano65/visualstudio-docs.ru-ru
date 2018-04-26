@@ -1,7 +1,9 @@
 ---
-title: Состояние конструктора действий | Документы Microsoft
+title: Конструктор рабочих процессов - конструктора действий состояний
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 117479e00c8b27617c33a2cce422afe5ab3124aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="state-activity-designer"></a>Конструктор State Activity
+
 <xref:System.Activities.Statements.State> представляет состояние, в котором может находиться конечный автомат.
 
 ## <a name="using-the-state-activity-designer"></a>Использование конструктора действий состояний
- Чтобы добавить <xref:System.Activities.Statements.State> рабочий процесс, перетащите **состояние** конструктора действий из **конечного автомата** раздел **элементов** и поместите его в <xref:System.Activities.Statements.StateMachine> действие в рабочей области конструктора рабочих процессов Windows. Действие <xref:System.Activities.Statements.State> можно перетащить в <xref:System.Activities.Statements.StateMachine> и переходы, добавленные позже. Переход также можно создать при помещении действия <xref:System.Activities.Statements.State> на поверхность. Чтобы добавить <xref:System.Activities.Statements.State> действия и создать переход за один шаг, перенесите **состояние** действия из **конечного автомата** раздел **элементов** и наведите его на другой состояние в конструкторе рабочих процессов. При наведении <xref:System.Activities.Statements.State> на другое <xref:System.Activities.Statements.State> вокруг другого <xref:System.Activities.Statements.State> будут отображены четыре треугольника. Если <xref:System.Activities.Statements.State> поместить на один из четырех треугольников, он будет добавлен к конечному автомату, а также будет добавлен переход состояния из исходного <xref:System.Activities.Statements.State> в размещенное целевое <xref:System.Activities.Statements.State>. Дополнительные сведения см. в разделе [перехода](../workflow-designer/transition-activity-designer.md).
+
+Чтобы добавить <xref:System.Activities.Statements.State> рабочий процесс, перетащите **состояние** конструктора действий из **конечного автомата** раздел **элементов** и поместите его в <xref:System.Activities.Statements.StateMachine> действие в рабочей области конструктора рабочих процессов Windows. Действие <xref:System.Activities.Statements.State> можно перетащить в <xref:System.Activities.Statements.StateMachine> и переходы, добавленные позже. Переход также можно создать при помещении действия <xref:System.Activities.Statements.State> на поверхность. Чтобы добавить <xref:System.Activities.Statements.State> действия и создать переход за один шаг, перенесите **состояние** действия из **конечного автомата** раздел **элементов** и наведите его на другой состояние в конструкторе рабочих процессов. При наведении <xref:System.Activities.Statements.State> на другое <xref:System.Activities.Statements.State> вокруг другого <xref:System.Activities.Statements.State> будут отображены четыре треугольника. Если <xref:System.Activities.Statements.State> поместить на один из четырех треугольников, он будет добавлен к конечному автомату, а также будет добавлен переход состояния из исходного <xref:System.Activities.Statements.State> в размещенное целевое <xref:System.Activities.Statements.State>. Дополнительные сведения см. в разделе [перехода](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Свойства действия состояния в конструкторе рабочих процессов
- В следующей таблице приведены свойства <xref:System.Activities.Statements.State>, которые можно задать с помощью конструктора рабочих процессов, и описано их использование в конструкторе. Некоторые из этих свойств можно изменить в таблице свойств, а некоторые из них ― в области конструктора.
+
+В следующей таблице приведены свойства <xref:System.Activities.Statements.State>, которые можно задать с помощью конструктора рабочих процессов, и описано их использование в конструкторе. Некоторые из этих свойств можно изменить в таблице свойств, а некоторые из них ― в области конструктора.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

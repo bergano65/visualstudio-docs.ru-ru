@@ -1,7 +1,9 @@
 ---
-title: 'Как: добавлять комментарии в рабочий процесс в конструкторе рабочих процессов | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: добавлять комментарии в рабочий процесс'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,15 +13,15 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fb7505d773f26a26df0b31477d99f7f5636d8c40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Как добавлять комментарии в рабочий процесс в конструкторе рабочих процессов
 
-Чтобы упростить создание более сложных рабочих процессов большего размера, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] дает разработчикам возможность добавлять заметки к следующим типам элементов в конструкторе.
+Чтобы упростить создание крупных и более сложных рабочих процессов, .NET Framework 4.5 позволяет разработчику добавлять заметки для следующих типов элементов в конструкторе:
 
 -   <xref:System.Activities.Activity>
 
@@ -36,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 > [!IMPORTANT]
 > Содержимое заметки сохраняется в виде обычного текста в файле XAML, связанном с рабочим процессом, и потенциально может быть прочитано другими. Избегайте добавлять в заметку конфиденциальные сведения.
 
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Добавление заметки к действию в конструкторе
+## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Добавление заметки к действию в конструкторе
 
 1. В конструкторе рабочих процессов щелкните правой кнопкой мыши элемент в конструктор рабочих процессов и выберите **заметки**, **добавить заметку**.
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
    Элемент показывает значок заметки. Если навести курсор мыши на значок заметки отображает текст заметки.
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Отображение заметки в конструкторе действия
+## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Отображение заметки в конструкторе действия
 
 1.  В конструкторе действия с заметкой, отображаемой за пределами действия, нажмите **ПИН-код** значок в декоративном элементе заметки.
 
@@ -56,7 +58,7 @@ ms.lasthandoff: 04/16/2018
 
    ![Примечание, отображаемое за пределами конструктора действий](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
-### <a name="showing-or-hiding-all-annotations"></a>Отображение или скрытие всех заметок
+## <a name="showing-or-hiding-all-annotations"></a>Отображение или скрытие всех заметок
 
 1. Щелкните правой кнопкой мыши действие, которое имеет заметку. Выберите **заметки**, **Показать все заметки**.
 
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 
 1. Для отображения всех заметок вне конструкторов действий, щелкните правой кнопкой мыши действие и выберите **заметки**, **скрыть все заметки**.
 
-### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Изменение или удаление заметки для действия
+## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Изменение или удаление заметки для действия
 
 1. Щелкните правой кнопкой мыши действие, которое имеет заметку.
 
@@ -74,7 +76,7 @@ ms.lasthandoff: 04/16/2018
 
 1. Чтобы удалить все заметки одновременно, щелкните правой кнопкой мыши конструктор рабочих процессов и выберите **заметки**, **удалить все заметки**.
 
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Добавление, изменение и удаление заметки для переменной или аргумента.
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Добавление, изменение и удаление заметки для переменной или аргумента.
 
 1. Щелкните правой кнопкой мыши переменную или аргумент, затем выберите «Добавить заметку».
 

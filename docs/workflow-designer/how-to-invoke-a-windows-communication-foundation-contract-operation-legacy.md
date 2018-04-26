@@ -1,27 +1,30 @@
 ---
-title: 'Как: вызвать операцию контракта Windows Communication Foundation (для прежних версий) | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: вызвать операцию контракта Windows Communication Foundation (для прежних версий)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c97b62f7ddfbe46ac5ede4aefba53e50020f3b65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b39d2132b29ec1f8fbfd8339bdb8f81e6f752a0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Как вызвать операцию контракта Windows Communication Foundation (для прежних версий)
-В этом разделе описывается вызов [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] операции, используя конструктор рабочего процесса прежних версий Windows, предназначенного контракта [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- После перетаскивания **SendActivity** действия из области элементов в область конструктора рабочих процессов, необходимо импортировать существующий контракт и определить, какая операция будет вызываться из **SendActivity** действие. Выбор контракта и операции с его помощью [выберите операцию диалоговое окно (для прежних версий)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+В этом разделе описывается вызвать операцию контракта Windows Communication Foundation (WCF), с помощью конструктора рабочих процессов прежних версий Windows, предназначенное для .NET Framework версии 3.5 или WinFX.
 
- Также, если используется файл конфигурации для службы, необходимо указать объект класса <xref:System.Workflow.Activities.ChannelToken>. Объект класса <xref:System.Workflow.Activities.ChannelToken> определяет конфигурацию конечной точки действия отправки, которую оно предполагает использовать для подключения к службе рабочего процесса.
+После перетаскивания **SendActivity** действия из области элементов в область конструктора рабочих процессов импортировать существующий контракт. Определить, какая операция вызывается из того, что **SendActivity** действия. Выберите контракт и ее операции с помощью [выберите операцию диалоговое окно (для прежних версий)](../workflow-designer/choose-operation-dialog-box-legacy.md).
 
-### <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Вызов операции контракта WCF из действия SendActivity
+Кроме того, если вы используете файл конфигурации в службе, необходимо указать <xref:System.Workflow.Activities.ChannelToken>. Объект класса <xref:System.Workflow.Activities.ChannelToken> определяет конфигурацию конечной точки действия отправки, которую оно предполагает использовать для подключения к службе рабочего процесса.
+
+## <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Вызов операции контракта WCF из действия SendActivity
 
 1.  Дважды щелкните **SendActivity** действия в конструкторе или нажмите кнопку с многоточием рядом с **ServiceOperationInfo** свойство в **свойства** области.
 
@@ -35,13 +38,13 @@ ms.lasthandoff: 04/16/2018
 
 5.  В разделе **доступные операции**, выберите операцию, необходимо вызвать и нажмите кнопку **ОК**.
 
-### <a name="to-specify-a-channel-token"></a>Определение маркера канала
+## <a name="to-specify-a-channel-token"></a>Определение маркера канала
 
 1.  Выделите действие <xref:System.Workflow.Activities.SendActivity> в конструкторе.
 
 2.  В **свойства** области, укажите имя для <xref:System.Workflow.Activities.ChannelToken>. Имя однозначно идентифицирует маркер канала.
 
-3.  Раскройте узел маркера канала и введите имя для клиентской конечной точки в поле <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>, которую предполагается использовать. Для конфигурации канала будет использоваться конфигурация конечной точки с тем же именем в файле конфигурации.
+3.  Раскройте узел маркера канала и введите имя для клиентской конечной точки в поле <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>, которую предполагается использовать. Конфигурация конечной точки с тем же именем в файле конфигурации используется для настройки канала.
 
 4.  Создайте конфигурацию конечной точки в файле конфигурации, если она в нем не существует. Дополнительные сведения о настройке вашего клиента см. в разделе [Общие сведения о клиенте WCF](/dotnet/framework/wcf/wcf-client-overview).
 

@@ -1,7 +1,9 @@
 ---
-title: Создание проекта рабочего процесса | Документы Microsoft
+title: Конструктор рабочих процессов - Создание проекта рабочего процесса
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - Visual Studio 2010 Workflow Designer, creating a workflow project
@@ -12,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10805edce0379ae7bfd6666afc787690dd45689
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f65cc826b59e7ee5c0645a8c1204a193f58f001
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-workflow-project"></a>Создание проекта рабочего процесса
 
-Рабочие процессы, службы рабочего процесса [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)], настраиваемые действия и настраиваемые конструкторы действий можно создавать с помощью шаблонов проектов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В этом разделе описано создание библиотек и приложений с помощью шаблонов проектов, доступных в среде [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+Рабочие процессы, службы рабочих процессов Windows Communication Foundation (WCF), пользовательских действий и конструкторов настраиваемых действий могут создаваться с помощью шаблонов проектов Visual Studio. В этом разделе описывается создание библиотек и приложений с шаблонами проектов, доступные в Visual Studio.
 
-В первых четырех перечисленных ниже разделах описывается использование шаблонов рабочих процессов, найденных на **новый проект** окна. Эти шаблоны доступны, открыв [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] и выбрав **файл** -> **New** -> **проекта...** , то **рабочего процесса** категории из **установленные шаблоны** раздел в левой части экрана, в рамках одного **Visual Basic** или **Visual C#** узла.
+В первых четырех перечисленных ниже разделах описывается использование шаблонов рабочих процессов, найденных на **новый проект** окна. Эти шаблоны доступны, открыв Visual Studio 2010 и выбрав **файл** > **New** > **проекта**, то  **Рабочий процесс** категории из **установленные шаблоны** раздел в левой части экрана, в рамках одного **Visual Basic** или **Visual C#** узла.
 
-В последнем разделе описывается, как добавлять действия рабочего процесса, конструкторы, службы и другие элементы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в существующий проект рабочего процесса или другой проект.
+В последнем разделе описывается добавление действий рабочего процесса, конструкторы и служб и других элементов, существующий рабочий процесс (или другое) проекта Visual Studio.
 
 ## <a name="related-sections"></a>Связанные разделы
 

@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Использование точек останова в отладчике Visual Studio
 Если необходимо остановить выполнение отладчика, например, чтобы увидеть состояние переменных кода или просмотреть стек вызовов, можно установить точки останова. Точка останова — один из важнейших инструментов разработчика для выполнения отладки.  
@@ -247,8 +247,7 @@ ms.lasthandoff: 04/18/2018
 |**$PNAME**|Имя процесса|  
 |**$TID**|Идентификатор потока|  
 |**$TNAME**|Имя потока|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|Счетчик фиксирует (из Windows `GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Метки точки останова  
  Метки точек останова используются только в окне **Точки останова** . Они служат для сортировки и фильтрации списка точек останова. Для добавления метки к точке останова выберите строку точки останова, затем в контекстном меню выберите команду **Метка** .  

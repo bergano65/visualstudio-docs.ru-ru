@@ -1,7 +1,9 @@
 ---
-title: Отладка рабочих процессов прежних версий | Документы Microsoft
+title: Конструктор рабочих процессов - отладка рабочих процессов прежних версий
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>Отладка рабочих процессов прежних версий
 
-Если вы используете конструктор рабочих процессов прежних версий Windows в [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] для построения [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] приложений, предназначенных для платформы.NET Framework 3.0 или 3.5, можно отлаживать рабочие процессы, как и любой другой программе, задание точек останова, присоединения к процессам и проверив потоков и стека вызова. Кроме того, существует возможность удаленной отладки.
+При использовании конструктора рабочих процессов прежних версий Windows в Visual Studio для создания приложений Windows Workflow Foundation (WF), предназначенных для платформы.NET Framework 3.0 или 3.5, можно отлаживать рабочие процессы, как и любой другой программе, задание точек останова, присоединения к процессам, и оценки потоков и стека вызовов. Кроме того, существует возможность удаленной отладки.
 
 > [!NOTE]
 > Если на компьютере было установлено и удалено несколько версий Visual Studio, отладка WF3 может завершиться ошибкой по одной из следующих причин.
@@ -32,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 >
 > Если один из этих сценариев возникает при отладке рабочего процесса .NET Framework 3.0 или 3.5, выполните исправление установки Visual Studio.
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] интегрируется со следующими стандартными окнами отладки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
+ Windows Workflow Foundation интегрируется со следующими стандартными окнами отладки Visual Studio:
 
 -   **Точка останова**: работает, как предполагалось, но задавать действия для имени функции.
 

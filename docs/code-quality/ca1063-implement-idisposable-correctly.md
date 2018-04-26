@@ -1,6 +1,7 @@
 ---
 title: 'CA1063: следует правильно реализовывать IDisposable'
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: следует правильно реализовывать IDisposable
 
@@ -60,21 +61,21 @@ ms.lasthandoff: 04/19/2018
 
 Проверьте код и определите, какой из указанных ниже способов для устранения нарушения.
 
-- Удалите IDisposable из списка интерфейсов, которые реализуются {0} и вместо него переопределите реализацию базового класса Dispose.
+- Удалите IDisposable из списка интерфейсов, реализуемых {0} и вместо него переопределите реализацию базового класса Dispose.
 
 - Удалите метод завершения из типа {0}, переопределите Dispose (bool disposing) и поместите логику завершения в ветвь кода, где «disposing» равно false.
 
 - Удалить {0}, переопределите Dispose (bool disposing) и поместите логику освобождения в ветвь кода, где «disposing» равно true.
 
-- Убедитесь, что этот {0} объявлен как открытый и запечатанный.
+- Убедитесь, что {0} объявлен как открытый и запечатанный.
 
-- Переименуйте {0} на «Dispose» и убедитесь, что он объявлен как открытый и запечатанный.
+- Переименование {0} на «Dispose» и убедитесь, что он объявлен как открытый и запечатанный.
 
-- Убедитесь в том, что этот {0} объявлен как защищенный, виртуальный и незапечатанный.
+- Убедитесь, что {0} объявлен как защищенный, виртуальный и распечатанный.
 
-- Измените {0}, чтобы он вызывал Dispose(true), затем вызывает GC. SuppressFinalize для текущего экземпляра объекта («this» или «Me» в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), а затем возвращает.
+- Изменить {0} , чтобы он вызывал Dispose(true), затем вызывает GC. SuppressFinalize для текущего экземпляра объекта («this» или «Me» в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), а затем возвращает.
 
-- Измените {0}, чтобы он вызывал Dispose(false) и затем возвращает.
+- Изменить {0} , чтобы он вызывал Dispose(false) и затем возвращает.
 
 - Если создается незапечатанный тип, который объявляет и реализует интерфейс IDisposable, убедитесь, что реализация IDisposable строятся по схеме, описанной ранее в этом разделе.
 

@@ -1,9 +1,9 @@
 ---
-title: Учебник 1. Создание приложения для просмотра рисунков | Microsoft Docs
+title: Учебное руководство 1. Создание приложения для просмотра рисунков
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Учебное руководство 1. Создание приложения для просмотра рисунков
 В этом руководстве выполняется создание программы, которая загружает изображение из файла и отображает его в окне. Изучается процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Выполняется настройка свойств элементов управления. Изучается использование контейнеров для согласованного изменения размеров формы. Также начинается создание кода. Вы научитесь:  
-  
+
 -   Создайте новый проект.  
-  
+
 -   Тестировать (выполнить отладку) приложения.  
-  
+
 -   Добавлять в форму основные элементы управления, например, флажки и кнопки.  
-  
+
 -   Размещать элементы управления в форме с помощью разметки.  
-  
+
 -   Добавлять в форму диалоговые окна **Открыть файл** и **Цвет**.  
-  
+
 -   Создавать код с помощью IntelliSense и фрагментов кода.  
-  
+
 -   Создавать методы обработчика событий.  
-  
+
  В результате ваша программа будет выглядеть так, как показано на следующем рисунке.  
-  
+
  ![Изображение результата, создаваемого в этом учебнике](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Изображение результата, создаваемого в этом учебнике  
-  
+
  Загрузить готовую версию примера можно на странице [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Полный пример учебного руководства по созданию приложения для просмотра рисунков).  
-  
+
  ![Ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этого раздела см. на следующих страницах: [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) или [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
-  
+
 > [!NOTE]
 >  Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.  
 >   
 >  Чтобы просмотреть код на Visual Basic, перейдите на вкладку **VB** в верхней части блока кода; чтобы просмотреть код на Visual C#, перейдите на вкладку **C#**. Если вас интересует изучение Visual C++, см. раздел [Начало работы](../ide/getting-started-with-cpp-in-visual-studio.md) и [учебник по языку C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Если вы хотите узнать в том, как писать приложения UWP на Visual C# или Visual Basic, см. раздел [Создание приложений UWP](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>См. также  
-  
+
 |Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начало разработки программы с создания проекта приложения Windows Forms.|  

@@ -1,9 +1,9 @@
 ---
-title: Начало работы с Visual Basic в Visual Studio | Документы Майкрософт
+title: Начало работы с Visual Basic в Visual Studio
 ms.custom: ''
 ms.date: 12/08/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,32 +13,44 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Начало работы с Visual Basic в Visual Studio
+
 В этом учебнике по Visual Basic вы используете среду Visual Studio для создания и запуска нескольких разных консольных приложений. В процессе работы вы ознакомитесь с некоторыми возможностями [интегрированной среды разработки (IDE)](visual-studio-ide.md) Visual Studio.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
 
 ## <a name="before-you-begin"></a>Подготовка к работе
+
 Ниже приведен краткий список вопросов и ответов, с помощью которого вы сможете ознакомиться с некоторыми основными понятиями.
+
 ### <a name="what-is-visual-basic"></a>Что такое Visual Basic?
+
 Visual Basic — это типобезопасный язык программирования, который прост в изучении. Он является производным от языка BASIC (Beginner's All-purpose Symbolic Instruction Code — универсальный код символических инструкций для начинающих).
+
 ### <a name="what-is-visual-studio"></a>Что такое Visual Studio?
-Visual Studio — это интегрированный набор средств разработки. Его можно рассматривать как программу для создания приложений.  
+
+Visual Studio — это интегрированный набор средств разработки. Его можно рассматривать как программу для создания приложений.
+
 ### <a name="what-is-a-console-app"></a>Что такое консольное приложение?
+
 Консольное приложение принимает входные данные и выводит результаты в окне командной строки, также называемом консолью.
+
 ### <a name="what-is-net-core"></a>Что такое .NET Core?
+
 .NET Core — это дальнейший этап развития платформы .NET Framework. В то время как платформа .NET Framework позволяла использовать один и тот же код в средах разных языков программирования, в .NET Core появилась возможность использовать один и тот же код на разных платформах. Более того, это платформа с открытым кодом. (Как .NET Framework, так и .NET Core включают в себя готовые библиотеки, предоставляющие определенные функциональные возможности, а также среду CLR, которая выступает в роли виртуальной машины для выполнения кода.)
 
 ## <a name="start-developing"></a>Начало разработки
+
 Готовы приступить к разработке? Вперед!
 
 ### <a name="create-a-project"></a>Создание проекта
+
 Сначала мы создадим проект приложения Visual Basic. Для этого типа проекта уже имеются все нужные файлы шаблонов, что избавляет вас от лишней работы.
 
 1. Откройте Visual Studio 2017.
@@ -62,11 +74,13 @@ Visual Studio — это интегрированный набор средст
    ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Способ 2. Меню "Сервис"
+
 1. Закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты...**.
 
 2. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.   
 
 ## <a name="create-a-what-is-your-name-application"></a>Создание приложения для запроса имени
+
 Давайте создадим приложение, которое запрашивает имя пользователя, а затем выводит его вместе с датой и временем. Это делается так.
 
 1. Откройте проект *WhatIsYourName*, если он еще не открыт.
@@ -93,6 +107,7 @@ Visual Studio — это интегрированный набор средст
 5. Для закрытия консольного окна нажмите любую клавишу.
 
 ## <a name="create-a-calculate-this-application"></a>Создание приложения "Калькулятор"
+
 1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект...**.
 
 2. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *CalculateThis*.  
@@ -123,6 +138,7 @@ Visual Studio — это интегрированный набор средст
     ![Окно консоли с приложением CaluculateThis, включая предложения выполнить действия.](../ide/media/vb-console-calculate-this.png)
 
 ## <a name="next-steps"></a>Следующие шаги
+
 Поздравляем с завершением этого учебника! Дополнительные сведения о Visual Basic и интегрированной среде разработки Visual Studio см. на следующих страницах:
 
 * [Руководство по Visual Basic](/dotnet/visual-basic/index)

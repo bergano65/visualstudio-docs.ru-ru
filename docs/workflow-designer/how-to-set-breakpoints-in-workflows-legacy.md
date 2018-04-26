@@ -1,7 +1,9 @@
 ---
-title: 'Способ: Установите точки останова в рабочих процессах (для прежних версий) | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: установить точки останова в рабочих процессах (для прежних версий)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Как задать точки останова в рабочих процессах (для прежних версий)
-Описывается, как установить точки останова в [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] построение приложений с помощью конструктора рабочих процессов прежних версий Windows. Используйте средство [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий, если приложение [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] должно ориентироваться на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- При использовании средства [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий в среде [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] для построения приложения [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] точки останова в коде на языке C# или Visual Basic можно задавать так же, как в Visual Studio. Как ожидалось, выполнение рабочего процесса останавливается в каждой заданной точке останова.
+Описывается, как установить точки останова в Windows Workflow Foundation (WF) построение приложений с помощью конструктора рабочих процессов прежних версий Windows. Используйте конструктор прежних версий рабочего процесса, когда приложению Windows Workflow Foundation для целевой платформы .NET Framework 3.5 или WinFX.
+
+ При использовании конструктора рабочих процессов прежних версий в Visual Studio 2010 для создания приложений Windows Workflow Foundation, можно установить точки останова в C# и Visual Basic кода, как в Visual Studio. Как ожидалось, выполнение рабочего процесса останавливается в каждой заданной точке останова.
 
  Точка останова имеет три состояния: *ожидающие*, *привязан*, и *ошибка*. При установке точки останова она имеет состояние Ожидание, которое представлено пустым красным значком. Когда среда выполнения загружает тип рабочего процесса, выполняется переход в состояние Привязка, которое представлено сплошным красным значком. Если задать неправильный формат для точки останова, как для неправильного имени действия, появляется окно сообщений об ошибке. Точка останова останется в окне точек останова, но будет отмечена маленьким «х».
 

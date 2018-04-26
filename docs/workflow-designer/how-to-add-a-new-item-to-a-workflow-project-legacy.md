@@ -1,7 +1,9 @@
 ---
-title: 'Как: Добавление нового элемента в проект рабочего процесса (для прежних версий) | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: Добавление нового элемента в проект рабочего процесса (для прежних версий)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Как добавить новый элемент в проект рабочего процесса (для прежних версий)
-После создания проекта рабочего процесса, в конструкторе рабочих процессов прежних версий Windows, предоставляемые с помощью [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] , ориентированного [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], можно добавить [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] элементы и другие знакомые [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] элементы к вашей проект.
 
- В следующей таблице перечислены элементы [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)], которые можно добавлять в проект рабочего процесса.
+После создания проекта рабочего процесса с помощью средства, предоставляемые Visual Studio 2010 конструктора рабочих процессов Windows, предназначенным WinFX или .NET Framework версии 3.5, можно добавить элементы Windows Workflow Foundation (WF) и другие знакомые Visual Studio элементы проекта.
+
+В следующей таблице перечислены элементы Windows Workflow Foundation, которые можно добавлять в проект рабочего процесса.
 
 |Элемент|Описание|
 |----------|-----------------|
@@ -33,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 |Рабочий процесс конечного автомата (код)|Рабочий процесс конечного автомата с определением рабочего процесса в файле с исходным кода конструктора и пользовательским кодом в отдельном файле кода.|
 |Рабочий процесс конечного автомата (с разделением кода)|Рабочий процесс конечного автомата с определением рабочего процесса, выраженном в виде разметки рабочего процесса и пользовательским кодом в отдельном файле кода.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Добавление нового элемента в проект рабочего процесса
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Добавление нового элемента в проект рабочего процесса
 
 1.  На **проекта** меню, нажмите кнопку **добавить новый элемент**.
 

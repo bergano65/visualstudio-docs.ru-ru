@@ -1,18 +1,20 @@
 ---
-title: Конструкторы действий потока управления | Документы Microsoft
+title: Конструктор рабочих процессов - конструкторы действия управления потоком
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b464f141dcda624c293a5abd5065a3263738932
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="control-flow-activity-designers"></a>Конструкторы действия управления потоком
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="related-sections"></a>Связанные разделы
 
-Сведения о других типах конструкторов действий см. в следующих подразделах.
+Для других типах конструкторов действий см. в следующих разделах:
 
  [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)
 

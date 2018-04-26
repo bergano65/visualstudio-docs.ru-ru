@@ -1,6 +1,6 @@
 ---
-title: Дополнительные сведения для отладки - Visual Studio | Документы Microsoft
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+title: Начало работы с отладчиком
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3501f3e94fdb9b98aefc96d7a1e2fe12b4117fbb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="learn-to-debug-using-visual-studio"></a>Дополнительные сведения для отладки с помощью Visual Studio
+# <a name="tutorial-learn-to-debug-using-visual-studio"></a>Учебник: Дополнительные сведения для отладки с помощью Visual Studio
 
 Этот раздел знакомит с возможностями отладчика Visual Studio в пошаговое руководство. Если требуется полное представление о возможности отладчика, в разделе [Обзор возможностей отладчика](../debugger/debugger-feature-tour.md).
 

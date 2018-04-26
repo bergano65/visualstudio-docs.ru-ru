@@ -12,14 +12,15 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 166b11eaa1e4899547e6bb0735b0a220adc6e694
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-and-configure-tableadapters"></a>Создайте и настройте адаптеры таблиц TableAdapter
 Адаптеры таблиц обеспечивают связь между приложением и базой данных. Подключении к базе данных, выполнения запросов или хранимых процедур и возвращают новые данные таблицы или заполнения существующего <xref:System.Data.DataTable> возвращенными данными. Адаптеры таблиц можно также отправлять обновленные данные из приложения в базе данных.

@@ -1,9 +1,9 @@
 ---
-title: Страница "Службы" в конструкторе проектов | Документы Майкрософт
-ms.custom: ''
+title: Страница "Службы" в конструкторе проектов
 ms.date: 01/18/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37d6b448ea7ce3a8662d0372cf61b35363f4648
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 320c1d89713aaa17fd883c90d86cdf4874d75e60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="services-page-project-designer"></a>Страница "Службы" в конструкторе проектов
 
@@ -30,44 +30,54 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="task-list"></a>список задач
 
-[Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
+[Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
- **Конфигурация**  
- Этот элемент управления нельзя изменить на этой странице. Описание этого элемента управления см. в разделе [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) или [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Платформа**  
- Этот элемент управления нельзя изменить на этой странице. Описание этого элемента управления см. в разделе [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) или [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Включить службы клиентских приложений**  
- Выберите, чтобы включить службы клиентских приложений. Требуется указать расположения служб на странице **Службы**, чтобы использовать службы клиентских приложений.  
-  
- **Использование проверки подлинности Windows**  
- Указывает, что поставщик проверки подлинности будет использовать проверку подлинности Windows, то есть удостоверение, предоставленное операционной системой Windows.  
-  
- **Использовать проверку подлинности с помощью форм**  
- Указывает, что поставщик проверки подлинности будет использовать проверку подлинности с помощью форм. Это означает, что приложение должно предоставить пользовательский интерфейс для входа. Дополнительные сведения см. в разделе [Практическое руководство. Реализация входа пользователя с помощью служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).  
-  
- **Местонахождение службы аутентификации**  
- Используется только для проверки подлинности на основе форм. Задает расположение службы проверки подлинности.  
-  
- **Дополнительно. Поставщик учетных данных**  
- Используется только для проверки подлинности на основе форм. Указывает реализацию <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, которую служба аутентификации будет использовать для вывода диалогового окна входа в систему, если приложение вызывает метод `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> и передает пустые строки или `null` в качестве параметров. Если оставить это поле пустым, необходимо передать допустимое имя пользователя и пароль в метод <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Поставщиков учетных данных следует задать как имя типа с указанием сборки. Дополнительные сведения см. в разделах <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> и [Имена сборок](/dotnet/framework/app-domains/assembly-names). В простейшем виде имя типа сборки выглядит примерно так: `MyNamespace.MyLoginClass, MyAssembly`  
-  
- **Местонахождение службы ролей**  
- Указывает расположение службы ролей.  
-  
- **Местонахождение службы веб-параметров**  
- Указывает расположение службы профилей (веб-параметры).  
-  
- **Дополнительно**  
- Открывает диалоговое окно [Дополнительные параметры служб](../../ide/reference/advanced-settings-for-services-dialog-box.md), с помощью которого можно переопределить поведение по умолчанию. Например, с его помощью можно задать базу данных для автономного хранилища вместо использования локальной файловой системы. Дополнительные сведения см. в разделе [Расширенные параметры для диалогового окна служб](../../ide/reference/advanced-settings-for-services-dialog-box.md).  
-  
+ **Конфигурация**
+
+ Этот элемент управления нельзя изменить на этой странице. Описание этого элемента управления см. в разделе [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) или [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Платформа**
+
+ Этот элемент управления нельзя изменить на этой странице. Описание этого элемента управления см. в разделе [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) или [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Включить службы клиентских приложений**
+
+ Выберите, чтобы включить службы клиентских приложений. Требуется указать расположения служб на странице **Службы**, чтобы использовать службы клиентских приложений.
+
+ **Использование проверки подлинности Windows**
+
+ Указывает, что поставщик проверки подлинности будет использовать проверку подлинности Windows, то есть удостоверение, предоставленное операционной системой Windows.
+
+ **Использовать проверку подлинности с помощью форм**
+
+ Указывает, что поставщик проверки подлинности будет использовать проверку подлинности с помощью форм. Это означает, что приложение должно предоставить пользовательский интерфейс для входа. Дополнительные сведения см. в разделе [Практическое руководство. Реализация входа пользователя с помощью служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+
+ **Местонахождение службы аутентификации**
+
+ Используется только для проверки подлинности на основе форм. Задает расположение службы проверки подлинности.
+
+ **Дополнительно. Поставщик учетных данных**
+
+ Используется только для проверки подлинности на основе форм. Указывает реализацию <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, которую служба аутентификации будет использовать для вывода диалогового окна входа в систему, если приложение вызывает метод `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> и передает пустые строки или `null` в качестве параметров. Если оставить это поле пустым, необходимо передать допустимое имя пользователя и пароль в метод <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Поставщиков учетных данных следует задать как имя типа с указанием сборки. Дополнительные сведения см. в разделах <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> и [Имена сборок](/dotnet/framework/app-domains/assembly-names). В простейшем виде имя типа сборки выглядит примерно так: `MyNamespace.MyLoginClass, MyAssembly`
+
+ **Местонахождение службы ролей**
+
+ Указывает расположение службы ролей.
+
+ **Местонахождение службы веб-параметров**
+
+ Указывает расположение службы профилей (веб-параметры).
+
+ **Дополнительно**
+
+ Открывает диалоговое окно [Дополнительные параметры служб](../../ide/reference/advanced-settings-for-services-dialog-box.md), с помощью которого можно переопределить поведение по умолчанию. Например, с его помощью можно задать базу данных для автономного хранилища вместо использования локальной файловой системы. Дополнительные сведения см. в разделе [Расширенные параметры для диалогового окна служб](../../ide/reference/advanced-settings-for-services-dialog-box.md).
+
 ## <a name="see-also"></a>См. также
 
-[Службы клиентских приложений](/dotnet/framework/common-client-technologies/client-application-services)   
-[Диалоговое окно "Дополнительные параметры служб"](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
-[Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
-[Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
-[Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
+- [Службы клиентских приложений](/dotnet/framework/common-client-technologies/client-application-services)
+- [Диалоговое окно "Дополнительные параметры служб"](../../ide/reference/advanced-settings-for-services-dialog-box.md)
+- [Практическое руководство. Настройка служб клиентских приложений](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)

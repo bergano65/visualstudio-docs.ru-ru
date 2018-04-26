@@ -1,7 +1,9 @@
 ---
-title: Использование конструкторов действий | Документы Microsoft
+title: Конструктор рабочих процессов - использование конструкторов действий
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
 - Visual Studio 2010 Workflow Designer [WFD], activity designer
@@ -11,19 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d246c7d88df588cfc47950bab20011d697c7175f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8dfab116d7c4d3882b4b35322a24af90f3842211
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-activity-designers"></a>Использование конструкторов действий
+
 Конструктор рабочих процессов Windows включает в себя несколько предоставляемых системой действий, которые можно использовать при создании действий и рабочих процессов. В этом разделе описываются категории системных действий и их конструкторы, которые доступны как системные функции. Темы индивидуальных действий и их соответствующих конструкторов внутри каждой из этих категорий описывают, что эти действия могут предпринять и предоставить руководство, как их следует использовать.
 
 ## <a name="reference"></a>Ссылка
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>
+
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategory>
 
 ## <a name="related-sections"></a>Связанные разделы
+
  [Использование конструктора рабочих процессов](../workflow-designer/using-the-workflow-designer.md)
 
  [Отладка рабочих процессов с помощью конструктора рабочих процессов](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

@@ -1,7 +1,9 @@
 ---
-title: 'Как: создать условие декларативного правила (для прежних версий) | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: создать условие декларативного правила (для прежних версий)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Как создать условие декларативного правила (для прежних версий)
-В этом разделе описывается объявление условия правила с помощью конструктора рабочих процессов прежних версий Windows, предназначенное [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Условный оператор оценивает значение **True** или **False**. Условие декларативного правила — условный оператор, который создается с помощью [условие редактора диалогового окна правила (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) и хранятся в виде XML с рабочим процессом. Он может включать предикаты, которые сравнивают состояние рабочего процесса и булеву алгебру, в которой объединено множество предикатов.
+В этом разделе описывается способ объявления условие правила с помощью конструктора рабочих процессов прежних версий Windows, предназначенное для .NET Framework версии 3.5 или WinFX.
 
- Условия декларативного правила используются в следующих готовых действиях Windows Workflow Foundation:
+Условный оператор оценивает значение **True** или **False**. Условие декларативного правила — условный оператор, который создается с помощью [условие редактора диалогового окна правила (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) и хранятся в виде XML с рабочим процессом. Он может включать предикаты, которые сравнивают состояние рабочего процесса и булеву алгебру, в которой объединено множество предикатов.
+
+Условия декларативного правила используются в следующих готовых действиях Windows Workflow Foundation:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Для создания условия декларативного правила используется Редактор условий для правил
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Для создания условия декларативного правила используется Редактор условий для правил
 
 1.  В действии **свойства** окно, нажмите кнопку **условие** свойство или **UntilCondition** свойства, в зависимости от активности.
 

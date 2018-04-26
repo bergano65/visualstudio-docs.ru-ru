@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ced29b2936f8bec00df3907ffaf54bd06c32ad80
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 Доменный язык (DSL) создает API, который можно использовать для чтения и обновления экземпляров DSL в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Этот API определяется в коде, созданном из определения DSL. В этом разделе описывается созданный API.

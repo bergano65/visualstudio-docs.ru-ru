@@ -1,9 +1,9 @@
 ---
-title: Учебное руководство 3. Создание игры "Подбери пару!" | Документы Майкрософт
+title: Учебник 3. Создание игры "Подбери пару!"
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -11,39 +11,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d0e538304e2d9c3fb5ca71747fd1ed2ab2a5fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Учебник 3. Создание игры "Подбери пару!"
 В этом учебном руководстве вы создадите игру "Подбери пару!", в которой игрок должен подобрать пару скрытым значкам. Вы научитесь:  
-  
+
 -   сохранять объекты, например значки, в объекте `List`;  
-  
+
 -   использовать цикл `foreach` в Visual C# или цикл `For Each` в Visual Basic для перебора элементов в списке;  
-  
+
 -   отслеживать состояние формы с помощью ссылочных переменных;  
-  
+
 -   создавать обработчик событий, который можно использовать для нескольких объектов;  
-  
+
 -   создавать таймер, который отсчитывает время и вызывает событие ровно один раз после запуска.  
-  
+
  После прохождения этого учебного руководства ваша программа будет выглядеть так, как показано на следующем рисунке.  
-  
+
  ![Игра, которую вы создадите в этом руководстве](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 Игра, которую вы создадите в этом учебном руководстве  
-  
+
  Скачать готовую версию примера можно на странице [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Полный пример руководства по созданию игры "Подбери пару!").  
-  
+
 > [!NOTE]
 >  В этом учебном руководстве показаны примеры, как на Visual C#, так и на Visual Basic, поэтому обратите внимание на информацию, которая относится к используемому вами языку программирования.  
-  
+
  Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [Форум Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) и [Форум Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Кроме того, вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на языке Visual Basic см. в разделе [Основы Visual Basic: разработка для начинающих](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на языке Visual C# см. в разделе [Основы Visual C#: разработка для начинающих](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
-  
+
 ## <a name="related-topics"></a>См. также  
-  
+
 |Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Шаг 1. Создание проекта и добавление таблицы в форму](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Начните с создания проекта и добавления элемента управления `TableLayoutPanel`, чтобы все элементы управления были правильно выровнены.|  

@@ -1,5 +1,6 @@
 ---
-title: Отладка с использованием управляемого кода, с помощью отладчика Visual Studio | Документы Microsoft
+title: Отладка управляемого кода | Документы Microsoft
+description: Отладка C# или Visual Basic, с помощью отладчика Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e209ef4385466be1009b19dde850751695344afe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Отладка с использованием управляемого кода, с помощью отладчика Visual Studio
+# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Краткое руководство: Отладка с использованием управляемого кода, с помощью отладчика Visual Studio
 
 Отладчик Visual Studio предоставляет множество мощные средства для отладки приложений. В этой статье вы ознакомитесь с некоторыми основными возможностями.
 

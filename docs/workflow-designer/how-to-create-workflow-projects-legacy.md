@@ -1,7 +1,9 @@
 ---
-title: 'Как: Создание проектов рабочих процессов (для прежних версий) | Документы Microsoft'
+title: 'Конструктор рабочих процессов - как: Создание проектов рабочих процессов (для прежних версий)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb5d58c6d450a5e68d804e33785ec76349bfb6d8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Как создавать проекты рабочих процессов (для прежних версий)
-Выполните следующие шаги для создания проекта [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], ориентированного на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Эта процедура использует конструктор прежних версий рабочего процесса Windows, предоставляемые [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
 
-### <a name="to-create-a-workflow-project"></a>Создание проекта рабочего процесса
+Выполните следующие действия для создания проекта Windows Workflow Foundation (WF), предназначенного для .NET Framework версии 3.5 или WinFX. Эта процедура использует конструктор прежних версий рабочего процесса Windows, предоставляемые Visual Studio 2010.
 
-1.  Запустите [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)].
+## <a name="to-create-a-workflow-project"></a>Создание проекта рабочего процесса
+
+1.  Запустите Visual Studio.
 
 2.  В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
 
@@ -31,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 3.  Выберите либо **.NET Framework 3.0** параметр или **.NET Framework 3.5** вариант в раскрывающемся списке в верхней части **новый проект** окно, чтобы открыть конструктор прежних версий.
 
     > [!NOTE]
-    > Параметр по умолчанию в [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] — **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], работающих на платформе [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)], и не использует конструктор прежних версий.
+    > Значение по умолчанию в Visual Studio 2010 — **.NET Framework 4**. Этот параметр используется для создания приложений Windows Workflow Foundation (WF), предназначенных для .NET Framework 4 и не использует конструктор прежних версий.
 
 4.  В **типы проектов** панели выберите проекты Visual C# или проекты Visual Basic, а затем выберите **рабочего процесса**.
 

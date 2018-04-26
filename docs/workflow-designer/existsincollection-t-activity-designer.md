@@ -1,7 +1,9 @@
 ---
-title: ExistsInCollection&lt;T&gt; конструктора | Документы Microsoft
+title: Конструктор рабочих процессов - ExistsInCollection&lt;T&gt; конструктора действий
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6175fdc9c0af417acb8bcfe9d4297172b31a2e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; конструктора действий
+# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > конструктора действий
+
 **ExistsInCollection\<T >** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.ExistsInCollection%601> действия.
 
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection < T\> действия
+## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > действия
  Операция <xref:System.Activities.Statements.ExistsInCollection%601> определяет, существует ли указанный объект в заданной коллекции.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>С помощью ExistsInCollection\<T > конструктора действий
- **ExistsInCollection\<T >** конструктора действий можно найти в **коллекции** категории **элементов**, который нажав  **Панель элементов** вкладке [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+ **ExistsInCollection\<T >** конструктора действий можно найти в **коллекции** категории **элементов**, который нажав  **Панель элементов** конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **ExistsInCollection\<T >** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] , везде, где обычно размещаются действия, такие как внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.ExistsInCollection%601> действия по умолчанию <xref:System.Activities.Activity.DisplayName%2A> из ExistsInCollection < Int32\>. (По умолчанию *TypeArgument* — **Int32**. Изменяется в таблице свойств.)  <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **ExistsInCollection < T\>**  конструктора или в **DisplayName** поле сетки свойств. Другие свойства следует изменять в таблице свойств.
+ **ExistsInCollection\<T >** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия, например внутрь <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.ExistsInCollection%601> действия по умолчанию <xref:System.Activities.Activity.DisplayName%2A> из ExistsInCollection < Int32\>. (По умолчанию *TypeArgument* — **Int32**. Изменяется в таблице свойств.)  <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **ExistsInCollection < T\>**  конструктора или в **DisplayName** поле сетки свойств. Другие свойства следует изменять в таблице свойств.
 
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection < T\> свойства
+### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > Свойства
  В следующей таблице показаны свойства <xref:System.Activities.Statements.ExistsInCollection%601> и описано их использование в конструкторе.
 
 |Имя свойства|Обязательно|Использование|

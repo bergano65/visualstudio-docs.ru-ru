@@ -1,7 +1,9 @@
 ---
-title: Параллельное действие конструктора | Документы Microsoft
+title: Конструктор рабочих процессов - конструктор действия Parallel
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
@@ -10,29 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1c3f24af736dfd3762de7942ba1f52442dfd20c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c2315c27bc0a35ac1dc839b5fd98003105d92bd4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="parallel-activity-designer"></a>Конструктор действия Parallel
+
 Действие <xref:System.Activities.Statements.Parallel> выполняет коллекцию дочерних действий параллельно.
 
 ## <a name="the-parallel-activity"></a>Действие Parallel
- Действие <xref:System.Activities.Statements.Parallel> хранит свои дочерние действия в коллекции <xref:System.Activities.Statements.Parallel.Branches%2A>. Используйте действие <xref:System.Activities.Statements.Parallel> вместо действия <xref:System.Activities.Statements.Sequence>, если некоторые дочерние действия могут перейти в состояние бездействия.
 
- Действие <xref:System.Activities.Statements.Parallel> имеет свойство <xref:System.Activities.Statements.Parallel.CompletionCondition%2A>, содержащее указанное пользователем выражение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждого участка кода. Если значение равно **True**, то <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других участков кода. Если <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> не вычисляется **True**, то <xref:System.Activities.Statements.Parallel> завершается после того, все его дочерние действия будут завершены.
+Действие <xref:System.Activities.Statements.Parallel> хранит свои дочерние действия в коллекции <xref:System.Activities.Statements.Parallel.Branches%2A>. Используйте действие <xref:System.Activities.Statements.Parallel> вместо действия <xref:System.Activities.Statements.Sequence>, если некоторые дочерние действия могут перейти в состояние бездействия.
+
+<xref:System.Activities.Statements.Parallel> Действие имеет <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> свойство имеет значение, указанное выражение Visual Basic. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждого участка кода. Если значение равно **True**, то <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других участков кода. Если <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> не вычисляется **True**, то <xref:System.Activities.Statements.Parallel> завершается после того, все его дочерние действия будут завершены.
 
 ### <a name="using-the-parallel-activity-designer"></a>Использование конструктора действия Parallel
- **Параллельных** конструктора действий можно найти в **поток управления** категории **элементов**, который нажав **элементов**вкладка на левой стороне [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **Параллельных** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] поверхности везде, где обычно помещаются конструкторы, например, внутри **Последовательность** конструктора действий. После перетаскивания на [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], он создает <xref:System.Activities.Statements.Parallel> действия, которое по умолчанию содержит <xref:System.Activities.Activity.DisplayName%2A> из **параллельных**
+**Параллельных** конструктора действий можно найти в **поток управления** категории **элементов**, который нажав **элементов**вкладка в левой части конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- Чтобы добавить действие <xref:System.Activities.Statements.Parallel.Branches%2A> коллекцию действия parallel, перетащите какой-либо другой конструктор действия из **элементов** и поместите его на треугольник внутри **параллельных** конструктора действий. Треугольники обрамляют действия, которые содержатся в ветвях. Дополнительные действия можно добавить, применяя эту процедуру повторно. Порядок действия можно изменять с помощью перетаскивания их в **параллельных** конструктора действий.
+**Параллельных** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно помещаются конструкторы, например, внутри **Последовательность** конструктора действий. После помещения его в конструкторе рабочих процессов, он создает <xref:System.Activities.Statements.Parallel> действия, которое по умолчанию содержит <xref:System.Activities.Activity.DisplayName%2A> из **параллельных**
+
+Чтобы добавить действие <xref:System.Activities.Statements.Parallel.Branches%2A> коллекцию действия parallel, перетащите какой-либо другой конструктор действия из **элементов** и поместите его на треугольник внутри **параллельных** конструктора действий. Треугольники обрамляют действия, которые содержатся в ветвях. Дополнительные действия можно добавить, применяя эту процедуру повторно. Порядок действия можно изменять с помощью перетаскивания их в **параллельных** конструктора действий.
 
 ### <a name="parallel-activity-properties-in-the-workflow-designer"></a>Свойства действия Parallel в конструкторе рабочих процессов
- В следующей таблице показаны свойства действия Parallel, а также приводится описание их использования в конструкторе.
+
+В следующей таблице показаны свойства действия Parallel, а также приводится описание их использования в конструкторе.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

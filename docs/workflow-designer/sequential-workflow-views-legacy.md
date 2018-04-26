@@ -1,7 +1,9 @@
 ---
-title: Представления последовательных рабочих процессов (для прежних версий) | Документы Microsoft
+title: Конструктор рабочих процессов - представления последовательных рабочих процессов (для прежних версий)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Представления последовательных рабочих процессов (для прежних версий)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] предоставляет устаревший конструктора рабочих процессов Windows, который может использоваться для целевой [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] предоставляет способ создания с помощью графических средств приложений [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] с использованием знакомого пользовательского интерфейса [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Приложения [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] состоят из этапов рабочего процесса, называемых действиями. Создание рабочего процесса, компоновать действия в рабочей области конструирования, перетащив их соответствующие конструкторы из **элементов** на поверхность разработки.
+Visual Studio 2010 предоставляет конструктор, можно использовать для целевой платформы .NET Framework 3.5 или WinFX прежних версий рабочего процесса Windows.
 
- При создании последовательного рабочего процесса, который является [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), доступны три представления рабочего процесса. Эти представления доступны из **рабочего процесса** меню и в контекстном меню в области конструктора.
+В конструкторе рабочих процессов позволяет графически создания приложений Windows Workflow Foundation (WF), с помощью привычного интерфейса пользователя Visual Studio. Приложения Windows Workflow Foundation (WF) состоят из этапов рабочего процесса, называемых действиями. Создание рабочего процесса, компоновать действия в рабочей области конструирования, перетащив их соответствующие конструкторы из **элементов** на поверхность разработки.
 
- В следующей таблице перечислены имена и описание каждого представления.
+При создании последовательного рабочего процесса, который является [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), доступны три представления рабочего процесса. Эти представления доступны из **рабочего процесса** меню и в контекстном меню в области конструктора.
+
+В следующей таблице перечислены имена и описание каждого представления.
 
 |Параметры меню/вкладок|Описание|
 |----------------------|-----------------|
