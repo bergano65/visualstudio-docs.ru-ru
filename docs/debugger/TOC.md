@@ -295,6 +295,7 @@
 #### [Не удается присоединиться к процессу](unable-to-attach-to-the-process.md)
 #### [Диалоговое окно сообщения об ошибке "Изменить и продолжить"](edit-and-continue-error-message-dialog-box.md)
 #### [Ошибка: истекло время ожидания при вычислении функции "function", поэтому его требуется завершить небезопасным образом](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Ошибка: целевой процесс завершился с кодом "code" при вычислении функции "function"](error-evaluating-the-function-process-exited.md)
 #### [Ошибка: не удается подключиться к SQL Server на удаленном компьютере](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Ошибка. Не удается получить доступ к интерфейсу отладки SQL Server](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Ошибка: SQL не удается обнаружить компонент SSDEBUGPS](error-sql-can-t-find-ssdebugps.md)
