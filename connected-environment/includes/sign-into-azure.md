@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 502bd8d206b43fc219c850ab870db35e6c3af1c0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="sign-in-to-azure"></a>Вход в Azure
 Нам нужно будет войти в Azure, чтобы создать нашу среду разработки. В окне терминала введите следующую команду:
 ```cmd

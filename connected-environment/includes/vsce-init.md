@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 394e31bf0660557c1eba571006cacf213263c07e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-code-for-docker-and-kubernetes-development"></a>Инициализация кода для разработки с Docker и Kubernetes
 На данный момент у нас есть базовое веб-приложение, которое может выполняться локально. Теперь мы будем упаковывать его в контейнеры, создавая ресурсы, которые определяют контейнер приложения и способ его развертывания в Kubernetes. Это легко сделать в подключенной среде: 
 

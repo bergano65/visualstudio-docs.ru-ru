@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 78de57178350d4317896c41a455efbeeb553c58d
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="install-the-connected-environment-cli"></a>Установка интерфейса командной строки в подключенной среде
 Для подключенной среды требуется минимальная настройка локального компьютера. Большая часть конфигураций среды разработки хранится в облаке и используется совместно с другими пользователями.
 
