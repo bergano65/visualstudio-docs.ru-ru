@@ -1,39 +1,39 @@
 ---
-title: Практическое руководство. Добавление дополнительных сведений о коде с помощью __analysis_assume
+title: 'Как: укажите дополнительный код сведения с помощью _Analysis_assume'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
-- __analysis_assume
+- _Analysis_assume
 helpviewer_keywords:
-- __analysis_assume
+- _Analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 181f9fb4a1f9f5d653d64fb813b974bad898fe13
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Практическое руководство. Добавление дополнительных сведений о коде с помощью __analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Как: укажите дополнительный код сведения с помощью _Analysis_assume
 Возможность создания подсказок для средства анализа кода для кода C/C++, который будет помочь в процессе анализа и снижают количество предупреждений. Для предоставления дополнительных сведений, используйте следующую функцию:
 
- `__analysis_assume(`  `expr`  `)`
+ `_Analysis_assume(`  `expr`  `)`
 
  `expr` -любое выражение, которое предполагается, что принимает значение true.
 
  Средство анализа кода предполагает, что условие, представленный с помощью выражения является значение true, если в точке, где функции и сохраняет значение true, пока не будет изменено выражение, например, путем присваивания переменной.
 
 > [!NOTE]
->  `__analysis_assume` не влияет на оптимизацию кода. За пределами средство анализа кода `__analysis_assume` определяется как холостой.
+>  `_Analysis_assume` не влияет на оптимизацию кода. За пределами средство анализа кода `_Analysis_assume` определяется как холостой.
 
 ## <a name="example"></a>Пример
- В следующем коде используется `__analysis_assume` исправление предупреждения анализа кода [C6388](../code-quality/c6388.md):
+ В следующем коде используется `_Analysis_assume` исправление предупреждения анализа кода [C6388](../code-quality/c6388.md):
 
 ```
 #include<windows.h>
@@ -51,7 +51,7 @@ void test( )
 {
   char *pc = (char*)malloc(5);
   FreeAndNull(pc);
-  __analysis_assume(pc == NULL);
+  _Analysis_assume(pc == NULL);
   f(pc);
 }
 ```

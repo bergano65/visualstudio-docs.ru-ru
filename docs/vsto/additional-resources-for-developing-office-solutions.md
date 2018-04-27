@@ -2,8 +2,8 @@
 title: Дополнительные ресурсы для разработки решений Office | Документы Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1df1000196e271bb30ab4dd501569c12d33e0b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b34f32110af7d9c7e5aad079990b1c82c13d6370
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>Дополнительные ресурсы для разработки решений Office
   Инструменты разработчика Microsoft Office в Visual Studio представляют только один из множества способов расширения приложений Office. Приложения Office также имеют ряд встроенных функций, таких как форматы Open XML, с которыми нельзя работать с помощью Инструментов разработчика Office в Visual Studio. Также эти функции не освещены в данной документации.  
