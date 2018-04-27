@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 80392454c44ea491b3f082c11c0ff08e47029296
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 94839efcf8899c288c07de15a362b2c09d9ad13d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Работа с обозревателем доменного языка
 **Обозреватель DSL** отображает несколько типов данных в виде дерева. Дополнительные сведения о большинство элементов в обозреватель DSL. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
