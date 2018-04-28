@@ -2,8 +2,8 @@
 title: Связывание области формы с классом сообщений Outlook | Документы Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewFormRegionWizard.InvalidMessageClassName
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27797a6b7ec2a415daa525d8eb90c5bbfbe1f859
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3e3deeb55fb93b1a393d0489213f1d0e7acd85b
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associating a Form Region with an Outlook Message Class
   Можно указать, какие элементы Microsoft Office Outlook отображать область формы путем связывания области формы с классом сообщений каждого элемента. Например если вы хотите добавить в конец почтового элемента области формы, можно связать область формы с классом сообщений IPM. Обратите внимание, класс сообщений.  

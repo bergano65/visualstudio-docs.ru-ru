@@ -2,8 +2,8 @@
 title: Автоматизация Word с помощью расширенных объектов | Документы Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d639f1916799341c749164b32559b2ea3ba82428
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7452826ed0726f095a2ae6a8add12d8b07bd2e7
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="automating-word-by-using-extended-objects"></a>Автоматизация Word с помощью расширенных объектов
   При разработке решений Word в Visual Studio можно использовать *ведущие элементы* и *элементы управления ведущего приложения*в ваших решениях. Это объекты, которые расширяют некоторые часто используемые объекты в объектной модели Word (т. е. объектной модели, которая предоставляется основной сборкой взаимодействия для Word), такие как объекты <xref:Microsoft.Office.Interop.Word.Document> и <xref:Microsoft.Office.Interop.Word.ContentControl> . Расширенные объекты ведут себя как объекты Word, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных.  
