@@ -34,7 +34,7 @@
 #### [Указание времени и места применения примечания](specifying-when-and-where-an-annotation-applies.md)
 #### [Встроенные функции](intrinsic-functions.md)
 #### [Рекомендации и примеры (SAL)](best-practices-and-examples-sal.md)
-### [Добавление дополнительных сведений о коде с помощью __analysis_assume](how-to-specify-additional-code-information-by-using-analysis-assume.md)
+### [Добавление дополнительных сведений о коде с помощью _Analysis_assume](how-to-specify-additional-code-information-by-using-analysis-assume.md)
 ## [Наборы правил](using-rule-sets-to-group-code-analysis-rules.md)
 ### [Наборы правил для управляемого кода](how-to-configure-code-analysis-for-a-managed-code-project.md)
 #### [Настройка анализа кода для веб-приложения ASP.NET](how-to-configure-code-analysis-for-an-aspnet-web-application.md)

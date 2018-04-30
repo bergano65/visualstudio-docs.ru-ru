@@ -19,20 +19,36 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Учебники
   items:
-    - name: 0. Установка средств поддержки Python
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1. Создание проекта Python
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2. Написание и выполнение кода
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3. Использование интерактивного окна REPL
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4. Выполнение кода в отладчике
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5. Установка пакетов и управление средами Python
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6. Работа с Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Python в Visual Studio
+      items:
+        - name: 0. Установка средств поддержки Python
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1. Создание проекта Python
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2. Написание и выполнение кода
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3. Использование интерактивного окна REPL
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4. Выполнение кода в отладчике
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5. Установка пакетов и управление средами Python
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6. Работа с Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Сведения о Django в Visual Studio
+      items:
+        - name: 1. Создание проекта и решения
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2. Создание приложения Django
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3. Обработка статических файлов и добавление страниц
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4. Использование шаблона веб-проекта Django
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5. Аутентификация пользователей
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6. Использование шаблона веб-проекта Django для опросов
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
 - name: Основные понятия
   items:
     - name: Проекты Python
@@ -106,5 +122,7 @@
       href: using-python-cookiecutter-templates.md
 - name: Ссылка
   items:
+    - name: Шаблоны элементов
+      href: python-item-templates.md
     - name: Параметры
       href: python-support-options-and-settings-in-visual-studio.md
