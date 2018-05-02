@@ -1,16 +1,9 @@
 ---
-title: Работа с C++ и Python | Документация Майкрософт
-description: Процедура и шаги для написания модуля или расширения C++ для Python в Visual Studio
-ms.custom: ''
+title: Работа с C++ и Python
+description: Пошаговое руководство по созданию расширения C++ для Python с помощью Visual Studio, включая пошаговые инструкции по отладке в смешанном режиме.
 ms.date: 04/03/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-- C++
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -18,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f81a9f14d64e014fd2b40b0628d7d71884810a3
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 2be78ab073d688e8882dcfdedceef6a6fc73bde3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Создание расширения C++ для Python
 
@@ -226,7 +219,7 @@ ms.lasthandoff: 04/05/2018
     }
     ```
 
-1. Задайте целевой конфигурации значение "Выпуск" и повторно создайте проект C++, чтобы проверить код. Если возникают ошибки, проверьте следующие варианты.
+1. Задайте целевой конфигурации значение "Выпуск" и повторно создайте проект C++, чтобы проверить код. Если возникают ошибки, проверьте следующие варианты:
     - Не удается найти Python.h (*E1696: не удается открыть исходный файл "Python.h"* и/или *C1083: не удается открыть включаемый файл "Python.h", файл или каталог не существуют*): проверьте, что в свойствах проекта в разделе **C/C++ > Общие > Дополнительные каталоги включаемых файлов** верно указан путь к папке `include` вашей установки Python. См. шаг 6 в разделе [Создание основного проекта C++](#create-the-core-c-project).
     - Не удается найти библиотеки Python. Убедитесь, что путь **C/C++ > Общие > Дополнительные каталоги библиотеки** в свойствах проекта указывает на папку `libs` установки Python. См. шаг 6 в разделе [Создание основного проекта C++](#create-the-core-c-project).
     - Ошибки компоновщика, связанные с целевой архитектурой. Измените архитектуру целевого проекта C++ в соответствии с вашей установкой Python. Например, если вы хотите использовать в проекте C++ версию Python x64, но у вас установлена версия x86, измените проект C++ для работы с версией х86.

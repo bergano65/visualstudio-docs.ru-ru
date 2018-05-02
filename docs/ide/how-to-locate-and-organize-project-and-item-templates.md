@@ -1,12 +1,9 @@
 ---
-title: "Упорядочение шаблонов в Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Упорядочение шаблонов в Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -15,12 +12,12 @@ helpviewer_keywords:
 - templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.openlocfilehash: 68ba015c1a1eb125f02e65c8a19c6f516e48f72a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
 
@@ -32,15 +29,15 @@ ms.lasthandoff: 01/13/2018
 
 ### <a name="user-templates"></a>Шаблоны пользователя
 
-Если добавить сжатый файл (ZIP-файл), содержащий VSTEMPLATE-файл, в каталог с пользовательскими шаблонами, шаблон будет отображаться в диалоговом окне **Новый проект** или **Добавление нового элемента**. По умолчанию пользовательские шаблоны находятся в следующих расположениях:
+Если добавить сжатый файл (*ZIP*-файл), содержащий *VSTEMPLATE*-файл, в каталог с пользовательскими шаблонами, шаблон будет отображаться в диалоговом окне **Новый проект** или **Добавление нового элемента**. По умолчанию пользовательские шаблоны находятся в следующих расположениях:
 
-- %USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ProjectTemplates
+- *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ProjectTemplates*
 
-- %USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates
+- *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates*
 
 Например, следующий каталог содержит шаблоны проектов пользователя на C#:
 
-   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
+- *C:\Users\Имя_пользователя\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#*
 
 > [!TIP]
 > Расположение пользовательских шаблонов можно задать, последовательно выбрав **Сервис** > **Параметры** > **Проекты и решения**  >   **Расположения**.
@@ -49,17 +46,17 @@ ms.lasthandoff: 01/13/2018
 
 По умолчанию шаблоны, установленные с Visual Studio, находятся в следующих расположениях:
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Язык программирования*\\*ИД языка*
+- *\\<Каталог_установки_Visual_Studio\>\Common7\IDE\ItemTemplates\\<Язык программирования\>\\<Locale ID>*
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Язык программирования*\\*ИД языка*
+- *\\<Каталог_установки_Visual_Studio\>\Common7\IDE\ProjectTemplates\\<Язык программирования\>\\<Locale ID>*
 
-Например, следующий каталог содержит шаблоны элементов Visual Basic для английского языка (LCID 1033):
+Например, следующий каталог содержит шаблоны элементов Visual Basic для английского языка (LCID 1033):
 
-   C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+- *C:\\<Каталог_установки_Visual_Studio\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
 
 ## <a name="organize-templates"></a>Упорядочивание шаблонов
 
-Категории в диалоговых окнах **Новый проект** и **Добавление нового элемента** отражают структуры каталогов, которые существуют в расположениях установленных и пользовательских шаблонов. Пользовательские шаблоны можно упорядочить по собственным категориям путем добавления новых папок в каталог с пользовательскими шаблонами. Диалоговые окна **Новый проект** и **Добавление нового элемента** отражают все изменения, вносимые в категории шаблонов.
+Категории в диалоговых окнах **Новый проект** и **Добавление нового элемента** отражают структуры каталогов, которые существуют в расположениях установленных и пользовательских шаблонов. Пользовательские шаблоны можно упорядочить по собственным категориям путем добавления новых папок в каталог с пользовательскими шаблонами. Диалоговые окна **Новый проект** и **Добавление нового элемента** отражают все изменения, вносимые в категории шаблонов пользователя.
 
 > [!NOTE]
 > Вы не можете создать новую категорию на уровне языка программирования. Новые категории можно создавать только в рамках каждого отдельного языка.
@@ -68,7 +65,7 @@ ms.lasthandoff: 01/13/2018
 
 1. Создайте папку в папке языка программирования, находящейся в каталоге пользовательских шаблонов проектов. Например, чтобы создать категорию **HelloWorld** для шаблонов проектов C#, необходимо создать следующий каталог:
 
-    \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld\
+    - *\%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. Поместите все шаблоны для этой категории в новую папку.
 
@@ -80,7 +77,7 @@ ms.lasthandoff: 01/13/2018
 
 1. Создайте папку в папке языка программирования, находящейся в каталоге пользовательских шаблонов элементов. Например, чтобы создать категорию **HelloWorld** для шаблонов элементов C#, необходимо создать следующий каталог:
 
-    \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld\
+    - *\%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. Поместите все шаблоны для этой категории в новую папку.
 
@@ -90,15 +87,15 @@ ms.lasthandoff: 01/13/2018
 
 ### <a name="display-templates-in-parent-categories"></a>Отображение шаблонов в родительских категориях
 
-Можно включить шаблоны в подкатегориях, чтобы они отображались в их родительских категориях, с помощью элемента `NumberOfParentCategoriesToRollUp` в VSTEMPLATE-файле. Эти действия идентичны как для шаблонов проектов, так и для шаблонов элементов.
+Можно включить шаблоны в подкатегориях, чтобы они отображались в их родительских категориях, с помощью элемента `NumberOfParentCategoriesToRollUp` в *VSTEMPLATE*-файле. Эти действия одинаковы как для шаблонов проектов, так и для шаблонов элементов.
 
 #### <a name="to-display-templates-in-parent-categories"></a>Отображение шаблонов в родительских категориях
 
-1. Найдите ZIP-файл, содержащий шаблон.
+1. Найдите *ZIP*-файл, содержащий шаблон.
 
-1. Извлеките ZIP-файл.
+1. Извлеките содержимое *ZIP*-файла.
 
-1. Откройте VSTEMPLATE-файл в Visual Studio.
+1. Откройте *VSTEMPLATE*-файл в Visual Studio.
 
 1. В элементе `TemplateData` добавьте элемент `NumberOfParentCategoriesToRollUp`. Например, следующий код делает шаблон видимым в родительской категории, но не на более высоких уровнях.
 
@@ -112,15 +109,15 @@ ms.lasthandoff: 01/13/2018
     </TemplateData>
     ```
 
-1. Сохраните VSTEMPLATE-файл и закройте его.
+1. Сохраните *VSTEMPLATE*-файл и закройте его.
 
 1. Выберите файлы в шаблоне, щелкните выделение правой кнопкой мыши и выберите пункты **Отправить** > **Сжатая ZIP-папка**.
 
-   Файлы сжимаются в ZIP-файл.
+   Файлы сжимаются в *ZIP*-файл.
 
-1. Удалите извлеченные файлы шаблона и ZIP-файл старого шаблона.
+1. Удалите извлеченные файлы шаблона и *ZIP*-файл старого шаблона.
 
-1. Поместите новый ZIP-файл в каталог, где находился удаленный ZIP-файл.
+1. Поместите новый *ZIP*-файл в каталог, где находился удаленный *ZIP*-файл.
 
 ## <a name="see-also"></a>См. также
 

@@ -1,21 +1,19 @@
 ---
-title: "Возможности создания кода в Visual Studio | Документация Майкрософт"
-ms.custom: 
+title: Возможности создания кода в Visual Studio | Документация Майкрософт
+ms.custom: ''
 ms.date: 01/11/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 83b222d0c6318b1664b28e3c0259c2ff6de9b00e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Возможности создания кода в Visual Studio
 
@@ -30,7 +28,7 @@ Visual Studio помогает создавать, исправлять код �
 > [!NOTE]
 > Каждая языковая служба в Visual Studio предоставляет собственные возможности создания кода, поэтому некоторые возможности доступны только в C#, а другие — в C# и Visual Basic.
 
-## <a name="see-also"></a>См. также
+### <a name="see-also"></a>См. также
 
 [Фрагменты кода](../ide/code-snippets.md)  
 [Быстрые действия](../ide/quick-actions.md)  

@@ -1,25 +1,23 @@
 ---
-title: "Практическое руководство. Исключение проектов из сборки | Microsoft Docs"
-ms.custom: 
+title: Практическое руководство. Исключение проектов из сборки | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a09f18ccb491474c5db20724ccea501fc94c14a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Практическое руководство. Исключение проектов из построения
+# <a name="how-to-exclude-projects-from-a-build"></a>Практическое руководство. Исключение проектов из сборки
 Вы можете создать решение без сборки всех проектов, которые оно содержит. Например, можно исключить проект, который прерывает сборку. После исследования и разрешения проблем можно будет построить этот проект.  
   
  Проект исключается с помощью следующих подходов.  
@@ -28,11 +26,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Создание конфигурации решения, которая не содержит проект.  
   
- Дополнительные сведения см. в разделе [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md).  
+ Дополнительные сведения см. в статье [Общие сведения о конфигурациях сборок](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Временное удаление проекта из активной конфигурации решения  
   
-1.  В строке меню последовательно выберите пункты **Сборка**и **Диспетчер конфигураций**.  
+1.  В строке меню последовательно выберите пункты **Сборка** > **Диспетчер конфигураций**.  
   
 2.  В таблице **Конфигурации проектов** найдите проект, который требуется исключить из сборки.  
   
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Создание конфигурации решения, которая исключает проект  
   
-1.  В строке меню последовательно выберите пункты **Сборка**и **Диспетчер конфигураций**.  
+1.  В строке меню последовательно выберите пункты **Сборка** > **Диспетчер конфигураций**.  
   
 2.  В списке **Активная конфигурация решения** выберите **\<Создать>**.  
   
@@ -54,9 +52,9 @@ ms.lasthandoff: 12/22/2017
   
 6.  В панели инструментов **Стандартная** убедитесь, что новая конфигурация является активной в поле **Конфигурация решения**.  
   
-7.  В строке меню последовательно выберите пункты **Сборка**, **Перестроить решение**.  
+7.  В строке меню последовательно выберите пункты **Сборка** > **Перестроить решение**.  
   
 ## <a name="see-also"></a>См. также  
- [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
+ [Общие сведения о конфигурациях сборок](../ide/understanding-build-configurations.md)   
  [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md)   
- [Практическое руководство. Построение с использованием нескольких конфигураций](../ide/how-to-build-multiple-configurations-simultaneously.md)
+ [Практическое руководство. Сборка с использованием нескольких конфигураций](../ide/how-to-build-multiple-configurations-simultaneously.md)

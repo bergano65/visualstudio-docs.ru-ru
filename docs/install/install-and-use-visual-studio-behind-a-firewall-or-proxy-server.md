@@ -1,13 +1,10 @@
 ---
 title: Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером | Документация Майкрософт
-description: ''
+description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -20,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
+
 Если вы или ваша организация используете средства обеспечения безопасности, например брандмауэр или прокси-сервер, значит есть URL-адреса доменов, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы обеспечить оптимальные установку и использование Visual Studio и служб Azure.
 
 * **[Установка Visual Studio](#install-visual-studio)**. Таблицы в этом разделе содержат URL-адреса доменов, которые нужно добавить в список разрешений, чтобы получить доступ ко всем необходимым компонентам и рабочим нагрузкам.
@@ -34,10 +32,13 @@ ms.lasthandoff: 04/03/2018
 * **[Использование Visual Studio и служб Azure](#use-visual-studio-and-azure-services)**. Таблица в этом разделе содержит URL-адреса доменов, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы получить доступ ко всем необходимым компонентам и службам.
 
 ## <a name="install-visual-studio"></a>Установка Visual Studio
+
 ### <a name="urls-to-whitelist"></a>URL-адреса для добавления в список разрешений
+
 С учетом того, что Visual Studio Installer скачивает файлы из различных доменов и их серверов загрузки, ниже приведены URL-адреса доменов, которые нужно добавить в список разрешений как доверенные с помощью пользовательского интерфейса или скриптов развертывания.
 
 #### <a name="microsoft-domains"></a>Домены Майкрософт
+
 | Домен | Цель |
 | ------ | ------- |
 | go.microsoft.com | Настройка разрешения URL-адресов |
@@ -57,6 +58,7 @@ ms.lasthandoff: 04/03/2018
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Сторонние домены
+
 | Домен | Устанавливает эти рабочие нагрузки |
 | ------ | ------- |
 | archive.apache.org |  Разработка мобильных приложений с помощью JavaScript (Cordova) |
@@ -72,7 +74,9 @@ ms.lasthandoff: 04/03/2018
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Использование Visual Studio и служб Azure
+
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URL-адреса для добавления в список разрешений, а также порты и протоколы для открытия
+
 Ниже приведены URL-адреса доменов, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы обеспечить доступ к всем необходимым компонентам при использовании Visual Studio или служб Azure, расположенных за брандмауэром или прокси-сервером.
 
 | Служба или сценарий | Конечная точка DNS | Протокол | Порт | Описание: |
@@ -116,18 +120,21 @@ ms.lasthandoff: 04/03/2018
 |Служба упаковки | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Домены *.npmjs.org, *.nuget.org и *.nodejs.org требуются только для определенных сценариев, которые включают задачи сборки (например, установщик средств NuGet или Node), или если вы планируете использовать в своих веб-каналах общедоступные восходящие источники.  Три других домена являются обязательными для работы с основными функциями службы упаковки. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Устранение ошибок сети
+
 Иногда вы можете столкнуться с ошибками сети или прокси-сервера, которые возникают при установке или использовании решения Visual Studio, расположенного за брандмауэром или прокси-сервером. Дополнительные сведения об обработке сообщений об ошибках см. а руководстве по [исправлению ошибок сети при установке или использовании Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="get-support"></a>Техническая поддержка
+
 Ниже перечислены дополнительные варианты:
+
 * Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
 * Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
+* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>См. также
+
 * [Исправление ошибок сети при установке или использовании Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Установка Visual Studio 2017](install-visual-studio.md)

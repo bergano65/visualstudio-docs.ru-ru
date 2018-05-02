@@ -1,15 +1,9 @@
 ---
-title: Краткое руководство. Создание проекта Python на основе шаблона | Документация Майкрософт
+title: Краткое руководство. Создание проекта Python на основе шаблона
 description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python на основе встроенного шаблона для базового приложения Flask.
-ms.custom: mvc
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 

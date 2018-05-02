@@ -1,33 +1,29 @@
 ---
-title: "Функции фрагментов кода | Документы Майкрософт"
-ms.custom: 
+title: Функции фрагментов кода | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35e77b5383f2da9dd8c735f216735f405d38ec
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 9229881eeb5b3b9b730101e2fb418c1a79d41cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 
-С фрагментами кода C# можно использовать три функции. Функции указываются в элементе [Function](../ide/code-snippets-schema-reference.md#function) фрагмента кода. Сведения о создании фрагментов кода см. в разделе [Фрагменты кода](../ide/code-snippets.md).
+С фрагментами кода C# можно использовать три функции. Функции указываются в элементе [Function](../ide/code-snippets-schema-reference.md#function) фрагмента кода. Сведения о создании фрагментов кода см. в статье [Фрагменты кода](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Функции
 
@@ -163,5 +159,5 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="see-also"></a>См. также
 
-[Function, элемент](../ide/code-snippets-schema-reference.md#function)  
+[Элемент Function](../ide/code-snippets-schema-reference.md#function)  
 [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)

@@ -1,12 +1,10 @@
 ---
-title: "Практическое руководство. Управление конфигурациями построений с применением параметров разработчика Visual Basic | Microsoft Docs"
-ms.custom: 
+title: Практическое руководство. Управление конфигурациями сборок с применением параметров разработчика Visual Basic | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, building with Visual Basic settings
 - MSBuild, debug build
@@ -16,21 +14,21 @@ helpviewer_keywords:
 - MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 954a968de9840e6f23c3e8ff5ab0ff4d0fa761cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Практическое руководство. Управление конфигурациями построений с применением параметров разработчика Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Практическое руководство. Управление конфигурациями сборок с применением параметров разработчика Visual Basic
 По умолчанию все расширенные параметры сборки скрыты при применении параметров разработчика [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. В этом разделе объясняется, как вручную включить эти параметры.  
   
-## <a name="enabling-advanced-build-configurations"></a>Включение дополнительных конфигураций сборки  
+## <a name="enable-advanced-build-configurations"></a>Включение дополнительных конфигураций сборок  
  По умолчанию в параметрах разработчика [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] возможность открыть диалоговое окно **диспетчера конфигураций**, как и списки **конфигураций** и **платформ** в [конструкторе проектов](..//ide/reference/application-page-project-designer-visual-basic.md), скрыта.  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Включение дополнительных конфигураций сборок  
@@ -46,8 +44,8 @@ ms.lasthandoff: 12/22/2017
   
 4.  Нажмите кнопку **ОК**.  
   
-     Теперь в меню **Сборка** можно выбрать **Диспетчер конфигурации**, а списки **конфигураций** и **платформ** отображаются в конструкторе проектов.  
+     Теперь в меню **Сборка** можно выбрать пункт **Диспетчер конфигурации**, а списки **конфигураций** и **платформ** отображаются в **конструкторе проектов**.  
   
 ## <a name="see-also"></a>См. также  
- [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
- [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)
+ [Общие сведения о конфигурациях сборок](../ide/understanding-build-configurations.md)   
+ [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

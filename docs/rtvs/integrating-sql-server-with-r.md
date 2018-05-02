@@ -1,27 +1,20 @@
 ---
-title: "Интеграция SQL Server с инструментами R для Visual Studio | Документация Майкрософт"
-description: "Visual Studio поддерживает создание и выполнение запросов SQL из R, а также возможность R работать с хранимыми процедурами."
-ms.custom: 
+title: Интеграция SQL Server с R
+description: Visual Studio поддерживает создание и выполнение запросов SQL из R, а также возможность R работать с хранимыми процедурами.
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-- SQL
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 31d02ffb64539f906d91f68d18c6ad52b347e4e6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Работа с SQL Server и R
 

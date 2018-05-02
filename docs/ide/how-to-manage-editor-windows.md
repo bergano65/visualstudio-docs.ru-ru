@@ -1,28 +1,26 @@
 ---
-title: "Практическое руководство. Управление окнами редактора | Документы Майкрософт"
-ms.custom: 
+title: Практическое руководство. Управление окнами редактора | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bd9d2d458c671fc590326989026aa776795243a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manage-editor-windows"></a>Практическое руководство. Управление окнами редактора
 Вы можете работать с кодом сразу в нескольких расположениях. Для этого можно разделить окно редактора или открыть несколько его экземпляров.  
@@ -30,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  Не все окна редактора поддерживают несколько экземпляров.  
   
-## <a name="splitting-an-editor-window"></a>Разделение окна редактора  
+## <a name="split-an-editor-window"></a>Разделение окна редактора  
  Чтобы упростить работу, экземпляр окна редактора можно разделить на два отдельных представления.  
   
 #### <a name="to-split-a-pane"></a>Разделение области  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   В меню **Окно** выберите команду **Снять разделение**.  
   
-## <a name="creating-new-windows"></a>Создание окон  
+## <a name="create-new-windows"></a>Создание новых окон  
  Вы также можете создать несколько экземпляров окна редактора. Эта функция позволяет открыть длинный документ в нескольких экземплярах редактора, чтобы одновременно просматривать и редактировать разные части в отдельных полноразмерных окнах редактора.  
   
 #### <a name="to-create-a-new-window"></a>Создание окна  
@@ -59,5 +57,5 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>См. также  
  [Настройка редактора](../ide/customizing-the-editor.md)   
- [Создание кода](../ide/writing-code-in-the-code-and-text-editor.md)   
+ [Написание кода](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md)
