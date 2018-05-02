@@ -1,6 +1,5 @@
 ---
-title: Использование параметров EditorConfig в Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Использование параметров EditorConfig в Visual Studio
 ms.date: 12/13/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +7,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: fe1653df6fc1d71dc4497c6e7e0a9adae9fa0b44
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff3391023d9a863bd9f06b4608b327902a17f0ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -158,8 +158,8 @@ dir .editorconfig /s
 
 ## <a name="see-also"></a>См. также
 
-[Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)  
-[Соглашения об именовании .NET](../ide/editorconfig-naming-conventions.md)  
-[Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)  
-[EditorConfig.org](http://editorconfig.org/)  
-[Написание кода в редакторе](writing-code-in-the-code-and-text-editor.md)
+- [Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Соглашения об именовании .NET](../ide/editorconfig-naming-conventions.md)
+- [Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)
+- [EditorConfig.org](http://editorconfig.org/)
+- [Написание кода в редакторе](writing-code-in-the-code-and-text-editor.md)

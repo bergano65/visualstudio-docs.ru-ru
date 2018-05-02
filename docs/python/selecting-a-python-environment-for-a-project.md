@@ -1,6 +1,6 @@
 ---
-title: Выбор окружения для проекта
-description: В обозревателе решений Visual Studio вы можете назначить определенный интерпретатор и (или) окружение Python, которые следует всегда использовать для конкретного проекта, игнорируя окружение по умолчанию. Также вы можете создавать виртуальные окружения и управлять ими.
+title: Выбор интерпретатора и окружения Python для проекта
+description: Сведения о назначении окружения Python для использования в проекте Visual Studio, а также инструкции по созданию виртуальных сред.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Выбор интерпретатора и окружения Python для проекта
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Назначение окружения Python для использования в проекте
 
 Весь код в проекте Python выполняется в контексте определенного окружения. Visual Studio использует это же окружение для отладки, импорта, автозавершения элементов, проверки синтаксиса и других задач.
 
