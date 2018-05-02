@@ -1,37 +1,20 @@
 ---
-title: "Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework для сбора данных о параллелизме с помощью командной строки | Документация Майкрософт"
-ms.custom: 
+title: Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework для сбора данных о параллелизме с помощью командной строки | Документация Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: fdd41576-797e-4312-8520-fee7bb767e4a
-caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e868a344d9b5c068f845b2005a85aaca2607140c
-ms.lasthandoff: 02/22/2017
-
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 710c0a8bbfacc0e1edca3a1852cd8b51218a5ce3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework для сбора данных о параллелизме при помощи командной строки
 В этом разделе описывается, как использовать средства командной строки со средствами профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к запущенному изолированному приложению .NET Framework (клиентскому) и сбора данных о параллелизме потоков и процессов.  
@@ -55,7 +38,7 @@ ms.lasthandoff: 02/22/2017
   
      С параметром **/start:concurrency** можно использовать любой из следующих параметров.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Задает счетчик производительности Windows, данные которого будут собираться во время профилирования.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.|  
@@ -71,7 +54,7 @@ ms.lasthandoff: 02/22/2017
   
     -   [/LineOff](../profiling/lineoff.md) отключает сбор данных о номерах строк.  
   
-    -   [/targetclr](../profiling/targetclr.md) **:** `Version` указывает версию профилируемой среды CLR, если в приложении загружено несколько версий среды выполнения. Необязательно.  
+    -   [/targetclr](../profiling/targetclr.md) **:** `Version` указывает версию профилируемой среды CLR, если в приложении загружено несколько версий среды выполнения. Необязательный.  
   
 ## <a name="controlling-data-collection"></a>Управление сбором данных  
  Пока целевое приложение выполняется, вы можете управлять сбором данных путем запуска и остановки записи данных в файл, используя параметры VSPerfCmd.exe. Управление сбором данных позволяет собирать данные на определенных этапах выполнения программы, включая запуск или завершение работы приложения.  
@@ -80,7 +63,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Следующие пары параметров VSPerfCmd.exe запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  
@@ -95,7 +78,7 @@ ms.lasthandoff: 02/22/2017
   
     -   Введите команду **VSPerfCmd /detach**.  
   
-         -или-  
+         - или -  
   
     -   Закройте целевое приложение.  
   
