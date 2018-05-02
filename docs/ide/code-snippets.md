@@ -1,7 +1,7 @@
 ---
-title: Фрагменты кода | Документы Майкрософт
-ms.custom: ''
+title: Фрагменты кода
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -19,11 +19,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 520aa870f85ddc3768720eafb17b0109fb270393
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippets"></a>Фрагменты кода
 
@@ -95,10 +95,10 @@ End Property
 
 ## <a name="see-also"></a>См. также
 
-[Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)  
-[Практическое руководство. Распространение фрагментов кода](../ide/how-to-distribute-code-snippets.md)  
-[Рекомендации по использованию фрагментов кода](../ide/best-practices-for-using-code-snippets.md)  
-[Устранение неполадок, связанных с использованием фрагментов кода](../ide/troubleshooting-snippets.md)  
-[Фрагменты кода C#](../ide/visual-csharp-code-snippets.md)  
-[Фрагменты кода Visual C++](../ide/visual-cpp-code-snippets.md)  
-[Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)
+- [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
+- [Практическое руководство. Распространение фрагментов кода](../ide/how-to-distribute-code-snippets.md)
+- [Рекомендации по использованию фрагментов кода](../ide/best-practices-for-using-code-snippets.md)
+- [Устранение неполадок, связанных с использованием фрагментов кода](../ide/troubleshooting-snippets.md)
+- [Фрагменты кода C#](../ide/visual-csharp-code-snippets.md)
+- [Фрагменты кода Visual C++](../ide/visual-cpp-code-snippets.md)
+- [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)

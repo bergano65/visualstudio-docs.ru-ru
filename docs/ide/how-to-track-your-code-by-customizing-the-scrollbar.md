@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Отслеживание кода за счет настройки полосы прокрутки | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Отслеживание кода за счет настройки полосы прокрутки
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff36af9a034f3a369369a0916f468826c053d05
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Практическое руководство. Отслеживание кода за счет настройки полосы прокрутки
 
@@ -57,4 +57,4 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Написание кода в редакторе](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Написание кода в редакторе](../ide/writing-code-in-the-code-and-text-editor.md)

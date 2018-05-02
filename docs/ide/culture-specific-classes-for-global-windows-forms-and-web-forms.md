@@ -1,9 +1,8 @@
 ---
-title: Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms | Документы Майкрософт
-ms.custom: ''
+title: Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
@@ -31,11 +30,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ce8f0e60ae45bfe290ae806d3963dbd30cbb48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms
 
@@ -46,7 +45,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="using-the-culture-setting"></a>Использование параметра языка и региональных параметров
 
-Используйте язык и региональные параметры, хранимые либо в приложении, либо в панели управления **Региональные параметры**. С их помощью можно определять соглашения во время выполнения и форматировать сведения соответствующим образом. Дополнительные сведения о настройке языка и региональных параметров см. в практических руководствах по [настройке языка и региональных параметров, а также языка и региональных параметров пользовательского интерфейса для глобализации веб-страниц ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Классы, автоматически форматирующие сведения в соответствии с настройками языка и региональных параметров, называются классами, *зависящими от языка и региональных параметров*. К некоторым методам, определяемым языком и региональными параметрами, относятся 
+Используйте язык и региональные параметры, хранимые либо в приложении, либо в панели управления **Региональные параметры**. С их помощью можно определять соглашения во время выполнения и форматировать сведения соответствующим образом. Дополнительные сведения о настройке языка и региональных параметров см. в практических руководствах по [настройке языка и региональных параметров, а также языка и региональных параметров пользовательского интерфейса для глобализации веб-страниц ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Классы, автоматически форматирующие сведения в соответствии с настройками языка и региональных параметров, называются классами, *зависящими от языка и региональных параметров*. К некоторым методам, определяемым языком и региональными параметрами, относятся
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>
@@ -56,37 +55,37 @@ ms.lasthandoff: 04/16/2018
 Например, в следующем коде показано, как с помощью метода <xref:System.IFormattable.ToString%2A> форматировать денежные единицы для выбранного языка и региональных параметров.
 
 ```vb
-' Put the Imports statements at the beginning of the code module  
-Imports System.Threading  
-Imports System.Globalization  
-' Display a number with the culture-specific currency formatting  
-Dim MyInt As Integer = 100  
+' Put the Imports statements at the beginning of the code module
+Imports System.Threading
+Imports System.Globalization
+' Display a number with the culture-specific currency formatting
+Dim MyInt As Integer = 100
 Console.WriteLine(MyInt.ToString("C", Thread.CurrentThread.CurrentCulture))
 ```
 
 ```csharp
-// Put the using statements at the beginning of the code module  
-using System.Threading;  
-using System.Globalization;  
-// Display a number with the culture-specific currency formatting  
-int myInt = 100;  
-Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));  
+// Put the using statements at the beginning of the code module
+using System.Threading;
+using System.Globalization;
+// Display a number with the culture-specific currency formatting
+int myInt = 100;
+Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
 ```
 
-Если для языка и региональных параметров задано значение fr-FR, в окне вывода появится следующее:  
+Если для языка и региональных параметров задано значение fr-FR, в окне вывода появится следующее:
 
 `100,00`
 
-Если для языка и региональных параметров задано значение en-US, в окне вывода появится следующее:  
+Если для языка и региональных параметров задано значение en-US, в окне вывода появится следующее:
 
 `$100.00`
 
 ## <a name="see-also"></a>См. также
 
-<xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
-<xref:System.Globalization.DateTimeFormatInfo>   
-<xref:System.Globalization.NumberFormatInfo>   
-<xref:System.Globalization.Calendar>   
-<xref:System.Console.WriteLine%2A?displayProperty=fullName>   
-<xref:System.String.Format%2A?displayProperty=fullName>   
-[Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)
+- <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
+- <xref:System.Globalization.DateTimeFormatInfo>
+- <xref:System.Globalization.NumberFormatInfo>
+- <xref:System.Globalization.Calendar>
+- <xref:System.Console.WriteLine%2A?displayProperty=fullName>
+- <xref:System.String.Format%2A?displayProperty=fullName>
+- [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

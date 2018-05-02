@@ -1,6 +1,7 @@
 ---
 title: Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bd12e380a9362a82ff890dd016e5469e30f136a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4ced3059b516c7285d525666a69d2c63a654a83a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
 

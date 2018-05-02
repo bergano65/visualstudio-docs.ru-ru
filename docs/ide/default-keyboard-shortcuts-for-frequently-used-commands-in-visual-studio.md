@@ -1,20 +1,19 @@
 ---
-title: Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4ffb78541f70809457b1266dafba2036da085f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 
@@ -25,150 +24,150 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="build"></a>Построить
 
-|Команды|Сочетания клавиш [контексты]|  
-|--------------|-------------------------------------|  
-|Build.BuildSolution|**CTRL+SHIFT+B** [глобальный]|  
-|Build.Cancel|**CTRL+BREAK** [глобальный]|  
-|Build.Compile|**CTRL+F7** [глобальный]|  
-|Build.RunCodeAnalysisonSolution|**ALT+F11** [глобальный]|  
+|Команды|Сочетания клавиш [контексты]|
+|--------------|-------------------------------------|
+|Build.BuildSolution|**CTRL+SHIFT+B** [глобальный]|
+|Build.Cancel|**CTRL+BREAK** [глобальный]|
+|Build.Compile|**CTRL+F7** [глобальный]|
+|Build.RunCodeAnalysisonSolution|**ALT+F11** [глобальный]|
 
 ## <a name="debug"></a>Отладка
 
-|Команды|Сочетания клавиш [контексты]|  
-|--------------|-------------------------------------|  
-|Debug.BreakatFunction|**CTRL+B** [глобальный]|  
-|Debug.BreakAll|**CTRL+ALT+BREAK** [глобальный]|  
-|Debug.DeleteAllBreakpoints|**CTRL+SHIFT+F9** [глобальный]|  
-|Debug.Exceptions|**CTRL+ALT+E** [глобальный]|  
-|Debug.QuickWatch|**CTRL+ALT+Q** [глобальный]<br /><br /> или **SHIFT+F9** [глобальный]|  
-|Debug.Restart|**CTRL+SHIFT+F5** [глобальный]|  
-|Debug.RunToCursor|**CTRL+F10** [глобальный]|  
-|Debug.SetNextStatement|**CTRL+SHIFT+F10** [глобальный]|  
-|Debug.Start|**F5** [глобальный]|  
-|Debug.StartWithoutDebugging|**CTRL+F5** [глобальный]|  
-|Debug.StepInto|**F11** [глобальный]|  
-|Debug.StepOut|**SHIFT+F11** [глобальный]|  
-|Debug.StepOver|**F10** [глобальный]|  
-|Debug.StopDebugging|**SHIFT+F5** [глобальный]|  
-|Debug.ToggleBreakpoint|**F9** [глобальный]|  
+|Команды|Сочетания клавиш [контексты]|
+|--------------|-------------------------------------|
+|Debug.BreakatFunction|**CTRL+B** [глобальный]|
+|Debug.BreakAll|**CTRL+ALT+BREAK** [глобальный]|
+|Debug.DeleteAllBreakpoints|**CTRL+SHIFT+F9** [глобальный]|
+|Debug.Exceptions|**CTRL+ALT+E** [глобальный]|
+|Debug.QuickWatch|**CTRL+ALT+Q** [глобальный]<br /><br /> или **SHIFT+F9** [глобальный]|
+|Debug.Restart|**CTRL+SHIFT+F5** [глобальный]|
+|Debug.RunToCursor|**CTRL+F10** [глобальный]|
+|Debug.SetNextStatement|**CTRL+SHIFT+F10** [глобальный]|
+|Debug.Start|**F5** [глобальный]|
+|Debug.StartWithoutDebugging|**CTRL+F5** [глобальный]|
+|Debug.StepInto|**F11** [глобальный]|
+|Debug.StepOut|**SHIFT+F11** [глобальный]|
+|Debug.StepOver|**F10** [глобальный]|
+|Debug.StopDebugging|**SHIFT+F5** [глобальный]|
+|Debug.ToggleBreakpoint|**F9** [глобальный]|
 
 ## <a name="edit"></a>Правка
 
-|Команды|Сочетания клавиш [контексты]|  
-|--------------|-------------------------------------|  
-|Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br /> или **SHIFT+ВВОД** [текстовый редактор]|  
-|Edit.CollapsetoDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|  
-|Edit.CommentSelection|**CTRL+K**, **CTRL+C** [текстовый редактор]|  
-|Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K**, **W** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|  
-|Edit.Copy|**CTRL+C** [глобальный]<br /><br /> или **CTRL+INSERT** [глобальный]|  
-|Edit.Cut|**CTRL+X** [глобальный]<br /><br /> или **SHIFT+DELETE** [глобальный]|  
-|Edit.Delete|**DELETE** [глобальный, Team Explorer]<br /><br /> или **SHIFT+DELETE** [схема последовательностей, схема действий UML, схема слоев]<br /><br /> или **CTRL+DELETE** [схема классов]|  
-|Edit.Find|**CTRL+F** [глобальный]|  
-|Edit.FindAllReferences|**SHIFT+F12** [глобальный]|  
-|Edit.FindinFiles|**CTRL+SHIFT+F** [глобальный]|  
-|Edit.FindNext|**F3** [глобальный]|  
-|Edit.FindNextSelected|**CTRL+F3** [глобальный]|  
-|Edit.FormatDocument|**CTRL+K, CTRL+D** [текстовый редактор]|  
-|Edit.FormatSelection|**CTRL+K, CTRL+F** [текстовый редактор]|  
-|Edit.GoTo|**CTRL+G** [глобальный]|  
-|Edit.GoToDeclaration|**CTRL+F12** [глобальный]|  
-|Edit.GoToDefinition|**F12**|  
-|Edit.GoToFindCombo|**CTRL+D** [глобальный]|  
-|Edit.GoToNextLocation|**F8** [глобальный]|  
-|Edit.InsertSnippet|**CTRL+K**, **CTRL+X** [глобальный]|  
-|Edit.InsertTab|**TAB** [конструктор отчетов, конструктор Windows Forms, текстовый редактор]|  
-|Edit.LineCut|**CTRL+L** [текстовый редактор]|  
-|Edit.LineDownExtendColumn|**SHIFT+ALT+СТРЕЛКА ВНИЗ** [текстовый редактор]|  
-|Edit.LineOpenAbove|**CTRL+ВВОД** [текстовый редактор]|  
-|Edit.ListMembers|**CTRL+J** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+L** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, L** [конструктор рабочих процессов]|  
-|Edit.NavigateTo|**CTRL+,** [глобальный]|  
-|Edit.OpenFile|**CTRL+SHIFT+G** [глобальный]|  
-|Edit.OvertypeMode|**INSERT** [текстовый редактор]|  
-|Edit.ParameterInfo|**CTRL+SHIFT+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+P** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, P** [конструктор рабочих процессов]|  
-|Edit.Paste|**CTRL+V** [глобальный]<br /><br /> или **SHIFT+INSERT** [глобальный]|  
-|Edit.PeekDefinition|**ALT+F12** [текстовый редактор]|  
-|Edit.Redo|**CTRL+Y** [глобальный]<br /><br /> или **SHIFT+ALT+BACKSPACE** [глобальный]<br /><br /> или **CTRL+SHIFT+Z** [глобальный]|  
-|Edit.Replace|**CTRL+H** [глобальный]|  
-|Edit.SelectAll|**CTRL+A** [глобальный]|  
-|Edit.SelectCurrentWord|**CTRL+W** [текстовый редактор]|  
-|Edit.SelectionCancel|**ESC** [текстовый редактор, конструктор отчетов, конструктор параметров, конструктор Windows Forms, редактор управляемых ресурсов]|  
-|Edit.SurroundWith|**CTRL+K, CTRL+S** [глобальный]|  
-|Edit.TabLeft|**SHIFT+TAB** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]|  
-|Edit.ToggleAllOutlining|**CTRL+M, CTRL+L** [текстовый редактор]|  
-|Edit.ToggleBookmark|**CTRL+K, CTRL+K** [текстовый редактор]|  
-|Edit.ToggleCompletionMode|**CTRL+ALT+ПРОБЕЛ** [текстовый редактор]|  
-|Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M** [текстовый редактор]|  
-|Edit.UncommentSelection|**CTRL+K, CTRL+U** [текстовый редактор]|  
-|Edit.Undo|**CTRL+Z** [глобальный]<br /><br /> или **ALT+BACKSPACE** [глобальный]|  
-|Edit.WordDeleteToEnd|**CTRL+DELETE** [текстовый редактор]|  
-|Edit.WordDeleteToStart|**CTRL+BACKSPACE** [текстовый редактор]|  
+|Команды|Сочетания клавиш [контексты]|
+|--------------|-------------------------------------|
+|Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br /> или **SHIFT+ВВОД** [текстовый редактор]|
+|Edit.CollapsetoDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
+|Edit.CommentSelection|**CTRL+K**, **CTRL+C** [текстовый редактор]|
+|Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K**, **W** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|
+|Edit.Copy|**CTRL+C** [глобальный]<br /><br /> или **CTRL+INSERT** [глобальный]|
+|Edit.Cut|**CTRL+X** [глобальный]<br /><br /> или **SHIFT+DELETE** [глобальный]|
+|Edit.Delete|**DELETE** [глобальный, Team Explorer]<br /><br /> или **SHIFT+DELETE** [схема последовательностей, схема действий UML, схема слоев]<br /><br /> или **CTRL+DELETE** [схема классов]|
+|Edit.Find|**CTRL+F** [глобальный]|
+|Edit.FindAllReferences|**SHIFT+F12** [глобальный]|
+|Edit.FindinFiles|**CTRL+SHIFT+F** [глобальный]|
+|Edit.FindNext|**F3** [глобальный]|
+|Edit.FindNextSelected|**CTRL+F3** [глобальный]|
+|Edit.FormatDocument|**CTRL+K, CTRL+D** [текстовый редактор]|
+|Edit.FormatSelection|**CTRL+K, CTRL+F** [текстовый редактор]|
+|Edit.GoTo|**CTRL+G** [глобальный]|
+|Edit.GoToDeclaration|**CTRL+F12** [глобальный]|
+|Edit.GoToDefinition|**F12**|
+|Edit.GoToFindCombo|**CTRL+D** [глобальный]|
+|Edit.GoToNextLocation|**F8** [глобальный]|
+|Edit.InsertSnippet|**CTRL+K**, **CTRL+X** [глобальный]|
+|Edit.InsertTab|**TAB** [конструктор отчетов, конструктор Windows Forms, текстовый редактор]|
+|Edit.LineCut|**CTRL+L** [текстовый редактор]|
+|Edit.LineDownExtendColumn|**SHIFT+ALT+СТРЕЛКА ВНИЗ** [текстовый редактор]|
+|Edit.LineOpenAbove|**CTRL+ВВОД** [текстовый редактор]|
+|Edit.ListMembers|**CTRL+J** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+L** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, L** [конструктор рабочих процессов]|
+|Edit.NavigateTo|**CTRL+,** [глобальный]|
+|Edit.OpenFile|**CTRL+SHIFT+G** [глобальный]|
+|Edit.OvertypeMode|**INSERT** [текстовый редактор]|
+|Edit.ParameterInfo|**CTRL+SHIFT+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+P** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, P** [конструктор рабочих процессов]|
+|Edit.Paste|**CTRL+V** [глобальный]<br /><br /> или **SHIFT+INSERT** [глобальный]|
+|Edit.PeekDefinition|**ALT+F12** [текстовый редактор]|
+|Edit.Redo|**CTRL+Y** [глобальный]<br /><br /> или **SHIFT+ALT+BACKSPACE** [глобальный]<br /><br /> или **CTRL+SHIFT+Z** [глобальный]|
+|Edit.Replace|**CTRL+H** [глобальный]|
+|Edit.SelectAll|**CTRL+A** [глобальный]|
+|Edit.SelectCurrentWord|**CTRL+W** [текстовый редактор]|
+|Edit.SelectionCancel|**ESC** [текстовый редактор, конструктор отчетов, конструктор параметров, конструктор Windows Forms, редактор управляемых ресурсов]|
+|Edit.SurroundWith|**CTRL+K, CTRL+S** [глобальный]|
+|Edit.TabLeft|**SHIFT+TAB** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]|
+|Edit.ToggleAllOutlining|**CTRL+M, CTRL+L** [текстовый редактор]|
+|Edit.ToggleBookmark|**CTRL+K, CTRL+K** [текстовый редактор]|
+|Edit.ToggleCompletionMode|**CTRL+ALT+ПРОБЕЛ** [текстовый редактор]|
+|Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M** [текстовый редактор]|
+|Edit.UncommentSelection|**CTRL+K, CTRL+U** [текстовый редактор]|
+|Edit.Undo|**CTRL+Z** [глобальный]<br /><br /> или **ALT+BACKSPACE** [глобальный]|
+|Edit.WordDeleteToEnd|**CTRL+DELETE** [текстовый редактор]|
+|Edit.WordDeleteToStart|**CTRL+BACKSPACE** [текстовый редактор]|
 
 ## <a name="file"></a>Файл
 
-|Команды|Сочетания клавиш [контексты]|  
-|--------------|-------------------------------------|  
-|File.Exit|**ALT+F4** [глобальный]|  
-|File.NewFile|**CTRL+N** [глобальный]|  
-|File.NewProject|**CTRL+SHIFT+N** [глобальный]|  
-|File.NewWebSite|**SHIFT+ALT+N** [глобальный]|  
-|File.OpenFile|**CTRL+O** [глобальный]|  
-|File.OpenProject|**CTRL+SHIFT+O** [глобальный]|  
-|File.OpenWebSite|**SHIFT+ALT+O** [глобальный]|  
-|File.Rename|**F2** [Team Explorer]|  
-|File.SaveAll|**CTRL+SHIFT+S** [глобальный]|  
-|File.SaveSelectedItems|**CTRL+S** [глобальный]|  
-|File.ViewinBrowser|**CTRL+SHIFT+W** [глобальный]|  
+|Команды|Сочетания клавиш [контексты]|
+|--------------|-------------------------------------|
+|File.Exit|**ALT+F4** [глобальный]|
+|File.NewFile|**CTRL+N** [глобальный]|
+|File.NewProject|**CTRL+SHIFT+N** [глобальный]|
+|File.NewWebSite|**SHIFT+ALT+N** [глобальный]|
+|File.OpenFile|**CTRL+O** [глобальный]|
+|File.OpenProject|**CTRL+SHIFT+O** [глобальный]|
+|File.OpenWebSite|**SHIFT+ALT+O** [глобальный]|
+|File.Rename|**F2** [Team Explorer]|
+|File.SaveAll|**CTRL+SHIFT+S** [глобальный]|
+|File.SaveSelectedItems|**CTRL+S** [глобальный]|
+|File.ViewinBrowser|**CTRL+SHIFT+W** [глобальный]|
 
 ## <a name="project"></a>Проект
 
-|Команды|Сочетания клавиш [контексты]|  
-|--------------|-------------------------------------|  
-|Project.AddExistingItem|**SHIFT+ALT+A** [глобальный]|  
-|Project.AddNewItem|**CTRL+SHIFT+A** [глобальный]|  
+|Команды|Сочетания клавиш [контексты]|
+|--------------|-------------------------------------|
+|Project.AddExistingItem|**SHIFT+ALT+A** [глобальный]|
+|Project.AddNewItem|**CTRL+SHIFT+A** [глобальный]|
 
 ## <a name="refactor"></a>Рефакторинг
 
-|Команда|Сочетание клавиш [контекст]|  
-|-------------|-----------------------------------|  
-|Refactor.ExtractMethod|**CTRL+R, CTRL+M** [глобальный]|  
+|Команда|Сочетание клавиш [контекст]|
+|-------------|-----------------------------------|
+|Refactor.ExtractMethod|**CTRL+R, CTRL+M** [глобальный]|
 
 ## <a name="tools"></a>Инструменты
 
-|Команда|Сочетание клавиш [контекст]|  
-|-------------|-----------------------------------|  
-|Tools.AttachtoProcess|**CTRL+ALT+P** [глобальный]|  
+|Команда|Сочетание клавиш [контекст]|
+|-------------|-----------------------------------|
+|Tools.AttachtoProcess|**CTRL+ALT+P** [глобальный]|
 
 ## <a name="view"></a>Просмотр
 
-|Команды|Сочетания клавиш [контексты]|  
-|--------------|-------------------------------------|  
-|View.ClassView|**CTRL+SHIFT+C** [глобальный]|  
-|View.EditLabel|**F2** [глобальный]|  
-|View.ErrorList|**CTRL+\\, CTRL+E** [глобальный]<br /><br /> или **CTRL+\\, E** [глобальный]|  
-|View.NavigateBackward|**CTRL+-** [глобальный]|  
-|View.NavigateForward|**CTRL+SHIFT+-** [глобальный]|  
-|View.ObjectBrowser|**CTRL+ALT+J** [глобальный]|  
-|View.Output|**CTRL+ALT+O** [глобальный]|  
-|View.PropertiesWindow|**F4**|  
-|View.Refresh|**F5** [Team Explorer, редактор сведений Team Foundation Build]|  
-|View.ServerExplorer|**CTRL+ALT+S** [глобальный]|  
-|View.ShowSmartTag|**CTRL+.** [Global]<br /><br /> или **SHIFT+ALT+F10** [глобальный, HTML-редактор в конструкторе]|  
-|View.SolutionExplorer|**CTRL+ALT+L** [глобальный]|  
-|View.TfsTeamExplorer|**CTRL+\\, CTRL+M** [глобальный]|  
-|View.Toolbox|**CTRL+ALT+X** [глобальный]|  
-|View.ViewCode|**ВВОД** [схема классов]<br /><br /> или **F7** [конструктор параметров]|  
-|View.ViewDesigner|**SHIFT+F7** [HTML-редактор в представлении кода]|  
+|Команды|Сочетания клавиш [контексты]|
+|--------------|-------------------------------------|
+|View.ClassView|**CTRL+SHIFT+C** [глобальный]|
+|View.EditLabel|**F2** [глобальный]|
+|View.ErrorList|**CTRL+\\, CTRL+E** [глобальный]<br /><br /> или **CTRL+\\, E** [глобальный]|
+|View.NavigateBackward|**CTRL+-** [глобальный]|
+|View.NavigateForward|**CTRL+SHIFT+-** [глобальный]|
+|View.ObjectBrowser|**CTRL+ALT+J** [глобальный]|
+|View.Output|**CTRL+ALT+O** [глобальный]|
+|View.PropertiesWindow|**F4**|
+|View.Refresh|**F5** [Team Explorer, редактор сведений Team Foundation Build]|
+|View.ServerExplorer|**CTRL+ALT+S** [глобальный]|
+|View.ShowSmartTag|**CTRL+.** [Global]<br /><br /> или **SHIFT+ALT+F10** [глобальный, HTML-редактор в конструкторе]|
+|View.SolutionExplorer|**CTRL+ALT+L** [глобальный]|
+|View.TfsTeamExplorer|**CTRL+\\, CTRL+M** [глобальный]|
+|View.Toolbox|**CTRL+ALT+X** [глобальный]|
+|View.ViewCode|**ВВОД** [схема классов]<br /><br /> или **F7** [конструктор параметров]|
+|View.ViewDesigner|**SHIFT+F7** [HTML-редактор в представлении кода]|
 
 ## <a name="window"></a>Окно
 
-|Команды|Сочетания клавиш [контексты]|  
-|--------------|-------------------------------------|  
-|Window.ActivateDocumentWindow|**ESC** [глобальный]|  
-|Window.CloseDocumentWindow|**CTRL+F4** [глобальный]|  
-|Window.NextDocumentWindow|**CTRL+F6** [глобальный]|  
-|Window.NextDocumentWindowNav|**CTRL+TAB** [глобальный]|  
+|Команды|Сочетания клавиш [контексты]|
+|--------------|-------------------------------------|
+|Window.ActivateDocumentWindow|**ESC** [глобальный]|
+|Window.CloseDocumentWindow|**CTRL+F4** [глобальный]|
+|Window.NextDocumentWindow|**CTRL+F6** [глобальный]|
+|Window.NextDocumentWindowNav|**CTRL+TAB** [глобальный]|
 |Window.NextSplitPane|**F6** [глобальный]|
 
 ## <a name="see-also"></a>См. также
 
-[Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)

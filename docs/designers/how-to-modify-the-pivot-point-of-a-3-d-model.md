@@ -1,6 +1,7 @@
 ---
 title: Практическое руководство. Изменение точки вращения трехмерной модели
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d39d8a9406574f3e8959818051a70660042eab92
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d5f6cff8e8890b97e7aeddad69c4a1a3e0ff5db8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Практическое руководство. Изменение точки вращения трехмерной модели
 

@@ -1,6 +1,7 @@
 ---
 title: Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a843f15275893f0c4ffe110e39bb2069b5a51be
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта
 

@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Использование окружающих фрагментов кода | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 044eb79eec4d0ee4ee4684c2e01ea73a94fef7ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Практическое руководство. Использование окружающих фрагментов кода
 
@@ -58,5 +58,5 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Фрагменты кода C#](../ide/visual-csharp-code-snippets.md)  
-[Выбор фрагментов кода](../ide/reference/code-snippet-picker.md)
+- [Фрагменты кода C#](../ide/visual-csharp-code-snippets.md)
+- [Выбор фрагментов кода](../ide/reference/code-snippet-picker.md)
