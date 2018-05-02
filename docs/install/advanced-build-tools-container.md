@@ -1,12 +1,10 @@
 ---
-title: Расширенный пример для контейнеров | Документы Майкрософт
+title: Расширенный пример для контейнеров
+description: ''
 ms.custom: ''
-ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -14,54 +12,77 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 469b8933d5bd7f60a611161e5a871e8cfa4536f7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c941928495dc39dc6b6ecbe9600f39dad969fec2
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="advanced-example-for-containers"></a>Расширенный пример для контейнеров
 
-Пример файла Dockerfile, приведенный в разделе [Установка средств сборки в контейнер](build-tools-container.md), всегда использует последние версии образа microsoft/windowsservercore и установщика Visual Studio Build Tools 2017. Если вы публикуете этот образ в [реестре Docker](https://azure.microsoft.com/services/container-registry), чтобы его могли извлекать другие пользователи, то во многих случаях он будет подходящим. Однако на практике чаще требуется использовать определенный базовый образ, скачивать определенные двоичные файлы и устанавливать определенные версии средств.
+Пример файла Dockerfile, приведенный в разделе [Установка средств сборки в контейнер](build-tools-container.md), всегда использует образ [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) на основе последней версии образа microsoft/windowsservercore и последнюю версию установщика Visual Studio Build Tools 2017. Если вы публикуете этот образ в [реестре Docker](https://azure.microsoft.com/services/container-registry), чтобы его могли извлекать другие пользователи, то во многих случаях он будет подходящим. Однако на практике чаще требуется использовать определенный базовый образ, скачивать определенные двоичные файлы и устанавливать определенные версии средств.
 
-Приведенный ниже пример файла Dockerfile использует конкретный тег версии образа microsoft/windowsservercore. Применение определенного тега для базового образа — распространенная практика. Таким образом вы не забудете, что для сборки или повторной сборки образов должна использоваться одна и та же основа.
+Приведенный ниже пример файла Dockerfile использует конкретный тег версии образа microsoft/dotnet-framework. Применение определенного тега для базового образа — распространенная практика. Таким образом вы не забудете, что для сборки или повторной сборки образов должна использоваться одна и та же основа.
 
 > [!NOTE]
-> Среду Visual Studio невозможно установить в образе microsoft/windowsservercore:10.0.14393.1593, так как в нем имеются известные проблемы с запуском установщика в контейнере. Дополнительные сведения см. в разделе [Известные проблемы](build-tools-container-issues.md).
+> Среду Visual Studio невозможно установить в образе microsoft/windowsservercore:10.0.14393.1593 или любом основанном на нем образе, так как в нем имеются известные проблемы с запуском установщика в контейнере. Дополнительные сведения см. в разделе [Известные проблемы](build-tools-container-issues.md).
 
-В примере также используется начальный загрузчик Build Tools 2017, который устанавливает определенную версию, созданную в одно время с начальным загрузчиком. Продукт все же можно обновить через канал выпуска, однако делать это для контейнеров, требующих повторной сборки, нецелесообразно. Чтобы узнать URL-адреса для определенного канала, можно скачать канал со страницы https://aka.ms/vs/15/release/channel, открыть файл JSON и найти в нем URL-адреса начального загрузчика. Дополнительные сведения см. в статье [Создание сетевой установки Visual Studio](create-a-network-installation-of-visual-studio.md).
+В приведенном ниже примере скачивается последняя версия средств Build Tools 2017. Если вы хотите использовать более раннюю версию средств Build Tools, которую можно было бы установить в контейнер позднее, следует сначала [создать](create-an-offline-installation-of-visual-studio.md) и [подготовить](update-a-network-installation-of-visual-studio.md) макет.
+
+## <a name="install-script"></a>Скрипт установки
+
+Чтобы в случае ошибки происходил сбор данных журнала, создайте в рабочем каталоге пакетный скрипт с именем Install.cmd и следующим содержимым:
+
+```shell
+@if not defined _echo echo off
+setlocal enabledelayedexpansion
+
+call %*
+if "%ERRORLEVEL%"=="3010" (
+    exit /b 0
+) else (
+    if not "%ERRORLEVEL%"=="0" (
+        set ERR=%ERRORLEVEL%
+        call C:\TEMP\collect.exe -zip:C:\vslogs.zip
+
+        exit /b !ERR!
+    )
+)
+```
+
+## <a name="dockerfile"></a>Dockerfile
+
+В рабочем каталоге создайте файл Dockerfile со следующим содержимым:
 
 ```dockerfile
+# escape=`
+
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:d841bd78721c74f9b88e2700f5f3c2d66b54cb855b8acb4ab2c627a76a46301d
-FROM microsoft/windowsservercore:10.0.14393.1770
+# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
+ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+FROM ${FROM_IMAGE}
 
-# Use PowerShell commands to download, validate hashes, etc.
-SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command", "$ErrorActionPreference='Stop'; $ProgressPreference='SilentlyContinue'; $VerbosePreference = 'Continue';"]
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
 
-# Download Build Tools 15.4.27004.2005 and other useful tools.
-ENV VS_BUILDTOOLS_URI=https://aka.ms/vs/15/release/6e8971476/vs_buildtools.exe \
-    VS_BUILDTOOLS_SHA256=D482171C7F2872B6B9D29B116257C6102DBE6ABA481FAE4983659E7BF67C0F88 \
-    NUGET_URI=https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe \
-    NUGET_SHA256=4C1DE9B026E0C4AB087302FF75240885742C0FAA62BD2554F913BBE1F6CB63A0
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 
-# Download tools to C:\Bin and install Build Tools excluding workloads and components with known issues.
-RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; \
-    [System.Environment]::SetEnvironmentVariable('PATH', "\"${env:PATH};C:\Bin\"", 'Machine'); \
-    function Fetch ([string] $Uri, [string] $Path, [string] $Hash) { \
-      Invoke-RestMethod -Uri $Uri -OutFile $Path; \
-      if ($Hash -and ((Get-FileHash -Path $Path -Algorithm SHA256).Hash -ne $Hash)) { \
-        throw "\"Download hash for '$Path' incorrect\""; \
-      } \
-    }; \
-    Fetch -Uri $env:NUGET_URI -Path C:\Bin\nuget.exe -Hash $env:NUGET_SHA256; \
-    Fetch -Uri $env:VS_BUILDTOOLS_URI -Path C:\TEMP\vs_buildtools.exe -Hash $env:VS_BUILDTOOLS_SHA256; \
-    Fetch -Uri 'https://aka.ms/vscollect.exe' -Path C:\TEMP\collect.exe; \
-    $p = Start-Process -Wait -PassThru -FilePath C:\TEMP\vs_buildtools.exe -ArgumentList '--quiet --wait --norestart --nocache --installPath C:\BuildTools --all --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 --remove Microsoft.VisualStudio.Component.Windows81SDK'; \
-    if (($ret = $p.ExitCode) -and ($ret -ne 3010)) { C:\TEMP\collect.exe; throw ('Install failed with exit code 0x{0:x}' -f $ret) }
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/15/release/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Restore default shell for Windows containers.
-SHELL ["cmd.exe", "/s", "/c"]
+# Download and install Build Tools excluding workloads and components with known issues.
+ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --all `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
 
 # Start developer command prompt with any other commands specified.
 ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
@@ -70,36 +91,44 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
+Выполните следующую команду, чтобы произвести сборку образа в текущем рабочем каталоге:
+
+```shell
+docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
+```
+
+При необходимости передайте оба аргумента `FROM_IMAGE` и `CHANNEL_URL` или один из них с помощью параметра командной строки `--build-arg`, чтобы указать другой базовый образ или другое расположение внутреннего макета для поддержания фиксированного образа.
+
+## <a name="diagnosing-install-failures"></a>Диагностика ошибок установки
+
 В этом примере скачиваются определенные средства и проверяется совпадение хэш-кодов. В нем также скачивается последняя версия служебной программы для сбора журналов Visual Studio и .NET, чтобы в случае сбоя установки вы могли скопировать журналы на хост-компьютер для анализа ошибок.
 
 ```shell
-> docker build -t buildtools:15.4.27004.2005 -t buildtools:latest -m 2GB .
+> docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 Sending build context to Docker daemon
 ...
-Step 4/7 : RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; ...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
  ---> Running in 4b62b4ce3a3c
-Install failed with exit code 0x643
-At line:1 char:1
-+ throw ('Install failed with exit code 0x{0:x}' -f 1603)
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Install failed with exit code 0x643:String) [], RuntimeException
-    + FullyQualifiedErrorId : Install failed with exit code 0x643
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
 
-> docker cp 4b62b4ce3a3c:C:\Users\ContainerAdministrator\AppData\Local\TEMP\vslogs.zip "%TEMP%\vslogs.zip"
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
 ```
 
 Когда завершится выполнение последней строки, откройте файл %TEMP%\vslogs.zip на своем компьютере или отправьте сообщение об ошибке на веб-сайте [сообщества разработчиков](https://developercommunity.visualstudio.com).
 
 ## <a name="get-support"></a>Техническая поддержка
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
+
 * Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
 * Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
+* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>См. также
+
 * [Установка средств сборки в контейнер](build-tools-container.md)
 * [Известные проблемы для контейнеров](build-tools-container-issues.md)
 * [Идентификаторы рабочих нагрузок и компонентов для Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)

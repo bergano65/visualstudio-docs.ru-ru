@@ -1,54 +1,27 @@
 ---
-title: "Преимущество MODERNRequirements в подписках Visual Studio | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the ModernRequirements suite of products included in selected Visual Studio Enterprise subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4ff6c7db66547bc2d4da05bf9aec087113c64cbe
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Преимущество MODERNRequirements в подписках Visual Studio | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Сведения о наборе продуктов ModernRequirements, входящем в некоторые подписки Visual Studio Enterprise.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: c16033488db6e23e935f355183db7d7049690ba5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Преимущество MODERNRequirements4TFS в подписках Visual Studio
 
-## <a name="overview"></a>Обзор
-
 Некоторые подписки Visual Studio включают шестимесячную подписку на MODERNRequirements SmartOffice 4TFS и ModernRequirements4TFS.  SmartOffice4TFS от MODERNRequirements расширяет возможности TFS или Visual Studio Team Services благодаря возможности использования отчетов на основе Microsoft Word, а также быстрого и простого создания текстов в формате RTF.  ModernRequirements4TFS предоставляет базовые показатели рабочих элементов и возможности моделирования HTML5.  
 
-## <a name="eligibility"></a>Право на участие
-| Уровень подписки или программа                                                  | Преимущество               | Возможность возобновления                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise — уровень "Стандартный"                                             | 6 месяцев              |  Да                                                               |
-| Visual Studio Enterprise — годовая подписка                                               | 6 месяцев              |  Да                                                               |
-| Visual Studio Enterprise — месячная подписка                                              | Недоступно         |                                                                    |
-| Visual Studio Professional — уровень "Стандартный"                                           | Недоступно         |                                                                    |
-| Visual Studio Professional — годовая подписка                                             | Недоступно         |                                                                    | 
-| Visual Studio Professional — месячная подписка                                            | Недоступно         |                                                                    |
-| Visual Studio Test Pro                                                        | Недоступно         |                                                                    |
-| MSDN Platforms                                                                | Недоступно         |                                                                    |
-| Visual Studio Dev Essentials                                                  | Недоступно         |                                                                    |
-| Visual Studio Enterprise — NFR<sup>1</sup>                                               | 6 месяцев              |  Да                                                               |
-| Visual Studio Enterprise — FTE                                                | 6 месяцев              |  Да                                                               |
-| Visual Studio Enterprise — Microsoft Partner Network                          | 6 месяцев              |  Да                                                               |
-| Visual Studio Professional — Microsoft Partner Network                        | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Стандартный")                                 | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Премиум")                                  | Недоступно         |                                                                    |
-| Visual Studio Enterprise — BizSpark                                           | Недоступно         |                                                                    |
-| Microsoft Certified Trainer — программное обеспечение и службы                             | Недоступно         |                                                                    |
-| Microsoft Certified Trainer — разработчик программного обеспечения и служб                   | Недоступно         |                                                                    |
-
-<sup>1</sup> *Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)*   
-
-Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="activation-steps"></a>Процедура активации
-1.  Чтобы воспользоваться преимуществом MODERNRequirementsTFS, перейдите по адресу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Чтобы воспользоваться преимуществом MODERNRequirementsTFS, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Найдите плитку "MODERNRequirements4TFS" в разделе "Средства" и щелкните ссылку **Получить код** в левом нижнем углу плитки преимущества.   
 
     ![Плитка преимущества ModernRequirements](_img\vs-modernreq\vs-modernreq-tile.png)
@@ -109,10 +82,21 @@ ms.lasthandoff: 01/29/2018
 
 22. После открытия Word вы заметите, что появилась новая вкладка SmartWord4TFS. Щелкните ее, чтобы отобразить набор инструментов SmartWord4TFS. 
 
-## <a name="faq"></a>часто задаваемые вопросы
-*Проверка обновлений*
+## <a name="eligibility"></a>Право на участие
+| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                          |Н/Д     |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                                          |Н/Д     |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                                          |Н/Д     |
+| Visual Studio Dev Essentials | Н/Д  |Недоступно                                                          |Н/Д     |
+| Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+
+<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (Enterprise), FTE.  Не включает следующие категории: Microsoft Partner Network (Professional), разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Partner (MVP), региональный директор (RD).  ПО и службы MCT.*
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Нужна помощь с продуктами ModernRequirements?  Зайдите на страницу https://www.modernrequirements.com/support-2/.
+-  Нужна помощь с продуктами ModernRequirements?  Посетите сайт https://www.modernrequirements.com/support-2/.
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
 -  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 

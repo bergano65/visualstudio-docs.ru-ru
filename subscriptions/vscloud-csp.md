@@ -1,19 +1,19 @@
 ---
 title: Приобретение облачной подписки Visual Studio для поставщиков облачных решений
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Сведения для поставщиков облачных решений о приобретении облачных подписок Visual Studio для клиентов и управлении ими.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Покупайте облачные подписки Visual Studio для ваших клиентов и управляйте ими
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 03/22/2018
 Мы предлагаем скидку 5 % на шестую приобретаемую единицу (для одного клиента) каждый месяц для каждой подписки Visual Studio. Поэтому для каждого варианта подписки существует две строки. В одной строке указано "Минимальное значение" 0, что означает базовую цену за единицы с первой по пятую. В другой строке "Минимальное значение" равно 5, что означает цену со скидкой 5 %, которая применяется к шестой и последующим единицам.
 
 
-## <a name="faq"></a>часто задаваемые вопросы
+## <a name="frequently-asked-questions"></a>Вопросы и ответы
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Вопрос. Как обрабатывается плата за **ежемесячную** облачную подписку?
 Ответ. При первой покупке мы взимаем плату пропорционально оставшемуся количеству дней в текущем месяце. Например, если вы купили 10 ежемесячных облачных подписок Visual Studio Professional 15 апреля, мы взимаем плату за 5 единиц, поскольку в 30-дневном месяце осталось 15 дней, то есть мы сокращаем стоимость на 50 %. Первого мая и каждый последующий месяц до отмены подписки мы будем взимать плату за 10 единиц.
 

@@ -1,26 +1,20 @@
 ---
-title: "Визуализация данных с помощью инструментов R для Visual Studio | Документы Майкрософт"
-description: "Практическое руководство по построению графиков данных из программ R в Visual Studio с помощью окон графиков."
-ms.custom: 
+title: Визуализация данных с помощью R
+description: Практическое руководство по построению графиков данных из программ R в Visual Studio с помощью окон графиков.
 ms.date: 06/29/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Создание визуальных графиков данных с помощью R
 

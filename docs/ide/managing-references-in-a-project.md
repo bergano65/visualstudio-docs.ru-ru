@@ -1,13 +1,8 @@
 ---
-title: Управление ссылками в проекте | Документы Майкрософт
-ms.custom: ''
-ms.date: 10/26/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: Управление ссылками в проекте
+ms.date: 04/11/2018
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
+# <a name="manage-references-in-a-project"></a>Управление ссылками в проекте
 
 Перед написанием кода для внешних компонентов или подключенных служб необходимо включить в проект ссылки на них. По сути, ссылка — это запись в файле проекта, которая содержит сведения, необходимые Visual Studio для поиска компонента или службы.
 
-Чтобы добавить ссылку, в обозревателе решений щелкните правой кнопкой мыши узел «Ссылки» и выберите команду **Добавить ссылку**. Для получения дополнительной информации см. [Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Чтобы добавить ссылку, в **обозревателе решений** щелкните правой кнопкой мыши узел **Ссылки** или **Зависимости** и выберите команду **Добавить ссылку**. Вы также можете щелкнуть узел проекта правой кнопкой мыши и выбрать пункт **Добавить** > **Ссылка**. Дополнительные сведения см. в статье [Практическое руководство. Добавление и удаление ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Добавление ссылки в Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Добавление ссылки в Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
-Вы можете создать ссылку на следующие типы компонентов и служб:
+Вы можете добавить ссылку на следующие типы компонентов и служб:
 
 - библиотеки классов или сборки .NET Framework;
 
@@ -81,11 +76,11 @@ ms.lasthandoff: 03/15/2018
 
 1. Перезапустите Visual Studio и откройте ваше приложение.
 
-1. Щелкните правой кнопкой мыши узел **Ссылки** в проекте, который вызвал ошибку, и выберите **Добавить ссылку**.
+1. Щелкните правой кнопкой мыши узел **Ссылки** или **Зависимости** в проекте, который вызвал ошибку, и выберите команду **Добавить ссылку**.
 
 1. Откройте вкладку **Windows**, а затем вложенную вкладку **Расширения**, после чего снимите флажки для старых пакетов SDK расширений и установите флажки для новых пакетов SDK расширений. Нажмите кнопку **ОК**.
 
-## <a name="adding-a-reference-at-design-time"></a>Добавление ссылки во время разработки
+## <a name="add-a-reference-at-design-time"></a>Добавление ссылки во время разработки
 
 При создании ссылки на сборку в проекте Visual Studio ищет сборку в следующих расположениях:
 
@@ -94,7 +89,9 @@ ms.lasthandoff: 03/15/2018
 - Другие каталоги проектов в одном решении. (Вы можете найти эти сборки на вкладке **Проекты** .)
 
 > [!NOTE]
-> Все проекты содержат неявную ссылку на библиотеку mscorlib. Проекты Visual Basic содержат неявную ссылку на `Microsoft.VisualBasic`. Все проекты содержат неявную ссылку на `System.Core`, даже если `System.Core` была удалена из списка ссылок.
+> - Все проекты содержат неявную ссылку на библиотеку mscorlib.
+> - Все проекты содержат неявную ссылку на `System.Core`, даже если `System.Core` была удалена из списка ссылок.
+> - Проекты Visual Basic содержат неявную ссылку на `Microsoft.VisualBasic`.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Ссылки на общие компоненты во время выполнения
 
@@ -104,9 +101,9 @@ ms.lasthandoff: 03/15/2018
 
 По умолчанию для свойства <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> задается значение **False** , если сборка или компонент находится в глобальном кэше сборок или является компонентом платформы. В противном случае задается значение **True**. Ссылки проектов на проекты всегда имеют значение **True**.
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Ссылка на проект или сборку, которая ссылается на другую версию .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Ссылка на проект или сборку, которые предназначены для другой версии .NET Framework
 
-Разработчики могут создавать приложения, которые ссылаются на проекты или сборки, предназначенные для другой версии платформы .NET Framework. Например, разработчик может создать приложение, предназначенное для [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] и ссылающееся на сборку, которая предназначена для [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. При создании проекта, предназначенного для более ранней версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], задание в этом проекте ссылки на проект или сборку для более новой версии невозможно.
+Разработчики могут создавать приложения, которые ссылаются на проекты или сборки, предназначенные для другой версии платформы .NET Framework. Например, вы можете создать приложение, предназначенное для .NET Framework 4.6 и ссылающееся на сборку, которая предназначена для .NET Framework 4.5. При создании проекта, предназначенного для более ранней версии .NET Framework, задание в этом проекте ссылки на проект или сборку для более новой версии невозможно.
 
 Дополнительные сведения см. в статье [Обзор настройки для различных версий](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -125,5 +122,5 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="see-also"></a>См. также
 
-[Диагностика неработающих ссылок](../ide/troubleshooting-broken-references.md)
-[Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Диагностика неработающих ссылок](../ide/troubleshooting-broken-references.md)
+- [Практическое руководство. Добавление и удаление ссылок](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

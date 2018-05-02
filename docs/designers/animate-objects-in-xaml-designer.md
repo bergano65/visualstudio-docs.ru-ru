@@ -1,45 +1,30 @@
 ---
-title: "Анимирование объектов в конструкторе XAML | Документы Майкрософт"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Анимирование объектов в конструкторе XAML
+ms.date: 04/11/2018
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 57aa814ac458fc3c893f8a2d557840d936ed033b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 46b08815a320faf7043d860b4cd96f4120409854
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Анимирование объектов в конструкторе XAML
-Вы можете создавать короткие анимации, которые перемещают объекты или позволяют им исчезать и появляться.  
-  
- Чтобы начать работу, создайте *раскадровку*. Раскадровка содержит одну или несколько *временных шкал*. Задайте *опорные кадры* на временной шкале, чтобы отметить изменения свойств. Затем при запуске анимации Blend интерполирует изменения свойств за указанный период времени. Результатом является плавный переход. Вы можете анимировать любое свойство, которое принадлежит к объекту, даже если оно не является визуальным.  
-  
- На следующем рисунке показана раскадровка под названием **MoveUp**. Временная шкала содержит ключевые кадры, которые отмечают позиции X и Y прямоугольника. При запуске анимации прямоугольник плавно перемещается из одной позиции в другую.  
-  
- ![](../designers/media/982f031a-74a3-414a-abc2-a0f41a741075.png "982f031a-74a3-414a-abc2-a0f41a741075")  
-  
- Посмотрите следующие видео, чтобы узнать, как создавать анимацию.  
-  
-|Ознакомьтесь с коротким видео.|Получите следующие сведения:|  
-|--------------------------|-------------------|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание временных шкал](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Создание временной шкалы и работа с объектами временной шкалы.|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Добавление опорных кадров и повторение анимации](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Добавьте ключевые кадры и задайте свойства для каждого ключевого кадра. Затем запустите анимацию, и вы увидите, как объекты плавно перемещаются между ключевыми кадрами.|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Добавление триггеров событий для обеспечения интерактивности](http://www.popscreen.com/v/6A4e4/Microsoft-Expression-Blend-Adding-Event-Triggers-for-Interactivity)|Запуск анимации при возникновении события. Например, анимация запустится при загрузке окна.|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Анимация цветов](http://www.popscreen.com/v/6A4gv/Microsoft-Expression-Blend-Animating-Colors)|Используйте анимацию для изменения цвета объекта.|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание и изменение путей перемещения](http://www.popscreen.com/v/6A4fX/Microsoft-Expression-Blend-Creating-and-Modifying-Motion-Paths)|Анимация объектов для всего пути.|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Плавность опорных кадров](http://www.popscreen.com/v/6A4dM/Microsoft-Expression-Blend-Easing-Keyframes)|Ускорение или замедление анимации в начале (*замедление в начале*) или к концу (*замедление в конце*) анимации.|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Анимация кнопки](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Создание интересных эффектов, которые отображаются на кнопке при наведении на нее курсора.|  
-|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание анимации и работа с плавностью](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Анимация эффектов, которые отображаются в том случае, когда пользователь нажимает кнопку на изображении калькулятора.|  
-  
-## <a name="see-also"></a>См. также  
- [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+
+Вы можете создавать короткие анимации, которые перемещают объекты или позволяют им исчезать и появляться.
+
+Чтобы начать работу, создайте *раскадровку*. Раскадровка содержит одну или несколько *временных шкал*. Задайте *опорные кадры* на временной шкале, чтобы отметить изменения свойств. Затем при запуске анимации Blend интерполирует изменения свойств за указанный период времени. Результатом является плавный переход. Вы можете анимировать любое свойство, которое принадлежит к объекту, даже если оно не является визуальным.
+
+На следующем рисунке показана раскадровка под названием **MoveUp**. Временная шкала содержит ключевые кадры, которые отмечают позиции X и Y прямоугольника. При запуске анимации прямоугольник плавно перемещается из одной позиции в другую.
+
+![Раскадровка MoveUp в конструкторе XAML](../designers/media/982f031a-74a3-414a-abc2-a0f41a741075.png)
+
+## <a name="see-also"></a>См. также
+
+- [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

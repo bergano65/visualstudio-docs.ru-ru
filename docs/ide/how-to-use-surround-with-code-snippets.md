@@ -1,25 +1,22 @@
 ---
-title: "Практическое руководство. Использование окружающих фрагментов кода | Документы Майкрософт"
-ms.custom: 
+title: Практическое руководство. Использование окружающих фрагментов кода | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 685f227205deb306d7d18dcea2e620e2366ad73f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 044eb79eec4d0ee4ee4684c2e01ea73a94fef7ba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Практическое руководство. Использование окружающих фрагментов кода
 
@@ -29,7 +26,7 @@ ms.lasthandoff: 02/09/2018
 
 1. В интегрированной среде разработки Visual Studio откройте файл, который требуется отредактировать.
 
-1. В редакторе кода выделите текст, который нужно окружить.
+1. В **редакторе кода** выделите текст, который нужно окружить.
 
 1. Нажмите клавиши **CTRL**+**K**, **CTRL**+**S**.
 
@@ -39,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 
 1. В интегрированной среде разработки Visual Studio откройте файл, который требуется отредактировать.
 
-1. В редакторе кода выделите текст, который нужно окружить.
+1. В **редакторе кода** выделите текст, который нужно окружить.
 
 1. В меню **Правка** выберите **IntelliSense**, а затем выберите команду **Окружить**.
 
@@ -51,7 +48,7 @@ ms.lasthandoff: 02/09/2018
 
 1. В интегрированной среде разработки Visual Studio откройте файл, который требуется отредактировать.
 
-1. В редакторе кода выделите текст, который нужно окружить.
+1. В **редакторе кода** выделите текст, который нужно окружить.
 
 1. Щелкните правой кнопкой мыши выделенный текст и в контекстном меню выберите команду **Окружить**.
 

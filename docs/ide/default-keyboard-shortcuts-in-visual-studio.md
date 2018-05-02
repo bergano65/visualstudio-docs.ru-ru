@@ -1,13 +1,10 @@
 ---
-title: Сочетания клавиш по умолчанию в Visual Studio | Документы Майкрософт
+title: Сочетания клавиш по умолчанию в Visual Studio | Документы Майкрософт
 ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
 - keyboard binding schemes [Visual Studio]
@@ -16,21 +13,21 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 8c14850f01d937fe78793b003b7adad8e2a7d930
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
-Дополнительные сведения о специальных возможностях клавиатуры см. в разделе [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Использование только клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Дополнительные сведения о специальных возможностях клавиатуры см. в статьях [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Использование только клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Сочетания клавиш позволяют получать доступ к различным командам и окнам Visual Studio. В этом разделе перечислены сочетания клавиш по умолчанию для профиля "Обычные параметры среды разработки", который мог быть выбран при установке Visual Studio. Независимо от выбранного профиля сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**. Кроме того, сочетания клавиш можно настраивать, назначая командам другие сочетания клавиш.
 
-Список распространенных сочетаний клавиш и другие сведения о средствах повышения производительности см. в руководствах по работе со [стандартными сочетаниями клавиш для часто используемых команд в Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) и [клавиатурой](../ide/tips-and-tricks-for-visual-studio.md), а также способами [повышения производительности](../ide/productivity-tips-for-visual-studio.md).
+Список распространенных сочетаний клавиш и другие сведения о средствах повышения производительности см. в руководствах по работе со [стандартными сочетаниями клавиш для часто используемых команд в Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) и [клавиатурой](../ide/tips-and-tricks-for-visual-studio.md), а также в [советах по повышению производительности](../ide/productivity-tips-for-visual-studio.md).
 
 В следующей таблице перечислены разделы, команды которых являются глобальными и доступны с помощью сочетаний клавиш из любого раздела Visual Studio.
 
@@ -44,1129 +41,1111 @@ ms.lasthandoff: 03/22/2018
 |[Контекстные меню отладчика](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Другие контекстные меню](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Контекстные меню Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|  
 |[Концентратор диагностики](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||  
 
-Каждый раздел в следующей таблице содержит команды, сочетания клавиш которых зависят от контекста, определяемого названием раздела.
-
-|||||  
-|-|-|-|-|  
-|[Конструктор EDM ADO.NET](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[Схема слоев](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[Конструктор параметров](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[Редактор изображений VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|  
-|[Схема классов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Редактор управляемых ресурсов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[Обозреватель решений](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[Редактор строк VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
-|[Редактор закодированных тестов пользовательского интерфейса](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[Окно редактора слияния](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[Конструктор представлений](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
-|[Редактор наборов данных](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Средства работы с данными Microsoft SQL Server, сравнение схем](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Редактор сведений Team Foundation Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
-|[Средство просмотра различий](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Средства работы с данными Microsoft SQL Server, конструктор таблиц](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Обозреватель тестов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Конструктор Windows Forms](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
-|[Проводник DOM](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Средства работы с данными Microsoft SQL Server, редактор T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Текстовый редактор](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[Редактор рабочих элементов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|  
-|[Окно "Интерактивный F#"](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Средства работы с данными Microsoft SQL Server, редактор T-SQL PDW](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[Схема активности UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Представление запросов рабочих элементов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
-|[Редактор документов диаграмм](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Инспектор страниц](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[Схема классов UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Представление результатов рабочих элементов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
-|[Диагностика графики](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Конструктор запросов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[Схема компонентов UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[Конструктор рабочих процессов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
-|[Редактор HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Результаты запроса](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[Схема вариантов использования UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[Конструктор пользовательского интерфейса XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
-|[Представление разработки редактора HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Конструктор отчетов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[Редактор сочетаний клавиш VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Редактор (текстовый) XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
-|[Представление исходного текста редактора HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Схема последовательностей](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Редактор диалоговых окон VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Конструктор схемы XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
-
 ##  <a name="bkmk_global"></a> Глобальные
 
 ###  <a name="bkmk_analyze"></a> Анализ
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Analyze.NavigateBackward|Shift+Alt+3|  
-|Analyze.NavigateForward|Shift+Alt+4|  
+|Analyze.NavigateBackward|**SHIFT+ALT+3**|  
+|Analyze.NavigateForward|**SHIFT+ALT+4**|  
 
 ###  <a name="bkmk_architecture"></a> Архитектура
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Architecture.NewDiagram|CTRL+\\, CTRL+N|  
+|Architecture.NewDiagram|**CTRL+\\, CTRL+N**|  
 
 ###  <a name="bkmk_build"></a> Сборка
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Build.BuildSolution|Ctrl+Shift+B|  
-|Build.Cancel|Ctrl+Break|  
-|Build.Compile|Ctrl+F7|  
-|Build.RunCodeAnalysisonSolution|Alt+F11|  
+|Build.BuildSolution|**CTRL+SHIFT+B**|  
+|Build.Cancel|**CTRL+BREAK**|  
+|Build.Compile|**CTRL+F7**|  
+|Build.RunCodeAnalysisonSolution|**ALT+F11**|  
 
 ###  <a name="bkmk_classview"></a> Контекстные меню представления классов
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|ALT+ВВОД|  
+|ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+ВВОД**|  
 
 ###  <a name="bkmk_debug"></a> Отладка
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Debug.ApplyCodeChanges|Alt+F10|  
-|Debug.Autos|Ctrl+Alt+V, A|  
-|Debug.BreakAll|Ctrl+Alt+Break|  
-|Debug.BreakatFunction|Ctrl+B|  
-|Debug.Breakpoints|Ctrl+Alt+B|  
-|Debug.CallStack|Ctrl+Alt+C|  
-|Debug.DeleteAllBreakpoints|Ctrl+Shift+F9|  
-|Debug.DiagnosticsHub.Launch|Alt+F2|  
-|Debug.Disassembly|Ctrl+Alt+D|  
-|Debug.DOMExplorer|Ctrl+Alt+V, D|  
-|Debug.EnableBreakpoint|Ctrl+F9|  
-|Debug.Exceptions|Ctrl+Alt+E|  
-|Debug.GoToPreviousCallorIntelliTraceEvent|Ctrl+Shift+F11|  
-|Debug.Graphics.StartDiagnostics|Alt+F5|  
-|Debug.Immediate|Ctrl+Alt+I|  
-|Debug.IntelliTraceCalls|Ctrl+Alt+Y, T|  
-|Debug.IntelliTraceEvents|Ctrl+Alt+Y, F|  
-|Debug.JavaScriptConsole|Ctrl+Alt+V, C|  
-|Debug.Locals|Ctrl+Alt+V, L|  
-|Debug.LocationToolbar.ProcessCombo|Ctrl+5|  
-|Debug.LocationToolbar.StackFrameCombo|CTRL+7|  
-|Debug.LocationToolbar.ThreadCombo|Ctrl+6|  
-|Debug.LocationToolbar.ToggleCurrentThreadFlaggedState|CTRL+8|  
-|Debug.LocationToolbar.ToggleFlaggedThreads|CTRL+9|  
-|Debug.Memory1|Ctrl+Alt+M, 1|  
-|Debug.Memory2|Ctrl+Alt+M, 2|  
-|Debug.Memory3|Ctrl+Alt+M, 3|  
-|Debug.Memory4|Ctrl+Alt+M, 4|  
-|Debug.Modules|Ctrl+Alt+U|  
-|Debug.ParallelStacks|Ctrl+Shift+D, S|  
-|Debug.ParallelWatch1|Ctrl+Shift+D, 1|  
-|Debug.ParallelWatch2|Ctrl+Shift+D, 2|  
-|Debug.ParallelWatch3|Ctrl+Shift+D, 3|  
-|Debug.ParallelWatch4|Ctrl+Shift+D, 4|  
-|Debug.Processes|Ctrl+Alt+Z|  
-|Debug.QuickWatch|SHIFT+F9<br /><br /> или<br /><br /> Ctrl+Alt+Q|  
-|Debug.RefreshWindowsapp|CTRL+SHIFT+R|  
-|Debug.Registers|Ctrl+Alt+G|  
-|Debug.Restart|Ctrl+Shift+F5|  
-|Debug.RunToCursor|Ctrl+F10|  
-|Debug.SetNextStatement|Ctrl+Shift+F10|  
-|Debug.ShowCallStackonCodeMap|Ctrl+Shift+`|  
-|Debug.ShowNextStatement|Alt+Num *|  
-|Debug.Start|F5|  
-|Debug.StartWindowsPhoneApplicationAnalysis|Alt+F1|  
-|Debug.StartWithoutDebugging|Ctrl+F5|  
-|Debug.StepInto|F11|  
-|Debug.StepIntoCurrentProcess|Ctrl+Alt+F11|  
-|Debug.StepIntoSpecific|Shift+Alt+F11|  
-|Debug.StepOut|SHIFT+F11|  
-|Debug.StepOutCurrentProcess|Ctrl+Shift+Alt+F11|  
-|Debug.StepOver|F10|  
-|Debug.StepOverCurrentProcess|Ctrl+Alt+F10|  
-|Debug.StopDebugging|SHIFT+F5|  
-|Debug.StopPerformanceAnalysis|Shift+Alt+F2|  
-|Debug.Tasks|Ctrl+Shift+D, K|  
-|Debug.Threads|Ctrl+Alt+H|  
-|Debug.ToggleBreakpoint|F9|  
-|Debug.ToggleDisassembly|CTRL+F11|  
-|Debug.Watch1|Ctrl+Alt+W, 1|  
-|Debug.Watch2|Ctrl+Alt+W, 2|  
-|Debug.Watch3|Ctrl+Alt+W, 3|  
-|Debug.Watch4|Ctrl+Alt+W, 4|  
+|Debug.ApplyCodeChanges|**ALT+F10**|  
+|Debug.Autos|**CTRL+ALT+V, A**|  
+|Debug.BreakAll|**CTRL+ALT+BREAK**|  
+|Debug.BreakatFunction|**CTRL+B**|  
+|Debug.Breakpoints|**CTRL+ALT+B**|  
+|Debug.CallStack|**CTRL+ALT+C**|  
+|Debug.DeleteAllBreakpoints|**CTRL+SHIFT+F9**|  
+|Debug.DiagnosticsHub.Launch|**ALT+F2**|  
+|Debug.Disassembly|**CTRL+ALT+D**|  
+|Debug.DOMExplorer|**CTRL+ALT+V, D**|  
+|Debug.EnableBreakpoint|**CTRL+F9**|  
+|Debug.Exceptions|**CTRL+ALT+E**|  
+|Debug.GoToPreviousCallorIntelliTraceEvent|**CTRL+SHIFT+F11**|  
+|Debug.Graphics.StartDiagnostics|**ALT+F5**|  
+|Debug.Immediate|**CTRL+ALT+I**|  
+|Debug.IntelliTraceCalls|**CTRL+ALT+Y, T**|  
+|Debug.IntelliTraceEvents|**CTRL+ALT+Y, F**|  
+|Debug.JavaScriptConsole|**CTRL+ALT+V, C**|  
+|Debug.Locals|**CTRL+ALT+V, L**|  
+|Debug.LocationToolbar.ProcessCombo|**CTRL+5**|  
+|Debug.LocationToolbar.StackFrameCombo|**CTRL+7**|  
+|Debug.LocationToolbar.ThreadCombo|**CTRL+6**|  
+|Debug.LocationToolbar.ToggleCurrentThreadFlaggedState|**CTRL+8**|  
+|Debug.LocationToolbar.ToggleFlaggedThreads|**CTRL+9**|  
+|Debug.Memory1|**CTRL+ALT+M, 1**|  
+|Debug.Memory2|**CTRL+ALT+M, 2**|  
+|Debug.Memory3|**CTRL+ALT+M, 3**|  
+|Debug.Memory4|**CTRL+ALT+M, 4**|  
+|Debug.Modules|**CTRL+ALT+U**|  
+|Debug.ParallelStacks|**CTRL+SHIFT+D, S**|  
+|Debug.ParallelWatch1|**CTRL+SHIFT+D, 1**|  
+|Debug.ParallelWatch2|**CTRL+SHIFT+D, 2**|  
+|Debug.ParallelWatch3|**CTRL+SHIFT+D, 3**|  
+|Debug.ParallelWatch4|**CTRL+SHIFT+D, 4**|  
+|Debug.Processes|**CTRL+ALT+Z**|  
+|Debug.QuickWatch|**SHIFT+F9**<br /><br /> или<br /><br /> **CTRL+ALT+Q**|  
+|Debug.RefreshWindowsapp|**CTRL+SHIFT+R**|  
+|Debug.Registers|**CTRL+ALT+G**|  
+|Debug.Restart|**CTRL+SHIFT+F5**|  
+|Debug.RunToCursor|**CTRL+F10**|  
+|Debug.SetNextStatement|**CTRL+SHIFT+F10**|  
+|Debug.ShowCallStackonCodeMap|**CTRL+SHIFT+`**|  
+|Debug.ShowNextStatement|**ALT+NUM** *|  
+|Debug.Start|**F5**|  
+|Debug.StartWindowsPhoneApplicationAnalysis|**ALT+F1**|  
+|Debug.StartWithoutDebugging|**CTRL+F5**|  
+|Debug.StepInto|**F11**|  
+|Debug.StepIntoCurrentProcess|**CTRL+ALT+F11**|  
+|Debug.StepIntoSpecific|**SHIFT+ALT+F11**|  
+|Debug.StepOut|**SHIFT+F11**|  
+|Debug.StepOutCurrentProcess|**CTRL+SHIFT+ALT+F11**|  
+|Debug.StepOver|**F10**|  
+|Debug.StepOverCurrentProcess|**CTRL+ALT+F10**|  
+|Debug.StopDebugging|**SHIFT+F5**|  
+|Debug.StopPerformanceAnalysis|**SHIFT+ALT+F2**|  
+|Debug.Tasks|**CTRL+SHIFT+D, K**|  
+|Debug.Threads|**CTRL+ALT+H**|  
+|Debug.ToggleBreakpoint|**F9**|  
+|Debug.ToggleDisassembly|**CTRL+F11**|  
+|Debug.Watch1|**CTRL+ALT+W, 1**|  
+|Debug.Watch2|**CTRL+ALT+W, 2**|  
+|Debug.Watch3|**CTRL+ALT+W, 3**|  
+|Debug.Watch4|**CTRL+ALT+W, 4**|  
 
 ###  <a name="bkmk_debugger"></a> Контекстные меню отладчика
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|DebuggerContextMenus.BreakpointsWindow.Delete|Alt+F9, D|  
-|DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|  
-|DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|  
+|DebuggerContextMenus.BreakpointsWindow.Delete|**ALT+F9, D**|  
+|DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|  
+|DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|  
 
 ###  <a name="bkmk_diagnostics"></a> Концентратор диагностики
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|DiagnosticsHub.StopCollection|Ctrl+Alt+F2|  
+|DiagnosticsHub.StopCollection|**CTRL+ALT+F2**|  
 
 ###  <a name="bkmk_edit"></a> Правка
 
-|Команды||  
+|Команды|Сочетания клавиш|  
 |--------------|-|  
-|Edit.Copy|CTRL+C<br /><br /> или<br /><br /> Ctrl+Ins|  
-|Edit.Cut|CTRL+X<br /><br /> или<br /><br /> Shift+Delete|  
-|Edit.CycleClipboardRing|Ctrl+Shift+V<br /><br /> или<br /><br /> Ctrl+Shift+Ins|  
-|Edit.Delete|Удаление|  
-|Edit.Find|CTRL+F|  
-|Edit.FindAllReferences|SHIFT+F12|  
-|Edit.FindinFiles|Ctrl+Shift+F|  
-|Edit.FindNext|F3|  
-|Edit.FindNextSelected|Ctrl+F3|  
-|Edit.FindPrevious|SHIFT+F3|  
-|Edit.FindPreviousSelected|Ctrl+Shift+F3|  
-|Edit.GenerateMethod|Ctrl+K, Ctrl+M|  
-|Edit.GoTo|CTRL+G|  
-|Edit.GoToDeclaration|Ctrl+F12|  
-|Edit.GoToDefinition|F12|  
-|Edit.GoToFindCombo|CTRL+D|  
-|Edit.GoToNextLocation|F8|  
-|Edit.GoToPrevLocation|SHIFT+F8|  
-|Edit.InsertSnippet|Ctrl+K, Ctrl+X|  
-|Edit.MoveControlDown|Ctrl+СТРЕЛКА ВНИЗ|  
-|Edit.MoveControlDownGrid|Стрелка вниз|  
-|Edit.MoveControlLeft|Ctrl+СТРЕЛКА ВЛЕВО|  
-|Edit.MoveControlLeftGrid|СТРЕЛКА ВЛЕВО|  
-|Edit.MoveControlRight|Ctrl+СТРЕЛКА ВПРАВО|  
-|Edit.MoveControlRightGrid|Стрелка вправо|  
-|Edit.MoveControlUp|Ctrl+СТРЕЛКА ВВЕРХ|  
-|Edit.MoveControlUpGrid|Стрелка вверх|  
-|Edit.NavigateTo|CTRL+,|  
-|Edit.NextBookmark|Ctrl+K, Ctrl+N|  
-|Edit.NextBookmarkInFolder|Ctrl+Shift+K, Ctrl+Shift+N|  
-|Edit.OpenFile|CTRL+SHIFT+G|  
-|Edit.Paste|Ctrl+V<br /><br /> или<br /><br /> Shift+Ins|  
-|Edit.PreviousBookmark|Ctrl+K, Ctrl+P|  
-|Edit.PreviousBookmarkInFolder|Ctrl+Shift+K, Ctrl+Shift+P|  
-|Edit.QuickFindSymbol|Shift+Alt+F12|  
-|Edit.Redo|CTRL+Y<br /><br /> или<br /><br /> Ctrl+Shift+Z<br /><br /> или<br /><br /> Shift+Alt+Backspace|  
-|Edit.RefreshRemoteReferences|Ctrl+Shift+J|  
-|Edit.Replace|CTRL+H|  
-|Edit.ReplaceinFiles|Ctrl+Shift+H|  
-|Edit.SelectAll|CTRL+A|  
-|Edit.SelectNextControl|Tab|  
-|Edit.SelectPreviousControl|SHIFT+Tab|  
-|Edit.ShowTileGrid|ВВОД|  
-|Edit.SizeControlDown|Ctrl+Shift+СТРЕЛКА ВНИЗ|  
-|Edit.SizeControlDownGrid|Shift+СТРЕЛКА ВНИЗ|  
-|Edit.SizeControlLeft|Ctrl+Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.SizeControlLeftGrid|Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.SizeControlRight|Ctrl+Shift+СТРЕЛКА ВПРАВО|  
-|Edit.SizeControlRightGrid|Shift+СТРЕЛКА ВПРАВО|  
-|Edit.SizeControlUp|Ctrl+Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.SizeControlUpGrid|Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.StopSearch|Alt+F3, S|  
-|Edit.SurroundWith|Ctrl+K, Ctrl+S|  
-|Edit.Undo|CTRL+Z<br /><br /> или<br /><br /> Alt+Backspace|  
+|Edit.Copy|**CTRL+C**<br /><br /> или<br /><br /> **CTRL+INS**|  
+|Edit.Cut|**CTRL+X**<br /><br /> или<br /><br /> **SHIFT+DELETE**|  
+|Edit.CycleClipboardRing|**CTRL+SHIFT+V**<br /><br /> или<br /><br /> **CTRL+SHIFT+INS**|  
+|Edit.Delete|**Удалить**|  
+|Edit.Find|**CTRL+F**|  
+|Edit.FindAllReferences|**SHIFT+F12**|  
+|Edit.FindinFiles|**CTRL+SHIFT+F**|  
+|Edit.FindNext|**F3**|  
+|Edit.FindNextSelected|**CTRL+F3**|  
+|Edit.FindPrevious|**SHIFT+F3**|  
+|Edit.FindPreviousSelected|**CTRL+SHIFT+F3**|  
+|Edit.GenerateMethod|**CTRL+K, CTRL+M**|  
+|Edit.GoTo|**CTRL+G**|  
+|Edit.GoToDeclaration|**CTRL+F12**|  
+|Edit.GoToDefinition|**F12**|  
+|Edit.GoToFindCombo|**CTRL+D**|  
+|Edit.GoToNextLocation|**F8**|  
+|Edit.GoToPrevLocation|**SHIFT+F8**|  
+|Edit.InsertSnippet|**CTRL+K, CTRL+X**|  
+|Edit.MoveControlDown|**CTRL+СТРЕЛКА ВНИЗ**|  
+|Edit.MoveControlDownGrid|**СТРЕЛКА ВНИЗ**|  
+|Edit.MoveControlLeft|**CTRL+СТРЕЛКА ВЛЕВО**|  
+|Edit.MoveControlLeftGrid|**СТРЕЛКА ВЛЕВО**|  
+|Edit.MoveControlRight|**CTRL+СТРЕЛКА ВПРАВО**|  
+|Edit.MoveControlRightGrid|**СТРЕЛКА ВПРАВО**|  
+|Edit.MoveControlUp|**CTRL+СТРЕЛКА ВВЕРХ**|  
+|Edit.MoveControlUpGrid|**СТРЕЛКА ВВЕРХ**|  
+|Edit.NavigateTo|**CTRL+,**|  
+|Edit.NextBookmark|**CTRL+K, CTRL+N**|  
+|Edit.NextBookmarkInFolder|**CTRL+SHIFT+K, CTRL+SHIFT+N**|  
+|Edit.OpenFile|**CTRL+SHIFT+G**|  
+|Edit.Paste|**CTRL+V**<br /><br /> или<br /><br /> **SHIFT+INS**|  
+|Edit.PreviousBookmark|**CTRL+K, CTRL+P**|  
+|Edit.PreviousBookmarkInFolder|**CTRL+SHIFT+K, CTRL+SHIFT+P**|  
+|Edit.QuickFindSymbol|**SHIFT+ALT+F12**|  
+|Edit.Redo|**CTRL+Y**<br /><br /> или<br /><br /> **CTRL+SHIFT+Z**<br /><br /> или<br /><br /> **SHIFT+ALT+BACKSPACE**|  
+|Edit.RefreshRemoteReferences|**CTRL+SHIFT+J**|  
+|Edit.Replace|**CTRL+H**|  
+|Edit.ReplaceinFiles|**CTRL+SHIFT+H**|  
+|Edit.SelectAll|**CTRL+A**|  
+|Edit.SelectNextControl|**TAB**|  
+|Edit.SelectPreviousControl|**SHIFT+TAB**|  
+|Edit.ShowTileGrid|**ВВОД**|  
+|Edit.SizeControlDown|**CTRL+SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.SizeControlDownGrid|**SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.SizeControlLeft|**CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.SizeControlLeftGrid|**SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.SizeControlRight|**CTRL+SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.SizeControlRightGrid|**SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.SizeControlUp|**CTRL+SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.SizeControlUpGrid|**SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.StopSearch|**ALT+F3, S**|  
+|Edit.SurroundWith|**CTRL+K, CTRL+S**|  
+|Edit.Undo|**CTRL+Z**<br /><br /> или<br /><br /> **ALT+BACKSPACE**|  
 
 ###  <a name="bkmk_editorContext"></a> Контекстные меню редактора
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|Alt+F9, L|  
-|EditorContextMenus.CodeWindow.CodeMap.ShowItem|Ctrl+`|  
-|EditorContextMenus.CodeWindow.Execute|Ctrl+Alt+F5|  
-|EditorContextMenus.CodeWindow.GoToView|Ctrl+M, Ctrl+G|  
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|  
-|EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> или<br /><br /> Ctrl+K, T|  
+|EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**ALT+F9, L**|  
+|EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL+`**|  
+|EditorContextMenus.CodeWindow.Execute|**CTRL+ALT+F5**|  
+|EditorContextMenus.CodeWindow.GoToView|**CTRL+M, CTRL+G**|  
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O**|  
+|EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> или<br /><br /> **CTRL+K, T**|  
 
 ###  <a name="bkmk_file"></a> Файл
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|File.Exit|ALT+F4|  
-|File.NewFile|CTRL+N|  
-|File.NewProject|CTRL+SHIFT+N|  
-|File.NewWebSite|Shift+Alt+N|  
-|File.OpenFile|CTRL+O|  
-|File.OpenProject|CTRL+SHIFT+O|  
-|File.OpenWebSite|Shift+Alt+O|  
-|File.Print|CTRL+P|  
-|File.SaveAll|Ctrl+Shift+S|  
-|File.SaveSelectedItems|Ctrl+S|  
-|File.ViewinBrowser|CTRL+SHIFT+W|  
+|File.Exit|**ALT+F4**|  
+|File.NewFile|**CTRL+N**|  
+|File.NewProject|**CTRL+SHIFT+N**|  
+|File.NewWebSite|**SHIFT+ALT+N**|  
+|File.OpenFile|**CTRL+O**|  
+|File.OpenProject|**CTRL+SHIFT+O**|  
+|File.OpenWebSite|**SHIFT+ALT+O**|  
+|File.Print|**CTRL+P**|  
+|File.SaveAll|**CTRL+SHIFT+S**|  
+|File.SaveSelectedItems|**CTRL+S**|  
+|File.ViewinBrowser|**CTRL+SHIFT+W**|  
 
 ###  <a name="bkmk_help"></a> Справка
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Help.AddandRemoveHelpContent|Ctrl+Alt+F1|  
-|Help.F1Help|F1|  
-|Help.ViewHelp|Ctrl+F1|  
-|Help.WindowHelp|SHIFT+F1|  
+|Help.AddandRemoveHelpContent|**CTRL+ALT+F1**|  
+|Help.F1Help|**F1**|  
+|Help.ViewHelp|**CTRL+F1**|  
+|Help.WindowHelp|**SHIFT+F1**|  
 
 ###  <a name="bkmk_loadtest"></a> Нагрузочное тестирование
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|LoadTest.JumpToCounterPane|Ctrl+R, Q|  
+|LoadTest.JumpToCounterPane|**CTRL+R, Q**|  
 
 ###  <a name="bkmk_otherContext"></a> Другие контекстные меню
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Вставить**|  
 
 ###  <a name="bkmk_project"></a> Проект
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Project.AddExistingItem|Shift+Alt+A|  
-|Project.AddNewItem|CTRL+SHIFT+A|  
-|Project.ClassWizard|Ctrl+Shift+X|  
-|Project.Override|Ctrl+Alt+Ins|  
-|Project.Previewchanges|Alt+;, Alt+C|  
-|Project.Publishselectedfiles|Alt+;, Alt+P|  
-|Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|  
+|Project.AddExistingItem|**SHIFT+ALT+A**|  
+|Project.AddNewItem|**CTRL+SHIFT+A**|  
+|Project.ClassWizard|**CTRL+SHIFT+X**|  
+|Project.Override|**CTRL+ALT+INS**|  
+|Project.Previewchanges|**ALT+;, ALT+C**|  
+|Project.Publishselectedfiles|**ALT+;, ALT+P**|  
+|Project.Replaceselectedfilesfromserver|**ALT+;, ALT+R**|  
 
 ###  <a name="bkmk_projectContext"></a> Контекстные меню проекта и решения
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|ProjectandSolutionContextMenus.Item.MoveDown|Alt+СТРЕЛКА ВНИЗ|  
-|ProjectandSolutionContextMenus.Item.MoveUp|Alt+СТРЕЛКА ВВЕРХ|  
+|ProjectandSolutionContextMenus.Item.MoveDown|**ALT+СТРЕЛКА ВНИЗ**|  
+|ProjectandSolutionContextMenus.Item.MoveUp|**ALT+СТРЕЛКА ВВЕРХ**|  
 
 ###  <a name="bkmk_refactor"></a> Рефакторинг
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Refactor.EncapsulateField|Ctrl+R, Ctrl+E|  
-|Refactor.ExtractInterface|Ctrl+R, Ctrl+I|  
-|Refactor.ExtractMethod|Ctrl+R, Ctrl+M|  
-|Refactor.RemoveParameters|Ctrl+R, Ctrl+V|  
-|Refactor.Rename|Ctrl+R, Ctrl+R|  
-|Refactor.ReorderParameters|Ctrl+R, Ctrl+O|  
+|Refactor.EncapsulateField|**CTRL+R, CTRL+E**|  
+|Refactor.ExtractInterface|**CTRL+R, CTRL+I**|  
+|Refactor.ExtractMethod|**CTRL+R, CTRL+M**|  
+|Refactor.RemoveParameters|**CTRL+R, CTRL+V**|  
+|Refactor.Rename|**CTRL+R, CTRL+R**|  
+|Refactor.ReorderParameters|**CTRL+R, CTRL+O**|  
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> Обозреватель решений
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|SolutionExplorer.OpenFilesFilter|Ctrl+[, O<br /><br /> или<br /><br /> Ctrl+[, Ctrl+O|  
-|SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> или<br /><br /> Ctrl+[, Ctrl+P|  
-|SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> или<br /><br /> Ctrl+[, Ctrl+S|  
+|SolutionExplorer.OpenFilesFilter|**CTRL+[, O**<br /><br /> или<br /><br /> **CTRL+[, CTRL+O**|  
+|SolutionExplorer.PendingChangesFilter|**CTRL+[, P**<br /><br /> или<br /><br /> **CTRL+[, CTRL+P**|  
+|SolutionExplorer.SyncWithActiveDocument|**CTRL+[, S**<br /><br /> или<br /><br /> **CTRL+[, CTRL+S**|  
 
 ###  <a name="bkmk_team"></a> Команда
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Team.Git.GoToGitBranches|Ctrl+0, Ctrl+N<br /><br /> или<br /><br /> Ctrl+0, N|  
-|Team.Git.GoToGitChanges|Ctrl+0, Ctrl+G<br /><br /> или<br /><br /> Ctrl+0, G|  
-|Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> или<br /><br /> Ctrl+0, O|  
-|Team.TeamExplorerSearch|Ctrl+'|  
+|Team.Git.GoToGitBranches|**CTRL+0, CTRL+N**<br /><br /> или<br /><br /> **CTRL+0, N**|  
+|Team.Git.GoToGitChanges|**CTRL+0, CTRL+G**<br /><br /> или<br /><br /> **CTRL+0, G**|  
+|Team.Git.GoToGitCommits|**CTRL+0, CTRL+O**<br /><br /> или<br /><br /> **CTRL+0, O**|  
+|Team.TeamExplorerSearch|**CTRL+'**|  
 
 ###  <a name="bkmk_TFcontext"></a> Контекстные меню Team Foundation
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|TeamFoundationContextMenus.Commands.GoToBuilds|Ctrl+0, Ctrl+B<br /><br /> или<br /><br /> Ctrl+0, B|  
-|TeamFoundationContextMenus.Commands.GoToConnect|Ctrl+0, Ctrl+C<br /><br /> или<br /><br /> Ctrl+0, C|  
-|TeamFoundationContextMenus.Commands.GoToDocuments|Ctrl+0, Ctrl+D<br /><br /> или<br /><br /> Ctrl+0, D|  
-|TeamFoundationContextMenus.Commands.GoToHome|Ctrl+0, Ctrl+H<br /><br /> или<br /><br /> Ctrl+0, H|  
-|TeamFoundationContextMenus.Commands.GoToMyWork|Ctrl+0, Ctrl+M<br /><br /> или<br /><br /> Ctrl+0, M|  
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|Ctrl+0, Ctrl+P<br /><br /> или<br /><br /> Ctrl+0, P|  
-|TeamFoundationContextMenus.Commands.GoToReports|Ctrl+0, Ctrl+R<br /><br /> или<br /><br /> Ctrl+0, R|  
-|TeamFoundationContextMenus.Commands.GoToSettings|Ctrl+0, Ctrl+S<br /><br /> или<br /><br /> Ctrl+0, S|  
-|TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> или<br /><br /> Ctrl+0, A|  
-|TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> или<br /><br /> Ctrl+0, W|  
+|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL+0, CTRL+B**<br /><br /> или<br /><br /> **CTRL+0, B**|  
+|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL+0, CTRL+C**<br /><br /> или<br /><br /> **CTRL+0, C**|  
+|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL+0, CTRL+D**<br /><br /> или<br /><br /> **CTRL+0, D**|  
+|TeamFoundationContextMenus.Commands.GoToHome|**CTRL+0, CTRL+H**<br /><br /> или<br /><br /> **CTRL+0, H**|  
+|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL+0, CTRL+M**<br /><br /> или<br /><br /> **CTRL+0, M**|  
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL+0, CTRL+P**<br /><br /> или<br /><br /> **CTRL+0, P**|  
+|TeamFoundationContextMenus.Commands.GoToReports|**CTRL+0, CTRL+R**<br /><br /> или<br /><br /> **CTRL+0, R**|  
+|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL+0, CTRL+S**<br /><br /> или<br /><br /> **CTRL+0, S**|  
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0, CTRL+A**<br /><br /> или<br /><br /> **CTRL+0, A**|  
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0, CTRL+W**<br /><br /> или<br /><br /> **CTRL+0, W**|  
 
 ###  <a name="bkmk_test"></a> Тест
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Test.UseCodedUITestBuilder|CTRL+\\, CTRL+C|  
-|Test.UseExistingActionRecording|CTRL+\\, CTRL+A|  
+|Test.UseCodedUITestBuilder|**CTRL+\\, CTRL+C**|  
+|Test.UseExistingActionRecording|**CTRL+\\, CTRL+A**|  
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a> Обозреватель тестов
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|TestExplorer.DebugAllTests|Ctrl+R, Ctrl+A|  
-|TestExplorer.DebugAllTestsInContext|Ctrl+R, Ctrl+T|  
-|TestExplorer.RepeatLastRun|Ctrl+R, L|  
-|TestExplorer.RunAllTests|Ctrl+R, A|  
-|TestExplorer.RunAllTestsInContext|Ctrl+R, T|  
+|TestExplorer.DebugAllTests|**CTRL+R, CTRL+A**|  
+|TestExplorer.DebugAllTestsInContext|**CTRL+R, CTRL+T**|  
+|TestExplorer.RepeatLastRun|**CTRL+R, L**|  
+|TestExplorer.RunAllTests|**CTRL+R, A**|  
+|TestExplorer.RunAllTestsInContext|**CTRL+R, T**|  
 
 ###  <a name="bkmk_tools"></a> Инструменты  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Tools.AttachtoProcess|Ctrl+Alt+P|  
-|Tools.CodeSnippetsManager|Ctrl+K, Ctrl+B|  
-|Tools.ForceGC|Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12|  
-|Tools.GoToCommandLine|Ctrl+/|  
+|Tools.AttachtoProcess|**CTRL+ALT+P**|  
+|Tools.CodeSnippetsManager|**CTRL+K, CTRL+B**|  
+|Tools.ForceGC|**CTRL+SHIFT+ALT+F12, CTRL+SHIFT+ALT+F12**|  
+|Tools.GoToCommandLine|**CTRL+/**|  
 
 ###  <a name="bkmk_view"></a> Вид  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|View.AllWindows|Shift+Alt+M|  
-|View.ArchitectureExplorer|CRTL+\\, CTRL+R|  
-|View.Backward|Alt + Стрелка влево|  
-|View.BookmarkWindow|Ctrl+K, Ctrl+W|  
-|View.BrowseNext|CTRL+SHIFT+1|  
-|View.BrowsePrevious|CTRL+SHIFT+2|  
-|View.CallHierarchy|Ctrl+Alt+K|  
-|View.ClassView|CTRL+SHIFT+C|  
-|View.ClassViewGoToSearchCombo|Ctrl+K, Ctrl+V|  
-|View.CodeDefinitionWindow|CTRL+\\, D<br /><br /> или<br /><br /> CTRL+\\, CTRL+D|  
-|View.CommandWindow|Ctrl+Alt+A|  
-|View.DataSources|Shift+Alt+D|  
-|View.DocumentOutline|Ctrl+Alt+T|  
-|View.EditLabel|F2|  
-|View.ErrorList|CTRL+\\, E<br /><br /> или<br /><br /> CTRL+\\, CTRL+E|  
-|View.F#Interactive|Ctrl+Alt+F|  
-|View.FindSymbolResults|Ctrl+Alt+F12|  
-|View.Forward|Alt + Стрелка вправо|  
-|View.ForwardBrowseContext|Ctrl+Shift+7|  
-|View.FullScreen|Shift+Alt+ВВОД|  
-|View.NavigateBackward|Ctrl+-|  
-|View.NavigateForward|Ctrl+Shift+-|  
-|View.NextError|Ctrl+Shift+F12|  
-|View.Notifications|Ctrl+W, N<br /><br /> или<br /><br /> Ctrl+W, Ctrl+N|  
-|View.ObjectBrowser|Ctrl+Alt+J|  
-|View.ObjectBrowserGoToSearchCombo|Ctrl+K, Ctrl+R|  
-|View.Output|Ctrl+Alt+O|  
-|View.PopBrowseContex|Ctrl+Shift+8|  
-|View.PropertiesWindow|F4|  
-|View.PropertyPages|SHIFT+F4|  
-|View.ResourceView|Ctrl+Shift+E|  
-|View.ServerExplorer|Ctrl+Alt+S|  
-|View.ShowSmartTag|Shift+Alt+F10<br /><br /> или<br /><br /> CTRL+.|  
-|View.SolutionExplorer|Ctrl+Alt+L|  
-|View.SQLServerObjectExplorer|CTRL+\\, CTRL+S|  
-|View.TaskList|CTRL+\\, T<br /><br /> или<br /><br /> CTRL+\\, CTRL+T|  
-|View.TfsTeamExplorer|CTRL+\\, CTRL+M|  
-|View.Toolbox|Ctrl+Alt+X|  
-|View.UMLModelExplorer|CTRL+\\, CTRL+U|  
-|View.ViewCode|F7|  
-|View.ViewDesigner|SHIFT+F7|  
-|View.WebBrowser|Ctrl+Alt+R|  
-|View.ZoomIn|Ctrl+Shift+.|  
-|View.ZoomOut|Ctrl+Shift+,|  
+|View.AllWindows|**SHIFT+ALT+M**|  
+|View.ArchitectureExplorer|**CTRL+\\, CTRL+R**|  
+|View.Backward|**ALT+СТРЕЛКА ВЛЕВО**|  
+|View.BookmarkWindow|**CTRL+K, CTRL+W**|  
+|View.BrowseNext|**CTRL+SHIFT+1**|  
+|View.BrowsePrevious|**CTRL+SHIFT+2**|  
+|View.CallHierarchy|**CTRL+ALT+K**|  
+|View.ClassView|**CTRL+SHIFT+C**|  
+|View.ClassViewGoToSearchCombo|**CTRL+K, CTRL+V**|  
+|View.CodeDefinitionWindow|**CTRL+\\, D**<br /><br /> или<br /><br /> **CTRL+\\, CTRL+D**|  
+|View.CommandWindow|**CTRL+ALT+A**|  
+|View.DataSources|**SHIFT+ALT+D**|  
+|View.DocumentOutline|**CTRL+ALT+T**|  
+|View.EditLabel|**F2**|  
+|View.ErrorList|**CTRL+\\, E**<br /><br /> или<br /><br /> **CTRL+\\, CTRL+E**|  
+|View.F#Interactive|**CTRL+ALT+F**|  
+|View.FindSymbolResults|**CTRL+ALT+F12**|  
+|View.Forward|**ALT+СТРЕЛКА ВПРАВО**|  
+|View.ForwardBrowseContext|**CTRL+SHIFT+7**|  
+|View.FullScreen|**SHIFT+ALT+ВВОД**|  
+|View.NavigateBackward|**CTRL+-**|  
+|View.NavigateForward|**CTRL+SHIFT+-**|  
+|View.NextError|**CTRL+SHIFT+F12**|  
+|View.Notifications|**CTRL+W, N**<br /><br /> или<br /><br /> **CTRL+W, CTRL+N**|  
+|View.ObjectBrowser|**CTRL+ALT+J**|  
+|View.ObjectBrowserGoToSearchCombo|**CTRL+K, CTRL+R**|  
+|View.Output|**CTRL+ALT+O**|  
+|View.PopBrowseContex|**CTRL+SHIFT+8**|  
+|View.PropertiesWindow|**F4**|  
+|View.PropertyPages|**SHIFT+F4**|  
+|View.ResourceView|**CTRL+SHIFT+E**|  
+|View.ServerExplorer|**CTRL+ALT+S**|  
+|View.ShowSmartTag|**SHIFT+ALT+F10**<br /><br /> или<br /><br /> **CTRL+.**|  
+|View.SolutionExplorer|**CTRL+ALT+L**|  
+|View.SQLServerObjectExplorer|**CTRL+\\, CTRL+S**|  
+|View.TaskList|**CTRL+\\, T**<br /><br /> или<br /><br /> **CTRL+\\, CTRL+T**|  
+|View.TfsTeamExplorer|**CTRL+\\, CTRL+M**|  
+|View.Toolbox|**CTRL+ALT+X**|  
+|View.UMLModelExplorer|**CTRL+\\, CTRL+U**|  
+|View.ViewCode|**F7**|  
+|View.ViewDesigner|**SHIFT+F7**|  
+|View.WebBrowser|**CTRL+ALT+R**|  
+|View.ZoomIn|**CTRL+SHIFT+.**|  
+|View.ZoomOut|**CTRL+SHIFT+,**|  
 
 ###  <a name="bkmk_window"></a> Окно  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Window.ActivateDocumentWindow|ESC|  
-|Window.AddTabtoSelection|Ctrl+Shift+Alt+ПРОБЕЛ|  
-|Window.CloseDocumentWindow|Ctrl+F4|  
-|Window.CloseToolWindow|SHIFT+ESC|  
-|Window.KeepTabOpen|CTRL+ALT+HOME|  
-|Window.MovetoNavigationBar|Ctrl+F2|  
-|Window.NextDocumentWindow|Ctrl+F6|  
-|Window.NextDocumentWindowNav|CTRL+TAB|  
-|Window.NextPane|Alt+F6|  
-|Window.NextSplitPane|F6|  
-|Window.NextTab|Ctrl+Alt+PgDn<br /><br /> или<br /><br /> Ctrl+PgDn|  
-|Window.NextTabandAddtoSelection|Ctrl+Shift+Alt+PgDn|  
-|Window.NextToolWindowNav|Alt+F7|  
-|Window.PreviousDocumentWindow|Ctrl+Shift+F6|  
-|Window.PreviousDocumentWindowNav|Ctrl+Shift+Tab|  
-|Window.PreviousPane|Shift+Alt+F6|  
-|Window.PreviousSplitPane|SHIFT+F6|  
-|Window.PreviousTab|Ctrl+Alt+PgUp<br /><br /> или<br /><br /> Ctrl+PgUp|  
-|Window.PreviousTabandAddtoSelection|Ctrl+Shift+Alt+PgUp|  
-|Window.PreviousToolWindowNav|Shift+Alt+F7|  
-|Window.QuickLaunch|CTRL+Q|  
-|Window.QuickLaunchPreviousCategory|Ctrl+Shift+Q|  
-|Window.ShowDockMenu|Alt+-|  
-|Window.ShowEzMDIFileList|Ctrl+Alt+СТРЕЛКА ВНИЗ|  
-|Window.SolutionExplorerSearch|CTRL+;|  
-|Window.WindowSearch|Alt+`|  
+|Window.ActivateDocumentWindow|**ESC**|  
+|Window.AddTabtoSelection|**CTRL+SHIFT+ALT+ПРОБЕЛ**|  
+|Window.CloseDocumentWindow|**CTRL+F4**|  
+|Window.CloseToolWindow|**SHIFT+ESC**|  
+|Window.KeepTabOpen|**CTRL+ALT+HOME**|  
+|Window.MovetoNavigationBar|**CTRL+F2**|  
+|Window.NextDocumentWindow|**CTRL+F6**|  
+|Window.NextDocumentWindowNav|**CTRL+TAB**|  
+|Window.NextPane|**ALT+F6**|  
+|Window.NextSplitPane|**F6**|  
+|Window.NextTab|**CTRL+ALT+PGDN**<br /><br /> или<br /><br /> **CTRL+PGDN**|  
+|Window.NextTabandAddtoSelection|**CTRL+SHIFT+ALT+PGDN**|  
+|Window.NextToolWindowNav|**ALT+F7**|  
+|Window.PreviousDocumentWindow|**CTRL+SHIFT+F6**|  
+|Window.PreviousDocumentWindowNav|**CTRL+SHIFT+TAB**|  
+|Window.PreviousPane|**SHIFT+ALT+F6**|  
+|Window.PreviousSplitPane|**SHIFT+F6**|  
+|Window.PreviousTab|**CTRL+ALT+PGUP**<br /><br /> или<br /><br /> **CTRL+PGUP**|  
+|Window.PreviousTabandAddtoSelection|**CTRL+SHIFT+ALT+PGUP**|  
+|Window.PreviousToolWindowNav|**SHIFT+ALT+F7**|  
+|Window.QuickLaunch|**CTRL+Q**|  
+|Window.QuickLaunchPreviousCategory|**Ctrl+Shift+Q**|  
+|Window.ShowDockMenu|**ALT+-**|  
+|Window.ShowEzMDIFileList|**CTRL+ALT+СТРЕЛКА ВНИЗ**|  
+|Window.SolutionExplorerSearch|**CTRL+;**|  
+|Window.WindowSearch|**ALT+`**|  
 
 ###  <a name="bkmk_windowsazure"></a> Azure  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Num *, Ctrl+R|  
-|WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Num *, Ctrl+D|  
+|WindowsAzure.RetryMobileServiceScriptOperation|**CTRL+NUM \*, CTRL+R**|  
+|WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL+NUM \*, CTRL+D**|  
 
-##  <a name="bkmk_ADONET"></a> Конструктор EDM ADO.NET  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|Alt+СТРЕЛКА ВНИЗ|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|Alt+PgDn|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|Alt+End|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|Alt+Home|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|Alt+СТРЕЛКА ВВЕРХ|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|Alt+PgUp|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|Ctrl+R, R|  
-|OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram|Shift+Del|  
-|View.EntityDataModelBrowser|CTRL+1|  
-|View.EntityDataModelMappingDetails|Ctrl+2|  
-
-##  <a name="bkmk_classDiagram"></a> Схема классов  
+##  <a name="adonet-entity-data-model-designer"></a>Конструктор моделей EDM ADO.NET  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|ClassDiagram.Collapse|Num -|  
-|ClassDiagram.Expand|Num +|  
-|Edit.Delete|Ctrl+Del|  
-|Edit.ExpandCollapseBaseTypeList|Shift+Alt+B|  
-|Edit.NavigateToLollipop|Shift+Alt+L|  
-|Edit.RemovefromDiagram|Удаление|  
-|View.ViewCode|Ввод|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**ALT+СТРЕЛКА ВНИЗ**|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**ALT+PGDN**|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**ALT+END**|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**ALT+HOME**|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|**ALT+СТРЕЛКА ВВЕРХ**|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|**ALT+PGUP**|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**CTRL+R, R**|  
+|OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram|**SHIFT+DEL**|  
+|View.EntityDataModelBrowser|**CTRL+1**|  
+|View.EntityDataModelMappingDetails|**CTRL+2**|  
 
-##  <a name="bkmk_codedUItest"></a> Редактор закодированных тестов пользовательского интерфейса  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|CTRL+C|  
-|OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|Ctrl+Alt+D|  
-|OtherContextMenus.UITestEditorContextMenu.LocateAll|Shift+Alt+L|  
-|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|CTRL+SHIFT+L|  
-|OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|  
-|OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|  
-
-##  <a name="bkmk_dataset"></a> Редактор наборов данных  
+##  <a name="class-diagram"></a>Схема классов  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|OtherContextMenus.ColumnContext.InsertColumn|Insert|  
-|OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|  
+|ClassDiagram.Collapse|**NUM -**|  
+|ClassDiagram.Expand|**NUM +**|  
+|Edit.Delete|**CTRL+DEL**|  
+|Edit.ExpandCollapseBaseTypeList|**SHIFT+ALT+B**|  
+|Edit.NavigateToLollipop|**SHIFT+ALT+L**|  
+|Edit.RemovefromDiagram|**Удалить**|  
+|View.ViewCode|**ВВОД**|  
 
-##  <a name="bkmk_diff"></a> Средство просмотра различий  
-
-|||  
-|-|-|  
-|Команды|Сочетания клавиш|  
-|Diff.IgnoreTrimWhitespace|CTRL+\\, CTRL+ПРОБЕЛ|  
-|Diff.InlineView|CTRL+\\, CTRL+1|  
-|Diff.LeftOnlyView|CTRL+\\, CTRL+3|  
-|Diff.NextDifference|F8|  
-|Diff.PreviousDifference|SHIFT+F8|  
-|Diff.RightOnlyView|CTRL+\\, CTRL+4|  
-|Diff.SideBySideView|CTRL+\\, CTRL+2|  
-|Diff.SwitchBetweenLeftAndRight|CNRL+\\, CTRL+TAB|  
-|Diff.SynchronizeViewToggle|CTRL+\\, CTRL+СТРЕЛКА ВНИЗ|  
-|EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|  
-|EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Shift+P|  
-
-##  <a name="bkmk_DOM"></a> Проводник DOM  
+##  <a name="coded-ui-test-editor"></a>Редактор закодированных тестов пользовательского интерфейса  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|DOMExplorer.Refresh|F5|  
-|DOMExplorer.SelectElement|Ctrl+B|  
-|DOMExplorer.ShowLayout|Ctrl+Shift+I|  
+|OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**CTRL+C**|  
+|OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**CTRL+ALT+D**|  
+|OtherContextMenus.UITestEditorContextMenu.LocateAll|**SHIFT+ALT+L**|  
+|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**CTRL+SHIFT+L**|  
+|OtherContextMenus.UITestEditorContextMenu.Movecode|**CTRL+ALT+C**|  
+|OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**CTRL+SHIFT+T**|  
 
-##  <a name="bkmk_FSharp"></a> Окно "Интерактивный F#"  
+##  <a name="dataset-editor"></a>Редактор наборов данных  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|OtherContextMenus.ColumnContext.InsertColumn|**Вставить**|  
+|OtherContextMenus.DbTableContext.Add.Column|**CTRL+L**|  
+
+##  <a name="difference-viewer"></a>Средство просмотра различий  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Diff.IgnoreTrimWhitespace|**CTRL+\\, CTRL+ПРОБЕЛ**|  
+|Diff.InlineView|**CTRL+\\, CTRL+1**|  
+|Diff.LeftOnlyView|**CTRL+\\, CTRL+3**|  
+|Diff.NextDifference|**F8**|  
+|Diff.PreviousDifference|**SHIFT+F8**|  
+|Diff.RightOnlyView|**CTRL+\\, CTRL+4**|  
+|Diff.SideBySideView|**CTRL+\\, CTRL+2**|  
+|Diff.SwitchBetweenLeftAndRight|**CTRL+\\, CTRL+TAB**|  
+|Diff.SynchronizeViewToggle|**CTRL+\\, CTRL+СТРЕЛКА ВНИЗ**|  
+|EditorContextMenus.CodeWindow.AddComment|**CTRL+SHIFT+K**|  
+|EditorContextMenus.CodeWindow.EditLocalFile|**CTRL+SHIFT+P**|  
+
+##  <a name="dom-explorer"></a>Обозреватель DOM  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|DOMExplorer.Refresh|**F5**|  
+|DOMExplorer.SelectElement|**CTRL+B**|  
+|DOMExplorer.ShowLayout|**CTRL+SHIFT+I**|  
+
+##  <a name="f-interactive"></a>F# interactive  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|  
+|OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**CTRL+BREAK**|  
 
-##  <a name="bkmk_graphDoc"></a> Редактор документов диаграмм  
+##  <a name="graph-document-editor"></a>Редактор документов диаграмм  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|Insert|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|С|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|I|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|O|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|Ctrl+Shift+K<br /><br /> или<br /><br /> Ctrl+E, C|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Удаление|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Вставить**|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**CTRL+SHIFT+K**<br /><br /> или<br /><br /> **CTRL+E, C**|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Удалить**|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|  
 
-##  <a name="bkmk_graphicsDebugger"></a> Диагностика графики  
+##  <a name="graphics-diagnostics"></a>Диагностика графики  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
 |Debug.Graphics.CaptureFrame|Нет|  
-|Graphics.MovePixelSelectionDown|Shift+Alt+СТРЕЛКА ВНИЗ|  
-|Graphics.MovePixelSelectionLeft|Shift+Alt+СТРЕЛКА ВЛЕВО|  
-|Graphics.MovePixelSelectionRight|Shift+Alt+СТРЕЛКА ВПРАВО|  
-|Graphics.MovePixelSelectionUp|Shift+Alt+СТРЕЛКА ВВЕРХ|  
-|Graphics.ZoomToActualSize|Shift+Alt+0|  
-|Graphics.ZoomToFitInWindow|Shift+Alt+9|  
-|Graphics.ZoomIn|Shift+Alt+=|  
-|Graphics.ZoomOut|Shift+Alt+-|  
+|Graphics.MovePixelSelectionDown|**SHIFT+ALT+СТРЕЛКА ВНИЗ**|  
+|Graphics.MovePixelSelectionLeft|**SHIFT+ALT+СТРЕЛКА ВЛЕВО**|  
+|Graphics.MovePixelSelectionRight|**SHIFT+ALT+СТРЕЛКА ВПРАВО**|  
+|Graphics.MovePixelSelectionUp|**SHIFT+ALT+СТРЕЛКА ВВЕРХ**|  
+|Graphics.ZoomToActualSize|**SHIFT+ALT+0**|  
+|Graphics.ZoomToFitInWindow|**SHIFT+ALT+9**|  
+|Graphics.ZoomIn|**SHIFT+ALT+=**|  
+|Graphics.ZoomOut|**SHIFT+ALT+-**|  
 
-##  <a name="bkmk_HTMLeditor"></a> Редактор HTML  
-
-|Команда|Сочетание клавиш|  
-|-------------|-----------------------|  
-|OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|  
-
-##  <a name="bkmk_HTMLeditorDesign"></a> Представление разработки редактора HTML  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.MoveControlDown|Ctrl+СТРЕЛКА ВНИЗ|  
-|Edit.MoveControlUp|Ctrl+СТРЕЛКА ВВЕРХ|  
-|Format.Bold|Ctrl+B|  
-|Format.ConverttoHyperlink|CTRL+L|  
-|Format.InsertBookmark|CTRL+SHIFT+L|  
-|Format.Italic|CTRL+I|  
-|Format.Underline|Ctrl+U|  
-|Project.AddContentPage|Ctrl+M, Ctrl+C|  
-|Table.ColumntotheLeft|Ctrl+Alt+СТРЕЛКА ВЛЕВО|  
-|Table.ColumntotheRight|Ctrl+Alt+СТРЕЛКА ВПРАВО|  
-|Table.RowAbove|Ctrl+Alt+СТРЕЛКА ВВЕРХ|  
-|Table.RowBelow|Ctrl+Alt+СТРЕЛКА ВНИЗ|  
-|View.ASP.NETNonvisualControls|CTRL+SHIFT+N|  
-|View.EditMaster|Ctrl+M, Ctrl+M|  
-|View.NextView|Ctrl+PgDn|  
-|View.ShowSmartTag|Shift+Alt+F10|  
-|View.ViewMarkup|SHIFT+F7|  
-|Window.PreviousTab|Ctrl+PgUp|  
-
-##  <a name="bkmk_HTMLeditorSource"></a> Представление исходного текста редактора HTML  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|  
-|View.NextView|Ctrl+PgDn|  
-|View.SynchronizeViews|Ctrl+Shift+Y|  
-|View.ViewDesigner|SHIFT+F7|  
-|Window.PreviousTab|Ctrl+PgUp|  
-
-##  <a name="bkmk_layerDiagram"></a> Схема слоев  
+##  <a name="html-editor"></a>Редактор HTML  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|Edit.Delete|Shift+Delete|  
+|OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|  
 
-##  <a name="bkmk_managedResources"></a> Редактор управляемых ресурсов  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.EditCell|F2|  
-|Edit.Remove|Удаление|  
-|Edit.RemoveRow|Ctrl+Delete|  
-|Edit.SelectionCancel|ESC|  
-|Resources.Audio|Ctrl+4|  
-|Resources.Files|Ctrl+5|  
-|Resources.Icons|CTRL+3|  
-|Resources.Images|Ctrl+2|  
-|Resources.Other|Ctrl+6|  
-|Resources.Strings|CTRL+1|  
-
-##  <a name="bkmk_MergeEditor"></a> Окно редактора слияния  
+##  <a name="html-editor-design-view"></a>Представления конструирования HTML-редактора  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|Alt+1|  
-|TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|  
-|TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|  
+|Edit.MoveControlDown|**CTRL+СТРЕЛКА ВНИЗ**|  
+|Edit.MoveControlUp|**CTRL+СТРЕЛКА ВВЕРХ**|  
+|Format.Bold|**CTRL+B**|  
+|Format.ConverttoHyperlink|**CTRL+L**|  
+|Format.InsertBookmark|**CTRL+SHIFT+L**|  
+|Format.Italic|**CTRL+I**|  
+|Format.Underline|**CTRL+U**|  
+|Project.AddContentPage|**CTRL+M, CTRL+C**|  
+|Table.ColumntotheLeft|**CTRL+ALT+СТРЕЛКА ВЛЕВО**|  
+|Table.ColumntotheRight|**CTRL+ALT+СТРЕЛКА ВПРАВО**|  
+|Table.RowAbove|**CTRL+ALT+СТРЕЛКА ВВЕРХ**|  
+|Table.RowBelow|**CTRL+ALT+СТРЕЛКА ВНИЗ**|  
+|View.ASP.NETNonvisualControls|**CTRL+SHIFT+N**|  
+|View.EditMaster|**CTRL+M, CTRL+M**|  
+|View.NextView|**CTRL+PGDN**|  
+|View.ShowSmartTag|**SHIFT+ALT+F10**|  
+|View.ViewMarkup|**SHIFT+F7**|  
+|Window.PreviousTab|**CTRL+PGUP**|  
 
-##  <a name="bkmk_SchemaCompare"></a> Средства работы с данными Microsoft SQL Server, сравнение схем  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|SQL.SSDTSchemaCompareCompare|Shift+Alt+C|  
-|SQL.SSDTSchemaCompareGenerateScript|Shift+Alt+G|  
-|SQL.SSDTSchemaCompareNextChange|Shift+Alt+.|  
-|SQL.SSDTSchemaComparePreviousChange|Shift+Alt+,|  
-|SQL.SSDTSchemaCompareStop|Alt+Break|  
-|SQL.SSDTSchemaCompareWriteUpdates|Shift+Alt+U|  
-
-##  <a name="bkmk_TableDesigner"></a> Средства работы с данными Microsoft SQL Server, конструктор таблиц  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|CommitAllEdits|Shift+Alt+U|  
-|SQL.ExpandWildcards|Ctrl+R, E<br /><br /> или<br /><br /> Ctrl+R, Ctrl+E|  
-|SQL.FullyqualifyNames|Ctrl+R, Q<br /><br /> или<br /><br /> Ctrl+R, Ctrl+Q|  
-|SQL.MovetoSchema|Ctrl+R, M<br /><br /> или<br /><br /> Ctrl+R, Ctrl+M|  
-|SQL.Rename|F2<br /><br /> или<br /><br /> Ctrl+R, R<br /><br /> или<br /><br /> Ctrl+R, Ctrl+R|  
-|ViewFileInScriptPanel|Shift+Alt+PgDn|  
-
-##  <a name="bkmk_TSQLeditor"></a> Средства работы с данными Microsoft SQL Server, редактор T-SQL  
+##  <a name="html-editor-source-view"></a>Представление кода HTML-редактора  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|CommitAllEdits|Shift+Alt+U|  
-|SQL.ExecuteWithDebugger|Alt+F5|  
-|SQL.ExpandWildcards|Ctrl+R, E<br /><br /> или<br /><br /> Ctrl+R, Ctrl+E|  
-|SQL.FullyqualifyNames|Ctrl+R, Q<br /><br /> или<br /><br /> Ctrl+R, Ctrl+Q|  
-|SQL.MovetoSchema|Ctrl+R, M<br /><br /> или<br /><br /> Ctrl+R, Ctrl+M|  
-|SQL.Rename|F2<br /><br /> или<br /><br /> Ctrl+R, R<br /><br /> или<br /><br /> Ctrl+R, Ctrl+R|  
-|SQL.TSqlEditorCancelQuery|Alt+Break|  
-|SQL.TSqlEditorExecuteQuery|Ctrl+Shift+E|  
-|SQL.TSqlEditorResultsAsFile|Ctrl+D, F|  
-|SQL.TSqlEditorResultsAsGrid|Ctrl+D, G|  
-|SQL.TSqlEditorResultsAsText|Ctrl+D, T|  
-|SQL.TSqlEditorShowEstimatedPlan|Ctrl+D, E|  
-|SQL.TSqlEditorToggleExecutionPlan|Ctrl+D, A|  
-|SQL.TSqlEditorToggleResultsPane|Ctrl+D, R|  
-|TSqlEditorCloneQuery|Ctrl+Alt+N|  
-|TSqlEditorDatabaseCombo|Shift+Alt+PgDn|  
+|OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|  
+|View.NextView|**CTRL+PGDN**|  
+|View.SynchronizeViews|**CTRL+SHIFT+Y**|  
+|View.ViewDesigner|**SHIFT+F7**|  
+|Window.PreviousTab|**CTRL+PGUP**|  
 
-##  <a name="bkmk_linkfix"></a> Средства работы с данными Microsoft SQL Server, редактор T-SQL PDW  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|SQL.TSqlEditorCancelQuery|Alt+Break|  
-|SQL.TSqlEditorExecuteQuery|Ctrl+Shift+E|  
-|SQL.TSqlEditorResultsAsFile|Ctrl+D, F|  
-|SQL.TSqlEditorResultsAsGrid|Ctrl+D, G|  
-|SQL.TSqlEditorResultsAsText|Ctrl+D, T|  
-|SQL.TSqlEditorShowEstimatedPlan|Ctrl+D, E|  
-|SQL.TSqlEditorToggleExecutionPlan|Ctrl+D, A|  
-|SQL.TSqlEditorToggleResultsPane|Ctrl+D, R|  
-|TSqlEditorCloneQuery|Ctrl+Alt+N|  
-|TSqlEditorDatabaseCombo|Shift+Alt+PgDn|  
-
-##  <a name="bkmk_PageInspector"></a> Инспектор страниц  
+##  <a name="layer-diagram"></a>Схема слоев  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|PageInspector.Minimize|F12|  
+|Edit.Delete|**SHIFT+DELETE**|  
 
-##  <a name="bkmk_QueryDesigner"></a> Конструктор запросов  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|QueryDesigner.CancelRetrievingData|Ctrl+T|  
-|QueryDesigner.Criteria|Ctrl+2|  
-|QueryDesigner.Diagram|CTRL+1|  
-|QueryDesigner.ExecuteSQL|CTRL+R|  
-|QueryDesigner.GotoRow|CTRL+G|  
-|QueryDesigner.JoinMode|Ctrl+Shift+J|  
-|QueryDesigner.Results|Ctrl+4|  
-|QueryDesigner.SQL|CTRL+3|  
-
-##  <a name="bkmk_QueryResults"></a> Результаты запроса  
+##  <a name="managed-resources-editor"></a>Редактор управляемых ресурсов  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|SQL.QueryResultsNewRow|Alt+End|  
-|SQL.QueryResultsRefresh|Shift+Alt+R|  
-|SQL.QueryResultsStop|Alt+Break|  
+|Edit.EditCell|**F2**|  
+|Edit.Remove|**Удалить**|  
+|Edit.RemoveRow|**CTRL+DELETE**|  
+|Edit.SelectionCancel|**ESCAPE**|  
+|Resources.Audio|**CTRL+4**|  
+|Resources.Files|**CTRL+5**|  
+|Resources.Icons|**CTRL+3**|  
+|Resources.Images|**CTRL+2**|  
+|Resources.Other|**CTRL+6**|  
+|Resources.Strings|**CTRL+1**|  
 
-##  <a name="bkmk_ReportDesigner"></a> Конструктор отчетов  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.BreakLine|ВВОД|  
-|Edit.CharLeft|СТРЕЛКА ВЛЕВО|  
-|Edit.CharLeftExtend|Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.CharRight|Стрелка вправо|  
-|Edit.CharRightExtend|Shift+СТРЕЛКА ВПРАВО|  
-|Edit.InsertTab|Tab|  
-|Edit.LineDown|Стрелка вниз|  
-|Edit.LineDownExtend|Shift+СТРЕЛКА ВНИЗ|  
-|Edit.LineUp|Стрелка вверх|  
-|Edit.LineUpExtend|Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.MoveControlDown|Ctrl+СТРЕЛКА ВНИЗ|  
-|Edit.MoveControlLeft|Ctrl+СТРЕЛКА ВЛЕВО|  
-|Edit.MoveControlRight|Ctrl+СТРЕЛКА ВПРАВО|  
-|Edit.MoveControlUp|Ctrl+СТРЕЛКА ВВЕРХ|  
-|Edit.SelectionCancel|ESC|  
-|Edit.SizeControlDown|Ctrl+Shift+СТРЕЛКА ВНИЗ|  
-|Edit.SizeControlLeft|Ctrl+Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.SizeControlRight|Ctrl+Shift+СТРЕЛКА ВПРАВО|  
-|Edit.SizeControlUp|Ctrl+Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.TabLeft|SHIFT+Tab|  
-|View.ReportData|Ctrl+Alt+D|  
-
-##  <a name="bkmk_SequenceDiagram"></a> Схема последовательностей  
+##  <a name="merge-editor-window"></a>Окно редактора слияния  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|ArchitectureDesigner.Sequence.NavigateToCode|F12|  
-|Edit.Delete|Shift+Del|  
+|TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**ALT+1**|  
+|TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|  
+|TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|  
 
-##  <a name="bkmk_SettingsDesigner"></a> Конструктор параметров  
+##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Средства работы с данными Microsoft SQL Server, сравнение схем  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Edit.EditCell|F2|  
-|Edit.RemoveRow|Ctrl+Delete|  
-|Edit.SelectionCancel|ESC|  
-|View.ViewCode|F7|  
+|SQL.SSDTSchemaCompareCompare|**SHIFT+ALT+C**|  
+|SQL.SSDTSchemaCompareGenerateScript|**SHIFT+ALT+G**|  
+|SQL.SSDTSchemaCompareNextChange|**SHIFT+ALT+.**|  
+|SQL.SSDTSchemaComparePreviousChange|**SHIFT+ALT+,**|  
+|SQL.SSDTSchemaCompareStop|**ALT+BREAK**|  
+|SQL.SSDTSchemaCompareWriteUpdates|**SHIFT+ALT+U**|  
 
-##  <a name="bkmk_SolutionExplorer"></a> Обозреватель решений  
+##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Средства работы с данными Microsoft SQL Server, конструктор таблиц  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|CommitAllEdits|**SHIFT+ALT+U**|  
+|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> или<br /><br /> **CTRL+R, CTRL+E**|  
+|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> или<br /><br /> **CTRL+R, CTRL+Q**|  
+|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> или<br /><br /> **CTRL+R, CTRL+M**|  
+|SQL.Rename|**F2**<br /><br /> или<br /><br /> **CTRL+R, R**<br /><br /> или<br /><br /> **CTRL+R, CTRL+R**|  
+|ViewFileInScriptPanel|**SHIFT+ALT+PGDN**|  
+
+##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Средства работы с данными Microsoft SQL Server, редактор T-SQL  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|CommitAllEdits|**SHIFT+ALT+U**|  
+|SQL.ExecuteWithDebugger|**ALT+F5**|  
+|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> или<br /><br /> **CTRL+R, CTRL+E**|  
+|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> или<br /><br /> **CTRL+R, CTRL+Q**|  
+|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> или<br /><br /> **CTRL+R, CTRL+M**|  
+|SQL.Rename|**F2**<br /><br /> или<br /><br /> **CTRL+R, R**<br /><br /> или<br /><br /> **CTRL+R, CTRL+R**|  
+|SQL.TSqlEditorCancelQuery|**ALT+BREAK**|  
+|SQL.TSqlEditorExecuteQuery|**CTRL+SHIFT+E**|  
+|SQL.TSqlEditorResultsAsFile|**CTRL+D, F**|  
+|SQL.TSqlEditorResultsAsGrid|**CTRL+D, G**|  
+|SQL.TSqlEditorResultsAsText|**CTRL+D, T**|  
+|SQL.TSqlEditorShowEstimatedPlan|**CTRL+D, E**|  
+|SQL.TSqlEditorToggleExecutionPlan|**CTRL+D, A**|  
+|SQL.TSqlEditorToggleResultsPane|**CTRL+D, R**|  
+|TSqlEditorCloneQuery|**CTRL+ALT+N**|  
+|TSqlEditorDatabaseCombo|**SHIFT+ALT+PGDN**|  
+
+##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Средства работы с данными Microsoft SQL Server, редактор T-SQL PDW  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|SQL.TSqlEditorCancelQuery|**ALT+BREAK**|  
+|SQL.TSqlEditorExecuteQuery|**CTRL+SHIFT+E**|  
+|SQL.TSqlEditorResultsAsFile|**CTRL+D, F**|  
+|SQL.TSqlEditorResultsAsGrid|**CTRL+D, G**|  
+|SQL.TSqlEditorResultsAsText|**CTRL+D, T**|  
+|SQL.TSqlEditorShowEstimatedPlan|**CTRL+D, E**|  
+|SQL.TSqlEditorToggleExecutionPlan|**CTRL+D, A**|  
+|SQL.TSqlEditorToggleResultsPane|**CTRL+D, R**|  
+|TSqlEditorCloneQuery|**CTRL+ALT+N**|  
+|TSqlEditorDatabaseCombo|**SHIFT+ALT+PGDN**|  
+
+##  <a name="page-inspector"></a>Инспектор страниц  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K, Ctrl+G|  
+|PageInspector.Minimize|**F12**|  
 
-##  <a name="bkmk_TeamExplorer"></a> Team Explorer  
+##  <a name="query-designer"></a>Конструктор запросов  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|QueryDesigner.CancelRetrievingData|**CTRL+T**|  
+|QueryDesigner.Criteria|**CTRL+2**|  
+|QueryDesigner.Diagram|**CTRL+1**|  
+|QueryDesigner.ExecuteSQL|**CTRL+R**|  
+|QueryDesigner.GotoRow|**CTRL+G**|  
+|QueryDesigner.JoinMode|**CTRL+SHIFT+J**|  
+|QueryDesigner.Results|**CTRL+4**|  
+|QueryDesigner.SQL|**CTRL+3**|  
+
+##  <a name="query-results"></a>Результаты запроса  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|SQL.QueryResultsNewRow|**ALT+END**|  
+|SQL.QueryResultsRefresh|**SHIFT+ALT+R**|  
+|SQL.QueryResultsStop|**ALT+BREAK**|  
+
+##  <a name="report-designer"></a>Конструктор отчетов  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.BreakLine|**ВВОД**|  
+|Edit.CharLeft|**СТРЕЛКА ВЛЕВО**|  
+|Edit.CharLeftExtend|**SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.CharRight|**СТРЕЛКА ВПРАВО**|  
+|Edit.CharRightExtend|**SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.InsertTab|**TAB**|  
+|Edit.LineDown|**СТРЕЛКА ВНИЗ**|  
+|Edit.LineDownExtend|**SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.LineUp|**СТРЕЛКА ВВЕРХ**|  
+|Edit.LineUpExtend|**SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.MoveControlDown|**CTRL+СТРЕЛКА ВНИЗ**|  
+|Edit.MoveControlLeft|**CTRL+СТРЕЛКА ВЛЕВО**|  
+|Edit.MoveControlRight|**CTRL+СТРЕЛКА ВПРАВО**|  
+|Edit.MoveControlUp|**CTRL+СТРЕЛКА ВВЕРХ**|  
+|Edit.SelectionCancel|**ESC**|  
+|Edit.SizeControlDown|**CTRL+SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.SizeControlLeft|**CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.SizeControlRight|**CTRL+SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.SizeControlUp|**CTRL+SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.TabLeft|**SHIFT+TAB**|  
+|View.ReportData|**CTRL+ALT+D**|  
+
+##  <a name="sequence-diagram"></a>Схема последовательностей  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|ArchitectureDesigner.Sequence.NavigateToCode|**F12**|  
+|Edit.Delete|**SHIFT+DEL**|  
+
+##  <a name="settings-designer"></a>Конструктор параметров  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.EditCell|**F2**|  
+|Edit.RemoveRow|**CTRL+DELETE**|  
+|Edit.SelectionCancel|**ESC**|  
+|View.ViewCode|**F7**|  
+
+##  <a name="solution-explorer"></a>обозреватель решений  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|Edit.Delete|Удаление|  
-|File.Rename|F2|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|Alt+Home|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|Alt+СТРЕЛКА ВНИЗ|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|Alt+0|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|Alt+СТРЕЛКА ВВЕРХ|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|Alt+1|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|Alt+2|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection3Content|Alt+3|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection4Content|Alt+4|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection5Content|Alt+5|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection6Content|Alt+6|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content|Alt+7|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content|Alt+8|  
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content|Alt+9|  
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|Alt + Стрелка влево|  
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|Alt + Стрелка вправо|  
-|TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|Shift+Alt+C|  
-|TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Shift+Alt+L|  
-|View.Refresh|F5|  
+|ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL+K, CTRL+G**|  
 
-##  <a name="bkmk_TFBuild"></a> Редактор сведений Team Foundation Build  
+##  <a name="team-explorer"></a>Командный обозреватель  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|View.Refresh|F5|  
+|Edit.Delete|**Удалить**|  
+|File.Rename|**F2**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**ALT+HOME**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT+СТРЕЛКА ВНИЗ**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT+0**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**ALT+СТРЕЛКА ВВЕРХ**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**ALT+1**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**ALT+2**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection3Content|**ALT+3**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection4Content|**ALT+4**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection5Content|**ALT+5**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection6Content|**ALT+6**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content|**ALT+7**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content|**ALT+8**|  
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content|**ALT+9**|  
+|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**ALT+СТРЕЛКА ВЛЕВО**|  
+|TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**ALT+СТРЕЛКА ВПРАВО**|  
+|TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**SHIFT+ALT+C**|  
+|TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**SHIFT+ALT+L**|  
+|View.Refresh|**F5**|  
 
-##  <a name="bkmk_TestExplorer"></a> Обозреватель тестов  
-
-|Команда|Сочетание клавиш|  
-|-------------|-----------------------|  
-|TestExplorer.OpenTest|F12|  
-
-##  <a name="bkmk_TextEditor"></a> Текстовый редактор  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.BreakLine|ВВОД<br /><br /> или<br /><br /> SHIFT+ВВОД|  
-|Edit.CharLeft|СТРЕЛКА ВЛЕВО|  
-|Edit.CharLeftExtend|Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.CharLeftExtendColumn|Shift+Alt+СТРЕЛКА ВЛЕВО|  
-|Edit.CharRight|Стрелка вправо|  
-|Edit.CharRightExtend|Shift+СТРЕЛКА ВПРАВО|  
-|Edit.CharRightExtendColumn|Shift+Alt+СТРЕЛКА ВПРАВО|  
-|Edit.CharTranspose|Ctrl+T|  
-|Edit.ClearBookmarks|Ctrl+K, Ctrl+L|  
-|Edit.CollapseAllOutlining|Ctrl+M, Ctrl+A|  
-|Edit.CollapseCurrentRegion|Ctrl+M, Ctrl+S|  
-|Edit.CollapseTag|Ctrl+M, Ctrl+T|  
-|Edit.CollapsetoDefinitions|Ctrl+M, Ctrl+O|  
-|Edit.CommentSelection|Ctrl+K, Ctrl+C|  
-|Edit.CompleteWord|Ctrl+ПРОБЕЛ<br /><br /> или<br /><br /> Alt + Стрелка вправо|  
-|Edit.CopyParameterTip|Ctrl+Shift+Alt+C|  
-|Edit.DecreaseFilterLevel|Alt+,|  
-|Edit.DeleteBackwards|Backspace<br /><br /> или<br /><br /> Shift+Bkspce|  
-|Edit.DeleteHorizontalWhiteSpace|Ctrl+K, Ctrl+\|  
-|Edit.DocumentEnd|Ctrl+End|  
-|Edit.DocumentEndExtend|Ctrl+Shift+End|  
-|Edit.DocumentStart|Ctrl+Home|  
-|Edit.DocumentStartExtend|Ctrl+Shift+Home|  
-|Edit.ExpandAllOutlining|Ctrl+M, Ctrl+X|  
-|Edit.ExpandCurrentRegion|Ctrl+M, Ctrl+E|  
-|Edit.FormatDocument|Ctrl+K, Ctrl+D|  
-|Edit.FormatSelection|Ctrl+K, Ctrl+F|  
-|Edit.GotoBrace|CTRL+]|  
-|Edit.GotoBraceExtend|CTRL+SHIFT+]|  
-|Edit.HideSelection|Ctrl+M, Ctrl+H|  
-|Edit.IncreaseFilterLevel|Alt+.|  
-|Edit.IncrementalSearch|CTRL+I|  
-|Edit.InsertTab|Вкладка|  
-|Edit.LineCut|CTRL+L|  
-|Edit.LineDelete|CTRL+SHIFT+L|  
-|Edit.LineDown|Стрелка вниз|  
-|Edit.LineDownExtend|Shift+СТРЕЛКА ВНИЗ|  
-|Edit.LineDownExtendColumn|Shift+Alt+СТРЕЛКА ВНИЗ|  
-|Edit.LineEnd|Конец|  
-|Edit.LineEndExtend|Shift+End|  
-|Edit.LineEndExtendColumn|Shift+Alt+End|  
-|Edit.LineOpenAbove|Ctrl+ВВОД|  
-|Edit.LineOpenBelow|Ctrl+Shift+ВВОД|  
-|Edit.LineStart|Главная страница|  
-|Edit.LineStartExtend|Shift+Home|  
-|Edit.LineStartExtendColumn|SHIFT+ALT+HOME|  
-|Edit.LineTranspose|Shift+Alt+T|  
-|Edit.LineUp|Стрелка вверх|  
-|Edit.LineUpExtend|Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.LineUpExtendColumn|Shift+Alt+СТРЕЛКА ВВЕРХ|  
-|Edit.ListMembers|CTRL+J|  
-|Edit.MakeLowercase|Ctrl+U|  
-|Edit.MakeUppercase|Ctrl+Shift+U|  
-|Edit.MoveSelectedLinesDown|Alt+СТРЕЛКА ВНИЗ|  
-|Edit.MoveSelectedLinesUp|Alt+СТРЕЛКА ВВЕРХ|  
-|Edit.NextHighlightedReference|Ctrl+Shift+СТРЕЛКА ВНИЗ|  
-|Edit.OvertypeMode|Insert|  
-|Edit.PageDown|PgDn|  
-|Edit.PageDownExtend|SHIFT+PgDn|  
-|Edit.PageUp|PgUp|  
-|Edit.PageUpExtend|Shift+PgUp|  
-|Edit.ParameterInfo|Ctrl+Shift+ПРОБЕЛ|  
-|Edit.PasteParameterTip|Ctrl+Shift+Alt+P|  
-|Edit.PeekBackward|Ctrl+Alt+-|  
-|Edit.PeekDefinition|ALT+F12|  
-|Edit.PeekForward|Ctrl+Alt+=|  
-|Edit.PreviousHighlightedReference|Ctrl+Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.QuickInfo|Ctrl+K, Ctrl+I|  
-|Edit.ReverseIncrementalSearch|Ctrl+Shift+I|  
-|Edit.ScrollLineDown|Ctrl+СТРЕЛКА ВНИЗ|  
-|Edit.ScrollLineUp|Ctrl+СТРЕЛКА ВВЕРХ|  
-|Edit.SelectCurrentWord|CTRL+W|  
-|Edit.SelectionCancel|ESC|  
-|Edit.SelectToLastGoBack|Ctrl+=|  
-|Edit.ShowCodeLensMenu|Alt+`|  
-|Edit.StopHidingCurrent|Ctrl+M, Ctrl+U|  
-|Edit.StopOutlining|Ctrl+M, Ctrl+P|  
-|Edit.SwapAnchor|Ctrl+K, Ctrl+A|  
-|Edit.TabLeft|SHIFT+Tab|  
-|Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L|  
-|Edit.ToggleBookmark|Ctrl+K, Ctrl+K|  
-|Edit.ToggleCompletionMode|Ctrl+Alt+ПРОБЕЛ|  
-|Edit.ToggleOutliningExpansion|Ctrl+M, Ctrl+M|  
-|Edit.ToggleTaskListShortcut|Ctrl+K, Ctrl+H|  
-|Edit.ToggleWordWrap|Ctrl+E, Ctrl+W|  
-|Edit.UncommentSelection|Ctrl+K, Ctrl+U|  
-|Edit.ViewBottom|Ctrl+PgDn|  
-|Edit.ViewBottomExtend|Ctrl+Shift+PgDn|  
-|Edit.ViewTop|Ctrl+PgUp|  
-|Edit.ViewTopExtend|Ctrl+Shift+PgUp|  
-|Edit.ViewWhiteSpace|Ctrl+R, Ctrl+W|  
-|Edit.WordDeleteToEnd|Ctrl+Delete|  
-|Edit.WordDeleteToStart|Ctrl+Backspace|  
-|Edit.WordNext|Ctrl+СТРЕЛКА ВПРАВО|  
-|Edit.WordNextExtend|Ctrl+Shift+СТРЕЛКА ВПРАВО|  
-|Edit.WordNextExtendColumn|Ctrl+Shift+Alt+СТРЕЛКА ВПРАВО|  
-|Edit.WordPrevious|Ctrl+СТРЕЛКА ВЛЕВО|  
-|Edit.WordPreviousExtend|Ctrl+Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.WordPreviousExtendColumn|Ctrl+Shift+Alt+СТРЕЛКА ВЛЕВО|  
-|Edit.WordTranspose|Ctrl+Shift+T|  
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|Alt+ВВОД|  
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|Alt+'|  
-|OtherContextMenus.HTMLContext.ViewinPageInspector|Ctrl+K, Ctrl+G|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
-
-##  <a name="bkmk_UMLactivityDiagram"></a> Схема активности UML  
+##  <a name="team-foundation-build-detail-editor"></a>Редактор сведений Team Foundation Server  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|Edit.Delete|Shift+Del|  
+|View.Refresh|**F5**|  
 
-##  <a name="bkmk_UMLclassDiagram"></a> Схема классов UML  
-
-|Команда|Сочетание клавиш|  
-|-------------|-----------------------|  
-|Edit.DeleteFromModel|Shift+Del|  
-
-##  <a name="bkmk_UMLcomponentDiagram"></a> Схема компонентов UML  
+##  <a name="test-explorer"></a>Обозреватель тестов  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|Edit.DeleteFromModel|Shift+Del|  
+|TestExplorer.OpenTest|**F12**|  
 
-##  <a name="bkmk_UMLusecaseDiagram"></a> Схема вариантов использования UML  
+##  <a name="text-editor"></a>Текстовый редактор  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.BreakLine|**ВВОД**<br /><br /> или<br /><br /> **SHIFT+ВВОД**|  
+|Edit.CharLeft|**СТРЕЛКА ВЛЕВО**|  
+|Edit.CharLeftExtend|**SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.CharLeftExtendColumn|**SHIFT+ALT+СТРЕЛКА ВЛЕВО**|  
+|Edit.CharRight|**СТРЕЛКА ВПРАВО**|  
+|Edit.CharRightExtend|**SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.CharRightExtendColumn|**SHIFT+ALT+СТРЕЛКА ВПРАВО**|  
+|Edit.CharTranspose|**CTRL+T**|  
+|Edit.ClearBookmarks|**CTRL+K, CTRL+L**|  
+|Edit.CollapseAllOutlining|**CTRL+M, CTRL+A**|  
+|Edit.CollapseCurrentRegion|**CTRL+M, CTRL+S**|  
+|Edit.CollapseTag|**CTRL+M, CTRL+T**|  
+|Edit.CollapsetoDefinitions|**CTRL+M, CTRL+O**|  
+|Edit.CommentSelection|**CTRL+K, CTRL+C**|  
+|Edit.CompleteWord|**CTRL+ПРОБЕЛ**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВПРАВО**|  
+|Edit.CopyParameterTip|**CTRL+SHIFT+ALT+C**|  
+|Edit.DecreaseFilterLevel|**ALT+,**|  
+|Edit.DeleteBackwards|**BACKSPACE**<br /><br /> или<br /><br /> **SHIFT+BKSPCE**|  
+|Edit.DeleteHorizontalWhiteSpace|**CTRL+K, CTRL+\**|  
+|Edit.DocumentEnd|**CTRL+END**|  
+|Edit.DocumentEndExtend|**CTRL+SHIFT+END**|  
+|Edit.DocumentStart|**CTRL+HOME**|  
+|Edit.DocumentStartExtend|**CTRL+SHIFT+HOME**|  
+|Edit.ExpandAllOutlining|**CTRL+M, CTRL+X**|  
+|Edit.ExpandCurrentRegion|**CTRL+M, CTRL+E**|  
+|Edit.FormatDocument|**CTRL+K, CTRL+D**|  
+|Edit.FormatSelection|**CTRL+K, CTRL+F**|  
+|Edit.GotoBrace|**CTRL+]**|  
+|Edit.GotoBraceExtend|**CTRL+SHIFT+]**|  
+|Edit.HideSelection|**CTRL+M, CTRL+H**|  
+|Edit.IncreaseFilterLevel|**ALT+.**|  
+|Edit.IncrementalSearch|**CTRL+I**|  
+|Edit.InsertTab|**TAB**|  
+|Edit.LineCut|**CTRL+L**|  
+|Edit.LineDelete|**CTRL+SHIFT+L**|  
+|Edit.LineDown|**СТРЕЛКА ВНИЗ**|  
+|Edit.LineDownExtend|**SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.LineDownExtendColumn|**SHIFT+ALT+СТРЕЛКА ВНИЗ**|  
+|Edit.LineEnd|**END**|  
+|Edit.LineEndExtend|**SHIFT+END**|  
+|Edit.LineEndExtendColumn|**SHIFT+ALT+END**|  
+|Edit.LineOpenAbove|**CTRL+ВВОД**|  
+|Edit.LineOpenBelow|**CTRL+SHIFT+ВВОД**|  
+|Edit.LineStart|**Корневая папка**|  
+|Edit.LineStartExtend|**SHIFT+HOME**|  
+|Edit.LineStartExtendColumn|**SHIFT+ALT+HOME**|  
+|Edit.LineTranspose|**SHIFT+ALT+T**|  
+|Edit.LineUp|**СТРЕЛКА ВВЕРХ**|  
+|Edit.LineUpExtend|**SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.LineUpExtendColumn|**SHIFT+ALT+СТРЕЛКА ВВЕРХ**|  
+|Edit.ListMembers|**CTRL+J**|  
+|Edit.MakeLowercase|**CTRL+U**|  
+|Edit.MakeUppercase|**CTRL+SHIFT+U**|  
+|Edit.MoveSelectedLinesDown|**ALT+СТРЕЛКА ВНИЗ**|  
+|Edit.MoveSelectedLinesUp|**ALT+СТРЕЛКА ВВЕРХ**|  
+|Edit.NextHighlightedReference|**CTRL+SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.OvertypeMode|**Вставить**|  
+|Edit.PageDown|**PGDN**|  
+|Edit.PageDownExtend|**SHIFT+PGDN**|  
+|Edit.PageUp|**PGUP**|  
+|Edit.PageUpExtend|**SHIFT+PGUP**|  
+|Edit.ParameterInfo|**CTRL+SHIFT+ПРОБЕЛ**|  
+|Edit.PasteParameterTip|**CTRL+SHIFT+ALT+P**|  
+|Edit.PeekBackward|**CTRL+ALT+-**|  
+|Edit.PeekDefinition|**ALT+F12**|  
+|Edit.PeekForward|**CTRL+ALT+=**|  
+|Edit.PreviousHighlightedReference|**CTRL+SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.QuickInfo|**CTRL+K, CTRL+I**|  
+|Edit.ReverseIncrementalSearch|**CTRL+SHIFT+I**|  
+|Edit.ScrollLineDown|**CTRL+СТРЕЛКА ВНИЗ**|  
+|Edit.ScrollLineUp|**CTRL+СТРЕЛКА ВВЕРХ**|  
+|Edit.SelectCurrentWord|**CTRL+W**|  
+|Edit.SelectionCancel|**ESCAPE**|  
+|Edit.SelectToLastGoBack|**CTRL+=**|  
+|Edit.ShowCodeLensMenu|**ALT+`**|  
+|Edit.StopHidingCurrent|**CTRL+M, CTRL+U**|  
+|Edit.StopOutlining|**CTRL+M, CTRL+P**|  
+|Edit.SwapAnchor|**CTRL+K, CTRL+A**|  
+|Edit.TabLeft|**SHIFT+TAB**|  
+|Edit.ToggleAllOutlining|**CTRL+M, CTRL+L**|  
+|Edit.ToggleBookmark|**CTRL+K, CTRL+K**|  
+|Edit.ToggleCompletionMode|**CTRL+ALT+ПРОБЕЛ**|  
+|Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M**|  
+|Edit.ToggleTaskListShortcut|**CTRL+K, CTRL+H**|  
+|Edit.ToggleWordWrap|**CTRL+E, CTRL+W**|  
+|Edit.UncommentSelection|**CTRL+K, CTRL+U**|  
+|Edit.ViewBottom|**CTRL+PGDN**|  
+|Edit.ViewBottomExtend|**CTRL+SHIFT+PGDN**|  
+|Edit.ViewTop|**CTRL+PGUP**|  
+|Edit.ViewTopExtend|**CTRL+SHIFT+PGUP**|  
+|Edit.ViewWhiteSpace|**CTRL+R, CTRL+W**|  
+|Edit.WordDeleteToEnd|**CTRL+DELETE**|  
+|Edit.WordDeleteToStart|**CTRL+BACKSPACE**|  
+|Edit.WordNext|**CTRL+СТРЕЛКА ВПРАВО**|  
+|Edit.WordNextExtend|**CTRL+SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.WordNextExtendColumn|**CTRL+SHIFT+ALT+СТРЕЛКА ВПРАВО**|  
+|Edit.WordPrevious|**CTRL+СТРЕЛКА ВЛЕВО**|  
+|Edit.WordPreviousExtend|**CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.WordPreviousExtendColumn|**CTRL+SHIFT+ALT+СТРЕЛКА ВЛЕВО**|  
+|Edit.WordTranspose|**CTRL+SHIFT+T**|  
+|EditorContextMenus.CodeWindow.ExecuteInInteractive|**ALT+ВВОД**|  
+|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**ALT+'**|  
+|OtherContextMenus.HTMLContext.ViewinPageInspector|**CTRL+K, CTRL+G**|  
+|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**ALT+PGDN**|  
+|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**ALT+PGUP**|  
+
+##  <a name="uml-activity-diagram"></a>Схема активности UML  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|Edit.DeleteFromModel|Shift+Del|  
+|Edit.Delete|**SHIFT+DEL**|  
 
-##  <a name="bkmk_vcaccelerator"></a> Редактор сочетаний клавиш VC  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.NewAccelerator|Insert|  
-|Edit.NextKeyTyped|CTRL+W|  
-
-##  <a name="bkmk_vcdialogeditor"></a> Редактор диалоговых окон VC  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.MoveControlDown|Стрелка вниз|  
-|Edit.MoveControlLeft|СТРЕЛКА ВЛЕВО|  
-|Edit.MoveControlRight|Стрелка вправо|  
-|Edit.MoveControlUp|Стрелка вверх|  
-|Edit.ScrollColumnLeft|Ctrl+СТРЕЛКА ВЛЕВО|  
-|Edit.ScrollColumnRight|Ctrl+СТРЕЛКА ВПРАВО|  
-|Edit.ScrollLineDown|Ctrl+СТРЕЛКА ВНИЗ|  
-|Edit.ScrollLineUp|Ctrl+СТРЕЛКА ВВЕРХ|  
-|Edit.SizeControlDown|Shift+СТРЕЛКА ВНИЗ|  
-|Edit.SizeControlLeft|Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.SizeControlRight|Shift+СТРЕЛКА ВПРАВО|  
-|Edit.SizeControlUp|Shift+СТРЕЛКА ВВЕРХ|  
-|Format.AlignBottoms|Ctrl+Shift+СТРЕЛКА ВНИЗ|  
-|Format.AlignCenters|SHIFT+F9|  
-|Format.AlignLefts|Ctrl+Shift+СТРЕЛКА ВЛЕВО|  
-|Format.AlignMiddles|F9|  
-|Format.AlignRights|Ctrl+Shift+СТРЕЛКА ВПРАВО|  
-|Format.AlignTops|Ctrl+Shift+СТРЕЛКА ВВЕРХ|  
-|Format.ButtonBottom|Ctrl+B|  
-|Format.ButtonRight|CTRL+R|  
-|Format.CenterHorizontal|Ctrl+Shift+F9|  
-|Format.CenterVertical|Ctrl+F9|  
-|Format.CheckMnemonics|CTRL+M|  
-|Format.SizetoContent|SHIFT+F7|  
-|Format.SpaceAcross|Alt + Стрелка вправо<br /><br /> или<br /><br /> Alt + Стрелка влево|  
-|Format.SpaceDown|Alt+СТРЕЛКА ВВЕРХ<br /><br /> или<br /><br /> Alt+СТРЕЛКА ВНИЗ|  
-|Format.TabOrder|CTRL+D|  
-|Format.TestDialog|Ctrl+T|  
-|Format.ToggleGuides|CTRL+G|  
-
-##  <a name="bkmk_vcimageeditor"></a> Редактор изображений VC  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Image.AirbrushTool|CTRL+A|  
-|Image.BrushTool|Ctrl+B|  
-|Image.CopyandOutlineSelection|Ctrl+Shift+U|  
-|Image.DrawOpaque|CTRL+J|  
-|Image.EllipseTool|Alt+P|  
-|Image.EraseTool|Ctrl+Shift+I|  
-|Image.FilledEllipseTool|Ctrl+Shift+Alt+P|  
-|Image.FilledRectangleTool|Ctrl+Shift+Alt+R|  
-|Image.FilledRoundedRectangleTool|Ctrl+Shift+Alt+W|  
-|Image.FillTool|CTRL+F|  
-|Image.FlipHorizontal|CTRL+H|  
-|Image.FlipVertical|Shift+Alt+H|  
-|Image.LargerBrush|Ctrl+=|  
-|Image.LineTool|CTRL+L|  
-|Image.MagnificationTool|CTRL+M|  
-|Image.Magnify|CTRL+SHIFT+M|  
-|Image.NewImageType|Insert|  
-|Image.NextColor|CTRL+]<br /><br /> или<br /><br /> Ctrl+СТРЕЛКА ВПРАВО|  
-|Image.NextRightColor|CTRL+SHIFT+]<br /><br /> или<br /><br /> Ctrl+Shift+СТРЕЛКА ВПРАВО|  
-|Image.OutlinedEllipseTool|Shift+Alt+P|  
-|Image.OutlinedRectangleTool|Shift+Alt+R|  
-|Image.OutlinedRoundedRectangleTool|Shift+Alt+W|  
-|Image.PencilTool|CTRL+I|  
-|Image.PreviousColor|CTRL+[<br /><br /> или<br /><br /> Ctrl+СТРЕЛКА ВЛЕВО|  
-|Image.PreviousRightColor|CTRL+SHIFT+[<br /><br /> или<br /><br /> Ctrl+Shift+СТРЕЛКА ВЛЕВО|  
-|Image.RectangleSelectionTool|Shift+Alt+S|  
-|Image.RectangleTool|Alt+R|  
-|Image.Rotate90Degrees|Ctrl+Shift+H|  
-|Image.RoundedRectangleTool|Alt+W|  
-|Image.ShowGrid|Ctrl+Alt+S|  
-|Image.ShowTileGrid|Ctrl+Shift+Alt+S|  
-|Image.SmallBrush|CTRL+.|  
-|Image.SmallerBrush|Ctrl+-|  
-|Image.TextTool|Ctrl+T|  
-|Image.UseSelectionasBrush|Ctrl+U|  
-|Image.ZoomIn|Ctrl+Shift+.<br /><br /> или<br /><br /> Ctrl+СТРЕЛКА ВВЕРХ|  
-|Image.ZoomOut|Ctrl+Shift+,<br /><br /> или<br /><br /> Ctrl+СТРЕЛКА ВНИЗ|  
-
-##  <a name="bkmk_vcstringeditor"></a> Редактор строк VC  
+##  <a name="uml-class-diagram"></a>UML-схема классов  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|Edit.NewString|Insert|  
+|Edit.DeleteFromModel|**SHIFT+DEL**|  
 
-##  <a name="bkmk_viewDesigner"></a> Конструктор представлений  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|QueryDesigner.CancelRetrievingData|Ctrl+T|  
-|QueryDesigner.Criteria|Ctrl+2|  
-|QueryDesigner.Diagram|CTRL+1|  
-|QueryDesigner.ExecuteSQL|CTRL+R|  
-|QueryDesigner.GotoRow|CTRL+G|  
-|QueryDesigner.JoinMode|Ctrl+Shift+J|  
-|QueryDesigner.Results|Ctrl+4|  
-|QueryDesigner.SQL|CTRL+3|  
-
-##  <a name="bkmk_visualstudio"></a> Visual Studio  
+##  <a name="uml-component-diagram"></a>Схема компонентов UML  
 
 |Команда|Сочетание клавиш|  
 |-------------|-----------------------|  
-|OtherContextMenus.ORDesignerContext.HideMethodsPane|CTRL+1|  
+|Edit.DeleteFromModel|**SHIFT+DEL**|  
 
-##  <a name="bkmk_wfdesigner"></a> Конструктор Windows Forms  
+##  <a name="uml-use-case-diagram"></a>Схема вариантов использования UML  
 
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.BreakLine|ВВОД|  
-|Edit.CharLeft|СТРЕЛКА ВЛЕВО|  
-|Edit.CharLeftExtend|Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.CharRight|Стрелка вправо|  
-|Edit.CharRightExtend|Shift+СТРЕЛКА ВПРАВО|  
-|Edit.DocumentEnd|Конец|  
-|Edit.DocumentEndExtend|Shift+End|  
-|Edit.DocumentStart|Главная страница|  
-|Edit.DocumentStartExtend|Shift+Home|  
-|Edit.InsertTab|Tab|  
-|Edit.LineDown|Стрелка вниз|  
-|Edit.LineDownExtend|Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.LineUp|Стрелка вверх|  
-|Edit.LineUpExtend|Shift+СТРЕЛКА ВНИЗ|  
-|Edit.MoveControlDown|Ctrl+СТРЕЛКА ВНИЗ|  
-|Edit.MoveControlLeft|Ctrl+СТРЕЛКА ВЛЕВО|  
-|Edit.MoveControlRight|Ctrl+СТРЕЛКА ВПРАВО|  
-|Edit.MoveControlUp|Ctrl+СТРЕЛКА ВВЕРХ|  
-|Edit.SelectionCancel|ESC|  
-|Edit.SizeControlDown|Ctrl+Shift+СТРЕЛКА ВНИЗ|  
-|Edit.SizeControlLeft|Ctrl+Shift+СТРЕЛКА ВЛЕВО|  
-|Edit.SizeControlRight|Ctrl+Shift+СТРЕЛКА ВПРАВО|  
-|Edit.SizeControlUp|Ctrl+Shift+СТРЕЛКА ВВЕРХ|  
-|Edit.TabLeft|SHIFT+Tab|  
+|Команда|Сочетание клавиш|  
+|-------------|-----------------------|  
+|Edit.DeleteFromModel|**SHIFT+DEL**|  
 
-##  <a name="bkmk_workItemEditor"></a> Редактор рабочих элементов  
+##  <a name="vc-accelerator-editor"></a>Редактор сочетаний клавиш VC  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Edit.CreateCopyofWorkItem|Shift+Alt+C|  
-|Edit.RefreshWorkItem|F5|  
-|Team.NewLinkedWorkItem|Shift+Alt+L|  
+|Edit.NewAccelerator|**Вставить**|  
+|Edit.NextKeyTyped|**CTRL+W**|  
 
-##  <a name="bkmk_WIqueryview"></a> Представление запросов рабочих элементов  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Edit.CreateCopyofWorkItem|Shift+Alt+C|  
-|Edit.Indent|Shift+Alt+СТРЕЛКА ВПРАВО|  
-|Edit.Outdent|Shift+Alt+СТРЕЛКА ВЛЕВО|  
-|Team.NewLinkedWorkItem|Shift+Alt+L|  
-|Team.Refresh|F5|  
-|Window.Toggle|Shift+Alt+V|  
-
-##  <a name="bkmk_WIresultsview"></a> Представление результатов рабочих элементов  
+##  <a name="vc-dialog-editor"></a>Редактор диалоговых окон VC  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Edit.CreateCopyofWorkItem|Shift+Alt+C|  
-|Edit.Indent|Shift+Alt+СТРЕЛКА ВПРАВО|  
-|Edit.Outdent|Shift+Alt+СТРЕЛКА ВЛЕВО|  
-|Team.GotoNextWorkItem|Shift+Alt+N|  
-|Team.GotoPreviousWorkItem|Shift+Alt+P|  
-|Team.NewLinkedWorkItem|Shift+Alt+L|  
-|Team.Refresh|F5|  
-|Window.Toggle|Shift+Alt+V|  
+|Edit.MoveControlDown|**СТРЕЛКА ВНИЗ**|  
+|Edit.MoveControlLeft|**СТРЕЛКА ВЛЕВО**|  
+|Edit.MoveControlRight|**СТРЕЛКА ВПРАВО**|  
+|Edit.MoveControlUp|**СТРЕЛКА ВВЕРХ**|  
+|Edit.ScrollColumnLeft|**CTRL+СТРЕЛКА ВЛЕВО**|  
+|Edit.ScrollColumnRight|**CTRL+СТРЕЛКА ВПРАВО**|  
+|Edit.ScrollLineDown|**CTRL+СТРЕЛКА ВНИЗ**|  
+|Edit.ScrollLineUp|**CTRL+СТРЕЛКА ВВЕРХ**|  
+|Edit.SizeControlDown|**SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.SizeControlLeft|**SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.SizeControlRight|**SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.SizeControlUp|**SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Format.AlignBottoms|**CTRL+SHIFT+СТРЕЛКА ВНИЗ**|  
+|Format.AlignCenters|**SHIFT+F9**|  
+|Format.AlignLefts|**CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Format.AlignMiddles|**F9**|  
+|Format.AlignRights|**CTRL+SHIFT+СТРЕЛКА ВПРАВО**|  
+|Format.AlignTops|**CTRL+SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Format.ButtonBottom|**CTRL+B**|  
+|Format.ButtonRight|**CTRL+R**|  
+|Format.CenterHorizontal|**CTRL+SHIFT+F9**|  
+|Format.CenterVertical|**CTRL+F9**|  
+|Format.CheckMnemonics|**CTRL+M**|  
+|Format.SizetoContent|**SHIFT+F7**|  
+|Format.SpaceAcross|**ALT+СТРЕЛКА ВПРАВО**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВЛЕВО**|  
+|Format.SpaceDown|**ALT+СТРЕЛКА ВВЕРХ**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВНИЗ**|  
+|Format.TabOrder|**CTRL+D**|  
+|Format.TestDialog|**CTRL+T**|  
+|Format.ToggleGuides|**CTRL+G**|  
 
-##  <a name="bkmk_workflowdesigner"></a> Конструктор рабочих процессов  
+##  <a name="vc-image-editor"></a>Редактор изображений VC  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|Edit.CompleteWord|Ctrl+K, W<br /><br /> или<br /><br /> Ctrl+K, Ctrl+W<br /><br /> или<br /><br /> Ctrl+ПРОБЕЛ<br /><br /> или<br /><br /> Alt + Стрелка вправо|  
-|Edit.DecreaseFilterLevel|Alt+,|  
-|Edit.IncreaseFilterLevel|Alt+.|  
-|Edit.ListMembers|Ctrl+K, L<br /><br /> или<br /><br /> Ctrl+K, Ctrl+L<br /><br /> или<br /><br /> CTRL+J|  
-|Edit.ParameterInfo|Ctrl+K, P<br /><br /> или<br /><br /> Ctrl+K, Ctrl+P<br /><br /> или<br /><br /> Ctrl+Shift+ПРОБЕЛ|  
-|Edit.QuickInfo|Ctrl+K, I<br /><br /> или<br /><br /> Ctrl+K, Ctrl+I|  
-|WorkflowDesigner.Collapse|Ctrl+E, Ctrl+C<br /><br /> или<br /><br /> Ctrl+E, C|  
+|Image.AirbrushTool|**CTRL+A**|  
+|Image.BrushTool|**CTRL+B**|  
+|Image.CopyandOutlineSelection|**CTRL+SHIFT+U**|  
+|Image.DrawOpaque|**CTRL+J**|  
+|Image.EllipseTool|**ALT+P**|  
+|Image.EraseTool|**CTRL+SHIFT+I**|  
+|Image.FilledEllipseTool|**CTRL+SHIFT+ALT+P**|  
+|Image.FilledRectangleTool|**CTRL+SHIFT+ALT+R**|  
+|Image.FilledRoundedRectangleTool|**CTRL+SHIFT+ALT+W**|  
+|Image.FillTool|**CTRL+F**|  
+|Image.FlipHorizontal|**CTRL+H**|  
+|Image.FlipVertical|**SHIFT+ALT+H**|  
+|Image.LargerBrush|**CTRL+=**|  
+|Image.LineTool|**CTRL+L**|  
+|Image.MagnificationTool|**CTRL+M**|  
+|Image.Magnify|**CTRL+SHIFT+M**|  
+|Image.NewImageType|**Вставить**|  
+|Image.NextColor|**CTRL+]**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВПРАВО**|  
+|Image.NextRightColor|**CTRL+SHIFT+]**<br /><br /> или<br /><br /> **CTRL+SHIFT+СТРЕЛКА ВПРАВО**|  
+|Image.OutlinedEllipseTool|**SHIFT+ALT+P**|  
+|Image.OutlinedRectangleTool|**SHIFT+ALT+R**|  
+|Image.OutlinedRoundedRectangleTool|**SHIFT+ALT+W**|  
+|Image.PencilTool|**CTRL+I**|  
+|Image.PreviousColor|**CTRL+[**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВЛЕВО**|  
+|Image.PreviousRightColor|**CTRL+SHIFT+[**<br /><br /> или<br /><br /> **CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Image.RectangleSelectionTool|**SHIFT+ALT+S**|  
+|Image.RectangleTool|**ALT+R**|  
+|Image.Rotate90Degrees|**CTRL+SHIFT+H**|  
+|Image.RoundedRectangleTool|**ALT+W**|  
+|Image.ShowGrid|**CTRL+ALT+S**|  
+|Image.ShowTileGrid|**CTRL+SHIFT+ALT+S**|  
+|Image.SmallBrush|**CTRL+.**|  
+|Image.SmallerBrush|**CTRL+-**|  
+|Image.TextTool|**CTRL+T**|  
+|Image.UseSelectionasBrush|**CTRL+U**|  
+|Image.ZoomIn|**CTRL+SHIFT+.**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВВЕРХ**|  
+|Image.ZoomOut|**CTRL+SHIFT+,**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВНИЗ**|  
+
+##  <a name="vc-string-editor"></a>Редактор строк VC  
+
+|Команда|Сочетание клавиш|  
+|-------------|-----------------------|  
+|Edit.NewString|**Вставить**|  
+
+##  <a name="view-designer"></a>Конструктор представлений  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|QueryDesigner.CancelRetrievingData|**CTRL+T**|  
+|QueryDesigner.Criteria|**CTRL+2**|  
+|QueryDesigner.Diagram|**CTRL+1**|  
+|QueryDesigner.ExecuteSQL|**CTRL+R**|  
+|QueryDesigner.GotoRow|**CTRL+G**|  
+|QueryDesigner.JoinMode|**CTRL+SHIFT+J**|  
+|QueryDesigner.Results|**CTRL+4**|  
+|QueryDesigner.SQL|**CTRL+3**|  
+
+##  <a name="visual-studio"></a>Visual Studio  
+
+|Команда|Сочетание клавиш|  
+|-------------|-----------------------|  
+|OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL+1**|  
+
+##  <a name="windows-forms-designer"></a>Конструктор Windows Forms  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.BreakLine|**ВВОД**|  
+|Edit.CharLeft|**СТРЕЛКА ВЛЕВО**|  
+|Edit.CharLeftExtend|**SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.CharRight|**СТРЕЛКА ВПРАВО**|  
+|Edit.CharRightExtend|**SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.DocumentEnd|**END**|  
+|Edit.DocumentEndExtend|**SHIFT+END**|  
+|Edit.DocumentStart|**Корневая папка**|  
+|Edit.DocumentStartExtend|**SHIFT+HOME**|  
+|Edit.InsertTab|**TAB**|  
+|Edit.LineDown|**СТРЕЛКА ВНИЗ**|  
+|Edit.LineDownExtend|**SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.LineUp|**СТРЕЛКА ВВЕРХ**|  
+|Edit.LineUpExtend|**SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.MoveControlDown|**CTRL+СТРЕЛКА ВНИЗ**|  
+|Edit.MoveControlLeft|**CTRL+СТРЕЛКА ВЛЕВО**|  
+|Edit.MoveControlRight|**CTRL+СТРЕЛКА ВПРАВО**|  
+|Edit.MoveControlUp|**CTRL+СТРЕЛКА ВВЕРХ**|  
+|Edit.SelectionCancel|**ESCAPE**|  
+|Edit.SizeControlDown|**CTRL+SHIFT+СТРЕЛКА ВНИЗ**|  
+|Edit.SizeControlLeft|**CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|  
+|Edit.SizeControlRight|**CTRL+SHIFT+СТРЕЛКА ВПРАВО**|  
+|Edit.SizeControlUp|**CTRL+SHIFT+СТРЕЛКА ВВЕРХ**|  
+|Edit.TabLeft|**SHIFT+TAB**|  
+
+##  <a name="work-item-editor"></a>Редактор рабочих элементов  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.CreateCopyofWorkItem|**SHIFT+ALT+C**|  
+|Edit.RefreshWorkItem|**F5**|  
+|Team.NewLinkedWorkItem|**SHIFT+ALT+L**|  
+
+##  <a name="work-item-query-view"></a>Представление запросов рабочих элементов  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.CreateCopyofWorkItem|**SHIFT+ALT+C**|  
+|Edit.Indent|**SHIFT+ALT+СТРЕЛКА ВПРАВО**|  
+|Edit.Outdent|**SHIFT+ALT+СТРЕЛКА ВЛЕВО**|  
+|Team.NewLinkedWorkItem|**SHIFT+ALT+L**|  
+|Team.Refresh|**F5**|  
+|Window.Toggle|**SHIFT+ALT+V**|  
+
+##  <a name="work-item-results-view"></a>Представление результатов рабочих элементов  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.CreateCopyofWorkItem|**SHIFT+ALT+C**|  
+|Edit.Indent|**SHIFT+ALT+СТРЕЛКА ВПРАВО**|  
+|Edit.Outdent|**SHIFT+ALT+СТРЕЛКА ВЛЕВО**|  
+|Team.GotoNextWorkItem|**SHIFT+ALT+N**|  
+|Team.GotoPreviousWorkItem|**SHIFT+ALT+P**|  
+|Team.NewLinkedWorkItem|**SHIFT+ALT+L**|  
+|Team.Refresh|**F5**|  
+|Window.Toggle|**SHIFT+ALT+V**|  
+
+##  <a name="workflow-designer"></a>Конструктор рабочих процессов  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|Edit.CompleteWord|**CTRL+K, W**<br /><br /> или<br /><br /> **CTRL+K, CTRL+W**<br /><br /> или<br /><br /> **CTRL+ПРОБЕЛ**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВПРАВО**|  
+|Edit.DecreaseFilterLevel|**ALT+,**|  
+|Edit.IncreaseFilterLevel|**ALT+.**|  
+|Edit.ListMembers|**CTRL+K, L**<br /><br /> или<br /><br /> **CTRL+K, CTRL+L**<br /><br /> или<br /><br /> **CTRL+J**|  
+|Edit.ParameterInfo|**CTRL+K, P**<br /><br /> или<br /><br /> **CTRL+K, CTRL+P**<br /><br /> или<br /><br /> **CTRL+SHIFT+ПРОБЕЛ**|  
+|Edit.QuickInfo|**CTRL+K, I**<br /><br /> или<br /><br /> **CTRL+K, CTRL+I**|  
+|WorkflowDesigner.Collapse|**CTRL+E, CTRL+C**<br /><br /> или<br /><br /> **CTRL+E, C**|  
 |WorkflowDesigner.CollapseAll|или|  
-|WorkflowDesigner.ConnectNodes|Ctrl+E, Ctrl+F<br /><br /> или<br /><br /> Ctrl+E, F|  
-|WorkflowDesigner.CreateVariable|Ctrl+E, Ctrl+N<br /><br /> или<br /><br /> Ctrl+E, N|  
-|WorkflowDesigner.ExpandAll|Ctrl+E, Ctrl+X<br /><br /> или<br /><br /> Ctrl+E, X|  
-|WorkflowDesigner.ExpandInPlace|Ctrl+E, Ctrl+E<br /><br /> или<br /><br /> Ctrl+E, E|  
-|WorkflowDesigner.GoToParent|Ctrl+E, Ctrl+P<br /><br /> или<br /><br /> Ctrl+E, P|  
-|WorkflowDesigner.MoveFocus|Ctrl+E, Ctrl+M<br /><br /> или<br /><br /> Ctrl+E, M|  
-|WorkflowDesigner.NavigateThroughDesigner|Ctrl+Alt+F6|  
-|WorkflowDesigner.Restore|Ctrl+E, Ctrl+R<br /><br /> или<br /><br /> Ctrl+E, R|  
-|WorkflowDesigner.ShowHideArgumentDesigner|Ctrl+E, Ctrl+A<br /><br /> или<br /><br /> Ctrl+E, A|  
-|WorkflowDesigner.ShowHideImportsDesigner|Ctrl+E, Ctrl+I<br /><br /> или<br /><br /> Ctrl+E, I|  
-|WorkflowDesigner.ShowHideOverviewMap|Ctrl+E, Ctrl+O<br /><br /> или<br /><br /> Ctrl+E, O|  
-|WorkflowDesigner.ShowHideVariableDesigner|Ctrl+E, Ctrl+V<br /><br /> или<br /><br /> Ctrl+E, V|  
-|WorkflowDesigner.ToggleSelection|Ctrl+E, Ctrl+S<br /><br /> или<br /><br /> Ctrl+E, S|  
-|WorkflowDesigner.ZoomIn|Ctrl+Num +|  
-|WorkflowDesigner.ZoomOut|Ctrl+Num -|  
+|WorkflowDesigner.ConnectNodes|**CTRL+E, CTRL+F**<br /><br /> или<br /><br /> **CTRL+E, F**|  
+|WorkflowDesigner.CreateVariable|**CTRL+E, CTRL+N**<br /><br /> или<br /><br /> **CTRL+E, N**|  
+|WorkflowDesigner.ExpandAll|**CTRL+E, CTRL+X**<br /><br /> или<br /><br /> **CTRL+E, X**|  
+|WorkflowDesigner.ExpandInPlace|**CTRL+E, CTRL+E**<br /><br /> или<br /><br /> **CTRL+E, E**|  
+|WorkflowDesigner.GoToParent|**CTRL+E, CTRL+P**<br /><br /> или<br /><br /> **CTRL+E, P**|  
+|WorkflowDesigner.MoveFocus|**CTRL+E, CTRL+M**<br /><br /> или<br /><br /> **CTRL+E, M**|  
+|WorkflowDesigner.NavigateThroughDesigner|**CTRL+ALT+F6**|  
+|WorkflowDesigner.Restore|**CTRL+E, CTRL+R**<br /><br /> или<br /><br /> **CTRL+E, R**|  
+|WorkflowDesigner.ShowHideArgumentDesigner|**CTRL+E, CTRL+A**<br /><br /> или<br /><br /> **CTRL+E, A**|  
+|WorkflowDesigner.ShowHideImportsDesigner|**CTRL+E, CTRL+I**<br /><br /> или<br /><br /> **CTRL+E, I**|  
+|WorkflowDesigner.ShowHideOverviewMap|**CTRL+E, CTRL+O**<br /><br /> или<br /><br /> **CTRL+E, O**|  
+|WorkflowDesigner.ShowHideVariableDesigner|**CTRL+E, CTRL+V**<br /><br /> или<br /><br /> **CTRL+E, V**|  
+|WorkflowDesigner.ToggleSelection|**CTRL+E, CTRL+S**<br /><br /> или<br /><br /> **CTRL+E, S**|  
+|WorkflowDesigner.ZoomIn|**CTRL+NUM +**|  
+|WorkflowDesigner.ZoomOut|**CTRL+NUM -**|  
 
-##  <a name="bkmk_xamluidesigner"></a> Конструктор пользовательского интерфейса XAML  
-
-|Команды|Сочетания клавиш|  
-|--------------|------------------------|  
-|Design.FitAll|CTRL+0|  
-|Design.ShowHandles|F9|  
-|Design.ZoomIn|Ctrl+Alt+=|  
-|Design.ZoomOut|Ctrl+Alt+-|  
-|Параметры конструктора|CTRL+SHIFT+;|  
-|Format.EditText|F2|  
-|Format.ResetLayout.All|CTRL+SHIFT+R|  
-|Выполнить код проекта|Ctrl+F9|  
-|Timeline.Hide (только в режиме смешения)|CTRL+H|  
-|Timeline.Lock (только в режиме смешения)|CTRL+L|  
-|Timeline.Show (только в режиме смешения)|Ctrl+Shift+H|  
-|Timeline.Unlock (только в режиме смешения)|CTRL+SHIFT+L|  
-|View.EdgeLeftMoveLeft|Ctrl+Shift+,|  
-|View.EdgeLeftMoveRight|Ctrl+Shift+.|  
-|View.EdgeRightMoveLeft|Ctrl+Shift+Alt+,|  
-|View.EdgeRightMoveRight|Ctrl+Shift+Alt+.|  
-|View.ShowPropertyMarkerMenu|Ctrl+ПРОБЕЛ|  
-
-##  <a name="bkmk_xmlTextEditor"></a> Редактор (текстовый) XML  
+##  <a name="xaml-ui-designer"></a>Конструктор XAML  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|XML.StartXSLTDebugging|Alt+F5|  
-|XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|  
+|Design.FitAll|**CTRL+0**|  
+|Design.ShowHandles|**F9**|  
+|Design.ZoomIn|**CTRL+ALT+=**|  
+|Design.ZoomOut|**CTRL+ALT+-**|  
+|Параметры конструктора|**CTRL+SHIFT+;**|  
+|Format.EditText|**F2**|  
+|Format.ResetLayout.All|**CTRL+SHIFT+R**|  
+|Выполнить код проекта|**CTRL+F9**|  
+|Timeline.Hide (только в режиме смешения)|**CTRL+H**|  
+|Timeline.Lock (только в режиме смешения)|**CTRL+L**|  
+|Timeline.Show (только в режиме смешения)|**CTRL+SHIFT+H**|  
+|Timeline.Unlock (только в режиме смешения)|**CTRL+SHIFT+L**|  
+|View.EdgeLeftMoveLeft|**CTRL+SHIFT+,**|  
+|View.EdgeLeftMoveRight|**CTRL+SHIFT+.**|  
+|View.EdgeRightMoveLeft|**CTRL+SHIFT+ALT+,**|  
+|View.EdgeRightMoveRight|**CTRL+SHIFT+ALT+.**|  
+|View.ShowPropertyMarkerMenu|**CTRL+ПРОБЕЛ**|  
 
-##  <a name="bkmk_xmlSchemaDesigner"></a> Конструктор схемы XML  
+##  <a name="xml-text-editor"></a>XML-редактор (текстовый)  
 
 |Команды|Сочетания клавиш|  
 |--------------|------------------------|  
-|GraphView.BottomtoTop|Alt+СТРЕЛКА ВВЕРХ|  
-|GraphView.LefttoRight|Alt + Стрелка вправо|  
-|GraphView.RighttoLeft|Alt + Стрелка влево|  
-|GraphView.ToptoBottom|Alt+СТРЕЛКА ВНИЗ|  
-|OtherContextMenus.GraphView.RemovefromWorkspace|Удаление|  
-|XsdDesigner.ShowContentModelView|Ctrl+2|  
-|XsdDesigner.ShowGraphView|CTRL+3|  
-|XsdDesigner.ShowStartView|CTRL+1|  
+|XML.StartXSLTDebugging|**ALT+F5**|  
+|XML.StartXSLTWithoutDebugging|**CTRL+ALT+F5**|  
+
+##  <a name="xml-schema-designer"></a>Конструктор схемы XML  
+
+|Команды|Сочетания клавиш|  
+|--------------|------------------------|  
+|GraphView.BottomtoTop|**ALT+СТРЕЛКА ВВЕРХ**|  
+|GraphView.LefttoRight|**ALT+СТРЕЛКА ВПРАВО**|  
+|GraphView.RighttoLeft|**ALT+СТРЕЛКА ВЛЕВО**|  
+|GraphView.ToptoBottom|**ALT+СТРЕЛКА ВНИЗ**|  
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Удалить**|  
+|XsdDesigner.ShowContentModelView|**CTRL+2**|  
+|XsdDesigner.ShowGraphView|**CTRL+3**|  
+|XsdDesigner.ShowStartView|**CTRL+1**|  
 
 ## <a name="see-also"></a>См. также
  

@@ -1,16 +1,15 @@
 ---
-title: "Активация подписки на Visual Studio для Mac | Документация Майкрософт"
-description: "В этой статье описано, как использовать учетную запись Майкрософт для активации подписки и разблокировки функций в Visual Studio для Mac."
+title: Активация подписки на Visual Studio для Mac
+description: В этой статье описано, как использовать учетную запись Майкрософт для активации подписки и разблокировки функций в Visual Studio для Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 9202229c1562c89e0ddd9852113d63dc85e0bcd2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4d4e2485b1fe536cae92a419b3d0f1a9e20556c8
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="enable-subscription"></a>Активация подписки
 
@@ -28,7 +27,7 @@ Visual Studio для Mac предоставляет три разных уров
 
 Если срок действия вашей подписки истек, доступно два варианта:
 
-1. Продлите подписку. Продлить подписку можно, перейдя по адресу [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
+1. Продлите подписку. Вы можете продлить подписку, перейдя на страницу [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
 
 2. При наличии другой учетной записи с активной подпиской вы можете добавить ее в Visual Studio для Mac в соответствии с инструкциями по [добавлению нескольких учетных записей](~/signing-in.md). Visual Studio для Mac обнаружит наилучшую доступную лицензию из всех добавленных учетных записей. 
 

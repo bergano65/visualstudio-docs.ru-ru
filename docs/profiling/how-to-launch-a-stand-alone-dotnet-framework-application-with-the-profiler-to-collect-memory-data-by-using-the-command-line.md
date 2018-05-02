@@ -1,38 +1,20 @@
 ---
-title: "Практическое руководство. Запуск автономного приложения .NET Framework с профилировщиком для сбора данных об использовании памяти с помощью командной строки | Документы Майкрософт"
-ms.custom: 
+title: Практическое руководство. Запуск автономного приложения .NET Framework с профилировщиком для сбора данных об использовании памяти с помощью командной строки | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
-caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
-ms.lasthandoff: 02/22/2017
-
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 456e8fff1b4e484648c1e30a9b588a4f5923fc91
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Запуск автономного приложения .NET Framework с профилировщиком для сбора данных об использовании памяти с помощью командной строки
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска автономного (клиентского) приложения .NET Framework и сбора данных о памяти.  
@@ -67,7 +49,7 @@ ms.lasthandoff: 02/22/2017
   
      С параметром **/start:sample** можно использовать любой из следующих параметров.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Задает счетчик производительности Windows, данные которого будут собираться во время профилирования.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс.|  
@@ -78,14 +60,14 @@ ms.lasthandoff: 02/22/2017
   
     -   Параметр [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword` требуется для сбора данных памяти .NET Framework. Параметр ключевого слова указывает, требуется ли собирать данные о выделении памяти или данные о времени существования объекта и выделении памяти.  
   
-        |Ключевое слово|Описание|  
+        |Ключевое слово|Описание:|  
         |-------------|-----------------|  
         |**allocation**|Сбор только данных о выделении памяти.|  
         |**lifetime**|Сбор данных о выделении памяти и времени существования объекта.|  
   
      С параметром **/launch** можно использовать любой из следующих параметров.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/args](../profiling/args.md) **:** `Arguments`|Указывает строку, которая содержит аргументы командной строки для передачи в целевое приложение.|  
     |[/console](../profiling/console.md)|Запускает целевое приложение командной строки в отдельном окне.|  
@@ -99,7 +81,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Следующие пары параметров запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.  
   
-    |Параметр|Описание|  
+    |Параметр|Описание:|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  
@@ -116,7 +98,7 @@ ms.lasthandoff: 02/22/2017
   
     -   Закройте целевое приложение.  
   
-         -или-  
+         - или -  
   
     -   Введите команду **VSPerfCmd /detach**.  
   

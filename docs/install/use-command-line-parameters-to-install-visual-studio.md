@@ -1,12 +1,10 @@
 ---
-title: Использование параметров командной строки для установки Visual Studio | Документы Майкрософт
+title: Использование параметров командной строки для установки Visual Studio
+description: Узнайте, как использовать параметры командной строки для управления установкой Visual Studio или ее настройки.
 ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
+
 При установке Visual Studio 2017 из командной строки вы можете использовать различные параметры командной строки, позволяющие настраивать процесс установки и управлять им. В командной строке вы можете выполнить следующие действия:
 
 - запустить установку с заранее выбранными параметрами;
@@ -37,7 +36,8 @@ ms.lasthandoff: 04/03/2018
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>Список параметров командной строки  
+## <a name="list-of-command-line-parameters"></a>Список параметров командной строки
+
  В параметрах командной строки для Visual Studio не учитывается регистр символов.
 
 > Синтаксис: `vs_enterprise.exe [command] <options>...`
@@ -103,9 +103,11 @@ ms.lasthandoff: 04/03/2018
 | `--noWeb` | **Новая возможность в версии 15.3 (необязательно)**. Программа установки теперь скачивает любое содержимое, которое устанавливается из Интернета.  Все устанавливаемое содержимое должно быть доступно в автономном макете.  Если в макете нет содержимого, установка не выполняется.  Подробнее см. в разделе [Развертывание из сетевой установки](create-a-network-installation-of-visual-studio.md). |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Список идентификаторов рабочих нагрузок и компонентов
+
 Список идентификаторов рабочих нагрузок и компонентов, отсортированный по продуктам Visual Studio, см. на странице [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Список языковых стандартов
+
 | **Язык-языковой стандарт** | **Язык** |
 | ----------------------- | --------------- |
 | cs-CZ | Чешский |
@@ -124,6 +126,7 @@ ms.lasthandoff: 04/03/2018
 | zh-TW | Китайский (традиционное письмо) |
 
 ## <a name="error-codes"></a>Коды ошибок
+
 В зависимости от результата операции переменной среды `%ERRORLEVEL%` будет присвоено одно из следующих значений:
 
 | **Значение** | **Результат** |
@@ -138,16 +141,18 @@ ms.lasthandoff: 04/03/2018
 Каждая операция создает в каталоге `%TEMP%` несколько файлов журнала, которые показывают ход выполнения установки. Отсортируйте содержимое папки по дате и найдите файлы, которые начинаются с `dd_bootstrapper`, `dd_client` и `dd_setup` (для программы начальной загрузки, установщика и модуля установки соответственно).
 
 ## <a name="get-support"></a>Техническая поддержка
+
 Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
+
 * Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
 * Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Там же можно получать ответы на интересующие вас вопросы.
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).  (Требуется учетная запись [GitHub](https://github.com/).)
+* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>См. также
 
- * [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
- * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
- * [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)
+* [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
+* [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)

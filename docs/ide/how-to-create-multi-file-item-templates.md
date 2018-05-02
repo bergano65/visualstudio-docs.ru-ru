@@ -1,24 +1,22 @@
 ---
-title: "Создание многофайловых шаблонов элементов для Visual Studio | Документы Майкрософт"
-ms.custom: 
+title: Создание многофайловых шаблонов элементов для Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Практическое руководство. Создание многофайловых шаблонов элементов
 
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/05/2018
 
 1. Создайте шаблон элемента так же, как если бы вы создавали однофайловый шаблон элемента вручную, но включите каждый файл, который составляет многофайловый элемент.
 
-1. В VSTEMPLATE-файл XML-кода добавьте элемент `ProjectItem` для каждого отдельного файла и добавьте атрибут `TargetFileName` в этот элемент. Присвойте атрибуту `TargetFileName` значение $входное_имя_файла$.*расширение_файла*, где *расширение_файла* — это расширение файла, включаемого в шаблон. Пример:
+1. В *VSTEMPLATE*-файл XML-кода добавьте элемент `ProjectItem` для каждого отдельного файла и добавьте атрибут `TargetFileName` в этот элемент. Присвойте атрибуту `TargetFileName` значение *$входное_имя_файла$.расширение_файла*, где *расширение_файла* — это расширение файла, включаемого в шаблон. Пример:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -59,13 +57,13 @@ ms.lasthandoff: 01/05/2018
 
 1. Выберите файлы для включения в шаблон, щелкните выделение правой кнопкой мыши и выберите пункты **Отправить** > **Сжатая ZIP-папка**.
 
-   Выбранные файлы будут сжаты в ZIP-файл.
+   Выбранные файлы будут сжаты в *ZIP*-файл.
 
-1. Скопируйте ZIP-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог %USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Скопируйте *ZIP*-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates*. Дополнительные сведения см. в статье [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Закройте Visual Studio, а затем откройте среду повторно.
 
-1. Создайте проект или откройте существующий, а затем выберите **Проект** > **Добавить новый элемент** или нажмите сочетание клавиш **CTRL** + **SHIFT** + **A**.
+1. Создайте новый проект или откройте существующий, а затем выберите **Проект** > **Добавить новый элемент** или нажмите клавиши **CTRL**+**SHIFT**+**A**.
 
    Многофайловый шаблон элемента появится в диалоговом окне **Добавление нового элемента**.
 

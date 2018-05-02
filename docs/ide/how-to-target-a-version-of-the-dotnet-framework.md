@@ -1,38 +1,35 @@
 ---
-title: "Определение целевой версии .NET Framework в Visual Studio | Документация Майкрософт"
-ms.custom: 
+title: Определение целевой версии .NET Framework в Visual Studio | Документация Майкрософт
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c00c36bd9273423b4625ea67aa9875f9c49446c2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Практическое руководство. Определение целевой версии .NET Framework
 
 В этом документе описано, как выбрать целевую версию .NET Framework при создании проекта и как изменить целевую версию для существующего проекта Visual Basic, C# или Visual F#.
 
 > [!IMPORTANT]
-> Сведения об изменении целевой версии для проектов C++ см. в разделе [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+> Сведения об изменении целевой версии для проектов C++ см. в статье [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>Выбор целевой версии при создании проекта
 
 При создании проекта доступные версии .NET Framework зависят от установленных версий и выбранного шаблона в диалоговом окне **Новый проект**.
 
-1. В строке меню выберите **Файл** > **Создать** > **Проект...**.
+1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
 1. В списке установленных шаблонов выберите тип проекта, который необходимо создать, и введите имя для проекта.
 
@@ -48,13 +45,13 @@ ms.lasthandoff: 03/08/2018
 
 Целевую версию .NET Framework в проекте Visual Basic, C# или Visual F# можно изменить, воспользовавшись следующей процедурой.
 
-Сведения об изменении целевой версии для проектов C++ см. в разделе [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+Сведения об изменении целевой версии для проектов C++ см. в статье [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 1. В **обозревателе решений** откройте контекстное меню проекта, для которого требуется изменить целевую платформу, и выберите пункт **Свойства**.
 
     ![Свойства проводника Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
 
-1. В левом столбце окна свойств перейдите на вкладку **Приложение**.
+1. В левом столбце окна **Свойства** перейдите на вкладку **Приложение**.
 
     ![Вкладка "Приложение" в разделе "Свойства приложений" Visual Studio](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 

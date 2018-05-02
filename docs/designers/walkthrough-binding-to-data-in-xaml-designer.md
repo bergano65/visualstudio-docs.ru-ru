@@ -1,12 +1,8 @@
 ---
-title: "Пошаговое руководство. Привязка к данным в конструкторе XAML | Документы Майкрософт"
-ms.custom: 
+title: Привязка к данным в конструкторе XAML
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -14,16 +10,16 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ef8826fd01c0eec45f2daea5900c5e440a5cebb0
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
 
 В конструкторе XAML можно задать свойства привязки данных с помощью области рисования и в окне "Свойства". В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
@@ -103,5 +99,5 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="see-also"></a>См. также
 
-[Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[Диалоговое окно "Добавление конвертера значений"](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Создание пользовательского интерфейса с помощью конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Диалоговое окно "Добавление конвертера значений"](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

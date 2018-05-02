@@ -1,13 +1,9 @@
 ---
-title: "Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт"
-ms.custom: 
+title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -20,14 +16,14 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9cefe31201a3b67ba176a56fed58bbe155bcf0
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
 
@@ -84,9 +80,9 @@ ms.lasthandoff: 02/21/2018
 
     - Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **http://localhost/MySite/default.aspx**. В результате профилируется приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.
 
-    - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.
+    - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.
 
-    - Для внешних сайтов, где требуется собирать данные о JavaScript, введите URL-адрес, например http://www.contoso.com.
+    - Для внешних сайтов, где требуется собирать данные по JavaScript, введите URL-адрес, например http://www.contoso.com.
 
      Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 

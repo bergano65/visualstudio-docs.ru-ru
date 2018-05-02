@@ -1,53 +1,26 @@
 ---
-title: "Преимущество Opsgility в подписках Visual Studio | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn the Opsgility training benefit included with sekected Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: cdaab75e85f1a628a5db29feec780f7c1d2a8db9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Преимущество Opsgility в подписках Visual Studio | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Сведения о преимуществе обучения Opsgility, входящим в некоторые подписки Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Преимущество Opsgility в подписках Visual Studio
 
-## <a name="overview"></a>Обзор
 Некоторые подписки Visual Studio предоставляют возможность участия в требующих регистрации курсах в течение года, а также скидку в размере 15 % на обучение под руководством инструктора и доступ к практическим занятиям, программам сертификации и др.  
 
-## <a name="eligibility"></a>Право на участие
-| Уровень подписки или программа                                                  | Преимущество               | Возможность возобновления                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise — уровень "Стандартный"                                             | 12 месяцев             |  Нет                                                                |
-| Visual Studio Enterprise — годовая подписка                                               | 12 месяцев             |  Нет                                                                |
-| Visual Studio Enterprise — месячная подписка                                              | Недоступно         |                                                                    |
-| Visual Studio Professional — уровень "Стандартный"                                           | 6 месяцев              |  Нет                                                                |
-| Visual Studio Professional — годовая подписка                                             | 6 месяцев              |  Нет                                                                | 
-| Visual Studio Professional — месячная подписка                                            | Недоступно         |                                                                    |
-| Visual Studio Test Pro                                                        | 6 месяцев              |  Нет                                                                |
-| MSDN Platforms                                                                | 6 месяцев              |  Нет                                                                |
-| Visual Studio Dev Essentials                                                  | 3 месяца              |  Нет                                                                |
-| Visual Studio Enterprise — NFR<sup>1</sup>                                               | Недоступно         |                                                                    |
-| Visual Studio Enterprise — FTE                                                | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Microsoft Partner Network                          | Недоступно         |                                                                    |
-| Visual Studio Professional — Microsoft Partner Network                        | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Стандартный")                                 | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Премиум")                                  | Недоступно         |                                                                    |
-| Visual Studio Enterprise — BizSpark                                           | Недоступно         |                                                                    |
-| Microsoft Certified Trainer — программное обеспечение и службы                             | Недоступно         |                                                                    |
-| Microsoft Certified Trainer — разработчик программного обеспечения и служб                   | Недоступно         |                                                                    |
-
-<sup>1</sup> *Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)*   
-
-Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
-
 ## <a name="activation-steps"></a>Процедура активации
-1.  Войдите на страницу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Найдите плитку "Opsgility" в разделе "Средства" на странице "Преимущества" и щелкните ссылку **Активировать** в нижней части плитки преимущества.  
 
@@ -64,8 +37,19 @@ ms.lasthandoff: 01/29/2018
 
     ![Домашняя страница преимущества Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
-## <a name="faq"></a>часто задаваемые вопросы
-*Проверка обновлений*
+## <a name="eligibility"></a>Право на участие
+| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия | 12 месяцев       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | 6 месяцев                                                            |Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 6 месяцев                                             |  Нет.  Доступно только для новых подписчиков         |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 6 месяцев                                              | Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Dev Essentials | Н/Д  | 3 месяца |Нет.  Доступно только для новых подписчиков |
+| Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+
+*Не включает следующие категории: Microsoft Partner Network (MPN), Microsoft Valued Partner (MVP), Microsoft Certified Trainer, BizSpark, Imagine, не для перепродажи (NFR), FTE*
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с Opsgility?  Ознакомьтесь со следующими ресурсами:

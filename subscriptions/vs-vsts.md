@@ -1,19 +1,19 @@
 ---
 title: Преимущества Visual Studio Team Services для подписчиков Visual Studio | Документы Майкрософт
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Сведения об использовании служб Visual Studio Team Services (VSTS) в качестве подписчика Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Преимущества Visual Studio Team Services (VSTS) для подписчиков Visual Studio
 
@@ -26,12 +26,14 @@ ms.lasthandoff: 03/22/2018
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (стандартная, годовая облачная, ежемесячная облачная)   | Корпоративная лицензия, Azure, розничная версия, MPN, BizSpark, не для перепродажи<sup>1</sup>, штатные сотрудники  | Базовый, Test Manager, управление пакетами, локальная непрерывная интеграция и поставка       |  Да          |
-| Visual Studio Professional (стандартная, годовая облачная, ежемесячная облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Basic                                                            |  Да          |
+| Visual Studio Enterprise (стандартная, годовая облачная, ежемесячная облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>, FTE  | Базовый, Test Manager, управление пакетами, локальная непрерывная интеграция и поставка       |  Да          |
+| Visual Studio Professional (стандартная, годовая облачная, ежемесячная облачная) | Корпоративная лицензия, Azure, розничная версия                                        | Basic                                                            |  Да          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Базовый, Test Manager                                              |  Да          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Базовый, Test Manager                                              |  Да          |
 
-<sup>1</sup> *Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)* 
+<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), Microsoft Valued Partner (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (Enterprise), BizSpark, разработчик ПО и служб MCT. Не включает следующие категории: ПО и службы MCT, Imagine.*
+
+
 
 Дополнительные сведения о возможностях VSTS:
 - [Основы](https://www.visualstudio.com/team-services/compare-features/)

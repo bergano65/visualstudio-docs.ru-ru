@@ -1,30 +1,26 @@
 ---
-title: "Практическое руководство. Отключение ведущего процесса | Документы Майкрософт"
-ms.custom: 
+title: Практическое руководство. Отключение ведущего процесса | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b43e285c35601cb0d50536a5f4c499d09ae9bbad
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 47264ef7f1a6a2bd1a4ad3da59f53836f9ebb902
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
+# <a name="how-to-disable-the-hosting-process"></a>Практическое руководство. Отключение ведущего процесса
 Включение ведущего процесса может негативно повлиять на вызовы некоторых API. В таких случаях нужно отключить ведущий процесс, чтобы возвратить правильные результаты.  
   
 ### <a name="to-disable-the-hosting-process"></a>Отключение ведущего процесса  
@@ -49,5 +45,5 @@ ms.lasthandoff: 01/29/2018
   
 ## <a name="see-also"></a>См. также
 
-[Отладка и процесс размещения](../debugger/debugging-and-the-hosting-process.md)   
-[Главный процесс (vshost.exe)](../ide/hosting-process-vshost-exe.md)
+[Отладка и ведущий процесс](../debugger/debugging-and-the-hosting-process.md)   
+[Ведущий процесс (vshost.exe)](../ide/hosting-process-vshost-exe.md)

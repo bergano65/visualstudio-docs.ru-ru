@@ -1,17 +1,16 @@
 ---
-title: "Действия при сборке"
+title: Действия при сборке
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 78b0e715ca44c613b6a7ee839c0656e301308588
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="build-actions"></a>Действия при сборке 
+# <a name="build-actions"></a>Действия при сборке
 
 Все файлы в проекте Visual Studio для Mac имеют действие при сборке, которое определяет, что происходит с файлом во время сборки. Его можно настроить, щелкнув правой кнопкой мыши любой файл и выбрав **Действие при сборке**, как показано ниже:
 
@@ -26,4 +25,4 @@ ms.lasthandoff: 12/07/2017
 
 Можно выбрать несколько файлов в обозревателе решений, чтобы задать действие при сборке сразу для большого числа файлов.
 
-Кроме того, существуют действия при сборке для конкретных проектов. Например, проекты Xamarin.iOS имеют действие при сборке **BundleResource**, которое добавляет файл как часть набора приложений. Сведения о действиях при сборке для Xamarin.Android см. в руководстве по [процессу сборки](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Build_Actions) на сайте developer.xamarin.com.
+Кроме того, существуют действия при сборке для конкретных проектов. Например, проекты Xamarin.iOS имеют действие при сборке **BundleResource**, которое добавляет файл как часть набора приложений. Сведения о действиях при сборке для Xamarin.Android см. в руководстве по [процессу сборки](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).

@@ -1,13 +1,10 @@
 ---
-title: Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio | Документы Майкрософт
+title: Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 description: При помощи этого краткого руководства вы создадите простое веб-приложение на Python с использованием Visual Studio и платформы Flask.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
@@ -82,7 +79,7 @@ ms.lasthandoff: 03/30/2018
 
 **Вопрос. Где можно подробнее узнать о других доступных пакетах Python?**
 
-**Ответ.** Перейдите к странице [индекса пакетов Python](https://pypi.python.org/pypi) (pypi.python.org).
+**Ответ.** Перейдите к странице [индекса пакетов Python](https://pypi.org/) (pypi.org).
 
 ## <a name="add-a-code-file"></a>Добавление файла кода
 
@@ -121,7 +118,7 @@ ms.lasthandoff: 03/30/2018
 
 **Вопрос. Где можно подробнее узнать о Flask?**
 
-**Ответ.** Ознакомьтесь с документацией по Flask. Начать можно с [краткого руководства по Flask](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org).
+**Ответ.** Ознакомьтесь с документацией по Flask. Начать можно с [краткого руководства по Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
 
 ## <a name="run-the-application"></a>Запуск приложения
 

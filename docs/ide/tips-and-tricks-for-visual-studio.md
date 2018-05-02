@@ -1,26 +1,25 @@
 ---
-title: "Сочетания клавиш Visual Studio | Документы Майкрософт"
+title: Сочетания клавиш Visual Studio | Документы Майкрософт
 ms.date: 06/21/2017
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="keyboard-tips-for-visual-studio"></a>Рекомендации по использованию клавиатуры в Visual Studio
+# <a name="keyboard-shortcuts-for-visual-studio"></a>Сочетания клавиш в Visual Studio
 
 Перемещаться между компонентами Visual Studio можно более эффективно, если использовать описанные в этой статье сочетания клавиш.
 
-Здесь перечислены лишь некоторые из доступных сочетаний клавиш. Более полный список см. в статье [Сочетания клавиш по умолчанию в Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-Дополнительные сведения об оптимизации Visual Studio для использования специальных возможностей см. в статье [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md) (Специальные возможности. Советы и рекомендации).
+> [!TIP]
+> Здесь перечислены лишь некоторые из доступных сочетаний клавиш. Более полный список см. в статье [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="window-management"></a>Управление окнами
 
@@ -78,10 +77,10 @@ ms.lasthandoff: 03/08/2018
 |Выбор фрагментов кода|CTRL+K,X или ?,TAB (VB)||
 |Окружить|CTRL+K,S||
 |Показать краткие сведения|CTRL+K,I||
-|Функция "Перейти к"|CTRL+,||
+|Функция "Перейти к"|**CTRL**+**,**||
 |Перейти по выделенным ссылкам|CTRL+SHIFT+СТРЕЛКА ВВЕРХ (предыдущая), CTRL+SHIFT+СТРЕЛКА ВНИЗ (следующая)||
-|Редактор, масштаб|CTRL+SHIFT+> (больше), CTRL+SHIFT+< (меньше)||
-|Выбор блока|Удерживать ALT и перетащить указатель мыши, клавиши SHIFT+ALT+СТРЕЛКА||
+|Редактор, масштаб|**CTRL**+**SHIFT**+**>** (увеличение), **CTRL**+**SHIFT**+**<** (уменьшение)||
+|Выбор блока|Удерживать **ALT** и перетащить указатель мыши, клавиши SHIFT+ALT+СТРЕЛКА||
 |Переместить строку вверх или вниз|ALT+СТРЕЛКА ВВЕРХ или ALT+СТРЕЛКА ВНИЗ||
 |Дублировать строку|CTRL+E,V|Visual Studio 2017 версии 15.6|
 |Развернуть выделение|**SHIFT**+**ALT**+**=**|Visual Studio 2017 версии 15.5|
@@ -91,8 +90,8 @@ ms.lasthandoff: 03/08/2018
 |Перейти к стеку определений|CTRL+SHIFT+8 (назад), CTRL+SHIFT+7 (вперед)||
 |Закрыть окно "Показать определение"|ESC||
 |Повысить уровень окна "Показать определение" до обычной вкладки документа|CTRL+ALT+HOME||
-|Перемещение между несколькими окнами "Показать определение"|CTRL+ALT+- и CTRL+ALT+=||
-|Перемещение между несколькими результатами "Показать"|F8 и SHIFT+F8||
+|Перемещение между несколькими окнами "Показать определение"|**CTRL**+**ALT**+**-** и **CTRL**+**ALT**+**=**||
+|Перемещение между несколькими результатами "Показать"|**F8** и **SHIFT**+**F8**||
 |Переключение между окном редактора кода и окном "Показать определение"|SHIFT+ESC||
 
 ## <a name="toolbars"></a>Панели инструментов
@@ -100,7 +99,7 @@ ms.lasthandoff: 03/08/2018
 |||
 |-|-|
 |Добавить кнопки|Нажать кнопку переполнения панели инструментов|
-|Поле со списком поиска на панели инструментов "Стандартная"|CTRL+D|
+|Поле со списком поиска на панели инструментов "Стандартная"|**CTRL**+**D**|
 |Режим команд поля поиска|Введите ">"|
 |Создать новый псевдоним|Команда >alias новый_псевдоним|
 
@@ -125,9 +124,6 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="see-also"></a>См. также
 
+- [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md)
 - [Сочетания клавиш (VSTS и TFS)](/vsts/collaborate/keyboard-shortcuts)
-- [Блог о Visual Studio](http://blogs.msdn.com/b/visualstudio)
 - [Блог с советами и рекомендации по Visual Studio](http://blogs.msdn.com/b/zainnab)
-- [Видео о панели инструментов Visual Studio на канале Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Отправка ошибок на сайте Visual Studio Connect](http://connect.microsoft.com/VisualStudio)

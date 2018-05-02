@@ -1,22 +1,24 @@
 ---
 title: Вопросы и ответы о выставлении счетов за облачные подписки на Visual Studio Enterprise и Visual Studio Professional
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Billing questions for cloud subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7c89c562ab49ffd95af7cfce699d13aa8a639c81
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: Вопросы выставления счетов за подписки на облачные службы.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio
 Сначала [сравните преимущества облачных подписок и цены](https://www.visualstudio.com/vs/pricing/), чтобы понять преимущества каждой подписки Visual Studio, сравнить облачные и стандартные подписки Visual Studio, изучить детали преимуществ для подписчиков и многое другое.
+
+## <a name="general-purchasing-questions"></a>Общие вопросы о приобретении
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>Вопрос. Можно приобрести облачные подписки Visual Studio по заказу на покупку?
 Ответ. Нет. Все облачные подписки Visual Studio необходимо приобретать по подписке Azure. (Представьте себе, что это ваш счет Azure для оплаты счетов.)
@@ -79,7 +81,7 @@ ms.lasthandoff: 03/22/2018
 
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Вопрос. Может ли подписчик Visual Studio использовать ежемесячные кредиты Azure для покупки дополнительных облачных подписок Visual Studio?
 
-Ответ. Нет, вы не можете использовать ваш [ежемесячный кредит Azure как подписчик Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) для оплаты покупок в Visual Studio Marketplace. Все облачные подписки Visual Studio вы оплачиваете с кредитной карты.
+Ответ. Нет, вы не можете использовать ваш [ежемесячный кредит Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) как подписчик Visual Studio для оплаты покупок в Visual Studio Marketplace. Все облачные подписки Visual Studio вы оплачиваете с кредитной карты.
 Прежде чем совершить покупку, вам необходимо будет [удалить предельную сумму расходов](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Вопрос. Чем отличается годовая облачная подписка от ежемесячной?

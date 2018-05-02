@@ -1,12 +1,10 @@
 ---
-title: "Использование указателя окна справки Visual Studio | Документация Майкрософт"
-ms.custom: 
+title: Использование указателя окна справки Visual Studio | Документы Майкрософт
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,18 +13,18 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ee913682452e94bb0e973dff9e98e496b8cb3c70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="finding-topics-by-using-the-help-viewer-index"></a>Поиск разделов с помощью указателя окна справки
+# <a name="find-topics-by-using-the-help-viewer-index"></a>Поиск разделов с помощью указателя окна справки
 Указатель содержит список ключевых слов, связанных с разделами в установленном содержимом. С каждым разделом могут быть связаны несколько ключевых слов, и каждое ключевое слово может быть связано с несколькими разделами. Используйте этот указатель таким же способом, как используете указатель в книге.  
   
 ## <a name="to-find-a-topic-by-using-the-index"></a>Поиск раздела с помощью указателя  

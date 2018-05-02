@@ -1,12 +1,10 @@
 ---
-title: "Практическое руководство. Использование только клавиатуры | Microsoft Docs"
-ms.custom: 
+title: Практическое руководство. Использование только клавиатуры | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -17,19 +15,20 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 882a21dbace4197d93a3a3c985a58a0c938e4f2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 351170b59b9b02c1059bd20fe7ad21981b280aee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Практическое руководство. Использование только клавиатуры
 > [!TIP]
 > Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет много стандартных сочетаний клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE). Полный список сочетаний клавиш, используемых в Visual Studio, см. в разделе [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Сведения о сочетаниях клавиш, доступных для других продуктов корпорации Майкрософт, см. в статье [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет много стандартных сочетаний клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE). Полный список сочетаний клавиш, используемых в Visual Studio, см. в разделе [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Сведения о сочетаниях клавиш, доступных для других продуктов корпорации Майкрософт, см. на странице [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
 
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  

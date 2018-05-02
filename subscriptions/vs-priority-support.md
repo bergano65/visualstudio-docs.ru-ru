@@ -1,26 +1,27 @@
 ---
-title: "Преимущество приоритетной поддержки в подписках Visual Studio | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/16/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Priority Support benefit included in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b62a60207f306c623d53f67fbe7e473c5ee8164d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Преимущество приоритетной поддержки в подписках Visual Studio | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/16/2018
+ms.topic: Get-Started-Article
+description: Сведения о преимуществе приоритетной поддержки, входящем в состав подписок Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Приоритетная поддержка в подписках Visual Studio
 
-## <a name="overview"></a>Обзор 
 Преимущество приоритетной поддержки позволяет получить доступ к нескольким форумам сообщества, где вы сможете найти ответ в публикациях или задать новые вопросы.  Если в течение двух дней сообщество не даст ответа на ваш вопрос, ответ предоставит служба поддержки корпорации Майкрософт.  
 
 Некоторые подписки Visual Studio позволяют подписчикам получить право на приоритетную поддержку на большом количестве форумов по самым разнообразным темам.
+
+## <a name="included-forums"></a>Включенные форумы
 
 ### <a name="net-framework"></a>.NET Framework
    - Настройка и обслуживание .NET Framework 
@@ -194,37 +195,9 @@ ms.lasthandoff: 01/29/2018
    - SQL Server XML 
 
 
-
-### <a name="eligibility"></a>Право на участие
-| Уровень подписки или программа                                 | Преимущество               | Возможность возобновления                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise — уровень "Стандартный"                            | Включено              | Да                                                                |
-| Visual Studio Enterprise — годовая подписка                              | Включено              | Да                                                                |
-| Visual Studio Enterprise — месячная подписка                             | Недоступно         |                                                                    |
-| Visual Studio Professional — уровень "Стандартный"                          | Включено              | Да                                                                |
-| Visual Studio Professional — годовая подписка                            | Включено              | Да                                                                | 
-| Visual Studio Professional — месячная подписка                           | Недоступно         |                                                                    |
-| Visual Studio Test Pro                                       | Включено              | Да                                                                |
-| MSDN Platforms                                               | Включено              | Да                                                                |
-| Visual Studio Dev Essentials                                 | Включено              | Да                                                                |
-| Visual Studio Enterprise — NFR<sup>1</sup>                               | Включено              | Да                                                                |
-| Visual Studio Enterprise — FTE                               | Включено              | Да                                                                |
-| Visual Studio Enterprise — MPN                               | Недоступно         |                                                                    |
-| Visual Studio Professional — MPN                             | Недоступно         |                                                                    |
-| Visual Studio Enterprise — MVP/RD                            | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Стандартный")                | Включено              | Да                                                                |
-| Visual Studio Enterprise — Imagine (уровень "Премиум")                 | Включено              | Да                                                                |
-| Visual Studio Enterprise — BizSpark                          | Недоступно         |                                                                    |
-| Visual Studio Enterprise — программное обеспечение и службы MCT           | Недоступно         |                                                                    |
-| Visual Studio Enterprise — программное обеспечение и службы для разработчика MCT | Недоступно         |                                                                    |
-<sup>1</sup> *Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)*  
-
-Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
-
-
 ## <a name="activation-steps"></a>Процедура активации
 Доступ к приоритетной поддержке можно получить очень просто. 
-1. Войдите на страницу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Найдите плитку приоритетной поддержки в разделе поддержки.  Щелкните **Получить помощь**.
 
@@ -238,8 +211,20 @@ ms.lasthandoff: 01/29/2018
 
     ![Пример приоритетной поддержки](_img/vs-priority-support/vs-priority-support-example.png)
 
-## <a name="faq"></a>часто задаваемые вопросы
-*Проверка обновлений*
+## <a name="eligibility"></a>Право на участие
+| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено       |  Да          |
+| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Да |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Включено                                                            |Да |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Включено                                                            |Да |
+| Visual Studio Dev Essentials | Н/Д  | Включено                                                            |Да |
+| Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+
+<sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), Imagine.  Не включает следующие категории: Microsoft Partner Network (MPN), ПО и службы MCT, разработчик ПО и служб MCT, BizSpark, Microsoft Valued Partner (MVP), региональный директор (RD).*
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.

@@ -1,33 +1,26 @@
 ---
-title: "Советы и рекомендации по улучшению работы Visual Studio | Документы Майкрософт"
+title: Советы и рекомендации по улучшению работы Visual Studio | Документы Майкрософт
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
+# <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
 
 Рекомендации по повышению производительности Visual Studio предназначены для редких ситуаций, когда может возникать нехватка памяти. В таких случаях можно оптимизировать определенные компоненты Visual Studio, которые могут не использоваться. Приведенные ниже советы не следует рассматривать как общие рекомендации.
 
 > [!NOTE]
-> Если при работе с продуктом у вас возникают затруднения из-за проблем с памятью, свяжитесь с нами через средство обратной связи.
+> Если при работе с продуктом у вас возникают затруднения из-за проблем с памятью, свяжитесь с нами через [средство обратной связи](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="optimize-your-environment"></a>Оптимизация окружения
 
@@ -86,7 +79,7 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="managed-language-services-roslyn"></a>Управляемые службы языка (Roslyn)
 
-Сведения о производительности .NET Compiler Platform ("Roslyn") см. в статье [Особенности производительности для крупных решений] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Сведения о производительности .NET Compiler Platform ("Roslyn") см. в статье [Особенности производительности для крупных решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Отключение полного анализа решения**
 
@@ -108,7 +101,7 @@ ms.lasthandoff: 02/09/2018
 
     Расширения — это дополнительные программные компоненты в Visual Studio, которые предоставляют новые или расширяют имеющиеся функциональные возможности. Расширения часто могут выступать источником проблем с памятью. При возникновении подобных проблем попробуйте отключать расширения по одному за раз, чтобы оценить, как это влияет на сценарий или рабочий процесс.
 
-    Чтобы отключить расширения, перейдите в раздел **Сервис | Расширения и обновления** и отключите нужное расширение.
+    Чтобы отключить расширения, перейдите в раздел **Сервис** > **Расширения и обновления** и отключите нужное расширение.
 
 - **Отключение конструктора XAML**
 
@@ -128,8 +121,9 @@ ms.lasthandoff: 02/09/2018
 
 Если принудительная сборка мусора обеспечивает работоспособность сценария, направьте отчет с помощью средства обратной связи Visual Studio, так как подобное поведение, скорее всего, указывает на ошибку.
 
-Подробное описание сборщика мусора CLR см. в разделе [Основные сведения о сборке мусора](/dotnet/standard/garbage-collection/fundamentals).
+Подробное описание сборщика мусора CLR см. в статье [Основы сборки мусора](/dotnet/standard/garbage-collection/fundamentals).
 
 ## <a name="see-also"></a>См. также
 
-[Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
+- [Оптимизация производительности Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Блог Visual Studio. Ускорение загрузки решений в Visual Studio 2017 версии 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

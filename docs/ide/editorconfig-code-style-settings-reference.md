@@ -1,7 +1,7 @@
 ---
 title: Параметры соглашений о написании кода .NET в EditorConfig в Visual Studio | Документы Майкрософт
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: b313271e29bba660af1aa48654bfdfefb81e39f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/22/2018
 
    Правила, описывающие макет и структуру кода для повышения его читаемости. Например, вы можете указать правила для стиля скобок Олмана или назначения приоритета пробелам в блоках управления.
 
-- [Соглашения об именах](../ide/editorconfig-naming-conventions.md)
+- [Соглашения об именовании](../ide/editorconfig-naming-conventions.md)
 
    Правила, описывающие именование элементов кода. Например, можно указать, что методы `async` должны оканчиваться на "Async".
 
@@ -113,7 +113,7 @@ error | При несоблюдении этого правила стиля в�
 
 Правила стилей в этом разделе относятся как к C#, так и к Visual Basic. Чтобы просмотреть примеры кода на предпочитаемом языке программирования, выберите его в раскрывающемся меню **Язык** в правом верхнем углу окна браузера.
 
-#### <a name="this_and_me">Квалификаторы "This." и "Me."</a>
+#### <a name="this_and_me"></a>Квалификаторы "This." и "Me."
 
 Это правило стиля (идентификаторы правила IDE0003 и IDE0009) может применяться к полям, свойствам, методам или событиям. Значение **true** означает, что перед символом кода предпочтительно добавлять `this.` в C# или `Me.` в Visual Basic. Значение **false** означает, что перед символом кода предпочтительно _не_ добавлять `this.` или `Me.`.
 
@@ -218,7 +218,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-В файле EDITORCONFIG эти правила могут иметь следующий вид:
+В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -229,7 +229,7 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="language_keywords">Ключевые слова языка вместо имен типов .NET Framework для ссылок на типы</a>
+#### <a name="language_keywords"></a>Ключевые слова языка вместо имен типов .NET Framework для ссылок на типы
 
 Это правило стиля можно применить к локальным переменным, параметрам методов и членам классов, а также в виде отдельного правила для ввода выражений доступа к члену. Значение **true** означает предпочтение ключевого слова языка (например, `int` или `Integer`) вместо имени типа (например, `Int32`) для типов, имеющих представляющее их ключевое слово. Значение **false** означает предпочтение имени типа вместо ключевого слова языка.
 
@@ -286,7 +286,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-В файле EDITORCONFIG эти правила могут иметь следующий вид:
+В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -295,7 +295,7 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="normalize_modifiers">Предпочтения для модификаторов</a>
+#### <a name="normalize_modifiers"></a>Предпочтения для модификаторов
 
 Этот раздел приводит предпочтительные правила стиля для модификаторов, в том числе когда требуются модификаторы доступа или указывается предпочтительный порядок сортировки.
 
@@ -363,7 +363,7 @@ Public Class MyClass
 End Class
 ```
 
-В файле EDITORCONFIG эти правила могут иметь следующий вид:
+В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -379,7 +379,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="expression_level">Настройки уровня выражений</a>
+#### <a name="expression_level"></a>Настройки уровня выражений
 
 Правила стилей в этом разделе относятся к настройкам уровня выражений, включая использование инициализаторов объектов, инициализаторов наборов, явных или выводимых имен кортежей и выводимых анонимных типов.
 
@@ -505,7 +505,7 @@ var anon = new { age = age, name = name };
 
 ```
 
-В файле EDITORCONFIG эти правила могут иметь следующий вид:
+В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -517,7 +517,7 @@ dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
-#### <a name="null_checking">Параметры проверки NULL</a>
+#### <a name="null_checking"></a>Параметры проверки NULL
 
 Правила стилей в этом разделе относятся к параметрам проверки NULL.
 
@@ -578,7 +578,7 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-В файле EDITORCONFIG эти правила могут иметь следующий вид:
+В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -591,7 +591,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Правила стилей в этом разделе относятся только к C#.
 
-#### <a name="var">Неявные и явные типы</a>
+#### <a name="var"></a>Неявные и явные типы
 
 Правила стилей в этом разделе (идентификаторы правил IDE0007 и IDE0008) относятся к использованию ключевого слова [var](/dotnet/csharp/language-reference/keywords/var) или явного типа в объявлении переменной. Это правило можно отдельно применять для встроенных типов, если этот тип является очевидным, а также в других местах.
 
@@ -648,7 +648,7 @@ var f = this.Init();
 bool f = this.Init();
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -658,7 +658,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="expression_bodied_members">Элементы, воплощающие выражение</a>
+#### <a name="expression_bodied_members"></a>Элементы, воплощающие выражение
 
 Правила стилей в этом разделе относятся к использованию [элементов, воплощающих выражение](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members), когда логика состоит из одного выражения. Это правило может применяться к методам, конструкторам, операторам, свойствам, индексаторам и методам доступа.
 
@@ -795,7 +795,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -808,7 +808,7 @@ csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
 ```
 
-#### <a name="pattern_matching">Сопоставление шаблонов</a>
+#### <a name="pattern_matching"></a>Сопоставление шаблонов
 
 Правила стилей в этом разделе относятся к использованию [сопоставления шаблонов](/dotnet/csharp/pattern-matching) в C#.
 
@@ -850,7 +850,7 @@ var s = o as string;
 if (s != null) {...}
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -859,7 +859,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="inlined_variable_declarations">Встроенные объявления переменных</a>
+#### <a name="inlined_variable_declarations"></a>Встроенные объявления переменных
 
 Это правило стиля определяет, объявляются ли переменные `out` встроенным образом или нет. Начиная с версии 7 языка C# [переменную out можно объявлять в списке аргументов вызова метода](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), а не отдельно.
 
@@ -885,7 +885,7 @@ int i;
 if (int.TryParse(value, out i) {...}
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -893,7 +893,7 @@ if (int.TryParse(value, out i) {...}
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-#### <a name="expression_level_csharp">Настройки уровня выражений</a>
+#### <a name="expression_level_csharp"></a>Настройки уровня выражений
 
 В этом разделе описываются правила стиля, относящиеся к предпочтениям на уровне выражений, включая использование [выражений по умолчанию](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), деконструированные переменные и предпочтение локальных функций анонимным.
 
@@ -967,7 +967,7 @@ fibonacci = (int n) =>
 };
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -977,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking_csharp">Настройки проверки Null</a>
+#### <a name="null_checking_csharp"></a>Настройки проверки Null
 
 Эти правила стиля определяют синтаксис, связанный с проверкой `null`, включая использование выражений `throw` или операторов `throw`, а также выбор между проверкой Null и использованием условного оператора объединения (`?.`) при вызове [лямбда-выражения](/dotnet/csharp/lambda-expressions).
 
@@ -1019,7 +1019,7 @@ func?.Invoke(args);
 if (func != null) { func(args); }
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1028,7 +1028,7 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="code_block">Настройки блока кода</a>
+#### <a name="code_block"></a>Настройки блока кода
 
 Это правило стиля определяет использование фигурных скобок `{ }` вокруг блоков кода.
 
@@ -1053,7 +1053,7 @@ if (test) { this.Display(); }
 if (test) this.Display();
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1101,7 +1101,7 @@ csharp_prefer_braces = true:none
 
 Правила форматирования в этом разделе относятся как к C#, так и к Visual Basic.
 
-#### <a name="usings">Управление директивами using</a>
+#### <a name="usings"></a>Управление директивами using
 
 Это правило форматирования описывает размещение директив using System.* по отношению к другим директивам using.
 
@@ -1130,7 +1130,7 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # .NET formatting settings:
@@ -1142,7 +1142,7 @@ dotnet_sort_system_directives_first = true
 
 Правила форматирования в этом разделе относятся только к коду C#.
 
-#### <a name="newline">Параметры перевода строки</a>
+#### <a name="newline"></a>Параметры перевода строки
 
 Эти правила форматирования относятся использованию новых строк для форматирования кода.
 
@@ -1327,7 +1327,7 @@ var q = from a in e from b in e
         select a * b;
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1341,7 +1341,7 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="indent">Параметры отступа</a>
+#### <a name="indent"></a>Параметры отступа
 
 Эти правила форматирования относятся к использованию отступа для форматирования кода.
 
@@ -1476,7 +1476,7 @@ class C
 }
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1486,7 +1486,7 @@ csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 ```
 
-#### <a name="spacing">Параметры интервалов</a>
+#### <a name="spacing"></a>Параметры интервалов
 
 Эти правила форматирования относятся к использованию пробелов для форматирования кода.
 
@@ -1585,7 +1585,7 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1597,7 +1597,7 @@ csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 ```
 
-#### <a name="wrapping">Параметры переноса</a>
+#### <a name="wrapping"></a>Параметры переноса
 
 Эти правила форматирования определяют размещение операторов и блоков кода в одной или разных строках.
 
@@ -1642,7 +1642,7 @@ public int MyProperty
 }
 ```
 
-Пример файла EDITORCONFIG:
+Пример файла *EDITORCONFIG*:
 
 ```EditorConfig
 # CSharp formatting settings:

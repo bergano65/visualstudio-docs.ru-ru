@@ -1,56 +1,27 @@
 ---
-title: "Преимущество WhiteSource Bolt | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/11/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to activate the WhiteSource Bolt subscription included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fe8e731e26765ec17b56383e04362efa25b2f141
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Преимущество WhiteSource Bolt | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/11/2017
+ms.topic: Get-Started-Article
+description: Сведения об активации учебной подписки WhiteSource Bolt, входящей в вашу подписку Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 0c2eed9efdcca076c20a240d60b4d38cdda23019
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
 
-## <a name="overview"></a>Обзор
-
 Находите и исправляйте уязвимости в продуктах с открытым исходным кодом и создавайте подробные отчеты об инвентаризации и лицензиях по всем компонентам с открытым исходным кодом в вашей сборке.  Некоторые подписки Visual Studio предусматривают 6 месяцев бесплатного доступа. 
-
-## <a name="eligibility"></a>Право на участие
-
-| Уровень подписки или программа                                                  | Преимущество               | Возможность возобновления                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise — уровень "Стандартный"                                             | 6 месяцев              | Да                                                                |
-| Visual Studio Enterprise — годовая подписка                                               | 6 месяцев              | Да                                                                |
-| Visual Studio Enterprise — месячная подписка                                              | Недоступно         |                                                                    |
-| Visual Studio Professional — уровень "Стандартный"                                           | Недоступно         |                                                                    |
-| Visual Studio Professional — годовая подписка                                             | Недоступно         |                                                                    | 
-| Visual Studio Professional — месячная подписка                                            | Недоступно         |                                                                    |
-| Visual Studio Test Pro                                                        | Недоступно         |                                                                    |
-| MSDN Platforms                                                                | Недоступно         |                                                                    |
-| Visual Studio Dev Essentials                                                  | Недоступно         |                                                                    |
-| Visual Studio Enterprise — NFR<sup>1</sup>                                               | Недоступно         |                                                                    |
-| Visual Studio Enterprise — FTE                                                | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Microsoft Partner Network                          | 6 месяцев              | Да                                                                |
-| Visual Studio Professional — Microsoft Partner Network                        | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Стандартный")                                 | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Премиум")                                  | Недоступно         |                                                                    |
-| Visual Studio Enterprise — BizSpark                                           | Недоступно         |                                                                    |
-| Microsoft Certified Trainer — программное обеспечение и службы                             | Недоступно         |                                                                    |
-| Microsoft Certified Trainer — разработчик программного обеспечения и служб                   | Недоступно         |                                                                    |
-
-<sup>1</sup> *Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)*   
-
-Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="activation-steps"></a>Процедура активации
 
-1.  Чтобы воспользоваться преимуществом WhiteSource Bolt, перейдите по адресу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Чтобы активировать преимущество WhiteSource Bolt, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Найдите плитку "WhiteSource Bolt" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки преимущества.    
 
@@ -98,11 +69,23 @@ ms.lasthandoff: 01/29/2018
     - Панель мониторинга рисков и обеспечения соответствия для лицензий
     - Отчет об инвентаризации
 
-## <a name="faq"></a>часто задаваемые вопросы
-*Проверка обновлений*
+## <a name="eligibility"></a>Право на участие
+| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Да          |
+| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                           |Н/Д         |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д         |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              | Н/Д         |
+| Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
+| Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+
+<sup>1</sup> *Включает следующую категорию: Microsoft Partner Network (Enterprise).  Не включает следующие категории: прочие не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Partner (MVP), региональный директор (RD), ПО и службы MCT, Microsoft Partner Network (Professional).*
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Нужна помощь с WhiteSource Bolt?  Начните интерактивный чат представителем службы WhiteSource Bolt на странице https://www.whitesourcesoftware.com/vse_whitesource_bolt/. 
+-  Нужна помощь с WhiteSource Bolt?  Вы можете начать беседу с представителем WhiteSource Bolt на странице https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
 -  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 
 

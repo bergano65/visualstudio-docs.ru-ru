@@ -1,61 +1,36 @@
 ---
-title: "Преимущество MSDN Magazine в подписках Visual Studio | Документация Майкрософт"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/13/2018
-Ms.topic: Get-Started-Article
-Description: Sign up to receive the MSDN Magazine subscription included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: a54f23a6f9264a626660ee23eac7dc95c94acf9e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Преимущество MSDN Magazine в подписках Visual Studio | Документация Майкрософт
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/13/2018
+ms.topic: Get-Started-Article
+description: Зарегистрируйтесь, чтобы получить подписку MSDN Magazine, входящую в состав вашей подписки Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Преимущество MSDN Magazine в подписках Visual Studio
 
-## <a name="overview"></a>Обзор 
 Исчерпывающая информация о технологиях Майкрософт для практического решения реальных проблем.  В зависимости от подписки вы получаете право на печатную версию журнала или ранний доступ к его электронной версии.  
 
-## <a name="eligibility"></a>Право на участие
-| Уровень подписки или программа                                                  | Преимущество               | Возможность возобновления                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise — уровень "Стандартный"                                             | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Enterprise — годовая подписка                                               | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Enterprise — месячная подписка                                              | Недоступно         |                                                                    |
-| Visual Studio Professional — уровень "Стандартный"                                           | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Professional — годовая подписка                                             | Печатный выпуск       |  Нет                                                                  | 
-| Visual Studio Professional — месячная подписка                                            | Недоступно         |                                                                    |
-| Visual Studio Test Pro                                                        | Печатный выпуск       |  Нет                                                                  |
-| MSDN Platforms                                                                | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Dev Essentials                                                  | Цифровой выпуск       |  Да                                                               |
-| Visual Studio Enterprise — NFR<sup>1</sup>                                               | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Enterprise — FTE                                                | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Enterprise — Microsoft Partner Network                          | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Professional — Microsoft Partner Network                        | Цифровой выпуск       |  Да                                                               |
-| Visual Studio Enterprise — Imagine (уровень "Стандартный")                                 | Недоступно         |                                                                    |
-| Visual Studio Enterprise — Imagine (уровень "Премиум")                                  | Печатный выпуск       |  Нет                                                                  |
-| Visual Studio Enterprise — BizSpark                                           | Недоступно         |                                                                    |
-| Microsoft Certified Trainer — программное обеспечение и службы                             | Цифровой выпуск       |  Да                                                               |
-| Microsoft Certified Trainer — разработчик программного обеспечения и служб                   | Недоступно         |                                                                    |
-
-<sup>1</sup> *Включает категории членства NFR (не для перепродажи), MVP (ценный партнер корпорации Майкрософт), RD (директор региона), VSIP (отраслевой партнер Visual Studio)*   
-
-Что делать, если вы не знаете свой уровень подписки?  Перейдите на страницу [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), чтобы увидеть все подписки, назначенные вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="activation-steps"></a>Процедура активации
+Процедура активации преимущества зависит от выбранного выпуска.  
 
 ### <a name="digital-edition"></a>Цифровой выпуск
 Цифровой выпуск доступен членам Visual Studio Dev Essentials.  
 
-1.  Чтобы получить доступ к цифровому выпуску MSDN Magazine, перейдите по адресу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Чтобы получить доступ к цифровому выпуску MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Получить доступ**.
 
 ### <a name="printed-edition"></a>Печатный выпуск
-1.  Чтобы получить подписку на MSDN Magazine, перейдите по адресу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Чтобы получить подписку на MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Подписаться** на плитке. (Щелкните "!" в правом нижнем углу плитки для получения доступа к цифровому выпуску.)
 
     ![Плитка преимущества MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
@@ -71,8 +46,24 @@ ms.lasthandoff: 01/29/2018
 
 5.  Вот и все.  В зависимости выбранной версии журнала вы будете получать печатные журналы или сообщения электронной почты со ссылками на актуальные интернет-версии.  Желаем удачи!
 
-## <a name="faq"></a>часто задаваемые вопросы
-*Проверка обновлений*
+## <a name="eligibility"></a>Право на участие
+| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (стандартная, годовая облачная)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> |Печатный выпуск       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (стандартная, годовая облачная) | Корпоративная лицензия, Azure, розничная версия                                       | Печатный выпуск                                                            |Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                             |  Нет.  Доступно только для новых подписчиков         |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                              | Нет.  Доступно только для новых подписчиков         |
+|Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная)   | Azure |Недоступно      |  Н/Д         |
+|Visual Studio Dev Essentials| Н/Д |Цифровой выпуск       |  Да|
+
+<sup>1</sup> *Печатный выпуск: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*  
+
+*Цифровой выпуск: ПО и службы MCT, Microsoft Valued Partner (Professional), региональный директор (RD).*
+
+*Не включает следующие категории: Imagine (Standard), BizSpark, разработчик ПО и служб MCT*
+
+
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.

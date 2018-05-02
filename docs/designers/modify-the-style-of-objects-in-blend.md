@@ -1,22 +1,18 @@
 ---
-title: "Изменение стиля объектов в Blend | Документация Microsoft"
-ms.custom: 
+title: Изменение стиля объектов в Blend
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: dd96bde626f70211e1698227a8f94df75e3bcb3c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Изменение стиля объектов в Blend
 
@@ -27,8 +23,6 @@ ms.lasthandoff: 01/25/2018
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Кисти: изменение внешнего вида объекта
 
 Примените кисть к объекту, если вы хотите изменить его внешний вид.
-
-**Ознакомьтесь с коротким видео:** ![Кнопка воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Редактор кистей](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Нанесение повторяющегося изображения или рисунка на объект
 
@@ -47,8 +41,6 @@ ms.lasthandoff: 01/25/2018
 Создайте кисть визуального объекта с помощью элемента управления, например кнопки. На следующих рисунках показаны кисть визуального объекта и мозаичная кисть визуального объекта
 
 ![Визуальная кисть](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Мозаичная кист Visual](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
-
-**Ознакомьтесь с коротким видео:** ![Кнопка воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Мозаичные кисти](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
 
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Стили и шаблоны. Создание согласованного внешнего вида и поведения элементов управления
 
@@ -82,7 +74,7 @@ ms.lasthandoff: 01/25/2018
 
 > [!NOTE]
 > Невозможно создать стили и шаблоны для каждого типа элемента управления. Если элемент управления не поддерживает стили, то кнопка навигации не отображается в области рисования.
-> Чтобы вернуться в область редактирования основного документа, щелкните **Вернуться к области** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Чтобы вернуться в область редактирования основного документа, щелкните **Вернуться к области** ![Значок "Вернуться к области"](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Применение стиля или шаблона к элементу управления
 
@@ -92,7 +84,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Восстановление стиля или шаблона элемента управления по умолчанию
 
-Выберите элемент управления и на панели [Свойства](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) найдите свойство **Стиль** или **Шаблон**. Выберите **Дополнительные параметры![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png)**  и нажмите в контекстном меню кнопку **Сброс**.
+Выберите элемент управления и на панели [Свойства](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) найдите свойство **Стиль** или **Шаблон**. Выберите **Дополнительные параметры**, а затем выберите в контекстном меню пункт **Сброс**.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Визуальные состояния. Изменение внешнего вида элемента управления в зависимости от его состояния
 
@@ -102,14 +94,12 @@ ms.lasthandoff: 01/25/2018
 
 **Ознакомьтесь с коротким видео:** ![Кнопка воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-##  <a name="Resources"></a>Ресурсы: создание цветов, стилей и шаблонов и их последующее повторное использование
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ресурсы: создание цветов, стилей и шаблонов и их последующее повторное использование
 
 Практически любой элемент проекта можно преобразовать в ресурс. Ресурс представляет собой объект, который можно многократно использовать в разных местах в приложении . Например, можно создать один раз цвет, преобразовать его в ресурс, а затем использовать этот ресурс для ряда объектов Чтобы изменить цвет всех этих объектов, достаточно изменить ресурс цвета.
 
 ![Кнопка "Преобразовать цвет в ресурс"](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Диалоговое окно "Создание ресурса цвета"](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-**Ознакомьтесь с коротким видео:** ![Кнопка воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Краткие сведения о ресурсах](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).
-
 ## <a name="see-also"></a>См. также
 
-[Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

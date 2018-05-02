@@ -1,21 +1,19 @@
 ---
-title: "Отображение определений в Visual Studio | Документация Майкрософт"
-ms.custom: 
+title: Отображение определений в Visual Studio | Документация Майкрософт
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)
 
@@ -75,18 +73,18 @@ ms.lasthandoff: 01/13/2018
 
 |Функция|Сочетание клавиш|
 |-------------------|:-----------------------:|
-|Открытие окна определения|ALT+F12|
-|Закрытие окна определения|ESC|
-|Преобразование окна определения в стандартную вкладку документа|SHIFT+ALT+HOME|
-|Переход из одного окна определения в другое|CTRL+ALT+- и CTRL+ALT+=|
-|Переключение с одного результата на другой|F8 и SHIFT+F8|
-|Переключение между окном редактора кода и окном определения|SHIFT+ESC|
+|Открытие окна определения|**ALT**+**F12**|
+|Закрытие окна определения|**ESC**|
+|Преобразование окна определения в стандартную вкладку документа|**SHIFT**+**ALT**+**HOME**|
+|Переход из одного окна определения в другое|**CTRL**+**ALT**+**-** и **CTRL**+**ALT**+**=**|
+|Переключение с одного результата на другой|**F8** и **SHIFT**+**F8**|
+|Переключение между окном редактора кода и окном определения|**SHIFT**+**ESC**|
 
 > [!NOTE]
 > Для редактирования кода в окне **Показать определение** можно также использовать те же сочетания клавиш, что и в любом другом окне Visual Studio.
 
 ## <a name="see-also"></a>См. также
 
-[Перемещение по коду](../ide/navigating-code.md)  
+[Навигация по коду](../ide/navigating-code.md)  
 [Функции "Перейти к определению" и "Показать определение"](../ide/go-to-and-peek-definition.md)  
 [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)
