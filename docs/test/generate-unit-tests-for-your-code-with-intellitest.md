@@ -1,6 +1,7 @@
 ---
-title: Создание модульных тестов для кода с помощью IntelliTest в Visual Studio | Документы Майкрософт
+title: Создание модульных тестов для кода с помощью IntelliTest в Visual Studio
 ms.date: 2015-10-05
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a6929db0b5100ed57ba6d7c3113ede5b7431aa4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af013fe81ca464f6433b35429e3bbf077f78e2f7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
 IntelliTest изучает код .NET, чтобы создать тестовые данные и набор модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Анализ случая выполняется для каждой условной ветви в коде. Например, анализируются операторы `if`, утверждения и все операции, которые могут вызывать исключения. Этот анализ используется в целях создания данных теста для параметризованного модульного теста для каждого из методов, создающих модульные тесты с высоким покрытием кода.

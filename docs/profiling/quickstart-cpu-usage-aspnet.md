@@ -1,6 +1,7 @@
 ---
-title: Анализ данных по использованию ЦП (ASP.NET) | Документы Майкрософт
-ms.custom: ''
+title: Анализ данных о загрузке ЦП (ASP.NET)
+description: Измерение производительности приложения в приложениях ASP.NET с помощью средства диагностики "Загрузка ЦП"
+ms.custom: mvc
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
 ms.topic: quickstart
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: e93f7ae71b8d95b8d444856c34dc6181818e0a58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3309435600991db85540c95dc969206619438e51
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Анализ данных по использованию ЦП в Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (ASP.NET)
 
 Visual Studio предоставляет множество эффективных возможностей для анализа проблем с производительностью приложения. В этой статье вы ознакомитесь с некоторыми основными возможностями. Мы рассмотрим средство, позволяющее выявлять узкие места производительности, возникающие из-за высокой загрузки ЦП. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
 

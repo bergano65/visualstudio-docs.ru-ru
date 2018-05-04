@@ -1,10 +1,9 @@
 ---
-title: -Build (devenv.exe) | Документы Майкрософт
-ms.custom: ''
+title: -Build (devenv.exe)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], command-line
 - /build Devenv switch
@@ -16,53 +15,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cc01dac34723f2a587e76461d41a60361a72091
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90e331ed637edcc81dc99f99c3ec39aa75928f7d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
-Выполняет сборку решения с использованием заданного файла конфигурации решения.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]  
-```  
-  
-## <a name="arguments"></a>Аргументы  
- `SolutionName`  
- Обязательно. Полный путь и имя для файла решения.  
-  
- `SolnConfigName`  
- Обязательно. Имя конфигурации решения, которая будет применяться для сборки решения, указанного в `SolutionName`.  
-  
- /project `ProjName`  
- Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
-  
- /projectconfig `ProjConfigName`  
- Необязательный. Имя конфигурации сборки проекта, которая применяется при сборке указанного `/project`.  
-  
-## <a name="remarks"></a>Примечания  
- Этот параметр выполняет те же функции, что и команда меню **Собрать решение** в интегрированной среде разработки (IDE).  
-  
- Строки с пробелами заключаются в двойные кавычки.  
-  
- Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.  
-  
- Эта команда выполняет сборку только тех проектов, которые изменились с момента последней сборки. Чтобы выполнить сборку всех проектов в решении, используйте [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md).  
-  
-## <a name="example"></a>Пример  
- В этом примере выполняется сборка проекта `CSharpConsoleApp` с использованием конфигурации проекта `Debug` в пределах конфигурация решения `Debug` для `MySolution`.  
-  
-```  
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
-```  
-  
-## <a name="see-also"></a>См. также  
- [Building and Cleaning Projects and Solutions in Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  
- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
- [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+Выполняет сборку решения с использованием заданного файла конфигурации решения.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]
+```
+
+## <a name="arguments"></a>Аргументы
+ `SolutionName` Обязательный. Полный путь и имя для файла решения.
+
+ `SolnConfigName` Обязательный. Имя конфигурации решения, которая будет применяться для сборки решения, указанного в `SolutionName`.
+
+ /project `ProjName` Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
+
+ /projectconfig `ProjConfigName` Необязательный. Имя конфигурации сборки проекта, которая применяется при сборке указанного `/project`.
+
+## <a name="remarks"></a>Примечания
+ Этот параметр выполняет те же функции, что и команда меню **Собрать решение** в интегрированной среде разработки (IDE).
+
+ Строки с пробелами заключаются в двойные кавычки.
+
+ Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.
+
+ Эта команда выполняет сборку только тех проектов, которые изменились с момента последней сборки. Чтобы выполнить сборку всех проектов в решении, используйте [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md).
+
+## <a name="example"></a>Пример
+ В этом примере выполняется сборка проекта `CSharpConsoleApp` с использованием конфигурации проекта `Debug` в пределах конфигурация решения `Debug` для `MySolution`.
+
+```
+devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```
+
+## <a name="see-also"></a>См. также
+
+- [Построение и очистка проектов и решений в Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
+- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

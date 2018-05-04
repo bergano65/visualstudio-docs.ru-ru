@@ -1,7 +1,9 @@
 ---
-title: Создание веб-приложения ASP.NET Core в C# с помощью Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Создание веб-приложения ASP.NET Core в C# с помощью Visual Studio
+description: Пошаговые инструкции по созданию веб-приложения ASP.NET Core в Visual Studio на C#.
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,17 +14,17 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое веб-приложение ASP.NET Core на языке C#.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали это.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -30,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 
 1. Откройте Visual Studio 2017.
 
-1. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.
+1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
 1. В левой области диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
 
@@ -68,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 
    ![Список ошибок](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. В окне редактора установите курсор в любую строку с ошибкой, а затем выберите меню лампочки "Быстрые действия" в левом поле. В раскрывающемся меню выберите **using System;**, чтобы добавить эту директиву в начало файла и разрешить ошибки.
+1. В окне редактора установите курсор в любую строку с ошибкой, а затем выберите **меню лампочки "Быстрые действия"** в левом поле. В раскрывающемся меню выберите **using System;**, чтобы добавить эту директиву в начало файла и разрешить ошибки.
 
 ## <a name="run-the-application"></a>Запуск приложения
 

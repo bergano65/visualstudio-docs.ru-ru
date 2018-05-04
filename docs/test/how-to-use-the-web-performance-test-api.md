@@ -1,5 +1,5 @@
 ---
-title: API веб-теста производительности в Visual Studio | Документы Майкрософт
+title: API веб-теста производительности в Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7cbc7375cbf416d82a56c140479925569dad8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Практическое руководство. Использование интерфейса API веб-теста производительности
 
@@ -23,7 +24,8 @@ ms.lasthandoff: 04/16/2018
  API веб-теста производительности применяется также для программного создания и сохранения декларативных веб-тестов производительности. Для этого следует использовать классы <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> и <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
 
 > [!TIP]
->  Для просмотра пространства имен <xref:Microsoft.VisualStudio.TestTools.WebTesting> используется обозреватель объектов. Редакторы Visual C# и Visual Basic предоставляют поддержку IntelliSense для создания кода с помощью классов из этого пространства имен.
+> Для просмотра пространства имен <xref:Microsoft.VisualStudio.TestTools.WebTesting> используется обозреватель объектов. Редакторы Visual C# и Visual Basic предоставляют поддержку IntelliSense для создания кода с помощью классов из этого пространства имен.
+
 
  Кроме того, имеется возможность создавать подключаемые модули для нагрузочных тестов. Дополнительные сведения см. в статьях [Практическое руководство. Использование API-интерфейса нагрузочного теста](../test/how-to-use-the-load-test-api.md) и [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md).
 

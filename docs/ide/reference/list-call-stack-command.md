@@ -1,10 +1,9 @@
 ---
-title: Команда List Call Stack | Документы Майкрософт
-ms.custom: ''
+title: Команда List Call Stack
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
@@ -16,92 +15,103 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b9a0f9c466325d476c01d4acf9b825193fb175
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e5fb8bd8b0f0f550e6fa1253f778895af0472be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="list-call-stack-command"></a>Команда List Call Stack
-Отображает текущий стек вызовов.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]  
-[/ShowNames:yes|no] [/ShowValues:yes|no] [/ShowModule:yes|no]  
-[/ShowLineOffset:yes|no] [/ShowByteOffset:yes|no]  
-[/ShowLanguage:yes|no] [/IncludeCallsAcrossThreads:yes|no]  
-[/ShowExternalCode:yes|no] [Thread:n] [index]  
-```  
-  
-## <a name="arguments"></a>Аргументы  
- `index`  
- Необязательный. Задает текущий кадр стека и не отображает выходные данные.  
-  
-## <a name="switches"></a>Переключатели  
- Каждый переключатель можно вызвать с помощью его полной или краткой формы.  
-  
- /Count:`number` [или] /C:`number`  
- Необязательный. Максимальное количество отображаемых стеков вызова. По умолчанию это значение не ограничено.  
-  
- /ShowTypes:`yes`|`no` [или] /T:`yes`|`no`  
- Необязательный. Указывает, отображать или нет типы параметров. Значение по умолчанию — `yes`.  
-  
- /ShowNames:`yes`|`no` [или] /N:`yes`|`no`  
- Необязательный. Указывает, отображать или нет имена параметров. Значение по умолчанию — `yes`.  
-  
- /ShowValues:`yes`|`no` [или] /V:`yes`|`no`  
- Необязательный. Указывает, отображать или нет значения параметров. Значение по умолчанию — `yes`.  
-  
- /ShowModule:`yes`|`no` [или] /M:`yes`|`no`  
- Необязательный. Указывает, отображать или нет имя модуля. Значение по умолчанию — `yes`.  
-  
- /ShowLineOffset:`yes`|`no` [или] /#:`yes`|`no`  
- Необязательный. Указывает, отображать или нет смещение строки. Значение по умолчанию — `no`.  
-  
- /ShowByteOffset:`yes`|`no` [или] /B:`yes`|`no`  
- Необязательный. Указывает, отображать или нет байтовое смещение. Значение по умолчанию — `no`.  
-  
- /ShowLanguage:`yes`|`no` [или] /L:`yes`|`no`  
- Необязательный. Указывает, отображать или нет используемый язык. Значение по умолчанию — `no`.  
-  
- /IncludeCallsAcrossThreads:`yes`|`no` [или] /I:`yes`|`no`  
- Необязательный. Указывает, включать или нет вызовы в другие потоки или из других потоков. Значение по умолчанию — `no`.  
-  
- /ShowExternalCode:`yes`|`no`  
- Необязательный. Указывает, отображать или нет режим "Только мой код" для стека вызова. Если режим "Только мой код" выключен, отображается весь код, написанный не этим пользователем. Если режим "Только мой код" включен, то код, написанный не этим пользователем, отображается в выходных данных стека вызова как `[external]`.  
-  
- Thread:`n`  
- Необязательный. Отображает стек вызова для потока `n`. Если поток не указан, отображается стек вызова для текущего потока.  
-  
-## <a name="remarks"></a>Примечания  
- Изменения аргументов или переключателей применяются при последующих вызовах данной команды. При выполнении самой команды Debug.ListCallStackby отображается весь стек вызова. При указании индекса, например,  
-  
-```  
-Debug.ListCallStack 2  
-```  
-  
- текущий кадр стека устанавливается на этот кадр (в данном случае на второй).  
-  
- Для вызова этой команды можно также использовать ее стандартный псевдоним "kb". Например, можно ввести  
-  
-```  
-kb 2  
-```  
-  
- для установки текущего кадра стека на второй кадр.  
-  
-## <a name="example"></a>Пример  
-  
-```  
->Debug.CallStack /Count:4 /ShowTypes:yes  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Команда List Disassembly](../../ide/reference/list-disassembly-command.md)   
- [Команда List Thread](../../ide/reference/list-threads-command.md)   
- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Командное окно](../../ide/reference/command-window.md)   
- [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Отображает текущий стек вызовов.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
+[/ShowNames:yes|no] [/ShowValues:yes|no] [/ShowModule:yes|no]
+[/ShowLineOffset:yes|no] [/ShowByteOffset:yes|no]
+[/ShowLanguage:yes|no] [/IncludeCallsAcrossThreads:yes|no]
+[/ShowExternalCode:yes|no] [Thread:n] [index]
+```
+
+## <a name="arguments"></a>Аргументы
+ `index` Необязательный. Задает текущий кадр стека и не отображает выходные данные.
+
+## <a name="switches"></a>Переключатели
+ Каждый переключатель можно вызвать с помощью его полной или краткой формы.
+
+ /Count:`number` [или] /C:`number`
+
+ Необязательный. Максимальное количество отображаемых стеков вызова. По умолчанию это значение не ограничено.
+
+ /ShowTypes:`yes`|`no` [или] /T:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет типы параметров. Значение по умолчанию — `yes`.
+
+ /ShowNames:`yes`|`no` [или] /N:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет имена параметров. Значение по умолчанию — `yes`.
+
+ /ShowValues:`yes`|`no` [или] /V:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет значения параметров. Значение по умолчанию — `yes`.
+
+ /ShowModule:`yes`|`no` [или] /M:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет имя модуля. Значение по умолчанию — `yes`.
+
+ /ShowLineOffset:`yes`|`no` [или] /#:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет смещение строки. Значение по умолчанию — `no`.
+
+ /ShowByteOffset:`yes`|`no` [или] /B:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет байтовое смещение. Значение по умолчанию — `no`.
+
+ /ShowLanguage:`yes`|`no` [или] /L:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет используемый язык. Значение по умолчанию — `no`.
+
+ /IncludeCallsAcrossThreads:`yes`|`no` [или] /I:`yes`|`no`
+
+ Необязательный. Указывает, включать или нет вызовы в другие потоки или из других потоков. Значение по умолчанию — `no`.
+
+ /ShowExternalCode:`yes`|`no`
+
+ Необязательный. Указывает, отображать или нет режим "Только мой код" для стека вызова. Если режим "Только мой код" выключен, отображается весь код, написанный не этим пользователем. Если режим "Только мой код" включен, то код, написанный не этим пользователем, отображается в выходных данных стека вызова как `[external]`.
+
+ Thread:`n`
+
+ Необязательный. Отображает стек вызова для потока `n`. Если поток не указан, отображается стек вызова для текущего потока.
+
+## <a name="remarks"></a>Примечания
+ Изменения аргументов или переключателей применяются при последующих вызовах данной команды. При выполнении самой команды Debug.ListCallStackby отображается весь стек вызова. При указании индекса, например,
+
+```
+Debug.ListCallStack 2
+```
+
+ текущий кадр стека устанавливается на этот кадр (в данном случае на второй).
+
+ Для вызова этой команды можно также использовать ее стандартный псевдоним "kb". Например, можно ввести
+
+```
+kb 2
+```
+
+ для установки текущего кадра стека на второй кадр.
+
+## <a name="example"></a>Пример
+
+```
+>Debug.CallStack /Count:4 /ShowTypes:yes
+```
+
+## <a name="see-also"></a>См. также
+
+- [Команда "Вывести дизассемблированный код"](../../ide/reference/list-disassembly-command.md)
+- [Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)
+- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Командное окно](../../ide/reference/command-window.md)
+- [Поле "Поиск/команда"](../../ide/find-command-box.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

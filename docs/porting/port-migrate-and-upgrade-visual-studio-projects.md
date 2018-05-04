@@ -1,5 +1,6 @@
 ---
-title: Перенос, миграция и обновление проектов Visual Studio
+title: Перенос, миграция и обновление проектов
+description: Ссылка на сведения о поддержке в Visual Studio 2017 проектов, созданных в предыдущих версиях Visual Studio, и том, как Visual Studio определяет потребность в миграции проекта.
 ms.date: 03/14/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -18,13 +19,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2e7112794d0b7104c10b7130a96c76d73de46b52
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Перенос, миграция и обновление проектов Visual Studio
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
 Как правило, каждая новая версия Visual Studio поддерживает большую часть типов проектов, файлов и других ресурсов предыдущих выпусков. С ними можно работать, [как обычно](../ide/solutions-and-projects-in-visual-studio.md). При условии, что вы не зависите от новых функций, в Visual Studio по возможности сохраняется обратная совместимость с предыдущими версиями, такими как Visual Studio 2015, Visual Studio 2013 и Visual Studio 2012. (См. [заметки о выпуске](https://www.visualstudio.com/vs/release-notes/), чтобы узнать, какие функции к какой версии относятся.)
 

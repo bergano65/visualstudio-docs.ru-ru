@@ -1,20 +1,19 @@
 ---
-title: Настройка интегрированной среды разработки Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Настройка интегрированной среды разработки Visual Studio
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 
@@ -24,7 +23,7 @@ ms.lasthandoff: 04/16/2018
 
 Доступ ко многим персонализированным параметрам можно также получить в диалоговом окне [Параметры среды](../ide/reference/environment-options-dialog-box.md). Открыть это диалоговое окно можно двумя способами:
 
-- В строке меню выберите **Сервис**, **Параметры** и при необходимости разверните узел **Среда**.
+- В строке меню выберите **Сервис** > **Параметры** и при необходимости разверните узел **Среда**.
 
 - Введите `environment` в поле **Быстрый запуск** и выберите **Среда --> Общие** в списке результатов.
 
@@ -41,13 +40,13 @@ ms.lasthandoff: 04/16/2018
 
 Вы можете изменить регистр главного меню, выбрав вариант **Заглавные буквы** (например, "Файл") и **ВСЕ ПРОПИСНЫЕ** (например, "ФАЙЛ"). Введите `environment` в поле **Быстрый запуск**, выберите **Среда --> Общие** и измените значение параметра **Применить регистр заголовка к строке меню**.
 
-### <a name="customzing-menus-and-toolbars"></a>Настройка меню и панелей инструментов
+### <a name="customze-menus-and-toolbars"></a>Настройка меню и панелей инструментов
 
 Сведения о добавлении или удалении элементов меню или панели инструментов см. в статье [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Начальная страница
 
-Дополнительные сведения о создании настраиваемой начальной страницы для пользователя и команды см. в инструкциях по [настройке начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).
+Сведения о создании настраиваемой начальной страницы для пользователя и команды см. в разделе [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ## <a name="window-layouts"></a>Макеты окон
 
@@ -59,5 +58,5 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>См. также
 
-[Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)  
-[Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Обзор интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
+- [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)

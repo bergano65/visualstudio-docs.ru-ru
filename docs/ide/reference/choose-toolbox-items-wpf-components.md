@@ -1,9 +1,9 @@
 ---
-title: Выбор элементов панели элементов, компоненты WPF | Документы Майкрософт
-ms.custom: ''
+title: Выбор элементов панели элементов, компоненты WPF
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Выбор элементов панели элементов — компоненты WPF
 
@@ -36,16 +36,20 @@ ms.lasthandoff: 04/16/2018
 
 Столбцы на вкладке **Компоненты WPF** содержат следующие сведения:
 
-name  
+**Name**
+
 Выводит список имен элементов управления WPF, для которых имеются записи в реестре вашего компьютера.
 
-Пространство имен  
+**Пространство имен**
+
 Отображает иерархию пространства имен [API класса .NET Framework](/dotnet/api/?view=netframework-4.7), которая определяет структуру компонента. Выполните сортировку по этому столбцу, чтобы получить список доступных компонентов в каждом пространстве имен .NET Framework, установленном на компьютере.
 
-Assembly Name  
+**Имя сборки**
+
 Отображает имя сборки .NET Framework, которая включает пространство имен для каждого компонента. Выполните сортировку по этому столбцу, чтобы получить список пространств имен в каждой сборке .NET Framework, установленной на компьютере.
 
-Каталог  
+**Каталог**
+
 Отображает расположение сборки .NET Framework. По умолчанию все сборки находятся в глобальном кэше сборок. Дополнительные сведения о глобальном кэше сборок см. в разделе [Работа со сборками и глобальным кэшем сборок](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
@@ -54,15 +58,15 @@ Assembly Name
 
 Фильтрует список элементов управления WPF на основе строки, введенной в текстовом поле. Отображаются все совпадения из любого из четырех столбцов.
 
-### <a name="clear"></a>Clear
+**Очистить**
 
 Очищает строку фильтра.
 
-### <a name="browse"></a>Обзор
+**Обзор**
 
 Открывает диалоговое окно **Открыть**, позволяющее перейти к сборкам, которые содержат элементы управления WPF. Используйте его для загрузки сборок, которые не находятся в глобальном кэше сборок.
 
-### <a name="language"></a>Язык
+**Язык**
 
 Показывает локализованную версию сборки, содержащей выбранный элемент управления WPF.
 
@@ -80,5 +84,5 @@ Assembly Name
 
 ## <a name="see-also"></a>См. также
 
-[Панель элементов](../../ide/reference/toolbox.md)  
-[Начало работы с WPF](../../designers/getting-started-with-wpf.md)
+- [Панель элементов](../../ide/reference/toolbox.md)
+- [Начало работы с WPF](../../designers/getting-started-with-wpf.md)

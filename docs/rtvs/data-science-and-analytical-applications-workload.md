@@ -1,6 +1,6 @@
 ---
 title: Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"
-description: Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения" в Visual Studio объединяет в себе языки Python, R, F# и их соответствующие дистрибутивы времени выполнения, в том числе Anaconda.
+description: Эта рабочая нагрузка Visual Studio объединяет в себе языки Python, R, F# и их соответствующие дистрибутивы времени выполнения, в том числе Anaconda.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs - vs-python
@@ -10,13 +10,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29812965a364b6de272f0e365f49552e4627361f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="data-science-and-analytical-applications-workload"></a>Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"
+# <a name="install-data-science-support-in-visual-studio"></a>Установка поддержки для обработки и анализа данных в Visual Studio
 
 Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения", которую вы можете выбрать и установить в установщике Visual Studio, объединяет возможности трех языков и предназначенных для них дистрибутивов сред выполнения.
 

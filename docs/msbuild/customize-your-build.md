@@ -13,18 +13,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dae51959313a7108c54466dff08b3641525818cd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ea021decfc0940ecaaedde2ecfdde34db833b86
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-your-build"></a>Настройка сборки
+
+Проекты MSBuild, использующие стандартный процесс сборки (импорт `Microsoft.Common.props` и `Microsoft.Common.targets`), имеют несколько обработчиков расширяемости, позволяющих настроить процесс сборки.
+
+## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Добавление аргументов в вызовы командной строки MSBuild для проекта
+
+Файл `Directory.Build.rsp`, расположенный в исходном каталоге или на более высоком уровне, применяется к сборкам из командной строки проекта. Дополнительные сведения см. в разделе [Файлы ответов MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
+
+## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory.Build.props и Directory.Build.targets
+
 Чтобы указать новое настраиваемое свойство для проектов в решении, в версиях MSBuild, предшествующих версии 15, приходилось вручную добавлять ссылку на это свойство в каждый файл проекта в решении. Либо приходилось определять свойство в файле *.props* и затем явно импортировать файл *.props* в каждый проект решения.
 
-Но теперь вы можете добавить новое свойство в любой проект за один шаг, определив его в единственном файле *Directory.Build.props* в корне репозитория. При запуске MSBuild *Microsoft.Common.props* ищет файл *Directory.Build.props* в структуре каталогов (а *Microsoft.Common.targets* ищет файл *Directory.Build.targets*). Если он его находит, то импортирует свойство. Пользовательский файл *Directory.Build.props* содержит настройки персонализации для проектов в своем каталоге.
+Но теперь вы можете добавить новое свойство в любой проект за один шаг, определив его в единственном файле *Directory.Build.props* в корневой папке с исходным кодом. При запуске MSBuild *Microsoft.Common.props* ищет файл *Directory.Build.props* в структуре каталогов (а *Microsoft.Common.targets* ищет файл *Directory.Build.targets*). Если он его находит, то импортирует свойство. Пользовательский файл *Directory.Build.props* содержит настройки персонализации для проектов в своем каталоге.
 
-## <a name="directorybuildprops-example"></a>Пример Directory.Build.props
+### <a name="directorybuildprops-example"></a>Пример Directory.Build.props
+
 Например, если вы хотите предоставить всем проектам новую функцию Roslyn **/deterministic** через свойство `$(Deterministic)` в целевом объекте Roslyn `CoreCompile`, можно сделать следующее.
 
 1. Создайте в корне репозитория файл с именем *Directory.Build.props*.
@@ -39,7 +49,8 @@ ms.lasthandoff: 04/19/2018
   ```
 3. Запустите MSBuild. Уже существующие в проекте файлы импорта *Microsoft.Common.props* и *Microsoft.Common.targets* находят новый файл и импортируют его.
 
-## <a name="search-scope"></a>Область поиска
+### <a name="search-scope"></a>Область поиска
+
 При поиске файла *Directory.Build.props* MSBuild обходит структуру каталогов вверх от расположения проекта (`$(MSBuildProjectFullPath)`). Когда файл найден, поиск останавливается. Например, если `$(MSBuildProjectFullPath)` имеет значение *c:\users\username\code\test\case1*, MSBuild начнет поиск там, а затем будет переходить вверх по структуре каталогов, пока не найдет файл *Directory.Build.props*. Пример такого поиска по структуре каталогов представлен ниже.
 
 ```
@@ -50,19 +61,20 @@ c:\users\username
 c:\users
 c:\
 ```
+
 Расположение файла решения не имеет значения для *Directory.Build.props*.
 
-## <a name="import-order"></a>Порядок импорта
+### <a name="import-order"></a>Порядок импорта
 
 *Directory.Build.props* импортируется в *Microsoft.Common.props* очень рано, поэтому определенные позднее свойства ему недоступны. Поэтому не ссылайтесь на свойства, которые еще не определены (и в связи с этим оцениваются как пустые).
 
 *Directory.Build.targets* импортируется из *Microsoft.Common.targets* после импорта файлов *.targets* из пакетов NuGet. Таким образом, его можно использовать для переопределения свойств и целевых объектов, определенных в большей части логики сборки, когда может потребоваться настройка файла проекта после окончательного импорта.
 
-## <a name="use-case-multi-level-merging"></a>Вариант использования: многоуровневое слияние
+### <a name="use-case-multi-level-merging"></a>Вариант использования: многоуровневое слияние
 
 Предположим, что вы используете следующую стандартную структуру решения:
 
-````
+```
 \
   MySolution.sln
   Directory.Build.props     (1)
@@ -74,7 +86,7 @@ c:\
     Directory.Build.props   (2-test)
     \Project1Tests
     \Project2Tests
-````
+```
 
 Допустим, вам нужны некоторые общие свойства для всех проектов *(1)*, а также общие свойства для проектов *исходного кода* *(2-src)* и общие свойства для проектов *тестирования* *(2-test)*.
 
@@ -91,6 +103,57 @@ c:\
 
 Проще говоря, MSBuild останавливает поиск на первом файле *Directory.Build.props*, который ничего не импортирует.
 
-## <a name="see-also"></a>См. также  
- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
+## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
+
+По умолчанию `Microsoft.Common.props` импортирует `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`, а `Microsoft.Common.targets` импортирует `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. По умолчанию `MSBuildProjectExtensionsPath` имеет значение `$(BaseIntermediateOutputPath)`, `obj/`. Это механизм, который NuGet использует для ссылки на логику сборки, предоставляемую вместе с пакетами. Например, во время восстановления он создает файлы `{project}.nuget.g.props`, ссылающиеся на содержимое пакета.
+
+Этот механизм расширяемости можно отключить, присвоив свойству `ImportProjectExtensionProps` значение `false` в `Directory.Build.props` или перед импортом `Microsoft.Common.props`.
+
+> [!NOTE]
+> Отключение импортов MSBuildProjectExtensionsPath препятствует применению логики сборки, предоставляемой в пакетах NuGet, к проекту. Некоторым пакетам NuGet нужна работающая логика сборки, и если эта возможность отключена, они будут бесполезны.
+
+## <a name="user-file"></a>Файл USER
+
+Microsoft.Common.CurrentVersion.targets импортирует `$(MSBuildProjectFullPath).user`, если он существует, поэтому можно создать файл рядом с проектом с этим дополнительным расширением. Для долгосрочных изменений, которые вы собираетесь возвратить в систему управления версиями, рекомендуется изменить сам проект, чтобы тем, кто впоследствии будет обслуживать программу, не потребовалось разбираться в этом механизме расширения.
+
+## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath и MSBuildUserExtensionsPath
+
+> [!WARNING]
+> Использование этих механизмов расширения затрудняет получение повторяемых сборок на разных компьютерах. Попробуйте использовать конфигурацию, которую можно возвратить в систему управления версиями и предоставить для общего доступа всем разработчикам базы кода.
+
+По соглашению многие файлы базовой логики сборки импортируют
+
+```
+$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
+```
+
+перед своим содержимым и
+
+```
+$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
+```
+
+после него. Это позволяет установленным пакетам SDK дополнять логику сборки распространенных типов проектов.
+
+Поиск по той же структуре каталогов выполняется в `$(MSBuildUserExtensionsPath)`, который является папкой конкретного пользователя `%LOCALAPPDATA%\Microsoft\MSBuild`. Файлы, помещенные в эту папку, импортируются для всех сборок соответствующего типа проекта, выполняемого с использованием учетных данных этого пользователя. Пользовательские расширения можно отключить, задав свойства, имя которых соответствует импортируемому файлу по шаблону `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Например, установив для `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` значение `false`, можно препятствовать импорту `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
+
+## <a name="customizing-the-solution-build"></a>Настройка сборки решения
+
+> [!IMPORTANT]
+> Подобная настройка сборки решения применяется только к сборкам из командной строки с `MSBuild.exe`. Она **не** применяется к сборкам внутри Visual Studio.
+
+Когда система MSBuild выполняет сборку файла решения, она сначала внутренне преобразует его в файл проекта и затем выполняет его сборку. Созданный файл проекта импортирует `before.{solutionname}.sln.targets` до определения каких-либо целевых объектов и `after.{solutionname}.sln.targets` после их импорта, включая целевые объекты, установленные в каталоги `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` и `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter`.
+
+Например, можно определить новый целевой объект для записи настраиваемого сообщения журнала после сборки `MyCustomizedSolution.sln`, создав в том же каталоге файл `after.MyCustomizedSolution.sln.targets`, содержащий следующее:
+
+```xml
+<Project>
+ <Target Name="EmitCustomMessage" AfterTargets="Build">
+   <Message Importance="High" Text="The solution has completed the Build target" />
+ </Target>
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+
+ [Основные возможности MSBuild](../msbuild/msbuild-concepts.md) [Справочник по MSBuild](../msbuild/msbuild-reference.md)

@@ -1,9 +1,9 @@
 ---
-title: Вход в Visual Studio | Документы Майкрософт
+title: Выполните вход в Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 
 При первом запуске Visual Studio появляется запрос на вход и ввод основных регистрационных сведений. Необходимо выбрать учетную запись Майкрософт или рабочую либо школьную учетную запись, которую вам будет удобнее использовать. Если у вас нет таких учетных записей, можно создать учетную запись Майкрософт бесплатно. См. раздел [Регистрация учетной записи Майкрософт](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-Затем выберите параметры пользовательского интерфейса и цветовую тему, которые должны использоваться в Visual Studio. Visual Studio запоминает эти параметры и синхронизирует их во всех средах Visual Studio, в которых вы выполняли вход. Список синхронизируемых параметров см. в разделе [Синхронизированные параметры в Visual Studio](../ide/synchronized-settings-in-visual-studio.md). Параметры можно изменить позже в меню **Сервис**, **Параметры** Visual Studio.
+Затем выберите параметры пользовательского интерфейса и цветовую тему, которые должны использоваться в Visual Studio. Visual Studio запоминает эти параметры и синхронизирует их во всех средах Visual Studio, в которых вы выполняли вход. Список синхронизируемых параметров см. в разделе [Синхронизированные параметры](../ide/synchronized-settings-in-visual-studio.md). Параметры можно изменить позже в меню **Сервис** > **Параметры** Visual Studio.
 
 После задания параметров будет запущена среда Visual Studio, чтобы можно было начать работу; при этом будет выполнен вход в систему. Чтобы проверить, выполнен ли вход, найдите свое имя в правом верхнем углу среды Visual Studio.
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-change-your-profile-information"></a>Изменение данных профиля
 
-1. Выберите **Файл**, **Параметры учетной записи** и щелкните ссылку **Управление профилем Visual Studio**.
+1. Выберите **Файл** > **Параметры учетной записи** и щелкните ссылку **Управление профилем Visual Studio**.
 
 1. В окне браузера щелкните **Изменить профиль** и измените нужные параметры.
 
@@ -61,9 +61,9 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-Если у вас возникли проблемы при входе, ознакомьтесь со справкой на [странице поддержки учетной записи](https://www.visualstudio.com/subscriptions/support/).
+Если у вас возникли проблемы при входе, ознакомьтесь со справкой на странице [поддержки учетных записей](https://www.visualstudio.com/subscriptions/support/).
 
 ## <a name="see-also"></a>См. также
 
-[Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)
+* [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)

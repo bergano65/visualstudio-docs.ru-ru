@@ -1,6 +1,7 @@
 ---
-title: Создание теста | Инструмент тестирования для разработчиков Microsoft IntelliTest | Документы Майкрософт
+title: Создание теста | Инструмент тестирования для разработчиков Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>Создание теста
 
-При традиционном модульном тестировании для создания теста требуется несколько компонентов:
+В традиционный модульный тест состоит из несколько компонентов:
+
+* [Последовательность вызовов методов](test-generation.md#test-generators).
+* Аргументы, с помощью которых эти методы вызываются. Эти аргументы являются [входными данными теста](input-generation.md).
+* Проверка правильности поведения тестируемого приложения с помощью задания набора [утверждений](#assumptions-and-assertions).
+
+Ниже приведен пример структуры теста:
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-Тест включает в себя различные аспекты:
-
-* Он задает [последовательность вызовов методов](test-generation.md#test-generators).
-* Он задает аргументы, с помощью которых эти методы вызываются. Эти аргументы являются [входными данными теста](input-generation.md).
-* Он проверяет правильность поведения тестируемого приложения, задавая набор [утверждений](#assumptions-and-assertions).
 
 Часто IntelliTest может автоматически определить значения соответствующих аргументов для более общих [параметризованных модульных тестов](#parameterized-unit-testing), предоставляющих последовательность вызовов методов и утверждений.
 
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Хотите оставить отзыв?
 
-Публикуйте свои идеи и запросы функций на сайте **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Публикуйте свои идеи и запросы функций на сайте [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

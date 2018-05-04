@@ -1,9 +1,8 @@
 ---
-title: Управление ресурсами приложения (.NET) | Документы Майкрософт
-ms.custom: ''
+title: Управление ресурсами приложения (.NET)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -20,19 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5515796d34b12e95fe6c9a545e7a81e98a8f6a9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe35a9a0e9b1e4b2e04e978f2b32cb38439b76cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-application-resources-net"></a>Управление ресурсами приложения (.NET)
+# <a name="manage-application-resources-net"></a>Управление ресурсами приложения (.NET)
 
 Файлы ресурсов — это файлы, которые являются частью приложения, но не компилируются, например файлы значков или звуковые файлы. Так как они не включаются в процесс компиляции, их можно изменять, не компилируя повторно двоичные файлы. Если вы планируете локализовать приложение, файлы ресурсов следует использовать для всех строк и других ресурсов, которые потребуется изменить при локализации.
 
-Более подробную информацию о ресурсах в классических приложениях .NET см. в разделе [Resources in Desktop Apps](/dotnet/framework/resources/index).
+Более подробную информацию о ресурсах в классических приложениях .NET см. в разделе [Ресурсы в классических приложениях](/dotnet/framework/resources/index).
 
-## <a name="working-with-resources"></a>Работа с ресурсами
+## <a name="work-with-resources"></a>Работа с ресурсами
 
 В проекте управляемого кода откройте окно свойств проекта. Для этого вы можете:
 
@@ -40,15 +39,15 @@ ms.lasthandoff: 04/16/2018
 - ввести фразу "свойства проекта" в окне **Быстрый запуск**;
 - нажать клавиши **ALT**+**ВВОД** в окне **обозревателя решений**.
 
-Перейдите на вкладку **Ресурсы** . Вы можете добавить файл RESX, если проект его еще не содержит, добавить и удалить различные типы ресурсов, а также изменить существующие ресурсы.
+Перейдите на вкладку **Ресурсы** . Вы можете добавить файл *RESX*, если проект его еще не содержит, добавить и удалить различные типы ресурсов, а также изменить существующие ресурсы.
 
 ## <a name="resources-in-other-project-types"></a>Ресурсы в других типах проектов
 
 Управление ресурсами в проектах .NET осуществляется не так, как в проектах других типов. Дополнительные сведения о ресурсах:
 
 - приложения универсальной платформы Windows (UWP) — [Ресурсы приложения и система управления ресурсами](/windows/uwp/app-resources/);
-- проекты C++ — [Работа с файлами ресурсов](/cpp/windows/working-with-resource-files) и [Практическое руководство. Создание ресурса](/cpp/windows/how-to-create-a-resource).
+- проекты C++ — [Работа с файлами ресурсов](/cpp/windows/working-with-resource-files) и [Практическое руководство. Создание ресурса](/cpp/windows/how-to-create-a-resource).
 
 ## <a name="see-also"></a>См. также
 
-[Ресурсы в приложениях для настольных систем (.NET Framework)](/dotnet/framework/resources/index)
+- [Ресурсы в классических приложениях (.NET Framework)](/dotnet/framework/resources/index)

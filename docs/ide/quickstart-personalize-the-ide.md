@@ -1,26 +1,25 @@
 ---
-title: Настройка шрифтов и цветовых тем в Visual Studio | Документы Microsoft
-ms.custom: ''
+title: Настройка шрифтов и цветовых тем в Visual Studio
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7024213ca383ee5934df1d413501065b383f7981
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 
-В этом кратком (на 5–10 минут) руководстве мы настроим для Visual Studio цветовую тему и два цвета текста в текстовом редакторе.
+В этом кратком (на 5–10 минут) руководстве мы настроим для Visual Studio цветовую тему и два цвета текста в **текстовом редакторе**.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали это.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
 
 ## <a name="set-the-color-theme"></a>Настройка цветовой темы
 
@@ -35,13 +34,13 @@ ms.lasthandoff: 04/16/2018
    ![VS с темой "Темная"](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Вы можете выбрать дополнительные предопределенные темы, установив **редактор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Когда вы установите это средство, в раскрывающемся списке с цветовыми темами появятся дополнительные темы.
+> Вы можете выбрать дополнительные предопределенные темы, установив **редактор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Когда вы установите это средство, в раскрывающемся списке **Цветовая тема** появятся дополнительные темы.
 
 ## <a name="change-text-color"></a>Изменение цвета текста
 
 Теперь настроим несколько цветов текста для редактора. Сначала откроем XML-файл, чтобы просмотреть цвета по умолчанию.
 
-1. В строке меню выберите **Файл** > **Создать** > **Файл...**.
+1. В строке меню выберите **Файл** > **Создать** > **Файл**.
 
 1. В диалоговом окне **Новый файл** в разделе **Общие** выберите **XML-файл** и нажмите кнопку **Открыть**.
 
@@ -73,7 +72,7 @@ ms.lasthandoff: 04/16/2018
    </Catalog>
    ```
 
-   Обратите внимание, что цвет номеров строк бирюзовый, а атрибутов XML — голубой. Давайте изменим цвет этих элементов.
+   Обратите внимание, что цвет номеров строк бирюзовый, а атрибутов XML — голубой. Давайте изменим цвет этих элементов.
 
    ![Цвета шрифта в файле XML](media/quickstart-personalize-xml-file.png)
 

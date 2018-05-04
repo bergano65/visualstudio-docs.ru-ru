@@ -1,6 +1,7 @@
 ---
-title: Создание проекта модульного теста в Visual Studio | Документы Майкрософт
+title: Создание проекта модульного теста в Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,18 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 998b936f33047d6132889a949a6ecd56f5a40911
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1add4084c856db5a31cf74d75ba848e50e30d3c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 
 Модульные тесты зачастую отражают структуру тестируемого кода. Например, отдельный проект модульного теста может быть создан для каждого проекта в продукте. Тестовый проект может находиться в том же решении, что и рабочий код, или в отдельном решении. В решении может быть несколько проектов модульных тестов.
 
 > [!NOTE]
->  Расположение модульных тестов для машинного кода и структура тестового проекта могут отличаться от структуры, описанной в этом разделе. Дополнительные сведения см. в разделе [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md).
+> Расположение модульных тестов для машинного кода и структура тестового проекта могут отличаться от структуры, описанной в этом разделе. Дополнительные сведения см. в разделе [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="to-create-a-unit-test-project"></a>Создание проекта модульного теста
 

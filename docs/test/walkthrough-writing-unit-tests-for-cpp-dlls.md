@@ -1,6 +1,7 @@
 ---
-title: Практическое руководство. Написание модульных тестов для библиотек DLL на C++ | Документы Майкрософт
+title: Практическое руководство. Написание модульных тестов для библиотек DLL на C++
 ms.date: 11/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e4ff7d931b614d6d3c243539efc42bf051878fb0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Практическое руководство. Написание модульных тестов для библиотек DLL на C++
 
@@ -293,7 +294,8 @@ ms.lasthandoff: 04/16/2018
      ![Все тесты пройдены](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
 
 > [!TIP]
->  Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
+> Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
+
 
 ##  <a name="refactor"></a> Рефакторинг кода без изменения тестов
 

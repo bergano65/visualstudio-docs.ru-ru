@@ -1,9 +1,9 @@
 ---
-title: Параметры шаблонов проектов и элементов в Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Параметры шаблонов проектов и элементов в Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
-С помощью параметров в шаблонах вы можете заменить значения в ключевых частях шаблона, например имена классов и пространства имен, при создании экземпляра шаблона. Эти параметры заменяются с помощью мастера шаблонов, запускающегося в фоновом режиме, когда пользователь нажимает кнопку **ОК** или **Добавить** в диалоговом окне **Новый проект** или **Добавление нового элемента**.
+Вы можете заменить значения в шаблоне при создании его экземпляра. Чтобы настроить эту функцию, используйте *параметры шаблона*. Они позволяют заменить такие значения, как имена классов и пространства имен в шаблоне. Эти параметры заменяет мастер шаблонов, запускающийся в фоновом режиме, когда пользователь добавляет новый элемент или проект.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 
 1. Задайте атрибуту `ReplaceParameters` элемента `ProjectItem` значение `true`.
 
-1. В файле кода для элемента проекта укажите соответствующие параметры. Например, следующий параметр указывает, что безопасное имя проекта следует использовать для пространства имен в файле:
+1. В файле кода для элемента проекта укажите соответствующие параметры. Например, следующий параметр указывает, что безопасное имя проекта используется для пространства имен в файле:
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>См. также
 
-[Настройка шаблонов](../ide/customizing-project-and-item-templates.md)  
-[Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
+- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)

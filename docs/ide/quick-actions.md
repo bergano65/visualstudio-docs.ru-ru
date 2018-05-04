@@ -1,6 +1,7 @@
 ---
-title: Быстрые действия | Документы Майкрософт
+title: Быстрые действия
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -11,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 941980eff8fc2474df9555b326278abdb9b26dac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quick-actions"></a>Быстрые действия
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-see-potential-fixes"></a>Просмотр возможных исправлений
 
-Щелкните стрелку вниз или ссылку "Показать возможные исправления", чтобы увидеть список быстрых действий, которые может предпринять лампочка.
+Щелкните стрелку вниз или ссылку **Показать возможные исправления**, чтобы увидеть список быстрых действий, которые может предпринять лампочка.
 
 ![Расширенная лампочка](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

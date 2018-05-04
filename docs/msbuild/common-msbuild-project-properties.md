@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в TARGETS-файлы, предоставляемые MSBuild.  
@@ -69,9 +69,10 @@ ms.lasthandoff: 04/19/2018
 |FileAlignment|Задает выравнивание размеров выходного файла в байтах. Допустимые значения: 512, 1024, 2048, 4096, 8192. Это свойство эквивалентно переключателю `/filealignment` компилятора.|  
 |FrameworkPathOverride|Задает расположение библиотек mscorlib.dll и microsoft.visualbasic.dll. Этот параметр эквивалентен переключателю `/sdkpath` компилятора vbc.exe.|  
 |GenerateDocumentation|(Только для Visual Basic) Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки.|
-|IntermediateOutputPath|Полный путь к промежуточной выходной папке, производный от `BaseIntermediateOutputPath`, если путь не указан. Например, \obj\debug\\. Если эти свойство переопределено, задание `BaseIntermediateOutputPath` не имеет силы.|  
+|IntermediateOutputPath|Полный путь к промежуточной выходной папке, производный от `BaseIntermediateOutputPath`, если путь не указан. Например, \obj\debug\\.|  
 |KeyContainerName|Имя контейнера ключа строгого имени.|  
 |KeyOriginatorFile|Имя файла ключа строгого имени.|  
+|MSBuildProjectExtensionsPath|Указывает путь к расположению расширений проекта. По умолчанию принимает то же значение, что и `BaseIntermediateOutputPath`.|  
 |ModuleAssemblyName|Имя сборки, в которую должен быть включен скомпилированный модуль. Это свойство эквивалентно переключателю `/moduleassemblyname` компилятора.|  
 |NoLogo|Логическое значение, указывающее, требуется ли отключить эмблему компилятора. Это свойство эквивалентно переключателю `/nologo` компилятора.|  
 |NoStdLib|Логическое значение, указывающее, следует ли избегать ссылок на стандартную библиотеку (mscorlib.dll). Значение по умолчанию — `false`.|  

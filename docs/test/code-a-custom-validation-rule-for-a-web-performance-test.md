@@ -1,5 +1,5 @@
 ---
-title: Кодирование пользовательского правила проверки для веб-теста производительности в Visual Studio | Документы Майкрософт
+title: Кодирование пользовательского правила проверки для веб-теста производительности в Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,13 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Кодирование пользовательского правила проверки для веб-теста производительности
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
 В следующем коде показана реализация пользовательского правила. Это правило проверки имитирует поведение предопределенного правила проверки "обязательный тег". Этот пример используется в качестве основы для создания пользовательских правил проверки.
 
 > [!WARNING]
->  Публичные свойства в коде для настраиваемого проверяющего элемента управления не могут иметь нулевые значения.
+> Публичные свойства в коде для настраиваемого проверяющего элемента управления не могут иметь нулевые значения.
 
 ```csharp
 using System;

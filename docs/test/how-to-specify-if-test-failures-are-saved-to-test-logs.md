@@ -1,5 +1,5 @@
 ---
-title: Запись сбоев тестов в журнал нагрузочного тестирования в Visual Studio | Документы Майкрософт
+title: Запись сбоев тестов в журнал нагрузочного тестирования в Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,19 +9,21 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17b8792a98473658ae6ac47cd418028ce2cfcf6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e184fbab591698404bde4593f4ad7b61fa1815ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Практическое руководство. Включение и отключение записи сбоев тестов в журнал тестирования с помощью редактора тестовой нагрузки
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства нагрузочного теста в соответствии с требованиями и целями тестирования. См. статью [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md). Вы можете указать, требуется ли сохранять журнал тестирования в случае сбоя теста в нагрузочном тесте, изменив значение свойства **Сохранить журнал об ошибках тестирования**.
 
 > [!NOTE]
->  Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
+> Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
+
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Задание в сценарии, требуется ли сохранять журнал тестирования в случае сбоя теста
 

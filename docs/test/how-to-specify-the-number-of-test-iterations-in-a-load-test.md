@@ -1,5 +1,5 @@
 ---
-title: Указание числа итераций теста в параметрах запуска нагрузочного теста в Visual Studio | Документы Майкрософт
+title: Указание числа итераций теста в параметрах запуска нагрузочного теста в Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 06e99eafc6089853b90dd2196fb9152e2639b32b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec11561a3ebe084517d1a30266f9caa6491544a7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Практическое руководство. Указание числа повторов теста в параметрах выполнения нагрузочного теста
 
@@ -23,7 +24,8 @@ ms.lasthandoff: 04/16/2018
 Используя **редактор тестовой нагрузки**, можно изменить в окне "Свойства" значение свойства **Итерации теста** для параметров запуска. Свойство **Итерации теста** определяет число итераций веб-теста производительности или модульного теста во всех сценариях нагрузочного теста, запускаемого из **редактора тестовой нагрузки**.
 
 > [!NOTE]
->  Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
+> Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
+
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Указание числа повторов теста в параметрах запуска
 

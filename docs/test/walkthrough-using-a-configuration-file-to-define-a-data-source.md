@@ -1,6 +1,7 @@
 ---
-title: Пошаговое руководство. Использование файла конфигурации для определения источника данных в Visual Studio | Документы Майкрософт
+title: Пошаговое руководство. Использование файла конфигурации для определения источника данных в Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 
@@ -71,7 +72,8 @@ ms.lasthandoff: 04/16/2018
 ```
 
 > [!NOTE]
->  Имя сборки должно соответствовать сборке .NET Framework Microsoft Visual Studio, которую вы используете. При использовании .NET Framework 3.5 Visual Studio задайте в качестве значения версии 9.0.0.0. Если вы используете .NET Framework 2.0 Visual Studio, задайте версию 8.0.0.0.
+> Имя сборки должно соответствовать сборке .NET Framework Microsoft Visual Studio, которую вы используете. При использовании .NET Framework 3.5 Visual Studio задайте в качестве значения версии 9.0.0.0. Если вы используете .NET Framework 2.0 Visual Studio, задайте версию 8.0.0.0.
+
 
 ## <a name="define-connection-strings"></a>Определение строк подключения
  Строки подключения определяют сведения, относящиеся к конкретному поставщику, для доступа к источникам данных. Строки подключения, определенные в файлах конфигурации, предоставляют сведения о поставщике данных для повторного использования в приложении. В этом разделе создайте две строки подключения, которые будут использоваться источниками данных, определенными в настраиваемом разделе конфигурации.

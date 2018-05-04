@@ -1,6 +1,7 @@
 ---
-title: Модульные тесты для универсальных методов в Visual Studio | Документы Майкрософт
+title: Модульные тесты для универсальных методов в Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Модульные тесты для универсальных методов
 
@@ -115,7 +116,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  При каждом выполнении теста SizeOfLinkedListTest его метод TestHelper вызывается два раза. Для прохождения теста оператор Assert каждый раз должен иметь значение true. В случае сбоя теста может быть непонятно, что вызвало сбой: вызов, указывающий `<int>`, или вызов, указывающий `<char>`. Чтобы найти ответ, можно проверить стек вызовов или задать точки останова в методе теста, а затем выполнить отладку во время выполнения теста. Дополнительные сведения см. в статье [How to: Debug while Running a Test in an ASP.NET Solution](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b) (Практическое руководство. Отладка во время выполнения теста в решении ASP.NET).
+> При каждом выполнении теста SizeOfLinkedListTest его метод TestHelper вызывается два раза. Для прохождения теста оператор Assert каждый раз должен иметь значение true. В случае сбоя теста может быть непонятно, что вызвало сбой: вызов, указывающий `<int>`, или вызов, указывающий `<char>`. Чтобы найти ответ, можно проверить стек вызовов или задать точки останова в методе теста, а затем выполнить отладку во время выполнения теста. Дополнительные сведения см. в статье [How to: Debug while Running a Test in an ASP.NET Solution](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b) (Практическое руководство. Отладка во время выполнения теста в решении ASP.NET).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Пример 2. Использование ограничения типа
  В этом примере показан модульный тест для универсального метода, использующий ограничение типа, которое не удовлетворяется. В первом разделе показан код из проекта тестируемого кода. Ограничение типа выделено.

@@ -1,6 +1,7 @@
 ---
-title: Профилирование производительности приложений в Visual Studio | Документы Майкрософт
-ms.custom: H1Hack27Feb2017
+title: Измерение использования ЦП в приложениях
+description: Анализ проблем с производительностью ЦП в приложении с помощью средств диагностики, встроенных в отладчик.
+ms.custom: mvc
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4415956aaa819881584b4298285ff878c1d7ccf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e2e3aee55728f312aaa1ff7d8c44a6bbd6c04bfd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Профилирование производительности приложений в Visual Studio
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.

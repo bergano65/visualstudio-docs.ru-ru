@@ -1,9 +1,9 @@
 ---
-title: Начало работы с C# и ASP.NET Core в Visual Studio | Документы Майкрософт
+title: Начало работы с C# и ASP.NET Core в Visual Studio
 ms.custom: ''
 ms.date: 12/11/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b3760c922e540837d0e9452efc8d44762eeeb3af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80ca583b3cd773121cda7b0311fcf551472cb2d4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Начало работы с C# и ASP.NET в Visual Studio
 В этом учебнике по разработке на языке C# с помощью ASP.NET Core в Visual Studio вы создадите веб-приложение ASP.NET Core на C#, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение.

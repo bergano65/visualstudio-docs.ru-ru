@@ -1,9 +1,8 @@
 ---
-title: JavaScript IntelliSense | Документы Майкрософт
-ms.custom: ''
+title: IntelliSense для JavaScript
 ms.date: 06/28/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
@@ -27,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 04/16/2018
 
 Дополнительные сведения об общих функциональных возможностях IntelliSense в Visual Studio см. в разделе [Использование технологии IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности языковой службы JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности JavaScript Language Service в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Начиная с [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense отображает гораздо больше информации в списках членов и параметров.
 Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код.
@@ -53,7 +52,7 @@ ms.lasthandoff: 04/16/2018
 - [IntelliSense на основе файлов объявления TypeScript](#TsDeclFiles)
 - [Автоматическое получение определений типов](#Auto)
 
-### <a name="TypeInference"></a>IntelliSense на основе определения типа
+### <a name="intellisense-based-on-type-inference"></a>IntelliSense на основе определения типа
 
 В большинстве случаев явные сведения о типах в JavaScript недоступны. Но тип обычно довольно легко вывести из контекста кода.
 Этот процесс называется определением типа.
@@ -70,7 +69,7 @@ nextItem; // now we know nextItem is a string
 
 Для функции тип возвращаемого значения можно вывести из операторов return.
 
-Для параметров функций вывод сейчас отсутствует, однако это можно обойти с помощью файлов `.d.ts` TypeScript или JSDoc (см. в следующих разделах).
+Для параметров функций вывод сейчас отсутствует, однако это можно обойти с помощью файлов *.d.ts* TypeScript или JSDoc (см. в следующих разделах).
 
 Кроме того, есть специальный вывод для следующих элементов:
 
@@ -89,7 +88,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a> IntelliSense на основе JSDoc
+### <a name="intellisense-based-on-jsdoc"></a>IntelliSense на основе JSDoc
 
 Когда определение типа не предоставляет нужные сведения о типе (или требуется вести документацию), их можно предоставить явно с помощью заметок JSDoc.  Например, чтобы назначить определенный тип частично объявленному объекту, можно использовать тег `@type`, как показано ниже:
 
@@ -113,29 +112,29 @@ function Foo(param1) {
 }
 ```
 
-Сведения о поддерживаемых сейчас заметках JsDoc см. в [этом документе](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript).
+Сведения о поддерживаемых сейчас заметках JsDoc см. в разделе [Поддержка JSDoc в JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript).
 
-### <a name="TsDeclFiles"></a> IntelliSense на основе файлов объявления TypeScript
+### <a name="intellisense-based-on-typescript-declaration-files"></a>IntelliSense на основе файлов объявления TypeScript
 
-Так как JavaScript и TypeScript теперь основаны одной языковой службе, они способны полнее взаимодействовать друг с другом. Например, JavaScript IntelliSense можно предоставить для значений, объявленных в файле `.d.ts` ([подробнее](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), а типы, такие как интерфейсы и классы, объявленные в TypeScript, доступны для использования в качестве типов в комментариях JsDoc. 
+Так как JavaScript и TypeScript теперь основаны одной языковой службе, они способны полнее взаимодействовать друг с другом. Например, JavaScript IntelliSense можно предоставить для значений, объявленных в файле *.d.ts* (см. [документацию по TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), а типы, такие как интерфейсы и классы, объявленные в TypeScript, доступны для использования в качестве типов в комментариях JsDoc.
 
-Ниже показан простой пример файла определения TypeScript, предоставляющий подобные сведения о типе (через интерфейс) файлу JavaScript в том же проекте (с помощью тега JsDoc).
+Ниже показан простой пример файла определения TypeScript, предоставляющий подробные сведения о типе (через интерфейс) файлу JavaScript в том же проекте (с помощью тега `JsDoc`).
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a> Автоматическое получение определений типов
+### <a name="automatic-acquisition-of-type-definitions"></a>Автоматическое получение определений типов
 
-В среде TypeScript API наиболее популярных библиотек JavaScript описываются файлами `.d.ts`, а наиболее распространенным репозиторием для таких определений является [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
+В среде TypeScript API наиболее популярных библиотек JavaScript описываются файлами *.d.ts*, а наиболее распространенным репозиторием для таких определений является [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-По умолчанию языковая служба языка сальса будет пытаться определить используемые библиотеки JavaScript, а затем автоматически скачать и указать в ссылке соответствующий файл `.d.ts`, описывающий эту библиотеку, чтобы расширить возможности IntelliSense. Файлы скачиваются в кэш, расположенный в пользовательской папке в `%LOCALAPPDATA%\Microsoft\TypeScript`.
+По умолчанию языковая служба языка сальса будет пытаться определить используемые библиотеки JavaScript, а затем автоматически скачать и указать в ссылке соответствующий файл *.d.ts*, описывающий эту библиотеку, чтобы расширить возможности IntelliSense. Файлы скачиваются в кэш, расположенный в пользовательской папке в *%LOCALAPPDATA%\Microsoft\TypeScript*.
 
 > [!NOTE]
-> Эта функция **отключена** по умолчанию при использовании файла конфигурации `tsconfig.json`, но ее можно включить, воспользовавшись описанием ниже.
+> Эта функция **отключена** по умолчанию при использовании файла конфигурации *tsconfig.json*, но ее можно включить, воспользовавшись описанием ниже.
 
-Сейчас автоматическое определение работает для зависимостей, скачанных из npm (путем чтения файла `package.json`), Bower (путем чтения файла `bower.json`) и свободных файлов в проекте, которые примерно соответствуют списку из 400 наиболее популярных библиотек JavaScript. Например, если у вас в проекте есть `jquery-1.10.min.js`, для расширения возможностей редактирования будет получен и загружен файл `jquery.d.ts`. Этот файл `.d.ts` не оказывает влияния на проект.
+Сейчас автоматическое определение работает для зависимостей, скачанных из npm (путем чтения файла *package.json*), Bower (путем чтения файла *bower.json*) и свободных файлов в проекте, которые примерно соответствуют списку из 400 наиболее популярных библиотек JavaScript. Например, если у вас в проекте есть *jquery-1.10.min.js*, для расширения возможностей редактирования будет получен и загружен файл *jquery.d.ts*. Этот файл *.d.ts* не оказывает влияния на проект.
 
 Если вы не хотите использовать автоматическое получение, отключите его, добавив указанный ниже файл конфигурации. Вы по-прежнему можете вручную поместить файлы определений для использования непосредственно в проекте.
 
 ## <a name="see-also"></a>См. также
 
-[Использование технологии IntelliSense](../ide/using-intellisense.md)
+- [Использование технологии IntelliSense](../ide/using-intellisense.md)
