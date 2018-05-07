@@ -9,6 +9,7 @@
 ## [Сведения об отладке с помощью Visual Studio](getting-started-with-the-debugger.md)
 ## [Запуск кода Python в отладчике…](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Отладка живого приложения Azure](debug-live-azure-applications.md)
+## [Отладка управляемого и машинного кода](how-to-debug-managed-and-native-code.md)
 ## [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Практические руководства
 ## [Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md)

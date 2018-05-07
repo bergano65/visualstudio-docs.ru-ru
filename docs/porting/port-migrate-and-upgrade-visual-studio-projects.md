@@ -2,8 +2,13 @@
 title: Перенос, миграция и обновление проектов
 description: Ссылка на сведения о поддержке в Visual Studio 2017 проектов, созданных в предыдущих версиях Visual Studio, и том, как Visual Studio определяет потребность в миграции проекта.
 ms.date: 03/14/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+author: kraigb
+ms.author: kraigb
+manager: douge
+ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -14,16 +19,11 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-author: kraigb
-ms.author: kraigb
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 2e7112794d0b7104c10b7130a96c76d73de46b52
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017
 
