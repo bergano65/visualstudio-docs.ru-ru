@@ -1,9 +1,8 @@
 ---
-title: Переопределение диспетчера содержимого справки | Документы Майкрософт
-ms.custom: ''
+title: Переопределение диспетчера содержимого справки
 ms.date: 11/01/2017
-ms.technology:
-- vs-help-viewer
+ms.prod: visual-studio-dev15
+ms.technology: vs-help-viewer
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -11,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="help-content-manager-overrides"></a>Переопределение диспетчера содержимого справки
+
 Вы можете изменить поведение по умолчанию окна справки и связанных со справкой возможностей в интегрированной среде разработки Visual Studio. Некоторые параметры настраиваются путем создания файла [PKGDEF](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/), с помощью которого задаются различные параметры реестра. Другие указываются непосредственно в реестре.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Управление поведением окна справки с помощью файла PKGDEF
@@ -31,8 +31,9 @@ ms.lasthandoff: 04/16/2018
 4. Выполните команду `devenv /updateconfiguration` в командной строке разработчика.
 
 ### <a name="registry-key-values"></a>Параметры реестра
-|Параметр реестра|Тип|Данные|Описание:|  
-|------------------|----|----|-----------|  
+
+|Значение раздела реестра|Тип|Данные|Описание:|
+|------------------|----|----|-----------|
 |NewContentAndUpdateService|string|\<URL-адрес http для конечной точки службы\>|Указание уникальной конечной точки службы|
 |UseOnlineHelp|dword|`0` для указания справки в Интернете; `1` для указания сетевой справки|Указание справки в Интернете или автономной справки в качестве справки по умолчанию|
 |OnlineBaseUrl|string|\<URL-адрес http для конечной точки службы\>|Указание уникальной конечной точки F1|
@@ -41,6 +42,7 @@ ms.lasthandoff: 04/16/2018
 |DisableFirstRunHelpSelection|dword|`0`, чтобы включить возможности справки, настраиваемые при первом запуске Visual Studio, или `1`, чтобы отключить их|Отключение установки содержимого при первом запуске Visual Studio|
 
 ### <a name="example-pkgdef-file-contents"></a>Пример содержимого файла PKGDEF
+
 ```
 [$RootKey$\Help]
 “NewContentAndUpdateService”=”https://some.service.endpoint”
@@ -51,16 +53,18 @@ ms.lasthandoff: 04/16/2018
 “DisableFirstRunHelpSelection”=dword:00000001
 ```
 
-## <a name="using-registry-editor-to-change-help-viewer-behavior"></a>Использование редактора реестра для изменения поведения окна справки
-Путем задания параметров реестра в редакторе реестра можно управлять двумя вариантами поведения.  
-  
-|Задача|Раздел реестра .|Значение|Данные|  
+## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Использование редактора реестра для изменения поведения окна справки
+
+Путем задания параметров реестра в редакторе реестра можно управлять двумя вариантами поведения.
+
+|Задача|Раздел реестра .|Значение|Данные|
 |----------|-----|------|----|
 |Переопределение приоритета задания BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (на 64-разрядном компьютере)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** или **low**|
 |Указание на хранилище локального содержимого в сетевой папке с общим доступом|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
-  
+
 ## <a name="see-also"></a>См. также
-[Руководство по окну справки для администраторов](../ide/help-viewer-administrator-guide.md)  
-[Аргументы командной строки для диспетчера содержимого справки](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Окно справки (Майкрософт)](../ide/microsoft-help-viewer.md)  
-[Изменение изолированной оболочки с помощью файла .Pkgdef](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+
+- [Руководство по окну справки для администраторов](../ide/help-viewer-administrator-guide.md)
+- [Аргументы командной строки для диспетчера содержимого справки](../ide/command-line-arguments-for-the-help-content-manager.md)
+- [Окно справки (Майкрософт)](../ide/microsoft-help-viewer.md)
+- [Изменение изолированной оболочки с помощью файла .Pkgdef](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

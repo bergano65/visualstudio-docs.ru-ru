@@ -1,6 +1,6 @@
 ---
-title: Работа с Python. Шаг 2 — создание и выполнение кода
-description: Шаг 2 базового руководства по работе с Python в среде Visual Studio описывает, как изменить и запустить простую программу Hello World, а также более сложный код для демонстрации функций редактирования IntelliSense в Visual Studio.
+title: Руководство по работе с Python. Шаг 2 — создание и выполнение кода
+description: Шаг 2 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь описано редактирование кода и запуск проекта.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 607903093735c1ab49886afcf292121e0b7bafb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Шаг 2. Написание и выполнение кода
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 04/19/2018
 
 1. Снова запустите программу, нажав клавиши CTRL+F5 или выбрав пункт меню **Отладка > Запуск без отладки**. По завершении закройте окно вывода.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-step"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)

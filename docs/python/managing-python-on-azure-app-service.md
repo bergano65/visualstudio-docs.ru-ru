@@ -1,5 +1,5 @@
 ---
-title: Установка интерпретаторов и библиотек Python в Службе приложений Azure
+title: Настройка Python в Службе приложений Azure
 description: Установка интерпретатора и библиотек Python в Службе приложений Azure и настройка веб-приложений, чтобы в них содержалась правильная ссылка на интерпретатор.
 ms.date: 09/13/2017
 ms.prod: visual-studio-dev15
@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cd3be2ee5d62c687fab1c822e3469d9523624047
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-on-azure-app-service"></a>Работа с Python в службе приложений Azure
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Работа с Python в Службе приложений Azure
 
 [Служба приложений Azure](https://azure.microsoft.com/services/app-service/) — это предложение вида "платформа как услуга" для веб-приложений, представлены ли они сайтами, к которым обращаются через браузер, REST API, используемыми вашими собственными клиентами, либо обработкой с активацией по событиям. Служба приложений полностью поддерживает использование Python для реализации приложений.
 

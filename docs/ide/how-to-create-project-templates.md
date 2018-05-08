@@ -1,7 +1,7 @@
 ---
-title: Создание шаблонов проектов для Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Создание шаблонов проектов для Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a18b756b38a810915ea49e9f3208e9349afda7ef
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8e35833f9f8facf0639a87243d46794408167914
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-project-templates"></a>Практическое руководство. Создание шаблонов проектов
 
@@ -51,6 +51,6 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)  
-[Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)  
-[Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

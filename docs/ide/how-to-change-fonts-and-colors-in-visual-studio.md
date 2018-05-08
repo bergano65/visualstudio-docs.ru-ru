@@ -1,9 +1,8 @@
 ---
-title: Практическое руководство. Изменение шрифтов и цветов в Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Изменение шрифтов и цветов в Visual Studio
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
@@ -14,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd1ce6aa91054ffee2f82386c016acc0fe5ba7c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в Visual Studio
 
@@ -69,6 +68,5 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)  
-
-[Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

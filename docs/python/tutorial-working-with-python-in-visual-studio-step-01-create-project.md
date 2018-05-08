@@ -1,6 +1,6 @@
 ---
-title: Работа с Python. Шаг 1 — создание проекта
-description: Шаг 1 (структура) базового руководства по работе с Python в среде Visual Studio, описывает предварительные условия и создание проекта Python.
+title: Руководство по работе с Python. Шаг 1 — создание проекта
+description: Общие сведения и шаг 1 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь приведены предварительные требования и описано создание проекта Python.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Работа с Python в Visual Studio
 
@@ -31,9 +31,7 @@ Visual Studio обеспечивает первоклассную поддерж
 - [Шаг 5. Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Шаг 6. Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Предварительные требования
-
-- Visual Studio 2017 с установленной рабочей нагрузкой Python. Инструкции см. в [шаге 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Шаг 1. Создание проекта Python
 
@@ -69,7 +67,7 @@ Visual Studio обеспечивает первоклассную поддерж
 
     Щелкните правой кнопкой мыши любой узел или элемент в обозревателе решений, чтобы открыть меню с применимыми командами. Например, с помощью команды **Переименовать** можно изменить имя любого узла или элемента, включая проект и решение.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-step"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Написание и выполнение кода](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

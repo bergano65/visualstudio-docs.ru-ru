@@ -1,7 +1,7 @@
 ---
-title: Упорядочение шаблонов в Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Упорядочение шаблонов в Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +13,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 68ba015c1a1eb125f02e65c8a19c6f516e48f72a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
 
@@ -121,8 +121,8 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Настройка шаблонов](../ide/customizing-project-and-item-templates.md)  
-[Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)  
-[Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)  
-[Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)  
-[Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
+- [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
+- [Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
+- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)

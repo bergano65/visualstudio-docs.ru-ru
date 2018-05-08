@@ -1,19 +1,19 @@
 ---
-title: Устранение неполадок, связанных с загрузкой шаблона проекта и шаблона элемента Visual Studio | Документы Майкрософт
-ms.custom: ''
+title: Устранение неполадок, связанных с загрузкой шаблона проекта и шаблона элемента Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7e952f8eb445787a2a574ae3431ba6ad8728248
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bb6a10e92bf8f26ffbcb81796b3c5c8371600b5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Практическое руководство. Устранение неполадок, связанных с шаблонами
 
@@ -33,12 +33,12 @@ ms.lasthandoff: 04/19/2018
 
 1. Выберите файл *VSTEMPLATE* для шаблона и нажмите кнопку **Открыть**.
 
-1. Убедитесь в том, что XML-код в файле *VSTEMPLATE* соответствует схеме шаблона. Дополнительные сведения о схеме *VSTEMPLATE* см. в разделе [Справочник по схеме шаблонов](../extensibility/visual-studio-template-schema-reference.md).
+1. Убедитесь в том, что XML-код в файле *VSTEMPLATE* соответствует схеме шаблона. Дополнительные сведения о схеме *VSTEMPLATE* см. в [справочнике по схеме шаблонов](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
     > Чтобы обеспечить поддержку IntelliSense во время работы с файлом *VSTEMPLATE*, добавьте атрибут `xmlns` в элемент `VSTemplate` и присвойте ему значение http://schemas.microsoft.com/developer/vstemplate/2005.
 
-1. Сохраните *VSTEMPLATE*-файл и закройте его.
+1. Сохраните файл *VSTEMPLATE* и закройте его.
 
 1. Выберите включенные в шаблон файлы, щелкните правой кнопкой мыши и выберите пункты **Отправить** > **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в *ZIP*-файл.
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Устранение неполадок обнаружения шаблонов (расширяемость)](../extensibility/troubleshooting-template-discovery.md)  
-[Настройка шаблонов](../ide/customizing-project-and-item-templates.md)  
-[Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)  
-[Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)
+- [Устранение неполадок обнаружения шаблонов (расширяемость)](../extensibility/troubleshooting-template-discovery.md)
+- [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
+- [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+- [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)

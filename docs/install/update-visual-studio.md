@@ -1,7 +1,7 @@
 ---
 title: Обновление Visual Studio 2017
 description: Пошаговые инструкции по обновлению Visual Studio до последней версии.
-ms.date: 03/06/2018
+ms.date: 04/23/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a524fa630fbe9ea8e1cf4474cab2b7180fe582a8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
 
@@ -53,6 +53,9 @@ ms.lasthandoff: 04/20/2018
 
      Обновление продолжается. Когда обновление завершится, Visual Studio перезапустится.
 
+     > [!NOTE]
+     > Если вы запускаете Visual Studio с правами администратора, вручную перезапустите его после обновления.    
+
 ### <a name="use-the-ide"></a>Использование интегрированной среды разработки
 
 Можно проверить наличие обновлений и установить из в строке меню Visual Studio.
@@ -66,6 +69,9 @@ ms.lasthandoff: 04/20/2018
 3. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
 
    Как описано в предыдущем разделе, Visual Studio перезагружается после успешного завершения обновления.
+
+   > [!NOTE]
+   > Если вы запускаете Visual Studio с правами администратора, вручную перезапустите его после обновления.  
 
 ### <a name="use-the-visual-studio-installer"></a>Использование Visual Studio Installer
 

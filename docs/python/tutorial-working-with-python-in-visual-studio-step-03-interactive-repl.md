@@ -1,6 +1,6 @@
 ---
-title: Работа с Python. Шаг 3 — интерактивное окно REPL
-description: Шаг 3 базового руководства по работе с Python в среде Visual Studio описывает, как использовать интерактивное окно REPL Python.
+title: Руководство по работе с Python. Шаг 3 — интерактивное окно REPL
+description: Шаг 3 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь рассматривается интерактивное окно REPL в Python.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a0cbe766f1b31166185275989bfa0678ed50690
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 04/19/2018
 
 1. Итак, вы проработали небольшую часть кода с помощью среды REPL в интерактивном окне, а затем легко добавили этот код в исходный файл проекта. Если снова выполнить этот код с помощью клавиш CTRL+F5 (или команды **Отладка > Начать без отладки**), отобразятся именно те результаты, которые были нужны.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-step"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Выполнение кода в отладчике](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

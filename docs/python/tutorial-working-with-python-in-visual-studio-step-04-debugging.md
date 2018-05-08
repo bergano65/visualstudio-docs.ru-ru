@@ -1,6 +1,6 @@
 ---
-title: Работа с Python. Шаг 4 — отладка
-description: Шаг 4 учебника базового руководства по работе с Python в среде Visual Studio описывает, как выполнять код Python в отладчике.
+title: Руководство по работе с Python. Шаг 4 — отладка
+description: Шаг 4 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь объясняется, как выполнять код Python в отладчике.
 ms.date: 03/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3241adb4afdc18a8ca9a6d4c75f0ee8c80be7b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Шаг 4. Выполнение кода в отладчике
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
 > [!Tip]
 > В некоторых ситуациях, например, когда не удается запустить интерпретатор Python, окно выходных данных может автоматически закрываться сразу после появления, из-за чего увидеть сообщения об ошибках невозможно. Если такое происходит, в обозревателе решений щелкните проект правой кнопкой мыши, выберите пункт **Свойства**, откройте вкладку **Отладка**, а затем добавьте `-i` в поле **Аргументы интерпретатора**. Этот аргумент вынуждает интерпретатор перейти в интерактивный режим после завершения программы, оставив окно открытым, пока вы не нажмете клавиши CTRL+Z и ВВОД для выхода.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-step"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Установка пакетов в среде Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

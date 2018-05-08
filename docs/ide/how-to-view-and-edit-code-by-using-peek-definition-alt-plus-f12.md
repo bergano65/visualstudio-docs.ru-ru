@@ -1,7 +1,7 @@
 ---
-title: Отображение определений в Visual Studio | Документация Майкрософт
-ms.custom: ''
+title: Отображение определений в Visual Studio
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 04/19/2018
 
 1. Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Параметры**.
 
-   ![Настройка параметра для отображения определения щелчком мыши](../ide/media/editor_options_peek_view.png)  
+   ![Настройка параметра для отображения определения щелчком мыши](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Сочетания клавиш при работе с окном "Показать определение"
 
@@ -85,6 +85,6 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Навигация по коду](../ide/navigating-code.md)  
-[Функции "Перейти к определению" и "Показать определение"](../ide/go-to-and-peek-definition.md)  
-[Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)
+- [Навигация по коду](../ide/navigating-code.md)
+- [Функции "Перейти к определению" и "Показать определение"](../ide/go-to-and-peek-definition.md)
+- [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)

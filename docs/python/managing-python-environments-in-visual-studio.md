@@ -1,6 +1,6 @@
 ---
 title: Управление окружениями и интерпретаторами Python
-description: Использование окна окружений Python в Visual Studio для управления глобальными и виртуальными окружениями, настройка пользовательских окружений, установка интерпретаторов Python, установка пакетов, задание путей для поиска и управление окружениями для проектов Visual Studio.
+description: Окно окружений Python позволяет управлять глобальными и виртуальными окружениями, а также окружениями conda, установкой интерпретаторов и пакетов Python, а также назначением окружений для проектов Visual Studio.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 422503cf1e9332ce2b42674f7a6293e844401772
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>Управление средами Python в Visual Studio
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Как создавать окружения Python в Visual Studio и управлять ими
 
 *Окружение* Python представляет собой контекст, в котором выполняется код Python. Различают глобальные, виртуальные окружения и окружения Conda. Окружение состоит из интерпретатора, библиотеки (обычно это стандартная библиотека Python) и нескольких установленных пакетов. Вместе они определяют, какие языковые конструкции и синтаксис допустимы, какие возможности операционной системы доступны и какие пакеты можно использовать.
 

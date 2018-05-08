@@ -1,6 +1,6 @@
 ---
-title: Работа с Python. Шаг 5 — установка пакетов
-description: Шаг 5 базового руководства по работе с Python в среде Visual Studio описывает возможности Visual Studio для управления пакетами в среде Python.
+title: Руководство по работе с Python. Шаг 5 — установка пакетов
+description: Шаг 5 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь описаны функции Visual Studio для управления пакетами в окружении Python.
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 73de2a4c58a24a603f1d5d54138d5762e3ae9971
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Шаг 5. Установка пакетов в среде Python
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/19/2018
 
   ![Выходные данные примера matplotlib](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-step"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
