@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97fe1c6865b8934d2c0329547e98323c75bf3ec0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3226a81e748581cc96b62cb40600864fb9ac805
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="watch-command"></a>Команда Watch
 Создает и открывает указанный экземпляр окна **Контрольное значение** . Окно **Контрольные значения** можно использовать для вычисления значений переменных, выражений и регистров, чтобы изменять эти значения и сохранять результаты.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 Debug.Watch[index]
 ```
 
@@ -40,7 +40,7 @@ Debug.Watch[index]
 
 ## <a name="example"></a>Пример
 
-```
+```cmd
 >Debug.Watch1
 ```
 

@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="evaluate-statement-command"></a>Команда Evaluate Statement
 Вычисляет и отображает заданный оператор.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 Debug.EvaluateStatement text
 ```
 
@@ -38,7 +38,7 @@ Debug.EvaluateStatement text
 
  В **командном окне** знак равенства (=) интерпретируется как оператор сравнения. Например, если значения переменных `a` и `b` различаются, то команда
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -46,7 +46,7 @@ Debug.EvaluateStatement text
 
  В окне **интерпретации**, напротив, знак равенства (=) интерпретируется как оператор присваивания. Таким образом, команда
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -54,7 +54,7 @@ Debug.EvaluateStatement text
 
 ## <a name="example"></a>Пример
 
-```
+```cmd
 >Debug.EvaluateStatement(a+b)
 ```
 

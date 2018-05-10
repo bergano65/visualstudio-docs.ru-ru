@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 В этом диалоговом окне можно определять параметры проекта и сборки [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], связанные с файлами журналов, производительности и другими вспомогательными файлами.
@@ -71,10 +71,10 @@ ms.lasthandoff: 04/26/2018
 ## <a name="extensions-to-hide"></a>Скрываемые расширения
   Задает расширения файлов, которые не будут отображаться в **обозревателе решений** при выборе параметра **Показать все файлы**.
 
- ## <a name="build-customization-search-path"></a>Путь поиска настройки сборки
+## <a name="build-customization-search-path"></a>Путь поиска настройки сборки
   Задает список каталогов, содержащих файлы с расширением Rules, которые определяют правила сборки проектов.
 
-# <a name="solution-explorer-mode"></a>Режим обозревателя решений
+## <a name="solution-explorer-mode"></a>Режим обозревателя решений
  **Показывать только файлы проекта**
 
   В **обозревателе решений** отображаются только файлы проекта.

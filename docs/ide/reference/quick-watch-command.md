@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957f521b23bc56a6bfa4f8de315f130d5f82d8d3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce3c95591809b847141dde07b2a770d9b4597a5f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quick-watch-command"></a>Команда Quick Watch
 Отображает выбранный или указанный текст в поле "Выражение" окна [Быстрая проверка](../../debugger/watch-and-quickwatch-windows.md). Это диалоговое окно предназначено для вычисления текущего значения переменной или выражения, распознанного отладчиком, либо содержимого регистра. Кроме того, можно изменить значение любой неконстантной переменной или содержимое регистров.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 Debug.QuickWatchq [text]
 ```
 
@@ -40,13 +40,13 @@ Debug.QuickWatchq [text]
 
 ## <a name="example"></a>Пример
 
-```
+```cmd
 >Debug.QuickWatch
 ```
 
 ## <a name="see-also"></a>См. также
 
-- [Установка контрольных значений для переменных с помощью окон "Контрольное значение" и "Быстрая проверка"](../../debugger/watch-and-quickwatch-windows.md)
+- [Установка контрольных значений для переменных с помощью окон "Контрольное значение" и "Быстрая проверка" в Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)

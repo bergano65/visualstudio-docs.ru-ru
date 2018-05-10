@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 497e32e2be5babe16b82e9b06ab12f4f5c2c0ba7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a27110082ead9da0c8c355a9ee3770524f09f04
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Краткое руководство. Создание проекта Python на основе существующего кода
 
@@ -35,6 +35,6 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md).
 - [Расположения установки](installing-python-support-in-visual-studio.md#install-locations).

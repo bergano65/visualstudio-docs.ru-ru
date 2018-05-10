@@ -13,38 +13,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04614d6b4901ea20dee938b2b2240ef3c05b1a7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 027a73343683b7953e70b597a8f9a222b56eb01f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visualize-code"></a>Визуализация кода
+
 Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Например:
 
--   Чтобы понять связи в коде, сопоставьте их визуально.
+- Чтобы понять связи в коде, сопоставьте их визуально.
 
--   Описание архитектуры системы и обеспечить соответствие кода со структурой, создайте схемы зависимостей и проверить код на соответствие эти схемы.
+- Описание архитектуры системы и обеспечить соответствие кода со структурой, создайте схемы зависимостей и проверить код на соответствие эти схемы.
 
--   Для описания структур классов создайте схемы классов.
+- Для описания структур классов создайте схемы классов.
 
- Кроме того, эти средства облегчают взаимодействие с другими участниками проекта.
+Кроме того, эти средства облегчают взаимодействие с другими участниками проекта.
 
- Чтобы узнать, какие версии Visual Studio поддерживают каждую функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Чтобы узнать, какие версии Visual Studio поддерживают каждую функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="what-do-you-want-to-do"></a>Выберите действие
 
 |||
 |-|-|
-|**Понимание кода и его связей.**<br /><br /> Установите связи между определенными частями кода.<br /><br /> Получите общие сведения о связях в коде для всего решения.<br /><br /> **Примечание**. В этой версии Visual Studio термин *карта кода* используется вместо *графа зависимостей*.|-   [Сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Поиск потенциальных проблем, с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Понимание кода и его связей.**<br /><br /> Установите связи между определенными частями кода.<br /><br /> Получите общие сведения о связях в коде для всего решения.<br /><br /> **Примечание**. В этой версии Visual Studio термин *карта кода* используется вместо *графа зависимостей*.|- [Сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md)<br />- [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Поиск потенциальных проблем, с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Понимание структуры класса.**<br /><br /> Визуализируйте структуру классов в проекте путем создания схем классов на основе кода.|[Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Описывается структура высокого уровня системы и проверить код на соответствие этой структуре.**<br /><br /> Описаны высокого уровня системы разработки и предполагаемым зависимостям путем создания схем зависимостей. Проверьте код на соответствие этой структуре, чтобы убедиться в том, что зависимости в коде согласованы с ней.|-   [Создание схемы зависимостей в коде](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Схемы зависимостей: Справочник](../modeling/layer-diagrams-reference.md)<br />-   [Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)<br />-   [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)|
+|**Описывается структура высокого уровня системы и проверить код на соответствие этой структуре.**<br /><br /> Описаны высокого уровня системы разработки и предполагаемым зависимостям путем создания схем зависимостей. Проверьте код на соответствие этой структуре, чтобы убедиться в том, что зависимости в коде согласованы с ней.|- [Создание схемы зависимостей в коде](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Схемы зависимостей: Справочник](../modeling/layer-diagrams-reference.md)<br />- [Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)<br />- [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Форумы**|- [Средства моделирования и визуализации в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Пакет SDK (Инструменты DSL) моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Технические статьи и журналы**|[Архитектура форум MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
 

@@ -11,57 +11,57 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 915a65129b3131bf599903681b1e504d5d16d902
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 368d1a794f51d827aa62cc913039edda59ae7ae6
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Добавление пользовательских свойств в схемы зависимостей
+
 При написании кода расширения для схем зависимостей можно хранить значения с любым элементом на схеме зависимостей. Значения сохраняются при сохранении и повторном открытии схемы. Вы также можете эти свойства отображаются в **свойства** окна, чтобы пользователи могли просматривать и изменять их. Например, можно позволить пользователям задать регулярное выражение для каждого слоя и написать код для проверки того, соответствуют ли имена классов в каждом слое шаблону, заданному пользователем.
 
-## <a name="properties-not-visible-to-the-user"></a>Свойства, не видимые пользователю
- Если необходимо просто код, чтобы присоединить значения на любой элемент в схеме зависимостей, не нужно определять компонент MEF. В `Properties` есть словарь <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть диаграммы зависимостей. Дополнительные сведения см. в разделе [перехода и обновления уровня модели в программном коде](../modeling/navigate-and-update-layer-models-in-program-code.md).
+## <a name="non-visible-properties"></a>Невидимые свойства
 
-## <a name="properties-that-the-user-can-edit"></a>Свойства, которые пользователь может изменять
- **Предварительная подготовка**
+Если необходимо просто код, чтобы присоединить значения на любой элемент в схеме зависимостей, не нужно определять компонент MEF. В `Properties` есть словарь <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть диаграммы зависимостей. Дополнительные сведения см. в разделе [перехода и обновления уровня модели в программном коде](../modeling/navigate-and-update-layer-models-in-program-code.md).
+
+## <a name="editable-properties"></a>Для редактирования свойства.
+
+**Предварительная подготовка**
 
 > [!IMPORTANT]
->  Чтобы свойства отображались, нужно внести описанное ниже изменение на каждом компьютере, на котором свойства слоев должны быть видимыми.
+> Чтобы сделать отображаются свойства, необходимо сделать следующие изменения на каждом компьютере, где требуется свойства слоя, чтобы быть видимым:
 >
->  1.  Запустите Блокнот с помощью **Запуск от имени администратора**. Откройте файл `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.
-> 2.  Внутри элемента `Content` добавьте следующую запись:
+> 1. Запустите Блокнот с помощью **Запуск от имени администратора**. Откройте *%ProgramFiles%\Microsoft Visual Studio [версия] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 2. Внутри **содержимого** элемента, добавьте:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
-> 3.  В разделе **набора средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**.
->
->      Введите следующие команды:
+> 3. В разделе **набора средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**. Введите следующие команды:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
-> 4.  Перезапустите Visual Studio.
+> 4. Перезапустите Visual Studio.
 
- **Убедитесь, что ваш код в проект VSIX**
+**Убедитесь, что ваш код в проект VSIX**
 
- Если свойство является частью команд, жестов или проверки проекта, добавьте ничего не нужно. Код пользовательского свойства должен быть определен в проекте расширения Visual Studio как компонент MEF. Дополнительные сведения см. в разделе [Добавление команд и жестов в схемы зависимостей](../modeling/add-commands-and-gestures-to-layer-diagrams.md) или [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Если свойство является частью команд, жестов или проверки проекта, добавьте ничего не нужно. Код пользовательского свойства должен быть определен в проекте расширения Visual Studio как компонент MEF. Дополнительные сведения см. в разделе [Добавление команд и жестов в схемы зависимостей](../modeling/add-commands-and-gestures-to-layer-diagrams.md) или [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
- **Определение пользовательских свойств**
+**Определение пользовательских свойств**
 
- Чтобы создать пользовательское свойство, определите класс, как показано ниже.
+Чтобы создать пользовательское свойство, определите класс, как показано ниже.
 
-```
+```csharp
 [Export(typeof(IPropertyExtension))]
-public class MyProperty
-      : PropertyExtension<ILayerElement>
+public class MyProperty : PropertyExtension<ILayerElement>
 {
   // Implement the interface.
 }
 ```
 
- Свойства можно определить для класса <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> или любого из его производных классов, которые включают следующие классы:
+Свойства можно определить для класса <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> или любого из его производных классов, которые включают следующие классы:
 
 -   `ILayerModel` — модель
 
@@ -74,9 +74,10 @@ public class MyProperty
 -   `ILayerCommentLink`
 
 ## <a name="example"></a>Пример
- Приведенный ниже код представляет собой типичный дескриптор пользовательского свойства. Он определяет логическое свойство в модели слоев (`ILayerModel`), которое позволяет пользователю предоставлять значения для пользовательского метода проверки.
 
-```
+Приведенный ниже код представляет собой типичный дескриптор пользовательского свойства. Он определяет логическое свойство в модели слоев (`ILayerModel`), которое позволяет пользователю предоставлять значения для пользовательского метода проверки.
+
+```csharp
 using System;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;

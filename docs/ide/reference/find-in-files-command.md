@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 177a3c0c088e20b37172f6ff0a5b818dce24795c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-in-files-command"></a>Команда Find in Files
 Поиск в файлах с использованием набора параметров, доступных на вкладке **Найти в файлах** диалогового окна **Поиск и замена**.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 Edit.FindinFiles findwhat [/case] [/ext:extensions]
 [/lookin:searchpath] [/names] [/options] [/reset] [/stop] [/sub]
 [/text2] [/wild|/regex] [/word]
@@ -52,7 +52,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 
  /stop Необязательный. Останавливает выполнение текущей активной операции поиска. Если указан аргумент `/stop`, остальные аргументы при поиске игнорируются. Например, чтобы остановить текущий поиск, следует ввести следующую строку:
 
-```
+```cmd
 >Edit.FindinFiles /stop
 ```
 
@@ -67,7 +67,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="example"></a>Пример
  В данном примере осуществляется поиск "btnCancel" во всех CLS-файлах, расположенных в папке My Visual Studio Projects, а в окне "Результаты поиска 2" отображаются сведения о найденных совпадениях.
 
-```
+```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 

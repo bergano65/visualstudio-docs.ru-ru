@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Создание расширения с помощью редактора шаблона элемента
 Можно использовать шаблоны элементов, включенных в Visual Studio SDK для создания базового редактора расширениями классификаторы, элементы оформления и полей в редактор. Редактор шаблоны элементов доступны для проектов Visual C# или Visual Basic VSIX.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Содержит EditorClassifier1.cs `EditorClassifier1` класса.  
   
-    -   Содержит EditorClassifier1ClassificationDefinition.cs `OEditorClassifier1ClassificationDefinition` класса.  
+    -   Содержит EditorClassifier1ClassificationDefinition.cs `EditorClassifier1ClassificationDefinition` класса.  
   
     -   Содержит EditorClassifier1Format.cs `EditorClassifier1Format` класса.  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Содержит TextAdornment1.cs `TextAdornment1` класса.  
   
-    -   содержит extAdornment1TextViewCreationListener.cs `TextAdornment1TextViewCreationListener` класса.  
+    -   Содержит TextAdornment1TextViewCreationListener.cs `TextAdornment1TextViewCreationListener` класса.  
   
 4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр. При открытии текстового файла, «» символов в тексте будут выделены красным с синим фоном.  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В **новый проект** диалогового окна разверните **Visual C#** или **Visual Basic** и нажмите кнопку **расширяемости**. В **шаблоны** выберите **проект VSIX**. В поле **Имя** введите `MarginExtension`. Нажмите кнопку **ОК**.  
   
-2.  В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. Перейдите в Visual C# **расширяемости** , а затем выберите **просмотра оформления редактора**. Оставьте имя файла по умолчанию (EditorMargin1.cs/vb).  
+2.  В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. Перейдите в Visual C# **расширяемости** , а затем выберите **поле редактора**. Оставьте имя файла по умолчанию (EditorMargin1.cs/vb).  
   
 3.  Существует два файла кода следующим образом:  
   

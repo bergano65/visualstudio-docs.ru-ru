@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 
@@ -52,6 +52,7 @@ ms.lasthandoff: 04/26/2018
 - [IntelliSense на основе файлов объявления TypeScript](#TsDeclFiles)
 - [Автоматическое получение определений типов](#Auto)
 
+<a name="TypeInference"></a>
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense на основе определения типа
 
 В большинстве случаев явные сведения о типах в JavaScript недоступны. Но тип обычно довольно легко вывести из контекста кода.
@@ -88,6 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
+<a name="JsDoc"></a>
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense на основе JSDoc
 
 Когда определение типа не предоставляет нужные сведения о типе (или требуется вести документацию), их можно предоставить явно с помощью заметок JSDoc.  Например, чтобы назначить определенный тип частично объявленному объекту, можно использовать тег `@type`, как показано ниже:
@@ -114,14 +116,16 @@ function Foo(param1) {
 
 Сведения о поддерживаемых сейчас заметках JsDoc см. в разделе [Поддержка JSDoc в JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript).
 
+<a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>IntelliSense на основе файлов объявления TypeScript
 
 Так как JavaScript и TypeScript теперь основаны одной языковой службе, они способны полнее взаимодействовать друг с другом. Например, JavaScript IntelliSense можно предоставить для значений, объявленных в файле *.d.ts* (см. [документацию по TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), а типы, такие как интерфейсы и классы, объявленные в TypeScript, доступны для использования в качестве типов в комментариях JsDoc.
 
 Ниже показан простой пример файла определения TypeScript, предоставляющий подробные сведения о типе (через интерфейс) файлу JavaScript в том же проекте (с помощью тега `JsDoc`).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
 
+<a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Автоматическое получение определений типов
 
 В среде TypeScript API наиболее популярных библиотек JavaScript описываются файлами *.d.ts*, а наиболее распространенным репозиторием для таких определений является [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).

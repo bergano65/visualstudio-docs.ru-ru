@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31810189ec7127548f68a3732afc701e8a7bac08
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb84e7305797522c7e34e387357eedfdcd61e88f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-command"></a>Команда Find
 Выполняет поиск в файлах с использованием набора параметров, доступных на вкладке **Найти в файлах** диалогового окна **Поиск и замена**.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
 ```
@@ -62,7 +62,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="example"></a>Пример
  Этот пример выполняет учитывающий регистр поиск слова "somestring" в выбранном разделе кода.
 
-```
+```cmd
 >Edit.Find somestring /sel /case
 ```
 

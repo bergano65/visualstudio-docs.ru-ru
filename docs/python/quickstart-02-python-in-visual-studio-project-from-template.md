@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a033d8b2709a6eaf871758d1bd46a3ad34f7a08f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 
@@ -74,6 +74,6 @@ Visual Studio также предоставляет широкий набор *�
 
 ## <a name="see-also"></a>См. также
 
-- [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md).
 - [Расположения установки](installing-python-support-in-visual-studio.md#install-locations).

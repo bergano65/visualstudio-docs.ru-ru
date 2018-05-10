@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0110a8e9b0e4617ac191bfaab8b575fd8faa6a76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-memory-command"></a>Команда List Memory
 Отображает содержимое указанного диапазона памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
@@ -57,13 +57,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="remarks"></a>Примечания
  Вместо записи полной команды **Debug.ListMemory** со всеми параметрами можно вызвать ее, используя стандартные псевдонимы, в которых отдельные параметры уже имеют определенные значения. Например, вместо ввода:
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
  можно ввести:
 
-```
+```cmd
 >df /Count:30 /Unicode
 ```
 
@@ -82,7 +82,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 ## <a name="example"></a>Пример
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 

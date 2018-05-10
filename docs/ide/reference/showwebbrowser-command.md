@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1396cd28244a655d18f6e09f4795dd099a11ca7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="showwebbrowser-command"></a>Команда ShowWebBrowser
 Отображает URL-адрес, указанный в окне браузера внутри или вне интегрированной среды разработки (IDE).
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 View.ShowWebBrowser URL [/new][/ext]
 ```
 
@@ -50,7 +50,7 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="example"></a>Пример
  Следующий пример отображает домашнюю страницу сайта MSDN в веб-браузере вне интегрированной среды разработки. Если экземпляр веб-браузера уже открыт, то используется он, в противном случае запускается новый экземпляр.
 
-```
+```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext
 ```
 

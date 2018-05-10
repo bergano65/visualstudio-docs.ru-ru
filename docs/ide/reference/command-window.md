@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>Командное окно
 **Командное** окно используется для выполнения команд или их псевдонимов непосредственно в интегрированной среде разработки (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Можно выполнять команды меню и команды, которые не отображаются в меню. Для вывода **командного** окна в меню **Вид** выберите **Другие окна**, а затем **Командное окно**.
@@ -30,13 +30,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>Отображение значений переменных
  Для проверки значения переменной `varA` используйте [команду Print](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Вопросительный знак (?) является псевдонимом для команды `Debug.Print`, поэтому можно также написать такую команду:
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="parameters-switches-and-values"></a>Параметры, аргументы и значения
  Некоторые команды [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] имеют обязательные и необязательные аргументы, параметры и значения. При работе с такими командами применяются определенные правила. Ниже приведен пример расширенной команды для пояснения используемой терминологии.
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="escape-characters"></a>Escape-символы
  Символ "крышки" (^) в командной строке означает, что следующий за ним символ интерпретируется буквально, а не как управляющий символ. Благодаря этому в значение параметра можно внедрить прямые кавычки ("), пробелы, начальные символы косой черты, крышки или другие знаки, за исключением имен параметров. Например, примененная к объекту директива
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

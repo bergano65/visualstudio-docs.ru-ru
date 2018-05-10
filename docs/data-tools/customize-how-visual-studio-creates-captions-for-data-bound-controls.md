@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Настроить, как Visual Studio создает заголовки для элементов управления с привязкой к данным
+
 При перетаскивании элементов из [окно "Источники данных"](add-new-data-sources.md) в конструктор, особое внимание вступает в действие: имена столбцов в названия преобразуются в более удобном для чтения строку, когда два или более слов признаны объединенные вместе. Можно настроить способ, в котором были созданы эти метки, задав **SmartCaptionExpression**, **SmartCaptionReplacement**, и **SmartCaptionSuffix** значения в **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data конструкторы** раздел реестра.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ ms.lasthandoff: 04/26/2018
 > [!CAUTION]
 > Вам следует очень внимательно, при выполнении действий в редакторе реестра. Создайте резервную копию реестра перед его изменением. Неправильное использование редактора реестра может привести к серьезным проблемам, которые могут потребовать переустановки операционной системы. Корпорация Майкрософт не гарантирует проблем, вызванных неправильным использованием редактора реестра. Ответственность за использование редактора реестра лежит на пользователе.
 >
->  В следующей статье базы знаний содержатся инструкции по резервное копирование, изменение и восстановлении реестра: [Описание системного реестра Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> В следующей статье базы знаний содержатся инструкции по резервное копирование, изменение и восстановлении реестра: [Описание системного реестра Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Чтобы изменить поведение смарт-субтитров из окна «Источники данных»
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Изменить поведение смарт-субтитров окна «Источники данных»
 
 1.  Откройте окно командной строки, щелкнув **запустить** и затем **запуска**.
 
 2.  Тип `regedit` в **запуска** диалоговое окно и нажмите кнопку **ОК**.
 
-3.  Разверните **HKEY_CURRENT_USER**, **программного обеспечения*, **Microsoft**, **VisualStudio** узла.
+3.  Разверните **HKEY_CURRENT_USER**, **программного обеспечения**, **Microsoft**, **VisualStudio** узла.
 
 7.  Щелкните правой кнопкой мыши **15.0** узел и создайте новый **ключ** с именем `Data Designers`.
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/26/2018
 
     Далее перетаскивать элементы из **источники данных** окна, названия создаются с помощью предоставленных новых значений реестра.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Чтобы отключить функцию субтитров смарт-
+## <a name="turn-off-the-smart-captioning-feature"></a>Отключите функцию смарт-субтитров
 
 1.  Откройте окно командной строки, щелкнув **запустить** и затем **запуска**.
 

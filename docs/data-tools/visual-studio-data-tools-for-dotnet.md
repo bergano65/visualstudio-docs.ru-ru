@@ -11,21 +11,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: d2db4210085e3dc16d9c4b9e00653312ae0d5a82
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Данные средства Visual Studio для .NET
 
-Visual Studio и .NET Framework обеспечивают широкий API и инструменты для подключения к базам данных, моделирования данных в памяти и отображения данных в пользовательском интерфейсе. Классы .NET Framework, которые предоставляют функциональные возможности доступа к данным, называются [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, вместе с данными в Visual Studio для работы с проектами изначально была разработана в основном для поддержки реляционных баз данных и XML. Наши дни многие поставщики баз данных NoSQL или сторонних разработчиков, обеспечивают поставщиков ADO.NET.
+Visual Studio и .NET Framework обеспечивают широкий API и инструменты для подключения к базам данных, моделирования данных в памяти и отображения данных в пользовательском интерфейсе. Классы .NET Framework, которые предоставляют функциональные возможности доступа к данным, называются [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, вместе с данными в Visual Studio для работы с проектами предназначена главным образом для поддержки реляционных баз данных и XML. Наши дни многие поставщики баз данных NoSQL или сторонних разработчиков, обеспечивают поставщиков ADO.NET.
 
 [.NET core](/dotnet/core/) поддерживает ADO.NET, за исключением наборов данных и связанных типов. Если в качестве цели .NET Core и требуют уровень объектно реляционного сопоставления (ORM), используйте [Entity Framework Core](/ef/core/).
 
 В примере ниже показан упрощенный вид базовая архитектура:
 
 ![Архитектура ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+## <a name="typical-workflow"></a>Типичный рабочий процесс
 
 Типичный рабочий процесс состоит в следующем:
 

@@ -20,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632c37ea2ee8afc0a8d3b45e0d3e208de6b76f9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="shell-command"></a>Команда Shell
 Запускает исполняемые программы из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
@@ -66,13 +66,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 > Если аргумент `path` указывает путь к каталогу, а также имя файла, следует заключить все имя пути в кавычки ("""), как показано ниже:
 
 
-```
+```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
  Каждый набор из трех двойных кавычек (""") интерпретируется процессором `Shell` как один символ двойной кавычки. Таким образом, предыдущий пример фактически передает в команду `Shell` следующую строку пути:
 
-```
+```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
@@ -83,7 +83,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ## <a name="example"></a>Пример
  Следующая команда использует xcopy.exe, чтобы скопировать файл `MyText.txt` в папку `Text`. Выходные данные xcopy.exe отображаются как в окне **Команда**, так и в окне **Вывод**.
 
-```
+```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 

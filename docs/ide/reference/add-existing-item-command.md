@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec281b508842424fbfb74bbe0726bb2ec47abe2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-existing-item-command"></a>Команда Add Existing Item
 Добавляет существующий файл в текущее решение и открывает его.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cmd
 File.AddExistingItem filename [/e:editorname]
 ```
 
@@ -38,7 +38,7 @@ File.AddExistingItem filename [/e:editorname]
 
  В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне **Открыть с помощью**, с заключением в кавычки. Например, чтобы открыть таблицу стилей в редакторе исходного кода, необходимо ввести для аргумента /e:`editorname` следующую строку:
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
@@ -48,7 +48,7 @@ File.AddExistingItem filename [/e:editorname]
 ## <a name="example"></a>Пример
  Этот пример добавляет файл Form1.frm в текущее решение.
 
-```
+```cmd
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 

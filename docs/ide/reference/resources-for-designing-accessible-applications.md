@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d042ddd88ce4711d16ce963dbf7326c84097f52
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="third-party-resources"></a>Ресурсы сторонних организаций
 
--   **Инициатива Web Accessibility Initiative консорциума W3C**. На этом веб-сайте содержатся рекомендации и методики для разработки доступных веб-сайтов. Дополнительные сведения см. на веб-сайте [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).
+-   **Инициатива Web Accessibility Initiative консорциума W3C**. На этом веб-сайте содержатся рекомендации и методики для разработки доступных веб-сайтов. Дополнительные сведения см. на веб-сайте [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>См. также
 

@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Определения типов Visual C++ в конструкторе классов
 
@@ -49,7 +49,7 @@ typedef class coord
 };
 ```
 
-Дополнительные сведения об использовании типа `typedef` см. в разделе о [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs).
+Дополнительные сведения об использовании типа `typedef` см. в разделе о [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
 
 Фигура определения типа C++ имеет форму типа, указанного в определении типа. Например, если источник объявляет `typedef class`, у фигуры будут скругленные углы и метка **класса**. У `typedef struct` фигура имеет квадратные углы и метку **Структура**.
 
@@ -199,6 +199,8 @@ typedef
 
 -> MyIntVect
 
-## <a name="see-also"></a>См. также
+### <a name="see-also"></a>См. также
 
-- [Работа с кодом на Visual C++](working-with-visual-cpp-code.md)
+- [Работа с кодом на Visual C++](working-with-visual-cpp-code.md)  
+- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+
