@@ -1,16 +1,16 @@
 ---
-title: Подключенные службы в Visual Studio для Mac
+title: Подключенные службы
 description: Добавление хранилища данных Azure, проверка подлинности и push-уведомления в мобильных приложениях в среде Visual Studio для Mac
 ms.prod: xamarin
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: asb3993
 ms.author: amburns
 ms.date: 04/04/2018
-ms.openlocfilehash: 0e3cc587b2c29cab19a4a6cdeed0a4b138330726
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 3e179f333cbc71f39f24795f6720e94b298441c4
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="connected-services-walkthrough"></a>Пошаговое руководство по подключенным службам
 

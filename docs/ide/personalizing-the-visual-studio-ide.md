@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 Вы можете изменить регистр главного меню, выбрав вариант **Заглавные буквы** (например, "Файл") и **ВСЕ ПРОПИСНЫЕ** (например, "ФАЙЛ"). Введите `environment` в поле **Быстрый запуск**, выберите **Среда --> Общие** и измените значение параметра **Применить регистр заголовка к строке меню**.
 
-### <a name="customze-menus-and-toolbars"></a>Настройка меню и панелей инструментов
+### <a name="customize-menus-and-toolbars"></a>Настройка меню и панелей инструментов
 
 Сведения о добавлении или удалении элементов меню или панели инструментов см. в статье [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 

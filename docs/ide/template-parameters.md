@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>Включение подстановки параметров в шаблонах
 
-1. В VSTEMPLATE-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.
+1. В *VSTEMPLATE*-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.
 
 1. Задайте атрибуту `ReplaceParameters` элемента `ProjectItem` значение `true`.
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/26/2018
 
 Вы можете указать собственные параметры шаблона и значения в дополнение к зарезервированным параметрам шаблона по умолчанию, которые используются во время замены параметров. Дополнительные сведения см. в разделе [Элемент CustomParameters (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Пример: использование имени проекта в качестве имени файла
+## <a name="example-use-the-project-name-for-a-file-name"></a>Пример: использование имени проекта в качестве имени файла
 
 Можно указать переменные имена файлов для элементов проекта с помощью параметра в атрибуте `TargetFileName`.
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/26/2018
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Пример: использование безопасного имени проекта в качестве имени пространства имен
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Пример: использование безопасного имени проекта в качестве имени пространства имен
 
 Чтобы использовать безопасное имя проекта для пространства имен в файле класса C#, используйте следующий синтаксис:
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-В VSTEMPLATE-файл для шаблона проекта включите атрибут `ReplaceParameters="true"` при ссылке на файл:
+В *VSTEMPLATE*-файл для шаблона проекта включите атрибут `ReplaceParameters="true"` при ссылке на файл:
 
 ```xml
 <TemplateContent>

@@ -3,6 +3,7 @@
 # [Обзор интегрированной среды разработки](ide-tour.md)
 
 # [Установка](installation.md)
+## [Предварительная установка](install-preview.md)
 ## [Обновление](update.md)
 ## [Удаление](uninstall.md)
 
@@ -30,6 +31,7 @@
 ## [Фрагменты кода](snippets.md)
 ## [Выбор блоков](block-selection.md)
 ## [Темы редактора](editor-themes.md)
+## [EditorConfig](editorconfig.md)
 ## [Распространенные сочетания клавиш](keyboard-shortcuts.md)
 
 # [Отладка](debugging.md)
@@ -43,6 +45,7 @@
 ### [Создание и изменение конфигураций](create-and-edit-configurations.md)
 
 # [Управление версиями](version-control.md)
+## [Система управления версиями TF](tf-version-control.md)
 ## [Настройка репозитория Git](set-up-git-repository.md)
 ## [Работа с Git](working-with-git.md)
 ## [Настройка репозитория Subversion](set-up-subversion-repository.md)
@@ -50,7 +53,11 @@
 
 # [Рабочие нагрузки](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+### [Razor](razor.md)
+### [JavaScript](javascript.md)
 ## [Azure](azure-workload.md)
+### [Введение в функции Azure](azure-functions.md)
+### [Учебник. Привязка к функциям Azure](azure-functions-lab.md)
 ### [Подключенные службы](connected-services.md)
 ## [Разработка игр на Unity](unity-tools.md)
 ### [Установка](setup-vsmac-tools-unity.md)

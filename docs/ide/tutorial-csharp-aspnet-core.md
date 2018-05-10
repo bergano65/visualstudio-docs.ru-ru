@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 80ca583b3cd773121cda7b0311fcf551472cb2d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Начало работы с C# и ASP.NET в Visual Studio
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Начало работы с C# и ASP.NET в Visual Studio
 В этом учебнике по разработке на языке C# с помощью ASP.NET Core в Visual Studio вы создадите веб-приложение ASP.NET Core на C#, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
@@ -42,7 +42,7 @@ Visual Studio — это интегрированный набор средст
 
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.
+2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual C#**, затем разверните узел **Веб** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**, присвойте файлу имя *MyCoreApp* и нажмите кнопку **ОК**.   
 
@@ -61,7 +61,7 @@ Visual Studio — это интегрированный набор средст
    ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Способ 2. Меню "Сервис"
-1. Закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты...**.
+1. Закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты**.
 
 2. Запускается Visual Studio Installer. Выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**, а затем щелкните **Изменить**.   
 
@@ -86,15 +86,15 @@ Visual Studio — это интегрированный набор средст
 
     ![Обозреватель решений ASP.NET в Visual Studio](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. Откройте файл **HomeController.cs** в папке **Controllers**.
+1. Откройте файл *HomeController.cs* в папке **Controllers**.
 
       ![Файл HomeController.cs в обозревателе решений Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. Просмотрите содержимое файла **HomeController.cs**.
+2. Просмотрите содержимое файла *HomeController.cs*.
 
   ![Файл HomeController.cs в окне кода Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Кроме того, проект включает в себя папку **Views**, которая содержит другие папки, соответствующие каждому контроллеру (а также папку для **общих** представлений). Например, файл CSHTML (расширение HTML) представления для пути **/Home/About** будет находиться по пути **Views/Home/About.cshtml**. Откройте этот файл.
+4. Кроме того, проект включает в себя папку **Views**, которая содержит другие папки, соответствующие каждому контроллеру (а также папку для **общих** представлений). Например, файл CSHTML (расширение HTML) представления для пути */Home/About* будет находиться по пути *Views/Home/About.cshtml*. Откройте этот файл.
 
   ![Файл About.cshtml в обозревателе решений Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -105,11 +105,11 @@ Visual Studio — это интегрированный набор средст
  >[!NOTE]
  > Дополнительные сведения см. на странице [Начало работы с C# и ASP.NET с использованием синтаксиса Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
-6. Решение также содержит папку **wwwroot**, которая является корнем веб-сайта. Вы можете поместить статическое содержимое сайта, такое как CSS, изображения и библиотеки JavaScript, непосредственно по путям, по которым оно должно находиться при развертывании сайта.
+6. Решение также содержит папку *wwwroot*, которая является корнем веб-сайта. Вы можете поместить статическое содержимое сайта, такое как CSS, изображения и библиотеки JavaScript, непосредственно по путям, по которым оно должно находиться при развертывании сайта.
 
  ![Папка wwwroot в обозревателе решений Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. Имеются также различные файлы конфигурации, которые служат для управления проектом, его пакетами и приложением во время выполнения. Например, [конфигурация](/aspnet/core/fundamentals/configuration) приложения по умолчанию хранится в файле **appsettings.json**. Однако можно переопределять некоторые или все эти параметры для той или иной среды, например, предоставив файл **appsettings.Development.json** для среды **разработки**.
+7. Имеются также различные файлы конфигурации, которые служат для управления проектом, его пакетами и приложением во время выполнения. Например, [конфигурация](/aspnet/core/fundamentals/configuration) приложения по умолчанию хранится в файле *appsettings.json*. Однако можно переопределять некоторые или все эти параметры для той или иной среды, например, предоставив файл *appsettings.Development.json* для среды **разработки**.
 
  ![Файлы конфигурации в обозревателе решений Visual Studio](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,21 +126,21 @@ Visual Studio — это интегрированный набор средст
 
  ![Выбор вкладки "About" в окне браузера с приложением](../ide/media/csharp-aspnet-browser-page.png)
 
- Помимо прочего, на странице "About" в браузере отображается текст, заданный в файле HomeController.cs.
+ Помимо прочего, на странице **About** в браузере отображается текст, заданный в файле *HomeController.cs*.
 
    ![Просмотр текста на странице "About"](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. Не закрывая окно браузера, вернитесь в Visual Studio. Откройте файл **Controllers/HomeController.cs**, если он еще не открыт.
+1. Не закрывая окно браузера, вернитесь в Visual Studio. Откройте файл *Controllers/HomeController.cs*, если он еще не открыт.
 
  ![Открытие файла HomeController.cs в обозревателе решений Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. Установите точку останова в первой строке метода **About**. Для этого щелкните в поле или установите курсор в этой строке и нажмите клавишу **F9**.
 
-  В этой строке задаются данные в коллекции **ViewData**, которые отображаются на CSHTML-странице по пути **Views/Home/About.cshtml**.
+  В этой строке задаются данные в коллекции **ViewData**, которые отображаются на CSHTML-странице по пути *Views/Home/About.cshtml*.
 
  ![Установите точку останова в первой строке метода About в файле About.cshtml.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. Вернитесь в браузер и обновите страницу "About". В Visual Studio будет достигнута точка останова.
+1. Вернитесь в браузер и обновите страницу **About**. В Visual Studio будет достигнута точка останова.
 
 1. В Visual Studio наведите указатель на член **ViewData**, чтобы просмотреть его данные.
 
@@ -148,7 +148,7 @@ Visual Studio — это интегрированный набор средст
 
 1. Удалите точку останова в приложении, выполнив те же действия, что и для ее добавления.
 
-1. Откройте файл **Views/Home/About.cshtml**.
+1. Откройте файл *Views/Home/About.cshtml*.
 
  ![Выбор файла About.cshtml в обозревателе решений](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -169,4 +169,4 @@ Visual Studio — это интегрированный набор средст
 Поздравляем с завершением этого учебника! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio. Для получения дополнительных сведений перейдите к следующему учебнику.
 
  > [!div class="nextstepaction"]
- > [Начало работы с ASP.NET Core MVC и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+ > [Начало работы с MVC ASP.NET Core и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
