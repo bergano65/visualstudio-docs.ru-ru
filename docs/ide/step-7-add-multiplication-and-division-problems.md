@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbeeca2e53addab923fa3f62c661543497ea1f35
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c3c89def201f0045d561b180bd3af521ba4c2de
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Шаг 7. Добавление задач на умножение и деление
 В седьмой части этого учебника вам предстоит добавить задачи на умножение и деление. Сначала, однако, необходимо подумать, как внести это изменение. Рассмотрим начальный шаг, который предполагает сохранение значений.  
 
-### <a name="to-add-multiplication-and-division-problems"></a>Добавление задач на умножение и деление  
+## <a name="to-add-multiplication-and-division-problems"></a>Добавление задач на умножение и деление  
 
 1.  Добавьте в форму еще четыре целочисленные переменные.  
 
@@ -38,9 +38,9 @@ ms.lasthandoff: 04/26/2018
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
 
      Так как простого способа ввести знак умножения (×) и знак деления (÷) с клавиатуры нет, в языках Visual C# и Visual Basic используется знак звездочка (*) для умножения и знак косой черты (/) для деления.  
-
-4.  Измените последнюю часть обработчика событий таймера Tick таким образом, чтобы по истечении времени этот обработчик событий проставлял правильный ответ.  
-
+  
+4.  Измените последнюю часть обработчика событий таймера <xref:System.Windows.Forms.Timer.Tick> так, чтобы по истечении времени этот обработчик событий выдавал правильный ответ.  
+  
      [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]
      [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
 
@@ -49,10 +49,10 @@ ms.lasthandoff: 04/26/2018
      Игроки должны решить четыре задачи, чтобы пройти головоломку, как показано на следующем рисунке.  
 
      ![Математическая головоломка с четырьмя задачами](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-Математическая головоломка с четырьмя задачами  
-
-### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
-
--   Следующий шаг руководства см. в разделе [Step 8: Customize the Quiz](../ide/step-8-customize-the-quiz.md) (Шаг 8. Настройка головоломки).  
-
--   Предыдущий шаг руководства см. в разделе [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md) (Шаг 6. Добавление задачи на вычитание).
+**Математическая головоломка** с четырьмя задачами  
+  
+## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
+  
+-   Следующий раздел: [Шаг 8. Настройка головоломки](../ide/step-8-customize-the-quiz.md).  
+  
+-   Предыдущий раздел: [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).

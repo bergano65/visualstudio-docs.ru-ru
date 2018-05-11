@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на сервере IIS в Azure в Visual Studio 2017 г.
 
@@ -83,18 +83,19 @@ ms.lasthandoff: 04/18/2018
 
 Можно создать Azure VM для Windows Server и затем установить и настройки служб IIS и другие необходимые программные компоненты. Это занимает больше времени, чем развертывание для службы приложения Azure и требует выполните оставшиеся действия в этом учебнике.
 
-Во-первых, выполните действия, описанные в [установки и запуска IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
+Во-первых, выполните действия, описанные в [установки и запуска IIS](/azure/virtual-machines/windows/quick-create-portal).
 
 Если открыть порт 80 в группу безопасности сети, также можно откройте порт 4022 удаленного отладчика. В этом случае не придется открыть его позже.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Обновить параметры безопасности браузера в Windows Server
 
-В зависимости от настройки безопасности браузера, он может сэкономить время, чтобы добавить следующие надежные сайты в браузер, поэтому можно легко загрузить программное обеспечение, описанный в этом учебнике. Возможно, потребуется доступ к этим сайтам:
+В зависимости от настройки безопасности браузера он может сэкономить время Добавление следующих надежных сайтов в браузер, можно быстро загрузить программного обеспечения, описанные в этом учебнике. Возможно, потребуется доступ к этим сайтам:
 
 - Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются. (Если требуется загрузить более раннюю версию удаленного отладчика из my.visualstudio.com некоторые дополнительные надежные сайты необходимы для входа.)
 
@@ -113,7 +114,7 @@ ms.lasthandoff: 04/18/2018
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a> Настройка веб-сайта ASP.NET на сервере Windows Server
+### <a name="BKMK_deploy_asp_net"></a> Настройка веб-узла ASP.NET на сервере Windows Server
 
 1. Откройте **Диспетчер служб IIS** и перейдите к разделу **Сайты**.
 

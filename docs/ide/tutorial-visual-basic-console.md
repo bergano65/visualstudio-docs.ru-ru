@@ -13,15 +13,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Начало работы с Visual Basic в Visual Studio
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Начало работы с Visual Basic в Visual Studio
 
-В этом учебнике по Visual Basic вы используете среду Visual Studio для создания и запуска нескольких разных консольных приложений. В процессе работы вы ознакомитесь с некоторыми возможностями [интегрированной среды разработки (IDE)](visual-studio-ide.md) Visual Studio.
+В этом руководстве по Visual Basic вы будете работать со средой Visual Studio для создания и запуска нескольких разных консольных приложений. Вы также ознакомитесь с некоторыми возможностями [интегрированной среды разработки (IDE)](visual-studio-ide.md) Visual Studio.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
 
@@ -55,7 +55,7 @@ Visual Studio — это интегрированный набор средст
 
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.
+2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *HelloWorld*.  
 
@@ -74,8 +74,7 @@ Visual Studio — это интегрированный набор средст
    ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Способ 2. Меню "Сервис"
-
-1. Закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты...**.
+1. Закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты**.
 
 2. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.   
 
@@ -107,8 +106,7 @@ Visual Studio — это интегрированный набор средст
 5. Для закрытия консольного окна нажмите любую клавишу.
 
 ## <a name="create-a-calculate-this-application"></a>Создание приложения "Калькулятор"
-
-1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект...**.
+1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
 2. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *CalculateThis*.  
 

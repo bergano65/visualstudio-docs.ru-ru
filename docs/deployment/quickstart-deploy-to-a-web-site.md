@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Публикация веб-приложения или приложения .NET Core на веб-сайт, используя средство публикации Visual Studio
 
@@ -24,13 +24,19 @@ ms.lasthandoff: 04/19/2018
 
 Эти шаги применимы к ASP.NET, ASP.NET Core, .NET Core и Python приложений в Visual Studio. Для Node.js действия поддерживаются, но пользовательский интерфейс отличается.
 
+## <a name="prerequisites"></a>Предварительные требования
+
+* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
+
+    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
 1. В Visual Studio последовательно выберите **Файл > Создать проект**.
 
 1. В разделе **Visual C#** или **Visual Basic**, выберите **Web**, а затем в средней области выберите **веб-приложения ASP.NET (.NET Framework)**(только C#) или **веб-приложения ASP.NET Core**, а затем нажмите кнопку **ОК**.
 
-1. Выберите **MVC**, убедитесь, что **без проверки подлинности** выбран и нажмите кнопку **ОК**.
+1. Выберите **MVC** (или выберите **веб-приложения (Model-View-Controller)** для .NET Core), убедитесь, что **без проверки подлинности** выбран и нажмите кнопку **ОК** .
 
 1. Введите имя, например **MyWebApp** и нажмите кнопку **ОК**.
 
@@ -44,7 +50,9 @@ ms.lasthandoff: 04/19/2018
 
     ![Выберите опубликовать](../deployment/media/quickstart-publish-aspnet.png "выберите публикации")
 
-1. В **публикации** области, выберите **IIS, FTP, и т. д**.
+1. Если были настроены ранее все профили публикации **публикации** появится область. Нажмите кнопку **Создание нового профиля**.
+
+1. В **выбрать место назначения публикации** диалогового окна выберите **IIS, FTP, и т. д**.
 
     ![Выберите IIS, FTP, т. д.](../deployment/media/quickstart-publish-iis-ftp.png "выберите IIS, FTP и т. д.")
 
@@ -56,7 +64,7 @@ ms.lasthandoff: 04/19/2018
 
 1. В **метод публикации** поля, такие как выбрать метод **веб-развертывания** или **FTP**.
 
-    Параметры, которые вы видите рядом соответствуют способа публикации.
+    Параметры, которые вы видите рядом соответствуют способа публикации. Веб-развертывания упрощает развертывание веб-приложений и веб-сайтов на серверах IIS, а также должен быть установлен как приложение на сервере. Используйте [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) для ее установки.
 
 1. Настроить необходимые параметры для метода публикации и нажмите кнопку **проверить подключение**.
 
@@ -74,4 +82,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Развертывание ASP.NET в службах IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+В этом кратком руководстве вы узнали, как использовать Visual Studio для создания профиля публикации. Вы можете также настроить публикацию профиля путем импорта параметров публикации.
+
+> [!div class="nextstepaction"]
+> [Импорт параметров публикации и развертывание в IIS](tutorial-import-publish-settings-iis.md)

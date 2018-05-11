@@ -1,5 +1,5 @@
 ---
-title: Устранение неполадок, связанных с использованием фрагментов
+title: Устранение неполадок с фрагментами
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,13 +14,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0151ff22146d745c42204ec66b9f5d35c2c8b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="troubleshooting-snippets"></a>Устранение неполадок, связанных с использованием фрагментов
+# <a name="troubleshoot-snippets"></a>Устранение неполадок с фрагментами
 
 Проблемы с фрагментами кода IntelliSense обычно вызваны двумя причинами: поврежденный файл фрагмента или неправильное его содержимое.
 

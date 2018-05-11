@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Публикация приложений ASP.NET или ASP.NET Core для службы приложений Azure с помощью Visual Studio
 
@@ -24,13 +24,19 @@ ms.lasthandoff: 04/19/2018
 
 Если вы еще нет учетной записи Azure, вы можете [регистрации здесь](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
+## <a name="prerequisites"></a>Предварительные требования
+
+* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
+
+    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
 1. В Visual Studio последовательно выберите **Файл > Создать проект**.
 
 1. В разделе **Visual C#** или **Visual Basic**, выберите **Web**, а затем в средней области выберите **веб-приложения ASP.NET (.NET Framework)**(только C#) или **веб-приложения ASP.NET Core**, а затем нажмите кнопку **ОК**.
 
-1. Выберите **MVC**, убедитесь, что **без проверки подлинности** выбран и нажмите кнопку **ОК**.
+1. Выберите **MVC** (или выберите **веб-приложения (Model-View-Controller)** для .NET Core), убедитесь, что **без проверки подлинности** выбран и нажмите кнопку **ОК** .
 
 1. Введите имя, например **MyWebApp** и нажмите кнопку **ОК**.
 
@@ -44,7 +50,9 @@ ms.lasthandoff: 04/19/2018
 
     ![Выберите опубликовать](../deployment/media/quickstart-publish-aspnet.png "выберите публикации")
 
-1. В **публикации** области, выберите **службу приложений Microsoft Azure**.
+1. Если были настроены ранее все профили публикации **публикации** появится область. Нажмите кнопку **Создание нового профиля**.
+
+1. В **выбрать место назначения публикации** диалогового окна выберите **службы приложений**.
 
     ![Выберите службы приложений Azure](../deployment/media/quickstart-publish-azure.png "выберите службы приложений Azure")
 
@@ -70,5 +78,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Развертывание приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [Непрерывное развертывание ASP.NET Core в Azure с помощью Git](/aspnet/core/publishing/azure-continuous-deployment)
+В этом кратком руководстве вы узнали, как использовать Visual Studio для создания профиля публикации для развертывания в Azure. Вы можете также настроить публикацию профиля путем импорта параметрами публикации из службы приложений Azure.
+
+> [!div class="nextstepaction"]
+> [Импорт параметров публикации и развертывания в Azure](tutorial-import-publish-settings-azure.md)

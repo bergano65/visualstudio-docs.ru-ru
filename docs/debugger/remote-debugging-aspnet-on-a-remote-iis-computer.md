@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e4c0311f8e011b8cab3e189f309cd618a485bd71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0fa3f01d90e2a27a234cceba7b3821e7c46c9f6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на компьютере удаленного IIS в Visual Studio 2017 г.
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
@@ -56,6 +56,7 @@ ms.lasthandoff: 04/18/2018
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются. (Если требуется загрузить более раннюю версию удаленного отладчика из my.visualstudio.com некоторые дополнительные надежные сайты необходимы для входа.)
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/18/2018
 
 1. Откройте проводник Windows и создайте новую папку **C:\Publish**, где будут развернуты позднее проекта ASP.NET.
 
-2. Откройте **Internet Information Services (IIS) Manager**. (В левой панели диспетчера серверов выберите **IIS**. Щелкните правой кнопкой мыши сервер и выберите **Диспетчер Internet Information Services (IIS)**.)
+2. Если он не открыт, откройте **Диспетчер Internet Information Services (IIS)**. (В левой панели диспетчера серверов выберите **IIS**. Щелкните правой кнопкой мыши сервер и выберите **Диспетчер Internet Information Services (IIS)**.)
 
 3. В разделе **подключений** в левой области выберите **узлы**.
 

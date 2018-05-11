@@ -1,7 +1,7 @@
 ---
 title: Развертывание в локальную папку - Visual Studio | Документы Microsoft
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,17 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Развертывание веб-приложения или приложения .NET Core в локальной папке, используя средство публикации Visual Studio
 
 Можно использовать **публикации** средство для публикации приложения в локальную папку. 
 
 Эти шаги применимы к ASP.NET, ASP.NET Core, .NET Core и Python приложений в Visual Studio. Для Node.js действия поддерживаются, но пользовательский интерфейс отличается.
+
+## <a name="prerequisites"></a>Предварительные требования
+
+* Необходимо иметь Visual Studio 2017 г. установлен и **.NET Framework** и **.NET Core** установлена рабочая нагрузка разработки.
+
+    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
@@ -40,7 +46,9 @@ ms.lasthandoff: 04/19/2018
 
     ![Выберите опубликовать](../deployment/media/quickstart-publish.png "выберите публикации")
 
-1. В **публикации** области, выберите **папки**.
+1. Если были настроены ранее все профили публикации **публикации** появится область. Нажмите кнопку **Создание нового профиля**.
+
+1. В **выбрать место назначения публикации** диалогового окна выберите **папки**.
 
     ![Выберите папку](../deployment/media/quickstart-publish-folder.png "выберите папку")
 

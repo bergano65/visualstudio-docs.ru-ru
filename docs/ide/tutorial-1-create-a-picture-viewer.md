@@ -1,5 +1,5 @@
 ---
-title: Учебное руководство 1. Создание приложения для просмотра рисунков
+title: Руководство 1. Создание приложения для просмотра рисунков
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,13 +11,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b26b70b4887b792bd7a0a16bc3291d4e8fae369
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="tutorial-1-create-a-picture-viewer"></a>Учебное руководство 1. Создание приложения для просмотра рисунков
+# <a name="tutorial-1-create-a-picture-viewer"></a>Руководство 1. Создание приложения для просмотра рисунков
 В этом руководстве выполняется создание программы, которая загружает изображение из файла и отображает его в окне. Изучается процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Выполняется настройка свойств элементов управления. Изучается использование контейнеров для согласованного изменения размеров формы. Также начинается создание кода. Вы научитесь:  
 
 -   Создайте новый проект.  
@@ -39,14 +39,16 @@ ms.lasthandoff: 04/26/2018
  ![Изображение результата, создаваемого в этом учебнике](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Изображение результата, создаваемого в этом учебнике  
 
- Загрузить готовую версию примера можно на странице [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Полный пример учебного руководства по созданию приложения для просмотра рисунков).  
+## <a name="tutorial-links"></a>Ссылки на руководства
 
- ![Ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этого раздела см. на следующих страницах: [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) или [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+ Скачать готовую версию примера можно на странице с [полным примером учебного руководства по созданию приложения для просмотра рисунков](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Видеоверсию этого раздела см. на следующих страницах: [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) (Руководство. Создание приложения для просмотра рисунков на Visual Basic) и [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198) (Руководство. Создание приложения для просмотра рисунков на C#).  
 
 > [!NOTE]
 >  Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.  
 >   
->  Чтобы просмотреть код на Visual Basic, перейдите на вкладку **VB** в верхней части блока кода; чтобы просмотреть код на Visual C#, перейдите на вкладку **C#**. Если вас интересует изучение Visual C++, см. раздел [Начало работы](../ide/getting-started-with-cpp-in-visual-studio.md) и [учебник по языку C++](http://www.cplusplus.com/doc/tutorial/).  
+>  Чтобы просмотреть код на Visual Basic, перейдите на вкладку **VB** в верхней части блока кода; чтобы просмотреть код на Visual C#, перейдите на вкладку **C#**. Если вас интересует изучение Visual C++, см. [руководство по началу работы](../ide/getting-started-with-cpp-in-visual-studio.md) и [руководство по C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Если вы хотите узнать в том, как писать приложения UWP на Visual C# или Visual Basic, см. раздел [Создание приложений UWP](https://developer.microsoft.com/windows/apps).
 
@@ -60,8 +62,8 @@ ms.lasthandoff: 04/26/2018
 |[Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Добавьте элемент управления `TableLayoutPanel` в форму.|  
 |[Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md)|Добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Добавление в форму кнопок.|  
 |[Шаг 6. Присвоение имен элементам управления "Кнопка"](../ide/step-6-name-your-button-controls.md)|Назначение кнопкам понятных имен.|  
-|[Шаг 7. Добавление компонентов диалогового окна в форму](../ide/step-7-add-dialog-components-to-your-form.md)|Добавление в форму компонента **OpenFileDialog** и компонента **ColorDialog**.|  
+|[Шаг 7. Добавление компонентов диалогового окна в форму](../ide/step-7-add-dialog-components-to-your-form.md)|Добавьте в форму компоненты `OpenFileDialog` и `ColorDialog`.|  
 |[Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Создание кода с помощью средства IntelliSense.|  
 |[Шаг 9. Проверка, комментирование и тестирование кода](../ide/step-9-review-comment-and-test-your-code.md)|Просмотр и тестирование кода. Добавление необходимых комментариев.|  
 |[Шаг 10. Написание кода дополнительных кнопок и флажка](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Создание кода с помощью IntelliSense для описания поведения кнопок и флажков.|  
-|[Шаг 11. Запуск программы и изучение других возможностей](../ide/step-11-run-your-program-and-try-other-features.md)|Запуск программы и настройка цвета фона. Изучение других возможности, например, изменение цветов, шрифтов и границ.|
+|[Шаг 11. Запуск программы и изучение других функций](../ide/step-11-run-your-program-and-try-other-features.md)|Запуск программы и настройка цвета фона. Изучение других возможности, например, изменение цветов, шрифтов и границ.|

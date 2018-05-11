@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ff8408ecdf8036a6ec00bdbc3ec93f4b41a2a7fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на IIS на удаленном компьютере
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
@@ -51,6 +51,7 @@ ms.lasthandoff: 04/18/2018
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются. (Если требуется загрузить более раннюю версию удаленного отладчика из my.visualstudio.com некоторые дополнительные надежные сайты необходимы для входа.)
 
@@ -59,6 +60,8 @@ ms.lasthandoff: 04/18/2018
 ## <a name="BKMK_deploy_asp_net"></a> Установка ASP.NET 4.5 на Windows Server
 
 Если требуется более подробные сведения для установки ASP.NET на IIS, см. раздел [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+
+1. В левой области диспетчера серверов выберите **IIS**. Щелкните правой кнопкой мыши сервер и выберите **Диспетчер Internet Information Services (IIS)**.
 
 1. Используйте установщик веб-платформы (WebPI) для установки ASP.NET 4.5 (с узла сервера в Windows Server 2012 R2, выберите **получить новые компоненты платформы Web** и выполните поиск ASP.NET)
 
@@ -79,7 +82,7 @@ ms.lasthandoff: 04/18/2018
 
 1. Откройте проводник Windows и создайте новую папку **C:\Publish**, где будут развернуты позднее проекта ASP.NET.
 
-2. Откройте **Internet Information Services (IIS) Manager**. (В левой панели диспетчера серверов выберите **IIS**. Щелкните правой кнопкой мыши сервер и выберите **Диспетчер Internet Information Services (IIS)**.)
+2. Если он не открыт, откройте **Диспетчер Internet Information Services (IIS)**. (В левой панели диспетчера серверов выберите **IIS**. Щелкните правой кнопкой мыши сервер и выберите **Диспетчер Internet Information Services (IIS)**.)
 
 3. В разделе **подключений** в левой области выберите **узлы**.
 
