@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Получите копию языка Perl.  
   
-2.  Получите копию скрипта ConvertCTCToVSCT.pl, Perl, обычно находится в  *\<путь установки Visual Studio SDK >*папки \VisualStudioIntegration\Tools\bin.  
+2.  Получите копию скрипта ConvertCTCToVSCT.pl, Perl, обычно находится в  *\<путь установки Visual Studio SDK >* папки \VisualStudioIntegration\Tools\bin.  
   
 3.  Получите копию исходного файла CTC, который нужно преобразовать.  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  В командной строке Visual Studio перейдите в каталог, содержащий файлы CTO и CTSYM.  
   
-4.  Тип **vsct.exe** *ctofilename *** .cto** * vsctfilename***.vsct -S***symfilename ***.ctsym**.  
+4.  Тип **vsct.exe** *ctofilename *** .cto** * vsctfilename ***.vsct -S***symfilename ***.ctsym**.  
   
      `ctofilename` Имя файла cto `vsctfilename` имя файла vsct, который нужно создать, и `symfilename` имя файла ctsym.  
   
