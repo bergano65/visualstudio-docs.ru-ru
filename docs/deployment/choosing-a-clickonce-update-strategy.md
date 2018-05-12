@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Выбор стратегии обновления ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] может предоставлять автоматические обновления приложения. Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения периодически читает файл своего манифеста развертывания, чтобы увидеть, доступны ли обновления приложения. Если обновление доступно, загружается и выполняется новая версия приложения. Для обеспечения эффективности работы загружаются только измененные файлы.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  Для обновлений приложений необходима связность узлов сети. Если сетевое подключение отсутствует, приложение выполняется без проверки наличия обновлений независимо от выбранной стратегии обновлений.  
   
 > [!NOTE]
->  В .NET Framework 2.0 и .NET Framework 3.0 при проверке приложением наличия обновлений в любое время, до или после запуска, либо с помощью API-функции <xref:System.Deployment.Application> необходимо установить параметр `deploymentProvider` в манифесте развертывания. `deploymentProvider` Элемент соответствует в Visual Studio для **обновить расположение** на **обновления** диалоговое окно **публикации** вкладки. Это правило опускается в .NET Framework 3.5. Дополнительные сведения см. в разделе [развертывание ClickOnce приложения для тестирования и рабочих серверов без Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+>  В .NET Framework 2.0 и .NET Framework 3.0 при проверке приложением наличия обновлений в любое время, до или после запуска, либо с помощью API-функции <xref:System.Deployment.Application> необходимо установить параметр `deploymentProvider` в манифесте развертывания. `deploymentProvider` Элемент соответствует в Visual Studio для **обновить расположение** на **обновления** диалоговое окно **публикации** вкладки. Это правило опускается в .NET Framework 3.5. Дополнительные сведения см. в разделе [развертывание ClickOnce приложения для тестирования и рабочих серверов без Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Проверка наличия обновлений после запуска приложения  
  Используя эту стратегию, приложение пытается найти и прочитать файл манифеста развертывания в фоновом режиме во время работы приложения. Если обновление доступно, при следующем запуске пользователем приложения будет выведен запрос на загрузку и установку обновления.  

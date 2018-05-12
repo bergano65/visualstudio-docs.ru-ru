@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на IIS на удаленном компьютере
 Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
@@ -74,11 +74,17 @@ ms.lasthandoff: 05/10/2018
 
 2. Перезагрузку системы (или выполните **net stop был /y** следуют **net start w3svc** из командной строки, чтобы отобразить изменение в системе путь).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Необязательно) Установка веб-развертывания 3.6 для размещения серверов в Windows Server
+
+В некоторых сценариях может быть быстрее параметры импорта публикации в Visual Studio вместо того чтобы вручную настраивать параметры развертывания. Если вы предпочитаете импорта параметров вместо настройки профиля публикации в Visual Studio публикации см. в разделе [Импорт параметров публикации и развертывание в IIS](../deployment/tutorial-import-publish-settings-iis.md). В противном случае остаются в этом разделе и продолжите чтение. По завершении работы статьи по импорту параметров публикации и развертывания приложения успешно, затем вернитесь на в этом разделе и запустить в разделе на [загрузки инструментов удаленной отладки](#BKMK_msvsmon).
+
 ## <a name="BKMK_install_webdeploy"></a> (Необязательно) Установка веб-развертывания 3.6 в Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> Настройка веб-сайта ASP.NET на сервере Windows Server
+
+При импорте параметров публикации, данный раздел можно пропустить.
 
 1. Откройте проводник Windows и создайте новую папку **C:\Publish**, где будут развернуты позднее проекта ASP.NET.
 

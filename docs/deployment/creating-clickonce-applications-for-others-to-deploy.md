@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Создание приложений ClickOnce для развертывания другими
 Не все разработчики, создающие развертывания ClickOnce планируется развертывать приложения сами. Многие из них просто упаковывают свое приложение с помощью ClickOnce и затем передают файлы клиенту, например большой корпорации. Клиент становится ответственным за размещение приложения в своей сети. В этом разделе рассматриваются некоторые из проблем, возникающих в этих развертываниях в версиях .NET Framework, предшествующих версии 3.5. Затем он описывает новое решение, предоставляемое с помощью новой функции «использовать манифест для доверия» в .NET Framework 3.5. В заключение приводятся рекомендуемые стратегии создания развертываний ClickOnce для клиентов, которые по-прежнему использовать старые версии платформы .NET Framework.  
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/19/2018
   
  С помощью самозаверяющего сертификата для манифеста развертывания представляет несколько преимуществ. Устраняя необходимость для клиента, чтобы получить или создать свой собственный сертификат Authenticode `<useManifestForTrust>` упрощает развертывание для клиента, при этом разрешая разработчику сохранять свой фирменный в приложении. Результат — это набор подписанных развертываний, которые являются более безопасными и имеют уникальные удостоверения приложений. Это устраняет потенциальный конфликт, который может возникнуть при развертывании одного приложения для нескольких клиентов.  
   
- Пошаговые инструкции о способах создания развертывания ClickOnce с `<useManifestForTrust>` включен, в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce, Does не требуют Re-Signing и что сохраняет сведения об](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Пошаговые инструкции о способах создания развертывания ClickOnce с `<useManifestForTrust>` включен, в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce, Does не требуют Re-Signing и что сохраняет сведения об](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Манифеста приложения для доверия работает во время выполнения  
  Чтобы получить лучшее представление о принципах работы с помощью манифеста приложения для доверия во время выполнения, рассмотрим следующий пример. Приложения ClickOnce, ориентированном на .NET Framework 3.5 создается корпорацией Майкрософт. Манифест приложения использует `<useManifestForTrust>` элемент и подписываемых Microsoft. Adventure Works подписывает манифест развертывания, используя самозаверяющий сертификат. Adventure Works, настроенные на доверие любому приложению, подписанные Майкрософт.  
@@ -99,6 +99,6 @@ ms.lasthandoff: 04/19/2018
  Недостаток этого метода является необходимость клиента необходимо установить средства .NET Framework SDK и иметь разработчик или системный администратор, квалифицированный на их использование. Некоторые клиенты могут запросить решение, которое требует почти никаких технических усилий с их стороны.  
   
 ## <a name="see-also"></a>См. также  
- [Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [Пошаговое руководство. Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

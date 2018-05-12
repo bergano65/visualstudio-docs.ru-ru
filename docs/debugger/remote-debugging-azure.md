@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на сервере IIS в Azure в Visual Studio 2017 г.
 
@@ -110,11 +110,17 @@ ms.lasthandoff: 05/10/2018
 
 3. Перезагрузку системы (или выполните **net stop был /y** следуют **net start w3svc** из командной строки, чтобы отобразить изменение в системе путь).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Необязательно) Установка веб-развертывания 3.6 для размещения серверов в Windows Server
+
+В некоторых сценариях может быть быстрее параметры импорта публикации в Visual Studio вместо того чтобы вручную настраивать параметры развертывания. Если вы предпочитаете импорта параметров вместо настройки профиля публикации в Visual Studio публикации см. в разделе [Импорт параметров публикации и развертывание в IIS](../deployment/tutorial-import-publish-settings-iis.md). В противном случае остаются в этом разделе и продолжите чтение. По завершении работы статьи по импорту параметров публикации и развертывания приложения успешно, затем вернитесь на в этом разделе и запустить в разделе на [загрузки инструментов удаленной отладки](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (Необязательно) Установка веб-развертывания 3.6 в Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Настройка веб-узла ASP.NET на сервере Windows Server
+
+При импорте параметров публикации, данный раздел можно пропустить.
 
 1. Откройте **Диспетчер служб IIS** и перейдите к разделу **Сайты**.
 

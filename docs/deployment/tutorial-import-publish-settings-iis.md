@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS путем импорта параметров публикации в Visual Studio
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/10/2018
 > * Импортировать файл параметров публикации в Visual Studio
 > * Развертывание приложения в IIS
 
-Файл параметров публикации (\*.publishsettings) отличается от профиля публикации (\*.pubxml), созданных в Visual Studio. Файл параметров публикации создается в службах IIS или службе приложений Azure, или его можно создать вручную и затем его можно импортировать в Visual Studio.
+Файл параметров публикации (*\*.publishsettings*) отличается от профиля публикации (*\*.pubxml*), созданных в Visual Studio. Файл параметров публикации создается в службах IIS или службе приложений Azure, или его можно создать вручную и затем его можно импортировать в Visual Studio.
 
 > [!NOTE]
 > Если требуется скопировать Visual Studio профиль публикации (\*pubxml-файл) с одной установки Visual Studio на другую, можно найти профиль публикации,  *\<profilename\>.pubxml*, в  *\\< имя_проекта\>\Properties\PublishProfiles* папку для типов управляемых проектов. Веб-сайтов, см. в разделе *\App_Data* папки. Профили публикации являются файлами MSBuild XML.
@@ -44,7 +44,7 @@ ms.lasthandoff: 05/10/2018
 
     Шаги в этой статье основаны на Visual Studio 2017 г.
 
-* Чтобы создать файл параметров публикации из служб IIS, необходимо установить другой компьютер под управлением Windows Server 2012 с веб-сервера IIS 8.0 ролью правильно настроены и либо ASP.NET 4.5 или ASP.NET Core. ASP.NET Core. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Чтобы создать файл параметров публикации на основе IIS, необходимо иметь компьютер под управлением Windows Server 2012 с ролью веб-сервера IIS 8.0 правильно настроены и ASP.NET 4.5 или ASP.NET Core установлены. ASP.NET Core. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Создайте новый проект ASP.NET в Visual Studio
 

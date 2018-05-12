@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в службе приложений Azure путем импорта параметров публикации в Visual Studio
 
 Можно использовать **публикации** , которая позволяет импортировать параметры публикации, а затем развернуть приложение. В этой статье мы используем параметры публикации для службы приложений Azure, но можно использовать аналогичные действия, чтобы импортировать параметры из публикации [IIS](../deployment/tutorial-import-publish-settings-iis.md). В некоторых случаях использование публикации, параметры профиля можно быстрее, чем Ручная настройка развертывания службы для каждой установки Visual Studio.
 
-Эти шаги применимы к приложениям ASP.NET, .NET Core и ASP.NET Core в Visual Studio. Шаги соответствуют версии 15,6 2017 г. Visual Studio.
+Эти шаги применимы к приложениям ASP.NET, .NET Core и ASP.NET Core в Visual Studio. Вы также можете импортировать параметры публикации для [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) приложений. Шаги соответствуют версии 15,6 2017 г. Visual Studio.
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 05/10/2018
 > * Импортировать файл параметров публикации в Visual Studio
 > * Развертывание приложения в службе приложений Azure
 
-Файл параметров публикации (*.publishsettings) отличается от профиля публикации (*.pubxml), созданных в Visual Studio. Файл параметров публикации создается службой приложений Azure, и его можно было импортировать в Visual Studio.
+Файл параметров публикации (*\*.publishsettings*) отличается от профиля публикации (*\*.pubxml*), созданных в Visual Studio. Файл параметров публикации создается службой приложений Azure, и его можно было импортировать в Visual Studio.
 
 > [!NOTE]
-> Если требуется скопировать Visual Studio профиль публикации (\*pubxml-файл) с одной установки Visual Studio на другую, можно найти профиль публикации,  *\<profilename\>.pubxml*, в  *\\< имя_проекта\>\Properties\PublishProfiles* папку для типов управляемых проектов. Веб-сайтов, см. в разделе *\App_Data* папки. Профили публикации являются файлами MSBuild XML.
+> Если требуется скопировать Visual Studio профиль публикации (*\*.pubxml* файл) с одной установки Visual Studio на другую, можно найти профиль публикации,  *\<profilename\>.pubxml*в  *\\< имя_проекта\>\Properties\PublishProfiles* папку для типов управляемых проектов. Веб-сайтов, см. в разделе *\App_Data* папки. Профили публикации являются файлами MSBuild XML.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
