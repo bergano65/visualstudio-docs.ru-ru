@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2904e329e26fe588553745f3a9d6ca8a572b5c83
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Руководство (шаг 2). Создание приложения Django с представлениями и шаблонами страниц
 
@@ -278,4 +278,4 @@ def index(request):
 - [Write your first view](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (Написание первого представления) (docs.djangoproject.com)
 - Дополнительные сведения о возможностях шаблонов Django, таких как включение и наследование, см. в статье [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Язык шаблона Django) (docs.djangoproject.com)
 - [Regular Expressions](https://www.linkedin.com/learning/topics/regular-expressions) (Регулярные выражения) (LinkedIn)
-- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

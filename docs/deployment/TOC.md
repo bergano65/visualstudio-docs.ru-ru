@@ -14,6 +14,8 @@
 ### [Построение ClickOnce-приложений из командной строки](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [Публикация приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Импорт параметров публикации и развертывание в Azure](tutorial-import-publish-settings-azure.md)
+### [Импорт параметров публикации и развертывание в IIS](tutorial-import-publish-settings-iis.md)
 ### [Непрерывное развертывание ASP.NET Core в Azure с помощью Git](/aspnet/core/publishing/azure-continuous-deployment)
 ### [Развертывание ASP.NET в службах IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## машинный код;
@@ -48,7 +50,7 @@
 #### [Практическое руководство. Подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)](how-to-sign-setup-files-with-signtool-exe-clickonce.md)
 ### [Публикация приложений ClickOnce](publishing-clickonce-applications.md)
 #### [Создание приложений ClickOnce для развертывания другими](creating-clickonce-applications-for-others-to-deploy.md)
-#### [Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания](deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)
+#### [Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания](deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 #### [Доступ к локальным и удаленным данным в приложениях ClickOnce](accessing-local-and-remote-data-in-clickonce-applications.md)
 #### [Развертывание компонентов COM с помощью ClickOnce](deploying-com-components-with-clickonce.md)
 #### [Построение ClickOnce-приложений из командной строки](building-clickonce-applications-from-the-command-line.md)
@@ -80,7 +82,7 @@
 ##### [Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce](walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 #### [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора](walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)
 #### [Разбор примера: развертывание вручную приложения ClickOnce](walkthrough-manually-deploying-a-clickonce-application.md)
-##### [Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику](walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+##### [Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику](walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
 #### [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью интерфейса API технологии развертывания ClickOnce](walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 #### [Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce](walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)
 ### [Выбор стратегии обновления ClickOnce](choosing-a-clickonce-update-strategy.md)

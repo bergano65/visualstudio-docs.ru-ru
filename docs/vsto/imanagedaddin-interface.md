@@ -17,7 +17,7 @@ ms.workload:
 - office
 ms.openlocfilehash: d626257d3a2683a6fbb6032e8053572fd1301645
 ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
 ---
@@ -64,7 +64,7 @@ interface IManagedAddin : IUnknown
   
 2.  Приложение ищет запись `Manifest` под записью для каждой надстройки VSTO.  
   
-     Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` запись в HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<имя приложения >* \Addins\\  *\<ИД надстройки >*. Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.  
+     Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` запись в HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<имя приложения>* \Addins\\*\<ИД надстройки>*. Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.  
   
 3.  Если приложение находит запись `Manifest` , приложение пытается загрузить компонент загрузчика управляемой надстройки VSTO. Приложение делает это, пытаясь создать COM-объект, реализующий интерфейс IManagedAddin.  
   

@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Добавление данных взаимодействия уровней из командной строки
 
@@ -54,20 +54,20 @@ ms.lasthandoff: 04/19/2018
 
 2. Инициализируйте профилирование .NET и переменные среды TIP. Введите следующие команды:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Запуск профилировщика. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Запустите приложение с помощью программы VSPerfCmd. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 04/19/2018
 
 6. Сбросьте переменные среды TIP. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ ms.lasthandoff: 04/19/2018
 
 3. Инициализируйте переменные среды профилирования .NET. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. Инициализируйте переменные среды TIP. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 04/19/2018
 
 7. Запуск профилировщика. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ ms.lasthandoff: 04/19/2018
 
 9. Подключите профилировщик к службе. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ ms.lasthandoff: 04/19/2018
 
 12. Сбросьте переменные среды профилирования .NET и TIP. Введите следующую команду:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ ms.lasthandoff: 04/19/2018
 
 Чтобы добавить сведения об уровневом взаимодействии в данные профилирования, собранные с помощью VSPerfASPNETCmd, добавьте в командную строку параметр **/TIP**. Например, используйте следующую командную строку для сбора данных об уровневом взаимодействии для веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] с помощью метода инструментирования:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

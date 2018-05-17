@@ -1,15 +1,15 @@
 ---
 title: Вход в Visual Studio для Mac
-description: ''
+description: Вход в Visual Studio для Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 60af04ec6a26e5f60ba2b1d95cf8e9e17e868e8a
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
 
@@ -25,17 +25,17 @@ ms.lasthandoff: 04/20/2018
 
 1. Щелкните ссылку "Войти" на странице приветствия, чтобы отобразить диалоговое окно учетных записей, и нажмите кнопку **Войти**:
 
-    ![](media/signing-in-image12.png)
+    ![Диалоговое окно учетных записей в Visual Studio для Mac](media/signing-in-image12.png)
 
 2. Введите учетные данные Майкрософт:
 
-    ![](media/signing-in-image13.png)
+    ![Диалоговое окно учетных данных Microsoft](media/signing-in-image13.png)
 
     Для входа в Visual Studio для Mac вы не можете использовать учетные данные Xamarin.
 
 3.  После успешного входа вы увидите тип своей лицензии. В этом диалоговом окне можно добавить дополнительные учетные записи Майкрософт, которые требуется использовать:
 
-    ![](media/signing-in-image14.png)
+    ![Вход успешно выполнен](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>Добавление нескольких учетных записей
 

@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о конфигурациях построения
+title: Общие сведения о конфигурациях сборок
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -27,20 +27,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf3523a017b30a837e0d6cf8805d399a424a9c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-build-configurations"></a>Общие сведения о конфигурациях сборок
 
-Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка**, **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.
+Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка** > **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.
 
 > [!NOTE]
 > Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Дополнительные сведения см. в разделе [Управление конфигурациями сборок с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-По умолчанию конфигурации отладки и выпусков включены в проекты, которые создаются с использованием шаблонов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Конфигурация отладки поддерживает отладку приложения, а конфигурация выпусков выполняет сборку версии приложения, которую можно развернуть. Дополнительные сведения см. в разделе [Настройка конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md). Можно также создать пользовательские конфигурации решений и проектов. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).
+По умолчанию конфигурации отладки и выпусков включены в проекты, которые создаются с использованием шаблонов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Конфигурация отладки поддерживает отладку приложения, а конфигурация выпусков выполняет сборку версии приложения, которую можно развернуть. Дополнительные сведения см. в пошаговом руководстве по [настройке конфигураций отладки и выпусков](../debugger/how-to-set-debug-and-release-configurations.md). Можно также создать пользовательские конфигурации решений и проектов. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Конфигурации решения
 
@@ -86,8 +86,8 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md)
-- [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)
-- [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)
-- [Справочные сведения о сборке C/C++](/cpp/build/reference/c-cpp-building-reference)
-- [Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)
+- [Пошаговое руководство. Сборка приложения](../ide/walkthrough-building-an-application.md)
+- [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)
+- [Проекты и решения](../ide/solutions-and-projects-in-visual-studio.md)
+- [Образец построения C/C++](/cpp/build/reference/c-cpp-building-reference)
+- [Параметры командной строки для команды devenv](../ide/reference/devenv-command-line-switches.md)

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Профилирование из командной строки с помощью выборки
 
@@ -54,13 +54,13 @@ ms.lasthandoff: 04/19/2018
 
 4. Установите соответствующие переменные среды с помощью следующей команды:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Начните профилирование, запустив файл VSPerfCmd.exe, который является программой командной строки для управления профилировщиком. Запуск приложения и профилировщика в режиме выборки выполняется следующей командой:
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ ms.lasthandoff: 04/19/2018
 
 9. Завершите работу профилировщика. Введите следующую команду:
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Сбросьте переменные среды с помощью следующей команды:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/19/2018
 
     - Создайте файл значений, разделенных запятыми (CSV), с помощью программы командной строки VSPerfReport.exe. Для создания отчетов с целью использования вне интегрированной среды разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] используйте следующую команду:
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Шаг 6 руководства. Использование шаблона "Веб-проект опроса Django"
 
@@ -361,7 +361,7 @@ admin.site.register(Poll, PollAdmin)
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!Note]
-> Если вы зафиксировали свое решение Visual Studio с системой управления исходным кодом в ходе работы с этим руководством, настало время сделать другую фиксацию. Ваше решение должно соответствовать исходному коду руководства на сайте GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+> Если вы зафиксировали свое решение Visual Studio с системой управления исходным кодом в ходе работы с этим руководством, настало время сделать другую фиксацию. Ваше решение должно соответствовать исходному коду руководства на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Вы узнали все о шаблонах "Пустой веб-проект Django", "Веб-проект Django" и "Веб-проект опроса Django" в Visual Studio. Вы ознакомились с основами Django, а именно с использованием представлений и шаблонов, и изучили маршрутизацию, проверку подлинности и использование моделей базы данных. Теперь вы можете создать свое собственное веб-приложение с любыми необходимыми представлениями и моделями.
 

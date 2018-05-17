@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/26/2018
 
    ![Список ошибок](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. В окне редактора установите курсор в любую строку с ошибкой, а затем выберите **меню лампочки "Быстрые действия"** в левом поле. В раскрывающемся меню выберите **using System;**, чтобы добавить эту директиву в начало файла и разрешить ошибки.
+1. В окне редактора установите курсор в любую строку с ошибкой, а затем выберите меню лампочки "Быстрые действия" в левом поле. В раскрывающемся меню выберите **using System;**, чтобы добавить эту директиву в начало файла и разрешить ошибки.
 
 ## <a name="run-the-application"></a>Запуск приложения
 

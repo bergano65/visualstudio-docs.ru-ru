@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8dba33c4ff90f3066c8333870c5d18c371b5fb2a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Руководство (шаг 3). Обработка статических файлов, добавление страниц и использование наследования шаблонов
 
@@ -283,4 +283,4 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 - [Writing your first Django app, part 3](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (Написание первого приложения Django (часть 3)) (docs.djangoproject.com)
 - Дополнительные сведения о возможностях шаблонов Django, таких как поток управления, см. в статье [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Язык шаблона Django) (docs.djangoproject.com).
 - Подробные сведения об использовании тега `{% url %}` см. в разделе [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) в статье [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (Встроенные теги и фильтры шаблонов для ссылки на шаблоны Django) (docs.djangoproject.com).
-- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

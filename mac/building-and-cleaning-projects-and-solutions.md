@@ -1,15 +1,15 @@
 ---
-title: Сборка и очистка проектов и решений
-description: ''
+title: Создание и очистка проектов и решений в Visual Studio для Mac
+description: В этой статье описывается создание проектов в Visual Studio для Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 746aefbee359313e6e8a5f0e3b8387cb5eff9a16
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Сборка и очистка проектов и решений
 
@@ -21,11 +21,11 @@ ms.lasthandoff: 04/20/2018
 
 1. На панели решения выберите узел "Решение":
 
-    ![](media/compiling-and-building-image1.png)
+    ![Выбор узла решения](media/compiling-and-building-image1.png)
 
 2. Выберите меню "Сборка" в строке меню и один из следующих параметров:
 
-    ![](media/compiling-and-building-image2.png)
+    ![Выбор элемента меню "Собрать все"](media/compiling-and-building-image2.png)
 
     * **Собрать все** — пытается собрать все файлы в проекте, которые были изменены с момента последней сборки.
     * **Перестроить все** — очищает решение и затем собирает его.

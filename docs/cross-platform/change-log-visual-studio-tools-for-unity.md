@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Журнал изменений (инструменты Visual Studio для Unity, Windows)
 Журнал изменений в наборе средств Visual Studio для Unity
@@ -84,7 +84,7 @@ ms.lasthandoff: 04/16/2018
 -   **Интеграция:**
 
     -   Перезагрузка проектов только при внешних изменениях (с регулированием).
- 
+
 ## <a name="3601"></a>3.6.0.1
  Выпущено 24.01.2018
 
@@ -93,9 +93,9 @@ ms.lasthandoff: 04/16/2018
 -   **Интеграция:**
 
     -   Исправлено автоматическое преобразование отладочных символов PDB в MDB.
-    
+
     -   Исправлен непрямой вызов EditorPrefs.GetBool, оказывающий влияние на инспектор при попытке изменить размер массива.
- 
+
 ## <a name="3600"></a>3.6.0.0
  Выпущено 10.01.2018
 
@@ -112,7 +112,7 @@ ms.lasthandoff: 04/16/2018
 -   **Отладчик:**
 
     -   Добавлена поддержка атрибутов DebuggerHidden/DebuggerStepThrough в новой среде выполнения Unity.
-    
+
 -   **Мастера:**
 
     -   Выпущена последняя версия для мастеров.
@@ -126,7 +126,7 @@ ms.lasthandoff: 04/16/2018
 -   **Отладчик:**
 
     -   Исправлено состояние гонки при обработке критических событий.
-    
+
 -   **Мастера:**
 
     -   Обновление контекста roslyn перед вставкой метода.

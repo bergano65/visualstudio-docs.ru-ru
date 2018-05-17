@@ -1,20 +1,21 @@
 ---
 title: Действия при сборке
+description: В этой статье описываются различные действия сборки, которые могут использоваться для проектов C#
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-actions"></a>Действия при сборке
 
 Все файлы в проекте Visual Studio для Mac имеют действие при сборке, которое определяет, что происходит с файлом во время сборки. Его можно настроить, щелкнув правой кнопкой мыши любой файл и выбрав **Действие при сборке**, как показано ниже:
 
-![](media/projects-and-solutions-image1.png)
+![Выбор действия сборки Compile в обозревателе решений](media/projects-and-solutions-image1.png)
 
 Ниже приведены некоторые распространенные действия при сборке для проектов C#:
 

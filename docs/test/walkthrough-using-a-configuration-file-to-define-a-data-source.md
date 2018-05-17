@@ -13,59 +13,59 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 
 В этом пошаговом руководстве демонстрируется использование источника данных, определенного в файле *app.config*, для модульного тестирования. Вы узнаете, как создать файл app.config, определяющий источник данных, который может использоваться классом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. В данном пошаговом руководстве представлены следующие задачи:
 
--   создание файла app.config;
+- создание файла app.config;
 
--   определение настраиваемого раздела конфигурации;
+- определение настраиваемого раздела конфигурации;
 
--   определение строк подключения;
+- определение строк подключения;
 
--   определение источников данных;
+- определение источников данных;
 
--   доступ к источникам данных с помощью класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
+- доступ к источникам данных с помощью класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Для выполнения данного пошагового руководства требуется:
 
--   Visual Studio Enterprise
+Для выполнения данного пошагового руководства требуется:
 
--   Microsoft Access или Microsoft Excel для предоставления данных хотя бы для одного из методов теста;
+- Visual Studio Enterprise
 
--   решение Visual Studio, содержащее тестовый проект.
+- Microsoft Access или Microsoft Excel для предоставления данных хотя бы для одного из методов теста;
 
-## <a name="create-the-appconfig-file"></a>Создание файла app.config
+- решение Visual Studio, содержащее тестовый проект.
 
-### <a name="to-add-an-appconfig-file-to-the-project"></a>Добавьте к проекту следующий файл app.config.
+## <a name="add-an-appconfig-file-to-the-project"></a>Добавление к проекту файла app.config
 
-1.  Если файл app.config уже существует в тестовом проекте, переходите к разделу [Определение настраиваемого раздела конфигурации](#DefineCustomConfigurationSection).
+1. Если файл app.config уже существует в тестовом проекте, переходите к разделу [Определение настраиваемого раздела конфигурации](#DefineCustomConfigurationSection).
 
-2.  Щелкните проект правой кнопкой мыши в окне **обозревателя решений**, наведите указатель на пункт **Добавить** и выберите **Новый элемент**.
+2. Щелкните тестовый проект правой кнопкой мыши в **обозревателе решений** и выберите **Добавить** > **Новый элемент**.
 
      Откроется окно **Добавление нового элемента**.
 
-3.  Выберите шаблон **Файл конфигурации приложения** и нажмите кнопку **Добавить**.
+3. Выберите шаблон **Файл конфигурации приложения** и нажмите кнопку **Добавить**.
 
 ##  <a name="DefineCustomConfigurationSection"></a> Определение настраиваемого раздела конфигурации
- Просмотрите файл app.config. Он содержит как минимум объявление XML и корневой элемент.
+
+Просмотрите файл *app.config*. Он содержит как минимум объявление XML и корневой элемент.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Добавление настраиваемого раздела конфигурации в файл app.config
 
-1.  Корневым элементом файла app.config должен быть элемент `configuration`. Создайте элемент `configSections` в элементе `configuration`. `configSections` должен быть первым элементом в файле app.config.
+1. Корневым элементом файла app.config должен быть элемент **configuration**. Создайте элемент **configSections** в элементе **configuration**. **configSections** должен быть первым элементом в файле *app.config*.
 
-2.  В элементе `configSections` создайте элемент `section`.
+2. В элементе **configSections** создайте элемент **section**.
 
-3.  В элементе `section` добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. В элементе **section** добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
 
- Элемент `section` должен выглядеть примерно следующим образом.
+Элемент **section** должен принять следующий вид:
 
 ```
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
@@ -74,17 +74,17 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > Имя сборки должно соответствовать сборке .NET Framework Microsoft Visual Studio, которую вы используете. При использовании .NET Framework 3.5 Visual Studio задайте в качестве значения версии 9.0.0.0. Если вы используете .NET Framework 2.0 Visual Studio, задайте версию 8.0.0.0.
 
-
 ## <a name="define-connection-strings"></a>Определение строк подключения
- Строки подключения определяют сведения, относящиеся к конкретному поставщику, для доступа к источникам данных. Строки подключения, определенные в файлах конфигурации, предоставляют сведения о поставщике данных для повторного использования в приложении. В этом разделе создайте две строки подключения, которые будут использоваться источниками данных, определенными в настраиваемом разделе конфигурации.
+
+Строки подключения определяют сведения, относящиеся к конкретному поставщику, для доступа к источникам данных. Строки подключения, определенные в файлах конфигурации, предоставляют сведения о поставщике данных для повторного использования в приложении. В этом разделе создайте две строки подключения, которые будут использоваться источниками данных, определенными в настраиваемом разделе конфигурации.
 
 ### <a name="to-define-connection-strings"></a>Определение строк подключения
 
-1.  После элемента `configSections` создайте элемент `connectionStrings`.
+1. После элемента **configSections** создайте элемент **connectionStrings**.
 
-2.  В элементе `connectionStrings` создайте два элемента `add`.
+2. В элементе **connectionStrings** создайте два элемента **add**.
 
-3.  В первом элементе `add` создайте следующие атрибуты и значения для подключения к базе данных Microsoft Access.
+3. В первом элементе **add** создайте следующие атрибуты и значения для подключения к базе данных Microsoft Access:
 
 |Атрибут|Значения|
 |---------------|------------|
@@ -92,45 +92,46 @@ ms.lasthandoff: 04/26/2018
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
 
- Во втором элементе `add` создайте следующие атрибуты и значения для подключения к таблице Microsoft Excel.
+Во втором элементе **add** создайте следующие атрибуты и значения для подключения к таблице Microsoft Excel:
 
 |||
 |-|-|
 |`name`|`"MyExcelConn"`|
-|`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
+|`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
 |`providerName`|`"System.Data.Odbc"`|
 
- Элемент `connectionStrings` должен выглядеть примерно следующим образом.
+Элемент **connectionStrings** должен принять следующий вид:
 
 ```
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
-    <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
+    <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
 </connectionStrings>
 ```
 
 ## <a name="define-data-sources"></a>Определение источников данных
- Раздел источников данных содержит четыре атрибута, которые используются тестовой подсистемой для получения данных из источника данных.
 
--   `name` определяет удостоверение, используемое <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> для указания источника данных для использования.
+Раздел источников данных содержит четыре атрибута, которые используются тестовой подсистемой для получения данных из источника данных.
 
--   `connectionString` определяет строку подключения, созданную в предыдущем разделе "Определение строк подключения".
+- `name` определяет удостоверение, используемое <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> для указания источника данных для использования.
 
--   `dataTableName` определяет таблицу или лист, которые содержат данные, используемые в тесте.
+- `connectionString` определяет строку подключения, созданную в предыдущем разделе "Определение строк подключения".
 
--   `dataAccessMethod` определяет способ доступа к значениям данных в источнике данных.
+- `dataTableName` определяет таблицу или лист, которые содержат данные, используемые в тесте.
 
- В этом разделе мы определим два источника данных для использования в модульном тесте.
+- `dataAccessMethod` определяет способ доступа к значениям данных в источнике данных.
+
+В этом разделе мы определим два источника данных для использования в модульном тесте.
 
 ### <a name="to-define-data-sources"></a>Определение источников данных
 
-1.  После элемента `connectionStrings` создайте элемент `microsoft.visualstudio.testtools`. Этот раздел файла был создан в разделе "Определение настраиваемого раздела конфигурации".
+1. После элемента **connectionStrings** создайте элемент **microsoft.visualstudio.testtools**. Этот раздел файла был создан в разделе "Определение настраиваемого раздела конфигурации".
 
-2.  В элементе `microsoft.visualstudio.testtools` создайте элемент `dataSources`.
+2. В элементе **microsoft.visualstudio.testtools** создайте элемент **dataSources**.
 
-3.  В элементе `dataSources` создайте два элемента `add`.
+3. В элементе **dataSources** создайте два элемента **add**.
 
-4.  В первом элементе `add` создайте следующие атрибуты и значения для источника данных Microsoft Access.
+4. В первом элементе **add** создайте следующие атрибуты и значения для источника данных Microsoft Access:
 
 |Атрибут|Значения|
 |---------------|------------|
@@ -139,7 +140,7 @@ ms.lasthandoff: 04/26/2018
 |`dataTableName`|`"MyDataTable"`|
 |`dataAccessMethod`|`"Sequential"`|
 
- Во втором элементе `add` создайте следующие атрибуты и значения для источника данных Microsoft Excel.
+Во втором элементе **add** создайте следующие атрибуты и значения для источника данных Microsoft Excel:
 
 |||
 |-|-|
@@ -148,7 +149,7 @@ ms.lasthandoff: 04/26/2018
 |`dataTableName`|`"Sheet1$"`|
 |`dataAccessMethod`|`"Sequential"`|
 
-Элемент `microsoft.visualstudio.testtools` должен выглядеть примерно следующим образом.
+Элемент **microsoft.visualstudio.testtools** должен принять следующий вид:
 
 ```xml
 <microsoft.visualstudio.testtools>
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/26/2018
 </microsoft.visualstudio.testtools>
 ```
 
-Окончательный файл app.config должен выглядеть примерно следующим образом.
+Окончательный файл *app.config* должен принять следующий вид:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -169,7 +170,7 @@ ms.lasthandoff: 04/26/2018
     </configSections>
     <connectionStrings>
         <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
-        <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
+        <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
     </connectionStrings>
     <microsoft.visualstudio.testtools>
         <dataSources>
@@ -180,46 +181,47 @@ ms.lasthandoff: 04/26/2018
 </configuration>
 ```
 
-## <a name="create-a-unit-test-using-data-sources-defined-in-appconfig"></a>Создание модульного теста с помощью источников данных, определенных в файле app.config
- Определив файл app.config, мы создадим модульный тест, использующий данные, находящиеся в источниках данных, которые определены в файле app.config. В этом разделе мы рассмотрим:
+## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Создание модульного теста, использующего источники данных, определенные в файле app.config
 
--   создание источников данных, определенных в файле app.config;
+Определив файл app.config, мы создадим модульный тест, использующий данные, находящиеся в источниках данных, которые определены в файле app.config. В этом разделе мы рассмотрим:
 
--   использование источников данных в двух методах теста, сравнивающих значения в каждом источнике данных.
+- создание источников данных, определенных в файле app.config;
+
+- использование источников данных в двух методах теста, сравнивающих значения в каждом источнике данных.
 
 ### <a name="to-create-a-microsoft-access-data-source"></a>Создание источника данных Microsoft Access
 
-1.  Создайте файл базы данных Microsoft Access с именем `testdatasource.accdb`.
+1. Создайте файл базы данных Microsoft Access с именем *testdatasource.accdb*.
 
-2.  Создайте таблицу с именем `MyDataTable` в `testdatasource.accdb`.
+2. Создайте таблицу с именем `MyDataTable` в *testdatasource.accdb*.
 
-3.  Создайте два поля в таблице `MyDataTable` с именем `Arg1` и `Arg2`, используя тип данных `Number`.
+3. Создайте два поля в таблице `MyDataTable` с именем `Arg1` и `Arg2`, используя тип данных `Number`.
 
-4.  Добавьте пять сущностей в таблицу `MyDataTable` со следующими значениями для `Arg1` и `Arg2` соответственно: (10,50), (3,2), (6,0), (0,8) и (12312,1000).
+4. Добавьте пять сущностей в таблицу `MyDataTable` со следующими значениями для `Arg1` и `Arg2` соответственно: (10,50), (3,2), (6,0), (0,8) и (12312,1000).
 
-5.  Сохраните и закройте базу данных.
+5. Сохраните и закройте базу данных.
 
-6.  Измените строку подключения так, чтобы она указывала на расположение базы данных. Измените значение `Data Source` так, чтобы оно отражало расположение базы данных.
+6. Измените строку подключения так, чтобы она указывала на расположение базы данных. Измените значение `Data Source` так, чтобы оно отражало расположение базы данных.
 
 ### <a name="to-create-a-microsoft-excel-data-source"></a>Создание источника данных Microsoft Excel
 
-1.  Создайте электронную таблицу Microsoft Excel с именем `data.xlsx`.
+1. Создайте электронную таблицу Microsoft Excel с именем *data.xlsx*.
 
-2.  Создайте лист с именем `Sheet1`, если он еще не существует в `data.xlsx`.
+2. Создайте лист с именем `Sheet1`, если он еще не существует в *data.xlsx*.
 
-3.  Создайте на листе `Sheet1` два заголовка столбцов и назовите их `Val1` и `Val2`.
+3. Создайте на листе `Sheet1` два заголовка столбцов и назовите их `Val1` и `Val2`.
 
-4.  Добавьте пять сущностей в таблицу `Sheet1` со следующими значениями для `Val1` и `Val2` соответственно: (1,1), (2,2), (3,3), (4,4) и (5,0).
+4. Добавьте пять сущностей в таблицу `Sheet1` со следующими значениями для `Val1` и `Val2` соответственно: (1,1), (2,2), (3,3), (4,4) и (5,0).
 
-5.  Сохраните и закройте таблицу.
+5. Сохраните и закройте таблицу.
 
-6.  Измените строку подключения так, чтобы она указывала на расположение таблицы. Измените значение `dbq` так, чтобы оно отражало расположение таблицы.
+6. Измените строку подключения так, чтобы она указывала на расположение таблицы. Измените значение `dbq` так, чтобы оно отражало расположение таблицы.
 
 ### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Создание модульного теста с помощью источников данных файла app.config
 
-1.  Добавьте модульный тест в тестовый проект.
+1. Добавьте модульный тест в тестовый проект.
 
-2.  Замените автоматически созданное содержимое модульного теста следующим кодом.
+2. Замените автоматически созданное содержимое модульного теста следующим кодом.
 
     ```csharp
     using System;
@@ -259,9 +261,9 @@ ms.lasthandoff: 04/26/2018
     }
     ```
 
-3.  Проверьте атрибуты DataSource. Обратите внимание на имена параметров из файла app.config.
+3. Проверьте атрибуты DataSource. Обратите внимание на имена параметров из файла app.config.
 
-4.  Выполните построение решения и запустите тесты MyTestMethod и MyTestMethod2.
+4. Выполните построение решения и запустите тесты MyTestMethod и MyTestMethod2.
 
 > [!IMPORTANT]
 > Разверните элементы как источники данных, чтобы они были доступны для теста в каталоге развертывания.

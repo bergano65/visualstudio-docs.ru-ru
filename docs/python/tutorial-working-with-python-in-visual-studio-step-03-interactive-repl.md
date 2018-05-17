@@ -1,5 +1,5 @@
 ---
-title: Руководство по работе с Python. Шаг 3 — интерактивное окно REPL
+title: Руководство по работе с Python. Шаг 3 — интерактивный REPL
 description: Шаг 3 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь рассматривается интерактивное окно REPL в Python.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: aface4f125ea8c5a4209e4f220330f15c8ed6d1c
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 

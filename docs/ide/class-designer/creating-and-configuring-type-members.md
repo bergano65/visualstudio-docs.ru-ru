@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Создание и настройка членов типов (конструктор классов)
 Можно добавить эти члены в типы на схеме классов и настроить данные члены в окне **Сведения о классах**:
@@ -57,8 +57,8 @@ ms.lasthandoff: 04/26/2018
 
 |Задача|Справочные материалы|
 |----------|------------------------|
-|**Начало работы**. Перед созданием и настройкой членов типа необходимо открыть окно **Сведения о классах**.|-   [Открытие окна "Сведения о классах"](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Примечания об использовании сведений о классах](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Отображение информации только для чтения](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Создание и изменение членов типа**. С помощью окна **Сведения о классах** можно создавать новые члены, изменять существующие члены, а также добавлять параметры в метод.|-   [Создание членов](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Изменение членов типа](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Добавление параметров в методы](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Начало работы**. Перед созданием и настройкой членов типа необходимо открыть окно **Сведения о классах**.|-   [Открытие окна "Сведения о классах"](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Примечания об использовании окна сведений о классах](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Отображение информации только для чтения](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Создание и изменение членов типа**. С помощью окна **Сведения о классах** можно создавать новые члены, изменять существующие члены, а также добавлять параметры в метод.|-   [Создание членов](creating-and-configuring-type-members.md#create-members)<br />-   [Изменение членов типов](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Добавление параметров в методы](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Открытие окна "Сведения о классах"
 По умолчанию окно **Сведения о классах** открывается автоматически при открытии новой диаграммы классов (см. статью [Практическое руководство. Добавление диаграмм классов в проекты](how-to-add-class-diagrams-to-projects.md)). Помимо этого можно открыть окно **Сведения о классах** следующим образом.
@@ -157,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 
 -   **\<добавить член>**
 
-     Последняя строка в окне **Сведения о классах** содержит текст **\<добавить член>** в ячейке **Имя**. Если выбрана данная ячейка, то можно создать новый член. Дополнительные сведения см. в разделе [Создание членов](creating-and-configuring-type-members.md#CreateMembers).
+     Последняя строка в окне **Сведения о классах** содержит текст **\<добавить член>** в ячейке **Имя**. Если выбрана данная ячейка, то можно создать новый член. Дополнительные сведения см. в разделе [Создание членов](creating-and-configuring-type-members.md#create-members).
 
 -   **Свойства члена в окне "Свойства"**
 
@@ -207,14 +207,14 @@ ms.lasthandoff: 04/26/2018
 
 -   **\<добавить параметр>**
 
-     Строка последнего параметра члена содержит текст **<add parameter>** в ячейке **Имя**. Щелчок на данной ячейке позволяет создать новый параметр. Дополнительные сведения см. в разделе [Добавление параметра в метод](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     Строка последнего параметра члена содержит текст **<add parameter>** в ячейке **Имя**. Щелчок на данной ячейке позволяет создать новый параметр. Дополнительные сведения см. в разделе [Добавление параметра в метод](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Свойства параметра в окне "Свойства"**
 
 В окне свойств отображаются те же свойства параметра, которые отображаются в окне **Сведения о классах**: **Имя**, **Тип**, **Модификатор**, **Сводка**, а также свойство **Дополнительное значение по умолчанию**. Изменение свойства в одном месте обновляет значение свойства глобально, включая отображение его значения в других местах.
 
 > [!NOTE]
-> Инструкции по добавлению параметра в делегат см. в разделе [Создание членов](creating-and-configuring-type-members.md#CreateMembers).
+> Инструкции по добавлению параметра в делегат см. в разделе [Создание членов](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]

@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-set-permissions"></a>Практическое руководство. Установка разрешений
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/19/2018
 
      Путь к этой папке может выглядеть следующим образом:
 
-    ```
+    ```cmd
     D:\ourProject
     ```
 
@@ -82,13 +82,13 @@ ms.lasthandoff: 04/19/2018
 
 2. Измените каталог на:
 
-    ```
+    ```cmd
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
     ```
 
 3. Выполните следующую команду:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
     ```
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
 
 4. Выполните эту команду, чтобы разрешить доступ к функциям драйвера для пользователя или группы, не имеющих административных прав на компьютере:
 
-    ```
+    ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
@@ -114,7 +114,7 @@ ms.lasthandoff: 04/19/2018
 
 5. (Необязательно) Чтобы сохранить результаты любого из предыдущих шагов после перезагрузки компьютера, выполните следующую команду:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 

@@ -1,7 +1,7 @@
 ---
 title: Руководство. Сведения о Django в Visual Studio (шаг 1)
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio, демонстрирующих поддержку Visual Studio для разработки Django.
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Руководство (шаг 1). Начало работы с веб-платформой Django в Visual Studio
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Visual Studio 2017 с установленной рабочей нагрузкой Python. Инструкции см. в статье [Установка поддержки Python в Visual Studio под управлением Windows](installing-python-support-in-visual-studio.md).
+- Visual Studio 2017 со следующими параметрами:
+  - Рабочая нагрузка **Разработка на Python** (вкладка **Рабочая нагрузка** в установщике). Инструкции см. в статье [Установка поддержки Python в Visual Studio под управлением Windows](installing-python-support-in-visual-studio.md).
+  - **Git для Windows** и **расширение GitHub для Visual Studio** на вкладке **Отдельные компоненты** в разделе **Средства кода**.
 
 Шаблоны проектов Django также входят в состав всех ранних версий инструментов Python для Visual Studio, хотя сведения могут отличаться от рассматриваемых в этом руководстве (особенно это касается более ранних версий платформы Django).
 
@@ -89,7 +91,7 @@ ms.lasthandoff: 04/27/2018
 
     ![Окно Team Explorer с доступными вариантами репозитория Git для системы управления версиями](media/django/step01-team-explorer.png)
 
-    Для своих проектов вы можете выбрать любую службу. В этом руководстве используется GitHub. Завершенный пример кода для работы см. в репозитории [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+    Для своих проектов вы можете выбрать любую службу. В этом руководстве используется GitHub. Завершенный пример кода для работы см. в репозитории [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 1. При выборе любого из элементов управления **Публикация** **Team Explorer** предложит проверить зависимости для получения дополнительной информации. Например, при публикации примера для этого руководства сначала нужно было создать репозиторий, и в этом случае параметр **Отправить в удаленный репозиторий** использовался с URL-адресом репозитория.
 
@@ -206,4 +208,4 @@ ms.lasthandoff: 04/27/2018
 
 - Код проекта Django: [Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (Написание первого приложения Django (часть 1)) (docs.djangoproject.com)
 - Административная служебная программа: [django-admin и manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

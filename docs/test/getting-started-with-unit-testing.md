@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39ec333cd7d3bebebe8baacd1c8a27f22e2b9cb4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -70,6 +70,9 @@ ms.lasthandoff: 04/26/2018
 ## <a name="view-live-unit-test-results"></a>Просмотр динамических результатов модульных тестов
 
 Если вы используете платформу тестирования MSTest, xUnit или NUnit в Visual Studio 2017 или более поздней версии, можно просмотреть динамические результаты модульных тестов.
+
+> [!NOTE]
+> Live unit testing доступен только в Visual Studio 2017 редакции Enterprise.
 
 1. Включите Live Unit Testing в меню **Тест**.
 

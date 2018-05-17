@@ -3,14 +3,14 @@ title: Обновление Visual Studio для Mac
 description: Инструкции по обновлению Visual Studio для Mac и доступу к выпускам предварительной версии.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: eeda1afa2e9cd311c09660f2af5190b224b9c341
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7f93a76f3b054755a385696a6cfc8649a608a58b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="updating-visual-studio-for-mac"></a>Обновление Visual Studio для Mac
 
@@ -19,8 +19,7 @@ Visual Studio для Mac на регулярной основе распрост
 Visual Studio для Mac предоставляет три канала для получения таких актуальных версий:
 
 * **Стабильный** — предоставляет тщательно протестированные обновления. Этот канал рекомендуется использовать для обеспечения оптимальной среды разработки.
-* **Бета** — обеспечивает ранний доступ к обновлениям, являющимся кандидатами на выпуск в стабильном канале.
-* **Альфа** — обеспечивает ранний доступ к обновлениям, добавляющим новые функции, но может быть недостаточно надежен для повседневного использования.
+* **Бета** / **Альфа** — обеспечивает ранний доступ к обновлениям, являющимся кандидатами на выпуск в стабильном канале. Эти выпуски недостаточно надежны для повседневного использования.
 
 ## <a name="checking-for-updates"></a>Проверка на наличие обновлений
 

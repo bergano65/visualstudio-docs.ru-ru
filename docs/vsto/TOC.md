@@ -381,7 +381,7 @@
 ##### [Microsoft Office не установлен на этом компьютере](microsoft-office-is-not-installed-on-this-computer.md).
 ##### [Книга, использованная при создании данного проекта, содержит элемент управления ActiveX, который не удалось загрузить в конструкторе](the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load.md).
 ##### [Одно или несколько свойств OFS-файла являются недопустимыми для выбранного класса сообщений](one-or-more-properties-in-the-dot-ofs-file-are-not-valid-for-the-message-class-selected.md).
-##### [Чтобы получить возможность создать или открыть проект инструментов Visual Studio для системы Microsoft Office, необходимо явно открыть доступ к системе проектов Microsoft Office Visual Basic для приложений](you-must-explicitly-enable-access-to-the-microsoft-office-visual-basic-for-applications-project-system-before-you-can-create-or-open-a-----for-the-microsoft-office-system-project.md).
+##### [Включение доступа к VBA для создания или открытия проекта набора средств Visual Studio для системы Microsoft Office](enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-office-system-project.md)
 ### [Справочные материалы по управляемому коду (разработка решений Office в Visual Studio)](managed-reference-office-development-in-visual-studio.md)
 ### [Справочные материалы по неуправляемым API (разработка решений Office в Visual Studio)](unmanaged-api-reference-office-development-in-visual-studio.md)
 #### [Функция EnsureVSTOComponent](ensurevstocomponent-function.md)

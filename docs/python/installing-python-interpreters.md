@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/19/2018
 
 Visual Studio (любой версии) автоматически обнаруживает все установленные интерпретаторы Python и окружения для них, проверяя значения в реестре (в соответствии с [описанием регистрации Python в реестре Windows 514 PEP](https://www.python.org/dev/peps/pep-0514/)).
 
-Если Visual Studio не сможет обнаружить установленное окружение, ознакомьтесь с разделом [Указание существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+Если Visual Studio не сможет обнаружить установленное окружение, см. раздел [Указание существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 Visual Studio отображает все известные окружения в окне [Окружения Python](managing-python-environments-in-visual-studio.md) и автоматически обнаруживает обновления для существующих интерпретаторов.
 
@@ -45,7 +45,7 @@ Visual Studio отображает все известные окружения 
 
 Если вы переместите существующий интерпретатор в новое расположение с помощью средств файловой системы, Visual Studio не сможет отследить изменение автоматически.
 
-- Если изначально вы указали расположение интерпретатора в окне **Окружения Python**, укажите новое расположение, изменив параметры окружения на вкладке **Настройка** в этом же окне. Дополнительные сведения см. в разделе [Указание существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- Если изначально вы указали расположение интерпретатора в окне **Окружения Python**, укажите новое расположение, изменив параметры окружения на вкладке **Настройка** в этом же окне. См. раздел [Указание существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 - Если вы установили интерпретатор с помощью установщика, выполните следующие действия для переустановки интерпретатора в новом расположении:
 

@@ -2,7 +2,7 @@
 title: Установка Visual Studio 2017 | Документация Майкрософт
 description: Сведения о поэтапной установке среды Visual Studio.
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
 
@@ -119,7 +119,15 @@ ms.lasthandoff: 04/20/2018
 
 Язык по умолчанию можно изменить еще одним способом — запустив установщик из командной строки. Например, можно принудительно запустить установщик на английском языке, выполнив команду `vs_installer.exe --locale en-US`. Программа установки запомнит этот параметр и использует его при следующем запуске. Установщик поддерживает следующие токены языков: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru и tr-tr.
 
-## <a name="step-7---start-developing"></a>Шаг 7. Начало разработки
+## <a name="step-7---change-the-installation-location-optional"></a>Шаг 7. Изменение расположения установки (дополнительно)
+
+**Новая возможность в версии 15.7**. Теперь можно уменьшить место, занимаемое установкой Visual Studio на системном диске. Вы можете переместить кэш загрузки, общие компоненты, пакеты SDK и средства на другие диски и оставить Visual Studio на самом быстром диске.
+
+  ![Visual Studio 2017 — изменение расположения установки](media/installation-options-by-location.png "Изменение расположения установки")
+
+Дополнительные сведения см. на странице [Изменение расположения установки в Visual Studio](change-installation-locations.md).
+
+## <a name="step-8---start-developing"></a>Шаг 8. Начало разработки
 
 1. Когда установка Visual Studio завершится, нажмите кнопку **Запустить**, чтобы [приступить к разработке в Visual Studio](../ide/get-started-developing-with-visual-studio.md).
 
