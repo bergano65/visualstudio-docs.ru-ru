@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 336ec5ef0779bcd67302bea7b51851dced531a7d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 553a8ceeae16b660115ea3c8e32e544e903a72af
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Создание и редактирование пользовательского файла EditorConfig
 
@@ -73,7 +73,7 @@ EditorConfig также поддерживает [форматирование �
 
 Может потребоваться использование уже существующего файла `.editorconfig` в проекте. Чтобы добавить существующий файл, сначала необходимо включить отображение скрытых файлов в Finder, введя следующую команду в **Терминале**:
 
-```bash
+```
 $ defaults write com.apple.Finder AppleShowAllFiles true
 $ killall Finder
 ```
