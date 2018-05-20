@@ -11,15 +11,18 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0aa5b844b3743ab80c11971caa26340effe671
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Практическое руководство. Разделение класса на разделяемые классы (конструктор классов)
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Практическое руководство. Разделение класса на разделяемые классы в конструкторе классов
 
 Объявление класса или структуры можно распределить по нескольким объявлениям с помощью ключевого слова `partial` (`Partial` в Visual Basic). Можно использовать неограниченное количество разделяемых объявлений.
 
@@ -36,30 +39,11 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > Visual Basic использует определения разделяемых классов для отделения автоматически созданного кода от кода, созданного пользователем. Этот код разбивается на отдельные исходные файлы. Например, **конструктор форм Windows Forms** определяет разделяемые классы для элементов управления, таких как `Form`. Не следует изменять код, созданный в этих элементах управления.
 
-
 Дополнительные сведения о разделяемых типах в Visual Basic см. в статье [Partial](/dotnet/visual-basic/language-reference/modifiers/partial).
 
-## <a name="visual-basic-example"></a>Пример в Visual Basic
+## <a name="example"></a>Пример
 
-Чтобы разделить определение класса в Visual Basic, используйте ключевое слово `Partial`, как показано в следующем примере.
-
-```vb
-' First part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateWorkHours()
-    End Sub
-End Class
-
-' Second part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateTaxes()
-    End Sub
-End Class
-```
-
-## <a name="c-example"></a>Пример в C#
-
-Чтобы разделить определение класса в C#, используйте ключевое слово `partial`, как показано в следующем примере.
+Чтобы разделить определение класса, используйте ключевое слово `partial` (`Partial` в Visual Basic), как показано в следующем примере:
 
 ```csharp
 // First part of class definition.
@@ -79,9 +63,23 @@ public partial class Employee
 }
 ```
 
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
 ## <a name="see-also"></a>См. также
 
 - [Разделяемые классы и методы](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
-- [partial (тип)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [разделяемый (тип) (Справочник по C#)](/dotnet/csharp/language-reference/keywords/partial-type)
 - [partial (метод) (справочник по C#)](/dotnet/csharp/language-reference/keywords/partial-method)
-- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)
+- [Partial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

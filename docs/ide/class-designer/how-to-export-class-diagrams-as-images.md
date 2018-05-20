@@ -14,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe5f6e5e285ef6d5551ac94a9eb7b0b8df132b7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Практическое руководство. Экспорт диаграмм классов как изображений (конструктор классов)
+# <a name="how-to-export-class-diagrams-as-images"></a>Практическое руководство. Экспорт схем классов как изображений
 
 Чтобы экспортировать схему классов, созданную на основе кода в проекте, сохраните ее как изображение. Если вместо этого нужно экспортировать схемы класса UML, см. статью [Экспорт схем в виде изображений](../../modeling/export-diagrams-as-images.md).
 
-1.  Откройте файл со схемой классов (CD).
+## <a name="export-a-diagram"></a>Экспорт схем
+
+1.  Откройте файл со схемой классов (*.cd*).
 
 2.  В меню **Схема классов** или в контекстном меню области схемы выберите пункт **Экспортировать схему как рисунок**.
 
@@ -34,9 +36,9 @@ ms.lasthandoff: 04/26/2018
 
 5.  Выберите **Экспорт**, чтобы завершить экспорт.
 
-     Чтобы автоматически обновить экспортированные изображения, на которые есть ссылки в других документах, еще раз экспортируйте схему в Visual Studio.
+Чтобы автоматически обновить экспортированные изображения, на которые есть ссылки в других документах, еще раз экспортируйте схему в Visual Studio.
 
-### <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md)
 - [Работа с диаграммами классов](working-with-class-diagrams.md)

@@ -14,11 +14,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 291f7a52bfbb702960259e2643967ff0a8e782dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8195817c50679fd5b297b35eaf29aca0145a330b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Операции рефакторинга для преобразования метода Get в свойство и наоборот
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="convert-get-method-to-property"></a>Преобразование метода Get в свойство
 
-**Что?** Вы можете преобразовывать метод Get в свойство (и при необходимости метод Set) и наоборот.
+**Что?** Вы можете преобразовывать метод Get в свойство (и при необходимости метод Set).
 
 **Когда?** У вас есть метод Get, который не содержит логику.
 

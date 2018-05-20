@@ -1,5 +1,5 @@
 ---
-title: '&lt;Настройка&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft'
+title: '&lt;Настройка&gt; элемент (Разработка решений Office в Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02cf84dd225eadd1dcd9c1f20040811e654ebbc0
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;Настройка&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `customization` пространства имен `vstov4` описывает конкретное решение Office. Дочерние элементы настроек уровня документа и надстроек VSTO отличаются друг от друга.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Синтаксис настроек уровня документа  
   
-```  
+```xml
 <customization  
   id  
   <document  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>Синтаксис надстроек VSTO  
   
-```  
+```xml
 <customization  
   id  
   <appAddin  
@@ -76,11 +76,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example-of-a-document-level-customization"></a>Пример настройки на уровне документа  
   
 ### <a name="description"></a>Описание  
- В приведенном ниже примере кода показан элемент `customization` для настройки на уровне документа. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ В приведенном ниже примере кода показан элемент `customization` для настройки на уровне документа. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
   
-```  
+```xml
 <vstov4:customization>  
   <vstov4:document   
     solutionId="73e" />  
@@ -90,11 +90,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example-of-an-vsto-add-in"></a>Пример надстройки VSTO  
   
 ### <a name="description"></a>Описание  
- В приведенном ниже примере кода показан элемент `customization` для надстройки VSTO. Это надстройка VSTO для Outlook, в которой используются области форм. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ В приведенном ниже примере кода показан элемент `customization` для надстройки VSTO. Это надстройка VSTO для Outlook, в которой используются области форм. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
   
-```  
+```xml  
 <vstov4:customization>  
   <vstov4:appAddIn   
     application="Outlook"   
@@ -120,7 +120,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

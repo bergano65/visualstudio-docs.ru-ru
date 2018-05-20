@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>В редакторе
 Редактор состоит из нескольких разных подсистем, которые предназначены для сохранения редакторе отдельные модели текста из текстового представления и пользовательский интерфейс.  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
  Подсистема модели текста предоставляется концепций пользовательского интерфейса (UI). Например не отвечает за форматирование текста или текста, и он не имеет сведений о визуального оформления, которые могут быть связаны с текстом.  
   
- Открытые типы текста подсистемы модели содержатся в Microsoft.VisualStudio.Text.Data.dll и Microsoft.VisualStudio.CoreUtilitiy.dll, которые зависят от только библиотеки базовых классов .NET Framework и Managed Extensibility Framework (MEF).  
+ Открытые типы текста подсистемы модели содержатся в Microsoft.VisualStudio.Text.Data.dll и Microsoft.VisualStudio.CoreUtility.dll, которые зависят от только библиотеки базовых классов .NET Framework и Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Текстовое представление подсистемы  
  Для форматирования и отображения текста отвечает подсистеме представления текста. Типы в этой подсистемы делятся на два уровня, в зависимости от того, является ли типы полагаться на Windows Presentation Foundation (WPF). Наиболее важные типы <xref:Microsoft.VisualStudio.Text.Editor.ITextView> и <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, какой элемент управления, набор текстовых строк, которые должны отображаться и также курсор, выбор и средства для Декорирование текст с помощью элементов пользовательского интерфейса WPF. Область отображения поля вокруг текста также предоставляет этой подсистемы. Эти поля можно расширить и может содержать различные виды содержимого и визуальных эффектов. Примерами полей являются строки чисел отображает и полосами прокрутки.  

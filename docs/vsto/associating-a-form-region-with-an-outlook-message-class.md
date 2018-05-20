@@ -1,5 +1,5 @@
 ---
-title: Связывание области формы с классом сообщений Outlook | Документы Microsoft
+title: Связывание области формы с классом сообщений Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -18,45 +18,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e3e3deeb55fb93b1a393d0489213f1d0e7acd85b
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d6f48be189b7d7a35f713c224553dc9ad7c8a5c3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associating a Form Region with an Outlook Message Class
-  Можно указать, какие элементы Microsoft Office Outlook отображать область формы путем связывания области формы с классом сообщений каждого элемента. Например если вы хотите добавить в конец почтового элемента области формы, можно связать область формы с классом сообщений IPM. Обратите внимание, класс сообщений.  
+# <a name="associate-a-form-region-with-an-outlook-message-class"></a>Связывание области формы с классом сообщений Outlook
+  Можно указать, какие элементы Microsoft Office Outlook отображать область формы путем связывания области формы с классом сообщений каждого элемента. Например, если вы хотите добавить в конец почтового элемента области формы, можно связать область формы с `IPM.Note` класс message.  
   
  Чтобы связать область формы с классом сообщений, укажите имя класса сообщений в **новая область формы Outlook** мастер или применить атрибут класс фабрики областей формы.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="understanding-outlook-message-classes"></a>Общие сведения о классах сообщений Outlook  
+## <a name="understand-outlook-message-classes"></a>Понять классы сообщений Outlook  
  Классом сообщений Outlook определяет тип элемента Outlook. В следующей таблице перечислены восемь стандартных типов элементов и их имен классов сообщений.  
   
 |Тип элемента Outlook|Имя класса сообщений|  
 |-----------------------|------------------------|  
-|AppointmentItem|IPM. Встречи|  
-|ContactItem|IPM. Обратитесь в службу|  
-|DistListItem|IPM. DistList|  
-|JournalItem|IPM. Действие|  
-|MailItem|IPM. Примечание|  
-|PostItem|IPM. POST или IPM. Post.RSS|  
-|TaskItem|IPM. Задача|  
+|AppointmentItem|`IPM.Appointment`|  
+|ContactItem|`IPM.Contact`|  
+|DistListItem|`IPM.DistList`|  
+|JournalItem|`IPM.Activity`|  
+|MailItem|`IPM.Note`|  
+|PostItem|`IPM.Post` или `IPM.Post.RSS`|  
+|TaskItem|`IPM.Task`|  
   
  Можно также указать имена пользовательских классов сообщений. Пользовательские классы сообщений идентифицируют настраиваемые формы, определенные в Outlook.  
   
 > [!NOTE]  
->  Для замены и заменить все области формы можно указать новое имя класса пользовательского сообщения. Необходимо использовать имя класса сообщений существующей пользовательской формы. Имя пользовательского класса должно быть уникальным. Является одним из способов обеспечить уникальность имени используется следующее соглашение об именовании: \< *StandardMessageClassName*>.\< *Компании*>.\< *MessageClassName*> (например: IPM. Note.Contoso.MyMessageClass).  
+>  Для замены и заменить все области формы можно указать новое имя класса пользовательского сообщения. Необходимо использовать имя класса сообщений существующей пользовательской формы. Имя пользовательского класса должно быть уникальным. Является одним из способов обеспечить уникальность имени используется следующее соглашение об именовании: \< *StandardMessageClassName*>.\< *Компании*>.\< *MessageClassName*> (например: `IPM.Note.Contoso.MyMessageClass`).  
   
-## <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associating a Form Region with an Outlook Message Class  
+## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Связывание области формы с классом сообщений Outlook  
  Связывание области формы с классом сообщений двумя способами.  
   
 -   Используйте **новая область формы Outlook** мастера.  
   
 -   Применение атрибутов классов.  
   
-### <a name="using-the-new-outlook-form-region-wizard"></a>С помощью мастера создания области формы Outlook  
+### <a name="use-the-new-outlook-form-region-wizard"></a>Используйте мастер создания области формы Outlook  
  На последней странице **новая область формы Outlook** мастера можно выбрать стандартные классы сообщений и ввести имена пользовательских классов сообщений, которую необходимо связать с областью формы.  
   
  Стандартные классы сообщений недоступны, если область формы предназначена для замены всей формы или страницы формы по умолчанию. Можно указать имена стандартных классов сообщений только для форм, добавьте новую страницу в форму или, добавляются в нижней части формы. Дополнительные сведения см. в разделе [как: Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
@@ -82,7 +82,7 @@ ms.lasthandoff: 04/28/2018
   
  После завершения работы мастера **новая область формы Outlook** мастер применяет атрибуты для класса области формы, который содержит указанные имена классов сообщений. Эти атрибуты можно применять вручную.  
   
-### <a name="applying-class-attributes"></a>Применение атрибутов классов.  
+### <a name="apply-class-attributes"></a>Применение атрибутов классов  
  Можно связать область формы с классом сообщений Outlook после завершения **новая область формы Outlook** мастера. Чтобы сделать это, необходимо Примените атрибуты к класс фабрики областей формы.  
   
  В следующем примере показаны два <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> атрибутов, которые были применены к фабрики класса области формы с именем `myFormRegion`. Первый атрибут связывает область формы с классом стандартных сообщений для формы сообщений. Второй атрибут связывает область формы с классом пользовательского сообщения `IPM.Task.Contoso`.  
@@ -109,8 +109,8 @@ ms.lasthandoff: 04/28/2018
  [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)   
  [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
  [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Рекомендации по созданию областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Имя формы и общие сведения о классе сообщений](http://msdn.microsoft.com/library/office/ff867629.aspx)   
+ [Рекомендации для создания областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Общие сведения о классах имя формы и сообщений](http://msdn.microsoft.com/library/office/ff867629.aspx)   
  [Форм и элементов Outlook совместная работа](http://msdn.microsoft.com/library/office/ff869706.aspx)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: '&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft'
+title: '&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85fda0db34bf104032e82d5725ff4d3d7aa772cb
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio)
-  Элемент `appAddin` пространства имен `vstov4` хранит сведения о настройках для надстроек VSTO.  
+  **AppAddin** элемент `vstov4` имен хранит сведения о настройках для надстроек VSTO.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml 
 <appAddin  
   application  
   loadBehavior  
@@ -38,35 +38,35 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Элемент `appAddin` является обязательным и находится в пространстве имен `vstov4` . В манифесте приложения определен только один элемент `appAddin` .  
+ **AppAddin** элемент является обязательным и находится в `vstov4` пространства имен. Имеется только один **appAddin** элемента, определенного в манифесте приложения.  
   
- Элемент `appAddin` имеет перечисленные ниже атрибуты.  
+ **AppAddin** элемент имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`application`|Обязательно. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|  
-|`loadBehavior`|Необязательный. По умолчанию `loadBehavior` включен путем установки значения . Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в разделе [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|`keyName`|Обязательно. Это значение является именем раздела реестра, который будет использоваться приложением для загрузки надстройки VSTO. Для получения дополнительной информации см. [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Приложения**|Обязательно. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|  
+|**loadBehavior**|Необязательный. По умолчанию **loadBehavior** включаемые значение. Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в таблице в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**keyName**|Обязательно. Это значение является именем раздела реестра, который будет использоваться приложением для загрузки надстройки VSTO. Дополнительные сведения см. в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
- Элемент `appAddin` имеет указанные ниже дочерние элементы.  
+ **AppAddin** элемент имеет следующие дочерние элементы.  
   
 ### <a name="friendlyname"></a>friendlyName  
- Необязательный. `friendlyName` Подробно описан элемент [ &#60;friendlyName&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Необязательный. **FriendlyName** подробно описан элемент [ &#60;friendlyName&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>Описание  
- Необязательный. `description` Подробно описан элемент [ &#60;описание&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+ Необязательный. **Описание** подробно описан элемент [ &#60;описание&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Является обязательным только для надстроек VSTO для Outlook, включающих области форм. `formRegions` Подробно описан элемент [ &#60;formRegions&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Является обязательным только для надстроек VSTO для Outlook, включающих области форм. **FormRegions** подробно описан элемент [ &#60;formRegions&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
   
 ### <a name="description"></a>Описание  
- В следующем примере кода показаны элементы `appAddin` в решении Outlook, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ В следующем примере кода показан **appAddin** элементы в решении Outlook, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
   
-```  
+```xml  
 <vstov4:appAddIn   
   application="Outlook"   
   loadBehavior="3"   
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

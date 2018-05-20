@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Нажмите кнопку **Установить**.  
   
-7.  Повторите шаг 7, чтобы найти и установить пакет **Microsoft.CSharp** в проекте .NET Standard. Эта библиотека необходима для использования типа данных C# `dynamic` в библиотеке .NET Standard.
+7.  Повторите шаг 6, чтобы найти и установить пакет **Microsoft.CSharp** в проекте .NET Standard. Эта библиотека необходима для использования типа данных C# `dynamic` в библиотеке .NET Standard.
   
 8.  Соберите свое решение и убедитесь в отсутствии ошибок сборки.  
   

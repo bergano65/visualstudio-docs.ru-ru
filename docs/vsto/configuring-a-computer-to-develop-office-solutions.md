@@ -1,5 +1,5 @@
 ---
-title: Настройка компьютера для разработки решений Office | Документы Microsoft
+title: Настройка компьютера для разработки решений Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59c00639ce839962c06cacf3c036a5cd8f74b508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58458b51115834b5b94e858676ee8039d5894c70
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="configuring-a-computer-to-develop-office-solutions"></a>Настройка компьютера для разработки решений Office
+# <a name="configure-a-computer-to-develop-office-solutions"></a>Настройка компьютера для разработки решений Office
 
 Чтобы создать надстройки VSTO и настройки для Microsoft Office, установите поддерживаемую версию Visual Studio, платформы .NET Framework и Microsoft Office.
 
@@ -43,16 +43,16 @@ ms.lasthandoff: 04/16/2018
 
      Чтобы убедиться в том, что средства установлены, запустите программу установки Visual Studio и выберите **изменить** кнопки. Установите флажок возле элемента **Инструменты разработчика Microsoft Office** и нажмите кнопку **Обновить** .
 
-- Убедитесь в том, что вы не используете версию Office нажми щелкните к запуску. См. раздел [Практическое руководство. Как проверить, является ли установленная на компьютере программа Outlook приложением типа "нажми и работай"](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Убедитесь в том, что вы не используете версию Office нажми щелкните к запуску. В разделе [как: проверить, является ли Outlook нажмите кнопку для запуска приложения на компьютере](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
 
 - Убедитесь, что у вас только одна версия Microsoft Office.
 
-Если проблема остается, см. раздел [Additional Support for Errors in Office Solutions](../vsto/additional-support-for-errors-in-office-solutions.md).
+Если проблема остается, см. раздел [Дополнительные сведения об ошибках в решениях Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
 ## <a name="see-also"></a>См. также
 
 [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Практическое руководство. Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Практическое руководство. Установка распространяемого пакета среды выполнения для инструментов Visual Studio для Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Практическое руководство. Установка основных сборок взаимодействия Microsoft Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Доступность функций по типам приложений Office и типам проектов](../vsto/features-available-by-office-application-and-project-type.md)
+[Как: Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[Как: Установка набора средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Как: установить основные сборки взаимодействия](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Тип функции, доступные по приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md)

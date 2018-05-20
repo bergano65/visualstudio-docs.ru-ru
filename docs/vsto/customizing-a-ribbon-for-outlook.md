@@ -1,5 +1,5 @@
 ---
-title: Настройка ленты для Outlook | Документы Microsoft
+title: Настройка ленты для Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,30 +19,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c160b22a10a837e64df2ad00a07381c3d8240c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1c72d5c24c70a539b909e8d338a235ceb52a49
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-a-ribbon-for-outlook"></a>Настройка ленты для Outlook
+# <a name="customize-a-ribbon-for-outlook"></a>Настройка ленты для Outlook
   При настройке ленты в Microsoft Office Outlook необходимо знать, где в приложении отображается настраиваемая лента. Outlook показывает ленту в пользовательском интерфейсе основного приложения и в окнах, открывающихся при выполнении пользователем определенных задач, таких как создание сообщений электронной почты. Эти окна приложения называются инспекторами.  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [практические советы. Использование конструктора ленты для настройки ленты в Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [инструкции I: используется конструктор ленты для настройки ленты в Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="adding-a-custom-ribbon-to-the-main-application-ui"></a>Добавление настраиваемой ленты в пользовательский интерфейс основного приложения  
+## <a name="add-a-custom-ribbon-to-the-main-application-ui"></a>Добавление настраиваемой ленты в пользовательский Интерфейс основного приложения  
  Пользовательский интерфейс основного приложения в Outlook называется проводником. Если вы используете **Лента (визуальный конструктор)** элемента, можно добавить ленту в проводник, щелкнув **RibbonType** ленты в **свойства** окна а затем выбрав **Microsoft.Outlook.Explorer**.  
   
-## <a name="assigning-a-ribbon-to-an-inspector"></a>Назначение ленты инспектору  
+## <a name="assign-a-ribbon-to-an-inspector"></a>Назначение ленты инспектору  
  Вы можете указать инспектор, который требуется настроить, выбрав тип ленты, соответствующий классу сообщений для инспектора.  
   
  Если вы используете **Лента (визуальный конструктор)** , щелкните **RibbonType** ленты в **свойства** окна, а затем выберите один или несколько ленте идентификаторы из список значений.  
   
- В проект можно добавить несколько лент. Если несколько лент имеют одинаковый идентификатор, переопределите метод CreateRibbonExtensibilityObject в `ThisAddin` класс объекта проекта, чтобы указать, какую ленту следует отображать во время выполнения. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md). Дополнительные сведения о каждом типе ленты см. в технической статье [Настройка ленты в Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ В проект можно добавить несколько лент. Если несколько лент имеют одинаковый идентификатор, переопределите метод `CreateRibbonExtensibilityObject` в классе `ThisAddin` проекта, чтобы указать, какую ленту следует отображать во время выполнения. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md). Дополнительные сведения о каждом типе ленты см. в технической статье [Настройка ленты в Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
-## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Указание типа ленты с помощью XML-кода ленты  
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Указать тип ленты с помощью XML-ленты  
  Если вы используете **Лента (XML)** , проверьте значение *ribbonID* параметр в <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> метода и верните нужную ленту.  
   
  Метод <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> автоматически создается средой Visual Studio в файле кода ленты. *RibbonID* параметр представляет собой строку, определяющую проводник или конкретный тип инспектора. Полный список возможных значений *ribbonID* параметра, см. в технической статье [Настройка ленты в Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]  
   
 ## <a name="see-also"></a>См. также  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Обзор ленты](../vsto/ribbon-overview.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [XML-ленты](../vsto/ribbon-xml.md)  

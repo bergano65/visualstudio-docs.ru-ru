@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox | Документы Microsoft'
+title: 'Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox
   В этом пошаговом руководстве демонстрируется использование элементов управления Windows Forms в настройке уровня документа для Microsoft Office Word для изменения форматирования текста.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -47,21 +47,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Создание проекта  
+## <a name="create-the-project"></a>Создание проекта  
  Первым шагом является создание документа Word.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="create-a-new-project"></a>Создание нового проекта  
   
 1.  Создайте проект документа Word с именем **форматирование Word**. В мастере выберите **создания документа**.  
   
-     Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio откроет новый документ Word в конструкторе и добавляет **форматирование Word** проекта **обозревателе решений**.  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>Добавление текста и элементов управления в документ Word  
+## <a name="add-text-and-controls-to-the-word-document"></a>Добавление текста и элементов управления в документ Word  
  В этом пошаговом руководстве, добавьте три флажка и некоторый текст в <xref:Microsoft.Office.Tools.Word.Bookmark> элемента управления в документ Word. Флажки представляют параметры пользователя для форматирования текста.  
   
-#### <a name="to-add-three-check-boxes"></a>Чтобы добавить три флажка  
+### <a name="add-three-check-boxes"></a>Добавьте три флажка  
   
 1.  Убедитесь, что документ открыт в конструкторе Visual Studio.  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
     |**Name**|**applyUnderlineFont**|  
     |**Text**|**подчеркивание**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>Добавление текста и элемента управления Bookmark  
+### <a name="add-text-and-a-bookmark-control"></a>Добавление текста и элемента управления Bookmark  
   
 1.  Поместите курсор ниже управления «флажок» и введите следующий текст:  
   
@@ -110,10 +110,10 @@ ms.lasthandoff: 04/16/2018
   
  Затем напишите код для форматирования текста, когда этот флажок установлен или снят флажок.  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Форматирование текста при флажка — при установке или снятии  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Форматирование текста при типа "флажок" или снятии флажка  
  Когда пользователь выбирает способ форматирования, измените формат текста в документе.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Для изменения форматирования, если флажок установлен  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>Изменение форматирования при выборе типа "флажок"  
   
 1.  Щелкните правой кнопкой мыши `ThisDocument` в **обозревателе решений**, а затем нажмите кнопку **Просмотр кода** в контекстном меню.  
   
@@ -140,12 +140,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>Тестирование приложения  
+## <a name="test-the-application"></a>Тестирование приложения  
  Теперь можно проверить документ, чтобы убедиться, что текст имеет правильный формат при установке или снятии флажка.  
   
-#### <a name="to-test-your-document"></a>Проверка документа  
+### <a name="test-your-document"></a>Проверка документа  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  Установите или снимите флажок.  
   
@@ -154,16 +154,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве показаны основные принципы использования флажков и программное изменение форматирования текста в документах Word. Ниже приводятся некоторые из возможных последующих задач.  
   
--   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: отображение текста в текстовом поле в документ с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Использование кнопки для заполнения текстового поля. Дополнительные сведения см. в разделе [Пошаговое руководство: отображения текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
 -   Использование переключателей для выбора стилей диаграмм. Дополнительные сведения см. в разделе [Пошаговое руководство: обновление диаграммы в документе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
--  
-  
+
 ## <a name="see-also"></a>См. также  
  [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)   
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

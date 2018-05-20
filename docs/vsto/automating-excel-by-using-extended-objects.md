@@ -1,5 +1,5 @@
 ---
-title: Автоматизация Excel с помощью расширенных объектов | Документы Microsoft
+title: Автоматизация Excel с помощью расширенных объектов
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -23,47 +23,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c1111a9fdd66d99f1dda40d3045ad337d499a6a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 5a2de66896a734839c7018f48f904c79e80abcaa
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="automating-excel-by-using-extended-objects"></a>Автоматизация Excel с помощью расширенных объектов
+# <a name="automate-excel-by-using-etended-objects"></a>Автоматизация Excel с помощью объектов etended
   При разработке своих решений Excel в Visual Studio можно также использовать *ведущие элементы* и *элементы управления ведущего приложения*. Это объекты, которые расширяют некоторые часто используемые объекты в объектной модели Excel (т. е. объектной модели, которая предоставляется основной сборкой взаимодействия для Excel), такие как объекты <xref:Microsoft.Office.Interop.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Range> . Расширенные объекты ведут себя как объекты Excel, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Ведущие элементы и элементы управления ведущего приложения доступны в надстройке VSTO и настройке на уровне документа, хотя контекст, в котором они используются, отличается для каждого типа решения. Для получения дополнительной информации см. [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ Ведущие элементы и элементы управления ведущего приложения доступны в надстройке VSTO и настройке на уровне документа, хотя контекст, в котором они используются, отличается для каждого типа решения. Дополнительные сведения см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).  
   
 ## <a name="excel-host-items"></a>Ведущие элементы Excel  
  Проекты Excel предоставляют доступ к нескольким ведущим элементам:  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот ведущий элемент представляет лист в проекте. Также он служит контейнером для управляемых элементов управления, в том числе элементов управления ведущего приложения и элементов управления Windows Forms, и хранит сведения об элементах управления на его поверхности. Дополнительные сведения см. в разделе [Worksheet Host Item](../vsto/worksheet-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот ведущий элемент представляет лист в проекте. Также он служит контейнером для управляемых элементов управления, в том числе элементов управления ведущего приложения и элементов управления Windows Forms, и хранит сведения об элементах управления на его поверхности. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. Этот ведущий элемент представляет книгу в проекте и выступает в роли контейнера для компонентов, общих для всех листов в книге. Для получения дополнительной информации см. [Workbook Host Item](../vsto/workbook-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Workbook>. Этот ведущий элемент представляет книгу в проекте и выступает в роли контейнера для компонентов, общих для всех листов в книге. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).  
   
 -   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Этот ведущий элемент на листе Excel содержит только диаграмму и предоставляет события.  
   
      При добавлении листа диаграммы во время разработки в качестве нового листа в проект настройки уровня документа Microsoft Office Excel Visual Studio автоматически создает ведущий элемент <xref:Microsoft.Office.Tools.Excel.ChartSheet> .  
   
-     Хотя ведущий элемент <xref:Microsoft.Office.Tools.Excel.ChartSheet> — это лист Excel, невозможно добавить какие-либо элементы управления на лист с диаграммой. Если вы хотите использовать другие элементы управления на листе с диаграммой, не используйте лист диаграммы. Вместо этого можно поместить диаграмму как внедренный объект на лист с помощью элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.Chart> . Дополнительные сведения см. в разделе [Chart Control](../vsto/chart-control.md).  
+     Хотя ведущий элемент <xref:Microsoft.Office.Tools.Excel.ChartSheet> — это лист Excel, невозможно добавить какие-либо элементы управления на лист с диаграммой. Если вы хотите использовать другие элементы управления на листе с диаграммой, не используйте лист диаграммы. Вместо этого можно поместить диаграмму как внедренный объект на лист с помощью элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.Chart> . Дополнительные сведения см. в разделе [диаграммы управления](../vsto/chart-control.md).  
   
-## <a name="excel-host-controls"></a>Элементы управления ведущего приложения Excel  
+## <a name="excel-host-controls"></a>элементы управления ведущего приложения Excel  
  Существует несколько элементов управления ведущего приложения для Excel, которые помогают создавать, организовывать и автоматизировать книги и листы. Они предоставляют события и возможности привязки к данным, не поддерживаемые их аналогами в управляемой объектной модели Excel.  
   
  Дополнительные сведения о ведущих элементах управления, которые можно использовать в проектах Excel, см. в следующих разделах:  
   
--   [Chart Control](../vsto/chart-control.md)  
+-   [Элемент управления диаграммы](../vsto/chart-control.md)  
   
 -   [Элемент управления ListObject](../vsto/listobject-control.md)  
   
 -   [Элемент управления NamedRange](../vsto/namedrange-control.md)  
   
--   [Элемент управления XMLMappedRange](../vsto/xmlmappedrange-control.md)  
+-   [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>См. также  
- [Как: заполнение данными элементов управления ListObject](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Как: элемент управления ListObject заполнения данными](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Как: Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [Как: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [Как: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
@@ -71,12 +71,12 @@ ms.lasthandoff: 04/28/2018
  [Как: изменение размеров элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Как: изменение размеров элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Как: проверка данных при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Как: сопоставление столбцов ListObject данным](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Пошаговое руководство: Программирование реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Как: столбцов элемента управления ListObject карты к данным](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Пошаговое руководство: Программа реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
+ [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

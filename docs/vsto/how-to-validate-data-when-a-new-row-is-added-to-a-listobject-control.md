@@ -1,5 +1,5 @@
 ---
-title: 'Как: проверка данных при добавлении новой строки в элемент управления ListObject | Документы Microsoft'
+title: 'Как: проверка данных при добавлении новой строки в элемент управления ListObject'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,31 +17,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00cefc2b61701a86794d8d356c714861a93d72db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55dc8852952482914bc57a41579163c90672d1db
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Практическое руководство. Обработка данных при добавлении новой строки в элемент управления ListObject
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Как: проверка данных при добавлении новой строки в элемент управления ListObject
   Пользователи могут добавлять новые строки в элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным. Вы можете проверять данные пользователя перед фиксацией изменений в источнике данных.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="data-validation"></a>Проверка данных  
- Каждый раз, когда строка добавляется в <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным, возникает событие <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> . Это событие можно обработать для выполнения проверки данных. Например, если приложение требует, чтобы в источник данных добавлялись только сотрудники в возрасте от 18 до 65 лет, можно проверять, что возраст попадает в этот диапазон, перед добавлением строки.  
+ Каждый раз, когда строка добавляется в <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным, возникает событие <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> . Это событие можно обработать для выполнения проверки данных. Например если приложение требует, что только сотрудники в возрасте от 18 до 65 могут добавляться к источнику данных, проверьте, попадает ли возраст в пределах диапазона перед добавлением строки.  
   
 > [!NOTE]  
->  Всегда следует проверять входные данные пользователя на сервере, как и на клиенте. Дополнительные сведения см. в разделе [защиты клиентских приложений](/dotnet/framework/data/adonet/secure-client-applications).  
+>  Всегда следует проверять входные данные пользователя на сервере, как и на клиенте. Дополнительные сведения см. в разделе [защищенные клиентские приложения](/dotnet/framework/data/adonet/secure-client-applications).  
   
-#### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Проверка данных при добавлении новой строки в элемент управления ListObject с привязкой к данным  
+### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Проверка данных при добавлении новой строки в элемент управления ListObject с привязкой к данным  
   
 1.  Создайте переменные для идентификатора и объекта <xref:System.Data.DataTable> на уровне класса.  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]  
   
-2.  Создайте новый объект <xref:System.Data.DataTable> и добавьте примеры столбцов и данных в обработчик событий `Startup` класса `Sheet1` (в проекте уровня документа) или класса `ThisAddIn` (в проекте надстройки VSTO).  
+2.  Создайте новый <xref:System.Data.DataTable> и добавьте примеры столбцов и данных в `Startup` обработчик событий `Sheet1` класса (в проекте уровня документа) или `ThisAddIn` класса (в проекте надстройки VSTO).  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]  
   
-## <a name="compiling-the-code"></a>Компиляция кода  
+## <a name="compile-the-code"></a>Компиляция кода  
  В этом примере кода предполагается, что в листе, в котором этот код появляется, имеется существующий элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с именем `list1` .  
   
 ## <a name="see-also"></a>См. также  
@@ -60,6 +60,6 @@ ms.lasthandoff: 04/16/2018
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Элемент управления ListObject](../vsto/listobject-control.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Практическое руководство. Сопоставление столбцов ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)  
+ [Как: столбцов элемента управления ListObject карты к данным](../vsto/how-to-map-listobject-columns-to-data.md)  
   
   

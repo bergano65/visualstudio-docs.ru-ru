@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о свойствах пользовательского документа | Документы Microsoft
+title: Общие сведения о свойствах пользовательского документа
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
+# <a name="custom-document-properties-overview"></a>Общие сведения о свойствах пользовательского документа
 
-При построении проекта уровня документа Visual Studio добавляет два пользовательских свойств документа в проекте: \_AssemblyLocation и \_AssemblyName. Когда пользователь открывает документ, приложение Microsoft Office проверяет эти настраиваемые свойства документа. Если они существуют в документе, приложение загружает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которая запускает настройку. Дополнительные сведения см. в разделе [архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+При построении проекта уровня документа Visual Studio добавляет два пользовательских свойств документа в проекте: \_AssemblyLocation и \_AssemblyName. Когда пользователь открывает документ, приложение Microsoft Office проверяет эти настраиваемые свойства документа. Если они существуют в документе, приложение загружает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которая запускает настройку. Дополнительные сведения см. в разделе [решений архитектуры Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-Это свойство содержит строку, подробную информацию о манифеста развертывания для настройки. Дополнительные сведения о манифестах см. в разделе [манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Это свойство содержит строку, подробную информацию о манифеста развертывания для настройки. Дополнительные сведения о манифестах см. в разделе [манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
  Значение свойства The_AssemblyLocation может иметь различные форматы, в зависимости от способа развертывания решения:
 
@@ -54,8 +54,8 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>См. также
 
-[Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
-[манифесты приложений и развертывания в решениях Office ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [Как: публикация решения Office с помощью ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[как: создавать и изменять настраиваемые свойства документа](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
+- [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Как: публикация решения Office с помощью ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Как: создавать и изменять настраиваемые свойства документа](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Данные в решениях Office | Документы Microsoft
+title: Данные в решениях Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,29 +17,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b67ef7bec9b44510711c07195a8114b730d87dc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 87aca3cea98f97ff2a27efb41f912f1295939718
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="data-in-office-solutions"></a>Данные в решениях Office
   Многие решения Office позволяют пользователям извлекать или изменять данные. При создании решений Office с помощью среды Visual Studio существует несколько различных способов работы с данными.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  Описывается привязка данных к элементам управления в решениях Office.  
   
- [Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)  
+ [Общие сведения о пользовательских частей XML](../vsto/custom-xml-parts-overview.md)  
  Описывается использование пользовательских XML-частей для работы с данными в решениях Office.  
   
- [Кэшированные данные в настройках на уровне документа](../vsto/cached-data-in-document-level-customizations.md)  
+ [Кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md)  
  Описывается сохранение данных во внедренном острове данных, доступном без запуска приложения Office.  
   
- [XML-схемы и данные в настройках на уровне документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
  Описывается использование схем XML в настройках уровня документа для создания элементов управления, привязанных к данным XML.  
   
- [Общие сведения об использовании файлов локальной базы данных в решениях для Office](../vsto/using-local-database-files-in-office-solutions-overview.md)  
+ [Использовать файлы локальной базы данных в решений Office](../vsto/using-local-database-files-in-office-solutions-overview.md)  
  Описывается импорт файлов базы данных в проекты и ситуации, в которых можно кэшировать данные для автономного использования.  
   
 ## <a name="related-sections"></a>Связанные разделы  

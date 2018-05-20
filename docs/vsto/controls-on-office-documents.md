@@ -1,5 +1,5 @@
 ---
-title: Элементы управления в документах Office | Документы Microsoft
+title: Элементы управления в документах Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,29 +19,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09b928680a4b2be161ca6727dd92690b95d043e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d33c89973124e2bae8e34aca3fc99096ac02ef6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="controls-on-office-documents"></a>Элементы управления в документах Office
   Средства разработки Office в Visual Studio можно использовать для добавления элементов управления Windows Forms и *элементов управления ведущего приложения* в документы Word и книги Excel. Элементы управления ведущего приложения — это объекты, которые расширяют различные объекты пользовательского интерфейса в объектных моделях Word и Excel.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
- При разработке проектов надстроек VSTO для Excel или Word можно программным образом добавлять такие элементы управления в любой документ или книгу, открытые в среде выполнения.  
+ При разработке проектов надстроек VSTO для Excel или Word, можно программным образом добавлять эти элементы управления в любой открытый документ или книгу во время выполнения.  
   
  При разработке проектов для Excel или Word на уровне документа можно добавлять элементы управления в среду выполнения программным образом или использовать конструктор Visual Studio и добавлять их на этапе разработки.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="in-this-section"></a>Содержание раздела  
+ [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)  
  Описывает функциональные возможности ведущих элементов и элементов управления ведущего приложения, включая программирование реакции на события и привязку элементов управления к данным, а также отличия элементов управления от собственных объектов.  
   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
  Описывает проблемы, которые могут возникнуть при использовании в коде ведущих элементов и элементов управления ведущего приложения.  
   
- [Общие сведения об использовании элементов управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)  
+ [Элементы управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)  
  Содержит сведения об использовании элементов управления Windows Forms в документах Word и Excel и описывает их отличие от элементов управления Windows Forms.  
   
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)  

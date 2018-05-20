@@ -1,5 +1,5 @@
 ---
-title: Доступ к ленте во время выполнения | Документы Microsoft
+title: Доступ к ленте во время выполнения
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,20 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c44e98a917b0df8f8a2760540333118cf8134d9c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: abeffdbc61861aae3c0c9c53cb07d597abaa31c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="accessing-the-ribbon-at-run-time"></a>Accessing the Ribbon at Run Time
+# <a name="access-the-ribbon-at-runtime"></a>Доступ к ленте во время выполнения
   Вы можете написать код, чтобы отобразить, скрыть или изменить ленту и позволить пользователям запускать код из элементов управления в настраиваемой области задач, панели действий или области формы Outlook.  
 
  Доступ к ленте осуществляется с помощью класса `Globals`. Для проектов Outlook можно получить доступ к лентам, которые отображаются в конкретном окне инспектора или проводника Outlook.  
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
 
-## <a name="accessing-the-ribbon-by-using-the-globals-class"></a>Доступ к ленте с помощью класса Globals  
+## <a name="access-the-ribbon-by-using-the-globals-class"></a>Доступ к ленте с помощью класса Globals  
  Вы можете использовать класс `Globals` для доступа к ленте в проекте уровня документа или проекте надстройки VSTO из любого места в проекте.  
 
  Дополнительные сведения о `Globals` см. в описании [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/27/2018
  [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)]
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]  
 
-## <a name="accessing-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Доступ к коллекции лент, которые отображаются в определенном окне инспектора Outlook  
+## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Доступ к коллекции лент, появляющихся в определенном окне инспектора Outlook  
  Можно получить доступ к коллекции лент, появляющихся в Outlook *инспекторов*. Инспектор — это окно, которое открывается в Outlook при выполнении пользователем определенных задач, таких как создание электронного сообщения. Для доступа к ленте окна инспектора вызовите свойство `Ribbons` класса `Globals` и передайте объект <xref:Microsoft.Office.Interop.Outlook.Inspector>, представляющий инспектор.  
 
  Следующий пример получает коллекцию лент в инспекторе, в котором фокус находится в данный момент. Пример кода затем получает доступ к ленте `Ribbon1` и задает текст `Hello World`, отображаемый в поле со списком на ленте.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/27/2018
  [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
 
-## <a name="accessing-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Доступ к коллекции лент, которые отображаются в определенном окне проводника Outlook  
+## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Доступ к коллекции лент, которые отображаются в определенном проводнике Outlook  
  Можно получить доступ к коллекции лент, появляющихся в Outlook *Explorer*. Проводник — это пользовательский интерфейс основного приложения экземпляра Outlook. Для доступа к ленте окна проводника вызовите свойство `Ribbons` класса `Globals` и передайте объект <xref:Microsoft.Office.Interop.Outlook.Explorer>, представляющий проводник.  
 
  Следующий пример получает коллекцию лент проводника, в котором фокус находится в данный момент. Пример кода затем получает доступ к ленте `Ribbon1` и задает текст `Hello World`, отображаемый в поле со списком на ленте.  

@@ -1,5 +1,5 @@
 ---
-title: Элемент управления диаграммы | Документы Microsoft
+title: Элемент управления диаграммы
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,24 +19,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c473c026f5d5f9a5919626fb667994e6ffdc01f4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1adf0d961489b09a9dc01775148636e6d2d231a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="chart-control"></a>Chart Control
+# <a name="chart-control"></a>Элемент управления диаграммы
   Элемент управления <xref:Microsoft.Office.Tools.Excel.Chart> — это объект диаграммы, предоставляющий события. При добавлении диаграммы на лист Visual Studio создает объект <xref:Microsoft.Office.Tools.Excel.Chart>, который можно запрограммировать напрямую, не обращаясь к объектной модели Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="creating-the-control"></a>Создание элемента управления  
- Элементы управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавлять на лист Microsoft Office Excel во время разработки и во время выполнения в проекте на уровне документа.  
+## <a name="create-the-control"></a>Создание элемента управления  
+ Можно добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления на лист Microsoft Office Excel во время разработки или во время выполнения в проекте уровня документа.  
   
- Вы можете добавить элементы управления <xref:Microsoft.Office.Tools.Excel.Chart> на лист во время выполнения надстройки VSTO. Дополнительные сведения см. в разделе [как: Добавление элементов управления диаграммы на листы](../vsto/how-to-add-chart-controls-to-worksheets.md).  
+ Можно добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления на лист во время выполнения в надстройке VSTO. Дополнительные сведения см. в разделе [как: управляет добавления диаграммы на листы](../vsto/how-to-add-chart-controls-to-worksheets.md).  
   
 > [!NOTE]  
->  При закрытии листа динамически созданные объекты диаграммы не сохраняются на листе как элементы управления ведущего приложения. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+>  При закрытии листа динамически созданные объекты диаграммы не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="formatting"></a>Форматирование  
  Любое форматирование, которое можно применить к <xref:Microsoft.Office.Interop.Excel.Chart>, также можно применить к элементу управления <xref:Microsoft.Office.Tools.Excel.Chart>. Это такие элементы форматирования, как границы, шрифты, тип диаграммы, линии сетки, условные обозначения и метки данных.  

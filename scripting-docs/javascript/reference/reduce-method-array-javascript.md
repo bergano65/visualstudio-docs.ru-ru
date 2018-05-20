@@ -1,12 +1,13 @@
 ---
-title: "Метод Reduce (Array) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Метод Reduce (Array) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>Метод reduce (Array) (JavaScript)
 Вызывает заданный обратный вызов функции для всех элементов в массиве. Возвращаемое значение функции обратного вызова — накопленный результат. Оно предоставляется как аргумент в следующем вызове функции обратного вызова.  
@@ -41,9 +42,9 @@ array1.reduce(callbackfn[, initialValue])
   
 |Параметр|Определение|  
 |---------------|----------------|  
-|`array1`|Обязательный. Объект массива.|  
-|`callbackfn`|Обязательный. Функция, которая принимает до четырех аргументов. Метод `reduce` вызывает функцию `callbackfn` по одному разу для каждого элемента массива.|  
-|`initialValue`|Необязательно. Если `initialValue` указан, он используется как начальное значение для запуска этих копий. Первый вызов `callbackfn` функции это значение предоставляется как аргумент вместо значения массива.|  
+|`array1`|Обязательно. Объект массива.|  
+|`callbackfn`|Обязательно. Функция, которая принимает до четырех аргументов. Метод `reduce` вызывает функцию `callbackfn` по одному разу для каждого элемента массива.|  
+|`initialValue`|Необязательный. Если `initialValue` указан, он используется как начальное значение для запуска этих копий. Первый вызов `callbackfn` функции это значение предоставляется как аргумент вместо значения массива.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Накопленный результат из последнего вызова функции обратного вызова.  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>Примечания  
  Если `initialValue` предоставляется, `reduce` вызовы метода `callbackfn` функцию один раз для каждого элемента массива в порядке возрастания индекса. Если `initialValue` не предоставлен, `reduce` вызовы метода `callbackfn` функции к каждому элементу, начиная со второго элемента.  
   
- Возвращаемое значение функции обратного вызова предоставляется как `previousValue` аргумента при следующем вызове функции обратного вызова. Возвращаемое значение последнего вызова функции обратного вызова имеет значение, возвращаемое `reduce` метод.  
+ Возвращаемое значение функции обратного вызова предоставляется как `accumulator` аргумента при следующем вызове функции обратного вызова. Возвращаемое значение последнего вызова функции обратного вызова имеет значение, возвращаемое `reduce` метод.  
   
  Функция обратного вызова не вызывается для отсутствующих элементов массива.  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Синтаксис функции обратного вызова  
  Синтаксис функции обратного вызова выглядит следующим образом:  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  Функция обратного вызова можно объявить с помощью до четырех параметров.  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |Аргумент обратного вызова|Определение|  
 |-----------------------|----------------|  
-|`previousValue`|Значение из предыдущего вызова функции обратного вызова. Если `initialValue` передается `reduce` метода `previousValue` — `initialValue` при первом вызове функции.|  
+|`accumulator`|Значение из предыдущего вызова функции обратного вызова. Если `initialValue` передается `reduce` метода `accumulator` — `initialValue` при первом вызове функции.|  
 |`currentValue`|Значение текущего элемента массива.|  
 |`currentIndex`|Числовой индекс текущего элемента массива.|  
 |`array1`|Объект массива, содержащий требуемый элемент.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Если `initialValue` предоставляется методу сократить:  
   
--   Аргумент `previousValue` имеет значение `initialValue`.  
+-   Аргумент `accumulator` имеет значение `initialValue`.  
   
 -   `currentValue` Аргумент имеет значение первого элемента массива.  
   
  Если `initialValue` не задан:  
   
--   `previousValue` Аргумент имеет значение первого элемента массива.  
+-   `accumulator` Аргумент имеет значение первого элемента массива.  
   
 -   `currentValue` Аргумент имеет значение второго элемента массива.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |Элемент удален из массива.|Нет, если этот элемент не был уже передан функции обратного вызова.|  
   
 ## <a name="example"></a>Пример  
- Следующий пример объединяет значения массива в строку, разделяя значения с «::». Так как начальное значение не указано для `reduce` метод, первый вызов функции обратного вызова имеет «abc» как `previousValue` аргумент и «def» как `currentValue` аргумент.  
+ Следующий пример объединяет значения массива в строку, разделяя значения с «::». Так как начальное значение не указано для `reduce` метод, первый вызов функции обратного вызова имеет «abc» как `accumulator` аргумент и «def» как `currentValue` аргумент.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  Следующий пример добавляет значения в массиве. `currentIndex` И `array1` параметры используются в функции обратного вызова.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  Следующий пример возвращает массив, содержащий только те значения, которые находятся в диапазоне от 1 до 10 в другом массиве. Начальное значение, указанное для `reduce` метод — пустой массив.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  

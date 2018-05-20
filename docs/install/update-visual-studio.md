@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 3. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
 
-    ![Обновление Visual Studio 2017 с помощью диалогового окна "Обновление" в центре уведомлений](media/vs-update-now-from-notifications-hub.png "Диалоговое окно "Обновление" в центре уведомлений в Visual Studio")
+    ![Обновление Visual Studio 2017 с помощью диалогового окна "Обновление" в центре уведомлений](media/vs-update-now-from-notifications-hub.png "Диалоговое окно \"Обновление\" в центре уведомлений в Visual Studio")
 
      Если откроется диалоговое окно управления доступом пользователя, выберите **Да**. Затем на некоторое время может открыться диалоговое окно с сообщением "Пожалуйста, подождите". Затем откроется Visual Studio Installer, чтобы начать обновление.
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 04/26/2018
      Обновление продолжается. Когда обновление завершится, Visual Studio перезапустится.
 
      > [!NOTE]
-     > Если вы запускаете Visual Studio с правами администратора, вручную перезапустите его после обновления.    
+     > Если вы запускаете Visual Studio с правами администратора, вручную перезапустите его после обновления.
 
 ### <a name="use-the-ide"></a>Использование интегрированной среды разработки
 
@@ -64,14 +64,14 @@ ms.lasthandoff: 04/26/2018
 
 2. Выберите **Справка** > **Проверка обновлений**.
 
-     ![Новое меню "Справка" в Visual Studio версии 15.6](media/vs-help-menu-check-for-updates.png "Новое меню "Справка" в Visual Studio версии 15.6")
+     ![Новое меню "Справка" в Visual Studio версии 15.6](media/vs-help-menu-check-for-updates.png "Новое меню \"Справка\" в Visual Studio версии 15.6")
 
 3. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
 
    Как описано в предыдущем разделе, Visual Studio перезагружается после успешного завершения обновления.
 
    > [!NOTE]
-   > Если вы запускаете Visual Studio с правами администратора, вручную перезапустите его после обновления.  
+   > Если вы запускаете Visual Studio с правами администратора, вручную перезапустите его после обновления.
 
 ### <a name="use-the-visual-studio-installer"></a>Использование Visual Studio Installer
 
@@ -112,7 +112,7 @@ ms.lasthandoff: 04/26/2018
 
 3. В диалоговом окне **Расширения и обновления** нажмите кнопку **Обновить**.
 
-  ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-extensions-and-updates.png "Диалоговое окно "Расширения и обновления" в Visual Studio")
+  ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-extensions-and-updates.png "Диалоговое окно \"Расширения и обновления\" в Visual Studio")
 
 #### <a name="more-about-visual-studio-notifications"></a>Подробнее об уведомлениях Visual Studio
 
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/26/2018
 
 Вы можете настроить пропуск уведомления, чтобы оно больше не отображалось в Visual Studio. Чтобы сбросить список игнорируемых уведомлений, нажмите кнопку **Параметры** в центре уведомлений.
 
-   ![Нажатие кнопки "Параметры" в центре уведомлений для просмотра параметров уведомлений](media/vs-notifications-hub-settings-button.png "Нажатие кнопки "Параметры" в центре уведомлений для просмотра параметров уведомлений")
+   ![Нажатие кнопки "Параметры" в центре уведомлений для просмотра параметров уведомлений](media/vs-notifications-hub-settings-button.png "Нажатие кнопки \"Параметры\" в центре уведомлений для просмотра параметров уведомлений")
 
 ### <a name="update-by-using-the-visual-studio-installer"></a>Обновление с помощью установщика Visual Studio
 

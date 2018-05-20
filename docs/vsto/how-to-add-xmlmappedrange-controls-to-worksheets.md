@@ -1,5 +1,5 @@
 ---
-title: 'Как: Добавление элементов управления XMLMappedRange на листы | Документы Microsoft'
+title: 'Как: Добавление элементов управления XMLMappedRange на листы'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fa0e6d6249ea9b7da3fb0ab57640b61fb38e7fe5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55b6c83624c3ccb6c28701cd97753ea155e37288
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления XMLMappedRange на листы
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Как: Добавление элементов управления XMLMappedRange на листы
   При сопоставлении XML-элемент с ячейкой в Microsoft Office Excel, Visual Studio автоматически добавляет <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> лист элемента управления.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Управления не доступен на **элементов** или **источники данных** окна. Кроме того, не удается создать <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элементы управления программными средствами.  
   
-### <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Чтобы добавить элемент управления XMLMappedRange на лист  
+## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Чтобы добавить элемент управления XMLMappedRange на лист  
   
 1.  Откройте книгу Excel в конструкторе Visual Studio.  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 3.  На **разработчика** щелкните **источника**.  
   
     > [!NOTE]  
-    >  Если **разработчика** вкладка не отображается на ленте, необходимо включить его. Для получения дополнительной информации см. [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если **разработчика** вкладка не отображается на ленте, необходимо включить его. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
      **XML-источник** отображается область задач.  
   
@@ -65,8 +65,8 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>См. также  
  [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
+ [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Практическое руководство. Сопоставление схем и листов в Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
+ [Как: сопоставление схем и листов внутри Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   
