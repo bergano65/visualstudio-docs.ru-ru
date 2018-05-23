@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Краткое руководство: Сначала посмотрим, развертывание в Visual Studio
 
@@ -86,6 +86,8 @@ ms.lasthandoff: 05/10/2018
     ![Мост рабочего стола](../deployment/media/feature-tour-desktop-bridge.png)
 
 ### <a name="create-an-installer-package-windows-client"></a>Создание пакета установщика (клиент Windows)
+
+Если требуются более сложные установки для настольного приложения, чем [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) предоставляет, можно создать пакет установщика, проект установки или пользовательского загрузчика.
 
 - Установщик MSI-based WiX можно создать с помощью [2017 г. расширение WiX набора средств Visual Studio](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 

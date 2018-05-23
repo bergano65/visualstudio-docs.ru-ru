@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Как: ответ на отладчик Just-In-Time
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/18/2018
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Чтобы исправить или устранения ошибки (для пользователей Visual Studio)
 
-- Необходимо иметь [установленной среды Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48146) для просмотра подробных сведений об ошибке и попробуйте отладить его. Дополнительные сведения см. в разделе [отладки с помощью JIT-отладчик](../debugger/debug-using-the-just-in-time-debugger.md). Если не удается исправить ошибку и исправить приложение, обратитесь к владельцу приложения для устранения этой ошибки.
+- Необходимо иметь [установленной среды Visual Studio](http://www.visualstudio.com) для просмотра подробных сведений об ошибке и попробуйте отладить его. Дополнительные сведения см. в разделе [отладки с помощью JIT-отладчик](../debugger/debug-using-the-just-in-time-debugger.md). Если не удается исправить ошибку и исправить приложение, обратитесь к владельцу приложения для устранения этой ошибки.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Чтобы предотвратить появление диалоговое окно JIT – отладчик
 

@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Элемент ProvideDefaultName (шаблоны Visual Studio)
 Указывает ли [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] система проектов будет создавать имя по умолчанию для шаблона в **Добавление нового элемента** или **новый проект** диалоговое окно.  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
  Если `ProvideDefaultName` элемент `false`, **имя** поля в **Добавление нового элемента** и **новый проект** диалоговые окна содержат значение `<Enter_name>`.  
   
- Используйте [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) элемент, чтобы задать имя по умолчанию для проекта или элемента в **Добавление нового элемента** и **новый проект** диалоговым окнам.  
+ Используйте [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) элемент, чтобы задать имя по умолчанию для проекта или элемента в **Добавление нового элемента** и **новый проект** диалоговым окнам. Когда значение `ProvideDefaultName` элемент `true`, упущение `DefaultName` элемент для проектов заполняет окно с именем шаблона, который является значением из [имя](../extensibility/name-element-visual-studio-templates.md) элемент.
   
 ## <a name="example"></a>Пример  
  В следующем примере кода `ProvideDefaultName` элемент `false`.  

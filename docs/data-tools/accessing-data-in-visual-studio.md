@@ -1,5 +1,5 @@
 ---
-title: Доступ к данным в Visual Studio
+title: Доступ к данным и средства
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
+# <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
 В Visual Studio можно создавать приложения, которые подключаются к данным в практически в любой базе данных продукта или услуги, в любом формате, в любом месте — на локальном компьютере, в локальной сети или в public, private или гибридного облака.
 
 Для приложений на языке JavaScript, Python, PHP, Ruby или C++ можно подключиться к данным, как-то еще, используя получение библиотек и кода. Для приложений .NET Visual Studio предоставляет средства, которые можно использовать для просмотра источников данных, создание модели объектов для хранения и управления данными в памяти и привязки данных к пользовательскому интерфейсу. Microsoft Azure предоставляет пакеты SDK для .NET, Java, Node.js, PHP, Python, Ruby и мобильных приложений и средств в Visual Studio для подключения к службе хранилища Azure.
 
-В следующих списках приведены лишь некоторые из многих системах базы данных и хранилища, которые можно использовать из Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) предложения — службы данных, которые включают все Подготовка и администрирование базового хранилища данных.  [Средства Azure для Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) — это необязательный компонент, который позволяет работать с хранилищами данных Azure непосредственно из Visual Studio. Большинство других SQL и NoSQL базы данных продуктов, которые перечислены здесь может размещаться на локальном компьютере, в локальной сети или в Microsoft Azure на виртуальной машине. В этом сценарии вы несете ответственность за управление самой базы данных.
+В следующих списках приведены лишь некоторые из многих системах базы данных и хранилища, которые можно использовать из Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) предложения — службы данных, которые включают все Подготовка и администрирование базового хранилища данных. **Разработки Azure** рабочей нагрузки в [2017 г. Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) позволяет работать с хранилищами данных Azure непосредственно из Visual Studio.
+
+![Рабочая нагрузка разработки Azure](media/azure-development-workload.png)
+
+Большинство других SQL и NoSQL базы данных продуктов, которые перечислены здесь может размещаться на локальном компьютере, в локальной сети или в Microsoft Azure на виртуальной машине. Если она размещается на виртуальной машине Microsoft Azure, вы отвечают за управление самой базы данных.
 
 **Microsoft Azure**
 
@@ -68,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
 Все .NET доступ к данным, включая в .NET Core основан на ADO.NET, набор классов, определяющий интерфейс для доступа к любой тип источника данных, реляционных и нереляционных. В Visual Studio есть несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, управление данными и пользователь получает данные. Документация в этом разделе описывается использование этих средств. Вы также можете программировать непосредственно на командных объектов ADO.NET. Дополнительные сведения о прямом вызове API-интерфейсы ADO.NET см. в разделе [ADO.NET](/dotnet/framework/data/adonet/index).
 
-См. документацию доступа к данным непосредственно связаны с ASP.NET [работа с данными](http://www.asp.net/web-forms/overview/presenting-and-managing-data) на веб-сайте ASP.NET. Учебник по использованию платформы Entity Framework с ASP.NET MVC см. в разделе [Приступая к работе с Entity Framework 6 Code First MVC 5 с помощью](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+См. документацию доступа к данным, относящиеся к ASP.NET [работа с данными](http://www.asp.net/web-forms/overview/presenting-and-managing-data) на веб-сайте ASP.NET. Учебник по использованию платформы Entity Framework с ASP.NET MVC см. в разделе [Приступая к работе с Entity Framework 6 Code First MVC 5 с помощью](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Для доступа к службе хранилища Azure и другими службами Azure универсальных приложений для платформы Windows (UWP) в C# или Visual Basic можно использовать Microsoft Azure SDK для .NET. Класс Windows.Web.HttpClient разрешает взаимодействие с любой службы RESTful. Дополнительные сведения см. в разделе [подключение к HTTP-серверу с помощью Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 

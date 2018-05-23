@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d4a5845dd5e5f364d34544f57e1ef7bdfe6052
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e6fec89a151525a84349b7019c7569eb752172e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Ошибка. Запрашиваемый ресурс не найден
 Службами IIS возвращена общая ошибка, связанная с безопасностью.  
@@ -29,8 +29,7 @@ ms.lasthandoff: 04/18/2018
   
  Эта ошибка может быть вызвана многими причинами. К наиболее распространенным причинам относятся проблемы, связанные с установкой или конфигурацией IIS, конфигурацией веб-сайта или разрешениями в файловой системе. Можно попытаться получить доступ к ресурсу с помощью браузера. В зависимости от того, как настроены службы IIS, возможно, потребуется использовать локальный браузер на сервере или просмотреть журнал ошибок служб IIS, чтобы получить подробное сообщение об ошибке.  
   
- Дополнительные сведения об устранении неполадок в службах IIS см. в разделе [управления IIS и администрирования](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Дополнительные сведения об устранении неполадок в службах IIS см. в разделе [управления IIS и администрирования](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>См. также  
- [Средство безопасности UrlScan](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [Ошибка: веб-сервер заблокирован и блокирует команду DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

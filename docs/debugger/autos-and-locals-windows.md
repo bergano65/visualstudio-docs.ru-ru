@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Проверить переменные «видимые» и «локальные» в Visual Studio
 **Видимые** окна (во время отладки, **CTRL + ALT + V, A**, или **Отладка > Windows > видимые**) и **локальные** окна (во время отладки **CTRL + ALT + V, L**, или **Отладка > Windows > локальные**) являются весьма полезен при необходимости для просмотра значений переменных при отладке. В окне **Локальные** отображаются переменные, которые определены в локальной области, которой обычно является функция или метод, выполняемые в текущий момент. В окне **Видимые** отображаются переменные, используемые вокруг текущей строки (места, где остановилось выполнение отладчика). Только переменные, которые будут отображаться в этом окне отличается на разных языках. См. раздел [What variables appear in the Autos Window?](#bkmk_whatvariables) ниже.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/18/2018
 Более подробную информацию об основных принципах отладки см. в разделе [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Просмотр объектов в окнах "Видимые" и "Локальные"  
-Массивы и объекты отображаются в окнах "Видимые" и "Локальные" как элементы управления типа "дерево". Щелкните стрелку слева от имени переменной, чтобы развернуть представление и увидеть поля и свойства. Ниже приведен пример объекта [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) в окне **Локальные** .  
+Массивы и объекты отображаются в окнах "Видимые" и "Локальные" как элементы управления типа "дерево". Щелкните стрелку слева от имени переменной, чтобы развернуть представление и увидеть поля и свойства. Ниже приведен пример [FileStream](/dotnet/api/system.io.filestream) объекта в **локальные** окна:  
   
 ![Локальные переменные&#45;FileStream](../debugger/media/locals-filestream.png "FileStream локальные переменные")  
   
