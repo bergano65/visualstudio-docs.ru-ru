@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Практическое руководство. Создание приемника событий для конкретного экземпляра списка
   Приемник событий экземпляра списка реагирует на события, возникающие в любом экземпляре определения списка. Несмотря на то, что шаблон приемника событий позволяет отслеживать определенный экземпляр списка, можно изменить приемник событий, которая предназначена для определения списка, чтобы реагировать на события в определенный экземпляр списка.  
@@ -55,13 +55,13 @@ ms.lasthandoff: 04/16/2018
   
      В данный момент приемник событий ссылается на определение списка "Извещения" с помощью следующей строки.  
   
-    ```  
+    ```xml  
     <Receivers ListTemplateId="104">  
     ```  
   
      Замените эту строку следующим текстом.  
   
-    ```  
+    ```xml  
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   

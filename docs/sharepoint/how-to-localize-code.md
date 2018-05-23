@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07c9347bbfb42e3c2e20a1b4ecf6d852c567edbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b559239b537be4a57ff0815f67d8c50acb8b1ed
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-code"></a>Практическое руководство. Локализация кода
   Не локализованный код использует жестко запрограммированные значения строк. Для локализации строк кода, замените их вызовы <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, — метод, который ссылается на локализованные ресурсы.  
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
 11. Найдите все жестко заданные строки в коде, отображаемые пользователям, например, текст пользовательского интерфейса, ошибок и текст сообщений. Замените их вызовом метода <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, используя следующий синтаксис:  
   
-    ```  
+    ```csharp  
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")  
     ```  
   
