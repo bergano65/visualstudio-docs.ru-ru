@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0aa938d41540229d6cd91598968f104b3fa3a7be
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите его с шаблоном проекта в Visual Studio, можно также создать мастер для шаблона. Мастер можно использовать для сбора информации от пользователей, при использовании шаблона для создания нового проекта, содержащего элемент проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
 -   Отладка и тестирование мастера.  
   
 > [!NOTE]  
->  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+> Несколько рабочих процессов образца, [примеры рабочих процессов SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения данного пошагового руководства, необходимо сначала создать решение SiteColumnProjectItem, выполнив [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  

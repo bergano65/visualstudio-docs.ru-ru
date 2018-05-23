@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите его с шаблоном элемента в Visual Studio, можно также создать мастер для шаблона. Мастер можно использовать для сбора информации от пользователей, при использовании шаблона для добавления в проект новый экземпляр элемента проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   Отладка и тестирование мастера.  
   
 > [!NOTE]  
->  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [файлы проекта для пошаговых руководств расширения средств SharePoint](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Вы можете загрузить пример из [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , показано, как создавать пользовательские действия рабочего процесса.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения данного пошагового руководства, необходимо сначала создать решение CustomActionProjectItem, выполнив [Пошаговое руководство: создание элемент проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  

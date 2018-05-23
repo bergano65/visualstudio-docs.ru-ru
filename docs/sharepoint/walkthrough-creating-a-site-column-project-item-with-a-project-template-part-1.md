@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 04889d508903a80717f7055599a8b63b354e32ce
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 1
   Проекты SharePoint представляют собой контейнеры для одного или нескольких элементов проекта SharePoint. Системы проектов SharePoint в Visual Studio можно расширить путем создания собственных типов элементов проектов SharePoint и связывая их с шаблоном проекта. В этом пошаговом руководстве будет определить тип элемента проекта для создания столбца сайта, и затем вы создадите шаблон проекта, который может использоваться для создания нового проекта, который содержит элемента проекта столбца сайта.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
  Это изолированный Пошаговое руководство. После выполнения этого пошагового руководства, элемент проекта можно улучшить, добавив мастер в шаблоне проекта. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Вы можете загрузить пример, содержащий завершенные проекты, код и другие файлы для этого пошагового руководства из следующего расположения: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+> Несколько рабочих процессов образца, [примеры рабочих процессов SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения данного пошагового руководства.  

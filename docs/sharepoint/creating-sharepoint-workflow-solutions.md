@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] предоставляет средства для создания пользовательских рабочих процессов, которые управляют жизненным циклом документов и элементов списка веб-сайте SharePoint. Предоставляется конструктор, набор элементов управления действием и ссылки на необходимые сборки. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] также включает **мастер настройки SharePoint**, помогающие создавать и настраивать рабочие процессы.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>Рабочие процессы в SharePoint  
  При добавлении рабочего процесса в библиотеку SharePoint или список, можно применять бизнес-процесс для всех элементов в библиотеку или список. Рабочий процесс описывает действия, которые система или пользователь должен выполнить для каждого элемента, например, элемент, чтобы изменить, а затем проверить отправку. Эти действия, известные как *действия*, являются стандартными блоками рабочего процесса.  
   
- Можно создать рабочие процессы SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывать их на веб-сайта SharePoint. После развертывания рабочего процесса в SharePoint, его нужно связать с библиотеку или список. Он затем запускается автоматически, с помощью процесса, вручную или пользователем. Дополнительные сведения об операции рабочего процесса см. в разделе [Управление процессами с помощью рабочих процессов](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ Можно создать рабочие процессы SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывать их на веб-сайта SharePoint. После развертывания рабочего процесса в SharePoint, его нужно связать с библиотеку или список. Он затем запускается автоматически, с помощью процесса, вручную или пользователем. Дополнительные сведения об операции рабочего процесса см. в разделе [рабочих процессов разработки SharePoint, с помощью Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Создание рабочих процессов пользовательских SharePoint  
  Два проекта рабочих процессов доступны для вас в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **последовательный рабочий процесс** и **конечного автомата**.  
