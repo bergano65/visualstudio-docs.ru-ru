@@ -1,5 +1,5 @@
 ---
-title: Рекомендации по созданию Outlook области формы | Документы Microsoft
+title: Рекомендации по созданию областей формы Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Рекомендации по созданию областей формы Outlook
   Следующие сведения помогут вам оптимизировать области формы и предотвращать потенциальные проблемы.  
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Отключение наследования областей формы](#DisablingInheritance).  
   
--   [Общие сведения о типах и именах классов сообщений](#ClassNames).  
+-   [Понимать типы и имена классов сообщений](#ClassNames).  
   
 -   [Проектирование смежных областей формы для области чтения](#ReadingPane).  
   

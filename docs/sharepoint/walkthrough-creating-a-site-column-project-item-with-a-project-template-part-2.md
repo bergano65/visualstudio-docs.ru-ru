@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите его с шаблоном проекта в Visual Studio, можно также создать мастер для шаблона. Мастер можно использовать для сбора информации от пользователей, при использовании шаблона для создания нового проекта, содержащего элемент проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Если вы разрабатываете проект Visual Basic, удалите `ProjectTemplateWizard` пространства имен из `WizardWindow` имя класса в `x:Class` атрибут `Window` элемента. Этот элемент находится в первой строке кода XAML. После завершения, первая строка должна выглядеть как в следующем примере.  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Если вы разрабатываете проект Visual Basic, удалите `ProjectTemplateWizard` пространства имен из `Page1` имя класса в `x:Class` атрибут `UserControl` элемента. Это в первой строке кода XAML. Когда закончите, первая строка должна выглядеть следующим образом.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page1"  
     ```  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Если вы разрабатываете проект Visual Basic, удалите `ProjectTemplateWizard` пространства имен из `Page2` имя класса в `x:Class` атрибут `UserControl` элемента. Это в первой строке кода XAML. Когда закончите, первая строка должна выглядеть следующим образом.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page2"  
     ```  
   
@@ -332,7 +332,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  В разделе **SiteColumnProjectTemplate** узел, откройте файл SiteColumnProjectTemplate.vstemplate и удалите следующий элемент из него.  
   
-    ```  
+    ```xml  
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
     ```  
   
@@ -340,16 +340,16 @@ ms.lasthandoff: 04/16/2018
   
 5.  В разделе **SiteColumnProjectTemplate** узел, откройте файл ProjectTemplate.csproj или ProjectTemplate.vbproj, а затем удалите следующие `PropertyGroup` элемент из него.  
   
-    ```  
+    ```xml  
     <PropertyGroup>  
       <SignAssembly>true</SignAssembly>  
       <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>  
     </PropertyGroup>  
-    ```  
+    ``` 
   
 6.  Удалите следующий `None` элемента.  
   
-    ```  
+    ```xml  
     <None Include="key.snk" />  
     ```  
   
@@ -384,7 +384,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Выполните следующую команду, заменив *PathToWizardAssembly* с указанием полного пути к сборке ProjectTemplateWizard.dll ProjectTemplateWizard проекта на компьютере разработчика:  
   
-    ```  
+    ```cmd  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  В конце файла добавьте следующие `WizardExtension` элемент между `</TemplateContent>` и `</VSTemplate>` тегов. Замените *ваш токен* значение `PublicKeyToken` атрибута с токен открытого ключа, полученное в предыдущей процедуре.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=your token</Assembly>  
       <FullClassName>ProjectTemplateWizard.SiteColumnProjectWizard</FullClassName>  
@@ -418,7 +418,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В проекте SiteColumnProjectTemplate Замените содержимое файла Elements.xml следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   

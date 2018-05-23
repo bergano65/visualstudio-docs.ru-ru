@@ -1,5 +1,5 @@
 ---
-title: Общие справочные материалы (Разработка решений Office в Visual Studio) | Документы Microsoft
+title: Общие справочные сведения (Разработка решений Office в Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,20 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91c8f8003f610e9cf4aa440fa0175bb13267896e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="general-reference-office-development-in-visual-studio"></a>Общие справочные материалы (разработка решений Office в Visual Studio)
+# <a name="general-reference-office-development-in-visual-studio"></a>Общие справочные сведения (Разработка решений Office в Visual Studio)
   В этом разделе содержатся технические сведения о проектах Microsoft Office в Visual Studio.  
   
 > [!NOTE]  
 >  Заинтересованы в разработке решений, расширяющих возможности Office через [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и их можно создавать с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Основные сборки модулей взаимодействия Office](../vsto/office-primary-interop-assemblies.md)  
+## <a name="in-this-section"></a>Содержание раздела  
+ [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)  
  Список основных сборок взаимодействия, которые можно установить вместе с Office, а также приводится краткое описание каждого из них.  
   
  [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)  

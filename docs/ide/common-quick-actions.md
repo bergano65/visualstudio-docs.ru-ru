@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
 
@@ -24,9 +24,13 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="actions-that-fix-errors"></a>Действия для исправления ошибок
 
+Описанные в этом разделе быстрые действия исправляют ошибки в коде, которые в противном случае привели бы к сбою сборки. Когда для устранения ошибки в строке кода доступны быстрые действия, значок, отображаемый в поле или под красной волнистой линией, имеет форму лампочки с красным крестом.
+
+![Значок ошибки и меню быстрых действий](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Исправление опечаток в символах или ключевых словах
 
-Если вы неправильно напишете тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправит его. В меню лампочки отобразится следующий текст: **Изменить *слово с опечаткой* на *правильное слово***.  Пример:
+Если вы неправильно вводите тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправляет его. В меню лампочки отобразится следующий текст: **Изменить *слово с опечаткой* на *правильное слово***.  Пример:
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  Идентификатор ошибки | Применимые языки |  Поддерживаемая версия |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# и Visual Basic | Visual Studio 2017 версия 15.3 |
-
-### <a name="make-method-synchronous"></a>Превращение метода в синхронный
-
-При использовании ключевого слова `async` или `Async` для метода ожидается, что где-нибудь внутри этого метода также будет использоваться ключевое слово `await` или `Await`.  Но если это не так, отобразится быстрое действие, которое позволяет сделать метод синхронным, удалив ключевое слово `async` или `Async` и изменив тип возвращаемого значения. Используйте параметр **Синхронизация метода** в меню быстрых действий.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  Идентификатор ошибки | Применимые языки |  Поддерживаемая версия |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# и Visual Basic | Visual Studio 2015 с обновлением 2 |
 
 ### <a name="make-method-asynchronous"></a>Превращение метода в асинхронный
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0+ | Visual Studio 2017 версии 15.5 |
+
+### <a name="make-method-synchronous"></a>Превращение метода в синхронный
+
+При использовании ключевого слова `async` или `Async` для метода ожидается, что где-нибудь внутри этого метода также будет использоваться ключевое слово `await` или `Await`.  Но если это не так, отобразится быстрое действие, которое позволяет сделать метод синхронным, удалив ключевое слово `async` или `Async` и изменив тип возвращаемого значения. Используйте параметр **Синхронизация метода** в меню быстрых действий.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  Идентификатор ошибки | Применимые языки |  Поддерживаемая версия |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# и Visual Basic | Visual Studio 2015 с обновлением 2 |
 
 ## <a name="see-also"></a>См. также
 

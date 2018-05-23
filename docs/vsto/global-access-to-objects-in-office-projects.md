@@ -1,5 +1,5 @@
 ---
-title: Глобальный доступ к объектам в проектах Office | Документы Microsoft
+title: Глобальный доступ к объектам в проектах Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,11 +33,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Глобальный доступ к объектам в проектах Office
   При создании проекта Office Visual Studio автоматически создает в проекте класс с именем `Globals` . Класс `Globals` можно использовать для доступа к различным элементам проекта из любого кода проекта в среде выполнения.  
@@ -53,9 +53,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Класс `ThisAddIn` в проекте надстройки VSTO. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisAddIn` .  
   
--   Все ленты проекта, настроенные с использованием конструктора лент. Доступ к лентам осуществляется с помощью свойства `Globals.Ribbons` . Для получения дополнительной информации см. [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md).  
+-   Все ленты проекта, настроенные с использованием конструктора лент. Доступ к лентам осуществляется с помощью свойства `Globals.Ribbons` . Дополнительные сведения см. в разделе [доступа к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md).  
   
--   Все области формы Outlook в проекте надстройки VSTO для Outlook. Доступ к областям формы осуществляется с помощью свойства `Globals.FormRegions` . Для получения дополнительной информации см. [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md).  
+-   Все области формы Outlook в проекте надстройки VSTO для Outlook. Доступ к областям формы осуществляется с помощью свойства `Globals.FormRegions` . Дополнительные сведения см. в разделе [доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md).  
   
 -   Объект фабрики, позволяющий создавать элементы управления ленты и ведущие элементы в среде выполнения в проектах, предназначенных для платформы [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Доступ к этому объекту осуществляется с помощью свойства `Globals.Factory` . Этот объект представляет собой экземпляр класса, который реализует один из следующих интерфейсов:  
   
@@ -72,19 +72,19 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## <a name="initializing-the-globals-class"></a>Инициализация класса Globals  
+## <a name="initialize-the-globals-class"></a>Инициализация класса Globals  
  Код, который пытается использовать класс `Globals` до полной инициализации документа или надстройки VSTO, может вызывать исключение в среде выполнения. Например, использование класса `Globals` при объявлении переменной уровня класса может привести к сбою, потому что класс `Globals` может не инициализироваться со ссылками на все ведущие элементы перед созданием объявленного объекта.  
   
 > [!NOTE]  
 >  Класс `Globals` никогда не инициализируется во время разработки, но экземпляры элементов управления создаются разработчиком. Это означает, что, если создается пользовательский элемент управления, в котором свойство класса `Globals` используется в пользовательском классе элементов управления, нужно проверять, возвращает ли свойство значение **null** , прежде чем пытаться использовать возвращенный объект.  
   
 ## <a name="see-also"></a>См. также  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
+ [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Ведущий элемент документа](../vsto/document-host-item.md)   
  [Ведущий элемент книги](../vsto/workbook-host-item.md)   
  [Ведущие элементы листа](../vsto/worksheet-host-item.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+ [Напишите код в решениях Office](../vsto/writing-code-in-office-solutions.md)  
   
   

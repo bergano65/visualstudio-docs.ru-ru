@@ -1,5 +1,5 @@
 ---
-title: Общие сведения об объектной модели Excel | Документы Microsoft
+title: Общие сведения о модели объектов Excel
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="excel-object-model-overview"></a>Excel Object Model Overview
+# <a name="excel-object-model-overview"></a>Общие сведения о модели объектов Excel
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:  
   
 -   <xref:Microsoft.Office.Interop.Excel.Application>  
@@ -43,14 +43,14 @@ ms.lasthandoff: 04/16/2018
   
  Объектная модель точно соответствует пользовательскому интерфейсу. Объект <xref:Microsoft.Office.Interop.Excel.Application> представляет приложение в целом, а каждый из объектов <xref:Microsoft.Office.Interop.Excel.Workbook> содержит коллекцию объектов `Worksheet`. Отсюда следует, что основная абстракция, представляющая ячейки, является объектом <xref:Microsoft.Office.Interop.Excel.Range>, позволяющим работать с отдельными ячейками или группой ячеек.  
   
- Помимо объектной модели Excel, проекты Office в Visual Studio предоставляют *ведущие элементы* и *элементы управления ведущего приложения* , расширяющие некоторые объекты из объектной модели Excel. Поведение ведущих элементов и элементов управления ведущего приложения аналогично поведению объектов Excel, однако они обладают дополнительными функциональными возможностями, такими как возможность привязки данных и дополнительные события. Дополнительные сведения см. в разделе [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md) и [ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md).  
+ Помимо объектной модели Excel, проекты Office в Visual Studio предоставляют *ведущие элементы* и *элементы управления ведущего приложения* , расширяющие некоторые объекты из объектной модели Excel. Поведение ведущих элементов и элементов управления ведущего приложения аналогично поведению объектов Excel, однако они обладают дополнительными функциональными возможностями, такими как возможность привязки данных и дополнительные события. Дополнительные сведения см. в разделе [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md) и [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).  
   
  В этом разделе приводится краткий обзор объектной модели Excel. Ресурсы, где узнать больше о всей объектной модели Excel см. в разделе [использование документации по объектной модели Excel](#ExcelOMDocumentation).  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [как следует использовать обработчики событий в Excel 2007 надстройки?](http://go.microsoft.com/fwlink/?LinkID=130291), и [как формы для создания пузырьковой диаграммы в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [инструкции I: использовать обработчики событий в Excel 2007 надстройки?](http://go.microsoft.com/fwlink/?LinkID=130291), и [инструкции I: создавать формы для пузырьковой диаграммы в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
-## <a name="accessing-objects-in-an-excel-project"></a>Доступ к объектам в проекте Excel  
- При создании нового проекта надстройки VSTO для Excel среда Visual Studio автоматически создает файл кода ThisAddIn.vb или ThisAddIn.cs. Доступ к объекту приложения можно получить с помощью свойства `Me.Application` или `this.Application`.  
+## <a name="access-objects-in-an-excel-project"></a>Доступа к объектам в проекте Excel  
+ При создании нового проекта надстройки VSTO для Excel Visual Studio автоматически создает *ThisAddIn.vb* или *ThisAddIn.cs* файл кода. Доступ к объекту приложения можно получить с помощью свойства `Me.Application` или `this.Application`.  
   
  При создании нового проекта уровня документа для Excel можно создать новый проект книги Excel или шаблона Excel. Visual Studio автоматически создает в новом проекте Excel (как для проектов книги, так и для проектов шаблона) следующие файлы кода:  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  С этими четырьмя объектами и их составляющими связана большая часть работы в Excel.  
   
-### <a name="application-object"></a>объект приложения;  
+### <a name="application-object"></a>Объект Application  
  Объект Excel <xref:Microsoft.Office.Interop.Excel.Application> представляет само приложение Excel. Объект <xref:Microsoft.Office.Interop.Excel.Application> представляет множество сведений о выполняемом приложении, параметрах соответствующего экземпляра и текущих объектах пользователя, открытых в экземпляре.  
   
 > [!NOTE]  
@@ -87,14 +87,14 @@ ms.lasthandoff: 04/16/2018
 ### <a name="workbook-object"></a>Объект Workbook  
  Объект <xref:Microsoft.Office.Interop.Excel.Workbook> представляет отдельную книгу в приложении Excel.  
   
- Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Excel.Workbook>, предоставляя тип <xref:Microsoft.Office.Tools.Excel.Workbook>. Данный тип обеспечивает доступ ко всем функциям объекта <xref:Microsoft.Office.Interop.Excel.Workbook>. Для получения дополнительной информации см. [Workbook Host Item](../vsto/workbook-host-item.md).  
+ Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Excel.Workbook>, предоставляя тип <xref:Microsoft.Office.Tools.Excel.Workbook>. Данный тип обеспечивает доступ ко всем функциям объекта <xref:Microsoft.Office.Interop.Excel.Workbook>. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).  
   
-### <a name="worksheet-object"></a>Объект Worksheet  
+### <a name="worksheet-object"></a>Worksheet - объект  
  Объект <xref:Microsoft.Office.Interop.Excel.Worksheet> является членом коллекции <xref:Microsoft.Office.Interop.Excel.Worksheets>. Многие свойства, методы и события объекта <xref:Microsoft.Office.Interop.Excel.Worksheet> идентичны или похожи на элементы, предоставляемые объектами <xref:Microsoft.Office.Interop.Excel.Application> или <xref:Microsoft.Office.Interop.Excel.Workbook>.  
   
  Excel предоставляет коллекцию <xref:Microsoft.Office.Interop.Excel.Sheets> как свойство объекта <xref:Microsoft.Office.Interop.Excel.Workbook>. Каждый член коллекции <xref:Microsoft.Office.Interop.Excel.Sheets> является объектом <xref:Microsoft.Office.Interop.Excel.Worksheet> или <xref:Microsoft.Office.Interop.Excel.Chart>.  
   
- Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Excel.Worksheet>, предоставляя тип <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот тип предоставляет доступ ко всем функциям объекта <xref:Microsoft.Office.Interop.Excel.Worksheet>, а также к новым функциям, таким как возможность размещения управляемых элементов управления и обработки новых событий. Дополнительные сведения см. в разделе [Worksheet Host Item](../vsto/worksheet-host-item.md).  
+ Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Excel.Worksheet>, предоставляя тип <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот тип предоставляет доступ ко всем функциям объекта <xref:Microsoft.Office.Interop.Excel.Worksheet>, а также к новым функциям, таким как возможность размещения управляемых элементов управления и обработки новых событий. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).  
   
 ### <a name="range-object"></a>Range - объект  
  Объект <xref:Microsoft.Office.Interop.Excel.Range> является объектом, который используется в приложениях Excel чаще всего. Для работы с какой-либо областью Excel ее необходимо указать в качестве объекта <xref:Microsoft.Office.Interop.Excel.Range>, а затем использовать методы и свойства этого диапазона. Объект <xref:Microsoft.Office.Interop.Excel.Range> может представлять ячейку, строку или столбец, выборку ячеек, содержащую один или несколько смежных или несмежных блоков ячеек, или даже группу ячеек, распределенную между разными листами.  
@@ -104,8 +104,8 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="ExcelOMDocumentation"></a> Использование документации по объектной модели Excel  
  Полные сведения об объектной модели Excel см. в справочнике по основной сборке взаимодействия (PIA) Excel и в справочнике по объектной модели VBA.  
   
-### <a name="primary-interop-assembly-reference"></a>Документация по основной сборке взаимодействия  
- В справочной документации по основной сборке взаимодействия Excel описываются типы основной сборки взаимодействия для Excel. Эта документация доступна по адресу: [Excel 2010 основной сборке взаимодействия](http://go.microsoft.com/fwlink/?LinkId=189585).  
+### <a name="primary-interop-assembly-reference"></a>Справочник по основной сборке взаимодействия  
+ В справочной документации по основной сборке взаимодействия Excel описываются типы основной сборки взаимодействия для Excel. Эта документация доступна по адресу: [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
  Дополнительные сведения о проектировании основных сборок взаимодействия Excel, включая различия между классами и интерфейсами в основных сборках ВЗАИМОДЕЙСТВИЯ и порядок реализации событий в этих СБОРКАХ, см. [Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

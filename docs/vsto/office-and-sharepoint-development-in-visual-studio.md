@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка приложений Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.  
@@ -50,11 +50,7 @@ ms.lasthandoff: 04/16/2018
   
  ![Приложения для Office и концептуальной модели SharePoint](../vsto/media/officeandsharepointapps2015.png "приложений для Office и концептуальной модели SharePoint")  
   
- **Дополнительные сведения**  
-  
-|Кому|См.|  
-|--------|---------|  
-|Дополнительные сведения о средствах разработки Napa для Office 365.|[Средства разработки Napa для Office 365](https://msdn.microsoft.com/library/dn974046.aspx)|  
+
   
 ### <a name="build-an-office-add-in"></a>Создание надстройки Office  
  Чтобы расширить функциональные возможности Office, создайте надстройку Office. По сути это веб-страницу, размещенную в приложении Office, таком как Excel, Word, Outlook и PowerPoint. Ваше приложение может расширять функциональные возможности документов, таблиц, сообщений электронной почты, встреч, презентаций или проектов.  
@@ -71,7 +67,6 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Узнайте больше о надстройках Office, а затем создайте собственную надстройку.|[Надстройки Office](http://msdn.microsoft.com/office/dn448457)|  
 |Сравните различные способы расширения возможностей Office и решите, следует ли использовать приложение или надстройку Office.|[Схема действий для надстроек Office, VSTO и VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Дополнительные сведения о средствах разработки Napa для Office 365.|[Средства разработки Napa для Office 365](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Создание надстройки SharePoint  
  Чтобы расширить возможности SharePoint для пользователей, создайте надстройку SharePoint. По сути это небольшие, простые в использовании автономные приложения, решающие определенные задачи пользователей или бизнеса.  
@@ -88,8 +83,7 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Узнайте больше о надстройках SharePoint, а затем создайте собственную надстройку.|[Надстройки SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Сравните надстройки SharePoint с традиционными решениями SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Решите, следует ли создать надстройку SharePoint или решение SharePoint.|[Выбор между надстройками SharePoint и решениями SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Дополнительные сведения о средствах разработки Napa для Office 365.|[Средства разработки Napa для Office 365](https://msdn.microsoft.com/library/dn974046.aspx)|  
+|Решите, следует ли создать надстройку SharePoint или решение SharePoint.|[Выбор между надстройками SharePoint и решениями SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Создание надстройки VSTO  
  Создание надстройки VSTO для Office 2007 или Office 2010 или выходит за Office 2013 и Office 2016 возможности надстройки Office. Надстройки VSTO выполняются только на настольных компьютерах. Пользователям необходимо устанавливать надстройки VSTO, поэтому они обычно сложнее в развертывании и поддержке.  Однако надстройку VSTO можно теснее интегрировать с Office. Например, она может добавлять вкладки и элементы управления на ленту Office и выполнять расширенные задачи автоматизации, такие как слияние документов или изменение диаграмм. Вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами Office.  

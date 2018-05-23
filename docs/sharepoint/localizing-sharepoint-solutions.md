@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89cc146a64e1e74c2682163ba3bebc16ed5a84e7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Локализация решений SharePoint
   Процесс подготовки приложений, чтобы можно было использовать во всем мире называется локализации. Локализация — перевод ресурсы для конкретного языка и региональных параметров. Дополнительные сведения см. в разделе [Globalizing и локализация приложений](/visualstudio/ide/globalizing-and-localizing-applications). В этом разделе Общие сведения о локализации решения SharePoint.  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  После создания компонента файлы ресурсов, добавьте переведенных строк к ним. Доступ к локализованных строк с помощью выражения в следующем формате:  
   
-```  
+```aspx-csharp  
 $Resources:String ID  
 ```  
   
@@ -85,25 +85,25 @@ $Resources:String ID
   
  Замените все жестко запрограммированные свойства строки в разметке страницы и элементы управления ASPX выражение в следующем формате:  
   
-```  
+```aspx-csharp  
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Пример:  
   
-```  
+```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
 ```  
   
  Для ASPX как текст необходимо используйте выражение в следующем формате:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Пример:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
@@ -120,7 +120,7 @@ $Resources:String ID
   
  В коде, замените жестко запрограммированные строки вызовы <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> метода, используя следующий синтаксис:  
   
-```  
+```aspx-csharp  
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   

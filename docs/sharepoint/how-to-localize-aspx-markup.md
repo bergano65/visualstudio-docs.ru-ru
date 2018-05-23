@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dd127fea21a53b9a29082f536ac8c0404299c63
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b43a8833ea84c4f6d191200bcf3af80815deb03a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-aspx-markup"></a>Практическое руководство. Локализация разметки ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) страницы обычно используют жестко запрограммированные значения строк. Чтобы локализовать эти строки, замените их выражения, ссылающиеся на локализованные ресурсы.  
@@ -52,13 +52,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  В [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] разметки ASPX-страницу или элемента управления, замените жестко запрограммированных строк со значениями, используйте следующий формат:  
   
-    ```  
+    ```aspx-csharp  
     <%$Resources:Resource File Name, String ID%>  
     ```  
   
      Например для локализации текста для элемента управления label на страницу приложения, необходимо изменить:  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="Label text"></asp:Label>  
     </asp:Content>  
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
      в  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="<%$Resources:MyAppResources,String1%>"></asp:Label>  
     </asp:Content>  

@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d126ab05edccf44642271ed7e379988defe212
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc63a3ac6d677da746823e101ca42d5765703907
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectitemfolder-element"></a>Элемент ProjectItemFolder
   Представляет сопоставленную папку.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"  
     Type = "Type of deployment for the mapped folder" />  
 ```  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|**Целевой объект**|Требуется **xs: String** атрибута.<br /><br /> Путь к папке в установке SharePoint, соответствующий сопоставленную папку, относительно корневой папки развертывания. Корневой папки развертывания определяется типом развертывания, заданные **тип** атрибута.<br /><br /> Дополнительные сведения см. в разделе описания **путь развертывания** и **корневого каталога развертывания** свойства SharePoint элементами проекта в [разработке решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Целевой объект**|Требуется **xs: строка** атрибута.<br /><br /> Путь к папке в установке SharePoint, соответствующий сопоставленную папку, относительно корневой папки развертывания. Корневой папки развертывания определяется типом развертывания, заданные **тип** атрибута.<br /><br /> Дополнительные сведения см. в разделе описания **путь развертывания** и **корневого каталога развертывания** свойства SharePoint элементами проекта в [разработке решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Type**|Требуется **xs: String** атрибута.<br /><br /> Тип развертывания для сопоставленной папки. Дополнительные сведения о возможных значениях см. в описании для **тип развертывания** свойства элементов проекта SharePoint в [разработке решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Это обязательный корневой элемент SPDATA-файла.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент является обязательным корневой элемент `.spdata` файла.|  
   
 ## <a name="remarks"></a>Примечания  
  Дополнительные сведения о сопоставленных папок см. в разделе [как: Добавление и удаление папок Mapped](../sharepoint/how-to-add-and-remove-mapped-folders.md).  

@@ -1,5 +1,5 @@
 ---
-title: Приступая к программированию настроек на уровне документа для Excel | Документы Microsoft
+title: Приступить к программированию настроек на уровне документа для Excel
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,28 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f10e0c2d3dc7a561b4fff7ad74081e9a26570b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50c18564604a15265b61b17f74484f959b18b131
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="getting-started-programming-document-level-customizations-for-excel"></a>Знакомство с программными настройками уровня документа для Excel
+# <a name="get-started-programming-document-level-customizations-for-excel"></a>Приступить к программированию настроек на уровне документа для Excel
   Если вы только начинающие работу создания настроек на уровне документа для Microsoft Office Excel с помощью Visual Studio, вот что нужно знать.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
-## <a name="understanding-how-document-level-customizations-for-excel-work"></a>Основные сведения о настройках уровня документа для Excel  
+## <a name="understand-how-document-level-customizations-for-excel-work"></a>Понимать настройках уровня документа для Excel  
  Настройки уровня документа для Excel основана на отдельной книгой. Чтобы начать использовать настройки, конечный пользователь открывает книгу или создает ее из шаблона Excel. События в книге, например ввода в ячейках или нажатие кнопки и пункты меню можно вызывать методы обработки событий в сборке. При закрытии книги возможности, предоставленные в настройке больше недоступны в Excel только в документе, который содержит их.  
   
  Дополнительные сведения см. в разделе [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).  
   
-## <a name="creating-document-level-projects-for-excel"></a>Создание проектов уровня документа для Excel  
+## <a name="create-document-level-projects-for-excel"></a>Создание проектов уровня документа для Excel  
  Чтобы создать проект настройки уровня документа для Excel, используйте шаблон проекта книги Excel или шаблона Excel в **новый проект** диалоговое окно. Эти шаблоны включают в себя необходимые ссылки на сборки и файлы проекта.  
   
- Дополнительные сведения о создании проекта уровня документа для Excel см. в разделе [как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Дополнительные сведения о шаблонах проектов см. в разделе [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md).  
+ Дополнительные сведения о создании проекта уровня документа для Excel см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Дополнительные сведения о шаблонах проектов см. в разделе [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md).  
   
-## <a name="programming-excel-workbooks-by-using-host-items-and-host-controls"></a>Программирование листов Excel с помощью ведущих элементов и элементов управления ведущего приложения  
+## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>Программа книг Excel с помощью ведущих элементов и элементов управления ведущего приложения  
  *Ведущие элементы* и *элементы управления ведущего приложения* являются классы, предоставляющие модель программирования для настроек уровня документа, созданных с помощью Visual Studio.  
   
  Ведущие элементы предоставляют точку входа для кода, а также могут выступать в качестве контейнеров для элементов управления ведущего приложения и элементы управления Windows Forms. В проектах уровня документа для Excel, эти ведущие элементы представлены в виде `ThisWorkbook`, `Sheet1`, `Sheet2`, и `Sheet3` классы.  
@@ -46,22 +46,22 @@ ms.lasthandoff: 04/16/2018
   
  Дополнительные сведения см. в следующих разделах:  
   
--   [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
+-   [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)  
   
--   [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)  
+-   [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)  
   
--   [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)  
+-   [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)  
   
-## <a name="customizing-the-user-interface-of-excel"></a>Настройка пользовательского интерфейса Excel  
- Большинство решений Microsoft Office изменяют пользовательский интерфейс (UI) приложения Office, чтобы некоторые позволяют пользователям взаимодействовать с решением. Существует множество способов, в которых пользовательского интерфейса Excel можно изменить с помощью настройки уровня документа. Например можно добавить элементы управления на ленту, или можно отобразить панель действий. Дополнительные сведения см. в разделе [настройки пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+## <a name="customize-the-user-interface-of-excel"></a>Настройка пользовательского интерфейса Excel  
+ Большинство решений Microsoft Office изменяют пользовательский интерфейс (UI) приложения Office, чтобы некоторые позволяют пользователям взаимодействовать с решением. Существует множество способов, в которых пользовательского интерфейса Excel можно изменить с помощью настройки уровня документа. Например можно добавить элементы управления на ленту, или можно отобразить панель действий. Дополнительные сведения см. в разделе [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
   
  Можно также открыть книгу, связанные с проектом непосредственно в Visual Studio. Когда книга открыта в Visual Studio, можно изменить книгу с помощью пользовательского интерфейса Excel. Также можно использовать книгу как поверхность разработки, что дает возможность перетаскивать элементы управления на листах. Дополнительные сведения см. в разделе [проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
-## <a name="using-data-binding"></a>Использование привязки данных  
- Элементы управления ведущего приложения также присутствуют в списке элементов управления, которые можно перетаскивать из **источники данных** окна. Добавление элементов управления ведущего приложения в этом образом автоматически привязывает их к источнику данных, которая настраивается с помощью окна. Без написания кода, можно отобразить данные из базы данных, веб-служб и бизнес-объектов. Дополнительные сведения см. в разделе [привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+## <a name="use-data-binding"></a>Использование привязки данных  
+ Элементы управления ведущего приложения также присутствуют в списке элементов управления, которые можно перетаскивать из **источники данных** окна. Добавление элементов управления ведущего приложения в этом образом автоматически привязывает их к источнику данных, которая настраивается с помощью окна. Без написания кода, можно отобразить данные из базы данных, веб-служб и бизнес-объектов. Дополнительные сведения см. в разделе [привязывать данные к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ## <a name="next-steps"></a>Следующие шаги  
- Сведения о создании настроек уровня документа для Excel, в разделе [Пошаговое руководство: Создание вашей первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md). В этом пошаговом руководстве представлены средства разработки Office в Visual Studio и модель программирования для настроек уровня документа для Excel.  
+ Сведения о создании настроек уровня документа для Excel, в разделе [Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md). В этом пошаговом руководстве представлены средства разработки Office в Visual Studio и модель программирования для настроек уровня документа для Excel.  
   
  Список разделов с пошаговыми руководствами для некоторых общих задач в проектах Excel см. в разделе [общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md).  
   
@@ -72,6 +72,6 @@ ms.lasthandoff: 04/16/2018
  [Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)   
  [Общие сведения о модели объектов Excel](../vsto/excel-object-model-overview.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+ [Напишите код в решениях Office](../vsto/writing-code-in-office-solutions.md)  
   
   

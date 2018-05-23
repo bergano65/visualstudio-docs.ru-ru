@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9389e5928c74e5ee60bee90b375671777f1b807
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Использование модулей для включения файлов в решение
   Могут возникнуть ситуации, когда требуется развернуть файлы на сервере SharePoint, независимо от их типа, например главные страницы. Чтобы сделать это, можно использовать *модули* (не следует путать с [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] модули кода). Модули являются контейнерами для файлов решения SharePoint. При развертывании решения файлы в модуле копируются в указанные папки на сервере SharePoint.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
  Ниже приведен пример файла Elements.xml для модуля:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
     <Module Name="Module1">  

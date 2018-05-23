@@ -1,5 +1,5 @@
 ---
-title: Функция GetVstoSolutionMetadata | Документы Microsoft
+title: Функция GetVstoSolutionMetadata
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c024d97d13c2794dd4fdaee6cfcd53d24c2e668
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d21b0d2b90441f0b9be543933e7243dd41440b02
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getvstosolutionmetadata-function"></a>Функция GetVstoSolutionMetadata
   Этот API поддерживает инфраструктуру Office и не предназначен для использования непосредственно из программного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```c  
 HRESULT WINAPI GetVstoSolutionMetadata(  
     LPCWSTR lpwszSolutionMetadataKey,  
     ISolutionMetadata** ppSolutionInfo  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+### <a name="parameters"></a>Параметры  
   
 |Параметр|Описание|  
 |---------------|-----------------|  

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c8d2151380c48b80b53ec3f0ef671daa92dbaa
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство. Создание базового проекта определения сайта
   В этом пошаговом руководстве демонстрируется создание простейшего определения сайта, содержащий Визуальная веб-часть с некоторыми элементами управления, на нем. Для ясности визуальной веб-части, создаваемом имеет несколько элементов управления. Тем не менее можно создать более сложное определений сайтов SharePoint, которые включают дополнительные функциональные возможности.  
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  В конце файла VisualWebPart1.ascx добавьте следующую разметку, чтобы добавить в форму три элемента управления: текстовое поле, кнопку и метку:  
   
-    ```  
+    ```aspx-csharp  
     <table>  
       <tr>  
         <td>  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Откройте страницу default.aspx и добавьте следующую строку после тега `WebPartPages`:  
   
-    ```  
+    ```aspx-csharp  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Найдите элемент `</asp:Content>` и замените весь последующий раздел `ContentPlaceHolderId="PlaceHolderMain"` и его содержимое следующим кодом.  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
         <MyWebPartControls:VisualWebPart1 runat="server" />      
     </asp:Content>  

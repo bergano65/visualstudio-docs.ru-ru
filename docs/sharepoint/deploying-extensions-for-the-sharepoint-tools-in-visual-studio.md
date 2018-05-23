@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Разработка расширений для средств SharePoint в Visual Studio
   Чтобы развернуть расширение инструментов SharePoint, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX), который содержит сборку расширения и другие файлы, которые требуется распространить с расширением. Пакет VSIX представляет сжатый файл, который соответствует стандарту Open Packaging Conventions (OPC). Пакеты VSIX имеют используется расширение VSIX.  
@@ -133,13 +133,13 @@ ms.lasthandoff: 04/16/2018
   
 8.  Выберите следующее `VSTemplate` элемента в файле проекта.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
     ```  
   
 9. Замените следующий XML-код этого элемента.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="example"></a>Пример  
  Следующий пример показывает содержимое файл extension.vsixmanifest для расширения инструментов SharePoint. Расширение реализуется в сборке, которая называется Contoso.ProjectExtension.dll. Модуль содержит сборку команды SharePoint, которая называется Contoso.ExtensionCommands.dll и шаблон элемента в папке, которая называется **элементов** в пакете VSIX. В этом примере предполагается, что обе сборки в той же папке, что и файл extension.vsixmanifest в пакет VSIX.  
   
-```  
+```xml 
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">  
   <Metadata>  
     <Identity Id="CustomActionProjectItem.Microsoft.b99efe4d-cef3-4afd-b9af-034ca0c52743" Version="1.0" Language="en-US" Publisher="Microsoft" />  

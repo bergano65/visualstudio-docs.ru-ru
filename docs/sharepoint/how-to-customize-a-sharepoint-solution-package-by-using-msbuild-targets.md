@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90358624f5de8fc7c90e3424f04617acab4388a4
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
   С помощью целевых объектов MSBuild, управляемых в командной строке, можно настраивать способ создания пакетов SharePoint (WSP-файлов) в Visual Studio. Например, можно настроить свойства MSBuild для изменения промежуточного каталога пакета и группы элементов MSBuild с перечисляемыми файлами.  
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Откройте текстовый редактор, например Блокнот, и добавьте следующий код.  
   
-    ```  
+    ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <Target Name="BeforeLayout">  
         <Message Importance="high" Text="In the BeforeLayout Target"></Message>  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  После строки `Import` в конце файла проекта добавьте следующую строку.  
   
-    ```  
+    ```xml  
     <Import Project="CustomLayout.SharePoint.targets" />  
     ```  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Непосредственно перед тегом `</Project>` добавьте следующий код:  
   
-    ```  
+    ```xml  
     <Target Name="AfterLayout">  
       <Message Importance="high" Text="In the AfterLayout Target"></Message>  
     </Target>  

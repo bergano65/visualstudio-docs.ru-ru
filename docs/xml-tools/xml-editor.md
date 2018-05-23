@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="xml-editor"></a>Редактор XML
 
@@ -53,11 +53,8 @@ ms.lasthandoff: 04/26/2018
 
 [Средство XSLT иерархии](../xml-tools/walkthrough-using-xslt-hierarchy.md) позволяет добавлять точки останова в включенные таблицы стилей и/или встроенные правила шаблона.
 
-## <a name="related-sections"></a>Связанные разделы
-
-- [Написание кода в редакторе](../ide/writing-code-in-the-code-and-text-editor.md) предоставляет сведения о текстовом редакторе.
-- [Справочник по стандартам XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) предоставляет сведения о технологиях XML, в том числе XML, определение типа документа (DTD), язык определения схем XML (XSD) и XSLT.
-
 ## <a name="see-also"></a>См. также
 
+- [Компоненты редактора кода](../ide/writing-code-in-the-code-and-text-editor.md) предоставляет сведения о текстовом редакторе.
+- [Справочник по стандартам XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) предоставляет сведения о технологиях XML, в том числе XML, определение типа документа (DTD), язык определения схем XML (XSD) и XSLT.
 - [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

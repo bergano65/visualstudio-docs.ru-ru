@@ -9,11 +9,11 @@ description: Сведения об учебной подписке Pluralsight, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/04/2018
 | Visual Studio Enterprise (NFR<sup>1</sup>) | Программа                                       | Недоступно                                  |Н/Д|
 <sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Microsoft Valued Partner (MVP), региональный директор (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup> *После истечения срока действия подписок Pluralsight вы можете иметь право на получение доступа к 50 курсам Pluralsight по одному из трех направлений в течение 12 месяцев.  Преимущество Pluralsight предназначено для однократного использования.  Подписчик может использовать это преимущество только один раз. Дополнительные сведения см. в разделе вопросов и ответов ниже.*
+<sup>2</sup>  *Преимущество Pluralsight предназначено для однократного использования.  Подписчик может использовать это преимущество только один раз. Дополнительные сведения см. в разделе вопросов и ответов ниже.  После истечения срока действия подписок Pluralsight вы можете иметь право на получение доступа к 50 курсам Pluralsight по одному из трех направлений в течение 12 месяцев.*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 

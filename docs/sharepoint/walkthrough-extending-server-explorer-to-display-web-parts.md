@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Пошаговое руководство. Расширение обозревателя сервера, чтобы в нем отображались веб-части
   В Visual Studio можно использовать **подключения SharePoint** узел **обозревателя серверов** просматривать компоненты на сайтах SharePoint. Тем не менее **обозревателя серверов** по умолчанию не отображаются некоторые компоненты. В этом пошаговом руководстве вы будете расширить **обозревателя серверов** подключить отображается коллекции веб-частей на сайте SharePoint.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  В верхней части диалогового окна выберите **.NET Framework 3.5** в списке версий .NET Framework.  
   
-4.  
-  
-5.  В списке шаблонов проектов выберите **библиотеки классов**, присвойте проекту имя **WebPartCommands**, а затем выберите **ОК** кнопки.  
+4.  В списке шаблонов проектов выберите **библиотеки классов**, присвойте проекту имя **WebPartCommands**, а затем выберите **ОК** кнопки.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **WebPartCommands** в решение проект и открывает файл кода по умолчанию Class1.  
   
-6.  Удалите файл Class1 код из проекта.  
+5.  Удалите файл Class1 код из проекта.  
   
 ## <a name="configuring-the-projects"></a>Настройка проектов  
  Перед написанием кода для создания расширения необходимо добавить файлы кода и ссылок на сборки и настроить параметры проекта.  

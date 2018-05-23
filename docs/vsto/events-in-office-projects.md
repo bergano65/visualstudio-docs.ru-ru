@@ -1,5 +1,5 @@
 ---
-title: События в проектах Office | Документы Microsoft
+title: События в проектах Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -35,11 +35,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3136bf1ac0937b60b5f0dec1b0be673e3127a470
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 10cd0e1740aa53902d266ed0af6820b500a453e9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  Visual Studio предоставляет сформированный код для новых или существующих документов или листов в настройках на уровне документа. Этот код создает два различных события: **Startup** и **Shutdown**.  
   
 ### <a name="startup-event"></a>Startup - событие  
- Событие **Startup** возникает для каждого ведущего элемента (документа, книги или листа) после запуска документа и всех кодов инициализации в сборке. Это самая последняя операция, запускаемая в конструкторе класса, в котором выполняется ваш код. Дополнительные сведения о ведущих элементах см. в разделе [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ Событие **Startup** возникает для каждого ведущего элемента (документа, книги или листа) после запуска документа и всех кодов инициализации в сборке. Это самая последняя операция, запускаемая в конструкторе класса, в котором выполняется ваш код. Дополнительные сведения о ведущих элементах см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).  
   
  При создании проекта на уровне документа Visual Studio создает обработчики событий для события **Startup** в созданных файлах кода:  
   
@@ -102,7 +102,7 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]  
   
-### <a name="order-of-events-in-document-level-excel-projects"></a>Порядок событий в проектах на уровне документа Excel  
+### <a name="order-of-events-in-document-level-excel-projects"></a>Порядок событий в проектах уровня документа Excel  
  Обработчики **Startup** событий в проектах Excel вызываются в следующем порядке:  
   
 1.  `ThisWorkbook_Startup`.  
@@ -127,7 +127,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Другие листы по порядку.  
   
- Порядок определяется при компиляции проекта. Если пользователь изменяет порядок листов во время выполнения, это не приводит к изменению порядка, в котором появляются события при очередном открытии или закрытии книги.  
+ Порядок определяется при компиляции проекта. Если пользователь изменяет порядок листов во время выполнения, он не изменяет порядок, в том, что события вызываются при очередном открытии или закрытии книги.  
   
 ## <a name="vsto-add-in-projects"></a>Проекты надстроек VSTO  
  Visual Studio предоставляет сформированный код в надстройках VSTO. Этот код создает два различных события: <xref:Microsoft.Office.Tools.AddInBase.Startup> и <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
@@ -137,7 +137,7 @@ ms.lasthandoff: 04/16/2018
   
  Код в обработчике событий `ThisAddIn_Startup` — это первый код пользователя, подлежащий выполнению, если надстройка VSTO не переопределяет метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . В этом случае обработчик событий `ThisAddIn_Startup` вызывается после <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
   
- Не добавляйте код в `ThisAdd-In_Startup` обработчик событий, если для кода требуется Открытие документа. Добавьте код в событие, которое создает приложение Office, когда пользователь создает или открывает документ. Для получения дополнительной информации см. [Обращение к документу при запуске приложения Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+ Не добавляйте код в `ThisAdd-In_Startup` обработчик событий, если для кода требуется Открытие документа. Добавьте код в событие, которое создает приложение Office, когда пользователь создает или открывает документ. Дополнительные сведения см. в разделе [доступа к документу при запуске приложения Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  Дополнительные сведения о последовательности запуска надстроек VSTO см. в разделе [надстроек VSTO архитектура](../vsto/architecture-of-vsto-add-ins.md).  
   
@@ -152,13 +152,13 @@ ms.lasthandoff: 04/16/2018
 -   Событие <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> объекта <xref:Microsoft.Office.Interop.Outlook.Explorer> .  
   
 > [!NOTE]  
->  Чтобы Outlook принудительно создавал событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> при выходе, можно изменить реестр. Однако, если администратор отменяет эту настройку, любой код, добавленный в метод `ThisAddIn_Shutdown` , больше не будет выполняться при завершении работы Outlook. Дополнительные сведения см. в разделе [Изменения при завершении работы для Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
+>  Чтобы Outlook принудительно создавал событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> при выходе, можно изменить реестр. Однако, если администратор отменяет эту настройку, любой код, добавленный в метод `ThisAddIn_Shutdown` , больше не будет выполняться при завершении работы Outlook. Дополнительные сведения см. в разделе [изменяет завершения работы для Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
   
 ## <a name="see-also"></a>См. также  
- [Разработка решений Office](../vsto/developing-office-solutions.md)   
+ [Разработки решений Office](../vsto/developing-office-solutions.md)   
  [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
   
   

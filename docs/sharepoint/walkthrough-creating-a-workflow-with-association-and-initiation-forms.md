@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 92aefd2292976bd9dcb50603e93b460cdf2bf991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска
   В этом пошаговом руководстве демонстрируется создание основные последовательный рабочий процесс, в котором используются формы связывания и запуска. Это ASPX-формы, задать параметры для добавления в рабочий процесс, когда сначала связано администратором SharePoint (форма связывания) и рабочий процесс запускается пользователем (формы запуска).  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Непосредственно после первой строки этого элемента содержимого, добавьте следующий код, чтобы создать метку и текстовое поле, которое запрашивает лимит утверждения (*AutoApproveLimit*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" runat="server" />  
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  После первой строки этого элемента содержимого, добавьте следующий код, чтобы создать метку и текстовое поле, которое отображает предельная сумма расходов на утверждение (*AutoApproveLimit*), указанный в форме связывания, а другую метку и текстовое поле для запроса общей суммы расходов (*ExpenseTotal*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" ReadOnly="true" runat="server" />  

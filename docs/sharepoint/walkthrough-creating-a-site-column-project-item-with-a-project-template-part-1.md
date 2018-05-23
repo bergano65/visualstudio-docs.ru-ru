@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 1
   Проекты SharePoint представляют собой контейнеры для одного или нескольких элементов проекта SharePoint. Системы проектов SharePoint в Visual Studio можно расширить путем создания собственных типов элементов проектов SharePoint и связывая их с шаблоном проекта. В этом пошаговом руководстве будет определить тип элемента проекта для создания столбца сайта, и затем вы создадите шаблон проекта, который может использоваться для создания нового проекта, который содержит элемента проекта столбца сайта.  
@@ -203,13 +203,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  В файле проекта найдите следующие `VSTemplate` элемента.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
     ```  
   
 4.  Замените следующий XML-код этого элемента.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В проекте SiteColumnProjectTemplate Замените содержимое файла Elements.xml следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
@@ -280,7 +280,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В проекте SiteColumnProjectTemplate Замените содержимое файла SharePointProjectItem.spdata следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
                  xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -304,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В проекте SiteColumnProjectTemplate Замените содержимое файла Feature1.feature следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
              imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
@@ -330,7 +330,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В проекте SiteColumnProjectTemplate Замените содержимое файла Package.package следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
              Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
@@ -357,7 +357,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Если вы создаете шаблон проекта Visual C#, используйте следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -393,7 +393,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Если вы создаете шаблон проекта Visual Basic, используйте следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -445,7 +445,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Если вы создаете шаблон проекта Visual C#, используйте следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
@@ -525,7 +525,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  Если вы создаете шаблон проекта Visual Basic, используйте следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  

@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите его с шаблоном элемента в Visual Studio, можно также создать мастер для шаблона. Мастер можно использовать для сбора информации от пользователей, при использовании шаблона для добавления в проект новый экземпляр элемента проекта. Собранные сведения могут использоваться для инициализации элемента проекта.  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Если вы разрабатываете проект Visual Basic, удалите `ItemTemplateWizard` пространства имен из `WizardWindow` имя класса в `x:Class` атрибут `Window` элемента. Этот элемент находится в первой строке кода XAML. Когда закончите, первая строка должна выглядеть следующим образом:  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -187,7 +187,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В окне командной строки Visual Studio, выполните следующую команду, заменив *PathToWizardAssembly* с указанием полного пути к сборке ItemTemplateWizard.dll для проекта ItemTemplateWizard на разработку компьютер.  
   
-    ```  
+    ```xml  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  В конце файла добавьте следующие `WizardExtension` элемент между `</TemplateContent>` и `</VSTemplate>` тегов. Замените *YourToken* значение `PublicKeyToken` атрибута с токен открытого ключа, полученное в предыдущей процедуре.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=YourToken</Assembly>  
       <FullClassName>ItemTemplateWizard.CustomActionWizard</FullClassName>  
@@ -221,7 +221,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  В проекте ItemTemplate Замените содержимое файла Elements.xml следующий XML-код.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="$IdValue$"  
