@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3743c763f48a8faaafc83d6034bf16bc2fc80a1f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Практическое руководство. Инструментирование автономного компонента .NET Framework и сбор данных об использовании памяти с помощью профилировщика при помощи командной строки
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для инструментирования компонента .NET Framework автономного приложения, такого как EXE- или DLL-файл, и сбора сведений о памяти с помощью профилировщика.  

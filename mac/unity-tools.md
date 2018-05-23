@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 5f910d58f5972c3df27a4efd950d893c8de35f4b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Инструменты Visual Studio для Mac для Unity
 
@@ -43,7 +43,7 @@ IntelliSense позволяет легко и быстро [реализоват
 
 ### <a name="powerful-refactoring-and-context-actions"></a>Эффективный рефакторинг и контекстные действия
 
-Пишите более удобный код благодаря быстрым меню и сочетаниям клавиш для [переименования, рефакторинга и контекстных действия](/visualstudio/mac/refactoring).
+Пишите более удобный код благодаря быстрым меню и сочетаниям клавиш для [переименования, рефакторинга и контекстных действия](refactoring.md).
 
 ### <a name="browse-and-add-new-files"></a>Обзор и добавление новых файлов
 
@@ -51,15 +51,15 @@ IntelliSense позволяет легко и быстро [реализоват
 
 ### <a name="use-familiar-key-bindings"></a>Привычные сочетания клавиш
 
-Повышайте производительность за счет привычных сочетаний клавиш. Visual Studio для Mac предоставляет привычные [сочетания клавиш](/visualstudio/mac/customizing-the-ide) для многих популярных интегрированных сред разработки, таких как Visual Studio для Windows, ReSharper, Visual Studio Code и Xcode.
+Повышайте производительность за счет привычных сочетаний клавиш. Visual Studio для Mac предоставляет привычные [сочетания клавиш](customizing-the-ide.md) для многих популярных интегрированных сред разработки, таких как Visual Studio для Windows, ReSharper, Visual Studio Code и Xcode.
 
 ### <a name="customize-the-visual-theme"></a>Настройка визуальной темы
 
-Дайте глазам отдохнуть с помощью входящей в комплект [темной темы](/visualstudio/mac/customizing-the-ide).
+Дайте глазам отдохнуть с помощью входящей в комплект [темной темы](customizing-the-ide.md).
 
 ## <a name="tips-for-unity-developers-getting-started-with-visual-studio-for-mac"></a>Советы по началу работы с Visual Studio для Mac для разработчиков Unity
 
 По этим ссылкам разработчики Unity, которые только начинают работать с Visual Studio для Mac, могут найти описание полезных возможностей:
 
-* [Настройка интегрированной среды разработки](/visualstudio/mac/customizing-the-ide) — сведения об [изменении визуальной темы](/visualstudio/mac/customizing-the-ide#dark-theme) или переключении на более привычную схему [сочетаний клавиш](/visualstudio/mac/customizing-the-ide#key-bindings).
-* [Редактор исходного кода](/visualstudio/mac/source-editor) — сведения о том, как Visual Studio для Mac может ускорить и упростить написание кода, включая распространенные [сочетания клавиш](/visualstudio/mac/keyboard-shortcuts).
+* [Настройка интегрированной среды разработки](customizing-the-ide.md) — сведения об [изменении визуальной темы](customizing-the-ide.md#dark-theme) или переключении на более привычную схему [сочетаний клавиш](customizing-the-ide.md#key-bindings).
+* [Редактор исходного кода](source-editor.md) — сведения о том, как Visual Studio для Mac может ускорить и упростить написание кода, включая распространенные [сочетания клавиш](keyboard-shortcuts.md).

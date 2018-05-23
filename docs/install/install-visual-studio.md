@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 05/07/2018
 
 1. Найдите нужную рабочую нагрузку на экране **Установка Visual Studio**.
 
- ![Выбор рабочей нагрузки в диалоговом окне программы установки Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
+ ![Выбор рабочей нагрузки в диалоговом окне программы установки Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
      Например, выберите рабочую нагрузку "Разработка классических приложений .NET". В нее входит основной редактор кода по умолчанию, который предоставляет базовую поддержку редактирования кода для более чем 20 языков, возможность открывать и изменять код в любой папке без наличия проекта и интегрированное управление исходным кодом.  
 

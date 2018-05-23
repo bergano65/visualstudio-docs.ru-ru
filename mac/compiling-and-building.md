@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 28127fec86f839110ff53de3e6d7d2466adc3489
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Компиляция и сборка в Visual Studio для Mac
 
@@ -21,7 +21,7 @@ Visual Studio для Mac можно использовать для сборки
 
 Все проекты и решения, созданные в этой интегрированной среде разработки, будут иметь конфигурацию сборки по умолчанию, определяющую контекст для сборок. Вы можете изменять эти конфигурации или создавать собственные. Создание и изменение конфигураций приводит к автоматическому обновлению файла проекта, который затем используется в MSBuild для сборки проекта.  
 
-Дополнительные сведения о сборке проектов и решений в интегрированной среде разработки см. в разделе [Сборка и очистка проектов и решений](~/building-and-cleaning-projects-and-solutions.md).
+Дополнительные сведения о сборке проектов и решений в интегрированной среде разработки см. в разделе [Сборка и очистка проектов и решений](building-and-cleaning-projects-and-solutions.md).
 
 Visual Studio для Mac также можно использовать для выполнения следующих задач:
 

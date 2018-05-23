@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af013fe81ca464f6433b35429e3bbf077f78e2f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
 IntelliTest изучает код .NET, чтобы создать тестовые данные и набор модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Анализ случая выполняется для каждой условной ветви в коде. Например, анализируются операторы `if`, утверждения и все операции, которые могут вызывать исключения. Этот анализ используется в целях создания данных теста для параметризованного модульного теста для каждого из методов, создающих модульные тесты с высоким покрытием кода.
@@ -143,7 +143,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 **О** . Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md).
 Расширения платформы тестирования также доступны в Visual Studio Marketplace.
 
-* [Расширение NUnit для генераторов тестов](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [Расширение NUnit для генераторов тестов](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [Расширение xUnit.net для генераторов тестов](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 

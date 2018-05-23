@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: edc9b341a64d22876f52906f2ee92c33a22d420c
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 6e99103ee16b56712f8ec979fd8591a20c2feb3c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="projects-and-solutions"></a>Проекты и решения
 
@@ -17,8 +17,8 @@ Visual Studio для Mac предоставляет _Панель решения
 
 ## <a name="using-projects-and-solutions"></a>Использование проектов и решений
 
-Чтобы создать проект или решение, см. статью [Создание проектов и решений](~/create-new-projects.md).
+Чтобы создать проект или решение, см. статью [Создание проектов и решений](create-new-projects.md).
 
 ## <a name="project-and-solution-options"></a>Параметры проектов и решений
 
-Вы можете управлять свойствами проектов и решений, дважды щелкнув имя проекта или решения или щелкнув правой кнопкой мыши и выбрав пункт **Параметры**. Дополнительные сведения об этих параметрах см. в статье [Управление свойствами проекта и решения](~/managing-solutions-and-project-properties.md).
+Вы можете управлять свойствами проектов и решений, дважды щелкнув имя проекта или решения или щелкнув правой кнопкой мыши и выбрав пункт **Параметры**. Дополнительные сведения об этих параметрах см. в статье [Управление свойствами проекта и решения](managing-solutions-and-project-properties.md).

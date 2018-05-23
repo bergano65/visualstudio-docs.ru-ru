@@ -81,7 +81,6 @@
 ##### [Практическое руководство. Отладка в смешанном режиме](how-to-debug-in-mixed-mode.md)
 #### [Подготовка к отладке: консольные проекты](debugging-preparation-console-projects.md)
 #### [Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [Практическое руководство. Отладка исходного кода Code Center Premium](how-to-debug-with-code-center-premium-source.md)
 #### [Отладка и процесс размещения](debugging-and-the-hosting-process.md)
 #### [Практическое руководство. Установка версии платформы .NET Framework для отладки](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [Создание пользовательских представлений данных](viewing-data-in-the-debugger.md)
