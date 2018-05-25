@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="context-menus-xml-schema-explorer"></a>Контекстные меню (обозреватель XML-схемы)
+# <a name="context-menus-xml-schema-explorer"></a>Контекстные меню (обозреватель XML-схем)
 
 Следующие пункты контекстного меню используются для выполнения поиска определенной схемы и других операций.
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 04/26/2018
 |**Показать все члены**|Находит и выделяет все члены группы атрибутов.|
 |**Показать все ссылки**|Находит и выделяет все ссылки (группы атрибутов, у которых есть ссылка `ref="selectedAttributeGroup"`) на выбранную группу атрибутов.|
 
-## <a name="node-type-named-group"></a>Тип узла: именованная группа
+## <a name="node-type-named-group"></a>Тип узла: группа с именем
  Помимо параметров глобальных узлов, описанных выше, контекстное меню имеет следующие параметры для узлов именованной группы:
 
 |Параметр|Описание|

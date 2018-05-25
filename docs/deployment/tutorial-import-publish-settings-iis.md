@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS путем импорта параметров публикации в Visual Studio
 
@@ -38,13 +38,11 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Необходимо иметь установленной среды Visual Studio и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
+* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
 
     Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
 
-    Шаги в этой статье основаны на Visual Studio 2017 г.
-
-* Чтобы создать файл параметров публикации на основе IIS, необходимо иметь компьютер под управлением Windows Server 2012 с ролью веб-сервера IIS 8.0 правильно настроены и ASP.NET 4.5 или ASP.NET Core установлены. ASP.NET Core. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Чтобы создать файл параметров публикации на основе IIS, необходимо иметь компьютер под управлением Windows Server 2012 или Windows Server 2016 и необходимо иметь роль веб-сервера IIS правильно настроена. Также можно установить ASP.NET 4.5 или ASP.NET Core. ASP.NET Core. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 см. в разделе [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Создайте новый проект ASP.NET в Visual Studio
 
@@ -68,62 +66,13 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Создать файл параметров публикации в службах IIS в Windows Server
 
-1. В службах IIS, щелкните правой кнопкой мыши **веб-сайт по умолчанию**, выберите **развернуть** > **настроить веб-развертывания публикации**.
-
-    ![Настройте конфигурацию веб-развертывания](../deployment/media/tutorial-configure-web-deploy-publishing.png)
-
-1. В **настроить веб-развертывания публикации** диалоговом окне Проверьте параметры.
-
-1. Нажмите кнопку **установки**.
-
-    В **результатов** панели результат показывает, что права доступа были предоставлены пользователю и что файл с *.publishsettings* расширение файла был создан в папку, указанную в диалоговое окно.
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <publishData>
-      <publishProfile
-        publishUrl="https://myhostname:8172/msdeploy.axd"
-        msdeploySite="Default Web Site"
-        destinationAppUrl="http://myhostname:80/"
-        mySQLDBConnectionString=""
-        SQLServerDBConnectionString=""
-        profileName="Default Settings"
-        publishMethod="MSDeploy"
-        userName="myhostname\myusername" />
-    </publishData>
-    ```
-
-    В зависимости от настройки Windows Server и IIS вы увидите различные значения. Ниже приведены некоторые сведения о значениях, которые вы видите.
-
-    * *Msdeploy.axd* файл, указанный в `publishUrl` атрибут — файл обработчика динамически создаваемом HTTP для веб-развертывания. (Для целей тестирования `http://myhostname:8172` обычно также могут быть использованы.)
-    * `publishUrl` Порт обычно имеет порт 8172, который используется по умолчанию для веб-развертывания.
-    * `destinationAppUrl` Порта обычно устанавливается на порт 80, который используется по умолчанию для служб IIS.
-    * Если не удается подключиться к удаленному узлу в Visual Studio, используя имя узла (на последующих этапах), проверьте IP-адрес вместо имени узла.
-
-    > [!NOTE]
-    > При публикации на IIS, работающем на Виртуальной машине Azure, необходимо открыть веб-развертывания и порты IIS, в группу безопасности сети. Дополнительные сведения см. в разделе [установки и запуска IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
-
-1. Скопируйте этот файл на компьютер, на котором выполняется Visual Studio.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Импорт параметров публикации в Visual Studio и развертывание
 
-1. На компьютере, где имеется проект ASP.NET, откройте в Visual Studio, щелкните правой кнопкой мыши проект в обозревателе решений и выберите **публикации**.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-1. Если были настроены ранее все профили публикации **публикации** появится область. Нажмите кнопку **Создание нового профиля**.
-
-1. В **выбрать место назначения публикации** диалоговое окно, нажмите кнопку **Импорт профиля**.
-
-    ![Выберите опубликовать](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Перейдите к расположению файла параметров публикации, созданной в предыдущем разделе.
-
-1. В **файл параметров публикации импорта** диалоговое окно, перейдите к выберите профиль, созданный в предыдущем разделе и нажмите кнопку **откройте**.
-
-    Visual Studio запускает процесс развертывания, и в окне вывода отображаются хода выполнения и результатов.
-
-    Если возникли ошибки любого развертывания нажмите кнопку **параметры** для изменения параметров. Измените параметры и нажмите кнопку **проверки** для тестирования новых параметров.
-
-    ![Изменение параметров в средство публикации](../deployment/media/tutorial-configure-publish-settings-in-tool.png)
+После успешного развертывает приложение, должен запускаться автоматически. Если она не запускается из Visual Studio, запустите приложение в службах IIS. Для ASP.NET Core необходимо убедитесь в том, что пул приложений поля для **DefaultAppPool** равно **без управляемого кода**.
 
 ## <a name="next-steps"></a>Следующие шаги
 

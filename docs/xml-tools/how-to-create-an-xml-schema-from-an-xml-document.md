@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c6980eda6e0f710821cf24cbf3ace01ffa98b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Как создать XML-схему из XML-документа
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Как: Создание XML-схемы из XML-документа
 
 Редактор XML позволяет создать схему на языке XSD из XML-документа. Экземпляр XML-документа определяет способ создания схемы следующим образом.
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
 Дополнительные сведения о модуле выведения схемы см. в разделе [вывод XML-схемы](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
-## <a name="to-create-an-xml-schema"></a>Создание XML-схемы
+## <a name="to-create-an-xml-schema"></a>Порядок создания схемы XML
 
 1.  Загрузите экземпляр XML-документа в XML Editor.
 

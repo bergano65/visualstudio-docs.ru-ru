@@ -10,21 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b260c6b0e63801134c3f15eabab5b13e2926e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6629aef7549a78f7cfdb73bb6d7ee0be3ac7412
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Как добавлять в рабочую область узлы, полученные в результате поиска набора схем
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Способ: добавить узлы результат поиска набора схем в рабочую область
 
-Данный раздел объясняет процесс добавления узлов, выделенных в обозревателе XML-схем в результате поиска по ключевому слову в рабочей области.
+В этом разделе объясняется, как добавить узлы, которые выделены в **обозреватель XML-схем** в результате поиска по ключевому слову в рабочей области.
 
 > [!NOTE]
 > Можно добавлять только глобальные узлы для [рабочей](../xml-tools/xml-schema-designer-workspace.md).
 
 
- В этом примере используется образец [схемы заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md).
+ В этом примере используется образец [схема заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 
 ## <a name="to-add-schema-set-result-nodes"></a>Добавление результирующих узлов набора схем
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
      ![Поиск по ключевому слову обозреватель схемы XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Результаты поиска также выделяются в обозревателе XML-схем и отмечаются галочками на вертикальной полосе прокрутки.
+     Результаты поиска выделяются цветом **обозреватель XML-схем** и отмечаются галочками на вертикальной полосе прокрутки.
 
 3.  Добавить результаты поиска в рабочую область, щелкнув **Добавить выделенные узлы в рабочую область** кнопку на панели сводных результатов.
 

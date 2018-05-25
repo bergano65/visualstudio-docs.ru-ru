@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Страница "Общие", папка "Отладка", диалоговое окно "Параметры"
 **Сервис > Параметры > Отладка > Общие** странице можно задать следующие параметры:  
@@ -94,11 +94,11 @@ ms.lasthandoff: 04/18/2018
 - **Разрешить исходного сервера для частично доверенных сборок (только управляемый код)**  
     Если поддержка сервера системы управления версиями включена, этот параметр переопределяет поведение по умолчанию для неизвлечения исходного кода для частично доверенных сборок.  
 
-- **Ссылка включить поддержку управления версиями**  
+**Включить поддержку связь с источником**  
     Дает отладчику Visual Studio для загрузки исходных файлов для PDB-файлы, содержащие сведения связь с источником. Дополнительные сведения о связи с исходной. в разделе [спецификация источника связи](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Так как ссылка на источник будет загружать файлы по протоколу http или https, убедитесь, что вы доверяете PDB-файл.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Выделять всю исходную строку для точек останова и текущего оператора (C++)**  
 При выделении точки останова или текущего оператора отладчик выделяет всю строку.  

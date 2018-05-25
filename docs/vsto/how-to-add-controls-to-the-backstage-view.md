@@ -23,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d72cd3371a1465faa1dd505f71c5fe8c9e2e181d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6b775c7613b8cc0953e419b2546ec017c96e8454
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Как: Добавление элементов управления в представление Backstage
-  Конструктор лент можно использовать для добавления элементов управления меню, которое открывается при нажатии кнопки **файл** вкладку при запуске приложения, элементы управления, добавляемые к **файл** вкладка отображается группа с именем  **Add-ins**.  
+  Конструктор лент можно использовать для добавления элементов управления меню, которое открывается при нажатии кнопки **файл** вкладки. При запуске приложения, элементы управления, добавляемые к **файл** вкладка отображается группа с именем **надстройки**.  
   
  Нельзя размещать элементы до или после встроенных элементов управления с помощью конструктора лент в Visual Studio. Встроенный элемент управления является элементом управления, который уже присутствует в представление Backstage. Если вы хотите разместить элементы управления до или после встроенных элементов управления, необходимо использовать XML-ленты. Дополнительные сведения о **Лента (XML)**, в разделе [XML-ленты](../vsto/ribbon-xml.md). Дополнительные сведения о настройке представления Backstage см. в разделе [введение в Office 2010 Backstage для разработчиков](http://go.microsoft.com/fwlink/?LinkId=182189) и [Настройка представления Office 2010 Backstage для разработчиков](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/17/2018
  [Обзор ленты](../vsto/ribbon-overview.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [XML-ленты](../vsto/ribbon-xml.md)   
- [Как: работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Как: Приступая к работе настройки ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

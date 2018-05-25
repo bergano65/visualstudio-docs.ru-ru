@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35baa6d6d7c5cba696ab7b5e0bb57dd722b5d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-edit-xml-files"></a>Как изменять XML-файлы
+# <a name="how-to-edit-xml-files"></a>Как: редактирования XML-файлов
 
-Редактор XML - это новый редактор для XML-файлов. Его можно использовать для отдельных XML-файлов или файлов, связанных с проектами Visual Studio. Редактор XML связан со следующими расширениями файлов: CONFIG, DTD, XML, XSD, XDR, XSLT и VSSETTINGS. Для редактора XML также зарегистрированы файлы всех типов с содержимым в формате XML или DTD, для которых не зарегистрирован специальный редактор.
+Редактор XML - это новый редактор для XML-файлов. Его можно использовать для отдельных XML-файлов или файлов, связанных с проектами Visual Studio. Редактор XML связан со следующими расширениями: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, и *.vssettings*. Для редактора XML также зарегистрированы файлы всех типов с содержимым в формате XML или DTD, для которых не зарегистрирован специальный редактор.
 
 > [!NOTE]
 > Документы XHTML обрабатываются редактором HTML.
@@ -71,4 +71,4 @@ ms.lasthandoff: 04/26/2018
 
 - [XML-редактор](../xml-tools/xml-editor.md)
 - [Свойства XML-документа, окно "Свойства"](../xml-tools/xml-document-properties-properties-window.md)
-- [Как создать XML-схему из XML-документа](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Как: Создание XML-схемы из XML-документа](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

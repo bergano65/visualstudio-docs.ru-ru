@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 298cb342b83dd512f591e03a6922a099c127cb3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Как: Создание и изменение файла XSD-схемы
 
@@ -22,11 +22,11 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Создание нового файла XML-схемы
 
-1. В Visual Studio откройте **файл** и выбрать пункт **New** > **файл**. Или используйте сочетание клавиш CTRL+N.
+1. В Visual Studio откройте **файл** и выбрать пункт **New** > **файл**. Также можно использовать **Ctrl**+**N** сочетание клавиш.
 
 2. В **новый файл** выберите **XML-схема** , а затем выберите **откройте**.
 
-   Будет создан новый файл. В Visual Studio откроется начальное представление и пустое окно обозревателя XML-схем.
+   Будет создан новый файл. Начальное представление и пустой **обозреватель XML-схем** отображения окна в Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Редактирование файла
 
@@ -36,8 +36,8 @@ ms.lasthandoff: 04/26/2018
 
 2. Скопируйте образец кода XML-схемы из [схемы заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.
 
-   Обозреватель XML-схем будет обновлен новым набором схем.
+   **Обозреватель XML-схем** обновляется с новым набором схем.
 
 ## <a name="see-also"></a>См. также
 
-- [Работа с XML-данными](../xml-tools/working-with-xml-data.md)
+- [Работа с XML-данных](../xml-tools/working-with-xml-data.md)

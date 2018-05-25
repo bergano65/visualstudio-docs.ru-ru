@@ -12,13 +12,13 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7edbdc161a92b98a4a0d2d777bf055850e187b27
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 589bfa54a0ba1a7efb2964cf5b74446ca9ffe10d
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Как использовать конструктор XML-схем с XML-литералами
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Как: с помощью конструктора схемы XML с XML-литералы
 
 В этом разделе описывается процесс просмотра схемы, связанной с XML-литералом в проекте Visual Basic.
 
@@ -28,21 +28,21 @@ ms.lasthandoff: 04/26/2018
 
 2.  Из **файл** последовательно выберите пункты **New**, а затем выберите **проекта**. Откроется диалоговое окно **Новый проект** . Для **типов проектов**выберите **другие языки** , а затем выберите **Visual Basic**. Для **шаблоны**, выберите консольное приложение. Затем введите `XMLLiterals` в **имя** поля и расположение проекта в **расположение** поля. Нажмите кнопку **ОК**.
 
-     Создан новый проект. Проект XMLLiterals содержит один исходный файл Visual Basic, Module1.vb.
+     Создан новый проект. Проект XMLLiterals содержит один исходный файл Visual Basic *Module1.vb*.
 
 ## <a name="to-add-an-existing-xsd-file-to-the-project"></a>Добавление существующего XSD-файла в проект
 
-1.  Откройте новый текстовый файл в Notepad.Copy образец кода XML-схемы из [схемы заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его в файл.
+1.  Откройте новый текстовый файл в блокноте. Скопируйте образец кода XML-схемы из [схема заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его в файл.
 
-2.  Сохраните файл в любом местоположении под именем PurchaseOrderSchema.xsd.
+2.  Сохраните файл в месте с именем *PurchaseOrderSchema.xsd*.
 
-3.  В обозревателе решений щелкните правой кнопкой мыши имя проекта, выберите **добавить**, а затем выберите **существующий элемент...** . **AddExisting элемент** откроется диалоговое окно. Найдите файл PurchaseOrderSchema.xsd, выберите его и нажмите кнопку **добавить**.
+3.  В обозревателе решений щелкните правой кнопкой мыши имя проекта, выберите **добавить**, а затем выберите **существующий элемент**. **AddExisting элемент** откроется диалоговое окно. Перейдите к *PurchaseOrderSchema.xsd* файла, выберите его и нажмите кнопку **добавить**.
 
-     Проект XMLLiterals теперь содержит два файла: Module1.vb и PurchaseOrderSchema.xsd.
+     Проект XMLLiterals теперь содержит два файла: *Module1.vb* и *PurchaseOrderSchema.xsd*.
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Добавление кода Visual Basic с XML-литералом на основе XSD-файла, включенного в проект
 
-1.  Замените код в файле Module1.vb на следующий код:
+1.  Замените код в *Module1.vb* файла следующим кодом:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
@@ -73,4 +73,4 @@ ms.lasthandoff: 04/26/2018
 
 2.  Щелкните правой кнопкой мыши любой узел XML в XML-литерале или импорте пространства имен XML и выберите **Показать в обозревателе схем**.
 
-     Обозреватель XML-схем будет отображен рядом с файлом Visual Basic, имеющим XML-литерал, связанный с набором XML-схем.
+     **Обозреватель XML-схем** будет отображен рядом с файлом Visual Basic с XML-литерал, связанное с набор XML-схем.

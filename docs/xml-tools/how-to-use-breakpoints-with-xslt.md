@@ -9,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1c3a5e2001726c0f082bf17d279eb22a03fc86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 430b7f14f35506b45fe73be47d056cdd7b6a9c95
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Как: использование точек останова в XSLT
 
 Точки останова можно задать в таблице стилей XSLT или в исходном XML-документе. Если задать точку останова на теге, то при выполнении точка останова переходит к следующему оператору, у которого есть сведения исходной строки.
 
-Дополнительные сведения см. в разделе [основы отладки: точки останова](../debugger/using-breakpoints.md).
+Дополнительные сведения см. в разделе [Общие сведения об отладке: точки останова](../debugger/using-breakpoints.md).
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Установите точку останова в таблице стилей
 
@@ -59,4 +59,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Пошаговое руководство: Отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

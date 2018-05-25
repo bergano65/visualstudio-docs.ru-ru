@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в службе приложений Azure путем импорта параметров публикации в Visual Studio
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Необходимо иметь установленной среды Visual Studio и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
+* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
 
     Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
 
@@ -92,21 +92,7 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Импорт параметров публикации в Visual Studio и развертывание
 
-1. На компьютере, где имеется проект ASP.NET, откройте в Visual Studio, щелкните правой кнопкой мыши проект в обозревателе решений и выберите **публикации**.
-
-1. Если были настроены ранее все профили публикации **публикации** появится область. Нажмите кнопку **Создание нового профиля**.
-
-1. В **выбрать место назначения публикации** диалоговое окно, нажмите кнопку **Импорт профиля**.
-
-    ![Выберите опубликовать](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Перейдите к расположению файла параметров публикации, созданной в предыдущем разделе.
-
-1. В **файл параметров публикации импорта** диалоговое окно, выберите профиль, созданный в предыдущем разделе и нажмите кнопку **откройте**.
-
-1. Выберите один из двух импортированных профилей и нажмите кнопку **публикации**.
-
-    Visual Studio запускает процесс развертывания, и в окне вывода отображаются хода выполнения и результатов.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Следующие шаги
 

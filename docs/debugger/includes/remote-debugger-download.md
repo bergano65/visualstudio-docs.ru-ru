@@ -1,32 +1,26 @@
 ---
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+title: Удаленный отладчик загрузки
+description: Ссылки на скачивание удаленного отладчика
+services: ''
+author: mikejo5000
+ms.service: ''
+ms.topic: include
+ms.date: 05/23/2018
+ms.author: mikejo
+ms.custom: include file
+ms.openlocfilehash: 358dc0b457381bb56532e6cae1156aac9ea2dba2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/24/2018
 ---
 1.  На устройства или сервера компьютера, необходимо выполнить отладку (а не на машине под управлением Visual Studio) получите правильную версию инструментов удаленной отладки.
 
     |Версия|Ссылка|Примечания|
     |-|-|-|
-    |Visual Studio 2017 г. (последняя версия)|[Инструменты удаленной отладки](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Всегда Загрузите версию, соответствующую операционную систему устройства (x86 или x64). Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
-    |Visual Studio 2017 г. (существующих дольше остальных)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|My.VisualStudio.com доступны инструменты удаленной отладки для более ранних выпусков Visual Studio 2017 г. При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
-    |Visual Studio 2015 с обновлением 3|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
-    |Visual Studio 2015 (существующих дольше остальных)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. Если включен режим усиленной безопасности (Windows Server), необходимо добавить новые Надежные узлы при появлении соответствующего запроса.|
+    |Visual Studio 2017 г. (последняя версия)|[Инструменты удаленной отладки](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Всегда Загрузите версию, соответствующую операционную систему устройства (x86 или x64). В Windows Server, в разделе [разблокировать Загрузка файла](../../debugger/remote-debugging.md#unblock_msvsmon) для справки загрузить инструменты удаленной отладки.|
+    |Visual Studio 2017 г. (существующих дольше остальных)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|My.VisualStudio.com доступны инструменты удаленной отладки для более ранних выпусков Visual Studio 2017 г. При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. В Windows Server, в разделе [разблокировать Загрузка файла](../../debugger/remote-debugging.md#unblock_msvsmon) для справки загрузить инструменты удаленной отладки.|
+    |Visual Studio 2015 (существующих дольше остальных)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|При появлении соответствующего запроса, соединения свободного группы Visual Studio Dev Essentials, или выполните вход с помощью Visual Studio подписки идентификатор. В Windows Server, в разделе [разблокировать Загрузка файла](../../debugger/remote-debugging.md#unblock_msvsmon) для справки загрузить инструменты удаленной отладки.|
     |Visual Studio 2013|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Загрузить страницу в документации по Visual Studio 2013|
     |Visual Studio 2012|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Загрузить страницу в документации по Visual Studio 2012|
   

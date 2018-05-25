@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec095bd3228eb2291f77bf9fadceb0b74d8a37
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как создать XML-документ на основе XSD-схемы
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как: создать XML-документ, на основе схемы XSD
 
 **Создание образца XML** функция создает образец XML-файла на основе вашего файла схемы XML (XSD).
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  В [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), щелкните правой кнопкой мыши `PurchaseOrder` глобального элемента. Выберите **Создание образца XML**.
 
-     Если выбран данный параметр, файл PurchaseOrder.xml со следующим образцом XML-содержимого будет создан и открыт в редакторе XML:
+     При выборе этого параметра PurchaseOrder. *xml* файл следующий образец XML-содержимого, которые будут создаваться и открывается в редакторе XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -77,4 +77,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Работа с XML-данными](../xml-tools/working-with-xml-data.md)
+- [Работа с XML-данных](../xml-tools/working-with-xml-data.md)

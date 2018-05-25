@@ -1,5 +1,5 @@
 ---
-title: 'Как: добавление настраиваемой области задач в приложение | Документы Microsoft'
+title: 'Как: добавление настраиваемой области задач в приложение'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 818b8e2937692ff0ec445d2a94193beaa1b480bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8608fcc263be4750c38b6fe3f84967f40dd34ab
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Практическое руководство. Добавление настраиваемой панели задач в приложение
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Как: добавление настраиваемой области задач в приложение
   Вы можете добавить настраиваемую область задач в приложения, перечисленные выше, с помощью надстройки VSTO. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -30,11 +30,11 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="adding-a-custom-task-pane-to-an-application"></a>Добавление настраиваемой панели задач в приложение  
+## <a name="add-a-custom-task-pane-to-an-application"></a>Добавление настраиваемой области задач в приложение  
   
-#### <a name="to-add-a-custom-task-pane-to-an-application"></a>Добавление настраиваемой панели задач в приложение  
+### <a name="to-add-a-custom-task-pane-to-an-application"></a>Добавление настраиваемой панели задач в приложение  
   
-1.  Откройте или создайте проект надстройки VSTO для одного из приложений, указанных выше. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Откройте или создайте проект надстройки VSTO для одного из приложений, указанных выше. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  В меню **Проект** выберите команду **Добавить пользовательский элемент управления**.  
   
@@ -62,6 +62,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>См. также  
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
  [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Руководство. Автоматизация приложения в настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+ [Пошаговое руководство по автоматизации приложения из настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
   
   

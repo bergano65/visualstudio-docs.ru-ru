@@ -1,5 +1,5 @@
 ---
-title: 'Как: Добавление панели действий в документы Word или книги Excel | Документы Microsoft'
+title: 'Как: Добавление панели действий в документы Word или книги Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aeb6fa198f7e7c82e96a97382befc41a2f016d53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf4896411a46b2c75edd8216bd61623bc9b728f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Практическое руководство. Добавление области действий в документы Word или книги Excel
   Чтобы добавить панель действий в документ Microsoft Office Word или книге Microsoft Excel, необходимо сначала создайте пользовательский элемент управления Windows Forms. Затем добавьте пользовательский элемент управления <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойство `ThisDocument.ActionsPane` поля (Word) или `ThisWorkbook.ActionsPane` поля (Excel) в своем проекте.  
@@ -62,10 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
-## <a name="adding-the-user-control-to-the-actions-pane"></a>Добавление пользовательского элемента управления на панель действий  
+## <a name="add-the-user-control-to-the-actions-pane"></a>Добавьте пользовательский элемент управления панели действий  
  Чтобы отобразить панель действий, добавьте пользовательский элемент управления <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойство `ThisDocument.ActionsPane` поля (Word) или `ThisWorkbook.ActionsPane` поля (Excel).  
   
-#### <a name="to-add-the-user-control-to-the-actions-pane"></a>Чтобы добавить пользовательский элемент управления на панель действий  
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>Чтобы добавить пользовательский элемент управления на панель действий  
   
 1.  Добавьте следующий код в `ThisDocument` или `ThisWorkbook` класса в качестве объявления уровня класса (не добавляйте этот код в метод).  
   
@@ -81,6 +81,6 @@ ms.lasthandoff: 04/16/2018
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
  [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Как: Управление структурой элементов управления в панели действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Пошаговое руководство. Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

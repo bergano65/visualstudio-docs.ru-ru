@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74432b7807f901253646f28a3e1bf4664f673326
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Как выполнять XSLT-преобразования в редакторе XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Как: выполнение преобразования XSLT из редактора XML
 
 Редактор XML позволяет связать таблицу стилей XSLT с XML-документом, выполнить преобразование и просмотреть вывод. Результат XSLT-преобразования отображается в новом окне документа.
 
-**Вывода** свойство задает имя выходного файла. Если **вывода** пусто, имя файла формируется во временном каталоге. Расширение файла определяется на основе элемента `xsl:output` в таблице стилей и может представлять собой XML, TXT или HTM.
+**Вывода** свойство задает имя выходного файла. Если **вывода** пусто, имя файла формируется во временном каталоге. Расширение файла определяется на основе `xsl:output` элемент в стиле лист, может быть. *XML*,. *txt* или. *htm*.
 
-Если **вывода** определяет имя файла с .htm или .html расширения, вывод XSLT открывается для предварительного просмотра с помощью [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Файлы с другими расширениями открываются редакторами по умолчанию, которые выбирает среда [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Например, если файл имеет расширение XML, то в Visual Studio используется редактор XML.
+Если **вывода** свойство определяет имя файла с. *htm* или. *HTML* расширения, вывод XSLT предварительного просмотра с помощью [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Файлы с другими расширениями открываются редакторами по умолчанию, которые выбирает среда [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Например, если файл имеет расширение. *xml*, Visual Studio используется редактор XML.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Выполнение преобразования XSLT из XML-документа
 

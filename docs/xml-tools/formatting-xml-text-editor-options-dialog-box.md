@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1046655812bf88f51af7590fd1b39ccea11f8eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>Диалоговое окно «Форматирование», «XML», «Текстовый редактор», «Свойства»
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Форматирование, XML, текстовый редактор, диалоговое окно параметров
 
 При помощи этого диалогового окна можно задать настройки форматирования для XML Editor. Вы можете получить доступ к **параметры** диалогового окна **средства** меню.
 

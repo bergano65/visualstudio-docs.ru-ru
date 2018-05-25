@@ -1,7 +1,7 @@
 ---
 title: Удаленная отладка в Visual Studio | Документы Microsoft
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Вы можете отладить приложение Visual Studio, развернутое на другом компьютере. Для этого используется удаленный отладчик Visual Studio.
@@ -47,22 +47,63 @@ ms.lasthandoff: 04/18/2018
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
+## <a name="unblock_msvsmon"></a> Разблокировать загрузки инструментов удаленной отладки в Windows Server
+
+Параметры безопасности по умолчанию в Internet Explorer в Windows Server может быть много времени для загрузки компонентов, таких как инструменты удаленной отладки.
+
+* Конфигурация усиленной безопасности включен на Internet Explorer, который не позволяет открывать веб-сайтов и доступ к веб-ресурсам, если домен, содержащий ресурс явным образом разрешаются (доверия).
+
+* В Windows Server 2016 значения по умолчанию **обозревателя** > **безопасности** > **Internet**  >   **Пользовательский уровень** > **загружает** также отключает файла загрузки. Если вы решили загрузить инструменты удаленной отладки непосредственно на сервере Windows, необходимо включить загрузку файла.
+
+Чтобы загрузить набор средств в Windows Server, корпорация Майкрософт рекомендует одно из следующих:
+
+* Загрузить инструменты удаленной отладки на другом компьютере, такой как один выполнения Visual Studio, а затем скопируйте *.exe* файл для Windows Server.
+
+* Запускать удаленный отладчик [из общей папки](#fileshare_msvsmon) на компьютере Visual Studio.
+
+* Загрузить инструменты удаленной отладки непосредственно на сервере Windows и примите указаниям по добавлению надежных сайтов. Современные веб-сайтов часто содержат много ресурсов сторонних разработчиков, это может привести к большой объем запросов. Кроме того любые ссылки, перенаправленный может потребоваться добавить вручную. Вы можете добавить некоторые из надежных узлов перед началом загрузки. Последовательно выберите пункты **свойства обозревателя > Безопасность > надежных узлов > узлы** и добавьте следующие узлы.
+
+  * visualstudio.com
+  * download.visualstudio.microsoft.com
+  * о: пустым
+
+  Для более старых версий в отладчике на my.visualstudio.com добавьте эти дополнительные сайты, чтобы убедиться, что вход выполнен успешно.
+
+  * Microsoft.com
+  * go.microsoft.com
+  * download.microsoft.com
+  * My.VisualStudio.com
+  * Login.microsoftonline.com
+  * Login.Live.com
+  * Secure.aadcdn.microsoftonline p.com
+  * MSFT.STS.Microsoft.com
+  * AUTH.gfx.MS
+  * app.vssps.visualstudio.com
+  * vlscppe.Microsoft.com
+  * Query.PROD.cms.RT.Microsoft.com
+
+    Если выбрать и добавить эти домены во время загрузки инструментов удаленной отладки, а затем выберите **добавить** при появлении запроса.
+
+    ![Заблокированный содержимого диалоговое окно](../debugger/media/remotedbg-blocked-content.png)
+
+    При загрузке программного обеспечения, вы получаете некоторые дополнительные запросы, чтобы предоставить разрешение для загрузки различные сценарии веб-сайт и ресурсы. На my.visualstudio.com рекомендуется добавлять дополнительные домены, чтобы убедиться, что вход выполнен успешно.
+
 ### <a name="fileshare_msvsmon"></a> (Необязательно) Для запуска удаленного отладчика из общей папки
 
-Можно найти удаленный отладчик (**msvsmon.exe**) на компьютере с Visual Studio Community, Professional или Enterprise, которые уже установлены. В некоторых сценариях самым простым способом настройки удаленной отладки является запуск удаленного отладчика (msvsmon.exe) из общей папки. Для ограничения использования см. страницу справки удаленный отладчик (**Справка > использование** удаленного отладчика).
+Можно найти удаленный отладчик (*msvsmon.exe*) на компьютере с Visual Studio Community, Professional или Enterprise, которые уже установлены. В некоторых сценариях самым простым способом настройки удаленной отладки является запуск удаленного отладчика (msvsmon.exe) из общей папки. Для ограничения использования см. страницу справки удаленный отладчик (**Справка > использование** удаленного отладчика).
 
-1. Найти **msvsmon.exe** в каталоге, соответствующих используемой версии Visual Studio. Для Visual Studio Enterprise 2017 г.:
+1. Найти *msvsmon.exe* в каталоге, соответствующих используемой версии Visual Studio. Для Visual Studio Enterprise 2017 г.:
 
-      **Программа файлы (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      *Программа файлы (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
       
-      **Программа файлы (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      *Программа файлы (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Общий ресурс **удаленный отладчик** папку на компьютере Visual Studio.
 
-3. На удаленном компьютере, запустите **msvsmon.exe**. Выполните [инструкции по установке](#bkmk_setup).
+3. На удаленном компьютере, запустите *msvsmon.exe*. Выполните [инструкции по установке](#bkmk_setup).
 
 > [!TIP] 
-> Справочник по командной строке и установки из командной строки см. страницу справки по **msvsmon.exe** , введя ``msvsmon.exe /?`` в командной строке на компьютере с установленной среды Visual Studio (или перейдите к **Справка > использование**удаленного отладчика).
+> Справочник по командной строке и установки из командной строки см. страницу справки по *msvsmon.exe* , введя ``msvsmon.exe /?`` в командной строке на компьютере с установленной среды Visual Studio (или перейдите к **Справка > использование**удаленного отладчика).
   
 ## <a name="requirements_msvsmon"></a> Требования
 
