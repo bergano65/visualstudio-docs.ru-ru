@@ -13,41 +13,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 07789eba81dbe0cce46e5cf1a14decff92a6892f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a62c0fc4aca0c14d51e2f9e3ffda5b8d976681e8
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335636"
 ---
-# <a name="collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки
+# <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки
 В этом разделе описываются процедуры и параметры для сбора подробных данных по производительности веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] с использованием программы командной строки **VSPerfCmd** и метода инструментирования.  
   
 > [!NOTE]
->  Программа **VSPerfCmd** предоставляет полный доступ к возможностям Средств профилирования, включая приостановку и возобновление профилирования, а также сбор дополнительных данных счетчиков производительности Windows и процессора. Если эти возможности не нужны, можно воспользоваться программой командной строки **VSPerfASPNETCmd**. В отличие от программы командной строки [VSPerfCmd](../profiling/vsperfcmd.md), она не требует задания переменных среды и перезагрузки компьютера. Дополнительные сведения см.в статье [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd).  
+>  Программа **VSPerfCmd** предоставляет полный доступ к возможностям Средств профилирования, включая приостановку и возобновление профилирования, а также сбор дополнительных данных счетчиков производительности Windows и процессора. Если эти возможности не нужны, можно воспользоваться программой командной строки **VSPerfASPNETCmd**. В отличие от программы командной строки [VSPerfCmd](../profiling/vsperfcmd.md), она не требует задания переменных среды и перезагрузки компьютера. Дополнительные сведения см.в статье [Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).  
   
-## <a name="common-tasks"></a>Общие задачи  
+
+## <a name="common-tasks"></a>Типичные задачи  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
 |**Профилирование статически скомпилированных двоичных файлов**|-   [Практическое руководство. Инструментирование статически скомпилированного приложения ASP.NET и сбор подробных данных о времени](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|  
 |**Профилирование динамически скомпилированных двоичных файлов**|-   [Практическое руководство. Инструментирование динамически скомпилированного приложения ASP.NET и сбор подробных данных о времени](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|  
   
-## <a name="related-tasks"></a>Связанные задачи  
+
+## <a name="related-tasks"></a>Связанные задачи
+
   
-### <a name="profiling-aspnet-web-applications"></a>Профилирование веб-приложений ASP.NET  
+### <a name="profile-aspnet-web-applications"></a>Профилирование веб-приложений ASP.NET  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
-|**Профилирование с помощью метода выборки**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
+|**Профилирование с помощью метода выборки**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
 |**Профилирование выделения памяти и сбора мусора**|-   [Сбор данных об использовании памяти](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
 |**Профилирование конфликтов ресурсов и действий потока**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
-### <a name="profiling-by-using-the-instrumentation-method"></a>Профилирование с помощью метода инструментирования  
+### <a name="profile-by-using-the-instrumentation-method"></a>Профилирование с помощью метода инструментирования  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
 |**Профилирование автономных (клиентских) приложений**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
 |**Профилирование служб**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
   
-### <a name="analyzing-instrumentation-data-views-and-reports"></a>Анализ данных инструментирования представлений и отчетов  
- [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)
+### <a name="analyze-instrumentation-data-views-and-reports"></a>Анализ данных инструментирования представлений и отчетов  
+ [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)

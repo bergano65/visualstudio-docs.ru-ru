@@ -16,19 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b26df4fd2c96d7a18fd553abffc8bb33714d5cfc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 74b00a65dac65bc9b0f5f6b7a4084c1a0999f0e2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446664"
 ---
-# <a name="using-the-profiling-tools-from-the-command-line"></a>Использование средств профилирования из командной строки
+# <a name="use-the-profiling-tools-from-the-command-line"></a>Использование Средств профилирования из командной строки
 С помощью программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно выполнять профилирование приложений в командной строке и автоматизировать этот процесс с помощью пакетных файлов и скриптов. Кроме того, с помощью командной строки можно создавать файлы отчетов. Для сбора данных на компьютерах без установленной системы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно использовать упрощенный автономный профилировщик.  
   
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="common-tasks"></a>Общие задачи  
+## <a name="common-tasks"></a>Типичные задачи  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/19/2018
 |**Профилирование кода на компьютерах без Visual Studio**. С помощью автономного профилировщика средств профилирования можно собирать данные для приложений на компьютерах без установленной системы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|-   [Практическое руководство. Установка изолированного профилировщика](../profiling/how-to-install-the-stand-alone-profiler.md)|  
   
 ## <a name="reference"></a>Ссылка  
- [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)  
+ [Справочник по Средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)  
   
 ## <a name="see-also"></a>См. также  
  [Обозреватель производительности](../profiling/performance-explorer.md)

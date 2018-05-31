@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9be304398fcefaf6a38ca7e1d557f2c9146b4872
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9350d96911e818402f7e32ebcd83fe832f31f9d9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263033"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Сбор статистики для веб-приложений ASP.NET
 
@@ -27,9 +28,9 @@ ms.lasthandoff: 05/11/2018
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Несмотря на то, что средство **VSPerfCmd** предоставляет полый доступ к функциональности средств профилирования, включая приостановку и возобновление профилирования, сбор дополнительных данных от процессора и счетчиков производительности Windows, следует использовать средство командной строки **VSPerfASPNETCmd**, если эта функциональность не требуется. Средство командной строки **VSPerfASPNETCmd** является предпочтительным при выполнении профилирования веб-сайтов ASP.NET с помощью отдельного профилировщика. В отличие от средства [VSPerfCmd](../profiling/vsperfcmd.md), нет необходимости устанавливать переменные среды и перезагружать компьютер. Дополнительные сведения см.в статье [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd).  
+>  Несмотря на то, что средство **VSPerfCmd** предоставляет полый доступ к функциональности средств профилирования, включая приостановку и возобновление профилирования, сбор дополнительных данных от процессора и счетчиков производительности Windows, следует использовать средство командной строки **VSPerfASPNETCmd**, если эта функциональность не требуется. Средство командной строки **VSPerfASPNETCmd** является предпочтительным при выполнении профилирования веб-сайтов ASP.NET с помощью отдельного профилировщика. В отличие от средства [VSPerfCmd](../profiling/vsperfcmd.md), нет необходимости устанавливать переменные среды и перезагружать компьютер. Дополнительные сведения см.в статье [Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).  
   
-## <a name="common-tasks"></a>Общие задачи  
+## <a name="common-tasks"></a>Типичные задачи  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
@@ -37,7 +38,7 @@ ms.lasthandoff: 05/11/2018
   
 ## <a name="related-tasks"></a>Связанные задачи  
   
-### <a name="profiling-aspnet-web-applications"></a>Профилирование веб-приложений ASP.NET  
+### <a name="profile-aspnet-web-applications"></a>Профилирование веб-приложений ASP.NET  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
@@ -45,12 +46,12 @@ ms.lasthandoff: 05/11/2018
 |**Профилирование выделения памяти и сбора мусора**|-   [Сбор данных об использовании памяти](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
 |**Профилирование конфликтов ресурсов и действий потока**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
-### <a name="sampling-method"></a>Способ выборки  
+### <a name="sample-method"></a>Метод выборки  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
-|**Профилирование автономных (клиентских) приложений**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|-   **Профилирование служб**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
+|**Профилирование автономных (клиентских) приложений**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|-   **Профилирование служб**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
   
-### <a name="analyzing-sampling-data-views-and-reports"></a>Анализ представлений и отчетов данных выборки  
+### <a name="analyze-sampling-data-views-and-reports"></a>Анализ представлений и отчетов данных выборки  
  [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)

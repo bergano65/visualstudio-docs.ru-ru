@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265728"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Анализ использования памяти без отладчика Visual Studio
 Средство **Использование памяти** без отладки можно использовать для выполнения перечисленных далее задач.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/19/2018
   
 1.  Откройте универсальный проект Windows на C# в Visual Studio.  
   
-2.  В строке меню выберите **Отладка, Профилировщик производительности...**.  
+2.  В строке меню выберите **Отладка** >  **Профилировщик производительности**.  
   
 3.  Выберите **Использование памяти** и нажмите кнопку **Запуск** в нижней части страницы.  
   

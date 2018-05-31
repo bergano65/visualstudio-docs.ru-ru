@@ -1,0 +1,284 @@
+- name: Разработка приложений с помощью конструктора рабочих процессов
+  href: developing-applications-with-the-workflow-designer.md
+  items:
+    - name: Использование конструктора рабочих процессов
+      href: using-the-workflow-designer.md
+      items:
+        - name: Создание проекта рабочего процесса
+          href: creating-a-workflow-project.md
+          items:
+            - name: создать консольное приложение рабочего процесса
+              href: how-to-create-a-workflow-console-application.md
+            - name: создать служебное приложение рабочего процесса WCF
+              href: how-to-create-a-wcf-workflow-service-application.md
+            - name: создать библиотеку действий
+              href: how-to-create-an-activity-library.md
+            - name: создать библиотеку конструктора действий
+              href: how-to-create-an-activity-designer-library.md
+            - name: Добавление нового элемента в проект рабочего процесса
+              href: how-to-add-a-new-item-to-a-workflow-project.md
+        - name: Добавление действий на панель инструментов
+          href: how-to-add-activities-to-the-toolbox.md
+        - name: использовать конструктор аргументов
+          href: how-to-use-the-argument-designer.md
+        - name: использовать конструктор переменных
+          href: how-to-use-the-variable-designer.md
+        - name: использовать редактор выражений
+          href: how-to-use-the-expression-editor.md
+        - name: использовать конструктор импорта
+          href: how-to-use-the-imports-designer.md
+        - name: использовать навигатор
+          href: how-to-use-breadcrumb-navigation.md
+        - name: Как использовать поиск в конструкторе рабочих процессов
+          href: how-to-use-search-in-the-workflow-designer.md
+        - name: Определение и использование делегатов действий в конструкторе рабочих процессов
+          href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+        - name: Добавление комментариев в рабочий процесс в конструкторе рабочих процессов
+          href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+    - name: Использование конструкторов действий
+      href: using-the-activity-designers.md
+      items:
+        - name: Конструкторы действия управления потоком
+          href: control-flow-activity-designers.md
+          items:
+            - name: Конструктор действия DoWhile
+              href: dowhile-activity-designer.md
+            - name: Конструктор действия ForEach<T>
+              href: foreach-t-activity-designer.md
+            - name: Конструктор действия If
+              href: if-activity-designer.md
+            - name: Конструктор действия Parallel
+              href: parallel-activity-designer.md
+            - name: Конструктор действия ParallelForEach<T>
+              href: parallelforeach-t-activity-designer.md
+            - name: Конструктор действия Pick
+              href: pick-activity-designer.md
+            - name: Конструктор действия PickBranch
+              href: pickbranch-activity-designer.md
+            - name: Конструктор действия Sequence
+              href: sequence-activity-designer.md
+            - name: Конструктор действия Switch<T>
+              href: switch-t-activity-designer.md
+            - name: Конструктор действия While
+              href: while-activity-designer.md
+        - name: Конструктор действия блок-схемы
+          href: flowchart-activity-designers.md
+          items:
+            - name: Конструктор действия блок-схемы
+              href: flowchart-activity-designer.md
+            - name: Конструктор действия FlowDecision
+              href: flowdecision-activity-designer.md
+            - name: Конструктор действия FlowSwitch<T>
+              href: flowswitch-t-activity-designer.md
+        - name: Конструкторы действий конечных автоматов
+          href: state-machine-activity-designers.md
+          items:
+            - name: Конструктор действий StateMachine
+              href: statemachine-activity-designer.md
+            - name: Конструктор State Activity
+              href: state-activity-designer.md
+            - name: Конструктор FinalState Activity
+              href: finalstate-activity-designer.md
+            - name: Конструктор действий переходов
+              href: transition-activity-designer.md
+        - name: Конструкторы действий обмена сообщениями
+          href: messaging-activity-designers.md
+          items:
+            - name: Конструктор действия CorrelationScope
+              href: correlationscope-activity-designer.md
+            - name: Конструктор действия InitializeCorrelation
+              href: initializecorrelation-activity-designer.md
+            - name: Конструктор действия Receive
+              href: receive-activity-designer.md
+            - name: Конструктор шаблона ReceiveAndSendReply
+              href: receiveandsendreply-template-designer.md
+            - name: Конструктор действия Send
+              href: send-activity-designer.md
+            - name: Конструктор шаблона SendAndReceiveReply
+              href: sendandreceivereply-template-designer.md
+            - name: Конструктор действия TransactedReceiveScope
+              href: transactedreceivescope-activity-designer.md
+        - name: Конструкторы действий среды выполнения
+          href: runtime-activity-designers.md
+          items:
+            - name: Конструктор действия Persist
+              href: persist-activity-designer.md
+            - name: Конструктор действия TerminateWorkflow
+              href: terminateworkflow-activity-designer.md
+        - name: Конструкторы действий с базовыми функциями
+          href: primitives-activity-designers.md
+          items:
+            - name: Конструктор действий Assign
+              href: assign-activity-designer.md
+            - name: Конструктор действия Delay
+              href: delay-activity-designer.md
+            - name: InvokeDelegate
+              href: invokedelegate.md
+            - name: Конструктор действия InvokeMethod
+              href: invokemethod-activity-designer.md
+            - name: Конструктор действия WriteLine
+              href: writeline-activity-designer.md
+        - name: Конструкторы действий транзакций
+          href: transaction-activity-designers.md
+          items:
+            - name: Конструктор действия CancellationScope
+              href: cancellationscope-activity-designer.md
+            - name: Конструктор действия CompensableActivity
+              href: compensableactivity-activity-designer.md
+            - name: Конструктор действия Compensate
+              href: compensate-activity-designer.md
+            - name: Конструктор действия Confirm
+              href: confirm-activity-designer.md
+            - name: Конструктор действия TransactionScope
+              href: transactionscope-activity-designer.md
+        - name: Конструкторы действий коллекций
+          href: collection-activity-designers.md
+          items:
+            - name: Конструктор действия AddToCollection<T>
+              href: addtocollection-t-activity-designer.md
+            - name: Конструктор действия ClearCollection<T>
+              href: clearcollection-t-activity-designer.md
+            - name: Конструктор действия ExistsInCollection<T>
+              href: existsincollection-t-activity-designer.md
+            - name: Конструктор действия RemoveFromCollection<T>
+              href: removefromcollection-t-activity-designer.md
+        - name: Конструкторы действий обработки ошибок
+          href: error-handling-activity-designers.md
+          items:
+            - name: Конструктор действия Rethrow
+              href: rethrow-activity-designer.md
+            - name: Конструктор действия Throw
+              href: throw-activity-designer.md
+            - name: Конструктор действия «TryCatch»
+              href: trycatch-activity-designer.md
+        - name: Конструкторы действий миграции
+          href: migration-activity-designers.md
+          items:
+            - name: Конструктор действия Interop
+              href: interop-activity-designer.md
+    - name: Отладка рабочих процессов с помощью конструктора рабочих процессов
+      href: debugging-workflows-with-the-workflow-designer.md
+      items:
+        - name: вызвать отладчик рабочего процесса
+          href: how-to-invoke-the-workflow-debugger.md
+        - name: Задание точек останова в рабочих процессах
+          href: how-to-set-breakpoints-in-workflows.md
+        - name: выполнить отладку XAML в конструкторе рабочих процессов
+          href: how-to-debug-xaml-with-the-workflow-designer.md
+        - name: Неподдерживаемые сценарии отладки в конструкторе рабочих процессов
+          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+    - name: Справка по пользовательскому интерфейсу конструктора рабочих процессов
+      href: workflow-designer-ui-help.md
+      items:
+        - name: Диалоговое окно "Обзор и выбор типа .NET"
+          href: browse-and-select-a-dotnet-type-dialog-box.md
+        - name: Диалоговое окно «Корреляция по определению»
+          href: correlateson-definition-dialog-box.md
+        - name: Диалоговое окно «Добавление инициализаторов корреляции»
+          href: add-correlationinitializers-dialog-box.md
+        - name: Диалоговые окна «Добавление параметров» и «Добавление аргументов»
+          href: add-parameters-and-add-arguments-dialog-boxes.md
+        - name: Диалоговое окно редактора коллекций типов
+          href: type-collection-editor-dialog-box.md
+        - name: Диалоговое окно «Определение содержимого»
+          href: content-definition-dialog-box.md
+        - name: Диалоговое окно «Инициализация корреляции»
+          href: initialize-correlation-dialog-box.md
+        - name: 'Вкладка «System.Activities», диалоговое окно «Выбор элементов области элементов»'
+          href: system-activities-tab-choose-toolbox-items-dialog-box.md
+        - name: Возможности оболочки конструктора рабочих процессов
+          href: workflow-designer-shell-features.md
+        - name: Сочетания клавиш конструктора рабочих процессов
+          href: keyboard-shortcuts-in-the-workflow-designer.md
+        - name: Сообщения об ошибках в конструкторе рабочего процесса
+          href: error-messages-in-workflow-designer.md
+    - name: 'Разработка приложений рабочих процессов, предназначенных для платформы .NET 3.0 или .NET 3.5'
+      href: developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md
+      items:
+        - name: Отладка рабочих процессов прежних версий
+          href: debugging-legacy-workflows.md
+          items:
+            - name: 'Отладка рабочих процессов, основанных на ASP.NET (для прежних версий)'
+              href: how-to-debug-aspnet-based-workflows-legacy.md
+            - name: Указание точек останова в рабочих процессах (для прежних версий)
+              href: how-to-set-breakpoints-in-workflows-legacy.md
+            - name: Отладка рабочих процессов с удаленного компьютера (для прежних версий)
+              href: debugging-workflows-from-a-remote-computer-legacy.md
+            - name: Варианты пошаговой отладки (для прежних версий)
+              href: debug-stepping-options-legacy.md
+            - name: Изменение варианта пошаговой отладки (для прежних версий)
+              href: how-to-change-the-debug-stepping-option-legacy.md
+            - name: Отключение отладчика Visual Studio для Windows Workflow Foundation (для прежних версий)
+              href: disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
+            - name: Вызов отладчика Visual Studio для Windows Workflow Foundation (для прежних версий)
+              href: invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
+        - name: Использование конструктора рабочих процессов для прежних версий
+          href: using-the-legacy-workflow-designer.md
+          items:
+            - name: Окна рабочих процессов в Visual Studio (для прежних версий)
+              href: visual-studio-workflow-windows-legacy.md
+            - name: Создание проектов рабочих процессов для прежних версий
+              href: creating-legacy-workflow-projects.md
+              items:
+                - name: Создание библиотеки действий рабочих процессов (для прежних версий)
+                  href: how-to-create-a-workflow-activity-library-legacy.md
+                - name: Создание пустого проекта рабочего процесса (для прежних версий)
+                  href: how-to-create-an-empty-workflow-project-legacy.md
+                - name: Добавление нового элемента в проект рабочего процесса (для прежних версий)
+                  href: how-to-add-a-new-item-to-a-workflow-project-legacy.md
+                - name: Настройка свойств проекта рабочего процесса (для прежних версий)
+                  href: how-to-configure-workflow-project-properties-legacy.md
+                - name: Создание консольных приложений последовательных рабочих процессов (для прежних версий)
+                  href: how-to-create-sequential-workflow-console-applications-legacy.md
+                - name: Создание консольных приложений рабочих процессов конечных автоматов (для прежних версий)
+                  href: how-to-create-state-machine-workflow-console-applications-legacy.md
+                - name: Создание проектов рабочих процессов (для прежних версий)
+                  href: how-to-create-workflow-projects-legacy.md
+                - name: Создание библиотеки последовательных рабочих процессов (для прежних версий)
+                  href: how-to-create-a-sequential-workflow-library-legacy.md
+                - name: Создание библиотеки рабочих процессов конечного автомата (для прежних версий)
+                  href: how-to-create-a-state-machine-workflow-library-legacy.md
+            - name: Представления последовательных рабочих процессов (для прежних версий)
+              href: sequential-workflow-views-legacy.md
+            - name: Действия с рабочими процессами для прежних версий
+              href: legacy-workflow-activities.md
+              items:
+                - name: Создание условия декларативного правила (для прежних версий)
+                  href: how-to-create-a-declarative-rule-condition-legacy.md
+                - name: Создание набора правил PolicyActivity (для прежних версий)
+                  href: how-to-create-a-policyactivity-rule-set-legacy.md
+                - name: Представления действий (для прежних версий)
+                  href: activity-views-legacy.md
+                - name: Добавление действий в область элементов (для прежних версий)
+                  href: how-to-add-activities-to-the-toolbox-legacy.md
+                - name: Реализация операции контракта Windows Communication Foundation (для прежних версий)
+                  href: how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md
+                - name: Вызов операции контракта Windows Communication Foundation (для прежних версий)
+                  href: how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md
+            - name: Использование тем в рабочих процессах (для прежних версий)
+              href: using-themes-in-workflows-legacy.md
+            - name: Использование конструктора рабочих процессов конечного автомата для прежних версий
+              href: using-the-legacy-state-machine-workflow-designer.md
+            - name: Использование конструктора действия для прежних версий
+              href: using-the-legacy-activity-designer.md
+            - name: Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation
+              href: legacy-designer-for-windows-workflow-foundation-ui-help.md
+              items:
+                - name: Диалоговое окно «Привязка к свойству действия» (для прежних версий)
+                  href: bind-to-an-activity-s-property-dialog-box-legacy.md
+                - name: Диалоговое окно «Обзор и выбор типа .NET» (для прежних версий)
+                  href: browse-and-select-a-dotnet-type-dialog-box-legacy.md
+                - name: Диалоговое окно «Выбор операции» (для прежних версий)
+                  href: choose-operation-dialog-box-legacy.md
+                - name: Диалоговое окно «Редактор условий для правила» (для прежних версий)
+                  href: rule-condition-editor-dialog-box-legacy.md
+                - name: Диалоговое окно «Редактор набора правил» (для прежних версий)
+                  href: rule-set-editor-dialog-box-legacy.md
+                - name: Диалоговое окно «Выбор условия» (для прежних версий)
+                  href: select-condition-dialog-box-legacy.md
+                - name: Диалоговое окно «Выбор набора правил» (для прежних версий)
+                  href: select-rule-set-dialog-box-legacy.md
+                - name: Диалоговое окно «Конфигурация темы» (для прежних версий)
+                  href: theme-configuration-dialog-box-legacy.md
+                - name: 'Диалоговое окно «Темы, конструктор рабочих процессов, параметры» (для прежних версий)'
+                  href: themes-workflow-designer-options-dialog-box-legacy.md

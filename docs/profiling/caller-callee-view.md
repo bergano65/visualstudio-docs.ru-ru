@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34920cfd91c236df4fc88d671d3cac48ebf02252
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 973c65927e3732cff44ab8eecb684f3c75af8614
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264298"
 ---
 # <a name="callercallee-view"></a>представление "Вызывающий/вызываемый"
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  
@@ -36,11 +37,11 @@ ms.lasthandoff: 04/19/2018
   
  Можно выбрать другую функцию, которая будет текущей. Для этого в средней части представления отчета дважды щелкните одну из функций, указанных в двух других частях представления. Представление отчета обновится автоматически в соответствии с внесенными изменениями.  
   
- Щелкнув имя столбца, можно отсортировать данные. Представление "Вызывающий/вызываемый" можно добавить дополнительные столбцы. Дополнительные сведения см. в статье [How to: Customize Report View Columns](../profiling/how-to-customize-report-view-columns.md) (Практическое руководство. Настройка столбцов представлений отчета).  
+ Щелкнув имя столбца, можно отсортировать данные. Представление "Вызывающий/вызываемый" можно добавить дополнительные столбцы. Дополнительные сведения см. в практическом руководстве [Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md).  
   
 ## <a name="see-also"></a>См. также  
- [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки)  
- [Caller/Callee View - Instrumentation Data](../profiling/caller-callee-view-instrumentation-data.md)  (Представление "Вызывающий/вызываемый" — данные инструментирования)  
- [Caller/Callee View - NET Memory Instrumentation Data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  (Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET)  
- [Caller/Callee View - .NET Memory Sampling Data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки памяти .NET)  
- [Caller / Callee View -  Contention Data](../profiling/caller-callee-view-contention-data.md) (Представление "Вызывающий/вызываемый" — данные о конфликтах)
+ [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные инструментирования](../profiling/caller-callee-view-instrumentation-data.md)   
+ [Представление "Вызывающий/вызываемый"— данные инструментирования памяти .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные выборки памяти .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные конфликтов](../profiling/caller-callee-view-contention-data.md)

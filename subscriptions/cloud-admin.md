@@ -9,11 +9,12 @@ description: Настройка администраторов для облач
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3c48c89a729f7eeb26680163c997669f3976e417
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335688"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Настройка администраторов для облачных подписок Visual Studio
 
@@ -46,5 +47,5 @@ ms.lasthandoff: 04/06/2018
 Новый администратор может теперь войти на [портал управления](https://manage.visualstudio.com), выбрать из списка в верхнем левом углу страницы подписку Azure, которая была использована для приобретения облачных подписок, и начать управлять этими подписками. 
 
 
-Сведения об облачных подписках Visual Studio см. в статье [Обзор](/vscloud-overview/) в разделе Приобретение облачных подписок. Чтобы приобрести облачные подписки Visual Studio, посетите Visual Studio Marketplace по адресу [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
+Сведения об облачных подписках Visual Studio см. в статье [Обзор](vscloud-overview.md) в разделе Приобретение облачных подписок. Чтобы приобрести облачные подписки Visual Studio, посетите Visual Studio Marketplace по адресу [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
 

@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267849"
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Профилирование в кластерах высокопроизводительных вычислительных систем (HPC)
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Профилирование в кластерах высокопроизводительных вычислительных систем (HPC)
 
-Профилирование вычислительных узлов кластеров Microsoft Windows HPC можно выполнять с использованием выборки Средств профилирования Visual Studio. Дополнительные сведения о HPC см. в разделе [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) на странице веб-сайта корпорации Майкрософт.
+Профилирование вычислительных узлов кластеров Microsoft Windows HPC можно выполнять с использованием выборки Средств профилирования Visual Studio. Дополнительные сведения о HPC см. в разделе [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) на странице веб-сайта корпорации Майкрософт.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/19/2018
 |*%FxPath%*|Путь к установщику [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. На установочном носителе Visual Studio этот путь — WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe.|
 |*%ProfilerPath%*|Путь к автономной версии установщика средств профилирования. На установочном носителе Visual Studio этот путь — Standalone Profiler\x64\vs_profiler.exe.|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Профилирование в вычислительном узле HPC
+## <a name="profile-on-an-hpc-compute-node"></a>Профилирование в вычислительном узле HPC
 
 Чтобы задать кластер HPC и целевые данные, нужно настроить сеанс профилирования с помощью мастера производительности HPC. На страницах свойств сеанса производительности можно задать дополнительные параметры. Средства профилирования автоматически развертывают необходимые целевые двоичные файлы и запускают профилировщик и приложение HPC.
 
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/19/2018
 
 10. Нажмите кнопку **Готово**.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Настройка свойств профилирования HPC с помощью страниц свойств сеанса анализа производительности
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Настройка свойств профилирования HPC с помощью страниц свойств сеанса анализа производительности
 
 Свойства сеанса анализа производительности, заданные в мастере профилирования HPC, можно изменить на странице "Свойства запуска HPC". На странице "Дополнительные свойства HPC" можно задать дополнительные параметры.
 

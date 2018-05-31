@@ -19,25 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446697"
 ---
-# <a name="encodings-and-line-breaks"></a>Кодировки и разрывы строк
+# <a name="encodings-and-line-endings"></a>Кодировки и окончания строк
 
 В Visual Studio следующие символы интерпретируются как разрывы строк:
 
--   CR LF: возврат каретки + перевод строки, символы Юникода 000D + 000A;
+- CR LF: возврат каретки + перевод строки, символы Юникода 000D + 000A;
 
--   LF: перевод строки, символ Юникода 000A;
+- LF: перевод строки, символ Юникода 000A;
 
--   NEL: следующая строка, символ Юникода 0085;
+- NEL: следующая строка, символ Юникода 0085;
 
--   LF: разделитель строки, символ Юникода 2028;
+- LF: разделитель строки, символ Юникода 2028;
 
--   PS: разделитель абзаца, символ Юникода 2029.
+- PS: разделитель абзаца, символ Юникода 2029.
 
 Для текста, который копируется из других приложений, сохраняется исходная кодировка и символы разрыва строки. Например, при копировании текста из Блокнота и вставке его в текстовый файл в Visual Studio текст имеет те же параметры, которые применялись в Блокноте.
 
@@ -56,4 +57,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Написание кода в редакторе](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

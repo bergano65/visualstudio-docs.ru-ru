@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acd70d593888f1b6945ac6b4f80b0e85de9a2f57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78a9cd01fc4f8ceff4b679ef81e2ce25d38624a3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447002"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Практическое руководство. Отображение номеров строк в редакторе
 Можно отображать или скрывать нумерацию строк кода.
@@ -47,4 +48,4 @@ ms.lasthandoff: 04/26/2018
 
 - [Настройка редактора](../../ide/customizing-the-editor.md)
 - [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)
-- [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)

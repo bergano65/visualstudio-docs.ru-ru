@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60ea2bcf1770e8c20db61c93a2b4ed6516b0daff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffe35d7b2467147c5f9f244357371f2d5dadb76b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447766"
 ---
 # <a name="vsinstr-warnings"></a>Предупреждения средства VSInstr
 В следующей таблице перечислены предупреждения, создаваемые средством VSInstr.exe. Чтобы отключить эти предупреждения, используйте параметр NOWARN с соответствующим номером предупреждения.  

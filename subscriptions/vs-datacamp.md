@@ -9,11 +9,12 @@ description: Сведения о преимуществе DataCamp Training, в�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448692"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 
@@ -83,6 +84,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с использованием DataCamp?  Ознакомьтесь со следующими ресурсами:
     - [Сообщество DataCamp](https://www.datacamp.com/community/tutorials), форумы и руководства.
-    - [Вопросы и ответы](https://datacamp.groovehq.com/help_center).  На странице "Вопросы и ответы" также можно отправить запрос в службу поддержки по электронной почте.
+    - [Центр справки DataCamp.](https://support.datacamp.com/hc) Поиск вспомогательных тем и просмотр ответов на вопросы пользователей.  
+    - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
 -  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 

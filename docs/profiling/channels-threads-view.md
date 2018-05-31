@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d7af966f171b4719e919bb15b279aff6951a7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 42b1baeec4543cb56d1e2320f26c9457dd7aac80
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269132"
 ---
 # <a name="channels-threads-view"></a>Каналы (представление "Потоки")
 Визуализатор параллелизма показывает четыре типа каналов: каналы потоков, каналы дисков, каналы маркеров и каналы GPU.  
@@ -49,4 +50,4 @@ ms.lasthandoff: 04/19/2018
  Каналы GPU отображает сведения о действиях DirectX 11 в системе.  Каждый обработчик DirectX, который связан с видеокартой, имеет отдельный канал.  Отдельные сегменты представляют время, затраченное на обработку пакета прямого доступа к памяти.  
   
 ## <a name="see-also"></a>См. также  
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+ [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32039843f3aef60f6e7087b0d26f8b5e1efd1df8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263933"
 ---
 # <a name="common-data-views"></a>Представления общих данных
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, которые являются общими для всех методов профилирования.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Представление "Сводка"](../profiling/summary-view.md)  
  Содержит описание представления и отчета "Сводка". Столбцы данных зависят от используемого метода профилирования.  
   
@@ -47,14 +48,14 @@ ms.lasthandoff: 04/19/2018
  [Представление "Процесс"](../profiling/process-view.md)  
  Перечисляет время начала и завершения процессов и потоков.  
   
- [Представление "Метки"](../profiling/marks-view.md)  
+ [Представление меток](../profiling/marks-view.md)  
  Содержит список трассировки событий Windows и событий выборки, вставленных в файл данных профилирования.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода выборки.  
   
- [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
+ [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода инструментирования.  
   
  [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)  
