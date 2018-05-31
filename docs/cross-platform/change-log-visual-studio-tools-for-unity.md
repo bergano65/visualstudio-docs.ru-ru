@@ -1,7 +1,7 @@
 ---
 title: Журнал изменений (инструменты Visual Studio для Unity, Windows) | Документы Майкрософт
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,53 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266080"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Журнал изменений (инструменты Visual Studio для Unity, Windows)
 Журнал изменений в наборе средств Visual Studio для Unity
+
+## <a name="3701"></a>3.7.0.1
+ Выпущено 07.05.2018 г.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+-   **Установщик:**
+
+    -   Исправлена проблема зависимости, возникающая в экспериментальных сборках.
+
+## <a name="3700"></a>3.7.0.0
+ Выпущено 07.05.2018 г.
+
+### <a name="new-features"></a>Новые функции
+
+-   **Отладка:**
+
+    -   Добавлена поддержка управляемой отладки (отладка нескольких проигрывателей или редактора с одного сеанса Visual Studio).
+    
+    -   Добавлена поддержка отладки медиаплеера Android с поддержкой USB.
+    
+    -   Добавлена поддержка отладки медиаплеера UWP/IL2CPP.
+
+-   **Вычисления:**
+
+    -   Добавлена поддержка шестнадцатеричных спецификаторов.
+    
+    -   Улучшены возможности оценки окна контрольных значений.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+-   **Интеграция:**
+
+    -   Исправлено использование параметров исключений.
+
+-   **Project Generation:**
+
+    -   Из поколения исключены единицы компиляции диспетчера пакетов.
 
 ## <a name="3605"></a>3.6.0.5
  Выпущено 13.03.2018 г.
@@ -26,7 +65,7 @@ ms.lasthandoff: 05/11/2018
 
 -   **Project Generation:**
 
-    -   Добавлена поддержка генератора новых проектов в Unity 2018.1
+    -   Добавлена поддержка генератора новых проектов в Unity 2018.1.
 
 ### <a name="bug-fixes"></a>Исправления ошибок
 

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449144"
 ---
 # <a name="editing-python-code"></a>Редактирование кода Python
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 05/10/2018
 |---|---|
 | ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) с примером редактирования кода Python (2 мин 30 с).|
 
-Общие сведения о редактировании кода в Visual Studio см. в статье [Создание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода.
+Общие сведения о редактировании кода в Visual Studio см. в статье [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода.
 
 Кроме того, с помощью обозревателя объектов Visual Studio вы можете проверять классы Python, определенные в каждом модуле, и функции, определенные в этих классах (**Просмотр > Другие окна > Обозреватель объектов** или клавиши CTRL+W, J).
 
