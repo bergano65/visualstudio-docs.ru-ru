@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262911"
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Добавление данных взаимодействия уровней из командной строки
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Добавление данных о взаимодействии уровней из командной строки
 
 Профилирование уровневого взаимодействия позволяет получить дополнительные сведения о времени выполнения синхронных вызовов [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] в функциях многоуровневых приложений, взаимодействующих с одной или несколькими базами данных.
 
@@ -38,17 +39,17 @@ ms.lasthandoff: 05/14/2018
 
 Данные об уровневом взаимодействии можно просматривать только в Visual Studio Enterprise Отчеты об уровневом взаимодействии на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступны.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Добавление данных об уровневом взаимодействии с помощью VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Добавление данных об уровневом взаимодействии с помощью VSPerfCmd
 
 Программа командной строки VSPerfASPNETCmd позволяет получить доступ к полному набору функций, доступных в средствах профилирования. Чтобы добавить сведения об уровневом взаимодействии в данные профилирования, собранные с помощью VSPerfCmd, необходимо использовать программу **VSPerfCLREnv** для установки и удаления переменных среды, которые обеспечивают сбор данных о взаимодействии. Указываемые параметры и процедуры, необходимые для сбора данных, зависят от типа профилируемого приложения.
 
-## <a name="profiling-stand-alone-applications"></a>Профилирование автономных приложений
+## <a name="profile-stand-alone-applications"></a>Профилирование автономных приложений
 
 Чтобы добавить данные об уровневом взаимодействии в приложение, которое выполняется другим процессом (например, в классическое приложение Windows, осуществляющее синхронные вызовы [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] к базе данных SQLServer), используйте параметр **VSPerfClrEnv /InteractionOn**, чтобы задать переменные среды, и параметр **VSPerfClrEnv /InteractionOff** для их удаления.
 
 В следующем примере выполняется профилирование классического приложения Windows с помощью метода инструментирования и сбор данных об уровневом взаимодействии.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Пример профилирования классического приложения Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Пример профилирования классического приложения Windows
 
 1. Откройте окно командной строки как администратор. В меню **Пуск** наведите указатель мыши на пункт **Все программы**, выберите пункт **Стандартные**. Щелкните правой кнопкой мыши пункт **Командная строка** и выберите команду **Запуск от имени администратора**.
 
@@ -79,9 +80,9 @@ ms.lasthandoff: 05/14/2018
     vsperfclrenv /off
     ```
 
-Дополнительные сведения см. в разделе [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Дополнительные сведения см. в статье [Профилирование автономных приложений из командной строки](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Профилирование служб
+## <a name="profile-services"></a>Профилирование служб
 
 Для профилирования служб, включая приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], используйте параметр **VSPerfClrEnv /GlobalInteractionOn**, чтобы задать переменные среды, и параметр **VSPerfClrEnv /GlobalInteractionOff** для их удаления.
 
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/14/2018
 
 В следующем примере выполняется профилирование службы Windows с помощью метода инструментирования и сбор данных об уровневом взаимодействии.
 
-### <a name="profiling-a-windows-service-example"></a>Пример профилирования службы Windows
+### <a name="profile-a-windows-service-example"></a>Пример профилирования службы Windows
 
 1. При необходимости установите службу.
 
@@ -145,7 +146,7 @@ ms.lasthandoff: 05/14/2018
 
 [Профилирование служб](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Добавление данных об уровневом взаимодействии с помощью VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Добавление данных об уровневом взаимодействии с помощью VSPerfASPNETCmd
 
 Программа командной строки VSPerfASPNETCmd позволяет без труда профилировать веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. У этой программы меньше параметров по сравнению с программой командной строки **VSPerfCmd**, в ней не нужно задавать переменные среды и не требуется перезагрузка компьютера. Эти возможности VSPerfASPNETCmd делают сбор данных об уровневом взаимодействии чрезвычайно простым.
 

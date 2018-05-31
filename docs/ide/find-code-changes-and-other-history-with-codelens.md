@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21724619a0dd3b89582c716a5df0fdff6041b682
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446742"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 
@@ -324,4 +325,4 @@ CodeLens не поддерживает наличие нескольких ус�
 
 ## <a name="see-also"></a>См. также
 
-- [Написание кода в редакторе](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

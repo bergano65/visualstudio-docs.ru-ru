@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454614"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 В этом учебнике по разработке с помощью Node.js и Express в Visual Studio вы создадите простое веб-приложение Node.js, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение. Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* У вас должна быть установлена среда Visual Studio и должна иметься рабочая нагрузка "Разработка Node.js".
+* У вас должна быть установлена среда Visual Studio 2017 и должна иметься рабочая нагрузка "Разработка Node.js".
 
     Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
 
@@ -95,6 +96,8 @@ ms.lasthandoff: 04/26/2018
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
+    Предыдущий код добавляет разметку для динамического создания HTML-страницы с заголовком и приветственным сообщением. Страница также содержит код, позволяющий отображать изображение, которое изменяется при каждом нажатии кнопки.
+
 1. В папке маршрутов откройте файл *index.js*.
 
 1. Добавьте следующий код перед вызовом `router.get`:
@@ -110,6 +113,8 @@ ms.lasthandoff: 04/26/2018
     }
     ````
 
+    Этот код создает объект данных, который передается на динамически созданную HTML-страницу.
+
 1. Замените вызов функции `router.get` следующим кодом:
 
     ```js
@@ -117,14 +122,16 @@ ms.lasthandoff: 04/26/2018
         res.render('index', { title: 'Express', "data" });
     });
     ```
+    
+    Предыдущий код задает текущую страницу с помощью объекта маршрутизатора Express и отображает ее, передавая объект заголовка и данных.
 
-    В строке кода, содержащей `res.render`, присутствует ошибка. Нужно устранить ее, прежде чем запускать приложение. Мы исправим ее в следующем разделе.
+    Чтобы продемонстрировать несколько возможностей Visual Studio, мы добавили ошибку в строку кода, содержащего функцию `res.render`. Нужно устранить ее, прежде чем запускать приложение. Мы исправим ее в следующем разделе.
 
 ## <a name="use-intellisense"></a>Использование IntelliSense
 
 1. В файле *index.js* перейдите к строке кода, содержащей `res.render`.
 
-1. После строки `data` введите `: get`, и IntelliSense покажет функцию `getData`. Выберите `getData`.
+1. Установите курсор в конце строки `data`, введите `: get`, и IntelliSense покажет функцию `getData`. Выберите `getData`.
 
     ![Использование IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 

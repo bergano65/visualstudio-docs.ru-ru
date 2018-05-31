@@ -1,0 +1,89 @@
+- name: Кроссплатформенная разработка для мобильных устройств в Visual Studio
+  href: cross-platform-mobile-development-in-visual-studio.md
+- name: Visual Studio и Xamarin
+  href: visual-studio-and-xamarin.md
+  items:
+    - name: Настройка и установка
+      href: setup-and-install.md
+    - name: Подробности о разработке мобильных приложений с использованием Xamarin
+      href: learn-about-mobile-development-with-xamarin.md
+    - name: Проверка окружения Xamarin
+      href: verify-your-xamarin-environment.md
+    - name: Основы создания приложений с помощью Xamarin.Forms в Visual Studio
+      href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
+    - name: Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
+      href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
+    - name: Управление жизненным циклом приложений (ALM) для приложений Xamarin
+      href: application-lifecycle-management-alm-with-xamarin-apps.md
+    - name: 'Программа установки, установка и проверки для пользователей Mac'
+      href: setup-install-and-verifications-for-mac-users.md
+- name: Средства Visual Studio для Apache Cordova
+  href: visual-studio-tools-for-apache-cordova.md
+- name: Набор средств Visual Studio для Unity
+  href: visual-studio-tools-for-unity.md
+  items:
+    - name: Обзор набора средств Visual Studio для Unity
+      href: overview-of-visual-studio-tools-for-unity.md
+    - name: Начало работы с набором средств Visual Studio для Unity
+      href: getting-started-with-visual-studio-tools-for-unity.md
+    - name: Применение набора средств Visual Studio для Unity
+      href: using-visual-studio-tools-for-unity.md
+    - name: Программирование с набором средств Visual Studio для Unity
+      href: programming-visual-studio-tools-for-unity.md
+      items:
+        - name: 'Настройка файлов проекта, созданных в VSTU'
+          href: customize-project-files-created-by-vstu.md
+        - name: Совместное использование обратного вызова журнала Unity с VSTU
+          href: share-the-unity-log-callback-with-vstu.md
+    - name: Программирование с использованием Unity и Azure
+      href: visual-studio-tools-for-unity-azure.md
+    - name: Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
+      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+    - name: 'Журнал изменений (инструменты Visual Studio для Unity, Windows)'
+      href: change-log-visual-studio-tools-for-unity.md
+    - name: 'Журнал изменений (инструменты Visual Studio для Unity, Mac)'
+      href: change-log-visual-studio-tools-for-unity-mac.md
+    - name: Использование управления жизненным циклом приложения (ALM) с приложениями Unity
+      href: application-lifecycle-management-alm-with-unity-apps.md
+- name: Visual C++ для разработки кроссплатформенных мобильных приложений
+  href: visual-cpp-for-cross-platform-mobile-development.md
+  items:
+    - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+      href: install-visual-cpp-for-cross-platform-mobile-development.md
+      items:
+        - name: Install and Configure Tools to Build using iOS
+          href: install-and-configure-tools-to-build-using-ios.md
+    - name: Создание приложения Android Native Activity
+      href: create-an-android-native-activity-app.md
+    - name: Создание приложения OpenGL ES в Android и iOS
+      href: build-an-opengl-es-application-on-android-and-ios.md
+    - name: Импорт проекта XCode
+      href: import-an-xcode-project.md
+    - name: Изменения в синхронизации между XCode и Visual Studio
+      href: sync-changes-between-xcode-and-visual-studio.md
+    - name: Примеры разработки кроссплатформенных мобильных приложений
+      href: cross-platform-mobile-development-examples.md
+    - name: Свойства кроссплатформенного проекта C++
+      href: cross-platform-prop-pages.md
+      items:
+        - name: Общие свойства проекта (Android C++)
+          href: general-android-prop-page.md
+        - name: Свойства отладчика Android
+          href: android-debugger-prop-page.md
+        - name: Свойства проекта Clang (Android C++)
+          href: clang-android-prop-page.md
+        - name: Общие свойства проекта (Android C++ Makefile)
+          href: general-makefile-android-prop-page.md
+        - name: Свойства компоновщика Clang (Android C++)
+          href: clanglink-prop-page.md
+        - name: Свойства NMake (Android C++)
+          href: nmake-android-prop-page.md
+- name: Разработка приложений для универсальной платформы Windows (UWP)
+  href: develop-apps-for-the-universal-windows-platform-uwp.md
+- name: Эмулятор Visual Studio для Android
+  href: visual-studio-emulator-for-android.md
+  items:
+    - name: System requirements for the Visual Studio Emulator for Android
+      href: system-requirements-for-the-visual-studio-emulator-for-android.md
+    - name: Troubleshooting the Visual Studio Emulator for Android
+      href: troubleshooting-the-visual-studio-emulator-for-android.md

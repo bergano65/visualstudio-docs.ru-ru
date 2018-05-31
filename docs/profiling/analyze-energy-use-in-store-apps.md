@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 187f6c7cdbbcb99d5c1ac336e922c4a2fedbb44d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336062"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 Профилировщик **Расход энергии** в Visual Studio позволяет анализировать расход энергии приложениями универсальной платформы Windows на планшетных устройствах с низким энергопотреблением, постоянно или периодически работающих от аккумуляторов. На устройстве, работающем от аккумулятора, приложение с большим энергопотреблением может вызывать такое недовольство пользователя, что он в конце концов удалит его. Оптимизация расхода энергии позволяет улучшить восприятие приложения пользователями и повысить степень его использования.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 05/14/2018
 >  -   Windows.Foundation.Diagnostics LoggingChannel реализует интерфейс [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (проецируемый как [System.IDisposable](/dotnet/api/system.idisposable) в C# и VB). Чтобы избежать утечки системных ресурсов, вызовите [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) в C# и VB) после завершения работы с каналом ведения журнала.  
 > -   Каждый открытый канал ведения журнала должен иметь уникальное имя. При попытке создать новый канал ведения журнала с тем же именем, что и у существующего канала, вызывается исключение.  
   
- См. пример Windows SDK [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) .  
+ Ознакомьтесь с примером Windows SDK [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).  
   
  **Добавление делений в код JavaScript**  
   
@@ -150,7 +151,7 @@ if (performance && performance.mark) {
   
      Имитатор Visual Studio для приложений универсальной платформы Windows позволяет имитировать свойства подключений для передачи данных интерфейсов API, предоставляющих информацию о сети. См. раздел [Запуск приложений универсальной платформы Windows в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md).  
   
--   Инструменты **Время выполнения функций JavaScript** и **Загрузка ЦП** позволяют снизить нагрузку на ЦП, связанную с неэффективными функциями. См. дополнительные сведения об [анализе использования ЦП](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+-   Инструменты **Время выполнения функций JavaScript** и **Загрузка ЦП** позволяют снизить нагрузку на ЦП, связанную с неэффективными функциями. Дополнительные сведения см. в статье об [анализе использования ЦП](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
 
 ## <a name="see-also"></a>См. также
  [Профилирование в Visual Studio](../profiling/index.md)  

@@ -13,42 +13,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf99a6e701e775653cf1524e0e7850761909621
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335818"
 ---
-# <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
+# <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры для сбора подробных данных о производительности клиентского (автономного) компонента с использованием метода инструментирования в командной строке.  
   
-## <a name="common-tasks"></a>Общие задачи  
+## <a name="common-tasks"></a>Типичные задачи  
   
 |Задача|Связанная информация|  
 |----------|---------------------|  
 |**Профилирование приложения .NET Framework с помощью инструментирования**|-   [Практическое руководство. Инструментирование компонента .NET и сбор подробных данных об использовании времени](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Профилирование приложения C/C++ с помощью инструментирования**|-   [Практическое руководство. Инструментирование собственного компонента и сбор данных о времени](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Добавление данных взаимодействия между уровнями**|-   [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Добавление данных взаимодействия между уровнями**|-   [Сбор данных о взаимодействии уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Связанные задачи  
+## <a name="related-tasks"></a>Связанные задачи
   
-### <a name="profiling-stand-alone-applications"></a>Профилирование автономных приложений  
+### <a name="profile-stand-alone-applications"></a>Профилирование автономных приложений  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
-|**Профилирование приложений с помощью выборки**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**Профилирование приложений с помощью выборки**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
 |**Профилирование выделения памяти .NET и сбора мусора**|-   [Сбор данных об использовании памяти .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
 |**Профилирование конфликтов ресурсов и действий потока**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
   
-### <a name="profiling-by-using-the-instrumentation-method"></a>Профилирование с помощью метода инструментирования  
+### <a name="profile-by-using-the-instrumentation-method"></a>Профилирование с помощью метода инструментирования  
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
 |**Профилирование приложений ASP.NET**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
 |**Профилирование служб**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
   
-### <a name="analyzing-instrumentation-data-views-and-reports"></a>Анализ данных инструментирования представлений и отчетов  
- [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
+### <a name="analyze-instrumentation-data-views-and-reports"></a>Анализ данных инструментирования представлений и отчетов  
+ [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
   
 ## <a name="reference"></a>Ссылка  
  [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)

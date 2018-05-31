@@ -10,18 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7bde83ce810f8260e61eacddf1a086953a63a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d925e2c20a304239c8b510bf9ecc1fba123c4dfa
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262477"
 ---
-# <a name="creating-profiler-reports-from-the-command-line"></a>Создание отчетов профилировщика из командной строки
+# <a name="create-profiler-reports-from-the-command-line"></a>Создание отчетов профилировщика из командной строки
 Программа командной строки **VSPerfReport** позволяет создавать отчеты в формате XML или данных с разделителями-запятыми (CSV) из файлов данных профилирования (VSP). Типы отчетов VSPerfReport точно соответствуют табличным представлениям интерфейса для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Вы можете отфильтровать отчет, чтобы отобразить только ваш код и только сегмент файла данных профилирования. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md).  
   
  Вы также можете упростить общий доступ к файлам данных профилирования, внедрив символы в VSP-файлы и создав файлы предварительно проанализированных отчетов (VSPS), которые открываются быстрее и занимают меньше места.  
   
-## <a name="common-tasks"></a>Общие задачи  
+## <a name="common-tasks"></a>Типичные задачи
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  

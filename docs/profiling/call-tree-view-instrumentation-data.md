@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf8e9176c389aecf2844f3e4bcaeea9bcaa5803
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262235"
 ---
-# <a name="call-tree-view---instrumentation-data"></a>Представление "Дерево вызовов" — данные инструментирования
+# <a name="call-tree-view---instrumentation-data"></a>Представление "Дерево вызовов" — данные инструментирования
 Значения функций в представлении "Дерево вызовов" указывают время для экземпляров функций, вызванных родительской функцией в дереве вызовов. Процентные значения вычисляются путем сравнения значения экземпляров функции с общим затраченным инклюзивным временем всех функций в сеансе профилирования.  
   
 ## <a name="general"></a>Общие  
@@ -85,6 +86,6 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Call Tree View](../profiling/call-tree-view-sampling-data.md)  (Представление "Дерево вызовов")  
- [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  (Представление "Дерево вызовов" — инструментирование)  
- [Представление "Дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+ [Представление "Дерево вызовов"](../profiling/call-tree-view-sampling-data.md)   
+ [Представление "Дерево вызовов" — инструментирование](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "Дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

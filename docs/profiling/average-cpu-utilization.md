@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c34293a140ca82918c1bd3d03ae9c83eab8665a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fee580cdd708c555682f0309759678dee38ad2b1
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262324"
 ---
 # <a name="average-cpu-utilization"></a>Среднее использование ЦП
 Показывает среднее использование логических ядер системы процессом профилирования в течение всего процесса. Этот граф не показывает, какое из ядер активно в заданный момент времени. Например, если два ядра были загружены на 50 % производительности в течение заданного периода времени, граф покажет, что использовалось одно логическое ядро.  

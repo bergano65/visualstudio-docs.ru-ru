@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fc0004d076a36675ff6e9f8a9405d9062446d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d746426a5db9a3b71ba3fd3703887f9e4c894ef9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448705"
 ---
 # <a name="text-editor-options-dialog-box"></a>Диалоговое окно "Параметры текстового редактора"
 
@@ -32,4 +33,4 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="see-also"></a>См. также
 
-Раздел [Написание кода](../../ide/writing-code-in-the-code-and-text-editor.md) описывает различные способы использования редактора кода.
+В статье [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md) описаны различные способы использования редактора кода.

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624e66486dfd2c4e75b12cfdce1d3758ab37de60
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448341"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
 
@@ -160,7 +161,7 @@ ms.lasthandoff: 05/03/2018
 ## <a name="see-also"></a>См. также
 
 - [Создание в результате использования](../ide/visual-csharp-intellisense.md#generate-from-usage)
-- [Написание кода](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Использование IntelliSense](../ide/using-intellisense.md)
 - [Модульное тестирование кода](../test/unit-test-your-code.md)
 - [Быстрые действия](../ide/quick-actions.md)

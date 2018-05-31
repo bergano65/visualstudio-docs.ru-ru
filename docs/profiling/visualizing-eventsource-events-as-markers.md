@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449030"
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
+# <a name="visualize-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 Визуализатор параллелизма может отображать события EventSource в качестве маркеров и предоставляет возможность настройки того, как должны отображаться эти маркеры. Чтобы просмотреть маркеры EventSource, зарегистрируйте GUID поставщика трассировки событий Windows с помощью диалогового окна [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). У визуализатора параллелизма по умолчанию есть соглашения по представлению события EventSource как [маркеров флагов](../profiling/flag-markers.md), [маркеров интервалов](../profiling/span-markers.md) и [маркеров сообщений](../profiling/message-markers.md). Вы можете настраивать то, как отображаются события EventSource, путем добавления пользовательских полей в события. Дополнительные сведения о маркерах см. в разделе [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md). Дополнительные сведения о событиях EventSource см. в разделе <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>Визуализация событий EventSource по умолчанию  
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/19/2018
 ### <a name="text"></a>Text  
  Если для события определено сообщение форматированного текста (как для функции printf), то оно отображается в качестве описания маркера. В противном случае описанием будет имя события и значение каждого поля полезных данных.  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>Настройка визуализации событий EventSource  
+## <a name="customize-visualization-of-eventsource-events"></a>Настройка визуализации событий EventSource  
  Вы можете настраивать параметры отображения событий EventSource, добавляя соответствующие поля к событию, как описано в следующих разделах.  
   
 ### <a name="marker-type"></a>Тип маркера  

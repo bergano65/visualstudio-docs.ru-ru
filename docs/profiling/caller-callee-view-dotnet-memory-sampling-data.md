@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5a80233a6c1aaed56770e0ec2bb6733a800ce06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d74e6c90f1caf66cbba299ea210d6f4af6637f4e
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336104"
 ---
-# <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
+# <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования памяти .NET для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  
   
  **Текущая функция** отображается в средней таблице, в которой указываются данные профилирования памяти выбранной функции. Значения включают все вызовы функции, попавшие в выборку.  
@@ -52,6 +53,6 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки)  
- [Caller/Callee View - Instrumentation Data](../profiling/caller-callee-view-instrumentation-data.md) (Представление "Вызывающий/вызываемый" — данные инструментирования)
+ [Представление "Вызывающий/вызываемый"— данные инструментирования памяти .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные инструментирования](../profiling/caller-callee-view-instrumentation-data.md)

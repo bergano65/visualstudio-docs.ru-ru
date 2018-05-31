@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448419"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Средство **VSPerfCmd.exe** используется для запуска и остановки сбора данных производительности. Для этого используется следующий синтаксис:  
@@ -54,7 +55,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn и ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Приостанавливает профилирование для заданного потока. Используйте **ThreadOff** только при профилировании с помощью метода инструментирования.|  
 |[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Вставляет метку с необязательным текстом в файл данных профилирования.|  
   
-## <a name="sampling-method-options"></a>Параметры метода выборки  
+## <a name="sample-method-options"></a>Параметры метода выборки  
  Приведенные ниже параметры доступны только при использовании метода профилирования с выборкой.  
   
 |Параметр|Описание:|  
@@ -66,7 +67,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Останавливает профилирование указанных процессов. Процессы можно задавать по идентификатору или имени процесса. Если процесс не указан, профилирование останавливается для всех процессов.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Собирает данные о выделении памяти и времени существования объектов в .NET. Используйте только с параметром **VSPerfCmdLaunch**.|  
   
-### <a name="sampling-interval-options"></a>Параметры интервала выборки  
+### <a name="sample-interval-options"></a>Параметры интервала выборки  
  Приведенные ниже параметры определяют тип и продолжительность интервалов выборки. Значение по умолчанию — **Timer**. Кроме того, с помощью параметра **Counter** можно задать в качестве интервала счетчик ЦП. Эти параметры можно задавать только с параметром **Launch** или с первым параметром **Attach** сеанса профилирования.  
   
 |Параметр|Описание:|  

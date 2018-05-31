@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8048d7dfd54627394705b2ca9e2ba9949f2bca1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8a24d19fabc3cb82dbb4004ec71b6fa00bc470c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336117"
 ---
-# <a name="callercallee-view---instrumentation-data"></a>Представление "Вызывающий/вызываемый" — данные инструментирования
+# <a name="callercallee-view---instrumentation-data"></a>Представление "Вызывающий/вызываемый" — данные инструментирования
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования для выбранной функции и ее родительских и дочерних функций в дереве вызовов. Представление "Вызывающий/вызываемый" содержит три таблицы.  
   
  **Текущая функция** отображается в средней таблице, в которой указываются данные профилирования для выбранной функции. Значения включают все вызовы функции.  
@@ -92,6 +93,6 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)   
- [Представление "Вызывающий/вызываемый" — данные выборки памяти .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+ [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные выборки памяти .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый"— данные инструментирования памяти .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

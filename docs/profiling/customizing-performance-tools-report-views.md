@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 691723e27cc2927733fe82aa1f79e9fd1d9d663d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21df85a54071a6fffe03483856c55194af08a2da
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263969"
 ---
-# <a name="customizing-performance-tools-report-views"></a>Настройка представлений отчетов средств производительности
+# <a name="customize-performance-tools-report-views"></a>Настройка представлений отчетов средств оценки производительности
 В этом разделе содержатся сведения о настройке отчетов, созданных с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="common-tasks"></a>Общие задачи  
+## <a name="common-tasks"></a>Типичные задачи
   
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
@@ -35,4 +36,4 @@ ms.lasthandoff: 04/19/2018
  Описание представления, которое можно использовать при анализе данных профилирования.  
   
 ## <a name="see-also"></a>См. также  
- [Анализ данных средств производительности](../profiling/analyzing-performance-tools-data.md)
+ [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)

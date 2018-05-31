@@ -18,11 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdc89faaebff31981e7cece07c8530600f32454
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447964"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Разработка и просмотр классов и типов в конструкторе классов
 
@@ -58,5 +59,5 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Написание кода в редакторе](../writing-code-in-the-code-and-text-editor.md)
+- [Возможности редактора кода](../writing-code-in-the-code-and-text-editor.md)
 - [Сопоставление зависимостей во всех решениях](../../modeling/map-dependencies-across-your-solutions.md)

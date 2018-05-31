@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091ce71312778353a7f09869d6de45bc394c665
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b9b85d5bf1bab61fbc59c0f90411c3e70545745
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265048"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Представления данных метода выборки профилировщика
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, созданным с помощью метода выборки.  
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Представление "Сводка"](../profiling/summary-view-sampling-data.md)  
  Перечисляет функции, которые выполнялись чаще других во время выборки, а также функции, выполнявшие наибольший объем индивидуальной работы.  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/19/2018
  [Представление "Модули"](../profiling/modules-view-sampling-data.md)  
  Упорядочивает данные профилирования по модулям и перечисляет функции, строки исходного кода и инструкции, выполнявшиеся при сборе данных.  
   
- [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md) (Представление "Вызывающий/вызываемый" — данные выборки)  
+ [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)  
  Содержит данные профилирования для выбранной функции и функций, которые вызывали данную функцию и вызывались ею.  
   
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)  
@@ -51,14 +52,14 @@ ms.lasthandoff: 04/19/2018
  [Представление "Процесс"](../profiling/process-view.md)  
  Перечисляет время начала и завершения процессов и потоков.  
   
- [Представление "Метки"](../profiling/marks-view.md)  
+ [Представление меток](../profiling/marks-view.md)  
  Содержит список трассировки событий Windows и событий выборки, вставленных в файл данных профилирования.  
   
- [Представление "Сведения о функции"](../profiling/function-details-view.md)  
+ [Представление сведений о функции](../profiling/function-details-view.md)  
  Отображает графическую схему связей между выбранной функцией и функциями, которые вызывали выбранную функцию и вызывались ею.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
+ [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода инструментирования.  
   
  [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)  

@@ -74,10 +74,9 @@
 #### [Управление подписками для MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## Ресурсы
-### [Условия лицензии Visual Studio](vs-license-terms.md)
 ### [Технический документ по лицензированию Visual Studio](http://aka.ms/vslicensing)
 ### [Сравнение вариантов подписок и цен на них](https://www.visualstudio.com/vs/pricing)
 ### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://www.visualstudio.com/vs/compare)
 ### [Поддержка по администрированию и подпискам Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
-### [Корпоративная лицензия и права на использование продуктов (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Условия корпоративного лицензирования](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Соглашение Microsoft Products and Services Agreement (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

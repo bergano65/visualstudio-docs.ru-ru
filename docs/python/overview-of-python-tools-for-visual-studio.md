@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о поддержке Python в Visual Studio в ОС Windows
 description: Сведения о возможностях Python в Visual Studio, которые делают ее лучшей интегрированной средой разработки на Python в Windows (также называются инструментами Python для Visual Studio, PTVS).
-ms.date: 04/06/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449173"
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -57,7 +58,7 @@ Visual Studio предоставляет первоклассный редакт
 - Документы: [Форматирование кода](formatting-python-code.md)
 - Документы: [Рефакторинг](refactoring-python-code.md)
 - Документы: [Linting](linting-python-code.md)
-- Документы по основным возможностям Visual Studio: [Создание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md)
+- Документы по основным возможностям Visual Studio: [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md).
 
 ## <a name="interactive-window"></a>Интерактивное окно
 

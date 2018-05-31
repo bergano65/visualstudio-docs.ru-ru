@@ -1,0 +1,422 @@
+- name: MsBuild
+  href: msbuild.md
+  items:
+    - name: "Новые возможности MSBuild\_15.0"
+      href: what-s-new-in-msbuild-15-0.md
+    - name: Основные возможности MSBuild
+      href: msbuild-concepts.md
+      items:
+        - name: Свойства MSBuild
+          href: msbuild-properties.md
+          items:
+            - name: Использование переменных среды в построении
+              href: how-to-use-environment-variables-in-a-build.md
+            - name: Использование ссылки на имя или расположение файла проекта
+              href: how-to-reference-the-name-or-location-of-the-project-file.md
+            - name: Построение одинаковых исходных файлов с различными параметрами
+              href: how-to-build-the-same-source-files-with-different-options.md
+            - name: Функции свойств
+              href: property-functions.md
+        - name: Элементы MSBuild
+          href: msbuild-items.md
+          items:
+            - name: Выбор файлов для сборки
+              href: how-to-select-the-files-to-build.md
+            - name: Исключение файлов из сборки
+              href: how-to-exclude-files-from-the-build.md
+            - name: 'Отображение списка элементов, разделенных запятыми'
+              href: how-to-display-an-item-list-separated-with-commas.md
+            - name: Определения элементов
+              href: item-definitions.md
+            - name: Функции элементов
+              href: item-functions.md
+            - name: Отслеживание файлов
+              href: file-tracking.md
+              items:
+                - name: EndTrackingContext
+                  href: endtrackingcontext.md
+                - name: ResumeTracking
+                  href: resumetracking.md
+                - name: SetThreadCount
+                  href: setthreadcount.md
+                - name: StartTrackingContext
+                  href: starttrackingcontext.md
+                - name: StartTrackingContextWithRoot
+                  href: starttrackingcontextwithroot.md
+                - name: StopTrackingAndCleanup
+                  href: stoptrackingandcleanup.md
+                - name: SuspendTracking
+                  href: suspendtracking.md
+                - name: WriteAllTLogs
+                  href: writealltlogs.md
+                - name: WriteContextTLogs
+                  href: writecontexttlogs.md
+        - name: Цели MSBuild
+          href: msbuild-targets.md
+          items:
+            - name: Порядок построения целевого объекта
+              href: target-build-order.md
+            - name: Инкрементные построения
+              href: incremental-builds.md
+            - name: Выбор цели для первой сборки
+              href: how-to-specify-which-target-to-build-first.md
+            - name: Использование одного целевого объекта в нескольких файлах проектов
+              href: how-to-use-the-same-target-in-multiple-project-files.md
+            - name: Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
+              href: how-to-build-specific-targets-in-solutions-by-using-msbuild-exe.md
+            - name: Последовательная сборка
+              href: how-to-build-incrementally.md
+            - name: Очистка сборки
+              href: how-to-clean-a-build.md
+            - name: Использование пакета SDK проекта MSBuild
+              href: how-to-use-project-sdk.md
+        - name: Задачи MSBuild
+          href: msbuild-tasks.md
+          items:
+            - name: Написание задач
+              href: task-writing.md
+            - name: Игнорирование ошибок в задачах
+              href: how-to-ignore-errors-in-tasks.md
+            - name: 'Построение проекта, содержащего ресурсы'
+              href: how-to-build-a-project-that-has-resources.md
+            - name: Встроенные задачи MSBuild
+              href: msbuild-inline-tasks.md
+              items:
+                - name: Пошаговое руководство. Создание встроенной задачи
+                  href: walkthrough-creating-an-inline-task.md
+        - name: Сравнение свойств и элементов
+          href: comparing-properties-and-items.md
+        - name: Специальные символы в MSBuild
+          href: msbuild-special-characters.md
+          items:
+            - name: Пропуск специальных знаков в MSBuild
+              href: how-to-escape-special-characters-in-msbuild.md
+            - name: Использование резервных символов XML в файлах проектов
+              href: how-to-use-reserved-xml-characters-in-project-files.md
+    - name: Дополнительные возможности MSBuild
+      href: msbuild-advanced-concepts.md
+      items:
+        - name: Пакетная обработка в MSBuild
+          href: msbuild-batching.md
+          items:
+            - name: Метаданные элементов в пакетной обработке задач
+              href: item-metadata-in-task-batching.md
+            - name: Метаданные элементов в пакетной обработке целевых объектов
+              href: item-metadata-in-target-batching.md
+        - name: Преобразования MSBuild
+          href: msbuild-transforms.md
+        - name: Интеграция Visual Studio (MSBuild)
+          href: visual-studio-integration-msbuild.md
+          items:
+            - name: Расширение процесса построения Visual Studio
+              href: how-to-extend-the-visual-studio-build-process.md
+            - name: Запуск построения из интегрированной среды разработки
+              href: starting-a-build-from-within-the-ide.md
+            - name: Регистрация расширений платформы .NET Framework
+              href: registering-extensions-of-the-dotnet-framework.md
+        - name: Параллельное построение нескольких проектов с помощью MSBuild
+          href: building-multiple-projects-in-parallel-with-msbuild.md
+          items:
+            - name: Использование нескольких процессоров при построении проектов
+              href: using-multiple-processors-to-build-projects.md
+            - name: Эффективное использование памяти при построении больших проектов
+              href: using-memory-efficiently-when-you-build-large-projects.md
+        - name: 'MSBuild: обзор настройки для различных версий'
+          href: msbuild-multitargeting-overview.md
+          items:
+            - name: Набор инструментов MSBuild (ToolsVersion)
+              href: msbuild-toolset-toolsversion.md
+              items:
+                - name: Стандартные и настраиваемые конфигурации наборов инструментов
+                  href: standard-and-custom-toolset-configurations.md
+                - name: Переопределение параметров ToolsVersion
+                  href: overriding-toolsversion-settings.md
+            - name: 'MSBuild: целевая рабочая среда и целевая платформа'
+              href: msbuild-target-framework-and-target-platform.md
+            - name: Разрешение сборок во время разработки
+              href: resolving-assemblies-at-design-time.md
+            - name: Настройка целевых платформ и задач
+              href: configuring-targets-and-tasks.md
+              items:
+                - name: Настройка целевых платформ и задач
+                  href: how-to-configure-targets-and-tasks.md
+            - name: 'Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework'
+              href: troubleshooting-dotnet-framework-targeting-errors.md
+        - name: Настройка сборки
+          href: customize-your-build.md
+        - name: Рекомендации по MSBuild
+          href: msbuild-best-practices.md
+    - name: Ведение журнала в MSBuild
+      href: logging-in-msbuild.md
+      items:
+        - name: Получение журналов построения с помощью MSBuild
+          href: obtaining-build-logs-with-msbuild.md
+        - name: Средства ведения журнала построения
+          href: build-loggers.md
+        - name: Ведение журнала в многопроцессорной среде
+          href: logging-in-a-multi-processor-environment.md
+        - name: Написание средств ведения журнала с поддержкой многопроцессорности
+          href: writing-multi-processor-aware-loggers.md
+        - name: Создание средства ведения журнала переадресации
+          href: creating-forwarding-loggers.md
+    - name: Пошаговое руководство. Использование MSBuild
+      href: walkthrough-using-msbuild.md
+    - name: Пошаговое руководство. Создание файла проекта MSBuild с нуля
+      href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
+    - name: Справочные сведения о MSBuild
+      href: msbuild-reference.md
+      items:
+        - name: Справочные сведения о схеме файлов проектов MSBuild
+          href: msbuild-project-file-schema-reference.md
+          items:
+            - name: Элемент Choose (MSBuild)
+              href: choose-element-msbuild.md
+            - name: Элемент Import (MSBuild)
+              href: import-element-msbuild.md
+            - name: Элемент ImportGroup
+              href: importgroup-element.md
+            - name: Элемент Item (MSBuild)
+              href: item-element-msbuild.md
+            - name: Элемент ItemDefinitionGroup (MSBuild)
+              href: itemdefinitiongroup-element-msbuild.md
+            - name: Элемент ItemGroup (MSBuild)
+              href: itemgroup-element-msbuild.md
+            - name: Элемент ItemMetadata (MSBuild)
+              href: itemmetadata-element-msbuild.md
+            - name: Элемент OnError (MSBuild)
+              href: onerror-element-msbuild.md
+            - name: Элемент Otherwise (MSBuild)
+              href: otherwise-element-msbuild.md
+            - name: Элемент Output (MSBuild)
+              href: output-element-msbuild.md
+            - name: Элемент Parameter
+              href: parameter-element.md
+            - name: Элемент ParameterGroup
+              href: parametergroup-element.md
+            - name: Элемент Project (MSBuild)
+              href: project-element-msbuild.md
+            - name: Элемент ProjectExtensions (MSBuild)
+              href: projectextensions-element-msbuild.md
+            - name: Элемент Property (MSBuild)
+              href: property-element-msbuild.md
+            - name: Элемент PropertyGroup (MSBuild)
+              href: propertygroup-element-msbuild.md
+            - name: Элемент SDK (MSBuild)
+              href: sdk-element-msbuild.md
+            - name: Элемент Target (MSBuild)
+              href: target-element-msbuild.md
+            - name: Элемент Task (MSBuild)
+              href: task-element-msbuild.md
+            - name: Элемент TaskBody (MSBuild)
+              href: taskbody-element-msbuild.md
+            - name: Элемент UsingTask (MSBuild)
+              href: usingtask-element-msbuild.md
+            - name: Элемент When (MSBuild)
+              href: when-element-msbuild.md
+        - name: Справочные сведения о задачах MSBuild
+          href: msbuild-task-reference.md
+          items:
+            - name: 'Задачи MSBuild, относящиеся к Visual C++'
+              href: msbuild-tasks-specific-to-visual-cpp.md
+              items:
+                - name: Задача BscMake
+                  href: bscmake-task.md
+                - name: Задача CL
+                  href: cl-task.md
+                - name: Задача CPPClean
+                  href: cppclean-task.md
+                - name: Задача LIB
+                  href: lib-task.md
+                - name: Связывание задачи
+                  href: link-task.md
+                - name: Задача MIDL
+                  href: midl-task.md
+                - name: Задача MT
+                  href: mt-task.md
+                - name: Задача RC
+                  href: rc-task.md
+                - name: Задача SetEnv
+                  href: setenv-task.md
+                - name: Задача VCMessage
+                  href: vcmessage-task.md
+                - name: Задача XDCMake
+                  href: xdcmake-task.md
+                - name: Задача XSD
+                  href: xsd-task.md
+            - name: Базовый класс Task
+              href: task-base-class.md
+            - name: Базовый класс TaskExtension
+              href: taskextension-base-class.md
+            - name: Базовый класс ToolTaskExtension
+              href: tooltaskextension-base-class.md
+            - name: Задача AL (компоновщик сборок)
+              href: al-assembly-linker-task.md
+            - name: Задача AspNetCompiler
+              href: aspnetcompiler-task.md
+            - name: Задача AssignCulture
+              href: assignculture-task.md
+            - name: Задача AssignProjectConfiguration
+              href: assignprojectconfiguration-task.md
+            - name: Задача AssignTargetPath
+              href: assigntargetpath-task.md
+            - name: Задача CallTarget
+              href: calltarget-task.md
+            - name: Задача CombinePath
+              href: combinepath-task.md
+            - name: Задача ConvertToAbsolutePath
+              href: converttoabsolutepath-task.md
+            - name: Задача Copy
+              href: copy-task.md
+            - name: Задача CreateCSharpManifestResourceName
+              href: createcsharpmanifestresourcename-task.md
+            - name: Задача CreateItem
+              href: createitem-task.md
+            - name: Задача CreateProperty
+              href: createproperty-task.md
+            - name: Задача CreateVisualBasicManifestResourceName
+              href: createvisualbasicmanifestresourcename-task.md
+            - name: Задача Csc
+              href: csc-task.md
+            - name: Задача Delete
+              href: delete-task.md
+            - name: Задача Error
+              href: error-task.md
+            - name: Задача Exec
+              href: exec-task.md
+            - name: Задача FindAppConfigFile
+              href: findappconfigfile-task.md
+            - name: Задача FindInList
+              href: findinlist-task.md
+            - name: Задача FindUnderPath
+              href: findunderpath-task.md
+            - name: Задача FormatUrl
+              href: formaturl-task.md
+            - name: Задача FormatVersion
+              href: formatversion-task.md
+            - name: Задача GenerateApplicationManifest
+              href: generateapplicationmanifest-task.md
+            - name: Задача GenerateBootstrapper
+              href: generatebootstrapper-task.md
+            - name: Задача GenerateDeploymentManifest
+              href: generatedeploymentmanifest-task.md
+            - name: Задача GenerateResource
+              href: generateresource-task.md
+            - name: Задача GenerateTrustInfo
+              href: generatetrustinfo-task.md
+            - name: Задача GetAssemblyIdentity
+              href: getassemblyidentity-task.md
+            - name: Задача GetFrameworkPath
+              href: getframeworkpath-task.md
+            - name: Задача GetFrameworkSdkPath
+              href: getframeworksdkpath-task.md
+            - name: Задача GetReferenceAssemblyPaths
+              href: getreferenceassemblypaths-task.md
+            - name: Задача LC
+              href: lc-task.md
+            - name: Задача MakeDir
+              href: makedir-task.md
+            - name: Задача Message
+              href: message-task.md
+            - name: Задача Move
+              href: move-task.md
+            - name: Задача MSBuild
+              href: msbuild-task.md
+            - name: Задача ReadLinesFromFile
+              href: readlinesfromfile-task.md
+            - name: Задача RegisterAssembly
+              href: registerassembly-task.md
+            - name: Задача RemoveDir
+              href: removedir-task.md
+            - name: Задача RemoveDuplicates
+              href: removeduplicates-task.md
+            - name: Задача RequiresFramework35SP1Assembly
+              href: requiresframework35sp1assembly-task.md
+            - name: Задача ResolveAssemblyReference
+              href: resolveassemblyreference-task.md
+            - name: Задача ResolveComReference
+              href: resolvecomreference-task.md
+            - name: Задача ResolveKeySource
+              href: resolvekeysource-task.md
+            - name: Задача ResolveManifestFiles
+              href: resolvemanifestfiles-task.md
+            - name: Задача ResolveNativeReference
+              href: resolvenativereference-task.md
+            - name: Задача ResolveNonMSBuildProjectOutput
+              href: resolvenonmsbuildprojectoutput-task.md
+            - name: Задача SGen
+              href: sgen-task.md
+            - name: Задача SignFile
+              href: signfile-task.md
+            - name: Задача Touch
+              href: touch-task.md
+            - name: Задача UnregisterAssembly
+              href: unregisterassembly-task.md
+            - name: Задача UpdateManifest
+              href: updatemanifest-task.md
+            - name: Задача Vbc
+              href: vbc-task.md
+            - name: Задача Warning
+              href: warning-task.md
+            - name: Задача WriteCodeFragment
+              href: writecodefragment-task.md
+            - name: Задача WriteLinesToFile
+              href: writelinestofile-task.md
+            - name: Задача XmlPeek
+              href: xmlpeek-task.md
+            - name: Задача XmlPoke
+              href: xmlpoke-task.md
+            - name: Задача XslTransformation
+              href: xsltransformation-task.md
+        - name: Условия MSBuild
+          href: msbuild-conditions.md
+        - name: Условные конструкции MSBuild
+          href: msbuild-conditional-constructs.md
+        - name: Зарезервированные и стандартные свойства MSBuild
+          href: msbuild-reserved-and-well-known-properties.md
+        - name: Общие свойства проектов MSBuild
+          href: common-msbuild-project-properties.md
+        - name: Общие элементы проектов MSBuild
+          href: common-msbuild-project-items.md
+        - name: Справочник по командной строке MSBuild
+          href: msbuild-command-line-reference.md
+        - name: Файлы Targets в MSBuild
+          href: msbuild-dot-targets-files.md
+        - name: Общеизвестные метаданные элементов MSBuild
+          href: msbuild-well-known-item-metadata.md
+        - name: Файлы ответов MSBuild
+          href: msbuild-response-files.md
+        - name: Справочные сведения о WPF для MSBuild
+          href: wpf-msbuild-reference.md
+          items:
+            - name: TARGETS-файлы WPF
+              href: wpf-dot-targets-files.md
+            - name: Справочные сведения о задачах WPF для MSBuild
+              href: wpf-msbuild-task-reference.md
+              items:
+                - name: Задача FileClassifier
+                  href: fileclassifier-task.md
+                - name: Задача GenerateTemporaryTargetAssembly
+                  href: generatetemporarytargetassembly-task.md
+                - name: Задача GetWinFXPath
+                  href: getwinfxpath-task.md
+                - name: Задача MarkupCompilePass1
+                  href: markupcompilepass1-task.md
+                - name: Задача MarkupCompilePass2
+                  href: markupcompilepass2-task.md
+                - name: Задача MergeLocalizationDirectives
+                  href: mergelocalizationdirectives-task.md
+                - name: Задача ResourcesGenerator
+                  href: resourcesgenerator-task.md
+                - name: Задача UidManager
+                  href: uidmanager-task.md
+                - name: Задача UpdateManifestForBrowserApplication
+                  href: updatemanifestforbrowserapplication-task.md
+        - name: 'Знаки, требующие отключения их специального значения'
+          href: special-characters-to-escape.md
+    - name: Программное использование MSBuild
+      href: msbuild-api.md
+      items:
+        - name: "Обновление до MSBuild\_15"
+          href: updating-an-existing-application.md
+    - name: Глоссарий MSBuild
+      href: msbuild-glossary.md

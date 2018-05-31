@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07519bc95f696d395177056960ea5f42027739a6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d5b999136eb1d1d268e8fc0a71147a1996940ed
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447847"
 ---
 # <a name="zoom-control-utilization-view"></a>Элемент управления масштабированием (представление использования)
 Элемент управления "Масштаб" помогает увеличивать масштаб диаграммы загрузки ЦП, сосредотачиваясь на интересующих участках. Этот элемент управления фокусируется на центре представления. Поэтому перед увеличением необходимо расположить интересующую вас область в центре.  
@@ -26,4 +27,4 @@ ms.lasthandoff: 04/19/2018
  Можно перетащить указатель мыши на диаграмме загрузки ЦП или диаграмме активности GPU для создания выделенной области. Когда кнопка мыши будет отпущена, представление увеличится по выбранному диапазону.  
   
 ## <a name="see-also"></a>См. также  
- [Представление использования](../profiling/utilization-view.md)
+ [Представление "Использование"](../profiling/utilization-view.md)

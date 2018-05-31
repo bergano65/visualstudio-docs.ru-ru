@@ -10,11 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 608eebc113c9df7a8978299cc69907e28d81a16f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e25f75d0a1cd5e1b9989172a76d8cf8139957e2c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454679"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Основы создания приложений с помощью Xamarin.Forms в Visual Studio
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/16/2018
 
 Обычно для общего кода лучше использовать библиотеку .NET Standard, а не общий проект. Библиотека .NET Standard включает те функции .NET API, которые могут выполняться на всех целевых платформах.  
 
-Так выглядит приложение, которые мы будем создавать. Она выполняется (слева направо) на телефонах с iOS и Android и на универсальной платформе Windows (UWP) в ОС Windows 10:
+Так выглядит приложение, которые мы будем создавать. Она выполняется (слева направо) на телефонах с iOS и Android и на универсальной платформе Windows (UWP) в ОС Windows 10:
   
 [![Образец приложения прогнозов погоды для iOS, Android и UWP](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   

@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08fe7ac16eff2c7ebf398b0483034a324eb02d91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 36945273c58211865eccf464d810fb276598b665
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448003"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Практическое руководство. Управление переносом слов в редакторе
 
@@ -52,4 +53,4 @@ ms.lasthandoff: 04/26/2018
 
 - [Настройка редактора](../../ide/customizing-the-editor.md)
 - [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)
-- [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)

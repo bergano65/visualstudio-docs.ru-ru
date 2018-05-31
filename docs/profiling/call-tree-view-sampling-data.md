@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7c15cb1e363a00f3d330a0c5cc5c9927c7e2b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90035daf13008122e7d529408a6de0389b311628
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262373"
 ---
-# <a name="call-tree-view---sampling-data"></a>Представление "Дерево вызовов" — данные выборки
+# <a name="call-tree-view---sampling-data"></a>Представление "Дерево вызовов" — данные выборки
 В преставлении "Дерево вызовов" отображаются пути выполнения функции, пересеченные в профилируемом приложении.  
   
 > [!NOTE]
@@ -29,10 +30,10 @@ ms.lasthandoff: 04/19/2018
   
  Значения в представлении "Дерево вызовов" приведены для экземпляров функций, вызванных родительской функцией в дереве вызовов. Процентные значения вычисляются путем сравнения значения экземпляров функции с общим количеством образцов в сеансе профилирования.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Выделение критического пути выполнения  
+## <a name="highlight-the-execution-hot-path"></a>Выделение критического пути выполнения  
  Можно развернуть представление "Дерево вызовов" и выделить путь выполнения процесса или функции, который встречается в выборке наиболее часто. Чтобы отобразить самый активный путь, щелкните процесс или функцию правой кнопкой мыши и выберите команду **Развернуть критический путь**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Задание корневого узла дерева вызовов  
+## <a name="set-the-call-tree-root-node"></a>Задание корневого узла дерева вызовов  
  Каждый процесс в сеансе профилирования отображается как корневой узел. Чтобы задать начальный узел представления "Дерево вызовов", щелкните правой кнопкой мыши узел, который необходимо задать в качестве начального, и выберите команду **Задать корень**.  
   
  После задании корневого узла из представления удаляются все записи, кроме поддеревьев выбранного узла. Чтобы восстановить исходное состояние корневого узла, щелкните правой кнопкой мыши в окне представления "Дерево вызовов" и выберите **Сбросить корень**.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Call Tree View - Profiler Sampling Data](../profiling/call-tree-view-sampling-data.md)  (Представление "Дерево вызовов" — данные выборки профилировщика)  
- [Call Tree View - Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  (Представление "Дерево вызовов" — выборка)  
- [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  (Представление "Дерево вызовов" — инструментирование)  
+ [Представление в виде дерева вызовов — данные выборки профилировщика](../profiling/call-Tree-view-sampling-data.md)   
+ [Представление "Дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Представление "Дерево вызовов" — инструментирование](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Дерево вызовов"](../profiling/call-tree-view-instrumentation-data.md)

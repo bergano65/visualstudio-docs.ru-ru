@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf4edeb67d9c1c66ce6e6542b9684b29a8c358b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6005bfcd4c69220c26929a8ad57f0e37923f388c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265505"
 ---
-# <a name="callercallee-view---net-memory-instrumentation-data"></a>Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET
+# <a name="callercallee-view---net-memory-instrumentation-data"></a>Представление "Вызывающий/вызываемый"— данные инструментирования памяти .NET
 В представлении "Вызывающий/вызываемый" данных профилирования памяти .NET, собранных с помощью метода инструментирования, отображаются сведения о выделении памяти и использовании времени для выбранной функции, а также ее родительской и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  
   
  **Текущая функция** отображается в средней таблице, в которой указываются данные профилирования памяти выбранной функции. Значения включают все вызовы функции, попавшие в выборку.  
@@ -106,6 +107,6 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Caller/Callee View - .NET Memory Sampling Data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки памяти .NET)  
- [Caller/Callee View - Instrumentation Data](../profiling/caller-callee-view-instrumentation-data.md)  (Представление "Вызывающий/вызываемый" — данные инструментирования)  
- [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md) (Представление "Вызывающий/вызываемый" — данные выборки)
+ [Представление "Вызывающий/вызываемый" — данные выборки памяти .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные инструментирования](../profiling/caller-callee-view-instrumentation-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)

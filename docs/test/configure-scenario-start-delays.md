@@ -1,5 +1,5 @@
 ---
-title: Настройка задержки начала сценария для нагрузочного тестирования в Visual Studio
+title: Настройка задержки начала сценария в нагрузочных тестах
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448484"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Настройка задержки начала сценария в нагрузочных тестах
 
@@ -72,11 +73,11 @@ ms.lasthandoff: 04/26/2018
 
      Отображается **редактор тестовой нагрузки**. Отображается дерево нагрузочного теста.
 
-2. В папке **Сценарии** деревьев нагрузочных тестов выберите узел сценария, для которого требуется задать используемые агенты.
+2. В папке **Сценарии** деревьев нагрузочных тестов выберите узел сценария, для которого требуется изменить поведение прогрева.
 
 3. В меню **Вид** выберите пункт **Окно свойств**.
 
-     В окне "Свойства" отображаются категории и свойства сценария.
+     В окне **Свойства** отображаются категории и свойства сценария.
 
      Для свойства **Отключить во время прогрева** выберите значение **True** или **False**.
 
