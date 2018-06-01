@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693803"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Пошаговое руководство. Профилировщик XSLT
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  Можно также сортировать данные, щелкая имена столбцов.
 
-### <a name="select-calltree-view"></a>Выберите представление «Дерево вызовов»
+### <a name="select-call-tree-view"></a>Выберите представление дерева вызовов
 
 1.  Выберите **представление дерева вызовов** в **текущее представление** раскрывающегося списка. Данное представление является древовидным представлением выполнения программы.
 
@@ -110,4 +111,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Использование XSLT иерархии](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Пошаговое руководство: Использование XSLT иерархии](../xml-tools/walkthrough-using-xslt-hierarchy.md)

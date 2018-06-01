@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о шаблонах проектов Office | Документы Microsoft
+title: Общие сведения о шаблонах проектов Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,11 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692617"
 ---
 # <a name="office-project-templates-overview"></a>Общие сведения о шаблонах проектов Office
   Средства разработки для Microsoft Office в Visual Studio включают в себя шаблоны проектов, предназначенные для создания указанных ниже типов решений Office.  
@@ -50,12 +51,12 @@ ms.lasthandoff: 04/16/2018
   
  Шаблоны проектов Office доступны в диалоговом окне **Создать проект** в узле **Office** узлов языков программирования **Visual C#** и **Visual Basic** . Каждый шаблон создает для целевого приложения проект с соответствующей конфигурацией, включая ссылки на сборку и параметры отладки.  
   
- В каждом проекте имеются файлы и код, необходимые, чтобы приступить к работе над конкретным типом решения. Созданный код для каждого проекта содержит обработчики событий запуска и завершения работы. В эти обработчики событий можно добавить код для инициализации решения при его загрузке и для очистки решения при его выгрузке. Дополнительные сведения см. в разделах [Office Projects in the Visual Studio Environment](../vsto/office-projects-in-the-visual-studio-environment.md) и [Events in Office Projects](../vsto/events-in-office-projects.md).  
+ В каждом проекте имеются файлы и код, необходимые, чтобы приступить к работе над конкретным типом решения. Созданный код для каждого проекта содержит обработчики событий запуска и завершения работы. В эти обработчики событий можно добавить код для инициализации решения при его загрузке и для очистки решения при его выгрузке. Дополнительные сведения см. в разделе [проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) и [события в проектах Office](../vsto/events-in-office-projects.md).  
   
 > [!NOTE]  
->  Средства разработки для Office входят в некоторые выпуски Visual Studio. Для получения дополнительной информации см. [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+>  Средства разработки для Office входят в некоторые выпуски Visual Studio. Дополнительные сведения см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-##  <a name="DocLevel"></a> Document-Level Customizations  
+##  <a name="DocLevel"></a> Настройки уровня документа  
  В узле **Office** диалогового окна **Создать проект** имеются указанные ниже шаблоны проектов, позволяющие приступить к работе над созданием настроек на уровне документа для приложений Word и Excel.  
   
 -   **Документ VSTO для Word 2013 и 2016**  
@@ -79,19 +80,19 @@ ms.lasthandoff: 04/16/2018
  Поведение шаблонов проектов "Шаблон Word" и "Шаблон Excel" идентично поведению шаблонов проектов "Документ Word" и "Книга Excel". Однако шаблоны проектов "Шаблон Word" и "Шаблон Excel" облегчают пользователям задачу создания в решении новых локальных копий документа или книги на основе настроенного шаблона. Функциональные возможности решения доступны в новых документах, создаваемых пользователем на основе этого шаблона.  
   
 > [!NOTE]  
->  Шаблоны Word, ссылающиеся на расширения управляемого кода, нельзя использовать в качестве глобальных надстроек VSTO. Если шаблон загружается из каталога Startup приложения Word, сборка не вызывается. Дополнительные сведения см. в разделе [Ограничения глобальных шаблонов и надстроек Excel (файлы .xla)](#Limitations).  
+>  Шаблоны Word, ссылающиеся на расширения управляемого кода, нельзя использовать в качестве глобальных надстроек VSTO. Если шаблон загружается из каталога Startup приложения Word, сборка не вызывается. Дополнительные сведения см. в разделе [ограничения глобальных шаблонов и надстроек Excel (XLA-файлов)](#Limitations)  
   
  Сведения о том, как приступить к работе над проектами этих типов, см. в указанных ниже разделах.  
   
--   [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
+-   [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)  
   
 -   [Решения Word](../vsto/word-solutions.md)  
   
 -   [Решения Excel](../vsto/excel-solutions.md)  
   
--   [Пошаговое руководство. Создание первой настройки на уровне документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+-   [Пошаговое руководство: Создание первой настройки уровня документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [Пошаговое руководство. Создание первой настройки на уровне документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a> Надстройки VSTO  
  В узле **Office/SharePoint** в диалоговом окне **Создание проекта** имеются указанные ниже шаблоны проектов, позволяющие приступить к работе по созданию надстроек VSTO.  
@@ -128,21 +129,21 @@ ms.lasthandoff: 04/16/2018
   
  Дополнительные сведения о том, как приступить к работе над проектами этих типов, см. в указанных ниже разделах.  
   
--   [Приступая к работе: программирование настроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  
+-   [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)  
   
--   [Пошаговое руководство. Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [Пошаговое руководство: Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Пошаговое руководство. Создание первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [Пошаговое руководство: Создание вашей первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [Пошаговое руководство: Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Пошаговое руководство. Создание первой надстройки VSTO для Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [Пошаговое руководство: Создание вашей первой надстройки VSTO для проекта](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Пошаговое руководство. Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [Пошаговое руководство: Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
-## <a name="document-vs-template-solutions"></a>Решения для документов и шаблонов  
+## <a name="document-vs-template-solutions"></a>Сравнение шаблонов документов  
  При разработке решения для документа Word или книги Excel следует выбрать оптимальный способ обеспечения доступа к документу для пользователей.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/16/2018
 |Пользователи могут открывать и редактировать документ, если только для него не установлен атрибут "только для чтения". Любые сохраненные изменения сохраняются в исходном документе.|Пользователи могут открывать шаблон, чтобы создать локальную копию в виде нового документа. Они не могут редактировать исходный документ, если у них нет специальных разрешений.|  
 |При открытии документа возникает событие <xref:Microsoft.Office.Tools.Word.Document.Open> .|При открытии шаблона возникает событие <xref:Microsoft.Office.Tools.Word.Document.New> .|  
   
-##  <a name="Limitations"></a> Ограничения глобальных шаблонов и надстроек Excel (файлы .xla)  
+##  <a name="Limitations"></a> Ограничения глобальных шаблонов и надстроек Excel (XLA-файлов)  
  Документы, книги и шаблоны могут работать неправильно в качестве глобальных шаблонов или надстроек VSTO для Excel (XLA-файлов).  
   
 ## <a name="word-templates"></a>Шаблоны Word  
@@ -170,10 +171,10 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
- [Разработка решений Office](../vsto/developing-office-solutions.md)   
+ [Разработки решений Office](../vsto/developing-office-solutions.md)   
  [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Приступая к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
- [Приступая к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [Приступая к работе: программирование настроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Приступить к программированию настроек на уровне документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
+ [Приступить к программированию настроек на уровне документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
+ [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

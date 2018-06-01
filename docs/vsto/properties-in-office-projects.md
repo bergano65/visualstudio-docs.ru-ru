@@ -1,5 +1,5 @@
 ---
-title: Свойства в проектах Office | Документы Microsoft
+title: Свойства в проектах Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,19 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47af1dae914528a3a338503989e53f081dfffde5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b5c5e0719f7b619fa00a3a0f4333ae0080c0715
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692776"
 ---
 # <a name="properties-in-office-projects"></a>Свойства в проектах Office
   Существует несколько важных свойств, доступных для проектов Office в Visual Studio. Эти свойства доступны в окне **Свойства** .  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="namespace-for-host-item"></a>Пространство имен для элемента узла  
- Используйте свойство **Пространство имен для элемента узла** , чтобы изменить пространство имен для классов ведущих элементов (например, `ThisAddIn`, `ThisWorkbook`или `ThisDocument` ) в проектах Visual C#. Это свойство появляется в окне **Свойства** в случае выбора узла документа в проекте на уровне документа (например, ExcelWorkbook1.xlsx или WordDocument1.docx) или узла приложения в проекте надстройки VSTO (например, Excel или Word) в **обозревателе решений**.  
+## <a name="namespace-for-host-item"></a>Пространство имен для ведущего элемента  
+ Используйте свойство **Пространство имен для элемента узла** , чтобы изменить пространство имен для классов ведущих элементов (например, `ThisAddIn`, `ThisWorkbook`или `ThisDocument` ) в проектах Visual C#. Это свойство появляется в **свойства** окно при выборе узла документа в проекте уровня документа (например, *ExcelWorkbook1.xlsx* или *WordDocument1.docx* ) или узла приложения в надстройке VSTO проекта (например, Excel или Word) в **обозревателе решений**.  
   
  При создании проекта Visual C# для Office ведущим элементам присваивается пространство имен на основании имени проекта. Для изменения пространства имен рекомендуется использовать свойство **Пространство имен для элемента узла** , а не изменять непосредственно файлы кода. Если вы используете это свойство, пространство имен изменяется в созданных (скрытых) файлах кода, а также в видимых файлах кода.  
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Выберите **false** , если набор данных не должен кэшироваться в документе.  
   
- Дополнительные сведения о кэшировании данных см. в разделе [Cached Data in Document-Level Customizations](../vsto/cached-data-in-document-level-customizations.md).  
+ Дополнительные сведения о кэшировании данных см. в разделе [кэшированных данных в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md).  
   
 ## <a name="value2"></a>Value2  
  Свойство **Value2** доступно только для книги или проектов шаблонов Excel. Оно появляется в узле свойства **Привязки** в окне **Свойства** , когда вы выбираете элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в конструкторе листа.  

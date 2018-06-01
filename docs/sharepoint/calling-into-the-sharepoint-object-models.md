@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3795b7c920415ee733e08132234de381cf610aba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 795fd4a146aaedbfb4035cfc028bd37e0b0282fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691717"
 ---
-# <a name="calling-into-the-sharepoint-object-models"></a>Вызов объектных моделей SharePoint
+# <a name="calling-into-the-sharepoint-object-models"></a>Обращение к объектной модели SharePoint
   При создании расширений для средств SharePoint в Visual Studio, может потребоваться вызов API SharePoint для выполнения определенных задач. Например при создании пользовательского шага развертывания для проектов SharePoint, может потребоваться вызвать API-интерфейсы SharePoint для выполнения некоторых задач для развертывания решений.  
   
  [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] предоставляют две разные объектные модели, которые можно использовать в расширениях инструментов SharePoint: Серверная объектная модель и клиентской объектной модели. Каждая объектная модель имеет преимущества и недостатки в контексте расширений инструментов SharePoint.  
   
  Общие сведения об объектной модели SharePoint см. в разделе [Общие сведения о программировании модели из расширения инструментов SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
-## <a name="using-the-client-object-model-in-extension-projects"></a>С помощью клиентской объектной модели в проектах расширений  
+## <a name="using-the-client-object-model-in-extension-projects"></a>С помощью клиентской объектной модели в проектах расширений
  При разработке расширения для средств SharePoint клиентской объектной модели можно использовать в проекте, как и любым другим набором управляемых интерфейсов API. В проект можно добавлять ссылки на сборки в клиентской объектной модели и может вызывать API в клиентской объектной модели непосредственно из программного кода.  
   
  Однако клиентская объектная модель имеет два недостатка в контексте расширений инструментов SharePoint.  
@@ -42,9 +43,9 @@ ms.lasthandoff: 04/16/2018
   
  Пошаговое руководство демонстрирует использование клиентской объектной модели в расширении инструментов SharePoint в Visual Studio см. в разделе [Пошаговое руководство: вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
-## <a name="using-the-server-object-model-in-extension-projects"></a>Использование серверной объектной модели в проектах расширений  
+## <a name="using-the-server-object-model-in-extension-projects"></a>Использование серверной объектной модели в проектах расширений
  Серверная объектная модель является надмножеством клиентской объектной модели. При использовании серверной объектной модели можно использовать все возможности, [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] программным образом.  
-  
+
  Расширения инструментов SharePoint можно использовать API в серверной объектной модели, но они не могут вызывать интерфейсы API напрямую. Серверная объектная модель может вызываться только из 64-разрядном процессе, ориентированном на .NET Framework 3.5. Однако для расширения инструментов SharePoint требуется [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и выполняются в 32-разрядном процессе Visual Studio. Это предотвращает ссылок на сборки серверной объектной модели SharePoint непосредственно расширения инструментов SharePoint.  
   
  Если вы хотите использовать в расширении инструментов SharePoint в серверную объектную модель, необходимо создать пользовательский *команда SharePoint* для вызова API. Команда SharePoint определяется в дополнительной сборке, которая может напрямую вызывать серверную объектную модель. В проекте расширения вызывается команда SharePoint косвенно с помощью метода ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта.  
@@ -53,12 +54,11 @@ ms.lasthandoff: 04/16/2018
   
  Примеры, демонстрирующие способы создания и использования команд SharePoint, см. [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) и [Пошаговое руководство: расширение обозревателя серверов в Интернете отображения Части](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-### <a name="understanding-how-sharepoint-commands-are-executed"></a>Основные сведения о том, как выполнения команд SharePoint  
+### <a name="understand-how-sharepoint-commands-are-executed"></a>Понять, как выполняются команды SharePoint
  В 64-разрядный процесс так называемого vssphost4.exe загружаются сборки, которые определяют команд SharePoint. После вызова команды SharePoint из расширения инструментов SharePoint, команда выполняется с vssphost4.exe вместо 32-разрядном процессе Visual Studio (devenv.exe). Можно управлять некоторыми аспектами выполнения команды SharePoint, задавая значения в реестре. Дополнительные сведения см. в разделе [отладка расширений для средств SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Как: создание команды SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Как: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Обзор модели программирования для расширений средств SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  
   

@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693644"
 ---
-# <a name="xml-schemas-dialog-box"></a>Диалоговое окно «XML-схемы»
+# <a name="xml-schemas-dialog-box"></a>Диалоговое окно «XML-схем»
 
 **XML-схем** диалоговое окно используется для выбора какие схем XML схема определения языка XSD для связывания с XML-документа. Можно выбрать схему из кэша схем или указать схему, которая не находится в кэше. Выбранные схемы считаются частью набора схем. Наборы схем применяются в технологии IntelliSense, а также служат для проверки правильности XML-документов.
 
@@ -52,5 +53,5 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>См. также
 
 - [Компоненты редактора XML](../xml-tools/xml-editor-components.md)
-- [Как выбрать XML-схему для использования](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Как: выберите XML-схем для использования](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Кэш схем](../xml-tools/schema-cache.md)

@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693449"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Пошаговое руководство. Использование XSLT иерархии
+# <a name="walkthrough-use-xslt-hierarchy"></a>Пошаговое руководство: Использование XSLT иерархии
 
 Средство XSLT иерархии yпрощает многие задачи разработки XML. Таблица стилей XSLT часто использует инструкции `includes` и `imports`. Компиляция начинается с основной таблицы стилей. Ошибка, возникшая в ходе компиляции таблицы стилей XSLT, может иметь причиной другой источник, отличный от основной таблицы стилей. Для устранения ошибки или изменения таблицы стилей может потребоваться доступ к включенным или импортированным таблицам стилей. Пошаговое выполнение таблицы стилей в отладчике может открывать включенные и импортированные таблицы стилей и в какой-то момент может потребовать добавления точки останова в одной или более включенной таблице стилей.
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/26/2018
     </COLLECTION>
     ```
 
-1. Добавьте следующий метод `xslincludefile.xsl`:
+1. Добавьте следующие *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/26/2018
     </xsl:stylesheet>
     ```
 
-3.  Добавьте следующий файл `xslinclude.xsl`:
+3.  Добавьте следующие *xslinclude.xsl* файла:
 
     ```xml
     <?xml version='1.0'?>
@@ -112,4 +113,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Пошаговое руководство: Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)

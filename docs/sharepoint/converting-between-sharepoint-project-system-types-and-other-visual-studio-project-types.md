@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cf039f3d5330b2f4869ae323ac358a1220c2fbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d91b7d3927b9723c943676cf3ce15c4bc808b906
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692123"
 ---
 # <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio
   В некоторых случаях может потребоваться объект в системе проекта SharePoint, и вы хотите использовать возможности соответствующего объекта в объектной модели автоматизации Visual Studio или объектной модели интеграции и наоборот. В этих случаях можно использовать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> метода службы проектов SharePoint для преобразования объекта в другой объектной модели.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
   
  Дополнительные сведения об объектной модели автоматизации Visual Studio и объектная модель интеграции Visual Studio см. в разделе [Общие сведения о программировании модели из расширения инструментов SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
-## <a name="types-of-conversions"></a>Типы преобразований  
+## <a name="types-of-conversions"></a>Типы преобразований
  Ниже перечислены типы, которые можно преобразовать этот метод между системы проектов SharePoint и другие модели объектов Visual Studio.  
   
 |Тип системы проектов SharePoint|Соответствующие типы в объектных моделях автоматизации и интеграции|  
@@ -48,9 +49,8 @@ ms.lasthandoff: 04/16/2018
   
 -   Код, который регистрирует `projectService_ProjectAdded` метод для обработки <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> событие <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта. Пример см. в разделе [как: создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Как: извлечение службы проектов SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Обзор модели программирования для расширений средств SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  
   

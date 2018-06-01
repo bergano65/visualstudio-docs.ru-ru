@@ -1,5 +1,5 @@
 ---
-title: Мастер публикации (Разработка Office в Visual Studio) | Документы Microsoft
+title: Мастер публикации (Разработка Office в Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692724"
 ---
-# <a name="publish-wizard-office-development-in-visual-studio"></a>Мастер публикации (разработка для Office в Visual Studio)
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Мастер публикации (Разработка Office в Visual Studio)
   Используйте **мастер публикации** для копирования файлов решения в указанном расположении, создать файлы манифеста и программу установки.  
   
  Чтобы открыть этот мастер на **построения** меню, выберите **публикации** *имя_решения*. Кроме того, доступны **мастер публикации** из **обозревателе решений**. Откройте контекстное меню узла проекта и выберите **публикации**.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/16/2018
   
  Введите расположение как путь к диску, общую папку, FTP-узла или URL-адрес веб-сайта или нажмите **Обзор** кнопку, чтобы перейти к расположению. Путь может быть в следующих форматах:  
   
--   Относительный или абсолютный путь в стандартном формате Windows, например C:\Deploy\MyApplication или \MyApplication.  
+-   Относительный или абсолютный путь в стандарт Windows форматирования, такие как *C:\Deploy\MyApplication* или *\MyApplication*.  
   
--   Путь соглашения об универсальных именах (UNC), такие как \\\ServerName\MyApplication\\.  
+-   Путь соглашения об универсальных именах (UNC), такие как  *\\\ServerName\MyApplication\\*.  
   
 -   URL-адрес веб-сайта, такие как http://www.microsoft.com/MyApplication.  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Страница публикации, конструктор проектов &#40;разработка решений Office в Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Страница публикации в конструкторе проектов &#40;разработка решений Office в Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
   
   

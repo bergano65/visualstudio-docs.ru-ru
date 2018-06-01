@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690670"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Как: настроить отладку и выпуск конфигураций, в Visual Studio
 Проекты Visual Studio имеют отдельные конфигурации выпуска и отладки для вашей программы. Как следует из самих названий, производится построение отладочной версии для отладки и версии выпуска для окончательного выпуска программы.  
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/18/2018
   
      Эта панель инструментов недоступна в выпусках Express. Можно использовать **собрать решение F6** и **начать отладку F5** пункты меню для выбора конфигурации.
 
-## <a name="BKMK_symbols_release"></a>Создание файлов символов (.pbd) для построения
+## <a name="BKMK_symbols_release"></a>Создание файлов символов (.pdb) для построения
 
 Для большинства типов проектов PDB-файлы создаются по умолчанию для обоих отладочные и выпускные построения, но настройки по умолчанию различаются в зависимости от вашего проекта определенного типа и версии Visual Studio. Можно настроить ли компилятор создает PDB-файлы и какого рода сведения об отладке для включения.
 
