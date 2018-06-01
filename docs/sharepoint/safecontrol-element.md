@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8cf6d3d168e3d12d74a9773ccfb3312a29046f7
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5e507d83a1f1f75e346ccbab1858d797dc7b7518
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691847"
 ---
 # <a name="safecontrol-element"></a>Элемент SafeControl
   Представляет элемент управления ASPX или веб-части, которые обозначены как безопасные для любому пользователю получить доступ к любой странице ASPX на сайте SharePoint.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/22/2018
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |**Assembly**|Необязательный **xs: String** атрибута.<br /><br /> Имя сборки, в которой определен элемент управления ASPX или веб-части. По умолчанию этот атрибут используется **$SharePoint.Project.AssemblyFullName$** заменяемый параметр для имени сборки. Дополнительные сведения см. в разделе [подстановочные параметры](../sharepoint/replaceable-parameters.md).|  
 |**IsSafe**|Необязательный **xs: Boolean** атрибута.<br /><br /> Указывает, является ли элемент управления ASPX или веб-часть безопасная настройка для недоверенных пользователей для доступа к.|  
@@ -54,7 +55,7 @@ ms.lasthandoff: 05/22/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX и веб-частей, отмеченных как безопасные для любому пользователю получить доступ к любой странице ASPX на сайте SharePoint.|  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**Пространство имен**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
 |**Может быть пустым.**|Нет|  

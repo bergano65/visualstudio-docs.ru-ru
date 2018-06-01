@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691608"
 ---
 # <a name="create-sharepoint-solutions"></a>Создание решений SharePoint
   Приложения SharePoint можно создавать не только в SharePoint Designer, но и в Visual Studio. Visual Studio обеспечивает быструю разработку решений SharePoint с помощью таких компонентов, как средства расширенной отладки, IntelliSense, завершение операторов и шаблоны проектов. В Visual Studio также используются преимущества дополнительных средств и языков платформы .NET Framework. Проекты SharePoint можно разрабатывать с помощью Visual Basic или Visual C#, а приложения для проектов SharePoint можно разрабатывать с помощью JavaScript.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![Центр разработчиков MSDN](../sharepoint/media/vs-icon-msdndevcenter.gif "Центр разработчиков MSDN")|**Центры разработчиков MSDN**<br /><br /> -   [Центр разработки Visual Studio](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [Центр по разработке для SharePoint](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [Центр по разработке для SharePoint Server](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [Центр по разработке для SharePoint Designer](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [Центр по разработке для ASP.NET](http://msdn.microsoft.com/aa336522.aspx)|  
 |![Обратная связь](../sharepoint/media/vs-icon-feedback.gif "обратная связь")|**Обратная связь**<br /><br /> Предоставьте отзыв о Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Предоставьте отзыв о документации по Visual Studio:<br /><br /> -   **Упрощенный вид.** В начале каждого раздела можно щелкнуть ссылку **Оценить этот раздел** , чтобы перейти к концу раздела, где можно выбрать **Да** или **Нет** в ответ на вопрос **Была ли эта страница полезной?** Затем можно установить один или несколько флажков, отображаемые при выборе варианта **Нет**, ввести дополнительные сведения в текстовом поле или и то и другое. По завершении нажмите кнопку **Отправить** .<br />-   **Вид без сценариев.** В верхней части раздела выберите ссылку **Отзыв** для предоставления отзывов в MSDN, TechNet и на форум отзывов и предложений библиотеки Expression Library.<br />-   **Классический вид.** В верхней части раздела выберите ссылку **«Щелкните, чтобы оценить» и «Отправить отзыв»** для предоставления отзывов о разделе в группу по разработке документации.|  
   
-  
+ 

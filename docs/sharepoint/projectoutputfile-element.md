@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7aa00180cf5eb54bad9ceb28468f93b1d1f3d59
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f77cb92e62d5a5aec4d5e43fe295a3bab279c579
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692162"
 ---
 # <a name="projectoutputfile-element"></a>Элемент ProjectOutputFile
   Представляет выходные данные отдельного проекта для включения с элементом проекта при его развертывании в SharePoint.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/22/2018
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |**идентификатора проекта**|Требуется **xs: String** атрибута.<br /><br /> Идентификатор GUID зависимого проекта, который содержит выходные данные, которые требуется включить. Это соответствует **ProjectGuid** в файле зависимого проекта.|  
 |**ProjectPath**|Требуется **xs: String** атрибута.<br /><br /> Относительный путь, включая имя файла проекта зависимого проекта, который содержит выходные данные, которые требуется включить. Данный путь задается относительно корневой папке проекта SharePoint, который содержит элемент проекта SharePoint.|  
@@ -53,7 +54,7 @@ ms.lasthandoff: 05/22/2018
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[Файлы](../sharepoint/files-element.md)|Указывает файлы, включаемые в элемент проекта SharePoint при его развертывании в SharePoint.|  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**Пространство имен**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
 |**Может быть пустым.**|Нет|  

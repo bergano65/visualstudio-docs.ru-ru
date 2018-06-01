@@ -28,26 +28,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691536"
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
   С помощью веб-частей, можно изменить содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. Веб-части, серверные элементы управления, которые выполняются в страницу веб-частей: они являются составными частями страниц, которые отображаются на сайте SharePoint. В разделе [стандартный блок: веб-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Можно создать и отлаживать веб-частей на сайте SharePoint с помощью шаблонов из Visual Studio.  
   
-## <a name="creating-a-web-part-in-visual-studio"></a>Создание веб-части в Visual Studio  
+## <a name="create-a-web-part-in-visual-studio"></a>Создание веб-части в Visual Studio
  Создание веб-части путем добавления **веб-часть** элемента в любой проект SharePoint. Можно использовать **веб-часть** элемента в изолированное решение или решение фермы.  
   
  Если необходимо визуально разработать веб-часть с помощью конструктора, создайте **визуальной веб-части** или добавьте **Визуальная веб-часть** элемента в любой проект SharePoint. Можно использовать **Визуальная веб-часть** элемента только решения фермы.  
   
-### <a name="web-part-item"></a>Элемент веб-части  
+### <a name="web-part-item"></a>Элемент веб-части
  Объект **веб-часть** элемента содержит файлы, которые можно использовать для разработки веб-части для сайта SharePoint. При добавлении **веб-часть** элемента, Visual Studio создает папку в проекте и добавляет в нее несколько файлов. В следующей таблице описаны каждого файла.  
   
-|Файл|Описание|  
+|Файл|Описание:|  
 |----------|-----------------|  
 |Файл Elements.XML|Содержит сведения, используемые файлом определения компонента в проекте для развертывания веб-части.|  
 |файл .webpart|Предоставляет сведения, необходимые для отображения веб-части в веб-частей SharePoint.|  
@@ -55,13 +56,13 @@ ms.lasthandoff: 04/16/2018
   
  Дополнительные сведения см. в разделе [как: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
-### <a name="visual-web-part-item"></a>Элемент Visual веб-части  
+### <a name="visual-web-part-item"></a>Элемент Visual веб-части
  Визуальная веб-часть имеет веб-части, создаваемом с помощью конструктора Visual Web Developer в Visual Studio. Визуальная веб-часть работает так же, как веб-часть. Чтобы добавить элементы управления, такие как кнопки и текстовые поля, веб-часть, добавьте код в XML-файл. Тем не менее, добавлении элементов управления в визуальной веб-части, перетащив или скопировав их на веб-части из Visual Studio **элементов**. Затем конструктор создает требуемый код в XML-файле. В разделе [как: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
-## <a name="sharepoint-controls"></a>Элементы управления SharePoint  
+## <a name="sharepoint-controls"></a>Элементы управления SharePoint
  Visual Studio предоставляет некоторые элементы управления для создания страницы SharePoint, например страниц приложений. Эти элементы управления отображаются в **элементов** под **элементы управления SharePoint**. Функциональные возможности этих элементов управления является производным от [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) имен, содержащее ASP.NET серверных элементов управления, используемые на страницах сайты и списки SharePoint.  
   
-|Имя элемента|Описание|  
+|Имя элемента|Описание:|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Вставляет ASP меню. Дополнительные сведения см. в разделе [Обзор элемента управления меню](http://go.microsoft.com/fwlink/?LinkId=235316).|  
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет **ССЫЛКУ** на странице ASPX элемента и применяет один или несколько внешних таблицах стилей определяется **CssRegistration**.|  
@@ -73,14 +74,14 @@ ms.lasthandoff: 04/16/2018
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Предоставляет свойства и методы для регистрации ресурсы, такие как сценарии, на странице, чтобы они могут быть запрошены при отображении страницы.|  
 |[Тема](http://go.microsoft.com/fwlink/?LinkId=235314)|Применяет тему ASPX-страницу.|  
   
-## <a name="debugging-a-web-part"></a>Отладка веб-части  
+## <a name="debug-a-web-part"></a>Отладка веб-части
  Можно отлаживать проект SharePoint, который содержит веб-части, так же, как отладка других проектов Visual Studio. При запуске отладчика Visual Studio, Visual Studio откроется сайт SharePoint.  
   
  Чтобы начать отладку кода, добавьте веб-части на страницу веб-частей в SharePoint.  
   
  Дополнительные сведения об отладке проектов SharePoint см. в разделе [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## <a name="visual-web-part-limitations"></a>Ограничения визуальной веб-части  
+## <a name="visual-web-part-limitations"></a>Ограничения части Visual web
  Начиная с Visual Studio, можно добавить визуальных веб-частей для изолированного решения SharePoint и решениями фермы. Тем не менее визуальные веб-части имеют следующие ограничения:  
   
 -   Визуальные веб-части не поддерживают подстановочные параметры. Дополнительные сведения см. в разделе [подстановочные параметры](../sharepoint/replaceable-parameters.md).  
@@ -103,16 +104,16 @@ ms.lasthandoff: 04/16/2018
   
  Дополнительные сведения об изолированных решениях см. в разделе [различия между изолированными решениями и решениями фермы](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
-## <a name="creating-older-style-sharepoint-based-web-parts"></a>Создание более старых стилей SharePoint веб-частей  
+## <a name="create-older-style-sharepoint-based-web-parts"></a>Создавать старого стиля SharePoint веб-части
  Шаблоны в Visual Studio можно использовать для создания пользовательских [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] веб-частей для SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] веб-частей построены на основе [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] инфраструктура веб-части и представляют собой рекомендуемые типы для новых проектов.  
   
  В очень редких случаях может потребоваться создать веб-части с помощью старого стиля SharePoint веб-части. Visual Studio можно использовать для создания этих типов веб-частей, но Visual Studio не предоставляет шаблоны, специально предназначенных для их создания.  
   
  Дополнительные сведения о когда может потребоваться создать старого стиля SharePoint веб-частей см. в разделе [уместно в Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290). Дополнительные сведения о создании веб-части с помощью старого стиля SharePoint веб-частей см. в разделе [Пошаговое руководство, Создание базовых веб-части SharePoint](http://go.microsoft.com/fwlink/?LinkId=169288).  
   
-## <a name="related-topics"></a>См. также  
+## <a name="related-topics"></a>См. также
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Показано, как создать веб-частей для SharePoint страницы.|  
 |[Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Показано, как создать веб-частей для SharePoint с помощью визуального конструктора.|  
@@ -120,5 +121,4 @@ ms.lasthandoff: 04/16/2018
 |[Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Инструкции по разработке веб-части для SharePoint.|  
 |[Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Инструкции по разработке веб-части для SharePoint путем перетаскивания элементов управления в рабочую область конструирования visual.|  
 |[Пошаговое руководство. Создание веб-части Silverlight, которая отображает данные OData для SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Инструкции по разработке веб-части для SharePoint, где размещается приложение Silverlight и отображает данные из списков SharePoint.|  
-  
   

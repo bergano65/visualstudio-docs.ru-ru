@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693725"
 ---
 # <a name="working-with-xml-data"></a>Работа с XML-данных
 
@@ -35,7 +36,7 @@ Visual Studio включает инструменты и возможности,
 
 - поддержка редактирования таблиц стилей XSLT, включая поддержку технологии IntelliSense.
 
-- Обозреватель XML-схем.
+- **Обозреватель XML-схем**.
 
 ## <a name="xml-schema-designer"></a>Конструктор схемы XML
 
@@ -53,7 +54,7 @@ Visual Studio поддерживает отладку таблиц стилей 
 
 [Создание и Настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) предоставляет пояснения по средствам разработки для создания наборов данных.
 
-[Веб-службы в управляемом коде](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) рассматриваются способы создания и развертывания веб-служб XML и как получить доступ к веб-служб XML.
+[Веб-служб XML в управляемом коде](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) рассматриваются способы создания и развертывания веб-служб XML и как получить доступ к веб-служб XML.
 
 ## <a name="see-also"></a>См. также
 

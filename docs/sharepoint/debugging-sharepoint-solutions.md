@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: dfa72bab32aa6af2188f8f6c04411b768b441e92
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692217"
 ---
 # <a name="debugging-sharepoint-solutions"></a>Отладка решений SharePoint
   Можно отлаживать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. При запуске отладки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, а затем открывает экземпляр сайта SharePoint в веб-браузере. Ниже описаны способы отладки приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/23/2018
   
  Результирующий файл web.config следующим образом:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <configuration>  
         ...  

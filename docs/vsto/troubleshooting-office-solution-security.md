@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7edb1826816ea4f20d66b91a7f9819ef394ce98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693322"
 ---
 # <a name="troubleshooting-office-solution-security"></a>Устранение неполадок, связанных с безопасностью решений Office
   В этом разделе содержатся советы по решению типичных проблем, которые могут возникнуть при работе с обеспечение безопасности решений Office.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Надежные решения не может устанавливаться из сайтов с ограниченным доступом  
- Пользователи не могут устанавливать решение из Интернета, если в списке веб-сайт в зону ограниченных узлов браузера Internet Explorer. Это верно, даже если решение подписано с помощью доверенного сертификата.  
+ Пользователи не могут устанавливать решение из Интернета, если веб-узел в зону ограниченных узлов браузера Internet Explorer. Это верно, даже если решение подписано с помощью доверенного сертификата.  
   
  URL-адрес манифеста развертывания можно разделить один из пяти зон:  
   

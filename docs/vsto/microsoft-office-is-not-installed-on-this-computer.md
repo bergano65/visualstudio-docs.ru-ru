@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office не установлен на этом компьютере | Документы Microsoft
+title: Microsoft Office не установлен на этом компьютере
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,21 +15,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45a15b1680fbc12c9493833e01a6d8e90085faad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e781612e051b281b340c3744d2fbb1e6a1e834d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692435"
 ---
-# <a name="microsoft-office-is-not-installed-on-this-computer"></a>Microsoft Office не установлен на этом компьютере
-  Visual Studio не удалось обнаружить приложение Microsoft Office, которое соответствует данному типу проекта. Если вы разрабатываете проект надстройки VSTO, это означает, что вы не можете отлаживать и запускать проект. Если вы пытаетесь создать проект на уровне документа, это означает, что вы не можете создать проект.  
+# <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office не установлен на компьютере
+  Visual Studio не удалось обнаружить приложение Microsoft Office, которое соответствует данному типу проекта. Если вы разрабатываете проект надстройки VSTO, это означает, что нельзя отладки или запуска проекта. Если вы пытаетесь создать проект на уровне документа, это означает, что вы не можете создать проект.  
   
-### <a name="to-correct-this-error"></a>Исправление ошибки  
+## <a name="to-correct-the-error"></a>Исправление ошибки  
   
-1.  Установите приложение Microsoft Office, связанное с этим типом проекта, включая основные сборки взаимодействия. Дополнительные сведения о поддерживаемых версиях Microsoft Office см. в разделе [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+1.  Установите приложение Microsoft Office, связанное с типом проекта, включая основные сборки взаимодействия. Дополнительные сведения о поддерживаемых версиях Microsoft Office см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
 ## <a name="see-also"></a>См. также  
- [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [Практическое руководство. Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+ [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
+ [Как: Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
   
   

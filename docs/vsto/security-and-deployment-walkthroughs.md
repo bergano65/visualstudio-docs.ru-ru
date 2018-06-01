@@ -1,5 +1,5 @@
 ---
-title: Безопасность и пошаговые руководства по развертыванию | Документы Microsoft
+title: Развертывание и безопасность пошаговые руководства
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a0d68bceffaf26297ca8a1709978cf3447520c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 724050648aa7190844bad1e751d75fa22ccdebc8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693147"
 ---
-# <a name="security-and-deployment-walkthroughs"></a>Пошаговые руководства по безопасности и развертыванию
+# <a name="security-and-deployment-walkthroughs"></a>Развертывание и безопасность пошаговые руководства
   В следующих разделах демонстрируется, как можно установить политику безопасности, чтобы решение для запуска и развертывание решения Office.  
   
 ## <a name="security-topics"></a>Разделы, посвященные безопасности  
- [Практическое руководство. Подписывание решений Office](../vsto/how-to-sign-office-solutions.md)  
+ [Как: подписывание решений Office](../vsto/how-to-sign-office-solutions.md)  
  Сведения о способах предоставления доверия решению с помощью сертификата.  
   
- [Практическое руководство. Настройка безопасности списка включения](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Как: настройка безопасности списка включения](../vsto/how-to-configure-inclusion-list-security.md)  
  Описывается настройка [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии к элементу управления, получают ли конечным пользователям возможности установки решений Office.  
   
 ## <a name="deployment-topics"></a>Разделы, посвященные развертыванию  
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/16/2018
  [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)  
  Список пошаговых руководств, которые содержат введение в решений Office в Visual Studio и описывает, как можно создавать приложения, использующие преимущества Excel.  
   
- [Пошаговые руководства по данным в решениях Office](../vsto/data-in-office-solutions-walkthroughs.md)  
+ [Данные в пошаговых руководствах решений Office](../vsto/data-in-office-solutions-walkthroughs.md)  
  Список пошаговых руководств, которые показывают, как работать с данными в решениях.  
   
  [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  

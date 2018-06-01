@@ -1,5 +1,5 @@
 ---
-title: Сохранить данные в базе данных
+title: Сохранение данных обратно в базу данных
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691138"
 ---
-# <a name="save-data-back-to-the-database"></a>Сохранить данные в базе данных
+# <a name="save-data-back-to-the-database"></a>Сохранение данных обратно в базу данных
 Набор данных — в памяти данных. При изменении данных, рекомендуется сохранить эти изменения в базе данных. Одним из трех способов это сделать.
 
 -   Путем вызова одного из методов обновления адаптера таблицы
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 
 Если вы знакомы с адаптеры таблиц TableAdapter, можно перейти непосредственно на один из следующих разделов:
 
-|Раздел|Описание|
+|Раздел|Описание:|
 |-----------|-----------------|
 |[Вставка новых записей в базу данных](../data-tools/insert-new-records-into-a-database.md)|Как выполнять обновления и вставки с помощью адаптеров таблиц или команд объектов|
 |[Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)|Выполнить обновление с адаптеры таблиц TableAdapter|
@@ -119,7 +120,7 @@ ms.lasthandoff: 04/26/2018
 
  В следующей таблице приведены возможные значения <xref:System.Data.DataRowState> перечисления:
 
-|Значение DataRowState|Описание|
+|Значение DataRowState|Описание:|
 |------------------------|-----------------|
 |<xref:System.Data.DataRowState.Added>|Строка была добавлена как элемент в <xref:System.Data.DataRowCollection>. (Строки в этом состоянии не имеет соответствующей исходной версии, так как она не существовала при последней <xref:System.Data.DataRow.AcceptChanges%2A> был вызван метод).|
 |<xref:System.Data.DataRowState.Deleted>|Строка была удалена с помощью <xref:System.Data.DataRow.Delete%2A> из <xref:System.Data.DataRow> объекта.|
@@ -132,7 +133,7 @@ ms.lasthandoff: 04/26/2018
 
 В следующей таблице приведены возможные значения <xref:System.Data.DataRowVersion> перечисления:
 
-|Значение DataRowVersion|Описание|
+|Значение DataRowVersion|Описание:|
 |--------------------------|-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Текущая версия записи содержит все изменения, которые были выполнены для записи с момента последнего <xref:System.Data.DataRow.AcceptChanges%2A> был вызван. Если строка была удалена, нет текущей версии нет.|
 |<xref:System.Data.DataRowVersion.Default>|Значение по умолчанию записи, в соответствии с определением набора данных схема или источник данных.|
@@ -221,7 +222,7 @@ ms.lasthandoff: 04/26/2018
 
  Показано, каким образом производятся изменения Предположим, что приложение использует набор данных, который содержит одну таблицу данных. Приложение извлекает две строки из базы данных. После извлечения данных в памяти таблица выглядит следующим образом:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ ms.lasthandoff: 04/26/2018
 
  Приложение Юлия Иванов состояние изменится на «Основной». В результате этого изменения значение <xref:System.Data.DataRow.RowState%2A> свойства для этой строки изменяется с <xref:System.Data.DataRowState.Unchanged> для <xref:System.Data.DataRowState.Modified>. Значение <xref:System.Data.DataRow.RowState%2A> свойства для первой строки остается <xref:System.Data.DataRowState.Unchanged>. Таблицы данных теперь выглядит следующим образом:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

@@ -21,16 +21,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691359"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Дополнительные сведения об ошибках SharePoint
   Вы можете получить помощь в устранении [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint ошибки и предупреждения в соответствующих разделах открытых форумах Microsoft Developer Network (MSDN).  
   
-## <a name="troubleshooting-errors-and-issues"></a>Устранение неполадок и ошибок  
+## <a name="troubleshoot-errors-and-issues"></a>Устранение неполадок и ошибок
  Об устранении некоторых типичных ошибок и других проблем в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint в следующих разделах:  
   
 -   [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Устранение неполадок, связанных с упаковкой и развертыванием решений SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
-## <a name="other-resources"></a>Другие ресурсы  
+## <a name="other-resources"></a>Другие источники
  В следующей таблице перечислены [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint, форумы и другие ресурсы, доступные в библиотеке MSDN.  
   
 |Термин|Определение|  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Если по-прежнему не удается найти ответы, которые необходимы, доступны параметры поддержки через Интернет, например обратиться в службу технической поддержки или поиска статей базы знаний. Дополнительные сведения см. в разделе [справки и поддержки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=155371) страницы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
-  
+ 
