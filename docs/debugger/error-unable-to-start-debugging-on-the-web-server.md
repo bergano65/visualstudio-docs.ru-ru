@@ -60,9 +60,9 @@ ms.lasthandoff: 04/18/2018
 
     Можно настроить Visual Studio, чтобы всегда запускать от имени администратора, щелкнув правой кнопкой мыши значок ярлыка Visual Studio, выбрав **свойства > Дополнительно**и затем выбрав всегда выполняются от имени администратора.
 
-## <a name="web_server_config"></a> Веб-сервер настроен правильно
+## <a name="web_server_config"></a> Веб-сервер не настроен правильно
 
-- В разделе [ошибка: веб-сервер настроен правильно](../debugger/error-the-web-server-is-not-configured-correctly.md).
+- В разделе [ошибка: веб-сервер не настроен правильно](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> Не удается подключиться к веб-сервер
 
