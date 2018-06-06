@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecc7bba2cd33f0c7f4d78ef8607d078eb7f752a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767953"
 ---
-# <a name="how-to-add-a-custom-property"></a>Практическое руководство. Добавление пользовательского свойства
+# <a name="how-to-add-a-custom-property"></a>Как: Добавление пользовательского свойства
   Можно добавлять пользовательские свойства в модель с помощью **редактор свойств**. Можно получить доступ к этим свойствам в код, чтобы получить сведения, такие как строки соединения и другие данные во время выполнения.  
   
 ### <a name="to-add-a-custom-property"></a>Добавление пользовательских свойств  
   
 1.  В **Обозреватель BDC**, выберите узел, представляющий элемент модели, к которому необходимо применить пользовательское свойство.  
   
-2.  В строке меню выберите **представление**, **окно свойств**.  
+2.  В строке меню выберите **представление** > **окно свойств**.  
   
 3.  В **свойства** окно, выберите **Custom Properties** свойство и затем нажмите кнопку с многоточием (![эллипс конструктора ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Эллипс конструктора Mobile NET")).  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Для **значение** поле пользовательского свойства, укажите значение, а затем выберите **ОК** кнопки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   

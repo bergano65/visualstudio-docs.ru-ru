@@ -1,5 +1,5 @@
 ---
-title: '&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft'
+title: '&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f0e1fdc26e285ce9b6a1fd5ecc1aa638fe909b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767612"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio)
   `update` Элемент указывает интервал, когда решение будет выполнять проверку обновлений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <update  
   enabled>  
   <expiration  
@@ -56,28 +57,28 @@ ms.lasthandoff: 04/16/2018
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`maximumAge`|-Обязательно. Значение этого атрибута в целое число.|  
+|`maximumAge`|   Обязательно. Значение этого атрибута в целое число.|  
 |`unit`|Обязательно. Задать `unit` одно из следующих значений:<br /><br /> -   **Часы**<br />-   **Дни**<br />-   **Недель**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Пример всегда проверка наличия обновлений  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Описание:  
  В следующем примере кода показан `update` элемент, который имеет значение всегда проверять наличие обновлений в решениях Office.  
   
 ### <a name="code"></a>Код  
   
-```  
+```xml  
 <vstav3:update enabled="true" />  
 ```  
   
 ## <a name="example-of-setting-a-default-update-interval"></a>Пример настройки по умолчанию интервал обновления  
   
-### <a name="description"></a>Описание  
- В следующем примере кода показан `update` элемента в манифесте приложения для решений Office. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Описание:  
+ В следующем примере кода показан `update` элемента в манифесте приложения для решений Office. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
   
-```  
+```xml  
 <vstav3:update enabled="true">  
     <vstav3:expiration maximumAge="7" unit="days" />  
 </vstav3:update>  
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

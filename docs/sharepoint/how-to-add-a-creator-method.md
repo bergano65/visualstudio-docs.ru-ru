@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0424c6561b063b17f384215021a1300122dcbb1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd566eacba7f94cfe7617e9396440c90dc32f51e
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767144"
 ---
-# <a name="how-to-add-a-creator-method"></a>Практическое руководство. Добавление метода Creator
-  Метод создания добавляет новые данные в источник данных сущности. Служба бизнес-данным (BDC) вызывает этот метод, если пользователь решил **новый элемент** кнопки на ленте списка, который основан на модели. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-creator-method"></a>Как: Добавление метода Creator
+  Метод создания добавляет новые данные в источник данных сущности. Служба бизнес-данным (BDC) вызывает этот метод, если пользователь решил **новый элемент** кнопку **ленты** списка, который основан на модели. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Добавление метода Creator  
   
-1.  В конструкторе BDC выберите сущность.  
+1.  На **конструктора BDC**, выберите сущность.  
   
-2.  В строке меню выберите **представление**, **другие окна**, **Подробности метода BDC**.  
+2.  В строке меню выберите **представление** > **другие окна** >**Подробности метода BDC**.  
   
      **Подробности метода BDC** открывается окно. Дополнительные сведения об этом окне см. в разделе [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
      [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Как: Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Как: Добавление конкретного метода поиска](../sharepoint/how-to-add-a-specific-finder-method.md)   

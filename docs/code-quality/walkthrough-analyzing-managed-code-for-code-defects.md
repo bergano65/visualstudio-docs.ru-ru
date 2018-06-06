@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746563"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство: Анализ управляемого кода для кода ошибки
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**.
 
-1. В **новый проект** диалогового окна разверните **установленные** > **Visual C#** и нажмите кнопку **классического Windows**.
+1. В **новый проект** диалогового окна разверните **установленные** > **Visual C#** и нажмите кнопку **Windows Desktop**.
 
 1. Выберите **библиотека классов (.NET Framework)** шаблона.
 

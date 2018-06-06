@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691536"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765730"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
   С помощью веб-частей, можно изменить содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. Веб-части, серверные элементы управления, которые выполняются в страницу веб-частей: они являются составными частями страниц, которые отображаются на сайте SharePoint. В разделе [стандартный блок: веб-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Можно создать и отлаживать веб-частей на сайте SharePoint с помощью шаблонов из Visual Studio.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691536"
   
 |Файл|Описание:|  
 |----------|-----------------|  
-|Файл Elements.XML|Содержит сведения, используемые файлом определения компонента в проекте для развертывания веб-части.|  
+|*Файл Elements.XML*|Содержит сведения, используемые файлом определения компонента в проекте для развертывания веб-части.|  
 |файл .webpart|Предоставляет сведения, необходимые для отображения веб-части в веб-частей SharePoint.|  
 |Файл кода|Содержит методы, которые добавляют элементы управления веб-части и, создающие пользовательское содержимое внутри веб-части.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691536"
 |Имя элемента|Описание:|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Вставляет ASP меню. Дополнительные сведения см. в разделе [Обзор элемента управления меню](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет **ССЫЛКУ** на странице ASPX элемента и применяет один или несколько внешних таблицах стилей определяется **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Вставляет элемент управления даты и времени в ASPX-страницы.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Вставляет проверки безопасности в ASPX-страницы|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет **ССЫЛКУ** элемент в *.aspx* страницы и применяет один или несколько внешних таблицах стилей определяется **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Вставка элемента управления даты и времени в *.aspx* страницы.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Вставляет проверки безопасности в *.aspx* страницы|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Возвращает свойство из указанного списка.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Возвращает глобальные свойства текущего веб-сайта.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Вставляет ссылку на RSS-канал в ASPX-страницы.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Вставляет ссылку на RSS-канал в *.aspx* страницы.|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Предоставляет свойства и методы для регистрации ресурсы, такие как сценарии, на странице, чтобы они могут быть запрошены при отображении страницы.|  
-|[Тема](http://go.microsoft.com/fwlink/?LinkId=235314)|Применяет тему ASPX-страницу.|  
+|[Тема](http://go.microsoft.com/fwlink/?LinkId=235314)|Применяет тему к *.aspx* страницы.|  
   
 ## <a name="debug-a-web-part"></a>Отладка веб-части
  Можно отлаживать проект SharePoint, который содержит веб-части, так же, как отладка других проектов Visual Studio. При запуске отладчика Visual Studio, Visual Studio откроется сайт SharePoint.  

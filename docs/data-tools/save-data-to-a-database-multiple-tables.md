@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5be0cccd71a356a78a04c3d15cdb2f080e30c9e4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b087c9f92576edbd3f13ec89ff8716feb95be3e1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752363"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Сохранение данных в базе данных (несколько таблиц)
 Одним из наиболее распространенных сценариев в разработке приложений является отображение данных на форме в приложении Windows, изменение этих данных и отправка обновленных данных обратно в базу данных. Это пошаговое руководство описывает создание формы, отображающей данные из двух связанных таблиц, правку записей и сохранение изменений в базе данных. В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей".
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .
 
-2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложение Windows Forms** тип проекта.
 

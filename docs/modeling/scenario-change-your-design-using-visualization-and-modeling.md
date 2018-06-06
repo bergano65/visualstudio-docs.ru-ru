@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750172"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: изменение проекта с помощью визуализации и моделирования
 
@@ -150,13 +151,13 @@ ms.lasthandoff: 05/07/2018
 
  Предположим, разработчик создает карту кода и акцентирует внимание на тех областях, которые будут затронуты новым сценарием. Эти области выбираются и выделяются на карте.
 
- ![Граф зависимостей пространств имен](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Граф зависимостей пространств имен](../modeling/media/namespace_reviewsystem.png)
 
  **Карта кода пространства имен**
 
  Разработчик разворачивает выбранные пространства имен, чтобы отобразить их классы, методы и отношения.
 
- ![Граф зависимостей расширенного пространства имен](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Граф зависимостей расширенного пространства имен](../modeling/media/dep_reviewsystem.png)
 
  **Развернутая карта кода пространства имен с показанными связями между группами**
 
@@ -177,7 +178,7 @@ ms.lasthandoff: 05/07/2018
 
  Например на следующей диаграмме зависимостей описывает зависимости между слоями и количеством артефактов, связанных с каждым слоем:
 
- ![Диаграмма зависимостей интегрированной платежной системы](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Диаграмма зависимостей интегрированной платежной системы](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Диаграмма зависимостей**
 
@@ -277,19 +278,19 @@ ms.lasthandoff: 05/07/2018
 
 На следующей карте кода показаны зависимости между классом PaymentProcessing и выделенными частями системы компании Dinner Now.
 
-![Граф зависимостей для платежной системы компании Dinner Now](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Граф зависимостей для платежной системы компании Dinner Now](../modeling/media/dep_dnpayment.png)
 
 **Карта кода для платежной системы компании Dinner Now**
 
 Разработчик изучает карту, развернув класс PaymentProcessing и выбрав его члены для просмотра потенциально затрагиваемых областей.
 
-![Методы внутри класса PaymentProcessing и их зависимости](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![Методы внутри класса PaymentProcessing и их зависимости](../modeling/media/depgraph_expandeddn.png)
 
 **Методы внутри класса PaymentProcessing и их зависимости**
 
 Для изучения классов, методов и зависимостей платежной системы компании Lucerne создается карта кода, представленная ниже. Команда выясняет, что для взаимодействия с другими частями компании Dinner Now система компании Lucerne может потребовать доработки.
 
-![Граф зависимостей для платежной системы компании Lucerne](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Граф зависимостей для платежной системы компании Lucerne](../modeling/media/depgraph_lucernepay.png)
 
 **Карта кода для платежной системы компании Lucerne**
 
@@ -297,7 +298,7 @@ ms.lasthandoff: 05/07/2018
 
 После реорганизации кода команды создают новую карту кода для просмотра обновленной структуры и отношений.
 
-![Граф зависимостей с реорганизованным кодом](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Граф зависимостей с реорганизованным кодом](../modeling/media/depgraph_integrated.png)
 
 **Карта кода после реорганизации**
 
@@ -338,7 +339,7 @@ ms.lasthandoff: 05/07/2018
 
  Чтобы помочь компании Lucerne описать и обсудить сущности, участвующие в варианте использования «Обработка платежа», была создана следующая схема классов.
 
- ![Сущности обработки платежа на схеме классов](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Сущности обработки платежа на схеме классов](../modeling/media/uml_payentities.png)
 
  **Сущности обработки платежа на схеме классов**
 
@@ -346,7 +347,7 @@ ms.lasthandoff: 05/07/2018
 
  В процессе разработки компания Lucerne использует следующую схему классов для описания и обсуждения деталей каждого класса.
 
- ![Подробности обработки платежа сущностей на схеме классов](../modeling/media/uml_payment.png "UML_Payment")
+ ![Сведения о сущностях обработки платежа на схеме классов](../modeling/media/uml_payment.png)
 
  **Подробности обработки платежа на схеме классов**
 
@@ -407,7 +408,7 @@ ms.lasthandoff: 05/07/2018
 
  Чтобы обеспечить соответствие кода дизайну, компании Dinner Now и Lucerne используйте на следующей диаграмме зависимостей для проверки кода по мере его разработки:
 
- ![Диаграмма зависимостей интегрированной платежной системы](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Диаграмма зависимостей интегрированной платежной системы](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Интегрированные диаграмму зависимостей для компании Dinner Now с компанией Lucerne**
 
@@ -417,13 +418,13 @@ ms.lasthandoff: 05/07/2018
 
  На следующей карте кода показаны новые вызовы между системой компании Dinner Now и классом PaymentApprover.
 
- ![Обновленный граф зависимостей с интегрированной системой](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Обновленный граф зависимостей с интегрированной системой](../modeling/media/depgraph_intsystem.png)
 
  **Карта кода с обновленными вызовами методов**
 
  Убедившись в правильности работы системы, команда Dinner Now исключает код PaymentProcessing, переводя его в комментарии. Отчеты о проверке слоев не содержат ошибок, полученная карта кода показывает, что зависимостей от PaymentProcessing больше нет.
 
- ![Граф зависимостей без класса PaymentProcessing](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Граф зависимостей без класса PaymentProcessing](../modeling/media/depgraph_nomore.png)
 
  **Карта кода без класса PaymentProcessing**
 

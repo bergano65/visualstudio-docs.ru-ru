@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfa72bab32aa6af2188f8f6c04411b768b441e92
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4937bcdef14cadccfa940b2176cf002a976fa16d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692217"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766419"
 ---
-# <a name="debugging-sharepoint-solutions"></a>Отладка решений SharePoint
+# <a name="debug-sharepoint-solutions"></a>Отладка решений SharePoint
   Можно отлаживать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. При запуске отладки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, а затем открывает экземпляр сайта SharePoint в веб-браузере. Ниже описаны способы отладки приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 -   [Включение отладки](#EnableDebug)  
@@ -40,7 +40,7 @@ ms.locfileid: "34692217"
   
 -   [Включение расширенные сведения об отладке](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a> Включение отладки  
+## <a name="enable-debugging"></a>Включить отладку
  При отладке сначала решения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], диалоговое окно предупреждения, что в файле web.config не задан для включения отладки. (Файл web.config создается при установке сервера SharePoint. Дополнительные сведения см. в разделе [работа с файлами Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Диалоговое окно позволяет либо запустить проект без отладки, либо изменить файл web.config для включения отладки. Если выбрать первый вариант, проект выполняется обычным образом. Если выбрать второй вариант, параметры в файле web.config изменяются следующим образом:  
   
 -   Включить в стеке вызовов (`CallStack="true"`)  
@@ -86,7 +86,7 @@ ms.locfileid: "34692217"
   
 -   Отключите отладку компиляции (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a> Отладка F5 и процесс развертывания  
+## <a name="f5-debug-and-deployment-process"></a>Процесс отладки и развертывания F5
  При запуске проекта SharePoint в режиме отладки, в процессе развертывания SharePoint выполняет следующие задачи:  
   
 1.  Выполняются пользовательские команды, выполняемые перед развертыванием.  
@@ -110,7 +110,7 @@ ms.locfileid: "34692217"
   
 9. Выполняются пользовательские команды, выполняемые после развертывания.  
   
-10. Присоединяет отладчик [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] к процессу [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (w3wp.exe). Если тип проекта позволяет изменять *изолированное решение* свойство и его значение равно **true**, отладчик подключается к другому процессу (SPUCWorkerProcess.exe). Дополнительные сведения см. в разделе [замечания об изолированных решениях](../sharepoint/sandboxed-solution-considerations.md).  
+10. Присоединяет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] процесса (*w3wp.exe*). Если тип проекта позволяет изменять *изолированное решение* свойство и его значение равно **true**, отладчик подключается к другому процессу (*SPUCWorkerProcess.exe*). Дополнительные сведения см. в разделе [замечания об изолированных решениях](../sharepoint/sandboxed-solution-considerations.md).  
   
 11. Запускает отладчик JavaScript, если решение SharePoint представляет собой решение фермы.  
   
@@ -118,14 +118,14 @@ ms.locfileid: "34692217"
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Отображает сообщение о состоянии в окне «Вывод», после завершения каждой задачи. Если не удается выполнить задачу, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отображает сообщение об ошибке в окне списка ошибок.  
   
-##  <a name="Features"></a> Функции проекта SharePoint  
+## <a name="sharepoint-project-features"></a>Возможностей проекта SharePoint
  Компонент является переносимый модульный элемент функциональных возможностей, который упрощает изменение узлов с помощью определения сайтов. Это также пакета [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) элементов, которые можно активировать для определенной области, и которые помогают пользователю в выполнении конкретной задачи. Как компоненты развертываются шаблоны.  
   
- При запуске проекта в режиме отладки процесс развертывания создает папку в *функция* каталог на %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES. Имена компонентов имеют формат *имя проекта*_Feature*x*, например TestProject_Feature1.  
+ При запуске проекта в режиме отладки процесс развертывания создает папку в *функция* каталог на *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Имена компонентов имеют формат *имя проекта*_Feature*x*, например TestProject_Feature1.  
   
- Папка решения в каталоге функций содержит *Определение компонента* файла и *определение рабочего процесса* файла. Файл определения компонента (Feature.xml) описывает файлы в проекте Feature.The файл определения проекта (Elements.xml) описывается шаблон проекта. Файл Elements.XML можно найти в **обозревателе решений**, но файл Feature.xml создается при создании пакета решения. Дополнительные сведения об этих файлах см. в разделе [проект SharePoint и шаблоны элементов проекта](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Папка решения в каталоге функций содержит *Определение компонента* файла и *определение рабочего процесса* файла. Файл определения компонента (Feature.xml) описывает файлы в файл определения проекта для проекта Feature.The (*Elements.xml*) описывается шаблон проекта. *Elements.XML* можно найти в **обозревателе решений**, но файл Feature.xml создается при создании пакета решения. Дополнительные сведения об этих файлах см. в разделе [проект SharePoint и шаблоны элементов проекта](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-##  <a name="Workflow"></a> Отладка рабочих процессов  
+## <a name="debug-workflows"></a>Отладка рабочих процессов
  При отладке проекта рабочего процесса [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавляет шаблон рабочего процесса (в зависимости от его типа) в библиотеку или список. Затем в шаблон рабочего процесса можно запустить вручную или путем добавления или обновления элемента. Затем можно использовать [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для отладки рабочего процесса.  
   
 > [!NOTE]  
@@ -135,15 +135,15 @@ ms.locfileid: "34692217"
   
  Например, если вы указали, что рабочий процесс можно запустить вручную, рабочий процесс запускается непосредственно из элемента в библиотеке или списке. Дополнительные сведения о том, как запустить рабочий процесс вручную см. в разделе [вручную запустить рабочий процесс на элемент документа](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
-##  <a name="FeatureEvents"></a> Отладка приемников событий компонентов  
+## <a name="debug-feature-event-receivers"></a>Отладка приемников событий компонентов
  По умолчанию при запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] приложения SharePoint его компоненты автоматически активируются для вас на сервере SharePoint. Тем не менее, это вызывает проблемы при отладке приемников событий компонентов, поскольку при активации компонент по [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], он выполняется в другом процессе, что отладчик. Это означает, что функции отладки, например точки останова, не будут работать правильно.  
   
  Чтобы отключить автоматическую активацию компонента в SharePoint и выполнять отладку для приемников событий компонентов, установите для параметра проекта **активная конфигурация развертывания** свойства **без активации** перед отладкой. Затем, после начала отладки вашего приложения SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], вручную активируйте компонент в SharePoint. Чтобы активировать компонент, откройте **действия сайта** в SharePoint, в меню выберите **параметры сайта**, выберите **Управление компонентами сайта** связь, а затем выберите **Активировать** рядом с компонентом для продолжения отладки в обычном режиме.  
   
-##  <a name="EnhancedDebug"></a> Включение расширенные сведения об отладке  
- Из-за сложных взаимодействий между [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] процесса (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint хост-процесса (vssphost4.exe), SharePoint и уровнем WCF, можно диагностировать ошибки, возникающие во время построения, развертывания и так далее запрос. Чтобы облегчить эту задачу, можно включить расширенные сведения об отладке. Чтобы сделать это, перейдите к следующему разделу реестра, в реестре Windows:  
+## <a name="enable-enhanced-debug-information"></a>Включить расширенную отладочную информацию
+ Из-за сложных взаимодействий между [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] процесса (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] хост-процессе SharePoint (*vssphost4.exe*), SharePoint и на уровне WCF диагностировать ошибки, возникающие во время построение, развертывание и т. д может быть достаточно сложным. Чтобы облегчить эту задачу, можно включить расширенные сведения об отладке. Чтобы сделать это, перейдите к следующему разделу реестра, в реестре Windows:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**  
   
  Если «EnableDiagnostics» **REG_DWORD** значение еще не существует, создайте его вручную. Задайте значение «EnableDiagnostics» в «1».  
   
@@ -151,7 +151,6 @@ ms.locfileid: "34692217"
   
  Дополнительные сведения о других разделах реестра SharePoint см. в разделе [отладка расширений для средств SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  
   

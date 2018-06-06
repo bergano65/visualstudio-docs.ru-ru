@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c29cb41c80d75c6f873171b7e9c758a2513612
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691941"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766511"
 ---
-# <a name="extensiondataitem-element"></a>Элемент ExtensionDataItem
+# <a name="extensiondataitem-element"></a>ExtensionDataItem - элемент
   Пользовательский элемент данных, связанный с элементом проекта SharePoint, в формате ключ значение. Ключ и значение должны быть строками.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,7 +32,7 @@ ms.locfileid: "34691941"
     Value = "Value of the data item" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -42,10 +42,10 @@ ms.locfileid: "34691941"
 |**Key**|Требуется **xs: строка** атрибута.<br /><br /> Ключ, используемый для хранения и извлечения элемента данных.|  
 |**Значение**|Требуется **xs: String** атрибута.<br /><br /> Значение элемента данных.|  
   
-### <a name="child-elements"></a>Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы
  Отсутствует.  
   
-### <a name="parent-elements"></a>Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691941"
 ## <a name="remarks"></a>Примечания  
  При связывании пользовательских данных с элементом проекта SharePoint с помощью <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> объекта Visual Studio сохраняет данные в новую **ExtensionDataItem** элемент `.spdata` в файле элемент проекта. Дополнительные сведения см. в разделе [сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="element-information"></a>Сведения об элементе  
+## <a name="element-information"></a>Сведения об элементе
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691941"
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
 |**Может быть пустым.**|Нет|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Справочные материалы по схеме элементов для проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

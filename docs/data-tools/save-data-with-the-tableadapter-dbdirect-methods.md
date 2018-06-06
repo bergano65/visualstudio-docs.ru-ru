@@ -1,5 +1,5 @@
 ---
-title: Сохранять данные методы DBDirect адаптера таблицы
+title: Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747551"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранять данные методы DBDirect адаптера таблицы
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
 Это пошаговое руководство содержит подробные инструкции для выполнения инструкций SQL непосредственно к базе данных с помощью методов DBDirect адаптера таблицы. Методы DBDirect адаптера таблицы обеспечивают точный контроль над обновлениями базы данных. Их можно использовать для выполнения определенных инструкций SQL и хранимые процедуры, вызывая отдельные `Insert`, `Update`, и `Delete` методы, необходимые для приложения (в отличие от перегруженного `Update` метод, который выполняет обновление INSERT и инструкций DELETE в одном вызове).
 
  В этом пошаговом руководстве описаны следующие процедуры.
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .
 
-2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложение Windows Forms** тип проекта.
 

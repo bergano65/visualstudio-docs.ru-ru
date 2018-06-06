@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767781"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Практическое руководство. Добавление и удаление дополнительных сборок
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Как: Добавление и удаление дополнительных сборок
   Если пакет SharePoint зависит от других сборок, функциональные возможности и данные, можно добавить сборки в пакет решения (WSP-файл). Таким образом, SharePoint server гарантирует, что пользовательские сборки установлены с помощью пакета.  
   
  Кроме того, можно также добавлять и изменять безопасные элементы управления и файлы ресурсов классов, связанные с этими сборками.  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Нажмите клавишу DELETE.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Как: Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Практическое руководство. Добавление и удаление элементов в компонентах SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

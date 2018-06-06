@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f807394497bff99e12546f7a1a913adffbff41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf59736e4cdeb8ddba256b24bc7c12984d288071
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767170"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Практическое руководство. Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Как: Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов
   При создании решения SharePoint пакета в решении Visual Studio добавляет возможности SharePoint по умолчанию. Перед окончательным развертыванием можно можно добавлять и удалять элементы проектов SharePoint и для изменения пакета SharePoint.  
   
  Кроме того можно использовать обозреватель пакетов для добавления и удаления элементов проекта SharePoint. Кроме того, можно просматривать и изменять иерархию элементов проектов SharePoint и компоненты, входящие в пакет (WSP-файл). Дополнительные сведения см. в разделе [как: Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="adding-features-to-a-sharepoint-package"></a>Добавление компонентов в пакет SharePoint  
  Добавление компонентов в пакет SharePoint, можно использовать конструктор пакетов.  
   
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Добавление компонентов SharePoint с помощью конструктора пакетов  
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Добавление компонентов SharePoint с помощью конструктора пакетов
   
 1.  Откройте **конструктор пакетов**.  
   
@@ -54,15 +55,14 @@ ms.lasthandoff: 04/16/2018
 ## <a name="removing-features-from-a-sharepoint-package"></a>Удаление компонентов из пакета SharePoint  
  Конструктор пакетов можно использовать для удаления компонентов из пакета SharePoint.  
   
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Удаление компонентов SharePoint с помощью конструктора пакетов  
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Удаление компонентов SharePoint с помощью конструктора пакетов
   
 1.  В **элементы в пакете** выберите элемент, который требуется удалить, а затем выберите **удалить** (<) кнопку или выберите **удалить все** кнопки (<<) для удаления все элементы.  
   
      Элементы SharePoint отображаются в **элементы в решении** списка.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Практическое руководство. Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Как: Создание пакета](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  
   

@@ -9,11 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5ea053e6b3f448311118b733c30b9ade5160288d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747096"
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 
@@ -35,23 +36,23 @@ ms.lasthandoff: 04/26/2018
 
 Чтобы создать подключение к базе данных, нажмите кнопку **добавить подключение** значок в **обозревателя серверов**, или щелкните правой кнопкой мыши **обозревателя серверов** на **данных Подключения** , а затем выберите **добавить подключение**. Здесь можно подключиться к базе данных на другом сервере, службы SharePoint или службы Azure.
 
-![Значок нового подключения обозревателя сервера](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata значок нового подключения обозревателя сервера")
+![Значок нового подключения обозревателя сервера](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
 Откроется окно **добавить подключение** диалоговое окно. Здесь мы ввели имя экземпляра SQL Server LocalDB.
 
-![Добавление нового подключения](../data-tools/media/raddata-add-new-connection-dialog.png "raddata добавить новое диалоговое окно соединения")
+![Добавление нового подключения](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Изменить поставщика
 
 Если источник данных не требуется, нажмите кнопку **изменений** кнопку, чтобы выбрать новый источник данных и/или новый поставщик данных ADO.NET. Новый поставщик может запрашивать учетные данные, в зависимости от того, как настроить.
 
-![Изменить поставщика данных AD0.NET](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata изменить AD0.NET данных поставщика")
+![Поставщик данных AD0.NET изменений](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>Проверка соединения
 
 После выбора источника данных, нажмите кнопку **проверить подключение**. Если не выполнены успешно, необходимо будет Устранение зависимости в документации поставщика.
 
-![Проверка соединения](../data-tools/media/raddata-test-connection.png "raddata проверить подключение")
+![Проверить подключение](../data-tools/media/raddata-test-connection.png)
 
 Если тест выполняется успешно, можно приступать к созданию *источника данных*, — это понятие Visual Studio, на самом деле означает *модели данных* , основанный на базовой базы данных или службы.
 

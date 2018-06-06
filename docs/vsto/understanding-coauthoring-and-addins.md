@@ -1,5 +1,5 @@
 ---
-title: Основные сведения о Соавторство и надстройки | Документы Microsoft
+title: Понять Соавторство и надстройки
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 911db43b820a05928f97e727568582f939560e9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768174"
 ---
-# <a name="understanding-coauthoring-and-add-ins"></a>Основные сведения о Соавторство и надстройки
+# <a name="understand-coauthoring-and-add-ins"></a>Понять Соавторство и надстройки
 
 Соавторство — это функция Excel для Windows desktop, позволяющий редактировать книгу, размещенной в облаке (то есть, OneDrive, OneDrive для бизнеса или SharePoint Online), одновременно с другими пользователями. С добавлением этой функцией необходимо внести изменения в Excel решение для того чтобы убедиться, что оно работает плавно даже в том случае, если пользователи Соавторство. В разделе [о Соавторство в Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
 

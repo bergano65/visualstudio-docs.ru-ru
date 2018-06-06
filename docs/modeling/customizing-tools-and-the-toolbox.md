@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748531"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Настройка элементов и панели элементов
 Для тех элементов, которые пользователи смогут добавлять в свои модели, необходимо определить содержание панели элементов. Панель элементов может содержать два вида средств: средства элемента и средства подключения. В созданном конструкторе пользователь может выбрать средство элемента, чтобы перетащить фигуры на схему, и средство подключения, чтобы протянуть связи между фигурами. В целом средства элемента позволяют пользователям добавлять в модели экземпляры классов доменов, а средства подключения — экземпляры доменных связей.
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Соединения, поступающих в OutPort вложенных компонентов**
 
- ![Построитель подключения](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![Мастер подключения](../modeling/media/connectionbuilder_3.png)
 
  В связи с этим необходимо указать, что подключение может идти от вложенного компонента к типу OutPort. Чтобы указать такое подключение, необходимо задать **использует настраиваемый принять** на **InPort** тип как роль источника и **OutPort** типа, что и целевой роли в **сведений DSL**  окна, как показано на следующем рисунке:
 
  **Ссылка указывать директиву в обозреватель DSL**
 
- ![Изображение мастера подключения](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![Изображение мастера подключения](../modeling/media/connectionbuilder_4a.png)
 
  **Ссылка указывать директиву в окно сведений DSL**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  После этого в класс ConnectionBuilder необходимо предоставить методы:
 

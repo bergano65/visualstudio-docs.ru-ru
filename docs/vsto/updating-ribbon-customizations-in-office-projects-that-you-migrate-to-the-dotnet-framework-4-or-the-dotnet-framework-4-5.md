@@ -1,5 +1,5 @@
 ---
-title: Обновление настроек ленты в проектах Office, которые переносятся на платформу .NET Framework 4 или .NET Framework 4.5 | Документы Microsoft
+title: Обновление настроек ленты в проектах Office, которые переносятся на платформу .NET Framework 4 или .NET Framework 4.5
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,29 +15,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8da42ad20a42e24ee826a559c6d1d38efb172100
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767641"
 ---
-# <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление настроек ленты в проектах Office, которые переносятся на платформу .NET Framework 4 или .NET Framework 4.5
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление настроек ленты в проектах Office, которые переносятся на платформу .NET Framework 4 или .NET Framework 4.5
   Если проект содержит настройку ленты, созданной с помощью **Лента (визуальный конструктор)** элемента проекта, необходимо внести следующие изменения в код проекта при изменении целевой версии .NET framework для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или позже.  
   
 -   Измените созданный код ленты.  
   
 -   Также необходимо изменить любой код, который создает экземпляры элементов управления ленты во время выполнения, обрабатывает события ленты или программно задает положение компонента ленты.  
   
-## <a name="updating-the-generated-ribbon-code"></a>Изменение созданного кода ленты  
+## <a name="update-the-generated-ribbon-code"></a>Обновление созданного кода ленты  
  Если требуемая версия .NET Framework для проекта изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо изменить созданный код для элемента ленты, выполнив следующие действия. Файлы кода, которые следует обновить, зависят от языка программирования и способа создания проекта.  
   
 -   В проектах Visual Basic или в проектах Visual C#, созданных в [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] или [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] выполнять все действия в файле кода ленты (*YourRibbonItem*. Designer.cs или *YourRibbonItem*. Designer.vb). Для просмотра файла кода в проектах Visual Basic щелкните **Показать все файлы** кнопку в **обозревателе решений**.  
   
 -   В проектах Visual C#, созданных в Visual Studio 2008 и затем обновленных до [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], выполните первые два действия в файле кода ленты (*YourRibbonItem*.cs или *YourRibbonItem*.vb), и Выполните оставшиеся действия в файле кода ленты.  
   
-#### <a name="to-change-the-generated-ribbon-code"></a>Изменение созданного кода ленты  
+### <a name="to-change-the-generated-ribbon-code"></a>Изменение созданного кода ленты  
   
-1.  Измените объявление класса ленты, чтобы он был производным от <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> вместо Microsoft.Office.Tools.Ribbon.OfficeRibbon.  
+1.  Измените объявление класса ленты так, чтобы он был производным от <xref:Microsoft.Office.Tools.Ribbon.RibbonBase>, а не от `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.  
   
 2.  Измените конструктор класса ленты, как показано ниже. Если в конструктор был добавлен собственный код, не изменяйте его. В проектах Visual Basic измените только конструктор без параметров. Игнорируйте другой конструктор.  
   
@@ -99,28 +100,28 @@ ms.lasthandoff: 04/16/2018
     this.button1 = this.Factory.CreateRibbonButton();  
     ```  
   
-     Полный список вспомогательных методов для элементов управления ленты см. в разделе [создание экземпляров элементов управления ленты](#ribboncontrols).  
+     Полный список вспомогательных методов для элементов управления ленты см. в разделе [элементы управления ленты, создать экземпляр](#ribboncontrols).  
   
 4.  В проектах Visual C# измените любую строку кода в методе `InitializeComponent`, использующем делегат <xref:System.EventHandler%601>, так, чтобы применялся определенный делегат ленты.  
   
      Например, предположим, что файл содержит следующую строку кода, которая обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> в проекте, ориентированном на .NET Framework 3.5.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
      В проекте, ориентированном на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, вместо этого необходимо использовать следующий код.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
-     Полный список делегатов ленты см. в разделе [обработка событий ленты](#ribbonevents).  
+    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+     Полный список делегатов ленты см. в разделе [события обработки ленты](#ribbonevents).  
   
-5.  В проектах Visual Basic найдите класс `ThisRibbonCollection` в конце файла. Измените объявление этого класса, чтобы он больше не наследует от Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection.  
+5.  В проектах Visual Basic найдите класс `ThisRibbonCollection` в конце файла. Измените объявление этого класса так, чтобы он больше не наследовал от `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.  
   
-##  <a name="ribboncontrols"></a> При создании элементов управления ленты  
+##  <a name="ribboncontrols"></a> Создать элементы управления ленты  
  Вам необходимо изменить любой код, который динамически создает элементы управления ленты. В проектах, ориентированных на .NET Framework 3.5, элементы управления ленты — это классы, экземпляры которых можно создавать напрямую в определенных сценариях. В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, эти элементы управления представляют интерфейсы, которые не могут создаваться напрямую. Необходимо создать элементы управления с помощью методов, предоставляемых объектом <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.  
   
  Существует два способа доступа к объекту <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:  
   
 -   С помощью свойства фабрики класса ленты. Используйте этот подход в коде в классе ленты.  
   
--   С помощью метода Globals.Factory.GetRibbonFactory. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
+-   С помощью метода `Globals.Factory.GetRibbonFactory`. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
  В следующем примере кода показано, как создать <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> в классе ленты в проекте, ориентированном на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию.  
   
@@ -159,16 +160,16 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   
-## <a name="setting-the-position-of-a-ribbon-component-programmatically"></a>Программная установка положения компонента ленты  
- Необходимо изменить любой код, который задает положение групп, вкладок и элементов управления ленты. В проектах, ориентированных на .NET Framework 3.5, вы можно использовать методы AfterOfficeId и BeforeOfficeId статического класса Microsoft.Office.Tools.Ribbon.RibbonPosition Чтобы назначить свойство для группы, вкладки или элемента управления. В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, необходимо получить доступ к этим методам с помощью свойства <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A>, предоставляемого объектом <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.  
+## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Задать положение компонента ленты программным способом  
+ Необходимо изменить любой код, который задает положение групп, вкладок и элементов управления ленты. В проектах, ориентированных на .NET Framework 3.5, можно использовать статические методы `AfterOfficeId` и `BeforeOfficeId` класса `Microsoft.Office.Tools.Ribbon.RibbonPosition` для установки свойства `Position` группы, вкладки или элемента управления. В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, необходимо получить доступ к этим методам с помощью свойства <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A>, предоставляемого объектом <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.  
   
  Существует два способа доступа к объекту <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:  
   
--   С помощью свойства фабрики класса ленты. Используйте этот подход в коде в классе ленты.  
+-   С помощью свойства `Factory` класса ленты. Используйте этот подход в коде в классе ленты.  
   
--   С помощью метода Globals.Factory.GetRibbonFactory. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
+-   С помощью метода `Globals.Factory.GetRibbonFactory`. Используйте этот подход в коде вне класса ленты. Дополнительные сведения о классе глобальных переменных см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- В следующем примере кода показано, как задать свойство положение вкладки в классе ленты в проекте, ориентированном на .NET Framework 3.5.  
+ В следующем примере кода показано, как установить свойство `Position` вкладки в классе ленты в проекте, ориентированном на .NET Framework 3.5.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  
@@ -189,7 +190,7 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Перенос решений Office на платформу .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Перенос решений Office для .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)  
   
   

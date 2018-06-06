@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Привязка данных к элементам управления в панели действий Excel | Документы Microsoft'
+title: 'Пошаговое руководство: Привязка данных к элементам управления в панели действий Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87d960c01d8ac28b2a148e2f48ee51a877d97c20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d450a9c52ae8558167bf4cb581ce2e36f44f4e9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767914"
 ---
-# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>Пошаговое руководство. Привязка данных к элементам управления в панели действий Excel
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Пошаговое руководство: Привязка данных к элементам управления в панели действий Excel
   В этом пошаговом руководстве демонстрируется привязка данных к элементам управления в панели действий в Microsoft Office Excel. Элементы управления показывают отношение «Основной/подробности» между таблицами в базе данных SQL Server.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,20 +56,20 @@ ms.lasthandoff: 04/16/2018
   
 -   Разрешения на чтение и запись в базу данных SQL Server.  
   
-## <a name="creating-the-project"></a>Создание проекта  
+## <a name="create-the-project"></a>Создание проекта  
  Первым шагом является создание проекта книги Excel.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект книги Excel с именем **Моя панель действий Excel**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект книги Excel с именем **Моя панель действий Excel**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет **Моя панель действий Excel** проекта **обозревателе решений**.  
   
-## <a name="adding-a-new-data-source-to-the-project"></a>Добавление нового источника данных в проект  
+## <a name="add-a-new-data-source-to-the-project"></a>Добавить новый источник данных в проект  
   
-#### <a name="to-add-a-new-data-source-to-the-project"></a>Чтобы добавить новый источник данных в проект  
+### <a name="to-add-a-new-data-source-to-the-project"></a>Чтобы добавить новый источник данных в проект  
   
-1.  Если окно **Источники данных** не отображается, откройте его, выбрав в строке меню пункты **Вид**, **Другие окна**, **Источники данных**.  
+1.  Если **источники данных** окно не отображается, откройте его в строке меню, выберите **представление** > **другие окна**  >   **Источники данных**.  
   
 2.  Выберите команду **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.  
   
@@ -90,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
  Мастер добавит **поставщики** таблицы и **продуктов** таблицы, к **источники данных** окна. Он также добавляет типизированный набор данных в проект, который является видимым в **обозревателе решений**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Добавление элементов управления на лист  
+## <a name="add-controls-to-the-worksheet"></a>Добавление элементов управления на лист  
  Добавьте <xref:Microsoft.Office.Tools.Excel.NamedRange> управления и <xref:Microsoft.Office.Tools.Excel.ListObject> первый лист элемента управления.  
   
-#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Добавление элемента управления NamedRange и элемент управления ListObject  
+### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Добавление элемента управления NamedRange и элемент управления ListObject  
   
 1.  Убедитесь, что **Мои Pane.xlsx действия Excel** книга открыта в конструкторе Visual Studio с `Sheet1` отображается.  
   
@@ -113,10 +114,10 @@ ms.lasthandoff: 04/16/2018
   
 7.  Только в C#, выберите **suppliersBindingSource** на область компонентов, а также укажите **модификаторы** свойства **внутренний** в **свойства** окна.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Добавление элементов управления в панели действий  
- Далее необходимо, чтобы элемент управления панели действий, который содержит поле со списком.  
+## <a name="add-controls-to-the-actions-pane"></a>Добавление элементов управления в панели действий  
+ Далее необходимо, чтобы элемент управления панели действий, который имеет поле со списком.  
   
-#### <a name="to-add-an-actions-pane-control"></a>Чтобы добавить элемент управления панели действий  
+### <a name="to-add-an-actions-pane-control"></a>Чтобы добавить элемент управления панели действий  
   
 1.  Выберите **Моя панель действий Excel** проекта в **обозревателе решений**.  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  В **Добавление нового элемента** выберите **управления панели действий**, назовите его **ActionsControl**и нажмите кнопку **добавить**.  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Для добавления элементов управления Windows Forms с привязкой к данным элемента управления панели действий  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Для добавления элементов управления Windows Forms с привязкой к данным элемента управления панели действий  
   
 1.  Из **стандартные элементы управления** вкладках **элементов**, перетащите <xref:System.Windows.Forms.ComboBox> элемента управления к элементу управления панели действий.  
   
@@ -132,10 +133,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Изменение размера пользовательского элемента управления в соответствии со списком.  
   
-## <a name="binding-the-control-on-the-actions-pane-to-data"></a>Привязка к данным элемента управления в панели действий  
- В этом разделе будет Настройка источника данных объекта <xref:System.Windows.Forms.ComboBox> с одним источником данных, как <xref:Microsoft.Office.Tools.Excel.NamedRange> управления на листе.  
+## <a name="bind-the-control-on-the-actions-pane-to-data"></a>Привязка к данным элемента управления в панели действий  
+ В этом разделе можно задать источник данных <xref:System.Windows.Forms.ComboBox> с одним источником данных, как <xref:Microsoft.Office.Tools.Excel.NamedRange> управления на листе.  
   
-#### <a name="to-set-data-binding-properties-of-the-control"></a>Чтобы задать свойства привязки данных элемента управления  
+### <a name="to-set-data-binding-properties-of-the-control"></a>Чтобы задать свойства привязки данных элемента управления  
   
 1.  Щелкните правой кнопкой мыши элемент управления панели действий и нажмите кнопку **Просмотр кода**.  
   
@@ -148,12 +149,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## <a name="showing-the-actions-pane"></a>Отображение панели действий  
- Панель действий не отображается, пока не будет добавлен элемент управления во время выполнения.  
+## <a name="show-the-actions-pane"></a>Показать панель действий  
+ Панель действий невидима, пока не будет добавлен элемент управления во время выполнения.  
   
 #### <a name="to-show-the-actions-pane"></a>Чтобы отобразить панель действий  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши ThisWorkbook.vb или ThisWorkbook.cs и нажмите кнопку **Просмотр кода**.  
+1.  В **обозревателе решений**, щелкните правой кнопкой мыши *ThisWorkbook.vb* или *ThisWorkbook.cs*, а затем нажмите кнопку **Просмотр кода**.  
   
 2.  Создать новый экземпляр пользовательского элемента управления в `ThisWorkbook` класса.  
   
@@ -165,12 +166,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="testing-the-application"></a>Тестирование приложения  
+## <a name="test-the-application"></a>Тестирование приложения  
  Теперь можно проверить документ, чтобы убедиться, что панель действий открывается при открытии документа, и что элементы управления имеют иерархического отношения.  
   
-#### <a name="to-test-your-document"></a>Проверка документа  
+### <a name="to-test-your-document"></a>Проверка документа  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  Убедитесь, что панель действий становится видимой.  
   
@@ -181,7 +182,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Следующие шаги  
  Ниже приводятся некоторые из возможных последующих задач.  
   
--   Привязка данных к элементам управления в Word. Дополнительные сведения см. в разделе [Пошаговое руководство: привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Привязка данных к элементам управления в Word. Дополнительные сведения см. в разделе [Пошаговое руководство: привязки данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 -   Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   

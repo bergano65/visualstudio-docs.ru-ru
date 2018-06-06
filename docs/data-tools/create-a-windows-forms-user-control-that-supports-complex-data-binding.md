@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a1922c3b79a718b3a239280561bf954165332e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e48e6a3a5694a518f30b3d9ec749d01b1e7127b8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746508"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает сложную привязку данных
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .
 
-1. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.
+1. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **Windows Desktop**.
 
 1. В средней области выберите **приложение Windows Forms** тип проекта.
 

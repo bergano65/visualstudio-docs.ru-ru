@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Добавление элементов управления на лист во время выполнения в VSTO надстройки проекта | Документы Microsoft'
+title: 'Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47c647e2b3af6941f7b4a4d6f28eccfac2b31e2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6f972f2daa734bbabcea39ada9270acb7644db6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767341"
 ---
-# <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
   Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  **Применяется к:** информация в этой статье относится к проектам надстроек VSTO для Excel. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
@@ -46,16 +47,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Excel  
   
-## <a name="creating-a-new-excel-vsto-add-in-project"></a>Создание проекта надстройки VSTO для Excel  
+## <a name="create-a-new-excel-vsto-add-in-project"></a>Создание нового проекта надстройки VSTO для Excel  
  Для начала создайте проект надстройки VSTO для Excel.  
   
-#### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Создание проекта надстройки VSTO для Excel  
+### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Создание проекта надстройки VSTO для Excel  
   
 1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], создайте проект надстройки VSTO для Excel с именем **ExcelDynamicControls**. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  Добавьте ссылку на **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** сборки. Эта ссылка потребуется для программного добавления элемента управления Windows Forms на лист далее в этом пошаговом руководстве.  
   
-## <a name="providing-a-ui-to-add-controls-to-a-worksheet"></a>Предоставление пользовательского интерфейса для добавления элементов управления на лист  
+## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Предоставление пользовательского интерфейса для добавления элементов управления на лист  
  Добавьте настраиваемую вкладку на ленту Excel. Пользователи могут установить флажки на вкладке, чтобы добавить элементы управления на лист.  
   
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>Предоставление пользовательского интерфейса для добавления элементов управления на лист  
@@ -91,10 +92,10 @@ ms.lasthandoff: 04/16/2018
     |**Name**|**Элемент управления ListObject**|  
     |**Label**|**Элемент управления ListObject**|  
   
-## <a name="adding-controls-to-the-worksheet"></a>Добавление элементов управления на лист  
+## <a name="add-controls-to-the-worksheet"></a>Добавление элементов управления на лист  
  Управляемые элементы управления можно добавить только в ведущие элементы, которые служат контейнерами. Поскольку проекты надстроек VSTO работают с любой открытой книгой, надстройка VSTO преобразует лист в ведущий элемент или получает существующий ведущий элемент перед добавлением элемента управления. Добавьте код в обработчик событий нажатием каждого элемента управления, чтобы создать ведущий элемент <xref:Microsoft.Office.Tools.Excel.Worksheet>, основанный на открытом листе. Затем добавьте <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> в выделенный фрагмент на листе.  
   
-#### <a name="to-add-controls-to-a-worksheet"></a>Добавление элементов управления на лист  
+### <a name="to-add-controls-to-a-worksheet"></a>Добавление элементов управления на лист  
   
 1.  В конструкторе лент дважды щелкните **кнопку**.  
   
@@ -107,7 +108,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]  
   
-3.  В **обозревателе решений**, выберите файл Ribbon1.cs или Ribbon1.vb.  
+3.  В **обозревателе решений**выберите *Ribbon1.cs* или *Ribbon1.vb*.  
   
 4.  На **представление** меню, нажмите кнопку **конструктор**.  
   
@@ -134,16 +135,16 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
-## <a name="removing-controls-from-the-worksheet"></a>Удаление элементов управления с листа  
- Элементы управления не сохраняются при сохранении и закрытии листа. Все созданные элементы управления Windows Forms следует удалить программными средствами до сохранения листа, при этом только контур элемента управления появится при повторном открытии книги. Добавьте код в событие <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>, которое удаляет элементы управления Windows Forms из коллекции элементов управления созданного ведущего элемента управления. Дополнительные сведения см. в разделе [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+## <a name="remove-controls-from-the-worksheet"></a>Удалить элементы управления с листа  
+ Элементы управления не сохраняются при сохранении и закрытии листа. Все созданные элементы управления Windows Forms следует удалить программными средствами до сохранения листа, при этом только контур элемента управления появится при повторном открытии книги. Добавьте код в событие <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>, которое удаляет элементы управления Windows Forms из коллекции элементов управления созданного ведущего элемента управления. Дополнительные сведения см. в разделе [сохранение динамических элементов управления в документы Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
-#### <a name="to-remove-controls-from-the-worksheet"></a>Удаление элементов управления с листа  
+### <a name="to-remove-controls-from-the-worksheet"></a>Удаление элементов управления с листа  
   
-1.  В **обозревателе решений**, выберите файл ThisAddIn.cs или ThisAddIn.vb.  
+1.  В **обозревателе решений**выберите *ThisAddIn.cs* или *ThisAddIn.vb*.  
   
 2.  На **представление** меню, нажмите кнопку **кода**.  
   
-3.  Добавьте следующий метод в класс ThisAddIn. Этот код получает первый лист в книге, а затем использует метод `HasVstoObject`, чтобы проверить, содержит ли лист созданный объект листа. Если созданный объект листа содержит элементы управления, код получает его и проходит по коллекции элементов управления, удаляя элементы управления.  
+3.  Добавьте следующий метод в класс `ThisAddIn` . Этот код получает первый лист в книге, а затем использует метод `HasVstoObject`, чтобы проверить, содержит ли лист созданный объект листа. Если созданный объект листа содержит элементы управления, код получает его и проходит по коллекции элементов управления, удаляя элементы управления.  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]  
@@ -152,12 +153,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
-## <a name="testing-the-solution"></a>Тестирование решения  
- Добавьте элементы управления на лист, выбрав их в настраиваемой вкладке на ленте. При сохранении листа эти элементы управления будут удалены.  
+## <a name="test-the-solution"></a>Тестирование решения  
+ Добавление элементов управления на лист, выбрав их в настраиваемой вкладке на ленте. При сохранении листа эти элементы управления будут удалены.  
   
-#### <a name="to-test-the-solution"></a>Тестирование решения  
+### <a name="to-test-the-solution"></a>Тестирование решения  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  Выберите любую ячейку на листе Sheet1.  
   
@@ -190,7 +191,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Решения Excel](../vsto/excel-solutions.md)   
- [Элементы управления в документах Office Windows Forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Элементы управления в документах Office Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
  [Элемент управления ListObject](../vsto/listobject-control.md)  

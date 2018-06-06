@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765379"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Публикация приложений ASP.NET или ASP.NET Core для службы приложений Azure с помощью Visual Studio
 
@@ -26,9 +27,9 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
+* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET и веб-разработки** рабочей нагрузки и. **NET разработки настольных приложений** рабочей нагрузки. Для приложения .NET Core, необходим. **NET Core** рабочей нагрузки.
 
-    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
@@ -81,4 +82,4 @@ ms.lasthandoff: 05/10/2018
 В этом кратком руководстве вы узнали, как использовать Visual Studio для создания профиля публикации для развертывания в Azure. Вы можете также настроить публикацию профиля путем импорта параметрами публикации из службы приложений Azure.
 
 > [!div class="nextstepaction"]
-> [Импорт параметров публикации и развертывания в Azure](tutorial-import-publish-settings-azure.md)
+> [Импорт параметров публикации и развертывание в Azure](tutorial-import-publish-settings-azure.md)

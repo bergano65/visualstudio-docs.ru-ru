@@ -23,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc78726146b67a39f8e8988dda6c7d2baf5c49b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0c496c6d460b11efc4ccb6e1d8e7b5489efacd93
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691928"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766445"
 ---
-# <a name="creating-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
+# <a name="create-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] предоставляет средства для создания пользовательских рабочих процессов, которые управляют жизненным циклом документов и элементов списка веб-сайте SharePoint. Предоставляется конструктор, набор элементов управления действием и ссылки на необходимые сборки. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] также включает **мастер настройки SharePoint**, помогающие создавать и настраивать рабочие процессы.  
   
  Список предварительных требований для создания проектов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], в разделе [требования к разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Дополнительные сведения о SharePoint см. в разделе [Microsoft продуктов и технологий SharePoint](http://go.microsoft.com/fwlink/?LinkId=178470).  
@@ -53,7 +53,7 @@ ms.locfileid: "34691928"
   
  Дополнительные сведения о типах рабочего процесса см. в разделе [типов рабочих процессов](http://go.microsoft.com/fwlink/?LinkId=178995).  
   
-### <a name="using-the-wizard"></a>С помощью мастера
+### <a name="use-the-wizard"></a>С помощью мастера
  При создании проекта рабочего процесса SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], сначала необходимо указать его параметры в **мастер настройки SharePoint**. Мастер использует эти параметры для создания проекта в **обозревателе решений**. Этот проект содержит файл кода, несколько файлов, которые будут использоваться для развертывания рабочего процесса, и ссылки на сборки, необходимые для создания настраиваемого рабочего процесса SharePoint.  
   
  После создания рабочего процесса, можно изменить его свойства в окне «Свойства». Несмотря на то, что многие свойства можно изменять непосредственно в окне «Свойства», некоторые потребуется нажать кнопку с многоточием (![эллипс конструктора ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "эллипс конструктора ASP.NET Mobile")) для Измените их значения. Эта кнопка перезапускает **мастер настройки SharePoint**. После внесения изменив значения свойств, выберите **Готово** кнопку, чтобы подтвердить их.  
@@ -124,7 +124,7 @@ ms.locfileid: "34691928"
  Можно также собирать сведения от пользователей с помощью свойств элемента в библиотеке SharePoint или списке. Основного файла кода (Workflow1.cs или Workflow1.vb) объявляет экземпляр с именем класса Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties `workflowProperties`. Используйте `workflowProperties` объекта для доступа к свойствам библиотеки или списка в коде. Пример см. в разделе [Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).  
   
 ## <a name="debug-a-sharepoint-workflow-template"></a>Отладка рабочих процессов SharePoint
- Можно отлаживать проект рабочего процесса SharePoint таким же образом, как другие [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] веб-проектов. При запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] использует параметры, указываемые в **мастер настройки SharePoint** для открытия соответствующего веб-сайта SharePoint и автоматическое связывание шаблона рабочего процесса с помощью соответствующую библиотеку или список. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Кроме того, присоединяет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик нужно [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] процесса с именем w3wp.exe.  
+ Можно отлаживать проект рабочего процесса SharePoint таким же образом, как другие [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] веб-проектов. При запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] использует параметры, указываемые в **мастер настройки SharePoint** для открытия соответствующего веб-сайта SharePoint и автоматическое связывание шаблона рабочего процесса с помощью соответствующую библиотеку или список. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Кроме того, присоединяет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] процесс так называемого *w3wp.exe*.  
   
  Чтобы проверить рабочий процесс, необходимо запустить ее вручную. Дополнительные сведения см в подразделе «Отладка рабочих процессов» раздела [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладке веб-приложений см. в разделе [отладки веб-приложений](/visualstudio/debugger/debugging-web-applications-and-script).  
   
@@ -140,7 +140,7 @@ ms.locfileid: "34691928"
 |-----------|-----------------|  
 |[Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Пошаговые инструкции по созданию и отладке простого [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса.|  
 |[Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Описание по шагам процедуры для создания более полнофункциональных [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] рабочего процесса с формами связывания и запуска.|  
-|[Пошаговое руководство. Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Дополнение к разделу [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) путем добавления приложения дополнительных ASPX-страницу, отчеты на данные, введенные в рабочем процессе.|  
+|[Пошаговое руководство. Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Дополнение к разделу [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) путем добавления дополнительного *.aspx* страница приложения, отображающая данные, указанные в рабочем процессе.|  
 |[Пошаговое руководство. Создание пользовательского действия для рабочего процесса сайта](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Показано, как выполнять две основные задачи: Создание рабочего процесса на уровне сайта и создание пользовательского действия рабочего процесса.|  
 |[Пошаговое руководство. Импорт рабочего процесса с возможностью повторного использования из конструктора SharePoint в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Показано, как импортировать для повторного использования декларативных рабочих процессов, созданных в SharePoint Designer 2010, в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint.|  
   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751901"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Как: получить общие сведения о наборе схем с использованием представления графика
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 05/25/2018
 
 6.  Выберите **набора схем** узел в **обозреватель XML-схем** и перетащите узел в представлении графика область конструктора. Необходимо увидеть все глобальные узлы и стрелочки, соединяющие связанные друг с другом узлы.
 
-     ![Графическое представление](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+     ![Представление диаграммы](../xml-tools/media/relationshipingraphview.gif)
 
 7.  Щелкните любой узел в области конструктора, и строка навигатора отобразит расположение выбранного узла в наборе схем.
 

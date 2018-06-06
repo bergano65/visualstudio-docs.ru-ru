@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 110cad9883cbb129368dac4d481443a9f5d9813c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693946"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751593"
 ---
 # <a name="xml-schema-explorer"></a>Обозреватель схемы XML
 
@@ -60,7 +60,7 @@ ms.locfileid: "34693946"
 
 Ниже приведен пример структуры дерева:
 
-![Обозреватель XML-схем](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")
+![Обозреватель схемы XML](../xml-tools/media/xmlschemaexplorer.gif)
 
 ## <a name="selection-and-activation"></a>Выделение и активация
  Чтобы выделить и выбрать узел, щелкните один раз обозреватель схем.

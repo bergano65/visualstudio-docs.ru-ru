@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766744"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в службе приложений Azure путем импорта параметров публикации в Visual Studio
 
@@ -37,9 +38,9 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
+* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и. **NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также. **NET Core** рабочей нагрузки.
 
-    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 * Создайте службу приложений Azure. Подробные инструкции см. в разделе [развернуть веб-приложение ASP.NET Core в Azure, с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). 
 
@@ -92,11 +93,11 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Импорт параметров публикации в Visual Studio и развертывание
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом учебнике создан файл параметров публикации, импортировать его в Visual Studio и развертывания приложения ASP.NET в службе приложений Azure.
+В этом учебнике создан файл параметров публикации, импортировать его в Visual Studio и развертывания приложения ASP.NET в службе приложений Azure. Вы можете Обзор публикации параметров в Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Первое знакомство с развертыванием](../deployment/deploying-applications-services-and-components.md)

@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56c8bd9ac0c3745e8096dc12fbfee730ba9558a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef0b06be65322dc6a15f92b1d808d585960f0331
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746070"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>С помощью программы C++ основные рекомендации
 Основные правила C++ — переносимой ряд рекомендации, правила и рекомендации о написании кода на C++, созданный специалистами C++ и конструкторы. В настоящее время Visual Studio поддерживает подмножество этих правил в рамках его средств анализа кода для C++. Средства проверки направляющих core устанавливаются по умолчанию в Visual Studio 2017 г и являются [предоставляется в виде пакета NuGet для Visual Studio 2015](#vs2015_corecheck).
@@ -25,11 +26,11 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Включить правила проверки основных C++ при анализе кода
  Можно включить анализ кода в проекте, установив **включить анализ кода в построении** флажок в **анализа кода** раздел **страницы свойств** диалоговое окно для ваш проект.
 
- ![Страницы свойств для настройки общих анализа кода](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Страницы свойств для настройки общих анализа кода](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  Правила проверки основных C++ представляют собой расширения наборы правил по умолчанию при включении анализа кода. Поскольку правила C++ Проверьте ядра находятся в разработке, широко применяются некоторые правила и некоторые может быть не готова для использования на весь код, но по-прежнему может быть информативной. Правила можно разделить на две группы: освобождение и экспериментальный. Можно выбрать, будет ли выполняться отмененной или экспериментальный правила в свойствах проекта.
 
- ![Страницы свойств для настройки расширения средств анализа кода](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Страницы свойств для настройки расширения средств анализа кода](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Чтобы включить или отключить наборов правил проверки основных C++, откройте **страницы свойств** диалоговое окно для вашего проекта. В разделе **свойства конфигурации**, разверните **анализа кода**, **расширения**. В раскрывающемся списке элемента управления рядом с **включить C++ Core Проверьте (запущен)** или **включить C++ Core Проверьте (экспериментально)**, выберите **Да** или **нет**. Выберите **ОК** или **применить** для сохранения изменений.
 
@@ -228,7 +229,7 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 2.  В **диспетчера пакетов NuGet** найдите Microsoft.CppCoreCheck.
 
-     ![Диспетчер пакетов NuGet в окне отображаются пакета CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![В окне диспетчера пакетов NuGet отображаются CppCoreCheck пакета](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Выберите пакет Microsoft.CppCoreCheck, а затем выберите **установить** кнопку, чтобы добавить правила в проект.
 

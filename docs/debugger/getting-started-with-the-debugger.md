@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766263"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Учебник: Дополнительные сведения для отладки с помощью Visual Studio
 
@@ -39,6 +40,14 @@ ms.lasthandoff: 04/26/2018
 > * Отслеживание значений переменных в подсказках по данным и окна отладчика
 > * Проверить стек вызовов
 > * Использование помощника по исправлению ошибок
+
+## <a name="prerequisites"></a>Предварительные требования
+
+* Необходимо иметь Visual Studio 2017 г. установлен и. **NET разработки настольных приложений** рабочей нагрузки.
+
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+
+    Если необходимо установить рабочую нагрузку, но уже установлено приложение Visual Studio, нажмите кнопку **откройте установщик Visual Studio** ссылку в левой области **новый проект** диалоговое окно (выберите **файл**  >  **Новый** > **проекта**). Запускается Visual Studio Installer. Выберите. **NET разработки настольных приложений** рабочей нагрузки, нажмите кнопку **изменить**.
 
 ## <a name="start-the-debugger"></a>Запустите отладчик.
 

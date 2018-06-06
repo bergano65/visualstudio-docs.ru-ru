@@ -12,11 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746771"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на сервере IIS в Azure в Visual Studio 2017 г.
 
@@ -196,7 +197,7 @@ ms.lasthandoff: 05/24/2018
 
 ### <a name="BKMK_attach"></a> Подключение к приложению ASP.NET с компьютера с Visual Studio
 
-1. На компьютере с Visual Studio, откройте **MyASPApp** решения.
+1. На компьютере с Visual Studio откройте решение, которое вы пытаетесь отладить (**MyASPApp** Если вы следуете инструкциям в этой статье).
 2. В Visual Studio щелкните **Отладка > присоединить к процессу** (Ctrl + Alt + P).
 
     > [!TIP]

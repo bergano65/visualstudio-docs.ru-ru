@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 622ac8b6fd9f003c8bfccbd953f4b5f51cd00332
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766289"
 ---
-# <a name="developing-sharepoint-solutions"></a>Разработка решений SharePoint
+# <a name="develop-sharepoint-solutions"></a>Разработка решений SharePoint
   В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов см. в разделе [проект SharePoint и шаблоны элементов проекта](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.  
   
- Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) и [Сборка надстроек SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
+ Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) и [Создание надстроек SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
-## <a name="elements-of-a-sharepoint-project"></a>Элементы проекта SharePoint  
+## <a name="elements-of-a-sharepoint-project"></a>Элементы проекта SharePoint
  Узлы в проекте SharePoint называются *элементами SharePoint*. Элементы SharePoint также могут содержать один или несколько вложенных файлов, называемых *файлами элементов SharePoint*, такие как [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлы конфигурации, формы aspx и многое другое.  
   
  Вместо создания проекта с помощью шаблона с уже имеющимися файлами элементов проекта можно воспользоваться шаблоном **Пустой проект** , чтобы создать новый проект SharePoint и затем добавить элементы проекта вручную. Проекты SharePoint могут также дополнительно содержать один или несколько файлов функций (для активации в SharePoint) и файл пакета для распространения проекта.  
   
-### <a name="special-nodes"></a>Особые узлы  
+### <a name="special-nodes"></a>Особые узлы
  Каждый проект SharePoint содержит два узла, которые нельзя переименовывать, удалять, вырезать, копировать и перетаскивать из проекта. Это узлы:  
   
--   Компоненты  
-  
+-   Компоненты    
 -   Пакет  
   
  Оба эти узла всегда присутствуют в проекте SharePoint, даже если никакие другие компоненты и пакеты не определены в проекте.  
   
-#### <a name="features-node"></a>Узел «Функции»  
+#### <a name="features-node"></a>Узел функции
  Узел **Функции** содержит одну или несколько функций проекта SharePoint. Функция — это контейнер расширений для SharePoint. После развертывания функции на сервере SharePoint она может быть включена в список определений сайтов или активирована индивидуально администраторами SharePoint на сайтах SharePoint. Дополнительные сведения см. в разделе [Работа с компонентами](http://go.microsoft.com/fwlink/?LinkID=147704).  
   
  При добавлении элемента, например типа содержимого или экземпляра списка, в проект SharePoint он добавляется в функцию в узле **Функции** . Область элемента определяет, куда добавляется элемент: в новую или существующую функцию. Если область нового элемента совпадает с областью существующей функции, он добавляется в эту функцию. В противном случае элемент добавляется в новую функцию.  
@@ -52,19 +52,19 @@ ms.lasthandoff: 05/17/2018
   
  Когда функция добавляется в проект SharePoint, она появляется в **обозревателе решений** в виде узла с заданным по умолчанию именем Feature*x*.feature, где *x* — уникальный номер. После развертывания функции на сервере SharePoint администратор SharePoint может активировать ее, тем самым сделав ее доступной для пользователей сайта SharePoint.  
   
-#### <a name="package-node"></a>Узел «Пакет»  
+#### <a name="package-node"></a>Узел пакета
  Узел **Пакет** содержит один файл, который реализует механизм распространения проекта SharePoint. Этот файл, называемый *пакета решения*, является. На основе CAB-файла с. Расширение WSP. Пакет решения является файлом развертывания и повторного использования, который содержит набор функций, определений сайтов и сборок, применимых к сайтам SharePoint, которые можно включать и отключать индивидуально. **Пакета** узел всегда содержит файл с именем Package.wspdef — [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файл определения пакета. После развертывания пакета на сервере, где выполняется SharePoint, администратор SharePoint может установить его и активировать его функции.  
   
  Можно просмотреть или изменить содержимое пакета в конструкторе пакетов, дважды щелкнув узел пакета или открыв его контекстное меню и выбрав **откройте**. Дополнительные сведения см. в разделе [создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
-## <a name="sharepoint-project-and-project-item-properties"></a>Свойства проектов и элементов проектов SharePoint  
+## <a name="sharepoint-project-and-project-item-properties"></a>Проект SharePoint и свойств элементов проекта
  Свойства проектов SharePoint, так же как и свойства других проектов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], отображаются в окне «Свойства» и на странице свойств. Отображаемые свойства зависят от того, какой узел выбран.  
   
  При выборе проекта SharePoint, элемента проекта или узла файла элемента проекта в **обозревателе решений**в окне «Свойства» или на странице свойств отображаются следующие свойства:  
   
-### <a name="project-properties"></a>Свойства проекта  
+### <a name="project-properties"></a>Свойства проекта
   
-|Имя свойства|Описание|  
+|Имя свойства|Описание:|  
 |-------------------|-----------------|  
 |Активная конфигурация развертывания|Указывает ряд шагов, выполненных в процессе развертывания. Дополнительные сведения см. в разделе [как: изменение конфигурации развертывания SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
 |Место развертывания сборки|Определяет, где находятся *сборки приложения SharePoint* . Допустимое расположение сборок: либо *GlobalAssemblyCache* (по умолчанию), либо *WebApplication*.<br /><br /> Если свойству *Sandboxed Solution* присвоено значение **true**, это свойство отключается.|  
@@ -82,9 +82,9 @@ ms.lasthandoff: 05/17/2018
   
  При выборе файла элемента SharePoint (например, рабочего процесса или функции в узле «Функции») в окне «Свойства» отображаются следующие свойства:  
   
-### <a name="project-item-properties"></a>Свойства элемента проекта  
+### <a name="project-item-properties"></a>Свойства элемента проекта
   
-|Имя свойства|Описание|  
+|Имя свойства|Описание:|  
 |-------------------|-----------------|  
 |Устранение конфликта развертывания|Указывает действие к исполнению при развертывании элемента проекта, свойства которого идентичны свойствам элемента, уже существующего на сервере. Дополнительные сведения см. в разделе [Устранение неполадок SharePoint упаковки и развертывания](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|  
 |Свойства компонента|Задает набор значений (сохраняемых в виде пар «ключ — значение»), который включается в состав функции при ее развертывании в SharePoint. После развертывания функции значения свойств можно использовать в коде. Дополнительные сведения см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
@@ -93,9 +93,9 @@ ms.lasthandoff: 05/17/2018
 |Выходные ссылки проекта|Задает зависимость, например сборку, которую должен запустить элемент проекта. Дополнительные сведения см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |Записи безопасных элементов управления|Задает элементы управления, к которым можно безопасно открыть доступ для редактирования пользователям, не являющимся доверенными. Дополнительные сведения см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
-### <a name="project-item-file-properties"></a>Свойства файла элемента проекта  
+### <a name="project-item-file-properties"></a>Свойства файла элемента проекта
   
-|Имя свойства|Описание|  
+|Имя свойства|Описание:|  
 |-------------------|-----------------|  
 |Действие при сборке|Определяет, как файл связан с процессами сборки и развертывания. Дополнительные сведения см. в разделе [Свойства файлов](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
 |Копировать в выходной каталог|Указывает, будет ли файл (файлы) исходного кода скопирован в выходной каталог. Может принимать одно из следующих значений:<br /><br /> -   *Не копировать*<br />-   *Всегда копировать*<br />-   *Копировать более позднюю версию*<br /><br /> Дополнительные сведения см. в разделе [Свойства файлов](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
@@ -104,13 +104,13 @@ ms.lasthandoff: 05/17/2018
 |Местоположение развертывания|Полный путь к файлу на сервере SharePoint. Этот путь состоит из корневого каталога развертывания и вложенных свойств пути развертывания.|  
 |Путь развертывания|Относительный путь к файлу на сервер SharePoint, например Workflow1\\. Полный путь к файлу создается путем объединения значения *Deployment Path* со значением *Deployment Root* до конца.<br /><br /> При выборе значения из *RootFile* для *тип развертывания* изменения свойств *корневого каталога развертывания* на {SharePointRoot}\\, в результате Полный путь {SharePointRoot} \Workflow1\\. Дополнительные сведения см. в разделе [упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Строка. Корневая папка, в которой файл развертывается на сервере SharePoint. Например, {SharePointRoot} \Template\Features\\{FeatureName}\\.<br /><br /> Значение свойства *Deployment Root* определяется параметром *Deployment Type* .|  
-|Deployment Type|Тип развертывания файла, определяющий его значение *Deployment Root* . Может принимать одно из следующих значений:<br /><br /> NoDeployment: \<нет значения ><br /><br /> Манифест элемента: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: {SharePointRoot} \Resources\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Тип развертывания файла, определяющий его значение *Deployment Root* . Может принимать одно из следующих значений:<br /><br /> NoDeployment:  *\<нет значения >*<br /><br /> Манифест элемента: *\Template\Features {SharePointRoot}\\{FeatureName}*\\<br /><br /> ElementFile: *\Template\Features {SharePointRoot}\\{FeatureName}\\*<br /><br /> TemplateFile: *{SharePointRoot} \Template\\*<br /><br /> RootFile: *{SharePointRoot}\\*<br /><br /> GlobalResource: *\Resources {SharePointRoot}\\*<br /><br /> ClassResource: *{ClassResourcePath}\\*<br /><br /> Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Имя файла|Имя файла или папки для файла элемента.|  
 |Полный путь|Расположение файла для элемента. (только для чтения).|  
   
-## <a name="related-topics"></a>См. также  
+## <a name="related-topics"></a>См. также
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
 |[Шаблоны проектов и элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Описание шаблонов проектов и элементов проектов SharePoint, доступных в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Практическое руководство. Добавление элементов в проект SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Описание процедуры добавления новых или существующих элементов в проект SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/17/2018
 |[Безопасность решений SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Рассмотрение вопросов безопасности при разработке решений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Диалоговое окно Выбор URL-адрес &#40;разработка приложений SharePoint в Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Описание диалогового окна, которое можно использовать для добавления ссылок в виде путей к ресурсам в проекте или на локальном сервере SharePoint.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Приступая к работе &#40;разработка приложений SharePoint в Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751745"
 ---
 # <a name="search-the-schema-set"></a>Поиск набора схем
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/24/2018
 
  Выполните поиск по ключевым словам посредством ввода подстроки в **поиск набора схем** текстовое поле **обозреватель XML-схем** инструментов.
 
- ![Поиск по ключевому слову обозреватель схемы XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Поиск по ключевым словам в обозревателе схемы XML](../xml-tools/media/schemaexplorersearch.gif)
 
  **Обозреватель XML-схем** выполняет поиск схемы для следующих атрибутов:
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/24/2018
 
  Результаты поиска можно добавить в рабочую область, щелкнув **Добавить выделенные узлы в рабочую область** кнопку на панели сводных результатов.
 
- ![Результаты поиска в обозревателе схемы XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Результат поиска в обозревателе схемы XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Очистить результаты поиска
 

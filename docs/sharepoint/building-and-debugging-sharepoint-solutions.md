@@ -18,31 +18,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e04f60ea5cfe72235bac6630b413c9c437255681
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4d0bc3185b0684f96bf31cc127cd852448afe772
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691291"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765074"
 ---
-# <a name="building-and-debugging-sharepoint-solutions"></a>Построение и отладка решений SharePoint
+# <a name="build-and-debug-sharepoint-solutions"></a>Построение и отладка решений SharePoint
   Как правило, построение и отладка решений SharePoint является таким же, как построение и отладка других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. В этом разделе описываются существующие различия.  
   
 ## <a name="project-output-for-sharepoint-solutions"></a>Выходной файл проекта для решений SharePoint
- Построение решений SharePoint создаются сборки и файл пакета (.wsp) решения. Следующая таблица показывает расположение этих файлов во время построения.  
+ Построение решений SharePoint создаются сборки и пакет решения (*.wsp*) файла. Следующая таблица показывает расположение этих файлов во время построения.  
   
 |Построение элементов|Выходная папка|  
 |----------------|-------------------|  
-|Сборки, база данных программы (PDB) и WSP-файлы.|*Имя_проекта*\bin\debug или *ProjectName*\bin\release|  
-|Файлы элементов проекта SharePoint.|*Имя_проекта*\pkg\debug или *ProjectName*\pkg\release|  
-|Построение промежуточных файлов.|*Имя_проекта*\obj\debug или *ProjectName*\obj\release|  
-|Пакет промежуточных файлов.|*Имя_проекта*\pkgobj\debug или *ProjectName*\pkgobj\release|  
+|Сборки, база данных программы (*.pdb*), и *.wsp* файлов.|*{ProjectName} \bin\debug* или *\bin\release {ProjectName}*|  
+|Файлы элементов проекта SharePoint.|*{ProjectName} \pkg\debug* или *\pkg\release {ProjectName}*|  
+|Построение промежуточных файлов.|*{ProjectName} \obj\debug* или *\obj\release {ProjectName}*|  
+|Пакет промежуточных файлов.|*{ProjectName} \pkgobj\debug* или *\pkgobj\release {ProjectName}*|  
   
 ## <a name="build-sharepoint-solutions"></a>Построение решений SharePoint
  Для построения решений SharePoint на компьютере разработчика должен иметь правильную версию установлен SharePoint server. В противном случае построение решений SharePoint совпадает с создания других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [как: построение решений SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Отладка и тестирование решений SharePoint
- Перед отладкой [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] копирует пакет .wsp на сервер SharePoint, активирует сайт и веб-компоненты и в некоторых случаях, запускает проект. В других случаях может понадобиться открыть проект вручную. Дополнительные сведения см. в разделе [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) и [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
+ Перед отладкой [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] копии *.wsp* пакет сервер SharePoint, активирует сайт и веб-компоненты, а в некоторых случаях, запускает проект. В других случаях может понадобиться открыть проект вручную. Дополнительные сведения см. в разделе [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) и [отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
   
 ## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>Отладка и проверка решений SharePoint с помощью возможностей ALM
  Возможности Visual Studio ALM, такие как модульное тестирование и IntelliTrace, обеспечивают качественный поиск проблем в решениях SharePoint. Профилирование позволяет найти и определить области с проблемами производительности в решениях SharePoint. Дополнительные сведения см. в разделе [проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) и [профилирование производительности приложений SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  

@@ -11,13 +11,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748938"
 ---
-# <a name="navigate-and-update-a-model-in-program-code"></a>Перейдите и обновления модели в программном коде
+# <a name="navigate-and-update-a-model-in-program-code"></a>Работа с моделями и изменение их в коде программы
 
 Можно написать код для создания и удаления элементов модели, задавать их свойства и создания и удаления связи между элементами. Все изменения должны выполняться в рамках транзакции. Если элементы будут просмотрены в диаграмме, диаграмме будет «корректировке» автоматически в конце транзакции.
 
@@ -55,11 +56,11 @@ ms.lasthandoff: 04/26/2018
 ##  <a name="example"></a> Пример определения DSL
  Это основная часть DslDefinition.dsl примеры в этом разделе:
 
- ![Схема определения DSL &#45; модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![Схема определения DSL &#45; модель семейного дерева](../modeling/media/familyt_person.png)
 
  Эта модель представляет собой экземпляр этого DSL:
 
- ![Модель1 семейного древа Тюдор](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![Модель1 семейного древа Тюдор](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>Ссылки и пространства имен
  Выполнение кода в этом разделе, необходимо создать ссылки:
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  В доменный язык DSL элемента модели домена, который представляет понятие, например пользователя или песню, отделен от элемент фигуры, который представляет содержимое, отображаемое на диаграмме. Элемент модели домена хранит важные свойства и связи понятий. Элемент фигуры сохраняет размер, положение и цвет объекта представления на диаграмме, а макет ее компонентов.
 
 ### <a name="presentation-elements"></a>Элементы представления
- ![Схема классов базовых типов фигур и элементов](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![Схема классов базовых типов фигур и элементов](../modeling/media/dslshapesandelements.png)
 
  В определении DSL каждого элемента, который указывается создает класс, который является производным от одного из следующих стандартных классов.
 
@@ -509,7 +510,7 @@ partial class MyDiagram
  Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в активном состоянии в хранилище. Таким образом, необходимо внести изменения в их только внутри транзакции. Дополнительные сведения см. в разделе [как: использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Представление документов и данных документа
- ![Схема классов стандартных типов схем](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![Схема классов стандартных типов схем](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Хранилище секций
  При загрузке модели, соответствующие схеме загружается в то же время. Как правило модель загружается в Store.DefaultPartition и содержимое схемы загружается в другой секции. Как правило содержимое каждой секции загружается и сохраняется в отдельный файл.

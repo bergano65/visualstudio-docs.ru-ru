@@ -1,5 +1,5 @@
 ---
-title: Обработка исключения параллельности
+title: Обработка исключения параллелизма
 ms.date: 09/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,13 +20,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24338b2a6bc49a9a1a2a77e6395f60013c4465b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752337"
 ---
-# <a name="handle-a-concurrency-exception"></a>Обработка исключения параллельности
+# <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 Исключения параллелизма (<xref:System.Data.DBConcurrencyException>) возникают при попытке двух пользователей изменить те же данные в базе данных в то же время. В этом пошаговом руководстве, создание приложения Windows, которое показывает, как перехватить <xref:System.Data.DBConcurrencyException>, найдите строку, которая вызвала ошибку и Узнайте стратегии для их обработки.
 
  В этом пошаговом руководстве рассматривается процесс.
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .
 
-2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложение Windows Forms** тип проекта.
 
