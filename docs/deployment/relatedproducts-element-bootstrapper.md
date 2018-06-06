@@ -23,18 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5701b88f3942301c8fdb6d674fc323e62a93589b
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815461"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (загрузчик)
 `RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущего продукта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <RelatedProducts>  
     <DependsOnProduct  
         Code  
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/19/2018
   
  `DependsOnProduct` имеет следующий атрибут.  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
   
@@ -70,14 +71,14 @@ ms.lasthandoff: 04/19/2018
   
  `IncludesProduct` имеет следующий атрибут.  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]и поэтому не требует отдельной установки.  
   
-```  
+```xml  
 <RelatedProducts>  
     <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />  
 </RelatedProducts>  

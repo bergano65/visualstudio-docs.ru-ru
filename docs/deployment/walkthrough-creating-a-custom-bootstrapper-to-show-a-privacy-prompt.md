@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816046"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Пошаговое руководство: Создание пользовательского загрузчика с предупреждением о конфиденциальности
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Пошаговое руководство. Создание пользовательского загрузчика с предупреждением о конфиденциальности
 Можно настроить приложения ClickOnce для автоматического обновления при появлении сборок с более новой версии файла и версии сборки. Чтобы убедиться в том, что пользователи согласны на это поведение, можно отобразить окно подтверждения к ним. Затем их можно выбрать, следует ли предоставить приложению для автоматического обновления. Если приложение не может выполнять автоматическое обновление, не устанавливает.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -165,7 +166,7 @@ ms.lasthandoff: 05/04/2018
   
 2.  В файле product.xml добавьте следующий код XML. Убедитесь, что не перезаписывать существующий XML-код.  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ ms.lasthandoff: 05/04/2018
   
 2.  В файле package.xml добавьте следующий код XML для определения языкового стандарта и включают условия лицензии программного обеспечения. Убедитесь, что не перезаписывать существующий XML-код.  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  

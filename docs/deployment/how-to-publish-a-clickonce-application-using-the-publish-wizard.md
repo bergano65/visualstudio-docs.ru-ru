@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 613c576e895042055d5faee9eeb7c8ca27da078a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ed2080c34908f67c83baed182d8e958eb1776b8f
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815825"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации
 Чтобы сделать приложение ClickOnce доступным для пользователей, необходимо опубликовать его в общей папке, на FTP-сервере или на съемном носителе. Можно опубликовать приложение с помощью мастера публикации; Дополнительные свойства, относящиеся к публикации доступны на **публикации** страница **конструктора проектов**. Дополнительные сведения см. в разделе [публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md).  
@@ -101,4 +102,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Развертывание решения Office с помощью ClickOnce](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)
+ [Развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

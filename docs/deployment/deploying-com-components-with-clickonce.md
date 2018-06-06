@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815877"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Развертывание компонентов COM с помощью ClickOnce
 Развертывание устаревших компонентов COM традиционно трудной задачей. Компоненты должны быть глобально зарегистрированы и таким образом, может вызвать нежелательные побочные эффекты между перекрывающимися приложениями. Такая ситуация встречается обычно не проблемы в приложениях .NET Framework, так как компоненты, полностью изолированы от приложения или side-by-side совместимы. Visual Studio позволяет развертывать изолированные компоненты COM в Windows XP или более поздней версии операционной системы.  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  В Class1.vb добавьте следующий код после созданного кода для `New` метод:  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/19/2018
   
 8.  Дважды щелкните кнопку, чтобы добавить код обработчика и в файле кода добавьте код, чтобы обработчик следующим образом:  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  
