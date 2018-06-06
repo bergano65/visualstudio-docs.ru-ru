@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751875"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Тестирование библиотеки DLL на Visual C++
 
@@ -31,11 +32,11 @@ ms.lasthandoff: 04/26/2018
 
 3.  Назовите проект `RooterLibTests`, укажите расположение, назовите решение `RooterLib`, установите флажок **Создать каталог для решения**.
 
-     ![Задание решения, имени проекта и расположения](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Задание решения, имени проекта и расположения](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  В новом проекте откройте файл **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Обратите внимание на следующее.
 
@@ -64,13 +65,13 @@ ms.lasthandoff: 04/26/2018
 
      Будет построен и запущен проект теста. Появится окно обозревателя тестов, а тест будет указан в разделе **Пройденные тесты**. Область сводки в нижней части окна содержит дополнительные сведения о выбранном тесте.
 
-     ![Обозреватель тестов](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Обозреватель тестов](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Добавление в решение проекта библиотеки DLL
 
 1.  В обозревателе решений выберите имя проекта. В контекстном меню выберите команду **Добавить**, а затем — пункт **Добавить новый проект**.
 
-     ![Создание проекта RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![Создание проекта RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  В диалоговом окне **Добавление нового проекта** выберите **DLL (UWP apps)** (DLL — приложения UWP).
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 
     1.  В обозревателе решений выберите проект **RooterLib**, а затем выберите пункт **Свойства** в контекстном меню.
 
-         ![Добавление определения символа препроцессора](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Добавление определения символа препроцессора](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  В диалоговом окне страницы свойств RooterLib разверните узел **Свойства конфигурации**, затем — узел **C++** и выберите параметр **Препроцессор**.
 
@@ -175,7 +176,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  В разделе "Обозреватель тестов" выберите **Запустить все**.
 
-     ![Основной тест пройден](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Основной тест пройден](../test/media/ute_cpp_testexplorer_basictest.png)
 
  Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.
 
@@ -206,7 +207,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  Тест не пройден.
 
-     ![Сбой теста RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Сбой теста RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Убедитесь в том, что каждый тест завершается сбоем, сразу после того, как вы написали его. Это поможет избежать распространенной ошибки, заключающейся в написании теста, который никогда не завершается сбоем.
@@ -278,7 +279,7 @@ ms.lasthandoff: 04/26/2018
 
      Тест не пройден. Выберите имя теста в обозревателе тестов. Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.
 
-     ![Сбой тестов NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Сбой тестов NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.
 
@@ -308,7 +309,7 @@ ms.lasthandoff: 04/26/2018
 
  Теперь все тесты проходят успешно.
 
- ![Все тесты пройдены](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Все тесты пройдены](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Рефакторинг кода без изменения тестов
 

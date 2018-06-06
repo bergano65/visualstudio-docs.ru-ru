@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2bed9c90bb7562072c2f0855c361fc307227976d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751369"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Практическое руководство. Просмотр данных и диагностических вложений с помощью анализатора тестовой нагрузки
 
 Перед запуском нагрузочного теста можно выбрать параметр тестирования, который задает используемые адаптеры данных и диагностики. После завершения нагрузочного теста при анализе результатов с помощью анализатора тестовой нагрузки можно просмотреть сведения для этих адаптеров. Для просмотра сведений адаптеров данных и диагностики нажмите кнопку **Просмотр вложений данных и диагностики** на панели инструментов анализатора тестовой нагрузки. Например, если в параметрах тестирования нагрузочного теста настроен адаптер системных сведений, можно просмотреть системные сведения для компьютера, который использовался при выполнении нагрузочного теста.
 
-![Диалоговое окно "Выбор вложения адаптера диагностических данных"](../test/media/load_adapterdialog.png "Load_AdapterDialog")
+![Диалоговое окно "Выбор вложения адаптера диагностических данных"](../test/media/load_adapterdialog.png)
 
 В качестве другого примера можно назвать нагрузочный тест, в параметрах тестирования которого содержится адаптер IntelliTrace. С помощью адаптера IntelliTrace можно открыть страницу "Сводка IntelliTrace".
 
-![Сводка IntelliTrace](../test/media/load_intellitrace.png "Load_IntelliTrace")
+![Сводка IntelliTrace](../test/media/load_intellitrace.png)
 
 Дополнительные сведения см. в разделах [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md) и [Сбор данных IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 

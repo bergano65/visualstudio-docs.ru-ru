@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d74e6c90f1caf66cbba299ea210d6f4af6637f4e
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336104"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548125"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования памяти .NET для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  

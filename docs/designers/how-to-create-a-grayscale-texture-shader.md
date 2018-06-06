@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f745033ecb88fd70de4c7150dc5ae3165ab3c99b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746329"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Практическое руководство. Создание шейдера текстуры с использованием оттенков серого
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > На этом рисунке в качестве фигуры для предварительного просмотра используется плоскость, и задана текстура, чтобы лучше продемонстрировать эффект шейдера.
 
-![Граф шейдера и предварительный просмотр его эффекта](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")
+![Граф шейдера и предварительный просмотр его эффекта](../designers/media/digit-grayscale-effect.png)
 
 Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).
 

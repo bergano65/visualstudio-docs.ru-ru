@@ -9,11 +9,12 @@ description: Сведения о том, как активировать под�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477279"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Как активировать подписку, приобретенную через Microsoft Store?
 Если вы приобрели подписку Visual Studio в Microsoft Store, активацию можно инициировать на странице подтверждения оплаты или через сообщение электронной почты, которое вы получили после покупки. 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/06/2018
 7. После успешного входа появится окно активации подписки Visual Studio.
 8. Введите ключ продукта, который вы можете получить на странице подтверждения оплаты или в сообщении электронной почты с подтверждением, а затем щелкните **Активировать**.
 
-    ![Ввод ключа продукта](_img/buy-retail/enter-product-key.png)
+    <img alt="Enter product key" src="_img/buy-retail/enter-product-key.png" style="border: 1px solid #CCCCCC" />
 
 9. Теперь эта подписка появится на странице [Подписки](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), и вы сможете воспользоваться любым из ее преимуществ. 
 

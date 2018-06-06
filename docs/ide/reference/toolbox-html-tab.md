@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752700"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 
@@ -33,13 +34,13 @@ ms.lasthandoff: 04/26/2018
 
 **Указатель**
 
-![Указатель HTMLpage конструктора ASP.NET для мобильных устройств](../../ide/reference/media/vxpointer.gif "vxPointer")
+![Указатель HTMLpage конструктора мобильных устройств ASP.NET](../../ide/reference/media/vxpointer.gif)
 
 Это средство выбирается по умолчанию при открытии любой вкладки области элементов. Его нельзя удалить. Указатель позволяет перетаскивать объекты на поверхность конструктора, изменять их размеры и перемещать по странице или форме. См. дополнительные сведения о [панели элементов](../../ide/reference/toolbox.md).
 
 **Ввод (кнопка)**
 
-![Кнопка веб-страницы HTML](../../ide/reference/media/vxbutton.gif "vxButton")
+![Кнопка веб-страницы HTML](../../ide/reference/media/vxbutton.gif)
 
 Вставляет элемент `input` объекта `type="button"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Button1"` вставляется для первой кнопки, `id="Button2"` для второй и т. д.
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (кнопка сброса)**
 
-![Снимок экрана HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")
+![Снимок экрана HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Вставляет элемент `input` объекта `type="reset"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Reset1"` вставляется для первой кнопки сброса, `id="Reset2"` для второй и т. д.
 
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (кнопка отправки)**
 
-![Снимок экрана HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![Снимок экрана HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Вставляет элемент `input` объекта `type="submit"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Submit1"` вставляется для первой кнопки отправки, `id="Submit2"` для второй и т. д.
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (текст)**
 
-![Снимок экрана HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![Снимок экрана HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Вставляет элемент `input` объекта `type="text"` в документ. Чтобы изменить отображаемый текст по умолчанию, измените атрибут `value`. По умолчанию `id="Text1"` вставляется для первого текстового поля, `id="Text2"` для второго и т. д.
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (файл)**
 
-![Поле файла страницы HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Поле файла страницы HTML](../../ide/reference/media/vxfilefield.gif)
 
 Вставляет элемент `input` объекта `type="file"` в документ. По умолчанию `id="File1"` вставляется для первого поля файла, `id="File2"` для второго и т. д.
 
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (пароль)**
 
-![Поле пароля Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Поле пароля Visual Studio](../../ide/reference/media/vxpassword.gif)
 
 Вставляет элемент `input` объекта `type="password"`. По умолчанию `id="Password1"` вставляется для первого поля пароля, `id="Password2"` для второго и т. д.
 
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (флажок)**
 
-![Параметр Checkbox панели элементов веб-страницы HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![Параметр Checkbox панели элементов веб-страницы HTML](../../ide/reference/media/vxcheckbox.gif)
 
 Вставляет элемент `input` объекта `type="checkbox"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Checkbox1"` вставляется для первого флажка, `id="Checkbox2"` для второго и т. д.
 
@@ -132,7 +133,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (переключатель)**
 
-![Снимок экрана VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")
+![Снимок экрана VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Вставляет элемент `input` объекта `type="radio"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Radio1"` вставляется для первого переключателя, `id="Radio2"` для второго и т. д.
 
@@ -144,7 +145,7 @@ ms.lasthandoff: 04/26/2018
 
 **Ввод (скрытое поле)**
 
-![Скрытый элемент страницы HTML](../../ide/reference/media/vxhidden.gif "vxhidden")
+![Скрытый элемент страницы HTML](../../ide/reference/media/vxhidden.gif)
 
 Вставляет элемент `input` объекта `type="hidden"`. По умолчанию `id="Hidden1"` вставляется для первого скрытого поля, `id="Hidden2"` для второго и т. д.
 
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 
 **Текстовая область**
 
-![Область текста панели инструментов HTMLpage](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Область текста панели инструментов HTMLpage](../../ide/reference/media/vxtextarea.gif)
 
 Вставляет элемент `textarea`. Можно изменить размер текстовой области или с помощью полос прокрутки просматривать текст, выходящий за пределы области отображения. Чтобы изменить отображаемый текст по умолчанию, измените атрибут `value`. По умолчанию `id="textarea1"` вставляется для первой текстовой области, `id=" textarea 2"` для второй и т. д.
 
@@ -171,7 +172,7 @@ ms.lasthandoff: 04/26/2018
 
 **Таблица**
 
-![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")
+![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Вставляет элемент `table`.
 
@@ -183,7 +184,7 @@ ms.lasthandoff: 04/26/2018
 
 **Изображение**
 
-![Элемент изображения страницы HTML](../../ide/reference/media/vximage.gif "vxImage")
+![Элемент изображения страницы HTML](../../ide/reference/media/vximage.gif)
 
 Вставляет элемент `img`. Измените этот элемент, чтобы указать его `src` и текст `alt`.
 
@@ -195,7 +196,7 @@ ms.lasthandoff: 04/26/2018
 
 **Выбрать**
 
-![Открывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![Открывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif)
 
 Вставляет элемент `select` раскрывающегося списка (без атрибута `size`). По умолчанию `id="select1"` вставляется для первого списка, `id="select2"` для второго и т. д.
 
@@ -209,7 +210,7 @@ ms.lasthandoff: 04/26/2018
 
 **Горизонтальная линия**
 
-![Элемент горизонтальной линии страницы HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![Элемент горизонтального правила страницы HTML](../../ide/reference/media/vxhorizontal.gif)
 
 Вставляет элемент `hr`. Для увеличения толщины линии измените атрибут `size`.
 
@@ -221,7 +222,7 @@ ms.lasthandoff: 04/26/2018
 
 **ДИВ**
 
-![Метка страницы HTML](../../ide/reference/media/vxlabel.gif "vxLabel")
+![Метка страницы HTML](../../ide/reference/media/vxlabel.gif)
 
 Вставляет элемент `div`, включающий атрибут `ms_positioning="FlowLayout"`. За исключением ширины и высоты, этот элемент аналогичен панели потокового макета. Чтобы форматировать текст, содержащийся в элементе `div`, добавьте атрибут `class="stylename"` в открывающий тег.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34445975"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745741"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Практическое руководство. Отслеживание кода за счет настройки полосы прокрутки
 
@@ -34,11 +34,11 @@ ms.locfileid: "34445975"
 
     Вот как выглядит полоса прокрутки после поиска строки. Обратите внимание, что отображаются все экземпляры строки.
 
-    ![Полоса прокрутки после поиска строки.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![Полоса прокрутки после поиска строки.](../ide/media/enhancedscrollbarsearch.png)
 
     Вот как выглядит полоса прокрутки после замены всех экземпляров строки. Сразу же видно, что операция вызвала некоторые проблемы.
 
-    ![Полоса прокрутки после замены строки с ошибками](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![Полоса прокрутки после замены строки с ошибками](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Установка режима отображения полосы прокрутки
 
@@ -48,11 +48,11 @@ ms.locfileid: "34445975"
 
     Вот как выглядит пример поиска в режиме карты со **средней** шириной:
 
-    ![Полоса прокрутки в режиме карты](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![Полоса прокрутки в режиме карты](../ide/media/enhancedscrollbar.png)
 
 2. Чтобы включить предварительный просмотр кода при перемещении курсора вверх и вниз по полосе прокрутки в режиме карты, выберите параметр **Показывать подсказку предварительного просмотра**. Вот как это выглядит.
 
-    ![Полоса прокрутки с подсказкой](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![Полоса прокрутки с подсказкой](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Если вы хотите сохранить режим карты и подсказки предварительного просмотра и при этом отключить обзор исходного кода, установите для параметра **Обзор исходного кода** значение **Выкл**.
 

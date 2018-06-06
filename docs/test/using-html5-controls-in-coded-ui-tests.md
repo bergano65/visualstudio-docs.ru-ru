@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15298414788c112c4f6a1f761055efd38933dfde
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751446"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Элемент управления звуком
  Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.
 
- ![Элемент управления звуком HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")
+ ![Элемент управления HTML5 Audio](../test/media/codedui_html5_audio.png)
 
 |Действие|Запись|Созданный код|
 |------------|---------------|--------------------|
@@ -89,7 +90,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Элемент управления видео
  Действия **элемента управления видео** на элементе управления видео HTML5 правильно записываются и воспроизводятся.
 
- ![Элемент управления видео HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")
+ ![Элемент управления HTML5 Video](../test/media/codedui_html5_video.png)
 
 |Действие|Запись|Созданный код|
 |------------|---------------|--------------------|
@@ -120,7 +121,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider
  Действия **элемента управления Slider** на элементе управления Slider HTML5 правильно записываются и воспроизводятся.
 
- ![Элемент управления Slider HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")
+ ![Элемент управления HTML5 Slider](../test/media/codedui_html5_slider.png)
 
 |Действие|Запись|Созданный код|
 |------------|---------------|--------------------|
@@ -140,7 +141,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar
  **Элемент управления ProgreesBar:** с элементом управления ProgressBar нельзя взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления.
 
- ![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")
+ ![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>См. также
 

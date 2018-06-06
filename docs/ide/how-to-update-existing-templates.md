@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ddc360e6146678730d1844e4762ac3f6112a97d3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572570"
 ---
 # <a name="how-to-update-existing-templates"></a>Практическое руководство. Обновление существующих шаблонов
 
@@ -72,4 +73,3 @@ Visual Studio предоставляет мастер **экспорта шаб�
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Параметры шаблона](../ide/template-parameters.md)
-- [Практическое руководство. Создание начальных наборов](../ide/how-to-create-starter-kits.md)

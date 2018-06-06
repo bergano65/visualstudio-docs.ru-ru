@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 110aa964c6163f508ba9cd5f26409d0a9912a17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3293b526b3380d3052123d45f3fb7f6599f7b5f7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751979"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Практическое руководство. Добавление и удаление счетчиков на графиках в результатах нагрузочного теста
 
 Панель "Счетчики" можно использовать для добавления счетчиков производительности на диаграмму.
 
- ![Счетчик добавлен в граф](../test/media/ltest_selectcounter.png "LTest_SelectCounter")
+ ![Счетчик добавлен в граф](../test/media/ltest_selectcounter.png)
 
  **Особенности определения интервала выборки счетчика производительности**
 

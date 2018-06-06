@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747233"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Определение и настройка сочетаний клавиш в Visual Studio
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/26/2018
 
 2. Разверните пункт **Среда** и выберите элемент **Клавиатура**.
 
-   ![Отображение сочетаний клавиш в диалоговом окне "Параметры"](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Отобразить сочетания клавиш на клавиатуре в диалоговом окне "Параметры"](../ide/media/optionskeyboard.png)
 
 3. В поле **Показать команды, содержащие** введите полное имя команды без пробелов или его часть.
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 5. Если команда имеет сочетание клавиш, оно отображается в списке **Сочетание клавиш для выбранной команды**.
 
-   ![Просмотр сочетания клавиш для определенной команды](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Просмотр сочетания клавиш для определенной команды](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Настройка сочетания клавиш
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/26/2018
 
      Если сочетание клавиш уже назначено другой команде, оно отображается в поле **Сочетание клавиш в настоящий момент используется для**. В этом случае нажмите клавишу **BACKSPACE**, чтобы удалить сочетание клавиш, прежде чем пробовать другое сочетание.
 
-    ![Укажите другое сочетание клавиш для команды](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Укажите другое сочетание клавиш для команды](../ide/media/reassignshortcut.png)
 
 7. Нажмите кнопку **Назначить**.
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 04/26/2018
 
 4. Установите флажок **Клавиатура** и нажмите кнопку **Далее**.
 
-    ![Экспорт только настроенных сочетаний клавиш](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Экспортировать только настроенные сочетания клавиш](../ide/media/exportshortcuts.png)
 
 5. В полях **Выберите имя для файла параметров** и **Сохранить файл параметров в этом каталоге** оставьте значения по умолчанию или укажите другие значения, а затем нажмите кнопку **Готово**.
 
@@ -129,7 +130,7 @@ ms.lasthandoff: 04/26/2018
 
 7. Установите флажок **Клавиатура** и нажмите кнопку **Готово**.
 
-    ![Импорт только настроенных сочетаний клавиш](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Импортировать только настроенные сочетания клавиш](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>См. также
 

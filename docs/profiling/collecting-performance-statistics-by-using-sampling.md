@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fea27cdfbcc843b30fbb4500dd9528df5b65c3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548262"
 ---
-# <a name="collecting-performance-statistics-by-using-sampling"></a>Использование метода выборки для сбора статистики производительности
+# <a name="collect-performance-statistics-by-using-sampling"></a>Использование метода выборки для сбора статистики производительности
 
 По умолчанию с использованием выборки Средств профилирования Visual Studio данные профилирования собираются каждые 10 000 000 циклов процессора (приблизительно каждую тысячную секунды для процессора с тактовой частотой 1 ГГц). Метод выборки целесообразно использовать для поиска проблем, относящихся к использованию процессора, также он предлагается для выполнения большинства операций анализа производительности.
 

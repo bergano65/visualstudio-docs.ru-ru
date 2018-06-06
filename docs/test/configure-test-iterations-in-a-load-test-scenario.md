@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448445"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751609"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Настройка итераций теста в сценарии тестовой нагрузки
 
@@ -43,7 +43,7 @@ ms.locfileid: "34448445"
 
  Свойство **Максимальное количество итераций теста** может быть удобно в различных ситуациях. Некоторые тест-инженеры, выполняющие нагрузочные тесты, предпочитают проводить тестирование на основе количества итераций, другие — на основе длительности тестирования.
 
- ![Задание итераций теста в сценарии](../test/media/loadtest_prop.png "LoadTest_Prop")
+ ![Задание итераций теста в сценарии](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Определение максимального числа итераций теста
 

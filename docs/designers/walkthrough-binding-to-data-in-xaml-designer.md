@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745715"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
      На следующем рисунке показано диалоговое окно **Выбор объекта** с выбранным объектом **ShoppingCart**.
 
-     ![Диалоговое окно "Выбор объекта"](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Диалоговое окно "Выбор объекта"](../designers/media/blendselectobject.png)
 
 1. В **области элементов** выберите элемент управления `TextBlock`, чтобы добавить его на форму.
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/26/2018
 
      На следующем рисунке показано диалоговое окно **Создание привязки данных** с выбранным свойством **ItemCount**.
 
-     ![Диалоговое окно "Создание привязки данных"](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![Диалоговое окно "Создание привязки данных"](../designers/media/xaml_create_data_binding.png)
 
 1. Нажмите клавишу **F5** для запуска приложения.
 

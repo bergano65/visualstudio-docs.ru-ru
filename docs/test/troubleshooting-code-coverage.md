@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751570"
 ---
 # <a name="troubleshoot-code-coverage"></a>Устранение неполадок с покрытием кода
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 
 При выборе команды **Анализ покрытия кода** в меню "Тест" (при условии успешной сборки и тестирования) в окне "Покрытие кода" должен отобразиться список результатов. Разверните элементы, чтобы просмотреть сведения о них.
 
-![Результаты покрытия кода с выделением цветом](../test/media/codecoverage1.png "CodeCoverage1")
+![Результаты покрытия кода с цветами](../test/media/codecoverage1.png)
 
 Дополнительные сведения см. в разделе [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 

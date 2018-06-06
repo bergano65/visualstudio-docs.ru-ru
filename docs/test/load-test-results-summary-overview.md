@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751862"
 ---
 # <a name="load-test-results-summary-overview"></a>Обзор результатов нагрузочного теста
 
 После запуска нагрузочного теста можно просматривать его сводку для быстрого ознакомления с результатами. В сводке нагрузочного теста содержатся основные результаты теста в сжатом и удобном для чтения виде. Сводку нагрузочного теста можно напечатать. Это удобно, если нужно сообщить результаты теста участвующим сторонам. Сводка нагрузочного теста также является представлением по умолчанию при открытии ранее выполнявшегося нагрузочного теста. Дополнительные сведения см. в разделе [Практическое руководство. Обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Представление сводки](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![представление "Сводка"](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Сводка нагрузочного теста
 

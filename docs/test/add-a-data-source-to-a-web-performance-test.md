@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750829"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Добавление источника данных в веб-тест производительности
 
@@ -143,11 +144,11 @@ ms.lasthandoff: 04/26/2018
 
 1. Создайте папку, чтобы организовать артефакты базы данных проекта и добавить элемент.
 
-     ![Добавление нового элемента в папку "Данные"](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Добавление нового элемента в папку "Данные"](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Создание текстового файла.
 
-     ![Присвоение новому текстовом файлу имени ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![Присвоение новому текстовом файлу имени ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. Измените текстовый файл и добавьте в него следующий текст:
 
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/26/2018
 
 4. Используйте инструкции в разделе [Привязка данных SQL](#AddingDataBindingWebTest_BindSQLData), но в качестве источника данных выберите CSV-файл.
 
-     ![Ввод имени и выбор CSV-файла](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![Ввод имени и выбор CSV-файла](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Вопрос. В моем CSV-файле нет заголовков столбцов. Как действовать в этом случае?
 
@@ -167,7 +168,7 @@ ms.lasthandoff: 04/26/2018
 
 1. Добавьте новый текстовый файл с именем schema.ini.
 
-     ![Добавление файла schema.ini](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![Добавление файла schema.ini](../test/media/web_test_databinding_schemafile.png)
 
 2. Измените файл schema.ini, добавив в него сведения, описывающие структуру данных. Например, файл схемы, описывающий CSV-файл, может выглядеть следующим образом.
 
@@ -178,39 +179,39 @@ ms.lasthandoff: 04/26/2018
 
 3. Добавьте источник данных в тест.
 
-     ![Добавление источника данных в веб-тест производительности](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![Добавление источника данных в веб-тест производительности](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. Если используется файл schema.ini, выберите базу данных (не CSV-файл) в качестве источника данных и присвойте ей имя.
 
-     ![Добавление базы данных в качестве источника данных](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![Добавление базы данных в качестве источника данных](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Создайте новое подключение.
 
-     ![Выбор нового подключения](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![Выбор нового подключения](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. Выберите поставщика данных платформы .NET Framework для OLE DB.
 
-     ![Выбор поставщика данных .NET Framework для OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![Выбор поставщика данных .NET Framework для OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. Выберите Дополнительно.
 
-     ![Выбор элемента "Дополнительно"](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![Выберите "Дополнительно"](../test/media/web_test_databinding_advanced.png)
 
 8. Для свойства "Поставщик" выберите значение Microsoft.Jet.OLEDB.4.0, а затем установите для параметра "Расширенные свойства" значение Text;HDR=NO.
 
-     ![Применение дополнительных свойств](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![Применение дополнительных свойств](../test/media/web_test_databinding_advancedproperties.png)
 
 9. Введите имя папки, в которой находится файл схемы, и проверьте подключение.
 
-     ![Ввод пути к папке данных](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![Ввод пути к папке данных](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Выберите CSV-файл, который следует использовать.
 
-     ![Выбор текстового файла](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![Выбор текстового файла](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      После этого CSV-файл отображается как таблица.
 
-     ![Источник данных добавлен в тест](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![Источник данных добавлен в тест](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Вопрос. Как использовать XML-файл в качестве источника данных?
 
@@ -218,11 +219,11 @@ ms.lasthandoff: 04/26/2018
 
 1. Создайте папку, чтобы организовать артефакты базы данных проекта и добавить элемент.
 
-     ![Добавление нового элемента в папку "Данные"](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Добавление нового элемента в папку "Данные"](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Создайте XML-файл.
 
-     ![Добавление файла ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![Добавление файла ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. Отредактируйте XML-файл и добавьте свои данные:
 
@@ -242,7 +243,7 @@ ms.lasthandoff: 04/26/2018
 
 4. Используйте инструкции в разделе [Привязка данных SQL](#AddingDataBindingWebTest_BindSQLData), но в качестве источника данных выберите XML-файл.
 
-     ![Ввод имени и выбор XML-файла](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![Ввод имени и выбор XML-файла](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Вопрос. Можно ли добавить привязку данных в запрос веб-службы, которая использует SOAP?
 
@@ -250,7 +251,7 @@ ms.lasthandoff: 04/26/2018
 
 1. Выберите запрос веб-службы в дереве запросов и в окне "Свойства" выберите многоточие (…) в свойстве "Текст строки".
 
-     ![Редактирование тела строки веб-службы](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![Редактирование тела строки веб-службы](../test/media/web_test_databinding_webservicerequest.png)
 
 2. Замените значения в тексте SOAP значениями привязанных данных с помощью следующего синтаксиса:
 
