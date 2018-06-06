@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815549"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 Каждый [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установки приложения назначается каталог данных на локальном диске конечного компьютера где приложение может работать со своими данными. Файлы данных могут содержать файлы любого типа: текстовые файлы, XML-файлы или даже файлы Microsoft Access (.mdb) базы данных. Следующие процедуры показывают, как добавить файл данных любого типа в вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/19/2018
   
 2.  Обновите манифест приложения в список файла данных.  
   
-     **Mage: -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Эта задача выполняется повторно создает список файлов в манифесте приложения, а также автоматически генерируются хэш-подписи.  
   
@@ -53,13 +54,11 @@ ms.lasthandoff: 04/19/2018
   
      Манифест развертывания необходимо подписать повторно из-за изменения ее хэш-код манифеста приложения.  
   
-     **манифест приложения -s Mage - cf cert_file - pwd пароль**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **-u развертывания Mage манифеста - appm-манифест приложения**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **манифест развертывания -s Mage - cf certfile - pwd пароль**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Чтобы включить файл данных с помощью MageUI.exe  
   

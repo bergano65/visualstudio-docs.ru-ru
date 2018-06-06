@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516ed9ae36b97a75e5185c69b89fadf587ddeaa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816007"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; элемент (приложение ClickOnce)
 Описывает минимальные разрешения безопасности, необходимые для запуска приложения на клиентском компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml
   
       <trustInfo>  
    <security>  
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/19/2018
   
      Обязательно. Определяет, требуется ли приложению неограниченная версия конкретного разрешения. Если значение равно `true`, неограниченная версия разрешения строго обязательна. Если значение равно `false`или этот атрибут не определен, на него распространяются ограничения в соответствии с атрибутами конкретного разрешения, заданными в теге `IPermission` . Примите следующие разрешения:  
   
-    ```  
+    ```xml  
     <IPermission  
       class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"   
       version="1"   
@@ -169,7 +170,7 @@ ms.lasthandoff: 04/19/2018
   
  В первом примере показан элемент `trustInfo` для разрешений по умолчанию, доступных в зоне безопасности Internet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -205,7 +206,7 @@ ms.lasthandoff: 04/19/2018
   
  Во втором примере показан элемент `trustInfo` для разрешений по умолчанию, доступных в зоне безопасности LocalIntranet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -257,7 +258,7 @@ ms.lasthandoff: 04/19/2018
   
  В третьем примере показан элемент `trustInfo` для разрешений по умолчанию, доступных в зоне безопасности FullTrust.  
   
-```  
+```xml  
 <trustInfo>  
   <security>  
     <applicationRequestMinimum>  

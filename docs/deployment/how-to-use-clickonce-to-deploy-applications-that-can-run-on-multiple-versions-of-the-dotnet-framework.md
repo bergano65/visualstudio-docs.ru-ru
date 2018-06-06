@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815078"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Требуется создать и обновить манифесты приложения и развертывания.  
@@ -85,13 +86,13 @@ ms.lasthandoff: 04/19/2018
   
 2.  Добавить `group="framework"` для XML-код зависимостей для отмеченных сборок (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, и `System.Data.Entity`). Например XML-код должен выглядеть следующим образом:  
   
-    ```  
+    ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
 3.  Обновить номер версии `<assemblyIdentity>` элемент для Microsoft.Windows.CommonLanguageRuntime номер версии платформы .NET Framework, начиная с самого общий знаменатель. Например, если приложение предназначено для .NET Framework 3.5 и [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], используйте 2.0.50727.0 номер версии и XML должен выглядеть следующим образом:  
   
-    ```  
+    ```xml  
     <dependency>  
       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  

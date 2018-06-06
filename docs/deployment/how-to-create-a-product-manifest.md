@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815773"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Практическое руководство. Создание манифеста продукта
 Для развертывания необходимых компонентов для приложения, можно создать пакет начального загрузчика. Пакет начального загрузчика содержит один файл манифеста продукта манифест пакета для каждого языкового стандарта. Манифест пакета содержит локализованные компоненты пакета. Сюда входят строки, условия лицензии и языковые пакеты.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/19/2018
   
 3.  Добавьте следующий XML-код для описания XML-код пространства имен и продукта для пакета. Замените код продукта уникальный идентификатор для пакета.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  Добавьте XML-код, чтобы указать, что пакет имеет зависимости. В этом примере используется зависимость на Microsoft Windows Installer 3.1.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/19/2018
   
 5.  Добавьте XML-код, чтобы вывести список всех файлов, которые находятся в пакет начального загрузчика. В этом примере используется имя файла пакета CorePackage.msi.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ ms.lasthandoff: 04/19/2018
   
 7.  Добавьте XML-код, чтобы установить пакет с помощью команд загрузчика. Загрузчик автоматически добавляет **/qn** флаг MSI-файл, который будет установлен в автоматическом режиме. Если файл является файлом .exe, загрузчик запускает файл .exe с помощью оболочки. Следующий код XML показывает без аргументов для CorePackage.msi, но аргумент командной строки можно поместить в аргументах атрибута.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Добавьте следующий XML-код, проверьте, установлены ли этот пакет начального загрузчика. Замените код GUID для распространяемого компонента.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/19/2018
   
 9. Добавьте XML-код, чтобы изменить поведение загрузчика в зависимости от того, если уже установлен компонент загрузчика. Если компонент установлен, пакет начального загрузчика не выполняется. Следующий XML-код проверяет, является ли текущий пользователь администратором, так как этот компонент требует наличия прав администратора.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ ms.lasthandoff: 04/19/2018
   
 10. Добавьте XML-код для задания кодов выхода, если установка выполнена успешно и необходима перезагрузка. Следующий код XML показано, как сбой и FailReboot выхода коды, которые указывают, что загрузчика не продолжит установку пакетов.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ ms.lasthandoff: 04/19/2018
   
 11. Добавьте следующий XML-код, чтобы завершить раздел команд загрузчика.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>Пример  
  Манифест продукта содержит инструкции по установке для настраиваемые необходимые компоненты.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  

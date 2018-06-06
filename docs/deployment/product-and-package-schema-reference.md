@@ -27,18 +27,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815578"
 ---
 # <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
 Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Примеры внешних зависимостей [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и компоненты доступа к данным Майкрософт (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависимость, например локализованных сборок, лицензионные соглашения и документация зависящие от языка и региональных параметров.  
   
  Файл продукта и пакета состоит из верхнего уровня `Product` или `Package` элемента, каждый из которых содержит следующие элементы.  
   
-|Элемент|Описание|Атрибуты|  
+|Элемент|Описание:|Атрибуты|  
 |-------------|-----------------|----------------|  
 |[\<Продукта > элемент](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файла продукта.|Нет|  
 |[\<Пакет > элемент](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>Пример  
  В следующем примере кода показано создание файла продукта для установки [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

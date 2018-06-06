@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fccbd816d578a95e3e43e15c83d615756dcddcb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1e744071219426c751576f8ca781ad27dfedb61
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815864"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;файл&gt; элемент (приложение ClickOnce)
 Определяет все не являющиеся сборками файлы загружаемые и используемые приложением.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <file  
     name  
     size  
@@ -167,14 +168,14 @@ ms.lasthandoff: 04/19/2018
 ## <a name="dsigtransform"></a>DSIG:Transform  
  `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемента. `dsig:Transform` Элемент имеет следующие атрибуты.  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственным значением, используемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ## <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
  `dsig:DigestMethod` Элемент является обязательным дочерним элементом `hash` элемента. `dsig:DigestMethod` Элемент имеет следующие атрибуты.  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственным значением, используемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
@@ -187,7 +188,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>Пример  
  В следующем примере кода показан `file` элементы в приложении манифеста для приложения, развернутые с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
-```  
+```xml  
 <file name="Icon.ico" size="9216">  
   <hash>  
     <dsig:Transforms>  
