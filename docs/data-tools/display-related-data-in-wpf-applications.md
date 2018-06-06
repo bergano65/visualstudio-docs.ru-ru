@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746550"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Отображение связанных данных в приложениях WPF
 В некоторых приложениях может потребоваться работать с данными из нескольких таблиц или сущностей, связанных друг с другом в иерархические связи. Например, может потребоваться отобразить сетку, в которой отображаются клиентов из `Customers` таблицы. Когда пользователь выбирает конкретного клиента, другой сетке отображаются заказы этого клиента из связанной `Orders` таблицы.
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/26/2018
 
      На следующем рисунке показано связанный **заказов** таблицу **клиентов** таблицы в наборе данных в **источники данных** окна.
 
-     ![Окно источников данных, показывающая связь](../data-tools/media/datasources2.gif "DataSources2")
+     ![Окно “Источники данных”, демонстрирующее отношение](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>См. также
 

@@ -19,7 +19,7 @@ ms.openlocfilehash: 1e781612e051b281b340c3744d2fbb1e6a1e834d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692435"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office не установлен на компьютере

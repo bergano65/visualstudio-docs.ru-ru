@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e82b15ff2d4bdfaac5e8e9eca672ecdc1780a9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767625"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Практическое руководство. Добавление свойства в проекты SharePoint
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Как: Добавление свойства в проекты SharePoint
   Расширение проекта можно использовать, чтобы добавить свойство в любой проект SharePoint. Это свойство отображается в **свойства** окна, когда проект выбран в **обозревателе решений**.  
   
  Следующие шаги предполагают, что вы уже создали расширения проекта. Дополнительные сведения см. в разделе [как: создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 3.  В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> событий, добавьте экземпляр класса свойств <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода показано, как добавить два свойства для проектов SharePoint. Одно из свойств данные сохраняются в файл пользовательских параметров проекта (. файл csproj.user или. vbproj.user файла). Другие свойства данные сохраняются в файле проекта (CSPROJ-файл или VBPROJ).  
+ В следующем примере кода показано, как добавить два свойства для проектов SharePoint. Одно из свойств данные сохраняются в файл пользовательских параметров проекта ( *. csproj.user* файл или *. vbproj.user* файла). Другие свойства данные сохраняются в файле проекта (*.csproj* файл или *.vbproj* файла).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
@@ -69,20 +70,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>Компиляция кода  
  Для этого примера требуются ссылки на следующие сборки:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.Shell  
-  
--   Microsoft.VisualStudio.Shell.Interop  
-  
--   Microsoft.VisualStudio.Shell.Interop.8.0  
-  
+-   Microsoft.VisualStudio.SharePoint
+-    
+-   Microsoft.VisualStudio.Shell
+-     
+-   Microsoft.VisualStudio.Shell.Interop
+-     
+-   Microsoft.VisualStudio.Shell.Interop.8.0
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Развертывание расширения  
  Чтобы развернуть расширение, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывание расширений для средств SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Как: создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Как: Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   

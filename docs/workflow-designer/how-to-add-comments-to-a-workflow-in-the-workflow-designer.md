@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752031"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Как добавлять комментарии в рабочий процесс в конструкторе рабочих процессов
 
@@ -52,11 +53,11 @@ ms.lasthandoff: 04/26/2018
 
    Заметка отображается в конструкторе действия. На снимке экрана ниже заметка «Запуск действия в рабочем процессе» отображается в конструкторе действия.
 
-   ![Примечание, отображаемое в конструкторе действий](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+   ![Примечание, отображаемое в конструкторе действий](../workflow-designer/media/annotationindesigner.png)
 
 1. Для отображения заметки за пределами конструктора действий, наведите указатель мыши на область заметки в конструкторе действия и нажмите кнопку **открепить** значок
 
-   ![Примечание, отображаемое за пределами конструктора действий](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+   ![Примечание, отображаемое за пределами конструктора действий](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Отображение или скрытие всех заметок
 

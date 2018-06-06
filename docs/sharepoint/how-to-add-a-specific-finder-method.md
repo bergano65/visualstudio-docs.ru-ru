@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767654"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Практическое руководство. Добавление определенного метода Finder
+# <a name="how-to-add-a-specific-finder-method"></a>Как: Добавление определенного метода Finder
   Можно вернуть единственный экземпляр сущности, создав *конкретный* метод. Служба бизнес-данным (BDC), выполняет конкретный метод, при выборе сущности в веб-части бизнес-данных или внешний список. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-specific-finder-method"></a>Чтобы создать конкретный метод поиска  
+### <a name="to-create-a-specific-finder-method"></a>Чтобы создать конкретный метод поиска
   
-1.  В конструкторе BDC выберите сущность.  
+1.  На **конструктора BDC**, выберите сущность.  
   
-     Сведения о том, как добавить сущность в конструкторе BDC в Visual Studio см. в разделе [как: Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Сведения о том, как добавить сущность к **конструктора BDC** в Visual Studio, в разделе [как: Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  В строке меню выберите **представление**, **другие окна**, **Подробности метода BDC**.  
+2.  В строке меню выберите **представление** > **другие окна**, **Подробности метода BDC**.  
   
      **Подробности метода BDC** открывается окно. Дополнительные сведения об этом окне см. в разделе [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Как: Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Как: Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Как: Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

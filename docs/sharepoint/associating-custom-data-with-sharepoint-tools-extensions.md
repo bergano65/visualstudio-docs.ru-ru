@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691374"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764879"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Связывание пользовательских данных с расширениями средств SharePoint
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Связывание пользовательских данных с расширениями средств SharePoint
   Можно добавить пользовательские данные в определенные объекты в расширениях инструментов SharePoint. Это полезно при наличии данных в одной части расширение, необходимо получить доступ к более поздней версии из другого кода в модуль. Вместо реализации пользовательского способа хранения и доступа к данным, можно связать данные с объектом в расширении и затем впоследствии извлекать данные из одного объекта.  
   
  Добавление пользовательских данных в объекты также полезен, если вы хотите сохранить данные, относящиеся к конкретному элементу в Visual Studio. Расширения инструментов SharePoint загружаются только в том случае, когда в Visual Studio, поэтому расширение может работать с несколькими различными элементами (таких как проекты, элементы, проекта или **обозревателя серверов** узлов) в любое время. Если у вас есть пользовательские данные, относящиеся только к конкретному элементу, можно добавить данные в объект, представляющий этот элемент.  
@@ -87,5 +87,6 @@ ms.locfileid: "34691374"
  [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Как: Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Как: добавить свойство типа элемента проекта SharePoint пользовательских] (.. /SharePoint/How-to-Add-a-Property-to-a-custom-SharePoint-Project-Item-Type.md   
+ [Практическое руководство. Добавление свойства в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

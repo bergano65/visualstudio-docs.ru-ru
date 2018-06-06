@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d119e84bba07c68e8d0466902d52d4ed9d151123
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ec6f0ef523733a0737b6d762d2835073ed1f3c06
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692019"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766393"
 ---
-# <a name="creating-sharepoint-features"></a>Создание компонентов SharePoint
+# <a name="create-sharepoint-features"></a>Создание компонентов SharePoint
   Компонент SharePoint можно использовать для группировки связанных элементов проекта SharePoint для упрощения развертывания. Создание функции, задавать их области и отмечать другие компоненты как зависимости с помощью конструктора компонентов SharePoint. Конструктор также создает манифест, который является XML-файл с описанием каждого компонента.  
   
 ## <a name="add-features-to-the-sharepoint-solution"></a>Добавление компонентов в решение SharePoint

@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ee33d880a56103ea024f22038350ec36021561b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3b03de87c13744e3b678d4f51e3950352fa2d475
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691792"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766718"
 ---
-# <a name="featureproperties-element"></a>Элемент FeatureProperties
+# <a name="featureproperties-element"></a>FeatureProperties - элемент
   Коллекция значений свойств, которые входят в состав компонентом при его развертывании в SharePoint. После развертывания функции значения свойств можно использовать в коде.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,19 +33,19 @@ ms.locfileid: "34691792"
 </FeatureProperties>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### <a name="child-elements"></a>Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
 |[FeatureProperty](../sharepoint/featureproperty-element.md)|Необязательный элемент.<br /><br /> Представляет пользовательское свойство, в формате ключ значение.|  
   
-### <a name="parent-elements"></a>Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691792"
 ## <a name="remarks"></a>Примечания  
  Дополнительные сведения о свойствах компонентов см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Сведения об элементе  
+## <a name="element-information"></a>Сведения об элементе
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691792"
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
 |**Может быть пустым.**|Нет|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Справочник по схеме элементов проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

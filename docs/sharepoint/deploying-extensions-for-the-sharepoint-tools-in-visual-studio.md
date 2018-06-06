@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dba88bde834ddf8e5eba938325b21434560827a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767264"
 ---
-# <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Разработка расширений для средств SharePoint в Visual Studio
-  Чтобы развернуть расширение инструментов SharePoint, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX), который содержит сборку расширения и другие файлы, которые требуется распространить с расширением. Пакет VSIX представляет сжатый файл, который соответствует стандарту Open Packaging Conventions (OPC). Пакеты VSIX имеют используется расширение VSIX.  
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Развертывание расширений для средств SharePoint в Visual Studio
+  Чтобы развернуть расширение инструментов SharePoint, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX), который содержит сборку расширения и другие файлы, которые требуется распространить с расширением. Пакет VSIX представляет сжатый файл, который соответствует стандарту Open Packaging Conventions (OPC). Пакетов VSIX *.vsix* расширения.  
   
  После создания пакета VSIX, другие пользователи могут запускать VSIX-файл, чтобы установить расширение. Когда пользователь устанавливает расширения, все файлы устанавливаются в папку %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Чтобы развернуть расширение, можно отправить пакет VSIX для [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт, или можно распространить пакет для ваших клиентов с помощью других средств, таких как размещение пакета в общей сетевой папке или другом веб-сайте.  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 05/22/2018
   
  Пакет VSIX можно создать с помощью **проект VSIX** шаблон в Visual Studio, или можно создать пакет VSIX вручную.  
   
-## <a name="using-vsix-projects-to-create-vsix-packages"></a>Использование проектов VSIX для создания пакетов VSIX  
+## <a name="use-vsix-projects-to-create-vsix-packages"></a>Используйте проекты VSIX для создания пакетов VSIX
  Можно использовать **проект VSIX** шаблонов, предоставляемых Visual Studio SDK, чтобы создать пакеты VSIX для расширений инструментов SharePoint. Использование проекта VSIX предоставляет несколько преимуществ над созданием пакета VSIX вручную.  
   
 -   При построении проекта, Visual Studio автоматически создает пакет VSIX. Задачи, такие как добавление файлов развертывания в пакет и создать файл [Content_Types] .xml для пакета, уже выполнены.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/22/2018
   
  Дополнительные сведения об использовании проекта VSIX см. в разделе [шаблон проекта VSIX](/visualstudio/extensibility/vsix-project-template).  
   
-### <a name="organizing-your-projects"></a>Организация проектов  
+### <a name="organize-your-projects"></a>Организовать проекты
  По умолчанию проекты VSIX создают только пакеты VSIX, но не сборки. Таким образом обычно не реализовать расширения инструментов SharePoint в проект VSIX. Обычно работает с по крайней мере двух проектов:  
   
 -   Проект VSIX.  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
  При включении всех проектов в одном решении Visual Studio, можно изменить файл source.extension.vsixmanifest в проект VSIX, включаемых в выходные данные построения в проектах библиотек классов.  
   
-### <a name="editing-the-vsix-manifest"></a>Редактирование манифеста VSIX  
+### <a name="edit-the-vsix-manifest"></a>Изменить манифест VSIX
  Необходимо изменить файл source.extension.vsixmanifest в проект VSIX, чтобы включить записи для всех элементов, которые требуется включить в расширение. При открытии файл source.extension.vsixmanifest в контекстном меню файл появится в конструктор, который предоставляет пользовательский Интерфейс для редактирования XML-файла. Дополнительные сведения см. в разделе [конструктор манифеста VSIX](/visualstudio/extensibility/vsix-manifest-designer).  
   
  Необходимо добавить записи в файл source.extension.vsixmanifest для следующих элементов:  
@@ -167,7 +168,7 @@ ms.lasthandoff: 05/22/2018
   
      *YourTemplateName*.zip  
   
-     Например если шаблон элемента с именем ContosoCustomAction.zip, который поддерживает этот языковой стандарт английский (США), полный путь может быть ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip.  
+     Например, если шаблон элемента с именем ContosoCustomAction.zip, который поддерживает этот языковой стандарт английский (США), полный путь может быть *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.  
   
 3.  В **обозревателе решений**, выберите файл шаблона (*YourTemplateName*.zip).  
   
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  В **источника** выберите **файл в файловой системе**.  
   
-9. В **путь** введите полный путь к сборке (например, **ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip**, или используйте **Обзор**кнопку, чтобы найти и выбрать сборку, а затем выберите **ОК** кнопки.  
+9. В **путь** введите полный путь к сборке (например, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, или используйте **Обзор**кнопку, чтобы найти и выбрать сборку, а затем выберите **ОК** кнопки.  
   
 ##### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Чтобы включить мастер для шаблона проекта или шаблона элемента  
   
@@ -207,7 +208,7 @@ ms.lasthandoff: 05/22/2018
   
 5.  Нажмите кнопку **ОК** .  
   
-### <a name="related-walkthroughs"></a>Связанные пошаговые руководства  
+### <a name="related-walkthroughs"></a>Связанные пошаговые руководства
  В следующей таблице перечислены примеры, демонстрирующие использование проекта VSIX для развертывания различных типов расширений инструментов SharePoint.  
   
 |Тип расширения|Связанные пошаговые руководства|  
@@ -217,7 +218,7 @@ ms.lasthandoff: 05/22/2018
 |Расширение, содержащее шаблон Visual Studio|[Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|  
 |Расширение, содержащее мастер шаблонов|[Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|  
   
-## <a name="creating-vsix-packages-manually"></a>Создание вручную пакетов VSIX  
+## <a name="create-vsix-packages-manually"></a>Создать пакеты VSIX вручную
  Если вы хотите создать пакет VSIX для расширения средств SharePoint вручную, выполните следующие действия:  
   
 1.  Создайте файл extension.vsixmanifest и файл [Content_Types] .xml в новую папку. Дополнительные сведения см. в разделе [составляющие пакета VSIX](/visualstudio/extensibility/anatomy-of-a-vsix-package).  
@@ -260,10 +261,9 @@ ms.lasthandoff: 05/22/2018
   
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Обращение к объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Отладка расширений для инструментов SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
   

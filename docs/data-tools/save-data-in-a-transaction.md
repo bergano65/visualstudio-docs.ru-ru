@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Сохранение данных в транзакции'
+title: Пошаговое руководство. Сохранение данных в транзакции
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745533"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство: Сохранение данных в транзакции
+# <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство. Сохранение данных в транзакции
 В этом пошаговом руководстве демонстрируется сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. В этом пошаговом руководстве вы создадите приложение Windows Forms. Мастер настройки источника данных будет использоваться для создания набора данных для двух таблиц в базе данных Northwind. Вы добавите с привязкой к данным элементы управления в форму Windows Forms, и будет изменена код BindingNavigator кнопку Сохранить обновление базы данных внутри области TransactionScope.
 
 ## <a name="prerequisites"></a>Предварительные требования
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .
 
-2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложение Windows Forms** тип проекта.
 

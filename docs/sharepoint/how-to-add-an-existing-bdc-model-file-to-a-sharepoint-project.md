@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8a6b42a9cff28cc57365081bc4a041524ece7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ca7f4befcb75a48e5b03637c143edfdd81b428a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767745"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint
-  Вы можете настраивать, упаковывать и повторно развертывать модель подключения к бизнес-данным (BDC) с помощью Visual Studio для добавления файла модели (.bdcm) к любому проекту фермы SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Как: Добавление существующего файла модели BDC в проект SharePoint
+  Можно настроить, упаковать и повторно развертывать модели бизнес-данным (BDC) с помощью Visual Studio для добавления файла модели (*.bdcm*) к любому проекту фермы SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Добавление файла модели подключения к бизнес-данным (BDC) в проект SharePoint  
   
 1.  В **обозревателе решений**, выберите папку для проекта SharePoint.  
   
-2.  В строке меню выберите **проекта**, **Добавление существующего элемента**.  
+2.  В строке меню выберите **проекта** > **Добавление существующего элемента**.  
   
 3.  В **Добавление существующего элемента** диалоговое окно, перейдите к расположению файла определения модели, которую требуется добавить в проект, выберите файл и нажмите кнопку **добавить** кнопки.  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/16/2018
   
      **Модель подключения к бизнес-данным** элемент добавляется в проект.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Как: создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Как: определить локализованные имена, свойства и разрешения с помощью файла ресурсов](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Как: Добавление пользовательской сборки в функцию BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
-  
+ 

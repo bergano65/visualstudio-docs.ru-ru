@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748677"
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 Доменный язык (DSL) создает API, который можно использовать для чтения и обновления экземпляров DSL в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Этот API определяется в коде, созданном из определения DSL. В этом разделе описывается созданный API.
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
  Нажмите клавишу F5 и поэкспериментируйте с этим шаблоном решения, если вы с ним еще не знакомы. В частности, обратите внимание на то, что порты создаются перетаскиванием инструмента порта на компонент, и порты можно подключать.
 
- ![Компоненты и взаимосвязанные порты](../modeling/media/componentsample.png "ComponentSample")
+ ![Компоненты и взаимосвязанные порты](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Структура решения DSL
  **Dsl** проекта определяет API для доменного языка. **DslPackage** проекта определяет, как интегрируется с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Вы можете также добавить собственные проекты, которые могут содержать код, созданный из модели.

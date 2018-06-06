@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752402"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Данные средства Visual Studio для C++
 
@@ -34,11 +35,11 @@ ms.lasthandoff: 04/26/2018
 
 3.  Используйте SQL Server Management Studio для присоединения к localDB распаковать файл Northwind.mdf. При запуске SQL Server Management Studio подключитесь к (localdb) \MSSQLLocalDB.
 
-     ![Диалоговое окно подключения SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS подключения диалогового окна")
+     ![Диалоговое окно подключения SSMS](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Нажмите правой кнопкой мыши узел localdb на левой панели и выберите **присоединение**.
 
-     ![Среда SSMS присоединение базы данных](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS присоединение базы данных")
+     ![Среда SSMS присоединение базы данных](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  Загрузите пример Windows SDK ODBC и распакуйте его на новое место. Этот пример показывает основные команды ODBC, которые используются для подключения к базе данных и отправлять запросы и команды. Дополнительные сведения об этих функциях в [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). При первой загрузке решения (он находится в папке C++), Visual Studio предложит обновление решения до текущей версии Visual Studio. Нажмите кнопку **Да**.
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/26/2018
 
 8.  Нажмите клавишу F5, чтобы выполнить сборку приложения и запустить его. Вы увидите диалоговое окно драйвера, необходимо ввести базы данных. Введите `(localdb)\MSSQLLocalDB`и проверьте **использовать доверительное соединение**. Press **OK**. Вы увидите консоли с сообщениями, которые указывают на успешное подключение. Вы также увидите командную строку для ввода в инструкции SQL. На следующем рисунке показано пример запроса и результатов:
 
-     ![Пример ODBC выходных данных запроса](../data-tools/media/raddata-odbc-sample-query-output.png "raddata выходных данных запроса пример ODBC")
+     ![Пример ODBC выходных данных запроса](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>См. также
 

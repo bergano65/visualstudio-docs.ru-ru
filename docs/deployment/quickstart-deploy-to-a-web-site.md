@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766556"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Публикация веб-приложения или приложения .NET Core на веб-сайт, используя средство публикации Visual Studio
 
@@ -26,9 +27,9 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET** и **.NET Framework** разработки рабочей нагрузки. Для приложения .NET Core, необходимо также **.NET Core** рабочей нагрузки.
+* Необходимо иметь Visual Studio 2017 г. установлен и **ASP.NET и веб-разработки** рабочей нагрузки и. **NET разработки настольных приложений** рабочей нагрузки. Для приложения .NET Core, необходим. **NET Core** рабочей нагрузки.
 
-    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
@@ -85,4 +86,4 @@ ms.lasthandoff: 05/10/2018
 В этом кратком руководстве вы узнали, как использовать Visual Studio для создания профиля публикации. Вы можете также настроить публикацию профиля путем импорта параметров публикации.
 
 > [!div class="nextstepaction"]
-> [Импорт параметров публикации и развертывание в IIS](tutorial-import-publish-settings-iis.md)
+> [Импорт параметров публикации и развертывание в IIS](tutorial-import-publish-settings-iis.md)

@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691216"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746182"
 ---
 # <a name="pass-data-between-forms"></a>Передача данных между формами
 Это пошаговое руководство содержит инструкции по передаче данных из одной формы в другую. С помощью таблиц customers и orders из Northwind, одна форма позволяет пользователям выбрать клиента, а второй форме отображаются заказы выбранного клиента. В этом пошаговом руководстве демонстрируется создание метода на вторую форму, которая получает данные из первой формы.
@@ -71,7 +71,7 @@ ms.locfileid: "34691216"
 
 1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .
 
-2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложение Windows Forms** тип проекта.
 

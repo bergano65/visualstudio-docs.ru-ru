@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749480"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
 Windows Forms можно использовать для отображения состояния модели доменного языка (DSL), вместо использования схема DSL. В этом разделе описывается привязка к DSL формы Windows Forms, с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] визуализации и моделирования SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") DSL экземпляра, показывая формы пользовательского интерфейса Windows и обозреватель модели.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) DSL экземпляра, показывая формы пользовательского интерфейса Windows и обозреватель модели.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Создание Windows Forms DSL
  **Минимальной WinForm конструктор** DSL шаблон создает минимальный доменный язык DSL, можно изменить в соответствии с собственными требованиями.
@@ -68,7 +69,7 @@ Windows Forms можно использовать для отображения 
 ## <a name="updating-the-dsl-definition"></a>Обновление определения DSL
  Следующие определения DSL используется в этом пошаговом руководстве.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Для обновления определения DSL
 
@@ -127,7 +128,7 @@ Windows Forms можно использовать для отображения 
 
      Свойства и отношения класса модели отображаются в окне Источники данных.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>Для подключения к модели в форму
 
@@ -172,7 +173,7 @@ Windows Forms можно использовать для отображения 
 
 -   Это гарантирует, что, когда пользователь выбирает строку, окна «Свойства» отображает свойства соответствующий элемент модели, а не строку сетки данных.
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4") схему связей между источниками данных и представления.
+ ![DslWpf4](../modeling/media/dslwpf4.png) схему связей между источниками данных и представления.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Для выполнения привязки к DSL
 
@@ -301,7 +302,7 @@ Windows Forms можно использовать для отображения 
 
      Вы сможете изменить имя элемента в представлении сетки данных. Можно также удалить из него.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Код для добавления элемента
  Для кнопки нового элемента немного проще следующий альтернативный образец программного кода.

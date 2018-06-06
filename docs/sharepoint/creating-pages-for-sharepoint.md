@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694050"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765532"
 ---
-# <a name="creating-pages-for-sharepoint"></a>Создание страниц для SharePoint
+# <a name="create-pages-for-sharepoint"></a>Создание страниц для SharePoint
   Можно создать страницы приложений, страниц сайта, главных страниц и макетов страниц для сайта SharePoint.  
   
  Страницы приложений можно создать с помощью шаблона в Visual Studio. Создание страниц сайта, главных страниц и макетов страниц с помощью SharePoint Designer. Затем можно импортировать эти страницы в Visual Studio, чтобы использовать их в проекте SharePoint.  
@@ -67,7 +67,7 @@ ms.locfileid: "34694050"
   
 |Заголовок|Описание:|  
 |-----------|-----------------|  
-|[Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Описание процедуры добавления страниц приложений: содержимое .aspx, объединенное с главной страницей SharePoint.|  
+|[Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Описание процедуры добавления страниц приложений: *.aspx* содержимое, объединенное с главной страницей SharePoint.|  
 |[Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)|Показано, как создавать страницы ASP.NET, которые выполняются на сайте SharePoint.|  
 |[Пошаговое руководство. Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Показано, как для разработки и отладки веб-страницу ASP.NET для сайта SharePoint.|  
   

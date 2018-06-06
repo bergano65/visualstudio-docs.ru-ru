@@ -17,23 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0eabca43f604d92ecab78dccae281a450f7c0400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433923234b890564d21915d56a906fe10060e4ae
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766276"
 ---
-# <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе сервера
-  В Visual Studio можно подключиться к локальным сайтам SharePoint на компьютере разработчика с помощью **подключения SharePoint** узел в**обозревателя серверов** окна. Этот узел содержит многие компоненты локальных сайтов SharePoint в виде иерархического дерева. Например можно просмотреть списки, библиотеки документов и типы содержимого на локальных сайтах. Дополнительные сведения об использовании **обозревателя серверов** для подключения к локальным сайтам SharePoint, в разделе [просмотра SharePoint подключения с помощью сервера обозревателя](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе серверов
+  В Visual Studio можно подключиться к локальным сайтам SharePoint на компьютере разработчика с помощью **подключения SharePoint** узел в **обозревателя серверов** окна. Этот узел содержит многие компоненты локальных сайтов SharePoint в виде иерархического дерева. Например можно просмотреть списки, библиотеки документов и типы содержимого на локальных сайтах. Дополнительные сведения об использовании **обозревателя серверов** для подключения к локальным сайтам SharePoint, в разделе [просмотра SharePoint подключения с помощью сервера обозревателя](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
  Вы можете расширить **подключения SharePoint** узла, создав расширения для существующих узлов или создав пользовательский тип узла и добавив его в иерархию узлов.  
   
-## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Задачи для расширение узла подключений SharePoint  
+## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Задачи для расширение узла подключений SharePoint
  Чтобы расширить существующий узел, создать расширение Visual Studio, который реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> интерфейса. При расширении узла можно добавить функциональные возможности на узел, например собственные элементы контекстного меню или пользовательские свойства. Дополнительные сведения см. в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
  Чтобы создать пользовательский тип узла, создайте расширение Visual Studio, который реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> интерфейса. Создать пользовательский узел, если требуется отображать компоненты сайтов SharePoint, которые не отображаются в **обозревателя серверов** по умолчанию. Например **обозревателя серверов** не должно отображаться галерею веб-частей на сайт SharePoint, по умолчанию, но можно добавить пользовательский узел такому же принципу. Дополнительные сведения см. в разделе [как: добавить пользовательского узла SharePoint в обозревателе серверов](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) и [Пошаговое руководство: расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="adding-custom-properties-to-nodes"></a>Добавление пользовательских свойств в узлы  
+## <a name="add-custom-properties-to-nodes"></a>Добавление пользовательских свойств для узлов
  При расширении узла, или создать пользовательский тип узла, можно добавить пользовательские свойства на узел. Свойства отображаются в **свойства** окно при выборе узла.  
   
  Существует два типа пользовательских свойств, которые можно добавить к узлу.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Свойства, отображающие пользовательские чтения и записи данных. Пример кода, в котором показано, как это сделать, см. [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="getting-data-for-built-in-nodes"></a>Получение данных для встроенных узлов  
+## <a name="get-data-for-built-in-nodes"></a>Получение данных для встроенных узлов
  Все встроенные узлы, предоставляемые Visual Studio содержат определенные данные о компоненте SharePoint, который они представляют. Например узел, представляющий список на сайте SharePoint предоставляет некоторые данные об этом списке, такие как название и URL-адрес представления по умолчанию для списка.  
   
  Доступ к этим данным, получить объект данных от <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> , представляющий узел, которые вас интересуют. Тип объекта данных зависит от типа узла.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
  Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство, в разделе [связывание пользовательских данных с расширениями средств SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Способ: добавить пользовательского узла SharePoint в обозревателе серверов](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   

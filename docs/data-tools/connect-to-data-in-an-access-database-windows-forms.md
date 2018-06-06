@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746820"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Microsoft Access (Windows Forms)
 Можно подключиться к базе данных (MDF-файла или ACCDB-файла) с помощью Visual Studio. После определения соединения, данные отображаются в **источники данных** окна. Здесь можно перетаскивать таблицы и представления на формы.
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  На **представление** последовательно выберите пункты **другие окна** > **источники данных**.
 
-     ![Просмотр других источников данных Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Просмотр других окон "Источники данных"](../data-tools/media/viewdatasources.png)
 
 3.  В окне **Источники данных** выберите **Добавить новый источник данных**.
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
 9. В **добавить подключение** выберите **поставщик Microsoft Office 12.0 Access базы данных ядра OLE DB** из **поставщик OLE DB** раскрывающегося списка.
 
-     ![OLE DB поставщик Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![Поставщик OLE DB Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Если вы не видите **поставщик Microsoft Office 12.0 Access базы данных ядра OLE DB** в поставщике OLE DB раскрывающийся список, может потребоваться установить [системный драйвер Office 2007: компоненты подключения к данным](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  На **представление** последовательно выберите пункты **другие окна** > **источники данных**.
 
-     ![Просмотр других источников данных Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Просмотр других окон "Источники данных"](../data-tools/media/viewdatasources.png)
 
 3.  В окне **Источники данных** выберите **Добавить новый источник данных**.
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 04/26/2018
 
 8.  В **имя файла базы данных**, укажите путь и имя MDB-файлу требуется подключиться, а затем выберите **ОК**.
 
-     ![Добавление файла базы данных Access подключения](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Добавление файла базы данных Access для подключения](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Выберите **Далее** на **Выбор подключения базы данных** страницы.
 

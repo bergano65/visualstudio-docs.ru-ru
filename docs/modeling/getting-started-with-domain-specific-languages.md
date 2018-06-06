@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750263"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Начало работы с доменными языками
 В этом разделе объясняются основные понятия в определении и использовании доменный язык (DSL), созданные с помощью пакета SDK для моделирования для Visual Studio.
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
  Если созданную доменный язык DSL могут распространять его как часть пакета Visual Studio Integration Extension (VSIX). Пользователи работают с DSL в Visual Studio:
 
- ![Обозреватель, панель элементов и схема семейного дерева](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Обозреватель, панель элементов и схема семейного дерева](../modeling/media/familyt_instance.png)
 
  Представляет собой часть DSL. Вместе с нотации пакет VSIX включает средства, которые пользователи могут применять для изменения и создания основы из их моделей.
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  Нажмите кнопку **конструктора доменного языка**.
 
-     ![Создание диалогового окна DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Создание диалогового окна DSL](../modeling/media/create_dsldialog.png)
 
 4.  В **имя** введите **FamilyTree**. Нажмите кнопку **ОК**.
 
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
  После этого пользовательский интерфейс примет следующий вид:
 
- ![Конструктор DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![конструктор dsl](../modeling/media/dsl_designer.png)
 
  Данное решение определяет доменный язык. Дополнительные сведения см. в разделе [Общие сведения о пользовательском интерфейсе доменный язык средства](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -136,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
  В экспериментальном экземпляре Visual Studio будет выглядеть примерно так:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Содержимое модели
  Содержимое файла, который является экземпляром DSL называется *модели*. Модель содержит *модели ** элементы* и *ссылки* между элементами. Определение DSL определяет, какие типы элементов модели и ссылки могут существовать в модели. Например в DSL, созданные на основе шаблона минимальной языка, есть один тип элемента модели и одного типа ссылки.
@@ -196,7 +197,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  На схеме DslDefinition переименование **ExampleModel** для **FamilyTreeModel**, **ExampleElement** для **лицо**,  **Целевые объекты** для **родительских элементов**, и **источников** для **дочерних**. Можно щелкнуть каждый метку, чтобы изменить его.
 
-     ![Схема определения DSL &#45; модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![Схема определения DSL &#45; модель семейного дерева](../modeling/media/familyt_person.png)
 
 2.  Переименуйте элемент и соединителя средства.
 
@@ -255,7 +256,7 @@ ms.lasthandoff: 04/26/2018
 
     4.  Выберите каждый новый decorator и в окне свойств задайте **позиции** поля. Определяет, где значение свойства домена отображается на фигуре. Например, задать **InnerBottomLeft** и **InnerBottomRight**.
 
-         ![Определение фигуры секции](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![Определение фигуры секции](../modeling/media/familyt_compartment.png)
 
 3.  Декораторы сопоставлены со свойствами.
 
@@ -271,7 +272,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  В tt-файл можно добавить код, который получает свойства каждого человека.
 
- ![Обозреватель, панель элементов и схема семейного дерева](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Обозреватель, панель элементов и схема семейного дерева](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Определять новые классы
  Доменные классы и связи можно добавить в модель. Например можно создать новый класс для представления городах и новую связь для представления, что пользователь длятся в городе.
@@ -297,7 +298,7 @@ ms.lasthandoff: 04/26/2018
 
     1.  Нажмите кнопку **ссылочная связь** , щелкните человека и нажмите кнопку города.
 
-         ![Фрагмент определения DSL: корень семейного дерева](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![Фрагмент определения DSL: корень семейного дерева](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Ссылочные связи представляют перекрестные ссылки из одной части дерева модели в другую.
@@ -322,7 +323,7 @@ ms.lasthandoff: 04/26/2018
 
     2.  Используйте **схема элемента** , которая позволяет связать новый соединитель связь между человека и города.
 
-         ![Определение семейного дерева с добавленной картой фигур](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![Определение семейного дерева с добавленной картой фигур](../modeling/media/familyt_shapemap.png)
 
 6.  Создайте элемент средства для города new.
 

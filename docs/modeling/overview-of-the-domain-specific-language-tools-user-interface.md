@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748729"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Обзор пользовательского интерфейса средств доменных языков
 При первом открытии решения доменный язык (Инструменты DSL) в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], пользовательский интерфейс будет напоминать следующий рисунок.
 
- ![Конструктор DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![конструктор dsl](../modeling/media/dsl_designer.png)
 
  Следующая таблица объясняет, как использовать части пользовательского интерфейса.
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="the-domain-model-diagram"></a>Схема модели домена
  Схема модели домена состоит из двух частей. Одной части диаграммы показана элементы и связи в модели. Другая сторона показано, как модели можно будет отображаться и включает фигуры, которые используются для отображения элементов и свойств модели схемы. На следующем рисунке показаны элементы диаграммы.
 
- ![Конструктор DSL с дорожкой](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![конструктор dsl с полосой задач](../modeling/media/dsl_desinger.png)
 
  В следующей таблице описаны некоторые элементы на схеме модели домена.
 

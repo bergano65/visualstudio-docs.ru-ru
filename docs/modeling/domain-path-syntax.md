@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de364760b5d7446b050cd8931ea2e95867b88e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749548"
 ---
 # <a name="domain-path-syntax"></a>Синтаксис пути домена
 В определениях доменного языка для поиска определенных элементов в модели используется синтаксис типа XPath.
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/26/2018
 
  *RelationshipName.PropertyName/! Роли*
 
- ![Отношение ссылки CommentReferencesSubjects](../modeling/media/dsl_reference.png "dsl_reference")
+ ![Связь типа “Ссылка" CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
  Синтаксис перебирает дерево модели. Например, доменной связи **CommentReferencesSubjects** в приведенном выше рисунке имеет **субъектов** роли. Сегмент пути **/! Subjectt** указывает, что путь завершается для элементов, доступных через **субъектов** роли.
 

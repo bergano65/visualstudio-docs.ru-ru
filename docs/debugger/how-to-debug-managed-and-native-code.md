@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764557"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Учебник: Отладка управляемого и машинного кода в Visual Studio
 
@@ -39,7 +40,7 @@ Visual Studio позволяет включить более чем один т�
 
 * Необходимо иметь установленной среды Visual Studio и **разработки настольных приложений с помощью C++** рабочей нагрузки.
 
-    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
     Если вам нужно установить рабочую нагрузку, но среда Visual Studio уже имеется, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
 
@@ -73,7 +74,7 @@ Visual Studio позволяет включить более чем один т�
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ Visual Studio позволяет включить более чем один т�
 
 1. Выберите шаблон для кода приложения.
 
-    Для .NET Framework в **новый проект** диалогового окна выберите **Visual C#**, **Windows классического** из установленных шаблонов раздела, а затем в средней области Выберите **консольного приложения (.NET Framework)**.
+    Для .NET Framework в **новый проект** диалогового окна выберите **Visual C#**, **Windows Desktop** из установленных шаблонов раздела, а затем в средней области выберите  **Консольное приложение (.NET Framework)**.
 
     Для .NET Core в **новый проект** диалогового окна выберите **Visual C#**, **.NET Core** из установленных шаблонов раздела, а затем в средней области выберите  **Консольное приложение (.NET Core)**.
 
@@ -119,7 +120,7 @@ Visual Studio позволяет включить более чем один т�
     ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ Visual Studio позволяет включить более чем один т�
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ Visual Studio позволяет включить более чем один т�
     ```
     "nativeDebugging": true
     ```
-    
+
     Таким образом например, файл может выглядеть следующим образом:
-    
+
     ```
     {
       "profiles": {

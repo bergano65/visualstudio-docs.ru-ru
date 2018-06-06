@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47a519db245e2ec15548ba1d46a583d0a73f466f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9bc2dc1af5f2f040a15c5bee25a8d5dfc91afe2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693488"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764774"
 ---
-# <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>Создание многократно используемых элементов управления для веб-частей или страниц приложений
+# <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Создание многократно используемых элементов управления для веб-частей или страниц приложений
   Visual Studio позволяет создавать пользовательские элементы управления с возможностью повторного использования, которые можно размещать на страницах приложений и в веб-частях, используемых в SharePoint. Эти элементы управления называются пользовательскими элементами управления. Пользовательский элемент управления представляет собой составной элемент управления, который работает почти как веб-страницу ASP.NET, можно добавить существующий элемент управления и разметки в пользовательский элемент управления и определить свойства и методы для элемента управления. Затем их можно внедрять в веб-страницах ASP.NET, где они будут действовать как единое целое.  
   
 ## <a name="create-a-user-control"></a>Создать пользовательский элемент управления

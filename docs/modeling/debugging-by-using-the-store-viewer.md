@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c46e84caba16abbe9ba9d166076d1ee48d34fd94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748414"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Отладка с использованием средства просмотра хранилища
 С помощью средства просмотра хранения можно проверить состояние *хранения* используемые [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Средство просмотра, хранения отображает всех элементов модели домена, которые находятся в конкретном магазине, и свойства элемента и ссылки между элементами.
@@ -44,7 +45,7 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ### <a name="using-store-viewer"></a>С помощью средства просмотра хранилища
  При открытии средства просмотра хранилища немодальное окно Windows Forms выглядит, как показано на следующем рисунке.
 
- ![](../modeling/media/storeviewer2.png "storeviewer2") средство просмотра хранилища
+ ![](../modeling/media/storeviewer2.png) Средство просмотра хранилища
 
  Средство просмотра хранилища содержит три панели: левой, верхней правой области и нижней правой области. Слева находится дерево типы в `DomainDataDirectory` член хранилища. Если развернуть узел раздела и щелкните элемент, свойства элемента отображаются в верхней правой части окна. Если элемент ссылается на другие элементы, дополнительные элементы отображаются в нижней правой области. При двойном щелчке элемента в нижней правой области, то элемент выделен в левой области.
 

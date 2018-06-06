@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748378"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 В доменном языке, созданном с помощью пакета SDK для визуализации и моделирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно контролировать, что происходит, когда пользователь копирует и вставляет элементы.
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
  Это правило применяется к скопированным элементам и связям рекурсивно.
 
- ![Скопированные и вставленные элементы](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Скопированные и вставленные элементы](../modeling/media/dslcopypastedefault.png)
 
  Скопированные элементы и связи сериализуются и сохраняются в <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), который размещается в буфере обмена.
 
@@ -217,7 +218,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ##  <a name="customizeLinks"></a> Настройка функции копирования ссылку
  Когда пользователь копирует элемент, стандартное поведение заключается в том, что также копируются все внедренные элементы. Стандартное поведение копирования можно изменить. В определении DSL, выберите роль на одной стороне связи и набора свойств окна **распространяет копирования** значение.
 
- ![Распространяет свойство копирования роли домена](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Распространяет свойство копирования роли домена](../modeling/media/dslpropagatescopy.png)
 
  Поддерживается три значения:
 
@@ -227,7 +228,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 -   Распространить копирование на исполнителя противоположной роли: скопированная группа включает копию элемента на другом конце связи.
 
- ![Результат копирования с использованием PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Результат копирования с использованием PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
  Сделанные изменения повлияют на элементы и скопированное изображение.
 
@@ -237,9 +238,9 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 > [!TIP]
 >  Дополнительные сведения о настройке модели с помощью программного кода. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Схема последовательностей для операции копирования](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Схема последовательностей для операции копирования](../modeling/media/dslcopyseqdiagram.png)
 
- ![Схема последовательностей операции вставки](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Схема последовательностей операции вставки](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Определение собственного ElementOperations
 

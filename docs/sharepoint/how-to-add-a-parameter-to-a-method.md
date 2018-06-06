@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e005152aa7a5b7c1905e768da878e72051bbdb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9268fd0deb463a29c8e6d19e98ad63c86b965292
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767092"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>Практическое руководство. Добавление параметра в метод
+# <a name="how-to-add-a-parameter-to-a-method"></a>Как: Добавление параметра в метод
   Параметр для передачи сведений в метод или возвращения сведений из метода. Все методы должны иметь по крайней мере один параметр. Дополнительные сведения о создании параметра, поддерживающего тип метода, который вы хотите создать см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- При добавлении параметра в метод Visual Studio добавляет `<Parameter>` элемент в XML файла модели в проекте. Дополнительные сведения об атрибутах `<Parameter>` элемент, в разделе [параметр](http://go.microsoft.com/fwlink/?LinkId=169284).  
+ При добавлении параметра в метод Visual Studio добавляет элемент параметра к XML-файла модели в проекте. Дополнительные сведения об атрибутах элемент параметра см. в разделе [параметр](http://go.microsoft.com/fwlink/?LinkId=169284).  
   
 ### <a name="to-add-a-parameter-to-a-method"></a>Добавление параметра в метод  
   
 1.  Добавьте метод в сущность.  
   
-2.  В строке меню выберите **представление**, **другие окна**, **Подробности метода BDC**.  
+2.  В строке меню выберите **представление** > **другие окна** > **Подробности метода BDC**.  
   
      **Подробности метода BDC** открывается окно. Дополнительные сведения см. в разделе [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
      Новый параметр отображается под **параметры** узла.  
   
-5.  В строке меню выберите **представление**, **окно свойств**.  
+5.  В строке меню выберите **представление** > **окно свойств**.  
   
 6.  В **свойства** задайте **имя** свойства любое имя, которое имеет смысл. Например, если метод должен возвращать клиентов, вы назовите метод **GetCustomers**.  
   
@@ -57,11 +58,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  Измените дескриптор типа параметра. Дополнительные сведения см. в разделе [как: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Как: Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Как: определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Как: определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
   

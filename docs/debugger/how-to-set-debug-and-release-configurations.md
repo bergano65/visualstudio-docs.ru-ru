@@ -37,7 +37,7 @@ ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690670"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Как: настроить отладку и выпуск конфигураций, в Visual Studio

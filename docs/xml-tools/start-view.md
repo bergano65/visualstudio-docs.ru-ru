@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751849"
 ---
 # <a name="start-view"></a>Начальное представление
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/24/2018
 
 Начальное представление имеет два основных раздела: *водяной знак* и **сведения о наборе схем** области. Оно также содержит панель инструментов, доступную во всех представлениях конструктора XSD.
 
-![XML начальное представление конструктора схемы](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Начальное представление конструктора схемы XML](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Водяной знак
 
@@ -36,11 +37,11 @@ ms.lasthandoff: 05/24/2018
 
 Можно перемещаться между начального представления [представления модели содержимого](../xml-tools/content-model-view.md) и [представление графика](../xml-tools/graph-view.md) на панели инструментов конструктора XML-схем.
 
-![Панель инструментов конструктора схемы XML](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Панель инструментов конструктора схемы XML.](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Следующие кнопки панели инструментов конструктора XSD включены, если активно начальное представление.
 
-|Параметр|Описание|
+|Параметр|Описание:|
 |------------|-----------------|
 |**Показать начальное представление**|Переключается в начальное представление. Это представление может осуществляться с помощью сочетания клавиш: **Ctrl**+**1**.|
 |**Показать представление модели содержимого**|Переключается на представление модели содержимого. Это представление может осуществляться с помощью сочетания клавиш: **Ctrl**+**2**.|

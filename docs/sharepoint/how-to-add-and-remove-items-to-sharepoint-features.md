@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d097562ecf1abe021d78440bc6c96019d2eb97d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6155aa13c8b05036dbb5fb2d9f895ed38719741
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767378"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Практическое руководство. Добавление и удаление элементов в компонентах SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Как: Добавление и удаление элементов в компонентах SharePoint
   При создании решения SharePoint в Visual Studio добавляет элементы проекта SharePoint по умолчанию компонента. Перед развертыванием можно добавлять и удалять элементы проектов SharePoint, чтобы изменить функцию SharePoint.  
   
 ## <a name="adding-sharepoint-project-items-to-a-feature"></a>Добавление элементов проектов SharePoint в компонент  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="removing-sharepoint-project-items-from-a-feature"></a>Удаление элементов проекта SharePoint из компонента  
   
-#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Удаление элементов SharePoint с помощью конструктора компонентов  
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Удаление элементов SharePoint с помощью конструктора компонентов
   
 1.  Выберите один или несколько элементов в **элементы в компоненте** списка.  
   
@@ -56,8 +57,7 @@ ms.lasthandoff: 04/16/2018
   
      Элементы проекта SharePoint отображаются в **элементы в решении** списка.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Создание компонентов SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

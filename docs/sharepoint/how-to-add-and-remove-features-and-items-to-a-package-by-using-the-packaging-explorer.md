@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dafa11c17968eb5468ecd4eff462ff9474ce5131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8c838880dd7d7e7adfe080541f1419bd4651ff3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767446"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Практическое руководство. Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Как: Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов
   Чтобы настроить пакет для развертывания компонентов и элементов SharePoint, можно использовать обозреватель пакетов. Компоненты и элементы проектов SharePoint можно настроить в WSP-файле.  
   
  Кроме того можно использовать конструктор пакетов для просмотра и изменения порядка для изменения порядка активации компонентов. Дополнительные сведения см. в разделе [как: Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-open-the-packaging-explorer"></a>Чтобы открыть обозреватель пакетов  
   
-1.  В строке меню выберите **представление**, **другие окна**, **обозреватель пакетов**.  
+1.  В строке меню выберите **представление** > **другие окна** > **обозреватель пакетов**.  
   
      **Обозреватель пакетов** отображается в **элементов**.  
   
 ## <a name="adding-a-feature-to-a-package"></a>Добавление компонента в пакет  
  Новые и существующие компоненты можно добавить в пакет с помощью обозревателя пакетов.  
   
-#### <a name="to-add-a-sharepoint-feature"></a>Чтобы добавить в компонент SharePoint  
+#### <a name="to-add-a-sharepoint-feature"></a>Чтобы добавить в компонент SharePoint
   
 1.  Откройте **обозреватель пакетов**, откройте контекстное меню для проекта и выберите **добавить компонент**.  
   
@@ -60,13 +61,12 @@ ms.lasthandoff: 04/16/2018
 ## <a name="validating-a-feature-or-package"></a>Проверка компонента или пакета  
  Проверка файлов можно выявлять потенциальные проблемы в компонентах и пакетах SharePoint. Ошибки и предупреждения отображаются в окне вывода и список ошибок.  
   
-#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Чтобы проверить SharePoint компонента или пакета  
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Чтобы проверить SharePoint компонента или пакета
   
 1.  Откройте **обозреватель пакетов**.  
   
 2.  Откройте контекстное меню для компонента или пакета, а затем выберите **проверки**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

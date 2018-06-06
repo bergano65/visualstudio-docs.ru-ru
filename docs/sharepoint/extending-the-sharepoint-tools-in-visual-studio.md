@@ -17,25 +17,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d5ad6f27574fcb7bd8a859bcd21ac65e159596e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b63e332ba5cc079ac50f2ef3c4fee84727d95f5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765340"
 ---
-# <a name="extending-the-sharepoint-tools-in-visual-studio"></a>Расширение средств SharePoint в Visual Studio
+# <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Расширения инструментов SharePoint в Visual Studio
   Средства SharePoint в Visual Studio, требованиям многих сценариев развертывания приложений. Однако бывают ситуации, где они не предоставляют функций, которые вы или другими разработчиками. В таких случаях можно расширения инструментов SharePoint для создания функциональных возможностей.  
   
-## <a name="how-to-extend-the-sharepoint-tools"></a>Механизм расширения инструментов SharePoint  
+## <a name="how-to-extend-the-sharepoint-tools"></a>Механизм расширения инструментов SharePoint
  Можно расширить систему проектов SharePoint и **подключения SharePoint** узел в **обозревателя серверов** окна.  
   
-### <a name="extending-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint  
+### <a name="extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
  Visual Studio включает набор шаблонов проектов и шаблонов элементов, которые можно использовать для создания решений SharePoint. Например существуют шаблоны для приемников событий, определения списков, рабочие процессы и веб-частей. Однако можно также определить собственные типы элементов проекта SharePoint для создания компонентов SharePoint, таких как поля и настраиваемые действия. Также можно создавать расширения для типов элементов проектов SharePoint, которые уже установлены в Visual Studio, и можно создавать расширения для проектов SharePoint.  
   
  Дополнительные сведения см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
   
-### <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе сервера  
- В Visual Studio можно использовать **подключения SharePoint** узел в**обозревателя серверов** служит для отображения различных компонентов одного или нескольких локальных сайтов SharePoint в режиме дерева иерархии. Кроме того, можно расширить **подключения SharePoint** узел следующим образом:  
+### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе серверов
+ В Visual Studio можно использовать **подключения SharePoint** узел в **обозревателя серверов** служит для отображения различных компонентов одного или нескольких локальных сайтов SharePoint в режиме дерева иерархии. Кроме того, можно расширить **подключения SharePoint** узел следующим образом:  
   
 -   Путем добавления собственных узлов. Это полезно, если требуется отображать компоненты сайтов SharePoint, которые не отображаются по умолчанию.  
   
@@ -43,14 +44,14 @@ ms.lasthandoff: 04/16/2018
   
  Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
-## <a name="development-computer-requirements"></a>Требования к компьютеру разработчика  
+## <a name="development-computer-requirements"></a>Требования к компьютеру разработчика
  Для создания расширений для средств SharePoint, на компьютере разработчика должен соответствовать тем же требованиям для создания решений SharePoint в Visual Studio. Дополнительные сведения см. в разделе [требования к разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
  Также рекомендуется установить [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Пакет SDK включает шаблоны проектов и средства, которые можно использовать для расширения Visual Studio. В частности пакет SDK включает шаблон проекта, которые можно использовать для простого создания пакета расширения Visual Studio (VSIX). Пакеты VSIX являются предпочтительным способом развертывания расширений Visual Studio в Visual Studio. Все расширения инструментов SharePoint должны быть развернуты с помощью пакетов VSIX. Все примеры в этой документации предполагается, что вы [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] установлен.  
   
  Чтобы установить пакет SDK для Visual Studio, в разделе [Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md). Дополнительные сведения о расширениях Visual Studio см. в разделе [начинается разработка расширений Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Обзор SharePoint модели программирования расширений средств](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
