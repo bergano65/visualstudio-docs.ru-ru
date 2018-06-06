@@ -11,11 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573288"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Краткое руководство. Использование редактора кода
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
 
-Это краткое руководство предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../ide/tutorial-csharp-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/quickstart-cpp.md).
+Это краткое руководство предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../ide/tutorial-csharp-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Создание файла кода
 

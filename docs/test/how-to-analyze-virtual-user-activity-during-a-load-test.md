@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751238"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Практическое руководство. Анализ действий виртуальных пользователей при нагрузочном тестировании с помощью диаграммы активности виртуальных пользователей
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
      **Панель "Условные обозначения сведений"**
 
-     ![Панель "Условные обозначения сведений"](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![Панель "Условные обозначения сведений"](../test/media/ltest_detailslegend.png)
 
 2.  Установите или снимите флажки для ошибок, журналов, тестов, поисков и страниц ASPX, связанных с нагрузочным тестом.
 
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
      **Панель "Фильтрация результатов"**
 
-     ![Панель "Фильтрация результатов"](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![Панель "Фильтрация результатов"](../test/media/ltest_filterresults.png)
 
 3.  В результатах фильтра установите или снимите флажки для указанных ниже параметров фильтра.
 

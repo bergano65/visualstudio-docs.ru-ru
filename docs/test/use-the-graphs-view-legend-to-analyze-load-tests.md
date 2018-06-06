@@ -11,17 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 55d38dcb87081ea7fc0b16d7d500d13e72f77269
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751405"
 ---
 # <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Использование легенды представления диаграмм для анализа нагрузочного тестирования
 
 Представление диаграмм анализатора тестовой нагрузки включает область легенды, в которой отображаются сведения обо всех счетчиках производительности, связанных с выбранной в данный момент диаграммой.
 
-![Легенда представления диаграмм](../test/media/load_viewlegend.png "Load_ViewLegend")
+![Легенда представления диаграмм](../test/media/load_viewlegend.png)
 
 Легенда содержит следующие сведения:
 

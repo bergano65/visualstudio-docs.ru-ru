@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751537"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Практическое руководство. Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
  На следующем рисунке показан пример отчета, демонстрирующего корреляцию между снижением скорости транзакций (UpdateCart) и падением значений счетчика (% процессора). Эти данные указывают на возможную проблему в коде приложения, а не в работе баз данных и сети, и данный случай рекомендуется изучить с помощью профилировщика ASP.NET.
 
- ![Потенциальная проблема в коде приложения](../test/media/lt_excel.png "LT_Excel")
+ ![Потенциальная проблема в коде приложения](../test/media/lt_excel.png)
 
  Отчеты в формате Excel могут создаваться либо в анализаторе тестовой нагрузки с помощью кнопки **Создание отчета Excel** на панели инструментов, либо из программы Excel с помощью пункта **Загрузить отчет теста** на вкладке **Загрузить тест** ленты Office.
 

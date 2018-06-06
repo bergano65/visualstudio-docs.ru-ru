@@ -9,11 +9,12 @@ description: Вход может завершиться ошибкой, если
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477656"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Вход в подписки Visual Studio может быть неудачным при использовании псевдонимов
 
@@ -48,25 +49,26 @@ ms.lasthandoff: 04/06/2018
 1. Откройте [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) и выполните вход.
 2. На странице администрирования Volume Licensing Service Center щелкните **Подписки** и выберите **Подписки Visual Studio**.
 
-    ![Меню "Подписки"](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. Выберите **номер соглашения**, связанный с нужной подпиской Visual Studio.
 
-    ![Выбор соглашения](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. Щелкните **Assign Subscription** (Назначить подписку).
 
-    ![Назначение подписки](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. Выберите нужный **уровень подписки**.
 
-    ![Уровень подписки](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. Убедитесь, что есть доступные для назначения подписки, и нажмите кнопку **Далее**.
 7.  Введите сведения о подписчике и адрес каталога в поле адреса электронной почты, затем нажмите кнопку **Далее**.
 
-    ![Адрес электронной почты](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. Проверьте сведения о подписчике и нажмите кнопку **Готово**.
 
 9. Известите подписчика о том, что для него подготовлена подписка, при помощи предложенного ниже [шаблона письма](#notifying-your-subscribers-with-directory-addresses).

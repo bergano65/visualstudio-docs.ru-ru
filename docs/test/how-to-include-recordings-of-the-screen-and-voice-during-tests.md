@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 827b76f3b4b40f59fe22b3c5424c6d8c13087809
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750998"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Практическое руководство. Включение записей экрана и голоса во время тестирования с помощью параметров тестов
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/26/2018
 
      Откроется диалоговое окно "Настройка адаптера диагностических данных - Средство записи экрана и речи".
 
-     ![Конфигурация видео](../test/media/testsettingvideoconfiggdr.png "TestSettingVideoConfigGDR")
+     ![Конфигурация видео](../test/media/testsettingvideoconfiggdr.png)
 
 4.  Установите флажок **Включить запись речи** для сохранения звука в записи (необязательно).
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e94932749523cea906cd60442971b93160b6c13
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8989209a5abefb05f0f3f9b90357ab0f2a895786
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268156"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690904"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для службы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] с использованием метода выборки в командной строке.  
@@ -26,7 +26,7 @@ ms.locfileid: "34268156"
 |----------|---------------------|  
 |**Присоединение профилировщика к службе .NET**|-   [Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Инструментирование службы .NET и сбор данных об использовании памяти .NET**|-   [Практическое руководство. Инструментирование службы .NET Framework и сбор данных об использовании памяти](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Добавление данных взаимодействия между уровнями**|-   [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Добавление данных взаимодействия между уровнями**|-   [Сбор данных о взаимодействии уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Связанные задачи
   

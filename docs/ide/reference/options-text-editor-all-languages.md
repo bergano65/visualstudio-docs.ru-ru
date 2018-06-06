@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749233"
 ---
 # <a name="options-text-editor-all-languages"></a>Параметры, текстовый редактор, все языки
 Это диалоговое окно позволяет изменять стандартное поведение редактора кода. Эти параметры также применяются к другим редакторам, основанным на редакторе кода, таким как представление исходного кода в конструкторе HTML. Чтобы открыть это диалоговое окно, выберите в меню **Сервис** пункт **Параметры**. В папке **Текстовый редактор** разверните подпапку **Все языки**, а затем выберите **Общие**.
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
  Если этот флажок установлен, в том месте, где длинная текстовая строка переносится на следующую строку, отображается индикатор стрелки возврата каретки.
 
- ![Снимок экрана LineBreakSymbol](../../ide/reference/media/linebreak.gif "linebreak")
+ ![Снимок экрана LineBreakSymbol](../../ide/reference/media/linebreak.gif)
 
  Снимите этот флажок, если не требуется отображать эти стрелки.
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f6cff8e8890b97e7aeddad69c4a1a3e0ff5db8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747109"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Практическое руководство. Изменение точки вращения трехмерной модели
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 
 Ниже показана модель с измененным центром вращения:
 
-![Модель дома с измененным центром вращения](../designers/media/digit-modified-model.png "Digit-Modified-Model")
+![Модель дома с измененным центром вращения](../designers/media/digit-modified-model.png)
 
 ## <a name="see-also"></a>См. также
 

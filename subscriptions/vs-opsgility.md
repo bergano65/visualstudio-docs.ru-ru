@@ -9,11 +9,12 @@ description: Сведения о преимуществе обучения Opsgi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477637"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Преимущество Opsgility в подписках Visual Studio
 
@@ -52,8 +53,6 @@ ms.lasthandoff: 04/16/2018
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Нужна помощь с Opsgility?  Ознакомьтесь со следующими ресурсами:
-    - [FAQ](https://www.opsgility.com/Home/FAQ)
-    - Отправьте запрос на поддержку на странице [обратной связи](https://www.opsgility.com/SupportTicket). 
+-  Нужна помощь с Opsgility?  Отправьте запрос на поддержку на странице [обратной связи](https://www.opsgility.com/SupportTicket). 
 -  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
 -  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 

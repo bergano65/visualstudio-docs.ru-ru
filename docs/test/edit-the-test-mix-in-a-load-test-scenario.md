@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750939"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Изменение тестового набора для определения веб-тестов производительности, модульных тестов и закодированных тестов пользовательского интерфейса, которые должны быть включены в сценарий тестовой нагрузки
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
 С помощью редактора тестовой нагрузки можно добавить в тестовый набор сценария дополнительные веб-тесты производительности и модульные тесты.
 
-![Добавление теста в существующий нагрузочный тест](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Добавление теста в существующий нагрузочный тест](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Добавление тестов в существующий сценарий
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 5.  (Необязательно) Настройте элемент управления набором, чтобы задать распределение тестов. Дополнительные сведения см. в разделе [Элемент управления тестовым набором](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Удаление тестов из сценария
- ![Удаление теста из существующего нагрузочного теста](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Удаление теста из существующего нагрузочного теста](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Удаление тестов из сценария
 

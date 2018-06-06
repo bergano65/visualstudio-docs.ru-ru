@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745634"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Практическое руководство. Создание простейшей текстуры
 В этом документе рассматривается, как с помощью редактора изображений создать простейшую текстуру.
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
  В следующей процедуре показано, как создать текстуру, представляющую цель "яблочко". По завершении работы текстура должна выглядеть так, как показано на следующем рисунке. Для лучшей демонстрации прозрачности в текстуре редактор изображений был настроен на использование зеленого клетчатого шаблона для ее отображения.
 
- ![Целевой объект bullseye с зеленой прозрачной областью](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+ ![Целевой объект bullseye с зеленой прозрачной областью](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Перед началом убедитесь, что отображается окно **Свойства**. В окне **Свойства** можно задать размер изображения, а также изменять свойства инструментов и задавать цвета в процессе работы.
 
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/26/2018
 
  Текстура цели "яблочко" закончена. Ниже показано готовое изображение с прозрачностью:
 
- ![Полная текстура целевого объекта bullseye](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![Полная текстура целевого объекта bullseye](../designers/media/gfx_image_demo_bullseye.png)
 
  В качестве следующего шага можно создать уровни MIP для этой текстуры. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение MIP-уровней](../designers/how-to-create-and-modify-mip-levels.md).
 

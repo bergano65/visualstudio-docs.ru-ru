@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a5b9e7367aba2fa987fb68ad99dad20f7cd0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752324"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Иерархическая организация ресурсов для локализации
 
@@ -42,11 +43,11 @@ ms.lasthandoff: 04/26/2018
 
  Для хранения ресурсы рекомендуется максимально обобщить. Это означает, что по возможности локализованные строки, изображения и т. д. следует хранить в файлах ресурсов для нейтральных языков и региональных параметров (но не специальных). Например, у вас могут быть ресурсы для языка и региональных параметров fr-BE (французский — Бельгия), а ресурсы, которые находятся в иерархии выше, представляют исходные ресурсы en (английский). В таком случае при работе с вашим приложением в системе, настроенной для использования fr-CA (французский — Канада), могут возникнуть проблемы. Система ищет вспомогательную сборку для fr-CA и не находит ее. Поэтому загружается главная сборка с исходными ресурсами на английском языке, а не ресурсы для французского языка. На рисунке ниже показан этот нежелательный сценарий.
 
- ![Только определенные ресурсы](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+ ![Только специальные ресурсы](../ide/media/vbspecificresourcesonly.gif)
 
  Если вы последуете рекомендациям и включите максимально возможное число ресурсов в файл нейтральных ресурсов для языка и региональных параметров fr, пользователь из Канады не увидит ресурсы, отмеченные для языка и региональных параметров fr-BE. Вместо этого он увидит строки на французском языке. Этот оптимальный сценарий показан на рисунке ниже.
 
- ![Схема NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
+ ![График NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif)
 
 ## <a name="see-also"></a>См. также
 

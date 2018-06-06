@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751346"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 Существует три категории счетчиков: "Проценты", "Количество" и "Средние значения". Их примеры: "Загрузка ЦП: %", "Количество блокировок SQL Server" и "Количество запросов IIS в секунду".
 
-![Наборы счетчиков нагрузочных тестов](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Наборы счетчиков нагрузочных тестов](../test/media/loadtestcountersets.png)
 
 Данные о производительности для отдельных HTTP-запросов выводятся на компьютере, на котором выполняется тест, например на компьютере агента. Для запросов отслеживаются такие данные, как среднее время до получения первого байта, время ответа и число запросов в секунду.
 

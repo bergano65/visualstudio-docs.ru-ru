@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e78cba542c5a511eed13eedcde2665a832b09ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d38c465cac0c24c7e776acc131a5b5fe22aa824
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747135"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Практическое руководство. Перемещение по интегрированной среде разработки Visual Studio
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 
 **Навигатор по интегрированной среде разработки** работает практически аналогично переключателю между окнами приложений. Он недоступен из меню и открывается только с помощью сочетаний клавиш. Для доступа к **навигатору по интегрированной среде разработки** можно использовать любую из двух команд (приведены ниже), чтобы переключаться между файлами в нужном порядке.
 
-![Навигатор интегрированной среды разработки Visual Studio](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")
+![Навигатор Visual Studio IDE](../ide/media/vs2015_ide_navigator.png)
 
 `Window.PreviousDocumentWindowNav` позволяет переходить к последнему файлу, к которому осуществлялся доступ, а `Window.NextDocumentWindowNav` позволяет перемещаться в обратном порядке. Согласно **общим параметрам разработки**, для `Window.PreviousDocumentWindowNav` назначено сочетание клавиш **SHIFT**+**ALT**+**F7**, а для `Window.NextDocumentWindowNav` — **ALT**+**F7**.
 

@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750731"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 
@@ -72,17 +73,17 @@ ms.lasthandoff: 04/26/2018
 
 4.  В результатах обозревателя тестов щелкните ссылку **Выходные данные**.
 
-     ![Ссылка вывода в обозревателе тестов](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Ссылка вывода в обозревателе тестов](../test/media/cuit_htmlactionlog1.png)
 
      Здесь отображаются результаты теста, содержащие ссылку на журнал действий.
 
-     ![Результаты и выходные ссылки из закодированного теста пользовательского интерфейса](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Результаты и выходные ссылки из закодированного теста пользовательского интерфейса](../test/media/cuit_htmlactionlog2.png)
 
 5.  Выберите ссылку *UITestActionLog.html*.
 
      Журнал появится в браузере.
 
-     ![Файл журнала закодированного теста пользовательского интерфейса](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Файл журнала закодированного теста пользовательского интерфейса](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>См. также
 

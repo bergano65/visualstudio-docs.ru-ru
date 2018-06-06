@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572395"
 ---
 # <a name="features-of-the-code-editor"></a>Возможности редактора кода
 
@@ -87,6 +88,6 @@ ms.lasthandoff: 05/11/2018
 ## <a name="see-also"></a>См. также
 
 - [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
-- [Начало работы с C++ в Visual Studio](../ide/quickstart-cpp.md)
+- [Начало работы с C++ в Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Начало работы с C# и ASP.NET в Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Начало работы с Python в Visual Studio](../ide/quickstart-python.md)

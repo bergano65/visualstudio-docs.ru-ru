@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22897b072d7051eef5c08d27fc3235050474da60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751992"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Практическое руководство. Управление наборами счетчиков с помощью редактора тестовой нагрузки
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/26/2018
 
 Управление наборами счетчиков включает в себя выбор набора компьютеров, на которых требуется собирать данные о производительности, и назначение каждому отдельному компьютеру набора наборов счетчиков для сбора данных. Управление счетчиками осуществляется в **редакторе тестовой нагрузки**.
 
-![Управление наборами счетчиков](../test/media/loadtestmanagecountersets.png "LoadTestManageCounterSets")
+![Управление наборами счетчиков](../test/media/loadtestmanagecountersets.png)
 
 ## <a name="to-manage-counter-sets"></a>Управление наборами счетчиков
 

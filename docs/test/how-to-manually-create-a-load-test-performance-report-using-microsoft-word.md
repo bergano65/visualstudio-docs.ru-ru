@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750887"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Практическое руководство. Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  Увеличьте масштаб конкретной диаграммы, которую требуется скопировать в документ Microsoft Word, как показано на рисунке ниже (необязательно). Дополнительные сведения см. в статье [Практическое руководство. Увеличение области диаграммы](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
-     ![Элемент управления масштабом в представлении диаграмм](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![Элемент управления масштабом представления диаграмм](../test/media/ltest_zoomcontrol.png)
 
 3.  Щелкните правой кнопкой мыши диаграмму, которую требуется скопировать в документ Microsoft Word, и выберите команду **Копировать**.
 

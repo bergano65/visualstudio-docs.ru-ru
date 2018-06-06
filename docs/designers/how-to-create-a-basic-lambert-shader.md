@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748209"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта
 
@@ -41,13 +42,13 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > Для лучшей демонстрации эффекта шейдера на этом рисунке оранжевый цвет был задан с использованием параметра **MaterialDiffuse** шейдера. Игра или приложение могут использовать этот параметр, чтобы предоставить уникальное значение цвета для каждого объекта. Дополнительные сведения о параметрах материалов см. в подразделе "Предварительный просмотр шейдеров" раздела [Конструктор шейдеров](../designers/shader-designer.md).
 
- ![Граф шейдера и предварительный просмотр его эффекта.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")
+ ![Граф шейдера и предварительный просмотр его эффекта.](../designers/media/digit-lambert-effect-graph.png)
 
  Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о предварительном просмотре шейдеров в конструкторе шейдеров см. в подразделе "Предварительный просмотр шейдеров" раздела [Конструктор шейдеров](../designers/shader-designer.md).
 
  На приведенном ниже рисунке шейдер, описанный в этом документе, применяется к трехмерной модели.
 
- ![Применение к модели освещения по методу Ламберта.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")
+ ![Применение к модели освещения по методу Ламберта.](../designers/media/digit-lambert-effect-result.png)
 
  Дополнительные сведения о способах применения шейдера к трехмерной модели см. в статье [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

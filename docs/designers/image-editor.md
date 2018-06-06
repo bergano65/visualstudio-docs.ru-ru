@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3fe4cf9591d64465fa7ec44d1653bbfc65ec8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747314"
 ---
 # <a name="image-editor"></a>редактор изображений
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/26/2018
 
  Панель инструментов **Image Editor Mode** (Режим редактора изображений).
 
- ![Модальная панель инструментов редактора изображений.](../designers/media/digit-tre-modal-toolbar.png "Digit-TRE-Modal-Toolbar")
+ ![Модальная панель инструментов редактора изображений.](../designers/media/digit-tre-modal-toolbar.png)
 
  В этой таблице описываются элементы на панели инструментов **Image Editor Mode** (Режим редактора изображений), перечисленные в порядке отображения, слева направо.
 
@@ -116,7 +117,7 @@ ms.lasthandoff: 04/26/2018
 
  Панель инструментов **редактора изображений**.
 
- ![Панель инструментов редактора изображений](../designers/media/digit-tre-toolbar.png "Digit-TRE-Toolbar")
+ ![Панель инструментов редактора изображений](../designers/media/digit-tre-toolbar.png)
 
  В следующей таблице приведены описания элементов на панели инструментов **редактора изображений**, перечисленные в порядке отображения, сверху вниз.
 

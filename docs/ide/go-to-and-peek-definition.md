@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745767"
 ---
 # <a name="view-type-and-member-definitions"></a>Просмотр определений типов и элементов
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/26/2018
 
 Например, если запустить команду **Перейти к определению** для элемента <xref:System.Console>, метаданные <xref:System.Console> отобразятся в редакторе кода в виде исходного кода на языке C#. Этот код похож на объявление этого элемента, но не показывает реализацию.
 
-![Метаданные в виде исходного кода](../ide/media/metadatasource.png "MetadataSource")
+![Метаданные как исходный код](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > При попытке выполнить команду **Перейти к определению** или **Показать определение** для типов или элементов, помеченных как внутренние, Visual Studio не позволит просмотреть их метаданные в виде исходного кода, даже если сборка, к которой выполняется обращение, является дружественной.

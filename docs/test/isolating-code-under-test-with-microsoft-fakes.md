@@ -12,11 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751459"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 
@@ -28,7 +29,7 @@ Fakes предлагает два варианта на выбор:
 
 -   [Оболочка](#shims) изменяет скомпилированный код приложения во время выполнения, чтобы вместо заданного вызова метода он запускал код-оболочку, предоставляемый тестом. Оболочки можно использовать для замены вызовов сборок, которые невозможно изменить, например сборок .NET.
 
-![Имитации замещают другие компоненты](../test/media/fakes-2.png "Fakes-2")
+![Заполнители замещают другие компоненты](../test/media/fakes-2.png)
 
 **Требования**
 
