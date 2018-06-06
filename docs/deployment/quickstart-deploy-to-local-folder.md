@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a68e7d039fe0b60faf42ea319bb3a3bd4f888d3b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764223"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Развертывание веб-приложения или приложения .NET Core в локальной папке, используя средство публикации Visual Studio
 
@@ -26,9 +27,9 @@ ms.lasthandoff: 05/22/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Необходимо иметь Visual Studio 2017 г. установлен и **.NET Framework** и **.NET Core** установлена рабочая нагрузка разработки.
+* Необходимо иметь Visual Studio 2017 г. установлен и. **NET разработки настольных приложений** рабочей нагрузки и. **NET Core** рабочей нагрузки.
 
-    Установите Visual Studio бесплатно [здесь](http://www.visualstudio.com), если еще не сделали это.
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта 
 
