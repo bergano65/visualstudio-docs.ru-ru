@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfc0a4e3841f30c2be81b60b2e86d9fd29bb801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571774"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>«Разное», «XML», «Текстовый редактор», диалоговое окно «Свойства»
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Прочее, XML, текстовый редактор, диалоговое окно «Параметры»
 
 При помощи этого диалогового окна можно изменить настройки автоматического завершения и настройки схемы для XML Editor. Вы можете получить доступ к **параметры** диалогового окна **средства** меню.
 

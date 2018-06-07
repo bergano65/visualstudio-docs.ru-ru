@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571421"
 ---
 # <a name="office-development-samples"></a>Примеры разработки решений Office
   Visual Studio содержит примеры приложений, которые демонстрируют, как использовать инструменты разработчика Microsoft Office для создания решений Office. Код в этих примерах показывает синтаксис, структуру и приемы, используемые для сборки решений Office.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |Пример взаимодействия VBA и VSTO|Демонстрирует способ вызова метода в настройке на уровне документа для Excel из кода Visual Basic для приложений (VBA) в книге.<br /><br /> Этот пример доступен только в Интернете.|  
   
 ## <a name="see-also"></a>См. также  
- [Примеры разработчиков MSDN: Сведения о примерах кода](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Примеры разработчиков MSDN: сведения о примерах кода](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)  
   
   

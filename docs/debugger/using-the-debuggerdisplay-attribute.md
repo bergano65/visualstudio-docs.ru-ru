@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573249"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Использование атрибута DebuggerDisplay
 [DebuggerDisplayAttribute-класс](/dotnet/api/system.diagnostics.debuggerdisplayattribute) управляет отображением объекта, свойство или поле в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+«, Nq» суффикс сообщает средство оценки выражений смогло удалить кавычки при отображении конечное значение (nq = без кавычек). 
   
 ## <a name="example"></a>Пример  
  Следующий пример демонстрирует способ использования атрибута `DebuggerDisplay`совместно с атрибутами `DebuggerBrowseable` и `DebuggerTypeProxy`. При работе данного кода в окна переменных отладчика, например в окно **Контрольные значения** , выводится расширенная информация, а именно:  

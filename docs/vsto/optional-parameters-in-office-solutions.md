@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571992"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Необязательные параметры в решениях Office
   Многие методы в объектных моделях приложений Microsoft Office принимают необязательные параметры. При использовании Visual Basic для разработки решения Office в Visual Studio значение для необязательных параметров передавать не нужно, так как для каждого отсутствующего параметра автоматически используется значение по умолчанию. В большинстве случаев можно также опустить необязательные параметры в проектах Visual C#. Тем не менее, нельзя опускать необязательные **ref** параметры `ThisDocument` классов в проектах уровня документа Word.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Использование необязательных параметров методов в классе ThisDocument в проектах на уровне документа Visual C# для Word  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Использование необязательных параметров методов в классе ThisDocument в проектах на уровне документа Visual C# для Word  
  Объектная модель Word содержит много методов с необязательными **ref** параметры, которые принимают <xref:System.Object> значения. Тем не менее, нельзя опускать необязательные **ref** параметров методов созданного `ThisDocument` классов в проектах уровня документа Visual C# для Word. Visual C# позволяет опускать необязательные **ref** параметры только для методов интерфейсов, не классов. Например, приведенный ниже код не компилируется, так как нельзя опускать необязательные **ref** параметры <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> метод `ThisDocument` класса.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
@@ -68,10 +69,10 @@ ms.lasthandoff: 04/16/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передача аргументов по значению и по ссылке &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передача параметров &#40;C&#35; Руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передачи аргументов по значению и по ссылке &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передачи параметров &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>См. также  
- [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+ [Разработки решений Office](../vsto/developing-office-solutions.md)   
+ [Напишите код в решениях Office](../vsto/writing-code-in-office-solutions.md)  
   
   

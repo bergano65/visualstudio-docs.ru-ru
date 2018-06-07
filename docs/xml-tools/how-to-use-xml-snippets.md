@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573132"
 ---
 # <a name="how-to-use-xml-snippets"></a>Как: использование XML фрагментов кода
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
 После добавления XML-фрагмента в редактор все редактируемые поля во фрагменте выделяются желтым цветом, а курсор помещается в первое редактируемое поле.
 
-## <a name="insert-snippet"></a>Вставка фрагментов кода
+## <a name="insert-snippet"></a>Вставить фрагмент
 
 Следующие процедуры описывают способы доступа к **вставить фрагмент** команды.
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 3. Выберите фрагмент из списка при помощи мыши или введите имя фрагмента и нажав клавишу **вкладке** или **ввод**.
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Вставка фрагментов из списка автоматического завершения слов IntelliSense.
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Вставка фрагментов из списка завершения слов IntelliSense
 
 1. Поместите курсор в то место, куда нужно добавить XML-фрагмент.
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > **Окружить** также вызывается сочетанием клавиш (**Ctrl**+**K**, затем **Ctrl** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Окружение с помощью контекстного меню
+### <a name="to-use-surround-with-from-the-context-menu"></a>Чтобы использовать заключить в контекстном меню
 
 1. Выберите текст, который нужно окружить, в XML Editor.
 
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/26/2018
 
 3. Выберите фрагмент из списка при помощи мыши или введя имя фрагмента и нажав клавишу **вкладке** или **ввод**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Окружение с помощью меню IntelliSense
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Чтобы использовать окружить из меню IntelliSense
 
 1. Выберите текст, который нужно окружить, в XML Editor.
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/26/2018
 
 3. Выберите фрагмент из списка при помощи мыши или введя имя фрагмента и нажав клавишу **вкладке** или **ввод**.
 
-## <a name="using-xml-snippets"></a>Использование XML-фрагментов
+## <a name="use-xml-snippets"></a>Используйте XML-фрагменты
 
 Если выбран XML-фрагмент, текст фрагмента кода автоматически вставляется в текущей позиции курсора. Все редактируемые поля фрагмента выделяются цветом, а первое редактируемое поле выбирается автоматически. Выбранное в данный момент поле окружено рамкой.
 
@@ -109,10 +110,10 @@ ms.lasthandoff: 04/26/2018
 
 Нажав клавишу **ввод** или **Esc** отменить редактирование поля и вернуть редактор в обычное.
 
-Цвета по умолчанию для редактируемых полей фрагментов кода можно изменить, изменив параметр в поле фрагмента кода **шрифты и цвета** области **параметры** диалоговое окно. Дополнительные сведения см. в разделе [как: изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Цвета по умолчанию для редактируемых полей фрагментов кода можно изменить с помощью **поле фрагмента кода** в **шрифты и цвета** области **параметры** диалоговое окно. Дополнительные сведения см. в разделе [как: изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>См. также
 
 - [XML-фрагменты](../xml-tools/xml-snippets.md)
-- [Как создать XML-фрагмент из XML-схемы](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Как создавать XML-фрагменты](../xml-tools/how-to-create-xml-snippets.md)
+- [Как: создать XML-фрагмент из XML-схемы](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Как: создать XML-фрагменты](../xml-tools/how-to-create-xml-snippets.md)
