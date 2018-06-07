@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572170"
 ---
-# <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка приложений Office и SharePoint в Visual Studio
+# <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка решений Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.  
   
  В этом разделе.  
@@ -49,8 +50,6 @@ ms.lasthandoff: 05/22/2018
  Эти надстройки требуют очень мало ресурсов по сравнению с традиционными надстройками и решениями VSTO. Их можно создавать с помощью почти любой технологии веб-программирования, такой как HTML5, JavaScript, CSS3 и XML.  Для начала используйте инструменты разработчика Office для Visual Studio или облегченный набор веб-средств разработки для Office 365 (кодовое имя Napa), который позволяет создавать проекты, писать код и запускать надстройки в браузере.  
   
  ![Приложения для Office и концептуальной модели SharePoint](../vsto/media/officeandsharepointapps2015.png "приложений для Office и концептуальной модели SharePoint")  
-  
-
   
 ### <a name="build-an-office-add-in"></a>Создание надстройки Office  
  Чтобы расширить функциональные возможности Office, создайте надстройку Office. По сути это веб-страницу, размещенную в приложении Office, таком как Excel, Word, Outlook и PowerPoint. Ваше приложение может расширять функциональные возможности документов, таблиц, сообщений электронной почты, встреч, презентаций или проектов.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 05/22/2018
 |--------|---------|  
 |Узнайте больше о надстройках SharePoint, а затем создайте собственную надстройку.|[Надстройки SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Сравните надстройки SharePoint с традиционными решениями SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Решите, следует ли создать надстройку SharePoint или решение SharePoint.|[Выбор между надстройками SharePoint и решениями SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Решите, следует ли создать надстройку SharePoint или решение SharePoint.|[Выбрать между надстройками SharePoint и решениями SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Создание надстройки VSTO  
  Создание надстройки VSTO для Office 2007 или Office 2010 или выходит за Office 2013 и Office 2016 возможности надстройки Office. Надстройки VSTO выполняются только на настольных компьютерах. Пользователям необходимо устанавливать надстройки VSTO, поэтому они обычно сложнее в развертывании и поддержке.  Однако надстройку VSTO можно теснее интегрировать с Office. Например, она может добавлять вкладки и элементы управления на ленту Office и выполнять расширенные задачи автоматизации, такие как слияние документов или изменение диаграмм. Вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами Office.  

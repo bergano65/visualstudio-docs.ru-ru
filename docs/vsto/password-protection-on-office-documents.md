@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5d85f1dc0aa54da22b02259aea372f2ad6dd42ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a278677b40f8da703c7f3287851c2f82fb95a21c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572716"
 ---
-# <a name="password-protection-on-office-documents"></a>Защита паролей в документах Office
+# <a name="password-protection-on-office-documents"></a>Защита паролем в документах Office
   Можно задать пароль документы Microsoft Office Word и книг Microsoft Office Excel, чтобы они не может быть открыта тем, кто знает пароль. Этот параметр называется **пароль для открытия**.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>См. также  
  [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)   
  [Управление правами и Обзор расширений управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Как: код разрешено выполнение с выделенным документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Как: разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

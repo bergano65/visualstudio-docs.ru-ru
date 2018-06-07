@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c79330091c5ef5cbe4f89dee1422d1de267f70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572609"
 ---
-# <a name="security-considerations-when-working-with-xml-data"></a>Вопросы безопасности при работе с XML-данными
+# <a name="security-considerations-when-working-with-xml-data"></a>Вопросы безопасности при работе с XML-данных
 
 В этом разделе обсуждаются проблемы безопасности, о которых следует знать при работе с редактором XML или отладчиком XSLT.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
 -   Редактор XML использует классы <xref:System.Net> для загрузки схем.
 
-## <a name="xslt-debugger"></a>Отладчик XSLT
+## <a name="xslt-debugger"></a>отладчик XSLT
 
  Отладчик XSLT использует подсистему управляемой отладки Visual Studio и классы из пространств имен <xref:System.Xml> и <xref:System.Xml.Xsl>.
 

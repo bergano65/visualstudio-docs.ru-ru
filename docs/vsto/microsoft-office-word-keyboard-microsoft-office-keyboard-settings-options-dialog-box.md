@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8747485ced6309bf9e63ecf864c67a111ce6c47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9edd5cd987eb6a4e93b02c8e774adefbc7f969d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572115"
 ---
-# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Клавиатура Microsoft Office Word, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
+# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word клавиатуре параметры клавиатуры Microsoft Office, параметры-диалоговое окно
   Visual Studio и Microsoft Office Word и обрабатывать сочетания клавиш. Того же сочетания клавиш можно было использовать для различных команд в Word и в Visual Studio. Когда Word открыт в проекте уровня документа в Visual Studio, только одно приложение получает сочетания клавиш. По умолчанию Visual Studio получает сочетания клавиш, но может сделать их получения, если документ имеет фокус, выбрав Word **Динамическая схема клавиатуры**.  
   
  Если используется сочетание клавиш, которое не назначен команде в приложении, которое обрабатывает сочетания клавиш, сочетания клавиш передается другие приложения.  
@@ -34,12 +35,12 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  **Схема клавиатуры Visual Studio**  
- Visual Studio получает нажатие сочетания клавиш, даже если документ Word имеет фокус. Например если документ имеет фокус, нажмите функциональную клавишу F5, Visual Studio запускает отладку решения.  
+ Visual Studio получает нажатие сочетания клавиш, даже если документ Word имеет фокус. Например, если нажать клавишу функции **F5** документ имеет фокус, но Visual Studio запускает отладку решения.  
   
  **Динамическая схема клавиатуры**  
- Visual Studio получает сочетания клавиш, только в том случае, когда он получает фокус. Если документ Word имеет фокус, Word получает сочетания клавиш. Например, если документ Word имеет фокус, нажмите функциональную клавишу F5, Word откроется **поиск и замена** диалоговое окно с **перейти к** с выбранной вкладкой. При нажатии клавиши F5 Visual Studio имеет фокус, Visual Studio запускает отладку решения.  
+ Visual Studio получает сочетания клавиш, только в том случае, когда он получает фокус. Если документ Word имеет фокус, Word получает сочетания клавиш. Например, если нажать клавишу функции **F5** документ Word имеет фокус, будет открыт **поиск и замена** диалоговое окно с **перейти к** с выбранной вкладкой. Если нажать клавишу **F5** Visual Studio имеет фокус, Visual Studio запускает отладку решения.  
   
 ## <a name="see-also"></a>См. также  
- [Клавиатура Microsoft Office Excel, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+ [Microsoft Office Excel Keyboard, настройки клавиатуры Microsoft Office, параметры-диалоговое окно](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

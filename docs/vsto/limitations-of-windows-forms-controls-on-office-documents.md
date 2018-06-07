@@ -1,5 +1,5 @@
 ---
-title: Ограничения Windows Forms, элементы управления в документах Office | Документы Microsoft
+title: Ограничения элементов управления Windows Forms в документах Office
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572963"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations of Windows Forms Controls on Office Documents
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ограничения элементов управления Windows Forms в документах Office
 
 Существуют некоторые различия между элементы управления Windows Forms, которые добавляются в документы Microsoft Office Word или листы Microsoft Office Excel и элементы управления Windows Forms, которые были добавлены в Windows Forms. Например, при добавлении <xref:Microsoft.Office.Tools.Word.Controls.Button> элементов управления в документ, свойства, такие как <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, и <xref:System.Windows.Forms.Control.TabIndex> работать не так, как и следует ожидать.
 
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/26/2018
 |Изменение размера элемента управления|Если элемент управления с помощью одного из восьми маркеров изменения размера, новые размеры элемента управления не отражаются в **свойства** окна, пока не будет повторно элемента управления.|
 |Поведение элемента управления|Элементы управления на листе Excel могут вести себя непредсказуемым образом, при разбиении окно листа. Например, доступ к <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> на листе может предоставляться только в одном из windows.|
 |Имена элементов управления.|Нельзя использовать зарезервированные слова для именования элементов управления приложения. Например, при добавлении <xref:Microsoft.Office.Tools.Excel.Controls.Button> на лист и измените имя на **системы**, возникают ошибки при построении проекта.|
-|Добавление элементов управления программными средствами|Не используйте конструктор элемента управления для добавления элемента управления в документ во время выполнения. Вместо этого используйте вспомогательные методы, предоставляемые [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Например, используйте <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> метод, чтобы добавить кнопку на лист. Если вы хотите добавить элемент управления, который не поддерживается в эти вспомогательные методы, можно использовать метод AddControl. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).|
-|Копирование элементов управления|При копировании элемента управления Windows Forms и вставьте его в документ во время выполнения, в документ будет вставлен пустой контейнер элемента управления ActiveX. Элемент управления Windows Forms не отображается в новом месте, а код, содержащий исходный элемент управления не копируется в контейнер элемента управления ActiveX.|
+|Добавление элементов управления программными средствами|Не используйте конструктор элемента управления для добавления элемента управления в документ во время выполнения. Вместо этого используйте вспомогательные методы, предоставляемые [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Например, используйте <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> метод, чтобы добавить кнопку на лист. Если вы хотите добавить элемент управления, который не поддерживается в эти вспомогательные методы, можно использовать `AddControl` метода. Дополнительные сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Копирование элементов управления|При копировании элемента управления Windows Forms и вставить его в документ во время выполнения, в документ будет вставлен пустой контейнер элемента управления ActiveX. Элемент управления Windows Forms не отображается в новом месте, а код, содержащий исходный элемент управления не копируется в контейнер элемента управления ActiveX.|
 
 ## <a name="limitations-in-document-level-projects"></a>Ограничения в проектах уровня документа
 
@@ -95,7 +96,7 @@ ms.lasthandoff: 04/26/2018
 Некоторые элементы управления Windows Forms удаляются из **элементов** при XML-документ Word или листа Excel открыта в конструкторе Visual Studio. Это из-за технических ограничений или потому, что эти функциональные возможности уже доступны в Word или Excel. Проекты Excel и Word поддерживают все элементы управления Windows Forms и другие компоненты, отображаемые в **элементов** при документ имеет фокус, а также можно добавить элементы управления сторонних разработчиков, лист или документ.
 
 > [!NOTE]
-> Все элементы управления удаляются из **элементов** когда документ защищен. Сведения о защите документа см. в разделе [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md).
+> Все элементы управления удаляются из **элементов** когда документ защищен. Сведения о защите документа см. в разделе [защита в решениях уровня документа документов](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > Элементы управления сторонних разработчиков должен иметь <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибута **true** для использования в решении Office.
@@ -185,6 +186,6 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>См. также
 
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
-- [Общие сведения об использовании элементов управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Элементы управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Как: Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
