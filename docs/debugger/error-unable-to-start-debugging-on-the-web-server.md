@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Ошибка: Не удается запустить отладку на веб-сервере | Документы Microsoft'
 ms.custom: ''
 ms.date: 05/23/2017
@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478256"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка. Не удается запустить отладку на веб-сервере
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/18/2018
 `Unable to start debugging on the Web server` Сообщения является универсальным. Как правило более конкретное сообщение включается в строку ошибки и, могут помочь определить причину проблемы или поиска для более точного исправления. Вот несколько наиболее распространенных сообщений об ошибках, добавляется к главной сообщение:
 
 - [Сервер IIS не содержит веб-сайт, соответствует выпуску URL-адрес](#IISlist)
-- [Веб-сервер настроен правильно](#web_server_config)
+- [Веб-сервер не настроен правильно](#web_server_config)
 - [Не удается подключиться к веб-сервер](#unabletoconnect)
 - [Веб-сервер не ответил вовремя](#webservertimeout)
 - [Microsoft visual studio удаленная отладка monitor(msvsmon.exe) не запущен на удаленном компьютере](#msvsmon)
