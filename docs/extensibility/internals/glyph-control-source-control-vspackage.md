@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130720"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Элемент управления глифа (VSPackage управления источника)
 Тесная интеграция, доступных в систему управления версиями пакетов VSPackage входит возможность отображать собственные глифы для отображения состояния элементов системы управления версиями.  

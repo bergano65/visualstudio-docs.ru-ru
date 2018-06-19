@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923101"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Клавиши-модификаторы монтажной панели в Blend
 Некоторые сочетания клавиш не имеют связанных с ними пунктов меню, то есть обнаружить их в пользовательском интерфейсе [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] нельзя. В следующей таблице приведет список сочетаний клавиш, которые изменяют действие, например действие по изменению размера объекта.

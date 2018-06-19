@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127246"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Как: регистрация событий буфера текста с помощью API прежних версий
 При доступе к буфер текста с помощью предыдущих версий API, следует зарегистрировать для текстового буфера событий, как показано в следующей процедуре.  

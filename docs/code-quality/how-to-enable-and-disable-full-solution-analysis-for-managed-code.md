@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922776"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Как: Включение и отключение полный анализ решения для управляемого кода
 

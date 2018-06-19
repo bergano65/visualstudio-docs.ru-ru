@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138776"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>Пошаговое руководство: Создание специализированного редактора
 Шаблон проекта VSPackage можно создать простой пользовательский редактор в C++.  Шаблон проекта VSPackage больше не поддерживает проекты C# или Visual Basic. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  

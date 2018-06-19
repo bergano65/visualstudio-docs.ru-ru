@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920551"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Как: сохранение данных с помощью транзакции
 Сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. Используйте <xref:System.Transactions.TransactionScope> участие в транзакции, которая автоматически управляемой объекта.

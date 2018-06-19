@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132343"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>При создании экземпляра базового редактора с помощью API прежних версий
 Редактор несет ответственность за редактирование функции, такие как вставки, удаления, копирования и вставки текста. Он объединяет эти функции с помощью предоставленных языковой службы, такие как цвет текста, отступы и завершения операторов IntelliSense.  

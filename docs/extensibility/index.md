@@ -4,14 +4,16 @@ author: jasongroce
 ms.author: apexprodleads
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: "Документация по расширению среды Visual Studio | Документация Майкрософт"
-description: "Сведения о расширяемости Visual Studio."
-ms.workload: apexprodleads
+title: Документация по расширению среды Visual Studio | Документация Майкрософт
+description: Сведения о расширяемости Visual Studio.
+ms.workload:
+- apexprodleads
 ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/22/2017
+ms.locfileid: "27246551"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Документация по расширению среды Visual Studio
 

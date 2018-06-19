@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129815"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Как: открытие редакторов для открытых документов
 Еще до открытия окна документа проекта проекта сначала необходимо определить ли файл уже открыт в окне документа для другого редактора. Файл можно открыть в редакторе конкретного проекта или одним из стандартных редакторов зарегистрирована [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

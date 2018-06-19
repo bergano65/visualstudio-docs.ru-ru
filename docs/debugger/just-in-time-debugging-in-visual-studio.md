@@ -18,6 +18,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454666"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Как: ответ на отладчик Just-In-Time
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128888"
 ---
 # <a name="custom-tools"></a>Пользовательские средства
 *Пользовательские средства* позволяют средство, связанные с элементом в проекте и запуска этого средства, при каждом сохранении файла. Некоторые пользовательские средства иногда называют *генераторы одного файла*, часто используются для реализации трансляторы, создающих код на основе данных и наоборот. Например, создать один файл генераторы [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] в исходном коде от .settings и RESX-файлов. Созданный исходный код предоставляет строго типизированный доступ к данным в файлах с расширением Settings и .resx. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] И [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] типов проектов поддерживают пользовательские средства; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов — нет. Собственные типы проектов также могут поддерживать пользовательские средства.  

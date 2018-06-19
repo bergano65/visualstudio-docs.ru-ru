@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127696"
 ---
 # <a name="extern-element"></a>Элемент extern
 Внешний элемент ссылается на файлы внешних заголовка (.h) для слияния с vsct-файл во время компиляции. Файлы для объединения должны находиться в пути включения, заданный для компилятора VSCT или ссылается [элемент Include](../extensibility/include-element.md). Файлы могут быть другие vsct-файлами или заголовочные файлы C++.  

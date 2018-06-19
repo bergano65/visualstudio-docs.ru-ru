@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129174"
 ---
 # <a name="how-to-register-editor-file-types"></a>Как: регистрация редактор типов файлов
 Самый простой способ регистрации редактора типы файлов — с помощью регистрации атрибутов, предоставляемых в составе [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] классы managed package framework (MPF). При реализации пакета в собственном формате [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], также можно написать скрипт реестра, который регистрирует редактора и связанные с ним расширения.

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065693"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Выбор стратегии обновления ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] может предоставлять автоматические обновления приложения. Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения периодически читает файл своего манифеста развертывания, чтобы увидеть, доступны ли обновления приложения. Если обновление доступно, загружается и выполняется новая версия приложения. Для обеспечения эффективности работы загружаются только измененные файлы.  

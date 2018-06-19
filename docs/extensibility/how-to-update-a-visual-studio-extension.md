@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134686"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Способ: измените расширение Visual Studio
 Расширение Visual Studio на компьютере можно обновить с помощью **расширения и обновления** для установки обновленной версии. Если создается обновленная версия расширения можно обозначить ее как обновленную, увеличив номер версии в манифесте VSIX.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134777"
 ---
 # <a name="authoring-vsct-files"></a>Разработка. Файлы Vsct
 В этом документе показано, как создать vsct-файл для добавления элементов меню, панелей инструментов и других элементах пользовательского интерфейса (UI) в среде разработки Visual Studio (IDE). При добавлении элементов пользовательского интерфейса в Visual Studio пакет (VSPackage), не имеет vsct-файл, выполните следующие действия.  

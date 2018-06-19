@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131617"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Последовательность инициализации подтипов проекта
 Среда создает проект путем вызова реализации базового проекта фабрики <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Построение проекта подтипа начинается, когда среда определяет, что список GUID типа проекта для расширения файла проекта не является пустым. Расширение файла проекта и идентификатор GUID проекта укажите, является ли проект [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] тип проекта. Например, расширение VBPROJ-файлу и {F184B08F-C81C-45F6-A57F-5ABD9991F28F} идентификации [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] проекта.

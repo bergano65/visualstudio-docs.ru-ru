@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126494"
 ---
 # <a name="extensibility-in-visual-studio"></a>Расширяемость в Visual Studio
 В Visual Studio предусмотрено множество возможностей расширяемости. Можно создать собственные пакеты SDK, Windows, Windows Phone и пакеты SDK Azure (который устанавливаются как часть Visual Studio) и расширения Visual Studio сама.  

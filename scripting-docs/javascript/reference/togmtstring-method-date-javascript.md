@@ -1,13 +1,13 @@
 ---
-title: "Метод toGMTString (Date) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Метод toGMTString (Date) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toGMTString
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toGMTString method
 ms.assetid: 9dc1e722-5722-4b8c-a213-a2650f55f207
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640114"
 ---
 # <a name="togmtstring-method-date-javascript"></a>Метод toGMTString (Date) (JavaScript)
 Возвращает дату, преобразованную в строку с помощью Time(GMT) означает время по Гринвичу.  

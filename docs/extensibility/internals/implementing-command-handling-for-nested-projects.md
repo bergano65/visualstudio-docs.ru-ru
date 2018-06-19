@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129004"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Реализация команды обработки вложенных проектов
 Интегрированной среде разработки можно передать команды, которые передаются через <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейсы для вложенных проектов или родительские проекты можно отфильтровать или переопределить команды.  

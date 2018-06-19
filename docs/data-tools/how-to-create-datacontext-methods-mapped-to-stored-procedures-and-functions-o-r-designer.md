@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923446"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Как: создание методов DataContext, сопоставленных с хранимыми процедурами и функциями (O/R-конструктор)
 Хранимые процедуры и функции могут добавляться в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] как <xref:System.Data.Linq.DataContext> методы. Вызов метода и передача в обязательные параметры запускает хранимую процедуру или функцию в базе данных и возвращает данные в тип возвращаемого значения <xref:System.Data.Linq.DataContext> метод. Дополнительные сведения о <xref:System.Data.Linq.DataContext> методов, см. [методы DataContext (O/R-конструктор)](../data-tools/datacontext-methods-o-r-designer.md).

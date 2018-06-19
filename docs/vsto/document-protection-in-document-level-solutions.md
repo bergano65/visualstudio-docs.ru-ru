@@ -24,6 +24,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447873"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Защита документов в решениях уровня документа
   Можно использовать функции защиты Microsoft Office Word и Microsoft Office Excel в проектах уровня документа. Эти функции блокируют несанкционированного внесения изменений в защищенные части документа.  

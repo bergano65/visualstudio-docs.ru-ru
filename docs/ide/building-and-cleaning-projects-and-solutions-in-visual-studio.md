@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918534"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Создание и очистка проектов и решений в Visual Studio
 Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).
