@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129645"
 ---
 # <a name="elimination-of-sak-files"></a>Устранение ~ SAK файлов
 В версии 1.2 API подключаемого модуля управления источника ~ SAK файлы были заменены флаги возможностей и новые функции, определить, поддерживает ли подключаемый модуль системы управления версиями файлов MSSCCPRJ и общие извлечения.  

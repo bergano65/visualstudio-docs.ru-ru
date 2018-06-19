@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129950"
 ---
 # <a name="feedback-to-the-user"></a>Обратную связь с пользователем
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), в отношении доступных функция основана на текущее выделение и глобального выделения контекст пользователя визуальную обратную связь. Ниже перечислены функции, которая доступна в контексте другой вариант.  

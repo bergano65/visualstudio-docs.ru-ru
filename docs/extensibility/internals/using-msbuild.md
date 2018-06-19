@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141455"
 ---
 # <a name="using-msbuild"></a>С помощью MSBuild
 MSBuild предоставляет строго определенными, расширяемый формат XML для создания файлов проекта, которые полностью описать элементы проекта для построения, построение задач и конфигураций сборки.  

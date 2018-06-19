@@ -44,6 +44,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480606"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Практическое руководство. Настройка проверок во время выполнения машинного кода
 В Visual C++ можно использовать проверки в машинном коде [runtime_checks](/cpp/preprocessor/runtime-checks) для обнаружения таких распространенных ошибок, возникающих во время выполнения, как:  

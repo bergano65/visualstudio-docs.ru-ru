@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134637"
 ---
 # <a name="registering-a-project-type"></a>Регистрация типа проекта
 Когда вы создаете новый тип проекта, необходимо создать записей реестра, которые позволяют [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] распознавать и работать с типа проекта. Обычно эти записи реестра создаются с помощью файла реестра (RGS-) сценария.  

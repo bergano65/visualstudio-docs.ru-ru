@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130897"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Отображение файлов с помощью команды Открыть файл
 Следующие шаги описывают, как IDE обрабатывает **открыть файл** команду, которая доступна на **файл** в меню [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Также описывается, как проекты должна отвечать на вызовы, которые получаются из этой команды.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131584"
 ---
 # <a name="providing-automation-for-vspackages"></a>Предоставление автоматизации для пакетов VSPackage
 Существует два основных способа для обеспечения автоматизации пакетов VSPackage: путем реализации объекты, зависящие от пакета VSPackage и путем реализации объектов автоматизации standard. Как правило они используются совместно для расширения модели автоматизации среды.  

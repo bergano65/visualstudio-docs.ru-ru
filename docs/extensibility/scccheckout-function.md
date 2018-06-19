@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137753"
 ---
 # <a name="scccheckout-function"></a>Функция SccCheckout
 Получает список имен полным путем к файлу, эта функция извлекает их на локальный диск. Комментарий применяется ко всем файлам, извлечения. Аргумент примечания могут быть `null` строки.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137109"
 ---
 # <a name="parent-element"></a>Элемент Parent
 Родительский кнопку или поле со списком может быть только группу. Родительского меню или группы, возможно, других меню или группу. В [CommandPlacement элемент](../extensibility/commandplacement-element.md), этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент указан, родительский `Group_Undefined:0` будет содержится в разрешении.  

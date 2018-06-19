@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129962"
 ---
 # <a name="creating-project-types"></a>Создание типов проектов
 Вы можете расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , создав новый тип проекта. Чтобы создать новый тип проекта, необходимо понимать некоторые понятия и выполнить ряд шагов. В следующих разделах приводятся общие сведения о создании типов проектов.  

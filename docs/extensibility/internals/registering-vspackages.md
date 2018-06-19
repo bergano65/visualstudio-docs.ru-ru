@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128849"
 ---
 # <a name="registering-vspackages"></a>Регистрация пакетов VSPackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использует файлы .pkgdef для описания и найдите пакет VSPackage. Pkgdef-файл содержит все сведения о регистрации, в противном случае следует добавить в системный реестр. Добавление атрибутов в исходный код, а затем выполнив зарегистрированные управляемые пакеты VSPackage [CreatePkgDef программы](../../extensibility/internals/createpkgdef-utility.md) в результирующей сборке, для создания pkgdef-файл.  

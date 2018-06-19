@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950391"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Использование escape-последовательностей в текстовых шаблонах
 Можно использовать escape-последовательностей в текстовых шаблонах для генерирования тегов текстовых шаблонов и (в C# код) для управления escape-символы и кавычки.

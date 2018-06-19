@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130685"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Важные команды для фильтров языковой службы
 Если вы хотите создать фильтр службы полнофункциональный язык, рассмотрите возможность обработки команды. Полный список идентификаторов команд определяется в <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> перечисления для управляемого кода и заголовка Stdidcmd.h-файле для неуправляемого [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] кода. Чтобы найти файл Stdidcmd.h в *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  

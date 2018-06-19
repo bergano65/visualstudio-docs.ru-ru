@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131012"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Установка пакетов VSPackage с помощью установщика Windows
 Интеграции VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] требуется больше, чем просто копирование файлов на компьютере пользователя. Установщик вашего VSPackage необходимо установить пакет VSPackage и его зависимых файлов, регистрацию и интегрировать их в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. VSPackage может воспользоваться преимуществами функций интеграции, например, отображение значка на [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -заставка экрана и о диалоговое окно.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133764"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Создание нового проекта: За кулисами, часть 1
 Когда-нибудь задумывались о том, как создать проект собственного типа? Интересно, что фактически происходит при создании нового проекта? Давайте peek за кулисами и посмотрим, что действительно происходит.  
