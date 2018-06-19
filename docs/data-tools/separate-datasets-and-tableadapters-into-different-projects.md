@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921449"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Отдельный набор данных и адаптеров таблиц на разные проекты
 Типизированные наборы данных были усовершенствованы, чтобы [адаптеры таблиц TableAdapter](create-and-configure-tableadapters.md) и классы наборов данных могут быть созданы в разных проектах. Это дает возможность быстро разделять слои приложения и создавать многоуровневые приложения.

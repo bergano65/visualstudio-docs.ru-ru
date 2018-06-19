@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126633"
 ---
 # <a name="editor-and-language-service-extensions"></a>Редактор и расширения службы языка
 Можно расширить большинство возможностей в редакторе кода Visual Studio. Редактор основан на Windows Presentation Foundation (WPF) и записана в управляемом коде. Несмотря на то, что такой подход отличается от схемы, в более ранних версиях Visual Studio, он предоставляет большинство тех же функций. Чтобы расширить редактор, следует используйте Managed Extensibility Framework (MEF).  
