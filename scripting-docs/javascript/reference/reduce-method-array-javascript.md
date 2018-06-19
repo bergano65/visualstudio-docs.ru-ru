@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264780"
 ---
 # <a name="reduce-method-array-javascript"></a>Метод reduce (Array) (JavaScript)
 Вызывает заданный обратный вызов функции для всех элементов в массиве. Возвращаемое значение функции обратного вызова — накопленный результат. Оно предоставляется как аргумент в следующем вызове функции обратного вызова.  

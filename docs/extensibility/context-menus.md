@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108564"
 ---
 # <a name="context-menus"></a>Контекстные меню
 Контекстные меню отображаются, когда пользователь щелкает правой кнопкой мыши в активной области, клиентской области и снимите при отпускании правой кнопки мыши.  

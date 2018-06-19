@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108353"
 ---
 # <a name="debugger-components"></a>Компоненты отладчика
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отладчик реализуется как VSPackage и управление сеансом отладки целиком. Сеанс отладки состоит из следующих элементов:  

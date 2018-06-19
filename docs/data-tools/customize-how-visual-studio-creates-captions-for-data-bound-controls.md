@@ -20,6 +20,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33871192"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Настроить, как Visual Studio создает заголовки для элементов управления с привязкой к данным
 

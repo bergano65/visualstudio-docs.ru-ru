@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108473"
 ---
 # <a name="about-file-name-extensions"></a>По расширениям файлов
 При регистрации расширение файла VSPackage, ее необходимо связать с версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Это важно при более одной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлен на компьютере.  

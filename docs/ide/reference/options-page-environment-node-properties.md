@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953927"
 ---
 # <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с `DTE.Properties("Environment", <Property Page>)`, категорией **Среда**. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции свойств, а таблицы содержат списки свойств в коллекции.

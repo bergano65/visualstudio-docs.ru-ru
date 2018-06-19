@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557038"
 ---
 # <a name="clickonce-reference"></a>Справочные сведения ClickOnce
 Ниже описана Структура XML-файлов, используемых для представления приложений ClickOnce.  

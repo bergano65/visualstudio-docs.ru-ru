@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566190"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Построение ClickOnce-приложений из командной строки
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], можно создавать проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле можно перестроить проект, созданный с [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, имеющем только [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установлен. Это позволяет воспроизвести сборки с помощью автоматизированного процесса, например, в центре сборки лаборатории или с помощью дополнительных методы написания сценариев вне области построения самого проекта.  
