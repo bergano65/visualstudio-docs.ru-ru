@@ -1,12 +1,13 @@
 ---
-title: "Метод Bind (Function) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Метод Bind (Function) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this keyword [JavaScript], bind method
 ms.assetid: 28946f47-b758-48cf-b508-610a0f2f6e19
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634314"
 ---
 # <a name="bind-method-function-javascript"></a>Метод bind (Function) (JavaScript)
 Создает для заданной функции привязанную функцию с тем же телом, что и у исходной функции. В привязанной функции объект `this` разрешается в переданный объект. Привязанная функция имеет определенные исходные параметры.  

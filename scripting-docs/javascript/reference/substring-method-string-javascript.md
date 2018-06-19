@@ -1,13 +1,13 @@
 ---
-title: "Метод SUBSTRING (String) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Метод SUBSTRING (String) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640934"
 ---
 # <a name="substring-method-string-javascript"></a>Метод substring (String) (JavaScript)
 Возвращает подстроку, расположенную в указанном месте `String` объекта.  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="remarks"></a>Примечания  
  `substring` Метод возвращает строку, содержащую подстроку из `start` , но не включающую, `end`.  
   
- **Подстроки** метод использует наименьшее значение `start` и `end` в качестве начальной позиции подстроки. Например, strvar.substring (0, 3**)** и strvar.substring (3, 0) возвращают одну подстроку.  
+ **Подстроки** метод использует наименьшее значение `start` и `end` в качестве начальной позиции подстроки. Например, strvar.substring (0, 3 **)** и strvar.substring (3, 0) возвращают одну подстроку.  
   
  Если параметр `start` или `end` — `NaN` или отрицательное значение, оно будет заменено ноль.  
   

@@ -1,13 +1,13 @@
 ---
-title: "Оператор присваивания сдвига вправо без учета знака (&gt;&gt;&gt;=) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Оператор присваивания сдвига вправо без учета знака (&gt;&gt;&gt;=) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>>='
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - unsigned right shift assignment operator (>>>=)
 - assignment operators, JavaScript
 ms.assetid: f67c3737-7d39-41ae-9c11-8b16d38f6179
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641394"
 ---
 # <a name="unsigned-right-shift-assignment-operator-gtgtgt-javascript"></a>Оператор присваивания сдвига вправо без учета знака (&gt;&gt;&gt;=) (JavaScript)
 Сдвигает значение переменной вправо на количество битов, указанное в значении выражения, без сохранения знака и присваивает результат переменной.  

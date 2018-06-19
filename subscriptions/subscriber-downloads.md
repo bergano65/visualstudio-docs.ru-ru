@@ -14,6 +14,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065161"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Использование скачиваемых файлов подписчика в подписках Visual Studio
 Ваши преимущества подписчика включают в себя доступ к обширному спектру скачиваемого программного обеспечения.  

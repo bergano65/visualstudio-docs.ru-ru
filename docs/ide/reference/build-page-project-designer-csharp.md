@@ -20,6 +20,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103493"
 ---
 # <a name="build-page-project-designer-c"></a>Страница "Построение" в конструкторе проектов (C#)
 Страница **Сборка** в **конструкторе проектов** позволяет задать свойства конфигурации сборки. Эта страница применяется только к проектам [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].

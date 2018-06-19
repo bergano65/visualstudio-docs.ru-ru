@@ -18,6 +18,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102658"
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
 Вы можете ознакомиться с дополнительными сведениями о способах настройки и изменения свойств проекта.

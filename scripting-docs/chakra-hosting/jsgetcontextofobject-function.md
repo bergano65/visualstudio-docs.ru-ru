@@ -1,13 +1,13 @@
 ---
-title: "Функция JsGetContextOfObject | Документы Майкрософт"
-ms.custom: 
+title: Функция JsGetContextOfObject | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cea6cdcd-790f-455c-af04-026af8ae2eb7
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568044"
 ---
 # <a name="jsgetcontextofobject-function"></a>Функция JsGetContextOfObject
 Возвращает контекст скрипта, к которому относится объект.  

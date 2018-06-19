@@ -26,6 +26,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266193"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания
 В этой статье рассматриваются функции ClickOnce, введенная в платформе .NET Framework версии 3.5, которая обеспечивает возможность развертывания приложений ClickOnce из нескольких сетевых расположений без повторного подписывания ClickOnce или манифесты.  

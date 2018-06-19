@@ -1,12 +1,13 @@
 ---
-title: "Функция Object.isFrozen (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Функция Object.isFrozen (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - isFrozen function [JavaScript]
 - Object.isFrozen function [JavaScript]
 ms.assetid: 6cf1bbc6-56e8-429b-8e2c-0024fa614acc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641714"
 ---
 # <a name="objectisfrozen-function-javascript"></a>Функция Object.isFrozen (JavaScript)
 Возвращает `true` Если существующих атрибутов и значений свойств в объекте, не может изменяться, и нельзя добавлять новые свойства в объект.  

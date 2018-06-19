@@ -1,11 +1,11 @@
 ---
-title: "IEnumDebugExtendedPropertyInfo::Next | Документы Microsoft"
-ms.custom: 
+title: IEnumDebugExtendedPropertyInfo::Next | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumDebugExtendedPropertyInfo.Next
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumDebugExtendedPropertyInfo::Next
 ms.assetid: ac41c9a3-19d1-4596-8a87-01c10b131be3
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727984"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
 Извлекает указанное число`ExtendedDebugPropertyInfo` структуры в последовательности перечисления.  

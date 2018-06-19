@@ -1,18 +1,18 @@
 ---
-title: "Функция JsValueToVariant | Документы Майкрософт"
-ms.custom: 
+title: Функция JsValueToVariant | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsValueToVariant
 helpviewer_keywords:
 - JsValueToVariant function
 ms.assetid: 070244be-a69d-4b78-971b-69c0579c03cf
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568904"
 ---
 # <a name="jsvaluetovariant-function"></a>Функция JsValueToVariant
 Инициализирует переданный элемент `VARIANT` как проекцию значения JavaScript.  

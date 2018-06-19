@@ -1,14 +1,14 @@
 ---
-title: "Функция JsGetSymbolFromPropertyId | Документы Майкрософт"
-ms.custom: 
+title: Функция JsGetSymbolFromPropertyId | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 0e822cb4-ba9e-44df-bf3a-fae97c354daa
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568214"
 ---
 # <a name="jsgetsymbolfrompropertyid-function"></a>Функция JsGetSymbolFromPropertyId
 Получает символ, связанный с идентификатором свойства.  

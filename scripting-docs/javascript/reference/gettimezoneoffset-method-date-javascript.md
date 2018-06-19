@@ -1,13 +1,13 @@
 ---
-title: "Метод getTimezoneOffset (Date) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Метод getTimezoneOffset (Date) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getTimeZoneOffset
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - getTimezoneOffset method
 - time zones [Visual Studio]
 ms.assetid: 58ee22b0-4688-45bd-a337-cc23119b09ce
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637054"
 ---
 # <a name="gettimezoneoffset-method-date-javascript"></a>Метод getTimezoneOffset (Date) (JavaScript)
 Возвращает разницу в минутах между временем на локальном компьютере и в формате общего скоординированного времени (UTC).  

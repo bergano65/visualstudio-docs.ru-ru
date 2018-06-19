@@ -1,13 +1,13 @@
 ---
-title: "Объект JSON (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Объект JSON (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JSON object
 ms.assetid: 0279a0e0-70bf-451a-a78e-0da4e2fdeb9a
-caps.latest.revision: 
+caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638054"
 ---
 # <a name="json-object-javascript"></a>Объект JSON (JavaScript)
 Встроенный объект, предоставляющий функции для преобразования значений [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] в формат JSON (нотация объектов JavaScript) и обратно. Функция `JSON.stringify` сериализует значение [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] в текст JSON. Функция `JSON.parse` десериализует текст JSON для получения значения [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  

@@ -1,16 +1,16 @@
 ---
-title: "Интерфейс IDebugDocumentContext | Документы Microsoft"
-ms.custom: 
+title: Интерфейс IDebugDocumentContext | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentContext interface
 ms.assetid: 665ee08a-5c6a-4ab1-ab93-de376acc9a74
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726234"
 ---
 # <a name="idebugdocumentcontext-interface"></a>Интерфейс IDebugDocumentContext
 Предоставляет абстрактным представлением фрагмент документа, для которого выполняется отладка. Для текстовых документов это представление состоит из диапазона позицию символа.  
