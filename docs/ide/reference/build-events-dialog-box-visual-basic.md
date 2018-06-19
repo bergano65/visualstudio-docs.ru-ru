@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944139"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Диалоговое окно "События построения" (Visual Basic)
 В диалоговом окне **События сборки** можно задать инструкции по конфигурации сборки. Здесь же можно указать условия, при которых будут выполняться события, предшествующие сборке и следующие после нее. Дополнительные сведения см. в статье [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).

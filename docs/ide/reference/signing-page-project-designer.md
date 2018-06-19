@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952000"
 ---
 # <a name="signing-page-project-designer"></a>Страница "Подписывание" в конструкторе проектов
 Используйте страницу **Подписывание** **конструктора проектов** для подписи манифестов приложения и развертывания, а также сборок (подпись с помощью строгих имен).

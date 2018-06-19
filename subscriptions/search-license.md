@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031186"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Поиск и фильтрация подписчиков в подписках Visual Studio
 Портал администрирования подписок Visual Studio позволяет найти определенное подмножество подписчиков на основе различных условий. Вы можете отфильтровать список подписчиков по имени, адресу электронной почты, уровню подписки и разных другим сведениям. 

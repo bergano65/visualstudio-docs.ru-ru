@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31063256"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
 В этом разделе мы рассмотрим набор средств Visual Studio для Unity, представляющих собой бесплатное расширение Visual Studio, которое делает данную систему мощным средством для создания игр с помощью Unity.

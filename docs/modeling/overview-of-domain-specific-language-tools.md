@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949528"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 Доменный язык (Инструменты DSL), который размещается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], позволяют создать доменный язык и затем создать все, что пользователи должны иметь для создания моделей, основанных на языке.

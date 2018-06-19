@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100547"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Точки останова (SDK для Visual Studio)
 Существует три вида точек останова: ожидание, границы и ошибки.  

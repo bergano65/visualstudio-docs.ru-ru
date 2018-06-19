@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924639"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Как: создать LINQ to SQL classes сопоставлены с таблицами и представлениями (O/R-конструктор)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы, которые сопоставляются таблицам БД или представлениям, называются *классы сущностей*. Класс сущностей сопоставляется с записью, тогда как отдельные свойства класса сущности сопоставляются отдельные столбцы, составляющие запись. Создание классов сущностей, основанных на таблицах базы данных или представления путем перетаскивания таблиц или представлений из **обозревателя серверов**/**обозреватель баз данных** на [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Создает классы и применяет специфические [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] атрибуты для их [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] функциональные возможности (передачи данных и редактирования возможности <xref:System.Data.Linq.DataContext>). Дополнительные сведения о [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы, в разделе [LINQ to SQL модель объектов](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).

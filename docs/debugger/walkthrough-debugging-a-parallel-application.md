@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927299"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Пошаговое руководство: Отладка параллельного приложения в Visual Studio
 В этом пошаговом руководстве показано, как использовать **параллельные задачи** и **Параллельные стеки** windows для отладки параллельного приложения. Эти окна помогают понять и проверить поведение во время выполнения кода, использующего [библиотека параллельных задач (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) или [среда выполнения с параллелизмом](/cpp/parallel/concrt/concurrency-runtime). Примеры кода, приведенные в этом пошаговом руководстве, имеют встроенные точки останова. Показаны после прерывания выполнения программы, как использовать **параллельные задачи** и **Параллельные стеки** окон.  

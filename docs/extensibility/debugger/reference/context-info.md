@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100436"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Эта структура описывает контекст памяти или контекст кода.  
@@ -52,7 +53,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>Участники  
  dwFields  
- Сочетание флагов из он [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисления, которое указывает, какие поля заполняются**.**  
+ Сочетание флагов из он [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисления, которое указывает, какие поля заполняются **.**  
   
  bstrModuleUrl  
  Имя модуля, в которой находится контекст.  

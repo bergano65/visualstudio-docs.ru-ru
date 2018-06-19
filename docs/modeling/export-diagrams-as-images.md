@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946485"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
 В Visual Studio можно сохранить схем моделирования в форматах только для чтения, чтобы совместно использовать их с заинтересованными лицами, пользователями или участниками группы проекта, не используйте ту же версию Visual Studio.

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066714"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 Эмулятор Visual Studio для Android — это приложение для настольного компьютера, которое эмулирует устройство Android. Он предоставляет виртуализированную среду, в которой доступны возможности отладки и тестирования приложений для Android без использования физического устройства. Он также предлагает изолированную среду для прототипов ваших приложений.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102984"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Создание многократно используемых групп кнопок
 Группа команд — это совокупность команды, которые всегда появляются вместе в меню или панели инструментов. Все команды группа может использоваться повторно, назначив его другим родительским элементам меню в разделе CommandPlacements vsct-файле.  

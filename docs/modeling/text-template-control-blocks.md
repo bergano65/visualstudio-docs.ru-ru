@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951275"
 ---
 # <a name="text-template-control-blocks"></a>Управляющие блоки текстовых шаблонов
 Блоки управления позволяют писать код в текстовом шаблоне для изменения выходных данных. Существует три вида блока управления, которые различаются по открывающей скобке:

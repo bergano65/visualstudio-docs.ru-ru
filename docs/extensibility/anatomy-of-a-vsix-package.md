@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099555"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 Пакет VSIX является VSIX-файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными, используемый для классификации и установки расширений Visual Studio. Эти метаданные содержатся в манифест VSIX и файл [Content_Types] .xml. Пакет VSIX также может содержать один или несколько файлов Extension.vsixlangpack для предоставления текста локализованные программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.  

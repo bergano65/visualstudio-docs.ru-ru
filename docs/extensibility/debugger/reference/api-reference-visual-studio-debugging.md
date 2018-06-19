@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103244"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Справочник по API (отладки Visual Studio)
 Этот раздел включает концептуальный обзор API, руководство, которое показывает их синтаксис и использование для всех элементов API и целый ряд примеров кода. Все ссылки, перечислены в алфавитном порядке по категориям.  

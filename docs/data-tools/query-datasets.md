@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926707"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 Для поиска определенных записей в наборе данных, вызовите метод FindBy DataTable, написать собственные оператора foreach для циклического прохода по коллекции строк таблицы, или используйте [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

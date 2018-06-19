@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926500"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Как: назначение хранимых процедур для выполнения обновления, вставки и удаления (конструктор O/R)
 Сохраненные процедуры можно добавлять в реляционный конструктор объектов и выполнять как обычные методы <xref:System.Data.Linq.DataContext>. Они также могут использоваться для переопределения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] поведения во время выполнения, которая выполняет вставки, обновления и удаления, когда изменения сохраняются из классов сущностей в базу данных (например, при вызове <xref:System.Data.Linq.DataContext.SubmitChanges%2A> метода).

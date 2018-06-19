@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953467"
 ---
 # <a name="options-text-editor-cc-advanced"></a>"Параметры", "Текстовый редактор", C/C++, "Дополнительно"
 Изменяя эти параметры, можно настроить поведение, связанное с IntelliSense и базой данных просмотра, при программировании на языке C или C++.

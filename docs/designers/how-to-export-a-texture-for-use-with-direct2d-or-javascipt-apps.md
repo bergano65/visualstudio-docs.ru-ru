@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925016"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Практическое руководство. Экспорт текстуры для использования с приложениями Direct2D или Javascipt
 Конвейер содержимого изображения может создавать текстуры, которые совместимы с внутренними соглашениями Direct2D по преобразованию для просмотра. Текстуры такого рода можно применять в приложениях, использующих Direct2D, а также в приложениях UWP, созданных с помощью JavaScript.

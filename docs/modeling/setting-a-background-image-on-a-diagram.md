@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949897"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Задание фонового изображения схемы
 С помощью пользовательского кода в пакете SDK для визуализации и моделирования в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно установить фоновое изображение для сгенерированного конструктора.

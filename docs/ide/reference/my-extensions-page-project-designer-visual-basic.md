@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948965"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Страница "Мои расширения" конструктор проектов (Visual Basic)
 Страница **Мои расширения** **конструктора проектов** используется для управления расширениями пространства имен `My` в проекте. Расширения пространства имен `My` позволяют настраивать пространство имен `My`, чтобы добавить собственные настраиваемые члены. Дополнительные сведения о создании настраиваемых расширений пространства имен `My` см. в разделе [Расширение пространства имен My в Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

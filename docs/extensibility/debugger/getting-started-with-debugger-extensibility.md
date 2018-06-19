@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102698"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Приступая к работе с расширения отладчика
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Содержатся сведения, которые необходимы для создания и настройки компонентов отладчик позволяет отлаживать программы изнутри [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды.  
