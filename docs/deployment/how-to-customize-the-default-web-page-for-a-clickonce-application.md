@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557675"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Практическое руководство. Настройка используемой по умолчанию веб-страницы для ClickOnce-приложения
 При публикации приложения ClickOnce на веб-узле, на веб-странице автоматически создается и публикуется вместе с приложением. По умолчанию страница содержит имя приложения и ссылки для установки приложения, установите необходимые компоненты или справку в библиотеке MSDN.  

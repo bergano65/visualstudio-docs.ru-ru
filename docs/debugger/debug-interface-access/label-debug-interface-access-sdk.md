@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473836"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Label (SDK для доступа к интерфейсу отладки)
 Расположение в программном коде определяется `SymTagLabel` символов.  

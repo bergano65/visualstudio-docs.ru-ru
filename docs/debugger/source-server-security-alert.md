@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474129"
 ---
 # <a name="source-server-security-alert"></a>Предупреждения безопасности сервера системы управления версиями
 При использовании сервера системы управления версиями применяйте только файлы символов из известного надежного места расположения.  

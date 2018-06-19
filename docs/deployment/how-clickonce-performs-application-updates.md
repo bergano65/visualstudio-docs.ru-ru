@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557701"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Выполнение обновлений приложения службой ClickOnce
 ClickOnce использует сведения о версии файла, указанный в манифесте развертывания приложения, чтобы принять решение об обновлении файлов приложения. После того как обновление начнется, ClickOnce использует метод, называемый *исправление файлов* во избежание избыточную загрузку файлов приложения.  

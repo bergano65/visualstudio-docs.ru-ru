@@ -34,10 +34,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Импорт параметров публикации и развертывание в IIS
           href: tutorial-import-publish-settings-iis.md
+        - name: Развертывание в IIS с помощью веб-развертывания
+          href: deploy-iis-with-web-deploy.md
         - name: Непрерывное развертывание ASP.NET Core в Azure с помощью Git
           href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: Развертывание ASP.NET в службах IIS
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+        - name: "Публикация в Kubernetes с помощью средств Visual\_Studio для\_Kubernetes"
+          href: tutorial-kubernetes-tools.md
     - name: машинный код;
       items:
         - name: Развертывание в Visual C++...

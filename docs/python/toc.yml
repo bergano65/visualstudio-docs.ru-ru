@@ -49,6 +49,18 @@
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6. Использование шаблона веб-проекта Django для опросов
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: "Знакомство с\_Flask в Visual\_Studio"
+      items:
+        - name: 1. Создание проекта и решения
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: "2. Создание приложения\_Flask"
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3. Обработка статических файлов и добавление страниц
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: "4. Использование шаблона веб-проекта\_Flask"
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: "5. Использование шаблона веб-проекта опроса\_Flask"
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: Основные понятия
   items:
     - name: Проекты Python
