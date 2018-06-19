@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::Clone | Документы Microsoft"
-ms.custom: 
+title: IActiveScript::Clone | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Clone
 ms.assetid: aa000b2a-7085-448d-a422-f7adac7851cb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641594"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 Клонирует текущий обработчик скриптов (минус любое текущее состояние выполнения), возврат загрузить обработчик скриптов, у которой нет сайт в текущем потоке. Свойства этот новый обработчик сценариев будет совпадать с заданными свойствами исходный обработчик сценариев будет в, если он был переведен обратно в исходное состояние.  

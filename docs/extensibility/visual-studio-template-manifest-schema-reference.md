@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142585"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Справочник по схемам манифеста шаблона Visual Studio
 Эта схема описывает формат файла манифеста (.vstman) Visual Studio шаблона, созданного для шаблонов проектов и элементов для Visual Studio и расположение и другие сведения о шаблоне.  

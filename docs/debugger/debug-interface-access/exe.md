@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459744"
 ---
 # <a name="exe"></a>Exe
 Exe — единственный символ отсутствует либо лексической или класса родителя, так как он представляет глобально файл .exe или .dll. Имеется только один символ с `SymTagExe` тег каждого файла. [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) метод возвращает символ.  

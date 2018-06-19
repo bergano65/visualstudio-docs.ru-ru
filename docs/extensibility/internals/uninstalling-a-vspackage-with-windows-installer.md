@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141100"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>При удалении пакетов VSPackage с помощью установщика Windows
 В большинстве случаев установщик Windows может удалить VSPackage, просто «Отмена», как для установки пакета VSPackage. Пользовательские действия рассматриваются в [команды, необходимо будет запустить после установки](../../extensibility/internals/commands-that-must-be-run-after-installation.md) должен быть запущен после отмены установки. Поскольку вызовы devenv.exe возникает непосредственно перед InstallFinalize стандартного действия для установки и удаления, настраиваемое действие и InstallExecuteSequence записи таблицы используются в обоих случаях.  

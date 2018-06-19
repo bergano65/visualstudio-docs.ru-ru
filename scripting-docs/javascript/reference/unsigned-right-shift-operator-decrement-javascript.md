@@ -1,13 +1,13 @@
 ---
-title: "Оператор сдвига вправо без учета знака (&gt;&gt;&gt;) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Оператор сдвига вправо без учета знака (&gt;&gt;&gt;) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>>'
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - unsigned right shift operator (>>>)
 - '>>> operator'
 ms.assetid: df48bdfc-8741-46ab-b681-449da57ac95c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641644"
 ---
 # <a name="unsigned-right-shift-operator-gtgtgt-javascript"></a>Оператор сдвига вправо без учета знака (&gt;&gt;&gt;) (JavaScript)
 Сдвигает вправо биты выражения, не сохраняя знака.  

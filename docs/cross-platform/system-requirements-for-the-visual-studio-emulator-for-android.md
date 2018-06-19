@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068665"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 Эмулятор Visual Studio для Android выполняется в виде виртуальной машины в Hyper-V, технологии виртуализации для Windows 8 и более поздних версий. Чтобы запустить эмулятор, компьютер должен удовлетворять требованиям для запуска Hyper-V, как описано в этом разделе.  

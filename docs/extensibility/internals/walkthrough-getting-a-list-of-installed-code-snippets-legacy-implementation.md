@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141357"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Пошаговое руководство: Получение списка установленных фрагменты (реализации прежних версий)
 Фрагмент кода — это фрагмент кода, которые могут быть вставлены в исходный буфер с помощью команды меню (что позволяет, задав список фрагментов кода установленных) или путем выбора из списка завершения IntelliSense ярлык фрагмента.  

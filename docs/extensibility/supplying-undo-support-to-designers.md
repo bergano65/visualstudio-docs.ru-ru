@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144886"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Предоставление поддержки отмены для конструкторов
 Конструкторы, редакторы, как и обычно требуется для поддержки операций отмены, чтобы пользователи могут отменить их последние изменения, при изменении элемента кода.  

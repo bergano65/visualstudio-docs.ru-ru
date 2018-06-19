@@ -1,5 +1,5 @@
 ---
-title: "Подписки Visual Studio"
+title: Подписки Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795322"
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 Подписки Visual Studio — это исчерпывающий набор инструментов для разработки, развертывания великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux, и управления такими приложениями.  Преимущества подписок включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.

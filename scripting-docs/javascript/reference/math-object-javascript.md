@@ -1,13 +1,13 @@
 ---
-title: "Math-объект (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Math-объект (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - Math object
 ms.assetid: 607b94cb-921c-43cd-b514-fdbc13aeced6
-caps.latest.revision: 
+caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642164"
 ---
 # <a name="math-object-javascript"></a>Объект Math (JavaScript)
 Встроенный объект, предоставляющий основные математические функции и константы.  

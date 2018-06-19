@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137499"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Поддержка мастера для вложенных проектов
 Интегрированная среда разработки запускает два мастера, которые можно реализовать родительский проект для вложенных проектов: **новый проект** мастера и **добавить элемент** мастера.  

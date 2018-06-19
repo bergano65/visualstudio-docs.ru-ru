@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135795"
 ---
 # <a name="createpkgdef-utility"></a>Программа CreatePkgDef
 DLL-файл для расширение Visual Studio в качестве параметра принимает и создает pkgdef-файл вместе с библиотекой DLL. Pkgdef-файл содержит все сведения, в противном случае будут записаны в системный реестр при установке расширения.  

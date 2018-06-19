@@ -26,6 +26,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30307273"
 ---
 # <a name="variables-javascript"></a>Переменные (JavaScript)
 В [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] переменная содержит значение, например "hello" или 5. Используя переменную, разработчик ссылается на данные, которые она представляет, например `NumberOfDaysLeft = EndDate - TodaysDate`.  

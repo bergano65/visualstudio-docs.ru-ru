@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: "Управление версиями в Visual Studio | VSTS и Team Foundation Server"
-description: "Руководство по началу работы с системами управления версиями в Visual Studio"
+title: Управление версиями в Visual Studio | VSTS и Team Foundation Server
+description: Руководство по началу работы с системами управления версиями в Visual Studio
 keywords: VSTS, TFS, Version Control
 author: steved0x
 ms.manager: douge
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795356"
 ---
 # <a name="version-control-in-visual-studio"></a>Управление версиями в Visual Studio
 

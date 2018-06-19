@@ -1,12 +1,13 @@
 ---
-title: "Метод reduceRight (Array) (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Метод reduceRight (Array) (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript], reduceRight method
 - reduceRight method [JavaScript]
 ms.assetid: 85963761-da11-407c-8bce-278c930e61bd
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641924"
 ---
 # <a name="reduceright-method-array-javascript"></a>Метод reduceRight (Array) (JavaScript)
 Вызывает заданный обратный вызов функции для всех элементов в массиве, в порядке убывания. Возвращаемое значение функции обратного вызова — накопленный результат. Оно предоставляется как аргумент в следующем вызове функции обратного вызова.  
