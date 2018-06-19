@@ -1,12 +1,13 @@
 ---
-title: "Область действия переменных (JavaScript) | Документы Майкрософт"
-ms.custom: 
+title: Область действия переменных (JavaScript) | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569324"
 ---
 # <a name="variable-scope-javascript"></a>Область действия переменной (JavaScript)
 В языке [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] имеется две области действия: глобальная и локальная. Переменная, объявляемая вне определения функции, является глобальной, и ее значение доступно и может быть изменено в любом месте программы. Переменная, объявляемая внутри определения функции, является локальной. Она создается и уничтожается при каждом выполнении функции и не доступна никакому коду за пределами данной функции. JavaScript не поддерживает область видимости блока (в которой пара фигурных скобок `{. . .}` определяет новую область), за исключением особого случая наличия переменных, видимых в пределах блока.  

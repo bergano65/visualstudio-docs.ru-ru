@@ -1,12 +1,13 @@
 ---
-title: "Использование массивов (JavaScript) | Документы Майкрософт"
-ms.custom: 
+title: Использование массивов (JavaScript) | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569164"
 ---
 # <a name="using-arrays-javascript"></a>Использование массивов (JavaScript)
 Массивы в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] являются *разреженными*. То есть при наличии массива с тремя элементами 0, 1 и 2 можно создать элемент 50, не беспокоясь о элементах в диапазоне с 3 по 49. Если массив имеет автоматическую переменную длины (объяснение автоматического мониторинга длины массива см. в статье [Встроенные объекты](../../javascript/intrinsic-objects-javascript.md)), переменной длины задается значение 51, а не 4. Можно создать массивы, в которых нет промежутков в нумерации элементов, но делать это необязательно.  

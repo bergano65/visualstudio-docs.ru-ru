@@ -1,13 +1,13 @@
 ---
-title: "Ожидается &#39;) &#39; в регулярном выражении (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Ожидается &#39;) &#39; в регулярном выражении (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5020
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633884"
 ---
 # <a name="expected-3939-in-regular-expression-javascript"></a>Ожидается &#39;) &#39; в регулярном выражении (JavaScript)
 Предпринята попытка создать захвата регулярного выражения, утверждение или группы, но не содержит закрывающую скобку. Круглые скобки имеют несколько целей в регулярных выражениях. В основном они используются для записи вложенных выражений, для указания утверждений, или группировать шаблонов, чтобы элементы могут рассматриваться как единое целое, *, +,?, и т. д.  

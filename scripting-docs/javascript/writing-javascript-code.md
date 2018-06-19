@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571504"
 ---
 # <a name="writing-javascript-code"></a>Написание кода JavaScript
 Как и многие другие языки программирования, [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] организован в виде операторов, блоков, состоящих из связанных наборов операторов, а также комментариев. Внутри оператора можно использовать переменные, строки, числа и выражения.  

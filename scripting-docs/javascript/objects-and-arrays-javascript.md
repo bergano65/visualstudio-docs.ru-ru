@@ -1,12 +1,13 @@
 ---
-title: "Объекты и массивы (JavaScript) | Документы Майкрософт"
-ms.custom: 
+title: Объекты и массивы (JavaScript) | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569344"
 ---
 # <a name="objects-and-arrays-javascript"></a>Объекты и массивы (JavaScript)
 Объекты [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] представляют собой коллекции свойств и методов. Методом называется функция, являющаяся членом объекта. Свойство представляет собой значение или набор значений (в виде массива или объекта), который является членом объекта. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] поддерживает 4 типа объектов:  

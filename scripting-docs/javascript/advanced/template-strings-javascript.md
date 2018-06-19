@@ -1,19 +1,20 @@
 ---
-title: "Строки шаблона (JavaScript) | Документы Майкрософт"
-ms.custom: 
+title: Строки шаблона (JavaScript) | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: f2e525a5-b0fc-49c3-95a0-641788e5c12a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569154"
 ---
 # <a name="template-strings-javascript"></a>Строки шаблона (JavaScript)
 В [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] строки шаблонов можно использовать для создания строковых литералов с внедренными выражениями. Кроме того, строки шаблонов предоставляют встроенную поддержку многострочного текста.  

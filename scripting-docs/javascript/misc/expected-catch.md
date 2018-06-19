@@ -1,13 +1,13 @@
 ---
-title: "Ожидается &#39; catch &#39; | Документы Microsoft"
-ms.custom: 
+title: Ожидается &#39; catch &#39; | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1033
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633794"
 ---
 # <a name="expected-39catch39"></a>Ожидается &#39; catch &#39;
 Использовать обработку исключений **повторите** блокировки, но не были записаны связанного **перехватывать** инструкции. Механизм обработки исключений требует, что код, который может завершиться ошибкой, а также код, который не следует выполнять при возникновении исключения быть упакован в **повторите** блока. Исключения из среды **повторите** с помощью **throw** инструкции и перехватываются за пределами **повторите** блок с одним или несколькими **перехватывать**инструкции.  

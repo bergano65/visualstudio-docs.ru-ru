@@ -1,19 +1,20 @@
 ---
-title: "Константа BYTES_PER_ELEMENT (Int8Array) | Документы Microsoft"
-ms.custom: 
+title: Константа BYTES_PER_ELEMENT (Int8Array) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 1b363d53-6190-4419-bb33-fe4a3a5fab05
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633904"
 ---
 # <a name="bytesperelement-constant-int8array"></a>Константа BYTES_PER_ELEMENT (Int8Array)
 Размер в байтах каждого элемента массива.  

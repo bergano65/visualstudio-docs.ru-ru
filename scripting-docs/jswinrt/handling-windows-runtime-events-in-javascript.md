@@ -1,18 +1,19 @@
 ---
-title: "Обработка событий среды выполнения Windows на языке JavaScript | Документы Майкрософт"
-ms.custom: 
+title: Обработка событий среды выполнения Windows на языке JavaScript | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime events
 - Windows Runtime events [JavaScript]
 ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +22,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571434"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>Обработка событий среды выполнения Windows на языке JavaScript
 В JavaScript события среды выполнения Windows представлены иначе, чем в C++ или .NET Framework. Они не являются свойствами класса, а представляются в виде строковых идентификаторов, которые передаются в методы класса `addEventListener` и `removeEventListener`. Например, можно добавить обработчик событий для события [Geolocator.PositionChanged](http://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx), передав строку "positionchanged" в метод `Geolocator.addEventListener`:  

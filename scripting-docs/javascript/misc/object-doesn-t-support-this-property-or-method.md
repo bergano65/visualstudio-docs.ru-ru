@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633414"
 ---
 # <a name="object-doesn39t-support-this-property-or-method"></a>Объект&#39;t поддерживает это свойство или метод
 Вы указали свойство или метод, не существующие для данного объекта. Не все объекты поддерживают все свойства и методы.  

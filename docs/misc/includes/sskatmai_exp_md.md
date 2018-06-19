@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 98b5bbd11964ae7057ad408acbfac314f2d76869
+ms.openlocfilehash: ce4b6ce80e25839fc27231369f0830e184f5a77e
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
-ms.locfileid: "24565394"
+ms.locfileid: "24565424"
 ---
-.NET Framework 2.0 с пакетом обновления 1 (SP1)
+SQL Server 2008, экспресс-выпуск
