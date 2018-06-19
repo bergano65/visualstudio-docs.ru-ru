@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704477"
 ---
 # <a name="set-radix-command"></a>Команда Set Radix
 Задает или возвращает числовой базовый тип, используемый для отображения целочисленных значений.

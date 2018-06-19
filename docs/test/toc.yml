@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Создание надстройки для средства просмотра результатов
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Использование автоматизации пользовательского интерфейса для тестирования кода
+- name: Автоматизация тестирования пользовательского интерфейса
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 'Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса'
+    - name: 'Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: Тестирование приложений универсальной платформы Windows с помощью закодированных тестов пользовательского интерфейса
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: "Тестирование приложений Windows UWP и приложений Windows Phone\_8.1 с помощью закодированных тестов пользовательского интерфейса"
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: Назначение уникального свойства автоматизации элементам управления универсальной платформы Windows для тестирования
+    - name: Тестирование приложений UWP с помощью закодированных тестов пользовательского интерфейса
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: "Назначение уникального свойства автоматизации элементам управления\_UWP"
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: Создание управляемого данными закодированного теста пользовательского интерфейса
       href: creating-a-data-driven-coded-ui-test.md
-    - name: 'Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий'
+    - name: Ожидание определенных событий во время воспроизведения
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: Включение закодированных тестов пользовательского интерфейса для элементов управления
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
+    - name: Поддерживаемые конфигурации и платформы
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel
+    - name: Расширение платформы закодированных тестов пользовательского интерфейса
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: Пример надстройки Excel для закодированного тестирования пользовательского интерфейса
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: Пример интерфейса коммуникатора в Excel
-          href: sample-excel-communicator-interface.md
-        - name: Пример расширения закодированного теста пользовательского интерфейса для Excel
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: Пример расширения Excel. Класс ExtensionPackage
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: Пример расширения Excel. Класс TechnologyManager
-              href: sample-excel-extension-technologymanager-class.md
-            - name: Пример расширения Excel. Класс PropertyProvider
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: Пример расширения Excel. Классы Element
-              href: sample-excel-extension-element-classes.md
-            - name: Пример расширения Excel. Класс ActionFilter
-              href: sample-excel-extension-actionfilter-class.md
 - name: Управление тестовой лабораторией
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578059"
 ---
 # <a name="cl-task"></a>Задача CL
 Использует оболочку компилятора Visual C++ — cl.exe. Компилятор создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).  
