@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141038"
 ---
 # <a name="vstextbuffer-object"></a>Объект VSTextBuffer
 Объект текстового буфера представляет поток текст в кодировке Юникод, которая связана с файлом. Объект <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект может использоваться вне контекста базового редактора в случае мастер.  

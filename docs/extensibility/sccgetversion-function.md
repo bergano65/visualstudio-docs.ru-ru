@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136449"
 ---
 # <a name="sccgetversion-function"></a>Функция SccGetVersion
 Эта функция возвращает номер версии API подключаемых модулей исходного элемента управления, поддерживаемых подключаемый модуль системы управления версиями.  

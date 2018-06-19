@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140473"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Таблицы команд Visual Studio (. Файлы Vsct)
 Таблица конфигурации командный файл является файлом, описывающую набор команд, которые содержит пакет VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Команда компилятора таблицы (VSCT) компилирует файлы конфигурации на основе XML (vsct-файлами) в файлы вывода (.cto) таблицу команда binary. Итоговый .cto файлы, которые создаются с помощью компилятора таблицы (CTC) команды для компиляции файлов конфигурации .ctc одинаковы. Однако файлы vstc на основе XML имеет некоторые преимущества, например редактора XML и XML IntelliSense.  

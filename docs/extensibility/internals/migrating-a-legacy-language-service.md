@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135861"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Миграция языковую службу прежних версий
 Можно перенести устаревших языковую службу до более поздней версии Visual Studio путем обновления проекта и добавление в проект файл source.extension.vsixmanifest. Языковая служба сама будет продолжать работать как и прежде, так как в редакторе Visual Studio использует ее.  
