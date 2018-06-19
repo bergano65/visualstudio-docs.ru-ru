@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064078"
 ---
 # <a name="talk-to-us"></a>Обращайтесь к нам
 Нас интересуют ваши идеи по улучшению наших продуктов и документации. Мы не всегда можем ответить вам лично, но обязательно передадим ваши отзывы нужному специалисту или группе.  

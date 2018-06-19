@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146810"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Управление сопоставлениями файлов Side-by-Side
 Если VSPackage предоставляет сопоставления файлов, необходимо решить, как обрабатывать side-by-side установок, в котором на конкретную версию [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] нужно вызывать для открытия файла. Несовместимые форматы файлов составного проблему.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146200"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок пакетов VSPackage
 Ниже приведены распространенные проблемы, может существовать VSPackage и советы для устранения проблем.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  Найти CLSID VSPackage в раздел реестра пакетов:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<версии >*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<версии >* \Packages  
   
     2.  Проверьте правильность пути, предоставленных подраздел SatelliteDll.  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Для неуправляемого кода найти CLSID VSPackage в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] узла в реестре CLSID:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<версии >*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<версии >* \CLSID  
   
  Убедитесь в том, что запись InprocServer32 имеет правильный путь к dll пакета VSPackage.  
   

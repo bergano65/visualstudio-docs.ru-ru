@@ -1,19 +1,20 @@
 ---
-title: "Коллекции (JavaScript) | Документы Майкрософт"
-ms.custom: 
+title: Коллекции (JavaScript) | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783056"
 ---
 # <a name="collections-javascript"></a>Коллекции (JavaScript)
 Для хранения значений и объектов можно использовать объекты коллекции [Map](../../javascript/reference/map-object-javascript.md), [Set](../../javascript/reference/set-object-javascript.md) и [WeakMap](../../javascript/reference/weakmap-object-javascript.md). Эти объекты предоставляют удобные методы для добавления и извлечения членов с помощью ключа или значения вместо индекса. Для доступа к элементам коллекции с помощью индекса используйте объект `Array`. Дополнительные сведения см. в разделе [Использование массивов](../../javascript/advanced/using-arrays-javascript.md).  

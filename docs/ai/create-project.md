@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709366"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Создание проекта для сценариев ИИ на основе шаблона в Visual Studio
 

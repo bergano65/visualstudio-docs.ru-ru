@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954588"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 Доменный язык можно установить на локальном компьютере или на других компьютерах. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должна быть установлена на конечном компьютере.

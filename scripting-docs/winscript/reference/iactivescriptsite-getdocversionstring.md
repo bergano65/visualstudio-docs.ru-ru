@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptSite::GetDocVersionString | Документы Microsoft"
-ms.custom: 
+title: IActiveScriptSite::GetDocVersionString | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptSite.GetDocVersionString
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptSite_GetDocVersionString
 ms.assetid: ab3f892d-06d3-4cb5-9ea5-20c4a1e518cd
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724544"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Извлекает строкой, определяемой узла, который уникально идентифицирует версию текущего документа. Если связанный документ был изменен за пределами области сценариев Windows (как в случае HTML-страницы, редактируемого в блокноте), обработчик скриптов можно сохранить вместе с его сохраненного состояния, принудительная перекомпиляция очередного загрузки скрипта.  

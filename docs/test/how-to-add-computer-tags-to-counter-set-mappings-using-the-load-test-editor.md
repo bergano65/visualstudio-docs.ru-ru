@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968139"
 ---
 # <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>Практическое руководство. Добавление меток компьютеров в сопоставления наборов счетчиков с помощью редактора тестовой нагрузки
 

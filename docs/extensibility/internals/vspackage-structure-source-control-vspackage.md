@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142793"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Структура пакета VSPackage (VSPackage управления источника)
 Пакет SDK управления источника предоставляет рекомендации по созданию пакетов VSPackage, который позволяет разработчику элемента управления источника интегрировать его или ее функций системы управления версиями с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды. VSPackage — это компонент COM, который обычно загружается по запросу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) на основе служб, объявленные в пакете, в реестр. Каждый пакет VSPackage должен реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage обычно занимают услугах, предлагаемых [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки и proffers некоторые службы.  

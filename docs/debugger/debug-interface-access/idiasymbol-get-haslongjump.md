@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463911"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Возвращает флаг, указывающий, содержит ли функция использование [longjmp](/cpp/c-runtime-library/reference/longjmp) команда (соединен с [setjmp](/cpp/c-runtime-library/reference/setjmp) команды, они образуют метод C-стиле, обработки исключений).  

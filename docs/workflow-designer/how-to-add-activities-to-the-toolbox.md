@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973774"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Практическое руководство. Добавление действий на панель инструментов
 

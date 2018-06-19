@@ -1,13 +1,13 @@
 ---
-title: "Оператор break (JavaScript) | Документы Microsoft"
-ms.custom: 
+title: Оператор break (JavaScript) | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - break_JavaScriptKeyword
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - do...while statement
 - break statement
 ms.assetid: 5be0f2a8-5fe7-4a6c-89af-ca20a925ce87
-caps.latest.revision: 
+caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634154"
 ---
 # <a name="break-statement-javascript"></a>Оператор break (JavaScript)
 Завершает текущий цикл или, если в сочетании с `label`, завершает связанный с ним оператор.  
