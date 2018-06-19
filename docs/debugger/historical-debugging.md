@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479680"
 ---
 # <a name="historical-debugging"></a>Отладка с ведением журнала
 Отладка с ведением журнала — это режим отладки, который зависит от сведений, собранных IntelliTrace. В этом режиме можно переходить назад и вперед по выполнению приложения и проверять его состояние.  

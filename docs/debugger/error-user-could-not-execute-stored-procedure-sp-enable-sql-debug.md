@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472427"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>Ошибка. Пользователю не удалось выполнить хранимую процедуру sp_enable_sql_debug
 Хранимую процедуру sp_enable_sql_debug не удалось выполнить на сервере. Для этого могут быть следующие причины:  

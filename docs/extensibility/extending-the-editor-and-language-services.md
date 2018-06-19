@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132578"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Расширение редактора и языковые службы
 Можно добавить собственный редактор языка службы компонентов (таких как технология IntelliSense) и расширить большинство возможностей в редакторе кода Visual Studio.  Можно расширить полный список см. в разделе [языковой службы и точек расширения редактора](../extensibility/language-service-and-editor-extension-points.md).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127109"
 ---
 # <a name="how-to-use-the-activity-log"></a>Как: использование журнала действий
 Пакеты VSPackage может записать события в журнал действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Запустите Visual Studio с [/Log](../ide/reference/log-devenv-exe.md) переключатель командной строки для записи ActivityLog.xml на диск во время сеанса.
 
-2.  После закрытия Visual Studio, поиск журнал действий во вложенной папке данных Visual Studio: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  После закрытия Visual Studio, поиск журнал действий во вложенной папке данных Visual Studio: *% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  Откройте журнал действий в любом текстовом редакторе. Ниже приведен типичный запись.  
   

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130760"
 ---
 # <a name="how-to-implement-undo-management"></a>Как: реализации управления отмены
 — Это основной интерфейс для управления отмены <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, который реализуется с помощью среды. Для поддержки управления отмены, реализуйте блоков отмены отдельные (то есть <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, которое может содержать несколько отдельных шагов.  

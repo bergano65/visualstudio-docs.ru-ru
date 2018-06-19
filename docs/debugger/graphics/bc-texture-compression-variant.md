@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474405"
 ---
 # <a name="bc-texture-compression-variant"></a>Вариант сжатия текстур BC
 Включает блочное сжатие текстур, которые имеют формат пикселей, являющийся вариантом формата B8G8R8X8, B8G8R8A8 или R8G8B8A8.  

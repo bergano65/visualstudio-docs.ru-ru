@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471636"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Ошибка. Не удается получить доступ к интерфейсу отладки SQL Server
 Данное сообщение появляется при попытке проведения отладки SQL на компьютере, на котором не включена отладка SQL.  
