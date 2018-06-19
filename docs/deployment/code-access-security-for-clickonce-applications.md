@@ -30,6 +30,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560717"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Управление доступом для кода для приложения ClickOnce
 Приложения ClickOnce основаны на платформе .NET Framework, и к ним могут применяться ограничения управления доступом для кода. Важно понимать влияние управления доступом для кода, чтобы писать приложения ClickOnce соответствующим образом.  

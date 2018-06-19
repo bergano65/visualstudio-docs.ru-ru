@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127386"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Команда контрактов в сборках взаимодействия
 Базовый контракт для обработки команды через <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс является то, что окружение вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод для определения ли команда поддерживается, и, если он поддерживается, чтобы определить его состояние и текст. Затем среда вызывает метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод для выполнения команды.  

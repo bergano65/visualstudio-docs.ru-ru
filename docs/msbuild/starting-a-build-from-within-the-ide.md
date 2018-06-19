@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577500"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Запуск построения из интегрированной среды разработки
 Для запуска сборок пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>. Эта статья описывает причины этого требования, а также соответствующую процедуру.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477457"
 ---
 # <a name="debug-xaml-in-blend"></a>Отладка XAML в Blend
 Можно использовать инструменты в [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] для отладки XAML в вашем приложении. При сборке проекта все ошибки отображаются в **результатов** панель. Для поиска разметки, относящейся к ошибке, дважды щелкните ошибку. Если вам требуется больше места для работы, можно скрыть **результатов** панели, нажав клавишу F12.  

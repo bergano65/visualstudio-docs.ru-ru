@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567812"
 ---
 # <a name="error-task"></a>Задача Error
 Останавливает сборку и регистрирует ошибку в журнале событий на основании вычисленного условного оператора.  

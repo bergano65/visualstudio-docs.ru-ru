@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476251"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Как: отладка исполняемого файла, который не является частью решения Visual Studio
 Иногда требуется отладка исполняемого файла (файл .exe), не является частью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проекта. Это может быть исполняемый файл, созданный вами без использования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или полученный от кого–нибудь еще.  

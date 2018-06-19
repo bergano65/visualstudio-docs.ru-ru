@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267780"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Совместная разработка решений Office
   Несколько дает разработчикам возможность работать в проекте Office таким же образом, они совместной работы на других проектов Visual Studio. Visual Studio правильно находит установки Microsoft Office на каждом компьютере, даже если Office устанавливается в разных местах. Однако существуют некоторые важные вопросы, которые следует учитывать.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478113"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Удаленная отладка проекта Visual C++ в Visual Studio
 Чтобы отладить приложение Visual Studio на другом компьютере, установить и запустить средства удаленного на компьютере, где будет производиться развертывание приложения, настройте проект для подключения к удаленному компьютеру из Visual Studio, а затем развернуть и запустить приложение.

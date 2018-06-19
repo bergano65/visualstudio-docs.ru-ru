@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448432"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Приступить к программированию настроек на уровне документа для Excel
   Если вы только начинающие работу создания настроек на уровне документа для Microsoft Office Excel с помощью Visual Studio, вот что нужно знать.  

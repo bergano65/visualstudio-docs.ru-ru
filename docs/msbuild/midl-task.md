@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575729"
 ---
 # <a name="midl-task"></a>Задача MIDL
 Запускает компилятор с языка MIDL — midl.exe. Дополнительные сведения см. в разделе "Справочник по командной строке языка MIDL" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

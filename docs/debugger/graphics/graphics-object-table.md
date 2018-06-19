@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477769"
 ---
 # <a name="graphics-object-table"></a>Таблица графических объектов
 Таблица графических объектов в компоненте анализа графики Visual Studio помогает разобраться в работе объектов Direct3D, которые поддерживают кадр вашей игры или вашего приложения.  

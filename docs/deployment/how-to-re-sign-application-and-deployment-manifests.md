@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566138"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Практическое руководство. Повторное подписание манифестов приложения и развертывания
 После внесения изменений в свойства развертывания в манифесте приложения для приложений Windows Forms, приложениях Windows Presentation Foundation (xbap) или решений Office, необходимо заново подписать приложение и манифесты развертывания с сертификат. Этот процесс гарантирует, что измененные злоумышленниками файлы не установлены на компьютерах конечных пользователей.  

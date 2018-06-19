@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566177"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; элемент (загрузчик)
 `InstallChecks` Элемент поддерживает запуск тестов на локальном компьютере, чтобы убедиться в том, что всех необходимых компонентов для приложения были установлены.  

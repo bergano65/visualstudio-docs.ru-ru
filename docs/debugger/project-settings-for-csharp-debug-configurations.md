@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478331"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Параметры проекта для конфигураций отладки C#
 Можно изменить параметры проекта для конфигурации отладки C# в **страницы свойств** окна, как описано в [конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком **страницы свойств** окна.  

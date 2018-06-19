@@ -29,6 +29,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574572"
 ---
 # <a name="rc-task"></a>Задача RC
 Является оболочкой для средства компиляции ресурсов Microsoft Windows (rc.exe). Задача **RC** компилирует ресурсы, такие как курсоры, значки, растровые изображения, диалоговые окна и шрифты, в файл ресурсов (RES). Дополнительные сведения см. в разделе "Компилятор ресурсов" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

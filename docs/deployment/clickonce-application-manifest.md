@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565085"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифеста приложения является XML-файл, описывающий приложение, которое развертывается с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478295"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Представление потоков и задач с помощью окна "Параллельные стеки"
 **Параллельные стеки** применяется при отладке многопотоковых приложений. Его **представление "Потоки"** содержит сведения о стеке вызова для всех потоков приложения. Оно также позволяет переходить в различные потоки и кадры стека в потоках. В управляемом коде **представление "задачи"** отображает стеки вызова <xref:System.Threading.Tasks.Task?displayProperty=fullName> объектов. В машинном коде **представление "задачи"** отображает стеки вызова [групп задач](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [параллельные алгоритмы](/cpp/parallel/concrt/parallel-algorithms), [асинхронных агентов](/cpp/parallel/concrt/asynchronous-agents)и [упрощенных задач](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  

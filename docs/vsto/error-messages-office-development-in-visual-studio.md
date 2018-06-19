@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263281"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Сообщения об ошибках (Разработка решений Office в Visual Studio)
   Каждый раздел, посвященный сообщению об ошибке, содержит сведения о возможных причинах этой ошибки и потенциальных решениях или обходных путях, позволяющих устранить возникшую проблему.  
