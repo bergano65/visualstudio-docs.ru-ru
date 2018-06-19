@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148250"
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 Изменения в модель проекта из одной версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] к следующему может потребоваться обновление проектов и решений, чтобы их можно запускать на более новой версии. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Предоставляет интерфейсы, которые могут использоваться для реализации поддержки обновления в собственных проектах.  

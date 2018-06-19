@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457684"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Создание настраиваемых представлений управляемых объектов
 Можно настроить то, как Visual Studio отображает типы данных в окнах переменных отладчика.  
