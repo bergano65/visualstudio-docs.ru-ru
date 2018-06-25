@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c51b981e7863db371d8e50ae13e48afbc7f270fc
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8a46a236e58887a86eb51bf44efde58fba8584e4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263432"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765545"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework и сбор статистики приложения с помощью командной строки
-В этом разделе описывается, как с помощью Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к запущенному автономному (клиентскому) приложению .NET Framework и собрать статистические данные о производительности с использованием метода выборки.  
+В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к запущенному автономному (клиентскому) приложению .NET Framework и собрать статистические данные о производительности с использованием метода выборки.  
   
 > [!NOTE]
 >  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  

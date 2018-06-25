@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795322"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327194"
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 Подписки Visual Studio — это исчерпывающий набор инструментов для разработки, развертывания великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux, и управления такими приложениями.  Преимущества подписок включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.
@@ -149,7 +149,6 @@ ms.locfileid: "29795322"
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio для Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server и клиентская лицензия TFS</li>
                         </ul>                        
                     </div>
@@ -166,8 +165,8 @@ ms.locfileid: "29795322"
                         <p>С подпиской Visual Studio вы можете получить                         ежемесячный кредит Azure и бесплатный доступ к службам Azure,                         а также тарифы на разработку и тестирование со скидкой и эксклюзивный                            доступ к коллекции образов с предварительно                                  настроенными виртуальными машинами, доступной только подписчикам. В зависимости от                               подписки облачные службы могут включать следующее.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Центр приложений Visual Studio</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Подписка разработчика приложений для Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Учетная запись разработчика Windows</a></li>
                             <li>PowerBI Pro</li>

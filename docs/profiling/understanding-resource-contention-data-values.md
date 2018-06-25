@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc41ee4c3c9f53d45245c6c305d7f8e221757f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06722e9270269ca674370d5bf8b1925d850ce00
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477409"
 ---
-# <a name="understanding-resource-contention-data-values"></a>Общие сведения о значениях данных по конфликтам ресурсов
+# <a name="understand-resource-contention-data-values"></a>Общие сведения о значениях данных по конфликтам ресурсов
 
 При профилировании состязаний за ресурсы происходит сбор подробных данных стека вызовов всякий раз, когда конкурирующие потоки в приложении вынуждены ожидать доступа к общему ресурсу.
 

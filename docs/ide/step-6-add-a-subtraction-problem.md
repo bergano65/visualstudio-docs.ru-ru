@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747897"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Шаг 6. Добавление задачи на вычитание
 В шестой части этого учебника вам предстоит добавить задачу на вычитание и научиться выполнять следующие задачи:
@@ -51,12 +52,12 @@ ms.lasthandoff: 04/28/2018
 
      Вызвать метод `Next()` класса Random, который мы ранее в этом руководстве назвали randomizer, можно разными способами. Методы, которые можно вызывать несколькими способами, называются перегруженными. Для их изучения можно использовать IntelliSense. Посмотрите еще раз на всплывающую подсказку окна IntelliSense для метода `Next()`.
 
-     ![IntelliSense window tooltip](../ide/media/express_overloads.png "Express_Overloads")
+     ![Подсказка окна Intellisense](../ide/media/express_overloads.png)
 Подсказка окна **IntelliSense**
 
      В подсказке сказано **(+2 перегрузки)**, что означает, что вызвать метод `Next()` можно еще двумя способами. Перегрузки методов содержат разное количество или типы аргументов, поэтому работают слегка по-разному. Например, метод может принимать один целочисленный аргумент, а одна из его перегрузок может принимать целое число и строку. Выбирайте подходящую перегрузку в зависимости от того, что требуется сделать. При добавлении кода в метод `StartTheQuiz()` в окне IntelliSense появляется дополнительная информация, как только вы введете `randomizer.Next(`. Для перебора перегрузок нажимайте **стрелку вверх** и **стрелку вниз**, как показано на следующем рисунке.
 
-     ![Overload for Next&#40;&#41; method in IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") Перегрузка метода **Next()** в **IntelliSense**
+     ![Перегрузка метода Next() в IntelliSense](../ide/media/express_nextoverload.png) Перегрузка метода **Next()** в **IntelliSense**
 
      В данном случае необходимо выбрать последнюю перегрузку, чтобы можно было задать минимальное и максимальное значения.
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/28/2018
 
      Теперь программа включает в себя задачу на вычитание, как показано на следующем рисунке.
 
-     ![Математическая головоломка с задачей на вычитание](../ide/media/express_addsubtract.png "Express_AddSubtract")
+     ![Математическая головоломка с задачей на вычитание](../ide/media/express_addsubtract.png)
 **Математическая головоломка** с задачей на вычитание
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал

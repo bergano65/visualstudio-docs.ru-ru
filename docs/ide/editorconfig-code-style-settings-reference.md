@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34266005"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572651"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -75,6 +75,7 @@ error | При несоблюдении этого правила стиля в�
         - dotnet\_style\_require\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
+        - dotnet\_style\_readonly\_field
     - [Настройки уровня выражений](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
@@ -239,7 +240,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 | Имя правила | Идентификатор правила | Применимые языки | Значение по умолчанию в Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 и IDE0014 | C# и Visual Basic | true:none |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 и IDE0014 | C# и Visual Basic | true:none |
 | dotnet_style_predefined_type_for_member_access | IDE0013 и IDE0015 | C# и Visual Basic | true:none |
 
 **dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
@@ -299,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers"></a>Предпочтения для модификаторов
 
-Этот раздел приводит предпочтительные правила стиля для модификаторов, в том числе когда требуются модификаторы доступа или указывается предпочтительный порядок сортировки.
+Этот раздел приводит предпочтительные правила стиля для модификаторов, в том числе когда требуются модификаторы доступа, указывается предпочтительный порядок сортировки или требуется модификатор только для чтения.
 
 В следующей таблице указаны имена и идентификаторы правил, применяемые языки программирования, значения по умолчанию и первая поддерживаемая версия Visual Studio:
 
@@ -308,6 +309,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | dotnet_style_require_ accessibility_modifiers | IDE0040 | C# и Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:none | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:none | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# и Visual Basic | true:suggestion | 15.7 |
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
@@ -316,7 +318,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | Значение | Описание: |
 | ----- |:----------- |
 | always | Сделать предпочтительным указание модификаторов доступа |
-| for\_non\_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. На данный момент это поведение соответствует параметру **always** и будет впоследствии использоваться для проверки при добавлении методов интерфейса C# по умолчанию. |
+| for\_non\_interface_members | Предпочтительно объявление модификаторов доступа, за исключением членов открытого интерфейса. Это аналогично **always** и добавлено для будущих проверок, если C# в добавятся методы интерфейса по умолчанию. |
 | never | Предпочитать не указывать модификаторы доступа |
 
 Примеры кода:
@@ -326,13 +328,13 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 // dotnet_style_require_accessibility_modifiers = for_non_interface_members
 class MyClass
 {
-    private const string thisFieldIsConst= "constant";
+    private const string thisFieldIsConst = "constant";
 }
 
 // dotnet_style_require_accessibility_modifiers = never
 class MyClass
 {
-    const string thisFieldIsConst= "constant";
+    const string thisFieldIsConst = "constant";
 }
 ```
 
@@ -365,12 +367,35 @@ Public Class MyClass
 End Class
 ```
 
+**dotnet_style_readonly_field**
+
+- Если это правило имеет значение **true**, укажите, что поля должны иметь метку `readonly` (C#) или `ReadOnly` (Visual Basic), если они встроены или находятся внутри конструктора.
+- Если это правило имеет значение **false**, укажите, что неважно, будут ли поля иметь метку `readonly` (C#) или `ReadOnly` (Visual Basic).
+
+Примеры кода:
+
+```csharp
+// dotnet_style_readonly_field = true
+class MyClass
+{
+    private readonly int _daysInYear = 365;
+}
+```
+
+```vb
+' dotnet_style_readonly_field = true
+Public Class MyClass
+    Private ReadOnly daysInYear As Int = 365
+End Class
+```
+
 В файле *EDITORCONFIG* эти правила могут иметь следующий вид:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = true:warning
 
 # CSharp code style settings:
 [*.cs]

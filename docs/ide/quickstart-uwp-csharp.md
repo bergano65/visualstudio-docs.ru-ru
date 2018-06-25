@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765873"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Краткое руководство. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio мы создадим простое приложение вида "Hello World", выполняющееся на устройстве с Windows 10. Для этого потребуется использование шаблона проекта универсальной платформы Windows (UWP), расширяемого языка разметки приложений (XAML) и языка программирования C#.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
   ![В обозревателе решений выберите файл MainPage.xaml ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Откроется две панели: **Конструктор XAML**, содержащий холст конструктора, и **редактор XAML**, в котором можно добавлять и изменять код.    
+  Откроется две панели: **Конструктор XAML**, содержащий холст конструктора, и **редактор XAML**, в котором можно добавлять и изменять код.
 
   ![Панель конструктора XAML в редакторе XAML](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ ms.lasthandoff: 04/26/2018
 
 1. Выберите **Локальный компьютер** для запуска приложения.
 
-   ![Выберите "Локальный компьютер" для запуска и отладки приложения UWP](../ide/media/uwp-start-or-debug.png "Выберите "Локальный компьютер" для запуска и отладки приложения UWP")
+   ![Выберите локальный компьютер для запуска и отладки приложения UWP](../ide/media/uwp-start-or-debug.png)
 
    (Либо можно выбрать **Отладка** > **Начать отладку** в строке меню или нажать клавишу **F5** для запуска приложения.)
 

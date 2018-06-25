@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: acc136462f8905be924357399b644a05569258b1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263093"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766185"
 ---
 # Выбор подходящих вариантов публикации
 
@@ -84,7 +84,7 @@ ms.locfileid: "34263093"
 
 См. дополнительные сведения о [развертывании приложений .NET Core с помощью Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
-## Пользовательские целевые объекты
+## Пользовательские целевые объекты (IIS, FTP)
 
 Пользовательский целевой объект позволяет развертывать веб-приложения на целевом объекте, отличном от службы приложений Azure, виртуальных машин Azure и локальной файловой системы. Его можно развернуть в файловой системе или на любом другом сервере (в Интернете или интрасети), к которому у вас есть доступ, включая области в других облачных службах. Он может работать с веб-развертыванием (файлы или ZIP) и FTP.
 
@@ -103,4 +103,4 @@ ms.locfileid: "34263093"
 - Вы хотите использовать для развертывания учетные данные, отличные от используемых в Visual Studio, или напрямую связанные с вашими учетными записями Azure.
 - Вы хотите удалять файлы из целевого объекта при каждом развертывании.
 
-См. дополнительные сведения об [использовании IIS 8.0 с ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45), а также руководство по [удаленной отладке ASP.NET на удаленном компьютере IIS](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+Дополнительные сведения о публикации в IIS см. в разделе [IIS 8.0. Использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)

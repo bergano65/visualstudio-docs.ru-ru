@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747122"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Практическое руководство. Создание простейшего шейдера цвета
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > На рисунке был указан оранжевый цвет для лучшей демонстрации эффекта шейдера.
 
-![Граф шейдера и его результаты на трехмерной модели](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+![Граф шейдера и его результаты на трехмерной модели](../designers/media/digit-flat-color-effect.png)
 
 Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).
 

@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352feacc59a129d24575408776e9ec075b1294ac
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cb99ec5bab1098f3551548698919cb1f2fc8f8b1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764336"
 ---
 # <a name="events-vsperfcmd"></a>Параметр Events (VSPerfCmd)
-Параметр **Events** программы VSPerfCmd.exe позволяет управлять ведением журнала трассировки событий Windows. Данные трассировки событий Windows сохраняются в ETL-файле, который отличается от файла данных профилировщика. Эти данные можно просмотреть в отчете с помощью команды [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.  
+Параметр **Events** программы *VSPerfCmd.exe* позволяет управлять ведением журнала трассировки событий Windows. Данные трассировки событий Windows сохраняются в ETL-файле, который отличается от файла данных профилировщика. Эти данные можно просмотреть в отчете с помощью команды [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.  
   
  Параметр **Events** можно использовать в любой момент перед вызовом команды **Shutdown** программы VSPerfCmd для остановки профилирования.  
   
@@ -84,7 +85,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
->  Так как события запуска не перечислены в MOF-файле, то если их не исключить, они отображаются в отчете в виде идентификаторов GUID. Дополнительные сведения см. на странице [Образец файла формата управляемого объекта (MOF)](http://go.microsoft.com/fwlink/?linkid=37118) веб-сайта корпорации Майкрософт.  
+>  Так как события запуска не перечислены в MOF-файле, то если их не исключить, они отображаются в отчете в виде идентификаторов GUID. Дополнительные сведения см. на странице [Образец MOF-файла](http://go.microsoft.com/fwlink/?linkid=37118) веб-сайта корпорации Майкрософт.  
   
 ## <a name="see-also"></a>См. также  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
