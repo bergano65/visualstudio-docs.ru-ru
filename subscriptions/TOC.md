@@ -1,4 +1,5 @@
 # [Подписки Visual Studio](index.md)
+## [Новые возможности](whats-new-in-subscriptions.md)
 ## Возможности для подписчиков
 ### [Использование портала для подписчиков](using-the-subscriber-portal.md)
 #### [Активация розничной подписки](activate-store-subscriptions.md)
