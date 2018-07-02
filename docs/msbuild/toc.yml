@@ -84,6 +84,8 @@
               items:
                 - name: Пошаговое руководство. Создание встроенной задачи
                   href: walkthrough-creating-an-inline-task.md
+            - name: Встроенные задачи MSBuild с RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Сравнение свойств и элементов
           href: comparing-properties-and-items.md
         - name: Специальные символы в MSBuild
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Задача Delete
               href: delete-task.md
+            - name: Задача DownloadFile
+              href: downloadfile-task.md
             - name: Задача Error
               href: error-task.md
             - name: Задача Exec
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: Задача UnregisterAssembly
               href: unregisterassembly-task.md
+            - name: Задача Unzip
+              href: unzip-task.md
             - name: Задача UpdateManifest
               href: updatemanifest-task.md
             - name: Задача Vbc
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: Задача XslTransformation
               href: xsltransformation-task.md
+            - name: Задача ZipDirectory
+              href: zipdirectory-task.md
         - name: Условия MSBuild
           href: msbuild-conditions.md
         - name: Условные конструкции MSBuild
