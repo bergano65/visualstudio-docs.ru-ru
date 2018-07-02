@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750699"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  Перетащите объект <xref:System.Windows.Forms.RichTextBox> из категории **Стандартные элементы управления** области **Панель элементов** в область элемента управления UserControl1.
 
-6.  Выберите глиф тега действия (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) в правом верхнем углу элемента управления <xref:System.Windows.Forms.RichTextBox> и выберите команду **Закрепить в родительском контейнере**.
+6.  Выберите глиф тега действия (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif)) в правом верхнем углу элемента управления <xref:System.Windows.Forms.RichTextBox> и выберите команду **Закрепить в родительском контейнере**.
 
 7.  В обозревателе решений щелкните правой кнопкой мыши проект библиотеки Windows Forms и выберите пункт **Свойства**.
 

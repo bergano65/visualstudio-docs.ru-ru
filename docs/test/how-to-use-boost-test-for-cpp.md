@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751628"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Использование Boost.Test для C++ в Visual Studio
 
 В **Visual Studio 2017 версии 15.5** и более поздних адаптер теста Boost.Test интегрирован в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**.
 
-![Адаптер теста для Boost.Test](media/cpp-boost-component.png "Адаптер теста для компонента Boost.Test")
+![Адаптер теста для Boost.Test](media/cpp-boost-component.png)
 
 Если у вас не установлена рабочая нагрузка **Разработка классических приложений на C++**, откройте **установщик Visual Studio** и нажмите кнопку **Изменить**. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите кнопку **Изменить**.
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/26/2018
 
 1. Чтобы создать CPP-файл для тестов, щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите **Добавить новый элемент**.
 
-   ![Шаблон элемента Boost.Test](media/boost_test_item_template.png "Boost.Test item template")
+   ![Шаблон элемента Boost.Test](media/boost_test_item_template.png)
 
 1. Новый файл содержит пример метода теста. Создайте проект, чтобы **обозреватель тестов** смог обнаружить этот метод.
 
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
 1. В CPP-файле теста добавьте необходимые директивы `#include`, чтобы типы и функции программы были доступны коду теста. Как правило, программа находится в иерархии папок на один уровень выше. При вводе `#include "../"` открывается окно IntelliSense, в котором можно выбрать полный путь к файлу заголовка.
 
-   ![Добавление директив #include](media/cpp-gtest-includes.png "Добавление директив include в CPP-файл теста")
+   ![Добавление директив #include](media/cpp-gtest-includes.png)
 
    Можно использовать автономную библиотеку с:
 

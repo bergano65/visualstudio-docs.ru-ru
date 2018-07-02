@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac01c1fab1c1ef0ce2c7846bad56491fa03765f
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 417d901504eb20894b3bd3e83d286dac4e66b072
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749376"
 ---
 # <a name="cvwriteflag-function"></a>Функция CvWriteFlag
 Записывает флаг в файл трассировки визуализатора параллелизма.  
@@ -83,7 +84,7 @@ HRESULT CvWriteFlagExVA(
  Значение S_OK, если сообщение успешно записано. Код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** cvmarkers.h  
+ **Заголовок:** *cvmarkers.h*  
   
  **Юникод:** CvWriteFlagExW, CvWriteFlagExVW  
   

@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47129a84b38a4182514bf91be3c55704cf506410
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 1555703c92695090a3c8ac7b04e7a35dadcd7627
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749204"
 ---
 # <a name="cvisenabled-function"></a>Функция CvIsEnabled
 Определяет, любому ли сеансу доступен указанный поставщик ETW.  
@@ -52,7 +53,7 @@ HRESULT CvIsEnabledEx(
  Значение S_OK, если в данный момент поставщик доступен. Значение S_OK, если в данный момент поставщик недоступен. Код ошибки в том случае, если были какие-либо ошибки. Используйте макрос FAILED для проверки условия ошибки, а затем проверьте S_ОК/S_FALSE.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** cvmarkers.h  
+ **Заголовок:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

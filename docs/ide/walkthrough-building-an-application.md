@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748222"
 ---
 # <a name="walkthrough-build-an-application"></a>Пошаговое руководство. Сборка приложения
 
@@ -33,31 +34,31 @@ ms.lasthandoff: 05/03/2018
 
 1. Откройте диалоговое окно **Диспетчер конфигураций**.
 
-   ![Меню "Сборка", команда "Диспетчер конфигураций"](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![Меню "Построение", команда "Диспетчер конфигураций"](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. В списке **Активная конфигурация решения** выберите **\<Создать...\>**.
 
 1. В диалоговом окне **Создание конфигурации решения** введите для новой конфигурации имя `Test`, скопируйте параметры из существующей конфигурации **Отладка** и нажмите кнопку **ОК**.
 
-   ![Диалоговое окно конфигурации нового решения](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![Диалоговое окно конфигурации нового решения](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. В списке **Активная платформа решения** выберите **\<Создать...\>**.
 
 1. В диалоговом окне **Создание платформы решения** выберите **x64** и не копируйте параметры из платформы x86.
 
-   ![Диалоговое окно платформы нового решения](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![Диалоговое окно платформы нового решения](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. Нажмите кнопку **ОК** .
 
    Активная конфигурация решения была изменена на **Тест**, а для активной платформы решения задано значение x64.
 
-   ![Диспетчер конфигураций с конфигурацией тестов](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Диспетчер конфигураций с конфигурацией тестов](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. Нажмите кнопку **Закрыть**.
 
 Активную конфигурацию решения можно быстро проверить или изменить с помощью списка **Конфигурации решения** на панели инструментов **Стандартная**.
 
-![Стандартная панель инструментов параметра конфигурации решения](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![Стандартная панель инструментов параметра конфигурации решения](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>Построение приложения
 
@@ -83,9 +84,9 @@ ms.lasthandoff: 05/03/2018
 
 Окно **Вывод** отображает результат сборки. Сборка была выполнена успешно, но были созданы предупреждения:
 
-![Окно выходных данных Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![Окно выходных данных Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![Окно выходных данных Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Окно выходных данных Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 Вы можете временно скрыть некоторые предупреждения во время сборки, чтобы они не засоряли выходные данные сборки.
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 05/03/2018
 
 1. Выберите страницу **Сборка** и затем в поле **Отключить предупреждения** укажите номер предупреждения **0168**.
 
-     ![Страница сборки, конструктор проектов](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![Страница построения, конструктор проектов](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Дополнительные сведения см. в разделе [Страница "Сборка" в конструкторе проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 05/03/2018
 
      Окно **Вывод** отображает только сводные данные о сборке.
 
-     ![Окно выходных данных, предупреждения сборки Visual C&#35;](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Окно выходных данных, предупреждения построения Visual C&#35;](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Отключение всех предупреждений сборки в Visual Basic
 
@@ -119,7 +120,7 @@ ms.lasthandoff: 05/03/2018
 
 1. На странице **Компиляция** установите флажок **Выключить все предупреждения**.
 
-     ![Страница компиляции, конструктор проектов](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![Страница компиляции, конструктор проектов](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Дополнительные сведения см. в статье [Настройка предупреждений в Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -127,7 +128,7 @@ ms.lasthandoff: 05/03/2018
 
  Окно **Вывод** отображает только сводные данные о сборке.
 
- ![Окно выходных данных, предупреждения сборки Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![Окно выходных данных, предупреждения построения Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  Дополнительные сведения см. в разделе [Практическое руководство. Отключение предупреждений компилятора](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -143,7 +144,7 @@ ms.lasthandoff: 05/03/2018
 
 1. Откройте диалоговое окно **Параметры**.
 
-     ![Команда "Параметры" в меню "Сервис"](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+     ![Команда "Параметры" в меню "Сервис"](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. Выберите категорию **Проекты и решения** и затем страницу **Сборка и запуск**.
 
@@ -174,7 +175,7 @@ ms.lasthandoff: 05/03/2018
 
 1. Открывается **Конструктор проектов**.
 
-     ![Меню "Просмотр", команда "Страница свойств"](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Меню "Просмотр", команда "Страница свойств"](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Откройте вкладку **Компиляция**.
 
@@ -191,13 +192,13 @@ ms.lasthandoff: 05/03/2018
 
 1. Постройте приложение.
 
-     ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Команда "Построить решение" в меню "Построение"](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>Указание сборки выпуска для C# #
 
 1. Открывается **Конструктор проектов**.
 
-     ![Меню "Просмотр", команда "Страница свойств"](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Меню "Просмотр", команда "Страница свойств"](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Перейдите на страницу **Сборка**.
 
@@ -216,7 +217,7 @@ ms.lasthandoff: 05/03/2018
 
 1. Постройте приложение.
 
-     ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Команда "Построить решение" в меню "Построение"](../ide/media/exploreide-buildsolution.png)
 
    Исполняемый файл копируется в указанный сетевой путь. Путем к нему будет `\\myserver\builds\\FileName.exe`.
 

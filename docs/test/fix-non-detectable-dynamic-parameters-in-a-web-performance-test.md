@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf719eec2b9695e6019cf78e16ec5018639a92ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751050"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Исправление необнаруживаемых динамических параметров в веб-тесте производительности
 
@@ -36,13 +37,13 @@ ms.lasthandoff: 04/26/2018
 
 1.  Создайте новый проект ASP.NET DynamicParamaterSample.
 
-     ![Создание пустого проекта веб-приложения ASP.NET](../test/media/web_test_dynamicparameter_aspproject.png "Web_Test_DynamicParameter_ASPProject")
+     ![Создание пустого проекта веб-приложения ASP.NET](../test/media/web_test_dynamicparameter_aspproject.png)
 
 2.  Добавьте веб-форму Querystring.aspx.
 
 3.  В конструкторе перетащите HiddenField на страницу и затем измените значение свойства (ID) на HiddenFieldSessionID.
 
-     ![Добавление элемента HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png "Web_Test_DynamicParameter_HiddenField")
+     ![Добавление HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
 4.  Перейдите к представлению исходного кода страницы Querystring и добавьте следующий выделенный код ASP.NET и JavaScript, используемый для моделирования динамических параметров идентификатора сеанса:
 
@@ -77,19 +78,19 @@ ms.lasthandoff: 04/26/2018
 
 7.  В конструкторе перетащите элемент Label на страницу и измените значение его свойства (ID) на IndexLabel.
 
-     ![Добавление надписи в веб-форму](../test/media/web_test_dynamicparameter_label.png "Web_Test_DynamicParameter_Label")
+     ![Добавление надписи в веб-форму](../test/media/web_test_dynamicparameter_label.png)
 
 8.  Перетащите элемент HyperLink на страницу и измените значение его свойства Text на Back.
 
-     ![Добавление гиперссылки в веб-форму](../test/media/web_test_dynamicparameter_hyperlink.png "Web_Test_DynamicParameter_Hyperlink")
+     ![Добавление гиперссылки в веб-форму](../test/media/web_test_dynamicparameter_hyperlink.png)
 
 9. Нажмите кнопку (…) для свойства NavigationURL.
 
-     ![Редактирование свойства NavigateURL](../test/media/web_test_dynamicparameter_hyperlink_navurl.png "Web_Test_DynamicParameter_Hyperlink_NavURL")
+     ![Редактирование свойства NavigateURL](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
      Выберите Querystring.aspx.
 
-     ![Выбор URL-адреса Querystring.aspx](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png "Web_Test_DynamicParameter_Hyperlink_NavURL2")
+     ![Выбор URL-адреса Querystring.aspx](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
 10. Откройте файл ASPQuery.aspx.cs и добавьте следующий выделенный код в метод Page_Load:
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 
      Как и для второй страницы, перетащите метку в форму, задав свойству (ID) значение IndexLabel, а затем перетащите гиперссылку в форму, задав свойству Text значение Back, а свойству NavigationURL — Querystring.aspx.
 
-     ![Добавление и настройка третьей веб-формы](../test/media/web_test_dynamicparameter_addwebform3.png "Web_Test_DynamicParameter_AddWebForm3")
+     ![Добавление и настройка третьей веб-формы](../test/media/web_test_dynamicparameter_addwebform3.png)
 
 12. Откройте файл JScriptQuery.aspx.cs и добавьте следующий выделенный код в метод Page_Load:
 
@@ -119,33 +120,33 @@ ms.lasthandoff: 04/26/2018
 
 14. В обозревателе решений выберите Querystring.aspx в качестве начальной страницы.
 
-     ![Задание начальной страницы в Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png "Web_Test_DynamicParameter_SetStartPage")
+     ![Задание начальной страницы в Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png)
 
 15. Нажмите сочетание клавиш CTRL+F5, чтобы запустить веб-приложение в браузере. Скопируйте URL-адрес. Он потребуется при записи теста.
 
 16. Попробуйте обе ссылки. Обе должны открывать сообщение "Успех. Dynamic querystring parameter found".
 
-     ![Запуск веб-приложения](../test/media/web_test_dynamicparameter_runapp.png "Web_Test_DynamicParameter_RunApp")
+     ![Запуск веб-приложения](../test/media/web_test_dynamicparameter_runapp.png)
 
-     ![Успешный запуск](../test/media/web_test_dynamicparameter_runapp2.png "Web_Test_DynamicParameter_RunApp2")
+     ![Успех&#33;](../test/media/web_test_dynamicparameter_runapp2.png)
 
 ## <a name="create-a-web-performance-test"></a>Создание веб-теста производительности
 
 1.  Добавьте в решение проект веб-тестов производительности и нагрузочных тестов.
 
-     ![Добавление проекта веб-тестов производительности и нагрузочных тестов](../test/media/web_test_dynamicparameter_addtestproject.png "Web_Test_DynamicParameter_AddTestProject")
+     ![Добавление проекта веб-тестов производительности и нагрузочных тестов](../test/media/web_test_dynamicparameter_addtestproject.png)
 
 2.  Переименуйте WebTest1.webtest в DynamicParameterSampleApp.webtest.
 
-     ![Переименование веб-теста производительности](../test/media/web_test_dynamicparameter_renametest.png "Web_Test_DynamicParameter_RenameTest")
+     ![Переименование веб-теста производительности](../test/media/web_test_dynamicparameter_renametest.png)
 
 3.  Запишите тест.
 
-     ![Запись веб-теста производительности](../test/media/web_test_dynamicparameter_recordtest.png "Web_Test_DynamicParameter_RecordTest")
+     ![Запись веб-теста производительности](../test/media/web_test_dynamicparameter_recordtest.png)
 
 4.  Скопируйте URL-адрес с тестируемого веб-сайта в браузер.
 
-     ![Вставка URL-адреса с тестируемого веб-сайта](../test/media/web_test_dynamicparameter_recordtest2.png "Web_Test_DynamicParameter_RecordTest2")
+     ![Вставка URL-адреса с тестируемого веб-сайта](../test/media/web_test_dynamicparameter_recordtest2.png)
 
 5.  Выполните какие-либо переходы в веб-приложении. Выберите ссылку ASP.NET, ссылку "Назад", а затем ссылку "JavaScript" и ссылку "Назад".
 
@@ -159,15 +160,15 @@ ms.lasthandoff: 04/26/2018
 
      Нажмите кнопку "ОК", чтобы добавить правило извлечения в Querystring.aspx, привязав его к странице ASPQuery.
 
-     ![Повышение уровня обнаруженного динамического параметра](../test/media/web_test_dynamicparameter_promotedialog.png "Web_Test_DynamicParameter_PromoteDialog")
+     ![Повышение уровня обнаруженного динамического параметра](../test/media/web_test_dynamicparameter_promotedialog.png)
 
      Правило извлечения добавляется в первый запрос для Querystring.aspx.
 
-     ![Правило извлечения, добавленное в запрос](../test/media/web_test_dynamicparameter_autoextractionrule.png "Web_Test_DynamicParameter_AutoExtractionRule")
+     ![Правило извлечения, добавленное в запрос](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
      В дереве запросов страницы ASPQuery.aspx разверните второй запрос и обратите внимание, что значение параметра CustomQueryString привязано к правилу извлечения.
 
-     ![CustomQueryString, привязанная к правилу извлечения](../test/media/web_test_dynamicparameter_autoextractionrule2.png "Web_Test_DynamicParameter_AutoExtractionRule2")
+     ![CustomQueryString, привязанная к правилу извлечения](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
 8.  Сохраните тест.
 
@@ -175,19 +176,19 @@ ms.lasthandoff: 04/26/2018
 
 1.  Запустите тест.
 
-     ![Запуск веб-теста производительности](../test/media/web_test_dynamicparameter_runtest.png "Web_Test_DynamicParameter_RunTest")
+     ![Запуск веб-теста производительности](../test/media/web_test_dynamicparameter_runtest.png)
 
 2.  Четвертый запрос страницы JScriptQuery.aspx заканчивается ошибкой. Перейдите к веб-тесту.
 
-     ![Ошибка динамического параметра в результатах теста](../test/media/web_test_dynamicparameter_runresults.png "Web_Test_DynamicParameter_RunResults")
+     ![Ошибка динамического параметра в результатах теста](../test/media/web_test_dynamicparameter_runresults.png)
 
      Узел запроса страницы JScriptQuery.aspx выделен в редакторе. Разверните узел и обратите внимание, что часть "1v0yhyiyr0raa2w4j4pwf5zl" в CustomQueryString кажется динамической.
 
-     ![Потенциальный динамический параметр в CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png "Web_Test_DynamicParameter_RunResults2")
+     ![Потенциальный динамический параметр в CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png)
 
 3.  Вернитесь в средство просмотра результатов веб-тестов производительности и выберите страницу JScriptQuery.aspx, на которой произошла ошибка. Перейдите на вкладку запроса, убедитесь, что снят флажок отображения необработанных данных, прокрутите вниз и выберите быстрый поиск в CustomQueryString.
 
-     ![Использование быстрого поиска для локализации динамического параметра](../test/media/web_test_dynamicparameter_runresultsquckfind.png "Web_Test_DynamicParameter_RunResultsQuckFind")
+     ![Использование быстрого поиска для локализации динамического параметра](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4.  Из редактора тестов известно, что параметру CustomQueryString запроса страницы JScriptQuery.aspx присвоено значение `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` и часть строки "1v0yhyiyr0raa2w4j4pwf5zl", вероятно, формируется динамически. Удалите из раскрывающегося списка "Найти" эту часть строки поиска. Строка должна выглядеть следующим образом: "CustomQueryString=jScriptQueryString___".
 
@@ -206,43 +207,43 @@ ms.lasthandoff: 04/26/2018
 
 5.  Используйте быстрый поиск в HiddenFieldSessionID, сняв флажок "Поиск назад" и выбрав текущий запрос.
 
-     ![Использование быстрого поиска по HiddenFieldSession](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png "Web_Test_DynamicParameter_RunResultsQuckFindHiddenSession")
+     ![Использование быстрого поиска по HiddenFieldSessionID](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      Обратите внимание, что возвращаемое значение не совпадает со строкой из исходной записи веб-теста производительности. Для данного тестового запуска возвращенное значение — "5w4v3yrse4wa4axrafykqksq", а в исходной записи значение было "1v0yhyiyr0raa2w4j4pwf5zl". Возвращаемое значение не совпадает с исходной записью, поэтому создается ошибка.
 
 6.  Поскольку нужно исправить динамический параметр в исходной записи, выберите записанный результат на панели инструментов.
 
-     ![Выбор записанного результата](../test/media/web_test_dynamicparameter_recordedresult.png "Web_Test_DynamicParameter_RecordedResult")
+     ![Выбор записанного результата](../test/media/web_test_dynamicparameter_recordedresult.png)
 
 7.  В записанных результатах выберите третий запрос, который представляет собой тот же запрос Querystringrequest.aspx, который был изолирован в результатах тестового запуска.
 
-     ![Выбор того же запроса в записанных результатах](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png "Web_Test_DynamicParameter_RecordedResultsSelectNode")
+     ![Выбор того же запроса в записанных результатах](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
      Откройте вкладку отклика, прокрутите вниз и выберите исходное значение динамического параметра "1v0yhyiyr0raa2w4j4pwf5zl", которое было изолировано ранее, и добавьте правило извлечения.
 
-     ![Добавление правила извлечения для динамического параметра](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png "Web_Test_DynamicParameter_RecordedResultAddExtractionRule")
+     ![Добавление правила извлечения для динамического параметра](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png)
 
      Новое правило извлечения добавляется к запросу Querystring.aspx и ему присваивается значение "Param0".
 
      Если диалоговое окно сообщает, что обнаружены совпадения для извлеченного текста, к которым можно привязать параметр, нажмите кнопку "Да".
 
-     ![Правило извлечения создано](../test/media/web_test_dynamicparameter_addextractiondialog.png "Web_Test_DynamicParameter_AddExtractionDialog")
+     ![Правило извлечения создано](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
 8.  Нажмите кнопку "Найти далее". Первое совпадение — это совпадение, которые необходимо изменить, то есть параметр для CustomQueryString на странице JScriptQuery.
 
-     ![Поиск и замена текста параметром](../test/media/web_test_dynamicparameter_addextractionfindreplace.png "Web_Test_DynamicParameter_AddExtractionFindReplace")
+     ![Поиск и замена текста параметром](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
 9. Нажмите кнопку "Заменить".
 
-     ![Замена текста параметром](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png "Web_Test_DynamicParameter_AddExtractionFindReplace2")
+     ![Замена текста параметром](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
      Параметр QueryString в запросе JScriptQuery.aspx обновляется новым параметром контекста: CustomQueryString=jScriptQueryString___{{Param0}}.
 
-     ![Параметр, примененный к QueryString](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png "Web_Test_DynamicParameter_AddExtractionFindReplace3")
+     ![Параметр, примененный к QueryString](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
 10. Закройте диалоговое окно "Найти и заменить". Обратите внимание на схожесть структуры дерева запросов для обнаруженного динамического параметра и необнаруженного динамического параметра, корреляция которого только что выполнена.
 
-     ![Обнаруженные и скоррелированные динамические параметры](../test/media/web_test_dynamicparameter_conclusion.png "Web_Test_DynamicParameter_Conclusion")
+     ![Обнаруженные и скоррелированные динамические параметры](../test/media/web_test_dynamicparameter_conclusion.png)
 
 11. Запустите тест. Теперь он выполняется без ошибок.
 

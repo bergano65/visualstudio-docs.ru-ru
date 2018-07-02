@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751719"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Пошаговое руководство. Создание и выполнение модульных тестов для приложений универсальной платформы Windows
 
@@ -45,11 +46,11 @@ Visual Studio поддерживает модульное тестировани
 
 6.  Оставьте флажок **Создать каталог для решения** установленным и нажмите кнопку **ОК** .
 
-     ![Адаптированная библиотека модульных тестов](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Адаптированная библиотека модульных тестов](../test/media/unit_test_win8_1.png)
 
      В обозревателе решений появляется ваш новый проект модульного теста для универсальной платформы Windows, а в редакторе кода отображается модульный тест по умолчанию с именем UnitTest1.
 
-     ![Новый адаптированный проект модульных тестов](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Новый адаптированный проект модульных тестов](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Изменение файла манифеста приложения универсальной платформы Windows для проекта модульного теста
 
@@ -99,7 +100,7 @@ Visual Studio поддерживает модульное тестировани
     >
     > Кроме того, можно выбрать **Отладить выбранные тесты**, **Открыть тест**и использовать параметр **Свойства** .
     >
-    > ![Обозреватель модульных тестов — контекстное меню модульного теста](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Обозреватель модульных тестов — контекстное меню модульного теста](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     Выполняется модульный тест. По завершении обозреватель тестов отображает состояние теста, затраченное время и содержит ссылку на источник.
 

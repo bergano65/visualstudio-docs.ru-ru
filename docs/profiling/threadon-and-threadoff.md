@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a55bcfd09a99d9808bc378e680c33594007661e1
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476681"
 ---
 # <a name="threadon-and-threadoff"></a>Параметры ThreadOn и ThreadOff
 Подкоманды **ThreadOff** и **ThreadOn** программы VSPerfCmd.exe доступны только в сеансах профилирования из командной строки, в которых используется метод инструментирования. **ThreadOff** и **ThreadOn** приостанавливают и возобновляют профилирование для указанного потока. **ThreadOff** останавливает профилирование потока, а **ThreadOn** запускает его.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 05/11/2018
   
 -   **ThreadOn** немедленно устанавливает значение 1 для счетчика запусков и остановок потока, вследствие чего профилирование возобновляется.  
   
- Дополнительные сведения см. в статье [Profiling Tools APIs](../profiling/profiling-tools-apis.md) (Интерфейсы API для средств профилирования).  
+ Дополнительные сведения см. в статье [Profile tools APIs](../profiling/profiling-tools-apis.md) (Интерфейсы API для средств профилирования).  
   
 ## <a name="syntax"></a>Синтаксис  
   

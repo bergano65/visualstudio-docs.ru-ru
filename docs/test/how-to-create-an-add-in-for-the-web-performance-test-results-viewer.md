@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751680"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Практическое руководство. Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности
 
@@ -135,7 +136,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  С панели элементов перетащите элемент <xref:System.Windows.Forms.DataGridView> на форму userControl1.
 
-7.  Щелкните глиф тега действий (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) в правом верхнем углу элемента управления <xref:System.Windows.Forms.DataGridView> и выполните следующие действия:
+7.  Щелкните глиф тега действий (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif)) в правом верхнем углу элемента управления <xref:System.Windows.Forms.DataGridView> и выполните следующие действия.
 
     1.  Выберите **Закрепить в родительском контейнере**.
 

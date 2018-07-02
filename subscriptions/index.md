@@ -1,26 +1,28 @@
 ---
 title: Подписки Visual Studio
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327194"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946930"
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
+
 Подписки Visual Studio — это исчерпывающий набор инструментов для разработки, развертывания великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux, и управления такими приложениями.  Преимущества подписок включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.
 
-##  <a name="get-started"></a>Приступая к работе
+## <a name="get-started"></a>Приступая к работе
+
 Администраторам нужно войти в систему на сайте [https://manage.visualstudio.com](https://manage.visualstudio.com), чтобы назначить подписки команде.<br>
 Подписчикам нужно войти в систему на сайте [https://my.visualstudio.com](https://my.visualstudio.com), чтобы получить доступ к преимуществам подписок.
 
@@ -134,6 +136,12 @@ ms.locfileid: "36327194"
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>Новые возможности
+
+Чтобы сделать подписки еще полезнее, мы часто добавляем и обновляем преимущества. Дополнительные сведения см. на странице [Новые возможности подписок](whats-new-in-subscriptions.md).
 
 ---
 

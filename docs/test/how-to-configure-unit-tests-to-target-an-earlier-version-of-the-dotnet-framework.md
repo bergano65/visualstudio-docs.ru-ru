@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750744"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
 
@@ -63,11 +64,11 @@ ms.lasthandoff: 04/26/2018
 
 5.  На вкладке **Компиляция** выберите **Дополнительные параметры компиляции**, как показано на приведенной ниже иллюстрации.
 
-     ![Дополнительные параметры компиляции](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![Дополнительные параметры компиляции](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  С помощью раскрывающегося списка **Заданная исполняющая среда (все конфигурации)** измените требуемую версию на **.NET Framework 3.5** или на более позднюю, как показано в выноске В на рисунке ниже. Указывать версию клиента не следует.
 
-     ![Раскрывающийся список "Заданная исполняющая среда"](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Раскрывающийся список целевых рабочих сред](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Назначение определенной версии платформы .NET Framework для проектов модульных тестов Visual C#
 
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  На вкладке **Приложение** выберите **Целевая платформа**. В раскрывающемся списке выберите **.NET Framework 3.5** или более поздней версии, как показано на следующем рисунке. Указывать версию клиента не следует.
 
-     ![Раскрывающийся список "Целевая рабочая среда"](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Раскрывающийся список целевых рабочих сред](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Перенацеливание на определенную версию платформы .NET Framework для проектов модульного теста C++/CLI.
 
