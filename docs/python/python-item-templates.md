@@ -1,6 +1,6 @@
 ---
 title: Шаблоны элементов для проектов Python
-description: Список ссылок на шаблоны элементов для проектов Python доступны при выборе пунктов "Добавить" > "Новый элемент" в Visual Studio.
+description: Список ссылок на шаблоны элементов для проектов Python доступны при выборе пунктов Добавить > Новый элемент в Visual Studio.
 ms.date: 04/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032680"
 ---
 # <a name="python-item-templates"></a>Шаблоны элементов Python
 
