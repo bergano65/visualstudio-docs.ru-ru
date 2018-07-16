@@ -1,28 +1,31 @@
 ---
 title: Поиск и фильтрация | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.author: tglee
+manager: douge
+ms.date: 06/27/2018
+ms.topic: conceptual
 description: Сведения о том, как администраторы могут искать отдельных подписчиков или группы на портале администратора.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e6d91ae6b7a2c77ab7a19dc9d689000fa866f17
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4dcdb5ce46bc0fbabd5b35199d0743a43a035c11
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031186"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37089728"
 ---
-# <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Поиск и фильтрация подписчиков в подписках Visual Studio
-Портал администрирования подписок Visual Studio позволяет найти определенное подмножество подписчиков на основе различных условий. Вы можете отфильтровать список подписчиков по имени, адресу электронной почты, уровню подписки и разных другим сведениям. 
+# <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Поиск и фильтрация подписчиков в подписках Visual Studio
 
-1.  Чтобы найти определенную группу подписчиков, щелкните элемент **Фильтр** в верхней части таблицы.
+Портал администрирования подписок Visual Studio позволяет найти определенное подмножество подписчиков на основе различных условий. Вы можете отфильтровать список подписчиков по имени, адресу электронной почты, уровню подписки и другим сведениям.
 
-    ![Фильтрация подписчиков](_img\edit-license\filter-list.png)
+1. Чтобы найти определенную группу подписчиков, нажмите **Фильтр**.
 
-2.  Отображается множество полей, которые можно использовать в качестве условия поиска. Выберите необходимые условия для поиска и нажмите кнопку **Фильтр**. Отображается список подписчиков, соответствующих заданным вами условиям.
-![Поиск подписчиков](_img\search-filter\search-filter-find.png)
+   ![Выбор фильтра для поиска списка подписчиков](media\filter-list.png)
 
+2. Введите условия поиска и снова нажмите **Фильтр**.
+
+   ![Используйте доступные поля для фильтрации данных о подписчиках](media\filter-subscribers.png)
+
+   Список подписчиков будет сопоставлен с выбранными условиями.

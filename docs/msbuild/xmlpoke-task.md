@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3295a5aee03badc52b980183e88f484e0d4bcc3a
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 31c76ba53e858d9eab41d6579950f47b16f8c9b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106951"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37056359"
 ---
 # <a name="xmlpoke-task"></a>Задача XmlPoke
 
@@ -35,7 +35,7 @@ ms.locfileid: "33106951"
   
 |Параметр|Описание:|
 |---------------|-----------------|
-|`Namespaces`|Необязательный параметр `String` .<br /><br /> Задает пространства имен для префиксов запроса XPath.|
+|`Namespaces`|Необязательный параметр `String` .<br /><br /> Задает пространства имен для префиксов запроса XPath. `Namespaces` — это фрагмент кода XML, состоящий из элементов `Namespace` с атрибутами `Prefix` и `Uri`. Атрибут `Prefix` указывает префикс для привязки к пространству имен, указанному в атрибуте `Uri`. Не используйте пустой `Prefix`.|
 |`Query`|Необязательный параметр `String` .<br /><br /> Указывает запрос XPath.|
 |`Value`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает значение, вставляемое в указанный путь.|
 |`XmlInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входные данные XML в виде пути к файлу.|
@@ -43,6 +43,43 @@ ms.locfileid: "33106951"
 ## <a name="remarks"></a>Примечания
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+
+Ниже приведен файл sample.xml для изменения:
+
+```
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" >
+<Identity Name="Sample.Product " Publisher="CN=1234" Version="1.0.0.0" />
+<mp:PhoneIdentity PhoneProductId="456" PhonePublisherId="0" />
+</Package>
+```
+
+В этом примере, если вы хотите изменить `/Package/mp:PhoneIdentity/PhonePublisherId`, используйте
+
+```
+<Project>
+  <PropertyGroup>
+    <Namespace>
+        <Namespace Prefix="dn" Uri="http://schemas.microsoft.com/appx/manifest/foundation/windows10" />
+        <Namespace Prefix="mp" Uri="http://schemas.microsoft.com/appx/2014/phone/manifest" />
+        <Namespace Prefix="uap" Uri="http://schemas.microsoft.com/appx/manifest/uap/windows10" />
+    </Namespace>
+</PropertyGroup>
+
+<Target Name="Poke">
+  <XmlPoke
+    XmlInputPath="Sample.xml"
+    Value="MyId"
+    Query="/dn:Package/mp:PhoneIdentity/@PhoneProductId"
+    Namespaces="$(Namespace)"/>
+</Target>
+</Project>
+```
+
+`dn` используется здесь в качестве искусственного префикса пространства имен для пространства имен по умолчанию.
 
 ## <a name="see-also"></a>См. также
 
