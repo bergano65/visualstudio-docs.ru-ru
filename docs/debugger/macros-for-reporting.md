@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476914"
 ---
 # <a name="macros-for-reporting"></a>Макросы для создания отчетов
 Можно использовать **_RPTn**, и **_RPTFn** макросы, определенные в CRTDBG. H, чтобы заменить использование `printf` для отладки. Эти макросы автоматически исчезают в окончательной версии построения при **_DEBUG** не определена, поэтому нет необходимости заключить их в **#ifdef**s.  

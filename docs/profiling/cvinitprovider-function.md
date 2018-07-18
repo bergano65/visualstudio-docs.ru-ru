@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e3b082c57e48d7c70fdda22c68c1a9d8980f71
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750107"
 ---
 # <a name="cvinitprovider-function"></a>Функция CvInitProvider
 Инициализирует поставщик маркеров. Должна быть вызвана до любой другой функции пакета SDK визуализатора параллелизма.  
@@ -43,7 +44,7 @@ HRESULT CvInitProvider(
  Значение S_OK, если поставщик успешно инициализирован, или код ошибки, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** cvmarkers.h  
+ **Заголовок:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

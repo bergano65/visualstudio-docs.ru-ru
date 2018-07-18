@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481269"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера
 В этом пошаговом руководстве демонстрируется использование инструментов диагностики графики Visual Studio для анализа вычислительного шейдера, который выдает неверные результаты.  

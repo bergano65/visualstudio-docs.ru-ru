@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865196"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 

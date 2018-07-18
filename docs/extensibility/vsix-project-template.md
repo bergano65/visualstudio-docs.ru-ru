@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142397"
 ---
 # <a name="vsix-project-template"></a>Шаблон проекта VSIX
 Использование шаблона проекта VSIX для упаковки одно или несколько расширений Visual Studio в проект VSIX и затем опубликовать пакет на [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайта.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140076"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Предоставляет контекст языковой службы с помощью API прежних версий
 Существует два варианта языковой службы предоставить контекст пользователя с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора: текст маркера контекста, задать либо все контекста пользователя. Здесь описаны различия между ними.  

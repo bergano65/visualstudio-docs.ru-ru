@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454320"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Ошибка. Запрашиваемый ресурс не найден
 Службами IIS возвращена общая ошибка, связанная с безопасностью.  

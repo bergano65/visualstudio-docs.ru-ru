@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475691"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Как: переключение на другой поток при отладке в Visual Studio
 При отладке многопоточных приложений, можно использовать один из нескольких методов для переключения из потока, который вы работали с на другой поток.

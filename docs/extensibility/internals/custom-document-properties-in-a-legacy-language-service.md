@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132499"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Настраиваемые свойства документа в службе языка прежних версий
 Свойства документа, которые могут отображаться в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** окна. Языки программирования обычно не имеют свойства, связанные с отдельными исходных файлов. Однако XML поддерживает свойства документа, которые влияют на кодирование, схемы и таблицы стилей.  

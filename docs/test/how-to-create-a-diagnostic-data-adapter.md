@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44d25ffee531c7b18240dcc65272d25bcb9e3402
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844746"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Практическое руководство. Создание адаптера диагностических данных
 
@@ -92,13 +93,13 @@ ms.lasthandoff: 04/26/2018
 
 5.  Добавьте <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> в класс адаптера диагностических данных, чтобы он определялся как адаптер диагностических данных, заменив параметры **Организация**, **Продукт** и **Версия** соответствующими сведениями об этом адаптере диагностических данных:
 
-    ```
+    ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
 6.  Добавьте в класс атрибут <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>, заменив параметры соответствующими сведениями об этом адаптере диагностических данных.
 
-    ```
+    ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 

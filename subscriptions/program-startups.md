@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863655"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Подписки Visual Studio для начинающих компаний
 Начинающие компании, вступившие в программу Microsoft for Startups, могут получить пять [ежемесячных облачных подписок Visual Studio Enterprise](https://www.visualstudio.com/vs/pricing/). Это те же подписки, которые предлагаются на коммерческой основе, без специальных ограничений. Каждая подписка должна быть назначена конечному пользователю (который является лицензированным пользователем), прежде чем пользователь сможет запустить Visual Studio и VSTS распознает его как подписчика Visual Studio Enterprise.

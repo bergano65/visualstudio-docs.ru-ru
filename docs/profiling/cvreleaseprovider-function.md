@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4620a4322fedb7fb6337c3f4fd7cb7e22b39df
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: f968ffaa4e11953fd3321861b884e6dda1f39a3c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750081"
 ---
 # <a name="cvreleaseprovider-function"></a>Функция CvReleaseProvider
 Освобождает поставщик маркеров. Освобождение поставщика маркеров не повлияет на ранее созданный набор маркеров данного поставщика. Наборы маркеров должны быть выпущены раздельно вызовом функции CvReleaseMarkerSeries. Сбой при освобождении поставщика маркеров приводит к утечке памяти.  
@@ -39,7 +40,7 @@ HRESULT CvReleaseProvider(
  Значение S_OK, если поставщик успешно освобожден, или код ошибки, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** cvmarkers.h  
+ **Заголовок:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112839"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Включает [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пользовательский Интерфейс для отображения текста внутри **сведения о транспорте** раздел **присоединиться к процессу** диалоговое окно.  

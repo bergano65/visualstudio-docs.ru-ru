@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465425"
 ---
 # <a name="baseclass"></a>BaseClass
 Каждый базовый класс для определяемого пользователем типа (UDT) символ определяется дочерний элемент с `SymTagBaseClass` тег. [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) свойство содержит символ для базовой определяемого пользователем ТИПА, а все свойства базового определяемого пользователем типа, доступны как часть BaseClass-символ.  

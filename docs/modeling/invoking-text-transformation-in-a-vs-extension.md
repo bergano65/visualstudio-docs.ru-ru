@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949492"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
 При создании расширения Visual Studio, такого как команда меню или [доменного языка](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), службой текстовых шаблонов можно использовать для преобразования текстовых шаблонов. Получите службу типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> и выполните приведение к типу <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

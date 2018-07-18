@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947434"
 ---
 # <a name="list-threads-command"></a>Команда List Threads
 Отображает список потоков в текущей программе.

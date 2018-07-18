@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562758"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
 Большинство приложений потребляют или производят данные. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет разнообразные методы чтения и записи данных как локально, так и удаленно.  

@@ -7,11 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: c9d997985d4e19b68a326b3b69e28875942b8bfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba5cad803a49b97d193d156e46c6235d7c5f8312
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303300"
 ---
 # <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio
 
@@ -29,7 +30,25 @@ ms.lasthandoff: 04/18/2018
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Обзор возможностей отладчика</h3>
+                        <h3>Начало работы с отладчиком</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_debug.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Отладка для начинающих</h3>
                     </div>
                 </div>
             </div>
@@ -47,7 +66,7 @@ ms.lasthandoff: 04/18/2018
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Начало работы с отладчиком</h3>
+                        <h3>Обучение отладке</h3>
                     </div>
                 </div>
             </div>

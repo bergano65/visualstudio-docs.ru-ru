@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136527"
 ---
 # <a name="name-element-visual-studio-templates"></a>Элемент Name (шаблоны Visual Studio)
 Задает имя шаблона, он отображается в **новый проект** или **Добавление нового элемента** диалоговое окно.  

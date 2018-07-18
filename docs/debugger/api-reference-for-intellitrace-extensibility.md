@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457466"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Справочник по API для расширения IntelliTrace
 Приведенные в этом разделе сведения помогут использовать интерфейсы API расширения IntelliTrace для чтения и декодирования ITRACE-файлов в вашем приложении.  

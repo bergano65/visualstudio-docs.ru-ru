@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139465"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Синтаксис, выделение цветом в редакторах
 Редакторы Visual Studio пакет SDK для среды, включая базового редактора, используйте службы языка для идентификации определенных синтаксических элементов и их отображения с цветами, заданного для представления данного документа.

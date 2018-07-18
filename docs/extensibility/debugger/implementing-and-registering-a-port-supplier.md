@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103179"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Реализация и регистрации поставщика порта
 Для отслеживания и указать порты, которые в свою очередь, управление процессами — роль поставщика порта. Во время порта должно быть создано поставщика порта создается с помощью CoCreate с идентификатором GUID поставщика порта (Диспетчер сеанса отладки [SDM] будет использовать поставщика порта выбранный пользователем или поставщика порта, указанный в системе проекта). Затем вызовет SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) для просмотра, могут быть добавлены все порты. Если порт может быть добавлен, путем вызова запрашивается новый порт [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) и передачи его [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий порт. `AddPort` Возвращает новый порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейса.  

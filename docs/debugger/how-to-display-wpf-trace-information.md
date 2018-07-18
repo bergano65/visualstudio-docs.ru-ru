@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476228"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Практическое руководство. Отображение данных трассировки WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] можно получать сведения о трассировке отладки от приложений WPF и отображать эти сведения в **вывода** окна. Чтобы отобразить сведения о трассировке отладки, необходимо включить трассировку WPF.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474552"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 Вы можете использовать функцию "Изменить и продолжить" в проектах Visual C++. В разделе [поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md) сведения об ограничениях, изменить и продолжить.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133213"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Контрольный список: Создание языковую службу прежних версий
 Следующий контрольный список перечислены основные шаги, необходимые для создания службы языка для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] базового редактора. Чтобы интегрировать в службы языка [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо создать средство оценки выражений отладки. Дополнительные сведения см. в разделе [написания выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) в [расширения отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

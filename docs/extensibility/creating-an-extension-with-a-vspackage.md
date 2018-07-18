@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109455"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Создание расширения с помощью пакетов VSPackage
 В этом пошаговом руководстве показано, как создать проект VSIX и добавить элемент проекта VSPackage. Мы будем использовать VSPackage для получения службы пользовательского интерфейса, чтобы вывести на экран окно сообщения.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135915"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и пакет SDK для Visual Studio поддерживает следующие службы. Некоторые пакеты предоставляют свои собственные службы, не перечисленных здесь — например, службы языка не имеют одной службы GUID. Чтобы найти идентификатор GUID языковой службы в реестре необходимо использовать имя языка.  

@@ -1,4 +1,5 @@
 # [Подписки Visual Studio](index.md)
+## [Новые возможности](whats-new-in-subscriptions.md)
 ## Возможности для подписчиков
 ### [Использование портала для подписчиков](using-the-subscriber-portal.md)
 #### [Активация розничной подписки](activate-store-subscriptions.md)
@@ -64,7 +65,7 @@
 #### [Подписки, срок действия которых истек](handle-expired-license.md)
 #### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
 ## Приобретение подписок на Visual Studio
-### [Сравнение вариантов подписок](https://www.visualstudio.com/vs/pricing)
+### [Сравнение вариантов подписок](https://visualstudio.microsoft.com/vs/pricing)
 ### Приобретение подписок на облачные службы
 #### [Обзор набора средств Visual Studio для Unity](vscloud-overview.md)
 #### [Часто задаваемые вопросы о выставлении счетов](vscloud-billing-faq.md)
@@ -75,8 +76,8 @@
 #### [Microsoft for Startups](program-startups.md)
 ## Ресурсы
 ### [Технический документ по лицензированию Visual Studio](http://aka.ms/vslicensing)
-### [Сравнение вариантов подписок и цен на них](https://www.visualstudio.com/vs/pricing)
-### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://www.visualstudio.com/vs/compare)
-### [Поддержка по администрированию и подпискам Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
+### [Сравнение вариантов подписок и цен на них](https://visualstudio.microsoft.com/vs/pricing)
+### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+### [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Условия корпоративного лицензирования](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Соглашение Microsoft Products and Services Agreement (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

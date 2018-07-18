@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952146"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Добавление команд и жестов в схемы зависимостей
 Можно определить команды контекстного меню и обработчики жестов на схемах зависимостей в Visual Studio. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension (VSIX) и предоставить их другим пользователям Visual Studio.

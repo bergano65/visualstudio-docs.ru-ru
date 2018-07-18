@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574644"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  

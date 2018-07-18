@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263458"
 ---
 # <a name="data-in-office-solutions"></a>Данные в решениях Office
   Многие решения Office позволяют пользователям извлекать или изменять данные. При создании решений Office с помощью среды Visual Studio существует несколько различных способов работы с данными.  

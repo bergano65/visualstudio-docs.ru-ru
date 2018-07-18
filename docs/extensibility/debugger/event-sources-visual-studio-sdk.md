@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099842"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Источники событий (SDK для Visual Studio)
 Существует два источника событий: модуль отладки (DE) и сеанс отладки manager (SDM). События, отправляемые из Развернутой иметь механизм отличное от NULL, тогда как события, отправляемые из SDM NULL engine.  

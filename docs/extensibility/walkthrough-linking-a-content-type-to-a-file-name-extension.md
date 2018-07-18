@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144899"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство: Связывание тип содержимого с расширением имени файла
 Можно определить собственные типы содержимого и связать его расширение имени файла с помощью редактора расширений Managed Extensibility Framework (MEF). В некоторых случаях расширение файла уже было определено с языковую службу; Тем не менее для использования с MEF по-прежнему необходимо связать его с типом содержимого.  

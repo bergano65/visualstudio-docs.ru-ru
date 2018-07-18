@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448419"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573145"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-Средство **VSPerfCmd.exe** используется для запуска и остановки сбора данных производительности. Для этого используется следующий синтаксис:  
+Средство *VSPerfCmd.exe* используется для запуска и остановки сбора данных производительности. Для этого используется следующий синтаксис:  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- В приведенных ниже таблицах описываются параметры средства **VSPerfCmd.exe**.  
+ В приведенных ниже таблицах описываются параметры средства *VSPerfCmd.exe*.  
   
 |Параметр|Описание:|  
 |------------|-----------------|  
@@ -44,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|Отображает список допустимых счетчиков ЦП для текущего компьютера.|  
 |[WinCounter](../profiling/wincounter.md) **:** *путь*|Задает событие счетчика производительности Windows, которое следует включить в данные меток профиля. Используйте только с **Start**.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Задает интервал времени (в миллисекундах) между событиями сбора данных счетчика производительности Windows. Используйте с только с **WinCounter**.|  
-|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Управляет сбором сведений о заданных событиях из трассировки событий Windows. Данные трассировки событий Windows собираются в ITL-файл, который отличается от файлов данных профилирования (VSP).|  
+|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Управляет сбором сведений о заданных событиях из трассировки событий Windows. Данные трассировки событий Windows собираются в *ITL*-файл, который отличается от файлов данных профилирования (*VSP*).|  
 |[Состояние](../profiling/status.md)|Отображает состояние профилировщика, сведения о профилируемых в настоящий момент процессах и учетные записи, имеющие разрешения на управление профилировщиком.|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|Закрывает файл данных профилирования и отключает профилировщик.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Возобновляет сбор данных после вызова **VSPerfCmdGlobalOff**.|  

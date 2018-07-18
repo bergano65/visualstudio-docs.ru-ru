@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923394"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Как: создать ассоциацию между LINQ to SQL classes (O/R-конструктор)
 Ассоциации между классами сущностей в [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] аналогичны отношениям между таблицами в базе данных. Ассоциации между классами сущностей с помощью можно создавать **Редактор ассоциаций** диалоговое окно.

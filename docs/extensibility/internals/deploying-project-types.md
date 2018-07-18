@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127980"
 ---
 # <a name="deploying-project-types"></a>Развертывание проекта типов
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Устанавливает агрегатор новый тип проекта (ProjectAggregator2.dll), а также пакет установщика Windows для распространения (ProjectAggregator2.msi). Новому средству необходимо использовать для типов управляемых проектов. ProjectAggregator2 работает способы ограничения в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта инвентаризации программного обеспечения, которые препятствуют правильной работе типы проектов управляемого кода. Следующие шаги описывают изменения VSPackage для использования новому средству.  

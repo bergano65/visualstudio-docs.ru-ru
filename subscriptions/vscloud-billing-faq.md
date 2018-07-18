@@ -14,6 +14,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957136"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio
 Сначала [сравните преимущества облачных подписок и цены](https://www.visualstudio.com/vs/pricing/), чтобы понять преимущества каждой подписки Visual Studio, сравнить облачные и стандартные подписки Visual Studio, изучить детали преимуществ для подписчиков и многое другое.

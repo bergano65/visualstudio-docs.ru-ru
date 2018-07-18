@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107950"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Создание базового проекта системы, часть 2
 В этой серии первого пошагового руководства [Создание базовой системы проектов, часть 1](../extensibility/creating-a-basic-project-system-part-1.md), показано, как создать базовый проект систему. В этом пошаговом руководстве построена в системе базовый проект шаблона Visual Studio, страницу свойств и другие функции. Перед началом этого первого пошагового руководства необходимо выполнить.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31084122"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Журнал изменений (инструменты Visual Studio для Unity, Mac)
 Журнал изменений в наборе средств Visual Studio для Unity

@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967238"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Работа со схемой определений доменных языков
 Схема [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] определения — это важный инструмент для определения доменного языка. Вы можете добавлять элементы в модель домена, определять отношения на схеме и изменять макет схемы, чтобы сделать ее более удобной для чтения.

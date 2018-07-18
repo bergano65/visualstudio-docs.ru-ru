@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950937"
 ---
 # <a name="properties-of-swimlanes"></a>Свойства дорожек
 Полосы задач можно добавить в диаграмму. Дорожки разделить схему на вертикальной или горизонтальной области. Можно определить других фигур, отображаемых в дорожки. Дополнительные сведения см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. в разделе [настройку и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).

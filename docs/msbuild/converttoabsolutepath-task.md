@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578813"
 ---
 # <a name="converttoabsolutepath-task"></a>Задача ConvertToAbsolutePath
 Преобразует относительный путь или ссылку в абсолютный путь.  

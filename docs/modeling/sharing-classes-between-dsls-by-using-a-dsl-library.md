@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949463"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Совместное использование классов в различных доменных языках с помощью библиотеки доменных языков
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] визуализации и моделирования SDK, можно создать неполное определение DSL, можно импортировать в другой DSL. Это позволяет выделить общие компоненты в аналогичные модели.

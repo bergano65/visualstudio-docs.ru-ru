@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148705"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Пошаговое руководство: Отображение лампочки предложения
 Лампочки являются значков, используемых в редакторе Visual Studio, развернуть, чтобы отобразить набор действий, например исправления для проблем, определяемый встроенных анализаторов или рефакторинга кода.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131666"
 ---
 # <a name="extending-properties"></a>Расширение свойств
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Свойства** окна браузера универсальных свойств для компонентов COM и COM + и поддерживает все [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] продуктов. **Свойства** окно работает с `ITypeInfo` введите сведения и метаданные COM +, чтобы вывести список свойств во время разработки для выбранного объекта в любое другое окно интегрированной среды разработки (IDE).  

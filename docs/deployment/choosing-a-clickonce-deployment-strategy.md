@@ -22,6 +22,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454731"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Выбор стратегии развертывания ClickOnce
 Существует три разные стратегии развертывания приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Выбираемая стратегия зависит главным образом от типа развертываемого приложения. Ниже перечисляются следующие три стратегии развертывания:  

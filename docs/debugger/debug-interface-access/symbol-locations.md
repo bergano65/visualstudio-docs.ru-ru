@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480271"
 ---
 # <a name="symbol-locations"></a>Местоположения символов
 Большинство символов иметь папку, определенный в файле образа. Указывается расположение символа со значением от [LocationType-перечисление](../../debugger/debug-interface-access/locationtype.md) перечисления. Символ могут поддерживать дополнительные свойства в зависимости от ее расположения.  

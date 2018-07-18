@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126088"
 ---
 # <a name="directory-status-code-enumerator"></a>Перечислитель код состояния каталога
 `SccDirStatus` Перечислитель содержит именованные константы, определяющие состояние каталога в системе управления версиями. Это перечисление используется методом [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Это впервые появилась в версии 1.2 API подключаемых модулей управления источника.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138360"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Условные атрибуты схемы VSCT XML
 Условные атрибуты могут быть применены к все списки и элементы. Логические операторы и выражения расширения символ вычислить значение true или false. Значение true, если связанный список или элемент включается в результат.  

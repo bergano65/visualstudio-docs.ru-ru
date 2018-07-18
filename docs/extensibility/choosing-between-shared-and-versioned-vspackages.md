@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104624"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Выбор между общих и с версией пакетов VSPackage
 Разные версии Visual Studio могут сосуществовать на одном компьютере. Пакеты VSPackage может поддерживать любое сочетание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версии.  

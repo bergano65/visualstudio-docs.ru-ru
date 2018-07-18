@@ -2,6 +2,10 @@
   href: ide/index.md
 - name: Обзор
   href: ide/visual-studio-ide.md
+  expanded: true
+  items:
+    - name: Дополнительные возможности
+      href: ide/advanced-feature-overview.md
 - name: Установка
   items:
     - name: Установка Visual Studio
@@ -151,8 +155,6 @@
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
             - name: Добавление и удаление элементов проекта
               href: ide/adding-and-removing-project-items.md
-            - name: Типы файлов проектов и решений
-              href: ide/reference/project-and-solution-file-types.md
             - name: Управление свойствами проектов и решений
               href: ide/managing-project-and-solution-properties.md
             - name: Управление ссылками в проекте
@@ -600,11 +602,6 @@
           href: ide/how-to-specify-build-events-csharp.md
         - name: Configuring Warnings in Visual Basic
           href: ide/configuring-warnings-in-visual-basic.md
-        - name: Отключение главного процесса
-          href: ide/how-to-disable-the-hosting-process.md
-          items:
-            - name: Главный процесс (vshost.exe)
-              href: ide/hosting-process-vshost-exe.md
         - name: Пошаговое руководство. Создание среды сборки на множестве компьютеров
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Отладка...
@@ -630,6 +627,8 @@
           href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Настройка макетов окон
           href: ide/customizing-window-layouts-in-visual-studio.md
+        - name: Настройка вложения файлов в обозревателе решений
+          href: ide/file-nesting-solution-explorer.md
         - name: Настройка начальной страницы
           href: ide/customizing-the-start-page-for-visual-studio.md
         - name: Поиск и использование расширений Visual Studio
@@ -645,17 +644,6 @@
           href: ide/optimize-visual-studio-startup-time.md
         - name: Советы и рекомендации
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Безопасность
-      href: ide/security-in-visual-studio.md
-      items:
-        - name: Обеспечение безопасности приложений
-          href: ide/securing-applications.md
-        - name: Обеспечение безопасности
-          href: ide/maintaining-security.md
-        - name: Разрешения пользователей
-          href: ide/user-permissions-and-visual-studio.md
-        - name: Библиография по вопросам безопасности
-          href: ide/security-bibliography.md
     - name: Управление специальными возможностями
       href: ide/reference/accessibility-features-of-visual-studio.md
       items:
@@ -860,6 +848,8 @@
               items:
                 - name: Диалоговое окно "Дополнительные параметры служб"
                   href: ide/reference/advanced-settings-for-services-dialog-box.md
+            - name: Страница "Параметры" в конструкторе проектов
+              href: ide/reference/settings-page-project-designer.md
             - name: Страница "Подписывание" в конструкторе проектов
               href: ide/reference/signing-page-project-designer.md
         - name: Страницы свойств (JavaScript)
@@ -997,6 +987,14 @@
           href: ide/reference/toggle-breakpoint-command.md
         - name: Команда Watch
           href: ide/reference/watch-command.md
+    - name: Безопасность
+      items:
+        - name: Разработка безопасных приложений
+          href: ide/securing-applications.md
+        - name: "Запуск Visual\_Studio от имени обычного пользователя или администратора"
+          href: ide/user-permissions-and-visual-studio.md
+        - name: "Windows\_Information\_Protection (WIP)"
+          href: ide/exempt-visual-studio-from-wip.md
     - name: Окно справки (Майкрософт)
       href: ide/microsoft-help-viewer.md
       items:
@@ -1043,18 +1041,23 @@
           href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default
         - name: График выпуска
           href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default
+        - name: "Стратегия развития Visual\_Studio"
+          href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default
         - name: Требования к системе
           href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default
         - name: Совместимость платформ
           href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default
         - name: Лицензирование
-          href: 'https://www.visualstudio.com/license-terms/'
+          href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Распространяемый код
           href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default
         - name: Жизненный цикл поддержки и обслуживание
           href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
     - name: Сообщение о проблеме с помощью Visual Studio
       href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+      items:
+        - name: Конфиденциальность данных сообщества разработчиков
+          href: ide/developer-community-privacy.md
     - name: Программа улучшения качества программного обеспечения
       href: ide/visual-studio-experience-improvement-program.md
       items:

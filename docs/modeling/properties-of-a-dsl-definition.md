@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949596"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Свойства определения доменного языка
 Определение свойств DslDefinition *доменного языка* определения свойств, таких как нумерация версий. DslDefinition свойства отображаются в **свойства** окна при нажатии кнопки пустую область на диаграмме *конструктора доменного языка*.

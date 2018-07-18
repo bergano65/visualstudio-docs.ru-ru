@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561559"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое руководство. Настройка поведения запроса о доверии ClickOnce
 Можно настроить запрос о доверии ClickOnce для элемента управления пользователи получают возможность установки приложения ClickOnce, таких как приложения Windows Forms, приложениях Windows Presentation Foundation, консольные приложения, браузера WPF приложений и решений Office. Настроить запрос о доверии при установке разделов реестра на компьютере для каждого конечного пользователя.  

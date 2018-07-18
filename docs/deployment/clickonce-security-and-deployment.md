@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562836"
 ---
 # <a name="clickonce-security-and-deployment"></a>Развертывание и безопасность технологии ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это технология развертывания, которая позволяет создавать самообновления приложений Windows, которые могут устанавливаться и работать при минимальном участии пользователя. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] обеспечивает полную поддержку публикации и обновления приложений, развернутых с использованием технологии ClickOnce, если вы разработали проекты в Visual Basic и Visual C#. Сведения о развертывании приложений Visual C++ см. в разделе [развертывания ClickOnce для приложений Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

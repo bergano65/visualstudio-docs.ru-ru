@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921066"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Прямой доступ к базе данных с помощью адаптера таблицы
 В дополнение к `InsertCommand`, `UpdateCommand`, и `DeleteCommand`, адаптеры таблиц создаются с помощью методов, которые могут быть запущены напрямую с базой данных. Эти методы (`TableAdapter.Insert`, `TableAdapter.Update`, и `TableAdapter.Delete`) может быть вызван для работы с данными непосредственно в базе данных.

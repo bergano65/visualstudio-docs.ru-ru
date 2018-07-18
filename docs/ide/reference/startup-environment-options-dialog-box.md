@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942494"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Начальная страница, папка «Среда», диалоговое окно «Параметры»
 Эта страница служит для настройки начальной страницы Visual Studio или для задания другого действия по умолчанию, выполняющегося при запуске Visual Studio. Дополнительные сведения см. в разделе [Настройка начальной страницы](../../ide/customizing-the-start-page-for-visual-studio.md).

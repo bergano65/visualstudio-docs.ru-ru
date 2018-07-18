@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473141"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Изменить и продолжить - диалоговое окно
 (Только машинный код) Оно появляется при изменении кода во время отладки и **изменить и продолжить** распознает, что он может применять изменения кода. Дополнительные сведения см. в разделе [изменить и продолжить](../debugger/edit-and-continue.md).  

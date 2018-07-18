@@ -1,11 +1,11 @@
 ---
-title: "Интерфейс IActiveScriptParseProcedureOld | Документы Microsoft"
-ms.custom: 
+title: Интерфейс IActiveScriptParseProcedureOld | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptParseProcedureOld
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptParseProcedureOld interface
 ms.assetid: d94b391e-4c24-46da-a01f-2c134ca4f041
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724424"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>Интерфейс IActiveScriptParseProcedureOld
 Позволяет исходный текст кода для процедуры для добавления в скрипт. Интерпретируемые языки сценариев, которые не имеют независимые среду разработки, таких как VBScript, это предоставляет альтернативный механизм (отличного от `IActiveScriptParse` или `IPersist*`) для добавления скрипта процедуры пространства имен.  

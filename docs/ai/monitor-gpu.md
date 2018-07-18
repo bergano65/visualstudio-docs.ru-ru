@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709106"
 ---
 # <a name="monitoring-gpu-utilization"></a>Мониторинг использования GPU
 Для мониторинга использования GPU на удаленных компьютерах Linux сделайте следующее:

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566203"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Команды&gt; элемент (загрузчик)
 `Commands` Элемент реализует тесты, которые описываются элементами, расположенными под `InstallChecks` элемент и объявляет пакет, который [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загрузчик должен установить в случае сбоя проверки.  

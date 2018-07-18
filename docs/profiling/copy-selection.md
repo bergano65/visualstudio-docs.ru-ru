@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddeb5800854d0461fbf96c895f64216f01843f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690917"
 ---
 # <a name="copy-selection"></a>Копирование выбранного
 Чтобы скопировать весь стек вызовов на вкладке отчета, щелкните **Копировать**. Затем стек вызовов можно вставить в любую программу, поддерживающую это действие.  

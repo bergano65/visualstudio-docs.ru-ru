@@ -1,12 +1,13 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
-title: "Написание скриптов | Документация Майкрософт"
+title: Написание скриптов | Документация Майкрософт
 ms.openlocfilehash: 468b734d6381b9c40b1c9a4b6153d6ebafe38eb9
 ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/19/2018
+ms.locfileid: "29989217"
 ---
 # <a name="scripting-technologies"></a>Технологии создания скриптов
 

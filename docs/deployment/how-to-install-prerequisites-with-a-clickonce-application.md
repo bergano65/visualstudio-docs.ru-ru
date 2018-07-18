@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559339"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Установка необходимых компонентов при помощи ClickOnce-приложения
 Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений требуется установку правильную версию платформы .NET Framework на компьютере до их выполнения, так как многие приложения имеют другие необходимые компоненты. При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, можно выбрать набор необходимых компонентов для упаковки вместе с приложением. Во время установки проверка будет выполняться для каждого необходимого компонента определить, если он уже существует. Если не будет устанавливаться до установки [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  

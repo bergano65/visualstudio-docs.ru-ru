@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751427"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 -   Возможность увидеть всю требуемую информацию в одном окне.
 
 ## <a name="using-test-explorer"></a>Использование обозревателя тестов
- ![Обозреватель модульных тестов с кнопкой "Запустить все"](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Обозреватель модульных тестов с кнопкой "Запустить все"](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Запуск модульных тестов с помощью обозревателя тестов
 
@@ -42,9 +43,9 @@ ms.lasthandoff: 04/26/2018
 
          Выберите **Проект модульного теста**.
 
-    2.  Напишите каждый модульный тест в виде метода. Добавьте каждый тестовый метод к атрибуту `[TestMethod]`.
+    2.  Напишите каждый модульный тест в виде метода. Добавьте каждый тестовый метод к атрибуту `[TestMethod]` .
 
-2.  Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
+2.  Если отдельные тесты не имеют зависимостей, предотвращающих запуск этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
 
 3.  В строке меню выберите **Тест**, **Выполнение модульных тестов**, **Все тесты**.
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 
     -   В диалоговом окне **Создать проект** выберите **Visual C#**, **Тест** , а затем выберите **Проект модульного теста**.
 
-         ![Новые проекты кода и тестирования](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Новые проекты кода и тестов](../test/media/unittestexplorerwalk1.png)
 
 3.  Напишите основной тестовый метод. Проверьте результат, полученный для определенных входных данных:
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  Выберите элементы в разделе **Трассировка стека** , чтобы увидеть, где тест не пройден.
 
- ![Обозреватель модульных тестов с непройденным тестом.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Обозреватель модульных тестов с непройденным тестом.](../test/media/unittestexplorerwalkthrough2.png)
 
  На данном этапе создан тест и заглушка, которые будут изменены таким образом, что тест будет успешно пройден.
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
      Тест проходит.
 
-     ![Обозреватель модульных тестов с пройденным тестом.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Обозреватель модульных тестов с пройденным тестом.](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Добавьте тесты, чтобы расширить диапазон входных данных
 
@@ -288,4 +289,4 @@ ms.lasthandoff: 04/26/2018
 
      Все тесты по-прежнему завершаются успехом.
 
-     ![Обозреватель модульных тестов с тремя пройденными тестами.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Обозреватель модульных тестов с тремя пройденными тестами.](../test/media/unittestexplorerwalkthrough4.png)

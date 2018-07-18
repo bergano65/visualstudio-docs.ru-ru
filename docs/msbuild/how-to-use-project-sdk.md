@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569892"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Информация об использовании пакетов SDK проекта MSBuild
 В версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 представлена новая концепция "пакет SDK проекта", которая упрощает применение пакетов разработки программного обеспечения, требующих импортировать свойства и целевые объекты.

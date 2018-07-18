@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105269"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Добавление большинство недавно используемых список в подменю
 Это пошаговое руководство построено на демонстрации в [Добавление подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md)и показано, как добавить в подменю динамический список. Динамический список формирует основу для создания списка наиболее недавно использованных файлов (MRU).  

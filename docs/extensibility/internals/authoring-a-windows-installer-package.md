@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127941"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Создание пакета установщика Windows
 Установщик Windows модели дисках с данными. Вместо того чтобы писать процедурных скрипта для копирования файлов и запись реестра, например, можно создавать строки и столбцы в таблицах базы данных, которые содержат данные файлов и реестра.  

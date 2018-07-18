@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129926"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Иерархии в Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) отображает проект как *иерархии*. В Интегрированной среде разработки иерархия представляет собой дерева узлов, где каждый узел имеет набор связанных свойств. Объект *проекта иерархии* — это контейнер, который содержит элементы проекта, связей элементов и связанные свойства элементов и команды.  

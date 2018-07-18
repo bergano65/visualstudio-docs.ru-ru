@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129606"
 ---
 # <a name="services-provided-source-control-vspackage"></a>Службы, предоставляемые (VSPackage управления источника)
 Службы являются основным механизмом, через который общие функциональные возможности среди пакетов VSPackage, а также между Visual Studio интегрированной среды разработки (IDE) и его установленных пакетов VSPackage. Подробное описание службы и их важности в Интегрированной среде разработки Visual Studio см. в разделе[использование и предоставление службы](../../extensibility/using-and-providing-services.md).  

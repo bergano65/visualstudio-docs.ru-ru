@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137606"
 ---
 # <a name="vscodewindowmanager-object"></a>Объект VSCodeWindowManager
 Языковая служба реализует диспетчера окон кода и отвечает за управление оформлений (например, панель раскрывающегося списка). Дополнительные сведения см. в разделе [Настройка окна кода с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129687"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Как: использовать встроенные цветных элементов
 Прежде чем использовать встроенные цветные элементы, необходимо сначала сигнал для интегрированной среды разработки (IDE) не предоставляется собственные пользовательские цветных элементов, которые, в этом случае <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> объектов. Это можно сделать, задав запись реестра для языковой службы.  

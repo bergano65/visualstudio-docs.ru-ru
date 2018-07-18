@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133714"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Как: использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 Visual Studio позволяет загружать пакеты VSPackage, когда некоторые хорошо известные <xref:Microsoft.VisualStudio.Shell.UIContext>активируются s. Эти контексты пользовательского интерфейса не являются мельчайшие Контролируемая, оставив расширение авторы нет выбора Однако выбирает доступный контекст пользовательского интерфейса, который активирует перед точкой действительно требуется VSPackage для загрузки. Список известных контекстов пользовательского интерфейса см. в разделе <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  

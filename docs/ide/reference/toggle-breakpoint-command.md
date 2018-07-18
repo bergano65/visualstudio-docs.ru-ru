@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946810"
 ---
 # <a name="toggle-breakpoint-command"></a>Команда Toggle Breakpoint
 Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.

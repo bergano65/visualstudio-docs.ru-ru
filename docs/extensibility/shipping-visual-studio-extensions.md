@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142762"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 После завершения разработки модуля, можно установить его на других компьютерах, использовать его совместно с друзьями и сотрудниками или опубликовать его в Visual Studio Marketplace. В этом разделе рассматривается, все, что необходимо сделать, чтобы опубликовать и поддерживать расширение: работа с VSIX-файлы, публикации, локализации и обновления.  

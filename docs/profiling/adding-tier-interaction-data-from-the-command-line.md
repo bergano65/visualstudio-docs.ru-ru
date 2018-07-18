@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262911"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548665"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Добавление данных о взаимодействии уровней из командной строки
 
@@ -156,4 +156,4 @@ ms.locfileid: "34262911"
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Дополнительные сведения о программе VSPerfASPNETCmd см. в статье [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd).
+Дополнительные сведения о команде VSPerfASPNETCmd см. в статье [Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

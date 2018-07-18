@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129226"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Дополнение добавить новый элемент-диалоговое окно
 Подтип проекта может предоставить полный новый каталог элементов для **Добавление нового элемента** диалоговое окно, зарегистрировав **добавить элемент** шаблоны по `Projects` подраздел реестра.  

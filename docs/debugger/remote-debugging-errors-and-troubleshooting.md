@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474367"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Ошибки удаленной отладки и их устранение
 Во время удаленной отладки возможны следующие ошибки:  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065557"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Обзор набора средств Visual Studio для Unity
 В этом разделе мы рассматриваем возможности набора средств Visual Studio для Unity и их применение для повышения производительности с помощью Unity.

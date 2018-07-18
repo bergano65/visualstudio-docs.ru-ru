@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264551"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Как: Добавление элементов управления Windows Forms в документы Office
   Вы можете добавить элементы управления Windows Forms в документы Microsoft Office Word и Microsoft Office Excel во время разработки в проектах уровня документа. Во время выполнения можно добавить элементы управления в настройках уровня документа и надстроек VSTO. Например, можно добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> на лист, чтобы пользователи могли выбрать из списка параметров.  

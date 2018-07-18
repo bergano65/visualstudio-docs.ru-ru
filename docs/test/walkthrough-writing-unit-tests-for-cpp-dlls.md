@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751836"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Практическое руководство. Написание модульных тестов для библиотек DLL на C++
 
@@ -45,11 +46,11 @@ ms.lasthandoff: 04/26/2018
 
      В этом пошаговом руководстве тестовый проект называется `NativeRooterTest`.
 
-     ![Создание проекта модульного теста на C++](../test/media/utecpp01.png "UteCpp01")
+     ![Создание проекта модульного теста C++](../test/media/utecpp01.png)
 
 2.  В новом проекте изучите файл **unittest1.cpp**.
 
-     ![Проект теста с TEST&#95;CLASS и TEST&#95;METHOD](../test/media/utecpp2.png "UteCpp2")
+     ![Проект теста с TEST&#95;CLASS и TEST&#95;METHOD](../test/media/utecpp2.png)
 
      Обратите внимание на указанные ниже моменты.
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
          Тест отображается в списке **Пройденные тесты**.
 
-         ![Обозреватель модульных тестов с одним пройденным тестом](../test/media/utecpp04.png "UteCpp04")
+         ![Обозреватель модульных тестов с одним пройденным тестом](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> Создание проекта библиотеки DLL
 
@@ -90,17 +91,17 @@ ms.lasthandoff: 04/26/2018
 
      В этом пошаговом руководстве проект называется `RootFinder`.
 
-     ![Создание проекта Win32 на C++](../test/media/utecpp05.png "UteCpp05")
+     ![Создание проекта Win32 C++](../test/media/utecpp05.png)
 
 2.  В мастере приложения Win32 выберите параметры **DLL** и **Экспортировать символы**.
 
      Параметр **Экспортировать символы** создает удобный макрос, который можно использовать для объявления экспортированных методов.
 
-     ![Мастер проектов C++ с выбранными параметрами DLL и "Экспортировать символы"](../test/media/utecpp06.png "UteCpp06")
+     ![Мастер проектов C++, настроенный для DLL и символов экспорта](../test/media/utecpp06.png)
 
 3.  Объявите экспортированную функцию в основном H-файле.
 
-     ![Новый проект кода DLL и H-файл с макросами API](../test/media/utecpp07.png "UteCpp07")
+     ![Новый проект кода DLL и H-файл с макросами API](../test/media/utecpp07.png)
 
      Оператор объявления `__declspec(dllexport)` делает открытые и защищенные члены класса видимыми вне библиотеки DLL. Для получения дополнительной информации см. [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
@@ -120,13 +121,13 @@ ms.lasthandoff: 04/26/2018
 
     1.  Откройте свойства тестового проекта и выберите **Общие свойства**, **.NET Framework и ссылки**.
 
-         ![Свойства проекта C++ | .NET Framework и ссылки](../test/media/utecpp08.png "UteCpp08")
+         ![Свойства проекта C++ | .NET Framework и ссылки](../test/media/utecpp08.png)
 
     2.  Выберите команду **Добавить новую ссылку**.
 
          В диалоговом окне **Добавление ссылки** выберите проект библиотеки DLL и нажмите **Добавить**.
 
-         ![Свойства проекта C++ | Добавить новую ссылку](../test/media/utecpp09.png "UteCpp09")
+         ![Свойства проекта C++ | Добавление новой ссылки](../test/media/utecpp09.png)
 
 2.  В основном CPP-файле модульного теста включите H-файл кода библиотеки DLL.
 
@@ -160,7 +161,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  В разделе "Обозреватель тестов" выберите **Запустить все**.
 
-     ![Обозреватель модульных тестов — базовый тест пройден](../test/media/utecpp10.png "UteCpp10")
+     ![Обозреватель модульных тестов — базовый тест пройден](../test/media/utecpp10.png)
 
  Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.
 
@@ -189,7 +190,7 @@ ms.lasthandoff: 04/26/2018
 
      Новый тест завершится сбоем.
 
-     ![Сбой теста RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Сбой теста RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Убедитесь в том, что каждый тест завершается сбоем, сразу после того, как вы написали его. Это поможет избежать распространенной ошибки, заключающейся в написании теста, который никогда не завершается сбоем.
@@ -217,7 +218,7 @@ ms.lasthandoff: 04/26/2018
 
      Оба теста будут пройдены успешно.
 
-     ![Обозреватель модульных тестов — тест RangeTest пройден](../test/media/utecpp12.png "UteCpp12")
+     ![Обозреватель модульных тестов — тест RangeTest пройден](../test/media/utecpp12.png)
 
     > [!TIP]
     > Разрабатывайте код, добавляя тесты по одному. После каждой итерации проверяйте, все ли тесты завершаются успешно.
@@ -263,7 +264,7 @@ ms.lasthandoff: 04/26/2018
 
      Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.
 
-     ![Сбой тестов NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Сбой тестов NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.
 
@@ -291,10 +292,10 @@ ms.lasthandoff: 04/26/2018
 
 6.  Теперь все тесты проходят успешно.
 
-     ![Все тесты пройдены](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Все тесты пройдены](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
+> Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
 
 
 ##  <a name="refactor"></a> Рефакторинг кода без изменения тестов

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131151"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Как: доступ к встроенных шрифтов и цветов
 Среда разработки Visual Studio (IDE) имеется схема шрифтов и цветов, связанный с окном редактора. Получить доступ к этой схеме через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса.
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 
 1.  Создайте произвольный идентификатор GUID.
 
-     Этот идентификатор GUID, используемый для уникальной идентификации категории**.** В этой категории используются повторно спецификация цвета и шрифты по умолчанию для интегрированной среды разработки.
+     Этот идентификатор GUID, используемый для уникальной идентификации категории **.** В этой категории используются повторно спецификация цвета и шрифты по умолчанию для интегрированной среды разработки.
 
     > [!NOTE]
     >  При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакеты VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
 
 1.  Создайте специальный тип записи реестра категории в следующем расположении:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\*\<категории >*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >* \FontAndColors\\*\<категории >*]
 
      *\<Категория >* нелокализованное имя категории.
 

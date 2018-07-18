@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561666"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Отладка ClickOnce-приложений, использующих System.Deployment.Application
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания можно настроить способ обновления приложения. Тем не менее, если вам нужно использовать и настроить дополнительные [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] возможности развертывания, необходимо будет получить доступ к объектной модели развертывания, предоставляемой объектом <xref:System.Deployment.Application>. Можно использовать <xref:System.Deployment.Application> API-интерфейсы для сложных задач, таких как:  

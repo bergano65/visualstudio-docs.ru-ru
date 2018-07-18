@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751693"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Использование платформы модульного тестирования Майкрософт для C++ в Visual Studio
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 2.  В обозревателе тестов нажмите **Запустить все** или выберите тесты, которые следует запустить. Щелкните тест правой кнопкой мыши, чтобы получить доступ к другим командам, включая запуск в режиме отладки с включенными точками останова.
 3. В **окне вывода** выберите в раскрывающемся списке пункт **Тесты**, чтобы просмотреть сообщения, полученные от класса `Logger`:
 
-  ![Окно вывода C++ с сообщениями теста](media/cpp-test-output-window.png "Окно вывода")
+  ![Окно вывода C++ с сообщениями теста](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Определение признаков для группирования
 Для методов теста можно определять признаки, с помощью которых можно классифицировать и группировать тесты в **обозревателе тестов**. Чтобы определить признак, используйте макрос `TEST_METHOD_ATTRIBUTE` . Например, чтобы определить признак с именем `TEST_MY_TRAIT`, выполните следующее.

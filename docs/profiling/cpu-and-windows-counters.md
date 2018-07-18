@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748742"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/19/2018
 
 Переносимые события образуют группу счетчиков ЦП, которые не зависят от определенного процессора. Все остальные счетчики ЦП называются платформозависимыми событиями; их поддержка зависит от конкретной платформы.
 
- И переносимые, и платформозависимые события определяются в XML-файлах, в которых содержатся конкретные значения, относящиеся к этим счетчикам. Таких файлов, относящихся к разным ЦП, достаточно много, так как, например, данные для ЦП Intel и AMD различаются. Профилировщик [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] использует эти сведения для предоставления пользователю оптимальных счетчиков, переносимых или платформозависимых, для измерения производительности.
+ И переносимые, и платформозависимые события определяются в *XML*-файлах, в которых содержатся конкретные значения, относящиеся к этим счетчикам. Таких файлов, относящихся к разным ЦП, достаточно много, так как, например, данные для ЦП Intel и AMD различаются. Профилировщик [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] использует эти сведения для предоставления пользователю оптимальных счетчиков, переносимых или платформозависимых, для измерения производительности.
 
 ### <a name="portable-events"></a>Переносимые события
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/19/2018
 |Промахи чтения кэша L2|Указывает количество промахов при чтении кэша второго уровня.|
 |Ссылки чтения кэша L2|Указывает количество ссылок чтения кэша второго уровня. Сюда включаются промахи при загрузке, а также промахи и попадания RFO.|
 
-## <a name="viewing-available-counters"></a>Просмотр доступных счетчиков
+## <a name="view-available-counters"></a>Просмотр доступных счетчиков
 
 Вы можете указать доступные счетчики ЦП в интегрированной среде разработки Visual Studio в окне командной строки.
 
@@ -126,9 +127,9 @@ ms.lasthandoff: 04/19/2018
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**,
 
-     где **\<Visual Studio Performance Tools Directory>** — путь к каталогу Performance Tools установки Visual Studio (обычно
+     где *\<Visual Studio Performance Tools Directory>* — путь к каталогу Performance Tools установки Visual Studio (обычно
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools).
+     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>См. также
 

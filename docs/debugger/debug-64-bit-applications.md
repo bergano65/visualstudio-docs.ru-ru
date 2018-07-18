@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461442"
 ---
 # <a name="debug-64-bit-applications"></a>Отладка 64-разрядных приложений
 Существует возможность отладки 64-разрядного приложения, которое выполняется на локальном или удаленном компьютере.  

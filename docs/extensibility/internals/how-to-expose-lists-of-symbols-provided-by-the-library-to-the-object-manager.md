@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135372"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Как: предоставлять список символов, предоставленный библиотекой диспетчер объектов
 Средства просмотра символ **представление классов**, **обозревателя объектов**, **обозревателя вызовов** и **результаты поиска символа**, передачи запросов для новых данных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объектов. Диспетчер объектов находит соответствующие библиотеки и запрашивает новые списки символов. Библиотеки ответить предоставлением запрошенных данных для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейса. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчера объектов вызывает эти методы в <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс для получения данных и использует его для заполнения и обновления представления средства обзора символа.  

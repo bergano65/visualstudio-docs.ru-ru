@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127481"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Как: создание Atom веб-канала для закрытой коллекции
 Можно создать канал Atom (RSS) в расположение в интрасети, содержащий расширения и добавить веб-канал для **расширения и обновления** качестве частной коллекции. Дополнительные сведения см. в разделе [Закрытые коллекции](../extensibility/private-galleries.md).  

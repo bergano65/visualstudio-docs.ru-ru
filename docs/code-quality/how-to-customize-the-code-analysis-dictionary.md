@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924308"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
 Анализ кода используется встроенный словарь для проверки идентификаторов в код на наличие ошибок в других соглашениям об именовании, орфографии и грамматические регистр [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] рекомендации. Можно создать пользовательский словарь XML-файл для добавления, удаления или изменения термины, сокращения и акронимы встроенных словарь.

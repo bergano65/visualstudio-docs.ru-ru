@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33956683"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Практическое руководство. Создание наследования между типами в конструкторе классов
 

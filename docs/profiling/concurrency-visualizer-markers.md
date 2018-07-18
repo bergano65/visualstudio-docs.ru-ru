@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692305"
 ---
 # <a name="concurrency-visualizer-markers"></a>Маркеры визуализатора параллелизма
 В визуализаторе параллелизма маркеры — это значки, представляющие события в приложении.  Как правило, приложение создает эти события для обозначения этапов или вхождений в приложении.  События могут быть созданы приложением или библиотеками и средами выполнения, используемыми приложением.  

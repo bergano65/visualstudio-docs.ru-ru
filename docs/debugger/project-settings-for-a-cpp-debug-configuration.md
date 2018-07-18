@@ -118,6 +118,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479249"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Параметры проекта для конфигурации отладки C++
 Можно изменить параметры проекта для конфигурации отладки C или Visual C++ в **страницы свойств** диалоговое окно, как описано в [как: задать отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком **страницы свойств** диалоговое окно.  

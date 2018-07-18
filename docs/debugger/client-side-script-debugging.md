@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464814"
 ---
 # <a name="client-side-script-debugging"></a>Отладка клиентского скрипта
 Отладчик Visual Studio предоставляет всеобъемлющую среду отладки для обнаружения и исправления ошибок в скриптах на стороне клиента на страницах ASP.NET.  

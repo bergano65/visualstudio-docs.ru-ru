@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709835"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Сведения о недавних заданиях и их производительности
 После отправки заданий вы можете просмотреть их список, где указаны их состояние, длительность и многое другое.

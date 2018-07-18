@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140018"
 ---
 # <a name="loading-vspackages"></a>Загрузка пакетов VSPackage
 Пакеты VSPackage, загружаются в Visual Studio только в том случае, если требуется их функциональность. Например пакет VSPackage загружается при Visual Studio использует фабрики проектов или служба, которая реализует VSPackage. Эта возможность называется отложенной загрузки, который используется, по возможности для повышения производительности.  

@@ -1,13 +1,13 @@
 ---
-title: "Длине массива должно быть назначено конечное положительное число | Документы Microsoft"
-ms.custom: 
+title: Длине массива должно быть назначено конечное положительное число | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5030
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633444"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Длине массива должно быть назначено конечное положительное число
 При задании **длина** свойства существующего **массива** объекта, указанного длина массива, который не является положительным числом или нулем. Эта ошибка возникает при попытке присвоить значение для **длина** свойство `Array` объекта, который является отрицательным или не является числом (`NaN`). Обратите внимание, что [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] автоматически преобразует дробных чисел в целые.  

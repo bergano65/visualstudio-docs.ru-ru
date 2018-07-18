@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481948"
 ---
 # <a name="how-to-stop-code-changes"></a>Практическое руководство. Остановка внесения изменений в код
 Пока режим "Изменить и продолжить" находится в процессе внесения изменений в код, можно остановить эту операцию.  

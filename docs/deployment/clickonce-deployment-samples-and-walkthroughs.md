@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563379"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по развертыванию ClickOnce
 Этот раздел содержит образцы приложений, пример кода и пошаговые руководства, которые иллюстрируют синтаксис, структуру и приемы, используемые для развертывания Windows Forms, WPF и консольных приложений.  

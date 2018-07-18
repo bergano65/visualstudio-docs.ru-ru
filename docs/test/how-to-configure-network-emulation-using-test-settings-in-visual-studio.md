@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31972424"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка эмуляции сети с использованием параметров тестирования в Visual Studio
 

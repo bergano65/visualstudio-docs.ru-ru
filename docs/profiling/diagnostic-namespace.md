@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3e6909bcb7299f4fd6d725334c26d2b59e0edb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764674"
 ---
 # <a name="diagnostic-namespace"></a>Пространство имен diagnostic
 Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.  
@@ -45,7 +46,7 @@ namespace diagnostic;
 |[Перечисление marker_importance](../profiling/marker-importance-enumeration.md)|Представляет уровень важности маркера визуализатора параллелизма.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** cvmarkersobj.h  
+ **Заголовок:** *cvmarkersobj.h*  
   
  **Пространство имен** : Concurrency  
   

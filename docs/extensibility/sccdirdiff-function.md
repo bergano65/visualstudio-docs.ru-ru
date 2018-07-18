@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138026"
 ---
 # <a name="sccdirdiff-function"></a>Функция SccDirDiff
 Эта функция отображает различия между текущий локальный каталог на диске клиента и соответствующий проект в системе управления версиями.  

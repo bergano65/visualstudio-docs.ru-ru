@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104687"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 Содержит сведения, необходимые для реализации точки останова, включая идентификатор GUID поставщика, ограничения и трассировки.  

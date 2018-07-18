@@ -20,12 +20,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105801"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Доступ к хранимой шрифта и цветов
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) сохраняет измененные параметры для шрифтов и цветов в реестре. Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс для доступа к этим параметрам.
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Чтобы инициировать сохранения состояния шрифтов и цветов
- Шрифт и цвет сведения по категориям в следующий раздел реестра: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\  *\<CategoryGUID >*], где  *\<CategoryGUID >* является GUID категории.
+ Шрифт и цвет сведения по категориям в следующий раздел реестра: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], где  *\<CategoryGUID >* является GUID категории.
 
  Таким образом Чтобы инициировать постоянного хранения, пакет VSPackage должен:
 

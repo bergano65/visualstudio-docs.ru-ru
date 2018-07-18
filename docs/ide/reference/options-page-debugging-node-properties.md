@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951782"
 ---
 # <a name="options-page-debugging-node-properties"></a>Страница "Параметры", свойства узла отладки
 В следующих таблицах описываются некоторые из страниц (или коллекций свойств), связанных с категорией **отладки** — `DTE.Properties("Debugging", <Property Page>)` — диалогового окна **Параметры**.

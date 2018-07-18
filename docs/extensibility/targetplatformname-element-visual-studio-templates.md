@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144022"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName - элемент (шаблоны Visual Studio)
 Задает платформу, для которой предназначен шаблон проекта. Этот элемент используется для указания на то, что шаблон проекта служит для создания приложений [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .  

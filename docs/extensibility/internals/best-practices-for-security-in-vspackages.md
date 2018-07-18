@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127307"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Рекомендации по безопасности в пакетах VSPackage
 Чтобы установить [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] на компьютере, должна быть запущена в контексте с учетными данными администратора. Базовая единица безопасность и развертывание [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] приложение [пакетов VSPackage](../../extensibility/internals/vspackages.md). Пакет VSPackage должен быть зарегистрирован с помощью [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], что также требует учетные данные администратора.  

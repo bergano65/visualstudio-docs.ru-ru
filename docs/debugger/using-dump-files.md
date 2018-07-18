@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481831"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Использование файлов дампа с помощью Visual Studio
 Файлы дампа с кучами или без куч; Создание файла дампа; Открытие файла дампа; Поиск двоичных файлов, в PDB-файл и исходного файла для файла дампа.

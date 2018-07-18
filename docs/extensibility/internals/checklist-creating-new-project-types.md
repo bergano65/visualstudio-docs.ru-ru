@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131993"
 ---
 # <a name="checklist-creating-new-project-types"></a>Контрольный список: Создание новых типов проектов
 Необходимо выполнить несколько задач, чтобы создать новый тип проекта. Следующий контрольный список содержится руководство для этих задач.  

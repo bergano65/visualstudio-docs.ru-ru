@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953620"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Рекомендации по написанию текстовых шаблонов T4
 Эти общие рекомендации могут быть полезны при создании программного кода или других ресурсов приложения в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Они не являются фиксированными правила.

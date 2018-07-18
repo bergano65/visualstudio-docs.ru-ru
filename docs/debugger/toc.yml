@@ -826,3 +826,5 @@
   items:
     - name: Новые возможности отладчика в Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Отладка для начинающих
+      href: debugging-absolute-beginners.md

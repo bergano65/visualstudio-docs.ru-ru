@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750302"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Руководство (шаг 1). Начало работы с веб-платформой Django в Visual Studio
 
@@ -33,11 +34,13 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Visual Studio 2017 со следующими параметрами:
+- Visual Studio 2017 в системе Windows со следующими параметрами:
   - Рабочая нагрузка **Разработка на Python** (вкладка **Рабочая нагрузка** в установщике). Инструкции см. в статье [Установка поддержки Python в Visual Studio под управлением Windows](installing-python-support-in-visual-studio.md).
   - **Git для Windows** и **расширение GitHub для Visual Studio** на вкладке **Отдельные компоненты** в разделе **Средства кода**.
 
 Шаблоны проектов Django также входят в состав всех ранних версий инструментов Python для Visual Studio, хотя сведения могут отличаться от рассматриваемых в этом руководстве (особенно это касается более ранних версий платформы Django).
+
+Разработка Python в настоящее время не поддерживается в Visual Studio для Mac. В системах Mac и Linux используйте [расширение Python в Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### <a name="visual-studio-projects-and-django-projects"></a>Проекты Visual Studio и проекты Django
 
@@ -116,7 +119,7 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Шаг 1–3. Создание виртуального окружения и его исключение из системы управления версиями
 
-Теперь, когда вы настроили систему управления версиями для своего проекта, можно создать виртуальное окружение для необходимых пакетов Django. Затем с помощью **Team Explorer** вы сможете исключить папку окружения из системы управления версиями.
+Теперь, когда вы настроили систему управления версиями для своего проекта, можно создать виртуальное окружение, которое содержит необходимые пакеты Django для проекта. Затем с помощью **Team Explorer** вы сможете исключить папку окружения из системы управления версиями.
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши элемент **Окружения Python** и выберите **Добавление виртуального окружения**.
 

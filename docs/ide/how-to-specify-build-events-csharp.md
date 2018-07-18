@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 500426eb7fda2c35f74b899154d9153a91d5020b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746264"
 ---
 # <a name="how-to-specify-build-events-c"></a>Практическое руководство. Указание событий сборки (C#)
 
@@ -148,7 +149,7 @@ ms.lasthandoff: 05/07/2018
 
 1.  Создайте приложение Windows для проекта, который должен быть опубликован. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
 
-2.  В диалоговом окне **Новый проект** разверните узел **Visual C#**, выберите **Классический рабочий стол Windows**, а затем шаблон **Приложение Windows Forms**. Задайте для проекта имя `CSWinApp`.
+2.  В диалоговом окне **Новый проект** разверните узел **Visual C#**, выберите **Рабочий стол Windows**, а затем шаблон **Приложение Windows Forms**. Задайте для проекта имя `CSWinApp`.
 
 3.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните пункт **Свойства**.
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948812"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Страницу **IntelliSense** можно открыть, выбрав в меню **Сервис**пункт **Параметры** , а затем раскрыв узлы **Текстовый редактор**, **JavaScript**, **IntelliSense.**

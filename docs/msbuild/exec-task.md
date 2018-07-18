@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569691"
 ---
 # <a name="exec-task"></a>Задача Exec
 Запускает заданную программу или команду с использованием заданных аргументов.  

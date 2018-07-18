@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473849"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. Открытие представления сообщений из окна поиска
 Может оказаться удобнее использовать **Поиск окна** диалогового окна для выбора конечного окна, а затем откройте представления сообщений из этого окна.  

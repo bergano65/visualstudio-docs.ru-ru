@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922474"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: члены должны различаться не только типом возвращаемого значения
 |||

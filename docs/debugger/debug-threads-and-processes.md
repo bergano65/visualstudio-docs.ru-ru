@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477372"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Средства отладки потоков и процессов в Visual Studio
 *Потоки* и *процессов* — это связанные понятия в вычислительной технике. Оба представляют из себя последовательность инструкций, которые должны выполняться в определенном порядке. Инструкции в отдельных потоках или процессах, однако, могут выполняться параллельно.  

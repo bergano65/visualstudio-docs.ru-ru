@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128576"
 ---
 # <a name="automation-support-for-options-pages"></a>Поддержка модели автоматизации для страницы параметров
 Пакеты VSPackage могут предоставить пользовательские **параметры** диалоговых окон для **средства** (страницы параметров средств) в меню [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и их можно сделать доступными в модели автоматизации.  

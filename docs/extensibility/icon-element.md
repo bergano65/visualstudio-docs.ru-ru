@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126881"
 ---
 # <a name="icon-element"></a>Значок элемента
 Значок тега атрибут guid — это guid, определенный растрового изображения.  Атрибут id выбирает слот ленты растрового изображения. Этот элемент является необязательным.  Если этот элемент отсутствует значение **guidOfficeIcon:msotcidNoIcon** будет содержится в разрешении.  

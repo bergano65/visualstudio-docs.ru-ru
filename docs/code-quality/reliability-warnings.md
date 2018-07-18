@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916752"
 ---
 # <a name="reliability-warnings"></a>предупреждения надежности
 Предупреждения надежности поддерживают надежность библиотек и приложений, например правильного использования памяти и потоков.

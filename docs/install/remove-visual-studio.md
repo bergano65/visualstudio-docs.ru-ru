@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a143502c875acabca7b36bdd3070e5a441b842bd
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b32fc71efadbf319f3d713c3eaf4d86f382646a5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34476837"
 ---
 # <a name="remove-visual-studio"></a>Удаление Visual Studio
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/20/2018
 
 1. Закройте установщик Visual Studio.
 2. Откройте командную строку от имени учетной записи администратора. Чтобы открыть командную строку с правами администратора, выполните указанные ниже действия.
-   * В меню **Пуск** выберите пункт **Выполнить** (Пуск + R).
+   * Откройте меню **Пуск**.
    * Наберите команду **cmd**.
    * Щелкните правой кнопкой мыши пункт **Командная строка**и выберите команду **Запуск от имени администратора**.
 3. Введите полный путь к служебной программе `InstallCleanup.exe` и передайте в командной строке требуемые параметры. По умолчанию эта программа расположена по следующему адресу:

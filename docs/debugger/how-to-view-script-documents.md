@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474733"
 ---
 # <a name="how-to-view-script-documents"></a>Практическое руководство. Просмотр документов скриптов
 В более ранних версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] клиентские файлы скриптов, созданные из серверных скриптов, появлялись в окне обозревателя скриптов. Окно обозревателя скриптов часто было скрыто, так что доступность клиентского скрипта была не всегда очевидна.  

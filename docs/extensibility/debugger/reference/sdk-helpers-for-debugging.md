@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135926"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Вспомогательные функции пакета SDK для отладки
 Эти функции и объявления являются глобальные вспомогательные функции для реализации отладчики, вычислители выражений и поставщики символ в C++.  
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*[исключение]*|Имя для исключения: например, **_com_error** или **секционный**. Эти имена также используются для идентификации конкретного исключения для пользователя.|  
   
 ## <a name="requirements"></a>Требования  
- Эти файлы расположены в [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] каталог установки пакета SDK (по умолчанию *[диск]*\Program Files\Microsoft SDK для Visual Studio 2010\\).  
+ Эти файлы расположены в [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] каталог установки пакета SDK (по умолчанию *[диск]* \Program Files\Microsoft SDK для Visual Studio 2010\\).  
   
  Заголовок: includes\dbgmetric.h  
   

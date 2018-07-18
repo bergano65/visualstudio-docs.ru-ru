@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747512"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Краткое руководство. Проекты и решения
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/26/2018
 
    Откроется диалоговое окно **Добавить новый проект** .
 
-1. В левой области разверните узел **Visual C#** и выберите пункт **Классический рабочий стол Windows**. После этого в средней области выберите **Пустой проект (.NET Framework)**. Назовите проект "QuickDate" и нажмите кнопку **ОК**.
+1. В левой области разверните узел **Visual C#** и выберите пункт **Рабочий стол Windows**. После этого в средней области выберите **Пустой проект (.NET Framework)**. Назовите проект "QuickDate" и нажмите кнопку **ОК**.
 
    Проект с именем "QuickDate" появляется под решением в **обозревателе решений**. Сейчас он содержит один файл с именем *App.config*.
 

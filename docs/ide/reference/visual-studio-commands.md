@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951795"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.

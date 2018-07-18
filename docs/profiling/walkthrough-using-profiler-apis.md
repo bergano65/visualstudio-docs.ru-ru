@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448926"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572989"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
 В этом пошаговом руководстве для демонстрации возможностей интерфейсов API Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] используется приложение на C#. Интерфейсы API профилировщика используются для ограничения объема данных, собираемых во время профилирования с инструментированием.  
@@ -31,9 +31,9 @@ ms.locfileid: "34448926"
   
  Профилировщик Visual Studio позволяет ограничить объем собираемых данных. В этом пошаговом руководстве приведен пример ограничения сбора данных с помощью интерфейсов API профилировщика. Профилировщик Visual Studio предоставляет интерфейс API для управления сбором данных из приложения.  
   
- Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле VSPerf.dll. Файл заголовка VSPerf.h и библиотека импорта VSPerf.lib расположены в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools.  
+ Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
- Для управляемого кода интерфейсы API находятся в файле Microsoft.VisualStudio.Profiler.dll. Эта библиотека DLL расположена в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Profiler>.  
+ Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL расположена в каталоге *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  В этом пошаговом руководстве предполагается, что используемая среда разработки настроена для отладки и выборки. В следующих разделах представлены общие сведения о предварительных требованиях:  
@@ -59,7 +59,7 @@ DataCollection.CurrentId);
 1.  Создайте проект C# в Visual Studio или используйте сборку из командной строки в зависимости от ваших предпочтений.  
   
     > [!NOTE]
-    >  При сборке должна использоваться библиотека Microsoft.VisualStudio.Profiler.dll, расположенная в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools.  
+    >  При сборке должна использоваться библиотека *Microsoft.VisualStudio.Profiler.dll*, расположенная в каталоге *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
 2.  Скопируйте и вставьте в проект следующий код:  
   
@@ -158,7 +158,7 @@ DataCollection.CurrentId);
   
 8.  Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**  
   
-     В текущем каталоге создается CSV-файл, содержащий результирующие данные производительности.  
+     В текущем каталоге создается *CSV*-файл, содержащий результирующие данные производительности.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Profiler>   

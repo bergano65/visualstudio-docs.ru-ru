@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949427"
 ---
 # <a name="defining-shapes-and-connectors"></a>Определение фигур и соединителей
 Существует несколько основных типов фигур, которые можно использовать для отображения информации на схеме доменного языка (DSL).

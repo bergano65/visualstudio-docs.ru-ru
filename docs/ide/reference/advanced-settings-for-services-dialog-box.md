@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946602"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Диалоговое окно "Дополнительные параметры служб"
 Службы клиентских приложений предоставляют упрощенный доступ к службам входа, ролей и профилей [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] из приложений Windows Forms и Windows Presentation Foundation (WPF). Вы можете использовать страницу **Службы** **конструктора проектов**, чтобы настраивать службы клиентских приложений. Дополнительные сведения о странице **Службы** см. в разделе [Страница "Службы" в конструкторе проектов](../../ide/reference/services-page-project-designer.md).

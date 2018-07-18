@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 251dac9f457e1103173de01f0a9522c8199a9571
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5e86cd1318d4b0db35ce6fa0e0abd925100fe34
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548441"
 ---
-# <a name="collecting-tier-interaction-data"></a>Сбор данных взаимодействия уровней
+# <a name="collect-tier-interaction-data"></a>Сбор данных о взаимодействии уровней
 
 Профилирование уровневого взаимодействия позволяет получить дополнительные сведения о времени выполнения функций многоуровневых приложений, взаимодействующих с базой данных посредством служб ADO.NET. Данные собираются только для синхронных вызовов функций.
 
@@ -48,4 +49,4 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>См. также
 
-[Представление "Взаимодействия уровня"](../profiling/tier-interactions-view.md)
+[Представление "Взаимодействие между уровнями"](../profiling/tier-interactions-view.md)

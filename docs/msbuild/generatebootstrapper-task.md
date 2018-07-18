@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573802"
 ---
 # <a name="generatebootstrapper-task"></a>Задача GenerateBootstrapper
 Задача обеспечивает автоматическое обнаружение, скачивание и установку приложения и необходимых для него компонентов. Она служит единым установщиком, объединяющим отдельные установщики для всех компонентов, образующих приложение.  

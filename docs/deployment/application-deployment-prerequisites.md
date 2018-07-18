@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565696"
 ---
 # <a name="application-deployment-prerequisites"></a>Предварительные условия для развертывания приложения
 Чтобы обеспечить успешную установку и запуск приложения, необходимо, в первую очередь, убедиться, что компоненты, от которых зависит приложение, уже установлены на целевом компьютере. Например, большинство приложений, которые создаются при помощи [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], имеют зависимость от [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], поэтому перед установкой приложения на целевом компьютере должна быть установлена правильная версия среды CLR.  

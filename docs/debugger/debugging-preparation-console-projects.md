@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472933"
 ---
 # <a name="debugging-preparation-console-projects"></a>Подготовка к отладке: консольные проекты
 Подготовка к отладке консольного проекта аналогична подготовке к отладке проекта Windows, с некоторыми дополнительными соображениями. Дополнительные сведения см. в разделе [приложения Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), и [Подготовка к отладке: приложения Windows Forms (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Из-за схожести всех консольных приложений в этом разделе описываются следующие типы проектов:  

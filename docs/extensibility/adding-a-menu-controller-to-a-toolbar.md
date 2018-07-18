@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104635"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Контроллер меню добавляется на панель инструментов
 Это пошаговое руководство построено [Добавление панели инструментов в окне инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) Пошаговое руководство и показано, как добавить контроллер меню в панели инструментов окна инструментов. Описанные здесь действия также могут применяться к панели инструментов, которая создается в [Добавление панели инструментов](../extensibility/adding-a-toolbar.md) Пошаговое руководство.  

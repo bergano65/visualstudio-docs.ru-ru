@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562550"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Практическое руководство. Управление обновлениями для ClickOnce-приложения
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут проверять обновления автоматически или программным способом. Как разработчик имеют большую гибкость при указании времени и как проверки обновлений, обязательности установки обновлений и когда приложение должно проверять наличие обновлений.  

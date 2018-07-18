@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925980"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF
 Объект *службы ссылку* позволяет проекту использовать одну или несколько [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Используйте **добавить ссылку на службу** диалогового окна для поиска [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в текущем решении, локально, в локальной сети или в Интернете.

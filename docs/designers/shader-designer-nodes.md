@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926448"
 ---
 # <a name="shader-designer-nodes"></a>Узлы конструктора шейдеров
 Статьи в этом разделе документации содержат информацию о различных узлах конструктора шейдеров, которые можно использовать для создания графических эффектов.

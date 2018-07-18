@@ -10,6 +10,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31625078"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Пошаговое руководство по расширению Visual Studio для Mac
 

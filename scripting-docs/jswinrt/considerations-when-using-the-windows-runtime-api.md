@@ -1,18 +1,18 @@
 ---
-title: "Рекомендации по использованию API среды выполнения Windows | Документы Майкрософт"
-ms.custom: 
+title: Рекомендации по использованию API среды выполнения Windows | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime API
 ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571474"
 ---
 # <a name="considerations-when-using-the-windows-runtime-api"></a>Рекомендации по использованию API среды выполнения Windows
 Практически все элементы API среды выполнения Windows можно использовать в JavaScript. Однако при этом необходимо учитывать ряд аспектов их представления.  

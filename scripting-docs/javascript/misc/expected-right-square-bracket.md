@@ -1,13 +1,13 @@
 ---
-title: "Ожидается &#39;] &#39; | Документы Microsoft"
-ms.custom: 
+title: Ожидается &#39;] &#39; | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1007
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632754"
 ---
 # <a name="expected-3939"></a>Ожидается &#39;] &#39;
 Ссылка на элемент массива, но не содержит закрывающую квадратную скобку. Любое выражение, которое ссылается на элемент массива должен включать как открывающих и закрывающих скобок.  

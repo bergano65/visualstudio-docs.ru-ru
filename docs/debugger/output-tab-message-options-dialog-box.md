@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475409"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Вкладка "Вывод" диалогового окна "Параметры сообщения"
 Используйте **вывода** вкладку, чтобы указать, какие данные из каждого сообщения в список в [представления сообщений](../debugger/messages-view.md). Для отображения [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), выберите **сообщений журнала** из **Spy** меню.  

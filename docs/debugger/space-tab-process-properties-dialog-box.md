@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476085"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Вкладка "Пространство" диалогового окна "Свойства процесса"
 Используйте **пространства** вкладку для просмотра адресном пространстве процесса. Для отображения [диалоговое окно "Свойства процесса"](../debugger/process-properties-dialog-box.md), перемещение фокуса к [представление процессов](../debugger/processes-view.md) окна. Выберите любой узел процесса в дереве, а затем выберите **свойства** из **представление** меню.  

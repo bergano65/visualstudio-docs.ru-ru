@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953379"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Настройка и расширение доменного языка
 Visual Studio моделирования и визуализации SDK (VMSDK) предоставляет несколько уровней, в которых можно определить средств моделирования:

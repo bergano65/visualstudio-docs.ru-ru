@@ -1,14 +1,14 @@
 ---
-title: "Работа с модулем Edge и модулями предыдущих версий в API JsRT | Документы Майкрософт"
-ms.custom: 
+title: Работа с модулем Edge и модулями предыдущих версий в API JsRT | Документы Майкрософт
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569604"
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Работа с модулем Edge и модулями предыдущих версий в API JsRT.
 Начиная с Windows 10, одним из изменений, внесенных в Chakra (обработчик JavaScript), которое соответствует стратегии браузера Windows 10 по поддержке нового механизма визуализации Edge, является поддержка двух разных моделей Chakra:  

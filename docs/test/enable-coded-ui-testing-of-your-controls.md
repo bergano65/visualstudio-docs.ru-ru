@@ -9,32 +9,33 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751758"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Включение закодированных тестов пользовательского интерфейса для элементов управления
 
 Реализуйте поддержку платформы закодированных тестов пользовательского интерфейса, чтобы повысить эффективность тестирования элементов управления. Вы можете последовательно добавлять повышение уровней поддержки. Начать можно с поддержки проверки записи, воспроизведения и свойств. После этого можно включить построитель закодированных тестов пользовательского интерфейса, чтобы распознать настраиваемые свойства элемента управления. Предоставьте настраиваемые классы для доступа к этим свойствам из сгенерированного кода. Вы также можете помочь построителю закодированных тестов пользовательского интерфейса захватывать действия способом, который в большей степени соответствует цели записываемого действия.
 
-![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;Full](../test/media/cuit_full.png)
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Поддержка записи, воспроизведения и проверки свойства путем реализации специальных возможностей
 
 Построитель закодированных тестов пользовательского интерфейса собирает сведения об элементах управления, которые он обнаруживает во время записи, а затем создает код для повторения этого сеанса. Если элемент управления не поддерживает специальные возможности, построитель закодированных тестов пользовательского интерфейса захватывает действия (например, щелчки мышью) с помощью координат экрана. Созданный код выполняет действия в тех же экранных координатах при воспроизведении теста. Если во время воспроизведения теста элемент управления отображается в другом месте на экране, созданный код не сможет выполнить это действие на элементе управления. Если специальные возможности не реализованы, при воспроизведении теста в другой конфигурации, в другой среде или в пользовательском интерфейсе с измененным макетом могут возникать ошибки.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
  При реализации специальных возможностей построитель закодированных тестов пользовательского интерфейса использует их для того, чтобы получить сведения об элементе управления во время записи теста. Затем, при выполнении теста, созданный код повторит эти события для элемента управления, даже если он находится где-либо еще в интерфейсе пользователя. Авторы теста могут также создавать утверждения благодаря использованию основных свойств элемента управления.
 
- ![CUIT&#95;Record](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Поддержка записи, воспроизведения, проверки свойств и навигации для элемента управления Windows Forms
  Реализуйте специальные возможности для элемента управления согласно описанной ниже процедуре. Подробные пояснения см. в разделе <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1.  Реализуйте производный от <xref:System.Windows.Forms.Control.ControlAccessibleObject> класс и переопределите свойство <xref:System.Windows.Forms.Control.AccessibilityObject%2A> для возврата объекта класса.
 
@@ -74,11 +75,11 @@ ms.lasthandoff: 04/26/2018
 
 После реализации базовой поддержки проверки записи, воспроизведения и свойств вы можете сделать пользовательские свойства элемента управления доступными закодированным тестам пользовательского интерфейса путем реализации подключаемого модуля <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Например, в следующей процедуре создается поставщик свойства, позволяющий закодированным тестам пользовательского интерфейса получать доступ к свойству состояния дочерних элементов управления CurveLegend элемента управления диаграммы:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Поддержка проверки пользовательского свойства
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;Props](../test/media/cuit_props.png)
 
 1. Переопределите свойство <xref:System.Windows.Forms.AccessibleObject.Description%2A> объекта специальных возможностей кривой условных обозначений, чтобы передавать в строке описания форматируемые значения свойств. Для разделения значений используйте точки с запятыми (;).
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Добавление специализированного класса для доступа к элементу управления
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. Реализуйте класс, производный от <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl>, и добавьте тип элемента управления к коллекции свойств поиска в конструкторе.
 
@@ -162,7 +163,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-support-intent-aware-actions"></a>Поддержка действий, учитывающих намерение
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;Actions](../test/media/cuit_actions.png)
 
 1. Реализуйте класс фильтра действий, который является производным от <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, переопределив свойства <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> и <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.
 

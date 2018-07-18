@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944678"
 ---
 # <a name="code-analysis-project-designer"></a>"Анализ кода", конструктор проекта
 Содержит средство анализа кода, которое вы можете запустить для своего кода. Это средство предоставляет сведения об управляемых сборках, например о нарушении правил программирования и разработки, изложенных в руководствах по разработке Microsoft .NET Framework.

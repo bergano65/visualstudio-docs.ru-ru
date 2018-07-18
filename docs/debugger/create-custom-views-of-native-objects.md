@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927169"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Создание настраиваемых представлений собственных объектов в отладчике Visual Studio
 Платформа Visual Studio Natvis позволяет настраивать то, как Visual Studio отображает собственные типы в окнах переменных отладчика (например, **Контрольные значения** окне **локальные** окна и в  **Подсказки данных**.

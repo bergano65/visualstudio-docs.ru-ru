@@ -1,14 +1,14 @@
 ---
-title: "Перечисление PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS | Документы Microsoft"
-ms.custom: 
+title: Перечисление PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1a41b642-c9a9-4d83-b943-d59b232eebf6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734014"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>Перечисление PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS
 Флаги, которые представляют ли объект кучи указывает в отношении объекта — это метод доступа get или Set. Используется в [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) метод PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS значения, заданные в `enumFlags` параметра.  

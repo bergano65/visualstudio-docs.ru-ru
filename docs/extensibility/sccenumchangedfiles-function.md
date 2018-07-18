@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137135"
 ---
 # <a name="sccenumchangedfiles-function"></a>Функция SccEnumChangedFiles
 Получив список локальных файлов, эта функция определяет, какие файлы отличаются от соответствующих версий в базе данных системы управления исходного кода.  

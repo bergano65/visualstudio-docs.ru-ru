@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915573"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: не выполняйте лишних приведений
 |||

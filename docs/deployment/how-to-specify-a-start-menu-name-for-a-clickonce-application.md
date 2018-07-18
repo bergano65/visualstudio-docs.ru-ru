@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558871"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Практическое руководство. Задание имени в меню "Пуск" для приложения ClickOnce
 Когда [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение устанавливается для документации и в автономном режиме, будет добавлена запись для **запустить** меню и **Установка и удаление программ** списка. По умолчанию, отображаемое имя является именем сборки приложения, но отображаемое имя можно изменить, задав **название продукта** в **параметры публикации** диалоговое окно.  

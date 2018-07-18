@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458909"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Вкладка "Класс" диалогового окна "Свойства окна"
 Используйте **класса** вкладку для отображения сведений о классе выбранного окна. Для отображения [диалоговое окно "Свойства"](../debugger/window-properties-dialog-box.md), перемещение фокуса к [представление окон](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.  

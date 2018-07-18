@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3618c33c1d5dca9c676177cdce362b14b7f1858
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745582"
 ---
 # <a name="how-to-model-3d-terrain"></a>Практическое руководство. Моделирование трехмерного ландшафта
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/26/2018
 
 В итоге модель должна выглядеть так:
 
-![Трехмерная сцена, показывающая модель поверхности](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Трехмерная сцена, показывающая модель поверхности](../designers/media/digit-terrain-model.png)
 
 Перед началом убедитесь, что отображаются окно **Свойства** и **Панель элементов**.
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 Модель ландшафта завершена. Ниже показана окончательная версия модели с примененным к ней затенением по методу Фонга:
 
-![Трехмерная сцена, показывающая модель поверхности](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Трехмерная сцена, показывающая модель поверхности](../designers/media/digit-terrain-model.png)
 
 Эту модель ландшафта можно использовать для демонстрации эффекта шейдера градиента, описанного в разделе [Практическое руководство. Создание основанного на геометрии шейдера градиента](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

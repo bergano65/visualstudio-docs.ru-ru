@@ -1,13 +1,13 @@
 ---
-title: "Циклическая ссылка в аргументе значения не поддерживается | Документы Microsoft"
-ms.custom: 
+title: Циклическая ссылка в аргументе значения не поддерживается | Документы Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5034
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 5d06f0fa-86f5-49d1-8d50-af1759990f43
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633144"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Циклическая ссылка в аргументе значения не поддерживается
 Предпринята попытка вызвать `JSON.stringify` со значением, которое является недопустимым. `value` Аргументов, массив или объект, содержит циклическую ссылку.  

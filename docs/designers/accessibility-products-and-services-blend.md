@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923909"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Продукты и службы, поддерживающие специальные возможности (Blend)
 Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В приведенных ниже разделах содержатся сведения о возможностях, продуктах и службах, облегчающих работу с Microsoft Windows для людей с ограниченными возможностями.

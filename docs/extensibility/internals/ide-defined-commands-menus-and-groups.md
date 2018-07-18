@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129393"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Команды, определенные в интегрированной среде разработки, меню и групп
 Меню, команд и группах команд уже определены для использования [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки. Эти команды также доступны для использования при расширении [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 -   ShellCmdPlace.vsct  
   
- Эти файлы расположены в  *\<путь установки Visual Studio SDK >*\VisualStudioIntegration\Common\Inc\\. Эти файлы предоставляют определения и идентификаторы GUID меню и групп, которые можно использовать в в файле конфигурации (.vsct) таблицы команд вашего VSPackage как контейнеры для меню, группы и команды.  
+ Эти файлы расположены в  *\<путь установки Visual Studio SDK >* \VisualStudioIntegration\Common\Inc\\. Эти файлы предоставляют определения и идентификаторы GUID меню и групп, которые можно использовать в в файле конфигурации (.vsct) таблицы команд вашего VSPackage как контейнеры для меню, группы и команды.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Идентификаторы GUID и идентификаторы меню Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

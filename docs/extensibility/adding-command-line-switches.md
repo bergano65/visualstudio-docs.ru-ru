@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098422"
 ---
 # <a name="adding-command-line-switches"></a>Добавление параметров командной строки
 Можно добавить параметры командной строки, применимые к файлу пакета VSPackage, при выполнении devenv.exe. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени параметра и его свойств. В этом примере для подкласс пакет VSPackage с именем добавляется параметр MySwitch **AddCommandSwitchPackage** без аргументов и с VSPackage, загружаются автоматически.  

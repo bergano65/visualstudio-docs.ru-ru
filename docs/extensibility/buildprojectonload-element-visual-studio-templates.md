@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097826"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload - элемент (шаблоны Visual Studio)
 Создает только новые проекты можно создавать и добавлять их в решение. Всего решения не создается.  

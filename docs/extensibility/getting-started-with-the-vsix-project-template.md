@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129197"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Приступая к работе с использованием шаблона проекта VSIX
 Шаблон проекта VSIX можно использовать для создания расширения или пакета существующего расширения для развертывания. Шаблон проекта VSIX содержит версии Visual Basic и Visual C# и устанавливается как часть пакет SDK для Visual Studio.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
     2.  В меню **Проект** выберите команду **Экспорт шаблона**. Выполните шаги мастера.  
   
-         ZIP-файл создается в %USERPROFILE%\My Documents\Visual Studio  *\<версии >*шаблоны экспортированы \My\\.  
+         ZIP-файл создается в %USERPROFILE%\My Documents\Visual Studio  *\<версии >* шаблоны экспортированы \My\\.  
   
 2.  Создайте пустой проект VSIX.  
   

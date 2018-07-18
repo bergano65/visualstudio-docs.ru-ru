@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133041"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Регистрация и выбора (VSPackage управления источника)
 Системы управления версиями, VSPackage должен быть зарегистрирован в предоставлении доступа к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Если зарегистрировано более одного элемента управления источника пакета VSPackage, пользователь может выбрать, какие VSPackage для загрузки в нужное время. В разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md) Дополнительные сведения о пакеты VSPackage и как их регистрации.  

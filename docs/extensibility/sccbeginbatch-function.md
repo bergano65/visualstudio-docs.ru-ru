@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138240"
 ---
 # <a name="sccbeginbatch-function"></a>Функция SccBeginBatch
 Эта функция служит началом последовательности пакетных операций системы управления версиями. [SccEndBatch](../extensibility/sccendbatch-function.md) будет вызываться до конца пакета. Эти пакеты не могут быть вложенными.  

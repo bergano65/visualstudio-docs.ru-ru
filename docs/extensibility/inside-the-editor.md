@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265779"
 ---
 # <a name="inside-the-editor"></a>В редакторе
 Редактор состоит из нескольких разных подсистем, которые предназначены для сохранения редакторе отдельные модели текста из текстового представления и пользовательский интерфейс.  

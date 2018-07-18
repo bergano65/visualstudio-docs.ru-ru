@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559079"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Практическое руководство. Проверка обновлений для приложения программным способом с помощью функций API развертывания технологии ClickOnce
 ClickOnce предоставляет два способа обновления приложения после его развертывания. Во-первых можно настроить развертывание технологии ClickOnce для автоматической проверки обновлений через определенные промежутки времени. Во-вторых, можно написать код, использующий <xref:System.Deployment.Application.ApplicationDeployment> класса, чтобы проверить наличие обновлений на основе события, такого как запрос пользователя.  

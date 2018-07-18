@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100183"
 ---
 # <a name="buttontext-element"></a>Элемент ButtonText
 Это поле позволяет указать текст, отображаемый в разных меню. По умолчанию `ButtonText` элемент отображается в контроллеры меню. `ButtonText` Элемент становится значением по умолчанию, если другие текстовые поля остаются пустыми. `ButtonText` Элемент не может быть пустым, даже если указаны другие текстовые поля.  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c10695eacdf680d247be8ef95ae14c3208ae92af
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691591"
 ---
 # <a name="cores-view-legend"></a>Легенда представления "Ядра"
 В легенде представления "Ядра" каждый поток обозначается с помощью цвета и имени. Она включает в себя столбцы, которые показывают количество переключений контекста между ядрами и процент переключений контекста между ядрами. Строки в легенде сортируются по количеству переключений контекста между ядрами по убыванию.  

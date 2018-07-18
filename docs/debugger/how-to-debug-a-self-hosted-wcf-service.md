@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479946"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Практическое руководство. Отладка резидентной службы WCF
 Объект *резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Легкий путь отладки резидентной WCF — Настройка [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска клиента и сервера при выборе **начать отладку** на **отладки** меню.  

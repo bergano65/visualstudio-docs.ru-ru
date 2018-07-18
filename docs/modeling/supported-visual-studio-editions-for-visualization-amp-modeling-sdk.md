@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948198"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Поддерживаемые выпуски Visual Studio для визуализации &amp; пакет SDK для моделирования
 Ниже приведены списки выпуски Visual Studio, которые поддерживаются в [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] в средах разработки и развертывания. Дополнительные сведения об этих выпусках см. в разделе Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Центр разработчиков](http://go.microsoft.com/fwlink/?LinkId=75628).

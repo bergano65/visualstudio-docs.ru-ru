@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129739"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Сохранение состояния и выполнения таблицы Document
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, проекты, полностью отвечает за управление сохраняемости их элементов проекта, которые они выполняют с помощью службы, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Документы являются основными единицами организации сохраняемости в среде Visual Studio. Проекты координировать открытие, сохранение и переименование документов с запущенной таблице документов (RDT), ресурс, который отслеживает состояние всех открытых документов.  

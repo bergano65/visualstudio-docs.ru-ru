@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466931"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Перечисляет различные элементы данных кадров, содержащихся в источнике данных.  

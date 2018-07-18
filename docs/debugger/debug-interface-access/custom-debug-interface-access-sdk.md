@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458457"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (SDK для доступа к интерфейсу отладки)
 Некоторые компиляторы ввести символы, которые не определены каким-либо стандартный лексический символьных типов. Эти символы определяются по `SymTagCustom` тег.  

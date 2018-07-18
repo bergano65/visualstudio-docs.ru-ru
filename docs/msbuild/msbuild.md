@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576005"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. С помощью вызова msbuild.exe для файла проекта или решения можно контролировать и собирать в продукты в средах без установленного экземпляра Visual Studio.  

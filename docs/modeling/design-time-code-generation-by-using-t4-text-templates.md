@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954096"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Как правило, шаблоны создаются, чтобы они менять код, они создают в соответствии с данными из *модели*. Модель — файла или базы данных, которая содержит основные сведения о требованиях приложения.

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570480"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] — это система сборки для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Далее приведены ссылки на разделы, содержащие справочную информацию по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  

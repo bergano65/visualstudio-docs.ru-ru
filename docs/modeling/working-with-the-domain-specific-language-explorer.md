@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965165"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Работа с обозревателем доменного языка
 **Обозреватель DSL** отображает несколько типов данных в виде дерева. Дополнительные сведения о большинство элементов в обозреватель DSL. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).

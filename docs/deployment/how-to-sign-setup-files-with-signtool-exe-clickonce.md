@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566125"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Практическое руководство. Подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
 Чтобы подписать программу установки (setup.exe), можно использовать SignTool.exe. Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.  

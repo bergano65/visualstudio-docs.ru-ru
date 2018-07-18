@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131040"
 ---
 # <a name="extending-the-output-window"></a>Расширение в окне вывода
 **Вывода** окна — это набор областей текста для чтения и записи. В Visual Studio есть этих встроенных панелей: **построения**, в какие проекты обмена сообщениями о сборках, и **Общие**, в котором [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает сообщения о интегрированной среды разработки. Проекты получить ссылку на **построения** панели автоматически посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методов интерфейса и Visual Studio предоставляет прямой доступ к **Общие** области посредством <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Служба. Помимо встроенных панелей можно создавать и собственные пользовательские панели управления.  

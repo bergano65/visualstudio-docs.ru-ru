@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136314"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Регистрация расширения имен файлов для развертываний Side-By-Side
 Для развертывания в среде side-by-side пакеты VSPackage, необходимо зарегистрировать расширения имен файлов, чтобы сопоставить файлы с правильной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Если вы не используете расширение имени файла от версии, регистрация позволяет пользователям откройте свой проект и файлы элементов в соответствующую версию проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

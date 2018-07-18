@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134117"
 ---
 # <a name="making-commands-available"></a>Предоставление команд
 При добавлении нескольких пакетов VSPackage для Visual Studio с помощью команд может стать overcrowded пользовательский интерфейс (UI). Вы можете программировать пакета уменьшить эту проблему, как показано ниже:

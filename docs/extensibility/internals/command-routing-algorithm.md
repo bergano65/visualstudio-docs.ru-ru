@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131503"
 ---
 # <a name="command-routing-algorithm"></a>Алгоритм маршрутизации команд
 В Visual Studio команды, обрабатываются ряд различных компонентов. Команды направляются из внутренней контекст, который основан на текущее выделение, самый внешний контекст (также известные как глобальные). Дополнительные сведения см. в разделе [доступности](../../extensibility/internals/command-availability.md).  

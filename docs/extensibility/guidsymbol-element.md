@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128072"
 ---
 # <a name="guidsymbol-element"></a>Элемент GuidSymbol
 `GuidSymbol` Элемент содержит идентификатор GUID, представляющий меню, группы или команды пару. Идентификатор поступают из `IDSymbol` элемент в `GuidSymbol` элемент. `GuidSymbol` Элемент имеет `name` атрибут, который содержит понятное имя для идентификатора GUID, который содержится в `value` атрибута.  

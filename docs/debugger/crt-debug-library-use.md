@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467960"
 ---
 # <a name="crt-debug-library-use"></a>Работа с библиотекой отладки CRT
 Библиотека CRT предоставляет расширенную отладочную поддержку. Чтобы использовать отладочные библиотеки CRT, необходимо связать с [/DEBUG](/cpp/build/reference/debug-generate-debug-info) и скомпилируйте его с **/MDd**, **/MTd**, или **/LDd**.  

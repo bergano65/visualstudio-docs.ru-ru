@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464762"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 Возвращает флаг, указывающий ли [компилируемого объекта](../../debugger/debug-interface-access/compiland.md) связан с параметром компоновщика [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation), который помогает при оптимизации всей программы. Этот параметр применяется только к управляемому коду.  

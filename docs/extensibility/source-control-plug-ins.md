@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140220"
 ---
 # <a name="source-control-plug-ins"></a>Подключаемые модули управления версиями
 В справочном разделе SDK подключаемого модуля управления источника содержит спецификацию полный интерфейс, позволяющий системы управления версиями для интеграции с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Указывает, синтаксис и семантику различных типов функции и данные, которые должны реализовывать подключаемый модуль системы управления версиями для взаимодействия с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE).  

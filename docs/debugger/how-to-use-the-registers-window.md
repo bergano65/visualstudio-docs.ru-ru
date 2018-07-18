@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477015"
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Просмотреть значения регистрации и использовать окно Регистры в отладчике Visual Studio
 Окно "Регистры" доступно только в том случае, если включена отладка на уровне адреса в **параметры** диалоговом **Отладка** узел, **Общие** категории.  

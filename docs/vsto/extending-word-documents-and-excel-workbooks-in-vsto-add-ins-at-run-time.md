@@ -26,6 +26,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548626"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Расширение документов Word и книг Excel в надстройках VSTO во время выполнения
   Надстройку VSTO можно использовать для настройки документов Word и книг Excel одним из описанных ниже способов.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130522"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contributing to the Automation Model
 Visual Studio предоставляет набор интерфейсов автоматизации для настройки среды. Модель автоматизации — объектную модель, которая позволяет пользователям создавать надстройки Visual Studio и расширения.  

@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da44be7f972a75e143e00346bf4a39d0bdf65c27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765636"
 ---
 # <a name="how-to-choose-sampling-events"></a>Практическое руководство. Выбор событий выборки
 По умолчанию средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] собирают данные о производительности с интервалом, заданным как число циклов процессора, используемых профилируемым процессом. По умолчанию число циклов в одном интервале — 10 000 000, что приблизительно соответствует 0,01 секунды для процессора 1 ГГц. Вы можете изменить число циклов в интервале и событие выборки. Доступны следующие события выборки:  

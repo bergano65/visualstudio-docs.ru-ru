@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765393"
 ---
 # <a name="how-to-choose-collection-methods"></a>Практическое руководство. Выбор методов сбора данных
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/19/2018
 
 1. В **обозревателе производительности** выберите сеанс производительности.
 
-     Имя файла сеанса производительности имеет расширение PSESS.
+     Имя файла сеанса производительности имеет расширение *PSESS*.
 
 2. Щелкните правой кнопкой мыши сеанс производительности, а затем выберите пункт **Свойства**.
 

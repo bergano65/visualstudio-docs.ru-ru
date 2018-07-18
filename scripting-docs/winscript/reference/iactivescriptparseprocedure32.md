@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645874"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Если обработчик скриптов Windows позволяет исходный текст кода для процедуры для добавления в скрипт, он реализует `IActiveScriptParseProcedure32` интерфейса. Интерпретируемые языки сценариев, которые имеют не независимых среду разработки, таких как VBScript, это предоставляет альтернативный механизм (отличного от `IActiveScriptParse32` или `IPersist`*) для добавления скрипта процедуры к пространству имен.  

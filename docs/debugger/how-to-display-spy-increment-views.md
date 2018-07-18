@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471691"
 ---
 # <a name="how-to-display-spy-views"></a>Практическое руководство. Отображение представлений Spy++
 При запуске программы Spy ++, он открывается в [представление окон](../debugger/windows-view.md), дерево всех окон и элементов управления, доступных на компьютере. Это корневое окно называется «Windows 1». Существует также доступны три представления Spy ++: [представления сообщений](../debugger/messages-view.md), [представление процессов](../debugger/processes-view.md), и [представление "Потоки"](../debugger/threads-view.md). Можно отобразить нужного представления из **Spy** меню. Дополнительные сведения см. в разделе [представлений Spy ++](../debugger/spy-increment-views.md).  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064549"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 

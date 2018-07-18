@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925379"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Как: Настройка наследования с помощью реляционного конструктора объектов
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах. При однотабличном наследовании имеется единственная таблица базы данных, которая содержит поля как для родительских данных, так и для дочерних. Для реляционных данных столбец дискриминатора содержит значение, которое определяет, какому классу принадлежит каждая запись.

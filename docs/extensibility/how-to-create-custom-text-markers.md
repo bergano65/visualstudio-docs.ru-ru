@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132277"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Как: Создание настраиваемых текстовых маркеров
 Если требуется создать пользовательские текстовая метка выделить или организации кода, необходимо выполнить следующие действия:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Создайте запись реестра следующим образом:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >*маркеры \Text Editor\External\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* маркеры \Text Editor\External\\*\<MarkerGUID >*  
   
      *\<MarkerGUID >*— `GUID` используется для идентификации добавляемого маркера  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]
     >  Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* может быть переопределен с альтернативным корнем при инициализации оболочки Visual Studio, дополнительная информация [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Создание четырех значений в группе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >*\Text Editor\External маркеры\\*\<MarkerGUID >*  
+2.  Создание четырех значений в группе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* \Text Editor\External маркеры\\*\<MarkerGUID >*  
   
     -   (Значение по умолчанию)  
   

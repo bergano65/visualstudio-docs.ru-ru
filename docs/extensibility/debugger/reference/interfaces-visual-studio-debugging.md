@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31124647"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Интерфейсы (Visual Studio для отладки)
 Методы перечислены в алфавитном порядке в списке каждого интерфейса в таблице содержимого и на странице интерфейса в порядке таблицы Vtable.  

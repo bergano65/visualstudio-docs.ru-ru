@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141653"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework в редакторе
 Редактор построен с помощью компоненты Managed Extensibility Framework (MEF). Можно создавать свои собственные компоненты MEF для расширения редактора, и ваш код может принимать редактора компонентов, а также.  

@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480336"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
 Шаги данного руководства иллюстрируют способ отладки веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], также известных как веб-формы. Он показывает, как для запуска и остановки выполнения, установить точки останова и просматривать переменные в **Контрольные значения** окна.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943040"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Диалоговое окно "Дополнительные параметры безопасности"
 В этом диалоговом окне можно задать параметры безопасности, связанные с отладкой в зоне.

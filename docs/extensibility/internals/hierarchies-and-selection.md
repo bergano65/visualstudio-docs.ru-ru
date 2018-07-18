@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128563"
 ---
 # <a name="hierarchies-and-selection"></a>Иерархии и выбора
 При настройке [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], следует понимать, каким образом [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] обрабатывает иерархии как проекты, и как он использует контекст выбора для определения, отображаемых для пользователя. В этом разделе рассматриваются основные понятия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархии и выбора.  

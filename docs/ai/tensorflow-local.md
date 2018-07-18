@@ -1,7 +1,7 @@
 ---
-title: "Локальное обучение модели tensorflow"
-description: "Локальный запуск модели tensorflow в Инструментах Visual Studio для сценариев ИИ"
-keywords: "ии, visual studio, tensorflow, локально"
+title: Локальное обучение модели tensorflow
+description: Локальный запуск модели tensorflow в Инструментах Visual Studio для сценариев ИИ
+keywords: ии, visual studio, tensorflow, локально
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708937"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Локальное обучение модели tensorflow
 

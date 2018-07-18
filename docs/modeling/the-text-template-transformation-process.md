@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951184"
 ---
 # <a name="the-text-template-transformation-process"></a>Процесс преобразования текстового шаблона
 Процесс преобразования текстового шаблона принимает файл текстового шаблона на входе и создает новый текстовый файл. Например текстовые шаблоны можно использовать для создания кода Visual Basic или C#, или можно создать отчет в формате HTML.

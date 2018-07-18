@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134887"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Реализация пользовательских категорий и отображаемые элементы
 VSPackage может предоставить управления шрифты и цвета текста для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) через пользовательские категории и отображаемые элементы.
@@ -47,7 +48,7 @@ VSPackage может предоставить управления шрифты 
 
 ## <a name="to-create-or-identify-categories"></a>Для создания и определения категорий
 
--   Создать специальный тип категории запись реестра [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\`<Category>`]
+-   Создать специальный тип категории запись реестра [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >* \FontAndColors\\`<Category>`]
 
      *\<Категория >* нелокализованное имя категории.
 
@@ -62,7 +63,7 @@ VSPackage может предоставить управления шрифты 
 
 ## <a name="to-create-or-identify-groups"></a>Для создания и определения групп
 
--   Создать специальный тип категории запись реестра [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\  *\<группы >*]
+-   Создать специальный тип категории запись реестра [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >* \FontAndColors\\  *\<группы >*]
 
      *\<Группа >* нелокализованное имя группы.
 

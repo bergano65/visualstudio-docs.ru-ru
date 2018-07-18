@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128624"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Отображение файлов, выполнив команду открытия
 Проект можно попросить IDE, чтобы отобразить **открыть с помощью** диалоговое окно. Этот запрос предлагает пользователю открыть файл, содержащий набор стандартных редакторов. Следующие шаги описывают этот процесс.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137249"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Это функция обратного вызова, указанного в вызове [SccSetOption](../extensibility/sccsetoption-function.md) (с помощью параметра `SCC_OPT_NAMECHANGEPFN`) и используется для связи имени изменений, внесенных системы управления версиями подключаемого модуля к Интегрированной среде разработки.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140372"
 ---
 # <a name="sccdirqueryinfo-function"></a>Функция SccDirQueryInfo
 Эта функция проверяет список полное каталогов для их текущего состояния.  

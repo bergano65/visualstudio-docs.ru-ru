@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106985"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Практическое руководство: Отладка модулем отладки
 Тип проекта запускается отладчик (DE) из <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> метод. Это означает, что DE запускается под управлением экземпляра [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] управление типа проекта. Тем не менее что экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не удается выполнить отладку DE. Какие следующим приведены шаги для отладки вашего пользовательского DE.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Запустите [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] в куст реестра обычных и загрузка проекта введите проекта (то есть, источник для типа проекта, не экземпляра типа проекта).  
   
-2.  Откройте свойства проекта и перейдите к **отладки** страницы. Для **команда**, введите путь к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (по умолчанию это *[диск]*\Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Откройте свойства проекта и перейдите к **отладки** страницы. Для **команда**, введите путь к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (по умолчанию это *[диск]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  Для **аргументы команды**, тип `/rootsuffix exp` для экспериментальном кусте реестра (созданный при установке VSIP).  
   
