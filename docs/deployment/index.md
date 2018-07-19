@@ -3,22 +3,23 @@ layout: LandingPage
 title: Развертывание приложений в Visual Studio | Документация Майкрософт
 description: Сведения об использовании Visual Studio 2017 для развертывания приложений, служб и компонентов.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815328"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030407"
 ---
 # <a name="deployment-in-visual-studio"></a>Развертывание в Visual Studio
 
 Visual Studio предоставляет несколько различных средств для развертывания приложений.
 
-<h2>Развертывание Visual Studio с 5-минутного примеры использования возникать</h2>
+<h2>Пятиминутные руководства по развертыванию в Visual Studio</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>

@@ -19,9 +19,9 @@
     - name: .NET
       items:
         - name: Развертывание приложения .NET Core с помощью средства публикации
-          href: /dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /dotnet/core/deploying/deploy-with-vs
         - name: Упаковка классического приложения для Microsoft Store (мост для классических приложений)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Развертывание классического приложения с помощью ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Построение приложений ClickOnce из командной строки
@@ -29,15 +29,15 @@
     - name: ASP.NET
       items:
         - name: Публикация приложения ASP.NET Core в Azure
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+        - name: Развертывание в IIS с помощью веб-развертывания
+          href: deploy-iis-with-web-deploy.md
         - name: "Импорт параметров публикации и развертывание в\_Azure"
           href: tutorial-import-publish-settings-azure.md
         - name: Импорт параметров публикации и развертывание в IIS
           href: tutorial-import-publish-settings-iis.md
-        - name: Развертывание в IIS с помощью веб-развертывания
-          href: deploy-iis-with-web-deploy.md
         - name: Непрерывное развертывание ASP.NET Core в Azure с помощью Git
-          href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/publishing/azure-continuous-deployment
         - name: "Публикация в Kubernetes с помощью средств Visual\_Studio для\_Kubernetes"
           href: tutorial-kubernetes-tools.md
     - name: машинный код;
@@ -45,21 +45,21 @@
         - name: Развертывание в Visual C++...
           href: /cpp/ide/deployment-in-visual-cpp
         - name: Упаковка классического приложения для Microsoft Store (мост для классических приложений)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Развертывание собственного приложения с помощью ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
         - name: Упаковка приложения UWP с помощью Visual Studio
-          href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Публикация на веб-сайте Azure с помощью веб-развертывания
-          href: 'https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json'
+        - name: "Публикация в службу приложений\_Linux"
+          href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
         - name: Публикация в службу приложений Azure
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: Практические руководства
   items:
     - name: Развертывание и безопасность технологии ClickOnce

@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace
       href: how-to-use-intellitrace-step-back.md
+    - name: Отладка для начинающих
+      href: debugging-absolute-beginners.md
 - name: Практические руководства
   items:
     - name: Навигация по коду с помощью отладчика
@@ -103,10 +105,8 @@
         - name: Режим "Изменить и продолжить" (Visual Basic)
           href: edit-and-continue-visual-basic.md
           items:
-            - name: Применение изменений в режиме приостановки выполнения с помощью режима "Изменить и продолжить"
+            - name: '"Изменить и продолжить" в режиме приостановки выполнения'
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: 'Изменения, не поддерживаемые в режиме "Изменить и продолжить" Visual Basic'
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'Функция "Изменить и продолжить" не поддерживается для языка F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Просмотр данных отладчика
@@ -826,5 +826,3 @@
   items:
     - name: Новые возможности отладчика в Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: Отладка для начинающих
-      href: debugging-absolute-beginners.md

@@ -3,21 +3,22 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: Документация по разработке мобильных приложений на C++ | Документация Майкрософт
 description: Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060955"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924178"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Документация по разработке мобильных приложений на C++
 
-Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio.
+Создавайте в Visual Studio приложения на C++ непосредственно для устройств с iOS, Android и Windows.
 
 <ul class="panelContent cardsF">
     <li>
@@ -31,8 +32,8 @@ ms.locfileid: "31060955"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Install Visual C++ for Cross-Platform Mobile Development</h3>
-                        <p>Настройте средства, необходимые для создания кроссплатформенных мобильных приложений.</p>
+                        <h3>Установка Visual C++ для разработки кроссплатформенных мобильных приложений</h3>
+                        <p>Подготовьте все необходимые инструменты для создания кроссплатформенных мобильных приложений.</p>
                     </div>
                 </div>
             </div>
@@ -69,8 +70,8 @@ ms.locfileid: "31060955"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cross-Platform Mobile Development Examples</h3>
-                        <p>Примеры для начала разработки кроссплатформенных мобильных приложений.</p>
+                        <h3>Примеры разработки кроссплатформенных мобильных приложений</h3>
+                        <p>Наши примеры помогут вам начать разрабатывать кроссплатформенные мобильные приложения.</p>
                     </div>
                 </div>
             </div>
