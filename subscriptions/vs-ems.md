@@ -9,28 +9,28 @@ description: Сведения о преимуществе Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: acf1028890dfcee3194beaeff930d514ea1c812f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31197182"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281655"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) в подписках Visual Studio
 
-Годовые облачные и стандартные подписки Visual Studio Enterprise включают в себя Enterprise Mobility + Security (EMS).  Вы можете защитить свои удостоверения, устройства, приложения и данные и управлять ими с помощью EMS — Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics и Microsoft Cloud App Security.  
+Годовые облачные и стандартные подписки Visual Studio Enterprise включают в себя Enterprise Mobility + Security (EMS).  Вы можете защитить свои удостоверения, устройства, приложения и данные и управлять ими с помощью EMS — Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics и Microsoft Cloud App Security.
 
 ## <a name="activation-steps"></a>Процедура активации
 
-Чтобы использовать EMS, нужно настроить учетную запись или войти с помощью имеющейся учетной записи. 
+Чтобы использовать EMS, нужно настроить учетную запись или войти с помощью имеющейся учетной записи.
 
 1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Найдите плитку "Enterprise Mobility + Security" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки.   Вы увидите уведомление о том, что код успешно получен.  Щелкните **Активировать**. 
+2.  Найдите плитку "Enterprise Mobility + Security" в разделе "Средства" и щелкните ссылку **Получить код** в нижней части плитки.   Вы увидите уведомление о том, что код успешно получен.  Щелкните **Активировать**.
 
     ![Плитка преимущества EMS](_img\vs-ems\vs-ems-tile.png)
 
-2.  На странице Enterprise Mobility + Security E5 вы можете войти с использованием существующей подписки или создать ее.  Чтобы создать подписку, введите требуемые данные и нажмите кнопку **Далее**. 
+2.  На странице Enterprise Mobility + Security E5 вы можете войти с использованием существующей подписки или создать ее.  Чтобы создать подписку, введите требуемые данные и нажмите кнопку **Далее**.
 
     ![Создание учетной записи для преимущества EMS](_img\vs-ems\vs-ems-create-account-cropped.png)
 
@@ -62,10 +62,10 @@ ms.locfileid: "31197182"
 
 <sup>2</sup> *Не включает следующую категорию: Microsoft Partner Network (Professional)*
 
-Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Нужна помощь с EMS?  См. [нашу документацию по EMS](/enterprise-mobility-security/).
 -  Для получения технической поддержки по любому компоненту EMS посетите страницу https://support.microsoft.com/allproducts и выберите продукт.
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 
+-  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

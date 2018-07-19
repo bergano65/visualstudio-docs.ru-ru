@@ -18,7 +18,7 @@
     - name: 'Программа установки, установка и проверки для пользователей Mac'
       href: setup-install-and-verifications-for-mac-users.md
 - name: Средства Visual Studio для Apache Cordova
-  href: visual-studio-tools-for-apache-cordova.md
+  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Набор средств Visual Studio для Unity
   href: visual-studio-tools-for-unity.md
   items:

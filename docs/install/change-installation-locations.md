@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a6d8741982efd5329e7c14f0a32fb66bbdd377f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995784"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282064"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Изменение расположения установки в Visual Studio 2017
 
@@ -54,7 +54,7 @@ ms.locfileid: "33995784"
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio воспользуйтесь инструкцией по [устранению неполадок и исправлению ошибок в ходе установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Вы можете также связаться с нами для помощи по установке в [интерактивном чате](https://www.visualstudio.com/vs/support/#talktous) (только английский язык). Дополнительные сведения см. на [странице Visual Studio "Свяжитесь с нами"](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio воспользуйтесь инструкцией по [устранению неполадок и исправлению ошибок в ходе установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Вы можете также связаться с нами для помощи по установке в [интерактивном чате](https://visualstudio.microsoft.com/vs/support/#talktous) (только английский язык). Дополнительные сведения см. на [странице Visual Studio "Свяжитесь с нами"](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 

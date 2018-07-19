@@ -1,5 +1,5 @@
 ---
-title: 'Способ: добавить свойство типа элемента проекта SharePoint пользовательских | Документы Microsoft'
+title: 'Способ: добавить свойство в тип элемента проекта SharePoint пользовательских | Документация Майкрософт'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,65 +17,65 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7270ee0171d5ed7df94ab186e22e1bc82b7d93c2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8a74fbffd5a1d8e9c5e660961d93f7181e51827a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767550"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757010"
 ---
-# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Способ: добавить свойство настраиваемого типа элемента проекта SharePoint
-  При определении настраиваемого типа элемента проекта SharePoint, можно добавить свойства в элемент проекта. Это свойство отображается в **свойства** окно при выборе элемента проекта в **обозревателе решений**.  
+# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Практическое: Добавление свойства пользовательского типа элемента проекта SharePoint
+  При определении настраиваемого типа элемента проекта SharePoint, можно добавить свойство к элементу проекта. Свойство отображается в **свойства** окно при выборе элемента проекта в **обозревателе решений**.  
   
- Следующие шаги предполагают, что собственный тип элемента проекта SharePoint уже определены. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+ Следующие шаги предполагают, что уже было определено собственный тип элемента проекта SharePoint. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
-### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>Чтобы добавить свойство в определении типа элемента проекта  
+### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>Добавление свойства в определении типа элемента проекта  
   
-1.  Определите класс с открытым свойством, которое представляет свойство, которое добавляется к настраиваемому типу элемента проекта. Если требуется добавить несколько свойств пользовательского элемента типа проектов можно определить все свойства в том же классе или в различных классах.  
+1.  Определение класса с открытое свойство, которое представляет свойство, которое вы добавляете для пользовательского типа элемента проекта. Если вы хотите добавить несколько свойств для пользовательского типа элемента проекта, можно определить все свойства, в том же классе или в разных классах.  
   
-2.  В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> реализацию, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событие *projectItemTypeDefinition* параметра.  
+2.  В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событие *projectItemTypeDefinition* параметра.  
   
-3.  В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событий, нужно добавить экземпляр пользовательского класса свойств для <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.  
+3.  В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событий, добавьте экземпляр пользовательского класса свойств для <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода показано, как добавить свойство с именем **пример свойства** для пользовательского элемента проекта типа.  
+ В следующем примере кода показано, как добавить свойство с именем **примером свойства** для пользовательского типа элемента проекта.  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#11)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#11)]  
   
-### <a name="understanding-the-code"></a>Общие сведения о коде  
- Чтобы убедиться, что тот же экземпляр `CustomProperties` класса используется каждый раз <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> происходит событие, в примере кода сохраняет объект свойств в <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство проекта, когда это событие происходит первым. Код получает этот объект, когда происходит данное событие. Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство для сохранения данных с элементами проекта в разделе [связывание пользовательских данных с расширениями средств SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+### <a name="understand-the-code"></a>Понимание кода  
+ Чтобы убедиться, что тот же экземпляр `CustomProperties` класса используется каждый раз <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> событием, в примере кода сохраняет объект свойств в <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства проекта, когда это событие происходит впервые. Каждый раз, когда это событие повторяется, код получает этот объект. Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство для сохранения данных с элементами проекта см. в разделе [расширений средств сопоставления пользовательских данных с SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
- Сохранение изменений для значения свойства **задать** доступа для `ExampleProperty` сохраняет новое значение для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> , свойство, связанное с объектом. Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство для сохранения данных с элементами проекта в разделе [сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Для сохранения изменений значение свойства, **задать** метод доступа для `ExampleProperty` сохраняет новое значение для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> , свойство, связанное с объектом. Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство для сохранения данных с помощью элементов проекта, см. в разделе [сохранения данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-### <a name="specifying-the-behavior-of-custom-properties"></a>Задание поведения пользовательских свойств  
- Можно определить как пользовательское свойство выглядит и работает в **свойства** окна путем применения атрибутов из <xref:System.ComponentModel> пространство имен для определения свойства. Во многих сценариях полезны следующие атрибуты:  
+### <a name="specify-the-behavior-of-custom-properties"></a>Указать поведение пользовательских свойств  
+ Можно определить, как выглядит и ведет себя как пользовательское свойство **свойства** окна, применяя различные атрибуты из <xref:System.ComponentModel> пространство имен для определения свойства. Следующие атрибуты полезны во многих сценариях:  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>: Задает имя свойства, которое отображается в **свойства** окна.  
+-   <xref:System.ComponentModel.DisplayNameAttribute>: Указывает имя свойства, которое отображается в **свойства** окна.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Задает строку описания, которое отображается в нижней части **свойства** окно при выборе данного свойства.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Задает строку описания, который отображается в нижней части **свойства** окно при выборе свойства.  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>: Задает значение свойства по умолчанию.  
+-   <xref:System.ComponentModel.DefaultValueAttribute>: Задает значение по умолчанию свойства.  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>: Задает настраиваемое преобразование между строкой, которая отображается в **свойства** окна и значение свойства, не являющегося строкой.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>: Задает настраиваемое преобразование между строкой, отображаемой в **свойства** окно и значение свойства, не являющегося строкой.  
   
--   <xref:System.ComponentModel.EditorAttribute>: Задает пользовательский редактор для изменения свойства.  
+-   <xref:System.ComponentModel.EditorAttribute>: Указывает пользовательский редактор для изменения свойства.  
   
-## <a name="compiling-the-code"></a>Компиляция кода  
- Эти примеры кода требуется проект библиотеки классов со ссылками на следующие сборки:  
+## <a name="compile-the-code"></a>Компиляция кода  
+ Эти примеры кода требуется проект библиотеки классов с помощью ссылки на следующие сборки:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-project-item"></a>Развертывание элемента проекта  
- Чтобы включить другие разработчики также могли использовать созданный элемент проекта, создайте шаблон проекта или шаблон элемента проекта. Дополнительные сведения см. в разделе [Создание шаблонов элементов и проектов для элементов проекта SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+## <a name="deploy-the-project-item"></a>Развернуть элемент проекта  
+ Чтобы другие разработчики могли использовать созданный элемент проекта, создайте шаблон проекта или шаблона элемента проекта. Дополнительные сведения см. в разделе [создание элементов, шаблоны и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
- Чтобы развернуть элемент проекта, создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки, шаблон и другие файлы, которые требуется распространить с элементом проекта. Дополнительные сведения см. в разделе [развертывание расширений для средств SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Чтобы развернуть элемент проекта, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки, шаблон и другие файлы, которые вы хотите распространять вместе с элементом проекта. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>См. также
  [Как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [Как: Добавление пункта контекстного меню для типа элемента проекта SharePoint, пользовательские](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
+ [Практическое: Добавление пункта контекстного меню в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
  [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
   
   

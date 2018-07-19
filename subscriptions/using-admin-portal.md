@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327395"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Использование портала администратора для работы с подписками Visual Studio
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/06/2018
 > [!NOTE]
 > Если основное контактное лицо или контактное лицо для уведомлений получает больше одного сообщения, значит, оно использует несколько номеров PCN. Ему требуется пройти процедуру с помощью уникальной ссылки, приведенной в каждом из полученных сообщений.*
 
-Если вам нужно добавиться на новый портал администрирования подписок Visual Studio, но вы не знаете, кто является вашим контактным лицом, эти сведения можно получить, войдя в [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Ознакомьтесь со статьей [Поиск основного контакта](/find-primary-contact/), чтобы найти основной контакт или контакт для уведомлений в VLSC.
+Если вам нужно добавиться на новый портал администрирования подписок Visual Studio, но вы не знаете, кто является вашим контактным лицом, эти сведения можно получить, войдя в [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Ознакомьтесь со статьей [Поиск основного контакта](find-primary-contact.md), чтобы найти основной контакт или контакт для уведомлений в VLSC.
 Если вы уже были настроены в качестве администратора, можете перейти непосредственно на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Общие сведения о странице подписчиков
@@ -67,11 +68,9 @@ ms.lasthandoff: 04/06/2018
 - Необязательное поле для другого адреса электронной почты, используемого для связи, а не для входа. 
 
 В левой части этой страницы отображаются дополнительные сведения о количестве лицензий подписки, приобретенных, назначенных и доступных в вашей организации для каждого соглашения.
-
-   ![Страница подписчиков на портале администрирования подписок Visual Studio](_img/using-admin-portal/subscribers-page.png)
+    ![Страница подписчиков на портале администрирования подписок Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Общие сведения о странице сведений
 Дополнительные сведения о просматриваемом соглашении можно узнать на вкладке "Сведения". Она содержит состояние соглашения, счет для покупок, сведения об организации, основные контактные лица (VLSC), суперадминистраторов (если они есть) и прочие сведения.
-
-   ![Страница сведений на портале администрирования подписок Visual Studio](_img/using-admin-portal/details-page.png)
+    ![Страница сведений на портале администрирования подписок Visual Studio](_img/using-admin-portal/details-page.png)
 

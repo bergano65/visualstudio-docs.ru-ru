@@ -1,7 +1,7 @@
 ---
 title: Шаблон проекта облачной службы Azure для Python
 description: Обзор шаблонов облачных служб Azure в Visual Studio, написанных на языке Python, в том числе развертывание роли, зависимости и устранение неполадок.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2e1518b387f859e4be4427b05b2010167c7205c6
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031817"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058663"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Проекты облачных служб Azure для Python
 
@@ -29,7 +29,7 @@ Visual Studio предоставляет шаблоны, которые помо
 
 ## <a name="create-a-project"></a>Создание проекта
 
-1. Установите [пакет SDK Azure .NET для Visual Studio](https://www.visualstudio.com/vs/azure-tools/), который потребуется для использования шаблона облачной службы.
+1. Установите [пакет SDK Azure .NET для Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), который потребуется для использования шаблона облачной службы.
 1. В Visual Studio выберите **Файл > Новый > Проект...**, выполните поиск по запросу "Python Azure" и выберите из списка результатов **облачную службу Azure**:
 
     ![Шаблон облачного проекта Azure для Python](media/template-azure-cloud-project.png)

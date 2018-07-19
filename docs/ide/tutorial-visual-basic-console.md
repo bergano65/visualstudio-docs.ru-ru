@@ -13,18 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764937"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280342"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Начало работы с Visual Basic в Visual Studio
 
 В этом руководстве по Visual Basic вы будете работать со средой Visual Studio для создания и запуска нескольких разных консольных приложений. Вы также ознакомитесь с некоторыми возможностями [интегрированной среды разработки (IDE)](visual-studio-ide.md) Visual Studio.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="before-you-begin"></a>Подготовка к работе
 
@@ -58,7 +58,7 @@ Visual Studio — это интегрированный набор средст
 
 2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
-3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *HelloWorld*.  
+3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *HelloWorld*.
 
    ![Шаблон проекта "Консольное приложение (.NET Core)" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -113,7 +113,7 @@ Visual Studio — это интегрированный набор средст
 
 1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
-2. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *CalculateThis*.  
+2. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите файл *CalculateThis*.
 
 3. Введите следующий код между строками `Module Program` и `End Module`:
 
@@ -136,7 +136,7 @@ Visual Studio — это интегрированный набор средст
 
    ![Окно кода с кодом приложения "Калькулятор"](../ide/media/vb-codewindow-calculate-this.png)
 
-4. Щелкните **CalculateThis**, чтобы запустить программу. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:       
+4. Щелкните **CalculateThis**, чтобы запустить программу. Окно консоли должно выглядеть так, как показано на следующем снимке экрана:
 
     ![Окно консоли с приложением CaluculateThis, включая предложения выполнить действия.](../ide/media/vb-console-calculate-this.png)
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc9900927218e543b4e7ba962d7ea019d927c8a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948357"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057545"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры компилятора" (C#)
 
@@ -54,7 +54,7 @@ ms.locfileid: "31948357"
 
  Описанные ниже параметры позволяют производить расширенную настройку вывода.
 
- **Отладочная информация**. Определяет тип отладочной информации, создаваемой компилятором. Сведения о настройке производительности отладки для приложения см. в разделе [Упрощение отладки образов](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Включает следующие значения:
+ **Отладочная информация**. Определяет тип отладочной информации, создаваемой компилятором. Сведения о настройке производительности отладки для приложения см. в разделе [Упрощение отладки образов](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Включает следующие значения:
 
 - **none**
 

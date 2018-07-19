@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454705"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281109"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++
 
@@ -25,7 +25,7 @@ ms.locfileid: "34454705"
 
 ## <a name="requirements"></a>Требования
 
-- Требования для установки семейства продуктов Microsoft Visual Studio см. в [этой статье](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+- Требования для установки семейства продуктов Microsoft Visual Studio см. в [этой статье](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
    > [!IMPORTANT]
    > Если вы используете Windows 7 или Windows Server 2008 R2, вы можете писать код для классических приложений Windows, приложений и библиотек Android Native Activity, а также приложений и библиотек кода для iOS, но не для приложений Windows Phone и UWP.

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98e1cc8b3ce016580e477dfa648a493df1c1e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 38a30dde405c172a1bf29f69edf4e3b9d1b79eee
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570890"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327363"
 ---
 # <a name="property-element-msbuild"></a>Элемент Property (MSBuild)
 Содержит определяемое пользователем имя свойства и значение. Каждое свойство, используемое в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должно быть указано в качестве дочернего для элемента `PropertyGroup`.  
@@ -33,7 +33,7 @@ ms.locfileid: "31570890"
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <Property Condition="'String A' == 'String B'">  
     Property Value  
 </Property>  

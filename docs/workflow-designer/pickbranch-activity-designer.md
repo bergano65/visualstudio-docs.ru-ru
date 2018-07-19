@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - действия Pickbranch
+title: Конструктор рабочих процессов - конструктор действия PickBranch
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea106a96a5d6b81ee0b0b898c881eb752582f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0c2a36392f3f83f533c2d072398800e105727b0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976577"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755564"
 ---
 # <a name="pickbranch-activity-designer"></a>Конструктор действия PickBranch
 
@@ -25,34 +25,34 @@ ms.locfileid: "31976577"
 
 ## <a name="pickbranch"></a>PickBranch
 
-Объекты <xref:System.Activities.Statements.PickBranch> содержатся в коллекции <xref:System.Activities.Statements.Pick.Branches%2A> действия <xref:System.Activities.Statements.Pick>. Каждое действие <xref:System.Activities.Statements.PickBranch> содержится в ветви действия <xref:System.Activities.Statements.Pick> и может быть выполнено в результате какого-то входящего события, которое выполняет роль триггера. Таким образом конструктор рабочих процессов Windows обеспечивает моделирование потока управления на основе событий. Каждый участок кода <xref:System.Activities.Statements.PickBranch> содержит триггер <xref:System.Activities.Statements.PickBranch.Trigger%2A> и действие <xref:System.Activities.Statements.PickBranch.Action%2A>.
+Объекты <xref:System.Activities.Statements.PickBranch> содержатся в коллекции <xref:System.Activities.Statements.Pick.Branches%2A> действия <xref:System.Activities.Statements.Pick>. Каждое действие <xref:System.Activities.Statements.PickBranch> содержится в ветви действия <xref:System.Activities.Statements.Pick> и может быть выполнено в результате какого-то входящего события, которое выполняет роль триггера. Таким образом в конструкторе рабочих процессов обеспечивает моделирование потока управления на основе событий. Каждый участок кода <xref:System.Activities.Statements.PickBranch> содержит триггер <xref:System.Activities.Statements.PickBranch.Trigger%2A> и действие <xref:System.Activities.Statements.PickBranch.Action%2A>.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Использование конструктора действия подбора
 
-**PickBranch** можно найти в **поток управления** категории **элементов**, который нажав **элементов** Вкладка конструктором рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X).
+Доступ **PickBranch** конструктора в **поток управления** категории **элементов**.
 
-Два пустых <xref:System.Activities.Statements.PickBranch> объектов с именами отображения **Branch1** и **Branch2** по умолчанию создаются как элементы <xref:System.Activities.Statements.Pick> действия при **выбора** изначально перетащить конструктор действия в конструкторе рабочих процессов. Соответствующие <xref:System.Activities.Statements.PickBranch.DisplayName%2A> значения свойств можно изменить в **PickBranch** заголовке конструктора или в **свойства** для каждой ветви.
+Два пустых <xref:System.Activities.Statements.PickBranch> объекты с отображаемыми именами **Branch1** и **Branch2** создаются по умолчанию в качестве элементов <xref:System.Activities.Statements.Pick> действия при **выбрать** Конструктор действия изначально сбрасываться в конструкторе рабочих процессов. Соответствующие <xref:System.Activities.Statements.PickBranch.DisplayName%2A> значения свойств можно изменить в **PickBranch** заголовке конструктора или в **свойства** окна для каждой ветви.
 
-Существует два способа добавления <xref:System.Activities.Statements.PickBranch> объекты в коллекцию <xref:System.Activities.Statements.Pick> объектов: перетаскивание **PickBranch** конструктора из **элементов** или с помощью контекстного меню на в пределах **выбора** конструктора:
+Существует два способа добавления <xref:System.Activities.Statements.PickBranch> объектов в коллекцию <xref:System.Activities.Statements.Pick> объект: перетаскивания **PickBranch** конструктора из **элементов**, или с помощью контекстного меню на в рамках **выбрать** конструктора:
 
-1.  **PickBranch** конструктор создает <xref:System.Activities.Statements.PickBranch> при его перетаскивании из **элементов** и перетащить в одной ветви **выбора** конструктора операций в Область конструктора рабочих процессов. Новые объекты <xref:System.Activities.Statements.PickBranch> могут помещаться внутри конструктора <xref:System.Activities.Statements.Pick> слева или справа от любых существующих элементов <xref:System.Activities.Statements.PickBranch>, уже содержащихся в коллекции. При перетаскивании **PickBranch** конструктора **выбора** конструктора с помощью мыши **выбора** конструктор использует вертикальную сине серую полосу, чтобы указать, где <xref:System.Activities.Statements.PickBranch> будет добавлен в данном положении указателя мыши.
+- **PickBranch** конструктор создает <xref:System.Activities.Statements.PickBranch> при перетаскивании из **элементов** в одну из ветвей **выбрать** конструктора операций в Рабочей области конструктора рабочих процессов. Новые объекты <xref:System.Activities.Statements.PickBranch> могут помещаться внутри конструктора <xref:System.Activities.Statements.Pick> слева или справа от любых существующих элементов <xref:System.Activities.Statements.PickBranch>, уже содержащихся в коллекции. При перетаскивании **PickBranch** конструктора **выбрать** конструктора с помощью мыши **выбрать** конструктор использует вертикальную сине серую полосу, которая указывает, где <xref:System.Activities.Statements.PickBranch> будет добавлен в данном положении указателя мыши.
 
-2.  Щелкните правой кнопкой мыши **выбора** конструктора действий (, но не внутри **PickBranch** конструктор) для получения контекстного меню и выберите **создать ветвь** для добавления новых <xref:System.Activities.Statements.PickBranch>. Обратите внимание, что новый <xref:System.Activities.Statements.PickBranch> добавляется справа от существующих <xref:System.Activities.Statements.PickBranch> объекты в **выбора** конструктора.
+- Щелкните правой кнопкой мыши **выбрать** конструктора действий (но не **PickBranch** конструктор) для получения контекстного меню и выберите **создать ветвь** Добавление нового <xref:System.Activities.Statements.PickBranch>. Обратите внимание, что новый <xref:System.Activities.Statements.PickBranch> добавляется справа от существующих <xref:System.Activities.Statements.PickBranch> объекты в **выбрать** конструктора.
 
- **PickBranch** конструктор можно развернуть, чтобы отобразить **триггер** и **действия** либо свернуть, щелкнув двойные стрелки справа от заголовков. Изменить <xref:System.Activities.Statements.PickBranch.Trigger%2A> и <xref:System.Activities.Statements.PickBranch.Action%2A> каждого <xref:System.Activities.Statements.PickBranch> , перетащив действия в **триггер** и **действия** соответствующих конструкторов.
+**PickBranch** конструктора можно расширить для отображения **триггера** и **действие** либо свернуть, щелкнув двойные стрелки справа от заголовка. Изменить <xref:System.Activities.Statements.PickBranch.Trigger%2A> и <xref:System.Activities.Statements.PickBranch.Action%2A> каждого <xref:System.Activities.Statements.PickBranch> , перетащив действия в **триггера** и **действие** соответствующих конструкторов.
 
- <xref:System.Activities.Statements.PickBranch> Объекты в <xref:System.Activities.Statements.Pick.Branches%2A> коллекцию <xref:System.Activities.Statements.Pick> можно переупорядочить с помощью перетаскивания их в новое место в пределах **выбора** конструктора. **Выбора** конструктор использует вертикальную сине серую полосу, чтобы указать, где <xref:System.Activities.Statements.PickBranch> добавляется в данном положении указателя мыши.
+<xref:System.Activities.Statements.PickBranch> Объекты в <xref:System.Activities.Statements.Pick.Branches%2A> коллекцию <xref:System.Activities.Statements.Pick> объекта, можно изменить порядок сортировки с помощью перетаскивания их в новое расположение в пределах **выбрать** конструктора. **Выбрать** конструктор использует вертикальную сине серую полосу, которая указывает, где <xref:System.Activities.Statements.PickBranch> добавляется в данном положении указателя мыши.
 
- Существует два способа удаления <xref:System.Activities.Statements.PickBranch>.
+Существует два способа удаления <xref:System.Activities.Statements.PickBranch>.
 
-1.  Выберите **PickBranch** конструктора и удалите его.
+- Выберите **PickBranch** конструкторе и удалите его.
+- Выберите **PickBranch** конструктора, щелкните правой кнопкой мыши, чтобы вызвать контекстное меню и выберите **удалить**.
 
-2.  Выберите **PickBranch** конструктора, щелкните правой кнопкой мыши, чтобы открыть контекстное меню и выберите пункт **удалить**.
-
- Не забудьте установить **PickBranch** конструктора, как при выборе одного из действий внутри его **триггер** или **действие** поля по ошибке выбрано одно из этих действий и не <xref:System.Activities.Statements.PickBranch> объекта.
+Не забудьте выбрать **PickBranch** конструктора, как выбрать одно из действий внутри ее **триггера** или **действие** поля по ошибке Удаляет один из этих действий и не <xref:System.Activities.Statements.PickBranch> объекта.
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>Свойства PickBranch в конструкторе рабочих процессов
- В следующей таблице показаны наиболее полезные <xref:System.Activities.Statements.PickBranch> свойства и описано их использование в конструкторе рабочих процессов.
+
+В следующей таблице показаны наиболее полезных <xref:System.Activities.Statements.PickBranch> свойства и описывает их использование в конструкторе рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

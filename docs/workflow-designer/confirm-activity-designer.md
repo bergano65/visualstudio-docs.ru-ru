@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a4c1b31769387470d58f27a060d4e3ec7ae70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68259200bbd89f851e75a5ca097b248153a2399e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972063"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757554"
 ---
 # <a name="confirm-activity-designer"></a>Конструктор действия Confirm
 
@@ -29,12 +29,12 @@ ms.locfileid: "31972063"
  Объект <xref:System.Activities.Statements.CompensationToken>, указанный <xref:System.Activities.Statements.Compensate.Target%2A>, предоставляет возможность для явного подтверждения или компенсации действия <xref:System.Activities.Statements.CompensableActivity>, как только <xref:System.Activities.Statements.CompensableActivity.Body%2A> действия <xref:System.Activities.Statements.CompensableActivity> будет успешно завершено.
 
 ### <a name="using-the-confirm-activity-designer"></a>Использование конструктора действия Confirm
- **Подтверждение** конструктора действий можно найти в **транзакции** категории **элементов**, который нажав **элементов**вкладка в левой части конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+ **Подтверждение** конструктора действий можно найти в **транзакции** категории **элементов**, который нажав **элементов**вкладка в левой части конструктора рабочих процессов. Можно также выбрать **элементов** из **представление** меню или нажмите клавишу **Ctrl**+**Alt** + **X**.
 
- **Подтверждение** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.Confirm>, где значение <xref:System.Activities.Activity.DisplayName%2A> по умолчанию равно Confirm. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Подтверждение** конструктора действий или в **DisplayName** поле сетки свойств.
+ **Подтверждение** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.Confirm>, где значение <xref:System.Activities.Activity.DisplayName%2A> по умолчанию равно Confirm. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Подтверждение** конструктора действий или в **DisplayName** поле таблицы свойств.
 
 ### <a name="the-confirm-properties"></a>Свойства Confirm
- В следующей таблице показаны свойства <xref:System.Activities.Statements.Confirm> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> Свойство можно изменить в таблице свойств или на поверхности конструктора рабочих процессов, но <xref:System.Activities.Statements.Confirm.Target%2A> свойства следует изменять в таблице свойств.
+ В следующей таблице показаны свойства <xref:System.Activities.Statements.Confirm> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> Свойство можно изменить в таблице свойств, а также на поверхности конструктора рабочих процессов, но <xref:System.Activities.Statements.Confirm.Target%2A> свойства необходимо изменить в таблице свойств.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|
@@ -47,4 +47,4 @@ ms.locfileid: "31972063"
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Компенсации](../workflow-designer/compensate-activity-designer.md)
-- [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
+- [Класс TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

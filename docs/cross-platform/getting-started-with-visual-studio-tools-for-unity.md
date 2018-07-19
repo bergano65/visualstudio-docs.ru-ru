@@ -10,11 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0a2688b540b9256b43b674714c6c123e90acaaeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa1c2e97b52027c81749d0e4cd75ea767f2d1c13
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280394"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
 В этом разделе вы узнаете, как установить инструменты Visual Studio для Unity и настроить проект Unity для работы с Visual Studio.
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 
 -   версия **Visual Studio** , поддерживающая расширение, например Visual Studio Community, Professional, Premium или Enterprise (скачать Visual Studio Community можно бесплатно);
 
-     [Скачать Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+     [Скачать Visual Studio Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   **Unity** 4.0.0 или более поздней версии; **Unity** 5.2.0 или более поздней версии для использования встроенной поддержки инструментов Visual Studio для Unity 2.1 или более поздней версии.
 

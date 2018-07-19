@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9b8a83ec50ce724b0d62e83a4f8848f7d82f11ff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50baf803cb6669640c9ffe2c0e94ea43b56f5341
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815487"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Обзор Microsoft IntelliTest
 
@@ -103,7 +104,7 @@ public void HelloWorldThrowsException167()
 * [Платформа](#platform)
 * [Язык](#language)
 * [Символьная аналитика](#symbolic-reasoning)
-* [Трассировки стека](#incorrect-stack)
+* [Трассировки стека](#incorrect-stack-traces)
 
 ### <a name="nondeterminism"></a>Недетерминированность
 

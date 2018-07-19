@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815903"
 ---
 # <a name="static-helper-classes"></a>Статические вспомогательные классы
 
@@ -41,7 +42,7 @@ IntelliTest предоставляет набор статических всп�
 
 Следующий параметризованный тест не будет учитывать **j=0**:
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 Приведенный выше код почти полностью эквивалентен следующему:
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ public void TestSomething(int i, int j) {
 
 Следующий код утверждает, что модуль целого числа является положительным:
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ public void TestSomething(int i) {
 
 * Простой вызов **PexChoose.Value** для создания нового значения:
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ public int Foo() {
 
 Когда IntelliTest изучает код, **PexObserve** используется для записи вычисляемых значений с помощью их форматированных строковых представлений. Эти значения сопоставляются с уникальными именами.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Пример**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ public partial class MathExTests {
 
 Этот пример показывает реализацию метода **PexAssume.Arrays.ElementsAreNotNull**. В этом методе игнорируются ограничения, накладываемые на длину массива, чтобы помешать IntelliTest создать различные размеры массива. Ограничения игнорируются только здесь. Если тестируемый код ведет себя по-разному для разных длин массива, IntelliTest не может создавать массивы разного размера из ограничений тестируемого кода.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

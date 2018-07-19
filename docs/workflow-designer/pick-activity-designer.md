@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - конструктора действия подбора
+title: Конструктор рабочих процессов - конструктор действия Pick
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f664ac3a22b91780d392e0fef3224cd80b1e7919
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975436"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757755"
 ---
 # <a name="pick-activity-designer"></a>Конструктор действия Pick
 
@@ -25,15 +25,13 @@ ms.locfileid: "31975436"
 
 ## <a name="the-pick-activity"></a>Действие Pick
 
-Действие <xref:System.Activities.Statements.Pick> содержит коллекцию объектов <xref:System.Activities.Statements.PickBranch>, один из которых действие <xref:System.Activities.Statements.Pick> может выполнить вследствие некоторого входящего события, служащего триггером. Таким образом конструктор рабочих процессов Windows обеспечивает моделирование потока управления на основе событий. Каждый участок кода <xref:System.Activities.Statements.PickBranch> содержит триггер <xref:System.Activities.Statements.PickBranch.Trigger%2A> и действие <xref:System.Activities.Statements.PickBranch.Action%2A>. В начале <xref:System.Activities.Statements.Pick> выполнения действия, все действия триггера <xref:System.Activities.Statements.PickBranch> элементов. Когда первое действие завершается, планируется соответствующее действие, а все другие действия триггера отменяются.
+Действие <xref:System.Activities.Statements.Pick> содержит коллекцию объектов <xref:System.Activities.Statements.PickBranch>, один из которых действие <xref:System.Activities.Statements.Pick> может выполнить вследствие некоторого входящего события, служащего триггером. Таким образом конструктор рабочих процессов предоставляет моделирование потока управления на основе событий. Каждый участок кода <xref:System.Activities.Statements.PickBranch> содержит триггер <xref:System.Activities.Statements.PickBranch.Trigger%2A> и действие <xref:System.Activities.Statements.PickBranch.Action%2A>. В начале <xref:System.Activities.Statements.Pick> выполнения действия, все действия триггера из <xref:System.Activities.Statements.PickBranch> запланированные элементы. Когда первое действие завершается, планируется соответствующее действие, а все другие действия триггера отменяются.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Использование конструктора действия подбора
 
-**Выбрать** конструктора действий можно найти в **поток управления** категории **элементов**, который нажав **элементов**вкладку в конструкторе рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+Доступ **выбрать** конструктора действий в **поток управления** категории **элементов**. **Выбрать** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно помещаются конструкторы, например внутри  **Последовательность** конструктора действий. После его перетаскивания в конструкторе рабочих процессов, он создает <xref:System.Activities.Statements.Pick> действие, которое по умолчанию содержит два пустых <xref:System.Activities.Statements.PickBranch> действия как элементы с именами Branch1 и Branch2. Соответствующие <xref:System.Activities.Statements.PickBranch.DisplayName%2A> значения свойств можно изменить в **PickBranch** заголовке конструктора действий или в **свойства** окна для каждой ветви.
 
-**Выбора** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно помещаются конструкторы, например внутри  **Последовательность** конструктора действий. После помещения его в конструкторе рабочих процессов, он создает <xref:System.Activities.Statements.Pick> действия, которое по умолчанию содержит два пустых <xref:System.Activities.Statements.PickBranch> действия как элементы с именами Branch1 и Branch2. Соответствующие <xref:System.Activities.Statements.PickBranch.DisplayName%2A> значения свойств можно изменить в **PickBranch** заголовке конструктора действий или в **свойства** для каждой ветви.
-
-Существует два способа добавления <xref:System.Activities.Statements.PickBranch> действий в коллекцию <xref:System.Activities.Statements.Pick> объектов: перетаскивание **PickBranch** конструктора из **элементов** или с помощью контекстного меню на в пределах **выбора** область конструктора. Дополнительные сведения см. в разделе [PickBranch](../workflow-designer/pickbranch-activity-designer.md) раздела. Обратите внимание, что единственный элемент, который может быть помещен внутрь **выбора** конструктор операций является **PickBranch** конструктора действий.
+Существует два способа добавления <xref:System.Activities.Statements.PickBranch> действий в коллекцию <xref:System.Activities.Statements.Pick> объект: перетаскивания **PickBranch** конструктора из **элементов** или с помощью контекстного меню на в рамках **выбрать** область конструктора. Дополнительные сведения см. в разделе [PickBranch](../workflow-designer/pickbranch-activity-designer.md) раздела. Обратите внимание на то, что единственный элемент, который можно поместить в **выбрать** конструктор операций является **PickBranch** конструктора действий.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Свойства действия Pick в конструкторе рабочих процессов
 

@@ -9,16 +9,16 @@ description: Сведения о преимуществе сообщества A
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199187"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280381"
 ---
-# <a name="azure-community"></a>Сообщество Azure  
+# <a name="azure-community"></a>Сообщество Azure
 
-Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.  
+Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ ms.locfileid: "31199187"
 
 
 ## <a name="activation-steps"></a>Процедура активации
-Вы можете очень легко начать взаимодействие с сообществом Azure.  
+Вы можете очень легко начать взаимодействие с сообществом Azure.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку сообщества Azure в разделе поддержки и щелкните ссылку **Центр справки**. 
+2. Найдите плитку сообщества Azure в разделе поддержки и щелкните ссылку **Центр справки**.
 
    ![Плитка сообщества Azure](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. Здесь вы увидите список доступных форумов.  Щелкните тот из них, который вам больше подходит.  
+3. Здесь вы увидите список доступных форумов.  Щелкните тот из них, который вам больше подходит.
 
    ![Форумы сообщества Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  На форуме вы можете просмотреть темы и ответы, поискать ответы на свой вопрос или опубликовать новый вопрос. 
+4.  На форуме вы можете просмотреть темы и ответы, поискать ответы на свой вопрос или опубликовать новый вопрос.
 
    ![Пример сообщества Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -62,10 +62,10 @@ ms.locfileid: "31199187"
 |
 <sup>1</sup> *Включает следующие категории: не для перепродажи (NFR), Microsoft FTE, Microsoft Valued Partner (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
-Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты. 
+Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 -  Другие ресурсы сообщества Azure представлены на [странице поддержки](https://azure.microsoft.com/support/forums/) сообщества Azure.
 -  [Документация по Azure](/azure/).
--  Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://www.visualstudio.com/subscriptions/support/).
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/). 
+-  Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+-  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

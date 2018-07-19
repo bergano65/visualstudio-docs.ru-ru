@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Запись графических сведений программными средствами | Документы Microsoft'
+title: 'Пошаговое руководство: Запись графических сведений программными средствами | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a2caae8a3ef2a6342cf98094994d5ebccbe3275
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 641e98d1bbe5d54f69f458cec6642ceac484eff1
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477398"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433222"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 С помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно программно захватывать графические данные из приложения Direct3D.  
@@ -28,7 +28,7 @@ ms.locfileid: "31477398"
 -   Вызывайте `CaptureCurrentFrame`в случаях, когда проблемы с отрисовкой трудно предугадать и выявить при ручном тестировании, но можно прогнозировать программно при помощи информации о состоянии приложения во время выполнения.  
   
 ##  <a name="CaptureDX11_2"></a> Программный захват в Windows 10  
- В этой части пошагового руководства демонстрируется программный захват в приложениях, использующих интерфейс API DirectX 11.2 в Windows 10, который использует метод надежного захвата.
+ Этой части пошагового руководства демонстрируется программный захват в приложениях, использующих DirectX 11.2 API в Windows 10, который использует метод надежного захвата.
   
  В этом разделе рассмотрены следующие задачи:  
   
@@ -42,13 +42,13 @@ ms.locfileid: "31477398"
 >  Предыдущих реализациях программного захвата использовались инструменты удаленной отладки для Visual Studio для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для предоставления функциональности захвата.
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>подготовка приложения к использованию программного захвата;  
- Для использования программного захвата в приложении оно должно содержать необходимые заголовки. Эти заголовки являются частью пакета SDK Windows 10.  
+ Для использования программного захвата в приложении оно должно содержать необходимые заголовки. Эти заголовки являются частью пакета SDK для Windows 10.  
   
 ##### <a name="to-include-programmatic-capture-headers"></a>Включение заголовков программного захвата  
   
 -   Включите следующие заголовки в исходный файл, в котором будет определен интерфейс IDXGraphicsAnalysis:  
   
-    ```  
+    ```cpp
     #include <DXGItype.h>  
     #include <dxgi1_2.h>  
     #include <dxgi1_3.h>  
@@ -56,7 +56,7 @@ ms.locfileid: "31477398"
     ```  
   
     > [!IMPORTANT]
-    >  Не включать заголовок файла vsgcapture.h—which поддерживает программный захват в Windows 8.0 и более ранних версий, для выполнения программного захвата в приложениях для Windows 10. Этот заголовок несовместим с DirectX 11.2. Если этот файл включен после заголовка d3d11_2.h, компилятор выдает предупреждение. Если vsgcapture.h включен перед d3d11_2.h, приложение не запустится.  
+    >  Не включайте заголовок файла vsgcapture.h—which поддерживает программный захват в Windows 8.0 и более ранних версий, для выполнения программного захвата в приложениях Windows 10. Этот заголовок несовместим с DirectX 11.2. Если этот файл включен после заголовка d3d11_2.h включено, компилятор выдает предупреждение. Если vsgcapture.h включен перед d3d11_2.h, приложение не запустится.  
   
     > [!NOTE]
     >  Если пакет SDK DirectX от июня 2010 г. установлен на компьютере и путь включаемых файлов проекта содержит строку `%DXSDK_DIR%includex86`, переместите ее в конец пути включаемых файлов. Сделайте то же самое для пути к библиотеке.  
@@ -65,20 +65,20 @@ ms.locfileid: "31477398"
  Чтобы получить возможность захватывать графические данные из DirectX 11.2, необходимо получить интерфейс отладки DXGI.  
   
 > [!IMPORTANT]
->  При использовании программного захвата необходимо запустить приложение в режиме диагностики графики (Alt + F5 в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) или в разделе [командной строки для захвата](command-line-capture-tool.md).  
+>  При использовании программного захвата, необходимо запустить приложение в режиме диагностики графики (Alt + F5 в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) или в разделе [программа командной строки для захвата](command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Получение интерфейса IDXGraphicsAnalysis  
   
 -   Чтобы подключить интерфейс IDXGraphicsAnalysis к интерфейсу отладки DXGI, выполните указанный ниже код.  
   
-    ```  
+    ```cpp
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Не забудьте проверить `HRESULT` возвращенных [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) Чтобы получить допустимый интерфейс перед его использованием:  
+     Не забудьте установить флажок `HRESULT` возвращаемые [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) позволит добиться допустимый интерфейс перед их использованием:  
   
-    ```  
+    ```cpp
     if (FAILED(getAnalysis))  
     {  
         // Abort program or disable programmatic capture in your app.  
@@ -95,7 +95,7 @@ ms.locfileid: "31477398"
   
 - Чтобы начать захват графических данных, используйте `BeginCapture`.  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->BeginCapture();  
     ...  
@@ -103,18 +103,18 @@ ms.locfileid: "31477398"
   
      При вызове `BeginCapture` захват начинает выполняться немедленно, не дожидаясь начала следующего кадра. Захват заканчивается при выводе текущего кадра или при вызове `EndCapture`.  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->EndCapture();  
     ...  
     ```  
 
-- После вызова `EndCapture`, освободить объект графики. 
+- После вызова `EndCapture`, освободить объект graphics. 
   
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве было продемонстрировано, как захватывать графические данные программным путем. Далее можно перейти к рассмотрению следующего этапа.  
   
--   Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. В разделе [Обзор](overview-of-visual-studio-graphics-diagnostics.md).  
+-   Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Запись графических сведений](walkthrough-capturing-graphics-information.md)   

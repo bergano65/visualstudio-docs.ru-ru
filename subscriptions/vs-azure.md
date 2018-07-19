@@ -9,12 +9,12 @@ description: Сведения о том, как активировать пре�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: af36faf2345364386c85814b685dcd3211884fe2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336088"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280661"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 
@@ -94,7 +94,7 @@ ms.locfileid: "34336088"
 1.  Приобретите годовую облачную подписку Visual Studio редакции [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) или [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) через Visual Studio Marketplace.
 2.  Воспользуйтесь скидкой 50 % и более при обновлении текущей подписки через магазин [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
-Сравните все [виды подписок и их преимущества](https://www.visualstudio.com/vs/pricing/).
+Сравните все [виды подписок и их преимущества](https://visualstudio.microsoft.com/vs/pricing/).
 
 При наличии под учетной записью Майкрософт другой активной подписки Visual Studio **того же** уровня ее можно связать с текущими преимуществами Azure путем добавления [альтернативной учетной записи](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) на портале подписок Visual Studio. Если это не поможет, попробуйте [передать права Azure](/azure/billing/billing-subscription-transfer/) для активной подписки Visual Studio.
 
@@ -111,5 +111,5 @@ ms.locfileid: "34336088"
 -  Нужна помощь с Azure?  Ознакомьтесь со следующими ресурсами:
     - Техническая поддержка: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Документация по Azure](/azure/)
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://www.visualstudio.com/support/).
+-  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  У вас есть вопросы о Visual Studio IDE, Visual Studio Team Services, других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
