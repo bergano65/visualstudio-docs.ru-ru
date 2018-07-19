@@ -1,5 +1,5 @@
 ---
-title: 'Способ: добавить пользовательское свойство | Документы Microsoft'
+title: 'Способ: добавить пользовательское свойство | Документация Майкрософт'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,23 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767953"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756234"
 ---
-# <a name="how-to-add-a-custom-property"></a>Как: Добавление пользовательского свойства
-  Можно добавлять пользовательские свойства в модель с помощью **редактор свойств**. Можно получить доступ к этим свойствам в код, чтобы получить сведения, такие как строки соединения и другие данные во время выполнения.  
+# <a name="how-to-add-a-custom-property"></a>Практическое: Добавление пользовательского свойства
+  Можно добавить пользовательские свойства к модели с помощью **редактор свойств**. Можно получить доступ к этим свойствам в код, чтобы получить сведения, такие как строки подключения и другие данные во время выполнения.  
   
-### <a name="to-add-a-custom-property"></a>Добавление пользовательских свойств  
+### <a name="to-add-a-custom-property"></a>Чтобы добавить пользовательское свойство  
   
 1.  В **Обозреватель BDC**, выберите узел, представляющий элемент модели, к которому необходимо применить пользовательское свойство.  
   
-2.  В строке меню выберите **представление** > **окно свойств**.  
+2.  В строке меню выберите **представление** > **окно "Свойства"**.  
   
-3.  В **свойства** окно, выберите **Custom Properties** свойство и затем нажмите кнопку с многоточием (![эллипс конструктора ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Эллипс конструктора Mobile NET")).  
+3.  В **свойства** окно, выберите **пользовательские свойства** свойство, а затем нажмите кнопку с многоточием (![эллипс конструктора ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Эллипс конструктора Mobile NET")).  
   
      **Редактор свойств** откроется диалоговое окно.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "34767953"
 ## <a name="see-also"></a>См. также
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Создание модели подключения к бизнес-данных](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

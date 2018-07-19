@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4afd84dfaccc632143b380619a2324e607e833fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280355"
 ---
 # <a name="optimize-visual-studio-performance"></a>Оптимизация производительности Visual Studio
 
@@ -25,9 +26,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Обновление до Visual Studio 2017 версии 15.6 или более поздней
 
-Если в настоящее время вы используете Visual Studio 2015, скачайте [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) бесплатно, чтобы ознакомиться с улучшенными возможностями этой версии. В Visual Studio 2017 решения загружаются в два-три раза быстрее. Помимо этого, оптимизирована производительность и в других областях. Версия Visual Studio 2017 совместима с Visual Studio 2015, поэтому вы не потеряете ничего при пробном использовании.
+Если в настоящее время вы используете Visual Studio 2015, скачайте [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) бесплатно, чтобы ознакомиться с улучшенными возможностями этой версии. В Visual Studio 2017 решения загружаются в два-три раза быстрее. Помимо этого, оптимизирована производительность и в других областях. Версия Visual Studio 2017 совместима с Visual Studio 2015, поэтому вы не потеряете ничего при пробном использовании.
 
-Если в настоящее время вы используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Скачать эту версию можно [здесь](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
+Если в настоящее время вы используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Скачать эту версию можно [здесь](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="extensions-and-tool-windows"></a>Расширения и окна инструментов
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="help-us-improve"></a>Помогите нам улучшить службу
 
-Ваши отзывы помогают нам улучшить качество наших продуктов. Используйте функцию **Сообщить о проблеме** чтобы записать данные трассировки и отправить их нам. Щелкните значок отзыва рядом с кнопкой **быстрого запуска** или выберите в строке меню **Справка** > **Отправить отзыв** > **Сообщить о проблеме**. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Ваши отзывы помогают нам улучшить качество наших продуктов. Используйте функцию **Сообщить о проблеме** чтобы записать данные трассировки и отправить их нам. Щелкните значок отзыва рядом с кнопкой **быстрого запуска** или выберите в строке меню **Справка** > **Отправить отзыв** > **Сообщить о проблеме**. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="see-also"></a>См. также
 

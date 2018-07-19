@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a6d78c20f245f2088af8a51e2e30da3c025ae517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944415"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279990"
 ---
 # <a name="application-property-page-uwp-projects"></a>Страница свойств приложения (проекты UWP)
 
@@ -46,7 +46,7 @@ ms.locfileid: "31944415"
 
 Вы можете указать для приложения целевую версию и минимально допустимую версию Windows 10, используя раскрывающиеся списки в этом разделе. Рекомендуем указывать в качестве целевой последнюю версию Windows 10, а для корпоративных приложений поддерживать и более старую минимальную версию. Дополнительные сведения о выборе версий Windows 10 вы найдете в статье [Выбор версии UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Сведения о выборе целевых платформ в Visual Studio 2017 см. в разделе [Целевая платформа](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
+Сведения о выборе целевых платформ в Visual Studio 2017 см. в разделе [Целевая платформа](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
 
 ## <a name="see-also"></a>См. также
 

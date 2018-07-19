@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3d68fa1b777663ff8975f8ce99100d8eddc5f05d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e3d802000bede1a654b088fb80b134a36a0185be
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976923"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758531"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -28,21 +28,19 @@ ms.locfileid: "31976923"
 
 <xref:System.Activities.Statements.InvokeDelegate> вызывает открытый делегат.
 
-### <a name="using-the-invokedelegate-activity-designer"></a>Использование конструктора действий InvokeDelegate
+### <a name="use-the-invokedelegate-activity-designer"></a>Использование конструктора действий InvokeDelegate
 
-**InvokeDelegate** конструктора действий можно найти в **примитивы** категории **элементов**, который нажав **элементов** вкладки конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или же CTRL + ALT + X.)
-
-**InvokeDelegate** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, где каждый раз, если обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Это создает действие <xref:System.Activities.Statements.InvokeDelegate> с именем по умолчанию <xref:System.Activities.Activity.DisplayName%2A> InvokeDelegate. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **InvokeDelegate** конструктора или в **DisplayName** поле сетки свойств.
+Доступ **InvokeDelegate** конструктора действий в **примитивы** категории **элементов**. **InvokeDelegate** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, где каждый раз, если обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Удаление конструктора действий создает <xref:System.Activities.Statements.InvokeDelegate> действие по умолчанию <xref:System.Activities.Activity.DisplayName%2A> из InvokeDelegate. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **InvokeDelegate** конструктора действий или в **DisplayName** поле таблицы свойств.
 
 ### <a name="the-invokedelegate-properties"></a>Свойства InvokeDelegate
 
-В следующей таблице показаны свойства <xref:System.Activities.Statements.InvokeDelegate> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, и некоторые можно изменить в области Designerdesigner рабочего процесса.
+В следующей таблице показаны свойства <xref:System.Activities.Statements.InvokeDelegate> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, а некоторые можно изменить в поверхности конструктора рабочих процессов.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.InvokeDelegate>. Значение по умолчанию: InvokeDelegate.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Имя <xref:System.Activities.ActivityDelegate>, вызываемого, когда выполняется действие. Это свойство можно изменить в области конструктора. Это свойство обязательное.|
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Коллекция аргументов вызванного делегата. Ключи — это имена объектов параметров на <xref:System.Activities.ActivityDelegate> и значения, которые являются аргументами тех выражений вычисляются и назначены соответствующие объекты параметров. В сетке свойств нажмите кнопку с многоточием в **DelegateArguments** поля, он отображает **DelegateArguments** диалоговое окно, в котором можно установить это свойство. Нажмите кнопку **создать аргумент** поля для добавления аргументов.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.InvokeDelegate>. Значение по умолчанию: InvokeDelegate.<br /><br /> Несмотря на то что <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, рекомендуется использовать один.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Да|Имя <xref:System.Activities.ActivityDelegate>, вызываемого, когда выполняется действие. Это свойство можно изменить в области конструктора и является обязательным.|
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Коллекция аргументов вызванного делегата. Ключами являются имена объектов параметров на <xref:System.Activities.ActivityDelegate>, а значения — аргументы которого выражения вычисляются и назначены соответствующие объекты параметра. Для отображения **DelegateArguments** диалоговое окно, где можно задать это свойство, нажмите кнопку с многоточием в **DelegateArguments** поле таблицы свойств. Нажмите кнопку **создать аргумент** поле для добавления аргументов.|
 
 ## <a name="see-also"></a>См. также
 

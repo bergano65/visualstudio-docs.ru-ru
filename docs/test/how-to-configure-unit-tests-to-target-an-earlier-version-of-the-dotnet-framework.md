@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750744"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233494"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
 
@@ -32,7 +32,7 @@ ms.locfileid: "34750744"
 
 **Тестирование приложений SharePoint**
 
-Перечисленные выше возможности также позволяют с помощью Visual Studio создавать модульные тесты и тесты интеграции для приложений SharePoint. Дополнительные сведения о способах разработки приложений SharePoint в Visual Studio см. в разделах [Создание решений SharePoint](/office-dev/office-dev/create-sharepoint-solutions), [Построение и отладка решений SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) и [Проверка и отладка кода SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Перечисленные выше возможности также позволяют с помощью Visual Studio создавать модульные тесты и тесты интеграции для приложений SharePoint. Дополнительные сведения о способах разработки приложений SharePoint в Visual Studio см. в разделах [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md), [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) и [Проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Ограничения**
 
@@ -126,6 +126,6 @@ ms.locfileid: "34750744"
 
 ## <a name="see-also"></a>См. также
 
-- [Создание решений SharePoint](/office-dev/office-dev/create-sharepoint-solutions)
-- [Построение и отладка решений SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

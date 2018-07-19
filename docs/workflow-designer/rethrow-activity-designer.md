@@ -12,27 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d441724afa1cf481bc15e2a43e6ec744a951187
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24c13b629047b73b3f3ee15f2fc25a0120a2c177
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973840"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755259"
 ---
 # <a name="rethrow-activity-designer"></a>Конструктор действия Rethrow
 
 **Rethrow** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Rethrow> действия.
 
 ## <a name="the-rethrow-activity"></a>Действие Rethrow
- Действие <xref:System.Activities.Statements.Rethrow> вызывает ранее вызванное исключение. Это действие может использоваться только в обработчике <xref:System.Activities.Statements.Catch> в действии <xref:System.Activities.Statements.TryCatch>.
 
-### <a name="using-the-rethrow-activity-designer"></a>Использование конструктора действия ReThrow
- **Заново создать** конструктора действий можно найти в **обработка ошибок** категории **элементов**, который нажав **элементов**вкладка в левой части конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+Действие <xref:System.Activities.Statements.Rethrow> вызывает ранее вызванное исключение. Это действие может использоваться только в обработчике <xref:System.Activities.Statements.Catch> в действии <xref:System.Activities.Statements.TryCatch>.
 
- **Rethrow** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.Rethrow> действия по умолчанию **DisplayName** для Throw. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Rethrow** конструктора или в **DisplayName** поле сетки свойств.
+### <a name="use-the-rethrow-activity-designer"></a>Использование конструктора действия ReThrow
+
+Доступ **Rethrow** конструктора действий в **обработка ошибок** категории **элементов**. **Rethrow** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Удаление конструктора действий создает <xref:System.Activities.Statements.Rethrow> действие по умолчанию **DisplayName** для Throw. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Rethrow** конструктора действий, или в **DisplayName** поле таблицы свойств.
 
 ### <a name="the-rethrow-properties"></a>Свойства Rethrow
- В следующей таблице показаны свойства <xref:System.Activities.Statements.Rethrow> и описано их использование в конструкторе.
+
+В следующей таблице показаны <xref:System.Activities.Statements.Rethrow> свойства и описывает их использование в конструкторе:
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

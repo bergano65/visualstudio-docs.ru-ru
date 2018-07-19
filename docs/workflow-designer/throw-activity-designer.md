@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - конструктора операций Throw
+title: Конструктор рабочих процессов - конструктор действия Throw
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bb94ad17b78b1264129b8a5ba00a964edbd2f2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71cf547a1ea3599de8926e40ca5a43f3bdea0f71
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974660"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758325"
 ---
 # <a name="throw-activity-designer"></a>Конструктор действия Throw
 
 **Throw** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Throw> действия.
 
 ## <a name="the-throw-activity"></a>Действие Throw
- Действие <xref:System.Activities.Statements.Throw> вызывает исключение.
+
+Действие <xref:System.Activities.Statements.Throw> вызывает исключение.
 
 ### <a name="using-the-throw-activity-designer"></a>Использование конструктора операций Throw
- **Throw** конструктора действий можно найти в **обработка ошибок** категории **элементов**, который нажав **элементов**вкладка в левой части конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
 
- **Throw** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.Throw> действия по умолчанию **DisplayName** для Throw. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Throw** конструктора или в **DisplayName** поле сетки свойств. Свойство <xref:System.Activities.Statements.Throw.Exception%2A> должно редактироваться в таблице свойств.
+Доступ **Throw** конструктора действий в **обработка ошибок** категории **элементов**.
+
+**Throw** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.Throw> действие по умолчанию **DisplayName** для Throw. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Throw** конструктора действий или в **DisplayName** поле таблицы свойств. Свойство <xref:System.Activities.Statements.Throw.Exception%2A> должно редактироваться в таблице свойств.
 
 ### <a name="the-throw-properties"></a>Свойства Throw
- В следующей таблице показаны свойства <xref:System.Activities.Statements.Throw> и описано их использование в конструкторе.
+
+В следующей таблице показаны свойства <xref:System.Activities.Statements.Throw> и описано их использование в конструкторе.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|
@@ -42,6 +45,6 @@ ms.locfileid: "31974660"
 ## <a name="see-also"></a>См. также
 
 - [Коллекция](../workflow-designer/collection-activity-designers.md)
-- [заново создать](../workflow-designer/rethrow-activity-designer.md)
+- [Rethrow](../workflow-designer/rethrow-activity-designer.md)
 - [Конструктор действия Throw](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)

@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747434"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757257"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 
@@ -50,7 +50,7 @@ ms.locfileid: "34747434"
 >  -   Приложения Xamarin с нативным пользовательским интерфейсом:
 >     -   [Привет, Android](/xamarin/android/get-started/hello-android/) (простое приложение с одним экраном)
 >     -   [Привет, Android (несколько экранов)](/xamarin/android/get-started/hello-android-multiscreen/) (приложение с переходами между экранами)
->     -   [Пошаговое руководство по фрагментам в Android](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (помимо прочего, используется для иерархических экранов)
+>     -   [Пошаговое руководство по фрагментам в Android](/xamarin/android/platform/fragments/implementing-with-fragments/) (помимо прочего, используется для иерархических экранов)
 >     -   [Привет, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Привет, iOS (несколько экранов)](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 

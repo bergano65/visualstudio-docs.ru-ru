@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d84f81ffc5b3855b17faf838ba8786ad20a2981
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f727e2a06fa2e5798de84c7b6ee6d97bfb2a4558
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765435"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815289"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework для сбора данных о параллелизме с помощью командной строки
 В этой статье описывается, как использовать средства командной строки со средствами профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к запущенному автономному приложению .NET Framework (клиентскому) и сбора данных о параллелизме потоков и процессов.  
   
 > [!NOTE]
->  Программы командной строки средств профилирования расположены в подкаталоге *\Team Tools\Performance Tools* каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Чтобы использовать средства командной строки профилировщика, необходимо добавить путь к средствам либо в переменную среды PATH в окне командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к программам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Программы командной строки средств профилирования расположены в подкаталоге *\Team Tools\Performance Tools* каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Чтобы использовать средства командной строки профилировщика, необходимо добавить путь к средствам либо в переменную среды PATH в окне командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Когда профилировщик будет подключен к приложению, можно будет приостанавливать и возобновлять сбор данных. Чтобы завершить сеанс профилирования, профилировщик следует отключить от приложения и явным образом завершить его работу.  
   

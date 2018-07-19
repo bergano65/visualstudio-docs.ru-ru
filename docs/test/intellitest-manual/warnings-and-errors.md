@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815799"
 ---
 # <a name="warnings-and-errors"></a>Предупреждения и ошибки
 
@@ -62,13 +63,13 @@ IntelliTest ограничивает длину любого пути выпол
 
 Например, следующий код использует ветви до 100:
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 Можно изменить параметр **MaxBranches** атрибута, производного от **PexSettingsAttributeBase**, такого как [PexClass](attribute-glossary.md#pexclass) или [PexMethod](attribute-glossary.md#pexmethod). Следующий пример снимает это ограничение:
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ public void MyTest(...) {
 
 В коде теста можно использовать [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue), чтобы игнорировать ограничения, созданные условием цикла:
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ IntelliTest ограничивает длину любого пути выпол
 
 Например, каждый путь в следующем коде использует **n+1** условий:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 Можно изменить параметр **MaxConditions** атрибута, производного от **PexSettingsAttributeBase**, такого как [PexClass](attribute-glossary.md#pexclass) или [PexMethod](attribute-glossary.md#pexmethod). Пример:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ void ParameterizedTest(int n) {
 
 Вы можете использовать [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue), чтобы игнорировать ограничения, созданные условием цикла:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ IntelliTest ограничивает длину любого пути выпол
 
 Можно изменить параметр **MaxCalls** атрибута, производного от **PexSettingsAttributeBase**, такого как [PexClass](attribute-glossary.md#pexclass) или [PexMethod](attribute-glossary.md#pexmethod). Следующий пример снимает это ограничение:
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ IntelliTest ограничивает размер стека вызовов дл
 
 Можно изменить параметр **MaxStack** атрибута, производного от **PexSettingsAttributeBase**, такого как [PexClass](attribute-glossary.md#pexclass) или [PexMethod](attribute-glossary.md#pexmethod). Следующий пример снимает это ограничение (что не рекомендуется делать):
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ IntelliTest ограничивает число путей выполнения,
 
 Можно изменить параметр **MaxRuns** атрибута, производного от **PexSettingsAttributeBase**, такого как [PexClass](attribute-glossary.md#pexclass) или [PexMethod](attribute-glossary.md#pexmethod). Следующий пример снимает это ограничение (что не рекомендуется делать):
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ IntelliTest ограничивает число путей выполнения,
 
 Можно изменить параметр **MaxRunsWithoutNewTests** атрибута, производного от **PexSettingsAttributeBase**, такого как [PexClass](attribute-glossary.md#pexclass) или [PexMethod](attribute-glossary.md#pexmethod). Следующий пример снимает это ограничение (что не рекомендуется делать):
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ IntelliTest [создает входные данные теста](input-genera
 
   Например, если IntelliTest сообщает, что не знает ни о каких типах, которые можно назначить **System.Collections.IDictionary**, вы можете помочь инструменту, присоединив к тесту (или к классу фикстуры) следующий **PexUseTypeAttribute**:
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ IntelliTest [создает входные данные теста](input-genera
 
 * **Атрибут уровня сборки**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

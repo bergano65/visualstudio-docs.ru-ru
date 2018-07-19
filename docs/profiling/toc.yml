@@ -26,9 +26,6 @@
   items:
     - name: Анализ использования ЦП
       href: cpu-usage.md
-      items:
-        - name: Анализ загрузки ЦП в универсальных приложениях Windows (UWP)
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: Анализ данных об использовании памяти
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: Анализ памяти JavaScript
       href: javascript-memory.md
-      items:
-        - name: Пошаговое руководство. Поиск утечек памяти (JavaScript)
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: Анализ использования сети
       href: network-usage.md
     - name: Анализ скорости реагирования пользовательского интерфейса HTML
       href: html-ui-responsiveness.md
-      items:
-        - name: Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML)
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: Использование обозревателя производительности
       href: performance-explorer.md
       items:

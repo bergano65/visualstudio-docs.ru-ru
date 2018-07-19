@@ -1,10 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: b629de8144e08c7c0019a0a116f84e5877c3a477
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0ee0234e91cdf07c2b52c39d065d527a776dc4ce
+ms.sourcegitcommit: 64bf371ffe294e9b3cf769db03cf0f5c1a9b680c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/15/2018
+ms.locfileid: "35666981"
 ---
 ### <a name="create-a-project-using-django-20"></a>Создание проекта с помощью Django 2.0
 
@@ -16,13 +17,13 @@ ms.lasthandoff: 04/27/2018
 
 1. Чтобы установить последнюю версию пакета Django в глобальном окружении Python, выполните команду `pip install django`.
 
-1. Выполните команду `django-admin startproject <project_name>`, заменив `<project_name>` именем проекта HelloDjango, которое использовалось на шаге 1. Команда `startproject` создает файл `manage.py` вместе с папкой, соответствующей `<project_name>` с файлами `__init.py__`, `settings.py`, `urls.py` и `wsgi.py`.
+1. Выполните команду `django-admin startproject <project_name>`, заменив `<project_name>` именем проекта HelloDjango, которое использовалось на шаге 1. Команда `startproject` создает файл `manage.py` вместе с папкой, соответствующей `<project_name>` с файлами `__init__.py`, `settings.py`, `urls.py` и `wsgi.py`.
 
 1. В Visual Studio замените файлы Django 1.x в проекте файлами Django 2.x следующим образом:
 
   1. В **обозревателе решений** удалите `manage.py` и папку приложения Django.
   2. Щелкните правой кнопкой мыши проект, выберите команду **Добавить > Существующий элемент**, найдите и выберите файл `manage.py`, созданный на шаге 4, и нажмите кнопку **ОК**. После этого Visual Studio скопирует этот файл в проект.
-  3. Еще раз щелкните правой кнопкой мыши проект, выберите команду **Добавить > Существующая папка**, найдите и выберите папку приложения, созданную на шаге 4, и нажмите кнопку **ОК**. После этого Visual Studio скопирует в проект всю папку с четырьмя файлами.
+  В. Еще раз щелкните правой кнопкой мыши проект, выберите команду **Добавить > Существующая папка**, найдите и выберите папку приложения, созданную на шаге 4, и нажмите кнопку **ОК**. После этого Visual Studio скопирует в проект всю папку с четырьмя файлами.
   Г. Щелкните правой кнопкой мыши `manage.py` и выберите пункт **Задать как файл запуска**.
 
   > [!Important]

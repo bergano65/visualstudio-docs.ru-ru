@@ -1,7 +1,5 @@
 - name: Обзор
-  items:
-    - name: Доступ к данным в Visual Studio
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: Учебники
   items:
     - name: Создание простого приложения для работы с данными с помощью ADO.NET

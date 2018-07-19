@@ -1,7 +1,7 @@
 ---
 title: Отладка кода Python на удаленных компьютерах Linux
 description: Узнайте, как с помощью Visual Studio отладить код Python, выполняющийся на удаленных компьютерах Linux, в том числе здесь приведены необходимые этапы настройки, обеспечения безопасности и устранения неполадок.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1a5a4f5b0400c4bf3896e2d1c1ec7ec3e8664d31
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: de32c1d0309d6b6510a914fe359193105e2febde
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582817"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057389"
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 

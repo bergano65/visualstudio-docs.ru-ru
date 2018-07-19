@@ -1,5 +1,5 @@
 ---
-title: Диалоговое окно "Параметры",  проекты и решения, сборка и запуск
+title: «Диалоговое окно параметров», «Проекты и решения», «Сборка и запуск»
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,13 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bd6056c332725b4c44a56480fa21a064c52095d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6a569162105ffb577bdad854d973fff91b3c81b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845042"
 ---
-# <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Диалоговое окно "Параметры",  проекты и решения, сборка и запуск
+# <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>«Диалоговое окно параметров», «Проекты и решения», «Сборка и запуск»
 
 В этом диалоговом окне можно указать максимальное число проектов C++ или Visual C#, которые могут одновременно создаваться, некоторые поведения сборки по умолчанию, а также некоторые параметры журнала построения. Чтобы открыть эти параметры, выберите пункты меню **Сервис > Параметры**, разверните **Проекты и решения** и выберите пункт **Сборка и запуск**.
 
