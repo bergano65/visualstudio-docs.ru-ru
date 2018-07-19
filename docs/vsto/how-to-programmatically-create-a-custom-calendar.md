@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное создание пользовательского календаря | Документы Microsoft'
+title: 'Практическое: программное создание пользовательского календаря'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 30b48837ccf3bca6ea50fa7429f04a93a6c425f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 745bce24ade28aec1c5040d8bc568899292f48a8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256446"
 ---
-# <a name="how-to-programmatically-create-a-custom-calendar"></a>Практическое руководство. Программное создание пользовательского календаря
-  В этом примере создается новая папка календаря **личный**и создает новое приглашение и добавляет его в папку «Календарь». Затем выводится «календарь».  
+# <a name="how-to-programmatically-create-a-custom-calendar"></a>Практическое: программное создание пользовательского календаря
+  В этом примере создается новая папка календаря **личный**и затем создает новый элемент встречи и добавляет его в папке календаря. Затем код отображает «календарь».  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Работа с элементами календаря](../vsto/working-with-calendar-items.md)   
- [Как: программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)   
- [Практическое руководство. Программное создание приглашения на собрание](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+ [Практическое: программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)   
+ [Практическое: программное создание приглашения на собрание](../vsto/how-to-programmatically-create-a-meeting-request.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Отсутствие объектов вследствие заливки вершин | Документы Microsoft'
+title: 'Пошаговое руководство: Отсутствие объектов вследствие заливки вершин | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482013"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234261"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Пошаговое руководство. Отсутствие объектов вследствие заливки вершин
 В данном пошаговом руководстве показано, как с помощью средств диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исследовать объект, который отсутствует из-за ошибки, возникшей на этапе шейдера вершин.  
@@ -67,7 +67,7 @@ ms.locfileid: "31482013"
   
 4.  Остановитесь, когда достигнете вызова Draw, соответствующего отсутствующему объекту. В этом сценарии в окне **Этапы графического конвейера** видно, что геометрия была передана в GPU (о чем говорит наличие эскиза сборщика входных данных), однако она не отображается в целевом объекте отрисовки, так как произошла ошибка на этапе шейдера вершин (об этом говорит эскиз шейдера вершин).  
   
-     ![Событие DrawIndexed и его результат в конвейере](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
+     ![Событие DrawIndexed и его влияние на конвейере](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
  Убедившись, что приложение передало вызов Draw для геометрии отсутствующего объекта, и обнаружив, что проблема возникает на этапе шейдера вершин, можно использовать отладчик HLSL для проверки шейдера вершин и узнать, что случилось с геометрией объекта. Отладчик HLSL можно использовать для проверки состояния переменных HLSL при выполнении, пошагового выполнения кода HLSL и указания точек останова для помощи в диагностике проблемы.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "31482013"
   
 3.  При первом изменении `output` член `worldPos` записывается.  
   
-     ![Значение «OUTPUT.worldpos "оказывается допустимым](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
+     ![Значение «OUTPUT.worldpos "оказывается допустимым отображается разумным](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
      Так как его значение кажется разумным, пошаговое выполнение кода продолжается до следующей строки, которая изменяет `output`.  
   
@@ -108,7 +108,7 @@ ms.locfileid: "31482013"
     > [!TIP]
     >  При одновременной отладке приложения можно установить точку останова в этом месте, и она будет достигнута при отрисовке следующего кадра. Это позволяет проверить члены `m_marbleConstantBufferData` , чтобы убедиться, что значение члена `projection` равно всем нулям при заполнении буфера констант.  
   
- Найдя расположение, где заполняется буфер констант, и обнаружив, что его значения берутся из переменной `m_marbleConstantBufferData`, следующим шагом выясните, где значение члена `m_marbleConstantBufferData.projection` равно всем нулям. Можно использовать функцию **Найти все ссылки** , чтобы быстро выполнить поиск кода, меняющего значение `m_marbleConstantBufferData.projection`.  
+ Найти расположение, где заполняется буфер констант, и Обнаружив, что его значения берутся из переменной `m_marbleConstantBufferData`, следующим шагом является где `m_marbleConstantBufferData.projection` член имеет значение все нули. Можно использовать функцию **Найти все ссылки** , чтобы быстро выполнить поиск кода, меняющего значение `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Поиск места задания члена проекции в исходном коде приложения  
   

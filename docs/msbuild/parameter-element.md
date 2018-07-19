@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 544851ca500e417cbc3010c23ad122a4ab1f2cc0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 18db5f6cd5c2bccaca73161713af15a88175bf49
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567947"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302607"
 ---
 # <a name="parameter-element"></a>Элемент Parameter
 Содержит сведения о конкретном параметре для задачи, созданной `UsingTask``TaskFactory`.  Имя элемента — это имя параметра.  Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -36,7 +36,7 @@ ms.locfileid: "31567947"
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <ParameterGroup ParameterType="SystemType"  
     Output="true/false"  
     Required="true/false" />  

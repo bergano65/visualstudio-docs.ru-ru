@@ -1,5 +1,5 @@
 ---
-title: 'Как: использовать ClickOnce для развертывания приложения, работающие на нескольких версиях платформы .NET Framework | Документы Microsoft'
+title: 'Практическое: использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: eb4d8696755a70005923833625c72a95e5f1e80a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815078"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079954"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
-Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Требуется создать и обновить манифесты приложения и развертывания.  
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое: использование ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET framework
+Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.  
   
 > [!NOTE]
->  Прежде чем установить приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Версия общеязыковой отличается от [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.  
+>  Прежде чем устанавливать приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Среда CLR версии отличается между [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.  
   
  Этот процесс включает следующие шаги:  
   
@@ -37,60 +37,60 @@ ms.locfileid: "34815078"
   
 2.  Включение нескольких версий платформы .NET Framework в манифест развертывания.  
   
-3.  Измените файл app.config, чтобы вывести список совместимых версий среды выполнения .NET Framework.  
+3.  Изменение *app.config* файл, чтобы получить список совместимых версий среды выполнения .NET Framework.  
   
-4.  Изменение манифеста приложения для пометки зависимых сборок в качестве сборок платформы .NET Framework.  
+4.  Изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework.  
   
 5.  Подпишите манифест приложения.  
   
-6.  Обновите и подпишите манифест развертывания.  
+6.  Обновить и подписать манифест развертывания.  
   
-### <a name="to-generate-the-application-and-deployment-manifests"></a>Создание манифестов приложения и развертывания  
+### <a name="to-generate-the-application-and-deployment-manifests"></a>Для создания манифестов приложения и развертывания  
   
--   Для публикации приложения и создания файлов манифеста развертывания приложения и используйте мастер публикации или страница публикации в конструкторе проектов. Дополнительные сведения см. в разделе [как: публикация приложения ClickOnce с использованием мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
+-   Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
   
-### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы Включение нескольких версий платформы .NET Framework  
+### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы получить список нескольких версий .NET Framework  
   
-1.  В каталоге публикации откройте манифест развертывания с помощью редактора XML в Visual Studio. Манифест развертывания имеет расширение имени файла приложения.  
+1.  В каталоге публикации откройте манифест развертывания с помощью редактора XML в Visual Studio. Манифест развертывания содержит *.application* расширение имени файла.  
   
-2.  Замените код XML между `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` и `</compatibleFrameworks>` элементы XML-кодом, перечислены поддерживаемые версии .NET Framework для приложения.  
+2.  Замените XML-код между `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` и `</compatibleFrameworks>` элементы XML-кодом, перечислены поддерживаемые версии .NET Framework для вашего приложения.  
   
-     Ниже приведены некоторые доступные версии платформы .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.  
+     Ниже приведены некоторые доступные версии .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.  
   
     |Версия платформы .NET Framework|XML|  
     |----------------------------|---------|  
-    |4 клиента|\<Framework targetVersion = «4.0» профиль = supportedRuntime «Клиент» = «4.0.30319 необходимо» / >|  
-    |4 full|\<Framework targetVersion = «4.0» профиль = «Full» supportedRuntime = «4.0.30319 необходимо» / >|  
-    |3.5 клиента|\<Framework targetVersion = «3.5» профиль = supportedRuntime «Клиент» = «2.0.50727» / >|  
-    |3.5 полный|\<Framework targetVersion = «3.5» профиль = «Full» supportedRuntime = «2.0.50727» / >|  
+    |4 клиента|\<Framework targetVersion = «4.0» profile = supportedRuntime «Клиент» = «4.0.30319 необходимо» / >|  
+    |4 full|\<Framework targetVersion = «4.0» profile = «Full» supportedRuntime = «4.0.30319 необходимо» / >|  
+    |3.5 клиента|\<Framework targetVersion = «3.5» profile = supportedRuntime «Клиент» = «2.0.50727» / >|  
+    |3.5 полный|\<Framework targetVersion = «3.5» profile = «Full» supportedRuntime = «2.0.50727» / >|  
     |3.0|\<Framework targetVersion = «3.0» supportedRuntime = «2.0.50727» / >|  
   
-### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Чтобы изменить файл app.config, чтобы вывести список совместимых версий среды выполнения .NET Framework  
+### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Чтобы изменить файл app.config, чтобы получить список совместимых версий среды выполнения .NET Framework  
   
-1.  В обозревателе решений откройте файл App.config с помощью редактора XML в Visual Studio.  
+1.  В обозревателе решений откройте *app.config* файл с помощью редактора XML в Visual Studio.  
   
-2.  Замените (или добавить) XML-кода между `<startup>` и `</startup>` элементы с XML, в которой перечислены поддерживаемые среды выполнения .NET Framework для приложения.  
+2.  Замените (или добавьте) XML-код между `<startup>` и `</startup>` элементов при помощи XML со списком поддерживаемых сред выполнения .NET Framework, для вашего приложения.  
   
-     Ниже приведены некоторые доступные версии платформы .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.  
+     Ниже приведены некоторые доступные версии .NET Framework и соответствующий XML-код, который можно добавить в манифест развертывания.  
   
     |Версия среды выполнения .NET framework|XML|  
     |------------------------------------|---------|  
-    |4 клиента|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = версии 4.0, профиль клиента =» / >|  
+    |4 клиента|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0, профиль клиента =» / >|  
     |4 full|\<версия supportedRuntime = sku «v4.0.30319» =». NETFramework, версия = v4.0» / >|  
     |3.5 полный|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 клиента|\<supportedRuntime версия = «v2.0.50727» sku = «Client» / >|  
+    |3.5 клиента|\<версия supportedRuntime = sku «v2.0.50727» = «Client» / >|  
   
-### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Изменение манифеста приложения для пометки зависимых сборок в качестве сборок платформы .NET Framework  
+### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Для изменения манифеста приложения для пометки зависимых сборок как сборок платформы .NET Framework  
   
-1.  В каталоге публикации откройте манифест приложения с помощью редактора XML в Visual Studio. Манифест развертывания имеет расширение manifest.  
+1.  В каталоге публикации откройте манифест приложения с помощью редактора XML в Visual Studio. Манифест развертывания содержит *.manifest* расширение имени файла.  
   
-2.  Добавить `group="framework"` для XML-код зависимостей для отмеченных сборок (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, и `System.Data.Entity`). Например XML-код должен выглядеть следующим образом:  
+2.  Добавить `group="framework"` зависимость XML для отмеченных сборок (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, и `System.Data.Entity`). Например XML-код должен выглядеть следующим образом:  
   
     ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  Обновить номер версии `<assemblyIdentity>` элемент для Microsoft.Windows.CommonLanguageRuntime номер версии платформы .NET Framework, начиная с самого общий знаменатель. Например, если приложение предназначено для .NET Framework 3.5 и [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], используйте 2.0.50727.0 номер версии и XML должен выглядеть следующим образом:  
+3.  Обновить номер версии `<assemblyIdentity>` элемент для Microsoft.Windows.CommonLanguageRuntime номеру версии для платформы .NET Framework, который является наименьшим общим знаменателем. Например, если приложение предназначено для .NET Framework 3.5 и [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], номер версии используйте 2.0.50727.0 и XML должен выглядеть следующим образом:  
   
     ```xml  
     <dependency>  
@@ -102,7 +102,7 @@ ms.locfileid: "34815078"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов  
   
--   Обновление и повторное подписание манифестов приложения и развертывания. Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [как: повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   

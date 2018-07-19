@@ -1,5 +1,5 @@
 ---
-title: 'Как: сопоставление схем и листов внутри Visual Studio | Документы Microsoft'
+title: 'Практическое: сопоставление схем и листов внутри Visual Studio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,55 +18,56 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d0caadfc08d7fa1d2ea29d04e84a5d954a42fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b95e24d151ef6bf8a0083d130c4e38f3f33d480
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256049"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Практическое руководство. Сопоставление схем и листов внутри Visual Studio
-  XML-схемы можно сопоставить с листа, когда лист открыт в Visual Studio. Можно использовать те же средства Microsoft Office Excel, которые используются, если книга открыта вне Visual Studio. Проект Office создает те же объекты, будет ли сопоставления схемы с листом до или после создания решения Excel.  
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Практическое: сопоставление схем и листов внутри Visual Studio
+  На лист можно сопоставить схему XML, когда лист открыт в среде Visual Studio. Можно использовать те же средства Microsoft Office Excel, которые используются, если книга открыта вне Visual Studio. Проект Office создает те же объекты ли сопоставления схемы с листом до или после создания решения Excel.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  Нельзя использовать составные XML-схемы в решениях Excel.  
+>  Составные XML-схемы нельзя использовать в решениях Excel.  
   
-### <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Для сопоставления XML-схемы в лист Excel в Visual Studio  
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Для сопоставления схемы XML в лист Excel в Visual Studio  
   
-1.  Откройте проект книги или шаблон Excel в Visual Studio.  
+1.  Откройте книгу или шаблон проекта Excel в Visual Studio.  
   
-2.  Выберите лист для перемещения фокуса в конструктор.  
+2.  Выберите лист, чтобы переместить фокус в конструктор.  
   
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В **XML** щелкните **источника**.  
   
-     **XML-источник** открывается окно.  
+     **Источник XML** откроется окно.  
   
-5.  В **XML-источник** окно, нажмите кнопку **карты XML**.  
+5.  В **источник XML** окно, нажмите кнопку **карт XML**.  
   
-     **Карты XML** откроется диалоговое окно.  
+     **Карт XML** откроется диалоговое окно.  
   
-6.  В **карты XML** диалоговое окно, нажмите кнопку **добавить**.  
+6.  В **карт XML** диалоговом окне щелкните **добавить**.  
   
 7.  Перейдите к нужному файлу схемы, выберите его и нажмите кнопку **откройте**.  
   
 8.  Нажмите кнопку **ОК**.  
   
-     Схема отобразится в **XML-источник** окна. В проекте типизированный <xref:System.Data.DataSet> создается на основе схемы и <xref:System.Windows.Forms.BindingSource> создается.  
+     Схема представлена в **источник XML** окна. В проекте, типизированный <xref:System.Data.DataSet> создается на основе схемы и <xref:System.Windows.Forms.BindingSource> создается.  
   
-9. Перетащите элементы из **XML-источник** окна на части листа, где необходимо создать соответствующие элементы управления.  
+9. Перетащите элементы с **источник XML** окно до запятой на листе, в которой будут создаваться соответствующие элементы управления.  
   
-     При перетаскивании неповторяющегося элемента схемы проекта Office приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управления, автоматически привязывается к <xref:System.Windows.Forms.BindingSource>.  
+     Если перетащить элемент схемы неповторяющихся Office проекта приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элемент управления, который автоматически привязывается к <xref:System.Windows.Forms.BindingSource>.  
   
-     При перетаскивании повторяющегося элемента схемы проекта Office приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления, который автоматически не привязан к источнику данных. Дополнительные сведения см. в разделе [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
+     При перетаскивании повторяющегося элемента схемы Office проекта приводит к возникновению ошибки <xref:Microsoft.Office.Tools.Excel.ListObject> элемент управления, который автоматически не привязан к источнику данных. Дополнительные сведения см. в разделе [XML-схем и данных в настройки уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
   
 ## <a name="see-also"></a>См. также  
- [Как: сопоставление схем в документы Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [XML-схемы и данные в настройках на уровне документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [Практическое: сопоставление схем и документов Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

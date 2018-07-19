@@ -1,5 +1,5 @@
 ---
-title: Работа с книгами | Документы Microsoft
+title: Работа с книгами
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,27 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 77072b01ffc09fd1b876e1daa3e3fd7e7c837d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e812f21df14e9081450e1a7b637a7b93338fb582
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258584"
 ---
-# <a name="working-with-workbooks"></a>Работа с книгами
+# <a name="work-with-workbooks"></a>Работа с книгами
   Класс <xref:Microsoft.Office.Tools.Excel.Workbook> и <xref:Microsoft.Office.Interop.Excel.Workbooks> содержит методы и свойства, применяемые для выполнения задач с книгами.  
   
 |Задача|Процедура|  
 |----------|---------------|  
-|Создание новой книги.|[Практическое руководство. Программное создание книг Excel](../vsto/how-to-programmatically-create-new-workbooks.md)|  
-|Открытие указанной книги.|[Практическое руководство. Программное открытие книг Excel](../vsto/how-to-programmatically-open-workbooks.md)|  
-|Закрытие указанной книги и сохранение изменений.|[Практическое руководство. Программное закрытие книг Excel](../vsto/how-to-programmatically-close-workbooks.md)|  
-|Сохранение книги в форматах Excel или в формате XML.|[Практическое руководство. Программное сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)|  
+|Создание новой книги.|[Практическое: программное создание книг Excel](../vsto/how-to-programmatically-create-new-workbooks.md)|  
+|Открытие указанной книги.|[Практическое: программное открытие книг Excel](../vsto/how-to-programmatically-open-workbooks.md)|  
+|Закрытие указанной книги и сохранение изменений.|[Практическое: программное закрытие книг Excel](../vsto/how-to-programmatically-close-workbooks.md)|  
+|Сохранение книги в форматах Excel или в формате XML.|[Практическое: программное Сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)|  
 |Установка фокуса в текущей книге или в другой книге.|  
-|[Практическое руководство. Программная защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)|  
-|Получение коллекции недавно использовавшихся файлов книг.|[Практическое руководство. Программный вывод списка последних использовавшихся файлов книг Excel](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|  
-|Открытие текстовых файлов в виде книг.|[Практическое руководство. Программное открытие текстовых файлов как книг Excel](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|  
+|[Практическое: программная Защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)|  
+|Получение коллекции недавно использовавшихся файлов книг.|[Практическое: программный вывод списка недавно использовавшихся файлов книг](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|  
+|Открытие текстовых файлов в виде книг.|[Практическое: программное открытие текстовых файлов как книг Excel](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|  
   
- Дополнительные сведения о задачах и объектной модели Excel см. в разделе [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
+ Дополнительные сведения о задачах и объектной модели Excel см. в разделе [обзор объектной модели Excel](../vsto/excel-object-model-overview.md).  
   
  В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применяются в настройках на уровне документа.  
   
@@ -44,6 +45,6 @@ ms.lasthandoff: 04/16/2018
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Работа с листами](../vsto/working-with-worksheets.md)   
  [Работа с диапазонами](../vsto/working-with-ranges.md)   
- [Использование элементов управления Windows Forms в листах Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
+ [С помощью элементов управления Windows Forms в листах Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
   
   

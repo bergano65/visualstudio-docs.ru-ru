@@ -1,6 +1,6 @@
 ---
 title: 'CA1305: укажите IFormatProvider'
-ms.date: 11/04/2016
+ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -14,16 +14,19 @@ ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: da4125a87ea7fe1576834dacc14af9a1a1861206
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900361"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174310"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: укажите IFormatProvider
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
@@ -32,49 +35,56 @@ ms.locfileid: "31900361"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Метод или конструктор вызывает один или несколько членов, имеющих перегрузки, принимающие <xref:System.IFormatProvider?displayProperty=fullName> не вызывает перегрузку, которая принимает параметр и метод или конструктор <xref:System.IFormatProvider> параметра. Это правило не учитывает вызовы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] методами, описанными как пропускающие <xref:System.IFormatProvider> параметра, а также следующие методы:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+Метод или конструктор вызывает один или несколько членов, которые имеют перегрузки, принимающие <xref:System.IFormatProvider?displayProperty=fullName> параметра и этот метод или конструктор не вызывает перегрузку, принимающую <xref:System.IFormatProvider> параметра.
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+Это правило не учитывает вызовы методов .NET Framework, задокументированы в качестве пропуск <xref:System.IFormatProvider> параметра. Правило также игнорирует следующие методы:
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>Описание правила
- Когда <xref:System.Globalization.CultureInfo?displayProperty=fullName> или <xref:System.IFormatProvider> не предоставляется, значение по умолчанию, поставляемое перегруженным членом может не иметь ожидаемого воздействия во всех языковых стандартах. Кроме того [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] элементов выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут не подходить для кода. Чтобы убедиться в том, что код работает должным образом для сценариев, необходимо предоставить сведения о культуре, согласно следующим правилам:
 
--   Если значение будет отображаться для пользователя, используется текущий язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+Когда <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> или <xref:System.IFormatProvider> не предоставляется значение по умолчанию, поставляемое перегруженным членом, возможно, не нужных во всех языковых стандартах. Кроме того члены .NET Framework выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут быть неправильными в коде. Чтобы убедиться, что код работает правильно для сценариев, необходимо предоставить сведения об особенностях языка и региональных параметров в соответствии с приведенным ниже рекомендациям:
 
--   Если значение будет храниться и доступ к программным обеспечением (сохраняется в базе данных или файл), использующие инвариантный язык. См. раздел <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+- Если значение будет отображаться для пользователя, используйте текущий язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
--   Если вы не знаете назначение значения, потребитель данных или поставщик указать язык и региональные параметры.
+- Если значение будет храниться и использоваться программой, (сохраняется в файле или базе данных), использующие инвариантный язык. См. раздел <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
- Обратите внимание, что <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> используется только для извлечения локализованных ресурсов с помощью экземпляра <xref:System.Resources.ResourceManager?displayProperty=fullName> класса.
+- Если вы не знаете назначение значения, у потребителя данных или поставщик указать язык и региональные параметры.
 
- Даже если поведение по умолчанию перегруженного члена, соответствующий вашим потребностям, лучше явно вызвать перегрузку конкретного языка и региональных параметров, чтобы код самодокументируемыми и более простую обслуживаемую.
+Даже если перегруженным членом по умолчанию не подходит для ваших потребностей, лучше явно вызвать перегрузку конкретного языка и региональных параметров, чтобы ваш код самодокументируемыми и более простую обслуживаемую.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, используйте перегрузку, которая принимает <xref:System.Globalization.CultureInfo> или <xref:System.IFormatProvider> и указывать аргумент согласно правилам, перечисленные ранее.
+
+Чтобы устранить нарушение этого правила, используйте перегрузку, принимающую <xref:System.IFormatProvider> аргумент. Также можно использовать [C# интерполированную строку](/dotnet/csharp/tutorials/string-interpolation) и передать его в <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> метод.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Это безопасно подавить предупреждение из этого правила, когда известно, что поставщик языка и региональных параметров и формат по умолчанию является правильным выбором и удобства поддержки кода не является важным разработки приоритет.
+
+Его можно безопасно подавить предупреждение из этого правила, когда известно, что формат по умолчанию, является правильным выбором и удобства поддержки кода не является важным разработки приоритет.
 
 ## <a name="example"></a>Пример
- В следующем примере `BadMethod` вызывает два нарушения данного правила. `GoodMethod` исправляет первого нарушения путем передачи инвариантного языка и региональных параметров для <xref:System.String.Compare%2A>и исправляет второй нарушение путем передачи текущего языка и региональных параметров для <xref:System.String.ToLower%2A> из-за `string3` отображается для пользователя.
 
- [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_1.cs)]
+В следующем коде `example1` строки нарушает правило CA1305. `example2` Строка должна соответствовать правило CA1305 путем передачи <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, который реализует <xref:System.IFormatProvider>, <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. `example3` Строка должна соответствовать правило CA1305 путем передачи интерполированной строки в <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
 
-## <a name="example"></a>Пример
- В следующем примере показано влияние текущего языка и региональных параметров по умолчанию <xref:System.IFormatProvider> , выбран по <xref:System.DateTime> типа.
+```csharp
+string name = "Georgette";
 
- [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_2.cs)]
+// Violates CA1305
+string example1 = String.Format("Hello {0}", name);
 
- В этом примере формируются следующие данные:
+// Satisfies CA1305
+string example2 = String.Format(CultureInfo.CurrentCulture, "Hello {0}", name);
 
- **6/4/1900 12:15:12 ПО**
-**06/04/1900 12:15:12**
+// Satisfies CA1305
+string example3 = FormattableString.Invariant($"Hello {name}");
+```
+
 ## <a name="related-rules"></a>Связанные правила
- [CA1304: укажите CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+
+- [CA1304: укажите CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>См. также
-[С помощью класса CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)
+
+- [С помощью класса CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)

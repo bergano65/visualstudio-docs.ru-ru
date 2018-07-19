@@ -19,11 +19,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 5690abe8e155c33d8e998ea0a18749e172da7e34
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949505"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797536"
 ---
 # <a name="property-pages-javascript"></a>Страницы свойств (JavaScript)
 Со **страниц свойств** можно получить доступ к параметрам проекта. Страницы, которые отображаются на **страницах свойств**, можно использовать для изменения свойств проекта.

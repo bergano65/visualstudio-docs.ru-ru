@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1588ad8207c18c771751aed58ac2bd275a37dc
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fe83e09316493ba68b67e3ccc0c785b7093032dd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876479"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281775"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Каталог компонентов Visual Studio 2017 Express для Desktop
 
@@ -94,7 +94,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Wind
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 

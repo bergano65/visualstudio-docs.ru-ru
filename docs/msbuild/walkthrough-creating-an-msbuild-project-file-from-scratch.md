@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a6fdb894c7dd2177afc7ced375b575de7d9532
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9f870842427549c81f161b3f18b3ff846f974d3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575199"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326911"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
 Языки программирования, предназначенные для платформы .NET Framework, используют файлы проекта MSBuild для описания и контроля процесса построения приложения. Если для создания файла проекта MSBuild используется Visual Studio, соответствующий XML добавляется в файл автоматически. Тем не менее, понимание принципов организации XML и способов его изменения, позволяющих контролировать построение, может вам пригодиться.  
@@ -367,7 +367,7 @@ ms.locfileid: "31575199"
   
 1.  В файле проекта добавьте к открытой цели "Построение" следующие два атрибута:  
   
-    ```  
+    ```xml  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
     ```  
   

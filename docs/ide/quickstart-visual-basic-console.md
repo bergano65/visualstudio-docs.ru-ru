@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 17d95ed3ceeaa93110fa17b301e8d37ed87f073d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5f88e305e7ece1bcdf9eecb920c4e2aa567f3439
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766247"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282350"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Краткое руководство. Создание первого консольного приложения на Visual Basic в Visual Studio
 
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое приложение на Visual Basic, выполняющееся в консоли.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="create-a-project"></a>Создание проекта
 

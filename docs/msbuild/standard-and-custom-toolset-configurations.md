@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 855bd7af4372f5216abab3d6ddd45ec8f7809baa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c38d7ba577beedce8651bb291700a6c071ee7b48
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573119"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303020"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 Набор инструментов MSBuild содержит ссылки на задачи, целевые объекты и средства, которые можно использовать для создания проекта приложения. В состав MSBuild входит стандартный набор инструментов, но вы также можете создавать пользовательские наборы. Сведения об указании набора инструментов см. в разделе [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
@@ -39,9 +39,9 @@ ms.locfileid: "31573119"
   
 |Раздел реестра .|Имя ключа|Строковое значение параметра|  
 |------------------|--------------|----------------------|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Путь установки .NET Framework 2.0|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Путь установки .NET Framework 3.5|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Путь установки .NET Framework 4|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\  |MSBuildToolsPath|Путь установки .NET Framework 2.0|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\  |MSBuildToolsPath|Путь установки .NET Framework 3.5|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\  |MSBuildToolsPath|Путь установки .NET Framework 4|  
   
 ### <a name="sub-toolsets"></a>Поднаборы инструментов  
  Если раздел реестра в приведенной выше таблице содержит подраздел, MSBuild использует его для определения пути к вложенному набору инструментов, который переопределяет путь в родительском наборе инструментов. Вот пример такого подраздела:  

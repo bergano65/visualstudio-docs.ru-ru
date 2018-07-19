@@ -1,5 +1,5 @@
 ---
-title: Оператор Stop в Visual Basic | Документы Microsoft
+title: Оператор Stop в Visual Basic | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5909d8ac37ee77c43b5ddbd2625c3de92de32cad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474899"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056147"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Оператор Stop в Visual Basic
 Оператор "Stop" в Visual Basic является программной альтернативой заданию точки останова. Когда отладчик встречает оператор "Stop", он прерывает выполнение программы (переходит в режим приостановки выполнения). Программисты C# могут добиться того же результата с помощью вызова System.Diagnostics.Debugger.Break.  
@@ -39,7 +39,7 @@ ms.locfileid: "31474899"
   
  Чтобы избежать необходимости удаления операторов "Stop", можно использовать условную компиляцию:  
   
-```  
+```cpp
 #If DEBUG Then  
    Stop  
 #Else  
@@ -49,13 +49,13 @@ ms.locfileid: "31474899"
   
  Другой вариант — воспользоваться оператором "Assert" вместо оператора "Stop". Оператор "Debug.Assert" прерывает выполнение программы только в том случае, если не выполнено заданное условие, и автоматически удаляется при построении выпускаемой версии приложения. Дополнительные сведения см. в разделе [утверждения в управляемом коде](../debugger/assertions-in-managed-code.md). Если требуется, чтобы оператор "Assert" всегда прерывал выполнение программы в отладочной версии, его можно задать следующим образом:  
   
-```  
+```csharp
 Debug.Assert(false)  
 ```  
   
  И еще один вариант — использовать метод Debug.Fail:  
   
-```  
+```csharp
 Debug.Fail("a clever output string goes here")  
 ```  
   

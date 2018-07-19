@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d018b26f2df32b9e3cc1e3fae65ec8b3d3394806
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26c561c259641ce7bed118d8e4aa71c383b29b67
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570084"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327015"
 ---
 # <a name="otherwise-element-msbuild"></a>Элемент Otherwise (MSBuild)
 Указывает блок кода, который должен быть выполнен, только если условия всех элементов `When` оценены как `false`.  
@@ -41,7 +41,7 @@ ms.locfileid: "31570084"
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <Otherwise>  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  

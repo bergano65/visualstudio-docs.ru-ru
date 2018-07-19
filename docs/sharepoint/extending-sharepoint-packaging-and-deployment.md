@@ -1,5 +1,5 @@
 ---
-title: Расширение SharePoint упаковки и развертывания | Документы Microsoft
+title: Расширение SharePoint Packaging and Deployment | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,50 +15,50 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 827024df92fe23799c4bbbe023bbf8e940dc507b
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8c6ca4b347cdd733ac166782d8e78dc8e78e0772
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767025"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325369"
 ---
-# <a name="extend-sharepoint-packaging-and-deployment"></a>Расширить возможности SharePoint упаковки и развертывания
+# <a name="extend-sharepoint-packaging-and-deployment"></a>Расширение SharePoint упаковки и развертывания
   Вы можете расширить процесс упаковки и развертывания для проектов SharePoint.
   
 ## <a name="create-deployment-steps"></a>Создание шагов развертывания
  При развертывании проекта SharePoint [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] выполняет ряд шагов развертывания. Visual Studio включает встроенные шаги развертывания для многих задач, например для отзыва или добавления решений. Однако вы также можете создать собственные шаги развертывания.  
   
- Пошаговое руководство, руководство по созданию шага развертывания см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ Пошаговое руководство по созданию шага развертывания, см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ## <a name="create-deployment-configurations"></a>Создание конфигураций развертывания
  Конфигурация развертывания представляет собой набор шагов развертывания, который выполняется для данного проекта, но может повлиять на все элементы проекта SharePoint. Каждая конфигурация развертывания содержит один набор шагов, который выполняется при развертывании проекта, и другой набор, который выполняется при отзыве проекта. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] включает две встроенные конфигурации развертывания, но можно также создать свои собственные. При создании конфигурации развертывания можно включить встроенные шаги развертывания, а также специально созданные шаги.  
   
- Пошаговое руководство по созданию конфигурации развертывания см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ Пошаговое руководство по созданию конфигурации развертывания, см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
-## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Выполнение кода при развертывании или отзыве решения SharePoint
+## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Выполнения кода при развертывании или отзыве решения SharePoint
  Для выполнения дополнительных задач при развертывании или отзыве решения SharePoint можно настроить обработку событий. Visual Studio создает события, которые можно обрабатывать, в следующих сценариях.  
   
--   До и после выполнения каждого шага развертывания для элемента проекта SharePoint. Дополнительные сведения см. в разделе [как: запуска кода при руководство](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).  
+-   До и после выполнения каждого шага развертывания для элемента проекта SharePoint. Дополнительные сведения см. в разделе [как: выполнения кода при выполнении шагов развертывания](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).  
   
--   До и после развертывания или отзыва проекта SharePoint. Дополнительные сведения см. в разделе [как: запуска кода при проекта SharePoint является развертывания или отзыва](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).  
+-   До и после развертывания или отзыва проекта SharePoint. Дополнительные сведения см. в разделе [как: выполнения кода при развертывания или отзыва проекта SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).  
   
 ## <a name="handle-deployment-conflicts"></a>Обработка конфликтов развертывания
- Некоторые типы элементов проекта SharePoint, включая модули, веб-части, экземпляры списков и типы содержимого, предоставляют встроенную функцию разрешения конфликтов развертывания. При развертывании решения, содержащего один из таких элементов проекта, Visual Studio сначала проверяет, существует ли на сайте SharePoint файл с тем же именем, URL-адресом или идентификатором, что и файл в развертываемом элементе. В случае обнаружения конфликта Visual Studio может автоматически разрешить его или запросить у пользователя, следует ли Visual Studio разрешить конфликт или отменить развертывание. Дополнительные сведения см. в разделе [Устранение неполадок SharePoint упаковки и развертывания](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ Некоторые типы элементов проекта SharePoint, включая модули, веб-части, экземпляры списков и типы содержимого, предоставляют встроенную функцию разрешения конфликтов развертывания. При развертывании решения, содержащего один из таких элементов проекта, Visual Studio сначала проверяет, существует ли на сайте SharePoint файл с тем же именем, URL-адресом или идентификатором, что и файл в развертываемом элементе. В случае обнаружения конфликта Visual Studio может автоматически разрешить его или запросить у пользователя, следует ли Visual Studio разрешить конфликт или отменить развертывание. Дополнительные сведения см. в разделе [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
  Эту возможность можно расширить, добавив собственный код, который проверяет наличие конфликтов развертывания и разрешает их. Дополнительные сведения см. в разделе [как: обработка конфликтов развертывания](../sharepoint/how-to-handle-deployment-conflicts.md).  
   
-## <a name="run-command-line-operations-before-or-after-a-project-is-deployed"></a>Выполнить операции командной строки до или после развертывания проекта
+## <a name="run-command-line-operations-before-or-after-a-project-is-deployed"></a>Для запуска до или после развертывания проекта
  Чтобы выполнить операцию командной строки при развертывании решения SharePoint, можно задать свойства <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PreDeploymentCommand%2A> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PostDeploymentCommand%2A> объекта <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>. Visual Studio выполнит эти команды до и после развертывания проекта.  
   
- В некоторых случаях могут возникать конфликты развертывания. Существует несколько способов разрешения конфликтов. Дополнительные сведения см. в разделе [Устранение неполадок SharePoint упаковки и развертывания](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ В некоторых случаях могут возникать конфликты развертывания. Существует несколько способов разрешения конфликтов. Дополнительные сведения см. в разделе [SharePoint, устранение неполадок с упаковкой и развертыванием](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
 ## <a name="customize-validation-rules"></a>Настройка правил проверки
- Перед развертыванием пакета решения (WSP-файла) можно создать настраиваемые правила проверки компонентов и пакетов для проверки допустимости компонента или пакета. Например, можно передать разработчикам сведения, предупреждения или ошибки, которые помогут им устранить проблемы проверки. Дополнительные сведения см. в разделе [как: Создание пользовательских компонентов и правила проверки пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+ Перед развертыванием пакета решения (WSP-файла) можно создать настраиваемые правила проверки компонентов и пакетов для проверки допустимости компонента или пакета. Например, можно передать разработчикам сведения, предупреждения или ошибки, которые помогут им устранить проблемы проверки. Дополнительные сведения см. в разделе [как: Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
 ## <a name="see-also"></a>См. также
- [Как: выполнения кода при выполнении шагов развертывания](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
+ [Практическое: выполнения кода при выполнении шагов развертывания](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
  [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
- [Как: Создание пользовательской функции правил проверки и пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)   
+ [Практическое: Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)   
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
   
   

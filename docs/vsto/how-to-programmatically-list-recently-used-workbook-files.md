@@ -1,5 +1,5 @@
 ---
-title: 'Как: программным путем список недавно использовавшихся файлов книг Excel | Документы Microsoft'
+title: 'Практическое: программный вывод списка недавно использовавшихся файлов книг'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2d9c333b6d96329abec3fd52ecaa5da1cf97c74
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257593"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Практическое руководство. Программный вывод списка последних использовавшихся файлов книг Excel
-  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Свойство возвращает коллекцию, содержащую имена всех файлов, которые отображаются в списке недавно использовавшихся файлов Microsoft Office Excel. Длина списка зависит от числа файлов, которые пользователь выбрал для сохранения. Результаты могут отображаться в диапазоне.  
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Практическое: программный вывод списка недавно использовавшихся файлов книг
+  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Свойство возвращает коллекцию, содержащую имена всех файлов, которые отображаются в списке недавно использовавшихся файлов Microsoft Office Excel. Длина списка зависит от числа файлов, которые пользователь выбрал для сохранения. Можно отобразить результаты в диапазон.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Чтобы вывести список недавно использовавшихся книг в объекте range  
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Чтобы вывести список недавно использовавшихся книг объекта range  
   
-1.  Циклическую обработку списка недавно открывавшихся файлов и отображаемые имена в ячейки <xref:Microsoft.Office.Interop.Excel.Range> объекта.  
+1.  Циклический перебор списка последних файлов и отображения названий в ячейки <xref:Microsoft.Office.Interop.Excel.Range> объекта.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]  

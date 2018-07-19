@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство анализ управляемого кода на наличие дефектов кода | Документы Microsoft
+title: Пошаговое руководство Проверка управляемого кода на наличие дефектов кода | Документация Майкрософт
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746563"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117723"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство: Анализ управляемого кода для кода ошибки
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство: Анализ управляемого кода для кода дефектов
 
-В этом пошаговом руководстве будет проанализирован управляемого проекта на наличие дефектов кода с помощью средства анализа кода.
+В этом пошаговом руководстве будет анализировать управляемого проекта для дефектов кода с помощью средства анализа кода.
 
-В этом пошаговом руководстве этапы процесса с помощью анализа кода для анализа вашей сборок управляемого кода .NET на соответствие с рекомендации по разработке Microsoft .NET Framework.
+В этом пошаговом руководстве представлены шаги по процесс с помощью функций анализа кода для анализа вашей сборок управляемого кода .NET на соответствие рекомендациям по Microsoft .NET Framework.
 
 ## <a name="create-a-class-library"></a>Создание библиотеки классов
 
-### <a name="to-create-a-class-library"></a>Для создания библиотеки классов
+### <a name="to-create-a-class-library"></a>Чтобы создать библиотеку классов
 
 1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**.
 
-1. В **новый проект** диалогового окна разверните **установленные** > **Visual C#** и нажмите кнопку **Windows Desktop**.
+1. В **новый проект** диалоговое окно последовательно раскройте элементы **установленные** > **Visual C#**, а затем выберите **Windows Desktop**.
 
 1. Выберите **библиотека классов (.NET Framework)** шаблона.
 
-1. В **имя** введите **CodeAnalysisManagedDemo** и нажмите кнопку **ОК**.
+1. В **имя** текстовое поле, тип **CodeAnalysisManagedDemo** и нажмите кнопку **ОК**.
 
-1. После создания проекта откройте *Class1.cs* файла.
+1. После создания проекта, откройте *Class1.cs* файл.
 
-1. Замените существующий текст в файле Class1.cs следующий код:
+1. Замените существующий текст в файл Class1.cs следующим кодом:
 
    ```csharp
    using System;
@@ -59,9 +59,9 @@ ms.locfileid: "34746563"
 
 ## <a name="analyze-the-project"></a>Анализ проекта
 
-### <a name="to-analyze-a-managed-project-for-code-defects"></a>Анализ управляемого проекта для дефекта кода
+### <a name="to-analyze-a-managed-project-for-code-defects"></a>Анализ управляемого проекта для дефектов кода
 
-1. Выберите проект в CodeAnalysisManagedDemo **обозревателе решений**.
+1. Выберите проект CodeAnalysisManagedDemo в **обозревателе решений**.
 
 1. В меню **Проект** выберите пункт **Свойства**.
 
@@ -71,77 +71,77 @@ ms.locfileid: "34746563"
 
 1. Убедитесь, что **включить анализ кода в построении** проверяется.
 
-1. Из **выполнить этот набор правил** раскрывающемся списке выберите **все правила Майкрософт**.
+1. Из **выполнить этот набор правил** стрелку раскрывающегося списка выберите **все правила Майкрософт**.
 
-1. На **файл** меню, нажмите кнопку **сохранить выбранные элементы**, а затем закройте страницы свойств.
+1. На **файл** меню, щелкните **сохранить выбранные элементы**, а затем закройте страницы свойств.
 
-1. На **построения** меню, нажмите кнопку **построения CodeAnalysisManagedDemo**.
+1. На **построения** меню, щелкните **построения CodeAnalysisManagedDemo**.
 
-    Предупреждения при построении проекта CodeAnalysisManagedDemo отображаются в **список ошибок** и **вывода** windows.
+    Предупреждения построения проекта CodeAnalysisManagedDemo отображаются в **список ошибок** и **вывода** windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Исправьте проблемы анализа кода
 
-### <a name="to-correct-code-analysis-rule-violations"></a>Для устранения нарушения правил анализа кода
+### <a name="to-correct-code-analysis-rule-violations"></a>Для устранения нарушений правил анализа кода
 
 1. На **представление** меню, выберите **список ошибок**.
 
-    В зависимости от выбранного профиля разработчика, возможно, чтобы она указывала на **другие окна** на **представление** меню, а затем выберите **список ошибок**.
+    В зависимости от выбранного профиля разработчика, возможно, чтобы они указывали **Other Windows** на **представление** меню, а затем выберите **список ошибок**.
 
 1. В **обозревателе решений**, выберите **Показать все файлы**.
 
-1. Разверните узел свойства, а затем откройте *AssemblyInfo.cs* файла.
+1. Разверните узел свойства, а затем откройте *AssemblyInfo.cs* файл.
 
 1. Следуйте приведенным ниже советам, чтобы устранить предупреждения:
 
-   [CA1014: Помечайте сборки атрибутом CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: «demo» должен быть помечен атрибутом CLSCompliantAttribute и его значение должно быть true.
+   [CA1014: Помечайте сборки атрибутом CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: «demo» должны быть помечены CLSCompliantAttribute, и его значение должно быть true.
 
-   1. Добавьте код `using System;` файл AssemblyInfo.cs.
+   1. Добавьте код `using System;` в файл AssemblyInfo.cs.
 
-   1. Добавьте следующий код `[assembly: CLSCompliant(true)]` файл AssemblyInfo.cs в конец.
+   1. Далее добавьте код `[assembly: CLSCompliant(true)]` в конец файл AssemblyInfo.cs.
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытого demo(String)
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo(String)
 
    1. Добавьте конструктор `public demo (String s) : base(s) { }` к классу `demo`.
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: демонстрация открытые (String, исключение)
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo (String, исключений)
 
    1. Добавьте конструктор `public demo (String s, Exception e) : base(s, e) { }` к классу `demo`.
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: защищенные Демонстрация (SerializationInfo, StreamingContext)
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: защищенные demo (SerializationInfo, StreamingContext)
 
    1. Добавьте код `using System.Runtime.Serialization;` в начало файла Class1.cs.
 
    1. Добавьте конструктор `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытого demo()
+   [CA1032: Реализуйте стандартные конструкторы исключения](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: добавьте следующий конструктор этого класса: открытый demo()
 
    1. Добавьте конструктор `public demo () : base() { }` к классу `demo` **.**
 
-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте регистр имени пространства имен «testCode», изменив ее «TestCode».
+   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте прописные или строчные буквы имени пространства имен «testCode», изменив ее на «TestCode».
 
-   1. Изменить регистр пространства имен `testCode` для `TestCode`.
+   1. Регистр пространства имен `testCode` для `TestCode`.
 
-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте регистр имени типа «demo», изменив ее «Demo».
+   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте регистр имени типа «demo», изменив ее на «Demo».
 
-   1. Измените имя члена `Demo`.
+   1. Измените имя элемента, на который `Demo`.
 
-   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте регистр имени члена «item», изменив ее «Item».
+   [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: исправьте прописные или строчные буквы имени член «item», изменив ее на «Item».
 
-   1. Измените имя члена `Item`.
+   1. Измените имя элемента, на который `Item`.
 
-   [CA1710: Идентификаторы должны иметь правильные суффиксы](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: переименование «testCode.demo» завершить «Исключения».
+   [CA1710: Идентификаторы должны иметь правильные суффиксы](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: переименование «testCode.demo», чтобы в конце стояло «Exception».
 
-   1. Измените имя класса и его конструкторов на `DemoException`.
+   1. Измените имя класса и его конструкторов для `DemoException`.
 
    [CA2210: Сборки должны иметь допустимые строгие имена](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): подпись «CodeAnalysisManagedDemo» с ключом строгого имени.
 
    1. На **проекта** меню, выберите **CodeAnalysisManagedDemo свойства**.
 
-      Будут отображены свойства проекта.
+      Отображаются свойства проекта.
 
    1. Перейдите на вкладку **Подписывание** .
 
-   1. Выберите **подписать сборку** флажок.
+   1. Выберите **подписать сборку** "флажок".
 
    1. В **выберите файл ключа строгого имени** выберите  **\<создать... >**.
 
@@ -149,15 +149,15 @@ ms.locfileid: "34746563"
 
    1. В **имя файла ключа**, введите TestKey.
 
-   1. Введите пароль и нажмите кнопку **ОК**.
+   1. Введите пароль, а затем выберите **ОК**.
 
-   1. На **файл** меню, выберите **сохранить выбранные элементы**, а затем закройте страницы свойств.
+   1. На **файл** меню, выберите **сохранить выбранные элементы**, а затем закройте окно свойств.
 
-   [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: добавить атрибут [Serializable] в тип «demo», что этот тип реализует интерфейс ISerializable.
+   [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: добавить атрибут [Serializable] к типу «demo», так как этот тип реализует ISerializable.
 
-   1. Добавить `[Serializable ()]` к классу атрибут `demo`.
+   1. Добавить `[Serializable ()]` классу атрибут `demo`.
 
-   После завершения изменения файл Class1.cs должен выглядеть следующим образом:
+   После внесения изменений файл Class1.cs должен выглядеть следующим образом:
 
    ```csharp
    using System;
@@ -186,11 +186,11 @@ ms.locfileid: "34746563"
 
 ### <a name="to-exclude-code-defect-warnings"></a>Для исключения предупреждений о дефектах кода
 
-1. Для каждого из оставшихся предупреждений выполните следующее:
+1. Для каждой из оставшихся предупреждения сделайте следующее:
 
     1. Выберите предупреждение в **список ошибок**.
 
-    1. Щелкните правой кнопкой мыши или команду контекстного меню, выберите **подавлять** > **в файле блокируемых предупреждений**.
+    1. В контекстном меню выберите **подавлять** > **в файле блокируемых предупреждений**.
 
 1. Перестройте проект.
 

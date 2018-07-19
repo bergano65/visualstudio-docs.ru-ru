@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41fed015f4ad80c3c3b74bc77ea3b9cc6ed8eb18
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b6397a8b35934842497a756fc3294a47e30fb281
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619761"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978076"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Исправление ошибок сети при установке или использовании Visual Studio
 
@@ -61,11 +61,11 @@ ms.locfileid: "31619761"
 
         ```xml
         <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#" http://<yourproxy:port#>"/>
+            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
         </defaultProxy>
         ```
 
-        В `proxyaddress="<http://<yourproxy:port#>`необходимо вставить правильный адрес прокси-сервера в сети.
+        В `proxyaddress="<http://<yourproxy:port#>` необходимо вставить правильный адрес прокси-сервера в сети.
 
     OR
 
@@ -114,7 +114,7 @@ Visual Studio использует протокол TLS 1.2 для подклю�
 
 ## <a name="get-support"></a>Техническая поддержка
 
-При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные действия не устраняют проблему на этапе установки, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные действия не устраняют проблему на этапе установки, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 

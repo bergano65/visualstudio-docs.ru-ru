@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297629"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Установка Visual Studio 2017 в сетевых средах с низкой пропускной способностью или низким уровнем надежности
 
 Мы рекомендуем вам опробовать веб-установщик Visual Studio&mdash;мы уверены, что вам понравится работать с ним.
 
  > [!div class="button"]
- > [Скачивание Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Скачивание Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 Однако если подключение к Интернету недоступно или ненадежно, вы можете создать локальный кэш файлов, необходимых для автономной установки, с помощью командной строки. Ниже описывается порядок действий.
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="step-2---create-a-local-install-cache"></a>Шаг 2. Создание локального кэша установки
 
-Для выполнения этого действия необходимо подключение к Интернету. Чтобы создать локальный макет, откройте командную строку и используйте одну из команд, приведенных в примерах ниже. В этих примерах предполагается, что вы используете выпуск Visual Studio Community. Для других выпусков измените команду соответствующим образом.
+Для выполнения этого действия необходимо подключение к Интернету. Чтобы создать локальный макет, откройте командную строку и выполните одну из команд, приведенных в примерах ниже. В этих примерах предполагается, что вы используете выпуск Visual Studio Community. Для других выпусков измените команду соответствующим образом.
 
 - Для разработки веб-приложений .NET или классических приложений .NET выполните следующую команду:
 
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 
@@ -120,3 +121,4 @@ ms.lasthandoff: 04/20/2018
 * [Установка Visual Studio](install-visual-studio.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md)

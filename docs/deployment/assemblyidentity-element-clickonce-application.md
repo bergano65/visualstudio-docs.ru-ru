@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; элемент (приложение ClickOnce) | Документы Microsoft'
+title: '&lt;assemblyIdentity&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bea363e9d0a3880fbbaa34bb4af4fec88149c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89b54c52625578b6ba1f7859654804fa1caaad32
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559781"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081274"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; элемент (приложение ClickOnce)
 Идентифицирует приложение, развернутое в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml
   
       <assemblyIdentity   
    name  
@@ -48,18 +48,18 @@ ms.locfileid: "31559781"
 |---------------|-----------------|  
 |`Name`|Обязательно. Определяет имя приложения.<br /><br /> Если `Name` содержит специальные символы, такие как одинарные или двойные кавычки, приложение может вызвать сбой активации.|  
 |`Version`|Обязательно. Указывает номер версии приложения в следующем формате: `major.minor.build.revision`|  
-|`publicKeyToken`|Необязательный. Указывает символ 16 шестнадцатеричную строку, которая представляет собой последние 8 байтов `SHA-1` хэш-значение открытого ключа, которым подписана приложения или сборки. Открытый ключ, используемый для подписи каталога должна быть 2048 бит или больше.<br /><br /> Несмотря на то, что подпись сборки, рекомендуется, но необязательно, этот атрибут является обязательным. Если сборка не подписана, следует скопировать значение из самозаверяющий сборки или используйте значение «пустой» все нули.|  
-|`processorArchitecture`|Обязательно. Задает процессор. Допустимые значения: `msil` для всех процессоров `x86` для 32-разрядной версии Windows, `IA64` для 64-разрядной версии Windows, и `Itanium` для Intel 64-разрядных процессоров Itanium.|  
-|`language`|Обязательно. Идентифицирует две части кодов языка (например, `en-US`) сборки. Этот элемент имеет `asmv2` пространства имен. Если не указан, значение по умолчанию — `neutral`.|  
+|`publicKeyToken`|Необязательный. Указывает, 16-знаковая шестнадцатеричную строку, которая представляет собой последние 8 байт `SHA-1` хэш-значение открытого ключа, которым подписаны приложение или сборка. Открытый ключ, используемый для подписи каталога должен быть 2048 бит или более поздней версии.<br /><br /> Несмотря на то, что подпись сборки, рекомендуется, но необязательно, этот атрибут является обязательным. Если сборка не подписана, следует скопировать значение из собственной подписью сборки или использовать значение «пустого» все нули.|  
+|`processorArchitecture`|Обязательно. Указывает процессор. Допустимые значения: `msil` для всех процессоров `x86` для 32-разрядной Windows, `IA64` для 64-разрядной Windows, и `Itanium` для Intel 64-разрядных процессоров Itanium.|  
+|`language`|Обязательно. Определяет две части кодов языка (например, `en-US`) сборки. Этот элемент имеет `asmv2` пространства имен. Если этот атрибут не задан, по умолчанию используется `neutral`.|  
   
 ## <a name="examples"></a>Примеры  
   
-### <a name="description"></a>Описание  
- В следующем примере кода показан `assemblyIdentity` элемент в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифеста приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
+### <a name="description"></a>Описание:  
+ В следующем примере кода показано `assemblyIdentity` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
   
 ### <a name="code"></a>Код  
   
-```  
+```xml  
 <asmv1:assemblyIdentity   
   name="My Application Deployment.exe"   
   version="1.0.0.0"   

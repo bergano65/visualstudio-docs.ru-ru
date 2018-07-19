@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124ccc0a4eb7af470a9631bc2291dbeb089711e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951795"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924278"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.
@@ -61,7 +61,6 @@ ms.locfileid: "31951795"
 |[Создать файл](../../ide/reference/new-file-command.md)|Создает новый файл и добавляет его в выбранный проект.|
 |[Открыть файл](../../ide/reference/open-file-command.md)|Открывает существующий файл и позволяет указать редактор.|
 |[Открытие проекта](../../ide/reference/open-project-command.md)|Открывает существующий проект и позволяет добавить проект в текущее решение.|
-|[Открытие решения](../../ide/reference/open-solution-command.md)|Открывает существующее решение.|
 |[Печать](../../ide/reference/print-command.md)|Вычисляет выражение и отображает результаты или указанный текст.|
 |[Команда "Быстрая проверка"](../../ide/reference/quick-watch-command.md)|Отображает выбранный или указанный текст в поле **Выражение** диалогового окна **Контрольное значение** .|
 |[Заменить](../../ide/reference/replace-command.md)|Заменяет текст в файлах с использованием подмножества параметров, доступных на элементе управления **Поиск и замена** .|

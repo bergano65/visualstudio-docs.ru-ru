@@ -14,14 +14,16 @@ ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e202c35ee6bd8353170e758629b1cc6e739b775d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900216"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080975"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: следует правильно реализовывать IDisposable
 
@@ -34,51 +36,51 @@ ms.locfileid: "31900216"
 
 ## <a name="cause"></a>Причина
 
-`IDisposable` реализован неверно. Ниже перечислены некоторые причины возникновения этой проблемы:
+<xref:System.IDisposable?displayProperty=nameWithType> Интерфейс реализован неверно. Возможные причины:
 
-- Интерфейс IDisposable пересоздания в классе.
+- <xref:System.IDisposable> является воссозданы в классе.
 
-- Завершение переопределяется повторно.
+- Завершение подготовки является reoverridden.
 
-- Метод Dispose переопределяется.
+- Переопределяется Dispose().
 
-- Метод Dispose() не является открытым, запечатанным или с именем Dispose.
+- Метод Dispose() не является общим, [запечатанный](/dotnet/csharp/language-reference/keywords/sealed), или с именем **Dispose**.
 
-- Dispose(bool) не является защищенным, виртуальным или незапечатанном.
+- Dispose(bool) не защищенный виртуальный и незапечатанный.
 
 - В незапечатанных типов Dispose() необходимо вызвать Dispose(true).
 
-- Для незапечатанных типов реализации Finalize не вызывает один или оба Dispose(bool) или метод завершения класса.
+- Для незапечатанных типов реализации Finalize не вызывает один или оба Dispose(bool) или метод завершения базового класса.
 
-Нарушение любого из этих шаблонов приведет к выводу предупреждения.
+Нарушение любого из этих шаблонов активирует предупреждение ca1063 следует.
 
-Каждый незапечатанный тип, который объявляет и реализует интерфейс IDisposable необходимо предоставить свой собственный защищенный виртуальный void Dispose(bool) метод. Метод Dispose() следует вызывать Dipose(true) и Finalize должен вызывать Dispose(false). Если вы создаете незапечатанный тип, который объявляет и реализует интерфейс IDisposable, необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [Очистка неуправляемых ресурсов](/dotnet/standard/garbage-collection/unmanaged) в [рекомендации по разработке .NET Framework](/dotnet/standard/design-guidelines/index).
+Каждый незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс необходимо предоставить собственный защищенный виртуальный void Dispose(bool) метод. Dispose() должны вызывать Dipose(true) и метод завершения должны вызывать Dispose(false). При создании незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс, необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов (руководство по .NET)](/dotnet/standard/garbage-collection/unmanaged) и [удаляемости](/dotnet/standard/design-guidelines/dispose-pattern).
 
 ## <a name="rule-description"></a>Описание правила
 
-Все типы IDisposable должны правильно реализовывать шаблон "Dispose".
+Все <xref:System.IDisposable> типы должны реализовывать [шаблон Dispose](/dotnet/standard/design-guidelines/dispose-pattern) правильно.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Проверьте код и определите, какой из указанных ниже способов для устранения нарушения.
+Проверьте код и определить, какой из указанных ниже способов устранения нарушения:
 
-- Удалите IDisposable из списка интерфейсов, реализуемых {0} и вместо него переопределите реализацию базового класса Dispose.
+- Удалить <xref:System.IDisposable> из списка интерфейсов, которые реализуются вашей типом и вместо него переопределите реализацию базового класса Dispose.
 
-- Удалите метод завершения из типа {0}, переопределите Dispose (bool disposing) и поместите логику завершения в ветвь кода, где «disposing» равно false.
+- Удалите метод завершения из типа, переопределите Dispose (bool disposing) и поместите логику завершения в ветвь кода, где значение «disposing» равно false.
 
-- Удалить {0}, переопределите Dispose (bool disposing) и поместите логику освобождения в ветвь кода, где «disposing» равно true.
+- Переопределите Dispose (bool disposing) и поместите логику освобождения в ветвь кода, где «disposing» равно true.
 
-- Убедитесь, что {0} объявлен как открытый и запечатанный.
+- Убедитесь, что Dispose() объявлен как открытый и [запечатанный](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Переименование {0} на «Dispose» и убедитесь, что он объявлен как открытый и запечатанный.
+- Переименуйте метод dispose для **Dispose** и убедитесь, что он объявлен как открытый и [запечатанный](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Убедитесь, что {0} объявлен как защищенный, виртуальный и распечатанный.
+- Убедитесь в том, что Dispose(bool) объявлен как защищенный, виртуальный и незапечатанный.
 
-- Изменить {0} , чтобы он вызывал Dispose(true), затем вызывает GC. SuppressFinalize для текущего экземпляра объекта («this» или «Me» в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), а затем возвращает.
+- Изменить Dispose() так, чтобы он вызывал Dispose(true), затем вызывает <xref:System.GC.SuppressFinalize%2A> для текущего экземпляра объекта (`this`, или `Me` в Visual Basic), а затем возвращает.
 
-- Изменить {0} , чтобы он вызывал Dispose(false) и затем возвращает.
+- Измените метод завершения, таким образом, чтобы он вызывал Dispose(false) и затем возвращает.
 
-- Если создается незапечатанный тип, который объявляет и реализует интерфейс IDisposable, убедитесь, что реализация IDisposable строятся по схеме, описанной ранее в этом разделе.
+- При создании незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейсом, убедитесь, что реализация <xref:System.IDisposable> соответствует шаблону, который описан ранее в этом разделе.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
@@ -86,7 +88,7 @@ ms.locfileid: "31900216"
 
 ## <a name="pseudo-code-example"></a>Пример псевдокода
 
-Следующий псевдокод представлен общий пример реализации Dispose(bool) в классе, который использует управляемые и машинные ресурсы.
+Следующий псевдокод представлен общий пример реализации Dispose(bool) в класс, использующий управляемые и машинные ресурсы.
 
 ```csharp
 public class Resource : IDisposable
@@ -102,7 +104,7 @@ public class Resource : IDisposable
     }
 
     // NOTE: Leave out the finalizer altogether if this class doesn't
-    // own unmanaged resources itself, but leave the other methods
+    // own unmanaged resources, but leave the other methods
     // exactly as they are.
     ~Resource()
     {
@@ -131,3 +133,8 @@ public class Resource : IDisposable
     }
 }
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Удалить шаблон (рекомендации по разработке framework)](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Очистка неуправляемых ресурсов (руководство по .NET)](/dotnet/standard/garbage-collection/unmanaged)

@@ -1,5 +1,5 @@
 ---
-title: Функции ловушек отчетов | Документы Microsoft
+title: Функции ловушек отчетов | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,29 +25,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 562944404d3e02a2e5768fcd74c67302475e6190
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 093b7732f78f7257a2e58812ca2697496d65682f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481182"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056486"
 ---
 # <a name="report-hook-functions"></a>Отчетные функции-ловушки
-Отчетные функции-ловушки, установленные с помощью [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), вызывается каждый раз [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) создает отладочный отчет. Помимо всего прочего их можно использовать для фильтрации отчетов, которые позволяют отобрать выделения конкретного типа. Отчетная функция-ловушка должна иметь следующий прототип:  
+Отчетные функции-ловушки, установленные с помощью [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), вызывается каждый раз [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) создает отчет отладки. Помимо всего прочего их можно использовать для фильтрации отчетов, которые позволяют отобрать выделения конкретного типа. Отчетная функция-ловушка должна иметь следующий прототип:  
   
-```  
+```cpp
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- Указатель, передаваемый **_CrtSetReportHook** относится к типу **_CRT_REPORT_HOOK**, как определено в CRTDBG. H:  
+ Указатель, передаваемый **_CrtSetReportHook** имеет тип **_CRT_REPORT_HOOK**, как определено в CRTDBG. H:  
   
-```  
+```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- Когда библиотеки CRT вызывает функцию-обработчик *nRptType* аргумент содержит категорию отчета (**_CRT_WARN**, **_CRT_ERROR**, или **_CRT _ASSERT**), *szMsg* содержит указатель на строку сообщения полностью собранное отчета и *retVal* указывает ли `_CrtDbgReport` следует продолжить обычное выполнение После создания отчета или запуска отладчика. (A *retVal* нулевое значение продолжает выполнение, а значение 1 запускает отладчик.)  
+ Если библиотека CRT вызывает функцию-ловушку, *nRptType* аргумент содержит категорию отчета (**_CRT_WARN**, **_CRT_ERROR**, или **_CRT Макросы _ASSERT**), *szMsg* содержит указатель на полностью собранную строку отчетного сообщения, и *retVal* указывает ли `_CrtDbgReport` следует продолжить обычное выполнение После создания отчета или запустите отладчик. (Объект *retVal* нулевое значение позволяет продолжить выполнение, а значение 1 запускает отладчик.)  
   
- Если ловушка обрабатывает сообщение полностью, дальнейшая выдача отчета не требуется, он должен возвращать **TRUE**. Если он возвращает **FALSE**, `_CrtDbgReport` будет дальше выдавать отчетные сообщения обычно.  
+ Если ловушка обрабатывает сообщение полностью, дальнейшая выдача отчета не требуется, он должен вернуть **TRUE**. Если он возвращает **FALSE**, `_CrtDbgReport` вернет сообщение обычным образом.  
   
 ## <a name="see-also"></a>См. также  
  [Написание функций отладочных ловушек](../debugger/debug-hook-function-writing.md)   

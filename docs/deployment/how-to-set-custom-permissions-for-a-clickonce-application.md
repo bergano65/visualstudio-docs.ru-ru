@@ -1,5 +1,5 @@
 ---
-title: 'Как: Установка пользовательских разрешений для ClickOnce-приложения | Документы Microsoft'
+title: 'Практическое: Установка пользовательских разрешений для ClickOnce-приложения | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0980b2ddb2dd6a8db86078cb600f2486bb63f325
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4003dd1434d55bb43f52ee02801da0f843563456
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560444"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077481"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Практическое: Установка пользовательских разрешений для ClickOnce-приложения
 Можно развернуть приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , которое использует разрешения по умолчанию для зон Интернета или локальной интрасети. Кроме того, можно создать настраиваемую зону с определенными разрешениями, которые нужны приложению. Это можно сделать, настроив разрешения безопасности на странице **Безопасность** **конструктора проектов**.  
   
 ### <a name="to-customize-a-permission"></a>Настройка разрешения  
@@ -43,7 +43,7 @@ ms.locfileid: "31560444"
   
 6.  Щелкните **Изменить XML-код разрешений**.  
   
-     Файл app.manifest открывается в редакторе XML.  
+     *App.manifest* файл откроется в редакторе XML.  
   
 7.  Добавьте XML-код для разрешений, которые требуются приложению, перед элементом `</applicationRequestMinimum>` .  
   
@@ -52,5 +52,4 @@ ms.locfileid: "31560444"
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Управление доступом для кода для приложения ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
+ [Разграничение доступа для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   

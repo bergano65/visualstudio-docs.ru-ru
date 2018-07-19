@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs | Документы Microsoft
+title: IDiaEnumSectionContribs | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47577b3a2abfef3b6c6741d2e25af418318340ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5903c276b82f8b689e67c20310ccc6d6a6514896
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463781"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057064"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
-Перечисляет различные раздел материалов, содержащиеся в источнике данных.  
+Перечисляет различные разделе материалов, содержащихся в источнике данных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,23 +33,23 @@ IDiaEnumSectionContribs : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumSectionContribs`.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Возвращает число вклады раздела.|  
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Извлекает вклады раздел с помощью индекса.|  
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Извлекает указанное число вклады раздела в последовательности перечисления.|  
-|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Пропускает указанное число вклады раздела в последовательности перечисления.|  
-|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) версии этот перечислитель.|  
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Возвращает число вклад раздела.|  
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Извлекает раздел материалов с помощью индекса.|  
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Извлекает указанное число разделе вклад в последовательности перечисления.|  
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Пропускает заданное число разделе вклад в последовательности перечисления.|  
+|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
   
 ## <a name="remarks"></a>Примечания  
   
-## <a name="note-for-callers"></a>Примечание для клиентов  
+## <a name="note-for-callers"></a>Примечание для вызывающих объектов  
  Получить этот интерфейс из [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод. Дополнительные сведения см.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить ( `GetEnumSectionContribs` функции) и использовать ( `ShowSectionContribs` функция) `IDiaEnumSectionContribs` интерфейс. Более полный пример использования вклады раздел, в разделе [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) интерфейса.  
+ В этом примере показано, как получить ( `GetEnumSectionContribs` функции) и использовать ( `ShowSectionContribs` функции) `IDiaEnumSectionContribs` интерфейс. Более полный пример использования раздела вклад, см. в разделе [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) интерфейс.  
   
 ```C++  
   
@@ -106,7 +106,7 @@ void ShowSectionContribs(IDiaSession *pSession)
   
  Библиотека: diaguids.lib  
   
- Библиотека DLL: msdia80.dll  
+ Библиотеки DLL: msdia80.dll  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

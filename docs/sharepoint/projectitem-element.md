@@ -1,5 +1,5 @@
 ---
-title: Элемент ProjectItem | Документы Microsoft
+title: Элемент ProjectItem | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6d273e0fa980e25c8b8d0c7ea6b1a8eb5d537c9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ca0c295410caffb476d6c1e796864c47520a2f56
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692045"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119929"
 ---
-# <a name="projectitem-element"></a>Элемент ProjectItem
-  Представляет элемент проекта SharePoint. Обязательный корневой элемент файла the.spdata этого элемента.  
+# <a name="projectitem-element"></a>ProjectItem - элемент
+  Представляет элемент проекта SharePoint. Этот элемент обязательный корневой элемент из *.spdata* файла.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,43 +42,42 @@ ms.locfileid: "34692045"
 </ProjectItem>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание:|  
 |---------------|-----------------|  
-|**DefaultFile**|Необязательный **xs: строка** атрибута.<br /><br /> Относительный путь, включая имя файла, для файла, который открывается в редакторе Visual Studio при открытии элемента проекта SharePoint в **обозревателе решений**. Путь является относительным из папки, которая содержит `.spdata` файла.|  
-|**FeatureReceiverClass**|Необязательный **xs: String** атрибута.<br /><br /> Полное имя класса приемника компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонента см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
-|**FeatureReceiverAssembly**|Необязательный **xs: String** атрибута.<br /><br /> Указывает полное имя сборки, определяющей приемника компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонента см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Дополнительные сведения об именах полного имени сборки см. в разделе [имена сборок](/dotnet/framework/app-domains/assembly-names).|  
-|**SupportedTrustLevels**|Необязательный **xs: String** атрибута.<br /><br /> Задает уровни доверия, которые поддерживает данный элемент проекта SharePoint. Это значение может быть одним из следующих строк: изолированное, полное доверие или All. Значение All указывает Sandboxed и FullTrust.<br /><br /> В поле пользовательского типа элемента проекта SharePoint, значение этого атрибута соответствует значению, которые назначены <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> свойство в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод. Если указать другое значение для этого атрибута, Visual Studio перезаписывает значение, чтобы указать тот же уровень доверия, указываемое в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> свойство.|  
-|**SupportedDeploymentScopes**|Необязательный **xs: String** атрибута.<br /><br /> Задает области развертывания, которые поддерживает данный элемент проекта SharePoint. Это значение является строкой с разделителями запятыми, состоящая из одного или нескольких из следующих строк: фермы, сайта, Интернет, веб-приложения или пакета. Пример: `Web, Site`<br /><br /> В поле пользовательского типа элемента проекта SharePoint, значение этого атрибута соответствует значению, которые назначены <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойство в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод. Если указать другое значение для этого атрибута, Visual Studio перезаписывает значение, чтобы указать тот же уровень доверия, указываемое в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойство.|  
-|**Type**|Требуется **xs: String** атрибута.<br /><br /> Идентификатор для элемента проекта SharePoint. В пользовательского типа элемента проекта SharePoint, идентификатор представляет собой строку, которая передается в <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Список идентификаторов для встроенных элементов проектов SharePoint, входящих в состав Visual Studio см. в разделе [расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md).|  
+|**DefaultFile**|Необязательный **xs: строка** атрибута.<br /><br /> Относительный путь, включая имя файла, файла, который открывается в редакторе Visual Studio при открытии элемента проекта SharePoint в **обозревателе решений**. Путь является относительным из папки, которая содержит *.spdata* файла.|  
+|**FeatureReceiverClass**|Необязательный **xs: String** атрибута.<br /><br /> Полное имя класса-получателя компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонентов см. в разделе [сведениями упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|**FeatureReceiverAssembly**|Необязательный **xs: String** атрибута.<br /><br /> Указывает полное имя сборки, определяющей приемника компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонентов см. в разделе [сведениями упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Дополнительные сведения о полные имена сборок, см. в разделе [имена сборок](/dotnet/framework/app-domains/assembly-names).|  
+|**SupportedTrustLevels**|Необязательный **xs: String** атрибута.<br /><br /> Указывает уровни доверия, которые поддерживает данный элемент проекта SharePoint. Это значение может принимать одно из следующих строк: изолированное, FullTrust, или все. Значение All указывает Sandboxed и FullTrust.<br /><br /> В поле пользовательского типа элемента проекта SharePoint, значение этого атрибута соответствует значению, назначаемый <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> свойство в текущей реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод. Если указать другое значение для этого атрибута, Visual Studio перезаписывает значение, чтобы она тот же уровень доверия, указываемое в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> свойство.|  
+|**SupportedDeploymentScopes**|Необязательный **xs: String** атрибута.<br /><br /> Задает области развертывания, которые поддерживает данный элемент проекта SharePoint. Это значение является строка с разделителями запятыми, состоящая из одного или нескольких из следующих строк: фермы, сайтов, Интернета, веб-приложения или пакета. Пример: `Web, Site`<br /><br /> В поле пользовательского типа элемента проекта SharePoint, значение этого атрибута соответствует значению, назначаемый <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойство в текущей реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод. Если указать другое значение для этого атрибута, Visual Studio перезаписывает значение, чтобы она тот же уровень доверия, указываемое в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойство.|  
+|**Type**|Требуется **xs: String** атрибута.<br /><br /> Идентификатор для элемента проекта SharePoint. В поле пользовательского типа элемента проекта SharePoint, идентификатор является строка, которая передается <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Список идентификаторов для встроенных элементов проектов SharePoint, включенные в Visual Studio, см. в разделе [элементы проекта SharePoint, расширить](../sharepoint/extending-sharepoint-project-items.md).|  
   
-### <a name="child-elements"></a>Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию пользовательских элементов данных, связанных с элементом проекта SharePoint.<br /><br /> Можно включить только один **ExtensionData** элемента.|  
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию значений свойств, которые входят в состав компонентом при его развертывании в SharePoint.<br /><br /> Можно включить только один **FeatureProperties** элемента.|  
-|[Файлы](../sharepoint/files-element.md)|Необязательный **FileCollectionType** элемента.<br /><br /> Указывает файлы для развертывания с элементом проекта SharePoint, например элементов компонента файлов и выходных данных зависимого вне SharePoint проектов.<br /><br /> Включить **файлы** или **ProjectItemFolder** элемент, но не оба.|  
-|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Необязательный **ProjectItemFolderType** элемента.<br /><br /> Представляет сопоставленную папку.<br /><br /> Включить **файлы** или **ProjectItemFolder** элемент, но не оба.|  
-|[SafeControls](../sharepoint/safecontrols-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию элементов управления ASPX и веб-частей, отмеченных как безопасные для любому пользователю получить доступ к любой странице ASPX на сайте SharePoint.<br /><br /> Можно включить только один **SafeControls** элемента.|  
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию пользовательских элементов данных, которые связаны с элементом проекта SharePoint.<br /><br /> Может включать только одну **ExtensionData** элемент.|  
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию значений свойств, которые входят в состав компонентом при его развертывании в SharePoint.<br /><br /> Может включать только одну **FeatureProperties** элемент.|  
+|[Файлы](../sharepoint/files-element.md)|Необязательный **FileCollectionType** элемент.<br /><br /> Указывает файлы для развертывания с элементом проекта SharePoint, например элементов компонента файлов и выходных данных зависимого вне SharePoint проектов.<br /><br /> Включают в себя **файлы** или **ProjectItemFolder** , но не оба.|  
+|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Необязательный **ProjectItemFolderType** элемент.<br /><br /> Представляет сопоставленную папку.<br /><br /> Включают в себя **файлы** или **ProjectItemFolder** , но не оба.|  
+|[SafeControls](../sharepoint/safecontrols-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию элементов управления ASPX и веб-частей, отмеченных как безопасные для любого доступа пользователя к любой странице ASPX на сайте SharePoint.<br /><br /> Может включать только одну **SafeControls** элемент.|  
   
-### <a name="parent-elements"></a>Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы
  Отсутствует.  
   
-## <a name="element-information"></a>Сведения об элементе  
+## <a name="element-information"></a>Сведения об элементе
   
 |||  
 |-|-|  
 |**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым.**|Нет|  
+|**Может быть пустым**|Нет|  
   
-## <a name="see-also"></a>См. также  
- [Справочные материалы по схеме элементов для проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
+## <a name="see-also"></a>См. также
+[Rseference схемы элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   

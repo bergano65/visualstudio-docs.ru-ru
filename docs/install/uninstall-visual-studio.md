@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48e4f28ae9015f446401556e4ba5f4b65a56a285
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 452a30b6af12045d2812b9cd84a4f03664fbe45f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619371"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282028"
 ---
 # <a name="uninstall-visual-studio"></a>Удаление Visual Studio
 
@@ -35,13 +35,13 @@ ms.locfileid: "31619371"
      >[!NOTE]
      На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"**  — для **Microsoft Visual Studio**.<br/><br/> Кроме того, Visual Studio Installer можно найти в следующем расположении: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Щелкните установщик, чтобы запустить его, щелкните ![Значок сведений](media/vs2017uninstall-UninstallIcon.png "Выбор значка параметров") и выберите пункт **Удалить**.  
+2. Щелкните установщик, чтобы запустить его, щелкните ![Значок сведений](media/vs2017uninstall-UninstallIcon.png "Выбор значка параметров") и выберите пункт **Удалить**.
 
-     ![Изменение Visual Studio 2017: изменение, запуск, восстановление или удаление](media/vs2017-uninstall.PNG "Восстановление или удаление Visual Studio 2017")  
+     ![Изменение Visual Studio 2017: изменение, запуск, восстановление или удаление](media/vs2017-uninstall.PNG "Восстановление или удаление Visual Studio 2017")
 
 3. Нажмите кнопку **ОК**, чтобы подтвердить действие.
 
-     ![Изменение Visual Studio 2017: удаление продукта](media/vs2017-uninstall-confirm.PNG "Подтверждение удаления Visual Studio 2017")  
+     ![Изменение Visual Studio 2017: удаление продукта](media/vs2017-uninstall-confirm.PNG "Подтверждение удаления Visual Studio 2017")
 
 Если в будущем вы захотите снова установить Visual Studio 2017, запустите Visual Studio Installer и выберите **Установить** на экране выбора.
 
@@ -49,13 +49,13 @@ ms.locfileid: "31619371"
 
 Чтобы полностью удалить все установки Visual Studio 2017 и установщик Visual Studio с компьютера, удалите их в окне "Программы и компоненты".
 
-1. Откройте окно "Программы и компоненты". Например, в Windows 10 нажмите кнопку **Пуск** и в строке поиска введите **Программы и компоненты**.  
-2. Найдите **Microsoft Visual Studio 2017**.  
-3. Нажмите кнопку **Удалить**.  
+1. Откройте окно "Программы и компоненты". Например, в Windows 10 нажмите кнопку **Пуск** и в строке поиска введите **Программы и компоненты**.
+2. Найдите **Microsoft Visual Studio 2017**.
+3. Нажмите кнопку **Удалить**.
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 

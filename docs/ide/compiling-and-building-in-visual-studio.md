@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39242fc5b95b583ee153e5be5fc562fb49eb4d46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924226"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283130"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "31924226"
 | Командная строка MSBuild| — Сборка проектов без установки Visual Studio.<br />— Запуск многопроцессорных сборок для всех типов проектов.<br />— Настройка большинства аспектов системы сборки.|
 | построение Team Foundation | — Автоматизация процесса сборки в рамках конвейера непрерывной интеграции или поставки.<br />— Применение автоматических тестов для каждой сборки.<br />— Использование практически неограниченных облачных ресурсов для процессов сборки.<br />— Возможность изменения рабочего процесса сборки и создания процедур сборки с подробно настраиваемыми задачами.|
 
-В этом разделе подробно рассматривается сборка на основе IDE. Дополнительные сведения о других методах см. в разделах [MSBuild](../msbuild/msbuild.md) и [Continuous Integration and Deployment](https://www.visualstudio.com/docs/build/overview) (Непрерывная интеграция и развертывание).
+В этом разделе подробно рассматривается сборка на основе IDE. Дополнительные сведения о других методах см. в разделах [MSBuild](../msbuild/msbuild.md) и [Continuous Integration and Deployment](/vsts/pipelines/index?view=vsts) (Непрерывная интеграция и развертывание).
 
 ## <a name="overview-of-building-from-the-ide"></a>Общие сведения о сборке из IDE
 

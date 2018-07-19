@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766042"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282958"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio 2017
 
@@ -33,7 +33,7 @@ ms.locfileid: "34766042"
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Шаг 1. Проверьте, не связана ли эта ошибка с известными проблемами
 
-Существуют несколько известных проблем с установщиком Visual Studio, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues).
+Существуют несколько известных проблем с установщиком Visual Studio, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
 
 ### <a name="step-2---check-with-the-developer-community"></a>Шаг 2. Обратитесь к сообществу разработчиков
 
@@ -48,7 +48,7 @@ ms.locfileid: "34766042"
 
 1. Закройте установщик Visual Studio.
 2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик установщика Visual Studio. Файл загрузчика вы можете найти в папке загрузок. Его имя будет соответствовать формату `vs_[Visual Studio edition]__*.exe`. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://www.visualstudio.com/downloads/), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+3. Запустите загрузчик установщика Visual Studio. Файл загрузчика вы можете найти в папке загрузок. Его имя будет соответствовать формату `vs_[Visual Studio edition]__*.exe`. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads/), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
 4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
 
 ### <a name="step-4---report-a-problem"></a>Шаг 4. Сообщите о проблеме
@@ -71,7 +71,7 @@ ms.locfileid: "34766042"
 
 ### <a name="step-6---contact-us-optional"></a>Шаг 6. Связь с нами (необязательно)
 
-Если ни один из описанных выше шагов не позволил успешно выполнить установку, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Если ни один из описанных выше шагов не позволил успешно выполнить установку, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Устранение неполадок с автономным установщиком
 
@@ -100,7 +100,7 @@ ms.locfileid: "34766042"
 
 ## <a name="more-support-options"></a>Дополнительные варианты поддержки
 
-Если ни один из описанных выше шагов не позволил успешно выполнить установку, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Если ни один из описанных выше шагов не позволил успешно выполнить установку, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов.
 

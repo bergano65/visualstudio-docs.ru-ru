@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574689"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303313"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Получение журналов построения с помощью MSBuild
 С помощью параметров MSBuild можно указать объем данных сборки для проверки и необходимость сохранения данных сборки в один или несколько файлов. Можно также указать пользовательское средство ведения журналов для сбора данных сборки. Сведения о параметрах командной строки MSBuild, не рассматриваемых в этом разделе, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ ms.locfileid: "31574689"
   
  Сборка может выполняться медленнее при задании для параметра **/verbosity** значения `detailed` и еще медленнее при задании для **/verbosity** значения `diagnostic`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Сохранение журнала построения в файл  
  Параметр **/fileLogger** (**fl**) можно использовать для сохранения данных сборки в файл. В следующем примере данные сборки сохраняются в файл с именем `msbuild.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  В следующем примере файлу журнала присвоено имя `MyProjectOutput.log`, а уровень детализации выходных данных журнала задан как `diagnostic`. Эти две настройки указываются с помощью параметра **/filelogparameters** (`flp`).  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  Параметры **/filelogparameters** (`flp`) для файлов 2 и 3 указывают имя для каждого файла и компоненты, включаемые в каждый файл. Для файла 1 имя не указано, поэтому используется имя по умолчанию — `msbuild1.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 
 В следующем примере создается двоичный файл журнала с именем `binarylogfilename`.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

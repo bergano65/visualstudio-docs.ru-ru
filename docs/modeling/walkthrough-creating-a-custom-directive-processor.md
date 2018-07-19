@@ -15,16 +15,16 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e0ee905cf4ddaec6a05d5c0722b80c345489acd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979039"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234428"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство: Создание пользовательского процессора директив
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 
-*Процессоры директив* работают путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директивы* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.
+*Процессоры директив* работают путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директива* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.
 
 Можно написать собственные пользовательские процессоры директив. Это позволяет настраивать текстовые шаблоны. Для создания пользовательского процессора директив создается класс, наследующий <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> либо <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
@@ -44,7 +44,7 @@ ms.locfileid: "31979039"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Пользовательский процессор директив добавляет переменную и свойство к сгенерированному классу преобразования. Директива, которую вы пишете, использует классы <xref:System.CodeDom> для создания кода, который процессор добавляет в сгенерированный класс преобразования. <xref:System.CodeDom> Классы создания кода в Visual C# или Visual Basic, в зависимости от языка, заданного параметром `language` параметр `template` директивы. Язык процессора директив и язык текстового шаблона, осуществляющего доступ к этому процессору, не обязательно должен совпадать.
+Пользовательский процессор директив добавляет переменную и свойство к сгенерированному классу преобразования. Директива, которую вы пишете, использует классы <xref:System.CodeDom> для создания кода, который процессор добавляет в сгенерированный класс преобразования. <xref:System.CodeDom> Классы создание кода в Visual C# или Visual Basic, в зависимости от языка, заданного параметром `language` параметр `template` директива. Язык процессора директив и язык текстового шаблона, осуществляющего доступ к этому процессору, не обязательно должен совпадать.
 
 Создаваемый этой директивой код выглядит так:
 
@@ -127,7 +127,7 @@ End Property
 
             // These are the errors that occur during processing. The engine passes
             // the errors to the host, and the host can decide how to display them,
-            // for example the the host can display the errors in the UI
+            // for example the host can display the errors in the UI
             // or write them to a file.
             // ---------------------------------------------------------------------
             private CompilerErrorCollection errorsValue;
@@ -386,7 +386,7 @@ End Property
 
             ' These are the errors that occur during processing. The engine passes
             ' the errors to the host, and the host can decide how to display them,
-            ' for example the the host can display the errors in the UI
+            ' for example the host can display the errors in the UI
             ' or write them to a file.
             ' ---------------------------------------------------------------------
             Private errorsValue As CompilerErrorCollection
@@ -601,9 +601,9 @@ End Property
     End Namespace
     ```
 
-4. Visual Basic, откройте **проекта** меню и выберите пункт **Свойства CustomDP**. На **приложения** вкладке **корневое пространство имен**, удалите значение по умолчанию `CustomDP`.
+4. Visual Basic, откройте **проекта** меню и выберите пункт **Свойства CustomDP**. На **приложения** на вкладке **корневое пространство имен**, удалите значение по умолчанию `CustomDP`.
 
-5. На **файл** меню, нажмите кнопку **сохранить все**.
+5. На **файл** меню, щелкните **сохранить все**.
 
 6. В меню **Сборка** выберите **Собрать решение**.
 
@@ -613,7 +613,7 @@ End Property
 
 ## <a name="register-the-directive-processor"></a>Регистрация процессора директив
 
-Прежде чем директиву можно вызывать из текстового шаблона в Visual Studio, необходимо добавить раздел реестра для процессора директив.
+Прежде чем директиву можно вызвать из текстового шаблона в Visual Studio, необходимо добавить раздел реестра для процессора директив.
 
 > [!NOTE]
 > Если требуется установить процессор директив на более чем один компьютер, лучше определить Visual Studio Extension (VSIX), включающий *.pkgdef* файл и вашу сборку. Дополнительные сведения см. в разделе [развертывание пользовательского процессора директив](../modeling/deploying-a-custom-directive-processor.md).
@@ -637,9 +637,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Добавление раздела реестра для процессора директив
 
-1. Запустите `regedit` команду с помощью меню «Пуск» или из командной строки.
+1. Запустите `regedit` команду с помощью меню "Пуск" или из командной строки.
 
-2. Перейдите к нужному **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**и щелкните узел.
+2. Перейдите к расположению **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**и щелкните узел.
 
    На 64-разрядных систем с помощью **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
@@ -680,7 +680,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>Создание XML-файла для использования при тестировании процессора директив
 
-1. Создайте файл с именем *DocFile.xml* , используя любой текстовый редактор (например, Блокнот).
+1. Создайте файл с именем *DocFile.xml* , используя любой текстовый редактор (например, Блокнота).
 
     > [!NOTE]
     > Этот файл можно создать в любом месте (например, *C:\Test\DocFile.xml*).
@@ -734,12 +734,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 2. Добавьте новый файл текстового шаблона с именем TestDP.tt.
 
-3. Убедитесь, что **пользовательский инструмент** файла TestDP.tt свойству `TextTemplatingFileGenerator`.
+3. Убедитесь, что **пользовательское средство** свойство файла TestDP.tt имеет значение `TextTemplatingFileGenerator`.
 
-4. Измените содержимое файла TestDP.tt следующим текстом.
+4. Измените содержимое файла TestDP.tt следующим.
 
     > [!NOTE]
-    > Замените строку `<YOUR PATH>` с путем к *DocFile.xml* файла.
+    > Замените строку `<YOUR PATH>` с путем к *DocFile.xml* файл.
 
     Язык процессора директив и язык текстового шаблона не обязательно должны совпадать.
 
@@ -832,9 +832,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-test-the-directive-processor"></a>Тестирование процессора директив
 
-1. В **обозревателе решений**, щелкните файл TestDP.tt правой кнопкой мыши и выберите команду **запустить пользовательский инструмент**.
+1. В **обозревателе решений**, щелкните файл TestDP.tt правой кнопкой мыши и выберите команду **пользовательское средство**.
 
-   Для пользователей Visual Basic TestDP.txt может не отображаться в **обозревателе решений** по умолчанию. Чтобы отобразить все файлы, назначенные проекту, откройте **проекта** меню и выберите пункт **Показать все файлы**.
+   Для пользователей Visual Basic файл TestDP.txt может не отображаться в **обозревателе решений** по умолчанию. Чтобы отобразить все файлы, назначенные проекту, откройте **проекта** меню и выберите пункт **Показать все файлы**.
 
 2. В **обозревателе решений**, разверните узел TestDP.txt и дважды щелкните файл TestDP.txt, чтобы открыть его в редакторе.
 
@@ -876,7 +876,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-html-to-the-generated-text"></a>Добавление HTML в генерируемый текст
 
-1. Замените код в *TestDP.tt* со следующими. Код HTML будет выделен. Убедитесь, что для замены строки `YOUR PATH` с путем к *DocFile.xml* файла.
+1. Замените код в *TestDP.tt* приведенным ниже. Код HTML будет выделен. Не забудьте заменить строку `YOUR PATH` с путем к *DocFile.xml* файл.
 
     > [!NOTE]
     > Дополнительные открывающий \<# и закрывающий #> теги отделяют код оператора от тегов HTML.
@@ -961,8 +961,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. На **файл** меню, нажмите кнопку **Сохранить TestDP.txt**.
+2. На **файл** меню, щелкните **Сохранить TestDP.txt**.
 
-3. Чтобы просмотреть вывод в браузере, в **обозревателе решений**, щелкните файл TestDP.htm правой кнопкой мыши и выберите **просмотреть в браузере**.
+3. Чтобы просмотреть выходные данные в браузере, в **обозревателе решений**, щелкните файл TestDP.htm правой кнопкой мыши и выберите **просмотреть в браузере**.
 
-   Выходными данными должен быть таким же, как исходный текст, отличаясь только наличием применением формата HTML. Имя каждого элемента будет выделен полужирным шрифтом.
+   Выходные данные должны быть так же, как исходный текст, отличаясь только наличием применением формата HTML. Имя каждого элемента отображается полужирным шрифтом.

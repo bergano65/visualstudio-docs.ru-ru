@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Отображение текста в текстовом поле на листе с помощью кнопки | Документы Microsoft'
+title: 'Пошаговое руководство: Отображение текста в текстовом поле на листе с помощью кнопки'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e141618fb5b647f0cdb5341627356588df932fed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258445"
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Пошаговое руководство. Отображение текста в текстовом поле рабочего листа с помощью кнопки
-  В этом пошаговом руководстве описываются основные принципы использования кнопок и текстовых полей на листах Microsoft Office Excel и способы создания проектов Excel, с помощью средств разработки Office в Visual Studio. Для просмотра результатов в виде полного примера, см [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Пошаговое руководство: Отображение текста в текстовом поле на листе с помощью кнопки
+  В этом пошаговом руководстве описываются основные принципы использования кнопок и текстовых полей на листах Microsoft Office Excel и созданию проектов Excel, с помощью средств разработки Office в Visual Studio. Чтобы просмотреть результат в виде готового кода, см [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -47,59 +48,59 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Создание проекта  
+## <a name="create-the-project"></a>Создание проекта  
  На этом шаге вы создадите проект книги Excel с помощью Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Создайте проект книги Excel с именем **кнопка Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект книги Excel с именем **кнопка Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio открывает новую книгу Excel в конструкторе и добавляет **кнопка Excel** проекта **обозревателе решений**.  
+     Visual Studio открывает новую книгу Excel в конструкторе и добавляет **кнопка Excel** проект **обозревателе решений**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Добавление элементов управления на лист  
- В этом пошаговом руководстве необходимо будет кнопку и текстовое поле на первый лист.  
+## <a name="add-controls-to-the-worksheet"></a>Добавление элементов управления на лист  
+ В этом пошаговом руководстве потребуется кнопку и текстовое поле на первом листе.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>Добавление кнопки и текстового поля  
+### <a name="to-add-a-button-and-a-text-box"></a>Добавление кнопки и текстового поля  
   
 1.  Убедитесь, что **Мои Button.xlsx Excel** книга открыта в конструкторе Visual Studio с `Sheet1` отображается.  
   
 2.  Из **стандартные элементы управления** вкладки панели элементов перетащите <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> для `Sheet1`.  
   
-3.  Из **представление** последовательно выберите пункты **окно свойств**.  
+3.  Из **представление** меню, выберите **окно "Свойства"**.  
   
-4.  Убедитесь, что **TextBox1** является видимым в **свойства** окно раскрывающегося списка и измените **имя** свойства текстового поля, чтобы **displayText**.  
+4.  Убедитесь, что **TextBox1** является видимым в **свойства** "раскрывающегося списка" окна "и измените **имя** свойства текстового поля значение **displayText**.  
   
 5.  Перетащите **кнопку** управления `Sheet1` и измените следующие свойства:  
   
     |Свойство.|Значение|  
     |--------------|-----------|  
     |**Name**|**insertText**|  
-    |**Text**|**Вставка текста**|  
+    |**Text**|**Вставить текст**|  
   
- Теперь можно напишите код, выполняемый при нажатии кнопки.  
+ Теперь можно напишите код для выполнения при нажатии кнопки.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Заполнение текстового поля при нажатии кнопки  
- При каждом нажатии кнопки, **Здравствуй, мир!** добавляется в текстовое поле.  
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Заполнение текстового поля при нажатии кнопки  
+ Каждый раз, пользователь нажимает кнопку, **Hello World!** добавляется в текстовое поле.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Запись в текстовое поле при нажатии кнопки  
+### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Запись в текстовое поле при нажатии кнопки  
   
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **Sheet1**, а затем нажмите кнопку **Просмотр кода** в контекстном меню.  
+1.  В **обозревателе решений**, щелкните правой кнопкой мыши **Sheet1**, а затем нажмите кнопку **просмотреть код** в контекстном меню.  
   
-2.  Добавьте следующий код в <xref:System.Windows.Forms.Control.Click> обработчика событий кнопки:  
+2.  Добавьте следующий код, чтобы <xref:System.Windows.Forms.Control.Click> обработчик событий кнопки:  
   
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
   
-3.  В C# необходимо добавить обработчик событий для <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> события, как показано ниже. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  В C# необходимо добавить обработчик событий к <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> событий, как показано ниже. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## <a name="testing-the-application"></a>Тестирование приложения  
- Теперь можно проверить книги, чтобы убедиться, что сообщение **Здравствуй, мир!** отображается в текстовом поле при нажатии кнопки.  
+## <a name="test-the-application"></a>Тестирование приложения  
+ Теперь можно протестировать книги, чтобы убедиться, что сообщение **Hello World!** отображается в текстовом поле при нажатии кнопки.  
   
-#### <a name="to-test-your-workbook"></a>Проверка книги  
+### <a name="to-test-your-workbook"></a>Проверка книги  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  Нажмите кнопку.  
   
@@ -110,11 +111,11 @@ ms.lasthandoff: 04/16/2018
   
 -   Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).  
   
--   С помощью флажков для изменения форматирования. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение листа форматирования с помощью элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   С помощью флажков для изменения форматирования. Дополнительные сведения см. в разделе [Пошаговое руководство: изменение форматирования листа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>См. также  
- [Как: Добавление элементов управления в документы Office Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)   
- [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Практическое: Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)   
+ [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

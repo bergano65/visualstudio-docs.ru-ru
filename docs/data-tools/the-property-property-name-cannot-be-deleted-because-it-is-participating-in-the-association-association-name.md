@@ -10,22 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98f95c489758b808ae7a210f7d83332f84571d1f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ed6b14f64d16d1f18d4b358761169c3d424cee8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924143"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174066"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Свойство &lt;имя свойства&gt; невозможно удалить, так как оно участвует в ассоциации &lt;имя связи&gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Свойство &lt;имя свойства&gt; невозможно удалить, так как оно участвует в ассоциации &lt;имя ассоциации&gt;
 
 Выбранное свойство имеет значение **свойство ассоциации** для ассоциации между классами, указанными в сообщении об ошибке. Свойства не могут быть удалены, если они участвуют в ассоциации между классами данных.
 
-Задать **свойство ассоциации** другое свойство класса данных, чтобы дать возможность успешного удаления нужного свойства.
+Задайте **свойство ассоциации** другое свойство класса данных, чтобы дать возможность успешного удаления нужного свойства.
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
-1. В реляционном конструкторе объектов выберите линию ассоциацию, которая соединяет классы данных, указанные в сообщении об ошибке.
+1. Выберите линию ассоциацию, на **реляционный конструктор объектов** , соединяет классы данных, указанные в сообщении об ошибке.
 
 2. Дважды щелкните строку, чтобы открыть **Редактор ассоциаций** диалоговое окно.
 

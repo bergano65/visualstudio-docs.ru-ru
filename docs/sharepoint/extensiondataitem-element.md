@@ -1,5 +1,5 @@
 ---
-title: Элемент ExtensionDataItem | Документы Microsoft
+title: Элемент ExtensionDataItem | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766511"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325725"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem - элемент
-  Пользовательский элемент данных, связанный с элементом проекта SharePoint, в формате ключ значение. Ключ и значение должны быть строками.  
+  Пользовательский элемент данных, связанный с элементом проекта SharePoint, в формате ключ/значение. Ключ и значение должны быть строками.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,10 +49,10 @@ ms.locfileid: "34766511"
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Представляет коллекцию пользовательских элементов данных, связанных с элементом проекта SharePoint.|  
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Представляет коллекцию пользовательских элементов данных, которые связаны с элементом проекта SharePoint.|  
   
 ## <a name="remarks"></a>Примечания  
- При связывании пользовательских данных с элементом проекта SharePoint с помощью <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> объекта Visual Studio сохраняет данные в новую **ExtensionDataItem** элемент `.spdata` в файле элемент проекта. Дополнительные сведения см. в разделе [сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ При связывании пользовательских данных с элементом проекта SharePoint с помощью <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> объекта, Visual Studio сохраняет данные в новую **ExtensionDataItem** элемент в `.spdata` файл элемент проекта. Дополнительные сведения см. в разделе [сохранения данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Сведения об элементе
   
@@ -61,9 +61,9 @@ ms.locfileid: "34766511"
 |**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым.**|Нет|  
+|**Может быть пустым**|Нет|  
   
 ## <a name="see-also"></a>См. также
- [Справочные материалы по схеме элементов для проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

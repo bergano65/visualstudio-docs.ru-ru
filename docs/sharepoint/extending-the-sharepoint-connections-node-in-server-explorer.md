@@ -1,5 +1,5 @@
 ---
-title: Расширение узла подключений SharePoint в обозревателе серверов | Документы Microsoft
+title: Расширение узла подключений SharePoint в обозревателе серверов | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,36 +17,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 433923234b890564d21915d56a906fe10060e4ae
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f7211d31b8e57a88d3f6a5a585e912dd267cf943
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766276"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325590"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе серверов
-  В Visual Studio можно подключиться к локальным сайтам SharePoint на компьютере разработчика с помощью **подключения SharePoint** узел в **обозревателя серверов** окна. Этот узел содержит многие компоненты локальных сайтов SharePoint в виде иерархического дерева. Например можно просмотреть списки, библиотеки документов и типы содержимого на локальных сайтах. Дополнительные сведения об использовании **обозревателя серверов** для подключения к локальным сайтам SharePoint, в разделе [просмотра SharePoint подключения с помощью сервера обозревателя](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+  В Visual Studio, вы можете подключиться к локальным сайтам SharePoint на компьютере разработчика с помощью **подключения SharePoint** узел в **обозревателя серверов** окна. Этот узел содержит многие компоненты локальных сайтов SharePoint в виде иерархического дерева. Например можно просмотреть списки, библиотеки документов и типов содержимого на локальных сайтах. Дополнительные сведения об использовании **обозревателя серверов** для подключения к локальным сайтам SharePoint, см. в разделе [подключений Обзор SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
- Вы можете расширить **подключения SharePoint** узла, создав расширения для существующих узлов или создав пользовательский тип узла и добавив его в иерархию узлов.  
+ Вы можете расширить **подключения SharePoint** узла путем создания расширений для существующих узлов или путем создания пользовательский тип узла и добавления его в иерархию узлов.  
   
 ## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Задачи для расширение узла подключений SharePoint
- Чтобы расширить существующий узел, создать расширение Visual Studio, который реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> интерфейса. При расширении узла можно добавить функциональные возможности на узел, например собственные элементы контекстного меню или пользовательские свойства. Дополнительные сведения см. в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+ Чтобы расширить существующий узел, создать расширение Visual Studio, который реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> интерфейс. При расширении узла, можно добавить функциональные возможности на узел, например собственные элементы контекстного меню или пользовательские свойства. Дополнительные сведения см. в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
- Чтобы создать пользовательский тип узла, создайте расширение Visual Studio, который реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> интерфейса. Создать пользовательский узел, если требуется отображать компоненты сайтов SharePoint, которые не отображаются в **обозревателя серверов** по умолчанию. Например **обозревателя серверов** не должно отображаться галерею веб-частей на сайт SharePoint, по умолчанию, но можно добавить пользовательский узел такому же принципу. Дополнительные сведения см. в разделе [как: добавить пользовательского узла SharePoint в обозревателе серверов](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) и [Пошаговое руководство: расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Чтобы создать пользовательский тип узла, создать расширение Visual Studio, который реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> интерфейс. Создайте пользовательский узел, если вы хотите отображать компоненты сайтов SharePoint, которые не отображаются в **обозревателя серверов** по умолчанию. Например **обозревателя серверов** отображаются коллекции веб-части сайта SharePoint по умолчанию, но вы можете добавить пользовательский узел, который делает это. Дополнительные сведения см. в разделе [способ: добавить пользовательский узел SharePoint в обозревателе серверов](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) и [Пошаговое руководство: расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="add-custom-properties-to-nodes"></a>Добавление пользовательских свойств для узлов
- При расширении узла, или создать пользовательский тип узла, можно добавить пользовательские свойства на узел. Свойства отображаются в **свойства** окно при выборе узла.  
+## <a name="add-custom-properties-to-nodes"></a>Добавление пользовательских свойств в узлы
+ При расширении узла или создать пользовательский тип узла, можно добавить пользовательские свойства к узлу. Свойства отображаются в **свойства** окно при выборе узла.  
   
- Существует два типа пользовательских свойств, которые можно добавить к узлу.  
+ Существует два типа пользовательских свойств, которые можно добавить к узлу:  
   
--   Свойства, отображающие набор только для чтения данных с сайта SharePoint. Данные описывает компонент SharePoint, которую представляет узел. Пошаговое руководство, демонстрирующее, как это сделать, см. [Пошаговое руководство: расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+-   Свойства, которые отображают набор только для чтения данных с сайта SharePoint. Данные описывается компонент SharePoint, которую представляет узел. Пошаговое руководство, которое демонстрирует, как это сделать, см. в разделе [Пошаговое руководство: расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
--   Свойства, отображающие пользовательские чтения и записи данных. Пример кода, в котором показано, как это сделать, см. [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+-   Свойства, которые отображают пользовательский чтения и записи данных. Пример кода, в котором показано, как это сделать, см. в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
 ## <a name="get-data-for-built-in-nodes"></a>Получение данных для встроенных узлов
- Все встроенные узлы, предоставляемые Visual Studio содержат определенные данные о компоненте SharePoint, который они представляют. Например узел, представляющий список на сайте SharePoint предоставляет некоторые данные об этом списке, такие как название и URL-адрес представления по умолчанию для списка.  
+ Все встроенные узлы, предоставляемые Visual Studio включают некоторые данные о компоненте SharePoint, который они представляют. Например узел, представляющий список на сайте SharePoint предоставляет некоторые данные о списке, такие как заголовок и URL-адрес представления по умолчанию для списка.  
   
- Доступ к этим данным, получить объект данных от <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> , представляющий узел, которые вас интересуют. Тип объекта данных зависит от типа узла.  
+ Доступ к этим данным, получить объект данных из <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> , представляющий узел, которые вас интересуют. Тип объекта данных зависит от типа узла.  
   
  В следующем примере кода показано, как получить объект данных для узла списка. Этот пример в контексте полного примера см. в разделе [как: получение данных для встроенного узла SharePoint в обозревателе серверов](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md).  
   
@@ -57,7 +57,7 @@ ms.locfileid: "34766276"
   
 |Тип узла|Тип объекта данных|  
 |---------------|----------------------|  
-|Узел веб-узла SharePoint|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|  
+|Узел сайта SharePoint|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|  
 |Тип содержимого|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|  
 |Функция|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|  
 |Поле|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|  
@@ -67,15 +67,15 @@ ms.locfileid: "34766276"
 |Сопоставление рабочего процесса|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|  
 |Шаблон рабочего процесса|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowTemplateNodeInfo>|  
   
- Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство, в разделе [связывание пользовательских данных с расширениями средств SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+ Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство, см. в разделе [расширений средств сопоставления пользовательских данных с SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
 ## <a name="see-also"></a>См. также
- [Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [Как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Способ: добавить пользовательского узла SharePoint в обозревателе серверов](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
- [Как: получение данных для встроенного узла SharePoint в обозревателе серверов](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)   
- [Связывание пользовательских данных с расширениями средств SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
+ [Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Практическое: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Способ: добавить пользовательский узел SharePoint в обозревателе серверов](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
+ [Практическое: получение данных для встроенного узла SharePoint в обозревателе серверов](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)   
+ [Связывать пользовательские данные с расширениями средств SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
- [Расширение инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
+ [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
   
   

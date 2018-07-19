@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a27148619879ea90dba21704a0aa57fdf5f04551
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 24793c3801167572a96fb272c73964a58c5ebd7f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477370"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297659"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
 
@@ -147,7 +147,7 @@ ms.locfileid: "34477370"
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 
@@ -161,3 +161,4 @@ ms.locfileid: "34477370"
 * [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
 * [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)
+* [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md)

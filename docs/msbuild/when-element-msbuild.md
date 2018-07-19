@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a1587a429c92fe1bac5d2cd0bcd63c0f27a68c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577793"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303339"
 ---
 # <a name="when-element-msbuild"></a>Элемент When (MSBuild)
 Указывает один из возможных блоков кода, который может выбрать элемент `Choose`.  
@@ -41,7 +41,7 @@ ms.locfileid: "31577793"
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <When Condition="'StringA'=='StringB'">  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
