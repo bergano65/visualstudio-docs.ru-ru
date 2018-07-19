@@ -43,21 +43,23 @@
       items:
         - name: Вопросы и ответы по обозревателю тестов
           href: test-explorer-faq.md
+    - name: Запуск тестов из командной строки
+      href: vstest-console-options.md
     - name: Выполнение модульного теста как 64-разрядного процесса
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: Настройка модульных тестов с помощью файла .runsettings
       href: configure-unit-tests-by-using-a-dot-runsettings-file.md
-    - name: Создание модульных тестов для управляемого кода
+    - name: Написание модульных тестов для управляемого кода
       items:
         - name: Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов
+        - name: Краткое руководство. Разработка на основе тестирования с помощью обозревателя тестов
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
+        - name: Использование элементов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
-        - name: Использование классов Assert
+        - name: Использование классов assert
           href: using-the-assert-classes.md
-        - name: Изоляция тестируемого кода с помощью Microsoft Fakes
+        - name: "Изоляция тестируемого кода с помощью Microsoft\_Fakes"
           href: isolating-code-under-test-with-microsoft-fakes.md
           items:
             - name: Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
@@ -69,15 +71,15 @@
         - name: 'Создание модульного теста, управляемого данными'
           href: how-to-create-a-data-driven-unit-test.md
           items:
-            - name: Пошаговое руководство. Использование файла конфигурации для определения источника данных
+            - name: Пошаговое руководство. Определение источника данных с помощью файла конфигурации
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Модульные тесты для универсальных методов
           href: unit-tests-for-generic-methods.md
-        - name: Настройка модульных тестов для более ранней версии .NET Framework
+        - name: "Настройка модульных тестов для предыдущей версии .NET\_Framework"
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
         - name: Пример проекта для создания модульных тестов
           href: sample-project-for-creating-unit-tests.md
-    - name: Создание модульных тестов для кода C/C++
+    - name: "Написание модульных тестов для кода\_C/C++"
       href: writing-unit-tests-for-c-cpp.md
       items:
         - name: Использование платформы модульного тестирования Майкрософт для C++
@@ -96,18 +98,18 @@
           href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
     - name: Создание и выполнение модульных тестов для приложений UWP
       items:
-        - name: Модульное тестирование библиотеки DLL для UWP на C++
+        - name: "Модульное тестирование DLL-библиотеки для\_UWP на\_C++"
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Модульное тестирование кода Visual C# в приложениях UWP'
+        - name: "Модульное тестирование кода Visual\_C# в приложениях\_UWP"
           href: unit-testing-visual-csharp-code-in-a-store-app.md
-        - name: Пошаговое руководство. Создание и запуск модульных тестов для приложений универсальной платформы Windows
+        - name: "Пошаговое руководство. Создание и запуск модульных тестов для приложений\_UWP"
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: Использование параметра объема протестированного кода для определения объема протестированного кода
+    - name: Использование покрытия кода для определения объема протестированного кода
       href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
       items:
         - name: Настройка анализа объема протестированного кода
           href: customizing-code-coverage-analysis.md
-        - name: Устранение неполадок с покрытием кода
+        - name: Устранение неполадок в объеме протестированного кода
           href: troubleshooting-code-coverage.md
     - name: "Использование эмуляторов для изоляции модульных тестов приложений SharePoint\_2010"
       href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md

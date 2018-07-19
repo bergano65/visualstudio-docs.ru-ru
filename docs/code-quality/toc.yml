@@ -1,25 +1,27 @@
+- name: Документация по анализу кода
+  href: index.md
 - name: Обзор
   items:
     - name: Анализ управляемого кода
       href: code-analysis-for-managed-code-overview.md
     - name: Анализаторы Roslyn
       href: roslyn-analyzers-overview.md
-    - name: Анализ кода для C/C++
+    - name: "Анализ кода для\_C/C++"
       href: code-analysis-for-c-cpp-overview.md
-    - name: Измерение удобства поддержки кода с помощью метрик кода
+    - name: Использование метрик кода для оценки удобства его поддержки
       href: code-metrics-values.md
 - name: Краткие руководства
   items:
-    - name: Краткое руководство. Анализ кода для C/C++
+    - name: "Краткое руководство. Анализ кода для\_C/C++"
       href: quick-start-code-analysis-for-c-cpp.md
 - name: Учебники
   items:
     - name: Анализ управляемого кода на наличие дефектов
       href: walkthrough-analyzing-managed-code-for-code-defects.md
-    - name: Анализ кода C/C++ на наличие дефектов
+    - name: "Анализ кода\_C/C++ на наличие дефектов"
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
-        - name: Пример Demo
+        - name: Демонстрационный пример
           href: demo-sample.md
 - name: Практические руководства
   items:
@@ -48,7 +50,7 @@
           href: anonymous-methods-and-code-analysis.md
         - name: Создание рабочего элемента для дефекта управляемого кода
           href: how-to-create-a-work-item-for-a-managed-code-defect.md
-    - name: Анализ кода для C/C++
+    - name: "Анализ кода для\_C/C++"
       items:
         - name: Использование средств проверки на соответствие C++ Core Guidelines
           href: using-the-cpp-core-guidelines-checkers.md
@@ -137,7 +139,7 @@
           href: native-recommended-rules-rule-set.md
         - name: Набор правил "Правила безопасности" для управляемого кода
           href: security-rules-rule-set-for-managed-code.md
-    - name: Анализ для предупреждений управляемого кода
+    - name: Предупреждения при анализе управляемого кода
       href: code-analysis-for-managed-code-warnings.md
       items:
         - name: Предупреждения при анализе управляемого кода по идентификатору CheckId
@@ -149,7 +151,7 @@
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: 'CA5351: не используйте ослабленные алгоритмы шифрования'
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
-        - name: Предупреждения конструктора
+        - name: Предупреждения по принципам разработки
           href: design-warnings.md
           items:
             - name: 'CA1000: не объявляйте статические элементы в универсальных типах'
