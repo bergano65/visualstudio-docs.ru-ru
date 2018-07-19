@@ -1,5 +1,5 @@
 ---
-title: 'Как: Создание локализованного пакета загрузчика | Документы Microsoft'
+title: 'Практическое: Создание локализованного пакета загрузчика | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566021"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785242"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание локализованного пакета загрузчика
 Закончив создание пакета начального загрузчика, вы можете сформировать его локализованные версии, создав по два или несколько файлов для каждого языкового стандарта: файл условий лицензионного соглашения на использование программного обеспечения (например, eula.rtf) и манифест пакета (package.xml).  
@@ -33,7 +33,7 @@ ms.locfileid: "31566021"
 3.  Создайте манифест пакета с именем package.xml, обновите строки и культуру и сохраните файл в новую папку. Если вы уже создали начальный загрузчик для Visual Studio с целевым зыком, на этом этапе можно просто скопировать файл Visual Studio package.xml и внести в него необходимые изменения.  
   
 > [!NOTE]
->  При использовании проекта установки для развертывания приложений можно локализовать приложение, изменив **локализации** свойство.  
+>  Если вы используете проект установки для развертывания приложений, приложение можно локализовать, изменив **локализации** свойство.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -41,9 +41,9 @@ ms.locfileid: "31566021"
   
 1.  Создайте папку с именем, соответствующим языковому стандарту.  
   
-     На 32-разрядных компьютерах, необходимо создать в \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ папки.  
+     На 32-разрядных компьютерах, создайте папку в \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ папки.  
   
-     На 64-разрядных компьютерах, необходимо создать в \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ папки.  
+     На 64-разрядных компьютерах, создайте папку в \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ папки.  
   
      В следующей таблице показано, какие имена папок можно использовать для соотнесения с языковым стандартом.  
   
@@ -66,7 +66,7 @@ ms.locfileid: "31566021"
   
 2.  Создайте файл, содержащий условия лицензионного соглашения на использование программного обеспечения, для пакета начального загрузчика и сохраните его в новую папку.  
   
-3.  Создайте манифест пакета с именем package.xml и сохраните его в новую папку. Дополнительные сведения см. в разделе [как: создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md).  
+3.  Создайте манифест пакета с именем package.xml и сохраните его в новую папку. Дополнительные сведения см. в разделе [как: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Обновите раздел `<Strings>` манифеста пакета, так чтобы язык строк соответствовал языковому стандарту.  
   

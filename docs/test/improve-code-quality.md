@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967225"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281619"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Средства тестирования Visual Studio
 
@@ -38,7 +38,7 @@ ms.locfileid: "31967225"
 - [Нагрузочное тестирование](../test/quickstart-create-a-load-test-project.md) позволяет моделировать нагрузку на серверное приложение посредством выполнения модульных тестов и веб-тестов производительности.
 
 > [!NOTE]
-> Модульное тестирование доступно во всех выпусках Visual Studio. Другие средства тестирования, такие как Live Unit Testing, IntelliTest и закодированные тесты пользовательского интерфейса, доступны только в выпуске Visual Studio Enterprise. Дополнительные сведения о выпусках см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
+> Модульное тестирование доступно во всех выпусках Visual Studio. Другие средства тестирования, такие как Live Unit Testing, IntelliTest и закодированные тесты пользовательского интерфейса, доступны только в выпуске Visual Studio Enterprise. Дополнительные сведения о выпусках см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Связанные сценарии
 

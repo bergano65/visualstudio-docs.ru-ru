@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 59424cdb93d8c664740ddf1d9865ba41044eb72e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691122"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283081"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Руководство администратора Visual Studio 2017
 
@@ -29,7 +29,7 @@ ms.locfileid: "34691122"
 
 ## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Развертывание Visual Studio 2017 в корпоративной среде
 
-Вы можете развернуть Visual Studio 2017 на клиентских компьютерах, если каждый из этих компьютеров отвечает [минимальным требованиям к установке](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Независимо от выбранного способа развертывания (с помощью такого программного обеспечения, как System Center, или пакетного файла), как правило, выполняются следующие действия:
+Вы можете развернуть Visual Studio 2017 на клиентских компьютерах, если каждый из этих компьютеров отвечает [минимальным требованиям к установке](/visualstudio/productinfo/vs2017-system-requirements-vs). Независимо от выбранного способа развертывания (с помощью такого программного обеспечения, как System Center, или пакетного файла), как правило, выполняются следующие действия:
 
 1. [Создайте сетевую папку, содержащую файлы продукта Visual Studio](create-a-network-installation-of-visual-studio.md) в сетевом расположении.
 
@@ -73,7 +73,7 @@ Value = (DWORD)
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 

@@ -1,5 +1,5 @@
 ---
-title: Манифест развертывания ClickOnce | Документы Microsoft
+title: Манифест развертывания ClickOnce | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e36f57857376d62beffe46b2ee4ccc7e4825023d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560327"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077897"
 ---
 # <a name="clickonce-deployment-manifest"></a>Манифест развертывания ClickOnce
 Манифест развертывания — это XML-файл, который описывает развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], включая идентификацию текущей версии приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для развертывания.  
   
  Манифесты развертывания имеют следующие элементы и атрибуты.  
   
-|Элемент|Описание|Атрибуты|  
+|Элемент|Описание:|Атрибуты|  
 |-------------|-----------------|----------------|  
 |[\<сборка > элемент](../deployment/assembly-element-clickonce-deployment.md)|Обязательно. Это элемент верхнего уровня.|`manifestVersion`|  
 |[\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-deployment.md)|Обязательно. Идентифицирует манифест приложения для приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<Описание > элемент](../deployment/description-element-clickonce-deployment.md)|Обязательно. Определение сведений о приложении, используемый для создания оболочки присутствия и **Установка и удаление программ** элемента панели управления.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[\<Описание > элемент](../deployment/description-element-clickonce-deployment.md)|Обязательно. Идентифицирует сведения о приложении, используемый для создания оболочки присутствия и **Установка и удаление программ** панели управления.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
 |[\<Развертывание > элемент](../deployment/deployment-element-clickonce-deployment.md)|Необязательный. Идентифицирует атрибуты, используемые для развертывания обновлений и доступа к системе.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
 |[\<compatibleFrameworks > элемент](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Обязательно. Идентифицирует версии платформы .NET Framework, где можно установить и выполнять это приложение.|`SupportUrl`|  
 |[\<зависимость > элемент](../deployment/dependency-element-clickonce-deployment.md)|Обязательно. Идентифицирует устанавливаемую версию приложения для развертывания и местоположение манифеста приложения.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
@@ -46,18 +46,18 @@ ms.locfileid: "31560327"
   
  Для получения дополнительной информации см. [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
-## <a name="file-location"></a>Расположение файлов  
+## <a name="file-location"></a>Расположение файла  
  Файл манифеста развертывания ссылается на правильный манифест приложения для текущей версии приложения. Когда новая версия развертывания приложения становится доступной, необходимо обновить манифест развертывания, чтобы он ссылался на новый манифест приложения.  
   
  Файл манифеста развертывания должен иметь строгое имя и может также содержать сертификаты для проверки издателя.  
   
 ## <a name="file-name-syntax"></a>Синтаксис имени файла  
- Имя файла манифеста развертывания должно оканчиваться расширением .application.  
+ Имя файла манифеста развертывания должно заканчиваться *.application* расширения.  
   
 ## <a name="examples"></a>Примеры  
  Манифест развертывания показан в следующем примере кода.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  

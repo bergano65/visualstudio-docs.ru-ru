@@ -1,5 +1,5 @@
 ---
-title: Справочник по API (расширения средств SharePoint) | Документы Microsoft
+title: Справочник по API (расширения средств SharePoint) | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692074"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325798"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Справочник по API (расширения средств SharePoint)
   Этот раздел содержит справочную документацию по API для расширения инструментов SharePoint в Visual Studio.  
@@ -30,7 +30,7 @@ ms.locfileid: "34692074"
  Содержит типы, используемые для расширения системы проектов SharePoint. Например, можно расширить встроенные проекты и элементы проектов SharePoint или создать собственные элементы проектов.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Commands>  
- Содержит типы, которые можно использовать для создания пользовательских *команды SharePoint*. Команда SharePoint — это метод, который вызывает объектную модель сервера SharePoint из расширения инструментов SharePoint.  
+ Содержит типы, которые можно использовать для создания пользовательских *команд SharePoint*. Команда SharePoint — это метод, который вызывает объектную модель сервера SharePoint из расширения инструментов SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>  
  Содержит типы, используемые для расширения процесса развертывания для проектов SharePoint.  
@@ -39,29 +39,29 @@ ms.locfileid: "34692074"
  Содержит типы, используемые для расширения узлов SharePoint в **обозревателя серверов** или определить собственные типы узлов.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>  
- Содержит типы, которые можно использовать для получения сведений о встроенных **обозревателя серверов** узлы, которые представляют отдельные компоненты на сайте SharePoint, например узел, представляющий список, поле или тип содержимого.  
+ Содержит типы, которые можно использовать для получения сведений о встроенных **обозревателя серверов** узлов, представляющих отдельные компоненты на сайте SharePoint, например узел, представляющий список, поле или тип содержимого.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Features>  
  Содержит типы, которые позволяют обращаться к определению функции в проекте SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Packages>  
- Содержит типы, которые позволяют получить доступ к определениям пакетов в проекте SharePoint.  
+ Содержит типы, используемые для доступа к определениям пакетов в проекте SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Remote.Authentication>  
  Содержит типы, используемые для проверки подлинности и взаимодействовать с приложениями для SharePoint, развернутых на удаленных сайтах SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Remote.Commands>  
- Содержит типы, которые можно использовать для создания удаленных команд SharePoint, которые используются с приложениями для SharePoint, которые развертываются на удаленные сайты SharePoint.  
+ Содержит типы, используемые для создания удаленных команд SharePoint, которые используются с приложениями для SharePoint, которые развертываются на удаленные сайты SharePoint.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Tasks>  
- Содержит типы, используемые Visual Studio, как построить задачи для упаковки и отладки проектов SharePoint, приложений для Office и приложений для SharePoint. Этот API поддерживает инфраструктуру Office и SharePoint и не предназначен для использования непосредственно из программного кода.  
+ Содержит типы, используемые Visual Studio, как создавать задачи для упаковки и отладки проектов SharePoint, приложения для Office и приложений для SharePoint. Этот API поддерживает инфраструктуру Office и SharePoint и не предназначен для использования непосредственно из программного кода.  
   
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
  Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проекта SharePoint.  
   
 ## <a name="see-also"></a>См. также
  [Справочник по &#40;расширения средств SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
- [Обзор SharePoint модели программирования расширений средств](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
+ [Обзор модели программирования SharePoint средств расширения](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Расширение SharePoint упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   

@@ -14,18 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765873"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283329"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Краткое руководство. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio мы создадим простое приложение вида "Hello World", выполняющееся на устройстве с Windows 10. Для этого потребуется использование шаблона проекта универсальной платформы Windows (UWP), расширяемого языка разметки приложений (XAML) и языка программирования C#.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="create-a-project"></a>Создание проекта
 

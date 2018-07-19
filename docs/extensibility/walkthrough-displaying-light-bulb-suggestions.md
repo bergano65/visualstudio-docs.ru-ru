@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Отображение лампочки предложения | Документы Microsoft'
+title: 'Пошаговое руководство: Отображение предложений лампочки | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,42 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 750e3b0915478b4249ce8db1ac294c1f2a3006f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b356cc000492b8f186f93485f30c4a3cb0dd3579
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148705"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131899"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Пошаговое руководство: Отображение лампочки предложения
-Лампочки являются значков, используемых в редакторе Visual Studio, развернуть, чтобы отобразить набор действий, например исправления для проблем, определяемый встроенных анализаторов или рефакторинга кода.  
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Пошаговое руководство. Отображение предложений лампочки
+Лампочки являются значков, используемых в редакторе Visual Studio, развернуть, чтобы отобразить набор действий, например исправления для проблем, обозначенных в анализаторов кода, встроенные или рефакторинга кода.  
   
- В редакторе Visual C# и Visual Basic можно также использовать платформой компилятора .NET («Roslyn») для записи и пакетов собственные анализаторов с действиями, которые автоматически отображают лампочки. Дополнительные сведения:  
+ В редакторах Visual C# и Visual Basic можно также использовать платформы компилятора .NET («Roslyn») для записи и упаковки собственные анализаторы кода с действиями, которые автоматически отображают лампочки. Дополнительные сведения:  
   
--   [Практическое руководство: Запись C# диагностики и исправления кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+-   [Практическое руководство: Написание C# Диагностика и исправление кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Практическое руководство: Запись в Visual Basic диагностики и исправления кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+-   [Практическое руководство: Написание Visual Basic Диагностика и исправление кода](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Других языках, например C++ также обеспечивают лампочки некоторые Быстрые действия, например, чтобы создать реализацию заглушки этой функции.  
+ Другие языки, например C++ также предоставляют лампочки для некоторых быстрых действий, например чтобы создать реализацию заглушки этой функции.  
   
- Вот, как выглядит лампочки. В проекте Visual Basic или Visual C# красная волнистая линия отображается под именем переменной при является недопустимым. При наведении мыши недопустимым идентификатором, лампочка отображается рядом с курсором.  
+ Вот, как выглядит лампочка. В проекте Visual Basic или Visual C# красная волнистая линия отображается под именем переменной при не допускается. При наведении указателя мыши недопустимый идентификатор, лампочка отображается рядом с курсором.  
   
- ![лампочка](../extensibility/media/lightbulb.png "лампочки")  
+ ![лампочки](../extensibility/media/lightbulb.png "LightBulb")  
   
- Если щелкнуть стрелку вниз лампочка, набор предлагаемых действий отображается вместе со Предварительный просмотр выбранного действия. В этом случае он отображается изменений, внесенных в код при выполнении действия.  
+ Если щелкнуть стрелку вниз в «лампочку», набор предлагаемых действий отображается вместе с Предварительный просмотр выбранного действия. В этом случае он показывает изменений, внесенных в код при выполнении действия.  
   
  ![Предварительный просмотр лампочки](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Лампочки можно использовать для предоставления собственных предложенные действия. Например можно предоставить перемещать открывающих фигурных скобок на новую строку, или переместить их в конец предыдущей строки. Следующее пошаговое руководство демонстрирует создание лампочка, которая отображается в текущем слове и имеет два предлагаемых действия: **преобразовать в верхний регистр** и **преобразовать в нижний регистр**.  
+ Лампочки можно использовать для предоставления собственных предлагаемые действия. Например можно предоставить перемещать, открыв фигурные скобки на новую строку или переместите их в конце предыдущей строки. Следующего пошагового руководства демонстрируется создание лампочка, которая отображается в текущем слове и имеет два предлагаемых действия: **преобразовать в верхний регистр** и **преобразовать в нижний регистр**.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки Майкрософт. Он включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+ Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Создание проекта Managed Extensibility Framework (MEF)  
   
-1.  Создайте проект VSIX C#. (В **новый проект** диалогового окна выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Присвойте решению имя `LightBulbTest`.  
+1.  Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `LightBulbTest`.  
   
-2.  Добавить **классификатора редактора** шаблона элемента в проект. Дополнительные сведения см. в разделе [создания расширения с помощью шаблона элемента редактор](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Добавить **классификатора редактора** шаблона элемента в проект. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 3.  Удалите файлы существующих классов.  
   
@@ -75,7 +75,7 @@ ms.locfileid: "31148705"
   
 ## <a name="implementing-the-light-bulb-source-provider"></a>Реализация поставщика источника лампочки  
   
-1.  В файле класса LightBulbTest.cs удалите класс LightBulbTest. Добавьте класс с именем **TestSuggestedActionsSourceProvider** , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Экспортировать его с именем **предлагаемые действия теста** и <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «Text».  
+1.  В файле класса LightBulbTest.cs удаления LightBulbTest класса. Добавьте класс с именем **TestSuggestedActionsSourceProvider** , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Экспортируйте его с именем **предлагаемые действия теста** и <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст».  
   
     ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
@@ -91,12 +91,12 @@ ms.locfileid: "31148705"
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }  
     ```  
   
-3.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> метод для возврата <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> объекта. Мы рассмотрим источника в следующем разделе.  
+3.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> метод для возврата <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> объекта. Мы обсудим источнику в следующем разделе.  
   
     ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
     {  
-        if (textBuffer == null && textView == null)  
+        if (textBuffer == null || textView == null)  
         {  
             return null;  
         }  
@@ -105,7 +105,7 @@ ms.locfileid: "31148705"
     ```  
   
 ## <a name="implementing-the-isuggestedactionsource"></a>Реализация ISuggestedActionSource  
- Предлагаемое действие источника отвечает за сбор набор предлагаемых действий и добавляя их в нужном контексте. В этом случае контекст текущего слова и предлагаются действия **UpperCaseSuggestedAction** и **LowerCaseSuggestedAction**, который будет рассматриваться в следующем разделе.  
+ Источник предлагаемое действие отвечает за сбор набор предлагаемые действия и добавлять их в правильном контексте. В этом случае контекст текущего слова и предлагаемые действия **UpperCaseSuggestedAction** и **LowerCaseSuggestedAction**, который будет рассматриваться в следующем разделе.  
   
 1.  Добавьте класс **TestSuggestedActionsSource** , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "31148705"
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2.  Добавьте закрытые поля только для чтения для поставщика источника предлагаемое действие, буфер текста и представлением текста.  
+2.  Добавьте закрытые поля только для чтения для поставщика источника предлагаемое действие, текстового буфера и представления текста.  
   
     ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
@@ -132,7 +132,7 @@ ms.locfileid: "31148705"
     }  
     ```  
   
-4.  Добавьте закрытый метод, возвращающий слова под курсором в данный момент. Следующий метод ищет в текущем положении курсора и запрашивает экстент слова навигатор структуры текста. Если курсор находится в слове, <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> возвращается в выходной параметр; в противном случае `out` параметр `null` , а метод возвращает `false`.  
+4.  Добавьте закрытый метод, который возвращает слово, находящейся под курсором. Следующий метод ищет в текущем положении курсора и запрашивает навигатором по структуре текста экстент слова. Если курсор находится на слова, <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> возвращается в выходной параметр; в противном случае `out` параметр `null` и метод возвращает `false`.  
   
     ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
@@ -157,9 +157,9 @@ ms.locfileid: "31148705"
     }  
     ```  
   
-5.  Выполните метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A>. Редактор вызывает этот метод, чтобы определить, следует ли отображать лампочка. Этот вызов выполняется довольно часто, например всякий раз, когда курсор перемещается из одной строки в другую или при наведении указателя мыши на ошибки волнистой линией. Он является асинхронным, чтобы разрешить другие операции пользовательского интерфейса для выполнения то время как работает этот метод. Поэтому в большинстве случаев этот метод должен выполнять синтаксический анализ и анализ текущей строки, обработка может занять некоторое время.  
+5.  Выполните метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A>. Редактор вызывает этот метод, чтобы узнать, следует ли отображать лампочки. Этот вызов выполняется довольно часто, например, каждый раз, когда курсор перемещается из одной строки в другую или при наведении мыши на ошибку волнистой линией. Он является асинхронным, чтобы разрешить другие операции пользовательского интерфейса для выполнения то время как этот метод работает. Поэтому в большинстве случаев этот метод должен выполнять синтаксический анализ и анализа текущей строки, обработка может занять некоторое время.  
   
-     В нашем реализации его асинхронно получает <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> и определяет, является ли область большое значение, т. е. имеет ли он некоторый текст, отличный от пробела.  
+     В нашей реализации он асинхронно получает <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> и определяет, является ли экстент значительные, т. е. имеет ли он некоторый текст, отличный от пробела.  
   
     ```csharp  
     public Task<bool> HasSuggestedActionsAsync(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -177,10 +177,10 @@ ms.locfileid: "31148705"
     }  
     ```  
   
-6.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> метод, возвращающий массив <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> объектов, которые содержат различные <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> объектов. Этот метод вызывается, когда она открыта лампочка.  
+6.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> метод, возвращающий массив <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> объектов, содержащих различные <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> объектов. Этот метод вызывается, когда она открыта лампочки.  
   
     > [!WARNING]
-    >  Следует убедиться в том, реализации `HasSuggestedActionsAsync()` и `GetSuggestedActions()` являются постоянной; это, если `HasSuggestedActionsAsync()` возвращает `true`, затем `GetSuggestedActions()` должны иметь некоторые действия для отображения. Во многих случаях `HasSuggestedActionsAsync()` вызывается непосредственно перед вызовом `GetSuggestedActions()`, но это не. Например, если пользователь вызывает действия лампочка, нажав клавишу (CTRL +.) только `GetSuggestedActions()` вызывается.  
+    >  Следует убедиться в том, реализации `HasSuggestedActionsAsync()` и `GetSuggestedActions()` являются постоянной; это, если `HasSuggestedActionsAsync()` возвращает `true`, затем `GetSuggestedActions()` должны иметь некоторые действия для отображения. Во многих случаях `HasSuggestedActionsAsync()` вызывается непосредственно перед вызовом `GetSuggestedActions()`, но это не всегда так. Например, если пользователь вызывает действия лампочки, нажав клавишу (CTRL +.) только `GetSuggestedActions()` вызывается.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -203,7 +203,7 @@ ms.locfileid: "31148705"
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8.  Чтобы завершить реализацию, добавьте реализации для `Dispose()` и `TryGetTelemetryId()` методы. Мы не хотим сделать телеметрии, поэтому просто возвращает значение false и равным пустой GUID.  
+8.  Чтобы завершить реализацию, добавьте реализации для `Dispose()` и `TryGetTelemetryId()` методы. Мы не хотим сделать данные телеметрии, поэтому просто возвращается значение false и равным пустой идентификатор GUID.  
   
     ```csharp  
     public void Dispose()  
@@ -218,9 +218,9 @@ ms.locfileid: "31148705"
     }  
     ```  
   
-## <a name="implementing-light-bulb-actions"></a>Реализация действий лампочки  
+## <a name="implementing-light-bulb-actions"></a>Реализация действия лампочки  
   
-1.  В проекте добавьте ссылку на Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll и набор **Копировать локально** для `False`.  
+1.  В проекте, добавьте ссылку на Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll и набор **Копировать локально** для `False`.  
   
 2.  Создайте два класса с именем первого `UpperCaseSuggestedAction` и второй с именем `LowerCaseSuggestedAction`. В обоих классах реализован интерфейс <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
@@ -229,7 +229,7 @@ ms.locfileid: "31148705"
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Эти два класса похожи за тем исключением, что один из них вызывает <xref:System.String.ToUpper%2A> и другие вызовы <xref:System.String.ToLower%2A>. В дальнейших шагах рассматривается создание класса для действия преобразования в верхний регистр, но вам необходимо реализовать оба класса. Используйте инструкции по реализации действия преобразования в верхний регистр в качестве шаблона для реализации действия преобразования в нижний регистр.  
+     Эти два класса похожи, за исключением того, что один из них вызывает <xref:System.String.ToUpper%2A> и другие вызовы <xref:System.String.ToLower%2A>. В дальнейших шагах рассматривается создание класса для действия преобразования в верхний регистр, но вам необходимо реализовать оба класса. Используйте инструкции по реализации действия преобразования в верхний регистр в качестве шаблона для реализации действия преобразования в нижний регистр.  
   
 3.  Добавьте следующие операторы using для этих классов:  
   
@@ -263,7 +263,7 @@ ms.locfileid: "31148705"
     }  
     ```  
   
-6.  Реализация <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> метода, потому что он отображается как действия предварительной версии.  
+6.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> метод, потому что он отображается как действия предварительной версии.  
   
     ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
@@ -319,7 +319,7 @@ ms.locfileid: "31148705"
     }  
     ```  
   
-9. Реализация <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> метода, заменив текст в диапазоне в его эквивалент в верхнем регистре.  
+9. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> метод, заменив текст в диапазоне на эквивалентный символ верхнего регистра.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  
@@ -329,7 +329,7 @@ ms.locfileid: "31148705"
     ```  
   
     > [!WARNING]
-    >  Действие лампочки **Invoke** метод не должен отображать пользовательский Интерфейс.  Если действие подключить новый пользовательский Интерфейс (например предварительного просмотра или выбора диалогового окна), не имеют пользовательского интерфейса, непосредственно из пользовательского **Invoke** метода, но вместо этого расписания для отображения пользовательского интерфейса после возвращения из **Invoke**.  
+    >  Действие лампочки **Invoke** метод не должен отображать пользовательский Интерфейс.  Если ваше действие вызвать новый пользовательский Интерфейс (например предварительного просмотра или выбора диалоговое окно), не имеют пользовательского интерфейса, непосредственно из пользовательского **Invoke** метод, но вместо этого запланировать для отображения пользовательского интерфейса после возврата из **Invoke**.  
   
 10. Чтобы завершить реализацию, добавьте `Dispose()` и `TryGetTelemetryId()` методы.  
   
@@ -346,22 +346,22 @@ ms.locfileid: "31148705"
     }  
     ```  
   
-11. Не забудьте сделать то же самое для `LowerCaseSuggestedAction` изменение отображения текста на «Преобразование «{0}» в нижний регистр» и вызов <xref:System.String.ToUpper%2A> для <xref:System.String.ToLower%2A>.  
+11. Не забудьте сделать то же самое `LowerCaseSuggestedAction` изменение отображаемый текст для «преобразовать "{0}" в нижний регистр» и при вызове метода <xref:System.String.ToUpper%2A> для <xref:System.String.ToLower%2A>.  
   
 ## <a name="building-and-testing-the-code"></a>Сборка и тестирование кода  
- Чтобы проверить код, выполните сборку решения LightBulbTest и запустите его в экспериментальном экземпляре.  
+ Чтобы протестировать этот код, выполните сборку решения LightBulbTest и запустите его в экспериментальном экземпляре.  
   
 1.  Постройте решение.  
   
 2.  При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
   
-3.  Создайте текстовый файл и введите любой текст. Вы увидите лампочки слева от текста.  
+3.  Создайте текстовый файл и введите любой текст. Вы должны увидеть лампочки слева от текста.  
   
      ![Тестирование лампочки](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
-4.  Укажите лампочка. Вы увидите стрелка вниз.  
+4.  Точки в «лампочку». Вы должны увидеть стрелку вниз.  
   
-5.  При нажатии кнопки лампочка, два предлагаемых действия следует отображать вместе со Предварительный просмотр выбранного действия.  
+5.  Если щелкнуть «лампочку», два предлагаемых действия следует отображать вместе с предварительной версией выбранное действие.  
   
      ![Тестирование лампочки, расширенное](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   

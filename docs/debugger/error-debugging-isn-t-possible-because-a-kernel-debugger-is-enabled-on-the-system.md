@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Отладка&#39;t невозможна, поскольку в системе включен отладчик ядра | Документы Microsoft'
+title: 'Ошибка: Отладка&#39;t невозможна, поскольку в системе включен отладчик ядра | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482117"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058728"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Ошибка: Отладка&#39;t невозможна, поскольку в системе включен отладчик ядра
 При отладке управляемого кода может появиться следующее сообщение об ошибке:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   В командной строке введите следующее:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  В командной строке введите следующее:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -76,15 +76,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Отключение отладки на уровне ядра для всех сеансов (другие операционные системы Windows)  
   
-1.  Найдите файл boot.ini на системном диске (обычно это диск C:\\). Файл boot.ini может быть скрыт и иметь атрибут "только для чтения". Поэтому для его отображения необходимо использовать следующую команду:  
+1.  Найдите файл boot.ini на системном диске (обычно C:\\). Файл boot.ini может быть скрыт и иметь атрибут "только для чтения". Поэтому для его отображения необходимо использовать следующую команду:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Откройте файл boot.ini с помощью программы "Блокнот" и удалите следующие параметры:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

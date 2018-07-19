@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; элемент (развертывание ClickOnce) | Документы Microsoft'
+title: '&lt;publisherIdentity&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815146"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081414"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; элемент (развертывание ClickOnce)
 Содержит сведения об издателе, подписавшем этот манифест развертывания.  
@@ -38,7 +38,7 @@ ms.locfileid: "34815146"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `publisherIdentity` Элемент является обязательным для подписанных манифестов. В следующей таблице показаны атрибуты, `publisherIdentity` поддерживает элемент.  
+ `publisherIdentity` Элемент является обязательным для манифестов с подписью. В следующей таблице показаны атрибуты, `publisherIdentity` поддерживает элемент.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  

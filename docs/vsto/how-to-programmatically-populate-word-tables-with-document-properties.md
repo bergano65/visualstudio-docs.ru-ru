@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное заполнение таблиц Word свойствами документа | Документы Microsoft'
+title: 'Практическое: программное заполнение таблиц Word свойствами документа'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0feb203e517cffcd859e3094abcee95d532eafc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c202a663f87a77da9a40116b76c2f09e84464ceb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257450"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Практическое руководство. Программное заполнение таблиц свойствами документа Word
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Практическое: программное заполнение таблиц Word свойствами документа
   Следующий пример создает таблицу Microsoft Office Word в верхней части документа и заполняет свойства ведущего документа.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="populating-tables-in-a-document-level-customization"></a>Заполнение таблиц в настройке на уровне документа  
+## <a name="populate-tables-in-a-document-level-customization"></a>Заполнение таблиц в настройке уровня документа  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Создание и заполнение таблицы свойствами документа  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Создание и заполнение таблицы свойствами документа  
   
 1.  Задайте диапазон как начало документа.  
   
@@ -61,9 +62,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]  
   
-## <a name="populating-tables-in-a-vsto-add-in"></a>Заполнение таблиц в надстройках VSTO  
+## <a name="populate-tables-in-a-vsto-add-in"></a>Заполнение таблиц в надстройке VSTO  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Создание и заполнение таблицы свойствами документа  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Создание и заполнение таблицы свойствами документа  
   
 1.  Задайте диапазон как начало документа.  
   
@@ -96,9 +97,9 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
 ## <a name="see-also"></a>См. также  
- [Как: программное создание таблицы Word](../vsto/how-to-programmatically-create-word-tables.md)   
- [Как: программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Как: программным образом добавить строки и столбцы в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Практическое: программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Практическое: программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Практическое: программное добавление строк и столбцов в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Пошаговые руководства с использованием Word | Документы Microsoft
+title: Пошаговое руководство с использованием Word
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,63 +16,64 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ce56d696cbab963f39b876027e27e8b1254a9a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8baedac87ae0f740c9413d4cdba2f07aa0d978a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258331"
 ---
-# <a name="walkthroughs-using-word"></a>Пошаговые руководства с использованием Word
+# <a name="walkthroughs-using-word"></a>Пошаговое руководство с использованием Word
   В следующих пошаговых руководствах показано, как можно использовать настройки на уровне документа и надстройки VSTO для автоматизации Microsoft Office Word, а также для настройки пользовательского интерфейса.  
   
 ## <a name="document-level-walkthroughs"></a>Пошаговые руководства на уровне документа  
- [Пошаговое руководство. Создание первой настройки на уровне документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+ [Пошаговое руководство: Создание первой настройки уровня документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
  Содержит сведения о создании базовой настройки на уровне документа для Word.  
   
- [Пошаговое руководство. Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  Показано, как добавить текст в документ Word, когда пользователи вводят текст в элементах управления на панели действий.  
   
- [Пошаговое руководство. Привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
+ [Пошаговое руководство: Привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
  Показано, как привязать данные к элементам управления на панели действий. Элементы управления показывают отношение «Основной/подробности» между таблицами в базе данных SQL Server.  
   
- [Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
+ [Пошаговое руководство: Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Показано, как использовать флажки в документе Word для изменения форматирования.  
   
- [Пошаговое руководство. Отображение текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [Пошаговое руководство: Отображение текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Показано, как использовать кнопки и текстовые поля в документах Word.  
   
- [Пошаговое руководство. Обновление диаграммы в документе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
+ [Пошаговое руководство: Обновление диаграммы в документе, с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Показано, как изменить стили диаграммы в документе Word с помощью переключателей в настройке на уровне документа.  
   
- [Пошаговое руководство. Создание контекстного меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
+ [Пошаговое руководство: Создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
  Показано, как создать контекстное меню, которое может использоваться для форматирования текста на закладке.  
   
- [Пошаговое руководство. Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
  Показано, как вызвать код в сборке настройки из кода VBA в документе.  
   
- [Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)  
+ [Пошаговое руководство: Создание шаблона с помощью элементов управления содержимым](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)  
  Показано, как использовать элементы управления содержимым для создания структурированного и повторно используемого содержимого в шаблоне Word.  
   
- [Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [Пошаговое руководство: Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  Показано, как привязать элементы управления содержимым в документе Word к XML-данным, хранящимся в документе.  
   
 ## <a name="application-level-walkthroughs"></a>Пошаговые руководства на уровне приложения  
- [Пошаговое руководство. Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+ [Пошаговое руководство: Создание первой надстройки VSTO для Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
  Содержит сведения о создании базовой надстройки VSTO для Word.  
   
- [Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
+ [Пошаговое руководство: Добавление элементов управления в документ во время выполнения в надстройке VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
  Показано, как добавлять элементы управления в документ с помощью надстройки VSTO.  
   
- [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [Пошаговое руководство: Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
  Показано, как создать вкладку на настраиваемой ленте с помощью XML-файла дескриптора в надстройке VSTO.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)   
- [Данные в пошаговых руководствах решений Office](../vsto/data-in-office-solutions-walkthroughs.md)   
+ [Пошаговые руководства с помощью Excel](../vsto/walkthroughs-using-excel.md)   
+ [Данные в пошаговых руководствах для решений Office](../vsto/data-in-office-solutions-walkthroughs.md)   
  [Пошаговые руководства по настройке пользовательского интерфейса Office](../vsto/office-ui-customization-walkthroughs.md)   
- [Безопасность и пошаговые руководства по развертыванию](../vsto/security-and-deployment-walkthroughs.md)   
+ [Пошаговые руководства по безопасности и развертывания](../vsto/security-and-deployment-walkthroughs.md)   
  [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)  
   
   

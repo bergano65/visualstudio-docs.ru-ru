@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Вызов кода из VBA в проекте Visual C# | Документы Microsoft'
+title: 'Пошаговое руководство: Вызов кода из VBA в проекте Visual C#'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781693"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Пошаговое руководство. Вызов кода из VBA в проекте Visual C#
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Пошаговое руководство: Вызов кода из VBA в проекте Visual C#
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Excel из кода Visual Basic для приложений (VBA) в книге. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `Sheet1` , представление метода коду VBA в книге и вызов метода из кода VBA в книге.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -59,21 +60,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-a-workbook-that-contains-vba-code"></a>Создание книги, содержащей код VBA  
+## <a name="create-a-workbook-that-contains-vba-code"></a>Создание книги, содержащей код VBA  
  Первым шагом является создание книги с поддержкой макросов, которая содержит простой макрос VBA. Прежде чем код в настройке можно будет предоставить VBA, книга уже должна содержать код VBA. В противном случае Visual Studio не сможет изменить проект VBA так, чтобы код VBA мог вызывать сборку настройки.  
   
  Если у вас уже есть книга, содержащая код VBA, который необходимо использовать, данный шаг можно пропустить.  
   
-#### <a name="to-create-a-workbook-that-contains-vba-code"></a>Создание книги, содержащей код VBA  
+### <a name="to-create-a-workbook-that-contains-vba-code"></a>Создание книги, содержащей код VBA  
   
 1.  Запустите Excel.  
   
-2.  Сохранить активный документ как **книга Excel с поддержкой макросов (\*.xlsm)** с именем **WorkbookWithVBA**. Сохраните его в удобном месте, например на рабочем столе.  
+2.  Сохранить активный документ как **книги Excel с поддержкой макросов (\*.xlsm)** с именем **WorkbookWithVBA**. Сохраните его в удобном месте, например на рабочем столе.  
   
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Для получения дополнительной информации см. [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -85,17 +86,17 @@ ms.lasthandoff: 04/16/2018
   
 6.  Добавьте следующий код VBA в файл кода. Этот код определяет простую функцию, которая не выполняет никаких действий. Данная функция предназначена исключительно для проверки наличия проекта VBA в книге. Это необходимо для выполнения последующих действий в данном пошаговом руководстве.  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  Сохраните документ и выйдите из Excel.  
   
-## <a name="creating-the-project"></a>Создание проекта  
+## <a name="create-the-project"></a>Создание проекта  
  Теперь можно создать проект на уровне документа для Excel, который использует созданную ранее книгу с поддержкой макросов.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
 1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -119,10 +120,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает книгу **WorkbookWithVBA** в конструкторе и добавляет проект **CallingCodeFromVBA** в **обозреватель решений**.  
   
-## <a name="trusting-the-location-of-the-workbook"></a>Предоставление доверия расположению книги  
+## <a name="trust-the-location-of-the-workbook"></a>Предоставление доверия расположению книги  
  Перед предоставлением кода в своем решении коду VBA в книге необходимо предоставить доверие VBA на выполнение в книге. Для этого можно использовать следующие способы. В этом пошаговом руководстве данную задачу предстоит выполнить путем предоставления доверия расположению книги в **центре управления безопасностью** в Excel.  
   
-#### <a name="to-trust-the-location-of-the-workbook"></a>Предоставление доверия расположению книги  
+### <a name="to-trust-the-location-of-the-workbook"></a>Предоставление доверия расположению книги  
   
 1.  Запустите Excel.  
   
@@ -150,10 +151,10 @@ ms.lasthandoff: 04/16/2018
   
 13. Выйдите из **Excel**.  
   
-## <a name="adding-a-method-to-the-sheet1-class"></a>Добавление метода в класс Sheet1  
+## <a name="add-a-method-to-the-sheet1-class"></a>Добавьте метод в класс Sheet1  
  Теперь, когда проект VBA настроен, добавьте открытый метод в класс ведущего элемента `Sheet1` , который можно вызвать из кода VBA.  
   
-#### <a name="to-add-a-method-to-the-sheet1-class"></a>Порядок добавления метода в класс Sheet1  
+### <a name="to-add-a-method-to-the-sheet1-class"></a>Порядок добавления метода в класс Sheet1  
   
 1.  В **обозревателе решений**щелкните правой кнопкой мыши файл **Sheet1.cs**и выберите пункт **Просмотреть код**.  
   
@@ -171,10 +172,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]  
   
-## <a name="extracting-an-interface-for-the-sheet1-class"></a>Извлечение интерфейса для класса Sheet1  
+## <a name="extract-an-interface-for-the-sheet1-class"></a>Извлечение интерфейса для класса Sheet1  
  Перед предоставлением метода `CreateVstoNamedRange` коду VBA необходимо создать открытый интерфейс, который определяет данный метод, а также предоставить этот интерфейс модели COM.  
   
-#### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Извлечение интерфейса для класса Sheet1  
+### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Извлечение интерфейса для класса Sheet1  
   
 1.  В файле кода **Sheet1.cs** щелкните в любом месте внутри класса `Sheet1` .  
   
@@ -192,10 +193,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Выполните построение проекта.  
   
-## <a name="exposing-the-method-to-vba-code"></a>Представление метода коду VBA  
+## <a name="expose-the-method-to-vba-code"></a>Представление метода коду VBA  
  Для предоставления метода `CreateVstoNamedRange` коду VBA в книге установите для свойства **ReferenceAssemblyFromVbaProject значения** для ведущего элемента `Sheet1` значение **True**.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>Порядок представления метода коду VBA  
+### <a name="to-expose-the-method-to-vba-code"></a>Порядок представления метода коду VBA  
   
 1.  В **обозревателе решений**дважды щелкните файл **Sheet1.cs**.  
   
@@ -207,15 +208,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  Выполните построение проекта.  
   
-## <a name="calling-the-method-from-vba-code"></a>Вызов метода из кода VBA  
+## <a name="call-the-method-from-vba-code"></a>Вызовите метод из кода VBA  
  Теперь можно вызвать метод `CreateVstoNamedRange` из кода VBA в книге.  
   
 > [!NOTE]  
->  В этом пошаговом руководстве будет добавлен код VBA в книгу во время отладки проекта. Код VBA, добавляемый в этот документ, будет перезаписан в следующий раз при построении проекта, так как Visual Studio заменяет документ в выходной папке сборки копией документа из главной папки проекта. Если код VBA необходимо сохранить, его можно скопировать в документ в папке проекта. Для получения дополнительной информации см. [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+>  В этом пошаговом руководстве будет добавлен код VBA в книгу во время отладки проекта. Код VBA, добавляемый в этот документ, будет перезаписан в следующий раз при построении проекта, так как Visual Studio заменяет документ в выходной папке сборки копией документа из главной папки проекта. Если код VBA необходимо сохранить, его можно скопировать в документ в папке проекта. Дополнительные сведения см. в разделе [объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md).  
   
-#### <a name="to-call-the-method-from-vba-code"></a>Вызов метода из кода VBA  
+### <a name="to-call-the-method-from-vba-code"></a>Вызов метода из кода VBA  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  На вкладке **Разработчик** в группе **Код** щелкните элемент **Visual Basic**.  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 04/16/2018
   
      Этот код вызывает метод `CreateTable` в сборке настройки. Макрос обращается к этому методу, используя глобальный метод `GetManagedClass` для доступа к классу ведущего элемента `Sheet1` , который был предоставлен коду VBA. Метод `GetManagedClass` был автоматически создан ранее при установке значения для свойства **ReferenceAssemblyFromVbaProject** в этом пошаговом руководстве.  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim VSTOSheet1 As CallingCodeFromVBA.Sheet1  
         Set VSTOSheet1 = GetManagedClass(Sheet1)  
@@ -235,7 +236,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-5.  Нажмите клавишу F5.  
+5.  Нажмите клавишу **F5**.  
   
 6.  В открытой книге щелкните ячейку **A1** на листе **Sheet1**. Убедитесь, что появляется окно сообщения.  
   
@@ -249,9 +250,9 @@ ms.lasthandoff: 04/16/2018
 -   Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>См. также  
- [Объединение настроек VBA и настроек на уровне документа](../vsto/combining-vba-and-document-level-customizations.md)   
- [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Как: предоставлять к коду VBA в Visual C&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Пошаговое руководство. Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
+ [Практическое: предоставляют к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Практическое: предоставляют к коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

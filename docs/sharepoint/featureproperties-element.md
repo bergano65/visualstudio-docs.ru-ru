@@ -1,5 +1,5 @@
 ---
-title: Элемент FeatureProperties | Документы Microsoft
+title: Элемент FeatureProperties | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b03de87c13744e3b678d4f51e3950352fa2d475
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766718"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325001"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties - элемент
   Коллекция значений свойств, которые входят в состав компонентом при его развертывании в SharePoint. После развертывания функции значения свойств можно использовать в коде.  
@@ -43,7 +43,7 @@ ms.locfileid: "34766718"
   
 |Элемент|Описание:|  
 |-------------|-----------------|  
-|[FeatureProperty](../sharepoint/featureproperty-element.md)|Необязательный элемент.<br /><br /> Представляет пользовательское свойство, в формате ключ значение.|  
+|[FeatureProperty](../sharepoint/featureproperty-element.md)|Необязательный элемент.<br /><br /> Представляет пользовательское свойство, в формате ключ/значение.|  
   
 ### <a name="parent-elements"></a>Родительские элементы
   
@@ -52,7 +52,7 @@ ms.locfileid: "34766718"
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент обязательный корневой элемент из `.spdata` файла.|  
   
 ## <a name="remarks"></a>Примечания  
- Дополнительные сведения о свойствах компонентов см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Дополнительные сведения о свойствах компонентов см. в разделе [сведениями упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Сведения об элементе
   
@@ -61,10 +61,10 @@ ms.locfileid: "34766718"
 |**Пространство имен**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым.**|Нет|  
+|**Может быть пустым**|Нет|  
   
 ## <a name="see-also"></a>См. также
- [Справочник по схеме элементов проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Предоставляют сведения о упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

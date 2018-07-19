@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd8a43aa07feba8253e76ac99474e9822ce27ce
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 210c4bdf67907af2271000708ae30e2e1102d7ea
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567503"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326898"
 ---
 # <a name="projectextensions-element-msbuild"></a>Элемент ProjectExtensions (MSBuild)
 Позволяет хранить в файлах проектов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] информацию, не относящуюся к [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Все, что находится внутри элемента `ProjectExtensions`, будет игнорироваться [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -35,7 +35,7 @@ ms.locfileid: "31567503"
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <ProjectExtensions>  
     Non-MSBuild information to include in file.  
 </ProjectExtensions>  

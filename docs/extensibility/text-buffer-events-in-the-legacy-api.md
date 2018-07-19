@@ -1,5 +1,5 @@
 ---
-title: Событий текстового буфера в прежних версий API | Документы Microsoft
+title: Событий текстового буфера в интерфейсе API для прежних версий | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,45 +13,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143076"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080612"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>Текст события буфера в API прежних версий
-Объект текстового буфера создает несколько различных событий, которые позволяют реагировать на различных ситуациях.  
+# <a name="text-buffer-events-in-the-legacy-api"></a>Событий текстового буфера, старый API
+Объект текстового буфера выдает несколько различных событий, которые позволяют реагировать на них различных ситуациях.  
   
- При использовании предыдущих версий API, должен реализовать следующие интерфейсы для получения уведомлений об изменениях текстового буфера. Разработка интерфейсов для буфера текста с помощью `IConnectionPointContainer` изменяет интерфейс на текстовый буфер для получения уведомлений о строки из буфера. Дополнительные сведения см. в разделе [как: регистрация событий буфера текста с помощью API прежних версий](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). В случае использования `IVsTextStreamEvents` или `IVsTextLinesEvents` интерфейсы, возвращаются изменения в либо один или двусторонние многомерные координатах, соответственно.  
+ Если вы используете старый API, должны реализовывать следующие интерфейсы для получения уведомления об изменениях в текстовый буфер. Разработка интерфейсов для буфера текста с помощью `IConnectionPointContainer` изменяется интерфейс в текстовом буфере, чтобы получать уведомления об строки из буфера. Дополнительные сведения см. в разделе [как: регистрировать события буфера текста с старый API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). В случае использования `IVsTextStreamEvents` или `IVsTextLinesEvents` интерфейсы, возвращаются изменения в любом одного или двух трехмерной координатах, соответственно.  
   
 ## <a name="text-buffer-interfaces"></a>Интерфейсы буфера текста  
  Ниже перечислены интерфейсы, реализованные объект текстового буфера.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Включает создание составных действий (действия, сгруппированные в единое один отмены и повтора).|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение документа данных управляется буфер текста.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Предоставляет базовые службы; используется многими клиентами.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Предоставляет чтения и записи с помощью двумерные координаты. Наследует от `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Предоставляет быстрый, поточно ориентированный последовательный доступ к текста в буфере.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Обеспечивает чтение и запись возможности с помощью координат одномерный массив. Наследует от `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Предоставляет доступ к общей коллекции свойств. Наиболее важные свойства — это имя, или моникер буфера. Случайные данные можно сохранить в буфере, с помощью этого интерфейса, создать GUID и использовать его в качестве ключа.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Разрешает создание составных действий (то есть действия, которые группируются в единое единый отмены и повтора).|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Включает сохранение данных документа, управляемых текстовым буфером.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Предоставляет базовые службы; Многие клиенты используют.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Предоставляет возможности, используя двухмерные координаты чтения и записи. Наследует от `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Обеспечивает быстрый, поточно ориентированный, последовательный доступ к текста в буфере.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Обеспечивает чтение и запись с помощью одноразмерных координат. Наследует от `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Предоставляет доступ к общей коллекции свойств. Наиболее важным свойством является имя или моникер буфера. Случайные данные можно сохранить в буфере, с этим интерфейсом, создать GUID и использовать его в качестве ключа.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Поддерживает точки подключения для событий.|  
   
 ## <a name="text-buffer-event-interfaces"></a>Интерфейсы событий буфера текста  
- Ниже перечислены интерфейсы для уведомления о событии буфера текста.  
+ Ниже приведены интерфейсы для уведомления о событии текстового буфера.  
   
-|Интерфейс|Описание|  
+|Интерфейс|Описание:|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Сообщает клиенту при новой языковой службы, связанной с текстового буфера.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Сообщает клиенту, когда инициализируется буфер текста и при изменении данных в буфере.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Сообщает клиенту об изменениях к соответствующему буферу текста в одномерный массив координат.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Сообщает клиенту об изменениях к соответствующему буферу текста в двумерные координаты.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Сообщает клиенту об изменениях в данных пользователя.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Сообщает клиенту жеста последней фиксации для инициирования события, а также диапазон изменения текста. `IVsPreliminaryTextChangeCommitEvents` Интерфейс не срабатывает в ответ для отмены или повтора команды. События возникают только для буферов, имеющих диспетчер отмены. `IVsPreliminaryTextChangeCommitEvents` Возникает перед другими событиями, например автоматическое форматирование, чтобы убедитесь, что другие события, не изменяйте текст перед фиксацией изменений. VSPackage должен отслеживать либо `IVsPreliminaryTextChangeCommitEvents` интерфейса или `IVsFinalTextChangeCommitEvents` интерфейс, но не оба.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Сообщает клиенту жеста последней фиксации для инициирования события, а также диапазон изменения текста. `IVsFinalTextChangeCommitEvents` Интерфейс не срабатывает в ответ для отмены или повтора команды. События возникают только для буферов, имеющих диспетчер отмены. `IVsFinalTextChangeCommitEvents` предназначен для использования только с помощью служб языка или другие объекты, которые имеют полный контроль над редактирования. VSPackage должен отслеживать либо `IVsPreliminaryTextChangeCommitEvents` интерфейса или `IVsFinalTextChangeCommitEvents` интерфейс, но не оба.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Уведомляет клиентов, когда новая языковая служба связана с текстовым буфером.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Уведомляет клиентов, при инициализации текстового буфера, и при изменении данных в текстовом буфере.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Уведомляет клиентов об изменениях в базовом текстовом буфере в одномерный массив координат.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Уведомляет клиентов об изменениях в базовом текстовом буфере в двухмерные координаты.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Уведомляет клиентов об изменениях пользовательских данных.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Уведомляет клиентов о последнем жесте фиксации, инициирующем событие и предоставляет диапазон измененного текста. `IVsPreliminaryTextChangeCommitEvents` Интерфейс не запускается в ответ для отмены или повтора команды. События возникают только для буферов, которые имеют в диспетчере отмены. `IVsPreliminaryTextChangeCommitEvents` возникает до других событий, таких как красивое, чтобы убедиться, что другие события, не изменяйте текст перед фиксацией изменений. VSPackage должен отслеживать либо `IVsPreliminaryTextChangeCommitEvents` интерфейс или `IVsFinalTextChangeCommitEvents` интерфейс, но не оба.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Уведомляет клиентов о последнем жесте фиксации, инициирующем событие и предоставляет диапазон измененного текста. `IVsFinalTextChangeCommitEvents` Интерфейс не запускается в ответ для отмены или повтора команды. События возникают только для буферов, которые имеют в диспетчере отмены. `IVsFinalTextChangeCommitEvents` предназначен для использования только с помощью языковых служб или других объектов, имеющих полный контроль над изменением. VSPackage должен отслеживать либо `IVsPreliminaryTextChangeCommitEvents` интерфейс или `IVsFinalTextChangeCommitEvents` интерфейс, но не оба.|  
   
-## <a name="see-also"></a>См. также  
- [Доступ к буфер текста с помощью API прежних версий](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Как: регистрация событий буфера текста с помощью API прежних версий](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+## <a name="see-also"></a>См. также
+ [Доступ к текстового буфера, используя старый API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [как: регистрировать события буфера текста с старый API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

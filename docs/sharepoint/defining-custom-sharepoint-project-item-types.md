@@ -1,5 +1,5 @@
 ---
-title: Определение типов элементов проектов SharePoint пользовательских | Документы Microsoft
+title: Определение типов элементов проектов SharePoint пользовательских | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,37 +17,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9b752aa8162f52746b4487b863557af6dd37fd9
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 180d7e4878ca0c9493c949eac055713212c964de
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765584"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326170"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Определение пользовательских типов элементов проектов SharePoint
-  Определите новый тип элемента проекта SharePoint, если вы хотите создать новый тип элемента проекта SharePoint. Например Visual Studio не включает элементы проекта SharePoint для добавления полей или настраиваемых действий на сайте SharePoint. Можно определить собственные типы элементов проекта SharePoint для создания полей, настраиваемые действия и другие компоненты SharePoint.  
+  Определите новый тип элемента проекта SharePoint, если вы хотите создать новый тип элемента проекта SharePoint. Например Visual Studio не включает элементы проекта SharePoint для добавления полей или настраиваемые действия на сайте SharePoint. Можно определить собственные типы элементов проекта SharePoint для создания поля, настраиваемые действия и других типов компонентов SharePoint.  
   
 ## <a name="tasks-for-defining-sharepoint-project-item-types"></a>Задачи по определению типов элементов проектов SharePoint
- Чтобы определить тип элемента пользовательского проекта, построить сборку расширения Visual Studio, которая реализует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> интерфейса. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+ Для определения пользовательского типа элемента проекта, построить сборку расширения Visual Studio, которая реализует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> интерфейс. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
- При определении пользовательского типа элементов проектов также можно добавить следующие функциональные возможности для элемента проекта:  
+ При определении пользовательского типа элемента проекта, можно также добавить следующие функциональные возможности на элемент проекта:  
   
--   Добавление пункта контекстного меню в элемент проекта. Элемент меню появляется, когда открывается контекстное меню для элемента проекта в **обозревателе решений** щелкните правой кнопкой мыши элемент проекта или выбрав его и затем выбрав **Shift** +  **F10** ключей. Дополнительные сведения см. в разделе [как: Добавление пункта контекстного меню в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
+-   Добавление пункта контекстного меню к элементу проекта. Этот пункт меню отображается при открытии контекстное меню для элемента проекта в **обозревателе решений** щелкните правой кнопкой мыши элемент проекта или выбрав его, а затем выбрать **Shift** +  **F10** ключи. Дополнительные сведения см. в разделе [как: Добавление пункта контекстного меню в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
   
--   Добавление пользовательского свойства в элемент проекта. Это свойство отображается в **свойства** при выборе элемента проекта в **обозревателе решений**. Дополнительные сведения см. в разделе [как: добавить свойство в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+-   Добавьте пользовательское свойство к элементу проекта. Свойство отображается в **свойства** окно при выборе элемента проекта в **обозревателе решений**. Дополнительные сведения см. в разделе [как: Добавление свойства пользовательского типа элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- Чтобы включить другие разработчики могли использовать элемент проекта в Visual Studio, создайте SPDATA-файл и создать шаблон элемента или шаблон проекта, который связан с элементом проекта. Дополнительные сведения см. в разделе [Создание шаблонов элементов и проектов для элементов проекта SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+ Чтобы другие разработчики могли использовать созданный элемент проекта в Visual Studio, создайте SPDATA-файл и создать шаблон элемента или шаблон проекта, который связан с элементом проекта. Дополнительные сведения см. в разделе [создание элементов, шаблоны и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>Взаимосвязь между типами элементов проектов и экземплярами элементов проектов
- При определении типа элемента проекта SharePoint, Visual Studio загружает расширения элемента проекта связанный тип для добавления в проект SharePoint. Например, если определить новый **пользовательское действие** тип проекта, Visual Studio загружает расширение, когда пользователь добавляет **пользовательское действие** элемента проекта в проект. Visual Studio использует один и тот же экземпляр расширения для всех экземпляров типа элемента, соответствующего проекта. В предыдущем примере, если пользователь добавляет второй **пользовательское действие** элемента проекта в проект, для настройки второго элемента проекта используется один и тот же экземпляр расширения.  
+## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>Взаимосвязь между типов элементов проектов и экземплярами элементов проектов
+ При определении типа элемента проекта SharePoint, Visual Studio загружает расширение, когда элемент проекта, сопоставленного типа добавляется в проект SharePoint. Например, если вы определите новый **настраиваемое действие** типа элемента проекта, Visual Studio загружает расширение, когда пользователь добавляет **настраиваемое действие** элемент проекта в проект. Visual Studio использует один экземпляр расширения для всех экземпляров типа элемента проекта. В предыдущем примере, если пользователь добавит секунды **настраиваемое действие** элемента проекта в проект, один и тот же экземпляр расширения используется для настройки второго элемента проекта.  
   
- Для доступа к определенному экземпляру типа элемента проекта, обработку одного из <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события *projectItemTypeDefinition* параметр в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод. Например, чтобы определить, при добавлении элемента проекта настраиваемого типа в проект, обрабатывают <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> событий. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+ Чтобы получить доступ к определенному экземпляру типа элемента проекта, обработку одного из <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события *projectItemTypeDefinition* параметра в текущей реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метод. Например, чтобы определить, когда элемент пользовательского типа добавляется в проект, обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> событий. Дополнительные сведения см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
 ## <a name="see-also"></a>См. также
  [Как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [Способ: добавить свойство типа элемента проекта SharePoint, пользовательские](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
- [Как: Добавление пункта контекстного меню для типа элемента проекта SharePoint, пользовательские](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
- [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Практическое: Добавление свойства пользовательского типа элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
+ [Практическое: Добавление пункта контекстного меню в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
+ [Создание шаблонов элементов и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   

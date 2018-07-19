@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d83f4391e1ca726c1c4e6c299a26fcca72f9f2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: b14de9778518f9edb7180d2128c269df39b87510
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875446"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282711"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Каталог компонентов для Visual Studio Team Explorer 2017
 
@@ -62,7 +62,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная с
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 

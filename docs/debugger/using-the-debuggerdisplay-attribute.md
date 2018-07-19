@@ -1,5 +1,5 @@
 ---
-title: Использование атрибута DebuggerDisplay | Документы Microsoft
+title: Использование атрибута DebuggerDisplay | Документация Майкрософт
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573249"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057590"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Использование атрибута DebuggerDisplay
-[DebuggerDisplayAttribute-класс](/dotnet/api/system.diagnostics.debuggerdisplayattribute) управляет отображением объекта, свойство или поле в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.  
+[DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute) управляет тем, как объект, свойство или поле отображаются в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.  
   
  Атрибут `DebuggerDisplay` имеет один аргумент, определяющий строку, которая должна отображаться в столбце "Значение" для экземпляров типа. Эта строка может содержать фигурные скобки (`{` и `}`). Текст, заключенный в фигурные скобки, вычисляется как поле, свойство или метод.  
   
@@ -35,7 +35,7 @@ ms.locfileid: "34573249"
   
  В следующей таблице показано несколько примеров возможного использования атрибута `DebuggerDisplay` для вывода строк удобочитаемого вида.  
   
-|Атрибут|Выходные данные отображаются в столбце значение|  
+|Атрибут|Выходные данные, значение столбца|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Применение для типа с полями `x` и `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Синтаксис параметра может различаться в зависимости от языка. Будьте внимательны при его использовании.|`String value is [5, 6, 6]`|  
@@ -51,7 +51,7 @@ ms.locfileid: "34573249"
   
  Чтобы создать файл autoexp.cs, откройте командную строку разработчика для VS 2015 и выполните следующие команды.  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
@@ -61,7 +61,7 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>Использование выражений в атрибуте DebuggerDisplay  
  Хотя в атрибуте DebuggerDisplay допускается использовать общее выражение внутри фигурных скобок, делать это не рекомендуется.  
   
- Общее выражение внутри атрибута DebuggerDisplay имеет неявный доступ к указателю `this` только для текущего экземпляра конечного типа. Выражение не имеет доступа к псевдонимам, локальным переменным или указателям. Если выражение ссылается на свойства, то атрибуты для этих свойств не обрабатываются. Например, код C# `[DebuggerDisplay("Object {count - 2}")]` отобразит `Object 6` Если поле `count` имело значение 8.  
+ Общее выражение внутри атрибута DebuggerDisplay имеет неявный доступ к указателю `this` только для текущего экземпляра конечного типа. Выражение не имеет доступа к псевдонимам, локальным переменным или указателям. Если выражение ссылается на свойства, то атрибуты для этих свойств не обрабатываются. Например, код C# `[DebuggerDisplay("Object {count - 2}")]` приводит к отображению `Object 6` Если поле `count` имело значение 8.  
   
  Использование выражений в атрибуте DebuggerDisplay может привести к следующим проблемам:  
   
@@ -88,7 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
-«, Nq» суффикс сообщает средство оценки выражений смогло удалить кавычки при отображении конечное значение (nq = без кавычек). 
+«, Nq» суффикс ull вычислитель выражений для удаления кавычек, при отображении конечное значение (nq = без кавычек). 
   
 ## <a name="example"></a>Пример  
  Следующий пример демонстрирует способ использования атрибута `DebuggerDisplay`совместно с атрибутами `DebuggerBrowseable` и `DebuggerTypeProxy`. При работе данного кода в окна переменных отладчика, например в окно **Контрольные значения** , выводится расширенная информация, а именно:  
@@ -179,5 +179,5 @@ class MyHashtable
 ## <a name="see-also"></a>См. также  
  [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Создание настраиваемых представлений управляемых объектов](../debugger/create-custom-views-of-dot-managed-objects.md)   
- [Описатели формата в C#](../debugger/format-specifiers-in-csharp.md)   
+ [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)   
  [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

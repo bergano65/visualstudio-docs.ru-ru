@@ -14,17 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1841dc30fce8e3799191ff9e2d91b94c7d8ac96b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 85500cfb5d8977c1e06ac925a44ba20bf3144d31
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280329"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Практическое руководство. Распространение фрагментов кода
 
 Фрагменты кода можно передать другим пользователям для установки на других компьютерах с помощью диспетчера фрагментов кода. Однако если нужно распространить несколько фрагментов или распространить фрагмент более широко, файл фрагмента можно включить в расширение Visual Studio, которое могут установить пользователи Visual Studio.
 
-Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию пакета VSSDK, соответствующую вашей версии Visual Studio, можно на странице [Файлы Visual Studio для скачивания](https://www.visualstudio.com/downloads/).
+Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию пакета VSSDK, соответствующую вашей версии Visual Studio, можно на странице [Файлы Visual Studio для скачивания](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Настройка расширения
 

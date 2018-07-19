@@ -1,5 +1,5 @@
 ---
-title: 'Как: укажите ссылку для получения технической поддержки | Документы Microsoft'
+title: 'Практическое: укажите ссылку для получения технической поддержки | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,17 +22,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24052420ecc04ab8a369f739efa885a6fa821fbd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31556596"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078830"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Практическое руководство. Задание ссылки на веб-страницу технической поддержки
-При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, **URL-адрес поддержки** свойство идентифицирует веб-страницу или общую папку, где пользователи могут перейти для получения сведений о приложении. Это свойство является необязательным. Если указано, URL-адрес будет отображаться в запись приложения **Установка и удаление программ** диалоговое окно.  
+# <a name="how-to-specify-a-link-for-technical-support"></a>Практическое: укажите ссылку для получения технической поддержки
+При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, **URL-адрес поддержки** свойство идентифицирует веб-страницы или общей папке, где пользователи могут получить сведения о приложении. Это свойство является необязательным; Если указано, URL-адрес будет отображаться в запись приложения **Установка и удаление программ** диалоговое окно.  
   
- **URL-адрес поддержки** может быть установлено на **публикации** страница **конструктора проектов**.  
+ **URL-адрес поддержки** может быть установлено на **публикации** странице **конструктор проектов**.  
   
 ### <a name="to-specify-a-support-url"></a>Чтобы указать URL-адрес поддержки  
   
@@ -44,8 +44,8 @@ ms.locfileid: "31556596"
   
 4.  Нажмите кнопку **описание**.  
   
-5.  В **URL-адрес поддержки** введите полный путь к веб-сайта, веб-странице или UNC-папки.  
+5.  В **URL-адрес поддержки** введите полный путь к веб-сайт, веб-страницы или UNC-папке.  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Практическое: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

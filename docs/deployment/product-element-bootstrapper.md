@@ -1,5 +1,5 @@
 ---
-title: '&lt;Продукт&gt; элемент (загрузчик) | Документы Microsoft'
+title: '&lt;Продукт&gt; элемент (загрузчик) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559443"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080409"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Продукт&gt; элемент (загрузчик)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Продукт&gt; элемент (установщик)
 `Product` Элемент является элементом верхнего уровня XML в файле продукта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -142,14 +142,14 @@ ProductCode
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
  `Product` Элемент является обязательным в файле продукта. Он имеет следующий атрибут.  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|`ProductCode`|Уникальный идентификатор продукта.|  
+|`ProductCode`|Уникальный идентификатор для продукта.|  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показано создание файла продукта для установки [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
@@ -252,4 +252,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)
+ [Справочник по схеме продукта и пакета](../deployment/product-and-package-schema-reference.md)

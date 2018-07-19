@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750484"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282977"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -50,7 +50,7 @@ ms.locfileid: "34750484"
 
 ### <a name="a-new-setup-experience"></a>Новые возможности установки
 
-[Скачайте Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) или [ознакомьтесь с требованиями к системе Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default).
+[Скачайте Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) или [ознакомьтесь с требованиями к системе Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default).
 
  Visual Studio упрощает и ускоряет установку необходимых вам компонентов в любое время. Удаление тоже происходит без ошибок.
 
@@ -338,8 +338,8 @@ Visual Studio перемещает свои расширения, а также 
 
 Мы часто добавляем в Visual Studio 2017 новые функции, облегчающие разработку. Ниже перечислены некоторые из наиболее важных обновлений, входящих в экспериментальную предварительную версию:
 
-* **[Live Share](https://www.visualstudio.com/services/live-share/)**  — это новое средство, которое позволяет предоставить базу кода и соответствующий контекст коллеге и обеспечить двунаправленное взаимодействие непосредственно из среды Visual Studio. Благодаря Live Share коллега может легко и безопасно просматривать, изменять и отлаживать проект, предоставленный вами для общего доступа.<br><br>Дополнительные сведения см. в разделе [Часто задаваемые вопросы по Live Share](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**  — это новая функция, которая расширяет возможности разработки программного обеспечения и использует ИИ, чтобы предоставлять более контекстно зависимые завершения кода, помогать разработчикам придерживаться шаблонов и стилей, принятых в их команде, находить неочевидные проблемы с кодом и концентрировать проверки кода на действительно важных областях. <br><br>Дополнительные сведения см. в разделе [Часто задаваемые вопросы по IntelliCode](../ide/not-in-toc/intellicode-faq.md).
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**  — это новое средство, которое позволяет предоставить базу кода и соответствующий контекст коллеге и обеспечить двунаправленное взаимодействие непосредственно из среды Visual Studio. Благодаря Live Share коллега может легко и безопасно просматривать, изменять и отлаживать проект, предоставленный вами для общего доступа.<br><br>Дополнительные сведения см. в разделе [Часто задаваемые вопросы по Live Share](/visualstudio/liveshare/faq).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**  — это новая функция, которая расширяет возможности разработки программного обеспечения и использует ИИ, чтобы предоставлять более контекстно зависимые завершения кода, помогать разработчикам придерживаться шаблонов и стилей, принятых в их команде, находить неочевидные проблемы с кодом и концентрировать проверки кода на действительно важных областях. <br><br>Дополнительные сведения см. в разделе [Часто задаваемые вопросы по IntelliCode](../ide/not-in-toc/intellicode-faq.md).
 
 Хотите ознакомиться с другими будущими возможностями для Visual Studio 2017? См. страницу [Стратегия развития Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 
@@ -358,5 +358,5 @@ Visual Studio перемещает свои расширения, а также 
 * [Заметки о выпуске Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Новые возможности Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Новые возможности C#](/dotnet/csharp/whats-new)
-* [What's New for Team Foundation Server](https://www.visualstudio.com/docs/whats-new) (Новые возможности Team Foundation Server)
-* [Новые возможности Visual Studio для Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Новые возможности Team Foundation Server)
+* [Новые возможности Visual Studio для Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

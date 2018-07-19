@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic | Документы Microsoft'
+title: 'Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: efb8f6c2759760fe2eb5c5d5ccf23e0942eac93a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808941"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-basic-project"></a>Пошаговое руководство. Вызов кода из VBA в проекте Visual Basic
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Word из кода Visual Basic для приложений (VBA) в документе. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `ThisDocument` , представление метода коду VBA и вызов метода из кода VBA в документе.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -57,21 +58,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-a-document-that-contains-vba-code"></a>Создание документа, содержащего код VBA  
+## <a name="create-a-document-that-contains-vba-code"></a>Создание документа, содержащего код VBA  
  Первым шагом является создание документа с поддержкой макросов, который содержит простой макрос VBA. При создании проекта Visual Studio, основанном на этом документе, он должен содержать проект VBA. В противном случае Visual Studio не сможет изменить проект VBA так, чтобы код VBA мог вызывать сборку настройки.  
   
  Если у вас уже есть документ, содержащий код VBA, который необходимо использовать, данный шаг можно пропустить.  
   
-#### <a name="to-create-a-document-that-contains-vba-code"></a>Создание документа, содержащего код VBA  
+### <a name="to-create-a-document-that-contains-vba-code"></a>Создание документа, содержащего код VBA  
   
 1.  Запустите приложение Word.  
   
-2.  Сохранить активный документ как слово **документ с поддержкой макросов (\*.docm)** с именем **DocumentWithVBA**. Сохраните его в удобном месте, например, на рабочем столе.  
+2.  Сохранить активный документ как слово **документа документ (\*.docm)** с именем **DocumentWithVBA**. Сохраните его в удобном месте, например, на рабочем столе.  
   
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Для получения дополнительной информации см. [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -83,17 +84,17 @@ ms.lasthandoff: 04/16/2018
   
 6.  Добавьте следующий код VBA в файл кода. Этот код определяет простую функцию, которая не выполняет никаких действий. Данная функция предназначена исключительно для проверки наличия проекта VBA в документе. Это необходимо для выполнения последующих действий в данном пошаговом руководстве.  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  Сохраните документ и выйдите из Word.  
   
-## <a name="creating-the-project"></a>Создание проекта  
+## <a name="create-the-project"></a>Создание проекта  
  Теперь можно создать проект на уровне документа для Word, который использует созданный ранее документ с поддержкой макросов.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
 1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -117,10 +118,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает документ **DocumentWithVBA** в конструкторе и добавляет проект **CallingCodeFromVBA** в **обозреватель решений**.  
   
-## <a name="trusting-the-location-of-the-document"></a>Предоставление доверия расположению документа  
+## <a name="trust-the-location-of-the-document"></a>Предоставление доверия расположению документа  
  Перед предоставлением кода в своем решении коду VBA в документе необходимо предоставить доверие VBA на выполнение в документе. Для этого можно использовать следующие способы. В целях этого пошагового руководства предоставьте доверие расположению документа в **Центре управления безопасностью** в Word.  
   
-#### <a name="to-trust-the-location-of-the-document"></a>Предоставление доверия расположению документа  
+### <a name="to-trust-the-location-of-the-document"></a>Предоставление доверия расположению документа  
   
 1.  Запустите приложение Word.  
   
@@ -148,10 +149,10 @@ ms.lasthandoff: 04/16/2018
   
 13. Закройте программу Word.  
   
-## <a name="adding-a-method-to-the-thisdocument-class"></a>Добавление метода в класс ThisDocument  
+## <a name="add-a-method-to-the-thisdocument-class"></a>Добавьте метод в класс ThisDocument  
  Теперь, когда проект VBA настроен, добавьте метод в класс ведущего элемента `ThisDocument` , который можно вызвать из кода VBA.  
   
-#### <a name="to-add-a-method-to-the-thisdocument-class"></a>Добавление метода в класс ThisDocument  
+### <a name="to-add-a-method-to-the-thisdocument-class"></a>Добавление метода в класс ThisDocument  
   
 1.  В **обозревателе решений**щелкните правой кнопкой мыши **ThisDocument.vb**и выберите пункт **Просмотреть код**.  
   
@@ -163,10 +164,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Выполните построение проекта.  
   
-## <a name="exposing-the-method-to-vba-code"></a>Представление метода коду VBA  
+## <a name="expose-the-method-to-vba-code"></a>Представление метода коду VBA  
  Для предоставления метода `CreateTable` коду VBA в документе установите для свойства **EnableVbaCallers** ведущего элемента `ThisDocument` значение **True**.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>Представление метода коду VBA  
+### <a name="to-expose-the-method-to-vba-code"></a>Представление метода коду VBA  
   
 1.  В **обозревателе решений**дважды щелкните файл **ThisDocument.vb**.  
   
@@ -178,15 +179,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  Выполните построение проекта.  
   
-## <a name="calling-the-method-from-vba-code"></a>Вызов метода из кода VBA  
+## <a name="call-the-method-from-vba-code"></a>Вызовите метод из кода VBA  
  Теперь можно вызвать метод `CreateTable` из кода VBA в документе.  
   
 > [!NOTE]  
->  В этом пошаговом руководстве будет добавлен код VBA в документ во время отладки проекта. Код VBA, добавляемый в этот документ, будет перезаписан в следующий раз при построении проекта, так как Visual Studio заменяет документ в выходной папке сборки копией документа из главной папки проекта. Если код VBA необходимо сохранить, его можно скопировать в документ в папке проекта. Для получения дополнительной информации см. [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+>  В этом пошаговом руководстве будет добавлен код VBA в документ во время отладки проекта. Код VBA, добавляемый в этот документ, будет перезаписан в следующий раз при построении проекта, так как Visual Studio заменяет документ в выходной папке сборки копией документа из главной папки проекта. Если код VBA необходимо сохранить, его можно скопировать в документ в папке проекта. Дополнительные сведения см. в разделе [объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md).  
   
-#### <a name="to-call-the-method-from-vba-code"></a>Вызов метода из кода VBA  
+### <a name="to-call-the-method-from-vba-code"></a>Вызов метода из кода VBA  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  На вкладке **Разработчик** в группе **Код** щелкните элемент **Visual Basic**.  
   
@@ -198,13 +199,13 @@ ms.lasthandoff: 04/16/2018
   
      Этот код вызывает метод `CreateTable` в сборке настройки. Макрос обращается к этому методу с помощью свойства `CallVSTOAssembly` объекта `ThisDocument` . Это свойство было автоматически создано ранее при установке значения для свойства **EnableVbaCallers** в этом пошаговом руководстве.  
   
-    ```  
+    ```vb  
     Sub CreateTable()  
         Call ThisDocument.CallVSTOAssembly.CreateTable("Employee Name", "Start Date")  
     End Sub  
     ```  
   
-5.  Нажмите клавишу F5.  
+5.  Нажмите клавишу **F5**.  
   
 6.  Убедитесь, что новая таблица была добавлена в документ.  
   
@@ -213,15 +214,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о вызове кода в решениях Office из VBA см. в следующих разделах:  
   
--   Вызов кода в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual Basic. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода из VBA в Visual C&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+-   Вызов кода в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual Basic. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода из VBA в Visual c#&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 -   Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. в разделе [Пошаговое руководство: вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>См. также  
- [Объединение настроек VBA и настроек на уровне документа](../vsto/combining-vba-and-document-level-customizations.md)   
- [Программирование настроек на уровне документа](../vsto/programming-document-level-customizations.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Как: предоставлять к коду VBA в Visual C&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Пошаговое руководство: Вызов кода из VBA в Visual C&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
+ [Объединение VBA и настроек уровня документа](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)   
+ [Практическое: предоставлять к коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Практическое: предоставлять к коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Пошаговое руководство: Вызов кода из VBA в Visual c#&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное создание элементов пользовательских папок | Документы Microsoft'
+title: 'Практическое: программное создание настраиваемых элементов папок'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebd3bbc365212b2c6a1ab0691e8e16a7936c9955
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45423b134f3bc9e0a4e9c791bef8ea24761e38f4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257664"
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>Практическое руководство. Программное создание настраиваемых элементов папок
-  Этот пример создает новую папку в Microsoft Office Outlook. В имени папки используется имя пользователя, который вошел в систему.  
+# <a name="how-to-programmatically-create-custom-folder-items"></a>Практическое: программное создание настраиваемых элементов папок
+  В этом примере создает новую папку в Microsoft Office Outlook. Имя пользователя, который вошел в систему используется для имени папки.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Работа с папками](../vsto/working-with-folders.md)   
- [Как: программное добавление записи в контакты Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Практическое руководство. Программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)  
+ [Практическое: программное добавление записи в контакты Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
+ [Практическое: программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)  
   
   

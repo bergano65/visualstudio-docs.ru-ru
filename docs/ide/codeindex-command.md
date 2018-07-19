@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297609"
 ---
 # <a name="codeindex-command"></a>Команда CodeIndex
 
 Команда **CodeIndex** используется для управления индексацией кода на сервере Team Foundation Server. Например, может потребоваться сбросить индекс, чтобы исправить данные CodeLens, или отключить индексацию, чтобы разобраться с проблемами производительности сервера.
 
-**Необходимые разрешения**
+## <a name="required-permissions"></a>Необходимые разрешения
 
-Для использования команды **CodeIndex** необходимо являться членом группы безопасности **Администраторы Team Foundation**. См. статью [Permissions and groups defined for Team Services and TFS](https://www.visualstudio.com/docs/setup-admin/permissions) (Разрешения и группы, определенные для Team Services и TFS).
+Для использования команды **CodeIndex** необходимо являться членом группы безопасности **Администраторы Team Foundation**. См. статью [Permissions and groups defined for Team Services and TFS](/vsts/organizations/security/permissions?view=vsts) (Разрешения и группы, определенные для Team Services и TFS).
 
 > [!NOTE]
 > Для выполнения этой команды необходимо открыть окно командной строки с повышенными привилегиями, даже если вы вошли в систему, используя учетные данные администратора. Также эту команду необходимо выполнять для Team Foundation с уровня приложения.
@@ -126,4 +127,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>См. также
 
 - [Поиск изменений кода и других журналов с помощью CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Управление конфигурацией сервера с помощью TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [Управление конфигурацией сервера с помощью TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

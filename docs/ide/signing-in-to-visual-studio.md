@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948344"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282238"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "31948344"
 
 Выполняя вход, вы можете использовать расширенный спектр возможностей Visual Studio. Например, после входа вы, помимо прочего, можете синхронизировать настройки между устройствами, продлевать срок действия пробной версии и автоматически подключаться к службе Azure.
 
-Ниже приведен полный список возможностей, которые вы получаете после входа:  
+Ниже приведен полный список возможностей, которые вы получаете после входа:
 
 - **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .
 
@@ -62,9 +62,9 @@ ms.locfileid: "31948344"
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-Если у вас возникли проблемы при входе, ознакомьтесь со справкой на странице [поддержки учетных записей](https://www.visualstudio.com/subscriptions/support/).
+Если у вас возникли проблемы при входе, ознакомьтесь со справкой на странице [поддержки учетных записей](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>См. также
 
-* [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)

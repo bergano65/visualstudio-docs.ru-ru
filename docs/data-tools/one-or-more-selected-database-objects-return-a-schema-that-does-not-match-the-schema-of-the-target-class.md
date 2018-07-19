@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 84a910d75c7c91aa2abb381781a731dfbe646cfe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920327"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089468"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Один или несколько выбранных объектов базы данных возвращает схему, не соответствующую схеме целевого класса
 
@@ -27,7 +27,7 @@ ms.locfileid: "31920327"
 
 1. Нажмите кнопку **ОК** чтобы закрыть диалоговое окно.
 
-2. Выберите объект базы данных, который возвращает данные, не соответствующие схеме целевого класса (класс объекта базы данных, который сбрасывается в реляционный конструктор объектов).
+2. Выберите объект базы данных, который возвращает данные, которые соответствуют схеме целевого класса (класс, в который сбрасывается объект базы данных **реляционный конструктор объектов**).
 
 ## <a name="see-also"></a>См. также
 

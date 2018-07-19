@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571624"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325301"
 ---
 # <a name="msbuild-transforms"></a>Преобразования MSBuild
 Преобразование — это однозначное преобразование одного списка элементов в другой. Помимо возможности преобразования списков элементов в проекте, преобразование позволяет целевому объекту определить прямое сопоставление входных и выходных данных. Этот раздел описывает преобразования и то, как [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] использует их для более эффективной сборки проектов.  
@@ -28,7 +28,7 @@ ms.locfileid: "31571624"
   
 В приведенном ниже примере список файлов *RESX* преобразуется в список файлов *RESOURCES*. Модификатор преобразования %(filename) указывает, что каждый файл *RESOURCES* имеет то же имя, что и соответствующий файл *RESX*.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ ms.locfileid: "31571624"
 ## <a name="using-multiple-modifiers"></a>Использование нескольких модификаторов  
  Выражение преобразования может содержать несколько модификаторов, которые можно объединять в любом порядке, кроме того, они могут повторяться. В следующем примере изменяется имя каталога, содержащего файлы, однако файлы сохраняют исходное имя и расширение.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   

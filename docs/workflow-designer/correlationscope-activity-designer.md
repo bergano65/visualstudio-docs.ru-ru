@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - конструктора операций CorrelationScope
+title: Конструктор рабочих процессов - конструктор действия CorrelationScope
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,32 +12,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b7eb7586eeb746bdeb3d28dfcc5fb14fe7bd6f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976609"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117066"
 ---
 # <a name="correlationscope-activity-designer"></a>Конструктор действия CorrelationScope
 
-**CorrelationScope** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.CorrelationScope> действия, которое обеспечивает неявное управление дочерними действиями обмена сообщениями с помощью <xref:System.ServiceModel.Activities.CorrelationHandle> объекта.
+**CorrelationScope** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.CorrelationScope> действие, которое обеспечивает неявное управление дочерними действиями обмена сообщениями с помощью <xref:System.ServiceModel.Activities.CorrelationHandle> объекта.
 
 ## <a name="the-correlationscope-activity"></a>Действие CorrelationScope
 
 Свойство <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> задает объект <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для управления дочерними действиями обмена сообщениями. Действия <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.Receive>, содержащиеся в свойстве <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>, настроены на использование свойства <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> содержащегося действия <xref:System.ServiceModel.Activities.CorrelationScope> для выполнения корреляции.
 
-### <a name="using-the-correlationscope-activity-designer"></a>Использование конструктора операций CorrelationScope
- **CorrelationScope** конструктора действий можно найти в **обмен сообщениями** категории **элементов**, который нажав **элементов** вкладка в левой части конструктора рабочих процессов (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+### <a name="use-the-correlationscope-activity-designer"></a>Использование конструктора операций CorrelationScope
 
- **CorrelationScope** конструктора можно перетащить из **элементов** и удалена на поверхности конструктора рабочих процессов. При этом создается <xref:System.ServiceModel.Activities.CorrelationScope> действия по умолчанию **DisplayName** для CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **CorrelationScope** конструктора или в **DisplayName** поле **свойства** окна.
+**CorrelationScope** конструктора действий можно найти в **Messaging** категории **элементов**, который нажав **панелиэлементов** вкладка в левой части конструктора рабочих процессов. Можно также выбрать **элементов** из **представление** меню или нажмите клавишу **Ctrl**+**Alt** + **X**.
 
- Чтобы указать <xref:System.ServiceModel.Activities.CorrelationHandle> используемый дочерними действиями обмена сообщениями, нажмите кнопку с многоточием рядом с **CorrelatesWith** в **свойства** окно для отображения **редактор выражений**  диалоговое окно. Это свойство также можно задать в области конструктора операций.
+**CorrelationScope** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов. При этом создается <xref:System.ServiceModel.Activities.CorrelationScope> действие по умолчанию **DisplayName** для CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **CorrelationScope** конструктора действий или в **DisplayName** поле **свойства** окна.
 
- Действия, ограниченные пределами корреляции, указываются путем сброса их конструкторов в **текст** внутри **CorrelationScope** конструктора.
+Чтобы указать <xref:System.ServiceModel.Activities.CorrelationHandle> используемый дочерними действиями обмена сообщениями, выберите кнопку с многоточием рядом с **CorrelatesWith** в **свойства** окно для отображения **выражение Редактор** диалоговое окно. Это свойство также можно задать в области конструктора операций.
+
+Действия, ограниченные пределами корреляции, указываются путем сброса их конструкторов в **текст** поле в пределах **CorrelationScope** конструктора.
 
 ### <a name="the-correlationscope-properties"></a>Свойства CorrelationScope
- В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.CorrelationScope> и описано их использование в конструкторе. Эти свойства можно изменить либо в **свойства** окна или в области конструктора в конструкторе рабочих процессов и часто в обеих.
+
+В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.CorrelationScope> и описано их использование в конструкторе. Эти свойства можно изменить либо в **свойства** окно или в рабочей области конструктора рабочих процессов и часто в обеих.
 
 |Имя свойства|Обязательно|Использование|
 |-------------------|--------------|-----------|

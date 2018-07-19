@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Привязка к данным из службы в VSTO надстройки проекта | Документы Microsoft'
+title: 'Пошаговое руководство: Привязка к данным из службы в проекте надстройки VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,22 +17,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89b9455051031b3faa0a44102f2fe97dca97d89
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808661"
 ---
-# <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство. Привязка к данным из службы в проекте надстройки VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство: Привязка к данным из службы в проекте надстройки VSTO
   Вы можете привязывать данные к элементам управления ведущего приложения в проектах надстроек VSTO. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word, привязка элементов управления к данным, полученным из службы содержимого MSDN, и реагирование на события во время выполнения.  
   
  **Применение.** Сведения этого раздела относятся к проектам уровня приложения для Word 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
   
  В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Добавление элемента управления <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в документ во время выполнения.  
+-   Добавление <xref:Microsoft.Office.Tools.Word.RichTextContentControl> элемента управления в документ во время выполнения.  
   
--   Привязка элемента управления <xref:Microsoft.Office.Tools.Word.RichTextContentControl> к данным из веб-службы.  
+-   Привязка <xref:Microsoft.Office.Tools.Word.RichTextContentControl> элемент управления к данным из веб-службы.  
   
 -   Реагирование на событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> элемента управления <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .  
   
@@ -45,21 +46,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-a-new-project"></a>Создание нового проекта  
+## <a name="create-a-new-project"></a>Создание нового проекта  
  Первым шагом является создание проекта надстройки Word VSTO.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
 1.  Создайте проект надстройки VSTO для Word с именем **Служба содержимого MTPS**в Visual Basic или C#.  
   
-     Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Дополнительные сведения см. в разделе [как: проектов Office, создайте в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio откроет файл `ThisAddIn.vb` или `ThisAddIn.cs` и добавит проект в **обозреватель решений**.  
   
-## <a name="adding-a-web-service"></a>Добавление веб-службы  
- Для этого пошагового руководства используйте веб-службу, называемую службой содержимого MTPS. Эта веб-служба возвращает сведения из указанной статьи MSDN в виде строки XML или обычного текста. Ниже показано, как отобразить возвращенные сведения в элементе управления содержимым.  
+## <a name="add-a-web-service"></a>Добавление веб-службы  
+ Для этого пошагового руководства используйте веб-службы вызывается служба содержимого MTPS. Эта веб-служба возвращает сведения из указанной статьи MSDN в виде строки XML или обычного текста. Ниже показано, как отобразить возвращенные сведения в элементе управления содержимым.  
   
-#### <a name="to-add-the-mtps-content-service-to-the-project"></a>Добавление службы содержимого MTPS в проект  
+### <a name="to-add-the-mtps-content-service-to-the-project"></a>Добавление службы содержимого MTPS в проект  
   
 1.  В меню **Данные** выберите команду **Добавить новый источник данных**.  
   
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  В диалоговом окне **Мастер добавления ссылок** нажмите кнопку **Готово**.  
   
-## <a name="adding-a-content-control-and-binding-to-data-at-run-time"></a>Добавление элемента управления содержимым и привязки к данным во время выполнения  
- В проектах надстроек VSTO вы можете добавлять и привязывать элементы управления во время выполнения. Для этого пошагового руководства настройте элемент управления содержимым для получения данных из веб-службы, когда пользователь щелкает внутри элемента управления.  
+## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Добавьте элемент управления содержимым и привязка к данным во время выполнения  
+ В проектах надстройки VSTO можно добавлять и привязывать элементы управления во время выполнения. Для этого пошагового руководства настройте элемент управления содержимым для получения данных из веб-службы, когда пользователь щелкает внутри элемента управления.  
   
-#### <a name="to-add-a-content-control-and-bind-to-data"></a>Добавление элемента управления содержимым и привязка к данным  
+### <a name="to-add-a-content-control-and-bind-to-data"></a>Добавление элемента управления содержимым и привязка к данным  
   
 1.  В классе `ThisAddIn` объявите переменные для службы содержимого MTPS, элемента управления содержимым и привязки данных.  
   
@@ -105,10 +106,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]  
   
-## <a name="testing-the-add-in"></a>Тестирование надстройки  
+## <a name="test-the-add-in"></a>Тестирование надстройки  
  При открытии Word появляется элемент управления <xref:Microsoft.Office.Tools.Word.RichTextContentControl> . Текст в этом элементе управления при щелчке внутри него.  
   
-#### <a name="to-test-the-vsto-add-in"></a>Тестирование надстройки VSTO  
+### <a name="to-test-the-vsto-add-in"></a>Тестирование надстройки VSTO  
   
 1.  Нажмите клавишу **F5**.  
   

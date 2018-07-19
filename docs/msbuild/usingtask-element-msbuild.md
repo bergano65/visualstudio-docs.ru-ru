@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4c9a60212a3e89e8c7f445e5670858f524df9a70
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269145"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302954"
 ---
 # <a name="usingtask-element-msbuild"></a>Элемент UsingTask (MSBuild)
 Сопоставляет задачу, на которую указана ссылка в элементе [Задача](../msbuild/task-element-msbuild.md), со сборкой, содержащей реализацию этой задачи.  
@@ -35,7 +35,7 @@ ms.locfileid: "34269145"
 
 ## <a name="syntax"></a>Синтаксис  
 
-```  
+```xml  
 <UsingTask TaskName="TaskName"  
     AssemblyName = "AssemblyName"   
     TaskFactory = "ClassName"  

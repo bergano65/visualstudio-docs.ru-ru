@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: acdadad76c9cbf833003e5b0652c06b563a0d551
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 56b58ec44ecae6e1e0bbd6c0d3e4bc000c1bcf28
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33874828"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283006"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Каталог компонентов для Visual Studio Feedback Client 2017
 
@@ -61,7 +61,7 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback C
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 
