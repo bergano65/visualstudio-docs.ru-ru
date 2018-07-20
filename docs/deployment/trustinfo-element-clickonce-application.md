@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; элемент (приложение ClickOnce) | Документы Microsoft'
+title: '&lt;trustInfo&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816007"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151070"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; элемент (приложение ClickOnce)
 Описывает минимальные разрешения безопасности, необходимые для запуска приложения на клиентском компьютере.  
@@ -270,5 +270,5 @@ ms.locfileid: "34816007"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
+ [Общие сведения о доверенных развертывания приложения](../deployment/trusted-application-deployment-overview.md)   
  [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
