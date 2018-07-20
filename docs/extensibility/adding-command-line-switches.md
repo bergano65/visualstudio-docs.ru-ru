@@ -1,5 +1,5 @@
 ---
-title: Добавление параметров командной строки | Документы Microsoft
+title: Добавление параметров командной строки | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,55 +16,49 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: daef07d0b8dd02f6823717b0c0cb5d68d837ccde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098422"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153302"
 ---
-# <a name="adding-command-line-switches"></a>Добавление параметров командной строки
-Можно добавить параметры командной строки, применимые к файлу пакета VSPackage, при выполнении devenv.exe. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени параметра и его свойств. В этом примере для подкласс пакет VSPackage с именем добавляется параметр MySwitch **AddCommandSwitchPackage** без аргументов и с VSPackage, загружаются автоматически.  
+# <a name="add-command-line-switches"></a>Добавить параметры командной строки
+Можно добавить параметры командной строки, которые применяются к VSPackage при *devenv.exe* выполняется. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени параметра и его свойств. В этом примере добавляется параметр MySwitch для подкласса VSPackage с именем **AddCommandSwitchPackage** без аргументов и с пакетом VSPackage, загружаются автоматически.  
   
 ```csharp  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- В следующей таблице показаны именованные параметры  
+ Именованные параметры отображаются в следующих описаниях.
+
+||||
+|-|-|-|-|
+| Параметр | Описание:|
+| Аргументы | Число аргументов для параметра. Может быть «*», или список аргументов. |
+| DemandLoad |  Загрузите пакет VSPackage автоматически, если задано значение 1, в противном случае — значение 0. |  
+| HelpString | Строка или ресурс идентификатор справки строки для отображения с **devenv /?**. |
+| name | Переключатель. |
+| PackageGuid | Идентификатор GUID пакета. |  
   
- Аргументы  
- Число аргументов для коммутатора. Может быть «*», или список аргументов.  
+ Первое значение аргументов обычно 0 или 1. Специальное значение "*" может использоваться для указания, что весь остаток командной строки — это аргумент. Это может быть полезно для отладки сценариев, где пользователь должен пройти в командной строке отладчика.  
   
- DemandLoad  
- Пакет VSPackage загружаются автоматически, если он равен 1, в противном случае значение равно 0.  
+ Имеет значение DemandLoad `true` (1) или `false` (0) указывает, что VSPackage должны загружаться автоматически.  
   
- HelpString  
- Строка или ресурс идентификатор справки строки для отображения с **devenv /?**.  
+ HelpString значение — идентификатор ресурса строки, который отображается в **devenv /?** Отображение справки. Это значение должно быть в форме «#nnn» где nnn — целое число. Строковое значение в файле ресурсов должна завершиться в символ новой строки.  
   
- name  
- Переключатель.  
+ Значение имени является имя коммутатора.  
   
- PackageGuid  
- Идентификатор GUID пакета.  
+ Значение PackageGuid – идентификатор GUID пакета, который реализует этот переключатель. Интегрированная среда разработки использует этот идентификатор GUID для поиска VSPackage в реестре, к которому применяется параметр командной строки.  
   
- Первое значение аргументы обычно 0 или 1. Специальное значение "*" можно указать, что весь остаток командной строке аргумент. Это может быть полезна для отладки сценариев, где пользователь должен попасть в командной строке отладчика.  
+## <a name="retrieve-command-line-switches"></a>Получить параметры командной строки  
+ Когда загружается пакет, параметры командной строки можно получить, выполнив следующие действия.  
   
- Значение DemandLoad `true` (1) или `false` (0) указывает, что VSPackage должны загружаться автоматически.  
-  
- HelpString значение — это идентификатор ресурса строки, который отображается в devenv /? Отображение справки. Это значение должно быть в форме «#nnn» где nnn является целым числом. Строковое значение в файле ресурсов должен оканчиваться на символ новой строки.  
-  
- Значение Name — имя коммутатора.  
-  
- Значение PackageGuid — идентификатор GUID пакета, который реализует этот переключатель. Интегрированная среда разработки использует этот идентификатор GUID для поиска VSPackage в реестре, к которому применяется параметр командной строки.  
-  
-## <a name="retrieving-command-line-switches"></a>Получение параметров командной строки  
- При загрузке пакета параметров командной строки можно получить, выполнив следующие действия.  
-  
-1.  В пакете VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализацию, вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> для получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> интерфейса.  
+1.  В ваш VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации, вызов `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> для получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> интерфейс.  
   
 2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> для получения параметров командной строки, введенные пользователем.  
   
- Ниже показано, как узнать ли параметр командной строки MySwitch было введено пользователем:  
+ Приведенный ниже показано, как узнать ли параметра командной строки MySwitch введенный пользователем:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  
@@ -75,11 +69,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- Для проверки параметров командной строки каждый раз, когда загружается пакет вашей обязанностью является.  
+ Отвечает на наличие параметров командной строки каждый раз, когда загружается пакет.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
- [Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)   
- [Программа CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
- [. Файлах pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [Параметры командной строки для команды devenv](../ide/reference/devenv-command-line-switches.md)   
+ [Служебная программа CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
+ [. Файлов pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

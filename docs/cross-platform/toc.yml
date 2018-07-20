@@ -22,8 +22,6 @@
 - name: Набор средств Visual Studio для Unity
   href: visual-studio-tools-for-unity.md
   items:
-    - name: Обзор набора средств Visual Studio для Unity
-      href: overview-of-visual-studio-tools-for-unity.md
     - name: Начало работы с набором средств Visual Studio для Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Применение набора средств Visual Studio для Unity

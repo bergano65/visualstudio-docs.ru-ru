@@ -1,9 +1,9 @@
 ---
-title: Параметры страниц свойств для веб-проектов | Документы Microsoft
+title: Параметры страниц свойств для веб-проектов | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2559ad8e1c2d233ffcb1873b0f7f5212bd6cf7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5584d5c5f971231712fb79f4ad40d330dd659b33
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480720"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151637"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Параметры страниц свойств для веб-проектов
-Можно изменить значения свойств для конфигурации отладки веб-сайта в **страницы свойств** диалоговое окно, как описано в [конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком **страницы свойств** диалоговое окно.  
+Можно изменить значения свойств для конфигурации отладки веб-сайта в **страницы свойств** диалоговое окно, как описано в [конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где можно найти параметры, связанные с отладчиком в **страницы свойств** диалоговое окно.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>Папка "Свойства конфигурации" (категория "Параметры запуска")  
   

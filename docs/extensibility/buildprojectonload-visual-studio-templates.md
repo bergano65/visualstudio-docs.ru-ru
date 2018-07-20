@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnLoad (шаблоны Visual Studio) | Документы Microsoft
+title: BuildProjectOnLoad (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b70cc3522d59c2abe4633f38f746aeeb3159fe8a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097885"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150669"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (шаблоны Visual Studio)
-Указывает, следует ли для построения проекта сразу после его создания.  
+Указывает, следует ли для сборки проекта, сразу же после его создания.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -36,7 +36,7 @@ ms.locfileid: "31097885"
 <BuildProjectOnLoad> true/false </BuildProjectOnLoad>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -47,17 +47,17 @@ ms.locfileid: "31097885"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, показывающее, постройте проект, сразу после его создания.  
+ Этот текст должен быть либо `true` или `false`, указывающее, что для сборки проекта, сразу же после его создания.  
   
 ## <a name="remarks"></a>Примечания  
- `BuildProjectOnLoad` — Это необязательный атрибут. Значение по умолчанию — `false`.  
+ `BuildProjectOnLoad` является необязательным атрибутом. Значение по умолчанию — `false`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  

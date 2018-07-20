@@ -1,5 +1,5 @@
 ---
-title: Вызов события отладчика | Документы Microsoft
+title: Вызов событий отладчика | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3960d464b1a6d44fb77eba23cd518fea1f2e5a39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ae37a6f6ed180d13623a04afd357efcc109039f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100031"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153037"
 ---
-# <a name="calling-debugger-events"></a>Вызов события отладчика
+# <a name="call-debugger-events"></a>Вызов событий отладчика
 События в сеансы отладки, возникают в определенном порядке.  
   
 ## <a name="discussion"></a>Обсуждение  
- Чтобы понять шаблон вызовов между модуль отладки (DE) и диспетчера сеанса отладки (SDM), ниже представлены порядок вызова события, происходящие во время сеанса отладки обычно:  
+ Для лучшего понимания схемы вызовы между модуль отладки (DE) и диспетчер отладки сеансов (SDM), Далее представлен порядок вызова события, происходящие в ходе обычного сеанса отладки:  
   
 1.  [Присоединение и отсоединение к программе](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
@@ -34,15 +34,15 @@ ms.locfileid: "31100031"
   
 4.  [Создание точки останова](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [Если привязка точки останова или становится несвязанных](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5.  [Когда точка останова привязывается или становится отменить привязку](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
 6.  [Ошибки точки останова](../../extensibility/debugger/breakpoint-errors.md)  
   
-7.  [Достигнув точки останова](../../extensibility/debugger/hitting-a-breakpoint.md)  
+7.  [Попадание в точку останова](../../extensibility/debugger/hitting-a-breakpoint.md)  
   
 8.  [Удаление точки останова](../../extensibility/debugger/deleting-a-breakpoint.md)  
   
-9. [Вход в режим приостановки](../../extensibility/debugger/entering-break-mode.md)  
+9. [Переход в режим приостановки выполнения](../../extensibility/debugger/entering-break-mode.md)  
   
 10. [Шаг с заходом в режиме приостановки выполнения](../../extensibility/debugger/stepping-in-break-mode.md)  
   

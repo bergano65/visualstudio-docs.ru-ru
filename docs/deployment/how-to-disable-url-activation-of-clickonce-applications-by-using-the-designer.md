@@ -1,5 +1,5 @@
 ---
-title: 'Как: отключение активации по URL-АДРЕСУ приложений ClickOnce с помощью конструктора | Документы Microsoft'
+title: 'Практическое: отключение активации ClickOnce-приложений по URL-адрес с помощью конструктора | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 366c4362ca3c3b6140380ab64000a01fe8e1aa6b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97357dd92525be2d36b552c5f3df49080f46d29b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558289"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152039"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое руководство. Отключение активации ClickOnce-приложений по URL-адресу при помощи конструктора
-Как правило [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение запускается автоматически сразу после его установки на веб-сервере. По соображениям безопасности можно отключить это поведение и сообщить пользователям, чтобы запустить приложение из **запустить** меню вместо него. Следующая процедура описывает процесс отключения активации через URL.  
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое: отключение активации ClickOnce-приложений по URL-адрес с помощью конструктора
+Как правило [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения будет запускаться автоматически сразу после его установки на веб-сервере. По соображениям безопасности можно отключить это поведение и сообщить пользователям, чтобы запустить приложение из **запустить** меню вместо этого. Следующая процедура описывает процесс отключения активации через URL.  
   
- Такой подход можно использовать только для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], установленных на компьютере пользователя с веб-сервера. Он не может использоваться для интерактивных приложений, которые можно запустить только с помощью их URL-адрес. Дополнительные сведения о различиях между приложениями только в Интернете и установленными приложениями см. в разделе [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+ Такой подход можно использовать только для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], установленных на компьютере пользователя с веб-сервера. Он не может использоваться для интерактивных приложений, которые могут быть запущены только с помощью URL-адрес. Дополнительные сведения о различиях между только в Интернете и установленными приложениями см. в разделе [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- В этой процедуре используется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, эту задачу можно решить с помощью [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Дополнительные сведения см. в разделе [как: отключение активации из URL-адрес приложения ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).  
+ В этой процедуре используется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, эту задачу можно решить с помощью [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Дополнительные сведения см. в разделе [как: отключение активации из URL-АДРЕСУ приложений ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).  
   
 ## <a name="procedure"></a>Процедура  
   
@@ -44,7 +44,7 @@ ms.locfileid: "31558289"
   
 4.  Нажмите кнопку **манифесты**.  
   
-5.  Установите флажок **Блокировать активацию через URL-адрес приложения с**.  
+5.  Выберите флажок **Блокировать активацию с помощью URL-адреса приложения с**.  
   
 6.  Развертывание приложения.  
   

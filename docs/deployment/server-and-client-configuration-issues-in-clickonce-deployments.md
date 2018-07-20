@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078856"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154389"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Проблемы конфигурации сервера и клиента в развертываниях ClickOnce
 Если вы используете Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, сервер IIS не будет передавать этот файл и не будет выполнено развертывание.  
@@ -93,7 +93,7 @@ ms.locfileid: "39078856"
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce и подключенные диски  
  Если вы используете Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск размещения установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска, с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) и [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP-протокола nt поддерживается для установки приложений  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP, не поддерживается для установки приложений  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. FTP можно использовать только для публикации приложений. В следующей таблице перечислены эти различия:  
   
 |Тип URL-адреса|Описание:|  
