@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 79c5616a9233466c71ca036c4c0cb70d43649979
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233468"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154863"
 ---
-# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
 Приложения Windows Forms можно настроить для нескольких языков и региональных параметров, воспользовавшись вспомогательными сборками. *Вспомогательная сборка* — это сборка, содержащая ресурсы приложения для языка, отличного от языка и региональных параметров приложения по умолчанию.  
   
  Как уже говорилось в [локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md), может включать несколько вспомогательных сборок для нескольких языков и региональных параметров в пределах одного [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загружает все вспомогательные сборки в развертывание на клиентском компьютере, хотя один клиент, вероятно, потребует только одну вспомогательную сборку.  
@@ -49,15 +49,15 @@ ms.locfileid: "36233468"
   
 4.  Выберите **Показать все файлы** флажок, чтобы отобразить вспомогательные сборки. По умолчанию все вспомогательные сборки будут включены в развертывание и будут видны в этом диалоговом окне.  
   
-     Вспомогательная сборка будет иметь имя в форме *isoCode*\ApplicationName.resources.dll, где *isoCode* — это идентификатор языка в формате RFC 1766.  
+     Вспомогательная сборка будет иметь имя в форме  *\<isoCode > \ApplicationName.resources.dll*, где \<isoCode > — это идентификатор языка в формате RFC 1766.  
   
 5.  Нажмите кнопку **New** в **группа загрузки** списка для каждого идентификатора языка. При появлении запроса имени группы загрузки введите идентификатор языка. Например, для японской вспомогательной сборки, можно указать имя группы загрузки `ja-JP`.  
   
 6.  Закрыть **файлы приложения** диалоговое окно.  
   
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Загрузка вспомогательных сборок по требованию в C# #
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Загрузка вспомогательных сборок по требованию в C# 
   
-1.  Откройте файл Program.cs. Если вы не видите этот файл в обозревателе решений, выберите проект, а также на **проекта** меню, щелкните **Показать все файлы**.  
+1.  Откройте файл *Program.cs*. Если вы не видите этот файл в обозревателе решений, выберите проект, а также на **проекта** меню, щелкните **Показать все файлы**.  
   
 2.  Используйте следующий код для загрузки соответствующей вспомогательной сборки и запуска приложения.  
   
@@ -69,7 +69,7 @@ ms.locfileid: "36233468"
   
 2.  В нижней части страницы вкладки, щелкните **просмотреть события приложения**.  
   
-3.  Добавьте следующие импорты в начало файла ApplicationEvents.VB.  
+3.  Добавьте следующие импорты в начале *ApplicationEvents.VB* файл.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
