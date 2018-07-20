@@ -1,5 +1,5 @@
 ---
-title: Свойство AsyncVoidMethodBuilder.ObjectIdForDebugger | Документы Microsoft
+title: Свойство AsyncVoidMethodBuilder.ObjectIdForDebugger | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 868deef955ce90f49ce3ba2719903bdcbb38f2a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097410"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151487"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Свойство AsyncVoidMethodBuilder.ObjectIdForDebugger
-Возвращает объект, который может использоваться для уникальной идентификации этого конструктора в режим отладчика.  
+Возвращает объект, который может использоваться для уникальной идентификации этого построителя к отладчику.  
   
  **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в mscorlib.dll)  
   
- Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
