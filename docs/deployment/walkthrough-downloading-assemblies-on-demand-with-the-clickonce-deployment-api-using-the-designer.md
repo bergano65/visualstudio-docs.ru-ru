@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора | Документы Microsoft'
+title: 'Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fef9486f6bbcbea0d330aaf16fe625642f1e662f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565462"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151520"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство: Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
 По умолчанию все сборки, включенные в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , загружаются при первом его запуске. Однако некоторые части приложения могут быть нужны лишь небольшому числу пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application> , когда среда CLR нуждается в них.  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "31565462"
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="creating-the-projects"></a>Создание проектов  
+## <a name="create-the-projects"></a>Создание проектов  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Создание проекта, использующего сборку по запросу с помощью Visual Studio  
   
@@ -69,7 +69,7 @@ ms.locfileid: "31565462"
      [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
      [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
-## <a name="marking-assemblies-as-optional"></a>Пометка сборок как необязательных  
+## <a name="mark-assemblies-as-optional"></a>Пометьте сборки как необязательные  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью Visual Studio  
   
@@ -77,21 +77,21 @@ ms.locfileid: "31565462"
   
 2.  Нажмите кнопку **Файлы приложения** .  
   
-3.  Найдите описание для ClickOnceLibrary.dll. Задайте в раскрывающемся списке **Состояние публикации** значение **Включить**.  
+3.  Найдите список для *ClickOnceLibrary.dll*. Задайте в раскрывающемся списке **Состояние публикации** значение **Включить**.  
   
 4.  Разверните раскрывающийся список **Группа** и выберите **Создать**. Введите имя `ClickOnceLibrary` в качестве имени новой группы.  
   
-5.  Продолжите публиковать приложение, как описано в [как: публикация приложения ClickOnce с использованием мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+5.  Продолжите публиковать приложение, как описано в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью Инструмента создания и изменения манифестов с графическим клиентом (MageUI.exe)  
   
-1.  Создание вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты, как описано в [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1.  Создание вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты, как описано в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 2.  Перед закрытием MageUI.exe выберите вкладку, содержащую манифест приложения развертывания и откройте на ней вкладку **Файлы** .  
   
 3.  Найдите ClickOnceLibrary.dll в списке файлов приложения и задайте в столбце **Тип файла** значение **Нет**. Для столбца **Группа** введите значение `ClickOnceLibrary.dll`.  
   
-## <a name="testing-the-new-assembly"></a>Тестирование новой сборки  
+## <a name="test-the-new-assembly"></a>Тестирование новой сборки  
   
 #### <a name="to-test-your-on-demand-assembly"></a>Тестирование сборки по запросу  
   

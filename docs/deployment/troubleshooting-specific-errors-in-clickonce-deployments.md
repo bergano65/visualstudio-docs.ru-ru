@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234014"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153603"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Устранение ошибок в развертываниях ClickOnce
 В этой статье перечислены следующие распространенные ошибки, которые могут возникнуть при развертывании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, а также шаги по устранению каждой проблемы.  
   
 ## <a name="general-errors"></a>Общие ошибки  
@@ -36,7 +36,7 @@ ms.locfileid: "36234014"
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>При попытке найти файл приложения, ничего не происходит, XML-данные визуализируются в Internet Explorer или появляется диалоговое окно выполнения или сохранить как  
  Эта ошибка, скорее всего вызвана типы содержимого (также известные как типы MIME) не зарегистрирован правильно на сервере или клиенте.  
   
- Во-первых, убедитесь, что сервер настроен для связи `.application` расширение с содержимым типа «application/x-ms приложение».  
+ Во-первых, убедитесь, что сервер настроен для связи *.application* расширение с содержимым типа «application/x-ms приложение».  
   
  Если сервер настроен правильно, убедитесь, что [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] установлен на компьютере. Если [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] установлен, и вы по-прежнему видите эту проблему, попробуйте удалить и переустановить [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] необходимо повторно зарегистрировать тип содержимого на клиенте.  
   
@@ -45,20 +45,20 @@ ms.locfileid: "36234014"
   
 -   Если файл журнала пишет «(403) запрещено» или «(404) не найден» убедитесь, что веб-сервер настроен таким образом, чтобы он не блокирует загрузку этого файла. Дополнительные сведения см. в разделе [Вопросы настройки сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Если config-файл заблокирован на сервере, см. в разделе «Ошибка загрузки при попытке установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, которое имеет файл конфигурации» далее в этой статье.  
+-   Если *.config* файл заблокирован на сервере, см. в подразделе «Ошибка загрузки при попытке установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, которое имеет файл конфигурации» далее в этой статье.  
   
--   Определить, является ли это произошло, так как `deploymentProvider` URL-адрес в манифест развертывания указывает на разных местоположениях URL-адрес, используемый для активации.  
+-   Определить, является ли эта ошибка возникла из-за `deploymentProvider` URL-адрес в манифест развертывания указывает на разных местоположениях URL-адрес, используемый для активации.  
   
 -   Убедитесь, что все файлы присутствуют на сервере; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] журнала следует определить, какой файл не найден.  
   
 -   См. в статье, есть ли проблемы с сетевым подключением; Вы можете получили это сообщение, если клиентский компьютер перешел в автономный режим во время загрузки.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Ошибка загрузки при попытке установки приложения ClickOnce, в которой есть файл .config  
- По умолчанию приложения на основе Windows в Visual Basic включает файл App.config. Будет существовать проблема при попытке установить с веб-сервера, который использует Windows Server 2003, так как операционная система блокирует установку файлов .config по соображениям безопасности. Чтобы включить файл .config для установки, нажмите кнопку **использовать расширение файла «.deploy»** в **параметры публикации** диалоговое окно.  
+ По умолчанию приложения на основе Windows в Visual Basic включает файл App.config. Будет существовать проблема при попытке установить с веб-сервера, который использует Windows Server 2003, так как операционная система блокирует установку *.config* файлы по соображениям безопасности. Чтобы включить *.config* файл, чтобы установить, нажмите кнопку **использовать расширение файла «.deploy»** в **параметры публикации** диалоговое окно.  
   
  Также необходимо задать типы содержимого (также известные как типы MIME) соответствующим образом .application ",".manifest "и".deploy файлы. Дополнительные сведения см. документацию сервера.  
   
- Дополнительные сведения см. в разделе «Windows Server 2003: заблокированной типы содержимого» в [Server вопросы настройки и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Дополнительные сведения см. в разделе «Windows Server 2003: заблокированной типы содержимого» в [проблемы конфигурации сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Сообщение об ошибке: «Приложение неправильно отформатировано»; Файл журнала содержит «Недопустимая подпись XML»  
  Убедитесь, что файла манифеста обновлен и подпишите его еще раз. Повторно опубликуйте приложение с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или используйте Mage, чтобы подписать приложение еще раз.  
@@ -103,10 +103,10 @@ ms.locfileid: "36234014"
   
  При публикации с URL-адрес, убедитесь, что конечный компьютер имеет включены серверные расширения FrontPage.  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: Не удалось создать веб-сайт "\<сайта >". Компоненты взаимодействия с серверными расширениями FrontPage не установлены.  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: не удалось создать веб-сайт "\<сайта >". Компоненты взаимодействия с серверными расширениями FrontPage не установлены.  
  Убедитесь, что у вас есть Microsoft Visual Studio Web Authoring компонента, установленного на компьютере, на котором выполняется публикация из. Для пользователей Express этот компонент не устанавливается по умолчанию. Дополнительные сведения см. на веб-сайте [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: Не удалось найти файл "Microsoft.Windows.Common-элементы управления, Version = 6.0.0.0, язык и региональные параметры = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, тип = win32"  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: не удалось найти файл "Microsoft.Windows.Common-элементы управления, Version = 6.0.0.0, язык и региональные параметры = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, тип = win32"  
  Это сообщение об ошибке появляется при попытке публикации приложения WPF с включенными визуальными стилями. Чтобы устранить эту проблему, см. в разделе [как: публикация приложения WPF с поддержкой Visual стили](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>С помощью Mage  
