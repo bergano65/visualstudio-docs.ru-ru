@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058741"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176971"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Представление потоков и задач с помощью окно параллельных стеков
 **Параллельные стеки** окно полезен при отладке многопоточных приложений. Его **представление "Потоки"** содержит сведения о стеке вызова для всех потоков в приложении. Оно также позволяет переходить в различные потоки и кадры стека в потоках. В управляемом коде **представление "задачи"** отображает стеки вызова <xref:System.Threading.Tasks.Task?displayProperty=fullName> объектов. В машинном коде **представление "задачи"** отображает стеки вызова [группы задач](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [параллельные алгоритмы](/cpp/parallel/concrt/parallel-algorithms), [асинхронных агентов](/cpp/parallel/concrt/asynchronous-agents)и [упрощенных задач](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -118,7 +118,7 @@ ms.locfileid: "37058741"
 ## <a name="see-also"></a>См. также  
  [Начало отладки многопоточных приложение](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Основы отладки](../debugger/debugger-basics.md)   
+ [Основы отладки](../debugger/getting-started-with-the-debugger.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
  [Параллельное программирование](/dotnet/standard/parallel-programming/index)   
  [Использование окна задач](../debugger/using-the-tasks-window.md)   

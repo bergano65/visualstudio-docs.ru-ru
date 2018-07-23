@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757140"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176132"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Создание таблиц подстановки в приложениях WPF
 Термин *таблицы подстановки* (иногда называется *подстановочной привязкой*) описывает элемент управления, отображающий сведения из таблицы данных, на основе значения поля внешнего ключа в другой таблице. Можно создать таблицу подстановки, перетащив главного узла родительской таблицы или объекта в **источников данных** окно в элемент управления, который уже привязан к столбцу или свойству в связанной дочерней таблице.

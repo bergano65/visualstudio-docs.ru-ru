@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059299"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180000"
 ---
 # <a name="using-the-tasks-window"></a>Использование окна задач
 
@@ -96,7 +96,7 @@ ms.locfileid: "37059299"
 
 ## <a name="see-also"></a>См. также
 
-- [Основы отладки](../debugger/debugger-basics.md)
+- [Основы отладки](../debugger/getting-started-with-the-debugger.md)
 - [Отладка управляемого кода](../debugger/debugging-managed-code.md)
 - [Параллельное программирование](/dotnet/standard/parallel-programming/index)
 - [Среда выполнения с параллелизмом](/cpp/parallel/concrt/concurrency-runtime)

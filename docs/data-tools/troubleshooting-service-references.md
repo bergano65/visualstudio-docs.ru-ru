@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118087"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180429"
 ---
 # <a name="troubleshoot-service-references"></a>Диагностика ссылок на службы
 
@@ -58,7 +58,7 @@ ms.locfileid: "37118087"
 2.  На **параметры запуска** вкладке Очистить **проверки подлинности NTLM** "флажок".
 
     > [!NOTE]
-    > Следует отключить проверку подлинности NTLM только для веб-сайтов, которые содержат исключительно службы WCF. Безопасность для служб WCF осуществляется через конфигурацию в *web.config* файл. Это делает ненужной проверку подлинности NTLM.
+    > Следует отключить проверку подлинности NTLM только для веб-сайты, содержат исключительно службы WCF. Безопасность для служб WCF осуществляется через конфигурацию в *web.config* файл. Это делает ненужной проверку подлинности NTLM.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Уровень доступа для созданных классов параметр не оказывает влияния
 

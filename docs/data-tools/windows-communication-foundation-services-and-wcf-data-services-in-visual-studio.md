@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175321"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178882"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе Введение к службам с точки зрения Visual Studio. Полную документацию см. в разделе [служб данных WCF 4.5](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>Что такое WCF?
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] — Это унифицированный платформа для создания безопасной, надежной, транзакций и с возможностью взаимодействия распределенных приложений. Он заменяет старые технологии взаимодействия между процессами, таких как службы ASMX Интернета, .NET Remoting, Enterprise Services (DCOM) и MSMQ. WCF объединяет в себе функциональные возможности всех этих технологий в единую модель программирования. Это упрощает процесс разработки распределенных приложений.
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] — Это унифицированный платформа для создания безопасной, надежной, транзакций и с возможностью взаимодействия распределенных приложений. Он заменяет старые технологии взаимодействия между процессами, таких как веб-служб ASMX, .NET Remoting, Enterprise Services (DCOM) и MSMQ. WCF объединяет в себе функциональные возможности всех этих технологий в единую модель программирования. Это упрощает процесс разработки распределенных приложений.
 
 ### <a name="what-are-wcf-data-services"></a>Что такое службы WCF Data Services
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] является стандартной реализацией протокола Open Data (OData).  Службы WCF Data Services позволяет предоставлять табличные данные как набор интерфейсов REST API, позволяя вернуть данных с помощью стандартных команд HTTP, такие как GET, POST, PUT или DELETE. На стороне сервера, службы данных WCF заменяют [веб-API ASP.NET](http://www.asp.net/web-api) для создания новых служб OData. Клиентская библиотека службы WCF Data Services продолжает быть хорошим выбором для использования служб OData в приложении .NET из Visual Studio (**проекта &#124; Add Service Reference**). Дополнительные сведения см. в разделе [служб данных WCF 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
@@ -90,7 +90,7 @@ Visual Studio предоставляет средства для работы с
  Шаблоны WCF в Visual Studio можно использовать как основу для быстрого создания собственной службы. Затем можно использовать WCF Service Auto Host и тестового клиента WCF для отладки и тестирования службы. Вместе эти средства обеспечивают быстрый и удобный цикл отладки и тестирования и исключает необходимость фиксации модели размещения на ранней стадии.
 
 #### <a name="wcf-templates"></a>Шаблоны WCF
- Шаблоны WCF в Visual Studio предоставляют базовую структуру класса для разработки службы. Доступно несколько шаблонов WCF в **Добавление нового проекта** диалоговое окно. К ним относятся проекты библиотеки служб WCF, веб-сайтов службы WCF и шаблоны элемента службы WCF.
+ Шаблоны WCF в Visual Studio предоставляют базовую структуру класса для разработки службы. Доступно несколько шаблонов WCF в **Добавление нового проекта** диалоговое окно. К ним относятся проекты lLibrary служб WCF, веб-сайтов службы WCF и шаблоны элемента службы WCF.
 
  При выборе шаблона файлы добавляются в контракт службы, реализация службы и конфигурации службы. Все необходимые атрибуты уже добавлены, создание простых «Hello, World!» типа службы, и вам не нужно писать код. Само собой, необходимо добавить код для предоставления функций и методов для реальной службы, но шаблоны обеспечивают основу.
 

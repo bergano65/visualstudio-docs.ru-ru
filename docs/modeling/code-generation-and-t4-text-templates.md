@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa6195a531c74aebbcb7884cc8e3158df6b9ca96
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: a273e6a82bbf99d1a3d57f3759504fedaa5532e6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089403"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176285"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Создание кода и текстовые шаблоны T4
 
-В Visual Studio *текстового шаблона T4* представляет собой сочетание блоков текста и логики управления, которое может создать текстовый файл. Логика управления записывается в виде фрагментов программного кода в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. В Visual Studio 2015 с обновлением 2 и более поздних версиях можно использовать функции C# версии 6.0 в директивах шаблонов T4. Созданный файл может быть текстом любого типа, например веб-страницей, файлом ресурса или исходным кодом программы на любом языке.
+В Visual Studio *текстового шаблона T4* представляет собой сочетание блоков текста и логики управления, которое может создать текстовый файл. Логика управления записывается в виде фрагментов программного кода в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. В Visual Studio 2015 с обновлением 2 и более поздних версиях можно использовать функции C# версии 6.0 в директивах шаблонов T4. Созданный файл может быть текстом любого типа, например веб-страницы, или файл ресурсов или исходного кода программы на любом языке.
 
 Существует два типа текстовых шаблонов T4: запуска, времени и во время разработки.
 
