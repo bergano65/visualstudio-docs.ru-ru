@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175334"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177348"
 ---
 # <a name="save-data-back-to-the-database"></a>Сохранение данных обратно в базу данных
 
@@ -185,7 +185,7 @@ ms.locfileid: "37175334"
     > [!NOTE]
     > Вы можете запретить адаптер автоматически фиксации изменений, при вызове `Fill` метод, задав `AcceptChangesDuringFill` свойства адаптера, который `false`. Если он становится равным `false`, то <xref:System.Data.DataRow.RowState%2A> каждой строки, вставляемой при заполнении присваивается <xref:System.Data.DataRowState.Added>.
 
-- После отправки изменений набора данных к другому процессу, например веб-службы XML.
+- После отправки изменений набора данных к другому процессу, например к веб-службе XML.
 
     > [!CAUTION]
     > Применение изменений таким образом, будут удалены все сведения об изменениях. Не фиксации изменений, пока после того как вы завершите выполнение операций, которые требуют, чтобы знать, какие изменения были внесены в наборе данных приложение.
