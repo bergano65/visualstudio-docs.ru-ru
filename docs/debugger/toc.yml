@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Настройка брандмауэра Windows для удаленной отладки
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: "Разблокировка скачивания в Windows\_Server"
+          href: remote-debugging-unblock-file-download.md
         - name: Ошибки удаленной отладки и их устранение
           href: remote-debugging-errors-and-troubleshooting.md
           items:

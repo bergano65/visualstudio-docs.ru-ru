@@ -18,19 +18,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174990"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178391"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство: Создание службы данных WCF с помощью WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простого [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , размещенного в [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] веб-приложения и последующий доступ к ней из приложения Windows Forms.
 
 В этом пошаговом руководстве вы:
 
--   Создайте веб-приложение, размещаемое в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+-   Создание веб-приложения для размещения [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
 -   Создание [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , представляющий `Customers` таблицы в базе данных "Борей".
 
@@ -60,13 +60,13 @@ ms.locfileid: "37174990"
        Через некоторое время выполнения запроса отобразятся и создания базы данных Northwind.
 
 ## <a name="creating-the-service"></a>Создание службы
-Чтобы создать службу [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], необходимо добавить веб-проект, создать [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] и службу из модели.
+Для создания [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], необходимо добавить веб-проект, создайте [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], а затем создать службу из модели.
 
 На первом шаге добавьте веб-проект для размещения службы.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Создание веб-проекта
+#### <a name="to-create-the-web-project"></a>Для создания веб-проекта
 
 1.  В строке меню выберите **Файл** > **Создать** > **Проект**.
 
