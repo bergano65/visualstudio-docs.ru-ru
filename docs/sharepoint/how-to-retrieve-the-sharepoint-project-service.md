@@ -1,5 +1,5 @@
 ---
-title: 'Как: доступ к службе SharePoint Project | Документы Microsoft'
+title: 'Практическое: службе SharePoint Project | Документация Майкрософт'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,25 +15,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1e8cdcc863cfd363b1a73f11ed05ffb5a5ff12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119909"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Практическое руководство. Извлечение службы проектов SharePoint
-  Вы можете использовать службы проектов SharePoint в следующих типов решений:  
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Практическое: извлечение службы проектов SharePoint
+  Доступны службы проектов SharePoint в следующих типов решений:  
   
--   Расширение системы проектов SharePoint, например проект расширения, расширения элемента проекта или определении типа элемента проекта. Дополнительные сведения об этих типах расширений см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
+-   Расширение системы проектов SharePoint, например расширение проекта, расширения элемента проекта или определении типа элемента проекта. Дополнительные сведения об этих типах расширений см. в разделе [расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
   
 -   Расширение **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об этих типах расширений см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
--   Другой тип расширения Visual Studio, такие как VSPackage.  
+-   Другой тип расширения Visual Studio, например VSPackage.  
   
-## <a name="retrieving-the-service-in-project-system-extensions"></a>Обращение к службе в расширениях системы проектов  
- В каких-либо расширений системы проектов SharePoint можно обращаться к службе проекта с помощью <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> объекта.  
+## <a name="retrieve-the-service-in-project-system-extensions"></a>Обращение к службе в расширениях системы проектов  
+ В любое расширение системы проектов SharePoint, можно получить доступ к службе проектов с помощью <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> объекта.  
   
- Служба проекта также можно получить с помощью следующих процедур.  
+ Служба проекта можно также получить с помощью следующих процедур.  
   
 #### <a name="to-retrieve-the-service-in-a-project-extension"></a>Обращение к службе в расширении проекта  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Используйте *projectService* параметр для доступа к службе.  
   
-     В следующем примере кода демонстрируется использование службы проектов для записи сообщения для **вывода** окна и **список ошибок** окне в расширении простого проекта.  
+     В следующем примере кода демонстрируется использование службы проектов для записи сообщения в **вывода** окна и **список ошибок** окно в расширении простого проекта.  
   
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]  
@@ -52,14 +53,14 @@ ms.lasthandoff: 04/16/2018
   
 1.  В реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> интерфейсом, найдите <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод.  
   
-2.  Используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> свойство *изменить* параметр обращение к службе.  
+2.  Используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> свойство *параметр обращение* к службе.  
   
-     В следующем примере кода демонстрируется использование службы проектов для записи сообщения для **вывода** окна и **список ошибок** окна в простое расширение **определение списка** элемент проекта.  
+     В следующем примере кода демонстрируется использование службы проектов для записи сообщения в **вывода** окна и **список ошибок** окно в простое расширение **определение списка** элемент проекта.  
   
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]  
   
-     Дополнительные сведения о создании расширений элемента проекта см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+     Дополнительные сведения о создании расширений элемента проекта, см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Обращение к службе в определении типа элемента проекта  
   
@@ -67,15 +68,15 @@ ms.lasthandoff: 04/16/2018
   
 2.  Используйте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A> свойство *typeDefinition* параметр обращение к службе.  
   
-     В следующем примере кода демонстрируется использование службы проектов для записи сообщения для **вывода** окна и **список ошибок** окна в определении типа элемента простого проекта.  
+     В следующем примере кода демонстрируется использование службы проектов для записи сообщения в **вывода** окна и **список ошибок** окно в определении типа элемента простого проекта.  
   
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]  
   
-     Дополнительные сведения об определении типов элемента проекта см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+     Дополнительные сведения об определении типов элементов проектов см. в разделе [как: определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
-## <a name="retrieving-the-service-in-server-explorer-extensions"></a>Обращение к службе в расширениях обозревателя сервера  
- В расширении **подключения SharePoint** узел в **обозревателя серверов**, доступ к службе проекта с помощью <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> объекта.  
+## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Обращение к службе в обозревателе серверов расширений  
+ В расширении **подключения SharePoint** узел в **обозревателя серверов**, доступ к службе проектов с помощью <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> свойство <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> объекта.  
   
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Обращение к службе в расширении обозревателя серверов  
   
@@ -83,15 +84,15 @@ ms.lasthandoff: 04/16/2018
   
 2.  Используйте <xref:System.IServiceProvider.GetService%2A> метод для запроса <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта.  
   
-     В следующем примере кода демонстрируется использование службы проектов для записи сообщения для **вывода** окна и **список ошибок** окна с помощью контекстного меню, добавляемого расширением для перечисления узлов в **Обозреватель серверов**.  
+     В следующем примере кода демонстрируется использование службы проектов для записи сообщения в **вывода** окна и **список ошибок** окно из контекстного меню, расширения для списка узлов в **Обозреватель серверов**.  
   
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]  
   
-     Дополнительные сведения о расширении **подключения SharePoint** узел в **обозревателя серверов**, в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+     Дополнительные сведения о расширении **подключения SharePoint** узел в **обозревателя серверов**, см. в разделе [как: расширение узла SharePoint в обозревателе серверов](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="retrieving-the-service-in-other-visual-studio-extensions"></a>Обращение к службе в других расширений Visual Studio  
- Можно извлечь проект службы в VSPackage или из любого расширения Visual Studio, которая имеет доступ к <xref:EnvDTE80.DTE2> объекта в объектной модели автоматизации, например в мастере шаблонов проектов, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейса.  
+## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Обращение к службе в другими расширениями Visual Studio  
+ Вы можете получить проект службы в VSPackage или в любое расширение Visual Studio, имеющей доступ к <xref:EnvDTE80.DTE2> объектов в объектной модели автоматизации, такие как мастер шаблонов проектов, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.  
   
  В пакете VSPackage, вы можете запросить <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта с помощью одного из следующих методов:  
   
@@ -99,11 +100,10 @@ ms.lasthandoff: 04/16/2018
   
 -   Статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод. Дополнительные сведения см. в разделе [использование GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
   
- В расширение Visual Studio, которая имеет доступ к <xref:EnvDTE80.DTE2> объекта, можно запросить <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объектов с помощью <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> метод <xref:Microsoft.VisualStudio.Shell.ServiceProvider> объекта. Дополнительные сведения см. в разделе [Получение службы из объекта DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
+ В расширении Visual Studio, имеющей доступ к <xref:EnvDTE80.DTE2> объект, вы можете запросить <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта с помощью <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> метод <xref:Microsoft.VisualStudio.Shell.ServiceProvider> объекта. Дополнительные сведения см. в разделе [Получение службы из объекта DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также
  [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
- [Как: доступ к службе](../extensibility/how-to-get-a-service.md)   
- [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Практическое: Получение службы](../extensibility/how-to-get-a-service.md)   
+ [Практическое: использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)  
   
