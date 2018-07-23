@@ -1,5 +1,5 @@
 ---
-title: Расширение элементов проектов SharePoint | Документы Microsoft
+title: Расширение элементов проектов SharePoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45127afaeeadd6046c9726c8c56de9a4acf2338a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2be6c99f8601ae8dfaa819a3b70119a7b5921214
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765607"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326991"
 ---
 # <a name="extend-sharepoint-project-items"></a>Расширение элементов проектов SharePoint
-  Создание расширения элемента проекта, если вы хотите добавить функциональные возможности для типа элемента проекта SharePoint, который уже установлен в Visual Studio. Например, можно создать расширение для встроенной **приемника событий** или **определение списка** элементы проекта в Visual Studio, или можно создать расширение для пользовательского типа элементов проектов. Кроме того, можно создать расширение для всех типов элементов проектов SharePoint.  
+  Создание расширения элемента проекта, если вы хотите добавить функции к типу элемента проекта SharePoint, который уже установлен в Visual Studio. Например, можно создать расширение для встроенной **приемника событий** или **определение списка** элементы проекта в Visual Studio, или можно создать расширение для пользовательского типа элемента проекта. Кроме того, можно создать расширение для всех типов элементов проекта SharePoint.  
   
-## <a name="tasks-for-extending-sharepoint-project-items"></a>Задачи по расширению элементов проектов SharePoint
- Чтобы расширить элемент проекта, создайте сборку расширения Visual Studio, которая реализует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> интерфейса. Дополнительные сведения см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+## <a name="tasks-for-extending-sharepoint-project-items"></a>Задачи для расширение элементов проектов SharePoint
+ Чтобы расширить возможности элемент проекта, создайте сборку расширения Visual Studio, которая реализует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> интерфейс. Дополнительные сведения см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
- При расширении элемента проекта, также можно добавить следующие функциональные возможности для элемента проекта:  
+ При расширении элемента проекта, можно также добавить следующие функциональные возможности на элемент проекта:  
   
--   Добавление пункта контекстного меню в элемент проекта. Элемент меню появляется, когда открывается контекстное меню для элемента проекта в **обозревателе решений**. Откройте контекстное меню, щелкнув правой кнопкой мыши элемент проекта или выбрав его и затем выбрав **Shift**+**F10** ключей. Дополнительные сведения см. в разделе [как: Добавление пункта контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
+-   Добавление пункта контекстного меню к элементу проекта. Этот пункт меню отображается при открытии контекстное меню для элемента проекта в **обозревателе решений**. Откройте контекстное меню, щелкнув правой кнопкой мыши элемент проекта или выбрав его, а затем выбрать **Shift**+**F10** ключи. Дополнительные сведения см. в разделе [как: Добавление пункта контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
   
--   Добавление пользовательского свойства в элемент проекта. Это свойство отображается в **свойства** при выборе элемента проекта в **обозревателе решений**. Дополнительные сведения см. в разделе [как: Добавление свойства в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
+-   Добавьте пользовательское свойство к элементу проекта. Свойство отображается в **свойства** окно при выборе элемента проекта в **обозревателе решений**. Дополнительные сведения см. в разделе [как: Добавление свойства в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
   
- Пошаговое руководство для создания, развертывания и тестирования расширения элемента проекта в разделе [Пошаговое руководство: расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
+ Пошаговое руководство для создания, развертывания и тестирования в расширение элемента проекта см. в разделе [Пошаговое руководство: расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
   
-## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Взаимосвязь между расширениями элементов проектов и экземплярами элементов проектов
- При создании расширения элемента проекта Visual Studio загружает расширения элемента проекта связанный тип для добавления в проект SharePoint. Например, при создании расширения для **приемника событий** элементов проекта, Visual Studio загружает расширение, когда пользователь добавляет **приемника событий** элемента проекта в проект. Visual Studio использует один и тот же экземпляр расширения для всех экземпляров типа элемента, соответствующего проекта. В предыдущем примере, если пользователь добавляет второй **приемника событий** элемента проекта в проект, для настройки второго элемента проекта используется один и тот же экземпляр расширения.  
+## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Взаимосвязь между расширениям элемента проекта и экземпляров элементов проекта
+ При создании расширения элемента проекта, Visual Studio загружает расширение, когда элемент проекта, сопоставленного типа добавляется в проект SharePoint. Например, при создании расширения для **приемника событий** элементов проекта, Visual Studio загружает расширение, когда пользователь добавляет **приемника событий** элемент проекта в проект. Visual Studio использует один экземпляр расширения для всех экземпляров типа элемента проекта. В предыдущем примере, если пользователь добавит секунды **приемника событий** элемента проекта в проект, один и тот же экземпляр расширения используется для настройки второго элемента проекта.  
   
- Чтобы открыть экземпляр типа элемента проекта, расширении, обработку одного из <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события *изменить* параметр в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод. Например, чтобы определить, при добавлении в проект элемент проекта расширяемых типов, обработку <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> событий. Дополнительные сведения см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Чтобы открыть экземпляр конкретного типа элемента проекта, вы расширяете, обработку одного из <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события *параметра* в текущей реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод. Например, чтобы определить, когда вы расширяемого типа элемента проекта добавляется в проект, обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> событий. Дополнительные сведения см. в разделе [как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 ## <a name="identifiers-for-sharepoint-project-items"></a>Идентификаторы для элементов проекта SharePoint
  Каждый элемент проекта SharePoint имеет соответствующий идентификатор строки. Необходимо знать идентификатор для элемента проекта, если вы хотите выполнять следующие задачи:  
   
--   Создание расширения элемента проекта. В этом случае необходимо передать идентификатор элемента проекта, который требуется расширить в конструктор <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Чтобы создать расширение для всех элементов типов проектов, необходимо передать **\*** строковое значение.  
+-   Создание расширения элемента проекта. В этом случае необходимо передать идентификатор для элемента проекта, который вы хотите расширить конструктору <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Чтобы создать расширение для всех элементов типов проектов, передайте **\*** строковое значение.  
   
--   Добавьте элемент проекта в проект программным способом. В этом случае необходимо передать идентификатор для элемента проекта <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> метод.  
+-   Добавьте элемент проекта в проект программным способом. В этом случае необходимо передать идентификатор элемента проекта <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> метод.  
   
  В следующей таблице перечислены идентификаторы для элементов проекта SharePoint, которые входят в состав Visual Studio.  
   
@@ -68,9 +68,9 @@ ms.locfileid: "34765607"
 |Форма сопоставления рабочего процесса|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
 ## <a name="see-also"></a>См. также
- [Как: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Как: Добавление пункта контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
- [Как: Добавление свойства в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
+ [Практическое: создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Практическое: Добавление пункта контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Практическое: Добавление свойства в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [Пошаговое руководство: Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
  [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
   
