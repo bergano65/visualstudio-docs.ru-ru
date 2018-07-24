@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179564"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204236"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Практическое руководство. Настройка анализа кода для проекта управляемого кода
 
-В Visual Studio, можно выбрать из списка анализа кода *наборов правил* для применения к проекту управляемого кода. Набор правил по умолчанию — *минимальные правила и рекомендации Майкрософт*. Вы можете применить еще одно правило в проект или ко всем проектам в решении.
+В Visual Studio можно выбрать из списка анализа кода [наборов правил](../code-quality/rule-set-reference.md)) для применения к проекту управляемого кода. По умолчанию **минимальные правила и рекомендации Майкрософт** выбран набор правил, но можно применять при необходимости задайте другое правило. Наборы правил могут применяться для одного или нескольких проектов в решении.
 
 > [!TIP]
 > Сведения о том, как настроить набор правил для веб-приложений ASP.NET см. в разделе [как: Настройка анализа кода для ASP.NET, веб-приложение](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ ms.locfileid: "39179564"
 
 ## <a name="see-also"></a>См. также
 
+- [Справочник по набору правил анализа кода](../code-quality/rule-set-reference.md)
 - [Практическое: Настройка анализа кода для веб-приложения ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

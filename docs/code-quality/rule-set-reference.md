@@ -11,15 +11,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c42e9fcc2f136f6f13ac1c36598210a51b460d1c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 743aeed3ffe71e9362d19406b64960e839fc90f1
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920842"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204405"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Справочник по набору правил анализа кода
 
-При настройке анализа кода для проектов управляемого кода в Visual Studio, можно выбрать из списка встроенных *наборов правил*. Можно либо использовать один из этих встроенных наборов правил, или вы можете [настроить набор правил](../code-quality/how-to-create-a-custom-rule-set.md) в соответствии с требованиями проекта.
+При настройке функций анализа статического кода для проектов управляемого кода в Visual Studio, можно выбрать из списка встроенных *наборов правил*. Можно использовать либо один из этих наборов встроенных правил, или вы можете [настроить набор правил](../code-quality/how-to-create-a-custom-rule-set.md) в соответствии с требованиями проекта.
 
-В этом разделе описываются встроенные правила содержат наборы правил (и предупреждения).
+В этом разделе описываются встроенное правило наборов и правил (или предупреждений) они содержат.
+
+> [!NOTE]
+> Наборы правил в этом разделе относятся к статического анализа кода. Сведения о наборах правил, доступных для пакетов анализатор Roslyn см. в разделе [использование наборов правил с анализаторами Roslyn](analyzer-rule-sets.md).
+
+- [Набор правил "Все правила"](all-rules-rule-set.md)
+- [Набор правил "Базовые правила определения правильности" для управляемого кода](basic-correctness-rules-rule-set-for-managed-code.md)
+- [Набор правил "Базовые нормы и правила разработки" для управляемого кода](basic-design-guideline-rules-rule-set-for-managed-code.md)
+- [Набор правил "Расширенные правила определения правильности" для управляемого кода](extended-correctness-rules-rule-set-for-managed-code.md)
+- [Набор правил "Расширенные нормы и правила разработки" для управляемого кода](extended-design-guidelines-rules-rule-set-for-managed-code.md)
+- [Набор правил "Правила глобализации" для управляемого кода](globalization-rules-rule-set-for-managed-code.md)
+- [Управляемые минимальные правила набора правил для управляемого кода](managed-minimum-rules-rule-set-for-managed-code.md)
+- [Набор правил "Рекомендуемые правила для управляемого кода"](managed-recommended-rules-rule-set-for-managed-code.md)
+- [Набор правил "Минимальные правила для смешанного кода"](mixed-minimum-rules-rule-set.md)
+- [Набор правил "Рекомендуемые правила для смешанных сред"](mixed-recommended-rules-rule-set.md)
+- [Набор правил "Минимальные правила для машинного кода"](native-minimum-rules-rule-set.md)
+- [Набор правил "Рекомендуемые правила для машинного кода"](native-recommended-rules-rule-set.md)
+- [Набор правил "Правила безопасности" для управляемого кода](security-rules-rule-set-for-managed-code.md)
