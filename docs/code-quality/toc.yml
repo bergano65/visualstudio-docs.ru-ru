@@ -1,6 +1,7 @@
 - name: Документация по анализу кода
   href: index.md
 - name: Обзор
+  expanded: true
   items:
     - name: Анализ управляемого кода
       href: code-analysis-for-managed-code-overview.md
@@ -80,14 +81,16 @@
     - name: Наборы правил
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: Наборы правил для пакетов анализатора
+          href: analyzer-rule-sets.md
         - name: Наборы правил для управляемого кода
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
-            - name: Настройка анализа кода для веб-приложения ASP.NET
+            - name: "Настройка анализа кода для веб-приложения\_ASP.NET"
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: "Наборы правил для кода\_C++"
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-        - name: Создание набора настраиваемых правил
+        - name: Создание настраиваемого набора правил
           href: how-to-create-a-custom-rule-set.md
         - name: Использование редактора набора правил
           href: working-in-the-code-analysis-rule-set-editor.md
@@ -126,7 +129,7 @@
         - name: Набор правил "Правила глобализации" для управляемого кода
           href: globalization-rules-rule-set-for-managed-code.md
         - name: Набор правил "Минимальные правила для управляемого кода"
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Набор правил "Рекомендуемые правила для управляемого кода"
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Набор правил "Минимальные правила для смешанного кода"
