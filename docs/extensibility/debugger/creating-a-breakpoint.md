@@ -1,5 +1,5 @@
 ---
-title: Создание точки останова | Документы Microsoft
+title: Создание точки останова | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88f5b75defc1bceff4aacd580474b145df32bf68
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04eefdca7459f95da3ddef0430a59f9af52e581e
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097605"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203905"
 ---
-# <a name="creating-a-breakpoint"></a>Создание точки останова
-Далее описывается процесс создания точки останова.  
+# <a name="create-a-breakpoint"></a>Создание точки останова
+Ниже описывается процесс создания точки останова.  
   
 ## <a name="methods-in-breakpoint-creation"></a>Методы создания точки останова  
- При загрузке модуля, который требуется выполнить привязку точки останова диспетчера сеанса отладки (SDM) вызывает следующие методы:  
+ Когда загружается модуль, который требуется привязать точку останова, диспетчер отладки сеансов (SDM) вызывает следующие методы:  
   
 1.  [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)  
   
@@ -34,7 +34,7 @@ ms.locfileid: "31097605"
 3.  [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)  
   
     > [!NOTE]
-    >  **CanBind** вызывается только в том случае, когда пользователь создает точку останова в окне «точки останова».  
+    >  **CanBind** вызывается только в том случае, когда пользователь создает точку останова из **точки останова** окна.  
   
 4.  [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
   
