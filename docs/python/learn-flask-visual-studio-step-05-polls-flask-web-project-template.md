@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c99dea00506fa838a2bb5c800fa05b7d55af3844
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947106"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232323"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Шаг 5. Использование шаблона веб-проекта опроса Flask
 
@@ -78,35 +78,35 @@ Visual Studio также предоставляет шаблон "Веб-про�
 
 Модели данных для приложения — это классы Python с именами Poll и Choice, которые определены в `models/__init__.py`. Класс Poll представляет вопрос, для которого коллекция экземпляров Choice представляет доступные ответы. Кроме того, Poll поддерживает общее число голосов (для любого варианта) и метод для вычисления статистических данных, которые используются для создания представлений:
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 Эти модели данных представляют собой универсальные абстракции, позволяющие представлениям приложения работать с разными типами резервных хранилищ данных, которые описаны в следующем шаге.
 
@@ -189,32 +189,32 @@ Visual Studio также предоставляет шаблон "Веб-про�
 
 Изначально любое выбранное хранилище данных не содержит опросы, поэтому на домашней странице приложения отображается сообщение No polls available (Нет доступных опросов) вместе с кнопкой **Create Sample Polls** (Создать пример опроса). Тем не менее после нажатия кнопки представление изменяется для отображения доступных опросов. Это переключение происходит благодаря условным тегам в `templates\index.html` (некоторые пустые строки опущены для удобства):
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 Переменная `polls` в шаблоне получена при вызове `repository.get_polls`, который возвращает значение nothing до завершения инициализации хранилища данных.
 
