@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752185"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089806"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Руководство (шаг 3). Обработка статических файлов, добавление страниц и использование наследования шаблонов
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
 
 **Предыдущий шаг. [Создание приложения Flask с представлениями и шаблонами страниц](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,8 +283,9 @@ Flask предоставляет функцию с именем `serve_static_fi
 > [!div class="nextstepaction"]
 > [Использование полного шаблона веб-проекта Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
+- [Развертывание веб-приложения в Службе приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Сведения о дополнительных возможностях шаблонов Jinja, таких как поток управления, см. в [документации по конструктору шаблонов Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org).
 - Дополнительные сведения об использовании `url_for` см. в разделе [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) в документации по объекту приложения Flask (flask.pocoo.org).
 - Исходный код, используемый в руководстве, на сайте GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

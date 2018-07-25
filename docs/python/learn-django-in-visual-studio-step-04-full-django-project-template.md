@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750367"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090053"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Шаг 4 руководства. Использование полного шаблона веб-проекта Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Django
 
 **Предыдущий шаг: [Обработка статических файлов, добавление страниц и использование наследования шаблонов](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ ms.locfileid: "34750367"
   - `requirements.txt` — файл, который содержит зависимости от Django 1.x.
   - `readme.html` — файл, который отображается в Visual Studio после создания проекта. Как упоминалось в предыдущем разделе, следуйте приведенным ниже инструкциям, чтобы создать учетную запись суперпользователя (администратора) для приложения.
 - В папке `app` содержатся все файлы приложения, включая представления, модели, тесты, формы, шаблоны и статические файлы (см. шаг 4.2). Обычно эту папку нужно переименовать, указав более уникальное имя приложения.
-- В папке `DjangoWeb` проекта Django содержатся стандартные файлы проекта: `__init.py__`, `settings.py`, `urls.py` и `wsgi.py`. На основе шаблона в `settings.py` уже задана конфигурация для файлов базы данных и приложения. Также в `urls.py` уже указаны пути ко всем страницам приложения, включая форму входа.
+- В папке `DjangoWeb` проекта Django содержатся стандартные файлы проекта: `__init__.py`, `settings.py`, `urls.py` и `wsgi.py`. На основе шаблона в `settings.py` уже задана конфигурация для файлов базы данных и приложения. Также в `urls.py` уже указаны пути ко всем страницам приложения, включая форму входа.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Вопрос. Можно ли предоставлять проектам Visual Studio общий доступ к виртуальному окружению?
 
@@ -215,7 +215,8 @@ urlpatterns = [
 > [!div class="nextstepaction"]
 > [Аутентификация пользователей в Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
+- [Развертывание веб-приложения в Службе приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (Написание первого приложения Django. Часть 4 — формы и универсальные представления) (docs.djangoproject.com)
 - Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

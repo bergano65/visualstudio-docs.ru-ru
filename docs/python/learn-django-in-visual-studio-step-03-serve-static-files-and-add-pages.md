@@ -1,7 +1,7 @@
 ---
 title: Руководство. Сведения о Django в Visual Studio (шаг 3)
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio, в частности демонстрация обработки статических файлов, добавление страниц в приложение и использование наследования шаблонов
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750338"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089591"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Руководство (шаг 3). Обработка статических файлов, добавление страниц и использование наследования шаблонов
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
 
 **Предыдущий шаг. [Руководство (шаг 2). Создание приложения Django с представлениями и шаблонами страниц](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -277,8 +277,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 > [!div class="nextstepaction"]
 > [Tutorial step 4: Use the full Django Web Project template](learn-django-in-visual-studio-step-04-full-django-project-template.md) (Руководство (шаг 4). Использование полного шаблона веб-проекта Django)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
+- [Развертывание веб-приложения в Службе приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 3](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (Написание первого приложения Django (часть 3)) (docs.djangoproject.com)
 - Дополнительные сведения о возможностях шаблонов Django, таких как поток управления, см. в статье [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Язык шаблона Django) (docs.djangoproject.com).
 - Подробные сведения об использовании тега `{% url %}` см. в разделе [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) в статье [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (Встроенные теги и фильтры шаблонов для ссылки на шаблоны Django) (docs.djangoproject.com).

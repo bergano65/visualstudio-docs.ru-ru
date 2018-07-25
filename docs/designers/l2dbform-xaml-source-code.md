@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924331"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978194"
 ---
 # <a name="l2dbformxaml-source-code"></a>Исходный код L2DBForm.xaml
 
-Этот раздел содержит и описывает исходный XAML-файл для [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
+В этом разделе приводится содержание и описание исходного XAML-файла для [примера привязки данных WPF с использованием LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), *L2DBForm.xaml*.
 
-## <a name="overall-ui-structure"></a>Общая структура интерфейса
+## <a name="overall-ui-structure"></a>Общая структура пользовательского интерфейса
 
 Что является типичным для проекта WPF, данный файл содержит один родительский элемент, XML-элемент <xref:System.Windows.Window> , связанный с производным классом `L2XDBFrom` в пространстве имен `LinqToXmlDataBinding` .
 
@@ -37,7 +37,7 @@ ms.locfileid: "31924331"
 
 Наконец, в строках с 28 по 34 определен шаблон <xref:System.Windows.DataTemplate> под именем `BookTemplate` . Он предназначен для отображения записей в разделе пользовательского интерфейса **Список книг**. В нем используются привязка данных и динамические свойства LINQ to XML для получения идентификатора книги с помощью следующих присваиваний.
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
@@ -47,25 +47,25 @@ Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 
 В открывающем теге `<StackPanel>` в строке 38 свойство данной панели <xref:System.Windows.FrameworkElement.DataContext%2A> устанавливается на поставщика данных `LoadedBooks` .
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 Задание контекста данных позволяет элементу <xref:System.Windows.Controls.TextBlock> с именем `tbRawXml` (в строке 46) отображать необработанный код XML путем привязки к свойству `Xml` этого поставщика данных.
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 Объект <xref:System.Windows.Controls.ListBox> в разделе интерфейса **Список книг** задает в строках с 58 по 62 для своих отображаемых элементов шаблон `BookTemplate` , определенный в разделе ресурсов окна.
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 Затем в строках с 59 по 62 действительные значения книг привязываются к данному списку.
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ ItemTemplate ="{StaticResource BookTemplate}"
 
 В третьем разделе интерфейса, **Редактировать выбранную книгу**, сначала происходит привязка свойства <xref:System.Windows.FrameworkElement.DataContext%2A> дочернего элемента <xref:System.Windows.Controls.StackPanel> к текущему элементу, выбранному из раздела пользовательского интерфейса **Список книг** (строка 82).
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 Затем в нем используется двусторонняя привязка данных, что позволяет отображать и обновлять текущие значения элементов книги с помощью двух текстовых полей данной панели. Привязка данных к динамическим свойствам аналогична используемой в шаблоне данных `BookTemplate`:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -243,7 +243,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ### <a name="comments"></a>Комментарии
 
-Сведения об исходном коде для обработчиков событий, связанных с элементами интерфейса WPF, см. в разделе [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+Сведения об исходном коде C# для обработчиков событий, связанных с элементами интерфейса WPF, см. в разделе [Исходный код L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>См. также
 

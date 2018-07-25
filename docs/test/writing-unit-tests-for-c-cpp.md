@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752083"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235444"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -38,7 +38,7 @@ ms.locfileid: "34752083"
 
 - Компонент **Boost.Test** включен по умолчанию в рабочую нагрузку **Разработка классических приложений на C++**. Он интегрирован с **обозревателем тестов**, но в настоящее время не имеет шаблона проекта, поэтому его необходимо настроить вручную. Дополнительные сведения см. в разделе [Практическое руководство. Использование Boost.Test в Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- Поддержка **CTest** включена в компонент [Инструменты CMake для Visual Studio](/cpp/ide/cmake-tools-for-cpp), который входит в рабочую нагрузку **Разработка классических приложений на C++**. Однако CTest пока не полностью интегрирован с **обозревателем тестов**. Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest в Visual Studio](how-to-use-ctest-for-cpp.md).
+- Поддержка **CTest** включена в компонент [Инструменты CMake для Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp), который входит в рабочую нагрузку **Разработка классических приложений на C++**. Однако CTest пока не полностью интегрирован с **обозревателем тестов**. Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest в Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 и более ранние версии**
 
@@ -69,7 +69,7 @@ ms.locfileid: "34752083"
 ### <a name="write-test-methods"></a>Написание методов теста
 
 > [!NOTE]
-> В этом разделе представлен синтаксис при использовании платформы модульного тестирования Майкрософт для C/C++. Он задокументирован в [справочнике по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Документацию по Google Test см. на странице [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md) (Начало работы с Google Test). Сведения о Boost.Test см. на странице [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Библиотека Boost.Test: платформа модульного тестирования).
+> В этом разделе представлен синтаксис при использовании платформы модульного тестирования Майкрософт для C/C++. Он задокументирован в [справочнике по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Документацию по Google Test см. на странице [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Начало работы с Google Test). Сведения о Boost.Test см. на странице [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Библиотека Boost.Test: платформа модульного тестирования).
 
 В CPP-файле в тестовом проекте определены класс-заглушка и метод-заглушка в качестве примера того, как следует писать код теста. Обратите внимание, что в сигнатурах используются макросы TEST_CLASS и TEST_METHOD, что позволяет обнаруживать методы в окне обозревателя тестов.
 

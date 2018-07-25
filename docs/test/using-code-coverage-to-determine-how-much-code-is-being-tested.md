@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752096"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978253"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 
@@ -266,9 +266,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 После выполнения сборки результаты покрытия кода присоединяются к тестовому запуску и отображаются в сводке сборки.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>Анализ покрытия кода в командной строке
+## <a name="analyze-code-coverage-from-the-command-line"></a>Анализ объема протестированного кода в командной строке
 
-Для выполнения тестов из командной строки используйте vstest.console.exe. Покрытие кода является параметром программы vstest.console.exe.
+Для выполнения тестов из командной строки используйте *vstest.console.exe*. Объем протестированного кода является параметром служебной программы *vstest.console.exe*.
 
 1.  Запустите командную строку разработчика Visual Studio.
 
@@ -278,9 +278,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
+Дополнительные сведения см. в статье [Параметры командной строки для VSTest.Console.exe](vstest-console-options.md).
+
 ## <a name="troubleshoot"></a>Устранение неполадок
 
-Если вы не видите результаты покрытия кода, воспользуйтесь рекомендациями из статьи [Устранение неполадок с покрытием кода](../test/troubleshooting-code-coverage.md).
+Если вы не видите результаты объема протестированного кода, воспользуйтесь рекомендациями из статьи [Устранение неполадок с объемом протестированного кода](../test/troubleshooting-code-coverage.md).
 
 ## <a name="see-also"></a>См. также
 

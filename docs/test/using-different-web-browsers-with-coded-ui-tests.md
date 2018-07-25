@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0f8efe8f64c166a549080d10432fd0dd7e241f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978379"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235067"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 
@@ -94,7 +94,7 @@ ms.locfileid: "31978379"
 
 Выходные данные можно настроить таким образом, чтобы они включали снимки экрана в журналах закодированного пользовательского интерфейса. Для этого необходимо задать некоторые параметры конфигурации в файле *QTAgent32.exe.config*. По умолчанию этот файл устанавливается в следующую папку:
 
-     *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
+*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
 Установите следующие значения:
 

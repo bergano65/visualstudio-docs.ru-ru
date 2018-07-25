@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 075a81dc81bb202be913f5a06e8213a8a68a010f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: e638d9316b46a8600fe2e88ca5e4a6611fa1ec4d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843839"
 ---
 # <a name="markerseries-class"></a>Класс marker_series
 Представляет последовательный канал событий, созданных одним поставщиком.  
@@ -51,7 +52,7 @@ class marker_series;
  `marker_series`  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** cvmarkersobj.h  
+ **Заголовок:** *cvmarkersobj.h*  
   
  **Пространство имен:** Concurrency::diagnostic  
   

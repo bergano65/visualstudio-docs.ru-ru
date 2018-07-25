@@ -2,7 +2,7 @@
 title: Создание веб-приложения ASP.NET Core в C# с помощью Visual Studio
 description: Пошаговые инструкции по созданию веб-приложения ASP.NET Core в Visual Studio на C#.
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,17 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9d8aa6a6147ff57ba72f1cc69240ef5a7137cd73
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089303"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое веб-приложение ASP.NET Core на языке C#.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -86,7 +87,10 @@ ms.lasthandoff: 05/11/2018
 Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали нечто новое об интегрированной среде разработки Visual Studio. Если вы хотите ознакомиться с возможностями этого продукта более подробно, продолжите работу с руководством из раздела **Руководства** в содержании.
 
 ## <a name="next-steps"></a>Следующие шаги
-Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio. Для получения дополнительных сведений перейдите к следующему учебнику.
+
+Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio. Чтобы просмотреть приложение, работающее на общедоступном сервере, нажмите указанную ниже кнопку.
 
 > [!div class="nextstepaction"]
-> [Начало работы с C# и ASP.NET в Visual Studio](tutorial-csharp-aspnet-core.md)
+> [Развертывание приложения в Службе приложений Azure](..//deployment/quickstart-deploy-to-azure.md)
+
+Чтобы узнать больше, продолжите работу с руководствами [Начало работы с C# и ASP.NET в Visual Studio](tutorial-csharp-aspnet-core.md) и [Начало работы с MVC ASP.NET Core и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).
