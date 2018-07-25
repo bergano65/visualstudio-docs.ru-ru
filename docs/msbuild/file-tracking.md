@@ -12,17 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d17894025800acd9c8ab0736ebe92d7f790fc7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 394b40a304d2aba3b79c5878befe33a8a1aaf8b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567451"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945563"
 ---
 # <a name="file-tracking"></a>Отслеживание файлов
 Журналы отслеживания файлов отправляют в файловую систему Windows вызов процесса и его дочерних процессов. Вызывая указанные ниже функции, программы управляют включением и отключением ведения журнала, а также задают нужный файл журнала.  
   
-## <a name="in-this-section"></a>В этом разделе  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
  Останавливает отслеживание в текущем контексте.  
   

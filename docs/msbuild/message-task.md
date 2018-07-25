@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0555ae538cb473d436727da67af40be037c992a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11e4318b9a59f51e7e20ce36aa39d33d4b96725a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569284"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077178"
 ---
-# <a name="message-task"></a>Задача Message
+# <a name="message-task"></a>Message - задача
 Записывает сообщения в журнал в процессе сборки.  
   
 ## <a name="parameters"></a>Параметры  
- В следующей таблице описаны параметры задачи `Message`.  
+ В следующей таблице приводятся параметры задачи `Message` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
-|`Importance`|Необязательный параметр `String` .<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|  
+|`Importance`|Необязательный параметр `String` .<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|  
 |`Text`|Необязательный параметр `String` .<br /><br /> Текст ошибки для записи в журнал.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -45,7 +45,7 @@ ms.locfileid: "31569284"
   
  По умолчанию сообщение отправляется в средство ведения журнала консоли MSBuild. Это поведение можно изменить, присвоив параметру <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> необходимое значение. Средство ведения журнала интерпретирует параметр `Importance`.  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода сообщения регистрируются во всех зарегистрированных средствах ведения журнала.  

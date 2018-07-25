@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750302"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947132"
 ---
-# <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Руководство (шаг 1). Начало работы с веб-платформой Django в Visual Studio
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Руководство. Начало работы с веб-платформой Django в Visual Studio
 
 [Django](https://www.djangoproject.com/) — это высокоуровневая платформа Python для быстрого создания безопасных и масштабируемых веб-систем. В этом руководстве представлены сведения о платформе Django в контексте шаблонов проекта, предоставляемых Visual Studio для упрощения создания веб-приложений на основе Django.
 
@@ -207,7 +207,7 @@ ms.locfileid: "34750302"
 > [!div class="nextstepaction"]
 > [Tutorial step 2: Create a Django app with views and page templates](learn-django-in-visual-studio-step-02-create-an-app.md) (Руководство (шаг 2). Создание приложения Django с представлениями и шаблонами страниц)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
 - Код проекта Django: [Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (Написание первого приложения Django (часть 1)) (docs.djangoproject.com)
 - Административная служебная программа: [django-admin и manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)

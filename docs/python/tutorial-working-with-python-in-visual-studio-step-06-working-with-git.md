@@ -1,7 +1,7 @@
 ---
 title: Руководство по работе с Python. Шаг 6 — работа с Git
 description: Шаг 6 базового пошагового руководства по работе с Python в Visual Studio. Здесь описаны возможности Visual Studio, связанные с Git.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965024"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056499"
 ---
-# <a name="step-6-working-with-git"></a>Шаг 6. Работа с Git
+# <a name="step-6-work-with-git"></a>Шаг 6. Работа с Git
 
 **Предыдущий шаг: [Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Visual Studio обеспечивает прямую интеграцию с ло
 
 1. При использовании локального репозитория зафиксированные изменения помещаются сразу в него. Если установлено подключение к удаленному репозиторию, щелкните заголовок с раскрывающимся меню в **Team Explorer**, выберите **Синхронизировать**, чтобы перейти к разделу **Синхронизация**, и используйте представленные там команды вытягивания и принесения.
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
 Общие инструкции по созданию проекта из удаленного репозитория Git см. в статье [Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 

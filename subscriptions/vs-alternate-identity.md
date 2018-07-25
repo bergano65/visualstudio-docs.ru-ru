@@ -9,11 +9,12 @@ description: Как добавить альтернативный идентиф
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326310"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Идентификаторы для подписчиков Visual Studio
 
@@ -34,42 +35,35 @@ ms.lasthandoff: 04/16/2018
 
 Для всех подписок можно добавить рабочую или учебную учетную запись, чтобы использовать ее с преимуществами, требующими входа (IDE Visual Studio, VSTS и Azure).
 
-### <a name="prerequisites"></a>Предварительные требования
-
-* [Разрешения администратора коллекции проектов VSTS или владельца учетной записи](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner).
-
-* Для использования альтернативной учетной записи подписка, связанная с вашей учетной записью, должна включать Visual Studio Team Services или Microsoft Azure.
-
-> [!Note]
-> Вы можете продолжать использовать преимущества подписки с альтернативным идентификатором, однако подписка будет по-прежнему связана с исходной учетной записью.
 
 ### <a name="add-the-alternate-account"></a>Добавление альтернативной учетной записи
 
-1. Войдите в Visual Studio, используя учетную запись Майкрософт (https://{ваша_учетная_запись}.visualstudio.com).
+
+1. Войдите на портал подписчика Visual Studio с помощью учетной записи Майкрософт (https://my.visualstudio.com).
 
 2. Перейдите в раздел **Подписки**.
 
-  ![Добавление альтернативной учетной записи имени — переход к разделу "Подписки" в Visual Studio](_img/vs-alternate-identity/my-vs-subscriptions.png)
+
+   ![Добавление альтернативной учетной записи имени — переход к разделу "Подписки" в Visual Studio](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Щелкните ссылку **Добавить альтернативную учетную запись**.
 
-  ![Щелкните "Добавить альтернативную учетную запись" ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Щелкните "Добавить альтернативную учетную запись" ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Добавьте рабочую или учебную учетную запись.
 
-  ![Добавление рабочей или учебной учетной записи](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![Добавление рабочей или учебной учетной записи](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. Войдите в Visual Studio, используя рабочую или учебную учетную запись (https://{ваша_учетная_запись}.visualstudio.com).
+5. Войдите в Visual Studio Team Services, используя рабочую или учебную учетную запись (https://{ваша_учетная_запись}.visualstudio.com).
 
-  ![Использование рабочей или учебной учетной записи](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![Использование рабочей или учебной учетной записи](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  Альтернативная учетная запись будет добавлена в подписку Visual Studio, что позволит использовать оба идентификатора для доступа к преимуществам подписки, требующим входа с помощью альтернативной учетной записи (IDE, VSTS и Azure).
-
-Дополнительные сведения о добавлении альтернативной учетной записи см. на странице [Мои вопросы и ответы по Visual Studio](https://www.visualstudio.com/my/myvsfaq#alternate).
+Альтернативная учетная запись будет добавлена в подписку Visual Studio, что позволит использовать оба идентификатора для доступа к преимуществам подписки, требующим входа с помощью альтернативной учетной записи (IDE, VSTS и Azure).
 
 ## <a name="faq"></a>часто задаваемые вопросы
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>Вопрос. Почему VSTS не распознает меня как подписчика Visual Studio?
+
 Ответ. Служба VSTS должна автоматически распознавать вашу подписку при входе с основным или альтернативным идентификатором. Если этого не происходит, попробуйте выполнить следующее.
 
 * Убедитесь, что у вас есть активная подписка Visual Studio, которая [включает VSTS в качестве преимущества](vs-vsts.md).
@@ -78,4 +72,4 @@ ms.lasthandoff: 04/16/2018
 
 * Посетите [портал подписчиков Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) по крайней мере один раз перед входом в VSTS.
 
-Если VSTS по-прежнему не распознает вашу подписку, [обратитесь в службу поддержки](https://www.visualstudio.com/team-services/support/)
+Если VSTS по-прежнему не распознает вашу подписку, [обратитесь в службу поддержки](https://visualstudio.microsoft.com/team-services/support/)

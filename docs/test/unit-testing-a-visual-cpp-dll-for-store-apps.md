@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751875"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117632"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Тестирование библиотеки DLL на Visual C++
 
@@ -46,7 +46,7 @@ ms.locfileid: "34751875"
 
     -   Тестовые методы группируются в классы с помощью `TEST_CLASS(YourClassName){...}`.
 
-         Во время выполнения тестов создается экземпляр каждого тестового класса. Тестовые методы вызываются в неопределенном порядке. Можно задать особые методы, которые вызываются до и после каждого модуля, класса или метода. Дополнительные сведения см. в разделе [Использование Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) в библиотеке MSDN.
+         Во время выполнения тестов создается экземпляр каждого тестового класса. Тестовые методы вызываются в неопределенном порядке. Можно задать особые методы, которые вызываются до и после каждого модуля, класса или метода. Дополнительные сведения см. в разделе [Использование Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) в библиотеке MSDN.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
 
@@ -113,7 +113,7 @@ ms.locfileid: "34751875"
 
 5.  Добавьте минимальные реализации объявленных функций. Откройте файл **RooterLib.cpp** и добавьте следующий код:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -131,11 +131,11 @@ ms.locfileid: "34751875"
 
 1.  Добавьте RooterLib в проект RooterLibTests.
 
-    1.  В обозревателе решений выберите проект **RooterLibTests**, а затем в контекстном меню выберите пункт **Ссылки...**.
+    1.  В обозревателе решений выберите проект **RooterLibTests**, а затем в контекстном меню выберите пункт **Ссылки**.
 
     2.  В диалоговом окне свойств проекта RooterLib разверните узел **Общие свойства** и выберите узел **.NET Framework и ссылки**.
 
-    3.  Выберите команду **Добавить новую ссылку...**.
+    3.  Выберите команду **Добавить новую ссылку**.
 
     4.  В диалоговом окне **Добавление ссылки** разверните узел **Решение** и выберите **Проекты**. Затем выберите элемент **RouterLib**.
 
@@ -151,7 +151,7 @@ ms.locfileid: "34751875"
 
 3.  Добавьте тест, который использует импортированную функцию. Добавьте следующий код в файл **unittest1.cpp**:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ ms.locfileid: "34751875"
 
 1.  Добавьте еще один тест в файл **unittest1.cpp**:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ ms.locfileid: "34751875"
 
     3.  Добавьте код в файл **RooterLib.cpp**, чтобы перехватить исключение:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

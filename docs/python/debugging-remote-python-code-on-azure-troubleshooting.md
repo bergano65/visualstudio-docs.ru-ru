@@ -1,7 +1,7 @@
 ---
 title: Устранение неполадок с удаленной отладкой в Azure для Python
 description: Устранение неполадок во время отладки приложения Python, выполняющегося в Службе приложений Azure, с помощью Visual Studio.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,11 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3d792a411867686abe0734fc67dfe654320d8b38
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 111a166e561bccb0eb5a14143479b7ad251d9b61
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058556"
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Устранение неполадок с удаленной отладкой Python и Azure
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 04/19/2018
 
 | Причина | Решение |
 | --- | --- |
-| У вас не установлена среда Visual Studio 2013 с обновлением 4 или более поздней версии. | Установите поддерживаемую версию с сайта [visualstudio.com](https://www.visualstudio.com/downloads/). | 
+| У вас не установлена среда Visual Studio 2013 с обновлением 4 или более поздней версии. | Установите поддерживаемую версию с сайта [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). |
 | Проект, развернутый в службе приложений, не соответствует тому, который открыт в Visual Studio. | Загрузите правильный проект в Visual Studio. |
 | При развертывании проекта не выбрана конфигурация отладки. | Повторно разверните приложение, щелкнув проект правой кнопкой мыши в обозревателе решений и выбрав действие **Публиковать**. На вкладке **Параметры** убедитесь, что выбрана конфигурация **Отладка**. |
 | Служба приложений не запущена. | Запустите службу из обозревателя сервера в Visual Studio или на портале Azure. |

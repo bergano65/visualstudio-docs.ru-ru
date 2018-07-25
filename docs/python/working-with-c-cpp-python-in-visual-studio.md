@@ -1,7 +1,7 @@
 ---
 title: Работа с C++ и Python
 description: Пошаговое руководство по созданию расширения C++ для Python с помощью Visual Studio, включая отладку в смешанном режиме.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc885df4b85e89c85c366f033113678243fbfe0b
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979273"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847821"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Создание расширения C++ для Python
 
@@ -283,6 +283,8 @@ ms.locfileid: "31979273"
 
     [fast_tanh(x) for x in d] took 0.158 seconds
     ```
+
+    Если команда **Запуск без отладки** недоступна, в обозревателе решений щелкните правой кнопкой мыши проект Python и выберите команду **Назначить запускаемым проектом**.
 
 1. Попробуйте увеличить значение переменной `COUNT`, чтобы разница стала еще очевиднее. Отладочная сборка модуля C++ также выполняется медленнее, чем сборка выпуска, так как отладочная сборка менее оптимизирована и включает в себя различные проверки ошибок. Вы можете свободно переключаться между этими конфигурациями для их сравнения.
 

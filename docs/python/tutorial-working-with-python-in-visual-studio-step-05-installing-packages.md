@@ -1,7 +1,7 @@
 ---
 title: Руководство по работе с Python. Шаг 5 — установка пакетов
 description: Шаг 5 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь описаны функции Visual Studio для управления пакетами в окружении Python.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875322"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37055985"
 ---
-# <a name="step-5-installing-packages-in-your-python-environment"></a>Шаг 5. Установка пакетов в среде Python
+# <a name="step-5-install-packages-in-your-python-environment"></a>Шаг 5. Установка пакетов в среде Python
 
 **Предыдущий шаг: [выполнение кода в отладчике](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
@@ -72,6 +72,6 @@ ms.locfileid: "33875322"
 > [!div class="nextstepaction"]
 > [Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="going-deeper"></a>Дополнительные сведения
+### <a name="go-deeper"></a>Дополнительные подробности
 
 - [Среды Python](managing-python-environments-in-visual-studio.md)

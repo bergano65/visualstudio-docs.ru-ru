@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 26edc3f48c72fb81bd60396ad8a3047dafa7f48e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572382"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281808"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -33,11 +33,11 @@ ms.locfileid: "34572382"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Установка Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Сведения о Xamarin в Visual Studio](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Установка Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Сведения о Xamarin в Visual Studio](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Документация для разработки мобильных приложений Xamarin](/xamarin/) |
 |[Управление жизненным циклом приложений (ALM) c приложениями Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
-|[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Сведения о сходстве между Swift и C#](http://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
@@ -106,9 +106,9 @@ ms.locfileid: "34572382"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Установка Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Начало работы со средствами Visual Studio для Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
-|[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Установка Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Начало работы со средствами Visual Studio для Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
+|[Сведения об эмуляторе Visual Studio для Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 <a name="CPP"></a>
 
@@ -135,11 +135,11 @@ ms.locfileid: "34572382"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Скачивание Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Скачивание Visual Studio.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
-|[Дополнительные сведения об использовании C++ для нескольких платформ.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Дополнительные сведения об использовании C++ для нескольких платформ.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Установите нужные компоненты, а затем создайте собственное приложение действия для Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
-|[Дополнительные сведения о совместном использовании кода C++ с приложениями Android и Windows](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Дополнительные сведения о совместном использовании кода C++ с приложениями Android и Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Примеры разработки кроссплатформенных мобильных приложений для C++](https://msdn.microsoft.com/library/dn707596.aspx) (Библиотека MSDN)|
 |[Дополнительные примеры разработки кроссплатформенных мобильных приложений для C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -155,7 +155,7 @@ ms.locfileid: "34572382"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Дополнительные сведения о построении игр Unity с помощью Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Дополнительные сведения о построении игр Unity с помощью Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Подробнее об инструментах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Начало работы с инструментами Visual Studio для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Читать о последних возможностях Visual Studio Tools для предварительной версии Unity 2.0](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (блог Visual Studio)|

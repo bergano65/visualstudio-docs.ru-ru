@@ -1,7 +1,7 @@
 ---
 title: Интерактивное окно Python (REPL)
 description: Практическое руководство по быстрой разработке кода Python в Visual Studio с помощью интерактивного окна (REPL).
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a728c164121216b259e48b502f9ca29fa7ffd1d4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582349"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057922"
 ---
-# <a name="working-with-the-python-interactive-window"></a>Работа с интерактивным окном Python
+# <a name="work-with-the-python-interactive-window"></a>Работа с интерактивным окном Python
 
 Visual Studio предоставляет интерактивное окно цикла "чтение — оценка — вывод" (REPL) для каждой среды Python, что улучшает REPL, который вы получаете при выполнении `python.exe` в командной строке. В интерактивном окне (открывается с помощью команд меню **Просмотр > Другие окна > &lt;окружение&gt; Интерактивный**) можно ввести произвольный код Python и немедленно увидеть результаты. Это помогает вам изучать API и экспериментировать с ним, а также интерактивно разрабатывать рабочий код для добавления в проекты.
 

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752182"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947119"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>Руководство (шаг 1). Начало работы с веб-платформой Flask в Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Руководство. Начало работы с веб-платформой Flask в Visual Studio
 
 [Flask](http://flask.pocoo.org/) — это упрощенная платформа Python для веб-приложений, которая обеспечивает основные возможности маршрутизации URL-адресов и визуализации страниц.
 
@@ -251,7 +251,7 @@ def hello(name, msg):
 > [!div class="nextstepaction"]
 > [Создание приложения Flask с представлениями и шаблонами страниц](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
 - [Краткое руководство по Flask](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
 - Исходный код, используемый в руководстве, на сайте GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255162"
 ---
 # <a name="performance-session-overview"></a>Общие сведения о сеансе анализа производительности
 В данном обзоре приводится информация об основах профилирования. Разработчики, у которых нет опыта анализа производительности, узнают, как средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют быстро повысить продуктивность их работы и производительность их кода. Разработчики, обладающие опытом профилирования, получат представление об особенностях функций и процессов средств профилирования.  

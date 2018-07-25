@@ -1,6 +1,6 @@
 ---
-title: Установка агентов и контроллеров тестирования для Visual Studio
-ms.date: 03/02/2018
+title: Установка агентов и контроллеров тестирования
+ms.date: 07/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8914b6b876b27b94add446a627087fb34e5082ea
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972109"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890413"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 
@@ -28,15 +28,15 @@ ms.locfileid: "31972109"
 
 | Элемент | Требования |
 | ---- | ------------ |
-| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows XP с пакетом обновления 3 (SP3)<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008, выпуск 2 с пакетом обновления 1 |
-| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008, выпуск 2 с пакетом обновления 1 |
+| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
+| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4,5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Установка контроллера и агентов тестирования
 
-Вы можете скачать агенты для Visual Studio 2017 по ссылке [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Прокрутите страницу вниз и найдите раздел *Агенты для Visual Studio 2017*. Выберите *агент* или *контроллер* и нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
+Вы можете скачать агенты для Visual Studio 2017 по ссылке [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Прокрутите страницу вниз и найдите раздел *Агенты для Visual Studio 2017*. Выберите *агент* или *контроллер* и нажмите *Скачать*. Чтобы установить агент или контроллер тестирования, запустите скачанный исполняемый файл.
 
-Вы можете скачать агенты для Visual Studio 2015 и Visual Studio 2013 на странице [загрузки прежних версий](https://www.visualstudio.com/vs/older-downloads/).
+Вы можете скачать агенты для Visual Studio 2015 и Visual Studio 2013 на странице [загрузки прежних версий](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Эти установщики доступны в виде ISO-файлов, что упрощает установку на виртуальных машинах.
 

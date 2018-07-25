@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eea5a55f57ed6b3fb710195dfe94839bdb17fb7e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a4380d3367177bec4036aecd819ed6513c0efd6
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238151"
 ---
-# <a name="functions-view---net-memory-sampling-data"></a>Представление "Функции" — данные выборки памяти .NET
+# <a name="functions-view---net-memory-sampling-data"></a>Представление "Функции" — данные выборки памяти .NET
 В представлении "Функции" данных профилирования выделения памяти .NET, собранных с помощью методов выборки, представлены функции, выделявшие память в процессе профилирования, а также указан размер и количество выделенных блоков.  
   
 |Столбец|Описание:|  
@@ -41,6 +42,6 @@ ms.lasthandoff: 04/19/2018
 |**% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных при профилировании, которые являются эксклюзивными байтами для данной функции.|  
   
 ## <a name="see-also"></a>См. также  
- [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)   
  [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)

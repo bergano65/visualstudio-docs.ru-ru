@@ -1,7 +1,7 @@
 ---
 title: Руководство по работе с Python. Шаг 4 — отладка
 description: Шаг 4 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь объясняется, как выполнять код Python в отладчике.
-ms.date: 03/08/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a164c68a8a6f4392d91c522c9cb4f9d225e8820a
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031986"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057821"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>Шаг 4. Выполнение кода в отладчике
+# <a name="step-4-run-code-in-the-debugger"></a>Шаг 4. Выполнение кода в отладчике
 
 **Предыдущий шаг. [Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ ms.locfileid: "32031986"
 > [!div class="nextstepaction"]
 > [Установка пакетов в среде Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>Дополнительные сведения
+### <a name="go-deeper"></a>Дополнительные подробности
 
 - [Отладка](debugging-python-in-visual-studio.md)
 - Полную документацию по возможностям отладки Visual Studio можно найти в статье [Отладка в Visual Studio](../debugger/debugger-feature-tour.md).

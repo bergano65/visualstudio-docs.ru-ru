@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b670b8ff3028dc0c9a029d7d00f9fee6f34447c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8762bb1207d7715a14effab7aee2d5d3ba5199b1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568829"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946593"
 ---
-# <a name="getassemblyidentity-task"></a>Задача GetAssemblyIdentity
+# <a name="getassemblyidentity-task"></a>GetAssemblyIdentity - задача
 Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `GetAssemblyIdentity`.  
+ В следующей таблице приводятся параметры задачи `GetAssemblyIdentity` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
@@ -41,7 +41,7 @@ ms.locfileid: "31568829"
 ## <a name="remarks"></a>Примечания  
  Элементы, выводимые параметром `Assemblies`, содержат записи метаданных элементов с именем `Version`, `PublicKeyToken` и `Culture`.  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример извлекает идентификатор файлов, указанных в элементе `MyAssemblies`, и выводит их в элемент `MyAssemblyIdentities`.  

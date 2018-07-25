@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962d185232fc8a98343ed97fa4dd0230d55f5bb7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948812"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797513"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Страницу **IntelliSense** можно открыть, выбрав в меню **Сервис**пункт **Параметры** , а затем раскрыв узлы **Текстовый редактор**, **JavaScript**, **IntelliSense.**
@@ -67,7 +67,7 @@ ms.locfileid: "31948812"
 
  С помощью заранее определенных групп ссылок можно задавать конкретные типы JS-файлов IntelliSense, которые находятся в области действия для различных проектов JavaScript. Доступны четыре группы ссылок:
 
--   Неявные (Windows *версия*) для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] , использующих JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] , использующих JavaScript.
+-   Неявные (Windows *версия*) для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] , использующих JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)], использующих JavaScript.
 
 -   Неявные (Интернет), для проектов HTML5. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для данных типов проектов.
 

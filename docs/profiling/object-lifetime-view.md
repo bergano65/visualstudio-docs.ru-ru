@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255623"
 ---
 # <a name="object-lifetime-view"></a>Представление "Время существования объектов"
-Представление "Время жизни объекта" доступно, только если на страницах свойств сеансов производительности установлен флажок **Also collect .NET object lifetime data** (Также собирать данные о времени жизни объектов .NET).  
+Представление "Время жизни объекта" доступно, только если на страницах свойств **Сеанс производительности** установлен флажок **Also collect .NET object lifetime data** (Также собирать данные о времени жизни объектов .NET).  
   
  Сборщик мусора [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] управляет выделением и освобождением памяти для приложения. Для оптимизации производительности сборщика мусора управляемая куча делится на три поколения: 0, 1 и 2. Сборщик мусора среды выполнения хранит новые объекты в поколении 0. Уровень объектов, оставшихся после сборок мусора, повышается, и они сохраняются в поколениях 1 и 2.  
   

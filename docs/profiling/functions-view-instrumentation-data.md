@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ddbffefe729f0b4c5b89b46b96b32a90f05f297
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7787e974b093156b27b2ace4353e94db05063d7d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238229"
 ---
 # <a name="functions-view---instrumentation-data"></a>Представление "Функции" — данные инструментирования
 В представлении отчета "Функции" данные профилирования перечисляются по имени функции.  

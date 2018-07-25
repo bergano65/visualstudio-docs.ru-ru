@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 709f9b62844a209450daa427efdb3333796828b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254622"
 ---
-# <a name="overviews-performance-tools"></a>Обзоры (средства производительности)
+# <a name="overviews-performance-tools"></a>Обзоры (средства оценки производительности)
 В данном разделе представлены концептуальные и терминологические обзоры средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], используемых для измерения характеристик производительности разрабатываемого приложения.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)  
  Сведения об основах профилирования с использованием средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
@@ -48,5 +49,5 @@ ms.lasthandoff: 04/19/2018
  Сведения о проблемах сбора данных выборки и профилирования приложений в нескольких сеансах в [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].  
   
 ## <a name="see-also"></a>См. также  
- [Начало работы](../profiling/getting-started-with-performance-tools.md)   
+ [Приступая к работе со средствами профилирования](../profiling/getting-started-with-performance-tools.md)   
  [Обозреватель производительности](../profiling/performance-explorer.md)

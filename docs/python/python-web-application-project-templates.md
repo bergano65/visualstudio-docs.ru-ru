@@ -1,7 +1,7 @@
 ---
 title: Шаблоны веб-приложений для Python
 description: Обзор шаблонов Visual Studio для веб-приложений, написанных на языке Python с помощью платформ Bottle, Flask и Django, включая конфигурации отладки и публикацию в службе приложений Azure.
-ms.date: 05/18/2018
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ce402b0df6521ac55942ded9615b6962640193c1
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752044"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847769"
 ---
 # <a name="python-web-application-project-templates"></a>Шаблоны проекта веб-приложений Python
 
 Python в Visual Studio поддерживает разработку веб-проектов на платформах Bottle, Django и Flask с помощью шаблонов проектов и средства запуска отладки, которое можно настроить для работы с различными платформами. Эти шаблоны включают файл `requirements.txt` для объявления необходимых зависимостей. При создании проекта на основе одного из таких шаблонов в Visual Studio отобразится запрос на установку этих пакетов (см. раздел [Установка необходимых компонентов для проекта](#installing-project-requirements) далее в этой статье).
 
 Для других платформ, например Pyramid, вы также может использовать универсальный шаблон веб-проекта. В этом случае для шаблона не предусмотрена установка каких-либо платформ. Вместо этого в окружении проекта устанавливаются необходимые пакеты (см. статью об [управлении окружениями Python](managing-python-environments-in-visual-studio.md)).
+
+Сведения о развертывании веб-приложения Python в Azure см. в разделе [Публикация в Службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ## <a name="using-a-project-template"></a>Использование шаблона проекта
 

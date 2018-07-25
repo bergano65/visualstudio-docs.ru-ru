@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71ea82ea9588315748a9c79eb9abd7b06eace680
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d48393a2d160e3691069a4b5f86dd814b63d935d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237686"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Представление "Функции" — данные инструментирования памяти .NET
 В представлении "Функции" данных профилирования выделения памяти .NET, собранных методом инструментирования, содержатся функции, которые выделяли память в ходе сеанса профилирования. Строка функции содержит размер и число выделений, а также данные о времени, характерные для функции.  

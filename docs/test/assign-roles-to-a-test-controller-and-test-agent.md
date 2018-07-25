@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968772"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280615"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Назначение ролей контроллеру и агенту тестирования
 
@@ -41,7 +41,7 @@ ms.locfileid: "31968772"
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Создание и настройка параметра тестирования
 
-1.  В обозревателе решений щелкните правой кнопкой мыши папку **Элементы решения**, выберите команду **Добавить** и пункт **Создать элемент**.
+1.  В **обозревателе решений** щелкните правой кнопкой мыши папку **Элементы решения**, выберите команду **Добавить** и пункт **Создать элемент**.
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
@@ -51,7 +51,7 @@ ms.locfileid: "31968772"
 
 4.  Выберите **Добавить**.
 
-     В обозревателе решений появится новый файл TestSettingDistributedTestWalkthrough.testsettings, расположенный в папке **Элементы решения**.
+     В **обозревателе решений** появится новый файл *TestSettingDistributedTestWalkthrough.testsettings*, расположенный в папке **Элементы решения**.
 
      Откроется диалоговое окно **Параметры тестирования**. Выбирается страница **Общее**.
 

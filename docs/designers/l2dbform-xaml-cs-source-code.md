@@ -10,26 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e1cbe4c03cb5ddfec51d583437a9b5294fbd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 405ca2a0d2f676cb56d2c5dffebc1bac1230015d
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926061"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977737"
 ---
-# <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
+# <a name="l2dbformxamlcs-source-code"></a>Исходный код L2DBForm.xaml.cs
 
-Этот раздел включает содержимое и описание исходного кода C# в файле L2DBForm.xaml.cs. Разделяемый класс L2XDBForm, содержащийся в этом файле, можно разбить на три логических раздела: элементы данных и обработчики событий `OnRemove` и `OnAddBook`.
+В этом разделе приводится содержимое исходного кода C# в файле *L2DBForm.xaml.cs* и дается его описание. Разделяемый класс L2XDBForm, содержащийся в этом файле, можно разбить на три логических раздела: элементы данных и обработчики событий `OnRemove` и `OnAddBook`.
 
 ## <a name="data-members"></a>Элементы данных
 
-Для обеспечения связи этого класса с ресурсами окна из L2DBForm.xaml используются два закрытых элемента данных.
+Для обеспечения связи этого класса с ресурсами окна из *L2DBForm.xaml* используются два закрытых элемента данных.
 
 -   Переменная пространства имен `myBooks` инициализируется значением `"http://www.mybooks.com"`.
 
--   Элемент `bookList` инициализируется в конструкторе строкой CDATA из L2DBForm.xaml с помощью следующего кода:
+-   Элемент `bookList` инициализируется в конструкторе строкой CDATA из *L2DBForm.xaml* с помощью следующего кода:
 
-    ```
+    ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
     ```
 
@@ -41,7 +41,7 @@ ms.locfileid: "31926061"
 
 -   Во второй инструкции создается элемент <xref:System.Xml.Linq.XElement> из строковых значений, введенных пользователем в разделе пользовательского интерфейса **Add New Book**.
 
--   В третьей инструкции происходит добавление этого нового элемента в поставщик данных L2DBForm.xaml. Следовательно, благодаря динамической привязке данных происходит автоматическое обновление пользовательского интерфейса с учетом этого нового элемента, поэтому дополнительный пользовательский код не требуется.
+-   В третьей инструкции происходит добавление этого нового элемента в поставщик данных *L2DBForm.xaml*. Следовательно, благодаря динамической привязке данных происходит автоматическое обновление пользовательского интерфейса с учетом этого нового элемента, поэтому дополнительный пользовательский код не требуется.
 
 ## <a name="onremove-event-handler"></a>Обработчик события OnRemove
 
@@ -51,13 +51,13 @@ ms.locfileid: "31926061"
 
 -   Вначале извлекается элемент книги, связанный с выделенным в настоящее время пунктом в окне списка.
 
-    ```
+    ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
 -   Затем этот элемент удаляется из поставщика данных.
 
-    ```
+    ```csharp
     selBook.Remove();
     ```
 
@@ -137,7 +137,7 @@ namespace LinqToXmlDataBinding {
 
 ### <a name="comments"></a>Комментарии
 
-Сведения о связанном источнике данных XAML для этих обработчиков см. в статье [L2DBForm.xaml Source Code](../designers/l2dbform-xaml-source-code.md) (Исходный код L2DBForm.xaml)
+Сведения о связанном источнике данных XAML для этих обработчиков см. в статье [L2DBForm.xaml Source Code](../designers/l2dbform-xaml-source-code.md) (Исходный код L2DBForm.xaml).
 
 ## <a name="see-also"></a>См. также
 

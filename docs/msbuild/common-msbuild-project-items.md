@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ea8c1ffd52805be4f93fb59c2831f5f0fe610c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 83cdf4071be735636c9f2ffb559c68d284685892
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574263"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945524"
 ---
 # <a name="common-msbuild-project-items"></a>Общие элементы проектов MSBuild
-В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеют по несколько общих элементов. Эти элементы определены в файле в Microsoft.Build.CommonTypes.xsd.  
+В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеют по несколько общих элементов. Эти элементы определены в файле  *Microsoft.Build.CommonTypes.xsd*.  
   
 ## <a name="common-items"></a>Общие элементы  
  Ниже приведен список общих элементов проекта.  

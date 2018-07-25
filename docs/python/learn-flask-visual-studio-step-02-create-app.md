@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752189"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118204"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>Руководство (шаг 2). Создание приложения Flask с представлениями и шаблонами страниц
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Flask с представлениями и шаблонами страниц
 
 **Предыдущий шаг. [Руководство (шаг 1). Начало работы с веб-платформой Django в Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -36,7 +36,7 @@ ms.locfileid: "34752189"
 
 1. В папке проекта создайте папку приложения с именем `HelloFlask` (щелкните правой кнопкой мыши проект в **обозревателе решений** и выберите **Добавить** > **Новая папка**.)
 
-1. В папке `HelloFlask` создайте файл с именем `__init.py__` со следующим содержимым, которое создает экземпляр `Flask` и загружает представления приложения (созданные на следующем шаге):
+1. В папке `HelloFlask` создайте файл с именем `__init__.py` со следующим содержимым, которое создает экземпляр `Flask` и загружает представления приложения (созданные на следующем шаге):
 
     ```python
     from flask import Flask
@@ -217,7 +217,7 @@ ms.locfileid: "34752189"
 > [!div class="nextstepaction"]
 > [Обработка статических файлов, добавление страниц и использование наследования шаблонов](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
 - [Flask Quickstart - Rendering Templates](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (Краткое руководство по Flask — отрисовка шаблонов) (flask.pocoo.org)
 - Исходный код, используемый в руководстве, на сайте GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

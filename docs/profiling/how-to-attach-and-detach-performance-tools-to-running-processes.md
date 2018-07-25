@@ -18,17 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237231"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Подключение средств оценки производительности к выполняющимся процессам и отключение от этих процессов
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Присоединение средств оценки производительности к выполняющемуся процессу и его отсоединение из этого процесса
 Профилировщик можно использовать для подключения к или отключения от выполняющегося процесса, чтобы упростить выборку и сбор данных производительности. Этот метод можно использовать для профилирования процесса, если необходимо запретить сбор данных о времени загрузки приложения или отследить производительность процесса после достижения им определенного состояния.  
   
 > [!NOTE]
->  Следующая процедура применима к подключению и отключению процессов из интегрированной среды разработки (IDE) [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Сведения об использовании средств командной строки см. в разделе [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md). Сведения о профилировании служб см. в разделе [Профилирование служб](../profiling/command-line-profiling-of-services.md).  
+>  Следующая процедура применима к подключению и отключению процессов из интегрированной среды разработки (IDE) [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Сведения об использовании инструментов командной строки см. в разделе [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md). Сведения о профилировании служб см. в разделе [Профилирование служб](../profiling/command-line-profiling-of-services.md).  
   
  Процессы, доступные для профилирования, зависят от разрешений на доступ пользователя, заданных администратором компьютера. Учетная запись пользователя, например, имеет разрешения на следующее:  
   
@@ -63,6 +64,6 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
  [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)   
- [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

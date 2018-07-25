@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e33d17e5f54066b038da36611329bb7169de4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254362"
 ---
 # <a name="processon-and-processoff"></a>Подкоманды ProcessOn и ProcessOff
 Подкоманды **ProcessOff** и **ProcessOn** программы VSPerfCmd.exe приостанавливают и возобновляют профилирование заданного процесса в сеансе профилирования из командной строки. **ProcessOff** останавливает профилирование процесса, а **ProcessOn** запускает его.  
@@ -40,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
   
 #### <a name="parameters"></a>Параметры  
  `PID`  
- Целочисленный идентификатор запускаемого или останавливаемого процесса. Идентификаторы процессов приводятся на вкладке "Процесс" диспетчера задач Windows.  
+ Целочисленный идентификатор запускаемого или останавливаемого процесса. Идентификаторы процессов приводятся на вкладке **Процесс** диспетчера задач Windows.  
   
 ## <a name="required-subcommands"></a>Необходимые подкоманды  
  Нет  

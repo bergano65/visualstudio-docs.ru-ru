@@ -10,19 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0687b4f56906aeca0866f8d5d6ad7d329bb84df6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844473"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Настройка параметров имени файла с данными о производительности
+# <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Настройка параметров имени файла с данными производительности
 
-По умолчанию файл данных профилирования (VSP) сохраняется со следующим синтаксисом:
+По умолчанию файл данных профилирования (*VSP*) сохраняется со следующим синтаксисом:
 
 *путь\VSP-файл\ГГММДД(N)* **.vsp**
 
-Вы можете изменить любые параметры именования на странице "Общие" диалогового окна свойств.
+Вы можете изменить любые параметры именования на странице **Общие** диалогового окна свойств для сеанса производительности.
 
 |||
 |-|-|

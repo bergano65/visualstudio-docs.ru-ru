@@ -17,18 +17,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e963472ee51f2439b50807a49425dcd7f6d8443a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f7e5780a2462e8980c22c474ae6236c87aee599b
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571434"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302817"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>Обработка событий среды выполнения Windows на языке JavaScript
-В JavaScript события среды выполнения Windows представлены иначе, чем в C++ или .NET Framework. Они не являются свойствами класса, а представляются в виде строковых идентификаторов, которые передаются в методы класса `addEventListener` и `removeEventListener`. Например, можно добавить обработчик событий для события [Geolocator.PositionChanged](http://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx), передав строку "positionchanged" в метод `Geolocator.addEventListener`:  
+В JavaScript события среды выполнения Windows представлены иначе, чем в C++ или .NET Framework. Они не являются свойствами класса, а представляются в виде строковых идентификаторов (в нижнем регистре), которые передаются в методы класса `addEventListener` и `removeEventListener`. Например, можно добавить обработчик событий для события [Geolocator.PositionChanged](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx), передав строку "positionchanged" в метод `Geolocator.addEventListener`:  
   
 ```JavaScript  
-var locator =  new Windows.Devices.Geolocation.Geolocator();  
+var locator = new Windows.Devices.Geolocation.Geolocator();  
 locator.addEventListener(  
     "positionchanged",   
      function (ev) {  
@@ -36,25 +36,24 @@ locator.addEventListener(
     });  
 ```  
   
- Вы также можете задать свойство `locator.onpositionchanged`.  
+ Вы также можете задать свойство `locator.onpositionchanged`:  
   
-```  
+```JavaScript  
 locator.onpositionchanged =    
     function (ev) {  
         console.log("Got event");  
     };  
 ```  
   
- В JavaScript аргументы событий среды выполнения Windows представлены в виде отдельного объекта событий. В следующем примере метода обработчика событий параметр `ev` является объектом, который содержит как отправителя (целевое свойство), так и другие аргументы событий. Аргументами событий являются те аргументы, которые задокументированы для каждого из событий.  
+Еще одно различие между .NET, C++ и JavaScript — это количество параметров, принимаемых обработчиком событий. В .NET и C++ обработчик принимает два параметра: отправитель события и данные события. В JavaScript они объединены в один объект `Event`. В следующем примере параметр `ev` содержит отправитель события (свойство `target`) и свойства данных события (здесь это просто `position`). Свойства данных событий — это свойства, которые задокументированы для каждого из событий.
   
 ```JavaScript  
 function (ev) {  
-    console.log("Target: " + ev.target);  
+    console.log("Sender: " + ev.target);  
     console.log("Position: " +  
         ev.position.latitude + "," +  
         ev.position.longitude);  
 };  
-  
 ```  
   
 > [!IMPORTANT]

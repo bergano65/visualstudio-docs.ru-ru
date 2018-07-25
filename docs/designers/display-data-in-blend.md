@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918145"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890361"
 ---
 # <a name="display-data-in-blend"></a>Отображение данных в Blend
 
-При настройке макета страниц вы можете просмотреть демонстрационные данные в конструкторе. Демонстрационные данные можно создать с нуля или с помощью существующего класса. Вы также можете подключиться к *динамическим данным* , которые появятся в вашем приложении при его запуске.
+При настройке макета страниц вы можете просмотреть демонстрационные данные в конструкторе. Демонстрационные данные можно создать с нуля или с помощью существующего класса. Вы также можете подключиться к *динамическим данным*, которые появятся в вашем приложении при его запуске.
 
 ## <a name="generate-sample-data"></a>Создание демонстрационных данных
 
@@ -57,4 +57,4 @@ ms.locfileid: "31918145"
 
 ## <a name="see-also"></a>См. также
 
-- [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

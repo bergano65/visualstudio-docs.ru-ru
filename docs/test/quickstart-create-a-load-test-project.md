@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89a72c115edf8eae11fc1159686dee2b7b3f44d6
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976719"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118285"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Краткое руководство: создание проекта нагрузочного тестирования
 
@@ -27,7 +27,7 @@ ms.locfileid: "31976719"
 
 Если у вас еще не установлен компонент инструментов веб-тестирования производительности и нагрузочного тестирования, необходимо сделать это с помощью установщика Visual Studio Installer.
 
-1. Visual Studio Installer можно также открыть из меню "Пуск" в Windows. Кроме того, это приложение можно запустить из Visual Studio. Для этого откройте диалоговое окно **Новый проект** или выберите **Сервис** > **Получение средств и компонентов** в строке меню.
+1. Visual Studio Installer можно также открыть из меню "Пуск" в Windows. Кроме того, это приложение можно запустить из Visual Studio. Для этого откройте диалоговое окно **Новый проект** или выберите **Сервис** > **Получить средства и компоненты** в строке меню.
 
 1. В приложении Visual Studio Installer перейдите на вкладку **Отдельные компоненты** и выполните прокрутку вниз до раздела **Отладка и тестирование**. Выберите **Инструменты веб-тестирования производительности и нагрузочного тестирования**.
 

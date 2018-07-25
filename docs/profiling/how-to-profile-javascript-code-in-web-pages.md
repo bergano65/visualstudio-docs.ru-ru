@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843927"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Практическое руководство. Профилирование кода JavaScript в веб-страницах
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/19/2018
 
 При указании профилирования JavaScript профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , который выполняется на сервере.
 
-- Для веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , который выполняется на сервере.
+- Для веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], который выполняется на сервере.
 
 - На произвольной веб-странице профилируется код JavaScript, который выполняется в браузере.
 
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/19/2018
 
 5. На третьей странице мастера установите флажок **Профилировать JavaScript** и нажмите кнопку **Далее**.
 
-6. На четвертой странице мастера нажмите кнопку **Готово** , чтобы запустить веб-приложение в браузере.
+6. На четвертой странице мастера нажмите кнопку **Готово**, чтобы запустить веб-приложение в браузере.
 
 7. Воспользуйтесь функциями, которые вы хотите профилировать.
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/19/2018
 
     2. установите флажок **Профилировать JavaScript** и нажмите кнопку **Далее**.
 
-6. На четвертой странице мастера нажмите кнопку **Готово** , чтобы открыть веб-страницу в браузере.
+6. На четвертой странице мастера нажмите кнопку **Готово**, чтобы открыть веб-страницу в браузере.
 
 7. Воспользуйтесь функциями, которые вы хотите профилировать.
 

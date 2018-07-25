@@ -11,14 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee92d81f9b22fb0fe60f8c51ce4e9d53c606f1e7
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569892"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077331"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Информация об использовании пакетов SDK проекта MSBuild
+
 В версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 представлена новая концепция "пакет SDK проекта", которая упрощает применение пакетов разработки программного обеспечения, требующих импортировать свойства и целевые объекты.
 
 ```xml
@@ -27,8 +28,8 @@ ms.locfileid: "31569892"
         <TargetFramework>net46</TargetFramework>
     </PropertyGroup>
 </Project>
-```  
-  
+```
+
 На этапе оценки проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] добавляет неявные директивы импорта в начале и конце кода проекта:
 
 ```xml
@@ -42,30 +43,36 @@ ms.locfileid: "31569892"
 
     <!-- Implicit bottom import -->
     <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
-</Project>  
-```  
+</Project>
+```
 
-## <a name="referencing-a-project-sdk"></a>Ссылка на пакет SDK проекта
- Есть три разных способа указать ссылку на пакет SDK проекта
+## <a name="reference-a-project-sdk"></a>Ссылка на пакет SDK проекта
+
+ Есть три разных способа указать ссылку на пакет SDK проекта:
 
 1. Используйте атрибут `Sdk` в элементе `<Project/>`.
+
     ```xml
     <Project Sdk="My.Custom.Sdk">
         ...
     </Project>
     ```
+
     При этом в начале и конце кода проекта добавляются неявные директивы импорта, как описано выше.  Значение атрибута `Sdk` задается в формате `Name[/Version]`, где Version обозначает необязательное значение версии.  Например, так: `My.Custom.Sdk/1.2.3`.
 
 2. Используйте элемент `<Sdk/>` верхнего уровня.
+
     ```xml
     <Project>
         <Sdk Name="My.Custom.Sdk" Version="1.2.3" />
         ...
     </Project>
    ```
+
    При этом в начале и конце кода проекта добавляются неявные директивы импорта, как описано выше.  Атрибут `Version` не является обязательным.
 
 3. Используйте элемент `<Import/>` в любом месте кода проекта.
+
     ```xml
     <Project>
         <PropertyGroup>
@@ -76,11 +83,13 @@ ms.locfileid: "31569892"
         <Import Project="Sdk.targets" Sdk="My.Custom.Sdk" />
     </Project>
    ```
+
    Явное включение директив импорта позволяет самостоятельно контролировать порядок добавления элементов.
 
    Если вы используете элемент `<Import/>`, можно указать необязательный атрибут `Version`.  Например, так: `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Как разрешаются ссылки на пакеты SDK проекта
+
 При оценке директив импорта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] динамически разрешает путь к пакету SDK проекта, используя указанные значения имени и версии.  Также [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] использует список зарегистрированных распознавателей SDK. Это подключаемые модули, которые отвечают за расположение пакетов SDK на компьютере.  Далее следует список этих подключаемых модулей.
 
 1. Распознаватель на основе NuGet, который опрашивает настроенные каналы пакетов в поисках пакетов NuGet с указанными значениями идентификатора и версии пакета SDK.<br/>
@@ -99,8 +108,12 @@ ms.locfileid: "31569892"
     }
 }
 ```
-При сборке проекта может использоваться только одна версия каждого пакета SDK проекта.  Если вы укажете ссылки на две разные версии одного пакета SDK проекта, MSBuild выдаст следующее предупреждение.  Рекомендуем **не** указывать в проектах версию, если она уже указана в файле `global.json`.  
 
-## <a name="see-also"></a>См. также  
+При сборке проекта может использоваться только одна версия каждого пакета SDK проекта.  Если вы укажете ссылки на две разные версии одного пакета SDK проекта, MSBuild выдаст следующее предупреждение.  Рекомендуем **не** указывать в проектах версию, если она уже указана в файле *global.json*.  
+
+## <a name="see-also"></a>См. также
+
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Настройка сборки](../msbuild/customize-your-build.md)   
+ [Пакеты, метаданные и платформы](/dotnet/core/packages)   
+ [Дополнения к формату CSPROJ для .NET Core](/dotnet/core/tools/csproj)

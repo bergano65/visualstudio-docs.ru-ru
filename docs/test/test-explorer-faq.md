@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975632"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303287"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 
@@ -72,10 +72,10 @@ ms.locfileid: "31975632"
   Значки возле группирований проектов, пространств имен и классов указывают на состояние тестов в определенном группировании. См. приведенную ниже таблицу.
 
   ![Значки иерархии в обозревателе тестов](media/testex-hierarchyicons.png)
-  
+
 ### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. В поле поиска обозревателя тестов фильтр "Путь к файлу" больше не используется.
 
-Фильтр "Путь к файлу"в поле поиска **обозревателя тестов** удален в Visual Studio 2017 версии 15.7 (предварительная версия 3). Эта функция используется мало. Чтобы обозреватель тестов получал методы теста быстрее, ее можно исключить. Если это изменение прерывает работу последовательности разработки, сообщите нам, отправив отзыв в [сообщество разработчиков](https://developercommunity.visualstudio.com/).
+Фильтр "Путь к файлу"в поле поиска **обозревателя тестов** удален в Visual Studio 2017 версии 15.7 (предварительная версия 3). Эта функция используется мало. Чтобы обозреватель тестов получал методы теста быстрее, ее можно исключить. Если это изменение прерывает последовательность разработки, сообщите нам, отправив отзыв в [сообщество разработчиков](https://developercommunity.visualstudio.com/).
 
 ## <a name="features"></a>Функции
 
