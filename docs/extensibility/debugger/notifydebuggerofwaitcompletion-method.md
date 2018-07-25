@@ -1,5 +1,5 @@
 ---
-title: Метод NotifyDebuggerOfWaitCompletion | Документы Microsoft
+title: Метод NotifyDebuggerOfWaitCompletion | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c510cd0b9be97c53d2026a54335b07bcd1da9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1288034f171c56e78f17d02f39843cf4ff600e5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102734"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233104"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Метод NotifyDebuggerOfWaitCompletion
-Метод заполнителя, используется как целевой объект точки останова в отладчике. Этот метод не должен быть встроенным или оптимизированного.  
+Метод заполнитель, используемый как целевой объект точки останова в отладчике. Этот метод не должен быть встроенным или оптимизированного.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в *mscorlib.dll*)  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,9 +34,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод следует вызывать все операции соединения с задачей при их отладчик уведомления бита.  
+ Этот метод следует вызывать все операции соединения с задачей, если их отладчик уведомлений бита.  
   
 ## <a name="requirements"></a>Требования  
   
 ## <a name="see-also"></a>См. также  
- [Task-класс](../../extensibility/debugger/task-class-internal-members.md)
+ [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
