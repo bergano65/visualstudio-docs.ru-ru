@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745582"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977750"
 ---
 # <a name="how-to-model-3d-terrain"></a>Практическое руководство. Моделирование трехмерного ландшафта
 
@@ -31,7 +31,7 @@ ms.locfileid: "34745582"
 
 Перед началом убедитесь, что отображаются окно **Свойства** и **Панель элементов**.
 
-1.  Создайте трехмерную модель, с которой вы будете работать. О том, как добавить в проект модель, см. в подразделе "Начало работы" раздела [Редактор моделей](../designers/model-editor.md).
+1.  Создание трехмерной модели для работы. Информацию о том, как добавить в проект модель, см. в подразделе "Начало работы" раздела [Редактор моделей](../designers/model-editor.md).
 
 2.  Добавьте в сцену плоскость. В окне **Панель элементов** в разделе **Фигуры** выберите **Плоскость** и переместите элемент в область конструктора.
 

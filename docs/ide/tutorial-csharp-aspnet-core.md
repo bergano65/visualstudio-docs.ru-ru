@@ -1,7 +1,7 @@
 ---
 title: Начало работы с C# и ASP.NET Core в Visual Studio
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 40aba1d8847b405c3e80f0d6890471f0e2065a86
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765519"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089455"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Начало работы с C# и ASP.NET в Visual Studio
 
 В этом учебнике по разработке на языке C# с помощью ASP.NET Core в Visual Studio вы создадите веб-приложение ASP.NET Core на C#, добавите в него код, изучите некоторые возможности интегрированной среды разработки и запустите приложение.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
 ## <a name="before-you-begin"></a>Подготовка к работе
 
@@ -41,7 +41,7 @@ ASP.NET Core — это кроссплатформенная платформа
 
 ### <a name="what-is-visual-studio"></a>Что такое Visual Studio?
 
-Visual Studio — это интегрированный набор средств разработки. Его можно рассматривать как программу для создания приложений.  
+Visual Studio — это интегрированный набор средств разработки. Его можно рассматривать как программу для создания приложений.
 
 ## <a name="start-developing"></a>Начало разработки
 
@@ -65,9 +65,9 @@ Visual Studio — это интегрированный набор средст
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Способ 1. Диалоговое окно "Новый проект"
 
-1. Щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**.
+1. Выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**.
 
-   ![Выбор ссылки "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Выберите ссылку "Открыть Visual Studio Installer" в диалоговом окне "Новый проект"](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Запускается Visual Studio Installer. Выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**, а затем щелкните **Изменить**.
 
@@ -81,7 +81,7 @@ Visual Studio — это интегрированный набор средст
 
 #### <a name="add-a-project-template"></a>Добавление шаблона проекта
 
-1. В диалоговом окне **Создать веб-приложение ASP.NET Core** выберите шаблон проекта **Веб-приложение (Model-View-Controller)**.  
+1. В диалоговом окне **Создать веб-приложение ASP.NET Core** выберите шаблон проекта **Веб-приложение (Model-View-Controller)**.
 
 2. В раскрывающемся меню выберите пункт **ASP.NET Core 2.0**. (Если вы не видите **ASP.NET Core 2.0** в списке, установите его, пройдя по ссылке на **скачивание**, которая должна появиться в желтой строке в верхней части диалогового окна.) Нажмите кнопку **ОК**.
 
@@ -179,11 +179,13 @@ Visual Studio — это интегрированный набор средст
 
 11. Чтобы остановить отладку, на панели инструментов нажмите кнопку **Остановить отладку**. (Кроме того, можно нажать клавишу **SHIFT**+**F5** или выбрать пункт меню **Отладка** > **Остановить отладку**.)
 
-   ![Нажатие кнопки "Остановить отладку" на панели инструментов](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![Выберите "Остановить отладку" на панели инструментов](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Поздравляем с завершением этого учебника! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio. Для получения дополнительных сведений перейдите к следующему учебнику.
+Поздравляем с завершением этого учебника! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio. Чтобы просмотреть приложение, работающее на общедоступном сервере, нажмите указанную ниже кнопку.
 
- > [!div class="nextstepaction"]
- > [Начало работы с MVC ASP.NET Core и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [Развертывание приложения в Службе приложений Azure](..//deployment/quickstart-deploy-to-azure.md)
+
+Вы также можете узнать о платформе "модель-представление-контроллер" (MVC) в ASP.NET Core, изучив руководство [Начало работы с MVC ASP.NET Core и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c57c9515b57b0fbdd49da6b35d664cd1547882d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ccbd96de96e750c0f149924ab69785e077591755
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568927"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946619"
 ---
 # <a name="assigntargetpath-task"></a>Задача AssignTargetPath
 Эта задача принимает список файлов и добавляет атрибуты `<TargetPath>`, если они еще не указаны.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `AssignTargetPath`.  
+ В следующей таблице приводятся параметры задачи `AssignTargetPath` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
@@ -35,7 +35,7 @@ ms.locfileid: "31568927"
 |`AssignedFiles`|Optional<br /><br /> Выходной параметр <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Содержит итоговый список файлов.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример выполняет задачу `AssignTargetPath`, чтобы настроить проект.  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 198677eb431852d5249684d23ff0dcad025e63af
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572408"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844174"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Практическое руководство. Справочная информация о символах Windows
 Файлы символов (*PDB*) средств профилирования Visual Studio используются для разрешения символьных имен, например имен функций в двоичных файлах программ. Вы можете выполнить следующие действия, чтобы автоматически скачать и изменить правильные *PDB*-файлы для версии Windows на локальном компьютере.  

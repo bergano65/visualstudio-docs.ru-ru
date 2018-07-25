@@ -2,7 +2,7 @@
 title: Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером | Документация Майкрософт
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765672"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978441"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -49,7 +49,7 @@ ms.locfileid: "34765672"
 | download.visualstudio.com | Настройка расположения для скачивания пакетов |
 | dl.xamarin.com | Настройка расположения для скачивания пакетов |
 | visualstudiogallery.msdn.microsoft.com | Расположение для скачивания расширений Visual Studio |
-| www.visualstudio.com | Расположение документации |
+| visualstudio.microsoft.com | Расположение документации |
 | docs.microsoft.com | Расположение документации |
 | msdn.microsoft.com | Расположение документации |
 | www.microsoft.com | Расположение документации |
@@ -118,7 +118,8 @@ ms.locfileid: "34765672"
 | Снимок <br>Отладчик | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (в зависимости от версии Visual Studio) | 1. Запрос JSON-файла для размера SKU службы приложений <br>2. Различные вызовы Azure RM <br>3. Вызов первоначальной загрузки сайта  <br>4. Целевая конечная точка клиента службы консоли Kudu для службы приложений <br>5. Запрос версии расширения сайта, опубликованного на nuget.org <br>6. Канал удаленной отладки |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Используется для просмотра, отправки, выполнения и администрирования заданий ASA <br><br> Используется для просмотра кластеров HDI, а также для отправки, диагностики и отладки заданий HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Используется для компиляции, отправки, просмотра, диагностики и отладки заданий. Также используется для просмотра файлов ADLS, а также отправки и скачивания файлов |
-|Служба упаковки | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Домены *.npmjs.org, *.nuget.org и *.nodejs.org требуются только для определенных сценариев, которые включают задачи сборки (например, установщик средств NuGet или Node) или в случае, если вы планируете использовать в своих веб-каналах общедоступные восходящие источники. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
+| Служба упаковки | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Домены *.npmjs.org, *.nuget.org и *.nodejs.org требуются только для определенных сценариев, которые включают задачи сборки (например, установщик средств NuGet или Node) или в случае, если вы планируете использовать в своих веб-каналах общедоступные восходящие источники. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
+| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Используется для подключения с помощью VSTS |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Устранение ошибок сети

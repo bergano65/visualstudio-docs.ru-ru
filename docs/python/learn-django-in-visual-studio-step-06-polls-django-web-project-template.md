@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750497"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089507"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Шаг 6 руководства. Использование шаблона "Веб-проект опроса Django"
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Шаг 6. Использование шаблона веб-проекта Django для опросов
 
 **Предыдущий шаг. [Tutorial step 5: Authenticate users in Django](learn-django-in-visual-studio-step-05-django-authentication.md)** (Шаг 5 руководства. Проверка подлинности пользователей в Django)
 
@@ -368,11 +368,11 @@ admin.site.register(Poll, PollAdmin)
 
 Запуск веб-приложения на компьютере разработчика — это лишь один шаг, чтобы сделать приложение доступным для клиентов. Следующие шаги могут включать приведенные ниже задачи:
 
+- Развертывание веб-приложения на рабочий сервер, например в службу приложений Azure. См. статью [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), которая содержит сведения об определенных изменениях, необходимых для приложений Django.
+
 - Настройка страницы 404 путем создания шаблона с именем `templates/404.html`. При наличии Django использует этот шаблон вместо шаблона по умолчанию. Дополнительные сведения см. в разделе о [представлениях ошибок](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) в документации по Django.
 
 - Написание модульных тестов `tests.py`. Шаблоны проектов Visual Studio предоставляют отправные точки для них. Дополнительные сведения можно получить в статьях по [написанию первого приложения Django](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) и [тестированию Django](https://docs.djangoproject.com/en/2.0/topics/testing/) в документации по Django.
-
-- Развертывание веб-приложения на рабочий сервер, например в службу приложений Azure. См. статью [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), которая содержит сведения об определенных изменениях, необходимых для приложений Django.
 
 - Изменение приложения с SQLite на хранилище данных промышленного уровня, например PostgreSQL, MySQL и SQL Server (все из них могут размещаться на платформе Azure). Как описано в статье про [использование SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite отлично работает с сайтами с низким и средним уровнем трафика с менее чем 100 тысяч попаданий/день, но использовать большие объемы не рекомендуется. Кроме того, он работает только на одном компьютере, поэтому может использоваться в любом сценарии с несколькими серверами, таком как балансировка нагрузки и георепликация. Сведения о поддержке Django в других базах данных см. в разделе [Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup) (Настройка базы данных). Вы можете также использовать [пакет SDK Azure для Python](azure-sdk-for-python.md), чтобы работать со службами хранилища Azure, такими как таблицы и большие двоичные объекты.
 

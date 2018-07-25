@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967613"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977610"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Практическое руководство. Выбор активного параметра запуска для нагрузочного теста
 
@@ -30,7 +30,7 @@ ms.locfileid: "31967613"
 
 В редакторе тестовой нагрузки активный параметр запуска определяется с помощью суффикса "[Active]".
 
-## <a name="selecting-the-active-run-setting"></a>Выбор активных параметров запуска
+## <a name="select-the-active-run-setting"></a>Выбор активных параметров запуска
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Выбор активного параметра запуска в нагрузочном тесте
 
@@ -47,15 +47,15 @@ ms.locfileid: "31967613"
 > [!NOTE]
 > Можно переопределить активный набор параметров при помощи переменной среды `Test.UseRunSetting=<run setting name>`. Это полезно при запуске нагрузочного теста из командной строки или из пакетного файла. Это позволяет выбирать различные параметры запуска при открытии нагрузочного теста.
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Задание используемых параметров запуска из командной строки
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Задание используемых параметров запуска из командной строки
- Можно переопределить параметры запуска по умолчанию для загрузочного теста, установив переменную среды в командной строке:
+Можно переопределить параметры запуска по умолчанию для загрузочного теста, установив переменную среды в командной строке:
 
- **Set Test.UseRunSetting=PreProdEnvironment**
+**Set Test.UseRunSetting=PreProdEnvironment**
 
- Запустите тест:
+Запустите тест:
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>См. также
 

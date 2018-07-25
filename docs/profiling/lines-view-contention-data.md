@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c8aa176fe92cb4309990693063dcd27cf15a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843855"
 ---
-# <a name="lines-view---contention-data"></a>Представление "Строки" — данные о конфликтах
+# <a name="lines-view---contention-data"></a>Представление "Строки" — данные о состязаниях
 В представлении данных о конфликтах "Строки" перечисляются данные о производительности при выполнении инструкций во время сбора выборок в сеансе профилирования. В исходном файле инструкция может занимать несколько строк, а одна строка может включать несколько инструкций.  
   
  Оператор определяется следующими данными:  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/19/2018
 |**Конец исходной строки**|Номер строки исходного файла, которой заканчивается оператор.|  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка столбцов представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Строки"](../profiling/lines-view.md)   
  [Представление "Строки" — выборка](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Представление "Строки"](../profiling/lines-view-sampling-data.md)
