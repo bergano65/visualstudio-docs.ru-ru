@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c57229ea260ef2429273fab0d3220319b61c1dc7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946811"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179207"
 ---
 # <a name="create-forwarding-loggers"></a>Создание средства ведения журнала с перенаправлением
 Средства ведения журнала переадресации повышают эффективность ведения журналов, позволяя выбрать события, которые требуется отслеживать при сборке проектов в многопроцессорной системе. Включив эти средства ведения журнала переадресации, можно предотвратить переполнение центрального средства ведения журнала нежелательными событиями, замедление сборки и загромождение журнала.  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e435b420377c2b8a1cf3c2b85769a418a2c3e7c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f8fc3ce425f2eaf6052d1e301d23c00d3503daec
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945758"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179987"
 ---
 # <a name="build-loggers"></a>Средства ведения журнала сборки
 Средства ведения журнала позволяют настраивать выходные данные сборки и отображать сообщения, ошибки или предупреждения в ответ на определенные события сборки. Каждое средство ведения журнала существует в виде класса .NET, который реализует интерфейс <xref:Microsoft.Build.Framework.ILogger>, определенный в сборке *Microsoft.Build.Framework.dll*.  
@@ -70,8 +70,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="code"></a>Код  
  [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
   
-### <a name="comments"></a>Комментарии  
-  
 ## <a name="example"></a>Пример  
   
 ### <a name="description"></a>Описание:  
@@ -79,8 +77,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="code"></a>Код  
  [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
-  
-### <a name="comments"></a>Комментарии  
   
 ## <a name="see-also"></a>См. также  
  [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)   

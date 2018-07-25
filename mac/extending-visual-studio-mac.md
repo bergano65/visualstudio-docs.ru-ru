@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865101"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178264"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -38,7 +38,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 Пакеты расширения хранят метаданные о своем имени, версии, зависимостях и другие сведения в атрибутах C#. Add-in Maker создает два файла — `AddinInfo.cs` и `AssemblyInfo.cs` — для хранения и упорядочивания этих сведений. Пакеты расширения должны иметь в своем *атрибуте Addin* уникальный идентификатор и пространство имен:
 
-```
+```csharp
 [assembly:Addin (
    "DateInserter",
    Namespace = "DateInserter",
@@ -70,7 +70,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 Расширения команд определяются путем добавления записей в точку расширения `/MonoDevelop/Ide/Commands`. Мы определили расширение в `Manifest.addin.xml`, используя следующий код:
 
- ```
+ ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
   <command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
@@ -90,7 +90,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 Расширение CommandItem, которое подключается к точке расширения `/MonoDevelop/Ide/MainMenu/Edit`, показано в следующем фрагменте кода:
 
-```
+```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
   <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
@@ -102,7 +102,7 @@ CommandItem помещает команду, указанную в его атр
 
 `InsertDateHandler` является расширением класса `CommandHandler`. Он переопределяет два метода — `Update` и `Run`. Метод `Update` запрашивается каждый раз, когда команда отображается в меню или выполняется с помощью настраиваемых сочетаний клавиш. Изменив объект info, вы можете отключить команду, сделать ее невидимой, заполнить команды массива и т. п. Это метод `Update` отключает команды, если не удается найти активный *документ* с *TextEditor* для вставки текста:
 
-```
+```csharp
 protected override void Update (CommandInfo info)
 {
     info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
@@ -111,7 +111,7 @@ protected override void Update (CommandInfo info)
 
 Переопределять метод `Update` требуется лишь в том случае, когда имеется специальная логика для включения или скрытия команды. Метод `Run` выполняется каждый раз, когда пользователь выполняет команду, что в данном случае происходит, когда пользователь выбирает команду в меню правки. Этот метод вставляет дату и время в позиции курсора в текстовом редакторе:
 
-```
+```csharp
 protected override void Run ()
 {
   var editor = IdeApp.Workbench.ActiveDocument.Editor;
@@ -122,7 +122,7 @@ protected override void Run ()
 
 Объявите тип Command в качестве члена перечисления в `DateInserterCommands`:
 
-```
+```csharp
 public enum DateInserterCommands
 {
   InsertDate,

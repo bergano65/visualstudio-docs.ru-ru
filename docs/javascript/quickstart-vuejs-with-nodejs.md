@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fe0b8c2f8e6018924e3e85133158ae364a95bf3d
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924754"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131912"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого приложения Vue.js с помощью Visual Studio
 
@@ -110,3 +110,4 @@ ms.locfileid: "37924754"
 
 - Пройдите [учебник по Node.js и выпуску Express](../nodejs/tutorial-nodejs.md)
 - Пройдите [учебник по Node.js и React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)

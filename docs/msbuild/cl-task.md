@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b668e2a5f63011730cb731a4966df0bccd4721e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946005"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152621"
 ---
 # <a name="cl-task"></a>CL - задача
 Использует оболочку компилятора Visual C++ — *cl.exe*. Компилятор создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).  
@@ -799,8 +799,6 @@ ms.locfileid: "37946005"
      Если он имеет значение `true`, то выполняется отслеживание шаблонов доступа к файлу.  
   
      Дополнительные сведения см. в описании параметров **TLogReadFiles** и **TLogWriteFiles** в этой таблице.  
-  
-## <a name="remarks"></a>Примечания  
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

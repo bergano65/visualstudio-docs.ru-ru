@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67443cdfa640c0dca020feb34f10ec3a636c982e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924503"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131860"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio
 
@@ -90,7 +90,7 @@ ms.locfileid: "37924503"
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Развертывание приложения в службе приложений Azure](..//deployment/quickstart-deploy-to-azure.md)
+> [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)
 
-- [Руководство по Node.js и выпуску Express](../nodejs/tutorial-nodejs.md)
-- [Руководство по Node.js и React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- [Руководство по Node.js и выпуску Express](../javascript/tutorial-nodejs.md)
+- [Руководство по Node.js и React](../javascript/tutorial-nodejs-with-react-and-jsx.md)

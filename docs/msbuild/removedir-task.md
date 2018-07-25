@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af7c5f47edfb41f34637fc715b0d4008833c304c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e835d50e0c6a0168795409b91301faa289bf1dc5
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578137"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153680"
 ---
-# <a name="removedir-task"></a>Задача RemoveDir
+# <a name="removedir-task"></a>RemoveDir - задача
 Удаляет указанные каталоги и все содержащиеся в них файлы и подкаталоги.  
   
 ## <a name="parameters"></a>Параметры  
@@ -39,7 +39,7 @@ ms.locfileid: "31578137"
 |`RemovedDirectories`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит каталоги, которые были успешно удалены.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример удаляет каталоги, указанные в свойствах `OutputDirectory` и `DebugDirectory`. Эти пути указываются относительно каталога проекта.  
