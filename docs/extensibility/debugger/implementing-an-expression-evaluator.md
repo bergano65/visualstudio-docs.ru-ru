@@ -1,5 +1,5 @@
 ---
-title: Реализация вычислитель выражений | Документы Microsoft
+title: Реализация вычислителя выражений | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed1df74c187b3f0a93e1a1ec84e8803bc164d223
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bdf4f290c3312be234f491debe95f532c85802b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103348"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232511"
 ---
-# <a name="implementing-an-expression-evaluator"></a>Реализация вычислитель выражений
+# <a name="implement-an-expression-evaluator"></a>Реализация вычислителя выражений
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Вычисления выражения является сложное взаимодействие между модуль отладки (DE), символ поставщика услуг, объект модуля привязки и средство оценки выражений (Эстония) сам. Эти четыре компонента соединены с интерфейсов, реализованного в одном компоненте и использован другим.  
+ Вычисления выражения является сложным взаимодействием между модуль отладки (DE), поставщик символов (SP), объект модуля привязки и средство оценки выражений (EE). Эти четыре компонента соединены с интерфейсами, реализованный в одном компоненте и использованы другим.  
   
- EE принимает выражение из DE в виде строки и анализирует или вычисляет его. EE реализует следующие интерфейсы, которые могут использоваться DE.  
+ EE принимает выражение из DE в виде строки и анализирует и оценивает его. EE запускает следующие интерфейсы, которые могут использоваться DE:  
   
 -   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
 -   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- EE вызывает объект привязки, предоставляемые DE, для получения значения символов и объекты. EE использует следующие интерфейсы, реализуемые с DE:  
+ EE вызывает объект связыватель, предоставленный DE, чтобы получить это значение, символы и объектов. EE использует следующие интерфейсы, реализуемые с DE:  
   
 -   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
@@ -49,9 +49,9 @@ ms.locfileid: "31103348"
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- Реализует EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` предоставляет механизм для описания результат вычисления выражения, такие как локальную переменную, примитивом или объекте, в Visual Studio, которые затем отображаются соответствующие сведения в **локальные**,  **Контрольное значение**, или **Интерпретация** окна.  
+ Запускает EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` предоставляет механизм для описания результат вычисления выражения, такие как локальная переменная, примитив или объект для Visual Studio, которая затем отображает соответствующую информацию в **"Локальные"**, **контрольных значений** , или **Интерпретация** окна.  
   
- SP присваивается EE путем DE, когда он запрашивает сведения. SP реализует интерфейсы, которые описывают адреса и полей, таких как следующие интерфейсы, а также производных:  
+ SP присваивается EE путем DE, когда он запрашивает сведения. Хранимая процедура выполняется интерфейсы, которые описывают адреса и поля, такие как следующие интерфейсы, а также производных:  
   
 -   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
@@ -61,9 +61,9 @@ ms.locfileid: "31103348"
   
  EE использует все эти интерфейсы.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Стратегия реализации вычислителя выражений](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
- Определяет трехступенчатый процесс для реализации стратегии оценки (Эстония) выражения.  
+ Определяет трехшаговый процесс стратегия реализации вычислителя (EE) выражений.  
   
 ## <a name="see-also"></a>См. также  
- [Написание выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9198e39be5149440b09ebab5115e803d60716423
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080268"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231230"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Краткое руководство: Общие сведения о развертывании в Visual Studio
 
@@ -57,9 +57,9 @@ ms.locfileid: "39080268"
 
     Для приложений Python, также см. в разделе [Python — публикация в службе приложений Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-    Сведения о Импорт профиля публикации из службы приложений Azure в Visual Studio, см. в разделе [Импорт параметров публикации и развертывание в Azure](../deployment/tutorial-import-publish-settings-azure.md).
+    Краткое введение см. в разделе [публикация в Azure](quickstart-deploy-to-azure.md) и [опубликовать в Linux](quickstart-deploy-to-linux.md). Кроме того, см. в разделе [публикации приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Развертывание с использованием Git, см. в разделе [непрерывное развертывание ASP.NET Core в Azure с помощью Git](/aspnet/core/publishing/azure-continuous-deployment).
 
-    Краткое введение см. в разделе [публикация в Azure](quickstart-deploy-to-azure.md). Кроме того, см. в разделе [публикации приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Развертывание с использованием Git, см. в разделе [непрерывное развертывание ASP.NET Core в Azure с помощью Git](/aspnet/core/publishing/azure-continuous-deployment).
+    Сведения о Импорт профиля публикации из службы приложений Azure в Visual Studio, см. в разделе [Импорт параметров публикации и развертывание в Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     > [!NOTE]
     > Если у вас еще нет учетной записи Azure, вы можете [Зарегистрируйтесь здесь](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).

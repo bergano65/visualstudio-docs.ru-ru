@@ -1,5 +1,5 @@
 ---
-title: На основе запуска вложение | Документы Microsoft
+title: Вложение на основе запуска | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 892518cc92286f9415e39c96b6ed2afa8eb0d792
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 518a3f804298df6c0af98a6e5d2a6d851b645aee
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099380"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231708"
 ---
-# <a name="launch-based-attachment"></a>На основе запуска вложения
-На основе запуска вложения к программе выполняется автоматически. При запуске процесса, размещающего программа SDM, вложения на основе запуска следует путь, подобный метод вручную вложения. Сведения см. в разделе [присоединение к программе](../../extensibility/debugger/attaching-to-the-program.md).  
+# <a name="launch-based-attachment"></a>Вложение на основе запуска
+Вложение на основе запуска программы выполняется автоматически. При запуске процесса, размещающего программы, SDM вложение на основе запуска следует путь, у метода вручную вложения. Сведения см. в разделе [присоединения к программе](../../extensibility/debugger/attaching-to-the-program.md).  
   
 ## <a name="the-attaching-process"></a>Присоединение процесса  
- Основное отличие заключается в последовательность событий после **присоединение** вызвать, как показано ниже:  
+ Основное различие заключается в последовательность событий следующие **Attach** вызвать, как показано ниже:  
   
-1.  Отправить **IDebugEngineCreateEvent2** SDM объекта события. Дополнительные сведения см. в разделе [отправки событий](../../extensibility/debugger/sending-events.md).  
+1.  Отправить **IDebugEngineCreateEvent2** объект события для SDM. Дополнительные сведения см. в разделе [отправлять события](../../extensibility/debugger/sending-events.md).  
   
-2.  Вызовите `IDebugProgram2::GetProgramId` метод **IDebugProgram2** передается интерфейс **присоединение** метод.  
+2.  Вызовите `IDebugProgram2::GetProgramId` метод **IDebugProgram2** передается интерфейс **Attach** метод.  
   
-3.  Отправить **IDebugProgramCreateEvent2** объект события для уведомления SDM, локальной **IDebugProgram2** был создан объект, представляющий программу DE.  
+3.  Отправить **IDebugProgramCreateEvent2** объект события для уведомления SDM, локальной **IDebugProgram2** объект был создан для представления программы для DE.  
   
-4.  Отправить [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) объект события для уведомления SDM, для процесса, который запускается, создается новый поток.  
+4.  Отправить [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) объект события для уведомления SDM о том, что для процесса, запустившего создается новый поток.  
   
 ## <a name="see-also"></a>См. также  
  [Отправка необходимых событий](../../extensibility/debugger/sending-the-required-events.md)   
