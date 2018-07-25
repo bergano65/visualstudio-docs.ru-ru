@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a79e8c0f21a63bd5b64af69c2bf9778c07822d83
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574939"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081814"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Практическое руководство. Отображение списка элементов, разделенных запятыми
 При работе со списками элементов в [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) иногда бывает полезно отобразить содержимое этих списков в удобном для чтения виде. Либо у вас может быть задача, принимающая список элементов, разделенных специальной строкой. В обоих случаях вы можете указать строку разделителя для списка элементов.  
   
-## <a name="separating-items-in-a-list-with-commas"></a>Разделение элементов в списке запятыми  
+## <a name="separate-items-in-a-list-with-commas"></a>Разделение элементов в списке запятыми  
  По умолчанию [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] разделяет элементы в списке точками с запятой. Например, рассмотрим элемент `Message` со следующим значением:  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Когда список элементов `@(TXTFile)` содержит элементы App1.txt, App2.txt и App3.txt, сообщение имеет вид:  
+ Когда список элементов `@(TXTFile)` содержит элементы *App1.txt*, *App2.txt* и *App3.txt*, сообщение имеет вид:  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
@@ -45,7 +45,7 @@ ms.locfileid: "31574939"
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Пример  
- В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле Phrases.txt. В команде findstr искомые литеральные строки обозначены параметром **/c:**, поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `/c:`.  
+ В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле *Phrases.txt*. В команде findstr искомые литеральные строки обозначены параметром **/c:**, поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `/c:`.  
   
  Для этого примера эквивалентная команда в командной строке имеет вид:  
   

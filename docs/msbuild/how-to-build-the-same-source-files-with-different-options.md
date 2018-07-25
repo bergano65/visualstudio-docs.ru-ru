@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575612"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081661"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
 При сборке проектов вы часто компилируете одни и те же компоненты с разными параметрами сборки. Например, вы можете создать отладочную сборку с символьной информацией или сборку выпуска без такой информации, но с включенными оптимизациями. Можно также создать проект для выполнения на определенной платформе, например x86 или [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Во всех этих случаях основная часть параметров сборки остается без изменений, а управление конфигурацией сборки осуществляется с помощью всего нескольких параметров. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет использовать свойства и условия для создания различных конфигураций сборки.  
   
-## <a name="using-properties-to-modify-projects"></a>Использование свойств для изменения проектов  
+## <a name="use-properties-to-modify-projects"></a>Использование свойств для изменения проектов  
  Элемент `Property` определяет переменную, на которую имеется несколько ссылок в файле проекта, например, расположение временного каталога, или значения для свойств, используемых в нескольких конфигурациях, таких как отладочная сборка и сборка выпуска. Дополнительные сведения о свойствах см. в разделе [Свойства MSBuild](../msbuild/msbuild-properties.md).  
   
  Свойства можно использовать для изменения конфигурации сборки без редактирования файла проекта. Атрибут `Condition` элемента `Property` и элемент `PropertyGroup` позволяют изменять значения свойств. Дополнительные сведения об условиях [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] см. в разделе [Условия](../msbuild/msbuild-conditions.md).  
@@ -49,20 +49,20 @@ ms.locfileid: "31575612"
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
-## <a name="specifying-properties-on-the-command-line"></a>Указание свойств в командной строке  
+## <a name="specify-properties-on-the-command-line"></a>Указание свойств в командной строке  
  После составления такого файла проекта, который поддерживает несколько конфигураций, вам нужна возможность изменять эти конфигурации при сборке проекта. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет такую возможность, позволяя указывать свойства в командной строке с помощью параметра **/property** или **/p**.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Задание свойства проекта в командной строке  
   
 -   Используйте параметр **/property** с указанием свойства и его значения. Пример:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - или  
+    или  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,13 +70,13 @@ ms.locfileid: "31575612"
   
 -   Используйте параметр **/property** или **/p** с указанием свойств и их значений либо используйте один параметр **/property** или **/p**, указав несколько свойствами через точку с запятой (;). Пример:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
-     - или-  
+    или
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -91,13 +91,13 @@ ms.locfileid: "31575612"
   
  Чтобы создать отладочную версию проекта, введите:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  Чтобы создать розничную версию проекта, введите:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  Чтобы выполнить сборку проекта, введите следующую команду:  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   
