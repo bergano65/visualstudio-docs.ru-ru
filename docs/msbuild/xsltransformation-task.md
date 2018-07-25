@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6de215dd429b77d382f48da47554268ad1d488b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a18dff58b38dc80eade3ef030b4156b040cc8ce
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578511"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233078"
 ---
-# <a name="xsltransformation-task"></a>Задача XslTransformation
+# <a name="xsltransformation-task"></a>XslTransformation - задача
 Преобразует входные данные XML с помощью XSLT или скомпилированного XSLT и выводит результат на устройство вывода или в выходной файл.  
   
 ## <a name="parameters"></a>Параметры  
@@ -42,7 +42,7 @@ ms.locfileid: "31578511"
 |`XslInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входной файл XSLT.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   

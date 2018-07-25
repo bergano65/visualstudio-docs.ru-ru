@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10b53137135af32a350dad7acffd48f8b3074c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a2430d742c07483dd28ca1cd188d9695205e9c91
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570747"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231051"
 ---
-# <a name="xmlpeek-task"></a>Задача XmlPeek
+# <a name="xmlpeek-task"></a>XmlPeek - задача
 Возвращает из XML-файла значения, указанные в запросе XPath.  
   
 ## <a name="parameters"></a>Параметры  
@@ -40,7 +40,7 @@ ms.locfileid: "31570747"
 |`XmlInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входные данные XML в виде пути к файлу.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
