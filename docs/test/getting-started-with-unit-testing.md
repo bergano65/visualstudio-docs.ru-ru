@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5101040d52527a80c7531d4984ead5cb4061f70f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425219"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117255"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -125,7 +125,7 @@ ms.locfileid: "32425219"
 
    ![Присвоение имени проекту для библиотеки классов и его добавление](media/create3rdpartyunittest3.png)
 
-1. Установите подключаемый модуль. В **обозревателе решений** выберите проект библиотеки классов, а затем в его контекстном меню выберите пункт **Управление пакетами NuGet...**.
+1. Установите подключаемый модуль. В **обозревателе решений** выберите проект библиотеки классов, а затем в его контекстном меню выберите пункт **Управление пакетами NuGet**.
 
    ![Управление пакетами NuGet для установки подключаемого модуля](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ ms.locfileid: "32425219"
 
    ![Добавление ссылки на стороннюю платформу модульного тестирования в решение](media/create3rdpartyunittest6.png)
 
-1. В узле **Ссылки** проекта библиотеки классов выберите **Добавить ссылку...**.
+1. В узле **Ссылки** проекта библиотеки классов выберите **Добавить ссылку**.
 
    ![Добавление ссылки на проект](media/createunittest6.png)
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b21b6bf720a4604d2f7aec2ca717c825c5476db9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1041a298b7b195180e312e54aeadd666b478cb29
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577630"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946824"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Задача GetReferenceAssemblyPaths
 Возвращает пути к эталонным сборкам для различных версий .NET Framework.  
@@ -38,7 +38,7 @@ ms.locfileid: "31577630"
 |`TargetFrameworkMonikerDisplayName`|Необязательный выходной параметр `String`.<br /><br /> Задает отображаемое имя для моникера целевой платформы.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   

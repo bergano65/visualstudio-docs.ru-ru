@@ -1,7 +1,7 @@
 ---
 title: Руководство по работе с Python. Шаг 1 — создание проекта
 description: Общие сведения и шаг 1 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь приведены предварительные требования и описано создание проекта Python.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031713"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057015"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Работа с Python в Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Руководство. Работа с Python в Visual Studio
 
 Python — это популярный язык программирования, который отличается надежностью, гибкостью и простотой освоения. Его можно бесплатно использовать на любых операционных системах, и он поддерживается широким сообществом разработчиков. Кроме того, для него доступно множество бесплатных библиотек. Python поддерживает все способы разработки, включая веб-приложения, веб-службы, классические приложения, скрипты и научные вычисления. Его используют многие университеты, ученые, профессиональные и непрофессиональные разработчики.
 
@@ -73,7 +73,7 @@ Visual Studio обеспечивает первоклассную поддерж
 > [!div class="nextstepaction"]
 > [Написание и выполнение кода](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
 - [Проекты Python в Visual Studio](managing-python-projects-in-visual-studio.md)
 - [Сведения о языке Python на сайте python.org](https://www.python.org)

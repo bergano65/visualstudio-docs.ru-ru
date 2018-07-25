@@ -1,7 +1,7 @@
 ---
 title: Задачи MSBuild, относящиеся к Visual C++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 446326fb8219183774d3f90d70a0263e0fc057e0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0aaec01c24e68c42d2dc87e71875f664b7b61def
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573763"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056515"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Задачи MSBuild, относящиеся к Visual C++
 Задачи содержат код, который выполняется в процессе сборки. После установки Visual C++ доступны следующие задачи, помимо тех, которые устанавливаются вместе с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Дополнительные сведения см. в [обзоре MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).  
@@ -47,9 +47,12 @@ ms.locfileid: "31573763"
 |[Задача MT](../msbuild/mt-task.md)|Является оболочкой для инструмента манифеста Microsoft (mt.exe).|  
 |[Задача RC](../msbuild/rc-task.md)|Является оболочкой для средства компиляции ресурсов Microsoft Windows (rc.exe).|  
 |[Задача SetEnv](../msbuild/setenv-task.md)|Задает или удаляет значение указанной переменной среды.|  
-|[Задача VCMessage](../msbuild/vcmessage-task.md)|Заносит в журнал предупреждения и сообщения об ошибках, возникшие при сборке.|  
+|[Задача VCMessage](../msbuild/vcmessage-task.md)|Заносит в журнал предупреждения и сообщения об ошибках, возникшие при сборке. (Не расширяется. Только для внутреннего использования.)|  
 |[Задача XDCMake](../msbuild/xdcmake-task.md)|Является оболочкой для средства XML-документации (xdcmake.exe), которая помещает в XML-файл файлы комментариев (XDC-файлы) для документа XML.|  
-|[Задача XSD](../msbuild/xsd-task.md)|Создает оболочку инструмента определения схемы XML (xsd.exe), который создает файлы схемы или класса из источника.|  
+|[Задача XSD](../msbuild/xsd-task.md)|Создает оболочку инструмента определения схемы XML (xsd.exe), который создает файлы схемы или класса из источника. *См. примечание ниже.*|  
 |[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)|Описывает элементы системы MSBuild.|  
 |[Задачи](../msbuild/msbuild-tasks.md)|Описывает задачи, представляющие собой блоки кода, которые можно объединять для выполнения сборки.|  
 |[Написание задач](../msbuild/task-writing.md)|Создание задачи.|
+
+> [!NOTE]
+> В Visual Studio 2017 поддержка проектов C++ для xsd.exe признана нерекомендуемой. Вы можете продолжать использовать API **Microsoft.VisualC.CppCodeProvider**, вручную добавив **CppCodeProvider.dll** в глобальный кэш сборок.

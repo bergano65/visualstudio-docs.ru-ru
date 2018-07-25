@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238164"
 ---
 # <a name="markprofile"></a>MarkProfile
-Метод `MarkProfile` вставляет метку профилирования в VSP-файл. Для добавления метки должно быть активировано профилирование для потока, содержащего функцию `MarkProfile`.  
+Метод `MarkProfile` вставляет метку профилирования в *VSP*-файл. Для добавления метки должно быть активировано профилирование для потока, содержащего функцию `MarkProfile`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,9 +47,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|В случае успеха возвращается MARK_OK.|  
   
 ## <a name="remarks"></a>Примечания  
- Значение метки вставляется в VSP-файл при каждом выполнении кода, когда выполняется профилирование потока, содержащего функцию MarkProfile. MarkProfile можно вызывать многократно.  
+ Значение метки вставляется в *VSP*-файл при каждом выполнении кода, когда выполняется профилирование потока, содержащего функцию MarkProfile. MarkProfile можно вызывать многократно.  
   
- Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в VSP-файле.  
+ Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в *VSP*-файле.  
   
  Для потока, содержащего функцию метки профиля, должно быть включено состояние профилирования, чтобы вставить метку и комментарий с помощью команды Mark или функций API (CommentMarkAtProfile, CommentMarkProfile или MarkProfile).  
   
@@ -56,12 +57,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 >  Метод MarkProfile следует использовать только при профилировании методом инструментирования.  
   
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Сведения о функции  
- Заголовок: объявлен в файле VSPerf.h  
+ Заголовок: объявлен в файле *VSPerf.h*  
   
- Библиотека импорта: VSPerf.lib  
+ Библиотека импорта: *VSPerf.lib*  
   
 ## <a name="example"></a>Пример  
  Следующий код демонстрирует использование функции MarkProfile.  

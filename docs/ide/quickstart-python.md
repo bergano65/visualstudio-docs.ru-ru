@@ -1,7 +1,7 @@
 ---
 title: Краткое руководство. Создание веб-приложения Python с помощью Visual Studio
 description: В рамках этого краткого руководства вы создадите простое веб-приложение на Python с использованием Visual Studio и платформы Flask.
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b8668bbdb686b3c8c60380dd5592a2897a43b45b
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957149"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089429"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
 В рамках этого краткого (на 5–10 минут) знакомства с Visual Studio в качестве IDE для Python создается простое веб-приложение Python на платформе Flask. Вы создадите проект при помощи дискретных действий, которые помогут ознакомиться с базовыми функциями Visual Studio.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), если еще не сделали этого. В установщике выберите рабочую нагрузку **Разработка на Python**.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого. В установщике выберите рабочую нагрузку **Разработка на Python**.
 
 ## <a name="create-the-project"></a>Создание проекта
 
@@ -146,15 +146,12 @@ ms.locfileid: "33957149"
 
 Поздравляем с запуском вашего первого приложения Python из Visual Studio, в процессе которого вы немного ознакомились с особенностями использования Visual Studio в качестве среды IDE для Python!
 
-Так как приведенные в этом руководстве инструкции довольно общие, вы, вероятно, догадались, что их можно и нужно автоматизировать. Такая автоматизация выполняется при помощи шаблонов проектов Visual Studio. Нажмите кнопку ниже, чтобы узнать, как создается веб-приложение, похожее на созданное вами в рамках этой статьи, но с меньшим количеством шагов.
-
 > [!div class="nextstepaction"]
-> [Краткое руководство. Создание проекта Python на основе шаблона](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [Развертывание приложения в Службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Чтобы перейти к более полному учебнику по работе с Python в Visual Studio, включая использование интерактивного окна, отладку, визуализацию данных и работу с Git, нажмите кнопку ниже.
+Так как приведенные в этом руководстве инструкции довольно общие, вы, вероятно, догадались, что их можно и нужно автоматизировать. Такая автоматизация выполняется при помощи шаблонов проектов Visual Studio. Изучите [Краткое руководство. Создание проекта Python на основе шаблона](../python/quickstart-02-python-in-visual-studio-project-from-template.md), чтобы узнать, как создается веб-приложение, похожее на созданное вами в рамках этой статьи, но с меньшим количеством шагов.
 
-> [!div class="nextstepaction"]
-> [Руководство. Начало работы с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+Чтобы перейти к более полному учебнику по работе с Python в Visual Studio, включая использование интерактивного окна, отладку, визуализацию данных и работу с Git, изучите [Руководство. Начало работы с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Более подробно ознакомиться с возможностями Visual Studio можно по приведенным ниже ссылкам.
 

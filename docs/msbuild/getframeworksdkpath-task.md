@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d128df04ef13ea6ee4b5b20368b5932842cc3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3ce43a9b2acae5589e4b746ce4bf2b2a47b0111
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578693"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946837"
 ---
-# <a name="getframeworksdkpath-task"></a>Задача GetFrameworkSdkPath
+# <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath - задача
 Извлекает путь к [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
 ## <a name="task-parameters"></a>Параметры задачи  
- В следующей таблице приводятся параметры задачи `GetFrameworkSdkPath`.  
+ В следующей таблице приводятся параметры задачи `GetFrameworkSdkPath` .  
   
 |Параметр|Описание:|  
 |---------------|-----------------|  
@@ -41,7 +41,7 @@ ms.locfileid: "31578693"
 |`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к последнему пакету SDK для .NET при любой из его версий. В противном случае возвращает значение `String.Empty`.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример использует задачу `GetFrameworkSdkPath` для сохранения пути к [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] в свойстве `SdkPath`.  

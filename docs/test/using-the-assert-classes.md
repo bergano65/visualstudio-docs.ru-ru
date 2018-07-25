@@ -1,65 +1,54 @@
 ---
-title: Использование классов Assert для модульного тестирования в Visual Studio
-ms.date: 11/04/2016
+title: Методы и классы Assert MSTest
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - Assert classes
-- Assert statements
-- unit tests, Assert statements
+- Assert methods
 - unit tests, Assert classes
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91198e9b7048b384bf2095840abbd012042025ed
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844264"
 ---
-# <a name="use-the-assert-classes"></a>Использование классов Assert
+# <a name="use-assert-classes-for-unit-testing"></a>Использование классов Assert для модульного тестирования
 
-Классы Assert пространства имен UnitTestingFramework служат для проверки определенных функциональных возможностей. Метод модульного теста использует код метода в коде разработки, но докладывает о корректности поведения кода только в том случае, если включены операторы Assert.
+Классы Assert пространства имен <xref:Microsoft.VisualStudio.TestTools.UnitTesting> служат для проверки определенных функциональных возможностей. Метод модульного теста использует код метода в коде приложения, но сообщает о корректности поведения кода только в том случае, если включены операторы Assert.
 
 ## <a name="kinds-of-asserts"></a>Типы классов Assert
 
- В пространстве имен <xref:Microsoft.VisualStudio.TestTools.UnitTesting> имеется несколько типов классов Assert.
+В пространстве имен <xref:Microsoft.VisualStudio.TestTools.UnitTesting> имеется несколько типов классов Assert.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
+В методе теста можно вызывать любые методы класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>, например <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType>. Класс <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> содержит много методов для выбора, и многие из этих методов имеют несколько перегрузок.
 
- В методе теста можно вызывать любое число методов класса Assert, таких как Assert.AreEqual(). Класс Assert содержит много методов для выбора, и многие из этих методов имеют несколько перегрузок.
+### <a name="compare-strings-and-collections"></a>Сравнение строк и коллекций
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert>
+Класс <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> используется для сравнения коллекций объектов и проверки состояния коллекции.
 
- Класс CollectionAssert служит для сравнения коллекций объектов и проверки состояния одной или нескольких коллекций.
+Класс <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> используется для сравнения и проверки строк. Этот класс содержит ряд полезных методов, таких как <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=nameWithType>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Matches%2A?displayProperty=nameWithType> и <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.StartsWith%2A?displayProperty=nameWithType>.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert>
+### <a name="exceptions"></a>Исключения
 
- Класс StringAssert служит для сравнения строк. Этот класс содержит различные полезные методы, такие как StringAssert.Contains, StringAssert.Matches и StringAssert.StartsWith.
+Исключение <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> возникает в случае неудачного завершения теста. Причиной неудачного завершения теста может быть истечение времени ожидания, непредвиденное исключение или оператор Assert, создающий результат **Сбой**.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException>
-
- Исключение AssertFailedException возникает в случае невыполнения теста. Причиной невыполнения теста может быть истечение времени ожидания, непредвиденное исключение или оператор Assert, создающий результат "Ошибка".
-
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>
-
- Исключение AssertInconclusiveException возникает при каждом тесте с неопределенным результатом. Как правило, оператор Assert.Inconclusive добавляется к тесту, над которым еще ведется работа, для обозначения его неготовности к выполнению.
+Исключение <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException> возникает при каждом тесте с **неопределенным** результатом. Как правило, оператор <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> добавляется к тесту, над которым еще ведется работа, для обозначения его неготовности к выполнению.
 
 > [!NOTE]
-> Альтернативным вариантом является пометка теста, который еще не готов к выполнению, атрибутом Ignore. Однако недостатком в этом случае является невозможность просто создать отчет по числу тестов, которые еще необходимо реализовать.
+> В качестве альтернативы можно пометить тест, который еще не готов к выполнению, атрибутом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute>. Однако в этом случае будет невозможным легко создать отчет по числу тестов, которые еще не реализованы.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
+При написании нового класса исключения Assert наследование от базового класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> упрощает идентификацию исключения как ошибки подтверждения, а не непредвиденного исключения, выдаваемого тестом или рабочим кодом.
 
- При написании нового класса исключения Assert наследование этого класса от базового класса UnitTestAssertException упрощает определение исключения как ошибки подтверждения, а не непредвиденного исключения, выдаваемого тестом или рабочим кодом.
-
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
-
- Если необходимо, чтобы метод теста проверял, является ли исключение, возникающее в этом методе, на самом деле требуемым исключением, включите в метод теста атрибут ExpectedExceptionAttribute.
+Если требуется, чтобы метод теста проверял, действительно ли вызывается исключение, которое должно вызываться методом в коде приложения, включите в метод теста атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>.
 
 ## <a name="see-also"></a>См. также
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>
 - [Модульное тестирование кода](../test/unit-test-your-code.md)

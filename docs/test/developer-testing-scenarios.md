@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691863"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302940"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Инструменты, сценарии и возможности тестирования для разработчика
 
@@ -42,13 +42,13 @@ ms.locfileid: "34691863"
 Закодированные тесты пользовательского интерфейса позволяют создать полностью автоматические тесты для проверки функциональности и поведения пользовательского интерфейса приложения.
 Они автоматизируют тестирование пользовательского интерфейса в разных технологиях, включая приложения универсальной платформы Windows на основе XAML, приложения браузера и приложения SharePoint.
 
-Нужны ли вам лучшие в своем роде закодированные тесты пользовательского интерфейса либо универсальные тесты на основе браузера с использованием Selenium, Visual Studio предоставляет все необходимые для этого инструменты.
+Если вам нужны лучшие в своем роде закодированные тесты пользовательского интерфейса или универсальные тесты на основе браузера с использованием Selenium, Visual Studio предоставляет все необходимые для этого инструменты.
 
 ![Тестирование пользовательского интерфейса с помощью закодированных тестов](media/devtest-codeduitest.png)
 
-* [Использование модели автоматизации пользовательского интерфейса для тестирования кода](use-ui-automation-to-test-your-code.md)
+* [Использование автоматизации пользовательского интерфейса для тестирования кода](use-ui-automation-to-test-your-code.md)
 * [Начало работы по созданию, изменению и обслуживанию закодированного теста пользовательского интерфейса](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Тестирование приложений универсальной платформы Windows с помощью закодированных тестов пользовательского интерфейса](test-uwp-app-with-coded-ui-test.md)
+* [Тестирование приложений UWP с помощью закодированных тестов пользовательского интерфейса](test-uwp-app-with-coded-ui-test.md)
 * [Тестирование приложений SharePoint с помощью закодированных тестов пользовательского интерфейса](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Введение в использование закодированных тестов пользовательского интерфейса с помощью Visual Studio Enterprise (лаборатория)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
@@ -64,7 +64,7 @@ ms.locfileid: "34691863"
 
 * [Использование покрытия кода для определения объема протестированного кода](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Модульное тестирование, объем протестированного кода и анализ клонов кода с помощью Visual Studio (лаборатория)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
-* [Настройка анализа покрытия кода](customizing-code-coverage-analysis.md)
+* [Настройка анализа объема протестированного кода](customizing-code-coverage-analysis.md)
 
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Модульное тестирование на любой платформе с помощью высокопроизводительного обозревателя тестов
 

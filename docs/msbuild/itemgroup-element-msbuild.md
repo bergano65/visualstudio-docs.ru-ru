@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 963c53ed0cd1e74e3e641ac04012e5d0380980fe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90acef8176910d724a0b5419c0e91d685ca2d43e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569473"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078216"
 ---
 # <a name="itemgroup-element-msbuild"></a>Элемент ItemGroup (MSBuild)
 Содержит набор определенных пользователем элементов [Item](../msbuild/item-element-msbuild.md). Каждый элемент, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть указан как дочерний для элемента `ItemGroup`.  
@@ -42,7 +42,7 @@ ms.locfileid: "31569473"
 </ItemGroup>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -63,8 +63,6 @@ ms.locfileid: "31569473"
 |-------------|-----------------|  
 |[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 |[Целевой объект](../msbuild/target-element-msbuild.md)|Начиная с версии .NET Framework 3.5, элемент `ItemGroup` может находиться внутри элемента `Target`. Дополнительные сведения см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md).|  
-  
-## <a name="remarks"></a>Примечания  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показаны определяемые пользователем элементы коллекций `Res` и `CodeFiles`, объявленные внутри элемента `ItemGroup`. Каждый элемент в коллекции `Res` содержит определяемый пользователем дочерний элемент [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md).  

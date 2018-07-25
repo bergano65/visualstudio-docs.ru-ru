@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576044"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058650"
 ---
 # <a name="msbuild-task-reference"></a>Справочные сведения о задачах MSBuild
 Задачи содержат код, который выполняется в процессе сборки. Задачи в следующем списке входят в состав [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. После установки [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] станут доступны дополнительные задачи, используемые для создания проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Дополнительные сведения см. в статье [Задачи MSBuild, относящиеся к Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -88,6 +88,9 @@ ms.locfileid: "31576044"
   
  [Задача Delete](../msbuild/delete-task.md)  
  Удаляет указанные файлы.  
+
+ [Задача DownloadFile](../msbuild/downloadfile-task.md)  
+ Скачивает файл в заданное расположение.  
   
  [Задача Error](../msbuild/error-task.md)  
  Останавливает сборку и регистрирует ошибку в журнале событий на основании вычисленного условного оператора.  
@@ -200,6 +203,9 @@ ms.locfileid: "31576044"
  [Задача UnregisterAssembly](../msbuild/unregisterassembly-task.md)  
  Отменяет регистрацию указанных сборок для целей COM-взаимодействия.  
   
+ [Задача Unzip](../msbuild/unzip-task.md)  
+ Распаковывает архив `.zip` в заданное расположение.
+  
  [Задача UpdateManifest](../msbuild/updatemanifest-task.md)  
  Обновляет выбранные свойства в манифесте и выполняет повторное подписание.  
   
@@ -223,6 +229,9 @@ ms.locfileid: "31576044"
   
  [Задача XslTransformation](../msbuild/xsltransformation-task.md)  
  Преобразует входные данные XML с помощью *XSLT* или скомпилированного XSLT и выводит результат на устройство вывода или в выходной файл.  
+  
+  [Задача ZipDirectory](../msbuild/zipdirectory-task.md)  
+ Создает архив `.zip` из содержимого каталога.
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   

@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c030d001932d5b1cdeaa4c9b4a2ed82b321ee56f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6f06b360348ad06df6433c67a4cae7f543ea5ce
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815855"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Практическое руководство. Настройка столбцов представлений отчета
 Средства производительности в Visual Studio Team System Development Edition являются полностью встроенными в интегрированную среду разработки (IDE), что позволяет легко их использовать при каждой необходимости. Ниже перечислены представления, которые можно настраивать путем добавления, удаления и изменения порядка столбцов.  

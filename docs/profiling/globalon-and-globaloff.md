@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238008"
 ---
 # <a name="globalon-and-globaloff"></a>Параметры GlobalOn и GlobalOff
-Параметры **GlobalOff** и **GlobalOn** средства VSPerfCmd.exe позволяют приостанавливать и возобновлять профилирование для всех процессов и потоков в сеансе профилирования, управляемом из командной строки.  
+Параметры **GlobalOff** и **GlobalOn** средства *VSPerfCmd.exe* позволяют приостанавливать и возобновлять профилирование для всех процессов и потоков в сеансе профилирования, управляемом из командной строки.  
   
- Параметры **GlobalOn** и **GlobalOff** можно использовать как единственные параметры в командной строке VSPerfCmd.exe или включать в командную строку с параметрами **Start**, **Launch** или **Attach**.  
+ Параметры **GlobalOn** и **GlobalOff** можно использовать как единственные параметры в командной строке *VSPerfCmd.exe* или включать в командную строку, содержащую параметры **Start**, **Launch** или **Attach**.  
   
  Параметры **GlobalOn** и **GlobalOff** также могут сочетаться с параметрами **ProcessOn**, **ProcessOff**, **ThreadOn** и **ThreadOff**.  
   
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/11/2018
   
 -   **GlobalOn** немедленно устанавливает значение 1 глобального счетчика запусков и остановок, вследствие чего процесс профилирования возобновляется.  
   
- Дополнительные сведения см. в статье [Profiling Tools APIs](../profiling/profiling-tools-apis.md) (Интерфейсы API для средств профилирования).  
+ Дополнительные сведения см. в статье [Интерфейсы API для средств профилирования](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   

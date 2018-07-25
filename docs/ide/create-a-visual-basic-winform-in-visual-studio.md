@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746018"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117775"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Создание приложения Windows Forms на Visual Basic в Visual Studio
 
 В рамках этого краткого знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое приложение на Visual Basic с пользовательским интерфейсом на основе Windows.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали это.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали это.
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -33,11 +33,11 @@ ms.locfileid: "34746018"
 
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект...**.
+2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **Рабочий стол Windows**. На средней панели выберите **Приложение Windows Forms (.NET Framework)**. Назовите файл `HelloWorld`.
 
-     Если шаблон проекта **Приложение Windows Forms (.NET Framework)** отсутствует, закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты...**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
+     Если шаблон проекта **Приложение Windows Forms (.NET Framework)** отсутствует, закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 
      ![Рабочая нагрузка .NET Core в Visual Studio Installer](../ide/media/install-dot-net-desktop-env.png)
 

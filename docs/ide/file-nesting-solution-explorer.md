@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bc4ba4c019801c4461313149c0f3befacefa93d2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582603"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118149"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Настройка вложения файлов в обозревателе решений
 
@@ -116,7 +116,7 @@ ms.locfileid: "34582603"
 
 ![Примеры правил fileToFile](media/filenesting_filetofile.png) ![Действие правила fileToFile](media/filenesting_filetofile_effect.png)
 
-* Файл *bower.json* вложен в *.bowerrc* из-за правила **fileToFile**.
+* Файл *.bowerrc* вложен в *bower.json* из-за правила **fileToFile**.
 
 ### <a name="rule-order"></a>Порядок правил
 

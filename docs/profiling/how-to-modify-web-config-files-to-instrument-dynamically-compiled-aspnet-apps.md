@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336036"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844769"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 Вы можете использовать метод инструментирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для сбора подробных сведений о времени, данных о выделении памяти .NET и данных о времени существования объекта .NET из динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
- В этом разделе описывается внесение изменений в файл конфигурации web.config для включения возможности инструментирования и профилирования веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+ В этом разделе описывается внесение изменений в файл конфигурации *web.config* для включения возможности инструментирования и профилирования веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 > [!NOTE]
->  Изменять файл web.config не требуется при использовании метода профилирования с выборкой или при инструментировании предварительно скомпилированного модуля [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+>  При использовании метода профилирования с выборкой или при инструментировании предварительно скомпилированного модуля [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] изменять файл *web.config* не требуется.  
   
- Корень файла web.config — элемент **configuration**. Для инструментирования и профилирования динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] необходимо добавить или изменить следующие элементы:  
+ Корень файла *web.config* — элемент **configuration**. Для инструментирования и профилирования динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] необходимо добавить или изменить следующие элементы:  
   
 -   Элемент **configuration/runtime/assemblyBinding/dependentAssembly**, который идентифицирует сборку Microsoft.VisualStudio.Enterprise.ASPNetHelper, управляющую профилированием. Элемент **dependentAssembly** содержит два дочерних элемента: **assemblyIdentity** и **codeBase**.  
   
@@ -33,7 +33,7 @@ ms.locfileid: "34336036"
   
 -   Два элемента **add**, которые задают расположение средств профилирования, добавляются в раздел **configuration/appSettings**.  
   
- Рекомендуется создать копию исходного файла web.config, который можно использовать для восстановления конфигурации приложения.  
+ Рекомендуется создать копию исходного файла *web.config*, который можно использовать для восстановления конфигурации приложения.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Добавление сборки ASPNetHelper как элемента configuration/runtime/assemblyBinding/dependentAssembly  
   
@@ -176,7 +176,7 @@ ms.locfileid: "34336036"
 ```  
   
 ## <a name="example"></a>Пример  
- Ниже приведено полное содержимое файла web.config для включения инструментирования и профилирования динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. В примере предполагается, что перед изменением в файле отсутствовали другие параметры.  
+ Ниже приведено полное содержимое файла *web.config* для включения инструментирования и профилирования динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. В примере предполагается, что перед изменением в файле отсутствовали другие параметры.  
   
 ```xml  
 <?xml version="1.0"?>  

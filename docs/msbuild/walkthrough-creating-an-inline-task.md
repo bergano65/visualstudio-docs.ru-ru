@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f9813ce610979cd50a1ced7f510240299a612
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3bb1c2f43504a89ede3e9ad9e6f13c05130c9c34
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575797"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303057"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Пошаговое руководство. Создание встроенной задачи
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Начиная с .NET Framework 4, в файле проекта можно создавать встроенные задачи. Для размещения задачи не нужно создавать отдельную сборку. Дополнительные сведения см. в статье [Встроенные задачи MSBuild](../msbuild/msbuild-inline-tasks.md).  
@@ -65,7 +65,9 @@ ms.locfileid: "31575797"
   
 1.  В корневом узле `Project` измените атрибут `DefaultTargets` на `TestBuild`. Итоговый узел `Project` должен выглядеть следующим образом:  
   
-     `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
+    ```xml
+    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```
   
 2.  Добавьте следующую встроенную задачу и целевой объект в файл проекта непосредственно перед тегом `</Project>`.  
   
@@ -225,9 +227,13 @@ ms.locfileid: "31575797"
   
 3.  Изучите выходные данные в **окне командной строки**. Должны отобразиться следующие строки:  
   
-     `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
-     `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
  Этот код определяет встроенную задачу с именем RegX и содержит следующие три параметра:  
   
@@ -242,16 +248,16 @@ ms.locfileid: "31575797"
 ### <a name="handling-reserved-characters"></a>Обработка зарезервированных знаков  
  Средство синтаксического анализа MSBuild обрабатывает встроенные задачи как XML-файлы. Знаки с зарезервированным значением в XML, например "\<" и ">", обнаруживаются и обрабатываются, как если бы они были в формате XML, а не в формате исходного кода .NET. Чтобы включать зарезервированные знаки в выражениях кода, таких как `Files.Length > 0`, напишите элемент `Code`, чтобы его содержимое было включено в выражение CDATA, следующим образом:  
   
- `<Code Type="Fragment" Language="cs">`  
+ ```xml
+<Code Type="Fragment" Language="cs">  
+  <![CDATA[  
   
- `<![CDATA[`  
+  // Your code goes here.  
   
- `// Your code goes here.`  
-  
- `]]>`  
-  
- `</Code>`  
-  
+  ]]>  
+</Code>  
+```  
+
 ## <a name="see-also"></a>См. также  
  [Встроенные задачи MSBuild](../msbuild/msbuild-inline-tasks.md)   
  [Задачи](../msbuild/msbuild-tasks.md)   

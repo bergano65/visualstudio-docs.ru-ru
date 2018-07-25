@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 439afb9142e3e5ae795b0457f6405ba47227105f
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751050"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845309"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Исправление необнаруживаемых динамических параметров в веб-тесте производительности
 
@@ -198,7 +198,7 @@ ms.locfileid: "34751050"
 
      Как показано на вкладке ответов и как видно в ранее реализованном коде JavaScript, параметру строки CustomQueryString присвоено значение " jScriptQueryString___", к которому также добавляется значение, возвращаемое переменной sessionId.
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -265,4 +265,4 @@ ms.locfileid: "34751050"
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Вопрос. Необходимо ли настраивать Visual Studio для обнаружения динамических параметров?
 
- **Ответ.** Конфигурация Visual Studio по умолчанию предполагает обнаружение динамических параметров при записи веб-теста производительности. Однако если в параметрах Visual Studio отключено обнаружение динамических параметров или если тестируемое веб-приложение было изменено с добавлением дополнительных динамических параметров, можно [запустить обнаружение динамических параметров из редактора веб-тестов производительности](#FindingNonDetectableDynamicParamters_QA_ReRunDetection).
+ **Ответ.** Конфигурация Visual Studio по умолчанию предполагает обнаружение динамических параметров при записи веб-теста производительности. Однако если в параметрах Visual Studio отключено обнаружение динамических параметров или если тестируемое веб-приложение было изменено с добавлением дополнительных динамических параметров, можно запустить обнаружение динамических параметров из редактора веб-тестов производительности.

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 97f0d77e59b629523a34bbad55576219a9660109
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750699"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233988"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
@@ -301,7 +301,7 @@ private MessageEditorControl messageEditorControl
 
 1.  Создайте тестовый проект.
 
-2.  Создайте веб-тест производительности и введите для веб-службы URL-адрес в браузере, например http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Создайте веб-тест производительности и введите в браузере URL-адрес для веб-службы.
 
 3.  После завершения записи в редакторе веб-тестов производительности разверните запрос веб-службы и выберите узел **Текст строки** или **Двоичный основной текст**.
 

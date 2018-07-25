@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 617ff8d4ed59aebefd3a4456ad36f148b1ee3de0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2fdc7069ee0d422fd59b297b4b99a982d265e3a2
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844284"
 ---
-# <a name="instruction-pointers-ips-view---sampling-data"></a>Представление "Указатели инструкций" — данные выборки
+# <a name="instruction-pointers-ips-view---sampling-data"></a>Представление указателей инструкций — данные выборки
 В представлении "Указатели инструкций" данных выборки перечисляются данные о производительности инструкций сборки, непосредственно выполняемых во время сбора выборок в сеансе профилирования.  
   
 > [!NOTE]
@@ -43,4 +44,4 @@ ms.lasthandoff: 04/19/2018
 |**% эксклюзивных выборок**|Процент от всех выборок в сеансе профилирования, собранных во время выполнения инструкции.|  
   
 ## <a name="see-also"></a>См. также  
- [Instruction Pointers (IPs) View — Sampling](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md) (Представление "Указатели инструкций" — выборка)
+ [Представление "Указатели инструкций" — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

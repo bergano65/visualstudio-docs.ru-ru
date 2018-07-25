@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844437"
 ---
 # <a name="manage-channels"></a>Управление каналами
 В представлении **Потоки** в визуализаторе параллелизма можно организовать для процесса каналы для изучения определенных шаблонов. Вы можете сортировать каналы, перемещать их вверх и вниз, скрывать и отображать.  
@@ -62,4 +63,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>См. также  
  [Элемент управления масштабом (представление "Потоки")](../profiling/zoom-control-threads-view.md)   
  [Режим измерения (вкл./выкл.)](../profiling/measure-mode-on-off.md)   
- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+ [Представление потоков](../profiling/threads-view-parallel-performance.md)

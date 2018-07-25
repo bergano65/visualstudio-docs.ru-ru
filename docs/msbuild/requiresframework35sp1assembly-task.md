@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7317c6cdadb36d4221b98cd47cf92ca23e99cb52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5297d1a573542fecc55fa90983befa43df8f3f3d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572993"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155370"
 ---
-# <a name="requiresframework35sp1assembly-task"></a>Задача RequiresFramework35SP1Assembly
+# <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly - задача
 Определяет, требуется ли для приложения платформа .NET Framework 3.5 SP1.  
   
 ## <a name="parameters"></a>Параметры  
@@ -46,7 +46,7 @@ ms.locfileid: "31572993"
 |`TargetFrameworkVersion`|Необязательный параметр `String` .<br /><br /> Задает версию платформы .NET Framework, для которой предназначено приложение.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   

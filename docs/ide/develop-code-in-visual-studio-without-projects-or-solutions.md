@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746031"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117125"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений
 
@@ -89,7 +89,7 @@ ms.locfileid: "34746031"
 
 Если база кода содержит код на Python или JavaScript, вам не нужно настраивать файлы *JSON*, но нужно установить соответствующие рабочие нагрузки. Также следует настроить скрипт запуска:
 
-1. Установите рабочую нагрузку [Разработка Node.js](https://www.visualstudio.com/vs/node-js/) или [Разработка на Python](https://www.visualstudio.com/vs/python/). Для этого последовательно выберите **Средства** > **Получить средства и компоненты...** или закройте Visual Studio и запустите Visual Studio Installer.
+1. Установите рабочую нагрузку [Разработка Node.js](https://visualstudio.microsoft.com/vs/node-js/) или [Разработка на Python](https://visualstudio.microsoft.com/vs/python/). Для этого последовательно выберите **Средства** > **Получить средства и компоненты** или закройте Visual Studio и запустите Visual Studio Installer.
 
    ![Рабочие нагрузки для разработки на Node.js и Python](media/python_nodejs_workloads.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Выбор и установка интерпретаторов Python
 description: Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851855"
 ---
 # <a name="installing-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 05/07/2018
 
 Для **Visual Studio 2015 и более ранних версий** нужно вручную установить один из интерпретаторов.
 
-Visual Studio (любой версии) автоматически обнаруживает все установленные интерпретаторы Python и окружения для них, проверяя значения в реестре (в соответствии с [описанием регистрации Python в реестре Windows 514 PEP](https://www.python.org/dev/peps/pep-0514/)).
+Visual Studio (любой версии) автоматически обнаруживает все установленные интерпретаторы Python и окружения для них, проверяя значения в реестре (согласно [описанию регистрации Python в реестре Windows 514 PEP](https://www.python.org/dev/peps/pep-0514/)). Установки Python обычно находятся в разделе `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32-разрядная версия) и `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64-разрядная версия), затем в узлах для распределения, таких как "PythonCore" (CPython) и "ContinuumAnalytics" (Anaconda).
 
 Если Visual Studio не сможет обнаружить установленное окружение, см. раздел [Указание существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 

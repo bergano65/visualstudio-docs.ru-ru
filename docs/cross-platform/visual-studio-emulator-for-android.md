@@ -1,7 +1,7 @@
 ---
 title: Эмулятор Visual Studio для Android | Документация Майкрософт
 ms.custom: ''
-ms.date: 07/17/2017
+ms.date: 07/03/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
@@ -10,20 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e1e24a1482f40664d3f0c154d362c08bb9fa17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5fffd9ac865b281dc921997f48d7609a9429f64
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066714"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890231"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
+
 Эмулятор Visual Studio для Android — это приложение для настольного компьютера, которое эмулирует устройство Android. Он предоставляет виртуализированную среду, в которой доступны возможности отладки и тестирования приложений для Android без использования физического устройства. Он также предлагает изолированную среду для прототипов ваших приложений.  
 
 > [!IMPORTANT]
 > В большинстве случаев мы рекомендуем использовать эмулятор Google Android вместо эмулятора Android для Visual Studio:
-> - Когда требуются образы эмулятора Android для Visual Studio с Android 7.0 или более поздние версии (мы не планируем публиковать образы Android 6.0 и более ранних версий).
-> - При использовании Инструментов Visual Studio для Apache Cordova. Дополнительные сведения см. в статье [Запуск приложения Apache Cordova на Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
+> - Эмулятор Android для Visual Studio не поддерживается в версиях старше Visual Studio 2015.
+> - Образы эмулятора версии, старше Android 6.0, не доступны для эмулятора Android для Visual Studio.
+> - Google Android Emulator теперь поддерживает [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Инструменты Visual Studio для Apache Cordova работают с эмулятором Google Android Emulator. Дополнительные сведения см. в разделе [Запуск приложения Apache Cordova в Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator) (обратите внимание, что больше не нужно отключать Hyper-V, как описано в этой статье).
+>
+> Дополнительные сведения о настройке и использовании Google Android Emulator см. в разделе [Настройка Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
   
  Эмулятор Visual Studio для Android обеспечивает производительность, сравнимую с быстродействием реального устройства. Однако перед публикацией приложение рекомендуется проверить на физическом устройстве.  
   

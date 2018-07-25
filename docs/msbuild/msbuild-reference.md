@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 494ee58730ff8ebb427f0a42c8bdb3c3e079ed43
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570480"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081788"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] — это система сборки для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Далее приведены ссылки на разделы, содержащие справочную информацию по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)  
  В нем описаны элементы XML, которые составляют формат файла [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
@@ -53,13 +53,13 @@ ms.locfileid: "31570480"
  Описаны аргументы и параметры, которые могут использоваться с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
   
  [TARGETS-файлы](../msbuild/msbuild-dot-targets-files.md)  
- Описан файл целевых объектов, который включен в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ Описан *TARGETS*-файл, включенный в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)  
  Перечислены метаданные, которые создаются вместе с каждым элементом.  
   
- [Файлы ответа](../msbuild/msbuild-response-files.md)  
- Описаны RSP-файлы, содержащие параметры командной строки.  
+ [Файлы ответов](../msbuild/msbuild-response-files.md)  
+ Описаны *RSP*-файлы, содержащие параметры командной строки.  
   
  [Дополнительные ресурсы](../msbuild/additional-resources-for-msbuild.md)  
  Ссылки на веб-узлы и группы новостей по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -70,7 +70,7 @@ ms.locfileid: "31570480"
  [Знаки, требующие отключения их специального значения](../msbuild/special-characters-to-escape.md)  
  Список символов, которые должны использоваться в составе "escape-последовательностей" для обеспечения их правильной интерпретации. Escape-последовательность — это ряд символов, который означает, что следующие за ним символы должны интерпретироваться по-другому.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="see-also"></a>См. также  
  [Общие сведения о MSBuild. ](../msbuild/msbuild.md) Представляет [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] и ссылки на разделы, в которых объясняется, как использовать его для создания проектов.  
   
  <xref:Microsoft.Build.Conversion>  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a754f5aef53eed581deb9ccafa0bf5c453d8086d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eea3fbb882a2ed2b8036b6fe5bbb280d99c0f270
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568354"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177037"
 ---
 # <a name="fileclassifier-task"></a>Задача FileClassifier
 Задача <xref:Microsoft.Build.Tasks.Windows.FileClassifier> классифицирует набор исходных ресурсов как ресурсов, которые будут внедрены в сборку. Если ресурс является нелокализуемым, он внедряется в основную сборку приложения, в противном случае — во вспомогательную сборку.  
@@ -70,4 +70,4 @@ ms.locfileid: "31568354"
  [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Построение приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+ [Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

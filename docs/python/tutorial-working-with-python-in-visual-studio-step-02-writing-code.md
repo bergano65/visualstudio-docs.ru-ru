@@ -1,7 +1,7 @@
 ---
 title: Руководство по работе с Python. Шаг 2 — создание и выполнение кода
 description: Шаг 2 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь описано редактирование кода и запуск проекта.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031554"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174845"
 ---
-# <a name="step-2-writing-and-running-code"></a>Шаг 2. Написание и выполнение кода
+# <a name="step-2-write-and-run-code"></a>Шаг 2. Написание и запуск кода
 
 **Предыдущий шаг: [создание проекта Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
@@ -91,9 +91,9 @@ ms.locfileid: "32031554"
 > [!div class="nextstepaction"]
 > [Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Дополнительные сведения
+## <a name="go-deeper"></a>Дополнительные подробности
 
-- [Редактирование кода](editing-python-code-in-visual-studio.md)
+- [Изменить код](editing-python-code-in-visual-studio.md)
 - [Форматирование кода](formatting-python-code.md)
 - [Рефакторинг кода](refactoring-python-code.md)
-- [Использование PyLint](linting-python-code.md)
+- [Использование PyLint](linting-python-code.md)

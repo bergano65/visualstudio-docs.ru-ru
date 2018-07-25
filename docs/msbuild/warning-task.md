@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c717cc1bc744438afd277e5f154fdcd8852e8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a837e41a3aca165f638be5adb578728e9f6d91e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568440"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755789"
 ---
 # <a name="warning-task"></a>Задача Warning
 Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.  

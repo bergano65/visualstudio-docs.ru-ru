@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41b7812db05b61c351346e5f0dcfa1bf4bd7bd1f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9dcadfdbfa52815fdd6d88f78afb88d421e203c7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237914"
 ---
 # <a name="gpu-activity-graph"></a>Граф активности GPU
 Граф активности GPU в визуализаторе параллелизма отображает уровень активности DirectX в системе, измеренный по числу ядер DirectX, которые используются в динамике по времени.  Граф не показывает, какие конкретные ядра были использованы.  Ядро считается используемым, если оно выполняет какую-либо работу графического процессора.  
@@ -29,4 +30,4 @@ ms.lasthandoff: 04/19/2018
  Белый цвет указывает на наличие неиспользуемых ядер DirectX в системе. Эти ядра доступны для процесса, если вам удастся найти дополнительные возможности для их использования. Некоторые ядра могут использоваться только для определенных видов задач.  
   
 ## <a name="see-also"></a>См. также  
- [Представление использования](../profiling/utilization-view.md)
+ [Представление "Использование"](../profiling/utilization-view.md)

@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e54f9e8edd3295b87cbf6bf3c52a1874d1db89d9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7906cce0f8c9a2ac490f0877c539fbfc1b8e4b72
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576733"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945473"
 ---
-# <a name="createcsharpmanifestresourcename-task"></a>Задача CreateCSharpManifestResourceName
-Создает имя манифеста в стиле [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] на основе заданного имени RESX-файла или другого ресурса.  
+# <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName - задача
+Создает имя манифеста в стиле [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] на основе заданного имени *RESX*-файла или другого ресурса.  
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры [задачи CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).  
@@ -40,9 +40,9 @@ ms.locfileid: "31576733"
 |`ResourceFilesWithManifestResourceNames`|Необязательный параметр вывода `String`, доступный только для чтения.<br /><br /> Возвращает имя файла ресурса, содержащее имя ресурса манифеста.|  
   
 ## <a name="remarks"></a>Примечания  
- [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) определяет имя соответствующего ресурса манифеста, которое будет назначено указанному RESX-файлу или другому файлу ресурсов. Задача присваивает логическое имя файлу ресурсов, а затем присоединяет его к параметру вывода в виде метаданных.  
+ [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) определяет имя соответствующего ресурса манифеста, которое будет назначено указанному *RESX*-файлу или другому файлу ресурсов. Задача присваивает логическое имя файлу ресурсов, а затем присоединяет его к параметру вывода в виде метаданных.  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   

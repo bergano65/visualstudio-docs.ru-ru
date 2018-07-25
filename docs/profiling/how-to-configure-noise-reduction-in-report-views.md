@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ec4a797b7018a7a9e017760afd8849912cd35
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815188"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Практическое руководство. Настройка подавления шума для представлений отчетов
 В отчетах о производительности можно настроить снижение шума, ограничив количество данных, выводимых в представлениях дерева вызовов и выделений. При использовании функции подавления шума проблемы производительности становятся более наглядными. Это удобно при анализе отчетов о производительности.  
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/19/2018
 4.  Нажмите кнопку **ОК**.  
   
 ## <a name="see-also"></a>См. также  
- [Настройка представлений отчетов средств производительности](../profiling/customizing-performance-tools-report-views.md)   
+ [Настройка представлений отчетов средств оценки производительности](../profiling/customizing-performance-tools-report-views.md)   
  [Практическое руководство. Исключение и включение малых функций при инструментировании](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Представление "Дерево вызовов"](../profiling/call-tree-view.md)   
  [Представление "Выделения"](../profiling/dotnet-memory-allocations-view.md)

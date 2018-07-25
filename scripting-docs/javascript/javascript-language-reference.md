@@ -22,17 +22,20 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 981e04d94ac803c76705cd7014f5d29721188512
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24569304"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962662"
 ---
 # <a name="javascript-language-reference"></a>Справочник по языку JavaScript
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] — это скриптовой язык, который можно внедрять в веб-страницы и другие приложения.  
   
  В данной документации описывается реализация JavaScript корпорацией Microsoft. Эта реализация совместима с 5-м выпуском спецификации языка ECMAScript. Она также предоставляет дополнительные функции, не входящие в стандарты ECMA.  
+
+> [!NOTE]
+> Мы подключили помощь сообщества, чтобы сделать [веб-документы MDN](https://developer.mozilla.org/en-US/) централизованным ресурсом разработки в Интернете, перенаправляя все (более 500 страниц) справочные материалы по API JavaScript корпорации Майкрософт с сайта docs.microsoft.com в их аналоги в MDN. Подробные сведения см. в этом [объявлении](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
   
  Код [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] можно использовать в браузерных приложениях вместе с HTML, CSS и моделью DOM, представляющей объекты HTML и браузера.  
   
@@ -53,21 +56,6 @@ ms.locfileid: "24569304"
 -   Сведения об использовании API среды выполнения Windows с JavaScript см. в разделе [Using the Windows Runtime in JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md).  
   
  Редактор JavaScript в Visual Studio обеспечивает поддержку IntelliSense. Дополнительные сведения см. в разделе [IntelliSense для JavaScript](http://go.microsoft.com/fwlink/p/?LinkId=256499).  
-  
-## <a name="in-this-section"></a>Содержание  
- В следующих подразделах приводятся более подробные сведения о JavaScript.  
-  
- [Новые возможности JavaScript](../javascript/what-s-new-in-javascript.md)  
- Описание новых возможностей в JavaScript.  
-  
- [Основы JavaScript](../javascript/javascript-fundamentals.md)  
- Введение в основные конструкции языка JavaScript.  
-  
- [Расширенный язык JavaScript](../javascript/advanced/advanced-javascript.md)  
- Рассматриваются дополнительные функции JavaScript, такие как рекурсия, массивы, устранение неполадок и т. д.  
-  
- [Справочник по JavaScript](../javascript/reference/javascript-reference.md)  
- Описание элементов языка JavaScript.  
   
 ## <a name="see-also"></a>См. также  
  [Модель DOM](http://go.microsoft.com/fwlink/?LinkId=148095)

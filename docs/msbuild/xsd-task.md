@@ -1,7 +1,7 @@
 ---
 title: Задача XSD | Документы Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -22,15 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571199"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057376"
 ---
 # <a name="xsd-task"></a>Задача XSD
 Создает оболочку инструмента определения схемы XML (xsd.exe), который создает файлы схемы или класса из источника.  
+
+> [!NOTE]
+> В Visual Studio 2017 поддержка проектов C++ для xsd.exe признана нерекомендуемой. Вы можете продолжать использовать API **Microsoft.VisualC.CppCodeProvider**, вручную добавив **CppCodeProvider.dll** в глобальный кэш сборок. 
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описываются параметры задачи **XSD**.  

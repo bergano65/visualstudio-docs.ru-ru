@@ -17,11 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 8634017862a12b3a399f003d6f16c9689b7aaa20
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 61c07c92f751a768451414e6bef876cbc22ec962
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281255"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Каталог компонентов для Visual Studio Build Tools 2017
 
@@ -350,7 +351,7 @@ Microsoft.VisualStudio.Component.VC.Tools.14.13 | Набор инструмен�
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ниже приведены несколько дополнительных вариантов:
 
@@ -361,6 +362,7 @@ Microsoft.VisualStudio.Component.VC.Tools.14.13 | Набор инструмен�
 
 ## <a name="see-also"></a>См. также
 
+* [Build Tools для Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017#build-tools-for-visual-studio-2017)
 * [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

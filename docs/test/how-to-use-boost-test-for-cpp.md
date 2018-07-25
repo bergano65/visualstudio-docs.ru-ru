@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751628"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945488"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Использование Boost.Test для C++ в Visual Studio
 
@@ -48,7 +48,7 @@ ms.locfileid: "34751628"
 
 1. Новый файл содержит пример метода теста. Создайте проект, чтобы **обозреватель тестов** смог обнаружить этот метод.
 
-Шаблон элемента использует вариант Boost.Test с одним заголовком, но вы можете изменить путь в #include, чтобы указать автономный вариант библиотеки. Дополнительные сведения см. в разделе [Добавление директив include](#add_include_directives).
+Шаблон элемента использует вариант Boost.Test с одним заголовком, но вы можете изменить путь в #include, чтобы указать автономный вариант библиотеки. Дополнительные сведения см. в разделе [Добавление директив include](#add-include-directives).
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Создание тестового проекта (Visual Studio 2017 версии 15.5)
 
@@ -61,7 +61,7 @@ ms.locfileid: "34751628"
 1. Присвойте проекту имя и нажмите кнопку **ОК**.
 1. Удалите функцию `main` из CPP-файла.
 
-1. Если вы используете версию Boost.Test с одним заголовком или динамическую версию библиотеки, перейдите к разделу [Добавление директив #include](#add_include_directives). Если вы используете статическую версию библиотеки, вам нужно выполнить некоторые дополнительные настройки.
+1. Если вы используете версию Boost.Test с одним заголовком или динамическую версию библиотеки, перейдите к разделу [Добавление директив #include](#add-include-directives). Если вы используете статическую версию библиотеки, вам нужно выполнить некоторые дополнительные настройки.
 
    1. Чтобы изменить файл проекта, сначала выгрузите его. В **обозревателе решений** щелкните узел проекта правой кнопкой мыши и выберите пункт **Выгрузить проект**. Затем щелкните правой кнопкой мыши узел проекта и выберите **Изменить <имя\>.vcxproj**.
 
@@ -112,7 +112,7 @@ ms.locfileid: "34751628"
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 
-BOOST_AUTO_TEST_CASE(my\_boost_test)
+BOOST_AUTO_TEST_CASE(my_boost_test)
 {
     std::string expected_value = "Bill";
 
