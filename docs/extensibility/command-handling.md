@@ -1,5 +1,5 @@
 ---
-title: Обработка команд | Документы Microsoft
+title: Обработка команд | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 542277c5d8ab1b9b130f31bbb06215d8da7bc2ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a155927bb69c55c15a06cb058692038c8b309a30
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099962"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230873"
 ---
 # <a name="command-handling"></a>Обработка команд
-В редакторе можно определить новые команды. Обычно в меню, на панели инструментов или в контекстном меню отображаются команды.  
+В редакторе можно определить новые команды. Команды обычно отображаются в меню, на панели инструментов или в контекстном меню.  
   
- Дополнительные сведения об определении команды и меню см. в разделе [команд, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Дополнительные сведения об определении команды и меню, см. в разделе [команд, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- Служба языка можно контролировать, какие контекстные меню отображаются в редакторе, перехватывая <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> перечисления. Кроме того можно управлять отдельно для каждого маркера в контекстном меню. Дополнительные сведения см. [важные команды для фильтров службы языка](../extensibility/internals/important-commands-for-language-service-filters.md).  
+ Языковая служба можно контролировать, какие контекстные меню отображаются в редакторе, перехватывая <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> перечисления. Кроме того можно управлять отдельно для каждого маркера в контекстном меню. Дополнительные сведения см. в разделе [важные команды для фильтров языковой службы](../extensibility/internals/important-commands-for-language-service-filters.md).  
   
-## <a name="adding-commands-to-the-editor-context-menu"></a>Добавление команд в контекстное меню редактора  
- Добавление команды в контекстное меню, сначала необходимо определить набор команд меню, принадлежащих к определенной группе. Следующий пример взят из файла vsct, в рамках этого пошагового руководства [Пошаговое руководство: Добавление функции специализированного редактора](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+## <a name="add-commands-to-the-editor-context-menu"></a>Добавление команд в контекстное меню редактора  
+ Добавление команды в контекстное меню, необходимо сначала определить набор команд меню, принадлежащих к определенной группе. Следующий пример взят из *.vsct* файл, созданный в ходе этого пошагового руководства [Пошаговое руководство: Добавление компонентов в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Меню guid = «guidCustomEditorCmdSet» id = «IDMX_RTF» приоритет = «0x0000» type = «Контекст» >  
+ \<Guid меню = «guidCustomEditorCmdSet» id = «IDMX_RTF» priority = «0x0000» type = «Контекст» >  
   
  \<Идентификатор guid родительского = «guidCustomEditorCmdSet» id = «0» / >  
   
@@ -38,17 +38,17 @@ ms.locfileid: "31099962"
   
  \<ButtonText > CustomEditor контекстное меню\</ButtonText >  
   
- \<Имя_команды > CustomEditorContextMenu\</CommandName >  
+ \<CommandName > CustomEditorContextMenu\</CommandName >  
   
  \</ Строки >  
   
- \<-Меню >  
+ \</ Меню >  
   
- \<-Меню >  
+ \</ Меню >  
   
- Текст выше добавляет команды контекстного меню с текстом **CustomEditor контекстное меню**. Идентификатор GUID меню — набора команд, созданного в этом редакторе, что тип является «Контекст».  
+ Текст выше добавляет команды контекстного меню с текстом **CustomEditor контекстное меню**. Идентификатор GUID меню является частью набора команд, которая создается с этим редактором. Тип — «Контекст».  
   
- Можно также использовать стандартные команды, которые не обязательно должны быть определены в vsct-файле. Например, при просмотре файла EditorPane.cs, созданной с помощью шаблона пакета Visual Studio выясниться, что набор стандартных команд, таких как <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> определяется <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, обрабатываются в обработчики команд, например метода onSelectAll.  
+ Также можно использовать стандартные команды, которые не должны быть определены в *.vsct* файла. Например, проверить *EditorPane.cs* файл, созданный с помощью шаблона пакета Visual Studio. Вы увидите, что набор стандартных команд, таких как <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> определяется <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, обрабатываются в обработчиков команд, таких как `onSelectAll` метод.  
   
 ## <a name="see-also"></a>См. также  
- [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: m_stateObject поле | Документы Microsoft
+title: m_stateObject поле | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79313460d380b2b505f6fa75f35351811ddaa470
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d33879ca8aaaba08288f9e16d54ab462d92f67b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097463"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231321"
 ---
-# <a name="mstateobject-field"></a>m_stateObject поля
-Объект, представляющий данные, будут использоваться действие.  
+# <a name="mstateobject-field"></a>поле m_stateObject
+Объект, представляющий данные, которые будет использовать действие.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в *mscorlib.dll*)  
   
- Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,7 +36,7 @@ ms.locfileid: "31097463"
 ```  
   
 ## <a name="remarks"></a>Примечания  
- Это `state` параметр в <xref:System.Threading.Tasks.Task.%23ctor%2A> конструктора. Это также резервное поле для <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> свойства.  
+ Это `state` параметр в <xref:System.Threading.Tasks.Task.%23ctor%2A> конструктор. Это также резервное поле для <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> свойство.  
   
 ## <a name="see-also"></a>См. также  
- [Task-класс](../../extensibility/debugger/task-class-internal-members.md)
+ [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

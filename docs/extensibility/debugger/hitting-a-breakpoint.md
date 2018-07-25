@@ -1,5 +1,5 @@
 ---
-title: Достигнув точки останова | Документы Microsoft
+title: Попадание в точку останова | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4788f8a038a274d6d94b4edf368e30ef495665
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a9b110abdaf0ebfaed720dd5d09c0e215a6b2e7
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109146"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231559"
 ---
-# <a name="hitting-a-breakpoint"></a>Достигнув точки останова
-Ниже описан процесс, когда модуль отладки (DE) попадает на точку останова во время выполнения или шаг с заходом:  
+# <a name="hit-a-breakpoint"></a>Попадание в точку останова
+В следующем разделе описывается процесс, когда модуль отладки (DE) попадает на точку останова во время выполнения или шаг с заходом:  
   
-## <a name="troubleshooting-a-hit-breakpoint"></a>Устранение неполадок попаданий точки останова  
+## <a name="troubleshoot-a-hit-breakpoint"></a>Устранение неполадок попаданий точки останова  
   
 1.  Отправляет DE [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) интерфейс как **EVENT_SYNC_STOP**.  
   
-2.  Диспетчер сеансов отладки (SDM) вызывает [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) для получения точки останова, который был нажат.  
+2.  Диспетчер отладки сеансов (SDM) вызывает [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) получить точку останова, который был нажат.  
   
 ## <a name="see-also"></a>См. также  
  [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,5 @@
 ---
-title: Константы COM в управляемом коде | Документы Microsoft
+title: Константы COM в управляемом коде | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a8c6cbe2b3a2b5fa559a74dd165b7a729b814d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101892"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231540"
 ---
 # <a name="com-constants-in-managed-code"></a>Константы COM в управляемом коде
-Managed Package Framework (MPF) доступны некоторые стандартные константы COM в управляемый код. Ниже перечислены эти константы в качестве справочной информации.  
+Managed Package Framework (MPF) доступны некоторые стандартные константы COM в управляемый код. Ниже перечислены эти константы для справки.  
   
-## <a name="boolean-hresult-values"></a>Значения типа Boolean HRESULT  
+## <a name="boolean-hresult-values"></a>Логическое значение HRESULT значения  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
@@ -92,7 +92,7 @@ Managed Package Framework (MPF) доступны некоторые станда
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>  
   
-## <a name="ole-dispatch-errors"></a>Ошибок отправки OLE  
+## <a name="ole-dispatch-errors"></a>Ошибки диспетчера OLE  
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>  
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>  

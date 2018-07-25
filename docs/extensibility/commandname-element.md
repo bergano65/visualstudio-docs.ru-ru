@@ -1,5 +1,5 @@
 ---
-title: Элемент CommandName | Документы Microsoft
+title: Элемент CommandName | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a18d5f15ca4c8c258e57a1018b3841b3a47746f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca5f38febab608aedf794fb02dbfbc65debbfc5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097618"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230928"
 ---
 # <a name="commandname-element"></a>Элемент CommandName
-`CommandName` Элемент указывает текст, отображаемый в категории «клавиатура» **параметры** диалоговое окно и в **команды** списка в **Настройка** диалоговое окно поле.  
+`CommandName` Элемент указывает текст, отображаемый в категории «клавиатура» **параметры** диалоговое окно и в **команды** в списке **Настройка** диалоговое окно поле.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,7 +30,7 @@ ms.locfileid: "31097618"
 <CommandName>MyCommand</CommandName>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -41,9 +41,9 @@ ms.locfileid: "31097618"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[Элемент Strings](../extensibility/strings-element.md)|Группирует текстовые элементы, такие как `ButtonText` и `CommandName`.|  
+|[Элемент strings](../extensibility/strings-element.md)|Группирует элементы текста, таких как `ButtonText` и `CommandName`.|  
   
 ## <a name="see-also"></a>См. также  
- [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

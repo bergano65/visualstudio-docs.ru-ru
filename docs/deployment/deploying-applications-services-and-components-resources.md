@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757166"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232177"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Общие сведения о развертывании в Visual Studio
 
@@ -42,7 +42,7 @@ ms.locfileid: "36757166"
 
 ## <a name="azure-app-service"></a>Служба приложений Azure
 
-[Служба приложений Azure](/azure/app-service/app-service-web-overview) помогает разработчикам быстро создавать множество масштабируемых веб-приложений и служб без поддержки инфраструктуры.
+[Служба приложений Azure](/azure/app-service/app-service-web-overview) и [службы приложений на платформе Linux](/azure/app-service/containers/app-service-linux-intro) помогут разработчикам быстро создавать разнообразные масштабируемых веб-приложений и служб без поддержки инфраструктуры.
 
 Можно определить вычислительная мощность службы приложений, выбрав [ценовой категории или плана](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) для размещающей службы приложений. У вас есть несколько Web apps (и другие типы приложений), совместно использовать ту же службу приложений без изменения ценовой категории. Например можно разместить разработки, промежуточной и рабочей веб-приложений на ту же службу приложений.
 
@@ -57,7 +57,7 @@ ms.locfileid: "36757166"
 
 > Если вы хотите использовать службу приложений Azure в своем центре обработки данных или на других локальных компьютерах, воспользуйтесь для этого [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Дополнительные сведения о публикации в службе приложений см. в разделе [краткое руководство. Публикация в службе приложений Azure](quickstart-deploy-to-azure.md).
+Дополнительные сведения о публикации в службе приложений см. в разделе [краткое руководство. Публикация в службе приложений Azure](quickstart-deploy-to-azure.md) и [краткое руководство. Публикация ASP.NET Core для Linux](quickstart-deploy-to-linux.md).
 
 ## <a name="azure-virtual-machines"></a>Виртуальные машины Azure
 

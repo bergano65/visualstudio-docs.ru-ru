@@ -1,5 +1,5 @@
 ---
-title: Оценки выражения окна контрольных значений | Документы Microsoft
+title: Вычисление выражения окна контрольных значений | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,51 +15,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb632b484659c3bc901142b35ab52d25b8067fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105804"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232107"
 ---
-# <a name="evaluating-a-watch-window-expression"></a>Оценки выражения окна контрольных значений
+# <a name="evaluate-a-watch-window-expression"></a>Оценка выражения окна контрольных значений
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Когда выполнение приостанавливается, Visual Studio вызывает модуль отладки (DE), чтобы определить текущее значение каждого выражения в списке контрольных значений. DE вычисляет каждое выражение, с помощью вычислитель выражений (EE) и Visual Studio отображает его значение в **Контрольные значения** окна.  
+ Когда выполнение приостанавливается, Visual Studio вызывает модуль отладки (DE), чтобы определить текущее значение каждого выражения в его список наблюдения за. DE вычисляет каждое выражение, с помощью вычислителя выражений (EE) и Visual Studio отображает его значение в **Watch** окна.  
   
- Ниже приведен обзор порядок оценки контрольного списка выражения:  
+ Ниже приведен обзор порядок оценки выражения контрольных значений списка.  
   
-1.  Visual Studio вызывает DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) для получения контексте выражения, который может использоваться для вычисления выражений.  
+1.  Visual Studio вызывает DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) для получения контексте выражения, который может использоваться для оценки выражений.  
   
-2.  Для каждого выражения в списке отслеживания Visual Studio вызывает [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для преобразования текста выражения в разбираемого выражения.  
+2.  Для каждого выражения в список наблюдения за Visual Studio вызывает [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) преобразуемый текст выражения в проанализированное выражение.  
   
-3.  `IDebugExpressionContext2::ParseText` вызовы [проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) делать фактические трудозатраты синтаксического анализа текста и создают [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
+3.  `IDebugExpressionContext2::ParseText` вызовы [проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для выполняют фактическую работу синтаксического анализа текста и создают [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
   
-4.  `IDebugExpressionContext2::ParseText` Создает [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта и помещает `IDebugParsedExpression` объекта в него. Это я`DebugExpression2` объект возвращается в Visual Studio.  
+4.  `IDebugExpressionContext2::ParseText` Создает [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объект и помещает `IDebugParsedExpression` объекта в него. Это я`DebugExpression2` затем восстанавливается в Visual Studio.  
   
-5.  Visual Studio вызывает [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) для вычисления выражения проанализированный.  
+5.  Visual Studio вызывает [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) для оценки проанализированное выражение.  
   
-6.  `IDebugExpression2::EvaluateSync` вызов передается [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) сделать фактическое оценки и создания [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, возвращаемый в Visual Studio.  
+6.  `IDebugExpression2::EvaluateSync` вызов передается [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) фактические вычисления и создают [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, возвращаемый в Visual Studio.  
   
-7.  Visual Studio вызывает [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) , чтобы получить значение выражения, которое отображается в списке отслеживания.  
+7.  Visual Studio вызывает [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) для получения значения выражения, которое отображается в списке отслеживания.  
   
-## <a name="parse-then-evaluate"></a>Синтаксический анализ, а затем вычислить  
- Поскольку синтаксический анализ сложное выражение может занять гораздо больше, чем операции по оценке его, в результате вычисления выражения разбивается на два шага: (1) синтаксический анализ выражения и (2) вычислить значение выражения проанализированный. Таким образом, вычисление может выполняться много раз, но выражение необходимо проанализировать только один раз. Возвращенный промежуточного выражения проанализированный EE в [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объект, который в свою очередь, содержащийся и возвращенные DE как [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта. `IDebugExpression` Объекта откладывает все оценку для `IDebugParsedExpression` объекта.  
+## <a name="parse-then-evaluate"></a>Синтаксический анализ, а затем оценить  
+ Поскольку синтаксический анализ сложное выражение может занять гораздо больше, чем операции по оценке его, в результате вычисления выражения разбивается на два этапа: (1) синтаксический анализ выражения и (2) оценить проанализированное выражение. Таким образом, вычисление может выполняться много раз, но выражение необходимо выполнить синтаксический анализ только один раз. Промежуточные проанализированное выражение возвращается из EE в [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объект, который в свою очередь инкапсулированы и возвращенные DE как [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта. `IDebugExpression` Объект откладывает все оценку для `IDebugParsedExpression` объекта.  
   
 > [!NOTE]
->  Это необходимо для EE соответствовать это двухэтапный процесс, несмотря на то, что Visual Studio предполагается позволяет анализировать и оценивать в одном шаге EE при [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вызывается (это принцип работы образца MyCEE, например). Если ваш язык можно сформировать сложные выражения, можно разделить на этапе синтаксического анализа на этапе оценки. Это может повысить производительность в отладчике Visual Studio, если многие контрольных выражений появляются.  
+>  Это необходимо для EE придерживаться Этот двухэтапный процесс, несмотря на то, что Visual Studio предполагается, что это; EE позволяет анализировать и оценивать в одном шаге при [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вызывается (это как работает этот пример MyCEE, например). Если ваш язык можно сформировать сложные выражения, можно разделить на этапе синтаксического анализа на этапе оценки. Это может повысить производительность в отладчике Visual Studio, когда многие просмотреть выражений появляются.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Пример реализации вычисления выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
- В образце MyCEE использует для процесса вычисления выражения.  
+ Использует образец MyCEE для процесса вычисления выражения.  
   
  [Вычисление выражения контрольных значений](../../extensibility/debugger/evaluating-a-watch-expression.md)  
- Объясняет, что происходит после анализа успешно выражения.  
+ Объясняет, что происходит после успешной выражение синтаксического анализа.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Контекст вычислений](../../extensibility/debugger/evaluation-context.md)  
- Предоставляет аргументы, переданные при вызове подсистемой отладки (DE) вычислитель выражений (EE).  
+ [Контекст оценки](../../extensibility/debugger/evaluation-context.md)  
+ Предоставляет аргументы, передаваемые, когда модуль отладки (DE) вызывает средство оценки выражений (EE).  
   
 ## <a name="see-also"></a>См. также  
- [Написание выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
