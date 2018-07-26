@@ -9,12 +9,12 @@ title: Документация по разработке мобильных п�
 description: Создавайте приложения в машинном коде для устройств на платформе iOS, Android и Windows в Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924178"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232024"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Документация по разработке мобильных приложений на C++
 
@@ -28,7 +28,7 @@ ms.locfileid: "37924178"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
                         </div>
                     </div>
                     <div class="cardText">
@@ -47,7 +47,7 @@ ms.locfileid: "37924178"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile develpment">
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +66,7 @@ ms.locfileid: "37924178"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_xplat-code.svg" alt="">
+                            <img src="/media/common/i_xplat-code.svg" alt="Cross-platform mobile development examples">
                         </div>
                     </div>
                     <div class="cardText">
@@ -90,7 +90,7 @@ ms.locfileid: "37924178"
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE and Tools for Visual C++ Development</a> (Интегрированная среда и средства разработки Visual C++)<p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Интегрированная среда разработки и средства разработки Visual C++</a><p>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ ms.locfileid: "37924178"
                 <div class="card">
                     <div class="cardText">
                         <h3>Платформы</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Universal Windows Apps (C++)</a> (Универсальные приложения Windows (C++))</p>
+                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Документация по универсальной платформе Windows (UWP)</a></p>
                         <p><a href="https://developer.apple.com/reference">Документация по API для iOS</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Документация по API для Android</a></p>
                     </div>

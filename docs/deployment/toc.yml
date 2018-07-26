@@ -10,6 +10,8 @@
       href: deploying-applications-services-and-components.md
     - name: Развертывание в службе приложений Azure
       href: quickstart-deploy-to-azure.md
+    - name: Развертывание в службе приложений для Linux
+      href: quickstart-deploy-to-linux.md
     - name: Развертывание на веб-сайт
       href: quickstart-deploy-to-a-web-site.md
     - name: Развертывание в локальную папку
