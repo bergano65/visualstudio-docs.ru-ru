@@ -2,6 +2,7 @@
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) установить соответствующие рабочие нагрузки для выбранного языка:
   * ASP.NET: **ASP.NET и веб-разработка**
+  * ASP.NET Core: Рабочая нагрузка ASP.NET и **кросс Платформенная разработка .NET Core** рабочей нагрузки
   * Node.js: **разработка Node.js**
 
 * Подписка Azure. Если у вас еще нет подписки, [Подпишитесь на бесплатную версию](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio), который включает 200 долл. США в кредит на 30 дней и 12 месяцев бесплатно использовать популярные службы.

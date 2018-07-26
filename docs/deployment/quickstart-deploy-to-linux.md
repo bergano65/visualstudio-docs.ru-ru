@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: e0268c2e65cd08274c2267ad2a4969f6015cbaf4
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234858"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252366"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Публикация приложения ASP.NET Core в службе приложений на платформе Linux с помощью Visual Studio
 
 Можно использовать **публикации** , которая позволяет публиковать приложения ASP.NET Core в службе приложений Azure на платформе Linux.
+
+Развертывание в службе приложений в Linux с использованием **публикации** для запуска этого средства Visual Studio 2017 версии 15.7.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
@@ -49,4 +51,4 @@ ms.locfileid: "39234858"
 В этом кратком руководстве вы узнали, как использовать Visual Studio для создания профиля публикации для развертывания в службе приложений на платформе Linux. Дополнительные сведения о публикации в Linux с помощью Azure можно.
 
 > [!div class="nextstepaction"]
-> [Службы приложений Linux](/azure/app-service/containers/app-service-linux-intro)
+> [Служба приложений Linux](/azure/app-service/containers/app-service-linux-intro)

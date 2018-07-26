@@ -1,5 +1,5 @@
 ---
-title: Обработать диспетчер отладочной | Документы Microsoft
+title: Обработать диспетчер отладки | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ce0979b02ac3b0e8bb01f038c9883f5dcfd766
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bea7736174c64cb82f2dc1b66609175cb8584555
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098099"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252165"
 ---
 # <a name="process-debug-manager"></a>Диспетчер отладки процессов
-Диспетчер отладки процессов (PDM) является компонентом Visual Studio, которая управляет программ и процессов, делая их доступными в сеанс отладки, диспетчер и отладчики.  
+Диспетчер отладки процессов (PDM) входит в состав Visual Studio, которая управляет программ и процессы, делая их доступными в сеанс отладки, manager и механизмы отладки.  
   
- PDM управляет всех процессов, которые можно отлаживать. Чтобы отлаживать, программа должна быть зарегистрирована PDM. Это делается во время запуска программы, порт или модуля отладки.  
+ PDM управляет все процессы, которые можно отлаживать. Для отладки, программы должно быть зарегистрировано PDM. Регистрация осуществляется во время запуска программы, порт или модуля отладки.  
   
 ## <a name="see-also"></a>См. также  
  [Процессы](../../extensibility/debugger/processes.md)   
