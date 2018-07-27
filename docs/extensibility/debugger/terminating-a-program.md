@@ -1,5 +1,5 @@
 ---
-title: Завершение программы | Документы Microsoft
+title: Завершение программы | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5d711783b3238c9cfe42ba3fc4edd776bcb060
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1914d00af1eeda94ef1cf9129e637ce39306257
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126743"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276966"
 ---
 # <a name="terminating-a-program"></a>Завершение программы
-Ниже приведено описание о завершении одной программы с одним потоком.  
+В следующем разделе описаны завершение одной программы с одним потоком.  
   
 ## <a name="termination-process"></a>Завершение процесса  
   
-1.  Отправляет DE [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) действительным [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).  
+1.  Отправляет DE [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) допустимое [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).  
   
-2.  Отправляет DE [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) действительным [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).  
+2.  Отправляет DE [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) допустимое [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).  
   
  Интегрированная среда разработки переходит в режим конструктора. Модуль отладки или среда выполнения вызывает метод [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) удаление программы из порта.  
   

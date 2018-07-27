@@ -1,5 +1,5 @@
 ---
-title: Метод SetNotificationForWaitCompletion | Документы Microsoft
+title: Метод SetNotificationForWaitCompletion | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a005ee7d624604dd716042bd839b48b7a367dd48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42c5bca56bc46c0b8124fbfaf7ca046c2c1e59ec
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127022"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276342"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Метод SetNotificationForWaitCompletion
-Устанавливает или снимает бит TASK_STATE_WAIT_COMPLETION_NOTIFICATION состояния.  
+Задает или сбрасывает бит TASK_STATE_WAIT_COMPLETION_NOTIFICATION состояния.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в *mscorlib.dll*)  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,17 +33,17 @@ ms.locfileid: "31127022"
 internal void SetNotificationForWaitCompletion(bool enabled)  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+### <a name="parameters"></a>Параметры  
  `enabled`  
   
- `true` Чтобы установить бит; `false` с незаданным бит.  
+ `true` Чтобы установить бит; `false` чтобы бит.  
   
 ## <a name="exceptions"></a>Исключения  
   
 ## <a name="remarks"></a>Примечания  
- Отладчик установит этот бит для пошагового вне тела метода async. Если `enabled` — `true`, этот метод должен вызываться только в задачу, которая еще не завершена. Если `enabled` — `false`, этот метод может быть вызван для завершенных задач. В любом случае он должен использоваться только для задачи-обещания.  
+ Отладчик установит этот бит этапе за пределы тела метода async. Если `enabled` является `true`, этот метод должен вызываться только в задачу, которая еще не завершена. Когда `enabled` является `false`, этот метод может вызываться для завершенных задач. В любом случае он должен использоваться только для задач стиле promise.  
   
 ## <a name="requirements"></a>Требования  
   
 ## <a name="see-also"></a>См. также  
- [Task-класс](../../extensibility/debugger/task-class-internal-members.md)
+ [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

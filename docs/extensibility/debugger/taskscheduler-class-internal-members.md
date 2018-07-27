@@ -1,5 +1,5 @@
 ---
-title: Класс TaskScheduler - внутренние члены | Документы Microsoft
+title: 'Внутренние элементы: класс TaskScheduler | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18cd3ec809df921d6baefbf8018fefc77db238d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97b7531a60f72405d41a5a72c391ba8da91958dc
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126768"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276316"
 ---
-# <a name="taskscheduler-class---internal-members"></a>Класс TaskScheduler - внутренние элементы
-В этом разделе описывает внутренние элементы <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> класса, которые помогут реализовать пользовательского отладчика. Общие сведения об этом классе см. в разделе <xref:System.Threading.Tasks.TaskScheduler> справочном разделе.  
+# <a name="taskscheduler-class---internal-members"></a>Внутренние элементы: класс TaskScheduler
+В этой статье описывается внутренним членам объектов <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> класс, который помогут вам реализовать пользовательского отладчика. Общие сведения об этом классе см. в разделе <xref:System.Threading.Tasks.TaskScheduler> справочной статье.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
+ **Сборка:** mscorlib (в *mscorlib.dll*)  
   
- Так как не удается получить доступ к эти внутренние члены из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
+ Так как при отсутствии доступа к этим внутренним членам платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```csharp  
 .class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
        extends System.Object  
 ```  
@@ -41,10 +41,10 @@ ms.locfileid: "31126768"
   
 ### <a name="methods"></a>Методы  
   
-|Имя|Описание|  
+|Имя|Описание:|  
 |----------|-----------------|  
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Возвращает массив всех запланированных задач.|  
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Получает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые активны в данный момент.|  
+|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Извлекает массив всех запланированных заданий.|  
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Получает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые активны в текущий момент.|  
   
 ## <a name="remarks"></a>Примечания  
   
