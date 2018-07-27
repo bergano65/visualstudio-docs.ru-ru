@@ -1,5 +1,5 @@
 ---
-title: Шаг с заходом в режиме приостановки выполнения | Документы Microsoft
+title: Шаг с заходом в режиме приостановки выполнения | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cf10254ec4642bd6dd671124d4a0600794de6fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4fff7edc494c763407c65785fe1de0b3fd77d7b2
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130389"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276511"
 ---
 # <a name="stepping-in-break-mode"></a>Шаг с заходом в режиме приостановки выполнения
-Далее описывается процесс, который возникает, когда отладчик находится в режиме приостановки выполнения и необходимо пошаговое выполнение кода:  
+В следующем разделе описывается процесс, который возникает, когда отладчик находится в режиме приостановки выполнения и необходимо пошаговое выполнение кода:  
   
 ## <a name="stepping-process"></a>Пошаговое выполнение процесса  
   

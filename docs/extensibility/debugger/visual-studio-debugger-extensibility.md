@@ -1,5 +1,5 @@
 ---
-title: Расширения отладчика Visual Studio | Документы Microsoft
+title: Расширение возможностей отладчика Visual Studio | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,39 +14,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5bb01c093fda068dfbc7dfa705914a8bdef4d2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa2f858121e8486209518f348193e8a2bbee645a
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127074"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276472"
 ---
-# <a name="visual-studio-debugger-extensibility"></a>Расширения отладчика Visual Studio
-Visual Studio включает отладчик полностью интерактивный исходного кода, предоставляет мощные и простые в использовании средства для отслеживания ошибок в программах. Отладчик имеет полную поддержку Visual Basic, C#, C/C++ и JavaScript. Однако в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], в котором доступны из [центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkId=214453), других языках программирования, которые могут поддерживаться в отладчике с широкими возможностями, же.  
+# <a name="visual-studio-debugger-extensibility"></a>Расширяемость отладчика Visual Studio
+Visual Studio включает отладчик полностью интерактивные исходного кода, предоставляет мощный и простой в использовании средство для ошибок в программе. Отладчик имеет полную поддержку Visual Basic, C#, C/C++ и JavaScript. Тем не менее, с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], то есть доступны из [центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkId=214453), другие языки программирования, которые могут поддерживаться в отладчике с тем же широкими возможностями.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отладчик находится общий внешний интерфейс (пользовательский интерфейс) для отладки компонентов, которые в свою очередь, относящиеся к языку, для которого выполняется отладка. Новые языки, необходимые для поддержки по [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчик заключается в создании необходимых компонентов серверной части, такие как отладчик (DE). Именно так [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] поставляется в.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отладчика — общий интерфейс (то есть пользовательский интерфейс) отладки компонентов, которые в свою очередь, относящиеся к языку, для которого выполняется отладка. Для новых языков, необходимые для поддержки по [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчика — создать необходимые компоненты серверной части, например модуля отладки (DE). Именно для этой точки [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] пригодиться.  
   
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Включает полный перечень ко всем [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] элементы, необходимые для создания нового DE. Кроме того существует, образцы и учебники, которые помогут приступить к работе.  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Включает в себя полный Справочник ко всем [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] элементы, необходимые для создания нового DE. Кроме того существуют, примеры и учебники, которые помогут приступить к работе.  
   
- Пример конца в конец языка системы проекта с поддержка отладки. в разделе [пример IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Полный пример языка системы проекта с отладкой поддержки, см. в разделе [пример IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
- В следующих разделах описаны способы расширения отладчика с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+ В следующих разделах рассматривается расширение отладчика с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Начало работы](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
- Описывает, что [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки предложений и как установить пакет SDK.  
+ Описывается, что [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки предложения и установка пакета SDK.  
   
  [Создание пользовательского модуля отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Документирует пользовательские DE процесс, Подготовка программы DE для отсоединения DE.  
+ Документирует пользовательские DE процесс, от подготовки программы для DE для отсоединения DE.  
   
- [Написание выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
- Объясняет, должен ли запись вычислитель выражений.  
+ [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+ Объясняется ли необходимо написать вычислитель выражений.  
   
  [Выбор стратегии реализации модуля отладки](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
- Описывает, как реализовать вашей DE.  
+ Обсуждаются способы применения вашей DE.  
   
  [Ссылки](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
  Документы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] API отладки.  
   
  [Примеры](../../extensibility/debugger/visual-studio-debugging-samples.md)  
- Содержит ссылки на общие оценки образец выражения языка среды выполнения и образец ядра отладки.
+ Содержит ссылки на общий вычислителя пример выражения языка среды выполнения и образец ядра отладки.
