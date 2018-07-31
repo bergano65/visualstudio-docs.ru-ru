@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252366"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341752"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Публикация приложения ASP.NET Core в службе приложений на платформе Linux с помощью Visual Studio
 
@@ -45,6 +45,13 @@ ms.locfileid: "39252366"
 1. Выберите **Создать**. Visual Studio развертывает приложение на службу приложений Azure и загружает веб-приложение в браузере. Свойства проекта **публикации** области отображается URL-адрес сайта и другие сведения.
 
     ![Панель свойств со сводкой профиля публикации](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>Очистка ресурсов
+
+На предыдущих шагах вы создали ресурсы Azure в группе ресурсов. Если вам не понадобятся в будущем эти ресурсы требуются, их можно удалить, удалив группу ресурсов.
+В меню слева на портале Azure выберите **групп ресурсов** , а затем выберите **myResourceGroup**.
+На странице группы ресурсов убедитесь, что перечислены ресурсы, которые требуется удалить.
+Выберите **удалить**, тип **myResourceGroup** в текстовое поле, а затем выберите **удалить**.
 
 ## <a name="next-steps"></a>Следующие шаги
 
