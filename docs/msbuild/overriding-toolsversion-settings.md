@@ -13,37 +13,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327093"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153921"
 ---
-# <a name="overriding-toolsversion-settings"></a>Переопределение параметров ToolsVersion
+# <a name="override-toolsversion-settings"></a>Переопределение параметров ToolsVersion
 Набор инструментов для проектов и решений можно изменить одним из трех способов.  
   
-1.  Используя переключатель `/ToolsVersion` (или сокращенно `/tv`) при сборке проекта или решения из командной строки  
+1.  Используя параметр `/ToolsVersion` (или сокращенно `/tv`) при сборке проекта или решения из командной строки.  
   
-2.  Задав параметр `ToolsVersion` задачи MSBuild  
+2.  Задав параметр `ToolsVersion` для задачи MSBuild.  
   
 3.  Задав свойство `$(ProjectToolsVersion)` для проекта в решении. Это позволяет собирать проект в решении с версией набора инструментов, отличающейся от используемой в других проектах.  
   
-## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Переопределение параметров ToolsVersion проектов и решений в сборках из командной строки  
+## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Переопределение параметров ToolsVersion для проектов и решений, собираемых из командной строки  
  Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `/ToolsVersion` (или `/tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Пример:  
   
 ```cmd  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
- В этом примере построение всех проектов выполняется с использованием значения ToolsVersion 12.0. (Тем не менее ознакомьтесь с подразделом "Очередность применения" далее в этом разделе.)  
+ В этом примере построение всех проектов выполняется с использованием значения ToolsVersion 12.0. (Ознакомьтесь также с разделом [Порядок приоритетов](#order-of-precedence) далее в этой статье.)  
   
  Если в командной строке используется параметр `/tv`, можно в отдельных проектах использовать дополнительно свойство `$(ProjectToolsVersion)`, чтобы создать их с другим значением ToolsVersion по сравнению с остальными проектами в решении.  
   
-## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Переопределение значения ToolsVersion с использованием параметра ToolsVersion в задаче MSBuild  
+## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Переопределение параметров ToolsVersion с помощью параметра ToolsVersion в задаче MSBuild  
  Задача MSBuild — основное средство для создания одного проекта из другого. Чтобы в задаче MSBuild можно было создать проект со значением ToolsVersion, отличающимся от значения, заданного в проекте, предоставляется дополнительный параметр задачи с именем `ToolsVersion`. В следующем примере демонстрируется применение этого параметра.  
   
-1.  Создайте файл с именем `projectA.proj`, содержащий следующий код.  
+1.  Создайте файл с именем *projectA.proj* и добавьте в него следующий код:  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
@@ -61,7 +61,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
     </Project>  
     ```  
   
-2.  Создайте еще один файл с именем `projectB.proj`, содержащий следующий код.  
+2.  Создайте файл с именем *projectB.proj* и добавьте в него следующий код:  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
@@ -96,7 +96,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
       MSBuildToolsPath:    C:\Windows\Microsoft.NET\Framework\v2.0.50727  
     ```  
   
-## <a name="order-of-precedence"></a>Очередность применения  
+## <a name="order-of-precedence"></a>Порядок приоритетов  
  В следующем списке показан порядок приоритетов от самого высокого до самого низкого: `ToolsVersion`  
   
 1.  Атрибут `ToolsVersion` в задаче MSBuild, используемой для сборки проекта (если имеется).  
@@ -111,15 +111,15 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     1.  Атрибут `ToolsVersion` элемента [Project](../msbuild/project-element-msbuild.md) в файле проекта. Если этот атрибут не существует, предполагается, что используется текущая версия.  
   
-    2.  Версия набора инструментов, заданная по умолчанию в файле MSBuild.exe.config.  
+    2.  Версия набора инструментов, заданная по умолчанию в файле *MSBuild.exe.config*.  
   
-    3.  Версия набора инструментов, заданная по умолчанию в реестре. Дополнительные сведения см. в разделе [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md).  
+    3.  Версия набора инструментов, заданная по умолчанию в реестре. Дополнительные сведения см. в статье [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md).  
   
 6.  Если переменная среды `MSBUILDLEGACYDEFAULTTOOLSVERSION` не задана, используются следующие действия.  
   
     1.  Если переменная среды `MSBUILDDEFAULTTOOLSVERSION` задана равной существующему параметру `ToolsVersion`, используйте ее.  
   
-    2.  Если в MSBuild.exe.config задано свойство `DefaultOverrideToolsVersion` задано , используйте его.  
+    2.  Если свойство `DefaultOverrideToolsVersion` задано в *MSBuild.exe.config*, используйте его.  
   
     3.  Если в реестре задано свойство `DefaultOverrideToolsVersion`, используйте его.  
   

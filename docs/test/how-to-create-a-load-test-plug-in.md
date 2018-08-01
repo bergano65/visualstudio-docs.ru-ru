@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ebd3a356eab88c53d2aa7bea7f27be3ccc0749e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975925"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179683"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Практическое руководство. Создание подключаемого модуля нагрузочных тестов
 
@@ -90,7 +90,7 @@ ms.locfileid: "31975925"
      Подключаемый модуль будет добавлен в папку **Подключаемые модули нагрузочных тестов**.
 
     > [!WARNING]
-    > При запуске веб-теста производительности или нагрузочного теста, использующего данный подключаемый модуль, может появиться ошибка примерно следующего вида:
+    > При запуске веб-теста производительности или нагрузочного теста, в которых используется этот подключаемый модуль, может возникнуть ошибка примерно следующего вида:
     >
     > **Сбой запроса. Исключение в событии \<подключаемый модуль>: не удалось загрузить файл или сборку "Файл \<"Имя подключаемого модуля".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" или одну из зависимостей. Не удается найти указанный файл.**
     >
