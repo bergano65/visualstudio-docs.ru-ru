@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 141341c09d9028e90900a29c702667304cfea7f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5e8dbaf62043897292afbb2805879e0447f3048a
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477714"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276706"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Использование методов профилирования для сбора данных о производительности из командной строки
 Выбор программ командной строки и параметров средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] зависит от таких факторов, как тип профилируемого приложения, метод профилирования, который нужно использовать, а также от того, какой код (машинный или [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]) использовался для написания приложения.  
@@ -29,8 +29,8 @@ ms.locfileid: "34477714"
   
 |Задача|Тип целевого приложения|  
 |----------|-----------------------------|  
-|**Запуск приложения**|-   [Автономные приложения](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Присоединение к выполняемому процессу**|-   [Автономные приложения .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [Автономные приложения в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Веб-приложения ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Службы .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Службы в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Запуск приложения**|-   [Автономные приложения](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
+|**Присоединение к выполняемому процессу**|-   [Автономные приложения .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [Автономные приложения в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)<br />-   [Веб-приложения ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Службы .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Службы в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="use-the-instrumentation-method-to-collect-detailed-timing-data"></a>Использование метода инструментирования для сбора подробных сведений о времени  
  Метод инструментирования средств профилирования обеспечивает сбор данных производительности из копий двоичных файлов приложения, в которых содержатся зонды для записи сведений о производительности. Данные инструментирования собираются в начале и в конце выполнения каждой инструментированной функции и при каждом вызове других функций из этой инструментированной функции. Метод инструментирования удобно использовать для обнаружения проблем производительности, связанных с проблемами ввода-вывода, например проблемой использования диска.  
@@ -39,9 +39,9 @@ ms.locfileid: "34477714"
   
  **Тип целевого приложения**  
   
--   [Автономные компоненты .NET Framework](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)  
+-   [Автономные компоненты .NET Framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)  
   
--   [Автономные компоненты в машинном коде](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)  
+-   [Автономные компоненты в машинном коде](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)  
   
 -   [Статически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)  
   
@@ -58,9 +58,9 @@ ms.locfileid: "34477714"
   
 |Задача|Тип целевого приложения|  
 |----------|-----------------------------|  
-|**Запуск приложения**|-   [Автономные приложения .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Присоединение к выполняемому процессу**|-   [Автономные приложения .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Веб-приложения ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Службы .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Инструментированные модули**|-   [Автономные компоненты .NET Framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)<br />-   [Статически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Динамически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [Службы .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Запуск приложения**|-   [Автономные приложения .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**Присоединение к выполняемому процессу**|-   [Автономные приложения .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)<br />-   [Веб-приложения ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Службы .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Инструментированные модули**|-   [Автономные компоненты .NET Framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)<br />-   [Статически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)<br />-   [Динамически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [Службы .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="use-the-concurrency-method-to-collect-resource-contention-and-thread-activity-data"></a>Использование метода параллелизма для сбора сведений о состязании за ресурсы и действиях потока  
  Метод параллелизма средств профилирования позволяет собирать сведения о состязании за ресурсы, а также о действиях потоков и процессов в многопоточных приложениях.  
@@ -69,8 +69,8 @@ ms.locfileid: "34477714"
   
 |Задача|Тип целевого приложения|  
 |----------|-----------------------------|  
-|**Запуск приложения**|-   [Автономное приложение .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [Автономное приложение в машинном коде](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Присоединение к выполняемому процессу**|-   [Автономное приложение .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [Автономное приложение в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Веб-приложение ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Служба .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Служба в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Запуск приложения**|-   [Автономное приложение .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [Автономное приложение в машинном коде](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
+|**Присоединение к выполняемому процессу**|-   [Автономное приложение .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [Автономное приложение в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)<br />-   [Веб-приложение ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Служба .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Служба в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>Добавление данных уровневого взаимодействия в сеанс профилирования  
  Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. См. [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)  
