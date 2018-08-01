@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9a60212a3e89e8c7f445e5670858f524df9a70
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 64d3fd57f5c55a321ca09495adcd7c712964b01f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302954"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154608"
 ---
 # <a name="usingtask-element-msbuild"></a>Элемент UsingTask (MSBuild)
 Сопоставляет задачу, на которую указана ссылка в элементе [Задача](../msbuild/task-element-msbuild.md), со сборкой, содержащей реализацию этой задачи.  
@@ -42,7 +42,7 @@ ms.locfileid: "36302954"
     Condition="'String A'=='String B'" />  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  
@@ -72,9 +72,9 @@ ms.locfileid: "36302954"
  На переменные среды, свойства командной строки, свойства и элементы уровня проекта можно ссылаться в элементах `UsingTask`, включенных в файл проекта либо напрямую, либо через импортированный файл проекта. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Свойства и элементы уровня проекта не имеют смысла, если элемент `UsingTask` получен из одного из файлов TASKS, зарегистрированных глобально в модуле MSBuild. Значения уровня проекта не являются глобальными по отношению к MSBuild.  
+>  Свойства и элементы уровня проекта не имеют смысла, если элемент `UsingTask` получен из одного из файлов *TASKS*, зарегистрированных глобально в модуле MSBuild. Значения уровня проекта не являются глобальными по отношению к MSBuild.  
 
- В MSBuild 4.0 задачи можно загрузить из файлов OVERRIDETASK.  
+ В MSBuild 4.0 задачи можно загрузить из файлов *OVERRIDETASK*.  
 
 ## <a name="example"></a>Пример  
  В следующем примере показано использование элемента `UsingTask` с атрибутом `AssemblyName`.  

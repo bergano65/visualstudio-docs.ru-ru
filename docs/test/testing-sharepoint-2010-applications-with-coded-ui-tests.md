@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233546"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177513"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Тестирование приложений SharePoint с помощью закодированных тестов пользовательского интерфейса
 
@@ -28,7 +28,7 @@ ms.locfileid: "36233546"
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Создание закодированного теста пользовательского интерфейса для приложения SharePoint
 
-[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md) для приложений SharePoint происходит таким же способом, что и создание тестов для других типов приложений. Запись и воспроизведение поддерживаются для всех элементов управления в интерфейсе веб-редактирования. Интерфейс для выбора категорий и веб-частей — стандартные веб-элементы управления.
+[Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md) для приложений SharePoint происходит таким же способом, что и создание тестов для других типов приложений. Запись и воспроизведение поддерживаются для всех элементов управления в интерфейсе **веб-редактирования**. Интерфейс для выбора категорий и веб-частей — стандартные веб-элементы управления.
 
 ![веб-части SharePoint](../test/media/cuit_sharepoint.png)
 

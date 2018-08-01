@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22014010ea0ef7d101a446b6e89591797f5f2550
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977389"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178453"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Пошаговое руководство: создание и запуск нагрузочного теста, содержащего модульные тесты
 
@@ -35,7 +35,7 @@ ms.locfileid: "31977389"
 
 -   Выполнение нагрузочного теста.
 
--   Выполните шаги раздела [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md), чтобы создать простую библиотеку классов C#, содержащую проект веб-тестов производительности и нагрузочных тестов, включающий несколько модульных тестов.
+-   Выполните инструкции в статье [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md), чтобы создать простую библиотеку классов C#, содержащую проект веб-тестов производительности и нагрузочных тестов, включающий несколько модульных тестов.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Создание нагрузочных тестов, содержащих модульные тесты, с помощью мастера тестовой нагрузки
 
@@ -65,7 +65,7 @@ ms.locfileid: "31977389"
 
      *Сценарий* — это способ группировки. Он состоит из набора тестов и свойств для запуска этих тестов под нагрузкой.
 
-2.  Задайте для параметра **Профиль времени обдумывания** значение `Use normal distribution centered on recorded think times`. Время обработки — это время, в течение которого пользователь просматривает веб-страницу перед переходом к следующей странице.
+2.  Задайте для параметра **Профиль времени обдумывания** значение `Use normal distribution centered on recorded think times`. Время на обдумывание — это время, в течение которого пользователь просматривает веб-страницу перед переходом к следующей странице.
 
 1.  По завершении нажмите кнопку **Далее**.
 

@@ -95,12 +95,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea3f5575f5ba09a4d3f4a69a6ed800bb703b732
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302630"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176545"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 
@@ -114,11 +114,11 @@ ms.locfileid: "36302630"
 
 Форумы позволяют взаимодействовать с другими разработчиками, а также с сотрудниками корпорации Майкрософт. Если вы столкнулись с ошибкой и не можете найти решение, можно задать вопрос о ней на форуме. Можно также выполнить поиск по группам новостей, чтобы узнать, не публиковал ли кто-то другой материалы о подобной проблеме.
 
-На веб-сайте [Microsoft Technical Communities](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) вы можете найти форумы, блоги, чаты и другие ресурсы.
+На веб-сайте [технических сообществ Майкрософт](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) вы можете найти форумы, блоги, чаты и другие ресурсы.
 
 ## <a name="product-support"></a>Поддержка продуктов
 
-Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](http://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../../ide/talk-to-us.md).
+Если у вас остались вопросы после ознакомления с другими ресурсами, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](http://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../../ide/talk-to-us.md).
 
 ## <a name="see-also"></a>См. также
 

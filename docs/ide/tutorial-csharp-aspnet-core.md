@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 40aba1d8847b405c3e80f0d6890471f0e2065a86
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9df1cbae3b0233a8711ab6a287513d89670df4d4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089455"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177374"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Начало работы с C# и ASP.NET в Visual Studio
 

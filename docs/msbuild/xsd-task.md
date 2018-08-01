@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057376"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231601"
 ---
-# <a name="xsd-task"></a>Задача XSD
-Создает оболочку инструмента определения схемы XML (xsd.exe), который создает файлы схемы или класса из источника.  
+# <a name="xsd-task"></a>XSD - задача
+Создает оболочку для инструмента определения схемы XML (*xsd.exe*), который создает файлы схемы или класса из источника.  
 
 > [!NOTE]
-> В Visual Studio 2017 поддержка проектов C++ для xsd.exe признана нерекомендуемой. Вы можете продолжать использовать API **Microsoft.VisualC.CppCodeProvider**, вручную добавив **CppCodeProvider.dll** в глобальный кэш сборок. 
+> В Visual Studio 2017 поддержка проектов C++ для *xsd.exe* отмечена как нерекомендуемая. Вы можете продолжать использовать API **Microsoft.VisualC.CppCodeProvider**, вручную добавив *CppCodeProvider.dll* в глобальный кэш сборок. 
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описываются параметры задачи **XSD**.  
@@ -42,7 +42,7 @@ ms.locfileid: "37057376"
   
      Необязательный параметр типа **String**.  
   
-     Список параметров, как указано в командной строке. Например, "*/параметр1 /параметр2 /параметр#*". Этот параметр используется для задания параметров, не представленных другими параметрами задачи **XSD**.  
+     Список параметров, как указано в командной строке. Например, /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для задания параметров, не представленных другими параметрами задачи **XSD**.  
   
 -   **GenerateFromSchema**  
   

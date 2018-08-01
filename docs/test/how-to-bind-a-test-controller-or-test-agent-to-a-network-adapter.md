@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051b7c7375c6b13a6f3805e358645eccdc0e33c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970953"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203967"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 
@@ -31,7 +31,7 @@ ms.locfileid: "31970953"
 >
 > Эта ошибка может быть вызвана установкой контроллера тестирования на компьютер с несколькими сетевыми адаптерами. Кроме того, можно успешно установить агентов, а проблема возникнет только при выполнении теста.
 
-## <a name="binding-a-test-controller-to-a-specific-network-adapter"></a>Привязка контроллера тестирования к определенному сетевому адаптеру
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Привязка контроллера тестирования к определенному сетевому адаптеру
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Получение IP-адресов сетевых адаптеров
 
@@ -87,7 +87,7 @@ ms.locfileid: "31970953"
 
      Это применимо к контроллеру, службе агента и процессу агента. Свойство `BindTo` следует установить для каждого процесса, выполняющегося на компьютере с несколькими сетевыми адаптерами. Процедура установки свойства `BindTo` одинакова для всех процессов (см. описание для контроллера тестирования ранее в этом разделе).
 
-### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Привязка сетевой карты к агенту тестирования
+### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Привязка сетевого адаптера к агенту тестирования
 
 1.  В операционной системе Microsoft Windows нажмите кнопку **Пуск**, перейдите в поле **Начать поиск**, введите **services.msc** и нажмите клавишу **ВВОД**.
 
@@ -131,7 +131,7 @@ ms.locfileid: "31970953"
 ## <a name="see-also"></a>См. также
 
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
-- [Изменение параметров ведения журнала нагрузочного теста](../test/modify-load-test-logging-settings.md)
+- [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Практическое руководство. Задание периодов ожидания для контроллеров тестирования и агентов тестирования](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

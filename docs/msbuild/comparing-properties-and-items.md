@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf1bf06a39036845dc6a2f48c3f0d5f537da01
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37967933"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177118"
 ---
-# <a name="comparing-properties-and-items"></a>Сравнение свойств и элементов
+# <a name="compare-properties-and-items"></a>Сравнение свойств и элементов
 Свойства и элементы MSBuild применяются для передачи данных задачам, проверки условий и хранения значений, которые будут использоваться в файле проекта.  
   
 -   Свойства представляют собой пары имя-значение. Дополнительные сведения см. в разделе [Свойства MSBuild](../msbuild/msbuild-properties.md).  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de6a67be8390f2b4353b05eea489c07e095b092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ceec441f6f0110ea514225ed0fab4c4dc2d575bb
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570997"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153089"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 Записывает журналы отслеживания для всех потоков и контекстов.  
@@ -44,7 +44,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был создан.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** FileTracker.h  
+ **Заголовок:** *FileTracker.h*  
   
 ## <a name="see-also"></a>См. также  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

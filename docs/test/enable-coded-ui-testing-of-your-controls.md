@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751758"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153567"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Включение закодированных тестов пользовательского интерфейса для элементов управления
 
@@ -69,7 +69,7 @@ ms.locfileid: "34751758"
 4.  Переопределите свойства, методы и <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, <xref:System.Windows.Forms.AccessibleObject.Select%2A> объекта специальных возможностей дочернего элемента управления.
 
 > [!NOTE]
-> Этот раздел начинается с примера специальных возможностей в <xref:System.Windows.Forms.AccessibleObject>, а затем берется в основу остальных процедур. Если вам требуется создать рабочую версию образца специальных возможностей, создайте консольное приложение, а затем замените код в файле Program.cs на пример кода. Добавьте ссылки на Accessibility, System.Drawing и System.Windows.Forms. Измените значение **Внедрить типы взаимодействия** для объекта специальных возможностей на **False**, чтобы исключить предупреждение сборки. Можно изменить тип выходных данных проекта с **консольного приложения** на **приложение Windows**, чтобы окно консоли не отображалось при запуске приложения.
+> Этот раздел начинается с примера специальных возможностей в <xref:System.Windows.Forms.AccessibleObject>, а затем берется в основу остальных процедур. Если вам требуется создать рабочую версию образца специальных возможностей, создайте консольное приложение, а затем замените код в файле *Program.cs* на пример кода. Добавьте ссылки на Accessibility, System.Drawing и System.Windows.Forms. Измените значение **Внедрить типы взаимодействия** для объекта специальных возможностей на **False**, чтобы исключить предупреждение сборки. Можно изменить тип выходных данных проекта с **консольного приложения** на **приложение Windows**, чтобы окно консоли не отображалось при запуске приложения.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>Поддержка проверки пользовательского свойства путем реализации поставщика свойства
 
@@ -134,7 +134,7 @@ ms.locfileid: "34751758"
 
 1. Переопределите оставшиеся абстрактные методы и свойства <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
 
-1. Выполните сборку двоичных файлов и скопируйте их в каталог **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.
+1. Выполните сборку двоичных файлов и скопируйте их в каталог *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Этот пакет расширений применяется к любому элементу управления типа "Текст". Если вы тестируете несколько элементов управления одного типа, то необходимо тестировать их поодиночке, указывая во время записи тестов, какие пакеты расширений развертывать.
@@ -171,7 +171,7 @@ ms.locfileid: "34751758"
 
 1. Добавьте фильтр действий в метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> данного пакета расширений.
 
-1. Выполните сборку двоичных файлов и скопируйте их в каталог %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Выполните сборку двоичных файлов и скопируйте их в каталог *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Фильтр действий не зависит от реализации специальных возможностей или от поставщика свойств.
@@ -182,7 +182,7 @@ ms.locfileid: "34751758"
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Отладка поставщика свойств или фильтра действий
 
-1.  Выполните сборку отладочной версии пакета расширений и скопируйте DLL-файлы и PDB-файлы в каталог %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1.  Выполните сборку отладочной версии пакета расширений и скопируйте *DLL-файлы* и *PDB-файлы* в каталог *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2.  Запустите приложение (не в отладчике).
 
@@ -199,4 +199,4 @@ ms.locfileid: "34751758"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
+- [Использование автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)

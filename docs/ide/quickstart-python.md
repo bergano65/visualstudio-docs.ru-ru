@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8668bbdb686b3c8c60380dd5592a2897a43b45b
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089429"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131990"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
@@ -149,7 +149,7 @@ ms.locfileid: "37089429"
 > [!div class="nextstepaction"]
 > [Развертывание приложения в Службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Так как приведенные в этом руководстве инструкции довольно общие, вы, вероятно, догадались, что их можно и нужно автоматизировать. Такая автоматизация выполняется при помощи шаблонов проектов Visual Studio. Изучите [Краткое руководство. Создание проекта Python на основе шаблона](../python/quickstart-02-python-in-visual-studio-project-from-template.md), чтобы узнать, как создается веб-приложение, похожее на созданное вами в рамках этой статьи, но с меньшим количеством шагов.
+Так как приведенные в этом руководстве инструкции довольно общие, вы, вероятно, догадались, что их можно и нужно автоматизировать. Такая автоматизация выполняется при помощи шаблонов проектов Visual Studio. Изучите [краткое руководство по созданию проекта Python на основе шаблона](../python/quickstart-02-python-in-visual-studio-project-from-template.md), чтобы узнать, как создается веб-приложение, похожее на созданное вами в рамках этой статьи, но с меньшим количеством шагов.
 
 Чтобы перейти к более полному учебнику по работе с Python в Visual Studio, включая использование интерактивного окна, отладку, визуализацию данных и работу с Git, изучите [Руководство. Начало работы с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 

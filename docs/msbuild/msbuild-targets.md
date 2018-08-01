@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ae74ed310da6f937dcadf168630102c004877
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081443"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176119"
 ---
 # <a name="msbuild-targets"></a>Целевые объекты MSBuild
 Целевые объекты позволяют группировать задачи в определенном порядке, а также разложить процесс сборки на более мелкие этапы. Например, один целевой объект может удалить все файлы в выходном каталоге для подготовки к сборке, пока другой компилирует входные данные для проекта и помещает их в пустой каталог. Дополнительные сведения о задачах см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
   
-## <a name="declaring-targets-in-the-project-file"></a>Объявление целевых объектов в файле проекта  
+## <a name="declare-targets-in-the-project-file"></a>Объявление целевых объектов в файле проекта  
  Целевые объекты объявляются в файле проекта с помощью элемента [Target](../msbuild/target-element-msbuild.md). Например, следующий XML-код создает целевой объект с именем Construct, который затем вызывает задачу Csc с типом элемента Compile.  
   
 ```xml  

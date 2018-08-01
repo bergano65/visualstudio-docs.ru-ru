@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee92d81f9b22fb0fe60f8c51ce4e9d53c606f1e7
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077331"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151019"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Информация об использовании пакетов SDK проекта MSBuild
 
@@ -59,6 +59,9 @@ ms.locfileid: "39077331"
     ```
 
     При этом в начале и конце кода проекта добавляются неявные директивы импорта, как описано выше.  Значение атрибута `Sdk` задается в формате `Name[/Version]`, где Version обозначает необязательное значение версии.  Например, так: `My.Custom.Sdk/1.2.3`.
+
+    > [!NOTE]
+    > Сейчас это единственный способ добавить ссылку на пакет SDK для проекта в Visual Studio для Mac.
 
 2. Используйте элемент `<Sdk/>` верхнего уровня.
 

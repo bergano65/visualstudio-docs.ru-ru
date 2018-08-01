@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 75b2a889c00245b983305d56e9eb79d78d0d4966
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924278"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176870"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.
@@ -69,7 +69,7 @@ ms.locfileid: "37924278"
 |[Задать текущий поток](../../ide/reference/set-current-thread-command.md)|Позволяет просматривать определенный поток.|
 |[Задать основание системы счисления](../../ide/reference/set-radix-command.md)|Определяет количество байтов для просмотра.|
 |[Оболочка](../../ide/reference/shell-command.md)|Запускает программы изнутри [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , как если бы команда выполнялась из командной строки.|
-|[Команда ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|Отображает URL-адрес, указанный в окне браузера внутри или вне интегрированной среды разработки (IDE).|
+|[Команда ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|Предназначена для отображения URL-адреса, указанного в окне браузера внутри или вне интегрированной среды разработки (IDE).|
 |[Запуск](../../ide/reference/start-command.md)|Начинает процесс отладки и позволяет указать способ обработки ошибок.|
 |[Путь](../../ide/reference/symbol-path-command.md)|Задает список каталогов для поиска символов отладчиком.|
 |[Точка останова](../../ide/reference/toggle-breakpoint-command.md)|Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.|

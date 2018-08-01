@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83cdf4071be735636c9f2ffb559c68d284685892
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945524"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152559"
 ---
 # <a name="common-msbuild-project-items"></a>Общие элементы проектов MSBuild
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеют по несколько общих элементов. Эти элементы определены в файле  *Microsoft.Build.CommonTypes.xsd*.  
@@ -78,6 +78,7 @@ ms.locfileid: "37945524"
 |name|Необязательная строка. Отображаемое имя ссылки.|  
 |Проект|Необязательная строка. Идентификатор GUID для ссылки в формате {12345678-1234-1234-1234-1234567891234}.|  
 |Пакет|Необязательная строка. Путь к файлу проекта, на который указывает ссылка.|  
+|ReferenceOutputAssembly|Необязательный логический атрибут. Если задано значение `false`, в [ссылку](#Reference) на проект не включаются его выходные данные. Но по-прежнему обеспечивается создание других проектов перед этим проектом. По умолчанию — `true`.|
   
 ### <a name="compile"></a>Компилятор  
  Представляет исходные файлы для компилятора.  

@@ -34,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb14ae44dd137d7bf600cec505fe17fa6e105a42
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ceccf3c051e3c85fa4b8e64ecbc33c388e9a884f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948981"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178185"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Страница "Документы", папка "Среда", диалоговое окно "Параметры"
 Используйте эту страницу диалогового окна **Параметры** для управления отображением документов в интегрированной среде разработки (IDE), а также внешними изменениями, вносимыми в документы и файлы. Чтобы перейти к этому диалоговому окну, щелкните пункт **Параметры** в меню **Сервис**, а затем разверните узел **Среда** и выберите пункт **Документы**. Если страница **Документы** отсутствует в списке, выберите **Показать все параметры** в диалоговом окне **Параметры**.
