@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 49cde761aa8974e80d81cfd038d65449c3c23a75
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119468"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379794"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство: Добавление страницы приложения в рабочий процесс
   В этом пошаговом руководстве демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса. Оно основано на проекте, описанную в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
@@ -75,7 +75,7 @@ ms.locfileid: "37119468"
   
 1.  Выберите проект ExpenseReport, а затем в строке меню выберите **проекта** > **Добавление нового элемента**.  
   
-2.  В **шаблоны** панели выберите **страницы приложения** шаблона, используйте имя по умолчанию для элемента проекта (**ApplicaitonPage1.aspx**) и выберите **Добавить** кнопки.  
+2.  В **шаблоны** панели выберите **страницы приложения** шаблона, используйте имя по умолчанию для элемента проекта (**ApplicationPage1.aspx**) и выберите **Добавить** кнопки.  
   
 3.  В [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, замените `PlaceHolderMain` раздел со следующими:  
   

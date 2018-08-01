@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177283"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382052"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Интеграция моделей с помощью Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus предоставляет метод для создания ссылок между моделями и из других средств в модели. Например можно связать модели доменного языка (DSL) и моделей UML. или создать интегрированный набор DSL.
@@ -127,10 +127,10 @@ ms.locfileid: "39177283"
 
 4.  Если выбрана ссылка на элемент в модели, можно добавить список типов, доступных для выбора пользователем, например Company.FamilyTree.Person.
 
-5.  Нажмите кнопку **ОК**, а затем нажмите кнопку **преобразовать все шаблоны** на панели инструментов обозревателя решений.
+5.  Нажмите кнопку **ОК**, а затем нажмите кнопку **преобразовать все шаблоны** в **обозревателе решений** панели инструментов.
 
     > [!WARNING]
-    >  Если допустимая модель или сущность не выбрана, нажатие кнопки "ОК" не будет иметь никакого действия, даже если выглядит активной.
+    > Если допустимая модель или сущность не выбрана, нажатие кнопки "ОК" не будет иметь никакого действия, даже если выглядит активной.
 
 6.  При указании списка целевых типов, таких как Company.FamilyTree.Person, необходимо также добавить ссылку на сборку проекта DSL, ссылающуюся на DLL целевого DSL, например Company.FamilyTree.Dsl.dll
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177283"
 3.  В проект "Отладка" в экспериментальном экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] добавьте файлы, являющиеся экземплярами каждого DSL.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus может разрешать ссылки только на модели, которые являются элементами того же решения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus может разрешать ссылки только на модели, которые являются элементами того же решения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.
 
 4.  Создайте и сохраните несколько элементов и связей в экземпляре предоставляемого DSL.
 
