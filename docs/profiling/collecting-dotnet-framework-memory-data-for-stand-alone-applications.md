@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9b863fa8b3571dc0f29ebc762295a4832536046
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549068"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276846"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Сбор данных по использованию памяти, полученных из .NET Framework, с помощью командной строки профилировщика
 
@@ -25,8 +25,8 @@ ms.locfileid: "34549068"
   
 |Задача|Связанная информация|  
 |----------|---------------------|  
-|**Запуск приложения и профилирование памяти .NET**|-   [Практическое руководство. Запуск приложения .NET Framework с профилировщиком для сбора данных об использовании памяти](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Присоединение профилировщика к приложению ASP.NET**|-   [Практическое руководство. Присоединение профилировщика к приложению .NET Framework для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Запуск приложения и профилирование памяти .NET**|-   [Практическое руководство. Запуск приложения .NET Framework с профилировщиком для сбора данных об использовании памяти](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**Присоединение профилировщика к приложению ASP.NET**|-   [Практическое руководство. Присоединение профилировщика к приложению .NET Framework для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
 |**Инструментирование приложения для сбора данных об использовании памяти .NET**|-   [Практическое руководство. Инструментирование автономного компонента .NET Framework и сбор данных об использовании памяти с помощью профилировщика](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>Связанные задачи

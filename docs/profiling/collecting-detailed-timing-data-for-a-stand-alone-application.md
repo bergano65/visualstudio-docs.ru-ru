@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335818"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276355"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры для сбора подробных данных о производительности клиентского (автономного) компонента с использованием метода инструментирования в командной строке.  
@@ -27,8 +27,8 @@ ms.locfileid: "34335818"
   
 |Задача|Связанная информация|  
 |----------|---------------------|  
-|**Профилирование приложения .NET Framework с помощью инструментирования**|-   [Практическое руководство. Инструментирование компонента .NET и сбор подробных данных об использовании времени](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Профилирование приложения C/C++ с помощью инструментирования**|-   [Практическое руководство. Инструментирование собственного компонента и сбор данных о времени](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Профилирование приложения .NET Framework с помощью инструментирования**|-   [Практическое руководство. Инструментирование компонента .NET и сбор подробных данных об использовании времени](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**Профилирование приложения C/C++ с помощью инструментирования**|-   [Практическое руководство. Инструментирование собственного компонента и сбор данных о времени](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**Добавление данных взаимодействия между уровнями**|-   [Сбор данных о взаимодействии уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Связанные задачи
