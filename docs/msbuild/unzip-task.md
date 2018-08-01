@@ -24,17 +24,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a46f2a079cc35e6c1add9e53abdcbdd283ddb9e
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: f633e741cf72596708963d89973eb039b18b4e88
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059445"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151217"
 ---
 # <a name="unzip-task"></a>Задача Unzip
-Распаковывает архив `.zip` в заданное расположение.
+Распаковывает *ZIP-архив* в заданное расположение.
 
-**Примечание**. Задача `Unzip` доступна только в MSBuild 15.8 и более поздних версий.
+>[!NOTE]
+>Задача `Unzip` доступна только в MSBuild 15.8 и более поздних версий.
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Unzip` .  
@@ -47,7 +48,7 @@ ms.locfileid: "37059445"
 |`SourceFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает один или несколько распаковываемых файлов. При указании нескольких файлов они распаковываются по очереди одну папку.|
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  В следующем примере распаковывается архив и перезаписываются файлы только для чтения.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750858"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179580"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Создание и запуск закодированного веб-теста производительности
 
@@ -85,7 +85,7 @@ ms.locfileid: "34750858"
 ## <a name="qa"></a>Вопросы и ответы
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Вопрос. Можно ли запустить несколько тестов одновременно?
- **Ответ.** Да, используйте контекстное меню в обозревателе решений.
+ **Ответ.** Да, используйте контекстное меню в **обозревателе решений**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Вопрос. Добавлять источник данных следует до или после создания закодированного теста?
  **Ответ.** Проще [добавить источник данных](../test/add-a-data-source-to-a-web-performance-test.md) до создания закодированного теста, потому что в этом случае код будет создан автоматически.
@@ -97,4 +97,4 @@ ms.locfileid: "34750858"
  Это может произойти, если для класса теста определен атрибут DataSourceAttribute без соответствующего атрибута DataBindingAttribute. Чтобы устранить эту ошибку, добавьте соответствующий атрибут DataBindingAttribute, удалите лишний атрибут или преобразуйте его в комментарий в коде.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Вопрос. Добавлять правила проверки и извлечения следует до или после создания закодированного теста?
- **Ответ.** Проще добавить правила проверки и правила извлечения до создания закодированного теста; рекомендуется, однако, использовать для проверки [закодированные тесты пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md).
+ **Ответ.** Проще добавить правила проверки и правила извлечения до создания закодированного теста; но мы рекомендуем использовать для проверки [закодированные тесты пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md).

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5fffd9ac865b281dc921997f48d7609a9429f64
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890231"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233156"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 
@@ -26,9 +26,9 @@ ms.locfileid: "37890231"
 > - Эмулятор Android для Visual Studio не поддерживается в версиях старше Visual Studio 2015.
 > - Образы эмулятора версии, старше Android 6.0, не доступны для эмулятора Android для Visual Studio.
 > - Google Android Emulator теперь поддерживает [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
-> - Инструменты Visual Studio для Apache Cordova работают с эмулятором Google Android Emulator. Дополнительные сведения см. в разделе [Запуск приложения Apache Cordova в Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator) (обратите внимание, что больше не нужно отключать Hyper-V, как описано в этой статье).
+> - Инструменты Visual Studio для Apache Cordova работают с эмулятором Google Android Emulator. Дополнительные сведения см. в разделе [Запуск приложения Apache Cordova в Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (обратите внимание, что больше не нужно отключать Hyper-V, как описано в этой статье).
 >
-> Дополнительные сведения о настройке и использовании Google Android Emulator см. в разделе [Настройка Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
+> Дополнительные сведения о настройке и использовании Google Android Emulator см. в [этой статье](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
   
  Эмулятор Visual Studio для Android обеспечивает производительность, сравнимую с быстродействием реального устройства. Однако перед публикацией приложение рекомендуется проверить на физическом устройстве.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "37890231"
 ##  <a name="Requirements"></a> Требования к системе и обратная совместимость  
  Важные сведения о требованиях к оборудованию, программному обеспечению и конфигурации для эмулятора Visual Studio для Android см. в следующих разделах.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  Эмулятору Visual Studio для Android требуется Visual Studio 2015. Он не поддерживает обратную совместимость с более ранними версиями Visual Studio.  
   
@@ -68,7 +68,7 @@ ms.locfileid: "37890231"
   
  Чтобы понять возможности сетевого подключения эмулятора, примите его за аналог подключения Wi-Fi с телефона Android к той же сети. Если приложение, запущенное на телефоне, может обращаться к сетевому ресурсу через подключение Wi-Fi, приложению в эмуляторе также будет доступен тот же сетевой ресурс.  
   
- Дополнительные сведения о требованиях к сети см. в разделе [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+ Дополнительные сведения о требованиях к сети см. в статье [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
  Сведения об устранении сетевых проблем см. в разделе [Устранение неполадок в эмуляторе Visual Studio для Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   

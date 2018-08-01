@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ce653c1b7f8eb3b7118fac3ab61f40ba77082e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1cce49157ad4c9c811c51ba0c491b3e97fea1736
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945888"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177221"
 ---
 # <a name="csc-task"></a>Csc - задача
 Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -60,12 +60,12 @@ ms.locfileid: "37945888"
 |`ModuleAssemblyName`|Необязательный параметр `String` .<br /><br /> Задает имя сборки, частью которой будет этот модуль.|  
 |`NoConfig`|Необязательный параметр `Boolean` .<br /><br /> Значение `true` предписывает компилятору не использовать файл *csc.rsp*. Дополнительные сведения см. в разделе [-noconfig (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
 |`NoLogo`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр равен `true`, отображение заголовка компилятора отключается. Дополнительные сведения см. в разделе [-nologo (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option).|  
-|`NoStandardLib`|Необязательный параметр `Boolean` .<br /><br /> Значение `true` отключает импорт библиотеки mscorlib.dll, определяющей все пространство имен System. Используйте этот параметр, если вы хотите определить или создать собственное пространство имен System и соответствующие объекты. Дополнительные сведения см. в разделе [-nostdlib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
+|`NoStandardLib`|Необязательный параметр `Boolean` .<br /><br /> Значение `true` отключает импорт библиотеки *mscorlib.dll*, определяющей все пространство имен System. Используйте этот параметр, если вы хотите определить или создать собственное пространство имен System и соответствующие объекты. Дополнительные сведения см. в разделе [-nostdlib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
 |`NoWin32Manifest`|Необязательный параметр `Boolean` .<br /><br /> Если значение `true`, манифест Win32 по умолчанию не включается.|  
 |`Optimize`|Необязательный параметр `Boolean` .<br /><br /> Значение `true` включает оптимизации. Значение `false` отключает оптимизации. Дополнительные сведения см. в разделе [-optimize (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|Необязательный выходной параметр `String`.<br /><br /> Задает имя выходного файла. Дополнительные сведения см. в разделе [-out (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
 |`OutputRefAssembly`|Необязательный параметр `String` .<br /><br /> Задает имя выходного файла базовой сборки. Дополнительные сведения см. в разделе [-refout (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
-|`PdbFile`|Необязательный параметр `String` .<br /><br /> Задает имя файла отладочной информации. По умолчанию используется имя файла выходных данных с расширением PDB.|  
+|`PdbFile`|Необязательный параметр `String` .<br /><br /> Задает имя файла отладочной информации. По умолчанию используется имя файла выходных данных с расширением *.pdb*.|  
 |`Platform`|Необязательный параметр `String` .<br /><br /> Указывает целевую платформу процессора для выходного файла. Этот параметр может иметь значение `x86`, `x64` или `anycpu`. Значение по умолчанию — `anycpu`. Дополнительные сведения см. в разделе [-platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Вызывает импорт задачей информации об открытых типах из заданных элементов в текущий проект. Дополнительные сведения см. в разделе [-reference (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Вы можете задать псевдоним ссылки [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] в файле [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], добавив метаданные `Aliases` к исходному элементу Reference. Например, требуется установить псевдоним LS1 в следующей командной строке CSC.<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Для этого используется следующий код.<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
 |`Resources`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Внедряет ресурс [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/resource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-resource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
@@ -78,9 +78,9 @@ ms.locfileid: "37945888"
 |`WarningLevel`|Необязательный параметр `Int32` .<br /><br /> Задает уровень предупреждений, которые должны отображаться компилятором. Дополнительные сведения см. в разделе [-warn (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).|  
 |`WarningsAsErrors`|Необязательный параметр `String` .<br /><br /> Задает список предупреждений, которые следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Этот параметр переопределяет параметр `TreatWarningsAsErrors`.|  
 |`WarningsNotAsErrors`|Необязательный параметр `String` .<br /><br /> Задает список предупреждений, которые не следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Этот параметр имеет смысл только в том случае, если для параметра `TreatWarningsAsErrors` задано значение `true`.|  
-|`Win32Icon`|Необязательный параметр `String` .<br /><br /> Вставляет ICO-файл в сборку, которая придает выходному файлу необходимый вид в проводнике. Дополнительные сведения см. в разделе [-win32icon (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
+|`Win32Icon`|Необязательный параметр `String` .<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в **проводнике**. Дополнительные сведения см. в разделе [-win32icon (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
 |`Win32Manifest`|Необязательный параметр `String` .<br /><br /> Задает манифест Win32, который требуется включить.|  
-|`Win32Resource`|Необязательный параметр `String` .<br /><br /> Вставляет файл ресурсов Win32 (RES-файл) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
+|`Win32Resource`|Необязательный параметр `String` .<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
   
 ## <a name="remarks"></a>Примечания  
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса `Microsoft.Build.Tasks.ManagedCompiler`, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  

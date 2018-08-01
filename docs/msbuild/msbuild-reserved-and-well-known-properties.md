@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b4fb0d11c1ed100b6ebd124da909e245baa1db
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 46638f92165f48fc3de20494df226590fd9450eb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078918"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176906"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства MSBuild
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предусмотрен набор предопределенных свойств для сохранения информации о файле проекта и двоичных файлах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Значения этих свойств вычисляются так же, как и значения других свойств [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Например, для использования свойства `MSBuildProjectFile` необходимо ввести `$(MSBuildProjectFile)`  
@@ -39,7 +39,7 @@ ms.locfileid: "39078918"
 |`MSBuildExtensionsPath32`|Стандартное|Путь к вложенной папке [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в папке *\Program Files\* или *\Program Files (x86)*. Этот путь всегда указывает на папку *\Program Files* на 32-разрядном компьютере и на папку *\Program Files (x86)* на 64-разрядном компьютере. См. также `MSBuildExtensionsPath` и `MSBuildExtensionsPath64`.<br /><br /> Не включайте в это свойство завершающую обратную косую черту.|  
 `MSBuildExtensionsPath64`|Стандартное|Путь к вложенной папке [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в папке *\Program Files*. На 64-разрядном компьютере этот путь всегда указывает на папку *\Program Files*. На 32-разрядном компьютере этот путь будет пустым. См. также `MSBuildExtensionsPath` и `MSBuildExtensionsPath32`.<br /><br /> Не включайте в это свойство завершающую обратную косую черту.|  
 |`MSBuildLastTaskResult`|Зарезервированное|Значение `true`, если предыдущая задача завершилась без ошибок (даже если были предупреждения), или значение `false`, если в предыдущей задаче были ошибки. Обычно, если в задаче возникает ошибка, эта ошибка — последнее, что происходит в проекте. Следовательно, это свойство никогда не принимает значение `false`, кроме как в следующих сценариях:<br /><br /> — Когда для атрибута `ContinueOnError` [элемента Task (MSBuild)](../msbuild/task-element-msbuild.md) задано значение `WarnAndContinue` (или `true`) или `ErrorAndContinue`.<br /><br /> — Когда `Target` имеет [элемент OnError (MSBuild)](../msbuild/onerror-element-msbuild.md) как дочерний элемент.|  
-|`MSBuildNodeCount`|Зарезервированное|Максимальное количество параллельных процессов, используемых при сборке. Это значение, заданное для параметра **/maxcpucount** в командной строке. Если параметр **/maxcpucount** указан без задания значения, `MSBuildNodeCount` определяет количество процессоров в компьютере. Дополнительные сведения см. в разделах [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md) и [Параллельное построение нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
+|`MSBuildNodeCount`|Зарезервированное|Максимальное количество параллельных процессов, используемых при сборке. Это значение, заданное для параметра **/maxcpucount** в командной строке. Если параметр **/maxcpucount** указан без задания значения, `MSBuildNodeCount` определяет количество процессоров в компьютере. Дополнительные сведения см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md) и статье о [параллельном создании нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
 |`MSBuildProgramFiles32`|Зарезервированное|Расположение 32-разрядной папки программы; например, *C:\Program Files (x86)*.<br /><br /> Не включайте в это свойство завершающую обратную косую черту.|  
 |`MSBuildProjectDefaultTargets`|Зарезервированное|Полный список целей, указанных в атрибуте `DefaultTargets` элемента `Project`. Например, для следующего элемента `Project` свойство `MSBuildDefaultTargets` будет иметь значение `A;B;C`:<br /><br /> `<Project DefaultTargets="A;B;C" >`|  
 |`MSBuildProjectDirectory`|Зарезервированное|Абсолютный путь к каталогу, где располагается файл проекта, например *C:\MyCompany\MyProduct*.<br /><br /> Не включайте в это свойство завершающую обратную косую черту.|  
@@ -57,7 +57,7 @@ ms.locfileid: "39078918"
 |`MSBuildThisFileFullPath`|Зарезервированное|Абсолютный путь файла проекта или файла целей, содержащего запущенную цель.<br /><br /> Совет. В файле целей можно указать относительный путь, являющийся относительным для файла целей и не являющийся относительным для файла исходного проекта.|  
 |`MSBuildThisFileName`|Зарезервированное|Часть `MSBuildThisFileFullPath`, представляющая собой имя файла без расширения.|  
 |`MSBuildToolsPath`|Зарезервированное|Путь установки версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], связанной со значением `MSBuildToolsVersion`.<br /><br /> Не включайте в путь завершающую обратную косую черту.<br /><br /> Это свойство нельзя переопределить.|  
-|`MSBuildToolsVersion`|Зарезервированное|Версия набора инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], используемая для сборки проекта.<br /><br /> Примечание. Набор инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] состоит из задач, целей и средств, используемых для сборки приложения. Средства включают компиляторы *csc.exe* и *vbc.exe*. Дополнительные сведения см. в разделах [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) и [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md).|  
+|`MSBuildToolsVersion`|Зарезервированное|Версия набора инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], используемая для сборки проекта.<br /><br /> Примечание. Набор инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] состоит из задач, целей и средств, используемых для сборки приложения. Средства включают компиляторы *csc.exe* и *vbc.exe*. Дополнительные сведения см. в статьях [Набор инструментов MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) и [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md).|  
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Имена, которые конфликтуют с элементами MSBuild
 

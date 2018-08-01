@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f44ad3a7c44f9de592d3b4d4add261fca74f5c39
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281304"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231860"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
 
@@ -47,7 +47,7 @@ Visual Studio (совместно с Visual Studio Team Services и Team Foundat
 
 Ссылка: **[Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)**
 
-Функции разработки не зависят от языка программирования или работы с языками .NET, такими как C#. Аспекты, связанные с кодом, описаны в статье [Роли архитектуры и схем моделирования в разработке программного обеспечения](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).
+Функции разработки не зависят от языка программирования или работы с языками .NET, такими как C#. Аспекты, связанные с кодом, описаны в разделе [Роли архитектуры и схем моделирования в разработке программного обеспечения](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
@@ -91,7 +91,7 @@ Visual Studio (совместно с Visual Studio Team Services и Team Foundat
 |Test Manager (запись и воспроизведение тестов)|Да|Только устройства Windows и эмуляторы Android из Visual Studio. Возможна запись для всех устройств с помощью [Средства записи тестов Xamarin](/appcenter/test-cloud/uitest/).|
 |Покрытие кода|Н/Д||
 |[Модульное тестирование кода](../test/unit-test-your-code.md)|Да|Для целевых платформ Windows и Android можно использовать встроенные средства MSTest. Для выполнения модульных тестов в Windows, iOS и Android Xamarin рекомендует использовать NUnit. См. раздел [Использование TFVC](/vsts/tfvc/overview?view=vsts).|
-|[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)|Только для Windows|Средства записи тестов пользовательского интерфейса Visual Studio предназначено только для Windows. Сведения для других платформ см. в разделе [Xamarin.UITest](/appcenter/test-cloud/uitest/).|
+|[Использование автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)|Только для Windows|Средства записи тестов пользовательского интерфейса Visual Studio предназначено только для Windows. Сведения для других платформ см. в разделе [Xamarin.UITest](/appcenter/test-cloud/uitest/).|
 
 ## <a name="improve-code-quality"></a>Улучшите качество кода
 

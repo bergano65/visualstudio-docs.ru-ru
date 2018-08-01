@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8914b6b876b27b94add446a627087fb34e5082ea
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890413"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204210"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 
@@ -26,10 +26,12 @@ ms.locfileid: "37890413"
 
 ## <a name="system-requirements"></a>Требования к системе
 
+В следующей таблице указаны требования к системе для установки агента тестирования или контроллера тестирования для Visual Studio 2017:
+
 | Элемент | Требования |
 | ---- | ------------ |
-| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
-| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
+| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
+| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4,5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Установка контроллера и агентов тестирования

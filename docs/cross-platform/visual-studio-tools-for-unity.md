@@ -1,7 +1,7 @@
 ---
 title: Инструменты Visual Studio для Unity | Документация Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,34 +10,48 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 98c2ac925f1bcdfb4297444f8a3e52379d08d6d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70c021afc74abe03116c5227443d91e851df3545
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31063256"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154061"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
-В этом разделе мы рассмотрим набор средств Visual Studio для Unity, представляющих собой бесплатное расширение Visual Studio, которое делает данную систему мощным средством для создания игр с помощью Unity.
 
-## <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
- **Unity** представляет собой ядро для игр и среду разработки кросс-платформенных игр. Подсистема Unity функционирует на различных платформах: на мощных ПК, игровых приставках, на сенсорных планшетных ПК, мобильных телефонах и даже через Интернет. Редактор Unity предоставляет дружественный интерфейс для создания полнофункциональной игровой среды. Благодаря своим возможностям, простоте использования и функциональности Unity стала популярной среди разработчиков современных игр.
+![Набор средств Visual Studio для Unity](media/vstu_header.png)
 
- Редактор Unity отлично подходит для объединения вашей игровой среды, но непосредственно в нем создавать код нельзя. Благодаря **набору средств Visual Studio для Unity** можно использовать знакомые возможности редактирования кода и повышения производительности среды Visual Studio для создания скриптов редакторов и игр Unity на C#, а также отлаживать их с помощью мощных средств отладки Visual Studio.
+Инструменты Visual Studio для Unity представляют собой бесплатное расширение Visual Studio, которое превращает Visual Studio в мощное средство для разработки кроссплатформенных игр и приложений с помощью платформы Unity.
 
- Однако набор средств Visual Studio Tools для Unity не ограничивается только вышеперечисленным. Он также тесно интегрирован с редактором Unity, что позволяет тратить меньше времени на выполнение простых задач, обеспечивает повышение производительности, характерное для Unity, а также делает очень удобной работу с документацией по Unity.
+Редактор Unity отлично подходит для объединения вашей игровой среды, но непосредственно в нем создавать код нельзя. Благодаря набору средств Инструментов Visual Studio для Unity можно использовать знакомые возможности среды Visual Studio редактирования, отладки и повышения производительности кода, чтобы создавать редактор и игровые скрипты для проекта Unity на C#, а также отлаживать их с помощью мощных средств отладки Visual Studio.
 
- Дополнительные сведения о возможностях набора средств Visual Studio для Unity см. в [обзоре набора средств Visual Studio для Unity](../cross-platform/overview-of-visual-studio-tools-for-unity.md). Сведения об установке набора средств Visual Studio для Unity и их использовании в проекте Unity см. в статье, посвященной [началу работы с набором средств Visual Studio для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).
+Однако набор средств Visual Studio Tools для Unity не ограничивается только вышеперечисленным. Он также тесно интегрирован с редактором Unity, что позволяет тратить меньше времени на выполнение простых задач, обеспечивает повышение производительности, характерное для Unity, а также делает очень удобной работу с документацией по Unity.
 
-## <a name="more-in-this-section"></a>Дополнительные сведения в этом разделе
- [Обзор](../cross-platform/overview-of-visual-studio-tools-for-unity.md). В этом разделе вы более подробно узнаете о возможностях набора средств Visual Studio для Unity.
+## <a name="overview"></a>Обзор
 
- [Начало работы](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md). В этом разделе мы рассмотрим, как установить набор средств Visual Studio для Unity для вашей версии Visual Studio и как начать использовать Visual Studio с проектом Unity.
+Посетите страницу [Создание игр Unity с помощью Visual Studio](https://visualstudio.microsoft.com/vs/unity-tools/) для обзора преимуществ использования Visual Studio для разработки Unity или продолжайте читать эту статью, чтобы получить подробные сведения о ключевых особенностях Инструментов Visual Studio для Unity:
 
- [Использование инструментов Visual Studio для Unity](../cross-platform/using-visual-studio-tools-for-unity.md). В этом разделе мы рассмотрим, как использовать возможности интеграции и повышения производительности набора средств Visual Studio для Unity, а также как использовать отладчик Visual Studio для разработки Unity.
+### <a name="compatible-with-visual-studio-community-and-bundled-with-unity"></a>Совместимость с Visual Studio Community и объединение с Unity
 
- [Программирование инструментов Visual Studio для Unity](../cross-platform/programming-visual-studio-tools-for-unity.md). В этом разделе приведены примеры использования набора средств Visual Studio для Unity API.
+[Visual Studio Community](https://visualstudio.microsoft.com/) доступна бесплатно и входит в пакет установки Unity, начиная с Unity 2018.1. Дополнительные сведения см. в статье [Начало работы с набором средств Visual Studio для Unity](getting-started-with-visual-studio-tools-for-unity.md).
 
- [Устранение неполадок и известные проблемы](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md). В этом разделе рассмотрены решения по устранению проблем, типичных для набора средств Visual Studio для Unity, приведено описание известных проблем и показано, как улучшить функционирование набора средств Visual Studio для Unity с помощью отчетов об ошибках.
+### <a name="intellisense-for-unity-messages"></a>IntelliSense для сообщений Unity
 
- [Журнал изменений](../cross-platform/change-log-visual-studio-tools-for-unity.md). В этом разделе рассматриваются новые возможности, исправленные ошибки и другие изменения в каждой версии набора средств Visual Studio для Unity.
+Автозавершение кода IntelliSense позволяет легко и просто [реализовать сообщения Unity API](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages), например `OnCollisionEnter`, включая их параметры.
+
+### <a name="superior-debugging"></a>Расширенные возможности отладки
+
+Инструменты Visual Studio для Unity поддерживают надежные функции [отладки](using-visual-studio-tools-for-unity.md#unity-debugging), характерные для Visual Studio:
+
+* Задавайте точки останова, включая условные.
+* Оценивайте сложные выражения в окне "Контрольные значения".
+* Проверяйте и изменяйте значения переменных и аргументов.
+* Детализируйте сложные объекты и структуры данных.
+
+### <a name="visual-studio-for-mac-tools-for-unity"></a>Инструменты Visual Studio для Mac для Unity
+
+Visual Studio для Mac также поддерживает проекты Unity. Дополнительную информацию см. в [документации по инструментам Visual Studio для Mac для Unity](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools).
+
+## <a name="next-steps"></a>Следующие шаги
+
+* [Начало работы с Инструментами Visual Studio для Unity](getting-started-with-visual-studio-tools-for-unity.md)

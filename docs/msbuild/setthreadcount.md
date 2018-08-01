@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b36da837ae1f4c327969b398c3964bfd6dd2aea3
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 9cc9a1ae5f7fb51981f3cebc4d6fa658f614de6d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302754"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151844"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Задает глобальный счетчик потоков и назначает его текущему потоку.  
@@ -41,4 +41,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  **HRESULT** с установленным битом **SUCCEEDED**, если счетчик потоков был обновлен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** FileTracker.h
+ **Заголовок:** *FileTracker.h*

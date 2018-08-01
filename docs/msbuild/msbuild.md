@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: cd6736242e6fa130fdbb356261cae8e63f3c952f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327158"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154792"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. С помощью вызова msbuild.exe для файла проекта или решения можно контролировать и собирать в продукты в средах без установленного экземпляра Visual Studio.  
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.  
   
- Visual Studio использует MSBuild для загрузки и сборки управляемых проектов. Файлы проектов в Visual Studio (с расширением CSPROJ, VBPROJ, VCXPROJ) содержат код XML MSBuild, который выполняется при сборке проекта с помощью интегрированной среды разработки. Проекты Visual Studio импортируют все необходимые параметры и процессы сборки для выполнения стандартной работы по разработке, но их можно расширять и изменять в Visual Studio или в редакторе XML.  
+ Visual Studio использует MSBuild для загрузки и сборки управляемых проектов. Файлы проектов в Visual Studio (с расширением *CSPROJ*, *VBPROJ*, *VCXPROJ*) содержат код XML MSBuild, который выполняется при создании проекта с помощью интегрированной среды разработки. Проекты Visual Studio импортируют все необходимые параметры и процессы сборки для выполнения стандартной работы по разработке, но их можно расширять и изменять в Visual Studio или в редакторе XML.  
   
  Сведения об MSBuild для C++ см. в разделе [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
@@ -44,36 +44,16 @@ ms.locfileid: "36327158"
     -   создание сжатых файлов из выходных данных сборки;  
   
     -   пост-обработка. Например, может потребоваться присвоить сборке другой номер версии.  
-  
- Можно написать код в интегрированной среде разработки Visual Studio, но запускать сборку с помощью MSBuild. В качестве альтернативы можно выполнять сборку кода в интегрированной среде разработки на компьютере разработчика, но использовать командную строку MSBuild для сборки и интеграции кода, полученного от нескольких разработчиков.  
+
+Можно написать код в интегрированной среде разработки Visual Studio, но запускать сборку с помощью MSBuild. В качестве альтернативы можно выполнять сборку кода в интегрированной среде разработки на компьютере разработчика, но использовать командную строку MSBuild для сборки и интеграции кода, полученного от нескольких разработчиков.  
   
 > [!NOTE]
 >  С помощью Team Foundation Build можно автоматически компилировать, тестировать и развертывать приложение. Система сборки может автоматически запускать сборку, когда разработчики возвращают код (например, как часть стратегии непрерывной интеграции) или по расписанию (например, выполнять ежедневную ночную тестовую сборку). Team Foundation Build компилирует код с использованием MSBuild. См. дополнительные сведения о [сборке и выпуске](/vsts/build-release/index).  
   
  В этом разделе представлен обзор MSBuild. Вводное руководство см. в разделе [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
-  
- **Содержание раздела**  
-  
--   [Использование MSBuild в командной строке](#BKMK_CommandPrompt)  
-  
--   [Файл проекта](#BKMK_ProjectFile)  
-  
-    -   [Свойства](#BKMK_Properties)  
-  
-    -   [Элементы](#BKMK_Items)  
-  
-    -   [Задачи](#BKMK_Tasks)  
-  
-    -   [Целевые объекты](#BKMK_Targets)  
-  
--   [Журналы построений](#BKMK_BuildLogs)  
-  
--   [Использование MSBuild в Visual Studio](#BKMK_VisualStudio)  
-  
--   [Настройка для различных версий](#BKMK_Multitargeting)  
-  
-##  <a name="BKMK_CommandPrompt"></a> Использование MSBuild в командной строке  
- Чтобы запустить [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] из командной строки, передайте файл проекта в MSBuild.exe с использованием соответствующих параметров командной строки. Параметры командной строки позволяют задавать свойства, выполнять определенные целевые объекты и задавать другие параметры, управляющие процессом построения. Например, используя следующий синтаксис командной строки, можно создать файл `MyProj.proj` со свойством `Configuration`, для которого задается значение `Debug`.  
+
+##  <a name="use-msbuild-at-a-command-prompt"></a>Использование MSBuild в командной строке  
+ Чтобы запустить [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] из командной строки, передайте файл проекта в *MSBuild.exe* с использованием соответствующих параметров командной строки. Параметры командной строки позволяют задавать свойства, выполнять определенные целевые объекты и задавать другие параметры, управляющие процессом построения. Например, используя следующий синтаксис командной строки, можно создать файл *MyProj.proj* со свойством `Configuration`, для которого задается значение `Debug`.  
   
 ```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
@@ -84,10 +64,10 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 > [!IMPORTANT]
 >  Перед загрузкой проекта определите, можно ли доверять коду.  
   
-##  <a name="BKMK_ProjectFile"></a> Файл проекта  
+##  <a name="project-file"></a>Файл проекта  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] использует открытый и расширяемый формат файлов проекта на базе XML. Формат файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет разработчикам описывать создаваемые элементы, а также способы их построения для разных операционных систем и конфигураций. Кроме того, формат файла проекта позволяет разработчикам создавать многократно используемые правила сборки, которые можно разложить на отдельные файлы, чтобы сборки могли выполняться единообразно в различных проектах в составе соответствующего продукта.  
   
- В следующих разделах описаны некоторые из базовых элементов формата файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Учебник о способах создания основного файла проекта см. в разделе [Пошаговое руководство. Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ В следующих разделах описаны некоторые из базовых элементов формата файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. См. дополнительные сведения о [создании базового файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ###  <a name="BKMK_Properties"></a> Свойства  
  Свойства представляют пары ключ-значение, с помощью которых выполняется настройка построения. Для объявления свойства создается элемент с таким же именем как у свойства, который является дочерним по отношению к элементу [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Например, в следующем коде создается свойство `BuildDir` со значением `Build`.  
@@ -104,7 +84,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 <Configuration  Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
 ```  
   
- Для обращения к свойствам в файле проекта используется синтаксис $(*ИмяСвойства*). Например, к свойствам из предыдущих примеров можно обращаться с помощью конструкций `$(BuildDir)` и `$(Configuration)`.  
+ Для создания ссылок на свойства в файле проекта используется синтаксис $(\<имя_свойства>). Например, к свойствам из предыдущих примеров можно обращаться с помощью конструкций `$(BuildDir)` и `$(Configuration)`.  
   
  Дополнительные сведения о свойствах см. в разделе [Свойства MSBuild](../msbuild/msbuild-properties.md).  
   
@@ -120,7 +100,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </ItemGroup>  
 ```  
   
- Для обращения к типам элементов в файле проекта используется синтаксис @(*ТипЭлемента*). Например, ссылка на тип элементов в этом примере выглядела бы следующим образом: `@(Compile)`.  
+ Для создания ссылок на типы элементов в файле проекта используется синтаксис @(\<тип_элемента>). Например, ссылка на тип элементов в этом примере выглядела бы следующим образом: `@(Compile)`.  
   
  В MSBuild имена элементов и атрибутов задаются с учетом регистра. А имена свойств, элементов (item) и метаданных — нет. В следующем примере создается тип элементов `Compile`, `comPile` или любого другого варианта написания, и типу элементов присваивается значение "one.cs;two.cs".  
   
@@ -136,9 +116,9 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ###  <a name="BKMK_Tasks"></a> Задачи  
  Задачи — это блоки исполняемого кода, с помощью которых в проектах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняются операции построения. Например, в задаче может выполняться компиляция входных файлов или запускаться внешняя программа. Созданные задачи могут использоваться совместно и многократно разными разработчиками в различных проектах.  
   
- Алгоритм выполнения задачи записан в управляемом коде и сопоставлен с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] с помощью элемента [UsingTask](../msbuild/usingtask-element-msbuild.md). Для создания собственной задачи можно разработать управляемый тип, реализующий интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения о способах создания задач см. в разделе [Написание задач](../msbuild/task-writing.md).  
+ Алгоритм выполнения задачи записан в управляемом коде и сопоставлен с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] с помощью элемента [UsingTask](../msbuild/usingtask-element-msbuild.md). Для создания собственной задачи можно разработать управляемый тип, реализующий интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения о способах создания задач см. в руководстве по [написанию задач](../msbuild/task-writing.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включает стандартные задачи, которые можно изменять в соответствии с требованиями.  Примеры: [Copy](../msbuild/copy-task.md) — копирование файлов, [MakeDir](../msbuild/makedir-task.md) — создание каталогов, [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода Visual C#. Список доступных задач и сведения об их использовании см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включает стандартные задачи, которые можно изменять в соответствии с требованиями.  Примеры: [Copy](../msbuild/copy-task.md) — копирование файлов, [MakeDir](../msbuild/makedir-task.md) — создание каталогов, [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода Visual C#. Список доступных задач и сведения об их использовании см. в [справочнике по задачам](../msbuild/msbuild-task-reference.md).  
   
  Задача выполняется в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] путем создания элемента с таким же именем как у задачи в виде дочернего элемента по отношению к элементу [Target](../msbuild/target-element-msbuild.md). Задачи, как правило, принимают параметры, которые передаются как атрибуты элемента. В качестве параметров можно использовать свойства и элементы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Например, с помощью следующего кода вызывается задача [MakeDir](../msbuild/makedir-task.md) и ей передается значение свойства `BuildDir`, объявленного в предыдущем примере.  
   
@@ -163,11 +143,11 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  В более сложных сценариях целевые объекты могут использоваться для описания связей друг с другом и выполнять анализ зависимостей, что позволяет пропускать целые разделы процесса сборки, если такой целевой объект актуален. Дополнительные сведения о целевых объектах см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md).  
   
-##  <a name="BKMK_BuildLogs"></a> Журналы построений  
- Ошибки, предупреждения и сообщения журнала сборки можно выводить на консоль или на другое устройство вывода. Дополнительные сведения см. в разделах [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md) и [Ведение журнала в MSBuild](../msbuild/logging-in-msbuild.md).  
+##  <a name="build-logs"></a>Журналы сборки  
+ Ошибки, предупреждения и сообщения журнала сборки можно выводить на консоль или на другое устройство вывода. Дополнительные сведения см. в руководствах по [получению журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md) и [ведению журналов в MSBuild](../msbuild/logging-in-msbuild.md).  
   
-##  <a name="BKMK_VisualStudio"></a> Использование MSBuild в Visual Studio  
- В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] используется формат файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для хранения данных построения об управляемых объектах. Параметры проекта, добавленные или измененные с помощью интерфейса [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], отражаются в PROJ-файле, который создается для каждого проекта. Для построения управляемых проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] используется размещенный экземпляр [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Это означает, что выполнить построение управляемого проекта можно в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или в командной строке (даже при отсутствии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]), и результаты будут одинаковыми.  
+## <a name="use-msbuild-in-visual-studio"></a>Использование MSBuild в Visual Studio  
+ В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] используется формат файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для хранения данных построения об управляемых объектах. Параметры проекта, добавленные или измененные с помощью интерфейса [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], отражаются в файле *.\*proj*, который создается для каждого проекта. Для построения управляемых проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] используется размещенный экземпляр [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Это означает, что выполнить построение управляемого проекта можно в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или в командной строке (даже при отсутствии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]), и результаты будут одинаковыми.  
   
  Руководство по использованию MSBuild в Visual Studio см. в разделе [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -185,10 +165,10 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 -   После появления пакета обновления для текущей версии .NET Framework можно выбрать его в качестве целевой платформы.  
   
 -   Поддержка различных платформ гарантирует, что приложение использует только те функциональные возможности, которые доступны в целевой версии .NET Framework и платформы.  
+
+Дополнительные сведения см. в разделе [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md).  
   
- Дополнительные сведения см. в разделе [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md).  
-  
-## <a name="related-topics"></a>См. также  
+## <a name="see-also"></a>См. также  
   
 |Заголовок|Описание:|  
 |-----------|-----------------|  

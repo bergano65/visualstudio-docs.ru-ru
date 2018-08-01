@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c561c259641ce7bed118d8e4aa71c383b29b67
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327015"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155052"
 ---
 # <a name="otherwise-element-msbuild"></a>Элемент Otherwise (MSBuild)
 Указывает блок кода, который должен быть выполнен, только если условия всех элементов `When` оценены как `false`.  
@@ -49,7 +49,7 @@ ms.locfileid: "36327015"
 </Otherwise>  
 ```  
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
 
 ### <a name="attributes"></a>Атрибуты  

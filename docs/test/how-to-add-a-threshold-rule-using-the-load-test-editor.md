@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ede6e8d3dde3b8a6f76164b02457a98102bcbac7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965550"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179883"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Практическое руководство. Добавление правила порога с помощью редактора тестовой нагрузки
 
@@ -36,14 +36,13 @@ ms.locfileid: "31965550"
 
      Откроется диалоговое окно **Добавление правила порога**.
 
-5.  Можно выбрать один из двух типов правил: сравнивать с константой или сравнивать счетчики. Выберите нужный тип и установите значения.
+5.  Можно выбрать один из двух типов правил: **сравнивать с константой** или **сравнивать счетчики**. Выберите нужный тип и установите значения.
 
     > [!NOTE]
     > Чтобы нарушением считалось превышение порогового значения, установите для свойства **Оповещать при превышении** значение **True**, а чтобы нарушением считалось получение показания ниже порогового значения, установите значение **False**.
 
 ## <a name="see-also"></a>См. также
 
-- [Анализ нарушений правила пороговых значений](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Анализ нарушений правил порогов](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6b14ef4ae42ef978c449f7cb4bafaa08bf8a1a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96ce122c78c20b741613ed45820f585236a0383b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968139"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203671"
 ---
 # <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>Практическое руководство. Добавление меток компьютеров в сопоставления наборов счетчиков с помощью редактора тестовой нагрузки
 
-Теги компьютеров позволяют обозначать компьютеры простыми и понятными именами. Теги отображаются в узле **Сопоставление набора счетчиков** в дереве редактора тестовой нагрузки. Что более важно, эти теги отображаются в отчетах Excel, что позволяет заинтересованным лицам видеть, какую роль выполняет тот или иной компьютер в нагрузочном тесте. Например, "Веб-сервер 1 в лаборатории 2" или "SQL Server 2 в офисе в Финиксе". Дополнительные сведения см. в статье [Создание отчетов о результатах нагрузочных тестов для сравнения тестов или анализ трендов](../test/compare-load-test-results.md).
+Теги компьютеров позволяют обозначать компьютеры простыми и понятными именами. Теги отображаются в узле **Сопоставление набора счетчиков** в дереве редактора тестовой нагрузки. Что более важно, эти теги отображаются в отчетах Excel, что позволяет заинтересованным лицам видеть, какую роль выполняет тот или иной компьютер в нагрузочном тесте. Например, "Веб-сервер 1 в лаборатории 2" или "SQL Server 2 в офисе в Финиксе". Дополнительные сведения см. в статье [Создание отчетов о результатах нагрузочных тестов для сравнения тестов или анализа трендов](../test/compare-load-test-results.md).
 
 ## <a name="to-add-a-tag-to-a-computer"></a>Добавление тега к компьютеру
 
@@ -49,7 +49,7 @@ ms.locfileid: "31968139"
 
 ## <a name="see-also"></a>См. также
 
-- [Анализ нарушений правила пороговых значений](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Анализ нарушений правил порогов](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Практическое руководство. Управление наборами счетчиков](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 511e980b8c312803a82692042d7f88f389265c3a
-ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
+ms.openlocfilehash: 0f45cd451af252dbc62ea4ce0bc1d9edd90359a0
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36962584"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177296"
 ---
 # <a name="vbc-task"></a>Vbc - задача
 Использует программу-оболочку для файла *vbc.exe*, который создает исполняемые файлы (*EXE-файлы*), библиотеки динамической компоновки (*DLL-файлы*) или модули кода (*.netmodule*). Дополнительные сведения о файле *vbc.exe* см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -45,7 +45,7 @@ ms.locfileid: "36962584"
 |`Deterministic`|Необязательный параметр `Boolean` .<br/><br/> Если задано значение `true`, компилятор будет выдавать сборку, чье двоичное содержимое идентично в разных компиляциях, если входные данные идентичны.<br/><br/>Дополнительные сведения см. в разделе [-deterministic](/dotnet/visual-basic/reference/command-line-compiler/deterministic).|
 |`DisabledWarnings`|Необязательный параметр `String` .<br /><br /> Подавляет указанные предупреждения. Необходимо указать только числовую часть идентификатора предупреждения. При указании нескольких предупреждений они отделяются друг от друга точкой с запятой. Этот параметр соответствует параметру [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) компилятора *vbc.exe*.|  
 |`DocumentationFile`|Необязательный параметр `String` .<br /><br /> Обрабатывает комментарии к документации в указанный XML-файл. Этот параметр переопределяет атрибут `GenerateDocumentation`. Дополнительные сведения см. в разделе [-doc](/dotnet/visual-basic/reference/command-line-compiler/doc).|  
-|`EmitDebugInformation`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, задача генерирует отладочную информацию и помещает ее в PDB-файл. Дополнительные сведения см. в разделе [-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).|  
+|`EmitDebugInformation`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, задача генерирует отладочную информацию и помещает ее в *PDB-файл*. Дополнительные сведения см. в разделе [-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).|  
 |`ErrorReport`|Необязательный параметр `String` .<br /><br /> Указывает, как задача должна сообщать о внутренних ошибках компилятора. Этот параметр может иметь следующие значения:<br /><br /> -   `prompt`<br />-   `send`<br />-   `none`<br /><br /> Если задано значение `prompt`, то при возникновении внутренней ошибки компилятора пользователю предлагается возможность отправить сведения об ошибке в корпорацию Майкрософт.<br /><br /> Если присвоено значение, `send` при возникновении внутренней ошибки компилятора задача отправляет данные об ошибке в корпорацию Майкрософт.<br /><br /> Значение по умолчанию — `none`, при котором сообщение об ошибке отправляется только в виде текста.<br /><br /> Этот параметр соответствует параметру [-errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport) компилятора *vbc.exe*.|  
 |`FileAlignment`|Необязательный параметр `Int32` .<br /><br /> Задает выравнивание размеров выходного файла в байтах. Этот параметр может иметь следующие значения:<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> Этот параметр соответствует параметру [-filealign](/dotnet/visual-basic/reference/command-line-compiler/filealign) компилятора *vbc.exe*.|  
 |`GenerateDocumentation`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей. Дополнительные сведения см. в разделе [-doc](/dotnet/visual-basic/reference/command-line-compiler/doc).|  
@@ -59,7 +59,7 @@ ms.locfileid: "36962584"
 |`NoConfig`|Необязательный параметр `Boolean` .<br /><br /> Указывает, что компилятор не должен использовать файл *vbc.rsp*. Этот параметр соответствует параметру [-noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) компилятора *vbc.exe*.|  
 |`NoLogo`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр равен `true`, отображение заголовка компилятора отключается. Этот параметр соответствует параметру [-nologo](/dotnet/visual-basic/reference/command-line-compiler/nologo) компилятора *vbc.exe*.|  
 |`NoStandardLib`|Необязательный параметр `Boolean` .<br /><br /> Указывает компилятору не ссылаться на стандартные библиотеки. Этот параметр соответствует параметру [-nostdlib](/dotnet/visual-basic/reference/command-line-compiler/nostdlib) компилятора *vbc.exe*.|  
-|`NoVBRuntimeReference`|Необязательный параметр `Boolean` .<br /><br /> Только для внутреннего использования. Если присвоено значение true, предотвращает автоматическую ссылку на Microsoft.VisualBasic.dll.|  
+|`NoVBRuntimeReference`|Необязательный параметр `Boolean` .<br /><br /> Только для внутреннего использования. Если присвоено значение true, это предотвращает автоматическую ссылку на *Microsoft.VisualBasic.dll*.|  
 |`NoWarnings`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, задача отключает все предупреждения. Дополнительные сведения см. в разделе [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).|  
 |`Optimize`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение`true`, разрешает оптимизацию компилятора. Этот параметр соответствует параметру [-optimize](/dotnet/visual-basic/reference/command-line-compiler/optimize) компилятора *vbc.exe*.|  
 |`OptionCompare`|Необязательный параметр `String` .<br /><br /> Задает способ сравнения строк. Этот параметр может иметь следующие значения:<br /><br /> -   `binary`<br />-   `text`<br /><br /> Значение `binary` указывает на то, что в задаче используются двоичные сравнения строк. Значение `text` указывает на то, что в задаче используются текстовые сравнения строк. По умолчанию этот параметр имеет значение `binary`. Этот параметр соответствует параметру [-optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) компилятора *vbc.exe*.|  
@@ -86,7 +86,7 @@ ms.locfileid: "36962584"
 |`Verbosity`|Необязательный параметр `String` .<br /><br /> Задает уровень детализации выходных данных компилятора. Уровень детализации может быть `Quiet`, `Normal` (по умолчанию) или `Verbose`.|  
 |`WarningsAsErrors`|Необязательный параметр `String` .<br /><br /> Задает список предупреждений, которые следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Этот параметр переопределяет параметр `TreatWarningsAsErrors`.|  
 |`WarningsNotAsErrors`|Необязательный параметр `String` .<br /><br /> Задает список предупреждений, которые не следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Этот параметр имеет смысл только в том случае, если для параметра `TreatWarningsAsErrors` задано значение `true`.|  
-|`Win32Icon`|Необязательный параметр `String` .<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в проводнике. Этот параметр соответствует параметру [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) компилятора *vbc.exe*.|  
+|`Win32Icon`|Необязательный параметр `String` .<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в **проводнике**. Этот параметр соответствует параметру [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) компилятора *vbc.exe*.|  
 |`Win32Resources`|Необязательный параметр `String` .<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Этот параметр соответствует параметру [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) компилятора *vbc.exe*.|  
   
 ## <a name="remarks"></a>Примечания  
