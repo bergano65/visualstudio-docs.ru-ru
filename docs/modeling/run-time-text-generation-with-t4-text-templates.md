@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117658"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380747"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
 
@@ -152,7 +152,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>Код, созданный на основе шаблона
 
-При сохранении **.tt** файл, дочерней компании **.cs** или **.vb** создается файл. Чтобы просмотреть этот файл в обозревателе решений, разверните **.tt** узла файла. В проекте Visual Basic, сначала выберите **Показать все файлы** в панели инструментов обозревателя решений.
+При сохранении **.tt** файл, дочерней компании **.cs** или **.vb** создается файл. Чтобы просмотреть этот файл в **обозревателе решений**, разверните **.tt** узла файла. В проекте Visual Basic, сначала выберите **Показать все файлы** в **обозревателе решений** панели инструментов.
 
 Обратите внимание на то, что дочерний файл содержит разделяемый класс, содержащий метод, вызванный `TransformText()`. Этот метод можно вызвать из приложения.
 
