@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bed3140653e586ee4fb4899e6eba2b83f97035b0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079100"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178566"
 ---
 # <a name="item-definitions"></a>Определения элементов
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 поддерживается статическое объявление элементов в файлах проекта с использованием элемента [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Однако метаданные можно добавлять только на уровне элемента, даже если метаданные для всех элементов идентичны. Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 элемент проекта с именем [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) позволяет обойти это ограничение. *ItemDefinitionGroup* позволяет определить набор определений элементов, который добавляет значения метаданных по умолчанию для всех элементов в именованном типе элементов.  
@@ -144,7 +144,7 @@ ms.locfileid: "39079100"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Использование условий в ItemDefinitionGroup  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Использование условий в ItemDefinitionGroup  
  Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Пример:  
   
 ```xml  
@@ -190,7 +190,7 @@ ms.locfileid: "39079100"
 
 В приведенном выше примере m может быть присвоено значение m1, так как Condition содержит ссылку на значение метаданных элемента i для элемента yes. 
   
-## <a name="overriding-and-deleting-metadata"></a>Переопределение и удаление метаданных  
+## <a name="override-and-delete-metadata"></a>Переопределение и удаление метаданных  
  Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Пример:  
   
 ```xml  

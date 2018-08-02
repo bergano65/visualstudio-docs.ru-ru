@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35534c0c6965dd7f7db01e2299ff71572b8de9e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950297"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180481"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Страница "Ссылки" в конструкторе проектов (Visual Basic)
 Страница **Ссылки** **конструктора проектов** служит для управления ссылками, веб-ссылками и импортированными пространствами имен в проекте. Проекты могут содержать ссылки на компоненты COM, веб-службы XML, сборки или библиотеки классов .NET Framework или другие библиотеки классов. Дополнительные сведения о ссылках см. в статье [Управление ссылками в проекте](../../ide/managing-references-in-a-project.md).
@@ -62,7 +62,7 @@ ms.locfileid: "31950297"
 
  Выберите **Ссылка**, чтобы добавить ссылку в проект, используя диалоговое окно "Добавление ссылки".
 
- Выберите **Веб-ссылка**, чтобы добавить ссылку в проект, используя диалоговое окно "Добавление веб-ссылки".
+ Выберите **Веб-ссылка**, чтобы добавить ссылку в проект, используя диалоговое окно **Добавление веб-ссылки**.
 
  **Remove**
 

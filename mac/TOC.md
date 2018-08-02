@@ -21,6 +21,7 @@
 ## [Управление ссылками в проекте](managing-references-in-a-project.md)
 ### [Пошаговое руководство. Включение пакета NuGet в проект](nuget-walkthrough.md)
 ## [Управление ресурсами приложений](managing-app-resources.md)
+## [Инструкции по открытию нескольких решений или экземпляров](open-multiple-solutions.md)
 
 # [Редактор исходного кода](source-editor.md)
 ## [Рефакторинг](refactoring.md)
