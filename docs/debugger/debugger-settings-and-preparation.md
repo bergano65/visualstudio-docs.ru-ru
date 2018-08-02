@@ -1,7 +1,7 @@
 ---
 title: Отладчик, параметры и подготовка | Документация Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151578"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468303"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
@@ -50,9 +50,6 @@ ms.locfileid: "39151578"
   
  [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)  
  Описаны способы отладки 64-разрядных приложений.  
-  
- [Отладка и процесс размещения](../debugger/debugging-and-the-hosting-process.md)  
- Описываются различные аспекты процесса размещения.  
   
  [Практическое руководство. Установка версии платформы .NET Framework для отладки](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Описано, как задать раздел реестра для указания версии для использования в отладчике.  

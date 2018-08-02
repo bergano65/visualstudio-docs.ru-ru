@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bea91ca50cca71f91499ff306036a7e4812a5807
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 18f528bf30f5d3aeb59a6564ccdef2e53bdc6ccb
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326067"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468648"
 ---
 # <a name="create-sharepoint-solutions"></a>Создание решений SharePoint
   Приложения SharePoint можно создавать не только в SharePoint Designer, но и в Visual Studio. Visual Studio обеспечивает быструю разработку решений SharePoint с помощью таких компонентов, как средства расширенной отладки, IntelliSense, завершение операторов и шаблоны проектов. В Visual Studio также используются преимущества дополнительных средств и языков платформы .NET Framework. Проекты SharePoint можно разрабатывать с помощью Visual Basic или Visual C#, а приложения для проектов SharePoint можно разрабатывать с помощью JavaScript.  
@@ -34,8 +34,8 @@ ms.locfileid: "36326067"
   
 |||  
 |-|-|  
-|![Документация по](../sharepoint/media/vs-icon-documentation.gif "документации")|**Документация**<br /><br /> -   [Начало работы &#40;разработка приложений SharePoint в Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Разработка решений sharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Решения для пакета и развертывание SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
-|![Документация по](../sharepoint/media/vs-icon-documentation.gif "документации")|**Основные задачи**<br /><br /> -   [Пошаговое руководство: Создание столбца сайта, тип содержимого и tist для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Практическое: Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Практическое: создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Практическое: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Практическое: создать пользовательский элемент управления для части страницы или веб-приложения SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
+|![Документация по](../sharepoint/media/vs-icon-documentation.gif "документации")|**Документация**<br /><br /> -   [Начало работы &#40;разработка приложений SharePoint в Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Решения для пакета и развертывание SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![Документация по](../sharepoint/media/vs-icon-documentation.gif "документации")|**Основные задачи**<br /><br /> -   [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Практическое: Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Практическое: создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Практическое: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Практическое: создать пользовательский элемент управления для части страницы или веб-приложения SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![Пошаговые руководства](../sharepoint/media/vs-icon-walkthroughs.gif "пошаговые руководства")|**Пошаговые руководства**<br /><br /> -   [Пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![Примеры кода](../sharepoint/media/vs-icon-codesamples.gif "примеры кода")|**Примеры кода**<br /><br /> -   [Примеры разработки решений SharePoint](../sharepoint/sharepoint-development-samples.md)<br />-   [Загрузки разработчика SharePoint](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
 |![Обучение](../sharepoint/media/vs-icon-training.gif "обучения")|**Обучение**<br /><br /> -   [Обучение разработке для SharePoint](http://msdn.microsoft.com/sharepoint/aa905692.aspx)|  

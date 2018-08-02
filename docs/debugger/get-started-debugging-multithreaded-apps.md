@@ -2,7 +2,7 @@
 title: Узнайте, как Отладка многопоточных приложений
 description: Отладка с помощью окна "Параллельные стеки" и "контроль параллельных данных" в Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204223"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468687"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Начало отладки многопоточных приложений в Visual Studio
 Visual Studio предоставляет несколько средств и элементы пользовательского интерфейса для отладки многопоточных приложений. Этом руководстве показано, как использовать маркеры потоков **Параллельные стеки** окне **контроль параллельных данных** окна, условные точки останова и фильтр точки останова. В этом руководстве всего несколько минут, но оно позволит ознакомиться вас с функциями для отладки многопоточных приложений.
@@ -47,9 +47,9 @@ Visual Studio предоставляет несколько средств и э
   
      Откроется диалоговое окно **Новый проект** .  
   
-2.  В **тип проекта**s см. в удобном для вас языке: **Visual C#**, **Visual C++**, или **Visual Basic**.  
+2.  Выберите язык по своему усмотрению: **Visual C#**, **Visual C++**, или **Visual Basic**.  
   
-3.  В **шаблоны** выберите **консольное приложение**.  
+3.  В разделе **Windows Desktop**, выберите **консольное приложение**.  
   
 4.  В **имя** введите имя MyThreadWalkthroughApp поле.  
   

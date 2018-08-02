@@ -1,7 +1,7 @@
 ---
 title: Отладка и ведущий процесс | Документация Майкрософт
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f584eb9217e46215405aa0786e5fa10e6034a9
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 59ef28f5724c12fd9897adbaa9125bafe26beb60
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088908"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468264"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Отладка и процесс размещения
 В процессе размещения Visual Studio предусмотрены средства улучшения рабочих характеристик отладчика и новые возможности отладки, например, отладка с частичным доверием и вычисление выражения во время разработки. При необходимости процесс размещения можно отключить. В следующих разделах описаны некоторые различия между отладкой с процессом размещения и отладкой без него.
+
+> [!NOTE]
+> В Visual Studio 2017 возможность отладить с помощью ведущего процесса больше не нужен и был удален. Дополнительные сведения см. в разделе [отладка: Visual Studio 2017 Aims для скорости копирования минимальных избранные обязанностей](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Отладка с частичным доверием и модель безопасности Click-Once
  Отладка с частичным доверием требует наличия процесса размещения. Если отключить процесс размещения, отладка кода с частичным доверием не будет работать даже в случае, если на странице **Безопасность** окна **Свойства проекта**включена защита в случае частичного доверия. Дополнительные сведения см. в разделе [как: Debug a Partial Trust Application](../debugger/how-to-debug-a-partial-trust-application.md).
