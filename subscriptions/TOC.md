@@ -28,14 +28,14 @@
 #### [Power BI Pro ](vs-pbi.md)
 #### [Современные требования для TFS](vs-modernreq.md)
 #### [Оплата за Azure по мере использования](vs-azure-payg.md)
-### Профессиональное развитие
+### [Профессиональное развитие](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Обучение Xamarin University](vs-xamarin.md)
 #### [Подписка на журнал MSDN](vs-msdn.md)
-### Преимущества поддержки
+### [Преимущества поддержки](technical-support.md)
 #### [Чат с Помощником по Azure](vs-azure-advisory-chat.md)
 #### [Сообщество Azure](vs-azure-community.md)
 #### [Техническая поддержка](vs-tech-support.md)
