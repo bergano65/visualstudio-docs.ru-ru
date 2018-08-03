@@ -425,8 +425,8 @@
       href: getting-started-with-the-vsix-project-template.md
     - name: Пошаговое руководство. Публикация расширения Visual Studio
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: "Пошаговое руководство. Публикация расширения Visual\_Studio с помощью командной строки"
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
+    - name: Пошаговое руководство. Создание пакета расширения
+      href: walkthough-create-extension-pack.md
     - name: Добавление зависимости в пакет VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Составляющие пакета VSIX
