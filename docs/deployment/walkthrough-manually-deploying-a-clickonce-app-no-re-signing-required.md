@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529f4eb53c2da7af9115fab4b063100f6e5d0c6a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153817"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511413"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Пошаговое руководство: Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику
 При создании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения и присвоить ей клиенту для публикации и развертывания, клиент традиционно должен был обновить манифест развертывания и подписать его заново. Несмотря на то что, по-прежнему рекомендуется в большинстве случаев платформа .NET Framework 3.5 позволяет создавать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, которые могут развертываться клиентами без необходимости повторного создания новый манифест развертывания. Дополнительные сведения см. в разделе [развертывание ClickOnce-приложений для тестирования и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -159,4 +159,4 @@ ms.locfileid: "39153817"
 ## <a name="see-also"></a>См. также  
  [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)
+ [MakeCert](/windows/desktop/SecCrypto/makecert)

@@ -1,5 +1,5 @@
 ---
-title: 'Как: регистрации библиотеки с помощью диспетчера объектов | Документы Microsoft'
+title: 'Практическое: зарегистрировать библиотеку с помощью диспетчера объектов | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,29 +17,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bf2775c358b107fe299f0d60bc00a2030465e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61976fbc63efd4c15e5ed88a159ea8e73bdf38f3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132999"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513326"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Как: регистрации библиотеки с помощью диспетчера объектов
-Просмотр символов такие средства, как **представление классов**, **обозревателя объектов**, **обозревателя вызовов** и **результаты поиска символа**, позволяют просматривать символы в проекте или в внешние компоненты. Символы включают пространства имен, классы, интерфейсы, методы и другие элементы языка. Библиотеки отслеживать эти символы и предоставлять их [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объектов, которое заполняет средства с данными.  
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Практическое: зарегистрировать библиотеку с диспетчером объектов
+Просмотр символы средства, такие как **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, позволяют просматривать символы в проекте или на внешние компоненты. Символы включают пространства имен, классы, интерфейсы, методы и другие элементы языка. Библиотеки отслеживать эти символы и представлять их в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов, которое заполняет средства с данными.  
   
- Диспетчер объектов сохраняет сведения о всех доступных библиотек. Прежде чем предоставить символы для средств просмотра символ диспетчер объектов необходимо зарегистрировать каждой библиотеки.  
+ Диспетчер объектов хранит информацию о всех доступных библиотек. Каждой библиотеки необходимо зарегистрировать с диспетчером объектов, прежде чем предоставлять символы для средства просмотра символов.  
   
- Как правило при загрузке VSPackage регистрации библиотеки. Однако он может быть выполнена позже при необходимости. Отменить регистрацию библиотеки выключением VSPackage.  
+ Как правило при загрузке VSPackage регистрации библиотеки. Тем не менее это можно сделать позже, при необходимости. Отменить регистрацию библиотеки выключением VSPackage.  
   
- Чтобы зарегистрировать библиотеку, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> метод. В случае управляемого кода библиотеки, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  
+ Чтобы зарегистрировать библиотеку, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> метод. Библиотеку управляемого кода используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  
   
  Чтобы отменить регистрацию библиотеки, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.  
   
  Для получения ссылки на диспетчер объектов, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, передайте <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> идентификатор для службы `GetService` метод.  
   
-## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>Регистрация и Отмена регистрации библиотеки с помощью диспетчера объектов  
+## <a name="register-and-unregister-a-library-with-the-object-manager"></a>Регистрировать и отменять регистрацию библиотеки с диспетчером объектов  
   
-#### <a name="to-register-a-library-with-the-object-manager"></a>Чтобы зарегистрировать библиотеку в диспетчер объектов  
+### <a name="to-register-a-library-with-the-object-manager"></a>Чтобы зарегистрировать библиотеку с диспетчером объектов  
   
 1.  Создание библиотеки.  
   
@@ -58,7 +58,7 @@ ms.locfileid: "31132999"
   
     ```  
   
-2.  Получите ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> типа и вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  
+2.  Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -112,9 +112,9 @@ ms.locfileid: "31132999"
   
     ```  
   
-#### <a name="to-unregister-a-library-with-the-object-manager"></a>Отменить регистрацию библиотеки диспетчера объектов  
+### <a name="to-unregister-a-library-with-the-object-manager"></a>Чтобы отменить регистрацию библиотеки с диспетчером объектов  
   
-1.  Получите ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> типа и вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.  
+1.  Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -168,6 +168,6 @@ ms.locfileid: "31132999"
     ```  
   
 ## <a name="see-also"></a>См. также  
- [Расширяемость устаревших языковой службы](../../extensibility/internals/legacy-language-service-extensibility.md)   
- [Вспомогательные средства обзора символ](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Практическое руководство. Предоставление списка символов, переданных из библиотеки в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Расширяемость устаревший языковой службы](../../extensibility/internals/legacy-language-service-extensibility.md)   
+ [Поддержка средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [Практическое: предоставлять список символов, предоставляемые библиотекой в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

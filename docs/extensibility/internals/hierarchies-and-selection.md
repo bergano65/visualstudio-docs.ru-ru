@@ -1,5 +1,5 @@
 ---
-title: Иерархии и выбора | Документы Microsoft
+title: Иерархии и выбор | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,29 +15,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a3747bbeb337bc94d9cf3530e43747ac1f0bf3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f5e08fad921d0d3568e05ba3b2ce2ebd5fb1ea5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128563"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510456"
 ---
-# <a name="hierarchies-and-selection"></a>Иерархии и выбора
-При настройке [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], следует понимать, каким образом [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] обрабатывает иерархии как проекты, и как он использует контекст выбора для определения, отображаемых для пользователя. В этом разделе рассматриваются основные понятия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархии и выбора.  
+# <a name="hierarchies-and-selection"></a>Иерархии и выбор
+При настройке [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо понимать как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] обрабатывает иерархии как проекты и как он использует контекст выбора, чтобы определить, будет отображаться для пользователя. В этом разделе рассматриваются основные понятия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархии и выбор.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
  Описывает проект иерархии и общий принцип иерархий.  
   
  [Выбор и актуальность в интегрированной среде разработки](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
- Описывает способ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) хранит сведения об объектах текущего активного пользователя и позволяет отслеживать валюты пакеты VSPackage.  
+ Описывает способ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) хранит сведения об объектах текущего активного пользователя и позволяет отслеживать валюты пакетов VSPackage.  
   
  [Объекты контекста выбора](../../extensibility/internals/selection-context-objects.md)  
- Рассматривается определение пользователя Выбор контекста фокус на окно модель.  
+ Обсуждается модель для как можно определить пользователя Выбор контекста фокус на окно.  
   
  [Обратная связь с пользователем](../../extensibility/internals/feedback-to-the-user.md)  
- Рассматривается как набор доступных функций в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] основан на общем контексте интегрированной среды разработки и контекста текущего выделения пользователя.  
+ Рассматриваются как функциональных возможностях доступным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] зависит от контекста текущего выделения и общем контексте интегрированной среды разработки пользователя.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Архитектура](../../extensibility/internals/project-types-architecture.md)  
- Содержит подробную техническую информацию о типах проектов.
+ [Архитектура типов проектов](../../extensibility/internals/project-types-architecture.md)  
+ Предоставляет подробные технические сведения о типах проектов.

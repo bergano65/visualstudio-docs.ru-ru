@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231506"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512257"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -97,7 +97,8 @@ ms.locfileid: "39231506"
   * **HKLM\Software\Microsoft\VisualStudio\{версии}**: разделы реестра, созданные MSI-установщики и расширений на уровне компьютера.
   * **HKCU\Software\Microsoft\VisualStudio\{версии}**: разделы реестра, созданные Visual Studio для хранения параметров конкретного пользователя.
   * **HKCU\Software\Microsoft\VisualStudio\{версии} _Config**: копию выше разделе Visual Studio HKLM, а также разделы реестра, перенесенных слиянием с *.pkgdef* файлы с расширениями.
-* Чтобы снизить влияние на реестр, Visual Studio теперь использует [RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx) функции для хранения разделов реестра в закрытый двоичный файл в разделе *[VSAPPDATA]\privateregistry.bin*. Только очень небольшое количество клавиш для Visual Studio определенного остаются в системном реестре.
+* Чтобы снизить влияние на реестр, Visual Studio теперь использует [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) функции для хранения разделов реестра в закрытый двоичный файл в разделе *[VSAPPDATA]\privateregistry.bin*. Только очень небольшое количество клавиш для Visual Studio определенного остаются в системном реестре.
+
 * Это не повлияет на существующий код, выполняемый в процесс Visual Studio. Visual Studio будет перенаправлять все операции с реестром в раздел HKCU Visual Studio конкретных частный реестр. Чтение и запись в другие места реестра будет продолжать использовать в системный реестр.
 * Внешний код потребуется загрузить и прочитать из этого файла для записи реестра Visual Studio.
 

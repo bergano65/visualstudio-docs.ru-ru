@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e2ee64002d286c899f638f2fed16d4ef22abc7
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080777"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512214"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce и технология Authenticode
 *Authenticode* — это технология Майкрософт, которая использует шифрование по отраслевому стандарту для подписания кода приложения цифровыми сертификатами, которые удостоверяют подлинность издателя приложения. Используя Authenticode для развертывания приложения, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] снижает риск заражения программой-трояном. Программа-троян — это вирус или другая вредоносная программа, которые злоумышленник представляет как легальную программу, исходящую из авторитетного и заслуживающего доверия источника. Подписание развертываний [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с помощью цифрового сертификата — это необязательный шаг, позволяющий убедиться, что сборки и файлы не были изменены.  
@@ -50,7 +50,7 @@ ms.locfileid: "39080777"
   
  И наоборот, если вы получаете сертификат из такого центра сертификации, как поставщик сертификатов или отдел внутри вашей организации, этот сертификат обеспечивает повышенную безопасность для пользователей. Он не только идентифицирует издателя подписанного программного обеспечения, но и проверяет его удостоверение путем сверки с ЦС, подписавшим его. Если ЦС не является корневым, Authenticode также выстраивает обратную "цепочку" до корневого центра, чтобы убедиться, что ЦС авторизован для выдачи сертификатов. Для повышения безопасности следует по возможности использовать сертификат, выданный центром сертификации.  
   
- Дополнительные сведения о создании автосертификатов см. в разделе [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) или [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Дополнительные сведения о создании автосертификатов см. в разделе [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) или [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
 ### <a name="timestamps"></a>Метки времени  
  Сертификаты, используемые для подписи приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , имеют определенный срок действия, который обычно составляет двенадцать месяцев. Чтобы устранить необходимость в постоянном повторном подписывании приложений с использованием новых сертификатов, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает метку времени. Когда приложение подписано с меткой времени, его сертификат будет приниматься даже после истечения срока действия, при условии, что действительна метка времени. Это позволяет скачивать и запускать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с просроченными сертификатами, но действительными метками времени. Кроме того, это позволяет установленным приложениям с просроченными сертификатами продолжать скачивать и устанавливать обновления.  

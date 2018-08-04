@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: bc626ce4c9639fcd8dfdf0f0992cead484ced2c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 628c847817db073daeed3cd6c04b1722502e80ca
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056847"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511535"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Отладка приложений для универсальной Windows (UWP) в Visual Studio
 
@@ -27,8 +27,7 @@ ms.locfileid: "37056847"
 
 |Отладка задач|Статья|
 |-|-|  
-|Отладка приложений Windows 8.1|[Отладка приложений Магазина в Visual Studio](https://msdn.microsoft.com/en-us/library/hh441472.aspx)|
-|Отладка Windows Phone 8 приложения|[Отладка приложений для Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572(v=vs.105).aspx)|
+|Отладка приложений Windows 8.1|[Отладка приложений Магазина в Visual Studio](debug-store-apps-in-visual-studio.md)|
 |Запуск приложений UWP на локальном компьютере, удаленном или подключенного устройства или симуляторе приложений.|[Запуск сеанса отладки для приложения UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |Отладка развернутых приложений, локальные и удаленные.|[Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)|
 |Анализируйте влияние класса ContentPrefetcher на приложения универсальной платформы Windows.|[Предварительная загрузка контента для приложений универсальной платформы Windows](../debugger/prefetch-content-for-windows-store-apps.md)|

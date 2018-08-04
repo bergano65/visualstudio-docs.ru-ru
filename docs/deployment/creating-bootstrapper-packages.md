@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078446"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512188"
 ---
 # <a name="create-bootstrapper-packages"></a>Создание пакетов начального загрузчика
 Программа установки — это общий установщик, который можно настроить на обнаружение и установку распространяемых компонентов, таких как установщик Windows (*.msi*) файлы и исполняемые программы. Установщик также называется начальным загрузчиком. Он программируется с помощью набора XML манифестов, определяющих метаданные для управления установкой компонента.  Каждый распространяемый компонент или необходимый компонент, который отображается в **предварительные требования** диалоговое окно по технологии ClickOnce — это пакет начального загрузчика. Пакет начальной загрузки — это группа директорий и файлов, в которых содержатся файлы манифеста, описывающие порядок установки необходимого компонента. 
@@ -86,10 +86,10 @@ ms.locfileid: "39078446"
 |--------------|-----------------|  
 |ApplicationName|Имя приложения.|  
 |ProcessorArchitecture|Процессор и количество бит на слово в платформе, для которой предназначен исполняемый файл. В эти значения входят:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Номер версии для операционных систем Microsoft Windows 95, Windows 98 и Windows ME. Синтаксис версии — Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Номер версии для операционных систем Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 и Windows 7. Синтаксис версии — Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Версия сборки установщика Windows (msi.dll) для запуска во время установки.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Данное свойство устанавливается, если пользователь имеет права администратора. Значения — true или false.|  
+|[Version9x](/windows/desktop/Msi/version9x)|Номер версии для операционных систем Microsoft Windows 95, Windows 98 и Windows ME. Синтаксис версии — Major.Minor.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Номер версии для операционных систем Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 и Windows 7. Синтаксис версии — Major.Minor.ServicePack.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|Версия сборки установщика Windows (msi.dll) для запуска во время установки.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|Данное свойство устанавливается, если пользователь имеет права администратора. Значения — true или false.|  
 |InstallMode|Режим установки показывает, откуда должен быть установлен компонент. В эти значения входят:<br /><br /> -HomeSite: необходимые компоненты устанавливаются с веб-сайта поставщика.<br />-SpecificSite: необходимые компоненты устанавливаются из выбранного расположения.<br />-SameSite: необходимые компоненты устанавливаются в том же расположении, что и приложение.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>Отдельные распространяемых компонентов от установок приложения  

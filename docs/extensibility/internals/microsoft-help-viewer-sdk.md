@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234677"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513378"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Пакет SDK окна справки (Майкрософт)
 Эта статья содержит следующие задачи для интеграторов окна справки Visual Studio:  
@@ -820,7 +820,7 @@ MSHA, этот учебник, в рамках называется HelpContentS
 12. В Интегрированной среде разработки Contoso нажмите клавишу F1 для тестирования функциональности F1.  
   
 ### <a name="additional-resources"></a>Дополнительные ресурсы  
-API среды выполнения, см. в разделе [API справки Windows](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).  
+API среды выполнения, см. в разделе [API справки Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
 Дополнительные сведения о том, как использовать API-Интерфейс справки, см. в разделе [справки примеры кода средства просмотра](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
   

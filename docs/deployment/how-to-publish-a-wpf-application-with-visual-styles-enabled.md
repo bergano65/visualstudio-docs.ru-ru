@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078382"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512962"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое: публикация приложения WPF с включенными визуальными стилями
 Визуальные стили включить внешний вид стандартные элементы управления для меняться в зависимости от темы, выбранного пользователем. По умолчанию визуальные стили не включены для приложений Windows Presentation Foundation (WPF), поэтому их необходимо включить вручную. Тем не менее Включение визуальных стилей для приложения WPF и публикации решения приводит к ошибке. В этом разделе описывается устранение этой ошибки и процесс для публикации приложения WPF с включенными визуальными стилями. Дополнительные сведения о стилях см. в разделе [Общие сведения о визуальных стилей](/windows/desktop/Controls/visual-styles-overview). Дополнительные сведения о сообщении об ошибке, см. в разделе [Устранение ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -161,8 +161,9 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
  После выполнения этих действий опубликованные файлы можно переместить в расположение, из которого требуется конечным пользователям для установки приложения. Если вы собираетесь обновить решение часто, можно переместить эти команды в сценарий и запустите скрипт, каждый раз при публикации новой версии.  
   
-## <a name="see-also"></a>См. также  
- [Устранение ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Общие сведения о визуальных стилей](/windows/desktop/Controls/visual-styles-overview)   
- [Включение визуальных стилей](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Командные строки](/dotnet/framework/tools/developer-command-prompt-for-vs)
+## <a name="see-also"></a>См. также
+
+-[Устранение определенных ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Общие сведения о визуальных стилей](/windows/desktop/Controls/visual-styles-overview)
+- [Включение визуальных стилей](/windows/desktop/Controls/cookbook-overview)
+- [Командные строки](/dotnet/framework/tools/developer-command-prompt-for-vs)
