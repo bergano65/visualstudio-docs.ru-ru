@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa720459fff6cc67080fd3368cda6ed3a82bfda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ab1900cf9eda3fccf7606a6a645ace986bcd21d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920422"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512833"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: не используйте ослабленные алгоритмы шифрования
 |||
@@ -47,7 +47,7 @@ ms.locfileid: "31920422"
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Используйте более надежные варианты шифрования.
 
--   Для MD5 используйте хэши в [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) семейство (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+-   Для MD5 используйте хэши в [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) семейства (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 -   Для DES и RC2 используйте шифрование <xref:System.Security.Cryptography.Aes> .
 

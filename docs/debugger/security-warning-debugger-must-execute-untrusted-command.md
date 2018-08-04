@@ -1,5 +1,5 @@
 ---
-title: 'Предупреждение системы безопасности: Отладчик должен выполнить ненадежную команду | Документы Microsoft'
+title: 'Предупреждение системы безопасности: Отладчик должен выполнить ненадежную команду | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77554795772a5a9e2ce5d9bbe9f620923bc20184
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3e99c56efc5338feeded20621c7467bbf8274bc9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479933"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510928"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Security Warning: Debugger Must Execute Untrusted Command
 Это диалоговое окно с предупреждением появляется при использовании сервера системы управления версиями. Оно указывает, что команды, которую должен выполнить отладчик для получения исходного кода, нет в списке доверенных команд для сервера системы управления версиями, содержащемся в файле srcsvr.ini. Если это допустимая команда, ее можно добавить в файл srcsvr.ini. В противном случае ее не следует выполнять. Дополнительные сведения см. в разделе [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
@@ -45,6 +45,6 @@ ms.locfileid: "31479933"
  Прекратить выполнение команды и загрузку файла с сервера системы управления версиями.  
   
 ## <a name="see-also"></a>См. также  
- [Укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [Исходный сервер](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
+ [Исходный сервер](/windows/desktop/Debug/source-server-and-source-indexing)

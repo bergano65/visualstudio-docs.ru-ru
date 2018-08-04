@@ -1,5 +1,5 @@
 ---
-title: Команды и меню, которые использовать сборки взаимодействия | Документы Microsoft
+title: Команды и меню, которые используют сборки взаимодействия | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,43 +16,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48ee7eb25fa95789076454c849485f4ac1dc384
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135011"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513446"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>Команды и меню, которые использовать сборки взаимодействия
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>Команды и меню, которые используют сборки взаимодействия
 Пакет VSPackage, реализующий команды меню и панель инструментов с помощью сборок взаимодействия должен:  
   
--   Сообщить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) о командах, он поддерживает, а также доступны ли они в настоящее время.  
+-   Сообщите [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) о команды, он поддерживает и доступны ли они в настоящее время.  
   
--   Соответствуют правилам (контракт) для обработки команды.  
+-   Следовать правилам (контракт) для обработки команды.  
   
--   Явная реализация обработку команд с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейса.  
+-   Явная реализация обработка команд с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейс.  
   
- Далее описывается, как выполнять эти задачи.  
+ Следующий раздел описывает, как выполнить эти задачи.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Определение состояния команды с помощью сборок взаимодействия](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
- Описывает, как VSPackage сообщает IDE о какие команды поддерживаются и доступны ли они в настоящее время.  
+ Описывает, как VSPackage сообщает ей, о какие команды поддерживаются и доступны ли они в настоящее время.  
   
  [Контракты команд в сборках взаимодействия](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
- Предоставляет определение контракта основные команды, используемые все пакеты VSPackage, реализующий команд с помощью сборок взаимодействия  
+ Предоставляет определение базовая команда контракта, используемого приложением всех пакетов VSPackage, реализация команд, с помощью сборок взаимодействия.
   
- [Реализация](../../extensibility/internals/command-implementation.md)  
+ [Реализация команды](../../extensibility/internals/command-implementation.md)  
  Предоставляет общие сведения о том, как VSPackage реализует команду.  
   
  [Регистрация обработчиков команд сборки взаимодействия](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
- Описание записи реестра, необходимые для уведомления IDE, что VSPackage предоставляет обработчик команд.  
+ Описывает записи реестра, необходимые для уведомления IDE, что VSPackage предоставляет обработчик команды.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Доступность](../../extensibility/internals/command-availability.md)  
- Описание критериев, используемых в интегрированной среде разработки, чтобы определить список доступных команд VSPackage и какой объект обрабатывает их.  
+ [Доступность команд](../../extensibility/internals/command-availability.md)  
+ Описывает условия, используемые в интегрированной среде разработки, чтобы определить, какие команды VSPackage доступны и какие объект обрабатывает их.  
   
- [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Предоставляет подробные сведения о том, как создать пользовательский Интерфейс, который использует [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] команды поддержки.  
+ [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ Сведения о том, как создать пользовательский Интерфейс, который использует [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] команды поддержки.  
   
- [Маршрутизация команд в пакетах VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
- Обзор процесса, используемых для связывания объекта с корректную команду запроса.
+ [Маршрутизация команд в пакеты VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
+ Обзор процесса, используемого для связи объекта с запросом нужную команду.

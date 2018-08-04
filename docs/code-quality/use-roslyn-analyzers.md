@@ -1,5 +1,5 @@
 ---
-title: Использование и настройка анализаторов Roslyn в Visual Studio
+title: Использование и настройка анализаторов Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204158"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512175"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Настройка и использование правил анализатора Roslyn
 
@@ -141,6 +141,31 @@ ms.locfileid: "39204158"
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Использование командной строки
+
+При построении проекта в командной строке, нарушения правил отображаются в выходных данных сборки, при соблюдении следующих условий:
+
+- Анализаторы устанавливаются в виде пакета Nuget, а не как расширение VSIX.
+
+- Одно или несколько правил нарушены в коде проекта.
+
+- [Серьезность](#rule-severity) нарушила правила может принимать значение **предупреждение**, в этом случае нарушений не приводят к сбою, сборки или **ошибка**, в этом случае нарушений привести к сбою сборки.
+
+Уровень детализации выходных данных сборки не влияет на отображаются нарушения правил. Даже с **quiet** уровень детализации, нарушения правил отображаются в выходных данных построения.
+
+> [!TIP]
+> Если вы привыкли выполнения статического анализа кода из командной строки, с помощью *FxCopCmd.exe* или с помощью msbuild с **RunCodeAnalysis** флаг, вот как это сделать с помощью анализаторов Roslyn.
+
+Чтобы увидеть нарушения анализатора в командной строке при сборке проекта с помощью msbuild, выполните следующую команду:
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+На следующем рисунке показано построение из командной строки выходные файлы построения проекта, содержащего нарушений правил анализа:
+
+![Выходные данные MSBuild с нарушением правил](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>См. также
 

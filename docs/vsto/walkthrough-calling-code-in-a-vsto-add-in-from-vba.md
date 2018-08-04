@@ -1,5 +1,5 @@
 ---
-title: 'Пошаговое руководство: Вызов кода в надстройке VSTO из VBA | Документы Microsoft'
+title: 'Пошаговое руководство: Вызов кода в надстройке VSTO из VBA'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513623"
 ---
-# <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство. Вызов кода из VBA в надстройках VSTO
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство: Вызов кода в надстройке VSTO из VBA
   В этом пошаговом руководстве показано, как предоставить объект в надстройке VSTO другим решениям Microsoft Office, включая Visual Basic для приложений (VBA) и надстроек VSTO COM.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -51,21 +52,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-the-vsto-add-in-project"></a>Создание проекта надстройки VSTO  
+## <a name="create-the-vsto-add-in-project"></a>Создайте проект надстройки VSTO  
  Первым шагом является создание проекта надстройки VSTO для Excel.  
   
-#### <a name="to-create-a-new-project"></a>Создание нового проекта  
+### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
 1.  Создайте проект надстройки VSTO для Excel с именем **ExcelImportData**с помощью шаблона проекта надстройки VSTO для Excel. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода **ThisAddIn.cs** или **ThisAddIn.vb** и добавляет проект **ExcelImportData** в **обозреватель решений**.  
   
-## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>Определение класса, который можно предоставить другим решениям Office  
+## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Определите класс, который можно предоставить другим решениям Office  
  В этом пошаговом руководстве описывается вызов метода `ImportData` класса с именем `AddInUtilities` в надстройке VSTO из кода VBA. Этот метод записывает строку в ячейку A1 активного листа.  
   
- Для предоставления класса `AddInUtilities` другим решениям Office необходимо сделать класс общедоступным и видимым для COM. Необходимо также предоставить интерфейс [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) в классе. Код в следующей процедуре демонстрирует один из способов выполнения этих требований. Для получения дополнительной информации см. [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Для предоставления класса `AddInUtilities` другим решениям Office необходимо сделать класс общедоступным и видимым для COM. Необходимо также предоставить [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) интерфейса в классе. Код в следующей процедуре демонстрирует один из способов выполнения этих требований. Для получения дополнительной информации см. [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Определение класса, который можно предоставить другим решениям Office  
+### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Определение класса, который можно предоставить другим решениям Office  
   
 1.  В меню **Проект** выберите пункт **Добавить класс**.  
   
@@ -83,12 +84,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     Этот код делает класс `AddInUtilities` видимым для COM, а также добавляет метод `ImportData` в класс. Для предоставления интерфейса [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) класс `AddInUtilities` также содержит атрибут <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> , который реализует интерфейс, видимый для COM.  
+     Этот код делает класс `AddInUtilities` видимым для COM, а также добавляет метод `ImportData` в класс. Для предоставления [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) интерфейс, `AddInUtilities` класс также имеет <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> атрибут, который реализует интерфейс, который является видимым для COM.  
   
-## <a name="exposing-the-class-to-other-office-solutions"></a>Предоставление класса другим решениям Office  
+## <a name="expose-the-class-to-other-office-solutions"></a>Предоставление класса другим решениям Office  
  Для предоставления класса `AddInUtilities` другим решениям Office переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> в классе `ThisAddIn` . В переопределении верните экземпляр класса `AddInUtilities` .  
   
-#### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Предоставление класса AddInUtilities другим решениям Office  
+### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Предоставление класса AddInUtilities другим решениям Office  
   
 1.  В **обозревателе решений**разверните **Excel**.  
   
@@ -103,19 +104,19 @@ ms.lasthandoff: 04/16/2018
   
      Убедитесь, что сборка решения выполняется без ошибок.  
   
-## <a name="testing-the-vsto-add-in"></a>Тестирование надстройки VSTO  
- Класс `AddInUtilities` можно вызывать из решений Office различного типа. В этом пошаговом руководстве будет использоваться код VBA в книге Excel. Дополнительные сведения о других типах решений Office, которые также можно использовать, см. в разделе [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+## <a name="test-the-vsto-add-in"></a>Тестирование надстройки VSTO  
+ Класс `AddInUtilities` можно вызывать из решений Office различного типа. В этом пошаговом руководстве будет использоваться код VBA в книге Excel. Дополнительные сведения о других типах решений Office, можно также использовать, см. в разделе [вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-test-your-vsto-add-in"></a>Для тестирования надстройки VSTO выполните следующие действия.  
+### <a name="to-test-your-vsto-add-in"></a>Для тестирования надстройки VSTO выполните следующие действия.  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Нажмите клавишу **F5** для запуска проекта.  
   
 2.  В Excel сохраните активную книгу как книгу Excel с поддержкой макросов (*.xlsm). Сохраните ее в удобном месте, например на рабочем столе.  
   
 3.  На ленте перейдите на вкладку **Разработчик** .  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Для получения дополнительной информации см. [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [как: Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  В группе **Код** щелкните **Visual Basic**.  
   
@@ -125,9 +126,9 @@ ms.lasthandoff: 04/16/2018
   
      Открывается файл кода для объекта `ThisWorkbook` .  
   
-6.  Добавьте следующий код VBA в файл кода. Этот код сначала получает объект COMAddIn, представляющий **ExcelImportData** надстройки VSTO. Затем код использует свойство объекта COMAddIn объекта для вызова `ImportData` метод.  
+6.  Добавьте следующий код VBA в файл кода. Этот код сначала получает объект COMAddIn, который представляет **ExcelImportData** надстройки VSTO. Затем код использует свойство объекта COMAddIn объекта для вызова `ImportData` метод.  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim addIn As COMAddIn  
         Dim automationObject As Object  
@@ -137,7 +138,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-7.  Нажмите клавишу F5.  
+7.  Нажмите клавишу **F5**.  
   
 8.  Убедитесь, что новый лист **Imported Data** (Импортированные данные) добавлен в книгу. Также убедитесь, что ячейка A1 содержит строку **This is my data**(Это мои данные).  
   
@@ -146,18 +147,18 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о программировании надстроек VSTO см. в следующих статьях:  
   
--   Для автоматизации ведущего приложения и выполнения других задач в проектах надстроек VSTO используйте класс `ThisAddIn` . Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Для автоматизации ведущего приложения и выполнения других задач в проектах надстроек VSTO используйте класс `ThisAddIn` . Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
 -   Создание настраиваемой области задач в надстройке VSTO. Дополнительные сведения см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md) и [как: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
--   Настройка ленты в надстройке VSTO. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md) и [как: работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   Настройка ленты в надстройке VSTO. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md) и [как: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 ## <a name="see-also"></a>См. также  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
  [Вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Разработка решений Office](../vsto/developing-office-solutions.md)   
- [Как: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Практическое: Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Настройка функций пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
+ [Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

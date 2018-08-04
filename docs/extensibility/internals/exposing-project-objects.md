@@ -14,19 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23cc1db46870d77e6c137ab621c970e730b9cd0e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
-ms.translationtype: HT
+ms.openlocfilehash: ae7b34df55593f07adeaffe8d654b59629baaae5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497145"
+ms.locfileid: "39510914"
 ---
 # <a name="expose-project-objects"></a>Предоставление объектов проекта
-Пользовательские типы проектов, чтобы разрешить доступ к проекту с помощью интерфейсов автоматизации, можно предоставить объекты автоматизации. Любой тип проекта должен предоставлять стандартные <xref:EnvDTE.Project> объект автоматизации, к которому осуществляется из <xref:EnvDTE.Solution>, которое содержит коллекцию всех проектов, которые открыты в интегрированной среде разработки. Каждый элемент в проекте должен предоставляться <xref:EnvDTE.ProjectItem> доступ к которому осуществляется с помощью `Project.ProjectItems`. Помимо этих объектов автоматизации standard проектов может выбрать предоставление объектов автоматизации проектов.  
-  
- Можно создать пользовательские корневого уровня объектов автоматизации, к которым можно обращаться с поздним связыванием из объекта DTE корневого, используя `DTE.<customeObjectName>` или `DTE.GetObject("<customObjectName>")`. Например, Visual C++ создает коллекциях проектов для конкретных проектов C++, которые называются *"vcprojects"* , доступны с помощью `DTE.VCProjects` или `DTE.GetObject("VCProjects")`. Вы также можете создать `Project.Object`, который является уникальным для типа проекта, `Project.CodeModel`, который можно запросить для его самого производного объекта и `ProjectItem`, предоставляющий `ProjectItem.Object` и `ProjectItem.FileCodeModel`.  
-  
- Это распространенный способ для проектов для предоставления коллекции проектов пользовательских, относящихся к проекту. Например [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] создает коллекцию конкретного проекта C++, которая затем доступны с помощью `DTE.VCProjects` или `DTE.GetObject("VCProjects")`. Вы также можете создать `Project.Object`, который является уникальным для типа проекта, `Project.CodeModel`, который можно запросить для его самого производного объекта `ProjectItem`, предоставляющий `ProjectItem.Object`и `ProjectItem.FileCodeModel`.  
+
+Пользовательские типы проектов, чтобы разрешить доступ к проекту с помощью интерфейсов автоматизации, можно предоставить объекты автоматизации. Любой тип проекта должен предоставлять стандартные <xref:EnvDTE.Project> объект автоматизации, к которому осуществляется из <xref:EnvDTE.Solution>, которое содержит коллекцию всех проектов, которые открыты в интегрированной среде разработки. Каждый элемент в проекте должен предоставляться <xref:EnvDTE.ProjectItem> доступ к которому осуществляется с помощью `Project.ProjectItems`. Помимо этих объектов автоматизации standard проектов может выбрать предоставление объектов автоматизации проектов.
+
+Можно создать пользовательские корневого уровня объектов автоматизации, к которым можно обращаться с поздним связыванием из объекта DTE корневого, используя `DTE.<customObjectName>` или `DTE.GetObject("<customObjectName>")`. Например, Visual C++ создает коллекцию проектов конкретного проекта C++, который называется *"vcprojects"* , доступны с помощью `DTE.VCProjects` или `DTE.GetObject("VCProjects")`. Вы также можете создать `Project.Object`, который является уникальным для типа проекта, `Project.CodeModel`, который можно запросить для его самого производного объекта и `ProjectItem`, предоставляющий `ProjectItem.Object` и `ProjectItem.FileCodeModel`.
+
+Это распространенный способ для проектов для предоставления коллекции проектов пользовательских, относящихся к проекту. Например [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] создает коллекцию конкретного проекта C++, которая затем доступны с помощью `DTE.VCProjects` или `DTE.GetObject("VCProjects")`. Вы также можете создать `Project.Object`, который является уникальным для типа проекта, `Project.CodeModel`, который можно запросить для его самого производного объекта `ProjectItem`, предоставляющий `ProjectItem.Object`и `ProjectItem.FileCodeModel`.  
   
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Для передачи объекта определенного VSPackage для проекта  
   
@@ -93,5 +94,6 @@ ms.locfileid: "39497145"
   
      Пользовательский `Projects` объект коллекции — это точка входа удобства для оставшейся части проекта модели автоматизации. Объект проекта, также доступен из <xref:EnvDTE.Solution> коллекции проектов. После создания в соответствующих записях код и реестра, которые предоставляют заказчикам `Projects` коллекция объектов, реализации необходимо указать оставшиеся стандартные объекты для модели проекта. Дополнительные сведения см. в разделе [проекта моделирования](../../extensibility/internals/project-modeling.md).  
   
-## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
+## <a name="see-also"></a>См. также
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

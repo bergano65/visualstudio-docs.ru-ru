@@ -9,18 +9,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4017ffc67558f6056cb01bf62c5adf9e7569ad4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6b0479bf427930d19b12fa0de5728f26e7cdb10d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946914"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510182"
 ---
 # <a name="t4-import-directive"></a>Директива Import T4
 
-В блоках кода текстового шаблона T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] директива `import` позволяет ссылаться на элементы в другом пространстве имен без предоставления полного имени. Она эквивалентна директиве `using` в C# или `imports` в [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+В блоках кода [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] текстового шаблона T4 `import` директива позволяет ссылаться на элементы в другом пространстве имен без указания полного имени. Она эквивалентна директиве `using` в C# или `imports` в [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
- Общие сведения о создании текстовых шаблонов T4. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
+Общие сведения о создании текстовых шаблонов T4 см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-import-directive"></a>Использование директивы Import
 
@@ -49,7 +49,7 @@ The file contains: <#=  fileContent #>
 
 -   `Microsoft.VisualStudio.Modeling`
 
--   Пространство имен доменного языка
+-   Пространства имен Доменного языка
 
 ## <a name="see-also"></a>См. также
 
