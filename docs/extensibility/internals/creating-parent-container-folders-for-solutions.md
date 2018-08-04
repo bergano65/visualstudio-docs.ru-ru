@@ -1,5 +1,5 @@
 ---
-title: Создание папок родительского контейнера для решений | Документы Microsoft
+title: Создание папок родительского контейнера для решений | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2104c0c109db0d410cbd08683ce227c62982fd65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132565"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498874"
 ---
-# <a name="creating-parent-container-folders-for-solutions"></a>Создание папок родительского контейнера для решений
-В API подключаемых модулей исходный элемент управления версии 1.2 пользователь может указать один корневой источник управления назначения для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).  
+# <a name="create-parent-container-folders-for-solutions"></a>Создание родительской папки контейнера для решений
+В исходный элемент управления Plug-in API версии 1.2 пользователь может указать место назначения элемента управления источника один корневой для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).  
   
- В API подключаемых модулей исходный элемент управления версии 1.1 если пользователь добавлен многопроектное решение в систему управления версиями пользователя было предложено указать один целевой элемент управления источника для каждого веб-проекта.  
+ В исходный элемент управления Plug-in API версии 1.1 если пользователь добавил многопроектное решение в систему управления версиями, пользователю было предложено указать один элемент управления источника, назначения для каждого веб-проекта.  
   
-## <a name="new-capability-flags"></a>Флаги новых возможностей  
+## <a name="new-capability-flags"></a>Новые флаги возможностей  
  `SCC_CAP_CREATESUBPROJECT`  
   
  `SCC_CAP_GETPARENTPROJECT`  
@@ -36,9 +36,9 @@ ms.locfileid: "31132565"
   
  [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки, почти всегда создает папку SUR, при добавлении решения в систему управления версиями. В частности это происходит в следующих случаях:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки, почти всегда создается папка SUR, при добавлении решения в систему управления версиями. В частности она делает это в следующих случаях:  
   
--   Проект является общей папкой, веб-проекта.  
+-   Проект является веб-проекта файл общего ресурса.  
   
 -   Существуют разные диски для проекта и файл решения.  
   
@@ -46,26 +46,27 @@ ms.locfileid: "31132565"
   
 -   Проекты были добавлены отдельно (в решения, контролируемого системой управления версиями).  
   
- В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предполагается, что имя папки SUR совпадать имя решения без расширения. В следующей таблице перечислены двух версий.  
+
+В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], предполагается, что имя папки SUR совпадать с именем решения без расширения. В следующей таблице перечислены поведение в обеих версиях.  
   
-|Функция|tSource управления Plug-in API версии 1.1|Система управления версиями API подключаемого модуля версии 1.2|  
+|Функция|Система управления версиями API подключаемого модуля версии 1.1|Система управления версиями API подключаемого модуля версии 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
-|Добавить решение в систему управления версиями|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Добавьте проект в решение с управлением версиями|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Примечание:** Visual Studio предполагает, что это решение является прямым потомком SUR.|  
+|Добавьте решение в SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
+|Добавление проекта к решению, контролируемого системой управления версиями|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Примечание:** Visual Studio предполагается, что решение сейчас является прямым потомком SUR.|  
   
 ## <a name="examples"></a>Примеры  
- В следующей таблице перечислены два примера. В обоих случаях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользователю предлагается ввести в место назначения для решения в системе управления версиями до *user_choice* указан в качестве места назначения. При указании user_choice, решения и двух проектов добавляются без подтверждения от пользователя для назначения элемента управления источника.  
+ В следующей таблице перечислены два примера. В обоих случаях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользователю предлагается ввести расположение для решения в системе управления версиями до *user_choice* указан в качестве места назначения. При указании user_choice решения и двух проектов добавляются без подтверждения от пользователя для источников управления получателей.  
   
-|Решение содержит|На дисках|Структура базы данных по умолчанию|  
+|Решение содержит|На расположения диска|Структура базы данных по умолчанию|  
 |-----------------------|-----------------------|--------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /C/Web1<br /><br /> $/*user_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /D/web1<br /><br /> $/*user_choice*  /sln1/win1|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> "Web2"|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/C/Web1<br /><br /> $/ < user_choice > / "web2"|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/D/web1<br /><br /> $/ < user_choice >/sln1/win1|  
   
- SUR папка и вложенные папки создаются независимо от того, является ли операция была отменена, или происходит сбой из-за ошибки. Они не удаляются автоматически в условиях cancel или ошибки.  
+ SUR папки и вложенные папки создаются независимо от того, является ли операции отмены или сбоя из-за ошибки. Они не удаляются автоматически в Отмена или сообщений об ошибке.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] по умолчанию поведение версии 1.1, если подключаемый модуль системы управления версиями не возвращает `SCC_CAP_CREATESUBPROJECT` и `SCC_CAP_GETPARENTPROJECT` флаги возможностей. Кроме того, пользователи [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно вернуться к поведению версии 1.1, задав значение DWORD: 00000001 значение следующего раздела:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] по умолчанию к поведению версии 1.1, если подключаемый модуль системы управления версиями не возвращает `SCC_CAP_CREATESUBPROJECT` и `SCC_CAP_GETPARENTPROJECT` флаги возможностей. Кроме того, пользователи [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно вернуться к поведению версии 1.1, задав значение следующего раздела *DWORD: 00000001*:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] «DoNotCreateSolutionRootFolderInSourceControl» = DWORD: 00000001  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *DWORD: 00000001*
   
 ## <a name="see-also"></a>См. также  
- [Новые возможности в API версии 1.2 подключаемого модуля системы управления версиями](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Новые возможности в исходный элемент управления Plug-in API версии 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

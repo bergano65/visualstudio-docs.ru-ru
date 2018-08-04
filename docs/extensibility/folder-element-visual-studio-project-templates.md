@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b4fca64abf91105e0363ecd67ea5244c533996f3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234927"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497179"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Элемент Folder (шаблоны проектов Visual Studio)
 Указывает папку, которая будет добавлена в проект.  
@@ -39,7 +39,7 @@ ms.locfileid: "36234927"
 </Folder>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -47,7 +47,7 @@ ms.locfileid: "36234927"
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`Name`|Обязательный атрибут.<br /><br /> Имя папки проекта.|  
-|`TargetFolderName`|Необязательный атрибут.<br /><br /> Задает имя, назначаемое при создании проекта из шаблона. Этот атрибут полезен при использовании замены параметров для создания имени папки или имени папки многоязыковой строки, которая не может использоваться непосредственно в ZIP-файл.|  
+|`TargetFolderName`|Необязательный атрибут.<br /><br /> Задает имя, назначаемое при создании проекта из шаблона. Этот атрибут полезен при использовании замены параметров для создания имени папки или имени папки многоязыковой строки, которая не может использоваться непосредственно в *ZIP-файл* файл.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -67,7 +67,7 @@ ms.locfileid: "36234927"
   
  Для упорядочения элементов проекта в папках в шаблоне можно использовать любой из следующих методов:  
   
--   Включить папки в ZIP-файл шаблона и добавить их в проект в VSTEMPLATE-файл, указав путь к файлу в `ProjectItem` элементы, не имеющий `Folder` элементов. Это рекомендуемый метод. Пример:  
+-   Включить папки в шаблоне *ZIP-файл* и добавьте их в проект в *.vstemplate* файл, указав путь к файлу в `ProjectItem` элементы, не имеющий `Folder` элементов. Это рекомендуемый метод. Пример:  
   
      `...`  
   
@@ -77,7 +77,7 @@ ms.locfileid: "36234927"
   
      `...`  
   
--   Включить папки в ZIP-файл шаблона и добавить их в проект в VSTEMPLATE-файл с `Folder` элементов. Пример:  
+-   Включить папки в шаблоне *ZIP-файл* и добавьте их в проект в *.vstemplate* файл с `Folder` элементов. Пример:  
   
      `...`  
   
@@ -91,7 +91,7 @@ ms.locfileid: "36234927"
   
      `...`  
   
--   Не используйте папки в ZIP-файл шаблона, но Добавление папок с помощью `TargetFileName` атрибут `ProjectItem` элемента. Пример:  
+-   Не используйте папки в шаблоне *ZIP-файл* файл, но Добавление папок с помощью `TargetFileName` атрибут `ProjectItem` элемента. Пример:  
   
      `...`  
   
@@ -131,6 +131,6 @@ ms.locfileid: "36234927"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
