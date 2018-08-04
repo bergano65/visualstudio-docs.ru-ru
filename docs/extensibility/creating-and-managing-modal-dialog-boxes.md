@@ -1,5 +1,5 @@
 ---
-title: Создание и управление ими модальные диалоговые окна | Документы Microsoft
+title: Создание и управление ими модальные диалоговые окна | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b1e39e4479b0b6b909c625e1e8b6ad19955d30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102204"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498753"
 ---
-# <a name="creating-and-managing-modal-dialog-boxes"></a>Создание и управление ими модальные диалоговые окна
-При создании модального диалогового окна в Visual Studio, необходимо убедитесь в том, что родительское окно диалогового окна отключена, пока отображается диалоговое окно, а затем повторно включите родительского окна, после закрытия диалогового. Если это не так, может возникнуть ошибка: «Microsoft Visual Studio не может завершить работу активного модального диалогового окна. Закройте это окно и повторите попытку.»  
+# <a name="create-and-manage-modal-dialog-boxes"></a>Создание и управление ими модальные диалоговые окна
+При создании модального диалогового окна в Visual Studio, необходимо убедитесь в том, что родительское окно окна отключен во время отображения диалогового, а затем повторно включить родительского окна, после закрытия окно. Если этого не сделать, может появиться ошибка: *Microsoft Visual Studio не удается завершить работу, так как модальное диалоговое окно является активным. Закройте это окно и повторите попытку.*  
   
- Существует два способа это сделать. Если диалоговое окно WPF, рекомендуется наследование из <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, а затем вызвать метод <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> для отображения диалогового окна. После этого вы не обязательно должны управлять модальное состояние родительского окна.  
+ Это можно сделать двумя способами. Если диалоговое окно WPF, рекомендуется наследование из <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, а затем вызвать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> отображать диалоговое окно. После этого вы не обязательно должны управлять модальное состояние родительского окна.  
   
- Если диалоговое окно не является WPF или для любого другого класса причины, не может быть производным диалогового окна <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, а затем родительского диалогового окна необходимо получить, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> и самостоятельно, управлять модальное состояние, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> метод с параметр 0 (false), прежде чем отображает диалоговое окно и вызов метода с параметром 1 (true) после закрытия диалогового окна.  
+ Если диалоговое окно не является WPF, или для другой причине, не может быть производным диалогового окна класса из <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, а затем родительского диалогового окна необходимо получить, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> и управлять модального состояния самостоятельно, путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> метод с параметр 0 (false), перед открытием окна и вызов метода снова с параметром 1 (true) после закрытия диалогового окна.  
   
-## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Создание диалогового окна производными DialogWindow  
+## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Создание диалогового окна, производного от DialogWindow  
   
-1.  Создайте проект VSIX с именем **OpenDialogTest** и добавьте команду меню с именем **OpenDialog**. Дополнительные сведения о том, как это сделать см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Создайте проект VSIX с именем **OpenDialogTest** и добавьте команду меню с именем **OpenDialog**. Дополнительные сведения о том, как это сделать, см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Для использования <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> класса, необходимо добавить ссылки на следующие сборки (на вкладке Framework **добавить ссылку** диалоговое окно «»):  
+2.  Чтобы использовать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> класса, необходимо добавить ссылки на следующие сборки (на вкладке «платформы» **добавить ссылку** диалоговое окно):  
   
-    -   PresentationCore  
+    -   *PresentationCore*  
   
-    -   PresentationFramework  
+    -   *PresentationFramework*  
   
-    -   WindowsBase  
+    -   *WindowsBase*  
   
-    -   System.Xaml  
+    -   *System.Xaml*  
   
-3.  В OpenDialog.cs, добавьте следующий `using` инструкции:  
+3.  В *OpenDialog.cs*, добавьте следующий `using` инструкции:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  Объявите класс с именем **TestDialogWindow** , производный от <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4.  Объявите класс с именем `TestDialogWindow` , наследуемый от класса <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
@@ -64,27 +64,27 @@ ms.locfileid: "31102204"
     }  
     ```  
   
-6.  В **OpenDialog.ShowMessageBox** метод, замените существующий код следующим:  
+6.  В `OpenDialog.ShowMessageBox` метод, замените существующий код следующим:  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  Выполните сборку и запуск приложения. Откроется экспериментальный экземпляр Visual Studio. На **средства** меню экспериментального экземпляра должна появиться команда **OpenDialog вызова**. При выполнении этой команды вы увидите диалоговое окно. Можно свернуть и развернуть окно.  
+7.  Выполните сборку и запуск приложения. Откроется экспериментальный экземпляр Visual Studio. На **средства** меню экспериментального экземпляра вы увидите команду с именем **вызвать OpenDialog**. При выполнении этой команды вы увидите диалоговое окно. Можно свести к минимуму и полностью развернуть окно.  
   
-## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Создание и управление ими диалоговое окно не является производным от DialogWindow  
+## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Создание и управление ими диалоговое окно, не являющиеся производными DialogWindow  
   
-1.  Для выполнения этой процедуры можно использовать **OpenDialogTest** решения, созданного в предыдущей процедуре, с одной ссылки на сборку.  
+1.  Для выполнения этой процедуры можно использовать **OpenDialogTest** решение, созданное в предыдущей процедуре, с тем же ссылки на сборки.  
   
-2.  Добавьте следующие `using` объявления:  
+2.  Добавьте следующий `using` объявления:  
   
     ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  Создайте класс с именем **TestDialogWindow2** , производный от <xref:System.Windows.Window>:  
+3.  Создайте класс с именем `TestDialogWindow2` , наследуемый от класса <xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
@@ -106,7 +106,7 @@ ms.locfileid: "31102204"
     }  
     ```  
   
-6.  В **OpenDialog.ShowMessageBox** метод, замените существующий код следующим:  
+6.  В `OpenDialog.ShowMessageBox` метод, замените существующий код следующим:  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -128,4 +128,4 @@ ms.locfileid: "31102204"
     }  
     ```  
   
-7.  Выполните сборку и запуск приложения. На **средства** меню появится команда **OpenDialog вызова**. При выполнении этой команды вы увидите диалоговое окно.
+7.  Выполните сборку и запуск приложения. На **средства** меню вы увидите команду с именем **вызвать OpenDialog**. При выполнении этой команды вы увидите диалоговое окно.

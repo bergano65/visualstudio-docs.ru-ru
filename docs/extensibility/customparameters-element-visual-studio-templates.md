@@ -1,5 +1,5 @@
 ---
-title: Customparameters-элемент (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент CustomParameters (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c09d320b1a9185e79e36d54ff0363219d3dabc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464c4720dc4693ef2fb968a23a538e74d03d1a26
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099806"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498653"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>Элемент CustomParameters (шаблоны Visual Studio)
-Группирует пользовательские параметры, которые могут быть переданы в мастер шаблонов, когда мастер замены параметров.  
+Группирует пользовательские параметры, которые должны быть переданы мастера шаблонов, когда мастер замены параметров.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ ms.locfileid: "31099806"
 </CustomParameters>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -42,20 +42,20 @@ ms.locfileid: "31099806"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Содержит имя пользовательского параметра и значение, используемое при создании проекта или элемента из шаблона. Элемент `CustomParameter` может содержать любое число элементов `CustomParameters`, включая ноль.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Задает содержимое шаблона.|  
   
 ## <a name="remarks"></a>Примечания  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать несколько пользовательских параметров в шаблоне. При создании проекта или элемента из шаблона с помощью следующих пользовательских параметров, все экземпляры `$color1$` и `$color2$` в шаблоне файлы будут заменены `Red` и `Blue`соответственно.  
+ В следующем примере показано, как использовать несколько пользовательских параметров в шаблоне. При создании проекта или элемента из шаблона, выполнив следующие пользовательские параметры, все экземпляры `$color1$` и `$color2$` в шаблоне файлов будет заменен `Red` и `Blue`, соответственно.  
   
 ```  
 <CustomParameters>  
