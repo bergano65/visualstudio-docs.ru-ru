@@ -1,5 +1,5 @@
 ---
-title: Константы интегрированной среды разработки | Документы Microsoft
+title: Константы среды IDE | Документация Майкрософт
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -18,69 +18,69 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9c7e870b02dbe5a903ca8195954ffd5a8f63549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23512005bed66550b4a1de0f0a2de830d9fb823b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133123"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498997"
 ---
-# <a name="ide-constants"></a>Константы интегрированной среды разработки
+# <a name="ide-constants"></a>Константы среды IDE
 
-<xref:Microsoft.VisualStudio.VSConstants> Класс содержит константы, относящихся к интегрированной среды разработки (IDE), ранее были определены только в файлах заголовков.
+<xref:Microsoft.VisualStudio.VSConstants> Класс предоставляет константы, которые относятся к интегрированной среде разработки (IDE), были ранее определены только в файлах заголовков.
 
-## <a name="logical-and-physical-views"></a>Логические и физические представления
+## <a name="logical-and-physical-views"></a>Логические и физические представления.
 
-|Значение|Описание|
+|Значение|Описание:|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики следует передать это значение, чтобы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы получить **открыть с помощью** диалоговое окно «», в данном случае на возможные представления кода.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передает это значение для <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы получить **открыть с помощью** диалоговое окно, в этом случае заполняется возможные <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> отладки представления, которые сопоставляются с тем же самым представлением как <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передает это значение для <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы получить **открыть с помощью** диалоговое окно «», в данном случае для **Просмотр формы** представления конструктора.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передает это значение для <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы получить **открыть с помощью** диалоговое окно «», в данном случае представление по умолчанию источник фабрики редактора.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передает это значение для <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы получить **открыть с помощью** диалогового окна для документа или данных представление текстового редактора.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передает это значение для <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, который предлагает пользователю выбрать пользовательские представления для использования.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики должны передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод для получения **открыть с помощью** диалоговое окно, в данном случае на представления кода.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод для получения **открыть с помощью** диалоговое окно, в данном случае заполненного возможными <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> отладки представления, которые сопоставляются с тем же самым представлением как <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод для получения **открыть с помощью** диалоговое окно, в этом случае для **форма просмотра** представления конструктора.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод для получения **открыть с помощью** диалоговое окно, в нашем примере это представление по умолчанию источник фабрики редактора.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод для получения **открыть с помощью** диалоговое окно, в данном случае для документа или данных представление текстового редактора.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` обработчики передавать это значение <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, который предлагает пользователю выбрать определяемые пользователем представление использовать.|
 
 ## <a name="editor-factory-flags"></a>Флаги фабрики редактора
 
-|Значение|Описание|
+|Значение|Описание:|
 |-----------|-----------------|
-|[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Устаревшие флаг побитового первого параметра вместе <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метод.|
-|[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, метод, это указывает фабрику редактора должен выполнить необходимые исправления.|
-|[CEF. OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метода, этот флаг имеет взаимно exclusive [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
-|[CEF. Автоматическая](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Побитовый оператор, как первый параметр в сочетании <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> , это указывает фабрики редакторов следует создать редактор без отображения пользовательского интерфейса (UI).|
+|[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Устаревший флаг побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метод.|
+|[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, метод, это указывает фабрика редактора должна внести необходимые исправления.|
+|[CEF. OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> , этот флаг является взаимно исключающим для [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
+|[CEF. Автоматический](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метода, это означает, фабрики редактора должна создать редактор без отображения пользовательского интерфейса (UI).|
 
-## <a name="visual-studio-errors"></a>Ошибки в Visual Studio
+## <a name="visual-studio-errors"></a>Ошибок Visual Studio
 
-|Значение|Описание|
+|Значение|Описание:|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Константа, возвращенных интерфейсы для работы в асинхронном режиме при рассматриваемый в объект уже занят|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для «несовместимый документ данных».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Пакет не загружен».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и которая указывает на то, что «Проект уже существует.»|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «ошибка конфигурации проекта».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Не загружен проект».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Решения уже открыта.»|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Решение не открыто».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Возвращаемый построения интерфейсами, которые имеют параметры для указания массива из <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> интерфейса, но при реализации только метод можно применять все выходные данные.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Константа возвращена интерфейсами для асинхронного поведения при рассматриваемый объект в уже занят|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для «несовместимые данные документа».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Пакет не загружен».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, указывающий, что «Проекта уже существует».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «ошибка конфигурации проекта».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, означающая «Проект не загружен.»|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, означающая «Решение уже открыто».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, означающая «Решение не открыто».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Возвращается интерфейсами построения, которые имеют параметры для указания массива из <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> интерфейс, но реализацию можно применять только метод на все выходы.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Метод возвращает это значение, если документ имеет формат, который не может быть открыт в редакторе.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Значение HRESULT, указывающее, что пользователь нажатия кнопки "Назад" в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] мастера.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Значение HRESULT, указывающее, что пользователь нажал кнопку возврата в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] мастера.|
 
 ## <a name="visual-studio-constants"></a>Константы Visual Studio
 
-|Значение|Описание|
+|Значение|Описание:|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Значение HRESULT, относящиеся к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Перенаправленных проект».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для «маркера элементов».|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для широковещательной рассылки сообщения уведомления через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который обозначает начало модальность.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для широковещательной рассылки сообщения уведомления через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает конец модальность.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для широковещательной рассылки сообщения уведомления через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, указывающее, что метрики командной строки были изменены.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , указывающее, что файл cookie не задано.|
-|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, которое представляет отсутствующий элемент проекта. Это значение используется в том случае, если нет текущего выделенного фрагмента.|
-|[VSITEMID. Корень](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет корень иерархии проекта и используется для идентификации всей иерархии, в отличие от одного элемента.|
-|[VSITEMID. Выделенный фрагмент](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет текущий выбранный элемент или элементы, которые могут включать корень иерархии.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Проект перенаправлен».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для панели элементов «маркером».|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает на начало модальности.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает на окончание модальности.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, указывающий, что показатели командной строки были изменены.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , указывающий, что файл cookie не задан.|
+|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, представляющий отсутствие элемента проекта. Это значение используется в том случае, если нет текущего выделенного фрагмента.|
+|[VSITEMID. Корневой](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет корень иерархии проекта и используется для указания на всю иерархию, в отличие от одного элемента.|
+|[VSITEMID. Выбор](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет текущий выбранный элемент или элементы, которые могут включать корень иерархии.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
- Описывает, какие компоненты интегрированной среды разработки только что был выбран, в <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> вызвать, например.
+ Описывает, какие компоненты интегрированной среды разработки только что был выбран, в <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> вызове, к примеру.
 
 |Константа|Значение|
 |--------------|-----------|
@@ -92,7 +92,7 @@ ms.locfileid: "31133123"
 |[SelectionElement.WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
 
 ## <a name="vsselelemid"></a>VSSELELEMID
- Константы, используемые для указания новое состояние выбора.
+ Константы, используемые для указания нового состояния выделения.
 
 |Константа|Значение|
 |--------------|-----------|

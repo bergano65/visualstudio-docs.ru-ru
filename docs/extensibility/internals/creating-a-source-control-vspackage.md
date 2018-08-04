@@ -1,5 +1,5 @@
 ---
-title: Создание элемента управления источника пакета VSPackage | Документы Microsoft
+title: Создание пакета VSPackage управления версиями | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb34efef22510d1d8f83590a6bdb7960d70ce49
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0d9513410aa3bb4773629846abbd70159ec6aa77
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128952"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499742"
 ---
-# <a name="creating-a-source-control-vspackage"></a>Создание элемента управления источника пакета VSPackage
-Эта документация содержит ссылки на общие сведения об архитектуре системы управления версиями пакета интеграции с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], API, который определяется интерфейс для выполнения и служб для использования, а также пример, иллюстрирующий простой источника контролировать реализацию пакета.  
+# <a name="create-a-source-control-vspackage"></a>Создать пакет VSPackage системы управления версиями
+Эта документация содержит ссылки на обзор архитектуры пакета системы управления версиями интегрируется с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], API, который определяется интерфейс для выполнения и служб для использования и пример, иллюстрирующий простой источника пакет реализацию элементов управления.  
   
- С контролем исходного пакета VSPackage, можно создать глубокую интеграцию путь для системы управления версиями для интеграции с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Он позволяет пакету обхода системы управления версиями по умолчанию пользовательского интерфейса, поддерживаемого [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], отвечать на запросы системы управления версиями в системе проектов и взаимодействия с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компонентов, таких как **обозревателе решений**. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Расширяет возможности [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] партнерам с механизм для создания пакетов VSPackage, который можно интегрировать с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью модели службы.  
+ С помощью системы управления версиями VSPackage, можно создать путь глубокая интеграция системы управления версиями для интеграции с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Он позволяет обойти системы управления версиями по умолчанию пользовательского интерфейса, поддерживаемого пакета [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], отвечать на запросы системы управления версиями в системе проектов и взаимодействовать с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компоненты, такие как **обозревателе решений**. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Расширяет возможности [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сотрудничает с механизм для создания VSPackage, который можно интегрировать с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью модели службы.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Начало работы](../../extensibility/internals/getting-started-with-source-control-vspackages.md)  
- Описание источника пакета управления, который является более сложных альтернативой для реализации возможностей системы управления версиями в подключаемый модуль системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Обсуждаются пакет системы управления версиями, который является альтернативой более сложные системы управления версиями, подключаемый модуль для реализации функций системы управления версиями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Архитектура](../../extensibility/internals/source-control-vspackage-architecture.md)  
- Показана схема и приводится информация о компонентах пакета управления версиями.  
+ Представляет схему и приводится информация о компонентах пакета системы управления версиями.  
   
  [Функции](../../extensibility/internals/source-control-vspackage-features.md)  
- Описание различных функций пакета управления версиями.  
+ Описание различных возможностей пакета системы управления версиями.  
   
- [Элементы макета](../../extensibility/internals/source-control-vspackage-design-elements.md)  
- Описывает структуру VSPackage, который должен быть реализован пакет системы управления версиями для глубокой интеграции.  
+ [Элементы проектирования](../../extensibility/internals/source-control-vspackage-design-elements.md)  
+ Описывает структуру пакета VSPackage, который должен быть реализован пакет системы управления версиями для глубокой интеграции.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- Описывает, как создать элемент управления источником подключаемый модуль, предоставляющий функций системы управления версиями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исходного элемента управления пользовательского интерфейса (UI).  
+ Создание системы управления версиями подключаемого модуля, предоставляющий функции системы управления версиями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интерфейс пользователя системы управления версиями (UI).  
   
- [Система управления версиями](../../extensibility/internals/source-control.md)  
- Описание параметров для реализации системы управления версиями в качестве интегрированной функцией [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ [Системы управления версиями](../../extensibility/internals/source-control.md)  
+ Обсуждаются параметры для реализации системы управления версиями в виде интегрированной функцией [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

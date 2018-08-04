@@ -1,5 +1,5 @@
 ---
-title: 'Как: доступ к встроенные шрифты и цветовую схему | Документы Microsoft'
+title: 'Практическое: доступ к встроенной шрифтов и цветовой схемы | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,72 +15,72 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f72640369152b03ef86383fda1162b1cfbacba8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131151"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500099"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Как: доступ к встроенных шрифтов и цветов
-Среда разработки Visual Studio (IDE) имеется схема шрифтов и цветов, связанный с окном редактора. Получить доступ к этой схеме через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса.
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Практическое: доступ к встроенной шрифты и цвета ccheme
+В среде разработки Visual Studio (IDE) имеет схему шрифтов и цветов, связанный с окном редактора. Можно получить доступ к этой схемы через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.
 
  Чтобы использовать встроенные шрифтов и цветов схемы, пакет VSPackage должен удовлетворять следующим требованиям:
 
 -   Определите категорию для использования со службой шрифты и цвета по умолчанию.
 
--   Зарегистрируйте категорию на сервере по умолчанию шрифты и цвета.
+-   Зарегистрируйте категории с сервером шрифты и цвета по умолчанию.
 
--   Уведомления IDE с конкретным окном использует встроенные отображаемые элементы и категории с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейсов.
+-   Уведомления IDE, что с помощью отдельного окна использует встроенные отображаемые элементы и категории <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейсов.
 
- Интегрированная среда разработки использует полученный категории как дескриптор окна. Имя категории отображается в **Показать параметры для:** раскрывающегося списка в **шрифты и цвета** страницу свойств.
+ Интегрированная среда разработки использует полученный категории как дескриптор окна. Имя категории будет отображаться в **Показать параметры для:** раскрывающегося списка в **шрифты и цвета** страницу свойств.
 
-### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Для определения категории с помощью встроенных шрифты и цвета
+## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Для определения категории с помощью встроенных шрифты и цвета
 
 1.  Создайте произвольный идентификатор GUID.
 
-     Этот идентификатор GUID, используемый для уникальной идентификации категории **.** В этой категории используются повторно спецификация цвета и шрифты по умолчанию для интегрированной среды разработки.
+     Этот GUID используется для уникальной идентификации категорию. Повторно использует эту категорию, IDE по умолчанию шрифты и цвета спецификации.
 
     > [!NOTE]
-    >  При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакеты VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.
+    >  При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакетов VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.
 
-2.  Имя категории должны добавляться в таблицу строки в файл ресурсов (.rc) в пакете VSPackage, чтобы ее можно локализовать, при необходимости, при отображении в Интегрированной среде разработки.
+2.  Имя категории должны добавляться в таблицу строк внутри ресурсов в пакете VSPackage (*.rc*) файл, таким образом, чтобы можно было локализовать при необходимости при отображении в интегрированной среде разработки.
 
      Дополнительные сведения см. в разделе [Добавление или удаление строки](/cpp/windows/adding-or-deleting-a-string).
 
-### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Чтобы зарегистрировать категории с помощью встроенных шрифты и цвета
+### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Чтобы зарегистрировать категории, с помощью встроенных шрифты и цвета
 
 1.  Создайте специальный тип записи реестра категории в следующем расположении:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >* \FontAndColors\\*\<категории >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<версия Visual Studio > \FontAndColors\\\<категории >*]
 
      *\<Категория >* нелокализованное имя категории.
 
 2.  Добавить в реестр для использования стандартных шрифтов и цветовой схемы с четырьмя значениями:
 
-    |name|Тип|Данные|Описание|
+    |name|Тип|Данные|Описание:|
     |----------|----------|----------|-----------------|
-    |Категория|REG_SZ|Идентификатор GUID|Произвольный идентификатор GUID, который идентифицирует категорию, которая содержит биржевых шрифт и цветовую схему.|
-    |Пакет|REG_SZ|Идентификатор GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Все пакеты VSPackage, используйте параметры шрифта и цвета по умолчанию используется идентификатор GUID.|
-    |Идентификатора имени|REG_DWORD|ID|Идентификатор ресурса имя категории локализуемых в VSPackage.|
-    |ToolWindowPackage|REG_SZ|Идентификатор GUID|Идентификатор GUID для реализации VSPackage <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса.|
+    |Категория|REG_SZ|Идентификатор GUID|Произвольный GUID, определяющий категорию, которая содержит акций шрифт и цветовую схему.|
+    |Пакет|REG_SZ|Идентификатор GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Этот GUID используется всех пакетов VSPackage, использующих настройки шрифта и цвета по умолчанию.|
+    |NameID|REG_DWORD|ID|Идентификатор ресурса имени категории локализуемых в VSPackage.|
+    |ToolWindowPackage|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage, реализующего <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.|
 
-### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Чтобы начать использование системных шрифтов и цветов
+### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Для начала работы для системных шрифтов и цветов
 
-1.  Создайте экземпляр класса <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс как часть реализации и инициализации окна.
+1.  Создайте экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс как часть реализации и инициализации окна.
 
-2.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> метод, чтобы получить экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейса, связанного с текущим <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> экземпляра.
+2.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> метод, чтобы получить экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> интерфейс, соответствующий текущему <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> экземпляра.
 
 3.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> дважды.
 
-    -   Вызовите один раз с `VSEDITPROPID_ViewGeneral_ColorCategory`в качестве аргумента.
+    -   Вызывать один раз с `VSEDITPROPID_ViewGeneral_ColorCategory`как аргумент.
 
-    -   Вызовите один раз с `VSEDITPROPID_ViewGeneral_FontCategory` в качестве аргумента.
+    -   Вызывать один раз с `VSEDITPROPID_ViewGeneral_FontCategory` как аргумент.
 
      Это задает и предоставляет службы шрифты и цвета по умолчанию как свойство окна.
 
 ## <a name="example"></a>Пример
- В следующем примере инициируется использование встроенных шрифты и цвета.
+ Следующий пример запускает использование встроенных шрифты и цвета.
 
 ```cpp
 CComVariant vt;
@@ -98,7 +98,7 @@ if (spPropCatContainer != NULL){
 
 ## <a name="see-also"></a>См. также
 
-- [Шрифты и цвета](../extensibility/using-fonts-and-colors.md)
-- [Получение шрифт и цвет шрифта для текста выделение цветом](../extensibility/getting-font-and-color-information-for-text-colorization.md)
-- [Доступ к хранимой шрифта и цветов](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Обзор цвет и шрифт](../extensibility/font-and-color-overview.md)
+- [Использовать шрифты и цвета](../extensibility/using-fonts-and-colors.md)
+- [Получить данные шрифта и цвета для цветовое выделение текста](../extensibility/getting-font-and-color-information-for-text-colorization.md)
+- [Доступ хранимой параметры шрифта и цвета](../extensibility/accessing-stored-font-and-color-settings.md)
+- [Общие сведения о шрифте и цвете](../extensibility/font-and-color-overview.md)

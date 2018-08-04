@@ -1,5 +1,5 @@
 ---
-title: Определение требований к системе | Документы Microsoft
+title: Определение требований к системе | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,39 +14,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e98235bd224876b00714e1f71210ea69cb6faff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128708"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500086"
 ---
-# <a name="detecting-system-requirements"></a>Определение требований к системе
-Пакет VSPackage не может работать, если не установлена среда Visual Studio. При использовании установщика Windows для управления установкой VSPackage можно настроить установщик для обнаружения установки Visual Studio. Можно также настроить его для поиска системы для требований других, например, определенной версии Windows или определенный объем оперативной памяти.  
+# <a name="detect-system-requirements"></a>Определить требования к системе
+Пакет VSPackage не может работать, если не установлена среда Visual Studio. При использовании установщика Windows для управления установкой вашего VSPackage, можно настроить программу установки, чтобы обнаруживать наличие установленного Visual Studio. Кроме того, можно также настроить для проверки системы другие требования, например, на конкретную версию Windows или определенный объем ОЗУ.  
   
-## <a name="detecting-visual-studio-editions"></a>Обнаружение выпуски Visual Studio  
- Чтобы определить, установлен ли выпуск Visual Studio, проверьте значение раздела реестра установки (REG_DWORD) 1 в соответствующей папке, перечисленные в следующей таблице. Обратите внимание, что иерархия выпуски Visual Studio:  
+## <a name="detect-visual-studio-editions"></a>Обнаружить выпуски Visual Studio  
+ Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение **установить** реестра *(REG_DWORD) 1* в соответствующую папку, перечисленных в следующей таблице. Обратите внимание, что иерархия выпуски Visual Studio:  
   
 1.  Предприятие  
   
 2.  Professional  
   
 3.  Сообщество  
-  
- При установке «выше» выпуск добавляются разделы реестра для этого выпуска, также как и для «ниже» выпуски. То есть если установлен выпуск Enterprise edition, ключ установки равен 1 для предприятия, а также в выпусках Professional и Community. Поэтому необходимо проверять только выпуск «высокий», необходимые.  
+      
+При установке более нового выпуска, разделы реестра для этого выпуска также добавляются как и для более ранних версий. То есть, если установлен выпуск Enterprise, **установить** ключ имеет значение *1* для предприятия, а также в выпусках Professional и Community. Таким образом необходимо проверить только для самой последней версии, что нужно.  
   
 > [!NOTE]
->  32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Ключи Visual Studio находятся в HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  
+>  32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Visual Studio приведены в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.  
   
 |Продукт|Ключ|  
 |-------------|---------|  
 |Visual Studio Enterprise|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|  
 |Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|  
 |Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|  
-|Visual Studio 2015 Shell (интегрированной и изолированные)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
+|Оболочка Visual Studio 2015 (интегрированная и изолированная)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
-## <a name="detecting-when-visual-studio-is-running"></a>Обнаружение при запуске Visual Studio  
- VSPackage не зарегистрирован должным образом, если при установке VSPackage работает Visual Studio. Программа установки должна обнаружить, когда выполняется Visual Studio и отклонять для установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать пользовательское действие, следующим образом: используйте `EnumProcesses` функции обнаружения процесса devenv.exe и либо задайте для свойства установщика, используемого в условии запуска или условно отображать диалоговое окно, позволяющее пользователю закрыть Visual Studio.  
+## <a name="detect-when-visual-studio-is-running"></a>Обнаружить, когда выполняется Visual Studio  
+ Не удается зарегистрировать VSPackage правильно, если Visual Studio выполняется в том случае, когда объект VSPackage установлен. Установщик должен определять, когда выполняется Visual Studio и отклонять для установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать настраиваемое действие, следующим образом: используйте `EnumProcesses` функции для обнаружения *devenv.exe* обработать и затем либо задать свойство установщика, используемый в условие запуска или по условию отображать диалоговое окно предлагает пользователю закрыть Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

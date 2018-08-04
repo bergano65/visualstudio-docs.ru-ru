@@ -1,5 +1,5 @@
 ---
-title: Создание страниц "Параметры" | Документы Microsoft
+title: Создание страниц "Параметры" | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,70 +14,70 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e05c5f2660adfe8d7a35c816e5f94706631c8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131292"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499482"
 ---
-# <a name="creating-options-pages"></a>Создание страницы параметров
-В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] платформы управляемых пакетов классы, производные от <xref:Microsoft.VisualStudio.Shell.DialogPage> расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки, добавив **параметры** страниц в группе **средства** меню.  
+# <a name="create-options-pages"></a>Создание страниц параметров
+В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] платформа managed package framework, классы, производные от <xref:Microsoft.VisualStudio.Shell.DialogPage> расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, добавив **параметры** страницы в разделе **средства** меню.  
   
- Объект, реализующий данный **в наборе средств** страница связана с определенной пакеты VSPackage, <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> объекта.  
+ Объект, реализующий заданный **Сервис, параметры** страница связана с определенной пакеты VSPackage, <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> объекта.  
   
- Поскольку среда создает объект, реализующий определенный **Сервис — Параметры** страницы при соответствующих страниц отображается в интегрированной среде разработки:  
+ Поскольку среды создает экземпляр объекта, реализующего определенный **Сервис-Параметры** странице при отображении соответствующих страниц с помощью IDE:  
   
--   Объект **в наборе средств** страницы должен быть реализован в своем объекте, а не на объект, реализующий VSPackage.  
+-   Объект **Сервис, параметры** страницы должен быть реализован на свой собственный объект, а не на объект, реализующий VSPackage.  
   
--   Объект не может реализовывать несколько **Сервис — Параметры** страниц.  
+-   Объект не может реализовывать несколько **Сервис-Параметры** страниц.  
   
-## <a name="registering-as-a-tools-options-page-provider"></a>Регистрация в качестве поставщика страницы параметров средств  
- VSPackage вспомогательные пользовательскую конфигурацию через **Сервис — Параметры** страниц показывает объекты, предоставляющем эти **Сервис — Параметры** страниц, применяя экземпляров <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> применены к <xref:Microsoft.VisualStudio.Shell.Package>реализации.  
+## <a name="register-as-a-tools-options-page-provider"></a>Регистрируется как поставщик страницы параметров средств  
+ Конфигурацию VSPackage вспомогательные пользователя через **Сервис-Параметры** страниц показывает объекты, дает **Сервис-Параметры** страниц, применяя экземпляров <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> применяется к <xref:Microsoft.VisualStudio.Shell.Package>реализации.  
   
- Должен быть один экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> для каждого <xref:Microsoft.VisualStudio.Shell.DialogPage>-производный тип, реализующий **Сервис — Параметры** страницы.  
+ Должен быть один экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> для каждого <xref:Microsoft.VisualStudio.Shell.DialogPage>-производный тип, реализующий **Сервис-Параметры** страницы.  
   
- Каждый экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> использует тип, реализующий **Сервис — Параметры** страницы, строки, содержащие категории и подкатегории, используемое для идентификации **Сервис — Параметры** страницы и ресурсов сведения для регистрации типа как поставщик **Сервис — Параметры** страницы.  
+ Каждый экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> использует тип, реализующий **Сервис-Параметры** страниц, строк, содержащих категорию и подкатегорию, используемый для идентификации **Сервис-Параметры** страницы, а также ресурсов сведения для регистрации типа как предоставляющего **Сервис-Параметры** страницы.  
   
-## <a name="persisting-tools-options-page-state"></a>Сохранение состояния страницы параметров средств  
- Если **Сервис — Параметры** реализация страниц зарегистрирован с включенной поддержкой автоматизации, IDE сохраняет состояние страницы, а также все остальные **Сервис — Параметры** страниц.  
+## <a name="persist-tools-options-page-state"></a>Сохранить состояние страницы параметров средств  
+ Если **Сервис-Параметры** реализация страницы зарегистрирован с поддержкой автоматизации, интегрированной среды разработки сохраняется состояние страницы, а также все остальные **Сервис-Параметры** страниц.  
   
- VSPackage может управлять собственный сохраняемости с помощью <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>. Следует использовать только один или другой метод сохраняемости.  
+ VSPackage может управлять его собственной сохраняемости с помощью <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>. Следует использовать только один или другой метод сохраняемости.  
   
-## <a name="implementing-dialogpage-class"></a>Реализация класса DialogPage  
- Объект, предоставляющий реализацию VSPackage <xref:Microsoft.VisualStudio.Shell.DialogPage>-производный тип можно воспользоваться преимуществами следующих наследуемыми функциями:  
+## <a name="implement-dialogpage-class"></a>Реализация класса DialogPage  
+ Объект, предоставляющий реализацию VSPackage <xref:Microsoft.VisualStudio.Shell.DialogPage>-производный тип может воспользоваться преимуществами следующих наследуемыми возможностями:  
   
 -   Окно пользовательского интерфейса по умолчанию.  
   
--   Значение по умолчанию механизм сохранения доступны либо если <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> применяется к классу, или если <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> свойству `true` для <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> , применяемый к классу.  
+-   Объект по умолчанию механизм сохраняемости, который доступен, либо если <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> применяется к классу, или если <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> свойству `true` для <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> , применяемый к классу.  
   
 -   Поддержка модели автоматизации.  
   
- Минимальным требованием для объекта, реализующего **Сервис — Параметры** страницу с использованием <xref:Microsoft.VisualStudio.Shell.DialogPage> заключается в добавлении открытые свойства.  
+ Минимальным требованием для объекта, реализующего **Сервис-Параметры** странице с помощью <xref:Microsoft.VisualStudio.Shell.DialogPage> заключается в добавлении общедоступного свойства.  
   
- Если класс должным образом зарегистрирован как **Сервис — Параметры** страницы поставщика, а затем его открытые свойства доступны на **параметры** раздел **средства** меню в форме Сетка свойств.  
+ Если класс правильно зарегистрирован как **Сервис-Параметры** странице поставщика, а затем его общие свойства доступны на **параметры** раздел **средства** меню в форме сетки свойств.  
   
- Все эти функции по умолчанию можно переопределить. Например, для создания более сложных пользователя интерфейс требует только переопределение реализация по умолчанию <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+ Все эти функции по умолчанию можно переопределить. Например, для создания более сложных пользователя интерфейс требует только переопределение реализации по умолчанию <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Пример  
- Ниже приведен простой реализации «hello world» страницы параметров. Добавив следующий код в проект по умолчанию созданные шаблона пакета Visual Studio с **команду меню** выбран параметр адекватно продемонстрируют параметр функциональных возможностей страницы.  
+ Ниже приведен реализацию простых «Hello world» страницы параметров. Добавив следующий код в проект по умолчанию создан с помощью шаблона пакета Visual Studio с **команды меню** выбран параметр будет адекватно продемонстрировать функциональные возможности параметра страницы.  
   
-### <a name="description"></a>Описание  
- Следующий класс определяет минимальные параметры страницы «hello world». При открытии, пользователь может задать открытый `HelloWorld` свойства в сетке свойств.  
+### <a name="description"></a>Описание:  
+ Следующий класс определяет страницу Параметры минимальной «Hello world». При открытии, пользователь может задать открытый `HelloWorld` свойства в сетке свойств.  
   
 ### <a name="code"></a>Код  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
   
-### <a name="description"></a>Описание  
- Применение в класс пакета следующий атрибут доступны параметры страницы при загрузке пакета. Произвольные идентификаторы ресурсов категории и страницы, числа и логическое значение в конце указывает, поддерживает ли странице автоматизации.  
+### <a name="description"></a>Описание:  
+ Применение следующий атрибут к классу пакета доступны параметры, на странице при загрузке пакета. Числа являются произвольные идентификаторы ресурсов для категории и страницы, и логическое значение в конце указывает, поддерживает ли страница службы автоматизации.  
   
 ### <a name="code"></a>Код  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
   
-### <a name="description"></a>Описание  
- Следующий обработчик событий выводит результат в зависимости от значения свойства, заданного на странице параметров. Она использует <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> метод с результатом явно привести тип страницы настраиваемый параметр для доступа к свойствам на странице.  
+### <a name="description"></a>Описание:  
+ Следующий обработчик событий возвращает результат в зависимости от значения свойства, заданного на странице параметров. Она использует <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> метод с результатом явным образом привести к типу страницы настраиваемый параметр для доступа к свойствам на странице.  
   
  В случае проектов, созданных с помощью шаблона пакета, вызовите эту функцию из `MenuItemCallback` добавлена функция, чтобы присоединить его к команды по умолчанию для **средства** меню.  
   
@@ -86,5 +86,5 @@ ms.locfileid: "31131292"
  [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
   
 ## <a name="see-also"></a>См. также  
- [Расширение настройки пользователя и параметры](../../extensibility/extending-user-settings-and-options.md)   
- [Поддержка автоматизации страниц параметров](../../extensibility/internals/automation-support-for-options-pages.md)
+ [Расширить пользовательские настройки и параметры](../../extensibility/extending-user-settings-and-options.md)   
+ [Поддержка автоматизации для страницы параметров](../../extensibility/internals/automation-support-for-options-pages.md)

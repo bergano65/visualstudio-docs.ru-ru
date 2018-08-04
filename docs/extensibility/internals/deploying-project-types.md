@@ -1,5 +1,5 @@
 ---
-title: Развертывание проекта типов | Документы Microsoft
+title: Развертывание типов проектов | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12af8607dd1561a4a2561cc688d2bb4ba0f07c88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bed37260925d4961ed5b5b7d3e69d55169444ad
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127980"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497905"
 ---
-# <a name="deploying-project-types"></a>Развертывание проекта типов
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Устанавливает агрегатор новый тип проекта (ProjectAggregator2.dll), а также пакет установщика Windows для распространения (ProjectAggregator2.msi). Новому средству необходимо использовать для типов управляемых проектов. ProjectAggregator2 работает способы ограничения в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта инвентаризации программного обеспечения, которые препятствуют правильной работе типы проектов управляемого кода. Следующие шаги описывают изменения VSPackage для использования новому средству.  
+# <a name="deploy-project-types"></a>Развертывание типов проектов
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] устанавливает новые средства инвентаризации программного обеспечения типа проекта (*ProjectAggregator2.dll*) и также пакет установщика Windows для распространения (*ProjectAggregator2.msi*). Необходимо использовать новые средства инвентаризации программного обеспечения для типов проектов управляемого кода. ProjectAggregator2 предназначена для обхода ограничения в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проект средства инвентаризации программного обеспечения, которое препятствует правильной работе типы проектов управляемого кода. Далее описано изменение VSPackage для использования нового средства инвентаризации программного обеспечения.  
   
 1.  Удалите NativeHierarchyWrapper проект из решения.  
   
-2.  Удалите все двоичные файлы NativeHierarchyWrapper из установки.  
+2.  Удалите NativeHierarchyWrapper двоичные файлы из пакета установки.  
   
-3.  Добавьте ProjectAggregator2.msi к установке.
+3.  Добавить *ProjectAggregator2.msi* на настройки.

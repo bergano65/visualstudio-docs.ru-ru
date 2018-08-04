@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081687"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499394"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -111,26 +111,6 @@ textDocument и rename | да
 Затем создать новый пустой VSIXProject, перейдя по адресу **файл** > **новый проект** > **Visual C#**  >   **Расширяемость** > **проект VSIX**:
 
 ![Создайте проект vsix](media/lsp-vsix-project.png)
-
-Для предварительной версии VS поддержка LSP будет в виде VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Разработчики расширений, которые хотят создать расширение с помощью серверов LSP языка необходимо зависимость от этой VSIX. Таким образом, клиенты, желающие Установка расширения языка сервера **необходимо сначала установить VSIX предварительной версии языка сервера протокола клиента.**
-
-Чтобы задать зависимость VSIX, откройте конструктор манифеста VSIX для VSIX (двойным щелчком *source.extension.vsixmanifest* файла проекта) и перейдите к **зависимости**:
-
-![Добавьте ссылку на язык сервера протокола клиента](media/lsp-reference-lsp-dependency.png)
-
-Создание новой зависимости следующим образом:
-
-![Определение языка сервера протокола клиента зависимости](media/lsp-define-lsp-dependency.png)
-
-* **Источник**: вручную
-* **Имя**: предварительная версия клиента протокола Server языка
-* **Идентификатор**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Диапазон версий**: [1.0,2.0)
-* **Каков разрешения зависимости**: установлено пользователем
-* **URL-адрес скачивания**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> **URL-адрес скачивания** должно быть заполнено, чтобы пользователи, Установка расширения могли установить необходимые зависимости.
 
 ### <a name="language-server-and-runtime-installation"></a>Установка сервера и среды выполнения языка
 

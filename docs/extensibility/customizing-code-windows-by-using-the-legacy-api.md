@@ -1,5 +1,5 @@
 ---
-title: Настройка окна кода с помощью API прежних версий | Документы Microsoft
+title: Настройка кода Windows с помощью API прежних версий | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8284985003415ef3e723fe735e64481c3666180a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109968"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499358"
 ---
-# <a name="customizing-code-windows-by-using-the-legacy-api"></a>Настройка окна кода с помощью API прежних версий
-Окно кода — объект окна документа, который поддерживает один или несколько представлений текста. Конкретные возможности окна кода зависят от службы соответствующего языка. В режиме многодокументного интерфейса (MDI) окно кода — дочерняя рамка MDI.  
+# <a name="customize-code-windows-by-using-the-legacy-api"></a>Настраивать код windows с помощью предыдущих версий API
+Окно кода является объектом окна документа, который поддерживает один или несколько представлений текста. Конкретные возможности окна кода зависят от соответствующего языка. В режиме многодокументного интерфейса (MDI) в окне кода является дочерняя рамка MDI.  
   
- Управляет служб языка кода windows, и каждая языковая служба может предоставить свой собственный диспетчер окна кода. Это позволяет службе языка, добавить собственные элементы оформления в окно кода, например волнистые линии, выделение цветом и многое другое. Дополнительные сведения о том, как создать окно core см. в разделе [при создании экземпляра Core редактора с помощью API прежних версий](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
+ Код windows управляются языковые службы, и каждая языковая служба может предоставить свой собственный диспетчер окон кода. Это позволяет службе языка добавлять свои собственные элементы управления в окно кода, такие как подчеркивание, выделение цветом и многое другое. Дополнительные сведения о том, как создать окно core см. в разделе [экземпляра базового редактора с помощью старый API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
   
- Окно кода <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объекта, имеющего представления текста и признаков, находящегося в объекте. При создании окна кода во время создания экземпляра ваш основной редактор службе языка можно присоединить <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> в окно кода, как показано на следующем рисунке.  
+ Окно кода <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект представления текста и все элементы оформления, находящегося в объекте. При создании окна кода во время создания вашего экземпляра ядра редактора языковой службы можно присоединить <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> в окно кода, как показано на следующем рисунке.  
   
  ![График CodeWindow](../extensibility/media/vscodewindow.gif "vscodewindow")  
 Окно кода  
   
- Языковая служба реализует диспетчера окон кода и отвечает за управление элементы оформления, например раскрывающуюся панель. Этот код вызывает окно <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> метод во время инициализации окна кода. При этом вызове языковой службы можно добавить раскрывающуюся панель или панель инструментов с кнопками (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) в окне кода.  
+ Языковая служба реализует диспетчер окон кода и отвечает за управление элементы оформления, например раскрывающейся панелью. Этот код вызывает окно <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> метод во время инициализации окна кода. При этом вызове языковой службы можно добавить раскрывающейся панелью и панелью кнопок (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) в окно кода.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  `Customizing Code Windows by Using the Legacy API`  
- Описываются способы настройки windows код, с помощью предыдущих версий API.  
+ Объясняется, как настраивать код windows, с помощью предыдущих версий API.  
   
- [Как: размещения редактор в другом редакторе](../extensibility/how-to-host-an-editor-in-another-editor.md)  
- Описание для размещения второй редактор в окне редактора.  
+ [Практическое: размещения редактор в другом редакторе](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ В этом разделе описано размещение второй редактор внутри окна редактора.  
   
- [Как: инициируют события, когда редактор теряет фокус](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
- Объясняется, как присоединить представления документов к объекту данных документа.  
+ [Практическое: инициируют события, когда редактор теряет фокус](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ Объясняется, как присоединить представления документов в объект данных документа.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [При создании экземпляра базового редактора с помощью API прежних версий](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [Доступ к theText представления с помощью API прежних версий](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [Создать экземпляр базового редактора с помощью предыдущих версий API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
+ [Представление theText доступ с помощью предыдущих версий API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

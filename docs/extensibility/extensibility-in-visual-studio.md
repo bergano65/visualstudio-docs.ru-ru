@@ -1,5 +1,5 @@
 ---
-title: Расширяемость в Visual Studio | Документы Microsoft
+title: Расширяемость в Visual Studio | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,21 +9,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6893cb15a93abf6c4ced532510110c32e259bcab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e7385c58bd12da92ed2ab7a6d612f2d9be598ad
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126494"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500759"
 ---
 # <a name="extensibility-in-visual-studio"></a>Расширяемость в Visual Studio
-В Visual Studio предусмотрено множество возможностей расширяемости. Можно создать собственные пакеты SDK, Windows, Windows Phone и пакеты SDK Azure (который устанавливаются как часть Visual Studio) и расширения Visual Studio сама.  
+В Visual Studio предусмотрено множество возможностей расширяемости. Можно создавать собственные пакеты SDK, Windows, Windows Phone и пакеты SDK для Azure (которые устанавливаются как часть Visual Studio) и расширить самой среды Visual Studio.  
   
 ## <a name="extend-visual-studio"></a>Расширение Visual Studio  
- Пакет SDK для Visual Studio можно использовать для расширения практически для любого частью Visual Studio: команды, меню, windows, редакторы и проекты. Подробнее см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
+ Пакет SDK для Visual Studio можно использовать для расширения почти для любой частью Visual Studio: команды, меню, windows, редакторы и проекты. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-## <a name="create-your-own-sdks"></a>Создать собственные пакеты SDK  
- Узнайте, как создать, упаковки и развертывания собственных пакетов SDK платформы и расширения: [создание средств разработки программного обеспечения](../extensibility/creating-a-software-development-kit.md).  
+## <a name="create-your-own-sdks"></a>Создавать собственные пакеты SDK  
+ Узнайте, как для создания, упаковки и развертывания собственных пакетов SDK платформы и расширения: [Создание пакета средств разработки программного обеспечения](../extensibility/creating-a-software-development-kit.md).  
   
 ## <a name="roslyn-extensibility"></a>Расширяемость Roslyn  
- Узнайте, как использовать Roslyn для расширяемости: [расширяемости платформы компилятора .NET («Roslyn»)](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md).
+ Узнайте, как использование Roslyn для расширяемости: [расширяемость платформы компилятора .NET («Roslyn»)](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md).

@@ -1,5 +1,5 @@
 ---
-title: Файл состояния кода перечислителя | Документы Microsoft
+title: Перечислитель кода состояния файла | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128179"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498172"
 ---
-# <a name="file-status-code-enumerator"></a>Перечислитель код состояния файла
-`SccStatus` Перечислитель содержит именованных констант, определяющих состояние файла в системе управления версиями. Это перечисление используется методом [SccQueryInfo](../extensibility/sccqueryinfo-function.md) и `POPLISTFUNC` функция обратного вызова (в разделе [POPLISTFUNC](../extensibility/poplistfunc.md) подробные сведения).  
+# <a name="file-status-code-enumerator"></a>Перечислитель кода состояния файла
+`SccStatus` Перечислитель содержит именованные константы, определяющие состояние файла в системе управления версиями. Это перечисление используется с [SccQueryInfo](../extensibility/sccqueryinfo-function.md) и `POPLISTFUNC` функцию обратного вызова (см. в разделе [POPLISTFUNC](../extensibility/poplistfunc.md) сведения).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -56,7 +56,7 @@ enum SccStatus {
  Не удалось получить состояние; не следует полагаться на него.  
   
  SCC_STATUS_NOTCONTROLLED  
- Файл не задействован в системе управления версиями.  
+ Файл не существует в системе управления версиями.  
   
  SCC_STATUS_CONTROLLED  
  Файл находится в системе управления версиями.  
@@ -68,7 +68,7 @@ enum SccStatus {
  Файл извлечен другим пользователем.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Файл монопольно извлеченных.  
+ Файл извлечен монопольном режиме.  
   
  SCC_STATUS_OUTMULTIPLE  
  Файл извлечен более чем одним пользователем.  
@@ -80,16 +80,16 @@ enum SccStatus {
  Файл был удален из проекта.  
   
  SCC_STATUS_LOCKED  
- Файл заблокирован; Дополнительные версии не допускается.  
+ Файл заблокирован; Допускается наличие нескольких версий.  
   
  SCC_STATUS_MERGED  
- Файл был слияние, но еще не фиксированной и проверен.  
+ Файл были объединены, но еще не исправлены и проверены.  
   
  SCC_STATUS_SHARED  
- Файл используется совместно между проектами.  
+ Файл распределяется между проектами.  
   
  SCC_STATUS_PINNED  
- Файл будет доступно для явного версии.  
+ Файл будет доступно для версии явно.  
   
  SCC_STATUS_MODIFIED  
  Файл был изменен или разбить/нарушено.  
@@ -98,7 +98,7 @@ enum SccStatus {
  Файл извлечен текущим пользователем.  
   
  SCC_STATUS_NOMERGE  
- Файл не может быть объединена с и нет необходимости сохранять перед GET.  
+ Файл никогда не могут быть объединены с и нет необходимости сохранять до запроса GET.  
   
  SCC_STATUS_RESERVED_1  
  Зарезервировано для внутреннего использования.  
@@ -107,6 +107,6 @@ enum SccStatus {
  Зарезервировано для внутреннего использования.  
   
 ## <a name="see-also"></a>См. также  
- [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)   
+ [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)
