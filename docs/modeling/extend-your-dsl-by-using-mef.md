@@ -9,19 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 189e1020b3e96da4adf88793ba30cc78a25cd263
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381036"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567081"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
+
 Доменный язык (DSL) можно расширить с помощью Managed Extensibility Framework (MEF). Вы или другие разработчики смогут создавать расширения для DSL без изменения определения DSL и программного кода. К таким расширениям относятся команды меню, обработчики перетаскивания и вставки и проверки. Пользователи будут иметь возможность установки вашего DSL, а затем при необходимости установить расширения для него.
 
- Кроме того при включении MEF в DSL, он может быть проще писать некоторые функции вашего DSL, даже если все они создаются вместе с DSL.
+Кроме того при включении MEF в DSL, он может быть проще писать некоторые функции вашего DSL, даже если все они создаются вместе с DSL.
 
- Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Чтобы включить вашего DSL, который необходимо расширить платформой MEF
 
@@ -30,7 +31,7 @@ ms.locfileid: "39381036"
      Имя файла: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
-    >  Задайте идентификатор GUID в этом файле, чтобы совпадал с CommandSetId GUID, который определен в DslPackage\GeneratedCode\Constants.tt
+    > Задайте идентификатор GUID в этом файле, чтобы совпадал с CommandSetId GUID, который определен в DslPackage\GeneratedCode\Constants.tt
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -43,30 +44,30 @@ ms.locfileid: "39381036"
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-     Имя файла: `CommandExtensionRegistrar.tt`
+    Имя файла: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-     Имя файла: `ValidationExtensionEnablement.tt`
+    Имя файла: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-     Имя файла: `ValidationExtensionRegistrar.tt`
+    Имя файла: `ValidationExtensionRegistrar.tt`
 
-     Если добавить этот файл, необходимо включить проверки в доменном ЯЗЫКЕ с помощью по крайней мере одного из параметров в **EditorValidation** в обозревателе DSL.
+    Если добавить этот файл, необходимо включить проверки в доменном ЯЗЫКЕ с помощью по крайней мере одного из параметров в **EditorValidation** в обозревателе DSL.
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-     Имя файла: `PackageExtensionEnablement.tt`
+    Имя файла: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -82,14 +83,14 @@ ms.locfileid: "39381036"
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-     Имя файла: `GestureExtensionEnablement.tt`
+    Имя файла: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-     Имя файла: `GestureExtensionController.tt`
+    Имя файла: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -98,17 +99,17 @@ ms.locfileid: "39381036"
 
 3.  Добавьте следующую строку в существующий файл с именем **файле DslPackage\Commands.vsct**:
 
-    ```
+    ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-     Вставьте строку после существующего `<Include>` директива.
+    Вставьте строку после существующего `<Include>` директива.
 
-4.  `Open DslDefinition.dsl.`
+4.  Откройте *DslDefinition.dsl*.
 
 5.  В обозревателе DSL выберите **Editor\Validation**.
 
-6.  В окне «Свойства» убедитесь, что по крайней мере одно из свойств с именем **использует...**  является `true`.
+6.  В окне «Свойства» убедитесь, что по крайней мере одно из свойств с именем **использует** является `true`.
 
 7.  В **обозревателе решений** панели инструментов нажмите кнопку **преобразовать все шаблоны**.
 
@@ -116,10 +117,11 @@ ms.locfileid: "39381036"
 
 8.  Постройте и запустите решение, чтобы убедиться, что он работает по-прежнему.
 
- DSL теперь с поддержкой MEF. Команды меню, обработчиков жестов и ограничения проверки можно записывать в виде расширений MEF. Эти расширения можно написать в решение DSL, а также другой пользовательский код. Кроме того, вы или другие разработчики могут создавать отдельные [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения, расширение доменного языка.
+DSL теперь с поддержкой MEF. Команды меню, обработчиков жестов и ограничения проверки можно записывать в виде расширений MEF. Эти расширения можно написать в решение DSL, а также другой пользовательский код. Кроме того вам или другим разработчикам можно написать отдельный расширения Visual Studio, расширение доменного языка.
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Создание расширения для DSL с поддержкой MEF
- Если у вас есть доступ к DSL с поддержкой MEF, созданным вами или другим пользователем, можно написать для его расширения. Расширения можно использовать для добавления команды меню, обработчиков жестов или ограничений проверки. Чтобы создать эти расширения, используйте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решение Extension (VSIX). Решение состоит из двух частей: проект библиотеки классов, который создает сборки кода и проект VSIX, который упаковывает сборки.
+
+Если у вас есть доступ к DSL с поддержкой MEF, созданным вами или другим пользователем, можно написать для его расширения. Расширения можно использовать для добавления команды меню, обработчиков жестов или ограничений проверки. Для создания этих расширений, используется решение Visual Studio расширения (VSIX). Решение состоит из двух частей: проект библиотеки классов, который создает сборки кода и проект VSIX, который упаковывает сборки.
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Для создания DSL расширения VSIX
 
@@ -161,23 +163,25 @@ ms.locfileid: "39381036"
 
          Это позволяет пользователям устанавливать DSL и расширения, в то же время. Если пользователь уже установил DSL, будет устанавливаться только расширения.
 
-9. Просмотрите и обновите другими полями **source.extension.vsixmanifest**. Нажмите кнопку **выбрать выпуски** и убедитесь, что правильный [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлены.
+9. Просмотрите и обновите другими полями **source.extension.vsixmanifest**. Нажмите кнопку **выбрать выпуски** и убедитесь, что заданы правильные выпусках Visual Studio.
 
 10. Добавьте код в проект библиотеки классов. Используйте примеры в следующем разделе в качестве руководства.
 
      Можно добавить любое количество команд, жестов и классы проверки.
 
-11. Чтобы проверить расширение, нажмите клавишу **F5**. В экспериментальном экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]создайте или откройте пример файла класса DSL.
+11. Чтобы проверить расширение, нажмите клавишу **F5**. В экспериментальном экземпляре Visual Studio создайте или откройте пример файла класса DSL.
 
 ## <a name="writing-mef-extensions-for-dsls"></a>Создание расширений MEF для доменных языков
- Вы можете написать расширений в проекте кода сборки отдельные расширения решения DSL. Можно также использовать MEF в проекте DslPackage как удобный способ написания команд, жестов и код проверки как часть DSL.
+
+Вы можете написать расширений в проекте кода сборки отдельные расширения решения DSL. Можно также использовать MEF в проекте DslPackage как удобный способ написания команд, жестов и код проверки как часть DSL.
 
 ### <a name="menu-commands"></a>Команды меню
- Для записи команды меню, определите класс, реализующий <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> и префикс класс с атрибутом, который определен в доменном ЯЗЫКЕ, с именем *YourDsl*`CommandExtension`. Вы можете написать более одного класса команды меню.
 
- `QueryStatus()` вызывается всякий раз, когда пользователь щелкает правой кнопкой мыши схему. Он должен проверить текущее выделение и задать `command.Enabled` чтобы указать, когда применяется команда.
+Для записи команды меню, определите класс, реализующий <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> и префикс класс с атрибутом, который определен в доменном ЯЗЫКЕ, с именем *YourDsl*`CommandExtension`. Вы можете написать более одного класса команды меню.
 
-```
+`QueryStatus()` вызывается всякий раз, когда пользователь щелкает правой кнопкой мыши схему. Он должен проверить текущее выделение и задать `command.Enabled` чтобы указать, когда применяется команда.
+
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl; // My DSL
@@ -239,16 +243,15 @@ namespace MyMefExtension
     }
   }
 }
-
 ```
 
 ### <a name="gesture-handlers"></a>Обработчики жестов
- Обработчик жестов умеет работать с объектами при перетаскивании на схему, в любом месте внутри или за пределами [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Следующий пример позволяет пользователю перетаскивать файлы из проводника Windows в схеме. Он создает элементы, которые содержат имена файлов.
 
- Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Обработчик жестов умеет работать с объектами, перетаскивать на схему в любой точке мира, внутри или за пределами Visual Studio. Следующий пример позволяет пользователю перетаскивать файлы из проводника Windows в схеме. Он создает элементы, которые содержат имена файлов.
 
-```
+Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl;
@@ -316,15 +319,15 @@ namespace MefExtension
     }
   }
 }
-
 ```
 
 ### <a name="validation-constraints"></a>Ограничения проверки
- Методы проверки отмечаются `ValidationExtension` атрибут, который создается по DSL, а также по <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Метод может отображаться в любом классе, который не помечен с помощью атрибута.
 
- Дополнительные сведения см. в разделе [проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md).
+Методы проверки отмечаются `ValidationExtension` атрибут, который создается по DSL, а также по <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Метод может отображаться в любом классе, который не помечен с помощью атрибута.
 
-```
+Дополнительные сведения см. в разделе [проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md).
+
+```csharp
 using Company.MyDsl;
 using Company.MyDsl.ExtensionEnablement;
 using Microsoft.VisualStudio.Modeling.Validation;
@@ -369,7 +372,6 @@ namespace MefExtension
           // Element to highlight when user double-clicks error:
           , elementToValidate);
 } } } }
-
 ```
 
 ## <a name="see-also"></a>См. также

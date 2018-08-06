@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513511"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566633"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 
@@ -50,14 +50,13 @@ using System.Linq;
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Этот метод вызывается в том случае, если пользователь отпускает кнопку мыши при наведении указателя мыши над фигурой или схемой, если `OnDragOver(DiagramDragEventArgs e)` заданные ранее `e.Effect` на значение, отличное от `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ using System.Linq;
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Этот метод вызывается при двойном щелчке фигуры или схемы.
@@ -76,7 +74,7 @@ using System.Linq;
 
 Определите `IsAcceptableDropItem(e)`, чтобы задать допустимость перетаскиваемого элемента, и ProcessDragDropItem(e), чтобы обновить модель после перетаскивания элемента. Прежде всего, эти методы должны извлечь элемент из аргументов события. Сведения о том, как это сделать, см. в разделе [как для получения ссылки на перетаскиваемый элемент](#extracting).
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>Определение обработчиков жестов с помощью MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Определение обработчиков жестов с помощью MEF
 
 Используйте этот метод, чтобы разрешить сторонним разработчикам определять собственные обработчики в вашем DSL. В этом случае после установки вашего DSL пользователи смогут установить сторонние расширения.
 
@@ -148,7 +146,6 @@ MEF (Managed Extensibility Framework) позволяет определять к
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      Чтобы принять фигуры UML, определите GUID классов фигур UML экспериментальным способом. Помните, что на любой схеме обычно бывает больше одного типа элементов. Кроме того, объект, перетаскиваемый из доменного языка или схемы UML, является фигурой, а не элементом модели.
@@ -163,7 +160,7 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Подготовка проекта доменного языка для шины модели
 
-1.  Обеспечьте доступ шины модели [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] к исходному DSL.
+1.  Доступа к исходному DSL с шины модели Visual Studio:
 
     1.  Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 

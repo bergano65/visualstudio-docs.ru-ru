@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177105"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566772"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 API неизменности [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK дает возможность программе блокировки всех или части модели доменного языка (DSL), чтобы его можно читать но не изменяется. Этот параметр только для чтения может использоваться, например, таким образом, пользователь может запросить коллеги аннотировать и просматривать модель DSL, но запретить их изменять исходный.
@@ -31,7 +31,7 @@ API неизменности [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_m
 ## <a name="setting-and-getting-locks"></a>Задание и получение блокировки
  Можно задать блокировки на хранилище, в раздел или на отдельном элементе. Например Эта инструкция будет предотвратить удаление элемента модели и также предотвратит ее свойства изменяемой:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>Блокировок на разделы и хранилищ
  Блокировки могут также применяться для секций и хранилище. Блокировку, которая задается в разделе применяется ко всем элементам в секции. Таким образом например, следующая инструкция будет препятствовать все элементы в секции их удалении, независимо от состояния свои собственные блокировки. Тем не менее, других блокировок например `Locks.Property` по-прежнему может устанавливаться на отдельные элементы:
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>Определение политики блокировки
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> имеет следующее определение:
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  Пример:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>Чтобы привести политику доступно в виде службы
  В вашей `DslPackage` проект, добавить новый файл, который содержит код, аналогичный приведенному ниже:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
