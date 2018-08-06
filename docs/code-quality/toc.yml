@@ -28,13 +28,18 @@
   items:
     - name: Анализ управляемого кода
       items:
-        - name: Установка анализаторов Roslyn
+        - name: "Миграция с\_FxCop"
+          href: fxcop-analyzers.yml
+          items:
+            - name: "Установка анализаторов\_FxCop"
+              href: install-fxcop-analyzers.md
+        - name: "Установка анализаторов\_Roslyn"
           href: install-roslyn-analyzers.md
-        - name: Настройка и использование анализаторов Roslyn
+        - name: "Настройка и использование анализаторов\_Roslyn"
           href: use-roslyn-analyzers.md
         - name: Включение автоматического анализа кода
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: Включение полного анализа решения
+        - name: Включить полный анализ решения
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Автоматическая приостановка функции
           href: automatic-feature-suspension.md
@@ -43,7 +48,7 @@
         - name: Отключение предупреждений
           href: in-source-suppression-overview.md
           items:
-            - name: Отключение предупреждений в ходе анализа созданного кода
+            - name: Отключение предупреждений анализа для генерируемого кода
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Настройка словаря анализа кода
           href: how-to-customize-the-code-analysis-dictionary.md
