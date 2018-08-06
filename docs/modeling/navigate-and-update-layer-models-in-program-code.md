@@ -12,24 +12,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2be7a0fdb3204647f6874d2dceaa81eb8cac3756
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952278"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566743"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Перемещение по моделям слоев в коде программы и их обновление
 
-Этой статье описываются элементы и связи в модели слоев, которые могут перемещаться и обновить с помощью программного кода. Дополнительные сведения о схемах зависимостей с точки зрения пользователя см. в разделе [схемы зависимостей: ссылка](../modeling/layer-diagrams-reference.md) и [схемы зависимостей: рекомендации по](../modeling/layer-diagrams-guidelines.md).
+В этой статье описываются элементы и отношения в моделях слоев, к которым можно перейти и обновить с помощью программного кода. Дополнительные сведения о диаграммах зависимостей с точки зрения пользователя см. в разделе [схемы зависимостей: ссылка](../modeling/layer-diagrams-reference.md) и [схемы зависимостей: рекомендации по](../modeling/layer-diagrams-guidelines.md).
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Модели, описанные в этом разделе является интерфейсом более общей <xref:Microsoft.VisualStudio.GraphModel> модели. При создании [расширения команды меню или жеста](../modeling/add-commands-and-gestures-to-layer-diagrams.md), используйте `Layer` модели. При создании [расширение проверки слоя](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), проще использовать `GraphModel`.
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Модель, описанную в этом разделе является интерфейсом более общей <xref:Microsoft.VisualStudio.GraphModel> модели. Если вы создаете [расширение команды или жеста меню](../modeling/add-commands-and-gestures-to-layer-diagrams.md), использовать `Layer` модели. Если вы создаете [расширения проверки слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), проще использовать `GraphModel`.
 
 ## <a name="transactions"></a>Транзакции
 
-При обновлении модели рекомендуется заключить изменения в `ILinkedUndoTransaction`, который позволяет сгруппировать изменения в одну транзакцию. Если в случае сбоя любых изменений откат всей транзакции. Если пользователь отменяет изменение, все изменения будут отменены друг с другом.
+При обновлении модели, рассмотрите возможность включения изменений в `ILinkedUndoTransaction`, которые группируют изменения в одну транзакцию. Если изменений не удается, вся транзакция откатывается. Если пользователь отменяет изменение, все изменения будут отменены вместе.
 
-```
+```csharp
 using (ILinkedUndoTransaction t =
         LinkedUndoContext.BeginTransaction("a name"))
 {
@@ -84,7 +84,7 @@ IEnumerable<ILayerComment> comments =
 
 Все типы элементов, которые могут содержаться в модели, являются элементами слоя:
 
-![содержимое схемы зависимостей, содержит элементы Ilayerelement.](../modeling/media/layerapi_layerelements.png)
+![зависимость схеме ilayerelement.](../modeling/media/layerapi_layerelements.png)
 
 ## <a name="properties"></a>Свойства
 
@@ -92,27 +92,27 @@ IEnumerable<ILayerComment> comments =
 
 ## <a name="artifact-references"></a>Ссылки на артефакты
 
-Ссылка на артефакт (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) представляет связь между слоем и элементом проекта, таким как файл, класс или папка. Пользователь создает артефакты для создания слоя или добавить в него путем перетаскивания элементов из обозревателя решений, представления классов или обозревателя объектов в диаграмме зависимостей. К слою может быть привязано любое число ссылок на артефакты.
+Ссылка на артефакт (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) представляет связь между слоем и элементом проекта, таким как файл, класс или папка. Пользователи создают артефакты, для создания слоя или добавить к нему путем перетаскивания элементов из обозревателя решений, представления классов или обозревателя объектов в схеме зависимостей. К слою может быть привязано любое число ссылок на артефакты.
 
-В каждой строке обозревателя слоев отображается ссылка на артефакт. Дополнительные сведения см. в разделе [создавать диаграммы зависимостей в коде](../modeling/create-layer-diagrams-from-your-code.md).
+В каждой строке обозревателя слоев отображается ссылка на артефакт. Дополнительные сведения см. в разделе [Создание схем зависимостей из кода](../modeling/create-layer-diagrams-from-your-code.md).
 
 Основные типы и методы, затрагиваемые ссылками на артефакты, следующие:
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Свойство Categories указывает, на какой тип артефакта имеется ссылка (например, класс, исполняемый файл или сборка). Свойство Categories определяет, каким образом идентификатор идентифицирует целевой артефакт.
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Свойство Categories указывает, на какой тип артефакта имеется ссылка (например, класс, исполняемый файл или сборка). Свойство категории определяет, каким образом идентификатор идентифицирует целевой артефакт.
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> создает ссылку артефакта на основе <xref:EnvDTE.Project> или <xref:EnvDTE.ProjectItem>. Это асинхронная операция. Таким образом обычно требуется предоставить обратный вызов, который вызывается после завершения создания.
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> создает ссылку артефакта на основе <xref:EnvDTE.Project> или <xref:EnvDTE.ProjectItem>. Это асинхронная операция. Таким образом, как правило, предоставляется обратный вызов, который вызывается после завершения создания.
 
-Ссылки на артефакты слоя отличаются артефактами в схемах вариантов использования.
+Ссылки на артефакты слоя отличаются с артефактами в схемах вариантов использования.
 
 ## <a name="shapes-and-diagrams"></a>Фигуры и схемы
 
-Для представления каждого элемента в модели слоев используются два объекта: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> и <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` представляет положение и размер фигуры на схеме. В модели слоев каждый `ILayerElement` имеет один `IShape`и каждый `IShape` на зависимость схема имеет один `ILayerElement`. `IShape` также используется для моделей UML. Поэтому не каждому объекту `IShape` назначается элемент слоя.
+Для представления каждого элемента в модели слоев используются два объекта: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> и <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` представляет положение и размер фигуры на схеме. В моделях слоев каждый `ILayerElement` имеет один `IShape`и каждый `IShape` на зависимость схема имеет один `ILayerElement`. `IShape` также используется для моделей UML. Поэтому не каждому объекту `IShape` назначается элемент слоя.
 
 Аналогично, <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> отображается на одной схеме <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.
 
 В коде пользовательского обработчика команды или жеста можно получить текущую схему и текущий набор фигур, используя импорт `DiagramContext`:
 
-```
+```csharp
 public class ... {
 [Import]
     public IDiagramContext DiagramContext { get; set; }

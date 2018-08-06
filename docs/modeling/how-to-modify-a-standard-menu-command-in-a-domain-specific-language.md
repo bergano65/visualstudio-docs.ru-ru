@@ -12,27 +12,27 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: daa44f17fcf0eb61f5c4ce6c1bfada685a20f45e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951834"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566785"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 
-Поведение некоторых стандартных команд, определенных в доменном языке автоматически, можно изменять. Например, можно изменить **Вырезать** таким образом, чтобы исключить конфиденциальные сведения. Для этого необходимо переопределить методы в классе наборов команд. Эти классы определяются в файле CommandSet.cs проекта DslPackage project и являются производными от класса <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Поведение некоторых стандартных команд, определенных в доменном языке автоматически, можно изменять. Например, можно изменить **Вырезать** таким образом, чтобы она исключала конфиденциальные сведения. Для этого необходимо переопределить методы в классе наборов команд. Эти классы определяются в файле CommandSet.cs проекта DslPackage project и являются производными от класса <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Если вы хотите создать собственные команды меню, см. раздел [как: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Если вы хотите создать свои собственные команды меню, см. в разделе [как: Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
 ## <a name="what-commands-can-you-modify"></a>Какие команды можно изменять?
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Поиск команд, доступных для изменения
 
-1.  В `DslPackage` откройте проект `GeneratedCode\CommandSet.cs`. Этот файл C# можно найти в обозревателе решений как дочерний `CommandSet.tt`.
+1.  В `DslPackage` откройте проект `GeneratedCode\CommandSet.cs`. Этот файл C# можно найти в обозревателе решений как дочерний для файла `CommandSet.tt`.
 
-2.  Поиск классов в этом файле именем, заканчивающимся "`CommandSet`», например `Language1CommandSet` и `Language1ClipboardCommandSet`.
+2.  Найти классы в этом файле, имена которых заканчиваются "`CommandSet`«, например `Language1CommandSet` и `Language1ClipboardCommandSet`.
 
 3.  В каждом классе наборов команд введите "`override`" и пробел. IntelliSense отобразит список методов, которые можно переопределить. Каждая команда имеет пару методов, имена которых начинаются с "`ProcessOnStatus`" и "`ProcessOnMenu`".
 
@@ -59,7 +59,7 @@ ms.locfileid: "31951834"
 
 3.  В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
 
-    ```
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.Design;
@@ -67,15 +67,15 @@ ms.locfileid: "31951834"
     { internal partial class Language1CommandSet { ...
     ```
 
-     **Примечание** Если файл шаблона класса используются для создания нового файла, необходимо исправить пространство имен и имя класса.
+     **Примечание** Если для создания нового файла использовался шаблон файла класса, необходимо откорректировать пространство имен и имя класса.
 
 ## <a name="override-the-command-methods"></a>Переопределение методов команд
 
-Большинство команд имеют два связанных методов: метод с именем, например `ProcessOnStatus`... определяет, следует ли команда видимы и включены. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`... вызывается, когда пользователь щелкает команду и следует выполнять функции команды. Возможно, потребуется переопределение одного или двух этих методов.
+Большинство команд имеют два связанных метода: метод с именем, например `ProcessOnStatus`... определяет, должна ли команда быть видимы и включены. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`… вызывается, когда пользователь щелкает команду и должна выполнять функцию команды. Возможно, потребуется переопределение одного или двух этих методов.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Изменение условий отображения команды в меню
 
-Переопределить... ProcessOnStatus метод. Он должен задавать свойства Visible и Enabled своего параметра MenuCommand. Обычно команда проверяет this.CurrentSelection, чтобы определить, применяется ли команда к выбранным элементам, а также может проверить их свойства, чтобы определить возможность применения команды в их текущем состоянии.
+Переопределите метод ProcessOnStatus... метод. Он должен задавать свойства Visible и Enabled своего параметра MenuCommand. Обычно команда проверяет this.CurrentSelection, чтобы определить, применяется ли команда к выбранным элементам, а также может проверить их свойства, чтобы определить возможность применения команды в их текущем состоянии.
 
 Как правило, свойство Visible должно определяться выбранными элементами. Свойство Enabled, определяющее цвет отображения команды в меню (черный или серый), должно зависеть от текущего состояния выделения.
 
@@ -107,7 +107,7 @@ protected override void ProcessOnStatusDeleteCommand (MenuCommand command)
 
 ### <a name="to-change-the-behavior-of-the-command"></a>Изменение поведения команды
 
-Переопределить... ProcessOnMenu метод. В следующем примере код запрещает пользователю удалять больше одного элемента за один раз даже с помощью клавиши Delete.
+Переопределите метод ProcessOnMenu... метод. В следующем примере код запрещает пользователю удалять больше одного элемента за один раз даже с помощью клавиши Delete.
 
 ```csharp
 /// <summary>
@@ -132,17 +132,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 -   `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
 
--   `this.IsDiagramSelected()` - `true` Если пользователь щелкнет пустую область схемы.
+-   `this.IsDiagramSelected()` - `true` Если пользователь щелкает пустую область схемы.
 
 -   `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` -пользователь не выбран нескольких фигур
+-   `this.IsSingleSelection()` — пользователь не выбрал несколько фигур
 
--   `this.SingleSelection` -Фигура или схема, на который пользователь щелкнул правой кнопкой мыши
+-   `this.SingleSelection` -фигуры или схемы, который пользователь щелкнул правой кнопкой мыши
 
--   `shape.ModelElement as MyLanguageElement` -элемент модели, представленной фигуры.
+-   `shape.ModelElement as MyLanguageElement` -элемент модели, представленный фигурой.
 
-Дополнительные сведения о том, как перейти от элемента к элементу и о способах создания объектов и ссылок см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
+Дополнительные сведения о способах навигации между элементами и о том, как создавать объекты и ссылки, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>См. также
 
@@ -152,5 +152,5 @@ protected override void ProcessOnMenuDeleteCommand()
 - [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Справочник по схемам XML VSCT](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK - образец схемы канала. Настройка широко DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-- [Пример кода: схемы канала](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK - принципиальной схемы. Настройки обширной DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Пример кода: пример принципиальной схемы](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

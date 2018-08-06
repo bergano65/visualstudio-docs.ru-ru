@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: af1af0f6b3493cedebd949bd9f1d36d795a64914
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380581"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566587"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Пошаговое руководство. Формирование кода с помощью текстовых шаблонов
 
@@ -167,7 +167,7 @@ namespace MyProject
 
 Тестовый код требует класс для каждого узла в файле. Таким образом, некоторые ошибки компиляции исчезнут, если добавить в шаблон следующие строки и сохранить его:
 
-```
+```csharp
 class Catalog {}
 class Artist {}
 class Song {}

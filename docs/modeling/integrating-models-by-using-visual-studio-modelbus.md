@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382052"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567185"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Интеграция моделей с помощью Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus предоставляет метод для создания ссылок между моделями и из других средств в модели. Например можно связать модели доменного языка (DSL) и моделей UML. или создать интегрированный набор DSL.
@@ -182,7 +182,7 @@ ms.locfileid: "39382052"
 
  В файл кода, предназначенного для создания ссылок, как правило, импортируются следующие пространства имен:
 
-```
+```csharp
 // The namespace of the DSL you want to reference:
 using Fabrikam.FamilyTree;  // Exposed DSL
 using Fabrikam.FamilyTree.ModelBusAdapters;
@@ -199,7 +199,7 @@ using System.Linq;
 > [!NOTE]
 >  После использования адаптер необходимо ликвидировать. Наиболее удобным способом достижения этой цели является использование оператора `using`. Это показано в следующем примере.
 
-```
+```csharp
 // The file path of a model instance of the FamilyTree DSL:
 string targetModelFile = "TudorFamilyTree.ftree";
 // Get the ModelBus service:
@@ -235,7 +235,7 @@ using (FamilyTreeAdapter adapter =
 
  Чтобы `modelReference` можно было использовать позднее, ее можно сохранить в свойстве домена, имеющем ссылку `ModelBusReference` внешнего типа:
 
-```
+```csharp
 using Transaction t = this.Store.TransactionManager
     .BeginTransaction("keep reference"))
 {
@@ -249,7 +249,7 @@ using Transaction t = this.Store.TransactionManager
 ### <a name="to-create-a-reference-to-an-element"></a>Создание ссылки на элемент
  Созданный для модели адаптер можно использовать для создания и разрешения ссылок.
 
-```
+```csharp
 // person is an element in the FamilyTree model:
 ModelBusReference personReference =
   adapter.GetElementReference(person);
@@ -262,7 +262,7 @@ ModelBusReference personReference =
 
  Из MBR можно создать адаптер. Из адаптера можно получить корень модели. Также можно разрешить MBR, ссылающиеся на определенные элементы внутри модели.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Integration; ...
 ModelBusReference elementReference = ...;
 
@@ -342,7 +342,7 @@ using (FamilyTreeAdapter adapter =
 ## <a name="serializing-a-modelbusreference"></a>Сериализация ссылки ModelBus (ModelBusReference)
  Если `ModelBusReference` (MBR) необходимо сохранить в виде строки, ее можно сериализовать:
 
-```
+```csharp
 string serialized = modelBus.SerializeReference(elementReference);
 // Store it anywhere, then get it back again:
 ModelBusReference elementReferenceRestored =
@@ -356,7 +356,7 @@ ModelBusReference elementReferenceRestored =
 
  Сериализация относительно пути:
 
-```
+```csharp
 elementReference.ReferenceContext.Add(
    ModelBusReferencePropertySerializer.FilePathSaveContextKey,
    currentProjectFilePath);
@@ -365,7 +365,7 @@ string serialized = modelBus.SerializeReference(elementReference);
 
  Получение ссылки из строки:
 
-```
+```csharp
 ReferenceContext context = new ReferenceContext();
 context.Add(ModelBusReferencePropertySerializer.FilePathLoadContextKey,
     currentProjectFilePath);
@@ -395,7 +395,7 @@ ModelBusReference elementReferenceRestored =
 
  В данном примере целевой DSL имеет имя StateMachine. От него наследуются несколько имен, например имя класса модели и имя ModelBusAdapter.
 
-```
+```csharp
 using Fabrikam.StateMachine.ModelBusAdapters;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -447,7 +447,7 @@ using (StateMachineAdapter adapter =
 ## <a name="validating-references"></a>Проверка ссылок
  BrokenReferenceDetector проверяет все свойства домена в хранилище (Store), которое может содержать ссылки ModelBus (ModelBusReference). Он вызывает действие, которое определяет место выполнения любого действия. Это особенно полезно для методов проверки. Следующий метод проверки тестирует хранилище, пытаясь сохранить модель, и сообщает в окне ошибок о "битых" ссылках:
 
-```
+```csharp
 [ValidationMethod(ValidationCategories.Save)]
 public void ValidateModelBusReferences(ValidationContext context)
 {
@@ -489,7 +489,7 @@ private const string INVALID_REF_FORMAT =
 
 -   В свойство домена будут добавлены несколько атрибутов CLR. Их можно увидеть в поле "Пользовательские атрибуты" окна "Свойства". В **Dsl\GeneratedCode\DomainClasses.cs**, можно просмотреть атрибуты в объявлении свойства:
 
-    ```
+    ```csharp
     [System.ComponentModel.TypeConverter(typeof(
     Microsoft.VisualStudio.Modeling.Integration.ModelBusReferenceTypeConverter))]
     [System.ComponentModel.Editor(typeof(
