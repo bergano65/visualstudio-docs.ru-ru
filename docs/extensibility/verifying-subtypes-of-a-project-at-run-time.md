@@ -1,5 +1,5 @@
 ---
-title: Проверка во время выполнения подтипы проекта | Документы Microsoft
+title: Проверка подтипов проекта во время выполнения | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8898da6850c01c1a248b57b0fbc5f46be2a8ff4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22e3205f3a8bd8ef7ce7e44b775ae1ef5a30cfa5
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136833"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586213"
 ---
-# <a name="verifying-subtypes-of-a-project-at-run-time"></a>Проверка подтипы проекта во время выполнения
-Пакет VSPackage, который зависит от подтип пользовательский проект следует логики для поиска, подтипа, чтобы он могут отклоняться корректно подтип не указан. Ниже показано, как проверить наличие указанного подтипа.  
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>Проверка подтипов проекта во время выполнения
+Пакет VSPackage, который зависит от подтипом пользовательский проект должен включать логику для поиска, которая подтипа таким образом, чтобы выдать сбой корректно Если отсутствует подтип. Ниже показано, как убедиться в наличии указанного подтипа.  
   
 ### <a name="to-verify-the-presence-of-a-subtype"></a>Чтобы убедиться в наличии подтипа  
   
-1.  Объекты проекта и решения, как получить иерархии проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , добавив следующий код в пакете VSPackage.  
+1.  Получить иерархию проекта из проекта и решения объектов как <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта, добавив следующий код к VSPackage.  
   
-    ```  
+    ```csharp  
     EnvDTE.DTE dte;  
     dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
   
@@ -43,24 +43,24 @@ ms.locfileid: "31136833"
   
     ```  
   
-2.  Приведение иерархии <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> интерфейса.  
+2.  Иерархии, чтобы привести <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> интерфейс.  
   
-    ```  
+    ```csharp  
     IVsAggregatableProjectCorrected AP;  
     AP = hierarchy as IVsAggregatableProjectCorrected;  
   
     ```  
   
-3.  Получить список идентификаторов GUID типа проекта путем вызова <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.  
+3.  Получить список GUID типа проекта путем вызова <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.  
   
-    ```  
+    ```csharp  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
   
     ```  
   
 4.  Проверьте список для GUID указанного подтипа.  
   
-    ```  
+    ```csharp  
     // Replace the string "MyGUID" with the GUID of the subtype.  
     string guidMySubtype = "MyGUID";  
     if (projTypeGuids.IndexOf(guidMySubtype) > 0)  
@@ -70,6 +70,6 @@ ms.locfileid: "31136833"
     ```  
   
 ## <a name="see-also"></a>См. также  
- [Подтипы проектов](../extensibility/internals/project-subtypes.md)   
- [Подтипы конструктора проектов](../extensibility/internals/project-subtypes-design.md)   
+ [Подтипов проекта](../extensibility/internals/project-subtypes.md)   
+ [Разработка подтипов проекта](../extensibility/internals/project-subtypes-design.md)   
  [Свойства и методы, расширенные подтипами проектов](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

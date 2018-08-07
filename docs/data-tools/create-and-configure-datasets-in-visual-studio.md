@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a65c1960e1648dce3bb8ff40d1dd6c50534934ff
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756036"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582236"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Создание и настройка наборов данных в Visual Studio
 
@@ -72,7 +72,7 @@ ms.locfileid: "36756036"
 
 1.  Щелкните узел набора данных в **обозревателе решений** для переноса фокуса в конструкторе наборов данных.
 
-2.  Нажмите кнопку **источников данных** вкладку в левой области Visual Studio, или введите `Data Sources` в **быстрого запуска**.
+2.  Нажмите кнопку **источников данных** вкладка в левой области Visual Studio, или тип **источников данных** в **быстрого запуска** поле.
 
 3.  Щелкните правой кнопкой мыши узел набора данных и выберите **Настройка источника данных с помощью мастера**.
 
