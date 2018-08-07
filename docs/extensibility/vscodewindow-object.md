@@ -1,5 +1,5 @@
 ---
-title: Объект VSCodeWindow | Документы Microsoft
+title: Объект VSCodeWindow | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,23 +16,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2b1d85eea974e67ae37f8d4d5bfd7aa0069e92b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9ef7d4b190a9b2c1a487fb70df33726ca9b3ed4
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138646"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586278"
 ---
 # <a name="vscodewindow-object"></a>Объект VSCodeWindow
-Окно кода является специализированные документа, можно включить одно или несколько представлений текста обычно <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> объекта.  
+Окно кода — это окно специализированные документов, который может включать одно или несколько представлений текста, обычно <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> объекта.  
   
- С точки зрения архитектуры окно кода является окно документа, в котором находится внутри рамки окна. С функциональной области окна кода — просто это окно документов с дополнительными возможностями. В режиме многодокументного интерфейса (MDI) окно кода — дочерняя рамка MDI. Дополнительные сведения см. в разделе [Настройка окна кода с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
+ С точки зрения архитектуры окно кода — это окно документов, который находится в пределах фрейма окна. С функциональной точки зрения окно кода — просто это окно документов с помощью дополнительных функций. В режиме многодокументного интерфейса (MDI) в окне кода является дочерняя рамка MDI. Дополнительные сведения см. в разделе [Настройка кода windows, используя старый API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
- В следующей таблице приведены интерфейсы в <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> объекта.  
+ В следующей таблице приведены интерфейсы <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> объекта.  
   
-|Метод|Описание|  
+|Метод|Описание:|  
 |------------|-----------------|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Предоставляет общий доступ к механизм для поиска службы, определяющий глобальный уникальный идентификатор (GUID).|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Предоставляет универсальный доступ механизм для поиска службы, определяющий глобальный уникальный идентификатор (GUID).|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Представляет несколько дочерних интерфейса (MDI) документа, содержащий одно или несколько представлений кода.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Заполняет рамку окна.|  
   

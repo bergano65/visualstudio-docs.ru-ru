@@ -16,19 +16,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2ad0047ef4ddc71b85f5fc04c865a9753b7c19
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ab4ee8f468b3d6fa138984e17f3bbe843082e987
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756997"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582451"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает простую привязку данных
+
 При отображении данных на формах в приложениях Windows, можно выбрать существующие элементы управления из **элементов**, или можно создать пользовательские элементы управления, если вашему приложению требуется функциональность, которая недоступна в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.DefaultBindingPropertyAttribute>, могут содержать одно свойство, которое можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.TextBox> или <xref:System.Windows.Forms.CheckBox>.
 
- Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
- При создании элементов управления для использования в сценариях привязки данных, должны реализовывать один из следующих атрибутов привязки к данным:
+При создании элементов управления для использования в сценариях привязки данных, должны реализовывать один из следующих атрибутов привязки к данным:
 
 |Использование атрибута привязки данных|
 |-----------------------------------|
@@ -36,9 +37,9 @@ ms.locfileid: "36756997"
 |Реализуйте <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.DataGridView>, которые отображают списки (или таблицы) данных. Дополнительные сведения см. в разделе [создать пользовательский элемент управления Windows Forms, который поддерживает сложную привязку данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Реализуйте <xref:System.ComponentModel.LookupBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.ComboBox>, которые отображают списки (или таблицы) данных, но также должны представлять отдельный столбец или отдельное свойство. Дополнительные сведения см. в разделе [создать пользовательский элемент управления Windows Forms с привязкой данных подстановки](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- В этом пошаговом руководстве создается простой элемент управления, отображающий данные из одного столбца в таблице. В данном примере используется столбец `Phone` таблицы `Customers` из учебной базы данных "Борей". Этот простой элемент управления отображает номера телефонов заказчиков в стандартный формат номера телефона, с помощью <xref:System.Windows.Forms.MaskedTextBox> и задавая маску для номера телефона.
+В этом пошаговом руководстве создается простой элемент управления, отображающий данные из одного столбца в таблице. В данном примере используется столбец `Phone` таблицы `Customers` из учебной базы данных "Борей". Этот простой элемент управления отображает номера телефонов заказчиков в стандартный формат номера телефона, с помощью <xref:System.Windows.Forms.MaskedTextBox> и задавая маску для номера телефона.
 
- В этом пошаговом руководстве описаны следующие процедуры.
+В этом пошаговом руководстве описаны следующие процедуры.
 
 -   Создайте новый **приложение Windows Forms**.
 
@@ -55,6 +56,7 @@ ms.locfileid: "36756997"
 -   Создание формы для отображения данных в новом элементе управления.
 
 ## <a name="prerequisites"></a>Предварительные требования
+
 В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.
 
 1.  Если у вас нет SQL Server Express LocalDB, установите его из [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), либо с помощью **установщик Visual Studio**. В **установщик Visual Studio**, можно установить SQL Server Express LocalDB как часть **хранение и обработка данных** рабочей нагрузки, или в качестве отдельного компонента.
@@ -72,9 +74,8 @@ ms.locfileid: "36756997"
        Через некоторое время выполнения запроса отобразятся и создания базы данных Northwind.
 
 ## <a name="create-a-windows-forms-application"></a>Создание приложения Windows Forms
- Первым шагом является создание **приложение Windows Forms**.
 
-#### <a name="to-create-the-new-windows-project"></a>Порядок создания нового проекта Windows
+Первым шагом является создание **приложение Windows Forms**:
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
@@ -87,20 +88,18 @@ ms.locfileid: "36756997"
      **SimpleControlWalkthrough** проект создан и добавлен **обозревателе решений**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Добавьте в проект пользовательский элемент управления
- В этом пошаговом руководстве создается простой элемент управления можно привязать к данным из **пользовательский элемент управления**, поэтому необходимо добавить **пользовательский элемент управления** элемент **SimpleControlWalkthrough** проекта.
 
-#### <a name="to-add-a-user-control-to-the-project"></a>Добавление пользовательского элемента управления в проект
+В этом пошаговом руководстве создается простой элемент управления можно привязать к данным из **пользовательский элемент управления**. Добавить **пользовательский элемент управления** элемент **SimpleControlWalkthrough** проекта:
 
 1.  Из **проекта** меню, выберите **добавить пользовательский элемент управления**.
 
-2.  Тип `PhoneNumberBox` в имя области, а также выберите **добавить**.
+2.  Тип **PhoneNumberBox** в имя области, а также выберите **добавить**.
 
      **PhoneNumberBox** элемент управления добавляется **обозревателе решений**и откроется в конструкторе.
 
 ## <a name="design-the-phonenumberbox-control"></a>Порядок проектирования элемента управления PhoneNumberBox
- В этом пошаговом руководстве расширяется существующий <xref:System.Windows.Forms.MaskedTextBox> для создания элемента управления `PhoneNumberBox`.
 
-#### <a name="to-design-the-phonenumberbox-control"></a>Порядок проектирования элемента управления PhoneNumberBox
+В этом пошаговом руководстве расширяется существующий <xref:System.Windows.Forms.MaskedTextBox> для создания **PhoneNumberBox** управления:
 
 1.  Перетащите <xref:System.Windows.Forms.MaskedTextBox> из **элементов** в область конструктора пользовательского элемента управления.
 
@@ -109,13 +108,12 @@ ms.locfileid: "36756997"
 3.  Выберите **номер телефона** в **маска ввода** диалоговое окно и нажмите кнопку **ОК** для задания маски.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Добавьте необходимый атрибут привязки данных
- Для простых элементов управления, поддерживающих привязку к данным, реализуйте <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.
 
-#### <a name="to-implement-the-defaultbindingproperty-attribute"></a>Реализация атрибута DefaultBindingProperty
+Для простых элементов управления, поддерживающие привязку данных, реализовать <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1.  Переключите элемент управления `PhoneNumberBox` в представление кода. (На **представление** меню, выберите **кода**.)
+1.  Коммутатор **PhoneNumberBox** элемента управления в представление кода. (На **представление** меню, выберите **кода**.)
 
-2.  Замените код в `PhoneNumberBox` следующим кодом:
+2.  Замените код в **PhoneNumberBox** на следующий:
 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
@@ -123,9 +121,8 @@ ms.locfileid: "36756997"
 3.  В меню **Построение** выберите пункт **Построить решение**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Создать источник данных из базы данных
- Этот шаг использует **конфигурации источника данных**мастер для создания источника данных на основе `Customers` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
 
-#### <a name="to-create-the-data-source"></a>Создание источника данных
+Этот шаг использует **конфигурации источника данных**мастер для создания источника данных на основе `Customers` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке учебной базе данных Northwind, см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  В меню **Данные** выберите команду **Показать источники данных**.
 
@@ -150,9 +147,8 @@ ms.locfileid: "36756997"
      **NorthwindDataSet** добавляется в проект и `Customers` таблица появится в **источников данных** окна.
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Порядок настройки столбца телефона на использование элемента управления PhoneNumberBox
- В рамках **источников данных** окно, можно задать элемент управления должен быть создан перед перетаскиванием элементов на форму.
 
-#### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>Порядок настройки столбца телефона на привязку к элементу управления PhoneNumberBox
+В рамках **источников данных** окно, можно задать элемент управления должен быть создан перед перетаскиванием элементов на форму:
 
 1.  Откройте **Form1** в конструкторе.
 
@@ -167,22 +163,20 @@ ms.locfileid: "36756997"
 6.  Щелкните стрелку раскрывающегося списка в **Phone** столбец и выберите **PhoneNumberBox**.
 
 ## <a name="add-controls-to-the-form"></a>Добавление элементов управления в форму
- Созданием элементов управления с привязкой к данным путем перетаскивания элементов из **источников данных** окна в форму.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>Создание элементов управления с привязкой к данным на форме
+Созданием элементов управления с привязкой к данным путем перетаскивания элементов из **источников данных** окна в форму.
 
--   Перетащите главный **клиентов** узел из **источников данных** окна в форму и убедитесь, что `PhoneNumberBox` элемент управления используется для отображения данных в `Phone` столбца.
+Чтобы создать элементы управления с привязкой данных в форме, перетащите главный **клиентов** узел из **источников данных** окна в форму и убедитесь, что **PhoneNumberBox** элемент управления используется для отображения данных в **Phone** столбца.
 
-     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. Объект [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов.
+     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.
 
 ## <a name="run-the-application"></a>Запуск приложения
 
-#### <a name="to-run-the-application"></a>Запуск приложения
-
--   Нажмите клавишу **F5** для запуска приложения.
+Нажмите клавишу **F5** для запуска приложения.
 
 ## <a name="next-steps"></a>Следующие шаги
- В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания элемента управления, поддерживающего привязку к данным. Некоторые типичные дальнейшие действия.
+
+В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания элемента управления, поддерживающего привязку к данным. Некоторые типичные дальнейшие действия.
 
 -   Помещение пользовательских элементов управления в библиотеку элементов управления, чтобы их можно было повторно использовать в других приложениях.
 

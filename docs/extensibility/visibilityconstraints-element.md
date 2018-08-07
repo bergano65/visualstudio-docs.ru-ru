@@ -1,5 +1,5 @@
 ---
-title: Элемент VisibilityConstraints | Документы Microsoft
+title: Элемент VisibilityConstraints | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,50 +16,50 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f81ddd40a6de287fb40840c0473e5702d385793d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b851590cb8654a39ef55700bb62e912cbc6624c0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138315"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586239"
 ---
 # <a name="visibilityconstraints-element"></a>Элемент VisibilityConstraints
-Элемент VisibilityConstraints определяет видимость статических групп, команд и панелей инструментов. Видимость управляется сначала [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) без загрузки VSPackage.  
+Элемент VisibilityConstraints определяет видимость статических групп, команд и панелей инструментов. Видимость сначала управляется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) без загрузки VSPackage.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityConstraint>... </VisibilityConstraint>  
   <VisibilityConstraint>... </VisibilityConstraint>  
 </VisibilityConstraint>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|Условие|Необязательный. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[Элемент VisibilityItem](../extensibility/visibilityitem-element.md)|Определяет видимость статических команды и панели инструментов.|  
+|[Элемент VisibilityItem](../extensibility/visibilityitem-element.md)|Определяет статические видимость команды и панели инструментов.|  
 |[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Определяет видимость статических групп, команд и панелей инструментов.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды (например, пункты меню, меню, панелей инструментов и поля со списком), которые VSPackage предоставляет интегрированную среду разработки.|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды (например, элементы меню, меню, панелей инструментов и поля со списком), которые VSPackage предоставляет интегрированную среду разработки.|  
   
 ## <a name="example"></a>Пример  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
@@ -68,4 +68,4 @@ ms.locfileid: "31138315"
   
 ## <a name="see-also"></a>См. также  
  [Элемент VisibilityItem](../extensibility/visibilityitem-element.md)   
- [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
