@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206844"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468576"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (ASP.NET)
 
@@ -31,9 +31,6 @@ Visual Studio предоставляет множество эффективны
 1. В Visual Studio последовательно выберите **Файл** > **Создать проект**.
 
 1. В разделе **Visual C#** выберите **Веб**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)**.
-
-    > [!NOTE]
-    > Средство анализа загрузки ЦП в настоящее время не поддерживается в ASP.NET Core.
 
 1. Введите имя, например **MyProfilingApp_MVC**, и нажмите кнопку **ОК**.
 

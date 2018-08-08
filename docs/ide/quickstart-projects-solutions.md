@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180276"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512308"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Краткое руководство. Проекты и решения
 
@@ -178,11 +178,17 @@ ms.locfileid: "39180276"
 
 Поздравляем с завершением этого краткого руководства! Далее вы можете изучить некоторые другие краткие руководства по Visual Studio или подробнее узнать о [создании проектов и решений](../ide/creating-solutions-and-projects.md).
 
+> [!div class="nextstepaction"]
+> [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Краткое руководство. Персонализация Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
 - [Управление свойствами проектов и решений](../ide/managing-project-and-solution-properties.md)
 - [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
 - [Разработка кода в Visual Studio без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

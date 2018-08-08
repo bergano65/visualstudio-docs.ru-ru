@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bba5579fd47a9cf50d175777d704b0f12e8cb298
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3fbe25acc776e6407a5f10bab78ff7affaef8d78
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382608"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586531"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
 
@@ -77,13 +77,13 @@ ms.locfileid: "39382608"
 
 - По крайней мере один проект в решении должен иметь ссылку на NuGet или прямую ссылку на платформу тестирования xUnit, NUnit или MSTest. Этот проект также должен иметь ссылку на соответствующий пакет NuGet для адаптера теста Visual Studio. Ссылку на адаптер теста Visual Studio можно также создать, используя файл *RUNSETTINGS*. Файл *RUNSETTINGS* должен иметь запись, аналогичную следующей:
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Почему Live Unit Testing показывает неправильный объем протестированного кода после обновления адаптера теста, на который ссылаются проекты Visual Studio, до поддерживаемой версии?
 
@@ -268,4 +268,4 @@ public class Class1
 
 ## <a name="see-also"></a>См. также
 
-[Динамическое модульное тестирование](live-unit-testing.md)
+- [Динамическое модульное тестирование](live-unit-testing.md)

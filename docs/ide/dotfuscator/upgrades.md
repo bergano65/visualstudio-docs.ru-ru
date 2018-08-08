@@ -25,12 +25,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704578"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468547"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Обновление Dotfuscator Community Edition (CE)
 
@@ -60,14 +60,6 @@ Dotfuscator Community Edition (Dotfuscator CE) предлагает множес
   * Дополнительные [меры для защиты приложений][check-actions].
   * Возможность выдачи предупреждений перед окончанием срока жизненного цикла приложения.
   * Возможность уведомить код приложения при приближении окончания жизненного цикла или после него.
-  * Шифрование телеметрии.
-* *Мониторинг приложений*
-  * Возможность сбора и хранения сведений во время временных неполадок в сети.
-  * Возможность сбора сведений частного характера.
-  * Неограниченное использование [отслеживания функций][features].
-  * Возможность отслеживания исключений, созданных и перехваченных в коде, в дополнение к необработанным исключениям.
-  * Возможность отслеживания исключений в сборках `.dll`.
-  * Шифрование телеметрии.
 
 Dotfuscator Professional — это отраслевой стандарт [маскировщика .NET][net-obfuscator], подходящий для корпоративных разработчиков, которым нужны оперативные обновления, поддержка и обслуживание.
 Кроме того, Dotfuscator Professional обеспечивает тесную интеграцию с Visual Studio и лицензируется для коммерческого использования.
@@ -88,7 +80,6 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

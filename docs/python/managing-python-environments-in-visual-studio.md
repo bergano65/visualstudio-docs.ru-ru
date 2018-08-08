@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341873"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586585"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Как создавать окружения Python в Visual Studio и управлять ими
 
@@ -46,7 +46,7 @@ ms.locfileid: "39341873"
 
 Пакеты, установленные в глобальном окружении, доступны для всех проектов, в которых оно используется. При этом могут возникать конфликты, если двум проектам требуются несовместимые пакеты или разные версии одного пакета. Виртуальные окружения позволяют избежать таких конфликтов. В них применяются интерпретатор и стандартная библиотека из глобального окружения, но раздельные хранилища пакетов в изолированных папках.
 
-В Visual Studio вы можете создать для конкретного проекта виртуальное окружение, которое хранится во вложенной папке проекта. В Visual Studio есть команда для создания файла *requirements.txt* из виртуального окружения, что позволяет легко воссоздать окружение на других компьютерах. См. дополнительные сведения о [виртуальных окружениях](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+В Visual Studio вы можете создать для конкретного проекта виртуальное окружение, которое хранится во вложенной папке проекта. В Visual Studio есть команда для создания файла *requirements.txt* из виртуального окружения, что позволяет легко воссоздать окружение на других компьютерах. См. дополнительные сведения о [виртуальных окружениях](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="conda-environments"></a>Окружения Conda
 

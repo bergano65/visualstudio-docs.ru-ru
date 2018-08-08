@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341837"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500125"
 ---
 # <a name="edit-python-code"></a>Редактирование кода Python
 
 Разработчики много времени работают с редактором кода. Чтобы повысить эффективность этой работы, [поддержка Python в Visual Studio](installing-python-support-in-visual-studio.md) предоставляет соответствующие функции. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация.
 
-Редактор также интегрируется с **интерактивным** окном в Visual Studio, упрощая обмен кодом между ними. Подробные сведения см. в разделах [Учебник, шаг 3. Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) и [Использование интерактивного окна. Команда "Отправить в интерактивное окно"](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command).
+Редактор также интегрируется с **интерактивным** окном в Visual Studio, упрощая обмен кодом между ними. Подробные сведения см. в разделах [Учебник, шаг 3. Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) и [Использование интерактивного окна. Команда "Отправить в интерактивное окно"](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 
 |   |   |
 |---|---|
