@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179220"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380369"
 ---
 # <a name="unit-test-your-code"></a>Модульное тестирование кода
 
@@ -30,7 +30,7 @@ ms.locfileid: "39179220"
 
 * **Платформа модульного тестирования Майкрософт для управляемого кода**&mdash;Платформа для тестирования Майкрософт для управляемого кода устанавливается с Visual Studio и предоставляет среду для тестирования кода в .NET.
 
-* **Платформа модульного тестирования Майкрософт для C++**&mdash;Платформа модульного тестирования Майкрософт для C++ устанавливается в составе рабочей нагрузки **Разработка классических приложений на C++**. Эта платформа обеспечивает тестирование машинного кода. Вдобавок включаются платформы Google Test, Boost.Test и CTest, а также сторонние адаптеры для дополнительных платформ тестирования. Дополнительные сведения см. в разделе [Создание модульных тестов для C/C++](../test/writing-unit-tests-for-c-cpp.md).
+* **Платформа модульного тестирования Майкрософт для C++**&mdash;Платформа модульного тестирования Майкрософт для C++ устанавливается в составе рабочей нагрузки **Разработка классических приложений на C++**. Эта платформа обеспечивает тестирование машинного кода. Вдобавок включаются платформы Google Test, Boost.Test и CTest, а также сторонние адаптеры для дополнительных платформ тестирования. Дополнительные сведения см. в статье [Создание модульных тестов для C/C++](../test/writing-unit-tests-for-c-cpp.md).
 
 * **Инструменты покрытия кода**&mdash;Можно определить объем кода продукта, который покрывают модульные тесты, при помощи одной команды в обозревателе тестов.
 
@@ -44,12 +44,11 @@ ms.locfileid: "39179220"
 
 |Задачи|Связанные разделы|
 |-----------|-----------------------|
-|**Краткие и подробные руководства.** В следующих статьях можно изучить модульное тестирование в Visual Studio на конкретных примерах кода.|-   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода)<br />-   [Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Unit testing existing C++ applications with Test Explorer ](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) (Модульное тестирование существующих приложений C++ с использованием обозревателя тестов)|
-|**Модульное тестирование с помощью обозревателя тестов.** Узнайте, как с помощью обозревателя тестов создавать более производительные и более эффективные модульные тесты.|-   [Unit Test Basics](../test/unit-test-basics.md) (Основные сведения о модульных тестах)<br />-   [Create a unit test project](../test/create-a-unit-test-project.md) (Создание проекта модульного теста)<br />-   [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)<br />-   [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md) (Установка платформ модульного тестирования сторонних поставщиков)|
-|**Модульное тестирование управляемого кода**|-   [Writing Unit Tests for the .NET Framework with the Microsoft Unit Test Framework for Managed Code](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md) (Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода)|
-|**Модульное тестирование кода на C++**|-   [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md) (Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++)|
-|**Изоляция модульных тестов**|-   [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) (Изоляция тестируемого кода с помощью Microsoft Fakes)|
-|**Использование покрытия кода для определения того, какая часть кода проекта тестируется.** Изучите возможности покрытия кода, которые предоставляют средства тестирования Visual Studio.|-   [Using Code Coverage to Determine How Much Code is being Tested](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) (Использование покрытия кода для определения объема тестируемого кода)|
+|**Краткие и подробные руководства.** В следующих статьях можно изучить модульное тестирование в Visual Studio на конкретных примерах кода.|-   [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Модульное тестирование с помощью обозревателя тестов.** Узнайте, как с помощью обозревателя тестов создавать более производительные и более эффективные модульные тесты.|-   [Основные сведения о модульных тестах](../test/unit-test-basics.md)<br />-   [Create a unit test project](../test/create-a-unit-test-project.md) (Создание проекта модульного теста)<br />-   [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)<br />-   [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md) (Установка платформ модульного тестирования сторонних поставщиков)|
+|**Модульное тестирование кода на C++**|-   [Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
+|**Изоляция модульных тестов**|-   [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Использование покрытия кода для определения того, какая часть кода проекта тестируется.** Изучите возможности покрытия кода, которые предоставляют средства тестирования Visual Studio.|-   [Использование параметра объема протестированного кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Анализ нагрузки и производительности с помощью нагрузочных тестов.** Вы можете создать нагрузочный тест и добавить в него модульные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении.|-   [Нагрузочное тестирование (VSTS и TFS)](/vsts/load-test/)|
 |**Установка системы контроля качества.** Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением кода и обеспечить его качество.|-   [Политики возврата (VSTS)](/vsts/tfvc/add-check-policies)|
 |**Задание параметров тестирования.** Вы можете, например, задать место для сохранения результатов тестирования.|[Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|

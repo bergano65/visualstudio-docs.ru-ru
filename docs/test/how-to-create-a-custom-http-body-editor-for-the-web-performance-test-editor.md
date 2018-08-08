@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177052"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380659"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
@@ -44,34 +44,34 @@ ms.locfileid: "39177052"
 
 3.  В списке шаблонов выберите пункт **Библиотека элементов управления Windows Forms**.
 
-4.  В текстовом поле "Имя" введите имя, например `MessageEditors`, и нажмите кнопку **ОК**.
+4.  В текстовом поле **Имя** введите имя, например `MessageEditors`, и нажмите кнопку **ОК**.
 
     > [!NOTE]
     > В этом примере используется имя MessageEditors.
 
-     Проект добавляется в новое решение, и в конструкторе отображается объект <xref:System.Windows.Forms.UserControl> с именем UserControl1.cs.
+     Проект добавляется в новое решение, и в конструкторе отображается объект <xref:System.Windows.Forms.UserControl> с именем *UserControl1.cs*.
 
 5.  Перетащите объект <xref:System.Windows.Forms.RichTextBox> из категории **Стандартные элементы управления** области **Панель элементов** в область элемента управления UserControl1.
 
 6.  Выберите глиф тега действия (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif)) в правом верхнем углу элемента управления <xref:System.Windows.Forms.RichTextBox> и выберите команду **Закрепить в родительском контейнере**.
 
-7.  В обозревателе решений щелкните правой кнопкой мыши проект библиотеки Windows Forms и выберите пункт **Свойства**.
+7.  В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки Windows Forms и выберите пункт **Свойства**.
 
-8.  В окне "Свойства" перейдите на вкладку **Приложение**.
+8.  В окне **Свойства** перейдите на вкладку **Приложение**.
 
 9. В раскрывающемся списке **Требуемая версия .NET Framework** выберите значение **.NET Framework 4**.
 
-10. Откроется диалоговое окно "Изменение целевой рабочей среды".
+10. Откроется диалоговое окно **Изменение целевой рабочей среды**.
 
 11. Выберите **Да**.
 
-12. В обозревателе решений щелкните правой кнопкой мыши узел **Ссылки** и выберите команду **Добавить ссылку**.
+12. В **обозревателе решений** щелкните правой кнопкой мыши узел **Ссылки** и выберите команду **Добавить ссылку**.
 
 13. Появится диалоговое окно **Добавление ссылки**.
 
 14. Перейдите на вкладку **.NET**, прокрутите вниз, выберите пункт **Microsoft.VisualStudio.QualityTools.WebTestFramework** и нажмите кнопку **ОК**.
 
-15. Если конструктор представлений еще не открыт, в обозревателе решений щелкните правой кнопкой мыши узел **UserControl1.cs** и выберите команду **Конструктор представлений**.
+15. Если **конструктор представлений** еще не открыт, в **обозревателе решений** щелкните правой кнопкой мыши узел **UserControl1.cs** и выберите команду **Конструктор представлений**.
 
 16. Щелкните правой кнопкой мыши в любом месте области конструктора и выберите команду **Просмотреть код**.
 
@@ -121,7 +121,7 @@ ms.locfileid: "39177052"
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>Добавление класса для проекта библиотеки элементов управления Windows
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Добавление класса в проект библиотеки элементов управления Windows
 
 Добавьте в проект класс. Этот класс будет использоваться для реализации интерфейсов <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> и <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
@@ -139,7 +139,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Создание класса и реализация кода интерфейса IStringHttpBodyEditorPlugin
 
-1.  В обозревателе решений щелкните правой кнопкой мыши проект библиотеки элементов управления Windows Forms и выберите команду **Добавить новый элемент**.
+1.  В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки элементов управления Windows Forms и выберите команду **Добавить новый элемент**.
 
 2.  Откроется диалоговое окно **Добавление нового элемента**.
 
@@ -282,14 +282,14 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>Построение и развертывание результирующей библиотеки DLL для интерфейсов IStringHttpBodyEditorPlugin и IBinaryHttpBodyEditorPlugin
 
-1.  В меню "Сборка" выберите пункт **Сборка \<имя проекта библиотеки элементов управления Windows Form>**.
+1.  В меню **Сборка** выберите пункт **Сборка \<имя проекта библиотеки элементов управления Windows Form>**.
 
 2.  Закройте все экземпляры Visual Studio.
 
     > [!NOTE]
     > Закрытие Visual Studio гарантирует, что файл *DLL* не будет заблокирован, когда вы попытаетесь его скопировать.
 
-3.  Скопируйте итоговый файл *DLL* (например, *MessageEditors.dll*) из папки *bin\debug* соответствующего проекта в папку %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins.
+3.  Скопируйте итоговый файл *DLL* (например, *MessageEditors.dll*) из папки *bin\debug* соответствующего проекта в папку *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4.  Запустите Visual Studio.
 
@@ -305,17 +305,17 @@ private MessageEditorControl messageEditorControl
 
 3.  По завершении записи в редакторе веб-тестов производительности разверните запрос веб-службы и выберите узел **Текст строки** или **Двоичный основной текст**.
 
-4.  В окне "Свойства" выберите пункт "Текст строки" или "Двоичный основной текст" и нажмите кнопку с многоточием (…).
+4.  В окне "Свойства" выберите пункт "Текст строки" или "Двоичный основной текст" и нажмите кнопку с многоточием **(…)**.
 
      Откроется диалоговое окно **Изменение данных основного текста HTTP**.
 
-5.  Теперь можно изменить данные и нажать кнопку "ОК". При этом вызывается метод GetNewValue для обновления содержимого в интерфейсе <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5.  Теперь можно изменить данные и нажать кнопку **ОК**. При этом вызывается метод GetNewValue для обновления содержимого в интерфейсе <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Компиляция кода
 
 Убедитесь, что требуемая версия платформы .NET Framework в проекте библиотеки элементов управления Windows — .NET Framework 4.5. По умолчанию проекты библиотеки элементов управления Windows используют клиентскую платформу .NET Framework 4.5, которая не позволит включить ссылку на Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-Дополнительные сведения см. в разделе [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md).
+Дополнительные сведения см. в статье [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
 ## <a name="see-also"></a>См. также
 

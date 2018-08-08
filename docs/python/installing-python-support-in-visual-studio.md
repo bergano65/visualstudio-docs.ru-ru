@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae4dd83f5618ed908dee666f04c580f8c3161cbf
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5dcc8cf450fc769703174f600727bf91b939ac96
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058689"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341556"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
@@ -26,9 +26,9 @@ ms.locfileid: "37058689"
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
 
-Для Visual Studio 2015 и более ранних версий требуется отдельно [установить любой интерпретатор Python](installing-python-interpreters.md) (требуется Python 3.5 или более ранней версии, так как версия 3.6 не поддерживается, и будет выводиться соответствующее сообщение). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
+Для Visual Studio 2015 и более ранних версий необходимо отдельно [установить интерпретатор Python](installing-python-interpreters.md) (требуется Python 3.5 или более ранней версии, так как версия 3.6 не поддерживается, и будет выводиться соответствующее сообщение)**.** На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
 
-Чтобы быстро проверить поддержку Python после установки, откройте интерактивное окно Python. Для этого нажмите клавиши Alt + I и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
+Чтобы быстро проверить поддержку Python после установки, откройте **интерактивное окно Python**. Для этого нажмите клавиши **ALT**+**I** и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
 
 > [!Tip]
 > Рабочая нагрузка Python содержит полезное расширение Cookiecutter, которое предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода параметров шаблонов и создания проектов и файлов. Дополнительные сведения см. в статье [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md).
@@ -62,13 +62,13 @@ ms.locfileid: "37058689"
     | Параметр | Описание: |
     | --- | --- |
     | Дистрибутивы Python | Выберите любое сочетание 32- и 64-разрядных вариантов дистрибутивов Python 2, Python 3, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество предварительно установленных пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.)  **Примечание**. Если вы установили дистрибутив без использования установщика Visual Studio, вам не нужно выполнять дополнительные действия. Visual Studio автоматически определяет существующие установки Python. См. дополнительные сведения о [средах Python](managing-python-environments-in-visual-studio.md). |
-    | Поддержка шаблонов Cookiecutter | Устанавливает графический пользовательский интерфейс Cookiecutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. раздел [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md). |
-    | Поддержка веб-приложений Python | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](python-web-application-project-templates.md). |
-    | Поддержка Интернета вещей для Python | Поддерживает разработку для Windows IoT Core с помощью Python. |
-    | Встроенные средства разработки Python | Устанавливает компилятор C++ и другие компоненты, необходимые для разработки собственных расширений для Python. См. статью [Создание расширения C++ для Python](working-with-c-cpp-python-in-visual-studio.md). Чтобы обеспечить полную поддержку С++, установите рабочую нагрузку **Разработка классических приложений на C++**. |
-    | Основные инструменты облачных служб Azure | Обеспечивает дополнительную поддержку для разработки облачных служб Azure на Python. См. раздел [Проекты облачных служб Azure](python-azure-cloud-service-project-template.md). |
+    | **Поддержка шаблонов Cookiecutter** | Устанавливает графический пользовательский интерфейс Cookiecutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. раздел [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md). |
+    | **Поддержка веб-приложений Python** | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](python-web-application-project-templates.md). |
+    | **Поддержка Интернета вещей для Python** | Поддерживает разработку для Windows IoT Core с помощью Python. |
+    | **Встроенные средства разработки Python** | Устанавливает компилятор C++ и другие компоненты, необходимые для разработки собственных расширений для Python. См. статью [Создание расширения C++ для Python](working-with-c-cpp-python-in-visual-studio.md). Чтобы обеспечить полную поддержку С++, установите рабочую нагрузку **Разработка классических приложений на C++**. |
+    | **Основные инструменты облачных служб Azure** | Обеспечивает дополнительную поддержку для разработки облачных служб Azure на Python. См. статью [Проекты облачных служб Azure](python-azure-cloud-service-project-template.md). |
 
-1. После установки в установщике предлагаются команды для изменения, запуска, восстановления и удаления Visual Studio. Если доступны обновления для установленных компонентов Visual Studio, кнопка **Изменить** меняется на **Обновить**. (Команду "Изменить" в этом случае можно выбрать в раскрывающемся меню.) Запускать среду Visual Studio и установщик можно также из меню "Пуск" в Windows. Для этого выполните поиск по запросу "Visual Studio".
+1. После установки в установщике предлагаются команды для изменения, запуска, восстановления и удаления Visual Studio. Если доступны обновления для установленных компонентов Visual Studio, кнопка **Изменить** меняется на **Обновить**. (Команду **Изменить** в этом случае можно выбрать в раскрывающемся меню.) Запускать среду Visual Studio и установщик можно также из меню **Пуск** в Windows. Для этого выполните поиск по запросу "Visual Studio".
 
     ![Запуск, изменение или удаление Visual Studio посредством установщика](media/installation-vs-launch.png)
 
@@ -80,9 +80,9 @@ ms.locfileid: "37058689"
 
 Если у вас возникли проблемы при установке или запуске Python в Visual Studio, попробуйте сделать следующее:
 
-- Определите, возникает ли та же ошибка при использовании Python CLI, то есть при запуске `python.exe` из командной строки.
-- Воспользуйтесь [восстановлением Visual Studio](../install/repair-visual-studio.md).
-- Восстановите или переустановите Python через **Параметры > Приложения и возможности** в Windows.
+- Определите, возникает ли та же ошибка при использовании Python CLI, то есть при запуске *python.exe* из командной строки.
+- Воспользуйтесь [**восстановлением**](../install/repair-visual-studio.md) Visual Studio.
+- Восстановите или переустановите Python через **Параметры** > **Приложения и компоненты** в Windows.
 
 **Пример ошибки**. Не удалось запустить интерактивный процесс: System.ComponentModel.Win32Exception (0x80004005): неизвестная ошибка (0xc0000135) в Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
@@ -102,7 +102,7 @@ ms.locfileid: "37058689"
 
 1. Установите версию Инструментов Python для Visual Studio, соответствующую вашей версии Visual Studio.
 
-    - Visual Studio 2013: [PTVS 2.2 для Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2). В Visual Studio 2013 этот процесс можно запустить через диалоговое окно **Файл > Новый проект** в Visual Studio.
+    - Visual Studio 2013: [PTVS 2.2 для Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2). В Visual Studio 2013 этот процесс можно запустить через диалоговое окно **Файл** > **Новый проект**.
     - Visual Studio 2012: [PTVS 2.1 для Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 для Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
@@ -112,16 +112,16 @@ ms.locfileid: "37058689"
 
 По умолчанию поддержка Python устанавливается для всех пользователей на компьютере.
 
-В Visual Studio 2017 рабочая нагрузка Python устанавливается в каталог `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\<VS_edition>Common7\IDE\Extensions\Microsoft\Python`, где &lt;VS_edition&gt; может иметь значение Community, Professional или Enterprise.
+В Visual Studio 2017 рабочая нагрузка Python устанавливается в каталог *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<выпуск_Visual_Studio>Common7\IDE\Extensions\Microsoft\Python*, где &lt;выпуск_Visual_Studio&gt; может иметь значение Community, Professional или Enterprise.
 
 В Visual Studio 2015 и более ранних версиях используются такие пути установки:
 
 - 32-разрядная версия.
-  - Путь: `%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Расположение пути в реестре: `HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Путь: *%Program Files(x86)%\Microsoft Visual Studio \<версия_Visual_Studio>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*
+  - Расположение пути в реестре: **HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<версия_Visual_Studio>\InstallDir**
 - 64-разрядная версия.
-  - Путь: `%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Расположение пути в реестре: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Путь: *%Program Files%\Microsoft Visual Studio \<версия_Visual_Studio>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*
+  - Расположение пути в реестре: **HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<версия_Visual_Studio>\InstallDir**
 
 Здесь:
 
@@ -134,6 +134,5 @@ ms.locfileid: "37058689"
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Пользовательские установки (для версии 1.5 и более ранних)
 
-Средства Python для Visual Studio 1.5 и более ранних версий можно установить только для текущего пользователя. Путь установки будет выглядеть так: `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>` Здесь &lt;VS_ver&gt; и &lt;PTVS_ver&gt; имеют то же значение, которое описано выше.
+Инструменты Python для Visual Studio 1.5 и более ранних версий можно установить только для текущего пользователя. Путь установки будет выглядеть так: *%LocalAppData%\Microsoft\VisualStudio\\<версия_Visual_Studio>\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*. Здесь &lt;версия_Visual_Studio&gt; и &lt;версия_PTVS&gt; имеют то же значение, которое описано выше.
 
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

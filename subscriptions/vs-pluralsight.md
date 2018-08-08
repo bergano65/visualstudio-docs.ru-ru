@@ -9,12 +9,12 @@ description: Сведения об учебной подписке Pluralsight, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 242a8a5521d53e631e69036a94434f892fb2e19c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281184"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380796"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -104,7 +104,7 @@ ms.locfileid: "36281184"
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Вопрос. Что произойдет, когда закончится срок действия подписки Pluralsight?
 Ответ. После завершения срока бесплатной подписки Pluralsight у вас есть два варианта.
-- Получите бесплатный доступ на 12 месяцев (ознакомьтесь со сведениями в таблице [Право на участие](#eligibility), чтобы узнать, доступна ли ваша подписка) для ограниченного набора из 50 курсов в одной из трех ключевых областей, в том числе: разработка приложений в облаке; искусственный интеллект, машинное обучение и данные; DevOps в облаке. Дождитесь сообщения электронной почты от Pluralsight с подтверждением бесплатного доступа после истечения срока действия. Вы можете ознакомиться со [списком курсов](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit), доступных в каждой конкретной библиотеке.
+- Получите бесплатный доступ на 12 месяцев (ознакомьтесь со сведениями в таблице [Право на участие](#eligibility), чтобы узнать, доступна ли ваша подписка) для ограниченного набора из 50 курсов в одной из трех ключевых областей, в том числе следующих: разработка приложений в облаке; искусственный интеллект, машинное обучение и данные; DevOps в облаке. Дождитесь сообщения электронной почты от Pluralsight с подтверждением бесплатного доступа после истечения срока действия. Вы можете ознакомиться со [списком курсов](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit), доступных в каждой конкретной библиотеке.
 - Вы можете приобрести подписку прямо из Pluralsight со скидкой 10 % и получить доступ к их полному каталогу курсов.  Обратитесь в компанию [Pluralsight](http://www.pluralsight.com), чтобы получить подробные сведения.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Вопрос. Моя компания продляет подписку на Visual Studio по соглашению Enterprise. Преимущество Pluralsight можно использовать повторно?

@@ -10,14 +10,14 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154226"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252470"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Начало работы с инструментами Visual Studio для Unity
 
 ## <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "39154226"
 
 Версия Visual Studio, которая входит в установку Unity, может не быть последней. Рекомендуется проверить наличие обновлений, чтобы использовать новейшие функции и инструменты.
 
-- [Обновление до последнего выпуска Visual Studio](../install/update-visual-studio.md)
+- [Обновление Visual Studio](../install/update-visual-studio.md)
 
 ### <a name="manual-installation"></a>Установка вручную
 
@@ -77,7 +77,7 @@ ms.locfileid: "39154226"
 
 1. После выбора Visual Studio из списка **внешнего редактора скриптов**, убедитесь, что флажок **Editor Attaching** (Присоединение редактора) установлен.
 
-1. Чтобы завершить процесс настройки, закройте диалоговое окно "Параметры".
+1. Чтобы завершить процесс настройки, закройте диалоговое окно **Параметры**.
 
 ## <a name="support-for-older-versions"></a>Поддержка устаревших версий
 
@@ -93,4 +93,4 @@ ms.locfileid: "39154226"
 
 ## <a name="next-steps"></a>Следующие шаги
 
- Информацию о работе с проектом Unity и его отладке в Visual Studio см. в разделе [Using Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Сведения о работе с проектом Unity и его отладке в Visual Studio см. в статье [Инструменты Visual Studio для Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

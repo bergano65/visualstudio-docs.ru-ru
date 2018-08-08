@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 062270864c3fecb6556ef9b48d00177966a41859
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233026"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341814"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile - задача
 Записывает пути указанных элементов в заданный текстовый файл.  
@@ -65,6 +65,31 @@ ms.locfileid: "39233026"
     </Target>  
   
 </Project>  
+```
+
+В этом примере свойство с внедренными символами новой строки используется для записи текстового файла, содержащего несколько строк. Если запись в `Lines` содержит внедренные символы новой строки, новые строки включаются в выходной файл. Таким образом можно ссылаться на многострочные свойства.
+
+```xml  
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="WriteLaunchers" AfterTargets="CopyFilesToOutputDirectory">
+      <PropertyGroup>
+        <LauncherCmd>
+@ECHO OFF
+dotnet %~dp0$(AssemblyName).dll %*
+        </LauncherCmd>
+      </PropertyGroup>
+
+      <WriteLinesToFile
+        File="$(OutputPath)$(AssemblyName).cmd"
+        Overwrite="true"
+        Lines="$(LauncherCmd)" />
+  </Target>
+</Project>
 ```  
   
 ## <a name="see-also"></a>См. также  

@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63f10359563e653dd896f47137126bb0991f7784
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5b19eee80b276642f9d9254120466a7972f6af27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280280"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379885"
 ---
 # <a name="introducing-live-unit-testing"></a>Знакомство с Live Unit Testing
 
@@ -27,7 +27,7 @@ Live Unit Testing — это технология, доступная в Visual
 
 - Сообщает о том, достаточно ли полно модульные тесты охватывают код, и показывает код, который не охвачен модульными тестами. Live Unit Testing графически представляет объем протестированного кода в режиме реального времени. Это позволяет мгновенно узнать, сколько тестов охватывают каждую строку кода и какие строки не охватываются ни одним модульным тестом.
 
-Если имеется решение, включающее в себя один или несколько проектов модульных тестов, вы можете включить Live Unit Testing, выбрав в меню Visual Studio верхнего уровня пункты **Тест**, **Live Unit Testing**, **Запуск**.
+Если имеется решение, включающее в себя один или несколько проектов модульных тестов, вы можете включить Live Unit Testing, выбрав в меню Visual Studio верхнего уровня пункты **Тест** > **Live Unit Testing** > **Запуск**.
 
 Дополнительные сведения о Live Unit Testing:
 

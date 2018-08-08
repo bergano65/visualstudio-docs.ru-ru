@@ -9,12 +9,12 @@ description: Узнайте о преимуществах, предусмотр�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283267"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381550"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Преимущества, предусмотренные подпиской Visual Studio
 

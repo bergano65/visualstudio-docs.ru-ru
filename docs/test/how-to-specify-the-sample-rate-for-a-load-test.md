@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 18fa71396caa0c164ef7f37183cda28c701cf4f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970054"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382507"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Практическое руководство. Задание частоты выборки для выполнения нагрузочного теста
 
@@ -44,7 +44,7 @@ ms.locfileid: "31970054"
 
 3.  В меню **Вид** выберите пункт **Окно свойств**.
 
-     В окне "Свойства" отображаются категории и свойства параметра запуска нагрузочного теста.
+     В окне **Свойства** отображаются категории и свойства параметра запуска нагрузочного теста.
 
 4.  В свойстве **Частота выборки** введите значение времени, определяющее периодичность, с которой в нагрузочном тесте будут собираться данные счетчиков производительности.
 
@@ -53,4 +53,4 @@ ms.locfileid: "31970054"
 ## <a name="see-also"></a>См. также
 
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)
-- [Свойства сценария нагрузочного теста](../test/load-test-scenario-properties.md)
+- [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md)

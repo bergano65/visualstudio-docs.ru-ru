@@ -12,16 +12,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454574"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251816"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Установка и настройка средств для разработки с помощью iOS
 
-Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в симуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.
+Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в эмуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.
 
 > [!NOTE]
 > Сведения об использовании размещенных в облаке служб Mac вместо компьютера Mac см. в разделе [Настройка подключения Visual Studio к размещенному в облаке компьютеру Mac](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Приведенные инструкции предназначены для разработки с помощью инструментов Visual Studio для Apache Cordova. Чтобы использовать инструкции при разработке с помощью C++, заменяйте vcremote для экземпляра remotebuild.
@@ -50,11 +50,11 @@ Visual C++ для разработки кроссплатформенных мо
 
 - Удостоверение подписывания iOS, настроенное в Xcode
 
-   Подробную информацию о получении удостоверения подписывания iOS см. в статье [Обслуживание удостоверений подписывания и сертификатов](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) в библиотеке разработчика iOS. Чтобы просмотреть или задать удостоверение подписывания в Xcode, откройте меню **Xcode** и выберите пункт **Preferences**(Настройки). Щелкните **Accounts** (Учетные записи), выберите свой идентификатор Apple ID, а затем нажмите кнопку **View Details** (Просмотреть подробности).
+   Подробные сведения о получении удостоверения подписывания iOS см. в статье [Обслуживание удостоверений подписывания и сертификатов](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) в библиотеке разработчика iOS. Чтобы просмотреть или задать удостоверение подписывания в Xcode, откройте меню **Xcode** и выберите пункт **Preferences**(Настройки). Щелкните **Accounts** (Учетные записи), выберите свой идентификатор Apple ID, а затем нажмите кнопку **View Details** (Просмотреть подробности).
 
 - Профиль подготовки, настроенный в Xcode для вашего устройства, если для разработки вы используете устройство iOS
 
-   Подробную информацию о создании профилей подготовки см. в статье [Создание профилей подготовки с помощью Центра членов](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) в библиотеке разработчика iOS.
+   Подробные сведения о создании профилей подготовки см. в статье [Создание профилей подготовки с помощью Центра членов](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) в библиотеке разработчика iOS.
 
 - [Node.js](https://nodejs.org/)
 
@@ -70,7 +70,7 @@ Visual C++ для разработки кроссплатформенных мо
 
 Если вы установили Visual C++ для разработки кроссплатформенных мобильных приложений, среда Visual Studio может взаимодействовать с [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), удаленным агентом, работающим на компьютере Mac, для передачи файлов, выполнения сборки и запуска приложения iOS, а также отправки команд отладки.
 
-Перед установкой удаленного агента убедитесь в том, что вы выполнили требования, приведенные в разделе [Необходимые компоненты](#Prerequisites) , и установили [Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Перед установкой удаленного агента убедитесь в том, что вы выполнили требования, приведенные в разделе [Необходимые компоненты](#Prerequisites), и установили [Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
 ###  <a name="DownloadInstall"></a> Скачивание и установка удаленного агента
 
@@ -125,7 +125,7 @@ Visual C++ для разработки кроссплатформенных мо
 
 #### <a name="to-stop-the-remote-agent"></a>Остановка удаленного агента
 
-- В окне приложения "Терминал", в котором выполняется vcremote, нажмите клавиши `Control+C`.
+- В окне приложения "Терминал", в котором выполняется vcremote, нажмите клавиши **CONTROL**+**C**.
 
 ##  <a name="ConfigureVS"></a> Настройка удаленного агента в Visual Studio
 
@@ -158,7 +158,7 @@ Visual C++ для разработки кроссплатформенных мо
 
    Если выполнить сопряжение не удается, проверьте, запущен ли удаленный агент, выполнив инструкции в разделе [Start the remote agent](#Start). Если с момента создания ПИН-кода удаленным агентом прошло слишком много времени, выполните инструкции, приведенные в разделе [Generate a new security PIN](#GeneratePIN) , на компьютере Mac и повторите попытку. Если вы используете имя узла компьютера Mac, попробуйте вместо этого указать IP-адрес в поле **Имя узла** .
 
-1. Обновите имя папки в поле **Удаленный корневой элемент** , указав папку, используемую удаленным агентом, в домашнем каталоге (~) на компьютере Mac. По умолчанию удаленный агент использует папку /Users/`username`/vcremote в качестве удаленного корневого элемента.
+1. Обновите имя папки в поле **Удаленный корневой элемент**, указав папку, используемую удаленным агентом, в домашнем каталоге (*~*) на компьютере Mac. По умолчанию удаленный агент использует папку /Users/`username`/vcremote в качестве удаленного корневого элемента.
 
 1. Чтобы сохранить параметры удаленного сопряжения, нажмите кнопку **ОК** .
 
@@ -220,7 +220,7 @@ Visual C++ для разработки кроссплатформенных мо
 
    `vcremote --serverDir directory_path`
 
-   Здесь *путь_к_каталогу* — это расположение на компьютере Mac, где будут храниться файлы журналов, сборки и сертификаты серверов. По умолчанию используется расположение /Users/*имя_пользователя*/vcremote. В этой папке сборки упорядочиваются по номеру сборки.
+   Здесь *путь_к_каталогу* — это расположение на компьютере Mac, где будут храниться файлы журналов, сборки и сертификаты серверов. По умолчанию используется расположение */Users/\<имя_пользователя>/vcremote*. В этой папке сборки упорядочиваются по номеру сборки.
 
 - Для использования фонового процесса с целью записи `stdout` и `stderr` в файл server.log введите следующую команду:
 
@@ -236,4 +236,4 @@ Visual C++ для разработки кроссплатформенных мо
 
 ## <a name="see-also"></a>См. также
 
-- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Установка Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

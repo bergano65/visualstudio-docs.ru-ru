@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b9448fa36d6329296731c69a1cfe1f2d97240df1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751037"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380529"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Использование CTest для C++ в Visual Studio
 
@@ -36,10 +36,10 @@ ms.locfileid: "34751037"
 
 ## <a name="to-run-tests-visual-studio-2017-version-155"></a>Выполнение тестов (Visual Studio 2017 версии 15.5)
 
-В **Visual Studio 2017 версии 15.5** инструмент CTest не интегрируется с **обозревателем тестов**. Вы можете выполнять тесты из главного меню CMake или из контекстного меню файла **CMakeLists.txt** в **обозревателе решений**. Результаты тестов направляются в **окно вывода** Visual Studio.
+В **Visual Studio 2017 версии 15.5** инструмент CTest не интегрируется с **обозревателем тестов**. Вы можете выполнять тесты из главного меню CMake или из контекстного меню файла *CMakeLists.txt* в **обозревателе решений**. Результаты тестов направляются в **окно вывода** Visual Studio.
 
 ![Выполнение тестов CTest в VS2017 15.5](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>См. также
 
-[Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
+[Написание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153908"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251579"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 
@@ -54,7 +54,7 @@ ms.locfileid: "39153908"
 
 Некоторые подключаемые модули Unity, такие как Parse, FMOD, UMP (Universal Media Player), ZFBrowser или Embedded Browser, используют собственные потоки. Эта проблема возникает, когда подключаемый модуль подключает собственный поток к среде выполнения, что блокирует вызовы ОС. Это означает, что Unity не может прервать этот поток для отладчика (или перезагрузить домен) и перестает отвечать на запросы.
 
-Для FMOD существует обходной путь. Вы можете передать [флаг](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) инициализации FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE, чтобы отключить асинхронную обработку и выполнять всю обработку в основном потоке.
+Для FMOD существует обходной путь. Вы можете передать [флаг](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) инициализации `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE`, чтобы отключить асинхронную обработку и выполнять всю обработку в основном потоке.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Несовместимый проект в Visual Studio
 
@@ -114,7 +114,7 @@ ms.locfileid: "39153908"
 
 - Пошаговая отладка с заходом и выходом из методов иногда ведет себя некорректно, особенно в итераторах или внутри инструкций switch.
 
-## <a name="reporting-errors"></a>Ведение отчетов об ошибках
+## <a name="report-errors"></a>Отчеты об ошибках
 
  Помогите нам улучшить качество набора средств Visual Studio для Unity: отправляйте нам отчеты об ошибках при аварийном выходе, зависании или в случае других ошибок. Эти сведения помогают нам определять причину и устранять проблемы в наборе средств Visual Studio для Unity. Спасибо!
 

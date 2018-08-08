@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 241c7c424f9ef670f16eead4fc400e375584f8c2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057958"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341242"
 ---
 # <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
 
@@ -41,13 +41,13 @@ pip install azure
 
 В [Центре разработчиков для языка Python](http://azure.microsoft.com/develop/python/) также содержится ряд полезных ресурсов, в том числе руководства.
 
-- Создание веб-приложений с помощью [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) и [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- Создание веб-приложений с помощью [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) и [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [Хранилище BLOB-объектов](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Хранилище таблиц](/azure/storage/storage-python-how-to-use-table-storage)
 - [Хранилище очередей](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Очереди служебной шины](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-- [Разделы и подписки, связанные со служебной шиной Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- [Разделы и подписки, связанные со служебной шиной](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Управление службами](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Для общедоступных интерфейсов API без документации хорошим источником информации будут модульные тесты, представленные в [репозитории пакетов SDK на портале GitHub](https://github.com/Azure/azure-sdk-for-python):
@@ -55,7 +55,6 @@ pip install azure
 - [Модульные тесты хранилища](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Модульные тесты Service Bus](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
 - [Модульные тесты управления службами](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [Модульные тесты управления ресурсами](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
 
 ## <a name="support"></a>Поддержка
 

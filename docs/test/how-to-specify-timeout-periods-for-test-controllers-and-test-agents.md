@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 444c4e7214d55aad270a88325ee9e694e84987c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979052"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379264"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Практическое руководство. Задание периодов ожидания для контроллеров тестирования и агентов тестирования
 
@@ -26,7 +26,7 @@ ms.locfileid: "31979052"
 
  Чтобы изменить различные параметры времени ожидания контроллера или агента тестирования, изменить следующие файлы конфигурации, используя имена и значения разделов, указанные в представленных ниже таблицах.
 
--   Контроллер тестирования: QTController.exe.config
+-   Контроллер тестирования: *QTController.exe.config*
 
     |Имя раздела|Описание:|Значение|
     |--------------|-----------------|-----------|
@@ -35,7 +35,7 @@ ms.locfileid: "31979052"
     |AgentInitializeTimeout|Период времени (в секундах), в течение которого все агенты и их сборщики данных должны ожидать инициализации в начале тестового запуска, прежде чем прервать запуск. Если используются сборщики данных, данное значение должно быть достаточно большим.|"n" секунд. Значение по умолчанию — 120 (две минуты).|
     |AgentCleanupTimeout|Период времени (в секундах), в течение которого все агенты и их сборщики данных должны ожидать очистки, прежде чем завершить тестовый запуск. Если используются сборщики данных, данное значение должно быть достаточно большим.|"n" секунд. Значение по умолчанию — 120 (две минуты).|
 
--   Агент тестирования: QTAgentService.exe.config
+-   Агент тестирования: *QTAgentService.exe.config*
 
     |Имя раздела|Описание:|Значение|
     |--------------|-----------------|-----------|
@@ -46,7 +46,7 @@ ms.locfileid: "31979052"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Задание периодов ожидания агента для контроллера тестирования
 
-1. Откройте XML-файл конфигурации QTCcontroller.exe.config, расположенный в папке %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Откройте XML-файл конфигурации *QTCcontroller.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Найдите тег `<appSettings>`.
 
@@ -80,7 +80,7 @@ ms.locfileid: "31979052"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Задание параметров периода ожидания агента для агента тестирования
 
-1. Откройте XML-файл конфигурации QTAgentService.exe.config, расположенный в папке %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Откройте XML-файл конфигурации *QTAgentService.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Найдите тег `<appSettings>`.
 
@@ -115,7 +115,7 @@ ms.locfileid: "31979052"
 ## <a name="see-also"></a>См. также
 
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
-- [Изменение параметров ведения журнала нагрузочного теста](../test/modify-load-test-logging-settings.md)
+- [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

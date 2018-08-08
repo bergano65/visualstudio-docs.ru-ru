@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66877397912fca0fbd3996c2dab146b040a047b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4639e59b8c8847a4368a0f3841fa271a302e7ca
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972424"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380848"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка эмуляции сети с использованием параметров тестирования в Visual Studio
 

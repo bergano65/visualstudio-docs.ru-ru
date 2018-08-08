@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+description: Сведения о том, как управлять подписками Visual Studio вашей организации с помощью портала администратора.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327395"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380822"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Использование портала администратора для работы с подписками Visual Studio
 
@@ -25,7 +25,7 @@ ms.locfileid: "36327395"
 - **Уровень подписки пользователя потребуется обновить**, если подписка обновляется (после приобретения подписки более высокого уровня) или продляется на более низком уровне. 
 - **Не предоставляйте пользователям общий доступ к подпискам.** Любой, кто использует все преимущества подписки или только их часть (ПО для разработки и тестирования, Microsoft Azure, электронное обучение и т. д.), должен иметь назначенную подписку. 
 
-## <a name="adminstrator-roles"></a>Роли администратора
+## <a name="administrator-roles"></a>Роли администратора
 
 На новом портале администрирования подписок Visual Studio доступны две разные роли для клиентов корпоративного лицензирования. Эти роли аналогичны имеющимся в VLSC ролям основного контактного лица/контактного лица для уведомлений и диспетчера подписок. 
 
