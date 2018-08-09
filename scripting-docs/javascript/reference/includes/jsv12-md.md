@@ -1,3 +1,0 @@
-Поддерживается в Microsoft Edge (браузер Edge). Также поддерживается в приложениях Магазина (Microsoft Edge в Windows 10). См. [Сведения о версии](../../../javascript/reference/javascript-version-information.md).  
-  
- Поддерживается в следующих режимах документов: режим совместимости, стандартный режим Internet Explorer 6, стандартный режим Internet Explorer 7, стандартный режим Internet Explorer 8, стандартный режим Internet Explorer 9, стандартный режим Internet Explorer 10, стандартный режим Internet Explorer 11. Не поддерживается в Windows 8.1.

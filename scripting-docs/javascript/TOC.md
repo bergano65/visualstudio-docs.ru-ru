@@ -1,5 +1,0 @@
-# [Справочник по языку JavaScript](javascript-language-reference.md)
-# [Новые возможности JavaScript](what-s-new-in-javascript.md)
-# [JavaScript в Visual Studio 2017](javascript-in-vs-2017.md)
-# [Справочник по JavaScript](reference/TOC.md)
-## [Условная компиляция](advanced/TOC.md)
