@@ -1,5 +1,5 @@
 ---
-title: Перечислители | Документы Microsoft
+title: Перечислители | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,22 +13,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84102435092096b7154a46100e9d857a31537482
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e555ca317dea79d1fe3b856a7c449d01f0b792af
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127243"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636230"
 ---
 # <a name="enumerators"></a>Перечислители
-В этом разделе перечислены типы данных перечислителя в API управления подключаемого модуля источника, подключаемый модуль системы управления версиями необходимо знать.  
+В этом разделе перечислены типы данных перечислителя в API подключаемого модуля управления источник, подключаемый модуль системы управления версиями необходимо знать.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
  [Код команды](../extensibility/command-code-enumerator.md)  
  Перечисляет параметры для [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md) функции.  
   
  [Сообщение](../extensibility/message-enumerator.md)  
- Перечисление флагов, используемых для печати обратного вызова, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ Перечисляет флаги, используемые для печати обратного вызова, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
  [Код состояния файла](../extensibility/file-status-code-enumerator.md)  
  Содержит именованные константы, определяющие состояние файла в системе управления версиями.  
@@ -38,16 +38,16 @@ ms.locfileid: "31127243"
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Создание подключаемого модуля системы управления версиями](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Определяет SDK подключаемого модуля управления источника и описывает включены ресурсы.  
+ Определяет пакет SDK подключаемого модуля управления источника и описывает включаемые ресурсы.  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- Запрашивает пользователя для настройки дополнительных параметров для данной команды.  
+ Запрашивает у пользователя Дополнительные параметры для данной команды.  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Проверяет список файлов для их текущего состояния. Кроме того, использует `pfnPopulate` функции для уведомления вызывающего объекта, если файл не соответствует критериям для `nCommand`.  
+ Проверяет список файлов для их текущее состояние. Кроме того, использует `pfnPopulate` функция уведомляет вызывающего объекта, если файл не соответствует критериям для `nCommand`.  
   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Описывает функции обратного вызова, используемый [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений из системы управления версиями, подключаемый модуль через среду IDE.  
+ Описывает функцию обратного вызова, используемый [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений из системы управления версиями, подключаемый модуль через среду IDE.  
   
- [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)  
- Приводится полный список всех элементов API подключаемых модулей управления источника.
+ [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)  
+ Предоставляет полный список всех элементов в API подключаемых модулей управления источника.

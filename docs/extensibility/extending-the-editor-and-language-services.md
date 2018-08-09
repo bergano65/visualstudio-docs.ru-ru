@@ -1,5 +1,5 @@
 ---
-title: Расширение редактора и языковые службы | Документы Microsoft
+title: Расширение редактора и языковых служб | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,51 +13,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4113a033d4e1a2595f4a980405e1b39d57d60958
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7194b245ad3803112f5596c82308c384840d7bdf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132578"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637553"
 ---
-# <a name="extending-the-editor-and-language-services"></a>Расширение редактора и языковые службы
-Можно добавить собственный редактор языка службы компонентов (таких как технология IntelliSense) и расширить большинство возможностей в редакторе кода Visual Studio.  Можно расширить полный список см. в разделе [языковой службы и точек расширения редактора](../extensibility/language-service-and-editor-extension-points.md).  
+# <a name="extend-the-editor-and-language-services"></a>Расширение редактора и языковой службы
+Можно добавить собственный редактор компонентов службы языка (например, технология IntelliSense) и расширить большинство функций уровней в редакторе кода Visual Studio.  Полный список можно расширить, см. в разделе [точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md).  
   
- Большинство функций редактора расширить с помощью Managed Extensibility Framework (MEF). Например, если вы хотите расширить функцию редактора Цветовая подсветка синтаксиса, можно написать MEF *компонента* , определяющий классификации, для которых требуется различные цвета и способ их обработки. Этот редактор также поддерживает несколько расширений одной функции.  
+ Большинство функций редактора расширения с помощью Managed Extensibility Framework (MEF). Например, если функцию редактора, который требуется расширить раскраску синтаксических конструкций, можно написать MEF *компонента* , определяющий классификации, для которых требуется настроить различные цвета и способ их обработки. Этот редактор также поддерживает несколько расширений разным функциям.  
   
- Уровень представления редактора основан Windows Presentation Framework (WPF). WPF предоставляет графическую библиотеку для гибкой форматирования текста, а также представления, например графики и анимации.  
+ Уровень представления редактора основана Windows Presentation Framework (WPF). WPF предоставляет библиотеку графики для гибкой форматирования текста, а также визуализации, например графики и анимации.  
   
- Пакет SDK для Visual Studio предоставляет адаптеров, известный как *оболочки* для поддержки пакетов VSPackage, написанные для предыдущих версий. Тем не менее при наличии существующего пакета VSPackage, рекомендуется обновить его до новой технологии, чтобы получить более высокую производительность и надежность.  
+ Пакет SDK для Visual Studio содержит адаптеры, известный как *оболочек* для поддержки пакетов VSPackage, разработанные для более ранних версий. Тем не менее при наличии существующего пакета VSPackage, мы рекомендуем обновить его до новой технологии, чтобы получить более высокую производительность и надежность.  
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|Описание:|  
 |-----------|-----------------|  
-|[Начало работы с расширениями редактора и языковой службы](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Объясняется, как создать расширение редактора.|  
-|[Компоненты редактора](../extensibility/inside-the-editor.md)|Описание общей структуры редактора и перечислены некоторые из его компонентов.|  
-|[Managed Extensibility Framework в редакторе](../extensibility/managed-extensibility-framework-in-the-editor.md)|Описание способов использования Managed Extensibility Framework (MEF) с помощью редактора.|  
-|[Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)|Список точек расширения редактора. Точки расширения представляют функций редактора, которые могут быть расширены.|  
-|[Пошаговое руководство. Создание оформления представления, команд и параметров (направляющие столбцов)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Рассматриваются и объясняется создание оформления представления, который рисует строки в столбце gudie помогает защищать код для определенных ширины экрана.  Также показывает, чтение и запись параметров, а также объявления и реализации команд, которые можно вызвать из окна командной.|  
+|[Начало работы с расширениями редактора и служба языка](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Объясняется, как создать расширение редактора.|  
+|[В редакторе](../extensibility/inside-the-editor.md)|Описание общей структуры редактора и перечислены некоторые из его компонентов.|  
+|[Managed Extensibility Framework в редакторе](../extensibility/managed-extensibility-framework-in-the-editor.md)|В этой статье описывается использование Managed Extensibility Framework (MEF) с помощью редактора.|  
+|[Точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md)|Список точек расширения редактора. Точки расширения представляют возможности редактора, которые могут быть расширены.|  
+|[Пошаговое руководство: Создание оформления представления, команд и параметров (направляющие столбцов)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Описывается и объясняется создание оформления представления, который рисует направляющие столбцов помогает защищать кода для определенных ширины экрана.  Также показано, чтение и запись параметров, а также объявления и реализации команд, которые можно вызвать из командного окна.|  
 |[Импорт в редакторе](../extensibility/editor-imports.md)|Список служб, которые можно импортировать расширения.|  
-|[Адаптация кода прежних версий в редактор](../extensibility/adapting-legacy-code-to-the-editor.md)|Описание различных способов адаптировать устаревшего кода (предварительно Visual Studio 2010) для расширения редактора.|  
-|[Миграция языковой службы прежних версий](../extensibility/internals/migrating-a-legacy-language-service.md)|Описывается процедура переноса языковую службу на основе пакетов VSPackage.|  
-|[Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Показано, как связать тип содержимого расширение имени файла.|  
-|[Пошаговое руководство. Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)|Показано, как добавить кнопку на поле.|  
-|[Пошаговое руководство. Выделение текста](../extensibility/walkthrough-highlighting-text.md)|Показано, как использовать *теги* для выделения текста.|  
-|[Пошаговое руководство. Структурирование](../extensibility/walkthrough-outlining.md)|Показано, как добавить структурирование для определенных типов фигурных скобок.|  
-|[Пошаговое руководство. Отображение парных фигурных скобок](../extensibility/walkthrough-displaying-matching-braces.md)|Показано, как выделить парные фигурные скобки.|  
-|[Пошаговое руководство. Отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Показано, как отображать всплывающие окна краткие сведения, описывающие элементы кода, такого как свойства, методы и события.|  
-|[Пошаговое руководство. Отображение справки сигнатуры](../extensibility/walkthrough-displaying-signature-help.md)|Показано, как отображать всплывающие окна, которые предоставляют сведения о количестве и типах параметров в сигнатуре.|  
-|[Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)|Показано, как реализовать завершение операторов.|  
-|[Пошаговое руководство. Реализация фрагментов кода](../extensibility/walkthrough-implementing-code-snippets.md)|Показано, как реализовать расширения фрагмента кода.|  
-|[Пошаговое руководство. Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Показывает порядок отображения лампочки код предложения.|  
-|[Пошаговое руководство. Использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Показано, как связать команду меню в VSPackage с помощью компонента MEF.|  
-|[Пошаговое руководство. Использование сочетания клавиш в расширении редактора](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Показано, как связать контекстное меню в VSPackage с помощью компонента MEF.|  
-|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Предоставляет сведения о Managed Extensibility Framework (MEF).|  
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Предоставляет сведения о Windows Presentation Foundation (WPF).|  
+|[Адаптировать устаревшего кода в редакторе](../extensibility/adapting-legacy-code-to-the-editor.md)|Объясняет различные способы адаптировать устаревшего кода (предварительно Visual Studio 2010) для расширения редактора.|  
+|[Миграция языковой службы прежних версий](../extensibility/internals/migrating-a-legacy-language-service.md)|Описывается процедура переноса VSPackage на основе языковой службы.|  
+|[Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Показано, как связывание типа контента с расширением имени файла.|  
+|[Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)|В этом разделе показано добавление значка к полям.|  
+|[Пошаговое руководство: Выделение цветом текста](../extensibility/walkthrough-highlighting-text.md)|Демонстрируется использование *теги* для выделения текста.|  
+|[Пошаговое руководство: Добавление структурирование](../extensibility/walkthrough-outlining.md)|Показано, как добавить структурирование для определенных типов фигурных скобок.|  
+|[Пошаговое руководство: Отображение парных фигурных скобок](../extensibility/walkthrough-displaying-matching-braces.md)|Показано, как для выделения парных фигурных скобок.|  
+|[Пошаговое руководство: Отображение отображение подсказок](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Показано, как отображать всплывающие окна кратких сведений, описывающих элементы кода, такие как свойства, методы и события.|  
+|[Пошаговое руководство: Отображение Справка по сигнатурам](../extensibility/walkthrough-displaying-signature-help.md)|В этой статье демонстрируется отображение всплывающих окон, которые предоставляют сведения о количестве и типах параметров в сигнатуре.|  
+|[Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)|Показан способ реализации завершение операторов.|  
+|[Пошаговое руководство: Фрагменты кода реализация](../extensibility/walkthrough-implementing-code-snippets.md)|Показан способ реализации расширения фрагмента кода.|  
+|[Пошаговое руководство: Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|В этой статье демонстрируется отображение лампочки для предложения кода.|  
+|[Пошаговое руководство: Использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Показано, как связать команду меню в VSPackage с помощью компонента MEF.|  
+|[Пошаговое руководство: Сочетания клавиш в расширении редактора](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Показано, как связать контекстное меню в VSPackage с помощью компонента MEF.|  
+|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Сведения о Managed Extensibility Framework (MEF).|  
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Сведения о Windows Presentation Foundation (WPF).|  
   
 ## <a name="reference"></a>Ссылка  
- В редакторе Visual Studio включает следующие пространства имен.  
+ В редакторе Visual Studio включает в себя следующие пространства имен.  
   
  <xref:Microsoft.VisualStudio.Language.Intellisense>  
   

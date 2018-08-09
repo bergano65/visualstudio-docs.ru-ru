@@ -1,5 +1,5 @@
 ---
-title: QUERYCHANGESFUNC | Документы Microsoft
+title: QUERYCHANGESFUNC | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1df5f21ffed27c45ebee6315fcc29ee1dcc8fa4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d81b554db151577298bc45fa9be53e589bba75c7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139813"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637410"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
-Функция обратного вызова, используемые [SccQueryChanges](../extensibility/sccquerychanges-function.md) операции для перечисления коллекцию имен файлов и определить состояние каждого файла.  
+Это функция обратного вызова, используемые [SccQueryChanges](../extensibility/sccquerychanges-function.md) операцию, чтобы перечислить коллекцию имен файлов и определить состояние каждого файла.  
   
- `SccQueryChanges` Получает список файлов и указатель на функцию `QUERYCHANGESFUNC` обратного вызова. Подключаемый модуль системы управления версиями Перечисляет заданный список и состояние (через этот обратный вызов) для каждого файла в списке.  
+ `SccQueryChanges` Функции приводится список файлов и указатель на `QUERYCHANGESFUNC` обратного вызова. Подключаемый модуль системы управления версиями перечисляет для данного списка и предоставляет статус (с помощью этой функции обратного вызова) для каждого файла в списке.  
   
 ## <a name="signature"></a>Подпись  
   
@@ -45,16 +45,16 @@ typedef BOOL (*QUERYCHANGESFUNC)(
  [in] Указатель на [QUERYCHANGESDATA структуры](#LinkQUERYCHANGESDATA) структуры, описывающие изменения в файл.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Интегрированная среда разработки возвращается код соответствующее сообщение об ошибке:  
+ Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
-|SCC_I_OPERATIONCANCELED|Останавливает обработку.|  
-|SCC_E_xxx|Любые соответствующие ошибки SCC следует остановить обработку.|  
+|SCC_I_OPERATIONCANCELED|Остановите обработку.|  
+|SCC_E_xxx|Любой соответствующее сообщение об ошибке SCC следует остановить обработку.|  
   
 ##  <a name="LinkQUERYCHANGESDATA"></a> Структура QUERYCHANGESDATA  
- Структура, переданный для каждого файла выглядит следующим образом:  
+ Структуры, переданной в для каждого файла выглядит следующим образом:  
   
 ```cpp  
 struct QUERYCHANGESDATA_A  
@@ -85,23 +85,23 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  Код, указывающий состояние файла:  
   
-|Код|Описание|  
+|Код|Описание:|  
 |----------|-----------------|  
-|`SCC_CHANGE_UNKNOWN`|Невозможно определить, какие изменения были внесены.|  
+|`SCC_CHANGE_UNKNOWN`|Не удается определить, какие изменения были внесены.|  
 |`SCC_CHANGE_UNCHANGED`|Имя этого файла не изменены.|  
-|`SCC_CHANGE_DIFFERENT`|Файл с другим удостоверением, но тем же именем существует в базе данных.|  
+|`SCC_CHANGE_DIFFERENT`|Файл с идентификатором, но тем же именем существует в базе данных.|  
 |`SCC_CHANGE_NONEXISTENT`|Файл не существует в базе данных или локально.|  
 |`SCC_CHANGE_DATABASE_DELETED`|Файл удален в базе данных.|  
-|`SCC_CHANGE_LOCAL_DELETED`|Файл удален локально, но файл все еще существует в базе данных. Если не удается определить, возвращают `SCC_CHANGE_DATABASE_ADDED`.|  
+|`SCC_CHANGE_LOCAL_DELETED`|Файл удален локально, но файл по-прежнему существует в базе данных. Если это не может быть определено, возвращается `SCC_CHANGE_DATABASE_ADDED`.|  
 |`SCC_CHANGE_DATABASE_ADDED`|Файл добавлен в базу данных, но не существует локально.|  
-|`SCC_CHANGE_LOCAL_ADDED`|Файл не существует в базе данных и новый локальный файл.|  
+|`SCC_CHANGE_LOCAL_ADDED`|Файл не существует в базе данных и представляет собой новый локальный файл.|  
 |`SCC_CHANGE_RENAMED_TO`|Файл переименован или перемещен в базе данных как `lpLatestName`.|  
-|`SCC_CHANGE_RENAMED_FROM`|Файл переименован или перемещен в базу данных из `lpLatestName`; Если это слишком затратными для отслеживания, возвращают различные флаг, такими как `SCC_CHANGE_DATABASE_ADDED`.|  
+|`SCC_CHANGE_RENAMED_FROM`|Файл переименован или перемещен в базе данных на `lpLatestName`; Если это слишком дорого отслеживать, возвращает другой флаг, например `SCC_CHANGE_DATABASE_ADDED`.|  
   
  lpLatestName  
  Текущее имя файла для этого элемента.  
   
 ## <a name="see-also"></a>См. также  
- [Функции обратного вызова, реализуемый интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
+ [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [Коды ошибок](../extensibility/error-codes.md)

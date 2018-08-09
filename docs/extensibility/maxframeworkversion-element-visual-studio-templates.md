@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion-элемент (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент MaxFrameworkVersion (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bc28fcc35a4a59852ef6864886acff4dc87ef60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12433fd96aee78c0f8f9ead3b531ae11b1d28f17
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139881"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636364"
 ---
-# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion - элемент (шаблоны Visual Studio)
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>Элемент MaxFrameworkVersion (шаблоны Visual Studio)
 
-Задает максимальную версию платформы .NET Framework, которые требуются для шаблона. Он определяет самое большое значение в **версию целевой платформы** раскрывающийся список **новый проект** диалогового окна. Чтобы пользователи могли выбрать версию платформы, необходимо также указать [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) как минимальная версия .NET Framework для шаблона.
+Указывает максимальную версию .NET Framework, требуемый шаблоном. Он определяет максимальное значение в **версию целевой платформы** раскрывающийся список **новый проект** диалоговое окно. Чтобы пользователи могли выбрать версию платформы, необходимо также указать [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) как минимальная версия .NET Framework для шаблона.
 
 > [!IMPORTANT]
-> Начиная с Visual Studio 2017 г. версия 15,6, **версию целевой платформы** раскрывающийся список больше не является фильтром для шаблонов, отображаемых в **шаблоны** раздел **новый проект** диалогового окна. Вместо этого **версию целевой платформы** раскрывающийся список функционирует как окно выбора framework для выбранного шаблона.
+> Начиная с Visual Studio 2017 версии 15.6, **версию целевой платформы** раскрывающийся список больше не является фильтром для отображаемых шаблонов в **шаблоны** раздел **новый проект** диалоговое окно. Вместо этого **версию целевой платформы** раскрывающийся список функционирует как окно выбора платформы, для выбранного шаблона.
 
  \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
 
@@ -36,7 +36,7 @@ ms.locfileid: "31139881"
 <MaxFrameworkVersion> ... </MaxFrameworkVersion>
 ```
 
-## <a name="attributes-and-elements"></a>Атрибуты и элементы
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -47,22 +47,22 @@ ms.locfileid: "31139881"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание|
+|Элемент|Описание:|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет способ отображения либо **новый проект** или **Добавление нового элемента** диалоговое окно.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Этот текст должен быть наибольший номер версии платформы .NET Framework, может быть шаблоном.
+ Этот текст должен быть наибольший номер версии платформы .NET Framework, для которых разрешено с помощью шаблона.
 
 ## <a name="remarks"></a>Примечания
 
-`MaxFrameworkVersion` — это необязательный элемент. `MaxFrameworkVersion` Элемент должен быть опущен, если он не является обязательным, так как не ограничивается случайно поддерживаемого диапазона .NET Framework версии шаблона. Его следует исключить, если .NET Framework не применяется к шаблону.
+`MaxFrameworkVersion` — это необязательный элемент. `MaxFrameworkVersion` Элемент должен быть опущен, если только это не требуется, так как не для ограничения случайно поддерживаемый диапазон .NET Framework версий для шаблона. Он также если должна быть пропущена .NET Framework не применим к шаблону.
 
 ## <a name="example"></a>Пример
 
-В следующем примере демонстрируется метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона класса.
+В следующем примере показано метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона класса.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,7 +82,7 @@ ms.locfileid: "31139881"
 </VSTemplate>
 ```
 
-В этом примере Максимальная версия платформы .NET Framework, которые требуются для шаблона в виде `MaxFrameworkVersion`, является 4.7.1. В проект, созданный с помощью этого шаблона можно целевой версии платформы .NET Framework до 4.7.1.
+В этом примере Максимальная версия .NET Framework, требуемый шаблоном, представленный `MaxFrameworkVersion`, является 4.7.1. Проект, созданный с помощью этого шаблона можно предназначенных для версий .NET Framework до 4.7.1.
 
 ## <a name="see-also"></a>См. также
 

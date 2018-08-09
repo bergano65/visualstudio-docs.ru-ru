@@ -1,5 +1,5 @@
 ---
-title: Элемент EnableLocationBrowseButton (шаблоны Visual Studio) | Документы Microsoft
+title: Элемент EnableLocationBrowseButton (шаблоны Visual Studio) | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d3573a1359cf7cc6347ede28b5361b01bbb7efb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bebf88b8d5c98722226f42f9a1b1666695a3b7e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126850"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639543"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Элемент EnableLocationBrowseButton (шаблоны Visual Studio)
-Указывает ли **Обзор** кнопка доступна в **новый проект** диалоговым окном, чтобы пользователи могли легко изменять каталог по умолчанию, который сохраняется новый проект.  
+Указывает ли **Обзор** кнопка доступна в **новый проект** диалоговом окне, чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен проект.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -35,7 +35,7 @@ ms.locfileid: "31126850"
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>  
 ```  
   
-## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -46,22 +46,22 @@ ms.locfileid: "31126850"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Описание:|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен быть либо `true` или `false`, указывающее, требуется ли отображать **Обзор** кнопку **новый проект** диалоговое окно.  
+ Этот текст должен быть либо `true` или `false`, указывающее, следует ли отображать **Обзор** кнопку **новый проект** диалоговое окно.  
   
 ## <a name="remarks"></a>Примечания  
- `EnableLocationBrowseButton` — это необязательный элемент. Значение по умолчанию — `true`, который отображает **Обзор** кнопку в **новый проект** диалоговое окно.  
+ `EnableLocationBrowseButton` — это необязательный элемент. Значение по умолчанию — `true`, которое отображает **Обзор** кнопку **новый проект** диалоговое окно.  
   
- В **новый проект** диалоговом **расположение** текстовое поле указывает каталог, где сохранить новый проект. **Обзор** кнопка помогает изменить этот каталог, отобразив **расположение проекта** dialog box, в котором можно легко переходить в другой каталог, доступный с вашего компьютера, и Выберите такой каталог, где сохранить новый проект.  
+ В **новый проект** диалоговом окне **расположение** текстовое поле указывает каталоге, где сохранен проект. **Обзор** кнопка помогает изменить этот каталог, отобразив **расположение проекта** поле диалогового окна, которое позволяет легко перейти в другой каталог, который доступен с компьютера, и затем выберите его в качестве каталога, где сохранен новый проект.  
   
 ## <a name="example"></a>Пример  
- В следующем примере демонстрируется метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
+ В следующем примере показано метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,5 +89,5 @@ ms.locfileid: "31126850"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
