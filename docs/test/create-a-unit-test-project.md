@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235054"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586864"
 ---
 # <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 
@@ -42,16 +42,17 @@ ms.locfileid: "36235054"
 5.  Если код, который требуется протестировать, находится в другом месте, сведения о добавлении ссылок см. в разделе [Управление ссылками в проекте](../ide/managing-references-in-a-project.md).
 
 ## <a name="next-steps"></a>Следующие шаги
- **Создание модульных тестов**
 
  См. один из следующих разделов:
 
--   [Модульное тестирование кода](../test/unit-test-your-code.md)
+**Создание модульных тестов**
 
--   [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
+- [Модульное тестирование кода](../test/unit-test-your-code.md)
 
--   [Использование платформы MSTest в модульных тестах](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
 
- **Выполнение модульных тестов**
+- [Использование платформы MSTest в модульных тестах](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Выполнение модульных тестов**
 
 - [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)

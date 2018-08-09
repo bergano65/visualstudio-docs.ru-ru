@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 32059a23f2e71d13f5d346a6799d2d2f40630b6f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 11b02b398adbcdf0a64d18c76ec11fe2ba41f1af
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751492"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382641"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Использование Google Test для C++ в Visual Studio
 В **Visual Studio 2017 версии 15.5** и более поздних Google Test интегрирован в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**. Чтобы проверить, установлен ли этот компонент на компьютере, откройте Visual Studio Installer и найдите Google Test в списке компонентов рабочей нагрузки.
@@ -22,8 +22,8 @@ ms.locfileid: "34751492"
 ![Установка Google Test](media/cpp-google-component.png)
 
 ## <a name="add-a-google-test-project-to-the-solution"></a>Добавление проекта Google Test в решение
-1. В **обозревателе решений** щелкните узел решения правой кнопкой мыши и выберите пункты **Добавить | Новый проект**.
-2. В левой области выберите **Visual C++ | Тест**, а в центральной области выберите один тип проекта **Проект Google Test**.
+1. В **обозревателе решений** щелкните узел решения правой кнопкой мыши и выберите пункты **Добавить** > **Новый проект**.
+2. В левой области выберите **Visual C++** > **Тест**, а в центральной области — **Проект Google Test**.
 3. Укажите имя тестового проекта и нажмите кнопку **ОК**.
 
 ![Новый проект Google Test](media/cpp-gtest-new-project.png)
@@ -34,20 +34,20 @@ ms.locfileid: "34751492"
  ![Настройка проекта Google Test](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Настройка дополнительных параметров
-Чтобы настроить дополнительные параметры, в главном меню выберите **Сервис | Параметры | Адаптер тестов для Google Test**. Дополнительные сведения об этих параметрах см. в документации по Google Test.
+Чтобы настроить дополнительные параметры, в главном меню выберите **Сервис** > **Параметры** > **Адаптер тестов для Google Test**. Дополнительные сведения об этих параметрах см. в документации по Google Test.
 
  ![Параметры проекта Google Test](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Добавление директив include
-В CPP-файле теста добавьте необходимые директивы `#include`, чтобы типы и функции программы были доступны коду теста. Как правило, программа находится в иерархии папок на один уровень выше. Если ввести `#include "../"`, появится окно IntelliSense, в котором можно выбрать полный путь к файлу заголовка.
+В *CPP*-файле теста добавьте необходимые директивы `#include`, чтобы типы и функции программы были доступны коду теста. Как правило, программа находится в иерархии папок на один уровень выше. Если ввести `#include "../"`, появится окно IntelliSense, в котором можно выбрать полный путь к файлу заголовка.
 
 ![Добавление директив #include](media/cpp-gtest-includes.png)
 
 ## <a name="write-and-run-tests"></a>Написание и запуск тестов
-Все готово к написанию и выполнению тестов Google Test. Сведения о макросах тестов см. в [учебнике по началу работы с Google Test](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md). Сведения об обнаружении, выполнении и группировании тестов с помощью **обозревателя тестов** см. в статье [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md).
+Все готово к написанию и выполнению тестов Google Test. Сведения о макросах тестов см. в [учебнике по началу работы с Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Сведения об обнаружении, выполнении и группировании тестов с помощью **обозревателя тестов** см. в статье [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>См. также
-[Создание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
+[Написание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)
 
 
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844699"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379642"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Установка платформ модульного тестирования сторонних поставщиков
 
@@ -44,7 +44,7 @@ ms.locfileid: "34844699"
 
 2. Введите имя платформы в поле **Найти**.
 
-3. Выберите платформу в списке результатов, чтобы перейти на страницу средства в Visual Studio Marketplace.
+3. Выберите платформу в списке результатов, чтобы перейти на страницу средства в **Visual Studio Marketplace**.
 
 Чтобы открыть список платформ с другими средствами тестирования:
 
@@ -54,7 +54,7 @@ ms.locfileid: "34844699"
 
 3. В списке **Категория** (помеченном как **Отображается**) разверните узел **Сервис** и выберите **Тестирование**.
 
-4. Выберите платформу в списке результатов, чтобы перейти на страницу средства в Visual Studio Marketplace.
+4. Выберите платформу в списке результатов, чтобы перейти на страницу средства в **Visual Studio Marketplace**.
 
 ## <a name="update-to-the-latest-test-adapters"></a>Обновление адаптеров тестов до последней версии
 

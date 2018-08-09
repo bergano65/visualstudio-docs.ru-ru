@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a39c042b4a4badd46f7650fe0f2530527c5d537d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: cbb43f61aab1df099efca01b56a927cf189a808e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232199"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468982"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
-В этом введении об использовании Visual Studio (которое займет от 5 до 10 минут) с помощью шаблона проекта ASP.NET и языка программирования C# будет создано простое приложение "Hello, World!".
+В этом введении в использование Visual Studio (которое займет от 5 до 10 минут) с помощью шаблона проекта ASP.NET и языка программирования C# будет создано простое веб-приложение "Hello, World".
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
@@ -41,13 +41,14 @@ ms.locfileid: "39232199"
 
    > [!NOTE]
    > Если категория шаблона проекта **.NET Core** отсутствует, выберите слева ссылку **Открыть Visual Studio Installer**.
-   >![Открыть Visual Studio Installer в диалоговом окне "Новый проект"](../ide/media/open-visual-studio-installer.png)
+   >
+   > ![Открыть Visual Studio Installer в диалоговом окне "Новый проект"](../ide/media/open-visual-studio-installer.png)
    >
    > Запускается Visual Studio Installer. Выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**, а затем щелкните **Изменить**.
    >
    > ![Рабочая нагрузка ASP.NET в установщике Visual Studio](../ide/media/quickstart-aspnet-workload.png)
    >
-   >(Возможно, перед тем как продолжить установку рабочей нагрузки, придется закрыть Visual Studio.)
+   > (Возможно, перед тем как продолжить установку рабочей нагрузки, придется закрыть Visual Studio.)
 
 1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** появилось **ASP.NET Core 2.0**. Затем выберите **Веб-приложение** и нажмите кнопку **ОК**.
 
@@ -55,7 +56,7 @@ ms.locfileid: "39232199"
 
 Через некоторое время файл проекта откроется в Visual Studio.
 
-## <a name="create-the-application"></a>Создание приложения
+## <a name="create-the-app"></a>Создание приложения
 
 1. В **обозревателе решений** разверните папку **Страницы** и выберите **About.cshtml**.
 
@@ -85,7 +86,7 @@ ms.locfileid: "39232199"
 
    ![Изменение текста сообщения по умолчанию для области описания приложения в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-## <a name="run-the-application"></a>Запуск приложения
+## <a name="run-the-app"></a>Запуск приложения
 
 1. Нажмите клавиши **CTRL**+**F5**, чтобы запустить приложение и открыть его в веб-браузере.
 
@@ -106,13 +107,10 @@ ms.locfileid: "39232199"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Для получения дополнительных сведений перейдите к следующим руководствам:
+Для получения дополнительных сведений перейдите к следующему руководству:
 
 > [!div class="nextstepaction"]
 > [Начало работы с C# и ASP.NET в Visual Studio](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [Начало работы с MVC ASP.NET Core и Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>См. также
 

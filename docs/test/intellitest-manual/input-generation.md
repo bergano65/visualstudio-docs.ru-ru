@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977781"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341887"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Создание входных данных с помощью динамического символического выполнения
 
@@ -72,7 +72,7 @@ IntelliTest использует поиск решения для огранич
 IntelliTest может [создавать экземпляры существующих классов .NET](#existing-classes), либо вы можете использовать IntelliTest, чтобы автоматически [создавать макеты объектов](#parameterized-mocks), реализующие определенный интерфейс и ведущие себя по-разному в зависимости от способа использования.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>Создание экземпляров существующих классов
+## <a name="instantiate-existing-classes"></a>Создание экземпляров существующих классов
 
 **В чем тут дело?**
 
@@ -135,7 +135,7 @@ IntelliTest отслеживает выполняемые инструкции, 
 IntelliTest пытается минимизировать размер массивов и строк, необходимых для активации интересующих поведений программы.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>Получение дополнительных входных данных
+## <a name="obtain-additional-inputs"></a>Получение дополнительных входных данных
 
 Статический класс [PexChoose](static-helper-classes.md#pexchoose) можно использовать, чтобы получить дополнительные входные данные для теста и реализовать [параметризованные макеты](#parameterized-mocks).
 

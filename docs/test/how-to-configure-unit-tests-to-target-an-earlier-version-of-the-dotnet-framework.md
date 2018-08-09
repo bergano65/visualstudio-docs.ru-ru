@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233494"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380648"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
 
@@ -26,13 +26,13 @@ ms.locfileid: "36233494"
 
 - Можно запускать модульные тесты, которые предназначены для определенной версии платформы .NET Framework, в Visual Studio на локальном компьютере.
 
-- Можно запускать модульные тесты, которые предназначены для определенной версии платформы .NET Framework, с помощью программы MSTest.exe из командной строки.
+- Модульные тесты, которые предназначены для определенной версии платформы .NET Framework, можно запускать с помощью программы *MSTest.exe* из командной строки.
 
 - Можно выполнять модульные тесты в агенте сборки в рамках сборки.
 
 **Тестирование приложений SharePoint**
 
-Перечисленные выше возможности также позволяют с помощью Visual Studio создавать модульные тесты и тесты интеграции для приложений SharePoint. Дополнительные сведения о способах разработки приложений SharePoint в Visual Studio см. в разделах [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md), [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) и [Проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
+Перечисленные выше возможности также позволяют с помощью Visual Studio создавать модульные тесты и тесты интеграции для приложений SharePoint. Дополнительные сведения о способах разработки приложений SharePoint в Visual Studio см. в статьях [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md), [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) и [Проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Ограничения**
 
@@ -58,7 +58,7 @@ ms.locfileid: "36233494"
 
 3.  В текстовом поле **Имя** введите имя тестового проекта Visual Basic и нажмите кнопку **ОК**.
 
-4.  В обозревателе решений выберите пункт **Свойства** в контекстном меню нового тестового проекта Visual Basic.
+4.  В **обозревателе решений** выберите пункт **Свойства** в контекстном меню нового тестового проекта Visual Basic.
 
      Будут показаны свойства тестового проекта Visual Basic.
 
@@ -80,7 +80,7 @@ ms.locfileid: "36233494"
 
 3.  В текстовом поле **Имя** введите имя тестового проекта Visual C# и нажмите кнопку **ОК**.
 
-4.  В обозревателе решений выберите пункт **Свойства** в контекстном меню нового тестового проекта Visual C#.
+4.  В **обозревателе решений** выберите пункт **Свойства** в контекстном меню нового тестового проекта Visual C#.
 
      Будут показаны свойства тестового проекта Visual C#.
 
@@ -88,7 +88,7 @@ ms.locfileid: "36233494"
 
      ![Раскрывающийся список целевых рабочих сред](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Перенацеливание на определенную версию платформы .NET Framework для проектов модульного теста C++/CLI.
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Перенацеливание на определенную версию платформы .NET Framework для проектов модульного теста C++/CLI
 
 1.  Создайте проект модульного теста C++. В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.
 
@@ -101,11 +101,11 @@ ms.locfileid: "36233494"
 
 3.  В текстовом поле **Имя** введите имя тестового проекта Visual C++ и нажмите кнопку **ОК**.
 
-4.  В обозревателе решений выберите команду **Выгрузить проект** для нового тестового проекта Visual C++.
+4.  В **обозревателе решений** выберите команду **Выгрузить проект** для нового тестового проекта Visual C++.
 
-5.  В обозревателе решений выберите выгруженный тестовый проект Visual C++, а затем **Изменить \<имя проекта>.vcxproj**.
+5.  В **обозревателе решений** выберите выгруженный тестовый проект Visual C++, а затем выберите **Изменить \<имя проекта>.vcxproj**.
 
-     VCXPROJ-файл откроется в редакторе.
+     *VCXPROJ*-файл откроется в редакторе.
 
 6.  Задайте для `TargetFrameworkVersion` версию 3.5 или более позднюю в группе `PropertyGroup`, обозначенной как `"Globals"`. Указывать версию клиента не следует.
 
@@ -120,12 +120,12 @@ ms.locfileid: "36233494"
       </PropertyGroup>
     ```
 
-7.  Сохраните и закройте VCXPROJ-файл.
+7.  Сохраните и закройте *VCXPROJ*-файл.
 
-8.  В обозревателе решений выберите в контекстном меню нового тестового проекта Visual C++ пункт **Перезагрузить проект**.
+8.  В **обозревателе решений** выберите в контекстном меню нового тестового проекта Visual C++ пункт **Перезагрузить проект**.
 
 ## <a name="see-also"></a>См. также
 
 - [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)
-- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

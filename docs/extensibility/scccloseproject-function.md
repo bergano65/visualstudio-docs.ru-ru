@@ -1,5 +1,5 @@
 ---
-title: Функция SccCloseProject | Документы Microsoft
+title: Функция SccCloseProject | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f977c1241408f5e33d31a63262abb5ee24670e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49d3196fbe2eb6c3bafa1ec234e27072e50a4b7d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145120"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636029"
 ---
 # <a name="scccloseproject-function"></a>Функция SccCloseProject
 Эта функция закрывает проект, отмечающую конец конкретного сеанса.  
@@ -33,22 +33,22 @@ SCCRTN SccCloseProject (
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+### <a name="parameters"></a>Параметры  
  pvContext  
- Исходная структура подключаемого модуля контекста элемента управления.  
+ Структура подключаемого модуля контекста исходного элемента управления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+ Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |SCC_OK|Проект был успешно закрыт.|  
 |SCC_E_PROJNOTOPEN|Проект не открыт.|  
-|SCC_E_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
-|SCC_E_NONSPECIFICERROR|Неспецифичную сбоя.|  
+|SCC_E_NOTAUTHORIZED|Пользователю запрещено для этой операции.|  
+|SCC_E_NONSPECIFICERROR|Обнаружена неспецифическая ошибка.|  
   
 ## <a name="remarks"></a>Примечания  
- [SccOpenProject](../extensibility/sccopenproject-function.md) всегда вызывается перед данной функцией. Вызов этой функции выполняется путем вызова либо `SccOpenProject` функции или [SccUninitialize](../extensibility/sccuninitialize-function.md), который полностью завершает подключение к системе управления версиями.  
+ [SccOpenProject](../extensibility/sccopenproject-function.md) всегда вызывается перед этой функцией. Вызов этой функции выполняется путем вызова либо `SccOpenProject` функции или [SccUninitialize](../extensibility/sccuninitialize-function.md), для завершения подключения к системе управления версиями, полностью.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   

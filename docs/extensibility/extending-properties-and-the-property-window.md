@@ -1,5 +1,5 @@
 ---
-title: Расширение свойств и в окне свойств | Документы Microsoft
+title: Расширение свойств и окна свойств | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,21 +17,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d03a9c31afed5a737a2f33e1cece490e7dd91b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f599c31e674a93ef44d83763a238575bff459e2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126075"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639982"
 ---
-# <a name="extending-properties-and-the-property-window"></a>Расширение свойств и в окне свойств
+# <a name="extend-properties-and-the-property-window"></a>Расширение свойств и окна свойств
 **Свойства** окно используется для просмотра и изменения свойств времени разработки и события выбранных объектов.  
   
  При выборе объекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], открытые свойства этого объекта отображаются в **свойства** окна. Дополнительные сведения см. в разделе [Общие сведения об окне свойств](../extensibility/internals/properties-window-overview.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Расширение свойств в окно свойств](../extensibility/exposing-properties-to-the-properties-window.md)  
- Объясняет, как задавать настраиваемые свойства отображаются в окне «Свойства».  
+## <a name="in-this-section"></a>Содержание раздела  
+ [Свойств в окне «Свойства»](../extensibility/exposing-properties-to-the-properties-window.md)  
+ Объясняет, как может иметь пользовательских свойств в окне свойств.  
   
  [Получение свойств проекта](../extensibility/getting-project-properties.md)  
- Сведения о получении свойств проекта.
+ В этой статье описывается получение свойств проекта.

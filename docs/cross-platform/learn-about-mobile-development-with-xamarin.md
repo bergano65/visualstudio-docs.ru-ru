@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 562bd68722674d7b33f9be0941d5e351d8d198bc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98371b648dc7fe18315904d4759b55701a07f7b1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757842"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251683"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Подробности о разработке мобильных приложений с использованием Xamarin
 
@@ -31,11 +31,11 @@ ms.locfileid: "36757842"
 
 *10–20 минут*
 
-1.  [Мобильные приложения в Visual Studio с Xamarin](https://visualstudio.microsoft.com/xamarin/) (visualstudio.com) предоставляют краткое сводное описание основных характеристик Xamarin.
+1.  [Мобильные приложения в Visual Studio с Xamarin](https://visualstudio.microsoft.com/xamarin/) (visualstudio.com) — краткое сводное описание основных характеристик Xamarin.
 
-2.  [Создание кроссплатформенных мобильных приложений с помощью C# и Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9, 15 мин. 16 сек.) с пропагандистом Xamarin, Джеймсом Монтеманьо (James Montemagno). Первые три минуты посвящены обзору Xamarin, затем следуют демонстрации кода.
+2.  [Создание кроссплатформенных мобильных приложений с помощью C# и Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9, 15 мин 16 с) с пропагандистом Xamarin Джеймсом Монтеманьо (James Montemagno). Первые три минуты посвящены обзору Xamarin, затем следуют демонстрации кода.
 
-## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Основы: обзор окружений Visual Studio и Xamarin
+## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Основы: обзор сред Visual Studio и Xamarin
 
 *5–15 минут*
 
@@ -88,11 +88,11 @@ Xamarin.Forms предоставляет общий набор интерфей�
 
 2.  Первые три минуты видео Джеймса Монтеманьо [Xamarin.Forms: создание нативных приложений iOS, Android и Windows с помощью C# и XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13 мин 3 с) содержат еще один обзор; остальная часть видео посвящена демонстрациям.
 
-3.  [Введение в Xamarin.Forms](/xamarin/xamarin-forms/get-started/introduction-to-xamarin-forms/) (необязательно).
+3.  [Введение в Xamarin.Forms](/xamarin/xamarin-forms/get-started/introduction-to-xamarin-forms/) (необязательно)
 
 4.  Примеры использования `OnPlatform` для настройки см. в документации по [классу Device](/xamarin/xamarin-forms/platform/device/) (необязательно).
 
-5.  Статья [Кроссплатформенная разработка — общий доступ к коду пользовательского интерфейса на мобильных платформах с помощью Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx), автор Джейсон Смит (Jason Smith) из MSDN Magazine. В статье описаны разные возможности настройки в Xamarin.Forms, подробнее о которых написано в другой статье [Пользовательские отрисовщики](/xamarin/xamarin-forms/app-fundamentals/custom-renderer/) (необязательно).
+5.  Статья [Кроссплатформенная разработка — общий доступ к коду пользовательского интерфейса на мобильных платформах с помощью Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx), автор Джейсон Смит (Jason Smith) из MSDN Magazine. В статье описаны разные возможности настройки в Xamarin.Forms, подробнее о которых написано в другой статье: [Пользовательские отрисовщики](/xamarin/xamarin-forms/app-fundamentals/custom-renderer/) (необязательно).
 
 ## <a name="deeper-dive-debugging-with-emulators"></a>Подробное рассмотрение: отладка с помощью эмуляторов
 
@@ -102,19 +102,19 @@ Xamarin.Forms предоставляет общий набор интерфей�
 
 ### <a name="microsofts-android-emulator"></a>Эмулятор Android Microsoft
 
-Рекомендуется использовать [Эмулятор Visual Studio для Android](visual-studio-emulator-for-android.md) компании Майкрософт, который устанавливается вместе с Visual Studio.  Видео об [эмуляторе Visual Studio для Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 мин. 55 сек.) содержит еще один обзор и демонстрацию.
+Рекомендуется использовать [Эмулятор Visual Studio для Android](visual-studio-emulator-for-android.md) компании Майкрософт, который устанавливается вместе с Visual Studio.  Видео об [эмуляторе Visual Studio для Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 мин 55 с) содержит обзор и демонстрацию.
 
 ### <a name="apples-ios-simulator"></a>Симулятор iOS Apple
 
 Дополнительные сведения см. в статье [Начало работы с симулятором iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).
 
-### <a name="microsofts-windows-phone-emulator"></a>Эмулятор Microsoft Windows Phone.
+### <a name="microsofts-windows-phone-emulator"></a>Эмулятор Microsoft Windows Phone
 
 Дополнительные сведения см. в статье [Тестирование с помощью эмулятора устройства с Windows 10 Mobile (Майкрософт)](/windows/uwp/debug-test-perf/test-with-the-emulator).
 
 <a name="components" />
 
-## <a name="deeper-dive-xamarin-components"></a>Deeper Dive: Xamarin Components
+## <a name="deeper-dive-xamarin-components"></a>Подробное рассмотрение: компоненты Xamarin
 
 *10 минут*
 

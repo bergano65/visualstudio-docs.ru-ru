@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31068665"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251553"
 ---
-# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
+# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Требования к системе для эмулятора Visual Studio для Android
 Эмулятор Visual Studio для Android выполняется в виде виртуальной машины в Hyper-V, технологии виртуализации для Windows 8 и более поздних версий. Чтобы запустить эмулятор, компьютер должен удовлетворять требованиям для запуска Hyper-V, как описано в этом разделе.  
   
  Программа установки пытается автоматически настроить при установке эмулятора. После успешной настройки необходимых компонентов эмулятор работает надлежащим образом. В противном случае необходимые компоненты потребуется включить вручную. Если нужно вручную настроить необходимые компоненты, используются те же действия и средства, которые описаны [здесь](/previous-versions/windows/apps/jj863509\(v=vs.105\)) для эмулятора Windows Phone.  
@@ -136,7 +136,7 @@ ms.locfileid: "31068665"
 ##  <a name="BootableVHD"></a> Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается  
  При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: "Ошибка при развертывании приложения". Повторите попытку.  
   
- Такая конфигурация не поддерживается. Информацию о связанных проблемах см. в разделе [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
+ Такая конфигурация не поддерживается. Сведения о связанных проблемах см. в статье [Устранение неполадок с эмулятором Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
 ##  <a name="Files"></a> Для Hyper-V требуются несжатые и и незашифрованные файлы  
  На жестком диске, настроенном с файловой системой NTFS, файлы виртуальных жестких дисков, используемых Hyper-V, не должны быть сжаты или зашифрованы. Убедитесь, что следующие каталоги не сжаты и не зашифрованы.  
@@ -155,4 +155,4 @@ ms.locfileid: "31068665"
  Чтобы эмулятор мог эмулировать вызовы в GPU, например используемые OpenGL ES, компьютер должен иметь GPU, совместимый с DirectX и установленный с соответствующими драйверами DirectX.  
   
 ## <a name="see-also"></a>См. также  
- [Устранение неполадок эмулятора Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Устранение неполадок с эмулятором Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

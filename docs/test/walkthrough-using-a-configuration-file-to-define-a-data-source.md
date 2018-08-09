@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382681"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 
-В этом пошаговом руководстве демонстрируется использование источника данных, определенного в файле *app.config*, для модульного тестирования. Вы узнаете, как создать файл app.config, определяющий источник данных, который может использоваться классом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. В данном пошаговом руководстве представлены следующие задачи:
+В этом пошаговом руководстве демонстрируется использование источника данных, определенного в файле *app.config*, для модульного тестирования. Вы узнаете, как создать файл *app.config*, определяющий источник данных, который может использоваться классом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. В данном пошаговом руководстве представлены следующие задачи:
 
-- создание файла app.config;
+- создание файла *app.config*;
 
 - определение настраиваемого раздела конфигурации;
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>Добавление к проекту файла app.config
 
-1. Если файл app.config уже существует в тестовом проекте, переходите к разделу [Определение настраиваемого раздела конфигурации](#DefineCustomConfigurationSection).
+1. Если файл *app.config* уже существует в тестовом проекте, переходите к разделу [Определение настраиваемого раздела конфигурации](#define-a-custom-configuration-section).
 
 2. Щелкните тестовый проект правой кнопкой мыши в **обозревателе решений** и выберите **Добавить** > **Новый элемент**.
 
@@ -53,13 +54,13 @@ ms.lasthandoff: 05/03/2018
 
 3. Выберите шаблон **Файл конфигурации приложения** и нажмите кнопку **Добавить**.
 
-##  <a name="DefineCustomConfigurationSection"></a> Определение настраиваемого раздела конфигурации
+##  <a name="define-a-custom-configuration-section"></a>Определение настраиваемого раздела конфигурации
 
 Просмотрите файл *app.config*. Он содержит как минимум объявление XML и корневой элемент.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Добавление настраиваемого раздела конфигурации в файл app.config
 
-1. Корневым элементом файла app.config должен быть элемент **configuration**. Создайте элемент **configSections** в элементе **configuration**. **configSections** должен быть первым элементом в файле *app.config*.
+1. Корневым элементом файла *app.config* должен быть элемент **configuration**. Создайте элемент **configSections** в элементе **configuration**. **configSections** должен быть первым элементом в файле *app.config*.
 
 2. В элементе **configSections** создайте элемент **section**.
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/03/2018
 
 Элемент **section** должен принять следующий вид:
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
@@ -94,7 +95,7 @@ ms.lasthandoff: 05/03/2018
 
 Во втором элементе **add** создайте следующие атрибуты и значения для подключения к таблице Microsoft Excel:
 
-|||
+|Атрибут|Значения|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +103,7 @@ ms.lasthandoff: 05/03/2018
 
 Элемент **connectionStrings** должен принять следующий вид:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -142,7 +143,7 @@ ms.lasthandoff: 05/03/2018
 
 Во втором элементе **add** создайте следующие атрибуты и значения для источника данных Microsoft Excel:
 
-|||
+|Атрибут|Значения|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -183,9 +184,9 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Создание модульного теста, использующего источники данных, определенные в файле app.config
 
-Определив файл app.config, мы создадим модульный тест, использующий данные, находящиеся в источниках данных, которые определены в файле app.config. В этом разделе мы рассмотрим:
+Определив файл *app.config*, мы создадим модульный тест, использующий данные, находящиеся в источниках данных, которые определены в файле *app.config*. В этом разделе мы рассмотрим:
 
-- создание источников данных, определенных в файле app.config;
+- создание источников данных, определенных в файле *app.config*;
 
 - использование источников данных в двух методах теста, сравнивающих значения в каждом источнике данных.
 
@@ -261,7 +262,7 @@ ms.lasthandoff: 05/03/2018
     }
     ```
 
-3. Проверьте атрибуты DataSource. Обратите внимание на имена параметров из файла app.config.
+3. Проверьте атрибуты DataSource. Обратите внимание на имена параметров из файла *app.config*.
 
 4. Выполните построение решения и запустите тесты MyTestMethod и MyTestMethod2.
 

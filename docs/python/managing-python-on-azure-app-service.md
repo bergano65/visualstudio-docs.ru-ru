@@ -1,7 +1,7 @@
 ---
 title: Настройка Python в Службе приложений Azure
 description: Установка интерпретатора и библиотек Python в Службе приложений Azure и настройка веб-приложений, чтобы в них содержалась правильная ссылка на интерпретатор.
-ms.date: 09/13/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 406a35ff484b5a6759831b76c2417bf5fcb2d12c
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876999"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310076"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Работа с Python в Службе приложений Azure
+
+> [!Important]
+> Корпорация Майкрософт планирует отказаться от расширений Python для службы приложений, как описано в этой статье, в пользу прямого развертывания в службе приложений для Linux. Пока расширения будут работать по-прежнему. Сведения о развертывании в службе приложений для Linux см. в статье [Развертывание веб-приложения Python в Веб-приложении для контейнеров](/azure/app-service/containers/quickstart-python).
 
 [Служба приложений Azure](https://azure.microsoft.com/services/app-service/) — это предложение вида "платформа как услуга" для веб-приложений, представлены ли они сайтами, к которым обращаются через браузер, REST API, используемыми вашими собственными клиентами, либо обработкой с активацией по событиям. Служба приложений полностью поддерживает использование Python для реализации приложений.
 
@@ -27,9 +30,6 @@ ms.locfileid: "33876999"
 
 > [!Tip]
 > Хотя в службе приложений по умолчанию установлены среды Python 2.7 и Python 3.4 в корневых папках на сервере, настраивать или устанавливать пакеты в этих средах нельзя. Кроме того, не следует полагаться на их наличие. Вместо этого используйте расширение сайта, которым вы управляете, как описано в этой статье.
-
-> [!Important]
-> Представленные здесь процедуры могут изменяться, в частности, для их улучшения. Сведения об изменениях публикуются в [блоге Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Выбор версии Python с помощью портала Azure
 

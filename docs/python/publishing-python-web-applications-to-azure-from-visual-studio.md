@@ -1,7 +1,7 @@
 ---
 title: Публикация приложения Python в Службе приложений Azure
 description: Публикация веб-приложения Python напрямую в Службу приложений Azure из Visual Studio, в том числе необходимое содержимое файла web.config.
-ms.date: 09/27/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 249774da4ef088ae1f8a0b11c932d7ed92d1bcde
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032246"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310102"
 ---
 # <a name="publishing-to-azure-app-service"></a>Публикация в службу приложений Azure
+
+> [!Important]
+> Развертывание приложений Python в службе приложений Azure для Linux из Visual Studio в настоящее время не поддерживается. Корпорация Майкрософт также планирует прекратить поддержку Python в службе приложений для Windows. Обновленная информация будет публиковаться в этой статье. Пока же развертывание в службе приложений для Linux можно выполнять с помощью контейнеров. Дополнительные сведения см. в статье [Развертывание веб-приложения Python в Веб-приложении для контейнеров](/azure/app-service/containers/quickstart-python).
 
 Visual Studio предоставляет возможность публиковать веб-приложение Python в Службу приложений Azure. Публикация в Службе приложений Azure означает копирование необходимых файлов на сервер и настройку соответствующего файла `web.config`, который определяет способ запуска приложения веб-сервером.
 

@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1c68db8282a74ce230d573450a359060bb0d12c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155585"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251722"
 ---
-# <a name="using-visual-studio-tools-for-unity"></a>Применение набора средств Visual Studio для Unity
+# <a name="use-visual-studio-tools-for-unity"></a>Использование инструментов Visual Studio для Unity
 
 В этом разделе мы рассмотрим, как использовать возможности интеграции и повышения производительности набора средств Visual Studio для Unity, а также как использовать отладчик Visual Studio для разработки Unity.
 
-## <a name="opening-unity-scripts-in-visual-studio"></a>Открытие скриптов Unity в Visual Studio
+## <a name="open-unity-scripts-in-visual-studio"></a>Открытие скриптов Unity в Visual Studio
 
 После настройки Visual Studio [в качестве внешнего редактора скриптов для Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio) открытие любого скрипта в редакторе Unity приводит к автоматическому запуску Visual Studio с выбранным скриптом. Просто дважды щелкните сценарий в проекте Unity.
 
@@ -33,7 +33,7 @@ ms.locfileid: "39155585"
 
  Доступ к документации по созданию скриптов Unity можно быстро получать из Visual Studio. Если набор средств Visual Studio для Unity не находит документацию по API в локальном режиме, он попытается найти ее через Интернет.
 
-- В Visual Studio выделите API Unity, с которым хотите ознакомиться (или наведите курсор), а затем нажмите клавиши **CTRL+ALT+M, CTRL+H**.
+- В Visual Studio выделите API Unity, с которым хотите ознакомиться (или наведите на него курсор), а затем нажмите клавиши **CTRL**+**ALT**+**M**, **CTRL**+**H**.
 
 ## <a name="intellisense-for-unity-api-messages"></a>IntelliSense для сообщений API Unity
 
@@ -71,7 +71,7 @@ ms.locfileid: "39155585"
 
 Создание определений пустых методов MonoBehavior с помощью мастера MonoBehavior.
 
-1. В Visual Studio поместите курсор туда, где необходимо вставить методы, а затем нажмите клавиши **CTRL+SHIFT+M** для запуска мастера MonoBehavior.
+1. В Visual Studio поместите курсор туда, где необходимо вставить методы, а затем нажмите клавиши **CTRL**+**SHIFT**+**M** для запуска мастера MonoBehavior.
 
 1. В окне **Создание методов скрипта** установите флажок рядом с именем каждого метода, который нужно добавить.
 
@@ -91,7 +91,7 @@ ms.locfileid: "39155585"
 
  Обозреватель проектов Unity показывает все файлы и каталоги ваших проектов Unity в том же виде, что и редактор Unity. Это отличается от навигации по сценариям Unity с помощью обычного обозревателя решений Visual Studio, который организует их в проекты и решения, созданные Visual Studio.
 
-- В главном меню Visual Studio выберите **Представление > Обозреватель проектов Unity**. Сочетание клавиш **ALT+SHIFT+E**
+- В главном меню Visual Studio выберите **Представление > Обозреватель проектов Unity**. Сочетание клавиш: **ALT**+**SHIFT**+**E**
 
      ![Изображение окна обозревателя проектов Unity](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -107,7 +107,7 @@ ms.locfileid: "39155585"
 
  Набор средств Visual Studio для Unity позволяет отлаживать скрипты редакторов и игр для проекта Unity с помощью мощного отладчика Visual Studio.
 
-### <a name="debugging-in-the-unity-editor"></a>Отладка в редакторе Unity
+### <a name="debug-in-the-unity-editor"></a>Отладка в редакторе Unity
 
 #### <a name="start-debugging"></a>Начать отладку
 
@@ -141,9 +141,9 @@ ms.locfileid: "39155585"
 
 Затем на кнопке "Воспроизведение" появляется метка **Подключение к Unity и воспроизведение**. Нажатие этой кнопки или использование клавиши **F5** приведет к автоматическому переключению на редактор Unity и запуску игры в редакторе, в дополнение к подключению отладчика Visual Studio.
 
-Чтобы автоматически остановить игру в редакторе Unity, в Visual Studio нажмите кнопку **Стоп** или используйте сочетания клавиш **SHIFT + F5**.
+Чтобы автоматически остановить игру в редакторе Unity, в Visual Studio нажмите кнопку **Стоп** или используйте сочетание клавиш **SHIFT**+**F5**.
 
-### <a name="debugging-unity-player-builds"></a>Отладка сборок проигрывателя Unity
+### <a name="debug-unity-player-builds"></a>Отладка сборок проигрывателя Unity
 
 С помощью Visual Studio можно отлаживать сборки для разработки различных проигрывателей Unity.
 
@@ -177,7 +177,7 @@ ms.locfileid: "39155585"
 > [!IMPORTANT]
 > Так как набор средств Visual Studio для Unity и экземпляр Unity взаимодействуют через сетевой UDP-сокет, ваш брандмауэр может об этом запросить. В данном случае соединение нужно авторизовать, чтобы VSTU и Unity могли обмениваться данными.
 
-### <a name="debugging-a-dll-in-your-unity-project"></a>Отладка библиотеки DLL в проекте Unity
+### <a name="debug-a-dll-in-your-unity-project"></a>Отладка библиотеки DLL в проекте Unity
 
  Многие разработчики Unity создают компоненты кода в виде внешних библиотек DLL, чтобы разрабатываемые ими функции можно было легко совместно использовать с другими проектами. Набор средств Visual Studio для Unity упрощает отладку кода в этих библиотеках DLL без создания проблем для другого кода в проекте Unity.
 
@@ -214,9 +214,9 @@ ms.locfileid: "39155585"
 
 |Команда|Сочетание клавиш|Имя контекстной команды|
 |-------------|--------------|---------------------------|
-|Открыть мастер MonoBehavior|**CTRL+SHIFT+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Открыть обозреватель проектов Unity|**ALT+SHIFT+E**|**View.UnityProjectExplorer**|
-|Доступ к документации по Unity|**CTRL+ALT+M, CTRL+H**|**Help.UnityAPIReference**|
+|Открыть мастер MonoBehavior|**CTRL**+**SHIFT**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Открыть обозреватель проектов Unity|**ALT**+**SHIFT**+**E**|**View.UnityProjectExplorer**|
+|Доступ к документации по Unity|**CTRL**+**ALT**+**M, CTRL**+**H**|**Help.UnityAPIReference**|
 |Присоединиться к отладчику Unity (проигрыватель или редактор)|***Значение по умолчанию отсутствует***|**Debug.AttachUnityDebugger**|
 
- Если вас не устраивает сочетание клавиш по умолчанию, его можно изменить. Как это сделать, см. в статье [Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Если вас не устраивает сочетание клавиш по умолчанию, его можно изменить. Чтобы узнать, как это сделать, см. статью [Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

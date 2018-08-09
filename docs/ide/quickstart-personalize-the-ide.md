@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078229"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512565"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 
@@ -97,11 +97,19 @@ ms.locfileid: "39078229"
 
 Мы изучили только некоторые способы настраивать цвета в Visual Studio. Ознакомьтесь с другими возможностями в диалоговом окне **Параметры**, чтобы настроить Visual Studio в соответствии со своими предпочтениями.
 
+## <a name="next-steps"></a>Следующие шаги
+
+> [!div class="nextstepaction"]
+> [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
+
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
-- [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
 - [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Настройка редактора](../ide/customizing-the-editor.md)
 - [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)

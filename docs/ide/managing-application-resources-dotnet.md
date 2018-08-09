@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064614"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381651"
 ---
 # <a name="manage-application-resources-net"></a>Управление ресурсами приложения (.NET)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32064614"
 
 - щелкнуть правой кнопкой мыши узел проекта в **обозревателе решений** и выбрать пункт **Свойства**;
 - ввести фразу "свойства проекта" в окне **Быстрый запуск**;
-- нажать клавиши **ALT**+**ВВОД** в окне **обозревателя решений**.
+- нажать клавиши **ALT**+**ВВОД** в **обозревателе решений**.
 
 Перейдите на вкладку **Ресурсы** . Вы можете добавить файл *RESX*, если проект его еще не содержит, добавить и удалить различные типы ресурсов, а также изменить существующие ресурсы.
 
