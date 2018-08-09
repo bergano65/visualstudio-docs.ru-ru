@@ -1,1 +1,0 @@
-Internet Explorer 8 (стандартный режим), Internet Explorer 9 (стандартный режим), Internet Explorer 10 (стандартный режим), Internet Explorer 11 (стандартный режим) и приложения win8_appname_long

@@ -1,5 +1,0 @@
-# [Справочник по JavaScript](javascript-reference.md)
-## [Сведения о версии](javascript-version-information.md)
-## [Ошибки JavaScript](javascript-errors.md)
-### [Ошибки времени выполнения JavaScript](javascript-run-time-errors.md)
-### [Синтаксические ошибки JavaScript](javascript-syntax-errors.md)

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276997"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008272"
 ---
 # <a name="outlook-object-model-overview"></a>Обзор объектной модели Outlook
   Для разработки надстроек VSTO для Microsoft Office Outlook вы можете взаимодействовать с объектами, которые предоставляются объектной моделью Outlook. Объектная модель Outlook предоставляет классы и интерфейсы, которые представляют элементы пользовательского интерфейса. Например, объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет все приложение, объект <xref:Microsoft.Office.Interop.Outlook.Folder> — папку, содержащую электронные сообщения или другие элементы, а объект <xref:Microsoft.Office.Interop.Outlook.MailItem> — электронное сообщение.  
@@ -59,7 +59,7 @@ ms.locfileid: "39276997"
 ### <a name="application-object"></a>Объект Application  
  Объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет приложение Outlook. Это объект самого верхнего уровня в объектной модели Outlook. Ниже перечислены некоторые наиболее важные члены этого объекта.  
   
--   [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) метод, который можно использовать для создания элемента, например сообщения электронной почты, задача или встреча.  
+-   [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) метод, который можно использовать для создания элемента, например сообщения электронной почты, задача или встреча.  
   
 -   Свойство <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> , которое можно использовать для доступа к окнам с содержимым папки в пользовательском интерфейсе Outlook.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39276997"
 ### <a name="taskitem-object"></a>Объект TaskItem  
  Объект <xref:Microsoft.Office.Interop.Outlook.TaskItem> представляет задачу, выполняемую в течение заданного промежутка времени. Объекты<xref:Microsoft.Office.Interop.Outlook.TaskItem> расположены в папке **Задачи** .  
   
- Чтобы создать задачу, используйте [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) метод <xref:Microsoft.Office.Interop.Outlook.Application> и передать в значении <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> для параметра.  
+ Чтобы создать задачу, используйте [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) метод <xref:Microsoft.Office.Interop.Outlook.Application> и передать в значении <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> для параметра.  
   
 ### <a name="contactitem-object"></a>Объект ContactItem  
  Объект <xref:Microsoft.Office.Interop.Outlook.ContactItem>представляет контакт в папке **Контакты** . Объекты<xref:Microsoft.Office.Interop.Outlook.ContactItem> содержат различные контактные данные для людей, которые они представляют, например адреса, электронные адреса и номера телефонов.  
