@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5dcc8cf450fc769703174f600727bf91b939ac96
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341556"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499907"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
@@ -41,10 +41,10 @@ ms.locfileid: "39341556"
 1. Загрузите и запустите последнюю версию установщика Visual Studio 2017. Если вы уже установили Visual Studio, запустите Visual Studio Installer, выберите вариант **Изменить** (см. раздел [Изменение Visual Studio](../install/modify-visual-studio.md)) и перейдите к шагу 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Установить Visual Studio 2017 Community</a>
+    > [Установить Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Выпуск Community предназначен для индивидуальных разработчиков, использования при аудиторном обучении и в научных исследованиях, а также разработки решений с открытым кодом. В других целях установите <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> или <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+    > Выпуск Community предназначен для индивидуальных разработчиков, использования при аудиторном обучении и в научных исследованиях, а также разработки решений с открытым кодом. В других целях установите [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) или [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. В установщике предлагается список рабочих нагрузок, то есть групп связанных параметров для определенных целей разработки. Для Python выберите рабочую нагрузку **Разработка на Python**.
 
@@ -92,7 +92,7 @@ ms.locfileid: "39341556"
 
 1. В самом установщике выберите действие **Изменить**.
 
-1. Выберите **Языки программирования > Инструменты Python для Visual Studio** и нажмите **Далее**:
+1. Выберите **Языки программирования** > **Инструменты Python для Visual Studio** и щелкните **Далее**:
 
     ![Выбор PTVS в установщике Visual Studio 2015](media/installation-vs2015.png)
 

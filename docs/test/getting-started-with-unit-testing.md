@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177871"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469071"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -109,9 +109,9 @@ ms.locfileid: "39177871"
 
 ## <a name="use-a-different-unit-test-framework"></a>Использование другой платформы модульного тестирования
 
-Модульные тесты можно выполнять в Visual Studio с помощью сторонних платформ тестирования, таких как Boost, Google и nUnit. Используйте подключаемый модуль для платформы, чтобы средство выполнения тестов Visual Studio могло работать с данной платформой.
+Модульные тесты можно выполнять в Visual Studio с помощью сторонних платформ тестирования, таких как Boost, Google и NUnit. Используйте подключаемый модуль для платформы, чтобы средство выполнения тестов Visual Studio могло работать с данной платформой.
 
-Ниже приведены инструкции по подключению сторонней тестовой платформы.
+Ниже приведены инструкции по подключению сторонней тестовой платформы:
 
 1. В строке меню выберите **Сервис** > **Расширения и обновления**.
 

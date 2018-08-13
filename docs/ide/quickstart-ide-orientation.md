@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388193"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513277"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio
 
@@ -104,12 +104,16 @@ ms.locfileid: "39388193"
 
 Мы рассмотрели лишь некоторые из возможностей Visual Studio, чтобы вы могли получить представление о пользовательском интерфейсе. Для дальнейшего ознакомления:
 
-- Дополнительные сведения о Visual Studio, включая инструкции по отладке, см. в статье [Обзор возможностей интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Краткое руководство. Персонализация IDE](../ide/quickstart-personalize-the-ide.md)
 
-- Вы можете перейти к разделу документации по VS, посвященному **общим элементам пользовательского интерфейса**, чтобы узнать больше о таких элементах управления, как [список ошибок](../ide/reference/error-list-window.md), [окно вывода](../ide/reference/output-window.md), [окно свойств](../ide/reference/properties-window.md) и [диалоговое окно параметров](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство. Персонализация IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
-- [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
+- [Общие сведения об интегрированной среде разработки (IDE) в Visual Studio](../ide/visual-studio-ide.md)
+- [Возможности Visual Studio 2017](../ide/advanced-feature-overview.md)

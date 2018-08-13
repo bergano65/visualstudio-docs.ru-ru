@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572989"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468214"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
+
 В этом пошаговом руководстве для демонстрации возможностей интерфейсов API Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] используется приложение на C#. Интерфейсы API профилировщика используются для ограничения объема данных, собираемых во время профилирования с инструментированием.  
   
  В целом, действия, описанные в этом пошаговом руководстве, можно применять к приложениям на C и C++. Для каждого языка программирования необходимо соответствующим образом настроить среду сборки.  
@@ -50,7 +51,7 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
- Сбор данных можно отключить из командной строки, не вызывая интерфейс API. В следующих шагах предполагается, что среда сборки из командной строки настроена для работы как средств профилирования, так и средств разработки. В том числе настроены параметры, необходимые для работы средств VSInstr и VSPerfCmd. См. раздел "Средства профилирования из командной строки".  
+ Сбор данных можно отключить из командной строки, не вызывая API. В следующих шагах предполагается, что среда сборки из командной строки настроена для работы как средств профилирования, так и средств разработки. В том числе настроены параметры, необходимые для работы средств VSInstr и VSPerfCmd. См. дополнительные сведения о [средствах профилирования командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
 ## <a name="limit-data-collection-using-profiler-apis"></a>Ограничение сбора данных с помощью интерфейсов API профилировщика  
   
@@ -69,47 +70,51 @@ DataCollection.CurrentId);
     using System.Text;  
     using Microsoft.VisualStudio.Profiler;  
   
-    namespace ConsoleApplication2  
+    namespace ConsoleApplication1  
     {  
         class Program  
         {  
             public class A  
             {  
-             private int _x;  
+                private int _x;  
   
-             public A(int x)  
-             {  
-              _x = x;  
-             }  
+                public A(int x)  
+                {  
+                    _x = x;  
+                }  
   
-             public int DoNotProfileThis()  
-             {  
-              return _x * _x;  
-             }  
+                public int DoNotProfileThis()  
+                {  
+                    return _x * _x;  
+                }  
   
-             public int OnlyProfileThis()  
-             {  
-              return _x + _x;  
-             }  
+                public int OnlyProfileThis()  
+                {  
+                    return _x + _x;  
+                }  
   
-             public static void Main()  
-             {  
-            DataCollection.StopProfile(  
-            ProfileLevel.Global,  
-            DataCollection.CurrentId);  
-              A a;  
-              a = new A(2);  
-              int x;      
-              Console.WriteLine("2 square is {0}", a.DoNotProfileThis());  
-              DataCollection.StartProfile(  
-                  ProfileLevel.Global,  
-                  DataCollection.CurrentId);  
-              x = a.OnlyProfileThis();  
-              DataCollection.StopProfile(  
-                  ProfileLevel.Global,   
-                  DataCollection.CurrentId);  
-              Console.WriteLine("2 doubled is {0}", x);  
-             }  
+                public static void Main()  
+                {  
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId); 
+
+                    A a = new A(2);  
+                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis()); 
+
+                    DataCollection.StartProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId);
+
+                    int x;  
+                    x = a.OnlyProfileThis();  
+
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,   
+                    DataCollection.CurrentId);  
+
+                    Console.WriteLine("2 doubled is {0}", x);  
+                }  
             }  
   
         }  
@@ -144,19 +149,19 @@ DataCollection.CurrentId);
   
 2.  В случае профилирования управляемого приложения установите соответствующие переменные среды с помощью следующей команды:  
   
-     **VsPefCLREnv /traceon**  
+     **VsPerfCLREnv /traceon**.  
   
-3.  Введите следующую команду: **VSInstr \<имя_файла>.exe**  
+3.  Введите следующую команду: **VSInstr \<имя_файла>.exe**.  
   
-4.  Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**  
+4.  Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**.  
   
-5.  Введите следующую команду: **VSPerfCmd /globaloff**  
+5.  Введите следующую команду: **VSPerfCmd /globaloff**.  
   
 6.  Выполните программу.  
   
-7.  Введите следующую команду: **VSPerfCmd /shutdown**  
+7.  Введите следующую команду: **VSPerfCmd /shutdown**.  
   
-8.  Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**  
+8.  Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**.  
   
      В текущем каталоге создается *CSV*-файл, содержащий результирующие данные производительности.  
   

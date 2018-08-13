@@ -1,6 +1,6 @@
 ---
 title: Использование параметров EditorConfig в Visual Studio
-ms.date: 12/13/2017
+ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117567"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469058"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -81,9 +81,15 @@ ms.locfileid: "37117567"
    csharp_new_line_before_open_brace = methods
    ```
 
-Кроме того, можно установить [расширение языковой службы EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). После установки этого расширения просто выберите пункты **Добавить** > **EDITORCONFIG-файл** в контекстном меню узла решения, узла проекта или любой папки в обозревателе решений.
+### <a name="other-ways-to-add-an-editorconfig-file"></a>Другие способы добавления файла EditorConfig
 
-![Добавление EDITORCONFIG-файла с расширением](media/editorconfig-extension-add.png)
+Существует несколько способов добавления в проект файла EditorConfig:
+
+- Установите [расширение языковой службы EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig), чтобы упростить добавление пустого файла *.editorconfig* в проект. После установки этого расширения просто выберите пункты **Добавить** > **.editorconfig File** в контекстном меню узла решения, узла проекта или любой папки в **обозревателе решений**. Это расширение также упрощает редактирование файла *.editorconfig*.
+
+   ![Добавление EDITORCONFIG-файла с расширением](media/editorconfig-extension-add.png)
+
+- Попробуйте [расширение IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Это экспериментальное расширение определяет стили существующего кода, а затем создает непустой файл *.editorconfig* с помощью параметров определенного стиля.
 
 ## <a name="override-editorconfig-settings"></a>Переопределение параметров EditorConfig
 

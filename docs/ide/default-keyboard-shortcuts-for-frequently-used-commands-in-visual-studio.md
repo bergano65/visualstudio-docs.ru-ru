@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918003"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512552"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 
@@ -57,7 +57,7 @@ ms.locfileid: "31918003"
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br /> или **SHIFT+ВВОД** [текстовый редактор]|
-|Edit.CollapsetoDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
+|Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
 |Edit.CommentSelection|**CTRL+K**, **CTRL+C** [текстовый редактор]|
 |Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K**, **W** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|
 |Edit.Copy|**CTRL+C** [глобальный]<br /><br /> или **CTRL+INSERT** [глобальный]|
