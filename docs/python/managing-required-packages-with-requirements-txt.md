@@ -11,24 +11,24 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a97a274053f95aac3cc676c17e50e23906fea377
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117005"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468249"
 ---
-# <a name="managing-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
+# <a name="manage-required-packages-with-requirementstxt"></a>Управление необходимыми пакетами с помощью requirements.txt
 
 Если вы используете проект совместно с другими пользователями с помощью системы сборки или планируете [опубликовать его в Microsoft Azure](python-azure-cloud-service-project-template.md), нужно указать требуемые для проекта внешние пакеты. Рекомендуется использовать файл [requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), содержащий список команд для pip, который устанавливает необходимые версии зависимых пакетов.
 
-С технической точки зрения для отслеживания требований можно использовать любой файл (используя `-r <full path to file>` при установке пакета), но Visual Studio имеет встроенную поддержку `requirements.txt`.
+Технически для отслеживания требований можно использовать любой файл (используя `-r <full path to file>` при установке пакета), но Visual Studio имеет встроенную поддержку *requirements.txt*:
 
-- Если вы загрузили проект, содержащий файл `requirements.txt`, и хотите установить все указанные в нем пакеты, разверните узел **Среды Python** в окне **Обозреватель решений**, щелкните правой кнопкой мыши узел среды и выберите **Установить из файла requirements.txt**:
+- Если вы загрузили проект, содержащий файл *requirements.txt*, и хотите установить все указанные в нем пакеты, разверните узел **Среды Python** в **обозревателе решений**, щелкните правой кнопкой мыши узел среды и выберите **Установить из файла requirements.txt**:
 
     ![Установка из файла requirements.txt](media/environments-requirements-txt-install.png)
 
-- Если в окружении установлены все необходимые пакеты, можно щелкнуть среду правой кнопкой мыши в обозревателе решений и выбрать **Создать файл requirements.txt**, чтобы создать необходимый файл. Если файл уже существует, отображается запрос с вариантами обновления:
+- Если в среде установлены все необходимые пакеты, можно щелкнуть среду правой кнопкой мыши в **обозревателе решений** и выбрать **Создать файл requirements.txt**, чтобы создать необходимый файл. Если файл уже существует, отображается запрос с вариантами обновления:
 
     ![Параметры обновления файла requirements.txt](media/environments-requirements-txt-replace.png)
 
@@ -36,9 +36,9 @@ ms.locfileid: "37117005"
   - **Обновить существующие записи** определяет требования к пакету и обновляет описатели версии в соответствии с установленной версией.
   - **Update and add entries** (Обновить и добавить записи) обновляет имеющиеся требования и добавляет все другие пакеты в конец файла.
 
-Так как файлы `requirements.txt` используются для фиксации требований окружения, все установленные пакеты записываются с точными версиями. Такие версии позволяют легко воспроизвести ваше окружение на другом компьютере. Пакеты включены, даже если они были установлены с диапазоном версий, как зависимость от другого пакета или с установщиком, отличным от pip.
+Так как файлы *requirements.txt* используются для фиксации требований среды, все установленные пакеты записываются с точными версиями. Такие версии позволяют легко воспроизвести ваше окружение на другом компьютере. Пакеты включены, даже если они были установлены с диапазоном версий, как зависимость от другого пакета или с установщиком, отличным от pip.
 
-Если pip не удается пакет, указанный в файле `requirements.txt`, установка завершается сбоем. В этом случае нужно вручную исключить этот пакет из файла или использовать [параметры pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) для указания ссылки на устанавливаемую версию пакета. Например, можно использовать [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) для компиляции зависимости и добавления параметра `--find-links <path>` в файл `requirements.txt`.
+Если pip не удается установить пакет, указанный в файле *requirements.txt*, установка завершается сбоем. В этом случае нужно вручную исключить этот пакет из файла или использовать [параметры pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) для указания ссылки на устанавливаемую версию пакета. Например, можно использовать [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) для компиляции зависимости и добавления параметра `--find-links <path>` в файл *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure
@@ -65,9 +65,9 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>См. также
+### <a name="see-also"></a>См. также
 
-- [Управление средами Python в Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Управление окружениями Python в Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
 - [Пути поиска](search-paths.md)
 - [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)

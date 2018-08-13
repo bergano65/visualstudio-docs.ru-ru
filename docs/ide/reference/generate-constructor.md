@@ -9,12 +9,12 @@ ms.author: kaseyu
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3b2aee5bd4fe8a9e65f82cbcbc90edfb583bbbb
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 091caf9db4152b7c349fdf717d97639b360bb602
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117742"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513028"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Создание конструктора в Visual Studio
 
@@ -56,7 +56,7 @@ ms.locfileid: "37117742"
 
 1. Выберите **Создать конструктор** в раскрывающемся меню.
 
-   Открывается диалоговое окно **Pick members** (Выбор элементов).
+   Откроется диалоговое окно **Выбор элементов**.
 
 1. Выберите элементы, которые требуется включить в качестве параметров конструктора. Можно упорядочить их с помощью стрелок вверх и вниз. Нажмите кнопку **ОК**.
 

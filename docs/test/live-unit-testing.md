@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382016"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586485"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Функция Live Unit Testing в Visual Studio 2017
 
@@ -102,7 +102,7 @@ ms.locfileid: "39382016"
 
 - **Параметры**. Этот элемент интерфейса открывает диалоговое окно **Параметры** (см. раздел [Настройка Live Unit Testing](#configure-live-unit-testing)).
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Просмотр визуализации покрытия в редакторе при вводе
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Просмотр визуализации покрытия в редакторе при вводе
 
 После включения функция Live Unit Testing обновляет каждую строку кода в редакторе Visual Studio, чтобы показать, покрывается ли написанный код модульными тестами и завершились ли эти тесты успешно.  На следующем рисунке показаны строки кода с выполненными тестами и тестами, завершившимися сбоем, а также строки кода, не покрытые тестами. Строки с зеленым значком "✓" прошли все тесты, строки с красным значком "x" не прошли один или несколько тестов, а строки с синим значком "➖" не охвачены ни одним из тестов.
 
@@ -186,8 +186,8 @@ ms.locfileid: "39382016"
 
 ## <a name="see-also"></a>См. также
 
-[Средства тестирования кода](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Блог по Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
-[Вопросы и ответы по Live Unit Testing](live-unit-testing-faq.md)
-[Видео Channel 9: функция Live Unit Testing в Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Средства тестирования кода](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Блог о функции Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Динамическое модульное тестирование: вопросы и ответы](live-unit-testing-faq.md)
+- [Видео на Channel 9: Live Unit Testing в Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
 
