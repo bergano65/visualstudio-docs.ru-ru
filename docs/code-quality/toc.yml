@@ -575,6 +575,8 @@
               href: ca3076-insecure-xslt-script-execution.md
             - name: 'CA3077: небезопасная обработка в структуре API средств чтения документов и текста XML'
               href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+            - name: 'CA3147: присвоение метки ValidateAntiForgeryToken обработчикам команд'
+              href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: предупреждения использования
           href: usage-warnings.md
           items:
