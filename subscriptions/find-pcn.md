@@ -9,12 +9,12 @@ description: Сведения о том, как найти номер клиен
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325444"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637023"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Как найти мой номер клиента (PCN) или номер разрешения?
 
@@ -25,10 +25,12 @@ ms.locfileid: "36325444"
 1.  Зайдите в центр поддержки корпоративных лицензий (VSLC) по адресу: [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
 
 2. На вкладке "Подписки" выберите **Подписки Visual Studio**.
-    ![Выбор подписок в VLSC](_img/vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Выбор подписок в VLSC](_img/vlsc/vlsc-subscriptions.png)
 
 3. PCN или номер клиента находится в средней части страницы.
-    ![Расположение PCN в VLSC](_img/vlsc/vlsc-pcn.png)
+    > [!div class="mx-imgBorder"]
+    > ![Расположение PCN в VLSC](_img/vlsc/vlsc-pcn.png)
 
     
 Если страница выше не отображается, а вы перенаправляетесь на страницу входа в Visual Studio, скопируйте и вставьте следующую ссылку в адресную строку браузера: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
