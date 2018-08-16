@@ -18,16 +18,19 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753301"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008412"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
 JavaScript — полноправный язык в Visual Studio. При написании кода JavaScript в интегрированной среде разработки Visual Studio можно использовать большинство или все стандартные средства редактирования (фрагменты кода, IntelliSense и т. д.). Код JavaScript можно написать для многих типов приложений и служб.
+
+> [!NOTE]
+> Мы подключили помощь сообщества, чтобы сделать [веб-документы MDN](https://developer.mozilla.org/en-US/) централизованным ресурсом разработки в Интернете, перенаправляя все (более 500 страниц) справочные материалы по API JavaScript корпорации Майкрософт с сайта docs.microsoft.com в их аналоги в MDN. Подробные сведения см. в этом [объявлении](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="ES6"></a> Поддержка ECMAScript 2015 (ES6) и более поздних версий
 
@@ -183,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 Предположим, что у нас есть проект со следующей конфигурацией:
 
 - Исходные файлы проекта находятся в папке `wwwroot/js`
-- Файлы библиотек проекта находятся в папке `wwwrrot/lib`
+- Файлы библиотек проекта находятся в папке `wwwroot/lib`
 - `bootstrap`, `jquery`, `jquery-validation` и `jquery-validation-unobtrusive` указаны в `bower.json`
 - Инструменты `kendo-ui` вручную добавлены в папку библиотеки
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3efb5315b3adb02f74b41d193a6b9173f38ec992
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749561"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008451"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Пошаговое руководство. Создание простого приложения с помощью C# или Visual Basic
 
@@ -48,7 +48,7 @@ ms.locfileid: "34749561"
 
 1. Нажмите кнопку **ОК**.
 
-Visual Studio создает решение и проект HelloWPFApp, а в **обозревателе решений** выводятся различные файлы. **Конструктор WPF** отображает представление кода и представление XAML *MainWindow.xaml* в представлении с разделением. Сдвигая разделитель, можно делать любое из представлений больше или меньше. Можно выбрать для просмотра только визуальное представление или только представление XAML. (Дополнительные сведения см. в разделе [Конструктор WPF для разработчиков Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) В **Обозревателе решений**отображаются следующие элементы.
+Visual Studio создает решение и проект HelloWPFApp, а в **обозревателе решений** выводятся различные файлы. **Конструктор WPF** отображает представление кода и представление XAML *MainWindow.xaml* в представлении с разделением. Сдвигая разделитель, можно делать любое из представлений больше или меньше. Можно выбрать для просмотра только визуальное представление или только представление XAML. В **Обозревателе решений**отображаются следующие элементы.
 
 ![Обозреватель решений с добавленными файлами HelloWPFApp](../ide/media/exploreide-hellowpfappfiles.png)
 
