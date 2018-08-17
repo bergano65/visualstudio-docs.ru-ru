@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512820"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636828"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio
 
@@ -37,7 +37,7 @@ ms.locfileid: "39512820"
 1. В разделе **Локальные репозитории Git** выберите команду **Клонировать**, в поле URL-адреса введите `https://github.com/gregmalcolm/python_koans`, укажите папку для клонируемых файлов и нажмите кнопку **Клонировать**.
 
     > [!Tip]
-    > В папку, указанную в Team Explorer, будут приниматься клонируемые файлы. В отличие от использования команды `git clone`, клонирование в Team Explorer не создает автоматически вложенную папку с именем репозитория.
+    > В папку, указанную в **Team Explorer**, будут приниматься клонируемые файлы. В отличие от использования команды `git clone`, клонирование в **Team Explorer** не создает автоматически вложенную папку с именем репозитория.
 
 1. По завершении клонирования в списке **Локальные репозитории Git** появится имя репозитория. Дважды щелкните это имя, чтобы перейти к панели мониторинга репозитория в **Team Explorer**.
 

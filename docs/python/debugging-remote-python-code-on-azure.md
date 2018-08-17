@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341791"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008623"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Удаленная отладка кода Python в Azure
 
@@ -48,7 +48,7 @@ ms.locfileid: "39341791"
 
 ![Определение конечной точки отладчика в службе приложений Azure](media/azure-remote-debugging-secret.png)
 
-Теперь вам нужно создать URL-адрес в формате `wss://<secret>@<site_name>.azurewebsites.net/ptvsd`, заменив здесь &lt;secret&gt; и &lt;site_name&gt; соответствующими значениями.
+Теперь вам нужно создать URL-адрес в формате `wss://<secret>@<site_name>.azurewebsites.net/ptvsd`, заменив здесь &lt;secret&gt; и &lt;site_name&gt; на свои значения.
 
 Чтобы подключить отладчик, выберите действие **Отладка** > **Присоединиться к процессу**, затем выберите значение **Удаленная отладка Python** в раскрывающемся списке **Транспорт**, введите полученный URL-адрес в текстовое поле **Квалификатор** и нажмите клавишу **ВВОД**. Если Visual Studio успешно подключится к службе приложений, вы увидите в списке один процесс Python. Выберите его и нажмите **Присоединить**, чтобы запустить отладку:
 

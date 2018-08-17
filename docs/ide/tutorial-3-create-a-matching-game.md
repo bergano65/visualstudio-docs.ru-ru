@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3358d23c7c4f3fd2ad7f6beffb6a035b6c810d38
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747982"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008246"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Руководство 3. Создание соответствующей игры
+
 В этом учебном руководстве вы создадите игру "Подбери пару!", в которой игрок должен подобрать пару скрытым значкам. Вы научитесь:
 
 -   сохранять объекты, например значки, в объекте <xref:System.Collections.Generic.List%601>;
@@ -31,18 +32,18 @@ ms.locfileid: "34747982"
 
 -   создавать таймер, который отсчитывает время и вызывает событие ровно один раз после запуска.
 
- После прохождения этого учебного руководства ваша программа будет выглядеть так, как показано на следующем рисунке.
+После прохождения этого учебника ваша программа будет выглядеть так, как показано на следующем рисунке:
 
- ![Game that you create in this tutorial](../ide/media/express_finishedgame.png) Игра, созданная в этом учебнике
+![Игра, которую вы создадите в этом учебном руководстве](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>Ссылки на руководства
 
- Скачать готовую версию примера можно на странице с [полным примером руководства по созданию игры](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
+Скачать готовую версию примера можно на странице с [полным примером руководства по созданию игры](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
 
 > [!NOTE]
->  В этом учебном руководстве показаны примеры, как на Visual C#, так и на Visual Basic, поэтому обратите внимание на информацию, которая относится к используемому вами языку программирования.
+> В этом учебном руководстве показаны примеры, как на Visual C#, так и на Visual Basic, поэтому обратите внимание на информацию, которая относится к используемому вами языку программирования.
 
- Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [форум по Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) и [форум по Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Кроме того, вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на Visual Basic см. в руководстве по [разработке на Visual Basic для начинающих](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на Visual C# см. в руководстве по [разработке на Visual C# для начинающих](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [форум по Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) и [форум по Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Кроме того, вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на Visual Basic см. в руководстве по [разработке на Visual Basic для начинающих](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на Visual C# см. в руководстве по [разработке на Visual C# для начинающих](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
 ## <a name="related-topics"></a>См. также
 
