@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 899720242910b97bf4ffd9fc4a847b6902b7574a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341739"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008438"
 ---
 # <a name="debug-python-and-c-together"></a>Совместная отладка Python и C++
 
@@ -77,7 +77,7 @@ Visual Studio 2017 (версии 15.5 и более поздних версий)
 
 Во всех предыдущих версиях Visual Studio непосредственная отладка в смешанном режиме возможна только при запуске проекта Python в Visual Studio, так как проекты C/C++ используют только отладчик машинного кода. Но вы можете подключить отладчик отдельно.
 
-1. Запустите проект C++ без отладки (выберите **Отладка** > **Запуск без отладки** или нажмите клавиши **CTRL**+**F5**).
+1. Запустите проект C++ без отладки (выберите **Отладка** > **Запуск без отладки** или нажмите клавиши **CTRL**+**F5**).
 1. Выберите **Отладка** > **Присоединение к процессу**. В открывшемся диалоговом окне выберите соответствующий процесс, затем нажмите кнопку **Выбрать**, чтобы открыть диалоговое окно **Выбор типа кода**, в котором можно выбрать **Python**:
 
     ![Выбор Python в качестве типа отладки при подсоединении отладчика](media/mixed-mode-debugging-attach-type.png)

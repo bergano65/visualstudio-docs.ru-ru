@@ -9,12 +9,12 @@ description: Вход может завершиться ошибкой, если
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327067"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637686"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Вход в подписки Visual Studio может быть неудачным при использовании псевдонимов
 
@@ -50,11 +50,14 @@ ms.locfileid: "36327067"
 1. Откройте [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) и выполните вход.
 2. На странице администрирования Volume Licensing Service Center щелкните **Подписки** и выберите **Подписки Visual Studio**.
 
-    ![Меню "Подписки"](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Меню "Подписки"](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Выберите **номер соглашения**, связанный с нужной подпиской Visual Studio.
 
-    ![Выбор соглашения](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Выбор соглашения](_img/vlsc/vlsc-agreement.png)
 
 4. Щелкните **Assign Subscription** (Назначить подписку).
 5. Выберите нужный **уровень подписки**.

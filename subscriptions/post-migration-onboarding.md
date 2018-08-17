@@ -9,22 +9,22 @@ Description: Learn how to successfully onboard your organization for Visual Stud
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c6f0f3de58f2f9f7d532a7b1b84520644fbdb1c7
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4052d04669327ab0383aba91de05e4d8b95db4c5
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234798"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637459"
 ---
 # <a name="onboarding-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-was-migrated"></a>Подключение к порталу администрирования подписок Visual Studio после миграции организации 
 
 Если вы управляете подписками Visual Studio в центре поддержки корпоративных лицензий (VLSC) и недавно посещали сайт с целью управления подписками, вы заметите, что управление подписками в VLSC больше недоступно. Процесс управления подписками будет выглядеть следующим образом.
-
-![Подписки VLSC](_img/post-migration-onboarding/vlsc-subscriptions.png)
+> [!div class="mx-imgBorder"]
+> ![Подписки VLSC](_img/post-migration-onboarding/vlsc-subscriptions.png)
 
 Перейдя на страницу подписок, вы щелкните ссылку, приведенную ниже. 
-
-![Сводная ссылка связи](_img/post-migration-onboarding/relationship-summary-link.png)
+> [!div class="mx-imgBorder"]
+> ![Ссылка на сводную таблицу](_img/post-migration-onboarding/relationship-summary-link.png)
 
 Ранее эта ссылка отправляла вас на страницу управления подписками.   Однако теперь подписки управляются через новый портал, называемый порталом администрирования подписок Visual Studio.  Существует несколько этапов, которые должны быть предприняты основным контактом или контактом для уведомлений для соглашения о корпоративном лицензировании организации. В случае, если основной контакт или контакт для уведомлений не завершил этот процесс или больше не доступен, существует несколько сценариев, которые могут возникнуть. Чтобы получить доступ к управлению подписками, необходимо предпринять следующее шаги. 
 
@@ -42,22 +42,22 @@ ms.locfileid: "39234798"
 Если основной контакт не завершил процедуру подключения, появится окно, приведенное ниже. При наличии доступа к [Центру поддержки корпоративных лицензий (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) можно завершить этот процесс и получить доступ к управлению подписками. Для этого потребуется [номер клиента (PCN)](find-pcn.md) организации, который можно найти в VLSC. 
 
 Если основной контакт не завершил процесс подключения, в поле необходимо ввести [PCN](find-pcn.md) и выбрать "Отправить приглашения". 
-
-![Отправка письма с приглашением](_img/post-migration-onboarding/send-invitation.png)
+> [!div class="mx-imgBorder"]
+> ![Отправка письма с приглашением](_img/post-migration-onboarding/send-invitation.png)
 
 После нажатия кнопки отправки приглашения будет получено сообщение электронной почты с уникальной ссылкой, которая позволит завершить процесс подключения. Щелкните ссылку в сообщении электронной почты, а затем войдите в систему, используя собственный адрес электронной почты, и повторно введите PCN. Уникальная ссылка в сообщении электронной почты — это то, что позволяет получить доступ к Порталу администрирования подписок Visual Studio. Затем можно получить доступ к подпискам и управлять ими. 
-
-![Успешная доставка электронной почты](_img/post-migration-onboarding/email-success.png)
+> [!div class="mx-imgBorder"]
+> ![Успешная доставка электронной почты](_img/post-migration-onboarding/email-success.png)
 
 
 ## <a name="primary-contact-did-not-provide-you-administrator-access"></a>Основной контакт не предоставил доступ администратора
 
 Если основной контакт завершил процесс подключения, а ваши учетные данные уже были в VLSC, но основной контакт не предоставил вам доступа, то при входе в [Портал администрирования подписок Visual Studio](https://manage.visualstudio.com/) появится следующее уведомление.  Чтобы стать администратором, необходимо обратиться к одному из суперадминистраторов организации, перечисленных в окне.
-
-![Список администраторов](_img/post-migration-onboarding/admin-list.png)
+> [!div class="mx-imgBorder"]
+> ![Список администраторов](_img/post-migration-onboarding/admin-list.png)
 
 ## <a name="your-credentials-were-not-listed-in-vlsc-prior-to-migration"></a>Учетные данные не были указаны в VLSC до момента миграции
 
 Если основной контакт завершил процесс подключения, но не добавил вас в качестве пользователя, а ваши учетные данные не были ранее перечислены в VLSC, то при попытке доступа к [Порталу администрирования подписок Visual Studio](https://manage.visualstudio.com/) появится следующее уведомление. Чтобы получить доступ к порталу, необходимо связаться с [Основным контактом](find-primary-contact.md). 
-
-![Не удается найти пользователя](_img/post-migration-onboarding/cant-find-you.png)
+> [!div class="mx-imgBorder"]
+> ![Не удается найти пользователя](_img/post-migration-onboarding/cant-find-you.png)
