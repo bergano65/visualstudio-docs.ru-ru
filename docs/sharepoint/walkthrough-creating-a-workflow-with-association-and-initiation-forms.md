@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119889"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635685"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска
   В этом пошаговом руководстве показано, как создать базовый последовательный рабочий процесс, в котором используются формы ассоциации и инициации. Это формы ASPX, которые позволят параметров добавляться в рабочий процесс, когда он сначала связан администратором SharePoint (форма сопоставления) и когда рабочий процесс запускается пользователем (форма запуска).  
@@ -62,7 +62,7 @@ ms.locfileid: "37119889"
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.  
   
 -   Visual Studio.  
   
