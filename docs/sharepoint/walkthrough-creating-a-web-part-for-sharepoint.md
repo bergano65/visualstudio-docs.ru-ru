@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119484"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635412"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Пошаговое руководство: Создание веб-части для SharePoint
 
@@ -49,7 +49,7 @@ ms.locfileid: "37119484"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- Поддерживаемые редакции Microsoft Windows и SharePoint. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Поддерживаемые редакции Microsoft Windows и SharePoint.
 
 - Visual Studio 2017 или выпуск из Visual Studio Application Lifecycle Management (ALM).
 
