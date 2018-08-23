@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8a557ae7f08afceee49e9e797f18562b548a67c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119476"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635545"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство: Создание внешнего списка в SharePoint с помощью бизнес-данных
 
@@ -49,7 +49,7 @@ ms.locfileid: "37119476"
 
 Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
-- Поддерживаемые версии Windows и SharePoint. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Поддерживаемые версии Windows и SharePoint.
 
 - Доступ к базе данных AdventureWorks. Дополнительные сведения об установке базы данных AdventureWorks см. в разделе [образцов баз данных SQL Server](http://go.microsoft.com/fwlink/?LinkID=117483).
 
