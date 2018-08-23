@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74d1181936a5efa3b286999ea832e78dffdcccf3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119505"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635659"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint
   Следующие процедуры демонстрируют способы создания пользовательских столбцов сайта SharePoint, или *поля*, а также тип содержимого, который используют столбцы сайтов. Ниже также показан способ создания списка, использующего новый тип содержимого.  
@@ -51,7 +51,7 @@ ms.locfileid: "37119505"
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Поддерживаемые версии Windows и SharePoint. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые версии Windows и SharePoint.
   
 -   Visual Studio.  
   
