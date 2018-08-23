@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23512005bed66550b4a1de0f0a2de830d9fb823b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498997"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635136"
 ---
 # <a name="ide-constants"></a>Константы среды IDE
 
@@ -54,30 +54,30 @@ ms.locfileid: "39498997"
 |Значение|Описание:|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Константа возвращена интерфейсами для асинхронного поведения при рассматриваемый объект в уже занят|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для «несовместимые данные документа».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Пакет не загружен».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, указывающий, что «Проекта уже существует».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «ошибка конфигурации проекта».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, означающая «Проект не загружен.»|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, означающая «Решение уже открыто».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и, означающая «Решение не открыто».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ошибка HRESULT, относящиеся к Visual Studio для «несовместимые данные документа».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Ошибка HRESULT для Visual Studio и что указывает «Пакет не загружен».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Ошибка HRESULT для Visual Studio и что указывает, что «Проекта уже существует».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Ошибка HRESULT для Visual Studio и указывает «ошибка конфигурации проекта».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Ошибка HRESULT для Visual Studio и, означающая «Проект не загружен».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Указывает ошибку HRESULT, относящиеся к Visual Studio, а «Решение уже открыть».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Ошибка HRESULT для Visual Studio и указывает «Решение не открыть».|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Возвращается интерфейсами построения, которые имеют параметры для указания массива из <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> интерфейс, но реализацию можно применять только метод на все выходы.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Метод возвращает это значение, если документ имеет формат, который не может быть открыт в редакторе.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Значение HRESULT, указывающее, что пользователь нажал кнопку возврата в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] мастера.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Значение HRESULT, указывающее, что пользователь нажал кнопку возврата в мастере Visual Studio.|
 
 ## <a name="visual-studio-constants"></a>Константы Visual Studio
 
 |Значение|Описание:|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ошибка HRESULT, который относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и указывает «Проект перенаправлен».|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для панели элементов «маркером».|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает на начало модальности.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает на окончание модальности.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, указывающий, что показатели командной строки были изменены.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Константа, которая относится к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , указывающий, что файл cookie не задан.|
-|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, представляющий отсутствие элемента проекта. Это значение используется в том случае, если нет текущего выделенного фрагмента.|
-|[VSITEMID. Корневой](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет корень иерархии проекта и используется для указания на всю иерархию, в отличие от одного элемента.|
-|[VSITEMID. Выбор](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Объект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] идентификатор элемента, который представляет текущий выбранный элемент или элементы, которые могут включать корень иерархии.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ошибка HRESULT для Visual Studio и, означающая «Проект перенаправлен».|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Константа, которая относится к Visual Studio для панели элементов «маркером».|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Константа, которая относится к Visual Studio для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает на начало модальности.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Константа, которая относится к Visual Studio для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, который указывает на окончание модальности.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Константа, которая относится к Visual Studio для трансляции сообщения с уведомлением через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> метод, указывающий, что показатели командной строки были изменены.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Константа, которая относится к Visual Studio, указывающая, что файл cookie не задан.|
+|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Идентификатор элемента Visual Studio, представляющий отсутствие элемента проекта. Это значение используется в том случае, если нет текущего выделенного фрагмента.|
+|[VSITEMID. Корневой](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Идентификатор элемента Visual Studio, который представляет корень иерархии проекта и используется для указания на всю иерархию, в отличие от одного элемента.|
+|[VSITEMID. Выбор](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Идентификатор элемента Visual Studio, представляющий текущий выбранный элемент или элементы, которые могут включать корень иерархии.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  Описывает, какие компоненты интегрированной среды разработки только что был выбран, в <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> вызове, к примеру.

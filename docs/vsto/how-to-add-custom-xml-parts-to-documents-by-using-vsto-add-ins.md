@@ -1,5 +1,5 @@
 ---
-title: 'Как: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO'
+title: 'Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 803a0c146bbf17ee79f79fe5de95fdf2ee2151da
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42636243"
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Как: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Практическое: Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
   XML-данные можно сохранить в следующих типах документов, создав пользовательскую XML-часть в надстройке VSTO:  
   
 -   книга Microsoft Office Excel;  
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/VisualBasic/trin_addcustomxmlpartexcelapplevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartExcelAppLevel/ThisAddIn.cs#1)]  
   
-2.  Добавьте метод `AddCustomXmlPartToWorkbook` в класс `ThisAddIn` в проекте надстройки VSTO для Excel.  
+2.  Добавить `AddCustomXmlPartToWorkbook` метод `ThisAddIn` класса в проекте надстройки VSTO для Excel.  
   
 3.  Вызовите метод из другого кода в проекте. Например, для создания пользовательской XML-части, когда пользователь открывает книгу, вызовите метод из обработчика события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> .  
   
@@ -63,28 +64,28 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.cs#1)]  
   
-2.  Добавьте метод `AddCustomXmlPartToDocument` в класс `ThisAddIn` в проекте надстройки VSTO для Word.  
+2.  Добавить `AddCustomXmlPartToDocument` метод `ThisAddIn` класса в проекте надстройки VSTO для Word.  
   
 3.  Вызовите метод из другого кода в проекте. Например, для создания пользовательской XML-части, когда пользователь открывает документ, вызовите метод из обработчика события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .  
   
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Добавление пользовательской XML-части в презентацию PowerPoint  
   
-1.  Добавьте новый объект <xref:Microsoft.Office.Core.CustomXMLPart> в коллекцию <xref:Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts%2A> в презентации. Объект <xref:Microsoft.Office.Core.CustomXMLPart> содержит XML-строку, которую требуется сохранить в презентации.  
+1.  Добавьте новый <xref:Microsoft.Office.Core.CustomXMLPart> объект [Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) коллекции в презентации. Объект <xref:Microsoft.Office.Core.CustomXMLPart> содержит XML-строку, которую требуется сохранить в презентации.  
   
      Следующий пример кода добавляет пользовательскую XML-часть в указанную презентацию.  
   
      [!code-csharp[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.vb#1)]  
   
-2.  Добавьте метод `AddCustomXmlPartToPresentation` в класс `ThisAddIn` в проекте надстройки VSTO для PowerPoint.  
+2.  Добавить `AddCustomXmlPartToPresentation` метод `ThisAddIn` класса в проекте надстройки VSTO для PowerPoint.  
   
-3.  Вызовите метод из другого кода в проекте. Например, для создания пользовательской XML-части, когда пользователь открывает презентацию, вызовите метод из обработчика события <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen> .  
+3.  Вызовите метод из другого кода в проекте. Например, для создания пользовательской XML-части, когда пользователь открывает презентацию, вызовите метод из обработчика событий для [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) событий.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
  Для простоты в этом примере используется XML-строка, которая определена как локальная переменная в методе. Обычно следует получать XML из внешнего источника, например файла или базы данных.  
   
 ## <a name="see-also"></a>См. также  
- [Общие сведения о пользовательских частей XML](../vsto/custom-xml-parts-overview.md)   
- [Как: Добавление пользовательских XML-частей для настроек на уровне документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+ [Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)   
+ [Практическое: Добавление пользовательских частей XML в настройках уровня документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

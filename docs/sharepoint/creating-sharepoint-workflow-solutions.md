@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327324"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634726"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] предоставляет средства для создания настраиваемых рабочих процессов, которые управляют жизненным циклом документов и элементов списка в SharePoint веб-сайта. Предоставляется конструктор, набор элементов управления действием и ссылки на необходимые сборки. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] также включает в себя **мастер настройки SharePoint**, чтобы упростить создание и настройка рабочих процессов.
 
- Список необходимых компонентов для создания проектов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Дополнительные сведения о SharePoint, см. в разделе [Microsoft продуктов и технологий SharePoint](http://go.microsoft.com/fwlink/?LinkId=178470).
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] предоставляет средства для создания настраиваемых рабочих процессов, которые управляют жизненным циклом документов и элементов списка в SharePoint веб-сайта. Предоставляется конструктор, набор элементов управления действием и ссылки на необходимые сборки. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] также включает в себя **мастер настройки SharePoint**, чтобы упростить создание и настройка рабочих процессов.
+
+Дополнительные сведения о SharePoint, см. в разделе [Microsoft продуктов и технологий SharePoint](http://go.microsoft.com/fwlink/?LinkId=178470).
 
 ## <a name="workflows-in-sharepoint"></a>Рабочие процессы в SharePoint
  При добавлении рабочего процесса в библиотеку SharePoint или список, можно принудительно применить бизнес-процесс для всех элементов в библиотеке или списке. Рабочий процесс описывает действия, которые система или пользователь должен выполнять для каждого элемента, например, отправку элемента можно редактировать и затем проверить. Эти действия, известные как *действия*, являются стандартными блоками рабочего процесса.
@@ -147,5 +148,5 @@ ms.locfileid: "36327324"
 ## <a name="see-also"></a>См. также
 
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)

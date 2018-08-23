@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119864"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42624452"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace
 
@@ -52,7 +52,7 @@ ms.locfileid: "37119864"
 
 Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
-- Поддерживаемые версии Windows и SharePoint. См. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Поддерживаемые версии Windows и SharePoint.
 
 - Visual Studio Enterprise.
 
@@ -298,7 +298,7 @@ ms.locfileid: "37119864"
 
 3. В окне PowerShell выполните [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) команду, чтобы создать ITRACE-файл, остановки отслеживания и перезапуска решения SharePoint.
 
-     **STOP-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **STOP-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Отладка и исправление решения SharePoint
 

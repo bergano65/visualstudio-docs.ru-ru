@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119449"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635236"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора
 
@@ -46,7 +46,7 @@ ms.locfileid: "37119449"
 
 Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
-- Поддерживаемые версии Windows и SharePoint. См. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Поддерживаемые версии Windows и SharePoint.
 
 ## <a name="create-a-web-part-project"></a>Создайте проект веб-части
 

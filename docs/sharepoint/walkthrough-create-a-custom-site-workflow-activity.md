@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119492"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627361"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Пошаговое руководство: Создание пользовательского рабочего процесса действия сайта
   В этом пошаговом руководстве демонстрируется создание настраиваемого действия для рабочих процессов на уровне сайта с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Для всего сайта, а не только список на сайте применяются рабочие процессы уровня веб-сайта). Пользовательское действие создает резервную копию списка извещений и затем копирует содержимое списка извещений в него.  
@@ -48,7 +48,7 @@ ms.locfileid: "37119492"
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
   
 -   Visual Studio.  
   

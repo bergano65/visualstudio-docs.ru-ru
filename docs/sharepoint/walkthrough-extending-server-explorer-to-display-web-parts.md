@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0bbea76c3c63cf562203f9a622acb2a54804bde
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117840"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634742"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей
   В Visual Studio, можно использовать **подключения SharePoint** узел **обозревателя серверов** для просмотра компонентов на сайтах SharePoint. Тем не менее **обозревателя серверов** не отображать некоторые компоненты по умолчанию. В этом пошаговом руководстве, вы расширите **обозревателя серверов** , чтобы он отображал галерею веб-частей на каждый из которых подключен сайта SharePoint.  
@@ -48,7 +48,7 @@ ms.locfileid: "37117840"
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства.  
   
--   Поддерживаемые версии Windows, SharePoint и Visual Studio. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые версии Windows, SharePoint и Visual Studio.  
   
 -   Visual Studio SDK. В этом пошаговом руководстве использует **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания элемента проекта. Дополнительные сведения см. в разделе [расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
