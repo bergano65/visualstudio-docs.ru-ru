@@ -1,5 +1,5 @@
 ---
-title: 'CA3147: Обработчики команд с ValidateAntiForgeryToken пометить'
+title: 'CA3147: присвоение метки ValidateAntiForgeryToken обработчикам команд'
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4369cfd310be9322d17b8bdbfe79880f2aa579
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008718"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623751"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Обработчики команд с ValidateAntiForgeryToken пометить
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: присвоение метки ValidateAntiForgeryToken обработчикам команд
 
 |||
 |-|-|
@@ -29,7 +29,7 @@ ms.locfileid: "40008718"
 
 ## <a name="cause"></a>Причина
 
-Метод действия контроллера ASP.NET MVC не отмечены <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute?displayProperty=fullName>, или указания HTTP-команда, такого как атрибут <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute?displayProperty=fullName> или <xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute?displayProperty=fullName>.
+Метод действия контроллера ASP.NET MVC не отмечены [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)), или указания HTTP-команда, такого как атрибут [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118)) или [ AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -37,17 +37,17 @@ ms.locfileid: "40008718"
 
 Это правило проверяет этот контроллер ASP.NET MVC методам действий либо:
 
-- У <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> и указать разрешенные команды HTTP, не включая HTTP GET.
+- У [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29) и указать разрешенные команды HTTP, не включая HTTP GET.
 
 - Укажите в качестве допустимого глагола HTTP GET.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-- Для действий контроллеров ASP.NET MVC, которые обрабатывают запросы HTTP GET и не потенциально опасными побочными эффектами, добавьте <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute> методу.
+- Для действий контроллеров ASP.NET MVC, которые обрабатывают запросы HTTP GET и не потенциально опасными побочными эффектами, добавить [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29) методу.
 
    При наличии ASP.NET MVC запрашивает действие контроллера, обрабатывающий запрос HTTP GET и имеет потенциально опасные побочные эффекты, такие как изменение конфиденциальных данных, приложение становится уязвимым для атак с подделкой межсайтовых.  Вам потребуется изменить структуру приложения, чтобы только запросы HTTP POST, PUT или DELETE выполнять важные операции.
 
-- Для действий контроллеров ASP.NET MVC, которые обрабатывают HTTP POST, PUT или DELETE запрашивает, добавить <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> и атрибуты, указав допустимых HTTP-команд (<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPutAttribute>, или <xref:Microsoft.AspNetCore.Mvc.HttpDeleteAttribute>). Кроме того, необходимо вызвать <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.AntiForgeryToken%2A?displayProperty=nameWithType> из представления MVC или веб-страницы Razor. Например, см. в разделе [изучение методов edit и изменять представление](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- Для действий контроллеров ASP.NET MVC, которые обрабатывают HTTP POST, PUT или DELETE запрашивает, добавить [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)) и атрибуты, указав допустимых HTTP-команд ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29), или [HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29)). Кроме того, необходимо вызвать [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) метода из представления MVC или веб-страницы Razor. Например, см. в разделе [изучение методов edit и изменять представление](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 

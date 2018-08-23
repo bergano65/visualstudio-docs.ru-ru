@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119481"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626492"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint
   В этом пошаговом руководстве показано, как создать шаблон базовый последовательный рабочий процесс. Рабочий процесс выполняет проверку свойства библиотеку общих документов, чтобы определить, выполнялось ли рецензирование документа. Если в документе были проверены, рабочий процесс завершается.  
@@ -47,7 +47,7 @@ ms.locfileid: "37119481"
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Поддерживаемые редакции Microsoft Windows и SharePoint. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые редакции Microsoft Windows и SharePoint.  
   
 -   Visual Studio.  
   
@@ -295,5 +295,5 @@ ms.locfileid: "37119481"
 ## <a name="see-also"></a>См. также
  [Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Проектов и шаблоны элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

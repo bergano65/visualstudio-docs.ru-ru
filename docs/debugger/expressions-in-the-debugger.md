@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caaa13d67c30e07cd95c7a959e17117199188c0c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056652"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626036"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Выражения в отладчике Visual Studio
 В состав отладчика Visual Studio входят вычислители выражений, которые работают при вводе выражения в диалоговое окно **Быстрая проверка** , окно **Контрольные значения** или окно **Интерпретация** . Вычислители выражений также работают в окне **точки останова** и многих других местах в отладчике.
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Неподдерживаемые выражения Visual Basic  
   
 ### <a name="dynamic-objects"></a>Динамические объекты  
- В выражениях отладчика можно использовать статически типизированные переменные как динамические. Когда объекты, реализующие [интерфейс IDynamicMetaObjectProvider](/dotnet/api/system.dynamic.idynamicmetaobjectprovider) вычисляются в окне контрольных значений, добавляется узел динамического представления. Узел динамического представления отображает члены объектов, но не позволяет изменять значения этих членов.  
+ В выражениях отладчика можно использовать статически типизированные переменные как динамические. Когда объекты, реализующие <xref:System.Dynamic.IDynamicMetaObjectProvider> вычисляются в окне контрольных значений, добавляется узел динамического представления. Узел динамического представления отображает члены объектов, но не позволяет изменять значения этих членов.  
   
  Следующие возможности динамических объектов не поддерживаются:  
   

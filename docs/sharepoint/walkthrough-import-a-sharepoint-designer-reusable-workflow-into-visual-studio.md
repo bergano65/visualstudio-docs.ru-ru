@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269beef06f7ca43556c2c00493ac8d7cb1c4ad5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e19c2ab969de8f3e1e24cf789ae3979d2c15809b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119540"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626506"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio
   В этом пошаговом руководстве показано, как импортировать повторно используемый рабочий процесс, созданный в SharePoint Designer 2010 в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта рабочего процесса SharePoint.  
@@ -53,7 +53,7 @@ ms.locfileid: "37119540"
 ## <a name="prerequisites"></a>Предварительные требования  
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.  
   
 -   Visual Studio.  
   

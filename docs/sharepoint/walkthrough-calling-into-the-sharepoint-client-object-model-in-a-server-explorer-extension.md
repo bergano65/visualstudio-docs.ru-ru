@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc61bf41beb2d4bbef62a8a168fd6f7bcacd740a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119524"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635272"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов
   В этом пошаговом руководстве показано, как вызывать клиентскую объектную модель SharePoint из расширения для **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -44,7 +44,7 @@ ms.locfileid: "37119524"
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства.  
   
--   Поддерживаемые версии Windows, SharePoint и Visual Studio. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые версии Windows, SharePoint и Visual Studio.
   
 -   Visual Studio SDK. В этом пошаговом руководстве использует **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания расширения. Дополнительные сведения см. в разделе [расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
@@ -287,5 +287,4 @@ ms.locfileid: "37119524"
  [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
- [Создание значка или другого изображения &#40;редактор изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  
+ [Создание значка или другого изображения &#40;редактор изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468732"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623680"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Учебник: Сведения об отладке, с помощью Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "39468732"
 |---------|---------|
 |  ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео")  |    [Ознакомьтесь с видео](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) по отладке, показаны аналогичные действия. |
 
-Несмотря на то что демонстрационного приложения C# и C++, средства применимы к Visual Basic, JavaScript и других языков, поддерживаемых Visual Studio (за исключением оговоренных случаев). Снимки экрана написаны на C#.
+Несмотря на то что демонстрационного приложения C# и C++, средства применимы к Visual Basic, JavaScript и других языков, поддерживаемых Visual Studio (за исключением оговоренных случаев). Снимки экрана написаны на C#. Для переключения между C# и пример кода C++, используйте фильтр язык в правом верхнем углу страницы.
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -324,7 +324,7 @@ ms.locfileid: "39468732"
 
 ## <a name="navigate-code-using-run-to-click"></a>Навигация по коду с помощью выполнение до щелчка
 
-5. В редакторе кода, прокрутите вниз и наведите указатель мыши `Console.WriteLine` метод (`std::cout` в C++) в `Triangle` класс до зеленую **выполнение до щелкнутого** кнопку ![выполнение до щелкнутого] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") отображается слева.
+5. В редакторе кода, прокрутите вниз и наведите указатель мыши `Console.WriteLine` метод (`std::cout` в C++) в `Triangle` класс до зеленую **выполнение до щелкнутого** кнопку ![выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click.png " RunToClick") отображается слева.
 
      ![Использовать выполнение до щелкнутого функция](../debugger/media/get-started-run-to-click.png "выполнение до щелкнутого")
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7d0604e0e80fcb0fa14c65bd57669f60e68fd11
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118269"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626150"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство: Расширение типа элемента проекта SharePoint
   Можно использовать **Business Data Connectivity Model** элемент проекта для создания модели для службы бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта, данные в модели не отображается для пользователей. Также необходимо создать внешний список в SharePoint, чтобы пользователи могли просматривать данные.  
@@ -42,7 +42,7 @@ ms.locfileid: "37118269"
 ## <a name="prerequisites"></a>Предварительные требования  
  Необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства.  
   
--   Поддерживаемые выпуски Visual Studio, SharePoint и Microsoft Windows. Дополнительные сведения см. в разделе [требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые выпуски Visual Studio, SharePoint и Microsoft Windows.  
   
 -   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. В этом пошаговом руководстве использует **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания элемента проекта. Дополнительные сведения см. в разделе [расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
