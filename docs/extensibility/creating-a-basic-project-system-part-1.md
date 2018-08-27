@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232261"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902403"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Создание системы базового проекта, часть 1
 В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и других ресурсов. Проекты отображаются как дочерние элементы решений в **обозревателе решений**. Проекты позволяют упорядочивать, создание, отладку и развертывать исходный код и создавать ссылки на Web services, баз данных и другие ресурсы.  
@@ -61,7 +61,7 @@ ms.locfileid: "39232261"
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Необходимо также загрузить исходный код для [Managed Package Framework для проектов](http://mpfproj12.codeplex.com/). Извлеките файл в расположении, доступном для решения, которое вы собираетесь создать.  
+ Необходимо также загрузить исходный код для [Managed Package Framework для проектов](https://github.com/tunnelvisionlabs/MPFProj10). Извлеките файл в расположении, доступном для решения, которое вы собираетесь создать.  
   
 ## <a name="create-a-basic-project-type"></a>Создание базового проекта типа  
  Создайте проект VSIX C# с именем **SimpleProject**. (**Файл** > **новый** > **проекта** и затем **Visual C#**  >   **Расширяемость** > **проект VSIX**). Добавление шаблона элемента проекта пакета Visual Studio (на **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**, затем перейдите к разделу **Расширяемости** > **пакет Visual Studio**). Назовите файл *SimpleProjectPackage*.  

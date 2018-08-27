@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639130"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902823"
 ---
 # <a name="extend-projects"></a>Расширения проектов
 Проекты и решения, способы, с помощью Visual Studio файлы кода и ресурсов организованы по единицы компиляции и развертывания. Можно найти дополнительные сведения о проектах в [проектов (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Можно создать собственные типы проектов с помощью Visual Studio SDK и Managed Package Framework для проектов, которые можно загрузить на [Managed Package Framework для проектов](http://mpfproj12.codeplex.com/). Для понимания реализации пользовательских проектов, см. в разделе [Создание нового проекта: взгляд изнутри, часть 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: взгляд изнутри, часть 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Можно создать собственные типы проектов с помощью Visual Studio SDK и Managed Package Framework для проектов, которые можно загрузить на [Managed Package Framework для проектов](https://github.com/tunnelvisionlabs/MPFProj10). Для понимания реализации пользовательских проектов, см. в разделе [Создание нового проекта: взгляд изнутри, часть 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: взгляд изнутри, часть 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  В этом разделе описываются способы создания пользовательских проектов и как управлять различными типами решение Visual Studio.  
   

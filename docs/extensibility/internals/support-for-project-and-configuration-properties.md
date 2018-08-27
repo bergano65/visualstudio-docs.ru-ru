@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f137f5044c24ec9a187868c273b1dd752cd86a5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4228015287be7c2dd5c34fea29f16f2a581b8a62
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513108"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902627"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Поддержка свойств конфигурации и проекта
 **Свойства** окно в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) может отображать свойства проекта и конфигурации. Страницы свойств можно предоставить для типа проекта, таким образом, пользователь может задать свойства для вашего приложения.  
   
  Выбрав узел проекта в **обозревателе решений** и выбрав **свойства** на **проекта** меню, можно открыть диалоговое окно, которое включает в себя проект и конфигурации свойства. В [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]и типы, производные от этих языков, это диалоговое окно с вкладками в виде страницы проекта [Общие, среда, диалоговое окно параметров](../../ide/reference/general-environment-options-dialog-box.md). Дополнительные сведения см. в разделе [не в сборке: пошаговое руководство: предоставление доступа к проекта и свойства конфигурации (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
- Managed Package Framework для проектов (MPFProj) предоставляет вспомогательные классы для создания и управления новую систему проектов. Источник кода и компиляция инструкции доступны в [MPF для проектов — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+ Managed Package Framework для проектов (MPFProj) предоставляет вспомогательные классы для создания и управления новую систему проектов. Источник кода и компиляция инструкции доступны в [MPF для проектов — Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Длительное хранение и конфигурация свойств проекта  
  Свойства проектов и конфигурации сохраняются в файле проекта, который имеет расширение имени файла, связанный с типом проекта, например, csproj, VBPROJ-файл и .myproj. Проекты на таких языках, обычно используется файл шаблона для создания файла проекта. Тем не менее фактически несколькими способами связать типы проектов и шаблоны. Дополнительные сведения см. в разделе [Описание каталога шаблона (. Файлы VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
@@ -84,7 +84,7 @@ ms.locfileid: "39513108"
  <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, И <xref:System.ComponentModel.DescriptionAttribute> атрибуты определяют макета, добавления меток и описание свойств проекта и конфигурации на странице свойств. Эти атрибуты определения категории, отображаемое имя и описание параметра, соответственно.  
   
 > [!NOTE]
->  Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [MPF для проектов — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+>  Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [MPF для проектов — Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).  
   
  Рассмотрим следующий фрагмент кода:  
   
