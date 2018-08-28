@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280881"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054576"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы с Visual Studio Tools для Kubernetes
 
@@ -24,7 +24,7 @@ ms.locfileid: "36280881"
 
 Чтобы использовать эти новые функции, вам потребуется:
 
-- Последнюю предварительную версию [Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) с рабочей нагрузкой разработки Azure.
+- Последнюю версию [Visual Studio 2017](https://visualstudio.microsoft.com/download) с *ASP.NET и веб-разработка* рабочей нагрузки.
 
 - [Kubernetes средства для Visual Studio](https://aka.ms/get-vsk8stools), которые доступны для загрузки.
 
