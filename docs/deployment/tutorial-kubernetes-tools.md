@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054576"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138947"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы с Visual Studio Tools для Kubernetes
 
-В Visual Studio Tools Kubernetes помощи в упрощении разработки контейнерных приложений, предназначенных для Kubernetes. Visual Studio может автоматически создавать код конфигурации как файлы, необходимые для поддержки развертывания Kubernetes, такие как файлы Dockerfile и Helm диаграммы. Кроме того можно опубликовать непосредственно в кластер Azure Kubernetes Service (AKS) из Visual Studio.
+В Visual Studio Tools Kubernetes помощи в упрощении разработки контейнерных приложений, предназначенных для Kubernetes. Visual Studio может автоматически создавать код конфигурации как файлы, необходимые для поддержки развертывания Kubernetes, такие как файлы Dockerfile и Helm диаграммы. Отладку кода в службе Azure Kubernetes (AKS) кластеру в оперативном режиме с помощью пространств разработки Azure или публиковать непосредственно в кластер AKS в Visual Studio.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -28,7 +28,7 @@ ms.locfileid: "43054576"
 
 - [Kubernetes средства для Visual Studio](https://aka.ms/get-vsk8stools), которые доступны для загрузки.
 
-- [Docker для Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) на рабочей станции разработки (то есть, когда вы запускаете Visual Studio)
+- [Docker для Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) на рабочей станции разработки (то есть когда вы запускаете Visual Studio), если вы хотите создать образы Docker, отладка контейнеров Docker, работающих локально, или опубликовать в AKS.
 
 - Если вы хотите опубликовать AKS из Visual Studio:
 
@@ -74,7 +74,7 @@ ms.locfileid: "43054576"
 
 - чарт Helm и *диаграммы* папки. Эти файлы yaml составляющие диаграмма Helm для приложения, который можно использовать для развертывания на Kubernetes. Дополнительные сведения о Helm, см. в разделе [ https://www.helm.sh ](https://www.helm.sh).
 
-- *azds.yaml*. Содержит параметры для пространств разработки Azure, службу, которая обеспечивает быстрое, итеративные возможности отладки в службе Azure Kubernetes. Этот файл в настоящее время не используется, но зарезервировано для использования в будущем пробелами разработки Azure.
+- *azds.yaml*. Он содержит параметры для пространств разработки Azure, который обеспечивает быстрое, итеративные возможности отладки в службе Azure Kubernetes. Дополнительные сведения см. на [документации по Azure Dev пробелы](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Публикация в службу Azure Kubernetes (AKS)
 
