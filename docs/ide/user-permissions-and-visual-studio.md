@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844395"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627319"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 
@@ -34,7 +34,6 @@ ms.locfileid: "34844395"
 |----------|----------|--------------------------|
 |Установка|Установка Visual Studio.|[Установка Visual Studio](../install/install-visual-studio.md)|
 ||Установка, обновление или удаление содержимого локальной справки.|[Установка содержимого локальной справки и управление им](../ide/install-and-manage-local-content.md)|
-|Типы приложений|Разработка решений для SharePoint.|[Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |Панель элементов|Добавление классических элементов управления COM в **панель элементов**.|[Панель элементов](../ide/reference/toolbox.md)|
 |Сборка|Использование выполняющихся после сборки событий, которые регистрируют компонент.|[Сведения о настраиваемых этапах сборки и событиях сборки](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Включение этапа регистрации при сборке проектов С++.||
