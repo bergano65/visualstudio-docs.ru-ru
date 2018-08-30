@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978441"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138426"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -128,12 +128,14 @@ ms.locfileid: "38978441"
 
 ## <a name="get-support"></a>Техническая поддержка
 
-Ниже перечислены дополнительные варианты:
+Также доступен [**чат поддержки в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
 
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+Ниже приведены несколько дополнительных вариантов:
+
+* Вы можете сообщить о проблемах с продуктом, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в IDE Visual Studio.
+* Оставить предложение по продукту можно на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Описание проблем с продуктом и их решение можно найти в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя свою учетную запись [GitHub](https://github.com/) в [обсуждении Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).
 
 ## <a name="see-also"></a>См. также
 
