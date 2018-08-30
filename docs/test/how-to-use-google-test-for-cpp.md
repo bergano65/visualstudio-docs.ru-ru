@@ -9,15 +9,15 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 11b02b398adbcdf0a64d18c76ec11fe2ba41f1af
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a047b7d46aa2fe325baa4fee7459bb822e3b1bea
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382641"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138637"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Использование Google Test для C++ в Visual Studio
-В **Visual Studio 2017 версии 15.5** и более поздних Google Test интегрирован в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**. Чтобы проверить, установлен ли этот компонент на компьютере, откройте Visual Studio Installer и найдите Google Test в списке компонентов рабочей нагрузки.
+В **Visual Studio 2017 версии 15.5** и более поздних решение Google Test интегрировано в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**. Чтобы проверить, установлен ли этот компонент на компьютере, откройте Visual Studio Installer и найдите Google Test в списке компонентов рабочей нагрузки.
 
 ![Установка Google Test](media/cpp-google-component.png)
 

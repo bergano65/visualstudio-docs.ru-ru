@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/02/2018
+ms.date: 08/20/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb4b85bff3b47bba9de15a16c8cf104482eb643
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ef62980f3e6eca10732502fa97c453628e4e33b1
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499036"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138471"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio 2017
 
@@ -25,6 +25,10 @@ ms.locfileid: "39499036"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.0 (предварительная версия 1) | Предварительный просмотр | 20 августа 2018 г. | 15.9.28016.0 |
+| 15.8.1 | выпуска | 17 августа 2018 г. | 15.8.28010.2003 |
+| 15.8.0 | выпуска | 14 августа 2018 г. | 15.8.28010.0 |
+| 15.0.17 | выпуска | 14 августа 2018 г. | 15.0.26228.49 |
 | 15.7.6 | выпуска | 2 августа 2018 г. | 15.7.27703.2047 |
 | 15.0.16 | выпуска | 2 августа 2018 г. | 15.0.26228.48 |
 | 15.8.0 (предварительная версия 5) | Предварительный просмотр | 26 июля 2018 г. | 15.8.27924.0 |
@@ -140,16 +144,7 @@ ms.locfileid: "39499036"
 | 15.1 (предварительная версия 1) | Предварительный просмотр | 7 марта 2017 г. | 15.0.26304.0 |
 | 15.0.0 | выпуска | 7 марта 2017 г. | 15.0.26228.4 |
 
-## <a name="get-support"></a>Техническая поддержка
-
-Иногда возникают проблемы. При сбое установки Visual Studio см. инструкции по [устранению неполадок и исправлению ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md). Если описанные выше действия не устраняют проблему, вы можете обратиться к нам за помощью в чате в реальном времени (только на английском языке). Дополнительные сведения см. на [странице поддержки Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Ниже приведены несколько дополнительных вариантов:
-
-* Вы можете сообщить о проблемах с продуктом в корпорацию Майкрософт, используя средство [Сообщить о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.
-* Вы можете оставить предложение о продукте на форуме [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Вы можете просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
-* Вы также можете связаться с нами и другими разработчиками Visual Studio, используя [средство для обсуждения Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio). (Требуется учетная запись [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 
