@@ -4,12 +4,12 @@ hide_bc: true
 title: Документация по Visual Studio | Документация Майкрософт
 description: Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.topic: hub-page
-ms.openlocfilehash: 647220b0b2caa2efa99fb86cbca91cd78c59ab2d
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 6a287d934fd91fc7c042f5480bbbbecb82e6238b
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42756240"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225114"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -108,33 +108,43 @@ ms.locfileid: "42756240"
                                             <div class="cardText">
                                                 <h3>Начните работу с помощью руководства</h3>
                                                 <h4>Выбор языка программирования</h4>
-                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
-                                                <ul class="noBullet">                                                    <li>
-                                                        <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
-C++</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
-C#</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
-Visual Basic</a>
-                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++ </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
 Python</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
 Node.js</a>
-                                                    </li>
-                                                </ul></td></tr></table>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -147,34 +157,48 @@ Node.js</a>
                                             <div class="cardText">
                                                 <h3>Попробуйте 5-минутное краткое руководство</h3>
                                                 <h4>Создайте приложение "Hello, World" на языке по своему усмотрению.</h4>
-                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
-C++</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
-C#</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
-Visual Basic</a>
-                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-python">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
-Python</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
-                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
-Node.js</a>
-                                                    </li>
-                                                </ul></td></tr></table>
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-fsharp">
+                                                                        <img src="https://docs.microsoft.com/dotnet/images/hub/fsharp.svg" alt="F# logo">
+F# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic </a>
+                                                            </ul>
+                                                        </td>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++ </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
