@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d398d22944ae4c0e5be725169b9d7ceaadb0667d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945836"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225130"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для машинного кода"
 
@@ -148,6 +148,9 @@ ms.locfileid: "37945836"
 |[C26116](../code-quality/c26116.md)|Не удается получить или удержать блокировку|
 |[C26117](../code-quality/c26117.md)|Освобождение неудерживаемой блокировки|
 |[C26140](../code-quality/c26140.md)|Ошибка аннотации SAL параллелизма|
+|[C26441](../code-quality/c26441.md)|NO_UNNAMED_GUARDS|
+|[C26444](../code-quality/c26444.md)|NO_UNNAMED_RAII_OBJECTS|
+|[C26498](../code-quality/c26498.md)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
 |[C28020](../code-quality/c28020.md)|Выражение не имеет значение true, при этом вызове|
 |[C28021](../code-quality/c28021.md)|Аннотируемый параметр должен быть указателем|
 |[C28022](../code-quality/c28022.md)|Классами функции по этой функции не совпадают с классами функции в typedef, используемом для ее определения.|
