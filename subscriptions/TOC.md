@@ -49,6 +49,7 @@
 ##### [Вопросы и ответы по переносу администрирования VLSC](vlsc-admin-faq.md)
 ##### Подключение организации
 ###### [Подключение организации после перехода на новый портал администрирования](post-migration-onboarding.md)
+###### [Переход на Open и Open License](open-migration.md)
 ###### [Сообщения электронной почты по подключению](volume-license-onboarding-email.md)
 ###### [Поиск номера PCN](find-pcn.md)
 ###### [Поиск основного контактного лица](find-primary-contact.md)
