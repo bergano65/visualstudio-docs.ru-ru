@@ -12,21 +12,21 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "34335711"
 ---
-# Справка F1
+# <a name="f1-help"></a>Справка F1
 
 Похоже, нам не удалось найти то, что вы искали. Приносим свои извинения. [Помогите нам улучшить справку](#help-us-improve-f1).
 
-## Позиция курсора
+## <a name="cursor-position"></a>Позиция курсора
 
 Если вы ищете справку F1 по ключевому слову или имени API, до нажатия **F1** убедитесь, что курсор располагается внутри слова или справа от него. Если это не работает, выберите нужный вариант в списке [полезных ссылок](#useful-links) или выполните поиск на сайте https://docs.microsoft.com.
 
-## Полезные ссылки
+## <a name="useful-links"></a>Полезные ссылки
 
 - Общие сведения о Visual Studio см. в [обзоре Visual Studio](../../ide/visual-studio-ide.md).
 - Справочные сведения о текстовом редакторе Visual Studio см. в статье [Использование редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md).
@@ -36,6 +36,6 @@ ms.locfileid: "34335711"
 - Справочные сведения о Python см. в статье [Python в Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - Справочные сведения о C++ см. в статье [C++ в Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
-## Помогите нам улучшить справку F1
+## <a name="help-us-improve-f1"></a>Помогите нам улучшить справку F1
 
 Помогите нам улучшить работу справки F1. Сообщите о проблемах со справкой, нажав кнопку **Предоставить отзыв о продукте** ниже. Включите в сообщение информацию о том, что вы искали в справке **F1**, например на каком символе или в каком окне был расположен курсор. Спасибо!
