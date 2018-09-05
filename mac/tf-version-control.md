@@ -1,18 +1,18 @@
 ---
 title: Система управления версиями TF
 description: Подключение к Team Foundation Server или Visual Studio Team Services с использованием системы управления версиями Team Foundation.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 51d066289809842cd50974cbb37a89bc7a73d5dc
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37438467"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224292"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Подключение к системе управления версиями Team Foundation 
 

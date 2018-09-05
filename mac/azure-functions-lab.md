@@ -1,18 +1,18 @@
 ---
 title: Учебник. Функции Azure
 description: Использование функций Azure в Visual Studio для Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232293"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224044"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Учебник. Начало работы с функциями Azure
 
@@ -49,7 +49,7 @@ ms.locfileid: "39232293"
      Также есть три файла:  
         - **host.json** для описания параметров глобальной конфигурации узла.  
         - **local.settings.json** для настройки параметров службы.  
-        — Шаблон проекта также создает HttpTrigger по умолчанию. В целях этого руководства удалите файл **HttpTrigger.cs** из проекта.  
+        - Шаблон проекта также создает HttpTrigger по умолчанию. В целях этого руководства удалите файл **HttpTrigger.cs** из проекта.  
 
     Откройте файл **local.settings.json**. По умолчанию в нем имеется два параметра пустой строки подключения.
 
