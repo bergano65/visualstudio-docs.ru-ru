@@ -1,17 +1,17 @@
 ---
 title: Обновление Visual Studio для Mac
 description: Инструкции по обновлению Visual Studio для Mac и доступу к выпускам предварительной версии.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 7f93a76f3b054755a385696a6cfc8649a608a58b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: e363d02c7d84d80a3a60d54e13ff2a5341145dc5
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884303"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224390"
 ---
 # <a name="updating-visual-studio-for-mac"></a>Обновление Visual Studio для Mac
 

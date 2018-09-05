@@ -1,16 +1,16 @@
 ---
 title: Добавление и удаление элементов проекта
 description: Этот документ описывает добавление и удаление элементов проекта в Visual Studio для Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: 2905477ca4141d555d086a680c0cd797b3c4d7c8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d7401395d817d4c07b179c0d096612469fed6291
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864328"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224332"
 ---
 # <a name="adding-and-removing-project-items"></a>Добавление и удаление элементов проекта
 
