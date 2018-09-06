@@ -1,5 +1,5 @@
 ---
-title: Введение в проекты и решения в Visual Studio
+title: Введение в проекты и решения
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512308"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626916"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Краткое руководство. Проекты и решения
+# <a name="learn-about-projects-and-solutions"></a>Сведения о проектах и решениях
 
-В этом 10-минутном кратком руководстве мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Это решение является контейнером, который используется для организации одного или нескольких связанных проектов, например библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
+В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Это решение является контейнером, который используется для организации одного или нескольких связанных проектов, например библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
@@ -176,19 +176,9 @@ ms.locfileid: "39512308"
 
 Если вы хотите проверить работоспособность модульного теста, выберите **Тест** > **Запуск** > **Все тесты** в строке меню. Открывается окно **Обозреватель тестов**, где должно быть указано, что тест **TestGetCurrentDate** пройден.
 
-Поздравляем с завершением этого краткого руководства! Далее вы можете изучить некоторые другие краткие руководства по Visual Studio или подробнее узнать о [создании проектов и решений](../ide/creating-solutions-and-projects.md).
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Персонализация Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>См. также
 
+- [Создание проектов и решений](../ide/creating-solutions-and-projects.md)
 - [Управление свойствами проектов и решений](../ide/managing-project-and-solution-properties.md)
 - [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
 - [Разработка кода в Visual Studio без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

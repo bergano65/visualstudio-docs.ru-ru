@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381176"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626677"
 ---
-# <a name="visual-studio-overview"></a>Обзор Visual Studio
+# <a name="welcome-to-the-visual-studio-ide"></a>Добро пожаловать в интегрированную среду разработки Visual Studio
 
 *Интегрированная среда разработки* Visual Studio — это оригинальная среда запуска, которая позволяет редактировать, отлаживать и создавать код, а затем публиковать приложения. Интегрированная среда разработки (IDE) — это многофункциональная программа, которую можно использовать для различных аспектов разработки программного обеспечения. Помимо стандартного редактора и отладчика, которые существуют в большинстве сред IDE, Visual Studio включает в себя компиляторы, средства выполнения кода, графические конструкторы и многие другие функции для упрощения процесса разработки программного обеспечения.
 
 Среда Visual Studio доступна для Windows и Mac. Функции [Visual Studio для Mac](/visualstudio/mac/) аналогичны возможностям Visual Studio 2017 и оптимизированы для разработки кроссплатформенных и мобильных приложений.
 
-Эта статья посвящена Visual Studio 2017 для Windows. Она содержит описание основных возможностей интегрированной среды разработки. Мы рассмотрим некоторые возможности, доступные в Visual Studio, включая создание простого проекта, использование [IntelliSense](using-intellisense.md) в качестве вспомогательного средства написания кода и отладку приложения для просмотра значения переменной во время выполнения программы. Мы также ознакомимся с различными окнами инструментов.
+Эта обзорная статья посвящена Visual Studio 2017 для Windows. Она содержит описание основных возможностей интегрированной среды разработки. Мы рассмотрим некоторые возможности, доступные в Visual Studio, включая создание простого проекта, использование [IntelliSense](using-intellisense.md) в качестве вспомогательного средства написания кода и отладку приложения для просмотра значения переменной во время выполнения программы. Мы также ознакомимся с различными окнами инструментов.
 
 ## <a name="install-the-visual-studio-ide"></a>Установка интегрированной среды разработки Visual Studio
 
@@ -256,21 +256,32 @@ ms.locfileid: "39381176"
 
    Цветовая тема для всей интегрированной среды разработки изменится на тему **Темная**.
 
-   ![VS с темой "Темная"](media/quickstart-personalize-dark-theme.png)
+   ![Visual Studio в темной теме](media/quickstart-personalize-dark-theme.png)
 
 Дополнительные сведения о других способах персонализации интегрированной среды разработки см. в разделе [Персонализация Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="next-steps"></a>Следующие шаги
 
-Хотите создать приложение для телефона Android или iOS? Как насчет трехмерной игры или приложения с поддержкой облака? Дополнительные сведения об этих и других возможностях Visual Studio см. в разделе [Features of Visual Studio 2017](../ide/advanced-feature-overview.md) (Возможности Visual Studio 2017).
+Узнайте больше о Visual Studio, прочитав одну из следующих вводных статей:
 
-Если вы хотите приступить к созданию кода прямо сейчас, выберите один из разделов краткого руководства, например [Создание первого веб-приложения ASP.NET Core с помощью Visual Studio](quickstart-aspnet-core.md).
+- Познакомьтесь с редактором кода в статье [Сведения об использовании редактора кода](quickstart-editor.md)
 
-Кроме того, вашему вниманию предлагаются бесплатные курсы по Visual Studio, доступные на сайте [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
+- Узнайте, как Visual Studio упорядочивает код, в статье [Сведения о проектах и решениях](quickstart-projects-solutions.md)
+
+Если вы готовы к углубиться в вопросы написания кода, ознакомьтесь со следующими статьями о конкретных языках:
+
+- [Создание первого веб-приложения Python с помощью Visual Studio](quickstart-python.md)
+
+- [Создание первого веб-приложения C# с помощью Visual Studio](quickstart-aspnet-core.md)
+
+- [Создание первого веб-приложения Node.js с помощью Visual Studio](quickstart-nodejs.md)
+
+- [Начало работы с C++ в Visual Studio](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>См. также
 
-* [Другие возможности Visual Studio](../ide/advanced-feature-overview.md)
-* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Блог Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Скачайте Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- Откройте для себя [другие возможности Visual Studio](../ide/advanced-feature-overview.md)
+- Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Читайте [блог Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Посетите бесплатные курсы по Visual Studio на сайте [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
+- Загрузите Visual Studio в разделе [загрузок Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

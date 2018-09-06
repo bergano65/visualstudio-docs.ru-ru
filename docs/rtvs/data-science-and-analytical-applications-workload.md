@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626993"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Установка поддержки для обработки и анализа данных в Visual Studio
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/27/2018
 R и Python — это два основных языка скриптов, используемые для обработки и анализа данных. Они оба довольно просты в изучении и поддерживаются обширной экосистемой пакетов. Эти пакеты позволяют реализовать широкий спектр сценариев, таких как получение данных, очистка, обучение модели, развертывания и построение графиков. F# также представляет собой мощный функционально-императивный язык .NET, подходящий для самых разных задач по обработке данных.
 
 <!--Note link on the image because this one is large -->
-[![Снимки экрана Visual Studio с R, Python и F#](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![Снимки экрана Visual Studio с R, Python и F#](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>Параметры рабочей нагрузки
 
@@ -49,9 +50,9 @@ R и Python — это два основных языка скриптов, ис
 
 Хотя F# входит в состав ряда других рабочих нагрузок, а для Python предусмотрена отдельная рабочая нагрузка, язык R сейчас доступен только в рабочей нагрузке "Приложения для обработки и анализа данных и аналитические приложения". Но вы также можете установить R отдельно от нее. На вкладке **Отдельные компоненты** в установщике выберите следующие элементы для R.
 
-- **Действия разработки > Поддержка языка R**
-- **Действия разработки > Microsoft R Client**
-- **Компиляторы, средства сборки и среды выполнения > Поддержка среды выполнения для средств разработки R**
+- **Действия разработки** > **Поддержка языка R**
+- **Действия разработки** > **Microsoft R Client**
+- **Компиляторы, средства сборки и среды выполнения** > **Поддержка среды выполнения для средств разработки R**
 
 ## <a name="sql-server-integration"></a>Интеграция SQL Server
 
@@ -75,7 +76,7 @@ SQL Server поддерживает использование как R, так 
 
 Дополнительные сведения:
 
-- [Работа с SQL Server и R](../rtvs/sql-server.md)
+- [Работа с SQL Server и R](integrating-sql-server-with-r.md)
 - [Углубленная аналитика в базе данных с R в SQL Server 2016 (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 - [Python в SQL Server 2017: расширенное машинное обучение в базе данных (блог)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
@@ -88,4 +89,4 @@ SQL Server поддерживает использование как R, так 
 Azure Notebooks (сейчас находится на этапе предварительной версии) предоставляет свободный доступ по сети к записным книжкам Jupyter, работающими в облаке на платформе Microsoft Azure. Эта служба содержит примеры записных книжек на языках Python, R и F#, с которых можно начать работу. Посетите сайт [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Снимки экрана Azure Notebooks с вводным образцом R](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![Снимки экрана: записные книжки Microsoft Azure с вводным примером R](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388128"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627124"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio
 
@@ -104,12 +104,13 @@ ms.locfileid: "39388128"
 
 Мы рассмотрели лишь некоторые из возможностей Visual Studio, чтобы вы могли получить представление о пользовательском интерфейсе. Для дальнейшего ознакомления:
 
-- Дополнительные сведения о Visual Studio, включая инструкции по отладке, см. в статье [Обзор возможностей интегрированной среды разработки Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Сведения о редакторе кода](../ide/quickstart-editor.md)
 
-- Вы можете перейти к разделу документации по VS, посвященному **общим элементам пользовательского интерфейса**, чтобы узнать больше о таких элементах управления, как [список ошибок](../ide/reference/error-list-window.md), [окно вывода](../ide/reference/output-window.md), [окно свойств](../ide/reference/properties-window.md) и [диалоговое окно параметров](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Сведения о проектах и решениях](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство. Персонализация IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
-- [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
+- [Общие сведения об интегрированной среде разработки (IDE) в Visual Studio](../ide/visual-studio-ide.md)
+- [Изменение цвета шрифта и темы](../ide/quickstart-personalize-the-ide.md)
