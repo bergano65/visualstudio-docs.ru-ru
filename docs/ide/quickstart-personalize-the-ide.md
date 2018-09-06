@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512565"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627262"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 
-В этом кратком (на 5–10 минут) руководстве мы настроим для Visual Studio цветовую тему и два цвета текста в текстовом редакторе.
+В этом кратком (на 5–10 минут) руководстве мы настроим для Visual Studio цветовую тему, выбрав темную тему. Мы также настроим цвета для двух разных типов текста в текстовом редакторе.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
@@ -97,19 +97,7 @@ ms.locfileid: "39512565"
 
 Мы изучили только некоторые способы настраивать цвета в Visual Studio. Ознакомьтесь с другими возможностями в диалоговом окне **Параметры**, чтобы настроить Visual Studio в соответствии со своими предпочтениями.
 
-## <a name="next-steps"></a>Следующие шаги
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Написание кода в редакторе](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>См. также
 
-- [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Настройка редактора](../ide/customizing-the-editor.md)
 - [Обзор интегрированной среды разработки Visual Studio IDE](../ide/visual-studio-ide.md)

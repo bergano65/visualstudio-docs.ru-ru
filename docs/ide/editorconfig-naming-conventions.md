@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926487"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626990"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 
@@ -46,6 +46,7 @@ ms.locfileid: "31926487"
 Допустимые значения представлены в списке ниже. Вы можете указать несколько значений через запятую.
 
 - \* (используйте это значение, чтобы указать все символы)
+- namespace
 - класс
 - структура
 - интерфейс
@@ -56,6 +57,9 @@ ms.locfileid: "31926487"
 - событие
 - делегат
 - параметр
+- type_parameter
+- локальные
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Уровни доступа для символов
 
@@ -71,6 +75,7 @@ ms.locfileid: "31926487"
 - private
 - protected
 - protected\_internal или protected_friend
+- локальные
 
 > [!NOTE]
 > Не указывайте уровень доступа как часть вашего соглашения об именовании, если такой доступ не предусмотрен для целевого типа символа. Например, для параметров уровни доступа не предусмотрены. Если указать уровень доступа для соглашения об именовании параметров, правило именования будет работать неправильно.

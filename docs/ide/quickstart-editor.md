@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о редактировании в Visual Studio
+title: Введение в редактирование
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511239"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626757"
 ---
-# <a name="quickstart-use-the-code-editor"></a>Краткое руководство. Использование редактора кода
+# <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода и навигацию по нему в Visual Studio.
 
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
 
-Это краткое руководство предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../ide/tutorial-csharp-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Эта статья предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../ide/tutorial-csharp-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Создание файла кода
 
@@ -157,16 +157,8 @@ Visual Studio предоставляет удобные *фрагменты ко
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Вы завершили работу с кратким руководством по редактору Visual Studio. Далее вы можете обратиться к другим кратким руководствам по среде разработки Visual Studio.
-
 > [!div class="nextstepaction"]
-> [Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Персонализация Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Краткое руководство. Проекты и решения](../ide/quickstart-projects-solutions.md)
+> [Сведения о проектах и решениях](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>См. также
 

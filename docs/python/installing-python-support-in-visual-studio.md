@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499907"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627293"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
@@ -26,7 +26,7 @@ ms.locfileid: "39499907"
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
 
-Для Visual Studio 2015 и более ранних версий необходимо отдельно [установить интерпретатор Python](installing-python-interpreters.md) (требуется Python 3.5 или более ранней версии, так как версия 3.6 не поддерживается, и будет выводиться соответствующее сообщение)**.** На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
+Для Visual Studio 2015 и более ранних версий требуется отдельно [установить любой интерпретатор Python](installing-python-interpreters.md) (Python 3.5 или более ранней версии; версия 3.6 не поддерживается, и будет выводиться сообщение **Неподдерживаемая версия Python 3.6**). На этой же странице приводятся инструкции по добавлению существующего интерпретатора Python в Visual Studio 2017.
 
 Чтобы быстро проверить поддержку Python после установки, откройте **интерактивное окно Python**. Для этого нажмите клавиши **ALT**+**I** и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
 

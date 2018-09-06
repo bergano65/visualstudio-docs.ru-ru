@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f00291fded1f289d07aafd6124a96f38d3d99b78
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276810"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42627053"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -34,9 +34,9 @@ ms.locfileid: "39276810"
 
 | Версия выпуска                                              | Выпуски                     |     Версия продукта     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017 — последняя версия (15.7)                    |    Enterprise, Community     |      Версия 15.7.5     |
+| Visual Studio 2017 — последняя версия (15.8)                    |    Enterprise, Community     |      Версия 15.8.0     |
 | Visual Studio 2017: последняя предварительная версия (версия 15.8, предварительная версия 5) |    Enterprise, Community     |      Версия 15.8.5     |
-|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.15    |
+|         Visual Studio 2017 — RTW                              |    Enterprise, Community     |      Версия 15.0.17    |
 |   Visual Studio 2015 — последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01  |
 |         Visual Studio 2015 — RTW                              |             Нет             | Срок действия обслуживания истек |
 

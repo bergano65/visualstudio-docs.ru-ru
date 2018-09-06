@@ -1,5 +1,5 @@
 ---
-title: Запуск средств профилирования с отладчиком и без него | Документы Майкрософт
+title: Выполнение средств профилирования с отладчиком и без него | Документы Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,20 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268273"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626973"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Запуск средств профилирования с отладчиком или без него
 Теперь в Visual Studio можно выбирать средства производительности. Некоторые из них (например, **Загрузка ЦП** и **Использование памяти**) можно использовать с отладчиком или без него. Средства производительности, используемые без отладчика, предназначены для выполнения в конфигурациях выпуска, а средства, интегрированные в отладчик, предназначены для выполнения в конфигурациях отладки.  
+
+Можно использовать средства профилирования без отладчика с Windows 7 и более поздних версий. Для запуска средств профилирования с отладчиком (окно **Средства диагностики**) требуется Windows 8 и более поздние версии.
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Следует ли запускать средство с отладчиком или без него?  
  Средства производительности, интегрированные в отладчик, позволяют выполнять множество задач, которые невозможно реализовать с помощью средств, используемых без отладчика, например устанавливать точки останова и проверять значения переменных. Выходные данные средств, используемых без отладчика, практически аналогичны сведениям, которые будут доступны пользователям выпущенного приложения.  
   
- Ниже приведены вопросы, которые помогут решить, какое именно средство подходит для ваших целей.  
+ Ниже приведены некоторые вопросы, которые помогут решить, какое именно средство подходит для ваших целей.  
   
 1.  Проблема была обнаружена во время разработки приложения или она появилась в окончательной версии?  
   
@@ -31,7 +33,7 @@ ms.locfileid: "34268273"
   
 2.  Проблема вызвана интенсивной загрузкой ЦП?  
   
-     Многие неполадки возникают из-за внешних проблем с производительностью, таких как операции файлового ввода-вывода или время отклика сети, поэтому нет большой разницы в запуске средств производительности с отладчиком и без него. Если проблема связана с высокой загрузкой ЦП, разница между конфигурациями выпуска и отладки может быть существенной. Поэтому перед использованием средств, интегрированных в отладчик, возможно, потребуется проверить наличие проблемы в окончательной сборке.  
+     Многие неполадки возникают из-за внешних проблем с производительностью, таких как операции файлового ввода-вывода или время отклика сети, поэтому, принимая решение о запуске средств производительности с отладчиком или без него, не следует делать большой разницы. Если проблема связана с высокой загрузкой ЦП, разница между конфигурациями выпуска и отладки может быть существенной. Поэтому перед использованием средств, интегрированных в отладчик, возможно, потребуется проверить наличие проблемы в окончательной сборке.  
   
 3.  Необходимо точно измерять производительность или приемлемы приблизительные данные?  
   
@@ -101,11 +103,11 @@ ms.locfileid: "34268273"
 |||  
 |-|-|  
 |![Шаг 1](../profiling/media/procguid_1.png "ProcGuid_1")|На временной шкале отображаются продолжительность сеанса профилирования, события активации жизненного цикла приложения и пользовательские отметки.|  
-|![Шаг 2](../profiling/media/procguid_2.png "ProcGuid_2")|Отчет можно ограничить частью временной шкалы, перетащив синие полосы, чтобы выбрать нужную область временной шкалы.|  
+|![Шаг 2](../profiling/media/procguid_2.png "ProcGuid_2")|Отчет можно ограничить частью временной шкалы, перетащив синие панели, чтобы выбрать нужную область временной шкалы.|  
 |![Шаг 3](../profiling/media/procguid_3.png "ProcGuid_3")|Средство отображает одну основную диаграмму или несколько основных диаграмм. Если диагностический сеанс создается с использованием нескольких средств, будут отображаться все основные диаграммы.|  
 |![Шаг 4](../profiling/media/procguid_4.png "ProcGuid_4")|Индивидуальные диаграммы можно сворачивать и разворачивать.|  
 |![Шаг 5](../profiling/media/procguid_6.png "ProcGuid_6")|Если данные содержат информацию из нескольких средств, подробные сведения для конкретного средства накапливаются на отдельной вкладке.|  
-|![Шаг 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Средство может иметь одно представление сведений или несколько. Представление фильтруется по выбранной области временной шкалы.|  
+|![Шаг 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Средство может иметь одно представление сведений или несколько представлений сведений. Представление фильтруется по выбранной области временной шкалы.|  
   
 ## <a name="set-the-analysis-target-to-another-device"></a>Настройка другого устройства в качестве целевого объекта анализа  
  Кроме запуска приложения из проекта Visual Studio, диагностические сеансы также можно запускать на альтернативных целевых объектах. Например, может потребоваться диагностика проблем производительности для определенной версии вашего приложения, установленного из Магазина приложений Windows.  
@@ -120,22 +122,22 @@ ms.locfileid: "34268273"
   
  ![Указание URL-адреса для отображения в Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
-## <a name="remote-debugging"></a>Удаленная отладка  
- Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены Инструменты удаленной отладки для Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  См. руководство по [запуску приложений UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+## <a name="remote-debugging"></a>Remote Debugging  
+ Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  См. руководство по [запуску приложений UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Записи в блогах и статьи MSDN от команды разработчиков средств диагностики  
- [Журнал MSDN Magazine. Анализ производительности в процессе отладки в Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
+ [Журнал MSDN Magazine. Анализ производительности во время отладки в Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
   
- [Журнал MSDN Magazine. Применение IntelliTrace для ускорения диагностики](https://msdn.microsoft.com/en-us/magazine/dn973014.aspx)  
+ [Журнал MSDN Magazine. Использование IntelliTrace для более быстрой диагностики проблем](https://msdn.microsoft.com/en-us/magazine/dn973014.aspx)  
   
- [Запись блога. Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015 (Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Запись блога. Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
- [Видео. Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015 (Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Видео. Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Видео. Debugging Performance Issues Using Visual Studio 2015 (Отладка проблем производительности с помощью Visual Studio 2015)](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Видео. Отладка проблем производительности с помощью Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (PerfTips: информация о производительности прямо при отладке с помощью Visual Studio)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
- [Diagnostic Tools debugger window in Visual Studio 2015 (Окно отладчика "Средства диагностики" в Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Окно отладчика "Средства диагностики" в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [IntelliTrace in Visual Studio Enterprise 2015 (IntelliTrace в Visual Studio Enterprise 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace в Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)

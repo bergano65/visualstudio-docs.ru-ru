@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251885"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635607"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "39251885"
 |[Установка Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Сведения о Xamarin в Visual Studio](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Документация для разработки мобильных приложений Xamarin](/xamarin/) |
-|[Управление жизненным циклом приложений (ALM) c приложениями Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[DevOps с приложениями Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
 |[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Сведения о сходстве между Swift и C#](http://aka.ms/scposter) (download.microsoft.com)|
 

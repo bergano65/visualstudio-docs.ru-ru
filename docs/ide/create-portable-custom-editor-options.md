@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469058"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626765"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -23,7 +23,7 @@ ms.locfileid: "39469058"
 Параметры EditorConfig поддерживаются различными редакторами кода и интегрированными средами разработки, включая Visual Studio. Этот файл является переносимым компонентом, который передается вместе с кодом и позволяет применять стили написания кода даже вне среды Visual Studio.
 
 > [!NOTE]
-> При добавлении файла EditorConfig в проект в Visual Studio форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **Ctrl**+**K**, **Ctrl**+**D**). Тем не менее все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig.
+> При добавлении файла EditorConfig в проект в Visual Studio форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию). Тем не менее все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig. Вы можете выбрать, какие параметры EditorConfig команда **Форматировать документ** будет применять к [странице параметров **форматирования**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Согласованность при кодировании
 
