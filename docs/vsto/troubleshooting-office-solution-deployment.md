@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008721"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774667"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Устранение неполадок с развертыванием решения Office
   В этом разделе содержатся сведения об устранении неполадок, которые могут возникнуть при развертывании решений Office.  
@@ -72,7 +72,7 @@ ms.locfileid: "40008721"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Загрузка сборок вместо загрузки кэшированных копий  
   
-1.  В строке меню выберите **проекта**, * имя_проекта ***свойства**.  
+1.  В строке меню выберите **проекта**, _имя_проекта_**свойства**.  
   
 2.  На странице **Приложения** выберите **Сведения о сборке**.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Как: Настройка компьютера для разработки решений Office | Документы Microsoft'
+title: 'Практическое: Настройка компьютера для разработки решений Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,29 +16,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b595ead26a88215749c3fb3db382b043f4af4f26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 53a54c0d3ead9670f745258260461c86849cf0b9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674754"
 ---
-# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Практическое руководство. Настройка компьютера для разработки решений Office
+# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Практическое: Настройка компьютера для разработки решений Office
   Для настройки компьютера разработчика таким образом, чтобы было можно использовать Microsoft Office Developer Tools в Visual Studio, следуйте инструкциям в этой статье. Для выполнения следующих действий требуются права администратора на компьютере разработчика.  
   
 ### <a name="to-configure-the-development-computer"></a>Настройка компьютера разработчика  
   
-1.  Установите версию Visual Studio, которая содержит Office Developer Tools. Office Developer Tools устанавливаются по умолчанию. При настройке установки Visual Studio путем выбора устанавливаемых функций, убедитесь, что **инструменты разработчика Microsoft Office** во время установки. Дополнительные сведения о версиях Visual Studio, имеющих инструменты разработчика Microsoft Office см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+1.  Установите версию Visual Studio, которая содержит Office Developer Tools. Office Developer Tools устанавливаются по умолчанию. Если вы настраиваете установку Visual Studio, выбрав какие возможности нужно установить, убедитесь, что **инструменты разработчика Microsoft Office** выбирается во время установки. Дополнительные сведения о версиях Visual Studio, которые включают установку средств разработчика Office, см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-2.  Установите версию Office, которую поддерживают Office Developer Tools в Visual Studio. Для получения дополнительной информации см. [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+2.  Установите версию Office, которую поддерживают Office Developer Tools в Visual Studio. Дополнительные сведения см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-     Убедитесь, что вы также устанавливаете основные сборки взаимодействия для нужной версии Office. Основные сборки взаимодействия устанавливаются вместе с Office по умолчанию. Если вы изменяете настройки установки Office, убедитесь, что **поддержка программирования .NET** выбран для приложений, вы будете работать.  
+     Убедитесь, что вы также устанавливаете основные сборки взаимодействия для нужной версии Office. Основные сборки взаимодействия устанавливаются вместе с Office по умолчанию. Если вы изменяете настройки установки Office, убедитесь, что **программируемости .NET** выбран для приложений, вы будете работать.  
   
-3.  Если есть англоязычная версия Visual Studio, но не на английском языке Windows язык, можно установить [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] языковой пакет для просмотра [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] сообщения в том же языке. Неанглоязычные версии Visual Studio автоматически устанавливают языковой пакет. Языковой пакет можно загрузить из [центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkId=140386).  
+3.  Если у английскую версию Visual Studio, но использовать неанглоязычные параметры для Windows, можно установить [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] языковой пакет для просмотра [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] сообщений в языке Windows. Неанглоязычные версии Visual Studio автоматически устанавливают языковой пакет. Языковой пакет доступен из [центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>См. также  
- [Новые возможности разработки для Office](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
- [Приступая к работе &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Как: Установка набора средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Практическое руководство. Установка основных сборок взаимодействия Microsoft Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Новые возможности при разработке решений Office](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Практическое: Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [Практическое: Office установка основных сборок взаимодействия](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

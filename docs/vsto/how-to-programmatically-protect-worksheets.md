@@ -1,5 +1,5 @@
 ---
-title: 'Как: программная Защита листов | Документы Microsoft'
+title: 'Практическое: программная Защита листов Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23e0706f7436355e2308fbde8d945968da5348c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675477"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Практическое руководство. Программная защита листов Excel
+# <a name="how-to-programmatically-protect-worksheets"></a>Практическое: программная Защита листов Excel
   Возможность защиты в Microsoft Office Excel помогает предотвратить изменение объектов на листе пользователями и кодом. По умолчанию все ячейки заблокированы после включения защиты.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,33 +35,33 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Невозможно добавлять элементы управления Windows Forms в защищенные области листа.  
   
-## <a name="using-the-designer"></a>Использование конструктора  
+## <a name="use-the-designer"></a>С помощью конструктора  
   
-#### <a name="to-protect-a-worksheet-in-the-designer"></a>Защита листа в конструкторе  
+### <a name="to-protect-a-worksheet-in-the-designer"></a>Защита листа в конструкторе  
   
-1.  В **изменения** группы **проверки** щелкните **защитить лист**.  
+1.  В **изменения** группе **проверки** щелкните **защитить лист**.  
   
      **Защитить лист** откроется диалоговое окно. Вы можете задать пароль и при необходимости указать определенные действия, которые пользователям разрешено выполнять с листом, например форматирование ячеек или вставка строк.  
   
  Также можно разрешить пользователям редактировать определенные диапазоны защищенных рабочих листов.  
   
-#### <a name="to-allow-editing-in-specific-ranges"></a>Включение редактирования в определенных диапазонах  
+### <a name="to-allow-editing-in-specific-ranges"></a>Включение редактирования в определенных диапазонах  
   
-1.  В **изменения** группы **проверки** щелкните **разрешить пользователям изменять диапазоны**.  
+1.  В **изменения** группе **проверки** щелкните **разрешить пользователям изменять диапазоны**.  
   
      **Разрешить пользователям изменять диапазоны** откроется диалоговое окно. Можно указать диапазоны, которые разблокируются с помощью пароля, и пользователей, которым разрешено редактировать диапазоны без пароля.  
   
-## <a name="using-code-at-run-time"></a>Использование кода во время выполнения  
+## <a name="use-code-at-runtime"></a>Используйте код во время выполнения  
  Следующий код задает пароль (с помощью переменной getPasswordFromUser, которая содержит пароль, полученный от пользователя) и разрешает только сортировку.  
   
-#### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Защита листа с помощью кода в настройке на уровне документа  
+### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Защита листа с помощью кода в настройке на уровне документа  
   
 1.  Вызовите метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> листа. В этом примере предполагается, что вы работаете с листом `Sheet1`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]  
   
-#### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Защита листа с помощью кода в надстройке VSTO  
+### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Защита листа с помощью кода в надстройке VSTO  
   
 1.  Вызовите метод <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> активного листа.  
   
@@ -69,11 +70,11 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Работа с листами](../vsto/working-with-worksheets.md)   
- [Как: программное снятие защиты с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
- [Как: программная Защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Как: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
- [Ведущие элементы листа](../vsto/worksheet-host-item.md)   
+ [Практическое: программное снятие защиты с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
+ [Практическое: программная Защита книг Excel](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Практическое: программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
+ [Ведущий элемент листа](../vsto/worksheet-host-item.md)   
  [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   

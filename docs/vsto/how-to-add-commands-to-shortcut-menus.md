@@ -1,5 +1,5 @@
 ---
-title: 'Как: Добавление команды в контекстное меню'
+title: 'Практическое: Добавление команд в контекстное меню'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb86a0c906ae2ae43308833cdec79195344abb7a
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674718"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Как: Добавление команды в контекстное меню
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Практическое: Добавление команд в контекстное меню
   В этом разделе показано, как добавить команды в контекстное меню в приложении Office с помощью надстройки VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Добавление команд в контекстные меню в Office  
   
-1.  Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [как: работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). Увеличение  
+1.  Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [как: Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). Увеличение  
   
 2.  В**обозревателе решений**выберите файл **ThisAddIn.cs** или **ThisAddIn.vb**.  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/25/2018
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
   
-5.  В **обозревателе решений**выберите XML-файл ленты. По умолчанию XML-файле ленты с именем *Ribbon1.xml*.  
+5.  В **обозревателе решений**выберите XML-файл ленты. По умолчанию является имя XML-файле ленты *Ribbon1.xml*.  
   
 6.  В строке меню выберите **Вид** > **Код**.  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/25/2018
   
 7.  В редакторе кода добавьте XML, описывающий контекстное меню и элемент управления, который требуется добавить в контекстное меню.  
   
-     В следующем примере элементы управления "кнопка", "меню" и "коллекция" добавляются в контекстное меню для документа Word. Идентификатор элемента управления этого контекстного меню — ContextMenuText. Полный список элемента управления контекстное Office 2010 см. в разделе [файлы справки Office 2010: идентификаторы элементов управления Office fluent пользовательского интерфейса](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     В следующем примере элементы управления "кнопка", "меню" и "коллекция" добавляются в контекстное меню для документа Word. Идентификатор элемента управления этого контекстного меню — ContextMenuText. Полный список элемента управления Office 2010 ярлык идентификации, см. в разделе [файлы справки Office 2010: идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 05/25/2018
   
 8.  В **обозревателе решений**, выберите файл **MyRibbon.cs** или **MyRibbon.vb**.  
   
-9. Добавьте метод обратного вызова в класс `Ribbon1` для каждого элемента управления, который требуется обработать.  
+9. Добавьте метод обратного вызова, `Ribbon1` класс для каждого элемента управления, который необходимо обработать.  
   
      Следующий метод обратного вызова обрабатывает кнопку **My Button** . Этот код добавляет строку в активный документ в текущем положении курсора.  
   

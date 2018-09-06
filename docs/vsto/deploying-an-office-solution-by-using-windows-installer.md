@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382619"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775718"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщика Windows
 Узнайте, как создать файл установщика Windows для решения Office при помощи [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -68,7 +68,7 @@ ms.locfileid: "39382619"
   
   
   
-|Пример<br /><br />|Описание:<br /><br />|  
+|Пример<br /><br />|Описание<br /><br />|  
 |----------|---------------|  
 |[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Надстройка VSTO Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Настройка уровня документа Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|  
@@ -526,7 +526,7 @@ ms.locfileid: "39382619"
   
 9. В строке меню выберите **построения** > **сборка OfficeAddInSetup**.  
   
-   После завершения сборки, вы можете найти *setup.exe* файл **OfficeAddInSetup** проекта по следующему адресу: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
+   После завершения сборки, вы можете найти *setup.exe* файл **OfficeAddInSetup** проекта по следующему адресу: _OfficeAddInSetupProjectRoot_ * *\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>См. также  

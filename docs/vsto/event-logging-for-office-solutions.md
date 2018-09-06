@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674340"
 ---
 # <a name="event-logging-for-office-solutions"></a>Ведение журнала событий для решений Office
   Вы можете использовать средство просмотра событий в Windows для просмотра сообщений об исключениях, записанных средой выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] при установке или удалении решений Office. С помощью этих сообщений из журнала событий можно разрешать проблемы развертывания и установки.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/22/2018
   
 7.  Нажмите кнопку **ОК** , чтобы просмотреть отфильтрованное представление.  
   
-#### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Чтение журнала событий в Windows 7, Windows Vista и Windows Server 2008  
+### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Чтение журнала событий в Windows 7, Windows Vista и Windows Server 2008  
   
 1.  В панели управления откройте раздел **Администрирование**.  
   
@@ -76,15 +77,15 @@ ms.lasthandoff: 05/22/2018
   
  После удаления решения Office сообщения об исключениях остаются в журнале событий.  
   
- Показывать или записывать сообщения об исключениях при запуске решения Office, в разделе [проектов Office, отладка](../vsto/debugging-office-projects.md) и [проектов Office, отладка](../vsto/debugging-office-projects.md).  
+ Чтобы отобразить или записи сообщений об исключениях при запуске решения Office, см. в разделе [проектов Office, отладка](../vsto/debugging-office-projects.md) и [проектов Office, отладка](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Локализация  
- Язык сообщений об исключениях определяется языком среды выполнения Visual Studio Tools для Office. Например, если на компьютере пользователя установлен японский языковой пакет, сообщение об исключении записывается в журнал событий на японском языке.  
+ Язык сообщений об исключениях определяется языком среды выполнения Visual Studio Tools для Office. Например если на компьютере конечного пользователя установлен японский языковой пакет, сообщение об исключении записывается в журнал событий на японском языке.  
   
-## <a name="disable-the-event-logger"></a>Отключить журнал событий  
+## <a name="disable-the-event-logger"></a>Отключить средство ведения журнала событий  
  По умолчанию журнал событий включен при установке или удалении решений Office. Вы можете отключить журнал событий, установив в переменной среды VSTO_EVENTLOGDISABLED значение "1" (один).  
   
-### <a name="to-disable-the-event-log"></a>Отключение журнала событий  
+### <a name="to-disable-the-event-log"></a>Чтобы отключить журнал событий  
   
 1.  В панели управления откройте раздел **Система**.  
   
@@ -100,6 +101,6 @@ ms.lasthandoff: 05/22/2018
   
 ## <a name="see-also"></a>См. также  
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
- [Устранение неполадок развертывания решения Office](../vsto/troubleshooting-office-solution-deployment.md)  
+ [Устранение неполадок с развертыванием решения Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Как: обновления источника данных с данными из элемента управления ведущего приложения'
+title: 'Практическое: обновления источника данных с данными из элемента управления ведущего приложения'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5603b1661a1b329692508eb43a629919f2f5d14e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675444"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Как: обновления источника данных с данными из элемента управления ведущего приложения
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Практическое: обновления источника данных с данными из элемента управления ведущего приложения
   Вы можете привязать элемент управления ведущего приложения к источнику данных и обновлять источник данных с помощью изменений, внесенных в данные в элементе управления. Этот процесс включает два основных этапа.  
   
 1.  Обновление источника данных в памяти с использованием измененных данных в элементе управления. Как правило, источник данных в памяти — это <xref:System.Data.DataSet>, <xref:System.Data.DataTable>или какой-либо другой объект данных.  
   
 2.  Обновление базы данных с использованием измененных данных в источнике данных в памяти. Это применимо только в том случае, если источник данных подключен к внутренней базе данных, например к базе данных SQL Server или Microsoft Office Access.  
   
- Дополнительные сведения об элементах управления ведущего приложения и привязке данных см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md) и [привязывать данные к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Дополнительные сведения об элементах управления ведущего приложения и привязке данных см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md) и [привязки данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -58,9 +59,9 @@ ms.lasthandoff: 05/17/2018
   
 1.  Используйте режим System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> объект, который привязывает элемент управления к источнику данных. Обновлять источник данных можно двумя способами.  
   
-    -   Для обновления источника данных при проверке элемента управления установите это свойство проверке.  
+    -   Для обновления источника данных при проверке элемента управления, установите это свойство в проверке.  
   
-    -   Для обновления источника данных при изменении значения свойства элемента управления с привязкой к данным, этому свойству присвоено System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
+    -   Для обновления источника данных при изменении значения свойства с привязкой к данным элемента управления, установите это свойство для System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
         > [!NOTE]  
         >  Параметр System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged применяется для элементов управления ведущего приложения Word, поскольку Word не уведомления не предложение документа или изменение элемента управления. Однако этот вариант можно использовать для элементов управления Windows Forms в документах Word.  
@@ -78,7 +79,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  В окне **Свойства** разверните свойство **(DataBindings)** .  
   
-4.  Рядом с **(Дополнительно)** свойства, нажмите кнопку с многоточием (![экрана VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "экрана VisualStudioEllipsesButton")).  
+4.  Рядом с полем **(Дополнительно)** свойство, нажмите кнопку с многоточием (![экрана VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "экрана VisualStudioEllipsesButton")).  
   
 5.  В диалоговом окне **Форматирование и дополнительная привязка** щелкните раскрывающийся список **Режим обновления источника данных** и выберите одно из следующих значений.  
   
@@ -105,11 +106,11 @@ ms.lasthandoff: 05/17/2018
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]  
   
-2.  Вызовите `Update` метод созданного адаптера таблицы в проекте.  
+2.  Вызовите `Update` класса TableAdapter, созданный в проекте.  
   
-     Адаптер таблицы автоматически создается при добавлении элемента управления с привязкой к данным в документ или книгу во время разработки. Адаптер таблицы подключается типизированный набор данных в проекте базы данных. Дополнительные сведения см. в разделе [Общие сведения о TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+     TableAdapter создается автоматически при добавлении элемента управления с привязкой данных в документ или книгу во время разработки. TableAdapter типизированного набора данных в проекте подключается к базе данных. Дополнительные сведения см. в разделе [TableAdapter overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
-     В следующем примере кода предполагается, что имеется подключение к таблице Customers в базе данных Northwind и проект содержит адаптера таблицы с именем `customersTableAdapter` и типизированный набор данных с именем `northwindDataSet`.  
+     В следующем примере кода предполагается, что имеется подключение к таблице Customers в базе данных "Борей", и что проект содержит адаптера таблицы с именем `customersTableAdapter` и типизированный набор данных с именем `northwindDataSet`.  
   
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]  
@@ -118,10 +119,10 @@ ms.lasthandoff: 05/17/2018
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Сохранить данные в базе данных](../data-tools/save-data-back-to-the-database.md)    
  [Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)    
- [Как: прокрутка записей базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [Как: заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Как: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Как: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Как: Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [Практическое: прокрутка записей базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Практическое: заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Практическое: Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Практическое: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Практическое: Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

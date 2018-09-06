@@ -33,25 +33,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 933e53876108f4e8ee4260ae4ac4fdf41f8bbf01
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675480"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Глобальный доступ к объектам в проектах Office
   При создании проекта Office Visual Studio автоматически создает в проекте класс с именем `Globals` . Класс `Globals` можно использовать для доступа к различным элементам проекта из любого кода проекта в среде выполнения.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="how-to-use-the-globals-class"></a>Использование класса Globals  
+## <a name="how-to-use-the-globals-class"></a>Способы использования класса Globals  
  `Globals` является статическим классом, содержащим ссылки на определенные элементы проекта. С помощью класса `Globals` разработчик может обращаться к следующим элементам из любого кода проекта в среде выполнения:  
   
 -   Классы `ThisWorkbook` и `Sheet`*n* в книге Excel или проекте шаблона. Доступ к этим объектам осуществляется с помощью свойств `Globals.ThisWorkbook` и `Sheet`*n* .  
   
 -   Класс `ThisDocument` в документе Word или проекте шаблона. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisDocument` .  
   
--   Класс `ThisAddIn` в проекте надстройки VSTO. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisAddIn` .  
+-   `ThisAddIn` Класса в проекте надстройки VSTO. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisAddIn` .  
   
 -   Все ленты проекта, настроенные с использованием конструктора лент. Доступ к лентам осуществляется с помощью свойства `Globals.Ribbons` . Дополнительные сведения см. в разделе [доступа к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md).  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 05/22/2018
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
 ## <a name="initialize-the-globals-class"></a>Инициализация класса Globals  
- Код, который пытается использовать класс `Globals` до полной инициализации документа или надстройки VSTO, может вызывать исключение в среде выполнения. Например, использование класса `Globals` при объявлении переменной уровня класса может привести к сбою, потому что класс `Globals` может не инициализироваться со ссылками на все ведущие элементы перед созданием объявленного объекта.  
+ Код, который пытается использовать `Globals` класс до инициализации документа или надстройки VSTO, может вызывать исключение в среде выполнения. Например, использование класса `Globals` при объявлении переменной уровня класса может привести к сбою, потому что класс `Globals` может не инициализироваться со ссылками на все ведущие элементы перед созданием объявленного объекта.  
   
 > [!NOTE]  
 >  Класс `Globals` никогда не инициализируется во время разработки, но экземпляры элементов управления создаются разработчиком. Это означает, что, если создается пользовательский элемент управления, в котором свойство класса `Globals` используется в пользовательском классе элементов управления, нужно проверять, возвращает ли свойство значение **null** , прежде чем пытаться использовать возвращенный объект.  
@@ -84,7 +85,7 @@ ms.lasthandoff: 05/22/2018
  [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Ведущий элемент документа](../vsto/document-host-item.md)   
  [Ведущий элемент книги](../vsto/workbook-host-item.md)   
- [Ведущие элементы листа](../vsto/worksheet-host-item.md)   
- [Напишите код в решениях Office](../vsto/writing-code-in-office-solutions.md)  
+ [Ведущий элемент листа](../vsto/worksheet-host-item.md)   
+ [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
   
   

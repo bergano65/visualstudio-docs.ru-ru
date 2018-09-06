@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство по автоматизации приложения из настраиваемой области задач
+title: 'Пошаговое руководство: Автоматизация приложения из настраиваемой области задач'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7af399ca55c1fc2355da508662fe67314a519070
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768083"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674046"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Пошаговое руководство по автоматизации приложения из настраиваемой области задач
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Пошаговое руководство: Автоматизация приложения из настраиваемой области задач
   В этом пошаговом руководстве рассматриваются способы создания настраиваемой области задач, которая автоматизирует PowerPoint. Настраиваемая область задач вставляет даты в слайд, когда пользователь нажимает элемент управления <xref:System.Windows.Forms.MonthCalendar> в ней.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -137,7 +137,7 @@ ms.locfileid: "34768083"
 ## <a name="next-steps"></a>Следующие шаги  
  Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:  
   
--   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
+-   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).  
   
 -   Создание кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
@@ -145,8 +145,8 @@ ms.locfileid: "34768083"
   
 ## <a name="see-also"></a>См. также  
  [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Как: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой ленты](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Практическое: добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
   
   

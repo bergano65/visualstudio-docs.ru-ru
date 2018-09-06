@@ -13,20 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674880"
 ---
 # <a name="getautoinsertextensions-method"></a>Метод GetAutoInsertExtensions
-  Возвращает сведения о приложениях для Office, которые вставляются автоматически во время отладки.  
+  Получает сведения о приложениях для Office, который автоматически вставляются во время отладки.  
   
  Этот метод зарезервирован для использования в будущем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```c  
+```csharp
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
@@ -36,12 +37,12 @@ HRESULT GetAutoInsertExtensions(
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|*psaExtensionNames*|Чтобы имена расширений приложений для Office.|  
+|*psaExtensionNames*|Имена расширений приложений для Office.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Значение HRESULT, указывающее, успешно ли завершен метод.  
   
 ## <a name="remarks"></a>Примечания  
- Каждое приложение для Office для вставки возвращается в виде имя расширения приложений Office, которой соответствует значению в разделе **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Узел должен искать эти значения в реестре и автоматически вставлять расширения.  
+ Каждое приложение для Office, вставляемый возвращается как имя расширения приложения Office, который соответствует значению в разделе **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Узел должен искать эти значения в реестре и автоматически вставлять расширения.  
   
   

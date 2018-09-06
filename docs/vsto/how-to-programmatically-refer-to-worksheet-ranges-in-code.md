@@ -1,5 +1,5 @@
 ---
-title: 'Как: ссылки на диапазоны листов в коде программными средствами | Документы Microsoft'
+title: 'Практическое: ссылки на диапазоны листов в коде программными средствами'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,45 +18,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68845904a349a94df6ee09c05ca262434b847bbc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 608ce006ccc34330631da8d4c947405b027f1a1f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674799"
 ---
-# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Практическое руководство. Ссылки на диапазоны листов в коде программными средствами
-  Подобный процесс используется для ссылки на содержимое <xref:Microsoft.Office.Tools.Excel.NamedRange> управления или собственный объект диапазона Excel.  
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Практическое: ссылки на диапазоны листов в коде программными средствами
+  Подобный процесс используется для ссылки на содержимое <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>С помощью элемента управления NamedRange  
+## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange  
  В следующем примере добавляется <xref:Microsoft.Office.Tools.Excel.NamedRange> на лист и затем добавляет текст в ячейку в диапазоне.  
   
-#### <a name="to-refer-to-a-namedrange-control"></a>Для ссылки на элемент управления NamedRange  
+### <a name="to-refer-to-a-namedrange-control"></a>Для ссылки на элемент управления NamedRange  
   
-1.  Назначить строке <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> свойства <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления. Этот код следует разместить в классе листа, а не в классе `ThisWorkbook` .  
+1.  Назначить строке <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> свойство <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления. Этот код следует разместить в классе листа, а не в классе `ThisWorkbook` .  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]  
   
-## <a name="using-native-excel-ranges"></a>Использование собственных диапазонов Excel  
- В следующем примере добавляется собственный диапазон Excel на лист и затем добавляет текст в ячейку в диапазоне.  
+## <a name="use-native-excel-ranges"></a>Использование собственного диапазонах Excel  
+ В следующем примере, добавляет собственный диапазон Excel на лист и затем добавляет текст в ячейку в диапазоне.  
   
-#### <a name="to-refer-to-a-native-range-object"></a>Для ссылки на собственный объект диапазона  
+### <a name="to-refer-to-a-native-range-object"></a>Для ссылки на собственный объект диапазона  
   
-1.  Назначить строке <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> диапазона.  
+1.  Назначить строке <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> свойство диапазона.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]  
   
 ## <a name="see-also"></a>См. также  
  [Работа с диапазонами](../vsto/working-with-ranges.md)   
- [Как: Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [Как: программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Как: программным образом автоматическое заполнение диапазонов с постепенным изменением данных](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Как: программный поиск текста в диапазонах листа](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
+ [Практическое: Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Практическое: программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Практическое: программным образом автоматически заполнить диапазонов с постепенным изменением данных](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Практическое: программный поиск текста в диапазонах листа](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
  [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
+ [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
  [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   

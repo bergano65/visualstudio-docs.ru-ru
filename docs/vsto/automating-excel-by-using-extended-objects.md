@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 234436b0c8b81d4de83e00b1bb3635916eb459b8
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767758"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675240"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Автоматизация Excel с помощью расширенных объектов
   При разработке своих решений Excel в Visual Studio можно также использовать *ведущие элементы* и *элементы управления ведущего приложения*. Это объекты, которые расширяют некоторые часто используемые объекты в объектной модели Excel (т. е. объектной модели, которая предоставляется основной сборкой взаимодействия для Excel), такие как объекты <xref:Microsoft.Office.Interop.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Range> . Расширенные объекты ведут себя как объекты Excel, на которых они основаны, но добавляют объектам дополнительные события и возможности по привязке данных.  
@@ -40,7 +40,7 @@ ms.locfileid: "34767758"
 ## <a name="excel-host-items"></a>Ведущие элементы Excel  
  Проекты Excel предоставляют доступ к нескольким ведущим элементам:  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот ведущий элемент представляет лист в проекте. Также он служит контейнером для управляемых элементов управления, в том числе элементов управления ведущего приложения и элементов управления Windows Forms, и хранит сведения об элементах управления на его поверхности. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Этот ведущий элемент содержит и представляет лист в проекте. Также он служит контейнером для управляемых элементов управления, в том числе элементов управления ведущего приложения и элементов управления Windows Forms, и хранит сведения об элементах управления на его поверхности. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).  
   
 -   <xref:Microsoft.Office.Tools.Excel.Workbook>. Этот ведущий элемент представляет книгу в проекте и выступает в роли контейнера для компонентов, общих для всех листов в книге. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).  
   
@@ -64,15 +64,15 @@ ms.locfileid: "34767758"
 -   [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>См. также  
- [Как: элемент управления ListObject заполнения данными](../vsto/how-to-fill-listobject-controls-with-data.md)   
- [Как: Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [Как: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Как: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Как: Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
- [Как: изменение размеров элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Как: изменение размеров элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Как: проверка данных при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Как: столбцов элемента управления ListObject карты к данным](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Практическое: с данными элемент управления ListObject заливки](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Практическое: Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [Практическое: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Практическое: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Практическое: Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
+ [Практическое: изменение размера элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Практическое: изменение размера элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Практическое: проверка данных при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [Практическое: столбцов ListObject карты к данным](../vsto/how-to-map-listobject-columns-to-data.md)   
  [Пошаговое руководство: Программа реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   

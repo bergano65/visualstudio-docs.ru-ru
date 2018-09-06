@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155101"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774811"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое: Настройка поведения запроса о доверии ClickOnce
 Запрос о доверии ClickOnce для элемента управления можно настроить ли конечные пользователи получают возможность установки приложения ClickOnce, таких как приложения Windows Forms, приложения Windows Presentation Foundation, консольные приложения, браузере WPF приложения и решения Office. Настроить запрос о доверии путем задания разделов реестра на компьютере каждого конечного пользователя.  
   
  В следующей таблице показаны параметры конфигурации, которые могут применяться к каждому из пяти зон (Интернет, UntrustedSites, MyComputer, LocalIntranet и TrustedSites).  
   
-|Параметр|Значение параметра реестра|Описание:|  
+|Параметр|Значение параметра реестра|Описание|  
 |------------|----------------------------|-----------------|  
 |Разрешение запроса о доверии.|`Enabled`|Запрос о доверии ClickOnce отображается таким образом, чтобы конечным пользователям можно предоставить доверие для приложений ClickOnce.|  
 |Ограничение запроса о доверии.|`AuthenticodeRequired`|Запрос о доверии ClickOnce отображается только в том случае, если приложение ClickOnce подписано сертификатом, который идентифицирует издателя.|  
@@ -59,11 +59,11 @@ ms.locfileid: "39155101"
   
     1.  Нажмите кнопку **запустить**, а затем нажмите кнопку **запуска**.  
   
-    2.  В **откройте** введите `regedit32`, а затем нажмите кнопку **ОК**.  
+    2.  В **откройте** введите `regedit`, а затем нажмите кнопку **ОК**.  
   
 2.  Найдите следующий раздел реестра:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Если ключ не существует, создайте его.  
   
@@ -122,7 +122,7 @@ ms.locfileid: "39155101"
   
 2.  Найдите следующий раздел реестра:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Если ключ не существует, создайте его.  
   

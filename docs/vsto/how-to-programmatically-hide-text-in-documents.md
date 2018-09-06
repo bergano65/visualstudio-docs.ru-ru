@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное скрытие текста в документах | Документы Microsoft'
+title: 'Практическое: программное скрытие текста в документах'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8e2ea2f5f8af3876fe64d90d5f2d77874ebb252
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675261"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Практическое руководство. Программное скрытие текста в документах
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Практическое: программное скрытие текста в документах
   Текст в документе можно скрыть, установив свойство <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> объекта <xref:Microsoft.Office.Interop.Word.Range.Font%2A> для определенного фрагмента текста.  
   
- Например, можно временно скрыть текст в элементе <xref:Microsoft.Office.Tools.Word.Bookmark> (в настройке на уровне документа) или в элементе <xref:Microsoft.Office.Interop.Word.Bookmark> (в надстройке VSTO) перед отправкой документа в печать.  
+ Например, можно временно скрыть текст внутри <xref:Microsoft.Office.Tools.Word.Bookmark> (в настройке уровня документа) или <xref:Microsoft.Office.Interop.Word.Bookmark> (в надстройке VSTO) перед отправкой документа на принтере.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Скрытие текста в элементе управления Bookmark при печати документа  
+## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Скрытие текста в элементе управления Bookmark при печати документа  
   
 1.  Создайте процедуру, которая скрывает весь текст в заданном диапазоне.  
   
@@ -48,19 +49,19 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
   
-     Приведенный ниже пример кода можно использовать в надстройке VSTO. В этом примере используется активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
+     Следующий пример кода можно использовать в надстройке VSTO. В этом примере используется активный документ. Чтобы использовать этот пример, запустите код из класса `ThisAddIn` в своем проекте.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
   
-## <a name="compiling-the-code"></a>Компиляция кода  
- В этом примере кода предполагается, что документ содержит элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> (в настройке на уровне документа) или элемент управления <xref:Microsoft.Office.Interop.Word.Bookmark> (в надстройке VSTO) с именем `bookmark1`.  
+## <a name="compile-the-code"></a>Компиляция кода  
+ Данный пример кода предполагает, что документ содержит <xref:Microsoft.Office.Tools.Word.Bookmark> управления (в настройке уровня документа) или <xref:Microsoft.Office.Interop.Word.Bookmark> управления (в надстройке VSTO), которая называется `bookmark1`.  
   
 ## <a name="see-also"></a>См. также  
- [Как: программная печать документов](../vsto/how-to-programmatically-print-documents.md)   
- [Как: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Как: программным образом сброс диапазонов в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Как: программное обновление текста закладки](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Практическое: программная печать документов](../vsto/how-to-programmatically-print-documents.md)   
+ [Практическое: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Практическое: программно сброс диапазонов в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Практическое: программное обновление текста закладки](../vsto/how-to-programmatically-update-bookmark-text.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

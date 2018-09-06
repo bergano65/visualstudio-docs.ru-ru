@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675174"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; элемент (Разработка решений Office в Visual Studio)
-  Элемент `formRegion` пространства имен `vstov4` определяет область формы Microsoft Office Outlook, связанную с надстройкой VSTO.  
+  `formRegion` Элемент `vstov4` пространство имен определяет область формы Microsoft Office Outlook, связанный с надстройкой VSTO.  
   
 ## <a name="syntax"></a>Синтаксис  
   

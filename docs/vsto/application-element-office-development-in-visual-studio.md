@@ -1,5 +1,5 @@
 ---
-title: '&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft'
+title: '&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 72e9340a062b0b394b423d0403b46cbb2ecb8628
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675474"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `application` пространства имен `vstav3` служит оболочкой для описания решений Office. Дочерние элементы настроек уровня документа и надстроек VSTO отличаются друг от друга.  
   
-## <a name="syntax-for-document-level-customizations"></a>Синтаксис настроек на уровне документа  
+## <a name="syntax-for-document-level-customizations"></a>Синтаксис для настроек уровня документа  
   
-```  
+```xml 
 <application>  
   <customization  
     id  
@@ -37,9 +38,9 @@ ms.lasthandoff: 04/27/2018
 </application>  
 ```  
   
-## <a name="syntax-for-application-level-add-ins"></a>Синтаксис надстроек уровня приложения  
+## <a name="syntax-for-application-level-add-ins"></a>Синтаксис для надстроек уровня приложения  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/27/2018
   
  Элемент `application` имеет следующий элемент.  
   
-### <a name="customization"></a>настройка  
+### <a name="customization"></a>Настройка  
  Роль `customization` элемент в `vstov3` пространство имен определяется в [ &#60;настройки&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>Код  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -83,14 +84,14 @@ ms.lasthandoff: 04/27/2018
 </vstav3:application>  
 ```  
   
-## <a name="vsto-add-in-example"></a>Примеры надстройки VSTO  
+## <a name="vsto-add-in-example"></a>Пример надстройки VSTO  
   
 ### <a name="description"></a>Описание  
  В следующем примере кода показан элемент `application` в решении Office уровня приложения, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Код  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

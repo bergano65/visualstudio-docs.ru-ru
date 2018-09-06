@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326869"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774920"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Развертывание расширений для инструментов SharePoint в Visual Studio
 
@@ -134,7 +134,7 @@ ms.locfileid: "36326869"
 
 6.  В **обозревателе решений**, откройте контекстное меню для шаблона проекта или элемента проекта и затем выберите **выгрузить проект**.
 
-7.  Снова откройте контекстное меню для узла проекта и выберите **изменить***Имя_проекта_шаблона***.csproj** или **изменить***Имя_проекта_шаблона***. VBPROJ**.
+7.  Снова откройте контекстное меню для узла проекта и выберите **изменить**_Имя_проекта_шаблона_**.csproj** или **изменить**  _Имя_проекта_шаблона_**.vbproj**.
 
 8.  Найдите следующие `VSTemplate` элемент в файле проекта.
 

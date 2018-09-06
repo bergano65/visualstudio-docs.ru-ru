@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626004"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774592"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство: Добавление страницы приложения в рабочий процесс
   В этом пошаговом руководстве демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса. Оно основано на проекте, описанную в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -337,7 +337,7 @@ ms.locfileid: "42626004"
 
 14. Повторите шаги 11 – 13 для других документов в списке Общие документы. (Точное число документов, не имеет значения.)
 
-15. Отобразить страницу приложения сводки отчета о расходах, открыв в браузере следующий URL-адрес: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Отображать страницу приложения сводки отчета по расходам, открыв следующий URL-адрес в веб-браузер: **http://**_имя_системы_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Страница сводки отчета по расходам перечислены все отчеты о расходах, превышен лимит, сумму, которую превышения и общая сумма для всех отчетов.
 

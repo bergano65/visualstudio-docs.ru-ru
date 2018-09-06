@@ -20,29 +20,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 01a85b214c44f3b48a91d82a5abd59bcf4c9ac5c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675162"
 ---
 # <a name="custom-document-properties-overview"></a>Общие сведения о свойствах пользовательского документа
 
-При построении проекта уровня документа Visual Studio добавляет два пользовательских свойств документа в проекте: \_AssemblyLocation и \_AssemblyName. Когда пользователь открывает документ, приложение Microsoft Office проверяет эти настраиваемые свойства документа. Если они существуют в документе, приложение загружает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которая запускает настройку. Дополнительные сведения см. в разделе [решений архитектуры Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+При сборке проекта уровня документа Visual Studio добавляет две пользовательские свойства документа в проекте: \_AssemblyLocation и \_AssemblyName. Когда пользователь открывает документ, приложение Microsoft Office проверяет наличие настраиваемых свойств документа. Если они существуют в документе, приложение загружает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которая запускает настройку. Дополнительные сведения см. в разделе [решений архитектура Microsoft Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_Имя сборки
+## <a name="assemblyname"></a>\_Имя_сборки
 
-Это свойство содержит идентификатор CLSID интерфейса в компоненте загрузчика решения Office [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Значение идентификатора CLSID — 4 4E3C66D5 - 58D-491E-A7D4-64AF99AF6E8B. Никогда не следует изменять это значение.
+Это свойство содержит CLSID интерфейса в компоненте загрузчик решений Office [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Значение идентификатора CLSID — 4 4E3C66D5 - 58D-491E-A7D4-64AF99AF6E8B. Никогда не изменяйте это значение.
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-Это свойство содержит строку, подробную информацию о манифеста развертывания для настройки. Дополнительные сведения о манифестах см. в разделе [манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Это свойство содержит строку, которая предоставляет сведения о манифесте развертывания для настройки. Дополнительные сведения о манифестах см. в разделе [манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Значение свойства The_AssemblyLocation может иметь различные форматы, в зависимости от способа развертывания решения:
+ Значение свойства The_AssemblyLocation могут иметь различные форматы, в зависимости от способа развертывания решения:
 
-- Если решение публикуется устанавливаться с веб-сайта, UNC-путь или компакт-ДИСК или USB-накопитель, свойства _AssemblyLocation имеет формат *DeploymentManifestPath*|*SolutionID*. Следующая строка представляет пример:
+- Если решение публикуется устанавливаться с веб-сайта, UNC-путь или компакт-диска или USB-накопитель, свойства _AssemblyLocation имеет формат *DeploymentManifestPath*|*SolutionID*. Следующая строка представляет пример:
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
@@ -50,12 +51,12 @@ ms.lasthandoff: 05/17/2018
 
      ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
- *SolutionID* представляет собой идентификатор GUID, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] используется для идентификации решения. *SolutionID* создается автоматически при построении проекта. **Vstolocal** условие указывает на [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , сборка должна быть загружена из той же папке, что и документ.
+ *SolutionID* представляет собой идентификатор GUID, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] используется для идентификации решения. *SolutionID* создается автоматически при сборке проекта. **Vstolocal** условие указывает на [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] что сборка должна быть загружена из той же папке, что документ.
 
 ## <a name="see-also"></a>См. также
 
 - [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
 - [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Как: публикация решения Office с помощью ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Как: создавать и изменять настраиваемые свойства документа](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Практическое: публикация решения Office с помощью ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Практическое: Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)

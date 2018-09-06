@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119516"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774798"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Практическое: изменение конфигурации развертывания SharePoint
   Можно создать конфигурацию развертывания или изменить существующую конфигурацию развертывания. Например можно выполнить за один шаг или изменить порядок действий, описанных в процесс развертывания. Вы можете для создания или изменения конфигураций развертывания, поскольку невозможно изменить конфигурации встроенные и добавленные программным способом.  
@@ -33,7 +33,7 @@ ms.locfileid: "37119516"
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Для создания конфигурации развертывания SharePoint  
   
-1.  В **обозревателе решений**, выберите проект SharePoint и затем в строке меню выберите **проекта**, * имя_проекта ***свойства**.  
+1.  В **обозревателе решений**, выберите проект SharePoint и затем в строке меню выберите **проекта**, _имя_проекта_**свойства**.  
   
 2.  На **SharePoint** вкладке, выберите **New** кнопки.  
   

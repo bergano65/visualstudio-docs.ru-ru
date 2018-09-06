@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e279e6db1acf4cb277c8734fa24f965a8236e7ec
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692763"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675492"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Проект обновления, параметры
   Используйте страницу **обновления проектов** , чтобы указать, будет ли Visual Studio автоматически изменять проекты надстроек VSTO для версии Office, установленной на компьютере разработчика.  
@@ -37,6 +37,6 @@ ms.locfileid: "34692763"
   
 ## <a name="see-also"></a>См. также  
  [Обновление и перенос решений Office](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Как: решений обновления Office.](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
+ [Практическое: решений обновления Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   
