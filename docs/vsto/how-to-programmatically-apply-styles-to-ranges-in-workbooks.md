@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное применение стилей к диапазонам в книгах | Документы Microsoft'
+title: 'Практическое: программное применение стилей к диапазонам в книгах'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14fd6ddc049214439a69fa3fabf0140256755da3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674463"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Практическое руководство. Программное применение стилей к диапазонам в книгах
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Практическое: программное применение стилей к диапазонам в книгах
   К областям в книгах можно применять именованные стили. В Excel реализовано несколько предварительно определенных стилей.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
  В диалоговом окне **Формат ячеек** отображаются все параметры, которые можно использовать для форматирования ячеек, причем каждый такой параметр доступен из кода. Для отображения этого диалогового окна в Excel щелкните пункт **Ячейки** в меню **Формат** .  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>Применение стиля к именованному диапазону в настройке на уровне документа  
+## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>Применение стиля к именованному диапазону в настройке на уровне документа  
   
 1.  Создайте новый стиль и задайте его атрибуты.  
   
@@ -42,14 +43,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
      [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>Удаление стиля из именованного диапазона в настройке на уровне документа  
+## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>Удаление стиля из именованного диапазона в настройке на уровне документа  
   
 1.  Примените к диапазону стиль «Обычный». Этот код следует разместить в классе листа, а не в классе `ThisWorkbook` .  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
      [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>Применение стиля к именованному диапазону в надстройке VSTO  
+## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>Применение стиля к именованному диапазону в надстройке VSTO  
   
 1.  Создайте новый стиль и задайте его атрибуты.  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-an-vsto-add-in"></a>Удаление стиля из именованного диапазона в надстройке VSTO  
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>Удаление стиля из именованного диапазона в надстройке VSTO  
   
 1.  Примените к диапазону стиль «Обычный».  
   

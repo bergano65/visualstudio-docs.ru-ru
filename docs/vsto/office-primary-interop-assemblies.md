@@ -1,5 +1,5 @@
 ---
-title: Основные сборки взаимодействия Office | Документы Microsoft
+title: Office - основные сборки взаимодействия
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1851fd05999bfc2d925cbe4a079be3a9f4139db
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 79004da78860e3733c9f363ae8dbb2758b7c8291
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693475"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675258"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
   Для использования компонентов приложения Microsoft Office из проекта Office необходимо использовать основную сборку взаимодействия (PIA) для приложения. Основная сборка взаимодействия позволяет управляемому коду взаимодействовать с основанной на COM объектной моделью приложения Microsoft Office.  
@@ -37,7 +37,7 @@ ms.locfileid: "34693475"
   
 -   [Полный список основных сборок взаимодействия для приложений Microsoft Office](#pialist)  
   
- Дополнительные сведения об основных сборках взаимодействия см. в разделе [основные сборки взаимодействия](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
+ Дополнительные сведения об основных сборках взаимодействия см. в разделе [основных сборок взаимодействия](http://msdn.microsoft.com/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
 ##  <a name="separateassemblies"></a> Разделение основных сборок взаимодействия для построения и выполнения проектов  
  Visual Studio использует разные наборы основных сборок взаимодействия на компьютере разработки. Эти разные наборы сборок хранятся в следующих расположениях.  
@@ -59,21 +59,21 @@ ms.locfileid: "34693475"
   
 -   *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14*  
   
-     (или *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14* на 64-разрядных операционных системах)  
+     (или *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14* в 64-разрядных операционных системах)  
   
 -   *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15*  
   
-     (или *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15* на 64-разрядных операционных системах)  
+     (или *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15* в 64-разрядных операционных системах)  
   
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Основные сборки взаимодействия в глобальном кэше сборок  
  Для выполнения определенных задач разработки основные сборки взаимодействия должны быть установлены и зарегистрированы в глобальном кэше сборок на компьютере разработки. Как правило, сборки устанавливаются автоматически при установке Office на компьютере разработки. Дополнительные сведения см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
- Присутствие основных сборок взаимодействия Office на компьютере конечного пользователя не требуется для запуска решений Office. Дополнительные сведения см. в разделе [разработки и создавать решения Office](../vsto/designing-and-creating-office-solutions.md).  
+ Присутствие основных сборок взаимодействия Office на компьютере конечного пользователя не требуется для запуска решений Office. Дополнительные сведения см. в разделе [проектирования и создания решений Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ##  <a name="usingfeatures"></a> Использование компонентов нескольких приложений Microsoft Office в одном проекте  
  Каждый шаблон проекта Office в Visual Studio предназначен для работы с одним приложением Microsoft Office. Чтобы использовать компоненты в нескольких приложениях Microsoft Office (или в приложении или компоненте, для которого нет проекта в Visual Studio) необходимо добавить ссылку на нужные основные сборки взаимодействия.  
   
- В большинстве случаев потребуется добавить ссылки на сборки, которые устанавливаются Visual Studio в *%ProgramFiles%\Microsoft Visual Studio 12. 0\visual Studio Tools для Office\PIA\* каталога. Эти версии сборок отображаются на вкладке **Платформа** диалогового окна **Диспетчер ссылок** . Дополнительные сведения см. в разделе [как: Office целевых приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ В большинстве случаев следует добавить ссылки на сборки, которые устанавливаются с Visual Studio в *%ProgramFiles%\Microsoft Visual Studio 12. 0\visual Studio Tools для Office\PIA\* каталога. Эти версии сборок отображаются на вкладке **Платформа** диалогового окна **Диспетчер ссылок** . Дополнительные сведения см. в разделе [как: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
  Если вы установили и зарегистрировали основные сборки взаимодействия в глобальном кэше сборок, эти версии сборок отображаются на вкладке **COM** диалогового окна **Диспетчер ссылок** . Следует избегать добавления ссылок на эти версии сборок, так как имеются несколько проблем разработки, которые могут возникать при их использовании. Например, если вы зарегистрировали разные версии основных сборок взаимодействия в глобальном кэше сборок, проект будет автоматически привязан к версии сборки, которая была зарегистрирована последней, даже если вы укажете другую версию сборки на вкладке **COM** диалогового окна **Диспетчер ссылок** .  
   
@@ -107,17 +107,17 @@ ms.locfileid: "34693475"
 |Microsoft Visual Basic for Applications Extensibility 5.3|Microsoft.Vbe.Interop.dll|  
   
 ### <a name="binding-redirect-assemblies"></a>Сборки переадресации привязок  
- При установке и регистрации основных сборок взаимодействия Office в глобальном кэше сборок (вместе с Office или путем установки распространяемого пакета для основных сборок взаимодействия) сборки переадресации привязок также устанавливаются только в глобальном кэше сборок. Эти сборки позволяют убедитесь в том, что основные сборки взаимодействия для исправления загружены во время выполнения. Например, когда решение, которое ссылается на сборку [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] , выполняется на компьютере с версией [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] той же основной сборки взаимодействия, сборка переадресации привязки дает среде выполнения [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] указание загрузить версию [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] основной сборки взаимодействия. Дополнительные сведения см. в разделе [как: Включение и отключение автоматического перенаправления привязки](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+ При установке и регистрации основных сборок взаимодействия Office в глобальном кэше сборок (вместе с Office или путем установки распространяемого пакета для основных сборок взаимодействия) сборки переадресации привязок также устанавливаются только в глобальном кэше сборок. Эти сборки позволяют гарантировать загрузку правильной версии основных сборок взаимодействия во время выполнения. Например, когда решение, которое ссылается на сборку [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] , выполняется на компьютере с версией [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] той же основной сборки взаимодействия, сборка переадресации привязки дает среде выполнения [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] указание загрузить версию [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] основной сборки взаимодействия. Дополнительные сведения см. в разделе [как: Включение и отключение автоматического перенаправления привязки](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>См. также  
- [Как: Office целевых приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [Общие сведения о модели объектов Excel](../vsto/excel-object-model-overview.md)   
+ [Практическое: Target Office приложений с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md)   
  [Решения InfoPath](../vsto/infopath-solutions.md)   
- [Общие сведения о модели объектов Outlook](../vsto/outlook-object-model-overview.md)   
+ [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)   
  [Решения PowerPoint](../vsto/powerpoint-solutions.md)   
- [Решения Project](../vsto/project-solutions.md)   
- [Общие сведения о модели объектов Visio](../vsto/visio-object-model-overview.md)   
- [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)   
- [Общие справочные сведения &#40;разработка решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Решения проектов](../vsto/project-solutions.md)   
+ [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)   
+ [Обзор объектной модели Word](../vsto/word-object-model-overview.md)   
+ [Общий справочник &#40;разработка решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
   
   

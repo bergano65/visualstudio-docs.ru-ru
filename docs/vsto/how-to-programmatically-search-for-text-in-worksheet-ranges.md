@@ -1,5 +1,5 @@
 ---
-title: 'Как: программный поиск текста в диапазонах листа | Документы Microsoft'
+title: 'Практическое: программный поиск текста в диапазонах листа'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,37 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2749834f459085b8d182b58f12a4c372f7493cba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba3c4cea78e2c5c32d1bb7159243155e18fd01ce
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674439"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Практическое руководство. Программный поиск текста в диапазонах ячеек на листе
-  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет искать текст в диапазоне. Этот текст также может иметь строки ошибок, которые могут присутствовать в ячейку листа, таких как `#NULL!` или `#VALUE!`. Дополнительные сведения о строках ошибок см. в разделе [значения ячеек ошибки](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Практическое: программный поиск текста в диапазонах листа
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет искать текст в диапазоне. Этот текст может также быть любой из строки ошибок, которые могут отображаться в ячейке листа, такие как `#NULL!` или `#VALUE!`. Дополнительные сведения о строках ошибок см. в разделе [ошибка значений ячеек](http://msdn.microsoft.com/library/office/ff839168.aspx).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Следующий пример просматривает диапазон с именем `Fruits` и изменяет параметры шрифта для ячеек, содержащих слово «apples». Эта процедура также используется <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> метод, который использует предыдущий набор настроек повторения поиска. Укажите ячейку, после которого необходимо выполнить поиск и <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> метод обрабатывает rest.  
+ Следующий пример выполняет поиск в диапазоне с именем `Fruits` и изменяет параметры шрифта для ячеек, содержащих слово «apples». В этой процедуре также используется <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> метод, который использует предыдущий набор параметров, чтобы повторить поиск поиска. Указывается ячейка, после которого следует выполнить поиск и <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> всем остальным занимается метод.  
   
 > [!NOTE]  
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Метода поиск с начала диапазона поиска после достижения конца диапазона. Код необходимо убедиться, что поиск вход в бесконечный цикл. В этом примере показано, как обрабатывать это с помощью <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> свойство.  
+>  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Метода поиск с начала диапазона поиска после достижения конца диапазона. Код необходимо убедиться, что поиск не обтекает бесконечный цикл. В этом примере показан один из способов обработки это с помощью <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> свойство.  
   
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [практические советы. Использование метода поиска в надстройке Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции I: используйте метод Find в надстройке Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
-### <a name="to-search-for-text-in-a-worksheet-range"></a>Для поиска текста в диапазоне листа  
+## <a name="to-search-for-text-in-a-worksheet-range"></a>Для поиска текста в диапазоне листа  
   
-1.  Объявление переменных для отслеживания весь диапазон, первого найденного диапазона и текущего найденного диапазона.  
+1.  Объявление переменных для отслеживания весь диапазон первого найденного диапазона и текущего найденного диапазона.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
      [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
   
-2.  Найдите первое совпадение, указав все параметры, кроме ячейки для поиска.  
+2.  Найдите первое совпадение, указав все параметры, за исключением ячейки для поиска.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
      [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
   
-3.  Продолжайте поиск при условии, что совпадений.  
+3.  Продолжайте поиск до тех пор, пока совпадения.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
      [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
      [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
   
-7.  Выполните поиск.  
+7.  Выполните новый поиск.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
      [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
@@ -80,8 +81,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>См. также  
  [Работа с диапазонами](../vsto/working-with-ranges.md)   
- [Как: программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Как: ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Практическое: программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Практическое: ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

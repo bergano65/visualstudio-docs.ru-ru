@@ -1,5 +1,5 @@
 ---
-title: 'Как: программный поиск и замена текста в документах | Документы Microsoft'
+title: 'Практическое: программными средствами поиска и замены текста в документах'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,25 +19,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9967fb6bb0b9ecf377763c25037089bf600145c6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4a2e1dd1cb1a9e10ddaa442318094ac258a6dc4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673953"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>Практическое руководство. Программный поиск и замена текста в документах
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Практическое: программными средствами поиска и замены текста в документах
   Объект <xref:Microsoft.Office.Interop.Word.Find> является членом объектов <xref:Microsoft.Office.Interop.Word.Selection> и <xref:Microsoft.Office.Interop.Word.Range>, каждый из которых можно использовать для поиска текста в документах Microsoft Office Word. Команда замены является расширением команды поиска.  
   
  С помощью объекта <xref:Microsoft.Office.Interop.Word.Find> можно выполнять операцию перебора документа Microsoft Office Word и поиска конкретного текста, форматирования или стиля, а свойство <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> можно использовать для замены всех найденных элементов.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="using-a-selection-object"></a>Использование объекта Selection  
+## <a name="use-a-selection-object"></a>Использование объекта Selection  
  При использовании объекта <xref:Microsoft.Office.Interop.Word.Selection> для поиска текста все заданные условия применяются только для поиска текущего выделенного текста. Если точкой вставки является <xref:Microsoft.Office.Interop.Word.Selection>, то поиск выполняется по документу. Если будет найден элемент, соответствующий условиям поиска, он будет автоматически выделен.  
   
  Следует отметить, что условия <xref:Microsoft.Office.Interop.Word.Find> являются накопительными. Это означает, что условия добавляются к предыдущим условиям поиска. Для сброса форматирования из предыдущих операций поиска перед выполнением нового поиска используйте метод <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A>.  
   
-#### <a name="to-find-text-using-a-selection-object"></a>Поиск текста с помощью объекта Selection  
+### <a name="to-find-text-using-a-selection-object"></a>Поиск текста с помощью объекта Selection  
   
 1.  Назначьте переменной строку поиска.  
   
@@ -59,10 +60,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#67)]
  [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]  
   
-## <a name="using-a-range-object"></a>Использование объекта Range  
- Объект <xref:Microsoft.Office.Interop.Word.Range> позволяет искать текст, ничего не отображая в пользовательском интерфейсе. <xref:Microsoft.Office.Interop.Word.Find> Возвращает **True** Если найден текст, соответствующий условиям поиска, и **False** Если это не так. Он также переопределяет объект <xref:Microsoft.Office.Interop.Word.Range>, чтобы он соответствовал условиям поиска при обнаружении текста.  
+## <a name="use-a-range-object"></a>Использование объекта Range  
+ Объект <xref:Microsoft.Office.Interop.Word.Range> позволяет искать текст, ничего не отображая в пользовательском интерфейсе. <xref:Microsoft.Office.Interop.Word.Find> Возвращает **True** Если найден текст, соответствующий критерию поиска, и **False** Если это не так. Он также переопределяет объект <xref:Microsoft.Office.Interop.Word.Range>, чтобы он соответствовал условиям поиска при обнаружении текста.  
   
-#### <a name="to-find-text-using-a-range-object"></a>Поиск текста с помощью объекта Range  
+### <a name="to-find-text-using-a-range-object"></a>Поиск текста с помощью объекта Range  
   
 1.  Определите объект <xref:Microsoft.Office.Interop.Word.Range>, состоящий из второго абзаца в документе.  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]  
   
-2.  С помощью <xref:Microsoft.Office.Interop.Word.Range.Find%2A> свойство <xref:Microsoft.Office.Interop.Word.Range> объекта, сначала сбросьте все существующие параметры форматирования и выполните поиск строки **искать**.  
+2.  С помощью <xref:Microsoft.Office.Interop.Word.Range.Find%2A> свойство <xref:Microsoft.Office.Interop.Word.Range> объект, сначала сбросьте все существующие параметры форматирования и затем выполните поиск строки **искать**.  
   
      [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]
      [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]  
@@ -98,19 +99,19 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#71)]
  [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]  
   
-## <a name="searching-for-and-replacing-text-in-documents"></a>Поиск и замена текста в документах  
- Следующий код выполняет поиск текущего выделенного фрагмента и заменяет все вхождения строки **искать** со строкой **обнаружен**.  
+## <a name="search-for-and-replace-text-in-documents"></a>Поиск и замена текста в документах  
+ Следующий код выполняет поиск текущего выделенного фрагмента и заменяет все вхождения строки **мне найти** строкой **обнаружен**.  
   
-#### <a name="to-search-for-and-replace-text-in-documents"></a>Поиск и замена текста в документах  
+### <a name="to-search-for-and-replace-text-in-documents"></a>Поиск и замена текста в документах  
   
 1.  Добавьте следующий пример кода в класс `ThisDocument` или `ThisAddIn` в своем проекте.  
   
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]  
   
-     Класс <xref:Microsoft.Office.Interop.Word.Find> имеет метод <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A>, а класс <xref:Microsoft.Office.Interop.Word.Replacement> также имеет свой собственный метод <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A>. При выполнении операций поиска и замены необходимо использовать метод ClearFormatting обоих объектов. Если его использовать только на объекте <xref:Microsoft.Office.Interop.Word.Find>, то при замене текста можно получить непредвиденные результаты.  
+     Класс <xref:Microsoft.Office.Interop.Word.Find> имеет метод <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A>, а класс <xref:Microsoft.Office.Interop.Word.Replacement> также имеет свой собственный метод <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A>. При выполнении операций поиска и замены, необходимо использовать метод ClearFormatting обоих объектов. Если его использовать только на объекте <xref:Microsoft.Office.Interop.Word.Find>, то при замене текста можно получить непредвиденные результаты.  
   
-2.  Для замены каждого найденного элемента используйте метод <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> объекта <xref:Microsoft.Office.Interop.Word.Find>. Чтобы указать заменяемые элементы, используйте *заменить* параметра. Этот параметр может принимать одно из следующих значений <xref:Microsoft.Office.Interop.Word.WdReplace>:  
+2.  Для замены каждого найденного элемента используйте метод <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> объекта <xref:Microsoft.Office.Interop.Word.Find>. Чтобы указать заменяемые элементы, используйте *замените* параметра. Этот параметр может принимать одно из следующих значений <xref:Microsoft.Office.Interop.Word.WdReplace>:  
   
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> заменяет все найденные элементы.  
   
@@ -119,9 +120,9 @@ ms.lasthandoff: 04/16/2018
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> заменяет первый найденный элемент.  
   
 ## <a name="see-also"></a>См. также  
- [Как: программное задание параметров поиска в Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Как: программный перебор найденных элементов в документах](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Как: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Как: программное восстановление выделения после поиска](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Практическое: программное задание параметров поиска в Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Практическое: программный перебор найденных элементов в документах](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Практическое: программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Практическое: программное восстановление выделения после поиска](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   

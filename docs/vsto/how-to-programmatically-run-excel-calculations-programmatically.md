@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное выполнение вычислений Excel | Документы Microsoft'
+title: 'Практическое: программное выполнение вычислений Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b814a1e00520394ffaf569812548a371e9cae0a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dabde287d71736ab49f35acf968300bccee0d12
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673899"
 ---
-# <a name="how-to-programmatically-run-excel-calculations"></a>Как: программное выполнение вычислений Excel  
-  Подобный процесс используется для вычислений в <xref:Microsoft.Office.Tools.Excel.NamedRange> управления или собственный объект диапазона Excel.  
+# <a name="how-to-programmatically-run-excel-calculations"></a>Практическое: программное выполнение вычислений Excel  
+  Подобный процесс используется для вычислений в <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="running-calculations-in-a-namedrange-control"></a>Выполнение вычислений в элементе управления NamedRange  
- В следующем примере создается <xref:Microsoft.Office.Tools.Excel.NamedRange> в ячейке А1, а затем вычисляет ячейки. Этот код следует разместить в классе листа, а не в классе `ThisWorkbook` .  
+## <a name="run-calculations-in-a-namedrange-control"></a>Выполнение вычислений в элементе управления NamedRange  
+ В следующем примере создается <xref:Microsoft.Office.Tools.Excel.NamedRange> ячейку A1, а затем вычисляет ячейки. Этот код следует разместить в классе листа, а не в классе `ThisWorkbook` .  
   
-#### <a name="to-run-calculations-in-a-namedrange-control"></a>Выполнение вычислений в элементе управления NamedRange  
+### <a name="to-run-calculations-in-a-namedrange-control"></a>Выполнение вычислений в элементе управления NamedRange  
   
 1.  Создайте именованный диапазон.  
   
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]
      [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]  
   
-## <a name="running-calculations-in-a-native-excel-range"></a>Выполнение вычислений в собственном диапазоне Excel  
+## <a name="run-calculations-in-a-native-excel-range"></a>Выполнение вычислений в собственном диапазоне Excel  
   
-#### <a name="to-run-calculations-in-a-native-excel-range"></a>Для выполнения вычислений в собственном диапазоне Excel  
+### <a name="to-run-calculations-in-a-native-excel-range"></a>Выполнение вычислений в собственном диапазоне Excel  
   
 1.  Создайте именованный диапазон.  
   

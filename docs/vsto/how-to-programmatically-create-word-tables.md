@@ -1,5 +1,5 @@
 ---
-title: 'Как: программное создание таблиц Word | Документы Microsoft'
+title: 'Практическое: программное создание таблиц Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f77b6ee70d56c12b6c1a6b9c88de36a9adb7d92e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d545b82c913573a5fbfb8d9397efa9ca672e1896
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675486"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>Практическое руководство. Программное таблиц в Word
+# <a name="how-to-programmatically-create-word-tables"></a>Практическое: программное создание таблиц Word
   Коллекция <xref:Microsoft.Office.Interop.Word.Tables> является членом классов <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> и <xref:Microsoft.Office.Interop.Word.Range>. Это означает, что таблицу можно создать в любом из их контекстов. Для добавления таблицы в указанном диапазоне можно использовать метод <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> коллекции <xref:Microsoft.Office.Interop.Word.Tables>.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="creating-tables-in-document-level-customizations"></a>Создание таблиц в настройках на уровне документа  
+## <a name="create-tables-in-document-level-customizations"></a>Создание таблиц в настройках уровня документа  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>Добавление простой таблицы в документ  
+### <a name="to-add-a-table-to-a-document"></a>Чтобы добавить таблицу в документ  
   
 -   Для добавления таблицы, состоящей из трех строк и четырех столбцов, в начало документа используйте метод <xref:Microsoft.Office.Interop.Word.Tables.Add%2A>.  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
  При создании таблицы она автоматически добавляется в коллекцию <xref:Microsoft.Office.Interop.Word.Tables> ведущего элемента <xref:Microsoft.Office.Tools.Word.Document>. Затем на таблицу можно ссылаться по номеру ее элемента с помощью свойства <xref:Microsoft.Office.Interop.Word.Tables.Item%2A>, как показано в следующем коде.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>Ссылка на таблицу по номеру элемента  
+### <a name="to-refer-to-a-table-by-item-number"></a>Ссылка на таблицу по номеру элемента  
   
 1.  Используйте свойство <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> и укажите номер элемента таблицы, на которую необходимо ссылаться.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
  Каждый объект <xref:Microsoft.Office.Interop.Word.Table> также имеет свойство <xref:Microsoft.Office.Interop.Word.Table.Range%2A>, которое позволяет настроить атрибуты форматирования.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>Применение стиля к таблице  
+### <a name="to-apply-a-style-to-a-table"></a>Применение стиля к таблице  
   
 1.  Для применения одного из встроенных стилей Word к таблице используйте свойство <xref:Microsoft.Office.Interop.Word.Table.Style%2A>.  
   
@@ -60,9 +61,9 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
      [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]  
   
-## <a name="creating-tables-in-vsto-add-ins"></a>Создание таблиц в надстройках VSTO  
+## <a name="create-tables-in-vsto-add-ins"></a>Создание таблиц в надстройках VSTO  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>Добавление простой таблицы в документ  
+### <a name="to-add-a-table-to-a-document"></a>Чтобы добавить таблицу в документ  
   
 -   Для добавления таблицы, состоящей из трех строк и четырех столбцов, в начало документа используйте метод <xref:Microsoft.Office.Interop.Word.Tables.Add%2A>.  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/16/2018
   
  При создании таблицы она автоматически добавляется в коллекцию <xref:Microsoft.Office.Interop.Word.Tables> в <xref:Microsoft.Office.Interop.Word.Document>. Затем на таблицу можно ссылаться по номеру ее элемента с помощью свойства <xref:Microsoft.Office.Interop.Word.Tables.Item%2A>, как показано в следующем коде.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>Ссылка на таблицу по номеру элемента  
+### <a name="to-refer-to-a-table-by-item-number"></a>Ссылка на таблицу по номеру элемента  
   
 1.  Используйте свойство <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> и укажите номер элемента таблицы, на которую необходимо ссылаться.  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/16/2018
   
  Каждый объект <xref:Microsoft.Office.Interop.Word.Table> также имеет свойство <xref:Microsoft.Office.Interop.Word.Table.Range%2A>, которое позволяет настроить атрибуты форматирования.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>Применение стиля к таблице  
+### <a name="to-apply-a-style-to-a-table"></a>Применение стиля к таблице  
   
 1.  Для применения одного из встроенных стилей Word к таблице используйте свойство <xref:Microsoft.Office.Interop.Word.Table.Style%2A>.  
   
@@ -94,9 +95,9 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]  
   
 ## <a name="see-also"></a>См. также  
- [Как: программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Как: программным образом добавить строки и столбцы в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Как: программное заполнение таблиц Word свойствами документа](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
+ [Практическое: программное добавление текста и форматирования в ячейки таблиц Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Практическое: программное добавление строк и столбцов в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Практическое: программное заполнение таблиц Word свойствами документа](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

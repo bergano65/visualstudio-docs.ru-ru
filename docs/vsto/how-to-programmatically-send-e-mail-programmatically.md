@@ -1,5 +1,5 @@
 ---
-title: 'Как: отправка электронной почты | Документы Microsoft'
+title: 'Практическое: Отправка сообщения электронной почты'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,32 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3ee656a8a4965f01969bad19d66d0ea6215bcbe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32977852ffbc4bb1411ed699cc97bb54035fada4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675405"
 ---
-# <a name="how-to-programmatically-send-e-mail"></a>Как: отправка по электронной почте  
-  Этот пример отправляет сообщение электронной почты, контакты, имеющие имя домена **example.com** в адресах электронной почты.  
+# <a name="how-to-programmatically-send-email"></a>Практическое: Отправка сообщения электронной почты  
+  Этот пример отправляет сообщение электронной почты, контакты, которые содержат имя домена **example.com** вводят адреса электронной почты.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ## <a name="example"></a>Пример  
  [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]  
   
-## <a name="compiling-the-code"></a>Компиляция кода  
+## <a name="compile-the-code"></a>Компиляция кода  
  Для этого примера требуются:  
   
--   Контакты, имя домена **example.com** в адресах электронной почты.  
+-   Контакты, которые содержат имя домена **example.com** вводят адреса электронной почты.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
- Не удаляйте код фильтра, который ищет имя домена **example.com**. Решение будет отправлять сообщения электронной почты для всех контактов, при удалении фильтра.  
+ Не удаляйте код фильтра, который ищет имя домена **example.com**. Решение будет отправлять сообщения электронной почты для всех контактов, если удалить фильтр.  
   
 ## <a name="see-also"></a>См. также  
  [Работа с элементами почты](../vsto/working-with-mail-items.md)   
- [Как: программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Как: программный доступ к контактам](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Практическое: программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
+ [Практическое: программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Практическое: программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

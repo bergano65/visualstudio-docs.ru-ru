@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566542"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774782"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 Доменный язык можно установить на своем компьютере или на других компьютерах. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должна быть установлена на конечном компьютере.
@@ -36,7 +36,7 @@ ms.locfileid: "39566542"
 
     1.  В **обозревателе решений**, щелкните правой кнопкой мыши **DslPackage** проекта, а затем нажмите кнопку **открыть папку в проводнике Windows**.
 
-    2.  Найдите файл **bin\\\*\\***Ваш_проект***. DslPackage.vsix**
+    2.  Найдите файл **bin\\\*\\**_Ваш_проект_**. DslPackage.vsix**
 
 2.  Копировать **.vsix** файл на конечном компьютере, на котором вы хотите установить DSL. Это может быть как ваш собственный компьютер, так и любой другой.
 
@@ -89,7 +89,7 @@ ms.locfileid: "39566542"
 
     -   В обозревателе DSL щелкните корневой узел и в окне свойств просмотрите:
 
-        -   Описание:
+        -   Описание
 
         -   Версия
 

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 095325fc8312747b61ff4312c5fe616ae79ce045
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8bcac83d23bae3d8c269a53a95fedb9507245e9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152962"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775830"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Добавить пользовательский элемент управления на начальную страницу
 В этом пошаговом руководстве показано, как добавить ссылку на библиотеку DLL для настраиваемой начальной страницы. В примере в решение добавляется пользовательский элемент управления, построения пользовательского элемента управления, а затем ссылается на сборку на начальной странице в *.xaml* файл. Пользовательский элемент управления, который функционирует как базовый веб-браузер, размещается на новой вкладке.  
@@ -177,7 +177,7 @@ ms.locfileid: "39152962"
   
 1.  Скопируйте файл XAML и все вспомогательные текстовые файлы или разметки файлы, к *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  папки.  
   
-2.  Если начальная страница ссылается на все элементы или типы в сборках, которые не установлены в Visual Studio, скопируйте сборки, а затем вставьте их в * папки установки Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Если начальная страница ссылается на все элементы или типы в сборках, которые не установлены в Visual Studio, скопируйте сборки, а затем вставьте их в _папка установки Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
   
 3.  В командной строке Visual Studio, введите **devenv/rootsuffix Exp** открыть экспериментальный экземпляр Visual Studio.  
   

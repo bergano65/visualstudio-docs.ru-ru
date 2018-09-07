@@ -1,5 +1,5 @@
 ---
-title: Примеры разработки решений Office | Документы Microsoft
+title: Примеры разработки решений Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571421"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674769"
 ---
 # <a name="office-development-samples"></a>Примеры разработки решений Office
   Visual Studio содержит примеры приложений, которые демонстрируют, как использовать инструменты разработчика Microsoft Office для создания решений Office. Код в этих примерах показывает синтаксис, структуру и приемы, используемые для сборки решений Office.  
   
- Наиболее актуальные примеры см. в разделе [примеры разработчиков MSDN: сведения о коде](http://go.microsoft.com/fwlink/?LinkID=248199) на веб-сайте Майкрософт.  
+ Наиболее актуальные примеры см. в разделе [примеры разработчиков MSDN: обучайтесь через код](http://go.microsoft.com/fwlink/?LinkID=248199) на веб-сайте Майкрософт.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +44,7 @@ ms.locfileid: "34571421"
 |Пример взаимодействия VBA и VSTO|Демонстрирует способ вызова метода в настройке на уровне документа для Excel из кода Visual Basic для приложений (VBA) в книге.<br /><br /> Этот пример доступен только в Интернете.|  
   
 ## <a name="see-also"></a>См. также  
- [Примеры разработчиков MSDN: сведения о примерах кода](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Примеры разработчиков MSDN: сведения о примерах коде](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)  
   
   
