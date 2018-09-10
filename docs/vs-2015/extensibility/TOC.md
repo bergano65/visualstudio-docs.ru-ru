@@ -94,7 +94,7 @@
 ## [Расширение фильтра обозревателя решений](extending-the-solution-explorer-filter.md)
 ## [Управление загрузкой проекта в решении](managing-project-loading-in-a-solution.md)
 # [Создание пользовательских шаблонов проектов и элементов](creating-custom-project-and-item-templates.md)
-## [Обновление настраиваемых шаблонов проектов и элементов для Visual Studio 15](upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md)
+## [Обновление настраиваемых шаблонов проектов и элементов для Visual Studio 15](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
 ## [Практическое руководство. Использование мастеров для шаблонов проекта](how-to-use-wizards-with-project-templates.md)
 ## [Справочник по схеме шаблонов Visual Studio](visual-studio-template-schema-reference.md)
 ### [Элемент AppliesTo (шаблоны Visual Studio)](appliesto-element-visual-studio-templates.md)
