@@ -1,5 +1,5 @@
 ---
-title: Отладка клиентского скрипта | Документы Microsoft
+title: Отладка клиентского скрипта | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464814"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283123"
 ---
 # <a name="client-side-script-debugging"></a>Отладка клиентского скрипта
 Отладчик Visual Studio предоставляет всеобъемлющую среду отладки для обнаружения и исправления ошибок в скриптах на стороне клиента на страницах ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Открытие документов скрипта  
-Просмотреть списки серверных и клиентских сценариев документы в **обозревателе решений** для просмотра. В окне **Обозреватель решений**можно открыть любой документ скрипта. Для получения дополнительной информации см. [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+Списки документов на стороне сервера и клиентского скрипта **обозревателе решений** для просмотра. В окне **Обозреватель решений**можно открыть любой документ скрипта. Для получения дополнительной информации см. [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Сопоставление точек останова  
  В Visual Studio невозможно непосредственно отлаживать код на стороне сервера, но можно установить точку останова в файле, находящемся на сервере. Visual Studio автоматически сопоставляет точку останова с соответствующим расположением в файле на стороне клиента и создает сопоставленную точку останова в коде на стороне клиента.  
@@ -59,11 +59,11 @@ ms.locfileid: "31464814"
 ## <a name="debugging-ajax-script-applications"></a>Отладка приложений Ajax-скриптов  
  Веб-приложения с включенной технологией Ajax делают сложным использование кода скрипта и ставят проблемы специальной отладки. Дополнительные сведения о методах отладки Ajax см. в разделе  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)можно открыть любой документ скрипта.  
+ [Отладка и трассировка Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Ограничения на отладку скриптов](../debugger/limitations-on-script-debugging.md)   
- [Окна переменных](../debugger/debugger-windows.md)   
+ [Переменной Windows](../debugger/debugger-windows.md)   
  [Окно интерпретации](../ide/reference/immediate-window.md)   
- [Отладка и трассировка Общие сведения о приложениях Ajax](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Отладка и трассировка Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

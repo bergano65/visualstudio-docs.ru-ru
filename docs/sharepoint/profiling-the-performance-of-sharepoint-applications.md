@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67623989fc8ff2bf2d44bc435a48db81fecb1fba
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118058"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282345"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Профилирование производительности приложений SharePoint
 
@@ -62,10 +62,10 @@ ms.locfileid: "37118058"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Профилирование приложения SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|В этом разделе показано выполнение анализа профиля выборки для приложения SharePoint.|
-|[Проверка производительности приложения перед выпуском](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|В этой статье описывается создание нагрузочных тестов, которые помогают нагрузочное тестирование приложений SharePoint.|
+|[Проверка производительности приложения перед выпуском](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|В этой статье описывается создание нагрузочных тестов, которые помогают нагрузочное тестирование приложений SharePoint.|
 |[Модульное тестирование кода](/visualstudio/test/unit-test-your-code)|Описывает способ поиска логических ошибок в коде с помощью модульных тестов.|
 |[Тестирование приложений SharePoint 2010 с помощью закодированных тестов пользовательского интерфейса](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|В этой статье описывается тестирование пользовательского интерфейса приложений SharePoint.|
 

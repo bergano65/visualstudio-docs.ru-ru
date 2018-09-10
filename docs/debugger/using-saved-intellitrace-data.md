@@ -1,5 +1,5 @@
 ---
-title: С помощью сохраненных данных IntelliTrace | Документы Microsoft
+title: С помощью сохраненных данных IntelliTrace | Документация Майкрософт
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54412cff3047f12ec17c8192dc40cd4ebfcbf55b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19bc4c0fd91284a5dd4da4a50bba5f2778904a28
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479602"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280069"
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 Переходите к определенным точкам выполнения приложения при запуске отладки из файла журнала IntelliTrace (.iTrace). Этот файл может содержать события, исключения, потоки, шаги теста, модули и другие системные сведения, которые фиксирует IntelliTrace во время работы приложения.  
   
  Убедитесь в наличии следующих элементов.  
   
--   Совпадающие файлы исходного кода и файлы символов (PDB) для кода приложения. В противном случае Visual Studio не удастся разрешить местоположения исходного кода, и отобразится сообщение "Символы не найдены". В разделе [укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) и [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).  
+-   Совпадающие файлы исходного кода и файлы символов (PDB) для кода приложения. В противном случае Visual Studio не удастся разрешить местоположения исходного кода, и отобразится сообщение "Символы не найдены". См. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) и [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).  
   
 -   Visual Studio Enterprise (не Professional и не Community) на компьютере разработчика или на другом компьютере для открытия ITRACE-файлов  
   
@@ -38,7 +38,7 @@ ms.locfileid: "31479602"
     |**Источник**|**См. разделы**|  
     |----------------|-------------|  
     |Сеанс IntelliTrace в Visual Studio Enterprise (но не в выпусках Professional или Community)|[Возможности IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
+    |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent либо отдельно, либо вместе с System Center 2012 R2 Operations Manager для веб-приложений ASP.NET и приложений SharePoint, работающих в развертывании|-   [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)<br />-   [Новые возможности для System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> Выберите действие  
@@ -72,14 +72,14 @@ ms.locfileid: "31479602"
   
 |**Раздел**|**Содержит**|**Источник сбора**|  
 |-----------------|------------------|---------------------------|  
-|[Нарушения производительности](#Performance)|События производительности с вызовами функций, превышающими заданный порог|Microsoft Monitoring Agent, либо автономного сборщика или с System Center 2012 R2 Operations Manager для веб-приложений ASP.NET, размещенных в IIS|  
+|[Нарушения производительности](#Performance)|События производительности с вызовами функций, превышающими заданный порог|Microsoft Monitoring Agent, либо автономного сборщика или с помощью System Center 2012 R2 Operations Manager для веб-приложений ASP.NET, размещенных в IIS|  
 |[Данные исключения](#ExceptionData)|Исключения, включая полный стек вызова для каждого исключения|Все источники|  
-|[Анализ](#Analysis)|Только для приложений SharePoint 2010 и SharePoint 2013. Выполнение диагностики событий IntelliTrace и SharePoint, например событий отладчика, событий ULS, необработанных исключений и других данных, записанных Microsoft Monitoring Agent.|Microsoft Monitoring Agent, либо автономного сборщика или с System Center 2012 R2 Operations Manager|  
+|[Анализ](#Analysis)|Только для приложений SharePoint 2010 и SharePoint 2013. Выполнение диагностики событий IntelliTrace и SharePoint, например событий отладчика, событий ULS, необработанных исключений и других данных, записанных Microsoft Monitoring Agent.|Microsoft Monitoring Agent, либо автономного сборщика или с помощью System Center 2012 R2 Operations Manager|  
 |[Сведения о системе](#SystemInfo)|Параметры и спецификации системы размещения|Все источники|  
 |[Список потоков](#ThreadsList)|Потоки, которые выполнялись во время сбора|Все источники|  
 |[Данные теста](#TestData)|Шаги теста и их результаты из сеанса тестирования|Test Manager|  
 |[Модули](#Modules)|Модули, которые целевой процесс загрузил в порядке их загрузки.|Все источники| 
-|[Веб-запроса](#Modules)|Веб-данных запроса для производства IIS веб-приложений SharePoint 2010 и SharePoint 2013|Microsoft Monitoring Agent и автономного сборщика| 
+|[Веб-запроса](#Modules)|Веб-запрос данных для рабочей среды IIS веб-приложений и SharePoint 2010 и SharePoint 2013|Microsoft Monitoring Agent и автономного сборщика| 
   
  Ниже приведены некоторые рекомендации, помогающие найти сведения в каждом разделе.  
   
@@ -100,7 +100,7 @@ ms.locfileid: "31479602"
   
 1.  В области **Нарушения производительности**просмотрите записанные события производительности, значения их полного времени выполнения и другие данные о событиях. Затем более глубоко проанализируйте методы, вызванные во время конкретного события производительности.  
   
-     ![Просмотреть сведения о событии производительности](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Просмотр сведений о событии производительности](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      Можно также просто открыть событие двойным щелчком.  
   
@@ -163,7 +163,7 @@ ms.locfileid: "31479602"
   
      Пример:  
   
-     ![IntelliTrace &#45; ошибка SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; ошибку SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  Откройте ITRACE-файл, затем перейдите в меню **Анализ** и введите идентификатор корреляции SharePoint для просмотра соответствующего веб-запроса и записанных событий.  
   
@@ -175,7 +175,7 @@ ms.locfileid: "31479602"
   
     2.  Выберите **Начать отладку** , чтобы начать отладку в точке, где произошло событие.  
   
-     ![Файл журнала IntelliTrace &#45; просмотр веб-запросов &#43; событий](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![Файл журнала IntelliTrace &#45; просмотр веб-запросов &#43; события](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  Можно просмотреть эти типы событий SharePoint вместе с событиями IntelliTrace:  
   
@@ -207,7 +207,7 @@ ms.locfileid: "31479602"
   
      ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- Пошаговые инструкции см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
+ Пошаговое руководство, см. в разделе [Пошаговое руководство: отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Список потоков  
  Изучите записанные потоки, которые работали в целевом процессе. Можно начать отладку с первого допустимого события IntelliTrace в выделенном потоке.  
@@ -218,14 +218,14 @@ ms.locfileid: "31479602"
   
 2.  В нижней части раздела **Список потоков**выберите **Начать отладку**. Можно также выбрать поток двойным щелчком.  
   
-     Чтобы начать отладку из места начала приложения, двойным щелчком выберите **Основной поток**. В разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
+     Чтобы начать отладку из места начала приложения, двойным щелчком выберите **Основной поток**. См. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
   
  Данные потока, созданного пользователем, могут быть более полезными, чем потоки, создаваемые и управляемые сервером для размещенных в IIS веб-приложений.  
   
 |**Столбец**|**Отображает**|  
 |----------------|-------------------|  
 |**ID**|Идентификационный номер потока|  
-|**Name**|Имя потока. Безымянные потоки отображаются как «\<без имени >».|  
+|**Name**|Имя потока. Безымянные потоки отображаются как "\<без имени >».|  
 |**Время начала**|Время создания потока|  
 |**Время окончания**|Время завершения выполнения потока|  
   
@@ -258,14 +258,14 @@ ms.locfileid: "31479602"
 |----------------|-------------------|  
 |**Имя модуля**|Имя файла модуля|  
 |**Путь к модулю**|Расположение на диске, где был загружен модуль|  
-|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. раздел [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. в разделе [поиск файлов символов (.pdb) и исходных файлов](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|  
   
 ### <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?  
  [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Возможности IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
+ [Сбор дополнительных данных диагностики в ручных тестах](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
@@ -273,4 +273,4 @@ ms.locfileid: "31479602"
  [Отладчик Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 – Chapter 6: тестирования](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Тестирование непрерывной доставки с Visual Studio 2012 – Chapter 6: A Testing Toolbox](http://go.microsoft.com/fwlink/?LinkID=255203)

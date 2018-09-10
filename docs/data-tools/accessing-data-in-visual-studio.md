@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a880604f14f840c3f4712e1a8d0e4d8e9cf1822
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283475"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280601"
 ---
 # <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -83,7 +83,7 @@ ms.locfileid: "36283475"
 
 ### <a name="data-providers"></a>Поставщики данных
 
-Для базы данных должно использоваться в ADO.NET, он должен иметь пользовательский *поставщика данных ADO.NET* или else должны предоставлять интерфейс ODBC или OLE DB. Корпорация Майкрософт предоставляет [список поставщиков данных ADO.NET](https://msdn.microsoft.com/data/dd363565) продуктов SQL Server, а также поставщиков ODBC и OLE DB.
+Для базы данных должно использоваться в ADO.NET, он должен иметь пользовательский *поставщика данных ADO.NET* или else должны предоставлять интерфейс ODBC или OLE DB. Корпорация Майкрософт предоставляет [список поставщиков данных ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) продуктов SQL Server, а также поставщиков ODBC и OLE DB.
 
 ### <a name="data-modeling"></a>Моделирование данных
 
@@ -99,7 +99,7 @@ ms.locfileid: "36283475"
 
 ## <a name="native-c"></a>Неуправляемый C++
 
-Приложения C++, которые подключаются к SQL Server, должны использовать [Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) в большинстве случаев. Серверы, если не связан, а затем OLE DB необходим и для этого используется [собственный клиент SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Доступ к другим базам данных с помощью [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) или драйверы OLE DB непосредственно. ODBC — это текущий интерфейс стандартной базы данных, но большинство баз данных предоставляют пользовательские функции, которые недоступны через интерфейс ODBC. OLE DB — это устаревшая технология доступа к данным COM, который по-прежнему поддерживается, но не рекомендуется для новых приложений. Дополнительные сведения см. в разделе [доступ к данным в Visual C++](/cpp/data/data-access-in-cpp).
+Приложения C++, которые подключаются к SQL Server, должны использовать [Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) в большинстве случаев. Серверы, если не связан, а затем OLE DB необходим и для этого используется [собственный клиент SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Доступ к другим базам данных с помощью [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) или драйверы OLE DB непосредственно. ODBC — это текущий интерфейс стандартной базы данных, но большинство баз данных предоставляют пользовательские функции, которые недоступны через интерфейс ODBC. OLE DB — это устаревшая технология доступа к данным COM, который по-прежнему поддерживается, но не рекомендуется для новых приложений. Дополнительные сведения см. в разделе [доступ к данным в Visual C++](/cpp/data/data-access-in-cpp).
 
 Программы на C++, которые используют службы REST можно использовать [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -133,7 +133,7 @@ ms.locfileid: "36283475"
 
 [ADO.NET](/dotnet/framework/data/adonet/index)&mdash;описание архитектуры ADO.NET и способов использования классов ADO.NET для управления данными приложения и взаимодействия с источниками данных и XML.
 
-[Платформа ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;описывается создание приложений данных, которые позволяют разработчикам программировать на основе концептуальной модели, а не непосредственно к реляционной базе данных.
+[Платформа ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;описывается создание приложений данных, которые позволяют разработчикам программировать на основе концептуальной модели, а не непосредственно к реляционной базе данных.
 
 [Службы данных WCF 4.5](/dotnet/framework/data/wcf/index)&mdash;описывается использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 

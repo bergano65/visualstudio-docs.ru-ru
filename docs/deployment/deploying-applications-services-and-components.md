@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231230"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279119"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Краткое руководство: Общие сведения о развертывании в Visual Studio
 
@@ -114,7 +114,7 @@ ms.locfileid: "39231230"
 
 ## <a name="devops-deployment"></a>Развертывание DevOps
 
-В среде группы можно использовать Visual Studio Team Services (VSTS) для включения непрерывного развертывания вашего приложения. Дополнительные сведения см. в разделе [сборки и выпуска](/vsts/build-release/index) и [развертывание в Azure](/vsts/deploy-azure/index).
+В среде группы можно использовать конвейеры Azure включить непрерывное развертывание приложения. Дополнительные сведения см. в разделе [конвейеры Azure](/azure/devops/pipelines/index) и [развертывание в Azure](/azure/devops/deploy-azure/index).
 
 ## <a name="deployment-for-other-app-types"></a>Развертывания для других типов приложений
 
@@ -122,7 +122,7 @@ ms.locfileid: "39231230"
 | --- | --- | --- |
 | **Приложения Office** | Вы можете опубликовать надстройку для Office в Visual Studio. | [Развертывание и публикация надстройки Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Службы WCF или OData**  | Другие приложения могут использовать службы WCF RIA, развертываемые на веб-сервере. | [Разработка и развертывание служб WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch больше не поддерживается в Visual Studio 2017, но по-прежнему могут развертываться из Visual Studio 2015 и более ранних версий. | [Развертывание приложений LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch больше не поддерживается в Visual Studio 2017, но по-прежнему могут развертываться из Visual Studio 2015 и более ранних версий. | [Развертывание приложений LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
 
 ## <a name="next-steps"></a>Следующие шаги
 

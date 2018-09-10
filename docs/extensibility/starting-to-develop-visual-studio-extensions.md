@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c91ec9343aeb8b20d6140135becd6905c85adda
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a4e7be9da93b422a28d01b83e023ac76a05ea514
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758186"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283643"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
 Если вы не написали ни расширение Visual Studio, прежде чем, возможно, некоторые вопросы. Мы перечислили некоторые из самых распространенных рисков здесь. Если вы не видите сведения, которые вы ищете, используйте кнопки обратной связи (**Эта страница была полезной?** в нижней части экрана) за то, что нужно.
@@ -87,4 +87,4 @@ ms.locfileid: "36758186"
 ## <a name="how-can-i-distribute-my-extension"></a>Как можно распространять Мои расширения?
  Можно установить расширение на другом компьютере или отправить его своим друзьям как VSIX-файл, который можно установить, дважды щелкнув его. Можно найти дополнительные сведения о пакетах VSIX в [доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Также можно опубликовать ваше расширение Visual Studio Marketplace, что делает его видимым на большом числе клиентов Visual Studio. Пример того, упаковка расширения в Marketplace, см. в разделе [Пошаговое руководство: публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о что необходимо сделать, чтобы опубликовать в Marketplace, см. в разделе [продукты и расширения для Visual Studio](/vsts/integrate/ide/extensions/overview).
+ Также можно опубликовать ваше расширение Visual Studio Marketplace, что делает его видимым на большом числе клиентов Visual Studio. Пример того, упаковка расширения в Marketplace, см. в разделе [Пошаговое руководство: публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о что необходимо сделать, чтобы опубликовать в Marketplace, см. в разделе [продукты и расширения для Visual Studio](/azure/devops/extend/overview).

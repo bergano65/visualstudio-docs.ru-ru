@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 26e96116ca03cad074639c5753a8cb076dc70adf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080803"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281979"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Практическое: публикация проекта, имеющего конкретный языковый стандарт
 Приложения нередко содержат компоненты с разными языковыми стандартами. В данном сценарии вы создадите решение, включающее несколько проектов, а затем опубликуете отдельные проекты для каждого языкового стандарта. Эта процедура показывает, как использовать макрос для публикации первого проекта в решении, на примере языкового стандарта "en". Если вы хотите выполнить данную процедуру с другим языковым стандартом, выберите в макросе соответствующее значение `localeString` (например, "de" или "de-DE").  
@@ -165,6 +165,6 @@ ms.locfileid: "39080803"
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Среда разработки макросов](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Обозреватель макросов-окно](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Способы: измените и программным способом создать макросы](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Среда разработки макросов](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
+ [Обозреватель макросов-окно](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
+ [Способы: измените и программным способом создать макросы](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

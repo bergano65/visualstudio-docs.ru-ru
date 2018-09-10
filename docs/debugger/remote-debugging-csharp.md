@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808645"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281147"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка проекта C# или Visual Basic в Visual Studio
 Для отладки приложения Visual Studio, который был развернут на другом компьютере, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение, настройте проект для подключения к удаленному компьютеру из Visual Studio и затем запустите приложение.
@@ -97,7 +97,7 @@ ms.locfileid: "38808645"
 
      Вы увидите, что главное окно приложения WPF открыт на удаленном компьютере.
   
-14. При необходимости предпринимать действия для достигнута точка останова. Она должна быть активна. Если это не так, еще не загружены символы для приложения. Повторите попытку и, если это не поможет, получить сведения о загрузке символов и устранении связанных с ними в [основные сведения о файлах символов и Visual Studio параметры символов](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
+14. При необходимости предпринимать действия для достигнута точка останова. Она должна быть активна. Если это не так, еще не загружены символы для приложения. Повторите попытку и, если это не поможет, получить сведения о загрузке символов и устранении связанных с ними в [основные сведения о файлах символов и Visual Studio параметры символов](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. На компьютере с Visual Studio вы должны увидеть, что выполнение остановилось в точке останова.
   

@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Выполнение Transact-SQL завершено без отладки | Документы Microsoft'
+title: 'Ошибка: Выполнение Transact-SQL завершается без отладки | Документация Майкрософт'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccb86621295bb102738e5154f30bd45c6db358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e6ae81608ee476e3748fde6830dfaa11c119f7a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474015"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283136"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Ошибка: выполнение Transact-SQL завершается без отладки
 Эта ошибка возникает при попытке отладки Transact-SQL или процедуры SQLCLR, если отладчик не получает сообщения об отладке от SQL Server.  
@@ -41,14 +41,14 @@ ms.locfileid: "31474015"
   
  Чтобы устранить эту ошибку, необходимо:  
   
--   Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [как: Настройка разрешений SQL Server для отладки](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+-   Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [как: задать разрешения для SQL Server для отладки](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 -   Удостовериться в том, что отладка SQL настроена верно.  
   
 -   Обратиться за консультацией к администратору сети или администратору базы данных.  
   
 ## <a name="see-also"></a>См. также  
- [Настройка отладки SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Как: задать разрешения SQL Server для отладки](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Настройка отладки SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
+ [Практическое: задать разрешения SQL Server для отладки](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Удаленная отладка](../debugger/remote-debugging.md)

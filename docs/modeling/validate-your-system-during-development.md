@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623817"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283630"
 ---
 # <a name="validate-your-system-during-development"></a>Проверка системы в ходе разработки
 Visual Studio помогает привести в соответствие программное обеспечение, требования пользователей и архитектуру системы.
@@ -42,7 +42,7 @@ Visual Studio помогает привести в соответствие пр
 
 ## <a name="see-also"></a>См. также
 
-- [Тестирование приложения](/vsts/test/overview?view=vsts)
+- [Тестирование приложения](/azure/devops/test/overview?view=vsts)
 - [Моделирование требований пользователей](../modeling/model-user-requirements.md)
 - [Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)
 

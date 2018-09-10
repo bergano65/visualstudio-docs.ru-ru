@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152020"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284111"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы для отладки моментальных снимков в Visual Studio
 
@@ -42,7 +42,7 @@ ms.locfileid: "39152020"
 
 - Нажмите кнопку **изменить параметры символов...** ссылка на этой странице. В **Отладка > символ** параметры, добавьте каталог кэша символов. Перезапустите после задания пути к символам отладки моментальных снимков.
 
-   Символы, то есть PDB-файлы, доступные в проекте должен соответствовать развертывания службы приложений. В большинстве случаев (развертывание с помощью Visual Studio, CI/CD с помощью VSTS или Kudu, и т.д.) будет публиковать файлы символов вдоль в службе приложений. Установка каталога кэша символов позволяет Visual Studio для использования этих символов.
+   Символы, то есть PDB-файлы, доступные в проекте должен соответствовать развертывания службы приложений. В большинстве случаев (развертывание с помощью Visual Studio, CI/CD с Azure конвейеров или Kudu, и т.д.) будет публиковать файлы символов вдоль в службе приложений. Установка каталога кэша символов позволяет Visual Studio для использования этих символов.
 
    ![Параметры символов](../debugger/media/snapshot-troubleshooting-symbol-settings.png "параметры символов")
 

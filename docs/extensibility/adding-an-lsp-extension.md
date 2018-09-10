@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499394"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283461"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -230,7 +230,7 @@ namespace MockLanguageExtension
 
 ### <a name="mef"></a>MEF
 
-Visual Studio использует [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) для управления точки расширения. [Экспорт](https://msdn.microsoft.com/library/system.componentmodel.composition.exportattribute(v=vs.110).aspx) атрибут указывает Visual Studio, что выбраны как точку расширения этого класса и они будут загружены в соответствующее время.
+Visual Studio использует [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) для управления точки расширения. [Экспорт](/dotnet/api/system.componentmodel.composition.exportattribute) атрибут указывает Visual Studio, что выбраны как точку расширения этого класса и они будут загружены в соответствующее время.
 
 Чтобы использовать MEF, необходимо также определить MEF как ресурс в манифесте VSIX.
 

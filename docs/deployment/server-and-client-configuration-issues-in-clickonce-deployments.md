@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154389"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282616"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Проблемы конфигурации сервера и клиента в развертываниях ClickOnce
 Если вы используете Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, сервер IIS не будет передавать этот файл и не будет выполнено развертывание.  
@@ -41,7 +41,7 @@ ms.locfileid: "39154389"
   
 -   *.deploy* 
   
- Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
+ Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
   
  Вы должны будете настроить *.manifest*, *.application*, и *.deploy*, например, если используются службы IIS, где не установлена [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], или если вы являетесь с помощью другого веб-сервера (например, Apache).  
   
@@ -96,7 +96,7 @@ ms.locfileid: "39154389"
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP, не поддерживается для установки приложений  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. FTP можно использовать только для публикации приложений. В следующей таблице перечислены эти различия:  
   
-|Тип URL-адреса|Описание:|  
+|Тип URL-адреса|Описание|  
 |--------------|-----------------|  
 |FTP: / /|Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола.|  
 |http://|Вы можете установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений с помощью этого протокола.|  

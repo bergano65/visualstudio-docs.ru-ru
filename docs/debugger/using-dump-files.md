@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755889"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281030"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Использование файлов дампа с помощью Visual Studio
 Файлы дампа с кучами или без куч; Создание файла дампа; Открытие файла дампа; Поиск двоичных файлов, PDB-файла и исходного файла для файла дампа.
@@ -55,7 +55,7 @@ ms.locfileid: "36755889"
 
 -   Visual Studio поддерживает отладку файлов дампа, создаваемых приложениями в машинных кодах на устройствах ARM. Visual Studio также поддерживает отладку файлов дампа, создаваемых управляемыми приложениями на устройствах ARM, но только в отладчике машинного кода.
 
--   Для отладки [режима ядра](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) файлы дампа, загрузите средства отладки для Windows, который является частью [набор драйверов Windows (WDK)](/windows-hardware/drivers/download-the-wdk).
+-   Для отладки [режима ядра](/windows-hardware/drivers/debugger/kernel-mode-dump-files) файлы дампа, загрузите средства отладки для Windows, который является частью [набор драйверов Windows (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 -   Visual Studio не поддерживает отладку файлов дампа, сохраненных в старом формате, известном как [дампа пользовательского режима полного](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Обратите внимание, что "полный дамп в режиме пользователя" и "дамп с кучей" — это не одно и то же.
 
@@ -114,5 +114,5 @@ ms.locfileid: "36755889"
 ## <a name="see-also"></a>См. также
 
 - [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

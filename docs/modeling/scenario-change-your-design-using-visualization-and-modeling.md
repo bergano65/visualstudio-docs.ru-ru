@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623693"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280228"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: изменение проекта с помощью визуализации и моделирования
 
@@ -216,9 +216,9 @@ ms.locfileid: "42623693"
 
 Пример
 
-- [Отслеживание работы с помощью Visual Studio Team Services или Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Гибкие инструменты и гибкого управления проектами](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [Диаграммы, панели мониторинга и мини-приложения (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [Диаграммы, панели мониторинга и мини-приложений (службы Azure DevOps)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Создание невыполненной работы и задач с помощью Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ ms.locfileid: "42623693"
 
 Пример
 
-- [Тестирование приложения](/vsts/test/overview?view=vsts)
+- [Тестирование приложения](/azure/devops/test/overview?view=vsts)
 
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
 
 - [Использование управления версиями](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Сборка и выпуск](/vsts/build-release/index)
+- [Azure конвейеров](/azure/devops/pipelines/index)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Обновление системы с использованием визуализации и моделирования
 

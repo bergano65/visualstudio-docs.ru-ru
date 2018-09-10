@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623820"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280783"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -46,7 +46,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 |||
 |-|-|
 |**Отладка приложения с помощью IntelliTrace:**<br /><br /> — Отображение прошлых событий.<br />-Show me сведений о вызовах с прошлыми событиями.<br />-Сохранение сеанса IntelliTrace.<br />-Элемент управления данных, собираемых IntelliTrace.|- [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />- [Отладка с ведением журнала](../debugger/historical-debugging.md)<br />- [Просмотр моментальных снимков по протоколу шаг назад в IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|- [Сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|- [Сбор дополнительных данных диагностики в ручных тестах](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
 |**Сбор данных IntelliTrace из развернутых приложений**|- [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Запуск отладки из файла журнала IntelliTrace (ITRACE-файл).**|- [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
 - Приложение аварийно завершает работу на тестовом компьютере, но успешно выполняется на компьютере разработчика.
 
-     Можно собирать данные IntelliTrace из Microsoft Test Manager, сохранить эти данные в файле .iTrace и вложить этот файл в рабочий элемент Team Foundation Server для последующего изучения. См. в разделе [сбор дополнительных данных диагностики в ручных тестах](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) и [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     Можно собирать данные IntelliTrace из Microsoft Test Manager, сохранить эти данные в файле .iTrace и вложить этот файл в рабочий элемент Team Foundation Server для последующего изучения. См. в разделе [сбор дополнительных данных диагностики в ручных тестах](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) и [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - В развернутом приложении происходит ошибка или сбой.
 
@@ -175,7 +175,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
 По умолчанию IntelliTrace собирает данные только для выбранных событий IntelliTrace. В зависимости от структуры и организации кода возможно замедление работы приложения. Например, частая запись события IntelliTrace может замедлить работу приложения. Также может потребоваться рассмотреть возможность рефакторинга приложения.
 
-Сбор сведений о вызовах может значительно замедлить выполнение приложения. Кроме того, вследствие сбора сведений может увеличиться размер файлов журнала IntelliTrace (ITRACE-файлов), которые сохраняются на диск. Чтобы свести к минимуму указанные эффекты, собирайте информацию о вызовах только в важных для вас модулях.  Чтобы изменить максимальный размер ITRACE-файлов, перейдите к **средства**, **параметры**, **IntelliTrace**, **Дополнительно**.
+Сбор сведений о вызовах может значительно замедлить выполнение приложения. Кроме того, вследствие сбора сведений может увеличиться размер файлов журнала IntelliTrace (ITRACE-файлов), которые сохраняются на диск. Чтобы свести к минимуму указанные эффекты, собирайте информацию о вызовах только в важных для вас модулях.  Чтобы изменить максимальный размер ITRACE-файлов, перейдите к **средства**, **параметры**, **IntelliTrace**, **Дополнительно**. 
 
 ## <a name="in-this-section"></a>Содержание раздела
 

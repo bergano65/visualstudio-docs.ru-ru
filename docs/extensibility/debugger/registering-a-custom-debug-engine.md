@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3203382b33184edf5618daecd9d3dc9102e2ca6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 7c87b3749c2ea63e89e2e8fb0caf773434a38df2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251654"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281394"
 ---
 # <a name="register-a-custom-debug-engine"></a>Регистрация пользовательского модуля отладки
 Модуль отладки необходимо зарегистрировать себя в качестве фабрики класса, следующие соглашения COM, а также регистрировать с помощью Visual Studio через подраздел реестра Visual Studio.  
   
 > [!NOTE]
->  Вы найдете пример, как зарегистрировать модуль отладки в образце TextInterpreter, являющуюся частью [руководство: Создание модуля отладки с помощью ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  Вы найдете пример, как зарегистрировать модуль отладки в образце TextInterpreter, являющуюся частью [руководство: Создание модуля отладки с помощью ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>Процесс сервера библиотеки DLL  
  Модуль отладки обычно настраивается в собственную библиотеку DLL как COM-сервера. Таким образом модуль отладки необходимо зарегистрировать идентификатор CLSID своей фабрики класса COM прежде, чем доступ к нему Visual Studio. Затем модуль отладки должен зарегистрироваться с помощью Visual Studio, чтобы установить какие-либо свойства (в противном случае называется метрики) отладки ядра поддерживает. Выбор метрик, записанных в подраздел реестра Visual Studio зависит от возможностей, которые поддерживает модуль отладки.  
@@ -54,4 +54,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>См. также  
  [Создание пользовательского модуля отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [Вспомогательные пакеты SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Учебник: Создание модуля отладки с помощью ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [Учебник: Создание модуля отладки с помощью ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

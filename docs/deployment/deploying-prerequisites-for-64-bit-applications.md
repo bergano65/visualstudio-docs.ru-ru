@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 10a5883e655fc5ee8a37bbe61f531b6b266ebb55
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077936"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281900"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Развернуть необходимые компоненты для 64-разрядных приложений
 Развертывание приложений ClickOnce поддерживает установку приложений на 64-разрядные платформы. Целевыми платформами являются **x86** для 32-разрядных платформах **x64** для компьютеров, поддерживающих наборы инструкций AMD64 и EM64T, а **Itanium** для 64-разрядного процессора Itanium.  
@@ -46,4 +46,4 @@ ms.locfileid: "39077936"
 ## <a name="see-also"></a>См. также  
  [Развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md)   
  [Практическое: Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64-разрядные приложения](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [64-разрядные приложения](/dotnet/framework/64-bit-apps)
